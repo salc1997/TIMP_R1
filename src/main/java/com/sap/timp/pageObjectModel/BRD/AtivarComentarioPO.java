@@ -12,9 +12,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AtivarComentarioPO extends TestBaseSteven{
+public class AtivarComentarioPO extends TestBase{
 
 	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/ul/li[4]/button")
 	public WebElement comentario;

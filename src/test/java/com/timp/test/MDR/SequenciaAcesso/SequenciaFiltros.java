@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Municipio.MunicipioFiltroPO;
 import com.sap.timp.pageObjectModel.MDR.SequenciaAcesso.SequenciaFiltrosPO;
 
-public class SequenciaFiltros extends TestBaseSteven {
+public class SequenciaFiltros extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

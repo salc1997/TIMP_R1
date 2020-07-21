@@ -13,9 +13,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.ISelect;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class CriarCopiaPO extends TestBaseSteven{
+public class CriarCopiaPO extends TestBase{
 	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/ul/li[4]/button")
 	public WebElement biblioteca;

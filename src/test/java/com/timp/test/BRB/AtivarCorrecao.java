@@ -16,14 +16,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRD.AtivarComentarioPO;
 import com.sap.timp.pageObjectModel.BRD.AtivarCorrecaoPO;
 import com.sap.timp.pageObjectModel.BRD.FiltrosPO;
 
-public class AtivarCorrecao extends TestBaseSteven{
+public class AtivarCorrecao extends TestBase{
   
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

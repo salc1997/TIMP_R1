@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class EmpresasFiltrosPO extends TestBaseSteven{
+public class EmpresasFiltrosPO extends TestBase{
 	
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[1]")
 	public WebElement mostrar;

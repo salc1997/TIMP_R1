@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class TestBaseKathy{
+public class TestBase{
 	
 	//TC2
 	protected static String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";

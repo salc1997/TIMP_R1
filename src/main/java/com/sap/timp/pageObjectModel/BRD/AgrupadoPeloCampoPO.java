@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AgrupadoPeloCampoPO extends TestBaseSteven{
+public class AgrupadoPeloCampoPO extends TestBase{
 	
 	
 	

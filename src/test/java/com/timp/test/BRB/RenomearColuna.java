@@ -15,13 +15,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRD.EditarPO;
 import com.sap.timp.pageObjectModel.BRD.RenomearColunaPO;
 
-public class RenomearColuna extends TestBaseSteven{
+public class RenomearColuna extends TestBase{
 	
 	
 	LoginTC loginTC;

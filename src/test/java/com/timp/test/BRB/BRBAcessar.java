@@ -2,7 +2,7 @@ package com.timp.test.BRB;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
 
@@ -12,7 +12,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class BRBAcessar extends TestBaseSteven {
+public class BRBAcessar extends TestBase {
 	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.RegrasPO;
-import com.sap.timp.pageObjectModel.BRB.cabeçalhoPO;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.RegrasPO;
+import com.sap.timp.pageObjectModel.BRD.cabeçalhoPO;
 
 public class Cabeçalho extends TestBaseSteven{
 

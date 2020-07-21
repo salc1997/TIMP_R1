@@ -24,8 +24,8 @@ import org.testng.annotations.Test;
 import com.google.errorprone.annotations.Var;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.FiltrosPO;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.FiltrosPO;
 
 public class Filtros extends TestBaseSteven{
   

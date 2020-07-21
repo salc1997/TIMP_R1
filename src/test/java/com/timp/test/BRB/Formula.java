@@ -23,9 +23,9 @@ import org.testng.annotations.Test;
 import com.beust.jcommander.converters.FloatConverter;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.CriarCopiaPO;
-import com.sap.timp.pageObjectModel.BRB.FormulaPO;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.CriarCopiaPO;
+import com.sap.timp.pageObjectModel.BRD.FormulaPO;
 
 import net.bytebuddy.dynamic.DynamicType.Builder.FieldDefinition.Valuable;
 import net.bytebuddy.matcher.EqualityMatcher;

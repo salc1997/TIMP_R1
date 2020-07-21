@@ -17,9 +17,9 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.EditarPO;
-import com.sap.timp.pageObjectModel.BRB.RenomearColunaPO;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.EditarPO;
+import com.sap.timp.pageObjectModel.BRD.RenomearColunaPO;
 
 public class RenomearColuna extends TestBaseSteven{
 	

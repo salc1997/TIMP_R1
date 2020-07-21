@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRB;
+package com.sap.timp.pageObjectModel.BRD;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

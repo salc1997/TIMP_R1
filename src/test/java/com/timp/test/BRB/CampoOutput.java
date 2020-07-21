@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRB.*;
+import com.sap.timp.pageObjectModel.BRD.*;
 
 public class CampoOutput extends TestBaseSteven{
 	

@@ -11,9 +11,9 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.CampoOutputPO;
-import com.sap.timp.pageObjectModel.BRB.FormatacaoEVariantePO;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.CampoOutputPO;
+import com.sap.timp.pageObjectModel.BRD.FormatacaoEVariantePO;
 
 public class FormatacaoEVariante extends TestBaseSteven{
 	

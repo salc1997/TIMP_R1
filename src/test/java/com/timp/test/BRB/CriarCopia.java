@@ -18,8 +18,8 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRD.CriarCopiaPO;
+import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRB.CriarCopiaPO;
 
 public class CriarCopia extends TestBaseSteven{
 	

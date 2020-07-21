@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRD.ComentarioLibrePO;
+import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRB.ComentarioLibrePO;
 
 public class ComentarioLibre extends TestBaseSteven{
 	

@@ -18,10 +18,10 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRD.AtivarComentarioPO;
-import com.sap.timp.pageObjectModel.BRD.AtivarCorrecaoPO;
-import com.sap.timp.pageObjectModel.BRD.FiltrosPO;
+import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRB.AtivarComentarioPO;
+import com.sap.timp.pageObjectModel.BRB.AtivarCorrecaoPO;
+import com.sap.timp.pageObjectModel.BRB.FiltrosPO;
 
 public class AtivarCorrecao extends TestBaseSteven{
   

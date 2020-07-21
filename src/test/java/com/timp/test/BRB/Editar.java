@@ -16,9 +16,9 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRD.AtivarCorrecaoPO;
-import com.sap.timp.pageObjectModel.BRD.EditarPO;
+import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRB.AtivarCorrecaoPO;
+import com.sap.timp.pageObjectModel.BRB.EditarPO;
 
 public class Editar extends TestBaseSteven{
 	

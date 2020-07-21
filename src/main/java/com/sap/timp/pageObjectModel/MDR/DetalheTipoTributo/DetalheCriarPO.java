@@ -9,9 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DetalheCriarPO extends TestBase{
+public class DetalheCriarPO extends TestBaseSteven{
 
 	
 	@FindBy(xpath = "//div[@class=\"thead\"]/div/div[3]")

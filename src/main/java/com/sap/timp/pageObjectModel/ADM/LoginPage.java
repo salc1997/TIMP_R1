@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LoginPage extends TestBase{
+public class LoginPage extends TestBaseSteven{
 	
 	JavascriptExecutor js = ((JavascriptExecutor) driver);
 	WebDriverWait wait = new WebDriverWait(driver, 15000);

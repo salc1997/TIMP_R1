@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtividadeFiltroPO extends TestBase {
+public class AtividadeFiltroPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]")
 	public WebElement atividades1;

@@ -6,13 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Bairro.BairroEditarPO;
 import com.sap.timp.pageObjectModel.MDR.Bairro.BairroFiltrosPO;
 
-public class BairroEditar extends TestBase{
+public class BairroEditar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	BairroEditarPO bairroEditarPO;

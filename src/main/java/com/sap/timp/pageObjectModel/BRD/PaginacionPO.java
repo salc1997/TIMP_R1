@@ -11,9 +11,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class PaginacionPO extends TestBase{
+public class PaginacionPO extends TestBaseSteven{
 	
 	//Página siguiente
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][1]")

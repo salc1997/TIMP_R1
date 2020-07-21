@@ -3,12 +3,12 @@ package com.timp.test.BRB;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRD.*;
 import com.timp.test.ADM.*;
 import com.timp.test.BRB.*;
 
-public class PruebaAutomatizacion extends TestBase{
+public class PruebaAutomatizacion extends TestBaseSteven{
 	LoginTest loginTest;
 	BRBAcessar brbAcessar;
 	paginacion paginacion;

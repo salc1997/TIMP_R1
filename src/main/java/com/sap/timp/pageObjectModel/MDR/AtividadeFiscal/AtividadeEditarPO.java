@@ -6,9 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtividadeEditarPO extends TestBase{
+public class AtividadeEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div/div/span[text()=\"Id\"]")
 	public WebElement idC;

@@ -5,13 +5,13 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoEliminarPO;
 import com.sap.timp.pageObjectModel.MDR.Bairro.BairroEliminarPO;
 
-public class BairroEliminar extends TestBase{
+public class BairroEliminar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	BairroEliminarPO bairroEliminarPO;

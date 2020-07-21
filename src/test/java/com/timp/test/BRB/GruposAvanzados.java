@@ -1,0 +1,90 @@
+package com.timp.test.BRB;
+
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBase;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.GruposAvanzadosPO;
+
+public class GruposAvanzados extends TestBase{
+	
+
+	LoginTC loginTC;
+	AcessarBrbPO acessarBrbPO;
+	GruposAvanzadosPO gruposAvanzadosPO;
+
+
+    @BeforeClass
+    public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		gruposAvanzadosPO = new GruposAvanzadosPO();
+		
+    }
+    
+    @AfterClass
+	public void afterClass(){
+		driver.close();
+	}
+    
+    @Test(priority = 0)
+	public void login() {
+
+		loginTC.login();
+
+	}
+	
+	
+	@Test(priority= 1)
+	public void brbEntrar() {
+		acessarBrbPO.acessar();
+			
+	}
+	
+	@Test(priority= 2)
+	public void gruposAvanzados() {
+	
+		gruposAvanzadosPO.gruposAvanzadosAplicar();
+		
+		ArrayList<Boolean> sucesso1 = new ArrayList<Boolean>();
+		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
+		
+		sucesso1 = gruposAvanzadosPO.igual();
+		for (int i = 0; i < sucesso1.size(); i++) {
+			assertTrue(sucesso1.get(i), gruposAvan);
+		}
+
+		sleep(2000);
+		sucesso2 = gruposAvanzadosPO.diferente();
+		System.out.println(sucesso2);
+			
+		for (int i = 0; i < sucesso2.size(); i++) {
+			assertFalse(sucesso2.get(i), gruposAvanDif);
+		}
+		
+		
+	}
+
+	@Test(priority = 3)
+	public void eliminarGrupos() {
+		
+		boolean sucesso = false;
+		sleep(2000);
+		sucesso = gruposAvanzadosPO.eliminar();
+		
+		assertTrue(sucesso, gruposAvanDel);
+		
+		
+		
+	}
+	
+}

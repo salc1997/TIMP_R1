@@ -1,0 +1,104 @@
+package com.timp.test.BRB;
+
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBase;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.CriarCopiaPO;
+import com.sap.timp.pageObjectModel.BRD.ExcluirColunaPO;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.Rectangle;
+
+import javax.security.auth.x500.X500Principal;
+import javax.swing.text.Element;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+
+public class ExcluirColuna extends TestBase{
+	
+	LoginTC loginTC;
+	AcessarBrbPO acessarBrbPO;
+	ExcluirColunaPO excluirColunaPO;
+
+
+
+    @BeforeClass
+    public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		excluirColunaPO = new ExcluirColunaPO();
+		
+    }
+    
+    @AfterClass
+	public void afterClass(){
+		driver.close();
+	}
+    
+    @Test(priority = 0)
+	public void login() {
+
+		loginTC.login();
+
+	}
+	
+	
+	@Test(priority= 1)
+	public void brbEntrar() {
+		acessarBrbPO.acessar();
+			
+	}
+	
+	
+	@Test(priority = 2)
+	public void excluirColunaDragNDrop() {
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		sucesso = excluirColunaPO.DragNDrop();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), deletarColuna);
+		}
+		
+	}
+
+
+	@Test(priority = 3)
+	public void excluirColunaOpcao() {
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		sucesso = excluirColunaPO.ExcluirColuna();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), "The element wasn't removed");
+		}
+		
+	}
+
+	
+	
+	
+	
+
+}

@@ -1,0 +1,82 @@
+package com.timp.test.BRB;
+
+import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBase;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.PublicoYPRivadoPO;
+
+public class PublicoYPrivado extends TestBase{
+
+	
+	
+	LoginTC loginTC;
+	AcessarBrbPO acessarBrbPO;
+	PublicoYPRivadoPO publicoYPRivadoPO;
+	
+
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		publicoYPRivadoPO = new PublicoYPRivadoPO();
+
+	}
+	
+	@AfterClass
+	public void afterClass(){
+		driver.close();
+	}
+
+	@Test(priority = 0)
+	public void login() {
+
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void brbEntrar() {
+
+		acessarBrbPO.acessar();
+
+	}	
+	
+	
+	
+	@Test(priority = 2)
+	public void publicoYPRivado() {
+	
+		
+		boolean publicoEditor = publicoYPRivadoPO.publicoEditor();
+		assertTrue(publicoEditor, compartilharE);
+		
+		boolean privadoEditor = publicoYPRivadoPO.privadoEditor();
+		assertTrue(privadoEditor, descompartilharE);
+		
+		boolean publicoBiblioteca = publicoYPRivadoPO.publicoBiblioteca();
+		assertTrue(publicoBiblioteca, compartilharB);
+		
+		boolean privadoBiblioteca = publicoYPRivadoPO.privadoBiblioteca();
+		assertTrue(privadoBiblioteca, descompartilharB);
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}

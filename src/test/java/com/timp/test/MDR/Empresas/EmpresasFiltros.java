@@ -1,0 +1,76 @@
+package com.timp.test.MDR.Empresas;
+
+import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBase;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.Empresas.EmpresasFiltrosPO;
+
+public class EmpresasFiltros extends TestBase{
+	LoginTC loginTC;
+	AcessarMDRPO acessarMDRPO;
+	EmpresasFiltrosPO empresasFiltrosPO;
+	
+	
+	@BeforeClass
+	public void beforeClass() {
+		
+
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		empresasFiltrosPO = new EmpresasFiltrosPO();
+	}
+	/*
+	@AfterClass
+	public void afterClass(){
+		driver.close();
+	}
+	*/
+	
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+		
+	}
+	
+	@Test(priority = 1)
+	public void acessarMDR() {
+		
+		acessarMDRPO.acessarMDR();
+		
+	}
+	
+	@Test(priority = 2)
+	public void empresasFiltros() {
+		ArrayList<Boolean> sucesso = empresasFiltrosPO.razaoSocial();
+		sleep(2000);
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), "The results in the filter aren't equal");
+		}
+		
+		ArrayList<Boolean> sucesso2 = empresasFiltrosPO.municipio();
+		sleep(2000);
+		for (int i = 0; i < sucesso2.size(); i++) {
+			assertTrue(sucesso2.get(i), "The results in the filter aren't equal");
+		}
+		
+		ArrayList<Boolean> sucesso3 = empresasFiltrosPO.dataFinal();
+		sleep(2000);
+		for (int i = 0; i < sucesso3.size(); i++) {
+			assertTrue(sucesso3.get(i), "The results in the filter aren't equal");
+		}
+		
+	}
+	
+	
+	
+}

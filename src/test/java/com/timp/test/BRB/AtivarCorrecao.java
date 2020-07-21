@@ -1,0 +1,78 @@
+package com.timp.test.BRB;
+
+
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBase;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRD.AtivarComentarioPO;
+import com.sap.timp.pageObjectModel.BRD.AtivarCorrecaoPO;
+import com.sap.timp.pageObjectModel.BRD.FiltrosPO;
+
+public class AtivarCorrecao extends TestBase{
+  
+	LoginTC loginTC;
+	AcessarBrbPO acessarBrbPO;
+	AtivarCorrecaoPO ativarCorrecaoPO;
+
+
+    @BeforeClass
+    public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		ativarCorrecaoPO = new AtivarCorrecaoPO();
+	
+
+		
+    }
+    
+    @AfterClass
+	public void afterClass(){
+		driver.close();
+	}
+    
+    @Test(priority = 0)
+	public void login() {
+
+		loginTC.login();
+
+	}
+	
+	
+	@Test(priority= 1)
+	public void brbEntrar() {
+		acessarBrbPO.acessar();
+			
+	}
+	
+	@Test(priority = 2)
+	public void ativarCorreccion() {
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		sucesso = ativarCorrecaoPO.comentaroAtivo();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), correcãoInativa);
+			System.out.println(sucesso.get(i));
+		}
+
+		
+	}
+	
+	
+}

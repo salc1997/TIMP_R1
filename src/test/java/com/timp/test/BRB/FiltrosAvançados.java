@@ -2,7 +2,7 @@ package com.timp.test.BRB;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRD.FiltrosAvanazadosPO;
@@ -17,7 +17,7 @@ import java.util.List;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class FiltrosAvançados extends TestBase{
+public class FiltrosAvançados extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

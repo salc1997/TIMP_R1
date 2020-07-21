@@ -9,9 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtivarCorrecaoPO extends TestBase{
+public class AtivarCorrecaoPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[contains(@class,\"correction\")]")
 	public WebElement correcao;

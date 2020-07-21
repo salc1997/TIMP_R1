@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DetalheExcluirPO extends TestBase{
+public class DetalheExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div/div/span[text()=\"Id\"]")
 	public WebElement idC;

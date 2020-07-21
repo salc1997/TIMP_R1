@@ -16,12 +16,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginPage;
 
 
 
-public class LoginTest extends TestBase{
+public class LoginTest extends TestBaseSteven{
 	
 	LoginPage loginPage;
 

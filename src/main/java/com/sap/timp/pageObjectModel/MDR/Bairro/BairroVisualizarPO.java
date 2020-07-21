@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 
-public class BairroVisualizarPO extends TestBase{
+public class BairroVisualizarPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")

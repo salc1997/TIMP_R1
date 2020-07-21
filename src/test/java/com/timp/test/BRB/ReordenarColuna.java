@@ -25,13 +25,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRD.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRD.ReordenarColunarPO;
 
 
-public class ReordenarColuna extends TestBase{
+public class ReordenarColuna extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

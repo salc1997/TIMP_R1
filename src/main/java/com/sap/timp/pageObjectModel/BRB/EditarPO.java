@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
 
@@ -16,10 +18,6 @@ public class EditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
-	
-	@FindBy(xpath = "//*[@id=\"draggable-30\"]")				
-	public WebElement haciaE;
-	
 	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[1]/button")				
 	public WebElement gravar;
@@ -64,19 +62,12 @@ public class EditarPO extends TestBaseSteven{
 
 		Point hacia = driver.findElement(By.xpath("//*[@id=\"draggable-193\"]")).getLocation();
 		Point desde = driver.findElement(By.xpath("//*[@id=\"draggable-28\"]")).getLocation();
-		
-		
-		
 
 		int x = desde.x;
 		int y = hacia.x;
 		sleep(1000);
-			
 		
-		actions.dragAndDrop(driver.findElement(By.xpath("//*[@id=\"draggable-28\"]")), driver.findElement(By.xpath("//*[@id=\"draggable-30\"]"))).perform();
-
-		sleep(2000);
-
+		actions.dragAndDropBy(mover,hacia.x, 0).perform();
 		
 		gravar.click();
 		sleep(4000);

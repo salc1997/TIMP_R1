@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.BRB.ReordenarColuna">
+      <class name="com.timp.test.BRB.Editar">
         <methods>
           <include name="beforeClass"/>
-          <include name="reordenar"/>
+          <include name="editar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.ReordenarColuna -->
+      </class> <!-- com.timp.test.BRB.Editar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

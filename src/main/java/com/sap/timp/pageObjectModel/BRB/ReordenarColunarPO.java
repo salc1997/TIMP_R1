@@ -71,6 +71,7 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		int y = hacia.x;
 		sleep(1000);
 		
+		
 		actions.dragAndDrop(mover, haciaE).perform();
 		//actions.dragAndDropBy(mover,hacia.x, 0).perform();
 		actions.release();

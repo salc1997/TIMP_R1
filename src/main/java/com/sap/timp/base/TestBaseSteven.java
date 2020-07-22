@@ -122,6 +122,15 @@ public class TestBaseSteven{
 		
 	}
 	
+	public void moveToElement(WebElement element, WebElement hacia) {
+		Actions actions = new Actions(driver);
+		
+		actions.dragAndDrop(element,hacia).perform();
+		
+	}
+	
+	
+	
 	
 	public String fechaActual() {
 		

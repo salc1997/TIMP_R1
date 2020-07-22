@@ -105,7 +105,6 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		
 		
 		
-		
 	}
 	
 	

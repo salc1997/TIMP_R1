@@ -25,7 +25,7 @@ public class TestBaseSteven{
 	//TC2
 	protected static String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
 	//TD1
-	static String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
+	protected static String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 	
 	protected static String tq1 = "http://as1-100-01-tq1:8000/timp/login/#/login";
 

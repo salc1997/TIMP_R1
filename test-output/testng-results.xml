@@ -2,24 +2,28 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24550" started-at="2020-07-23T21:45:57Z" finished-at="2020-07-23T21:46:22Z">
+  <suite name="Default suite" duration-ms="30722" started-at="2020-07-23T23:02:13Z" finished-at="2020-07-23T23:02:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24550" started-at="2020-07-23T21:45:57Z" finished-at="2020-07-23T21:46:22Z">
-      <class name="com.timp.test.MDR.Centralizacao2.cnetralizacao">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao2.cnetralizacao@8e0379d]" name="beforeClass" is-config="true" duration-ms="11414" started-at="2020-07-23T15:45:57Z" finished-at="2020-07-23T15:46:08Z">
+    <test name="Default test" duration-ms="30722" started-at="2020-07-23T23:02:13Z" finished-at="2020-07-23T23:02:44Z">
+      <class name="com.timp.test.MDR.AcessarMDR">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="beforeClass" is-config="true" duration-ms="11670" started-at="2020-07-23T17:02:13Z" finished-at="2020-07-23T17:02:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao2.cnetralizacao@8e0379d]" name="login" duration-ms="6043" started-at="2020-07-23T15:46:08Z" finished-at="2020-07-23T15:46:14Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="login" duration-ms="6434" started-at="2020-07-23T17:02:25Z" finished-at="2020-07-23T17:02:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao2.cnetralizacao@8e0379d]" name="acessarMDR" duration-ms="7079" started-at="2020-07-23T15:46:14Z" finished-at="2020-07-23T15:46:22Z">
+        <test-method status="PASS" signature="MDREntrar()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="MDREntrar" duration-ms="12540" started-at="2020-07-23T17:02:31Z" finished-at="2020-07-23T17:02:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-      </class> <!-- com.timp.test.MDR.Centralizacao2.cnetralizacao -->
+        </test-method> <!-- MDREntrar -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="afterClass" is-config="true" duration-ms="67" started-at="2020-07-23T17:02:44Z" finished-at="2020-07-23T17:02:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.AcessarMDR -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

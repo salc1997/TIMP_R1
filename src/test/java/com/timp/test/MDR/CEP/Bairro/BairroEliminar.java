@@ -1,4 +1,4 @@
-package com.timp.test.MDR.Bairro;
+package com.timp.test.MDR.CEP.Bairro;
 
 import static org.testng.Assert.assertTrue;
 
@@ -8,14 +8,12 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
-import com.sap.timp.pageObjectModel.MDR.Bairro.BairroCriarPO;
+import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroEliminarPO;
 
-public class BairroCriar extends TestBaseSteven{
-
+public class BairroEliminar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	BairroCriarPO bairroCriarPO;
+	BairroEliminarPO bairroEliminarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,14 +21,12 @@ public class BairroCriar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		bairroCriarPO = new BairroCriarPO();
+		bairroEliminarPO = new BairroEliminarPO();
 	}
 	/*
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
-	*/
+	 * @AfterClass public void afterClass(){ driver.close(); }
+	 */
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,11 +41,11 @@ public class BairroCriar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void eliminar() {
 
-		boolean sucesso = bairroCriarPO.criarBairro();
+		boolean sucesso = bairroEliminarPO.eliminar();
 		
-		assertTrue(sucesso, Criar);
-		
+		assertTrue(sucesso, Eliminado);
+
 	}
 }

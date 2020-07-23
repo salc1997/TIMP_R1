@@ -9,7 +9,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadeFiscal.AtividadeEliminarPO;
-import com.sap.timp.pageObjectModel.MDR.Bairro.BairroEliminarPO;
+
 
 public class AtividadeEliminar extends TestBaseSteven{
 	LoginTC loginTC;

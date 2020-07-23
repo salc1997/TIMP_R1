@@ -1,6 +1,5 @@
-package com.timp.test.MDR.Bairro;
+package com.timp.test.MDR.CEP.Municipio;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.BeforeClass;
@@ -9,13 +8,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Bairro.BairroEditarPO;
-import com.sap.timp.pageObjectModel.MDR.Bairro.BairroVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.CEP.Municipio.MunicipioFiltroPO;
 
-public class BairroVisualizar extends TestBaseSteven{
+public class MunicipioFiltros extends TestBaseSteven{
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	BairroVisualizarPO bairroVisualizarPO;
+	MunicipioFiltroPO municipioFiltroPO;
 	
 	
 	@BeforeClass
@@ -25,7 +24,7 @@ public class BairroVisualizar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		bairroVisualizarPO = new BairroVisualizarPO();
+		municipioFiltroPO = new MunicipioFiltroPO();
 	}
 	/*
 	@AfterClass
@@ -51,9 +50,8 @@ public class BairroVisualizar extends TestBaseSteven{
 	 @Test(priority = 2)
 	  public void filtro() {
 		  
-		 String sucesso = bairroVisualizarPO.visualizar();
+		 boolean sucesso =  municipioFiltroPO.filtro();
 		 
-		 assertEquals(sucesso, "edit", visualizaçar);
-		 
+		 assertTrue(sucesso, Editar);
 	  }
 }

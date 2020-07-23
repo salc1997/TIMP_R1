@@ -1,5 +1,6 @@
-package com.sap.timp.pageObjectModel.MDR.Bairro;
+package com.sap.timp.pageObjectModel.MDR.CEP.Bairro;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class BairroEliminarPO extends TestBaseSteven{
+public class BairroVisualizarPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
@@ -22,20 +23,14 @@ public class BairroEliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
+	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
+	public WebElement visualizar;
 	
-	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
-	public WebElement excluir;
-	
-	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
-	public WebElement nenhumResult;
-	
-	public BairroEliminarPO() {
+	public BairroVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean eliminar() {
+	public String visualizar() {
 		
 		cep.click();
 		sleep(1000);
@@ -50,26 +45,16 @@ public class BairroEliminarPO extends TestBaseSteven{
 		sleep(2000);
 		menu.click();
 		sleep(2000);
-		excluir.click();
-		
-		waitExpectElement(sim);
-		sim.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
-		
-		pesquisar.clear();
-		sleep(1000);
-		pesquisar.sendKeys(numEnviar);
-		pesquisar.sendKeys(Keys.ENTER);
+		visualizar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		boolean sucesso = nenhumResult.isDisplayed();
+		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		
 		return sucesso;
 		
 		
 	}
+	
 	
 	
 	

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.Bairro;
+package com.sap.timp.pageObjectModel.MDR.CEP.Bairro;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

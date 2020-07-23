@@ -9,7 +9,6 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadeFiscal.AtividadeVisualizarPO;
-import com.sap.timp.pageObjectModel.MDR.Bairro.BairroVisualizarPO;
 
 public class AtividadeVisualizar extends TestBaseSteven{
 	LoginTC loginTC;

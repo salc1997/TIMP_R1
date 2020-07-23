@@ -1,5 +1,7 @@
 package com.timp.test.MDR.Centralizacao;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeClass;
@@ -46,6 +48,20 @@ public class EstornoCreditoFiltros extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 		
 	}
+
+	@Test(priority = 2)
+	public void filtro() {
+		
+	//teste pra conferir se o resultado mostrado é igual	
+	boolean text=estornoCreditoFiltrosPO.filtroEstornoCredito();
+	 assertTrue(text, "Resultado diferente");
+	
+	 //Teste pra conferir se conseguiu acesssar o sistema
+	assertTrue(estornoCreditoFiltrosPO.mostrar.isDisplayed(), semAcesso);
+		
+	}
   
+	
+	
 
 }

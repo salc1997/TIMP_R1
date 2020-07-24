@@ -50,7 +50,9 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven{
 	 @Test(priority = 2)
 	  public void visualizar() {
 		  
-		 responsavelMovimentoCriarPO.criar();
+		boolean sucesso = responsavelMovimentoCriarPO.criar();
+		
+		assertTrue(sucesso, Criar);
 	
 	  }
 	

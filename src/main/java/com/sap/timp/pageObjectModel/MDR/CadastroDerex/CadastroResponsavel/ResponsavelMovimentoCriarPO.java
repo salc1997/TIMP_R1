@@ -5,6 +5,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
 
@@ -100,7 +102,7 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void criar() {
+	public boolean criar() {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
@@ -153,6 +155,8 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
+			
+		attributoNotToBeXpath("//*[@id=\"country\"]/div/div/input", "value");
 		
 		nome.sendKeys("teste movimento");
 		
@@ -171,17 +175,48 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		
 		
 		
-		
-		
+		sleep(2000);
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(2000);
 
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		biblioteca.click();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
+		idC.click();
+		dobleClickElement(idC);
+		sleep(2000);
 		
+		String idB = idR.getText();
+		sleep(2000);
+		System.out.println(id);
+		System.out.println(idB);
 		
+		double idD = convertToDouble(id);
+		double idBD = convertToDouble(idB);
 		
+		boolean sucesso = false;
 		
-		
+		if (idBD > idD) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+
+		return sucesso;
+				
 			
 		
 		

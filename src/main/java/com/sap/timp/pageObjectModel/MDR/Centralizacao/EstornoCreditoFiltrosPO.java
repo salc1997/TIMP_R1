@@ -41,7 +41,7 @@ public class EstornoCreditoFiltrosPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		centralizacao.click();
-		sleep(5000);
+		sleep(2000);
 		estornocredito.click();
 		
 		//waitExpectElement(pesquisa);

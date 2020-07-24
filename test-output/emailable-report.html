@@ -31,34 +31,50 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<<<<<<< HEAD
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">34.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-=======
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">68,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">97,3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.timp.test.MDR.Centralizacao.EstornoCreditoCriar</td><td><a href="#m1"><b>criar</b>  </a></td><td class="numi">1</td><td>1595622258567</td><td class="numi">49196</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<<<<<<< HEAD
-<tr class="passedodd"><td rowspan="3">com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros</td><td><a href="#m1"><b>acessarMDR</b>  </a></td><td class="numi">1</td><td>1595602870057</td><td class="numi">7597</td></tr><tr class="passedodd"><td><a href="#m2"><b>filtro</b>  </a></td><td class="numi">1</td><td>1595602877655</td><td class="numi">7586</td></tr><tr class="passedodd"><td><a href="#m3"><b>login</b>  </a></td><td class="numi">1</td><td>1595602863834</td><td class="numi">6221</td></tr>
-=======
-<tr class="passedodd"><td rowspan="3">com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros</td><td><a href="#m1"><b>acessarMDR</b>  </a></td><td class="numi">1</td><td>1595606299857</td><td class="numi">13104</td></tr><tr class="passedodd"><td><a href="#m2"><b>filtro</b>  </a></td><td class="numi">1</td><td>1595606312964</td><td class="numi">23999</td></tr><tr class="passedodd"><td><a href="#m3"><b>login</b>  </a></td><td class="numi">1</td><td>1595606288336</td><td class="numi">11515</td></tr>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+<tr class="passedodd"><td rowspan="2">com.timp.test.MDR.Centralizacao.EstornoCreditoCriar</td><td><a href="#m2"><b>acessarMDR</b>  </a></td><td class="numi">1</td><td>1595622238666</td><td class="numi">19899</td></tr><tr class="passedodd"><td><a href="#m3"><b>login</b>  </a></td><td class="numi">1</td><td>1595622227212</td><td class="numi">11451</td></tr>
 </table>
 <h1>Default test</h1>
-<<<<<<< HEAD
-<h2 id="m1">com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros:login</h2>
-=======
-<h2 id="m1">com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros:filtro</h2>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+<h2 id="m1">com.timp.test.MDR.Centralizacao.EstornoCreditoCriar:criar</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;0001&quot;]/div[1]/label/span&quot;}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-35UG9UP&apos;, ip: &apos;192.168.1.83&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7f2b58d06bc39ac4f9206d899f82396b
+*** Element info: {Using=xpath, value=//*[@id=&quot;0001&quot;]/div[1]/label/span}</p>
+sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCreditoCriarPO.CriarEstornoCredito(EstornoCreditoCriarPO.java:129)
+<br/>at com.timp.test.MDR.Centralizacao.EstornoCreditoCriar.criar(EstornoCreditoCriar.java:56)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros:acessarMDR</h2>
+<h2 id="m2">com.timp.test.MDR.Centralizacao.EstornoCreditoCriar:login</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h2 id="m3">com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros:filtro</h2>
-=======
-<h2 id="m3">com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros:login</h2>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+<h2 id="m3">com.timp.test.MDR.Centralizacao.EstornoCreditoCriar:acessarMDR</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

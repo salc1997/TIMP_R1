@@ -1,128 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" total="3" passed="2">
-=======
 <testng-results total="3" passed="3" failed="0" skipped="0">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="48377" started-at="2020-07-24T13:12:21Z" finished-at="2020-07-24T13:13:09Z">
-=======
-  <suite started-at="2020-07-24T08:35:33Z" name="Default suite" finished-at="2020-07-24T08:36:32Z" duration-ms="59066">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite started-at="2020-07-24T14:11:41Z" name="Default suite" finished-at="2020-07-24T14:12:39Z" duration-ms="58106">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="48377" started-at="2020-07-24T13:12:21Z" finished-at="2020-07-24T13:13:09Z">
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16834" started-at="2020-07-24T10:12:21Z" finished-at="2020-07-24T10:12:37Z">
-=======
-    <test started-at="2020-07-24T08:35:33Z" name="Default test" finished-at="2020-07-24T08:36:32Z" duration-ms="59066">
-      <class name="com.timp.test.MDR.TributosCriar.TributosCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TributosCriar.TributosCriar@55634720]" started-at="2020-07-24T02:35:33Z" name="beforeClass" finished-at="2020-07-24T02:35:49Z" duration-ms="15538" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test started-at="2020-07-24T14:11:41Z" name="Default test" finished-at="2020-07-24T14:12:39Z" duration-ms="58106">
+      <class name="com.timp.test.MDR.Tributos.TributosCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:11:41Z" name="beforeClass" finished-at="2020-07-24T08:11:55Z" duration-ms="14714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="login" duration-ms="11927" started-at="2020-07-24T10:12:37Z" finished-at="2020-07-24T10:12:49Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TributosCriar.TributosCriar@55634720]" started-at="2020-07-24T02:35:49Z" name="login" finished-at="2020-07-24T02:35:58Z" duration-ms="9278" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:11:55Z" name="login" finished-at="2020-07-24T08:12:04Z" duration-ms="9031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="acessarMDR" duration-ms="12645" started-at="2020-07-24T10:12:49Z" finished-at="2020-07-24T10:13:02Z">
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TributosCriar.TributosCriar@55634720]" started-at="2020-07-24T02:35:58Z" name="acessarMDR" finished-at="2020-07-24T02:36:10Z" duration-ms="11843" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:12:04Z" name="acessarMDR" finished-at="2020-07-24T08:12:17Z" duration-ms="12611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="criar" duration-ms="6929" started-at="2020-07-24T10:13:02Z" finished-at="2020-07-24T10:13:09Z">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=84.0.4147.89)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53247}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d380670759c215c6485cfca002f3de8c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=84.0.4147.89)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53247}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d380670759c215c6485cfca002f3de8c
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCreditoCriarPO.CriarEstornoCredito(EstornoCreditoCriarPO.java:55)
-	at com.timp.test.MDR.Centralizacao.EstornoCreditoCriar.criar(EstornoCreditoCriar.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoCriar -->
-=======
-        <test-method signature="tributoCriar()[pri:0, instance:com.timp.test.MDR.TributosCriar.TributosCriar@55634720]" started-at="2020-07-24T02:36:10Z" name="tributoCriar" finished-at="2020-07-24T02:36:32Z" duration-ms="22352" status="PASS">
+        <test-method signature="tributoCriar()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:12:17Z" name="tributoCriar" finished-at="2020-07-24T08:12:39Z" duration-ms="21669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tributoCriar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TributosCriar.TributosCriar@55634720]" started-at="2020-07-24T02:36:32Z" name="afterClass" finished-at="2020-07-24T02:36:32Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:12:39Z" name="afterClass" finished-at="2020-07-24T08:12:39Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TributosCriar.TributosCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Tributos.TributosCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,17 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.AcessarMDR">
+      <class name="com.timp.test.MDR.TributosCriar.TributosCriar">
         <methods>
+          <include name="tributoCriar"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="brbEntrar"/>
-=======
-          <include name="MDREntrar"/>
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.AcessarMDR -->
+      </class> <!-- com.timp.test.MDR.TributosCriar.TributosCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

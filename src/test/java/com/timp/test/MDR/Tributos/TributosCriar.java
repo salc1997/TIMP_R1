@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TributosCriar;
+package com.timp.test.MDR.Tributos;
 
 import org.testng.annotations.Test;
 

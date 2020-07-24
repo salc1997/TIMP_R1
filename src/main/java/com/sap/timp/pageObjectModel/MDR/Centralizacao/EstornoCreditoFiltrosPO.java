@@ -41,7 +41,7 @@ public class EstornoCreditoFiltrosPO extends TestBaseEliel{
 		
 		
 		centralizacao.click();
-
+		sleep(5000);
 		estornocredito.click();
 		
 		waitExpectElement(pesquisa);

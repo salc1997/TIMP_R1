@@ -6,7 +6,11 @@
       <class name="com.timp.test.MDR.AcessarMDR">
         <methods>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="brbEntrar"/>
+=======
+          <include name="MDREntrar"/>
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.AcessarMDR -->

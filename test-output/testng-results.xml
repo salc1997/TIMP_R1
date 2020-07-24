@@ -2,19 +2,34 @@
 <testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-07-23T21:58:36Z" name="Default suite" finished-at="2020-07-23T21:59:10Z" duration-ms="33658">
+=======
+  <suite name="Default suite" duration-ms="30722" started-at="2020-07-23T23:02:13Z" finished-at="2020-07-23T23:02:44Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-07-23T21:58:36Z" name="Default test" finished-at="2020-07-23T21:59:10Z" duration-ms="33658">
       <class name="com.timp.test.MDR.AcessarMDR">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.AcessarMDR@4659191b]" started-at="2020-07-23T15:58:36Z" name="beforeClass" finished-at="2020-07-23T15:59:00Z" duration-ms="23928" status="PASS">
+=======
+    <test name="Default test" duration-ms="30722" started-at="2020-07-23T23:02:13Z" finished-at="2020-07-23T23:02:44Z">
+      <class name="com.timp.test.MDR.AcessarMDR">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="beforeClass" is-config="true" duration-ms="11670" started-at="2020-07-23T17:02:13Z" finished-at="2020-07-23T17:02:25Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.AcessarMDR@4659191b]" started-at="2020-07-23T15:59:00Z" name="login" finished-at="2020-07-23T15:59:10Z" duration-ms="9315" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="login" duration-ms="6434" started-at="2020-07-23T17:02:25Z" finished-at="2020-07-23T17:02:31Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.MDR.AcessarMDR@4659191b]" started-at="2020-07-23T15:59:10Z" name="brbEntrar" finished-at="2020-07-23T15:59:10Z" duration-ms="56" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -84,10 +99,18 @@ Session ID: 2b85dc3abe08bb2e7c46a908e5968bc5
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method status="PASS" signature="MDREntrar()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="MDREntrar" duration-ms="12540" started-at="2020-07-23T17:02:31Z" finished-at="2020-07-23T17:02:44Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- brbEntrar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.AcessarMDR@4659191b]" started-at="2020-07-23T15:59:10Z" name="afterClass" finished-at="2020-07-23T15:59:10Z" duration-ms="304" status="PASS">
+=======
+        </test-method> <!-- MDREntrar -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.AcessarMDR@341b80b2]" name="afterClass" is-config="true" duration-ms="67" started-at="2020-07-23T17:02:44Z" finished-at="2020-07-23T17:02:44Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

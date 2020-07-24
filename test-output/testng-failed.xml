@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoCriar">
+=======
+      <class name="com.timp.test.MDR.TributosCriar.TributosCriar">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="tributoCriar"/>
+          <include name="afterClass"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
           <include name="criar"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.TributosCriar.TributosCriar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -52,11 +52,11 @@ public class EstornoCreditoCriar extends TestBaseEliel{
 
 	@Test(priority = 2)
 	public void criar() {
-		estornoCreditoCriarPO.CriarEstornoCredito();
+		
+		boolean sucesso=estornoCreditoCriarPO.CriarEstornoCredito();
 	
 	//teste pra conferir se o resultado mostrado é igual	
-	//boolean text=estornoCreditoCriarPO.CriarEstornoCredito();
-	 //assertTrue(text, "Resultado diferente");
+	 assertTrue(sucesso, Criar);
 	
 	 //Teste pra conferir se conseguiu acesssar o sistema
 	assertTrue(estornoCreditoCriarPO.mostrar.isDisplayed(), semAcesso);

@@ -2,23 +2,42 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="97287" started-at="2020-07-24T20:23:30Z" finished-at="2020-07-24T20:25:07Z">
+=======
+  <suite name="Default suite" duration-ms="50862" started-at="2020-07-24T19:29:49Z" finished-at="2020-07-24T19:30:40Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="97287" started-at="2020-07-24T20:23:30Z" finished-at="2020-07-24T20:25:07Z">
       <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16709" started-at="2020-07-24T17:23:30Z" finished-at="2020-07-24T17:23:47Z">
+=======
+    <test name="Default test" duration-ms="50862" started-at="2020-07-24T19:29:49Z" finished-at="2020-07-24T19:30:40Z">
+      <class name="com.timp.test.MDR.CEP.Bairro.BairroCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Bairro.BairroCriar@35083305]" name="beforeClass" is-config="true" duration-ms="12173" started-at="2020-07-24T13:29:49Z" finished-at="2020-07-24T13:30:01Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="login" duration-ms="11451" started-at="2020-07-24T17:23:47Z" finished-at="2020-07-24T17:23:58Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Bairro.BairroCriar@35083305]" name="login" duration-ms="6530" started-at="2020-07-24T13:30:01Z" finished-at="2020-07-24T13:30:08Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="acessarMDR" duration-ms="19899" started-at="2020-07-24T17:23:58Z" finished-at="2020-07-24T17:24:18Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Bairro.BairroCriar@35083305]" name="acessarMDR" duration-ms="14320" started-at="2020-07-24T13:30:08Z" finished-at="2020-07-24T13:30:22Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoCriar@8e0379d]" name="criar" duration-ms="49196" started-at="2020-07-24T17:24:18Z" finished-at="2020-07-24T17:25:07Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -60,6 +79,49 @@ Session ID: 7f2b58d06bc39ac4f9206d899f82396b
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
 	at com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCreditoCriarPO.CriarEstornoCredito(EstornoCreditoCriarPO.java:129)
 	at com.timp.test.MDR.Centralizacao.EstornoCreditoCriar.criar(EstornoCreditoCriar.java:56)
+=======
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.CEP.Bairro.BairroCriar@35083305]" name="criar" duration-ms="17821" started-at="2020-07-24T13:30:22Z" finished-at="2020-07-24T13:30:40Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button/span[text()="Novo bairro"]"}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 20d4f64572cbd122972dc64354dd849c
+*** Element info: {Using=xpath, value=//button/span[text()="Novo bairro"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button/span[text()="Novo bairro"]"}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 20d4f64572cbd122972dc64354dd849c
+*** Element info: {Using=xpath, value=//button/span[text()="Novo bairro"]}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO.criarBairro(BairroCriarPO.java:78)
+	at com.timp.test.MDR.CEP.Bairro.BairroCriar.criar(BairroCriar.java:49)
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -90,7 +152,11 @@ Session ID: 7f2b58d06bc39ac4f9206d899f82396b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.CEP.Bairro.BairroCriar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

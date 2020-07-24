@@ -43,6 +43,7 @@ public class AcessarMDRPO extends TestBaseSteven{
 		mdr.click();
 		
 		waitExpectElement(mostrar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();
 		

@@ -51,10 +51,10 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 		waitExpectElement(pesquisa);
 		
 		novoestorno.click();
-		
-		empresa.sendKeys(Keys.ENTER);
 		waitExpectElement(empresa);
-		
+		sleep(5000);
+		empresa.click();
+		opcaoempresa.click();
 		
 		//verificar se o resultado mostrado é o correto
 		//String texto = id.getText();

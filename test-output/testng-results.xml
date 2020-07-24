@@ -2,24 +2,46 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="34073" started-at="2020-07-24T15:00:51Z" finished-at="2020-07-24T15:01:25Z">
+=======
+  <suite name="Default suite" duration-ms="68159" started-at="2020-07-24T15:57:48Z" finished-at="2020-07-24T15:58:56Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="34073" started-at="2020-07-24T15:00:51Z" finished-at="2020-07-24T15:01:25Z">
       <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="beforeClass" is-config="true" duration-ms="12654" started-at="2020-07-24T09:00:51Z" finished-at="2020-07-24T09:01:03Z">
+=======
+    <test name="Default test" duration-ms="68159" started-at="2020-07-24T15:57:48Z" finished-at="2020-07-24T15:58:56Z">
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="beforeClass" is-config="true" duration-ms="19507" started-at="2020-07-24T12:57:48Z" finished-at="2020-07-24T12:58:08Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="login" duration-ms="6221" started-at="2020-07-24T09:01:03Z" finished-at="2020-07-24T09:01:10Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="login" duration-ms="11515" started-at="2020-07-24T12:58:08Z" finished-at="2020-07-24T12:58:19Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="acessarMDR" duration-ms="7597" started-at="2020-07-24T09:01:10Z" finished-at="2020-07-24T09:01:17Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="acessarMDR" duration-ms="13104" started-at="2020-07-24T12:58:19Z" finished-at="2020-07-24T12:58:32Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="filtro" duration-ms="7586" started-at="2020-07-24T09:01:17Z" finished-at="2020-07-24T09:01:25Z">
+=======
+        <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="filtro" duration-ms="23999" started-at="2020-07-24T12:58:32Z" finished-at="2020-07-24T12:58:56Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filtro -->

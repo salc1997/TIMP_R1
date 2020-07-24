@@ -24,7 +24,7 @@ public class EstornoCreditoFiltrosPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement mostrar;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[1]/div[3]/div")
+	@FindBy(xpath = "//div[@class=\"tr\" and @data-id][1]/div[3]/div")
 	public WebElement id;
 	
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[1]/div[1]/div/div[1]")
@@ -39,23 +39,27 @@ public class EstornoCreditoFiltrosPO extends TestBaseEliel{
 	
 	public boolean filtroEstornoCredito() {
 		
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		centralizacao.click();
-
+		sleep(5000);
 		estornocredito.click();
 		
-		waitExpectElement(pesquisa);
-		
-		waitExpectElement(engrenagem);
-		
+		//waitExpectElement(pesquisa);
+		//waitExpectElement(engrenagem);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		pesquisa.sendKeys(id.getText());
 		pesquisa.sendKeys(Keys.ENTER);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		//verificar se o resultado mostrado é o correto
 		String texto = id.getText();
 		boolean text= texto.contains(id.getText());
+		System.out.println(text);
+		
 		return text;
-		//System.out.println(id.getText());
+		
 		
 	}
 }

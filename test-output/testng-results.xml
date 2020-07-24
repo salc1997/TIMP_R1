@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-07-24T14:11:41Z" name="Default suite" finished-at="2020-07-24T14:12:39Z" duration-ms="58106">
+=======
+  <suite name="Default suite" duration-ms="68159" started-at="2020-07-24T15:57:48Z" finished-at="2020-07-24T15:58:56Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-07-24T14:11:41Z" name="Default test" finished-at="2020-07-24T14:12:39Z" duration-ms="58106">
       <class name="com.timp.test.MDR.Tributos.TributosCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:11:41Z" name="beforeClass" finished-at="2020-07-24T08:11:55Z" duration-ms="14714" status="PASS">
+=======
+    <test name="Default test" duration-ms="68159" started-at="2020-07-24T15:57:48Z" finished-at="2020-07-24T15:58:56Z">
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="beforeClass" is-config="true" duration-ms="19507" started-at="2020-07-24T12:57:48Z" finished-at="2020-07-24T12:58:08Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:11:55Z" name="login" finished-at="2020-07-24T08:12:04Z" duration-ms="9031" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="login" duration-ms="11515" started-at="2020-07-24T12:58:08Z" finished-at="2020-07-24T12:58:19Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:12:04Z" name="acessarMDR" finished-at="2020-07-24T08:12:17Z" duration-ms="12611" status="PASS">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="acessarMDR" duration-ms="13104" started-at="2020-07-24T12:58:19Z" finished-at="2020-07-24T12:58:32Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method signature="tributoCriar()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-24T08:12:17Z" name="tributoCriar" finished-at="2020-07-24T08:12:39Z" duration-ms="21669" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -28,6 +51,13 @@
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.MDR.Tributos.TributosCriar -->
+=======
+        <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros@8e0379d]" name="filtro" duration-ms="23999" started-at="2020-07-24T12:58:32Z" finished-at="2020-07-24T12:58:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros -->
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

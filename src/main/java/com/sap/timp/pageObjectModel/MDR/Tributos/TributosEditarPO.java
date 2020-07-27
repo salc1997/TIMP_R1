@@ -82,10 +82,9 @@ public class TributosEditarPO extends TestBaseKathy{
 		sleep(1000);
 		editar.click();
 		
-		//attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
-		sleep(17000);
-
-		
+		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
+		sleep(3000);
+				
 		waitExpectElement(campo);
 		campo.sendKeys(Keys.ENTER);
 		String valor = campo.getAttribute("value");
@@ -100,7 +99,7 @@ public class TributosEditarPO extends TestBaseKathy{
 		cuerpo.click();
 		sleep(2000);
 		btnGravar.click();
-		sleep(2000);
+		sleep(3000);
 		confirmacionGravar.click();
 		sleep(2000);
 
@@ -108,11 +107,8 @@ public class TributosEditarPO extends TestBaseKathy{
 
 		driver.navigate().refresh();
 
-		//invisibilityOfElement("//*[@id=\"container\"]/div[4]/div/div/div/img");
-
-		//waitExpectElement(campo);
-		//attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-select required");
-		sleep(20000);
+		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
+		sleep(2000);
 
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println(valor);
@@ -128,12 +124,10 @@ public class TributosEditarPO extends TestBaseKathy{
 		campo.sendKeys(valor);
 		campo.sendKeys(Keys.ENTER);
 		cuerpo.click();
-		//campo.sendKeys(Keys.ENTER);
-		//cuerpo.click();
 		
 		btnGravar.click();
 
-		sleep(2000);
+		sleep(3000);
 		confirmacionGravar.click();
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		

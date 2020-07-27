@@ -49,7 +49,7 @@ public class TestBaseSteven{
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 		return driver;
 
 	}
@@ -148,6 +148,19 @@ public class TestBaseSteven{
 		
 		return result;
 		
+	}
+	
+	
+	public void attributoNotToBeEmptyElement(WebElement element, String attribute) {
+		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
+	}
+	
+	public void attributoNotToBeXpath(String xpath, String attribute) {
+		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(driver.findElement(By.xpath(xpath)), attribute));
 	}
 	
 	

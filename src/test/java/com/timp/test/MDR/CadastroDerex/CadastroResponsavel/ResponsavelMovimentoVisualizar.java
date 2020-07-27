@@ -1,5 +1,6 @@
 package com.timp.test.MDR.CadastroDerex.CadastroResponsavel;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.BeforeClass;
@@ -10,11 +11,10 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel.*;
 
-public class ResponsavelMovimentoCriar extends TestBaseSteven{
-
+public class ResponsavelMovimentoVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ResponsavelMovimentoCriarPO responsavelMovimentoCriarPO;
+	ResponsavelMovimentoVisualizarPO responsavelMovimentoVisualizarPO;
 	
 	
 	@BeforeClass
@@ -24,7 +24,7 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		responsavelMovimentoCriarPO = new ResponsavelMovimentoCriarPO();
+		responsavelMovimentoVisualizarPO = new ResponsavelMovimentoVisualizarPO();
 	}
 	/*
 	@AfterClass
@@ -49,13 +49,9 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven{
 	
 	 @Test(priority = 2)
 	  public void visualizar() {
+		 
+		 String sucesso = responsavelMovimentoVisualizarPO.visualizar();
 		  
-		boolean sucesso = responsavelMovimentoCriarPO.criar();
-		
-		assertTrue(sucesso, Criar);
-	
+		 assertEquals(sucesso, "edit", EmpresaVisualizar);
 	  }
-	
-	
 }
-	

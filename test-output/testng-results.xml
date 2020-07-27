@@ -1,33 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-07-27T07:43:07Z" name="Default suite" finished-at="2020-07-27T07:45:53Z" duration-ms="165420">
+=======
+  <suite name="Default suite" duration-ms="120158" started-at="2020-07-26T17:32:50Z" finished-at="2020-07-26T17:34:51Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-07-27T07:43:07Z" name="Default test" finished-at="2020-07-27T07:45:53Z" duration-ms="165420">
       <class name="com.timp.test.MDR.Tributos.TributosCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-27T01:43:07Z" name="beforeClass" finished-at="2020-07-27T01:43:24Z" duration-ms="16812" status="PASS">
+=======
+    <test name="Default test" duration-ms="120158" started-at="2020-07-26T17:32:50Z" finished-at="2020-07-26T17:34:51Z">
+      <class name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="beforeClass" is-config="true" duration-ms="11761" started-at="2020-07-26T11:32:50Z" finished-at="2020-07-26T11:33:02Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-27T01:43:24Z" name="login" finished-at="2020-07-27T01:43:35Z" duration-ms="10854" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="login" duration-ms="8116" started-at="2020-07-26T11:33:02Z" finished-at="2020-07-26T11:33:10Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-27T01:43:35Z" name="acessarMDR" finished-at="2020-07-27T01:43:47Z" duration-ms="11956" status="PASS">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="acessarMDR" duration-ms="23988" started-at="2020-07-26T11:33:10Z" finished-at="2020-07-26T11:33:34Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method signature="tributoCriar()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-27T01:43:47Z" name="tributoCriar" finished-at="2020-07-27T01:45:53Z" duration-ms="125739" status="PASS">
+=======
+        <test-method status="PASS" signature="visualizar()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="visualizar" duration-ms="76280" started-at="2020-07-26T11:33:34Z" finished-at="2020-07-26T11:34:51Z">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- tributoCriar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosCriar@55634720]" started-at="2020-07-27T01:45:53Z" name="afterClass" finished-at="2020-07-27T01:45:53Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.MDR.Tributos.TributosCriar -->
+=======
+        </test-method> <!-- visualizar -->
+      </class> <!-- com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar -->
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

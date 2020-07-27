@@ -24,6 +24,6 @@ public class TributosEditarPO extends TestBaseKathy{
 		tributos.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
-		
+		//prueba
 	}
 }

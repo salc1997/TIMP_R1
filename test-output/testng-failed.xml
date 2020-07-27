@@ -5,7 +5,6 @@
     <classes>
       <class name="com.timp.test.MDR.Tributos.TributosEditar">
         <methods>
-          <include name="acessarMDR"/>
           <include name="afterClass"/>
           <include name="tributoEditar"/>
           <include name="beforeClass"/>

@@ -3,30 +3,14 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.Editar">
-=======
       <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
-<<<<<<< HEAD
-=======
           <include name="login"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-          <include name="afterClass"/>
-=======
           <include name="acessarMDR"/>
           <include name="criar"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.Editar -->
-=======
       </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

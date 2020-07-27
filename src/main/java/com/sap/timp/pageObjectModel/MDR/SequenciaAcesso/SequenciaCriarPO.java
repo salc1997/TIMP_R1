@@ -72,7 +72,8 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
 	public WebElement camposestrutura;
 	
-	@FindBy(xpath="//div[text()=\"Agrupamento\"]")
+	//@FindBy(xpath="//div[text()=\"Agrupamento\"]")
+	@FindBy(xpath = "//div[@title=\"Centro de Custo\"]")
 	public WebElement agrupamento;
 	
 	@FindBy(xpath = "//*[@id=\"fields\"]/div[3]")
@@ -82,13 +83,19 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	public WebElement setafinal;
 	
 	
+	@FindBy(xpath = "//button[@id=\"home-icon\"]")
+	public WebElement mostrar;
+	
+	@FindBy(xpath = "//input [@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
 	public SequenciaCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	
 	
-	public void criar() {
+	public boolean criar() {
 		
 		
 		Actions action = new Actions(driver);
@@ -150,15 +157,49 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		
 		gravar.click();
 		
 		butaosim.click();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		biblioteca.click();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		//Pega o ultimo id depois do preenchimento
+
+		setafinal.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		idC.click();
+		dobleClickElement(idC);
+		sleep(2000);
+		String idB = idR.getText();
+		sleep(2000);
+		System.out.println(id);
+		System.out.println(idB);
+		
+		double idD = convertToDouble(id);
+		double idBD = convertToDouble(idB);
+		//compara pra ver se o novo id criado é realmente o ultimo
+		boolean sucesso = false;
+		
+		if (idBD > idD) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		System.out.println( sucesso);
+
+		pesquisar.sendKeys(idB);
+		
+		//verificar se o relatório foi criado
+		boolean text= idB.contains(idR.getText());
+		System.out.println(text);
+		
+		return text;
 
 	}
 	

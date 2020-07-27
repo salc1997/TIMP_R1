@@ -5,32 +5,29 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Tributos.TributosCriarPO;
+import com.sap.timp.pageObjectModel.MDR.Tributos.TributosDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
-
-import static org.testng.Assert.assertTrue;
-
 import org.testng.annotations.AfterClass;
 
-public class TributosCriar extends TestBaseKathy{
+public class TributosDetalhes extends TestBaseKathy{
 	LoginTC loginTC;
-	AcessarMDRPO acessarMDRPO;
-	TributosCriarPO tributoCriar;
+  	AcessarMDRPO acessarMDRPO;
+  	TributosDetalhesPO tributosDetalhesPO;
 	
-	@BeforeClass
+  	@BeforeClass
   	public void beforeClass() {
 		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tributoCriar = new TributosCriarPO();
+	  	tributosDetalhesPO = new TributosDetalhesPO();
   	}
 
-	@AfterClass
-		public void afterClass() {
-	}
+  	@AfterClass
+  	public void afterClass() {
+  	}
   
-  	@Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,11 +38,7 @@ public class TributosCriar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void tributoCriar() {
-		
-		boolean sucesso = tributoCriar.criarTributo();
-
-		assertTrue(sucesso, Criar);
+	public void tributoDetalhes() {
+		tributosDetalhesPO.tributoDetalhes();
 	}
-
 }

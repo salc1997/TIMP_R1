@@ -1,29 +1,507 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results skipped="0" failed="0" total="1" passed="1">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="80456" started-at="2020-07-27T23:11:30Z" finished-at="2020-07-27T23:12:51Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-07-27T21:27:45Z" name="Default suite" finished-at="2020-07-27T21:29:15Z" duration-ms="90533">
+=======
+<<<<<<< HEAD
+  <suite name="Elections Main UI Testing - Functional Tests" duration-ms="32301" started-at="2020-07-27T19:11:20Z" finished-at="2020-07-27T19:11:52Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="79915" started-at="2020-07-27T18:50:00Z" finished-at="2020-07-27T18:51:20Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="70381" started-at="2020-07-27T18:12:22Z" finished-at="2020-07-27T18:13:33Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="60405" started-at="2020-07-27T17:58:19Z" finished-at="2020-07-27T17:59:20Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="43745" started-at="2020-07-27T17:59:53Z" finished-at="2020-07-27T18:00:37Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="56306" started-at="2020-07-27T17:53:33Z" finished-at="2020-07-27T17:54:30Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="65314" started-at="2020-07-27T17:37:23Z" finished-at="2020-07-27T17:38:28Z">
+=======
+  <suite name="Default suite" duration-ms="59965" started-at="2020-07-27T17:32:48Z" finished-at="2020-07-27T17:33:48Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="80456" started-at="2020-07-27T23:11:30Z" finished-at="2020-07-27T23:12:51Z">
       <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="15614" started-at="2020-07-27T20:11:30Z" finished-at="2020-07-27T20:11:46Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-07-27T21:27:45Z" name="Default test" finished-at="2020-07-27T21:29:15Z" duration-ms="90533">
+      <class name="com.timp.test.MDR.Tributos.TributosDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:27:45Z" name="beforeClass" finished-at="2020-07-27T15:27:58Z" duration-ms="13057" status="PASS">
+=======
+<<<<<<< HEAD
+    <test name="FunctionalTests" duration-ms="32301" started-at="2020-07-27T19:11:20Z" finished-at="2020-07-27T19:11:52Z">
+      <class name="com.timp.test.ADM.LoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.LoginTest@7c16905e]" name="beforeClass" is-config="true" duration-ms="13212" started-at="2020-07-27T13:11:20Z" finished-at="2020-07-27T13:11:33Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="79915" started-at="2020-07-27T18:50:00Z" finished-at="2020-07-27T18:51:20Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="70381" started-at="2020-07-27T18:12:22Z" finished-at="2020-07-27T18:13:33Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="60405" started-at="2020-07-27T17:58:19Z" finished-at="2020-07-27T17:59:20Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="43745" started-at="2020-07-27T17:59:53Z" finished-at="2020-07-27T18:00:37Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="56306" started-at="2020-07-27T17:53:33Z" finished-at="2020-07-27T17:54:30Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="65314" started-at="2020-07-27T17:37:23Z" finished-at="2020-07-27T17:38:28Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.BRB.Editar">
+<<<<<<< HEAD
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Editar@341b80b2]" name="beforeClass" is-config="true" duration-ms="11335" started-at="2020-07-27T12:12:22Z" finished-at="2020-07-27T12:12:34Z">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Editar@341b80b2]" name="beforeClass" is-config="true" duration-ms="11363" started-at="2020-07-27T11:37:23Z" finished-at="2020-07-27T11:37:35Z">
+=======
+    <test name="Default test" duration-ms="59965" started-at="2020-07-27T17:32:48Z" finished-at="2020-07-27T17:33:48Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
+<<<<<<< HEAD
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16264" started-at="2020-07-27T15:50:00Z" finished-at="2020-07-27T15:50:16Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="18307" started-at="2020-07-27T14:58:19Z" finished-at="2020-07-27T14:58:38Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="7614" started-at="2020-07-27T11:59:53Z" finished-at="2020-07-27T12:00:01Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="19237" started-at="2020-07-27T14:53:33Z" finished-at="2020-07-27T14:53:53Z">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="18225" started-at="2020-07-27T14:32:48Z" finished-at="2020-07-27T14:33:06Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="login" duration-ms="8856" started-at="2020-07-27T20:11:46Z" finished-at="2020-07-27T20:11:55Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:27:58Z" name="login" finished-at="2020-07-27T15:28:06Z" duration-ms="8606" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.timp.test.ADM.LoginTest@7c16905e]" name="Login" duration-ms="18832" started-at="2020-07-27T13:11:33Z" finished-at="2020-07-27T13:11:52Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="login" duration-ms="9533" started-at="2020-07-27T15:50:16Z" finished-at="2020-07-27T15:50:26Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Editar@341b80b2]" name="login" duration-ms="5609" started-at="2020-07-27T12:12:34Z" finished-at="2020-07-27T12:12:39Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="login" duration-ms="17640" started-at="2020-07-27T14:58:38Z" finished-at="2020-07-27T14:58:55Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="login" duration-ms="12060" started-at="2020-07-27T12:00:01Z" finished-at="2020-07-27T12:00:13Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="login" duration-ms="12495" started-at="2020-07-27T14:53:53Z" finished-at="2020-07-27T14:54:05Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Editar@341b80b2]" name="login" duration-ms="5647" started-at="2020-07-27T11:37:35Z" finished-at="2020-07-27T11:37:40Z">
+=======
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="login" duration-ms="17132" started-at="2020-07-27T14:33:06Z" finished-at="2020-07-27T14:33:24Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58134}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90c8632467d4cad92a8303d000789347
+=======
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bea4be94c5767cb7dc74b7a432d150d0
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d6978c2f0311357b196aef739485eef7
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+*** Element info: {Using=xpath, value=//*[@id="login-btn"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58134}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90c8632467d4cad92a8303d000789347
+=======
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bea4be94c5767cb7dc74b7a432d150d0
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d6978c2f0311357b196aef739485eef7
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+*** Element info: {Using=xpath, value=//*[@id="login-btn"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.ADM.LoginTC.login(LoginTC.java:38)
+	at com.timp.test.MDR.SequenciaAcesso.SequenciaCriar.login(SequenciaCriar.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.ADM.LoginTest@7c16905e]" name="afterClass" is-config="true" duration-ms="244" started-at="2020-07-27T13:11:52Z" finished-at="2020-07-27T13:11:52Z">
+=======
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="acessarMDR" duration-ms="11465" started-at="2020-07-27T20:11:55Z" finished-at="2020-07-27T20:12:06Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:28:06Z" name="acessarMDR" finished-at="2020-07-27T15:28:46Z" duration-ms="39396" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="acessarMDR" duration-ms="11824" started-at="2020-07-27T15:50:26Z" finished-at="2020-07-27T15:50:38Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Editar@341b80b2]" name="brbEntrar" duration-ms="13502" started-at="2020-07-27T12:12:39Z" finished-at="2020-07-27T12:12:53Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="acessarMDR" duration-ms="12224" started-at="2020-07-27T14:58:55Z" finished-at="2020-07-27T14:59:08Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="acessarMDR" duration-ms="12033" started-at="2020-07-27T12:00:13Z" finished-at="2020-07-27T12:00:25Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="acessarMDR" duration-ms="12252" started-at="2020-07-27T14:54:05Z" finished-at="2020-07-27T14:54:18Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Editar@341b80b2]" name="brbEntrar" duration-ms="13775" started-at="2020-07-27T11:37:40Z" finished-at="2020-07-27T11:37:54Z">
+=======
+        <test-method status="FAIL" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="acessarMDR" duration-ms="12232" started-at="2020-07-27T14:33:24Z" finished-at="2020-07-27T14:33:36Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58134}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90c8632467d4cad92a8303d000789347
+=======
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bea4be94c5767cb7dc74b7a432d150d0
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d6978c2f0311357b196aef739485eef7
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+*** Element info: {Using=xpath, value=//*[@id="home-icon"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58134}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90c8632467d4cad92a8303d000789347
+=======
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bea4be94c5767cb7dc74b7a432d150d0
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d6978c2f0311357b196aef739485eef7
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+*** Element info: {Using=xpath, value=//*[@id="home-icon"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:71)
+	at com.sap.timp.pageObjectModel.MDR.AcessarMDRPO.acessarMDR(AcessarMDRPO.java:35)
+	at com.timp.test.MDR.SequenciaAcesso.SequenciaCriar.acessarMDR(SequenciaCriar.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="Editar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="Editar" duration-ms="44492" started-at="2020-07-27T20:12:06Z" finished-at="2020-07-27T20:12:51Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="tributoDetalhes()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:28:46Z" name="tributoDetalhes" finished-at="2020-07-27T15:29:15Z" duration-ms="29431" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="criar" duration-ms="42267" started-at="2020-07-27T15:50:38Z" finished-at="2020-07-27T15:51:20Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="criar" duration-ms="12185" started-at="2020-07-27T14:59:08Z" finished-at="2020-07-27T14:59:20Z">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="criar" duration-ms="12021" started-at="2020-07-27T12:00:25Z" finished-at="2020-07-27T12:00:37Z">
+=======
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="criar" duration-ms="12249" started-at="2020-07-27T14:54:18Z" finished-at="2020-07-27T14:54:30Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58134}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90c8632467d4cad92a8303d000789347
+=======
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bea4be94c5767cb7dc74b7a432d150d0
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d6978c2f0311357b196aef739485eef7
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58134}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90c8632467d4cad92a8303d000789347
+=======
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bea4be94c5767cb7dc74b7a432d150d0
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d6978c2f0311357b196aef739485eef7
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:573)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseEliel.invisibilityOfElement(TestBaseEliel.java:66)
+	at com.sap.timp.pageObjectModel.MDR.SequenciaAcesso.SequenciaCriarPO.criar(SequenciaCriarPO.java:104)
+	at com.timp.test.MDR.SequenciaAcesso.SequenciaCriar.criar(SequenciaCriar.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Editar -->
       </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
+=======
+<<<<<<< HEAD
+        </test-method> <!-- tributoDetalhes -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:29:15Z" name="afterClass" finished-at="2020-07-27T15:29:15Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- editar -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Editar@341b80b2]" name="afterClass" is-config="true" duration-ms="232" started-at="2020-07-27T12:13:32Z" finished-at="2020-07-27T12:13:33Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Tributos.TributosDetalhes -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+      </class> <!-- com.timp.test.ADM.LoginTest -->
+    </test> <!-- FunctionalTests -->
+  </suite> <!-- Elections Main UI Testing - Functional Tests -->
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 </testng-results>

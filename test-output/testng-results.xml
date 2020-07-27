@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-27T14:49:05Z" name="Default suite" finished-at="2020-07-27T14:52:28Z" duration-ms="202315">
+  <suite started-at="2020-07-27T15:16:48Z" name="Default suite" finished-at="2020-07-27T15:18:26Z" duration-ms="98692">
     <groups>
     </groups>
-    <test started-at="2020-07-27T14:49:05Z" name="Default test" finished-at="2020-07-27T14:52:28Z" duration-ms="202315">
-      <class name="com.timp.test.MDR.Tributos.TributosEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosEditar@4c1909a3]" started-at="2020-07-27T08:49:05Z" name="beforeClass" finished-at="2020-07-27T08:49:20Z" duration-ms="14516" status="PASS">
+    <test started-at="2020-07-27T15:16:48Z" name="Default test" finished-at="2020-07-27T15:18:26Z" duration-ms="98692">
+      <class name="com.timp.test.MDR.Tributos.TributosVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:16:48Z" name="beforeClass" finished-at="2020-07-27T09:17:01Z" duration-ms="13313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosEditar@4c1909a3]" started-at="2020-07-27T08:49:20Z" name="login" finished-at="2020-07-27T08:49:29Z" duration-ms="9016" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:17:01Z" name="login" finished-at="2020-07-27T09:17:10Z" duration-ms="8664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosEditar@4c1909a3]" started-at="2020-07-27T08:49:29Z" name="acessarMDR" finished-at="2020-07-27T08:50:00Z" duration-ms="31591" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:17:10Z" name="acessarMDR" finished-at="2020-07-27T09:17:42Z" duration-ms="32035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="tributoEditar()[pri:0, instance:com.timp.test.MDR.Tributos.TributosEditar@4c1909a3]" started-at="2020-07-27T08:50:00Z" name="tributoEditar" finished-at="2020-07-27T08:52:28Z" duration-ms="147137" status="PASS">
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:17:42Z" name="visualizar" finished-at="2020-07-27T09:18:26Z" duration-ms="44634" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tributoEditar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosEditar@4c1909a3]" started-at="2020-07-27T08:52:28Z" name="afterClass" finished-at="2020-07-27T08:52:28Z" duration-ms="1" status="PASS">
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:18:26Z" name="afterClass" finished-at="2020-07-27T09:18:26Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.Tributos.TributosEditar -->
+      </class> <!-- com.timp.test.MDR.Tributos.TributosVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

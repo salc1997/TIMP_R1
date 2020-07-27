@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros">
+      <class name="com.timp.test.MDR.Tributos.TributosCriar">
         <methods>
+          <include name="login"/>
+          <include name="acessarMDR"/>
           <include name="beforeClass"/>
-          <include name="filtro"/>
+          <include name="tributoCriar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoFiltros -->
+      </class> <!-- com.timp.test.MDR.Tributos.TributosCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

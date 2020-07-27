@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Tributos.TributosCriarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class TributosCriar extends TestBaseKathy{
@@ -39,7 +42,10 @@ public class TributosCriar extends TestBaseKathy{
 	
 	@Test(priority = 2)
 	public void tributoCriar() {
-		tributoCriar.criarTributo();
+		
+		boolean sucesso = tributoCriar.criarTributo();
+
+		assertTrue(sucesso, Criar);
 	}
 
 }

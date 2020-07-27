@@ -5,26 +5,25 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Tributos.TributosCriarPO;
-import com.sap.timp.pageObjectModel.MDR.Tributos.TributosEditarPO;
+import com.sap.timp.pageObjectModel.MDR.Tributos.TributosVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.AfterClass;
 
-public class TributosEditar extends TestBaseKathy{
-	LoginTC loginTC;
-	AcessarMDRPO acessarMDRPO;
-	TributosEditarPO tributoEditarPO;
-	
+public class TributosVisualizar extends TestBaseKathy{
+  LoginTC loginTC;
+  AcessarMDRPO acessarMDRPO;
+  TributosVisualizarPO tributosVisualizarPO;
+  
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationK();
 	  loginTC = new LoginTC();
 	  acessarMDRPO = new AcessarMDRPO();
-	  tributoEditarPO = new TributosEditarPO();
+	  tributosVisualizarPO = new TributosVisualizarPO();
   }
 
   @AfterClass
@@ -42,9 +41,9 @@ public class TributosEditar extends TestBaseKathy{
   }
 
   @Test(priority = 2)
-  public void tributoEditar() {	 
-	  boolean sucesso =  tributoEditarPO.tributosEditar();
-	  assertTrue(sucesso, Editar);
-  }
+  public void visualizar() {
+	  String sucesso = tributosVisualizarPO.visualizarTributo();
 
+		assertEquals(sucesso, "edit", EmpresaVisualizar);
+  }
 }

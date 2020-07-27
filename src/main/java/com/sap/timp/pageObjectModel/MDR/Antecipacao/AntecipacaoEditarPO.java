@@ -31,6 +31,10 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "/html/body/div[3]")
+	public WebElement cuerpo;
+	
 
 	public AntecipacaoEditarPO() {
 

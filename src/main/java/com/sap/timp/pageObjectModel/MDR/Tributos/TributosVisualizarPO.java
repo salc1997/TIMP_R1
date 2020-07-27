@@ -1,14 +1,13 @@
 package com.sap.timp.pageObjectModel.MDR.Tributos;
 
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKathy;
 
-public class TributosEditarPO extends TestBaseKathy{
-	
+public class TributosVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "//li/div/span[text()=\"Centralização\"]")
 	public WebElement centralização;
 	
@@ -42,12 +41,14 @@ public class TributosEditarPO extends TestBaseKathy{
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
 		
+	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
+	public WebElement visualizar;
 	
-	public TributosEditarPO() {
+	public TributosVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean tributosEditar() {
+	public String visualizarTributo() {
 		String url = driver.getCurrentUrl();
 		boolean tc2 = false;
 		boolean td1 = false;
@@ -80,56 +81,12 @@ public class TributosEditarPO extends TestBaseKathy{
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		editar.click();
-		
-		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
-		sleep(3000);
-				
-		waitExpectElement(campo);
-		campo.sendKeys(Keys.ENTER);
-		String valor = campo.getAttribute("value");
-
-		String enviar = "27/07/2020";
-		
-		campo.clear();
-		sleep(1000);
-		campo.sendKeys(enviar);
-		campo.sendKeys(Keys.ENTER);
-		//campo.sendKeys(Keys.ENTER);
-		cuerpo.click();
+		visualizar.click();
 		sleep(2000);
-		btnGravar.click();
-		sleep(3000);
-		confirmacionGravar.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-
-		driver.navigate().refresh();
-
-		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
-		sleep(2000);
-
-		String nuevoTexto = campo.getAttribute("value");
-		System.out.println(valor);
-		System.out.println(nuevoTexto);
-		boolean sucesso = nuevoTexto.equals(enviar);
-		System.out.println(sucesso);
-
-		sleep(3000);
-		campo.sendKeys(Keys.ENTER);
-		campo.clear();
-
-		sleep(1000);
-		campo.sendKeys(valor);
-		campo.sendKeys(Keys.ENTER);
-		cuerpo.click();
 		
-		btnGravar.click();
-
-		sleep(3000);
-		confirmacionGravar.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		
 		return sucesso;
 	}

@@ -49,7 +49,11 @@ public class TestBaseSteven{
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+<<<<<<< HEAD
 		driver.get(tq1);
+=======
+		driver.get(tp1);
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 		return driver;
 
 	}
@@ -148,6 +152,19 @@ public class TestBaseSteven{
 		
 		return result;
 		
+	}
+	
+	
+	public void attributoNotToBeEmptyElement(WebElement element, String attribute) {
+		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
+	}
+	
+	public void attributoNotToBeXpath(String xpath, String attribute) {
+		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(driver.findElement(By.xpath(xpath)), attribute));
 	}
 	
 	

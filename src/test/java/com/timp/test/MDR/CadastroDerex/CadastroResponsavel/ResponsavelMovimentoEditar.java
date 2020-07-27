@@ -10,11 +10,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel.*;
 
-public class ResponsavelMovimentoCriar extends TestBaseSteven{
+public class ResponsavelMovimentoEditar extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ResponsavelMovimentoCriarPO responsavelMovimentoCriarPO;
+	ResponsavelMovimentoEditarPO responsavelMovimentoEditarPO;
 	
 	
 	@BeforeClass
@@ -24,7 +24,7 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		responsavelMovimentoCriarPO = new ResponsavelMovimentoCriarPO();
+		responsavelMovimentoEditarPO = new ResponsavelMovimentoEditarPO();
 	}
 	/*
 	@AfterClass
@@ -50,10 +50,7 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven{
 	 @Test(priority = 2)
 	  public void visualizar() {
 		  
-		boolean sucesso = responsavelMovimentoCriarPO.criar();
-		
-		assertTrue(sucesso, Criar);
-	
+		 responsavelMovimentoEditarPO.editar();
 	  }
 	
 	

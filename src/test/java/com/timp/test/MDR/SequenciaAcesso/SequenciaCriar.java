@@ -26,7 +26,7 @@ public class SequenciaCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaCriarPO = new SequenciaCriarPO();

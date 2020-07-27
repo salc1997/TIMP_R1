@@ -35,7 +35,8 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um Tributo\"]")
 	public WebElement tributo;
 	
-	@FindBy (xpath = "//*[@id=\"23\"]/div[1]/label/span")
+	//@FindBy (xpath = "//*[@id=\"23\"]/div[1]/label/span")
+	@FindBy (xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaotributo;
 
 	@FindBy(xpath =" //*[@id=\"select\"]/div[1]/input")
@@ -73,7 +74,7 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	public WebElement camposestrutura;
 	
 	//@FindBy(xpath="//div[text()=\"Agrupamento\"]")
-	@FindBy(xpath = "//div[@title=\"Centro de Custo\"]")
+	@FindBy(xpath = "//div[@data-item and @data-id][1]")
 	public WebElement agrupamento;
 	
 	@FindBy(xpath = "//*[@id=\"fields\"]/div[3]")

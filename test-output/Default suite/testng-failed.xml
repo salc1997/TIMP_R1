@@ -5,9 +5,7 @@
     <classes>
       <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
         <methods>
-          <include name="login"/>
           <include name="beforeClass"/>
-          <include name="acessarMDR"/>
           <include name="criar"/>
         </methods>
       </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->

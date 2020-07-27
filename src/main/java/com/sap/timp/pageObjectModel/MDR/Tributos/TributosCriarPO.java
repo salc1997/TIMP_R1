@@ -189,7 +189,7 @@ public class TributosCriarPO extends TestBaseKathy{
 	
 	public boolean criarTributo() {
 		
-String url = driver.getCurrentUrl();
+		String url = driver.getCurrentUrl();
 		
 		boolean tc2 = false;
 		boolean td1 = false;
@@ -271,7 +271,7 @@ String url = driver.getCurrentUrl();
 		opcTributoOrigen.click();
 		
 		if (td1 == true || tq1==true ) {
-			sleep(6000);
+			sleep(8000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(10000);
 		}		
@@ -338,7 +338,7 @@ String url = driver.getCurrentUrl();
 		
 
 		if (td1 == true || tq1==true ) {
-			sleep(6000);
+			sleep(8000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
 		}

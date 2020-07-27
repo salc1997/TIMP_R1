@@ -1,64 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="3" passed="3">
-=======
 <testng-results total="3" passed="3" failed="0" skipped="0">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="104078" started-at="2020-07-27T15:39:10Z" finished-at="2020-07-27T15:40:54Z">
-=======
-  <suite started-at="2020-07-27T15:16:48Z" name="Default suite" finished-at="2020-07-27T15:18:26Z" duration-ms="98692">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite started-at="2020-07-27T21:27:45Z" name="Default suite" finished-at="2020-07-27T21:29:15Z" duration-ms="90533">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="104078" started-at="2020-07-27T15:39:10Z" finished-at="2020-07-27T15:40:54Z">
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="18999" started-at="2020-07-27T12:39:10Z" finished-at="2020-07-27T12:39:29Z">
-=======
-    <test started-at="2020-07-27T15:16:48Z" name="Default test" finished-at="2020-07-27T15:18:26Z" duration-ms="98692">
-      <class name="com.timp.test.MDR.Tributos.TributosVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:16:48Z" name="beforeClass" finished-at="2020-07-27T09:17:01Z" duration-ms="13313" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test started-at="2020-07-27T21:27:45Z" name="Default test" finished-at="2020-07-27T21:29:15Z" duration-ms="90533">
+      <class name="com.timp.test.MDR.Tributos.TributosDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:27:45Z" name="beforeClass" finished-at="2020-07-27T15:27:58Z" duration-ms="13057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="login" duration-ms="12023" started-at="2020-07-27T12:39:29Z" finished-at="2020-07-27T12:39:41Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:17:01Z" name="login" finished-at="2020-07-27T09:17:10Z" duration-ms="8664" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:27:58Z" name="login" finished-at="2020-07-27T15:28:06Z" duration-ms="8606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="acessarMDR" duration-ms="14343" started-at="2020-07-27T12:39:41Z" finished-at="2020-07-27T12:39:56Z">
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:17:10Z" name="acessarMDR" finished-at="2020-07-27T09:17:42Z" duration-ms="32035" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:28:06Z" name="acessarMDR" finished-at="2020-07-27T15:28:46Z" duration-ms="39396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@8e0379d]" name="criar" duration-ms="58685" started-at="2020-07-27T12:39:56Z" finished-at="2020-07-27T12:40:54Z">
-=======
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:17:42Z" name="visualizar" finished-at="2020-07-27T09:18:26Z" duration-ms="44634" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method signature="tributoDetalhes()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:28:46Z" name="tributoDetalhes" finished-at="2020-07-27T15:29:15Z" duration-ms="29431" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
-=======
-        </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosVisualizar@4c1909a3]" started-at="2020-07-27T09:18:26Z" name="afterClass" finished-at="2020-07-27T09:18:26Z" duration-ms="1" status="PASS">
+        </test-method> <!-- tributoDetalhes -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Tributos.TributosDetalhes@4c1909a3]" started-at="2020-07-27T15:29:15Z" name="afterClass" finished-at="2020-07-27T15:29:15Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.Tributos.TributosVisualizar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Tributos.TributosDetalhes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

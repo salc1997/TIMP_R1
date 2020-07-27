@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Tributos.TributosDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.AfterClass;
 
 public class TributosDetalhes extends TestBaseKathy{
@@ -39,6 +42,8 @@ public class TributosDetalhes extends TestBaseKathy{
 	
 	@Test(priority = 2)
 	public void tributoDetalhes() {
-		tributosDetalhesPO.tributoDetalhes();
+		
+		 String sucesso = tributosDetalhesPO.tributoDetalhes();
+		 assertEquals(sucesso, "detail", EmpresaVisualizar);
 	}
 }

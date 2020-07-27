@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Alltax - Automated Tests" thread-count="3" parallel="methods">
+	<test thread-count="3" name="FunctionalTests">
+		<packages>
+			<package name="com.timp.test.BRB" />
+<!-- 			<package name="com.sap.p2p.tests" /> -->
+		</packages>
+	</test>
+</suite> 

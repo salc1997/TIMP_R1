@@ -26,7 +26,7 @@ public class SequenciaCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaCriarPO = new SequenciaCriarPO();
@@ -51,7 +51,11 @@ public class SequenciaCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		sequenciaCriarPO.criar();
+		boolean text = sequenciaCriarPO.criar();
+		
+		assertTrue(text, Criar);
+		//Teste pra conferir se conseguiu acesssar o sistema
+		assertTrue(sequenciaCriarPO.mostrar.isDisplayed(), semAcesso);
 
 		
 	}

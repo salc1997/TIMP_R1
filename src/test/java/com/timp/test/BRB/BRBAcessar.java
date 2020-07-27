@@ -25,8 +25,6 @@ public class BRBAcessar extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
-		
-
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();

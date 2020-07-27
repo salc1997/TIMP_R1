@@ -49,15 +49,9 @@ public class TestBaseSteven{
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-<<<<<<< HEAD
 		driver.get(td1);
-=======
-<<<<<<< HEAD
-		driver.get(tq1);
-=======
-		driver.get(tp1);
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+
+
 		return driver;
 
 	}

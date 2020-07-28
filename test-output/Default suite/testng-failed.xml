@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
+      <class name="com.timp.test.BRB.testNg.BRBAcessar">
         <methods>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="login"/>
+          <include name="brbEntrar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
+      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

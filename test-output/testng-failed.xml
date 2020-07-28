@@ -3,27 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
       <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
-=======
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
-<<<<<<< HEAD
-=======
-          <include name="Editar"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
           <include name="criar"/>
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

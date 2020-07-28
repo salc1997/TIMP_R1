@@ -2,87 +2,47 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="65792" started-at="2020-07-28T19:39:45Z" finished-at="2020-07-28T19:40:50Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="116862" started-at="2020-07-28T17:19:36Z" finished-at="2020-07-28T17:21:33Z">
-=======
-  <suite name="Default suite" duration-ms="56801" started-at="2020-07-28T18:14:08Z" finished-at="2020-07-28T18:15:05Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="49023" started-at="2020-07-28T23:16:53Z" finished-at="2020-07-28T23:17:42Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="65792" started-at="2020-07-28T19:39:45Z" finished-at="2020-07-28T19:40:50Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="116862" started-at="2020-07-28T17:19:36Z" finished-at="2020-07-28T17:21:33Z">
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="10874" started-at="2020-07-28T11:19:36Z" finished-at="2020-07-28T11:19:47Z">
-=======
-    <test name="Default test" duration-ms="56801" started-at="2020-07-28T18:14:08Z" finished-at="2020-07-28T18:15:05Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test name="Default test" duration-ms="49023" started-at="2020-07-28T23:16:53Z" finished-at="2020-07-28T23:17:42Z">
       <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
-<<<<<<< HEAD
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="17513" started-at="2020-07-28T16:39:45Z" finished-at="2020-07-28T16:40:02Z">
-=======
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="15866" started-at="2020-07-28T15:14:08Z" finished-at="2020-07-28T15:14:24Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="19303" started-at="2020-07-28T20:16:53Z" finished-at="2020-07-28T20:17:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="login" duration-ms="11492" started-at="2020-07-28T16:40:02Z" finished-at="2020-07-28T16:40:14Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="login" duration-ms="6348" started-at="2020-07-28T11:19:47Z" finished-at="2020-07-28T11:19:53Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="login" duration-ms="10622" started-at="2020-07-28T15:14:24Z" finished-at="2020-07-28T15:14:35Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="login" duration-ms="12921" started-at="2020-07-28T20:17:12Z" finished-at="2020-07-28T20:17:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="acessarMDR" duration-ms="11288" started-at="2020-07-28T16:40:14Z" finished-at="2020-07-28T16:40:25Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="acessarMDR" duration-ms="22574" started-at="2020-07-28T11:19:53Z" finished-at="2020-07-28T11:20:16Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="acessarMDR" duration-ms="30148" started-at="2020-07-28T15:14:35Z" finished-at="2020-07-28T15:15:05Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="acessarMDR" duration-ms="11714" started-at="2020-07-28T20:17:25Z" finished-at="2020-07-28T20:17:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="criar" duration-ms="25446" started-at="2020-07-28T16:40:25Z" finished-at="2020-07-28T16:40:50Z">
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="criar" duration-ms="5047" started-at="2020-07-28T20:17:37Z" finished-at="2020-07-28T20:17:42Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="Selecionar  uma  Filial"]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="list"]/div/div[2]/div/div[7]"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58028}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c772df7ad2961b82a74e89a807609e50
-*** Element info: {Using=xpath, value=//input[@placeholder="Selecionar  uma  Filial"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fe25c97fb714900eaf3b41b4d84cb95d
+*** Element info: {Using=xpath, value=//*[@id="list"]/div/div[2]/div/div[7]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="Selecionar  uma  Filial"]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="list"]/div/div[2]/div/div[7]"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58028}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c772df7ad2961b82a74e89a807609e50
-*** Element info: {Using=xpath, value=//input[@placeholder="Selecionar  uma  Filial"]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fe25c97fb714900eaf3b41b4d84cb95d
+*** Element info: {Using=xpath, value=//*[@id="list"]/div/div[2]/div/div[7]}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -98,7 +58,7 @@ Session ID: c772df7ad2961b82a74e89a807609e50
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoCriarPO.criar(CadastroCondicaoCriarPO.java:131)
+	at com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoCriarPO.criar(CadastroCondicaoCriarPO.java:126)
 	at com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar.criar(CadastroCondicaoCriar.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -127,22 +87,10 @@ Session ID: c772df7ad2961b82a74e89a807609e50
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="Editar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="Editar" duration-ms="77048" started-at="2020-07-28T11:20:16Z" finished-at="2020-07-28T11:21:33Z">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="criar" duration-ms="130" started-at="2020-07-28T15:15:05Z" finished-at="2020-07-28T15:15:05Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- Editar -->
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
-=======
         </test-method> <!-- criar -->
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

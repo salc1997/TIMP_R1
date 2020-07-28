@@ -21,8 +21,12 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
 	public WebElement empresa;
 	
+	
 	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
 	public WebElement opcaoempresa;
+	
+	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
+	public WebElement opcaoempresatc2tq1tp1;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um UF\"]")
 	public WebElement uf;
@@ -73,12 +77,18 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idR;
 	
+	//@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
 	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
+	//public WebElement setafinal;
+
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
 	public WebElement setafinal;
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement mostrar;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
 	
 	public CadastroCondicaoCriarPO() {
 		PageFactory.initElements(driver, this);
@@ -86,11 +96,26 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	
 	
 	
-	public void criar() {
+	public boolean criar() {
 		
 		
-		Actions action = new Actions(driver);
-
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}
+		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		cadastrocondicao.click();
@@ -106,17 +131,24 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		String id = idR.getText();
 		sleep(2000);
-		System.out.println(id);
+		//System.out.println(id);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		novocadastrocondicao.click();
 	
 		sleep(2000);
 		empresa.click();
+		sleep(2000);
+		if (tc2 == true || tp1 == true || tq1 == true) {
+			opcaoempresatc2tq1tp1.click();
+			empresa.sendKeys(Keys.ESCAPE);
+		}else {
+			opcaoempresa.click();
+			empresa.sendKeys(Keys.ESCAPE);
+		}
+		//opcaoempresa.click();
 		
-		opcaoempresa.click();
-		
-		empresa.sendKeys(Keys.ESCAPE);
+		//empresa.sendKeys(Keys.ESCAPE);
 		
 		sleep(2000);
 		
@@ -156,14 +188,18 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 				
 		sleep(2000);
 		camposestrutura.click();
-		
+		sleep(2000);
 		atribuicao.sendKeys("campo");
 		
-		//gravar.click();
+		gravar.click();
 		
-	//	butaosim.click();
+		butaosim.click();
 		
-		/*
+		sleep(2000);
+		
+		biblioteca.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		//Pega o ultimo id depois do preenchimento
 
 		setafinal.click();
@@ -190,14 +226,16 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		System.out.println( sucesso);
 
-		pesquisar.sendKeys(idB);
 		
+		pesquisar.sendKeys(idB);
+		pesquisar.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//verificar se o relatório foi criado
 		boolean text= idB.contains(idR.getText());
 		System.out.println(text);
 		
 		return text;
-	*/
+
 	}
 	
 

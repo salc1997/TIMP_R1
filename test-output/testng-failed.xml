@@ -3,13 +3,39 @@
 <suite thread-count="2" name="Failed suite [Suite]" parallel="methods">
   <test name="PruebaTestNG(failed)" parallel="true">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.testNg.BRBAcessar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.Tributos.TributosDetalhes">
+=======
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+          <include name="Editar"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="afterClass"/>
           <include name="login"/>
           <include name="brbEntrar"/>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          <include name="tributoDetalhes"/>
+          <include name="afterClass"/>
+=======
+          <include name="criar"/>
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
       <class name="com.timp.test.BRB.testNg.FiltrosAvançados">
         <methods>
@@ -19,6 +45,17 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.BRB.testNg.FiltrosAvançados -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Tributos.TributosDetalhes -->
+=======
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- PruebaTestNG(failed) -->
 </suite> <!-- Failed suite [Suite] -->

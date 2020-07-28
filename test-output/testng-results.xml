@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="49023" started-at="2020-07-28T23:16:53Z" finished-at="2020-07-28T23:17:42Z">
+=======
+  <suite started-at="2020-07-28T22:24:22Z" name="Default suite" finished-at="2020-07-28T22:27:01Z" duration-ms="159476">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="49023" started-at="2020-07-28T23:16:53Z" finished-at="2020-07-28T23:17:42Z">
       <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="19303" started-at="2020-07-28T20:16:53Z" finished-at="2020-07-28T20:17:12Z">
+=======
+    <test started-at="2020-07-28T22:24:22Z" name="Default test" finished-at="2020-07-28T22:27:01Z" duration-ms="159476">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:24:22Z" name="beforeClass" finished-at="2020-07-28T16:24:38Z" duration-ms="16009" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="login" duration-ms="12921" started-at="2020-07-28T20:17:12Z" finished-at="2020-07-28T20:17:25Z">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:24:38Z" name="login" finished-at="2020-07-28T16:24:47Z" duration-ms="8701" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="acessarMDR" duration-ms="11714" started-at="2020-07-28T20:17:25Z" finished-at="2020-07-28T20:17:37Z">
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:24:47Z" name="acessarMDR" finished-at="2020-07-28T16:25:23Z" duration-ms="36546" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="criar" duration-ms="5047" started-at="2020-07-28T20:17:37Z" finished-at="2020-07-28T20:17:42Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -87,10 +106,22 @@ Session ID: fe25c97fb714900eaf3b41b4d84cb95d
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="logradouroEditar()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:25:23Z" name="logradouroEditar" finished-at="2020-07-28T16:27:01Z" duration-ms="98181" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
+=======
+        </test-method> <!-- logradouroEditar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:27:01Z" name="afterClass" finished-at="2020-07-28T16:27:01Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroEditar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

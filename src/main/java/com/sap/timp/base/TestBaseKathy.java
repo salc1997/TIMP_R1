@@ -1,6 +1,6 @@
 package com.sap.timp.base;
 
-import java.util.Properties;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +14,7 @@ public class TestBaseKathy extends TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
 		return driver;
 
 	}

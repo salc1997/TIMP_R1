@@ -80,7 +80,7 @@ public class AtividadeVisualizarPO extends TestBaseSteven{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 
 		return sucesso;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="4"  parallel="classes">
+  <test thread-count="4" name="PruebaTestNG">
+    <classes >
+      <class name="com.timp.test.BRB.testNg.AcessarP"/>
+      <class name="com.timp.test.BRB.testNg.FiltrosP"/>
+      
+    </classes>
+  </test> <!-- PruebaTestNG -->
+</suite> <!-- Suite -->

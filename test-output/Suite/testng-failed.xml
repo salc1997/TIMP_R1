@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="methods">
+  <test name="PruebaTestNG(failed)" parallel="true">
+    <classes>
+      <class name="com.timp.test.BRB.testNg.BRBAcessar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="login"/>
+          <include name="brbEntrar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
+      <class name="com.timp.test.BRB.testNg.FiltrosAvançados">
+        <methods>
+          <include name="brbEntrar"/>
+          <include name="afterClass"/>
+          <include name="filtrosAvanzados"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.testNg.FiltrosAvançados -->
+    </classes>
+  </test> <!-- PruebaTestNG(failed) -->
+</suite> <!-- Failed suite [Suite] -->

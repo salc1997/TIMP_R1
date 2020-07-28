@@ -3,13 +3,43 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroCriar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
+=======
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="logradouroCriar"/>
+=======
+<<<<<<< HEAD
+=======
+          <include name="Editar"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="afterClass"/>
+=======
+<<<<<<< HEAD
+          <include name="criar"/>
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroCriar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

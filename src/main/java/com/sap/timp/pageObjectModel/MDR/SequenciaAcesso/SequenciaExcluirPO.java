@@ -81,7 +81,7 @@ public class SequenciaExcluirPO extends TestBaseEliel{
 		
 		engrenagem.click();
 		sleep(1000);
-		//excluir.click();
+		excluir.click();
 		sleep(1000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

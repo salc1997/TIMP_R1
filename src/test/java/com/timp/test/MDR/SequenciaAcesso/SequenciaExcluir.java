@@ -46,7 +46,7 @@ public class SequenciaExcluir extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void Excluir() {
 
 		boolean sucesso=sequenciaExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

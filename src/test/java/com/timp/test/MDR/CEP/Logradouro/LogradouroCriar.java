@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroCriarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class LogradouroCriar extends TestBaseKathy{
@@ -38,7 +41,8 @@ public class LogradouroCriar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void logradouroCriar() {
-		logradouroCriarPO.logradouroCriar();
+	public void logradouroCriar() {		
+		boolean sucesso = logradouroCriarPO.logradouroCriar();	
+		assertTrue(sucesso, Criar);
 	}
 }

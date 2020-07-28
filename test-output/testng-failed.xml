@@ -3,37 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Tributos.TributosDetalhes">
-=======
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaExcluir">
         <methods>
-          <include name="Editar"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="tributoDetalhes"/>
-          <include name="afterClass"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <include name="Visualizar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Tributos.TributosDetalhes -->
-=======
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaExcluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,70 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Tributos.TributosEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.testNg.BRBAcessar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Tributos.TributosDetalhes">
-=======
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.BRB.testNg.FiltrosP">
         <methods>
-<<<<<<< HEAD
-          <include name="acessarMDR"/>
-          <include name="tributoEditar"/>
-=======
-          <include name="Editar"/>
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+          <include name="filtrosAvanzados"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="login"/>
-=======
-<<<<<<< HEAD
           <include name="afterClass"/>
-          <include name="login"/>
-          <include name="brbEntrar"/>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="tributoDetalhes"/>
-          <include name="afterClass"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Tributos.TributosEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Tributos.TributosDetalhes -->
-=======
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.testNg.FiltrosP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

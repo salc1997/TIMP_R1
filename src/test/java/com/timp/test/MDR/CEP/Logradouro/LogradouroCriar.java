@@ -1,11 +1,11 @@
-package com.timp.test.MDR.Logradouro;
+package com.timp.test.MDR.CEP.Logradouro;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Logradouro.LogradouroCriarPO;
+import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroCriarPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;

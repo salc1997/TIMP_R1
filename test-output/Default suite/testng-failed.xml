@@ -4,15 +4,23 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroCriar">
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
       <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
+<<<<<<< HEAD
+=======
 =======
       <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <include name="logradouroCriar"/>
 =======
@@ -21,25 +29,38 @@
           <include name="Editar"/>
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <include name="afterClass"/>
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="criar"/>
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroCriar -->
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
+<<<<<<< HEAD
+=======
 =======
       </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

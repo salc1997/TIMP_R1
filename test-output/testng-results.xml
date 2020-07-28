@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-28T22:24:22Z" name="Default suite" finished-at="2020-07-28T22:27:01Z" duration-ms="159476">
+  <suite started-at="2020-07-28T23:51:23Z" name="Default suite" finished-at="2020-07-28T23:52:43Z" duration-ms="80127">
     <groups>
     </groups>
-    <test started-at="2020-07-28T22:24:22Z" name="Default test" finished-at="2020-07-28T22:27:01Z" duration-ms="159476">
-      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:24:22Z" name="beforeClass" finished-at="2020-07-28T16:24:38Z" duration-ms="16009" status="PASS">
+    <test started-at="2020-07-28T23:51:23Z" name="Default test" finished-at="2020-07-28T23:52:43Z" duration-ms="80127">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros@4c1909a3]" started-at="2020-07-28T17:51:23Z" name="beforeClass" finished-at="2020-07-28T17:51:38Z" duration-ms="14677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:24:38Z" name="login" finished-at="2020-07-28T16:24:47Z" duration-ms="8701" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros@4c1909a3]" started-at="2020-07-28T17:51:38Z" name="login" finished-at="2020-07-28T17:51:47Z" duration-ms="8594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:24:47Z" name="acessarMDR" finished-at="2020-07-28T16:25:23Z" duration-ms="36546" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros@4c1909a3]" started-at="2020-07-28T17:51:47Z" name="acessarMDR" finished-at="2020-07-28T17:52:19Z" duration-ms="32101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="logradouroEditar()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:25:23Z" name="logradouroEditar" finished-at="2020-07-28T16:27:01Z" duration-ms="98181" status="PASS">
+        <test-method signature="logradouroFiltros()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros@4c1909a3]" started-at="2020-07-28T17:52:19Z" name="logradouroFiltros" finished-at="2020-07-28T17:52:43Z" duration-ms="24711" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logradouroEditar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroEditar@4c1909a3]" started-at="2020-07-28T16:27:01Z" name="afterClass" finished-at="2020-07-28T16:27:01Z" duration-ms="1" status="PASS">
+        </test-method> <!-- logradouroFiltros -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros@4c1909a3]" started-at="2020-07-28T17:52:43Z" name="afterClass" finished-at="2020-07-28T17:52:43Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroEditar -->
+      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -43,7 +43,6 @@ public class TributosVisualizar extends TestBaseKathy{
   @Test(priority = 2)
   public void visualizar() {
 	  String sucesso = tributosVisualizarPO.visualizarTributo();
-
-		assertEquals(sucesso, "edit", EmpresaVisualizar);
+	  assertEquals(sucesso, "edit", EmpresaVisualizar);
   }
 }

@@ -16,14 +16,14 @@ import org.testng.annotations.AfterClass;
 public class TributosCriar extends TestBaseKathy{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TributosCriarPO tributoCriar;
+	TributosCriarPO tributoCriarPO;
 	
 	@BeforeClass
   	public void beforeClass() {
 		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tributoCriar = new TributosCriarPO();
+		tributoCriarPO = new TributosCriarPO();
   	}
 
 	@AfterClass
@@ -41,10 +41,8 @@ public class TributosCriar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void tributoCriar() {
-		
-		boolean sucesso = tributoCriar.criarTributo();
-
+	public void tributoCriar() {		
+		boolean sucesso = tributoCriarPO.criarTributo();
 		assertTrue(sucesso, Criar);
 	}
 

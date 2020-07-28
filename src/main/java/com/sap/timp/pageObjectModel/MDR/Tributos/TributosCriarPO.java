@@ -1,6 +1,5 @@
 package com.sap.timp.pageObjectModel.MDR.Tributos;
 
-import java.sql.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

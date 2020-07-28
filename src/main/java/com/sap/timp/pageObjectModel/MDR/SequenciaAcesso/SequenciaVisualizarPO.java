@@ -72,7 +72,7 @@ public class SequenciaVisualizarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		//System.out.println(sucesso);	
 		return sucesso;
 		
 	}

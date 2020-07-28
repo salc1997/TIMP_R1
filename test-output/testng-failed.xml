@@ -1,37 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" name="Failed suite [Suite]" parallel="classes">
-  <test name="PruebaTestNG(failed)" parallel="classes">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaExcluir">
-=======
-      <class name="com.timp.test.BRB.testNg.AcessarP">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
         <methods>
-<<<<<<< HEAD
-=======
-          <include name="brbEntrar"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <include name="Editar"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="Visualizar"/>
-=======
-          <include name="afterClass"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaExcluir -->
-=======
-      </class> <!-- com.timp.test.BRB.testNg.AcessarP -->
-      <class name="com.timp.test.BRB.testNg.FiltrosP">
-        <methods>
-          <include name="filtrosAvanzados"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.FiltrosP -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
     </classes>
-  </test> <!-- PruebaTestNG(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

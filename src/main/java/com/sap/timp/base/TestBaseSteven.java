@@ -159,7 +159,7 @@ public class TestBaseSteven{
 		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
 	}
 	
-	public void attributoNotToBeXpath(String xpath, String attribute) {
+	public void attributoNotToBeEmptyXpath(String xpath, String attribute) {
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 		
 		wait.until(ExpectedConditions.attributeToBeNotEmpty(driver.findElement(By.xpath(xpath)), attribute));

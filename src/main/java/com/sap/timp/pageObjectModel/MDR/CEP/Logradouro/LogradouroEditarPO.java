@@ -20,7 +20,6 @@ public class LogradouroEditarPO extends TestBaseKathy{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
@@ -30,10 +29,8 @@ public class LogradouroEditarPO extends TestBaseKathy{
 	@FindBy(xpath = "//li/span[text()=\"Editar\"]")
 	public WebElement editar;
 	
-
 	@FindBy(xpath = "//*[@id=\"form-container\"]/div/div[2]/table/tr[5]/td/div/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement campo;
-	
 	
 	public LogradouroEditarPO() {
 		PageFactory.initElements(driver, this);

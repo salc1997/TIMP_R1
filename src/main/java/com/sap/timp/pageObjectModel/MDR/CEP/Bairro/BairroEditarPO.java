@@ -71,6 +71,8 @@ public class BairroEditarPO extends TestBaseSteven{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
 		sleep(2000);
 
@@ -91,9 +93,10 @@ public class BairroEditarPO extends TestBaseSteven{
 
 		sleep(1000);
 		campo.sendKeys(valor);
-
+		
 		gravar.click();
-
+		sleep(2000);
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

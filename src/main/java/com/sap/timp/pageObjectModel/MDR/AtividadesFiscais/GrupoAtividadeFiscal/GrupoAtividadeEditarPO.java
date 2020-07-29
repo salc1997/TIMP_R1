@@ -116,6 +116,8 @@ public class GrupoAtividadeEditarPO extends TestBaseSteven{
 		
 		gravar.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
 		sleep(3000);		 
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
@@ -140,7 +142,8 @@ public class GrupoAtividadeEditarPO extends TestBaseSteven{
 		campo.sendKeys(valor);
 		
 		gravar.click();
-		
+		sleep(2000);
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		

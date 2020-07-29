@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroFiltrosPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class LogradouroFiltros extends TestBaseKathy{
@@ -39,6 +42,7 @@ public class LogradouroFiltros extends TestBaseKathy{
 	
 	@Test(priority = 2)
 	public void logradouroFiltros() {
-		logradouroFiltrosPO.logradouroFiltros();
+		boolean sucesso =  logradouroFiltrosPO.logradouroFiltros();
+		assertTrue(sucesso, Editar);
 	}
 }

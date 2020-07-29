@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir">
         <methods>
           <include name="afterClass"/>
+          <include name="logradouroExcluir"/>
           <include name="beforeClass"/>
-          <include name="logradouroVisualizar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar -->
+      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-29T21:23:24Z" name="Default suite" finished-at="2020-07-29T21:25:17Z" duration-ms="112923">
+  <suite started-at="2020-07-29T21:56:05Z" name="Default suite" finished-at="2020-07-29T21:58:17Z" duration-ms="131541">
     <groups>
     </groups>
-    <test started-at="2020-07-29T21:23:24Z" name="Default test" finished-at="2020-07-29T21:25:17Z" duration-ms="112923">
-      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:24Z" name="beforeClass" finished-at="2020-07-29T15:23:43Z" duration-ms="19468" status="PASS">
+    <test started-at="2020-07-29T21:56:05Z" name="Default test" finished-at="2020-07-29T21:58:17Z" duration-ms="131541">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:05Z" name="beforeClass" finished-at="2020-07-29T15:56:26Z" duration-ms="20683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:43Z" name="login" finished-at="2020-07-29T15:23:55Z" duration-ms="11181" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:26Z" name="login" finished-at="2020-07-29T15:56:39Z" duration-ms="13280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:55Z" name="acessarMDR" finished-at="2020-07-29T15:24:33Z" duration-ms="38658" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:39Z" name="acessarMDR" finished-at="2020-07-29T15:57:20Z" duration-ms="41218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="logradouroVisualizar()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:24:33Z" name="logradouroVisualizar" finished-at="2020-07-29T15:25:17Z" duration-ms="43531" status="PASS">
+        <test-method signature="logradouroExcluir()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:57:20Z" name="logradouroExcluir" finished-at="2020-07-29T15:58:17Z" duration-ms="56315" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logradouroVisualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:25:17Z" name="afterClass" finished-at="2020-07-29T15:25:17Z" duration-ms="1" status="PASS">
+        </test-method> <!-- logradouroExcluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:58:17Z" name="afterClass" finished-at="2020-07-29T15:58:17Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar -->
+      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

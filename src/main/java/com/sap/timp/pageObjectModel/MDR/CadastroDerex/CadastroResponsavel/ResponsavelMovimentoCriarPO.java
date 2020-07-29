@@ -156,7 +156,7 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		opcao.click();
 		sleep(1000);
 			
-		attributoNotToBeXpath("//*[@id=\"country\"]/div/div/input", "value");
+		attributoNotToBeEmptyXpath("//*[@id=\"country\"]/div/div/input", "value");
 		
 		nome.sendKeys("teste movimento");
 		

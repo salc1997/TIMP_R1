@@ -136,6 +136,7 @@ String url = driver.getCurrentUrl();
 		//inseri um novo campo em vigencia de
 		vigenciade.sendKeys("30/07/2020");
 		
+		
 		//grava
 		sleep(1000);
 		gravar.click();

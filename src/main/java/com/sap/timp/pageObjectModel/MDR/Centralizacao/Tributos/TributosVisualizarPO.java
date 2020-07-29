@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.Tributos;
+package com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKathy;
 
-public class TributosDetalhesPO extends TestBaseKathy{
+public class TributosVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "//li/div/span[text()=\"Centralização\"]")
 	public WebElement centralização;
 	
@@ -41,14 +41,14 @@ public class TributosDetalhesPO extends TestBaseKathy{
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
 		
-	@FindBy(xpath = "//li/span[text()=\"Detalhes\"]")
-	public WebElement detalhe;
+	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
+	public WebElement visualizar;
 	
-	public TributosDetalhesPO() {
+	public TributosVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String tributoDetalhes() {
+	public String visualizarTributo() {
 		String url = driver.getCurrentUrl();
 		boolean tc2 = false;
 		boolean td1 = false;
@@ -81,12 +81,12 @@ public class TributosDetalhesPO extends TestBaseKathy{
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		detalhe.click();
+		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//*[@id=\"detail-name\"]")).getAttribute("class");
+		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		
 		return sucesso;
 	}

@@ -1,66 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroCriar">
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
       <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
-<<<<<<< HEAD
-=======
-=======
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="logradouroCriar"/>
-=======
-<<<<<<< HEAD
-=======
-          <include name="Editar"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="criar"/>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroCriar -->
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
-<<<<<<< HEAD
-=======
-=======
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

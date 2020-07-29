@@ -81,7 +81,7 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
 	//public WebElement setafinal;
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[7]")
 	public WebElement setafinal;
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")

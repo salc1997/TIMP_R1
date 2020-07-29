@@ -31,10 +31,7 @@ public class CadastroCondicaoExcluirPO  extends TestBaseEliel {
 	public WebElement engrenagem;
 
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]")
-	public WebElement visualizar;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]/span[2]")
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement excluir;
 	//@FindBy(xpath = "//div[@class=\"tr\" and @data-id][4]/div/div/div[2]/ul/li[4]/span[2]")
 	
@@ -81,6 +78,8 @@ public boolean excluir() {
 		sleep(1000);
 		excluir.click();
 		sleep(1000);
+		waitExpectElement(butaosim);
+		sleep(2000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

@@ -136,7 +136,8 @@ String url = driver.getCurrentUrl();
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		butaosim.click();
+		butaosim.sendKeys(Keys.ENTER);;
+		sleep(15000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		//recarrega a pagina
@@ -158,7 +159,8 @@ String url = driver.getCurrentUrl();
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		butaosim.click();
+		butaosim.sendKeys(Keys.ENTER);
+		sleep(15000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 	}

@@ -25,8 +25,12 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
 	public WebElement opcaoempresa;
 	
+	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
+	//public WebElement opcaoempresatc2tq1tp1;
+	
 	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
 	public WebElement opcaoempresatc2tq1tp1;
+	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um UF\"]")
 	public WebElement uf;

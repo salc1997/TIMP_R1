@@ -15,6 +15,37 @@ public class MunicipioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
 	public WebElement municipio;
 	
+	@FindBy(xpath = "//button/span[text()=\"Nova Cidade\"]")
+	public WebElement novo;
+
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
+	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
+	public WebElement gravar;
+	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement sim;
+	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
+	/*
+	@FindBy(xpath = "")
+	public WebElement ;
+	@FindBy(xpath = "")
+	public WebElement ;
+	@FindBy(xpath = "")
+	public WebElement ;
+	@FindBy(xpath = "")
+	public WebElement ;
+	@FindBy(xpath = "")
+	public WebElement ;
+	@FindBy(xpath = "")
+	public WebElement ;
+	*/
+	
 	public MunicipioCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -27,6 +58,16 @@ public class MunicipioCriarPO extends TestBaseSteven{
 		municipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		novo.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		
+		
+		
 		
 		
 		

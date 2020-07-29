@@ -3,12 +3,24 @@
 <suite thread-count="4" name="Failed suite [Suite]" parallel="classes">
   <test name="PruebaTestNG(failed)" parallel="classes">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.testNg.AcessarP">
+=======
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="brbEntrar"/>
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="afterClass"/>
+=======
+          <include name="criar"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.testNg.AcessarP -->
       <class name="com.timp.test.BRB.testNg.FiltrosP">
         <methods>
@@ -17,6 +29,9 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.BRB.testNg.FiltrosP -->
+=======
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- PruebaTestNG(failed) -->
 </suite> <!-- Failed suite [Suite] -->

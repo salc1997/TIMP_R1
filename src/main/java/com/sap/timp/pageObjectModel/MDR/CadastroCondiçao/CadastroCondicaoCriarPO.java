@@ -11,42 +11,49 @@ import com.sap.timp.base.TestBaseEliel;
 public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	
 	
-	@FindBy(xpath = "//li/div/span[text()=\"Sequência de Acesso\"]")
-	public WebElement sequencia;
+	@FindBy(xpath = "//span[text()=\"Cadastro da Condição\"]")
+	public WebElement cadastrocondicao;
 		
-	@FindBy(xpath = "//span[text()=\"Nova Sequência de Acesso\"]")
-	public WebElement sequenciaacesso;
+	@FindBy(xpath = "//span[text()=\"Novo Cadastro da Condição\"]")
+	public WebElement novocadastrocondicao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  um Nome\"]")
-	public WebElement nome;
-	
-	@FindBy(xpath = "//*[@id=\"description\"]/div/div/input")
-	public WebElement descricao;
-	
+
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
 	public WebElement empresa;
+	
 	
 	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
 	public WebElement opcaoempresa;
 	
+	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
+	public WebElement opcaoempresatc2tq1tp1;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um UF\"]")
+	public WebElement uf;
+	
+	@FindBy(xpath = "//*[@id=\"SP\"]/div[1]/label/span")
+	public WebElement opcaouf;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Filial\"]")
+	public WebElement filial;
+	
+	@FindBy(xpath ="//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
+	public WebElement opcaofilial;
+	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um Tributo\"]")
 	public WebElement tributo;
 	
-	//@FindBy (xpath = "//*[@id=\"23\"]/div[1]/label/span")
-	@FindBy (xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy(xpath = "//*[@id=\"23\"]/div[1]/label/span")
 	public WebElement opcaotributo;
-
-	@FindBy(xpath =" //*[@id=\"select\"]/div[1]/input")
-	public WebElement grupoestrutura;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
-	public WebElement opcaogrupo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Estrutura de Dados\"]")
-	public WebElement estruturadados;
+	@FindBy(xpath ="//input[@placeholder=\"Selecionar  uma  Sequência de Acesso\"]")
+	public WebElement sequenciaacesso;
 	
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
-	public WebElement opcaoestrutura;
+	public WebElement opcaosequenciaacesso;
+	
+	@FindBy(xpath = "//*[@id=\"validFrom\"]/div/div[1]/input")
+	public WebElement vigenciade;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -57,34 +64,30 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[2]/div/div[3]/div/span[1]")
-	public WebElement idC;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[3]/div")
-	public WebElement idR;
-	
-	@FindBy (xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
-	public WebElement seguinte;
-	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
 	public WebElement camposestrutura;
 	
-	//@FindBy(xpath="//div[text()=\"Agrupamento\"]")
-	@FindBy(xpath = "//div[@data-item and @data-id][1]")
-	public WebElement agrupamento;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Atribuição\"]")
+	public WebElement atribuicao;
 	
-	@FindBy(xpath = "//*[@id=\"fields\"]/div[3]")
-	public WebElement camposselecionados;
+	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[2]/div/div[3]/div/span[1]")
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]/div")
+	public WebElement idC;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
+	public WebElement idR;
+	
+	//@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
+	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
+	//public WebElement setafinal;
+
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[7]")
 	public WebElement setafinal;
-	
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement mostrar;
 	
-	@FindBy(xpath = "//input [@placeholder=\"Pesquisar\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
 	public CadastroCondicaoCriarPO() {
@@ -93,14 +96,29 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	
 	
 	
-	public void criar() {
+	public boolean criar() {
 		
 		
-		Actions action = new Actions(driver);
-
-		/*
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}
+		
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sequencia.click();
+		cadastrocondicao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -116,19 +134,39 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		//System.out.println(id);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sequenciaacesso.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		nome.sendKeys("Teste");
-		
-		descricao.sendKeys("descrição");
-		
+		novocadastrocondicao.click();
+	
+		sleep(2000);
 		empresa.click();
+		sleep(2000);
+		if (tc2 == true || tp1 == true || tq1 == true) {
+			opcaoempresatc2tq1tp1.click();
+			empresa.sendKeys(Keys.ESCAPE);
+		}else {
+			opcaoempresa.click();
+			empresa.sendKeys(Keys.ESCAPE);
+		}
+		//opcaoempresa.click();
 		
-		opcaoempresa.click();
+		//empresa.sendKeys(Keys.ESCAPE);
 		
-		empresa.sendKeys(Keys.ESCAPE);
+		sleep(2000);
+		
+		uf.click();
+		
+		opcaouf.click();
+		
+		uf.sendKeys(Keys.ESCAPE);
+		
+		sleep(2000);
+		
+		filial.click();
+		
+		opcaofilial.click();
+		
+		filial.sendKeys(Keys.ESCAPE);
+		
+		sleep(2000);
 		
 		tributo.click();
 		
@@ -136,33 +174,30 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		tributo.sendKeys(Keys.ESCAPE);
 		
-		grupoestrutura.click();
+		sleep(2000);
 		
-		opcaogrupo.click();
+		sequenciaacesso.click();
 		
-		sleep(1000);
+		opcaosequenciaacesso.click();
+
+		sleep(2000);
 		
-		estruturadados.click();
-		
-		opcaoestrutura.click();
-		
+		//pega a data atual
+		String dataatual = fechaActual();
+		vigenciade.sendKeys(dataatual);
+				
+		sleep(2000);
 		camposestrutura.click();
-		
-		//arrastar a opçao para outro campo
-		action.clickAndHold(agrupamento).moveToElement(camposselecionados).release().build().perform();
-		
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		atribuicao.sendKeys("campo");
 		
 		gravar.click();
 		
 		butaosim.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		biblioteca.click();
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		//Pega o ultimo id depois do preenchimento
@@ -191,14 +226,16 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		System.out.println( sucesso);
 
-		pesquisar.sendKeys(idB);
 		
+		pesquisar.sendKeys(idB);
+		pesquisar.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//verificar se o relatório foi criado
 		boolean text= idB.contains(idR.getText());
 		System.out.println(text);
 		
 		return text;
-	*/
+
 	}
 	
 

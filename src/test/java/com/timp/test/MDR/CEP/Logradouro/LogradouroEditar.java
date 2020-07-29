@@ -1,29 +1,27 @@
 package com.timp.test.MDR.CEP.Logradouro;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroCriarPO;
+import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroEditarPO;
 
-import org.testng.annotations.BeforeClass;
-
-import static org.testng.Assert.assertTrue;
-
-import org.testng.annotations.AfterClass;
-
-public class LogradouroCriar extends TestBaseKathy{
+public class LogradouroEditar extends TestBaseKathy{
 	LoginTC loginTC;
   	AcessarMDRPO acessarMDRPO;
-  	LogradouroCriarPO logradouroCriarPO;
+  	LogradouroEditarPO logradouroEditarPO;
   
   	@BeforeClass
   	public void beforeClass() {
 	  	driver = initializationK();
 	  	loginTC = new LoginTC();
 	  	acessarMDRPO = new AcessarMDRPO();
-	  	logradouroCriarPO = new LogradouroCriarPO();
+	  	logradouroEditarPO = new LogradouroEditarPO();
   	}
 
   	@AfterClass
@@ -41,8 +39,8 @@ public class LogradouroCriar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void logradouroCriar() {		
-		boolean sucesso = logradouroCriarPO.logradouroCriar();	
-		assertTrue(sucesso, Criar);
+	public void logradouroEditar() {
+		boolean sucesso =  logradouroEditarPO.logradouroEditar();
+		assertTrue(sucesso, Editar);
 	}
 }

@@ -46,10 +46,8 @@ public class CadastroCondicaoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		cadastroCondicaoCriarPO.criar();
-		//boolean text = sequenciaCriarPO.criar();
-		
-		//assertTrue(text, Criar);
+		boolean text = cadastroCondicaoCriarPO.criar();
+		assertTrue(text, Criar);
 		//Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(cadastroCondicaoCriarPO.mostrar.isDisplayed(), semAcesso);
 

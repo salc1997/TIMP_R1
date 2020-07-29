@@ -136,6 +136,8 @@ String url = driver.getCurrentUrl();
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(butaosim);
+		sleep(2000);
 		butaosim.sendKeys(Keys.ENTER);;
 		sleep(15000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -159,10 +161,13 @@ String url = driver.getCurrentUrl();
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(butaosim);
+		sleep(2000);
 		butaosim.sendKeys(Keys.ENTER);
-		sleep(15000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
 	}
 	
 

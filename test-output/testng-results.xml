@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="168218" started-at="2020-07-29T16:49:18Z" finished-at="2020-07-29T16:52:06Z">
+  <suite name="Default suite" duration-ms="178657" started-at="2020-07-29T17:39:55Z" finished-at="2020-07-29T17:42:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="168218" started-at="2020-07-29T16:49:18Z" finished-at="2020-07-29T16:52:06Z">
+    <test name="Default test" duration-ms="178657" started-at="2020-07-29T17:39:55Z" finished-at="2020-07-29T17:42:54Z">
       <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="14027" started-at="2020-07-29T13:49:18Z" finished-at="2020-07-29T13:49:32Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="15106" started-at="2020-07-29T14:39:55Z" finished-at="2020-07-29T14:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="login" duration-ms="9962" started-at="2020-07-29T13:49:32Z" finished-at="2020-07-29T13:49:42Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="login" duration-ms="13918" started-at="2020-07-29T14:40:10Z" finished-at="2020-07-29T14:40:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="acessarMDR" duration-ms="34124" started-at="2020-07-29T13:49:42Z" finished-at="2020-07-29T13:50:16Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="acessarMDR" duration-ms="34651" started-at="2020-07-29T14:40:24Z" finished-at="2020-07-29T14:40:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="criar" duration-ms="110068" started-at="2020-07-29T13:50:16Z" finished-at="2020-07-29T13:52:06Z">
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="criar" duration-ms="114948" started-at="2020-07-29T14:40:59Z" finished-at="2020-07-29T14:42:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->

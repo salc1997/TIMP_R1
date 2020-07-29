@@ -125,7 +125,7 @@ String url = driver.getCurrentUrl();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
-		attributoNotToBeXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
+		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
 		//sleep(15000);
 		
 		String texto = vigenciade.getAttribute("value");
@@ -153,7 +153,7 @@ String url = driver.getCurrentUrl();
 		attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
 		//attributoNotToBeEmptyElement(empresa, "value");
 		//sleep(15000);
-		attributoNotToBeXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
+		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
 		sleep(2000);
 		//verifica se o valor inserido consta no relatório
 		String texto1 = vigenciade.getAttribute("value");

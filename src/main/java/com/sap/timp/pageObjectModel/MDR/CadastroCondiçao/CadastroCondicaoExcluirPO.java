@@ -31,11 +31,9 @@ public class CadastroCondicaoExcluirPO  extends TestBaseEliel {
 	public WebElement engrenagem;
 
 	
-<<<<<<< HEAD
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]/span[2]")
-=======
+
+
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 	public WebElement excluir;
 	//@FindBy(xpath = "//div[@class=\"tr\" and @data-id][4]/div/div/div[2]/ul/li[4]/span[2]")
 	

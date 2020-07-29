@@ -2,55 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="116862" started-at="2020-07-28T17:19:36Z" finished-at="2020-07-28T17:21:33Z">
-=======
-  <suite name="Default suite" duration-ms="56801" started-at="2020-07-28T18:14:08Z" finished-at="2020-07-28T18:15:05Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="68661" started-at="2020-07-28T20:15:08Z" finished-at="2020-07-28T20:16:17Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="116862" started-at="2020-07-28T17:19:36Z" finished-at="2020-07-28T17:21:33Z">
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="10874" started-at="2020-07-28T11:19:36Z" finished-at="2020-07-28T11:19:47Z">
-=======
-    <test name="Default test" duration-ms="56801" started-at="2020-07-28T18:14:08Z" finished-at="2020-07-28T18:15:05Z">
-      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="15866" started-at="2020-07-28T15:14:08Z" finished-at="2020-07-28T15:14:24Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test name="Default test" duration-ms="68661" started-at="2020-07-28T20:15:08Z" finished-at="2020-07-28T20:16:17Z">
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="10468" started-at="2020-07-28T14:15:08Z" finished-at="2020-07-28T14:15:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="login" duration-ms="6348" started-at="2020-07-28T11:19:47Z" finished-at="2020-07-28T11:19:53Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="login" duration-ms="10622" started-at="2020-07-28T15:14:24Z" finished-at="2020-07-28T15:14:35Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar@8e0379d]" name="login" duration-ms="5913" started-at="2020-07-28T14:15:19Z" finished-at="2020-07-28T14:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="acessarMDR" duration-ms="22574" started-at="2020-07-28T11:19:53Z" finished-at="2020-07-28T11:20:16Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="acessarMDR" duration-ms="30148" started-at="2020-07-28T15:14:35Z" finished-at="2020-07-28T15:15:05Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar@8e0379d]" name="acessarMDR" duration-ms="21937" started-at="2020-07-28T14:15:25Z" finished-at="2020-07-28T14:15:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="Editar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaEditar@8e0379d]" name="Editar" duration-ms="77048" started-at="2020-07-28T11:20:16Z" finished-at="2020-07-28T11:21:33Z">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="criar" duration-ms="130" started-at="2020-07-28T15:15:05Z" finished-at="2020-07-28T15:15:05Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar@8e0379d]" name="Visualizar" duration-ms="30330" started-at="2020-07-28T14:15:47Z" finished-at="2020-07-28T14:16:17Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- Editar -->
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
-=======
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        </test-method> <!-- Visualizar -->
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

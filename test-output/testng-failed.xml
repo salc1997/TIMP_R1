@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite thread-count="4" name="Failed suite [Suite]" parallel="classes">
+  <test name="PruebaTestNG(failed)" parallel="classes">
     <classes>
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaEditar">
+      <class name="com.timp.test.BRB.testNg.AcessarP">
         <methods>
-          <include name="Editar"/>
+          <include name="brbEntrar"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaEditar -->
+      </class> <!-- com.timp.test.BRB.testNg.AcessarP -->
+      <class name="com.timp.test.BRB.testNg.FiltrosP">
+        <methods>
+          <include name="filtrosAvanzados"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.testNg.FiltrosP -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- PruebaTestNG(failed) -->
+</suite> <!-- Failed suite [Suite] -->

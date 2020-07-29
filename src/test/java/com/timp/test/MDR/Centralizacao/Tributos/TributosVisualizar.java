@@ -1,11 +1,11 @@
-package com.timp.test.MDR.Tributos;
+package com.timp.test.MDR.Centralizacao.Tributos;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Tributos.TributosVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 

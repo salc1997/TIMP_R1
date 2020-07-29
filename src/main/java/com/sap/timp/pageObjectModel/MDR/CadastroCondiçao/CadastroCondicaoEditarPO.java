@@ -62,6 +62,9 @@ public class CadastroCondicaoEditarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//*[@id=\"validFrom\"]/div/div[1]/input")
 	public WebElement vigenciade;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
+	public WebElement empresa;
 	public CadastroCondicaoEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -119,9 +122,11 @@ String url = driver.getCurrentUrl();
 		sleep(2000);
 		
 		editar.click();
-		
-		attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
-		sleep(15000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
+		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
+		//sleep(15000);
 		
 		String texto = vigenciade.getAttribute("value");
 		System.out.println(texto);
@@ -140,13 +145,16 @@ String url = driver.getCurrentUrl();
 		waitExpectElement(butaosim);
 		sleep(2000);
 		butaosim.sendKeys(Keys.ENTER);;
-		sleep(15000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		//recarrega a pagina
 		driver.navigate().refresh();
 		attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
-		sleep(15000);
+		//attributoNotToBeEmptyElement(empresa, "value");
+		//sleep(15000);
+		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
+		sleep(2000);
 		//verifica se o valor inserido consta no relatório
 		String texto1 = vigenciade.getAttribute("value");
 		System.out.println(texto1);

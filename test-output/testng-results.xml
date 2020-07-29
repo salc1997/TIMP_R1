@@ -1,29 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="3" passed="3">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="3" passed="3">
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="85870" started-at="2020-07-29T21:56:52Z" finished-at="2020-07-29T21:58:18Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-07-29T21:56:05Z" name="Default suite" finished-at="2020-07-29T21:58:17Z" duration-ms="131541">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="133532" started-at="2020-07-29T21:31:06Z" finished-at="2020-07-29T21:33:20Z">
+=======
+  <suite started-at="2020-07-29T21:23:24Z" name="Default suite" finished-at="2020-07-29T21:25:17Z" duration-ms="112923">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="85870" started-at="2020-07-29T21:56:52Z" finished-at="2020-07-29T21:58:18Z">
       <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="beforeClass" is-config="true" duration-ms="15309" started-at="2020-07-29T15:56:52Z" finished-at="2020-07-29T15:57:07Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-07-29T21:56:05Z" name="Default test" finished-at="2020-07-29T21:58:17Z" duration-ms="131541">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:05Z" name="beforeClass" finished-at="2020-07-29T15:56:26Z" duration-ms="20683" status="PASS">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="133532" started-at="2020-07-29T21:31:06Z" finished-at="2020-07-29T21:33:20Z">
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16338" started-at="2020-07-29T18:31:06Z" finished-at="2020-07-29T18:31:22Z">
+=======
+    <test started-at="2020-07-29T21:23:24Z" name="Default test" finished-at="2020-07-29T21:25:17Z" duration-ms="112923">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:24Z" name="beforeClass" finished-at="2020-07-29T15:23:43Z" duration-ms="19468" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="login" duration-ms="12966" started-at="2020-07-29T15:57:07Z" finished-at="2020-07-29T15:57:20Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:26Z" name="login" finished-at="2020-07-29T15:56:39Z" duration-ms="13280" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="login" duration-ms="10423" started-at="2020-07-29T18:31:22Z" finished-at="2020-07-29T18:31:33Z">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:43Z" name="login" finished-at="2020-07-29T15:23:55Z" duration-ms="11181" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="acessarMDR" duration-ms="11117" started-at="2020-07-29T15:57:20Z" finished-at="2020-07-29T15:57:31Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:39Z" name="acessarMDR" finished-at="2020-07-29T15:57:20Z" duration-ms="41218" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="acessarMDR" duration-ms="28598" started-at="2020-07-29T18:31:33Z" finished-at="2020-07-29T18:32:01Z">
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:55Z" name="acessarMDR" finished-at="2020-07-29T15:24:33Z" duration-ms="38658" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="filtro" duration-ms="46459" started-at="2020-07-29T15:57:31Z" finished-at="2020-07-29T15:58:18Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="logradouroExcluir()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:57:20Z" name="logradouroExcluir" finished-at="2020-07-29T15:58:17Z" duration-ms="56315" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="criar" duration-ms="78137" started-at="2020-07-29T18:32:01Z" finished-at="2020-07-29T18:33:20Z">
+=======
+        <test-method signature="logradouroVisualizar()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:24:33Z" name="logradouroVisualizar" finished-at="2020-07-29T15:25:17Z" duration-ms="43531" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- filtro -->
       </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEliminar -->
+=======
+        </test-method> <!-- logradouroExcluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:58:17Z" name="afterClass" finished-at="2020-07-29T15:58:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

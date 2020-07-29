@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKathy;
 
-public class LogradouroEditarPO extends TestBaseKathy{
+public class LogradouroExcluirPO extends TestBaseKathy{
 	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
 	public WebElement cep;
 	
@@ -26,23 +26,22 @@ public class LogradouroEditarPO extends TestBaseKathy{
 	@FindBy(xpath = "//div[@class=\"actions\"]")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//li/span[text()=\"Editar\"]")
-	public WebElement editar;
+	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
+	public WebElement excluir;
 	
-	@FindBy(xpath = "//*[@id=\"form-container\"]/div/div[2]/table/tr[5]/td/div/div/div[2]/div/div[1]/div[2]/input")
-	public WebElement campo;
+	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
+	public WebElement nenhumResult;
 	
-	public LogradouroEditarPO() {
+	public LogradouroExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean logradouroEditar() {
+	public boolean logradouroExcluir() {
 		cep.click();
 		sleep(1000);
 		logradouro.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
-		
 		String numEnviar = "11112222";
 		
 		pesquisar.sendKeys(numEnviar);
@@ -51,48 +50,23 @@ public class LogradouroEditarPO extends TestBaseKathy{
 		sleep(2000);
 		menu.click();
 		sleep(2000);
-		editar.click();
-		waitExpectElement(campo);
-		//invisibilityOfElement("//*[@id=\"form-container\"]/div/div/div/div/img");
-		sleep(1000);
+		excluir.click();
 		
-		String valor = campo.getAttribute("value");
-
-		String enviar = "PruebaAutomatizada";
-
-		campo.clear();
-		sleep(1000);
-		campo.sendKeys(enviar);
-		sleep(2000);
-		gravar.click();
-		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
-		sleep(2000);
-
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		driver.navigate().refresh(); 
 		
-		waitExpectElement(campo);
-		
-		String nuevoTexto = campo.getAttribute("value");
-		System.out.println(valor);
-		System.out.println(nuevoTexto);
-		boolean sucesso = nuevoTexto.equals(enviar);
-		System.out.println(sucesso);
-
-		sleep(1000);
-		campo.clear();
-
-		sleep(1000);
-		campo.sendKeys(valor);
-
-		gravar.click();
-
-		sleep(2000);
-		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
+		sleep(7000);
+		
+		pesquisar.clear();
+		sleep(1000);
+		pesquisar.sendKeys(numEnviar);
+		pesquisar.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		boolean sucesso = nenhumResult.isDisplayed();
+		
 		return sucesso;
+		
 	}
 }

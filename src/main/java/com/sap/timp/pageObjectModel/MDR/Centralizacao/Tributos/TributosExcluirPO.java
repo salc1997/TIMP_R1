@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.Tributos;
+package com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

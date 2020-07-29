@@ -4,9 +4,13 @@
   <test name="PruebaTestNG(failed)" parallel="classes">
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.testNg.AcessarP">
 =======
       <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
 <<<<<<< HEAD
@@ -21,6 +25,9 @@
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
 <<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar -->
+=======
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.testNg.AcessarP -->
       <class name="com.timp.test.BRB.testNg.FiltrosP">
         <methods>
@@ -31,6 +38,7 @@
       </class> <!-- com.timp.test.BRB.testNg.FiltrosP -->
 =======
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- PruebaTestNG(failed) -->

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="100992" started-at="2020-07-29T15:22:17Z" finished-at="2020-07-29T15:23:58Z">
+=======
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="68661" started-at="2020-07-28T20:15:08Z" finished-at="2020-07-28T20:16:17Z">
 =======
@@ -19,8 +22,14 @@
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="100992" started-at="2020-07-29T15:22:17Z" finished-at="2020-07-29T15:23:58Z">
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="17300" started-at="2020-07-29T12:22:17Z" finished-at="2020-07-29T12:22:34Z">
+=======
 <<<<<<< HEAD
     <test name="Default test" duration-ms="68661" started-at="2020-07-28T20:15:08Z" finished-at="2020-07-28T20:16:17Z">
       <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar">
@@ -50,9 +59,13 @@
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="login" duration-ms="10038" started-at="2020-07-29T12:22:34Z" finished-at="2020-07-29T12:22:44Z">
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar@8e0379d]" name="login" duration-ms="5913" started-at="2020-07-28T14:15:19Z" finished-at="2020-07-28T14:15:25Z">
 =======
@@ -70,9 +83,13 @@
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="acessarMDR" duration-ms="11318" started-at="2020-07-29T12:22:44Z" finished-at="2020-07-29T12:22:55Z">
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar@8e0379d]" name="acessarMDR" duration-ms="21937" started-at="2020-07-28T14:15:25Z" finished-at="2020-07-28T14:15:47Z">
 =======
@@ -90,9 +107,13 @@
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="criar" duration-ms="62300" started-at="2020-07-29T12:22:55Z" finished-at="2020-07-29T12:23:58Z">
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar@8e0379d]" name="Visualizar" duration-ms="30330" started-at="2020-07-28T14:15:47Z" finished-at="2020-07-28T14:16:17Z">
 =======
@@ -152,8 +173,11 @@
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
         </test-method> <!-- Visualizar -->
       </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar -->
@@ -166,7 +190,11 @@
 =======
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </test-method> <!-- criar -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar -->
+=======
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
 <<<<<<< HEAD
 =======
@@ -183,6 +211,7 @@
       </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroEditar -->
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->

@@ -82,8 +82,12 @@ public class ResponsavelMovimentoEditarPO extends TestBaseSteven{
 		
 		campo.clear();
 		campo.sendKeys(enviar);
+		
+		
 		sleep(1000);
 		gravar.click();
+		sleep(2000);
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);		

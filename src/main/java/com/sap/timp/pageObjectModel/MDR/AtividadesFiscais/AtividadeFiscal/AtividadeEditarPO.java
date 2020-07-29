@@ -133,10 +133,10 @@ public class AtividadeEditarPO extends TestBaseSteven{
 		campo.sendKeys(valor);
 		
 		gravar.click();
-		
 		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
-		
+		sleep(2000);
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		

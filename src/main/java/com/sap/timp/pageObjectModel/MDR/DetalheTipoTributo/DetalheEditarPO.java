@@ -102,7 +102,7 @@ public class DetalheEditarPO extends TestBaseSteven {
 		campo.sendKeys(valor);
 		
 		gravar.click();
-		
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		

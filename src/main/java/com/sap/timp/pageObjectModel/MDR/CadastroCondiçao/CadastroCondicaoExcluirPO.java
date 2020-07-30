@@ -31,6 +31,8 @@ public class CadastroCondicaoExcluirPO  extends TestBaseEliel {
 	public WebElement engrenagem;
 
 	
+
+
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement excluir;
 	//@FindBy(xpath = "//div[@class=\"tr\" and @data-id][4]/div/div/div[2]/ul/li[4]/span[2]")

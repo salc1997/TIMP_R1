@@ -16,9 +16,15 @@ public class MunicipioEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
 	public WebElement municipio;
 	
-	@FindBy(xpath = "//button/span[text()=\"Nova Cidade\"]")
-	public WebElement novo;
 
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
+	public WebElement menu;
+	
+	@FindBy(xpath = "//li/span[text()=\"Editar\"]")
+	public WebElement editar;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Nome de localização\")]")
+	public WebElement campo;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
@@ -32,26 +38,6 @@ public class MunicipioEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Número de localização\")]")
-	public WebElement numero;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Nome de localização\")]")
-	public WebElement nome;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
-	public WebElement uf;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"CEP\")]")
-	public WebElement cepN;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Loc in sit\")]")
-	public WebElement locS;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Loc in tipo\")]")
-	public WebElement locT;
-	
-	@FindBy(xpath = "//div[@class=\"tr\" and @data-id]/div[3]/div")
-	public WebElement localiza;
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -74,17 +60,68 @@ public class MunicipioEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		novo.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-
-		
 		pesquisar.sendKeys("99999999");
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		menu.click();
+		sleep(2000);
+		editar.click();
+		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String valor = campo.getAttribute("value");
+		System.out.println(valor);
+		
+		String enviar = "Prueba editar";
+		
+		campo.clear();
+		campo.sendKeys(enviar);
+		
+
+		sleep(1000);
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(3000);		
+		
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		driver.navigate().refresh();
+		
+
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(campo);
+		sleep(2000);
+		
+		String nuevoTexto = campo.getAttribute("value");
+		System.out.println(nuevoTexto);
+
+		boolean sucesso = nuevoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		sleep(1000);
+		campo.clear();
+		sleep(1000);
+		campo.sendKeys(valor);
+		
+		gravar.click();
+		
+		waitExpectElement(sim);
+		sleep(3000);
+		sim.click();
+		sleep(2000);
+		
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		System.out.println(sucesso);
+		
 		
 		
 		

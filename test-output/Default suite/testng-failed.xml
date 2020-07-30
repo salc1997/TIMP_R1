@@ -4,6 +4,9 @@
   <test name="Default test(failed)" parallel="none">
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar">
 =======
 <<<<<<< HEAD
@@ -16,7 +19,11 @@
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+          <include name="editar"/>
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -30,9 +37,16 @@
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
           <include name="criar"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar -->
 =======
@@ -45,6 +59,7 @@
       </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->

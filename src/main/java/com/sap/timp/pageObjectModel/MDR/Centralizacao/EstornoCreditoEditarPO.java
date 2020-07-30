@@ -29,15 +29,33 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 	@FindBy(xpath ="//div[@class=\"tr\" and @ data-id][10]/div[2]/label/span")
 	public WebElement registro;
 	
-	@FindBy(xpath = "//div[@class=\"tr\" and @data-id][10]/div[1]/div")
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
 	public WebElement engrenagem;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[10]/div[1]/div/div[2]/ul/li[3]/span[2]")
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement editar;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement butaosim;
+	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]/div")
+	public WebElement idC;
+	
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
+	public WebElement idR;
+	
+
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	public WebElement setafinal;
+	
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
+	public WebElement opcao;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher/Selecionar  data\"]")
+	public WebElement datainicovigencia;
 	public EstornoCreditoEditarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -50,22 +68,83 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 		centralizacao.click();
 		sleep(2000);
 		estornocredito.click();
-		
-		waitExpectElement(pesquisa);
-		
-		registro.click();
-	
-		engrenagem.click();
-		
-		editar.click();
-		//espera a página carregar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		//System.out.println( sucesso);
-		//return sucesso;
+		//Pega o ultimo id
+		setafinal.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		idC.click();
+		dobleClickElement(idC);
+		sleep(2000);
+				
+		String id = idR.getText();
+		sleep(2000);
+		//System.out.println(id);
+				
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);			
+		opcao.click();
+				
+		engrenagem.click();
+				
+		editar.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);		
+		waitExpectElement(datainicovigencia);
+		sleep(2000);
 		
 		
+		String texto= datainicovigencia.getAttribute("value");
+		System.out.println(texto);
 		
+		
+		sleep(2000);
+		
+		datainicovigencia.clear();
+		
+		//inseri uma nova data
+		
+		datainicovigencia.sendKeys("30/07/2020");
+		
+		sleep(1000);
+		gravar.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(butaosim);
+		sleep(2000);
+		butaosim.sendKeys(Keys.ENTER);;
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		//recarrega a pagina
+		driver.navigate().refresh();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectElement(datainicovigencia);
+		sleep(2000);
+		//verifica se o valor inserido consta no relatório
+		String texto1 = datainicovigencia.getAttribute("value");
+		System.out.println(texto1);
+		boolean text= texto1.contains(texto1);
+		System.out.println(text);
+		sleep(1000);
+		
+		//volta com o campo modificado
+		datainicovigencia.clear();
+		datainicovigencia.sendKeys(texto);
+		
+		//grava de novo
+		gravar.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(butaosim);
+		sleep(2000);
+		butaosim.sendKeys(Keys.ENTER);
+				
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(datainicovigencia);
+		sleep(2000);
 	}	
 	
 	

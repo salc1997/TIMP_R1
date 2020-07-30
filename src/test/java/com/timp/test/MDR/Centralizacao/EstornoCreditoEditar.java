@@ -50,7 +50,7 @@ public class EstornoCreditoEditar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 		
 		//boolean sucesso=estornoCreditoEditarPO.Ed;
 		estornoCreditoEditarPO.Editar();

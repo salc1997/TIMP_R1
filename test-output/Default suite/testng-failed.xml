@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar">
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
         <methods>
-          <include name="afterClass"/>
+          <include name="editar"/>
           <include name="beforeClass"/>
-          <include name="logradouroVisualizar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar -->
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

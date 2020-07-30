@@ -110,7 +110,6 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	public WebElement idC;
 	
 
-	//button/span[text()="Biblioteca"]
 	public AntecipacaoCriarPO() {
 
 		PageFactory.initElements(driver, this);

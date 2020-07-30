@@ -23,13 +23,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestBaseSteven{
 	
 	//TC2
-	protected static String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
+	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
 	//TD1
-	protected static String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
+	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 	
-	protected static String tq1 = "http://as1-100-01-tq1:8000/timp/login/#/login";
+	protected String tq1 = "http://as1-100-01-tq1:8000/timp/login/#/login";
 
-	protected static String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
+	protected String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
 	
 	
 	
@@ -44,7 +44,7 @@ public class TestBaseSteven{
 	//Mensajes
 	
 
-	public static WebDriver initialization() {
+	public WebDriver initialization() {
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();

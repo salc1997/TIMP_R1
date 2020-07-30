@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="4"  parallel="tests">
-  <test  name="PruebaTestNG1">
-    <classes >
-      <class name="com.timp.test.BRB.testNg.AcessarP"/>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite de testes" thread-count="4"  parallel="methods">
+<!--  -->
+ <!-- <listeners>
+		<listener class-name="com.sap.mfa.base.MyTestReporter" />
+	</listeners> --> 
+	<test name="FunctionalTests" preserve-order="true">
+		<packages>
+ 		    <package name="com.timp.test.ADM" />
+ 		    <package name="com.timp.test.BRB" />	    
+ 		    <package name="com.timp.test.BRB.otro" />
+			<package name="com.timp.test.BRB.testNg" />
+ 		    <package name="com.timp.test.MDR" />
 
-      
-    </classes>
-  </test> <!-- PruebaTestNG -->
-  
-  <test  name="PruebaTestNG2">
-    <classes >
-
-      <class name="com.timp.test.BRB.testNg.FiltrosP"/>
-      
-    </classes>
-  </test> <!-- PruebaTestNG -->
+		</packages>
+	</test>
 </suite> <!-- Suite -->

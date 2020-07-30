@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="PruebaTestNG(failed)" parallel="true">
     <classes>
-<<<<<<< HEAD
       <class name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar">
-=======
-      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
-<<<<<<< HEAD
+          <include name="acessarMDR"/>
           <include name="filtro"/>
-=======
-          <include name="afterClass"/>
-          <include name="logradouroExcluir"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <include name="beforeClass"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioCriar -->
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar">
+        <methods>
+          <include name="login"/>
+          <include name="filtro"/>
+          <include name="acessarMDR"/>
           <include name="beforeClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEliminar -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- PruebaTestNG(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -44,6 +44,6 @@ public class TributosDetalhes extends TestBaseKathy{
 	public void tributoDetalhes() {
 		
 		 String sucesso = tributosDetalhesPO.tributoDetalhes();
-		 assertEquals(sucesso, "detail", EmpresaVisualizar);
+		 assertEquals(sucesso, "detail", Filtros);
 	}
 }

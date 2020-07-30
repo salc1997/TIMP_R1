@@ -1,16 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="6" total="6" passed="0">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="3" passed="3">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="3" passed="3">
+=======
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+<testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="15012266" started-at="2020-07-29T21:15:42Z" finished-at="2020-07-30T01:25:55Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-07-30T02:30:41Z" name="Default suite" finished-at="2020-07-30T02:32:09Z" duration-ms="88386">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="85870" started-at="2020-07-29T21:56:52Z" finished-at="2020-07-29T21:58:18Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-07-29T21:56:05Z" name="Default suite" finished-at="2020-07-29T21:58:17Z" duration-ms="131541">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="133532" started-at="2020-07-29T21:31:06Z" finished-at="2020-07-29T21:33:20Z">
+=======
+  <suite started-at="2020-07-29T21:23:24Z" name="Default suite" finished-at="2020-07-29T21:25:17Z" duration-ms="112923">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="PruebaTestNG" duration-ms="15012266" started-at="2020-07-29T21:15:42Z" finished-at="2020-07-30T01:25:55Z">
       <class name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="11786" started-at="2020-07-29T15:15:42Z" finished-at="2020-07-29T15:15:54Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-07-30T02:30:41Z" name="Default test" finished-at="2020-07-30T02:32:09Z" duration-ms="88386">
+      <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros@4c1909a3]" started-at="2020-07-29T20:30:41Z" name="beforeClass" finished-at="2020-07-29T20:30:56Z" duration-ms="14808" status="PASS">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="85870" started-at="2020-07-29T21:56:52Z" finished-at="2020-07-29T21:58:18Z">
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="beforeClass" is-config="true" duration-ms="15309" started-at="2020-07-29T15:56:52Z" finished-at="2020-07-29T15:57:07Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-07-29T21:56:05Z" name="Default test" finished-at="2020-07-29T21:58:17Z" duration-ms="131541">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:05Z" name="beforeClass" finished-at="2020-07-29T15:56:26Z" duration-ms="20683" status="PASS">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="133532" started-at="2020-07-29T21:31:06Z" finished-at="2020-07-29T21:33:20Z">
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16338" started-at="2020-07-29T18:31:06Z" finished-at="2020-07-29T18:31:22Z">
+=======
+    <test started-at="2020-07-29T21:23:24Z" name="Default test" finished-at="2020-07-29T21:25:17Z" duration-ms="112923">
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:24Z" name="beforeClass" finished-at="2020-07-29T15:23:43Z" duration-ms="19468" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioCriar@8e0379d]" name="acessarMDR" duration-ms="15000464" started-at="2020-07-29T15:15:54Z" finished-at="2020-07-29T19:25:55Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
@@ -67,9 +136,49 @@ Session ID: 4b72c8611ee17d1583b68e8d16184c02
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros@4c1909a3]" started-at="2020-07-29T20:30:56Z" name="login" finished-at="2020-07-29T20:31:07Z" duration-ms="10785" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="login" duration-ms="12966" started-at="2020-07-29T15:57:07Z" finished-at="2020-07-29T15:57:20Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:26Z" name="login" finished-at="2020-07-29T15:56:39Z" duration-ms="13280" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="login" duration-ms="10423" started-at="2020-07-29T18:31:22Z" finished-at="2020-07-29T18:31:33Z">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:43Z" name="login" finished-at="2020-07-29T15:23:55Z" duration-ms="11181" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros@4c1909a3]" started-at="2020-07-29T20:31:07Z" name="acessarMDR" finished-at="2020-07-29T20:31:40Z" duration-ms="33819" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="acessarMDR" duration-ms="11117" started-at="2020-07-29T15:57:20Z" finished-at="2020-07-29T15:57:31Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:56:39Z" name="acessarMDR" finished-at="2020-07-29T15:57:20Z" duration-ms="41218" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="acessarMDR" duration-ms="28598" started-at="2020-07-29T18:31:33Z" finished-at="2020-07-29T18:32:01Z">
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:23:55Z" name="acessarMDR" finished-at="2020-07-29T15:24:33Z" duration-ms="38658" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioCriar@8e0379d]" name="login" duration-ms="15000321" started-at="2020-07-29T15:15:54Z" finished-at="2020-07-29T19:25:54Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
@@ -134,8 +243,28 @@ Session ID: 4b72c8611ee17d1583b68e8d16184c02
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+<<<<<<< HEAD
+        <test-method signature="fatorCreditamentoFiltros()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros@4c1909a3]" started-at="2020-07-29T20:31:40Z" name="fatorCreditamentoFiltros" finished-at="2020-07-29T20:32:09Z" duration-ms="28930" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEliminar@35083305]" name="filtro" duration-ms="46459" started-at="2020-07-29T15:57:31Z" finished-at="2020-07-29T15:58:18Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="logradouroExcluir()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:57:20Z" name="logradouroExcluir" finished-at="2020-07-29T15:58:17Z" duration-ms="56315" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar@8e0379d]" name="criar" duration-ms="78137" started-at="2020-07-29T18:32:01Z" finished-at="2020-07-29T18:33:20Z">
+=======
+        <test-method signature="logradouroVisualizar()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar@4c1909a3]" started-at="2020-07-29T15:24:33Z" name="logradouroVisualizar" finished-at="2020-07-29T15:25:17Z" duration-ms="43531" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method status="FAIL" signature="filtro()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioCriar@8e0379d]" name="filtro" duration-ms="5" started-at="2020-07-29T19:25:54Z" finished-at="2020-07-29T19:25:54Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
@@ -388,8 +517,33 @@ Session ID: 4b72c8611ee17d1583b68e8d16184c02
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
+=======
+<<<<<<< HEAD
+        </test-method> <!-- fatorCreditamentoFiltros -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros@4c1909a3]" started-at="2020-07-29T20:32:09Z" name="afterClass" finished-at="2020-07-29T20:32:09Z" duration-ms="1" status="PASS">
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </test-method> <!-- filtro -->
       </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEliminar -->
+<<<<<<< HEAD
     </test> <!-- PruebaTestNG -->
   </suite> <!-- Suite -->
+=======
+=======
+        </test-method> <!-- logradouroExcluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir@4c1909a3]" started-at="2020-07-29T15:58:17Z" name="afterClass" finished-at="2020-07-29T15:58:17Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros -->
+=======
+      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 </testng-results>

@@ -3,10 +3,25 @@
 <suite name="Failed suite [Suite]" parallel="none">
   <test name="PruebaTestNG(failed)" parallel="true">
     <classes>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros">
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
       <class name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar">
+<<<<<<< HEAD
+=======
+=======
+      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
           <include name="acessarMDR"/>
           <include name="filtro"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="login"/>
         </methods>
@@ -16,9 +31,31 @@
           <include name="login"/>
           <include name="filtro"/>
           <include name="acessarMDR"/>
+=======
+=======
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="fatorCreditamentoFiltros"/>
+=======
+          <include name="logradouroExcluir"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEliminar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- PruebaTestNG(failed) -->
 </suite> <!-- Failed suite [Suite] -->

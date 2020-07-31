@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar">
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
         <methods>
-          <include name="criar"/>
+          <include name="Visualizar"/>
           <include name="beforeClass"/>
+          <include name="acessarMDR"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar -->
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

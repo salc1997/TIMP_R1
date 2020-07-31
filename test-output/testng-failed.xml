@@ -3,15 +3,14 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar">
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir">
         <methods>
-          <include name="beforeClass"/>
-          <include name="cenariosCorrecaoEditar"/>
+          <include name="cenariosCorrecaoExcluir"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
           <include name="acessarMDR"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar -->
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

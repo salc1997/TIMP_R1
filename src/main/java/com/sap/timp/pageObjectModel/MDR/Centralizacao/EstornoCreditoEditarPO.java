@@ -91,16 +91,13 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);		
-		waitExpectElement(datainicovigencia);
-		sleep(2000);
 		
-		
-		String texto= datainicovigencia.getAttribute("value");
+		String texto = datainicovigencia.getAttribute("value");
 		System.out.println(texto);
 		
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		//limpa o campo da data
 		datainicovigencia.clear();
 		
 		//inseri uma nova data
@@ -123,28 +120,35 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 		sleep(2000);
 		waitExpectElement(datainicovigencia);
 		sleep(2000);
-		//verifica se o valor inserido consta no relatório
-		String texto1 = datainicovigencia.getAttribute("value");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String texto1= datainicovigencia.getAttribute("value");
 		System.out.println(texto1);
-		boolean text= texto1.contains(texto1);
-		System.out.println(text);
-		sleep(1000);
 		
-		//volta com o campo modificado
-		datainicovigencia.clear();
-		datainicovigencia.sendKeys(texto);
-		
-		//grava de novo
-		gravar.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(butaosim);
-		sleep(2000);
-		butaosim.sendKeys(Keys.ENTER);
+		/*
+		//verifica se o valor inserido consta no relatório
+				String texto1= datainicovigencia.getAttribute("value");
+				System.out.println(texto1);
+				boolean text= texto1.contains(texto1);
+				System.out.println(text);
+				sleep(1000);
 				
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(datainicovigencia);
-		sleep(2000);
+				//volta com o campo modificado
+				sleep(2000);
+				datainicovigencia.clear();
+				datainicovigencia.sendKeys(texto);
+				
+				//grava de novo
+				gravar.click();
+				sleep(1000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				waitExpectElement(butaosim);
+				sleep(2000);
+				butaosim.sendKeys(Keys.ENTER);
+						
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				waitExpectElement(datainicovigencia);
+				sleep(2000);*/
 	}	
 	
 	

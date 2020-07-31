@@ -1,7 +1,10 @@
 package com.sap.timp.base;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Properties;
 
@@ -112,6 +115,17 @@ public String fechaActual() {
 		return df.format(fecha);
 		
 	}
+
+
+public String dataanterior() {
+	
+	DateFormat df = new SimpleDateFormat ("dd/MM/yyyy");
+	Calendar cal = Calendar.getInstance();
+	cal.add (Calendar.DAY_OF_MONTH, -1);
+	
+	return df.format(cal.getTime());
+	
+}
 	
 	public Double convertToDouble(String numero) {
 				

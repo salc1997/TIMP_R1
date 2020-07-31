@@ -3,13 +3,26 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar">
+=======
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar">
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="cenariosCorrecaoCriar"/>
+=======
+          <include name="criar"/>
+          <include name="beforeClass"/>
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar -->
+>>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

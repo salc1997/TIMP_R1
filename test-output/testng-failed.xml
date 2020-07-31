@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
-=======
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar">
-=======
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar">
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar">
         <methods>
-<<<<<<< HEAD
           <include name="beforeClass"/>
+          <include name="cenariosCorrecaoEditar"/>
           <include name="afterClass"/>
-          <include name="cenariosCorrecaoCriar"/>
-=======
-          <include name="criar"/>
-          <include name="beforeClass"/>
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+          <include name="acessarMDR"/>
+          <include name="login"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar -->
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

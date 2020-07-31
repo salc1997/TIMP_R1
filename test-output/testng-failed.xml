@@ -1,81 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-=======
-<suite name="Failed suite [Suite]" parallel="none">
-  <test name="PruebaTestNG(failed)" parallel="true">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros">
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar">
-<<<<<<< HEAD
-=======
-=======
-      <class name="com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-          <include name="acessarMDR"/>
-          <include name="filtro"/>
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="login"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioCriar -->
-      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar">
-        <methods>
-          <include name="login"/>
-          <include name="filtro"/>
-          <include name="acessarMDR"/>
-=======
-=======
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="fatorCreditamentoFiltros"/>
-=======
-          <include name="logradouroExcluir"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-          <include name="beforeClass"/>
+          <include name="cenariosCorrecaoCriar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEliminar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar -->
     </classes>
-  </test> <!-- PruebaTestNG(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

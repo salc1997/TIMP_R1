@@ -45,8 +45,8 @@ public class CodigoContabilizacaoExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Excluir() {
 
-	codigoContabilizacaoExcluirPO.excluir();
-		//assertTrue(sucesso, Eliminado);
+		boolean sucesso= codigoContabilizacaoExcluirPO.excluir();
+		assertTrue(sucesso, Eliminado);
 
 	}
 }

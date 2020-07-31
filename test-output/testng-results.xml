@@ -1,156 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="2" passed="2">
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 <testng-results skipped="0" failed="0" total="3" passed="3">
-<<<<<<< HEAD
-=======
-=======
-<testng-results total="3" passed="3" failed="0" skipped="0">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="89898" started-at="2020-07-31T20:56:41Z" finished-at="2020-07-31T20:58:11Z">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-07-31T17:44:55Z" name="Default suite" finished-at="2020-07-31T17:47:24Z" duration-ms="148763">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="33070" started-at="2020-07-31T19:35:40Z" finished-at="2020-07-31T19:36:13Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="72339" started-at="2020-07-31T18:55:51Z" finished-at="2020-07-31T18:57:03Z">
-=======
-  <suite started-at="2020-07-31T07:20:10Z" name="Default suite" finished-at="2020-07-31T07:22:05Z" duration-ms="115415">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="97994" started-at="2020-07-31T22:29:13Z" finished-at="2020-07-31T22:30:51Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="89898" started-at="2020-07-31T20:56:41Z" finished-at="2020-07-31T20:58:11Z">
+    <test name="Default test" duration-ms="97994" started-at="2020-07-31T22:29:13Z" finished-at="2020-07-31T22:30:51Z">
       <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16235" started-at="2020-07-31T17:56:41Z" finished-at="2020-07-31T17:56:57Z">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-07-31T17:44:55Z" name="Default test" finished-at="2020-07-31T17:47:24Z" duration-ms="148763">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="33070" started-at="2020-07-31T19:35:40Z" finished-at="2020-07-31T19:36:13Z">
-      <class name="com.timp.test.BRB.BRBAcessar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.BRBAcessar@341b80b2]" name="beforeClass" is-config="true" duration-ms="11273" started-at="2020-07-31T13:35:40Z" finished-at="2020-07-31T13:35:51Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="72339" started-at="2020-07-31T18:55:51Z" finished-at="2020-07-31T18:57:03Z">
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="17760" started-at="2020-07-31T15:55:51Z" finished-at="2020-07-31T15:56:09Z">
-=======
-    <test started-at="2020-07-31T07:20:10Z" name="Default test" finished-at="2020-07-31T07:22:05Z" duration-ms="115415">
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:44:55Z" name="beforeClass" finished-at="2020-07-31T11:45:22Z" duration-ms="26976" status="PASS">
-=======
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:10Z" name="beforeClass" finished-at="2020-07-31T01:20:25Z" duration-ms="14507" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16571" started-at="2020-07-31T19:29:13Z" finished-at="2020-07-31T19:29:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="login" duration-ms="9680" started-at="2020-07-31T17:56:57Z" finished-at="2020-07-31T17:57:07Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:45:22Z" name="login" finished-at="2020-07-31T11:45:37Z" duration-ms="15491" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.BRBAcessar@341b80b2]" name="login" duration-ms="6612" started-at="2020-07-31T13:35:51Z" finished-at="2020-07-31T13:35:58Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="login" duration-ms="9135" started-at="2020-07-31T15:56:09Z" finished-at="2020-07-31T15:56:18Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:25Z" name="login" finished-at="2020-07-31T01:20:33Z" duration-ms="8859" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="login" duration-ms="9184" started-at="2020-07-31T19:29:29Z" finished-at="2020-07-31T19:29:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="acessarMDR" duration-ms="10913" started-at="2020-07-31T17:57:07Z" finished-at="2020-07-31T17:57:18Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:45:37Z" name="acessarMDR" finished-at="2020-07-31T11:46:33Z" duration-ms="56051" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.BRBAcessar@341b80b2]" name="brbEntrar" duration-ms="14938" started-at="2020-07-31T13:35:58Z" finished-at="2020-07-31T13:36:13Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="acessarMDR" duration-ms="11309" started-at="2020-07-31T15:56:18Z" finished-at="2020-07-31T15:56:29Z">
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:33Z" name="acessarMDR" finished-at="2020-07-31T01:21:08Z" duration-ms="34502" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="acessarMDR" duration-ms="11525" started-at="2020-07-31T19:29:39Z" finished-at="2020-07-31T19:29:50Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.BRBAcessar@341b80b2]" name="afterClass" is-config="true" duration-ms="231" started-at="2020-07-31T13:36:13Z" finished-at="2020-07-31T13:36:13Z">
-=======
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="editar" duration-ms="53039" started-at="2020-07-31T17:57:18Z" finished-at="2020-07-31T17:58:11Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="cenariosCorrecaoVisualizar()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:46:33Z" name="cenariosCorrecaoVisualizar" finished-at="2020-07-31T11:47:24Z" duration-ms="50195" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="Visualizar" duration-ms="34110" started-at="2020-07-31T15:56:29Z" finished-at="2020-07-31T15:57:03Z">
-=======
-        <test-method signature="cenariosCorrecaoVisualizar()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:21:08Z" name="cenariosCorrecaoVisualizar" finished-at="2020-07-31T01:22:05Z" duration-ms="57488" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="editar" duration-ms="60674" started-at="2020-07-31T19:29:50Z" finished-at="2020-07-31T19:30:51Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- editar -->
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
-=======
-<<<<<<< HEAD
-        </test-method> <!-- Visualizar -->
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
-=======
-        </test-method> <!-- cenariosCorrecaoVisualizar -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:47:24Z" name="afterClass" finished-at="2020-07-31T11:47:24Z" duration-ms="0" status="PASS">
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:22:05Z" name="afterClass" finished-at="2020-07-31T01:22:05Z" duration-ms="1" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.BRBAcessar -->
-=======
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

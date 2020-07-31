@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.Centralizacao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -54,8 +55,13 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher/Selecionar  data\"]")
+	//@FindBy(xpath = "//input[@placeholder=\"Preencher/Selecionar  data\"]")
+	@FindBy(xpath = "//*[@id=\"validity\"]/div/div[1]/input")
 	public WebElement datainicovigencia;
+	
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id]/div[10]/div")
+	public WebElement data;
+	
 	public EstornoCreditoEditarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -80,7 +86,9 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 		String id = idR.getText();
 		sleep(2000);
 		//System.out.println(id);
-				
+		
+		String texto = data.getText();
+		System.out.println(texto);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);			
 		opcao.click();
@@ -91,10 +99,12 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);		
+		waitExpectElement(datainicovigencia);
+		sleep(2000);
 		
-		String texto = datainicovigencia.getAttribute("value");
-		System.out.println(texto);
-		
+		//inseri aqui
+		//String texto = datainicovigencia.getAttribute("value");
+		//System.out.println(texto);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//limpa o campo da data
@@ -122,10 +132,10 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String texto1= datainicovigencia.getAttribute("value");
-		System.out.println(texto1);
+		//String texto1= datainicovigencia.getAttribute("value");
+		//System.out.println(texto1);
 		
-		/*
+		
 		//verifica se o valor inserido consta no relatório
 				String texto1= datainicovigencia.getAttribute("value");
 				System.out.println(texto1);
@@ -148,7 +158,7 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 						
 				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 				waitExpectElement(datainicovigencia);
-				sleep(2000);*/
+				sleep(2000);
 	}	
 	
 	

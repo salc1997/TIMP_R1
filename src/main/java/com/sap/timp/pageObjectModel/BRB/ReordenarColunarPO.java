@@ -72,8 +72,7 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		
-		actions.dragAndDrop(mover, haciaE).perform();
-		//actions.dragAndDropBy(mover,hacia.x, 0).perform();
+		actions.dragAndDropBy(mover,hacia.x, 0).perform();
 		actions.release();
 		
 		gravar.click();
@@ -93,16 +92,21 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		}
 		
 		sleep(2000);
-		actions.dragAndDrop(mover, haciaE).perform();
-		//actions.dragAndDropBy(mover, -y, 0).perform();
+		actions.dragAndDropBy(mover, -y, 0).perform();
 		actions.release();
 		gravar.click();
 		sleep(5000);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 
+		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
+		
 		
 		return movido;
+		
+		
+		
+		
 		
 		
 		

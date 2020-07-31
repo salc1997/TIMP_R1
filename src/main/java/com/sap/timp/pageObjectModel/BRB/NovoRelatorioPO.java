@@ -103,8 +103,6 @@ public class NovoRelatorioPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"draggable-66\"]")
 	public WebElement valorICMSC;
 
-	@FindBy(xpath = "//li[text()=\"Nota Fiscal\"][2]")
-	public WebElement nota2;
 	
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
@@ -172,7 +170,7 @@ public class NovoRelatorioPO extends TestBaseSteven{
 			grupo.sendKeys(Keys.ENTER);
 		}else {
 			grupo.sendKeys("Nota Fiscal");
-			nota2.click();
+			grupo.sendKeys(Keys.ENTER);
 		}
 	
 		sleep(1000);

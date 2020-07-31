@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,24 +34,21 @@ public class TestBaseSteven{
 	
 	
 	
-	public static Properties prop;
+
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
 	public String senhaL = "Alltax20";
 	public int menuT = 12000;
 	
-	
-	
-	//Mensajes
-	
+
 
 	public WebDriver initialization() {
-
+		
+		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(td1);
-
 
 		return driver;
 
@@ -142,6 +140,18 @@ public class TestBaseSteven{
 		
 		return df.format(fecha);
 		
+	}
+	
+	public String fechaAyer() {
+
+		Date fecha = new Date();
+		
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis( -1 ));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
 	}
 	
 	public Double convertToDouble(String numero) {

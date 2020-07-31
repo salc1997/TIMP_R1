@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Suite de testes]" parallel="classes">
+  <test name="FunctionalTests(failed)" parallel="classes">
+    <classes>
+      <class name="com.timp.test.ADM.LoginTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.LoginTest -->
+      <class name="com.timp.test.BRB.BRBAcessar">
+        <methods>
+          <include name="brbEntrar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.BRBAcessar -->
+    </classes>
+  </test> <!-- FunctionalTests(failed) -->
+</suite> <!-- Failed suite [Suite de testes] -->

@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -103,14 +104,26 @@ public class TestBaseEliel extends TestBaseSteven {
 		
 	}
 	
-public String fechaActual() {
-		
+	public String fechaActual() {
+
+		Date fecha = new Date();
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(fecha);
+
+	}
+	
+	public String fechaAyer() {
+
 		Date fecha = new Date();
 		
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis( -1 ));
+
 		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
-		
-		return df.format(fecha);
-		
+
+		return df.format(ayer);
+
 	}
 	
 	public Double convertToDouble(String numero) {

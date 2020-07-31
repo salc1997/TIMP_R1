@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
+=======
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.PruebaAutomatizacion">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
+=======
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="editar"/>
+=======
+<<<<<<< HEAD
+          <include name="reordenarColuna"/>
+          <include name="comentarioLibre"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.PruebaAutomatizacion -->
+=======
+<<<<<<< HEAD
+          <include name="Visualizar"/>
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
           <include name="acessarMDR"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
+=======
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,64 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="3" passed="3">
-=======
-<testng-results total="3" passed="3" failed="0" skipped="0">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="72339" started-at="2020-07-31T18:55:51Z" finished-at="2020-07-31T18:57:03Z">
-=======
-  <suite started-at="2020-07-31T07:20:10Z" name="Default suite" finished-at="2020-07-31T07:22:05Z" duration-ms="115415">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="89898" started-at="2020-07-31T20:56:41Z" finished-at="2020-07-31T20:58:11Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="72339" started-at="2020-07-31T18:55:51Z" finished-at="2020-07-31T18:57:03Z">
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="17760" started-at="2020-07-31T15:55:51Z" finished-at="2020-07-31T15:56:09Z">
-=======
-    <test started-at="2020-07-31T07:20:10Z" name="Default test" finished-at="2020-07-31T07:22:05Z" duration-ms="115415">
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:10Z" name="beforeClass" finished-at="2020-07-31T01:20:25Z" duration-ms="14507" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test name="Default test" duration-ms="89898" started-at="2020-07-31T20:56:41Z" finished-at="2020-07-31T20:58:11Z">
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16235" started-at="2020-07-31T17:56:41Z" finished-at="2020-07-31T17:56:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="login" duration-ms="9135" started-at="2020-07-31T15:56:09Z" finished-at="2020-07-31T15:56:18Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:25Z" name="login" finished-at="2020-07-31T01:20:33Z" duration-ms="8859" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="login" duration-ms="9680" started-at="2020-07-31T17:56:57Z" finished-at="2020-07-31T17:57:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="acessarMDR" duration-ms="11309" started-at="2020-07-31T15:56:18Z" finished-at="2020-07-31T15:56:29Z">
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:33Z" name="acessarMDR" finished-at="2020-07-31T01:21:08Z" duration-ms="34502" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="acessarMDR" duration-ms="10913" started-at="2020-07-31T17:57:07Z" finished-at="2020-07-31T17:57:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="Visualizar" duration-ms="34110" started-at="2020-07-31T15:56:29Z" finished-at="2020-07-31T15:57:03Z">
-=======
-        <test-method signature="cenariosCorrecaoVisualizar()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:21:08Z" name="cenariosCorrecaoVisualizar" finished-at="2020-07-31T01:22:05Z" duration-ms="57488" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="editar" duration-ms="53039" started-at="2020-07-31T17:57:18Z" finished-at="2020-07-31T17:58:11Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- Visualizar -->
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
-=======
-        </test-method> <!-- cenariosCorrecaoVisualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:22:05Z" name="afterClass" finished-at="2020-07-31T01:22:05Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        </test-method> <!-- editar -->
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

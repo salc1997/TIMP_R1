@@ -81,7 +81,7 @@ import com.sap.timp.base.TestBaseSteven;
 			System.out.println(randomName);
 			return randomName;
 		}
-
+		/*
 		public static String getAbsoluteXPath(WebElement element){
 			JavascriptExecutor js = ((JavascriptExecutor) driver);
 			   return (String) (js).executeScript(
@@ -139,7 +139,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 					"} return absoluteXPath(arguments[0]);", element);
 				}
-		
+		*/
 		public static String extractTRNumberXpath(String fullString) {
 			String partialString = fullString.substring(fullString.indexOf("tr["), fullString.length());
 			String number = partialString.substring(partialString.lastIndexOf("tr[") + 3, partialString.indexOf("]"));
@@ -158,7 +158,7 @@ import com.sap.timp.base.TestBaseSteven;
 			System.out.println("Tommorow is : " + tomorrow);
 			return tomorrow;
 		}
-
+		/*
 		public static String getEnvironment() throws MalformedURLException {
 			URL url = new URL(prop.getProperty("url"));
 			String hostname = url.getHost();
@@ -176,7 +176,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 		}
 		
-
+	*/
 		
 
 

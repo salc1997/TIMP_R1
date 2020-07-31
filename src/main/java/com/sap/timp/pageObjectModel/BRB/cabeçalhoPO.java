@@ -125,7 +125,7 @@ public class cabeçalhoPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		
-		imprimir.click();
+		//imprimir.click();
 		
 		
 	

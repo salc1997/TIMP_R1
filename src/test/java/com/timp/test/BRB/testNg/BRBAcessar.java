@@ -16,16 +16,11 @@ public class BRBAcessar extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	
-	public BRBAcessar() {
-		super();
-	}
-	
-
 
 	@BeforeClass
 	public void beforeClass() {
 		
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 	}

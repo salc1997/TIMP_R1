@@ -1,13 +1,16 @@
 package com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao;
 
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
+public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
+	
+	
+	
 	
 	@FindBy(xpath = "//span[text()=\"Códigos de Contabilização\"]")
 	public WebElement codigoscontabilizacao;
@@ -74,17 +77,31 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
+	public WebElement opcao;
 	
-	public CodigoContabilizacaoCriarPO() {
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
+	public WebElement engrenagem;
+	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
+	public WebElement excluir;
+	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisa;
+	
+	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
+	public WebElement nenhumResult;
+	public CodigoContabilizacaoExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	
 	
-	public void criar() {
+public void excluir() {
 		
 		
-String url = driver.getCurrentUrl();
+		String url = driver.getCurrentUrl();
 		
 		boolean tc2 = false;
 		boolean td1 = false;
@@ -125,84 +142,23 @@ String url = driver.getCurrentUrl();
 		sleep(2000);
 	//	System.out.println(id);
 		
+	
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
-		novocodigocontabilizacao.click();
+		
+		opcao.click();
+		
+		engrenagem.click();
+		/*sleep(1000);
+		excluir.click();
 		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		empresa.click();
-		
-		opcaoempresa.click();
-		
-		opcaoempresa.sendKeys(Keys.ESCAPE);
-		
+		waitExpectElement(butaosim);
 		sleep(2000);
-		
-		tipolancamento.sendKeys(Keys.ENTER);;
-		
-		opcaotipolancamento.click();
-		
-		sleep(1000);
-		
-		descricaopadrao.sendKeys("Teste");
-		
-		tributo.click();
-		
-		opcaotributo.click();
-		
-		//tipotributo.sendKeys("A0002 - FUNDOS");
-		
-		
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
-		sleep(2000);
-		tipotributo.click();
-		
-		opcaotipotributo.click();
-		
-		//pega a data atual
-		//String data= fechaActual();
-		String data = dataanterior();
-		datainicio.sendKeys(data);
-		
-		gravar.click();
-		
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		*/
 		
-		biblioteca.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		//Pega o ultimo id depois do preenchimento
-
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		String idB = idR.getText();
-		sleep(2000);
-		System.out.println(id);
-		System.out.println(idB);
-				
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		//compara pra ver se o novo id criado é realmente o ultimo
-		boolean sucesso = false;
-				
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
-				
-		System.out.println( sucesso);
-		
-		//verificar se o relatório foi criado
-		boolean text= idB.contains(idR.getText());
-		System.out.println(text);
     }
-	
 
 }

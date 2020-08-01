@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -71,7 +72,8 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	//@FindBy(xpath = "//button[text()=\"Sim\"]")
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement butaosim;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -83,7 +85,7 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
 	public WebElement engrenagem;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement excluir;
 	
 	
@@ -98,7 +100,7 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 	
 	
 	
-public void excluir() {
+public boolean excluir() {
 		
 		
 		String url = driver.getCurrentUrl();
@@ -149,7 +151,7 @@ public void excluir() {
 		opcao.click();
 		
 		engrenagem.click();
-		/*sleep(1000);
+		sleep(1000);
 		excluir.click();
 		sleep(1000);
 		waitExpectElement(butaosim);
@@ -157,7 +159,17 @@ public void excluir() {
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		*/
+
+		waitExpectElement(pesquisa);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		pesquisa.sendKeys(id);
+		pesquisa.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		boolean sucesso = nenhumResult.isDisplayed();
+		System.out.println(sucesso);
+		return sucesso;
 		
     }
 

@@ -1,15 +1,14 @@
 package com.sap.timp.pageObjectModel.MDR.ContratoIOF;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.google.j2objc.annotations.Weak;
 import com.sap.timp.base.TestBaseEliel;
 
-public class ContratoIOFCriarPO extends TestBaseEliel {
-
+public class ContratoIOFEditarPO extends TestBaseEliel{
+	
+	
 	@FindBy(xpath = "//span[text()=\"Contrato IOF \"]")
 	public WebElement contratoiof;
 		
@@ -102,7 +101,8 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	@FindBy(xpath = "//div[@class=\"overlay dark\"]/div/div[3]/button[2]")
+	//@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
 	public WebElement butaosim;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -111,16 +111,20 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Adicionar\"]")
 	public WebElement adicionar;
 	
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
+	public WebElement opcao;
 	
-	public ContratoIOFCriarPO() {
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
+	public WebElement engrenagem;
+	
+	@FindBy(xpath ="//*[@id=\"table\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]/span[2]")
+	public WebElement editar;
+	
+	public ContratoIOFEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-	public void criar() {
-		
-		
-		
+
+	public void editar() {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		contratoiof.click();
@@ -129,118 +133,46 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 		
 		setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//pega o ultimo id
 		idC.click();
+		sleep(1000);
 		dobleClickElement(idC);
 		sleep(2000);
-		
+				
 		String id = idR.getText();
 		sleep(2000);
-		//System.out.println(id);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		opcao.click();
 		
-		novocontratoiof.click();
-		sleep(1000);
+		engrenagem.click();
+		
+		sleep(2000);
+		
+		editar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		preenchercontrato.sendKeys("123");
-		
-		codigoreceita.click();
-	
-		opcaocodigoreceita.click();
-		
-		tipopessoa.click();
-		waitExpectElement(opcaotipopessoa);
-		sleep(2000);
-		opcaotipopessoa.click();
-		
-		cpf.sendKeys("13154614712");
-		
-		variacao.sendKeys("01");
-		
-		razaosocial.sendKeys("Razão");
-		
-		periocidade.click();
-		
-		opcaoperiocidade.click();
-		
-		waitExpectElement(moeda);
-		sleep(2000);
-		moeda.click();
-		
-		opcaomoeda.click();
-		
-		valorcontrato.sendKeys("1000");
-		
-		String data= fechaActual();
-		
-		validadede.sendKeys(data);
-		
-		empresa.click();
-		opcaoempresa.click();
-		
-		waitExpectElement(filial);
+		attributeToBeXpath("//div[@id=\"contractValue\"]/div/div", "class", "base-input  required type1 success");
+		waitExpectElement(valorcontrato);
 		sleep(2000);
 		
-		filial.click();
+		//valorcontrato.clear();
 		
-		opcaofilial.click();
-		
-		opcaofilial.sendKeys(Keys.ESCAPE);
-	
-		
-	//	attributeToBeXpath("//div[@id=\"tax\"]/div/div/div/div[2]", "class", "new-tag");
-		
-		tributo.click();
-		opcaotributo.click();
-		opcaotributo.sendKeys(Keys.ESCAPE);
-		
-		adicionar.click();
+		///valorcontrato.sendKeys("100000");
+		razaosocial.clear();
+		razaosocial.sendKeys("LTDA");
 		
 		gravar.click();
-		
+		sleep(2000);
 		butaosim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	
-		biblioteca.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		//Pega o ultimo id depois do preenchimento
-
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
-		String idB = idR.getText();
-		sleep(2000);
-		System.out.println(id);
-		System.out.println(idB);
-				
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		//compara pra ver se o novo id criado é realmente o ultimo
-		boolean sucesso = false;
-				
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
-				
-		System.out.println( sucesso);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		attributeToBeXpath("//div[@id=\"contractValue\"]/div/div", "class", "base-input  required type1 success");
 		
-		//verificar se o relatório foi criado
-		boolean text= idB.contains(idR.getText());
-		System.out.println(text);
+		//recarrega a pagina
+		driver.navigate().refresh();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	}
-
-
-
+	
 }
-	
-	
-

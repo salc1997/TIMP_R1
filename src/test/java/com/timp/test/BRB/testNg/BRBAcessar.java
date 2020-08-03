@@ -2,6 +2,8 @@ package com.timp.test.BRB.testNg;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseParalelo2;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
@@ -12,7 +14,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class BRBAcessar extends TestBaseSteven {
+public class BRBAcessar extends TestBaseParalelo2 {
 	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
@@ -20,14 +22,14 @@ public class BRBAcessar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 		
-		driver = initialization();
+		driver= initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 	}
 	
 	@AfterClass
 	public void afterClass(){
-		driver.close();
+		//driver.close();
 	}
 
 	
@@ -39,8 +41,7 @@ public class BRBAcessar extends TestBaseSteven {
 	
 	@Test(priority=2)
 	public void brbEntrar() {
-		
-		driver = initialization();
+	
 		
 		boolean sucesso = acessarBrbPO.acessar();
 		

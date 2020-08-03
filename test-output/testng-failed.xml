@@ -5,10 +5,8 @@
     <classes>
       <class name="com.timp.test.BRB.ReordenarColuna">
         <methods>
-          <include name="brbEntrar"/>
           <include name="beforeClass"/>
           <include name="reordenar"/>
-          <include name="login"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.BRB.ReordenarColuna -->

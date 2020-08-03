@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFEditar">
+      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir">
         <methods>
           <include name="beforeClass"/>
-          <include name="Editar"/>
+          <include name="Excluir"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFEditar -->
+      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

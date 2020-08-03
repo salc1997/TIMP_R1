@@ -3,93 +3,14 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar">
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.PruebaAutomatizacion">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
-=======
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFCriar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="criar"/>
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-          <include name="editar"/>
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-          <include name="reordenarColuna"/>
-          <include name="comentarioLibre"/>
-=======
-<<<<<<< HEAD
-          <include name="Visualizar"/>
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-          <include name="acessarMDR"/>
-<<<<<<< HEAD
-=======
           <include name="login"/>
-=======
-          <include name="cenariosCorrecaoVisualizar"/>
-          <include name="afterClass"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <include name="beforeClass"/>
+          <include name="acessarMDR"/>
+          <include name="criar"/>
         </methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar -->
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.PruebaAutomatizacion -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
-=======
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

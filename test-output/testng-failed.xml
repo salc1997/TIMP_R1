@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite thread-count="4" name="Failed suite [Suite de testes]" parallel="classes">
   <test name="FunctionalTests(failed)" parallel="classes">
+=======
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.testNg.NovoRelatorio">
         <methods>
           <include name="colunas"/>
@@ -13,11 +19,22 @@
         </methods>
       </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
       <class name="com.timp.test.BRB.testNg.BRBAcessar">
+=======
+      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFEditar">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="afterClass"/>
+=======
+          <include name="Editar"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
+=======
+      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFEditar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- FunctionalTests(failed) -->
 </suite> <!-- Failed suite [Suite de testes] -->

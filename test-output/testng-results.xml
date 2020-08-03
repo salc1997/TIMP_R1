@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="6" passed="6">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite de testes" duration-ms="173281" started-at="2020-08-03T17:06:37Z" finished-at="2020-08-03T17:09:30Z">
+=======
+  <suite name="Default suite" duration-ms="69819" started-at="2020-08-03T20:15:52Z" finished-at="2020-08-03T20:17:02Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="FunctionalTests" duration-ms="173281" started-at="2020-08-03T17:06:37Z" finished-at="2020-08-03T17:09:30Z">
       <class name="com.timp.test.BRB.testNg.NovoRelatorio">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="beforeClass" is-config="true" duration-ms="36265" started-at="2020-08-03T11:06:37Z" finished-at="2020-08-03T11:07:13Z">
+=======
+    <test name="Default test" duration-ms="69819" started-at="2020-08-03T20:15:52Z" finished-at="2020-08-03T20:17:02Z">
+      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="21258" started-at="2020-08-03T17:15:52Z" finished-at="2020-08-03T17:16:13Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="login" duration-ms="13024" started-at="2020-08-03T11:07:13Z" finished-at="2020-08-03T11:07:26Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="login" duration-ms="9809" started-at="2020-08-03T17:16:13Z" finished-at="2020-08-03T17:16:23Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="brbEntrar" duration-ms="24180" started-at="2020-08-03T11:07:26Z" finished-at="2020-08-03T11:07:51Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="acessarMDR" duration-ms="11516" started-at="2020-08-03T17:16:23Z" finished-at="2020-08-03T17:16:35Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- brbEntrar -->
         <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="novoRelatorio" duration-ms="46227" started-at="2020-08-03T11:07:51Z" finished-at="2020-08-03T11:08:37Z">
+=======
+        </test-method> <!-- acessarMDR -->
+        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="Visualizar" duration-ms="27193" started-at="2020-08-03T17:16:35Z" finished-at="2020-08-03T17:17:02Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- novoRelatorio -->
         <test-method status="PASS" signature="colunas()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="colunas" duration-ms="53572" started-at="2020-08-03T11:08:37Z" finished-at="2020-08-03T11:09:30Z">
           <reporter-output>
@@ -52,4 +80,10 @@
       </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
     </test> <!-- FunctionalTests -->
   </suite> <!-- Suite de testes -->
+=======
+        </test-method> <!-- Visualizar -->
+      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 </testng-results>

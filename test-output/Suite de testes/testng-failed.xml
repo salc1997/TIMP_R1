@@ -6,7 +6,7 @@
       <class name="com.timp.test.ADM.LoginTest">
         <methods>
           <include name="beforeClass"/>
-          <include name="Login"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.ADM.LoginTest -->
       <class name="com.timp.test.BRB.BRBAcessar">
@@ -14,7 +14,6 @@
           <include name="brbEntrar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="login"/>
         </methods>
       </class> <!-- com.timp.test.BRB.BRBAcessar -->
     </classes>

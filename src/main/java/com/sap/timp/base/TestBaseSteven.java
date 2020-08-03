@@ -35,7 +35,7 @@ public class TestBaseSteven{
 	
 	 
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
 	public String senhaL = "Alltax20";
 	public int menuT = 12000;

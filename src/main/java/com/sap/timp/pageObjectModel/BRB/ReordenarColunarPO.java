@@ -73,7 +73,7 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		
 		
 		actions.dragAndDropBy(mover,hacia.x, 0).perform();
-		actions.release();
+
 		
 		gravar.click();
 		sleep(4000);
@@ -93,7 +93,7 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		actions.dragAndDropBy(mover, -y, 0).perform();
-		actions.release();
+
 		gravar.click();
 		sleep(5000);
 		

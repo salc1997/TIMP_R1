@@ -1,261 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="2" passed="2">
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-<testng-results skipped="0" failed="0" total="3" passed="3">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
-<testng-results total="3" passed="3" failed="0" skipped="0">
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+<testng-results total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-08-01T07:22:15Z" name="Default suite" finished-at="2020-08-01T07:25:13Z" duration-ms="177907">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="97994" started-at="2020-07-31T22:29:13Z" finished-at="2020-07-31T22:30:51Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="88086" started-at="2020-07-31T20:37:30Z" finished-at="2020-07-31T20:38:58Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="89898" started-at="2020-07-31T20:56:41Z" finished-at="2020-07-31T20:58:11Z">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-07-31T17:44:55Z" name="Default suite" finished-at="2020-07-31T17:47:24Z" duration-ms="148763">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="33070" started-at="2020-07-31T19:35:40Z" finished-at="2020-07-31T19:36:13Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="72339" started-at="2020-07-31T18:55:51Z" finished-at="2020-07-31T18:57:03Z">
-=======
-  <suite started-at="2020-07-31T07:20:10Z" name="Default suite" finished-at="2020-07-31T07:22:05Z" duration-ms="115415">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+  <suite started-at="2020-08-03T04:52:38Z" name="Default suite" finished-at="2020-08-03T04:52:56Z" duration-ms="17425">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-08-01T07:22:15Z" name="Default test" finished-at="2020-08-01T07:25:13Z" duration-ms="177907">
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados@428640fa]" started-at="2020-08-01T01:22:15Z" name="beforeClass" finished-at="2020-08-01T01:22:35Z" duration-ms="20087" status="PASS">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="97994" started-at="2020-07-31T22:29:13Z" finished-at="2020-07-31T22:30:51Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="88086" started-at="2020-07-31T20:37:30Z" finished-at="2020-07-31T20:38:58Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="89898" started-at="2020-07-31T20:56:41Z" finished-at="2020-07-31T20:58:11Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCreditoEditar">
-<<<<<<< HEAD
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16571" started-at="2020-07-31T19:29:13Z" finished-at="2020-07-31T19:29:29Z">
-=======
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="beforeClass" is-config="true" duration-ms="16235" started-at="2020-07-31T17:56:41Z" finished-at="2020-07-31T17:56:57Z">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-07-31T17:44:55Z" name="Default test" finished-at="2020-07-31T17:47:24Z" duration-ms="148763">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="33070" started-at="2020-07-31T19:35:40Z" finished-at="2020-07-31T19:36:13Z">
-      <class name="com.timp.test.BRB.BRBAcessar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.BRBAcessar@341b80b2]" name="beforeClass" is-config="true" duration-ms="11273" started-at="2020-07-31T13:35:40Z" finished-at="2020-07-31T13:35:51Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="72339" started-at="2020-07-31T18:55:51Z" finished-at="2020-07-31T18:57:03Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
-<<<<<<< HEAD
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="12309" started-at="2020-07-31T14:37:30Z" finished-at="2020-07-31T14:37:43Z">
-=======
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="17760" started-at="2020-07-31T15:55:51Z" finished-at="2020-07-31T15:56:09Z">
-=======
-    <test started-at="2020-07-31T07:20:10Z" name="Default test" finished-at="2020-07-31T07:22:05Z" duration-ms="115415">
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:44:55Z" name="beforeClass" finished-at="2020-07-31T11:45:22Z" duration-ms="26976" status="PASS">
-=======
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:10Z" name="beforeClass" finished-at="2020-07-31T01:20:25Z" duration-ms="14507" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+    <test started-at="2020-08-03T04:52:38Z" name="Default test" finished-at="2020-08-03T04:52:56Z" duration-ms="17425">
+      <class name="com.timp.test.BRB.ReordenarColuna">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@4b0d79fc]" started-at="2020-08-02T22:52:38Z" name="beforeClass" finished-at="2020-08-02T22:52:56Z" duration-ms="17338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados@428640fa]" started-at="2020-08-01T01:22:35Z" name="login" finished-at="2020-08-01T01:22:46Z" duration-ms="10978" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="login" duration-ms="9184" started-at="2020-07-31T19:29:29Z" finished-at="2020-07-31T19:29:39Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="login" duration-ms="7681" started-at="2020-07-31T14:37:43Z" finished-at="2020-07-31T14:37:50Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="login" duration-ms="9680" started-at="2020-07-31T17:56:57Z" finished-at="2020-07-31T17:57:07Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:45:22Z" name="login" finished-at="2020-07-31T11:45:37Z" duration-ms="15491" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.BRBAcessar@341b80b2]" name="login" duration-ms="6612" started-at="2020-07-31T13:35:51Z" finished-at="2020-07-31T13:35:58Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="login" duration-ms="9135" started-at="2020-07-31T15:56:09Z" finished-at="2020-07-31T15:56:18Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:25Z" name="login" finished-at="2020-07-31T01:20:33Z" duration-ms="8859" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@4b0d79fc]" started-at="2020-08-02T22:52:56Z" name="login" finished-at="2020-08-02T22:52:56Z" duration-ms="21" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:222)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:74)
+	at com.sap.timp.pageObjectModel.ADM.LoginTC.login(LoginTC.java:31)
+	at com.timp.test.BRB.ReordenarColuna.login(ReordenarColuna.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados@428640fa]" started-at="2020-08-01T01:22:46Z" name="acessarMDR" finished-at="2020-08-01T01:23:22Z" duration-ms="35506" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="acessarMDR" duration-ms="11525" started-at="2020-07-31T19:29:39Z" finished-at="2020-07-31T19:29:50Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="acessarMDR" duration-ms="28314" started-at="2020-07-31T14:37:50Z" finished-at="2020-07-31T14:38:19Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="acessarMDR" duration-ms="10913" started-at="2020-07-31T17:57:07Z" finished-at="2020-07-31T17:57:18Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:45:37Z" name="acessarMDR" finished-at="2020-07-31T11:46:33Z" duration-ms="56051" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.BRBAcessar@341b80b2]" name="brbEntrar" duration-ms="14938" started-at="2020-07-31T13:35:58Z" finished-at="2020-07-31T13:36:13Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="acessarMDR" duration-ms="11309" started-at="2020-07-31T15:56:18Z" finished-at="2020-07-31T15:56:29Z">
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:20:33Z" name="acessarMDR" finished-at="2020-07-31T01:21:08Z" duration-ms="34502" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@4b0d79fc]" started-at="2020-08-02T22:52:56Z" name="brbEntrar" finished-at="2020-08-02T22:52:56Z" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:222)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+	at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:67)
+	at com.sap.timp.pageObjectModel.BRB.AcessarBrbPO.acessar(AcessarBrbPO.java:38)
+	at com.timp.test.BRB.ReordenarColuna.brbEntrar(ReordenarColuna.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method signature="cenariosCorrecaoFiltros()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados@428640fa]" started-at="2020-08-01T01:23:22Z" name="cenariosCorrecaoFiltros" finished-at="2020-08-01T01:25:13Z" duration-ms="111294" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="editar" duration-ms="60674" started-at="2020-07-31T19:29:50Z" finished-at="2020-07-31T19:30:51Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="Visualizar" duration-ms="39770" started-at="2020-07-31T14:38:19Z" finished-at="2020-07-31T14:38:58Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCreditoEditar@8e0379d]" name="editar" duration-ms="53039" started-at="2020-07-31T17:57:18Z" finished-at="2020-07-31T17:58:11Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="cenariosCorrecaoVisualizar()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:46:33Z" name="cenariosCorrecaoVisualizar" finished-at="2020-07-31T11:47:24Z" duration-ms="50195" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar@8e0379d]" name="Visualizar" duration-ms="34110" started-at="2020-07-31T15:56:29Z" finished-at="2020-07-31T15:57:03Z">
-=======
-        <test-method signature="cenariosCorrecaoVisualizar()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:21:08Z" name="cenariosCorrecaoVisualizar" finished-at="2020-07-31T01:22:05Z" duration-ms="57488" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="reordenar()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@4b0d79fc]" started-at="2020-08-02T22:52:56Z" name="reordenar" finished-at="2020-08-02T22:52:56Z" duration-ms="7" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:222)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+	at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:67)
+	at com.sap.timp.pageObjectModel.BRB.ReordenarColunarPO.reordenar(ReordenarColunarPO.java:47)
+	at com.timp.test.BRB.ReordenarColuna.reordenar(ReordenarColuna.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- cenariosCorrecaoFiltros -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados@428640fa]" started-at="2020-08-01T01:25:13Z" name="afterClass" finished-at="2020-08-01T01:25:13Z" duration-ms="1" status="PASS">
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-        </test-method> <!-- editar -->
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCreditoEditar -->
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-        </test-method> <!-- Visualizar -->
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
-<<<<<<< HEAD
-=======
-=======
-        </test-method> <!-- cenariosCorrecaoVisualizar -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T11:47:24Z" name="afterClass" finished-at="2020-07-31T11:47:24Z" duration-ms="0" status="PASS">
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar@4c1909a3]" started-at="2020-07-31T01:22:05Z" name="afterClass" finished-at="2020-07-31T01:22:05Z" duration-ms="1" status="PASS">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+        </test-method> <!-- reordenar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@4b0d79fc]" started-at="2020-08-02T22:52:56Z" name="afterClass" finished-at="2020-08-02T22:52:56Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.BRBAcessar -->
-=======
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.ReordenarColuna -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

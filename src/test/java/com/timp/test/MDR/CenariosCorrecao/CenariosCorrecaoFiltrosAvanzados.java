@@ -61,6 +61,6 @@ public class CenariosCorrecaoFiltrosAvanzados extends TestBaseKathy{
 		for (int i = 0; i < sucesso4.size(); i++) {
 			assertTrue(sucesso4.get(i), "The results in the filter user modified aren't equal");
 		}
-    	//cenariosCorrecaoFiltrosAvanzadosPO.cenariosCorrecaoFiltros();
+    	
     }
 }

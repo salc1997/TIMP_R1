@@ -114,9 +114,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseKathy{
 		filtro.sendKeys(Keys.ENTER);
 		attributeToBeXpath("//*[@id=\"tax\"]/div/div[2]/div", "class", "base-select-wrapper");
 		sleep(8000);
-		//attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
-		//sleep(2000);
-		
+	
 		comboTributo.click();
 		comboTributo.sendKeys(data.get(0));
 		sleep(1000);
@@ -222,86 +220,6 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseKathy{
 		
 	}
 	
-	public ArrayList<Boolean> dateCreation(){
-		sleep(10000);
-		limpiar.sendKeys(Keys.ENTER);
-	
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
-		sleep(2000);
-		
-		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
-		
-		int j=1;
-		ArrayList<String> data = new ArrayList<String>();
-		
-		for (int i = 1; i < rows; i++) {
-
-			String dateCreation ="";
-			dateCreation = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+ i +"]/div[10]/div")).getText() + " - " + driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+ i +"]/div[10]/div")).getText();
-			
-			if (data.size()==0) {
-				
-				if (dateCreation.isEmpty()==false) {					
-					data.add(dateCreation);
-				}
-			}
-			
-			j = j+1;
-		}
-			
-		while (data.size() == 0) {		
-			sleep(7000);
-			siguiente.sendKeys(Keys.ENTER);
-			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-			sleep(2000);
-			j=1;
-			
-			rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
-			
-			for (int i = 1; i < rows; i++) {
-
-				String dateCreation ="";
-				dateCreation = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+ i +"]/div[10]/div")).getText() + " - " + driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+ i +"]/div[10]/div")).getText();
-				
-				if (data.size()==0) {
-					
-					if (dateCreation.isEmpty()==false) {					
-						data.add(dateCreation);
-					}
-				}
-				
-				j = j+1;
-			}
-						
-		}
-		
-		sleep(7000);
-		
-		fechaCreacion.click();
-		sleep(3000);
-		waitExpectXpath("/html/body/div[4]/div[2]");
-		waitExpectElement(btnAplicar);
-		diaSe.sendKeys(Keys.ENTER);	
-		btnAplicar.click();
-		//opcao1.click();
-		//cuerpo.click();
-		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
-		sleep(3000);
-		
-		
-		ArrayList<Boolean> sucesso3 = new ArrayList<Boolean>();
-		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
-		String dateCreation = "";
-		j=1;
-		for (int i = 1; i < rows; i++) {
-			dateCreation = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[10]/div")).getText() + " - " + driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[10]/div")).getText();
-			
-			sucesso3.add(data.get(0).equals(dateCreation));
-		}
-		
-		return sucesso3;		
-	}
 	
 	public ArrayList<Boolean> usuarioModificado(){
 		sleep(10000);

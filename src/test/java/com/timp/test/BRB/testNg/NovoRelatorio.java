@@ -8,7 +8,9 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseParalelo2;
@@ -17,7 +19,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.prueba.NovoRelatorioPO;
 
-public class NovoRelatorio extends TestBaseParalelo2{
+public class NovoRelatorio extends TestBaseSteven{
 	
 	LoginTC loginTc;
 	AcessarBrbPO accesarBrbPO;
@@ -32,8 +34,8 @@ public class NovoRelatorio extends TestBaseParalelo2{
 	}
 	
 	@AfterClass
-	public void afterClass(){
-		//driver.close();
+	public void afterClass() {
+		quit();
 	}
 	
 	@Test(priority = 0)
@@ -50,7 +52,6 @@ public class NovoRelatorio extends TestBaseParalelo2{
 	
 		
 	}
-
 
 	@Test(priority=2)
 	public void novoRelatorio() {
@@ -77,7 +78,7 @@ public class NovoRelatorio extends TestBaseParalelo2{
 			assertTrue(sucesso.get(i), "The Colunms weren't added");
 		}
 		
-
+		quit();
 
 	}
 		

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Testes de BRB]" parallel="tests">
+  <test name="Novo Relatório(failed)" parallel="tests">
+    <classes>
+      <class name="com.timp.test.BRB.testNg.BRBAcessar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
+      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
+        <methods>
+          <include name="colunas"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="novoRelatorio"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
+    </classes>
+  </test> <!-- Novo Relatório(failed) -->
+</suite> <!-- Failed suite [Testes de BRB] -->

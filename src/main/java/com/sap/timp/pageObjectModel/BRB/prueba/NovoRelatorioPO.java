@@ -313,6 +313,9 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		sucesso.add(aliquotaC.isDisplayed());
 		sucesso.add(valorICMSC.isDisplayed());
 		
+		
+
+		
 		return sucesso;
 		
 		

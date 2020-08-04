@@ -14,7 +14,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class BRBAcessar extends TestBaseParalelo2 {
+public class BRBAcessar extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
@@ -28,10 +28,9 @@ public class BRBAcessar extends TestBaseParalelo2 {
 	}
 	
 	@AfterClass
-	public void afterClass(){
-		//driver.close();
+	public void afterClass() {
+		quit();
 	}
-
 	
 	@Test(priority = 1)
 	public void login() {
@@ -46,7 +45,8 @@ public class BRBAcessar extends TestBaseParalelo2 {
 		boolean sucesso = acessarBrbPO.acessar();
 		
 		assertTrue(sucesso, semAcesso);
-	
+		
+		quit();
 	
 	}
 

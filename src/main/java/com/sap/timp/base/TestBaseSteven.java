@@ -49,9 +49,12 @@ public class TestBaseSteven{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(td1);
-
 		return driver;
 
+	}
+	
+	public void quit() {
+		driver.close();
 	}
 	
 	public void sleep(int miliSeconds) {
@@ -174,6 +177,18 @@ public class TestBaseSteven{
 		
 		wait.until(ExpectedConditions.attributeToBeNotEmpty(driver.findElement(By.xpath(xpath)), attribute));
 	}
+	
+	public void visibilityOfElementXpath(String xpath) {
+		
+		boolean isPresent = driver.findElement(By.xpath(xpath)).isDisplayed();
+		System.err.println(isPresent);
+		while (isPresent==false) {
+			sleep(3000);
+			isPresent = driver.findElement(By.xpath(xpath)).isDisplayed();
+		}
+		
+	}
+
 	
 	
 	

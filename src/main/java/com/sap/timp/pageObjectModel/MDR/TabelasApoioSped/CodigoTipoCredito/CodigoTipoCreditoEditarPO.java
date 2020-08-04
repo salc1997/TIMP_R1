@@ -1,18 +1,13 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
+public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -63,12 +58,27 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 	public WebElement ;
 	*/
 	
-	public CodigoTipoCreditoCriarPO() {
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
+	public WebElement opcao;
+	
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
+	public WebElement engrenagem;
+	
+	@FindBy(xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
+	public WebElement editar;
+	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]")
+	public WebElement visualizar;
+	
+	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
+	public WebElement data;
+	
+	public CodigoTipoCreditoEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void criar() {
+	public void editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -91,23 +101,23 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 			
 		String id = idR.getText();
 		System.out.println(id);
+		//seleciona a opcao
+		opcao.click();
 		
-		novo.click();
+		engrenagem.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tributo.click();
-		sleep(1000);
-		tributoO.click(); 
-		sleep(1000);
-		codigo.sendKeys("123");
-		sleep(1000);
-		descricao.sendKeys("Teste Código Tipo Crédito");
-		sleep(1000);
-		
-		String data= fechaActual();
-		dataVigencia.sendKeys(data);
+		editar.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//edita a parte de descriçao
+		waitExpectElement(dataVigencia);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		dataVigencia.clear();
+		dataVigencia.sendKeys("06/08/2020");
 		
 		sleep(2000);
 		gravar.click();
@@ -119,6 +129,7 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -126,33 +137,25 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 
 		siguiente.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		idC.click();
 		dobleClickElement(idC);
 		sleep(2000);
 		
 		String idB = idR.getText();
 		sleep(2000);
-		System.out.println(id);
-		System.out.println(idB);
+		//System.out.println(id);
+		//System.out.println(idB);
+		opcao.click();
 		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
+		engrenagem.click();
 		
-		boolean sucesso = false;
+		visualizar.click();
 		
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		System.out.println(sucesso);
-		
-		
-		
+		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		System.out.println(sucesso);	
 		
 		
 		
@@ -161,6 +164,7 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 		
 		
 	}
+	
 	
 
 }

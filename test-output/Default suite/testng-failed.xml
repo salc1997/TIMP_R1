@@ -3,37 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
-=======
-      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFEditar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar">
         <methods>
-          <include name="colunas"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="Excluir"/>
-=======
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
-          <include name="Editar"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
-=======
-      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFEditar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,84 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="3" passed="2">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="6" passed="6">
-=======
-<testng-results skipped="0" failed="0" total="3" passed="3">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="72334" started-at="2020-08-03T21:26:30Z" finished-at="2020-08-03T21:27:42Z">
-=======
-<<<<<<< HEAD
-  <suite name="Suite de testes" duration-ms="173281" started-at="2020-08-03T17:06:37Z" finished-at="2020-08-03T17:09:30Z">
-=======
-  <suite name="Default suite" duration-ms="69819" started-at="2020-08-03T20:15:52Z" finished-at="2020-08-03T20:17:02Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="52198" started-at="2020-08-04T16:46:08Z" finished-at="2020-08-04T16:47:00Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="72334" started-at="2020-08-03T21:26:30Z" finished-at="2020-08-03T21:27:42Z">
-      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir@8e0379d]" name="beforeClass" is-config="true" duration-ms="15781" started-at="2020-08-03T18:26:30Z" finished-at="2020-08-03T18:26:45Z">
-=======
-<<<<<<< HEAD
-    <test name="FunctionalTests" duration-ms="173281" started-at="2020-08-03T17:06:37Z" finished-at="2020-08-03T17:09:30Z">
-      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="beforeClass" is-config="true" duration-ms="36265" started-at="2020-08-03T11:06:37Z" finished-at="2020-08-03T11:07:13Z">
-=======
-    <test name="Default test" duration-ms="69819" started-at="2020-08-03T20:15:52Z" finished-at="2020-08-03T20:17:02Z">
-      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="21258" started-at="2020-08-03T17:15:52Z" finished-at="2020-08-03T17:16:13Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test name="Default test" duration-ms="52198" started-at="2020-08-04T16:46:08Z" finished-at="2020-08-04T16:47:00Z">
+      <class name="com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar@8e0379d]" name="beforeClass" is-config="true" duration-ms="18159" started-at="2020-08-04T13:46:08Z" finished-at="2020-08-04T13:46:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir@8e0379d]" name="login" duration-ms="9261" started-at="2020-08-03T18:26:45Z" finished-at="2020-08-03T18:26:55Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="login" duration-ms="13024" started-at="2020-08-03T11:07:13Z" finished-at="2020-08-03T11:07:26Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="login" duration-ms="9809" started-at="2020-08-03T17:16:13Z" finished-at="2020-08-03T17:16:23Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar@8e0379d]" name="login" duration-ms="9842" started-at="2020-08-04T13:46:26Z" finished-at="2020-08-04T13:46:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir@8e0379d]" name="acessarMDR" duration-ms="11368" started-at="2020-08-03T18:26:55Z" finished-at="2020-08-03T18:27:06Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="brbEntrar" duration-ms="24180" started-at="2020-08-03T11:07:26Z" finished-at="2020-08-03T11:07:51Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="acessarMDR" duration-ms="11516" started-at="2020-08-03T17:16:23Z" finished-at="2020-08-03T17:16:35Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar@8e0379d]" name="acessarMDR" duration-ms="11251" started-at="2020-08-04T13:46:36Z" finished-at="2020-08-04T13:46:47Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="novoRelatorio" duration-ms="46227" started-at="2020-08-03T11:07:51Z" finished-at="2020-08-03T11:08:37Z">
-=======
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="Excluir()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir@8e0379d]" name="Excluir" duration-ms="35894" started-at="2020-08-03T18:27:06Z" finished-at="2020-08-03T18:27:42Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar@8e0379d]" name="criar" duration-ms="12911" started-at="2020-08-04T13:46:47Z" finished-at="2020-08-04T13:47:00Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[O registro não foi eliminado com sucesso expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Id"]"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 05b19170574ffbdd74522f5350107402
+*** Element info: {Using=xpath, value=//span[text()="Id"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: O registro não foi eliminado com sucesso expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir.Excluir(ContratoIOFExcluir.java:50)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Id"]"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 05b19170574ffbdd74522f5350107402
+*** Element info: {Using=xpath, value=//span[text()="Id"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.TabelasDeApoioSped.TabelaDeApoioDoSped455CriarPO.criar(TabelaDeApoioDoSped455CriarPO.java:75)
+	at com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar.criar(TabelaDeApoioDoSped455Criar.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -105,53 +87,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-=======
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar@8e0379d]" name="Visualizar" duration-ms="27193" started-at="2020-08-03T17:16:35Z" finished-at="2020-08-03T17:17:02Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- Excluir -->
-      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir -->
-=======
-<<<<<<< HEAD
-        </test-method> <!-- novoRelatorio -->
-        <test-method status="PASS" signature="colunas()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="colunas" duration-ms="53572" started-at="2020-08-03T11:08:37Z" finished-at="2020-08-03T11:09:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- colunas -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@5419f379]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-08-03T11:09:30Z" finished-at="2020-08-03T11:09:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
-      <class name="com.timp.test.BRB.testNg.BRBAcessar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.testNg.BRBAcessar@7823a2f9]" name="beforeClass" is-config="true" duration-ms="35626" started-at="2020-08-03T11:06:37Z" finished-at="2020-08-03T11:07:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.testNg.BRBAcessar@7823a2f9]" name="login" duration-ms="13655" started-at="2020-08-03T11:07:13Z" finished-at="2020-08-03T11:07:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.testNg.BRBAcessar@7823a2f9]" name="brbEntrar" duration-ms="24203" started-at="2020-08-03T11:07:26Z" finished-at="2020-08-03T11:07:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.testNg.BRBAcessar@7823a2f9]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-08-03T11:07:51Z" finished-at="2020-08-03T11:07:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
-    </test> <!-- FunctionalTests -->
-  </suite> <!-- Suite de testes -->
-=======
-        </test-method> <!-- Visualizar -->
-      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        </test-method> <!-- criar -->
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioSped.TabelaDeApoioDoSped455Criar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 </testng-results>

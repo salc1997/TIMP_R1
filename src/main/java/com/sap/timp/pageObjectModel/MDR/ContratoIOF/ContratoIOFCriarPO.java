@@ -75,7 +75,10 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath ="//div[@id=\"00\"]/div/label/span")
+	//@FindBy(xpath ="//div[@id=\"00\"]/div/label/span")
+	//@FindBy(xpath="//div[@id=\"14\"]/div/label/span")
+	//@FindBy(xpath = "//div[@id=\"0\"]/div/label/span")
+	@FindBy(xpath = "//div[@id=\"05\"]/div/label/span")
 	public WebElement opcaotributo;
 	
 	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[2]/div/div[3]/div/span[1]")
@@ -190,7 +193,7 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 		opcaofilial.sendKeys(Keys.ESCAPE);
 	
 		
-	//	attributeToBeXpath("//div[@id=\"tax\"]/div/div/div/div[2]", "class", "new-tag");
+		attributeToBeXpath("//div[@id=\"tax\"]/div/div/div/div[2]", "class", "new-tag");
 		
 		tributo.click();
 		opcaotributo.click();

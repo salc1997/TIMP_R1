@@ -1,24 +1,22 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
+public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
+	
+	
+
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
 	
-	@FindBy(xpath = "//span[text()=\"4.3.6 Tabela Código de Tipo de Crédito\"]")
-	public WebElement tipoCredito;
+	@FindBy(xpath = "//span[text()=\"5.2 Informações Adicionais - Valores Declaratórios\"]")
+	public WebElement informacoesadicionais;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
@@ -29,21 +27,18 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")
 	public WebElement idR;
 	
-	@FindBy(xpath = "//button/span[text()=\"Novo Código de Tipo de Crédito\"]")
-	public WebElement novo;
+	@FindBy(xpath = "//span[text()=\"Novo Valor Declaratório\"]")
+	public WebElement novovalor;
 	
 	
-	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
-	public WebElement tributo;
-	@FindBy(xpath = "//li[text()=\"ICMS\" and @id]")
-	public WebElement tributoO;
-	@FindBy(xpath = "//div[@id=\"creditTypeCode\"]/div/div/input")
-	public WebElement codigo;
-	@FindBy(xpath = "//div[@id=\"description\"]/div/div/input")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
+	public WebElement codigodevalores;
+	
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Informação Adicional\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//div[@id=\"validityFrom\"]/div/div/input")
-	public WebElement dataVigencia;
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -63,7 +58,7 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 	public WebElement ;
 	*/
 	
-	public CodigoTipoCreditoCriarPO() {
+	public InformaçoesAdicionaisCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -72,7 +67,7 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
-		tipoCredito.click();
+		informacoesadicionais.click();
 		sleep(2000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -92,22 +87,23 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 		String id = idR.getText();
 		System.out.println(id);
 		
-		novo.click();
+		sleep(2000);
+		
+		novovalor.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tributo.click();
-		sleep(1000);
-		tributoO.click(); 
-		sleep(1000);
-		codigo.sendKeys("124");
-		sleep(1000);
-		descricao.sendKeys("Teste Código Tipo Crédito");
-		sleep(1000);
+		codigodevalores.sendKeys("SP00002");
+		codigodevalores.sendKeys(Keys.ENTER);
 		
-		String data= fechaActual();
-		dataVigencia.sendKeys(data);
+		descricao.sendKeys("Teste");
+		
+		//data atual
+		String data = fechaActual();
+		
+		datavigencia.sendKeys(data);
+		
 		
 		sleep(2000);
 		gravar.click();
@@ -161,6 +157,11 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 		
 		
 	}
+		
+	
+	
+	
+	
 	
 
 }

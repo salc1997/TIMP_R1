@@ -2,23 +2,60 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="76204" started-at="2020-08-05T17:18:05Z" finished-at="2020-08-05T17:19:21Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="66391" started-at="2020-08-05T15:46:17Z" finished-at="2020-08-05T15:47:23Z">
+=======
+  <suite name="Default suite" duration-ms="131571" started-at="2020-08-05T00:18:26Z" finished-at="2020-08-05T00:20:37Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="76204" started-at="2020-08-05T17:18:05Z" finished-at="2020-08-05T17:19:21Z">
       <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="beforeClass" is-config="true" duration-ms="10666" started-at="2020-08-05T11:18:05Z" finished-at="2020-08-05T11:18:16Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="66391" started-at="2020-08-05T15:46:17Z" finished-at="2020-08-05T15:47:23Z">
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="17587" started-at="2020-08-05T12:46:17Z" finished-at="2020-08-05T12:46:35Z">
+=======
+    <test name="Default test" duration-ms="131571" started-at="2020-08-05T00:18:26Z" finished-at="2020-08-05T00:20:37Z">
+      <class name="com.timp.test.MDR.TEST.AntecipacaoEditar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="beforeClass" is-config="true" duration-ms="10466" started-at="2020-08-04T18:18:26Z" finished-at="2020-08-04T18:18:36Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="login" duration-ms="6125" started-at="2020-08-05T11:18:16Z" finished-at="2020-08-05T11:18:22Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="login" duration-ms="9926" started-at="2020-08-05T12:46:35Z" finished-at="2020-08-05T12:46:44Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="login" duration-ms="7100" started-at="2020-08-04T18:18:36Z" finished-at="2020-08-04T18:18:43Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="acessarMDR" duration-ms="23533" started-at="2020-08-05T11:18:22Z" finished-at="2020-08-05T11:18:45Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="acessarMDR" duration-ms="11133" started-at="2020-08-05T12:46:44Z" finished-at="2020-08-05T12:46:56Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="acessarMDR" duration-ms="26124" started-at="2020-08-04T18:18:43Z" finished-at="2020-08-04T18:19:09Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="visualizar()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="visualizar" duration-ms="35864" started-at="2020-08-05T11:18:45Z" finished-at="2020-08-05T11:19:21Z">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
@@ -85,10 +122,26 @@ Session ID: a8a2dffb41eec946d9cc1d5d9c07a823
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="criar" duration-ms="27717" started-at="2020-08-05T12:46:56Z" finished-at="2020-08-05T12:47:23Z">
+=======
+        <test-method status="PASS" signature="visualizar()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="visualizar" duration-ms="87868" started-at="2020-08-04T18:19:09Z" finished-at="2020-08-04T18:20:37Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criar -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar -->
+=======
         </test-method> <!-- visualizar -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEditar -->
+=======
+      </class> <!-- com.timp.test.MDR.TEST.AntecipacaoEditar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

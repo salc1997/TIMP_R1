@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.TEST.AntecipacaoCriar">
+      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar">
         <methods>
-          <include name="criar"/>
           <include name="beforeClass"/>
+          <include name="visualizar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TEST.AntecipacaoCriar -->
+      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

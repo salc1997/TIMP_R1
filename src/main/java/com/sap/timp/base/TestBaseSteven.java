@@ -232,10 +232,49 @@ public class TestBaseSteven {
 
 	}
 
+	public void idInserir3(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR", idRegistro);
+
+	}
+
+	public String idObter3() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir4(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR", idRegistro);
+
+	}
+
+	public String idObter4() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
 	public void quit() {
 		driver.close();
 	}
-
 
 	// BRB
 	public String elementosDiferentes = "Os elementos não são iguais";

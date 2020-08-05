@@ -31,18 +31,49 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">131.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">76.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.timp.test.MDR.Antecipacao.AntecipacaoEditar</td><td><a href="#m1"><b>visualizar</b>  </a></td><td class="numi">1</td><td>1596647925823</td><td class="numi">35864</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">com.timp.test.MDR.TEST.AntecipacaoEditar</td><td><a href="#m1"><b>acessarMDR</b>  </a></td><td class="numi">1</td><td>1596586723623</td><td class="numi">26124</td></tr><tr class="passedodd"><td><a href="#m2"><b>login</b>  </a></td><td class="numi">1</td><td>1596586716522</td><td class="numi">7100</td></tr><tr class="passedodd"><td><a href="#m3"><b>visualizar</b>  </a></td><td class="numi">1</td><td>1596586749748</td><td class="numi">87868</td></tr>
+<tr class="passedodd"><td rowspan="2">com.timp.test.MDR.Antecipacao.AntecipacaoEditar</td><td><a href="#m2"><b>acessarMDR</b>  </a></td><td class="numi">1</td><td>1596647902289</td><td class="numi">23533</td></tr><tr class="passedodd"><td><a href="#m3"><b>login</b>  </a></td><td class="numi">1</td><td>1596647896162</td><td class="numi">6125</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.timp.test.MDR.TEST.AntecipacaoEditar:login</h2>
+<h2 id="m1">com.timp.test.MDR.Antecipacao.AntecipacaoEditar:visualizar</h2>
+<div style="padding-left:3em">
+<p>stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LITOSOLER&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a8a2dffb41eec946d9cc1d5d9c07a823</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:878)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:872)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at com.sap.timp.base.TestBaseSteven.attributeToBeXpath(TestBaseSteven.java:103)
+<br/>at com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoEditarPO.editar(AntecipacaoEditarPO.java:77)
+<br/>at com.timp.test.MDR.Antecipacao.AntecipacaoEditar.visualizar(AntecipacaoEditar.java:53)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.timp.test.MDR.TEST.AntecipacaoEditar:visualizar</h2>
+<h2 id="m2">com.timp.test.MDR.Antecipacao.AntecipacaoEditar:login</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.timp.test.MDR.TEST.AntecipacaoEditar:acessarMDR</h2>
+<h2 id="m3">com.timp.test.MDR.Antecipacao.AntecipacaoEditar:acessarMDR</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

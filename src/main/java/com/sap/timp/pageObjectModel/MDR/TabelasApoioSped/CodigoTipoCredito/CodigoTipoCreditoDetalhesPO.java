@@ -1,18 +1,13 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
+public class CodigoTipoCreditoDetalhesPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -63,18 +58,31 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 	public WebElement ;
 	*/
 	
-	public CodigoTipoCreditoCriarPO() {
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
+	public WebElement opcao;
+	
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
+	public WebElement engrenagem;
+	
+	@FindBy (xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[1]")
+	public WebElement detalhes;
+	
+	
+	public CodigoTipoCreditoDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void criar() {
+	public String detalhes() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
 		tipoCredito.click();
 		sleep(2000);
 
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -90,77 +98,19 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 		dobleClickElement(idC);
 			
 		String id = idR.getText();
-		System.out.println(id);
-		
-		novo.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		tributo.click();
-		sleep(1000);
-		tributoO.click(); 
-		sleep(1000);
-		codigo.sendKeys("123");
-		sleep(1000);
-		descricao.sendKeys("Teste Código Tipo Crédito");
-		sleep(1000);
-		
-		String data= fechaActual();
-		dataVigencia.sendKeys(data);
-		
-		sleep(2000);
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		sleep(2000);
-
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		biblioteca.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		
-		String idB = idR.getText();
-		sleep(2000);
-		System.out.println(id);
-		System.out.println(idB);
-		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		
-		boolean sucesso = false;
-		
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
-		
-		System.out.println(sucesso);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
+		//System.out.println(id);
 	
-
+		opcao.click();
+		
+		engrenagem.click();
+		
+		sleep(2000);
+		
+		detalhes.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String sucesso = driver.findElement(By.xpath("//*[@id=\"detail-name\"]")).getAttribute("class");
+		
+		return sucesso;
+	}
 }

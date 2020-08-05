@@ -1,18 +1,13 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
+public class CodigoTipoCreditoFiltrosAvançadosPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -63,12 +58,34 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 	public WebElement ;
 	*/
 	
-	public CodigoTipoCreditoCriarPO() {
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
+	public WebElement opcao;
+	
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
+	public WebElement engrenagem;
+	
+	@FindBy(xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
+	public WebElement editar;
+	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]")
+	public WebElement visualizar;
+	
+	@FindBy(xpath = "//*[@id=\"advanced-filters-btn\"]/span[2]")
+	public WebElement filtrosavancados;
+	
+	@FindBy(xpath = "//div[@id=\"select\"]/div[2]")
+	public WebElement opcaofiltrosavancados;
+	
+	@FindBy(xpath = "//li[@id][3]")
+	public WebElement tipofiltro;
+	
+	
+	public CodigoTipoCreditoFiltrosAvançadosPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void criar() {
+	public void filtros() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -78,89 +95,23 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		sleep(2000);
-		
-		idC.click();
-		sleep(1000);
-		
-		dobleClickElement(idC);
-			
-		String id = idR.getText();
-		System.out.println(id);
-		
-		novo.click();
+		filtrosavancados.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tributo.click();
-		sleep(1000);
-		tributoO.click(); 
-		sleep(1000);
-		codigo.sendKeys("123");
-		sleep(1000);
-		descricao.sendKeys("Teste Código Tipo Crédito");
-		sleep(1000);
+		opcaofiltrosavancados.click();
 		
-		String data= fechaActual();
-		dataVigencia.sendKeys(data);
-		
-		sleep(2000);
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		sleep(2000);
-
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		biblioteca.click();
+		tipofiltro.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		
-		String idB = idR.getText();
-		sleep(2000);
-		System.out.println(id);
-		System.out.println(idB);
-		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		
-		boolean sucesso = false;
-		
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
-		
-		System.out.println(sucesso);
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
 	}
+	
+	
 	
 
 }

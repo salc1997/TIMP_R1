@@ -60,7 +60,7 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		
 		*/
 		
-		String idRegistro = idObter();
+		String idRegistro = idObter1();
 		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);

@@ -109,6 +109,10 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
 	
+	
+	
+	
+	
 
 	public AntecipacaoCriarPO() {
 
@@ -141,20 +145,27 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		antecipacao.click();
 		
 		sleep(2000);
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		siguiente.click();
 		
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		Actions actions = new Actions(driver);
+	
+		
+		/*Actions actions = new Actions(driver);
 		idC.click();
 		sleep(1000);
 		actions.doubleClick(idC).perform();
-			
-		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[3]/div")).getText();
+		*/	
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
+		
+		
 		
 		novaAntecipacao.click();
 		sleep(2000);
@@ -192,6 +203,7 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		attributeToBeXpath("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
+		sleep(2000);
 		tipoTributo.click();
 		sleep(2000);
 		tipoTributoO.click();
@@ -261,11 +273,12 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
 		
-		actions.doubleClick(idC).perform();
-		
-		String id2 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[3]/div")).getText();
-		
+		//actions.doubleClick(idC).perform();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir1(id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

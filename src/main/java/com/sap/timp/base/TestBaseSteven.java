@@ -196,7 +196,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		id.put("idR", idRegistro);
+		id.put("idR1", idRegistro);
 
 	}
 
@@ -204,7 +204,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		long idRegistro = id.getLong("idR", 1);
+		long idRegistro = id.getLong("idR1", 1);
 
 		String idReturn = String.valueOf(idRegistro);
 
@@ -216,7 +216,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		id.put("idR", idRegistro);
+		id.put("idR2", idRegistro);
 
 	}
 
@@ -224,7 +224,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		long idRegistro = id.getLong("idR", 1);
+		long idRegistro = id.getLong("idR2", 1);
 
 		String idReturn = String.valueOf(idRegistro);
 
@@ -236,7 +236,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		id.put("idR", idRegistro);
+		id.put("idR3", idRegistro);
 
 	}
 
@@ -244,7 +244,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		long idRegistro = id.getLong("idR", 1);
+		long idRegistro = id.getLong("idR3", 1);
 
 		String idReturn = String.valueOf(idRegistro);
 
@@ -256,7 +256,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		id.put("idR", idRegistro);
+		id.put("idR4", idRegistro);
 
 	}
 
@@ -264,7 +264,7 @@ public class TestBaseSteven {
 
 		Preferences id = Preferences.userRoot();
 
-		long idRegistro = id.getLong("idR", 1);
+		long idRegistro = id.getLong("idR4", 1);
 
 		String idReturn = String.valueOf(idRegistro);
 

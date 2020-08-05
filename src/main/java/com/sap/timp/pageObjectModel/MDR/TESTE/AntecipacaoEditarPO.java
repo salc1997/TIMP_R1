@@ -59,9 +59,9 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		*/
-		
+		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter();
-		
+		//pesquisa esse id
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -10,7 +10,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.prefs.Preferences;
 
+import org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,17 +42,38 @@ public class TestBaseSteven{
 	public String senhaL = "Alltax20";
 	public int menuT = 12000;
 	
-
-
+	
+	
+	
 	public WebDriver initialization() {
 		
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(td1);
+		driver.get(tp1);
 		return driver;
 
+	}
+	
+	public void idInserir(String idRegistro) {
+		
+		Preferences id = Preferences.userRoot();
+		
+		id.put("idR", idRegistro );
+	
+	}
+	
+	public String idObter() {
+		
+		Preferences id = Preferences.userRoot();
+		
+		long idRegistro = id.getLong("idR", 1);
+		
+		String idReturn = String.valueOf(idRegistro);
+		
+		return idReturn;
+		
 	}
 	
 	public void quit() {

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoEditarPO;
+import com.sap.timp.pageObjectModel.MDR.TESTE.AntecipacaoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 

@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -78,7 +79,7 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		
+		/*
 		idC.click();
 		sleep(1000);
 		
@@ -88,6 +89,12 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		System.out.println(id);
 		
 		sleep(2000);
+		*/
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
 		
 		novovalor.click();
 		
@@ -125,6 +132,22 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir(id2);
+		int idD = Integer.valueOf(id);
+		int id2D = Integer.valueOf(id2);
+		
+		System.out.println(idD);
+		System.out.println(id2D);
+		
+		boolean sucesso = false;
+		if (idD < id2D) {
+			sucesso = true;
+		}
+		
+		/*
 		idC.click();
 		dobleClickElement(idC);
 		sleep(2000);
@@ -144,7 +167,7 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		}else {
 			sucesso = false;
 		}
-		
+		*/
 		System.out.println(sucesso);
 		
 		

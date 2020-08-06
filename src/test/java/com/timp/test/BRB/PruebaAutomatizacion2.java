@@ -8,7 +8,7 @@ import com.sap.timp.pageObjectModel.BRB.*;
 import com.timp.test.ADM.*;
 import com.timp.test.BRB.*;
 
-public class PruebaAutomatizacion extends TestBaseSteven{
+public class PruebaAutomatizacion2 extends TestBaseSteven{
 	LoginTest loginTest;
 	BRBAcessar brbAcessar;
 	paginacion paginacion;
@@ -45,7 +45,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
     	loginTest = new LoginTest();
 		loginTest.beforeClass();
 		loginTest.Login();
-		loginTest.afterClass();
+
 
 	}
     
@@ -57,7 +57,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
     	brbAcessar.beforeClass();
     	brbAcessar.login();
     	brbAcessar.brbEntrar();
-    	//brbAcessar.afterClass();
+
 
 	}
     
@@ -69,7 +69,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		paginacion.login();
 		paginacion.brbEntrar();
 		paginacion.paginacion();
-		//paginacion.afterClass();
+
 
 	}
     
@@ -81,7 +81,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		filtrosAvanaçados.login();
 		filtrosAvanaçados.brbEntrar();
 		filtrosAvanaçados.filtrosAvanzados();
-		//filtrosAvanaçados.afterClass();
+
 
 	}
     
@@ -93,11 +93,11 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		novoRelatirio.brbEntrar();
 		novoRelatirio.novoRelatorio();
 		novoRelatirio.colunas();
-		//novoRelatirio.afterClass();
+
 		
 	}
     
-   
+   /*
 
     @Test(priority = 5)
 	public void publicoYPrivado() {
@@ -107,7 +107,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		publicoYPrivado.login();
 		publicoYPrivado.brbEntrar();
 		publicoYPrivado.publicoYPRivado();
-		publicoYPrivado.afterClass();
+
 
 	}
     
@@ -120,7 +120,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		excluirColuna.brbEntrar();
 		excluirColuna.excluirColunaDragNDrop();
 		excluirColuna.excluirColunaOpcao();
-		excluirColuna.afterClass();
+
 
 	}
     
@@ -132,7 +132,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		editar.login();
 		editar.brbEntrar();
 		editar.editar();
-		editar.afterClass();
+
 
 	}
     
@@ -144,7 +144,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		reordenarColuna.login();
 		reordenarColuna.brbEntrar();
 		reordenarColuna.reordenar();
-		reordenarColuna.afterClass();
+
 
 	}
    
@@ -158,7 +158,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		filtros.filtrosEditor();
 		filtros.filtrosBiblioteca();
 		filtros.asignarValores();
-		filtros.afterClass();
+
 
 	}
     
@@ -169,7 +169,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
     	criarCopia.login();
 		criarCopia.brbEntrar();
 		criarCopia.criarCopia();
-		criarCopia.afterClass();
+
 	}
     
     @Test(priority = 11)
@@ -179,7 +179,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		ativarCorrecao.login();
 		ativarCorrecao.brbEntrar();
 		ativarCorrecao.ativarCorreccion();
-		ativarCorrecao.afterClass();
+
 	}
  
     @Test(priority = 12)
@@ -189,7 +189,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		ativarComentario.login();
 		ativarComentario.brbEntrar();
 		ativarComentario.ativarComentarios();
-		ativarComentario.afterClass();
+
 		
 	}
     
@@ -200,7 +200,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
     	renomearColuna.login();
 		renomearColuna.brbEntrar();
 		renomearColuna.renomearColuna();
-		renomearColuna.afterClass();
+
 	}
    
     @Test(priority = 14)
@@ -212,7 +212,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
     	formula.formulaColuna();
     	formula.formulaBoton();
     	formula.aplicar();
-    	formula.afterClass();
+
     	
     	
 	}
@@ -224,7 +224,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		agrupadoPeloCampo.login();
 		agrupadoPeloCampo.brbEntrar();
 		agrupadoPeloCampo.agrupadoPeloCampo();
-		agrupadoPeloCampo.afterClass();
+
 		
 	}
     
@@ -235,7 +235,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
     	campoOutput.login();
     	campoOutput.brbEntrar();
     	campoOutput.campoOutput();
-    	campoOutput.afterClass();
+
     	
     	
     	
@@ -249,7 +249,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		formatacaoEVariante.brbEntrar();
 		formatacaoEVariante.formatacaoEVariante();
 		formatacaoEVariante.excluirVariante();
-		formatacaoEVariante.afterClass();
+
 		
 		
 	}
@@ -262,7 +262,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		filtroColunas.brbEntrar();
 		filtroColunas.filtroConFerramenta1();
 		filtroColunas.filtroConFerramenta2();
-		filtroColunas.afterClass();
+
 	}
     
     @Test(priority = 19)
@@ -273,7 +273,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		gruposAvanzados.brbEntrar();
 		gruposAvanzados.gruposAvanzados();
 		gruposAvanzados.eliminarGrupos();
-		gruposAvanzados.afterClass();
+
 	}
     
     @Test(priority = 20)
@@ -284,7 +284,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		crescenteEDecrescente.login();
 		crescenteEDecrescente.brbEntrar();
 		crescenteEDecrescente.crescenteEDecrescente();
-		crescenteEDecrescente.afterClass();
+
 		
 		
 	}
@@ -297,7 +297,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		listaSuspensa.login();
 		listaSuspensa.brbEntrar();
 		listaSuspensa.listaSuspensa();
-		listaSuspensa.afterClass();
+
 		
 		
 	}
@@ -310,7 +310,6 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		comentarioLibre.login();
 		comentarioLibre.brbEntrar();
 		comentarioLibre.comentarioLibre();
-		comentarioLibre.afterClass();
 		
 		
 	}
@@ -323,7 +322,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		imprimir.login();
 		imprimir.brbEntrar();
 		imprimir.imprimir();
-		imprimir.afterClass();
+
 		
 		
 	}
@@ -338,7 +337,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		regras.login();
 		regras.brbEntrar();
 		regras.regras();
-		regras.afterClass();
+
 		
 		
 	}
@@ -351,8 +350,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		cabeçalho.login();
 		cabeçalho.brbEntrar();
 		cabeçalho.cabeçalho();
-		cabeçalho.afterClass();
-		
+
 		
 	}
     
@@ -365,7 +363,6 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		exportar.brbEntrar();
 		exportar.exportarCSV();
 		exportar.exportarXLSX();
-		exportar.afterClass();
 		
 		
 	}
@@ -380,7 +377,6 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		visualizar.login();
 		visualizar.brbEntrar();
 		visualizar.visualizar();
-		visualizar.afterClass();
 		
 		
 	}
@@ -405,7 +401,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
     
     
     
-    
+    */
     
     
     

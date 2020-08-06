@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AtividadeFiscal;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -46,6 +47,9 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]/ul/li[1]")
 	public WebElement atividadesO2;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
 	
 	public AtividadeEditarPO() {
 
@@ -74,15 +78,12 @@ public class AtividadeEditarPO extends TestBaseSteven{
 
 		sleep(2000);
 
-		siguiente.click();
-
+		String idRegistro = idObter2();
+		
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		Actions actions = new Actions(driver);
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
+		sleep(4000);
 		
 		menu.click();
 		sleep(1000);

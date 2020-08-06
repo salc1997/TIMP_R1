@@ -12,21 +12,9 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\" Antecipação\"]")
 	public WebElement antecipacao;
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div")
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
 	public WebElement menu;
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
-	public WebElement idC;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
-	public WebElement siguiente;
-	
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
-	
 	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
 	public WebElement excluir;
 	
@@ -52,18 +40,17 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 		antecipacao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		siguiente.click();
-		sleep(2000);
+		
+		String idRegistro = idObter1();
+		
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		String idR = id.getText();
+		sleep(4000);
 		
 		menu.click();
 		sleep(2000);
-		System.out.println(idR);
+
 		
 		excluir.click();
 		waitExpectElement(sim);
@@ -72,7 +59,7 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		pesquisar.sendKeys(idR);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

@@ -49,31 +49,19 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 
 		antecipacao.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[2]/div/div[5]");
-		/*siguiente.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-		
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		
-		*/
-		
 		String idRegistro = idObter1();
 		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectElement(siguiente);
 		sleep(4000);
 
-		
 		menu.click();
 		sleep(1000);
 		editar.click();
 
-		//invisibilityOfElement("//*[@id=\"container\"]/div[4]/div/div/div/img");
 		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
 		sleep(2000);
 
@@ -97,9 +85,6 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 
 		driver.navigate().refresh();
 
-		//invisibilityOfElement("//*[@id=\"container\"]/div[4]/div/div/div/img");
-
-		//waitExpectElement(campo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-select required");
 		waitExpectElement(campo);

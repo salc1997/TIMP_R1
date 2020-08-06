@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.GrupoAtividadeFiscal;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -35,6 +36,10 @@ public class GrupoAtividadeVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
 	public WebElement menu;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
+	
 	public GrupoAtividadeVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -56,21 +61,16 @@ public class GrupoAtividadeVisualizarPO extends TestBaseSteven{
 			atividadesO1.click();
 			sleep(2000);
 		}
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
 
-		siguiente.click();
-
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div/div/div/div/img");
-		sleep(2000);
-
-		Actions actions = new Actions(driver);
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
+		String idRegistro = idObter3();
+		
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		menu.click();
 		sleep(1000);

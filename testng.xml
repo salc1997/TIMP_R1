@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Testes de BRB" thread-count="4"  parallel="tests">
+<suite name="Testes de BRB" thread-count="4"  parallel="classes">
 <!--  -->
  <!-- <listeners>
 		<listener class-name="com.sap.mfa.base.MyTestReporter" />
@@ -8,15 +8,11 @@
 	<test name="Acessar BRB" preserve-order="true">
 	 
 		<classes>
-			<class name="com.timp.test.BRB.testNg.BRBAcessar"></class>
-
-		</classes>
-	
-	</test>
-	<test name="Novo Relatório" preserve-order="true">
-	 
-		<classes>
-			<class name="com.timp.test.BRB.testNg.NovoRelatorio"></class>
+			<class name="com.timp.test.ADM.LoginTest"></class>
+			<class name="com.timp.test.BRB.BRBAcessar"></class>
+			<class name="com.timp.test.BRB.paginacion"></class>
+			<class name="com.timp.test.BRB.FiltrosAvançados"></class>
+			<class name="com.timp.test.BRB.NovoRelatorio"></class>
 
 		</classes>
 	

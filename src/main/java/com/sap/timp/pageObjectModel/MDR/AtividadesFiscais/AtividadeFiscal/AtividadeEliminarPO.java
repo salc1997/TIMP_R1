@@ -80,18 +80,19 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 		siguiente.click();
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		waitExpectElement(menu);
+
 		sleep(2000);
 
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
+		String idRegistro = idObter2();
 		
-		String id = idR.getText();
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
 		menu.click();
 		sleep(2000);
-		System.out.println(id);
+
 		
 		excluir.click();
 		waitExpectElement(sim);
@@ -102,7 +103,7 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li[1]/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		pesquisar.sendKeys(id);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

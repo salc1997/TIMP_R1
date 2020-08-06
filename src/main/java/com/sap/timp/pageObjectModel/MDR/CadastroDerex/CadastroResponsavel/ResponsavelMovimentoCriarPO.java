@@ -118,14 +118,10 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		idC.click();
-		sleep(1000);
-		
-		dobleClickElement(idC);
-			
-		String id = idR.getText();
-		System.out.println(id);
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		sleep(2000);
 		
 		novo.click();
 		
@@ -195,11 +191,11 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idB = idR.getText();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir4(idB);
+		System.out.println(id);
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);

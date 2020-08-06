@@ -1,6 +1,8 @@
 package com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -21,13 +23,6 @@ public class ResponsavelMovimentoEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-	
-	@FindBy(xpath = "//li/span[text()=\"Editar\"]")
-	public WebElement editar;
-
-	
 	@FindBy(xpath = "//div[@id=\"name\"]/div/div/input")
 	public WebElement campo;
 	
@@ -37,6 +32,8 @@ public class ResponsavelMovimentoEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
 
 	
 
@@ -60,16 +57,16 @@ public class ResponsavelMovimentoEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		idC.click();
+		String idRegistro = idObter4();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
 		sleep(1000);
 		
-		dobleClickElement(idC);
-			
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
-		System.out.println(id);
-		
-		menu.click();
-		sleep(2000);
 		editar.click();
 		sleep(2000);
 		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");

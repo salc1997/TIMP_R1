@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.GrupoAtividadeFiscal;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -86,22 +87,21 @@ public class GrupoAtividadeCriarPO extends TestBaseSteven{
 			atividadesO1.click();
 			sleep(2000);
 		}
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
 		
 		siguiente.click();
 
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div/div/div/div/img");
-	
-		idC.click();
-		dobleClickElement(idC);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String id = idR.getText();
-		sleep(2000);
+
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
+		
 		
 		novo.click();
 		sleep(2000);
@@ -127,19 +127,20 @@ public class GrupoAtividadeCriarPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		biblioteca.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
+		sleep(2000);
+		
 		siguiente.click();
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div/div/div/div/img");
+
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
+
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idB = idR.getText();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir3(idB);
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);

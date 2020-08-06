@@ -152,14 +152,7 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-	
-		
-		/*Actions actions = new Actions(driver);
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
-		*/	
+
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
@@ -170,7 +163,6 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		novaAntecipacao.click();
 		sleep(2000);
 		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
-		//invisibilityOfElement("//*[@id=\"container\"]/div[4]/div/div/div/img");
 		sleep(2000);
 		
 		empresa.click();
@@ -275,7 +267,6 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		sleep(2000);
 
 		
-		//actions.doubleClick(idC).perform();
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir1(id2);

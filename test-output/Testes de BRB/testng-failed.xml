@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" name="Failed suite [Testes de BRB]" parallel="tests">
-  <test name="Novo Relatório(failed)" parallel="tests">
+<suite thread-count="4" name="Failed suite [Testes de BRB]" parallel="methods">
+  <test name="Acessar BRB(failed)" parallel="methods">
     <classes>
-      <class name="com.timp.test.BRB.testNg.BRBAcessar">
+      <class name="com.timp.test.BRB.BRBAcessar">
+        <methods>
+          <include name="brbEntrar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.BRBAcessar -->
+      <class name="com.timp.test.ADM.LoginTest">
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
-      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
+      </class> <!-- com.timp.test.ADM.LoginTest -->
+      <class name="com.timp.test.BRB.NovoRelatorio">
         <methods>
           <include name="colunas"/>
+          <include name="brbEntrar"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
           <include name="novoRelatorio"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
+      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+      <class name="com.timp.test.BRB.paginacion">
+        <methods>
+          <include name="paginacion"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.paginacion -->
+      <class name="com.timp.test.BRB.FiltrosAvançados">
+        <methods>
+          <include name="filtrosAvanzados"/>
+          <include name="brbEntrar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltrosAvançados -->
     </classes>
-  </test> <!-- Novo Relatório(failed) -->
+  </test> <!-- Acessar BRB(failed) -->
 </suite> <!-- Failed suite [Testes de BRB] -->

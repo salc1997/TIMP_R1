@@ -113,14 +113,10 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		idC.click();
-		sleep(1000);
-		
-		dobleClickElement(idC);
-			
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println(id);
 		
 		nova.click();
@@ -178,13 +174,12 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		idC.click();
-		sleep(1000);
-		
-		dobleClickElement(idC);
-		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir2(idB);
+
 		System.out.println(id);
 		System.out.println(idB);
 		double idD = convertToDouble(id);

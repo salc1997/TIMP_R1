@@ -1,146 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="132300" started-at="2020-08-06T12:55:15Z" finished-at="2020-08-06T12:57:27Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="102829" started-at="2020-08-06T14:31:03Z" finished-at="2020-08-06T14:32:46Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="89673" started-at="2020-08-05T17:21:08Z" finished-at="2020-08-05T17:22:38Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="76204" started-at="2020-08-05T17:18:05Z" finished-at="2020-08-05T17:19:21Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="66391" started-at="2020-08-05T15:46:17Z" finished-at="2020-08-05T15:47:23Z">
-=======
-  <suite name="Default suite" duration-ms="131571" started-at="2020-08-05T00:18:26Z" finished-at="2020-08-05T00:20:37Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="66173" started-at="2020-08-06T20:08:02Z" finished-at="2020-08-06T20:09:08Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="132300" started-at="2020-08-06T12:55:15Z" finished-at="2020-08-06T12:57:27Z">
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="15069" started-at="2020-08-06T09:55:15Z" finished-at="2020-08-06T09:55:30Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="102829" started-at="2020-08-06T14:31:03Z" finished-at="2020-08-06T14:32:46Z">
-      <class name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="beforeClass" is-config="true" duration-ms="14319" started-at="2020-08-06T08:31:03Z" finished-at="2020-08-06T08:31:18Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="89673" started-at="2020-08-05T17:21:08Z" finished-at="2020-08-05T17:22:38Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="76204" started-at="2020-08-05T17:18:05Z" finished-at="2020-08-05T17:19:21Z">
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="beforeClass" is-config="true" duration-ms="10666" started-at="2020-08-05T11:18:05Z" finished-at="2020-08-05T11:18:16Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="66391" started-at="2020-08-05T15:46:17Z" finished-at="2020-08-05T15:47:23Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar">
-<<<<<<< HEAD
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="22456" started-at="2020-08-05T14:21:08Z" finished-at="2020-08-05T14:21:31Z">
-=======
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="17587" started-at="2020-08-05T12:46:17Z" finished-at="2020-08-05T12:46:35Z">
-=======
-    <test name="Default test" duration-ms="131571" started-at="2020-08-05T00:18:26Z" finished-at="2020-08-05T00:20:37Z">
-      <class name="com.timp.test.MDR.TEST.AntecipacaoEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="beforeClass" is-config="true" duration-ms="10466" started-at="2020-08-04T18:18:26Z" finished-at="2020-08-04T18:18:36Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test name="Default test" duration-ms="66173" started-at="2020-08-06T20:08:02Z" finished-at="2020-08-06T20:09:08Z">
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="12191" started-at="2020-08-06T14:08:02Z" finished-at="2020-08-06T14:08:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar@8e0379d]" name="login" duration-ms="10606" started-at="2020-08-06T09:55:30Z" finished-at="2020-08-06T09:55:40Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="login" duration-ms="7775" started-at="2020-08-06T08:31:18Z" finished-at="2020-08-06T08:31:25Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="login" duration-ms="11133" started-at="2020-08-05T14:21:31Z" finished-at="2020-08-05T14:21:42Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="login" duration-ms="6125" started-at="2020-08-05T11:18:16Z" finished-at="2020-08-05T11:18:22Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="login" duration-ms="9926" started-at="2020-08-05T12:46:35Z" finished-at="2020-08-05T12:46:44Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="login" duration-ms="7100" started-at="2020-08-04T18:18:36Z" finished-at="2020-08-04T18:18:43Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="login" duration-ms="8171" started-at="2020-08-06T14:08:14Z" finished-at="2020-08-06T14:08:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar@8e0379d]" name="acessarMDR" duration-ms="36957" started-at="2020-08-06T09:55:40Z" finished-at="2020-08-06T09:56:17Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="acessarMDR" duration-ms="9547" started-at="2020-08-06T08:31:25Z" finished-at="2020-08-06T08:31:35Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="acessarMDR" duration-ms="13181" started-at="2020-08-05T14:21:42Z" finished-at="2020-08-05T14:21:55Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="acessarMDR" duration-ms="23533" started-at="2020-08-05T11:18:22Z" finished-at="2020-08-05T11:18:45Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="acessarMDR" duration-ms="11133" started-at="2020-08-05T12:46:44Z" finished-at="2020-08-05T12:46:56Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="acessarMDR" duration-ms="26124" started-at="2020-08-04T18:18:43Z" finished-at="2020-08-04T18:19:09Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="acessarMDR" duration-ms="16301" started-at="2020-08-06T14:08:23Z" finished-at="2020-08-06T14:08:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar@8e0379d]" name="criar" duration-ms="69628" started-at="2020-08-06T09:56:17Z" finished-at="2020-08-06T09:57:27Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="visualizar()[pri:0, instance:com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar@35083305]" name="visualizar" duration-ms="71164" started-at="2020-08-06T08:31:35Z" finished-at="2020-08-06T08:32:46Z">
-=======
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="criar" duration-ms="42855" started-at="2020-08-05T14:21:55Z" finished-at="2020-08-05T14:22:38Z">
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar@8e0379d]" name="criar" duration-ms="29496" started-at="2020-08-06T14:08:39Z" finished-at="2020-08-06T14:09:08Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="1000"]/div[1]/label/span"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'LITOSOLER', ip: '192.168.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4b5f8f33ca11748a9b739fb24ef4b47a
-*** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c1074054bf05f1d47c62dfc0dfc03ceb
+*** Element info: {Using=xpath, value=//*[@id="1000"]/div[1]/label/span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="1000"]/div[1]/label/span"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'LITOSOLER', ip: '192.168.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4b5f8f33ca11748a9b739fb24ef4b47a
-*** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c1074054bf05f1d47c62dfc0dfc03ceb
+*** Element info: {Using=xpath, value=//*[@id="1000"]/div[1]/label/span}
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
@@ -157,8 +58,8 @@ Session ID: 4b5f8f33ca11748a9b739fb24ef4b47a
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriarPO.criar(InformaçoesAdicionaisCriarPO.java:130)
-	at com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar.criar(InformaçoesAdicionaisCriar.java:49)
+	at com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoCriarPO.criar(CadastroCondicaoCriarPO.java:151)
+	at com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar.criar(CadastroCondicaoCriar.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -186,110 +87,10 @@ Session ID: 4b5f8f33ca11748a9b739fb24ef4b47a
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-=======
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="visualizar()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEditar@35083305]" name="visualizar" duration-ms="35864" started-at="2020-08-05T11:18:45Z" finished-at="2020-08-05T11:19:21Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LITOSOLER', ip: '192.168.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a8a2dffb41eec946d9cc1d5d9c07a823]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LITOSOLER', ip: '192.168.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a8a2dffb41eec946d9cc1d5d9c07a823
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
-	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:878)
-	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:872)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.sap.timp.base.TestBaseSteven.attributeToBeXpath(TestBaseSteven.java:103)
-	at com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoEditarPO.editar(AntecipacaoEditarPO.java:77)
-	at com.timp.test.MDR.Antecipacao.AntecipacaoEditar.visualizar(AntecipacaoEditar.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar@8e0379d]" name="criar" duration-ms="27717" started-at="2020-08-05T12:46:56Z" finished-at="2020-08-05T12:47:23Z">
-=======
-        <test-method status="PASS" signature="visualizar()[pri:0, instance:com.timp.test.MDR.TEST.AntecipacaoEditar@35083305]" name="visualizar" duration-ms="87868" started-at="2020-08-04T18:19:09Z" finished-at="2020-08-04T18:20:37Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-=======
         </test-method> <!-- criar -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar -->
-<<<<<<< HEAD
-=======
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-        </test-method> <!-- visualizar -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.TEST.AntecipacaoEditar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

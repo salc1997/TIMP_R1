@@ -3,56 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
           <include name="beforeClass"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="criar"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.TEST.AntecipacaoCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

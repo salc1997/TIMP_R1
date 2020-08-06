@@ -3,59 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir">
-=======
-      <class name="com.timp.test.MDR.TEST.AntecipacaoCriar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="criar"/>
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="visualizar"/>
-=======
-<<<<<<< HEAD
-          <include name="criar"/>
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.InformaçoesAdicionaisCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir -->
-=======
-      </class> <!-- com.timp.test.MDR.TEST.AntecipacaoCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.ObservaçoesdoDocumentoFiscalCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

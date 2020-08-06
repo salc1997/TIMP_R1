@@ -8,16 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
+public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseEliel {
+	
 	
 	
 
-	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
 	
-	@FindBy(xpath = "//span[text()=\"5.2 Informações Adicionais - Valores Declaratórios\"]")
-	public WebElement informacoesadicionais;
+	@FindBy(xpath = "//span[text()=\"Observações do Documento Fiscal - Registro 0460\"]")
+	public WebElement observacoesdocumento;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
@@ -28,15 +28,24 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")
 	public WebElement idR;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Valor Declaratório\"]")
-	public WebElement novovalor;
+	@FindBy(xpath = "//span[text()=\"Nova Observação do Documento Fiscal\"]")
+	public WebElement novoobservacoes;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
-	public WebElement codigodevalores;
+	@FindBy(xpath = "//div[@id=\"UF\"]/div/div/div[2]")
+	public WebElement uf;
 	
-	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Informação Adicional\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcaouf;
+	
+	@FindBy(xpath = "//div[@id=\"MessageRule\"]/div/div/div[2]")
+	public WebElement idregrademensagem;
+	
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcaoid;
+	
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Observações do Documento Fiscal - Registro 0460\"]")
+	public WebElement descricaosped;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
 	public WebElement datavigencia;
@@ -55,7 +64,7 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 	
 	
 	
-	public InformaçoesAdicionaisCriarPO() {
+	public ObservaçoesdoDocumentoFiscalCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -64,7 +73,7 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
-		informacoesadicionais.click();
+		observacoesdocumento.click();
 		sleep(2000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -92,43 +101,39 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println(id);
 		
-		novovalor.click();
+		novoobservacoes.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigodevalores.sendKeys("SP00002");
-		codigodevalores.sendKeys(Keys.ENTER);
+		uf.click();
 		
-		descricao.sendKeys("Teste");
+		opcaouf.click();
+		sleep(2000);
 		
-		//data atual
-		String data = fechaActual();
+		idregrademensagem.click();
+		
+		opcaoid.click();
+		
+		descricaosped.sendKeys("Descrição SPED");
+		
+		String data = dataanterior();
 		
 		datavigencia.sendKeys(data);
 		
-		
 		sleep(2000);
+		
 		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
+		
 		sim.click();
-		sleep(2000);
-
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		biblioteca.click();
-		sleep(2000);
-		nao.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		waitExpectElement(siguiente);
-		sleep(2000);
-		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		
 		
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
@@ -144,6 +149,8 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		if (idD < id2D) {
 			sucesso = true;
 		}
+		
+		System.out.println(sucesso);
 		
 		/*
 		idC.click();
@@ -165,16 +172,13 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		}else {
 			sucesso = false;
 		}
-		*/
-		System.out.println(sucesso);
+		 */
+		
+			
 			
 		
-		
 	}
-		
-	
-	
-	
+			
 	
 	
 

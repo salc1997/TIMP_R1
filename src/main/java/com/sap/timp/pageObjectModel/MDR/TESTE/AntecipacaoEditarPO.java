@@ -59,15 +59,13 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		*/
-<<<<<<< HEAD
+
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter();
-		//pesquisa esse id
-=======
-		
 		String idRegistro = idObter1();
+		//pesquisa esse id
+
 		
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

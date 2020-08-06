@@ -50,6 +50,12 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividades;
+	
+	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividadesO;
+	
 	
 	public AtividadeEditarPO() {
 
@@ -60,7 +66,7 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	public boolean editar() {
 
 		String url = driver.getCurrentUrl();
-
+		/*
 		if (url.contains("tc2") || url.contains("tp1")) {
 			atividades2.click();
 			sleep(2000);
@@ -73,16 +79,25 @@ public class AtividadeEditarPO extends TestBaseSteven{
 			atividadesO1.click();
 			sleep(2000);
 		}
+		*/
+		atividades.click();
+		sleep(2000);
+		atividadesO.click();
+		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		String idRegistro = idObter2();
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		actionsMoveToElementElement(menu);
 		sleep(4000);
 		
 		menu.click();

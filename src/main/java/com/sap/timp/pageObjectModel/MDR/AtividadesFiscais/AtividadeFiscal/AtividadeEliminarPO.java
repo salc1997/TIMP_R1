@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AtividadeFiscal;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,13 +18,6 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-	
-	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
-	public WebElement excluir;
-
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -49,7 +43,11 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]/ul/li[1]")
 	public WebElement atividadesO2;
 	
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividades;
 	
+	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividadesO;
 
 	public AtividadeEliminarPO() {
 
@@ -60,7 +58,7 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 	public void eliminar() {
 		
 		String url = driver.getCurrentUrl();
-
+		/*
 		if (url.contains("tc2") || url.contains("tp1")) {
 			atividades2.click();
 			sleep(2000);
@@ -73,6 +71,14 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 			atividadesO1.click();
 			sleep(2000);
 		}
+		*/
+		
+		atividades.click();
+		sleep(2000);
+		atividadesO.click();
+		sleep(2000);
+		
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
@@ -85,9 +91,11 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 
 		String idRegistro = idObter2();
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(4000);
 		
 		menu.click();

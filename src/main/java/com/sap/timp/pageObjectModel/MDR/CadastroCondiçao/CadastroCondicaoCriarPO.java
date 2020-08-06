@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.CadastroCondiçao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -129,15 +130,15 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		//Pega o ultimo id
 		setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
+		
 		sleep(2000);
 		
-		String id = idR.getText();
-		sleep(2000);
-		//System.out.println(id);
+
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
+				
 		novocadastrocondicao.click();
 	
 		sleep(2000);
@@ -209,11 +210,13 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
-		String idB = idR.getText();
-		sleep(2000);
+		
+
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir4(idB);
 		System.out.println(id);
 		System.out.println(idB);
 		

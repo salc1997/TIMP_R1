@@ -26,6 +26,12 @@ public class AtividadeFiltroPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
+	
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividades;
+	
+	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividadesO;
 
 	public AtividadeFiltroPO() {
 
@@ -35,7 +41,7 @@ public class AtividadeFiltroPO extends TestBaseSteven {
 	public boolean filtro() {
 
 		String url = driver.getCurrentUrl();
-
+		/*
 		if (url.contains("tc2") || url.contains("tp1")) {
 			atividades2.click();
 			sleep(2000);
@@ -48,6 +54,13 @@ public class AtividadeFiltroPO extends TestBaseSteven {
 			atividadesO1.click();
 			sleep(2000);
 		}
+		*/
+		
+		atividades.click();
+		sleep(2000);
+		atividadesO.click();
+		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);

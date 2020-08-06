@@ -13,17 +13,9 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\" Antecipação\"]")
 	public WebElement antecipacao;
 
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
-	public WebElement idC;
-
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
@@ -48,9 +40,10 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 		String idRegistro = idObter1();
 		
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(4000);
 		
 		

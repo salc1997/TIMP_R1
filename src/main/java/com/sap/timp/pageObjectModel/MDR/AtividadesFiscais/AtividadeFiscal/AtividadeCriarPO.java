@@ -80,6 +80,12 @@ public class AtividadeCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "")
 	public WebElement ;
 	*/
+	
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividades;
+	
+	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividadesO;
 
 	
 	

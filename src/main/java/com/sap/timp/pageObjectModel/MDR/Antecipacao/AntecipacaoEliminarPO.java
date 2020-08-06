@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.Antecipacao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,12 +12,6 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\" Antecipação\"]")
 	public WebElement antecipacao;
-
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
-	public WebElement excluir;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -30,6 +25,9 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
+	public WebElement siguiente;
+	
 	public AntecipacaoEliminarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -40,12 +38,18 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 		antecipacao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		String idRegistro = idObter1();
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(4000);
 		
 		menu.click();

@@ -29,12 +29,6 @@ public class CadastroCondicaoVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]")
-	public WebElement visualizar;
 	
 	public CadastroCondicaoVisualizarPO() {
 		PageFactory.initElements(driver, this);
@@ -53,22 +47,23 @@ public String visualizar() {
 		
 		//Pega o ultimo id
 		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
-		
-		//String id = idR.getText();
-		//sleep(2000);
-		//System.out.println(id);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
-		opcao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idRegistro = idObter4();
 		
-		engrenagem.click();
-		sleep(1000);
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		actionsMoveToElementElement(menu);
+		sleep(4000);
+		
+		menu.click();
+		sleep(2000);
 		visualizar.click();
+		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

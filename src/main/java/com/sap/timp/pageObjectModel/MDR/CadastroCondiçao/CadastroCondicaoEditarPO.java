@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.CadastroCondiçao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,11 +22,9 @@ public class CadastroCondicaoEditarPO extends TestBaseEliel {
 	public WebElement idR;
 	
 
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement setafinal;
-	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinaltc2;
+
 	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
@@ -97,32 +96,27 @@ String url = driver.getCurrentUrl();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		//Pega o ultimo id
-		if (tc2 == true || tp1 == true || tq1 == true) {
-			setafinaltc2.click();
-		}else {
-			setafinal.click();
-		}
+		setafinal.click();
+	
 		//setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
-		
-		String id = idR.getText();
-		sleep(2000);
-		System.out.println(id);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
-		opcao.click();
-		
-		engrenagem.click();
-		
 		sleep(2000);
+
+		sleep(2000);
+
+		String idRegistro = idObter4();
 		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		actionsMoveToElementElement(menu);
+		sleep(4000);
+		
+		menu.click();
+		sleep(1000);
 		editar.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
 		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");

@@ -47,9 +47,13 @@ public class GrupoAtividadeCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
+	
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividades;
+	
+	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Grupos de Atividades Fiscais\"]")
+	public WebElement gruposAtividades;
 	/*
-	@FindBy(xpath = "")
-	public WebElement ;
 	@FindBy(xpath = "")
 	public WebElement ;
 	@FindBy(xpath = "")
@@ -74,7 +78,7 @@ public class GrupoAtividadeCriarPO extends TestBaseSteven{
 	public boolean criar() {
 		
 		String url = driver.getCurrentUrl();
-
+		/*
 		if (url.contains("tc2") || url.contains("tp1")) {
 			atividades2.click();
 			sleep(2000);
@@ -87,6 +91,12 @@ public class GrupoAtividadeCriarPO extends TestBaseSteven{
 			atividadesO1.click();
 			sleep(2000);
 		}
+		*/
+		
+		atividades.click();
+		sleep(2000);
+		gruposAtividades.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);

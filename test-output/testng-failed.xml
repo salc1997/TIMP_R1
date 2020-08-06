@@ -3,29 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir">
+      <class name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar">
         <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir -->
-=======
-      <class name="com.timp.test.MDR.TEST.AntecipacaoCriar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-        <methods>
-          <include name="beforeClass"/>
           <include name="visualizar"/>
+          <include name="beforeClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.TEST.AntecipacaoCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

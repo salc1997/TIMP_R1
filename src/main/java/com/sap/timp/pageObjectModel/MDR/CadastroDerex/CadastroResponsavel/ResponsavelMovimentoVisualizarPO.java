@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -40,6 +41,9 @@ public class ResponsavelMovimentoVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
 	public WebElement menu;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
 	public ResponsavelMovimentoVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -63,9 +67,12 @@ public class ResponsavelMovimentoVisualizarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		idC.click();
-		sleep(1000);
-		dobleClickElement(idC);
+		String idRegistro = idObter4();
+		
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 
 		
 		menu.click();

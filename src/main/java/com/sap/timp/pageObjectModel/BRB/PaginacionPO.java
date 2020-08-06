@@ -43,6 +43,10 @@ public class PaginacionPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"actualPage\"]/div/div/input")
 	public WebElement actualPage;
 	
+	@FindBy(xpath = "//span[text()=\"Relatórios de Outputs\"]")
+	public WebElement output;
+	
+	
 	public PaginacionPO() {
 		//PageFactory.initElements(driver, this);
 		PageFactory.initElements(driver, this);
@@ -52,6 +56,9 @@ public class PaginacionPO extends TestBaseSteven{
 	public String paginacionPS() {
 		
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		output.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		ps.click();
@@ -123,7 +130,7 @@ public class PaginacionPO extends TestBaseSteven{
 	
 	
 	public String numero() {
-
+		sleep(3000);
 		numero.clear();
 		sleep(1000);
 		numero.sendKeys("1");

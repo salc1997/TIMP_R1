@@ -18,45 +18,46 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	public WebElement novocadastrocondicao;
 	
 
+	//@FindBy(xpath = "//div[@class=\"element\" and @id=\"company\"]/div/div/div[2]")
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
 	public WebElement empresa;
 	
 	
-	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresa;
 	
 	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
 	//public WebElement opcaoempresatc2tq1tp1;
 	
-	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresatc2tq1tp1;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um UF\"]")
+	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div[2]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//*[@id=\"SP\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div/label/span")
 	public WebElement opcaouf;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Filial\"]")
+	@FindBy(xpath = "//div[@class=\"element\" and @id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath ="//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
+	@FindBy(xpath ="//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaofilial;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um Tributo\"]")
+	@FindBy(xpath = "//div[@class=\"element\" and @id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//*[@id=\"23\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaotributo;
 	
-	@FindBy(xpath ="//input[@placeholder=\"Selecionar  uma  Sequência de Acesso\"]")
+	@FindBy(xpath ="//div[@class=\"element\" and @id=\"accessSeq\"]/div/div/div[2]")
 	public WebElement sequenciaacesso;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaosequenciaacesso;
 	
-	@FindBy(xpath = "//*[@id=\"validFrom\"]/div/div[1]/input")
+	@FindBy(xpath = "//div[@class=\"element\" and @id=\"validFrom\"]/div/div/input")
 	public WebElement vigenciade;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
@@ -139,36 +140,35 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		novocadastrocondicao.click();
-	
+		attributeToBeXpath("//*[@id=\"company\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		empresa.click();
 		sleep(2000);
 		if (tc2 == true || tp1 == true || tq1 == true) {
 			opcaoempresatc2tq1tp1.click();
-			empresa.sendKeys(Keys.ESCAPE);
+			opcaoempresatc2tq1tp1.sendKeys(Keys.ESCAPE);
 		}else {
 			opcaoempresa.click();
-			empresa.sendKeys(Keys.ESCAPE);
+			opcaoempresa.sendKeys(Keys.ESCAPE);
 		}
-		//opcaoempresa.click();
 		
-		//empresa.sendKeys(Keys.ESCAPE);
-		
+		attributeToBeXpath("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		uf.click();
-		
+		sleep(2000);
 		opcaouf.click();
 		
-		uf.sendKeys(Keys.ESCAPE);
+		opcaouf.sendKeys(Keys.ESCAPE);
 		
+		attributeToBeXpath("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		filial.click();
 		
 		opcaofilial.click();
 		
-		filial.sendKeys(Keys.ESCAPE);
+		opcaofilial.sendKeys(Keys.ESCAPE);
 		
 		sleep(2000);
 		
@@ -176,8 +176,10 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		opcaotributo.click();
 		
-		tributo.sendKeys(Keys.ESCAPE);
+		opcaotributo.sendKeys(Keys.ESCAPE);
 		
+	
+		attributeToBeXpath("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		sequenciaacesso.click();
@@ -196,11 +198,10 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		atribuicao.sendKeys("campo");
 		
 		gravar.click();
-		
-		butaosim.click();
-		
 		sleep(2000);
-		
+		butaosim.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		biblioteca.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

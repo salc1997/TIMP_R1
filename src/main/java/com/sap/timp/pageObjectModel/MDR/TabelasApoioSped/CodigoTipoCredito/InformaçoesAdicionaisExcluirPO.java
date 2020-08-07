@@ -1,15 +1,13 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
-	
+public class InformaçoesAdicionaisExcluirPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -54,19 +52,24 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
-	public WebElement opcao;
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
+	@FindBy(xpath = "//button[@id=\"advanced-filters-btn\"]")
+	public WebElement filtrosavancados;
 	
+	@FindBy(xpath = "//div[@id=\"creationUser\"]/div/div/div[2]")
+	public WebElement filtrousuario;
 	
-	public InformaçoesAdicionaisEditarPO() {
+	@FindBy(xpath = "//li[text()=\"Teste  Automatizado\"]")
+	public WebElement usuario;
+	
+	public InformaçoesAdicionaisExcluirPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public void excluir() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -84,60 +87,38 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		
-		editar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"aditionalInfoCode\"]/div/div", "class", "base-input  required type2 success");
+		excluir.click();
 		sleep(2000);
 		
-		descricao.clear();
-		descricao.sendKeys("Descrição da Informação");
+		aceitar.click();
 		
-		sleep(2000);
-		
-		gravar.click();
-		
-		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		biblioteca.click();
-		sleep(2000);
-		sim.click();
+		
+		filtrosavancados.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		waitExpectElement(siguiente);
 		sleep(2000);
-		siguiente.click();
 		
-		
-		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		
-		actionsMoveToElementElement(menu1);
+		filtrousuario.click();
 		sleep(2000);
-		menu1.click();
-		sleep(1000);
+		usuario.click();
 		
-		visualizar.click();
-		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		sleep(2000);
+		//Falta pesquisar o id para ver se excluiu
 		
 	}
+
+	
+	
+	
+	
 
 }

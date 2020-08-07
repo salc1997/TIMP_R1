@@ -1,14 +1,13 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
+public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -54,19 +53,15 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
-	public WebElement opcao;
+	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
+	public WebElement fechar;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	
-	public InformaçoesAdicionaisEditarPO() {
+	public InformaçoesAdicionaisDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public String detalhes() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -84,35 +79,18 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		
-		editar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"aditionalInfoCode\"]/div/div", "class", "base-input  required type2 success");
+		detalhes.click();
 		sleep(2000);
 		
-		descricao.clear();
-		descricao.sendKeys("Descrição da Informação");
-		
-		sleep(2000);
-		
-		gravar.click();
-		
-		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		biblioteca.click();
-		sleep(2000);
-		sim.click();
-		
+		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		waitExpectElement(siguiente);
@@ -125,7 +103,6 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		
 		actionsMoveToElementElement(menu1);
 		sleep(2000);
 		menu1.click();
@@ -137,7 +114,10 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		System.out.println(sucesso);	
-		
+		return sucesso;	
 	}
+
+	
+	
 
 }

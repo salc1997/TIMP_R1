@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -69,18 +70,24 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBaseSteven{
 		parametro.click();
 		sleep(1000);
 		contabil.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		siguiente.click();
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//siguiente.click();
+		String idRegistro = idObter2();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		actionsMoveToElementElement(menu);
 		sleep(2000);
-		
 		menu.click();
-		sleep(2000);
+		sleep(1000);
+		
 		editar.click();
 		sleep(2000);
 		//attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");

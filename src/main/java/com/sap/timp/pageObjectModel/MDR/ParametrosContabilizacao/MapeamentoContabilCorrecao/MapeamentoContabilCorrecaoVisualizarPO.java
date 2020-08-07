@@ -15,12 +15,8 @@ public class MapeamentoContabilCorrecaoVisualizarPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Mapeamento Contábil por Correção\"]")
 	public WebElement contabil;
 	
-
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 
 	public MapeamentoContabilCorrecaoVisualizarPO() {
 
@@ -34,21 +30,28 @@ public class MapeamentoContabilCorrecaoVisualizarPO extends TestBaseSteven {
 		parametro.click();
 		sleep(1000);
 		contabil.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		siguiente.click();
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//siguiente.click();
+		String idRegistro = idObter2();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		actionsMoveToElementElement(menu);
 		sleep(2000);
-		
 		menu.click();
-		sleep(2000);
-		visualizar.click();
+		sleep(1000);
 		
-		sleep(15000);
+		visualizar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 

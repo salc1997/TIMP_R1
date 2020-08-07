@@ -5,9 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.ClassificaçaoDeContribuintesDoIPICriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.ClassificaçaoDeContribuintesDoIPIEditarPO;
 
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.pacote1.*;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;

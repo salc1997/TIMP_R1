@@ -5,29 +5,28 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.ClassificaçaoDeContribuintesDoIPIVisualizarPO;
 
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoFiltrosAvançadosPO;
 
 import org.testng.annotations.BeforeClass;
 
-import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
+import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoTipoCreditoFiltrosAvançados extends TestBaseEliel{
+public class ClassificaçaoDeContribuintesDoIPIVisualizar extends TestBaseEliel {
+  
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	CodigoTipoCreditoFiltrosAvançadosPO codigoTipoCreditoFiltrosAvançadosPO;
-
+	ClassificaçaoDeContribuintesDoIPIVisualizarPO classificaçaoDeContribuintesDoIPIVisualizarPO;
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		codigoTipoCreditoFiltrosAvançadosPO = new CodigoTipoCreditoFiltrosAvançadosPO();
+	classificaçaoDeContribuintesDoIPIVisualizarPO= new ClassificaçaoDeContribuintesDoIPIVisualizarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -47,17 +46,13 @@ public class CodigoTipoCreditoFiltrosAvançados extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void filtros() {
+	public void Visualizar() {
 
-		//codigoTipoCreditoFiltrosAvançadosPO.filtros();
+		String sucesso = classificaçaoDeContribuintesDoIPIVisualizarPO.visualizar();
 		
-		ArrayList<Boolean> sucesso =codigoTipoCreditoFiltrosAvançadosPO.filtros();
-		sleep(2000);
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), "The results in the filter aren't equal");
-		}
-		
-		
-	}
+		 assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
+	}	
+	
+	
 
 }

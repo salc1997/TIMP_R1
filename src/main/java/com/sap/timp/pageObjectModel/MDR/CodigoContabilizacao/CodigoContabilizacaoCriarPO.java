@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,11 +21,8 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 	public WebElement idR;
 	
 
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinal;
-	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinaltc2;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//span[text()=\"Novo Código de Contabilização\"]")
 	public WebElement novocodigocontabilizacao;
@@ -81,51 +79,27 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 	
 	
 	
-	public void criar() {
+	public boolean criar() {
 		
-		
-String url = driver.getCurrentUrl();
-		
-		boolean tc2 = false;
-		boolean td1 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
+	
 
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		codigoscontabilizacao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		//Pega o ultimo id
-		if (tc2 == true || tp1 == true || tq1 == true) {
-			setafinaltc2.click();
-		}else {
-			setafinal.click();
-		}
-		//setafinal.click();
+		sleep(2000);
+
+		siguiente.click();
+
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//pega o ultimo id
-		idC.click();
-		sleep(1000);
-		dobleClickElement(idC);
 		sleep(2000);
 		
-		String id = idR.getText();
-		sleep(2000);
-	//	System.out.println(id);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
+		
 			
 		novocodigocontabilizacao.click();
 		sleep(1000);
@@ -175,19 +149,18 @@ String url = driver.getCurrentUrl();
 		
 		//Pega o ultimo id depois do preenchimento
 
-		setafinal.click();
+		siguiente.click();
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
-		String idB = idR.getText();
-		sleep(2000);
-		System.out.println(id);
-		System.out.println(idB);
-				
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir3(id2);
+		System.out.println(id2);
 		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
+		double idBD = convertToDouble(id2);
+		
 		//compara pra ver se o novo id criado é realmente o ultimo
 		boolean sucesso = false;
 				
@@ -197,11 +170,7 @@ String url = driver.getCurrentUrl();
 			sucesso = false;
 		}
 				
-		System.out.println( sucesso);
-		
-		//verificar se o relatório foi criado
-		boolean text= idB.contains(idR.getText());
-		System.out.println(text);
+		return sucesso;
     }
 	
 

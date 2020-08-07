@@ -25,8 +25,10 @@ public class ContratoIOFExcluirPO extends TestBaseEliel {
 	public WebElement idR;
 	
 
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinal;
+	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
+	
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement mostrar;
@@ -50,12 +52,7 @@ public class ContratoIOFExcluirPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath ="//*[@id=\"table\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]/span[2]")
-	public WebElement excluir;
+
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisa;
@@ -74,28 +71,26 @@ public boolean excluir() {
 		contratoiof.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		setafinal.click();
+		sleep(2000);
+		//Pega o ultimo id
+		siguiente.click();
+		//setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//pega o ultimo id
-		idC.click();
+		sleep(2000);
+		
+		String idRegistro = idObter4();
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		actionsMoveToElementElement(menu);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		menu.click();
 		sleep(1000);
-		dobleClickElement(idC);
-		sleep(2000);
-				
-		String id = idR.getText();
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		opcao.click();
-		
-		engrenagem.click();
-		
-		sleep(2000);
-		
 		excluir.click();
-		sleep(1000);
+		sleep(3000);
+
 		waitExpectElement(butaosim);
 		sleep(2000);
 		butaosim.click();
@@ -105,7 +100,7 @@ public boolean excluir() {
 		waitExpectElement(pesquisa);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		pesquisa.sendKeys(id);
+		pesquisa.sendKeys(idRegistro);
 		pesquisa.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

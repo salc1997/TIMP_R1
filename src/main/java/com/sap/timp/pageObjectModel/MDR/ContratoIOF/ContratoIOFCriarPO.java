@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.ContratoIOF;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -88,12 +89,8 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idR;
 	
-	//@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
-	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
-	//public WebElement setafinal;
-
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinal;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement mostrar;
@@ -120,7 +117,7 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 	}
 	
 	
-	public void criar() {
+	public boolean criar() {
 		
 		
 		
@@ -129,19 +126,16 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 		contratoiof.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		setafinal.click();
+		sleep(2000);
+		siguiente.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
 		
-		String id = idR.getText();
-		sleep(2000);
-		//System.out.println(id);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+
 		
 		novocontratoiof.click();
 		sleep(1000);
@@ -207,18 +201,16 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	
 		biblioteca.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		//Pega o ultimo id depois do preenchimento
-
-		setafinal.click();
+		sleep(2000);
+		siguiente.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				
-		idC.click();
-		dobleClickElement(idC);
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		sleep(2000);
-		String idB = idR.getText();
-		sleep(2000);
+		idInserir4(idB);
 		System.out.println(id);
 		System.out.println(idB);
 				
@@ -235,9 +227,7 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 				
 		System.out.println( sucesso);
 		
-		//verificar se o relatório foi criado
-		boolean text= idB.contains(idR.getText());
-		System.out.println(text);
+		return sucesso;
 		
 	}
 

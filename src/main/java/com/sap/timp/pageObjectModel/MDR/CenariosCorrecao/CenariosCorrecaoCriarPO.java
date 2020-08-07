@@ -39,11 +39,8 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"valid-from\"]/div/div[1]/input")
 	public WebElement dataVigencia;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[9]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[6]")
-	public WebElement siguienteTC2;
 	
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
 	public WebElement opc;
@@ -83,22 +80,14 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);	
 			
-		if(tc2==true) {
-			siguienteTC2.click();
-		}else {
-			siguiente.click();
-		}
+		siguiente.click();
+	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
-		sleep(6000);	
+		sleep(2000);
+		
 		Integer filas= driver.findElements(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]")).size();
 	
-		String fi1 = String.valueOf(filas);
-		System.out.println(fi1);
-		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+fi1+"]/div[3]/div")).getText();
-		
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
-		sleep(3000);
+		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+filas+"]/div[3]/div")).getText();
 		
 		waitExpectElement(novo);
 		novo.sendKeys(Keys.ENTER);		
@@ -141,23 +130,19 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 		sleep(2000);
 
 		btnRegresar.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		
-		if(tc2==true) {
-			siguienteTC2.click();
-		}else {
-			siguiente.click();
-		}
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
-		Integer filas2= driver.findElements(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]")).size();
+		sleep(2000);	
+			
+		siguiente.click();
 	
-		String fi2 = String.valueOf(filas2);
-		System.out.println(fi2);
-		String id2 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+fi2+"]/div[3]/div")).getText();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
+		Integer filas2= driver.findElements(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]")).size();
+
+		String id2 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+filas2+"]/div[3]/div")).getText();
+		idInserir2(id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

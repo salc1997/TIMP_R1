@@ -177,7 +177,7 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
 	@FindBy(xpath = "//*[@id=\"01\"]/div[2]")

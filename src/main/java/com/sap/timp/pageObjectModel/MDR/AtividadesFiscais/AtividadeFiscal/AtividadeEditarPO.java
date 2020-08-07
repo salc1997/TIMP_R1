@@ -66,20 +66,7 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	public boolean editar() {
 
 		String url = driver.getCurrentUrl();
-		/*
-		if (url.contains("tc2") || url.contains("tp1")) {
-			atividades2.click();
-			sleep(2000);
-			atividadesO2.click();
-			sleep(2000);
-		} else {
 
-			atividades1.click();
-			sleep(2000);
-			atividadesO1.click();
-			sleep(2000);
-		}
-		*/
 		atividades.click();
 		sleep(2000);
 		atividadesO.click();

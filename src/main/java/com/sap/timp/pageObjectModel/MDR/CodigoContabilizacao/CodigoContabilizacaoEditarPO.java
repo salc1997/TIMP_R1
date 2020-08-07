@@ -19,13 +19,9 @@ public class CodigoContabilizacaoEditarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idR;
-	
 
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinal;
-	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinaltc2;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//span[text()=\"Novo Código de Contabilização\"]")
 	public WebElement novocodigocontabilizacao;
@@ -78,14 +74,6 @@ public class CodigoContabilizacaoEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]/span[2]")
-	public WebElement visualizar;
 	
 	public CodigoContabilizacaoEditarPO() {
 		PageFactory.initElements(driver, this);
@@ -96,58 +84,29 @@ public class CodigoContabilizacaoEditarPO extends TestBaseEliel {
 	public String editar() {
 		
 		
-		String url = driver.getCurrentUrl();
-		
-		boolean tc2 = false;
-		boolean td1 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
-
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		codigoscontabilizacao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		//Pega o ultimo id
-		if (tc2 == true || tp1 == true || tq1 == true) {
-			setafinaltc2.click();
-		}else {
-			setafinal.click();
-		}
+		siguiente.click();
 		//setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//pega o ultimo id
-		idC.click();
-		sleep(1000);
-		dobleClickElement(idC);
 		sleep(2000);
 		
-		String id = idR.getText();
-		sleep(2000);
-	//	System.out.println(id);
+		String idRegistro = idObter3();
 		
-	
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		actionsMoveToElementElement(menu);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		opcao.click();
-		
-		engrenagem.click();
-		
-		sleep(2000);
-		
+		menu.click();
+		sleep(1000);
 		editar.click();
+		sleep(3000);
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
@@ -163,26 +122,26 @@ public class CodigoContabilizacaoEditarPO extends TestBaseEliel {
 		sleep(2000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		sleep(2000);
 		
 		biblioteca.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		sleep(1000);
-		dobleClickElement(idC);
+		
+		sleep(4000);
+		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		menu2.click();
 		sleep(2000);
-		
-		opcao.click();
-		
-		engrenagem.click();
-		
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		sleep(2000);
-		
 		visualizar.click();
-	
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		attributeToBeXpath("//table[@class=\"edit\"]", "class", "edit");

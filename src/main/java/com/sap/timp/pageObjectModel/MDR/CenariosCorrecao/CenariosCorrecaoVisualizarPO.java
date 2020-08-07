@@ -36,11 +36,8 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"valid-from\"]/div/div[1]/input")
 	public WebElement campo;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[9]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[6]")
-	public WebElement siguienteTC2;
 	
 	@FindBy(xpath = "//*[@id=\"option-2\"]")
 	public WebElement opc;
@@ -51,14 +48,6 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/ul/li[3]/button")
 	public WebElement btnRegresar;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[11]/div[3]/div")	
-	public WebElement idC;
-	
-	@FindBy(xpath = "//div[@class=\"actions\"]")
-	public WebElement menu;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[12]/div[1]/div/div[2]/ul/li[4]")
-	public WebElement eliminar;
 	
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
@@ -68,60 +57,29 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 	}
 	
 	public String cenariosCorrecaoVisualizar() {
-		String url = driver.getCurrentUrl();
-		
-		boolean tc2 = false;
-		boolean td1 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
-		
 		cenarios.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);	
 			
-		if(tc2==true) {
-			siguienteTC2.click();
-		}else {
-			siguiente.click();
-		}
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
-		
-		Integer filas= driver.findElements(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]")).size();
-		//*[@id="list"]/div/div[1]/div/div[3]/div[12]/div[1]/div/div[1]
-		String fi1 = String.valueOf(filas);
-		System.out.println(fi1);
-		String idTexto= driver.findElement(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]["+fi1+"]/div[3]/div")).getText();
-		/*
-		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+fi1+"]/div[3]/div")).getText();
-		
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
-		sleep(3000);
-		*/
-		WebElement idC= driver.findElement(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]["+fi1+"]/div/div"));
-		
-		WebElement visualizar= driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+fi1+"]/div[1]/div/div[2]/ul/li[2]"));
-		//*[@id="list"]/div/div[1]/div/div[3]/div["+fi1+"]/div[1]/div
+		siguiente.click();
 	
-		//pesquisar.sendKeys(idTexto);
-		//pesquisar.sendKeys(Keys.ENTER);
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
-		idC.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idRegistro = idObter2();
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		actionsMoveToElementElement(menu);
+		sleep(4000);
+		
+		menu.click();
 		sleep(1000);
 		visualizar.click();
+		sleep(3000);
+
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(2000);
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		
 		return sucesso;	

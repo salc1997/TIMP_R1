@@ -78,22 +78,19 @@ public class DetalheCriarPO extends TestBaseSteven{
 	public boolean criar() {
 		
 		detalhe.click();
-		
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
 		siguiente.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div[2]/div/div/div/img");
-		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		Actions actions = new Actions(driver);
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
-			
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
+		sleep(2000);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		sleep(2000);
 		
 		novoDetalhe.click();
 		
@@ -134,22 +131,23 @@ public class DetalheCriarPO extends TestBaseSteven{
 		sleep(2000);
 		biblioteca.click();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-		
+
 		siguiente.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div[2]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
-			
-		String idN = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		Double idND = convertToDouble(idN);
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir1(idB);
+		System.out.println(id);
+		sleep(2000);
+		System.out.println(id);
+		System.out.println(idB);
+		Double idND = convertToDouble(idB);
 		Double idD = convertToDouble(id);
 		
 		boolean sucesso = false;

@@ -22,9 +22,8 @@ public class ContratoIOFVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idR;
 	
-
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinal;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement mostrar;
@@ -61,35 +60,28 @@ public class ContratoIOFVisualizarPO extends TestBaseEliel{
 	}	
 	
 	
-public String visualizar() {
+	public String visualizar() {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		contratoiof.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		setafinal.click();
+		String idRegistro = idObter4();
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		actionsMoveToElementElement(menu);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//pega o ultimo id
-		idC.click();
+		
+		menu.click();
 		sleep(1000);
-		dobleClickElement(idC);
-		sleep(2000);
-				
-		String id = idR.getText();
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		opcao.click();
-		
-		engrenagem.click();
-		
-		sleep(2000);
-		
 		visualizar.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		//System.out.println(sucesso);	

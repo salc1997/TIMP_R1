@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.ContratoIOF;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -84,12 +85,8 @@ public class ContratoIOFEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idR;
 	
-	//@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
-	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
-	//public WebElement setafinal;
-
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinal;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement mostrar;
@@ -113,12 +110,7 @@ public class ContratoIOFEditarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath ="//*[@id=\"table\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]/span[2]")
-	public WebElement editar;
+
 	
 	public ContratoIOFEditarPO() {
 		PageFactory.initElements(driver, this);
@@ -128,29 +120,26 @@ public class ContratoIOFEditarPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		contratoiof.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//Pega o ultimo id
+		siguiente.click();
+		//setafinal.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idRegistro = idObter4();
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		actionsMoveToElementElement(menu);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		menu.click();
 		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//pega o ultimo id
-		idC.click();
-		sleep(1000);
-		dobleClickElement(idC);
-		sleep(2000);
-				
-		String id = idR.getText();
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		opcao.click();
-		
-		engrenagem.click();
-		
-		sleep(2000);
-		
 		editar.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributeToBeXpath("//div[@id=\"contractValue\"]/div/div", "class", "base-input  required type1 success");
 		waitExpectElement(valorcontrato);

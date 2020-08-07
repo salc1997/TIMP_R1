@@ -137,8 +137,9 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 		String empresa = "";
 		j=1;
 		for (int i = 0; i < rows; i++) {
-			empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[3]/div")).getText();
+			empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]/div[3]/div")).getText();
 			sucesso.add(data.get(0).equals(empresa));
+			j= j+1;
 		}
 		
 		return sucesso;

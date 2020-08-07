@@ -48,11 +48,9 @@ public class ContratoIOFCriar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void criar() {
-		contraIOFCriarPO.criar();
-		//boolean text = cadastroCondicaoCriarPO.criar();
-		//assertTrue(text, Criar);
-		//Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(contraIOFCriarPO.mostrar.isDisplayed(), semAcesso);
+		boolean sucesso = contraIOFCriarPO.criar();
+
+		assertTrue(sucesso, semAcesso);
 
 		
 	}	

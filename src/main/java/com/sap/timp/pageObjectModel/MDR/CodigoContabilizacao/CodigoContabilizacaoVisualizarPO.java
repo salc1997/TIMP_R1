@@ -19,13 +19,9 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idR;
-	
 
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinal;
-	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement setafinaltc2;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//span[text()=\"Novo Código de Contabilização\"]")
 	public WebElement novocodigocontabilizacao;
@@ -96,58 +92,28 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 	public String visualizar() {
 		
 		
-		String url = driver.getCurrentUrl();
-		
-		boolean tc2 = false;
-		boolean td1 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
 
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		codigoscontabilizacao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		//Pega o ultimo id
-		if (tc2 == true || tp1 == true || tq1 == true) {
-			setafinaltc2.click();
-		}else {
-			setafinal.click();
-		}
-		//setafinal.click();
+		sleep(2000);
+		// Pega o ultimo id
+		siguiente.click();
+		// setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//pega o ultimo id
-		idC.click();
+		sleep(2000);
+
+		String idRegistro = idObter3();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		actionsMoveToElementElement(menu);
+
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
+		menu.click();
 		sleep(1000);
-		dobleClickElement(idC);
-		sleep(2000);
-		
-		String id = idR.getText();
-		sleep(2000);
-	//	System.out.println(id);
-		
-	
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		opcao.click();
-		
-		engrenagem.click();
-		
-		
-		sleep(2000);
-		
 		visualizar.click();
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -36,7 +36,7 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"valid-from\"]/div/div[1]/input")
 	public WebElement campo;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[9]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[6]")
@@ -69,54 +69,27 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 	}
 	
 	public boolean cenariosCorrecaoExcluir() {
-		String url = driver.getCurrentUrl();
-		
-		boolean tc2 = false;
-		boolean td1 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
-		
 		cenarios.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);	
 			
-		if(tc2==true) {
-			siguienteTC2.click();
-		}else {
-			siguiente.click();
-		}
+		siguiente.click();
+	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(2000);
 		
-		Integer filas= driver.findElements(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]")).size();
-		//*[@id="list"]/div/div[1]/div/div[3]/div[12]/div[1]/div/div[1]
-		String fi1 = String.valueOf(filas);
-		System.out.println(fi1);
-		String idTexto= driver.findElement(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]["+fi1+"]/div[3]/div")).getText();
-		/*
-		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+fi1+"]/div[3]/div")).getText();
+		String idRegistro = idObter2();
 		
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
-		sleep(3000);
-		*/
-		WebElement idC= driver.findElement(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]["+fi1+"]/div/div"));
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		actionsMoveToElementElement(menu);
+		sleep(4000);
 		
-		WebElement eliminar= driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+fi1+"]/div[1]/div/div[2]/ul/li[4]"));
-		//*[@id="list"]/div/div[1]/div/div[3]/div["+fi1+"]/div[1]/div
-		idC.click();
-		//menu.click();
+		menu.click();
 		sleep(1000);
-		eliminar.click();
+		excluir.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		waitExpectElement(confirmacionGravar);
 		confirmacionGravar.click();
@@ -124,7 +97,7 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		pesquisar.sendKeys(idTexto);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -76,7 +78,7 @@ public class CodigoTipoCreditoFiltrosAvançadosPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"select\"]/div[2]")
 	public WebElement opcaofiltrosavancados;
 	
-	@FindBy(xpath = "//li[@id][3]")
+	@FindBy(xpath = "//li[text()=\"ICMS\"]")
 	public WebElement tipofiltro;
 	
 	
@@ -85,7 +87,7 @@ public class CodigoTipoCreditoFiltrosAvançadosPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void filtros() {
+	public ArrayList<Boolean> filtros() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -107,6 +109,39 @@ public class CodigoTipoCreditoFiltrosAvançadosPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		int j=1;
+		ArrayList<String> data = new ArrayList<String>();
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
+
+		for (int i = 0; i < rows; i++) {
+
+			String tributo ="";
+			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]/div[4]/div")).getText();
+			
+			if (data.size()==0) {
+				
+				if (tributo.isEmpty()==false) {
+					
+					data.add(tributo);
+				}
+			}
+			
+			j = j+1;
+		}
+		
+		
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
+		String icms = "";
+		j=1;
+		for (int i = 0; i < rows; i++) {
+			icms = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[4]/div")).getText();
+			sucesso.add(data.get(0).equals(icms));
+		}
+		
+		return sucesso;
 		
 		
 	}

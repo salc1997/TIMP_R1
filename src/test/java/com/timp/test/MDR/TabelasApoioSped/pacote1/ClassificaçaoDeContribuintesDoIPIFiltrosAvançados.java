@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito;
+package com.timp.test.MDR.TabelasApoioSped.pacote1;
 
 import org.testng.annotations.Test;
 

@@ -1,11 +1,11 @@
-package com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito;
+package com.timp.test.MDR.TabelasApoioSped.pacote1;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.ClassificaçaoDeContribuintesDoIPICriarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.pacote1.ClassificaçaoDeContribuintesDoIPICriarPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;

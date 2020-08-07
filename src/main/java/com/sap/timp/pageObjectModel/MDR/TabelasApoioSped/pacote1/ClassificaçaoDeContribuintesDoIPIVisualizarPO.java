@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.pacote1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
+public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseEliel{
+	
+	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -52,15 +54,19 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
-	public WebElement fechar;
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
+	public WebElement opcao;
 	
-	public ClassificaçaoDeContribuintesDoIPIDetalhesPO() {
+	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
+	public WebElement engrenagem;
+	
+	
+	public ClassificaçaoDeContribuintesDoIPIVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String detalhes() {
+	public String visualizar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -81,18 +87,22 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		detalhes.click();
+		
+		visualizar.click();
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		fechar.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		biblioteca.click();
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		waitExpectElement(siguiente);
@@ -104,20 +114,22 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
 		String idRegistro1 = idObter1();
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		actionsMoveToElementElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
 		
-		visualizar.click();
+		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		String sucesso = driver.findElement(By.xpath("//div[@class=\"baseTabs-view-wrapper\"]")).getAttribute("class");
+		//System.out.println(sucesso);	
 		return sucesso;	
 	}
+	
+	
 	
 
 }

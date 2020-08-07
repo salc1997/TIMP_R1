@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.pacote1;
 
 import java.util.ArrayList;
 

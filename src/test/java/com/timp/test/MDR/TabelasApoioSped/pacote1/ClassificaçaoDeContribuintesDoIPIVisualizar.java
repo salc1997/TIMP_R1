@@ -1,11 +1,12 @@
-package com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito;
+package com.timp.test.MDR.TabelasApoioSped.pacote1;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.ClassificaçaoDeContribuintesDoIPIDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.ClassificaçaoDeContribuintesDoIPIVisualizarPO;
+
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,20 +14,19 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.AfterClass;
 
-public class ClassificaçaoDeContribuintesDoIPIDetalhes extends TestBaseEliel {
+public class ClassificaçaoDeContribuintesDoIPIVisualizar extends TestBaseEliel {
   
-
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ClassificaçaoDeContribuintesDoIPIDetalhesPO classificaçaoDeContribuintesDoIPIDetalhesPO;
-
+	ClassificaçaoDeContribuintesDoIPIVisualizarPO classificaçaoDeContribuintesDoIPIVisualizarPO;
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		classificaçaoDeContribuintesDoIPIDetalhesPO = new ClassificaçaoDeContribuintesDoIPIDetalhesPO();
+	classificaçaoDeContribuintesDoIPIVisualizarPO= new ClassificaçaoDeContribuintesDoIPIVisualizarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,15 +46,13 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhes extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void detalhes() {
+	public void Visualizar() {
 
-		String sucesso = classificaçaoDeContribuintesDoIPIDetalhesPO.detalhes();
+		String sucesso = classificaçaoDeContribuintesDoIPIVisualizarPO.visualizar();
 		
-		 assertEquals(sucesso, "edit", visualizaçar);
-		
+		 assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
 	}	
 	
 	
-	
-	
+
 }

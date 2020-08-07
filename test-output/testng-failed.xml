@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
+      <class name="com.timp.test.MDR.Centralizacao.Tributos.TributosDetalhes">
         <methods>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="tributoDetalhes"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
+      </class> <!-- com.timp.test.MDR.Centralizacao.Tributos.TributosDetalhes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

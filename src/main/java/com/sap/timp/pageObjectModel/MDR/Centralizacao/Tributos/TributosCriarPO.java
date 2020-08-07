@@ -26,19 +26,19 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um  Empresa\"]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcEmpresa;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar UF Filial\"]")
 	public WebElement ufFilial;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcUfFilial;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filiais\"]")
 	public WebElement filiais;
 	
-	@FindBy(xpath = "//*[@id=\"0001\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcFiliais;
 	
 	@FindBy(xpath = "//div[contains(@class,\"overlay-multipleSelect3\")]")
@@ -47,19 +47,19 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo\"]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//*[@id=\"00\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[text()=\"ICMS\"]")
 	public WebElement opcTributoICMS;
 	
-	@FindBy(xpath = "//*[@id=\"23\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcTributoCIAP;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo Centralizador\"]")
 	public WebElement tributoCentralizador;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"]")
 	public WebElement opcTributoCentralizador;
 	
-	@FindBy(xpath = "//*[@id=\"validity\"]/div/div[1]/input")
+	@FindBy(xpath = "//div[@id=\"validity\"]/div/div/input")
 	public WebElement dataVigenciaInicio;
 	
 	@FindBy(xpath = "//div[@class=\"date today\"]")
@@ -74,19 +74,20 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//div[@class=\"item\"]/div/div/div/input[@placeholder=\"Selecionar Filiais\"]")
 	public WebElement filiaisAjuste;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcFiliaisAjuste;
 	
+	//                 ORIGEN
 	@FindBy(xpath = "//div[@id=\"tributeOrigin\"]/div/div/div/div/input[@placeholder=\"Selecionar Tipo de tributo\"]")
 	public WebElement tributoOrigen;
 	
-	@FindBy(xpath = "//*[@id=\"option-2\"]")
+	@FindBy(xpath = "//li[text()=\"ICMS\"]")
 	public WebElement opcTributoOrigen;
 	
 	@FindBy(xpath = "//div[@id=\"tributeTypeOrigin\"]/div/div/div/div/input[@placeholder=\"Selecionar Tipo de tributo\"]")
 	public WebElement tipoOrigen;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcTipoOrigen;
 	
 	@FindBy(xpath = "//*[@id=\"option-2\"]")
@@ -95,67 +96,70 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Saldo\"]")
 	public WebElement saldo;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcSaldo;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Detalhe Origem\"]")
 	public WebElement detalheOrigen;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcDetalheOrigen;
 	
 	@FindBy(xpath = "//div[@id=\"documentTypeOrigin\"]/div/div/div/div/input[@placeholder=\"Selecionar Tipo de documento\"]")
 	public WebElement tipoDocumentoOrigen;
 	
-	@FindBy(xpath = "//*[@id=\"option-3\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcTipoDocumentoOrigen;
 	
 	@FindBy(xpath = "//div[@id=\"documentNameOrigin\"]/div/div/div/div/input[@placeholder=\"Selecionar Modelo de Guia\"]")
 	public WebElement modeloGuiaOrigen;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcModeloGuiaOrigen;
 	
 	@FindBy(xpath = "//div[@id=\"outputFieldOrigin\"]/div/div/div/div/input[@placeholder=\"Selecionar Campo de saída\"]")
 	public WebElement campoSaidaOrigen;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcCampoSaidaOrigen;
+	
+	//                  DESTINO
+	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo Destino\"]")
 	public WebElement tributoDestino;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcTributoDestino;
 	
 	@FindBy(xpath = "//div[@id=\"tributeTypeDestination\"]/div/div/div/div/input[@placeholder=\"Selecionar Tipo de tributo\"]")
 	public WebElement tipoDestino;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcTipoDestino;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Detalhe Destino\"]")
 	public WebElement detalheDestino;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcDetalheDestino;
 	
 	@FindBy(xpath = "//div[@id=\"documentTypeDestination\"]/div/div/div/div/input[@placeholder=\"Selecionar Tipo de documento\"]")
 	public WebElement tipoDocumentoDestino;
 	
-	@FindBy(xpath = "//*[@id=\"option-3\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcTipoDocumentoDestino;
 	
 	@FindBy(xpath = "//div[@id=\"documentNameDestination\"]/div/div/div/div/input[@placeholder=\"Selecionar Modelo de Guia\"]")
 	public WebElement modeloGuiaDestino;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcModeloGuiaDestino;
 	
 	@FindBy(xpath = "//div[@id=\"outputFieldDestination\"]/div/div/div/div/input[@placeholder=\"Selecionar Campo de saída\"]")
 	public WebElement campoSaidaDestino;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcCampoSaidaDestino;
 	
 	@FindBy(xpath = "/html/body/div[3]")
@@ -208,25 +212,32 @@ public class TributosCriarPO extends TestBaseKathy{
 		centralização.click();
 		sleep(1000);
 		tributos.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
-			
-		Actions actions = new Actions(driver);
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
-			
-		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[3]/div")).getText();
-			
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		siguiente.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
+		
 		novo.click();
 		waitExpectElement(btnGravar);
 		waitExpectElement(empresa);
 		empresa.sendKeys(Keys.ENTER);
 		opcEmpresa.click();
+		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(3000);
+		
 		ufFilial.sendKeys(Keys.ENTER);
 		opcUfFilial.click();
-		sleep(4000);
+		attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(3000);
 		filiais.sendKeys(Keys.ENTER);
 		if(tc2==true) {
 			opcFiliaisTC2.click();
@@ -237,7 +248,7 @@ public class TributosCriarPO extends TestBaseKathy{
 		claseOpcFiliais.click();
 		
 		tributo.click();
-		
+		/*
 		if (td1 == true || tq1==true ) {
 			opcTributoCIAP.click();
 			opcTributoICMS.click();
@@ -245,17 +256,24 @@ public class TributosCriarPO extends TestBaseKathy{
 			opcTributoICMS.click();
 			opcICMSST.click();
 		}
+		*/
+		opcTributoCIAP.click();
+		opcTributoICMS.click();
+		
 		claseOpcFiliais.click();
 		
+		attributeToBeXpath("//div[@id=\"centralizedTribute\"]/div ", "class", "base-select required");
 		tributoCentralizador.click();
 		opcTributoCentralizador.click();
 		
-		
-		dataVigenciaInicio.sendKeys(Keys.ENTER);
+		String data = fechaActual();
 
-		dataVigenciaInicio.sendKeys("24/07/2020");
-		dataVigenciaInicio.sendKeys(Keys.ENTER);
-		cuerpo.click();
+		dataVigenciaInicio.sendKeys(data);
+		dataVigenciaInicio.sendKeys(Keys.END);
+		sleep(1000);
+		dataVigenciaInicio.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		driver.findElement(By.xpath("//div[@id=\"until\"]/div/div/input")).click();
 			
 		pestañaAjuste.click();
 		waitExpectElement(btnNovoAjuste);
@@ -265,105 +283,150 @@ public class TributosCriarPO extends TestBaseKathy{
 		filiaisAjuste.sendKeys(Keys.ENTER);
 		opcFiliaisAjuste.click();
 		
-		sleep(1000);
-		tributoOrigen.click();
-		opcTributoOrigen.click();
 		
+		sleep(2000);
+		tributoOrigen.click();
+		sleep(1000);
+		opcTributoOrigen.click();
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(8000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(10000);
-		}		
+		}	
+		*/
+		sleep(1000);
+		attributeToBeXpath("//div[@id=\"tributeTypeOrigin\"]/div/div", "class", "base-select required");
+		sleep(2000);
+		
 		tipoOrigen.click();
+		/*
 		if (td1 == true || tq1==true ) {
 			opcTipoOrigen.click();
 		}else if (tp1 == true || tc2==true) {
 			opcTipoOrigenTP1.click();
 		}		
-		
+		*/
+		sleep(1000);
+		opcTipoOrigen.click();
+		sleep(2000);
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(9000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
-		}	
+		}
+		*/	
+		attributeToBeXpath("//div[@id=\"saldo\"]/div/div", "class", "base-select required");
+		sleep(2000);
 		saldo.click();
 		opcSaldo.click();
-		
+		sleep(2000);
+		/*
 		if (td1 == true || tq1==true) {
 			sleep(6000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(8000);
-		}		
+		}
+		*/		
 		detalheOrigen.click();
 		opcDetalheOrigen.click();
 		
 		sleep(3000);
 		tipoDocumentoOrigen.click();
 		opcTipoDocumentoOrigen.click();
-		
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(8000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
 		}
+		*/
+		attributeToBeXpath("//div[@id=\"documentNameOrigin\"]/div/div", "class", "base-select required");
+		sleep(2000);
 		modeloGuiaOrigen.click();
 		opcModeloGuiaOrigen.click();
-		
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(6000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
 		}
+		*/
+		attributeToBeXpath("//div[@id=\"outputFieldOrigin\"]/div/div", "class", "base-select required");
+		sleep(2000);
 		campoSaidaOrigen.click();
 		opcCampoSaidaOrigen.click();
 		
-
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(2500);
 		}else if (tp1 == true || tc2==true) {
 			sleep(4000);
 		}
+		*/
+		sleep(2000);
+		
 		tributoDestino.click();
+		sleep(1000);
 		opcTributoDestino.click();
 		
-		
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(6000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
 		}
+		*/
+		attributeToBeXpath("//div[@id=\"tributeTypeDestination\"]/div/div", "class", "base-select required");
+		sleep(2000);
 		tipoDestino.click();
+		sleep(1000);
 		opcTipoDestino.click();
 		
-
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(8000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
 		}
+		*/
+		attributeToBeXpath("//div[@id=\"detailDestination\"]/div/div", "class", "base-select required");
+		sleep(3000);
 		detalheDestino.click();
+		sleep(2000);
 		opcDetalheDestino.click();
 		
 		sleep(2000);
 		tipoDocumentoDestino.click();
+		sleep(1000);
 		opcTipoDocumentoDestino.click();
 		
-
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(9000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
 		}
+		*/
+		
+		attributeToBeXpath("//div[@id=\"documentNameDestination\"]/div/div", "class","base-select required");
+		sleep(2000);
 		modeloGuiaDestino.click();
+		sleep(1000);
 		opcModeloGuiaDestino.click();
 		
-
+		/*
 		if (td1 == true || tq1==true ) {
 			sleep(8000);
 		}else if (tp1 == true || tc2==true) {
 			sleep(12000);
 		}
+		*/
+		attributeToBeXpath("//div[@id=\"outputFieldDestination\"]/div/div", "class","base-select required");
+		sleep(2000);
 		campoSaidaDestino.click();
+		sleep(1000);
 		opcCampoSaidaDestino.click();
 		
 		btnNovoAjusteGravar.click();
@@ -386,15 +449,16 @@ public class TributosCriarPO extends TestBaseKathy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		if(tc2==true) {
-			actions.click(idC).perform();
-		}else {
-			actions.doubleClick(idC).perform();
-		}
-	
+		siguiente.click();
 		
-		String id2 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[3]/div")).getText();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+
+		idInserir1(id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

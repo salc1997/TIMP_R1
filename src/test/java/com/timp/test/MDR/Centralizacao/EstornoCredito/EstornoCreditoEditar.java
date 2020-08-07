@@ -1,23 +1,23 @@
-package com.timp.test.MDR.Centralizacao;
+package com.timp.test.MDR.Centralizacao.EstornoCredito;
 
-import static org.testng.Assert.assertTrue;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCreditoFiltrosPO;
+import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
 
-public class EstornoCreditoFiltros extends TestBaseEliel{
+import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+
+public class EstornoCreditoEditar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 
-	EstornoCreditoFiltrosPO estornoCreditoFiltrosPO;
+	EstornoCreditoEditarPO estornoCreditoEditarPO;
 
 	
 	@BeforeClass
@@ -26,7 +26,7 @@ public class EstornoCreditoFiltros extends TestBaseEliel{
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		estornoCreditoFiltrosPO = new EstornoCreditoFiltrosPO();
+		estornoCreditoEditarPO = new EstornoCreditoEditarPO();
 
 	}
 	/*
@@ -50,18 +50,16 @@ public class EstornoCreditoFiltros extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void filtro() {
+	public void editar() {
 		
+		//boolean sucesso=estornoCreditoEditarPO.Ed;
+		estornoCreditoEditarPO.Editar();
 	//teste pra conferir se o resultado mostrado é igual	
-	boolean text=estornoCreditoFiltrosPO.filtroEstornoCredito();
-	 assertTrue(text, "Resultado diferente");
+	// assertTrue(sucesso, Criar);
 	
 	 //Teste pra conferir se conseguiu acesssar o sistema
-	assertTrue(estornoCreditoFiltrosPO.mostrar.isDisplayed(), semAcesso);
+	//assertTrue(estornoCreditoEditarPO.mostrar.isDisplayed(), semAcesso);
 		
 	}
   
-	
-	
-
 }

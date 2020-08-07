@@ -1,24 +1,21 @@
-package com.sap.timp.pageObjectModel.MDR.Centralizacao;
+package com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito;
 
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class EstornoCreditoExcluirPO extends TestBaseEliel {
+public class EstornoCreditoVisualizarPO extends TestBaseEliel{
 	
-	
+
 	@FindBy(xpath = "//span[text()=\"Centralização\"]")
 	public WebElement centralizacao;
 	
 	@FindBy(xpath = "//span[text()=\"Estorno de Crédito de Insumos\"]")
 	public WebElement estornocredito;
 	
-	
-	@FindBy(xpath = "//span[text()=\"Cadastro da Condição\"]")
-	public WebElement cadastrocondicao;
 		
 		
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]/div")
@@ -31,6 +28,8 @@ public class EstornoCreditoExcluirPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement setafinal;
 	
+
+	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
@@ -38,45 +37,31 @@ public class EstornoCreditoExcluirPO extends TestBaseEliel {
 	public WebElement engrenagem;
 
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
-	public WebElement excluir;
-	//@FindBy(xpath = "//div[@class=\"tr\" and @data-id][4]/div/div/div[2]/ul/li[4]/span[2]")
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]")
+	public WebElement visualizar;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
-	public WebElement butaosim;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
-	public WebElement pesquisa;
-	
-	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
-	public WebElement nenhumResult;
-	
-	public EstornoCreditoExcluirPO() {
+	public EstornoCreditoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-public boolean excluir() {
+public String visualizar() {
 		
 		
 		//Actions action = new Actions(driver);
 
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		centralizacao.click();
 		sleep(2000);
 		estornocredito.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	
 		
+		//Pega o ultimo id
 		setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		idC.click();
 		dobleClickElement(idC);
 		sleep(2000);
-		
-		//pega o id do ultimo relatório
-		String id = idR.getText();
-		sleep(2000);
-		//System.out.println(id);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			
@@ -84,28 +69,12 @@ public boolean excluir() {
 		
 		engrenagem.click();
 		sleep(1000);
-		excluir.click();
-		sleep(1000);
-		waitExpectElement(butaosim);
-		sleep(2000);
-		butaosim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		visualizar.click();
 		
-		//recarrega a pagina
-		driver.navigate().refresh();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
-	
-		waitExpectElement(pesquisa);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		pesquisa.sendKeys(id);
-		pesquisa.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		boolean sucesso = nenhumResult.isDisplayed();
-		System.out.println(sucesso);
+		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		//System.out.println(sucesso);	
 		return sucesso;
 	}
 

@@ -14,12 +14,6 @@ public class TributosVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "//li/div/span[text()=\"Tributos\"]")
 	public WebElement tributos;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
-
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
 
@@ -40,9 +34,6 @@ public class TributosVisualizarPO extends TestBaseKathy{
 	
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
-		
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
 	
 	public TributosVisualizarPO() {
 		PageFactory.initElements(driver, this);
@@ -68,17 +59,19 @@ public class TributosVisualizarPO extends TestBaseKathy{
 		centralização.click();
 		sleep(1000);
 		tributos.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		if(td1==true || tp1==true || tq1==true) {
-			idC.click();
-			dobleClickElement(idC);
-		}else {
-			idC.click();
-		}
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String idRegistro = idObter1();
 		
-		sleep(2000);
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
 		menu.click();
 		sleep(1000);
 		visualizar.click();

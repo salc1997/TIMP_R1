@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,12 +15,6 @@ public class TributosEditarPO extends TestBaseKathy{
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Tributos\"]")
 	public WebElement tributos;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
 
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
@@ -67,15 +62,19 @@ public class TributosEditarPO extends TestBaseKathy{
 		centralização.click();
 		sleep(1000);
 		tributos.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		if(td1==true || tp1==true || tq1==true) {
-			idC.click();
-			dobleClickElement(idC);
-		}else {
-			idC.click();
-		}
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String idRegistro = idObter1();
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
 		
 		sleep(2000);
 		menu.click();

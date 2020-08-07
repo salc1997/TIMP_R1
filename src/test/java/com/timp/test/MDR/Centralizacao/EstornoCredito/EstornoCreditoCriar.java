@@ -1,23 +1,24 @@
-package com.timp.test.MDR.Centralizacao;
-
-import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCreditoEditarPO;
-
-import org.testng.annotations.BeforeClass;
+package com.timp.test.MDR.Centralizacao.EstornoCredito;
 
 import static org.testng.Assert.assertTrue;
 
-import org.testng.annotations.AfterClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
-public class EstornoCreditoEditar extends TestBaseEliel {
+import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
+
+
+public class EstornoCreditoCriar extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 
-	EstornoCreditoEditarPO estornoCreditoEditarPO;
+	EstornoCreditoCriarPO estornoCreditoCriarPO;
 
 	
 	@BeforeClass
@@ -26,7 +27,7 @@ public class EstornoCreditoEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		estornoCreditoEditarPO = new EstornoCreditoEditarPO();
+		estornoCreditoCriarPO = new EstornoCreditoCriarPO();
 
 	}
 	/*
@@ -50,16 +51,19 @@ public class EstornoCreditoEditar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void editar() {
+	public void criar() {
 		
-		//boolean sucesso=estornoCreditoEditarPO.Ed;
-		estornoCreditoEditarPO.Editar();
+		boolean sucesso=estornoCreditoCriarPO.CriarEstornoCredito();
+	
 	//teste pra conferir se o resultado mostrado é igual	
-	// assertTrue(sucesso, Criar);
+	 assertTrue(sucesso, Criar);
 	
 	 //Teste pra conferir se conseguiu acesssar o sistema
-	//assertTrue(estornoCreditoEditarPO.mostrar.isDisplayed(), semAcesso);
+	assertTrue(estornoCreditoCriarPO.mostrar.isDisplayed(), semAcesso);
 		
 	}
   
+	
+	
+
 }

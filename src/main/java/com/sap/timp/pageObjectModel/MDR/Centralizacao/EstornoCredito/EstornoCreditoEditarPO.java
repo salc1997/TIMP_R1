@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.Centralizacao;
+package com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

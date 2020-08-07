@@ -1,11 +1,12 @@
-package com.timp.test.MDR.TabelasApoioSped.pacote1;
+package com.timp.test.MDR.TabelasApoioSped.ClassificacaoContribuintesIPI;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.pacote1.*;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.*;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoFiltrosAvançadosPO;
 
 import org.testng.annotations.BeforeClass;
@@ -27,7 +28,7 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseE
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO= new ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO();
+		classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO = new ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }

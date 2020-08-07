@@ -1,32 +1,30 @@
-package com.timp.test.MDR.TabelasApoioSped.pacote1;
+package com.timp.test.MDR.TabelasApoioSped.ClassificacaoContribuintesIPI;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.pacote1.*;
-
-
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.*;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.AfterClass;
 
-public class ClassificaçaoDeContribuintesDoIPIVisualizar extends TestBaseEliel {
-  
-	
+public class ClassificaçaoDeContribuintesDoIPIEditar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ClassificaçaoDeContribuintesDoIPIVisualizarPO classificaçaoDeContribuintesDoIPIVisualizarPO;
+	ClassificaçaoDeContribuintesDoIPIEditarPO classificaçaoDeContribuintesDoIPIEditarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-	classificaçaoDeContribuintesDoIPIVisualizarPO= new ClassificaçaoDeContribuintesDoIPIVisualizarPO();
+		classificaçaoDeContribuintesDoIPIEditarPO = new ClassificaçaoDeContribuintesDoIPIEditarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,13 +44,13 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void editar() {
 
-		String sucesso = classificaçaoDeContribuintesDoIPIVisualizarPO.visualizar();
+		String sucesso = classificaçaoDeContribuintesDoIPIEditarPO.editar();
 		
-		 assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
+		 assertEquals(sucesso, "edit", visualizaçar);
+		
 	}	
-	
 	
 
 }

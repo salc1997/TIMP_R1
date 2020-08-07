@@ -22,21 +22,6 @@ public class ResponsavelMovimentoVisualizarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
-	
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]")
-	public WebElement atividades1;
-
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]/ul/li[3]")
-	public WebElement atividadesO1;
-
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]")
-	public WebElement atividades2;
-
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]/ul/li[3]")
-	public WebElement atividadesO2;
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
 	public WebElement menu;
@@ -69,11 +54,11 @@ public class ResponsavelMovimentoVisualizarPO extends TestBaseSteven{
 
 		String idRegistro = idObter4();
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
-
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
 		
 		menu.click();
 		sleep(1000);

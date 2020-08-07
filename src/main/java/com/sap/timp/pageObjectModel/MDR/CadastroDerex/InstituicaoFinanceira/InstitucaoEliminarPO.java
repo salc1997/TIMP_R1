@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,13 +20,6 @@ public class InstitucaoEliminarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-	
-	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
-	public WebElement excluir;
-
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -50,25 +44,26 @@ public class InstitucaoEliminarPO extends TestBaseSteven {
 		derex.click();
 		sleep(1000);
 		instituicaoF.click();
-		
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
 		
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		sleep(2000);
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		String id = idR.getText();
-		System.out.println(id);
+		String idRegistro = idObter4();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
-		sleep(2000);
+		sleep(1000);
 		
 		excluir.click();
+		sleep(2000);
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
@@ -77,7 +72,7 @@ public class InstitucaoEliminarPO extends TestBaseSteven {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		pesquisar.sendKeys(id);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

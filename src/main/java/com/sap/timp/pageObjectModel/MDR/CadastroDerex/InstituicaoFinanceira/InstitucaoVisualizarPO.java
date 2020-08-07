@@ -20,11 +20,6 @@ public class InstitucaoVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-	
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
 	
 	public InstitucaoVisualizarPO() {
 
@@ -38,21 +33,23 @@ public class InstitucaoVisualizarPO extends TestBaseSteven{
 		sleep(1000);
 		instituicaoF.click();
 		
-		waitExpectXpath("//*[@id=\"table\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"table\"]/div[2]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
 		
-		waitExpectXpath("//*[@id=\"table\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"table\"]/div[2]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		String idRegistro = idObter4();
 
-		idC.click();
-		dobleClickElement(idC);
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
-		sleep(2000);
+		sleep(1000);
 		visualizar.click();
 		sleep(2000);
 		

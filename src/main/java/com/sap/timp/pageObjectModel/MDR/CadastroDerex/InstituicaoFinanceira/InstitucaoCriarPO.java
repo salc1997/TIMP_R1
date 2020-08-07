@@ -100,23 +100,18 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		sleep(1000);
 		instituicaoF.click();
 		
-		waitExpectXpath("//*[@id=\"table\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"table\"]/div[2]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
 		
-		waitExpectXpath("//*[@id=\"table\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"table\"]/div[2]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		idC.click();
-		sleep(1000);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		dobleClickElement(idC);
-			
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
-		System.out.println(id);
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		sleep(2000);
 		
 		nova.click();
 		sleep(2000);
@@ -178,27 +173,23 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		
 		
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		invisibilityOfElement("/html/body/div[3]/div/div[4]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
 		
-		waitExpectXpath("//*[@id=\"table\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"table\"]/div[2]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
 		
-		waitExpectXpath("//*[@id=\"table\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"table\"]/div[2]/div/div/div/img");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		idC.click();
-		sleep(1000);
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		dobleClickElement(idC);
-			
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
-		System.out.println(idB);
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir1(idB);
+		sleep(2000);
 		
 		double idbD = convertToDouble(idB);
 		double idD = convertToDouble(id);

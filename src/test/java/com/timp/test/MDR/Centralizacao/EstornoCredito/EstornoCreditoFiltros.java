@@ -1,4 +1,4 @@
-package com.timp.test.MDR.Centralizacao;
+package com.timp.test.MDR.Centralizacao.EstornoCredito;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,14 +11,13 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCreditoCriarPO;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCreditoFiltrosPO;
+import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
 
-public class EstornoCreditoCriar extends TestBaseEliel{
+public class EstornoCreditoFiltros extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 
-	EstornoCreditoCriarPO estornoCreditoCriarPO;
+	EstornoCreditoFiltrosPO estornoCreditoFiltrosPO;
 
 	
 	@BeforeClass
@@ -27,7 +26,7 @@ public class EstornoCreditoCriar extends TestBaseEliel{
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		estornoCreditoCriarPO = new EstornoCreditoCriarPO();
+		estornoCreditoFiltrosPO = new EstornoCreditoFiltrosPO();
 
 	}
 	/*
@@ -51,15 +50,14 @@ public class EstornoCreditoCriar extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void filtro() {
 		
-		boolean sucesso=estornoCreditoCriarPO.CriarEstornoCredito();
-	
 	//teste pra conferir se o resultado mostrado é igual	
-	 assertTrue(sucesso, Criar);
+	boolean text=estornoCreditoFiltrosPO.filtroEstornoCredito();
+	 assertTrue(text, "Resultado diferente");
 	
 	 //Teste pra conferir se conseguiu acesssar o sistema
-	assertTrue(estornoCreditoCriarPO.mostrar.isDisplayed(), semAcesso);
+	assertTrue(estornoCreditoFiltrosPO.mostrar.isDisplayed(), semAcesso);
 		
 	}
   

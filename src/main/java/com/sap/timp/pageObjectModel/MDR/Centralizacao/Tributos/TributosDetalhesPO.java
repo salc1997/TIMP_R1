@@ -68,20 +68,24 @@ public class TributosDetalhesPO extends TestBaseKathy{
 		centralização.click();
 		sleep(1000);
 		tributos.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		if(td1==true || tp1==true || tq1==true) {
-			idC.click();
-			dobleClickElement(idC);
-		}else {
-			idC.click();
-		}
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String idRegistro = idObter1();
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
 		
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		detalhe.click();
+		detalhes.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

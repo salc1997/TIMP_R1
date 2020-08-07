@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,12 +14,6 @@ public class TributosExcluirPO extends TestBaseKathy{
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Tributos\"]")
 	public WebElement tributos;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
 
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
@@ -40,9 +35,6 @@ public class TributosExcluirPO extends TestBaseKathy{
 	
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
-		
-	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
-	public WebElement excluir;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
@@ -77,18 +69,19 @@ public class TributosExcluirPO extends TestBaseKathy{
 		centralização.click();
 		sleep(1000);
 		tributos.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		if(td1==true || tp1==true || tq1==true) {
-			idC.click();
-			dobleClickElement(idC);
-		}else {
-			idC.click();
-		}
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String idRegistro = idObter1();
 		
-		sleep(2000);
-		String idR = id.getText();
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
 		
 		menu.click();
 		sleep(1000);
@@ -100,7 +93,7 @@ public class TributosExcluirPO extends TestBaseKathy{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		pesquisar.sendKeys(idR);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

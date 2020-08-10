@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -60,14 +62,6 @@ public class CodigoTipoCreditoExcluirPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]")
-	public WebElement excluir;
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
@@ -90,6 +84,9 @@ public class CodigoTipoCreditoExcluirPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
 	
 	public CodigoTipoCreditoExcluirPO() {
 
@@ -122,61 +119,41 @@ String url = driver.getCurrentUrl();
 		tabelaApoioSped.click();
 		sleep(2000);
 		tipoCredito.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
-		idC.click();
+		String idRegistro = idObter2();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
 		sleep(1000);
 		
-		dobleClickElement(idC);
-			
-		String id = idR.getText();
-		//System.out.println(id);
-	
-		opcao.click();
-		
-		engrenagem.click();
-		
-		sleep(2000);
 		excluir.click();
-
+		sleep(2000);
+		waitExpectElement(aceitar);
 		sleep(2000);
 		aceitar.click();
+		sleep(3000);
+		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		filtrosavancados.click();
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		filtrousuario.click();
-		
-		sleep(2000);
-		if (tc2 == true || tp1 == true ) {
-			usuariotc2tp1.click();
-		}else if (tq1 == true){
-			usuariotq1.click();
-		}else {
-			usuario.click();
-		}
-		//usuario.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(3000);
+	
 		boolean sucesso = nenhumResult.isDisplayed();
 		System.out.println(sucesso);
 		return sucesso;

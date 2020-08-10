@@ -10,12 +10,6 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class MotivosCesBeneficiosVisualizarPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
@@ -24,6 +18,9 @@ public class MotivosCesBeneficiosVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabela 26 - Motivos de Ces. Benefícios\"]")
 	public WebElement tabela26;
+	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	
 	public MotivosCesBeneficiosVisualizarPO() {
@@ -38,21 +35,26 @@ public class MotivosCesBeneficiosVisualizarPO extends TestBaseSteven{
 		tabelaApoio.click();
 		sleep(2000);
 		tabela26.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys("111");
-		pesquisar.sendKeys(Keys.ENTER);
+		String idRegistro = idObter4();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		actionsMoveToElementElement(menu);
 		sleep(2000);
-		
-		
 		menu.click();
 		sleep(1000);
+		
 		visualizar.click();
+		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

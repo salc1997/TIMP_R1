@@ -11,12 +11,13 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoCriarPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoEditarPO;
 
 public class MapeamentoContabilCorrecaoEditar extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	MapeamentoContabilCorrecaoCriarPO mapeamentoContabilCorrecaoCriarPO;
+	MapeamentoContabilCorrecaoEditarPO mapeamentoContabilCorrecaoEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +25,7 @@ public class MapeamentoContabilCorrecaoEditar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		mapeamentoContabilCorrecaoCriarPO = new MapeamentoContabilCorrecaoCriarPO();
+		mapeamentoContabilCorrecaoEditarPO = new MapeamentoContabilCorrecaoEditarPO();
 	}
 	/*
 	@AfterClass
@@ -48,7 +49,7 @@ public class MapeamentoContabilCorrecaoEditar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void criar() {
 
-		mapeamentoContabilCorrecaoCriarPO.criar();
+		mapeamentoContabilCorrecaoEditarPO.editar();
 		
 	}
 }

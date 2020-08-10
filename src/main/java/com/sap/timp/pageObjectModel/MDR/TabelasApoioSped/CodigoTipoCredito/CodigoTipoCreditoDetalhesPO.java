@@ -61,11 +61,6 @@ public class CodigoTipoCreditoDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy (xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[1]")
-	public WebElement detalhes;
 	
 	
 	public CodigoTipoCreditoDetalhesPO() {
@@ -78,35 +73,26 @@ public class CodigoTipoCreditoDetalhesPO extends TestBaseEliel{
 		tabelaApoioSped.click();
 		sleep(2000);
 		tipoCredito.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
-		idC.click();
+		String idRegistro = idObter2();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
 		sleep(1000);
 		
-		dobleClickElement(idC);
-			
-		String id = idR.getText();
-		//System.out.println(id);
-	
-		opcao.click();
-		
-		engrenagem.click();
-		
-		sleep(2000);
-		
 		detalhes.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String sucesso = driver.findElement(By.xpath("//*[@id=\"detail-name\"]")).getAttribute("class");

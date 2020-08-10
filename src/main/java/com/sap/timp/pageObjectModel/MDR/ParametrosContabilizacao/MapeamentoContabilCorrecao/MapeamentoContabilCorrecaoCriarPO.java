@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -93,21 +94,18 @@ public class MapeamentoContabilCorrecaoCriarPO extends TestBaseSteven{
 		contabil.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		//sleep(2000);
+
 		//siguiente.click();
 		
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		//idC.click();
-		sleep(1000);
-		
-		//dobleClickElement(idC);
-			
-		String id = idR.getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		System.out.println(id);
+		sleep(2000);
 		
 		novo.click();
 		
@@ -142,19 +140,19 @@ public class MapeamentoContabilCorrecaoCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		biblioteca.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(2000);
 
 		//siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
-		//idC.click();
-		//dobleClickElement(idC);
 		sleep(2000);
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idB = idR.getText();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		idInserir2(idB);
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);

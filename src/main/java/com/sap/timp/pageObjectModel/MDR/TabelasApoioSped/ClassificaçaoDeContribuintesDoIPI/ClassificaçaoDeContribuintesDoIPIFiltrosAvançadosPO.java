@@ -122,9 +122,6 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO extends TestBas
 		}
 		
 		
-		
-		
-		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
 		String tipoatividade = "";

@@ -17,7 +17,7 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	MapeamentoContabilCorrecaoEditarPO mapeamentoContabilCorrecaoEditarPO;
+	MapeamentoContabilCorrecaoCriarPO mapeamentoContabilCorrecaoCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,7 +25,7 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		mapeamentoContabilCorrecaoEditarPO = new MapeamentoContabilCorrecaoEditarPO();
+		mapeamentoContabilCorrecaoCriarPO = new MapeamentoContabilCorrecaoCriarPO();
 	}
 	/*
 	@AfterClass
@@ -49,7 +49,7 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void editar() {
 
-		mapeamentoContabilCorrecaoEditarPO.editar();
+		mapeamentoContabilCorrecaoCriarPO.criar();
 		
 	}
 }

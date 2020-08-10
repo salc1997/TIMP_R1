@@ -25,17 +25,8 @@ public class SequenciaEditarPO extends TestBaseEliel{
 	public WebElement idR;
 	
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
-	public WebElement setafinal;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
-	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]/span[2]")
-	public WebElement editar;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//div[@id=\"name\"]/div/div/input")
 	public WebElement nome;
@@ -64,27 +55,26 @@ public class SequenciaEditarPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sequencia.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idRegistro = idObter3();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
 		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		//Pega o ultimo id
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		
-		String id = idR.getText();
-		sleep(2000);
-		//System.out.println(id);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
-		opcao.click();
-		
-		engrenagem.click();
 		
 		editar.click();
+		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributeToBeXpath("//div[@id=\"description\"]/div/div", "class", "base-input  required type1");
@@ -103,7 +93,11 @@ public class SequenciaEditarPO extends TestBaseEliel{
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectElement(butaosim);
+		sleep(2000);
 		butaosim.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//recarrega a pagina
 		driver.navigate().refresh();
@@ -120,6 +114,9 @@ public class SequenciaEditarPO extends TestBaseEliel{
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectElement(butaosim);
+		sleep(2000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	}

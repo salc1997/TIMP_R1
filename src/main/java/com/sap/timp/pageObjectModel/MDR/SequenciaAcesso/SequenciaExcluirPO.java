@@ -23,17 +23,13 @@ public class SequenciaExcluirPO extends TestBaseEliel{
 	public WebElement idR;
 	
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
-	public WebElement setafinal;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[4]/span[2]")
-	public WebElement excluir;
+
+
 	//@FindBy(xpath = "//div[@class=\"tr\" and @data-id][4]/div/div/div[2]/ul/li[4]/span[2]")
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
@@ -60,28 +56,26 @@ public class SequenciaExcluirPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sequencia.click();
-		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
 		
-		//Pega o ultimo id
-		setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
 		
-		//pega o id do ultimo relatório
-		String id = idR.getText();
+		String idRegistro = idObter3();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(2000);
-		//System.out.println(id);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
-		opcao.click();
-		
-		engrenagem.click();
+		menu.click();
 		sleep(1000);
+		
 		excluir.click();
+		sleep(2000);
 		sleep(1000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -95,7 +89,7 @@ public class SequenciaExcluirPO extends TestBaseEliel{
 	
 		waitExpectElement(pesquisa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		pesquisa.sendKeys(id);
+		pesquisa.sendKeys(idRegistro);
 		pesquisa.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

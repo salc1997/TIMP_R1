@@ -24,14 +24,11 @@ public class MotivosCesBeneficiosEliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-	
-	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
-	public WebElement excluir;
-	
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
+	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -50,27 +47,29 @@ public class MotivosCesBeneficiosEliminarPO extends TestBaseSteven{
 		tabelaApoio.click();
 		sleep(2000);
 		tabela26.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys("111");
-		pesquisar.sendKeys(Keys.ENTER);
+		String idRegistro = idObter4();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		actionsMoveToElementElement(menu);
 		sleep(2000);
-		
-		
 		menu.click();
 		sleep(1000);
+		
 		excluir.click();
 		sleep(2000);
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		sleep(2000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

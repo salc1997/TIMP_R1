@@ -20,17 +20,12 @@ public class SequenciaVisualizarPO extends TestBaseEliel {
 	public WebElement idR;
 	
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
-	public WebElement setafinal;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]/span[2]")
-	public WebElement visualizar;
+
 	
 	
 	public SequenciaVisualizarPO() {
@@ -47,29 +42,28 @@ public class SequenciaVisualizarPO extends TestBaseEliel {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sequencia.click();
-		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
 		
-		//Pega o ultimo id
-		setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
 		
-		//String id = idR.getText();
-		//sleep(2000);
-		//System.out.println(id);
+		String idRegistro = idObter3();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
-		opcao.click();
-		
-		engrenagem.click();
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(1000);
 		
 		visualizar.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		//System.out.println(sucesso);	

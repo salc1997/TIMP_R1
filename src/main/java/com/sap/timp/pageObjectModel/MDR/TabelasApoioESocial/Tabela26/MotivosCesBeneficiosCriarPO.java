@@ -44,6 +44,10 @@ public class MotivosCesBeneficiosCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@class=\"tr\" and @data-id]/div[4]/div")
 	public WebElement motivo;
+	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
+	
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -62,10 +66,19 @@ public class MotivosCesBeneficiosCriarPO extends TestBaseSteven{
 		tabelaApoio.click();
 		sleep(2000);
 		tabela26.click();
-		sleep(2000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		siguiente.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		sleep(2000);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		sleep(2000);
+		System.out.println(id);
 		
 		novo.click();
 		
@@ -94,23 +107,35 @@ public class MotivosCesBeneficiosCriarPO extends TestBaseSteven{
 		biblioteca.click();
 		
 		sleep(2000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		siguiente.click();
 		
-		pesquisar.sendKeys("111");
-		sleep(1000);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		sleep(2000);
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String registro= motivo.getText();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir4(idB);
+		sleep(2000);
+		System.out.println(id);
+		System.out.println(idB);
 		
-		boolean sucesso = registro.contains("111");
+		double idD = convertToDouble(id);
+		double idBD = convertToDouble(idB);
+		//compara pra ver se o novo id criado é realmente o ultimo
+		boolean sucesso = false;
+		
+		if (idBD > idD) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
 		
 		return sucesso;
-		
 		
 		
 		

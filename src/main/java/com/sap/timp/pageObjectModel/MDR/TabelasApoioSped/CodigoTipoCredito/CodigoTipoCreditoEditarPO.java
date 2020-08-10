@@ -63,12 +63,7 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
 	public WebElement engrenagem;
-	
-	@FindBy(xpath ="//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]")
-	public WebElement visualizar;
+
 	
 	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
 	public WebElement data;
@@ -83,32 +78,26 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 		tabelaApoioSped.click();
 		sleep(2000);
 		tipoCredito.click();
-		sleep(2000);
-
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
-		idC.click();
+		String idRegistro = idObter2();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
 		sleep(1000);
 		
-		dobleClickElement(idC);
-			
-		String id = idR.getText();
-		System.out.println(id);
-		//seleciona a opcao
-		opcao.click();
-		
-		engrenagem.click();
-		
-		sleep(2000);
-		
 		editar.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//edita a parte de descriçao
@@ -137,19 +126,16 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 
 		siguiente.click();
 		
-		idC.click();
-		dobleClickElement(idC);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		String idB = idR.getText();
+		menu2.click();
 		sleep(2000);
-		//System.out.println(id);
-		//System.out.println(idB);
-		opcao.click();
-		
-		engrenagem.click();
-		
 		visualizar.click();
+		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

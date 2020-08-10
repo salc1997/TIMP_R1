@@ -94,16 +94,17 @@ public class MapeamentoContabilCorrecaoCriarPO extends TestBaseSteven{
 		contabil.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//sleep(2000);
 
-		siguiente.click();
+		//siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		System.out.println(id);
 		sleep(2000);
 		
 		novo.click();
@@ -140,17 +141,17 @@ public class MapeamentoContabilCorrecaoCriarPO extends TestBaseSteven{
 		biblioteca.click();
 		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(2000);
 
-		siguiente.click();
+		//siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		idInserir2(idB);
 		sleep(2000);
 		System.out.println(id);

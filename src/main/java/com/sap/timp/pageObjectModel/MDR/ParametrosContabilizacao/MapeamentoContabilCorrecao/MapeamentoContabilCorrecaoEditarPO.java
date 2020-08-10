@@ -70,10 +70,10 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBaseSteven{
 		parametro.click();
 		sleep(1000);
 		contabil.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(2000);
 
-		siguiente.click();
+		//siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

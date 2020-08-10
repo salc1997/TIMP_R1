@@ -67,8 +67,8 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[3]/div")
 	public WebElement idR;
 	
-	@FindBy (xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
-	public WebElement seguinte;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
 	public WebElement camposestrutura;
@@ -104,19 +104,20 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sequencia.click();
-		sleep(1000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		//Pega o ultimo id
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String id = idR.getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		sleep(2000);
-		//System.out.println(id);
+		System.out.println(id);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sequenciaacesso.click();
@@ -166,17 +167,19 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		
 		biblioteca.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		//Pega o ultimo id depois do preenchimento
-
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
-		String idB = idR.getText();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		sleep(2000);
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir3(idB);
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);
@@ -192,15 +195,8 @@ public class SequenciaCriarPO extends TestBaseEliel{
 			sucesso = false;
 		}
 		
-		System.out.println( sucesso);
-
-		pesquisar.sendKeys(idB);
 		
-		//verificar se o relatório foi criado
-		boolean text= idB.contains(idR.getText());
-		System.out.println(text);
-		
-		return text;
+		return sucesso;
 
 	}
 	

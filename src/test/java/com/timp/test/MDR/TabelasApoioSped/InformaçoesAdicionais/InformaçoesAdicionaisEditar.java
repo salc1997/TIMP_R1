@@ -10,6 +10,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 
 import org.testng.annotations.BeforeClass;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -52,11 +53,10 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void visualizar() {
 
-		informaçoesAdicionaisEditarPO.editar();
-		//boolean sucesso = antecipacaoEditarPO.editar();
+		//informaçoesAdicionaisEditarPO.editar();
+		String sucesso =informaçoesAdicionaisEditarPO.editar();
 		
-		//assertTrue(sucesso, Editar);
-
+		 assertEquals(sucesso, "edit", visualizaçar);
 	}
 	
 	

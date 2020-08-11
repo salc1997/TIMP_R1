@@ -60,7 +60,7 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void criar() {
+	public boolean criar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -167,7 +167,8 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		}
 		*/
 		System.out.println(sucesso);
-			
+		
+		return sucesso;
 		
 		
 	}

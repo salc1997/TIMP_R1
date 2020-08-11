@@ -113,9 +113,15 @@ public class RegistroDeExportaçaoEditarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		//attributeToBeXpath("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
+		//sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributeToBeXpath("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		docnum.clear();
+		
 		sleep(2000);
 		
 		docnum.sendKeys("0987654321");

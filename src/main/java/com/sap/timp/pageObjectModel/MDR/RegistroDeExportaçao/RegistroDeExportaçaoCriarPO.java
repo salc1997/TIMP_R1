@@ -133,7 +133,7 @@ public class RegistroDeExportaçaoCriarPO extends TestBaseEliel {
 		
 		opcaofilial.click();
 		
-		docnum.sendKeys("1234567890");
+		docnum.sendKeys("0123456789");
 		
 		chavenfe.sendKeys("12345");
 		

@@ -9,6 +9,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisCriarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class InformaçoesAdicionaisCriar extends TestBaseEliel {
@@ -46,8 +49,10 @@ public class InformaçoesAdicionaisCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		informaçoesAdicionaisCriarPO.criar();
+		//informaçoesAdicionaisCriarPO.criar();
 
+		boolean sucesso = informaçoesAdicionaisCriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 		
 	}	
 	

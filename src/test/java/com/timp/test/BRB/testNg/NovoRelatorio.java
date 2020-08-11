@@ -32,12 +32,12 @@ public class NovoRelatorio extends TestBaseSteven{
 		accesarBrbPO = new AcessarBrbPO();
 		novoRelatorioPO = new NovoRelatorioPO();
 	}
-	
+	/*
 	@AfterClass
 	public void afterClass() {
 		quit();
 	}
-	
+	*/
 	@Test(priority = 0)
 	public void login() {
 
@@ -78,7 +78,6 @@ public class NovoRelatorio extends TestBaseSteven{
 			assertTrue(sucesso.get(i), "The Colunms weren't added");
 		}
 		
-		quit();
 
 	}
 		

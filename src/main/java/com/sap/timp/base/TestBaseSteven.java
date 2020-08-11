@@ -48,6 +48,11 @@ public class TestBaseSteven {
 		return driver;
 
 	}
+	
+	public void close() {
+	
+		
+	}
 
 	public void sleep(int miliSeconds) {
 		try {

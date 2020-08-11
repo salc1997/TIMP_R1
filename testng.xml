@@ -8,12 +8,14 @@
 	<test name="Acessar BRB" preserve-order="true">
 	 
 		<classes>
-			<class name="com.timp.test.ADM.LoginTest"></class>
-			<class name="com.timp.test.BRB.BRBAcessar"></class>
-			<class name="com.timp.test.BRB.paginacion"></class>
-			<class name="com.timp.test.BRB.FiltrosAvançados"></class>
-			<class name="com.timp.test.BRB.NovoRelatorio"></class>
+			<class name="com.timp.test.BRB.testNg.BRBAcessar"></class>
+			<class name="com.timp.test.BRB.testNg.paginacion"></class>
+			<!-->
+			<class name="com.timp.test.BRB.testNg.FiltrosAvançados"></class>
+			
 
+			<class name="com.timp.test.BRB.testNg.NovoRelatorio"></class>
+			 <!-->
 		</classes>
 	
 	</test>

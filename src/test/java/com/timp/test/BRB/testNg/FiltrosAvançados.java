@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.FiltrosAvanazadosPO;
+import com.sap.timp.pageObjectModel.BRB.prueba.FiltrosAvanazadosPO;
 import com.sap.timp.pageObjectModel.BRB.PaginacionPO;
 
 import static org.testng.Assert.assertEquals;
@@ -34,12 +34,12 @@ public class FiltrosAvançados extends TestBaseSteven{
 		filtrosAvanazadosPO = new FiltrosAvanazadosPO();
 		
   }
-  
+  /*
   @AfterClass
 	public void afterClass(){
 		//driver.close();
 	}
-  
+  */
 	@Test(priority = 0)
 	public void login() {
 

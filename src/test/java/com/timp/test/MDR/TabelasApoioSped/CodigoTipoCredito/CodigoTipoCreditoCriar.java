@@ -47,8 +47,9 @@ public class CodigoTipoCreditoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		codigoTipoCreditoCriarPO.criar();
-
+		//codigoTipoCreditoCriarPO.criar();
+		boolean sucesso = codigoTipoCreditoCriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 		
 	}
 }

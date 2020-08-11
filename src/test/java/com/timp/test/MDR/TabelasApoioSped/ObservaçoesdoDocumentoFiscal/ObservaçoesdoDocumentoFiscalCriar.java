@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalCriarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class ObservaçoesdoDocumentoFiscalCriar extends TestBaseEliel {
@@ -46,9 +49,10 @@ public class ObservaçoesdoDocumentoFiscalCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		observaçoesdoDocumentoFiscalCriarPO.criar();
+		//observaçoesdoDocumentoFiscalCriarPO.criar();
 
-		
+		boolean sucesso = observaçoesdoDocumentoFiscalCriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 	}	
 		
 	

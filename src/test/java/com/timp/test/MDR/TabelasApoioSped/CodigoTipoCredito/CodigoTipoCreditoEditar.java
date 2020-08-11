@@ -9,6 +9,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoEditarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.AfterClass;
 
 public class CodigoTipoCreditoEditar extends TestBaseEliel {
@@ -44,8 +47,11 @@ public class CodigoTipoCreditoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		codigoTipoCreditoEditarPO.editar();
+		//codigoTipoCreditoEditarPO.editar();
 
+		String sucesso = codigoTipoCreditoEditarPO.editar();
+		
+		 assertEquals(sucesso, "edit", visualizaçar);
 		
 	}
 }

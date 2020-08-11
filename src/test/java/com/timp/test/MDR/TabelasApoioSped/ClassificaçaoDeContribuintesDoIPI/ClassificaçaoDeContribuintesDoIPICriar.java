@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel{
@@ -44,8 +47,10 @@ public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		classificaçaoDeContribuintesDoIPICriarPO.criar();
-
+		//classificaçaoDeContribuintesDoIPICriarPO.criar();
+		
+		boolean sucesso = classificaçaoDeContribuintesDoIPICriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 		
 	}	
 	

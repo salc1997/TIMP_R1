@@ -1,26 +1,24 @@
-package com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais;
+package com.timp.test.MDR.RegistroDeExportaçao;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditarPO;
+import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class InformaçoesAdicionaisEditar extends TestBaseEliel {
- 
+public class RegistroDeExportaçaoEditar extends TestBaseEliel {
+	
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	InformaçoesAdicionaisEditarPO informaçoesAdicionaisEditarPO;
+	RegistroDeExportaçaoEditarPO registroDeExportaçaoEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -28,14 +26,12 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		informaçoesAdicionaisEditarPO= new InformaçoesAdicionaisEditarPO();
+		registroDeExportaçaoEditarPO= new RegistroDeExportaçaoEditarPO();
 	}
 	/*
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
-	*/
+	 * @AfterClass public void afterClass(){ driver.close(); }
+	 */
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,17 +44,17 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void editar() {
+		
+		//registroDeExportaçaoEditarPO.editar();
 
-		//informaçoesAdicionaisEditarPO.editar();
-		String sucesso =informaçoesAdicionaisEditarPO.editar();
+		String sucesso = registroDeExportaçaoEditarPO.editar();
 		
 		 assertEquals(sucesso, "edit", visualizaçar);
-	}
-	
-	
-	
+		
+	}	
+  
+
 }

@@ -73,7 +73,7 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public String editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -143,7 +143,7 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		System.out.println(sucesso);	
 		
-		
+		return sucesso;
 		
 		
 		

@@ -1,33 +1,31 @@
-package com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais;
+package com.timp.test.MDR.RegistroDeExportaçao;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisCriarPO;
+import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.AfterClass;
 
-public class InformaçoesAdicionaisCriar extends TestBaseEliel {
- 
-	
+public class RegistroDeExportaçaoVisualizar extends TestBaseEliel {
+  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	InformaçoesAdicionaisCriarPO informaçoesAdicionaisCriarPO;
-
+	RegistroDeExportaçaoVisualizarPO registroDeExportaçaoVisualizarPO;
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		informaçoesAdicionaisCriarPO = new InformaçoesAdicionaisCriarPO();
+		registroDeExportaçaoVisualizarPO= new RegistroDeExportaçaoVisualizarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -47,15 +45,12 @@ public class InformaçoesAdicionaisCriar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void Visualizar() {
 
-		//informaçoesAdicionaisCriarPO.criar();
-
-		boolean sucesso = informaçoesAdicionaisCriarPO.criar();
-		assertTrue(sucesso, semAcesso);
+		String sucesso = registroDeExportaçaoVisualizarPO.visualizar();
 		
-	}	
-	
+		 assertEquals(sucesso, "tabs singleForm", visualizaçar);
+	}		
 	
 	
 }

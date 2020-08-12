@@ -2,59 +2,32 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="79768" started-at="2020-08-10T21:17:57Z" finished-at="2020-08-10T21:19:17Z">
-=======
-  <suite name="Default suite" duration-ms="67601" started-at="2020-08-09T19:32:31Z" finished-at="2020-08-09T19:33:39Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="107012" started-at="2020-08-12T20:40:21Z" finished-at="2020-08-12T20:42:08Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="79768" started-at="2020-08-10T21:17:57Z" finished-at="2020-08-10T21:19:17Z">
-      <class name="com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir@55a1c291]" name="beforeClass" is-config="true" duration-ms="18233" started-at="2020-08-10T18:17:57Z" finished-at="2020-08-10T18:18:15Z">
-=======
-    <test name="Default test" duration-ms="67601" started-at="2020-08-09T19:32:31Z" finished-at="2020-08-09T19:33:39Z">
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir@8e0379d]" name="beforeClass" is-config="true" duration-ms="12104" started-at="2020-08-09T13:32:31Z" finished-at="2020-08-09T13:32:44Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test name="Default test" duration-ms="107012" started-at="2020-08-12T20:40:21Z" finished-at="2020-08-12T20:42:08Z">
+      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="beforeClass" is-config="true" duration-ms="15472" started-at="2020-08-12T17:40:21Z" finished-at="2020-08-12T17:40:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir@55a1c291]" name="login" duration-ms="10184" started-at="2020-08-10T18:18:15Z" finished-at="2020-08-10T18:18:25Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir@8e0379d]" name="login" duration-ms="7263" started-at="2020-08-09T13:32:44Z" finished-at="2020-08-09T13:32:51Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="login" duration-ms="10086" started-at="2020-08-12T17:40:37Z" finished-at="2020-08-12T17:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir@55a1c291]" name="acessarMDR" duration-ms="11428" started-at="2020-08-10T18:18:25Z" finished-at="2020-08-10T18:18:37Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir@8e0379d]" name="acessarMDR" duration-ms="9224" started-at="2020-08-09T13:32:51Z" finished-at="2020-08-09T13:33:00Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="acessarMDR" duration-ms="37049" started-at="2020-08-12T17:40:47Z" finished-at="2020-08-12T17:41:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="Excluir()[pri:0, instance:com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir@55a1c291]" name="Excluir" duration-ms="39899" started-at="2020-08-10T18:18:37Z" finished-at="2020-08-10T18:19:17Z">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir@8e0379d]" name="criar" duration-ms="38998" started-at="2020-08-09T13:33:00Z" finished-at="2020-08-09T13:33:39Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="Excluir()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="Excluir" duration-ms="44378" started-at="2020-08-12T17:41:24Z" finished-at="2020-08-12T17:42:08Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- Excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir@55a1c291]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-08-10T18:19:17Z" finished-at="2020-08-10T18:19:17Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-08-12T17:42:08Z" finished-at="2020-08-12T17:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir -->
-=======
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

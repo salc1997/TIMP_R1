@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao;
+package com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,15 +8,21 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
+public class InclusaoDeCamposMarExcluirPO extends TestBaseEliel {
 	
-	@FindBy(xpath = "//span[text()=\"Registro de Exportação\"]")
-	public WebElement registroexportacao;
+
+	@FindBy(xpath = "//span[text()=\"Valor Adicionado\"]")
+	public WebElement valoradicionado;
 	
-	@FindBy(xpath = "//li[@class=\"leftButton library-toolbar-item  first \"]/button/span[2]")
-	public WebElement novoregistro;
+	@FindBy(xpath = "//span[text()=\"Inclusão de Campos Mar\"]")
+	public WebElement inclusaocamposmar;
 	
-	
+	@FindBy(xpath = "//span[text()=\"Nova Inclusão de Campos Mar\"]")
+	public WebElement novoinclusaocamposmar;
+		
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	public WebElement siguiente;
+
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -30,8 +36,8 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement siguiente;
+	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
+	public WebElement fechar;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
@@ -39,18 +45,22 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
-	public RegistroDeExportaçaoExcluirPO() {
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
+	
+	public InclusaoDeCamposMarExcluirPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean excluir() {
 		sleep(2000);
-		registroexportacao.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		valoradicionado.click();
 		sleep(2000);
-		
+		inclusaocamposmar.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -68,7 +78,7 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		sim.click();
+		aceitar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		pesquisar.sendKeys(idRegistro);
@@ -80,6 +90,13 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 		
 		boolean sucesso = nenhumResult.isDisplayed();
 		return sucesso;
-	}
+	
+	
+	
+	
+	}	
+	
+	
+	
 
 }

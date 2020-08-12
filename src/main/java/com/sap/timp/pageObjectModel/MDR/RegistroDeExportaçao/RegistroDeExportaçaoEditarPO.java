@@ -98,6 +98,9 @@ public class RegistroDeExportaçaoEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
+		waitExpectElement(siguiente);
+		sleep(2000);
+		siguiente.click();
 		
 		String idRegistro = idObter1();
 		

@@ -141,8 +141,9 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		
 		novo.click();
 		
-		waitExpectXpath("//*[@id=\"create-structure\"]/div/div[1]/input");		
-		
+		attributeToBeXpath("//*[@id=\"create-structure\"]/div", "class", "base-autocomplete required");
+		//waitExpectXpath("//*[@id=\"create-structure\"]/div/div[1]/input");		
+		sleep(2000);
 		nome.sendKeys("Prueba Automatizada");
 		
 		tipo.click();

@@ -101,6 +101,8 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseEliel {
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println(id);
 		
+
+		
 		novoobservacoes.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

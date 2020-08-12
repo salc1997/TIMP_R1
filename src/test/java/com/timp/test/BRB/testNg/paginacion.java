@@ -2,10 +2,11 @@ package com.timp.test.BRB.testNg;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseParalelo2;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.PaginacionPO;
+import com.sap.timp.pageObjectModel.BRB.prueba.PaginacionPO;
 
 import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
@@ -26,26 +27,25 @@ import org.testng.annotations.BeforeClass;
 
 public class paginacion extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	PaginacionPO paginacionOP;
+	PaginacionPO paginacionPO;
 	
 	
 	@BeforeClass
 	public void beforeClass() {
 		
-		driver = initialization();
+		initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		paginacionOP = new PaginacionPO();
+		paginacionPO = new PaginacionPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 1)
 	public void login() {
 
@@ -64,23 +64,23 @@ public class paginacion extends TestBaseSteven {
 	
 	 
 
-		String paginaS = paginacionOP.paginacionPS();
+		String paginaS = paginacionPO.paginacionPS();
 		assertEquals(paginaS, "2", paginaSeguiente);
 
 		
-		String paginaA = paginacionOP.paginacionPA();
+		String paginaA = paginacionPO.paginacionPA();
 		assertEquals(paginaA, "1",paginaAnterior);
 	
 		
-		String paginaF = paginacionOP.paginacionPF();
-		assertEquals(paginaF, paginacionOP.totalPAges.getAttribute("value"),paginaFinal);
+		String paginaF = paginacionPO.paginacionPF();
+		assertEquals(paginaF, paginacionPO.totalPAges.getAttribute("value"),paginaFinal);
 				
 		
-		String paginaI = paginacionOP.paginacionPI();
+		String paginaI = paginacionPO.paginacionPI();
 		assertEquals(paginaI, "1", paginaInicial);
 		
 		
-		String paginaB = paginacionOP.numero();
+		String paginaB = paginacionPO.numero();
 		assertEquals(paginaB, "1", paginaInserida);
 		
 	

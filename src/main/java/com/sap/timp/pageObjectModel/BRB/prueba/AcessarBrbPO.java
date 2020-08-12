@@ -2,16 +2,20 @@ package com.sap.timp.pageObjectModel.BRB.prueba;
 
 
 import java.net.URL;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.SessionId;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseParalelo2;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 
-public class AcessarBrbPO extends TestBaseSteven{
+public class AcessarBrbPO extends TestBaseParalelo2{
 
 	LoginTC loginTC;
 	
@@ -36,12 +40,16 @@ public class AcessarBrbPO extends TestBaseSteven{
 	
 	
 	public boolean acessar() {
+		/*
+		SessionId session = ((RemoteWebDriver) driver).getSessionId();
 		
-		loginTC = new LoginTC();
+		System.out.println(session);
+		*/
 		
-		loginTC.login();
-		
-		sleep(1000);
+		Set<String> acessar =driver.getWindowHandles();
+		for (String handle : acessar) {
+			System.out.println(acessar);
+		}
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		
@@ -58,6 +66,8 @@ public class AcessarBrbPO extends TestBaseSteven{
 		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		
 		
 		boolean sucesso = mostrar.isDisplayed();
 		

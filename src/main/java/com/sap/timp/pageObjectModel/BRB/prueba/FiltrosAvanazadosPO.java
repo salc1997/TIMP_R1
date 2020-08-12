@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.SessionId;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -41,19 +43,13 @@ public class FiltrosAvanazadosPO extends TestBaseSteven {
 	
 	public List<String> filtro() {
 		
-		loginTC = new LoginTC();
-		acessarBrbPO2 = new AcessarBrbPO2();
-		loginTC.login();
+		SessionId session = ((RemoteWebDriver) driver).getSessionId();
 		
-		sleep(1000);
-		
-		acessarBrbPO2.acessar();
-	
-
+		System.out.println(session);
 		filtro.click();
 		
 		attributeToBeXpath("//div[@id=\"filter-type\"]/div","class","base-select ");
-		sleep(2000);
+		sleep(8000);
 		combo.click();
 		
 

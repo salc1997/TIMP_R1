@@ -3,41 +3,11 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.NovoRelatorio">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoVisualizar">
-=======
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.BRB.PruebaAutomatizacion">
         <methods>
-<<<<<<< HEAD
-          <include name="colunas"/>
-=======
-<<<<<<< HEAD
-          <include name="Visualizar"/>
-          <include name="beforeClass"/>
-=======
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="novoRelatorio"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <include name="filtroColunas"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoVisualizar -->
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluir -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.PruebaAutomatizacion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

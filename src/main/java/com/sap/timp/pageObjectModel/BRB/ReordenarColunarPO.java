@@ -98,8 +98,6 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		sleep(5000);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
-
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
 		
 		
 		return movido;

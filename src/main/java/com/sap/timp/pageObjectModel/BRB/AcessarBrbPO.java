@@ -16,7 +16,7 @@ public class AcessarBrbPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[text()=\"BRB\"]")
 	public WebElement brb;
 	
-	@FindBy(xpath = "//*[@id=\"tkb-right-arrow\"]")
+	@FindBy(xpath = "//div[@class=\"dragger-pagination-right\"]")
 	public WebElement ar;
 	
 	@FindBy(xpath = "//*[@id=\"login-btn\"]")
@@ -36,6 +36,7 @@ public class AcessarBrbPO extends TestBaseSteven{
 	public boolean acessar() {
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
+		sleep(3000);
 		
 		while(brb.isDisplayed() == false) {
 			ar.click();

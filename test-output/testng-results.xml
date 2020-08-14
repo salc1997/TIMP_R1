@@ -2,9 +2,18 @@
 <testng-results skipped="0" failed="6" total="9" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Testes de BRB" duration-ms="381522" started-at="2020-08-12T16:47:54Z" finished-at="2020-08-12T16:54:15Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="107012" started-at="2020-08-12T20:40:21Z" finished-at="2020-08-12T20:42:08Z">
+=======
+  <suite name="Default suite" duration-ms="3977310" started-at="2020-08-12T13:47:17Z" finished-at="2020-08-12T14:53:34Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Acessar BRB" duration-ms="381522" started-at="2020-08-12T16:47:54Z" finished-at="2020-08-12T16:54:15Z">
       <class name="com.timp.test.BRB.testNg.NovoRelatorio">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@457e2f02]" name="beforeClass" is-config="true" duration-ms="13312" started-at="2020-08-12T10:47:54Z" finished-at="2020-08-12T10:48:07Z">
@@ -12,9 +21,25 @@
           </reporter-output>
         </test-method> <!-- beforeClass -->
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@457e2f02]" name="login" duration-ms="7502" started-at="2020-08-12T10:48:07Z" finished-at="2020-08-12T10:48:14Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="107012" started-at="2020-08-12T20:40:21Z" finished-at="2020-08-12T20:42:08Z">
+      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="beforeClass" is-config="true" duration-ms="15472" started-at="2020-08-12T17:40:21Z" finished-at="2020-08-12T17:40:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="login" duration-ms="10086" started-at="2020-08-12T17:40:37Z" finished-at="2020-08-12T17:40:47Z">
+=======
+    <test name="Default test" duration-ms="3977310" started-at="2020-08-12T13:47:17Z" finished-at="2020-08-12T14:53:34Z">
+      <class name="com.timp.test.BRB.PruebaAutomatizacion">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="login" duration-ms="36478" started-at="2020-08-12T07:47:17Z" finished-at="2020-08-12T07:47:54Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@457e2f02]" name="brbEntrar" duration-ms="309416" started-at="2020-08-12T10:48:14Z" finished-at="2020-08-12T10:53:24Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
@@ -74,8 +99,16 @@ Session ID: aff46d3eec30c2b10ae5bf970f1bea6f
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="acessarMDR" duration-ms="37049" started-at="2020-08-12T17:40:47Z" finished-at="2020-08-12T17:41:24Z">
+=======
+        <test-method status="PASS" signature="acessarBRB()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="acessarBRB" duration-ms="51797" started-at="2020-08-12T07:47:54Z" finished-at="2020-08-12T07:48:45Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- brbEntrar -->
         <test-method status="FAIL" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.testNg.NovoRelatorio@457e2f02]" name="novoRelatorio" duration-ms="24214" started-at="2020-08-12T10:53:24Z" finished-at="2020-08-12T10:53:48Z">
           <exception class="org.openqa.selenium.WebDriverException">
@@ -126,6 +159,32 @@ Session ID: aff46d3eec30c2b10ae5bf970f1bea6f
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+<<<<<<< HEAD
+        </test-method> <!-- acessarMDR -->
+        <test-method status="PASS" signature="Excluir()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="Excluir" duration-ms="44378" started-at="2020-08-12T17:41:24Z" finished-at="2020-08-12T17:42:08Z">
+=======
+        </test-method> <!-- acessarBRB -->
+        <test-method status="PASS" signature="paginacion()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="paginacion" duration-ms="75981" started-at="2020-08-12T07:48:45Z" finished-at="2020-08-12T07:50:01Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- Excluir -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-08-12T17:42:08Z" finished-at="2020-08-12T17:42:08Z">
+=======
+        </test-method> <!-- paginacion -->
+        <test-method status="PASS" signature="filtrosAvanzados()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="filtrosAvanzados" duration-ms="58054" started-at="2020-08-12T07:50:01Z" finished-at="2020-08-12T07:50:59Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir -->
+=======
+        </test-method> <!-- filtrosAvanzados -->
+        <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="novoRelatorio" duration-ms="133766" started-at="2020-08-12T07:50:59Z" finished-at="2020-08-12T07:53:13Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- novoRelatorio -->
@@ -437,8 +496,40 @@ Session ID: 8d45fe26678d3e10622c733c76e2057e
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- filtrosAvanzados -->
       </class> <!-- com.timp.test.BRB.testNg.FiltrosAvançados -->
     </test> <!-- Acessar BRB -->
   </suite> <!-- Testes de BRB -->
+=======
+        </test-method> <!-- comentarioLibre -->
+        <test-method status="PASS" signature="imprimir()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="imprimir" duration-ms="94328" started-at="2020-08-12T08:41:22Z" finished-at="2020-08-12T08:42:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imprimir -->
+        <test-method status="PASS" signature="regras()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="regras" duration-ms="128336" started-at="2020-08-12T08:42:57Z" finished-at="2020-08-12T08:45:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regras -->
+        <test-method status="PASS" signature="cabeçalho()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="cabeçalho" duration-ms="115998" started-at="2020-08-12T08:45:05Z" finished-at="2020-08-12T08:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cabeçalho -->
+        <test-method status="PASS" signature="exportar()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="exportar" duration-ms="119658" started-at="2020-08-12T08:47:01Z" finished-at="2020-08-12T08:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exportar -->
+        <test-method status="PASS" signature="visualizar()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="visualizar" duration-ms="85225" started-at="2020-08-12T08:49:01Z" finished-at="2020-08-12T08:50:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method status="PASS" signature="ExcluirRelatorio()[pri:0, instance:com.timp.test.BRB.PruebaAutomatizacion@4ae3c1cd]" name="ExcluirRelatorio" duration-ms="188582" started-at="2020-08-12T08:50:26Z" finished-at="2020-08-12T08:53:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcluirRelatorio -->
+      </class> <!-- com.timp.test.BRB.PruebaAutomatizacion -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 </testng-results>

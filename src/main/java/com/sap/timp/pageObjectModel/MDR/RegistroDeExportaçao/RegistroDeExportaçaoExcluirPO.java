@@ -75,6 +75,8 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		
 		boolean sucesso = nenhumResult.isDisplayed();
 		return sucesso;

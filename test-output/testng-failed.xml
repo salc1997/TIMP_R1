@@ -3,12 +3,30 @@
 <suite thread-count="4" name="Failed suite [Testes de BRB]" parallel="classes">
   <test name="Acessar BRB(failed)" parallel="classes">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.testNg.FiltrosAvançados">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarFiltrosAvançados">
+=======
+      <class name="com.timp.test.BRB.PruebaAutomatizacion">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="brbEntrar"/>
           <include name="filtrosAvanzados"/>
           <include name="beforeClass"/>
+=======
+<<<<<<< HEAD
+          <include name="filtros"/>
+          <include name="beforeClass"/>
+=======
+          <include name="filtroColunas"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.testNg.FiltrosAvançados -->
       <class name="com.timp.test.BRB.testNg.BRBAcessar">
         <methods>
@@ -25,6 +43,13 @@
           <include name="novoRelatorio"/>
         </methods>
       </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarFiltrosAvançados -->
+=======
+      </class> <!-- com.timp.test.BRB.PruebaAutomatizacion -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Acessar BRB(failed) -->
 </suite> <!-- Failed suite [Testes de BRB] -->

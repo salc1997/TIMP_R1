@@ -8,14 +8,15 @@
 	<test name="Acessar BRB" preserve-order="true">
 	 
 		<classes>
-			<class name="com.timp.test.BRB.testNg.BRBAcessar"></class>
-			<class name="com.timp.test.BRB.testNg.paginacion"></class>
-			<!-->
-			<class name="com.timp.test.BRB.testNg.FiltrosAvançados"></class>
-			
+ 		
 
+			<class name="com.timp.test.BRB.testNg.BRBAcessar"></class>
+			<!-- <listeners>
+				<class name="com.timp.test.BRB.testNg.paginacion"></class>
+			</listeners> --> 
+			<class name="com.timp.test.BRB.testNg.FiltrosAvançados"></class>
 			<class name="com.timp.test.BRB.testNg.NovoRelatorio"></class>
-			 <!-->
+		
 		</classes>
 	
 	</test>

@@ -39,7 +39,9 @@ public class FiltrosAvançados extends TestBaseSteven{
 	public void afterClass(){
 		//driver.close();
 	}
-  */
+  	*/
+  
+  
 	@Test(priority = 0)
 	public void login() {
 

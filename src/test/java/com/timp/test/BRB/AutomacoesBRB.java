@@ -8,7 +8,7 @@ import com.sap.timp.pageObjectModel.BRB.*;
 import com.timp.test.ADM.*;
 import com.timp.test.BRB.*;
 
-public class PruebaAutomatizacion extends TestBaseSteven{
+public class AutomacoesBRB extends TestBaseSteven{
 	LoginTest loginTest;
 	BRBAcessar brbAcessar;
 	paginacion paginacion;

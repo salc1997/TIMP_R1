@@ -328,7 +328,7 @@ public class AutomacoesBRB extends TestBaseSteven{
 		
 	}
    
-    
+    /*
  
     @Test(priority = 24)
     public void regras() {
@@ -342,7 +342,7 @@ public class AutomacoesBRB extends TestBaseSteven{
 		
 		
 	}
-    
+    */
     @Test(priority = 25)
     public void cabeçalho() {
 		cabeçalho = new Cabeçalho();

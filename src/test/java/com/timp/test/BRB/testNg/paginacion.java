@@ -35,17 +35,17 @@ public class paginacion extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 		
-		initialization();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		paginacionPO = new PaginacionPO();
 	}
-
+	/*
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-
+	*/
 	@Test(priority = 1)
 	public void login() {
 

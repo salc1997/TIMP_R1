@@ -8,7 +8,7 @@ import com.sap.timp.pageObjectModel.BRB.*;
 import com.timp.test.ADM.*;
 import com.timp.test.BRB.*;
 
-public class PruebaAutomatizacion extends TestBaseSteven{
+public class AutomacoesBRB extends TestBaseSteven{
 	LoginTest loginTest;
 	BRBAcessar brbAcessar;
 	paginacion paginacion;
@@ -328,7 +328,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		
 	}
    
-    
+    /*
  
     @Test(priority = 24)
     public void regras() {
@@ -342,7 +342,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 		
 		
 	}
-    
+    */
     @Test(priority = 25)
     public void cabeçalho() {
 		cabeçalho = new Cabeçalho();

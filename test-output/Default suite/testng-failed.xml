@@ -3,53 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.testNg.BRBAcessar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarFiltrosAvançados">
-=======
-      <class name="com.timp.test.BRB.PruebaAutomatizacion">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoCriar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
           <include name="beforeClass"/>
-          <include name="login"/>
-          <include name="brbEntrar"/>
-=======
-<<<<<<< HEAD
-          <include name="filtros"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-=======
-          <include name="filtroColunas"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <include name="criar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarFiltrosAvançados -->
-=======
-      </class> <!-- com.timp.test.BRB.PruebaAutomatizacion -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

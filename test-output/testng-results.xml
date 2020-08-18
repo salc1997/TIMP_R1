@@ -1,29 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="3" passed="3">
+=======
+<testng-results skipped="0" failed="0" total="4" passed="4">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="180577" started-at="2020-08-18T20:10:14Z" finished-at="2020-08-18T20:13:15Z">
+=======
+  <suite name="Default suite" duration-ms="188011" started-at="2020-08-18T02:46:02Z" finished-at="2020-08-18T02:49:10Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="180577" started-at="2020-08-18T20:10:14Z" finished-at="2020-08-18T20:13:15Z">
       <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="18229" started-at="2020-08-18T17:10:14Z" finished-at="2020-08-18T17:10:32Z">
+=======
+    <test name="Default test" duration-ms="188011" started-at="2020-08-18T02:46:02Z" finished-at="2020-08-18T02:49:10Z">
+      <class name="com.timp.test.BRB.Eliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="beforeClass" is-config="true" duration-ms="17014" started-at="2020-08-17T20:46:02Z" finished-at="2020-08-17T20:46:19Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="login" duration-ms="10176" started-at="2020-08-18T17:10:32Z" finished-at="2020-08-18T17:10:42Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="login" duration-ms="9864" started-at="2020-08-17T20:46:19Z" finished-at="2020-08-17T20:46:28Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="acessarMDR" duration-ms="43988" started-at="2020-08-18T17:10:42Z" finished-at="2020-08-18T17:11:26Z">
+=======
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="brbEntrar" duration-ms="28290" started-at="2020-08-17T20:46:28Z" finished-at="2020-08-17T20:46:57Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="Visualizar" duration-ms="108153" started-at="2020-08-18T17:11:26Z" finished-at="2020-08-18T17:13:15Z">
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminar" duration-ms="62878" started-at="2020-08-17T20:46:57Z" finished-at="2020-08-17T20:48:00Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Visualizar -->
       </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar -->
+=======
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminarLixeira" duration-ms="65627" started-at="2020-08-17T20:48:00Z" finished-at="2020-08-17T20:49:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="afterClass" is-config="true" duration-ms="4321" started-at="2020-08-17T20:49:05Z" finished-at="2020-08-17T20:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRB.Eliminar -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -63,6 +63,8 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

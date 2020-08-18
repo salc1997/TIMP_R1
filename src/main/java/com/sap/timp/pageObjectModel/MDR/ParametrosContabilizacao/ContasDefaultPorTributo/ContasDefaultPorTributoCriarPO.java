@@ -1,45 +1,48 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
+package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultPorTributo;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
-	
-	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
-	public WebElement tabelaApoioSped;
-	
-	@FindBy(xpath = "//span[text()=\"4.3.3 Tabela Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement tabelacodigo;
-	
-	@FindBy(xpath = "//span[text()=\"Novo Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement novocodigo;
-	
-	@FindBy(xpath = "//div[@id=\"select\" and @class=\"base-select-wrapper\"]/div[2]")
-	public WebElement tributo;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaotributo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código CST\"]")
-	public WebElement codigocst;
+public class ContasDefaultPorTributoCriarPO extends TestBaseEliel {
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
+	public WebElement parametrosdecontabilizacao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datadeiniciodevigencia;
+	@FindBy(xpath = "//span[text()=\"Contas Default por Tributo (Substituir Conta Estoque)\"]")
+	public WebElement contasdefaultportributo;
+	
+	@FindBy(xpath = "//span[text()=\"Nova Conta Default por Tributo\"]")
+	public WebElement novacontadefaultportributo;
+	
+	@FindBy(xpath = "//div[@class=\"field-element companyId_0_0\"]/div/div/div/div[2]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcaoempresa;
+	
+	@FindBy(xpath = "//div[@class=\"field-element branchId_0_0\"]/div/div/div/div[2]")
+	public WebElement filial;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcaofilial;
+	
+	
+	@FindBy(xpath = "//div[@class=\"field-element adjustmentCode_0_1\"]/div/div/div/div[2]")
+	public WebElement codigodeajuste;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a data de início de vigência\"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -54,22 +57,26 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
+	public WebElement opcaocodigodeajuste;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Débito\"]")
+	public WebElement contadebito;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Crédito\"]")
+	public WebElement contacredito;
 	
 	
-	public TabelaCodigoDaSituaçaoTributariaCriarPO() {
+	public ContasDefaultPorTributoCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		sleep(2000);
-		tabelaApoioSped.click();
+		parametrosdecontabilizacao.click();
 		sleep(2000);
-		
-		tabelacodigo.click();
-		
-		sleep(2000);
-		
+		contasdefaultportributo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -87,29 +94,49 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		//criaçao
-		novocodigo.click();
-		
+		novacontadefaultportributo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tributo.click();
-		
-		sleep(2000);
-		opcaotributo.click();
-		
-		sleep(2000);
-		codigocst.sendKeys("09");
+		empresa.click();
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste");
+		opcaoempresa.click();
+		
+		sleep(2000);
+		Actions action = new Actions(driver); 
+		action.sendKeys(Keys.ESCAPE).build().perform(); 
+		sleep(2000);
+		
+		filial.click();
 		
 		sleep(2000);
 		
-		String data = fechaActual();
+		opcaofilial.click();
+		
 		sleep(2000);
-		datadeiniciodevigencia.sendKeys(data);
-		//datadeiniciodevigencia.sendKeys("15/08/2020");
+		
+		//Actions action1 = new Actions(driver); 
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		//filial.sendKeys(Keys.ESCAPE);
+		//dobleClickElement(filial);
+		attributeToBeXpath("//div[@class=\"field-element adjustmentCode_0_1\"]/div","class", "input-element-wrapper");
+		sleep(2000);
+
+		codigodeajuste.click();
+		
+		sleep(2000);
+		
+		opcaocodigodeajuste.click();
+		
+		sleep(2000);
+		contadebito.sendKeys("1234567890");
+		sleep(2000);
+		contacredito.sendKeys("9876543210");
+		
+		sleep(2000);
 		
 		gravar.click();
 		sleep(2000);
@@ -148,9 +175,6 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		
 		System.out.println(sucesso);
 		return sucesso;
-		
-	}
-	
-	
+	}		
 
 }

@@ -101,7 +101,8 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhesPO extends TestBaseEliel {
 		
 		siguiente.click();
 		
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro1 = idObter1();
 		

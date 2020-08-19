@@ -54,6 +54,9 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[11]/div[3]/div")	
 	public WebElement idC;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição de Cenário\"]")
+	public WebElement descricaocenario;
+	
 	public CenariosCorrecaoCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -113,6 +116,8 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 		sleep(1000);
 		opc.click();
 		
+		descricaocenario.sendKeys("Teste automatizado cenário");
+		sleep(2000);
 		dataVigencia.sendKeys(Keys.ENTER);
 		dataVigencia.sendKeys("24/07/2020");
 		dataVigencia.sendKeys(Keys.ENTER);

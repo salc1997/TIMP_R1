@@ -3,13 +3,102 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.FormatacaoEVariante">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoCriar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.Eliminar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.testNg.BRBAcessar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarFiltrosAvançados">
+=======
+      <class name="com.timp.test.BRB.PruebaAutomatizacion">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          <include name="eliminarLixeira"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="excluirVariante"/>
+=======
+<<<<<<< HEAD
+          <include name="criar"/>
+=======
+<<<<<<< HEAD
+=======
+          <include name="login"/>
+          <include name="brbEntrar"/>
+=======
+<<<<<<< HEAD
+          <include name="filtros"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="editar"/>
+=======
+=======
+          <include name="filtroColunas"/>
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoCriar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.Eliminar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.testNg.BRBAcessar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarFiltrosAvançados -->
+=======
+      </class> <!-- com.timp.test.BRB.PruebaAutomatizacion -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

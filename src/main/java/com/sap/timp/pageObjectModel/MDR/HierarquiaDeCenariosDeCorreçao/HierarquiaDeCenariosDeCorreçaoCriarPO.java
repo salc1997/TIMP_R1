@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
+package com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,39 +7,41 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
+public class HierarquiaDeCenariosDeCorreçaoCriarPO extends TestBaseEliel {
 	
-	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
-	public WebElement tabelaApoioSped;
 	
-	@FindBy(xpath = "//span[text()=\"4.3.3 Tabela Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement tabelacodigo;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement novocodigo;
+	@FindBy(xpath = "//span[text()=\"Hierarquias de Cenários de Correção\"]")
+	public WebElement hiearquiasdecenariosdecorrecao;
 	
-	@FindBy(xpath = "//div[@id=\"select\" and @class=\"base-select-wrapper\"]/div[2]")
+	
+	@FindBy(xpath = "//span[text()=\"Nova Hierarquia de Cenários de Correção\"]")
+	public WebElement novahierarquia;
+	
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"tax\"]/div/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
 	public WebElement opcaotributo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código CST\"]")
-	public WebElement codigocst;
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"correction-object\"]/div/div/div/div[2]")
+	public WebElement objetodecorrecao;
 	
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
+	public WebElement opcaoobjetodecorrecao;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"valid-from\"]/div/div/input")
 	public WebElement datadeiniciodevigencia;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a data de início de vigência\"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -54,20 +56,24 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//span[text()=\"Adicionar Cenário de Correção\"]")
+	public WebElement adicionacenariodecorreçao;
+	
+	@FindBy(xpath = "//div[@class=\"field element-2\" and @id=\"scenario-2\"]/div/div/div/div[2]")
+	public WebElement cenariodecorrecao;
+	
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
+	public WebElement opcaocenariodecorrecao;
 	
 	
-	public TabelaCodigoDaSituaçaoTributariaCriarPO() {
+	public HierarquiaDeCenariosDeCorreçaoCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		sleep(2000);
-		tabelaApoioSped.click();
-		sleep(2000);
-		
-		tabelacodigo.click();
-		
+		hiearquiasdecenariosdecorrecao.click();
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -87,7 +93,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		//criaçao
-		novocodigo.click();
+		novahierarquia.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -98,18 +104,27 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		opcaotributo.click();
 		
 		sleep(2000);
-		codigocst.sendKeys("09");
-		
+		objetodecorrecao.click();
+		sleep(2000);
+		opcaoobjetodecorrecao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		descricao.sendKeys("Teste");
-		
-		sleep(2000);
-		
-		String data = fechaActual();
-		sleep(2000);
+		String data = dataanterior();
 		datadeiniciodevigencia.sendKeys(data);
-		//datadeiniciodevigencia.sendKeys("15/08/2020");
+		
+		sleep(2000);
+		
+		adicionacenariodecorreçao.click();
+		sleep(2000);
+		
+		cenariodecorrecao.click();
+		sleep(2000);
+		
+		opcaocenariodecorrecao.click();
+		
+		sleep(2000);
 		
 		gravar.click();
 		sleep(2000);
@@ -149,8 +164,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		System.out.println(sucesso);
 		return sucesso;
 		
-	}
-	
+	}	
 	
 
 }

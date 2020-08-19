@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
+package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultPorTributo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,39 +7,40 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TabelaCodigoDaSituaçaoTributariaEditarPO extends TestBaseEliel{
+public class ContasDefaultPorTributoDetalhesPO extends TestBaseEliel{
+
 	
-	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
-	public WebElement tabelaApoioSped;
-	
-	@FindBy(xpath = "//span[text()=\"4.3.3 Tabela Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement tabelacodigo;
-	
-	@FindBy(xpath = "//span[text()=\"Novo Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement novocodigo;
-	
-	@FindBy(xpath = "//div[@id=\"select\" and @class=\"base-select-wrapper\"]/div[2]")
-	public WebElement tributo;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaotributo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código CST\"]")
-	public WebElement codigocst;
+	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
+	public WebElement parametrosdecontabilizacao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//span[text()=\"Contas Default por Tributo (Substituir Conta Estoque)\"]")
+	public WebElement contasdefaultportributo;
+	
+	@FindBy(xpath = "//span[text()=\"Nova Conta Default por Tributo\"]")
+	public WebElement novacontadefaultportributo;
+	
+	@FindBy(xpath = "//div[@class=\"field-element companyId_0_0\"]/div/div/div/div[2]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcaoempresa;
+	
+	@FindBy(xpath = "//div[@class=\"field-element branchId_0_0\"]/div/div/div/div[2]")
+	public WebElement filial;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcaofilial;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datadeiniciodevigencia;
+	@FindBy(xpath = "//div[@class=\"field-element adjustmentCode_0_1\"]/div/div/div/div[2]")
+	public WebElement codigodeajuste;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a data de início de vigência\"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -54,25 +55,33 @@ public class TabelaCodigoDaSituaçaoTributariaEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
+	public WebElement opcaocodigodeajuste;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Débito\"]")
+	public WebElement contadebito;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Crédito\"]")
+	public WebElement contacredito;
+	
+	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
+	public WebElement fechar;
 	
 	
-	public TabelaCodigoDaSituaçaoTributariaEditarPO() {
+	public ContasDefaultPorTributoDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
-		sleep(2000);
-		tabelaApoioSped.click();
-		sleep(2000);
-		
-		tabelacodigo.click();
+	public String detalhes() {
 		
 		sleep(2000);
-		
+		parametrosdecontabilizacao.click();
+		sleep(2000);
+		contasdefaultportributo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+	
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -82,36 +91,18 @@ public class TabelaCodigoDaSituaçaoTributariaEditarPO extends TestBaseEliel{
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		
-		editar.click();
+		detalhes.click();
 		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		//ediçao
-		
-		descricao.clear();
-		
-		sleep(2000);
-		
-		descricao.sendKeys("Teste da Descrição");
-		
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		sim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		biblioteca.click();
+		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -124,7 +115,6 @@ public class TabelaCodigoDaSituaçaoTributariaEditarPO extends TestBaseEliel{
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		
 		actionsMoveToElementElement(menu1);
 		sleep(2000);
 		menu1.click();
@@ -136,10 +126,7 @@ public class TabelaCodigoDaSituaçaoTributariaEditarPO extends TestBaseEliel{
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		System.out.println(sucesso);	
-		return sucesso;
+		return sucesso;	
 		
 	}
-	
-	
-
 }

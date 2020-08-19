@@ -1,4 +1,4 @@
-package com.timp.test.BRB;
+package com.timp.test.BRB.Automacoes;
 
 
 import org.testng.annotations.Test;

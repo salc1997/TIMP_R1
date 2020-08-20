@@ -1,69 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="3" passed="3">
-=======
-<testng-results skipped="0" failed="0" total="4" passed="4">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="180577" started-at="2020-08-18T20:10:14Z" finished-at="2020-08-18T20:13:15Z">
-=======
-  <suite name="Default suite" duration-ms="188011" started-at="2020-08-18T02:46:02Z" finished-at="2020-08-18T02:49:10Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+  <suite name="Default suite" duration-ms="63319" started-at="2020-08-20T18:38:23Z" finished-at="2020-08-20T18:39:27Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="180577" started-at="2020-08-18T20:10:14Z" finished-at="2020-08-18T20:13:15Z">
-      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="18229" started-at="2020-08-18T17:10:14Z" finished-at="2020-08-18T17:10:32Z">
-=======
-    <test name="Default test" duration-ms="188011" started-at="2020-08-18T02:46:02Z" finished-at="2020-08-18T02:49:10Z">
-      <class name="com.timp.test.BRB.Eliminar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="beforeClass" is-config="true" duration-ms="17014" started-at="2020-08-17T20:46:02Z" finished-at="2020-08-17T20:46:19Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+    <test name="Default test" duration-ms="63319" started-at="2020-08-20T18:38:23Z" finished-at="2020-08-20T18:39:27Z">
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="beforeClass" is-config="true" duration-ms="15930" started-at="2020-08-20T15:38:23Z" finished-at="2020-08-20T15:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="login" duration-ms="10176" started-at="2020-08-18T17:10:32Z" finished-at="2020-08-18T17:10:42Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="login" duration-ms="9864" started-at="2020-08-17T20:46:19Z" finished-at="2020-08-17T20:46:28Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="login" duration-ms="9349" started-at="2020-08-20T15:38:39Z" finished-at="2020-08-20T15:38:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="acessarMDR" duration-ms="43988" started-at="2020-08-18T17:10:42Z" finished-at="2020-08-18T17:11:26Z">
-=======
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="brbEntrar" duration-ms="28290" started-at="2020-08-17T20:46:28Z" finished-at="2020-08-17T20:46:57Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="acessarMDR" duration-ms="11623" started-at="2020-08-20T15:38:49Z" finished-at="2020-08-20T15:39:00Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@8e0379d]" name="Visualizar" duration-ms="108153" started-at="2020-08-18T17:11:26Z" finished-at="2020-08-18T17:13:15Z">
-=======
-        </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminar" duration-ms="62878" started-at="2020-08-17T20:46:57Z" finished-at="2020-08-17T20:48:00Z">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        <test-method status="FAIL" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="excluir" duration-ms="26381" started-at="2020-08-20T15:39:00Z" finished-at="2020-08-20T15:39:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O registro não foi eliminado com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O registro não foi eliminado com sucesso expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir.excluir(CodigosDasObrigaçoesDeICMSaRecolherExcluir.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- Visualizar -->
-      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar -->
-=======
-        </test-method> <!-- eliminar -->
-        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminarLixeira" duration-ms="65627" started-at="2020-08-17T20:48:00Z" finished-at="2020-08-17T20:49:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eliminarLixeira -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="afterClass" is-config="true" duration-ms="4321" started-at="2020-08-17T20:49:05Z" finished-at="2020-08-17T20:49:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.Eliminar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+        </test-method> <!-- excluir -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

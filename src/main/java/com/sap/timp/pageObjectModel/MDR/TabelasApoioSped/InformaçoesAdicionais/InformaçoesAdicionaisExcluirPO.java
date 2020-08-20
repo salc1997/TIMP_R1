@@ -69,7 +69,7 @@ public class InformaçoesAdicionaisExcluirPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void excluir() {
+	public boolean excluir() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -94,25 +94,35 @@ public class InformaçoesAdicionaisExcluirPO extends TestBaseEliel {
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(2000);
-		
+		sleep(3000);
+		waitExpectElement(aceitar);
 		aceitar.click();
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		filtrosavancados.click();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
 		
-		filtrousuario.click();
-		sleep(2000);
-		usuario.click();
+		boolean sucesso = false;
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		//Falta pesquisar o id para ver se excluiu
+		if (id1 != id2) {
+			sucesso= true;
+		}
+		
+		return sucesso;
 		
 	}
 

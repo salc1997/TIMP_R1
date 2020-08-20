@@ -84,16 +84,36 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		actionsMoveToElementElement(menu);
 		sleep(4000);
-		
+	
 		menu.click();
 		sleep(1000);
 		excluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		waitExpectElement(confirmacionGravar);
-		confirmacionGravar.click();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
 		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+		System.out.println(sucesso);
+		/*
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -101,8 +121,9 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		*/
 		
-		boolean sucesso = nenhumResult.isDisplayed();
+		//boolean sucesso = nenhumResult.isDisplayed();
 		return sucesso;
 		
 	}

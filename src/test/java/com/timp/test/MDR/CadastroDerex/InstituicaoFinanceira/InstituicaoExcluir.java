@@ -47,8 +47,10 @@ public class InstituicaoExcluir extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void visualizar() {
+	  public void excluir() {
 		  
-		  institucaoEliminarPO.eliminar();
+		  boolean sucesso=institucaoEliminarPO.eliminar();
+		  
+		  assertTrue(sucesso, Eliminado);
 	  }
 }

@@ -44,13 +44,13 @@ public class TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(td1);
 		return driver;
 
 	}
 	
 	public void close() {
-	
+
 		
 	}
 
@@ -152,6 +152,14 @@ public class TestBaseSteven {
 	public Double convertToDouble(String numero) {
 
 		Double result = new Double(numero);
+
+		return result;
+
+	}
+	
+	public int convertToInt(String numero) {
+
+		int result = new Integer(numero);
 
 		return result;
 

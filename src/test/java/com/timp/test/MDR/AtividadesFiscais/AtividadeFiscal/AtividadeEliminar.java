@@ -46,8 +46,9 @@ public class AtividadeEliminar extends TestBaseSteven{
 	public void eliminar() {
 
 		
-		atividadeEliminarPO.eliminar();
-	
+		boolean sucesso = atividadeEliminarPO.eliminar();
+		
+		assertTrue(sucesso, Eliminado);
 
 	}
 }

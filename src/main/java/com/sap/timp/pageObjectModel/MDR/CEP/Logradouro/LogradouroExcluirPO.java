@@ -35,7 +35,7 @@ public class LogradouroExcluirPO extends TestBaseKathy{
 	public LogradouroExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public boolean logradouroExcluir() {
 		cep.click();
 		sleep(1000);

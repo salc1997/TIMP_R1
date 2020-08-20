@@ -63,7 +63,7 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 	
 	public boolean cenariosCorrecaoCriar() {
 		String url = driver.getCurrentUrl();
-		
+	
 		boolean tc2 = false;
 		boolean td1 = false;
 		boolean tp1 = false;

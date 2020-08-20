@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,29 +32,29 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 	public WebElement empresa;
 	
 	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//div[@class=\"list-item\" and  @id][1]/div/label/span")
 	public WebElement opcaoempresa;
 	
 	@FindBy(xpath ="//input[@placeholder=\"Selecionar UF Filial\"]")
 	public WebElement selecionaruffilial; 
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcaouffilial;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filiais\"]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//*[@id=\"0001\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label[1]/span")
 	public WebElement opcao1filial;
 	
 
-	@FindBy(xpath = "//*[@id=\"0002\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label[1]/span")
 	public WebElement opcao2filial;
 	
 	@FindBy(xpath="//input[ @placeholder=\"Selecionar Filial Centralizadora\"]")
 	public WebElement filialcentralizadora;
 	
-	@FindBy(xpath="//*[@id=\"option-1\"]")
+	@FindBy(xpath="//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcaofialcentralizadora;
 	
 	@FindBy(xpath = "//*[@id=\"tabs\"]/div/div/div[3]/div[5]/div/div/div[1]/div/div/label/span")
@@ -81,8 +82,8 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idR;
 	
-	@FindBy (xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
-	public WebElement seguinte;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	
 	public EstornoCreditoCriarPO() {
@@ -90,23 +91,24 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	
+
 	public boolean CriarEstornoCredito() {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		centralizacao.click();
 		sleep(2000);
 		estornocredito.click();
-		
-		waitExpectElement(pesquisa);
-		//Pega o ultimo id
-		idC.click();
-		dobleClickElement(idC);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		siguiente.click();
 		
-		String id = idR.getText();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-	
+
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
 		//gera um novo arquivo
 		novoestorno.click();
 		sleep(2000);
@@ -131,7 +133,7 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 		opcao2filial.click();
 		
 		opcao2filial.sendKeys(Keys.ESCAPE);
-		
+	
 		filialcentralizadora.click();
 		
 		opcaofialcentralizadora.click();
@@ -147,18 +149,22 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 		gravar.click();
 		
 		butaosim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//Pega o ultimo id depois do preenchimento
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
+		siguiente.click();
 		
-		String idB = idR.getText();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idInserir1(idB);
 		System.out.println(id);
 		System.out.println(idB);
 		

@@ -56,7 +56,7 @@ public class EstornoCreditoExcluirPO extends TestBaseEliel {
 	}
 	
 public boolean excluir() {
-		
+	
 		
 		//Actions action = new Actions(driver);
 
@@ -97,7 +97,7 @@ public boolean excluir() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-	
+		
 		waitExpectElement(pesquisa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		pesquisa.sendKeys(id);

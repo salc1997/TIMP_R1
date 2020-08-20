@@ -64,7 +64,6 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 
 		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
 		sleep(2000);
-
 		String url = driver.getCurrentUrl();
 		String valor = campo.getAttribute("value");
 

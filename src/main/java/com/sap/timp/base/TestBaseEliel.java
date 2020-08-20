@@ -26,12 +26,12 @@ public class TestBaseEliel extends TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
 
 		return driver;
 
 	}
-	
+
 	public void sleep(int miliSeconds) {
 		try {
 			Thread.sleep(miliSeconds);

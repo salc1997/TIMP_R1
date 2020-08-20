@@ -143,19 +143,31 @@ String url = driver.getCurrentUrl();
 		sleep(2000);
 		aceitar.click();
 		sleep(3000);
-		
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-	
-		boolean sucesso = nenhumResult.isDisplayed();
-		System.out.println(sucesso);
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+		System.out.println( sucesso);
 		return sucesso;
 
 	

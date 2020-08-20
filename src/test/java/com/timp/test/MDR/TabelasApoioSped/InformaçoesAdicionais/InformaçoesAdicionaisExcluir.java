@@ -10,6 +10,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
@@ -47,7 +48,9 @@ public class InformaçoesAdicionaisExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		informaçoesAdicionaisExcluirPO.excluir();
+		boolean sucesso = informaçoesAdicionaisExcluirPO.excluir();
+		
+		assertTrue(sucesso, Eliminado);
 		
 	}	
 		

@@ -26,15 +26,7 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//span[text()=\"Novo Estorno de Crédito de Insumos\"]")
 	public WebElement novoestorno;
-	
-	@FindBy(xpath ="//div[@class=\"tr\" and @ data-id][10]/div[2]/label/span")
-	public WebElement registro;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
+
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -62,39 +54,42 @@ public class EstornoCreditoEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id]/div[10]/div")
 	public WebElement data;
 	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
+	
 	public EstornoCreditoEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
-	
-	
+
 	public void Editar() {
 		//espera a página carregar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		centralizacao.click();
 		sleep(2000);
 		estornocredito.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String idRegistro = idObter1();
 		
-		//Pega o ultimo id
-		setafinal.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-				
-		String id = idR.getText();
-		sleep(2000);
-		//System.out.println(id);
+		System.out.println(idRegistro);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+
+		sleep(4000);
 		
 		String texto = data.getText();
 		System.out.println(texto);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);			
-		opcao.click();
-				
-		engrenagem.click();
-				
+		sleep(2000);	
+		menu.click();
+		sleep(1000);
 		editar.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

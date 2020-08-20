@@ -10,16 +10,16 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class AtividadeCriarPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades1;
 
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]/ul/li[1]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"][1]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividadesO1;
 
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades2;
 
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]/ul/li[1]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"][1]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividadesO2;
 
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
@@ -88,7 +88,7 @@ public class AtividadeCriarPO extends TestBaseSteven{
 	public WebElement atividadesO;
 
 	
-	
+
 	public AtividadeCriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -167,7 +167,7 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
-		
+	
 		biblioteca.click();
 		waitExpectElement(sim);
 		sleep(2000);

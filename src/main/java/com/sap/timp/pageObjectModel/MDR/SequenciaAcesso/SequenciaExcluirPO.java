@@ -28,6 +28,9 @@ public class SequenciaExcluirPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
+	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement sim;
 
 
 	//@FindBy(xpath = "//div[@class=\"tr\" and @data-id][4]/div/div/div[2]/ul/li[4]/span[2]")
@@ -76,17 +79,36 @@ public class SequenciaExcluirPO extends TestBaseEliel{
 		
 		excluir.click();
 		sleep(2000);
-		sleep(1000);
-		butaosim.click();
+		waitExpectElement(sim);
+		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		//recarrega a pagina
 		driver.navigate().refresh();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(siguiente);
 		sleep(2000);
-	
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+
+		
+		/*
 		waitExpectElement(pesquisa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		pesquisa.sendKeys(idRegistro);
@@ -94,6 +116,7 @@ public class SequenciaExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		boolean sucesso = nenhumResult.isDisplayed();
+		*/
 		System.out.println(sucesso);
 		return sucesso;
 	

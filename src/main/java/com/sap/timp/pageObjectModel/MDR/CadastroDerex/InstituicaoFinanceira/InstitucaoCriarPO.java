@@ -93,7 +93,7 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
-	
+
 	public boolean criar() {
 		
 		derex.click();
@@ -190,7 +190,7 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir1(idB);
 		sleep(2000);
-		
+	
 		double idbD = convertToDouble(idB);
 		double idD = convertToDouble(id);
 		

@@ -54,9 +54,9 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//*[@id=\"detalheTipoTributo\"]/div/div[2]")
 	public WebElement detalhe;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement detalheO;
-	@FindBy(xpath = "//li[@id=\"2\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement detalheOTq1;
 	
 	@FindBy(xpath = "//div[contains(@id,\"Antecipacao\")]/div/div/input")
@@ -67,27 +67,27 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@id=\"baseAntecipacao\"]/div/div[2]")
 	public WebElement base;
-	@FindBy(xpath = "//*[@id=\"01\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement baseOTd1;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement baseOTc2;
 	
 	
 	@FindBy(xpath = "//div[@id=\"linhaDeducao\"]/div/div[2]")
 	public WebElement linha;
-	@FindBy(xpath = "//*[@id=\"01\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement linhaOTd1;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement linhaOTc2;
 	
 	@FindBy(xpath = "//div[@id=\"codRegLancSped\"]/div/div/div[2]")
 	public WebElement lancamento;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement lancamentoO;
 	
 	@FindBy(xpath = "//div[@id=\"modRelatorio\"]/div/div/div[2]")
 	public WebElement modelo;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement modeloO;
 	
 	@FindBy(xpath = "//*[@id=\"dtInicio\"]/div/div[1]/input")
@@ -120,7 +120,7 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	}
 	
 	
-	
+
 	public boolean criarAntecipacao() {
 		
 		String url = driver.getCurrentUrl();
@@ -163,7 +163,7 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		novaAntecipacao.click();
 		sleep(2000);
 		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
-		sleep(2000);
+		sleep(5000);
 		
 		empresa.click();
 		sleep(2000);
@@ -244,8 +244,10 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		modeloO.click();
 		sleep(2000);
 		
+		String dataH = fechaActual();
 		
-		data.sendKeys("01/07/2020");
+		
+		data.sendKeys(dataH);
 		sleep(2000);
 		gravar.click();
 		sleep(3000);
@@ -269,6 +271,7 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
 		idInserir1(id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);

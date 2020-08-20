@@ -97,7 +97,6 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 		sleep(2000);
 
 		String idRegistro = idObter3();
-
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		actionsMoveToElementElement(menu);
@@ -112,17 +111,41 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 		waitExpectElement(butaosim);
 		sleep(2000);
 		butaosim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 
-		waitExpectElement(pesquisa);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+
+		
+		/*
 		pesquisa.sendKeys(idRegistro);
 		pesquisa.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		boolean sucesso = nenhumResult.isDisplayed();
+		*/
 		System.out.println(sucesso);
 		return sucesso;
 

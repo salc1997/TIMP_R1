@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="3" passed="2">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="63319" started-at="2020-08-20T18:38:23Z" finished-at="2020-08-20T18:39:27Z">
+=======
+  <suite name="Default suite" duration-ms="109398" started-at="2020-08-20T02:50:32Z" finished-at="2020-08-20T02:52:21Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="63319" started-at="2020-08-20T18:38:23Z" finished-at="2020-08-20T18:39:27Z">
       <class name="com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="beforeClass" is-config="true" duration-ms="15930" started-at="2020-08-20T15:38:23Z" finished-at="2020-08-20T15:38:39Z">
+=======
+    <test name="Default test" duration-ms="109398" started-at="2020-08-20T02:50:32Z" finished-at="2020-08-20T02:52:21Z">
+      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="beforeClass" is-config="true" duration-ms="28696" started-at="2020-08-19T20:50:32Z" finished-at="2020-08-19T20:51:00Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="login" duration-ms="9349" started-at="2020-08-20T15:38:39Z" finished-at="2020-08-20T15:38:49Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="login" duration-ms="6894" started-at="2020-08-19T20:51:00Z" finished-at="2020-08-19T20:51:07Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="acessarMDR" duration-ms="11623" started-at="2020-08-20T15:38:49Z" finished-at="2020-08-20T15:39:00Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="acessarMDR" duration-ms="9139" started-at="2020-08-19T20:51:07Z" finished-at="2020-08-19T20:51:16Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir@8e0379d]" name="excluir" duration-ms="26381" started-at="2020-08-20T15:39:00Z" finished-at="2020-08-20T15:39:27Z">
           <exception class="java.lang.AssertionError">
             <message>
@@ -57,10 +80,22 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+        <test-method status="PASS" signature="Excluir()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="Excluir" duration-ms="64656" started-at="2020-08-19T20:51:16Z" finished-at="2020-08-19T20:52:21Z">
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- excluir -->
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherExcluir -->
+=======
+        </test-method> <!-- Excluir -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-08-19T20:52:21Z" finished-at="2020-08-19T20:52:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir -->
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

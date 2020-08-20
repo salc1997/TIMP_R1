@@ -40,8 +40,8 @@ public class CadastroCondicaoExcluirPO  extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisa;
 	
-	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
-	public WebElement nenhumResult;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	public CadastroCondicaoExcluirPO() {
 		PageFactory.initElements(driver, this);
@@ -51,7 +51,6 @@ public boolean excluir() {
 		
 		
 		//Actions action = new Actions(driver);
-
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		cadastrocondicao.click();
@@ -80,15 +79,32 @@ public boolean excluir() {
 		waitExpectElement(butaosim);
 		sleep(2000);
 		butaosim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		//recarrega a pagina
 		driver.navigate().refresh();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(siguiente);
 		sleep(2000);
-	
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+		/*
 		waitExpectElement(pesquisa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		pesquisa.sendKeys(idRegistro);
@@ -96,6 +112,8 @@ public boolean excluir() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		boolean sucesso = nenhumResult.isDisplayed();
+		
+		*/
 		System.out.println(sucesso);
 		return sucesso;
 	}

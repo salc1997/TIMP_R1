@@ -43,7 +43,7 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public boolean excluir() {
 		sleep(2000);
 		registroexportacao.click();
@@ -69,8 +69,33 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 		excluir.click();
 		sleep(2000);
 		sim.click();
+
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]")).getAttribute("data-id");
+		
+		System.out.println(id);
+		
+		boolean sucesso = false;
+		
+		if (id!= idRegistro) {
+			sucesso= true;
+		}
+		System.out.println(sucesso);
+		
+		/*
+		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -79,6 +104,7 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 		sleep(3000);
 		
 		boolean sucesso = nenhumResult.isDisplayed();
+		*/
 		return sucesso;
 	}
 

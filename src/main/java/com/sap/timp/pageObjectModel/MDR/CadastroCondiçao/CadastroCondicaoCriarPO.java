@@ -73,7 +73,7 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
 	public WebElement camposestrutura;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Atribuição\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Ano\"]")
 	public WebElement atribuicao;
 	
 	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[2]/div/div[3]/div/span[1]")
@@ -99,7 +99,7 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	public CadastroCondicaoCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	
 	
 	public boolean criar() {
@@ -191,18 +191,21 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		//pega a data atual
 		String dataatual = fechaActual();
-		vigenciade.sendKeys(dataatual);
+		vigenciade.sendKeys(dataatual);		
 				
 		sleep(2000);
 		camposestrutura.click();
 		sleep(2000);
-		atribuicao.sendKeys("campo");
+		atribuicao.sendKeys("teste");
 		
 		gravar.click();
 		sleep(2000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(2000);
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+	
 		biblioteca.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -234,15 +237,15 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		
 		System.out.println( sucesso);
 
-		
+		/*
 		pesquisar.sendKeys(idB);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//verificar se o relatório foi criado
 		boolean text= idB.contains(idR.getText());
 		System.out.println(text);
-		
-		return text;
+		*/
+		return sucesso;
 
 	}
 	

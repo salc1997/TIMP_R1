@@ -97,7 +97,7 @@ public class TabelaCodigoDaSituaçaoTributariaExcluirPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+	
 		boolean sucesso = false;
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

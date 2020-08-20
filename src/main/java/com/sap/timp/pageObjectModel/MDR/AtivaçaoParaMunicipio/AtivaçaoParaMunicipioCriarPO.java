@@ -73,25 +73,21 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
 
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public boolean criar() {
 		sleep(2000);
 		ativaçaoparamunicipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		sleep(2000);
-		idC.click();
 		sleep(2000);
 		siguiente.click();
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 	
 		//conta o numero de linhas
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		//int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		//String id = driver.findElement(By.xpath("//div[@data-id]["+rows+"]")).getAttribute("data-id");
 		System.out.println(id);
 		
@@ -155,19 +151,18 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		idC.click();
+	
 		sleep(2000);
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		//rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 	//	String id2 = driver.findElement(By.xpath("//div[@data-id]["+rows+"]")).getAttribute("data-id");
-		
+
 		idInserir1(id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);

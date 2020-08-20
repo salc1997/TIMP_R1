@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.*;
 
 public class InstituicaoCriar extends TestBaseSteven{
-
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InstitucaoCriarPO institucaoCriarPO;

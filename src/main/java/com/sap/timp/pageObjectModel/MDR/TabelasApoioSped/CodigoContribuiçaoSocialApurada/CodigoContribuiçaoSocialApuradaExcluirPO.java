@@ -1,86 +1,77 @@
-package com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class InclusaoDeCamposMarExcluirPO extends TestBaseEliel {
+public class CodigoContribuiçaoSocialApuradaExcluirPO extends TestBaseSteven{
 	
-
-	@FindBy(xpath = "//span[text()=\"Valor Adicionado\"]")
-	public WebElement valoradicionado;
+	@FindBy(xpath = " //li/div/span[text()=\"Tabelas de Apoio - SPED\"]")
+	public WebElement tabelas;
 	
-	@FindBy(xpath = "//span[text()=\"Inclusão de Campos Mar\"]")
-	public WebElement inclusaocamposmar;
+	@FindBy(xpath = " //li/div/span[contains(text() ,\"4.3.5\")]")
+	public WebElement codigoContri;
 	
-	@FindBy(xpath = "//span[text()=\"Nova Inclusão de Campos Mar\"]")
-	public WebElement novoinclusaocamposmar;
-		
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement siguiente;
-
-	
-	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
-	public WebElement gravar;
-	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement sim;
-	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement nao;
-	
-	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
-	public WebElement biblioteca;
-	
-	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
-	public WebElement fechar;
-	
+
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
-	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
-	public WebElement aceitar;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
+	/*
+	@FindBy(xpath = "")
+	public WebElement ;
+	@FindBy(xpath = "")
+	public WebElement ;
+	*/
 	
-	public InclusaoDeCamposMarExcluirPO() {
+	
+	public CodigoContribuiçaoSocialApuradaExcluirPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean excluir() {
+	public boolean eliminar() {
 		sleep(2000);
-		valoradicionado.click();
+		tabelas.click();
 		sleep(2000);
-		inclusaocamposmar.click();
+		codigoContri.click();
+
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-	
+
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
-		
+
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
-		waitExpectElement(excluir);
-		sleep(3000);
+		sleep(1000);
+		
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(aceitar);
-		aceitar.click();
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -106,15 +97,12 @@ public class InclusaoDeCamposMarExcluirPO extends TestBaseEliel {
 		if (id1 != id2) {
 			sucesso= true;
 		}
-
+		
 		return sucesso;
-	
-	
-	
-	
-	}	
-	
-	
+		
+		
+		
+	}
 	
 
 }

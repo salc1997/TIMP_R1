@@ -11,6 +11,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocia
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaEditarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -19,11 +20,11 @@ import static org.testng.Assert.assertTrue;
 import java.util.ArrayList;
 
 
-public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven{
+public class ObservaçoesdoDocumentoFiscalVisualizar extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ObservaçoesdoDocumentoFiscalDetalhesPO observaçoesdoDocumentoFiscalDetalhesPO;
+	ObservaçoesdoDocumentoFiscalVisualizarPO observaçoesdoDocumentoFiscalVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -31,7 +32,8 @@ public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		observaçoesdoDocumentoFiscalDetalhesPO = new ObservaçoesdoDocumentoFiscalDetalhesPO();
+		observaçoesdoDocumentoFiscalVisualizarPO = new ObservaçoesdoDocumentoFiscalVisualizarPO();
+		
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -53,11 +55,10 @@ public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven{
 	@Test(priority = 2)
 	public void detalhes() {
 
-		ArrayList<Boolean> sucesso = observaçoesdoDocumentoFiscalDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = observaçoesdoDocumentoFiscalVisualizarPO.visualizar();
+		
 		for (int i = 0; i < sucesso.size(); i++) {
-			
-			assertTrue(sucesso.get(i), Detalhes);
-			
+			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}	
 	

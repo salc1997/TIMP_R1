@@ -135,9 +135,12 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		siguiente.click();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		
+		sleep(2000);
+			
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir1(id2);
@@ -155,29 +158,7 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseEliel {
 		System.out.println(sucesso);
 		
 		return sucesso;
-		/*
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
-		
-		String idB = idR.getText();
-		sleep(2000);
-		System.out.println(id);
-		System.out.println(idB);
-		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		
-		boolean sucesso = false;
-		
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
-		 */
-		
-			
+	
 			
 		
 	}

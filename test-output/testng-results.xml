@@ -2,32 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109398" started-at="2020-08-20T02:50:32Z" finished-at="2020-08-20T02:52:21Z">
+  <suite name="Default suite" duration-ms="104648" started-at="2020-08-21T01:29:35Z" finished-at="2020-08-21T01:31:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109398" started-at="2020-08-20T02:50:32Z" finished-at="2020-08-20T02:52:21Z">
-      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="beforeClass" is-config="true" duration-ms="28696" started-at="2020-08-19T20:50:32Z" finished-at="2020-08-19T20:51:00Z">
+    <test name="Default test" duration-ms="104648" started-at="2020-08-21T01:29:35Z" finished-at="2020-08-21T01:31:19Z">
+      <class name="com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhes@35083305]" name="beforeClass" is-config="true" duration-ms="16297" started-at="2020-08-20T19:29:35Z" finished-at="2020-08-20T19:29:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="login" duration-ms="6894" started-at="2020-08-19T20:51:00Z" finished-at="2020-08-19T20:51:07Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhes@35083305]" name="login" duration-ms="10185" started-at="2020-08-20T19:29:51Z" finished-at="2020-08-20T19:30:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="acessarMDR" duration-ms="9139" started-at="2020-08-19T20:51:07Z" finished-at="2020-08-19T20:51:16Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhes@35083305]" name="acessarMDR" duration-ms="37455" started-at="2020-08-20T19:30:01Z" finished-at="2020-08-20T19:30:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="Excluir()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="Excluir" duration-ms="64656" started-at="2020-08-19T20:51:16Z" finished-at="2020-08-19T20:52:21Z">
+        <test-method status="PASS" signature="detalhes()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhes@35083305]" name="detalhes" duration-ms="40699" started-at="2020-08-20T19:30:38Z" finished-at="2020-08-20T19:31:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir@55a1c291]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-08-19T20:52:21Z" finished-at="2020-08-19T20:52:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarExcluir -->
+        </test-method> <!-- detalhes -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

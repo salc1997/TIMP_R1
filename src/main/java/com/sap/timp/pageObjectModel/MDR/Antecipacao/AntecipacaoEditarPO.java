@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.Antecipacao;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,11 +13,6 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\" Antecipação\"]")
 	public WebElement antecipacao;
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
 
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
@@ -31,6 +28,12 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "/html/body/div[3]")
+	public WebElement cuerpo;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
 
 	public AntecipacaoEditarPO() {
 
@@ -41,22 +44,26 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 
 		antecipacao.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[2]/div/div[5]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-
-		idC.click();
-		dobleClickElement(idC);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		String idRegistro = idObter1();
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
+
 		menu.click();
 		sleep(1000);
 		editar.click();
 
-		//invisibilityOfElement("//*[@id=\"container\"]/div[4]/div/div/div/img");
 		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
 		sleep(2000);
-
 		String url = driver.getCurrentUrl();
 		String valor = campo.getAttribute("value");
 
@@ -68,6 +75,8 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
 		sleep(2000);
 
@@ -75,10 +84,10 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 
 		driver.navigate().refresh();
 
-		//invisibilityOfElement("//*[@id=\"container\"]/div[4]/div/div/div/img");
-
-		//waitExpectElement(campo);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-select required");
+		waitExpectElement(campo);
+		
 		sleep(2000);
 
 		String nuevoTexto = campo.getAttribute("value");
@@ -94,7 +103,8 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		campo.sendKeys(valor);
 
 		gravar.click();
-
+		sleep(2000);
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");

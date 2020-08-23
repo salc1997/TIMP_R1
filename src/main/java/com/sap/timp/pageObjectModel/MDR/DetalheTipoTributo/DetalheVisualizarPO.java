@@ -32,25 +32,30 @@ public class DetalheVisualizarPO extends TestBaseSteven {
 	public String visualizar() {
 
 		detalhe.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div/div/div/div/img");
+
 		siguiente.click();
-
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div[2]/div/div/div/img");
-		waitExpectElement(menu);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		String idRegistro = idObter1();
 
-		idC.click();
-		dobleClickElement(idC);
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
-		sleep(2000);
-		visualizar.click();
+		sleep(1000);
 		
-		sleep(15000);
-
+		visualizar.click();
+		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 
 		return sucesso;

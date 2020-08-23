@@ -1,10 +1,8 @@
 package com.timp.test.MDR;
 
-import static org.junit.Assert.assertFalse;
-import static org.testng.Assert.assertEquals;
+
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -46,9 +44,10 @@ public class AcessarMDR extends TestBaseSteven{
 	}
 	
 	@Test(priority=2)
-	public void brbEntrar() {
+	public void MDREntrar() {
 		
-		assertTrue(acessarMDRPO.mostrar.isDisplayed(), "The element is not present");
+		boolean sucesso = acessarMDRPO.acessarMDR();
+		assertTrue(sucesso, "The element is not present");
 
 	
 	

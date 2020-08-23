@@ -66,11 +66,6 @@ public class Editar extends TestBaseSteven{
 		sucesso = editarPO.editar();
 		
 		assertTrue(sucesso, editado);
-		
-	
-
-		
-		
 
 		
 	}

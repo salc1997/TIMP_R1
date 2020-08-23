@@ -1,59 +1,36 @@
 package com.sap.timp.base;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.text.DecimalFormat;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+public class TestBaseEliel extends TestBaseSteven {
 
-public class TestBaseEliel{
-	
-	//TC2
-	protected static String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
-	//TD1
-	static String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
-	
-	protected static String tq1 = "http://as1-100-01-tq1:8000/timp/login/#/login";
+	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
-	protected static String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
-	
-	
-	
-	public static Properties prop;
-	public static WebDriver driver;
-	public String usuarioL = "TESTEAUTOMATIZADO";
-	public String senhaL = "Alltax20";
-	public int menuT = 12000;
-	
-	
-	
-	//Mensajes
-	
-
-	public static WebDriver initialization() {
+	public WebDriver initializationE() {
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(td1);
+		driver.get(tp1);
 		return driver;
 
 	}
-	
+
 	public void sleep(int miliSeconds) {
 		try {
 			Thread.sleep(miliSeconds);
@@ -122,16 +99,45 @@ public class TestBaseEliel{
 		
 	}
 	
-	
-	public String fechaActual() {
+	public void moveToElement(WebElement element, WebElement hacia) {
+		Actions actions = new Actions(driver);
 		
-		Date fecha = new Date();
-		
-		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
-		
-		return df.format(fecha);
+		actions.dragAndDrop(element,hacia).perform();
 		
 	}
+	
+	public String fechaActual() {
+
+		Date fecha = new Date();
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(fecha);
+
+	}
+	
+	public String fechaAyer() {
+
+		Date fecha = new Date();
+		
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis( -1 ));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
+
+
+public String dataanterior() {
+	
+	DateFormat df = new SimpleDateFormat ("dd/MM/yyyy");
+	Calendar cal = Calendar.getInstance();
+	cal.add (Calendar.DAY_OF_MONTH, -1);
+	
+	return df.format(cal.getTime());
+	
+}
 	
 	public Double convertToDouble(String numero) {
 				
@@ -209,4 +215,5 @@ public class TestBaseEliel{
 	
 	
 	
+
 }

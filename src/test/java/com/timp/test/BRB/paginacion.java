@@ -40,12 +40,12 @@ public class paginacion extends TestBaseSteven {
 		acessarBrbPO = new AcessarBrbPO();
 		paginacionOP = new PaginacionPO();
 	}
-	
+	/*
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+	*/
 	@Test(priority = 1)
 	public void login() {
 

@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.Antecipacao;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,24 +12,6 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\" Antecipação\"]")
 	public WebElement antecipacao;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div")
-	public WebElement menu;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[3]")
-	public WebElement editar;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
-	public WebElement idC;
-
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
-	public WebElement siguiente;
-	
-	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
-	public WebElement visualizar;
-	
-	@FindBy(xpath = "//li/span[text()=\"Excluir\"]")
-	public WebElement excluir;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -41,6 +24,10 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
+	
+
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	public AntecipacaoEliminarPO() {
 
@@ -55,15 +42,20 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		idC.click();
-		dobleClickElement(idC);
 		sleep(2000);
-		String idR = id.getText();
+		
+		String idRegistro = idObter1();
+		
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
 		
 		menu.click();
 		sleep(2000);
-		System.out.println(idR);
+
 		
 		excluir.click();
 		waitExpectElement(sim);
@@ -72,13 +64,39 @@ public class AntecipacaoEliminarPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		pesquisar.sendKeys(idR);
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+		
+		System.out.println(sucesso);
+		
+		/*
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 
+		*/
 		
-		boolean sucesso = nenhumResult.isDisplayed();
 		return sucesso;
 	}
 }

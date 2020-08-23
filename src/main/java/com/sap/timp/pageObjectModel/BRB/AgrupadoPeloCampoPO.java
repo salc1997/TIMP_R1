@@ -2,6 +2,8 @@ package com.sap.timp.pageObjectModel.BRB;
 
 import java.util.ArrayList;
 
+import javax.naming.directory.DirContext;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -70,6 +72,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	
 	public void agrupar() {
 		
+		
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
@@ -108,6 +111,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		
 		sleep(2000);
 		waitExpectXpath("//div[@data-group=\"1\"]/div/div[1]/span[1]/label");
+		sleep(2000);
 		
 		
 		
@@ -117,6 +121,8 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	public ArrayList<Boolean> sucesso() {
 		
 		data1.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(10000);
 		String cfopS = "";
 		cfopS = cfop.getAttribute("data-value");
@@ -145,6 +151,8 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	public ArrayList<Boolean> sucesso2() {
 		
 		data2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(10000);
 		String cfopS = "";
 		cfopS = cfop1.getAttribute("data-value");

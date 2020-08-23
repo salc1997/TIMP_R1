@@ -71,9 +71,9 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		int y = hacia.x;
 		sleep(1000);
 		
-		actions.dragAndDrop(mover, haciaE).perform();
-		//actions.dragAndDropBy(mover,hacia.x, 0).perform();
-		actions.release();
+		
+		actions.dragAndDropBy(mover,hacia.x, 0).perform();
+
 		
 		gravar.click();
 		sleep(4000);
@@ -92,16 +92,19 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		}
 		
 		sleep(2000);
-		actions.dragAndDrop(mover, haciaE).perform();
-		//actions.dragAndDropBy(mover, -y, 0).perform();
-		actions.release();
+		actions.dragAndDropBy(mover, -y, 0).perform();
+
 		gravar.click();
 		sleep(5000);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
-
+		
 		
 		return movido;
+		
+		
+		
+		
 		
 		
 		

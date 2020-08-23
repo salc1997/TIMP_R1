@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -17,12 +18,7 @@ public class DetalheEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
-	public WebElement menu;
-	
-	@FindBy(xpath = "//li/span[text()=\"Editar\"]")
-	public WebElement editar;
+
 	
 	@FindBy(xpath = "//div[@id=\"descricao\"]/div/textarea")
 	public WebElement campo;
@@ -45,23 +41,26 @@ public class DetalheEditarPO extends TestBaseSteven {
 
 		detalhe.click();
 
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
 
 		siguiente.click();
-
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
-		invisibilityOfElement("//*[@id=\"list\"]/div[2]/div/div/div/img");
-		sleep(2000);
-
-		Actions actions = new Actions(driver);
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idRegistro = idObter1();
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
 		menu.click();
 		sleep(1000);
+		
 		editar.click();
+		sleep(2000);
 		
 		waitExpectXpath("//*[@id=\"select\"]/div[1]/input");
 		sleep(2000);
@@ -102,7 +101,7 @@ public class DetalheEditarPO extends TestBaseSteven {
 		campo.sendKeys(valor);
 		
 		gravar.click();
-		
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		

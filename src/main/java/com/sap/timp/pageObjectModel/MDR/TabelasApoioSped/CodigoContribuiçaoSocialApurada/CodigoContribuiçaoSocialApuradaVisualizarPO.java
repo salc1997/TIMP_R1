@@ -129,11 +129,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		String codigoE = codigo.getAttribute("value");
 		String descricaoE = descricao.getAttribute("value");
 		String dataE = validFrom.getAttribute("value");
-		
-		
-		
-
-		
+				
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(tributoV1.equals(tributoE));
@@ -141,11 +137,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		sucesso.add(descricaoV1.equals(descricaoE));
 		sucesso.add(dataV1.equals(dataE));
 		
-	
-		System.out.println(sucesso);
-		
-	
-		System.out.println(sucesso);
+
 
 		return sucesso;
 		

@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95960" started-at="2020-08-21T22:40:45Z" finished-at="2020-08-21T22:42:21Z">
+  <suite name="Default suite" duration-ms="231629" started-at="2020-08-23T01:33:10Z" finished-at="2020-08-23T01:37:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="95960" started-at="2020-08-21T22:40:45Z" finished-at="2020-08-21T22:42:21Z">
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="beforeClass" is-config="true" duration-ms="11442" started-at="2020-08-21T16:40:45Z" finished-at="2020-08-21T16:40:57Z">
+    <test name="Default test" duration-ms="231629" started-at="2020-08-23T01:33:10Z" finished-at="2020-08-23T01:37:01Z">
+      <class name="com.timp.test.BRB.Eliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="beforeClass" is-config="true" duration-ms="30931" started-at="2020-08-22T19:33:10Z" finished-at="2020-08-22T19:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="login" duration-ms="6677" started-at="2020-08-21T16:40:57Z" finished-at="2020-08-21T16:41:03Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="login" duration-ms="19254" started-at="2020-08-22T19:33:41Z" finished-at="2020-08-22T19:34:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="acessarMDR" duration-ms="27537" started-at="2020-08-21T16:41:03Z" finished-at="2020-08-21T16:41:31Z">
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="brbEntrar" duration-ms="35212" started-at="2020-08-22T19:34:00Z" finished-at="2020-08-22T19:34:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="criar" duration-ms="50288" started-at="2020-08-21T16:41:31Z" finished-at="2020-08-21T16:42:21Z">
+        </test-method> <!-- brbEntrar -->
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminar" duration-ms="73666" started-at="2020-08-22T19:34:35Z" finished-at="2020-08-22T19:35:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir -->
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminarLixeira" duration-ms="68445" started-at="2020-08-22T19:35:49Z" finished-at="2020-08-22T19:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="afterClass" is-config="true" duration-ms="4094" started-at="2020-08-22T19:36:57Z" finished-at="2020-08-22T19:37:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRB.Eliminar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

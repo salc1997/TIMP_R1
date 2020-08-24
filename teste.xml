@@ -6,7 +6,7 @@
       <class name="com.timp.test.MDR.Antecipacao.AntecipacaoCriar"/>
       <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar"/>
       <class name="com.timp.test.MDR.Antecipacao.AntecipacaoVisualizar"/>
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEliminar"/>
+      
       
     </classes>
   </test> <!-- PruebaTestNG -->

@@ -78,20 +78,7 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
 	public WebElement validade;
-	/*
-	@FindBy(xpath = "")
-	public WebElement ;
-	*/
-	/*
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	*/
+	
 	
 
 	

@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="132258" started-at="2020-08-24T21:14:09Z" finished-at="2020-08-24T21:16:22Z">
+  <suite name="Default suite" duration-ms="112161" started-at="2020-08-25T02:58:25Z" finished-at="2020-08-25T03:00:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="132258" started-at="2020-08-24T21:14:09Z" finished-at="2020-08-24T21:16:22Z">
-      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@35083305]" name="beforeClass" is-config="true" duration-ms="10946" started-at="2020-08-24T15:14:09Z" finished-at="2020-08-24T15:14:20Z">
+    <test name="Default test" duration-ms="112161" started-at="2020-08-25T02:58:25Z" finished-at="2020-08-25T03:00:17Z">
+      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="beforeClass" is-config="true" duration-ms="12121" started-at="2020-08-24T20:58:25Z" finished-at="2020-08-24T20:58:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@35083305]" name="login" duration-ms="6638" started-at="2020-08-24T15:14:20Z" finished-at="2020-08-24T15:14:27Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="login" duration-ms="6925" started-at="2020-08-24T20:58:37Z" finished-at="2020-08-24T20:58:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@35083305]" name="acessarMDR" duration-ms="24161" started-at="2020-08-24T15:14:27Z" finished-at="2020-08-24T15:14:51Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="acessarMDR" duration-ms="22216" started-at="2020-08-24T20:58:44Z" finished-at="2020-08-24T20:59:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@35083305]" name="criar" duration-ms="90500" started-at="2020-08-24T15:14:51Z" finished-at="2020-08-24T15:16:22Z">
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="criar" duration-ms="70888" started-at="2020-08-24T20:59:06Z" finished-at="2020-08-24T21:00:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar -->
+      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

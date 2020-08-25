@@ -4,23 +4,23 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIEditar">
+      <class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar">
 =======
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar">
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
-          <include name="beforeClass"/>
 <<<<<<< HEAD
           <include name="editar"/>
 =======
           <include name="criar"/>
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
         </methods>
 <<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIEditar -->
+      </class> <!-- com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar -->
 =======
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar -->
->>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

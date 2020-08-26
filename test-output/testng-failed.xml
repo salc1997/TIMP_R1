@@ -4,22 +4,24 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
-      <class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar">
+      <class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar">
 =======
-      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes">
+      <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
 <<<<<<< HEAD
-          <include name="editar"/>
+          <include name="acessarMDR"/>
+          <include name="login"/>
+          <include name="Visualizar"/>
 =======
-          <include name="criar"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+          <include name="criar"/>
         </methods>
 <<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar -->
+      </class> <!-- com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar -->
 =======
-      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes -->
+      </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->

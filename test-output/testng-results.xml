@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
 =======
 <testng-results skipped="0" failed="0" total="3" passed="3">
@@ -12,8 +13,12 @@
 =======
 <testng-results skipped="0" failed="0" total="1" passed="1">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +29,10 @@
   <suite name="Default suite" duration-ms="40204" started-at="2020-08-25T15:48:07Z" finished-at="2020-08-25T15:48:47Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
+  <suite name="Default suite" duration-ms="112793" started-at="2020-08-26T13:40:15Z" finished-at="2020-08-26T13:42:08Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="114978" started-at="2020-08-21T22:34:53Z" finished-at="2020-08-21T22:36:48Z">
@@ -40,11 +49,15 @@
 =======
   <suite name="Default suite" duration-ms="112161" started-at="2020-08-25T02:58:25Z" finished-at="2020-08-25T03:00:17Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="100453" started-at="2020-08-26T00:45:43Z" finished-at="2020-08-26T00:47:24Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,6 +74,12 @@
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.LoginTest@6a41eaa2]" name="beforeClass" is-config="true" duration-ms="18769" started-at="2020-08-25T12:48:07Z" finished-at="2020-08-25T12:48:26Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
+    <test name="Default test" duration-ms="112793" started-at="2020-08-26T13:40:15Z" finished-at="2020-08-26T13:42:08Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="22358" started-at="2020-08-26T10:40:15Z" finished-at="2020-08-26T10:40:37Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="114978" started-at="2020-08-21T22:34:53Z" finished-at="2020-08-21T22:36:48Z">
@@ -85,12 +104,18 @@
       <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="beforeClass" is-config="true" duration-ms="12121" started-at="2020-08-24T20:58:25Z" finished-at="2020-08-24T20:58:37Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="100453" started-at="2020-08-26T00:45:43Z" finished-at="2020-08-26T00:47:24Z">
+      <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="14056" started-at="2020-08-25T18:45:43Z" finished-at="2020-08-25T18:45:57Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,6 +126,10 @@
         <test-method status="PASS" signature="Login()[pri:0, instance:com.timp.test.ADM.LoginTest@6a41eaa2]" name="Login" duration-ms="21164" started-at="2020-08-25T12:48:26Z" finished-at="2020-08-25T12:48:47Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="login" duration-ms="9369" started-at="2020-08-26T10:40:37Z" finished-at="2020-08-26T10:40:46Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhes@8e0379d]" name="login" duration-ms="10540" started-at="2020-08-21T19:35:10Z" finished-at="2020-08-21T19:35:20Z">
@@ -117,16 +146,16 @@
 =======
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="login" duration-ms="6925" started-at="2020-08-24T20:58:37Z" finished-at="2020-08-24T20:58:44Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="login" duration-ms="6785" started-at="2020-08-25T18:45:57Z" finished-at="2020-08-25T18:46:04Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.ADM.LoginTest@6a41eaa2]" name="afterClass" is-config="true" duration-ms="247" started-at="2020-08-25T12:48:47Z" finished-at="2020-08-25T12:48:47Z">
-=======
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -147,13 +176,16 @@
 =======
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 =======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="acessarMDR" duration-ms="22216" started-at="2020-08-24T20:58:44Z" finished-at="2020-08-24T20:59:06Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="acessarMDR" duration-ms="11216" started-at="2020-08-26T10:40:47Z" finished-at="2020-08-26T10:40:58Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="25520" started-at="2020-08-25T18:46:04Z" finished-at="2020-08-25T18:46:29Z">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- brbEntrar -->
@@ -208,10 +240,13 @@
       </class> <!-- com.timp.test.ADM.LoginTest -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- acessarMDR -->
 <<<<<<< HEAD
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar@8e0379d]" name="Visualizar" duration-ms="67630" started-at="2020-08-25T10:04:41Z" finished-at="2020-08-25T10:05:49Z">
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="criar" duration-ms="69821" started-at="2020-08-26T10:40:58Z" finished-at="2020-08-26T10:42:08Z">
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="criar" duration-ms="50288" started-at="2020-08-21T16:41:31Z" finished-at="2020-08-21T16:42:21Z">
 <<<<<<< HEAD
@@ -219,11 +254,15 @@
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 =======
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="criar" duration-ms="70888" started-at="2020-08-24T20:59:06Z" finished-at="2020-08-24T21:00:17Z">
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="criar" duration-ms="54077" started-at="2020-08-25T18:46:29Z" finished-at="2020-08-25T18:47:24Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -252,7 +291,10 @@
       </class> <!-- com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir -->
 <<<<<<< HEAD
@@ -260,6 +302,11 @@
 >>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
 =======
       </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

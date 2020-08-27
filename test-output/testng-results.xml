@@ -2,54 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="112793" started-at="2020-08-26T13:40:15Z" finished-at="2020-08-26T13:42:08Z">
-=======
-  <suite name="Default suite" duration-ms="100453" started-at="2020-08-26T00:45:43Z" finished-at="2020-08-26T00:47:24Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite name="Default suite" duration-ms="136576" started-at="2020-08-26T23:38:44Z" finished-at="2020-08-26T23:41:00Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="112793" started-at="2020-08-26T13:40:15Z" finished-at="2020-08-26T13:42:08Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="22358" started-at="2020-08-26T10:40:15Z" finished-at="2020-08-26T10:40:37Z">
-=======
-    <test name="Default test" duration-ms="100453" started-at="2020-08-26T00:45:43Z" finished-at="2020-08-26T00:47:24Z">
-      <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="14056" started-at="2020-08-25T18:45:43Z" finished-at="2020-08-25T18:45:57Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test name="Default test" duration-ms="136576" started-at="2020-08-26T23:38:44Z" finished-at="2020-08-26T23:41:00Z">
+      <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="11457" started-at="2020-08-26T17:38:44Z" finished-at="2020-08-26T17:38:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="login" duration-ms="9369" started-at="2020-08-26T10:40:37Z" finished-at="2020-08-26T10:40:46Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="login" duration-ms="6785" started-at="2020-08-25T18:45:57Z" finished-at="2020-08-25T18:46:04Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="login" duration-ms="8759" started-at="2020-08-26T17:38:55Z" finished-at="2020-08-26T17:39:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="acessarMDR" duration-ms="11216" started-at="2020-08-26T10:40:47Z" finished-at="2020-08-26T10:40:58Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="25520" started-at="2020-08-25T18:46:04Z" finished-at="2020-08-25T18:46:29Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="acessarMDR" duration-ms="33062" started-at="2020-08-26T17:39:04Z" finished-at="2020-08-26T17:39:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="criar" duration-ms="69821" started-at="2020-08-26T10:40:58Z" finished-at="2020-08-26T10:42:08Z">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="criar" duration-ms="54077" started-at="2020-08-25T18:46:29Z" finished-at="2020-08-25T18:47:24Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="criar" duration-ms="83288" started-at="2020-08-26T17:39:37Z" finished-at="2020-08-26T17:41:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

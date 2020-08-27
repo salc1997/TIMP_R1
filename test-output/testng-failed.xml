@@ -3,12 +3,20 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar">
+=======
+      <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="detalhes"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

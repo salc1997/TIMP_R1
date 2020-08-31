@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -44,7 +45,7 @@ public class TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
 		return driver;
 
 	}
@@ -287,6 +288,26 @@ public class TestBaseSteven {
 
 	public void quit() {
 		driver.close();
+	}
+	
+	
+	public String ordenar(String dato) {
+		
+		String recorrer = dato;
+		
+	    String[] recorrer2 = recorrer.split("");
+
+	    Arrays.sort(recorrer2);
+
+	    String sorted = "";
+
+	    for(int i =0;i<recorrer2.length;i++){
+
+	      sorted += recorrer2[i];
+	    
+	    }
+		
+		return sorted; 
 	}
 	
 	

@@ -4,24 +4,18 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
-      <class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar">
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar">
 =======
-      <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar">
+      <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
-<<<<<<< HEAD
-          <include name="acessarMDR"/>
-          <include name="login"/>
-          <include name="Visualizar"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="detalhes"/>
         </methods>
 <<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar -->
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar -->
 =======
-      </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar -->
+      </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->

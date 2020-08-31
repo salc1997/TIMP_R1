@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="DESKTOP-SUF121B" failures="1" tests="3" name="Default test" time="119.293" errors="0" timestamp="21 Jul 2020 21:49:26 GMT">
   <testcase classname="com.timp.test.BRB.ReordenarColuna" name="login" time="9.574"/>
   <testcase classname="com.timp.test.BRB.ReordenarColuna" name="brbEntrar" time="28.417"/>
@@ -88,10 +89,16 @@
   <testcase name="criar" time="70.888" classname="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
-<testsuite hostname="LitoSoler" name="Default test" tests="3" failures="0" timestamp="26 Aug 2020 00:47:24 GMT" time="100.453" errors="0">
-  <testcase name="login" time="6.785" classname="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir"/>
-  <testcase name="acessarMDR" time="25.52" classname="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir"/>
-  <testcase name="criar" time="54.077" classname="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir"/>
+<testsuite hostname="DESKTOP-35UG9UP" name="Default test" tests="3" failures="0" timestamp="27 Aug 2020 13:01:49 GMT" time="90.922" errors="0">
+  <testcase name="login" time="12.285" classname="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes"/>
+  <testcase name="acessarMDR" time="11.76" classname="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes"/>
+  <testcase name="Visualizar" time="46.624" classname="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testsuite hostname="LitoSoler" name="Default test" tests="3" failures="0" timestamp="26 Aug 2020 23:41:00 GMT" time="136.576" errors="0">
+  <testcase name="login" time="8.759" classname="com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar"/>
+  <testcase name="acessarMDR" time="33.062" classname="com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar"/>
+  <testcase name="criar" time="83.288" classname="com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

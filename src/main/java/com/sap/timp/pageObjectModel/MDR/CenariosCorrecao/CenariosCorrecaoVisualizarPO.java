@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.CenariosCorrecao;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -52,11 +54,46 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
+	
+	@FindBy(xpath = "//span[@id=\"tax\"]")
+	public WebElement tributoV;
+	@FindBy(xpath = "//span[@id=\"code\"]")
+	public WebElement codigoV;
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaoV;
+	@FindBy(xpath = "//span[@id=\"web-service\"]")
+	public WebElement servicoWebV;
+	@FindBy(xpath = "//span[@id=\"valid-from\"]")
+	public WebElement dataVigenciaV;
+	@FindBy(xpath = "//div[@data-id]/div/div")
+	public WebElement campoV;
+
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Tributo\")]")
+	public WebElement tributoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
+	public WebElement codigoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição\")]")
+	public WebElement descricaoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Serviço\")]")
+	public WebElement servicoWebE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"início\")]")
+	public WebElement dataVigenciaE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"campo\")]")
+	public WebElement campoE;
+	
+	
+
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
+	
+	
 	public CenariosCorrecaoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String cenariosCorrecaoVisualizar() {
+	public ArrayList<Boolean> cenariosCorrecaoVisualizar() {
 		cenarios.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);	
@@ -69,19 +106,80 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 		String idRegistro = idObter2();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		actionsMoveToElementElement(menu);
 		sleep(4000);
 		
 		menu.click();
 		sleep(1000);
-		visualizar.click();
+		açao.click();
 		sleep(3000);
 
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		visibilityOfElementXpath("//span[@id=\"tax\"]");
+		sleep(1000);
 		
-		return sucesso;	
+		String tributoV1 = tributoV.getText();
+		String codigoV1 = codigoV.getText();
+		String descricaoV1 = descricaoV.getText();
+		String servicoWebV1 = servicoWebV.getText();
+		String campoV1 = campoV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getText();
+		
+		
+		System.out.println(tributoV1);
+		System.out.println(codigoV1);
+		System.out.println(descricaoV1);
+		System.out.println(servicoWebV1);
+		System.out.println(campoV1);
+		System.out.println(dataVigenciaV1);
+		
+		biblioteca.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(2000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String tributoE1 = tributoE.getAttribute("value");
+		String codigoE1 = codigoE.getAttribute("value");
+		String descricaoE1 = descricaoE.getAttribute("value");
+		String servicoWebE1 = servicoWebE.getAttribute("value");
+		String campoE1 = campoE.getAttribute("value");
+		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
+		
+		
+		System.out.println(tributoE1);
+		System.out.println(codigoE1);
+		System.out.println(descricaoE1);
+		System.out.println(servicoWebE1);
+		System.out.println(campoE1);
+		System.out.println(dataVigenciaE1);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(descricaoV1.contains(descricaoE1));
+		sucesso.add(codigoV1.contains(codigoE1));
+		sucesso.add(descricaoV1.contains(descricaoE1));
+		sucesso.add(campoE1.contains(campoV1));
+		sucesso.add(dataVigenciaV1.contains(dataVigenciaE1));
+		System.out.println(sucesso);
+
+
+		return sucesso;
 	}
 }

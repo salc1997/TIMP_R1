@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.CenariosCorrecao.CenariosCorrecaoVisuali
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -42,7 +45,10 @@ public class CenariosCorrecaoVisualizar extends TestBaseKathy{
 	
 	@Test(priority = 2)
     public void cenariosCorrecaoVisualizar() {
-      String sucesso = cenariosCorrecaoVisualizarPO.cenariosCorrecaoVisualizar();
-  	  assertEquals(sucesso, "edit", EmpresaVisualizar);
+      ArrayList<Boolean> sucesso = cenariosCorrecaoVisualizarPO.cenariosCorrecaoVisualizar();
+  	  
+      for (int i = 0; i < sucesso.size(); i++) {
+		assertTrue(sucesso.get(i), visualizaçar);
+	}
     }
 }

@@ -1,5 +1,11 @@
 package com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.GrupoAtividadeFiscal;
 
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+
+import org.omg.CORBA.DATA_CONVERSION;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -40,28 +46,33 @@ public class GrupoAtividadeVisualizarPO extends TestBaseSteven{
 	public WebElement gruposAtividades;
 	
 	
+	@FindBy(xpath = "//span[@id=\"grupoAtividade\"]")
+	public WebElement grupoAtividadeV;
+	@FindBy(xpath = "//span[@id=\"descricao\"]")
+	public WebElement descricaoV;
+	@FindBy(xpath = "//span[@id=\"dataVigenciaInicio\"]")
+	public WebElement dataVigenciaV;
+
+
+
+	@FindBy(xpath = "//input[contains(@placeholder,\"Grupo\")]")
+	public WebElement grupoAtividadeE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição\")]")
+	public WebElement descricaoE;
+
+
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+
+	
 	public GrupoAtividadeVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 
-	public String visualizar() {
+	public ArrayList<Boolean> visualizar() {
 
-		String url = driver.getCurrentUrl();
-		/*
-		if (url.contains("tc2") || url.contains("tp1")) {
-			atividades2.click();
-			sleep(2000);
-			atividadesO2.click();
-			sleep(2000);
-		} else {
-
-			atividades1.click();
-			sleep(2000);
-			atividadesO1.click();
-			sleep(2000);
-		}
-		*/
+	
 
 		atividades.click();
 		sleep(2000);
@@ -76,17 +87,58 @@ public class GrupoAtividadeVisualizarPO extends TestBaseSteven{
 		String idRegistro = idObter3();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		actionsMoveToElementElement(menu);
 		sleep(4000);
 		
 		menu.click();
 		sleep(1000);
-		visualizar.click();
-		sleep(5000);
+		açao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String grupoAtividadeV1 = grupoAtividadeV.getText();
+		String descricaoV1 = descricaoV.getText();
 
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		System.out.println(grupoAtividadeV1);
+		System.out.println(descricaoV1);
+		
+		
+		biblioteca.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(2000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		String grupoAtividadeE1 = grupoAtividadeE.getAttribute("value");
+		String descricaoE1 = descricaoE.getAttribute("value");
+
+		System.out.println(grupoAtividadeE1);
+		System.out.println(descricaoE1);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+
+		sucesso.add(grupoAtividadeV1.contains(grupoAtividadeE1));
+		sucesso.add(descricaoV1.contains(descricaoE1));
+
+
+		System.out.println(sucesso);
+	
+	
 
 		return sucesso;
 

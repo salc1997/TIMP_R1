@@ -41,7 +41,7 @@ public class AntecipacaoVisualizar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 
 	}
-
+/*
 	@Test(priority = 2)
 	public void visualizar() {
 
@@ -49,5 +49,5 @@ public class AntecipacaoVisualizar extends TestBaseSteven {
 
 		assertEquals(sucesso, "edit", EmpresaVisualizar);
 	}
-
+*/
 }

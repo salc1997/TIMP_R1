@@ -1,29 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="97419" started-at="2020-08-29T01:43:42Z" finished-at="2020-08-29T01:45:20Z">
+  <suite name="Default suite" duration-ms="170286" started-at="2020-09-01T15:17:14Z" finished-at="2020-09-01T15:20:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="97419" started-at="2020-08-29T01:43:42Z" finished-at="2020-08-29T01:45:20Z">
-      <class name="com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="20244" started-at="2020-08-28T19:43:42Z" finished-at="2020-08-28T19:44:02Z">
+    <test name="Default test" duration-ms="170286" started-at="2020-09-01T15:17:14Z" finished-at="2020-09-01T15:20:04Z">
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="14868" started-at="2020-09-01T09:17:14Z" finished-at="2020-09-01T09:17:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="login" duration-ms="11294" started-at="2020-08-28T19:44:02Z" finished-at="2020-08-28T19:44:14Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="login" duration-ms="7190" started-at="2020-09-01T09:17:29Z" finished-at="2020-09-01T09:17:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="acessarMDR" duration-ms="16101" started-at="2020-08-28T19:44:14Z" finished-at="2020-08-28T19:44:30Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="acessarMDR" duration-ms="34982" started-at="2020-09-01T09:17:36Z" finished-at="2020-09-01T09:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="detalhes()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="detalhes" duration-ms="49747" started-at="2020-08-28T19:44:30Z" finished-at="2020-08-28T19:45:20Z">
+        <test-method status="FAIL" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="Visualizar" duration-ms="113231" started-at="2020-09-01T09:18:11Z" finished-at="2020-09-01T09:20:04Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O modo visualização não está ativado expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O modo visualização não está ativado expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar.Visualizar(ContasDefaultPorTributoVisualizar.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- detalhes -->
-      </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes -->
+        </test-method> <!-- Visualizar -->
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

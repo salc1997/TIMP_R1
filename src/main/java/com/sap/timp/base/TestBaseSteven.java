@@ -45,7 +45,7 @@ public class TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tp1);
 		return driver;
 
 	}
@@ -157,6 +157,31 @@ public class TestBaseSteven {
 		return result;
 
 	}
+	
+	public String getText(WebElement element) {
+
+		String texto = element.getText();
+		
+		if (texto.isEmpty()==true) {
+			texto = "vazio";
+		}
+		
+		return texto;
+
+	}
+	
+	public String getValue(WebElement element) {
+
+		String texto = element.getAttribute("value");
+		
+		if (texto=="") {
+			texto = "vazio";
+		}
+		
+		return texto;
+
+	}
+	
 	
 	public int convertToInt(String numero) {
 

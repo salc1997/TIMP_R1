@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,33 +22,6 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseEliel
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//div[@class=\"thead\"]/div/div[3]")
-	public WebElement idC;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")
-	public WebElement idR;
-	
-	@FindBy(xpath = "//span[text()=\"Novo Valor Declaratório\"]")
-	public WebElement novovalor;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
-	public WebElement codigodevalores;
-	
-	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Informação Adicional\"]")
-	public WebElement descricao;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datavigencia;
-	
-	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
-	public WebElement gravar;
-	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
-	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement nao;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
@@ -61,12 +36,26 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseEliel
 	public WebElement engrenagem;
 	
 	
+	@FindBy(xpath = "//span[@id=\"activity-type\"]")
+	public WebElement tipoAtividadeV;
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaoV;
+	@FindBy(xpath = "//span[@id=\"effective-date-from\"]")
+	public WebElement dataVigenciaV;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Tipo\")]")
+	public WebElement tipoAtividadeE;
+	@FindBy(xpath = "//*[contains(@placeholder,\"Descrição\")]")
+	public WebElement descricaoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	public WebElement dataVigenciaE;
+	
 	public ClassificaçaoDeContribuintesDoIPIVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String visualizar() {
+	public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -87,46 +76,72 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseEliel
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		
-		visualizar.click();
+		açao.click();
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		String tipoAtividadeV1 = tipoAtividadeV.getText();
+		String descricaoV1 = descricaoV.getText();
+		String dataVigenviaV1 = dataVigenciaV.getText();
+
+		
+		
+		System.out.println(tipoAtividadeV1);
+		System.out.println(descricaoV1);
+		System.out.println(dataVigenviaV1);
+
+		
 		biblioteca.click();
 		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		waitExpectElement(siguiente);
-		sleep(2000);
 		siguiente.click();
-		
-		
-		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
-		sleep(2000);
-		menu1.click();
-		sleep(1000);
-		
-		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//div[@class=\"baseTabs-view-wrapper\"]")).getAttribute("class");
-		//System.out.println(sucesso);	
-		return sucesso;	
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(2000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String tipoAtividadeE1 = tipoAtividadeE.getAttribute("value");
+		String descricaoE1 = descricaoE.getAttribute("value");
+		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
+
+		
+		
+		System.out.println(tipoAtividadeE1);
+		System.out.println(descricaoE1);
+		System.out.println(dataVigenciaE1);
+
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(tipoAtividadeV1.contains(tipoAtividadeE1));
+		sucesso.add(descricaoV1.contains(descricaoE1));
+		sucesso.add(dataVigenviaV1.contains(dataVigenciaE1));
+
+		System.out.println(sucesso);
+
+
+		return sucesso;
+			
 	}
 	
 	

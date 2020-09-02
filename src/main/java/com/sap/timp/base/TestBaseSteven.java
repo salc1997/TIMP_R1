@@ -45,7 +45,7 @@ public class TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(td1);
 		return driver;
 
 	}
@@ -170,11 +170,19 @@ public class TestBaseSteven {
 
 	}
 	
+	public String textContent(WebElement element) {
+
+		String texto = element.getAttribute("textContent");
+		
+		return texto;
+
+	}
+	
 	public String getValue(WebElement element) {
 
 		String texto = element.getAttribute("value");
 		
-		if (texto=="") {
+		if (texto.isEmpty()==true) {
 			texto = "vazio";
 		}
 		

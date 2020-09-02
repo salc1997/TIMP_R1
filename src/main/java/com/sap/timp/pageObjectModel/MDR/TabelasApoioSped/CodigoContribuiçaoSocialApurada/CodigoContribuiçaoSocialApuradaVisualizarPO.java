@@ -108,6 +108,11 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		String codigoV1 = codigoV.getText();
 		String descricaoV1 = descricaoV.getText();
 		String dataV1 = validFromV.getText();
+		
+		System.out.println(tributoV1);
+		System.out.println(codigoV1);
+		System.out.println(descricaoV1);
+		System.out.println(dataV1);
 		sleep(2000);
 		biblioteca.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -129,6 +134,11 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		String codigoE = codigo.getAttribute("value");
 		String descricaoE = descricao.getAttribute("value");
 		String dataE = validFrom.getAttribute("value");
+		
+		System.out.println(tributoE);
+		System.out.println(codigoE);
+		System.out.println(descricaoE);
+		System.out.println(dataE);
 				
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -137,7 +147,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		sucesso.add(descricaoV1.equals(descricaoE));
 		sucesso.add(dataV1.equals(dataE));
 		
-
+		System.out.println(sucesso);
 
 		return sucesso;
 		

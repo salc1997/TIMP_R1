@@ -54,9 +54,11 @@ public class MotivosCesBeneficiosVisualizar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		String sucesso = motivosCesBeneficiosVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = motivosCesBeneficiosVisualizarPO.visualizar();
 		
-		assertEquals(sucesso, "edit", visualizaçar);
+		for (int i = 0; i <sucesso.size() ; i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 
 		
 	}

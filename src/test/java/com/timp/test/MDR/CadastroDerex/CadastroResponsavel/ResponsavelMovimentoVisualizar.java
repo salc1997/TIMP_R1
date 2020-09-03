@@ -3,6 +3,8 @@ package com.timp.test.MDR.CadastroDerex.CadastroResponsavel;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -50,8 +52,11 @@ public class ResponsavelMovimentoVisualizar extends TestBaseSteven{
 	 @Test(priority = 2)
 	  public void visualizar() {
 		 
-		 String sucesso = responsavelMovimentoVisualizarPO.visualizar();
+		 ArrayList<Boolean> sucesso = responsavelMovimentoVisualizarPO.visualizar();
 		  
-		 assertEquals(sucesso, "edit", EmpresaVisualizar);
+		 for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+
 	  }
 }

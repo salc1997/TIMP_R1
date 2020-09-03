@@ -1,6 +1,8 @@
-package com.timp.test.MDR.SCANC;
+package com.timp.test.MDR.SCANC.ProdutosSCANC;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,15 +12,15 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriarPO;
+import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
-import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANCCriarPO;
-import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANCExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCDetalhesPO;
 
-public class ProductosSCANCExcluir extends TestBaseSteven {
+public class ProdutosSCANCDetalhes extends TestBaseSteven {
  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ProdutosSCANCExcluirPO produtosSCANCExcluirPO;
+	ProdutosSCANCDetalhesPO produtosSCANCDetalhesPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +28,7 @@ public class ProductosSCANCExcluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		produtosSCANCExcluirPO = new ProdutosSCANCExcluirPO();
+		produtosSCANCDetalhesPO = new ProdutosSCANCDetalhesPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,13 +48,14 @@ public class ProductosSCANCExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void detalhes() {
 
 		
-		boolean sucesso = produtosSCANCExcluirPO.excluir();
+		ArrayList<Boolean> sucesso = produtosSCANCDetalhesPO.detalhes();
 		
-		assertTrue(sucesso, Eliminado);
-		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 	}			
 			
 	

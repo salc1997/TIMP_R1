@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.SCANC;
+package com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC;
 
 import java.util.ArrayList;
 

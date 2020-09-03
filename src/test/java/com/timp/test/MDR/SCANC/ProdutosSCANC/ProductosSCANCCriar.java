@@ -1,4 +1,4 @@
-package com.timp.test.MDR.SCANC;
+package com.timp.test.MDR.SCANC.ProdutosSCANC;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,14 +11,13 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
-import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANCCriarPO;
-import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANCEditarPO;
+import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO;
 
-public class ProductosSCANCEditar extends TestBaseSteven {
+public class ProductosSCANCCriar extends TestBaseSteven {
  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ProdutosSCANCEditarPO produtosSCANCEditarPO;
+	ProdutosSCANCCriarPO produtosSCANCCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +25,7 @@ public class ProductosSCANCEditar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		produtosSCANCEditarPO = new ProdutosSCANCEditarPO();
+		produtosSCANCCriarPO = new ProdutosSCANCCriarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -49,7 +48,7 @@ public class ProductosSCANCEditar extends TestBaseSteven {
 	public void criar() {
 
 		
-		boolean sucesso = produtosSCANCEditarPO.editar();
+		boolean sucesso = produtosSCANCCriarPO.criar();
 		
 		assertTrue(sucesso, Criar);
 		

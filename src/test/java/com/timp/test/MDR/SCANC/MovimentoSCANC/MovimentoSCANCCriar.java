@@ -1,8 +1,6 @@
-package com.timp.test.MDR.SCANC;
+package com.timp.test.MDR.SCANC.MovimentoSCANC;
 
 import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -13,14 +11,14 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
-import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANCCriarPO;
-import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANCVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriarPO;
+import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO;
 
-public class ProductosSCANCVisualizar extends TestBaseSteven {
+public class MovimentoSCANCCriar extends TestBaseSteven {
  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ProdutosSCANCVisualizarPO produtosSCANCVisualizarPO;
+	MovimentoSCANCCriarPO movimentoSCANCCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -28,7 +26,7 @@ public class ProductosSCANCVisualizar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		produtosSCANCVisualizarPO = new ProdutosSCANCVisualizarPO();
+		movimentoSCANCCriarPO = new MovimentoSCANCCriarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -51,11 +49,9 @@ public class ProductosSCANCVisualizar extends TestBaseSteven {
 	public void criar() {
 
 		
-		ArrayList<Boolean> sucesso = produtosSCANCVisualizarPO.visualizar();
+		boolean sucesso = movimentoSCANCCriarPO.criar();
 		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
+		assertTrue(sucesso, Criar);
 		
 	}			
 			

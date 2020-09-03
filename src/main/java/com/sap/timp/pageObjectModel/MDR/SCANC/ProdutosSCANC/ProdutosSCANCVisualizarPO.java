@@ -1,6 +1,7 @@
-package com.sap.timp.pageObjectModel.MDR.SCANC;
+package com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ProdutosSCANCDetalhesPO extends TestBaseSteven {
+public class ProdutosSCANCVisualizarPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
 	public WebElement scanc;
@@ -39,32 +40,32 @@ public class ProdutosSCANCDetalhesPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 
-	@FindBy(xpath = "//div[@id=\"detail-description\"][3]/div[2]/div")
-	public WebElement GRScancD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][4]/div[2]/div")
-	public WebElement mercadoriaD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][6]/div[2]/div")
-	public WebElement materialD;
+
+	@FindBy(xpath = "//input[contains(@placeholder,\"SCANC\")]")
+	public WebElement GRScancE;
+	@FindBy(xpath = "//div[@id=\"material-code-products\"]/div/div/div/div/div/div[1]")
+	public WebElement materialE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"início\")]")
+	public WebElement dataVigenciaE;
 
 
 	@FindBy(xpath = "//span[@id=\"grScanc\"]")
 	public WebElement GRScancV;
-	@FindBy(xpath = "//span[@id=\"grMerchandise\"]")
-	public WebElement mecadoriaV;
 	@FindBy(xpath = "//span[@id=\"material\"]")
 	public WebElement materialV;
+	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
+	public WebElement dataVigenciaV;
 
-	
 
-	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
-	public WebElement fechar;
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
 
-	public ProdutosSCANCDetalhesPO() {
+	public ProdutosSCANCVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 
-	public ArrayList<Boolean> detalhes() {
+	public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		scanc.click();
 		sleep(2000);
@@ -78,11 +79,11 @@ public class ProdutosSCANCDetalhesPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		;
 		String idRegistro = idObter2();
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
-		WebElement açao = driver.findElement(
-				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 
 		sleep(2000);
 		menu.click();
@@ -93,26 +94,32 @@ public class ProdutosSCANCDetalhesPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 
-		String GRScancD1 = GRScancD.getText();
-		String mercadoriaD1 = mercadoriaD.getText();
+		String GRScancV1 = GRScancV.getText();
+		String materialV1 = materialV.getText();
+		String dataViengiaV1 = dataVigenciaV.getText();
 		
 		
-		mercadoriaD1 = ordenar(mercadoriaD1);
-		mercadoriaD1.replace(", ", "").trim();
-		String materialD1 = materialD.getText();
+		System.out.println(GRScancV1);
+		System.out.println(materialV1);
+		System.out.println(dataViengiaV1);
+		
 
-		
-		System.out.println(GRScancD1);
-		System.out.println(mercadoriaD1);
-		System.out.println(materialD1);
 
-		
 		sleep(2000);
-		fechar.click();
 
+		biblioteca.click();
+
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
-		açao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		açao = driver.findElement(
+				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
 		menu.click();
 		sleep(1000);
@@ -120,35 +127,31 @@ public class ProdutosSCANCDetalhesPO extends TestBaseSteven {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		visibilityOfElementXpath("//span[@id=\"grScanc\"]");
-		sleep(3000);
+		attributoNotToBeEmptyElement(dataVigenciaE, "value");
+		sleep(5000);
 
-		String GRScancV1 = GRScancV.getText();
-		String mercadoriaV1 = mecadoriaV.getText();
+		String GRScanE1 = GRScancE.getAttribute("value");
+		String materialE1 = materialE.getText();
+		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
 		
-		mercadoriaV1 = ordenar(mercadoriaV1);
-		mercadoriaV1.replace(", ", "").trim();
-	
-		String materialV1 = materialV.getText();
 
 
-		System.out.println(GRScancV1);
-		System.out.println(mercadoriaV1);
-		System.out.println(materialV1);
+		System.out.println(GRScanE1);
+		System.out.println(materialE1);
+		System.out.println(dataVigenciaE1);
 
 		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		sucesso.add(GRScancV1.contains(GRScancD1));
-		sucesso.add(mercadoriaV1.contains(mercadoriaD1));
-		sucesso.add(materialV1.contains(materialD1));
 
-		
+		sucesso.add(GRScanE1.contains(GRScancV1));
+		sucesso.add(materialE1.contains(materialV1));
+		sucesso.add(dataVigenciaE1.contains(dataViengiaV1));
+
+	
+
 		System.out.println(sucesso);
-		
 		return sucesso;
-		
-
 
 	}
 

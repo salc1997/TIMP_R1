@@ -2,82 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="90800" started-at="2020-09-03T14:32:01Z" finished-at="2020-09-03T14:33:32Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="131358" started-at="2020-09-03T12:43:39Z" finished-at="2020-09-03T12:45:51Z">
-=======
-  <suite name="Default suite" duration-ms="112702" started-at="2020-09-03T02:02:22Z" finished-at="2020-09-03T02:04:14Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite name="Default suite" duration-ms="113849" started-at="2020-09-03T17:01:18Z" finished-at="2020-09-03T17:03:11Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="90800" started-at="2020-09-03T14:32:01Z" finished-at="2020-09-03T14:33:32Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhes">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhes@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="14539" started-at="2020-09-03T08:32:01Z" finished-at="2020-09-03T08:32:16Z">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="131358" started-at="2020-09-03T12:43:39Z" finished-at="2020-09-03T12:45:51Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesEditar@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="20532" started-at="2020-09-03T09:43:39Z" finished-at="2020-09-03T09:44:00Z">
-=======
-    <test name="Default test" duration-ms="112702" started-at="2020-09-03T02:02:22Z" finished-at="2020-09-03T02:04:14Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="13359" started-at="2020-09-02T20:02:22Z" finished-at="2020-09-02T20:02:35Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test name="Default test" duration-ms="113849" started-at="2020-09-03T17:01:18Z" finished-at="2020-09-03T17:03:11Z">
+      <class name="com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="13589" started-at="2020-09-03T11:01:18Z" finished-at="2020-09-03T11:01:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhes@3b2cf7ab]" name="login" duration-ms="6872" started-at="2020-09-03T08:32:16Z" finished-at="2020-09-03T08:32:23Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesEditar@2aa5fe93]" name="login" duration-ms="9774" started-at="2020-09-03T09:44:00Z" finished-at="2020-09-03T09:44:10Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir@3b2cf7ab]" name="login" duration-ms="6892" started-at="2020-09-02T20:02:35Z" finished-at="2020-09-02T20:02:42Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="login" duration-ms="6006" started-at="2020-09-03T11:01:31Z" finished-at="2020-09-03T11:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhes@3b2cf7ab]" name="acessarMDR" duration-ms="24522" started-at="2020-09-03T08:32:23Z" finished-at="2020-09-03T08:32:47Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesEditar@2aa5fe93]" name="acessarMDR" duration-ms="11882" started-at="2020-09-03T09:44:10Z" finished-at="2020-09-03T09:44:21Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="24905" started-at="2020-09-02T20:02:42Z" finished-at="2020-09-02T20:03:07Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="acessarMDR" duration-ms="24628" started-at="2020-09-03T11:01:37Z" finished-at="2020-09-03T11:02:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="detalhes()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhes@3b2cf7ab]" name="detalhes" duration-ms="44851" started-at="2020-09-03T08:32:47Z" finished-at="2020-09-03T08:33:32Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesEditar@2aa5fe93]" name="editar" duration-ms="89141" started-at="2020-09-03T09:44:21Z" finished-at="2020-09-03T09:45:51Z">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir@3b2cf7ab]" name="criar" duration-ms="67535" started-at="2020-09-02T20:03:07Z" finished-at="2020-09-02T20:04:14Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="criar" duration-ms="69613" started-at="2020-09-03T11:02:02Z" finished-at="2020-09-03T11:03:11Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- detalhes -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhes -->
-=======
-<<<<<<< HEAD
-        </test-method> <!-- editar -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesEditar -->
-=======
         </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

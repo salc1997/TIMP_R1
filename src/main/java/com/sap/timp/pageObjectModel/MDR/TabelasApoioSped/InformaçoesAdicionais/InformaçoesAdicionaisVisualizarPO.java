@@ -11,73 +11,32 @@ import com.sap.timp.base.TestBaseEliel;
 
 public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 	
+	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
+	public WebElement obrigacoes;
 	
-	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
-	public WebElement tabelaApoioSped;
+	@FindBy(xpath = "//span[text()=\"Tabela de Outros Débitos\"]")
+	public WebElement outrosDebitos;
 	
-	@FindBy(xpath = "//span[text()=\"5.2 Informações Adicionais - Valores Declaratórios\"]")
-	public WebElement informacoesadicionais;
-	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//div[@class=\"thead\"]/div/div[3]")
-	public WebElement idC;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")
-	public WebElement idR;
-	
-	@FindBy(xpath = "//span[text()=\"Novo Valor Declaratório\"]")
-	public WebElement novovalor;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
-	public WebElement codigodevalores;
-	
-	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Informação Adicional\"]")
-	public WebElement descricao;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datavigencia;
-	
-	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
-	public WebElement gravar;
-	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
-	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement nao;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
-	public WebElement pesquisar;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
-	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
-	
-	@FindBy(xpath = "//span[@id=\"codInfoAdicional\"]")
+	@FindBy(xpath = "//span[@id=\"obrigation\"]")
+	public WebElement obrigacaoV;
+	@FindBy(xpath = "//span[@id=\"otherDebtsCode\"]")
 	public WebElement codigoV;
-	@FindBy(xpath = "//span[@id=\"uf\"]")
-	public WebElement ufV;
-	@FindBy(xpath = "//span[@id=\"sequencia\"]")
-	public WebElement sequenciaV;
-	@FindBy(xpath = "//span[@id=\"descricao\"]")
+	@FindBy(xpath = "//span[@id=\"otherDebtsDescription\"]")
 	public WebElement descricaoV;
-	@FindBy(xpath = "//span[@id=\"vigencia\"]")
+	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
 	public WebElement dataVigenciaV;
 	
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Obrigação\")]")
+	public WebElement obrigacaoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
 	public WebElement codigoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
-	public WebElement ufE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Sequência\")]")
-	public WebElement sequenciaE;
-	@FindBy(xpath = "//textarea[contains(@placeholder,\"descrição\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Vigência de\")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
@@ -90,10 +49,11 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 	}
 	
 	public ArrayList<Boolean> visualizar() {
+
 		sleep(2000);
-		tabelaApoioSped.click();
+		obrigacoes.click();
 		sleep(2000);
-		informacoesadicionais.click();
+		outrosDebitos.click();
 		sleep(2000);
 		
 		waitExpectElement(siguiente);
@@ -109,7 +69,7 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-
+		sleep(20);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -122,16 +82,14 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+		String obrigacaoV1 = obrigacaoV.getText();
 		String codigoV1 = codigoV.getText();
-		String ufV1 = ufV.getText();
-		String sequenciaV1 = sequenciaV.getText();
 		String descricaoV1 = descricaoV.getText();
 		String dataVigenciaV1 = dataVigenciaV.getText();
 		
 		
+		System.out.println(obrigacaoV1);
 		System.out.println(codigoV1);
-		System.out.println(ufV1);
-		System.out.println(sequenciaV1);
 		System.out.println(descricaoV1);
 		System.out.println(dataVigenciaV1);
 		
@@ -155,24 +113,23 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 		sleep(2000);
 		attributoNotToBeEmptyElement(codigoE, "value");
 		
+		
+		String obrigacaoE1 = obrigacaoE.getAttribute("value");
 		String codigoE1 = codigoE.getAttribute("value");
-		String ufE1 = ufE.getAttribute("value");
-		String sequenciaE1 = sequenciaE.getAttribute("value");
 		String descricaoE1 = descricaoE.getAttribute("value");
 		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
 		
 		
 		System.out.println(codigoE1);
-		System.out.println(ufE1);
-		System.out.println(sequenciaE1);
+		System.out.println(obrigacaoE1);
 		System.out.println(descricaoE1);
 		System.out.println(dataVigenciaE1);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
+		sucesso.add(obrigacaoV1.contains(obrigacaoE1));
 		sucesso.add(codigoV1.contains(codigoE1));
-		sucesso.add(ufV1.contains(ufE1));
-		sucesso.add(sequenciaV1.contains(sequenciaE1));
+		sucesso.add(descricaoV1.contains(descricaoE1));
 		sucesso.add(dataVigenciaV1.contains(dataVigenciaE1));
 		System.out.println(sucesso);
 

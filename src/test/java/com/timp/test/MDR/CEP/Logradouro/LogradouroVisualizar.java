@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroVisualizarPO;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -42,7 +45,14 @@ public class LogradouroVisualizar extends TestBaseKathy{
 	
 	 @Test(priority = 2)
 	public void logradouroVisualizar() {
-		 String sucesso = logradouroVisualizarPO.logradouroVisualizar();		 
-		 assertEquals(sucesso, "edit", visualizaçar);
+		 
+		 ArrayList<Boolean> sucesso = logradouroVisualizarPO.logradouroVisualizar();		 
+		 
+		 for (int i = 0; i < sucesso.size(); i++) {
+				
+				assertTrue(sucesso.get(i), visualizaçar);
+				
+			}
+		 // assertEquals(sucesso, "edit", visualizaçar);
 	}
 }

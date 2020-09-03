@@ -13,6 +13,8 @@ import org.testng.annotations.BeforeClass;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
 public class CodigoContabalizacaoVisualizar extends TestBaseEliel{
@@ -49,9 +51,16 @@ public class CodigoContabalizacaoVisualizar extends TestBaseEliel{
 	public void Visualizar() {
 
 
-		String sucesso = codigoContabilizacaoVisualizarPO.visualizar();
+		 ArrayList<Boolean> sucesso = codigoContabilizacaoVisualizarPO.visualizar();
 		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		 for (int i = 0; i < sucesso.size(); i++) {
+				
+				assertTrue(sucesso.get(i), visualizaçar);
+				
+			}
+		 
+		 
+		 //assertEquals(sucesso, "edit", visualizaçar);
 		 
 		//Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(codigoContabilizacaoVisualizarPO.mostrar.isDisplayed(), semAcesso);

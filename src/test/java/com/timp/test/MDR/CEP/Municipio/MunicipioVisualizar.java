@@ -3,6 +3,8 @@ package com.timp.test.MDR.CEP.Municipio;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -51,8 +53,13 @@ public class MunicipioVisualizar extends TestBaseSteven{
 	 @Test(priority = 2)
 	  public void visualizar() {
 		 
-		 String sucesso = municipioVisualizarPO.visualizar();
+		 ArrayList<Boolean> sucesso = municipioVisualizarPO.visualizar();
 		  
-		 assertEquals(sucesso, "edit", EmpresaVisualizar);
+		 for (int i = 0; i < sucesso.size(); i++) {
+				
+				assertTrue(sucesso.get(i), visualizaçar);
+				
+			}
+		// assertEquals(sucesso, "edit", EmpresaVisualizar);
 	  }
 }

@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.CEP.Logradouro;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -24,11 +26,49 @@ public class LogradouroVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
 	public WebElement visualizar;
 	
+	@FindBy(xpath = "//li/span[text()=\"Editar\"]")
+	public WebElement editar;
+	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
+	@FindBy(xpath = "//span[@id=\"id\"]")
+	public WebElement numerobairrovi;
+	
+	@FindBy(xpath = "//span[@id=\"uf\"]")
+	public WebElement ufvi;
+	
+	@FindBy(xpath = "//span[@id=\"localizacaoNumero\"]")
+	public WebElement numerolocalizacaovi;
+	
+	@FindBy(xpath = "//span[@id=\"bairroNumero\"]")
+	public WebElement bairronumerovi;
+	
+	@FindBy(xpath = "//span[@id=\"logradouroNome\"]")
+	public WebElement nomelogadourovi;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher CEP\"]")
+	public WebElement numerobairroed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher UF\"]")
+	public WebElement ufed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Número de localização\"]")
+	public WebElement numerolocalizacaoed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Número de bairro\"]")
+	public WebElement bairronumeroed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Nome de Logradouro\"]")
+	public WebElement nomelogadouroed;
+	
+	
+	
 	public LogradouroVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String logradouroVisualizar() {
+	public ArrayList<Boolean> logradouroVisualizar() {
 		cep.click();
 		sleep(1000);
 		logradouro.click();
@@ -45,8 +85,62 @@ public class LogradouroVisualizarPO extends TestBaseKathy{
 		visualizar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		
+		String numerobairrovisualizar = numerobairrovi.getText();
+		String ufvisualizar = ufvi.getText();
+		String numerolocalizacaovisualizar = numerolocalizacaovi.getText();
+		String bairronumerovisualizar = bairronumerovi.getText();
+		String nomelogadourovisualizar = nomelogadourovi.getText();
+		
+		System.out.println(numerobairrovisualizar);
+		System.out.println(ufvisualizar);
+		System.out.println(numerolocalizacaovisualizar);
+		System.out.println(bairronumerovisualizar);
+		System.out.println(nomelogadourovisualizar);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		biblioteca.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys(numEnviar);
+		pesquisar.sendKeys(Keys.ENTER);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		editar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		//editar
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String numerobairroeditar=numerobairroed.getAttribute("value");
+		String ufeditar=ufed.getAttribute("value");
+		String numerolocalizacaoeditar=numerolocalizacaoed.getAttribute("value");
+		String bairronumeroeditar=bairronumeroed.getAttribute("value");
+		String nomelogadouroeditar = nomelogadouroed.getAttribute("value");
+				
+		System.out.println(numerobairroeditar);
+		System.out.println(ufeditar);
+		System.out.println(numerolocalizacaoeditar);
+		System.out.println(bairronumeroeditar);
+		System.out.println(nomelogadouroeditar);
+		
+		
+		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		sucesso.add(numerobairroeditar.equals(numerobairrovisualizar));
+		sucesso.add(ufeditar.equals(ufvisualizar));
+		sucesso.add(numerolocalizacaoeditar.equals(numerolocalizacaovisualizar));
+		sucesso.add(bairronumeroeditar.equals(bairronumerovisualizar));
+		sucesso.add(nomelogadouroeditar.equals(nomelogadourovisualizar));
 		return sucesso;		
 	}
 }

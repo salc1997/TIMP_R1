@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,11 +37,36 @@ public class TributosVisualizarPO extends TestBaseKathy{
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
 	
+	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
+	@FindBy (xpath = "//span[@id=\"company\"]")
+	public WebElement empresavi;
+	
+	@FindBy (xpath = "//span[@id=\"UF\"]")
+	public WebElement ufvi;
+	
+	@FindBy (xpath = "//span[@id=\"centralizedTribute\"]")
+	public WebElement tributocentralizadorvi;
+	
+	
+	
+	@FindBy (xpath = "//input[@placeholder=\"Selecione um  Empresa\"]")
+	public WebElement empresaed;
+	
+	
+	@FindBy (xpath = "//input[@placeholder=\"Selecionar UF Filial\"]")
+	public WebElement ufed;
+	
+	
+	@FindBy (xpath = "//input[@placeholder=\"Selecionar Tributo Centralizador\"]")
+	public WebElement tributocentralizadored;
 	public TributosVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String visualizarTributo() {
+	public ArrayList<Boolean> visualizarTributo() {
 		String url = driver.getCurrentUrl();
 		boolean tc2 = false;
 		boolean td1 = false;
@@ -79,8 +106,72 @@ public class TributosVisualizarPO extends TestBaseKathy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+
+		String empresavisualizar = empresavi.getText();
+		String ufvisualizar = ufvi.getText();
+		String tributocentralizadorvisualizar = tributocentralizadorvi.getText();
+		
+				
+		System.out.println(empresavisualizar);
+		System.out.println(ufvisualizar);
+		System.out.println(tributocentralizadorvisualizar);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		biblioteca.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectElement(siguiente);
+		sleep(2000);
+		siguiente.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//pega o ultimo id que foi gerado no criar
+		String idRegistro1 = idObter1();
+		
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		actionsMoveToElementElement(menu1);
+		sleep(2000);
+		menu1.click();
+		sleep(1000);
+		
+		editar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		//editar
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String empresaeditar=empresaed.getAttribute("value");
+		String ufeditar=ufed.getAttribute("value");
+		String tributocentralizadoreditar=tributocentralizadored.getAttribute("value");
+		
+	
+		System.out.println( empresaeditar);
+		System.out.println(ufeditar);
+		System.out.println(tributocentralizadoreditar);
+		
+	
+		
+		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		sucesso.add(empresavisualizar.equals(empresaeditar));
+		sucesso.add(ufvisualizar.equals(ufeditar));
+		sucesso.add(tributocentralizadorvisualizar.equals(tributocentralizadoreditar));
+		
+		
+		return sucesso;
+		
+		/*
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		
 		return sucesso;
+		*/
 	}
 }

@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -46,9 +49,11 @@ public class InformaçoesAdicionaisVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		String sucesso = informaçoesAdicionaisVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = informaçoesAdicionaisVisualizarPO.visualizar();
 		
-		 assertEquals(sucesso, "forms-wrapper", visualizaçar);
+		 for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}	
 	
 	

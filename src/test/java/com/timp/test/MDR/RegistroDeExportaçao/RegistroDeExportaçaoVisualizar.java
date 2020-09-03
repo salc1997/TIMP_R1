@@ -11,6 +11,9 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribu
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -47,9 +50,11 @@ public class RegistroDeExportaçaoVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		String sucesso = registroDeExportaçaoVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = registroDeExportaçaoVisualizarPO.visualizar();
 		
-		 assertEquals(sucesso, "tabs singleForm", visualizaçar);
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}		
 	
 	

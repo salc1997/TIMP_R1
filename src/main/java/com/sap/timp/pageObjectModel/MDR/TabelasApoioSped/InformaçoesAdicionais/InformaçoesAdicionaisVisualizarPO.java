@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,9 +49,6 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
-	public WebElement biblioteca;
-	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
@@ -59,13 +58,38 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
 	public WebElement engrenagem;
 	
+	@FindBy(xpath = "//span[@id=\"codInfoAdicional\"]")
+	public WebElement codigoV;
+	@FindBy(xpath = "//span[@id=\"uf\"]")
+	public WebElement ufV;
+	@FindBy(xpath = "//span[@id=\"sequencia\"]")
+	public WebElement sequenciaV;
+	@FindBy(xpath = "//span[@id=\"descricao\"]")
+	public WebElement descricaoV;
+	@FindBy(xpath = "//span[@id=\"vigencia\"]")
+	public WebElement dataVigenciaV;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
+	public WebElement codigoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
+	public WebElement ufE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Sequência\")]")
+	public WebElement sequenciaE;
+	@FindBy(xpath = "//textarea[contains(@placeholder,\"descrição\")]")
+	public WebElement descricaoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	public WebElement dataVigenciaE;
+	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
 	
 	public InformaçoesAdicionaisVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String visualizar() {
+	public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -83,46 +107,78 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		
-		visualizar.click();
+		açao.click();
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		String codigoV1 = codigoV.getText();
+		String ufV1 = ufV.getText();
+		String sequenciaV1 = sequenciaV.getText();
+		String descricaoV1 = descricaoV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getText();
+		
+		
+		System.out.println(codigoV1);
+		System.out.println(ufV1);
+		System.out.println(sequenciaV1);
+		System.out.println(descricaoV1);
+		System.out.println(dataVigenciaV1);
+		
 		biblioteca.click();
 		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		waitExpectElement(siguiente);
-		sleep(2000);
 		siguiente.click();
-		
-		
-		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
-		sleep(2000);
-		menu1.click();
-		sleep(1000);
-		
-		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//div[@class=\"forms-wrapper\"]")).getAttribute("class");
-		//System.out.println(sucesso);	
-		return sucesso;	
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(2000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		attributoNotToBeEmptyElement(codigoE, "value");
+		
+		String codigoE1 = codigoE.getAttribute("value");
+		String ufE1 = ufE.getAttribute("value");
+		String sequenciaE1 = sequenciaE.getAttribute("value");
+		String descricaoE1 = descricaoE.getAttribute("value");
+		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
+		
+		
+		System.out.println(codigoE1);
+		System.out.println(ufE1);
+		System.out.println(sequenciaE1);
+		System.out.println(descricaoE1);
+		System.out.println(dataVigenciaE1);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(codigoV1.contains(codigoE1));
+		sucesso.add(ufV1.contains(ufE1));
+		sucesso.add(sequenciaV1.contains(sequenciaE1));
+		sucesso.add(dataVigenciaV1.contains(dataVigenciaE1));
+		System.out.println(sucesso);
+
+
+		return sucesso;
+			
 	}
 
 	

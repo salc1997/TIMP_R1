@@ -1,6 +1,9 @@
 package com.timp.test.MDR.DetalheTipoTributo;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -45,8 +48,13 @@ public class DetalheVisualizar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void visualizar() {
 
-		String sucesso = detalheVisualizarPO.visualizar();
-
-		assertEquals(sucesso, "edit", EmpresaVisualizar);
+		ArrayList<Boolean> sucesso = detalheVisualizarPO.visualizar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			
+			assertTrue(sucesso.get(i), visualizaçar);
+			
+		}
+		//assertEquals(sucesso, "edit", EmpresaVisualizar);
 	}
 }

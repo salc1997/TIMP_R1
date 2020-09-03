@@ -249,9 +249,6 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBaseEliel{
 		sucesso.add(descricaoV1.contains(descricaoE1));
 		sucesso.add(tributoE1.contains(tributoV1));
 		sucesso.add(tipoImpostoE1.contains(tipoImpostoE1));
-		sucesso.add(detalheTipoTributoV1.contains(detalheTipoTributoE1));
-		sucesso.add(utilizacaoV1.contains(utiliacaoE1));
-		sucesso.add(linhaLivroV1.contains(linhaLivroE1));
 		sucesso.add(contaDebitoV1.contains(contaDebitoE1));
 		sucesso.add(contaCreditoV1.contains(contaCreditoE1));
 

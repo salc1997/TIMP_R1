@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,10 +48,7 @@ public class CodigoTipoCreditoVisualizarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
-	
-	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
-	public WebElement biblioteca;
-	
+		
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -62,13 +61,35 @@ public class CodigoTipoCreditoVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//span[@id=\"tax\"]")
+	public WebElement tributoV;
+	@FindBy(xpath = "//span[@id=\"creditTypeCode\"]")
+	public WebElement codigoTipoCreditoV;
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaoV;
+	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
+	public WebElement dataVigenciaV;
+	
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Tributo\")]")
+	public WebElement tributoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Preencher o Código de Tipo de Crédito\")]")
+	public WebElement codigoTipoCreditoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"descrição\")]")
+	public WebElement descricaoE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	public WebElement dataVigenciaE;
+	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
 	
 	public CodigoTipoCreditoVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String visualizar() {
+	public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -84,21 +105,74 @@ public class CodigoTipoCreditoVisualizarPO extends TestBaseEliel {
 		String idRegistro = idObter2();
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		
-		visualizar.click();
+		açao.click();
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		String codigoTipoCreditoV1 = codigoTipoCreditoV.getText();
+		String descricaoV1 = descricaoV.getText();
+		String tributoV1 = tributoV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getText();
+
 		
-		return sucesso;	
+		
+		System.out.println(codigoTipoCreditoV1);
+		System.out.println(descricaoV1);
+		System.out.println(tributoV1);
+		System.out.println(dataVigenciaV1);
+
+		
+		biblioteca.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(2000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String codigoTipoCreditoE1 = codigoTipoCreditoE.getAttribute("value");
+		String descricaoE1 = descricaoE.getAttribute("value");
+		String tributoE1 = tributoE.getAttribute("value");
+		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
+
+		
+		
+		System.out.println(codigoTipoCreditoE1);
+		System.out.println(descricaoE1);
+		System.out.println(tributoE1);
+		System.out.println(dataVigenciaE1);
+
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(codigoTipoCreditoV1.contains(codigoTipoCreditoE1));
+		sucesso.add(descricaoV1.contains(descricaoE1));
+		sucesso.add(tributoV1.contains(tributoE1));
+		sucesso.add(dataVigenciaV1.contains(dataVigenciaE1));
+	
+		System.out.println(sucesso);
+
+
+		return sucesso;
 		
 	}
 		

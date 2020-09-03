@@ -170,11 +170,19 @@ public class TestBaseSteven {
 
 	}
 	
+	public String textContent(WebElement element) {
+
+		String texto = element.getAttribute("textContent");
+		
+		return texto;
+
+	}
+	
 	public String getValue(WebElement element) {
 
 		String texto = element.getAttribute("value");
 		
-		if (texto=="") {
+		if (texto.isEmpty()==true) {
 			texto = "vazio";
 		}
 		

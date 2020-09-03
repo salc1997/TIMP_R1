@@ -2,6 +2,7 @@ package com.timp.test.MDR.Centralizacao.Tributos;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -10,17 +11,20 @@ import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosVisualiza
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TributosVisualizar extends TestBaseKathy{
+public class TributosVisualizar extends TestBaseEliel{
   LoginTC loginTC;
   AcessarMDRPO acessarMDRPO;
   TributosVisualizarPO tributosVisualizarPO;
   
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationK();
+	  driver = initializationE();
 	  loginTC = new LoginTC();
 	  acessarMDRPO = new AcessarMDRPO();
 	  tributosVisualizarPO = new TributosVisualizarPO();
@@ -42,7 +46,12 @@ public class TributosVisualizar extends TestBaseKathy{
 
   @Test(priority = 2)
   public void visualizar() {
-	  String sucesso = tributosVisualizarPO.visualizarTributo();
-	  assertEquals(sucesso, "edit", EmpresaVisualizar);
+	  ArrayList<Boolean> sucesso = tributosVisualizarPO.visualizarTributo();
+	  for (int i = 0; i < sucesso.size(); i++) {
+			
+			assertTrue(sucesso.get(i), visualizaçar);
+			
+		}
+	 // assertEquals(sucesso, "edit", EmpresaVisualizar);
   }
 }

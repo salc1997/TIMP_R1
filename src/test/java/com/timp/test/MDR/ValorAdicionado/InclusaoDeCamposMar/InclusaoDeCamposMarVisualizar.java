@@ -1,6 +1,9 @@
 package com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -44,9 +47,11 @@ public class InclusaoDeCamposMarVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		String sucesso = inclusaoDeCamposMarVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = inclusaoDeCamposMarVisualizarPO.visualizar();
 		
-		 assertEquals(sucesso, "baseTabs-wrapper wrapperClass", visualizaçar);
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i),visualizaçar);
+		}
 	}	
 	
 	

@@ -112,7 +112,7 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		tipolancamento.sendKeys(Keys.ENTER);;
+		tipolancamento.sendKeys(Keys.ENTER);
 		
 		opcaotipolancamento.click();
 		

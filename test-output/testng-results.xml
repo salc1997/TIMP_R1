@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="194275" started-at="2020-09-02T01:53:57Z" finished-at="2020-09-02T01:57:11Z">
+  <suite name="Default suite" duration-ms="100989" started-at="2020-09-03T00:27:18Z" finished-at="2020-09-03T00:28:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="194275" started-at="2020-09-02T01:53:57Z" finished-at="2020-09-02T01:57:11Z">
-      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="18060" started-at="2020-09-01T19:53:57Z" finished-at="2020-09-01T19:54:15Z">
+    <test name="Default test" duration-ms="100989" started-at="2020-09-03T00:27:18Z" finished-at="2020-09-03T00:28:59Z">
+      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizar@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="19821" started-at="2020-09-02T18:27:18Z" finished-at="2020-09-02T18:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar@2aa5fe93]" name="login" duration-ms="8247" started-at="2020-09-01T19:54:15Z" finished-at="2020-09-01T19:54:23Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizar@2aa5fe93]" name="login" duration-ms="6567" started-at="2020-09-02T18:27:38Z" finished-at="2020-09-02T18:27:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar@2aa5fe93]" name="acessarMDR" duration-ms="108340" started-at="2020-09-01T19:54:23Z" finished-at="2020-09-01T19:56:12Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizar@2aa5fe93]" name="acessarMDR" duration-ms="8494" started-at="2020-09-02T18:27:44Z" finished-at="2020-09-02T18:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar@2aa5fe93]" name="Visualizar" duration-ms="59608" started-at="2020-09-01T19:56:12Z" finished-at="2020-09-01T19:57:11Z">
+        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizar@2aa5fe93]" name="Visualizar" duration-ms="66093" started-at="2020-09-02T18:27:53Z" finished-at="2020-09-02T18:28:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Visualizar -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar -->
+      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

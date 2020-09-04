@@ -45,7 +45,7 @@ public class TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tq1);
 		return driver;
 
 	}
@@ -63,12 +63,54 @@ public class TestBaseSteven {
 			e.printStackTrace();
 		}
 	}
+	
+	public Boolean igualInt(int valor, int esperado) {
+		
+		boolean sucesso = false;
+		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean igualDobule(double valor, double esperado) {
+		
+		boolean sucesso = false;
+		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
 
 	public void waitExpectXpath(String locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 
+	}
+	
+	public String remplazarPuntos(String valor) {
+		
+		valor = valor.replace(".", "");
+
+		return valor;
+		
+		
+	}
+	
+	public String remplazarComas(String valor) {
+		
+		valor = valor.replace(",", ".");
+		
+		return valor;
+		
+		
 	}
 
 	public void waitExpectElement(WebElement element) {
@@ -89,7 +131,7 @@ public class TestBaseSteven {
 	}
 
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 300000);
 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 
@@ -214,7 +256,7 @@ public class TestBaseSteven {
 	public void visibilityOfElementXpath(String xpath) {
 
 		boolean isPresent = driver.findElement(By.xpath(xpath)).isDisplayed();
-		System.err.println(isPresent);
+
 		while (isPresent == false) {
 			sleep(3000);
 			isPresent = driver.findElement(By.xpath(xpath)).isDisplayed();

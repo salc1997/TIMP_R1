@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="126976" started-at="2020-09-04T21:19:55Z" finished-at="2020-09-04T21:22:02Z">
+  <suite name="Default suite" duration-ms="110384" started-at="2020-09-08T17:42:15Z" finished-at="2020-09-08T17:44:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="126976" started-at="2020-09-04T21:19:55Z" finished-at="2020-09-04T21:22:02Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="13384" started-at="2020-09-04T15:19:55Z" finished-at="2020-09-04T15:20:09Z">
+    <test name="Default test" duration-ms="110384" started-at="2020-09-08T17:42:15Z" finished-at="2020-09-08T17:44:06Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="11478" started-at="2020-09-08T11:42:15Z" finished-at="2020-09-08T11:42:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir@3b2cf7ab]" name="login" duration-ms="6350" started-at="2020-09-04T15:20:09Z" finished-at="2020-09-04T15:20:15Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="login" duration-ms="6735" started-at="2020-09-08T11:42:27Z" finished-at="2020-09-08T11:42:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="40155" started-at="2020-09-04T15:20:15Z" finished-at="2020-09-04T15:20:55Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="21839" started-at="2020-09-08T11:42:34Z" finished-at="2020-09-08T11:42:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir@3b2cf7ab]" name="excluir" duration-ms="67076" started-at="2020-09-04T15:20:55Z" finished-at="2020-09-04T15:22:02Z">
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="criar" duration-ms="70320" started-at="2020-09-08T11:42:55Z" finished-at="2020-09-08T11:44:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluir -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir -->
+        </test-method> <!-- criar -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

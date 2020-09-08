@@ -1,6 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.SCANC;
-
-import java.util.ArrayList;
+package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,17 +10,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ProdutosSCANCExcluirPO extends TestBaseSteven{
+public class AtribuicaoMunicipioEstadoExcluirPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//span[text()=\"SCANC\"]")
-	public WebElement scanc;
+	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
+	public WebElement obrigacoes;
 	
-	@FindBy(xpath = "//span[text()=\"Produtos SCANC\"]")
-	public WebElement produtosScanc;
+	@FindBy(xpath = "//span[contains(text(),\"Atribuição de Municípios por Estado\")]")
+	public WebElement atribuicaoMunicipio;
+	
 
-	@FindBy(xpath = "//span[text()=\"Códigos de Ajustes\"]")
-	public WebElement codigo;
-	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 
@@ -34,31 +30,25 @@ public class ProdutosSCANCExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-
-	
-	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
-	public WebElement gravar;
-	
-	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
-	public WebElement biblioteca;
-	
+	/*
+	@FindBy(xpath = "")
+	public WebElement ;
+	@FindBy(xpath = "")
+	public WebElement ;
+	*/
 	
 	
-	public ProdutosSCANCExcluirPO() {
+	public AtribuicaoMunicipioEstadoExcluirPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public Boolean excluir() {
-		
-		
-		sleep(2000);
-		scanc.click();
-		sleep(2000);
-		
-		produtosScanc.click();
+	public boolean eliminar() {
 		
 		sleep(2000);
+		obrigacoes.click();
+		sleep(2000);
+		atribuicaoMunicipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -67,7 +57,7 @@ public class ProdutosSCANCExcluirPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter1();
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -107,9 +97,8 @@ public class ProdutosSCANCExcluirPO extends TestBaseSteven{
 		if (id1 != id2) {
 			sucesso= true;
 		}
-		System.out.println( sucesso);
+		
 		return sucesso;
-
 		
 		
 		

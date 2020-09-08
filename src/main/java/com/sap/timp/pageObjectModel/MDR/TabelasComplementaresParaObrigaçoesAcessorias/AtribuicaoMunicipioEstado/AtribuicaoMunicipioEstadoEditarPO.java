@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.SCANC;
+package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,19 +8,23 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ProdutosSCANCEditarPO extends TestBaseSteven {
+public class AtribuicaoMunicipioEstadoEditarPO extends TestBaseSteven {
 
-	@FindBy(xpath = "//span[text()=\"SCANC\"]")
-	public WebElement scanc;
+
+	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
+	public WebElement obrigacoes;
 	
-	@FindBy(xpath = "//span[text()=\"Produtos SCANC\"]")
-	public WebElement produtosScanc;
+	@FindBy(xpath = "//span[contains(text(),\"Atribuição de Municípios por Estado\")]")
+	public WebElement atribuicaoMunicipio;
+	
 
 
+	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
+	
 
-	@FindBy(xpath = "//input[contains(@placeholder,\"início\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição\")]")
 	public WebElement campo;
 
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
@@ -35,7 +39,7 @@ public class ProdutosSCANCEditarPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 
-	public ProdutosSCANCEditarPO() {
+	public AtribuicaoMunicipioEstadoEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -45,24 +49,20 @@ public class ProdutosSCANCEditarPO extends TestBaseSteven {
 
 
 		sleep(2000);
-		scanc.click();
+		obrigacoes.click();
 		sleep(2000);
-		produtosScanc.click();
-		sleep(2000);
+		atribuicaoMunicipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
-		actionsMoveToElementElement(menu);
-		sleep(4000);
-
+	
 		menu.click();
 		sleep(1000);
 		editar.click();
@@ -76,7 +76,7 @@ public class ProdutosSCANCEditarPO extends TestBaseSteven {
 
 		String valor = campo.getAttribute("value");
 
-		String enviar = fechaAyer();
+		String enviar = "Teste Editar";
 
 		campo.clear();
 		sleep(1000);

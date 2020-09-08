@@ -1,4 +1,4 @@
-package com.timp.test.MDR.SCANC;
+package com.timp.test.MDR.SCANC.ProdutosSCANC;
 
 import static org.testng.Assert.assertTrue;
 
@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
-import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANCDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCDetalhesPO;
 
 public class ProdutosSCANCDetalhes extends TestBaseSteven {
  

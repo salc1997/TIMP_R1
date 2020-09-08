@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.SCANC;
+package com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

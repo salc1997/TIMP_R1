@@ -2,55 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="108856" started-at="2020-09-08T21:23:28Z" finished-at="2020-09-08T21:25:17Z">
-=======
-  <suite name="Default suite" duration-ms="110384" started-at="2020-09-08T17:42:15Z" finished-at="2020-09-08T17:44:06Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite name="Default suite" duration-ms="130043" started-at="2020-09-09T14:31:41Z" finished-at="2020-09-09T14:33:52Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="108856" started-at="2020-09-08T21:23:28Z" finished-at="2020-09-08T21:25:17Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluir@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="19241" started-at="2020-09-08T18:23:28Z" finished-at="2020-09-08T18:23:48Z">
-=======
-    <test name="Default test" duration-ms="110384" started-at="2020-09-08T17:42:15Z" finished-at="2020-09-08T17:44:06Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="11478" started-at="2020-09-08T11:42:15Z" finished-at="2020-09-08T11:42:27Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test name="Default test" duration-ms="130043" started-at="2020-09-09T14:31:41Z" finished-at="2020-09-09T14:33:52Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Editar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Editar@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="21402" started-at="2020-09-09T11:31:42Z" finished-at="2020-09-09T11:32:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluir@2aa5fe93]" name="login" duration-ms="11992" started-at="2020-09-08T18:23:48Z" finished-at="2020-09-08T18:24:00Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="login" duration-ms="6735" started-at="2020-09-08T11:42:27Z" finished-at="2020-09-08T11:42:34Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Editar@2aa5fe93]" name="login" duration-ms="10049" started-at="2020-09-09T11:32:03Z" finished-at="2020-09-09T11:32:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluir@2aa5fe93]" name="acessarMDR" duration-ms="13124" started-at="2020-09-08T18:24:00Z" finished-at="2020-09-08T18:24:13Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="21839" started-at="2020-09-08T11:42:34Z" finished-at="2020-09-08T11:42:55Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Editar@2aa5fe93]" name="acessarMDR" duration-ms="11539" started-at="2020-09-09T11:32:13Z" finished-at="2020-09-09T11:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluir@2aa5fe93]" name="excluir" duration-ms="64472" started-at="2020-09-08T18:24:13Z" finished-at="2020-09-08T18:25:17Z">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir@3b2cf7ab]" name="criar" duration-ms="70320" started-at="2020-09-08T11:42:55Z" finished-at="2020-09-08T11:44:06Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Editar@2aa5fe93]" name="editar" duration-ms="86967" started-at="2020-09-09T11:32:25Z" finished-at="2020-09-09T11:33:52Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- excluir -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluir -->
-=======
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- editar -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Editar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

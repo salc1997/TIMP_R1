@@ -52,8 +52,7 @@ public class ClassificaçaoDeContribuintesDoIPICriarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
-	
-	
+		
 	
 	public ClassificaçaoDeContribuintesDoIPICriarPO() {
 

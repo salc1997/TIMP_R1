@@ -1,6 +1,9 @@
 package com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -46,9 +49,11 @@ public class CodigosDasObrigaçoesDeICMSaRecolherDetalhes extends TestBaseEliel{
 	public void Detalhes() {
 
 		
-		String sucesso = codigosDasObrigaçoesDeICMSaRecolherDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = codigosDasObrigaçoesDeICMSaRecolherDetalhesPO.detalhes();
 		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		 for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 	}	
 	
 	

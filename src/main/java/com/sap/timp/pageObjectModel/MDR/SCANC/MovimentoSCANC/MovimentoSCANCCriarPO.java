@@ -18,15 +18,13 @@ public class MovimentoSCANCCriarPO extends TestBaseSteven{
 	public WebElement scanc;
 	
 	@FindBy(xpath = "//span[text()=\"Movimento SCANC\"]")
-	public WebElement produtosScanc;
+	public WebElement movimentoScanc;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Nova\")]")
 	public WebElement novo;
 	
-	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement siguiente;
-	
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][1]")
+	public WebElement primeira;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -76,14 +74,14 @@ public class MovimentoSCANCCriarPO extends TestBaseSteven{
 		scanc.click();
 		sleep(2000);
 		
-		produtosScanc.click();
+		movimentoScanc.click();
 		
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		siguiente.click();
-		
+		primeira.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
@@ -145,7 +143,7 @@ public class MovimentoSCANCCriarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		siguiente.click();
+		primeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -155,7 +153,7 @@ public class MovimentoSCANCCriarPO extends TestBaseSteven{
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
 		
-		idInserir2(id2);
+		idInserir3(id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

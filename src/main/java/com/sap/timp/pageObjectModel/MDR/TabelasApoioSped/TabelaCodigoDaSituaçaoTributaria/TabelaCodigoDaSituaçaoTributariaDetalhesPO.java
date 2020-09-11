@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,25 +18,6 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhesPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"4.3.3 Tabela Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
 	public WebElement tabelacodigo;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement novocodigo;
-	
-	@FindBy(xpath = "//div[@id=\"select\" and @class=\"base-select-wrapper\"]/div[2]")
-	public WebElement tributo;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaotributo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código CST\"]")
-	public WebElement codigocst;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement descricao;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datadeiniciodevigencia;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
@@ -43,27 +26,41 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhesPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
 	public WebElement datavigencia;
 	
-	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
-	public WebElement gravar;
-	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
-	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement nao;
-	
-	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
-	public WebElement biblioteca;
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
+	
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
+	public WebElement tributode;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
+	public WebElement codigocstde;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
+	public WebElement descricaode;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div/div")
+	public WebElement datade;
+	
+	@FindBy(xpath = "//span[@id=\"tax\"]")
+	public WebElement tributovi;
+	
+	@FindBy(xpath = "//span[@id=\"cstCode\"]")
+	public WebElement codigocstvi;
+	
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaovi;
+	
+	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
+	public WebElement datavi;
 	
 	public TabelaCodigoDaSituaçaoTributariaDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String detalhes() {
+	public ArrayList<Boolean> detalhes() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -95,6 +92,20 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhesPO extends TestBaseEliel {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		
+		//detalhes
+		String tributodetalhes = tributode.getText();
+		String codigocstdetalhes = codigocstde.getText();
+		String descricaodetalhes = descricaode.getText();
+		String datadetalhes = datade.getText();	
+				
+		System.out.println(tributodetalhes);
+		System.out.println(codigocstdetalhes);
+		System.out.println(descricaodetalhes);
+		System.out.println(datadetalhes);
+				
+		
 		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -117,8 +128,24 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhesPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		String tributovisualizar = tributovi.getText();
+		String codigocstvisualizar = codigocstvi.getText();
+		String descricaovisualizar = descricaovi.getText();
+		String datavisualizar = datavi.getText();
+		
+		System.out.println(tributovisualizar);
+		System.out.println(codigocstvisualizar);
+		System.out.println(descricaovisualizar);
+		System.out.println( datavisualizar);
+		
+		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		sucesso.add(tributovisualizar.equals(tributodetalhes));
+		sucesso.add(codigocstvisualizar.equals(codigocstdetalhes));
+		sucesso.add(descricaovisualizar.equals(descricaodetalhes));
+		sucesso.add(datavisualizar.equals(datadetalhes));
+		
+		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		//System.out.println(sucesso);	
 		return sucesso;	
 		
 	}

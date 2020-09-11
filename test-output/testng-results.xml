@@ -2,23 +2,60 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="119539" started-at="2020-09-11T21:52:30Z" finished-at="2020-09-11T21:54:29Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="91934" started-at="2020-09-11T20:50:09Z" finished-at="2020-09-11T20:51:41Z">
+=======
+  <suite name="Default suite" duration-ms="94139" started-at="2020-09-11T20:38:01Z" finished-at="2020-09-11T20:39:35Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="119539" started-at="2020-09-11T21:52:30Z" finished-at="2020-09-11T21:54:29Z">
       <class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="13640" started-at="2020-09-11T15:52:30Z" finished-at="2020-09-11T15:52:43Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="91934" started-at="2020-09-11T20:50:09Z" finished-at="2020-09-11T20:51:41Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="20161" started-at="2020-09-11T17:50:09Z" finished-at="2020-09-11T17:50:29Z">
+=======
+    <test name="Default test" duration-ms="94139" started-at="2020-09-11T20:38:01Z" finished-at="2020-09-11T20:39:35Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="15545" started-at="2020-09-11T14:38:01Z" finished-at="2020-09-11T14:38:16Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="login" duration-ms="23924" started-at="2020-09-11T15:52:43Z" finished-at="2020-09-11T15:53:07Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="login" duration-ms="11646" started-at="2020-09-11T17:50:29Z" finished-at="2020-09-11T17:50:41Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="login" duration-ms="9267" started-at="2020-09-11T14:38:16Z" finished-at="2020-09-11T14:38:25Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="acessarMDR" duration-ms="26629" started-at="2020-09-11T15:53:07Z" finished-at="2020-09-11T15:53:34Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="acessarMDR" duration-ms="13264" started-at="2020-09-11T17:50:41Z" finished-at="2020-09-11T17:50:54Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="24071" started-at="2020-09-11T14:38:25Z" finished-at="2020-09-11T14:38:49Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="criar" duration-ms="55331" started-at="2020-09-11T15:53:34Z" finished-at="2020-09-11T15:54:29Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -87,10 +124,27 @@ Session ID: 51cb499d840b0ef0e66750583ec3b74c
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="Detalhes()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="Detalhes" duration-ms="46837" started-at="2020-09-11T17:50:54Z" finished-at="2020-09-11T17:51:41Z">
+=======
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="excluir" duration-ms="45240" started-at="2020-09-11T14:38:49Z" finished-at="2020-09-11T14:39:35Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
       </class> <!-- com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar -->
+=======
+<<<<<<< HEAD
+        </test-method> <!-- Detalhes -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes -->
+=======
+        </test-method> <!-- excluir -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10;
+package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11;
 
 import java.util.ArrayList;
 
@@ -9,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel {
+public class TabelaDeDetalhamentosParaRegistro11DetalhesPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela de Detalhamentos para Registro 10\"]")
-	public WebElement tabeladedetalhamentos;
+	@FindBy(xpath = "//span[text()=\"Tabela de Detalhamentos para Registro 11\"]")
+	public WebElement tabeladedetalhamentos11;
 	
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -54,7 +54,7 @@ public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel
 	public WebElement fechar;
 	
 	
-	public TabelaDeDetalhamentosParaRegistro10DetalhesPO() {
+	public TabelaDeDetalhamentosParaRegistro11DetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -64,7 +64,7 @@ public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel
 		tabelacomplementares.click();
 		sleep(2000);
 		
-		tabeladedetalhamentos.click();
+		tabeladedetalhamentos11.click();
 		
 		sleep(2000);
 		
@@ -146,5 +146,6 @@ public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel
 		
 		return sucesso;
 	}
+
 
 }

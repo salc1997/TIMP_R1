@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
+package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,40 +7,43 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
+public class TabelaDeDetalhamentosParaRegistro11CriarPO extends TestBaseEliel {
 	
-	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
-	public WebElement tabelaApoioSped;
+	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
+	public WebElement tabelacomplementares;
 	
-	@FindBy(xpath = "//span[text()=\"4.3.3 Tabela Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement tabelacodigo;
+	@FindBy(xpath = "//span[text()=\"Tabela de Detalhamentos para Registro 11\"]")
+	public WebElement tabeladedetalhamentos11;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement novocodigo;
+	@FindBy(xpath = "//span[text()=\"Novo Detalhamento\"]")
+	public WebElement novodetalhamento;
 	
-	@FindBy(xpath = "//div[@id=\"select\" and @class=\"base-select-wrapper\"]/div[2]")
-	public WebElement tributo;
+	@FindBy(xpath = "//div[@id=\"obligation\"]/div/div[2]")
+	public WebElement obrigacao;
 	
 	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaotributo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código CST\"]")
-	public WebElement codigocst;
+	public WebElement opcaoobrigacao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Código da Situação Tributária referente ao PIS/PASEP e COFINS\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  um Código de Detalhamento\"]")
+	public WebElement codigododetalhamento;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  uma  Descrição de Detalhamento\"]")
+	public WebElement descricaodedetalhamento;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  um Tipo de Detalhamento\"]")
+	public WebElement tipodedetalhamento;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  uma  Descrição de Tipo de Detalhamento\"]")
+	public WebElement descricaodetipodedetalhamento;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datadeiniciodevigencia;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  uma  Vigência de\"]")
+	public WebElement datainicial;
+	
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -56,23 +59,22 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 	
 	
 	
-	public TabelaCodigoDaSituaçaoTributariaCriarPO() {
+	public TabelaDeDetalhamentosParaRegistro11CriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		sleep(2000);
-		tabelaApoioSped.click();
+		tabelacomplementares.click();
 		sleep(2000);
 		
-		tabelacodigo.click();
+		tabeladedetalhamentos11.click();
 		
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -87,30 +89,38 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		//criaçao
-		novocodigo.click();
-		
+		novodetalhamento.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tributo.click();
-		
-		sleep(2000);
-		opcaotributo.click();
-		
-		sleep(2000);
-		codigocst.sendKeys("10");
+		obrigacao.click();
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste");
+		opcaoobrigacao.click();
+		
+		sleep(2000);
+		codigododetalhamento.sendKeys("7");
 		
 		sleep(2000);
 		
-		String data = fechaActual();
-		sleep(2000);
-		datadeiniciodevigencia.sendKeys(data);
-		//datadeiniciodevigencia.sendKeys("15/08/2020");
+		descricaodedetalhamento.sendKeys("Teste");
 		
+		sleep(2000);
+		
+		tipodedetalhamento.sendKeys("E");
+		
+		sleep(2000);
+		
+		descricaodetipodedetalhamento.sendKeys("Teste do detalhamento");
+		
+		sleep(2000);
+		
+		
+		String data=fechaActual();
+		datainicial.sendKeys(data);
+		
+		sleep(2000);
 		gravar.click();
 		sleep(2000);
 		sim.click();
@@ -119,10 +129,11 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		
 		biblioteca.click();
 		
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		waitExpectElement(siguiente);
+		sleep(2000);
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -149,8 +160,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		System.out.println(sucesso);
 		return sucesso;
 		
-	}
-	
-	
+	}	
+
 
 }

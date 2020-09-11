@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="133282" started-at="2020-09-10T21:47:02Z" finished-at="2020-09-10T21:49:15Z">
+  <suite name="Default suite" duration-ms="94139" started-at="2020-09-11T20:38:01Z" finished-at="2020-09-11T20:39:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="133282" started-at="2020-09-10T21:47:02Z" finished-at="2020-09-10T21:49:15Z">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="10532" started-at="2020-09-10T15:47:02Z" finished-at="2020-09-10T15:47:12Z">
+    <test name="Default test" duration-ms="94139" started-at="2020-09-11T20:38:01Z" finished-at="2020-09-11T20:39:35Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="15545" started-at="2020-09-11T14:38:01Z" finished-at="2020-09-11T14:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar@3b2cf7ab]" name="login" duration-ms="6340" started-at="2020-09-10T15:47:12Z" finished-at="2020-09-10T15:47:18Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="login" duration-ms="9267" started-at="2020-09-11T14:38:16Z" finished-at="2020-09-11T14:38:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar@3b2cf7ab]" name="acessarMDR" duration-ms="22679" started-at="2020-09-10T15:47:18Z" finished-at="2020-09-10T15:47:41Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="24071" started-at="2020-09-11T14:38:25Z" finished-at="2020-09-11T14:38:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar@3b2cf7ab]" name="criar" duration-ms="93717" started-at="2020-09-10T15:47:41Z" finished-at="2020-09-10T15:49:15Z">
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="excluir" duration-ms="45240" started-at="2020-09-11T14:38:49Z" finished-at="2020-09-11T14:39:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar -->
+        </test-method> <!-- excluir -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

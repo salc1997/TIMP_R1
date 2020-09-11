@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10;
+package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12;
 
 import java.util.ArrayList;
 
@@ -9,23 +9,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel {
+public class TabelaDeEstoqueParaRegistro12DetalhesPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela de Detalhamentos para Registro 10\"]")
-	public WebElement tabeladedetalhamentos;
+	@FindBy(xpath = "//span[text()=\"Tabela de Estoque para Registro 12\"]")
+	public WebElement tabelaestoqueregistro12;
 	
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
-	public WebElement gravar;
-	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
@@ -34,19 +29,19 @@ public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel
 	public WebElement obrigacaode;
 	
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
-	public WebElement codigododetalhamentode;
+	public WebElement tipodeestoquede;
 	
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div/div")
-	public WebElement tipodedetalhamentode;
+	public WebElement tipodematerialde;
 	
 	@FindBy(xpath = "//span[@id=\"obrigation\"]")
 	public WebElement obrigacaovi;
 	
-	@FindBy(xpath = "//span[@id=\"detailingCode\"]")
-	public WebElement codigododetalhamentovi;
+	@FindBy(xpath = "//span[@id=\"inventoryObligationType\"]")
+	public WebElement tipodeestoquevi;
 	
-	@FindBy(xpath = "//span[@id=\"detailingType\"]")
-	public WebElement tipodedetalhamentovi;
+	@FindBy(xpath = "//span[@id=\"inventoryMaterialType\"]")
+	public WebElement tipodematerialvi;
 	
 
 	
@@ -54,17 +49,19 @@ public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel
 	public WebElement fechar;
 	
 	
-	public TabelaDeDetalhamentosParaRegistro10DetalhesPO() {
+	
+	
+	public TabelaDeEstoqueParaRegistro12DetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public ArrayList<Boolean> detalhes() {
 		sleep(2000);
 		tabelacomplementares.click();
 		sleep(2000);
 		
-		tabeladedetalhamentos.click();
+		tabelaestoqueregistro12.click();
 		
 		sleep(2000);
 		
@@ -94,13 +91,13 @@ public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel
 		
 		//detalhes
 		String obrigacaodetalhes = obrigacaode.getText();
-		String codigododetalhamentodetalhes = codigododetalhamentode.getText();
-		String tipodedetalhamentodetalhes = tipodedetalhamentode.getText();
+		String tipodeestoquedetalhes = tipodeestoquede.getText();
+		String tipodematerialdetalhes = tipodematerialde.getText();
 	
 		
 		System.out.println(obrigacaodetalhes);
-		System.out.println(codigododetalhamentodetalhes);
-		System.out.println(tipodedetalhamentodetalhes);
+		System.out.println(tipodeestoquedetalhes);
+		System.out.println(tipodematerialdetalhes);
 		
 		
 		fechar.click();
@@ -130,21 +127,22 @@ public class TabelaDeDetalhamentosParaRegistro10DetalhesPO extends TestBaseEliel
 		//visualizar
 		
 		String obrigacaovisualizar = obrigacaovi.getText();
-		String codigododetalhamentovisualizar = codigododetalhamentovi.getText();
-		String tipodedetalhamentosvisualizar = tipodedetalhamentovi.getText();
+		String tipodeestoquevisualizar = tipodeestoquevi.getText();
+		String tipodematerialvisualizar = tipodematerialvi.getText();
 	
 		
 		System.out.println(obrigacaovisualizar);
-		System.out.println(codigododetalhamentovisualizar);
-		System.out.println(tipodedetalhamentosvisualizar);
+		System.out.println(tipodeestoquevisualizar);
+		System.out.println(tipodematerialvisualizar);
 		
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(obrigacaovisualizar.equals(obrigacaodetalhes));
-		sucesso.add(codigododetalhamentovisualizar.equals(codigododetalhamentodetalhes));
-		sucesso.add(tipodedetalhamentosvisualizar.equals(tipodedetalhamentodetalhes));
+		sucesso.add(tipodeestoquevisualizar.equals(tipodeestoquedetalhes));
+		sucesso.add(tipodematerialvisualizar.equals(tipodematerialdetalhes));
 		
 		return sucesso;
 	}
-
+	
+	
 }

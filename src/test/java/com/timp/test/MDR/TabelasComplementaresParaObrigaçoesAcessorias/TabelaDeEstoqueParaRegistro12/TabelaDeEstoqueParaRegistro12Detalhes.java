@@ -1,6 +1,5 @@
-package com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -11,14 +10,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12DetalhesPO;
 
-
-public class TabelaCodigoDaSituaçaoTributariaDetalhes extends TestBaseEliel {
-  
+public class TabelaDeEstoqueParaRegistro12Detalhes extends TestBaseEliel {
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaCodigoDaSituaçaoTributariaDetalhesPO tabelaCodigoDaSituaçaoTributariaDetalhesPO;
+	TabelaDeEstoqueParaRegistro12DetalhesPO tabelaDeEstoqueParaRegistro12DetalhesPO;
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +24,7 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhes extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaCodigoDaSituaçaoTributariaDetalhesPO = new TabelaCodigoDaSituaçaoTributariaDetalhesPO();
+		tabelaDeEstoqueParaRegistro12DetalhesPO = new TabelaDeEstoqueParaRegistro12DetalhesPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,19 +44,16 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhes extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void Detalhes() {
 
-		
-		ArrayList<Boolean> sucesso = tabelaCodigoDaSituaçaoTributariaDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = tabelaDeEstoqueParaRegistro12DetalhesPO.detalhes();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			
 			assertTrue(sucesso.get(i), Detalhes);
 			
 		}
-		 //assertEquals(sucesso, "edit", visualizaçar);
-	}	
-				
+	}		
 	
 	
 }

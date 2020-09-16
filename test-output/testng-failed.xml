@@ -7,7 +7,6 @@
         <methods>
           <include name="criar"/>
           <include name="beforeClass"/>
-          <include name="acessarMDR"/>
         </methods>
       </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriar -->
     </classes>

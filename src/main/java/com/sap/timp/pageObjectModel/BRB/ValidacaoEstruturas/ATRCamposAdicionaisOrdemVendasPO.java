@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
+public class ATRCamposAdicionaisOrdemVendasPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement ferramenta;
@@ -84,14 +84,14 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 	public WebElement valorOutrasICMS;
 	@FindBy(xpath = "//div[@data-column=\"367\" and not(@data-path or @aria-label)]/div")
 	public WebElement valorContaICMS;
-	@FindBy(xpath = "//div[@data-column=\"368\" and not(@data-path or @aria-label)]/div")
+	@FindBy(xpath = "//div[@data-column=\"433\" and not(@data-path or @aria-label)]/div")
 	public WebElement valorContaICMSST;
-	@FindBy(xpath = "//div[@data-column=\"369\" and not(@data-path or @aria-label)]/div")
+	@FindBy(xpath = "//div[@data-column=\"434\" and not(@data-path or @aria-label)]/div")
 	public WebElement valorContaDifal;
 	
 
 	
-	public NFsEntradaSaidaeDadosComplementaresPO() {
+	public ATRCamposAdicionaisOrdemVendasPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -101,7 +101,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 	public ArrayList<Boolean> verificar() {
 		
 		sleep(2000);
-		ferramenta.sendKeys("8004404");
+		ferramenta.sendKeys("8004406");
 		ferramenta.sendKeys(Keys.ENTER);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -135,11 +135,11 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		//peso bruto
 		System.out.println("peso bruto");
 		String pesoBrutoS = pesoBruto.getText();
-		pesoBrutoS = pesoBrutoS.replace(",", "");
+		pesoBrutoS = pesoBrutoS.replace(",", ".");
 		System.out.println(pesoBrutoS + " String");
 		double pesoBrutoD = new Double(pesoBrutoS);
 		System.out.println(pesoBrutoD + " Double");
-		double esperadoPesoBruto = 717000;
+		double esperadoPesoBruto = 478;
 		System.out.println(esperadoPesoBruto + " Esperado");
 		sucesso.add(igualDobule(pesoBrutoD, esperadoPesoBruto));
 		System.out.println(igualDobule(pesoBrutoD, esperadoPesoBruto)+" peso bruto");
@@ -148,11 +148,11 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		//peso liquido
 		System.out.println("peso liquido");
 		String pesoLiquidoS = pesoLiquido.getText();
-		pesoLiquidoS = pesoLiquidoS.replace(",", "");
+		pesoLiquidoS = pesoLiquidoS.replace(",", ".");
 		System.out.println(pesoLiquidoS+ " String");
 		double pesoLiquidoD = new Double(pesoLiquidoS);
 		System.out.println(pesoLiquidoD + " Double");
-		double esperadoPesoLiquido = 645300;
+		double esperadoPesoLiquido = 430.200;
 		System.out.println(esperadoPesoLiquido + " Esperado");
 		sucesso.add(igualDobule(pesoLiquidoD, esperadoPesoLiquido));
 		System.out.println(igualDobule(pesoLiquidoD, esperadoPesoLiquido)+" peso Liquido");
@@ -166,7 +166,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorDocFiscalS + " String");
 		double valorDocFiscalD = new Double(valorDocFiscalS);
 		System.out.println(valorDocFiscalD + " Double");
-		double esperadoValorDocFiscal = 530581.41;
+		double esperadoValorDocFiscal = 583162.82;
 		System.out.println(esperadoValorDocFiscal + " Esperado");
 		sucesso.add(igualDobule(valorDocFiscalD, esperadoValorDocFiscal));
 		System.out.println(igualDobule(valorDocFiscalD, esperadoValorDocFiscal) +" Valor Doc Fiscal");
@@ -187,7 +187,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(sucesso.get(4) + " Valor oper. ICMS ( BC+ISENT+OUT)");
 		
 		System.out.println("-------------------------------------------------");
-		*/
+		
 		
 		// Valor liquido
 		System.out.println(" Valor liquido");
@@ -215,6 +215,8 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		sucesso.add(igualDobule(valorTotalDocFiscalD, esperadovalorTotalDocFiscal));
 		System.out.println(esperadovalorTotalDocFiscal + " Esperado");
 		System.out.println(igualDobule(valorTotalDocFiscalD, esperadovalorTotalDocFiscal) +" Valor Total Doc Fiscal");
+		*/
+		
 		
 		System.out.println("-------------------------------------------------");
 		// Totalizador de "Valor de Mercadorias e Serviços"
@@ -225,7 +227,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorMercadoriasServicosS+" String");
 		double valorMercadoriasServicosD = new Double(valorMercadoriasServicosS);
 		System.out.println(valorMercadoriasServicosD + " Double");
-		double esperadovalorMercadoriasServicos = 717118;
+		double esperadovalorMercadoriasServicos = 478236;
 		System.out.println(esperadovalorMercadoriasServicos + " Esperado");
 		sucesso.add(igualDobule(valorMercadoriasServicosD, esperadovalorMercadoriasServicos));
 		System.out.println(igualDobule(valorMercadoriasServicosD, esperadovalorMercadoriasServicos) + " Totalizador de Valor Mercadorias e Serviços");
@@ -238,7 +240,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(quantidadeS +" String");
 		double quantidadeD = new Double(quantidadeS);
 		System.out.println(quantidadeD + " Double");
-		double esperadoquantidade = 719;
+		double esperadoquantidade = 480;
 		System.out.println(esperadoquantidade + " Esperado");
 		sucesso.add(igualDobule(quantidadeD, esperadoquantidade));
 		System.out.println(igualDobule(quantidadeD, esperadoquantidade) + " Quantidade");
@@ -253,7 +255,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(quantidadeBCCOFINSS +" String");
 		double quantidadeBCCOFINSD = new Double(quantidadeBCCOFINSS);
 		System.out.println(quantidadeBCCOFINSD + " Double");
-		double esperadoquantidadeBCCOFINS = 719;
+		double esperadoquantidadeBCCOFINS = 480;
 		System.out.println(esperadoquantidadeBCCOFINS + " Esperando");
 		sucesso.add(igualDobule(quantidadeBCCOFINSD, esperadoquantidadeBCCOFINS));
 		System.out.println(igualDobule(quantidadeBCCOFINSD, esperadoquantidadeBCCOFINS) + " quantidade BC COFINS");
@@ -268,7 +270,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorItemS + " String");
 		double valorItemD = new Double(valorItemS);
 		System.out.println(valorItemD + " Double");
-		double esperadovalorItem = 717118;
+		double esperadovalorItem = 478236;
 		System.out.println(esperadovalorItem + " Esperado");
 		sucesso.add(igualDobule(valorItemD, esperadovalorItem));
 		System.out.println(igualDobule(valorItemD, esperadovalorItem) + " Valor do Item");
@@ -283,7 +285,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorUnitarioLiquidoS+ " String");
 		double valorUnitarioLiquidoD = new Double(valorUnitarioLiquidoS);
 		System.out.println(valorUnitarioLiquidoD + " Double");
-		double esperadovalorUnitarioLiquido = 3100;
+		double esperadovalorUnitarioLiquido = 2200;
 		System.out.println(esperadovalorUnitarioLiquido + " Esperado");
 		sucesso.add(igualDobule(valorUnitarioLiquidoD, esperadovalorUnitarioLiquido));
 		System.out.println(igualDobule(valorUnitarioLiquidoD, esperadovalorUnitarioLiquido) + " Valor Unitário Líquido");
@@ -297,7 +299,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorUnitarioComImpostoS + " String");
 		double valorUnitarioComImpostoD = new Double(valorUnitarioComImpostoS);
 		System.out.println(valorUnitarioComImpostoD + " Double");
-		double esperadovalorUnitarioComImposto = 3118;
+		double esperadovalorUnitarioComImposto = 2236;
 		System.out.println(esperadovalorUnitarioComImposto + " Esperado");
 		sucesso.add(igualDobule(valorUnitarioComImpostoD, esperadovalorUnitarioComImposto));
 		System.out.println(igualDobule(valorUnitarioComImpostoD, esperadovalorUnitarioComImposto) + " Valor Unitário com Imposto");
@@ -339,7 +341,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(bcICMSSTS+" String");
 		double bcICMSSTD = new Double(bcICMSSTS);
 		System.out.println(bcICMSSTD + " Double");
-		double esperadobcICMSST = 874390.23;
+		double esperadobcICMSST = 291463.41;
 		System.out.println(esperadobcICMSST + " Esperado");
 		sucesso.add(igualDobule(bcICMSSTD, esperadobcICMSST));
 		System.out.println(igualDobule(bcICMSSTD, esperadobcICMSST) + " BC ICMS ST");
@@ -370,7 +372,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(bcDifalS+ " String");
 		double bcDifalD = new Double(bcDifalS);
 		System.out.println(bcDifalD + " Double");
-		double esperadobcDifal = 5240.00;
+		double esperadobcDifal = 5000;
 		System.out.println(esperadobcDifal + " Esperado");
 		sucesso.add(igualDobule(bcDifalD, esperadobcDifal));
 		System.out.println(igualDobule(bcDifalD, esperadobcDifal) + " BC Difal");
@@ -399,7 +401,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorICMSSTS+ " String");
 		double valorICMSSTD = new Double(valorICMSSTS);
 		System.out.println(valorICMSSTD + " Double");
-		double esperadovalorICMSST = 157390.23;
+		double esperadovalorICMSST = 52463.41;
 		System.out.println(esperadovalorICMSST+ " Esperado");
 		sucesso.add(igualDobule(valorICMSSTD, esperadovalorICMSST));
 		System.out.println(igualDobule(valorICMSSTD, esperadovalorICMSST) + " Valor ICMS ST");
@@ -430,7 +432,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorDifalS+ " String");
 		double valorDifalD = new Double(valorDifalS);
 		System.out.println(valorDifalD + " Double");
-		double esperadovalorDifal = 1201;
+		double esperadovalorDifal = 1000;
 		System.out.println(esperadovalorDifal + " Esperado");
 		sucesso.add(igualDobule(valorDifalD, esperadovalorDifal));
 		System.out.println(igualDobule(valorDifalD, esperadovalorDifal) + " Valor Difal");
@@ -475,7 +477,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(bcOutrasIPIS+ " String");
 		double bcOutrasIPID = new Double(bcOutrasIPIS);
 		System.out.println(bcOutrasIPID + " Double");
-		double esperadobcOutrasIPI = 874390.23;
+		double esperadobcOutrasIPI = 291463.41;
 		System.out.println(esperadobcOutrasIPI + " Esperado");
 		sucesso.add(igualDobule(bcOutrasIPID, esperadobcOutrasIPI));
 		System.out.println(igualDobule(bcOutrasIPID, esperadobcOutrasIPI) + " BC Outras IPI");
@@ -505,7 +507,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(qtdBCPISS + "String");
 		double qtdBCPISD = new Double(qtdBCPISS);
 		System.out.println(qtdBCPISD + " Double");
-		double esperadoqtdBCPIS = 719;
+		double esperadoqtdBCPIS = 480;
 		System.out.println(esperadoqtdBCPIS + " Esperado");
 		sucesso.add(igualDobule(qtdBCPISD, esperadoqtdBCPIS));
 		System.out.println(igualDobule(qtdBCPISD, esperadoqtdBCPIS) + " QTD. BC PIS");
@@ -565,7 +567,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorContaICMSSTS + " String");
 		double valorContaICMSSTD = new Double(valorContaICMSSTS);
 		System.out.println(valorContaICMSSTD + " Double");
-		double esperadovalorContaICMSST = 157390.23;
+		double esperadovalorContaICMSST = 52463.41;
 		System.out.println(esperadovalorContaICMSST + " Esperado");
 		sucesso.add(igualDobule(valorContaICMSSTD, esperadovalorContaICMSST));
 		System.out.println(igualDobule(valorContaICMSSTD, esperadovalorContaICMSST) + " Valor Conta ICMS ST");
@@ -580,7 +582,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(valorContaDifalS+ " String");
 		double valorContaDifalD = new Double(valorContaDifalS);
 		System.out.println(valorContaDifalD + " Double");
-		double esperadovalorContaDifal = 1201;
+		double esperadovalorContaDifal = 1000;
 		System.out.println(esperadovalorContaDifal + " Double");
 		sucesso.add(igualDobule(valorContaDifalD, esperadovalorContaDifal));
 		System.out.println(igualDobule(valorContaDifalD, esperadovalorContaDifal) + " Valor Conta Difal");

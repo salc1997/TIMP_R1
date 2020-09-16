@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil;
+package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoContabilCriarPO extends TestBaseSteven{
+public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO extends TestBaseSteven{
 	
 	
 	
@@ -17,15 +17,15 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
 	public WebElement parametro;
 	
-	@FindBy(xpath = "//span[text()=\"Mapeamento Contábil\"]")
+	@FindBy(xpath = "//li/div/span[contains(text(),\"Mapeamento para Substituição\")]")
 	public WebElement contabil;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][1]")
-	public WebElement primero;
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 
 	
-	@FindBy(xpath = "//span[text()=\"Novo Mapeamento Contábil\"]")
+	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
@@ -38,15 +38,10 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	public WebElement filial;
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement filialO;
+
 	
-	@FindBy(xpath = "//*[@id=\"adjustCode-button\"]")
-	public WebElement ajuste;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[1]/label/span")
-	public WebElement codigo;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Cabeçalho\")]")
-	public WebElement cabecalho;
+	@FindBy(xpath = "//input[contains(@placeholder,\"IVA\")]")
+	public WebElement iva;
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
@@ -82,7 +77,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	*/
 	
 	
-	public MapeamentoContabilCriarPO() {
+	public MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -97,14 +92,14 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		primero.click();
+		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 		
-
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println(id);
 		
@@ -126,18 +121,8 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		filialO.sendKeys(Keys.ESCAPE);
 		
 		sleep(1000);
-		ajuste.click();
-		waitExpectElement(primero);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		codigo.click();
-		sleep(1000);
-		aceitar.click();
-		
-		waitExpectElement(empresa);
-		
-		sleep(2000);
-		cabecalho.sendKeys("Teste Mapeamento Contábil");
+
+		iva.sendKeys("15");
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -153,14 +138,14 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		primero.click();
+		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
-
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println(id);
 		sleep(2000);

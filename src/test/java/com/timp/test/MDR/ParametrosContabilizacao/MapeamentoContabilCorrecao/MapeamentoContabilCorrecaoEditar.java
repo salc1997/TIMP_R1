@@ -49,7 +49,9 @@ public class MapeamentoContabilCorrecaoEditar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void criar() {
 
-		mapeamentoContabilCorrecaoEditarPO.editar();
+		boolean sucesso = mapeamentoContabilCorrecaoEditarPO.editar();
+		
+		assertTrue(sucesso, Editar);
 		
 	}
 }

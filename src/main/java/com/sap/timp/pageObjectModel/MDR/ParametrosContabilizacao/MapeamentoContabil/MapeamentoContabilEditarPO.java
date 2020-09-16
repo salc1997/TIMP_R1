@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao;
+package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,18 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoContabilCorrecaoEditarPO extends TestBaseSteven{
+public class MapeamentoContabilEditarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
 	public WebElement parametro;
 	
-	@FindBy(xpath = "//span[text()=\"Mapeamento Contábil por Correção\"]")
+	@FindBy(xpath = "//span[text()=\"Mapeamento Contábil\"]")
 	public WebElement contabil;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//div[@id=\"header-text\"]/div/div/input")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Cabeçalho\")]")
 	public WebElement campo;
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div/div")
@@ -56,7 +56,7 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBaseSteven{
 	*/
 	
 	
-	public MapeamentoContabilCorrecaoEditarPO() {
+	public MapeamentoContabilEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -70,15 +70,12 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBaseSteven{
 		parametro.click();
 		sleep(1000);
 		contabil.click();
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
 
-		//siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter1();
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -89,10 +86,9 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		editar.click();
-		sleep(2000);
-		//attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
-		waitExpectXpath("//div[@id=\"company\"]/div/div/div[2]");
-		attributoNotToBeEmptyXpath("//*[@id=\"header-text\"]/div/div/input", "value");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		attributoNotToBeEmptyXpath("//input[contains(@placeholder,\"Cabeçalho\")]", "value");
 		sleep(2000);
 		String valor = campo.getAttribute("value");
 		System.out.println(valor);
@@ -116,8 +112,11 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBaseSteven{
 		
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//div[@id=\"company\"]/div/div/div[2]");
-		attributoNotToBeEmptyXpath("//*[@id=\"header-text\"]/div/div/input", "value");
+		sleep(3000);
+		waitExpectElement(campo);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		attributoNotToBeEmptyXpath("//input[contains(@placeholder,\"Cabeçalho\")]", "value");
+		sleep(2000);
 		
 		sleep(2000);
 		

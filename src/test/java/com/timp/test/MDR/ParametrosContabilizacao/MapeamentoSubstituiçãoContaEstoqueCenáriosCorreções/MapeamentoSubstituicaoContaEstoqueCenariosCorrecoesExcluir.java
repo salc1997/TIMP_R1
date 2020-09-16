@@ -1,4 +1,4 @@
-package com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao;
+package com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções;
 
 import static org.testng.Assert.assertTrue;
 
@@ -12,12 +12,14 @@ import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoEditarPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO;
 
-public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
+public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	MapeamentoContabilCorrecaoCriarPO mapeamentoContabilCorrecaoCriarPO;
+	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,7 +27,7 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		mapeamentoContabilCorrecaoCriarPO = new MapeamentoContabilCorrecaoCriarPO();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO= new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO();
 	}
 	/*
 	@AfterClass
@@ -49,7 +51,7 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void criar() {
 
-		boolean sucesso = mapeamentoContabilCorrecaoCriarPO.criar();
+		boolean sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO.excluir();
 		
 		assertTrue(sucesso, Criar);
 		

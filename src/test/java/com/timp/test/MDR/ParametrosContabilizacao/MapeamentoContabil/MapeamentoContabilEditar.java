@@ -1,4 +1,4 @@
-package com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao;
+package com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil;
 
 import static org.testng.Assert.assertTrue;
 
@@ -10,14 +10,13 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriarPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoCriarPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoEditarPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilEditarPO;
 
-public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
+public class MapeamentoContabilEditar extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	MapeamentoContabilCorrecaoCriarPO mapeamentoContabilCorrecaoCriarPO;
+	MapeamentoContabilEditarPO mapeamentoContabilEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,7 +24,7 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		mapeamentoContabilCorrecaoCriarPO = new MapeamentoContabilCorrecaoCriarPO();
+		mapeamentoContabilEditarPO = new MapeamentoContabilEditarPO();
 	}
 	/*
 	@AfterClass
@@ -47,11 +46,10 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
-		boolean sucesso = mapeamentoContabilCorrecaoCriarPO.criar();
+		boolean sucesso = mapeamentoContabilEditarPO.editar();
 		
-		assertTrue(sucesso, Criar);
-		
+		assertTrue(sucesso, Editar);
 	}
 }

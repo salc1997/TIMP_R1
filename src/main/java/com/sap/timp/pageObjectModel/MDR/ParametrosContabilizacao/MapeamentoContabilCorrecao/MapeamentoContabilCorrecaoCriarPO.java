@@ -84,7 +84,7 @@ public class MapeamentoContabilCorrecaoCriarPO extends TestBaseSteven{
 	}
 	
 	
-	public void criar() {
+	public boolean criar() {
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -171,7 +171,7 @@ public class MapeamentoContabilCorrecaoCriarPO extends TestBaseSteven{
 		System.out.println(sucesso);
 	
 		
-		
+		return sucesso;
 		
 	}
 }

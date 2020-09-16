@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais;
 
 import java.util.ArrayList;
 
@@ -9,36 +9,28 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
-	
+public class TiposDeUtilizacaoDosCreditosFiscaisDetalhesPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
 	
-	@FindBy(xpath = "//span[text()=\"5.2 Informações Adicionais - Valores Declaratórios\"]")
-	public WebElement informacoesadicionais;
+	@FindBy(xpath = "//span[text()=\"5.5 Tipos de Utilização dos Créditos Fiscais - ICMS\"]")
+	public WebElement tabeladeutilizacaodoscreditosfiscais;
+	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código Tipo de Utilização do Crédito Fiscal\"]")
+	public WebElement codigo;
+	
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Tipo de Utilização dos Créditos Fiscais - ICMS\"]")
+	public WebElement descricao;
+	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	public WebElement datainicio;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//div[@class=\"thead\"]/div/div[3]")
-	public WebElement idC;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")
-	public WebElement idR;
-	
-	@FindBy(xpath = "//span[text()=\"Novo Valor Declaratório\"]")
-	public WebElement novovalor;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
-	public WebElement codigodevalores;
-	
-	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Informação Adicional\"]")
-	public WebElement descricao;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
-	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -46,15 +38,10 @@ public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement nao;
-	
-	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
-	public WebElement pesquisar;
-	
+
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
 	
@@ -62,38 +49,37 @@ public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 	public WebElement codigode;
 	
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
-	public WebElement descricaode;
-	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
 	public WebElement ufde;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div/div")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
 	public WebElement sequenciade;
 	
-	@FindBy(xpath = "//span[@id=\"codInfoAdicional\"]")
+	@FindBy(xpath = "//span[@id=\"codTipoUtilizacaoCredito\"]")
 	public WebElement codigovi;
 	
 	@FindBy(xpath = "//span[@id=\"uf\"]")
 	public WebElement ufvi;
 	
-	@FindBy(xpath = "//span[@id=\"sequencia\"]")
+	@FindBy(xpath = "//span[@id=\"sequence\"]")
 	public WebElement sequenciavi;
 	
-	@FindBy(xpath = "//span[@id=\"descricao\"]")
-	public WebElement descricaovi;
-	
-	public InformaçoesAdicionaisDetalhesPO() {
+	public TiposDeUtilizacaoDosCreditosFiscaisDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
+
 	
 	public ArrayList<Boolean> detalhes() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
-		informacoesadicionais.click();
+		
+		tabeladeutilizacaodoscreditosfiscais.click();
+		
 		sleep(2000);
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();
@@ -112,30 +98,31 @@ public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 		menu.click();
 		sleep(1000);
 		detalhes.click();
-		sleep(2000);
-		
+		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		//detalhes
 		String codigodetalhes = codigode.getText();
-		String descricaodetalhes = descricaode.getText();
 		String ufdetalhes = ufde.getText();
 		String sequenciadetalhes = sequenciade.getText();
+	
 		
 		System.out.println(codigodetalhes);
-		System.out.println(descricaodetalhes);
 		System.out.println(ufdetalhes);
 		System.out.println(sequenciadetalhes);
 		
 		
 		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		waitExpectElement(siguiente);
 		sleep(2000);
+		
 		siguiente.click();
 		
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro1 = idObter1();
 		
@@ -150,28 +137,23 @@ public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String codigovisualizar =  codigovi.getText();
-		String descricaovisualizar = descricaovi.getText();
+		//visualizar
+		
+		String codigovisualizar = codigovi.getText();
 		String ufvisualizar = ufvi.getText();
 		String sequenciavisualizar = sequenciavi.getText();
-		
+	
 		
 		System.out.println(codigovisualizar);
-		System.out.println(descricaovisualizar);
 		System.out.println(ufvisualizar);
 		System.out.println(sequenciavisualizar);
 		
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(codigovisualizar.equals(codigodetalhes));
-		sucesso.add(descricaovisualizar.equals(descricaodetalhes));
 		sucesso.add(ufvisualizar.equals(ufdetalhes));
 		sucesso.add(sequenciavisualizar.equals(sequenciadetalhes));
-
-		return sucesso;	
+		
+		return sucesso;
 	}
-
-	
-	
-
 }

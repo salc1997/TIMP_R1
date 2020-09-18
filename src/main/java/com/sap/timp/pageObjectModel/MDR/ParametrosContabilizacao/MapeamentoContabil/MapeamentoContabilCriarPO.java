@@ -44,6 +44,9 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[1]/label/span")
 	public WebElement codigo;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Cabeçalho\")]")
+	public WebElement cabecalho;
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
@@ -55,9 +58,10 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
+	
+
+	
 	/*
-	@FindBy(xpath = "")
-	public WebElement ;
 	@FindBy(xpath = "")
 	public WebElement ;
 	@FindBy(xpath = "")
@@ -84,7 +88,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	}
 	
 	
-	public void criar() {
+	public boolean criar() {
 		sleep(2000);
 		parametro.click();
 		sleep(1000);
@@ -133,7 +137,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		waitExpectElement(empresa);
 		
 		sleep(2000);
-		
+		cabecalho.sendKeys("Teste Mapeamento Contábil");
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -160,7 +164,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		
 		System.out.println(id);
 		sleep(2000);
-		System.out.println(id);
+		idInserir1(id2);
 		System.out.println(id2);
 		
 		double idD = convertToDouble(id);
@@ -177,7 +181,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		System.out.println(sucesso);
 		
 		
-		
+		return sucesso;
 		
 		
 	}

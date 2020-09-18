@@ -47,7 +47,8 @@ public class MapeamentoContabilCriar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void criar() {
 
-		mapeamentoContabilCriarPO.criar();
+		boolean sucesso = mapeamentoContabilCriarPO.criar();
 		
+		assertTrue(sucesso, Criar);
 	}
 }

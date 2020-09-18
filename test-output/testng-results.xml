@@ -2,28 +2,55 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="153732" started-at="2020-09-18T21:12:31Z" finished-at="2020-09-18T21:15:05Z">
+=======
+  <suite name="Default suite" duration-ms="77040" started-at="2020-09-17T20:59:43Z" finished-at="2020-09-17T21:01:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="153732" started-at="2020-09-18T21:12:31Z" finished-at="2020-09-18T21:15:05Z">
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluir">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluir@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="15895" started-at="2020-09-18T18:12:31Z" finished-at="2020-09-18T18:12:47Z">
+=======
+    <test name="Default test" duration-ms="77040" started-at="2020-09-17T20:59:43Z" finished-at="2020-09-17T21:01:00Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="13908" started-at="2020-09-17T14:59:43Z" finished-at="2020-09-17T14:59:57Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluir@2aa5fe93]" name="login" duration-ms="10467" started-at="2020-09-18T18:12:47Z" finished-at="2020-09-18T18:12:58Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes@3b2cf7ab]" name="login" duration-ms="8871" started-at="2020-09-17T14:59:57Z" finished-at="2020-09-17T15:00:06Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluir@2aa5fe93]" name="acessarMDR" duration-ms="41294" started-at="2020-09-18T18:12:58Z" finished-at="2020-09-18T18:13:39Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes@3b2cf7ab]" name="acessarMDR" duration-ms="9438" started-at="2020-09-17T15:00:06Z" finished-at="2020-09-17T15:00:15Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluir@2aa5fe93]" name="excluir" duration-ms="86037" started-at="2020-09-18T18:13:39Z" finished-at="2020-09-18T18:15:05Z">
+=======
+        <test-method status="PASS" signature="Detalhes()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes@3b2cf7ab]" name="Detalhes" duration-ms="44805" started-at="2020-09-17T15:00:15Z" finished-at="2020-09-17T15:01:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- excluir -->
       </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluir -->
+=======
+        </test-method> <!-- Detalhes -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

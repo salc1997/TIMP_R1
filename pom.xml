@@ -30,7 +30,6 @@
 		</dependency>
 
 	</dependencies>
-
 	<build>
 		<plugins>
 
@@ -42,14 +41,13 @@
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m-XX:MaxPermSize=256</argLine>
-					<suiteXmlFiles>
-						<suiteXmlFile>src/test/java/com/timp/test/A/BRB.xml</suiteXmlFile>
-					</suiteXmlFiles>
+					<suitaXmlFiles>
+						<suitaXmlFile>src/main/resources/BRB.xml</suitaXmlFile>
+					</suitaXmlFiles>
 				</configuration>
 
 
 			</plugin>
-
 
 		</plugins>
 

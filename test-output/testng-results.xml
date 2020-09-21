@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100833" started-at="2020-09-21T20:25:54Z" finished-at="2020-09-21T20:27:34Z">
+  <suite name="Default suite" duration-ms="186302" started-at="2020-09-21T21:25:00Z" finished-at="2020-09-21T21:28:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100833" started-at="2020-09-21T20:25:54Z" finished-at="2020-09-21T20:27:34Z">
-      <class name="com.timp.test.BRB.ReordenarColuna">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12538" started-at="2020-09-21T14:25:54Z" finished-at="2020-09-21T14:26:06Z">
+    <test name="Default test" duration-ms="186302" started-at="2020-09-21T21:25:00Z" finished-at="2020-09-21T21:28:06Z">
+      <class name="com.timp.test.BRB.Eliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11554" started-at="2020-09-21T15:25:00Z" finished-at="2020-09-21T15:25:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@f2f2cc1]" name="login" duration-ms="9934" started-at="2020-09-21T14:26:06Z" finished-at="2020-09-21T14:26:16Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="login" duration-ms="7321" started-at="2020-09-21T15:25:12Z" finished-at="2020-09-21T15:25:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@f2f2cc1]" name="brbEntrar" duration-ms="25060" started-at="2020-09-21T14:26:16Z" finished-at="2020-09-21T14:26:41Z">
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="brbEntrar" duration-ms="24525" started-at="2020-09-21T15:25:19Z" finished-at="2020-09-21T15:25:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="reordenar()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@f2f2cc1]" name="reordenar" duration-ms="53292" started-at="2020-09-21T14:26:41Z" finished-at="2020-09-21T14:27:34Z">
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminar" duration-ms="68266" started-at="2020-09-21T15:25:44Z" finished-at="2020-09-21T15:26:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reordenar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@f2f2cc1]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-09-21T14:27:34Z" finished-at="2020-09-21T14:27:34Z">
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminarLixeira" duration-ms="70306" started-at="2020-09-21T15:26:52Z" finished-at="2020-09-21T15:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4317" started-at="2020-09-21T15:28:02Z" finished-at="2020-09-21T15:28:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.ReordenarColuna -->
+      </class> <!-- com.timp.test.BRB.Eliminar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

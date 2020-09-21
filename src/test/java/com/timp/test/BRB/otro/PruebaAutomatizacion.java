@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRB.*;
-import com.timp.test.ADM.*;
+import com.timp.test.ADM.LoginTest;
 import com.timp.test.BRB.*;
 
 public class PruebaAutomatizacion extends TestBaseSteven{

@@ -42,11 +42,9 @@
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m-XX:MaxPermSize=256</argLine>
 					<suitaXmlFiles>
-						<suitaXmlFile>src/main/resources/BRB.xml</suitaXmlFile>
+						<suitaXmlFile>BRB.xml</suitaXmlFile>
 					</suitaXmlFiles>
 				</configuration>
-
-
 			</plugin>
 
 		</plugins>

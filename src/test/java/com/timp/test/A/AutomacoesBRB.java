@@ -1,4 +1,4 @@
-package com.timp.test.ADM;
+package com.timp.test.A;
 
 
 import org.testng.annotations.Test;

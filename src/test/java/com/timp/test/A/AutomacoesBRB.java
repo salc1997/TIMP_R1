@@ -57,7 +57,7 @@ public class AutomacoesBRB extends TestBaseSteven{
     	brbAcessar.beforeClass();
     	brbAcessar.login();
     	brbAcessar.brbEntrar();
-    	//brbAcessar.afterClass();
+    	brbAcessar.afterClass();
 
 	}
     
@@ -69,7 +69,7 @@ public class AutomacoesBRB extends TestBaseSteven{
 		paginacion.login();
 		paginacion.brbEntrar();
 		paginacion.paginacion();
-		//paginacion.afterClass();
+		paginacion.afterClass();
 
 	}
     
@@ -81,7 +81,7 @@ public class AutomacoesBRB extends TestBaseSteven{
 		filtrosAvanaçados.login();
 		filtrosAvanaçados.brbEntrar();
 		filtrosAvanaçados.filtrosAvanzados();
-		//filtrosAvanaçados.afterClass();
+		filtrosAvanaçados.afterClass();
 
 	}
     
@@ -93,7 +93,7 @@ public class AutomacoesBRB extends TestBaseSteven{
 		novoRelatirio.brbEntrar();
 		novoRelatirio.novoRelatorio();
 		novoRelatirio.colunas();
-		//novoRelatirio.afterClass();
+		novoRelatirio.afterClass();
 		
 	}
     

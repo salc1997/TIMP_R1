@@ -45,7 +45,7 @@ public class TestBaseSteven {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Update\\Download\\{8A69D345-D564-463C-AFF1-A69D9E530F96}\\84.0.4147.89\\84.0.4147.89_chrome_installer.exe");
+		chromeOptions.setBinary("C:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe");
 		chromeOptions.addArguments("--headless");
 		driver = new ChromeDriver(chromeOptions);
 		driver = new ChromeDriver();

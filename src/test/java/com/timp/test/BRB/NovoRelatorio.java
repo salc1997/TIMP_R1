@@ -71,7 +71,7 @@ public class NovoRelatorio extends TestBaseSteven{
 		
 		boolean sucesso = false;
 		sucesso = novoRelatorioPO.criar();
-		
+		System.out.println(sucesso + "Novo Relatório");
 		assertTrue(sucesso, novoRelatorio);
 		sleep(4000);
 		String texto = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div")).getText();
@@ -85,7 +85,7 @@ public class NovoRelatorio extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = novoRelatorioPO.colunas();
-		
+		System.out.println(sucesso+ "Colunas");
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The Colunms weren't added");
 		}

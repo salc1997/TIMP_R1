@@ -56,6 +56,7 @@ public class AtivarComentario extends TestBaseSteven{
 	
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = ativarComentarioPO.correcaoAtiva();
+		System.out.println(sucesso);
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), comentariosInativos);

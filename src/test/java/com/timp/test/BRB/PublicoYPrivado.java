@@ -58,15 +58,19 @@ public class PublicoYPrivado extends TestBaseSteven{
 	
 		
 		boolean publicoEditor = publicoYPRivadoPO.publicoEditor();
+		System.out.println(publicoEditor);
 		assertTrue(publicoEditor, compartilharE);
 		
 		boolean privadoEditor = publicoYPRivadoPO.privadoEditor();
+		System.out.println(privadoEditor);
 		assertTrue(privadoEditor, descompartilharE);
 		
 		boolean publicoBiblioteca = publicoYPRivadoPO.publicoBiblioteca();
+		System.out.println(publicoBiblioteca);
 		assertTrue(publicoBiblioteca, compartilharB);
 		
 		boolean privadoBiblioteca = publicoYPRivadoPO.privadoBiblioteca();
+		System.out.println(privadoBiblioteca);
 		assertTrue(privadoBiblioteca, descompartilharB);
 		
 		

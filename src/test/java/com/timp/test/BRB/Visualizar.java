@@ -59,6 +59,7 @@ public class Visualizar extends TestBaseSteven{
 		
 		boolean sucesso = true;
 		sucesso = visualizarPO.visualizar();
+		System.out.println(sucesso);
 
 		assertFalse(sucesso, visualizaçar);
 		

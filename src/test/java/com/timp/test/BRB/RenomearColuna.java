@@ -65,6 +65,7 @@ public class RenomearColuna extends TestBaseSteven{
 
 		ArrayList<String> sucesso = new ArrayList<String>();
 		sucesso = renomearColunaPO.renomear();
+		System.out.println(sucesso);
 		assertEquals(sucesso.get(0), sucesso.get(1),renomear);
 		
 		

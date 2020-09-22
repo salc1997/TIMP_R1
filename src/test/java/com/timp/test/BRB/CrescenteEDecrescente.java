@@ -58,6 +58,7 @@ public class CrescenteEDecrescente extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), crescenteEDecrescente);
 		}
+		System.out.println(sucesso);
 		
 		ArrayList<Boolean> sucesso2 = crescenteEDecrescentePO.decrescente();
 		
@@ -65,7 +66,7 @@ public class CrescenteEDecrescente extends TestBaseSteven{
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), crescenteEDecrescente);
 		}
-		
+		System.out.println(sucesso2);
 	}
 
 }

@@ -41,6 +41,7 @@ public class BRBAcessar extends TestBaseSteven {
 	public void brbEntrar() {
 		
 		boolean sucesso = acessarBrbPO.acessar();
+		System.out.println(sucesso);
 		
 		assertTrue(sucesso, semAcesso);
 	

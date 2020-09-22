@@ -62,8 +62,11 @@ public class AgrupadoPeloCampo extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = agrupadoPeloCampoPO.sucesso();
 		
+		System.out.println(sucesso);
+		
 		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
 		sucesso2 = agrupadoPeloCampoPO.sucesso2();
+		System.out.println(sucesso2);
 		
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -61,6 +61,7 @@ public class FiltrosAvançados extends TestBaseSteven{
 	  ArrayList<String> datos = new ArrayList<String>();
 	  
 	  datos = (ArrayList<String>) filtrosAvanazadosPO.filtro();
+		System.out.println(datos);
 	  
 	  for (int i = 0; i < datos.size(); i++) {
 

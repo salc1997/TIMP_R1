@@ -22,12 +22,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginPage;
 
 
 
-public class LoginTest extends TestBaseSteven{
+public class LoginBRB extends TestBaseSteven{
 	
 	LoginPage loginPage;
 
 	
-	public LoginTest() {
+	public LoginBRB() {
 		super();
 	}
 	

@@ -4,11 +4,11 @@ package com.timp.test.BRB.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.timp.test.ADM.LoginTest;
+import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
 
-public class AutomacoesBRB extends TestBaseSteven{
-	LoginTest loginTest;
+public class AutomacoesBrbTest extends TestBaseSteven{
+	LoginBRB loginTest;
 	BRBAcessar brbAcessar;
 	paginacion paginacion;
 	ReordenarColuna reordenarColuna;
@@ -41,7 +41,7 @@ public class AutomacoesBRB extends TestBaseSteven{
 	
     @Test(priority = 0)
 	public void login() {
-    	loginTest = new LoginTest();
+    	loginTest = new LoginBRB();
 		loginTest.beforeClass();
 		loginTest.Login();
 		loginTest.afterClass();

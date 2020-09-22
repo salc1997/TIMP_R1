@@ -5,11 +5,11 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRB.*;
-import com.timp.test.ADM.LoginTest;
+import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
 
 public class PruebaAutomatizacion extends TestBaseSteven{
-	LoginTest loginTest;
+	LoginBRB loginTest;
 	BRBAcessar brbAcessar;
 	paginacion paginacion;
 	ReordenarColuna reordenarColuna;
@@ -42,7 +42,7 @@ public class PruebaAutomatizacion extends TestBaseSteven{
 	
     @Test
 	public void login() {
-    	loginTest = new LoginTest();
+    	loginTest = new LoginBRB();
 		loginTest.beforeClass();
 		loginTest.Login();
 		loginTest.afterClass();

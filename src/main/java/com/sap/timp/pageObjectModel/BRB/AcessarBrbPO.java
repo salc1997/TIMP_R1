@@ -34,6 +34,8 @@ public class AcessarBrbPO extends TestBaseSteven{
 	
 	
 	public boolean acessar() {
+		
+
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(3000);

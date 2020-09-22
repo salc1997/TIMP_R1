@@ -72,6 +72,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	
 	public void agrupar() {
 		
+	
 		
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
 

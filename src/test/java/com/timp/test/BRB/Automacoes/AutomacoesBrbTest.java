@@ -48,6 +48,7 @@ public class AutomacoesBrbTest extends TestBaseSteven{
     	
 		loginTest.beforeClass();
 		System.out.println("-------------------Login-------------------------");
+		System.out.println("Ambiente: "+ driver.getCurrentUrl());
 		loginTest.Login();
 		loginTest.afterClass();
 

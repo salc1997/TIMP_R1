@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.ADM.LoginBRB">
+      <class name="com.timp.test.BRB.NovoRelatorio">
         <methods>
+          <include name="colunas"/>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="Login"/>
+          <include name="novoRelatorio"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.LoginBRB -->
+      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -44,14 +44,17 @@ public class TestBaseSteven {
 
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		//ChromeOptions chromeOptions = new ChromeOptions();
-		//chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		//driver = new ChromeDriver(chromeOptions);
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--no-sandbox");
-		options.addArguments("--headless"); //should be enabled for Jenkins
-		options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
-		options.addArguments("--window-size=1920x1080"); //should be enabled for Jenkins
+		options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		driver = new ChromeDriver(options);
+
+
+        options.addArguments("--headless");
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         driver = new ChromeDriver(options);
 		//driver = new ChromeDriver();
 		driver.manage().window().maximize();

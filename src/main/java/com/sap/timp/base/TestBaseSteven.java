@@ -47,8 +47,6 @@ public class TestBaseSteven {
 		ChromeOptions options = new ChromeOptions();
 		options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		driver = new ChromeDriver(options);
-
-
         options.addArguments("--headless");
         options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars

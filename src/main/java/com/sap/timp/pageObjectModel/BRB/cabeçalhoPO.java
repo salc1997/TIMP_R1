@@ -116,8 +116,8 @@ public class cabeçalhoPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(4000);
 		execucao.click();
-		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		sleep(8000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		executar.click();
 		

@@ -119,35 +119,41 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		sleep(3000);
 		
 		execucao.click();
-		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		sleep(2000);
 		
 		executar.click();
 		
-		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(6000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		
 		String usuarioLog = usuarioLogueado.getText();
 		
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[17]");
+		actionsMoveToElementXpath("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
 		
 		String dataColumn = driver.findElement(By.xpath("//div[contains(@aria-label,\"ComentarioLibre\")]")).getAttribute("data-column");
 		System.out.println(dataColumn);
 		
-		WebElement comentarioTexto = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1.\")]/div[2]/input"));
+		
+		
+		WebElement comentarioTexto = driver.findElement(By.xpath("//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
 		actions.doubleClick(comentarioTexto).perform();
 		sleep(2000);
 		comentarioTexto.sendKeys("Teste 1");
 		sleep(1000);
 		comentarioTexto.sendKeys(Keys.ENTER);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-		sleep(5000);
 		
-		
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[17]");
+		actionsMoveToElementXpath("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
 		sleep(1000);
-		WebElement comentarioTexto2 = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1.\")]/div[2]/input"));
+		WebElement comentarioTexto2 = driver.findElement(By.xpath("//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
 		
 		sleep(1000);
 		actions.doubleClick(comentarioTexto2).perform();
@@ -159,14 +165,14 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		comentarioTexto2.sendKeys("Teste 2");
 		sleep(1000);
 		comentarioTexto2.sendKeys(Keys.ENTER);
-		
-		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-		sleep(5000);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(2000);
 		comentarioTexto2.click();
 		
 		sleep(5000);
-		driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1.\")]/div/button")).click();
+		driver.findElement(By.xpath("//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
 		
 
 		waitExpectXpath("/html/body/div[3]/div/div[3]/button");

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33560" started-at="2020-09-23T16:35:37Z" finished-at="2020-09-23T16:36:10Z">
+  <suite name="Default suite" duration-ms="28093" started-at="2020-09-23T16:48:05Z" finished-at="2020-09-23T16:48:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33560" started-at="2020-09-23T16:35:37Z" finished-at="2020-09-23T16:36:10Z">
+    <test name="Default test" duration-ms="28093" started-at="2020-09-23T16:48:05Z" finished-at="2020-09-23T16:48:34Z">
       <class name="com.timp.test.ADM.LoginBRB">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="17556" started-at="2020-09-23T10:35:37Z" finished-at="2020-09-23T10:35:54Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12805" started-at="2020-09-23T10:48:05Z" finished-at="2020-09-23T10:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="Login" duration-ms="15918" started-at="2020-09-23T10:35:54Z" finished-at="2020-09-23T10:36:10Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="Login" duration-ms="15202" started-at="2020-09-23T10:48:18Z" finished-at="2020-09-23T10:48:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="afterClass" is-config="true" duration-ms="72" started-at="2020-09-23T10:36:10Z" finished-at="2020-09-23T10:36:10Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="afterClass" is-config="true" duration-ms="73" started-at="2020-09-23T10:48:33Z" finished-at="2020-09-23T10:48:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

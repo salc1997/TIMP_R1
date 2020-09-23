@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44756" started-at="2020-09-22T18:10:57Z" finished-at="2020-09-22T18:11:42Z">
+  <suite name="Default suite" duration-ms="32375" started-at="2020-09-23T16:18:12Z" finished-at="2020-09-23T16:18:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44756" started-at="2020-09-22T18:10:57Z" finished-at="2020-09-22T18:11:42Z">
-      <class name="com.timp.test.BRB.FiltrosAvançados">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.FiltrosAvançados@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12200" started-at="2020-09-22T12:10:57Z" finished-at="2020-09-22T12:11:09Z">
+    <test name="Default test" duration-ms="32375" started-at="2020-09-23T16:18:12Z" finished-at="2020-09-23T16:18:45Z">
+      <class name="com.timp.test.ADM.LoginBRB">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="13830" started-at="2020-09-23T10:18:12Z" finished-at="2020-09-23T10:18:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.FiltrosAvançados@f2f2cc1]" name="login" duration-ms="5621" started-at="2020-09-22T12:11:09Z" finished-at="2020-09-22T12:11:15Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="Login" duration-ms="18429" started-at="2020-09-23T10:18:26Z" finished-at="2020-09-23T10:18:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.FiltrosAvançados@f2f2cc1]" name="brbEntrar" duration-ms="15860" started-at="2020-09-22T12:11:15Z" finished-at="2020-09-22T12:11:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="filtrosAvanzados()[pri:0, instance:com.timp.test.BRB.FiltrosAvançados@f2f2cc1]" name="filtrosAvanzados" duration-ms="6743" started-at="2020-09-22T12:11:31Z" finished-at="2020-09-22T12:11:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosAvanzados -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.FiltrosAvançados@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4318" started-at="2020-09-22T12:11:37Z" finished-at="2020-09-22T12:11:42Z">
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.ADM.LoginBRB@f2f2cc1]" name="afterClass" is-config="true" duration-ms="96" started-at="2020-09-23T10:18:45Z" finished-at="2020-09-23T10:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.FiltrosAvançados -->
+      </class> <!-- com.timp.test.ADM.LoginBRB -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

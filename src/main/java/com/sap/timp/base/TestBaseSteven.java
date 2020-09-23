@@ -44,10 +44,10 @@ public class TestBaseSteven {
 
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		driver = new ChromeDriver(chromeOptions);
-		//driver = new ChromeDriver();
+		//ChromeOptions chromeOptions = new ChromeOptions();
+		//chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		//driver = new ChromeDriver(chromeOptions);
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(td1);
 		return driver;

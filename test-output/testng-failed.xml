@@ -3,61 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoCriar">
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar">
-=======
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrbTest">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="criar"/>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="editar"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-          <include name="criar"/>
-<<<<<<< HEAD
-=======
-=======
-=======
-          <include name="excluirColuna"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="acessarMDR"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoCriar -->
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar -->
-=======
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrbTest -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -75,12 +75,6 @@ public class TestBaseEliel extends TestBaseSteven {
 		wait.until(ExpectedConditions.attributeToBe(By.xpath(locator), attribute, value));
 	}
 	
-	public void visibilityElementXpath(String locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
-		
-		wait.until(ExpectedConditions.not(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(locator)))));
-	}
-	
 	public void attributeToBeElement(WebElement element, String attribute, String value) {
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 		

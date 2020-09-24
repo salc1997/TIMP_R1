@@ -89,6 +89,9 @@ public class AjustesDosAnexosCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//body")
+	public WebElement body;
+	
 	
 	
 	public AjustesDosAnexosCriarPO() {
@@ -133,10 +136,12 @@ public class AjustesDosAnexosCriarPO extends TestBaseEliel{
 		
 		opcaoempresa.click();
 		sleep(2000);
+		/*
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ESCAPE).build().perform();
 		action.sendKeys(Keys.ESCAPE).build().perform();
-		
+		*/
+		body.click();
 		sleep(2000);
 		
 		tributo.click();
@@ -197,9 +202,9 @@ public class AjustesDosAnexosCriarPO extends TestBaseEliel{
 		opcaolinhaquadro.click();
 		
 		sleep(2000);
-		
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
+		body.click();
+		//action.sendKeys(Keys.ESCAPE).build().perform();
+		//action.sendKeys(Keys.ESCAPE).build().perform();
 		
 		sleep(2000);
 		

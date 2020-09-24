@@ -58,7 +58,7 @@ public class ComentarioLibre extends TestBaseSteven{
 	@Test(priority = 2)
 	public void comentarioLibre() {
 		ArrayList<Boolean> sucesso =  comentarioLibrePO.aplicarComentarioLibre();
-
+		System.out.println(sucesso);
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), comentarioNãoValido);
 		}

@@ -101,14 +101,7 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		
 		
 		return movido;
-		
-		
-		
-		
-		
-		
-		
-		
+	
 	}
 	
 	

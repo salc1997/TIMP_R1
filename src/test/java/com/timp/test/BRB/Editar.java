@@ -64,7 +64,7 @@ public class Editar extends TestBaseSteven{
 		
 		boolean sucesso = false;
 		sucesso = editarPO.editar();
-		
+		System.out.println(sucesso);
 		assertTrue(sucesso, editado);
 
 		

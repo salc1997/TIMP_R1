@@ -56,7 +56,7 @@ public class CampoOutput extends TestBaseSteven{
 	public void campoOutput() {
 		
 		boolean sucesso = campoOutputPO.agregarOutput();
-		
+		System.out.println(sucesso);
 		
 		assertTrue(sucesso, semCampoOutput);
 			

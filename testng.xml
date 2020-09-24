@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Testes de BRB" thread-count="4"  parallel="classes">
-<!--  -->
- <!-- <listeners>
-		<listener class-name="com.sap.mfa.base.MyTestReporter" />
-	</listeners> --> 
+<suite name="Testes de BRB" >
 	<test name="Acessar BRB" preserve-order="true">
 	 
-		<classes>
- 		
 
-			<class name="com.timp.test.BRB.testNg.BRBAcessar"></class>
-			<!-- <listeners>
-				<class name="com.timp.test.BRB.testNg.paginacion"></class>
-			</listeners> --> 
-			<class name="com.timp.test.BRB.testNg.FiltrosAvançados"></class>
-			<class name="com.timp.test.BRB.testNg.NovoRelatorio"></class>
-		
-		</classes>
 	
 	</test>
 </suite> <!-- Suite -->

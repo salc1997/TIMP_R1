@@ -236,12 +236,17 @@ public class FormulaPO extends TestBaseSteven{
 		sleep(3000);
 		
 		execucao.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		
 		
 		executar.click();
-		
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(2000);
 		sleep(2000);
 		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
@@ -250,8 +255,8 @@ public class FormulaPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> sucesso() {
 		
-
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(3000);
 		int rows = tabla.findElements(By.xpath("//div[@id =\"table-data-wrapper\"]/div[@class=\"row visible\"]")).size();
 		
@@ -261,20 +266,20 @@ public class FormulaPO extends TestBaseSteven{
 		for (int i =1 ; i <= rows; i++) {
 			
 			
-			String bc = (driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"5\" and contains(@aria-label,\"Linha: "+f+".\")]"))).getText();
+			String bc = (driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"5\" and contains(@aria-label,\"Linha: "+f+"-\")]"))).getText();
 			String bc2 = bc.replace(".", "");
 			String bc3 = bc2.replace(",", ".");
 			
 			
-			String valor = (driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"66\" and contains(@aria-label,\"Linha: "+f+".\")]/div[2]"))).getText();
+			String valor = (driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"66\" and contains(@aria-label,\"Linha: "+f+"-\")]/div[2]"))).getText();
 			String valor2 = valor.replace(".", "");
 			String valor3 = valor2.replace(",", ".");
 			
-			String suma1 = driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[contains(@aria-label,\"Linha: "+f+".\") and contains(@aria-label,\"Suma1\")]/div[2]")).getText();
+			String suma1 = driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[contains(@aria-label,\"Linha: "+f+"-\") and contains(@aria-label,\"Suma1\")]/div[2]")).getText();
 			String suma11 = suma1.replace(".", "");
 			String suma12 = suma11.replace(",", ".");
 			
-			String suma2 = driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[contains(@aria-label,\"Linha: "+f+".\") and contains(@aria-label,\"Suma2\")]/div[2]")).getText();
+			String suma2 = driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[contains(@aria-label,\"Linha: "+f+"-\") and contains(@aria-label,\"Suma2\")]/div[2]")).getText();
 			String suma21 = suma2.replace(".", "");
 			String suma22 = suma21.replace(",", ".");
 

@@ -62,6 +62,7 @@ public class GruposAvanzados extends TestBaseSteven{
 		for (int i = 0; i < sucesso1.size(); i++) {
 			assertTrue(sucesso1.get(i), gruposAvan);
 		}
+		System.out.println(sucesso1);
 
 		sleep(2000);
 		sucesso2 = gruposAvanzadosPO.diferente();
@@ -70,6 +71,7 @@ public class GruposAvanzados extends TestBaseSteven{
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertFalse(sucesso2.get(i), gruposAvanDif);
 		}
+		System.out.println(sucesso2);
 		
 		
 	}
@@ -80,7 +82,7 @@ public class GruposAvanzados extends TestBaseSteven{
 		boolean sucesso = false;
 		sleep(2000);
 		sucesso = gruposAvanzadosPO.eliminar();
-		
+		System.out.println(sucesso);
 		assertTrue(sucesso, gruposAvanDel);
 		
 		

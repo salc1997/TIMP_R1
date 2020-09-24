@@ -57,6 +57,7 @@ public class ListaSuspensa  extends TestBaseSteven{
 	public void listaSuspensa() {
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = listaSuspensaPO.comentarioLista();
+		System.out.println(sucesso);
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The information is not valid");

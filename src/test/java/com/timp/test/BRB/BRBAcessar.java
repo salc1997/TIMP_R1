@@ -24,12 +24,12 @@ public class BRBAcessar extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+
 	
 	@Test(priority = 0)
 	public void login() {
@@ -41,6 +41,7 @@ public class BRBAcessar extends TestBaseSteven {
 	public void brbEntrar() {
 		
 		boolean sucesso = acessarBrbPO.acessar();
+		System.out.println(sucesso);
 		
 		assertTrue(sucesso, semAcesso);
 	

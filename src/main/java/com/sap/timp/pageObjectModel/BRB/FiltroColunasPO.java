@@ -89,10 +89,13 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 	
 		executar.click();
-		sleep(2000);
+		sleep(8000);
 		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[13]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		
+		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		colunaOpcao.click();
 		sleep(5000);
 		String cfopV = (cfop.getAttribute("value"));
@@ -122,15 +125,17 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		selecionar.click();
 		sleep(1000);
 		aplicar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		int rows = driver.findElements(By.xpath("//div[@id =\"table-data-wrapper\"]/div[@class=\"row visible\"]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		for (int i = 0; i < rows; i++) {
 			
 			
-			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1.\")]/div[contains(@style,\"text-overflow\")]")).getText());
+			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1-\")]/div[contains(@style,\"text-overflow\")]")).getText());
 
 			sucesso.add(cfop.equals(cfopG));
 			
@@ -144,7 +149,7 @@ public class FiltroColunasPO  extends TestBaseSteven{
 	
 	
 	public boolean filtroFerramenta2() {
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[13]");
+		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		
 		colunaOpcao.click();
 		sleep(5000);
@@ -177,14 +182,16 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		selecionar.click();
 		sleep(3000);
 		aplicar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		int rows = driver.findElements(By.xpath("//div[@id =\"table-data-wrapper\"]/div[@class=\"row visible\"]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		for (int i = 0; i < rows; i++) {
 			
-			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1.\")]/div[contains(@style,\"text-overflow\")]")).getText());
+			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1-\")]/div[contains(@style,\"text-overflow\")]")).getText());
 			sucesso.add(cfop.equals(cfopG));
 			
 		}

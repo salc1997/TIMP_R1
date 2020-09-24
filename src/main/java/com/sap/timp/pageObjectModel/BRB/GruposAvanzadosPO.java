@@ -26,7 +26,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")
 	public WebElement executar;
 	
-	@FindBy(xpath = "//div[@data-column=\"115\" and contains(@aria-label ,\"Linha: 1.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"115\" and contains(@aria-label ,\"Linha: 1-\")]/div[2]")
 	public WebElement cfop;
 	
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/ul/li[3]/button")
@@ -126,15 +126,16 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 	
 		executar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 	
 	
 		String cfopS = cfop.getText();
 		int col = 1;
 		while(cfopS.isEmpty()==true){
-			cfopS = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+col+".\")]/div[2]")).getText();
+			cfopS = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+col+"-\")]/div[2]")).getText();
 			col = col+1;
 		}
 		cfopG = cfopS;
@@ -186,9 +187,11 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		sleep(4000);
 		
 		execucao.click();
-		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		//sleep(2000);
 		executar.click();
 		
 		
@@ -196,10 +199,12 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 			
 		sleep(15000);
 		igual.click();
-		
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(40000);
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		//sleep(40000);
 		
 
 		
@@ -212,7 +217,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		int j=1;
 		for (int i = 0; i < rows; i++) {
 			
-			String cfop = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+j+".\")]/div[2]")).getText();
+			String cfop = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+j+"-\")]/div[2]")).getText();
 			System.out.println(cfop + "Igual");
 			sucesso.add(cfop.equals(cfopG));
 			j= j+1;
@@ -226,17 +231,22 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 	public ArrayList<Boolean> diferente() {
 		sleep(7000);
 		igualC.click();
-		sleep(15000);
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//sleep(15000);
 		diferente.click();
 
-
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(40000);
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		//sleep(40000);
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div[@class=\"row visible\"]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		String cfop3 = driver.findElement(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div[3]/div[@data-column =\"115\" and contains(@aria-label , \"Linha: 2.\")]/div[2]")).getText();
+		String cfop3 = driver.findElement(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div[3]/div[@data-column =\"115\" and contains(@aria-label , \"Linha: 2-\")]/div[2]")).getText();
 		System.out.println(cfop3 + " Prueba");
 		int j=1;
 		int k=2;
@@ -244,7 +254,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 			
 		for (int i = 0; i < rows; i++) {
 			
-			String cfop = driver.findElement(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div["+k+"]/div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+j+".\")]/div[2]")).getText();
+			String cfop = driver.findElement(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div["+k+"]/div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+j+"-\")]/div[2]")).getText();
 			System.out.println(cfop + "Diferente");
 			sucesso.add(cfop.equals(cfopG));
 			j= j+1;

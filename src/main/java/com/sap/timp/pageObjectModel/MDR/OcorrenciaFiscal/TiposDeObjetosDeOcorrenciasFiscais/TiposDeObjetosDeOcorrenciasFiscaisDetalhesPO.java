@@ -17,7 +17,6 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Tipos de Objetos de Ocorrências Fiscais\"]")
 	public WebElement tiposdeobjetosdeocorrenciasfiscais;
 	
-	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement primeira;
 	

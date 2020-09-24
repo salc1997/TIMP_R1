@@ -32,29 +32,29 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 	public WebElement empresa;
 	
 	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
-	@FindBy(xpath = "//div[@class=\"list-item\" and  @id][1]/div/label/span")
+	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaoempresa;
 	
 	@FindBy(xpath ="//input[@placeholder=\"Selecionar UF Filial\"]")
 	public WebElement selecionaruffilial; 
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
+	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaouffilial;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filiais\"]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label[1]/span")
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"0299\"]/div/label/span")
 	public WebElement opcao1filial;
 	
 
-	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label[1]/span")
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"0300\"]/div/label/span")
 	public WebElement opcao2filial;
 	
 	@FindBy(xpath="//input[ @placeholder=\"Selecionar Filial Centralizadora\"]")
 	public WebElement filialcentralizadora;
 	
-	@FindBy(xpath="//li[@class=\"list-item\" and @id][1]")
+	@FindBy(xpath="/li[@id][1]")
 	public WebElement opcaofialcentralizadora;
 	
 	@FindBy(xpath = "//*[@id=\"tabs\"]/div/div/div[3]/div[5]/div/div/div[1]/div/div/label/span")
@@ -129,9 +129,9 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 		filial.click();
 		
 		opcao1filial.click();
-		
+		sleep(2000);
 		opcao2filial.click();
-		
+		sleep(2000);
 		opcao2filial.sendKeys(Keys.ESCAPE);
 	
 		filialcentralizadora.click();

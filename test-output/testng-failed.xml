@@ -3,24 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar">
-=======
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrbTest">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="editar"/>
           <include name="beforeClass"/>
-=======
-          <include name="excluirColuna"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="criar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar -->
-=======
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrbTest -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

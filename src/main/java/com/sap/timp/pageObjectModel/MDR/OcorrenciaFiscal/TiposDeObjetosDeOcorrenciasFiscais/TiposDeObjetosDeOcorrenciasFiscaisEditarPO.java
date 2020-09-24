@@ -31,7 +31,6 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	
 	@FindBy(xpath = "//div[@id=\"occurrence\"]/div/div/div[2]")
 	public WebElement ocorrencia;
 	

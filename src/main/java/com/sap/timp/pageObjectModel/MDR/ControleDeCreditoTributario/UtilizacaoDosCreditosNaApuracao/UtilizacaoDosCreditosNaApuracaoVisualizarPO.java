@@ -12,7 +12,6 @@ import com.sap.timp.base.TestBaseEliel;
 public class UtilizacaoDosCreditosNaApuracaoVisualizarPO extends TestBaseEliel {
 	
 	
-	
 	@FindBy(xpath = "//span[text()=\"Controle de Crédito Tributário\"]")
 	public WebElement controledecreditotributario;
 	

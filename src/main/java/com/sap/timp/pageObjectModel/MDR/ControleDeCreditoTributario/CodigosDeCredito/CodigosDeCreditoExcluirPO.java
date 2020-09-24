@@ -18,7 +18,6 @@ public class CodigosDeCreditoExcluirPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
-	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	

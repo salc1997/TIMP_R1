@@ -58,7 +58,6 @@ public class UtilizacaoDosCreditosNaApuracaoDetalhesPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 
-	
 	public ArrayList<Boolean> detalhes() {
 		sleep(2000);
 		controledecreditotributario.click();

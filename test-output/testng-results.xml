@@ -2,26 +2,50 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="66021" started-at="2020-09-24T21:11:34Z" finished-at="2020-09-24T21:12:40Z">
+=======
+  <suite name="Default suite" duration-ms="65669" started-at="2020-09-24T13:55:26Z" finished-at="2020-09-24T13:56:32Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="66021" started-at="2020-09-24T21:11:34Z" finished-at="2020-09-24T21:12:40Z">
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="beforeClass" is-config="true" duration-ms="12259" started-at="2020-09-24T15:11:34Z" finished-at="2020-09-24T15:11:47Z">
+=======
+    <test name="Default test" duration-ms="65669" started-at="2020-09-24T13:55:26Z" finished-at="2020-09-24T13:56:32Z">
+      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="beforeClass" is-config="true" duration-ms="16477" started-at="2020-09-24T10:55:26Z" finished-at="2020-09-24T10:55:43Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="login" duration-ms="5404" started-at="2020-09-24T15:11:47Z" finished-at="2020-09-24T15:11:52Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="login" duration-ms="8873" started-at="2020-09-24T10:55:43Z" finished-at="2020-09-24T10:55:52Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="acessarMDR" duration-ms="14109" started-at="2020-09-24T15:11:52Z" finished-at="2020-09-24T15:12:06Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="acessarMDR" duration-ms="22623" started-at="2020-09-24T10:55:52Z" finished-at="2020-09-24T10:56:14Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="criar" duration-ms="34233" started-at="2020-09-24T15:12:06Z" finished-at="2020-09-24T15:12:40Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="criar" duration-ms="17653" started-at="2020-09-24T10:56:14Z" finished-at="2020-09-24T10:56:32Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
             <message>
+<<<<<<< HEAD
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -45,6 +69,34 @@ Session ID: 84071905062c983a3db76600598d2ad6
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+=======
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //div[@class="list-option"][1]/div/div q/label/span because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class="list-option"][1]/div/div q/label/span' is not a valid XPath expression.
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c1173cba367ba2ddd6a3554a8c807d2b
+*** Element info: {Using=xpath, value=//div[@class="list-option"][1]/div/div q/label/span}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[@class="list-option"][1]/div/div q/label/span because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class="list-option"][1]/div/div q/label/span' is not a valid XPath expression.
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c1173cba367ba2ddd6a3554a8c807d2b
+*** Element info: {Using=xpath, value=//div[@class="list-option"][1]/div/div q/label/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -58,12 +110,17 @@ Session ID: 84071905062c983a3db76600598d2ad6
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
+<<<<<<< HEAD
 	at com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriarPO.criar(MotivosCesBeneficiosCriarPO.java:113)
 	at com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar.criar(MotivosCesBeneficiosCriar.java:54)
+=======
+	at com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriarPO.criar(CodigosAjustesCriarPO.java:127)
+	at com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar.criar(CodigosAjustesCriar.java:54)
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -86,11 +143,19 @@ Session ID: 84071905062c983a3db76600598d2ad6
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

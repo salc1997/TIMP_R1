@@ -7,8 +7,6 @@
         <methods>
           <include name="beforeClass"/>
           <include name="criar"/>
-          <include name="acessarMDR"/>
-          <include name="login"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar -->
     </classes>

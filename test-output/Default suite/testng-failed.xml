@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar">
-=======
-      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+          <include name="criar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

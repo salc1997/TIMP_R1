@@ -41,7 +41,7 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"companyCode\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div q/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement empresaO;
 	
 	@FindBy(xpath = "//div[@id=\"adjustmentType\"]/div/div/div[2]")
@@ -140,7 +140,6 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 		
 		tributo.click();
 		sleep(1000);
-		actionsMoveToElementElement(tributoO);
 		tributoO.click();
 		sleep(1000);
 

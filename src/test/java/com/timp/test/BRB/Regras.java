@@ -56,6 +56,7 @@ public class Regras extends TestBaseSteven{
 	public void regras() {
 		
 		boolean sucesso = regrasPO.regra();
+		System.out.println(sucesso);
 		
 		assertTrue(sucesso, "The Rules don't match");
 

@@ -155,6 +155,7 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		sleep(2000);
 		moeda.click();
 		sleep(1000);
+		actionsMoveToElementElement(moedaO);
 		moedaO.click();
 		
 		

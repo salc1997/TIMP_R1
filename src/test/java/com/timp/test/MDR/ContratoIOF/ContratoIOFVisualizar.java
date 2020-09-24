@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeClass;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
 public class ContratoIOFVisualizar extends TestBaseEliel {
@@ -47,9 +49,15 @@ public class ContratoIOFVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		String sucesso = contratoIOFVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = contratoIOFVisualizarPO.visualizar();
 		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		 for (int i = 0; i < sucesso.size(); i++) {
+				
+				assertTrue(sucesso.get(i), visualizaçar);
+				
+			}
+		
+		//assertEquals(sucesso, "edit", visualizaçar);
 		
 		 //Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(contratoIOFVisualizarPO.mostrar.isDisplayed(), semAcesso);

@@ -58,9 +58,11 @@ public class FiltroColunas extends TestBaseSteven {
 		sucesso = filtroColunasPO.filtroFerramenta();
 		
 		assertTrue(sucesso, aplicaçãoFiltros);
+		System.out.println(sucesso);
 		
 		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
 		sucesso2 = filtroColunasPO.aplicar();
+		System.out.println(sucesso2);
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), filtros);
 		}
@@ -75,9 +77,10 @@ public class FiltroColunas extends TestBaseSteven {
 		sucesso = filtroColunasPO.filtroFerramenta2();
 		
 		assertTrue(sucesso, filtros);
-		
+		System.out.println(sucesso);
 		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
 		sucesso2 = filtroColunasPO.aplicar2();
+		System.out.println(sucesso2);
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), filtros);
 		}

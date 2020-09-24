@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,12 +57,28 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
 	
+	
+	@FindBy(xpath = "//div[@id=\"detail-description\"][2]/div[2]/div")
+	public WebElement tipoAtividadeD;
+	@FindBy(xpath = "//div[@id=\"detail-description\"][3]/div[2]/div")
+	public WebElement descricaoD;
+	@FindBy(xpath = "//div[@id=\"detail-description\"][4]/div[2]/div")
+	public WebElement dataVigenciaD;
+
+
+
+	@FindBy(xpath = "//span[@id=\"activity-type\"]")
+	public WebElement tipoAtividadeV;
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaoV;
+	@FindBy(xpath = "//span[@id=\"effective-date-from\"]")
+	public WebElement dataVigenciaV;
 	public ClassificaçaoDeContribuintesDoIPIDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String detalhes() {
+	public ArrayList<Boolean> detalhes() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -69,54 +87,77 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		waitExpectElement(siguiente);
-		sleep(2000);
 		siguiente.click();
+		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
-		
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));
-		
-		actionsMoveToElementElement(menu);
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+		WebElement açao = driver.findElement(
+				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));
+
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		detalhes.click();
-		sleep(2000);
-		
+		açao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
+
+		String tipoAtividadeD1 = tipoAtividadeD.getText();
+		String descricaoD1 = descricaoD.getText();
+		String dataVigenciaD1 = dataVigenciaD.getText();
+
+
+
+		System.out.println(tipoAtividadeD1);
+		System.out.println(descricaoD1);
+		System.out.println(dataVigenciaD1);
+
+
+
 		sleep(2000);
 		fechar.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		waitExpectElement(siguiente);
-		sleep(2000);
-		siguiente.click();
-		
-		
-		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		actionsMoveToElementElement(menu1);
-		sleep(2000);
-		menu1.click();
+
+		actionsMoveToElementElement(menu);
+
+		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+		açao = driver.findElement(
+				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+
+		menu.click();
 		sleep(1000);
-		
-		visualizar.click();
-		sleep(2000);
+		açao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
-		return sucesso;	
+		sleep(2000);
+
+		String tipoAtividadeV1 = tipoAtividadeV.getText();
+		String descricaoV1 = descricaoV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getText();
+
+
+
+		System.out.println(tipoAtividadeV1);
+		System.out.println(descricaoV1);
+		System.out.println(dataVigenciaV1);
+
+
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+
+		sucesso.add(tipoAtividadeV1.contains(tipoAtividadeD1));
+		sucesso.add(descricaoV1.contains(descricaoD1));
+		sucesso.add(dataVigenciaV1.contains(dataVigenciaD1));
+
+
+
+		System.out.println(sucesso);
+
+		return sucesso;
 	}
 	
 

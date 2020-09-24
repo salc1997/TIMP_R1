@@ -1,6 +1,9 @@
 package com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -46,9 +49,14 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhes extends TestBaseEliel {
 	public void Visualizar() {
 
 		
-		String sucesso = tabelaCodigoDaSituaçaoTributariaDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = tabelaCodigoDaSituaçaoTributariaDetalhesPO.detalhes();
 		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		for (int i = 0; i < sucesso.size(); i++) {
+			
+			assertTrue(sucesso.get(i), Detalhes);
+			
+		}
+		 //assertEquals(sucesso, "edit", visualizaçar);
 	}	
 				
 	

@@ -76,7 +76,7 @@ public class ExcluirColuna extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = excluirColunaPO.DragNDrop();
-		
+		System.out.println(sucesso + "Drag N Drop");
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), deletarColuna);
 		}
@@ -89,7 +89,7 @@ public class ExcluirColuna extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = excluirColunaPO.ExcluirColuna();
-		
+		System.out.println(sucesso + "Opção");
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The element wasn't removed");
 		}

@@ -1,6 +1,10 @@
 package com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal;
 
+import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -49,9 +53,12 @@ public class GrupoAtividadeVisualizar extends TestBaseSteven{
 	 @Test(priority = 2)
 	  public void filtro() {
 		  
-		 String sucesso = grupoAtividadeVisualizarPO.visualizar();
+		 ArrayList<Boolean> sucesso = grupoAtividadeVisualizarPO.visualizar();
 		 
-		 assertEquals(sucesso, "edit", visualizaçar);
+		 for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i),visualizaçar);
+		}
+
 		 
 	  }
 }

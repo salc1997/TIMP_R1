@@ -38,9 +38,8 @@ public class FiltrosAvanazadosPO extends TestBaseSteven {
 	
 
 		filtro.click();
-		
-		attributeToBeXpath("//div[@id=\"filter-type\"]/div","class","base-select ");
-		sleep(2000);
+
+		sleep(8000);
 		combo.click();
 		
 

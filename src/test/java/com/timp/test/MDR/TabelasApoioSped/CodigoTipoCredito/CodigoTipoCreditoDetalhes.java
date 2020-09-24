@@ -11,6 +11,9 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.Codig
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -49,8 +52,15 @@ public class CodigoTipoCreditoDetalhes extends TestBaseEliel {
 	public void Visualizar() {
 
 		
-		 String sucesso = codigoTipoCreditoDetalhesPO.detalhes();
-		 assertEquals(sucesso, "detail", Filtros);
+		ArrayList<Boolean>  sucesso = codigoTipoCreditoDetalhesPO.detalhes();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			
+			assertTrue(sucesso.get(i), Detalhes);
+			
+		}
+		
+		// assertEquals(sucesso, "detail", Filtros);
 	}		
 	
 	

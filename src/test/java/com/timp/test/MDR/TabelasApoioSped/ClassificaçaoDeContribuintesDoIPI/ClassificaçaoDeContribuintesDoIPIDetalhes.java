@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribu
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -48,9 +51,11 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void detalhes() {
 
-		String sucesso = classificaçaoDeContribuintesDoIPIDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = classificaçaoDeContribuintesDoIPIDetalhesPO.detalhes();
 		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 		
 	}	
 	

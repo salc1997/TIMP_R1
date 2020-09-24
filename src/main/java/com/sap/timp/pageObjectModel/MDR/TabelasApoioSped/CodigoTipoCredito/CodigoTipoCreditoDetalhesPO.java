@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,6 +51,9 @@ public class CodigoTipoCreditoDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
+	public WebElement fechar;
+	
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -61,6 +66,29 @@ public class CodigoTipoCreditoDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
+	public WebElement tributode;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
+	public WebElement codigode;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
+	public WebElement descricaode;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div/div")
+	public WebElement datade;
+	
+	@FindBy(xpath = "//span[@id=\"tax\"]")
+	public WebElement tributovi;
+	
+	@FindBy(xpath = "//span[@id=\"creditTypeCode\"]")
+	public WebElement codigovi;
+	
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaovi;
+	
+	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
+	public WebElement datavi;
 	
 	
 	public CodigoTipoCreditoDetalhesPO() {
@@ -68,7 +96,7 @@ public class CodigoTipoCreditoDetalhesPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String detalhes() {
+	public ArrayList<Boolean> detalhes() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -95,7 +123,59 @@ public class CodigoTipoCreditoDetalhesPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String sucesso = driver.findElement(By.xpath("//*[@id=\"detail-name\"]")).getAttribute("class");
+		
+		String codigodetalhes = codigode.getText();
+		String descricaodetalhes = descricaode.getText();
+		String tributodetalhes = tributode.getText();
+		String datadetalhes = datade.getText();
+		
+		System.out.println(tributodetalhes);
+		System.out.println(codigodetalhes);
+		System.out.println(descricaodetalhes);
+		System.out.println(datadetalhes);
+		
+		
+		fechar.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		waitExpectElement(siguiente);
+		sleep(2000);
+		siguiente.click();
+		
+		
+		//pega o ultimo id que foi gerado no criar
+		String idRegistro1 = idObter2();
+		
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		actionsMoveToElementElement(menu1);
+		sleep(2000);
+		menu1.click();
+		sleep(1000);
+		
+		visualizar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String codigovisualizar =  codigovi.getText();
+		String descricaovisualizar = descricaovi.getText();
+		String tributovisualizar = tributovi.getText();
+		String datavisualizar = datavi.getText();
+		
+		
+		System.out.println(tributovisualizar);
+		System.out.println(codigovisualizar);
+		System.out.println(descricaovisualizar);
+		System.out.println(datavisualizar);
+		
+		
+		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		sucesso.add(codigovisualizar.equals(codigodetalhes));
+		sucesso.add(descricaovisualizar.equals(descricaodetalhes));
+		sucesso.add(tributovisualizar.equals(tributodetalhes));
+		sucesso.add(datavisualizar.equals(datadetalhes));
+		
+		//String sucesso = driver.findElement(By.xpath("//*[@id=\"detail-name\"]")).getAttribute("class");
 		
 		return sucesso;
 	}

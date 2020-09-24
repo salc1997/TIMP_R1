@@ -61,6 +61,7 @@ public class FormatacaoEVariante extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), formatação);
 		}
+		System.out.println(sucesso);
 		
 		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
 		sucesso2 = formatacaoEVariantePO.salvarVariante();
@@ -68,6 +69,7 @@ public class FormatacaoEVariante extends TestBaseSteven{
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), salvarVariante);
 		}
+		System.out.println(sucesso2);
 		
 		
 			
@@ -78,7 +80,7 @@ public class FormatacaoEVariante extends TestBaseSteven{
 		boolean sucesso = false;
 		
 		sucesso = formatacaoEVariantePO.excluirVariantes();
-		
+		System.out.println(sucesso + "Excluir Variante");
 		assertTrue(sucesso, excluirVariante);
 		
 		

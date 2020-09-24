@@ -118,10 +118,9 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 		
 		descricaocenario.sendKeys("Teste automatizado cenário");
 		sleep(2000);
-		dataVigencia.sendKeys(Keys.ENTER);
-		dataVigencia.sendKeys("24/07/2020");
-		dataVigencia.sendKeys(Keys.ENTER);
-		cuerpo.click();
+		dataVigencia.sendKeys(fechaActual());
+
+
 		
 		btnGravar.sendKeys(Keys.ENTER);
 		

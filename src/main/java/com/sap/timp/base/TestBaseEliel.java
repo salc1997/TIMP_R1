@@ -4,9 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -26,7 +24,7 @@ public class TestBaseEliel extends TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(td1);
+		driver.get(tc2);
 		return driver;
 
 	}
@@ -75,6 +73,12 @@ public class TestBaseEliel extends TestBaseSteven {
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 		
 		wait.until(ExpectedConditions.attributeToBe(By.xpath(locator), attribute, value));
+	}
+	
+	public void visibilityElementXpath(String locator) {
+		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		
+		wait.until(ExpectedConditions.not(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(locator)))));
 	}
 	
 	public void attributeToBeElement(WebElement element, String attribute, String value) {

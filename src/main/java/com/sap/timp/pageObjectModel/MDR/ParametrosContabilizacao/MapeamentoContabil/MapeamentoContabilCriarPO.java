@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,14 +20,10 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Mapeamento Contábil\"]")
 	public WebElement contabil;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement siguiente;
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][1]")
+	public WebElement primero;
 	
-	@FindBy(xpath = "//div[@class=\"thead\"]/div/div[3]")
-	public WebElement idC;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")
-	public WebElement idR;
+
 	
 	@FindBy(xpath = "//span[text()=\"Novo Mapeamento Contábil\"]")
 	public WebElement novo;
@@ -47,6 +44,9 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[1]/label/span")
 	public WebElement codigo;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Cabeçalho\")]")
+	public WebElement cabecalho;
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
@@ -58,9 +58,10 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
+	
+
+	
 	/*
-	@FindBy(xpath = "")
-	public WebElement ;
 	@FindBy(xpath = "")
 	public WebElement ;
 	@FindBy(xpath = "")
@@ -87,11 +88,8 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	}
 	
 	
-	public void criar() {
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+	public boolean criar() {
+		sleep(2000);
 		parametro.click();
 		sleep(1000);
 		contabil.click();
@@ -99,18 +97,15 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
+		primero.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 		
-		idC.click();
-		sleep(1000);
+
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
-		dobleClickElement(idC);
-			
-		String id = idR.getText();
 		System.out.println(id);
 		
 		novo.click();
@@ -132,7 +127,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		
 		sleep(1000);
 		ajuste.click();
-		waitExpectElement(siguiente);
+		waitExpectElement(primero);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		codigo.click();
@@ -142,7 +137,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		waitExpectElement(empresa);
 		
 		sleep(2000);
-		
+		cabecalho.sendKeys("Teste Mapeamento Contábil");
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -158,22 +153,22 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		siguiente.click();
+		primero.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		idC.click();
-		dobleClickElement(idC);
-		sleep(2000);
 		
-		String idB = idR.getText();
-		sleep(2000);
+
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		
 		System.out.println(id);
-		System.out.println(idB);
+		sleep(2000);
+		idInserir1(id2);
+		System.out.println(id2);
 		
 		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
+		double idBD = convertToDouble(id2);
 		
 		boolean sucesso = false;
 		
@@ -186,7 +181,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		System.out.println(sucesso);
 		
 		
-		
+		return sucesso;
 		
 		
 	}

@@ -76,6 +76,7 @@ public class ReordenarColuna extends TestBaseSteven{
 		
 		boolean sucesso = false;
 		sucesso = reordenarColunarPO.reordenar();
+		System.out.println(sucesso);
 		
 		assertTrue(sucesso,reordenar);
 		

@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -17,6 +18,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -42,7 +44,20 @@ public class TestBaseSteven {
 
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		driver = new ChromeDriver();
+		
+		ChromeOptions options = new ChromeOptions();
+		options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		driver = new ChromeDriver(options);
+        options.addArguments("--headless");
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        driver = new ChromeDriver(options);
+		
+		
+		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(td1);
 		return driver;
@@ -62,12 +77,54 @@ public class TestBaseSteven {
 			e.printStackTrace();
 		}
 	}
+	
+	public Boolean igualInt(int valor, int esperado) {
+		
+		boolean sucesso = false;
+		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean igualDobule(double valor, double esperado) {
+		
+		boolean sucesso = false;
+		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
 
 	public void waitExpectXpath(String locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 
+	}
+	
+	public String remplazarPuntos(String valor) {
+		
+		valor = valor.replace(".", "");
+
+		return valor;
+		
+		
+	}
+	
+	public String remplazarComas(String valor) {
+		
+		valor = valor.replace(",", ".");
+		
+		return valor;
+		
+		
 	}
 
 	public void waitExpectElement(WebElement element) {
@@ -88,7 +145,7 @@ public class TestBaseSteven {
 	}
 
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 300000);
 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 
@@ -157,6 +214,39 @@ public class TestBaseSteven {
 
 	}
 	
+	public String getText(WebElement element) {
+
+		String texto = element.getText();
+		
+		if (texto.isEmpty()==true) {
+			texto = "vazio";
+		}
+		
+		return texto;
+
+	}
+	
+	public String textContent(WebElement element) {
+
+		String texto = element.getAttribute("textContent");
+		
+		return texto;
+
+	}
+	
+	public String getValue(WebElement element) {
+
+		String texto = element.getAttribute("value");
+		
+		if (texto.isEmpty()==true) {
+			texto = "vazio";
+		}
+		
+		return texto;
+
+	}
+	
+	
 	public int convertToInt(String numero) {
 
 		int result = new Integer(numero);
@@ -180,7 +270,7 @@ public class TestBaseSteven {
 	public void visibilityOfElementXpath(String xpath) {
 
 		boolean isPresent = driver.findElement(By.xpath(xpath)).isDisplayed();
-		System.err.println(isPresent);
+
 		while (isPresent == false) {
 			sleep(3000);
 			isPresent = driver.findElement(By.xpath(xpath)).isDisplayed();
@@ -287,6 +377,26 @@ public class TestBaseSteven {
 
 	public void quit() {
 		driver.close();
+	}
+	
+	
+	public String ordenar(String dato) {
+		
+		String recorrer = dato;
+		
+	    String[] recorrer2 = recorrer.split("");
+
+	    Arrays.sort(recorrer2);
+
+	    String sorted = "";
+
+	    for(int i =0;i<recorrer2.length;i++){
+
+	      sorted += recorrer2[i];
+	    
+	    }
+		
+		return sorted; 
 	}
 	
 	

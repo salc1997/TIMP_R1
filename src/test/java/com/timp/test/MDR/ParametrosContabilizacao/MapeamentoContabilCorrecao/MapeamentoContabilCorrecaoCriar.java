@@ -47,9 +47,11 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void editar() {
+	public void criar() {
 
-		mapeamentoContabilCorrecaoCriarPO.criar();
+		boolean sucesso = mapeamentoContabilCorrecaoCriarPO.criar();
+		
+		assertTrue(sucesso, Criar);
 		
 	}
 }

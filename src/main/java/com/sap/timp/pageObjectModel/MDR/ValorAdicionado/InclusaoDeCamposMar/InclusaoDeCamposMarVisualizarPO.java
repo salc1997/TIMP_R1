@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,18 +43,29 @@ public class InclusaoDeCamposMarVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
+	@FindBy(xpath = "//span[@id=\"uf\"]")
+	public WebElement ufV;
+	@FindBy(xpath = "//span[@id=\"mt\"]")
+	public WebElement mtV;
+	@FindBy(xpath = "//span[@id=\"validityFrom\"]")
+	public WebElement dataVigenciaV;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
+	public WebElement ufE;
+	@FindBy(xpath = "//input[@placeholder=\"M\"]")
+	public WebElement mtE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	public WebElement dataVigenciaE;
+	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
-	
-	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
-	public WebElement fechar;
 	
 	public InclusaoDeCamposMarVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String visualizar() {
+	public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		valoradicionado.click();
 		sleep(2000);
@@ -69,44 +82,68 @@ public class InclusaoDeCamposMarVisualizarPO extends TestBaseEliel {
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		
-		visualizar.click();
+		açao.click();
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		String ufV1 = ufV.getText();
+		String mtV1 = mtV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getText();
+		
+		
+		System.out.println(ufV1);
+		System.out.println(mtV1);
+		System.out.println(dataVigenciaV1);
+		
 		biblioteca.click();
 		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		siguiente.click();
-		
-		
-		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
-		sleep(2000);
-		menu1.click();
-		sleep(1000);
-		
-		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//div[@class=\"baseTabs-wrapper wrapperClass\"]")).getAttribute("class");
-		//System.out.println(sucesso);	
-		return sucesso;	
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(2000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String ufE1 = ufE.getAttribute("value");
+		String mtE1 = mtE.getAttribute("value");
+		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
+		
+		
+		System.out.println(ufE1);
+		System.out.println(mtE1);
+		System.out.println(dataVigenciaE1);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(ufV1.contains(ufE1));
+		sucesso.add(mtV1.contains(mtE1));
+		sucesso.add(dataVigenciaV1.contains(dataVigenciaE1));
+		System.out.println(sucesso);
+
+
+		return sucesso;
+		
 	}
 
 }

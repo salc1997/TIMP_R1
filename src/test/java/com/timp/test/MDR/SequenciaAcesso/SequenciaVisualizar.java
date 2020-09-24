@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.SequenciaAcesso.SequenciaVisualizarPO;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -46,9 +49,11 @@ public class SequenciaVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		String sucesso = sequenciaVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = sequenciaVisualizarPO.visualizar();
 		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}
 
 }

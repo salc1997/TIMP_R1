@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -83,13 +85,57 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]/span[2]")
 	public WebElement visualizar;
 	
+	@FindBy(xpath = "//span[@id=\"company\"]")
+	public WebElement empresavi;
+	
+	@FindBy(xpath = "//span[@id=\"release\"]")
+	public WebElement pagamentovi;
+	
+	
+	@FindBy(xpath = "//span[@id=\"accounting\"]")
+	public WebElement codigocontabilizacaovi;
+	
+	@FindBy(xpath = "//span[@id=\"padrao\"]")
+	public WebElement descricaopadraovi;
+	
+	@FindBy(xpath = "//span[@id=\"tribute\"]")
+	public WebElement tributovi;
+	
+	@FindBy(xpath = "//span[@id=\"typeTribute\"]")
+	public WebElement tipotributovi;
+	
+	@FindBy(xpath = "//span[@id=\"validity\"]")
+	public WebElement datavi;
+	
+	@FindBy(xpath = "//div[@id=\"multipleControlerId-1000\"]")
+	public WebElement empresaed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tipo de Lançamento \"]")
+	public WebElement pagamentoed;
+	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código Contabilização\"]")
+	public WebElement codigocontabilizacaoed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Descrição Padrão\"]")
+	public WebElement descricaopadraoed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo \"]")
+	public WebElement tributoed;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tipo de tributo \"]")
+	public WebElement tipotributoed;
+	
+	@FindBy(xpath = "//div[@id=\"start-date\"]/div/div/input")
+	public WebElement dataed;
+	
 	public CodigoContabilizacaoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	
 	
-	public String visualizar() {
+	public ArrayList<Boolean> visualizar() {
 		
 		
 
@@ -115,13 +161,94 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 		menu.click();
 		sleep(1000);
 		visualizar.click();
-	
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		attributeToBeXpath("//table[@class=\"edit\"]", "class", "edit");
 		
+		//visualizar
+		
+				String empresavisualizar = empresavi.getText();
+				String pagamentovisualizar = pagamentovi.getText();
+				String codigocontabilizacaovisualizar = codigocontabilizacaovi.getText();
+				String descricaovisualizar = descricaopadraovi.getText();
+				String tributovisualizar = tributovi.getText();
+				String tipotributovisualizar= tipotributovi.getText();
+				String datavisualizar = datavi.getText();
+						
+				System.out.println(empresavisualizar);
+				System.out.println(pagamentovisualizar);
+				System.out.println(codigocontabilizacaovisualizar);
+				System.out.println(descricaovisualizar);
+				System.out.println(tributovisualizar);
+				System.out.println(tipotributovisualizar);
+				System.out.println(datavisualizar);
+			
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				biblioteca.click();
+				
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				waitExpectElement(siguiente);
+				sleep(2000);
+				siguiente.click();
+				
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				
+				//pega o ultimo id que foi gerado no criar
+				String idRegistro1 = idObter3();
+				
+				WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+				WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+				actionsMoveToElementElement(menu1);
+				sleep(2000);
+				menu1.click();
+				sleep(1000);
+				
+				editar.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				
+				
+				//editar
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
+				sleep(2000);
+				
+				String empresaeditar = empresaed.getText();
+				String pagamentoeditar = pagamentoed.getAttribute("value");
+				String codigocontabilizacaoeditar = codigocontabilizacaoed.getAttribute("value");
+				String descricaoeditar = descricaopadraoed.getAttribute("value");
+				String tributoeditar = tributoed.getAttribute("value");
+				String tipotributoeditar= tipotributoed.getAttribute("value");
+				String dataeditar = dataed.getAttribute("value");
+						
+				System.out.println(empresaeditar);
+				System.out.println(pagamentoeditar);
+				System.out.println(codigocontabilizacaoeditar);
+				System.out.println(descricaoeditar);
+				System.out.println(tributoeditar);
+				System.out.println(tipotributoeditar);
+				System.out.println(dataeditar);
+			
+				
+				ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+				sucesso.add(empresaeditar.equals(empresavisualizar));
+				sucesso.add(pagamentoeditar.equals(pagamentovisualizar));
+				sucesso.add(codigocontabilizacaoeditar.equals(codigocontabilizacaovisualizar));
+				sucesso.add(descricaoeditar.equals(descricaovisualizar));
+				sucesso.add(tributoeditar.equals(tributovisualizar));
+				sucesso.add(tipotributoeditar.contains(tipotributovisualizar));
+				sucesso.add(datavisualizar.equals(dataeditar));
+				
+		/*
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		//System.out.println(sucesso);	
+		*/
 		return sucesso;
 		
     }

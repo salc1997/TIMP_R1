@@ -63,7 +63,7 @@ public class Eliminar extends TestBaseSteven{
 	public void eliminarLixeira() {
 		
 		boolean sucesso = eliminarPO.eliminarLixeira();
-
+		System.out.println(sucesso);
 		assertTrue(sucesso, eliminar);
 		
 	}

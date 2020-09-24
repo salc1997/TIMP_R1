@@ -73,21 +73,11 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
 	public WebElement camposestrutura;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Ano\"]")
+	@FindBy(xpath = "//div[contains(@class,\"iconLeft\")]/input[@placeholder]")
 	public WebElement atribuicao;
 	
-	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[2]/div/div[3]/div/span[1]")
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]/div")
-	public WebElement idC;
-	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
-	public WebElement idR;
-	
-	//@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
-	//@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[7]")
-	//public WebElement setafinal;
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[7]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement setafinal;
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
@@ -95,6 +85,7 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
+
 	
 	public CadastroCondicaoCriarPO() {
 		PageFactory.initElements(driver, this);
@@ -193,9 +184,9 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 		String dataatual = fechaActual();
 		vigenciade.sendKeys(dataatual);		
 				
-		sleep(2000);
 		camposestrutura.click();
 		sleep(2000);
+		waitExpectElement(atribuicao);
 		atribuicao.sendKeys("teste");
 		
 		gravar.click();

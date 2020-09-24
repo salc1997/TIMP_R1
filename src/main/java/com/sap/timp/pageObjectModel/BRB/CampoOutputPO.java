@@ -97,6 +97,7 @@ public class CampoOutputPO extends TestBaseSteven{
 		boolean sucesso = false;
 		sucesso = mostrado.isDisplayed();
 		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		

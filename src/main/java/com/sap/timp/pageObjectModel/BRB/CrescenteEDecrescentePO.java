@@ -66,9 +66,10 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 
 		executar.click();
-		sleep(2000);
+		sleep(5000);
 
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 
@@ -78,8 +79,9 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		
 		
 		crescente.click();
-		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 
 		int rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
@@ -91,8 +93,10 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 		}
 		
-
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		
 		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[15]");
@@ -107,8 +111,8 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 			if (n2 < rows) {
 
-				String n1C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n1 + ".\")]/div[2]")).getText();
-				String n2C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n2 + ".\")]/div[2]")).getText();
+				String n1C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n1 + "-\")]/div[2]")).getText();
+				String n2C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n2 + "-\")]/div[2]")).getText();
 				
 				n1C = n1C.replace(".", "");
 				n1C = n1C.replace(",", ".");
@@ -160,7 +164,10 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		menuC.click();
 		decrescente.click();
 		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 
 		int rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
@@ -172,8 +179,10 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 		}
 		
-
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		
 		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
@@ -188,8 +197,8 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 			if (n2 < rows) {
 
-				String n1C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n1 + ".\")]/div[2]")).getText();
-				String n2C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n2 + ".\")]/div[2]")).getText();
+				String n1C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n1 + "-\")]/div[2]")).getText();
+				String n2C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n2 + "-\")]/div[2]")).getText();
 				
 				n1C = n1C.replace(".", "");
 				n1C = n1C.replace(",", ".");

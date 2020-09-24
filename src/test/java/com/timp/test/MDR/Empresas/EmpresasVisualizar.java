@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.Empresas.EmpresasViasualizarPO;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -29,12 +32,12 @@ public class EmpresasVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		empresasVisualizarPO = new EmpresasViasualizarPO();
 	}
-	
+	/*
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	
+	*/
 	
 	@Test(priority = 0)
 	public void login() {
@@ -52,9 +55,12 @@ public class EmpresasVisualizar extends TestBaseSteven {
   @Test(priority = 2)
   public void visualizar() {
 	  
-	  String sucesso = empresasVisualizarPO.visualizar();
+	  ArrayList<Boolean> sucesso = empresasVisualizarPO.visualizar();
 	  
-	  assertEquals(sucesso, "edit",EmpresaVisualizar);
+	  for (int i = 0; i < sucesso.size(); i++) {
+		  assertTrue(sucesso.get(i), visualizaçar);
+	}
+	 // assertEquals(sucesso, "edit",EmpresaVisualizar);
 	  
   }
   

@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteCriarPO;
+//import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteCriarPO;
 
 public class ICMSSTTransporteCriar extends TestBaseEliel{
 
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ICMSSTTransporteCriarPO icmsstTransporteCriarPO;
+	//ICMSSTTransporteCriarPO icmsstTransporteCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,7 +23,7 @@ public class ICMSSTTransporteCriar extends TestBaseEliel{
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		icmsstTransporteCriarPO = new ICMSSTTransporteCriarPO();
+		//icmsstTransporteCriarPO = new ICMSSTTransporteCriarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,8 +46,8 @@ public class ICMSSTTransporteCriar extends TestBaseEliel{
 	public void criar() {
 
 		
-		boolean sucesso = icmsstTransporteCriarPO.criar();
-		assertTrue(sucesso, semAcesso);
+		//boolean sucesso = icmsstTransporteCriarPO.criar();
+		//assertTrue(sucesso, semAcesso);
 		
 	}				
 	

@@ -140,9 +140,10 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 		
 		tributo.click();
 		sleep(1000);
+		actionsMoveToElementElement(tributoO);
 		tributoO.click();
 		sleep(1000);
-
+		
 		attributeToBeXpath("//div[@id=\"tributeType\"]/div", "class", "base-select required");
 		sleep(1000);
 		tipoTributo.click();

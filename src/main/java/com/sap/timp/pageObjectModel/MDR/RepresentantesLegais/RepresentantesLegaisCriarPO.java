@@ -229,10 +229,10 @@ public class RepresentantesLegaisCriarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		representacao.sendKeys(data);
-		representacao1.sendKeys(data);
+		//representacao1.sendKeys(data);
 		sleep(2000);
 		procuracao.sendKeys(data);
-		procuracao1.sendKeys(data);
+		//procuracao1.sendKeys(data);
 		sleep(2000);
 		
 		adicionar.click();

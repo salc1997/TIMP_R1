@@ -57,7 +57,7 @@ public class TestBaseSteven {
         driver = new ChromeDriver(options);
 		
 		
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(td1);
 		return driver;

@@ -44,7 +44,7 @@ public class TestBaseSteven {
 
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		
+		/*
 		ChromeOptions options = new ChromeOptions();
 		options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		driver = new ChromeDriver(options);
@@ -55,11 +55,11 @@ public class TestBaseSteven {
         options.addArguments("--disable-gpu"); // applicable to windows os only
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         driver = new ChromeDriver(options);
+		*/
 		
-		
-		//driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(td1);
+		driver.get(tp1);
 		return driver;
 
 	}

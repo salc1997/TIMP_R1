@@ -1,4 +1,4 @@
-package com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais;
+package com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao;
 
 import static org.testng.Assert.assertTrue;
 
@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhesPO;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
- 
+public class UtilizacaoDosCreditosNaApuracaoDetalhes extends TestBaseEliel{
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
+	UtilizacaoDosCreditosNaApuracaoDetalhesPO utilizacaoDosCreditosNaApuracaoDetalhesPO;
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +24,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO = new TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO();
+		utilizacaoDosCreditosNaApuracaoDetalhesPO= new UtilizacaoDosCreditosNaApuracaoDetalhesPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,14 +46,15 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Detalhes() {
 
-		ArrayList<Boolean> sucesso = tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = utilizacaoDosCreditosNaApuracaoDetalhesPO.detalhes();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			
 			assertTrue(sucesso.get(i), Detalhes);
 			
 		}
-	}			
+	}	
+	
 	
 	
 }

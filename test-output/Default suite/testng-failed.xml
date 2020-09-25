@@ -3,28 +3,11 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar">
-=======
-      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR">
         <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="contasParteBLALURCriarFiscalExcluir"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

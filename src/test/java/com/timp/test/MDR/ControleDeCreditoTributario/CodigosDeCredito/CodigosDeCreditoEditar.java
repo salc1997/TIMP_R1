@@ -1,4 +1,4 @@
-package com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais;
+package com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito;
 
 import static org.testng.Assert.assertTrue;
 
@@ -8,13 +8,15 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisEditarPO;
+import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoEditarPO;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseEliel {
+public class CodigosDeCreditoEditar extends TestBaseEliel {
  
+	
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TiposDeObjetosDeOcorrenciasFiscaisEditarPO tiposDeObjetosDeOcorrenciasFiscaisEditarPO;
+	CodigosDeCreditoEditarPO codigosDeCreditoEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -22,7 +24,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tiposDeObjetosDeOcorrenciasFiscaisEditarPO = new TiposDeObjetosDeOcorrenciasFiscaisEditarPO();
+		codigosDeCreditoEditarPO = new CodigosDeCreditoEditarPO();
 	}
 	/*
 	@AfterClass
@@ -47,12 +49,10 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisEditarPO.editar();
+		boolean sucesso = codigosDeCreditoEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
 
 	}		
-	
-	
 	
 }

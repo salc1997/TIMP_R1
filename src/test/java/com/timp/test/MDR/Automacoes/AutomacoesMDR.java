@@ -5,6 +5,7 @@ import org.yaml.snakeyaml.scanner.Constant;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFEditarPO;
 import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar;
@@ -30,6 +31,21 @@ import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeCriar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeEditar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeVisualizar;
+import com.timp.test.MDR.CEP.Bairro.BairroCriar;
+import com.timp.test.MDR.CEP.Bairro.BairroEditar;
+import com.timp.test.MDR.CEP.Bairro.BairroEliminar;
+import com.timp.test.MDR.CEP.Bairro.BairroFiltros;
+import com.timp.test.MDR.CEP.Bairro.BairroVisualizar;
+import com.timp.test.MDR.CEP.Logradouro.LogradouroCriar;
+import com.timp.test.MDR.CEP.Logradouro.LogradouroEditar;
+import com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir;
+import com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros;
+import com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar;
+import com.timp.test.MDR.CEP.Municipio.MunicipioCriar;
+import com.timp.test.MDR.CEP.Municipio.MunicipioEditar;
+import com.timp.test.MDR.CEP.Municipio.MunicipioEliminar;
+import com.timp.test.MDR.CEP.Municipio.MunicipioFiltros;
+import com.timp.test.MDR.CEP.Municipio.MunicipioVisualizar;
 import com.timp.test.MDR.CadastroCondiçao.*;
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoCriar;
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar;
@@ -58,6 +74,33 @@ import com.timp.test.MDR.Centralizacao.Tributos.TributosDetalhes;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosEditar;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosExcluir;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosVisualizar;
+import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar;
+import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar;
+import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar;
+import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir;
+import com.timp.test.MDR.CodigoReceita.CodigoReceitaCriar;
+import com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes;
+import com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar;
+import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluir;
+import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
+import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
+import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
+import com.timp.test.MDR.ContratoIOF.ContratoIOFEditar;
+import com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir;
+import com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar;
+import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoCriar;
+import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoDetalhes;
+import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoEditar;
+import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoVisualizar;
+import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarCriar;
+import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarDetalhes;
+import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditar;
+import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizar;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorEditar;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
@@ -152,15 +195,82 @@ public class AutomacoesMDR extends TestBaseSteven {
 	EstornoCreditoFiltros estornoCreditoFiltros;
 	EstornoCreditoVisualizar estornoCreditoVisualizar;
 
-	// Fator de Crecimento do CIAP
+	// Centralização > Fator de Crecimento do CIAP
 	FatorCreditamentoCriar fatorCreditamentoCriar;
 	FatorCreditamentoFiltros fatorCreditamentoFiltros;
+
+	// Centralização > Tributos
 
 	TributosCriar tributosCriar;
 	TributosDetalhes tributosDetalhes;
 	TributosEditar tributosEditar;
 	TributosVisualizar tributosVisualizar;
 	TributosExcluir tributosExcluir;
+
+	// CEP> Bairro
+
+	BairroCriar bairroCriar;
+	BairroEditar bairroEditar;
+	BairroFiltros bairroFiltros;
+	BairroVisualizar bairroVisualizar;
+	BairroEliminar bairroEliminar;
+
+	// CEP > Logradouro
+	LogradouroCriar logradouroCriar;
+	LogradouroEditar logradouroEditar;
+	LogradouroExcluir logradouroExcluir;
+	LogradouroFiltros logradouroFiltros;
+	LogradouroVisualizar logradouroVisualizar;
+
+	// CEP > Município
+	MunicipioCriar municipioCriar;
+	MunicipioEditar municipioEditar;
+	MunicipioEliminar municipioEliminar;
+	MunicipioFiltros municipioFiltros;
+	MunicipioVisualizar MunicipioVisualizar;
+
+	// Código de Contabiliazação
+	CodigoContabilizacaoCriar codigoContabilizacaoCriar;
+	CodigoContabalizacaoVisualizar codigoContabalizacaoVisualizar;
+	CodigoContabilizacaoEditar codigoContabilizacaoEditar;
+	CodigoContabilizacaoExcluir codigoContabilizacaoExcluir;
+
+	// Código da Receita
+	CodigoReceitaCriar codigoReceitaCriar;
+	CodigoReceitaDetalhes codigoReceitaDetalhes;
+	CodigoReceitaEditar codigoReceitaEditar;
+	CodigoReceitaVisualizar codigoReceitaVisualizar;
+	CodigoReceitaExcluir codigoReceitaExcluir;
+
+	// Configuração do Fundo Socail
+	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
+
+	// Contrato IOF
+
+	ContratoIOFCriar contratoIOFCriar;
+	ContratoIOFEditar contratoIOFEditar;
+	ContratoIOFVisualizar contratoIOFVisualizar;
+	ContratoIOFExcluir contratoIOFExcluir;
+
+	// Controle De crédito Tributario > Código Crédito
+
+	CodigosDeCreditoCriar codigosDeCreditoCriar;
+	CodigosDeCreditoDetalhes codigosDeCreditoDetalhes;
+	CodigosDeCreditoEditar codigosDeCreditoEditar;
+	CodigosDeCreditoExcluir codigosDeCreditoExcluir;
+	CodigosDeCreditoVisualizar codigosDeCreditoVisualizar;
+
+	// Controle De crédito Tributario > Limite de Crédito a Atulizar
+	LimiteDeCreditoAUtilizarCriar limiteDeCreditoAUtilizarCriar;
+	LimiteDeCreditoAUtilizarDetalhes limiteDeCreditoAUtilizarDetalhes;
+	LimiteDeCreditoAUtilizarEditar limiteDeCreditoAUtilizarEditar;
+	LimiteDeCreditoAUtilizarExcluir limiteDeCreditoAUtilizarExcluir;
+	LimiteDeCreditoAUtilizarVisualizar limiteDeCreditoAUtilizarVisualizar;
+
+	// Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
+	UtilizacaoDosCreditosEmPeriodoAnteriorCriar utilizacaoDosCreditosEmPeriodoAnteriorCriar;
+	UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes utilizacaoDosCreditosEmPeriodoAnteriorDetalhes;
+	UtilizacaoDosCreditosEmPeriodoAnteriorEditar utilizacaoDosCreditosEmPeriodoAnteriorEditar;
 
 	// --------------------------------------------------------------------------------------------------
 
@@ -949,19 +1059,563 @@ public class AutomacoesMDR extends TestBaseSteven {
 		System.out.println("-------------------Centralização > Tributos Fin-------------------------");
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	// CEP > Bairro
+
+	@Test(priority = 59)
+	public void bairroCriar() {
+
+		System.out.println("------------------- CEP > Bairro-------------------------");
+
+		bairroCriar = new BairroCriar();
+		bairroCriar.beforeClass();
+		bairroCriar.login();
+		bairroCriar.acessarMDR();
+		bairroCriar.criar();
+		bairroCriar.afterClass();
+
+	}
+
+	@Test(priority = 60)
+	public void bairroEditar() {
+
+		bairroEditar = new BairroEditar();
+		bairroEditar.beforeClass();
+		bairroEditar.login();
+		bairroEditar.acessarMDR();
+		bairroEditar.editar();
+		bairroEditar.afterClass();
+
+	}
+
+	@Test(priority = 61)
+	public void bairroVisualizar() {
+
+		bairroVisualizar = new BairroVisualizar();
+		bairroVisualizar.beforeClass();
+		bairroVisualizar.login();
+		bairroVisualizar.acessarMDR();
+		bairroVisualizar.visualizar();
+		bairroVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 62)
+	public void bairroFiltro() {
+
+		bairroFiltros = new BairroFiltros();
+		bairroFiltros.beforeClass();
+		bairroFiltros.login();
+		bairroFiltros.acessarMDR();
+		bairroFiltros.filtro();
+		bairroFiltros.afterClass();
+
+	}
+
+	@Test(priority = 63)
+	public void bairroExcluir() {
+
+		bairroEliminar = new BairroEliminar();
+		bairroEliminar.beforeClass();
+		bairroEliminar.login();
+		bairroEliminar.acessarMDR();
+		bairroEliminar.eliminar();
+		bairroEliminar.afterClass();
+
+		System.out.println("-------------------CEP > Bairro Fin-------------------------");
+	}
+
+	// CEP > Logradouro
+
+	@Test(priority = 64)
+	public void logradouroCriar() {
+
+		System.out.println("-------------------CEP > Logradouro-------------------------");
+
+		logradouroCriar = new LogradouroCriar();
+		logradouroCriar.beforeClass();
+		logradouroCriar.login();
+		logradouroCriar.acessarMDR();
+		logradouroCriar.criar();
+		logradouroCriar.afterClass();
+
+	}
+
+	@Test(priority = 65)
+	public void logradouroEditar() {
+
+		logradouroEditar = new LogradouroEditar();
+		logradouroEditar.beforeClass();
+		logradouroEditar.login();
+		logradouroEditar.acessarMDR();
+		logradouroEditar.editar();
+		logradouroEditar.afterClass();
+
+	}
+
+	@Test(priority = 66)
+	public void logradouroVisualizar() {
+
+		logradouroVisualizar = new LogradouroVisualizar();
+		logradouroVisualizar.beforeClass();
+		logradouroVisualizar.login();
+		logradouroVisualizar.acessarMDR();
+		logradouroVisualizar.visualizar();
+		logradouroVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 67)
+	public void logradouroFiltro() {
+
+		logradouroFiltros = new LogradouroFiltros();
+		logradouroFiltros.beforeClass();
+		logradouroFiltros.login();
+		logradouroFiltros.acessarMDR();
+		logradouroFiltros.filtros();
+		logradouroFiltros.afterClass();
+
+	}
+
+	@Test(priority = 68)
+	public void logradouroExcluir() {
+
+		logradouroExcluir = new LogradouroExcluir();
+		logradouroExcluir.beforeClass();
+		logradouroExcluir.login();
+		logradouroExcluir.acessarMDR();
+		logradouroExcluir.excluir();
+		logradouroExcluir.afterClass();
+
+		System.out.println("-------------------CEP > Logradouro Fin-------------------------");
+	}
+
+	// CEP > Município
+
+	@Test(priority = 69)
+	public void municipioCriar() {
+
+		System.out.println("-------------------CEP > Município-------------------------");
+
+		municipioCriar = new MunicipioCriar();
+		municipioCriar.beforeClass();
+		municipioCriar.login();
+		municipioCriar.acessarMDR();
+		municipioCriar.criar();
+		municipioCriar.afterClass();
+
+	}
+
+	@Test(priority = 70)
+	public void municipioEditar() {
+
+		municipioEditar = new MunicipioEditar();
+		municipioEditar.beforeClass();
+		municipioEditar.login();
+		municipioEditar.acessarMDR();
+		municipioEditar.editar();
+		municipioEditar.afterClass();
+
+	}
+
+	@Test(priority = 71)
+	public void municipioVisualizar() {
+
+		MunicipioVisualizar = new MunicipioVisualizar();
+		MunicipioVisualizar.beforeClass();
+		MunicipioVisualizar.login();
+		MunicipioVisualizar.acessarMDR();
+		MunicipioVisualizar.visualizar();
+		MunicipioVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 72)
+	public void municipioFiltro() {
+
+		municipioFiltros = new MunicipioFiltros();
+		municipioFiltros.beforeClass();
+		municipioFiltros.login();
+		municipioFiltros.acessarMDR();
+		municipioFiltros.filtros();
+		municipioFiltros.afterClass();
+
+	}
+
+	@Test(priority = 73)
+	public void municipioExcluir() {
+
+		municipioEliminar = new MunicipioEliminar();
+		municipioEliminar.beforeClass();
+		municipioEliminar.login();
+		municipioEliminar.acessarMDR();
+		municipioEliminar.excluir();
+		municipioEliminar.afterClass();
+
+		System.out.println("-------------------CEP > Município Fin-------------------------");
+	}
+
+	// Codigo Contabilização
+
+	@Test(priority = 74)
+	public void codigoContabilizacaoCriar() {
+
+		System.out.println("-------------------Codigo Contabilização-------------------------");
+
+		codigoContabilizacaoCriar = new CodigoContabilizacaoCriar();
+		codigoContabilizacaoCriar.beforeClass();
+		codigoContabilizacaoCriar.login();
+		codigoContabilizacaoCriar.acessarMDR();
+		codigoContabilizacaoCriar.criar();
+		codigoContabilizacaoCriar.afterClass();
+
+	}
+
+	@Test(priority = 75)
+	public void codigoContabilizacaoEditar() {
+
+		codigoContabilizacaoEditar = new CodigoContabilizacaoEditar();
+		codigoContabilizacaoEditar.beforeClass();
+		codigoContabilizacaoEditar.login();
+		codigoContabilizacaoEditar.acessarMDR();
+		codigoContabilizacaoEditar.editar();
+		codigoContabilizacaoEditar.afterClass();
+
+	}
+
+	@Test(priority = 76)
+	public void codigoContabilizacaoVisualizar() {
+
+		codigoContabalizacaoVisualizar = new CodigoContabalizacaoVisualizar();
+		codigoContabalizacaoVisualizar.beforeClass();
+		codigoContabalizacaoVisualizar.login();
+		codigoContabalizacaoVisualizar.acessarMDR();
+		codigoContabalizacaoVisualizar.visualizar();
+		codigoContabalizacaoVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 77)
+	public void codigoContabilizacaoExcluir() {
+
+		codigoContabilizacaoExcluir = new CodigoContabilizacaoExcluir();
+		codigoContabilizacaoExcluir.beforeClass();
+		codigoContabilizacaoExcluir.login();
+		codigoContabilizacaoExcluir.acessarMDR();
+		codigoContabilizacaoExcluir.excluir();
+		codigoContabilizacaoExcluir.afterClass();
+
+		System.out.println("-------------------Codigo Contabilização Fin-------------------------");
+	}
+
+	// Código da Receita
+
+	@Test(priority = 78)
+	public void codigoReceitaCriar() {
+
+		System.out.println("-------------------Código da Receita-------------------------");
+
+		codigoReceitaCriar = new CodigoReceitaCriar();
+		codigoReceitaCriar.beforeClass();
+		codigoReceitaCriar.login();
+		codigoReceitaCriar.acessarMDR();
+		codigoReceitaCriar.criar();
+		codigoReceitaCriar.afterClass();
+
+	}
+
+	@Test(priority = 79)
+	public void codigoReceitaEditar() {
+
+		codigoReceitaEditar = new CodigoReceitaEditar();
+		codigoReceitaEditar.beforeClass();
+		codigoReceitaEditar.login();
+		codigoReceitaEditar.acessarMDR();
+		codigoReceitaEditar.editar();
+		codigoReceitaEditar.afterClass();
+
+	}
+
+	@Test(priority = 80)
+	public void codigoReceitaDetalhes() {
+
+		codigoReceitaDetalhes = new CodigoReceitaDetalhes();
+		codigoReceitaDetalhes.beforeClass();
+		codigoReceitaDetalhes.login();
+		codigoReceitaDetalhes.acessarMDR();
+		codigoReceitaDetalhes.detalhes();
+		codigoReceitaDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 81)
+	public void codigoReceitaVisualizar() {
+
+		codigoReceitaVisualizar = new CodigoReceitaVisualizar();
+		codigoReceitaVisualizar.beforeClass();
+		codigoReceitaVisualizar.login();
+		codigoReceitaVisualizar.acessarMDR();
+		codigoReceitaVisualizar.visualizar();
+		codigoReceitaVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 82)
+	public void codigoReceitaExcluir() {
+
+		codigoReceitaExcluir = new CodigoReceitaExcluir();
+		codigoReceitaExcluir.beforeClass();
+		codigoReceitaExcluir.login();
+		codigoReceitaExcluir.acessarMDR();
+		codigoReceitaExcluir.excluir();
+		codigoReceitaExcluir.afterClass();
+
+		System.out.println("-------------------Código da Receita Fin-------------------------");
+	}
+
+	// Configuração do Fundo Social
+
+	@Test(priority = 83)
+	public void configuracaoFundoSocialCriar() {
+
+		System.out.println("-------------------Configuração do Fundo Social-------------------------");
+
+		configuracaoFundoSocailCriar = new ConfiguracaoFundoSocailCriar();
+		configuracaoFundoSocailCriar.beforeClass();
+		configuracaoFundoSocailCriar.login();
+		configuracaoFundoSocailCriar.acessarMDR();
+		configuracaoFundoSocailCriar.criar();
+		configuracaoFundoSocailCriar.afterClass();
+
+	}
+
+	// Contrato IOF
+
+	@Test(priority = 84)
+	public void contratoIOFCriar() {
+
+		System.out.println("-------------------Contrato IOF-------------------------");
+
+		contratoIOFCriar = new ContratoIOFCriar();
+		contratoIOFCriar.beforeClass();
+		contratoIOFCriar.login();
+		contratoIOFCriar.acessarMDR();
+		contratoIOFCriar.criar();
+		contratoIOFCriar.afterClass();
+
+	}
+
+	@Test(priority = 85)
+	public void contratoIOFEditar() {
+
+		contratoIOFEditar = new ContratoIOFEditar();
+		contratoIOFEditar.beforeClass();
+		contratoIOFEditar.login();
+		contratoIOFEditar.acessarMDR();
+		contratoIOFEditar.editar();
+		contratoIOFEditar.afterClass();
+
+	}
+
+	@Test(priority = 86)
+	public void contratoIOFVisualizar() {
+
+		contratoIOFVisualizar = new ContratoIOFVisualizar();
+		contratoIOFVisualizar.beforeClass();
+		contratoIOFVisualizar.login();
+		contratoIOFVisualizar.acessarMDR();
+		contratoIOFVisualizar.visualizar();
+		contratoIOFVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 87)
+	public void contratoIOFExcluir() {
+
+		contratoIOFExcluir = new ContratoIOFExcluir();
+		contratoIOFExcluir.beforeClass();
+		contratoIOFExcluir.login();
+		contratoIOFExcluir.acessarMDR();
+		contratoIOFExcluir.excluir();
+		contratoIOFExcluir.afterClass();
+
+		System.out.println("-------------------Contrato IOF Fin-------------------------");
+	}
+
+	// Controle De crédito Tributario > Código Crédito
+
+	@Test(priority = 88)
+	public void codigosDeCreditoCriarFiscalCriar() {
+
+		System.out
+				.println("-------------------Controle De crédito Tributario > Código Crédito-------------------------");
+
+		codigosDeCreditoCriar = new CodigosDeCreditoCriar();
+		codigosDeCreditoCriar.beforeClass();
+		codigosDeCreditoCriar.login();
+		codigosDeCreditoCriar.acessarMDR();
+		codigosDeCreditoCriar.criar();
+		codigosDeCreditoCriar.afterClass();
+
+	}
+
+	@Test(priority = 89)
+	public void codigosDeCreditoEditar() {
+
+		codigosDeCreditoEditar = new CodigosDeCreditoEditar();
+		codigosDeCreditoEditar.beforeClass();
+		codigosDeCreditoEditar.login();
+		codigosDeCreditoEditar.acessarMDR();
+		codigosDeCreditoEditar.editar();
+		codigosDeCreditoEditar.afterClass();
+
+	}
+
+	@Test(priority = 90)
+	public void codigosDeCreditoVisualizar() {
+
+		codigosDeCreditoVisualizar = new CodigosDeCreditoVisualizar();
+		codigosDeCreditoVisualizar.beforeClass();
+		codigosDeCreditoVisualizar.login();
+		codigosDeCreditoVisualizar.acessarMDR();
+		codigosDeCreditoVisualizar.visualizar();
+		codigosDeCreditoVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 91)
+	public void codigosDeCreditoDetalhes() {
+
+		codigosDeCreditoDetalhes = new CodigosDeCreditoDetalhes();
+		codigosDeCreditoDetalhes.beforeClass();
+		codigosDeCreditoDetalhes.login();
+		codigosDeCreditoDetalhes.acessarMDR();
+		codigosDeCreditoDetalhes.Detalhes();
+		codigosDeCreditoDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 92)
+	public void codigosDeCreditoExcluir() {
+
+		codigosDeCreditoExcluir = new CodigosDeCreditoExcluir();
+		codigosDeCreditoExcluir.beforeClass();
+		codigosDeCreditoExcluir.login();
+		codigosDeCreditoExcluir.acessarMDR();
+		codigosDeCreditoExcluir.excluir();
+		codigosDeCreditoExcluir.afterClass();
+
+		System.out.println(
+				"-------------------Controle De crédito Tributario > Código Crédito Fin-------------------------");
+	}
+
+	// ControleDeCreditoTributario > Limite De Credito A Utilizar
+
+	@Test(priority = 93)
+	public void limiteDeCreditoAUtilizarCriar() {
+
+		System.out.println(
+				"-------------------ControleDeCreditoTributario > Limite De Credito A Utilizar-------------------------");
+
+		limiteDeCreditoAUtilizarCriar = new LimiteDeCreditoAUtilizarCriar();
+		limiteDeCreditoAUtilizarCriar.beforeClass();
+		limiteDeCreditoAUtilizarCriar.login();
+		limiteDeCreditoAUtilizarCriar.acessarMDR();
+		limiteDeCreditoAUtilizarCriar.criar();
+		limiteDeCreditoAUtilizarCriar.afterClass();
+
+	}
+
+	@Test(priority = 94)
+	public void limiteDeCreditoAUtilizarEditar() {
+
+		limiteDeCreditoAUtilizarEditar = new LimiteDeCreditoAUtilizarEditar();
+		limiteDeCreditoAUtilizarEditar.beforeClass();
+		limiteDeCreditoAUtilizarEditar.login();
+		limiteDeCreditoAUtilizarEditar.acessarMDR();
+		limiteDeCreditoAUtilizarEditar.editar();
+		limiteDeCreditoAUtilizarEditar.afterClass();
+
+	}
+
+	@Test(priority = 95)
+	public void limiteDeCreditoAUtilizarVisualizar() {
+
+		limiteDeCreditoAUtilizarVisualizar = new LimiteDeCreditoAUtilizarVisualizar();
+		limiteDeCreditoAUtilizarVisualizar.beforeClass();
+		limiteDeCreditoAUtilizarVisualizar.login();
+		limiteDeCreditoAUtilizarVisualizar.acessarMDR();
+		limiteDeCreditoAUtilizarVisualizar.visualizar();
+		limiteDeCreditoAUtilizarVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 96)
+	public void limiteDeCreditoAUtilizarDetalhes() {
+
+		limiteDeCreditoAUtilizarDetalhes = new LimiteDeCreditoAUtilizarDetalhes();
+		limiteDeCreditoAUtilizarDetalhes.beforeClass();
+		limiteDeCreditoAUtilizarDetalhes.login();
+		limiteDeCreditoAUtilizarDetalhes.acessarMDR();
+		limiteDeCreditoAUtilizarDetalhes.detalhes();
+		limiteDeCreditoAUtilizarDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 97)
+	public void limiteDeCreditoAUtilizarExcluir() {
+
+		limiteDeCreditoAUtilizarExcluir = new LimiteDeCreditoAUtilizarExcluir();
+		limiteDeCreditoAUtilizarExcluir.beforeClass();
+		limiteDeCreditoAUtilizarExcluir.login();
+		limiteDeCreditoAUtilizarExcluir.acessarMDR();
+		limiteDeCreditoAUtilizarExcluir.excluir();
+		limiteDeCreditoAUtilizarExcluir.afterClass();
+
+		System.out.println(
+				"-------------------ControleDeCreditoTributario > Limite De Credito A Utilizar Fin-------------------------");
+	}
+
+	// Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
+
+	@Test(priority = 98)
+	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarCriar() {
+
+		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior-------------------------");
+
+		utilizacaoDosCreditosEmPeriodoAnteriorCriar = new UtilizacaoDosCreditosEmPeriodoAnteriorCriar();
+		utilizacaoDosCreditosEmPeriodoAnteriorCriar.beforeClass();
+		utilizacaoDosCreditosEmPeriodoAnteriorCriar.login();
+		utilizacaoDosCreditosEmPeriodoAnteriorCriar.acessarMDR();
+		utilizacaoDosCreditosEmPeriodoAnteriorCriar.criar();
+		utilizacaoDosCreditosEmPeriodoAnteriorCriar.afterClass();
+
+	}
+
+	@Test(priority = 99)
+	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarEditar() {
+
+		utilizacaoDosCreditosEmPeriodoAnteriorEditar = new UtilizacaoDosCreditosEmPeriodoAnteriorEditar();
+		utilizacaoDosCreditosEmPeriodoAnteriorEditar.beforeClass();
+		utilizacaoDosCreditosEmPeriodoAnteriorEditar.login();
+		utilizacaoDosCreditosEmPeriodoAnteriorEditar.acessarMDR();
+		utilizacaoDosCreditosEmPeriodoAnteriorEditar.editar();
+		utilizacaoDosCreditosEmPeriodoAnteriorEditar.afterClass();
+
+	}
+
+	@Test(priority = 100)
+	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarDetalhes() {
+
+		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes = new UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes();
+		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.beforeClass();
+		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.login();
+		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.acessarMDR();
+		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.detalhes();
+		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.afterClass();
+		
+		System.out.println(
+				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior Fin-------------------------");
+
+	}
+
 }

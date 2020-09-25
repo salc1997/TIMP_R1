@@ -41,7 +41,7 @@ public class LogradouroExcluir extends TestBaseKathy{
 	}
 
 	@Test(priority = 2)
-    public void logradouroExcluir() {
+    public void excluir() {
     	boolean sucesso = logradouroExcluirPO.logradouroExcluir();
 		assertTrue(sucesso, Eliminado);
     }

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -28,12 +29,12 @@ public class BairroVisualizar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		bairroVisualizarPO = new BairroVisualizarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 	
 	@Test(priority = 0)
 	public void login() {
@@ -50,7 +51,7 @@ public class BairroVisualizar extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void filtro() {
+	  public void visualizar() {
 		  
 		 ArrayList<Boolean> sucesso = bairroVisualizarPO.visualizar();
 
@@ -59,7 +60,7 @@ public class BairroVisualizar extends TestBaseSteven{
 				assertTrue(sucesso.get(i), visualizaçar);
 				
 			}
-		// assertEquals(sucesso, "edit", visualizaçar);
+
 		 
 	  }
 }

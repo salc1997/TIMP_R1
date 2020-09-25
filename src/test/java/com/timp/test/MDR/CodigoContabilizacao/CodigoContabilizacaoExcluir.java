@@ -25,9 +25,9 @@ public class CodigoContabilizacaoExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContabilizacaoExcluirPO = new CodigoContabilizacaoExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -43,7 +43,7 @@ public class CodigoContabilizacaoExcluir extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Excluir() {
+	public void excluir() {
 
 		boolean sucesso= codigoContabilizacaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

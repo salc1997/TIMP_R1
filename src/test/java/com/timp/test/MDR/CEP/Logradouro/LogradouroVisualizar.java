@@ -44,7 +44,7 @@ public class LogradouroVisualizar extends TestBaseKathy{
 	}  
 	
 	 @Test(priority = 2)
-	public void logradouroVisualizar() {
+	public void visualizar() {
 		 
 		 ArrayList<Boolean> sucesso = logradouroVisualizarPO.logradouroVisualizar();		 
 		 

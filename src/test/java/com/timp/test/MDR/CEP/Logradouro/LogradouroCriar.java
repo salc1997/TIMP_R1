@@ -41,7 +41,7 @@ public class LogradouroCriar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void logradouroCriar() {		
+	public void criar() {		
 		boolean sucesso = logradouroCriarPO.logradouroCriar();	
 		assertTrue(sucesso, Criar);
 	}

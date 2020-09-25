@@ -2,29 +2,26 @@ package com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais;
 
 import static org.testng.Assert.assertTrue;
 
-import java.util.ArrayList;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisCriarPO;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
- 
+public class TiposDeObjetosDeOcorrenciasFiscaisCriar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
-	
+ TiposDeObjetosDeOcorrenciasFiscaisCriarPO tiposDeObjetosDeOcorrenciasFiscaisCriarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO = new TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO();
+		tiposDeObjetosDeOcorrenciasFiscaisCriarPO = new TiposDeObjetosDeOcorrenciasFiscaisCriarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -44,16 +41,12 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Detalhes() {
+	public void criar() {
 
-		ArrayList<Boolean> sucesso = tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO.detalhes();
 		
-		for (int i = 0; i < sucesso.size(); i++) {
-			
-			assertTrue(sucesso.get(i), Detalhes);
-			
-		}
+		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisCriarPO.criar();
+		assertTrue(sucesso, semAcesso);
+		
 	}			
-	
-	
+			
 }

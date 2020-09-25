@@ -26,9 +26,9 @@ public class AtivaçaoParaMunicipioDetalhes extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		ativaçaoParaMunicipioDestalhesPO = new AtivaçaoParaMunicipioDestalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	 @AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,7 +44,7 @@ public class AtivaçaoParaMunicipioDetalhes extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void detalhes() {
 
 		
 		String sucesso = ativaçaoParaMunicipioDestalhesPO.detalhes();

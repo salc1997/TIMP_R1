@@ -29,13 +29,13 @@ public class AtividadeFiltro extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		atividadeFiltroPO = new AtividadeFiltroPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
 	
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -51,7 +51,7 @@ public class AtividadeFiltro extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void visualizar() {
+	  public void filtro() {
 		  
 		  boolean sucesso = atividadeFiltroPO.filtro();
 		  

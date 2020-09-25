@@ -29,12 +29,12 @@ public class AtividadeCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		atividadeCriarPO = new AtividadeCriarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -51,7 +51,7 @@ public class AtividadeCriar extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void visualizar() {
+	  public void criar() {
 		  
 		  boolean sucesso = atividadeCriarPO.criar();
 		  

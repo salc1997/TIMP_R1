@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -28,12 +29,12 @@ public class ResponsavelMovimentoVisualizar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		responsavelMovimentoVisualizarPO = new ResponsavelMovimentoVisualizarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 	
 	@Test(priority = 0)
 	public void login() {

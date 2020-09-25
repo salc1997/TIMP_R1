@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
+//import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
 
 public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
+	//TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO;
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +24,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO = new TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO();
+		//tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO = new TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,13 +46,13 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Detalhes() {
 
-		ArrayList<Boolean> sucesso = tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO.detalhes();
+		//ArrayList<Boolean> sucesso = tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO.detalhes();
 		
-		for (int i = 0; i < sucesso.size(); i++) {
+		//for (int i = 0; i < sucesso.size(); i++) {
 			
-			assertTrue(sucesso.get(i), Detalhes);
+			//assertTrue(sucesso.get(i), Detalhes);
 			
-		}
+		//}
 	}			
 	
 	

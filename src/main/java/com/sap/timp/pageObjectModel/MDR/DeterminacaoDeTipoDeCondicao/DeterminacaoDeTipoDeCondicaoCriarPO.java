@@ -14,7 +14,6 @@ public class DeterminacaoDeTipoDeCondicaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Determinação de Tipo de Condição\"]")
 	public WebElement determinacaodetipodecondicao;
 	
-	
 	@FindBy(xpath = "//span[text()=\"Nova Determinação de Tipo de Condição\"]")
 	public WebElement novodetermincao;
 	

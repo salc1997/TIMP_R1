@@ -366,6 +366,7 @@ public class TributosCriarPO extends TestBaseKathy{
 		}
 		*/
 		sleep(2000);
+		actionsMoveToElementElement(campoSaidaDestino);
 		
 		tributoDestino.click();
 		sleep(1000);

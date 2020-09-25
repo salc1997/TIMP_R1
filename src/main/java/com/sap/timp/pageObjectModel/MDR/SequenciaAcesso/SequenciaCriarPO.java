@@ -129,27 +129,27 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		descricao.sendKeys("descrição");
 		
 		empresa.click();
-		
+		sleep(2000);
 		opcaoempresa.click();
-		
+		sleep(2000);
 		empresa.sendKeys(Keys.ESCAPE);
-		
+		sleep(2000);
 		tributo.click();
-		
+		sleep(2000);
 		opcaotributo.click();
-		
+		sleep(2000);
 		tributo.sendKeys(Keys.ESCAPE);
-		
+		sleep(2000);
 		grupoestrutura.click();
-		
+		sleep(2000);
 		opcaogrupo.click();
 		
 		sleep(1000);
 		
 		estruturadados.click();
-		
+		sleep(2000);
 		opcaoestrutura.click();
-		
+		sleep(2000);
 		camposestrutura.click();
 		
 		//arrastar a opçao para outro campo
@@ -158,15 +158,19 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		gravar.click();
+		
+		sleep(2000);
 		
 		butaosim.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		biblioteca.click();
 		
+		sleep(2000);
+		butaosim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

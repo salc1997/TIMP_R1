@@ -108,7 +108,6 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
 		ocorrencia.click();
 		sleep(2000);
 		opcao.click();

@@ -2,26 +2,136 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="112859" started-at="2020-09-24T20:48:34Z" finished-at="2020-09-24T20:50:27Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="66021" started-at="2020-09-24T21:11:34Z" finished-at="2020-09-24T21:12:40Z">
+=======
   <suite name="Default suite" duration-ms="65669" started-at="2020-09-24T13:55:26Z" finished-at="2020-09-24T13:56:32Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="112859" started-at="2020-09-24T20:48:34Z" finished-at="2020-09-24T20:50:27Z">
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@436a4e4b]" name="beforeClass" is-config="true" duration-ms="18123" started-at="2020-09-24T17:48:34Z" finished-at="2020-09-24T17:48:52Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="66021" started-at="2020-09-24T21:11:34Z" finished-at="2020-09-24T21:12:40Z">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="beforeClass" is-config="true" duration-ms="12259" started-at="2020-09-24T15:11:34Z" finished-at="2020-09-24T15:11:47Z">
+=======
     <test name="Default test" duration-ms="65669" started-at="2020-09-24T13:55:26Z" finished-at="2020-09-24T13:56:32Z">
       <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="beforeClass" is-config="true" duration-ms="16477" started-at="2020-09-24T10:55:26Z" finished-at="2020-09-24T10:55:43Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@436a4e4b]" name="login" duration-ms="9578" started-at="2020-09-24T17:48:52Z" finished-at="2020-09-24T17:49:02Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="login" duration-ms="5404" started-at="2020-09-24T15:11:47Z" finished-at="2020-09-24T15:11:52Z">
+=======
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="login" duration-ms="8873" started-at="2020-09-24T10:55:43Z" finished-at="2020-09-24T10:55:52Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@436a4e4b]" name="acessarMDR" duration-ms="19938" started-at="2020-09-24T17:49:02Z" finished-at="2020-09-24T17:49:22Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="acessarMDR" duration-ms="14109" started-at="2020-09-24T15:11:52Z" finished-at="2020-09-24T15:12:06Z">
+=======
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="acessarMDR" duration-ms="22623" started-at="2020-09-24T10:55:52Z" finished-at="2020-09-24T10:56:14Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@436a4e4b]" name="criar" duration-ms="65186" started-at="2020-09-24T17:49:22Z" finished-at="2020-09-24T17:50:27Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar@657c8ad9]" name="criar" duration-ms="34233" started-at="2020-09-24T15:12:06Z" finished-at="2020-09-24T15:12:40Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+=======
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@5e3a8624]" name="criar" duration-ms="17653" started-at="2020-09-24T10:56:14Z" finished-at="2020-09-24T10:56:32Z">
           <exception class="org.openqa.selenium.InvalidSelectorException">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
             <message>
+<<<<<<< HEAD
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e3f73e8044c735927e0361d54d40bca1
+=======
+<<<<<<< HEAD
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 84071905062c983a3db76600598d2ad6
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+*** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
+<<<<<<< HEAD
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-35UG9UP', ip: '192.168.1.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e3f73e8044c735927e0361d54d40bca1
+*** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.SequenciaAcesso.SequenciaCriarPO.criar(SequenciaCriarPO.java:178)
+	at com.timp.test.MDR.SequenciaAcesso.SequenciaCriar.criar(SequenciaCriar.java:54)
+=======
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 84071905062c983a3db76600598d2ad6
+*** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+=======
               <![CDATA[invalid selector: Unable to locate an element with the xpath expression //div[@class="list-option"][1]/div/div q/label/span because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class="list-option"][1]/div/div q/label/span' is not a valid XPath expression.
   (Session info: chrome=85.0.4183.121)
@@ -48,6 +158,7 @@ Session ID: c1173cba367ba2ddd6a3554a8c807d2b
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -61,8 +172,14 @@ Session ID: c1173cba367ba2ddd6a3554a8c807d2b
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
+<<<<<<< HEAD
+	at com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriarPO.criar(MotivosCesBeneficiosCriarPO.java:113)
+	at com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar.criar(MotivosCesBeneficiosCriar.java:54)
+=======
 	at com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriarPO.criar(CodigosAjustesCriarPO.java:127)
 	at com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar.criar(CodigosAjustesCriar.java:54)
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -89,11 +206,27 @@ Session ID: c1173cba367ba2ddd6a3554a8c807d2b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
           </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar -->
+=======
       </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

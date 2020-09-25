@@ -12,7 +12,6 @@ public class DeterminacaoDeTipoDeCondicaoExcluirPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Determinação de Tipo de Condição\"]")
 	public WebElement determinacaodetipodecondicao;
 	
-	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement primeira;
 

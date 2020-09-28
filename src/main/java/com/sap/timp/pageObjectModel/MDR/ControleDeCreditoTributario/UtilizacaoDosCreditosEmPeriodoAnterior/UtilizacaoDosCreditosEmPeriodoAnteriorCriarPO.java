@@ -32,7 +32,7 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorCriarPO extends TestBaseEliel
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"00\"]/div/label/span")
 	public WebElement opcaotributo;
 	
 
@@ -45,7 +45,7 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorCriarPO extends TestBaseEliel
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"creditCode\"]/div/div/div[2]")
 	public WebElement codigodecredito;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[@id][2]")
 	public WebElement opcaocodigodecredito;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Utilização\"]")

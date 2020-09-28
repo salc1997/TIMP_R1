@@ -2,6 +2,7 @@ package com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEs
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -29,12 +30,12 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends 
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO= new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,7 +50,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends 
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO.excluir();
 		

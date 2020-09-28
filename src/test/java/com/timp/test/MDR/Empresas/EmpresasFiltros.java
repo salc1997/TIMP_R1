@@ -29,12 +29,12 @@ public class EmpresasFiltros extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		empresasFiltrosPO = new EmpresasFiltrosPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 	
 	@Test(priority = 0)
 	public void login() {
@@ -50,7 +50,7 @@ public class EmpresasFiltros extends TestBaseSteven{
 	}
 	
 	@Test(priority = 2)
-	public void empresasFiltros() {
+	public void filtros() {
 		ArrayList<Boolean> sucesso = empresasFiltrosPO.razaoSocial();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {

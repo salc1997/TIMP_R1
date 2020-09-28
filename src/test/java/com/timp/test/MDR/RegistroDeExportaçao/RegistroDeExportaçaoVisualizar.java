@@ -30,9 +30,9 @@ public class RegistroDeExportaçaoVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		registroDeExportaçaoVisualizarPO= new RegistroDeExportaçaoVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

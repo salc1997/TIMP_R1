@@ -34,9 +34,9 @@ public class MotivosCesBeneficiosVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		motivosCesBeneficiosVisualizarPO = new MotivosCesBeneficiosVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -52,7 +52,7 @@ public class MotivosCesBeneficiosVisualizar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = motivosCesBeneficiosVisualizarPO.visualizar();
 		

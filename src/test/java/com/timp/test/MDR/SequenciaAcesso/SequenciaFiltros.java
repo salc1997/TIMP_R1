@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,9 +27,8 @@ public class SequenciaFiltros extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaFiltrosPO = new SequenciaFiltrosPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,7 +44,7 @@ public class SequenciaFiltros extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void filtroId() {
+	public void filtro() {
 
 		ArrayList<Boolean> sucesso = sequenciaFiltrosPO.id();
 

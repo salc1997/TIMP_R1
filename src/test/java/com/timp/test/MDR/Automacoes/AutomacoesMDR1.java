@@ -101,13 +101,18 @@ import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.Li
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorEditar;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoCriar;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhes;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoEditar;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoVisualizar;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
 import com.timp.test.MDR.Filiais.FiliaisEditar;
 import com.timp.test.MDR.Filiais.FiliaisVisualizar;
 
-public class AutomacoesMDR extends TestBaseSteven {
+public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// empresa
 	EmpresaEditar empresaEditar;
@@ -271,6 +276,16 @@ public class AutomacoesMDR extends TestBaseSteven {
 	UtilizacaoDosCreditosEmPeriodoAnteriorCriar utilizacaoDosCreditosEmPeriodoAnteriorCriar;
 	UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes utilizacaoDosCreditosEmPeriodoAnteriorDetalhes;
 	UtilizacaoDosCreditosEmPeriodoAnteriorEditar utilizacaoDosCreditosEmPeriodoAnteriorEditar;
+
+	// Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração
+	
+	UtilizacaoDosCreditosNaApuracaoCriar utilizacaoDosCreditosNaApuracaoCriar;
+	UtilizacaoDosCreditosNaApuracaoDetalhes utilizacaoDosCreditosNaApuracaoDetalhes;
+	UtilizacaoDosCreditosNaApuracaoEditar utilizacaoDosCreditosNaApuracaoEditar;
+	UtilizacaoDosCreditosNaApuracaoExcluir utilizacaoDosCreditosNaApuracaoExcluir;
+	UtilizacaoDosCreditosNaApuracaoVisualizar utilizacaoDosCreditosNaApuracaoVisualizar;
+	
+	
 
 	// --------------------------------------------------------------------------------------------------
 
@@ -1617,5 +1632,75 @@ public class AutomacoesMDR extends TestBaseSteven {
 				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior Fin-------------------------");
 
 	}
+	
+	
+	// Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração
+	
+	@Test(priority = 101)
+	public void utilizacaoDosCreditosNaApuracaoCriar() {
+
+		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração-------------------------");
+
+		utilizacaoDosCreditosNaApuracaoCriar = new UtilizacaoDosCreditosNaApuracaoCriar();
+		utilizacaoDosCreditosNaApuracaoCriar.beforeClass();
+		utilizacaoDosCreditosNaApuracaoCriar.login();
+		utilizacaoDosCreditosNaApuracaoCriar.acessarMDR();
+		utilizacaoDosCreditosNaApuracaoCriar.criar();
+		utilizacaoDosCreditosNaApuracaoCriar.afterClass();
+
+	}
+
+	@Test(priority = 102)
+	public void utilizacaoDosCreditosNaApuracaoEditar() {
+
+		utilizacaoDosCreditosNaApuracaoEditar = new UtilizacaoDosCreditosNaApuracaoEditar();
+		utilizacaoDosCreditosNaApuracaoEditar.beforeClass();
+		utilizacaoDosCreditosNaApuracaoEditar.login();
+		utilizacaoDosCreditosNaApuracaoEditar.acessarMDR();
+		utilizacaoDosCreditosNaApuracaoEditar.editar();
+		utilizacaoDosCreditosNaApuracaoEditar.afterClass();
+
+	}
+
+	@Test(priority = 103)
+	public void utilizacaoDosCreditosNaApuracaoVisualizar() {
+
+		utilizacaoDosCreditosNaApuracaoVisualizar = new UtilizacaoDosCreditosNaApuracaoVisualizar();
+		utilizacaoDosCreditosNaApuracaoVisualizar.beforeClass();
+		utilizacaoDosCreditosNaApuracaoVisualizar.login();
+		utilizacaoDosCreditosNaApuracaoVisualizar.acessarMDR();
+		utilizacaoDosCreditosNaApuracaoVisualizar.visualizar();
+		utilizacaoDosCreditosNaApuracaoVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 104)
+	public void utilizacaoDosCreditosNaApuracaoDetalhes() {
+
+		utilizacaoDosCreditosNaApuracaoDetalhes = new UtilizacaoDosCreditosNaApuracaoDetalhes();
+		utilizacaoDosCreditosNaApuracaoDetalhes.beforeClass();
+		utilizacaoDosCreditosNaApuracaoDetalhes.login();
+		utilizacaoDosCreditosNaApuracaoDetalhes.acessarMDR();
+		utilizacaoDosCreditosNaApuracaoDetalhes.Detalhes();
+		utilizacaoDosCreditosNaApuracaoDetalhes.afterClass();
+
+	}
+
+
+	@Test(priority = 105)
+	public void utilizacaoDosCreditosNaApuracaoExcluir() {
+
+		utilizacaoDosCreditosNaApuracaoExcluir = new UtilizacaoDosCreditosNaApuracaoExcluir();
+		utilizacaoDosCreditosNaApuracaoExcluir.beforeClass();
+		utilizacaoDosCreditosNaApuracaoExcluir.login();
+		utilizacaoDosCreditosNaApuracaoExcluir.acessarMDR();
+		utilizacaoDosCreditosNaApuracaoExcluir.excluir();
+		utilizacaoDosCreditosNaApuracaoExcluir.afterClass();
+
+		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração Fin-------------------------");
+	}
+
+		
+
 
 }

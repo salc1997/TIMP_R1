@@ -41,7 +41,7 @@ public class TributosExcluir extends TestBaseKathy{
   }
 
   @Test(priority = 2)
-  public void tributosExcluir() {
+  public void excluir() {
 	  boolean sucesso = tributosExcluirPO.tributosExcluir();
 	  assertTrue(sucesso,Eliminado);
   }

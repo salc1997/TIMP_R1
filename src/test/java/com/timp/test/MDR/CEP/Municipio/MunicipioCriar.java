@@ -2,6 +2,7 @@ package com.timp.test.MDR.CEP.Municipio;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,12 +28,12 @@ public class MunicipioCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		municipioCriarPO = new MunicipioCriarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 	
 	@Test(priority = 0)
 	public void login() {
@@ -49,7 +50,7 @@ public class MunicipioCriar extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void filtro() {
+	  public void criar() {
 		  
 		 boolean sucesso = municipioCriarPO.criar();
 		 System.out.println(sucesso);

@@ -30,12 +30,12 @@ public class CodigosAjustesExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesExcluirPO = new CodigoAjustesExcluirPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -50,7 +50,7 @@ public class CodigosAjustesExcluir extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = codigoAjustesExcluirPO.excluir();
 		

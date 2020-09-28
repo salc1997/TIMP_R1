@@ -41,7 +41,7 @@ public class FatorCreditamentoCriar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-    public void fatorCreditamentoCriar() {		
+    public void criar() {		
 		boolean sucesso = fatorCreditamentoCriarPO.fatorCreditamentoCriar();
 		assertTrue(sucesso, Criar);
     }

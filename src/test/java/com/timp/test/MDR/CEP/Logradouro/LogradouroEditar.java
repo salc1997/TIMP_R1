@@ -39,7 +39,7 @@ public class LogradouroEditar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void logradouroEditar() {
+	public void editar() {
 		boolean sucesso =  logradouroEditarPO.logradouroEditar();
 		assertTrue(sucesso, Editar);
 	}

@@ -2,28 +2,58 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="110398" started-at="2020-09-28T20:25:46Z" finished-at="2020-09-28T20:27:36Z">
+=======
+  <suite name="Default suite" duration-ms="82177" started-at="2020-09-25T19:43:58Z" finished-at="2020-09-25T19:45:21Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="110398" started-at="2020-09-28T20:25:46Z" finished-at="2020-09-28T20:27:36Z">
       <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir@436a4e4b]" name="beforeClass" is-config="true" duration-ms="18326" started-at="2020-09-28T17:25:46Z" finished-at="2020-09-28T17:26:04Z">
+=======
+    <test name="Default test" duration-ms="82177" started-at="2020-09-25T19:43:58Z" finished-at="2020-09-25T19:45:21Z">
+      <class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11511" started-at="2020-09-25T13:43:58Z" finished-at="2020-09-25T13:44:10Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir@436a4e4b]" name="login" duration-ms="11066" started-at="2020-09-28T17:26:04Z" finished-at="2020-09-28T17:26:15Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir@f2f2cc1]" name="login" duration-ms="7009" started-at="2020-09-25T13:44:10Z" finished-at="2020-09-25T13:44:17Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir@436a4e4b]" name="acessarMDR" duration-ms="12561" started-at="2020-09-28T17:26:15Z" finished-at="2020-09-28T17:26:28Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir@f2f2cc1]" name="acessarMDR" duration-ms="9156" started-at="2020-09-25T13:44:17Z" finished-at="2020-09-25T13:44:26Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir@436a4e4b]" name="excluir" duration-ms="68417" started-at="2020-09-28T17:26:28Z" finished-at="2020-09-28T17:27:36Z">
+=======
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir@f2f2cc1]" name="excluir" duration-ms="54386" started-at="2020-09-25T13:44:26Z" finished-at="2020-09-25T13:45:20Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir -->
+=======
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="100" started-at="2020-09-25T13:45:20Z" finished-at="2020-09-25T13:45:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -41,7 +41,7 @@ public class FatorCreditamentoFiltros extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-    public void fatorCreditamentoFiltros() {
+    public void filtros() {
 		boolean sucesso =  fatorCreditamentoFiltrosPO.fatorCrecimentoFiltros();
 		assertTrue(sucesso, Filtros);
     }

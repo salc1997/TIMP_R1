@@ -44,7 +44,7 @@ public class CenariosCorrecaoVisualizar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-    public void cenariosCorrecaoVisualizar() {
+    public void visualizar() {
       ArrayList<Boolean> sucesso = cenariosCorrecaoVisualizarPO.cenariosCorrecaoVisualizar();
   	  
       for (int i = 0; i < sucesso.size(); i++) {

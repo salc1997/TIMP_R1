@@ -29,12 +29,12 @@ public class EstornoCreditoEditar extends TestBaseEliel {
 		estornoCreditoEditarPO = new EstornoCreditoEditarPO();
 
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 	
 	@Test(priority = 0)
 	public void login() {

@@ -41,7 +41,7 @@ public class LogradouroFiltros extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void logradouroFiltros() {
+	public void filtros() {
 		boolean sucesso =  logradouroFiltrosPO.logradouroFiltros();
 		assertTrue(sucesso, Filtros);
 	}

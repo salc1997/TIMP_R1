@@ -28,6 +28,9 @@ public class CadastroCondicaoEditar extends TestBaseEliel {
 		cadastroCondicaoEditarPO = new CadastroCondicaoEditarPO();
 	}
 	
+	 @AfterClass public void afterClass(){ driver.close(); }
+	 
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,11 +46,15 @@ public class CadastroCondicaoEditar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void editar() {
+<<<<<<< HEAD
 		
 		boolean sucesso = cadastroCondicaoEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
 	
+=======
+		cadastroCondicaoEditarPO.editar();
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		//boolean text = cadastroCondicaoCriarPO.criar();
 		//assertTrue(text, Criar);
 		//Teste pra conferir se conseguiu acesssar o sistema

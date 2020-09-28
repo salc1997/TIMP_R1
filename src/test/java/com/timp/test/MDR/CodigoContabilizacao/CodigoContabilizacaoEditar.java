@@ -28,9 +28,9 @@ public class CodigoContabilizacaoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContabilizacaoEditarPO = new CodigoContabilizacaoEditarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,7 +46,7 @@ public class CodigoContabilizacaoEditar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Editar() {
+	public void editar() {
 		//codigoContabilizacaoEditarPO.editar();
 		String sucesso = codigoContabilizacaoEditarPO.editar();
 		

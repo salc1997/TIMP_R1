@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -28,12 +29,12 @@ public class AtividadeVisualizar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		atividadeVisualizarPO = new AtividadeVisualizarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 	
 	@Test(priority = 0)
 	public void login() {
@@ -50,7 +51,7 @@ public class AtividadeVisualizar extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void filtro() {
+	  public void visualizar() {
 		  
 		 ArrayList<Boolean> sucesso = atividadeVisualizarPO.visualizar();
 		 

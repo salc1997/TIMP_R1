@@ -29,12 +29,12 @@ public class AntecipacaoEliminar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoEliminarPO = new AntecipacaoEliminarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+
 	
 	@Test(priority = 0)
 	public void login() {
@@ -50,7 +50,7 @@ public class AntecipacaoEliminar extends TestBaseSteven{
 	}
   
   @Test(priority = 2)
-  public void visualizar() {
+  public void excluir() {
 	  
 	  boolean sucesso = antecipacaoEliminarPO.eliminar();
 	  

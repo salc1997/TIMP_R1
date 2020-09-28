@@ -50,7 +50,7 @@ public class AntecipacaoFiltros extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void visualizar() {
+	  public void filtros() {
 		  
 		  String sucesso = antecipacaoFiltrosPO.filtro();
 		  

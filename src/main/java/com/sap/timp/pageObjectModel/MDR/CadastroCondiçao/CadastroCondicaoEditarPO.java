@@ -70,7 +70,7 @@ public class CadastroCondicaoEditarPO extends TestBaseEliel {
 	
 	
 	
-	public void editar() {
+	public boolean editar() {
 		
 		
 String url = driver.getCurrentUrl();
@@ -121,14 +121,17 @@ String url = driver.getCurrentUrl();
 		//attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
 		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
 		//sleep(15000);
+		sleep(2000);
 		
 		String texto = vigenciade.getAttribute("value");
 		System.out.println(texto);
 		sleep(1000);
-	
+		String enviar = dataanterior();
+		
+		sleep(2000);
 		vigenciade.clear();
 		//inseri um novo campo em vigencia de
-		vigenciade.sendKeys("30/07/2020");
+		vigenciade.sendKeys(enviar);
 		
 		
 		//grava
@@ -152,8 +155,8 @@ String url = driver.getCurrentUrl();
 		//verifica se o valor inserido consta no relatório
 		String texto1 = vigenciade.getAttribute("value");
 		System.out.println(texto1);
-		boolean text= texto1.contains(texto1);
-		System.out.println(text);
+		boolean sucesso= texto1.contains(enviar);
+		System.out.println(sucesso);
 		sleep(1000);
 		
 		//volta com o campo modificado
@@ -166,11 +169,13 @@ String url = driver.getCurrentUrl();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(butaosim);
 		sleep(2000);
-		butaosim.sendKeys(Keys.ENTER);
+		butaosim.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
+		
+		return sucesso;
 	}
 	
 

@@ -42,8 +42,12 @@ public class CadastroCondicaoEditar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
-		cadastroCondicaoEditarPO.editar();
+	public void editar() {
+		
+		boolean sucesso = cadastroCondicaoEditarPO.editar();
+		
+		assertTrue(sucesso, Editar);
+	
 		//boolean text = cadastroCondicaoCriarPO.criar();
 		//assertTrue(text, Criar);
 		//Teste pra conferir se conseguiu acesssar o sistema

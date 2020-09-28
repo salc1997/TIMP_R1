@@ -199,7 +199,7 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO extends TestBaseEl
 		System.out.println(filialvisualizar);
 		System.out.println(tributovisualizar);
 		System.out.println(codigovisualizar);
-		System.out.println(utilizacaovisualizar);;
+		System.out.println(utilizacaovisualizar);
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(empresavisualizar.equals(empresadetalhes));

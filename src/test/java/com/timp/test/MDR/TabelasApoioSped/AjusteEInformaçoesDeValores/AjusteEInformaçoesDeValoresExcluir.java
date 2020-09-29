@@ -13,12 +13,21 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
+<<<<<<< HEAD
 public class AjusteEInformaçoesDeValoresExcluir extends TestBaseEliel {
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AjusteEInformaçoesDeValoresExcluirPO ajusteEInformaçoesDeValoresExcluirPO;
+=======
+public class AjusteEInformaçoesDeValoresExcluir {
 
+  @BeforeClass
+  public void beforeClass() {
+  }
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
+<<<<<<< HEAD
 	@BeforeClass
 	public void beforeClass() {
 
@@ -51,5 +60,25 @@ public class AjusteEInformaçoesDeValoresExcluir extends TestBaseEliel {
 		assertTrue(sucesso, Eliminado);
 		
 	}	
+=======
+  @AfterClass
+  public void afterClass() {
+  }
+  
+  @Test(priority = 0)
+  public void login() {
+  }
+  
+  @Test(priority = 1)
+  public void acessarMDR() {
+  }
+  
+  
+  
+  @Test(priority = 2)
+  public void excluir() {
+  }
+  
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
 }

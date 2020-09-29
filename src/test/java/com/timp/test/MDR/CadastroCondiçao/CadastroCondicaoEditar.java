@@ -53,7 +53,11 @@ public class CadastroCondicaoEditar extends TestBaseEliel {
 		assertTrue(sucesso, Editar);
 	
 
+<<<<<<< HEAD
 		//cadastroCondicaoEditarPO.editar();
+=======
+		cadastroCondicaoEditarPO.editar();
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
 		//boolean text = cadastroCondicaoCriarPO.criar();
 		//assertTrue(text, Criar);

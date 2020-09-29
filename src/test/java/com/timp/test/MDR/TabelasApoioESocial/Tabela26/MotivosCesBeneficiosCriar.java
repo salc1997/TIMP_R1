@@ -32,9 +32,9 @@ public class MotivosCesBeneficiosCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		motivosCesBeneficiosCriarPO = new MotivosCesBeneficiosCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

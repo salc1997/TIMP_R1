@@ -27,12 +27,12 @@ public class AjusteEInformaçoesDeValoresEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		ajusteEInformaçoesDeValoresEditarPO= new AjusteEInformaçoesDeValoresEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

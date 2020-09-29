@@ -28,9 +28,10 @@ public class SequenciaExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaExcluirPO = new SequenciaExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+
 
 	@Test(priority = 0)
 	public void login() {

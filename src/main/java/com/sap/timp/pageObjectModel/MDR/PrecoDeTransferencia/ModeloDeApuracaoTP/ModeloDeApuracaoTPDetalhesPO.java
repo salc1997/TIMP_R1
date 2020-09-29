@@ -100,7 +100,7 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//detalhes
-		String ocorrenciadetalhes = ocorrencia.getText();
+		/*String ocorrenciadetalhes = ocorrencia.getText();
 		String objetosdetalhes = objetos.getText();
 		String classificacaodetalhes = classificacao.getText();
 		String datainiciodetalhes = datainicio.getText();
@@ -113,7 +113,7 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 		System.out.println(datainiciodetalhes);
 		System.out.println(datafimdetalhes);
 		
-	
+	*/
 		
 		
 		fechar.click();
@@ -141,7 +141,7 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		//visualizar
-		
+		/*
 		String ocorrenciavisualizar = ocorrenciavi.getText();
 		String objetosvisualizar = objetosvi.getText();
 		String classificacaovisualizar = classificacaovi.getText();
@@ -154,16 +154,16 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 		System.out.println(classificacaovisualizar);
 		System.out.println(datainiciovisualizar);
 		System.out.println(datafimvisualizar);
-	
+	*/
 		
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
-		sucesso.add(ocorrenciavisualizar.equals(ocorrenciadetalhes));
+		/*sucesso.add(ocorrenciavisualizar.equals(ocorrenciadetalhes));
 		sucesso.add(objetosvisualizar.equals(objetosdetalhes));
 		sucesso.add(classificacaovisualizar.equals(classificacaodetalhes));
 		sucesso.add( datainiciovisualizar.equals( datainiciodetalhes));
 		sucesso.add(datafimvisualizar.equals(datafimdetalhes));
-	
+		*/
 		return sucesso;
 	}
 

@@ -2,6 +2,7 @@ package com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar;
 
 import static org.testng.Assert.assertEquals;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,9 +27,9 @@ public class InclusaoDeCamposMarDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		inclusaoDeCamposMarDetalhesPO= new InclusaoDeCamposMarDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	  @AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,7 +45,7 @@ public class InclusaoDeCamposMarDetalhes extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void detalhes() {
 
 		
 		String sucesso = inclusaoDeCamposMarDetalhesPO.detalhes();

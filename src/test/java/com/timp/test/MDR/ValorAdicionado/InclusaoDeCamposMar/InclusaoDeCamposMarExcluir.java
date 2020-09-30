@@ -28,6 +28,8 @@ public class InclusaoDeCamposMarExcluir extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  
+		  driver.close();
 	  }
 	  
 	  @Test(priority = 0)

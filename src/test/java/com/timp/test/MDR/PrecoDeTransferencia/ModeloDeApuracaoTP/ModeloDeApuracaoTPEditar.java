@@ -1,23 +1,21 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12;
+package com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12EditarPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditarPO;
 
-public class TabelaDeEstoqueParaRegistro12Editar extends TestBaseEliel {
-
-	
+public class ModeloDeApuracaoTPEditar extends TestBaseEliel {
+ 
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaDeEstoqueParaRegistro12EditarPO tabelaDeEstoqueParaRegistro12EditarPO;
+	ModeloDeApuracaoTPEditarPO modeloDeApuracaoTPEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,14 +23,14 @@ public class TabelaDeEstoqueParaRegistro12Editar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaDeEstoqueParaRegistro12EditarPO = new TabelaDeEstoqueParaRegistro12EditarPO();
+		modeloDeApuracaoTPEditarPO = new ModeloDeApuracaoTPEditarPO();
 	}
-	
+	/*
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+	*/
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -50,12 +48,11 @@ public class TabelaDeEstoqueParaRegistro12Editar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = tabelaDeEstoqueParaRegistro12EditarPO.editar();
+		boolean sucesso = modeloDeApuracaoTPEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
 
 	}		
-	
 	
 	
 	

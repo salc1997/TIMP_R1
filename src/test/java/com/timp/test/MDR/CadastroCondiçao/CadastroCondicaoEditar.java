@@ -53,7 +53,11 @@ public class CadastroCondicaoEditar extends TestBaseEliel {
 		assertTrue(sucesso, Editar);
 	
 
-		cadastroCondicaoEditarPO.editar();
+
+		//cadastroCondicaoEditarPO.editar();
+
+		//cadastroCondicaoEditarPO.editar();
+
 
 		//boolean text = cadastroCondicaoCriarPO.criar();
 		//assertTrue(text, Criar);

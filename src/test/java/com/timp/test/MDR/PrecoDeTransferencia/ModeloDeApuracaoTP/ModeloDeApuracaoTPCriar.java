@@ -1,21 +1,20 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11;
+package com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11CriarPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPCriarPO;
 
-public class TabelaDeDetalhamentosParaRegistro11Criar extends TestBaseEliel {
-
+public class ModeloDeApuracaoTPCriar extends TestBaseEliel{
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaDeDetalhamentosParaRegistro11CriarPO tabelaDeDetalhamentosParaRegistro11CriarPO;
+	ModeloDeApuracaoTPCriarPO modeloDeApuracaoTPCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,11 +22,11 @@ public class TabelaDeDetalhamentosParaRegistro11Criar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaDeDetalhamentosParaRegistro11CriarPO = new TabelaDeDetalhamentosParaRegistro11CriarPO();
+		modeloDeApuracaoTPCriarPO = new ModeloDeApuracaoTPCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+	/*
+	 * @AfterClass public void afterClass(){ driver.close(); }
+	 */
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,10 +45,12 @@ public class TabelaDeDetalhamentosParaRegistro11Criar extends TestBaseEliel {
 	public void criar() {
 
 		
-		boolean sucesso = tabelaDeDetalhamentosParaRegistro11CriarPO.criar();
+		boolean sucesso = modeloDeApuracaoTPCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 		
 	}			
+	
+	
 	
 	
 	

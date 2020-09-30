@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -24,9 +25,9 @@ public class TabelaDeEstoqueParaRegistro12Criar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeEstoqueParaRegistro12CriarPO = new TabelaDeEstoqueParaRegistro12CriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	  @AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

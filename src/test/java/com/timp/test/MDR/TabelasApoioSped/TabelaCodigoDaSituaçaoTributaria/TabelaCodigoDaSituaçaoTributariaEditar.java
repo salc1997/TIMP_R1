@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,12 +26,12 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoDaSituaçaoTributariaEditarPO = new TabelaCodigoDaSituaçaoTributariaEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

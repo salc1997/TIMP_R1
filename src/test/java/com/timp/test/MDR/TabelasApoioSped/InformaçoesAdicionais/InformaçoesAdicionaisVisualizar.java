@@ -29,9 +29,9 @@ public class InformaçoesAdicionaisVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 	informaçoesAdicionaisVisualizarPO = new InformaçoesAdicionaisVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,7 +47,7 @@ public class InformaçoesAdicionaisVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = informaçoesAdicionaisVisualizarPO.visualizar();
 		

@@ -29,9 +29,9 @@ public class CodigoDeOutrasSaidasVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeOutrasSaidasVisualizarPO = new CodigoDeOutrasSaidasVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,7 +47,7 @@ public class CodigoDeOutrasSaidasVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = codigoDeOutrasSaidasVisualizarPO.visualizar();
 		

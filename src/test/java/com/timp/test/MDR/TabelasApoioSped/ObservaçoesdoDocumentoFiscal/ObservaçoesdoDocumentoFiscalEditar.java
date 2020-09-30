@@ -25,12 +25,12 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		observaçoesdoDocumentoFiscalEditarPO= new ObservaçoesdoDocumentoFiscalEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,7 +46,7 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 	
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void editar() {
 
 		observaçoesdoDocumentoFiscalEditarPO.editar();
 		//boolean sucesso = antecipacaoEditarPO.editar();

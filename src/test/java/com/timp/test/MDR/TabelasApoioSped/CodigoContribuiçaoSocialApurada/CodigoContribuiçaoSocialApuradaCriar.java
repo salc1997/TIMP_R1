@@ -8,6 +8,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuicaoSocialApuradaCriarPO;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -27,9 +28,9 @@ public class CodigoContribuiçaoSocialApuradaCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContribuicaoSocialApuradaCriarPO = new CodigoContribuicaoSocialApuradaCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {

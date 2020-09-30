@@ -31,9 +31,9 @@ public class CodigoTipoCreditoDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoTipoCreditoDetalhesPO = new CodigoTipoCreditoDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,7 +49,7 @@ public class CodigoTipoCreditoDetalhes extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void detalhes() {
 
 		
 		ArrayList<Boolean>  sucesso = codigoTipoCreditoDetalhesPO.detalhes();

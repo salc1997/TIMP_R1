@@ -27,9 +27,9 @@ public class CodigoTipoCreditoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoTipoCreditoEditarPO = new CodigoTipoCreditoEditarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,7 +45,7 @@ public class CodigoTipoCreditoEditar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		//codigoTipoCreditoEditarPO.editar();
 

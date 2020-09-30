@@ -11,6 +11,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocia
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaEditarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaExcluirPO;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -32,9 +33,9 @@ public class CodigoContribuiçaoSocialApuradaDetalhes extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		CodigoContribuiçaoSocialApuradaDetalhesPO = new CodigoContribuiçaoSocialApuradaDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

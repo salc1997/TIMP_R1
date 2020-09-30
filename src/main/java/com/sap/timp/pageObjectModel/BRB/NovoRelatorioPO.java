@@ -228,64 +228,67 @@ public class NovoRelatorioPO extends TestBaseSteven{
 	
 		buscarCampo.sendKeys("Empresa");
 		Actions actions = new Actions(driver);
+		actions.moveToElement(empresa);
 		actions.doubleClick(empresa).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("UF da Filial");
+		actions.moveToElement(ufFilial);
 		actions.doubleClick(ufFilial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Filial");
+		actions.moveToElement(filial);
 		actions.doubleClick(filial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Data lançamento doc. fiscal");
-	
+		actions.moveToElement(docFiscal);
 		actions.doubleClick(docFiscal).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Docnum");
-		sleep(2000);
+		actions.moveToElement(docnum);
 		actions.doubleClick(docnum).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Categoria nota fiscal");
-		
+		actions.moveToElement(categoria);
 		actions.doubleClick(categoria).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor");
-		
+		actions.moveToElement(valor);
 		actions.doubleClick(valor).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Cód. material");
-		
+		actions.moveToElement(codMaterial);
 		actions.doubleClick(codMaterial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("CFOP");
-		
+		actions.moveToElement(cfop);
 		actions.doubleClick(cfop).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("ICMS");
-		
+		actions.moveToElement(cts);
 		actions.doubleClick(cts).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("BC ICMS");
-		
+		actions.moveToElement(bc);
 		actions.doubleClick(bc).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Alíquota ICMS");
-		
+		actions.moveToElement(aliquota);
 		actions.doubleClick(aliquota).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor ICMS");
-		
+		actions.moveToElement(valorICMS);
 		actions.doubleClick(valorICMS).perform();
 		
 		sleep(2000);

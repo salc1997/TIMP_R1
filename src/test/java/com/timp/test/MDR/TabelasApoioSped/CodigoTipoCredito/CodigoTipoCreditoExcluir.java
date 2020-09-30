@@ -26,9 +26,9 @@ public class CodigoTipoCreditoExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoTipoCreditoExcluirPO = new CodigoTipoCreditoExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,7 +44,7 @@ public class CodigoTipoCreditoExcluir extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		
 		boolean sucesso= codigoTipoCreditoExcluirPO.excluir();

@@ -75,7 +75,7 @@ public class AutomacoesBrb extends TestBaseSteven{
     @Test(priority = 2)
 	public void paginacion() {
     	
-		System.out.println("-------------------Psginação-------------------------");
+		System.out.println("-------------------Paginação-------------------------");
     	
 		paginacion = new paginacion();
 		

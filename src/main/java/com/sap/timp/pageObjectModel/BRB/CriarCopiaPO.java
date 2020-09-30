@@ -94,9 +94,13 @@ public class CriarCopiaPO extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
@@ -172,9 +176,13 @@ public class CriarCopiaPO extends TestBaseSteven{
 		pesquisar.sendKeys("Cópia de "+id);
 		pesquisar.sendKeys(Keys.ENTER);
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
-		sleep(menuT);
+		//waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
+		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
+		//sleep(menuT);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		check.click();
 		
 		eliminar.click();
@@ -193,14 +201,19 @@ public class CriarCopiaPO extends TestBaseSteven{
 	
 		lixeira.click();
 		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
+		//waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
+		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
 
 	
 		lixeira.click();
-		
-		sleep(7000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//sleep(7000);
 		
 		
 	
@@ -208,10 +221,12 @@ public class CriarCopiaPO extends TestBaseSteven{
 		pesquisar.sendKeys(Keys.ENTER);
 		ferramenta.click();
 		
-		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
-		sleep(menuT);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
+		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
+		//sleep(menuT);
 		
 		check.click();
 		
@@ -220,8 +235,10 @@ public class CriarCopiaPO extends TestBaseSteven{
 		sleep(3000);
 		
 		sim.click();
-		sleep(menuT);
-
+		//sleep(menuT);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 	}
 	
 

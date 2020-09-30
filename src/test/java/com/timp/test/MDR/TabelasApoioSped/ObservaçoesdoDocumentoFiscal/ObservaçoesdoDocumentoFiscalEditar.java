@@ -33,7 +33,11 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,7 +53,7 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 	
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void editar() {
 
 		//observaçoesdoDocumentoFiscalEditarPO.editar();
 		boolean sucesso = observaçoesdoDocumentoFiscalEditarPO.editar();

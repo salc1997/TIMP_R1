@@ -30,12 +30,12 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		informaçoesAdicionaisEditarPO= new InformaçoesAdicionaisEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -51,7 +51,7 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 	
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void editar() {
 
 		//informaçoesAdicionaisEditarPO.editar();
 		boolean sucesso =informaçoesAdicionaisEditarPO.editar();

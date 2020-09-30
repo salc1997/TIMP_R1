@@ -13,6 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocia
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalVisualizarPO;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -35,9 +36,9 @@ public class ObservaçoesdoDocumentoFiscalVisualizar extends TestBaseSteven{
 		observaçoesdoDocumentoFiscalVisualizarPO = new ObservaçoesdoDocumentoFiscalVisualizarPO();
 		
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+
 
 	@Test(priority = 0)
 	public void login() {
@@ -53,7 +54,7 @@ public class ObservaçoesdoDocumentoFiscalVisualizar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void detalhes() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = observaçoesdoDocumentoFiscalVisualizarPO.visualizar();
 		

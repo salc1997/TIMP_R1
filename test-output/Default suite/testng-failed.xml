@@ -3,12 +3,27 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar">
+=======
+      <class name="com.timp.test.BRB.Filtros">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
+=======
+          <include name="filtrosEditor"/>
+          <include name="asignarValores"/>
+          <include name="filtrosBiblioteca"/>
+          <include name="afterClass"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar -->
+=======
+      </class> <!-- com.timp.test.BRB.Filtros -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

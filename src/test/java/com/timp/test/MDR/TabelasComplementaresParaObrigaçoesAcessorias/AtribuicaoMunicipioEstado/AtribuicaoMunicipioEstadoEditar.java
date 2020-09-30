@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.Atribuic
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -29,9 +30,9 @@ public class AtribuicaoMunicipioEstadoEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		atribuicaoMunicipioEstadoEditarPO = new AtribuicaoMunicipioEstadoEditarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,7 +48,7 @@ public class AtribuicaoMunicipioEstadoEditar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		
 		boolean sucesso = atribuicaoMunicipioEstadoEditarPO.editar();

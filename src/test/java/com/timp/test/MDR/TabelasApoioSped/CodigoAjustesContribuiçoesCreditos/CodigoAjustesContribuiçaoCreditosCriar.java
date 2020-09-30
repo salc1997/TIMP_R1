@@ -29,9 +29,9 @@ public class CodigoAjustesContribuiçaoCreditosCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçoesCreditosCriarPO = new CodigoAjustesContribuiçoesCreditosCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+
 
 	@Test(priority = 0)
 	public void login() {

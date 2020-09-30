@@ -1600,7 +1600,7 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 		}
 
 		@Test(priority = 143)
-		public void sequenciaDetalhes() {
+		public void sequenciaFiltros() {
 
 			sequenciaFiltros = new SequenciaFiltros();
 			sequenciaFiltros.beforeClass();
@@ -1676,7 +1676,7 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 		// TabelasApoioSped > Ajustes e Informação de Valores Provenientes de Documento Fiscal
 		
 		
-		@Test(priority = 20)
+		@Test(priority = 151)
 		public void ajusteEInformaçoesDeValoresCriar() {
 
 			System.out.println("-------------------TabelasApoioSped > Ajustes e Informação de Valores Provenientes de Documento Fiscal-------------------------");
@@ -1690,7 +1690,7 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 
 		}
 
-		@Test(priority = 21)
+		@Test(priority = 152)
 		public void ajusteEInformaçoesDeValoresEditar() {
 
 			ajusteEInformaçoesDeValoresEditar = new AjusteEInformaçoesDeValoresEditar();
@@ -1702,7 +1702,7 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 
 		}
 
-		@Test(priority = 22)
+		@Test(priority = 153)
 		public void ajusteEInformaçoesDeValoresVisualizar() {
 
 			ajusteEInformaçoesDeValoresVisualizar = new AjusteEInformaçoesDeValoresVisualizar();
@@ -1714,7 +1714,7 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 
 		}
 
-		@Test(priority = 23)
+		@Test(priority = 154)
 		public void ajusteEInformaçoesDeValoresDetalhes() {
 
 			ajusteEInformaçoesDeValoresDetalhes = new AjusteEInformaçoesDeValoresDetalhes();
@@ -1727,7 +1727,7 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 		}
 
 
-		@Test(priority = 24)
+		@Test(priority = 155)
 		public void ajusteEInformaçoesDeValoresExcluir() {
 
 			ajusteEInformaçoesDeValoresExcluir = new AjusteEInformaçoesDeValoresExcluir();

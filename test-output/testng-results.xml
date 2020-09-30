@@ -1,57 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="3" passed="2">
+=======
+<testng-results skipped="0" failed="1" total="4" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="143379" started-at="2020-09-30T20:48:30Z" finished-at="2020-09-30T20:50:54Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="273506" started-at="2020-09-30T19:54:49Z" finished-at="2020-09-30T19:59:23Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="197844" started-at="2020-09-30T20:20:40Z" finished-at="2020-09-30T20:23:58Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="15080147" started-at="2020-09-30T13:55:49Z" finished-at="2020-09-30T18:07:09Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="171923" started-at="2020-09-30T18:12:07Z" finished-at="2020-09-30T18:14:59Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="175749" started-at="2020-09-30T15:25:45Z" finished-at="2020-09-30T15:28:41Z">
+=======
+  <suite name="Default suite" duration-ms="81838" started-at="2020-09-30T17:12:47Z" finished-at="2020-09-30T17:14:09Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="143379" started-at="2020-09-30T20:48:30Z" finished-at="2020-09-30T20:50:54Z">
       <class name="com.timp.test.BRB.ComentarioLibre">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ComentarioLibre@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="14294" started-at="2020-09-30T14:48:30Z" finished-at="2020-09-30T14:48:45Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="273506" started-at="2020-09-30T19:54:49Z" finished-at="2020-09-30T19:59:23Z">
+      <class name="com.timp.test.BRB.NovoRelatorio">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="24972" started-at="2020-09-30T16:54:49Z" finished-at="2020-09-30T16:55:14Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="197844" started-at="2020-09-30T20:20:40Z" finished-at="2020-09-30T20:23:58Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="15080147" started-at="2020-09-30T13:55:49Z" finished-at="2020-09-30T18:07:09Z">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="beforeClass" is-config="true" duration-ms="15714" started-at="2020-09-30T10:55:49Z" finished-at="2020-09-30T10:56:04Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="171923" started-at="2020-09-30T18:12:07Z" finished-at="2020-09-30T18:14:59Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRB.Eliminar">
+<<<<<<< HEAD
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12874" started-at="2020-09-30T14:20:40Z" finished-at="2020-09-30T14:20:53Z">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12293" started-at="2020-09-30T12:12:07Z" finished-at="2020-09-30T12:12:19Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="175749" started-at="2020-09-30T15:25:45Z" finished-at="2020-09-30T15:28:41Z">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="beforeClass" is-config="true" duration-ms="20119" started-at="2020-09-30T12:25:45Z" finished-at="2020-09-30T12:26:05Z">
+=======
+    <test name="Default test" duration-ms="81838" started-at="2020-09-30T17:12:47Z" finished-at="2020-09-30T17:14:09Z">
+      <class name="com.timp.test.BRB.RenomearColuna">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11414" started-at="2020-09-30T11:12:47Z" finished-at="2020-09-30T11:12:58Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.ComentarioLibre@f2f2cc1]" name="login" duration-ms="10586" started-at="2020-09-30T14:48:45Z" finished-at="2020-09-30T14:48:55Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="login" duration-ms="13090" started-at="2020-09-30T16:55:14Z" finished-at="2020-09-30T16:55:27Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="login" duration-ms="15776" started-at="2020-09-30T14:20:53Z" finished-at="2020-09-30T14:21:09Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="login" duration-ms="13232" started-at="2020-09-30T10:56:04Z" finished-at="2020-09-30T10:56:18Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="login" duration-ms="7388" started-at="2020-09-30T12:12:19Z" finished-at="2020-09-30T12:12:27Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="login" duration-ms="17759" started-at="2020-09-30T12:26:05Z" finished-at="2020-09-30T12:26:23Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="login" duration-ms="7278" started-at="2020-09-30T11:12:58Z" finished-at="2020-09-30T11:13:05Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.ComentarioLibre@f2f2cc1]" name="brbEntrar" duration-ms="21394" started-at="2020-09-30T14:48:55Z" finished-at="2020-09-30T14:49:17Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="brbEntrar" duration-ms="26591" started-at="2020-09-30T16:55:27Z" finished-at="2020-09-30T16:55:54Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="brbEntrar" duration-ms="37379" started-at="2020-09-30T14:21:09Z" finished-at="2020-09-30T14:21:46Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="acessarMDR" duration-ms="16607" started-at="2020-09-30T10:56:18Z" finished-at="2020-09-30T10:56:34Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="brbEntrar" duration-ms="19519" started-at="2020-09-30T12:12:27Z" finished-at="2020-09-30T12:12:46Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="acessarMDR" duration-ms="44204" started-at="2020-09-30T12:26:23Z" finished-at="2020-09-30T12:27:07Z">
+=======
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="brbEntrar" duration-ms="18852" started-at="2020-09-30T11:13:05Z" finished-at="2020-09-30T11:13:24Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- brbEntrar -->
         <test-method status="FAIL" signature="comentarioLibre()[pri:0, instance:com.timp.test.BRB.ComentarioLibre@f2f2cc1]" name="comentarioLibre" duration-ms="92772" started-at="2020-09-30T14:49:17Z" finished-at="2020-09-30T14:50:50Z">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- brbEntrar -->
+        <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="novoRelatorio" duration-ms="60378" started-at="2020-09-30T16:55:54Z" finished-at="2020-09-30T16:56:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- novoRelatorio -->
+        <test-method status="FAIL" signature="colunas()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="colunas" duration-ms="143892" started-at="2020-09-30T16:56:54Z" finished-at="2020-09-30T16:59:18Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+=======
+        </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="excluir()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="excluir" duration-ms="15034358" started-at="2020-09-30T10:56:34Z" finished-at="2020-09-30T15:07:09Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
             <message>
+<<<<<<< HEAD
               <![CDATA[element not interactable
   (Session info: chrome=83.0.4103.106)
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="draggable-129"]"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LITOSOLER', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 1e3cebb057d7e7b069f3992add9d7e39]]>
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 365a17391cc2aa7d162db305c728a839
+*** Element info: {Using=xpath, value=//*[@id="draggable-129"]}]]>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=83.0.4103.106)
+=======
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="draggable-129"]"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LITOSOLER', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 1e3cebb057d7e7b069f3992add9d7e39
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 365a17391cc2aa7d162db305c728a839
+*** Element info: {Using=xpath, value=//*[@id="draggable-129"]}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<<<<<<< HEAD
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at com.sap.timp.pageObjectModel.BRB.ComentarioLibrePO.aplicarComentarioLibre(ComentarioLibrePO.java:178)
 	at com.timp.test.BRB.ComentarioLibre.comentarioLibre(ComentarioLibre.java:60)
+=======
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.sap.timp.pageObjectModel.BRB.NovoRelatorioPO.colunas(NovoRelatorioPO.java:311)
+	at com.timp.test.BRB.NovoRelatorio.colunas(NovoRelatorio.java:87)
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,15 +250,77 @@ Session ID: 1e3cebb057d7e7b069f3992add9d7e39
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="criar" duration-ms="93588" started-at="2020-09-30T12:27:07Z" finished-at="2020-09-30T12:28:41Z">
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- brbEntrar -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminar" duration-ms="61583" started-at="2020-09-30T14:21:46Z" finished-at="2020-09-30T14:22:48Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminar" duration-ms="62667" started-at="2020-09-30T12:12:46Z" finished-at="2020-09-30T12:13:49Z">
+=======
+        <test-method status="PASS" signature="renomearColuna()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="renomearColuna" duration-ms="44225" started-at="2020-09-30T11:13:24Z" finished-at="2020-09-30T11:14:08Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- comentarioLibre -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ComentarioLibre@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4316" started-at="2020-09-30T14:50:50Z" finished-at="2020-09-30T14:50:54Z">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- colunas -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4523" started-at="2020-09-30T16:59:18Z" finished-at="2020-09-30T16:59:23Z">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir -->
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminarLixeira" duration-ms="65899" started-at="2020-09-30T14:22:48Z" finished-at="2020-09-30T14:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4318" started-at="2020-09-30T14:23:54Z" finished-at="2020-09-30T14:23:58Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+=======
+      </class> <!-- com.timp.test.BRB.Eliminar -->
+<<<<<<< HEAD
+=======
+=======
+      </class> <!-- com.timp.test.BRB.RenomearColuna -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

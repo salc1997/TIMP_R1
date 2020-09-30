@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.BRB.Filtros">
+      <class name="com.timp.test.BRB.NovoRelatorio">
         <methods>
-          <include name="beforeClass"/>
-          <include name="filtrosEditor"/>
-          <include name="asignarValores"/>
-          <include name="filtrosBiblioteca"/>
+          <include name="colunas"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.Filtros -->
+      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,6 +9,9 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalEditarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
@@ -30,7 +33,11 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
+<<<<<<< HEAD
+	
+=======
 
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,10 +55,10 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		observaçoesdoDocumentoFiscalEditarPO.editar();
-		//boolean sucesso = antecipacaoEditarPO.editar();
+		//observaçoesdoDocumentoFiscalEditarPO.editar();
+		boolean sucesso = observaçoesdoDocumentoFiscalEditarPO.editar();
 		
-		//assertTrue(sucesso, Editar);
+		assertTrue(sucesso, Editar);
 
 	}
 	

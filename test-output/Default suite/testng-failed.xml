@@ -3,13 +3,43 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.NovoRelatorio">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar">
+=======
+      <class name="com.timp.test.BRB.Filtros">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="colunas"/>
-          <include name="afterClass"/>
+=======
           <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="criar"/>
+=======
+          <include name="filtrosEditor"/>
+          <include name="asignarValores"/>
+          <include name="filtrosBiblioteca"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="beforeClass"/>
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar -->
+=======
+      </class> <!-- com.timp.test.BRB.Filtros -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

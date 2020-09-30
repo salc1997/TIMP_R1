@@ -11,6 +11,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.Codig
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
@@ -49,9 +50,9 @@ public class CodigoTipoCreditoEditar extends TestBaseEliel {
 
 		//codigoTipoCreditoEditarPO.editar();
 
-		String sucesso = codigoTipoCreditoEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		boolean sucesso = codigoTipoCreditoEditarPO.editar();
+		assertTrue(sucesso, Editar);
+		// assertEquals(sucesso, "edit", visualizaçar);
 		
 	}
 }

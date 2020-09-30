@@ -54,9 +54,9 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 	public void editar() {
 
 		//informaçoesAdicionaisEditarPO.editar();
-		String sucesso =informaçoesAdicionaisEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
+		boolean sucesso =informaçoesAdicionaisEditarPO.editar();
+		assertTrue(sucesso, Editar);
+		// assertEquals(sucesso, "edit", visualizaçar);
 	}
 	
 	

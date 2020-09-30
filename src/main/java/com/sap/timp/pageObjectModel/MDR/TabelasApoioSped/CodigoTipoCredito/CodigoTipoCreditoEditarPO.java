@@ -73,7 +73,7 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -105,8 +105,14 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		String valor = dataVigencia.getAttribute("value");
+		
+		String enviar = dataanterior();
+		
 		dataVigencia.clear();
-		dataVigencia.sendKeys("06/08/2020");
+		sleep(2000);
+		
+		dataVigencia.sendKeys(enviar);
 		
 		sleep(2000);
 		gravar.click();
@@ -115,11 +121,27 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		biblioteca.click();
+		driver.navigate().refresh();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		waitExpectElement(dataVigencia);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String novoTexto=dataVigencia.getAttribute("value");
+		
+		System.out.println(valor);
+		System.out.println(novoTexto);
+		boolean sucesso = novoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		/*biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -142,7 +164,7 @@ public class CodigoTipoCreditoEditarPO extends TestBaseEliel{
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		System.out.println(sucesso);	
-		
+		*/
 		return sucesso;
 		
 		

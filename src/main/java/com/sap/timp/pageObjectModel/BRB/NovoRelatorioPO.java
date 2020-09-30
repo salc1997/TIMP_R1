@@ -229,79 +229,79 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		buscarCampo.sendKeys("Empresa");
 		Actions actions = new Actions(driver);
 		actions.moveToElement(empresa);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(empresa).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("UF da Filial");
 		actions.moveToElement(ufFilial);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(ufFilial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Filial");
 		actions.moveToElement(filial);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(filial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Data lançamento doc. fiscal");
 		actions.moveToElement(docFiscal);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(docFiscal).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Docnum");
 		actions.moveToElement(docnum);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(docnum).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Categoria nota fiscal");
 		actions.moveToElement(categoria);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(categoria).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor");
 		actions.moveToElement(valor);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(valor).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Cód. material");
 		actions.moveToElement(codMaterial);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(codMaterial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("CFOP");
 		actions.moveToElement(cfop);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(cfop).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("ICMS");
 		actions.moveToElement(cts);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(cts).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("BC ICMS");
 		actions.moveToElement(bc);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(bc).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Alíquota ICMS");
 		actions.moveToElement(aliquota);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(aliquota).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor ICMS");
 		actions.moveToElement(valorICMS);
-		sleep(1000);
+		sleep(3000);
 		actions.doubleClick(valorICMS).perform();
 		
 		sleep(2000);

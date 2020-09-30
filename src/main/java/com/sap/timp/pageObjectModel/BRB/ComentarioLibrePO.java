@@ -67,6 +67,8 @@ public class ComentarioLibrePO extends TestBaseSteven{
 	public WebElement data1;
 	
 	
+	
+	
 	public ComentarioLibrePO() {
 
 		PageFactory.initElements(driver, this);
@@ -128,6 +130,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		String usuarioLog = usuarioLogueado.getText();
@@ -139,7 +142,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		
 		
 		
-		WebElement comentarioTexto = driver.findElement(By.xpath("//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
+		WebElement comentarioTexto = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
 		actions.doubleClick(comentarioTexto).perform();
 		sleep(2000);
 		comentarioTexto.sendKeys("Teste 1");
@@ -153,7 +156,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		
 		actionsMoveToElementXpath("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
 		sleep(1000);
-		WebElement comentarioTexto2 = driver.findElement(By.xpath("//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
+		WebElement comentarioTexto2 = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
 		
 		sleep(1000);
 		actions.doubleClick(comentarioTexto2).perform();

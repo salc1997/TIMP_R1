@@ -3,13 +3,29 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.ComentarioLibre">
+=======
       <class name="com.timp.test.BRB.NovoRelatorio">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
-          <include name="colunas"/>
-          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="comentarioLibre"/>
           <include name="beforeClass"/>
+=======
+          <include name="colunas"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+          <include name="beforeClass"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+=======
       </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

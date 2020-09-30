@@ -2,28 +2,32 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="131143" started-at="2020-09-29T13:16:04Z" finished-at="2020-09-29T13:18:15Z">
+  <suite name="Default suite" duration-ms="81838" started-at="2020-09-30T17:12:47Z" finished-at="2020-09-30T17:14:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="131143" started-at="2020-09-29T13:16:04Z" finished-at="2020-09-29T13:18:15Z">
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="beforeClass" is-config="true" duration-ms="15887" started-at="2020-09-29T10:16:04Z" finished-at="2020-09-29T10:16:20Z">
+    <test name="Default test" duration-ms="81838" started-at="2020-09-30T17:12:47Z" finished-at="2020-09-30T17:14:09Z">
+      <class name="com.timp.test.BRB.RenomearColuna">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11414" started-at="2020-09-30T11:12:47Z" finished-at="2020-09-30T11:12:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="login" duration-ms="10604" started-at="2020-09-29T10:16:20Z" finished-at="2020-09-29T10:16:31Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="login" duration-ms="7278" started-at="2020-09-30T11:12:58Z" finished-at="2020-09-30T11:13:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="acessarMDR" duration-ms="12010" started-at="2020-09-29T10:16:31Z" finished-at="2020-09-29T10:16:43Z">
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="brbEntrar" duration-ms="18852" started-at="2020-09-30T11:13:05Z" finished-at="2020-09-30T11:13:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="editar" duration-ms="92612" started-at="2020-09-29T10:16:43Z" finished-at="2020-09-29T10:18:15Z">
+        </test-method> <!-- brbEntrar -->
+        <test-method status="PASS" signature="renomearColuna()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="renomearColuna" duration-ms="44225" started-at="2020-09-30T11:13:24Z" finished-at="2020-09-30T11:14:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editar -->
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar -->
+        </test-method> <!-- renomearColuna -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="afterClass" is-config="true" duration-ms="56" started-at="2020-09-30T11:14:08Z" finished-at="2020-09-30T11:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRB.RenomearColuna -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -4,6 +4,9 @@
   <test name="Default test(failed)" parallel="none">
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.NovoRelatorio">
 =======
 <<<<<<< HEAD
@@ -12,11 +15,18 @@
       <class name="com.timp.test.BRB.Filtros">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+          <include name="excluir"/>
+=======
 <<<<<<< HEAD
           <include name="colunas"/>
 =======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <include name="criar"/>
 =======
@@ -30,7 +40,11 @@
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.NovoRelatorio -->
 =======
@@ -38,6 +52,7 @@
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar -->
 =======
       </class> <!-- com.timp.test.BRB.Filtros -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>

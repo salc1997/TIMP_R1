@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="131143" started-at="2020-09-29T13:16:04Z" finished-at="2020-09-29T13:18:15Z">
+  <suite name="Default suite" duration-ms="175749" started-at="2020-09-30T15:25:45Z" finished-at="2020-09-30T15:28:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="131143" started-at="2020-09-29T13:16:04Z" finished-at="2020-09-29T13:18:15Z">
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="beforeClass" is-config="true" duration-ms="15887" started-at="2020-09-29T10:16:04Z" finished-at="2020-09-29T10:16:20Z">
+    <test name="Default test" duration-ms="175749" started-at="2020-09-30T15:25:45Z" finished-at="2020-09-30T15:28:41Z">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="beforeClass" is-config="true" duration-ms="20119" started-at="2020-09-30T12:25:45Z" finished-at="2020-09-30T12:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="login" duration-ms="10604" started-at="2020-09-29T10:16:20Z" finished-at="2020-09-29T10:16:31Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="login" duration-ms="17759" started-at="2020-09-30T12:26:05Z" finished-at="2020-09-30T12:26:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="acessarMDR" duration-ms="12010" started-at="2020-09-29T10:16:31Z" finished-at="2020-09-29T10:16:43Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="acessarMDR" duration-ms="44204" started-at="2020-09-30T12:26:23Z" finished-at="2020-09-30T12:27:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar@436a4e4b]" name="editar" duration-ms="92612" started-at="2020-09-29T10:16:43Z" finished-at="2020-09-29T10:18:15Z">
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="criar" duration-ms="93588" started-at="2020-09-30T12:27:07Z" finished-at="2020-09-30T12:28:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editar -->
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar -->
+        </test-method> <!-- criar -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -198,10 +198,10 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		
 		pesquisar.sendKeys("Prueba Automatizada");
 		ferramenta.click();
-		
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div");
-						
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
 		return sucesso;
 		
 		
@@ -215,10 +215,9 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sleep(3000);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+	
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 	

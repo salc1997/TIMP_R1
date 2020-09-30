@@ -53,17 +53,16 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		sleep(2000);
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectElement(menu);
+		//sleep(menuT);
 		
 		menu.click();
 
 		opcao.click();
 		
-		
-		
-
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
@@ -157,8 +156,10 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		publico.click();
 		sleep(2000);
 		aceptar.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(menuT);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		//sleep(menuT);
 		sleep(3000);
 		actionsMoveToElementElement(publico);
 		String publicoT = publico.getAttribute("aria-label");
@@ -174,8 +175,10 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		publico.click();
 		sleep(2000);
 		aceptar.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(menuT);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		//sleep(menuT);
 
 		actionsMoveToElementElement(publico);
 		String privadoT = publico.getAttribute("aria-label");

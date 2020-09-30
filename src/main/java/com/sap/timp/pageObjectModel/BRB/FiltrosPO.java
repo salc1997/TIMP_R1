@@ -222,9 +222,13 @@ public class FiltrosPO  extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 

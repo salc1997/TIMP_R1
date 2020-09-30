@@ -66,12 +66,11 @@ public class GruposAvanzados extends TestBaseSteven{
 
 		sleep(2000);
 		sucesso2 = gruposAvanzadosPO.diferente();
-		System.out.println(sucesso2);
 			
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertFalse(sucesso2.get(i), gruposAvanDif);
 		}
-		System.out.println(sucesso2);
+
 		
 		
 	}

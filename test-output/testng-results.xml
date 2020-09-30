@@ -2,22 +2,115 @@
 <testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="273506" started-at="2020-09-30T19:54:49Z" finished-at="2020-09-30T19:59:23Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="197844" started-at="2020-09-30T20:20:40Z" finished-at="2020-09-30T20:23:58Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="15080147" started-at="2020-09-30T13:55:49Z" finished-at="2020-09-30T18:07:09Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="171923" started-at="2020-09-30T18:12:07Z" finished-at="2020-09-30T18:14:59Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="175749" started-at="2020-09-30T15:25:45Z" finished-at="2020-09-30T15:28:41Z">
+=======
+  <suite name="Default suite" duration-ms="81838" started-at="2020-09-30T17:12:47Z" finished-at="2020-09-30T17:14:09Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="273506" started-at="2020-09-30T19:54:49Z" finished-at="2020-09-30T19:59:23Z">
       <class name="com.timp.test.BRB.NovoRelatorio">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="24972" started-at="2020-09-30T16:54:49Z" finished-at="2020-09-30T16:55:14Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="197844" started-at="2020-09-30T20:20:40Z" finished-at="2020-09-30T20:23:58Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="15080147" started-at="2020-09-30T13:55:49Z" finished-at="2020-09-30T18:07:09Z">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="beforeClass" is-config="true" duration-ms="15714" started-at="2020-09-30T10:55:49Z" finished-at="2020-09-30T10:56:04Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="171923" started-at="2020-09-30T18:12:07Z" finished-at="2020-09-30T18:14:59Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRB.Eliminar">
+<<<<<<< HEAD
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12874" started-at="2020-09-30T14:20:40Z" finished-at="2020-09-30T14:20:53Z">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12293" started-at="2020-09-30T12:12:07Z" finished-at="2020-09-30T12:12:19Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="175749" started-at="2020-09-30T15:25:45Z" finished-at="2020-09-30T15:28:41Z">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="beforeClass" is-config="true" duration-ms="20119" started-at="2020-09-30T12:25:45Z" finished-at="2020-09-30T12:26:05Z">
+=======
+    <test name="Default test" duration-ms="81838" started-at="2020-09-30T17:12:47Z" finished-at="2020-09-30T17:14:09Z">
+      <class name="com.timp.test.BRB.RenomearColuna">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11414" started-at="2020-09-30T11:12:47Z" finished-at="2020-09-30T11:12:58Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="login" duration-ms="13090" started-at="2020-09-30T16:55:14Z" finished-at="2020-09-30T16:55:27Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="login" duration-ms="15776" started-at="2020-09-30T14:20:53Z" finished-at="2020-09-30T14:21:09Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="login" duration-ms="13232" started-at="2020-09-30T10:56:04Z" finished-at="2020-09-30T10:56:18Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="login" duration-ms="7388" started-at="2020-09-30T12:12:19Z" finished-at="2020-09-30T12:12:27Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="login" duration-ms="17759" started-at="2020-09-30T12:26:05Z" finished-at="2020-09-30T12:26:23Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="login" duration-ms="7278" started-at="2020-09-30T11:12:58Z" finished-at="2020-09-30T11:13:05Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="brbEntrar" duration-ms="26591" started-at="2020-09-30T16:55:27Z" finished-at="2020-09-30T16:55:54Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="brbEntrar" duration-ms="37379" started-at="2020-09-30T14:21:09Z" finished-at="2020-09-30T14:21:46Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="acessarMDR" duration-ms="16607" started-at="2020-09-30T10:56:18Z" finished-at="2020-09-30T10:56:34Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="brbEntrar" duration-ms="19519" started-at="2020-09-30T12:12:27Z" finished-at="2020-09-30T12:12:46Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="acessarMDR" duration-ms="44204" started-at="2020-09-30T12:26:23Z" finished-at="2020-09-30T12:27:07Z">
+=======
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="brbEntrar" duration-ms="18852" started-at="2020-09-30T11:13:05Z" finished-at="2020-09-30T11:13:24Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- brbEntrar -->
         <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="novoRelatorio" duration-ms="60378" started-at="2020-09-30T16:55:54Z" finished-at="2020-09-30T16:56:54Z">
           <reporter-output>
@@ -25,6 +118,14 @@
         </test-method> <!-- novoRelatorio -->
         <test-method status="FAIL" signature="colunas()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="colunas" duration-ms="143892" started-at="2020-09-30T16:56:54Z" finished-at="2020-09-30T16:59:18Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+=======
+        </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="excluir()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir@436a4e4b]" name="excluir" duration-ms="15034358" started-at="2020-09-30T10:56:34Z" finished-at="2020-09-30T15:07:09Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="draggable-129"]"}
   (Session info: chrome=83.0.4103.61)
@@ -90,15 +191,64 @@ Session ID: 365a17391cc2aa7d162db305c728a839
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@436a4e4b]" name="criar" duration-ms="93588" started-at="2020-09-30T12:27:07Z" finished-at="2020-09-30T12:28:41Z">
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- brbEntrar -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminar" duration-ms="61583" started-at="2020-09-30T14:21:46Z" finished-at="2020-09-30T14:22:48Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminar" duration-ms="62667" started-at="2020-09-30T12:12:46Z" finished-at="2020-09-30T12:13:49Z">
+=======
+        <test-method status="PASS" signature="renomearColuna()[pri:0, instance:com.timp.test.BRB.RenomearColuna@f2f2cc1]" name="renomearColuna" duration-ms="44225" started-at="2020-09-30T11:13:24Z" finished-at="2020-09-30T11:14:08Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- colunas -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4523" started-at="2020-09-30T16:59:18Z" finished-at="2020-09-30T16:59:23Z">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir -->
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminarLixeira" duration-ms="65899" started-at="2020-09-30T14:22:48Z" finished-at="2020-09-30T14:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4318" started-at="2020-09-30T14:23:54Z" finished-at="2020-09-30T14:23:58Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+=======
+      </class> <!-- com.timp.test.BRB.Eliminar -->
+<<<<<<< HEAD
+=======
+=======
+      </class> <!-- com.timp.test.BRB.RenomearColuna -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -115,9 +115,12 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
@@ -194,10 +197,12 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		//sleep(2000);
 		executar.click();
 		
-		
-		waitExpectXpath("//*[@data-group=\"0\"]/div/div/span[4]");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@data-group=\"0\"]/div/div/span[4]");
 			
-		sleep(15000);
+		//sleep(15000);
 		igual.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -218,7 +223,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		for (int i = 0; i < rows; i++) {
 			
 			String cfop = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+j+"-\")]/div[2]")).getText();
-			System.out.println(cfop + "Igual");
+			System.out.println(cfop + " Igual a " + cfopG);
 			sucesso.add(cfop.equals(cfopG));
 			j= j+1;
 
@@ -246,8 +251,8 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		int rows = driver.findElements(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div[@class=\"row visible\"]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		String cfop3 = driver.findElement(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div[3]/div[@data-column =\"115\" and contains(@aria-label , \"Linha: 2-\")]/div[2]")).getText();
-		System.out.println(cfop3 + " Prueba");
+		//String cfop3 = driver.findElement(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div[3]/div[@data-column =\"115\" and contains(@aria-label , \"Linha: 2-\")]/div[2]")).getText();
+		//System.out.println(cfop3 + " Prueba");
 		int j=1;
 		int k=2;
 		sleep(10000);
@@ -255,7 +260,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		for (int i = 0; i < rows; i++) {
 			
 			String cfop = driver.findElement(By.xpath("//div[@class=\"data\" and @id=\"table-data-wrapper\"]/div[3]/div[2]/div["+k+"]/div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+j+"-\")]/div[2]")).getText();
-			System.out.println(cfop + "Diferente");
+			System.out.println(cfop + " Diferente a "+cfopG);
 			sucesso.add(cfop.equals(cfopG));
 			j= j+1;
 			k= k+1;

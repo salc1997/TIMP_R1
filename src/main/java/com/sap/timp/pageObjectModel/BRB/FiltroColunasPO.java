@@ -78,9 +78,13 @@ public class FiltroColunasPO  extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
-		waitExpectElement(menu);
-		sleep(menuT);
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
@@ -99,6 +103,7 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		colunaOpcao.click();
 		sleep(5000);
 		String cfopV = (cfop.getAttribute("value"));
+		System.out.println(cfopV + " Valor Obtenido");
 		desmarcar.click();
 		sleep(1000);
 		pesquisar.sendKeys(cfopV);
@@ -107,9 +112,11 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		String resultadoS = "";
 		resultadoS = resultado.getAttribute("value");
 		cfopG = resultadoS;
+		System.out.println(cfopG + " Resultado Búsqueda");
 
 		boolean sucesso = false;
 		sucesso = resultadoS.equals(cfopV);
+		System.out.println(sucesso + "Filtro Coluna");
 		
 		
 		
@@ -155,12 +162,14 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		sleep(5000);
 		selecionar.click();
 		String cfopV = (cfop2.getAttribute("value"));
+		System.out.println(cfopV + " Valor Obtenido");
 		sleep(1000);
 		pesquisar.sendKeys(cfopV);
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		String resultadoS = "";
 		resultadoS = resultado2.getAttribute("value");
+		System.out.println(resultadoS + " Resultado Búsqueda");
 		cfopG = resultadoS;
 
 		boolean sucesso = false;

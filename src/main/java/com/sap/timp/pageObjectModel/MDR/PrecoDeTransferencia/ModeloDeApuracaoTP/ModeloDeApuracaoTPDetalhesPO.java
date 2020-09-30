@@ -35,29 +35,47 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
+	public WebElement id;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Modelo\"]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
 	public WebElement modelo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição\"]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//div[@id=\"type\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div/div")
 	public WebElement tipo;
 	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Respaldo legal\"]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[5]/div/div")
 	public WebElement respaldo;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data Inicial\"]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[6]/div/div")
 	public WebElement datainicial;
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
+	
+	@FindBy(xpath = "//span[@id=\"id\"]")
+	public WebElement idvi;
+	
+	@FindBy(xpath = "//span[@id=\"model\"]")
+	public WebElement modelovi;
+	
+	@FindBy(xpath = "//span[@id=\"type\"]")
+	public WebElement tipovi;
+	
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaovi;
+	
+	@FindBy(xpath = "//span[@id=\"legalSupport\"]")
+	public WebElement respaldovi;
+	
+	@FindBy(xpath = "//span[@id=\"startDate\"]")
+	public WebElement datavi;
 	
 	public ModeloDeApuracaoTPDetalhesPO() {
 
@@ -100,20 +118,21 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//detalhes
-		/*String ocorrenciadetalhes = ocorrencia.getText();
-		String objetosdetalhes = objetos.getText();
-		String classificacaodetalhes = classificacao.getText();
-		String datainiciodetalhes = datainicio.getText();
-		String datafimdetalhes = datafim.getText();
+		String iddetalhes = id.getText();
+		String modelodetalhes = modelo.getText();
+		String tipodetalhes = tipo.getText();
+		String descricaodetalhes = descricao.getText();
+		String respaldodetalhes = respaldo.getText();
+		String datadetalhes = datainicial.getText();
 		
 		
-		System.out.println( ocorrenciadetalhes);
-		System.out.println(objetosdetalhes);
-		System.out.println(classificacaodetalhes);
-		System.out.println(datainiciodetalhes);
-		System.out.println(datafimdetalhes);
-		
-	*/
+		System.out.println(iddetalhes);
+		System.out.println( modelodetalhes);
+		System.out.println(tipodetalhes);
+		System.out.println(descricaodetalhes);
+		System.out.println(respaldodetalhes);
+		System.out.println(datadetalhes);
+	
 		
 		
 		fechar.click();
@@ -141,29 +160,29 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		//visualizar
-		/*
-		String ocorrenciavisualizar = ocorrenciavi.getText();
-		String objetosvisualizar = objetosvi.getText();
-		String classificacaovisualizar = classificacaovi.getText();
-		String datainiciovisualizar = datainiciovi.getText();
-		String datafimvisualizar = datafimvi.getText();
 		
+		String idvisualizar = idvi.getText();
+		String modelovisualizar = modelovi.getText();
+		String tipovisualizar = tipovi.getText();
+		String descricaovisualizar = descricaovi.getText();
+		String respaldovisualizar = respaldovi.getText();
+		String datavisualizar = datavi.getText();
 		
-		System.out.println( ocorrenciavisualizar);
-		System.out.println(objetosvisualizar);
-		System.out.println(classificacaovisualizar);
-		System.out.println(datainiciovisualizar);
-		System.out.println(datafimvisualizar);
-	*/
+		System.out.println( idvisualizar);
+		System.out.println(modelovisualizar);
+		System.out.println(tipovisualizar);
+		System.out.println(descricaovisualizar);
+		System.out.println( respaldovisualizar);
+		System.out.println( datavisualizar);
 		
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
-		/*sucesso.add(ocorrenciavisualizar.equals(ocorrenciadetalhes));
-		sucesso.add(objetosvisualizar.equals(objetosdetalhes));
-		sucesso.add(classificacaovisualizar.equals(classificacaodetalhes));
-		sucesso.add( datainiciovisualizar.equals( datainiciodetalhes));
-		sucesso.add(datafimvisualizar.equals(datafimdetalhes));
-		*/
+		sucesso.add(idvisualizar.equals(iddetalhes));
+		sucesso.add(modelovisualizar.equals(modelodetalhes));
+		sucesso.add(tipovisualizar.equals(tipodetalhes));
+		sucesso.add( descricaovisualizar.equals(descricaodetalhes));
+		sucesso.add(respaldovisualizar.equals(respaldodetalhes));
+		sucesso.add(datavisualizar.equals(datadetalhes));
 		return sucesso;
 	}
 

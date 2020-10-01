@@ -71,8 +71,8 @@ public class AtivarComentarioPO extends TestBaseSteven{
 		opcao.click();
 
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
-
 		
+		sleep(3000);
 		List<WebElement> campo = driver.findElements(By.xpath("//*[@id=\"draggable-126\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

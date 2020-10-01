@@ -174,11 +174,16 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		sleep(2000);
 		comentarioTexto2.click();
 		
-		sleep(5000);
-		driver.findElement(By.xpath("//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
-		
 
-		waitExpectXpath("/html/body/div[3]/div/div[3]/button");
+		sleep(5000);
+		driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(2000);
+
+		//waitExpectXpath("/html/body/div[3]/div/div[3]/button");
 		sleep(3000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

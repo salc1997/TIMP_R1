@@ -1,22 +1,21 @@
-package com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP;
+package com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditarPO;
+import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditarPO;
 
-public class ModeloDeApuracaoTPEditar extends TestBaseEliel {
- 
+public class TiposDeServicosEditar extends TestBaseEliel {
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ModeloDeApuracaoTPEditarPO modeloDeApuracaoTPEditarPO;
+	TiposDeServicosEditarPO tiposDeServicosEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,14 +23,14 @@ public class ModeloDeApuracaoTPEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		modeloDeApuracaoTPEditarPO = new ModeloDeApuracaoTPEditarPO();
+		tiposDeServicosEditarPO = new TiposDeServicosEditarPO();
 	}
 	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,12 +48,11 @@ public class ModeloDeApuracaoTPEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = modeloDeApuracaoTPEditarPO.editar();
+		boolean sucesso = tiposDeServicosEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
 
 	}		
 	
-	
-	
+
 }

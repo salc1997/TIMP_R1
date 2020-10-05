@@ -2,6 +2,7 @@ package com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador;
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,9 +27,9 @@ public class S1200RemuneracaoDeTrabalhadorExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		s1200RemuneracaoDeTrabalhadorExcluirPO = new S1200RemuneracaoDeTrabalhadorExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	  @AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

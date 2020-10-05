@@ -1,4 +1,4 @@
-package com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP;
+package com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,15 +11,15 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhesPO;
 
-public class ModeloDeApuracaoTPDetalhes extends TestBaseEliel {
- 
+public class ParametrosModeloDeApuracaoTPDetalhes extends TestBaseEliel {
+
 	
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ModeloDeApuracaoTPDetalhesPO modeloDeApuracaoTPDetalhesPO;
+	ParametrosModeloDeApuracaoTPDetalhesPO parametrosModeloDeApuracaoTPDetalhesPO;
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -27,10 +27,10 @@ public class ModeloDeApuracaoTPDetalhes extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		modeloDeApuracaoTPDetalhesPO = new ModeloDeApuracaoTPDetalhesPO();
+		parametrosModeloDeApuracaoTPDetalhesPO = new ParametrosModeloDeApuracaoTPDetalhesPO();
 	}
 	
-	  @AfterClass public void afterClass(){ driver.close(); }
+	 @AfterClass public void afterClass(){ driver.close(); }
 	 
 
 	@Test(priority = 0)
@@ -49,7 +49,7 @@ public class ModeloDeApuracaoTPDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Detalhes() {
 
-		ArrayList<Boolean> sucesso = modeloDeApuracaoTPDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = parametrosModeloDeApuracaoTPDetalhesPO.detalhes();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			
@@ -57,5 +57,4 @@ public class ModeloDeApuracaoTPDetalhes extends TestBaseEliel {
 			
 		}
 	}		
-	
 }

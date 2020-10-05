@@ -2,6 +2,7 @@ package com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP;
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,9 +26,9 @@ public class ModeloDeApuracaoTPExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		modeloDeApuracaoTPExcluirPO = new ModeloDeApuracaoTPExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	  @AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

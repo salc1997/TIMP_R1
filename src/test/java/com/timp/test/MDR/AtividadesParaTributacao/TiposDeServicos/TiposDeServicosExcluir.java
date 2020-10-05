@@ -1,22 +1,21 @@
-package com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural;
+package com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirPO;
 
-public class S1250AquisicaoDeProducaoRuralExcluir extends TestBaseEliel {
-	
+public class TiposDeServicosExcluir extends TestBaseEliel{
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	S1250AquisicaoDeProducaoRuralExcluirPO s1250AquisicaoDeProducaoRuralExcluirPO;
+	TiposDeServicosExcluirPO tiposDeServicosExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,11 +23,11 @@ public class S1250AquisicaoDeProducaoRuralExcluir extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		s1250AquisicaoDeProducaoRuralExcluirPO= new S1250AquisicaoDeProducaoRuralExcluirPO();
+		tiposDeServicosExcluirPO = new TiposDeServicosExcluirPO();
 	}
 	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,10 +46,9 @@ public class S1250AquisicaoDeProducaoRuralExcluir extends TestBaseEliel {
 	public void excluir() {
 
 		
-		boolean sucesso = s1250AquisicaoDeProducaoRuralExcluirPO.excluir();
+		boolean sucesso = tiposDeServicosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 		
 	}			
-	
-
+ 
 }

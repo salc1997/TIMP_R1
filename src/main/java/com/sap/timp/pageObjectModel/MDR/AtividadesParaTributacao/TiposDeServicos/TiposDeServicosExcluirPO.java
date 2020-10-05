@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior;
+package com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,35 +7,34 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirPO extends TestBaseEliel {
+public class TiposDeServicosExcluirPO extends TestBaseEliel{
 	
-	@FindBy(xpath = "//span[text()=\"Controle de Crédito Tributário\"]")
-	public WebElement controledecreditotributario;
+	@FindBy(xpath = "//span[text()=\"Atividades para tributação\"]")
+	public WebElement atividadesparatributacao;
 	
-	@FindBy(xpath = "//span[text()=\"Utilização dos Créditos em Período Anterior\"]")
-	public WebElement utilizacaodoscreditos;
+	@FindBy(xpath = "//span[text()=\"Tipos de Serviços\"]")
+	public WebElement tiposdeservicos;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement sim;
 	
-	public UtilizacaoDosCreditosEmPeriodoAnteriorExcluirPO() {
+	
+	public TiposDeServicosExcluirPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	public boolean excluir() {
 		sleep(2000);
-		controledecreditotributario.click();
+		atividadesparatributacao.click();
 		sleep(2000);
 		
-		utilizacaodoscreditos.click();
+		tiposdeservicos.click();
 		
 		sleep(2000);
-		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -92,5 +91,6 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirPO extends TestBaseEli
 		return sucesso;
 		
 	}
+	
 
 }

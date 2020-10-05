@@ -1,4 +1,4 @@
-package com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural;
+package com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,14 +9,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluirPO;
 
-public class S1250AquisicaoDeProducaoRuralExcluir extends TestBaseEliel {
-	
+public class ParametrosParaTPExcluir extends TestBaseEliel {
+
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	S1250AquisicaoDeProducaoRuralExcluirPO s1250AquisicaoDeProducaoRuralExcluirPO;
+	ParametrosParaTPExcluirPO parametrosParaTPExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +24,7 @@ public class S1250AquisicaoDeProducaoRuralExcluir extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		s1250AquisicaoDeProducaoRuralExcluirPO= new S1250AquisicaoDeProducaoRuralExcluirPO();
+		parametrosParaTPExcluirPO = new ParametrosParaTPExcluirPO();
 	}
 	
 	  @AfterClass public void afterClass(){ driver.close(); }
@@ -47,10 +47,8 @@ public class S1250AquisicaoDeProducaoRuralExcluir extends TestBaseEliel {
 	public void excluir() {
 
 		
-		boolean sucesso = s1250AquisicaoDeProducaoRuralExcluirPO.excluir();
+		boolean sucesso = parametrosParaTPExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 		
 	}			
-	
-
 }

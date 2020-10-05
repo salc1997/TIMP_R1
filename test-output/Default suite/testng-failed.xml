@@ -3,29 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.NovoRelatorio">
-=======
-      <class name="com.timp.test.BRB.ComentarioLibre">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluir">
         <methods>
-<<<<<<< HEAD
-          <include name="colunas"/>
-=======
-          <include name="comentarioLibre"/>
           <include name="beforeClass"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="acessarMDR"/>
+          <include name="excluir"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
-=======
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

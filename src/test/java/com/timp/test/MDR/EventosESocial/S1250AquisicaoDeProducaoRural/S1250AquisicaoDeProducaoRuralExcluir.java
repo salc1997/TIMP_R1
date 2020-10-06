@@ -2,6 +2,7 @@ package com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural;
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,9 +26,9 @@ public class S1250AquisicaoDeProducaoRuralExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		s1250AquisicaoDeProducaoRuralExcluirPO= new S1250AquisicaoDeProducaoRuralExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	  @AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

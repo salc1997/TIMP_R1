@@ -31,6 +31,11 @@ import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeCriar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeEditar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeVisualizar;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhes;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditar;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluir;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosVisualizar;
 import com.timp.test.MDR.CEP.Bairro.BairroCriar;
 import com.timp.test.MDR.CEP.Bairro.BairroEditar;
 import com.timp.test.MDR.CEP.Bairro.BairroEliminar;
@@ -109,8 +114,26 @@ import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApur
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
+import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar;
+import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes;
+import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir;
+import com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar;
+import com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar;
+import com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir;
 import com.timp.test.MDR.Filiais.FiliaisEditar;
 import com.timp.test.MDR.Filiais.FiliaisVisualizar;
+import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir;
+import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -295,6 +318,42 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		InclusaoDeCamposMarFiltrosAvançados inclusaoDeCamposMarFiltrosAvançados;
 		InclusaoDeCamposMarVisualizar inclusaoDeCamposMarVisualizar;
 		
+	// Eventos e-social >  S1200 Remuneracao De Trabalhador...
+		S1200RemuneracaoDeTrabalhadorCriar s1200RemuneracaoDeTrabalhadorCriar;
+		S1200RemuneracaoDeTrabalhadorDetalhes s1200RemuneracaoDeTrabalhadorDetalhes;
+		S1200RemuneracaoDeTrabalhadorExcluir s1200RemuneracaoDeTrabalhadorExcluir;
+		
+	// Eventos e-social >  S1250 Aquisicao De Producao Rural
+		S1250AquisicaoDeProducaoRuralCriar s1250AquisicaoDeProducaoRuralCriar;
+		S1250AquisicaoDeProducaoRuralEditar s1250AquisicaoDeProducaoRuralEditar;
+		S1250AquisicaoDeProducaoRuralExcluir s1250AquisicaoDeProducaoRuralExcluir;
+		
+	//Preço de Transferencia > Modelo De Apuraçao TP
+		ModeloDeApuracaoTPCriar modeloDeApuracaoTPCriar;
+		ModeloDeApuracaoTPDetalhes modeloDeApuracaoTPDetalhes;
+		ModeloDeApuracaoTPEditar modeloDeApuracaoTPEditar;
+		ModeloDeApuracaoTPExcluir modeloDeApuracaoTPExcluir;
+	
+	//Preço de Transferencia > Parametros Modelo De Apuracao TP
+		ParametrosModeloDeApuracaoTPCriar parametrosModeloDeApuracaoTPCriar;
+		ParametrosModeloDeApuracaoTPEditar parametrosModeloDeApuracaoTPEditar;
+		ParametrosModeloDeApuracaoTPDetalhes parametrosModeloDeApuracaoTPDetalhes;
+		ParametrosModeloDeApuracaoTPExcluir parametrosModeloDeApuracaoTPExcluir;
+		
+	////Preço de Transferencia >  Parametros para TP
+		ParametrosParaTPCriar parametrosParaTPCriar;
+		ParametrosParaTPEditar parametrosParaTPEditar;
+		ParametrosParaTPExcluir parametrosParaTPExcluir;
+		
+	//// Registro ECAC
+		RegistroECACCriar registroECACCriar;
+		
+	//Atividades Para Tributacao > Tipos De Servicos
+		TiposDeServicosCriar tiposDeServicosCriar;
+		TiposDeServicosDetalhes tiposDeServicosDetalhes;
+		TiposDeServicosEditar tiposDeServicosEditar;
+		TiposDeServicosVisualizar tiposDeServicosVisualizar;
+		TiposDeServicosExcluir tiposDeServicosExcluir;
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias
@@ -1213,9 +1272,304 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		inclusaoDeCamposMarExcluir.acessarMDR();
 		inclusaoDeCamposMarExcluir.Excluir();
 		inclusaoDeCamposMarExcluir.afterClass();
+		System.out.println("-------------------Valor Adicionado > Inclusao de Campos Mar Fim-------------------------");
+	}
+	
+	//96
+	// Eventos e-social >  S1200 Remuneracao De Trabalhador...
+	
+	@Test(priority = 96)
+	public void s1200RemuneracaoDeTrabalhadorCriar() {
+		System.out.println("-------------------Eventos e-social >  S1200 Remuneracao De Trabalhador...-------------------------");
+		s1200RemuneracaoDeTrabalhadorCriar= new S1200RemuneracaoDeTrabalhadorCriar();
+		s1200RemuneracaoDeTrabalhadorCriar.beforeClass();
+		s1200RemuneracaoDeTrabalhadorCriar.login();
+		s1200RemuneracaoDeTrabalhadorCriar.acessarMDR();
+		s1200RemuneracaoDeTrabalhadorCriar.criar();
+		s1200RemuneracaoDeTrabalhadorCriar.afterClass();
+
+	}
+	
+	@Test(priority = 97)
+	public void s1200RemuneracaoDeTrabalhadorDetalhes() {
+		
+		s1200RemuneracaoDeTrabalhadorDetalhes = new S1200RemuneracaoDeTrabalhadorDetalhes();
+		s1200RemuneracaoDeTrabalhadorDetalhes.beforeClass();
+		s1200RemuneracaoDeTrabalhadorDetalhes.login();
+		s1200RemuneracaoDeTrabalhadorDetalhes.acessarMDR();
+		s1200RemuneracaoDeTrabalhadorDetalhes.detalhes();
+		s1200RemuneracaoDeTrabalhadorDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 98)
+	public void s1200RemuneracaoDeTrabalhadorExcluir() {
+		
+		s1200RemuneracaoDeTrabalhadorExcluir = new S1200RemuneracaoDeTrabalhadorExcluir();
+		s1200RemuneracaoDeTrabalhadorExcluir.beforeClass();
+		s1200RemuneracaoDeTrabalhadorExcluir.login();
+		s1200RemuneracaoDeTrabalhadorExcluir.acessarMDR();
+		s1200RemuneracaoDeTrabalhadorExcluir.excluir();
+		s1200RemuneracaoDeTrabalhadorExcluir.afterClass();
+		System.out.println("-------------------Eventos e-social >  S1200 Remuneracao De Trabalhador... Fim-------------------------");
+	}
+	
+	//103
+	// Eventos e-social >  S1250 Aquisicao De Producao Rural
+	
+	@Test(priority = 103)
+	public void s1250AquisicaoDeProducaoRuralCriar() {
+		System.out.println("-------------------Eventos e-social >  S1250 Aquisicao De Producao Rural-------------------------");
+		s1250AquisicaoDeProducaoRuralCriar= new S1250AquisicaoDeProducaoRuralCriar();
+		s1250AquisicaoDeProducaoRuralCriar.beforeClass();
+		s1250AquisicaoDeProducaoRuralCriar.login();
+		s1250AquisicaoDeProducaoRuralCriar.acessarMDR();
+		s1250AquisicaoDeProducaoRuralCriar.criar();
+		s1250AquisicaoDeProducaoRuralCriar.afterClass();
+
+	}
+	
+	@Test(priority = 104)
+	public void s1250AquisicaoDeProducaoRuralEditar() {
+		
+		s1250AquisicaoDeProducaoRuralEditar= new S1250AquisicaoDeProducaoRuralEditar();
+		s1250AquisicaoDeProducaoRuralEditar.beforeClass();
+		s1250AquisicaoDeProducaoRuralEditar.login();
+		s1250AquisicaoDeProducaoRuralEditar.acessarMDR();
+		s1250AquisicaoDeProducaoRuralEditar.editar();
+		s1250AquisicaoDeProducaoRuralEditar.afterClass();
+
+	}
+	
+	@Test(priority = 105)
+	public void s1250AquisicaoDeProducaoRuralExcluir() {
+		
+		s1250AquisicaoDeProducaoRuralExcluir= new S1250AquisicaoDeProducaoRuralExcluir();
+		s1250AquisicaoDeProducaoRuralExcluir.beforeClass();
+		s1250AquisicaoDeProducaoRuralExcluir.login();
+		s1250AquisicaoDeProducaoRuralExcluir.acessarMDR();
+		s1250AquisicaoDeProducaoRuralExcluir.excluir();
+		s1250AquisicaoDeProducaoRuralExcluir.afterClass();
+		System.out.println("-------------------Eventos e-social >  S1250 Aquisicao De Producao Rural Fim-------------------------");
+	}
+	
+	//109
+	//Preço de Transferencia > Modelo De Apuraçao TP
+	@Test(priority = 109)
+	public void modeloDeApuracaoTPCriar() {
+		System.out.println("-------------------Preço de Transferencia > Modelo De Apuraçao TP-------------------------");
+		modeloDeApuracaoTPCriar= new ModeloDeApuracaoTPCriar();
+		modeloDeApuracaoTPCriar.beforeClass();
+		modeloDeApuracaoTPCriar.login();
+		modeloDeApuracaoTPCriar.acessarMDR();
+		modeloDeApuracaoTPCriar.criar();
+		modeloDeApuracaoTPCriar.afterClass();
+
+	}
+	
+	@Test(priority = 110)
+	public void modeloDeApuracaoTPDetalhes() {
+		
+		modeloDeApuracaoTPDetalhes= new ModeloDeApuracaoTPDetalhes();
+		modeloDeApuracaoTPDetalhes.beforeClass();
+		modeloDeApuracaoTPDetalhes.login();
+		modeloDeApuracaoTPDetalhes.acessarMDR();
+		modeloDeApuracaoTPDetalhes.Detalhes();
+		modeloDeApuracaoTPDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 111)
+	public void modeloDeApuracaoTPEditar() {
+		
+		modeloDeApuracaoTPEditar= new ModeloDeApuracaoTPEditar();
+		modeloDeApuracaoTPEditar.beforeClass();
+		modeloDeApuracaoTPEditar.login();
+		modeloDeApuracaoTPEditar.acessarMDR();
+		modeloDeApuracaoTPEditar.editar();
+		modeloDeApuracaoTPEditar.afterClass();
+
+	}
+	
+	@Test(priority = 112)
+	public void modeloDeApuracaoTPExcluir() {
+		
+		modeloDeApuracaoTPExcluir= new ModeloDeApuracaoTPExcluir();
+		modeloDeApuracaoTPExcluir.beforeClass();
+		modeloDeApuracaoTPExcluir.login();
+		modeloDeApuracaoTPExcluir.acessarMDR();
+		modeloDeApuracaoTPExcluir.excluir();
+		modeloDeApuracaoTPExcluir.afterClass();
+		System.out.println("-------------------Preço de Transferencia > Modelo De Apuraçao TP Fim-------------------------");
+	}
+	
+	//116
+	//Preço de Transferencia > Parametros Modelo De Apuracao TP
+	
+	@Test(priority = 116)
+	public void parametrosModeloDeApuracaoTPCriar() {
+		System.out.println("-------------------Preço de Transferencia >  Parametros Modelo De Apuracao TP-------------------------");
+		parametrosModeloDeApuracaoTPCriar= new ParametrosModeloDeApuracaoTPCriar();
+		parametrosModeloDeApuracaoTPCriar.beforeClass();
+		parametrosModeloDeApuracaoTPCriar.login();
+		parametrosModeloDeApuracaoTPCriar.acessarMDR();
+		parametrosModeloDeApuracaoTPCriar.criar();
+		parametrosModeloDeApuracaoTPCriar.afterClass();
+
+	}
+	
+	@Test(priority = 117)
+	public void parametrosModeloDeApuracaoTPDetalhes() {
+		
+		parametrosModeloDeApuracaoTPDetalhes= new ParametrosModeloDeApuracaoTPDetalhes();
+		parametrosModeloDeApuracaoTPDetalhes.beforeClass();
+		parametrosModeloDeApuracaoTPDetalhes.login();
+		parametrosModeloDeApuracaoTPDetalhes.acessarMDR();
+		parametrosModeloDeApuracaoTPDetalhes.Detalhes();
+		parametrosModeloDeApuracaoTPDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 118)
+	public void parametrosModeloDeApuracaoTPEditar() {
+		
+		parametrosModeloDeApuracaoTPEditar= new ParametrosModeloDeApuracaoTPEditar();
+		parametrosModeloDeApuracaoTPEditar.beforeClass();
+		parametrosModeloDeApuracaoTPEditar.login();
+		parametrosModeloDeApuracaoTPEditar.acessarMDR();
+		parametrosModeloDeApuracaoTPEditar.editar();
+		parametrosModeloDeApuracaoTPEditar.afterClass();
+
+	}
+	
+	@Test(priority = 119)
+	public void parametrosModeloDeApuracaoTPExcluir() {
+		
+		parametrosModeloDeApuracaoTPExcluir= new ParametrosModeloDeApuracaoTPExcluir();
+		parametrosModeloDeApuracaoTPExcluir.beforeClass();
+		parametrosModeloDeApuracaoTPExcluir.login();
+		parametrosModeloDeApuracaoTPExcluir.acessarMDR();
+		parametrosModeloDeApuracaoTPExcluir.excluir();
+		parametrosModeloDeApuracaoTPExcluir.afterClass();
+		System.out.println("-------------------Preço de Transferencia >  Parametros Modelo De Apuracao TP Fim-------------------------");
+		
+
+	}
+	
+	//123
+	//Preço de Transferencia >  Parametros para TP
+	
+	@Test(priority = 123)
+	public void parametrosParaTPCriar() {
+		System.out.println("-------------------Preço de Transferencia > Parametros para TP-------------------------");
+		parametrosParaTPCriar= new ParametrosParaTPCriar();
+		parametrosParaTPCriar.beforeClass();
+		parametrosParaTPCriar.login();
+		parametrosParaTPCriar.acessarMDR();
+		parametrosParaTPCriar.criar();
+		parametrosParaTPCriar.afterClass();
+
+	}
+	
+	@Test(priority = 124)
+	public void parametrosParaTPEditar() {
+		parametrosParaTPEditar= new ParametrosParaTPEditar();
+		parametrosParaTPEditar.beforeClass();
+		parametrosParaTPEditar.login();
+		parametrosParaTPEditar.acessarMDR();
+		parametrosParaTPEditar.editar();
+		parametrosParaTPEditar.afterClass();
+
+	}
+	
+	@Test(priority = 125)
+	public void parametrosParaTPExcluir() {
+		parametrosParaTPExcluir= new ParametrosParaTPExcluir();
+		parametrosParaTPExcluir.beforeClass();
+		parametrosParaTPExcluir.login();
+		parametrosParaTPExcluir.acessarMDR();
+		parametrosParaTPExcluir.excluir();
+		parametrosParaTPExcluir.afterClass();
+		
+		System.out.println("-------------------Preço de Transferencia > Parametros para TP Fim-------------------------");
+		
+
+	}
+	
+	//130
+	// Registro ECAC
+	
+	@Test(priority = 130)
+	public void registroECACCriar() {
+		System.out.println("-------------------Registro ECAC-------------------------");
+		registroECACCriar= new RegistroECACCriar();
+		registroECACCriar.beforeClass();
+		registroECACCriar.login();
+		registroECACCriar.acessarMDR();
+		registroECACCriar.criar();
+		registroECACCriar.afterClass();
+
+	}
+	
+	//136
+	//Atividades Para Tributacao > Tipos De Servicos
+	@Test(priority = 136)
+	public void tiposDeServicosCriar() {
+		System.out.println("-------------------Atividades Para Tributacao > Tipos De Servicos-------------------------");
+		tiposDeServicosCriar= new TiposDeServicosCriar();
+		tiposDeServicosCriar.beforeClass();
+		tiposDeServicosCriar.login();
+		tiposDeServicosCriar.acessarMDR();
+		tiposDeServicosCriar.criar();
+		tiposDeServicosCriar.afterClass();
+
+	}
+	
+	@Test(priority = 137)
+	public void tiposDeServicosDetalhes() {
+		tiposDeServicosDetalhes= new TiposDeServicosDetalhes();
+		tiposDeServicosDetalhes.beforeClass();
+		tiposDeServicosDetalhes.login();
+		tiposDeServicosDetalhes.acessarMDR();
+		tiposDeServicosDetalhes.detalhes();
+		tiposDeServicosDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 138)
+	public void tiposDeServicosEditar() {
+		tiposDeServicosEditar= new TiposDeServicosEditar();
+		tiposDeServicosEditar.beforeClass();
+		tiposDeServicosEditar.login();
+		tiposDeServicosEditar.acessarMDR();
+		tiposDeServicosEditar.editar();
+		tiposDeServicosEditar.afterClass();
 
 	}
 	
 	
+	@Test(priority = 139)
+	public void tiposDeServicosVisualizar() {
+		tiposDeServicosVisualizar= new TiposDeServicosVisualizar();
+		tiposDeServicosVisualizar.beforeClass();
+		tiposDeServicosVisualizar.login();
+		tiposDeServicosVisualizar.acessarMDR();
+		tiposDeServicosVisualizar.Visualizar();
+		tiposDeServicosVisualizar.afterClass();
+
+	}
+	
+	@Test(priority = 140)
+	public void tiposDeServicos() {
+		tiposDeServicosExcluir= new TiposDeServicosExcluir();
+		tiposDeServicosExcluir.beforeClass();
+		tiposDeServicosExcluir.login();
+		tiposDeServicosExcluir.acessarMDR();
+		tiposDeServicosExcluir.excluir();
+		tiposDeServicosExcluir.afterClass();
+
+	}
+	
+	//142
 	
 }

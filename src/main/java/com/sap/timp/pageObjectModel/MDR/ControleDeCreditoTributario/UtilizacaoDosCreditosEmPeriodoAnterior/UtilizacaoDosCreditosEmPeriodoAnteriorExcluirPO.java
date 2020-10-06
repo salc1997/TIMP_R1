@@ -57,7 +57,8 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirPO extends TestBaseEli
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -41,7 +41,7 @@ public class TributosDetalhes extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-	public void tributoDetalhes() {
+	public void detalhes() {
 		
 		 String sucesso = tributosDetalhesPO.tributoDetalhes();
 		 assertEquals(sucesso, "detail", Filtros);

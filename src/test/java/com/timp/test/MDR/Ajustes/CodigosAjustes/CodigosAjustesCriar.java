@@ -21,6 +21,7 @@ public class CodigosAjustesCriar extends TestBaseSteven{
 	AcessarMDRPO acessarMDRPO;
 	CodigosAjustesCriarPO codigosAjustesCriarPO;
 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -29,12 +30,12 @@ public class CodigosAjustesCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigosAjustesCriarPO = new CodigosAjustesCriarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

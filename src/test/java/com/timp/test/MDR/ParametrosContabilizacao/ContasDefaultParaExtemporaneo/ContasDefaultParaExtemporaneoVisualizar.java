@@ -2,6 +2,7 @@ package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,9 +24,9 @@ public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultParaExtemporaneoVisualizarPO = new ContasDefaultParaExtemporaneoVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {

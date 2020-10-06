@@ -198,10 +198,10 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		
 		pesquisar.sendKeys("Prueba Automatizada");
 		ferramenta.click();
-		
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div");
-						
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
 		return sucesso;
 		
 		
@@ -215,10 +215,9 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sleep(3000);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+	
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 	
@@ -229,71 +228,90 @@ public class NovoRelatorioPO extends TestBaseSteven{
 	
 		buscarCampo.sendKeys("Empresa");
 		Actions actions = new Actions(driver);
+		actions.moveToElement(empresa);
+		sleep(3000);
 		actions.doubleClick(empresa).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("UF da Filial");
+		actions.moveToElement(ufFilial);
+		sleep(3000);
 		actions.doubleClick(ufFilial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Filial");
+		actions.moveToElement(filial);
+		sleep(3000);
 		actions.doubleClick(filial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Data lançamento doc. fiscal");
-	
+		actions.moveToElement(docFiscal);
+		sleep(3000);
 		actions.doubleClick(docFiscal).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Docnum");
-		sleep(2000);
+		actions.moveToElement(docnum);
+		sleep(3000);
 		actions.doubleClick(docnum).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Categoria nota fiscal");
-		
+		actions.moveToElement(categoria);
+		sleep(3000);
 		actions.doubleClick(categoria).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor");
-		
+		actions.moveToElement(valor);
+		sleep(3000);
 		actions.doubleClick(valor).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Cód. material");
-		
+		actions.moveToElement(codMaterial);
+		sleep(3000);
 		actions.doubleClick(codMaterial).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("CFOP");
-		
+		actions.moveToElement(cfop);
+		sleep(3000);
 		actions.doubleClick(cfop).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("ICMS");
-		
+		actions.moveToElement(cts);
+		sleep(3000);
 		actions.doubleClick(cts).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("BC ICMS");
-		
+		actions.moveToElement(bc);
+		sleep(3000);
 		actions.doubleClick(bc).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Alíquota ICMS");
-		
+		actions.moveToElement(aliquota);
+		sleep(3000);
 		actions.doubleClick(aliquota).perform();
 		
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor ICMS");
-		
+		actions.moveToElement(valorICMS);
+		sleep(3000);
 		actions.doubleClick(valorICMS).perform();
 		
 		sleep(2000);
 		
 		gravarE.click();
 		
-		sleep(7000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//sleep(7000);
 		
 		driver.navigate().refresh();
 		

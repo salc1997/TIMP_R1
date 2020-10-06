@@ -29,12 +29,12 @@ public class CodigosAjustesEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesEditarPO = new CodigoAjustesEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,7 +49,7 @@ public class CodigosAjustesEditar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		boolean sucesso = codigoAjustesEditarPO.editar();
 		

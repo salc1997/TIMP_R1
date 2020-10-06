@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class MotivosCesBeneficiosEliminar extends TestBaseSteven {
+public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
 
 	
 	LoginTC loginTC;
@@ -35,9 +35,9 @@ public class MotivosCesBeneficiosEliminar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		motivosCesBeneficiosEliminarPO = new MotivosCesBeneficiosEliminarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -53,7 +53,7 @@ public class MotivosCesBeneficiosEliminar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = motivosCesBeneficiosEliminarPO.eliminar();
 		

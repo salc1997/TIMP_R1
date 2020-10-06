@@ -28,9 +28,9 @@ public class InformaçoesAdicionaisExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 	informaçoesAdicionaisExcluirPO = new InformaçoesAdicionaisExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	 @AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,7 +46,7 @@ public class InformaçoesAdicionaisExcluir extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void excluir() {
 
 		boolean sucesso = informaçoesAdicionaisExcluirPO.excluir();
 		

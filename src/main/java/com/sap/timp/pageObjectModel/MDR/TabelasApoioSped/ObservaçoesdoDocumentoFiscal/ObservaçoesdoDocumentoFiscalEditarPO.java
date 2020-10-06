@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -52,14 +53,9 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
-	public WebElement pesquisar;
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Observações do Documento Fiscal - Registro 0460\"]")
+	public WebElement descricaosped;
 	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
-	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[1]/div")
-	public WebElement engrenagem;
 	
 	
 	public ObservaçoesdoDocumentoFiscalEditarPO() {
@@ -67,7 +63,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public boolean editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -75,10 +71,69 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		siguiente.click();	
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		editar.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		
+		
+		String valor = descricaosped.getAttribute("value");
+
+		String enviar = "Teste";
+
+		descricaosped.clear();
+		sleep(2000);
+		descricaosped.sendKeys(enviar);
+		sleep(2000);
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+
+		driver.navigate().refresh();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+			
+		waitExpectElement(descricaosped);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String novoTexto=descricaosped.getAttribute("value");
+		
+		System.out.println(valor);
+		System.out.println(novoTexto);
+		boolean sucesso = novoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		
+		return sucesso;
+		
 		//pesquisa esse id
-		pesquisar.sendKeys(idRegistro);
+		/*pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -87,7 +142,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		engrenagem.click();
+		engrenagem.click();*/
 	}	
 	
 	

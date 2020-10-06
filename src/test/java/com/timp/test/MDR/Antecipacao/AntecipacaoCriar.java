@@ -28,12 +28,12 @@ public class AntecipacaoCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoCriarPO = new AntecipacaoCriarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

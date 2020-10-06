@@ -7,7 +7,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
 
-public class AutomacoesBrbTest extends TestBaseSteven{
+public class AutomacoesBrb extends TestBaseSteven{
 	LoginBRB loginTest;
 	BRBAcessar brbAcessar;
 	paginacion paginacion;
@@ -75,7 +75,7 @@ public class AutomacoesBrbTest extends TestBaseSteven{
     @Test(priority = 2)
 	public void paginacion() {
     	
-		System.out.println("-------------------Psginação-------------------------");
+		System.out.println("-------------------Paginação-------------------------");
     	
 		paginacion = new paginacion();
 		
@@ -473,6 +473,7 @@ public class AutomacoesBrbTest extends TestBaseSteven{
 		exportar.exportarXLSX();
 		exportar.afterClass();
 		System.out.println("--------------------------------------------------");
+		
 		
 		
 	}

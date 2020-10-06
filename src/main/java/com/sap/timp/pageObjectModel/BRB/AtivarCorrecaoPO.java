@@ -55,9 +55,13 @@ public class AtivarCorrecaoPO extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
@@ -65,7 +69,7 @@ public class AtivarCorrecaoPO extends TestBaseSteven{
 
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
-
+		sleep(3000);
 		
 		List<WebElement> campo = driver.findElements(By.xpath("//*[@id=\"draggable-126\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

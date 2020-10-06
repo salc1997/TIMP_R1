@@ -77,6 +77,9 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
+	
+	@FindBy(xpath = "//li[text()=\"TA Instituição Financeira\"]")
+	public WebElement instituicaoO;
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -149,7 +152,7 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		
 		instituicao.click();
 		sleep(1000);
-		opcao.click();
+		instituicaoO.click();
 		sleep(1000);
 			
 		attributoNotToBeEmptyXpath("//*[@id=\"country\"]/div/div/input", "value");

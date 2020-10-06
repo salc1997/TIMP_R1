@@ -40,7 +40,7 @@ public class CenariosCorrecaoEditar extends TestBaseKathy{
 	}
 	
 	@Test(priority = 2)
-    public void cenariosCorrecaoEditar() {		
+    public void editar() {		
 		 boolean sucesso = cenariosCorrecaoEditarPO.cenariosCorrecaoEditar();
 		 assertTrue(sucesso, Editar);
     }

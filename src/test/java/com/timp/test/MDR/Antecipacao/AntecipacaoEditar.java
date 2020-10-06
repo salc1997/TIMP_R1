@@ -27,12 +27,12 @@ public class AntecipacaoEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoEditarPO = new AntecipacaoEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,7 +48,7 @@ public class AntecipacaoEditar extends TestBaseSteven{
 	
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void editar() {
 
 		boolean sucesso = antecipacaoEditarPO.editar();
 		

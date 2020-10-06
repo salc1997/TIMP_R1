@@ -2,6 +2,7 @@ package com.timp.test.MDR.LivrosFiscais.LivrosFiscais;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -28,12 +29,12 @@ public class LivrosFiscaisExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		livrosFiscaisExcluirPO = new LivrosFiscaisExcluirPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,7 +49,7 @@ public class LivrosFiscaisExcluir extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = livrosFiscaisExcluirPO.excluir();
 		

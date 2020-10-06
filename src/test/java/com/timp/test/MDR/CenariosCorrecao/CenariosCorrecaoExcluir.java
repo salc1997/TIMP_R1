@@ -41,7 +41,7 @@ public class CenariosCorrecaoExcluir extends TestBaseKathy {
 	}
 
 	@Test(priority = 2)
-    public void cenariosCorrecaoExcluir() {
+    public void excluir() {
     	boolean sucesso = cenariosCorrecaoExcluirPO.cenariosCorrecaoExcluir();
 		assertTrue(sucesso, Eliminado);
     }

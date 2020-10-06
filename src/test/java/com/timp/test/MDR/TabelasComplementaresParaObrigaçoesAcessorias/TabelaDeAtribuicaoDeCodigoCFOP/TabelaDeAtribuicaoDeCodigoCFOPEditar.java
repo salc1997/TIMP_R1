@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,12 +26,12 @@ public class TabelaDeAtribuicaoDeCodigoCFOPEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPEditarPO = new TabelaDeAtribuicaoDeCodigoCFOPEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

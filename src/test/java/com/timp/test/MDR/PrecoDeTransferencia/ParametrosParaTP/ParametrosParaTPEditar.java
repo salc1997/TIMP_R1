@@ -1,22 +1,21 @@
-package com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior;
+package com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP;
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorEditarPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditarPO;
 
-public class UtilizacaoDosCreditosEmPeriodoAnterioreditar extends TestBaseEliel{
-  
-	
-	
+public class ParametrosParaTPEditar extends TestBaseEliel {
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	UtilizacaoDosCreditosEmPeriodoAnteriorEditarPO utilizacaoDosCreditosEmPeriodoAnteriorEditarPO;
+	ParametrosParaTPEditarPO parametrosParaTPEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,14 +23,14 @@ public class UtilizacaoDosCreditosEmPeriodoAnterioreditar extends TestBaseEliel{
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		utilizacaoDosCreditosEmPeriodoAnteriorEditarPO = new UtilizacaoDosCreditosEmPeriodoAnteriorEditarPO();
+		parametrosParaTPEditarPO = new ParametrosParaTPEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,13 +48,11 @@ public class UtilizacaoDosCreditosEmPeriodoAnterioreditar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = utilizacaoDosCreditosEmPeriodoAnteriorEditarPO.editar();
+		boolean sucesso = parametrosParaTPEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
 
-	}	
-		
-	
+	}		
 	
 	
 	

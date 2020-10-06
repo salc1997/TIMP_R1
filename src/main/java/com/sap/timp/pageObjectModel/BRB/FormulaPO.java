@@ -103,9 +103,13 @@ public class FormulaPO extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
-		waitExpectElement(menu);
-		sleep(menuT);
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
@@ -297,9 +301,6 @@ public class FormulaPO extends TestBaseSteven{
 				
 				sucesso.add(df.format(resultado).equals(df.format(suma1C)));
 				sucesso.add(df.format(resultado).equals(df.format(suma2C)));
-				
-				
-			
 				
 				 
 			} catch (NumberFormatException ex) {

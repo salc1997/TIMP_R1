@@ -58,17 +58,21 @@ public class AtivarComentarioPO extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
-		waitExpectElement(menu);
-		sleep(menuT);
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
 		opcao.click();
 
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
-
 		
+		sleep(3000);
 		List<WebElement> campo = driver.findElements(By.xpath("//*[@id=\"draggable-126\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

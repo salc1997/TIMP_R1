@@ -30,12 +30,12 @@ public class FiliaisEditar extends TestBaseSteven{
 		filiaisEditarPO = new FiliaisEditarPO();
 	}
 	
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+
 	
 	@Test(priority = 0)
 	public void login() {

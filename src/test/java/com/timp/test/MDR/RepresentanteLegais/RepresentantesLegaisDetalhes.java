@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,9 +27,9 @@ public class RepresentantesLegaisDetalhes extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		representantesLegaisDetalhesPO= new RepresentantesLegaisDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,7 +45,7 @@ public class RepresentantesLegaisDetalhes extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = representantesLegaisDetalhesPO.detalhes();
 		
@@ -53,7 +54,9 @@ public class RepresentantesLegaisDetalhes extends TestBaseEliel{
 			assertTrue(sucesso.get(i), Detalhes);
 			
 		}
-	}		
+	}
+
+	
 	
 	
 	

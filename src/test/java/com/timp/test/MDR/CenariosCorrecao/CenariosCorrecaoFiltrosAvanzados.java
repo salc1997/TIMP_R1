@@ -43,7 +43,7 @@ public class CenariosCorrecaoFiltrosAvanzados extends TestBaseKathy{
    	}
 
    	@Test(priority = 2)
-    public void cenariosCorrecaoFiltros() {
+    public void filtros() {
    		ArrayList<Boolean> sucesso = cenariosCorrecaoFiltrosAvanzadosPO.tributo();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {

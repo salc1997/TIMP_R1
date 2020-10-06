@@ -31,9 +31,9 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 	classificaçaoDeContribuintesDoIPIVisualizarPO= new ClassificaçaoDeContribuintesDoIPIVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,7 +49,7 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = classificaçaoDeContribuintesDoIPIVisualizarPO.visualizar();
 		

@@ -31,9 +31,9 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		classificaçaoDeContribuintesDoIPIDetalhesPO = new ClassificaçaoDeContribuintesDoIPIDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

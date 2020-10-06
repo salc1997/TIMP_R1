@@ -42,7 +42,7 @@ public class TributosEditar extends TestBaseKathy{
   }
 
   @Test(priority = 2)
-  public void tributoEditar() {	 
+  public void editar() {	 
 	  boolean sucesso =  tributoEditarPO.tributosEditar();
 	  assertTrue(sucesso, Editar);
   }

@@ -28,12 +28,12 @@ public class DetalheEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		detalheEditarPO = new DetalheEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,7 +48,7 @@ public class DetalheEditar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		boolean sucesso = detalheEditarPO.editar();
 		

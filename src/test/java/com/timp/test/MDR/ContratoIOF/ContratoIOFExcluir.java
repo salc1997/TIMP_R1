@@ -26,9 +26,9 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contratoIOFEcluirPO = new ContratoIOFExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,7 +44,7 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Excluir() {
+	public void excluir() {
 
 		boolean sucesso= contratoIOFEcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

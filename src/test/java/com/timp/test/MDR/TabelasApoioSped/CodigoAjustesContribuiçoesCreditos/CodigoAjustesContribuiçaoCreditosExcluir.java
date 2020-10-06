@@ -28,9 +28,9 @@ public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçaoCreditosExcluirPO = new CodigoAjustesContribuiçaoCreditosExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,7 +46,7 @@ public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = codigoAjustesContribuiçaoCreditosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

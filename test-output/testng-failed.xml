@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriar">
+      <class name="com.timp.test.BRB.Eliminar">
         <methods>
-          <include name="criar"/>
+          <include name="eliminarLixeira"/>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="eliminar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriar -->
+      </class> <!-- com.timp.test.BRB.Eliminar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

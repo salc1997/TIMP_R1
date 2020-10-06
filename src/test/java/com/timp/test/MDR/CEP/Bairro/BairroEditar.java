@@ -27,12 +27,12 @@ public class BairroEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		bairroEditarPO = new BairroEditarPO();
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass(){
 		driver.close();
 	}
-	*/
+	
 	
 	@Test(priority = 0)
 	public void login() {
@@ -49,7 +49,7 @@ public class BairroEditar extends TestBaseSteven{
   
 	
 	 @Test(priority = 2)
-	  public void filtro() {
+	  public void editar() {
 		  
 		 boolean sucesso =  bairroEditarPO.editar();
 		 

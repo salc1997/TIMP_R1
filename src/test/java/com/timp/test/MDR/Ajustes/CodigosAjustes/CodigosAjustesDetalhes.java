@@ -33,12 +33,12 @@ public class CodigosAjustesDetalhes extends TestBaseSteven{
 		codigoAjustesDetalhesPO = new CodigoAjustesDetalhesPO();
 		
 	}
-	/*
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -53,7 +53,7 @@ public class CodigosAjustesDetalhes extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = codigoAjustesDetalhesPO.detalhes();
 		

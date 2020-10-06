@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -31,9 +32,9 @@ public class TabelaLograduroDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaLogradouroDetalhesPO = new TabelaLogradouroDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	 @AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {

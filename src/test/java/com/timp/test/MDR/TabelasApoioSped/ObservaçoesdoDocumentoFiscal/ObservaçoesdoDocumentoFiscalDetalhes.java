@@ -12,6 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocia
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalDetalhesPO;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -33,9 +34,9 @@ public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		observaçoesdoDocumentoFiscalDetalhesPO = new ObservaçoesdoDocumentoFiscalDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {

@@ -2,6 +2,7 @@ package com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,9 +24,9 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeObjetosDeOcorrenciasFiscaisCriarPO = new TiposDeObjetosDeOcorrenciasFiscaisCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {

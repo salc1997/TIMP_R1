@@ -44,7 +44,7 @@ public class AtivaçaoParaMunicipioExcluir extends TestBaseEliel {
 	  }
 
 	  @Test(priority = 2)
-	  public void Excluir() {
+	  public void excluir() {
 		  boolean sucesso = ativaçaoParaMunicipioExcluirPO.excluir();
 		  assertTrue(sucesso,Eliminado);
 	  }

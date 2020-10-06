@@ -30,9 +30,9 @@ public class CadasatroCondicaoVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroCondicaoVisualizarPO = new CadastroCondicaoVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,7 +48,7 @@ public class CadasatroCondicaoVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = cadastroCondicaoVisualizarPO.visualizar();
 		

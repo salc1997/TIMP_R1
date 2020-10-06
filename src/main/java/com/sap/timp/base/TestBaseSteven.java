@@ -72,9 +72,10 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
-		return driver;
 
+		driver.get(tc2);
+
+		return driver;
 	}
 	
 	public void close() {
@@ -127,8 +128,7 @@ public class TestBaseSteven {
 		valor = valor.replace(".", "");
 
 		return valor;
-		
-		
+
 	}
 	
 	public String remplazarComas(String valor) {
@@ -411,6 +411,10 @@ public class TestBaseSteven {
 		
 		return sorted; 
 	}
+	
+	
+	
+
 	
 	
 

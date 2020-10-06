@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLo
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -30,9 +31,9 @@ public class TabelaLogradouroExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaLogradouroExcluirPO = new TabelaLogradouroExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	  @AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,7 +49,7 @@ public class TabelaLogradouroExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		
 		boolean sucesso = tabelaLogradouroExcluirPO.eliminar();

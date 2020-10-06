@@ -49,8 +49,6 @@ public class AtivarComentario extends TestBaseSteven{
 	}
 	
 	
-	
-	
 	@Test(priority = 2)
 	public void ativarComentarios() {
 	

@@ -10,7 +10,7 @@ import com.sap.timp.base.TestBaseSteven;
 public class EmpresasEditarPO extends TestBaseSteven{
 	
 
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[21]")
+	@FindBy(xpath = "//li/div/span[text()=\"Empresas\"]")
 	public WebElement empresa;
 	
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div")

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal;
+package com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroNotaFiscal;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,45 +8,35 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
+public class CadastroNotaFiscalCriarPO extends TestBaseSteven{
 
 	
-	@FindBy(xpath = "//span[text()=\"Ocorrência Fiscal\"]")
-	public WebElement ocorrenciaFiscal;
+	@FindBy(xpath = "//span[text()=\"Parâmetros de Criação de Nota Fiscal\"]")
+	public WebElement parametrosCriacaoNotaFiscal;
 	
-	@FindBy(xpath = "//span[text()=\"Status de Ocorrência Fiscal\"]")
-	public WebElement statusOcorrencia;
+	@FindBy(xpath = "//span[text()=\"Cadastro de Nota Fiscal\"]")
+	public WebElement cadastroNotaFiscal;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div/div[2]")
+	@FindBy(xpath = "//div[contains(@class,\"companies\")]/div/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"state\"]/div/div/div/div[2]")
+	@FindBy(xpath = "//div[contains(@class,\"ufs\")]/div/div/div/div[2]")
 	public WebElement ufFilial;
 	
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div[2]")
+	@FindBy(xpath = "//div[contains(@class,\"branch\")]/div/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//button[@id=\"statusButton\"]")
-	public WebElement status;
+	@FindBy(xpath = "//div[contains(@class,\"taxes\")]/div/div/div/div[2]")
+	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@id=\"firstStatus\"]/div/div/div[2]")
-	public WebElement statusInicial;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Taxa de Imposto\")]")
+	public WebElement taxa;
 	
-	@FindBy(xpath = "//div[@id=\"lastStatus\"]/div/div/div[2]")
-	public WebElement statusFinal;
-	
-	@FindBy(xpath = "//textarea")
-	public WebElement descricao;
-
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data Inicial\")]")
-	public WebElement dataVigencia;
-	
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -57,8 +47,8 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//button[text()=\"Fechar\"]")
-	public WebElement fechar;
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
 	
 	@FindBy(xpath = "//div[@class=\"tr\" and @data-id]/div[4]/div")
 	public WebElement motivo;
@@ -66,27 +56,31 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	
-	
 	@FindBy(xpath = "//body")
 	public WebElement body;
-	/*
-	@FindBy(xpath = "")
-	public WebElement ;
-	*/
 	
 	
-	public StatusOcorrenciaFiscalCriarPO() {
+	
+	public CadastroNotaFiscalCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		
+		String url = driver.getCurrentUrl();
+		
+		
+		
 		sleep(2000);
-		ocorrenciaFiscal.click();
+		parametrosCriacaoNotaFiscal.click();
 		sleep(2000);
-		statusOcorrencia.click();
+		
+		if(url.contains("td1") || url.contains("tq1")) {
+			cadastroNotaFiscal.click();
+			sleep(2000);
+		}
+
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -109,49 +103,40 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		empresa.click();
 		sleep(1000);
 		opcao.click();
-		body.click();
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"state\"]/div/div/div/div", "class", "input-wrapper base-input  required");
-		
+		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		sleep(2000);
+
 		ufFilial.click();
-		sleep(1000);
+		sleep(2000);
 		opcao.click();
-		body.click();
+		opcao.sendKeys(Keys.ESCAPE);
+
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBeXpath("//div[contains(@class,\"branch\")]/div", "class", "input-element-wrapper");
+		sleep(1000);
 		
 		filial.click();
 		sleep(1000);
 		opcao.click();
+		//opcao.sendKeys(Keys.ESCAPE);
 		body.click();
+		//opcao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		status.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		statusInicial.click();
-		sleep(1000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
-		sleep(1000);
-		
-		statusFinal.click();
-		sleep(1000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
-		sleep(1000);
-		
-		fechar.click();
-		sleep(2000);
-		
-		descricao.sendKeys("Teste de Status da Ocorrência Fiscal");
 
-		dataVigencia.sendKeys(fechaActual());
+
+		tributo.click();
 		sleep(1000);
+		opcao.click();
+		opcao.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		
+		taxa.sendKeys("20");
+		
 		
 		sleep(2000);
 		gravar.click();
@@ -162,6 +147,9 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		sleep(2000);
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		biblioteca.click();
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -181,7 +169,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		
 		double idD = convertToDouble(id);
 		double idBD = convertToDouble(idB);
-
+		//compara pra ver se o novo id criado é realmente o ultimo
 		boolean sucesso = false;
 		
 		if (idBD > idD) {

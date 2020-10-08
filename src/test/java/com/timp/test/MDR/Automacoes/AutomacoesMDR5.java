@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 
 import com.sap.timp.base.TestBaseSteven;
-
+import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriarPO;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaCriar;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaDetalhes;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaEditar;
@@ -16,6 +16,11 @@ import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenci
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluir;
+import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar;
+import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosDetalhes;
+import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar;
+import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir;
+import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar;
 
 
 
@@ -45,7 +50,13 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	StatusOcorrenciaFiscalEditar statusOcorrenciaFiscalEditar;
 	StatusOcorrenciaFiscalExcluir statusOcorrenciaFiscalExcluir;
 	
+	//Parâmetros de Oficialização de Livros
 	
+	ParametrosOficializacaoLivrosCriar parametrosOficializacaoLivrosCriar;
+	ParametrosOficializacaoLivrosDetalhes parametrosOficializacaoLivrosDetalhes;
+	ParametrosOficializacaoLivrosEditar parametrosOficializacaoLivrosEditar;
+	ParametrosOficializacaoLivrosExcluir parametrosOficializacaoLivrosExcluir;
+	ParametrosOficializacaoLivrosVisualizar parametrosOficializacaoLivrosVisualizar;
 	
 	
 	
@@ -216,6 +227,79 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		
 	//18
+		
+		// Parâmetros de Oficialização de Livros
+
+		@Test(priority = 20)
+		public void parametrosOficializacaoLivrosCriar() {
+
+			System.out.println("-------------------Parâmetros de Oficialização de Livros-------------------------");
+
+			parametrosOficializacaoLivrosCriar = new ParametrosOficializacaoLivrosCriar();
+			parametrosOficializacaoLivrosCriar.beforeClass();
+			parametrosOficializacaoLivrosCriar.login();
+			parametrosOficializacaoLivrosCriar.acessarMDR();
+			parametrosOficializacaoLivrosCriar.criar();
+			parametrosOficializacaoLivrosCriar.afterClass();
+
+		}
+
+		@Test(priority = 21)
+		public void parametrosOficializacaoLivrosEditar() {
+
+			parametrosOficializacaoLivrosEditar = new ParametrosOficializacaoLivrosEditar();
+			parametrosOficializacaoLivrosEditar.beforeClass();
+			parametrosOficializacaoLivrosEditar.login();
+			parametrosOficializacaoLivrosEditar.acessarMDR();
+			parametrosOficializacaoLivrosEditar.editar();
+			parametrosOficializacaoLivrosEditar.afterClass();
+
+		}
+
+		@Test(priority = 22)
+		public void parametrosOficializacaoLivrosVisualizar() {
+
+			parametrosOficializacaoLivrosVisualizar = new ParametrosOficializacaoLivrosVisualizar();
+			parametrosOficializacaoLivrosVisualizar.beforeClass();
+			parametrosOficializacaoLivrosVisualizar.login();
+			parametrosOficializacaoLivrosVisualizar.acessarMDR();
+			parametrosOficializacaoLivrosVisualizar.visualizar();
+			parametrosOficializacaoLivrosVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 23)
+		public void parametrosOficializacaoLivrosDetalhes() {
+
+			parametrosOficializacaoLivrosDetalhes = new ParametrosOficializacaoLivrosDetalhes();
+			parametrosOficializacaoLivrosDetalhes.beforeClass();
+			parametrosOficializacaoLivrosDetalhes.login();
+			parametrosOficializacaoLivrosDetalhes.acessarMDR();
+			parametrosOficializacaoLivrosDetalhes.detalhes();
+			parametrosOficializacaoLivrosDetalhes.afterClass();
+
+		}
+
+
+		@Test(priority = 24)
+		public void parametrosOficializacaoLivrosExcluir() {
+
+			parametrosOficializacaoLivrosExcluir = new ParametrosOficializacaoLivrosExcluir();
+			parametrosOficializacaoLivrosExcluir.beforeClass();
+			parametrosOficializacaoLivrosExcluir.login();
+			parametrosOficializacaoLivrosExcluir.acessarMDR();
+			parametrosOficializacaoLivrosExcluir.excluir();
+			parametrosOficializacaoLivrosExcluir.afterClass();
+
+			System.out.println("-------------------Parâmetros de Oficialização de Livros Fin-------------------------");
+		}
+
+		
+		
+	//24
+		
+
+	//30
 		
 		
 		

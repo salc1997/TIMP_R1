@@ -87,6 +87,7 @@ import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasDetalhes;
 import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluir;
 import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar;
+import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaCriar;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaEditar;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaExcluir;
@@ -241,7 +242,7 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 	//Saldo Inicial Diferido
 	
 	SaldoInicialDiferidoCriar SaldoInicialDiferidoCriar;
-	
+	SaldoInicialDiferidoEditar saldoInicialDiferidoEditar;
 	
 	
 	//SCANC > Ajustes Dos Anexos
@@ -1312,6 +1313,21 @@ public class AutomacoesMDR2 extends TestBaseSteven{
 			SaldoInicialDiferidoCriar.acessarMDR();
 			SaldoInicialDiferidoCriar.criar();
 			SaldoInicialDiferidoCriar.afterClass();
+			
+
+
+		}
+		
+		@Test(priority = 105)
+		public void saldoInicialDiferidoEditar() {
+
+
+			saldoInicialDiferidoEditar = new SaldoInicialDiferidoEditar();
+			saldoInicialDiferidoEditar.beforeClass();
+			saldoInicialDiferidoEditar.login();
+			saldoInicialDiferidoEditar.acessarMDR();
+			saldoInicialDiferidoEditar.editar();
+			saldoInicialDiferidoEditar.afterClass();
 			
 			System.out.println("-------------------Saldo Inicial Diferido Fin-------------------------");
 

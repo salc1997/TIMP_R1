@@ -147,6 +147,12 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluir;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
+import com.timp.test.MDR.RegistroECAC.RegistroECACEditar;
+import com.timp.test.MDR.RegistroECAC.RegistroECACExcluir;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -360,6 +366,8 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		
 	//// Registro ECAC
 		RegistroECACCriar registroECACCriar;
+		RegistroECACEditar registroECACEditar;
+		RegistroECACExcluir registroECACExcluir;
 		
 	//Atividades Para Tributacao > Tipos De Servicos
 		TiposDeServicosCriar tiposDeServicosCriar;
@@ -384,6 +392,12 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ValoresParaMetodoPECEXDetalhes valoresParaMetodoPECEXDetalhes;
 		ValoresParaMetodoPECEXEditar valoresParaMetodoPECEXEditar;
 		ValoresParaMetodoPECEXExcluir valoresParaMetodoPECEXExcluir;
+	
+	//Reinf > Processos Adm/Judiciais
+		ProcessosAdmJudiciaisCriar processosAdmJudiciaisCriar;
+		ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
+		ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
+		ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias
@@ -1541,6 +1555,30 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 	
+	@Test(priority = 131)
+	public void registroECACEditar() {
+		registroECACEditar= new RegistroECACEditar();
+		registroECACEditar.beforeClass();
+		registroECACEditar.login();
+		registroECACEditar.acessarMDR();
+		registroECACEditar.editar();
+		registroECACEditar.afterClass();
+
+	}
+	
+	@Test(priority = 132)
+	public void registroECACExcluir() {
+		registroECACExcluir= new RegistroECACExcluir();
+		registroECACExcluir.beforeClass();
+		registroECACExcluir.login();
+		registroECACExcluir.acessarMDR();
+		registroECACExcluir.excluir();
+		registroECACExcluir.afterClass();
+		System.out.println("-------------------Registro ECAC Fim-------------------------");
+	}
+	
+	
+	
 	//136
 	//Atividades Para Tributacao > Tipos De Servicos
 	@Test(priority = 136)
@@ -1756,4 +1794,57 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	}
 	
 	//163
+	//Reinf > Processos Adm/Judiciais
+	
+	@Test(priority = 163)
+	public void processosAdmJudiciaisCriar() {
+		System.out.println("-------------------Reinf > Processos Adm/Judiciais-------------------------");
+		processosAdmJudiciaisCriar= new ProcessosAdmJudiciaisCriar();
+		processosAdmJudiciaisCriar.beforeClass();
+		processosAdmJudiciaisCriar.login();
+		processosAdmJudiciaisCriar.acessarMDR();
+		processosAdmJudiciaisCriar.criar();
+		processosAdmJudiciaisCriar.afterClass();
+
+	}
+	
+	@Test(priority = 164)
+	public void processosAdmJudiciaisEditar() {
+		
+		processosAdmJudiciaisEditar= new ProcessosAdmJudiciaisEditar();
+		processosAdmJudiciaisEditar.beforeClass();
+		processosAdmJudiciaisEditar.login();
+		processosAdmJudiciaisEditar.acessarMDR();
+		processosAdmJudiciaisEditar.editar();
+		processosAdmJudiciaisEditar.afterClass();
+
+	}
+	
+	@Test(priority = 165)
+	public void processosAdmJudiciaisDetalhes() {
+		
+		processosAdmJudiciaisDetalhes= new ProcessosAdmJudiciaisDetalhes();
+		processosAdmJudiciaisDetalhes.beforeClass();
+		processosAdmJudiciaisDetalhes.login();
+		processosAdmJudiciaisDetalhes.acessarMDR();
+		processosAdmJudiciaisDetalhes.detalhes();
+		processosAdmJudiciaisDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 166)
+	public void processosAdmJudiciaisExcluir() {
+		
+		processosAdmJudiciaisExcluir= new ProcessosAdmJudiciaisExcluir();
+		processosAdmJudiciaisExcluir.beforeClass();
+		processosAdmJudiciaisExcluir.login();
+		processosAdmJudiciaisExcluir.acessarMDR();
+		processosAdmJudiciaisExcluir.excluir();
+		processosAdmJudiciaisExcluir.afterClass();
+		
+		System.out.println("-------------------Reinf > Processos Adm/Judiciais Fim-------------------------");
+		
+
+	}
+	//169
 }

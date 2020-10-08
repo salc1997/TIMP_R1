@@ -91,8 +91,8 @@ public class RegistroECACEditarPO extends TestBaseEliel{
 		
 		//WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		//WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		WebElement menu = driver.findElement(By.xpath("//div[contains(@aria-label,\""+idRegistro+"\")]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[contains(@aria-label,\""+idRegistro+"\")]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[contains(@aria-label,\"Id: "+idRegistro+"\")]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[contains(@aria-label,\"Id: "+idRegistro+"\")]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
@@ -102,8 +102,9 @@ public class RegistroECACEditarPO extends TestBaseEliel{
 		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
 		sleep(3000);
 		
-		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		String valor = numerodocumento.getAttribute("value");
 

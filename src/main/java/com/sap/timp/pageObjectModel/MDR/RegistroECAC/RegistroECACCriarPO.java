@@ -114,10 +114,9 @@ public class RegistroECACCriarPO extends TestBaseEliel{
 		//criaçao
 		if (tc2 == true || tp1 == true ) {
 		novoregistro.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
-		sleep(2000);
+		sleep(3000);
 		empresa.click();
 		
 		sleep(2000);

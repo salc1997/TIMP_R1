@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.RegistroECAC;
+package com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,27 +7,32 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class RegistroECACExcluirPO extends TestBaseEliel{
+public class ProcessosAdmJudiciaisExcluirPO extends TestBaseEliel {
 	
-	@FindBy(xpath = "//span[text()=\"Registro ECAC\"]")
-	public WebElement registroecac;
+	@FindBy(xpath = "//span[text()=\"Reinf\"]")
+	public WebElement reinf;
 	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement siguiente;
+	@FindBy(xpath = "//span[text()=\"R1070 - Processos Adm. / Judiciais\"]")
+	public WebElement processosadmjudiciais;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
-	public RegistroECACExcluirPO() {
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	public WebElement siguiente;
+	
+	public ProcessosAdmJudiciaisExcluirPO() {
 
 		PageFactory.initElements(driver, this);
 	}
+
 	
 	public boolean excluir() {
 		sleep(2000);
-		registroecac.click();
+		reinf.click();
 		sleep(2000);
-		
+		processosadmjudiciais.click();
+		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -39,9 +44,9 @@ public class RegistroECACExcluirPO extends TestBaseEliel{
 		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
-		
-		WebElement menu = driver.findElement(By.xpath("//div[contains(@aria-label,\"Id: "+idRegistro+"\")]/div[1]/div"));
-		WebElement excluir = driver.findElement(By.xpath("//div[contains(@aria-label,\"Id: "+idRegistro+"\")]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
@@ -85,5 +90,4 @@ public class RegistroECACExcluirPO extends TestBaseEliel{
 		
 	}
 	
-
 }

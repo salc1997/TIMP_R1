@@ -1426,7 +1426,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		
 		// Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos
 
-		@Test(priority = 20)
+		@Test(priority = 102)
 		public void subItensValidosCriar() {
 
 			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos-------------------------");
@@ -1440,7 +1440,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 21)
+		@Test(priority = 103)
 		public void subItensValidosEditar() {
 
 			subItensValidosEditar = new SubItensValidosEditar();
@@ -1454,7 +1454,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 
 
-		@Test(priority = 24)
+		@Test(priority = 104)
 		public void subItensValidosExcluir() {
 
 			subItensValidosExcluir = new SubItensValidosExcluir();
@@ -1517,7 +1517,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		
 		// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF
 
-		@Test(priority = 20)
+		@Test(priority = 114)
 		public void tabelaComplementarParaDIRFCriar() {
 
 			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF-------------------------");
@@ -1531,7 +1531,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 21)
+		@Test(priority = 115)
 		public void tabelaComplementarParaDIRFEditar() {
 
 			tabelaComplementarParaDIRFEditar = new TabelaComplementarParaDIRFEditar();
@@ -1543,7 +1543,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 22)
+		@Test(priority = 116)
 		public void tabelaComplementarParaDIRFVisualizar() {
 
 			tabelaComplementarParaDIRFVisualizar = new TabelaComplementarParaDIRFVisualizar();
@@ -1555,7 +1555,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 23)
+		@Test(priority = 117)
 		public void tabelaComplementarParaDIRFDetalhes() {
 
 			tabelaComplementarParaDIRFDetalhes = new TabelaComplementarParaDIRFDetalhes();
@@ -1568,7 +1568,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		}
 
 
-		@Test(priority = 24)
+		@Test(priority = 118)
 		public void tabelaComplementarParaDIRFExcluir() {
 
 			tabelaComplementarParaDIRFExcluir = new TabelaComplementarParaDIRFExcluir();
@@ -1587,7 +1587,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		
 		// Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação
 
-		@Test(priority = 20)
+		@Test(priority = 120)
 		public void tabelaDeAtribuicaoDeCodigoCFOPCriar() {
 
 			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação-------------------------");
@@ -1601,7 +1601,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 21)
+		@Test(priority = 121)
 		public void tabelaDeAtribuicaoDeCodigoCFOPEditar() {
 
 			tabelaDeAtribuicaoDeCodigoCFOPEditar = new TabelaDeAtribuicaoDeCodigoCFOPEditar();
@@ -1613,7 +1613,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 22)
+		@Test(priority = 122)
 		public void tabelaDeAtribuicaoDeCodigoCFOPVisualzar() {
 
 			tabelaDeAtribuicaoDeCodigoCFOPVisualizar = new TabelaDeAtribuicaoDeCodigoCFOPVisualizar();
@@ -1625,7 +1625,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 23)
+		@Test(priority = 123)
 		public void tabelaDeAtribuicaoDeCodigoCFOPDetalhes() {
 
 			tabelaDeAtribuicaoDeCodigoCFOPDetalhes = new TabelaDeAtribuicaoDeCodigoCFOPDetalhes();
@@ -1638,7 +1638,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		}
 
 
-		@Test(priority = 24)
+		@Test(priority = 124)
 		public void tabelaDeAtribuicaoDeCodigoCFOPExcluir() {
 
 			tabelaDeAtribuicaoDeCodigoCFOPExcluir = new TabelaDeAtribuicaoDeCodigoCFOPExcluir();
@@ -1658,7 +1658,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		
 		// Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro
 
-		@Test(priority = 20)
+		@Test(priority = 126)
 		public void tabelaDeCodigoEClasseParaQuadroCriar() {
 
 			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro-------------------------");
@@ -1672,7 +1672,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 21)
+		@Test(priority = 127)
 		public void tabelaDeCodigoEClasseParaQuadroEditar() {
 
 			tabelaDeCodigoEClasseParaQuadroEditar = new TabelaDeCodigoEClasseParaQuadroEditar();
@@ -1684,7 +1684,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 22)
+		@Test(priority = 128)
 		public void tabelaDeCodigoEClasseParaQuadroVisualizar() {
 
 			tabelaDeCodigoEClasseParaQuadroVisualizar = new TabelaDeCodigoEClasseParaQuadroVisualizar();
@@ -1696,7 +1696,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 23)
+		@Test(priority = 129)
 		public void tabelaDeCodigoEClasseParaQuadroDetalhes() {
 
 			tabelaDeCodigoEClasseParaQuadroDetalhes = new TabelaDeCodigoEClasseParaQuadroDetalhes();
@@ -1709,7 +1709,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		}
 
 
-		@Test(priority = 24)
+		@Test(priority = 130)
 		public void tabelaDeCodigoEClasseParaQuadroExcluir() {
 
 			tabelaDeCodigoEClasseParaQuadroExcluir = new TabelaDeCodigoEClasseParaQuadroExcluir();

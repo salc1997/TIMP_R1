@@ -302,9 +302,6 @@ public class FormulaPO extends TestBaseSteven{
 				sucesso.add(df.format(resultado).equals(df.format(suma1C)));
 				sucesso.add(df.format(resultado).equals(df.format(suma2C)));
 				
-				
-			
-				
 				 
 			} catch (NumberFormatException ex) {
 				System.err.println("NumberFormatException: " + ex.getMessage());

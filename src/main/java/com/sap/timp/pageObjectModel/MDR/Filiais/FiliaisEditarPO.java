@@ -11,7 +11,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class FiliaisEditarPO extends TestBaseSteven {
 
-	@FindBy(xpath = "//span[text()=\"Filiais\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"Filiais\"]")
 	public WebElement filiais;
 
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div")

@@ -27,7 +27,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestBaseSteven {
 
 	// TC2
-	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
+	protected String tc2   = "http://as1-100-01-tc2:8000/timp/login/#/login";
 	// TD1
 	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 
@@ -72,7 +72,13 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+<<<<<<< HEAD
 		driver.get(tc2);
+=======
+		driver.get(tq1);
+
+
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 	}
 	

@@ -15,7 +15,7 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[1]")
 	public WebElement mostrar;
 	
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[21]")
+	@FindBy(xpath = "//li/div/span[text()=\"Empresas\"]")
 	public WebElement empresa;
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[2]/div/div[8]")
 	public WebElement siguiente;

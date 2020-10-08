@@ -3,57 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluir">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.NovoRelatorio">
-=======
-      <class name="com.timp.test.BRB.ComentarioLibre">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.RegistroECAC.RegistroECACEditar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="formatacaoEVariante"/>
-=======
-<<<<<<< HEAD
-          <include name="colunas"/>
-=======
-          <include name="comentarioLibre"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="acessarMDR"/>
-          <include name="excluir"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
-<<<<<<< HEAD
+          <include name="editar"/>
           <include name="beforeClass"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluir -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
-=======
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.RegistroECAC.RegistroECACEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

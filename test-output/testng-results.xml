@@ -2,63 +2,32 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="227393" started-at="2020-10-08T14:16:27Z" finished-at="2020-10-08T14:20:15Z">
-=======
-  <suite name="Default suite" duration-ms="116422" started-at="2020-10-08T00:19:51Z" finished-at="2020-10-08T00:21:47Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite name="Default suite" duration-ms="117166" started-at="2020-10-08T19:24:02Z" finished-at="2020-10-08T19:25:59Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="227393" started-at="2020-10-08T14:16:27Z" finished-at="2020-10-08T14:20:15Z">
-      <class name="com.timp.test.MDR.RegistroECAC.RegistroECACExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.RegistroECAC.RegistroECACExcluir@3a079870]" name="beforeClass" is-config="true" duration-ms="72999" started-at="2020-10-08T11:16:27Z" finished-at="2020-10-08T11:17:40Z">
-=======
-    <test name="Default test" duration-ms="116422" started-at="2020-10-08T00:19:51Z" finished-at="2020-10-08T00:21:47Z">
-      <class name="com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12325" started-at="2020-10-07T18:19:51Z" finished-at="2020-10-07T18:20:03Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test name="Default test" duration-ms="117166" started-at="2020-10-08T19:24:02Z" finished-at="2020-10-08T19:25:59Z">
+      <class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir@3a079870]" name="beforeClass" is-config="true" duration-ms="17073" started-at="2020-10-08T16:24:02Z" finished-at="2020-10-08T16:24:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.RegistroECAC.RegistroECACExcluir@3a079870]" name="login" duration-ms="30382" started-at="2020-10-08T11:17:40Z" finished-at="2020-10-08T11:18:11Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar@f2f2cc1]" name="login" duration-ms="7274" started-at="2020-10-07T18:20:03Z" finished-at="2020-10-07T18:20:10Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir@3a079870]" name="login" duration-ms="11265" started-at="2020-10-08T16:24:19Z" finished-at="2020-10-08T16:24:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.RegistroECAC.RegistroECACExcluir@3a079870]" name="acessarMDR" duration-ms="28807" started-at="2020-10-08T11:18:11Z" finished-at="2020-10-08T11:18:39Z">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar@f2f2cc1]" name="acessarMDR" duration-ms="9195" started-at="2020-10-07T18:20:10Z" finished-at="2020-10-07T18:20:19Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir@3a079870]" name="acessarMDR" duration-ms="13490" started-at="2020-10-08T16:24:31Z" finished-at="2020-10-08T16:24:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.RegistroECAC.RegistroECACExcluir@3a079870]" name="excluir" duration-ms="90875" started-at="2020-10-08T11:18:39Z" finished-at="2020-10-08T11:20:10Z">
-=======
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar@f2f2cc1]" name="editar" duration-ms="87543" started-at="2020-10-07T18:20:19Z" finished-at="2020-10-07T18:21:47Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir@3a079870]" name="excluir" duration-ms="71066" started-at="2020-10-08T16:24:44Z" finished-at="2020-10-08T16:25:55Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.RegistroECAC.RegistroECACExcluir@3a079870]" name="afterClass" is-config="true" duration-ms="4292" started-at="2020-10-08T11:20:10Z" finished-at="2020-10-08T11:20:15Z">
-=======
-        </test-method> <!-- editar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="70" started-at="2020-10-07T18:21:47Z" finished-at="2020-10-07T18:21:47Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir@3a079870]" name="afterClass" is-config="true" duration-ms="4243" started-at="2020-10-08T16:25:55Z" finished-at="2020-10-08T16:25:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.RegistroECAC.RegistroECACExcluir -->
-=======
-      </class> <!-- com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

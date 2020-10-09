@@ -24,7 +24,7 @@ public class TestBaseEliel extends TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(td1);
 
 		return driver;
 

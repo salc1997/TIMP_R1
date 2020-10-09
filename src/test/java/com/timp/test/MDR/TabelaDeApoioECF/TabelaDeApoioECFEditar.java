@@ -9,16 +9,15 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditarPO;
 
-public class TabelaDeApoioECFExcluir extends TestBaseSteven {
- 
-	
+public class TabelaDeApoioECFEditar extends TestBaseSteven {
+
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaDeApoioECFExcluirPO tabelaDeApoioECFExcluirPO;
+	TabelaDeApoioECFEditarPO tabelaDeApoioECFEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +25,7 @@ public class TabelaDeApoioECFExcluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaDeApoioECFExcluirPO = new TabelaDeApoioECFExcluirPO();
+		tabelaDeApoioECFEditarPO = new TabelaDeApoioECFEditarPO();
 	}
 	/*
 	 * @AfterClass public void afterClass(){ driver.close(); }
@@ -46,11 +45,12 @@ public class TabelaDeApoioECFExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void excluir() {
+	public void editar() {
 
 		
-		boolean sucesso = tabelaDeApoioECFExcluirPO.excluir();
-		assertTrue(sucesso, Eliminado);
+		boolean sucesso = tabelaDeApoioECFEditarPO.editar();
+		assertTrue(sucesso, semAcesso);
 		
 	}			
+	
 }

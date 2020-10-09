@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar">
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar">
         <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="Visualizar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar -->
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

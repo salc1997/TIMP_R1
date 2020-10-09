@@ -13,7 +13,6 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
 
-import org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

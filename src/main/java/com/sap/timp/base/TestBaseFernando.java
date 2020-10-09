@@ -7,7 +7,7 @@ public class TestBaseFernando extends TestBaseSteven {
 
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
-	public WebDriver initializationK() {
+	public WebDriver initializationF() {
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();

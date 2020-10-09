@@ -74,7 +74,6 @@ public class TestBaseSteven {
 		driver.manage().window().maximize();
 		driver.get(tq1);
 
-
 		return driver;
 	}
 	

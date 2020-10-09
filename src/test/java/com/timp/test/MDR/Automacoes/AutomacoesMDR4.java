@@ -112,6 +112,11 @@ import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApur
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoVisualizar;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriar;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhes;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraEditar;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluir;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizar;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
@@ -398,6 +403,14 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
 		ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
 		ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
+		
+	//Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
+		DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
+		DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;
+		DeterminacaoDeRelevanciaPorRegraEditar determinacaoDeRelevanciaPorRegraEditar;
+		DeterminacaoDeRelevanciaPorRegraVisualizar determinacaoDeRelevanciaPorRegraVisualizar;
+		DeterminacaoDeRelevanciaPorRegraExcluir determinacaoDeRelevanciaPorRegraExcluir;
+		
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias
@@ -1847,4 +1860,64 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 	//169
+	//Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
+	
+	@Test(priority = 169)
+	public void determinacaoDeRelevanciaPorRegraCriar() {
+		System.out.println("-------------------Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra-------------------------");
+		determinacaoDeRelevanciaPorRegraCriar= new DeterminacaoDeRelevanciaPorRegraCriar();
+		determinacaoDeRelevanciaPorRegraCriar.beforeClass();
+		determinacaoDeRelevanciaPorRegraCriar.login();
+		determinacaoDeRelevanciaPorRegraCriar.acessarMDR();
+		determinacaoDeRelevanciaPorRegraCriar.criar();
+		determinacaoDeRelevanciaPorRegraCriar.afterClass();
+
+	}
+	
+	@Test(priority = 170)
+	public void determinacaoDeRelevanciaPorRegraEditar() {
+		determinacaoDeRelevanciaPorRegraEditar= new DeterminacaoDeRelevanciaPorRegraEditar();
+		determinacaoDeRelevanciaPorRegraEditar.beforeClass();
+		determinacaoDeRelevanciaPorRegraEditar.login();
+		determinacaoDeRelevanciaPorRegraEditar.acessarMDR();
+		determinacaoDeRelevanciaPorRegraEditar.editar();
+		determinacaoDeRelevanciaPorRegraEditar.afterClass();
+
+	}
+	
+	@Test(priority = 171)
+	public void determinacaoDeRelevanciaPorRegraDetalhes() {
+		determinacaoDeRelevanciaPorRegraDetalhes= new DeterminacaoDeRelevanciaPorRegraDetalhes();
+		determinacaoDeRelevanciaPorRegraDetalhes.beforeClass();
+		determinacaoDeRelevanciaPorRegraDetalhes.login();
+		determinacaoDeRelevanciaPorRegraDetalhes.acessarMDR();
+		determinacaoDeRelevanciaPorRegraDetalhes.detalhes();
+		determinacaoDeRelevanciaPorRegraDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 172)
+	public void determinacaoDeRelevanciaPorRegraVisualizar() {
+		determinacaoDeRelevanciaPorRegraVisualizar= new DeterminacaoDeRelevanciaPorRegraVisualizar();
+		determinacaoDeRelevanciaPorRegraVisualizar.beforeClass();
+		determinacaoDeRelevanciaPorRegraVisualizar.login();
+		determinacaoDeRelevanciaPorRegraVisualizar.acessarMDR();
+		determinacaoDeRelevanciaPorRegraVisualizar.Visualizar();
+		determinacaoDeRelevanciaPorRegraVisualizar.afterClass();
+
+	}
+	
+	@Test(priority = 173)
+	public void determinacaoDeRelevanciaPorRegraExcluir() {
+		determinacaoDeRelevanciaPorRegraExcluir= new DeterminacaoDeRelevanciaPorRegraExcluir();
+		determinacaoDeRelevanciaPorRegraExcluir.beforeClass();
+		determinacaoDeRelevanciaPorRegraExcluir.login();
+		determinacaoDeRelevanciaPorRegraExcluir.acessarMDR();
+		determinacaoDeRelevanciaPorRegraExcluir.excluir();
+		determinacaoDeRelevanciaPorRegraExcluir.afterClass();
+		System.out.println("-------------------Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra Fim-------------------------");
+		
+	}
+	
+	//176
 }

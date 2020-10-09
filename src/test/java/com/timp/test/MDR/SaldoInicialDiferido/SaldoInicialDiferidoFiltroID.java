@@ -1,7 +1,8 @@
-package com.timp.test.MDR.TabelaDeApoioECF;
+package com.timp.test.MDR.SaldoInicialDiferido;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -9,16 +10,14 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriarPO;
+import com.sap.timp.pageObjectModel.MDR.SaldoInicialDiferido.SaldoInicialDiferidoFiltroIDPO;
 
-public class TabelaDeApoioECFExcluir extends TestBaseSteven {
+public class SaldoInicialDiferidoFiltroID extends TestBaseSteven{
  
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaDeApoioECFExcluirPO tabelaDeApoioECFExcluirPO;
+	SaldoInicialDiferidoFiltroIDPO saldoInicialDiferidoFiltroIDPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,11 +25,11 @@ public class TabelaDeApoioECFExcluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaDeApoioECFExcluirPO = new TabelaDeApoioECFExcluirPO();
+		saldoInicialDiferidoFiltroIDPO = new SaldoInicialDiferidoFiltroIDPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	 
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,11 +45,16 @@ public class TabelaDeApoioECFExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void excluir() {
+	public void filtro() {
 
 		
-		boolean sucesso = tabelaDeApoioECFExcluirPO.excluir();
-		assertTrue(sucesso, Eliminado);
+		boolean sucesso = saldoInicialDiferidoFiltroIDPO.filtro();
+		assertTrue(sucesso, semAcesso);
 		
 	}			
+	
+	
+	
+	
+	
 }

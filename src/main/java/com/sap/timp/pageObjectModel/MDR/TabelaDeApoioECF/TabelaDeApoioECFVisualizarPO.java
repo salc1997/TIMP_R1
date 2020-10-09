@@ -8,8 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaDeApoioECFVisualizarPO extends TestBaseEliel{
+public class TabelaDeApoioECFVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//ul/li[contains(@identifier,\"supportParameterECF\") and @tabindex=\"0\"]")
 	public WebElement tabelaecf;
@@ -34,23 +35,23 @@ public class TabelaDeApoioECFVisualizarPO extends TestBaseEliel{
 	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tabela ECF \"]")
-	public WebElement tabela;
-	
+	public WebElement tabelaE;
 	@FindBy(xpath = "//textarea[@placeholder=\"Descrição da Tabela ECF\"]")
-	public WebElement descricao;
-	
+	public WebElement descricaoTabelaE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição\")]")
+	public WebElement descricaoE;
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Versão Leiaute \"]")
-	public WebElement versaoleiaute;
+	public WebElement versaoLeiauteE;
 	
 
 	@FindBy(xpath = "//span[@id=\"table-ecf\"]")
-	public WebElement tabelavi;
-	
+	public WebElement tabelaV;
 	@FindBy(xpath = "//span[@id=\"description-ecf\"]")
-	public WebElement descricaovi;
-	
+	public WebElement descricaoTabelaV;
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement descricaoV;
 	@FindBy(xpath = "//span[@id=\"idLayout\"]")
-	public WebElement leautivi;
+	public WebElement versaoLeiauteV;
 	
 	
 	public TabelaDeApoioECFVisualizarPO() {
@@ -90,19 +91,21 @@ public ArrayList<Boolean> visualizar() {
 		//visualizar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(tabelavi);
+		waitExpectElement(tabelaV);
 		sleep(2000);
 		//visualizar
 		
-		String tabelavisualizar = tabelavi.getText();
-		String descricaovisualizar = descricaovi.getText();
-		String leautivisualizar = leautivi.getText();
+		String tabelaV1= tabelaV.getText();
+		String descricaTabelaV1 = descricaoTabelaV.getText();
+		String descricaoV1 = descricaoV.getText();
+		String versaoLeiauteV1 = versaoLeiauteV.getText();
 	
 		
 		
-		System.out.println( tabelavisualizar);
-		System.out.println(descricaovisualizar);
-		System.out.println(leautivisualizar);
+		System.out.println( tabelaV1);
+		System.out.println(descricaTabelaV1);
+		System.out.println(descricaoV1);
+		System.out.println(versaoLeiauteV1);
 	
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -129,30 +132,30 @@ public ArrayList<Boolean> visualizar() {
 		sleep(1000);
 		
 		editar.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		attributoNotToBeEmptyXpath("//input[contains(@placeholder,\"Descrição\")]", "value");
 		
-		//editar
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		String tabelaeditar=tabela.getAttribute("value");
-		String descricaoeditar=descricao.getAttribute("value");
-		String leautieditar=versaoleiaute.getAttribute("value");
+		String tabelaE1 = tabelaE.getAttribute("value");
+		String descricaoTabelaE1=descricaoTabelaE.getAttribute("value");
+		String descricaoE1 = descricaoE.getAttribute("value");
+		String versaoLeiauteE1=versaoLeiauteE.getAttribute("value");
 		
 	
-		System.out.println( tabelaeditar);
-		System.out.println(descricaoeditar);
-		System.out.println(leautieditar);
+		System.out.println( tabelaE1);
+		System.out.println(descricaoTabelaE1);
+		System.out.println(descricaoE1);
+		System.out.println(versaoLeiauteE1);
 	
 	
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
-		sucesso.add(tabelavisualizar.equals(tabelaeditar));
-		sucesso.add(descricaovisualizar.equals(descricaoeditar));
-		sucesso.add(leautivisualizar.equals(leautieditar));
+		sucesso.add(tabelaV1.equals(tabelaE1));
+		sucesso.add(descricaTabelaV1.equals(descricaoTabelaE1));
+		sucesso.add(descricaoV1.equals(descricaoE1));
+		sucesso.add(versaoLeiauteV1.equals(versaoLeiauteE1));
 
 		return sucesso;	
 

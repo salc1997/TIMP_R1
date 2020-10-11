@@ -13,11 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizarPO;
 
-public class TabelaDeApoioECFVisualizar extends TestBaseSteven{
- 
+public class TabelaDeApoioECFVisualizar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFVisualizarPO tabelaDeApoioECFVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -48,13 +49,10 @@ public class TabelaDeApoioECFVisualizar extends TestBaseSteven{
 
 		ArrayList<Boolean> sucesso = tabelaDeApoioECFVisualizarPO.visualizar();
 		System.out.println(sucesso);
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		}	
+	}
 }
-	
-	
-

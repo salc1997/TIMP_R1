@@ -11,10 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorEditarPO;
 
-public class UtilizacaoDosCreditosEmPeriodoAnteriorEditar extends TestBaseEliel{
-  
-	
-	
+public class UtilizacaoDosCreditosEmPeriodoAnteriorEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UtilizacaoDosCreditosEmPeriodoAnteriorEditarPO utilizacaoDosCreditosEmPeriodoAnteriorEditarPO;
@@ -27,12 +25,12 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		utilizacaoDosCreditosEmPeriodoAnteriorEditarPO = new UtilizacaoDosCreditosEmPeriodoAnteriorEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,19 +43,14 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = utilizacaoDosCreditosEmPeriodoAnteriorEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-		
-	
-	
-	
-	
+	}
+
 }

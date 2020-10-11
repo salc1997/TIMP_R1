@@ -13,9 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluirPO;
 
 public class TabelaDeApoioECFExcluir extends TestBaseSteven {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFExcluirPO tabelaDeApoioECFExcluirPO;
@@ -48,9 +46,8 @@ public class TabelaDeApoioECFExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaDeApoioECFExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 }

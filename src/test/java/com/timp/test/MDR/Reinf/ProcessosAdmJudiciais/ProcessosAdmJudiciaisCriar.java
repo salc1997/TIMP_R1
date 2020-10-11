@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdm
 
 public class ProcessosAdmJudiciaisCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ProcessosAdmJudiciaisCriarPO processosAdmJudiciaisCriarPO;
@@ -26,9 +25,11 @@ public class ProcessosAdmJudiciaisCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		processosAdmJudiciaisCriarPO = new ProcessosAdmJudiciaisCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,9 +47,8 @@ public class ProcessosAdmJudiciaisCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = processosAdmJudiciaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
+
+	}
 }

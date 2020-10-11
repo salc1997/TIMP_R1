@@ -14,10 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10VisualizarPO;
 
 public class TabelaDeDetalhamentosParaRegistro10Visualizar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeDetalhamentosParaRegistro10VisualizarPO tabelaDeDetalhamentosParaRegistro10VisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,9 +27,11 @@ public class TabelaDeDetalhamentosParaRegistro10Visualizar extends TestBaseEliel
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeDetalhamentosParaRegistro10VisualizarPO = new TabelaDeDetalhamentosParaRegistro10VisualizarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,12 +50,12 @@ public class TabelaDeDetalhamentosParaRegistro10Visualizar extends TestBaseEliel
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = tabelaDeDetalhamentosParaRegistro10VisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
+	}
+
 }

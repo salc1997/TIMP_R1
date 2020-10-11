@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizacaoDosCreditosFiscaisCriarPO;
 
-public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseEliel{
+public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -25,9 +25,11 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeUtilizacaoDosCreditosFiscaisCriarPO = new TiposDeUtilizacaoDosCreditosFiscaisCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,11 +47,9 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tiposDeUtilizacaoDosCreditosFiscaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
+
+	}
+
 }

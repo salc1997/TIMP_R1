@@ -20,7 +20,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoVisalizarPO;
 
 public class TabelaReceitasCreditoFiscalAntecipadoVisualizar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasCreditoFiscalAntecipadoVisalizarPO tabelaReceitasCreditoFiscalAntecipadoVisalizarPO;
@@ -33,9 +33,11 @@ public class TabelaReceitasCreditoFiscalAntecipadoVisualizar extends TestBaseSte
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaReceitasCreditoFiscalAntecipadoVisalizarPO = new TabelaReceitasCreditoFiscalAntecipadoVisalizarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -53,16 +55,11 @@ public class TabelaReceitasCreditoFiscalAntecipadoVisualizar extends TestBaseSte
 	@Test(priority = 2)
 	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = tabelaReceitasCreditoFiscalAntecipadoVisalizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}			
-			
-	
-	
-	
-	
+	}
+
 }

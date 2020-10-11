@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar
 import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO;
 
 public class MovimentoSCANCCriar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MovimentoSCANCCriarPO movimentoSCANCCriarPO;
@@ -29,9 +29,11 @@ public class MovimentoSCANCCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCCriarPO = new MovimentoSCANCCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,15 +51,10 @@ public class MovimentoSCANCCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = movimentoSCANCCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

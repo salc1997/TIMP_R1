@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 
-public class CodigoReceitaCriar extends TestBaseSteven{
+public class CodigoReceitaCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -27,7 +27,7 @@ public class CodigoReceitaCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoReceitaCriarPO = new CodigoReceitaCriarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -50,8 +50,8 @@ public class CodigoReceitaCriar extends TestBaseSteven{
 	public void criar() {
 
 		boolean sucesso = codigoReceitaCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

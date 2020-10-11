@@ -33,72 +33,61 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+public class ExcluirColuna extends TestBaseSteven {
 
-public class ExcluirColuna extends TestBaseSteven{
-	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ExcluirColunaPO excluirColunaPO;
 
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		excluirColunaPO = new ExcluirColunaPO();
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
-	
+
 	@Test(priority = 2)
 	public void excluirColunaDragNDrop() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = excluirColunaPO.DragNDrop();
 		System.out.println(sucesso + "Drag N Drop");
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), deletarColuna);
 		}
-		
-	}
 
+	}
 
 	@Test(priority = 3)
 	public void excluirColunaOpcao() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = excluirColunaPO.ExcluirColuna();
 		System.out.println(sucesso + "Opção");
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The element wasn't removed");
 		}
-		
-	}
 
-	
-	
-	
-	
+	}
 
 }

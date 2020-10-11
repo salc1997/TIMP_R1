@@ -11,10 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoCriarPO;
 
-
 public class ContasDefaultParaExtemporaneoCriar extends TestBaseEliel {
-  
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultParaExtemporaneoCriarPO contasDefaultParaExtemporaneoCriarPO;
@@ -27,9 +25,11 @@ public class ContasDefaultParaExtemporaneoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultParaExtemporaneoCriarPO = new ContasDefaultParaExtemporaneoCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,12 +47,9 @@ public class ContasDefaultParaExtemporaneoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = contasDefaultParaExtemporaneoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}		
-	
-	
-	
+
+	}
+
 }

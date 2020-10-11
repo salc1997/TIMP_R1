@@ -12,8 +12,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditarPO;
 
-public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
-  
+public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoDaSituaçaoTributariaEditarPO tabelaCodigoDaSituaçaoTributariaEditarPO;
@@ -26,7 +26,7 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoDaSituaçaoTributariaEditarPO = new TabelaCodigoDaSituaçaoTributariaEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -44,18 +44,13 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
-		String sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+
+		String sucesso = tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
-	
-	
-	
-	
+
 }

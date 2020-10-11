@@ -14,11 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosVisualizarPO;
 
 public class TabelaDeOutrosCreditosVisualizar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeOutrosCreditosVisualizarPO tabelaDeOutrosCreditosVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,9 +27,11 @@ public class TabelaDeOutrosCreditosVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeOutrosCreditosVisualizarPO = new TabelaDeOutrosCreditosVisualizarPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,12 +50,12 @@ public class TabelaDeOutrosCreditosVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = tabelaDeOutrosCreditosVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
+	}
+
 }

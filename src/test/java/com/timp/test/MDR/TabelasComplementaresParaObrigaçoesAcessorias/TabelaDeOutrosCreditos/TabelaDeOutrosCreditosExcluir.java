@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosExcluirPO;
 
-public class TabelaDeOutrosCreditosExcluir extends TestBaseEliel{
+public class TabelaDeOutrosCreditosExcluir extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeOutrosCreditosExcluirPO tabelaDeOutrosCreditosExcluirPO;
@@ -24,9 +24,11 @@ public class TabelaDeOutrosCreditosExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeOutrosCreditosExcluirPO = new TabelaDeOutrosCreditosExcluirPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,10 +46,9 @@ public class TabelaDeOutrosCreditosExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaDeOutrosCreditosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 
 }

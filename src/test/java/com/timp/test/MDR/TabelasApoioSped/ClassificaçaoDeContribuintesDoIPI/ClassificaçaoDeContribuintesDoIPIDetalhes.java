@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ClassificaçaoDeContribuintesDoIPIDetalhes extends TestBaseEliel {
-  
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -31,9 +30,11 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		classificaçaoDeContribuintesDoIPIDetalhesPO = new ClassificaçaoDeContribuintesDoIPIDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -52,14 +53,11 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhes extends TestBaseEliel {
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = classificaçaoDeContribuintesDoIPIDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-		
-	}	
-	
-	
-	
-	
+
+	}
+
 }

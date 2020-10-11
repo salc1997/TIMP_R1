@@ -12,54 +12,46 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 import com.sap.timp.pageObjectModel.MDR.Filiais.FiliaisVisualizarPO;
 
-public class AntecipacaoFiltros extends TestBaseSteven{
-  
+public class AntecipacaoFiltros extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AntecipacaoFiltrosPO antecipacaoFiltrosPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoFiltrosPO = new AntecipacaoFiltrosPO();
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-	
-	 @Test(priority = 2)
-	  public void visualizar() {
-		  
-		  String sucesso = antecipacaoFiltrosPO.filtro();
-		  
-		  assertEquals(sucesso, antecipacaoFiltrosPO.id.getText(),Filtros);
-		  
-	  }
-	
-	
-		
-	
-	
+
+	@Test(priority = 2)
+	public void visualizar() {
+
+		String sucesso = antecipacaoFiltrosPO.filtro();
+
+		assertEquals(sucesso, antecipacaoFiltrosPO.id.getText(), Filtros);
+
+	}
+
 }

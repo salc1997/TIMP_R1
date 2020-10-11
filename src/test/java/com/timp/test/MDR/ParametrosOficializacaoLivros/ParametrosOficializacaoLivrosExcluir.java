@@ -16,8 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class ParametrosOficializacaoLivrosExcluir extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosOficializacaoLivrosExcluirPO parametrosOficializacaoLivrosExcluirPO;
@@ -29,11 +28,13 @@ public class ParametrosOficializacaoLivrosExcluir extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosOficializacaoLivrosExcluirPO = new ParametrosOficializacaoLivrosExcluirPO();
-	
+
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -51,12 +52,9 @@ public class ParametrosOficializacaoLivrosExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = parametrosOficializacaoLivrosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

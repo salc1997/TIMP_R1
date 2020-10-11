@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorren
 public class TiposDeObjetosDeOcorrenciasFiscaisCriar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
- TiposDeObjetosDeOcorrenciasFiscaisCriarPO tiposDeObjetosDeOcorrenciasFiscaisCriarPO;
+	TiposDeObjetosDeOcorrenciasFiscaisCriarPO tiposDeObjetosDeOcorrenciasFiscaisCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,9 +24,11 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeObjetosDeOcorrenciasFiscaisCriarPO = new TiposDeObjetosDeOcorrenciasFiscaisCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,10 +46,9 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-			
+
+	}
+
 }

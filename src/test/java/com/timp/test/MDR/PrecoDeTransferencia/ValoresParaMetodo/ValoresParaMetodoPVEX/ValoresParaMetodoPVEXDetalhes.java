@@ -14,12 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhesPO;
 
 public class ValoresParaMetodoPVEXDetalhes extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPVEXDetalhesPO valoresParaMetodoPVEXDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,9 +27,11 @@ public class ValoresParaMetodoPVEXDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPVEXDetalhesPO = new ValoresParaMetodoPVEXDetalhesPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,11 +50,11 @@ public class ValoresParaMetodoPVEXDetalhes extends TestBaseEliel {
 	public void Detalhes() {
 
 		ArrayList<Boolean> sucesso = valoresParaMetodoPVEXDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
+	}
 }

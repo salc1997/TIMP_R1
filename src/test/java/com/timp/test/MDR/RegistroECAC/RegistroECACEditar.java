@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACEditarPO;
 
 public class RegistroECACEditar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroECACEditarPO registroECACEditarPO;
@@ -26,7 +25,7 @@ public class RegistroECACEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		registroECACEditarPO = new RegistroECACEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -44,15 +43,14 @@ public class RegistroECACEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = registroECACEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
+	}
+
 }

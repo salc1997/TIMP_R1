@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriarPO
 
 public class TabelaDeApoioECFCriar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFCriarPO tabelaDeApoioECFCriarPO;
@@ -46,10 +45,9 @@ public class TabelaDeApoioECFCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaDeApoioECFCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
+
+	}
+
 }

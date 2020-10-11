@@ -10,10 +10,8 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.prueba.*;
 
-public class AcessarP extends TestBaseSteven{
+public class AcessarP extends TestBaseSteven {
 	AcessarBrbPO acessarBrbPO;
-
-
 
 	@BeforeClass
 	public void beforeClass() {
@@ -21,20 +19,19 @@ public class AcessarP extends TestBaseSteven{
 
 		acessarBrbPO = new AcessarBrbPO();
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test
 	public void brbEntrar() {
-		
+
 		boolean sucesso = acessarBrbPO.acessar();
-		
+
 		assertTrue(sucesso, semAcesso);
-	
-	
+
 	}
 
 }

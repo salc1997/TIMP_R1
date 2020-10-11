@@ -11,8 +11,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirPO;
 
 public class S1060AmbientesDeTrablhoExcluir extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S1060AmbientesDeTrablhoExcluirPO s1060AmbientesDeTrablhoExcluirPO;
@@ -45,12 +44,9 @@ public class S1060AmbientesDeTrablhoExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = s1060AmbientesDeTrablhoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
-	
-	
+
+	}
+
 }

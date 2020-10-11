@@ -12,7 +12,6 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.RelacionamentoEntreQuadros.Relacio
 
 public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RelacionamentoEntreQuadrosCriaPO relacionamentoEntreQuadrosCriaPO;
@@ -45,11 +44,9 @@ public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = relacionamentoEntreQuadrosCriaPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
+
+	}
+
 }

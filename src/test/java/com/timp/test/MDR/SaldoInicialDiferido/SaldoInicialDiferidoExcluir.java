@@ -14,8 +14,8 @@ import com.sap.timp.pageObjectModel.MDR.SaldoInicialDiferido.SaldoInicialDiferid
 import com.sap.timp.pageObjectModel.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditarPO;
 import com.sap.timp.pageObjectModel.MDR.SaldoInicialDiferido.SaldoInicialDiferidoExcluirPO;
 
-public class SaldoInicialDiferidoExcluir extends TestBaseSteven{
- 
+public class SaldoInicialDiferidoExcluir extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SaldoInicialDiferidoExcluirPO saldoInicialDiferidoExcluirPO;
@@ -28,9 +28,11 @@ public class SaldoInicialDiferidoExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		saldoInicialDiferidoExcluirPO = new SaldoInicialDiferidoExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,14 +50,9 @@ public class SaldoInicialDiferidoExcluir extends TestBaseSteven{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = saldoInicialDiferidoExcluirPO.excluir();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
-	
-	
+
+	}
+
 }

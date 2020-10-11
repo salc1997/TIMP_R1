@@ -16,8 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class StatusOcorrenciaFiscalExcluir extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusOcorrenciaFiscalExcluirPO statusOcorrenciaFiscalExcluirPO;
@@ -30,9 +29,11 @@ public class StatusOcorrenciaFiscalExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		statusOcorrenciaFiscalExcluirPO = new StatusOcorrenciaFiscalExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +51,9 @@ public class StatusOcorrenciaFiscalExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = statusOcorrenciaFiscalExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

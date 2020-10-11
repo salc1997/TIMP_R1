@@ -13,23 +13,25 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhesPO;
 
-public class UtilizacaoDosCreditosNaApuracaoDetalhes extends TestBaseEliel{
+public class UtilizacaoDosCreditosNaApuracaoDetalhes extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UtilizacaoDosCreditosNaApuracaoDetalhesPO utilizacaoDosCreditosNaApuracaoDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		utilizacaoDosCreditosNaApuracaoDetalhesPO= new UtilizacaoDosCreditosNaApuracaoDetalhesPO();
+		utilizacaoDosCreditosNaApuracaoDetalhesPO = new UtilizacaoDosCreditosNaApuracaoDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,14 +50,12 @@ public class UtilizacaoDosCreditosNaApuracaoDetalhes extends TestBaseEliel{
 	public void Detalhes() {
 
 		ArrayList<Boolean> sucesso = utilizacaoDosCreditosNaApuracaoDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}	
-	
-	
-	
+	}
+
 }

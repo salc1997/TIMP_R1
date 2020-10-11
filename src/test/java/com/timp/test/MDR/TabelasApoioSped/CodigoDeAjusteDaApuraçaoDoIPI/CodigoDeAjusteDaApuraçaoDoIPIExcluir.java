@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoT
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaExcluirPO;
 
 public class CodigoDeAjusteDaApuraçaoDoIPIExcluir extends TestBaseSteven {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeAjusteDaApuraçaoDoIPIExcluirPO codigoDeAjusteDaApuraçaoDoIPIExcluirPO;
@@ -27,11 +27,13 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluir extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeAjusteDaApuraçaoDoIPIExcluirPO = new CodigoDeAjusteDaApuraçaoDoIPIExcluirPO();
-		
+
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,13 +50,10 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluir extends TestBaseSteven {
 
 	@Test(priority = 2)
 	public void excluir() {
-		
+
 		boolean sucesso = codigoDeAjusteDaApuraçaoDoIPIExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}		
-	
-	
-	
-	
+
+	}
+
 }

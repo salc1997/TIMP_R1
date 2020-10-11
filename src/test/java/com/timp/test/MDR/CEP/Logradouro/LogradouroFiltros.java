@@ -13,23 +13,23 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class LogradouroFiltros extends TestBaseKathy{
+public class LogradouroFiltros extends TestBaseKathy {
 	LoginTC loginTC;
-  	AcessarMDRPO acessarMDRPO;
-  	LogradouroFiltrosPO logradouroFiltrosPO;
-  
-  	@BeforeClass
-  	public void beforeClass() {
-	  	driver = initializationK();
-	  	loginTC = new LoginTC();
-	  	acessarMDRPO = new AcessarMDRPO();
-	  	logradouroFiltrosPO = new LogradouroFiltrosPO();
-  	}
+	AcessarMDRPO acessarMDRPO;
+	LogradouroFiltrosPO logradouroFiltrosPO;
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		logradouroFiltrosPO = new LogradouroFiltrosPO();
+	}
 
 	@AfterClass
 	public void afterClass() {
 	}
-	  
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -39,10 +39,10 @@ public class LogradouroFiltros extends TestBaseKathy{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-	
+
 	@Test(priority = 2)
 	public void filtros() {
-		boolean sucesso =  logradouroFiltrosPO.logradouroFiltros();
+		boolean sucesso = logradouroFiltrosPO.logradouroFiltros();
 		assertTrue(sucesso, Filtros);
 	}
 }

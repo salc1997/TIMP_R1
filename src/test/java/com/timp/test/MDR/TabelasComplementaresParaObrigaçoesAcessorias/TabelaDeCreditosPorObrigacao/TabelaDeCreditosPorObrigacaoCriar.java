@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCreditosPorObrigacao.TabelaDeCreditosPorObrigacaoCriarPO;
 
 public class TabelaDeCreditosPorObrigacaoCriar extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCreditosPorObrigacaoCriarPO tabelaDeCreditosPorObrigacaoCriarPO;
@@ -26,9 +25,11 @@ public class TabelaDeCreditosPorObrigacaoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeCreditosPorObrigacaoCriarPO = new TabelaDeCreditosPorObrigacaoCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,13 +47,9 @@ public class TabelaDeCreditosPorObrigacaoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaDeCreditosPorObrigacaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-			
-	
-	
-	
+
+	}
+
 }

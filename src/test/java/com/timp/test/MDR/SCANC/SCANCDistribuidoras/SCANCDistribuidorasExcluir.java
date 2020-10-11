@@ -18,7 +18,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCExcluir
 import com.sap.timp.pageObjectModel.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidoraExcluirPO;
 
 public class SCANCDistribuidorasExcluir extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SCANCDistribuidoraExcluirPO sCANCDistribuidoraExcluirPO;
@@ -31,9 +31,11 @@ public class SCANCDistribuidorasExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		sCANCDistribuidoraExcluirPO = new SCANCDistribuidoraExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -51,15 +53,10 @@ public class SCANCDistribuidorasExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = sCANCDistribuidoraExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

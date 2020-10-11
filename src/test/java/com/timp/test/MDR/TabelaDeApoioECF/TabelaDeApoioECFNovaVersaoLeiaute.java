@@ -15,7 +15,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVer
 
 public class TabelaDeApoioECFNovaVersaoLeiaute extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFNovaVersaoLeiautePO tabelaDeApoioECFNovaVersaoLeiautePO;
@@ -48,10 +47,9 @@ public class TabelaDeApoioECFNovaVersaoLeiaute extends TestBaseSteven {
 	@Test(priority = 2)
 	public void novaTabela() {
 
-		
 		boolean sucesso = tabelaDeApoioECFNovaVersaoLeiautePO.novaTabela();
 		assertTrue(sucesso, Criar);
-		
-	}			
-	
+
+	}
+
 }

@@ -16,8 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosCriarPO;
 
 public class TabelaLogradouroCriar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaLogradouroCriarPO tabelaLogradouroCriarPO;
@@ -30,9 +29,11 @@ public class TabelaLogradouroCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaLogradouroCriarPO = new TabelaLogradouroCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +51,9 @@ public class TabelaLogradouroCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaLogradouroCriarPO.criar();
 		assertTrue(sucesso, Criar);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

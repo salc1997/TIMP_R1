@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO
 import com.sap.timp.pageObjectModel.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidoraCriarPO;
 
 public class SCANCDistribuidorasCriar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SCANCDistribuidoraCriarPO scancDistribuidoraCriarPO;
@@ -29,9 +29,11 @@ public class SCANCDistribuidorasCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		scancDistribuidoraCriarPO = new SCANCDistribuidoraCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,15 +51,10 @@ public class SCANCDistribuidorasCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = scancDistribuidoraCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

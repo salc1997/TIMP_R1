@@ -25,9 +25,11 @@ public class TabelaDeProdutosExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeProdutosExcluirPO = new TabelaDeProdutosExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,11 +47,9 @@ public class TabelaDeProdutosExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaDeProdutosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
-	
+
+	}
+
 }

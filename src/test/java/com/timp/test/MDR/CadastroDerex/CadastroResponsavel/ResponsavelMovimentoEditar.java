@@ -11,49 +11,43 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel.*;
 
-public class ResponsavelMovimentoEditar extends TestBaseSteven{
+public class ResponsavelMovimentoEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ResponsavelMovimentoEditarPO responsavelMovimentoEditarPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		responsavelMovimentoEditarPO = new ResponsavelMovimentoEditarPO();
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
 
-	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-	
-	 @Test(priority = 2)
-	  public void editar() {
-		  
-		 responsavelMovimentoEditarPO.editar();
-	  }
-	
-	
+
+	@Test(priority = 2)
+	public void editar() {
+
+		responsavelMovimentoEditarPO.editar();
+	}
+
 }
-	

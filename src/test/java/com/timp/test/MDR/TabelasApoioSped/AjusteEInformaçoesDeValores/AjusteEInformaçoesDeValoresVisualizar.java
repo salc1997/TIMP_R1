@@ -16,21 +16,24 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.AjusteEInformaçoesDeVal
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizarPO;
 
 public class AjusteEInformaçoesDeValoresVisualizar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AjusteEInformaçoesDeValoresVisualizarPO ajusteEInformaçoesDeValoresVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		ajusteEInformaçoesDeValoresVisualizarPO= new AjusteEInformaçoesDeValoresVisualizarPO();
+		ajusteEInformaçoesDeValoresVisualizarPO = new AjusteEInformaçoesDeValoresVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,11 +52,10 @@ public class AjusteEInformaçoesDeValoresVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = ajusteEInformaçoesDeValoresVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-	}	
-	
-	
+	}
+
 }

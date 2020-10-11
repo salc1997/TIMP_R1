@@ -18,7 +18,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditarP
 
 public class TabelaDeApoioECFAtualizar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFAtualizarPO tabelaDeApoioECFAtualizarPO;
@@ -51,14 +50,13 @@ public class TabelaDeApoioECFAtualizar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void atualizar() {
 
-		
 		ArrayList<Boolean> sucesso = tabelaDeApoioECFAtualizarPO.autalizar();
-		
+
 		assertTrue(sucesso.get(0), Atualizar);
 		System.out.println(sucesso.get(0));
 		assertTrue(sucesso.get(1), Atualizar);
 		System.out.println(sucesso.get(1));
-		
-	}			
-	
+
+	}
+
 }

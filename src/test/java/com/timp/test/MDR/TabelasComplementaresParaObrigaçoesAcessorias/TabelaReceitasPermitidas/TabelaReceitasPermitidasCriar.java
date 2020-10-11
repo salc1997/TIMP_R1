@@ -14,9 +14,8 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasCriarPO;
 
-public class TabelaReceitasPermitidasCriar extends TestBaseSteven{
+public class TabelaReceitasPermitidasCriar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasPermitidasCriarPO tabelaReceitasPermitidasCriarPO;
@@ -29,9 +28,11 @@ public class TabelaReceitasPermitidasCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaReceitasPermitidasCriarPO = new TabelaReceitasPermitidasCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,12 +50,9 @@ public class TabelaReceitasPermitidasCriar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaReceitasPermitidasCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-			
-	
-	
+
+	}
+
 }

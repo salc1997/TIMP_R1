@@ -14,13 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVDetalhesPO;
 
 public class ValoresParaMetodoPVVDetalhes extends TestBaseEliel {
-	
-	
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPVVDetalhesPO valoresParaMetodoPVVDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -29,9 +27,11 @@ public class ValoresParaMetodoPVVDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPVVDetalhesPO = new ValoresParaMetodoPVVDetalhesPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +50,12 @@ public class ValoresParaMetodoPVVDetalhes extends TestBaseEliel {
 	public void Detalhes() {
 
 		ArrayList<Boolean> sucesso = valoresParaMetodoPVVDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
+	}
 
 }

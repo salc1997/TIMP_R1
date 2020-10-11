@@ -13,8 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunici
 import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoEditarPO;
 
 public class AtivaçaoParaMunicipioEditar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtivaçaoParaMunicipioEditarPO ativaçaoParaMunicipioEditarPO;
@@ -25,11 +24,13 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		ativaçaoParaMunicipioEditarPO= new AtivaçaoParaMunicipioEditarPO();
+		ativaçaoParaMunicipioEditarPO = new AtivaçaoParaMunicipioEditarPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,16 +47,13 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		//registroDeExportaçaoEditarPO.editar();
+
+		// registroDeExportaçaoEditarPO.editar();
 
 		String sucesso = ativaçaoParaMunicipioEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
-		
-	}		
-	
-	
-	
-	
+
+		assertEquals(sucesso, "edit", visualizaçar);
+
+	}
+
 }

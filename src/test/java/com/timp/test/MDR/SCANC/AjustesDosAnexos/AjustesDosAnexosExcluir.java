@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SCANC.AjustesDosAnexos.AjustesDosAnexosExcluirPO;
 
 public class AjustesDosAnexosExcluir extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AjustesDosAnexosExcluirPO ajustesDosAnexosExcluirPO;
@@ -25,9 +25,11 @@ public class AjustesDosAnexosExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		ajustesDosAnexosExcluirPO = new AjustesDosAnexosExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,11 +47,9 @@ public class AjustesDosAnexosExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = ajustesDosAnexosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
- 
+
+	}
+
 }

@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriarPO;
 
 public class ValoresParaMetodoPVEXCriar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPVEXCriarPO valoresParaMetodoPVEXCriarPO;
@@ -25,9 +25,11 @@ public class ValoresParaMetodoPVEXCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPVEXCriarPO = new ValoresParaMetodoPVEXCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,10 +47,9 @@ public class ValoresParaMetodoPVEXCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = valoresParaMetodoPVEXCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
- 
+
+	}
+
 }

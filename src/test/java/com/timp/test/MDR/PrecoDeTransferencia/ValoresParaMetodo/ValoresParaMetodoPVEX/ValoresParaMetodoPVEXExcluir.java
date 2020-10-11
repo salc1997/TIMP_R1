@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluirPO;
 
 public class ValoresParaMetodoPVEXExcluir extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPVEXExcluirPO valoresParaMetodoPVEXExcluirPO;
@@ -25,9 +25,11 @@ public class ValoresParaMetodoPVEXExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPVEXExcluirPO = new ValoresParaMetodoPVEXExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,11 +47,9 @@ public class ValoresParaMetodoPVEXExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = valoresParaMetodoPVEXExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
- 
-	
+
+	}
+
 }

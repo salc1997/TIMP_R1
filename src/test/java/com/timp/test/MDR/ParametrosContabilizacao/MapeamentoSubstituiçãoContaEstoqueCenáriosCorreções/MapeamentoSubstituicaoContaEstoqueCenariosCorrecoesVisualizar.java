@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaDetal
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO;
 
-public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar extends TestBaseSteven{
+public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -31,12 +31,12 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar exten
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -54,10 +54,10 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar exten
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 	}
 }

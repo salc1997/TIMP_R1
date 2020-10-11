@@ -14,24 +14,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TributosCriar extends TestBaseKathy{
+public class TributosCriar extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TributosCriarPO tributoCriarPO;
-	
+
 	@BeforeClass
-  	public void beforeClass() {
+	public void beforeClass() {
 		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tributoCriarPO = new TributosCriarPO();
-  	}
+	}
 
 	@AfterClass
-		public void afterClass() {
+	public void afterClass() {
 	}
-  
-  	@Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -40,9 +40,9 @@ public class TributosCriar extends TestBaseKathy{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-	
+
 	@Test(priority = 2)
-	public void criar() {		
+	public void criar() {
 		boolean sucesso = tributoCriarPO.criarTributo();
 		assertTrue(sucesso, Criar);
 	}

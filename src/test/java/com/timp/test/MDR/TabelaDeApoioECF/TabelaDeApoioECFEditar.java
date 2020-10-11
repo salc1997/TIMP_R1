@@ -14,7 +14,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditarP
 
 public class TabelaDeApoioECFEditar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFEditarPO tabelaDeApoioECFEditarPO;
@@ -47,10 +46,9 @@ public class TabelaDeApoioECFEditar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void editar() {
 
-		
 		boolean sucesso = tabelaDeApoioECFEditarPO.editar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
+
+	}
+
 }

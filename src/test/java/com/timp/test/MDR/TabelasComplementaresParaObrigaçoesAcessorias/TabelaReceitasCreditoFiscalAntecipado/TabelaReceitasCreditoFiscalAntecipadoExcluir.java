@@ -16,8 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoExcluirPO;
 
 public class TabelaReceitasCreditoFiscalAntecipadoExcluir extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasCreditoFiscalAntecipadoExcluirPO tabelaReceitasCreditoFiscalAntecipadoExcluirPO;
@@ -30,9 +29,11 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluir extends TestBaseSteven
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaReceitasCreditoFiscalAntecipadoExcluirPO = new TabelaReceitasCreditoFiscalAntecipadoExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +51,9 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluir extends TestBaseSteven
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoExcluirPO.excluir();
 		assertTrue(sucesso, Criar);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

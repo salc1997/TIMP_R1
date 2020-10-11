@@ -13,24 +13,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class FatorCreditamentoFiltros extends TestBaseKathy{
+public class FatorCreditamentoFiltros extends TestBaseKathy {
 	LoginTC loginTC;
-  	AcessarMDRPO acessarMDRPO;
-  	FatorCreditamentoFiltrosPO fatorCreditamentoFiltrosPO;
-  	
-    @BeforeClass
-    public void beforeClass() {
-    	driver = initializationK();
-	  	loginTC = new LoginTC();
-	  	acessarMDRPO = new AcessarMDRPO();
-	  	fatorCreditamentoFiltrosPO = new FatorCreditamentoFiltrosPO();
-    }
+	AcessarMDRPO acessarMDRPO;
+	FatorCreditamentoFiltrosPO fatorCreditamentoFiltrosPO;
 
-    @AfterClass
-    public void afterClass() {
-    }
-    
-    @Test(priority = 0)
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		fatorCreditamentoFiltrosPO = new FatorCreditamentoFiltrosPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -39,11 +39,11 @@ public class FatorCreditamentoFiltros extends TestBaseKathy{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-	
+
 	@Test(priority = 2)
-    public void filtros() {
-		boolean sucesso =  fatorCreditamentoFiltrosPO.fatorCrecimentoFiltros();
+	public void filtros() {
+		boolean sucesso = fatorCreditamentoFiltrosPO.fatorCrecimentoFiltros();
 		assertTrue(sucesso, Filtros);
-    }
+	}
 
 }

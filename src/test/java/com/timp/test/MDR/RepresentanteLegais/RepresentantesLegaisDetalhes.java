@@ -13,23 +13,25 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RepresentantesLegais.RepresentantesLegaisDetalhesPO;
 
-public class RepresentantesLegaisDetalhes extends TestBaseEliel{
-  
-	
+public class RepresentantesLegaisDetalhes extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RepresentantesLegaisDetalhesPO representantesLegaisDetalhesPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		representantesLegaisDetalhesPO= new RepresentantesLegaisDetalhesPO();
+		representantesLegaisDetalhesPO = new RepresentantesLegaisDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,18 +50,12 @@ public class RepresentantesLegaisDetalhes extends TestBaseEliel{
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = representantesLegaisDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
 	}
 
-	
-	
-	
-	
-	
-	
 }

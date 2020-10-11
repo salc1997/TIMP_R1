@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SCANC.AjustesDosAnexos.AjustesDosAnexosCriarPO;
 
 public class AjustesDosAnexosCriar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AjustesDosAnexosCriarPO ajustesDosAnexosCriarPO;
@@ -26,9 +25,11 @@ public class AjustesDosAnexosCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		ajustesDosAnexosCriarPO = new AjustesDosAnexosCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,12 +47,9 @@ public class AjustesDosAnexosCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = ajustesDosAnexosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
+
+	}
+
 }

@@ -11,9 +11,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditarPO;
 
 public class RelacionamentoEntreQuadrosEditar extends TestBaseEliel {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RelacionamentoEntreQuadrosEditarPO relacionamentoEntreQuadrosEditarPO;
@@ -26,12 +24,10 @@ public class RelacionamentoEntreQuadrosEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		relacionamentoEntreQuadrosEditarPO = new RelacionamentoEntreQuadrosEditarPO();
 	}
+
 	/*
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
-	*/
+	 * @AfterClass public void afterClass() { driver.close(); }
+	 */
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,15 +40,14 @@ public class RelacionamentoEntreQuadrosEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = relacionamentoEntreQuadrosEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
+	}
+
 }

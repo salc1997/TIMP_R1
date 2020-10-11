@@ -15,58 +15,42 @@ import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoEditarPO;
 import com.sap.timp.pageObjectModel.MDR.TESTE.PruebaTodosPO;
 
-public class PruebaTodos extends TestBaseSteven{
-	
+public class PruebaTodos extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	PruebaTodosPO pruebaTodosPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
+
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		pruebaTodosPO = new PruebaTodosPO();
 	}
-	
+
 	@Test(priority = 1)
 	public void visualizar() {
-		driver =initialization();
+		driver = initialization();
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		boolean sucesso =pruebaTodosPO.editar();
-		
+		boolean sucesso = pruebaTodosPO.editar();
+
 		assertTrue(sucesso, Editar);
 
 	}
-	
+
 	@Test(priority = 0)
 	public void criar() {
-		driver= initialization();
+		driver = initialization();
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = pruebaTodosPO.criarAntecipacao();
 
-		
 		assertTrue(sucesso, Criar);
-		
-		
-	}
-	
-	
-	
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
+	}
 
 }

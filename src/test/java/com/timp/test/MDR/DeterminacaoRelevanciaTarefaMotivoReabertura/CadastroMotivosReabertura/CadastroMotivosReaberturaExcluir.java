@@ -16,8 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class CadastroMotivosReaberturaExcluir extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroMotivosReaberturaExcluirPO cadastroMotivosReaberturaExcluirPO;
@@ -30,9 +29,11 @@ public class CadastroMotivosReaberturaExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroMotivosReaberturaExcluirPO = new CadastroMotivosReaberturaExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +51,9 @@ public class CadastroMotivosReaberturaExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = cadastroMotivosReaberturaExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

@@ -13,22 +13,24 @@ import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.Hierarqui
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaVisualizarPO;
 
 public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	HierarquiaDeCenariosDeCorreçaoVisualizarPO hierarquiaDeCenariosDeCorreçaoVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		hierarquiaDeCenariosDeCorreçaoVisualizarPO= new HierarquiaDeCenariosDeCorreçaoVisualizarPO();
+		hierarquiaDeCenariosDeCorreçaoVisualizarPO = new HierarquiaDeCenariosDeCorreçaoVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,9 +49,8 @@ public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseEliel {
 	public void visualizar() {
 
 		String sucesso = hierarquiaDeCenariosDeCorreçaoVisualizarPO.visualizar();
-		
-		 assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
-	}	
-	
-	
+
+		assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
+	}
+
 }

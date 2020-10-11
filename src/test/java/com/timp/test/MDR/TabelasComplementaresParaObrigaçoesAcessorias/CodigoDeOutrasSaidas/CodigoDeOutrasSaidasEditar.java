@@ -25,12 +25,12 @@ public class CodigoDeOutrasSaidasEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeOutrasSaidasEditarPO = new CodigoDeOutrasSaidasEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,15 +43,14 @@ public class CodigoDeOutrasSaidasEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = codigoDeOutrasSaidasEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
+	}
+
 }

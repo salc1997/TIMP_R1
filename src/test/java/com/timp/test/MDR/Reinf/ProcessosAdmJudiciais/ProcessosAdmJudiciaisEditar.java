@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditarPO;
 
-public class ProcessosAdmJudiciaisEditar extends TestBaseEliel{
+public class ProcessosAdmJudiciaisEditar extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -25,7 +25,7 @@ public class ProcessosAdmJudiciaisEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		processosAdmJudiciaisEditarPO = new ProcessosAdmJudiciaisEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -43,16 +43,14 @@ public class ProcessosAdmJudiciaisEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = processosAdmJudiciaisEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
-	
+	}
+
 }

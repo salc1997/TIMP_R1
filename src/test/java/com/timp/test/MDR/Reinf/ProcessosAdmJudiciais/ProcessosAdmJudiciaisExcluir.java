@@ -12,9 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirPO;
 
 public class ProcessosAdmJudiciaisExcluir extends TestBaseEliel {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ProcessosAdmJudiciaisExcluirPO processosAdmJudiciaisExcluirPO;
@@ -27,9 +25,11 @@ public class ProcessosAdmJudiciaisExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		processosAdmJudiciaisExcluirPO = new ProcessosAdmJudiciaisExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,10 +47,9 @@ public class ProcessosAdmJudiciaisExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = processosAdmJudiciaisExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 
 }

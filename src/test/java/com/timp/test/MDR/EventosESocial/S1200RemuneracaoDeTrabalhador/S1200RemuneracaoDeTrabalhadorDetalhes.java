@@ -14,22 +14,24 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhesPO;
 
 public class S1200RemuneracaoDeTrabalhadorDetalhes extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S1200RemuneracaoDeTrabalhadorDetalhesPO s1200RemuneracaoDeTrabalhadorDetalhesPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		s1200RemuneracaoDeTrabalhadorDetalhesPO= new S1200RemuneracaoDeTrabalhadorDetalhesPO();
+		s1200RemuneracaoDeTrabalhadorDetalhesPO = new S1200RemuneracaoDeTrabalhadorDetalhesPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,14 +50,12 @@ public class S1200RemuneracaoDeTrabalhadorDetalhes extends TestBaseEliel {
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = s1200RemuneracaoDeTrabalhadorDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-		
-	
- 
+	}
+
 }

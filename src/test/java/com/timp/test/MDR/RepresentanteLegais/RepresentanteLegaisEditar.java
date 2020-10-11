@@ -25,12 +25,12 @@ public class RepresentanteLegaisEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		representantesLegaisEditarPO = new RepresentantesLegaisEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,16 +43,14 @@ public class RepresentanteLegaisEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = representantesLegaisEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-
+	}
 
 }

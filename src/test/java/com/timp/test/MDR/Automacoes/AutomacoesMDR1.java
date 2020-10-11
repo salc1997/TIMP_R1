@@ -120,8 +120,6 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	EmpresaEditar empresaEditar;
 	EmpresasVisualizar empresaVisualizar;
 	EmpresasFiltros empresasFiltros;
-	
-
 
 	// Filiais
 	FiliaisEditar filiaisEditar;
@@ -281,16 +279,14 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes utilizacaoDosCreditosEmPeriodoAnteriorDetalhes;
 	UtilizacaoDosCreditosEmPeriodoAnteriorEditar utilizacaoDosCreditosEmPeriodoAnteriorEditar;
 	UtilizacaoDosCreditosEmPeriodoAnteriorVisualizar utilizacaoDosCreditosEmPeriodoAnteriorVisualizar;
-	UtilizacaoDosCreditosEmPeriodoAnteriorExcluir utilizacaoDosCreditosEmPeriodoAnteriorExcluir; 
+	UtilizacaoDosCreditosEmPeriodoAnteriorExcluir utilizacaoDosCreditosEmPeriodoAnteriorExcluir;
 	// Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração
-	
+
 	UtilizacaoDosCreditosNaApuracaoCriar utilizacaoDosCreditosNaApuracaoCriar;
 	UtilizacaoDosCreditosNaApuracaoDetalhes utilizacaoDosCreditosNaApuracaoDetalhes;
 	UtilizacaoDosCreditosNaApuracaoEditar utilizacaoDosCreditosNaApuracaoEditar;
 	UtilizacaoDosCreditosNaApuracaoExcluir utilizacaoDosCreditosNaApuracaoExcluir;
 	UtilizacaoDosCreditosNaApuracaoVisualizar utilizacaoDosCreditosNaApuracaoVisualizar;
-	
-	
 
 	// --------------------------------------------------------------------------------------------------
 
@@ -1466,7 +1462,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	@Test(priority = 88)
 	public void codigosDeCreditoCriarFiscalCriar() {
 
-		System.out.println("-------------------Controle De crédito Tributario > Código Crédito-------------------------");
+		System.out
+				.println("-------------------Controle De crédito Tributario > Código Crédito-------------------------");
 
 		codigosDeCreditoCriar = new CodigosDeCreditoCriar();
 		codigosDeCreditoCriar.beforeClass();
@@ -1523,7 +1520,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		codigosDeCreditoExcluir.excluir();
 		codigosDeCreditoExcluir.afterClass();
 
-		System.out.println("-------------------Controle De crédito Tributario > Código Crédito Fin-------------------------");
+		System.out.println(
+				"-------------------Controle De crédito Tributario > Código Crédito Fin-------------------------");
 	}
 
 	// ControleDeCreditoTributario > Limite De Credito A Utilizar
@@ -1598,7 +1596,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	@Test(priority = 98)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarCriar() {
 
-		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior-------------------------");
+		System.out.println(
+				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior-------------------------");
 
 		utilizacaoDosCreditosEmPeriodoAnteriorCriar = new UtilizacaoDosCreditosEmPeriodoAnteriorCriar();
 		utilizacaoDosCreditosEmPeriodoAnteriorCriar.beforeClass();
@@ -1630,10 +1629,9 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.acessarMDR();
 		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.detalhes();
 		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.afterClass();
-		
-		
+
 	}
-	
+
 	@Test(priority = 101)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorVisualizar() {
 
@@ -1643,9 +1641,9 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosEmPeriodoAnteriorVisualizar.acessarMDR();
 		utilizacaoDosCreditosEmPeriodoAnteriorVisualizar.Visualizar();
 		utilizacaoDosCreditosEmPeriodoAnteriorVisualizar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 102)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorExcluir() {
 
@@ -1655,18 +1653,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosEmPeriodoAnteriorExcluir.acessarMDR();
 		utilizacaoDosCreditosEmPeriodoAnteriorExcluir.excluir();
 		utilizacaoDosCreditosEmPeriodoAnteriorExcluir.afterClass();
-		
-		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior Fin-------------------------");
+
+		System.out.println(
+				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior Fin-------------------------");
 
 	}
-	
-	
+
 	// Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração
-	
+
 	@Test(priority = 103)
 	public void utilizacaoDosCreditosNaApuracaoCriar() {
 
-		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração-------------------------");
+		System.out.println(
+				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração-------------------------");
 
 		utilizacaoDosCreditosNaApuracaoCriar = new UtilizacaoDosCreditosNaApuracaoCriar();
 		utilizacaoDosCreditosNaApuracaoCriar.beforeClass();
@@ -1713,7 +1712,6 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-
 	@Test(priority = 107)
 	public void utilizacaoDosCreditosNaApuracaoExcluir() {
 
@@ -1724,10 +1722,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosNaApuracaoExcluir.excluir();
 		utilizacaoDosCreditosNaApuracaoExcluir.afterClass();
 
-		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração Fin-------------------------");
+		System.out.println(
+				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração Fin-------------------------");
 	}
-
-		
-
 
 }

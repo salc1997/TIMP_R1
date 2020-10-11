@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO
 import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCEditarPO;
 
 public class ProductosSCANCEditar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ProdutosSCANCEditarPO produtosSCANCEditarPO;
@@ -30,8 +30,10 @@ public class ProductosSCANCEditar extends TestBaseSteven {
 		produtosSCANCEditarPO = new ProdutosSCANCEditarPO();
 	}
 
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,15 +51,10 @@ public class ProductosSCANCEditar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void editar() {
 
-		
 		boolean sucesso = produtosSCANCEditarPO.editar();
-		
+
 		assertTrue(sucesso, Criar);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

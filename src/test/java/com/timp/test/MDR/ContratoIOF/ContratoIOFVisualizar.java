@@ -17,10 +17,11 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ContratoIOFVisualizar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContratoIOFVisualizarPO contratoIOFVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -29,9 +30,11 @@ public class ContratoIOFVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contratoIOFVisualizarPO = new ContratoIOFVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,17 +53,17 @@ public class ContratoIOFVisualizar extends TestBaseEliel {
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = contratoIOFVisualizarPO.visualizar();
-		
-		 for (int i = 0; i < sucesso.size(); i++) {
-				
-				assertTrue(sucesso.get(i), visualizaçar);
-				
-			}
-		
-		//assertEquals(sucesso, "edit", visualizaçar);
-		
-		 //Teste pra conferir se conseguiu acesssar o sistema
+
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), visualizaçar);
+
+		}
+
+		// assertEquals(sucesso, "edit", visualizaçar);
+
+		// Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(contratoIOFVisualizarPO.mostrar.isDisplayed(), semAcesso);
 	}
-  
+
 }

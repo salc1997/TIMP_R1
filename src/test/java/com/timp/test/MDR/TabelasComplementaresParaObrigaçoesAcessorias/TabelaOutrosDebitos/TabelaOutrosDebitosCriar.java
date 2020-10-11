@@ -14,8 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class TabelaOutrosDebitosCriar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelasOutrosDebitosCriarPO tabelasOutrosDebitosCriarPO;
@@ -28,9 +27,11 @@ public class TabelaOutrosDebitosCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelasOutrosDebitosCriarPO = new TabelasOutrosDebitosCriarPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,12 +49,9 @@ public class TabelaOutrosDebitosCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelasOutrosDebitosCriarPO.criar();
 		assertTrue(sucesso, Criar);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

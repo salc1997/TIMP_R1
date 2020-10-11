@@ -20,7 +20,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosVisualizarPO;
 
 public class ParametrosOficializacaoLivrosVisualizar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosOficializacaoLivrosVisualizarPO parametrosOficializacaoLivrosVisualizarPO;
@@ -33,9 +33,11 @@ public class ParametrosOficializacaoLivrosVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosOficializacaoLivrosVisualizarPO = new ParametrosOficializacaoLivrosVisualizarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -53,16 +55,11 @@ public class ParametrosOficializacaoLivrosVisualizar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = parametrosOficializacaoLivrosVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}			
-			
-	
-	
-	
-	
+	}
+
 }

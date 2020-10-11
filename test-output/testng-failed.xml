@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhes">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar">
+=======
+      <class name="com.timp.test.MDR.RegistroECAC.RegistroECACEditar">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="novaTabela"/>
+=======
+<<<<<<< HEAD
+          <include name="detalhes"/>
+=======
+<<<<<<< HEAD
+          <include name="Visualizar"/>
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+          <include name="editar"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhes -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar -->
+=======
+      </class> <!-- com.timp.test.MDR.RegistroECAC.RegistroECACEditar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

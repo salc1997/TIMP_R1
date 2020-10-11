@@ -25,7 +25,6 @@ public class TestBaseEliel extends TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(td1);
-
 		return driver;
 
 	}

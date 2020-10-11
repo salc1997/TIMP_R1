@@ -3,25 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar">
-=======
-      <class name="com.timp.test.MDR.RegistroECAC.RegistroECACEditar">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute">
         <methods>
-<<<<<<< HEAD
-          <include name="Visualizar"/>
-=======
-          <include name="afterClass"/>
-          <include name="editar"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="novaTabela"/>
           <include name="beforeClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar -->
-=======
-      </class> <!-- com.timp.test.MDR.RegistroECAC.RegistroECACEditar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

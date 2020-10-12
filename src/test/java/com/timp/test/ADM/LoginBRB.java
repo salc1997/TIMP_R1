@@ -20,42 +20,32 @@ import org.testng.annotations.BeforeMethod;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginPage;
 
+public class LoginBRB extends TestBaseSteven {
 
-
-public class LoginBRB extends TestBaseSteven{
-	
 	LoginPage loginPage;
 
-	
 	public LoginBRB() {
 		super();
 	}
-	
-	
+
 	@BeforeClass
-    public void beforeClass() {
-		
-    	driver = initialization();
-    	loginPage = new LoginPage();
+	public void beforeClass() {
 
+		driver = initialization();
+		loginPage = new LoginPage();
 
-    }
-	
+	}
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-    
-    
-	@Test(priority = 0)
-	public void Login(){
-		
-		
-		loginPage.login();
-	
-				
-		
-	}
 
+	@Test(priority = 0)
+	public void Login() {
+
+		loginPage.login();
+
+	}
 
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.CEP.Bairro.BairroCriar">
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis">
         <methods>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="criar"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CEP.Bairro.BairroCriar -->
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

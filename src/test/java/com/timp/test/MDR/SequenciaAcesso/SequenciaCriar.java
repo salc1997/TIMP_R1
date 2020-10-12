@@ -29,7 +29,7 @@ public class SequenciaCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaCriarPO = new SequenciaCriarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

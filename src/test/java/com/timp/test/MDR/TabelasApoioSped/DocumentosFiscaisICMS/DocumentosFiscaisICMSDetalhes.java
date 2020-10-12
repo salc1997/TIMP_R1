@@ -27,7 +27,7 @@ public class DocumentosFiscaisICMSDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		documentosFiscaisICMSDetalhesPO = new DocumentosFiscaisICMSDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

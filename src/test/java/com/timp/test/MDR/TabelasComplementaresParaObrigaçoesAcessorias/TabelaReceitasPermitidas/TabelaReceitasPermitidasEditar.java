@@ -39,7 +39,7 @@ public class TabelaReceitasPermitidasEditar extends TestBaseSteven {
 	public void login() {
 		loginTC.login();
 
-	}
+	} 
 
 	@Test(priority = 1)
 	public void acessarMDR() {

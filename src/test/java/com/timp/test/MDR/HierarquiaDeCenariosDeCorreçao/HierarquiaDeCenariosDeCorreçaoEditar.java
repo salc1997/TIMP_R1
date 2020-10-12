@@ -25,7 +25,7 @@ public class HierarquiaDeCenariosDeCorreçaoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		hierarquiaDeCenariosDeCorreçaoEditarPO = new HierarquiaDeCenariosDeCorreçaoEditarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

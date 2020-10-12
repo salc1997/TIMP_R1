@@ -25,7 +25,7 @@ public class AgrupadorDeCFOPExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		agrupadorDeCFOPExcluirPO = new AgrupadorDeCFOPExcluirPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

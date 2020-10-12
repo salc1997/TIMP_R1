@@ -19,7 +19,7 @@ public class S1250AquisicaoDeProducaoRuralEditar extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();

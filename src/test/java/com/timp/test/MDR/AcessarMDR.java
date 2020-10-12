@@ -37,7 +37,7 @@ public class AcessarMDR extends TestBaseSteven {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 2)
 	public void MDREntrar() {
 

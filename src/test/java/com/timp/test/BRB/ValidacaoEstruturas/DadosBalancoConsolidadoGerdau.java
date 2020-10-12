@@ -18,7 +18,7 @@ public class DadosBalancoConsolidadoGerdau extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	DadosBalancoConsolidadoGerdauPO dadosBalancoConsolidadoGerdauPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

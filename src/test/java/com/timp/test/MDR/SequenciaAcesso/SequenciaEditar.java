@@ -25,7 +25,7 @@ public class SequenciaEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaEditarPO = new SequenciaEditarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

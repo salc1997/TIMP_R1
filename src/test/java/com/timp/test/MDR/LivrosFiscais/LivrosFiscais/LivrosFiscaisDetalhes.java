@@ -30,7 +30,7 @@ public class LivrosFiscaisDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		livrosFiscaisDetalhesPO = new LivrosFiscaisDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

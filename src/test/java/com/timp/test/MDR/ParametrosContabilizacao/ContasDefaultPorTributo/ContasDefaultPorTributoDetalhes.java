@@ -26,7 +26,7 @@ public class ContasDefaultPorTributoDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultPorTributoDetalhesPO = new ContasDefaultPorTributoDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -42,7 +42,7 @@ public class CodigoReceitaDetalhes extends TestBaseSteven {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 

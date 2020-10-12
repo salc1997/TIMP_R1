@@ -105,7 +105,7 @@ import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInf
 public class AutomacoesMDR2 extends TestBaseSteven {
 
 	// Detalhe Tipo Tributo
-
+ 
 	DetalheCriar detalheTipoTributoCriar;
 	DetalheEditar detalheTipoTributoEditar;
 	DetalheExcluir detalheTipoTributoExcluir;

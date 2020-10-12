@@ -27,7 +27,7 @@ public class CodigoContribuiçaoSocialApuradaCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContribuicaoSocialApuradaCriarPO = new CodigoContribuicaoSocialApuradaCriarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -19,7 +19,7 @@ public class AgrupadoPeloCampo extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	AgrupadoPeloCampoPO agrupadoPeloCampoPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

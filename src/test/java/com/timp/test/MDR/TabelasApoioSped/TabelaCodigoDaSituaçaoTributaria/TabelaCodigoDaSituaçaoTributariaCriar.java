@@ -25,7 +25,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoDaSituaçaoTributariaCriarPO = new TabelaCodigoDaSituaçaoTributariaCriarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -44,7 +44,7 @@ public class InclusaoDeCamposMarDetalhes extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-
+ 
 	@Test(priority = 2)
 	public void detalhes() {
 

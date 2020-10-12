@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.*;
 
 public class CampoOutput extends TestBaseSteven {
-
+  
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	CampoOutputPO campoOutputPO;

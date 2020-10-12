@@ -27,7 +27,7 @@ public class SequenciaFiltros extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaFiltrosPO = new SequenciaFiltrosPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

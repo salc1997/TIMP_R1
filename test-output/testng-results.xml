@@ -1,33 +1,654 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results total="3" passed="2" failed="1" skipped="0">
+=======
 <testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="4" passed="4">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="1" passed="1">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="1" total="3" passed="2">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="1" total="3" passed="2">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <suite started-at="2020-07-21T21:47:27Z" name="Default suite" finished-at="2020-07-21T21:49:26Z" duration-ms="119293">
+=======
+  <suite name="Default suite" duration-ms="231629" started-at="2020-08-23T01:33:10Z" finished-at="2020-08-23T01:37:01Z">
+=======
+  <suite name="Default suite" duration-ms="40204" started-at="2020-08-25T15:48:07Z" finished-at="2020-08-25T15:48:47Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="112793" started-at="2020-08-26T13:40:15Z" finished-at="2020-08-26T13:42:08Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="114978" started-at="2020-08-21T22:34:53Z" finished-at="2020-08-21T22:36:48Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="109962" started-at="2020-08-25T13:03:59Z" finished-at="2020-08-25T13:05:49Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="95960" started-at="2020-08-21T22:40:45Z" finished-at="2020-08-21T22:42:21Z">
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="112161" started-at="2020-08-25T02:58:25Z" finished-at="2020-08-25T03:00:17Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="90922" started-at="2020-08-27T13:00:18Z" finished-at="2020-08-27T13:01:49Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="136576" started-at="2020-08-26T23:38:44Z" finished-at="2020-08-26T23:41:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="97419" started-at="2020-08-29T01:43:42Z" finished-at="2020-08-29T01:45:20Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="170286" started-at="2020-09-01T15:17:14Z" finished-at="2020-09-01T15:20:04Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="113849" started-at="2020-09-03T17:01:18Z" finished-at="2020-09-03T17:03:11Z">
+=======
+  <suite name="Default suite" duration-ms="119539" started-at="2020-09-11T21:52:30Z" finished-at="2020-09-11T21:54:29Z">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="91934" started-at="2020-09-11T20:50:09Z" finished-at="2020-09-11T20:51:41Z">
+=======
+  <suite name="Default suite" duration-ms="94139" started-at="2020-09-11T20:38:01Z" finished-at="2020-09-11T20:39:35Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
   <suite name="Default suite" duration-ms="87782" started-at="2020-10-12T00:56:47Z" finished-at="2020-10-12T00:58:15Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <test started-at="2020-07-21T21:47:27Z" name="Default test" finished-at="2020-07-21T21:49:26Z" duration-ms="119293">
+      <class name="com.timp.test.BRB.ReordenarColuna">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@1151e434]" started-at="2020-07-21T15:47:27Z" name="beforeClass" finished-at="2020-07-21T15:47:46Z" duration-ms="18725" status="PASS">
+=======
+    <test name="Default test" duration-ms="231629" started-at="2020-08-23T01:33:10Z" finished-at="2020-08-23T01:37:01Z">
+      <class name="com.timp.test.BRB.Eliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="beforeClass" is-config="true" duration-ms="30931" started-at="2020-08-22T19:33:10Z" finished-at="2020-08-22T19:33:41Z">
+=======
+    <test name="Default test" duration-ms="40204" started-at="2020-08-25T15:48:07Z" finished-at="2020-08-25T15:48:47Z">
+      <class name="com.timp.test.ADM.LoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.LoginTest@6a41eaa2]" name="beforeClass" is-config="true" duration-ms="18769" started-at="2020-08-25T12:48:07Z" finished-at="2020-08-25T12:48:26Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="112793" started-at="2020-08-26T13:40:15Z" finished-at="2020-08-26T13:42:08Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="beforeClass" is-config="true" duration-ms="22358" started-at="2020-08-26T10:40:15Z" finished-at="2020-08-26T10:40:37Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="114978" started-at="2020-08-21T22:34:53Z" finished-at="2020-08-21T22:36:48Z">
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhes@8e0379d]" name="beforeClass" is-config="true" duration-ms="16644" started-at="2020-08-21T19:34:53Z" finished-at="2020-08-21T19:35:10Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="109962" started-at="2020-08-25T13:03:59Z" finished-at="2020-08-25T13:05:49Z">
+      <class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar@8e0379d]" name="beforeClass" is-config="true" duration-ms="20009" started-at="2020-08-25T10:03:59Z" finished-at="2020-08-25T10:04:19Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="95960" started-at="2020-08-21T22:40:45Z" finished-at="2020-08-21T22:42:21Z">
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="beforeClass" is-config="true" duration-ms="11442" started-at="2020-08-21T16:40:45Z" finished-at="2020-08-21T16:40:57Z">
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="112161" started-at="2020-08-25T02:58:25Z" finished-at="2020-08-25T03:00:17Z">
+      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="beforeClass" is-config="true" duration-ms="12121" started-at="2020-08-24T20:58:25Z" finished-at="2020-08-24T20:58:37Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="90922" started-at="2020-08-27T13:00:18Z" finished-at="2020-08-27T13:01:49Z">
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="20219" started-at="2020-08-27T10:00:18Z" finished-at="2020-08-27T10:00:39Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="136576" started-at="2020-08-26T23:38:44Z" finished-at="2020-08-26T23:41:00Z">
+      <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="11457" started-at="2020-08-26T17:38:44Z" finished-at="2020-08-26T17:38:55Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="97419" started-at="2020-08-29T01:43:42Z" finished-at="2020-08-29T01:45:20Z">
+      <class name="com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="20244" started-at="2020-08-28T19:43:42Z" finished-at="2020-08-28T19:44:02Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="170286" started-at="2020-09-01T15:17:14Z" finished-at="2020-09-01T15:20:04Z">
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="14868" started-at="2020-09-01T09:17:14Z" finished-at="2020-09-01T09:17:29Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="113849" started-at="2020-09-03T17:01:18Z" finished-at="2020-09-03T17:03:11Z">
+      <class name="com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="13589" started-at="2020-09-03T11:01:18Z" finished-at="2020-09-03T11:01:31Z">
+=======
+    <test name="Default test" duration-ms="119539" started-at="2020-09-11T21:52:30Z" finished-at="2020-09-11T21:54:29Z">
+      <class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="13640" started-at="2020-09-11T15:52:30Z" finished-at="2020-09-11T15:52:43Z">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="91934" started-at="2020-09-11T20:50:09Z" finished-at="2020-09-11T20:51:41Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="beforeClass" is-config="true" duration-ms="20161" started-at="2020-09-11T17:50:09Z" finished-at="2020-09-11T17:50:29Z">
+=======
+    <test name="Default test" duration-ms="94139" started-at="2020-09-11T20:38:01Z" finished-at="2020-09-11T20:39:35Z">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="beforeClass" is-config="true" duration-ms="15545" started-at="2020-09-11T14:38:01Z" finished-at="2020-09-11T14:38:16Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
     <test name="Default test" duration-ms="87782" started-at="2020-10-12T00:56:47Z" finished-at="2020-10-12T00:58:15Z">
       <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="beforeClass" is-config="true" duration-ms="12868" started-at="2020-10-11T18:56:47Z" finished-at="2020-10-11T18:57:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@1151e434]" started-at="2020-07-21T15:47:46Z" name="login" finished-at="2020-07-21T15:47:55Z" duration-ms="9574" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="login" duration-ms="19254" started-at="2020-08-22T19:33:41Z" finished-at="2020-08-22T19:34:00Z">
+=======
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.timp.test.ADM.LoginTest@6a41eaa2]" name="Login" duration-ms="21164" started-at="2020-08-25T12:48:26Z" finished-at="2020-08-25T12:48:47Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="login" duration-ms="9369" started-at="2020-08-26T10:40:37Z" finished-at="2020-08-26T10:40:46Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhes@8e0379d]" name="login" duration-ms="10540" started-at="2020-08-21T19:35:10Z" finished-at="2020-08-21T19:35:20Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar@8e0379d]" name="login" duration-ms="10423" started-at="2020-08-25T10:04:19Z" finished-at="2020-08-25T10:04:29Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="login" duration-ms="6677" started-at="2020-08-21T16:40:57Z" finished-at="2020-08-21T16:41:03Z">
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="login" duration-ms="6925" started-at="2020-08-24T20:58:37Z" finished-at="2020-08-24T20:58:44Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes@2aa5fe93]" name="login" duration-ms="12285" started-at="2020-08-27T10:00:39Z" finished-at="2020-08-27T10:00:51Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="login" duration-ms="8759" started-at="2020-08-26T17:38:55Z" finished-at="2020-08-26T17:39:04Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="login" duration-ms="11294" started-at="2020-08-28T19:44:02Z" finished-at="2020-08-28T19:44:14Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="login" duration-ms="7190" started-at="2020-09-01T09:17:29Z" finished-at="2020-09-01T09:17:36Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="login" duration-ms="6006" started-at="2020-09-03T11:01:31Z" finished-at="2020-09-03T11:01:37Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="login" duration-ms="23924" started-at="2020-09-11T15:52:43Z" finished-at="2020-09-11T15:53:07Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="login" duration-ms="11646" started-at="2020-09-11T17:50:29Z" finished-at="2020-09-11T17:50:41Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="login" duration-ms="9267" started-at="2020-09-11T14:38:16Z" finished-at="2020-09-11T14:38:25Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="ingresar" duration-ms="7057" started-at="2020-10-11T18:57:00Z" finished-at="2020-10-11T18:57:07Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@1151e434]" started-at="2020-07-21T15:47:55Z" name="brbEntrar" finished-at="2020-07-21T15:48:24Z" duration-ms="28417" status="PASS">
+=======
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="brbEntrar" duration-ms="35212" started-at="2020-08-22T19:34:00Z" finished-at="2020-08-22T19:34:35Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar@8e0379d]" name="acessarMDR" duration-ms="11871" started-at="2020-08-25T10:04:29Z" finished-at="2020-08-25T10:04:41Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhes@8e0379d]" name="acessarMDR" duration-ms="40041" started-at="2020-08-21T19:35:20Z" finished-at="2020-08-21T19:36:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="acessarMDR" duration-ms="27537" started-at="2020-08-21T16:41:03Z" finished-at="2020-08-21T16:41:31Z">
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar@8e0379d]" name="acessarMDR" duration-ms="11216" started-at="2020-08-26T10:40:47Z" finished-at="2020-08-26T10:40:58Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes@2aa5fe93]" name="acessarMDR" duration-ms="11760" started-at="2020-08-27T10:00:51Z" finished-at="2020-08-27T10:01:03Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="acessarMDR" duration-ms="33062" started-at="2020-08-26T17:39:04Z" finished-at="2020-08-26T17:39:37Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="acessarMDR" duration-ms="16101" started-at="2020-08-28T19:44:14Z" finished-at="2020-08-28T19:44:30Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="acessarMDR" duration-ms="34982" started-at="2020-09-01T09:17:36Z" finished-at="2020-09-01T09:18:11Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="acessarMDR" duration-ms="24628" started-at="2020-09-03T11:01:37Z" finished-at="2020-09-03T11:02:02Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="acessarMDR" duration-ms="26629" started-at="2020-09-11T15:53:07Z" finished-at="2020-09-11T15:53:34Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="acessarMDR" duration-ms="13264" started-at="2020-09-11T17:50:41Z" finished-at="2020-09-11T17:50:54Z">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="acessarMDR" duration-ms="24071" started-at="2020-09-11T14:38:25Z" finished-at="2020-09-11T14:38:49Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
         </test-method> <!-- ingresar -->
         <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="mdrEntrar" duration-ms="9535" started-at="2020-10-11T18:57:07Z" finished-at="2020-10-11T18:57:17Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </test-method> <!-- brbEntrar -->
+<<<<<<< HEAD
+        <test-method signature="reordenar()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@1151e434]" started-at="2020-07-21T15:48:24Z" name="reordenar" finished-at="2020-07-21T15:49:26Z" duration-ms="62530" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[A coluna não foi reordenada com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: A coluna não foi reordenada com sucesso expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.BRB.ReordenarColuna.reordenar(ReordenarColuna.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reordenar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ReordenarColuna@1151e434]" started-at="2020-07-21T15:49:26Z" name="afterClass" finished-at="2020-07-21T15:49:26Z" duration-ms="1" status="PASS">
+=======
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminar" duration-ms="73666" started-at="2020-08-22T19:34:35Z" finished-at="2020-08-22T19:35:49Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ADM.LoginTest -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes@2aa5fe93]" name="Visualizar" duration-ms="46624" started-at="2020-08-27T10:01:03Z" finished-at="2020-08-27T10:01:49Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir@35083305]" name="criar" duration-ms="50288" started-at="2020-08-21T16:41:31Z" finished-at="2020-08-21T16:42:21Z">
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@35083305]" name="criar" duration-ms="70888" started-at="2020-08-24T20:59:06Z" finished-at="2020-08-24T21:00:17Z">
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir@3b2cf7ab]" name="criar" duration-ms="54077" started-at="2020-08-25T18:46:29Z" finished-at="2020-08-25T18:47:24Z">
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar@3b2cf7ab]" name="criar" duration-ms="83288" started-at="2020-08-26T17:39:37Z" finished-at="2020-08-26T17:41:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="detalhes()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes@3b2cf7ab]" name="detalhes" duration-ms="49747" started-at="2020-08-28T19:44:30Z" finished-at="2020-08-28T19:45:20Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="FAIL" signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar@2aa5fe93]" name="Visualizar" duration-ms="113231" started-at="2020-09-01T09:18:11Z" finished-at="2020-09-01T09:20:04Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O modo visualização não está ativado expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O modo visualização não está ativado expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar.Visualizar(ContasDefaultPorTributoVisualizar.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar@3b2cf7ab]" name="criar" duration-ms="69613" started-at="2020-09-03T11:02:02Z" finished-at="2020-09-03T11:03:11Z">
+=======
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar@3b2cf7ab]" name="criar" duration-ms="55331" started-at="2020-09-11T15:53:34Z" finished-at="2020-09-11T15:54:29Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="list-option"][1]/div/div/label/span"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 51cb499d840b0ef0e66750583ec3b74c
+*** Element info: {Using=xpath, value=//div[@class="list-option"][1]/div/div/label/span}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="list-option"][1]/div/div/label/span"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 51cb499d840b0ef0e66750583ec3b74c
+*** Element info: {Using=xpath, value=//div[@class="list-option"][1]/div/div/label/span}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialCriarPO.criar(ConfiguracoesFundoSocialCriarPO.java:143)
+	at com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar.criar(ConfiguracaoFundoSocailCriar.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="Detalhes()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes@2aa5fe93]" name="Detalhes" duration-ms="46837" started-at="2020-09-11T17:50:54Z" finished-at="2020-09-11T17:51:41Z">
+=======
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir@3b2cf7ab]" name="excluir" duration-ms="45240" started-at="2020-09-11T14:38:49Z" finished-at="2020-09-11T14:39:35Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
         </test-method> <!-- mdrEntrar -->
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="criar" duration-ms="58308" started-at="2020-10-11T18:57:17Z" finished-at="2020-10-11T18:58:15Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRB.ReordenarColuna -->
+=======
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="eliminarLixeira" duration-ms="68445" started-at="2020-08-22T19:35:49Z" finished-at="2020-08-22T19:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@341b80b2]" name="afterClass" is-config="true" duration-ms="4094" started-at="2020-08-22T19:36:57Z" finished-at="2020-08-22T19:37:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRB.Eliminar -->
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- Visualizar -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhes -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- criar -->
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir -->
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Katitanuma/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriar -->
+=======
+        </test-method> <!-- Visualizar -->
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- criar -->
+      </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- detalhes -->
+      </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANCDetalhes -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- Visualizar -->
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- criar -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar -->
+=======
+<<<<<<< HEAD
+        </test-method> <!-- Detalhes -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes -->
+=======
+        </test-method> <!-- excluir -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-11T18:58:15Z" finished-at="2020-10-11T18:58:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

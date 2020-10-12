@@ -30,7 +30,7 @@ public class InformaçoesAdicionaisDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		informaçoesAdicionaisDetalhesPO = new InformaçoesAdicionaisDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

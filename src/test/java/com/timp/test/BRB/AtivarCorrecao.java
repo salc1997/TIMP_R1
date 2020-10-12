@@ -27,7 +27,7 @@ public class AtivarCorrecao extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	AtivarCorrecaoPO ativarCorrecaoPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

@@ -27,7 +27,7 @@ public class TabelaCodigoReceitaCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasCriarPO = new TabelaCodigoReceitasCriarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

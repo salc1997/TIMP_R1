@@ -234,7 +234,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
 	// tranferencias
-
+ 
 	TabelaDeCodigosDeTransferenciasCriar tabelaDeCodigosDeTransferenciasCriar;
 	TabelaDeCodigosDeTransferenciasDetalhes tabelaDeCodigosDeTransferenciasDetalhes;
 	TabelaDeCodigosDeTransferenciasEditar tabelaDeCodigosDeTransferenciasEditar;

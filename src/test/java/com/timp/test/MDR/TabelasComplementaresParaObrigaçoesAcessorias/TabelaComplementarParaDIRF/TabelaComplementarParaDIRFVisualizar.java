@@ -27,7 +27,7 @@ public class TabelaComplementarParaDIRFVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaComplementarParaDIRFVisualizarPO = new TabelaComplementarParaDIRFVisualizarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -29,7 +29,7 @@ public class TabelaCodigoReceitaDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasDetalhesPO = new TabelaCodigoReceitasDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

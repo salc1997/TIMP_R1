@@ -25,7 +25,7 @@ public class AjustesDosAnexosExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		ajustesDosAnexosExcluirPO = new AjustesDosAnexosExcluirPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

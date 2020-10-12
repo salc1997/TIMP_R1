@@ -40,7 +40,7 @@ public class PruebaTodos extends TestBaseSteven {
 		assertTrue(sucesso, Editar);
 
 	}
-
+ 
 	@Test(priority = 0)
 	public void criar() {
 		driver = initialization();

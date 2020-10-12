@@ -32,7 +32,7 @@ public class MovimentoSCANCVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCVisualizarPO = new MovimentoSCANCVisualizarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

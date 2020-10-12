@@ -20,7 +20,7 @@ public class CenariosCorrecaoVisualizar extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoVisualizarPO cenariosCorrecaoVisualizarPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationK();

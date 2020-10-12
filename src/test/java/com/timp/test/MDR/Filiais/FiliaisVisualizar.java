@@ -26,7 +26,7 @@ public class FiliaisVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		filiaisVisualizarPO = new FiliaisVisualizarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

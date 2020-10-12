@@ -22,7 +22,7 @@ import com.sap.timp.pageObjectModel.BRB.EditarPO;
 import com.sap.timp.pageObjectModel.BRB.RenomearColunaPO;
 
 public class RenomearColuna extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	RenomearColunaPO renomearColunaPO;

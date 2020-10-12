@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.RegrasPO;
 
 public class Regras extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	RegrasPO regrasPO;

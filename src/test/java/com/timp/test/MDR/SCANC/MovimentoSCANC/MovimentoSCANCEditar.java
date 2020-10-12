@@ -30,7 +30,7 @@ public class MovimentoSCANCEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCEditarPO = new MovimentoSCANCEditarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

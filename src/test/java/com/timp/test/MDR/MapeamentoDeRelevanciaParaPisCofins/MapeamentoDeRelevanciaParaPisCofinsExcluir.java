@@ -26,7 +26,7 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluir extends TestBaseEliel {
 		mapeamentoDeRelevanciaParaPisCofinsExcluirPO = new MapeamentoDeRelevanciaParaPisCofinsExcluirPO();
 
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

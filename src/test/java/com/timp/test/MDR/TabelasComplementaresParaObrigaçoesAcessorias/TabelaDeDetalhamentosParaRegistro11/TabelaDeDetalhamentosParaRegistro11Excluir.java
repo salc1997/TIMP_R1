@@ -36,7 +36,7 @@ public class TabelaDeDetalhamentosParaRegistro11Excluir extends TestBaseEliel {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 

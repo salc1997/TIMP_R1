@@ -1,3 +1,4 @@
+
 package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
@@ -20,11 +21,12 @@ import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLi
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar;
 
+
 public class AutomacoesMDR5 extends TestBaseSteven {
 
 	// Determinação de Relevância de Tarefa por Motivo de Reabertura > Cadastro de
 	// Motivos de Reabertura
-
+ 
 	CadastroMotivosReaberturaCriar cadastroMotivosReaberturaCriar;
 	CadastroMotivosReaberturaDetalhes cadastroMotivosReaberturaDetalhes;
 	CadastroMotivosReaberturaEditar cadastroMotivosReaberturaEditar;

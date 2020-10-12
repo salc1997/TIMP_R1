@@ -26,7 +26,7 @@ public class AgrupadorDeCFOPVisualizar extends TestBaseEliel {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		agrupadorDeCFOPVisualizarPO = new AgrupadorDeCFOPVisualizarPO();
-	}
+	} 
 
 	@AfterClass
 	public void afterClass() {

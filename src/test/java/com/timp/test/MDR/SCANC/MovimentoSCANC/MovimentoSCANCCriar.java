@@ -29,7 +29,7 @@ public class MovimentoSCANCCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCCriarPO = new MovimentoSCANCCriarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

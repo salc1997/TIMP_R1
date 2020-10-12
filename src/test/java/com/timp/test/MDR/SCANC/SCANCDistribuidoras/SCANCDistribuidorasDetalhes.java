@@ -32,7 +32,7 @@ public class SCANCDistribuidorasDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		sCANCDistribuidoraDetalhesPO = new SCANCDistribuidoraDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

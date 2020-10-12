@@ -17,7 +17,7 @@ public class BairroFiltros extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	BairroFiltrosPO bairroFiltrosPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

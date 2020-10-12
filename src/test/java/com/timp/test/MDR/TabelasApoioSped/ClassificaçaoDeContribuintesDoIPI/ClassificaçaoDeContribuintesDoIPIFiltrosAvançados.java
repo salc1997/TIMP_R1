@@ -29,7 +29,7 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseE
 		acessarMDRPO = new AcessarMDRPO();
 		classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO = new ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

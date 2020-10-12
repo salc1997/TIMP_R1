@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.BRB.CampoOutputPO;
 import com.sap.timp.pageObjectModel.BRB.FormatacaoEVariantePO;
 
 public class FormatacaoEVariante extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	FormatacaoEVariantePO formatacaoEVariantePO;

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class CadastroCondicaoExcluir extends TestBaseEliel {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondicaoExcluirPO cadastroExcluirPO;

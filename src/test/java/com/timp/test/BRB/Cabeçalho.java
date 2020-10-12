@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.BRB.RegrasPO;
 import com.sap.timp.pageObjectModel.BRB.cabeçalhoPO;
 
 public class Cabeçalho extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	cabeçalhoPO cabeçalhoPO;

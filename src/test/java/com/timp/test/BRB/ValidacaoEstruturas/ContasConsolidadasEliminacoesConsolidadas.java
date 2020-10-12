@@ -2,6 +2,7 @@ package com.timp.test.BRB.ValidacaoEstruturas;
 
 import static org.testng.Assert.assertTrue;
 
+
 import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
@@ -14,6 +15,8 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.ConciliacaoCIAPPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.ContasConsolidadasEliminacoesConsolidadasPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.NFsEntradaSaidaeDadosComplementaresPO;
+
+
 
 public class ContasConsolidadasEliminacoesConsolidadas extends TestBaseSteven {
 	LoginTC loginTC;

@@ -18,7 +18,7 @@ public class BairroVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	BairroVisualizarPO bairroVisualizarPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

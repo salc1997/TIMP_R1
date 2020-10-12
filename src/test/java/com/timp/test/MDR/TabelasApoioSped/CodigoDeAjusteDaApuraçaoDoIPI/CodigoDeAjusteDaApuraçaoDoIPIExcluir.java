@@ -29,7 +29,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluir extends TestBaseSteven {
 		codigoDeAjusteDaApuraçaoDoIPIExcluirPO = new CodigoDeAjusteDaApuraçaoDoIPIExcluirPO();
 
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

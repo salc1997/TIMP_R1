@@ -25,7 +25,7 @@ public class LogradouroCriar extends TestBaseKathy {
 		acessarMDRPO = new AcessarMDRPO();
 		logradouroCriarPO = new LogradouroCriarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 	}

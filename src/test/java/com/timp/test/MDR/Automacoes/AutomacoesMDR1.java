@@ -120,7 +120,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	EmpresaEditar empresaEditar;
 	EmpresasVisualizar empresaVisualizar;
 	EmpresasFiltros empresasFiltros;
-
+ 
 	// Filiais
 	FiliaisEditar filiaisEditar;
 	FiliaisVisualizar filiaisVisualizar;

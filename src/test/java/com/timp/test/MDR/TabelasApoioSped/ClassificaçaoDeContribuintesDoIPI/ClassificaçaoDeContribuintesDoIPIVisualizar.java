@@ -30,7 +30,7 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		classificaçaoDeContribuintesDoIPIVisualizarPO = new ClassificaçaoDeContribuintesDoIPIVisualizarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

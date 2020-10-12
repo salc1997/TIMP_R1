@@ -26,7 +26,7 @@ public class AgrupadorDeCFOPEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		agrupadorDeCFOPEditarPO = new AgrupadorDeCFOPEditarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

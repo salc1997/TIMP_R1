@@ -32,7 +32,7 @@ public class CodigoContribuiçaoSocialApuradaDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		CodigoContribuiçaoSocialApuradaDetalhesPO = new CodigoContribuiçaoSocialApuradaDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

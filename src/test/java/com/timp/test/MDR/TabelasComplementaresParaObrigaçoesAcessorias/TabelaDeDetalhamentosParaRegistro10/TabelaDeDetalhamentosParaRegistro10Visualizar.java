@@ -38,7 +38,7 @@ public class TabelaDeDetalhamentosParaRegistro10Visualizar extends TestBaseEliel
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 

@@ -16,7 +16,7 @@ public class SaldoContabilNewGLECC extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	SaldoContabilNewGLECCPO saldoContabilNewGLECCPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();

@@ -33,7 +33,7 @@ public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		observaçoesdoDocumentoFiscalDetalhesPO = new ObservaçoesdoDocumentoFiscalDetalhesPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

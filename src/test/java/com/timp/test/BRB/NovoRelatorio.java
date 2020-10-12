@@ -30,7 +30,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.NovoRelatorioPO;
 
 public class NovoRelatorio extends TestBaseSteven {
-
+ 
 	LoginTC loginTc;
 	AcessarBrbPO accesarBrbPO;
 	NovoRelatorioPO novoRelatorioPO;

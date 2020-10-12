@@ -15,7 +15,7 @@ public class AtivarComentario extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	AtivarComentarioPO ativarComentarioPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

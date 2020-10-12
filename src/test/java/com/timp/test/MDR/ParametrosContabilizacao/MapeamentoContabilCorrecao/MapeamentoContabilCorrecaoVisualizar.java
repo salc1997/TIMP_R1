@@ -30,7 +30,7 @@ public class MapeamentoContabilCorrecaoVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoContabilCorrecaoVisualizarPO = new MapeamentoContabilCorrecaoVisualizarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

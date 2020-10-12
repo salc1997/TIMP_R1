@@ -25,7 +25,7 @@ public class TabelaComplementarParaDIRFCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaComplementarParaDIRFCriarPO = new TabelaComplementarParaDIRFCriarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

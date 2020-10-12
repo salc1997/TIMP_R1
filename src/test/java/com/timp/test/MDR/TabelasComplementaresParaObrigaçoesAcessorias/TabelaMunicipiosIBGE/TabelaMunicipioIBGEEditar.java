@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMu
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -17,8 +18,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosCriarPO;
 
 public class TabelaMunicipioIBGEEditar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaMunicipioIBGEEditarPO tabelaMunicipioIBGEEditarPO;
@@ -31,10 +31,12 @@ public class TabelaMunicipioIBGEEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaMunicipioIBGEEditarPO = new TabelaMunicipioIBGEEditarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -51,12 +53,9 @@ public class TabelaMunicipioIBGEEditar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void editar() {
 
-		
 		boolean sucesso = tabelaMunicipioIBGEEditarPO.editar();
 		assertTrue(sucesso, Editar);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

@@ -7,7 +7,6 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SequenciaAcesso.SequenciaCriarPO;
 
-
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -18,7 +17,6 @@ import org.testng.annotations.AfterClass;
 
 public class SequenciaCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SequenciaCriarPO sequenciaCriarPO;
@@ -31,9 +29,11 @@ public class SequenciaCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaCriarPO = new SequenciaCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -52,12 +52,11 @@ public class SequenciaCriar extends TestBaseEliel {
 	public void criar() {
 
 		boolean text = sequenciaCriarPO.criar();
-		
+
 		assertTrue(text, Criar);
-		//Teste pra conferir se conseguiu acesssar o sistema
+		// Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(sequenciaCriarPO.mostrar.isDisplayed(), semAcesso);
 
-		
 	}
 
 }

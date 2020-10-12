@@ -1,6 +1,5 @@
 package com.timp.test.BRB;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -30,12 +29,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.NovoRelatorioPO;
 
-public class NovoRelatorio extends TestBaseSteven{
-	
+public class NovoRelatorio extends TestBaseSteven {
+ 
 	LoginTC loginTc;
 	AcessarBrbPO accesarBrbPO;
 	NovoRelatorioPO novoRelatorioPO;
-
 
 	@BeforeClass
 	public void beforeClass() {
@@ -44,56 +42,50 @@ public class NovoRelatorio extends TestBaseSteven{
 		accesarBrbPO = new AcessarBrbPO();
 		novoRelatorioPO = new NovoRelatorioPO();
 	}
-	/*
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 
 		loginTc.login();
 
 	}
-	
-	
-	@Test(priority=1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
-		accesarBrbPO.acessar();		
-	
-		
+		accesarBrbPO.acessar();
+
 	}
 
-
-	@Test(priority=2)
+	@Test(priority = 2)
 	public void novoRelatorio() {
-		
+
 		boolean sucesso = false;
 		sucesso = novoRelatorioPO.criar();
-		
+		System.out.println(sucesso + "Novo Relatório");
 		assertTrue(sucesso, novoRelatorio);
 		sleep(4000);
-		String texto = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div")).getText();
+		String texto = driver
+				.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div"))
+				.getText();
 		assertTrue(texto.contains("Prueba Automatizada"), "The names don't match");
-			
-		
+
 	}
 
 	@Test(priority = 3)
 	public void colunas() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = novoRelatorioPO.colunas();
-		
+		System.out.println(sucesso + "Colunas");
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The Colunms weren't added");
 		}
-		
-
 
 	}
-		
-
 
 }

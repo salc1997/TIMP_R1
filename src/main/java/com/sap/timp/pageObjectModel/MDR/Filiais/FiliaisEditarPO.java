@@ -11,7 +11,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class FiliaisEditarPO extends TestBaseSteven {
 
-	@FindBy(xpath = "//span[text()=\"Filiais\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"Filiais\"]")
 	public WebElement filiais;
 
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div")
@@ -74,11 +74,16 @@ public class FiliaisEditarPO extends TestBaseSteven {
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		sleep(3000);		 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(3000);
+	
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		
 		driver.navigate().refresh();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		waitExpectXpath("//*[@id=\"toolbar\"]/div/ul/li[3]/button");
 		invisibilityOfElement("//*[@id=\"right-content\"]/div/div[4]/div/div/div/img");
@@ -98,8 +103,10 @@ public class FiliaisEditarPO extends TestBaseSteven {
 		
 		sleep(2000);
 		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		
 		return sucesso;

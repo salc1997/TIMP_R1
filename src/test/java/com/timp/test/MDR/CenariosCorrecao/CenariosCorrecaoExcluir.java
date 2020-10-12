@@ -17,20 +17,20 @@ public class CenariosCorrecaoExcluir extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoExcluirPO cenariosCorrecaoExcluirPO;
-  
-    @BeforeClass
-    public void beforeClass() {
-    	driver = initializationK();
+ 
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cenariosCorrecaoExcluirPO = new CenariosCorrecaoExcluirPO();
-    }
+	}
 
-    @AfterClass
-    public void afterClass() {
-    }
-  
-    @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,9 +41,9 @@ public class CenariosCorrecaoExcluir extends TestBaseKathy {
 	}
 
 	@Test(priority = 2)
-    public void cenariosCorrecaoExcluir() {
-    	boolean sucesso = cenariosCorrecaoExcluirPO.cenariosCorrecaoExcluir();
+	public void excluir() {
+		boolean sucesso = cenariosCorrecaoExcluirPO.cenariosCorrecaoExcluir();
 		assertTrue(sucesso, Eliminado);
-    }
+	}
 
 }

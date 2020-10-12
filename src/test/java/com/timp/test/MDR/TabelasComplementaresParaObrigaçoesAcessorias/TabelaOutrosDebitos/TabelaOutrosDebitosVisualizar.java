@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -18,7 +19,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosVisualizarPO;
 
 public class TabelaOutrosDebitosVisualizar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaOutrosDebitosVisualizarPO tabelaOutrosDebitosVisualizarPO;
@@ -31,10 +32,12 @@ public class TabelaOutrosDebitosVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaOutrosDebitosVisualizarPO = new TabelaOutrosDebitosVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,18 +52,13 @@ public class TabelaOutrosDebitosVisualizar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void detalhes() {
+	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = tabelaOutrosDebitosVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}			
-			
-	
-	
-	
-	
+	}
+
 }

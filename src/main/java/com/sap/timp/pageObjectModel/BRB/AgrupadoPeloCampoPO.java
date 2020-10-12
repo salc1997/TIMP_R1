@@ -72,6 +72,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	
 	public void agrupar() {
 		
+	
 		
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
 
@@ -103,14 +104,18 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		sleep(5000);
 		
 		execucao.click();
+		sleep(8000);
 		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		executar.click();
 		
-		sleep(2000);
-		waitExpectXpath("//div[@data-group=\"1\"]/div/div[1]/span[1]/label");
+		sleep(5000);
+		//waitExpectXpath("//div[@data-group=\"1\"]/div/div[1]/span[1]/label");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
@@ -123,7 +128,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		data1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(5000);
 		String cfopS = "";
 		cfopS = cfop.getAttribute("data-value");
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -134,7 +139,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		for (int i = 0; i < rows; i++) {
 			
 			
-			String cfopD = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+f+".\") and contains(@aria-label , \"CFOP: "+cfopS+"\")]/div[2]")).getText();
+			String cfopD = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+f+"\") and contains(@aria-label , \"CFOP: "+cfopS+"\")]/div[2]")).getText();
 			sucesso.add(cfopS.equals(cfopD));
 			
 			f = f+1;
@@ -153,7 +158,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		data2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(5000);
 		String cfopS = "";
 		cfopS = cfop1.getAttribute("data-value");
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -163,7 +168,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		int f = 1;
 		for (int i = 0; i < rows; i++) {
 			
-			String cfopD = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+f+".\") and contains(@aria-label , \"CFOP: "+cfopS+"\")]/div[2]")).getText();
+			String cfopD = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+f+"\") and contains(@aria-label , \"CFOP: "+cfopS+"\")]/div[2]")).getText();
 			sucesso.add(cfopS.equals(cfopD));
 			System.out.println(cfopD);
 			

@@ -1,5 +1,5 @@
 package com.timp.test.MDR.Antecipacao;
-
+ 
 import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 
-public class AntecipacaoCriar extends TestBaseSteven{
+public class AntecipacaoCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,12 +28,12 @@ public class AntecipacaoCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoCriarPO = new AntecipacaoCriarPO();
 	}
-	/*
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -52,10 +52,8 @@ public class AntecipacaoCriar extends TestBaseSteven{
 
 		boolean sucesso = antecipacaoCriarPO.criarAntecipacao();
 
-		
 		assertTrue(sucesso, Criar);
-		
-		
+
 	}
 
 }

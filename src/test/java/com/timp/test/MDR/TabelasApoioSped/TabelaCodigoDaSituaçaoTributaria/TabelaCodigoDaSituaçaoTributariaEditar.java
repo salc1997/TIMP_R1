@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -11,8 +12,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditarPO;
 
-public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
-  
+public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoDaSituaçaoTributariaEditarPO tabelaCodigoDaSituaçaoTributariaEditarPO;
@@ -25,12 +26,12 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoDaSituaçaoTributariaEditarPO = new TabelaCodigoDaSituaçaoTributariaEditarPO();
 	}
-	/*
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,18 +44,13 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
-		String sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+
+		String sucesso = tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
-	
-	
-	
-	
+
 }

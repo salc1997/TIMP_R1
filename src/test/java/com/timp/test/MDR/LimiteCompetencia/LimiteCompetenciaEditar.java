@@ -2,6 +2,7 @@ package com.timp.test.MDR.LimiteCompetencia;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaEditarPO;
 
-public class LimiteCompetenciaEditar extends TestBaseSteven{
+public class LimiteCompetenciaEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -26,12 +27,12 @@ public class LimiteCompetenciaEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		limiteCompetenciaEditarPO = new LimiteCompetenciaEditarPO();
 	}
-	/*
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,11 +47,11 @@ public class LimiteCompetenciaEditar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		boolean sucesso = limiteCompetenciaEditarPO.editar();
-		
+
 		assertTrue(sucesso, editado);
-		
+
 	}
 }

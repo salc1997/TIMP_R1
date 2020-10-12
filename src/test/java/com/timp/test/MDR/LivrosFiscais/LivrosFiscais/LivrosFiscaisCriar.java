@@ -2,6 +2,7 @@ package com.timp.test.MDR.LivrosFiscais.LivrosFiscais;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -13,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscai
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
 
 public class LivrosFiscaisCriar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LivrosFiscaisCriarPO livrosFiscaisCriarPO;
@@ -26,9 +27,11 @@ public class LivrosFiscaisCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		livrosFiscaisCriarPO = new LivrosFiscaisCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,15 +49,10 @@ public class LivrosFiscaisCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = livrosFiscaisCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

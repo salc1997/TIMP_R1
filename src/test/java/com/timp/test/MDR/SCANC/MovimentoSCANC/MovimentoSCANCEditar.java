@@ -2,6 +2,7 @@ package com.timp.test.MDR.SCANC.MovimentoSCANC;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.MovimentoSCANC.MovimentoSCANCEdita
 import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO;
 
 public class MovimentoSCANCEditar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MovimentoSCANCEditarPO movimentoSCANCEditarPO;
@@ -29,9 +30,11 @@ public class MovimentoSCANCEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCEditarPO = new MovimentoSCANCEditarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,17 +50,12 @@ public class MovimentoSCANCEditar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
-		
 		boolean sucesso = movimentoSCANCEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

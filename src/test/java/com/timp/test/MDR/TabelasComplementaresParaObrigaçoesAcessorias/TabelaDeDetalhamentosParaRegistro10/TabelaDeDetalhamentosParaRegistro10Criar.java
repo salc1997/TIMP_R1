@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10CriarPO;
 
-public class TabelaDeDetalhamentosParaRegistro10Criar extends TestBaseEliel{
- 
+public class TabelaDeDetalhamentosParaRegistro10Criar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeDetalhamentosParaRegistro10CriarPO tabelaDeDetalhamentosParaRegistro10CriarPO;
@@ -24,10 +25,12 @@ public class TabelaDeDetalhamentosParaRegistro10Criar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeDetalhamentosParaRegistro10CriarPO = new TabelaDeDetalhamentosParaRegistro10CriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,11 +47,9 @@ public class TabelaDeDetalhamentosParaRegistro10Criar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaDeDetalhamentosParaRegistro10CriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
+
+	}
+
 }

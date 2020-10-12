@@ -13,11 +13,12 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
 
-import org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,7 +27,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestBaseSteven {
 
 	// TC2
-	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
+	protected String tc2   = "http://as1-100-01-tc2:8000/timp/login/#/login";
 	// TD1
 	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 
@@ -43,11 +44,37 @@ public class TestBaseSteven {
 
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+
+		
+		//ChromeOptions options = new ChromeOptions();
+		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		//driver = new ChromeDriver(options);
+       // options.addArguments("--headless");
+        //options.addArguments("start-maximized"); // open Browser in maximized mode
+        //options.addArguments("disable-infobars"); // disabling infobars
+        //options.addArguments("--disable-extensions"); // disabling extensions
+        //options.addArguments("--disable-gpu"); // applicable to windows os only
+        //options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        //driver = new ChromeDriver(options);
+
+		/*
+		ChromeOptions options = new ChromeOptions();
+		options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		driver = new ChromeDriver(options);
+        options.addArguments("--headless");
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        driver = new ChromeDriver(options);
+		*/
+
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
-		return driver;
+		driver.get(td1);
 
+		return driver;
 	}
 	
 	public void close() {
@@ -100,8 +127,7 @@ public class TestBaseSteven {
 		valor = valor.replace(".", "");
 
 		return valor;
-		
-		
+
 	}
 	
 	public String remplazarComas(String valor) {
@@ -386,6 +412,10 @@ public class TestBaseSteven {
 	}
 	
 	
+	
+
+	
+	
 
 	// BRB
 	public String elementosDiferentes = "Os elementos não são iguais";
@@ -432,5 +462,7 @@ public class TestBaseSteven {
 	public String Criar = "O registro não foi criado com sucesso";
 	public String Eliminado = "O registro não foi eliminado com sucesso";
 	public String Detalhes = "As informações não são as esperadas";
+	
+	public String Atualizar = "Não foi possivel atualizar os registros";
 
 }

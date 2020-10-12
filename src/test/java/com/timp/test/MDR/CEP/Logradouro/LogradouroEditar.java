@@ -11,22 +11,22 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroEditarPO;
 
-public class LogradouroEditar extends TestBaseKathy{
+public class LogradouroEditar extends TestBaseKathy {
 	LoginTC loginTC;
-  	AcessarMDRPO acessarMDRPO;
-  	LogradouroEditarPO logradouroEditarPO;
-  
-  	@BeforeClass
-  	public void beforeClass() {
-	  	driver = initializationK();
-	  	loginTC = new LoginTC();
-	  	acessarMDRPO = new AcessarMDRPO();
-	  	logradouroEditarPO = new LogradouroEditarPO();
-  	}
+	AcessarMDRPO acessarMDRPO;
+	LogradouroEditarPO logradouroEditarPO;
 
-  	@AfterClass
-  	public void afterClass() {
-  	}
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		logradouroEditarPO = new LogradouroEditarPO();
+	}
+ 
+	@AfterClass
+	public void afterClass() {
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -37,10 +37,10 @@ public class LogradouroEditar extends TestBaseKathy{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-	
+
 	@Test(priority = 2)
-	public void logradouroEditar() {
-		boolean sucesso =  logradouroEditarPO.logradouroEditar();
+	public void editar() {
+		boolean sucesso = logradouroEditarPO.logradouroEditar();
 		assertTrue(sucesso, Editar);
 	}
 }

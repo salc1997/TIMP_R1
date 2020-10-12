@@ -121,60 +121,58 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//total de linhas
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		System.out.println("total de linhas");
 		String totalLinhasS = totalLinhas.getText();
 		System.out.println(totalLinhasS);
 		int totalLinhasI = Integer.valueOf(totalLinhasS);
-		int esperadoLinhas = 25;
+		int esperadoLinhas = 4;
 		System.out.println(esperadoLinhas);
 		sucesso.add(igualInt(totalLinhasI, esperadoLinhas));
-		System.out.println(sucesso.get(0)+" numero linhas");
+		System.out.println(igualInt(totalLinhasI, esperadoLinhas)+" numero linhas");
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		//peso bruto
 		System.out.println("peso bruto");
 		String pesoBrutoS = pesoBruto.getText();
-		pesoBrutoS = remplazarPuntos(pesoBrutoS);
-		pesoBrutoS = remplazarComas(pesoBrutoS);
+		pesoBrutoS = pesoBrutoS.replace(",", "");
 		System.out.println(pesoBrutoS + " String");
 		double pesoBrutoD = new Double(pesoBrutoS);
-		System.out.println(pesoBrutoD + "Double");
-		double esperadoPesoBruto = 717000.0;
+		System.out.println(pesoBrutoD + " Double");
+		double esperadoPesoBruto = 717000;
 		System.out.println(esperadoPesoBruto + " Esperado");
 		sucesso.add(igualDobule(pesoBrutoD, esperadoPesoBruto));
-		System.out.println(sucesso.get(1)+" peso bruto");
+		System.out.println(igualDobule(pesoBrutoD, esperadoPesoBruto)+" peso bruto");
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		//peso liquido
 		System.out.println("peso liquido");
 		String pesoLiquidoS = pesoLiquido.getText();
-		pesoLiquidoS = remplazarPuntos(pesoLiquidoS);
-		pesoLiquidoS = remplazarComas(pesoLiquidoS);
+		pesoLiquidoS = pesoLiquidoS.replace(",", "");
 		System.out.println(pesoLiquidoS+ " String");
 		double pesoLiquidoD = new Double(pesoLiquidoS);
 		System.out.println(pesoLiquidoD + " Double");
 		double esperadoPesoLiquido = 645300;
 		System.out.println(esperadoPesoLiquido + " Esperado");
 		sucesso.add(igualDobule(pesoLiquidoD, esperadoPesoLiquido));
-		System.out.println(sucesso.get(2)+" peso Liquido");
+		System.out.println(igualDobule(pesoLiquidoD, esperadoPesoLiquido)+" peso Liquido");
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		//valor Doc Fiscal
 		System.out.println("valor Doc Fiscal");
 		String valorDocFiscalS = valorDocFiscal.getText();
-		valorDocFiscalS = remplazarPuntos(valorDocFiscalS);
-		valorDocFiscalS = remplazarComas(valorDocFiscalS);
+		valorDocFiscalS = valorDocFiscalS.replace(".", "");
+		valorDocFiscalS = valorDocFiscalS.replace(",", ".");
 		System.out.println(valorDocFiscalS + " String");
 		double valorDocFiscalD = new Double(valorDocFiscalS);
 		System.out.println(valorDocFiscalD + " Double");
-		double esperadoValorDocFiscal = 3500832761.46;
+		double esperadoValorDocFiscal = 530581.41;
 		System.out.println(esperadoValorDocFiscal + " Esperado");
 		sucesso.add(igualDobule(valorDocFiscalD, esperadoValorDocFiscal));
-		System.out.println(sucesso.get(3) +" Valor Doc Fiscal");
+		System.out.println(igualDobule(valorDocFiscalD, esperadoValorDocFiscal) +" Valor Doc Fiscal");
 		
-		System.err.println("-------------------------------------------------");
-		
+		System.out.println("-------------------------------------------------");
+		/*
 		// Valor oper. ICMS ( BC+ISENT+OUT)
 		System.out.println("Valor oper. ICMS ( BC+ISENT+OUT)");
 		String valorOperICMSS = valorOperICMS.getText();
@@ -188,121 +186,123 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		sucesso.add(igualDobule(valorOperICMSD, esperadovalorOperICMS));
 		System.out.println(sucesso.get(4) + " Valor oper. ICMS ( BC+ISENT+OUT)");
 		
-		System.err.println("-------------------------------------------------");
-	
+		System.out.println("-------------------------------------------------");
+		*/
+		
 		// Valor liquido
 		System.out.println(" Valor liquido");
 		String valorLiquidoS = valorLiquido.getText();
-		valorLiquidoS = remplazarPuntos(valorLiquidoS);
-		valorLiquidoS = remplazarComas(valorLiquidoS);
+		valorLiquidoS = valorLiquidoS.replace(".", "");
+		valorLiquidoS = valorLiquidoS.replace(",", ".");
 		System.out.println(valorLiquidoS+" String");
-		
 		double valorLiquidoD = new Double(valorLiquidoS);
 		System.out.println(valorLiquidoD + " Double");
-		double esperadovalorLiquido = 3501019298.05;
+		double esperadovalorLiquido = 717118;
 		System.out.println(esperadovalorLiquido + " Esperado");
 		sucesso.add(igualDobule(valorLiquidoD, esperadovalorLiquido));
-		System.out.println(sucesso.get(5) + " Valor Liquido");
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(valorLiquidoD, esperadovalorLiquido) + " Valor Liquido");
+		System.out.println("-------------------------------------------------");
 		
 		//valor Total Doc Fiscal
 		System.out.println("valor Total Doc Fiscal");
 		String valorTotalDocFiscalS = valorTotalDocFiscal.getText();
-		valorTotalDocFiscalS = remplazarPuntos(valorTotalDocFiscalS);
-		valorTotalDocFiscalS = remplazarComas(valorTotalDocFiscalS);
+		valorTotalDocFiscalS = valorTotalDocFiscalS.replace(".", "");
+		valorTotalDocFiscalS = valorTotalDocFiscalS.replace(",", ".");
 		System.out.println(valorTotalDocFiscalS+" String");
 		double valorTotalDocFiscalD = new Double(valorTotalDocFiscalS);
 		System.out.println(valorTotalDocFiscalD + " Double");
-		double esperadovalorTotalDocFiscal = 3500832761.46;
+		double esperadovalorTotalDocFiscal = 530581.41;
 		sucesso.add(igualDobule(valorTotalDocFiscalD, esperadovalorTotalDocFiscal));
 		System.out.println(esperadovalorTotalDocFiscal + " Esperado");
-		System.out.println(sucesso.get(6) +" Valor Total Doc Fiscal");
+		System.out.println(igualDobule(valorTotalDocFiscalD, esperadovalorTotalDocFiscal) +" Valor Total Doc Fiscal");
 		
-		System.err.println("-------------------------------------------------");
-		// Totalizador de "Valor Mercadorias e Serviços
+		System.out.println("-------------------------------------------------");
+		// Totalizador de "Valor de Mercadorias e Serviços"
 		System.out.println("Totalizador de \"Valor Mercadorias e Serviços");
 		String valorMercadoriasServicosS = valorMercadoriasServicos.getText();
-		valorMercadoriasServicosS = remplazarPuntos(valorMercadoriasServicosS);
-		valorMercadoriasServicosS = remplazarComas(valorMercadoriasServicosS);
+		valorMercadoriasServicosS = valorMercadoriasServicosS.replace(".", "");
+		valorMercadoriasServicosS = valorMercadoriasServicosS.replace(",", ".");
 		System.out.println(valorMercadoriasServicosS+" String");
 		double valorMercadoriasServicosD = new Double(valorMercadoriasServicosS);
 		System.out.println(valorMercadoriasServicosD + " Double");
-		double esperadovalorMercadoriasServicos = 3501019298.05;
+		double esperadovalorMercadoriasServicos = 717118;
 		System.out.println(esperadovalorMercadoriasServicos + " Esperado");
 		sucesso.add(igualDobule(valorMercadoriasServicosD, esperadovalorMercadoriasServicos));
-		System.out.println(sucesso.get(7) + " Totalizador de Valor Mercadorias e Serviços");
+		System.out.println(igualDobule(valorMercadoriasServicosD, esperadovalorMercadoriasServicos) + " Totalizador de Valor Mercadorias e Serviços");
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		// Quantidade
 		System.out.println("Quantidade");
 		String quantidadeS = quantidade.getText();
-		quantidadeS = remplazarPuntos(quantidadeS);
-		quantidadeS = remplazarComas(quantidadeS);
+		quantidadeS = quantidadeS.replace(",", ".");
 		System.out.println(quantidadeS +" String");
 		double quantidadeD = new Double(quantidadeS);
 		System.out.println(quantidadeD + " Double");
-		double esperadoquantidade = 740000;
+		double esperadoquantidade = 719;
 		System.out.println(esperadoquantidade + " Esperado");
 		sucesso.add(igualDobule(quantidadeD, esperadoquantidade));
-		System.out.println(sucesso.get(8) + " Quantidade");
+		System.out.println(igualDobule(quantidadeD, esperadoquantidade) + " Quantidade");
 		
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		
 		// Quantidade BC COFINS
 		System.out.println(" Quantidade BC COFINS");
 		String quantidadeBCCOFINSS = quantidadeBCCOFINS.getText();
-		quantidadeBCCOFINSS = remplazarPuntos(quantidadeBCCOFINSS);
-		quantidadeBCCOFINSS = remplazarComas(quantidadeBCCOFINSS);
+		quantidadeBCCOFINSS = quantidadeBCCOFINSS.replace(",", ".");
 		System.out.println(quantidadeBCCOFINSS +" String");
 		double quantidadeBCCOFINSD = new Double(quantidadeBCCOFINSS);
 		System.out.println(quantidadeBCCOFINSD + " Double");
-		double esperadoquantidadeBCCOFINS = 740000;
+		double esperadoquantidadeBCCOFINS = 719;
 		System.out.println(esperadoquantidadeBCCOFINS + " Esperando");
 		sucesso.add(igualDobule(quantidadeBCCOFINSD, esperadoquantidadeBCCOFINS));
-		System.out.println(sucesso.get(9) + " quantidade BC COFINS");
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(quantidadeBCCOFINSD, esperadoquantidadeBCCOFINS) + " quantidade BC COFINS");
+		
+		
+		System.out.println("-------------------------------------------------");
 		// Valor do Item
 		System.out.println("Valor do Item");
 		String valorItemS = valorItem.getText();
-		valorItemS = remplazarPuntos(valorItemS);
-		valorItemS = remplazarComas(valorItemS);
+		valorItemS = valorItemS.replace(".", "");
+		valorItemS = valorItemS.replace(",", ".");
 		System.out.println(valorItemS + " String");
 		double valorItemD = new Double(valorItemS);
 		System.out.println(valorItemD + " Double");
-		double esperadovalorItem = 3501019298.05;
+		double esperadovalorItem = 717118;
 		System.out.println(esperadovalorItem + " Esperado");
 		sucesso.add(igualDobule(valorItemD, esperadovalorItem));
-		System.out.println(sucesso.get(10) + " Valor do Item");
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(valorItemD, esperadovalorItem) + " Valor do Item");
+		
+		
+		System.out.println("-------------------------------------------------");
 		// Valor Unitário Líquido
 		System.out.println("Valor Unitário Líquido");
 		String valorUnitarioLiquidoS = valorUnitarioLiquido.getText();
-		valorUnitarioLiquidoS = remplazarPuntos(valorUnitarioLiquidoS);
-		valorUnitarioLiquidoS = remplazarComas(valorUnitarioLiquidoS);
+		valorUnitarioLiquidoS = valorUnitarioLiquidoS.replace(".", "");
+		valorUnitarioLiquidoS = valorUnitarioLiquidoS.replace(",", ".");
 		System.out.println(valorUnitarioLiquidoS+ " String");
 		double valorUnitarioLiquidoD = new Double(valorUnitarioLiquidoS);
 		System.out.println(valorUnitarioLiquidoD + " Double");
-		double esperadovalorUnitarioLiquido = 3500305280.050000;
+		double esperadovalorUnitarioLiquido = 3100;
 		System.out.println(esperadovalorUnitarioLiquido + " Esperado");
 		sucesso.add(igualDobule(valorUnitarioLiquidoD, esperadovalorUnitarioLiquido));
-		System.out.println(sucesso.get(11) + " Valor Unitário Líquido");
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(valorUnitarioLiquidoD, esperadovalorUnitarioLiquido) + " Valor Unitário Líquido");
+		System.out.println("-------------------------------------------------");
 		
 		// Valor Unitário com Imposto
 		System.out.println("Valor Unitário com Imposto");
 		String valorUnitarioComImpostoS = valorUnitarioComImposto.getText();
-		valorUnitarioComImpostoS = remplazarPuntos(valorUnitarioComImpostoS);
-		valorUnitarioComImpostoS = remplazarComas(valorUnitarioComImpostoS);
+		valorUnitarioComImpostoS = valorUnitarioComImpostoS.replace(".", "");
+		valorUnitarioComImpostoS = valorUnitarioComImpostoS.replace(",", ".");
 		System.out.println(valorUnitarioComImpostoS + " String");
 		double valorUnitarioComImpostoD = new Double(valorUnitarioComImpostoS);
 		System.out.println(valorUnitarioComImpostoD + " Double");
-		double esperadovalorUnitarioComImposto = 3500305280.050000;
+		double esperadovalorUnitarioComImposto = 3118;
 		System.out.println(esperadovalorUnitarioComImposto + " Esperado");
 		sucesso.add(igualDobule(valorUnitarioComImpostoD, esperadovalorUnitarioComImposto));
-		System.out.println(sucesso.get(12) + " Valor Unitário com Imposto");
-		System.err.println("-------------------------------------------------");
-		
+		System.out.println(igualDobule(valorUnitarioComImpostoD, esperadovalorUnitarioComImposto) + " Valor Unitário com Imposto");
+		System.out.println("-------------------------------------------------");
+		/*
 		// BC Pis
 		System.out.println("BC Pis");
 		String bcPisS = bcPis.getText();
@@ -315,7 +315,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadobcPis + " Esperado");
 		sucesso.add(igualDobule(bcPisD, esperadobcPis));
 		System.out.println(sucesso.get(13) + " BC Pis");
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		
 		// BC ICMS
 		System.out.println("BC ICMS");
@@ -329,21 +329,22 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadobcICMS + " Esperado");
 		sucesso.add(igualDobule(bcICMSD, esperadobcICMS));
 		System.out.println(sucesso.get(13) + " BC ICMS");
-		System.err.println("-------------------------------------------------");
+		*/
+		System.out.println("-------------------------------------------------");
 		// BC ICMS ST
 		System.out.println("BC ICMS ST");
 		String bcICMSSTS = bcICMSST.getText();
-		bcICMSSTS = remplazarPuntos(bcICMSSTS);
-		bcICMSSTS = remplazarComas(bcICMSSTS);
+		bcICMSSTS = bcICMSSTS.replace(".", "");
+		bcICMSSTS = bcICMSSTS.replace(",", ".");
 		System.out.println(bcICMSSTS+" String");
 		double bcICMSSTD = new Double(bcICMSSTS);
 		System.out.println(bcICMSSTD + " Double");
 		double esperadobcICMSST = 874390.23;
 		System.out.println(esperadobcICMSST + " Esperado");
 		sucesso.add(igualDobule(bcICMSSTD, esperadobcICMSST));
-		System.out.println(sucesso.get(13) + " BC ICMS ST");
-		
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(bcICMSSTD, esperadobcICMSST) + " BC ICMS ST");
+		/*
+		System.out.println("-------------------------------------------------");
 		// BC Cofins
 		System.out.println("BC Cofins");
 		String bcCofinsS = bcCofins.getText();
@@ -356,55 +357,59 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadobcCofins + " Esperado");
 		sucesso.add(igualDobule(bcCofinsD, esperadobcCofins));
 		System.out.println(sucesso.get(13) + " BC Cofins");
-		System.err.println("-------------------------------------------------");
+		
+		*/
+		
+		
+		System.out.println("-------------------------------------------------");
 		// BC Difal
 		System.out.println("BC Difal");
 		String bcDifalS = bcDifal.getText();
-		
-		bcDifalS=remplazarPuntos(bcDifalS);
-		bcDifalS=remplazarComas(bcDifalS);
+		bcDifalS= bcDifalS.replace(".", "");
+		bcDifalS= bcDifalS.replace(",", ".");
 		System.out.println(bcDifalS+ " String");
 		double bcDifalD = new Double(bcDifalS);
 		System.out.println(bcDifalD + " Double");
-		double esperadobcDifal = 11040.00;
+		double esperadobcDifal = 5240.00;
 		System.out.println(esperadobcDifal + " Esperado");
 		sucesso.add(igualDobule(bcDifalD, esperadobcDifal));
-		System.out.println(sucesso.get(13) + " BC Difal");
-		
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(bcDifalD, esperadobcDifal) + " BC Difal");
+		/*
+		System.out.println("-------------------------------------------------");
 		// Valor ICMS
 		System.out.println("Valor ICMS");
 		String valorICMSS = valorICMS.getText();
-
 		valorICMSS = remplazarPuntos(valorICMSS);
 		valorICMSS = remplazarComas(valorICMSS);
 		System.out.println(valorICMSS+" String");
 		double valorICMSD = new Double(valorICMSS);
 		System.out.println(valorICMSD + " Double");
-		double esperadovalorICMS = 530414.10;
+		double esperadovalorICMS = 157390.23;
 		System.out.println(esperadovalorICMS + " Esperado");
 		sucesso.add(igualDobule(valorICMSD, esperadovalorICMS));
 		System.out.println(sucesso.get(13) + " Valor ICMS");
+		*/
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		// Valor ICMS ST
 		System.out.println("Valor ICMS ST");
 		String valorICMSSTS = valorICMSST.getText();
-
-		valorICMSSTS = remplazarPuntos(valorICMSSTS);
-		valorICMSSTS = remplazarComas(valorICMSSTS);
+		valorICMSSTS = valorICMSSTS.replace(".", "");
+		valorICMSSTS = valorICMSSTS.replace(",", ".");
 		System.out.println(valorICMSSTS+ " String");
 		double valorICMSSTD = new Double(valorICMSSTS);
 		System.out.println(valorICMSSTD + " Double");
 		double esperadovalorICMSST = 157390.23;
 		System.out.println(esperadovalorICMSST+ " Esperado");
 		sucesso.add(igualDobule(valorICMSSTD, esperadovalorICMSST));
-		System.out.println(sucesso.get(13) + " Valor ICMS ST");
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(valorICMSSTD, esperadovalorICMSST) + " Valor ICMS ST");
+		/*
+		System.out.println("-------------------------------------------------");
 		// Valor Cofins
 		System.out.println("Valor Cofins");
+		
+		
 		String valorCofinsS = valorCofins.getText();
-
 		valorCofinsS = remplazarPuntos(valorCofinsS);
 		valorCofinsS = remplazarComas(valorCofinsS);
 		System.out.println(valorCofinsS +" String");
@@ -414,22 +419,24 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadovalorCofins + " Esperado");
 		sucesso.add(igualDobule(valorCofinsD, esperadovalorCofins));
 		System.out.println(sucesso.get(13) + " Valor Cofins");
-		System.err.println("-------------------------------------------------");
+		*/
+		
+		System.out.println("-------------------------------------------------");
 		// Valor Difal
 		System.out.println("Valor Difal");
 		String valorDifalS = valorDifal.getText();
-
-		valorDifalS = remplazarPuntos(valorDifalS);
-		valorDifalS = remplazarComas(valorDifalS);
+		valorDifalS = valorDifalS.replace(".", "");
+		valorDifalS = valorDifalS.replace(",", ".");
 		System.out.println(valorDifalS+ " String");
 		double valorDifalD = new Double(valorDifalS);
 		System.out.println(valorDifalD + " Double");
-		double esperadovalorDifal = 2249.00;
+		double esperadovalorDifal = 1201;
 		System.out.println(esperadovalorDifal + " Esperado");
 		sucesso.add(igualDobule(valorDifalD, esperadovalorDifal));
-		System.out.println(sucesso.get(13) + " Valor Difal");
+		System.out.println(igualDobule(valorDifalD, esperadovalorDifal) + " Valor Difal");
+		/*
+		System.out.println("-------------------------------------------------");
 		
-		System.err.println("-------------------------------------------------");
 		// Valor PIS
 		System.out.println("Valor PIS");
 		String valorPisS = valorPis.getText();
@@ -443,7 +450,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadovalorPis + " esperado");
 		sucesso.add(igualDobule(valorPisD, esperadovalorPis));
 		System.out.println(sucesso.get(13) + " Valor PIS");
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		
 		// BC Outras ICMS
 		System.out.println("BC Outras ICMS");
@@ -457,23 +464,24 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadobcOutrasICMS + " Esperado");
 		sucesso.add(igualDobule(bcOutrasICMSD, esperadobcOutrasICMS));
 		System.out.println(sucesso.get(13) + " BC Outras ICMS");
-		
-		System.err.println("-------------------------------------------------");
+		*/
+		System.out.println("-------------------------------------------------");
 		
 		// BC Outras IPI
 		System.out.println("BC Outras IPI");
 		String bcOutrasIPIS = bcOutrasIPI.getText();
-		bcOutrasIPIS = remplazarPuntos(bcOutrasIPIS);
-		bcOutrasIPIS = remplazarComas(bcOutrasIPIS);
+		bcOutrasIPIS = bcOutrasIPIS.replace(".", "");
+		bcOutrasIPIS = bcOutrasIPIS.replace(",", ".");
 		System.out.println(bcOutrasIPIS+ " String");
 		double bcOutrasIPID = new Double(bcOutrasIPIS);
 		System.out.println(bcOutrasIPID + " Double");
 		double esperadobcOutrasIPI = 874390.23;
 		System.out.println(esperadobcOutrasIPI + " Esperado");
 		sucesso.add(igualDobule(bcOutrasIPID, esperadobcOutrasIPI));
-		System.out.println(sucesso.get(13) + " BC Outras IPI");
+		System.out.println(igualDobule(bcOutrasIPID, esperadobcOutrasIPI) + " BC Outras IPI");
+		/*
+		System.out.println("-------------------------------------------------");
 		
-		System.err.println("-------------------------------------------------");
 		// BC Outras DIFAL
 		System.out.println("BC Outras DIFAL");
 		String bcOutrasDIFALS = bcOutrasDIFAL.getText();
@@ -487,23 +495,22 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadobcOutrasDIFAL + " Esperado");
 		sucesso.add(igualDobule(bcOutrasDIFALD, esperadobcOutrasDIFAL));
 		System.out.println(sucesso.get(13) + " BC Outras DIFAL");
+		*/
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		// QTD. BC PIS
 		System.out.println("QTD. BC PIS");
 		String qtdBCPISS = qtdBCPIS.getText();
-
-		qtdBCPISS = remplazarPuntos(qtdBCPISS);
-		qtdBCPISS = remplazarComas(qtdBCPISS);
+		qtdBCPISS = qtdBCPISS.replace(",", ".");
 		System.out.println(qtdBCPISS + "String");
 		double qtdBCPISD = new Double(qtdBCPISS);
 		System.out.println(qtdBCPISD + " Double");
-		double esperadoqtdBCPIS = 740.00;
+		double esperadoqtdBCPIS = 719;
 		System.out.println(esperadoqtdBCPIS + " Esperado");
 		sucesso.add(igualDobule(qtdBCPISD, esperadoqtdBCPIS));
-		System.out.println(sucesso.get(13) + " QTD. BC PIS");
-		
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(qtdBCPISD, esperadoqtdBCPIS) + " QTD. BC PIS");
+		/*
+		System.out.println("-------------------------------------------------");
 		// Valor Outras DIFAL
 		System.out.println("Valor Outras DIFAL");
 		String valorOutrasDIFALS = valorOutrasDIFAL.getText();
@@ -518,7 +525,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		sucesso.add(igualDobule(valorOutrasDIFALD, esperadovalorOutrasDIFAL));
 		System.out.println(sucesso.get(13) + " Valor Outras DIFAL");
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		// Valor Outras ICMS
 		System.out.println("Valor Outras ICMS");
 		String valorOutrasICMSS = valorOutrasICMS.getText();
@@ -533,7 +540,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		sucesso.add(igualDobule(valorOutrasICMSD, esperadovalorOutrasICMS));
 		System.out.println(sucesso.get(13) + " Valor Outras ICMS");
 		
-		System.err.println("-------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		// Valor Conta ICMS
 		System.out.println("Valor Conta ICMS");
 		String valorContaICMSS = valorContaICMS.getText();
@@ -547,36 +554,37 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		System.out.println(esperadovalorContaICMS + " Esperado");
 		sucesso.add(igualDobule(valorContaICMSD, esperadovalorContaICMS));
 		System.out.println(sucesso.get(13) + " Valor Conta ICMS");
+		*/
+		System.out.println("-------------------------------------------------");
 		
-		System.err.println("-------------------------------------------------");
 		// Valor Conta ICMS ST
 		System.out.println(" Valor Conta ICMS ST");
 		String valorContaICMSSTS = valorContaICMSST.getText();
-
-		valorContaICMSSTS = remplazarPuntos(valorContaICMSSTS);
-		valorContaICMSSTS = remplazarComas(valorContaICMSSTS);
+		valorContaICMSSTS = valorContaICMSSTS.replace(".", "");
+		valorContaICMSSTS = valorContaICMSSTS.replace(",", ".");
 		System.out.println(valorContaICMSSTS + " String");
 		double valorContaICMSSTD = new Double(valorContaICMSSTS);
 		System.out.println(valorContaICMSSTD + " Double");
-		double esperadovalorContaICMSST = 157390.230000;
+		double esperadovalorContaICMSST = 157390.23;
 		System.out.println(esperadovalorContaICMSST + " Esperado");
 		sucesso.add(igualDobule(valorContaICMSSTD, esperadovalorContaICMSST));
-		System.out.println(sucesso.get(13) + " Valor Conta ICMS ST");
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(valorContaICMSSTD, esperadovalorContaICMSST) + " Valor Conta ICMS ST");
+		
+		
+		System.out.println("-------------------------------------------------");
 		// Valor Conta Difal
 		System.out.println("Valor Conta Difal");
 		String valorContaDifalS = valorContaDifal.getText();
-
-		valorContaDifalS = remplazarPuntos(valorContaDifalS);
-		valorContaDifalS = remplazarComas(valorContaDifalS);
+		valorContaDifalS = valorContaDifalS.replace(".", "");
+		valorContaDifalS = valorContaDifalS.replace(",", ".");
 		System.out.println(valorContaDifalS+ " String");
 		double valorContaDifalD = new Double(valorContaDifalS);
 		System.out.println(valorContaDifalD + " Double");
-		double esperadovalorContaDifal = 2264.454215;
+		double esperadovalorContaDifal = 1201;
 		System.out.println(esperadovalorContaDifal + " Double");
 		sucesso.add(igualDobule(valorContaDifalD, esperadovalorContaDifal));
-		System.out.println(sucesso.get(13) + " Valor Conta Difal");
-		System.err.println("-------------------------------------------------");
+		System.out.println(igualDobule(valorContaDifalD, esperadovalorContaDifal) + " Valor Conta Difal");
+		System.out.println("-------------------------------------------------");
 		System.out.println(sucesso);
 		return sucesso;
 		

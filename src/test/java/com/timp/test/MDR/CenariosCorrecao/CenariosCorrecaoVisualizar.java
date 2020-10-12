@@ -16,24 +16,24 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CenariosCorrecaoVisualizar extends TestBaseKathy{
+public class CenariosCorrecaoVisualizar extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoVisualizarPO cenariosCorrecaoVisualizarPO;
-	
-    @BeforeClass
-    public void beforeClass() {
-    	driver = initializationK();
+ 
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cenariosCorrecaoVisualizarPO = new CenariosCorrecaoVisualizarPO();
-    }
+	}
 
-    @AfterClass
-    public void afterClass() {
-    }
-  
-    @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -42,13 +42,13 @@ public class CenariosCorrecaoVisualizar extends TestBaseKathy{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-	
+
 	@Test(priority = 2)
-    public void cenariosCorrecaoVisualizar() {
-      ArrayList<Boolean> sucesso = cenariosCorrecaoVisualizarPO.cenariosCorrecaoVisualizar();
-  	  
-      for (int i = 0; i < sucesso.size(); i++) {
-		assertTrue(sucesso.get(i), visualizaçar);
+	public void visualizar() {
+		ArrayList<Boolean> sucesso = cenariosCorrecaoVisualizarPO.cenariosCorrecaoVisualizar();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}
-    }
 }

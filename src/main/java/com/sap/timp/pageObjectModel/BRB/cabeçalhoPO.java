@@ -81,9 +81,15 @@ public class cabeçalhoPO extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
+		
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
-		waitExpectElement(menu);
-		sleep(menuT);
+
+		//waitExpectElement(menu);
+		//sleep(menuT);
 		
 		menu.click();
 
@@ -116,8 +122,8 @@ public class cabeçalhoPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(4000);
 		execucao.click();
-		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		sleep(8000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		executar.click();
 		

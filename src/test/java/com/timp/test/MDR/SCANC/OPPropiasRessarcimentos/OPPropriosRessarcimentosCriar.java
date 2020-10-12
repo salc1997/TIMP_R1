@@ -2,6 +2,7 @@ package com.timp.test.MDR.SCANC.OPPropiasRessarcimentos;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.OPPropiasRessarcimentos.OPPropiasR
 import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO;
 
 public class OPPropriosRessarcimentosCriar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	OPPropiasRessarcimentosCriarPO oPPropiasRessarcimentosCriarPO;
@@ -29,9 +30,11 @@ public class OPPropriosRessarcimentosCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		oPPropiasRessarcimentosCriarPO = new OPPropiasRessarcimentosCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,15 +52,10 @@ public class OPPropriosRessarcimentosCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = oPPropiasRessarcimentosCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

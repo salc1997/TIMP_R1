@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="DESKTOP-SUF121B" failures="1" tests="3" name="Default test" time="119.293" errors="0" timestamp="21 Jul 2020 21:49:26 GMT">
   <testcase classname="com.timp.test.BRB.ReordenarColuna" name="login" time="9.574"/>
   <testcase classname="com.timp.test.BRB.ReordenarColuna" name="brbEntrar" time="28.417"/>
@@ -238,5 +239,11 @@ Session ID: 51cb499d840b0ef0e66750583ec3b74c
   <testcase name="excluir" time="45.24" classname="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testsuite hostname="LitoSoler" name="Default test" tests="3" failures="0" timestamp="12 Oct 2020 00:58:15 GMT" time="87.782" errors="0">
+  <testcase name="ingresar" time="7.057" classname="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis"/>
+  <testcase name="mdrEntrar" time="9.535" classname="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis"/>
+  <testcase name="criar" time="58.308" classname="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 </testsuite> <!-- Default test -->

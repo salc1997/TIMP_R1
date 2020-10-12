@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaDetalhesPO;
 
-public class LimiteCompetenciaDetalhes extends TestBaseSteven{
+public class LimiteCompetenciaDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,12 +29,12 @@ public class LimiteCompetenciaDetalhes extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		limiteCompetenciaDetalhesPO = new LimiteCompetenciaDetalhesPO();
 	}
-	/*
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,13 +49,13 @@ public class LimiteCompetenciaDetalhes extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = limiteCompetenciaDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-		
+
 	}
 }

@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,10 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosCriarPO;
 
-public class TabelaDeOutrosCreditosCriar extends TestBaseEliel{
- 
-	
-	
+public class TabelaDeOutrosCreditosCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeOutrosCreditosCriarPO tabelaDeOutrosCreditosCriarPO;
@@ -26,16 +25,18 @@ public class TabelaDeOutrosCreditosCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeOutrosCreditosCriarPO = new TabelaDeOutrosCreditosCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -46,11 +47,9 @@ public class TabelaDeOutrosCreditosCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaDeOutrosCreditosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-			
-	
+
+	}
+
 }

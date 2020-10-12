@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,11 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMVisualizarPO;
 
-public class CodigoDIPAMVisualizar extends TestBaseEliel{
-	
+public class CodigoDIPAMVisualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDIPAMVisualizarPO codigoDIPAMVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -25,9 +27,11 @@ public class CodigoDIPAMVisualizar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDIPAMVisualizarPO = new CodigoDIPAMVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -43,16 +47,15 @@ public class CodigoDIPAMVisualizar extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = codigoDIPAMVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
-  
+	}
+
 }

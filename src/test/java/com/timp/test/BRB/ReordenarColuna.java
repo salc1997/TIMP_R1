@@ -30,62 +30,48 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ReordenarColunarPO;
 
-
-public class ReordenarColuna extends TestBaseSteven{
-	
+public class ReordenarColuna extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ReordenarColunarPO reordenarColunarPO;
 
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		reordenarColunarPO = new ReordenarColunarPO();
-	
 
-		
-    }
-    
-    @AfterClass
-    public void afterClass() {
-    	//driver.close();
-    }
- 
-    
-    @Test(priority = 0)
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
 
-	
 	@Test(priority = 2)
 	public void reordenar() {
-		
+
 		boolean sucesso = false;
 		sucesso = reordenarColunarPO.reordenar();
-		
-		assertTrue(sucesso,reordenar);
-		
-		
-		
+		System.out.println(sucesso);
 
-		
+		assertTrue(sucesso, reordenar);
+
 	}
-	
-		
-	
-	
+
 }

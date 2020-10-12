@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaRe
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -15,8 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditarPO;
 
 public class TabelaReceitasCreditoFiscalAntecipadoEditar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasCreditoFiscalAntecipadoEditarPO tabelaReceitasCreditoFiscalAntecipadoEditarPO;
@@ -29,10 +29,12 @@ public class TabelaReceitasCreditoFiscalAntecipadoEditar extends TestBaseSteven 
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaReceitasCreditoFiscalAntecipadoEditarPO = new TabelaReceitasCreditoFiscalAntecipadoEditarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,13 +51,9 @@ public class TabelaReceitasCreditoFiscalAntecipadoEditar extends TestBaseSteven 
 	@Test(priority = 2)
 	public void editar() {
 
-		
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoEditarPO.editar();
 		assertTrue(sucesso, Editar);
-		
-		
-	}			
-		
-	
-	
+
+	}
+
 }

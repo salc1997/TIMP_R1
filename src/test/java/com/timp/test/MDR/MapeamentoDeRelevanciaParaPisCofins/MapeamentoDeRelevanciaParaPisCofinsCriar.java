@@ -2,6 +2,7 @@ package com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,11 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsCriarPO;
 
+public class MapeamentoDeRelevanciaParaPisCofinsCriar extends TestBaseEliel {
 
-public class MapeamentoDeRelevanciaParaPisCofinsCriar extends TestBaseEliel{
-
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoDeRelevanciaParaPisCofinsCriarPO mapeamentoDeRelevanciaParaPisCofinsCriarPO;
@@ -27,9 +25,11 @@ public class MapeamentoDeRelevanciaParaPisCofinsCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoDeRelevanciaParaPisCofinsCriarPO = new MapeamentoDeRelevanciaParaPisCofinsCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,11 +47,9 @@ public class MapeamentoDeRelevanciaParaPisCofinsCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = mapeamentoDeRelevanciaParaPisCofinsCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}				
-	
-	
+
+	}
+
 }

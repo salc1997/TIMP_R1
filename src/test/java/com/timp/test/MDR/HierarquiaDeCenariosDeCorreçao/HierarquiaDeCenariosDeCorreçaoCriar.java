@@ -2,6 +2,7 @@ package com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.Hierarqui
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaCriarPO;
 
 public class HierarquiaDeCenariosDeCorreçaoCriar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	HierarquiaDeCenariosDeCorreçaoCriarPO hierarquiaDeCenariosDeCorreçaoCriarPO;
@@ -25,9 +26,11 @@ public class HierarquiaDeCenariosDeCorreçaoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		hierarquiaDeCenariosDeCorreçaoCriarPO = new HierarquiaDeCenariosDeCorreçaoCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,13 +48,9 @@ public class HierarquiaDeCenariosDeCorreçaoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = hierarquiaDeCenariosDeCorreçaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}		
-	
-	
-	
-  
+
+	}
+
 }

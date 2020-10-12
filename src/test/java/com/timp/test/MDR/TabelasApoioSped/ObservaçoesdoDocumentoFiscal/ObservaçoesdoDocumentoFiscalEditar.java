@@ -9,10 +9,13 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalEditarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ObservaçoesdoDocumentoFiscalEditarPO observaçoesdoDocumentoFiscalEditarPO;
@@ -23,14 +26,14 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		observaçoesdoDocumentoFiscalEditarPO= new ObservaçoesdoDocumentoFiscalEditarPO();
+		observaçoesdoDocumentoFiscalEditarPO = new ObservaçoesdoDocumentoFiscalEditarPO();
 	}
-	/*
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,19 +46,15 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void editar() {
 
-		observaçoesdoDocumentoFiscalEditarPO.editar();
-		//boolean sucesso = antecipacaoEditarPO.editar();
-		
-		//assertTrue(sucesso, Editar);
+		// observaçoesdoDocumentoFiscalEditarPO.editar();
+		boolean sucesso = observaçoesdoDocumentoFiscalEditarPO.editar();
+
+		assertTrue(sucesso, Editar);
 
 	}
-	
-	
-	
 
 }

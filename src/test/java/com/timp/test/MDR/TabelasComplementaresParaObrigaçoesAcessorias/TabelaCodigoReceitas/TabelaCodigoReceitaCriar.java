@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCo
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,9 +13,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
 
-public class TabelaCodigoReceitaCriar extends TestBaseSteven{
+public class TabelaCodigoReceitaCriar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoReceitasCriarPO tabelaCodigoReceitasCriarPO;
@@ -27,9 +27,11 @@ public class TabelaCodigoReceitaCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasCriarPO = new TabelaCodigoReceitasCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,12 +49,9 @@ public class TabelaCodigoReceitaCriar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaCodigoReceitasCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-			
-	
-	
+
+	}
+
 }

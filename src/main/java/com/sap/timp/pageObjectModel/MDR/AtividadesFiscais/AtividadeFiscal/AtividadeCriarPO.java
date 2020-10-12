@@ -164,8 +164,10 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 	
 		biblioteca.click();

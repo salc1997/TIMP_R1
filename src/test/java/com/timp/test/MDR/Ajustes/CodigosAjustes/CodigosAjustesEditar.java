@@ -15,8 +15,8 @@ import com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigoAjustesEdit
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 
-public class CodigosAjustesEditar extends TestBaseSteven{
-
+public class CodigosAjustesEditar extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoAjustesEditarPO codigoAjustesEditarPO;
@@ -29,12 +29,12 @@ public class CodigosAjustesEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesEditarPO = new CodigoAjustesEditarPO();
 	}
-	/*
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,13 +49,12 @@ public class CodigosAjustesEditar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		boolean sucesso = codigoAjustesEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
-		
-		
+
 	}
-	
+
 }

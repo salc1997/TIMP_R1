@@ -14,13 +14,11 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.RegrasPO;
 import com.sap.timp.pageObjectModel.BRB.cabeçalhoPO;
 
-public class Cabeçalho extends TestBaseSteven{
-
+public class Cabeçalho extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	cabeçalhoPO cabeçalhoPO;
-	
-
 
 	@BeforeClass
 	public void beforeClass() {
@@ -31,13 +29,12 @@ public class Cabeçalho extends TestBaseSteven{
 		cabeçalhoPO = new cabeçalhoPO();
 
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	
-	
+
 	@Test(priority = 0)
 	public void login() {
 
@@ -51,16 +48,10 @@ public class Cabeçalho extends TestBaseSteven{
 		acessarBrbPO.acessar();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void cabeçalho() {
 		cabeçalhoPO.cabeçalho();
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }

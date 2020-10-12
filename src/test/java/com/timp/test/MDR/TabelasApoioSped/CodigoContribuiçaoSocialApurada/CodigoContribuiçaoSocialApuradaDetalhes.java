@@ -11,14 +11,14 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocia
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaEditarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaExcluirPO;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-
-public class CodigoContribuiçaoSocialApuradaDetalhes extends TestBaseSteven{
+public class CodigoContribuiçaoSocialApuradaDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -32,9 +32,11 @@ public class CodigoContribuiçaoSocialApuradaDetalhes extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		CodigoContribuiçaoSocialApuradaDetalhesPO = new CodigoContribuiçaoSocialApuradaDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -53,11 +55,11 @@ public class CodigoContribuiçaoSocialApuradaDetalhes extends TestBaseSteven{
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = CodigoContribuiçaoSocialApuradaDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}	
-	
+	}
+
 }

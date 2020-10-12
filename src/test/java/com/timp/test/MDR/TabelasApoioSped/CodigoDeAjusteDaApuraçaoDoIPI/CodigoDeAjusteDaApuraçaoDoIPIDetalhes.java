@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -13,11 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhesPO;
 
 public class CodigoDeAjusteDaApuraçaoDoIPIDetalhes extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeAjusteDaApuraçaoDoIPIDetalhesPO codigoDeAjusteDaApuraçaoDoIPIDetalhesPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,9 +27,11 @@ public class CodigoDeAjusteDaApuraçaoDoIPIDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeAjusteDaApuraçaoDoIPIDetalhesPO = new CodigoDeAjusteDaApuraçaoDoIPIDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,19 +47,15 @@ public class CodigoDeAjusteDaApuraçaoDoIPIDetalhes extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = codigoDeAjusteDaApuraçaoDoIPIDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-	
-	
-	
-	
-	
+	}
+
 }

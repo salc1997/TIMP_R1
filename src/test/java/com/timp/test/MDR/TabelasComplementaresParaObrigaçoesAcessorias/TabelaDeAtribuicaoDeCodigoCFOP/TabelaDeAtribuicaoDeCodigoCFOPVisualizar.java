@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPVisualizarPO;
 
-public class TabelaDeAtribuicaoDeCodigoCFOPVisualizar extends TestBaseEliel{
- 
-	
+public class TabelaDeAtribuicaoDeCodigoCFOPVisualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeAtribuicaoDeCodigoCFOPVisualizarPO tabelaDeAtribuicaoDeCodigoCFOPVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,9 +27,11 @@ public class TabelaDeAtribuicaoDeCodigoCFOPVisualizar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPVisualizarPO = new TabelaDeAtribuicaoDeCodigoCFOPVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,13 +50,12 @@ public class TabelaDeAtribuicaoDeCodigoCFOPVisualizar extends TestBaseEliel{
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = tabelaDeAtribuicaoDeCodigoCFOPVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}				
-	
-	
+	}
+
 }

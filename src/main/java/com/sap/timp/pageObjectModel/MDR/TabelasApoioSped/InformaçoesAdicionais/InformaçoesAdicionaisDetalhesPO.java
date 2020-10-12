@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -56,12 +58,36 @@ public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
 	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
+	public WebElement codigode;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
+	public WebElement descricaode;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
+	public WebElement ufde;
+	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div/div")
+	public WebElement sequenciade;
+	
+	@FindBy(xpath = "//span[@id=\"codInfoAdicional\"]")
+	public WebElement codigovi;
+	
+	@FindBy(xpath = "//span[@id=\"uf\"]")
+	public WebElement ufvi;
+	
+	@FindBy(xpath = "//span[@id=\"sequencia\"]")
+	public WebElement sequenciavi;
+	
+	@FindBy(xpath = "//span[@id=\"descricao\"]")
+	public WebElement descricaovi;
+	
 	public InformaçoesAdicionaisDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String detalhes() {
+	public ArrayList<Boolean> detalhes() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -90,6 +116,18 @@ public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		String codigodetalhes = codigode.getText();
+		String descricaodetalhes = descricaode.getText();
+		String ufdetalhes = ufde.getText();
+		String sequenciadetalhes = sequenciade.getText();
+		
+		System.out.println(codigodetalhes);
+		System.out.println(descricaodetalhes);
+		System.out.println(ufdetalhes);
+		System.out.println(sequenciadetalhes);
+		
+		
 		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -112,8 +150,24 @@ public class InformaçoesAdicionaisDetalhesPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		String codigovisualizar =  codigovi.getText();
+		String descricaovisualizar = descricaovi.getText();
+		String ufvisualizar = ufvi.getText();
+		String sequenciavisualizar = sequenciavi.getText();
+		
+		
+		System.out.println(codigovisualizar);
+		System.out.println(descricaovisualizar);
+		System.out.println(ufvisualizar);
+		System.out.println(sequenciavisualizar);
+		
+		
+		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		sucesso.add(codigovisualizar.equals(codigodetalhes));
+		sucesso.add(descricaovisualizar.equals(descricaodetalhes));
+		sucesso.add(ufvisualizar.equals(ufdetalhes));
+		sucesso.add(sequenciavisualizar.equals(sequenciadetalhes));
+
 		return sucesso;	
 	}
 

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,22 +15,24 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioVisualizarPO;
 
 public class AtivaçaoParaMunicipioVisualizar extends TestBaseEliel {
-  
-	
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtivaçaoParaMunicipioVisualizarPO ativaçaoParaMunicipioVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-	ativaçaoParaMunicipioVisualizarPO= new AtivaçaoParaMunicipioVisualizarPO();
+		ativaçaoParaMunicipioVisualizarPO = new AtivaçaoParaMunicipioVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,17 +48,13 @@ public class AtivaçaoParaMunicipioVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = ativaçaoParaMunicipioVisualizarPO.visualizar();
-		
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-	}	
-	
-	
-	
-	
+	}
+
 }

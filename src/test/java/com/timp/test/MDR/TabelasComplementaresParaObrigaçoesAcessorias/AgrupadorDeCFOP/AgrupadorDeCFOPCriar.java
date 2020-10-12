@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.Agrupado
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -11,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriarPO;
 
 public class AgrupadorDeCFOPCriar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPCriarPO agrupadorDeCFOPCriarPO;
@@ -25,9 +25,11 @@ public class AgrupadorDeCFOPCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		agrupadorDeCFOPCriarPO = new AgrupadorDeCFOPCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,12 +47,9 @@ public class AgrupadorDeCFOPCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = agrupadorDeCFOPCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

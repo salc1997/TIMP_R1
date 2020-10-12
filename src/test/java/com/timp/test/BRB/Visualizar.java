@@ -14,55 +14,48 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ExportarPO;
 import com.sap.timp.pageObjectModel.BRB.VisualizarPO;
 
-public class Visualizar extends TestBaseSteven{
-	
-	
+public class Visualizar extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	VisualizarPO visualizarPO;
 
-
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		visualizarPO = new VisualizarPO();
-	
 
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
+
 	@Test(priority = 2)
-	public void visualizar(){
-		
+	public void visualizar() {
+
 		boolean sucesso = true;
 		sucesso = visualizarPO.visualizar();
+		System.out.println(sucesso);
 
 		assertFalse(sucesso, visualizaçar);
-		
-	}	
-		
+
+	}
 
 }

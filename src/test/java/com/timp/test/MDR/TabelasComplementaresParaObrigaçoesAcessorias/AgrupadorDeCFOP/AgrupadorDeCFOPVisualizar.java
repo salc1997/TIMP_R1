@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,11 +15,10 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class AgrupadorDeCFOPVisualizar extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPVisualizarPO agrupadorDeCFOPVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,10 +26,12 @@ public class AgrupadorDeCFOPVisualizar extends TestBaseEliel {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		agrupadorDeCFOPVisualizarPO = new AgrupadorDeCFOPVisualizarPO();
+	} 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,13 +50,12 @@ public class AgrupadorDeCFOPVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = agrupadorDeCFOPVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
-	
+	}
+
 }

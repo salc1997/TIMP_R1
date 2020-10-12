@@ -19,10 +19,13 @@ public class FatorCreditamentoCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//button/span[text()=\"Novo Fator de Creditamento do CIAP\"]")
 	public WebElement novo;
 	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
+	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma empresa\"]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcEmpresa;
 	
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
@@ -34,30 +37,30 @@ public class FatorCreditamentoCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//div[contains(@class,\"overlay-multipleSelect3\")]")
 	public WebElement claseOpcFiliais;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcUfFilial;
 	
 	//@FindBy(xpath = "//div/div[@id=\"branches\"]/div/div/div/input")
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filiais\"]")
 	public WebElement filiais;
 	
-	@FindBy(xpath = "//*[@id=\"0001\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcFiliais;
 	
-	@FindBy(xpath = "//*[@id=\"0002\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
 	public WebElement opcFiliais2;
 	
-	@FindBy(xpath = "//*[@id=\"0008\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcFiliaisTC2;
 	
-	@FindBy(xpath = "//*[@id=\"0805\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcFiliaisTC2opc1;
 	
 	//@FindBy(xpath = "//div/div[@id=\"centralizedBranch\"]/div/div/div/input")
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filial Centralizadora\"]")
 	public WebElement filialCentralizadora;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcFilialCentralizadora;
 	
 	@FindBy(xpath = "//*[@id=\"validity\"]/div/div[1]/input")
@@ -100,16 +103,19 @@ public class FatorCreditamentoCriarPO extends TestBaseKathy{
 		centralização.click();
 		sleep(1000);
 		fatorCrecimento.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		siguiente.click();
 		
-		Actions actions = new Actions(driver);
-		idC.click();
-		sleep(1000);
-		actions.doubleClick(idC).perform();
-			
-		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[3]/div")).getText();
-			
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(id);
 		novo.click();
 		
 		waitExpectElement(btnGravar);
@@ -133,10 +139,9 @@ public class FatorCreditamentoCriarPO extends TestBaseKathy{
 		filialCentralizadora.click();
 		opcFilialCentralizadora.click();
 		
-		dataVigenciaInicio.sendKeys(Keys.ENTER);
-		dataVigenciaInicio.sendKeys("24/07/2020");
-		dataVigenciaInicio.sendKeys(Keys.ENTER);
-		cuerpo.click();
+		dataVigenciaInicio.sendKeys(fechaActual());
+		sleep(2000);
+
 		
 		btnGravar.click();
 		waitExpectElement(confirmacionGravar);
@@ -152,8 +157,7 @@ public class FatorCreditamentoCriarPO extends TestBaseKathy{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		
-		actions.doubleClick(idC).perform();
+
 			
 		String id2 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[3]/div")).getText();
 		

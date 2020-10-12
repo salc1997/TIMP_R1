@@ -36,56 +36,56 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 
 
 	// aumentar
-	@FindBy(xpath = "//div[@data-column=\"28\" and contains(@aria-label, \"Linha: 1.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"28\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement empresa1;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[4]/button")
 	public WebElement aumentar;
 	// disminuir
-	@FindBy(xpath = "//div[@data-column=\"193\" and contains(@aria-label, \"Linha: 1.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"193\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement ufFilial1;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[5]/button")
 	public WebElement diminuir;
 	// negrita
-	@FindBy(xpath = "//div[@data-column=\"30\" and contains(@aria-label, \"Linha: 1.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"30\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement filial1;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button")
 	public WebElement negrita;
 	// italica
-	@FindBy(xpath = "//div[@data-column=\"21\" and contains(@aria-label, \"Linha: 1.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"21\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement dataLan1;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[7]/button")
 	public WebElement italica;
 	// Tachado
-	@FindBy(xpath = "//div[@data-column=\"8\" and contains(@aria-label, \"Linha: 1.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"8\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement categoria1;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[8]/button")
 	public WebElement tachado;
 
 	// texto esquerda
-	@FindBy(xpath = "//div[@data-column=\"79\" and contains(@aria-label, \"Linha: 1.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"79\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement valor1;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[9]/button")
 	public WebElement esquerda;
 
 	// texto centro
-	@FindBy(xpath = "//div[@data-column=\"28\" and contains(@aria-label, \"Linha: 2.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"28\" and contains(@aria-label, \"Linha: 2-\")]/div[2]")
 	public WebElement empresa2;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[10]/button")
 	public WebElement centro;
 
 	// texto centro
-	@FindBy(xpath = "//div[@data-column=\"193\" and contains(@aria-label, \"Linha: 2.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"193\" and contains(@aria-label, \"Linha: 2-\")]/div[2]")
 	public WebElement ufFilial2;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[11]/button")
 	public WebElement dereita;
 
 	// texto centro
-	@FindBy(xpath = "//div[@data-column=\"30\" and contains(@aria-label, \"Linha: 2.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"30\" and contains(@aria-label, \"Linha: 2-\")]/div[2]")
 	public WebElement filial2;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[13]/button")
 	public WebElement destaque;
 
-	@FindBy(xpath = "//div[@data-column=\"21\" and contains(@aria-label, \"Linha: 2.\")]/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"21\" and contains(@aria-label, \"Linha: 2-\")]/div[2]")
 	public WebElement dataLan2;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[15]/button")
 	public WebElement limpar;
@@ -136,9 +136,12 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
-
-		waitExpectElement(menu);
-		sleep(menuT);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
@@ -147,8 +150,10 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 
 		executar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		// Aumentar
@@ -277,8 +282,10 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		sleep(4000);
 		visualizar.click();
 		visualizacao.click();
-		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		
 

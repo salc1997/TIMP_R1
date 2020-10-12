@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -18,7 +19,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCDetalhe
 import com.sap.timp.pageObjectModel.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidoraDetalhesPO;
 
 public class SCANCDistribuidorasDetalhes extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SCANCDistribuidoraDetalhesPO sCANCDistribuidoraDetalhesPO;
@@ -31,9 +32,11 @@ public class SCANCDistribuidorasDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		sCANCDistribuidoraDetalhesPO = new SCANCDistribuidoraDetalhesPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -51,16 +54,11 @@ public class SCANCDistribuidorasDetalhes extends TestBaseSteven {
 	@Test(priority = 2)
 	public void detalhes() {
 
-		
 		ArrayList<Boolean> sucesso = sCANCDistribuidoraDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}			
-			
-	
-	
-	
-	
+	}
+
 }

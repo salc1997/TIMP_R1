@@ -1,5 +1,5 @@
 package com.timp.test.MDR.Ajustes.CodigosAjustes;
-
+ 
 import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigosAjustesCri
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 
-public class CodigosAjustesExcluir extends TestBaseSteven{
+public class CodigosAjustesExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -30,12 +30,12 @@ public class CodigosAjustesExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesExcluirPO = new CodigoAjustesExcluirPO();
 	}
-	/*
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -50,13 +50,12 @@ public class CodigosAjustesExcluir extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = codigoAjustesExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
-		
-		
+
 	}
-	
+
 }

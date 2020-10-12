@@ -18,8 +18,8 @@ import com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigoAjustesEdit
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 
-public class CodigosAjustesDetalhes extends TestBaseSteven{
-
+public class CodigosAjustesDetalhes extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoAjustesDetalhesPO codigoAjustesDetalhesPO;
@@ -31,14 +31,14 @@ public class CodigosAjustesDetalhes extends TestBaseSteven{
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesDetalhesPO = new CodigoAjustesDetalhesPO();
-		
+
 	}
-	/*
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -53,15 +53,14 @@ public class CodigosAjustesDetalhes extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = codigoAjustesDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-		
-		
+
 	}
-	
+
 }

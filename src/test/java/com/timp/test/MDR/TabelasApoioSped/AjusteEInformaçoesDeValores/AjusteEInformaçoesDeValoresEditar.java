@@ -14,7 +14,7 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.AfterClass;
 
 public class AjusteEInformaçoesDeValoresEditar extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AjusteEInformaçoesDeValoresEditarPO ajusteEInformaçoesDeValoresEditarPO;
@@ -25,14 +25,14 @@ public class AjusteEInformaçoesDeValoresEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		ajusteEInformaçoesDeValoresEditarPO= new AjusteEInformaçoesDeValoresEditarPO();
+		ajusteEInformaçoesDeValoresEditarPO = new AjusteEInformaçoesDeValoresEditarPO();
 	}
-	/*
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,18 +45,13 @@ public class AjusteEInformaçoesDeValoresEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
-		String sucesso =ajusteEInformaçoesDeValoresEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+
+		String sucesso = ajusteEInformaçoesDeValoresEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
-			
-	
-	
 
 }

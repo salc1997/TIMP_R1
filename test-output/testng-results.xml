@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
 =======
 <testng-results skipped="0" failed="0" total="3" passed="3">
@@ -28,8 +29,12 @@
 =======
 <testng-results skipped="0" failed="1" total="3" passed="2">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -93,8 +98,12 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="87782" started-at="2020-10-12T00:56:47Z" finished-at="2020-10-12T00:58:15Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,9 +199,15 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="87782" started-at="2020-10-12T00:56:47Z" finished-at="2020-10-12T00:58:15Z">
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="beforeClass" is-config="true" duration-ms="12868" started-at="2020-10-11T18:56:47Z" finished-at="2020-10-11T18:57:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -256,8 +271,12 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="ingresar" duration-ms="7057" started-at="2020-10-11T18:57:00Z" finished-at="2020-10-11T18:57:07Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -313,8 +332,13 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- ingresar -->
+        <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="mdrEntrar" duration-ms="9535" started-at="2020-10-11T18:57:07Z" finished-at="2020-10-11T18:57:17Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -520,8 +544,13 @@ Session ID: 51cb499d840b0ef0e66750583ec3b74c
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- mdrEntrar -->
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="criar" duration-ms="58308" started-at="2020-10-11T18:57:17Z" finished-at="2020-10-11T18:58:15Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -558,7 +587,10 @@ Session ID: 51cb499d840b0ef0e66750583ec3b74c
 =======
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <<<<<<< HEAD
@@ -609,6 +641,13 @@ Session ID: 51cb499d840b0ef0e66750583ec3b74c
       </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEExcluir -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis@3a079870]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-11T18:58:15Z" finished-at="2020-10-11T18:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

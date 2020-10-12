@@ -2,6 +2,7 @@ package com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar;
 
 import static org.testng.Assert.assertEquals;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,8 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarEditarPO;
 
 public class InclusaoDeCamposMarEditar extends TestBaseEliel {
-  
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InclusaoDeCamposMarEditarPO inclusaoDeCamposMarEditarPO;
@@ -24,14 +24,14 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		inclusaoDeCamposMarEditarPO= new InclusaoDeCamposMarEditarPO();
+		inclusaoDeCamposMarEditarPO = new InclusaoDeCamposMarEditarPO();
 	}
-	/*
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,18 +44,13 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
-
+ 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
-		String sucesso =inclusaoDeCamposMarEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+
+		String sucesso = inclusaoDeCamposMarEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
-		
-	
-	
-	
+
 }

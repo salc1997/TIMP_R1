@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOu
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,12 +11,10 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosEditarPO;
 
 public class TabelaOutosDebitosEditar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaOutrosDebitosEditarPO tabelaOutrosDebitosEditarPO;
@@ -28,12 +27,12 @@ public class TabelaOutosDebitosEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaOutrosDebitosEditarPO = new TabelaOutrosDebitosEditarPO();
 	}
-	/*
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,15 +45,14 @@ public class TabelaOutosDebitosEditar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = tabelaOutrosDebitosEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-	
+	}
+
 }

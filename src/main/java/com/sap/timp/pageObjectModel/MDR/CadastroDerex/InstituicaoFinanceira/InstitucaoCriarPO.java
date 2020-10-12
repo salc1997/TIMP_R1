@@ -137,7 +137,7 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		
 		sleep(1000);
 		
-		instituicao.sendKeys("Instituição Teste");
+		instituicao.sendKeys("TA Instituição Financeira");
 		
 		sleep(1000);
 		

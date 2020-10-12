@@ -1,5 +1,5 @@
 package com.timp.test.MDR.Antecipacao;
-
+ 
 import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -14,46 +14,44 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoEliminarPO;
 import com.sap.timp.pageObjectModel.MDR.Empresas.EmpresasViasualizarPO;
 
-public class AntecipacaoEliminar extends TestBaseSteven{
-  
+public class AntecipacaoEliminar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AntecipacaoEliminarPO antecipacaoEliminarPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoEliminarPO = new AntecipacaoEliminarPO();
 	}
-	/*
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	*/
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-  @Test(priority = 2)
-  public void visualizar() {
-	  
-	  boolean sucesso = antecipacaoEliminarPO.eliminar();
-	  
-	  assertTrue(sucesso,Eliminado );
-  }
+
+	@Test(priority = 2)
+	public void excluir() {
+
+		boolean sucesso = antecipacaoEliminarPO.eliminar();
+
+		assertTrue(sucesso, Eliminado);
+	}
 }

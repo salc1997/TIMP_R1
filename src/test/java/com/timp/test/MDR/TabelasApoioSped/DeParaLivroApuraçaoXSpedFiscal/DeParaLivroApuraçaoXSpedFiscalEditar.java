@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -11,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalEditarPO;
 
 public class DeParaLivroApuraçaoXSpedFiscalEditar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeParaLivroApuraçaoXSpedFiscalEditarPO deParaLivroApuraçaoXSpedFiscalEditarPO;
@@ -25,12 +25,12 @@ public class DeParaLivroApuraçaoXSpedFiscalEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		deParaLivroApuraçaoXSpedFiscalEditarPO = new DeParaLivroApuraçaoXSpedFiscalEditarPO();
 	}
-	/*
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	*/
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,17 +43,13 @@ public class DeParaLivroApuraçaoXSpedFiscalEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
+
 		boolean sucesso = deParaLivroApuraçaoXSpedFiscalEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 	}
-	
-	
-	
+
 }

@@ -2,6 +2,7 @@ package com.timp.test.MDR.CadastroCondiçao;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,10 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoCriarPO;
 
-
 public class CadastroCondicaoCriar extends TestBaseEliel {
-
-	
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondicaoCriarPO cadastroCondicaoCriarPO;
@@ -26,9 +25,11 @@ public class CadastroCondicaoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroCondicaoCriarPO = new CadastroCondicaoCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,11 +49,9 @@ public class CadastroCondicaoCriar extends TestBaseEliel {
 
 		boolean text = cadastroCondicaoCriarPO.criar();
 		assertTrue(text, Criar);
-		//Teste pra conferir se conseguiu acesssar o sistema
+		// Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(cadastroCondicaoCriarPO.mostrar.isDisplayed(), semAcesso);
 
-		
-	}	
-	
-	
+	}
+
 }

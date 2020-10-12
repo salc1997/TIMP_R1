@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.Atribuic
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,8 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
 
-public class AtribuicaoMunicipioEstadoEditar extends TestBaseSteven{
+public class AtribuicaoMunicipioEstadoEditar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtribuicaoMunicipioEstadoEditarPO atribuicaoMunicipioEstadoEditarPO;
@@ -29,9 +29,11 @@ public class AtribuicaoMunicipioEstadoEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		atribuicaoMunicipioEstadoEditarPO = new AtribuicaoMunicipioEstadoEditarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,14 +49,11 @@ public class AtribuicaoMunicipioEstadoEditar extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
-		
 		boolean sucesso = atribuicaoMunicipioEstadoEditarPO.editar();
 		assertTrue(sucesso, Criar);
-		
-	}			
-			
-	
-	
+
+	}
+
 }

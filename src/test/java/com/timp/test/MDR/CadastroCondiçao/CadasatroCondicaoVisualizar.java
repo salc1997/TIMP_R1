@@ -7,7 +7,6 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoVisualizarPO;
 
-
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
@@ -18,10 +17,11 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CadasatroCondicaoVisualizar extends TestBaseEliel {
-	
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondicaoVisualizarPO cadastroCondicaoVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -30,9 +30,11 @@ public class CadasatroCondicaoVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroCondicaoVisualizarPO = new CadastroCondicaoVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,15 +50,13 @@ public class CadasatroCondicaoVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = cadastroCondicaoVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
 
-	
-	
 }

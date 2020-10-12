@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDe
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,8 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class CodigoDeMotivosDeAjustesCriar extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeMotivosDeAjustesCriarPO codigoDeMotivosDeAjustesCriarPO;
@@ -26,9 +25,11 @@ public class CodigoDeMotivosDeAjustesCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeMotivosDeAjustesCriarPO = new CodigoDeMotivosDeAjustesCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,10 +47,9 @@ public class CodigoDeMotivosDeAjustesCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = codigoDeMotivosDeAjustesCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-			
+
+	}
+
 }

@@ -16,12 +16,12 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ObserbaçoesdoDocumentoFiscalExcluir extends TestBaseSteven{
-	
+public class ObserbaçoesdoDocumentoFiscalExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ObservaçoesdoDocumentoFiscalExcluirPO observaçoesdoDocumentoFiscalExcluirPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -29,11 +29,13 @@ public class ObserbaçoesdoDocumentoFiscalExcluir extends TestBaseSteven{
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		observaçoesdoDocumentoFiscalExcluirPO = new ObservaçoesdoDocumentoFiscalExcluirPO();
-		
+
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -52,13 +54,9 @@ public class ObserbaçoesdoDocumentoFiscalExcluir extends TestBaseSteven{
 	public void excluir() {
 
 		boolean sucesso = observaçoesdoDocumentoFiscalExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
-		
-	}	
-		
-	
-	
-	
-  
+
+	}
+
 }

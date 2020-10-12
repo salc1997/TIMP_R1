@@ -74,7 +74,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"Teste 2\"]")
 	public WebElement teste2;
 	
-	@FindBy(xpath = "//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1.\")]/div/button")
+	@FindBy(xpath = "//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/button")
 	public WebElement info;
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[1]")
@@ -94,9 +94,9 @@ public class ListaSuspensaPO extends TestBaseSteven{
 					 
 	//@FindBy(xpath = "//div[@data-column=\"n2\" and contains(@aria-label, \"Linha: 1.\")]/div/div/div/div[contains(@class,\"downmenu\")]")
 	//public WebElement menulistaTd1;
-	@FindBy(xpath = "//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1.\")]/div/div/div/div[contains(@class,\"downmenu\")]")
+	@FindBy(xpath = "//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div[contains(@class,\"downmenu\")]")
 	public WebElement menulistaTd1;
-	@FindBy(xpath = "//div[@data-column=\"n2\" and contains(@aria-label, \"Linha: 1.\")]/div/div/div/div[2]")
+	@FindBy(xpath = "//div[@data-column=\"n2\" and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div[2]")
 	public WebElement menuListaTc2;
 	
 
@@ -172,18 +172,24 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		
 		execucao.click();
 		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		
 		
 		executar.click();
-		
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		//actionsMoveToElementXpath("//div[contains(@aria-label,\"ListaSuspensa\")]");
 
 		
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div/div[16]");
+		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 		String usuarioLog = usuarioLogueado.getText();
 		
 		String url = driver.getCurrentUrl();
@@ -198,18 +204,27 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		
 		if (amb== false) {
 			menulistaTd1.click();
-			sleep(10000);
+			sleep(5000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			//sleep(10000);
 		}else {
 			menuListaTc2.click();
-			sleep(10000);
+			sleep(5000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			//sleep(10000);
 		}
 
 
 		
 		teste1.click();
 
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//sleep(5000);
 		if (amb== false) {
 			menulistaTd1.click();
 			sleep(5000);
@@ -220,9 +235,11 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		sleep(5000);
 		teste2.click();
 		
-
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//sleep(5000);
 		if (amb== false) {
 			menulistaTd1.click();
 			sleep(2000);

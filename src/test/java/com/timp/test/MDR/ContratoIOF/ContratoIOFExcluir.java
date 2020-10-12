@@ -18,6 +18,7 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContratoIOFExcluirPO contratoIOFEcluirPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,16 +27,18 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contratoIOFEcluirPO = new ContratoIOFExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -44,11 +47,11 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Excluir() {
+	public void excluir() {
 
-		boolean sucesso= contratoIOFEcluirPO.excluir();
+		boolean sucesso = contratoIOFEcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		//Teste pra conferir se conseguiu acesssar o sistema
+		// Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(contratoIOFEcluirPO.mostrar.isDisplayed(), semAcesso);
 
 	}

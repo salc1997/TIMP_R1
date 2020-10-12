@@ -14,23 +14,25 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class InformaçoesAdicionaisExcluir extends TestBaseEliel{
-	
+public class InformaçoesAdicionaisExcluir extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InformaçoesAdicionaisExcluirPO informaçoesAdicionaisExcluirPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-	informaçoesAdicionaisExcluirPO = new InformaçoesAdicionaisExcluirPO();
+		informaçoesAdicionaisExcluirPO = new InformaçoesAdicionaisExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,16 +48,12 @@ public class InformaçoesAdicionaisExcluir extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void excluir() {
 
 		boolean sucesso = informaçoesAdicionaisExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
-		
-	}	
-		
-	
-	
-	
-  
+
+	}
+
 }

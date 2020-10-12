@@ -2,7 +2,6 @@ package com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos;
 
 import org.testng.annotations.Test;
 
-
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -14,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven{
+public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,9 +27,11 @@ public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçaoCreditosExcluirPO = new CodigoAjustesContribuiçaoCreditosExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,11 +47,11 @@ public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = codigoAjustesContribuiçaoCreditosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}	
-	
+
+	}
+
 }

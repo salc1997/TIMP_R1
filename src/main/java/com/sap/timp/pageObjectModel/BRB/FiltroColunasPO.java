@@ -78,9 +78,13 @@ public class FiltroColunasPO  extends TestBaseSteven{
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
-		waitExpectElement(menu);
-		sleep(menuT);
+		//waitExpectElement(menu);
+		//sleep(menuT);
 
 		menu.click();
 
@@ -89,13 +93,17 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 	
 		executar.click();
-		sleep(2000);
+		sleep(8000);
 		
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[13]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		
+		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		colunaOpcao.click();
 		sleep(5000);
 		String cfopV = (cfop.getAttribute("value"));
+		System.out.println(cfopV + " Valor Obtenido");
 		desmarcar.click();
 		sleep(1000);
 		pesquisar.sendKeys(cfopV);
@@ -104,9 +112,11 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		String resultadoS = "";
 		resultadoS = resultado.getAttribute("value");
 		cfopG = resultadoS;
+		System.out.println(cfopG + " Resultado Búsqueda");
 
 		boolean sucesso = false;
 		sucesso = resultadoS.equals(cfopV);
+		System.out.println(sucesso + "Filtro Coluna");
 		
 		
 		
@@ -122,15 +132,17 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		selecionar.click();
 		sleep(1000);
 		aplicar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		int rows = driver.findElements(By.xpath("//div[@id =\"table-data-wrapper\"]/div[@class=\"row visible\"]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		for (int i = 0; i < rows; i++) {
 			
 			
-			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1.\")]/div[contains(@style,\"text-overflow\")]")).getText());
+			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1-\")]/div[contains(@style,\"text-overflow\")]")).getText());
 
 			sucesso.add(cfop.equals(cfopG));
 			
@@ -144,18 +156,20 @@ public class FiltroColunasPO  extends TestBaseSteven{
 	
 	
 	public boolean filtroFerramenta2() {
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[13]");
+		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		
 		colunaOpcao.click();
 		sleep(5000);
 		selecionar.click();
 		String cfopV = (cfop2.getAttribute("value"));
+		System.out.println(cfopV + " Valor Obtenido");
 		sleep(1000);
 		pesquisar.sendKeys(cfopV);
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		String resultadoS = "";
 		resultadoS = resultado2.getAttribute("value");
+		System.out.println(resultadoS + " Resultado Búsqueda");
 		cfopG = resultadoS;
 
 		boolean sucesso = false;
@@ -177,14 +191,16 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		selecionar.click();
 		sleep(3000);
 		aplicar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		int rows = driver.findElements(By.xpath("//div[@id =\"table-data-wrapper\"]/div[@class=\"row visible\"]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		for (int i = 0; i < rows; i++) {
 			
-			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1.\")]/div[contains(@style,\"text-overflow\")]")).getText());
+			String cfop = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"115\" and contains(@aria-label, \"Linha: 1-\")]/div[contains(@style,\"text-overflow\")]")).getText());
 			sucesso.add(cfop.equals(cfopG));
 			
 		}

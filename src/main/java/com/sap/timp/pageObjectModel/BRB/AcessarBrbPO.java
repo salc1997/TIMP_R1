@@ -34,6 +34,8 @@ public class AcessarBrbPO extends TestBaseSteven{
 	
 	
 	public boolean acessar() {
+		
+
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(3000);
@@ -46,6 +48,7 @@ public class AcessarBrbPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
 		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
 		cadastro.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

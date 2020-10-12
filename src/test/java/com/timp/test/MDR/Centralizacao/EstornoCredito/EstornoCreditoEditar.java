@@ -19,47 +19,45 @@ public class EstornoCreditoEditar extends TestBaseEliel {
 
 	EstornoCreditoEditarPO estornoCreditoEditarPO;
 
-	
 	@BeforeClass
 	public void beforeClass() {
-		
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		estornoCreditoEditarPO = new EstornoCreditoEditarPO();
 
 	}
-	/*
+ 
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	*/
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		//boolean sucesso=estornoCreditoEditarPO.Ed;
+
+		// boolean sucesso=estornoCreditoEditarPO.Ed;
 		estornoCreditoEditarPO.Editar();
-	//teste pra conferir se o resultado mostrado é igual	
-	// assertTrue(sucesso, Criar);
-	
-	 //Teste pra conferir se conseguiu acesssar o sistema
-	//assertTrue(estornoCreditoEditarPO.mostrar.isDisplayed(), semAcesso);
-		
+		// teste pra conferir se o resultado mostrado é igual
+		// assertTrue(sucesso, Criar);
+
+		// Teste pra conferir se conseguiu acesssar o sistema
+		// assertTrue(estornoCreditoEditarPO.mostrar.isDisplayed(), semAcesso);
+
 	}
-  
+
 }

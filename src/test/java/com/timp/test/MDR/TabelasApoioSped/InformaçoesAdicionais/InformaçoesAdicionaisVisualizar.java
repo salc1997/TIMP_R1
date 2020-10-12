@@ -17,21 +17,24 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class InformaçoesAdicionaisVisualizar extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InformaçoesAdicionaisVisualizarPO informaçoesAdicionaisVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-	informaçoesAdicionaisVisualizarPO = new InformaçoesAdicionaisVisualizarPO();
+		informaçoesAdicionaisVisualizarPO = new InformaçoesAdicionaisVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,15 +50,13 @@ public class InformaçoesAdicionaisVisualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = informaçoesAdicionaisVisualizarPO.visualizar();
-		
-		 for (int i = 0; i < sucesso.size(); i++) {
+
+		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-	}	
-	
-	
+	}
 
 }

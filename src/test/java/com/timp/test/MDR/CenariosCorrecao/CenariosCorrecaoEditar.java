@@ -13,23 +13,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CenariosCorrecaoEditar extends TestBaseKathy{
+public class CenariosCorrecaoEditar extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoEditarPO cenariosCorrecaoEditarPO;
-    @BeforeClass
-    public void beforeClass() {
-    	driver = initializationK();
+ 
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cenariosCorrecaoEditarPO = new CenariosCorrecaoEditarPO();
-    }
+	}
 
-    @AfterClass
-    public void afterClass() {
-    }
-  
-    @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -38,10 +39,10 @@ public class CenariosCorrecaoEditar extends TestBaseKathy{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-	
+
 	@Test(priority = 2)
-    public void cenariosCorrecaoEditar() {		
-		 boolean sucesso = cenariosCorrecaoEditarPO.cenariosCorrecaoEditar();
-		 assertTrue(sucesso, Editar);
-    }
+	public void editar() {
+		boolean sucesso = cenariosCorrecaoEditarPO.cenariosCorrecaoEditar();
+		assertTrue(sucesso, Editar);
+	}
 }

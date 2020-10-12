@@ -2,6 +2,7 @@ package com.timp.test.MDR.SCANC.MovimentoSCANC;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO
 import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCExcluirPO;
 
 public class MovimentoSCANCExcluir extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MovimentoSCANCExcluirPO movimentoSCANCExcluirPO;
@@ -29,9 +30,11 @@ public class MovimentoSCANCExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCExcluirPO = new MovimentoSCANCExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,17 +50,12 @@ public class MovimentoSCANCExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
-		
 		boolean sucesso = movimentoSCANCExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

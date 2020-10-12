@@ -2,6 +2,7 @@ package com.timp.test.MDR.CEP.Municipio;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -13,46 +14,42 @@ import com.sap.timp.pageObjectModel.MDR.CEP.Municipio.MunicipioEditarPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Municipio.MunicipioEliminarPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Municipio.MunicipioFiltroPO;
 
-public class MunicipioEliminar extends TestBaseSteven{
-	
+public class MunicipioEliminar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MunicipioEliminarPO municipioEliminarPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		municipioEliminarPO = new MunicipioEliminarPO();
 	}
-	/*
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	*/
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-	
-	 @Test(priority = 2)
-	  public void filtro() {
-		  
-		 municipioEliminarPO.eliminar();
-	  }
+
+	@Test(priority = 2)
+	public void excluir() {
+
+		municipioEliminarPO.eliminar();
+	}
 }

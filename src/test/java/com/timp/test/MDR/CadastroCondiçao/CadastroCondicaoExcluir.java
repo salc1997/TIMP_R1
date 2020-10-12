@@ -7,7 +7,6 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoExcluirPO;
 
-
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -15,11 +14,11 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class CadastroCondicaoExcluir extends TestBaseEliel {
-  
-	
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondicaoExcluirPO cadastroExcluirPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,9 +27,11 @@ public class CadastroCondicaoExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroExcluirPO = new CadastroCondicaoExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,7 +49,7 @@ public class CadastroCondicaoExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Excluir() {
 
-		boolean sucesso=cadastroExcluirPO.excluir();
+		boolean sucesso = cadastroExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 
 	}

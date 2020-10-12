@@ -2,6 +2,7 @@ package com.timp.test.MDR.CEP.Bairro;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,11 +11,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroEliminarPO;
 
-public class BairroEliminar extends TestBaseSteven{
+public class BairroEliminar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	BairroEliminarPO bairroEliminarPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -23,9 +24,11 @@ public class BairroEliminar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		bairroEliminarPO = new BairroEliminarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -44,7 +47,7 @@ public class BairroEliminar extends TestBaseSteven{
 	public void eliminar() {
 
 		boolean sucesso = bairroEliminarPO.eliminar();
-		
+
 		assertTrue(sucesso, Eliminado);
 
 	}

@@ -16,10 +16,11 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class SequenciaExcluir extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SequenciaExcluirPO sequenciaExcluirPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,9 +29,11 @@ public class SequenciaExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaExcluirPO = new SequenciaExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,7 +51,7 @@ public class SequenciaExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Excluir() {
 
-		boolean sucesso=sequenciaExcluirPO.excluir();
+		boolean sucesso = sequenciaExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 
 	}

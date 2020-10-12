@@ -10,7 +10,7 @@ import com.sap.timp.base.TestBaseSteven;
 public class EmpresasEditarPO extends TestBaseSteven{
 	
 
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[21]")
+	@FindBy(xpath = "//li/div/span[text()=\"Empresas\"]")
 	public WebElement empresa;
 	
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div")
@@ -65,8 +65,9 @@ public class EmpresasEditarPO extends TestBaseSteven{
 		sleep(2000);
 		sim.click();
 		sleep(3000);		 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		driver.navigate().refresh();
 		
@@ -87,7 +88,9 @@ public class EmpresasEditarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		
 		return sucesso;

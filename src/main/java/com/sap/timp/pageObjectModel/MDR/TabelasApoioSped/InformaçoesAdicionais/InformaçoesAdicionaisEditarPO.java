@@ -66,7 +66,7 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -97,16 +97,41 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		attributeToBeXpath("//div[@id=\"aditionalInfoCode\"]/div/div", "class", "base-input  required type2 success");
 		sleep(2000);
 		
-		descricao.clear();
-		descricao.sendKeys("Descrição da Informação");
+
+		String valor = descricao.getAttribute("value");
 		
+		String enviar = "Descrição da Informação";
+		
+		descricao.clear();
+		sleep(2000);
+		descricao.sendKeys(enviar);
 		sleep(2000);
 		
 		gravar.click();
-		
+		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		driver.navigate().refresh();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		waitExpectElement(descricao);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String novoTexto=descricao.getAttribute("value");
+		
+		System.out.println(valor);
+		System.out.println(novoTexto);
+		boolean sucesso = novoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		return sucesso;
+		/*
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
@@ -137,7 +162,7 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		System.out.println(sucesso);	
-		return sucesso;
+		return sucesso; */
 	}
 
 }

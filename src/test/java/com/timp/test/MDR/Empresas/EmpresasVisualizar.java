@@ -21,49 +21,44 @@ public class EmpresasVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	EmpresasViasualizarPO empresasVisualizarPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		empresasVisualizarPO = new EmpresasViasualizarPO();
 	}
-	/*
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	*/
-	
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-  @Test(priority = 2)
-  public void visualizar() {
-	  
-	  ArrayList<Boolean> sucesso = empresasVisualizarPO.visualizar();
-	  
-	  for (int i = 0; i < sucesso.size(); i++) {
-		  assertTrue(sucesso.get(i), visualizaçar);
+
+	@Test(priority = 2)
+	public void visualizar() {
+
+		ArrayList<Boolean> sucesso = empresasVisualizarPO.visualizar();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+		// assertEquals(sucesso, "edit",EmpresaVisualizar);
+
 	}
-	 // assertEquals(sucesso, "edit",EmpresaVisualizar);
-	  
-  }
-  
-  
-  
+
 }

@@ -139,10 +139,18 @@ import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.Param
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVACriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVADetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluir;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXEditar;
@@ -384,46 +392,64 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ParametrosParaTPExcluir parametrosParaTPExcluir;
 
 	//// Registro ECAC
-	RegistroECACCriar registroECACCriar;
-	RegistroECACEditar registroECACEditar;
-	RegistroECACExcluir registroECACExcluir;
 
-	// Atividades Para Tributacao > Tipos De Servicos
-	TiposDeServicosCriar tiposDeServicosCriar;
-	TiposDeServicosDetalhes tiposDeServicosDetalhes;
-	TiposDeServicosEditar tiposDeServicosEditar;
-	TiposDeServicosVisualizar tiposDeServicosVisualizar;
-	TiposDeServicosExcluir tiposDeServicosExcluir;
+		RegistroECACCriar registroECACCriar;
+		RegistroECACEditar registroECACEditar;
+		RegistroECACExcluir registroECACExcluir;
+		
+	//Atividades Para Tributacao > Tipos De Servicos
+		TiposDeServicosCriar tiposDeServicosCriar;
+		TiposDeServicosDetalhes tiposDeServicosDetalhes;
+		TiposDeServicosEditar tiposDeServicosEditar;
+		TiposDeServicosVisualizar tiposDeServicosVisualizar;
+		TiposDeServicosExcluir tiposDeServicosExcluir;
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV
+		ValoresParaMetodoPVVCriar valoresParaMetodoPVVCriar;
+		ValoresParaMetodoPVVDetalhes valoresParaMetodoPVVDetalhes;
+		ValoresParaMetodoPVVEditar valoresParaMetodoPVVEditar;
+		ValoresParaMetodoPVVExcluir valoresParaMetodoPVVExcluir;
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX
+		ValoresParaMetodoPVEXCriar valoresParaMetodoPVEXCriar;
+		ValoresParaMetodoPVEXDetalhes valoresParaMetodoPVEXDetalhes;
+		ValoresParaMetodoPVEXEditar valoresParaMetodoPVEXEditar;
+		ValoresParaMetodoPVEXExcluir valoresParaMetodoPVEXExcluir;
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX
+		ValoresParaMetodoPECEXCriar valoresParaMetodoPECEXCriar;
+		ValoresParaMetodoPECEXDetalhes valoresParaMetodoPECEXDetalhes;
+		ValoresParaMetodoPECEXEditar valoresParaMetodoPECEXEditar;
+		ValoresParaMetodoPECEXExcluir valoresParaMetodoPECEXExcluir;
+	
+	//Reinf > Processos Adm/Judiciais
+		ProcessosAdmJudiciaisCriar processosAdmJudiciaisCriar;
+		ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
+		ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
+		ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
+		
+	//Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
+		DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
+		DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;
+		DeterminacaoDeRelevanciaPorRegraEditar determinacaoDeRelevanciaPorRegraEditar;
+		DeterminacaoDeRelevanciaPorRegraVisualizar determinacaoDeRelevanciaPorRegraVisualizar;
+		DeterminacaoDeRelevanciaPorRegraExcluir determinacaoDeRelevanciaPorRegraExcluir;
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP
+		ValoresParaMetodoCAPCriar valoresParaMetodoCAPCriar;
+		ValoresParaMetodoCAPDetalhes valoresParaMetodoCAPDetalhes;
+		ValoresParaMetodoCAPEditar valoresParaMetodoCAPEditar;
+		ValoresParaMetodoCAPExcluir valoresParaMetodoCAPExcluir;	
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA
+		ValoresParaMetodoPVACriar valoresParaMetodoPVACriar;
+		ValoresParaMetodoPVADetalhes valoresParaMetodoPVADetalhes;
+		ValoresParaMetodoPVAEditar valoresParaMetodoPVAEditar;
+		ValoresParaMetodoPVAExcluir valoresParaMetodoPVAExcluir;
+		
 
-	// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV
-	ValoresParaMetodoPVVCriar valoresParaMetodoPVVCriar;
-	ValoresParaMetodoPVVDetalhes valoresParaMetodoPVVDetalhes;
-	ValoresParaMetodoPVVEditar valoresParaMetodoPVVEditar;
-	ValoresParaMetodoPVVExcluir valoresParaMetodoPVVExcluir;
-	// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX
-	ValoresParaMetodoPVEXCriar valoresParaMetodoPVEXCriar;
-	ValoresParaMetodoPVEXDetalhes valoresParaMetodoPVEXDetalhes;
-	ValoresParaMetodoPVEXEditar valoresParaMetodoPVEXEditar;
-	ValoresParaMetodoPVEXExcluir valoresParaMetodoPVEXExcluir;
+	
+	
 
-	// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX
-	ValoresParaMetodoPECEXCriar valoresParaMetodoPECEXCriar;
-	ValoresParaMetodoPECEXDetalhes valoresParaMetodoPECEXDetalhes;
-	ValoresParaMetodoPECEXEditar valoresParaMetodoPECEXEditar;
-	ValoresParaMetodoPECEXExcluir valoresParaMetodoPECEXExcluir;
-
-	// Reinf > Processos Adm/Judiciais
-	ProcessosAdmJudiciaisCriar processosAdmJudiciaisCriar;
-	ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
-	ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
-	ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
-
-	// Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
-	DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
-	DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;
-	DeterminacaoDeRelevanciaPorRegraEditar determinacaoDeRelevanciaPorRegraEditar;
-	DeterminacaoDeRelevanciaPorRegraVisualizar determinacaoDeRelevanciaPorRegraVisualizar;
-	DeterminacaoDeRelevanciaPorRegraExcluir determinacaoDeRelevanciaPorRegraExcluir;
 
 	// --------------------------------------------------------------------------------------------------
 
@@ -1946,7 +1972,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		determinacaoDeRelevanciaPorRegraCriar = new DeterminacaoDeRelevanciaPorRegraCriar();
 		determinacaoDeRelevanciaPorRegraCriar.beforeClass();
 		determinacaoDeRelevanciaPorRegraCriar.login();
-		determinacaoDeRelevanciaPorRegraCriar.acessarMDR();
+		determinacaoDeRelevanciaPorRegraCriar.acessarMDR();		
 		determinacaoDeRelevanciaPorRegraCriar.criar();
 		determinacaoDeRelevanciaPorRegraCriar.afterClass();
 
@@ -1998,5 +2024,114 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 
-	// 176
+	
+	//176
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP
+	
+	@Test(priority = 176)
+	public void valoresParaMetodoCAPCriar() {
+		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP-------------------------");
+		valoresParaMetodoCAPCriar = new ValoresParaMetodoCAPCriar();
+		valoresParaMetodoCAPCriar.beforeClass();
+		valoresParaMetodoCAPCriar.login();
+		valoresParaMetodoCAPCriar.acessarMDR();
+		valoresParaMetodoCAPCriar.criar();
+		valoresParaMetodoCAPCriar.afterClass();
+
+	}
+	
+	@Test(priority = 177)
+	public void valoresParaMetodoCAPEditar() {
+		valoresParaMetodoCAPEditar = new ValoresParaMetodoCAPEditar();
+		valoresParaMetodoCAPEditar.beforeClass();
+		valoresParaMetodoCAPEditar.login();
+		valoresParaMetodoCAPEditar.acessarMDR();
+		valoresParaMetodoCAPEditar.editar();
+		valoresParaMetodoCAPEditar.afterClass();
+
+	}
+	
+	@Test(priority = 178)
+	public void valoresParaMetodoCAPDetalhes() {
+		valoresParaMetodoCAPDetalhes = new ValoresParaMetodoCAPDetalhes();
+		valoresParaMetodoCAPDetalhes.beforeClass();
+		valoresParaMetodoCAPDetalhes.login();
+		valoresParaMetodoCAPDetalhes.acessarMDR();
+		valoresParaMetodoCAPDetalhes.Detalhes();
+		valoresParaMetodoCAPDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 179)
+	public void valoresParaMetodoCAPExcluir() {
+		valoresParaMetodoCAPExcluir = new ValoresParaMetodoCAPExcluir();
+		valoresParaMetodoCAPExcluir.beforeClass();
+		valoresParaMetodoCAPExcluir.login();
+		valoresParaMetodoCAPExcluir.acessarMDR();
+		valoresParaMetodoCAPExcluir.excluir();
+		valoresParaMetodoCAPExcluir.afterClass();
+		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP Fim-------------------------");
+		
+
+	}
+	
+	//183
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA
+	
+	@Test(priority = 183)
+	public void valoresParaMetodoPVACriar() {
+		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PVA-------------------------");
+		valoresParaMetodoPVACriar = new ValoresParaMetodoPVACriar();
+		valoresParaMetodoPVACriar.beforeClass();
+		valoresParaMetodoPVACriar.login();
+		valoresParaMetodoPVACriar.acessarMDR();
+		valoresParaMetodoPVACriar.criar();
+		valoresParaMetodoPVACriar.afterClass();
+
+	}
+	
+	@Test(priority = 184)
+	public void valoresParaMetodoPVAEditar() {
+		
+	    valoresParaMetodoPVAEditar = new ValoresParaMetodoPVAEditar();
+		valoresParaMetodoPVAEditar.beforeClass();
+		valoresParaMetodoPVAEditar.login();
+		valoresParaMetodoPVAEditar.acessarMDR();
+		valoresParaMetodoPVAEditar.editar();
+		valoresParaMetodoPVAEditar.afterClass();
+
+	}
+	
+	@Test(priority = 185)
+	public void valoresParaMetodoPVADetalhes() {
+		
+	    valoresParaMetodoPVADetalhes = new ValoresParaMetodoPVADetalhes();
+	    valoresParaMetodoPVADetalhes.beforeClass();
+	    valoresParaMetodoPVADetalhes.login();
+	    valoresParaMetodoPVADetalhes.acessarMDR();
+	    valoresParaMetodoPVADetalhes.Detalhes();
+	    valoresParaMetodoPVADetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 186)
+	public void valoresParaMetodoPVAExcluir() {
+		
+	    valoresParaMetodoPVAExcluir = new ValoresParaMetodoPVAExcluir();
+	    valoresParaMetodoPVAExcluir.beforeClass();
+	    valoresParaMetodoPVAExcluir.login();
+	    valoresParaMetodoPVAExcluir.acessarMDR();
+	    valoresParaMetodoPVAExcluir.excluir();
+	    valoresParaMetodoPVAExcluir.afterClass();
+	    
+	    System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PVA Fim-------------------------");
+		
+
+	}
+	
+	//190
+
+
+	
+
 }

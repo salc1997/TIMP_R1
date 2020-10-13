@@ -2,32 +2,63 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2020-10-13T20:13:23Z" name="Default suite" finished-at="2020-10-13T20:15:32Z" duration-ms="129313">
+=======
   <suite name="Default suite" duration-ms="70753" started-at="2020-10-13T19:50:59Z" finished-at="2020-10-13T19:52:10Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2020-10-13T20:13:23Z" name="Default test" finished-at="2020-10-13T20:15:32Z" duration-ms="129313">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir@26d9b808]" started-at="2020-10-13T17:13:23Z" name="beforeClass" finished-at="2020-10-13T17:13:36Z" duration-ms="13575" status="PASS">
+=======
     <test name="Default test" duration-ms="70753" started-at="2020-10-13T19:50:59Z" finished-at="2020-10-13T19:52:10Z">
       <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="10465" started-at="2020-10-13T13:50:59Z" finished-at="2020-10-13T13:51:09Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir@26d9b808]" started-at="2020-10-13T17:13:36Z" name="login" finished-at="2020-10-13T17:13:45Z" duration-ms="8043" status="PASS">
+=======
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="login" duration-ms="6382" started-at="2020-10-13T13:51:09Z" finished-at="2020-10-13T13:51:16Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir@26d9b808]" started-at="2020-10-13T17:13:45Z" name="acessarMDR" finished-at="2020-10-13T17:14:18Z" duration-ms="33109" status="PASS">
+=======
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="acessarMDR" duration-ms="23547" started-at="2020-10-13T13:51:16Z" finished-at="2020-10-13T13:51:39Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir@26d9b808]" started-at="2020-10-13T17:14:18Z" name="excluir" finished-at="2020-10-13T17:15:28Z" duration-ms="70238" status="PASS">
+=======
         <test-method status="PASS" signature="filtroId()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="filtroId" duration-ms="30344" started-at="2020-10-13T13:51:39Z" finished-at="2020-10-13T13:52:10Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir@26d9b808]" started-at="2020-10-13T17:15:28Z" name="afterClass" finished-at="2020-10-13T17:15:32Z" duration-ms="4324" status="PASS">
+=======
         </test-method> <!-- filtroId -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-13T13:52:10Z" finished-at="2020-10-13T13:52:10Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir -->
+=======
       </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

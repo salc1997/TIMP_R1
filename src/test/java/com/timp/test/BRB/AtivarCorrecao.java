@@ -1,6 +1,5 @@
 package com.timp.test.BRB;
 
-
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -23,46 +22,42 @@ import com.sap.timp.pageObjectModel.BRB.AtivarComentarioPO;
 import com.sap.timp.pageObjectModel.BRB.AtivarCorrecaoPO;
 import com.sap.timp.pageObjectModel.BRB.FiltrosPO;
 
-public class AtivarCorrecao extends TestBaseSteven{
-  
+public class AtivarCorrecao extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	AtivarCorrecaoPO ativarCorrecaoPO;
-
-
-    @BeforeClass
-    public void beforeClass() {
+ 
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		ativarCorrecaoPO = new AtivarCorrecaoPO();
-	
 
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
+
 	@Test(priority = 2)
 	public void ativarCorreccion() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = ativarCorrecaoPO.comentaroAtivo();
 		System.out.println(sucesso);
@@ -72,8 +67,6 @@ public class AtivarCorrecao extends TestBaseSteven{
 			System.out.println(sucesso.get(i));
 		}
 
-		
 	}
-	
-	
+
 }

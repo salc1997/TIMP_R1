@@ -12,9 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACCriarPO;
 
 public class RegistroECACCriar extends TestBaseEliel {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroECACCriarPO registroECACCriarPO;
@@ -27,10 +25,12 @@ public class RegistroECACCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		registroECACCriarPO = new RegistroECACCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,9 +47,8 @@ public class RegistroECACCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = registroECACCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
+
+	}
 }

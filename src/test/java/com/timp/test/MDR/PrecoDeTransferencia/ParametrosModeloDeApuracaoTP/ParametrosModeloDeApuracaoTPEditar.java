@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditarPO;
 
 public class ParametrosModeloDeApuracaoTPEditar extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosModeloDeApuracaoTPEditarPO parametrosModeloDeApuracaoTPEditarPO;
@@ -26,12 +25,12 @@ public class ParametrosModeloDeApuracaoTPEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosModeloDeApuracaoTPEditarPO = new ParametrosModeloDeApuracaoTPEditarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,16 +43,14 @@ public class ParametrosModeloDeApuracaoTPEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = parametrosModeloDeApuracaoTPEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
- 
+	}
+
 }

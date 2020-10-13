@@ -17,8 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class CadastroNotaFiscalExcluir extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroNotaFiscalExcluirPO cadastroNotaFiscalExcluirPO;
@@ -31,10 +30,12 @@ public class CadastroNotaFiscalExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroNotaFiscalExcluirPO = new CadastroNotaFiscalExcluirPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -51,12 +52,9 @@ public class CadastroNotaFiscalExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = cadastroNotaFiscalExcluirPO.excluir();
 		assertTrue(sucesso, Criar);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

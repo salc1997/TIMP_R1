@@ -11,12 +11,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirPO;
 
-public class TiposDeServicosExcluir extends TestBaseEliel{
-	
+public class TiposDeServicosExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeServicosExcluirPO tiposDeServicosExcluirPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -25,9 +25,11 @@ public class TiposDeServicosExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeServicosExcluirPO = new TiposDeServicosExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,10 +47,9 @@ public class TiposDeServicosExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tiposDeServicosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
- 
+
+	}
+
 }

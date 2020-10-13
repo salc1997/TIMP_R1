@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditarPO;
 
 public class ParametrosParaTPEditar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosParaTPEditarPO parametrosParaTPEditarPO;
@@ -25,12 +25,12 @@ public class ParametrosParaTPEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaTPEditarPO = new ParametrosParaTPEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,17 +43,14 @@ public class ParametrosParaTPEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = parametrosParaTPEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
-	
-	
+	}
+
 }

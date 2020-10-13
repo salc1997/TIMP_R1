@@ -66,6 +66,7 @@ public class ContasDefaultParaExtemporaneoCriarPO extends TestBaseEliel {
 	}
 	
 	public boolean criar() {
+		
 		sleep(2000);
 		parametrosdecontabilizacao.click();
 		sleep(2000);

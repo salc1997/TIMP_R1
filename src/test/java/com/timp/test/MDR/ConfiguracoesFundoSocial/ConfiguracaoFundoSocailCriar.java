@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 
-public class ConfiguracaoFundoSocailCriar extends TestBaseSteven{
+public class ConfiguracaoFundoSocailCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -39,7 +39,7 @@ public class ConfiguracaoFundoSocailCriar extends TestBaseSteven{
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -51,8 +51,8 @@ public class ConfiguracaoFundoSocailCriar extends TestBaseSteven{
 	public void criar() {
 
 		boolean sucesso = configuracoesFundoSocialCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

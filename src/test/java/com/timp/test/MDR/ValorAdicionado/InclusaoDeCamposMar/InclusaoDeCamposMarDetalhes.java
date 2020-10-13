@@ -13,23 +13,24 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarDetalhesPO;
 
 public class InclusaoDeCamposMarDetalhes extends TestBaseEliel {
-  
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InclusaoDeCamposMarDetalhesPO inclusaoDeCamposMarDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		inclusaoDeCamposMarDetalhesPO= new InclusaoDeCamposMarDetalhesPO();
+		inclusaoDeCamposMarDetalhesPO = new InclusaoDeCamposMarDetalhesPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -43,16 +44,13 @@ public class InclusaoDeCamposMarDetalhes extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-
+ 
 	@Test(priority = 2)
 	public void detalhes() {
 
-		
 		String sucesso = inclusaoDeCamposMarDetalhesPO.detalhes();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
-	}	
-			
-	
-	
+
+		assertEquals(sucesso, "edit", visualizaçar);
+	}
+
 }

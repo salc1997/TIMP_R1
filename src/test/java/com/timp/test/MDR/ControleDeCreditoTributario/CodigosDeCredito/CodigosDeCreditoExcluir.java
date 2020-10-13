@@ -11,11 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirPO;
 
-
 public class CodigosDeCreditoExcluir extends TestBaseEliel {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosDeCreditoExcluirPO codigosDeCreditoExcluirPO;
@@ -28,16 +25,18 @@ public class CodigosDeCreditoExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigosDeCreditoExcluirPO = new CodigosDeCreditoExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -48,12 +47,9 @@ public class CodigosDeCreditoExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = codigosDeCreditoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
 
-	
-	
+	}
+
 }

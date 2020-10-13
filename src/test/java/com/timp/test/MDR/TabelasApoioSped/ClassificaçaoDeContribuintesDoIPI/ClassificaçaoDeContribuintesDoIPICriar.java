@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel{
+public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -27,9 +27,11 @@ public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		classificaçaoDeContribuintesDoIPICriarPO = new ClassificaçaoDeContribuintesDoIPICriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,11 +49,11 @@ public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		//classificaçaoDeContribuintesDoIPICriarPO.criar();
-		
+		// classificaçaoDeContribuintesDoIPICriarPO.criar();
+
 		boolean sucesso = classificaçaoDeContribuintesDoIPICriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}	
-	
+
+	}
+
 }

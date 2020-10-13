@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoConta
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO;
 
-public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends TestBaseSteven{
+public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,14 +28,14 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO= new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO();
 	}
-	
+  
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -53,8 +53,8 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends 
 	public void excluir() {
 
 		boolean sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

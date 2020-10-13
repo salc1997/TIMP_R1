@@ -7,7 +7,6 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoFiltrosAvançadosPO;
 
-
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -17,8 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class RegistroDeExportaçaoFiltrosAvançados extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroDeExportaçaoFiltrosAvançadosPO registroDeExportaçaoFiltrosAvançadosPO;
@@ -29,12 +27,14 @@ public class RegistroDeExportaçaoFiltrosAvançados extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		registroDeExportaçaoFiltrosAvançadosPO= new RegistroDeExportaçaoFiltrosAvançadosPO();
+		registroDeExportaçaoFiltrosAvançadosPO = new RegistroDeExportaçaoFiltrosAvançadosPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -51,7 +51,6 @@ public class RegistroDeExportaçaoFiltrosAvançados extends TestBaseEliel {
 	@Test(priority = 2)
 	public void filtros() {
 
-		
 		ArrayList<Boolean> sucesso = registroDeExportaçaoFiltrosAvançadosPO.codigoempresa();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -72,18 +71,18 @@ public class RegistroDeExportaçaoFiltrosAvançados extends TestBaseEliel {
 		for (int i = 0; i < sucesso3.size(); i++) {
 			assertTrue(sucesso3.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> sucesso4 = registroDeExportaçaoFiltrosAvançadosPO.codigonotafiscal();
 		sleep(2000);
 		for (int i = 0; i < sucesso4.size(); i++) {
 			assertTrue(sucesso4.get(i), Filtros);
 		}
-	
+
 		ArrayList<Boolean> sucesso5 = registroDeExportaçaoFiltrosAvançadosPO.codigochavenfe();
 		sleep(2000);
 		for (int i = 0; i < sucesso5.size(); i++) {
 			assertTrue(sucesso5.get(i), Filtros);
 		}
-	
+
 	}
 }

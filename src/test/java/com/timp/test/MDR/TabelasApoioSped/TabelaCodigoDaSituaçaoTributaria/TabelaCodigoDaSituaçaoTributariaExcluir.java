@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoT
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaExcluirPO;
 
 public class TabelaCodigoDaSituaçaoTributariaExcluir extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoDaSituaçaoTributariaExcluirPO tabelaCodigoDaSituaçaoTributariaExcluirPO;
@@ -26,10 +26,12 @@ public class TabelaCodigoDaSituaçaoTributariaExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoDaSituaçaoTributariaExcluirPO = new TabelaCodigoDaSituaçaoTributariaExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,14 +48,11 @@ public class TabelaCodigoDaSituaçaoTributariaExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		//ajusteEInformaçoesDeValoresCriarPO.criar();
-		
+		// ajusteEInformaçoesDeValoresCriarPO.criar();
+
 		boolean sucesso = tabelaCodigoDaSituaçaoTributariaExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}		
-	
-	
-	
-	
+
+	}
+
 }

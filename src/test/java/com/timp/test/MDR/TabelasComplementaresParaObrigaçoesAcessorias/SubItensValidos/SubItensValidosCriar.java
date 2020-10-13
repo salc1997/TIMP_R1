@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosCriarPO;
 
-public class SubItensValidosCriar extends TestBaseEliel{
- 
+public class SubItensValidosCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SubItensValidosCriarPO subItensValidosCriarPO;
@@ -23,11 +23,13 @@ public class SubItensValidosCriar extends TestBaseEliel{
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		subItensValidosCriarPO= new SubItensValidosCriarPO();
+		subItensValidosCriarPO = new SubItensValidosCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,12 +47,9 @@ public class SubItensValidosCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = subItensValidosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
+
+	}
+
 }

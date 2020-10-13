@@ -11,24 +11,25 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 //import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteCriarPO;
 
-public class ICMSSTTransporteCriar extends TestBaseEliel{
+public class ICMSSTTransporteCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	//ICMSSTTransporteCriarPO icmsstTransporteCriarPO;
+	// ICMSSTTransporteCriarPO icmsstTransporteCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		//icmsstTransporteCriarPO = new ICMSSTTransporteCriarPO();
+		// icmsstTransporteCriarPO = new ICMSSTTransporteCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,10 +47,9 @@ public class ICMSSTTransporteCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
-		//boolean sucesso = icmsstTransporteCriarPO.criar();
-		//assertTrue(sucesso, semAcesso);
-		
-	}				
-	
+		// boolean sucesso = icmsstTransporteCriarPO.criar();
+		// assertTrue(sucesso, semAcesso);
+
+	}
+
 }

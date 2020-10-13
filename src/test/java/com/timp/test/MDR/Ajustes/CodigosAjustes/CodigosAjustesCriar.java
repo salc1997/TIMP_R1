@@ -14,13 +14,12 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
-
-public class CodigosAjustesCriar extends TestBaseSteven{
+ 
+public class CodigosAjustesCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosAjustesCriarPO codigosAjustesCriarPO;
-
 
 	@BeforeClass
 	public void beforeClass() {
@@ -30,12 +29,12 @@ public class CodigosAjustesCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigosAjustesCriarPO = new CodigosAjustesCriarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -53,10 +52,9 @@ public class CodigosAjustesCriar extends TestBaseSteven{
 	public void criar() {
 
 		boolean sucesso = codigosAjustesCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
-		
+
 	}
-	
+
 }

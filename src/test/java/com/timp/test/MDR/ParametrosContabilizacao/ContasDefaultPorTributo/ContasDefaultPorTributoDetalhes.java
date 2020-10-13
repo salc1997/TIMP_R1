@@ -12,13 +12,12 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoDetalhesPO;
 
-public class ContasDefaultPorTributoDetalhes extends TestBaseEliel{
-  
-	
+public class ContasDefaultPorTributoDetalhes extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultPorTributoDetalhesPO contasDefaultPorTributoDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,9 +26,11 @@ public class ContasDefaultPorTributoDetalhes extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultPorTributoDetalhesPO = new ContasDefaultPorTributoDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,11 +48,9 @@ public class ContasDefaultPorTributoDetalhes extends TestBaseEliel{
 	@Test(priority = 2)
 	public void Detalhes() {
 
-		
 		String sucesso = contasDefaultPorTributoDetalhesPO.detalhes();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
-	}	
-	
-	
+
+		assertEquals(sucesso, "edit", visualizaçar);
+	}
+
 }

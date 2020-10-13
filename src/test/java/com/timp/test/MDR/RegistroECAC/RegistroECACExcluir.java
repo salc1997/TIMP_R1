@@ -13,8 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACExcluirPO;
 
 public class RegistroECACExcluir extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroECACExcluirPO registroECACExcluirPO;
@@ -27,10 +25,12 @@ public class RegistroECACExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		registroECACExcluirPO = new RegistroECACExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,10 +47,9 @@ public class RegistroECACExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = registroECACExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 
 }

@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIEditarPO;
 
-public class CodigoDeAjusteDaApuraçaoDoIPIEditar extends TestBaseEliel{
- 
+public class CodigoDeAjusteDaApuraçaoDoIPIEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeAjusteDaApuraçaoDoIPIEditarPO codigoDeAjusteDaApuraçaoDoIPIEditarPO;
@@ -25,7 +25,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeAjusteDaApuraçaoDoIPIEditarPO = new CodigoDeAjusteDaApuraçaoDoIPIEditarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -43,17 +43,13 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
+
 		boolean sucesso = codigoDeAjusteDaApuraçaoDoIPIEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 	}
-	
-	
-	
+
 }

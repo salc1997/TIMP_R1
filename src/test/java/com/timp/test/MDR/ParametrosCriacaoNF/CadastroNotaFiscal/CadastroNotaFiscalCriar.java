@@ -16,8 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class CadastroNotaFiscalCriar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroNotaFiscalCriarPO cadastroNotaFiscalCriarPO;
@@ -30,9 +29,11 @@ public class CadastroNotaFiscalCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroNotaFiscalCriarPO = new CadastroNotaFiscalCriarPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +51,9 @@ public class CadastroNotaFiscalCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = cadastroNotaFiscalCriarPO.criar();
 		assertTrue(sucesso, Criar);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

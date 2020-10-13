@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 
-public class BairroCriar extends TestBaseSteven{
-
+public class BairroCriar extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	BairroCriarPO bairroCriarPO;
@@ -25,12 +25,12 @@ public class BairroCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		bairroCriarPO = new BairroCriarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,8 +48,8 @@ public class BairroCriar extends TestBaseSteven{
 	public void criar() {
 
 		boolean sucesso = bairroCriarPO.criarBairro();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

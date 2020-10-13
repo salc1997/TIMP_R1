@@ -21,7 +21,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosVisualizarPO;
 
 public class TabelaMunicipioIBGEVisualizar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaMunicipioIBGEVisualizarPO tabelaMunicipioIBGEVisualizarPO;
@@ -34,10 +34,12 @@ public class TabelaMunicipioIBGEVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaMunicipioIBGEVisualizarPO = new TabelaMunicipioIBGEVisualizarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -54,16 +56,11 @@ public class TabelaMunicipioIBGEVisualizar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = tabelaMunicipioIBGEVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}			
-			
-	
-	
-	
-	
+	}
+
 }

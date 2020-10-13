@@ -14,11 +14,11 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class CadastroCondicaoEditar extends TestBaseEliel {
-	
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondicaoEditarPO cadastroCondicaoEditarPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,10 +27,12 @@ public class CadastroCondicaoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroCondicaoEditarPO = new CadastroCondicaoEditarPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,24 +49,19 @@ public class CadastroCondicaoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		
 		boolean sucesso = cadastroCondicaoEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
-	
 
+		// cadastroCondicaoEditarPO.editar();
 
-		//cadastroCondicaoEditarPO.editar();
+		// cadastroCondicaoEditarPO.editar();
 
-		//cadastroCondicaoEditarPO.editar();
+		// boolean text = cadastroCondicaoCriarPO.criar();
+		// assertTrue(text, Criar);
+		// Teste pra conferir se conseguiu acesssar o sistema
+		// assertTrue(cadastroCondicaoCriarPO.mostrar.isDisplayed(), semAcesso);
 
-
-		//boolean text = cadastroCondicaoCriarPO.criar();
-		//assertTrue(text, Criar);
-		//Teste pra conferir se conseguiu acesssar o sistema
-		//assertTrue(cadastroCondicaoCriarPO.mostrar.isDisplayed(), semAcesso);
-
-		
 	}
 
 }

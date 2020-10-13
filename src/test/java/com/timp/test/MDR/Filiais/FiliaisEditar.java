@@ -14,55 +14,45 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class FiliaisEditar extends TestBaseSteven{
+public class FiliaisEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FiliaisEditarPO filiaisEditarPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		filiaisEditarPO = new FiliaisEditarPO();
 	}
-	
-	
+ 
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
 
-	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = filiaisEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
-		
+
 	}
-	
-	
-	
-	
-	
 
 }

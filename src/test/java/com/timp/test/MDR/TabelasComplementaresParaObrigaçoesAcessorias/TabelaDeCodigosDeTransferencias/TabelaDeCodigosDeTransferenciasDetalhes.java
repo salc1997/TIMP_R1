@@ -13,13 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhesPO;
 
-public class TabelaDeCodigosDeTransferenciasDetalhes extends TestBaseEliel{
- 
-	
+public class TabelaDeCodigosDeTransferenciasDetalhes extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCodigosDeTransferenciasDetalhesPO tabelaDeCodigosDeTransferenciasDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,16 +27,18 @@ public class TabelaDeCodigosDeTransferenciasDetalhes extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeCodigosDeTransferenciasDetalhesPO = new TabelaDeCodigosDeTransferenciasDetalhesPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -49,13 +50,12 @@ public class TabelaDeCodigosDeTransferenciasDetalhes extends TestBaseEliel{
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = tabelaDeCodigosDeTransferenciasDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-	
-	
+	}
+
 }

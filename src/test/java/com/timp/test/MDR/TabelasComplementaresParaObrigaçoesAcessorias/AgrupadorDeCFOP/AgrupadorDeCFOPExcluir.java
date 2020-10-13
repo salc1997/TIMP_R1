@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluirPO;
 
-public class AgrupadorDeCFOPExcluir extends TestBaseEliel{
-  
+public class AgrupadorDeCFOPExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPExcluirPO agrupadorDeCFOPExcluirPO;
@@ -25,9 +25,11 @@ public class AgrupadorDeCFOPExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		agrupadorDeCFOPExcluirPO = new AgrupadorDeCFOPExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,13 +47,9 @@ public class AgrupadorDeCFOPExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = agrupadorDeCFOPExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
-	
-	
-	
+
+	}
+
 }

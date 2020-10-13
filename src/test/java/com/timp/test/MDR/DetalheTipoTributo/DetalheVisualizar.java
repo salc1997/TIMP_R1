@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoVisualizarPO;
 import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheVisualizarPO;
 
-public class DetalheVisualizar extends TestBaseSteven{
+public class DetalheVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -30,9 +30,11 @@ public class DetalheVisualizar extends TestBaseSteven{
 		detalheVisualizarPO = new DetalheVisualizarPO();
 	}
 
-	
-	@AfterClass public void afterClass() { driver.close(); }
-	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -50,12 +52,12 @@ public class DetalheVisualizar extends TestBaseSteven{
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = detalheVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-		//assertEquals(sucesso, "edit", EmpresaVisualizar);
+		// assertEquals(sucesso, "edit", EmpresaVisualizar);
 	}
 }

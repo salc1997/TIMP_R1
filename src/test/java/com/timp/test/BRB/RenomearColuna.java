@@ -21,53 +21,46 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.EditarPO;
 import com.sap.timp.pageObjectModel.BRB.RenomearColunaPO;
 
-public class RenomearColuna extends TestBaseSteven{
-	
-	
+public class RenomearColuna extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	RenomearColunaPO renomearColunaPO;
 
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		renomearColunaPO = new RenomearColunaPO();
 
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
-	
+
 	@Test(priority = 2)
 	public void renomearColuna() {
 
 		ArrayList<String> sucesso = new ArrayList<String>();
 		sucesso = renomearColunaPO.renomear();
 		System.out.println(sucesso);
-		assertEquals(sucesso.get(0), sucesso.get(1),renomear);
-		
-		
+		assertEquals(sucesso.get(0), sucesso.get(1), renomear);
+
 	}
 }

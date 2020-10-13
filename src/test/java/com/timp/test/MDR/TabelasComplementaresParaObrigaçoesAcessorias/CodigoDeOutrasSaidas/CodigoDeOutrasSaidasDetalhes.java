@@ -13,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasDetalhesPO;
 
-public class CodigoDeOutrasSaidasDetalhes extends TestBaseEliel{
+public class CodigoDeOutrasSaidasDetalhes extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeOutrasSaidasDetalhesPO codigoDeOutrasSaidasDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,9 +27,11 @@ public class CodigoDeOutrasSaidasDetalhes extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeOutrasSaidasDetalhesPO = new CodigoDeOutrasSaidasDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,13 +50,12 @@ public class CodigoDeOutrasSaidasDetalhes extends TestBaseEliel{
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = codigoDeOutrasSaidasDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-	
-	
+	}
+
 }

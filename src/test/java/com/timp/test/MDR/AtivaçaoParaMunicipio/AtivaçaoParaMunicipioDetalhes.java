@@ -13,11 +13,12 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.AfterClass;
 
-public class AtivaçaoParaMunicipioDetalhes extends TestBaseEliel{
+public class AtivaçaoParaMunicipioDetalhes extends TestBaseEliel {
  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtivaçaoParaMunicipioDestalhesPO ativaçaoParaMunicipioDestalhesPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,9 +27,11 @@ public class AtivaçaoParaMunicipioDetalhes extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		ativaçaoParaMunicipioDestalhesPO = new AtivaçaoParaMunicipioDestalhesPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,12 +49,9 @@ public class AtivaçaoParaMunicipioDetalhes extends TestBaseEliel{
 	@Test(priority = 2)
 	public void detalhes() {
 
-		
 		String sucesso = ativaçaoParaMunicipioDestalhesPO.detalhes();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
-	}	
-	
-	
+
+		assertEquals(sucesso, "edit", visualizaçar);
+	}
 
 }

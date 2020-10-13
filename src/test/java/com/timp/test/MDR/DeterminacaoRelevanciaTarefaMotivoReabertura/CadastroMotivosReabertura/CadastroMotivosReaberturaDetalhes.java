@@ -19,7 +19,7 @@ import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhesPO;
 
 public class CadastroMotivosReaberturaDetalhes extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroMotivosReaberturaDetalhesPO cadastroMotivosReaberturaDetalhesPO;
@@ -32,10 +32,12 @@ public class CadastroMotivosReaberturaDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroMotivosReaberturaDetalhesPO = new CadastroMotivosReaberturaDetalhesPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -52,16 +54,11 @@ public class CadastroMotivosReaberturaDetalhes extends TestBaseSteven {
 	@Test(priority = 2)
 	public void detalhes() {
 
-		
 		ArrayList<Boolean> sucesso = cadastroMotivosReaberturaDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}			
-			
-	
-	
-	
-	
+	}
+
 }

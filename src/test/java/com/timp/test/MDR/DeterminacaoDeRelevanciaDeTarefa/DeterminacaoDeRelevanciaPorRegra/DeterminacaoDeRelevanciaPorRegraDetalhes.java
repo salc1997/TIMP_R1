@@ -14,11 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhesPO;
 
 public class DeterminacaoDeRelevanciaPorRegraDetalhes extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacaoDeRelevanciaPorRegraDetalhesPO determinacaoDeRelevanciaPorRegraDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,10 +27,12 @@ public class DeterminacaoDeRelevanciaPorRegraDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		determinacaoDeRelevanciaPorRegraDetalhesPO = new DeterminacaoDeRelevanciaPorRegraDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,12 +50,12 @@ public class DeterminacaoDeRelevanciaPorRegraDetalhes extends TestBaseEliel {
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = determinacaoDeRelevanciaPorRegraDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-	
+	}
+
 }

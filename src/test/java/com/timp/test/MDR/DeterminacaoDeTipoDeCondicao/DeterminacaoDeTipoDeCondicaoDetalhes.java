@@ -15,23 +15,24 @@ import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeTipoDeCondicao.Determinaca
 
 public class DeterminacaoDeTipoDeCondicaoDetalhes extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacaoDeTipoDeCondicaoDetalhesPO determinacaoDeTipoDeCondicaoDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		determinacaoDeTipoDeCondicaoDetalhesPO= new DeterminacaoDeTipoDeCondicaoDetalhesPO();
+		determinacaoDeTipoDeCondicaoDetalhesPO = new DeterminacaoDeTipoDeCondicaoDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,12 +50,12 @@ public class DeterminacaoDeTipoDeCondicaoDetalhes extends TestBaseEliel {
 	public void Detalhes() {
 
 		ArrayList<Boolean> sucesso = determinacaoDeTipoDeCondicaoDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}	
-	
+	}
+
 }

@@ -14,8 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.Parametros
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosEditarPO;
 
 public class ParametrosOficializacaoLivrosEditar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosOficializacaoLivrosEditarPO parametrosOficializacaoLivrosEditarPO;
@@ -28,12 +27,12 @@ public class ParametrosOficializacaoLivrosEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosOficializacaoLivrosEditarPO = new ParametrosOficializacaoLivrosEditarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,15 +45,14 @@ public class ParametrosOficializacaoLivrosEditar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = parametrosOficializacaoLivrosEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-	
+	}
+
 }

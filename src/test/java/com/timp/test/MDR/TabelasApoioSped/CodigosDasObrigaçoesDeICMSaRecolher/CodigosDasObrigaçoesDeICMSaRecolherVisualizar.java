@@ -15,11 +15,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO;
 
 public class CodigosDasObrigaçoesDeICMSaRecolherVisualizar extends TestBaseEliel {
-  
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO codigosDasObrigaçoesDeICMSaRecolherVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,9 +28,11 @@ public class CodigosDasObrigaçoesDeICMSaRecolherVisualizar extends TestBaseEliel
 		acessarMDRPO = new AcessarMDRPO();
 		codigosDasObrigaçoesDeICMSaRecolherVisualizarPO = new CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO();
 	}
-	
- 	@AfterClass public void afterClass(){ driver.close(); }
-
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,17 +51,12 @@ public class CodigosDasObrigaçoesDeICMSaRecolherVisualizar extends TestBaseEliel
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = codigosDasObrigaçoesDeICMSaRecolherVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}	
-	
-	
-	
-	
-	
-	
+	}
+
 }

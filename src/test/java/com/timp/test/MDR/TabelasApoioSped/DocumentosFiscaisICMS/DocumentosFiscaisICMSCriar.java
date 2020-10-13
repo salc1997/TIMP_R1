@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSCriarPO;
 
 public class DocumentosFiscaisICMSCriar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DocumentosFiscaisICMSCriarPO documentosFiscaisICMSCriarPO;
@@ -26,9 +25,11 @@ public class DocumentosFiscaisICMSCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		documentosFiscaisICMSCriarPO = new DocumentosFiscaisICMSCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,15 +47,9 @@ public class DocumentosFiscaisICMSCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = documentosFiscaisICMSCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
-	
-	
-	
+
+	}
+
 }

@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesEditarPO;
 
-public class CodigoDeMotivosDeAjustesEditar extends TestBaseEliel{
- 
+public class CodigoDeMotivosDeAjustesEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeMotivosDeAjustesEditarPO codigoDeMotivosDeAjustesEditarPO;
@@ -25,7 +25,7 @@ public class CodigoDeMotivosDeAjustesEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeMotivosDeAjustesEditarPO = new CodigoDeMotivosDeAjustesEditarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -43,15 +43,14 @@ public class CodigoDeMotivosDeAjustesEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = codigoDeMotivosDeAjustesEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}			
-	
+	}
+
 }

@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaEdita
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaVisualizarPO;
 
-public class LimiteCompetenciaVisualizar extends TestBaseSteven{
+public class LimiteCompetenciaVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -31,12 +31,12 @@ public class LimiteCompetenciaVisualizar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		limiteCompetenciaVisualizarPO = new LimiteCompetenciaVisualizarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluirPO;
 
-public class ContasDefaultParaExtemporaneoExcluir extends TestBaseEliel{
- 
-	
+public class ContasDefaultParaExtemporaneoExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultParaExtemporaneoExcluirPO contasDefaultParaExtemporaneoExcluirPO;
@@ -26,9 +25,11 @@ public class ContasDefaultParaExtemporaneoExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultParaExtemporaneoExcluirPO = new ContasDefaultParaExtemporaneoExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,13 +47,9 @@ public class ContasDefaultParaExtemporaneoExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = contasDefaultParaExtemporaneoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}		
-	
-	
-	
-	
+
+	}
+
 }

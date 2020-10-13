@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.Determi
 
 public class DeterminacaoDeRelevanciaPorRegraEditar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacaoDeRelevanciaPorRegraEditarPO determinacaoDeRelevanciaPorRegraEditarPO;
@@ -26,12 +25,12 @@ public class DeterminacaoDeRelevanciaPorRegraEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		determinacaoDeRelevanciaPorRegraEditarPO = new DeterminacaoDeRelevanciaPorRegraEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,15 +43,14 @@ public class DeterminacaoDeRelevanciaPorRegraEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = determinacaoDeRelevanciaPorRegraEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
+	}
+
 }

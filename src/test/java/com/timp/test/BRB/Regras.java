@@ -14,13 +14,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.RegrasPO;
 
-public class Regras extends TestBaseSteven{
-	
+public class Regras extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	RegrasPO regrasPO;
-	
-
 
 	@BeforeClass
 	public void beforeClass() {
@@ -31,13 +29,12 @@ public class Regras extends TestBaseSteven{
 		regrasPO = new RegrasPO();
 
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	
-	
+
 	@Test(priority = 0)
 	public void login() {
 
@@ -51,17 +48,15 @@ public class Regras extends TestBaseSteven{
 		acessarBrbPO.acessar();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void regras() {
-		
+
 		boolean sucesso = regrasPO.regra();
 		System.out.println(sucesso);
-		
+
 		assertTrue(sucesso, "The Rules don't match");
 
 	}
-	
-	
 
 }

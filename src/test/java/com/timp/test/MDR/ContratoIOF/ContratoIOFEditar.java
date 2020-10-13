@@ -27,16 +27,18 @@ public class ContratoIOFEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contratoIOFEditarPO = new ContratoIOFEditarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -47,11 +49,11 @@ public class ContratoIOFEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-	  contratoIOFEditarPO.editar();
-	  
-	  //Teste pra conferir se conseguiu acesssar o sistema
-	  assertTrue(contratoIOFEditarPO.mostrar.isDisplayed(), semAcesso);
-		
+		contratoIOFEditarPO.editar();
+
+		// Teste pra conferir se conseguiu acesssar o sistema
+		assertTrue(contratoIOFEditarPO.mostrar.isDisplayed(), semAcesso);
+
 	}
 
 }

@@ -1,5 +1,5 @@
 package com.timp.test.MDR.Ajustes.CodigosAjustes;
-
+ 
 import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -18,7 +18,7 @@ import com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigosAjustesCri
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 
-public class CodigosAjustesVisualizar extends TestBaseSteven{
+public class CodigosAjustesVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -32,12 +32,12 @@ public class CodigosAjustesVisualizar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesVisualizarPO = new CodigoAjustesVisualizarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -55,12 +55,11 @@ public class CodigosAjustesVisualizar extends TestBaseSteven{
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = codigoAjustesVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
-		
+
 	}
-	
+
 }

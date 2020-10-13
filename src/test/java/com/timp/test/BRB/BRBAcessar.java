@@ -14,38 +14,36 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BRBAcessar extends TestBaseSteven {
-	
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
 
-	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
-	@Test(priority=1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
-		
+
 		boolean sucesso = acessarBrbPO.acessar();
 		System.out.println(sucesso);
-		
+
 		assertTrue(sucesso, semAcesso);
-	
-	
+
 	}
 
 }

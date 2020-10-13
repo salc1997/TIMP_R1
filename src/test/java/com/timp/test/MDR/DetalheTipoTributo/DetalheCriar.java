@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheCriarPO;
 
-public class DetalheCriar extends TestBaseSteven{
+public class DetalheCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DetalheCriarPO detalheCriarPO;
@@ -24,12 +24,12 @@ public class DetalheCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		detalheCriarPO = new DetalheCriarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,8 +47,8 @@ public class DetalheCriar extends TestBaseSteven{
 	public void criar() {
 
 		boolean sucesso = detalheCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

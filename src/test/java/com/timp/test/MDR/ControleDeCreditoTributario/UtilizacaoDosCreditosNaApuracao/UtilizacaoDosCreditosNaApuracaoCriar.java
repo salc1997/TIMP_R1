@@ -25,10 +25,12 @@ public class UtilizacaoDosCreditosNaApuracaoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		utilizacaoDosCreditosNaApuracaoCriarPO = new UtilizacaoDosCreditosNaApuracaoCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,10 +47,9 @@ public class UtilizacaoDosCreditosNaApuracaoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = utilizacaoDosCreditosNaApuracaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
+
+	}
+
 }

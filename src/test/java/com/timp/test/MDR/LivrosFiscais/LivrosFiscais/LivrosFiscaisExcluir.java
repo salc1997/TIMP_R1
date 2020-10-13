@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaEdita
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluirPO;
 
-public class LivrosFiscaisExcluir extends TestBaseSteven{
+public class LivrosFiscaisExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -29,7 +29,7 @@ public class LivrosFiscaisExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		livrosFiscaisExcluirPO = new LivrosFiscaisExcluirPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -52,8 +52,8 @@ public class LivrosFiscaisExcluir extends TestBaseSteven{
 	public void excluir() {
 
 		boolean sucesso = livrosFiscaisExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
-		
+
 	}
 }

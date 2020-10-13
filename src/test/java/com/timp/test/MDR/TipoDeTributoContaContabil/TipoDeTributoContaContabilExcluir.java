@@ -12,7 +12,6 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilExcluirPO;
 
 public class TipoDeTributoContaContabilExcluir extends TestBaseEliel {
-	
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -26,16 +25,18 @@ public class TipoDeTributoContaContabilExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tipoDeTributoContaContabilExcluirPO = new TipoDeTributoContaContabilExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -46,11 +47,9 @@ public class TipoDeTributoContaContabilExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tipoDeTributoContaContabilExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
 
- 
+	}
+
 }

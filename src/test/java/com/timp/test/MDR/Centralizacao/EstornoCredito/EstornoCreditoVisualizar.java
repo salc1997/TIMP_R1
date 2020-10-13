@@ -17,6 +17,7 @@ public class EstornoCreditoVisualizar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	EstornoCreditoVisualizarPO estornoCreditoVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -25,10 +26,12 @@ public class EstornoCreditoVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		estornoCreditoVisualizarPO = new EstornoCreditoVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,7 +49,7 @@ public class EstornoCreditoVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 
 		String sucesso = estornoCreditoVisualizarPO.visualizar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
 }

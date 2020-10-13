@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
 
 public class ParametrosParaLivroICMSSTCriar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosParaLivroICMSSTCriarPO parametrosParaLivroICMSSTCriarPO;
@@ -25,9 +25,11 @@ public class ParametrosParaLivroICMSSTCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaLivroICMSSTCriarPO = new ParametrosParaLivroICMSSTCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,14 +47,9 @@ public class ParametrosParaLivroICMSSTCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = parametrosParaLivroICMSSTCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

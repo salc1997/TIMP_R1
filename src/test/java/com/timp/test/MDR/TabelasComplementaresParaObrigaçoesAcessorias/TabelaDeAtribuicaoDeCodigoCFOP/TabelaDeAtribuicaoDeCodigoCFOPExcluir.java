@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluirPO;
 
-public class TabelaDeAtribuicaoDeCodigoCFOPExcluir extends TestBaseEliel{
+public class TabelaDeAtribuicaoDeCodigoCFOPExcluir extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeAtribuicaoDeCodigoCFOPExcluirPO tabelaDeAtribuicaoDeCodigoCFOPExcluirPO;
@@ -26,9 +25,11 @@ public class TabelaDeAtribuicaoDeCodigoCFOPExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPExcluirPO = new TabelaDeAtribuicaoDeCodigoCFOPExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,10 +47,9 @@ public class TabelaDeAtribuicaoDeCodigoCFOPExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaDeAtribuicaoDeCodigoCFOPExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 
 }

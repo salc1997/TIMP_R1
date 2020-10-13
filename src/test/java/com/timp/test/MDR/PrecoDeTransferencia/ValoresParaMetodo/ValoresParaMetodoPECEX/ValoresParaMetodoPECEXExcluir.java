@@ -13,8 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.V
 
 public class ValoresParaMetodoPECEXExcluir extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPECEXExcluirPO valoresParaMetodoPECEXExcluirPO;
@@ -27,10 +25,12 @@ public class ValoresParaMetodoPECEXExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPECEXExcluirPO = new ValoresParaMetodoPECEXExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,10 +47,9 @@ public class ValoresParaMetodoPECEXExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = valoresParaMetodoPECEXExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
- 
+
+	}
+
 }

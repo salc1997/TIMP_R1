@@ -13,11 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSDetalhesPO;
 
-public class DocumentosFiscaisICMSDetalhes extends TestBaseEliel{
-	
+public class DocumentosFiscaisICMSDetalhes extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DocumentosFiscaisICMSDetalhesPO documentosFiscaisICMSDetalhesPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,9 +27,11 @@ public class DocumentosFiscaisICMSDetalhes extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		documentosFiscaisICMSDetalhesPO = new DocumentosFiscaisICMSDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,11 +50,11 @@ public class DocumentosFiscaisICMSDetalhes extends TestBaseEliel{
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = documentosFiscaisICMSDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}	
+	}
 }

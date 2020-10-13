@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12CriarPO;
 
-public class TabelaDeEstoqueParaRegistro12Criar extends TestBaseEliel{
- 
+public class TabelaDeEstoqueParaRegistro12Criar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeEstoqueParaRegistro12CriarPO tabelaDeEstoqueParaRegistro12CriarPO;
@@ -25,16 +25,18 @@ public class TabelaDeEstoqueParaRegistro12Criar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeEstoqueParaRegistro12CriarPO = new TabelaDeEstoqueParaRegistro12CriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -45,10 +47,9 @@ public class TabelaDeEstoqueParaRegistro12Criar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaDeEstoqueParaRegistro12CriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
+
+	}
+
 }

@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasExcluirPO;
 
-public class TabelaCodigoReceitaExcluir extends TestBaseSteven{
-	
+public class TabelaCodigoReceitaExcluir extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoReceitasExcluirPO tabelaCodigoReceitasExcluirPO;
@@ -27,9 +27,11 @@ public class TabelaCodigoReceitaExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasExcluirPO = new TabelaCodigoReceitasExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,10 +49,9 @@ public class TabelaCodigoReceitaExcluir extends TestBaseSteven{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaCodigoReceitasExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-  
+
+	}
+
 }

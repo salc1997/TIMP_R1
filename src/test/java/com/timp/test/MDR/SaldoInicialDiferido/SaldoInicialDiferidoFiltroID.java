@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.SaldoInicialDiferido.SaldoInicialDiferidoFiltroIDPO;
 
-public class SaldoInicialDiferidoFiltroID extends TestBaseSteven{
- 
+public class SaldoInicialDiferidoFiltroID extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SaldoInicialDiferidoFiltroIDPO saldoInicialDiferidoFiltroIDPO;
@@ -27,10 +27,12 @@ public class SaldoInicialDiferidoFiltroID extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		saldoInicialDiferidoFiltroIDPO = new SaldoInicialDiferidoFiltroIDPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,14 +49,9 @@ public class SaldoInicialDiferidoFiltroID extends TestBaseSteven{
 	@Test(priority = 2)
 	public void filtro() {
 
-		
 		boolean sucesso = saldoInicialDiferidoFiltroIDPO.filtro();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
-	
-	
+
+	}
+
 }

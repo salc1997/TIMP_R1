@@ -34,20 +34,18 @@ public class AntecipacaoVisualizar extends TestBaseSteven {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
 	}
-/*
-	@Test(priority = 2)
-	public void visualizar() {
-
-		String sucesso = antecipacaoVisualizarPO.visualizar();
-
-		assertEquals(sucesso, "edit", EmpresaVisualizar);
-	}
-*/
+	/*
+	 * @Test(priority = 2) public void visualizar() {
+	 * 
+	 * String sucesso = antecipacaoVisualizarPO.visualizar();
+	 * 
+	 * assertEquals(sucesso, "edit", EmpresaVisualizar); }
+	 */
 }

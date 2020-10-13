@@ -15,12 +15,10 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class TabelaDeDetalhamentosParaRegistro11Detalhes extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeDetalhamentosParaRegistro11DetalhesPO tabelaDeDetalhamentosParaRegistro11DetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -29,16 +27,18 @@ public class TabelaDeDetalhamentosParaRegistro11Detalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeDetalhamentosParaRegistro11DetalhesPO = new TabelaDeDetalhamentosParaRegistro11DetalhesPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -50,11 +50,11 @@ public class TabelaDeDetalhamentosParaRegistro11Detalhes extends TestBaseEliel {
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = tabelaDeDetalhamentosParaRegistro11DetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
+	}
 }

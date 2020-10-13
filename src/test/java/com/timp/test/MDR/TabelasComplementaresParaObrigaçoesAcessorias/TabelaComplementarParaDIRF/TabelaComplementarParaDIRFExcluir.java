@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class TabelaComplementarParaDIRFExcluir extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaComplementarParaDIRFExcluirPO tabelaComplementarParaDIRFExcluirPO;
@@ -26,9 +25,11 @@ public class TabelaComplementarParaDIRFExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaComplementarParaDIRFExcluirPO = new TabelaComplementarParaDIRFExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,12 +47,9 @@ public class TabelaComplementarParaDIRFExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaComplementarParaDIRFExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
-	
-	
+
+	}
+
 }

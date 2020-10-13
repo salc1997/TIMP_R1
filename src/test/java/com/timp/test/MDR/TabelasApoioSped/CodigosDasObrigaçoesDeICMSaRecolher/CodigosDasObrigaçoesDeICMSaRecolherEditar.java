@@ -26,7 +26,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigosDasObrigaçoesDeICMSaRecolherEditarPO = new CodigosDasObrigaçoesDeICMSaRecolherEditarPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -44,16 +44,13 @@ public class CodigosDasObrigaçoesDeICMSaRecolherEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
+
 		boolean sucesso = codigosDasObrigaçoesDeICMSaRecolherEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 	}
-	
-	
+
 }

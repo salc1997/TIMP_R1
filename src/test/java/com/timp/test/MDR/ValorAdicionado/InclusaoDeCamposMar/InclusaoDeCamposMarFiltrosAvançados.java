@@ -15,8 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarFiltrosAvançadosPO;
 
 public class InclusaoDeCamposMarFiltrosAvançados extends TestBaseEliel {
-  
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InclusaoDeCamposMarFiltrosAvançadosPO inclusaoDeCamposMarFiltrosAvançadosPO;
@@ -27,18 +26,20 @@ public class InclusaoDeCamposMarFiltrosAvançados extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		inclusaoDeCamposMarFiltrosAvançadosPO= new InclusaoDeCamposMarFiltrosAvançadosPO();
+		inclusaoDeCamposMarFiltrosAvançadosPO = new InclusaoDeCamposMarFiltrosAvançadosPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -49,7 +50,6 @@ public class InclusaoDeCamposMarFiltrosAvançados extends TestBaseEliel {
 	@Test(priority = 2)
 	public void filtros() {
 
-		
 		ArrayList<Boolean> sucesso = inclusaoDeCamposMarFiltrosAvançadosPO.filtrosusuario();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -70,11 +70,6 @@ public class InclusaoDeCamposMarFiltrosAvançados extends TestBaseEliel {
 		for (int i = 0; i < sucesso3.size(); i++) {
 			assertTrue(sucesso3.get(i), Filtros);
 		}
-		
-		
+
 	}
 }
-
-	
-	
-	

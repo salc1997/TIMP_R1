@@ -30,76 +30,64 @@ import com.sap.timp.pageObjectModel.BRB.FormulaPO;
 import net.bytebuddy.dynamic.DynamicType.Builder.FieldDefinition.Valuable;
 import net.bytebuddy.matcher.EqualityMatcher;
 
-public class Formula extends TestBaseSteven{
-	
+public class Formula extends TestBaseSteven {
+ 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	FormulaPO formulaPO;
 
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		formulaPO = new FormulaPO();
-	
 
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
-	}
-	
 
+	}
 
 	@Test(priority = 2)
 	public void formulaColuna() {
-		
+
 		formulaPO.formulaColuna();
-				
+
 	}
-	
 
 	@Test(priority = 3)
 	public void formulaBoton() {
-	
-		formulaPO.formulaBoton();	
-		
+
+		formulaPO.formulaBoton();
+
 	}
 
-	
-	
-	@Test(priority = 4 )
+	@Test(priority = 4)
 	public void aplicar() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = formulaPO.sucesso();
 		System.out.println(sucesso);
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), "Numbers are not equal");
 		}
-		
-		
-			
+
 	}
-	
+
 }

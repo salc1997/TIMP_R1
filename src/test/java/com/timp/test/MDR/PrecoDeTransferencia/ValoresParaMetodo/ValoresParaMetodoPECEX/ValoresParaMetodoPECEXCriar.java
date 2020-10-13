@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.V
 
 public class ValoresParaMetodoPECEXCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPECEXCriarPO valoresParaMetodoPECEXCriarPO;
@@ -26,10 +25,12 @@ public class ValoresParaMetodoPECEXCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPECEXCriarPO = new ValoresParaMetodoPECEXCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,9 +47,8 @@ public class ValoresParaMetodoPECEXCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = valoresParaMetodoPECEXCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
+
+	}
 }

@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditarPO;
 
-public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
-  
+public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoDaSituaçaoTributariaEditarPO tabelaCodigoDaSituaçaoTributariaEditarPO;
@@ -27,12 +27,12 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoDaSituaçaoTributariaEditarPO = new TabelaCodigoDaSituaçaoTributariaEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,18 +45,21 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
+<<<<<<< HEAD
 		
 		
 		boolean sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
+=======
+
+		String sucesso = tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	}
-	
-	
-	
-	
+
 }

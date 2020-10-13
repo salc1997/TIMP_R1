@@ -15,9 +15,8 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluirPO;
 
-public class TabelaReceitasPermitidasExcluir extends TestBaseSteven{
+public class TabelaReceitasPermitidasExcluir extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasPermitidasExcluirPO tabelaReceitasPermitidasExcluirPO;
@@ -30,16 +29,18 @@ public class TabelaReceitasPermitidasExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaReceitasPermitidasExcluirPO = new TabelaReceitasPermitidasExcluirPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -50,12 +51,9 @@ public class TabelaReceitasPermitidasExcluir extends TestBaseSteven{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaReceitasPermitidasExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-			
-	
-	
+
+	}
+
 }

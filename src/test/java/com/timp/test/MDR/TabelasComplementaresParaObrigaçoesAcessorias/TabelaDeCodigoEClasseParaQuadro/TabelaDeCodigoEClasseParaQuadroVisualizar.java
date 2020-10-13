@@ -18,6 +18,7 @@ public class TabelaDeCodigoEClasseParaQuadroVisualizar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCodigoEClasseParaQuadroVisualizarPO tabelaDeCodigoEClasseParaQuadroVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -26,16 +27,18 @@ public class TabelaDeCodigoEClasseParaQuadroVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeCodigoEClasseParaQuadroVisualizarPO = new TabelaDeCodigoEClasseParaQuadroVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -47,14 +50,12 @@ public class TabelaDeCodigoEClasseParaQuadroVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = tabelaDeCodigoEClasseParaQuadroVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
-	
-	
+	}
+
 }

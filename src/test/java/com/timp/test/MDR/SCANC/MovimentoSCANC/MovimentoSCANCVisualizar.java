@@ -19,7 +19,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO
 import com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCVisualizarPO;
 
 public class MovimentoSCANCVisualizar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MovimentoSCANCVisualizarPO movimentoSCANCVisualizarPO;
@@ -32,9 +32,11 @@ public class MovimentoSCANCVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCVisualizarPO = new MovimentoSCANCVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -52,17 +54,12 @@ public class MovimentoSCANCVisualizar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = movimentoSCANCVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
-	}			
-			
-	
-	
-	
-	
+
+	}
+
 }

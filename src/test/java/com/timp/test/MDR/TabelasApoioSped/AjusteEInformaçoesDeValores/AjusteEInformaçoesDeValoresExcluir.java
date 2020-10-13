@@ -13,14 +13,11 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-
 public class AjusteEInformaçoesDeValoresExcluir extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AjusteEInformaçoesDeValoresExcluirPO ajusteEInformaçoesDeValoresExcluirPO;
-
-  
 
 	@BeforeClass
 	public void beforeClass() {
@@ -30,9 +27,11 @@ public class AjusteEInformaçoesDeValoresExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		ajusteEInformaçoesDeValoresExcluirPO = new AjusteEInformaçoesDeValoresExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -52,11 +51,7 @@ public class AjusteEInformaçoesDeValoresExcluir extends TestBaseEliel {
 
 		boolean sucesso = ajusteEInformaçoesDeValoresExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}	
 
-  
-  
- 
+	}
 
 }

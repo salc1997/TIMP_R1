@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoConta
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoEditarPO;
 
-public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
+public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,12 +28,12 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoContabilCorrecaoCriarPO = new MapeamentoContabilCorrecaoCriarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -51,8 +51,8 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven{
 	public void criar() {
 
 		boolean sucesso = mapeamentoContabilCorrecaoCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

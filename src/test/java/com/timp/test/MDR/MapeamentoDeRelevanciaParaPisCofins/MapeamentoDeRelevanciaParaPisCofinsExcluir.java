@@ -24,11 +24,13 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluir extends TestBaseEliel {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoDeRelevanciaParaPisCofinsExcluirPO = new MapeamentoDeRelevanciaParaPisCofinsExcluirPO();
-		
+
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,15 +47,10 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluir extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void excluir() {
-		
+
 		boolean sucesso = mapeamentoDeRelevanciaParaPisCofinsExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}		
-	
-	
-	
-	
-	
-	
+
+	}
+
 }

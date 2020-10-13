@@ -14,8 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.DeterminacaoRelevanciaTarefaMotivoReaber
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosEditarPO;
 
 public class CadastroMotivosReaberturaEditar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroMotivosReaberturaEditarPO cadastroMotivosReaberturaEditarPO;
@@ -28,12 +27,12 @@ public class CadastroMotivosReaberturaEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroMotivosReaberturaEditarPO = new CadastroMotivosReaberturaEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,15 +45,14 @@ public class CadastroMotivosReaberturaEditar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = cadastroMotivosReaberturaEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-	
+	}
+
 }

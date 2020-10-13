@@ -11,11 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoCriarPO;
 
-public class DeterminacaoDeTipoDeCondicaoCriar extends TestBaseEliel{
+public class DeterminacaoDeTipoDeCondicaoCriar extends TestBaseEliel {
 
-	
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacaoDeTipoDeCondicaoCriarPO determinacaoDeTipoDeCondicaoCriarPO;
@@ -28,10 +25,12 @@ public class DeterminacaoDeTipoDeCondicaoCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		determinacaoDeTipoDeCondicaoCriarPO = new DeterminacaoDeTipoDeCondicaoCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,10 +47,9 @@ public class DeterminacaoDeTipoDeCondicaoCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = determinacaoDeTipoDeCondicaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
+
+	}
+
 }

@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosParaTP.Pa
 
 public class ParametrosParaTPExcluir extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosParaTPExcluirPO parametrosParaTPExcluirPO;
@@ -26,10 +25,12 @@ public class ParametrosParaTPExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaTPExcluirPO = new ParametrosParaTPExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,9 +47,8 @@ public class ParametrosParaTPExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = parametrosParaTPExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 }

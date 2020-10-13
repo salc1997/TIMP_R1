@@ -72,7 +72,7 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tp1);
 
 		return driver;
 	}
@@ -462,5 +462,7 @@ public class TestBaseSteven {
 	public String Criar = "O registro não foi criado com sucesso";
 	public String Eliminado = "O registro não foi eliminado com sucesso";
 	public String Detalhes = "As informações não são as esperadas";
+	
+	public String Atualizar = "Não foi possivel atualizar os registros";
 
 }

@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 
-public class LimiteCompetenciaCriar extends TestBaseSteven{
+public class LimiteCompetenciaCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -26,12 +26,12 @@ public class LimiteCompetenciaCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		limiteCompetenciaCriarPO = new LimiteCompetenciaCriarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,8 +49,8 @@ public class LimiteCompetenciaCriar extends TestBaseSteven{
 	public void criar() {
 
 		boolean sucesso = limiteCompetenciaCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

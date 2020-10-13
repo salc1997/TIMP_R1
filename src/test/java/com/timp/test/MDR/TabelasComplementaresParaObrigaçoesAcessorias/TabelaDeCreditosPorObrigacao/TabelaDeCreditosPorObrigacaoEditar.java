@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class TabelaDeCreditosPorObrigacaoEditar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCreditoPorObrigacaoEditarPO tabelaDeCreditoPorObrigacaoEditarPO;
@@ -31,7 +30,7 @@ public class TabelaDeCreditosPorObrigacaoEditar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-	
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,17 +43,14 @@ public class TabelaDeCreditosPorObrigacaoEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = tabelaDeCreditoPorObrigacaoEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-		
-	
-	
+	}
+
 }

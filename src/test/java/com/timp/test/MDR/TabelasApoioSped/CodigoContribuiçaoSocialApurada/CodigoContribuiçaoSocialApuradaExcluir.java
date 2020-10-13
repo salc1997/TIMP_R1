@@ -14,8 +14,7 @@ import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
-
-public class CodigoContribuiçaoSocialApuradaExcluir extends TestBaseSteven{
+public class CodigoContribuiçaoSocialApuradaExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -29,10 +28,12 @@ public class CodigoContribuiçaoSocialApuradaExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContribuiçaoSocialApuradaExcluirPO = new CodigoContribuiçaoSocialApuradaExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -50,7 +51,7 @@ public class CodigoContribuiçaoSocialApuradaExcluir extends TestBaseSteven{
 	public void excluir() {
 
 		codigoContribuiçaoSocialApuradaExcluirPO.eliminar();
-		
-	}	
-	
+
+	}
+
 }

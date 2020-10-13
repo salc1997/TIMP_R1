@@ -14,9 +14,8 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
 
-public class AtribuicaoMunicipioEstadoCriar extends TestBaseSteven{
+public class AtribuicaoMunicipioEstadoCriar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtribuicaoMunicipioEstadoCriarPO atribuicaoMunicipioEstadoCriarPO;
@@ -29,9 +28,11 @@ public class AtribuicaoMunicipioEstadoCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		atribuicaoMunicipioEstadoCriarPO = new AtribuicaoMunicipioEstadoCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,12 +50,9 @@ public class AtribuicaoMunicipioEstadoCriar extends TestBaseSteven{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = atribuicaoMunicipioEstadoCriarPO.criar();
 		assertTrue(sucesso, Criar);
-		
-	}			
-			
-	
-	
+
+	}
+
 }

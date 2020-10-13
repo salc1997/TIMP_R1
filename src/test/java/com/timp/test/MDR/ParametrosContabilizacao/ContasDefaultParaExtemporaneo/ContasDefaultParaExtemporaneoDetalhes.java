@@ -11,14 +11,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoDetalhesPO;
 
-
 public class ContasDefaultParaExtemporaneoDetalhes extends TestBaseEliel {
-  
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultParaExtemporaneoDetalhesPO contasDefaultParaExtemporaneoDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,9 +25,11 @@ public class ContasDefaultParaExtemporaneoDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultParaExtemporaneoDetalhesPO = new ContasDefaultParaExtemporaneoDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,13 +47,9 @@ public class ContasDefaultParaExtemporaneoDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Detalhes() {
 
-		
 		String sucesso = contasDefaultParaExtemporaneoDetalhesPO.detalhes();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
-	}	
-	
-	
-	
-	
+
+		assertEquals(sucesso, "edit", visualizaçar);
+	}
+
 }

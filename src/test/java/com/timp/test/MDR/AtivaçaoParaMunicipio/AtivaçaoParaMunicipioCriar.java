@@ -7,15 +7,14 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriarPO;
 
-
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
-
-public class AtivaçaoParaMunicipioCriar extends TestBaseEliel {
  
+public class AtivaçaoParaMunicipioCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtivaçaoParaMunicipioCriarPO ativaçaoParaMunicipioCriarPO;
@@ -28,9 +27,11 @@ public class AtivaçaoParaMunicipioCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		ativaçaoParaMunicipioCriarPO = new AtivaçaoParaMunicipioCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,10 +48,9 @@ public class AtivaçaoParaMunicipioCriar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void criar() {
-		
-		
+
 		boolean sucesso = ativaçaoParaMunicipioCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}		
+
+	}
 }

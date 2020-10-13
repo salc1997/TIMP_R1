@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ObservaçoesdoDocumentoFiscalEditarPO observaçoesdoDocumentoFiscalEditarPO;
@@ -26,9 +26,9 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		observaçoesdoDocumentoFiscalEditarPO= new ObservaçoesdoDocumentoFiscalEditarPO();
+		observaçoesdoDocumentoFiscalEditarPO = new ObservaçoesdoDocumentoFiscalEditarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -46,19 +46,15 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
-		//observaçoesdoDocumentoFiscalEditarPO.editar();
+		// observaçoesdoDocumentoFiscalEditarPO.editar();
 		boolean sucesso = observaçoesdoDocumentoFiscalEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
 	}
-	
-	
-	
 
 }

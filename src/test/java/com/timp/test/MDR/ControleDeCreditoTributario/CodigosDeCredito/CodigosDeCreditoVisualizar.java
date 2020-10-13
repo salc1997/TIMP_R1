@@ -15,11 +15,11 @@ import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.CodigosDeCre
 //import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoVisualizarPO;
 
 public class CodigosDeCreditoVisualizar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosDeCreditoVisualizarPO codigosDeCreditoVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,16 +28,18 @@ public class CodigosDeCreditoVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigosDeCreditoVisualizarPO = new CodigosDeCreditoVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -51,13 +53,10 @@ public class CodigosDeCreditoVisualizar extends TestBaseEliel {
 		ArrayList<Boolean> sucesso = codigosDeCreditoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-		
-	
-	
-	
+	}
+
 }

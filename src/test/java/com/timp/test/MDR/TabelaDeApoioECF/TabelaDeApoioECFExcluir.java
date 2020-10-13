@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelaDeApoioECF;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -13,9 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluirPO;
 
 public class TabelaDeApoioECFExcluir extends TestBaseSteven {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFExcluirPO tabelaDeApoioECFExcluirPO;
@@ -28,10 +27,10 @@ public class TabelaDeApoioECFExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeApoioECFExcluirPO = new TabelaDeApoioECFExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
-
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	 
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,9 +47,8 @@ public class TabelaDeApoioECFExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaDeApoioECFExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 }

@@ -21,7 +21,6 @@ import org.testng.annotations.AfterClass;
 
 public class MotivosCesBeneficiosVisualizar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MotivosCesBeneficiosVisualizarPO motivosCesBeneficiosVisualizarPO;
@@ -35,9 +34,11 @@ public class MotivosCesBeneficiosVisualizar extends TestBaseSteven {
 		motivosCesBeneficiosVisualizarPO = new MotivosCesBeneficiosVisualizarPO();
 	}
 
-	@AfterClass public void afterClass(){ driver.close(); }
-	
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -55,12 +56,11 @@ public class MotivosCesBeneficiosVisualizar extends TestBaseSteven {
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = motivosCesBeneficiosVisualizarPO.visualizar();
-		
-		for (int i = 0; i <sucesso.size() ; i++) {
+
+		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 
-		
 	}
 
 }

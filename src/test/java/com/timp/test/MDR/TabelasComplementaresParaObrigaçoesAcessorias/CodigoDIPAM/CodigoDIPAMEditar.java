@@ -25,7 +25,7 @@ public class CodigoDIPAMEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDIPAMEditarPO = new CodigoDIPAMEditarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -43,16 +43,14 @@ public class CodigoDIPAMEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = codigoDIPAMEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
-	
+	}
+
 }

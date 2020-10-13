@@ -11,10 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditarPO;
 
+public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 
-public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel{
- 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultParaExtemporaneoEditarPO contasDefaultParaExtemporaneoEditarPO;
@@ -27,12 +25,12 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultParaExtemporaneoEditarPO = new ContasDefaultParaExtemporaneoEditarPO();
 	}
-	
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,18 +43,13 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
+
 		String sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
-	
-	
-	
-	
+
 }

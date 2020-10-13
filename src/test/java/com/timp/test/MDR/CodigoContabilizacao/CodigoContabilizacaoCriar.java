@@ -13,9 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoCriarPO
 import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoCriarPO;
 
 public class CodigoContabilizacaoCriar extends TestBaseEliel {
-  
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoContabilizacaoCriarPO codigoContabilizacaoCriarPO;
@@ -29,9 +27,11 @@ public class CodigoContabilizacaoCriar extends TestBaseEliel {
 		codigoContabilizacaoCriarPO = new CodigoContabilizacaoCriarPO();
 	}
 
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,14 +48,11 @@ public class CodigoContabilizacaoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 		boolean sucesso = codigoContabilizacaoCriarPO.criar();
-		//boolean text = cadastroCondicaoCriarPO.criar();
-		//assertTrue(text, Criar);
-		//Teste pra conferir se conseguiu acesssar o sistema
+		// boolean text = cadastroCondicaoCriarPO.criar();
+		// assertTrue(text, Criar);
+		// Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(sucesso, semAcesso);
 
-		
-	}	
-	
-	
-	
+	}
+
 }

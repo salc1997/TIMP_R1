@@ -15,11 +15,10 @@ import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos
 
 public class TiposDeServicosVisualizar extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeServicosVisualizarPO tiposDeServicosVisualizarPO;
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,9 +27,11 @@ public class TiposDeServicosVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeServicosVisualizarPO = new TiposDeServicosVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,12 +50,12 @@ public class TiposDeServicosVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = tiposDeServicosVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
+	}
+
 }

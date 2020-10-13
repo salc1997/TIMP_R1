@@ -24,67 +24,55 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-
+ 
 public class paginacion extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	PaginacionPO paginacionPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		paginacionPO = new PaginacionPO();
 	}
+
 	/*
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
-	*/
+	 * @AfterClass public void afterClass() { driver.close(); }
+	 */
 	@Test(priority = 1)
 	public void login() {
 
 		loginTC.login();
 	}
-	
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void brbEntrar() {
-		
+
 		acessarBrbPO.acessar();
-			
+
 	}
 
-	@Test(priority=3)
+	@Test(priority = 3)
 	public void paginacion() {
-	
-	 
 
 		String paginaS = paginacionPO.paginacionPS();
 		assertEquals(paginaS, "2", paginaSeguiente);
 
-		
 		String paginaA = paginacionPO.paginacionPA();
-		assertEquals(paginaA, "1",paginaAnterior);
-	
-		
+		assertEquals(paginaA, "1", paginaAnterior);
+
 		String paginaF = paginacionPO.paginacionPF();
-		assertEquals(paginaF, paginacionPO.totalPAges.getAttribute("value"),paginaFinal);
-				
-		
+		assertEquals(paginaF, paginacionPO.totalPAges.getAttribute("value"), paginaFinal);
+
 		String paginaI = paginacionPO.paginacionPI();
 		assertEquals(paginaI, "1", paginaInicial);
-		
-		
+
 		String paginaB = paginacionPO.numero();
 		assertEquals(paginaB, "1", paginaInserida);
-		
-	
-		
 
 	}
 

@@ -16,12 +16,11 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class StatusOcorrenciaFiscalEditar extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusOcorrenciaFiscalEditarPO statusOcorrenciaFiscalEditarPO;
-
+  
 	@BeforeClass
 	public void beforeClass() {
 
@@ -30,9 +29,11 @@ public class StatusOcorrenciaFiscalEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		statusOcorrenciaFiscalEditarPO = new StatusOcorrenciaFiscalEditarPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +51,9 @@ public class StatusOcorrenciaFiscalEditar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void editar() {
 
-		
 		boolean sucesso = statusOcorrenciaFiscalEditarPO.editar();
 		assertTrue(sucesso, Criar);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

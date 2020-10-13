@@ -13,11 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPDetalhesPO;
 
-public class TabelaDeAtribuicaoDeCodigoCFOPDetalhes extends TestBaseEliel{
+public class TabelaDeAtribuicaoDeCodigoCFOPDetalhes extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeAtribuicaoDeCodigoCFOPDetalhesPO tabelaDeAtribuicaoDeCodigoCFOPDetalhesPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -25,10 +26,12 @@ public class TabelaDeAtribuicaoDeCodigoCFOPDetalhes extends TestBaseEliel{
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPDetalhesPO = new TabelaDeAtribuicaoDeCodigoCFOPDetalhesPO();
+	} 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,15 +50,12 @@ public class TabelaDeAtribuicaoDeCodigoCFOPDetalhes extends TestBaseEliel{
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = tabelaDeAtribuicaoDeCodigoCFOPDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-		
-	
-	
-	
+	}
+
 }

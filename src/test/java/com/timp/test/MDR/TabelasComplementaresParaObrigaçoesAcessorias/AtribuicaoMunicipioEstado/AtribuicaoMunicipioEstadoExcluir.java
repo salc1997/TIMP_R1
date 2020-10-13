@@ -13,10 +13,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluirPO;
 
-
 public class AtribuicaoMunicipioEstadoExcluir extends TestBaseSteven {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtribuicaoMunicipioEstadoExcluirPO atribuicaoMunicipioEstadoExcluirPO;
@@ -29,10 +27,12 @@ public class AtribuicaoMunicipioEstadoExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		atribuicaoMunicipioEstadoExcluirPO = new AtribuicaoMunicipioEstadoExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,12 +49,9 @@ public class AtribuicaoMunicipioEstadoExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = atribuicaoMunicipioEstadoExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-		
-	
-	
+
+	}
+
 }

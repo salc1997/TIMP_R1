@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPCriarPO;
 
-public class ModeloDeApuracaoTPCriar extends TestBaseEliel{
- 
+public class ModeloDeApuracaoTPCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ModeloDeApuracaoTPCriarPO modeloDeApuracaoTPCriarPO;
@@ -25,9 +25,11 @@ public class ModeloDeApuracaoTPCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		modeloDeApuracaoTPCriarPO = new ModeloDeApuracaoTPCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,14 +47,9 @@ public class ModeloDeApuracaoTPCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = modeloDeApuracaoTPCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
-	
-	
+
+	}
+
 }

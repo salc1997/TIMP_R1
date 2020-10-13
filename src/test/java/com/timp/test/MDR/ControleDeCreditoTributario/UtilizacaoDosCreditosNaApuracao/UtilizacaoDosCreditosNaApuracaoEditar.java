@@ -12,9 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoEditarPO;
 
 public class UtilizacaoDosCreditosNaApuracaoEditar extends TestBaseEliel {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UtilizacaoDosCreditosNaApuracaoEditarPO utilizacaoDosCreditosNaApuracaoEditarPO;
@@ -27,12 +25,12 @@ public class UtilizacaoDosCreditosNaApuracaoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		utilizacaoDosCreditosNaApuracaoEditarPO = new UtilizacaoDosCreditosNaApuracaoEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,14 +43,13 @@ public class UtilizacaoDosCreditosNaApuracaoEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = utilizacaoDosCreditosNaApuracaoEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
+	}
 }

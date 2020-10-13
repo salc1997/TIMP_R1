@@ -12,10 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalExcluirPO;
 
 public class DeParaLivroApuraçaoXSpedFiscalExcluir extends TestBaseEliel {
-	
-	
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeParaLivroApuraçaoXSpedFiscalExcluirPO deParaLivroApuraçaoXSpedFiscalExcluirPO;
@@ -28,9 +25,11 @@ public class DeParaLivroApuraçaoXSpedFiscalExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		deParaLivroApuraçaoXSpedFiscalExcluirPO = new DeParaLivroApuraçaoXSpedFiscalExcluirPO();
 	}
-
-	 @AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,10 +47,9 @@ public class DeParaLivroApuraçaoXSpedFiscalExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = deParaLivroApuraçaoXSpedFiscalExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 
 }

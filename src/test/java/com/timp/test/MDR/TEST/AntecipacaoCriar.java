@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TESTE.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 
-public class AntecipacaoCriar extends TestBaseSteven{
+public class AntecipacaoCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,12 +28,10 @@ public class AntecipacaoCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoCriarPO = new AntecipacaoCriarPO();
 	}
+ 
 	/*
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
-	*/
+	 * @AfterClass public void afterClass() { driver.close(); }
+	 */
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -52,10 +50,8 @@ public class AntecipacaoCriar extends TestBaseSteven{
 
 		boolean sucesso = antecipacaoCriarPO.criarAntecipacao();
 
-		
 		assertTrue(sucesso, Criar);
-		
-		
+
 	}
 
 }

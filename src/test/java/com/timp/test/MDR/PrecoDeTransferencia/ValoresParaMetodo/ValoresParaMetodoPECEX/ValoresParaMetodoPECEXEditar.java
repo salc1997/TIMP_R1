@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditarPO;
 
 public class ValoresParaMetodoPECEXEditar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPECEXEditarPO valoresParaMetodoPECEXEditarPO;
@@ -25,12 +25,12 @@ public class ValoresParaMetodoPECEXEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPECEXEditarPO = new ValoresParaMetodoPECEXEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,15 +43,14 @@ public class ValoresParaMetodoPECEXEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = valoresParaMetodoPECEXEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
- 
+	}
+
 }

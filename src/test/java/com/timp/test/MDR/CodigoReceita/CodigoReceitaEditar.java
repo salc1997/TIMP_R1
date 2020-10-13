@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaCriarPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaEditarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 
-public class CodigoReceitaEditar extends TestBaseSteven{
+public class CodigoReceitaEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,18 +28,18 @@ public class CodigoReceitaEditar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoReceitaEditarPO = new CodigoReceitaEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -51,8 +51,8 @@ public class CodigoReceitaEditar extends TestBaseSteven{
 	public void editar() {
 
 		boolean sucesso = codigoReceitaEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
-		
+
 	}
 }

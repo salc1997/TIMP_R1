@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseEliel{
+public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO;
@@ -27,11 +27,13 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseE
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO= new ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO();
+		classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO = new ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,15 +51,14 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseE
 	@Test(priority = 2)
 	public void filtros() {
 
-		//classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO.filtros();
-		
+		// classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO.filtros();
+
 		ArrayList<Boolean> sucesso = classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO.filtros();
-		//sleep(2000);
+		// sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The results in the filter aren't equal");
 		}
-		
-		
+
 	}
 
 }

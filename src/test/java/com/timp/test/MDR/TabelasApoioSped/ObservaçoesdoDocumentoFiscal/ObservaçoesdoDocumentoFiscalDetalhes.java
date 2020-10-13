@@ -19,8 +19,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-
-public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven{
+public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -34,9 +33,11 @@ public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		observaçoesdoDocumentoFiscalDetalhesPO = new ObservaçoesdoDocumentoFiscalDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -56,10 +57,10 @@ public class ObservaçoesdoDocumentoFiscalDetalhes extends TestBaseSteven{
 
 		ArrayList<Boolean> sucesso = observaçoesdoDocumentoFiscalDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}	
-	
+	}
+
 }

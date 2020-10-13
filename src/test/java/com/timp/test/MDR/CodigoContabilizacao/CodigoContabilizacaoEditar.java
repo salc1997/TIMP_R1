@@ -28,16 +28,18 @@ public class CodigoContabilizacaoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContabilizacaoEditarPO = new CodigoContabilizacaoEditarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -47,15 +49,14 @@ public class CodigoContabilizacaoEditar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void editar() {
-		//codigoContabilizacaoEditarPO.editar();
+		// codigoContabilizacaoEditarPO.editar();
 		String sucesso = codigoContabilizacaoEditarPO.editar();
-		
+
 		assertEquals(sucesso, "infoField", visualizaçar);
-		
-		//Teste pra conferir se conseguiu acesssar o sistema
+
+		// Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(codigoContabilizacaoEditarPO.mostrar.isDisplayed(), semAcesso);
 
-		
-	}	
-	
+	}
+
 }

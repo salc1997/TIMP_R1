@@ -16,10 +16,10 @@ import org.testng.annotations.AfterClass;
 
 public class EstornoCreditoExcluir extends TestBaseEliel {
 
-
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	EstornoCreditoExcluirPO estornoCreditoExcluirPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,9 +28,11 @@ public class EstornoCreditoExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		estornoCreditoExcluirPO = new EstornoCreditoExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,12 +50,9 @@ public class EstornoCreditoExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Excluir() {
 
-		boolean sucesso=estornoCreditoExcluirPO.excluir();
+		boolean sucesso = estornoCreditoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 
 	}
-
-
-
 
 }

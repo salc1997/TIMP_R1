@@ -14,11 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizarPO;
 
 public class LimiteDeCreditoAUtilizarVisualizar extends TestBaseEliel {
-  
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LimiteDeCreditoAUtilizarVisualizarPO limiteDeCreditoAUtilizarVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,16 +27,18 @@ public class LimiteDeCreditoAUtilizarVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		limiteDeCreditoAUtilizarVisualizarPO = new LimiteDeCreditoAUtilizarVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
 	}
-
+ 
 	@Test(priority = 1)
 	public void acessarMDR() {
 
@@ -48,13 +50,12 @@ public class LimiteDeCreditoAUtilizarVisualizar extends TestBaseEliel {
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = limiteDeCreditoAUtilizarVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
-	
+	}
+
 }

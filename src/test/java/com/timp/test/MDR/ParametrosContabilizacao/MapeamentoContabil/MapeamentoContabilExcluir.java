@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoConta
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilEditarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirPO;
 
-public class MapeamentoContabilExcluir extends TestBaseSteven{
+public class MapeamentoContabilExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,12 +28,12 @@ public class MapeamentoContabilExcluir extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoContabilExcluirPO = new MapeamentoContabilExcluirPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -51,7 +51,7 @@ public class MapeamentoContabilExcluir extends TestBaseSteven{
 	public void excluir() {
 
 		boolean sucesso = mapeamentoContabilExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
 	}
 }

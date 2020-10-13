@@ -13,37 +13,37 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TributosExcluir extends TestBaseKathy{
-  LoginTC loginTC;
-  AcessarMDRPO acessarMDRPO;
-  TributosExcluirPO tributosExcluirPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationK();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  tributosExcluirPO = new TributosExcluirPO();
-  }
+public class TributosExcluir extends TestBaseKathy {
+	LoginTC loginTC;
+	AcessarMDRPO acessarMDRPO;
+	TributosExcluirPO tributosExcluirPO;
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		tributosExcluirPO = new TributosExcluirPO();
+	}
 
-  @Test(priority = 1)
-  public void acessarMDR() {
-	  acessarMDRPO.acessarMDR();
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 2)
-  public void excluir() {
-	  boolean sucesso = tributosExcluirPO.tributosExcluir();
-	  assertTrue(sucesso,Eliminado);
-  }
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
+ 
+	@Test(priority = 1)
+	public void acessarMDR() {
+		acessarMDRPO.acessarMDR();
+	}
+
+	@Test(priority = 2)
+	public void excluir() {
+		boolean sucesso = tributosExcluirPO.tributosExcluir();
+		assertTrue(sucesso, Eliminado);
+	}
 
 }

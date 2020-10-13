@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluirPO;
 
-public class CodigoDIPAMExcluir extends TestBaseEliel{
-	
+public class CodigoDIPAMExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDIPAMExcluirPO codigoDIPAMExcluirPO;
@@ -25,9 +25,11 @@ public class CodigoDIPAMExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDIPAMExcluirPO = new CodigoDIPAMExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+ 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,10 +47,9 @@ public class CodigoDIPAMExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = codigoDIPAMExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-  
+
+	}
+
 }

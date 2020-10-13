@@ -14,8 +14,7 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.AfterClass;
 
 public class RegistroDeExportaçaoEditar extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroDeExportaçaoEditarPO registroDeExportaçaoEditarPO;
@@ -26,12 +25,14 @@ public class RegistroDeExportaçaoEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		registroDeExportaçaoEditarPO= new RegistroDeExportaçaoEditarPO();
+		registroDeExportaçaoEditarPO = new RegistroDeExportaçaoEditarPO();
 	}
 
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+ 
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,14 +48,13 @@ public class RegistroDeExportaçaoEditar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		//registroDeExportaçaoEditarPO.editar();
+
+		// registroDeExportaçaoEditarPO.editar();
 
 		String sucesso = registroDeExportaçaoEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar);
-		
-	}	
-  
+
+		assertEquals(sucesso, "edit", visualizaçar);
+
+	}
 
 }

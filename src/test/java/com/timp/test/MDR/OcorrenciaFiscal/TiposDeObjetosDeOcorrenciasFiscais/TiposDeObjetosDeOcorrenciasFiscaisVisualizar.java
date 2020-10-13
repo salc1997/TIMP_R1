@@ -13,13 +13,14 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisVisualizarPO;
 
 public class TiposDeObjetosDeOcorrenciasFiscaisVisualizar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeObjetosDeOcorrenciasFiscaisVisualizarPO tiposDeObjetosDeOcorrenciasFiscaisVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -46,12 +47,12 @@ public class TiposDeObjetosDeOcorrenciasFiscaisVisualizar extends TestBaseEliel 
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = tiposDeObjetosDeOcorrenciasFiscaisVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
- 
+	}
+
 }

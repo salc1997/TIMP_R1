@@ -20,6 +20,13 @@ import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLi
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar;
 
 
 public class AutomacoesMDR5 extends TestBaseSteven {
@@ -52,6 +59,20 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	ParametrosOficializacaoLivrosEditar parametrosOficializacaoLivrosEditar;
 	ParametrosOficializacaoLivrosExcluir parametrosOficializacaoLivrosExcluir;
 	ParametrosOficializacaoLivrosVisualizar parametrosOficializacaoLivrosVisualizar;
+	
+	
+	//Tabela de Apoio ECF
+	TabelaDeApoioECFCriar tabelaDeApoioECFCriar;
+	TabelaDeApoioECFEditar tabelaDeApoioECFEditar;
+	TabelaDeApoioECFVisualizar tabelaDeApoioECFVisualizar;
+	TabelaDeApoioECFExcluir tabelaDeApoioECFExcluir;
+	TabelaDeApoioECFAtualizar tabelaDeApoioECFAtualizar;
+	TabelaDeApoioECFNovaTabelaECF tabelaDeApoioECFNovaTabelaECF;
+	TabelaDeApoioECFNovaVersaoLeiaute tabelaDeApoioECFNovaVersaoLeiaute;
+	
+	
+	
+	
 
 	// 0
 
@@ -280,8 +301,90 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		System.out.println("-------------------Parâmetros de Oficialização de Livros Fin-------------------------");
 	}
 
-	// 24
+	// 25
+	
+	// Tabela de Apoio ECF
 
-	// 30
+		@Test(priority = 20)
+		public void tabelaDeApoioECFCriar() {
+
+			System.out.println("-------------------Tabela de Apoio ECF-------------------------");
+
+			tabelaDeApoioECFCriar = new TabelaDeApoioECFCriar();
+			tabelaDeApoioECFCriar.beforeClass();
+			tabelaDeApoioECFCriar.login();
+			tabelaDeApoioECFCriar.acessarMDR();
+			tabelaDeApoioECFCriar.criar();
+			tabelaDeApoioECFCriar.afterClass();
+
+		}
+
+		@Test(priority = 21)
+		public void tabelaDeApoioECFEditar() {
+
+			tabelaDeApoioECFEditar = new TabelaDeApoioECFEditar();
+			tabelaDeApoioECFEditar.beforeClass();
+			tabelaDeApoioECFEditar.login();
+			tabelaDeApoioECFEditar.acessarMDR();
+			tabelaDeApoioECFEditar.editar();
+			tabelaDeApoioECFEditar.afterClass();
+
+		}
+
+		@Test(priority = 22)
+		public void tabelaDeApoioECFVisualizar() {
+
+			tabelaDeApoioECFVisualizar = new TabelaDeApoioECFVisualizar();
+			tabelaDeApoioECFVisualizar.beforeClass();
+			tabelaDeApoioECFVisualizar.login();
+			tabelaDeApoioECFVisualizar.acessarMDR();
+			tabelaDeApoioECFVisualizar.visualizar();
+			tabelaDeApoioECFVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 23)
+		public void tabelaDeApoioECFNovaTabelaAtualizar() {
+			
+			tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
+			tabelaDeApoioECFAtualizar.beforeClass();
+			tabelaDeApoioECFAtualizar.login();
+			tabelaDeApoioECFAtualizar.acessarMDR();
+			tabelaDeApoioECFAtualizar.atualizar();
+			tabelaDeApoioECFAtualizar.afterClass();
+
+		}
+		
+		@Test(priority = 23)
+		public void tabelaDeApoioECFNovaTabelaNova() {
+			
+			tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
+			tabelaDeApoioECFAtualizar.beforeClass();
+			tabelaDeApoioECFAtualizar.login();
+			tabelaDeApoioECFAtualizar.acessarMDR();
+			tabelaDeApoioECFAtualizar.atualizar();
+			tabelaDeApoioECFAtualizar.afterClass();
+
+		}
+		
+
+
+		@Test(priority = 24)
+		public void tabelaDeApoioECFExcluir() {
+
+			tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
+			tabelaDeApoioECFExcluir.beforeClass();
+			tabelaDeApoioECFExcluir.login();
+			tabelaDeApoioECFExcluir.acessarMDR();
+			tabelaDeApoioECFExcluir.excluir();
+			tabelaDeApoioECFExcluir.afterClass();
+
+			System.out.println("------------------Tabela de Apoio ECF Fin-------------------------");
+		}
+
+	
+	
+
+	// 34
 
 }

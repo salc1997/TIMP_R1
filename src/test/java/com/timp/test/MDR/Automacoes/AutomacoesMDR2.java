@@ -88,6 +88,8 @@ import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluir;
 import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar;
+import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoExcluir;
+import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoFiltroID;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaCriar;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaEditar;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaExcluir;
@@ -226,8 +228,12 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	// Saldo Inicial Diferido
 
-	SaldoInicialDiferidoCriar SaldoInicialDiferidoCriar;
+	SaldoInicialDiferidoCriar saldoInicialDiferidoCriar;
 	SaldoInicialDiferidoEditar saldoInicialDiferidoEditar;
+	SaldoInicialDiferidoExcluir saldoInicialDiferidoExcluir;
+	SaldoInicialDiferidoFiltroID saldoInicialDiferidoFiltroID;
+	
+	
 
 	// SCANC > Ajustes Dos Anexos
 
@@ -1249,12 +1255,12 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 		System.out.println("-------------------Saldo Inicial Diferido-------------------------");
 
-		SaldoInicialDiferidoCriar = new SaldoInicialDiferidoCriar();
-		SaldoInicialDiferidoCriar.beforeClass();
-		SaldoInicialDiferidoCriar.login();
-		SaldoInicialDiferidoCriar.acessarMDR();
-		SaldoInicialDiferidoCriar.criar();
-		SaldoInicialDiferidoCriar.afterClass();
+		saldoInicialDiferidoCriar = new SaldoInicialDiferidoCriar();
+		saldoInicialDiferidoCriar.beforeClass();
+		saldoInicialDiferidoCriar.login();
+		saldoInicialDiferidoCriar.acessarMDR();
+		saldoInicialDiferidoCriar.criar();
+		saldoInicialDiferidoCriar.afterClass();
 
 	}
 
@@ -1267,6 +1273,33 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		saldoInicialDiferidoEditar.acessarMDR();
 		saldoInicialDiferidoEditar.editar();
 		saldoInicialDiferidoEditar.afterClass();
+
+
+	}
+	
+	@Test(priority = 106)
+	public void saldoInicialDiferidoFiltroID() {
+		
+		saldoInicialDiferidoFiltroID = new SaldoInicialDiferidoFiltroID();
+		saldoInicialDiferidoFiltroID.beforeClass();
+		saldoInicialDiferidoFiltroID.login();
+		saldoInicialDiferidoFiltroID.acessarMDR();
+		saldoInicialDiferidoFiltroID.filtro();
+		saldoInicialDiferidoFiltroID.afterClass();
+
+
+	}
+	
+	@Test(priority = 107)
+	public void saldoInicialDiferidoExcluir() {
+		
+		
+		saldoInicialDiferidoExcluir = new SaldoInicialDiferidoExcluir();
+		saldoInicialDiferidoExcluir.beforeClass();
+		saldoInicialDiferidoExcluir.login();
+		saldoInicialDiferidoExcluir.acessarMDR();
+		saldoInicialDiferidoExcluir.excluir();
+		saldoInicialDiferidoExcluir.afterClass();
 
 		System.out.println("-------------------Saldo Inicial Diferido Fin-------------------------");
 

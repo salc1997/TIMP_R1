@@ -1,22 +1,21 @@
-package com.timp.test.MDR.TabelaDeApoioECF;
+package com.timp.test.MDR.DetalheTipoTributo;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriarPO;
+import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheCriarPO;
+import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheFiltroIdPO;
 
-public class TabelaDeApoioECFCriar extends TestBaseSteven {
-
+public class DetalheFiltroId extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaDeApoioECFCriarPO tabelaDeApoioECFCriarPO;
+	DetalheFiltroIdPO detalheFiltroIdPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,11 +23,13 @@ public class TabelaDeApoioECFCriar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaDeApoioECFCriarPO = new TabelaDeApoioECFCriarPO();
+		detalheFiltroIdPO = new DetalheFiltroIdPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		//driver.close();
+	}
  
 	@Test(priority = 0)
 	public void login() {
@@ -44,11 +45,11 @@ public class TabelaDeApoioECFCriar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void filtroId() {
 
-		boolean sucesso = tabelaDeApoioECFCriarPO.criar();
-		assertTrue(sucesso, semAcesso);
+		boolean sucesso = detalheFiltroIdPO.filtro();
+
+		assertTrue(sucesso, Filtros);
 
 	}
-
 }

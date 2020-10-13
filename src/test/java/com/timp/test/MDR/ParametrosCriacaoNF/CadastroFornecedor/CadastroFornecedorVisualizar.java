@@ -1,24 +1,23 @@
-package com.timp.test.MDR.TabelaDeApoioECF;
+package com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor;
 
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-import org.testng.annotations.AfterClass;
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizarPO;
+;
 
-public class TabelaDeApoioECFVisualizar extends TestBaseSteven {
+public class CadastroFornecedorVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaDeApoioECFVisualizarPO tabelaDeApoioECFVisualizarPO;
+	CadastroFornecedorVisualizarPO cadastroFornecedorVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,12 +25,14 @@ public class TabelaDeApoioECFVisualizar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaDeApoioECFVisualizarPO = new TabelaDeApoioECFVisualizarPO();
+		cadastroFornecedorVisualizarPO = new CadastroFornecedorVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,12 +49,12 @@ public class TabelaDeApoioECFVisualizar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void visualizar() {
 
-		ArrayList<Boolean> sucesso = tabelaDeApoioECFVisualizarPO.visualizar();
-		System.out.println(sucesso);
-
+		ArrayList<Boolean> sucesso = cadastroFornecedorVisualizarPO.visualizar();
+		
 		for (int i = 0; i < sucesso.size(); i++) {
-
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
+
 	}
+
 }

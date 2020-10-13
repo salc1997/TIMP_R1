@@ -7,6 +7,7 @@ import com.sap.timp.pageObjectModel.MDR.DeterminacaoAutomaticaDeGuias.Determinac
 import com.timp.test.MDR.DetalheTipoTributo.DetalheCriar;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheEditar;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheExcluir;
+import com.timp.test.MDR.DetalheTipoTributo.DetalheFiltroId;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheVisualizar;
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoCriar;
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoDetalhes;
@@ -43,6 +44,7 @@ import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoDetalhes;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditar;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluir;
+import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoVisualizar;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoCriar;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoDetalhes;
@@ -112,6 +114,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	DetalheEditar detalheTipoTributoEditar;
 	DetalheExcluir detalheTipoTributoExcluir;
 	DetalheVisualizar detalheTipoTributoVisualizar;
+	DetalheFiltroId detalheTipoTributoFiltroId;
 
 	// Determinação de Tipo de Condição
 
@@ -180,6 +183,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	ContasDefaultParaExtemporaneoEditar contasDefaultParaExtemporaneoEditar;
 	ContasDefaultParaExtemporaneoExcluir contasDefaultParaExtemporaneoExcluir;
 	ContasDefaultParaExtemporaneoVisualizar contasDefaultParaExtemporaneoVisualizar;
+	ContasDefaultParaExtemporaneoFiltroID contasDefaultParaExtemporaneoFiltroID;
 
 	// Parâmetros de Contabilização > Contas Default Por Tributo
 
@@ -329,6 +333,19 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		detalheTipoTributoVisualizar.afterClass();
 
 	}
+	
+	@Test(priority = 23)
+	public void detalheTipoTributoFiltroIdDetalhes() {
+
+		detalheTipoTributoFiltroId = new DetalheFiltroId();
+		detalheTipoTributoFiltroId.beforeClass();
+		detalheTipoTributoFiltroId.login();
+		detalheTipoTributoFiltroId.acessarMDR();
+		detalheTipoTributoFiltroId.filtroId();
+		detalheTipoTributoFiltroId.afterClass();
+
+	}
+
 
 	@Test(priority = 3)
 	public void detalheTipoTributoFiscalExcluir() {
@@ -871,6 +888,19 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		contasDefaultParaExtemporaneoDetalhes.afterClass();
 
 	}
+	
+	@Test(priority = 23)
+	public void contasDefaultParaExtemporaneoFiltroID() {
+
+		contasDefaultParaExtemporaneoFiltroID = new ContasDefaultParaExtemporaneoFiltroID();
+		contasDefaultParaExtemporaneoFiltroID.beforeClass();
+		contasDefaultParaExtemporaneoFiltroID.login();
+		contasDefaultParaExtemporaneoFiltroID.acessarMDR();
+		contasDefaultParaExtemporaneoFiltroID.filtroId();
+		contasDefaultParaExtemporaneoFiltroID.afterClass();
+
+	}
+
 
 	@Test(priority = 65)
 	public void contasDefaultParaExtemporaneoExcluir() {

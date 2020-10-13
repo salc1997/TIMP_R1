@@ -1148,8 +1148,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	}
 
 	// 66
-	// Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas
-	// (Credito Fiscal Antecipado)
+	// Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado)
 
 	@Test(priority = 66)
 	public void tabelaReceitasCreditoFiscalAntecipadoCriar() {
@@ -1176,7 +1175,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 68)
 	public void tabelaReceitasCreditoFiscalAntecipadoVisualizar() {
 
 		tabelaReceitasCreditoFiscalAntecipadoVisualizar = new TabelaReceitasCreditoFiscalAntecipadoVisualizar();
@@ -1188,7 +1187,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 69)
 	public void tabelaReceitasCreditoFiscalAntecipadoDetalhes() {
 
 		tabelaReceitasCreditoFiscalAntecipadoDetalhes = new TabelaReceitasCreditoFiscalAntecipadoDetalhes();
@@ -1201,7 +1200,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 24)
+	@Test(priority = 70)
 	public void tabelaReceitasCreditoFiscalAntecipadoExcluir() {
 
 		tabelaReceitasCreditoFiscalAntecipadoExcluir = new TabelaReceitasCreditoFiscalAntecipadoExcluir();
@@ -1211,7 +1210,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.excluir();
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.afterClass();
 
-		System.out.println("-------------------Atividade Fiscal > Atividade Fiscal Fin-------------------------");
+		System.out.println("------------------- Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado) Fin-------------------------");
 	}
 
 

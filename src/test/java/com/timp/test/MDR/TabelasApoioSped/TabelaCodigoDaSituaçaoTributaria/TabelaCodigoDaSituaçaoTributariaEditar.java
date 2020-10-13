@@ -1,6 +1,7 @@
 package com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -50,9 +51,9 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 	public void editar() {
 		
 		
-		String sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
+		boolean sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
 		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+		assertTrue(sucesso, Editar);
 	}
 	
 	

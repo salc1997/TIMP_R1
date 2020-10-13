@@ -1,24 +1,21 @@
-package com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar;
+package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVACriarPO;
 
-import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarEditarPO;
-
-public class InclusaoDeCamposMarEditar extends TestBaseEliel {
-  
-	
+public class ValoresParaMetodoPVACriar extends TestBaseEliel {
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	InclusaoDeCamposMarEditarPO inclusaoDeCamposMarEditarPO;
+	ValoresParaMetodoPVACriarPO valoresParaMetodoPVACriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,14 +23,12 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		inclusaoDeCamposMarEditarPO= new InclusaoDeCamposMarEditarPO();
+		valoresParaMetodoPVACriarPO = new ValoresParaMetodoPVACriarPO();
 	}
 	
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
+	@AfterClass public void afterClass(){ driver.close(); }
 	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,18 +41,14 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
-	public void editar() {
+	public void criar() {
+
 		
+		boolean sucesso = valoresParaMetodoPVACriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 		
-		boolean sucesso =inclusaoDeCamposMarEditarPO.editar();
-		
-		assertTrue(sucesso, Editar);
-	}
-		
-	
-	
+	}			
 	
 }

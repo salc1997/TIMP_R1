@@ -301,11 +301,11 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		System.out.println("-------------------Parâmetros de Oficialização de Livros Fin-------------------------");
 	}
 
-	// 25
+	// 26
 	
 	// Tabela de Apoio ECF
 
-		@Test(priority = 20)
+		@Test(priority = 26)
 		public void tabelaDeApoioECFCriar() {
 
 			System.out.println("-------------------Tabela de Apoio ECF-------------------------");
@@ -319,7 +319,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 21)
+		@Test(priority = 27)
 		public void tabelaDeApoioECFEditar() {
 
 			tabelaDeApoioECFEditar = new TabelaDeApoioECFEditar();
@@ -331,7 +331,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 22)
+		@Test(priority = 28)
 		public void tabelaDeApoioECFVisualizar() {
 
 			tabelaDeApoioECFVisualizar = new TabelaDeApoioECFVisualizar();
@@ -343,7 +343,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 23)
+		@Test(priority = 29)
 		public void tabelaDeApoioECFNovaTabelaAtualizar() {
 			
 			tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
@@ -355,21 +355,33 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 		
-		@Test(priority = 23)
+		@Test(priority = 30)
 		public void tabelaDeApoioECFNovaTabelaNova() {
 			
-			tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
-			tabelaDeApoioECFAtualizar.beforeClass();
-			tabelaDeApoioECFAtualizar.login();
-			tabelaDeApoioECFAtualizar.acessarMDR();
-			tabelaDeApoioECFAtualizar.atualizar();
-			tabelaDeApoioECFAtualizar.afterClass();
+			tabelaDeApoioECFNovaTabelaECF = new TabelaDeApoioECFNovaTabelaECF();
+			tabelaDeApoioECFNovaTabelaECF.beforeClass();
+			tabelaDeApoioECFNovaTabelaECF.login();
+			tabelaDeApoioECFNovaTabelaECF.acessarMDR();
+			tabelaDeApoioECFNovaTabelaECF.novaTabela();
+			tabelaDeApoioECFNovaTabelaECF.afterClass();
+
+		}
+		
+		
+		@Test(priority = 31)
+		public void tabelaDeApoioECFNovaVersaoLeiaute() {
+			
+			tabelaDeApoioECFNovaVersaoLeiaute = new TabelaDeApoioECFNovaVersaoLeiaute();
+			tabelaDeApoioECFNovaVersaoLeiaute.beforeClass();
+			tabelaDeApoioECFNovaVersaoLeiaute.login();
+			tabelaDeApoioECFNovaVersaoLeiaute.acessarMDR();
+			tabelaDeApoioECFNovaVersaoLeiaute.novaTabela();
+			tabelaDeApoioECFNovaVersaoLeiaute.afterClass();
 
 		}
 		
 
-
-		@Test(priority = 24)
+		@Test(priority = 32)
 		public void tabelaDeApoioECFExcluir() {
 
 			tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
@@ -385,6 +397,8 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	
 	
 
-	// 34
+	// 35
+		
+		
 
 }

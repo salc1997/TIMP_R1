@@ -49,7 +49,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluir extends TestBaseSteven
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoExcluirPO.excluir();
 		assertTrue(sucesso, Criar);

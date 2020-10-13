@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="112876" started-at="2020-10-13T00:12:10Z" finished-at="2020-10-13T00:14:03Z">
+  <suite name="Default suite" duration-ms="70753" started-at="2020-10-13T19:50:59Z" finished-at="2020-10-13T19:52:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="112876" started-at="2020-10-13T00:12:10Z" finished-at="2020-10-13T00:14:03Z">
-      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11219" started-at="2020-10-12T18:12:10Z" finished-at="2020-10-12T18:12:21Z">
+    <test name="Default test" duration-ms="70753" started-at="2020-10-13T19:50:59Z" finished-at="2020-10-13T19:52:10Z">
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="10465" started-at="2020-10-13T13:50:59Z" finished-at="2020-10-13T13:51:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@f2f2cc1]" name="login" duration-ms="6491" started-at="2020-10-12T18:12:21Z" finished-at="2020-10-12T18:12:28Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="login" duration-ms="6382" started-at="2020-10-13T13:51:09Z" finished-at="2020-10-13T13:51:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@f2f2cc1]" name="acessarMDR" duration-ms="25233" started-at="2020-10-12T18:12:28Z" finished-at="2020-10-12T18:12:53Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="acessarMDR" duration-ms="23547" started-at="2020-10-13T13:51:16Z" finished-at="2020-10-13T13:51:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@f2f2cc1]" name="excluir" duration-ms="69919" started-at="2020-10-12T18:12:53Z" finished-at="2020-10-12T18:14:03Z">
+        <test-method status="PASS" signature="filtroId()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="filtroId" duration-ms="30344" started-at="2020-10-13T13:51:39Z" finished-at="2020-10-13T13:52:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-12T18:14:03Z" finished-at="2020-10-12T18:14:03Z">
+        </test-method> <!-- filtroId -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-13T13:52:10Z" finished-at="2020-10-13T13:52:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir -->
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoFiltroID -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

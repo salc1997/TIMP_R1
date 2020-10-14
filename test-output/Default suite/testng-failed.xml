@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR4">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID">
         <methods>
-          <include name="tabelaReceitasCreditoFiscalAntecipadoExcluir"/>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR4 -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

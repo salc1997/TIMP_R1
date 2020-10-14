@@ -48,18 +48,12 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void editar() {
-<<<<<<< HEAD
-		
-		
+	
 		boolean sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
-=======
 
-		String sucesso = tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
 
-		assertEquals(sucesso, "edit", visualizaçar);
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	}
 
 }

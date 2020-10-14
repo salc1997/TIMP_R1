@@ -1,23 +1,22 @@
-package com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar;
+package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditarPO;
 
-import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarEditarPO;
+public class ValoresParaMetodoCPLEditar extends TestBaseEliel{
 
-public class InclusaoDeCamposMarEditar extends TestBaseEliel {
-
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	InclusaoDeCamposMarEditarPO inclusaoDeCamposMarEditarPO;
+	ValoresParaMetodoCPLEditarPO valoresParaMetodoCPLEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,14 +24,14 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		inclusaoDeCamposMarEditarPO = new InclusaoDeCamposMarEditarPO();
+		valoresParaMetodoCPLEditarPO = new ValoresParaMetodoCPLEditarPO();
 	}
-
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-
+	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,15 +44,16 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
- 
+	
+
 	@Test(priority = 2)
 	public void editar() {
 
-		
-		boolean sucesso =inclusaoDeCamposMarEditarPO.editar();
+		boolean sucesso = valoresParaMetodoCPLEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
 
-	}
+	}		
 
+	
 }

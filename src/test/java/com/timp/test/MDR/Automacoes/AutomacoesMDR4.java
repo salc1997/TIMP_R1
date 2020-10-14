@@ -220,7 +220,10 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOut
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoCriar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasEditar;
@@ -329,7 +332,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	TabelaReceitasCreditoFiscalAntecipadoCriar tabelaReceitasCreditoFiscalAntecipadoCriar;
 	TabelaReceitasCreditoFiscalAntecipadoEditar tabelaReceitasCreditoFiscalAntecipadoEditar;
-
+	TabelaReceitasCreditoFiscalAntecipadoDetalhes tabelaReceitasCreditoFiscalAntecipadoDetalhes;
+	TabelaReceitasCreditoFiscalAntecipadoVisualizar tabelaReceitasCreditoFiscalAntecipadoVisualizar;
+	TabelaReceitasCreditoFiscalAntecipadoExcluir tabelaReceitasCreditoFiscalAntecipadoExcluir;
+	
+	
 	// Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas
 	// permitidas
 	TabelaReceitasPermitidasCriar tabelaReceitasPermitidasCriar;
@@ -1141,8 +1148,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	}
 
 	// 66
-	// Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas
-	// (Credito Fiscal Antecipado)
+	// Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado)
 
 	@Test(priority = 66)
 	public void tabelaReceitasCreditoFiscalAntecipadoCriar() {
@@ -1166,10 +1172,47 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasCreditoFiscalAntecipadoEditar.acessarMDR();
 		tabelaReceitasCreditoFiscalAntecipadoEditar.editar();
 		tabelaReceitasCreditoFiscalAntecipadoEditar.afterClass();
-		System.out.println(
-				"-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado) Fim-------------------------");
+		
+	}
+
+	@Test(priority = 68)
+	public void tabelaReceitasCreditoFiscalAntecipadoVisualizar() {
+
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar = new TabelaReceitasCreditoFiscalAntecipadoVisualizar();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.login();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.visualizar();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.afterClass();
 
 	}
+
+	@Test(priority = 69)
+	public void tabelaReceitasCreditoFiscalAntecipadoDetalhes() {
+
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes = new TabelaReceitasCreditoFiscalAntecipadoDetalhes();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.login();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.detalhes();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.afterClass();
+
+	}
+
+
+	@Test(priority = 70)
+	public void tabelaReceitasCreditoFiscalAntecipadoExcluir() {
+
+		tabelaReceitasCreditoFiscalAntecipadoExcluir = new TabelaReceitasCreditoFiscalAntecipadoExcluir();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.login();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.excluir();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.afterClass();
+
+		System.out.println("------------------- Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado) Fin-------------------------");
+	}
+
 
 	// 72
 	// Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas

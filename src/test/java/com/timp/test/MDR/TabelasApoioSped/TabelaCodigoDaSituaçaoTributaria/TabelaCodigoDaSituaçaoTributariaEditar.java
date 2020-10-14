@@ -48,11 +48,11 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void editar() {
-	
+
+
 		boolean sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
-
 
 	}
 

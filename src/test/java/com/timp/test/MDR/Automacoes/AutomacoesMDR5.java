@@ -4,6 +4,11 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriarPO;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEVisualizar;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaCriar;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaDetalhes;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaEditar;
@@ -12,6 +17,10 @@ import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMo
 import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalCriar;
 import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalEditar;
 import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluir;
+import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar;
+import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar;
+import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir;
+import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluir;
@@ -27,6 +36,9 @@ import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
 
 
 public class AutomacoesMDR5 extends TestBaseSteven {
@@ -45,6 +57,13 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	CadastroNotaFiscalCriar cadastroNotaFiscalCriar;
 	CadastroNotaFiscalEditar cadastroNotaFiscalEditar;
 	CadastroNotaFiscalExcluir cadastroNotaFiscalExcluir;
+	
+	// Parâmetros de criação de NF > Cadastro de Fornecedor
+	
+	CadastroFornecedorCriar cadastroFornecedorcerCriar;
+	CadastroFornecedorEditar cadastroFornecedorEditar;
+	CadastroFornecedorVisualizar cadastroFornecedorVisualizar;
+	CadastroFornecedorExcluir cadastroFornecedorExcluir;
 
 	// Ocorrência Fiscal > Status de Ocorrência Fiscal
 
@@ -71,9 +90,24 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	TabelaDeApoioECFNovaVersaoLeiaute tabelaDeApoioECFNovaVersaoLeiaute;
 	
 	
+	//Controle de Crédito Tributário > Status para BCE
+	
+	StatusParaBCECriar statusParaBCECriar;
+	StatusParaBCEEditar statusParaBCEEditar;
+	StatusParaBCEDetalhes statusParaBCEDetalhes;
+	StatusParaBCEVisualizar statusParaBCEVisualizar;
+	StatusParaBCEExcluir statusParaBCEExcluir;
+	
+	//Valor Adicionado > Municípios
+	
+	MunicipioCriar municipioCriar;
+	MunicipioVisualizar municipioVisualizar;
+	MunicipioExcluir municipioExcluir;
 	
 	
-
+	
+	
+	
 	// 0
 
 	// Determinação de Relevância de Tarefa por Motivo de Reabertura > Cadastro de
@@ -301,11 +335,11 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		System.out.println("-------------------Parâmetros de Oficialização de Livros Fin-------------------------");
 	}
 
-	// 25
+	// 26
 	
 	// Tabela de Apoio ECF
 
-		@Test(priority = 20)
+		@Test(priority = 26)
 		public void tabelaDeApoioECFCriar() {
 
 			System.out.println("-------------------Tabela de Apoio ECF-------------------------");
@@ -319,7 +353,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 21)
+		@Test(priority = 27)
 		public void tabelaDeApoioECFEditar() {
 
 			tabelaDeApoioECFEditar = new TabelaDeApoioECFEditar();
@@ -331,7 +365,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 22)
+		@Test(priority = 28)
 		public void tabelaDeApoioECFVisualizar() {
 
 			tabelaDeApoioECFVisualizar = new TabelaDeApoioECFVisualizar();
@@ -343,7 +377,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 23)
+		@Test(priority = 29)
 		public void tabelaDeApoioECFNovaTabelaAtualizar() {
 			
 			tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
@@ -355,21 +389,33 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 		
-		@Test(priority = 23)
+		@Test(priority = 30)
 		public void tabelaDeApoioECFNovaTabelaNova() {
 			
-			tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
-			tabelaDeApoioECFAtualizar.beforeClass();
-			tabelaDeApoioECFAtualizar.login();
-			tabelaDeApoioECFAtualizar.acessarMDR();
-			tabelaDeApoioECFAtualizar.atualizar();
-			tabelaDeApoioECFAtualizar.afterClass();
+			tabelaDeApoioECFNovaTabelaECF = new TabelaDeApoioECFNovaTabelaECF();
+			tabelaDeApoioECFNovaTabelaECF.beforeClass();
+			tabelaDeApoioECFNovaTabelaECF.login();
+			tabelaDeApoioECFNovaTabelaECF.acessarMDR();
+			tabelaDeApoioECFNovaTabelaECF.novaTabela();
+			tabelaDeApoioECFNovaTabelaECF.afterClass();
+
+		}
+		
+		
+		@Test(priority = 31)
+		public void tabelaDeApoioECFNovaVersaoLeiaute() {
+			
+			tabelaDeApoioECFNovaVersaoLeiaute = new TabelaDeApoioECFNovaVersaoLeiaute();
+			tabelaDeApoioECFNovaVersaoLeiaute.beforeClass();
+			tabelaDeApoioECFNovaVersaoLeiaute.login();
+			tabelaDeApoioECFNovaVersaoLeiaute.acessarMDR();
+			tabelaDeApoioECFNovaVersaoLeiaute.novaTabela();
+			tabelaDeApoioECFNovaVersaoLeiaute.afterClass();
 
 		}
 		
 
-
-		@Test(priority = 24)
+		@Test(priority = 32)
 		public void tabelaDeApoioECFExcluir() {
 
 			tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
@@ -385,6 +431,182 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	
 	
 
-	// 34
+	// 35
+		
+		//Controle de Crédito Tributário > Status para BCE
+
+
+		@Test(priority = 35)
+		public void statusParaBCECriar() {
+
+			System.out.println("-------------------Controle de Crédito Tributário > Status para BCE-------------------------");
+
+			statusParaBCECriar = new StatusParaBCECriar();
+			statusParaBCECriar.beforeClass();
+			statusParaBCECriar.login();
+			statusParaBCECriar.acessarMDR();
+			statusParaBCECriar.criar();
+			statusParaBCECriar.afterClass();
+
+		}
+
+		@Test(priority = 36)
+		public void statusParaBCEEditar() {
+
+			statusParaBCEEditar = new StatusParaBCEEditar();
+			statusParaBCEEditar.beforeClass();
+			statusParaBCEEditar.login();
+			statusParaBCEEditar.acessarMDR();
+			statusParaBCEEditar.editar();
+			statusParaBCEEditar.afterClass();
+
+		}
+
+		@Test(priority = 37)
+		public void statusParaBCEVisualizar() {
+
+			statusParaBCEVisualizar = new StatusParaBCEVisualizar();
+			statusParaBCEVisualizar.beforeClass();
+			statusParaBCEVisualizar.login();
+			statusParaBCEVisualizar.acessarMDR();
+			statusParaBCEVisualizar.visualizar();
+			statusParaBCEVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 38)
+		public void statusParaBCEDetalhes() {
+
+			statusParaBCEDetalhes = new StatusParaBCEDetalhes();
+			statusParaBCEDetalhes.beforeClass();
+			statusParaBCEDetalhes.login();
+			statusParaBCEDetalhes.acessarMDR();
+			statusParaBCEDetalhes.detalhes();
+			statusParaBCEDetalhes.afterClass();
+
+		}
+
+
+		@Test(priority = 39)
+		public void statusParaBCEExcluir() {
+
+			statusParaBCEExcluir = new StatusParaBCEExcluir();
+			statusParaBCEExcluir.beforeClass();
+			statusParaBCEExcluir.login();
+			statusParaBCEExcluir.acessarMDR();
+			statusParaBCEExcluir.excluir();
+			statusParaBCEExcluir.afterClass();
+
+			System.out.println("-------------------Controle de Crédito Tributário > Status para BCE Fin-------------------------");
+		}
+
+		//41
+		
+		// municipios Fiscais > municipios Fiscais
+
+		@Test(priority = 20)
+		public void municipioCriar() {
+
+			System.out.println("-------------------municipio Fiscal > municipio Fiscal-------------------------");
+
+			municipioCriar = new MunicipioCriar();
+			municipioCriar.beforeClass();
+			municipioCriar.login();
+			municipioCriar.acessarMDR();
+			municipioCriar.criar();
+			municipioCriar.afterClass();
+
+		}
+
+
+
+		@Test(priority = 22)
+		public void municipioVisualizar() {
+
+			municipioVisualizar = new MunicipioVisualizar();
+			municipioVisualizar.beforeClass();
+			municipioVisualizar.login();
+			municipioVisualizar.acessarMDR();
+			municipioVisualizar.visualizar();
+			municipioVisualizar.afterClass();
+
+		}
+
+
+		@Test(priority = 24)
+		public void municipioExcluir() {
+
+			municipioExcluir = new MunicipioExcluir();
+			municipioExcluir.beforeClass();
+			municipioExcluir.login();
+			municipioExcluir.acessarMDR();
+			municipioExcluir.excluir();
+			municipioExcluir.afterClass();
+
+			System.out.println("-------------------municipio Fiscal > municipio Fiscal Fin-------------------------");
+		}
+
+		
+		//48
+		
+		// cadastroFornecedorcers Fiscais > cadastroFornecedorcers Fiscais
+
+		@Test(priority = 20)
+		public void cadastroFornecedorcerCriar() {
+
+			System.out.println("-------------------cadastroFornecedorcer Fiscal > cadastroFornecedorcer Fiscal-------------------------");
+
+			cadastroFornecedorcerCriar = new CadastroFornecedorCriar();
+			cadastroFornecedorcerCriar.beforeClass();
+			cadastroFornecedorcerCriar.login();
+			cadastroFornecedorcerCriar.acessarMDR();
+			cadastroFornecedorcerCriar.criar();
+			cadastroFornecedorcerCriar.afterClass();
+
+		}
+
+		@Test(priority = 21)
+		public void cadastroFornecedorcerEditar() {
+
+			cadastroFornecedorEditar = new CadastroFornecedorEditar();
+			cadastroFornecedorEditar.beforeClass();
+			cadastroFornecedorEditar.login();
+			cadastroFornecedorEditar.acessarMDR();
+			cadastroFornecedorEditar.editar();
+			cadastroFornecedorEditar.afterClass();
+
+		}
+
+		@Test(priority = 22)
+		public void cadastroFornecedorcerVisualizar() {
+
+			cadastroFornecedorVisualizar = new CadastroFornecedorVisualizar();
+			cadastroFornecedorVisualizar.beforeClass();
+			cadastroFornecedorVisualizar.login();
+			cadastroFornecedorVisualizar.acessarMDR();
+			cadastroFornecedorVisualizar.visualizar();
+			cadastroFornecedorVisualizar.afterClass();
+
+		}
+
+
+
+
+		@Test(priority = 24)
+		public void cadastroFornecedorcerExcluir() {
+
+			cadastroFornecedorExcluir = new CadastroFornecedorExcluir();
+			cadastroFornecedorExcluir.beforeClass();
+			cadastroFornecedorExcluir.login();
+			cadastroFornecedorExcluir.acessarMDR();
+			cadastroFornecedorExcluir.excluir();
+			cadastroFornecedorExcluir.afterClass();
+
+			System.out.println("-------------------cadastroFornecedorcer Fiscal > cadastroFornecedorcer Fiscal Fin-------------------------");
+		}
+
+		
+		
+		
 
 }

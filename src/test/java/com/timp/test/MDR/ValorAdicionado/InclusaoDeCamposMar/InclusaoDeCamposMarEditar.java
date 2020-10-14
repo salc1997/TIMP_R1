@@ -49,11 +49,9 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		
 		boolean sucesso =inclusaoDeCamposMarEditarPO.editar();
 		
 		assertTrue(sucesso, Editar);
 
 	}
-
 }

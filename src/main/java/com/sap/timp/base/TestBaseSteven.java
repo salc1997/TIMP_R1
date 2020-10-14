@@ -72,7 +72,7 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tc2);
 
 		return driver;
 	}
@@ -211,6 +211,19 @@ public class TestBaseSteven {
 		Date fecha = new Date();
 
 		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(-1));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
+	
+
+	public String fechaManana() {
+
+		Date fecha = new Date();
+
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+1));
 
 		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
 

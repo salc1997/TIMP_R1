@@ -143,13 +143,14 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 		opcionCheckboxDiferenteTodos.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"tipoTributo\")]/div/div[2]/div/div/div[2]/input", "disabled", "");
+		/*attributeToBeXpath("//div[contains(@class, \"tipoTributo\")]/div/div[2]/div/div/div[2]/input", "disabled", "");
 		sleep(2000);
 		inputTipoTributo.click();		
 		sleep(2000);
 		opcionCheckboxDiferenteTodos.click();
 		body.click();
-		sleep(2000);
+		*/
+		//sleep(2000);
 		
 		sleep(2000);
 		inputAtividadeFiscal.click();		

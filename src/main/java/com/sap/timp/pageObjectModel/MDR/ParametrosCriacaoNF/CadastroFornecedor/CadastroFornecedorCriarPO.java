@@ -35,6 +35,9 @@ public class CadastroFornecedorCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"Inicial\")]")
 	public WebElement dataVigencia;
 	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Final\")]")
+	public WebElement dataFinal;
+	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao;
 	
@@ -132,6 +135,7 @@ public class CadastroFornecedorCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		dataVigencia.sendKeys(fechaActual());
+		dataFinal.sendKeys(fechaManana());
 		
 		
 		sleep(2000);

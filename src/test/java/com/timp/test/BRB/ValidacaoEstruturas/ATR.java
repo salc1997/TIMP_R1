@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.ATRPO;
 
 public class ATR extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ATRPO aTRPO;

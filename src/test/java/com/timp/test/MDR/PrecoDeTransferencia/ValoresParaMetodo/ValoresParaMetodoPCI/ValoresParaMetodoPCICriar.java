@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCICriarPO;
 
 public class ValoresParaMetodoPCICriar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPCICriarPO valoresParaMetodoPCICriarPO;
@@ -25,9 +25,11 @@ public class ValoresParaMetodoPCICriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPCICriarPO = new ValoresParaMetodoPCICriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,11 +47,9 @@ public class ValoresParaMetodoPCICriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = valoresParaMetodoPCICriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
 
-	
+	}
+
 }

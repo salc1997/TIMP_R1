@@ -45,12 +45,12 @@ public class InclusaoDeCamposMarEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
- 
+
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso =inclusaoDeCamposMarEditarPO.editar();
-		
+		boolean sucesso = inclusaoDeCamposMarEditarPO.editar();
+
 		assertTrue(sucesso, Editar);
 
 	}

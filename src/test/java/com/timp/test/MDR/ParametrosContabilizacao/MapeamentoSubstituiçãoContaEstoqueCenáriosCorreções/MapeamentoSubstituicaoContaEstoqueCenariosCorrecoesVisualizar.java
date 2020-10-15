@@ -31,7 +31,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar exten
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

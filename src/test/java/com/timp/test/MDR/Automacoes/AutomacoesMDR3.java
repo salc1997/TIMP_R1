@@ -116,7 +116,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeC
 public class AutomacoesMDR3 extends TestBaseSteven {
 
 	// Tabelas de Apoio do Sped > Classificação De Contribuentes Do IPI
- 
+
 	ClassificaçaoDeContribuintesDoIPICriar classificaçaoDeContribuintesDoIPICriar;
 	ClassificaçaoDeContribuintesDoIPIDetalhes classificaçaoDeContribuintesDoIPIDetalhes;
 	ClassificaçaoDeContribuintesDoIPIEditar classificaçaoDeContribuintesDoIPIEditar;

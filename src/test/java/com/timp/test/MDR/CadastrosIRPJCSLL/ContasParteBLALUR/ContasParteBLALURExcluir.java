@@ -17,7 +17,7 @@ public class ContasParteBLALURExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasParteBLALURExcluirPO contasParteBLALURExcluirPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

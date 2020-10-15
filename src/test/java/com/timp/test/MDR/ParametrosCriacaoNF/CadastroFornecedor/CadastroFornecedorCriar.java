@@ -30,7 +30,7 @@ public class CadastroFornecedorCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroFornecedorCriarPO = new CadastroFornecedorCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

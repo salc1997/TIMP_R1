@@ -30,7 +30,7 @@ public class CadastroNotaFiscalEditar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroNotaFiscalEditarPO = new CadastroNotaFiscalEditarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class AtivaçaoParaMunicipioExcluir extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtivaçaoParaMunicipioExcluirPO ativaçaoParaMunicipioExcluirPO;

@@ -31,7 +31,7 @@ public class ProdutosSCANCDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		produtosSCANCDetalhesPO = new ProdutosSCANCDetalhesPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

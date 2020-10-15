@@ -16,7 +16,7 @@ public class InstituicaoCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InstitucaoCriarPO institucaoCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

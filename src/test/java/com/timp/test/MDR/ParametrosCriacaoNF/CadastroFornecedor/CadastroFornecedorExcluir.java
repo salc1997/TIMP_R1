@@ -31,7 +31,7 @@ public class CadastroFornecedorExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroFornecedorExcluirPO = new CadastroFornecedorExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

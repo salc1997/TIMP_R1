@@ -30,7 +30,7 @@ public class SequenciaVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaVisualizarPO = new SequenciaVisualizarPO();
 	}
-  
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -10,8 +10,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizarPO;
-;
+import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizarPO;;
 
 public class CadastroFornecedorVisualizar extends TestBaseSteven {
 
@@ -27,7 +26,7 @@ public class CadastroFornecedorVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroFornecedorVisualizarPO = new CadastroFornecedorVisualizarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -50,7 +49,7 @@ public class CadastroFornecedorVisualizar extends TestBaseSteven {
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = cadastroFornecedorVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}

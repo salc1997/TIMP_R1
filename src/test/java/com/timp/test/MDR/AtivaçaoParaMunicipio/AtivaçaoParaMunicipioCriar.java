@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
- 
+
 public class AtivaçaoParaMunicipioCriar extends TestBaseEliel {
 
 	LoginTC loginTC;

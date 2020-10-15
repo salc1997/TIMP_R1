@@ -30,7 +30,7 @@ public class ParametrosOficializacaoLivrosExcluir extends TestBaseSteven {
 		parametrosOficializacaoLivrosExcluirPO = new ParametrosOficializacaoLivrosExcluirPO();
 
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

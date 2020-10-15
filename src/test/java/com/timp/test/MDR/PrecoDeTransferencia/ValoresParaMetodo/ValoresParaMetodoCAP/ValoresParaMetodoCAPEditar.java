@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditarPO;
 
 public class ValoresParaMetodoCAPEditar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoCAPEditarPO valoresParaMetodoCAPEditarPO;
@@ -25,12 +25,12 @@ public class ValoresParaMetodoCAPEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoCAPEditarPO = new ValoresParaMetodoCAPEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,17 +43,14 @@ public class ValoresParaMetodoCAPEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = valoresParaMetodoCAPEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
+	}
 
-	
-	
 }

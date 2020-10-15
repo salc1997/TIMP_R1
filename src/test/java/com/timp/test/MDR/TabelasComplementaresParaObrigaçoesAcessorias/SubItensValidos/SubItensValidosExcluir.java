@@ -25,7 +25,7 @@ public class SubItensValidosExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		subItensValidosExcluirPO = new SubItensValidosExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

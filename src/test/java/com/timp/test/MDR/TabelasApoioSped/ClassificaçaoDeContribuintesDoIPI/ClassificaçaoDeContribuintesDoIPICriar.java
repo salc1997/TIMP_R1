@@ -27,7 +27,7 @@ public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		classificaçaoDeContribuintesDoIPICriarPO = new ClassificaçaoDeContribuintesDoIPICriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

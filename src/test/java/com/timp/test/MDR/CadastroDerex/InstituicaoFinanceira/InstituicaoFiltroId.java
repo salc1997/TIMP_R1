@@ -1,7 +1,5 @@
-package com.timp.test.MDR.TEST;
+package com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira;
 
-import static org.junit.Assert.assertTrue;
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -11,14 +9,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TESTE.AntecipacaoCriarPO;
-import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
+import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoFiltroIdPO;
+import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheCriarPO;
+import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheFiltroIdPO;
 
-public class AntecipacaoCriar extends TestBaseSteven {
-
+public class InstituicaoFiltroId extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	AntecipacaoCriarPO antecipacaoCriarPO;
+	InstituicaoFiltroIdPO instituicaoFiltroIdPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,12 +24,14 @@ public class AntecipacaoCriar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		antecipacaoCriarPO = new AntecipacaoCriarPO();
+		instituicaoFiltroIdPO = new InstituicaoFiltroIdPO();
 	}
- 
-	/*
-	 * @AfterClass public void afterClass() { driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		// driver.close();
+	}
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,12 +46,11 @@ public class AntecipacaoCriar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void filtroId() {
 
-		boolean sucesso = antecipacaoCriarPO.criarAntecipacao();
+		boolean sucesso = instituicaoFiltroIdPO.filtro();
 
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Filtros);
 
 	}
-
 }

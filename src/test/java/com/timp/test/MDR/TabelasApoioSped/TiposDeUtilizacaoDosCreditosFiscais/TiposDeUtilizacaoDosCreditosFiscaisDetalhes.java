@@ -26,7 +26,7 @@ public class TiposDeUtilizacaoDosCreditosFiscaisDetalhes extends TestBaseEliel {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeUtilizacaoDosCreditosFiscaisDetalhesPO = new TiposDeUtilizacaoDosCreditosFiscaisDetalhesPO();
-	} 
+	}
 
 	@AfterClass
 	public void afterClass() {

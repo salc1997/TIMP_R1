@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoCriarPO;
 
 public class CadastroCondicaoCriar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondicaoCriarPO cadastroCondicaoCriarPO;

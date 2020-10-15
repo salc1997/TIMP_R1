@@ -29,7 +29,7 @@ public class AjusteEInformaçoesDeValoresVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		ajusteEInformaçoesDeValoresVisualizarPO = new AjusteEInformaçoesDeValoresVisualizarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

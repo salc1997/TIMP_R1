@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.FiltroColunasPO;
 
 public class FiltroColunas extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	FiltroColunasPO filtroColunasPO;

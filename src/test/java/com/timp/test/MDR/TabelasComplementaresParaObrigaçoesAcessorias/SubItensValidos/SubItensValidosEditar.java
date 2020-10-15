@@ -25,7 +25,7 @@ public class SubItensValidosEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		subItensValidosEditarPO = new SubItensValidosEditarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

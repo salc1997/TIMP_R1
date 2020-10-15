@@ -27,7 +27,7 @@ public class ModeloDeApuracaoTPDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		modeloDeApuracaoTPDetalhesPO = new ModeloDeApuracaoTPDetalhesPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

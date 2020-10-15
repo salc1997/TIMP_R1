@@ -28,7 +28,7 @@ public class EstornoCreditoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		estornoCreditoCriarPO = new EstornoCreditoCriarPO();
 
-	} 
+	}
 
 	@AfterClass
 	public void afterClass() {

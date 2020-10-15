@@ -30,7 +30,7 @@ public class CodigoTipoCreditoVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoTipoCreditoVisualizarPO = new CodigoTipoCreditoVisualizarPO();
 	}
-  
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

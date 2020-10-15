@@ -15,7 +15,7 @@ public class InstituicaoExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InstitucaoEliminarPO institucaoEliminarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

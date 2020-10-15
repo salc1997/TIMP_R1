@@ -1,5 +1,9 @@
 package com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseFernando;
@@ -7,11 +11,6 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
 
-import org.testng.annotations.BeforeClass;
-
-import static org.testng.Assert.assertTrue;
-
-import org.testng.annotations.AfterClass;
 
 public class AssociaçãoCriar extends TestBaseFernando{
 	LoginTC loginTC;
@@ -24,7 +23,6 @@ public class AssociaçãoCriar extends TestBaseFernando{
 	  loginTC = new LoginTC();
 	  accesarMDR = new AcessarMDRPO();
 	  associaçãoCriarPO = new AssociaçãoCriarPO();
-	
   }
 
   @AfterClass
@@ -38,7 +36,7 @@ public class AssociaçãoCriar extends TestBaseFernando{
   
   @Test(priority = 1)
   public void mdrEntrar() {
-	  boolean sucesso = accesarMDR.acessarMDR();
+	 accesarMDR.acessarMDR();
 
   }
   

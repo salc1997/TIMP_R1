@@ -29,7 +29,7 @@ public class FatorCreditamentoCriar extends TestBaseKathy {
 	@AfterClass
 	public void afterClass() {
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

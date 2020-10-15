@@ -25,7 +25,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 public class paginacion extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	PaginacionPO paginacionOP;

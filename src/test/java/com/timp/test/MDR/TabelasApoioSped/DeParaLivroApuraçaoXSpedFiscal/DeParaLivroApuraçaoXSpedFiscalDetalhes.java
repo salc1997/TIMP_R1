@@ -27,7 +27,7 @@ public class DeParaLivroApuraçaoXSpedFiscalDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		deParaLivroApuraçaoXSpedFiscalDetalhesPO = new DeParaLivroApuraçaoXSpedFiscalDetalhesPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

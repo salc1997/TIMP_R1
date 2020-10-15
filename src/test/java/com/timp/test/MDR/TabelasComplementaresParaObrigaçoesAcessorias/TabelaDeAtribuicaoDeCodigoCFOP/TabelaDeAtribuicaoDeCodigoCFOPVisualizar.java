@@ -27,7 +27,7 @@ public class TabelaDeAtribuicaoDeCodigoCFOPVisualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPVisualizarPO = new TabelaDeAtribuicaoDeCodigoCFOPVisualizarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -27,7 +27,7 @@ public class TabelaCodigoReceitaExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasExcluirPO = new TabelaCodigoReceitasExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

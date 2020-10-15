@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluirPO;
 
-public class ValoresParaMetodoPVAExcluir extends TestBaseEliel{
+public class ValoresParaMetodoPVAExcluir extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPVAExcluirPO valoresParaMetodoPVAExcluirPO;
@@ -26,9 +25,11 @@ public class ValoresParaMetodoPVAExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPVAExcluirPO = new ValoresParaMetodoPVAExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,10 +47,9 @@ public class ValoresParaMetodoPVAExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = valoresParaMetodoPVAExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
+
+	}
+
 }

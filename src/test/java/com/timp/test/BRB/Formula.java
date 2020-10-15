@@ -31,7 +31,7 @@ import net.bytebuddy.dynamic.DynamicType.Builder.FieldDefinition.Valuable;
 import net.bytebuddy.matcher.EqualityMatcher;
 
 public class Formula extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	FormulaPO formulaPO;

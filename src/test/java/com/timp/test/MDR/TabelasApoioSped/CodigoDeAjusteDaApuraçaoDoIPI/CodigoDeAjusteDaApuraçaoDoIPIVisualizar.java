@@ -32,7 +32,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIVisualizar extends TestBaseSteven {
 		codigoDeAjusteDaApuraçaoDoIPIVisualizarPO = new CodigoDeAjusteDaApuraçaoDoIPIVisualizarPO();
 
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -29,7 +29,7 @@ public class ProductosSCANCExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		produtosSCANCExcluirPO = new ProdutosSCANCExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

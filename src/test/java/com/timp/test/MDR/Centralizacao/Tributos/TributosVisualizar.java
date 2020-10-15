@@ -38,7 +38,7 @@ public class TributosVisualizar extends TestBaseEliel {
 	public void login() {
 		loginTC.login();
 	}
- 
+
 	@Test(priority = 1)
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();

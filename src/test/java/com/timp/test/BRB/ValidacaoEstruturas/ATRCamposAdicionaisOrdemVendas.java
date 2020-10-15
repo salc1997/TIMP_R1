@@ -18,7 +18,7 @@ public class ATRCamposAdicionaisOrdemVendas extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ATRCamposAdicionaisOrdemVendasPO aTRCamposAdicionaisOrdemVendasPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

@@ -31,7 +31,7 @@ public class SCANCDistribuidorasExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		sCANCDistribuidoraExcluirPO = new SCANCDistribuidoraExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

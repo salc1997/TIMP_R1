@@ -32,7 +32,7 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,9 +49,8 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
+		boolean sucesso = tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
 
-		boolean sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
-		
 		assertTrue(sucesso, Editar);
 
 	}

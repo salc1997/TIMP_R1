@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.ConciliacaoCIAPPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.NFsEntradaSaidaeDadosComplementaresPO;
- 
+
 public class ConciliacaoCIAP extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

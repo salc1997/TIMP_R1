@@ -28,7 +28,7 @@ public class InformaçoesAdicionaisExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		informaçoesAdicionaisExcluirPO = new InformaçoesAdicionaisExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

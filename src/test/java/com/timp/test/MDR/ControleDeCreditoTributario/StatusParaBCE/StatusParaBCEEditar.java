@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriarPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditarPO;
 
-
-public class StatusParaBCEEditar extends TestBaseSteven{
+public class StatusParaBCEEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusParaBCEEditarPO statusParaBCEEditarPO;
@@ -29,7 +28,7 @@ public class StatusParaBCEEditar extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.PublicoYPRivadoPO;
 
 public class PublicoYPrivado extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	PublicoYPRivadoPO publicoYPRivadoPO;

@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditarPO;
 
-public class ValoresParaMetodoPCIEditar extends TestBaseEliel{
+public class ValoresParaMetodoPCIEditar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPCIEditarPO valoresParaMetodoPCIEditarPO;
@@ -26,12 +25,12 @@ public class ValoresParaMetodoPCIEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoPCIEditarPO = new ValoresParaMetodoPCIEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,14 +43,13 @@ public class ValoresParaMetodoPCIEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = valoresParaMetodoPCIEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
+	}
 }

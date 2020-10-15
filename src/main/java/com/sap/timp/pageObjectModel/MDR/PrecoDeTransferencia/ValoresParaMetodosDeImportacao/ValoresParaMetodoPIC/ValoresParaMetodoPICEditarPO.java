@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI;
+package com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,18 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class ValoresParaMetodoPCIEditarPO extends TestBaseEliel {
+public class ValoresParaMetodoPICEditarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//span[text()=\"Preço de Transferência\"]")
 	public WebElement precodetransferencia;
 	
-	@FindBy(xpath = "//span[text()=\" Valores para Métodos\"]")
-	public WebElement valoresparametodos;
+	@FindBy(xpath = "//span[text()=\" Valores para Métodos de Importação\"]")
+	public WebElement valoresparametodosdeimportacao;
 	
-	@FindBy(xpath = "//span[text()=\" Valores para Método PCI\"]")
-	public WebElement valorespci;
+	@FindBy(xpath = "//span[text()=\" Valores para Método PIC\"]")
+	public WebElement valorespic;
 	
-	@FindBy(xpath = "//span[text()=\"Novo  Valores para Método PCI\"]")
+	@FindBy(xpath = "//span[text()=\"Novo  Valores para Método PIC\"]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
@@ -48,26 +48,35 @@ public class ValoresParaMetodoPCIEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Quantidade Importada\"]")
-	public WebElement quantidade;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Data Conversão\"]")
+	public WebElement dataconversao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Praticado\"]")
-	public WebElement precopraticado;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Cotação Convertida\"]")
+	public WebElement cotacaoconvertida;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Data Importação\"]")
-	public WebElement dataimportacao;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Médio\"]")
+	public WebElement precomedio;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Praticado Ajustado\"]")
-	public WebElement precopraticadoajustado;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Margem Divergência\"]")
+	public WebElement margemdivergencia;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Parâmetro\"]")
-	public WebElement precoparametro;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Praticado CMV\"]")
+	public WebElement precopraticadocmv;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Variação Cambial\"]")
-	public WebElement variacaocambial;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Praticado Dep\"]")
+	public WebElement precopraticadodep;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Parâmetro Ajustado\"]")
-	public WebElement precoparametroajustado;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Parâmetro CMV\"]")
+	public WebElement precoparametrocmv;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Parâmetro Dep\"]")
+	public WebElement precoparametrodep;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Qtde CMV\"]")
+	public WebElement qtdecmv;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher  Qtde Dep\"]")
+	public WebElement qtdedep;
 	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Data Inicial\"]")
@@ -80,7 +89,7 @@ public class ValoresParaMetodoPCIEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição\"]")
 	public WebElement descricao;
 	
-	public ValoresParaMetodoPCIEditarPO() {
+	public ValoresParaMetodoPICEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -91,19 +100,17 @@ public class ValoresParaMetodoPCIEditarPO extends TestBaseEliel {
 		precodetransferencia.click();
 		sleep(2000);
 		
-		valoresparametodos.click();
+		valoresparametodosdeimportacao.click();
 		
 		sleep(2000);
 		
-		valorespci.click();
+		valorespic.click();
 		
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(primeira);
-		sleep(2000);
 		primeira.click();
 		
 		sleep(2000);
@@ -122,9 +129,8 @@ public class ValoresParaMetodoPCIEditarPO extends TestBaseEliel {
 		editar.click();
 		
 		sleep(2000);
-		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 		
 		String valor = datainicial.getAttribute("value");
 

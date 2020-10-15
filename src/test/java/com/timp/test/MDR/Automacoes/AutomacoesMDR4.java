@@ -143,6 +143,14 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCICriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditar;
@@ -159,6 +167,10 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluir;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACEditar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACExcluir;
@@ -446,11 +458,26 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ValoresParaMetodoPVAEditar valoresParaMetodoPVAEditar;
 		ValoresParaMetodoPVAExcluir valoresParaMetodoPVAExcluir;
 		
-
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL
+		ValoresParaMetodoCPLCriar valoresParaMetodoCPLCriar;
+		ValoresParaMetodoCPLEditar valoresParaMetodoCPLEditar;
+		ValoresParaMetodoCPLDetalhes valoresParaMetodoCPLDetalhes;
+		ValoresParaMetodoCPLExcluir valoresParaMetodoCPLExcluir;
 	
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI
+		ValoresParaMetodoPCICriar valoresParaMetodoPCICriar;
+		ValoresParaMetodoPCIEditar valoresParaMetodoPCIEditar;
+		ValoresParaMetodoPCIDetalhes valoresParaMetodoPCIDetalhes;
+		ValoresParaMetodoPCIExcluir valoresParaMetodoPCIExcluir;
 	
-
-
+	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PIC
+		ValoresParaMetodoPICCriar valoresParaMetodoPICCriar;
+		ValoresParaMetodoPICDetalhes valoresParaMetodoPICDetalhes;
+		ValoresParaMetodoPICEditar valoresParaMetodoPICEditar;
+		ValoresParaMetodoPICExcluir valoresParaMetodoPICExcluir;
+		
+		
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
@@ -2130,7 +2157,156 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	
 	//190
 
-
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL
 	
+		@Test(priority = 190)
+		public void valoresParaMetodoCPLCriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CPL-------------------------");
+			valoresParaMetodoCPLCriar = new ValoresParaMetodoCPLCriar();
+			valoresParaMetodoCPLCriar.beforeClass();
+			valoresParaMetodoCPLCriar.login();
+			valoresParaMetodoCPLCriar.acessarMDR();
+			valoresParaMetodoCPLCriar.criar();
+			valoresParaMetodoCPLCriar.afterClass();
 
+		}
+	
+		@Test(priority = 191)
+		public void valoresParaMetodoCPLEditar() {
+			valoresParaMetodoCPLEditar = new ValoresParaMetodoCPLEditar();
+			valoresParaMetodoCPLEditar.beforeClass();
+			valoresParaMetodoCPLEditar.login();
+			valoresParaMetodoCPLEditar.acessarMDR();
+			valoresParaMetodoCPLEditar.editar();
+			valoresParaMetodoCPLEditar.afterClass();
+
+		}
+		
+		@Test(priority = 192)
+		public void valoresParaMetodoCPLDetalhes() {
+			valoresParaMetodoCPLDetalhes = new ValoresParaMetodoCPLDetalhes();
+			valoresParaMetodoCPLDetalhes.beforeClass();
+			valoresParaMetodoCPLDetalhes.login();
+			valoresParaMetodoCPLDetalhes.acessarMDR();
+			valoresParaMetodoCPLDetalhes.Detalhes();
+			valoresParaMetodoCPLDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 193)
+		public void valoresParaMetodoCPLExcluir() {
+			valoresParaMetodoCPLExcluir = new ValoresParaMetodoCPLExcluir();
+			valoresParaMetodoCPLExcluir.beforeClass();
+			valoresParaMetodoCPLExcluir.login();
+			valoresParaMetodoCPLExcluir.acessarMDR();
+			valoresParaMetodoCPLExcluir.excluir();
+			valoresParaMetodoCPLExcluir.afterClass();
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CPL Fim-------------------------");
+			
+		}
+	//197
+	//Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI	
+		
+		@Test(priority = 197)
+		public void valoresParaMetodoPCICriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI-------------------------");
+			valoresParaMetodoPCICriar = new ValoresParaMetodoPCICriar();
+			valoresParaMetodoPCICriar.beforeClass();
+			valoresParaMetodoPCICriar.login();
+			valoresParaMetodoPCICriar.acessarMDR();
+			valoresParaMetodoPCICriar.criar();
+			valoresParaMetodoPCICriar.afterClass();
+
+		}
+		
+		@Test(priority = 198)
+		public void valoresParaMetodoPCIEditar() {
+			valoresParaMetodoPCIEditar = new ValoresParaMetodoPCIEditar();
+			valoresParaMetodoPCIEditar.beforeClass();
+			valoresParaMetodoPCIEditar.login();
+			valoresParaMetodoPCIEditar.acessarMDR();
+			valoresParaMetodoPCIEditar.editar();
+			valoresParaMetodoPCIEditar.afterClass();
+
+		}
+		
+		@Test(priority = 199)
+		public void valoresParaMetodoPCIDetalhes() {
+			valoresParaMetodoPCIDetalhes = new ValoresParaMetodoPCIDetalhes();
+			valoresParaMetodoPCIDetalhes.beforeClass();
+			valoresParaMetodoPCIDetalhes.login();
+			valoresParaMetodoPCIDetalhes.acessarMDR();
+			valoresParaMetodoPCIDetalhes.Detalhes();
+			valoresParaMetodoPCIDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 200)
+		public void valoresParaMetodoPCIExcluir() {
+			valoresParaMetodoPCIExcluir = new ValoresParaMetodoPCIExcluir();
+			valoresParaMetodoPCIExcluir.beforeClass();
+			valoresParaMetodoPCIExcluir.login();
+			valoresParaMetodoPCIExcluir.acessarMDR();
+			valoresParaMetodoPCIExcluir.excluir();
+			valoresParaMetodoPCIExcluir.afterClass();
+			
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI Fim-------------------------");
+			
+
+		}
+		
+		//204
+		//Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC
+		
+		@Test(priority = 204)
+		public void valoresParaMetodoPICCriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC-------------------------");
+			valoresParaMetodoPICCriar = new ValoresParaMetodoPICCriar();
+			valoresParaMetodoPICCriar.beforeClass();
+			valoresParaMetodoPICCriar.login();
+			valoresParaMetodoPICCriar.acessarMDR();
+			valoresParaMetodoPICCriar.criar();
+			valoresParaMetodoPICCriar.afterClass();
+
+		}
+		
+		@Test(priority = 205)
+		public void valoresParaMetodoPICEditar() {
+			
+			valoresParaMetodoPICEditar = new ValoresParaMetodoPICEditar();
+			valoresParaMetodoPICEditar.beforeClass();
+			valoresParaMetodoPICEditar.login();
+			valoresParaMetodoPICEditar.acessarMDR();
+			valoresParaMetodoPICEditar.editar();
+			valoresParaMetodoPICEditar.afterClass();
+
+		}
+		
+		@Test(priority = 206)
+		public void valoresParaMetodoPICDetalhes() {
+			
+			valoresParaMetodoPICDetalhes = new ValoresParaMetodoPICDetalhes();
+			valoresParaMetodoPICDetalhes.beforeClass();
+			valoresParaMetodoPICDetalhes.login();
+			valoresParaMetodoPICDetalhes.acessarMDR();
+			valoresParaMetodoPICDetalhes.Detalhes();
+			valoresParaMetodoPICDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 207)
+		public void valoresParaMetodoPICExcluir() {
+			
+			valoresParaMetodoPICExcluir = new ValoresParaMetodoPICExcluir();
+			valoresParaMetodoPICExcluir.beforeClass();
+			valoresParaMetodoPICExcluir.login();
+			valoresParaMetodoPICExcluir.acessarMDR();
+			valoresParaMetodoPICExcluir.excluir();
+			valoresParaMetodoPICExcluir.afterClass();
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC Fim-------------------------");
+			
+
+		}
+		
+		//211
 }

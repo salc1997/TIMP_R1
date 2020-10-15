@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroIDPO;
 
-public class  ValoresParaMetodoPRL extends TestBaseSteven{
+public class  ValoresParaMetodoPRLFiltroID extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPRLFiltroIDPO valoresParaMetodoPRLFiltroIDPO;

@@ -50,8 +50,14 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 	@FindBy(xpath = "//div[contains(@class, \"atividadeFiscal\")]/div/div[2]/div/div[2]")
 	public WebElement inputAtividadeFiscal;
 	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[contains(text(), \"Teste Atividade\")]")
+	public WebElement opcionComboAtividadeFiscal;
+	
 	@FindBy(xpath = "//div[contains(@class, \"grupoAtividade\")]/div/div[2]/div/div[2]")
 	public WebElement inputGrupoAtividadeFiscal;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[contains(text(), \"Grupo Atividade Fiscal de Teste\")]")
+	public WebElement opcionComboGrupoAtividadeFiscal;
 	
 	@FindBy(xpath = "//div[contains(@class,\"list-item\") and @id][1]")
 	public WebElement opcionCombo;
@@ -142,26 +148,25 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 		opcionCheckboxDiferenteTodos.click();
 		opcionCheckboxDiferenteTodos.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		
-		/*attributeToBeXpath("//div[contains(@class, \"tipoTributo\")]/div/div[2]/div/div/div[2]/input", "disabled", "");
+		/*
+		attributeToBeXpath("//div[contains(@class, \"tipoTributo\")]/div/div[2]/div/div/div[2]/input", "disabled", "");
 		sleep(2000);
 		inputTipoTributo.click();		
 		sleep(2000);
 		opcionCheckboxDiferenteTodos.click();
 		body.click();
+		sleep(2000);
 		*/
-		//sleep(2000);
-		
 		sleep(2000);
 		inputAtividadeFiscal.click();		
 		sleep(2000);
-		opcionCombo.click();
+		opcionComboAtividadeFiscal.click();
 		sleep(2000);
 		
 		sleep(2000);
 		inputGrupoAtividadeFiscal.click();		
 		sleep(2000);
-		opcionCombo.click();
+		opcionComboGrupoAtividadeFiscal.click();
 		sleep(2000);
 		
 		btnGravar.click();
@@ -190,8 +195,8 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 			return sucesso = true; 
 		}
 		  
-		String idB = driver.findElement(By.
-		xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); idInserir4(idB);
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
+		idInserir4(idB);
 		  
 		sleep(2000); 
 		System.out.println(id); 

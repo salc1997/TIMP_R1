@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseFernando;
 
-public class AssociaçãoDetalhesPO extends TestBaseFernando{
+public class AssociaçãoVisualizarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement menuActividadesFiscais;
 	
@@ -22,52 +22,46 @@ public class AssociaçãoDetalhesPO extends TestBaseFernando{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
-	public WebElement idDetalhe;
-	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
-	public WebElement associacaoAtividadeFiscal;
-	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div")
+	@FindBy(xpath = "//span[@id=\"codEmpresa\"]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div/div")
+	@FindBy(xpath = "//span[@id=\"codFilial\"]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[5]/div/div")
-	public WebElement uf;
-	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[6]/div/div")
+	@FindBy(xpath = "//span[@id=\"municipioExecutor\"]")
 	public WebElement municipioExecutor;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div")
+	@FindBy(xpath = "//span[@id=\"uf\"]")
+	public WebElement uf;
+	
+	@FindBy(xpath = "//span[@id=\"codTributo\"]")
 	public WebElement tributo;
 	
 
-	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
-	public WebElement btnCerrar;
 	
-	@FindBy(xpath = "//span[@id=\"codEmpresa\"]")
+	// Datos guardados en Editar
+	@FindBy(xpath = "//div[contains(@class, \"codEmpresa\")]/div/div[2]/div/div/div/div/div[1]")
 	public WebElement empresa1;
 	
-	@FindBy(xpath = "//span[@id=\"codFilial\"]")
-	public WebElement filial1;
-	
-	@FindBy(xpath = "//span[@id=\"municipioExecutor\"]")
-	public WebElement municipioExecutor1;
-	
-	@FindBy(xpath = "//span[@id=\"uf\"]")
+	@FindBy(xpath = "//div[contains(@class, \"uf\")]/div/div[2]/div/div/div/div/div[1]")
 	public WebElement uf1;
 	
-	@FindBy(xpath = "//span[@id=\"codTributo\"]")
+	@FindBy(xpath = "//div[contains(@class, \"codFilial\")]/div/div[2]/div/div/div/div/div[1]")
+	public WebElement filial1;
+	
+	@FindBy(xpath = "//div[contains(@class, \"municipioExecutor\")]/div/div[2]/div/div/div[2]/input")
+	public WebElement municipioExecutor1;
+	
+	@FindBy(xpath = "//div[contains(@class, \"codTributo\")]/div/div[2]/div/div/div/div/div[1]")
 	public WebElement tributo1;
 	
 
-	public AssociaçãoDetalhesPO() {
+	
+	public AssociaçãoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> detalheAssociação() {
+	public ArrayList<Boolean> visualizarAssociação() {
 		sleep(2000);
 		menuActividadesFiscais.click();
 		
@@ -84,7 +78,7 @@ public class AssociaçãoDetalhesPO extends TestBaseFernando{
 		
 		String idRegistro = idObter4();
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -93,55 +87,48 @@ public class AssociaçãoDetalhesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String textoIdDetalhe = idDetalhe.getText();
-		String textoAssociacaoAtividadeFiscal = associacaoAtividadeFiscal.getText();
 		String textoEmpresa = empresa.getText();
 		String textoFilial = filial.getText();
-		String textoUFS = uf.getText();
 		String textoMunicipioExecutor = municipioExecutor.getText();
+		String textoUF = uf.getText();
 		String textoTributo = tributo.getText();
 
 		
-		System.out.println(textoIdDetalhe);
-		System.out.println(textoAssociacaoAtividadeFiscal);
 		System.out.println(textoEmpresa);
 		System.out.println(textoFilial);
-		System.out.println(textoUFS);
 		System.out.println(textoMunicipioExecutor);
+		System.out.println(textoUF);
 		System.out.println(textoTributo);
 
 		
-		btnCerrar.click();
+		sleep(2000);
+		biblioteca.click();
+		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		waitExpectElement(btnUltimaPagina);
-		sleep(2000);
-		
 		btnUltimaPagina.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		sleep(1000);
 		menu.click();
-		sleep(1000);
-		açao.click();
-		
 		sleep(2000);
+		açao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		String textoEmpresa1 = empresa1.getText();
 		String textoFilial1 = filial1.getText();
-		String textoMunicipioExecutor1 = municipioExecutor1.getText();
+		String textoMunicipioExecutor1 = municipioExecutor1.getAttribute("value");
 		String textoUF1 = uf1.getText();
-		String textoTributo1 = tributo1.getText();
+		String textoTributo1 = tributo1.getAttribute("id");
 
 		
-		System.out.println("------------------------------------------------");
+		System.out.println("--------------------------------------------------");
 		System.out.println(textoEmpresa1);
 		System.out.println(textoFilial1);
 		System.out.println(textoMunicipioExecutor1);
@@ -151,11 +138,11 @@ public class AssociaçãoDetalhesPO extends TestBaseFernando{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
-		sucesso.add(textoEmpresa.contains(textoEmpresa1));
-		sucesso.add(textoFilial.contains(textoFilial1));
-		sucesso.add(textoMunicipioExecutor.contains(textoMunicipioExecutor1));
-		sucesso.add(textoUFS.contains(textoUF1));
-		sucesso.add(textoTributo.contains(textoTributo1));
+		sucesso.add(textoEmpresa1.contains(textoEmpresa));
+		sucesso.add(textoFilial1.contains(textoFilial));
+		sucesso.add(textoMunicipioExecutor1.contains(textoMunicipioExecutor));
+		sucesso.add(textoUF1.contains(textoUF));
+		sucesso.add(textoTributo1.contains(textoTributo));
 
 
 		System.out.println(sucesso);

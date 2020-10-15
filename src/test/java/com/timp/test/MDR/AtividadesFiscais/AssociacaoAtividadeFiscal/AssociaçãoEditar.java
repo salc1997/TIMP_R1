@@ -9,20 +9,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
+import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoEditarPO;
 
 
-public class AssociaçãoCriar extends TestBaseFernando{
-	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
-	AssociaçãoCriarPO associaçãoCriarPO;
-	
+public class AssociaçãoEditar extends TestBaseFernando{
+  LoginTC loginTC;
+  AcessarMDRPO accesarMDRPO;
+  AssociaçãoEditarPO associaçãoEditarPO;
+  
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationF();
 	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  associaçãoCriarPO = new AssociaçãoCriarPO();
+	  accesarMDRPO = new AcessarMDRPO();
+	  associaçãoEditarPO = new AssociaçãoEditarPO();
   }
 
   @AfterClass
@@ -30,19 +30,19 @@ public class AssociaçãoCriar extends TestBaseFernando{
   }
   
   @Test(priority = 0)
-  public void ingresar() {
+  public void login() {
 	  loginTC.login();
   }
   
   @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
-
+  public void ingresarMDR() {
+	  accesarMDRPO.acessarMDR();
   }
   
   @Test(priority = 2)
-  public void criarAssociação() {
-	  boolean sucesso = associaçãoCriarPO.criarAssociação();
-	  assertTrue(sucesso, Criar);
+  public void editarAssociação() {
+	  //associaçãoEditarPO.editarAssociação();
+	  boolean sucesso = associaçãoEditarPO.editarAssociação();
+	  assertTrue(sucesso, Editar);
   }
 }

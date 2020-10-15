@@ -1,24 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="3" passed="2">
+=======
+<<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="94974" started-at="2020-10-15T22:35:21Z" finished-at="2020-10-15T22:36:56Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-10-15T21:07:30Z" name="Default suite" finished-at="2020-10-15T21:09:43Z" duration-ms="132855">
+=======
+  <suite name="Default suite" duration-ms="92515" started-at="2020-10-15T20:45:30Z" finished-at="2020-10-15T20:47:02Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="94974" started-at="2020-10-15T22:35:21Z" finished-at="2020-10-15T22:36:56Z">
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="10099" started-at="2020-10-15T16:35:21Z" finished-at="2020-10-15T16:35:32Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-10-15T21:07:30Z" name="Default test" finished-at="2020-10-15T21:09:43Z" duration-ms="132855">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir@26d9b808]" started-at="2020-10-15T18:07:30Z" name="beforeClass" finished-at="2020-10-15T18:07:42Z" duration-ms="12643" status="PASS">
+=======
+    <test name="Default test" duration-ms="92515" started-at="2020-10-15T20:45:30Z" finished-at="2020-10-15T20:47:02Z">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRL">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRL@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="10060" started-at="2020-10-15T14:45:30Z" finished-at="2020-10-15T14:45:40Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID@f2f2cc1]" name="login" duration-ms="8211" started-at="2020-10-15T16:35:32Z" finished-at="2020-10-15T16:35:40Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir@26d9b808]" started-at="2020-10-15T18:07:42Z" name="login" finished-at="2020-10-15T18:07:51Z" duration-ms="8150" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRL@f2f2cc1]" name="login" duration-ms="6173" started-at="2020-10-15T14:45:40Z" finished-at="2020-10-15T14:45:46Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID@f2f2cc1]" name="acessarMDR" duration-ms="33014" started-at="2020-10-15T16:35:40Z" finished-at="2020-10-15T16:36:13Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir@26d9b808]" started-at="2020-10-15T18:07:51Z" name="acessarMDR" finished-at="2020-10-15T18:08:27Z" duration-ms="36392" status="PASS">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRL@f2f2cc1]" name="acessarMDR" duration-ms="32259" started-at="2020-10-15T14:45:46Z" finished-at="2020-10-15T14:46:18Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="filtro()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID@f2f2cc1]" name="filtro" duration-ms="43634" started-at="2020-10-15T16:36:13Z" finished-at="2020-10-15T16:36:56Z">
           <exception class="java.lang.AssertionError">
             <message>
@@ -57,14 +102,38 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+<<<<<<< HEAD
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir@26d9b808]" started-at="2020-10-15T18:08:27Z" name="excluir" finished-at="2020-10-15T18:09:43Z" duration-ms="75615" status="PASS">
+=======
+        <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRL@f2f2cc1]" name="filtro" duration-ms="44006" started-at="2020-10-15T14:46:18Z" finished-at="2020-10-15T14:47:02Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir@26d9b808]" started-at="2020-10-15T18:09:43Z" name="afterClass" finished-at="2020-10-15T18:09:43Z" duration-ms="41" status="PASS">
+=======
         </test-method> <!-- filtro -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-15T16:36:56Z" finished-at="2020-10-15T16:36:56Z">
+=======
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRL@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-15T14:47:02Z" finished-at="2020-10-15T14:47:02Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir -->
+=======
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRL -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

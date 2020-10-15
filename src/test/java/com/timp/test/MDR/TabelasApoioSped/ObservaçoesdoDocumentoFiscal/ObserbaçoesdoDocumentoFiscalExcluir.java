@@ -31,7 +31,7 @@ public class ObserbaçoesdoDocumentoFiscalExcluir extends TestBaseSteven {
 		observaçoesdoDocumentoFiscalExcluirPO = new ObservaçoesdoDocumentoFiscalExcluirPO();
 
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

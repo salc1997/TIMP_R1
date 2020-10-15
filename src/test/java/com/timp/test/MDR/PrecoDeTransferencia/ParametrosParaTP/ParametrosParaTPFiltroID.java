@@ -27,14 +27,14 @@ public class ParametrosParaTPFiltroID extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaTPFiltroIDPO = new ParametrosParaTPFiltroIDPO();
-		
+
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -54,10 +54,9 @@ public class ParametrosParaTPFiltroID extends TestBaseSteven {
 		boolean sucesso = parametrosParaTPFiltroIDPO.filtroID();
 
 		assertTrue(sucesso, Filtros);
-		
-		
+
 		ArrayList<Boolean> sucesso2 = parametrosParaTPFiltroIDPO.filtroCodCliente();
-		
+
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), Filtros);
 		}

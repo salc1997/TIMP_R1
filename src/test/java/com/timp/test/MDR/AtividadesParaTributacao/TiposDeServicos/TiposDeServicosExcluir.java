@@ -16,7 +16,7 @@ public class TiposDeServicosExcluir extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeServicosExcluirPO tiposDeServicosExcluirPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

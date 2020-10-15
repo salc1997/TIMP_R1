@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLCriarPO;
 
 public class ValoresParaMetodoCPLCriar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoCPLCriarPO valoresParaMetodoCPLCriarPO;
@@ -25,9 +25,11 @@ public class ValoresParaMetodoCPLCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoCPLCriarPO = new ValoresParaMetodoCPLCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,10 +47,9 @@ public class ValoresParaMetodoCPLCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = valoresParaMetodoCPLCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
+
+	}
 
 }

@@ -17,7 +17,7 @@ public class NFsEntradaSaidaeDadosComplementares extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	NFsEntradaSaidaeDadosComplementaresPO nfsEntradaSaidaeDadosComplementaresPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

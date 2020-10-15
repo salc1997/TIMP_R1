@@ -25,7 +25,7 @@ public class ModeloDeApuracaoTPExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		modeloDeApuracaoTPExcluirPO = new ModeloDeApuracaoTPExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -33,7 +33,7 @@ public class ParametrosOficializacaoLivrosVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosOficializacaoLivrosVisualizarPO = new ParametrosOficializacaoLivrosVisualizarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

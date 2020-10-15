@@ -25,7 +25,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeAjusteDaApuraçaoDoIPIEditarPO = new CodigoDeAjusteDaApuraçaoDoIPIEditarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

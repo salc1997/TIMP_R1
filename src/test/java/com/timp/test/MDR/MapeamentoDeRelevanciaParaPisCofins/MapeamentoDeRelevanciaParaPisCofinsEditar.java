@@ -25,7 +25,7 @@ public class MapeamentoDeRelevanciaParaPisCofinsEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoDeRelevanciaParaPisCofinsEditarPO = new MapeamentoDeRelevanciaParaPisCofinsEditarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

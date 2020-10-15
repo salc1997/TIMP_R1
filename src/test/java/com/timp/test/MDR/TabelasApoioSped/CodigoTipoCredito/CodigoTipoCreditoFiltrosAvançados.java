@@ -29,7 +29,7 @@ public class CodigoTipoCreditoFiltrosAvançados extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoTipoCreditoFiltrosAvançadosPO = new CodigoTipoCreditoFiltrosAvançadosPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

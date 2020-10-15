@@ -27,7 +27,7 @@ public class CodigoDIPAMDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDIPAMDetalhesPO = new CodigoDIPAMDetalhesPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

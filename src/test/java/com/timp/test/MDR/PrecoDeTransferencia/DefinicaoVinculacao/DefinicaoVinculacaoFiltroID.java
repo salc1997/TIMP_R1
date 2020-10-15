@@ -29,14 +29,14 @@ public class DefinicaoVinculacaoFiltroID extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		definicaoVinculacaoFiltroIDPO = new DefinicaoVinculacaoFiltroIDPO();
-		
+
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -58,7 +58,6 @@ public class DefinicaoVinculacaoFiltroID extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
 		}
-
 
 	}
 }

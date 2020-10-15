@@ -19,7 +19,7 @@ import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 
 public class CodigosAjustesDetalhes extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoAjustesDetalhesPO codigoAjustesDetalhesPO;

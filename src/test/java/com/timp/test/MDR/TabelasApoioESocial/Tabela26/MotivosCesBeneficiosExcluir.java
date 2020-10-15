@@ -39,7 +39,7 @@ public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

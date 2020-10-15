@@ -34,7 +34,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class ExcluirColuna extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ExcluirColunaPO excluirColunaPO;

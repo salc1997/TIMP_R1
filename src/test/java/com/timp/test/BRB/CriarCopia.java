@@ -22,7 +22,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.CriarCopiaPO;
 
 public class CriarCopia extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	CriarCopiaPO criarCopiaPO;

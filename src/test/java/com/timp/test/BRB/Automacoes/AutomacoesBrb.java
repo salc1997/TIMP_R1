@@ -17,7 +17,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	ExcluirColuna excluirColuna;
 	Editar editar;
 	Filtros filtros;
-	CriarCopia criarCopia;
+	CriarCopia criarCopia; 
 	AtivarCorrecao ativarCorrecao;
 	AtivarComentario ativarComentario;
 	RenomearColuna renomearColuna;

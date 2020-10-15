@@ -19,7 +19,7 @@ public class CenariosCorrecaoFiltrosAvanzados extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoFiltrosAvanzadosPO cenariosCorrecaoFiltrosAvanzadosPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationK();

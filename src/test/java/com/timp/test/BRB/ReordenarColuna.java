@@ -31,7 +31,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ReordenarColunarPO;
 
 public class ReordenarColuna extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ReordenarColunarPO reordenarColunarPO;

@@ -23,7 +23,7 @@ public class LogradouroEditar extends TestBaseKathy {
 		acessarMDRPO = new AcessarMDRPO();
 		logradouroEditarPO = new LogradouroEditarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 	}

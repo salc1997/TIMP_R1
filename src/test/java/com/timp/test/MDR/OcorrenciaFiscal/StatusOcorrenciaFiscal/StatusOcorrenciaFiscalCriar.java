@@ -19,7 +19,7 @@ public class StatusOcorrenciaFiscalCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusOcorrenciaFiscalCriarPO statusOcorrenciaFiscalCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

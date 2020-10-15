@@ -30,7 +30,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends 
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO();
 	}
-  
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

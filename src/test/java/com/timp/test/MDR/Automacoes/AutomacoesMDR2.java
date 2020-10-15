@@ -109,7 +109,7 @@ import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInf
 public class AutomacoesMDR2 extends TestBaseSteven {
 
 	// Detalhe Tipo Tributo
- 
+
 	DetalheCriar detalheTipoTributoCriar;
 	DetalheEditar detalheTipoTributoEditar;
 	DetalheExcluir detalheTipoTributoExcluir;
@@ -236,8 +236,6 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	SaldoInicialDiferidoEditar saldoInicialDiferidoEditar;
 	SaldoInicialDiferidoExcluir saldoInicialDiferidoExcluir;
 	SaldoInicialDiferidoFiltroID saldoInicialDiferidoFiltroID;
-	
-	
 
 	// SCANC > Ajustes Dos Anexos
 
@@ -333,7 +331,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		detalheTipoTributoVisualizar.afterClass();
 
 	}
-	
+
 	@Test(priority = 23)
 	public void detalheTipoTributoFiltroIdDetalhes() {
 
@@ -345,7 +343,6 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		detalheTipoTributoFiltroId.afterClass();
 
 	}
-
 
 	@Test(priority = 3)
 	public void detalheTipoTributoFiscalExcluir() {
@@ -888,7 +885,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		contasDefaultParaExtemporaneoDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 23)
 	public void contasDefaultParaExtemporaneoFiltroID() {
 
@@ -900,7 +897,6 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		contasDefaultParaExtemporaneoFiltroID.afterClass();
 
 	}
-
 
 	@Test(priority = 65)
 	public void contasDefaultParaExtemporaneoExcluir() {
@@ -1304,12 +1300,11 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		saldoInicialDiferidoEditar.editar();
 		saldoInicialDiferidoEditar.afterClass();
 
-
 	}
-	
+
 	@Test(priority = 106)
 	public void saldoInicialDiferidoFiltroID() {
-		
+
 		saldoInicialDiferidoFiltroID = new SaldoInicialDiferidoFiltroID();
 		saldoInicialDiferidoFiltroID.beforeClass();
 		saldoInicialDiferidoFiltroID.login();
@@ -1317,13 +1312,11 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		saldoInicialDiferidoFiltroID.filtro();
 		saldoInicialDiferidoFiltroID.afterClass();
 
-
 	}
-	
+
 	@Test(priority = 107)
 	public void saldoInicialDiferidoExcluir() {
-		
-		
+
 		saldoInicialDiferidoExcluir = new SaldoInicialDiferidoExcluir();
 		saldoInicialDiferidoExcluir.beforeClass();
 		saldoInicialDiferidoExcluir.login();

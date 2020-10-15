@@ -33,7 +33,7 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseElie
 	public void afterClass() {
 		driver.close();
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

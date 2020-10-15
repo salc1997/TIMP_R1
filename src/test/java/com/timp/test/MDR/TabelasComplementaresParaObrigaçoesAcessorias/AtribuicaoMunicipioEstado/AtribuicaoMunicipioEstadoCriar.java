@@ -28,7 +28,7 @@ public class AtribuicaoMunicipioEstadoCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		atribuicaoMunicipioEstadoCriarPO = new AtribuicaoMunicipioEstadoCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

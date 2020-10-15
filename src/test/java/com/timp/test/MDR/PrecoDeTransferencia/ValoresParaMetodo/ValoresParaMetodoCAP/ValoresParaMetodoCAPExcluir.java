@@ -12,7 +12,6 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluirPO;
 
 public class ValoresParaMetodoCAPExcluir extends TestBaseEliel {
- 
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -26,9 +25,11 @@ public class ValoresParaMetodoCAPExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		valoresParaMetodoCAPExcluirPO = new ValoresParaMetodoCAPExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,10 +47,9 @@ public class ValoresParaMetodoCAPExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = valoresParaMetodoCAPExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
+
+	}
+
 }

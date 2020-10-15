@@ -28,7 +28,7 @@ public class CodigoTipoCreditoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoTipoCreditoCriarPO = new CodigoTipoCreditoCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

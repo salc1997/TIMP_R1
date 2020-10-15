@@ -35,7 +35,7 @@ public class ObservaçoesdoDocumentoFiscalVisualizar extends TestBaseSteven {
 		observaçoesdoDocumentoFiscalVisualizarPO = new ObservaçoesdoDocumentoFiscalVisualizarPO();
 
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

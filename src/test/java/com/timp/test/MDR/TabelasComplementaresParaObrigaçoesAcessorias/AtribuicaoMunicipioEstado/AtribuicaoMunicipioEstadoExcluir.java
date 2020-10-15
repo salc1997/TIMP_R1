@@ -27,7 +27,7 @@ public class AtribuicaoMunicipioEstadoExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		atribuicaoMunicipioEstadoExcluirPO = new AtribuicaoMunicipioEstadoExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

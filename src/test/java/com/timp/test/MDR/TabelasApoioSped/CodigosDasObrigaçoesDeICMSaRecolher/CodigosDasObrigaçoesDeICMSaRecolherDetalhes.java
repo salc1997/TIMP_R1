@@ -28,7 +28,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigosDasObrigaçoesDeICMSaRecolherDetalhesPO = new CodigosDasObrigaçoesDeICMSaRecolherDetalhesPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -29,7 +29,7 @@ public class CadastroNotaFiscalCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroNotaFiscalCriarPO = new CadastroNotaFiscalCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

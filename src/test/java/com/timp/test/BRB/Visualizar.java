@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.BRB.ExportarPO;
 import com.sap.timp.pageObjectModel.BRB.VisualizarPO;
 
 public class Visualizar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	VisualizarPO visualizarPO;

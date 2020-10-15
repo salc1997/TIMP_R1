@@ -28,10 +28,12 @@ public class TabelaDeApoioECFVisualizar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeApoioECFVisualizarPO = new TabelaDeApoioECFVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
- 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

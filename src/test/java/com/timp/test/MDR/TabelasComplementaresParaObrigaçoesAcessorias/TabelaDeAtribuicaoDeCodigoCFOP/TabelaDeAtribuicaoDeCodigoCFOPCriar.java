@@ -25,7 +25,7 @@ public class TabelaDeAtribuicaoDeCodigoCFOPCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPCriarPO = new TabelaDeAtribuicaoDeCodigoCFOPCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

@@ -27,7 +27,7 @@ public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçaoCreditosExcluirPO = new CodigoAjustesContribuiçaoCreditosExcluirPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

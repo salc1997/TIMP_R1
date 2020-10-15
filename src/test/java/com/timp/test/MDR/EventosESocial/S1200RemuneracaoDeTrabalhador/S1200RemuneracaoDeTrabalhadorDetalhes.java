@@ -21,7 +21,7 @@ public class S1200RemuneracaoDeTrabalhadorDetalhes extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();

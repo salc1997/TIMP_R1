@@ -25,7 +25,7 @@ public class CodigoDeMotivosDeAjustesCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeMotivosDeAjustesCriarPO = new CodigoDeMotivosDeAjustesCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

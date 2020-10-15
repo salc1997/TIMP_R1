@@ -39,7 +39,7 @@ public class MunicipioExcluir extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -57,7 +57,6 @@ public class MunicipioExcluir extends TestBaseSteven {
 	public void excluir() {
 
 		boolean sucesso = municipioExcluirPO.excluir();
-
 
 		assertTrue(sucesso, Detalhes);
 

@@ -25,7 +25,7 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeUtilizacaoDosCreditosFiscaisCriarPO = new TiposDeUtilizacaoDosCreditosFiscaisCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

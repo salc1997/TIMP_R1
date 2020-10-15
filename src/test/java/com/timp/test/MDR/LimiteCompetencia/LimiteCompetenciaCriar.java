@@ -26,7 +26,7 @@ public class LimiteCompetenciaCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		limiteCompetenciaCriarPO = new LimiteCompetenciaCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

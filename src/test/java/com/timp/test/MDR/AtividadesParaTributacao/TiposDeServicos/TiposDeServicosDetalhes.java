@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhesPO;
 
 public class TiposDeServicosDetalhes extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeServicosDetalhesPO tiposDeServicosDetalhesPO;

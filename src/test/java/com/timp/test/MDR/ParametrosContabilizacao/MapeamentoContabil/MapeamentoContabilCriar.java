@@ -26,7 +26,7 @@ public class MapeamentoContabilCriar extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoContabilCriarPO = new MapeamentoContabilCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

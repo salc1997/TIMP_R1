@@ -32,9 +32,9 @@ public class CadastroFornecedorFiltroId extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
- 
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -56,13 +56,13 @@ public class CadastroFornecedorFiltroId extends TestBaseSteven {
 		for (int i = 0; i < empresa.size(); i++) {
 			assertTrue(empresa.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> dataInicial = cadastroFornecedorFiltroIdPO.filtroDataInicial();
 
 		for (int i = 0; i < dataInicial.size(); i++) {
 			assertTrue(dataInicial.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> dataFinal = cadastroFornecedorFiltroIdPO.filtroDataFinal();
 		for (int i = 0; i < dataFinal.size(); i++) {
 			assertTrue(dataFinal.get(i), Filtros);

@@ -18,7 +18,7 @@ public class TiposDeServicosVisualizar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeServicosVisualizarPO tiposDeServicosVisualizarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

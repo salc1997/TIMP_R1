@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosImportacao.ValoresParaMetodoPRL;
+package com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC;
 
 import java.util.ArrayList;
 
@@ -10,13 +10,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoPRLFiltroIDPO extends TestBaseSteven {
+public class ValoresParaMetodoPICFiltroIDPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//li/div/span[text()=\"Preço de Transferência\"]")
 	public WebElement precoTransferencia;
 	@FindBy(xpath = "//li/div/span[text()=\" Valores para Métodos de Importação\"]")
 	public WebElement valoresMetodoImportacao;
-	@FindBy(xpath = "//li/div/span[text()=\" Valores para Método PRL\"]")
+	@FindBy(xpath = "//li/div/span[text()=\" Valores para Método PIC\"]")
 	public WebElement valoresPRL;
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
@@ -30,7 +30,7 @@ public class ValoresParaMetodoPRLFiltroIDPO extends TestBaseSteven {
 	
 	
 
-	public ValoresParaMetodoPRLFiltroIDPO() {
+	public ValoresParaMetodoPICFiltroIDPO() {
 
 		PageFactory.initElements(driver, this);
 	}

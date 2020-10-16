@@ -11,9 +11,10 @@ import org.openqa.selenium.remote.NewSessionPayload;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 
-public class CadastroFornecedorFiltroIdPO extends TestBaseSteven {
+public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Criação de Nota Fiscal\"]")
 	public WebElement parametrosCriacaoNotaFiscal;
@@ -112,10 +113,11 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseSteven {
 		
 		actions.moveToElement(dataInicial);
 		dataInicial.sendKeys(dataInicialTexto);
-		sleep(1000);
-		//dataInicial.sendKeys(Keys.ENTER);
 		//sleep(1000);
 		//dataInicial.sendKeys(Keys.ENTER);
+		sleep(1000);
+		//dataInicial.sendKeys(Keys.ENTER);
+
 		//driver.findElement(By.xpath("//body")).click();
 		//sleep(1000);
 		aplicar.click();

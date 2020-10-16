@@ -8,6 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -16,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheCriarPO;
 import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheFiltroIdPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroIdPO;
 
-public class CadastroFornecedorFiltroId extends TestBaseSteven {
+public class CadastroFornecedorFiltroId extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroFornecedorFiltroIdPO cadastroFornecedorFiltroIdPO;
@@ -24,7 +25,7 @@ public class CadastroFornecedorFiltroId extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroFornecedorFiltroIdPO = new CadastroFornecedorFiltroIdPO();

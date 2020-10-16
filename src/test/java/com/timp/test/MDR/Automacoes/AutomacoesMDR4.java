@@ -171,6 +171,11 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.Val
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroID;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACEditar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACExcluir;
@@ -477,7 +482,13 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ValoresParaMetodoPICEditar valoresParaMetodoPICEditar;
 		ValoresParaMetodoPICExcluir valoresParaMetodoPICExcluir;
 		
-		
+
+	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PRL
+		ValoresParaMetodoPRLCriar valoresParaMetodoPRLCriar;
+		ValoresParaMetodoPRLEditar valoresParaMetodoPRLEditar;
+		ValoresParaMetodoPRLDetalhes valoresParaMetodoPRLDetalhes;
+		ValoresParaMetodoPRLExcluir valoresParaMetodoPRLExcluir;
+		ValoresParaMetodoPRLFiltroID valoresParaMetodoPRLFiltroID;
 
 	
 	// --------------------------------------------------------------------------------------------------
@@ -2312,4 +2323,64 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//211
+		//Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL
+		@Test(priority = 211)
+		public void valoresParaMetodoPRLCriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL-------------------------");
+			valoresParaMetodoPRLCriar = new ValoresParaMetodoPRLCriar();
+			valoresParaMetodoPRLCriar.beforeClass();
+			valoresParaMetodoPRLCriar.login();
+			valoresParaMetodoPRLCriar.acessarMDR();
+			valoresParaMetodoPRLCriar.criar();
+			valoresParaMetodoPRLCriar.afterClass();
+
+		}
+		
+		@Test(priority = 212)
+		public void valoresParaMetodoPRLEditar() {
+			valoresParaMetodoPRLEditar = new ValoresParaMetodoPRLEditar();
+			valoresParaMetodoPRLEditar.beforeClass();
+			valoresParaMetodoPRLEditar.login();
+			valoresParaMetodoPRLEditar.acessarMDR();
+			valoresParaMetodoPRLEditar.editar();
+			valoresParaMetodoPRLEditar.afterClass();
+
+		}
+		
+		@Test(priority = 213)
+		public void valoresParaMetodoPRLDetalhes() {
+			valoresParaMetodoPRLDetalhes = new ValoresParaMetodoPRLDetalhes();
+			valoresParaMetodoPRLDetalhes.beforeClass();
+			valoresParaMetodoPRLDetalhes.login();
+			valoresParaMetodoPRLDetalhes.acessarMDR();
+			valoresParaMetodoPRLDetalhes.Detalhes();
+			valoresParaMetodoPRLDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 214)
+		public void valoresParaMetodoPRLFiltroID() {
+			valoresParaMetodoPRLFiltroID = new ValoresParaMetodoPRLFiltroID();
+			valoresParaMetodoPRLFiltroID.beforeClass();
+			valoresParaMetodoPRLFiltroID.login();
+			valoresParaMetodoPRLFiltroID.acessarMDR();
+			valoresParaMetodoPRLFiltroID.filtro();
+			valoresParaMetodoPRLFiltroID.afterClass();
+
+		}
+		
+		@Test(priority = 215)
+		public void valoresParaMetodoPRLExcluir() {
+			valoresParaMetodoPRLExcluir = new ValoresParaMetodoPRLExcluir();
+			valoresParaMetodoPRLExcluir.beforeClass();
+			valoresParaMetodoPRLExcluir.login();
+			valoresParaMetodoPRLExcluir.acessarMDR();
+			valoresParaMetodoPRLExcluir.excluir();
+			valoresParaMetodoPRLExcluir.afterClass();
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL Fim-------------------------");
+			
+		}
+		
+		//218
+		
 }

@@ -11,9 +11,10 @@ import org.openqa.selenium.remote.NewSessionPayload;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 
-public class CadastroFornecedorFiltroIdPO extends TestBaseSteven {
+public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Criação de Nota Fiscal\"]")
 	public WebElement parametrosCriacaoNotaFiscal;
@@ -116,11 +117,7 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseSteven {
 		//dataInicial.sendKeys(Keys.ENTER);
 		sleep(1000);
 		//dataInicial.sendKeys(Keys.ENTER);
-<<<<<<< HEAD
-=======
-		//sleep(1000);
-		//dataInicial.sendKeys(Keys.ENTER);
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+
 		//driver.findElement(By.xpath("//body")).click();
 		//sleep(1000);
 		aplicar.click();

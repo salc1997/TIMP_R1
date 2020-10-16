@@ -116,6 +116,11 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseSteven {
 		//dataInicial.sendKeys(Keys.ENTER);
 		sleep(1000);
 		//dataInicial.sendKeys(Keys.ENTER);
+<<<<<<< HEAD
+=======
+		//sleep(1000);
+		//dataInicial.sendKeys(Keys.ENTER);
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
 		//driver.findElement(By.xpath("//body")).click();
 		//sleep(1000);
 		aplicar.click();

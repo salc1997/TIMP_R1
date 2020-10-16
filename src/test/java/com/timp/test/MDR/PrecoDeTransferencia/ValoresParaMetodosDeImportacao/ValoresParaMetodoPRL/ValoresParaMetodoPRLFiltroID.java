@@ -1,4 +1,4 @@
-package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL;
+package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,13 +11,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroIDPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroIDPO;
 
-public class  ValoresParaMetodoPRL extends TestBaseSteven{
+public class  ValoresParaMetodoPRLFiltroID extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ValoresParaMetodoPRLFiltroIDPO valoresParaMetodoPRLFiltroIDPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 

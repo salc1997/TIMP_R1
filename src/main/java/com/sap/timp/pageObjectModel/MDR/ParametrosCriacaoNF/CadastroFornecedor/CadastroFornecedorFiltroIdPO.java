@@ -112,12 +112,12 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseSteven {
 		
 		actions.moveToElement(dataInicial);
 		dataInicial.sendKeys(dataInicialTexto);
+		//sleep(1000);
+		//dataInicial.sendKeys(Keys.ENTER);
 		sleep(1000);
-		dataInicial.sendKeys(Keys.ENTER);
-		sleep(1000);
-		dataInicial.sendKeys(Keys.ENTER);
+		//dataInicial.sendKeys(Keys.ENTER);
 		//driver.findElement(By.xpath("//body")).click();
-		sleep(1000);
+		//sleep(1000);
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

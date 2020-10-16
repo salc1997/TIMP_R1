@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosImportacao.ValoresParaMetodoPRL;
+package com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX;
 
 import java.util.ArrayList;
 
@@ -10,14 +10,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoPRLFiltroIDPO extends TestBaseSteven {
+public class ValoresParaMetodoPECEXFiltroIDPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//li/div/span[text()=\"Preço de Transferência\"]")
 	public WebElement precoTransferencia;
-	@FindBy(xpath = "//li/div/span[text()=\" Valores para Métodos de Importação\"]")
-	public WebElement valoresMetodoImportacao;
-	@FindBy(xpath = "//li/div/span[text()=\" Valores para Método PRL\"]")
-	public WebElement valoresPRL;
+	@FindBy(xpath = "//li/div/span[text()=\" Valores para Métodos\"]")
+	public WebElement valoresMetodo;
+	@FindBy(xpath = "//li/div/span[text()=\" Valores para Método PECEX\"]")
+	public WebElement valoresPVEX;
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement id;
@@ -30,7 +30,7 @@ public class ValoresParaMetodoPRLFiltroIDPO extends TestBaseSteven {
 	
 	
 
-	public ValoresParaMetodoPRLFiltroIDPO() {
+	public ValoresParaMetodoPECEXFiltroIDPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -40,9 +40,9 @@ public class ValoresParaMetodoPRLFiltroIDPO extends TestBaseSteven {
 		
 		precoTransferencia.click();
 		sleep(1000);
-		valoresMetodoImportacao.click();
+		valoresMetodo.click();
 		sleep(2000);
-		valoresPRL.click();
+		valoresPVEX.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

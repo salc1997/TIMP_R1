@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -16,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.C
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
-public class CadastroFornecedorCriar extends TestBaseSteven {
+public class CadastroFornecedorCriar extends TestBaseKathy {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -25,7 +26,7 @@ public class CadastroFornecedorCriar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroFornecedorCriarPO = new CadastroFornecedorCriarPO();

@@ -4,13 +4,18 @@
   <test name="Default test(failed)" parallel="none">
     <classes>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIFiltroID">
 =======
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir">
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
       <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId">
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICCriar">
@@ -28,19 +33,25 @@
 >>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         <methods>
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
           <include name="afterClass"/>
 <<<<<<< HEAD
           <include name="filtro"/>
           <include name="beforeClass"/>
 =======
           <include name="filtroId"/>
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 =======
@@ -49,7 +60,10 @@
 <<<<<<< HEAD
 >>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <include name="excluir"/>
 =======
@@ -74,7 +88,10 @@
 >>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIFiltroID -->
 =======
@@ -82,7 +99,10 @@
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir -->
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
       </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId -->
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICCriar -->
@@ -100,6 +120,7 @@
 >>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

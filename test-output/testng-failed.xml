@@ -3,13 +3,28 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar">
+=======
+      <class name="com.timp.test.BRB.NovoRelatorio">
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="criar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
+=======
+          <include name="colunas"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="novoRelatorio"/>
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar -->
+=======
+      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

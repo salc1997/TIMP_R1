@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
@@ -31,3 +32,104 @@
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <reporter-output>
+  </reporter-output>
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="113804" started-at="2020-10-19T22:13:43Z" finished-at="2020-10-19T22:15:36Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-10-19T20:45:20Z" name="Default suite" finished-at="2020-10-19T20:48:12Z" duration-ms="171337">
+=======
+  <suite name="Default suite" duration-ms="102272" started-at="2020-10-19T16:36:09Z" finished-at="2020-10-19T16:37:51Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <groups>
+    </groups>
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="113804" started-at="2020-10-19T22:13:43Z" finished-at="2020-10-19T22:15:36Z">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11044" started-at="2020-10-19T16:13:43Z" finished-at="2020-10-19T16:13:54Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-10-19T20:45:20Z" name="Default test" finished-at="2020-10-19T20:48:12Z" duration-ms="171337">
+      <class name="com.timp.test.MDR.Siscoserv.NBS.NBSEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:45:20Z" name="beforeClass" finished-at="2020-10-19T17:45:33Z" duration-ms="12385" status="PASS">
+=======
+    <test name="Default test" duration-ms="102272" started-at="2020-10-19T16:36:09Z" finished-at="2020-10-19T16:37:51Z">
+      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="17750" started-at="2020-10-19T10:36:09Z" finished-at="2020-10-19T10:36:26Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir@f2f2cc1]" name="login" duration-ms="6641" started-at="2020-10-19T16:13:54Z" finished-at="2020-10-19T16:14:00Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:45:33Z" name="login" finished-at="2020-10-19T17:45:41Z" duration-ms="7692" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="login" duration-ms="8091" started-at="2020-10-19T10:36:26Z" finished-at="2020-10-19T10:36:34Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir@f2f2cc1]" name="acessarMDR" duration-ms="22141" started-at="2020-10-19T16:14:00Z" finished-at="2020-10-19T16:14:22Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:45:41Z" name="acessarMDR" finished-at="2020-10-19T17:46:12Z" duration-ms="31793" status="PASS">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="acessarMDR" duration-ms="10511" started-at="2020-10-19T10:36:34Z" finished-at="2020-10-19T10:36:45Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="excluirr()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir@f2f2cc1]" name="excluirr" duration-ms="73917" started-at="2020-10-19T16:14:22Z" finished-at="2020-10-19T16:15:36Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:46:12Z" name="editar" finished-at="2020-10-19T17:48:12Z" duration-ms="119386" status="PASS">
+=======
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="excluir" duration-ms="65801" started-at="2020-10-19T10:36:45Z" finished-at="2020-10-19T10:37:51Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluirr -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="46" started-at="2020-10-19T16:15:36Z" finished-at="2020-10-19T16:15:36Z">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:48:12Z" name="afterClass" finished-at="2020-10-19T17:48:12Z" duration-ms="67" status="PASS">
+=======
+        </test-method> <!-- excluir -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="98" started-at="2020-10-19T10:37:51Z" finished-at="2020-10-19T10:37:51Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Siscoserv.NBS.NBSEditar -->
+=======
+      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

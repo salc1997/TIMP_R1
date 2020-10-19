@@ -12,8 +12,8 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXFiltroIDPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICFiltroIDPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroIDPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICFiltroIDPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroIDPO;
 
 public class  ValoresParaMetodoPVEXFiltroID extends TestBaseSteven{
 	LoginTC loginTC;

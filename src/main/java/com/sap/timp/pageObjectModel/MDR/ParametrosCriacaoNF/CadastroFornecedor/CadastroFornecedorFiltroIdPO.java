@@ -156,11 +156,12 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 		String idRegistro = idObter4();
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		String dataFinalTexto = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[9]/div")).getText();
+	
 		System.out.println(dataFinalTexto + " Data Registro");
 		
 		sleep(2000);
@@ -195,7 +196,5 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 		return sucesso;
 
 	}
-	
-	
 
 }

@@ -1,4 +1,4 @@
-package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodoImportacao.ValoresParaMetodoPRL;
+package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,20 +11,22 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAFiltroIDPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVFiltroIDPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroIDPO;
 
-public class  ValoresParaMetodoPRL extends TestBaseSteven{
+public class  ValoresParaMetodoPVAFiltroID extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ValoresParaMetodoPRLFiltroIDPO valoresParaMetodoPRLFiltroIDPO;
-	
+	ValoresParaMetodoPVAFiltroIDPO valoresParaMetodoPVAFiltroIDPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		valoresParaMetodoPRLFiltroIDPO = new ValoresParaMetodoPRLFiltroIDPO();
+		valoresParaMetodoPVAFiltroIDPO = new ValoresParaMetodoPVAFiltroIDPO();
 
 	}
 
@@ -49,7 +51,7 @@ public class  ValoresParaMetodoPRL extends TestBaseSteven{
 	@Test(priority = 2)
 	public void filtro() {
 
-		ArrayList<Boolean> sucesso = valoresParaMetodoPRLFiltroIDPO.filtro();
+		ArrayList<Boolean> sucesso = valoresParaMetodoPVAFiltroIDPO.filtro();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);

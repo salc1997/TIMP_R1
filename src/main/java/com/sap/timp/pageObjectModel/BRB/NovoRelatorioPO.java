@@ -170,7 +170,7 @@ public class NovoRelatorioPO extends TestBaseSteven{
 			grupo.sendKeys("Nota Fiscal - Nova");
 			grupo.sendKeys(Keys.ENTER);
 		}else {
-			grupo.sendKeys("Nota Fiscal");
+			grupo.sendKeys("Nota Fiscal Teste Automatizado");
 			grupo.sendKeys(Keys.ENTER);
 		}
 	

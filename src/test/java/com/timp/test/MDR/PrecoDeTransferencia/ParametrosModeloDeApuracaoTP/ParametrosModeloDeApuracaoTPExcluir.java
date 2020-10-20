@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluirPO;
 
-public class ParametrosModeloDeApuracaoTPExcluir extends TestBaseEliel{
-	
+public class ParametrosModeloDeApuracaoTPExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosModeloDeApuracaoTPExcluirPO parametrosModeloDeApuracaoTPExcluirPO;
@@ -25,9 +25,11 @@ public class ParametrosModeloDeApuracaoTPExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosModeloDeApuracaoTPExcluirPO = new ParametrosModeloDeApuracaoTPExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,10 +47,9 @@ public class ParametrosModeloDeApuracaoTPExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = parametrosModeloDeApuracaoTPExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
- 
+
+	}
+
 }

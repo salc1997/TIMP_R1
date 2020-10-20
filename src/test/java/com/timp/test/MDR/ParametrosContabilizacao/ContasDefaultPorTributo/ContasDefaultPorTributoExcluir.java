@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultPo
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaExcluirPO;
 
 public class ContasDefaultPorTributoExcluir extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultPorTributoExcluirPO contasDefaultPorTributoExcluirPO;
@@ -26,9 +26,11 @@ public class ContasDefaultPorTributoExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultPorTributoExcluirPO = new ContasDefaultPorTributoExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,11 +48,9 @@ public class ContasDefaultPorTributoExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = contasDefaultPorTributoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}		
-		
-	
+
+	}
+
 }

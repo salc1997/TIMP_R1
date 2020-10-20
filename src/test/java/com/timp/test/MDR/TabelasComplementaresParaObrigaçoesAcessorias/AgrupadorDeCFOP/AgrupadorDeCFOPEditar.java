@@ -13,8 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPEditarPO;
 
 public class AgrupadorDeCFOPEditar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPEditarPO agrupadorDeCFOPEditarPO;
@@ -27,7 +26,7 @@ public class AgrupadorDeCFOPEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		agrupadorDeCFOPEditarPO = new AgrupadorDeCFOPEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -45,15 +44,14 @@ public class AgrupadorDeCFOPEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = agrupadorDeCFOPEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-	
+	}
+
 }

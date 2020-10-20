@@ -20,63 +20,47 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.AtivarCorrecaoPO;
 import com.sap.timp.pageObjectModel.BRB.EditarPO;
 
-public class Editar extends TestBaseSteven{
-	
+public class Editar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	EditarPO editarPO;
 
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		editarPO = new EditarPO();
-	
 
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
-	}
-	
 
-	@Test(priority = 2 )
+	}
+
+	@Test(priority = 2)
 	public void editar() {
-		
+
 		boolean sucesso = false;
 		sucesso = editarPO.editar();
 		System.out.println(sucesso);
 		assertTrue(sucesso, editado);
 
-		
 	}
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
 }

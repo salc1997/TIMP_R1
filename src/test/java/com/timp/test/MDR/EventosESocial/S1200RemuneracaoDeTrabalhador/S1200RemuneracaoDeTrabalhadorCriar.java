@@ -13,8 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1200RemuneracaoDeTrabalh
 
 public class S1200RemuneracaoDeTrabalhadorCriar extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S1200RemuneracaoDeTrabalhadorCriarPO s1200RemuneracaoDeTrabalhadorCriarPO;
@@ -27,9 +25,11 @@ public class S1200RemuneracaoDeTrabalhadorCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		s1200RemuneracaoDeTrabalhadorCriarPO = new S1200RemuneracaoDeTrabalhadorCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,9 +47,8 @@ public class S1200RemuneracaoDeTrabalhadorCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = s1200RemuneracaoDeTrabalhadorCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
+
+	}
 }

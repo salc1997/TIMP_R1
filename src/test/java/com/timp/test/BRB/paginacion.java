@@ -26,15 +26,13 @@ import org.testng.annotations.BeforeClass;
 
 public class paginacion extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	PaginacionPO paginacionOP;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
@@ -51,40 +49,31 @@ public class paginacion extends TestBaseSteven {
 
 		loginTC.login();
 	}
-	
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void brbEntrar() {
-		
+
 		acessarBrbPO.acessar();
-			
+
 	}
 
-	@Test(priority=3)
+	@Test(priority = 3)
 	public void paginacion() {
-	
-	 
 
 		String paginaS = paginacionOP.paginacionPS();
 		assertEquals(paginaS, "2", paginaSeguiente);
 
-		
 		String paginaA = paginacionOP.paginacionPA();
-		assertEquals(paginaA, "1",paginaAnterior);
-	
-		
+		assertEquals(paginaA, "1", paginaAnterior);
+
 		String paginaF = paginacionOP.paginacionPF();
-		assertEquals(paginaF, paginacionOP.totalPAges.getAttribute("value"),paginaFinal);
-				
-		
+		assertEquals(paginaF, paginacionOP.totalPAges.getAttribute("value"), paginaFinal);
+
 		String paginaI = paginacionOP.paginacionPI();
 		assertEquals(paginaI, "1", paginaInicial);
-		
-		
+
 		String paginaB = paginacionOP.numero();
 		assertEquals(paginaB, "1", paginaInserida);
-		
-	
-		
 
 	}
 

@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaDetalhesPO;
 
-public class LimiteCompetenciaDetalhes extends TestBaseSteven{
+public class LimiteCompetenciaDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -29,7 +29,7 @@ public class LimiteCompetenciaDetalhes extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		limiteCompetenciaDetalhesPO = new LimiteCompetenciaDetalhesPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -52,10 +52,10 @@ public class LimiteCompetenciaDetalhes extends TestBaseSteven{
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = limiteCompetenciaDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-		
+
 	}
 }

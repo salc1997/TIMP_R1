@@ -14,47 +14,43 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AtividadeFiscal.*;
 
-public class AtividadeFiltro extends TestBaseSteven{
+public class AtividadeFiltro extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtividadeFiltroPO atividadeFiltroPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		atividadeFiltroPO = new AtividadeFiltroPO();
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-	
-	 @Test(priority = 2)
-	  public void filtro() {
-		  
-		  boolean sucesso = atividadeFiltroPO.filtro();
-		  
-		  assertTrue(sucesso, Filtros);
-	  }
+
+	@Test(priority = 2)
+	public void filtro() {
+
+		boolean sucesso = atividadeFiltroPO.filtro();
+
+		assertTrue(sucesso, Filtros);
+	}
 }

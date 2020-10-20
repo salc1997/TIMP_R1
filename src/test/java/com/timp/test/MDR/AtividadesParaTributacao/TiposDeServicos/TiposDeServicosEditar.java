@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditarPO;
 
 public class TiposDeServicosEditar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeServicosEditarPO tiposDeServicosEditarPO;
@@ -25,7 +25,7 @@ public class TiposDeServicosEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeServicosEditarPO = new TiposDeServicosEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -43,16 +43,14 @@ public class TiposDeServicosEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = tiposDeServicosEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
+	}
 
 }

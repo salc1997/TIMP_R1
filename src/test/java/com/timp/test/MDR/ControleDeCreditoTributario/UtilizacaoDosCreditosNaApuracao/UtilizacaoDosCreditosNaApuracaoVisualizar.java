@@ -14,10 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoVisualizarPO;
 
 public class UtilizacaoDosCreditosNaApuracaoVisualizar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UtilizacaoDosCreditosNaApuracaoVisualizarPO utilizacaoDosCreditosNaApuracaoVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,8 +28,10 @@ public class UtilizacaoDosCreditosNaApuracaoVisualizar extends TestBaseEliel {
 		utilizacaoDosCreditosNaApuracaoVisualizarPO = new UtilizacaoDosCreditosNaApuracaoVisualizarPO();
 	}
 
-	 @AfterClass public void afterClass(){ driver.close(); }
-	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,14 +50,12 @@ public class UtilizacaoDosCreditosNaApuracaoVisualizar extends TestBaseEliel {
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = utilizacaoDosCreditosNaApuracaoVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
-	
-	
+	}
+
 }

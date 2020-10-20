@@ -17,41 +17,41 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TributosVisualizar extends TestBaseEliel{
-  LoginTC loginTC;
-  AcessarMDRPO acessarMDRPO;
-  TributosVisualizarPO tributosVisualizarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  tributosVisualizarPO = new TributosVisualizarPO();
-  }
+public class TributosVisualizar extends TestBaseEliel {
+	LoginTC loginTC;
+	AcessarMDRPO acessarMDRPO;
+	TributosVisualizarPO tributosVisualizarPO;
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		tributosVisualizarPO = new TributosVisualizarPO();
+	}
 
-  @Test(priority = 1)
-  public void acessarMDR() {
-	  acessarMDRPO.acessarMDR();
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 2)
-  public void visualizar() {
-	  ArrayList<Boolean> sucesso = tributosVisualizarPO.visualizarTributo();
-	  for (int i = 0; i < sucesso.size(); i++) {
-			
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
+
+	@Test(priority = 1)
+	public void acessarMDR() {
+		acessarMDRPO.acessarMDR();
+	}
+
+	@Test(priority = 2)
+	public void visualizar() {
+		ArrayList<Boolean> sucesso = tributosVisualizarPO.visualizarTributo();
+		for (int i = 0; i < sucesso.size(); i++) {
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	 // assertEquals(sucesso, "edit", EmpresaVisualizar);
-  }
+		// assertEquals(sucesso, "edit", EmpresaVisualizar);
+	}
 }

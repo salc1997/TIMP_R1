@@ -25,7 +25,7 @@ public class CampoOutputPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//*[@id=\"draggable-66\"]/div/div/div")
 	public WebElement coluna;
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[7]")
+	@FindBy(xpath = "//span[text()=\"Adicionar campo output\"]")
 	public WebElement colunaO;
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
 	public WebElement aplicar;
@@ -50,6 +50,8 @@ public class CampoOutputPO extends TestBaseSteven{
 	
 	
 	public boolean agregarOutput() {
+		
+	    String url = driver.getCurrentUrl();
 		
 		
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
@@ -83,11 +85,10 @@ public class CampoOutputPO extends TestBaseSteven{
 		sleep(2000);
 		aplicar.click();
 		
-
+		
 		waitExpectXpath("//*[@id=\"editor-toolbar\"]/div/ul/li[3]/button");
 		sleep(5000);
-		//sleep(menuT);
-		sleep(000);
+
 		
 		gravar.click();
 		

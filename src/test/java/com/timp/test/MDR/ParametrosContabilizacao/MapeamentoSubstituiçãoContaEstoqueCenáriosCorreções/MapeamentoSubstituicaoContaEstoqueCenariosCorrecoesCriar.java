@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoConta
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoEditarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO;
 
-public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar extends TestBaseSteven{
+public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -29,12 +29,12 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar extends Te
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -52,8 +52,8 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar extends Te
 	public void criar() {
 
 		boolean sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO.criar();
-		
+
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

@@ -13,7 +13,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
 
-import org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -72,8 +72,7 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-
-		driver.get(tc2);
+		driver.get(tp1);
 
 		return driver;
 	}
@@ -212,6 +211,19 @@ public class TestBaseSteven {
 		Date fecha = new Date();
 
 		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(-1));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
+	
+
+	public String fechaManana() {
+
+		Date fecha = new Date();
+
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+1));
 
 		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
 
@@ -463,5 +475,7 @@ public class TestBaseSteven {
 	public String Criar = "O registro não foi criado com sucesso";
 	public String Eliminado = "O registro não foi eliminado com sucesso";
 	public String Detalhes = "As informações não são as esperadas";
+	
+	public String Atualizar = "Não foi possivel atualizar os registros";
 
 }

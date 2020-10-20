@@ -14,13 +14,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizarPO;
 
+public class ContasDefaultPorTributoVisualizar extends TestBaseEliel {
 
-
-public class ContasDefaultPorTributoVisualizar extends TestBaseEliel{
- 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultPorTributoVisualizarPO contasDefaultPorTributoVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -29,9 +28,11 @@ public class ContasDefaultPorTributoVisualizar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultPorTributoVisualizarPO = new ContasDefaultPorTributoVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,10 +51,10 @@ public class ContasDefaultPorTributoVisualizar extends TestBaseEliel{
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = contasDefaultPorTributoVisualizarPO.visualizar();
-		
-		 for (int i = 0; i < sucesso.size(); i++) {
+
+		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-	}	
-	
+	}
+
 }

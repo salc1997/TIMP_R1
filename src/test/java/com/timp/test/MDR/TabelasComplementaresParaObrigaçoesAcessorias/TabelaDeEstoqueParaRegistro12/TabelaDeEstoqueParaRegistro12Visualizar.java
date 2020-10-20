@@ -15,10 +15,10 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class TabelaDeEstoqueParaRegistro12Visualizar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeEstoqueParaRegistro12VisualizarPO tabelaDeEstoqueParaRegistro12VisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,9 +27,11 @@ public class TabelaDeEstoqueParaRegistro12Visualizar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeEstoqueParaRegistro12VisualizarPO = new TabelaDeEstoqueParaRegistro12VisualizarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,13 +50,12 @@ public class TabelaDeEstoqueParaRegistro12Visualizar extends TestBaseEliel {
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = tabelaDeEstoqueParaRegistro12VisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}			
-	
-	
+	}
+
 }

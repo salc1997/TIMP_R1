@@ -27,105 +27,97 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.FiltrosPO;
 
-public class Filtros extends TestBaseSteven{
-  
+public class Filtros extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	FiltrosPO filtrosPO;
 
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		filtrosPO = new FiltrosPO();
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
-	
-	
-	
+
 	@Test(priority = 2)
 	public void filtrosEditor() {
 
-	String url = driver.getCurrentUrl();
-		
+		String url = driver.getCurrentUrl();
+
 		boolean amb = false;
-		
+
 		if (url.contains("tc2")) {
 			amb = true;
-		}else {
-			amb =false;
+		} else {
+			amb = false;
 		}
-		
+
 		boolean mostrado = false;
 		mostrado = filtrosPO.AsignarFiltros();
 		assertTrue(mostrado, "No está siendo mostrados");
-		
+
 		filtrosPO.aplicarEditor();
-		
+
 		ArrayList<String> empresas = new ArrayList<String>();
 		empresas = (ArrayList<String>) filtrosPO.empresa();
-		
+
 		ArrayList<String> ufFiliais = new ArrayList<String>();
 		ufFiliais = (ArrayList<String>) filtrosPO.ufFilial();
-		
+
 		ArrayList<String> filial = new ArrayList<String>();
 		filial = (ArrayList<String>) filtrosPO.filial();
-		
+
 		ArrayList<Boolean> data = new ArrayList<Boolean>();
 		data = (ArrayList<Boolean>) filtrosPO.data();
-		
-		if (amb==false) {
+
+		if (amb == false) {
 			for (int i = 0; i < empresas.size(); i++) {
 
 				assertEquals(empresas.get(i), "1000");
 				assertEquals(ufFiliais.get(i), "SP");
 				assertEquals(filial.get(i), "0001");
 				assertTrue(data.get(i), filtros);
-				
+
 			}
-			
-		}else {
+
+		} else {
 			for (int i = 0; i < empresas.size(); i++) {
 
 				assertEquals(empresas.get(i), "1000");
 				assertEquals(ufFiliais.get(i), "BA");
 				assertEquals(filial.get(i), "0143");
 				assertTrue(data.get(i), filtros);
-				
+
 			}
 		}
-		
-
 
 	}
 
-	
-	 @Test(priority = 3)
-	 
+	@Test(priority = 3)
+
 	public void filtrosBiblioteca() {
-		 
+
 		String url = driver.getCurrentUrl();
 		boolean amb = false;
 
@@ -134,7 +126,7 @@ public class Filtros extends TestBaseSteven{
 		} else {
 			amb = false;
 		}
-	
+
 		filtrosPO.aplicarBiblioteca();
 
 		ArrayList<String> empresas = new ArrayList<String>();
@@ -149,36 +141,34 @@ public class Filtros extends TestBaseSteven{
 		ArrayList<Boolean> data = new ArrayList<Boolean>();
 		data = (ArrayList<Boolean>) filtrosPO.data();
 
-		if (amb==false) {
+		if (amb == false) {
 			for (int i = 0; i < empresas.size(); i++) {
 
 				assertEquals(empresas.get(i), "1000");
 				assertEquals(ufFiliais.get(i), "SP");
 				assertEquals(filial.get(i), "0001");
 				assertTrue(data.get(i), filtros);
-				
+
 			}
-			
-		}else {
+
+		} else {
 			for (int i = 0; i < empresas.size(); i++) {
 
 				assertEquals(empresas.get(i), "1000");
 				assertEquals(ufFiliais.get(i), "BA");
 				assertEquals(filial.get(i), "0143");
 				assertTrue(data.get(i), filtros);
-				
+
 			}
 		}
 
-
-				
 	}
-	 
-	 @Test(priority = 4)
+
+	@Test(priority = 4)
 	public void asignarValores() {
-		
-		filtrosPO.establecerValores();		
-		
+
+		filtrosPO.establecerValores();
+
 	}
 
 }

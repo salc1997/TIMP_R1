@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class TabelaDeAtribuicaoDeCodigoCFOPEditar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeAtribuicaoDeCodigoCFOPEditarPO tabelaDeAtribuicaoDeCodigoCFOPEditarPO;
@@ -26,7 +25,7 @@ public class TabelaDeAtribuicaoDeCodigoCFOPEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPEditarPO = new TabelaDeAtribuicaoDeCodigoCFOPEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -44,18 +43,14 @@ public class TabelaDeAtribuicaoDeCodigoCFOPEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = tabelaDeAtribuicaoDeCodigoCFOPEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-	
-	
-	
-	
+	}
+
 }

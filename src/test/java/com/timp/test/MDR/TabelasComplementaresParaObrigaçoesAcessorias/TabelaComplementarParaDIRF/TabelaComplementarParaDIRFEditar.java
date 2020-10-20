@@ -11,10 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFEditarPO;
 
-public class TabelaComplementarParaDIRFEditar extends TestBaseEliel{
-
-	
-	
+public class TabelaComplementarParaDIRFEditar extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -28,12 +25,12 @@ public class TabelaComplementarParaDIRFEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaComplementarParaDIRFEditarPO = new TabelaComplementarParaDIRFEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,15 +43,14 @@ public class TabelaComplementarParaDIRFEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = tabelaComplementarParaDIRFEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
+	}
+
 }

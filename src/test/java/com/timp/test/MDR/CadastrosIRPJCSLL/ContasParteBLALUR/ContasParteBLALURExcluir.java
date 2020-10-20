@@ -12,52 +12,46 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel.*;
 import com.sap.timp.pageObjectModel.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluirPO;
 
-public class ContasParteBLALURExcluir extends TestBaseSteven{
+public class ContasParteBLALURExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasParteBLALURExcluirPO contasParteBLALURExcluirPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		contasParteBLALURExcluirPO = new ContasParteBLALURExcluirPO();
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
 
-	
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-	
-	 @Test(priority = 2)
-	  public void excluir() {
-		  
+
+	@Test(priority = 2)
+	public void excluir() {
+
 		boolean sucesso = contasParteBLALURExcluirPO.excluir();
-		
+
 		assertTrue(sucesso, Eliminado);
-	
-	  }
-	
-	
+
+	}
+
 }
-	

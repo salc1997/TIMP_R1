@@ -22,60 +22,57 @@ public class FiltroColunas extends TestBaseSteven {
 	AcessarBrbPO acessarBrbPO;
 	FiltroColunasPO filtroColunasPO;
 
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		filtroColunasPO = new FiltroColunasPO();
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
-	@Test(priority= 2)
+
+	@Test(priority = 2)
 	public void filtroConFerramenta1() {
-	
+
 		boolean sucesso = false;
 		sucesso = filtroColunasPO.filtroFerramenta();
-		
+
 		assertTrue(sucesso, aplicaçãoFiltros);
 		System.out.println(sucesso);
-		
+
 		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
 		sucesso2 = filtroColunasPO.aplicar();
 		System.out.println(sucesso2);
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), filtros);
 		}
-		
-		
+
 	}
-	
+
 	@Test(priority = 3)
 	public void filtroConFerramenta2() {
-		
+
 		boolean sucesso = false;
 		sucesso = filtroColunasPO.filtroFerramenta2();
-		
+
 		assertTrue(sucesso, filtros);
 		System.out.println(sucesso);
 		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
@@ -84,17 +81,7 @@ public class FiltroColunas extends TestBaseSteven {
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), filtros);
 		}
-		
-		
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

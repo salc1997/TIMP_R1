@@ -1,6 +1,7 @@
 package com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,8 +13,8 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditarPO;
 
-public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
-  
+public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoDaSituaçaoTributariaEditarPO tabelaCodigoDaSituaçaoTributariaEditarPO;
@@ -26,7 +27,7 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoDaSituaçaoTributariaEditarPO = new TabelaCodigoDaSituaçaoTributariaEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -44,18 +45,14 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
-		String sucesso =tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+
+		boolean sucesso = tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
+
+		assertTrue(sucesso, Editar);
+
 	}
-	
-	
-	
-	
+
 }

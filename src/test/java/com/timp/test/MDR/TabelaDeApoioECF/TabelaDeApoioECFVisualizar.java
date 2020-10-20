@@ -4,30 +4,35 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizarPO;
 
-public class TabelaDeApoioECFVisualizar extends TestBaseEliel{
- 
+public class TabelaDeApoioECFVisualizar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFVisualizarPO tabelaDeApoioECFVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeApoioECFVisualizarPO = new TabelaDeApoioECFVisualizarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -43,16 +48,14 @@ public class TabelaDeApoioECFVisualizar extends TestBaseEliel{
 	}
 
 	@Test(priority = 2)
-	public void Visualizar() {
+	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = tabelaDeApoioECFVisualizarPO.visualizar();
-		
+		System.out.println(sucesso);
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		}	
+	}
 }
-	
-	
-

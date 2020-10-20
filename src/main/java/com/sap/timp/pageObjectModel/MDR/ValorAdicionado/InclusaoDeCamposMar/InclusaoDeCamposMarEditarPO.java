@@ -50,7 +50,7 @@ public class InclusaoDeCamposMarEditarPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		valoradicionado.click();
 		sleep(2000);
@@ -81,7 +81,44 @@ public class InclusaoDeCamposMarEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		//ediçao
-		uf.click();
+		
+		String valor = datainiciovigencia.getAttribute("value");
+
+		String enviar = dataanterior();
+
+		datainiciovigencia.clear();
+		sleep(2000);
+		datainiciovigencia.sendKeys(enviar);
+		sleep(2000);
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+
+		driver.navigate().refresh();
+		sleep(2000);
+		waitExpectElement(biblioteca);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		String novoTexto=datainiciovigencia.getAttribute("value");
+		
+		System.out.println(valor);
+		System.out.println(novoTexto);
+		boolean sucesso = novoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		return sucesso;
+		/*uf.click();
 		sleep(2000);
 		opcaouf.click();
 		
@@ -118,7 +155,7 @@ public class InclusaoDeCamposMarEditarPO extends TestBaseEliel {
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		System.out.println(sucesso);	
-		return sucesso;
+		return sucesso;*/
 	}	
 
 }

@@ -11,10 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriarPO;
 
-public class ParametrosParaTPCriar extends TestBaseEliel{
+public class ParametrosParaTPCriar extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosParaTPCriarPO parametrosParaTPCriarPO;
@@ -27,9 +25,11 @@ public class ParametrosParaTPCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaTPCriarPO = new ParametrosParaTPCriarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,10 +47,9 @@ public class ParametrosParaTPCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = parametrosParaTPCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
+
+	}
+
 }

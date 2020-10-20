@@ -14,8 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
 import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaVisualizarPO;
 
-
-public class CodigoReceitaVisualizar extends TestBaseSteven{
+public class CodigoReceitaVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -29,12 +28,12 @@ public class CodigoReceitaVisualizar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoReceitaVisualizarPO = new CodigoReceitaVisualizarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -52,10 +51,10 @@ public class CodigoReceitaVisualizar extends TestBaseSteven{
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = codigoReceitaVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 	}
 }

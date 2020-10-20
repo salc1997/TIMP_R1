@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscai
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
 
 public class LivrosFiscaisDetalhes extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LivrosFiscaisDetalhesPO livrosFiscaisDetalhesPO;
@@ -30,9 +30,11 @@ public class LivrosFiscaisDetalhes extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		livrosFiscaisDetalhesPO = new LivrosFiscaisDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,16 +52,11 @@ public class LivrosFiscaisDetalhes extends TestBaseSteven {
 	@Test(priority = 2)
 	public void detalhes() {
 
-		
 		ArrayList<Boolean> sucesso = livrosFiscaisDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-	}			
-			
-	
-	
-	
-	
+	}
+
 }

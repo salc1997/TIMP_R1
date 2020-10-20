@@ -12,10 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditarPO;
 
 public class DeterminacaoDeTipoDeCondicaoEditar extends TestBaseEliel {
- 
-	
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacaoDeTipoDeCondicaoEditarPO determinacaoDeTipoDeCondicaoEditarPO;
@@ -28,12 +25,12 @@ public class DeterminacaoDeTipoDeCondicaoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		determinacaoDeTipoDeCondicaoEditarPO = new DeterminacaoDeTipoDeCondicaoEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,14 +43,13 @@ public class DeterminacaoDeTipoDeCondicaoEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = determinacaoDeTipoDeCondicaoEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
+	}
 }

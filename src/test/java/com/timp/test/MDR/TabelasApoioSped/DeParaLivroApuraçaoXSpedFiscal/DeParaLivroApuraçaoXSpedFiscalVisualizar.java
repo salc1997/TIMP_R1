@@ -14,13 +14,12 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalVisualizarPO;
 
-public class DeParaLivroApuraçaoXSpedFiscalVisualizar extends TestBaseEliel{
-	
-	
-	
+public class DeParaLivroApuraçaoXSpedFiscalVisualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeParaLivroApuraçaoXSpedFiscalVisualizarPO deParaLivroApuraçaoXSpedFiscalVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -29,9 +28,11 @@ public class DeParaLivroApuraçaoXSpedFiscalVisualizar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		deParaLivroApuraçaoXSpedFiscalVisualizarPO = new DeParaLivroApuraçaoXSpedFiscalVisualizarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,12 +51,12 @@ public class DeParaLivroApuraçaoXSpedFiscalVisualizar extends TestBaseEliel{
 	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = deParaLivroApuraçaoXSpedFiscalVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), visualizaçar);
-			
+
 		}
-	}	
-  
+	}
+
 }

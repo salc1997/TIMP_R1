@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RepresentantesLegais.RepresentantesLegaisCriarPO;
 
-public class RepresentanteLegaisCriar extends TestBaseEliel{
- 
-	
+public class RepresentanteLegaisCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RepresentantesLegaisCriarPO representantesLegaisCriarPO;
@@ -26,9 +25,11 @@ public class RepresentanteLegaisCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		representantesLegaisCriarPO = new RepresentantesLegaisCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,12 +47,9 @@ public class RepresentanteLegaisCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = representantesLegaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
+
+	}
+
 }

@@ -25,12 +25,12 @@ public class TabelaDeCodigosDeTransferenciasEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeCodigosDeTransferenciasEditarPO = new TabelaDeCodigosDeTransferenciasEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,14 +43,13 @@ public class TabelaDeCodigosDeTransferenciasEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = tabelaDeCodigosDeTransferenciasEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
+	}
 }

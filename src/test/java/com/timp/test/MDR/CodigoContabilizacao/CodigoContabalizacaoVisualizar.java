@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoContabalizacaoVisualizar extends TestBaseEliel{
+public class CodigoContabalizacaoVisualizar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoContabilizacaoVisualizarPO codigoContabilizacaoVisualizarPO;
@@ -30,9 +30,11 @@ public class CodigoContabalizacaoVisualizar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContabilizacaoVisualizarPO = new CodigoContabilizacaoVisualizarPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,20 +52,18 @@ public class CodigoContabalizacaoVisualizar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void visualizar() {
 
+		ArrayList<Boolean> sucesso = codigoContabilizacaoVisualizarPO.visualizar();
 
-		 ArrayList<Boolean> sucesso = codigoContabilizacaoVisualizarPO.visualizar();
-		
-		 for (int i = 0; i < sucesso.size(); i++) {
-				
-				assertTrue(sucesso.get(i), visualizaçar);
-				
-			}
-		 
-		 
-		 //assertEquals(sucesso, "edit", visualizaçar);
-		 
-		//Teste pra conferir se conseguiu acesssar o sistema
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), visualizaçar);
+
+		}
+
+		// assertEquals(sucesso, "edit", visualizaçar);
+
+		// Teste pra conferir se conseguiu acesssar o sistema
 		assertTrue(codigoContabilizacaoVisualizarPO.mostrar.isDisplayed(), semAcesso);
-		
+
 	}
 }

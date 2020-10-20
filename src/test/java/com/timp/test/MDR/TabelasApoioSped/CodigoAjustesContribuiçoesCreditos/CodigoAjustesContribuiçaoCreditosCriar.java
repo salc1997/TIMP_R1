@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoAjustesContribuiçaoCreditosCriar extends TestBaseSteven{
+public class CodigoAjustesContribuiçaoCreditosCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -29,9 +29,11 @@ public class CodigoAjustesContribuiçaoCreditosCriar extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçoesCreditosCriarPO = new CodigoAjustesContribuiçoesCreditosCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -51,7 +53,7 @@ public class CodigoAjustesContribuiçaoCreditosCriar extends TestBaseSteven{
 
 		boolean sucesso = codigoAjustesContribuiçoesCreditosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}	
-	
+
+	}
+
 }

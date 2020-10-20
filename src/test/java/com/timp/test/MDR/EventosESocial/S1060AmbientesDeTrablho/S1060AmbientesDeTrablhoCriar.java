@@ -11,8 +11,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoCriarPO;
 
 public class S1060AmbientesDeTrablhoCriar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S1060AmbientesDeTrablhoCriarPO s1060AmbientesDeTrablhoCriarPO;
@@ -45,12 +44,9 @@ public class S1060AmbientesDeTrablhoCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = s1060AmbientesDeTrablhoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
-	
-	
+
+	}
+
 }

@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSExcluirPO;
 
-public class DocumentosFiscaisICMSExcluir extends TestBaseEliel{
-	
-	
+public class DocumentosFiscaisICMSExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DocumentosFiscaisICMSExcluirPO documentosFiscaisICMSExcluirPO;
@@ -26,9 +25,11 @@ public class DocumentosFiscaisICMSExcluir extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		documentosFiscaisICMSExcluirPO = new DocumentosFiscaisICMSExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,12 +47,9 @@ public class DocumentosFiscaisICMSExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = documentosFiscaisICMSExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
 
-	
- 
+	}
+
 }

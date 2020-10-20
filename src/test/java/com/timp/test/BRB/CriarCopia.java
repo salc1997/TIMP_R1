@@ -21,67 +21,54 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.CriarCopiaPO;
 
-public class CriarCopia extends TestBaseSteven{
-	
+public class CriarCopia extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	CriarCopiaPO criarCopiaPO;
 
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		criarCopiaPO = new CriarCopiaPO();
-	
 
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-    
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
+
 	@Test(priority = 2)
 	public void criarCopia() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
+
 		sucesso = criarCopiaPO.copiar();
-		
+
 		System.out.println(sucesso);
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), copiaNaoCriada);
 		}
-		
-				
+
 		criarCopiaPO.eliminarCopia();
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
-	
+
 }

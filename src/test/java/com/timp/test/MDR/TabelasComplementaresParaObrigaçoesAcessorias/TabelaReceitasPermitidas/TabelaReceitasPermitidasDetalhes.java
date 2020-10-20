@@ -16,12 +16,12 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhesPO;
 
-public class TabelaReceitasPermitidasDetalhes extends TestBaseSteven{
-	
+public class TabelaReceitasPermitidasDetalhes extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasPermitidasDetalhesPO tabelaReceitasPermitidasDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -30,9 +30,11 @@ public class TabelaReceitasPermitidasDetalhes extends TestBaseSteven{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaReceitasPermitidasDetalhesPO = new TabelaReceitasPermitidasDetalhesPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -51,13 +53,12 @@ public class TabelaReceitasPermitidasDetalhes extends TestBaseSteven{
 	public void Detalhes() {
 
 		ArrayList<Boolean> sucesso = tabelaReceitasPermitidasDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-	
- 
+	}
+
 }

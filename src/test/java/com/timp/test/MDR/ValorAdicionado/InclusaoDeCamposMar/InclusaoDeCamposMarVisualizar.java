@@ -16,21 +16,24 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarVisualizarPO;
 
 public class InclusaoDeCamposMarVisualizar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InclusaoDeCamposMarVisualizarPO inclusaoDeCamposMarVisualizarPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		inclusaoDeCamposMarVisualizarPO= new InclusaoDeCamposMarVisualizarPO();
+		inclusaoDeCamposMarVisualizarPO = new InclusaoDeCamposMarVisualizarPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,12 +52,10 @@ public class InclusaoDeCamposMarVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = inclusaoDeCamposMarVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),visualizaçar);
+			assertTrue(sucesso.get(i), visualizaçar);
 		}
-	}	
-	
-	
-	
+	}
+
 }

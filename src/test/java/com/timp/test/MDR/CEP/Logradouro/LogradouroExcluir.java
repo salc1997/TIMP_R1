@@ -13,24 +13,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class LogradouroExcluir extends TestBaseKathy{
+public class LogradouroExcluir extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LogradouroExcluirPO logradouroExcluirPO;
-	
-    @BeforeClass
-    public void beforeClass() {
-    	driver = initializationK();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationK();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		logradouroExcluirPO = new LogradouroExcluirPO();
-    }
+	}
 
-    @AfterClass
-    public void afterClass() {
-    }
-  
-    @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,9 +41,9 @@ public class LogradouroExcluir extends TestBaseKathy{
 	}
 
 	@Test(priority = 2)
-    public void excluir() {
-    	boolean sucesso = logradouroExcluirPO.logradouroExcluir();
+	public void excluir() {
+		boolean sucesso = logradouroExcluirPO.logradouroExcluir();
 		assertTrue(sucesso, Eliminado);
-    }
+	}
 
 }

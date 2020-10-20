@@ -22,7 +22,6 @@ import org.testng.annotations.AfterClass;
 
 public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MotivosCesBeneficiosEliminarPO motivosCesBeneficiosEliminarPO;
@@ -35,9 +34,11 @@ public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		motivosCesBeneficiosEliminarPO = new MotivosCesBeneficiosEliminarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -56,10 +57,9 @@ public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
 	public void excluir() {
 
 		boolean sucesso = motivosCesBeneficiosEliminarPO.eliminar();
-		
+
 		assertTrue(sucesso, Eliminado);
 
-		
 	}
 
 }

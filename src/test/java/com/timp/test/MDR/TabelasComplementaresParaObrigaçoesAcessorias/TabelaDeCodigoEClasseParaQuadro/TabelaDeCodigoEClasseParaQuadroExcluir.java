@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluirPO;
 
 public class TabelaDeCodigoEClasseParaQuadroExcluir extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCodigoEClasseParaQuadroExcluirPO tabelaDeCodigoEClasseParaQuadroExcluirPO;
@@ -26,9 +25,11 @@ public class TabelaDeCodigoEClasseParaQuadroExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeCodigoEClasseParaQuadroExcluirPO = new TabelaDeCodigoEClasseParaQuadroExcluirPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,10 +47,9 @@ public class TabelaDeCodigoEClasseParaQuadroExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaDeCodigoEClasseParaQuadroExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 
 }

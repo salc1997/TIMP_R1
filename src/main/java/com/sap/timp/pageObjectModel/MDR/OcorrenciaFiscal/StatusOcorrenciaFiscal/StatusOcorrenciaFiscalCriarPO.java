@@ -38,6 +38,8 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"lastStatus\"]/div/div/div[2]")
 	public WebElement statusFinal;
 	
+	@FindBy(xpath = "//textarea")
+	public WebElement descricao;
 
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao;
@@ -146,7 +148,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		fechar.click();
 		sleep(2000);
 		
-		
+		descricao.sendKeys("Teste de Status da Ocorrência Fiscal");
 
 		dataVigencia.sendKeys(fechaActual());
 		sleep(1000);

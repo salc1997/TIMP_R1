@@ -10,49 +10,41 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ImprimirPO;
 
 public class Imprimir extends TestBaseSteven {
-	
-	
+
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ImprimirPO imprimirPO;
 
-
-
-
-    @BeforeClass
-    public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		imprimirPO = new ImprimirPO();
-	
 
-		
-    }
-    
-    @AfterClass
-	public void afterClass(){
+	}
+
+	@AfterClass
+	public void afterClass() {
 		driver.close();
 	}
-   
-    @Test(priority = 0)
+
+	@Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
 
 	}
-	
-	
-	@Test(priority= 1)
+
+	@Test(priority = 1)
 	public void brbEntrar() {
 		acessarBrbPO.acessar();
-			
+
 	}
-	
+
 	@Test(priority = 2)
 	public void imprimir() {
 		imprimirPO.imprimir();
 	}
-	
 
 }

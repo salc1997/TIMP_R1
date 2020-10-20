@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSEditarPO;
 
 public class DocumentosFiscaisICMSEditar extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DocumentosFiscaisICMSEditarPO documentosFiscaisICMSEditarPO;
@@ -26,7 +25,7 @@ public class DocumentosFiscaisICMSEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		documentosFiscaisICMSEditarPO = new DocumentosFiscaisICMSEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -44,16 +43,14 @@ public class DocumentosFiscaisICMSEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = documentosFiscaisICMSEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-	
-	
+	}
+
 }

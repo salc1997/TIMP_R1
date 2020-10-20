@@ -11,10 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalCriarPO;
 
-
 public class DeParaLivroApuraçaoXSpedFiscalCriar extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeParaLivroApuraçaoXSpedFiscalCriarPO deParaLivroApuraçaoXSpedFiscalCriarPO;
@@ -27,9 +25,11 @@ public class DeParaLivroApuraçaoXSpedFiscalCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		deParaLivroApuraçaoXSpedFiscalCriarPO = new DeParaLivroApuraçaoXSpedFiscalCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,13 +47,9 @@ public class DeParaLivroApuraçaoXSpedFiscalCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = deParaLivroApuraçaoXSpedFiscalCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}		
-		
-	
-	
+
+	}
 
 }

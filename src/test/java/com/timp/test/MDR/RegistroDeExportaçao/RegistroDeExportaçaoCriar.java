@@ -7,7 +7,6 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoCriarPO;
 
-
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
@@ -15,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class RegistroDeExportaçaoCriar extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroDeExportaçaoCriarPO registroDeExportaçaoCriarPO;
@@ -28,9 +27,11 @@ public class RegistroDeExportaçaoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		registroDeExportaçaoCriarPO = new RegistroDeExportaçaoCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -50,9 +51,7 @@ public class RegistroDeExportaçaoCriar extends TestBaseEliel {
 
 		boolean sucesso = registroDeExportaçaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}		
-	
-	
-	
+
+	}
+
 }

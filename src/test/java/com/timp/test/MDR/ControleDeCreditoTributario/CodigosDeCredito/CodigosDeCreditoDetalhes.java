@@ -18,7 +18,7 @@ public class CodigosDeCreditoDetalhes extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosDeCreditoDetalhesPO codigosDeCreditoDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -27,9 +27,11 @@ public class CodigosDeCreditoDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		codigosDeCreditoDetalhesPO = new CodigosDeCreditoDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -48,15 +50,12 @@ public class CodigosDeCreditoDetalhes extends TestBaseEliel {
 	public void Detalhes() {
 
 		ArrayList<Boolean> sucesso = codigosDeCreditoDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-	
-	
-	
-	
+	}
+
 }

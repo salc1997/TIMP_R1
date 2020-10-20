@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaDeApoioECFCriarPO extends TestBaseEliel{
+public class TabelaDeApoioECFCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//ul/li[contains(@identifier,\"supportParameterECF\") and @tabindex=\"0\"]")
 	public WebElement tabelaecf;
@@ -39,6 +40,12 @@ public class TabelaDeApoioECFCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//div[@id=\"layout-version\"]/div/div[2]")
 	public WebElement versaoleiaute;
+	
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição\")]")
+	public WebElement descricao;
+	
+	
 	
 
 	
@@ -83,6 +90,8 @@ public class TabelaDeApoioECFCriarPO extends TestBaseEliel{
 		opcao.click();
 		
 		sleep(2000);
+		
+		descricao.sendKeys("Teste Tabela de Apoio ECF");
 		
 		versaoleiaute.click();
 		

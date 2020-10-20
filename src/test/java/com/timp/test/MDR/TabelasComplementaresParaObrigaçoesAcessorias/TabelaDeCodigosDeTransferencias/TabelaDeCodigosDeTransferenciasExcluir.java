@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class TabelaDeCodigosDeTransferenciasExcluir extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCodigosDeTransferenciasExcluirPO tabelaDeCodigosDeTransferenciasExcluirPO;
@@ -26,9 +25,11 @@ public class TabelaDeCodigosDeTransferenciasExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeCodigosDeTransferenciasExcluirPO = new TabelaDeCodigosDeTransferenciasExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -46,12 +47,9 @@ public class TabelaDeCodigosDeTransferenciasExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tabelaDeCodigosDeTransferenciasExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
 
-	
-	
+	}
+
 }

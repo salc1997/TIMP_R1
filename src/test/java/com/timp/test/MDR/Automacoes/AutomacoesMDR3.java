@@ -127,178 +127,168 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 	CodigoAjustesContribuiçaoCreditosCriar codigoAjustesContribuiçaoCreditosCriar;
 	CodigoAjustesContribuiçaoCreditosExcluir codigoAjustesContribuiçaoCreditosExcluir;
-	
-	
-	
-	//Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada
-	
+
+	// Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada
+
 	CodigoContribuiçaoSocialApuradaCriar codigoContribuiçaoSocialApuradaCriar;
 	CodigoContribuiçaoSocialApuradaDetalhes codigoContribuiçaoSocialApuradaDetalhes;
 	CodigoContribuiçaoSocialApuradaEditar codigoContribuiçaoSocialApuradaEditar;
 	CodigoContribuiçaoSocialApuradaExcluir codigoContribuiçaoSocialApuradaExcluir;
 	CodigoContribuiçaoSocialApuradaVisualizar codigoContribuiçaoSocialApuradaVisualizar;
-	
-	
-	//4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI
-	
+
+	// 4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI
+
 	CodigoDeAjusteDaApuraçaoDoIPICriar codigoDeAjusteDaApuraçaoDoIPICriar;
 	CodigoDeAjusteDaApuraçaoDoIPIDetalhes codigoDeAjusteDaApuraçaoDoIPIDetalhes;
 	CodigoDeAjusteDaApuraçaoDoIPIEditar codigoDeAjusteDaApuraçaoDoIPIEditar;
 	CodigoDeAjusteDaApuraçaoDoIPIExcluir codigoDeAjusteDaApuraçaoDoIPIExcluir;
 	CodigoDeAjusteDaApuraçaoDoIPIVisualizar codigoDeAjusteDaApuraçaoDoIPIVisualizar;
-	
-	
-	//5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher
-	
+
+	// 5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher
+
 	CodigosDasObrigaçoesDeICMSaRecolherCriar codigosDasObrigaçoesDeICMSaRecolherCriar;
 	CodigosDasObrigaçoesDeICMSaRecolherDetalhes codigosDasObrigaçoesDeICMSaRecolherDetalhes;
 	CodigosDasObrigaçoesDeICMSaRecolherEditar codigosDasObrigaçoesDeICMSaRecolherEditar;
 	CodigosDasObrigaçoesDeICMSaRecolherExcluir codigosDasObrigaçoesDeICMSaRecolherExcluir;
 	CodigosDasObrigaçoesDeICMSaRecolherVisualizar codigosDasObrigaçoesDeICMSaRecolherVisualizar;
-	
-	
-	//4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito
-	
+
+	// 4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito
+
 	CodigoTipoCreditoCriar codigoTipoCreditoCriar;
 	CodigoTipoCreditoDetalhes codigoTipoCreditoDetalhes;
 	CodigoTipoCreditoEditar codigoTipoCreditoEditar;
 	CodigoTipoCreditoExcluir codigoTipoCreditoExcluir;
 	CodigoTipoCreditoFiltrosAvançados codigoTipoCreditoFiltrosAvançados;
 	CodigoTipoCreditoVisualizar codigoTipoCreditoVisualizar;
-	
-	
-	
-	//Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)
-	
+
+	// Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)
+
 	DeParaLivroApuraçaoXSpedFiscalCriar deParaLivroApuraçaoXSpedFiscalCriar;
 	DeParaLivroApuraçaoXSpedFiscalDetalhes deParaLivroApuraçaoXSpedFiscalDetalhes;
 	DeParaLivroApuraçaoXSpedFiscalEditar deParaLivroApuraçaoXSpedFiscalEditar;
 	DeParaLivroApuraçaoXSpedFiscalExcluir deParaLivroApuraçaoXSpedFiscalExcluir;
 	DeParaLivroApuraçaoXSpedFiscalVisualizar deParaLivroApuraçaoXSpedFiscalVisualizar;
-	
-	
-	//4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS
-	
+
+	// 4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS
+
 	DocumentosFiscaisICMSCriar documentosFiscaisICMSCriar;
 	DocumentosFiscaisICMSDetalhes documentosFiscaisICMSDetalhes;
 	DocumentosFiscaisICMSEditar documentosFiscaisICMSEditar;
 	DocumentosFiscaisICMSExcluir documentosFiscaisICMSExcluir;
 	DocumentosFiscaisICMSVisualizar documentosFiscaisICMSVisualizar;
-	
-	//5.2 Tabelas de Apoio do Sped > Informações Adicionais
-	
+
+	// 5.2 Tabelas de Apoio do Sped > Informações Adicionais
+
 	InformaçoesAdicionaisCriar informaçoesAdicionaisCriar;
 	InformaçoesAdicionaisDetalhes informaçoesAdicionaisDetalhes;
 	InformaçoesAdicionaisEditar informaçoesAdicionaisEditar;
 	InformaçoesAdicionaisExcluir informaçoesAdicionaisExcluir;
 	InformaçoesAdicionaisVisualizar informaçoesAdicionaisVisualizar;
-	
-	
-	//Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461
-	
+
+	// Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461
+
 	ObservaçoesdoDocumentoFiscalCriar observaçoesdoDocumentoFiscalCriar;
 	ObservaçoesdoDocumentoFiscalDetalhes observaçoesdoDocumentoFiscalDetalhes;
 	ObservaçoesdoDocumentoFiscalEditar observaçoesdoDocumentoFiscalEditar;
 	ObserbaçoesdoDocumentoFiscalExcluir obserbaçoesdoDocumentoFiscalExcluir;
 	ObservaçoesdoDocumentoFiscalVisualizar observaçoesdoDocumentoFiscalVisualizar;
-	
-	//Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria
-	
+
+	// Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria
+
 	TabelaCodigoDaSituaçaoTributariaCriar tabelaCodigoDaSituaçaoTributariaCriar;
 	TabelaCodigoDaSituaçaoTributariaDetalhes tabelaCodigoDaSituaçaoTributariaDetalhes;
 	TabelaCodigoDaSituaçaoTributariaEditar tabelaCodigoDaSituaçaoTributariaEditar;
 	TabelaCodigoDaSituaçaoTributariaExcluir tabelaCodigoDaSituaçaoTributariaExcluir;
 	TabelaCodigoDaSituaçaoTributariaVisualizar tabelaCodigoDaSituaçaoTributariaVisualizar;
-	
-	// Tabela de Apoio do SPED	> 5.5 Tipos De Utilizacao Dos Creditos Fiscais
-	
+
+	// Tabela de Apoio do SPED > 5.5 Tipos De Utilizacao Dos Creditos Fiscais
+
 	TiposDeUtilizacaoDosCreditosFiscaisCriar tiposDeUtilizacaoDosCreditosFiscaisCriar;
 	TiposDeUtilizacaoDosCreditosFiscaisDetalhes tiposDeUtilizacaoDosCreditosFiscaisDetalhes;
 	TiposDeUtilizacaoDosCreditosFiscaisEditar tiposDeUtilizacaoDosCreditosFiscaisEditar;
 	TiposDeUtilizacaoDosCreditosFiscaisExcluir tiposDeUtilizacaoDosCreditosFiscaisExcluir;
 	TiposDeUtilizacaoDosCreditosFiscaisVisualizar tiposDeUtilizacaoDosCreditosFiscaisVisualizar;
-	
+
 	// Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP
-	
+
 	AgrupadorDeCFOPCriar agrupadorDeCFOPCriar;
 	AgrupadorDeCFOPDetalhes agrupadorDeCFOPDetalhes;
 	AgrupadorDeCFOPEditar agrupadorDeCFOPEditar;
 	AgrupadorDeCFOPExcluir agrupadorDeCFOPExcluir;
 	AgrupadorDeCFOPVisualizar agrupadorDeCFOPVisualizar;
-	
-	
-	//Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE
-	
+
+	// Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios
+	// por Estado / IBGE
+
 	AtribuicaoMunicipioEstadoCriar atribuicaoMunicipioEstadoCriar;
 	AtribuicaoMunicipioEstadoDetalhes atribuicaoMunicipioEstadoDetalhes;
 	AtribuicaoMunicipioEstadoEditar atribuicaoMunicipioEstadoEditar;
 	AtribuicaoMunicipioEstadoExcluir atribuicaoMunicipioEstadoExcluir;
 	AtribuicaoMunicipioEstadoVisualizar atribuicaoMunicipioEstadoVisualizar;
 
-	
-	//Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes
-	
+	// Tabelas Complementares para Obrigações Acessórias > Código de Motivos de
+	// Ajustes
+
 	CodigoDeMotivosDeAjustesCriar codigoDeMotivosDeAjustesCriar;
 	CodigoDeMotivosDeAjustesEditar codigoDeMotivosDeAjustesEditar;
 	CodigoDeMotivosDeAjustesExcluir codigoDeMotivosDeAjustesExcluir;
-	
-	
-	//Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas
-	
+
+	// Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas
+
 	CodigoDeOutrasSaidasCriar codigoDeOutrasSaidasCriar;
 	CodigoDeOutrasSaidasDetalhes codigoDeOutrasSaidasDetalhes;
 	CodigoDeOutrasSaidasEditar codigoDeOutrasSaidasEditar;
 	CodigoDeOutrasSaidasExcluir codigoDeOutrasSaidasExcluir;
 	CodigoDeOutrasSaidasVisualizar codigoDeOutrasSaidasVisualizar;
-	
-	
-	
-	//Tabelas Complementares para Obrigações Acessórias > Código DIPAM
-	
+
+	// Tabelas Complementares para Obrigações Acessórias > Código DIPAM
+
 	CodigoDIPAMCriar codigoDIPAMCriar;
 	CodigoDIPAMDetalhes codigoDIPAMDetalhes;
 	CodigoDIPAMEditar codigoDIPAMEditar;
 	CodigoDIPAMExcluir codigoDIPAMExcluir;
 	CodigoDIPAMVisualizar codigoDIPAMVisualizar;
-	
-	//Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos
-	
+
+	// Tabelas Complementares para Obrigações Acessórias > SubItens Válidos
+
 	SubItensValidosCriar subItensValidosCriar;
-	SubItensValidosEditar 	subItensValidosEditar;
-	SubItensValidosExcluir 	subItensValidosExcluir;
-	
-	//Tabelas Complementares para Obrigações Acessórias > Tabela de Código da Receitas
-	
+	SubItensValidosEditar subItensValidosEditar;
+	SubItensValidosExcluir subItensValidosExcluir;
+
+	// Tabelas Complementares para Obrigações Acessórias > Tabela de Código da
+	// Receitas
+
 	TabelaCodigoReceitaCriar tabelaCodigoReceitaCriar;
 	TabelaCodigoReceitaDetalhes tabelaCodigoReceitaDetalhes;
 	TabelaCodigoReceitaExcluir tabelaCodigoReceitaExcluir;
-	
-	
-	//Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF
-	
+
+	// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para
+	// DIRF
+
 	TabelaComplementarParaDIRFCriar tabelaComplementarParaDIRFCriar;
 	TabelaComplementarParaDIRFDetalhes tabelaComplementarParaDIRFDetalhes;
 	TabelaComplementarParaDIRFEditar tabelaComplementarParaDIRFEditar;
 	TabelaComplementarParaDIRFExcluir tabelaComplementarParaDIRFExcluir;
 	TabelaComplementarParaDIRFVisualizar tabelaComplementarParaDIRFVisualizar;
-	
-	
-	// Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação
-	
+
+	// Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de
+	// Código CFOP / Código de Ajuste para Obrigação
+
 	TabelaDeAtribuicaoDeCodigoCFOPCriar tabelaDeAtribuicaoDeCodigoCFOPCriar;
 	TabelaDeAtribuicaoDeCodigoCFOPDetalhes tabelaDeAtribuicaoDeCodigoCFOPDetalhes;
 	TabelaDeAtribuicaoDeCodigoCFOPEditar tabelaDeAtribuicaoDeCodigoCFOPEditar;
 	TabelaDeAtribuicaoDeCodigoCFOPExcluir tabelaDeAtribuicaoDeCodigoCFOPExcluir;
 	TabelaDeAtribuicaoDeCodigoCFOPVisualizar tabelaDeAtribuicaoDeCodigoCFOPVisualizar;
-	
-    //Tabelas Complementares para Obrigações Acessórias	Tabela de Código e Classe para Quadro
-	
+
+	// Tabelas Complementares para Obrigações Acessórias Tabela de Código e Classe
+	// para Quadro
+
 	TabelaDeCodigoEClasseParaQuadroCriar tabelaDeCodigoEClasseParaQuadroCriar;
 	TabelaDeCodigoEClasseParaQuadroDetalhes tabelaDeCodigoEClasseParaQuadroDetalhes;
 	TabelaDeCodigoEClasseParaQuadroEditar tabelaDeCodigoEClasseParaQuadroEditar;
 	TabelaDeCodigoEClasseParaQuadroExcluir tabelaDeCodigoEClasseParaQuadroExcluir;
 	TabelaDeCodigoEClasseParaQuadroVisualizar tabelaDeCodigoEClasseParaQuadroVisualizar;
-	
+
 	// --------------------------------------------------------------------------------------------------------------------
 
 	// Tabelas de Apoio do Sped > Classificação De Contribuentes Do IPI
@@ -401,1329 +391,1328 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	}
 
 	// 12
-	
+
 	// Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada
 
-		@Test(priority = 12)
-		public void codigoContribuiçaoSocialApuradaCriar() {
+	@Test(priority = 12)
+	public void codigoContribuiçaoSocialApuradaCriar() {
 
-			System.out.println("-------------------Tabelas de Apoio do Sped > 4.3.5 Código de Codigo de Contribuição Social Apurada-------------------------");
+		System.out.println(
+				"-------------------Tabelas de Apoio do Sped > 4.3.5 Código de Codigo de Contribuição Social Apurada-------------------------");
+
+		codigoContribuiçaoSocialApuradaCriar = new CodigoContribuiçaoSocialApuradaCriar();
+		codigoContribuiçaoSocialApuradaCriar.beforeClass();
+		codigoContribuiçaoSocialApuradaCriar.login();
+		codigoContribuiçaoSocialApuradaCriar.acessarMDR();
+		codigoContribuiçaoSocialApuradaCriar.criar();
+		codigoContribuiçaoSocialApuradaCriar.afterClass();
 
-			codigoContribuiçaoSocialApuradaCriar = new CodigoContribuiçaoSocialApuradaCriar();
-			codigoContribuiçaoSocialApuradaCriar.beforeClass();
-			codigoContribuiçaoSocialApuradaCriar.login();
-			codigoContribuiçaoSocialApuradaCriar.acessarMDR();
-			codigoContribuiçaoSocialApuradaCriar.criar();
-			codigoContribuiçaoSocialApuradaCriar.afterClass();
+	}
 
-		}
+	@Test(priority = 13)
+	public void codigoContribuiçaoSocialApuradaEditar() {
+
+		codigoContribuiçaoSocialApuradaEditar = new CodigoContribuiçaoSocialApuradaEditar();
+		codigoContribuiçaoSocialApuradaEditar.beforeClass();
+		codigoContribuiçaoSocialApuradaEditar.login();
+		codigoContribuiçaoSocialApuradaEditar.acessarMDR();
+		codigoContribuiçaoSocialApuradaEditar.editar();
+		codigoContribuiçaoSocialApuradaEditar.afterClass();
 
-		@Test(priority = 13)
-		public void codigoContribuiçaoSocialApuradaEditar() {
+	}
 
-			codigoContribuiçaoSocialApuradaEditar = new CodigoContribuiçaoSocialApuradaEditar();
-			codigoContribuiçaoSocialApuradaEditar.beforeClass();
-			codigoContribuiçaoSocialApuradaEditar.login();
-			codigoContribuiçaoSocialApuradaEditar.acessarMDR();
-			codigoContribuiçaoSocialApuradaEditar.editar();
-			codigoContribuiçaoSocialApuradaEditar.afterClass();
+	@Test(priority = 14)
+	public void codigoContribuiçaoSocialApuradaVisualizar() {
+
+		codigoContribuiçaoSocialApuradaVisualizar = new CodigoContribuiçaoSocialApuradaVisualizar();
+		codigoContribuiçaoSocialApuradaVisualizar.beforeClass();
+		codigoContribuiçaoSocialApuradaVisualizar.login();
+		codigoContribuiçaoSocialApuradaVisualizar.acessarMDR();
+		codigoContribuiçaoSocialApuradaVisualizar.visualizar();
+		codigoContribuiçaoSocialApuradaVisualizar.afterClass();
 
-		}
+	}
 
-		@Test(priority = 14)
-		public void codigoContribuiçaoSocialApuradaVisualizar() {
+	@Test(priority = 15)
+	public void codigoContribuiçaoSocialApuradaDetalhes() {
 
-			codigoContribuiçaoSocialApuradaVisualizar = new CodigoContribuiçaoSocialApuradaVisualizar();
-			codigoContribuiçaoSocialApuradaVisualizar.beforeClass();
-			codigoContribuiçaoSocialApuradaVisualizar.login();
-			codigoContribuiçaoSocialApuradaVisualizar.acessarMDR();
-			codigoContribuiçaoSocialApuradaVisualizar.visualizar();
-			codigoContribuiçaoSocialApuradaVisualizar.afterClass();
+		codigoContribuiçaoSocialApuradaDetalhes = new CodigoContribuiçaoSocialApuradaDetalhes();
+		codigoContribuiçaoSocialApuradaDetalhes.beforeClass();
+		codigoContribuiçaoSocialApuradaDetalhes.login();
+		codigoContribuiçaoSocialApuradaDetalhes.acessarMDR();
+		codigoContribuiçaoSocialApuradaDetalhes.detalhes();
+		codigoContribuiçaoSocialApuradaDetalhes.afterClass();
 
-		}
-
-		@Test(priority = 15)
-		public void codigoContribuiçaoSocialApuradaDetalhes() {
+	}
 
-			codigoContribuiçaoSocialApuradaDetalhes = new CodigoContribuiçaoSocialApuradaDetalhes();
-			codigoContribuiçaoSocialApuradaDetalhes.beforeClass();
-			codigoContribuiçaoSocialApuradaDetalhes.login();
-			codigoContribuiçaoSocialApuradaDetalhes.acessarMDR();
-			codigoContribuiçaoSocialApuradaDetalhes.detalhes();
-			codigoContribuiçaoSocialApuradaDetalhes.afterClass();
+	@Test(priority = 16)
+	public void codigoContribuiçaoSocialApuradaExcluir() {
 
-		}
-
+		codigoContribuiçaoSocialApuradaExcluir = new CodigoContribuiçaoSocialApuradaExcluir();
+		codigoContribuiçaoSocialApuradaExcluir.beforeClass();
+		codigoContribuiçaoSocialApuradaExcluir.login();
+		codigoContribuiçaoSocialApuradaExcluir.acessarMDR();
+		codigoContribuiçaoSocialApuradaExcluir.excluir();
+		codigoContribuiçaoSocialApuradaExcluir.afterClass();
 
-		@Test(priority = 16)
-		public void codigoContribuiçaoSocialApuradaExcluir() {
+		System.out.println(
+				"-------------------Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada Fin-------------------------");
+	}
 
-			codigoContribuiçaoSocialApuradaExcluir = new CodigoContribuiçaoSocialApuradaExcluir();
-			codigoContribuiçaoSocialApuradaExcluir.beforeClass();
-			codigoContribuiçaoSocialApuradaExcluir.login();
-			codigoContribuiçaoSocialApuradaExcluir.acessarMDR();
-			codigoContribuiçaoSocialApuradaExcluir.excluir();
-			codigoContribuiçaoSocialApuradaExcluir.afterClass();
+	// 18
 
-			System.out.println("-------------------Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada Fin-------------------------");
-		}
+	// 4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI
 
-	//18
-		
-		
-		//4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI
+	@Test(priority = 18)
+	public void codigoDeAjusteDaApuraçaoDoIPICriar() {
 
-		@Test(priority = 18)
-		public void codigoDeAjusteDaApuraçaoDoIPICriar() {
+		System.out.println(
+				"-------------------4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI-------------------------");
 
-			System.out.println("-------------------4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI-------------------------");
-
-			codigoDeAjusteDaApuraçaoDoIPICriar = new CodigoDeAjusteDaApuraçaoDoIPICriar();
-			codigoDeAjusteDaApuraçaoDoIPICriar.beforeClass();
-			codigoDeAjusteDaApuraçaoDoIPICriar.login();
-			codigoDeAjusteDaApuraçaoDoIPICriar.acessarMDR();
-			codigoDeAjusteDaApuraçaoDoIPICriar.criar();
-			codigoDeAjusteDaApuraçaoDoIPICriar.afterClass();
+		codigoDeAjusteDaApuraçaoDoIPICriar = new CodigoDeAjusteDaApuraçaoDoIPICriar();
+		codigoDeAjusteDaApuraçaoDoIPICriar.beforeClass();
+		codigoDeAjusteDaApuraçaoDoIPICriar.login();
+		codigoDeAjusteDaApuraçaoDoIPICriar.acessarMDR();
+		codigoDeAjusteDaApuraçaoDoIPICriar.criar();
+		codigoDeAjusteDaApuraçaoDoIPICriar.afterClass();
 
-		}
+	}
 
-		@Test(priority = 19)
-		public void codigoDeAjusteDaApuraçaoDoIPIEditar() {
-
-			codigoDeAjusteDaApuraçaoDoIPIEditar = new CodigoDeAjusteDaApuraçaoDoIPIEditar();
-			codigoDeAjusteDaApuraçaoDoIPIEditar.beforeClass();
-			codigoDeAjusteDaApuraçaoDoIPIEditar.login();
-			codigoDeAjusteDaApuraçaoDoIPIEditar.acessarMDR();
-			codigoDeAjusteDaApuraçaoDoIPIEditar.editar();
-			codigoDeAjusteDaApuraçaoDoIPIEditar.afterClass();
+	@Test(priority = 19)
+	public void codigoDeAjusteDaApuraçaoDoIPIEditar() {
 
-		}
+		codigoDeAjusteDaApuraçaoDoIPIEditar = new CodigoDeAjusteDaApuraçaoDoIPIEditar();
+		codigoDeAjusteDaApuraçaoDoIPIEditar.beforeClass();
+		codigoDeAjusteDaApuraçaoDoIPIEditar.login();
+		codigoDeAjusteDaApuraçaoDoIPIEditar.acessarMDR();
+		codigoDeAjusteDaApuraçaoDoIPIEditar.editar();
+		codigoDeAjusteDaApuraçaoDoIPIEditar.afterClass();
 
-		@Test(priority = 20)
-		public void codigoDeAjusteDaApuraçaoDoIPIVisualizar() {
+	}
 
-			codigoDeAjusteDaApuraçaoDoIPIVisualizar = new CodigoDeAjusteDaApuraçaoDoIPIVisualizar();
-			codigoDeAjusteDaApuraçaoDoIPIVisualizar.beforeClass();
-			codigoDeAjusteDaApuraçaoDoIPIVisualizar.login();
-			codigoDeAjusteDaApuraçaoDoIPIVisualizar.acessarMDR();
-			codigoDeAjusteDaApuraçaoDoIPIVisualizar.visualizar();
-			codigoDeAjusteDaApuraçaoDoIPIVisualizar.afterClass();
+	@Test(priority = 20)
+	public void codigoDeAjusteDaApuraçaoDoIPIVisualizar() {
 
-		}
-
-		@Test(priority = 21)
-		public void codigoDeAjusteDaApuraçaoDoIPIDetalhes() {
-
-			codigoDeAjusteDaApuraçaoDoIPIDetalhes = new CodigoDeAjusteDaApuraçaoDoIPIDetalhes();
-			codigoDeAjusteDaApuraçaoDoIPIDetalhes.beforeClass();
-			codigoDeAjusteDaApuraçaoDoIPIDetalhes.login();
-			codigoDeAjusteDaApuraçaoDoIPIDetalhes.acessarMDR();
-			codigoDeAjusteDaApuraçaoDoIPIDetalhes.detalhes();
-			codigoDeAjusteDaApuraçaoDoIPIDetalhes.afterClass();
+		codigoDeAjusteDaApuraçaoDoIPIVisualizar = new CodigoDeAjusteDaApuraçaoDoIPIVisualizar();
+		codigoDeAjusteDaApuraçaoDoIPIVisualizar.beforeClass();
+		codigoDeAjusteDaApuraçaoDoIPIVisualizar.login();
+		codigoDeAjusteDaApuraçaoDoIPIVisualizar.acessarMDR();
+		codigoDeAjusteDaApuraçaoDoIPIVisualizar.visualizar();
+		codigoDeAjusteDaApuraçaoDoIPIVisualizar.afterClass();
 
-		}
-
-
-		@Test(priority = 22)
-		public void codigoDeAjusteDaApuraçaoDoIPIExcluir() {
+	}
 
-			codigoDeAjusteDaApuraçaoDoIPIExcluir = new CodigoDeAjusteDaApuraçaoDoIPIExcluir();
-			codigoDeAjusteDaApuraçaoDoIPIExcluir.beforeClass();
-			codigoDeAjusteDaApuraçaoDoIPIExcluir.login();
-			codigoDeAjusteDaApuraçaoDoIPIExcluir.acessarMDR();
-			codigoDeAjusteDaApuraçaoDoIPIExcluir.excluir();
-			codigoDeAjusteDaApuraçaoDoIPIExcluir.afterClass();
-
-			System.out.println("-------------------4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI Fin-------------------------");
-		}
-		
-		
-		//24
-		
-		// 5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher
+	@Test(priority = 21)
+	public void codigoDeAjusteDaApuraçaoDoIPIDetalhes() {
 
-		@Test(priority = 24)
-		public void codigosDasObrigaçoesDeICMSaRecolherCriar() {
+		codigoDeAjusteDaApuraçaoDoIPIDetalhes = new CodigoDeAjusteDaApuraçaoDoIPIDetalhes();
+		codigoDeAjusteDaApuraçaoDoIPIDetalhes.beforeClass();
+		codigoDeAjusteDaApuraçaoDoIPIDetalhes.login();
+		codigoDeAjusteDaApuraçaoDoIPIDetalhes.acessarMDR();
+		codigoDeAjusteDaApuraçaoDoIPIDetalhes.detalhes();
+		codigoDeAjusteDaApuraçaoDoIPIDetalhes.afterClass();
 
-			System.out.println("-------------------5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher-------------------------");
-
-			codigosDasObrigaçoesDeICMSaRecolherCriar = new CodigosDasObrigaçoesDeICMSaRecolherCriar();
-			codigosDasObrigaçoesDeICMSaRecolherCriar.beforeClass();
-			codigosDasObrigaçoesDeICMSaRecolherCriar.login();
-			codigosDasObrigaçoesDeICMSaRecolherCriar.acessarMDR();
-			codigosDasObrigaçoesDeICMSaRecolherCriar.criar();
-			codigosDasObrigaçoesDeICMSaRecolherCriar.afterClass();
+	}
 
-		}
+	@Test(priority = 22)
+	public void codigoDeAjusteDaApuraçaoDoIPIExcluir() {
 
-		@Test(priority = 25)
-		public void codigosDasObrigaçoesDeICMSaRecolherEditar() {
-
-			codigosDasObrigaçoesDeICMSaRecolherEditar = new CodigosDasObrigaçoesDeICMSaRecolherEditar();
-			codigosDasObrigaçoesDeICMSaRecolherEditar.beforeClass();
-			codigosDasObrigaçoesDeICMSaRecolherEditar.login();
-			codigosDasObrigaçoesDeICMSaRecolherEditar.acessarMDR();
-			codigosDasObrigaçoesDeICMSaRecolherEditar.editar();
-			codigosDasObrigaçoesDeICMSaRecolherEditar.afterClass();
-
-		}
-
-		@Test(priority = 26)
-		public void codigosDasObrigaçoesDeICMSaRecolherVisualizar() {
-
-			codigosDasObrigaçoesDeICMSaRecolherVisualizar = new CodigosDasObrigaçoesDeICMSaRecolherVisualizar();
-			codigosDasObrigaçoesDeICMSaRecolherVisualizar.beforeClass();
-			codigosDasObrigaçoesDeICMSaRecolherVisualizar.login();
-			codigosDasObrigaçoesDeICMSaRecolherVisualizar.acessarMDR();
-			codigosDasObrigaçoesDeICMSaRecolherVisualizar.visualizar();
-			codigosDasObrigaçoesDeICMSaRecolherVisualizar.afterClass();
-
-		}
+		codigoDeAjusteDaApuraçaoDoIPIExcluir = new CodigoDeAjusteDaApuraçaoDoIPIExcluir();
+		codigoDeAjusteDaApuraçaoDoIPIExcluir.beforeClass();
+		codigoDeAjusteDaApuraçaoDoIPIExcluir.login();
+		codigoDeAjusteDaApuraçaoDoIPIExcluir.acessarMDR();
+		codigoDeAjusteDaApuraçaoDoIPIExcluir.excluir();
+		codigoDeAjusteDaApuraçaoDoIPIExcluir.afterClass();
 
-		@Test(priority = 27)
-		public void codigosDasObrigaçoesDeICMSaRecolherDetalhes() {
-
-			codigosDasObrigaçoesDeICMSaRecolherDetalhes = new CodigosDasObrigaçoesDeICMSaRecolherDetalhes();
-			codigosDasObrigaçoesDeICMSaRecolherDetalhes.beforeClass();
-			codigosDasObrigaçoesDeICMSaRecolherDetalhes.login();
-			codigosDasObrigaçoesDeICMSaRecolherDetalhes.acessarMDR();
-			codigosDasObrigaçoesDeICMSaRecolherDetalhes.detalhes();
-			codigosDasObrigaçoesDeICMSaRecolherDetalhes.afterClass();
-
-		}
-
-
-		@Test(priority = 28)
-		public void codigosDasObrigaçoesDeICMSaRecolherExcluir() {
-
-			codigosDasObrigaçoesDeICMSaRecolherExcluir = new CodigosDasObrigaçoesDeICMSaRecolherExcluir();
-			codigosDasObrigaçoesDeICMSaRecolherExcluir.beforeClass();
-			codigosDasObrigaçoesDeICMSaRecolherExcluir.login();
-			codigosDasObrigaçoesDeICMSaRecolherExcluir.acessarMDR();
-			codigosDasObrigaçoesDeICMSaRecolherExcluir.excluir();
-			codigosDasObrigaçoesDeICMSaRecolherExcluir.afterClass();
-
-			System.out.println("-------------------5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher Fin-------------------------");
-		}
-
-		
-		
-		//30
-		
-		// 4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito
+		System.out.println(
+				"-------------------4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI Fin-------------------------");
+	}
 
-		@Test(priority = 30)
-		public void CodigoTipoCreditoCriar() {
-
-			System.out.println("-------------------4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito-------------------------");
-
-			codigoTipoCreditoCriar = new CodigoTipoCreditoCriar();
-			codigoTipoCreditoCriar.beforeClass();
-			codigoTipoCreditoCriar.login();
-			codigoTipoCreditoCriar.acessarMDR();
-			codigoTipoCreditoCriar.criar();
-			codigoTipoCreditoCriar.afterClass();
+	// 24
 
-		}
-
-		@Test(priority = 31)
-		public void CodigoTipoCreditoEditar() {
-
-			codigoTipoCreditoEditar = new CodigoTipoCreditoEditar();
-			codigoTipoCreditoEditar.beforeClass();
-			codigoTipoCreditoEditar.login();
-			codigoTipoCreditoEditar.acessarMDR();
-			codigoTipoCreditoEditar.editar();
-			codigoTipoCreditoEditar.afterClass();
+	// 5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher
 
-		}
-
-		@Test(priority = 32)
-		public void CodigoTipoCreditoVisualizar() {
-
-			codigoTipoCreditoVisualizar = new CodigoTipoCreditoVisualizar();
-			codigoTipoCreditoVisualizar.beforeClass();
-			codigoTipoCreditoVisualizar.login();
-			codigoTipoCreditoVisualizar.acessarMDR();
-			codigoTipoCreditoVisualizar.visualizar();
-			codigoTipoCreditoVisualizar.afterClass();
+	@Test(priority = 24)
+	public void codigosDasObrigaçoesDeICMSaRecolherCriar() {
 
-		}
+		System.out.println(
+				"-------------------5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher-------------------------");
 
-		@Test(priority = 33)
-		public void CodigoTipoCreditoDetalhes() {
+		codigosDasObrigaçoesDeICMSaRecolherCriar = new CodigosDasObrigaçoesDeICMSaRecolherCriar();
+		codigosDasObrigaçoesDeICMSaRecolherCriar.beforeClass();
+		codigosDasObrigaçoesDeICMSaRecolherCriar.login();
+		codigosDasObrigaçoesDeICMSaRecolherCriar.acessarMDR();
+		codigosDasObrigaçoesDeICMSaRecolherCriar.criar();
+		codigosDasObrigaçoesDeICMSaRecolherCriar.afterClass();
 
-			codigoTipoCreditoDetalhes = new CodigoTipoCreditoDetalhes();
-			codigoTipoCreditoDetalhes.beforeClass();
-			codigoTipoCreditoDetalhes.login();
-			codigoTipoCreditoDetalhes.acessarMDR();
-			codigoTipoCreditoDetalhes.detalhes();
-			codigoTipoCreditoDetalhes.afterClass();
+	}
 
-		}
-		
-		@Test(priority = 34)
-		public void CodigoTipoCreditoFiltros() {
+	@Test(priority = 25)
+	public void codigosDasObrigaçoesDeICMSaRecolherEditar() {
 
-			codigoTipoCreditoFiltrosAvançados = new CodigoTipoCreditoFiltrosAvançados();
-			codigoTipoCreditoFiltrosAvançados.beforeClass();
-			codigoTipoCreditoFiltrosAvançados.login();
-			codigoTipoCreditoFiltrosAvançados.acessarMDR();
-			codigoTipoCreditoFiltrosAvançados.filtros();
-			codigoTipoCreditoFiltrosAvançados.afterClass();
+		codigosDasObrigaçoesDeICMSaRecolherEditar = new CodigosDasObrigaçoesDeICMSaRecolherEditar();
+		codigosDasObrigaçoesDeICMSaRecolherEditar.beforeClass();
+		codigosDasObrigaçoesDeICMSaRecolherEditar.login();
+		codigosDasObrigaçoesDeICMSaRecolherEditar.acessarMDR();
+		codigosDasObrigaçoesDeICMSaRecolherEditar.editar();
+		codigosDasObrigaçoesDeICMSaRecolherEditar.afterClass();
 
-		}
-
-
-		@Test(priority = 35)
-		public void CodigoTipoCreditoExcluir() {
+	}
 
-			codigoTipoCreditoExcluir = new CodigoTipoCreditoExcluir();
-			codigoTipoCreditoExcluir.beforeClass();
-			codigoTipoCreditoExcluir.login();
-			codigoTipoCreditoExcluir.acessarMDR();
-			codigoTipoCreditoExcluir.excluir();
-			codigoTipoCreditoExcluir.afterClass();
+	@Test(priority = 26)
+	public void codigosDasObrigaçoesDeICMSaRecolherVisualizar() {
 
-			System.out.println("-------------------4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito Fin-------------------------");
-		}
+		codigosDasObrigaçoesDeICMSaRecolherVisualizar = new CodigosDasObrigaçoesDeICMSaRecolherVisualizar();
+		codigosDasObrigaçoesDeICMSaRecolherVisualizar.beforeClass();
+		codigosDasObrigaçoesDeICMSaRecolherVisualizar.login();
+		codigosDasObrigaçoesDeICMSaRecolherVisualizar.acessarMDR();
+		codigosDasObrigaçoesDeICMSaRecolherVisualizar.visualizar();
+		codigosDasObrigaçoesDeICMSaRecolherVisualizar.afterClass();
 
-		
-		//36
-		
-		//Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)
+	}
 
-		@Test(priority = 36)
-		public void deParaLivroApuraçaoXSpedFiscalCriar() {
+	@Test(priority = 27)
+	public void codigosDasObrigaçoesDeICMSaRecolherDetalhes() {
 
-			System.out.println("-------------------Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)-------------------------");
-
-			deParaLivroApuraçaoXSpedFiscalCriar = new DeParaLivroApuraçaoXSpedFiscalCriar();
-			deParaLivroApuraçaoXSpedFiscalCriar.beforeClass();
-			deParaLivroApuraçaoXSpedFiscalCriar.login();
-			deParaLivroApuraçaoXSpedFiscalCriar.acessarMDR();
-			deParaLivroApuraçaoXSpedFiscalCriar.criar();
-			deParaLivroApuraçaoXSpedFiscalCriar.afterClass();
+		codigosDasObrigaçoesDeICMSaRecolherDetalhes = new CodigosDasObrigaçoesDeICMSaRecolherDetalhes();
+		codigosDasObrigaçoesDeICMSaRecolherDetalhes.beforeClass();
+		codigosDasObrigaçoesDeICMSaRecolherDetalhes.login();
+		codigosDasObrigaçoesDeICMSaRecolherDetalhes.acessarMDR();
+		codigosDasObrigaçoesDeICMSaRecolherDetalhes.detalhes();
+		codigosDasObrigaçoesDeICMSaRecolherDetalhes.afterClass();
 
-		}
+	}
 
-		@Test(priority = 37)
-		public void deParaLivroApuraçaoXSpedFiscalEditar() {
-
-			deParaLivroApuraçaoXSpedFiscalEditar = new DeParaLivroApuraçaoXSpedFiscalEditar();
-			deParaLivroApuraçaoXSpedFiscalEditar.beforeClass();
-			deParaLivroApuraçaoXSpedFiscalEditar.login();
-			deParaLivroApuraçaoXSpedFiscalEditar.acessarMDR();
-			deParaLivroApuraçaoXSpedFiscalEditar.editar();
-			deParaLivroApuraçaoXSpedFiscalEditar.afterClass();
+	@Test(priority = 28)
+	public void codigosDasObrigaçoesDeICMSaRecolherExcluir() {
 
-		}
+		codigosDasObrigaçoesDeICMSaRecolherExcluir = new CodigosDasObrigaçoesDeICMSaRecolherExcluir();
+		codigosDasObrigaçoesDeICMSaRecolherExcluir.beforeClass();
+		codigosDasObrigaçoesDeICMSaRecolherExcluir.login();
+		codigosDasObrigaçoesDeICMSaRecolherExcluir.acessarMDR();
+		codigosDasObrigaçoesDeICMSaRecolherExcluir.excluir();
+		codigosDasObrigaçoesDeICMSaRecolherExcluir.afterClass();
 
-		@Test(priority = 38)
-		public void deParaLivroApuraçaoXSpedFiscalVisualizar() {
+		System.out.println(
+				"-------------------5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher Fin-------------------------");
+	}
 
-			deParaLivroApuraçaoXSpedFiscalVisualizar = new DeParaLivroApuraçaoXSpedFiscalVisualizar();
-			deParaLivroApuraçaoXSpedFiscalVisualizar.beforeClass();
-			deParaLivroApuraçaoXSpedFiscalVisualizar.login();
-			deParaLivroApuraçaoXSpedFiscalVisualizar.acessarMDR();
-			deParaLivroApuraçaoXSpedFiscalVisualizar.visualizar();
-			deParaLivroApuraçaoXSpedFiscalVisualizar.afterClass();
+	// 30
 
-		}
+	// 4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito
 
-		@Test(priority = 39)
-		public void deParaLivroApuraçaoXSpedFiscalDetalhes() {
+	@Test(priority = 30)
+	public void CodigoTipoCreditoCriar() {
 
-			deParaLivroApuraçaoXSpedFiscalDetalhes = new DeParaLivroApuraçaoXSpedFiscalDetalhes();
-			deParaLivroApuraçaoXSpedFiscalDetalhes.beforeClass();
-			deParaLivroApuraçaoXSpedFiscalDetalhes.login();
-			deParaLivroApuraçaoXSpedFiscalDetalhes.acessarMDR();
-			deParaLivroApuraçaoXSpedFiscalDetalhes.detalhes();
-			deParaLivroApuraçaoXSpedFiscalDetalhes.afterClass();
+		System.out.println(
+				"-------------------4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito-------------------------");
 
-		}
+		codigoTipoCreditoCriar = new CodigoTipoCreditoCriar();
+		codigoTipoCreditoCriar.beforeClass();
+		codigoTipoCreditoCriar.login();
+		codigoTipoCreditoCriar.acessarMDR();
+		codigoTipoCreditoCriar.criar();
+		codigoTipoCreditoCriar.afterClass();
 
+	}
 
-		@Test(priority = 40)
-		public void deParaLivroApuraçaoXSpedFiscalExcluir() {
+	@Test(priority = 31)
+	public void CodigoTipoCreditoEditar() {
 
-			deParaLivroApuraçaoXSpedFiscalExcluir = new DeParaLivroApuraçaoXSpedFiscalExcluir();
-			deParaLivroApuraçaoXSpedFiscalExcluir.beforeClass();
-			deParaLivroApuraçaoXSpedFiscalExcluir.login();
-			deParaLivroApuraçaoXSpedFiscalExcluir.acessarMDR();
-			deParaLivroApuraçaoXSpedFiscalExcluir.excluir();
-			deParaLivroApuraçaoXSpedFiscalExcluir.afterClass();
+		codigoTipoCreditoEditar = new CodigoTipoCreditoEditar();
+		codigoTipoCreditoEditar.beforeClass();
+		codigoTipoCreditoEditar.login();
+		codigoTipoCreditoEditar.acessarMDR();
+		codigoTipoCreditoEditar.editar();
+		codigoTipoCreditoEditar.afterClass();
 
-			System.out.println("-------------------Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para) Fin-------------------------");
-		}
+	}
 
-		
-		//42
-		
-		
-		//  4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS
+	@Test(priority = 32)
+	public void CodigoTipoCreditoVisualizar() {
 
-		@Test(priority = 42)
-		public void documentosFiscaisICMSCriar() {
+		codigoTipoCreditoVisualizar = new CodigoTipoCreditoVisualizar();
+		codigoTipoCreditoVisualizar.beforeClass();
+		codigoTipoCreditoVisualizar.login();
+		codigoTipoCreditoVisualizar.acessarMDR();
+		codigoTipoCreditoVisualizar.visualizar();
+		codigoTipoCreditoVisualizar.afterClass();
 
-			System.out.println("-------------------4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS-------------------------");
+	}
 
-			documentosFiscaisICMSCriar = new DocumentosFiscaisICMSCriar();
-			documentosFiscaisICMSCriar.beforeClass();
-			documentosFiscaisICMSCriar.login();
-			documentosFiscaisICMSCriar.acessarMDR();
-			documentosFiscaisICMSCriar.criar();
-			documentosFiscaisICMSCriar.afterClass();
+	@Test(priority = 33)
+	public void CodigoTipoCreditoDetalhes() {
 
-		}
+		codigoTipoCreditoDetalhes = new CodigoTipoCreditoDetalhes();
+		codigoTipoCreditoDetalhes.beforeClass();
+		codigoTipoCreditoDetalhes.login();
+		codigoTipoCreditoDetalhes.acessarMDR();
+		codigoTipoCreditoDetalhes.detalhes();
+		codigoTipoCreditoDetalhes.afterClass();
 
-		@Test(priority = 43)
-		public void documentosFiscaisICMSEditar() {
+	}
 
-			documentosFiscaisICMSEditar = new DocumentosFiscaisICMSEditar();
-			documentosFiscaisICMSEditar.beforeClass();
-			documentosFiscaisICMSEditar.login();
-			documentosFiscaisICMSEditar.acessarMDR();
-			documentosFiscaisICMSEditar.editar();
-			documentosFiscaisICMSEditar.afterClass();
+	@Test(priority = 34)
+	public void CodigoTipoCreditoFiltros() {
 
-		}
+		codigoTipoCreditoFiltrosAvançados = new CodigoTipoCreditoFiltrosAvançados();
+		codigoTipoCreditoFiltrosAvançados.beforeClass();
+		codigoTipoCreditoFiltrosAvançados.login();
+		codigoTipoCreditoFiltrosAvançados.acessarMDR();
+		codigoTipoCreditoFiltrosAvançados.filtros();
+		codigoTipoCreditoFiltrosAvançados.afterClass();
 
-		@Test(priority = 44)
-		public void documentosFiscaisICMSVisualizar() {
+	}
 
-			documentosFiscaisICMSVisualizar = new DocumentosFiscaisICMSVisualizar();
-			documentosFiscaisICMSVisualizar.beforeClass();
-			documentosFiscaisICMSVisualizar.login();
-			documentosFiscaisICMSVisualizar.acessarMDR();
-			documentosFiscaisICMSVisualizar.visualizar();
-			documentosFiscaisICMSVisualizar.afterClass();
+	@Test(priority = 35)
+	public void CodigoTipoCreditoExcluir() {
 
-		}
+		codigoTipoCreditoExcluir = new CodigoTipoCreditoExcluir();
+		codigoTipoCreditoExcluir.beforeClass();
+		codigoTipoCreditoExcluir.login();
+		codigoTipoCreditoExcluir.acessarMDR();
+		codigoTipoCreditoExcluir.excluir();
+		codigoTipoCreditoExcluir.afterClass();
 
-		@Test(priority = 45)
-		public void documentosFiscaisICMSDetalhes() {
+		System.out.println(
+				"-------------------4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito Fin-------------------------");
+	}
 
-			documentosFiscaisICMSDetalhes = new DocumentosFiscaisICMSDetalhes();
-			documentosFiscaisICMSDetalhes.beforeClass();
-			documentosFiscaisICMSDetalhes.login();
-			documentosFiscaisICMSDetalhes.acessarMDR();
-			documentosFiscaisICMSDetalhes.detalhes();
-			documentosFiscaisICMSDetalhes.afterClass();
+	// 36
 
-		}
+	// Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)
 
+	@Test(priority = 36)
+	public void deParaLivroApuraçaoXSpedFiscalCriar() {
 
-		@Test(priority = 46)
-		public void documentosFiscaisICMSExcluir() {
+		System.out.println(
+				"-------------------Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)-------------------------");
 
-			documentosFiscaisICMSExcluir = new DocumentosFiscaisICMSExcluir();
-			documentosFiscaisICMSExcluir.beforeClass();
-			documentosFiscaisICMSExcluir.login();
-			documentosFiscaisICMSExcluir.acessarMDR();
-			documentosFiscaisICMSExcluir.excluir();
-			documentosFiscaisICMSExcluir.afterClass();
+		deParaLivroApuraçaoXSpedFiscalCriar = new DeParaLivroApuraçaoXSpedFiscalCriar();
+		deParaLivroApuraçaoXSpedFiscalCriar.beforeClass();
+		deParaLivroApuraçaoXSpedFiscalCriar.login();
+		deParaLivroApuraçaoXSpedFiscalCriar.acessarMDR();
+		deParaLivroApuraçaoXSpedFiscalCriar.criar();
+		deParaLivroApuraçaoXSpedFiscalCriar.afterClass();
 
-			System.out.println("------------------- 4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS Fin-------------------------");
-		}
+	}
 
-		
-		//48
-		
-		// 5.2 Tabelas de Apoio do Sped > Informações Adicionais
+	@Test(priority = 37)
+	public void deParaLivroApuraçaoXSpedFiscalEditar() {
 
-		@Test(priority = 48)
-		public void informaçoesAdicionaisCriar() {
+		deParaLivroApuraçaoXSpedFiscalEditar = new DeParaLivroApuraçaoXSpedFiscalEditar();
+		deParaLivroApuraçaoXSpedFiscalEditar.beforeClass();
+		deParaLivroApuraçaoXSpedFiscalEditar.login();
+		deParaLivroApuraçaoXSpedFiscalEditar.acessarMDR();
+		deParaLivroApuraçaoXSpedFiscalEditar.editar();
+		deParaLivroApuraçaoXSpedFiscalEditar.afterClass();
 
-			System.out.println("-------------------5.2 Tabelas de Apoio do Sped > Informações Adicionais-------------------------");
+	}
 
-			informaçoesAdicionaisCriar = new InformaçoesAdicionaisCriar();
-			informaçoesAdicionaisCriar.beforeClass();
-			informaçoesAdicionaisCriar.login();
-			informaçoesAdicionaisCriar.acessarMDR();
-			informaçoesAdicionaisCriar.criar();
-			informaçoesAdicionaisCriar.afterClass();
+	@Test(priority = 38)
+	public void deParaLivroApuraçaoXSpedFiscalVisualizar() {
 
-		}
+		deParaLivroApuraçaoXSpedFiscalVisualizar = new DeParaLivroApuraçaoXSpedFiscalVisualizar();
+		deParaLivroApuraçaoXSpedFiscalVisualizar.beforeClass();
+		deParaLivroApuraçaoXSpedFiscalVisualizar.login();
+		deParaLivroApuraçaoXSpedFiscalVisualizar.acessarMDR();
+		deParaLivroApuraçaoXSpedFiscalVisualizar.visualizar();
+		deParaLivroApuraçaoXSpedFiscalVisualizar.afterClass();
 
-		@Test(priority = 49)
-		public void informaçoesAdicionaisEditar() {
+	}
 
-			informaçoesAdicionaisEditar = new InformaçoesAdicionaisEditar();
-			informaçoesAdicionaisEditar.beforeClass();
-			informaçoesAdicionaisEditar.login();
-			informaçoesAdicionaisEditar.acessarMDR();
-			informaçoesAdicionaisEditar.editar();
-			informaçoesAdicionaisEditar.afterClass();
+	@Test(priority = 39)
+	public void deParaLivroApuraçaoXSpedFiscalDetalhes() {
 
-		}
+		deParaLivroApuraçaoXSpedFiscalDetalhes = new DeParaLivroApuraçaoXSpedFiscalDetalhes();
+		deParaLivroApuraçaoXSpedFiscalDetalhes.beforeClass();
+		deParaLivroApuraçaoXSpedFiscalDetalhes.login();
+		deParaLivroApuraçaoXSpedFiscalDetalhes.acessarMDR();
+		deParaLivroApuraçaoXSpedFiscalDetalhes.detalhes();
+		deParaLivroApuraçaoXSpedFiscalDetalhes.afterClass();
 
-		@Test(priority = 50)
-		public void informaçoesAdicionaisVisualizar() {
+	}
 
-			informaçoesAdicionaisVisualizar = new InformaçoesAdicionaisVisualizar();
-			informaçoesAdicionaisVisualizar.beforeClass();
-			informaçoesAdicionaisVisualizar.login();
-			informaçoesAdicionaisVisualizar.acessarMDR();
-			informaçoesAdicionaisVisualizar.visualizar();
-			informaçoesAdicionaisVisualizar.afterClass();
+	@Test(priority = 40)
+	public void deParaLivroApuraçaoXSpedFiscalExcluir() {
 
-		}
+		deParaLivroApuraçaoXSpedFiscalExcluir = new DeParaLivroApuraçaoXSpedFiscalExcluir();
+		deParaLivroApuraçaoXSpedFiscalExcluir.beforeClass();
+		deParaLivroApuraçaoXSpedFiscalExcluir.login();
+		deParaLivroApuraçaoXSpedFiscalExcluir.acessarMDR();
+		deParaLivroApuraçaoXSpedFiscalExcluir.excluir();
+		deParaLivroApuraçaoXSpedFiscalExcluir.afterClass();
 
-		@Test(priority = 51)
-		public void informaçoesAdicionaisDetalhes() {
+		System.out.println(
+				"-------------------Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para) Fin-------------------------");
+	}
 
-			informaçoesAdicionaisDetalhes = new InformaçoesAdicionaisDetalhes();
-			informaçoesAdicionaisDetalhes.beforeClass();
-			informaçoesAdicionaisDetalhes.login();
-			informaçoesAdicionaisDetalhes.acessarMDR();
-			informaçoesAdicionaisDetalhes.detalhes();
-			informaçoesAdicionaisDetalhes.afterClass();
+	// 42
 
-		}
+	// 4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS
 
+	@Test(priority = 42)
+	public void documentosFiscaisICMSCriar() {
 
-		@Test(priority = 52)
-		public void informaçoesAdicionaisExcluir() {
+		System.out.println(
+				"-------------------4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS-------------------------");
 
-			informaçoesAdicionaisExcluir = new InformaçoesAdicionaisExcluir();
-			informaçoesAdicionaisExcluir.beforeClass();
-			informaçoesAdicionaisExcluir.login();
-			informaçoesAdicionaisExcluir.acessarMDR();
-			informaçoesAdicionaisExcluir.excluir();
-			informaçoesAdicionaisExcluir.afterClass();
+		documentosFiscaisICMSCriar = new DocumentosFiscaisICMSCriar();
+		documentosFiscaisICMSCriar.beforeClass();
+		documentosFiscaisICMSCriar.login();
+		documentosFiscaisICMSCriar.acessarMDR();
+		documentosFiscaisICMSCriar.criar();
+		documentosFiscaisICMSCriar.afterClass();
 
-			System.out.println("-------------------5.2 Tabelas de Apoio do Sped > Informações Adicionais Fin-------------------------");
-		}
+	}
 
-		//54
-		
-		// Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461
+	@Test(priority = 43)
+	public void documentosFiscaisICMSEditar() {
 
-		@Test(priority = 54)
-		public void observaçoesdoDocumentoFiscalCriar() {
+		documentosFiscaisICMSEditar = new DocumentosFiscaisICMSEditar();
+		documentosFiscaisICMSEditar.beforeClass();
+		documentosFiscaisICMSEditar.login();
+		documentosFiscaisICMSEditar.acessarMDR();
+		documentosFiscaisICMSEditar.editar();
+		documentosFiscaisICMSEditar.afterClass();
 
-			System.out.println("-------------------Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461-------------------------");
+	}
 
-			observaçoesdoDocumentoFiscalCriar = new ObservaçoesdoDocumentoFiscalCriar();
-			observaçoesdoDocumentoFiscalCriar.beforeClass();
-			observaçoesdoDocumentoFiscalCriar.login();
-			observaçoesdoDocumentoFiscalCriar.acessarMDR();
-			observaçoesdoDocumentoFiscalCriar.criar();
-			observaçoesdoDocumentoFiscalCriar.afterClass();
+	@Test(priority = 44)
+	public void documentosFiscaisICMSVisualizar() {
 
-		}
+		documentosFiscaisICMSVisualizar = new DocumentosFiscaisICMSVisualizar();
+		documentosFiscaisICMSVisualizar.beforeClass();
+		documentosFiscaisICMSVisualizar.login();
+		documentosFiscaisICMSVisualizar.acessarMDR();
+		documentosFiscaisICMSVisualizar.visualizar();
+		documentosFiscaisICMSVisualizar.afterClass();
 
-		@Test(priority = 55)
-		public void observaçoesdoDocumentoFiscalEditar() {
+	}
 
-			observaçoesdoDocumentoFiscalEditar = new ObservaçoesdoDocumentoFiscalEditar();
-			observaçoesdoDocumentoFiscalEditar.beforeClass();
-			observaçoesdoDocumentoFiscalEditar.login();
-			observaçoesdoDocumentoFiscalEditar.acessarMDR();
-			observaçoesdoDocumentoFiscalEditar.editar();
-			observaçoesdoDocumentoFiscalEditar.afterClass();
+	@Test(priority = 45)
+	public void documentosFiscaisICMSDetalhes() {
 
-		}
+		documentosFiscaisICMSDetalhes = new DocumentosFiscaisICMSDetalhes();
+		documentosFiscaisICMSDetalhes.beforeClass();
+		documentosFiscaisICMSDetalhes.login();
+		documentosFiscaisICMSDetalhes.acessarMDR();
+		documentosFiscaisICMSDetalhes.detalhes();
+		documentosFiscaisICMSDetalhes.afterClass();
 
-		@Test(priority = 56)
-		public void observaçoesdoDocumentoFiscalVisualizar() {
+	}
 
-			observaçoesdoDocumentoFiscalVisualizar = new ObservaçoesdoDocumentoFiscalVisualizar();
-			observaçoesdoDocumentoFiscalVisualizar.beforeClass();
-			observaçoesdoDocumentoFiscalVisualizar.login();
-			observaçoesdoDocumentoFiscalVisualizar.acessarMDR();
-			observaçoesdoDocumentoFiscalVisualizar.visualizar();
-			observaçoesdoDocumentoFiscalVisualizar.afterClass();
+	@Test(priority = 46)
+	public void documentosFiscaisICMSExcluir() {
 
-		}
+		documentosFiscaisICMSExcluir = new DocumentosFiscaisICMSExcluir();
+		documentosFiscaisICMSExcluir.beforeClass();
+		documentosFiscaisICMSExcluir.login();
+		documentosFiscaisICMSExcluir.acessarMDR();
+		documentosFiscaisICMSExcluir.excluir();
+		documentosFiscaisICMSExcluir.afterClass();
 
-		@Test(priority = 57)
-		public void observaçoesdoDocumentoFiscalDetalhes() {
+		System.out.println(
+				"------------------- 4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS Fin-------------------------");
+	}
 
-			observaçoesdoDocumentoFiscalDetalhes = new ObservaçoesdoDocumentoFiscalDetalhes();
-			observaçoesdoDocumentoFiscalDetalhes.beforeClass();
-			observaçoesdoDocumentoFiscalDetalhes.login();
-			observaçoesdoDocumentoFiscalDetalhes.acessarMDR();
-			observaçoesdoDocumentoFiscalDetalhes.detalhes();
-			observaçoesdoDocumentoFiscalDetalhes.afterClass();
+	// 48
 
-		}
+	// 5.2 Tabelas de Apoio do Sped > Informações Adicionais
 
+	@Test(priority = 48)
+	public void informaçoesAdicionaisCriar() {
 
-		@Test(priority = 58)
-		public void observaçoesdoDocumentoFiscalExcluir() {
+		System.out.println(
+				"-------------------5.2 Tabelas de Apoio do Sped > Informações Adicionais-------------------------");
 
-			obserbaçoesdoDocumentoFiscalExcluir = new ObserbaçoesdoDocumentoFiscalExcluir();
-			obserbaçoesdoDocumentoFiscalExcluir.beforeClass();
-			obserbaçoesdoDocumentoFiscalExcluir.login();
-			obserbaçoesdoDocumentoFiscalExcluir.acessarMDR();
-			obserbaçoesdoDocumentoFiscalExcluir.excluir();
-			obserbaçoesdoDocumentoFiscalExcluir.afterClass();
+		informaçoesAdicionaisCriar = new InformaçoesAdicionaisCriar();
+		informaçoesAdicionaisCriar.beforeClass();
+		informaçoesAdicionaisCriar.login();
+		informaçoesAdicionaisCriar.acessarMDR();
+		informaçoesAdicionaisCriar.criar();
+		informaçoesAdicionaisCriar.afterClass();
 
-			System.out.println("-------------------Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461 Fin-------------------------");
-		}
+	}
 
-		
-		//60
-		
-		// Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria
-		@Test(priority = 60)
-		public void tabelaCodigoDaSituaçaoTributariaCriar() {
+	@Test(priority = 49)
+	public void informaçoesAdicionaisEditar() {
 
-			System.out.println("-------------------Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria-------------------------");
+		informaçoesAdicionaisEditar = new InformaçoesAdicionaisEditar();
+		informaçoesAdicionaisEditar.beforeClass();
+		informaçoesAdicionaisEditar.login();
+		informaçoesAdicionaisEditar.acessarMDR();
+		informaçoesAdicionaisEditar.editar();
+		informaçoesAdicionaisEditar.afterClass();
 
-			tabelaCodigoDaSituaçaoTributariaCriar = new TabelaCodigoDaSituaçaoTributariaCriar();
-			tabelaCodigoDaSituaçaoTributariaCriar.beforeClass();
-			tabelaCodigoDaSituaçaoTributariaCriar.login();
-			tabelaCodigoDaSituaçaoTributariaCriar.acessarMDR();
-			tabelaCodigoDaSituaçaoTributariaCriar.criar();
-			tabelaCodigoDaSituaçaoTributariaCriar.afterClass();
+	}
 
-		}
+	@Test(priority = 50)
+	public void informaçoesAdicionaisVisualizar() {
 
-		@Test(priority = 61)
-		public void tabelaCodigoDaSituaçaoTributariaEditar() {
+		informaçoesAdicionaisVisualizar = new InformaçoesAdicionaisVisualizar();
+		informaçoesAdicionaisVisualizar.beforeClass();
+		informaçoesAdicionaisVisualizar.login();
+		informaçoesAdicionaisVisualizar.acessarMDR();
+		informaçoesAdicionaisVisualizar.visualizar();
+		informaçoesAdicionaisVisualizar.afterClass();
 
-			tabelaCodigoDaSituaçaoTributariaEditar = new TabelaCodigoDaSituaçaoTributariaEditar();
-			tabelaCodigoDaSituaçaoTributariaEditar.beforeClass();
-			tabelaCodigoDaSituaçaoTributariaEditar.login();
-			tabelaCodigoDaSituaçaoTributariaEditar.acessarMDR();
-			tabelaCodigoDaSituaçaoTributariaEditar.editar();
-			tabelaCodigoDaSituaçaoTributariaEditar.afterClass();
+	}
 
-		}
+	@Test(priority = 51)
+	public void informaçoesAdicionaisDetalhes() {
 
-		@Test(priority = 62)
-		public void tabelaCodigoDaSituaçaoTributariaVisualizar() {
+		informaçoesAdicionaisDetalhes = new InformaçoesAdicionaisDetalhes();
+		informaçoesAdicionaisDetalhes.beforeClass();
+		informaçoesAdicionaisDetalhes.login();
+		informaçoesAdicionaisDetalhes.acessarMDR();
+		informaçoesAdicionaisDetalhes.detalhes();
+		informaçoesAdicionaisDetalhes.afterClass();
 
-			tabelaCodigoDaSituaçaoTributariaVisualizar = new TabelaCodigoDaSituaçaoTributariaVisualizar();
-			tabelaCodigoDaSituaçaoTributariaVisualizar.beforeClass();
-			tabelaCodigoDaSituaçaoTributariaVisualizar.login();
-			tabelaCodigoDaSituaçaoTributariaVisualizar.acessarMDR();
-			tabelaCodigoDaSituaçaoTributariaVisualizar.visualizar();
-			tabelaCodigoDaSituaçaoTributariaVisualizar.afterClass();
+	}
 
-		}
+	@Test(priority = 52)
+	public void informaçoesAdicionaisExcluir() {
 
-		@Test(priority = 63)
-		public void tabelaCodigoDaSituaçaoTributariaDetalhes() {
+		informaçoesAdicionaisExcluir = new InformaçoesAdicionaisExcluir();
+		informaçoesAdicionaisExcluir.beforeClass();
+		informaçoesAdicionaisExcluir.login();
+		informaçoesAdicionaisExcluir.acessarMDR();
+		informaçoesAdicionaisExcluir.excluir();
+		informaçoesAdicionaisExcluir.afterClass();
 
-			tabelaCodigoDaSituaçaoTributariaDetalhes = new TabelaCodigoDaSituaçaoTributariaDetalhes();
-			tabelaCodigoDaSituaçaoTributariaDetalhes.beforeClass();
-			tabelaCodigoDaSituaçaoTributariaDetalhes.login();
-			tabelaCodigoDaSituaçaoTributariaDetalhes.acessarMDR();
-			tabelaCodigoDaSituaçaoTributariaDetalhes.detalhes();
-			tabelaCodigoDaSituaçaoTributariaDetalhes.afterClass();
+		System.out.println(
+				"-------------------5.2 Tabelas de Apoio do Sped > Informações Adicionais Fin-------------------------");
+	}
 
-		}
+	// 54
 
+	// Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461
 
-		@Test(priority = 64)
-		public void tabelaCodigoDaSituaçaoTributariaExcluir() {
+	@Test(priority = 54)
+	public void observaçoesdoDocumentoFiscalCriar() {
 
-			tabelaCodigoDaSituaçaoTributariaExcluir = new TabelaCodigoDaSituaçaoTributariaExcluir();
-			tabelaCodigoDaSituaçaoTributariaExcluir.beforeClass();
-			tabelaCodigoDaSituaçaoTributariaExcluir.login();
-			tabelaCodigoDaSituaçaoTributariaExcluir.acessarMDR();
-			tabelaCodigoDaSituaçaoTributariaExcluir.excluir();
-			tabelaCodigoDaSituaçaoTributariaExcluir.afterClass();
+		System.out.println(
+				"-------------------Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461-------------------------");
 
-			System.out.println("-------------------Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria Fin-------------------------");
-		}
+		observaçoesdoDocumentoFiscalCriar = new ObservaçoesdoDocumentoFiscalCriar();
+		observaçoesdoDocumentoFiscalCriar.beforeClass();
+		observaçoesdoDocumentoFiscalCriar.login();
+		observaçoesdoDocumentoFiscalCriar.acessarMDR();
+		observaçoesdoDocumentoFiscalCriar.criar();
+		observaçoesdoDocumentoFiscalCriar.afterClass();
 
-		
-		//66
-		
-		// Tabela de Apoio do SPED	> 5.5 Tipos De Utilizacao Dos Creditos Fiscais
+	}
 
-		@Test(priority = 66)
-		public void tiposDeUtilizacaoDosCreditosFiscaisCriar() {
+	@Test(priority = 55)
+	public void observaçoesdoDocumentoFiscalEditar() {
 
-			System.out.println("-------------------Tabela de Apoio do SPED	> 5.5 Tipos De Utilizacao Dos Creditos Fiscais-------------------------");
+		observaçoesdoDocumentoFiscalEditar = new ObservaçoesdoDocumentoFiscalEditar();
+		observaçoesdoDocumentoFiscalEditar.beforeClass();
+		observaçoesdoDocumentoFiscalEditar.login();
+		observaçoesdoDocumentoFiscalEditar.acessarMDR();
+		observaçoesdoDocumentoFiscalEditar.editar();
+		observaçoesdoDocumentoFiscalEditar.afterClass();
 
-			tiposDeUtilizacaoDosCreditosFiscaisCriar = new TiposDeUtilizacaoDosCreditosFiscaisCriar();
-			tiposDeUtilizacaoDosCreditosFiscaisCriar.beforeClass();
-			tiposDeUtilizacaoDosCreditosFiscaisCriar.login();
-			tiposDeUtilizacaoDosCreditosFiscaisCriar.acessarMDR();
-			tiposDeUtilizacaoDosCreditosFiscaisCriar.criar();
-			tiposDeUtilizacaoDosCreditosFiscaisCriar.afterClass();
+	}
 
-		}
+	@Test(priority = 56)
+	public void observaçoesdoDocumentoFiscalVisualizar() {
 
-		@Test(priority = 67)
-		public void tiposDeUtilizacaoDosCreditosFiscaisEditar() {
+		observaçoesdoDocumentoFiscalVisualizar = new ObservaçoesdoDocumentoFiscalVisualizar();
+		observaçoesdoDocumentoFiscalVisualizar.beforeClass();
+		observaçoesdoDocumentoFiscalVisualizar.login();
+		observaçoesdoDocumentoFiscalVisualizar.acessarMDR();
+		observaçoesdoDocumentoFiscalVisualizar.visualizar();
+		observaçoesdoDocumentoFiscalVisualizar.afterClass();
 
-			tiposDeUtilizacaoDosCreditosFiscaisEditar = new TiposDeUtilizacaoDosCreditosFiscaisEditar();
-			tiposDeUtilizacaoDosCreditosFiscaisEditar.beforeClass();
-			tiposDeUtilizacaoDosCreditosFiscaisEditar.login();
-			tiposDeUtilizacaoDosCreditosFiscaisEditar.acessarMDR();
-			tiposDeUtilizacaoDosCreditosFiscaisEditar.editar();
-			tiposDeUtilizacaoDosCreditosFiscaisEditar.afterClass();
+	}
 
-		}
+	@Test(priority = 57)
+	public void observaçoesdoDocumentoFiscalDetalhes() {
 
-		@Test(priority = 68)
-		public void tiposDeUtilizacaoDosCreditosFiscaisVisualizar() {
+		observaçoesdoDocumentoFiscalDetalhes = new ObservaçoesdoDocumentoFiscalDetalhes();
+		observaçoesdoDocumentoFiscalDetalhes.beforeClass();
+		observaçoesdoDocumentoFiscalDetalhes.login();
+		observaçoesdoDocumentoFiscalDetalhes.acessarMDR();
+		observaçoesdoDocumentoFiscalDetalhes.detalhes();
+		observaçoesdoDocumentoFiscalDetalhes.afterClass();
 
-			tiposDeUtilizacaoDosCreditosFiscaisVisualizar = new TiposDeUtilizacaoDosCreditosFiscaisVisualizar();
-			tiposDeUtilizacaoDosCreditosFiscaisVisualizar.beforeClass();
-			tiposDeUtilizacaoDosCreditosFiscaisVisualizar.login();
-			tiposDeUtilizacaoDosCreditosFiscaisVisualizar.acessarMDR();
-			tiposDeUtilizacaoDosCreditosFiscaisVisualizar.visualizar();
-			tiposDeUtilizacaoDosCreditosFiscaisVisualizar.afterClass();
+	}
 
-		}
+	@Test(priority = 58)
+	public void observaçoesdoDocumentoFiscalExcluir() {
 
-		@Test(priority = 69)
-		public void tiposDeUtilizacaoDosCreditosFiscaisDetalhes() {
+		obserbaçoesdoDocumentoFiscalExcluir = new ObserbaçoesdoDocumentoFiscalExcluir();
+		obserbaçoesdoDocumentoFiscalExcluir.beforeClass();
+		obserbaçoesdoDocumentoFiscalExcluir.login();
+		obserbaçoesdoDocumentoFiscalExcluir.acessarMDR();
+		obserbaçoesdoDocumentoFiscalExcluir.excluir();
+		obserbaçoesdoDocumentoFiscalExcluir.afterClass();
 
-			tiposDeUtilizacaoDosCreditosFiscaisDetalhes = new TiposDeUtilizacaoDosCreditosFiscaisDetalhes();
-			tiposDeUtilizacaoDosCreditosFiscaisDetalhes.beforeClass();
-			tiposDeUtilizacaoDosCreditosFiscaisDetalhes.login();
-			tiposDeUtilizacaoDosCreditosFiscaisDetalhes.acessarMDR();
-			tiposDeUtilizacaoDosCreditosFiscaisDetalhes.detalhes();
-			tiposDeUtilizacaoDosCreditosFiscaisDetalhes.afterClass();
+		System.out.println(
+				"-------------------Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461 Fin-------------------------");
+	}
 
-		}
+	// 60
 
+	// Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria
+	@Test(priority = 60)
+	public void tabelaCodigoDaSituaçaoTributariaCriar() {
 
-		@Test(priority = 70)
-		public void tiposDeUtilizacaoDosCreditosFiscaisExcluir() {
+		System.out.println(
+				"-------------------Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria-------------------------");
 
-			tiposDeUtilizacaoDosCreditosFiscaisExcluir = new TiposDeUtilizacaoDosCreditosFiscaisExcluir();
-			tiposDeUtilizacaoDosCreditosFiscaisExcluir.beforeClass();
-			tiposDeUtilizacaoDosCreditosFiscaisExcluir.login();
-			tiposDeUtilizacaoDosCreditosFiscaisExcluir.acessarMDR();
-			tiposDeUtilizacaoDosCreditosFiscaisExcluir.excluir();
-			tiposDeUtilizacaoDosCreditosFiscaisExcluir.afterClass();
+		tabelaCodigoDaSituaçaoTributariaCriar = new TabelaCodigoDaSituaçaoTributariaCriar();
+		tabelaCodigoDaSituaçaoTributariaCriar.beforeClass();
+		tabelaCodigoDaSituaçaoTributariaCriar.login();
+		tabelaCodigoDaSituaçaoTributariaCriar.acessarMDR();
+		tabelaCodigoDaSituaçaoTributariaCriar.criar();
+		tabelaCodigoDaSituaçaoTributariaCriar.afterClass();
 
-			System.out.println("-------------------Tabela de Apoio do SPED	> 5.5 Tipos De Utilizacao Dos Creditos Fiscais Fin-------------------------");
-		}
+	}
 
-		//72
-		
-		// Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP
+	@Test(priority = 61)
+	public void tabelaCodigoDaSituaçaoTributariaEditar() {
 
-		@Test(priority = 72)
-		public void agrupadorDeCFOPCriar() {
+		tabelaCodigoDaSituaçaoTributariaEditar = new TabelaCodigoDaSituaçaoTributariaEditar();
+		tabelaCodigoDaSituaçaoTributariaEditar.beforeClass();
+		tabelaCodigoDaSituaçaoTributariaEditar.login();
+		tabelaCodigoDaSituaçaoTributariaEditar.acessarMDR();
+		tabelaCodigoDaSituaçaoTributariaEditar.editar();
+		tabelaCodigoDaSituaçaoTributariaEditar.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP-------------------------");
+	}
 
-			agrupadorDeCFOPCriar = new AgrupadorDeCFOPCriar();
-			agrupadorDeCFOPCriar.beforeClass();
-			agrupadorDeCFOPCriar.login();
-			agrupadorDeCFOPCriar.acessarMDR();
-			agrupadorDeCFOPCriar.criar();
-			agrupadorDeCFOPCriar.afterClass();
+	@Test(priority = 62)
+	public void tabelaCodigoDaSituaçaoTributariaVisualizar() {
 
-		}
+		tabelaCodigoDaSituaçaoTributariaVisualizar = new TabelaCodigoDaSituaçaoTributariaVisualizar();
+		tabelaCodigoDaSituaçaoTributariaVisualizar.beforeClass();
+		tabelaCodigoDaSituaçaoTributariaVisualizar.login();
+		tabelaCodigoDaSituaçaoTributariaVisualizar.acessarMDR();
+		tabelaCodigoDaSituaçaoTributariaVisualizar.visualizar();
+		tabelaCodigoDaSituaçaoTributariaVisualizar.afterClass();
 
-		@Test(priority = 73)
-		public void agrupadorDeCFOPEditar() {
+	}
 
-			agrupadorDeCFOPEditar = new AgrupadorDeCFOPEditar();
-			agrupadorDeCFOPEditar.beforeClass();
-			agrupadorDeCFOPEditar.login();
-			agrupadorDeCFOPEditar.acessarMDR();
-			agrupadorDeCFOPEditar.editar();
-			agrupadorDeCFOPEditar.afterClass();
+	@Test(priority = 63)
+	public void tabelaCodigoDaSituaçaoTributariaDetalhes() {
 
-		}
+		tabelaCodigoDaSituaçaoTributariaDetalhes = new TabelaCodigoDaSituaçaoTributariaDetalhes();
+		tabelaCodigoDaSituaçaoTributariaDetalhes.beforeClass();
+		tabelaCodigoDaSituaçaoTributariaDetalhes.login();
+		tabelaCodigoDaSituaçaoTributariaDetalhes.acessarMDR();
+		tabelaCodigoDaSituaçaoTributariaDetalhes.detalhes();
+		tabelaCodigoDaSituaçaoTributariaDetalhes.afterClass();
 
-		@Test(priority = 74)
-		public void agrupadorDeCFOPVisualizar() {
+	}
 
-			agrupadorDeCFOPVisualizar = new AgrupadorDeCFOPVisualizar();
-			agrupadorDeCFOPVisualizar.beforeClass();
-			agrupadorDeCFOPVisualizar.login();
-			agrupadorDeCFOPVisualizar.acessarMDR();
-			agrupadorDeCFOPVisualizar.Visualizar();
-			agrupadorDeCFOPVisualizar.afterClass();
+	@Test(priority = 64)
+	public void tabelaCodigoDaSituaçaoTributariaExcluir() {
 
-		}
+		tabelaCodigoDaSituaçaoTributariaExcluir = new TabelaCodigoDaSituaçaoTributariaExcluir();
+		tabelaCodigoDaSituaçaoTributariaExcluir.beforeClass();
+		tabelaCodigoDaSituaçaoTributariaExcluir.login();
+		tabelaCodigoDaSituaçaoTributariaExcluir.acessarMDR();
+		tabelaCodigoDaSituaçaoTributariaExcluir.excluir();
+		tabelaCodigoDaSituaçaoTributariaExcluir.afterClass();
 
-		@Test(priority = 75)
-		public void agrupadorDeCFOPDetalhes() {
+		System.out.println(
+				"-------------------Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria Fin-------------------------");
+	}
 
-			agrupadorDeCFOPDetalhes = new AgrupadorDeCFOPDetalhes();
-			agrupadorDeCFOPDetalhes.beforeClass();
-			agrupadorDeCFOPDetalhes.login();
-			agrupadorDeCFOPDetalhes.acessarMDR();
-			agrupadorDeCFOPDetalhes.detalhes();
-			agrupadorDeCFOPDetalhes.afterClass();
+	// 66
 
-		}
+	// Tabela de Apoio do SPED > 5.5 Tipos De Utilizacao Dos Creditos Fiscais
 
+	@Test(priority = 66)
+	public void tiposDeUtilizacaoDosCreditosFiscaisCriar() {
 
-		@Test(priority = 76)
-		public void agrupadorDeCFOPExcluir() {
+		System.out.println(
+				"-------------------Tabela de Apoio do SPED	> 5.5 Tipos De Utilizacao Dos Creditos Fiscais-------------------------");
 
-			agrupadorDeCFOPExcluir = new AgrupadorDeCFOPExcluir();
-			agrupadorDeCFOPExcluir.beforeClass();
-			agrupadorDeCFOPExcluir.login();
-			agrupadorDeCFOPExcluir.acessarMDR();
-			agrupadorDeCFOPExcluir.excluir();
-			agrupadorDeCFOPExcluir.afterClass();
+		tiposDeUtilizacaoDosCreditosFiscaisCriar = new TiposDeUtilizacaoDosCreditosFiscaisCriar();
+		tiposDeUtilizacaoDosCreditosFiscaisCriar.beforeClass();
+		tiposDeUtilizacaoDosCreditosFiscaisCriar.login();
+		tiposDeUtilizacaoDosCreditosFiscaisCriar.acessarMDR();
+		tiposDeUtilizacaoDosCreditosFiscaisCriar.criar();
+		tiposDeUtilizacaoDosCreditosFiscaisCriar.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP Fin-------------------------");
-		}
+	}
 
-		//78
-		
-		// Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE
+	@Test(priority = 67)
+	public void tiposDeUtilizacaoDosCreditosFiscaisEditar() {
 
-		@Test(priority = 78)
-		public void atribuicaoMunicipioEstadoCriar() {
+		tiposDeUtilizacaoDosCreditosFiscaisEditar = new TiposDeUtilizacaoDosCreditosFiscaisEditar();
+		tiposDeUtilizacaoDosCreditosFiscaisEditar.beforeClass();
+		tiposDeUtilizacaoDosCreditosFiscaisEditar.login();
+		tiposDeUtilizacaoDosCreditosFiscaisEditar.acessarMDR();
+		tiposDeUtilizacaoDosCreditosFiscaisEditar.editar();
+		tiposDeUtilizacaoDosCreditosFiscaisEditar.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE-------------------------");
+	}
 
-			atribuicaoMunicipioEstadoCriar = new AtribuicaoMunicipioEstadoCriar();
-			atribuicaoMunicipioEstadoCriar.beforeClass();
-			atribuicaoMunicipioEstadoCriar.login();
-			atribuicaoMunicipioEstadoCriar.acessarMDR();
-			atribuicaoMunicipioEstadoCriar.criar();
-			atribuicaoMunicipioEstadoCriar.afterClass();
+	@Test(priority = 68)
+	public void tiposDeUtilizacaoDosCreditosFiscaisVisualizar() {
 
-		}
+		tiposDeUtilizacaoDosCreditosFiscaisVisualizar = new TiposDeUtilizacaoDosCreditosFiscaisVisualizar();
+		tiposDeUtilizacaoDosCreditosFiscaisVisualizar.beforeClass();
+		tiposDeUtilizacaoDosCreditosFiscaisVisualizar.login();
+		tiposDeUtilizacaoDosCreditosFiscaisVisualizar.acessarMDR();
+		tiposDeUtilizacaoDosCreditosFiscaisVisualizar.visualizar();
+		tiposDeUtilizacaoDosCreditosFiscaisVisualizar.afterClass();
 
-		@Test(priority = 79)
-		public void atribuicaoMunicipioEstadoEditar() {
+	}
 
-			atribuicaoMunicipioEstadoEditar = new AtribuicaoMunicipioEstadoEditar();
-			atribuicaoMunicipioEstadoEditar.beforeClass();
-			atribuicaoMunicipioEstadoEditar.login();
-			atribuicaoMunicipioEstadoEditar.acessarMDR();
-			atribuicaoMunicipioEstadoEditar.editar();
-			atribuicaoMunicipioEstadoEditar.afterClass();
+	@Test(priority = 69)
+	public void tiposDeUtilizacaoDosCreditosFiscaisDetalhes() {
 
-		}
+		tiposDeUtilizacaoDosCreditosFiscaisDetalhes = new TiposDeUtilizacaoDosCreditosFiscaisDetalhes();
+		tiposDeUtilizacaoDosCreditosFiscaisDetalhes.beforeClass();
+		tiposDeUtilizacaoDosCreditosFiscaisDetalhes.login();
+		tiposDeUtilizacaoDosCreditosFiscaisDetalhes.acessarMDR();
+		tiposDeUtilizacaoDosCreditosFiscaisDetalhes.detalhes();
+		tiposDeUtilizacaoDosCreditosFiscaisDetalhes.afterClass();
 
-		@Test(priority = 80)
-		public void atribuicaoMunicipioEstadoVisualizar() {
+	}
 
-			atribuicaoMunicipioEstadoVisualizar = new AtribuicaoMunicipioEstadoVisualizar();
-			atribuicaoMunicipioEstadoVisualizar.beforeClass();
-			atribuicaoMunicipioEstadoVisualizar.login();
-			atribuicaoMunicipioEstadoVisualizar.acessarMDR();
-			atribuicaoMunicipioEstadoVisualizar.visualizar();
-			atribuicaoMunicipioEstadoVisualizar.afterClass();
+	@Test(priority = 70)
+	public void tiposDeUtilizacaoDosCreditosFiscaisExcluir() {
 
-		}
+		tiposDeUtilizacaoDosCreditosFiscaisExcluir = new TiposDeUtilizacaoDosCreditosFiscaisExcluir();
+		tiposDeUtilizacaoDosCreditosFiscaisExcluir.beforeClass();
+		tiposDeUtilizacaoDosCreditosFiscaisExcluir.login();
+		tiposDeUtilizacaoDosCreditosFiscaisExcluir.acessarMDR();
+		tiposDeUtilizacaoDosCreditosFiscaisExcluir.excluir();
+		tiposDeUtilizacaoDosCreditosFiscaisExcluir.afterClass();
 
-		@Test(priority = 81)
-		public void atribuicaoMunicipioEstadoDetalhes() {
+		System.out.println(
+				"-------------------Tabela de Apoio do SPED	> 5.5 Tipos De Utilizacao Dos Creditos Fiscais Fin-------------------------");
+	}
 
-			atribuicaoMunicipioEstadoDetalhes = new AtribuicaoMunicipioEstadoDetalhes();
-			atribuicaoMunicipioEstadoDetalhes.beforeClass();
-			atribuicaoMunicipioEstadoDetalhes.login();
-			atribuicaoMunicipioEstadoDetalhes.acessarMDR();
-			atribuicaoMunicipioEstadoDetalhes.detalhes();
-			atribuicaoMunicipioEstadoDetalhes.afterClass();
+	// 72
 
-		}
+	// Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP
 
+	@Test(priority = 72)
+	public void agrupadorDeCFOPCriar() {
 
-		@Test(priority = 82)
-		public void atribuicaoMunicipioEstadoExcluir() {
+		System.out.println(
+				"-------------------Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP-------------------------");
 
-			atribuicaoMunicipioEstadoExcluir = new AtribuicaoMunicipioEstadoExcluir();
-			atribuicaoMunicipioEstadoExcluir.beforeClass();
-			atribuicaoMunicipioEstadoExcluir.login();
-			atribuicaoMunicipioEstadoExcluir.acessarMDR();
-			atribuicaoMunicipioEstadoExcluir.excluir();
-			atribuicaoMunicipioEstadoExcluir.afterClass();
+		agrupadorDeCFOPCriar = new AgrupadorDeCFOPCriar();
+		agrupadorDeCFOPCriar.beforeClass();
+		agrupadorDeCFOPCriar.login();
+		agrupadorDeCFOPCriar.acessarMDR();
+		agrupadorDeCFOPCriar.criar();
+		agrupadorDeCFOPCriar.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE-------------------------");
-		}
+	}
 
-		//84
-		
-		// Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes
+	@Test(priority = 73)
+	public void agrupadorDeCFOPEditar() {
 
-		@Test(priority = 84)
-		public void codigoDeMotivosDeAjustesCriar() {
+		agrupadorDeCFOPEditar = new AgrupadorDeCFOPEditar();
+		agrupadorDeCFOPEditar.beforeClass();
+		agrupadorDeCFOPEditar.login();
+		agrupadorDeCFOPEditar.acessarMDR();
+		agrupadorDeCFOPEditar.editar();
+		agrupadorDeCFOPEditar.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes-------------------------");
+	}
 
-			codigoDeMotivosDeAjustesCriar = new CodigoDeMotivosDeAjustesCriar();
-			codigoDeMotivosDeAjustesCriar.beforeClass();
-			codigoDeMotivosDeAjustesCriar.login();
-			codigoDeMotivosDeAjustesCriar.acessarMDR();
-			codigoDeMotivosDeAjustesCriar.criar();
-			codigoDeMotivosDeAjustesCriar.afterClass();
+	@Test(priority = 74)
+	public void agrupadorDeCFOPVisualizar() {
 
-		}
+		agrupadorDeCFOPVisualizar = new AgrupadorDeCFOPVisualizar();
+		agrupadorDeCFOPVisualizar.beforeClass();
+		agrupadorDeCFOPVisualizar.login();
+		agrupadorDeCFOPVisualizar.acessarMDR();
+		agrupadorDeCFOPVisualizar.Visualizar();
+		agrupadorDeCFOPVisualizar.afterClass();
 
-		@Test(priority = 85)
-		public void codigoDeMotivosDeAjustesEditar() {
+	}
 
-			codigoDeMotivosDeAjustesEditar = new CodigoDeMotivosDeAjustesEditar();
-			codigoDeMotivosDeAjustesEditar.beforeClass();
-			codigoDeMotivosDeAjustesEditar.login();
-			codigoDeMotivosDeAjustesEditar.acessarMDR();
-			codigoDeMotivosDeAjustesEditar.editar();
-			codigoDeMotivosDeAjustesEditar.afterClass();
+	@Test(priority = 75)
+	public void agrupadorDeCFOPDetalhes() {
 
-		}
+		agrupadorDeCFOPDetalhes = new AgrupadorDeCFOPDetalhes();
+		agrupadorDeCFOPDetalhes.beforeClass();
+		agrupadorDeCFOPDetalhes.login();
+		agrupadorDeCFOPDetalhes.acessarMDR();
+		agrupadorDeCFOPDetalhes.detalhes();
+		agrupadorDeCFOPDetalhes.afterClass();
 
+	}
 
-		@Test(priority = 86)
-		public void codigoDeMotivosDeAjustesExcluir() {
+	@Test(priority = 76)
+	public void agrupadorDeCFOPExcluir() {
 
-			codigoDeMotivosDeAjustesExcluir = new CodigoDeMotivosDeAjustesExcluir();
-			codigoDeMotivosDeAjustesExcluir.beforeClass();
-			codigoDeMotivosDeAjustesExcluir.login();
-			codigoDeMotivosDeAjustesExcluir.acessarMDR();
-			codigoDeMotivosDeAjustesExcluir.excluir();
-			codigoDeMotivosDeAjustesExcluir.afterClass();
+		agrupadorDeCFOPExcluir = new AgrupadorDeCFOPExcluir();
+		agrupadorDeCFOPExcluir.beforeClass();
+		agrupadorDeCFOPExcluir.login();
+		agrupadorDeCFOPExcluir.acessarMDR();
+		agrupadorDeCFOPExcluir.excluir();
+		agrupadorDeCFOPExcluir.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes Fin-------------------------");
-		}
+		System.out.println(
+				"-------------------Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP Fin-------------------------");
+	}
 
-		
-		//90
-		
-		// Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas
+	// 78
 
-		@Test(priority = 90)
-		public void codigoDeOutrasSaidasCriar() {
+	// Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios
+	// por Estado / IBGE
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas-------------------------");
+	@Test(priority = 78)
+	public void atribuicaoMunicipioEstadoCriar() {
 
-			codigoDeOutrasSaidasCriar = new CodigoDeOutrasSaidasCriar();
-			codigoDeOutrasSaidasCriar.beforeClass();
-			codigoDeOutrasSaidasCriar.login();
-			codigoDeOutrasSaidasCriar.acessarMDR();
-			codigoDeOutrasSaidasCriar.criar();
-			codigoDeOutrasSaidasCriar.afterClass();
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE-------------------------");
 
-		}
+		atribuicaoMunicipioEstadoCriar = new AtribuicaoMunicipioEstadoCriar();
+		atribuicaoMunicipioEstadoCriar.beforeClass();
+		atribuicaoMunicipioEstadoCriar.login();
+		atribuicaoMunicipioEstadoCriar.acessarMDR();
+		atribuicaoMunicipioEstadoCriar.criar();
+		atribuicaoMunicipioEstadoCriar.afterClass();
 
-		@Test(priority = 91)
-		public void codigoDeOutrasSaidasEditar() {
+	}
 
-			codigoDeOutrasSaidasEditar = new CodigoDeOutrasSaidasEditar();
-			codigoDeOutrasSaidasEditar.beforeClass();
-			codigoDeOutrasSaidasEditar.login();
-			codigoDeOutrasSaidasEditar.acessarMDR();
-			codigoDeOutrasSaidasEditar.editar();
-			codigoDeOutrasSaidasEditar.afterClass();
+	@Test(priority = 79)
+	public void atribuicaoMunicipioEstadoEditar() {
 
-		}
+		atribuicaoMunicipioEstadoEditar = new AtribuicaoMunicipioEstadoEditar();
+		atribuicaoMunicipioEstadoEditar.beforeClass();
+		atribuicaoMunicipioEstadoEditar.login();
+		atribuicaoMunicipioEstadoEditar.acessarMDR();
+		atribuicaoMunicipioEstadoEditar.editar();
+		atribuicaoMunicipioEstadoEditar.afterClass();
 
-		@Test(priority = 92)
-		public void codigoDeOutrasSaidasVisualizar() {
+	}
 
-			codigoDeOutrasSaidasVisualizar = new CodigoDeOutrasSaidasVisualizar();
-			codigoDeOutrasSaidasVisualizar.beforeClass();
-			codigoDeOutrasSaidasVisualizar.login();
-			codigoDeOutrasSaidasVisualizar.acessarMDR();
-			codigoDeOutrasSaidasVisualizar.visualizar();
-			codigoDeOutrasSaidasVisualizar.afterClass();
+	@Test(priority = 80)
+	public void atribuicaoMunicipioEstadoVisualizar() {
 
-		}
+		atribuicaoMunicipioEstadoVisualizar = new AtribuicaoMunicipioEstadoVisualizar();
+		atribuicaoMunicipioEstadoVisualizar.beforeClass();
+		atribuicaoMunicipioEstadoVisualizar.login();
+		atribuicaoMunicipioEstadoVisualizar.acessarMDR();
+		atribuicaoMunicipioEstadoVisualizar.visualizar();
+		atribuicaoMunicipioEstadoVisualizar.afterClass();
 
-		@Test(priority = 93)
-		public void codigoDeOutrasSaidasDetalhes() {
+	}
 
-			codigoDeOutrasSaidasDetalhes = new CodigoDeOutrasSaidasDetalhes();
-			codigoDeOutrasSaidasDetalhes.beforeClass();
-			codigoDeOutrasSaidasDetalhes.login();
-			codigoDeOutrasSaidasDetalhes.acessarMDR();
-			codigoDeOutrasSaidasDetalhes.detalhes();
-			codigoDeOutrasSaidasDetalhes.afterClass();
+	@Test(priority = 81)
+	public void atribuicaoMunicipioEstadoDetalhes() {
 
-		}
+		atribuicaoMunicipioEstadoDetalhes = new AtribuicaoMunicipioEstadoDetalhes();
+		atribuicaoMunicipioEstadoDetalhes.beforeClass();
+		atribuicaoMunicipioEstadoDetalhes.login();
+		atribuicaoMunicipioEstadoDetalhes.acessarMDR();
+		atribuicaoMunicipioEstadoDetalhes.detalhes();
+		atribuicaoMunicipioEstadoDetalhes.afterClass();
 
+	}
 
-		@Test(priority = 94)
-		public void codigoDeOutrasSaidasExcluir() {
+	@Test(priority = 82)
+	public void atribuicaoMunicipioEstadoExcluir() {
 
-			codigoDeOutrasSaidasExcluir = new CodigoDeOutrasSaidasExcluir();
-			codigoDeOutrasSaidasExcluir.beforeClass();
-			codigoDeOutrasSaidasExcluir.login();
-			codigoDeOutrasSaidasExcluir.acessarMDR();
-			codigoDeOutrasSaidasExcluir.excluir();
-			codigoDeOutrasSaidasExcluir.afterClass();
+		atribuicaoMunicipioEstadoExcluir = new AtribuicaoMunicipioEstadoExcluir();
+		atribuicaoMunicipioEstadoExcluir.beforeClass();
+		atribuicaoMunicipioEstadoExcluir.login();
+		atribuicaoMunicipioEstadoExcluir.acessarMDR();
+		atribuicaoMunicipioEstadoExcluir.excluir();
+		atribuicaoMunicipioEstadoExcluir.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas Fin-------------------------");
-		}
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE-------------------------");
+	}
 
-		
-		//96
-		
-		
-		
-		// Tabelas Complementares para Obrigações Acessórias > Código DIPAM
+	// 84
 
-		@Test(priority = 96)
-		public void codigoDIPAMCriar() {
+	// Tabelas Complementares para Obrigações Acessórias > Código de Motivos de
+	// Ajustes
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Código DIPAM-------------------------");
+	@Test(priority = 84)
+	public void codigoDeMotivosDeAjustesCriar() {
 
-			codigoDIPAMCriar = new CodigoDIPAMCriar();
-			codigoDIPAMCriar.beforeClass();
-			codigoDIPAMCriar.login();
-			codigoDIPAMCriar.acessarMDR();
-			codigoDIPAMCriar.criar();
-			codigoDIPAMCriar.afterClass();
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes-------------------------");
 
-		}
+		codigoDeMotivosDeAjustesCriar = new CodigoDeMotivosDeAjustesCriar();
+		codigoDeMotivosDeAjustesCriar.beforeClass();
+		codigoDeMotivosDeAjustesCriar.login();
+		codigoDeMotivosDeAjustesCriar.acessarMDR();
+		codigoDeMotivosDeAjustesCriar.criar();
+		codigoDeMotivosDeAjustesCriar.afterClass();
 
-		@Test(priority = 97)
-		public void codigoDIPAMEditar() {
+	}
 
-			codigoDIPAMEditar = new CodigoDIPAMEditar();
-			codigoDIPAMEditar.beforeClass();
-			codigoDIPAMEditar.login();
-			codigoDIPAMEditar.acessarMDR();
-			codigoDIPAMEditar.editar();
-			codigoDIPAMEditar.afterClass();
+	@Test(priority = 85)
+	public void codigoDeMotivosDeAjustesEditar() {
 
-		}
+		codigoDeMotivosDeAjustesEditar = new CodigoDeMotivosDeAjustesEditar();
+		codigoDeMotivosDeAjustesEditar.beforeClass();
+		codigoDeMotivosDeAjustesEditar.login();
+		codigoDeMotivosDeAjustesEditar.acessarMDR();
+		codigoDeMotivosDeAjustesEditar.editar();
+		codigoDeMotivosDeAjustesEditar.afterClass();
 
-		@Test(priority = 98)
-		public void codigoDIPAMVisualizar() {
+	}
 
-			codigoDIPAMVisualizar = new CodigoDIPAMVisualizar();
-			codigoDIPAMVisualizar.beforeClass();
-			codigoDIPAMVisualizar.login();
-			codigoDIPAMVisualizar.acessarMDR();
-			codigoDIPAMVisualizar.visualizar();
-			codigoDIPAMVisualizar.afterClass();
+	@Test(priority = 86)
+	public void codigoDeMotivosDeAjustesExcluir() {
 
-		}
+		codigoDeMotivosDeAjustesExcluir = new CodigoDeMotivosDeAjustesExcluir();
+		codigoDeMotivosDeAjustesExcluir.beforeClass();
+		codigoDeMotivosDeAjustesExcluir.login();
+		codigoDeMotivosDeAjustesExcluir.acessarMDR();
+		codigoDeMotivosDeAjustesExcluir.excluir();
+		codigoDeMotivosDeAjustesExcluir.afterClass();
 
-		@Test(priority = 99)
-		public void codigoDIPAMDetalhes() {
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes Fin-------------------------");
+	}
 
-			codigoDIPAMDetalhes = new CodigoDIPAMDetalhes();
-			codigoDIPAMDetalhes.beforeClass();
-			codigoDIPAMDetalhes.login();
-			codigoDIPAMDetalhes.acessarMDR();
-			codigoDIPAMDetalhes.detalhes();
-			codigoDIPAMDetalhes.afterClass();
+	// 90
 
-		}
+	// Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas
 
+	@Test(priority = 90)
+	public void codigoDeOutrasSaidasCriar() {
 
-		@Test(priority = 100)
-		public void codigoDIPAMExcluir() {
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas-------------------------");
 
-			codigoDIPAMExcluir = new CodigoDIPAMExcluir();
-			codigoDIPAMExcluir.beforeClass();
-			codigoDIPAMExcluir.login();
-			codigoDIPAMExcluir.acessarMDR();
-			codigoDIPAMExcluir.excluir();
-			codigoDIPAMExcluir.afterClass();
+		codigoDeOutrasSaidasCriar = new CodigoDeOutrasSaidasCriar();
+		codigoDeOutrasSaidasCriar.beforeClass();
+		codigoDeOutrasSaidasCriar.login();
+		codigoDeOutrasSaidasCriar.acessarMDR();
+		codigoDeOutrasSaidasCriar.criar();
+		codigoDeOutrasSaidasCriar.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Código DIPAM Fin-------------------------");
-		}
+	}
 
-	
-		//102
-		
-		// Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos
+	@Test(priority = 91)
+	public void codigoDeOutrasSaidasEditar() {
 
-		@Test(priority = 20)
-		public void subItensValidosCriar() {
+		codigoDeOutrasSaidasEditar = new CodigoDeOutrasSaidasEditar();
+		codigoDeOutrasSaidasEditar.beforeClass();
+		codigoDeOutrasSaidasEditar.login();
+		codigoDeOutrasSaidasEditar.acessarMDR();
+		codigoDeOutrasSaidasEditar.editar();
+		codigoDeOutrasSaidasEditar.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos-------------------------");
+	}
 
-			subItensValidosCriar = new SubItensValidosCriar();
-			subItensValidosCriar.beforeClass();
-			subItensValidosCriar.login();
-			subItensValidosCriar.acessarMDR();
-			subItensValidosCriar.criar();
-			subItensValidosCriar.afterClass();
+	@Test(priority = 92)
+	public void codigoDeOutrasSaidasVisualizar() {
 
-		}
+		codigoDeOutrasSaidasVisualizar = new CodigoDeOutrasSaidasVisualizar();
+		codigoDeOutrasSaidasVisualizar.beforeClass();
+		codigoDeOutrasSaidasVisualizar.login();
+		codigoDeOutrasSaidasVisualizar.acessarMDR();
+		codigoDeOutrasSaidasVisualizar.visualizar();
+		codigoDeOutrasSaidasVisualizar.afterClass();
 
-		@Test(priority = 21)
-		public void subItensValidosEditar() {
+	}
 
-			subItensValidosEditar = new SubItensValidosEditar();
-			subItensValidosEditar.beforeClass();
-			subItensValidosEditar.login();
-			subItensValidosEditar.acessarMDR();
-			subItensValidosEditar.editar();
-			subItensValidosEditar.afterClass();
+	@Test(priority = 93)
+	public void codigoDeOutrasSaidasDetalhes() {
 
-		}
+		codigoDeOutrasSaidasDetalhes = new CodigoDeOutrasSaidasDetalhes();
+		codigoDeOutrasSaidasDetalhes.beforeClass();
+		codigoDeOutrasSaidasDetalhes.login();
+		codigoDeOutrasSaidasDetalhes.acessarMDR();
+		codigoDeOutrasSaidasDetalhes.detalhes();
+		codigoDeOutrasSaidasDetalhes.afterClass();
 
+	}
 
+	@Test(priority = 94)
+	public void codigoDeOutrasSaidasExcluir() {
 
-		@Test(priority = 24)
-		public void subItensValidosExcluir() {
+		codigoDeOutrasSaidasExcluir = new CodigoDeOutrasSaidasExcluir();
+		codigoDeOutrasSaidasExcluir.beforeClass();
+		codigoDeOutrasSaidasExcluir.login();
+		codigoDeOutrasSaidasExcluir.acessarMDR();
+		codigoDeOutrasSaidasExcluir.excluir();
+		codigoDeOutrasSaidasExcluir.afterClass();
 
-			subItensValidosExcluir = new SubItensValidosExcluir();
-			subItensValidosExcluir.beforeClass();
-			subItensValidosExcluir.login();
-			subItensValidosExcluir.acessarMDR();
-			subItensValidosExcluir.excluir();
-			subItensValidosExcluir.afterClass();
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas Fin-------------------------");
+	}
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos Fin-------------------------");
-		}
+	// 96
 
-		//108
-		
-		// Tabelas Complementares para Obrigações Acessórias > Tabela de Código da Receitas
+	// Tabelas Complementares para Obrigações Acessórias > Código DIPAM
 
-		@Test(priority = 108)
-		public void tabelaCodigoReceitaCriar() {
+	@Test(priority = 96)
+	public void codigoDIPAMCriar() {
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código da Receitas-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Código DIPAM-------------------------");
 
-			tabelaCodigoReceitaCriar = new TabelaCodigoReceitaCriar();
-			tabelaCodigoReceitaCriar.beforeClass();
-			tabelaCodigoReceitaCriar.login();
-			tabelaCodigoReceitaCriar.acessarMDR();
-			tabelaCodigoReceitaCriar.criar();
-			tabelaCodigoReceitaCriar.afterClass();
+		codigoDIPAMCriar = new CodigoDIPAMCriar();
+		codigoDIPAMCriar.beforeClass();
+		codigoDIPAMCriar.login();
+		codigoDIPAMCriar.acessarMDR();
+		codigoDIPAMCriar.criar();
+		codigoDIPAMCriar.afterClass();
 
-		}
+	}
 
+	@Test(priority = 97)
+	public void codigoDIPAMEditar() {
 
+		codigoDIPAMEditar = new CodigoDIPAMEditar();
+		codigoDIPAMEditar.beforeClass();
+		codigoDIPAMEditar.login();
+		codigoDIPAMEditar.acessarMDR();
+		codigoDIPAMEditar.editar();
+		codigoDIPAMEditar.afterClass();
 
-		@Test(priority = 109)
-		public void tabelaCodigoReceitaDetalhes() {
+	}
 
-			tabelaCodigoReceitaDetalhes = new TabelaCodigoReceitaDetalhes();
-			tabelaCodigoReceitaDetalhes.beforeClass();
-			tabelaCodigoReceitaDetalhes.login();
-			tabelaCodigoReceitaDetalhes.acessarMDR();
-			tabelaCodigoReceitaDetalhes.detalhes();
-			tabelaCodigoReceitaDetalhes.afterClass();
+	@Test(priority = 98)
+	public void codigoDIPAMVisualizar() {
 
-		}
+		codigoDIPAMVisualizar = new CodigoDIPAMVisualizar();
+		codigoDIPAMVisualizar.beforeClass();
+		codigoDIPAMVisualizar.login();
+		codigoDIPAMVisualizar.acessarMDR();
+		codigoDIPAMVisualizar.visualizar();
+		codigoDIPAMVisualizar.afterClass();
 
+	}
 
-		@Test(priority = 110)
-		public void tabelaCodigoReceitaExcluir() {
+	@Test(priority = 99)
+	public void codigoDIPAMDetalhes() {
 
-			tabelaCodigoReceitaExcluir = new TabelaCodigoReceitaExcluir();
-			tabelaCodigoReceitaExcluir.beforeClass();
-			tabelaCodigoReceitaExcluir.login();
-			tabelaCodigoReceitaExcluir.acessarMDR();
-			tabelaCodigoReceitaExcluir.excluir();
-			tabelaCodigoReceitaExcluir.afterClass();
+		codigoDIPAMDetalhes = new CodigoDIPAMDetalhes();
+		codigoDIPAMDetalhes.beforeClass();
+		codigoDIPAMDetalhes.login();
+		codigoDIPAMDetalhes.acessarMDR();
+		codigoDIPAMDetalhes.detalhes();
+		codigoDIPAMDetalhes.afterClass();
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código da Receitas Fin-------------------------");
-		}
-		
-		//114
-		
-		// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF
+	}
 
-		@Test(priority = 20)
-		public void tabelaComplementarParaDIRFCriar() {
+	@Test(priority = 100)
+	public void codigoDIPAMExcluir() {
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF-------------------------");
+		codigoDIPAMExcluir = new CodigoDIPAMExcluir();
+		codigoDIPAMExcluir.beforeClass();
+		codigoDIPAMExcluir.login();
+		codigoDIPAMExcluir.acessarMDR();
+		codigoDIPAMExcluir.excluir();
+		codigoDIPAMExcluir.afterClass();
 
-			tabelaComplementarParaDIRFCriar = new TabelaComplementarParaDIRFCriar();
-			tabelaComplementarParaDIRFCriar.beforeClass();
-			tabelaComplementarParaDIRFCriar.login();
-			tabelaComplementarParaDIRFCriar.acessarMDR();
-			tabelaComplementarParaDIRFCriar.criar();
-			tabelaComplementarParaDIRFCriar.afterClass();
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Código DIPAM Fin-------------------------");
+	}
 
-		}
+	// 102
 
-		@Test(priority = 21)
-		public void tabelaComplementarParaDIRFEditar() {
+	// Tabelas Complementares para Obrigações Acessórias > SubItens Válidos
 
-			tabelaComplementarParaDIRFEditar = new TabelaComplementarParaDIRFEditar();
-			tabelaComplementarParaDIRFEditar.beforeClass();
-			tabelaComplementarParaDIRFEditar.login();
-			tabelaComplementarParaDIRFEditar.acessarMDR();
-			tabelaComplementarParaDIRFEditar.editar();
-			tabelaComplementarParaDIRFEditar.afterClass();
+	@Test(priority = 102)
+	public void subItensValidosCriar() {
 
-		}
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos-------------------------");
 
-		@Test(priority = 22)
-		public void tabelaComplementarParaDIRFVisualizar() {
+		subItensValidosCriar = new SubItensValidosCriar();
+		subItensValidosCriar.beforeClass();
+		subItensValidosCriar.login();
+		subItensValidosCriar.acessarMDR();
+		subItensValidosCriar.criar();
+		subItensValidosCriar.afterClass();
 
-			tabelaComplementarParaDIRFVisualizar = new TabelaComplementarParaDIRFVisualizar();
-			tabelaComplementarParaDIRFVisualizar.beforeClass();
-			tabelaComplementarParaDIRFVisualizar.login();
-			tabelaComplementarParaDIRFVisualizar.acessarMDR();
-			tabelaComplementarParaDIRFVisualizar.visualizar();
-			tabelaComplementarParaDIRFVisualizar.afterClass();
+	}
 
-		}
+	@Test(priority = 103)
+	public void subItensValidosEditar() {
 
-		@Test(priority = 23)
-		public void tabelaComplementarParaDIRFDetalhes() {
+		subItensValidosEditar = new SubItensValidosEditar();
+		subItensValidosEditar.beforeClass();
+		subItensValidosEditar.login();
+		subItensValidosEditar.acessarMDR();
+		subItensValidosEditar.editar();
+		subItensValidosEditar.afterClass();
 
-			tabelaComplementarParaDIRFDetalhes = new TabelaComplementarParaDIRFDetalhes();
-			tabelaComplementarParaDIRFDetalhes.beforeClass();
-			tabelaComplementarParaDIRFDetalhes.login();
-			tabelaComplementarParaDIRFDetalhes.acessarMDR();
-			tabelaComplementarParaDIRFDetalhes.detalhes();
-			tabelaComplementarParaDIRFDetalhes.afterClass();
+	}
 
-		}
+	@Test(priority = 104)
+	public void subItensValidosExcluir() {
 
+		subItensValidosExcluir = new SubItensValidosExcluir();
+		subItensValidosExcluir.beforeClass();
+		subItensValidosExcluir.login();
+		subItensValidosExcluir.acessarMDR();
+		subItensValidosExcluir.excluir();
+		subItensValidosExcluir.afterClass();
 
-		@Test(priority = 24)
-		public void tabelaComplementarParaDIRFExcluir() {
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias	> SubItens Válidos Fin-------------------------");
+	}
 
-			tabelaComplementarParaDIRFExcluir = new TabelaComplementarParaDIRFExcluir();
-			tabelaComplementarParaDIRFExcluir.beforeClass();
-			tabelaComplementarParaDIRFExcluir.login();
-			tabelaComplementarParaDIRFExcluir.acessarMDR();
-			tabelaComplementarParaDIRFExcluir.excluir();
-			tabelaComplementarParaDIRFExcluir.afterClass();
+	// 108
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF Fin-------------------------");
-		}
+	// Tabelas Complementares para Obrigações Acessórias > Tabela de Código da
+	// Receitas
 
-		
-		
-		//120
-		
-		// Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação
+	@Test(priority = 108)
+	public void tabelaCodigoReceitaCriar() {
 
-		@Test(priority = 20)
-		public void tabelaDeAtribuicaoDeCodigoCFOPCriar() {
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código da Receitas-------------------------");
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação-------------------------");
+		tabelaCodigoReceitaCriar = new TabelaCodigoReceitaCriar();
+		tabelaCodigoReceitaCriar.beforeClass();
+		tabelaCodigoReceitaCriar.login();
+		tabelaCodigoReceitaCriar.acessarMDR();
+		tabelaCodigoReceitaCriar.criar();
+		tabelaCodigoReceitaCriar.afterClass();
 
-			tabelaDeAtribuicaoDeCodigoCFOPCriar = new TabelaDeAtribuicaoDeCodigoCFOPCriar();
-			tabelaDeAtribuicaoDeCodigoCFOPCriar.beforeClass();
-			tabelaDeAtribuicaoDeCodigoCFOPCriar.login();
-			tabelaDeAtribuicaoDeCodigoCFOPCriar.acessarMDR();
-			tabelaDeAtribuicaoDeCodigoCFOPCriar.criar();
-			tabelaDeAtribuicaoDeCodigoCFOPCriar.afterClass();
+	}
 
-		}
+	@Test(priority = 109)
+	public void tabelaCodigoReceitaDetalhes() {
 
-		@Test(priority = 21)
-		public void tabelaDeAtribuicaoDeCodigoCFOPEditar() {
+		tabelaCodigoReceitaDetalhes = new TabelaCodigoReceitaDetalhes();
+		tabelaCodigoReceitaDetalhes.beforeClass();
+		tabelaCodigoReceitaDetalhes.login();
+		tabelaCodigoReceitaDetalhes.acessarMDR();
+		tabelaCodigoReceitaDetalhes.detalhes();
+		tabelaCodigoReceitaDetalhes.afterClass();
 
-			tabelaDeAtribuicaoDeCodigoCFOPEditar = new TabelaDeAtribuicaoDeCodigoCFOPEditar();
-			tabelaDeAtribuicaoDeCodigoCFOPEditar.beforeClass();
-			tabelaDeAtribuicaoDeCodigoCFOPEditar.login();
-			tabelaDeAtribuicaoDeCodigoCFOPEditar.acessarMDR();
-			tabelaDeAtribuicaoDeCodigoCFOPEditar.editar();
-			tabelaDeAtribuicaoDeCodigoCFOPEditar.afterClass();
+	}
 
-		}
+	@Test(priority = 110)
+	public void tabelaCodigoReceitaExcluir() {
 
-		@Test(priority = 22)
-		public void tabelaDeAtribuicaoDeCodigoCFOPVisualzar() {
+		tabelaCodigoReceitaExcluir = new TabelaCodigoReceitaExcluir();
+		tabelaCodigoReceitaExcluir.beforeClass();
+		tabelaCodigoReceitaExcluir.login();
+		tabelaCodigoReceitaExcluir.acessarMDR();
+		tabelaCodigoReceitaExcluir.excluir();
+		tabelaCodigoReceitaExcluir.afterClass();
 
-			tabelaDeAtribuicaoDeCodigoCFOPVisualizar = new TabelaDeAtribuicaoDeCodigoCFOPVisualizar();
-			tabelaDeAtribuicaoDeCodigoCFOPVisualizar.beforeClass();
-			tabelaDeAtribuicaoDeCodigoCFOPVisualizar.login();
-			tabelaDeAtribuicaoDeCodigoCFOPVisualizar.acessarMDR();
-			tabelaDeAtribuicaoDeCodigoCFOPVisualizar.Visualizar();
-			tabelaDeAtribuicaoDeCodigoCFOPVisualizar.afterClass();
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código da Receitas Fin-------------------------");
+	}
 
-		}
+	// 114
 
-		@Test(priority = 23)
-		public void tabelaDeAtribuicaoDeCodigoCFOPDetalhes() {
+	// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para
+	// DIRF
 
-			tabelaDeAtribuicaoDeCodigoCFOPDetalhes = new TabelaDeAtribuicaoDeCodigoCFOPDetalhes();
-			tabelaDeAtribuicaoDeCodigoCFOPDetalhes.beforeClass();
-			tabelaDeAtribuicaoDeCodigoCFOPDetalhes.login();
-			tabelaDeAtribuicaoDeCodigoCFOPDetalhes.acessarMDR();
-			tabelaDeAtribuicaoDeCodigoCFOPDetalhes.detalhes();
-			tabelaDeAtribuicaoDeCodigoCFOPDetalhes.afterClass();
+	@Test(priority = 114)
+	public void tabelaComplementarParaDIRFCriar() {
 
-		}
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF-------------------------");
 
+		tabelaComplementarParaDIRFCriar = new TabelaComplementarParaDIRFCriar();
+		tabelaComplementarParaDIRFCriar.beforeClass();
+		tabelaComplementarParaDIRFCriar.login();
+		tabelaComplementarParaDIRFCriar.acessarMDR();
+		tabelaComplementarParaDIRFCriar.criar();
+		tabelaComplementarParaDIRFCriar.afterClass();
 
-		@Test(priority = 24)
-		public void tabelaDeAtribuicaoDeCodigoCFOPExcluir() {
+	}
 
-			tabelaDeAtribuicaoDeCodigoCFOPExcluir = new TabelaDeAtribuicaoDeCodigoCFOPExcluir();
-			tabelaDeAtribuicaoDeCodigoCFOPExcluir.beforeClass();
-			tabelaDeAtribuicaoDeCodigoCFOPExcluir.login();
-			tabelaDeAtribuicaoDeCodigoCFOPExcluir.acessarMDR();
-			tabelaDeAtribuicaoDeCodigoCFOPExcluir.excluir();
-			tabelaDeAtribuicaoDeCodigoCFOPExcluir.afterClass();
+	@Test(priority = 115)
+	public void tabelaComplementarParaDIRFEditar() {
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação Fin-------------------------");
-		}
+		tabelaComplementarParaDIRFEditar = new TabelaComplementarParaDIRFEditar();
+		tabelaComplementarParaDIRFEditar.beforeClass();
+		tabelaComplementarParaDIRFEditar.login();
+		tabelaComplementarParaDIRFEditar.acessarMDR();
+		tabelaComplementarParaDIRFEditar.editar();
+		tabelaComplementarParaDIRFEditar.afterClass();
 
-		
-		
-		
-		//126
-		
-		// Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro
+	}
 
-		@Test(priority = 20)
-		public void tabelaDeCodigoEClasseParaQuadroCriar() {
+	@Test(priority = 116)
+	public void tabelaComplementarParaDIRFVisualizar() {
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro-------------------------");
+		tabelaComplementarParaDIRFVisualizar = new TabelaComplementarParaDIRFVisualizar();
+		tabelaComplementarParaDIRFVisualizar.beforeClass();
+		tabelaComplementarParaDIRFVisualizar.login();
+		tabelaComplementarParaDIRFVisualizar.acessarMDR();
+		tabelaComplementarParaDIRFVisualizar.visualizar();
+		tabelaComplementarParaDIRFVisualizar.afterClass();
 
-			tabelaDeCodigoEClasseParaQuadroCriar = new TabelaDeCodigoEClasseParaQuadroCriar();
-			tabelaDeCodigoEClasseParaQuadroCriar.beforeClass();
-			tabelaDeCodigoEClasseParaQuadroCriar.login();
-			tabelaDeCodigoEClasseParaQuadroCriar.acessarMDR();
-			tabelaDeCodigoEClasseParaQuadroCriar.criar();
-			tabelaDeCodigoEClasseParaQuadroCriar.afterClass();
+	}
 
-		}
+	@Test(priority = 117)
+	public void tabelaComplementarParaDIRFDetalhes() {
 
-		@Test(priority = 21)
-		public void tabelaDeCodigoEClasseParaQuadroEditar() {
+		tabelaComplementarParaDIRFDetalhes = new TabelaComplementarParaDIRFDetalhes();
+		tabelaComplementarParaDIRFDetalhes.beforeClass();
+		tabelaComplementarParaDIRFDetalhes.login();
+		tabelaComplementarParaDIRFDetalhes.acessarMDR();
+		tabelaComplementarParaDIRFDetalhes.detalhes();
+		tabelaComplementarParaDIRFDetalhes.afterClass();
 
-			tabelaDeCodigoEClasseParaQuadroEditar = new TabelaDeCodigoEClasseParaQuadroEditar();
-			tabelaDeCodigoEClasseParaQuadroEditar.beforeClass();
-			tabelaDeCodigoEClasseParaQuadroEditar.login();
-			tabelaDeCodigoEClasseParaQuadroEditar.acessarMDR();
-			tabelaDeCodigoEClasseParaQuadroEditar.editar();
-			tabelaDeCodigoEClasseParaQuadroEditar.afterClass();
+	}
 
-		}
+	@Test(priority = 118)
+	public void tabelaComplementarParaDIRFExcluir() {
 
-		@Test(priority = 22)
-		public void tabelaDeCodigoEClasseParaQuadroVisualizar() {
+		tabelaComplementarParaDIRFExcluir = new TabelaComplementarParaDIRFExcluir();
+		tabelaComplementarParaDIRFExcluir.beforeClass();
+		tabelaComplementarParaDIRFExcluir.login();
+		tabelaComplementarParaDIRFExcluir.acessarMDR();
+		tabelaComplementarParaDIRFExcluir.excluir();
+		tabelaComplementarParaDIRFExcluir.afterClass();
 
-			tabelaDeCodigoEClasseParaQuadroVisualizar = new TabelaDeCodigoEClasseParaQuadroVisualizar();
-			tabelaDeCodigoEClasseParaQuadroVisualizar.beforeClass();
-			tabelaDeCodigoEClasseParaQuadroVisualizar.login();
-			tabelaDeCodigoEClasseParaQuadroVisualizar.acessarMDR();
-			tabelaDeCodigoEClasseParaQuadroVisualizar.Visualizar();
-			tabelaDeCodigoEClasseParaQuadroVisualizar.afterClass();
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF Fin-------------------------");
+	}
 
-		}
+	// 120
 
-		@Test(priority = 23)
-		public void tabelaDeCodigoEClasseParaQuadroDetalhes() {
+	// Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de
+	// Código CFOP / Código de Ajuste para Obrigação
 
-			tabelaDeCodigoEClasseParaQuadroDetalhes = new TabelaDeCodigoEClasseParaQuadroDetalhes();
-			tabelaDeCodigoEClasseParaQuadroDetalhes.beforeClass();
-			tabelaDeCodigoEClasseParaQuadroDetalhes.login();
-			tabelaDeCodigoEClasseParaQuadroDetalhes.acessarMDR();
-			tabelaDeCodigoEClasseParaQuadroDetalhes.detalhes();
-			tabelaDeCodigoEClasseParaQuadroDetalhes.afterClass();
+	@Test(priority = 120)
+	public void tabelaDeAtribuicaoDeCodigoCFOPCriar() {
 
-		}
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação-------------------------");
 
+		tabelaDeAtribuicaoDeCodigoCFOPCriar = new TabelaDeAtribuicaoDeCodigoCFOPCriar();
+		tabelaDeAtribuicaoDeCodigoCFOPCriar.beforeClass();
+		tabelaDeAtribuicaoDeCodigoCFOPCriar.login();
+		tabelaDeAtribuicaoDeCodigoCFOPCriar.acessarMDR();
+		tabelaDeAtribuicaoDeCodigoCFOPCriar.criar();
+		tabelaDeAtribuicaoDeCodigoCFOPCriar.afterClass();
 
-		@Test(priority = 24)
-		public void tabelaDeCodigoEClasseParaQuadroExcluir() {
+	}
 
-			tabelaDeCodigoEClasseParaQuadroExcluir = new TabelaDeCodigoEClasseParaQuadroExcluir();
-			tabelaDeCodigoEClasseParaQuadroExcluir.beforeClass();
-			tabelaDeCodigoEClasseParaQuadroExcluir.login();
-			tabelaDeCodigoEClasseParaQuadroExcluir.acessarMDR();
-			tabelaDeCodigoEClasseParaQuadroExcluir.excluir();
-			tabelaDeCodigoEClasseParaQuadroExcluir.afterClass();
+	@Test(priority = 121)
+	public void tabelaDeAtribuicaoDeCodigoCFOPEditar() {
 
-			System.out.println("-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro Fin-------------------------");
-		}
+		tabelaDeAtribuicaoDeCodigoCFOPEditar = new TabelaDeAtribuicaoDeCodigoCFOPEditar();
+		tabelaDeAtribuicaoDeCodigoCFOPEditar.beforeClass();
+		tabelaDeAtribuicaoDeCodigoCFOPEditar.login();
+		tabelaDeAtribuicaoDeCodigoCFOPEditar.acessarMDR();
+		tabelaDeAtribuicaoDeCodigoCFOPEditar.editar();
+		tabelaDeAtribuicaoDeCodigoCFOPEditar.afterClass();
 
-		
-		
-		
+	}
+
+	@Test(priority = 122)
+	public void tabelaDeAtribuicaoDeCodigoCFOPVisualzar() {
+
+		tabelaDeAtribuicaoDeCodigoCFOPVisualizar = new TabelaDeAtribuicaoDeCodigoCFOPVisualizar();
+		tabelaDeAtribuicaoDeCodigoCFOPVisualizar.beforeClass();
+		tabelaDeAtribuicaoDeCodigoCFOPVisualizar.login();
+		tabelaDeAtribuicaoDeCodigoCFOPVisualizar.acessarMDR();
+		tabelaDeAtribuicaoDeCodigoCFOPVisualizar.Visualizar();
+		tabelaDeAtribuicaoDeCodigoCFOPVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 123)
+	public void tabelaDeAtribuicaoDeCodigoCFOPDetalhes() {
+
+		tabelaDeAtribuicaoDeCodigoCFOPDetalhes = new TabelaDeAtribuicaoDeCodigoCFOPDetalhes();
+		tabelaDeAtribuicaoDeCodigoCFOPDetalhes.beforeClass();
+		tabelaDeAtribuicaoDeCodigoCFOPDetalhes.login();
+		tabelaDeAtribuicaoDeCodigoCFOPDetalhes.acessarMDR();
+		tabelaDeAtribuicaoDeCodigoCFOPDetalhes.detalhes();
+		tabelaDeAtribuicaoDeCodigoCFOPDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 124)
+	public void tabelaDeAtribuicaoDeCodigoCFOPExcluir() {
+
+		tabelaDeAtribuicaoDeCodigoCFOPExcluir = new TabelaDeAtribuicaoDeCodigoCFOPExcluir();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluir.beforeClass();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluir.login();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluir.acessarMDR();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluir.excluir();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluir.afterClass();
+
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação Fin-------------------------");
+	}
+
+	// 126
+
+	// Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe
+	// para Quadro
+
+	@Test(priority = 126)
+	public void tabelaDeCodigoEClasseParaQuadroCriar() {
+
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro-------------------------");
+
+		tabelaDeCodigoEClasseParaQuadroCriar = new TabelaDeCodigoEClasseParaQuadroCriar();
+		tabelaDeCodigoEClasseParaQuadroCriar.beforeClass();
+		tabelaDeCodigoEClasseParaQuadroCriar.login();
+		tabelaDeCodigoEClasseParaQuadroCriar.acessarMDR();
+		tabelaDeCodigoEClasseParaQuadroCriar.criar();
+		tabelaDeCodigoEClasseParaQuadroCriar.afterClass();
+
+	}
+
+	@Test(priority = 127)
+	public void tabelaDeCodigoEClasseParaQuadroEditar() {
+
+		tabelaDeCodigoEClasseParaQuadroEditar = new TabelaDeCodigoEClasseParaQuadroEditar();
+		tabelaDeCodigoEClasseParaQuadroEditar.beforeClass();
+		tabelaDeCodigoEClasseParaQuadroEditar.login();
+		tabelaDeCodigoEClasseParaQuadroEditar.acessarMDR();
+		tabelaDeCodigoEClasseParaQuadroEditar.editar();
+		tabelaDeCodigoEClasseParaQuadroEditar.afterClass();
+
+	}
+
+	@Test(priority = 128)
+	public void tabelaDeCodigoEClasseParaQuadroVisualizar() {
+
+		tabelaDeCodigoEClasseParaQuadroVisualizar = new TabelaDeCodigoEClasseParaQuadroVisualizar();
+		tabelaDeCodigoEClasseParaQuadroVisualizar.beforeClass();
+		tabelaDeCodigoEClasseParaQuadroVisualizar.login();
+		tabelaDeCodigoEClasseParaQuadroVisualizar.acessarMDR();
+		tabelaDeCodigoEClasseParaQuadroVisualizar.Visualizar();
+		tabelaDeCodigoEClasseParaQuadroVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 129)
+	public void tabelaDeCodigoEClasseParaQuadroDetalhes() {
+
+		tabelaDeCodigoEClasseParaQuadroDetalhes = new TabelaDeCodigoEClasseParaQuadroDetalhes();
+		tabelaDeCodigoEClasseParaQuadroDetalhes.beforeClass();
+		tabelaDeCodigoEClasseParaQuadroDetalhes.login();
+		tabelaDeCodigoEClasseParaQuadroDetalhes.acessarMDR();
+		tabelaDeCodigoEClasseParaQuadroDetalhes.detalhes();
+		tabelaDeCodigoEClasseParaQuadroDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 130)
+	public void tabelaDeCodigoEClasseParaQuadroExcluir() {
+
+		tabelaDeCodigoEClasseParaQuadroExcluir = new TabelaDeCodigoEClasseParaQuadroExcluir();
+		tabelaDeCodigoEClasseParaQuadroExcluir.beforeClass();
+		tabelaDeCodigoEClasseParaQuadroExcluir.login();
+		tabelaDeCodigoEClasseParaQuadroExcluir.acessarMDR();
+		tabelaDeCodigoEClasseParaQuadroExcluir.excluir();
+		tabelaDeCodigoEClasseParaQuadroExcluir.afterClass();
+
+		System.out.println(
+				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro Fin-------------------------");
+	}
 
 }

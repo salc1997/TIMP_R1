@@ -12,8 +12,6 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluirPO;
 
 public class S1200RemuneracaoDeTrabalhadorExcluir extends TestBaseEliel {
- 
-	
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -27,9 +25,11 @@ public class S1200RemuneracaoDeTrabalhadorExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		s1200RemuneracaoDeTrabalhadorExcluirPO = new S1200RemuneracaoDeTrabalhadorExcluirPO();
 	}
-	
-	  @AfterClass public void afterClass(){ driver.close(); }
-	 
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -47,11 +47,9 @@ public class S1200RemuneracaoDeTrabalhadorExcluir extends TestBaseEliel {
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = s1200RemuneracaoDeTrabalhadorExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
-	
-	
+
+	}
+
 }

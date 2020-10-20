@@ -6,6 +6,7 @@ import org.yaml.snakeyaml.scanner.Constant;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFEditarPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditarPO;
 import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar;
@@ -111,6 +112,11 @@ import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApur
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoVisualizar;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriar;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhes;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraEditar;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluir;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizar;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
@@ -133,7 +139,50 @@ import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.Param
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCICriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVACriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVADetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLDetalhes;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroID;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
+import com.timp.test.MDR.RegistroECAC.RegistroECACEditar;
+import com.timp.test.MDR.RegistroECAC.RegistroECACExcluir;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -188,7 +237,10 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOut
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoCriar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasEditar;
@@ -208,145 +260,159 @@ import com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMar
 
 public class AutomacoesMDR4 extends TestBaseSteven {
 
-	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias
-	
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
+	// tranferencias
+
 	TabelaDeCodigosDeTransferenciasCriar tabelaDeCodigosDeTransferenciasCriar;
 	TabelaDeCodigosDeTransferenciasDetalhes tabelaDeCodigosDeTransferenciasDetalhes;
 	TabelaDeCodigosDeTransferenciasEditar tabelaDeCodigosDeTransferenciasEditar;
 	TabelaDeCodigosDeTransferenciasExcluir tabelaDeCodigosDeTransferenciasExcluir;
 	TabelaDeCodigosDeTransferenciasVisualizar tabelaDeCodigosDeTransferenciasVisualizar;
-	
-	// Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por obrigaçao
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por
+	// obrigaçao
 	TabelaDeCreditosPorObrigacaoCriar tabelaDeCreditosPorObrigacaoCriar;
 	TabelaDeCreditosPorObrigacaoDetalhes tabelaDeCreditosPorObrigacaoDetalhes;
 	TabelaDeCreditosPorObrigacaoEditar tabelaDeCreditosPorObrigacaoEditar;
 	TabelaDeCreditosPorObrigacaoExcluir tabelaDeCreditosPorObrigacaoExcluir;
 	TabelaDeCreditosPorObrigacaoVisualizar tabelaDeCreditosPorObrigacaoVisualizar;
-	
-	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamento Para Registro 10
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamento
+	// Para Registro 10
 	TabelaDeDetalhamentosParaRegistro10Criar tabelaDeDetalhamentosParaRegistro10Criar;
 	TabelaDeDetalhamentosParaRegistro10Detalhes tabelaDeDetalhamentosParaRegistro10Detalhes;
 	TabelaDeDetalhamentosParaRegistro10Editar tabelaDeDetalhamentosParaRegistro10Editar;
-	TabelaDeDetalhamentosParaRegistro10Excluir tabelaDeDetalhamentosParaRegistro10Excluir; 
-	TabelaDeDetalhamentosParaRegistro10Visualizar tabelaDeDetalhamentosParaRegistro10Visualizar; 
-	
-	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamento Para Registro 11
-		TabelaDeDetalhamentosParaRegistro11Criar tabelaDeDetalhamentosParaRegistro11Criar;
-		TabelaDeDetalhamentosParaRegistro11Detalhes tabelaDeDetalhamentosParaRegistro11Detalhes;
-		TabelaDeDetalhamentosParaRegistro11Editar tabelaDeDetalhamentosParaRegistro11Editar;
-		TabelaDeDetalhamentosParaRegistro11Excluir tabelaDeDetalhamentosParaRegistro11Excluir; 
-		TabelaDeDetalhamentosParaRegistro11Visualizar tabelaDeDetalhamentosParaRegistro11Visualizar; 
-	
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para registro 12
-		TabelaDeEstoqueParaRegistro12Criar tabelaDeEstoqueParaRegistro12Criar;
-		TabelaDeEstoqueParaRegistro12Editar tabelaDeEstoqueParaRegistro12Editar;
-		TabelaDeEstoqueParaRegistro12Detalhes tabelaDeEstoqueParaRegistro12Detalhes;
-		TabelaDeEstoqueParaRegistro12Excluir tabelaDeEstoqueParaRegistro12Excluir;
-		TabelaDeEstoqueParaRegistro12Visualizar tabelaDeEstoqueParaRegistro12Visualizar;
-	
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de isençoes
-		
-		TabelaDeIsencoesCriar tabelaDeIsencoesCriar;
-		TabelaDeIsencoesDetalhes tabelaDeIsencoesDetalhes;
-		TabelaDeIsencoesEditar tabelaDeIsencoesEditar;
-		TabelaDeIsencoesExcluir tabelaDeIsencoesExcluir;
-		TabelaDeIsencoesVisualizar tabelaDeIsencoesVisualizar;
-		
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos
-	
-		TabelaDeOutrosCreditosCriar tabelaDeOutrosCreditosCriar;
-		TabelaDeOutrosCreditosDetalhes tabelaDeOutrosCreditosDetalhes;
-		TabelaDeOutrosCreditosEditar tabelaDeOutrosCreditosEditar;
-		TabelaDeOutrosCreditosExcluir tabelaDeOutrosCreditosExcluir;
-		TabelaDeOutrosCreditosVisualizar tabelaDeOutrosCreditosVisualizar;
-		
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos
-	
-		TabelaDeProdutosCriar tabelaDeProdutosCriar;
-		TabelaDeProdutosDetalhes tabelaDeProdutosDetalhes;
-		TabelaDeProdutosExcluir tabelaDeProdutosExcluir; 
-		
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouros
-		TabelaLogradouroCriar tabelaLogradouroCriar;
-		TabelaLograduroDetalhes tabelaLograduroDetalhes;
-		TabelaLogradouroEditar tabelaLogradouroEditar;
-		TabelaLogradouroExcluir tabelaLogradouroExcluir;
-		TabelaLogradouroVisualizar tabelaLogradouroVisualizar;
-		
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE
-		TabelaMunicipioIBGECriar tabelaMunicipioIBGECriar;
-		TabelaMunicipioIBGEDetalhes tabelaMunicipioIBGEDetalhes;
-		TabelaMunicipioIBGEEditar tabelaMunicipioIBGEEditar;
-		TabelaMunicipioIBGEExcluir tabelaMunicipioIBGEExcluir;
-		TabelaMunicipioIBGEVisualizar tabelaMunicipioIBGEVisualizar;
-		
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos
-		TabelaOutrosDebitosCriar tabelaOutrosDebitosCriar;
-		TabelaOutrosDebitosDetalhes tabelaOutrosDebitosDetalhes;
-		TabelaOutosDebitosEditar tabelaOutosDebitosEditar;
-		TabelaOutrosDebitosExcluir tabelaOutrosDebitosExcluir;
-		TabelaOutrosDebitosVisualizar tabelaOutrosDebitosVisualizar;
-		
-	//Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado)
-	 
-		TabelaReceitasCreditoFiscalAntecipadoCriar tabelaReceitasCreditoFiscalAntecipadoCriar;
-		TabelaReceitasCreditoFiscalAntecipadoEditar tabelaReceitasCreditoFiscalAntecipadoEditar;
-		
-	//Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas permitidas
-		TabelaReceitasPermitidasCriar tabelaReceitasPermitidasCriar;
-		TabelaReceitasPermitidasDetalhes tabelaReceitasPermitidasDetalhes;
-		TabelaReceitasPermitidasEditar tabelaReceitasPermitidasEditar;
-		TabelaReceitasPermitidasExcluir tabelaReceitasPermitidasExcluir;
-		TabelaReceitasPermitidasVisualizar tabelaReceitasPermitidasVisualizar;
-		
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços
-		
-		TabelaServicosCriar tabelaServicosCriar;
-		TabelaServicosDetalhes tabelaServicosDetalhes;
-		TabelaServicosExcluir tabelaServicosExcluir;
-		
-	//Tipo de Tributo Conta Contabil
-		TipoDeTributoContaContabilCriar tipoDeTributoContaContabilCriar;
-		TipoDeTributoContaContabilExcluir tipoDeTributoContaContabilExcluir;
-		
+	TabelaDeDetalhamentosParaRegistro10Excluir tabelaDeDetalhamentosParaRegistro10Excluir;
+	TabelaDeDetalhamentosParaRegistro10Visualizar tabelaDeDetalhamentosParaRegistro10Visualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamento
+	// Para Registro 11
+	TabelaDeDetalhamentosParaRegistro11Criar tabelaDeDetalhamentosParaRegistro11Criar;
+	TabelaDeDetalhamentosParaRegistro11Detalhes tabelaDeDetalhamentosParaRegistro11Detalhes;
+	TabelaDeDetalhamentosParaRegistro11Editar tabelaDeDetalhamentosParaRegistro11Editar;
+	TabelaDeDetalhamentosParaRegistro11Excluir tabelaDeDetalhamentosParaRegistro11Excluir;
+	TabelaDeDetalhamentosParaRegistro11Visualizar tabelaDeDetalhamentosParaRegistro11Visualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para
+	// registro 12
+	TabelaDeEstoqueParaRegistro12Criar tabelaDeEstoqueParaRegistro12Criar;
+	TabelaDeEstoqueParaRegistro12Editar tabelaDeEstoqueParaRegistro12Editar;
+	TabelaDeEstoqueParaRegistro12Detalhes tabelaDeEstoqueParaRegistro12Detalhes;
+	TabelaDeEstoqueParaRegistro12Excluir tabelaDeEstoqueParaRegistro12Excluir;
+	TabelaDeEstoqueParaRegistro12Visualizar tabelaDeEstoqueParaRegistro12Visualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de isençoes
+
+	TabelaDeIsencoesCriar tabelaDeIsencoesCriar;
+	TabelaDeIsencoesDetalhes tabelaDeIsencoesDetalhes;
+	TabelaDeIsencoesEditar tabelaDeIsencoesEditar;
+	TabelaDeIsencoesExcluir tabelaDeIsencoesExcluir;
+	TabelaDeIsencoesVisualizar tabelaDeIsencoesVisualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos
+
+	TabelaDeOutrosCreditosCriar tabelaDeOutrosCreditosCriar;
+	TabelaDeOutrosCreditosDetalhes tabelaDeOutrosCreditosDetalhes;
+	TabelaDeOutrosCreditosEditar tabelaDeOutrosCreditosEditar;
+	TabelaDeOutrosCreditosExcluir tabelaDeOutrosCreditosExcluir;
+	TabelaDeOutrosCreditosVisualizar tabelaDeOutrosCreditosVisualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos
+
+	TabelaDeProdutosCriar tabelaDeProdutosCriar;
+	TabelaDeProdutosDetalhes tabelaDeProdutosDetalhes;
+	TabelaDeProdutosExcluir tabelaDeProdutosExcluir;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouros
+	TabelaLogradouroCriar tabelaLogradouroCriar;
+	TabelaLograduroDetalhes tabelaLograduroDetalhes;
+	TabelaLogradouroEditar tabelaLogradouroEditar;
+	TabelaLogradouroExcluir tabelaLogradouroExcluir;
+	TabelaLogradouroVisualizar tabelaLogradouroVisualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE
+	TabelaMunicipioIBGECriar tabelaMunicipioIBGECriar;
+	TabelaMunicipioIBGEDetalhes tabelaMunicipioIBGEDetalhes;
+	TabelaMunicipioIBGEEditar tabelaMunicipioIBGEEditar;
+	TabelaMunicipioIBGEExcluir tabelaMunicipioIBGEExcluir;
+	TabelaMunicipioIBGEVisualizar tabelaMunicipioIBGEVisualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos
+	TabelaOutrosDebitosCriar tabelaOutrosDebitosCriar;
+	TabelaOutrosDebitosDetalhes tabelaOutrosDebitosDetalhes;
+	TabelaOutosDebitosEditar tabelaOutosDebitosEditar;
+	TabelaOutrosDebitosExcluir tabelaOutrosDebitosExcluir;
+	TabelaOutrosDebitosVisualizar tabelaOutrosDebitosVisualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas
+	// (Credito Fiscal Antecipado)
+
+	TabelaReceitasCreditoFiscalAntecipadoCriar tabelaReceitasCreditoFiscalAntecipadoCriar;
+	TabelaReceitasCreditoFiscalAntecipadoEditar tabelaReceitasCreditoFiscalAntecipadoEditar;
+	TabelaReceitasCreditoFiscalAntecipadoDetalhes tabelaReceitasCreditoFiscalAntecipadoDetalhes;
+	TabelaReceitasCreditoFiscalAntecipadoVisualizar tabelaReceitasCreditoFiscalAntecipadoVisualizar;
+	TabelaReceitasCreditoFiscalAntecipadoExcluir tabelaReceitasCreditoFiscalAntecipadoExcluir;
+
+	// Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas
+	// permitidas
+	TabelaReceitasPermitidasCriar tabelaReceitasPermitidasCriar;
+	TabelaReceitasPermitidasDetalhes tabelaReceitasPermitidasDetalhes;
+	TabelaReceitasPermitidasEditar tabelaReceitasPermitidasEditar;
+	TabelaReceitasPermitidasExcluir tabelaReceitasPermitidasExcluir;
+	TabelaReceitasPermitidasVisualizar tabelaReceitasPermitidasVisualizar;
+
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços
+
+	TabelaServicosCriar tabelaServicosCriar;
+	TabelaServicosDetalhes tabelaServicosDetalhes;
+	TabelaServicosExcluir tabelaServicosExcluir;
+
+	// Tipo de Tributo Conta Contabil
+	TipoDeTributoContaContabilCriar tipoDeTributoContaContabilCriar;
+	TipoDeTributoContaContabilExcluir tipoDeTributoContaContabilExcluir;
+
 	// Valor Adicionado > Inclusao de Campos Mar
-		
-		InclusaoDeCamposMarCriar inclusaoDeCamposMarCriar;
-		InclusaoDeCamposMarDetalhes inclusaoDeCamposMarDetalhes;
-		InclusaoDeCamposMarEditar inclusaoDeCamposMarEditar;
-		InclusaoDeCamposMarExcluir inclusaoDeCamposMarExcluir;
-		InclusaoDeCamposMarFiltrosAvançados inclusaoDeCamposMarFiltrosAvançados;
-		InclusaoDeCamposMarVisualizar inclusaoDeCamposMarVisualizar;
-		
-	// Eventos e-social >  S1200 Remuneracao De Trabalhador...
-		S1200RemuneracaoDeTrabalhadorCriar s1200RemuneracaoDeTrabalhadorCriar;
-		S1200RemuneracaoDeTrabalhadorDetalhes s1200RemuneracaoDeTrabalhadorDetalhes;
-		S1200RemuneracaoDeTrabalhadorExcluir s1200RemuneracaoDeTrabalhadorExcluir;
-		
-	// Eventos e-social >  S1250 Aquisicao De Producao Rural
-		S1250AquisicaoDeProducaoRuralCriar s1250AquisicaoDeProducaoRuralCriar;
-		S1250AquisicaoDeProducaoRuralEditar s1250AquisicaoDeProducaoRuralEditar;
-		S1250AquisicaoDeProducaoRuralExcluir s1250AquisicaoDeProducaoRuralExcluir;
-		
-	//Preço de Transferencia > Modelo De Apuraçao TP
-		ModeloDeApuracaoTPCriar modeloDeApuracaoTPCriar;
-		ModeloDeApuracaoTPDetalhes modeloDeApuracaoTPDetalhes;
-		ModeloDeApuracaoTPEditar modeloDeApuracaoTPEditar;
-		ModeloDeApuracaoTPExcluir modeloDeApuracaoTPExcluir;
-	
-	//Preço de Transferencia > Parametros Modelo De Apuracao TP
-		ParametrosModeloDeApuracaoTPCriar parametrosModeloDeApuracaoTPCriar;
-		ParametrosModeloDeApuracaoTPEditar parametrosModeloDeApuracaoTPEditar;
-		ParametrosModeloDeApuracaoTPDetalhes parametrosModeloDeApuracaoTPDetalhes;
-		ParametrosModeloDeApuracaoTPExcluir parametrosModeloDeApuracaoTPExcluir;
-		
-	////Preço de Transferencia >  Parametros para TP
-		ParametrosParaTPCriar parametrosParaTPCriar;
-		ParametrosParaTPEditar parametrosParaTPEditar;
-		ParametrosParaTPExcluir parametrosParaTPExcluir;
-		
+
+	InclusaoDeCamposMarCriar inclusaoDeCamposMarCriar;
+	InclusaoDeCamposMarDetalhes inclusaoDeCamposMarDetalhes;
+	InclusaoDeCamposMarEditar inclusaoDeCamposMarEditar;
+	InclusaoDeCamposMarExcluir inclusaoDeCamposMarExcluir;
+	InclusaoDeCamposMarFiltrosAvançados inclusaoDeCamposMarFiltrosAvançados;
+	InclusaoDeCamposMarVisualizar inclusaoDeCamposMarVisualizar;
+
+	// Eventos e-social > S1200 Remuneracao De Trabalhador...
+	S1200RemuneracaoDeTrabalhadorCriar s1200RemuneracaoDeTrabalhadorCriar;
+	S1200RemuneracaoDeTrabalhadorDetalhes s1200RemuneracaoDeTrabalhadorDetalhes;
+	S1200RemuneracaoDeTrabalhadorExcluir s1200RemuneracaoDeTrabalhadorExcluir;
+
+	// Eventos e-social > S1250 Aquisicao De Producao Rural
+	S1250AquisicaoDeProducaoRuralCriar s1250AquisicaoDeProducaoRuralCriar;
+	S1250AquisicaoDeProducaoRuralEditar s1250AquisicaoDeProducaoRuralEditar;
+	S1250AquisicaoDeProducaoRuralExcluir s1250AquisicaoDeProducaoRuralExcluir;
+
+	// Preço de Transferencia > Modelo De Apuraçao TP
+	ModeloDeApuracaoTPCriar modeloDeApuracaoTPCriar;
+	ModeloDeApuracaoTPDetalhes modeloDeApuracaoTPDetalhes;
+	ModeloDeApuracaoTPEditar modeloDeApuracaoTPEditar;
+	ModeloDeApuracaoTPExcluir modeloDeApuracaoTPExcluir;
+
+	// Preço de Transferencia > Parametros Modelo De Apuracao TP
+	ParametrosModeloDeApuracaoTPCriar parametrosModeloDeApuracaoTPCriar;
+	ParametrosModeloDeApuracaoTPEditar parametrosModeloDeApuracaoTPEditar;
+	ParametrosModeloDeApuracaoTPDetalhes parametrosModeloDeApuracaoTPDetalhes;
+	ParametrosModeloDeApuracaoTPExcluir parametrosModeloDeApuracaoTPExcluir;
+
+	//// Preço de Transferencia > Parametros para TP
+	ParametrosParaTPCriar parametrosParaTPCriar;
+	ParametrosParaTPEditar parametrosParaTPEditar;
+	ParametrosParaTPExcluir parametrosParaTPExcluir;
+
 	//// Registro ECAC
+
+
 		RegistroECACCriar registroECACCriar;
+		RegistroECACEditar registroECACEditar;
+		RegistroECACExcluir registroECACExcluir;
 		
 	//Atividades Para Tributacao > Tipos De Servicos
 		TiposDeServicosCriar tiposDeServicosCriar;
@@ -354,13 +420,86 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		TiposDeServicosEditar tiposDeServicosEditar;
 		TiposDeServicosVisualizar tiposDeServicosVisualizar;
 		TiposDeServicosExcluir tiposDeServicosExcluir;
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV
+		ValoresParaMetodoPVVCriar valoresParaMetodoPVVCriar;
+		ValoresParaMetodoPVVDetalhes valoresParaMetodoPVVDetalhes;
+		ValoresParaMetodoPVVEditar valoresParaMetodoPVVEditar;
+		ValoresParaMetodoPVVExcluir valoresParaMetodoPVVExcluir;
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX
+		ValoresParaMetodoPVEXCriar valoresParaMetodoPVEXCriar;
+		ValoresParaMetodoPVEXDetalhes valoresParaMetodoPVEXDetalhes;
+		ValoresParaMetodoPVEXEditar valoresParaMetodoPVEXEditar;
+		ValoresParaMetodoPVEXExcluir valoresParaMetodoPVEXExcluir;
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX
+		ValoresParaMetodoPECEXCriar valoresParaMetodoPECEXCriar;
+		ValoresParaMetodoPECEXDetalhes valoresParaMetodoPECEXDetalhes;
+		ValoresParaMetodoPECEXEditar valoresParaMetodoPECEXEditar;
+		ValoresParaMetodoPECEXExcluir valoresParaMetodoPECEXExcluir;
+	
+	//Reinf > Processos Adm/Judiciais
+		ProcessosAdmJudiciaisCriar processosAdmJudiciaisCriar;
+		ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
+		ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
+		ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
+		
+	//Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
+		DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
+		DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;
+		DeterminacaoDeRelevanciaPorRegraEditar determinacaoDeRelevanciaPorRegraEditar;
+		DeterminacaoDeRelevanciaPorRegraVisualizar determinacaoDeRelevanciaPorRegraVisualizar;
+		DeterminacaoDeRelevanciaPorRegraExcluir determinacaoDeRelevanciaPorRegraExcluir;
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP
+		ValoresParaMetodoCAPCriar valoresParaMetodoCAPCriar;
+		ValoresParaMetodoCAPDetalhes valoresParaMetodoCAPDetalhes;
+		ValoresParaMetodoCAPEditar valoresParaMetodoCAPEditar;
+		ValoresParaMetodoCAPExcluir valoresParaMetodoCAPExcluir;	
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA
+		ValoresParaMetodoPVACriar valoresParaMetodoPVACriar;
+		ValoresParaMetodoPVADetalhes valoresParaMetodoPVADetalhes;
+		ValoresParaMetodoPVAEditar valoresParaMetodoPVAEditar;
+		ValoresParaMetodoPVAExcluir valoresParaMetodoPVAExcluir;
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL
+		ValoresParaMetodoCPLCriar valoresParaMetodoCPLCriar;
+		ValoresParaMetodoCPLEditar valoresParaMetodoCPLEditar;
+		ValoresParaMetodoCPLDetalhes valoresParaMetodoCPLDetalhes;
+		ValoresParaMetodoCPLExcluir valoresParaMetodoCPLExcluir;
+	
+		
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI
+		ValoresParaMetodoPCICriar valoresParaMetodoPCICriar;
+		ValoresParaMetodoPCIEditar valoresParaMetodoPCIEditar;
+		ValoresParaMetodoPCIDetalhes valoresParaMetodoPCIDetalhes;
+		ValoresParaMetodoPCIExcluir valoresParaMetodoPCIExcluir;
+	
+	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PIC
+		ValoresParaMetodoPICCriar valoresParaMetodoPICCriar;
+		ValoresParaMetodoPICDetalhes valoresParaMetodoPICDetalhes;
+		ValoresParaMetodoPICEditar valoresParaMetodoPICEditar;
+		ValoresParaMetodoPICExcluir valoresParaMetodoPICExcluir;
+		
+
+	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PRL
+		ValoresParaMetodoPRLCriar valoresParaMetodoPRLCriar;
+		ValoresParaMetodoPRLEditar valoresParaMetodoPRLEditar;
+		ValoresParaMetodoPRLDetalhes valoresParaMetodoPRLDetalhes;
+		ValoresParaMetodoPRLExcluir valoresParaMetodoPRLExcluir;
+		ValoresParaMetodoPRLFiltroID valoresParaMetodoPRLFiltroID;
+
+	
 	// --------------------------------------------------------------------------------------------------
 
-	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
+	// tranferencias
 
 	@Test(priority = 0)
 	public void tabelaDeCodigosDeTransferenciasCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias-------------------------");
 		tabelaDeCodigosDeTransferenciasCriar = new TabelaDeCodigosDeTransferenciasCriar();
 		tabelaDeCodigosDeTransferenciasCriar.beforeClass();
 		tabelaDeCodigosDeTransferenciasCriar.login();
@@ -381,7 +520,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCodigosDeTransferenciasDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void tabelaDeCodigosDeTransferenciasEditar() {
 
@@ -393,8 +532,6 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCodigosDeTransferenciasEditar.afterClass();
 
 	}
-	
-
 
 	@Test(priority = 3)
 	public void tabelaDeCodigosDeTransferenciasVisualizar() {
@@ -404,7 +541,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCodigosDeTransferenciasVisualizar.acessarMDR();
 		tabelaDeCodigosDeTransferenciasVisualizar.visualizar();
 		tabelaDeCodigosDeTransferenciasVisualizar.afterClass();
-		
+
 	}
 
 	@Test(priority = 4)
@@ -416,15 +553,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCodigosDeTransferenciasExcluir.acessarMDR();
 		tabelaDeCodigosDeTransferenciasExcluir.excluir();
 		tabelaDeCodigosDeTransferenciasExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de tranferencias Fim-------------------------");
 
-	}	
-	//priority 6
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por obrigaçao
-	
+	}
+	// priority 6
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por
+	// obrigaçao
+
 	@Test(priority = 6)
 	public void tabelaDeCreditosPorObrigacaoCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por obrigaçao-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por obrigaçao-------------------------");
 		tabelaDeCreditosPorObrigacaoCriar = new TabelaDeCreditosPorObrigacaoCriar();
 		tabelaDeCreditosPorObrigacaoCriar.beforeClass();
 		tabelaDeCreditosPorObrigacaoCriar.login();
@@ -433,10 +573,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCreditosPorObrigacaoCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 7)
 	public void tabelaDeCreditosPorObrigacaoDetalhes() {
-		
+
 		tabelaDeCreditosPorObrigacaoDetalhes = new TabelaDeCreditosPorObrigacaoDetalhes();
 		tabelaDeCreditosPorObrigacaoDetalhes.beforeClass();
 		tabelaDeCreditosPorObrigacaoDetalhes.login();
@@ -445,10 +585,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCreditosPorObrigacaoDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 8)
 	public void tabelaDeCreditosPorObrigacaoEditar() {
-		
+
 		tabelaDeCreditosPorObrigacaoEditar = new TabelaDeCreditosPorObrigacaoEditar();
 		tabelaDeCreditosPorObrigacaoEditar.beforeClass();
 		tabelaDeCreditosPorObrigacaoEditar.login();
@@ -457,39 +597,40 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCreditosPorObrigacaoEditar.afterClass();
 
 	}
-	
 
 	@Test(priority = 9)
 	public void tabelaDeCreditosPorObrigacaoVisulizar() {
-		
+
 		tabelaDeCreditosPorObrigacaoVisualizar = new TabelaDeCreditosPorObrigacaoVisualizar();
 		tabelaDeCreditosPorObrigacaoVisualizar.beforeClass();
 		tabelaDeCreditosPorObrigacaoVisualizar.login();
 		tabelaDeCreditosPorObrigacaoVisualizar.acessarMDR();
 		tabelaDeCreditosPorObrigacaoVisualizar.visualizar();
 		tabelaDeCreditosPorObrigacaoVisualizar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 10)
 	public void tabelaDeCreditosPorObrigacaoExcluir() {
-		
+
 		tabelaDeCreditosPorObrigacaoExcluir = new TabelaDeCreditosPorObrigacaoExcluir();
 		tabelaDeCreditosPorObrigacaoExcluir.beforeClass();
 		tabelaDeCreditosPorObrigacaoExcluir.login();
 		tabelaDeCreditosPorObrigacaoExcluir.acessarMDR();
 		tabelaDeCreditosPorObrigacaoExcluir.excluir();
 		tabelaDeCreditosPorObrigacaoExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por obrigaçao Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por obrigaçao Fim-------------------------");
 	}
-	
 
-	//12
-	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 10
-	
+	// 12
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos
+	// Para Registro 10
+
 	@Test(priority = 12)
 	public void tabelaDeDetalhamentosParaRegistro10Criar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 10-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 10-------------------------");
 		tabelaDeDetalhamentosParaRegistro10Criar = new TabelaDeDetalhamentosParaRegistro10Criar();
 		tabelaDeDetalhamentosParaRegistro10Criar.beforeClass();
 		tabelaDeDetalhamentosParaRegistro10Criar.login();
@@ -498,60 +639,65 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeDetalhamentosParaRegistro10Criar.afterClass();
 
 	}
+
 	@Test(priority = 13)
 	public void tabelaDeDetalhamentosParaRegistro10Detalhes() {
-		
+
 		tabelaDeDetalhamentosParaRegistro10Detalhes = new TabelaDeDetalhamentosParaRegistro10Detalhes();
 		tabelaDeDetalhamentosParaRegistro10Detalhes.beforeClass();
 		tabelaDeDetalhamentosParaRegistro10Detalhes.login();
 		tabelaDeDetalhamentosParaRegistro10Detalhes.acessarMDR();
 		tabelaDeDetalhamentosParaRegistro10Detalhes.detalhes();
 		tabelaDeDetalhamentosParaRegistro10Detalhes.afterClass();
-		
+
 	}
+
 	@Test(priority = 14)
 	public void tabelaDeDetalhamentosParaRegistro10Editar() {
-		
+
 		tabelaDeDetalhamentosParaRegistro10Editar = new TabelaDeDetalhamentosParaRegistro10Editar();
 		tabelaDeDetalhamentosParaRegistro10Editar.beforeClass();
 		tabelaDeDetalhamentosParaRegistro10Editar.login();
 		tabelaDeDetalhamentosParaRegistro10Editar.acessarMDR();
 		tabelaDeDetalhamentosParaRegistro10Editar.editar();
 		tabelaDeDetalhamentosParaRegistro10Editar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 15)
 	public void tabelaDeDetalhamentosParaRegistro10Visualizar() {
-		
+
 		tabelaDeDetalhamentosParaRegistro10Visualizar = new TabelaDeDetalhamentosParaRegistro10Visualizar();
 		tabelaDeDetalhamentosParaRegistro10Visualizar.beforeClass();
 		tabelaDeDetalhamentosParaRegistro10Visualizar.login();
 		tabelaDeDetalhamentosParaRegistro10Visualizar.acessarMDR();
 		tabelaDeDetalhamentosParaRegistro10Visualizar.visualizar();
 		tabelaDeDetalhamentosParaRegistro10Visualizar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 16)
 	public void tabelaDeDetalhamentosParaRegistro10Excluir() {
-		
+
 		tabelaDeDetalhamentosParaRegistro10Excluir = new TabelaDeDetalhamentosParaRegistro10Excluir();
 		tabelaDeDetalhamentosParaRegistro10Excluir.beforeClass();
 		tabelaDeDetalhamentosParaRegistro10Excluir.login();
 		tabelaDeDetalhamentosParaRegistro10Excluir.acessarMDR();
 		tabelaDeDetalhamentosParaRegistro10Excluir.excluir();
 		tabelaDeDetalhamentosParaRegistro10Excluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 10 Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 10 Fim-------------------------");
 
 	}
-	
-	//18
-	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 11
-	
+
+	// 18
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos
+	// Para Registro 11
+
 	@Test(priority = 18)
 	public void tabelaDeDetalhamentosParaRegistro11Criar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 11-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 11-------------------------");
 		tabelaDeDetalhamentosParaRegistro11Criar = new TabelaDeDetalhamentosParaRegistro11Criar();
 		tabelaDeDetalhamentosParaRegistro11Criar.beforeClass();
 		tabelaDeDetalhamentosParaRegistro11Criar.login();
@@ -560,10 +706,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeDetalhamentosParaRegistro11Criar.afterClass();
 
 	}
-	
+
 	@Test(priority = 19)
 	public void tabelaDeDetalhamentosParaRegistro11Detalhes() {
-		
+
 		tabelaDeDetalhamentosParaRegistro11Detalhes = new TabelaDeDetalhamentosParaRegistro11Detalhes();
 		tabelaDeDetalhamentosParaRegistro11Detalhes.beforeClass();
 		tabelaDeDetalhamentosParaRegistro11Detalhes.login();
@@ -572,10 +718,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeDetalhamentosParaRegistro11Detalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 20)
 	public void tabelaDeDetalhamentosParaRegistro11Editar() {
-		
+
 		tabelaDeDetalhamentosParaRegistro11Editar = new TabelaDeDetalhamentosParaRegistro11Editar();
 		tabelaDeDetalhamentosParaRegistro11Editar.beforeClass();
 		tabelaDeDetalhamentosParaRegistro11Editar.login();
@@ -584,39 +730,41 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeDetalhamentosParaRegistro11Editar.afterClass();
 
 	}
-	
 
 	@Test(priority = 21)
 	public void tabelaDeDetalhamentosParaRegistro11Visualizar() {
-		
+
 		tabelaDeDetalhamentosParaRegistro11Visualizar = new TabelaDeDetalhamentosParaRegistro11Visualizar();
 		tabelaDeDetalhamentosParaRegistro11Visualizar.beforeClass();
 		tabelaDeDetalhamentosParaRegistro11Visualizar.login();
 		tabelaDeDetalhamentosParaRegistro11Visualizar.acessarMDR();
 		tabelaDeDetalhamentosParaRegistro11Visualizar.visualizar();
 		tabelaDeDetalhamentosParaRegistro11Visualizar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 22)
 	public void tabelaDeDetalhamentosParaRegistro11Excluir() {
-		
+
 		tabelaDeDetalhamentosParaRegistro11Excluir = new TabelaDeDetalhamentosParaRegistro11Excluir();
 		tabelaDeDetalhamentosParaRegistro11Excluir.beforeClass();
 		tabelaDeDetalhamentosParaRegistro11Excluir.login();
 		tabelaDeDetalhamentosParaRegistro11Excluir.acessarMDR();
 		tabelaDeDetalhamentosParaRegistro11Excluir.excluir();
 		tabelaDeDetalhamentosParaRegistro11Excluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 11 Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 11 Fim-------------------------");
 
 	}
-	
-	//24
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de Estoque para registro 12
-	
+
+	// 24
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Estoque para
+	// registro 12
+
 	@Test(priority = 24)
 	public void tabelaDeEstoqueParaRegistro12Criar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para registro 12-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para registro 12-------------------------");
 		tabelaDeEstoqueParaRegistro12Criar = new TabelaDeEstoqueParaRegistro12Criar();
 		tabelaDeEstoqueParaRegistro12Criar.beforeClass();
 		tabelaDeEstoqueParaRegistro12Criar.login();
@@ -625,10 +773,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeEstoqueParaRegistro12Criar.afterClass();
 
 	}
-	
+
 	@Test(priority = 25)
 	public void tabelaDeEstoqueParaRegistro12Detalhes() {
-		
+
 		tabelaDeEstoqueParaRegistro12Detalhes = new TabelaDeEstoqueParaRegistro12Detalhes();
 		tabelaDeEstoqueParaRegistro12Detalhes.beforeClass();
 		tabelaDeEstoqueParaRegistro12Detalhes.login();
@@ -637,10 +785,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeEstoqueParaRegistro12Detalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 26)
 	public void tabelaDeEstoqueParaRegistro12Editar() {
-		
+
 		tabelaDeEstoqueParaRegistro12Editar = new TabelaDeEstoqueParaRegistro12Editar();
 		tabelaDeEstoqueParaRegistro12Editar.beforeClass();
 		tabelaDeEstoqueParaRegistro12Editar.login();
@@ -649,39 +797,39 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeEstoqueParaRegistro12Editar.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 27)
 	public void tabelaDeEstoqueParaRegistro12Visualizar() {
-		
-		tabelaDeEstoqueParaRegistro12Visualizar= new TabelaDeEstoqueParaRegistro12Visualizar();
+
+		tabelaDeEstoqueParaRegistro12Visualizar = new TabelaDeEstoqueParaRegistro12Visualizar();
 		tabelaDeEstoqueParaRegistro12Visualizar.beforeClass();
 		tabelaDeEstoqueParaRegistro12Visualizar.login();
 		tabelaDeEstoqueParaRegistro12Visualizar.acessarMDR();
 		tabelaDeEstoqueParaRegistro12Visualizar.visualizar();
 		tabelaDeEstoqueParaRegistro12Visualizar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 28)
 	public void tabelaDeEstoqueParaRegistro12Excluir() {
-		
+
 		tabelaDeEstoqueParaRegistro12Excluir = new TabelaDeEstoqueParaRegistro12Excluir();
 		tabelaDeEstoqueParaRegistro12Excluir.beforeClass();
 		tabelaDeEstoqueParaRegistro12Excluir.login();
 		tabelaDeEstoqueParaRegistro12Excluir.acessarMDR();
 		tabelaDeEstoqueParaRegistro12Excluir.excluir();
 		tabelaDeEstoqueParaRegistro12Excluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para registro 12 Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para registro 12 Fim-------------------------");
 	}
-	
-	
-	//30
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de isençoes
-	
+
+	// 30
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de isençoes
+
 	@Test(priority = 30)
 	public void tabelaDeIsencoesCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de isençoes-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de isençoes-------------------------");
 		tabelaDeIsencoesCriar = new TabelaDeIsencoesCriar();
 		tabelaDeIsencoesCriar.beforeClass();
 		tabelaDeIsencoesCriar.login();
@@ -690,11 +838,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeIsencoesCriar.afterClass();
 
 	}
-	
 
 	@Test(priority = 31)
 	public void tabelaDeIsencoesDetalhes() {
-		
+
 		tabelaDeIsencoesDetalhes = new TabelaDeIsencoesDetalhes();
 		tabelaDeIsencoesDetalhes.beforeClass();
 		tabelaDeIsencoesDetalhes.login();
@@ -703,10 +850,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeIsencoesDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 32)
 	public void tabelaDeIsencoesEditar() {
-		
+
 		tabelaDeIsencoesEditar = new TabelaDeIsencoesEditar();
 		tabelaDeIsencoesEditar.beforeClass();
 		tabelaDeIsencoesEditar.login();
@@ -715,39 +862,40 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeIsencoesEditar.afterClass();
 
 	}
-		
-	
+
 	@Test(priority = 33)
 	public void tabelaDeIsencoesVisualizar() {
-		
+
 		tabelaDeIsencoesVisualizar = new TabelaDeIsencoesVisualizar();
 		tabelaDeIsencoesVisualizar.beforeClass();
 		tabelaDeIsencoesVisualizar.login();
 		tabelaDeIsencoesVisualizar.acessarMDR();
 		tabelaDeIsencoesVisualizar.Visualizar();
 		tabelaDeIsencoesVisualizar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 34)
 	public void tabelaDeIsencoesExcluir() {
-		
+
 		tabelaDeIsencoesExcluir = new TabelaDeIsencoesExcluir();
 		tabelaDeIsencoesExcluir.beforeClass();
 		tabelaDeIsencoesExcluir.login();
 		tabelaDeIsencoesExcluir.acessarMDR();
 		tabelaDeIsencoesExcluir.excluir();
 		tabelaDeIsencoesExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de inseçoes Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de inseçoes Fim-------------------------");
 
 	}
-	
-	//36
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos
-	
+
+	// 36
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos
+
 	@Test(priority = 36)
 	public void tabelaDeOutrosCreditosCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos-------------------------");
 		tabelaDeOutrosCreditosCriar = new TabelaDeOutrosCreditosCriar();
 		tabelaDeOutrosCreditosCriar.beforeClass();
 		tabelaDeOutrosCreditosCriar.login();
@@ -756,10 +904,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeOutrosCreditosCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 37)
 	public void tabelaDeOutrosCreditosDetalhes() {
-		
+
 		tabelaDeOutrosCreditosDetalhes = new TabelaDeOutrosCreditosDetalhes();
 		tabelaDeOutrosCreditosDetalhes.beforeClass();
 		tabelaDeOutrosCreditosDetalhes.login();
@@ -768,11 +916,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeOutrosCreditosDetalhes.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 38)
 	public void tabelaDeOutrosCreditosEditar() {
-		
+
 		tabelaDeOutrosCreditosEditar = new TabelaDeOutrosCreditosEditar();
 		tabelaDeOutrosCreditosEditar.beforeClass();
 		tabelaDeOutrosCreditosEditar.login();
@@ -781,35 +928,37 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeOutrosCreditosEditar.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 39)
 	public void tabelaDeOutrosCreditosVisualizar() {
-		
+
 		tabelaDeOutrosCreditosVisualizar = new TabelaDeOutrosCreditosVisualizar();
 		tabelaDeOutrosCreditosVisualizar.beforeClass();
 		tabelaDeOutrosCreditosVisualizar.login();
 		tabelaDeOutrosCreditosVisualizar.acessarMDR();
 		tabelaDeOutrosCreditosVisualizar.Visualizar();
 		tabelaDeOutrosCreditosVisualizar.afterClass();
-		}
-	
+	}
+
 	@Test(priority = 40)
 	public void tabelaDeOutrosCreditosExcluir() {
-		
+
 		tabelaDeOutrosCreditosExcluir = new TabelaDeOutrosCreditosExcluir();
 		tabelaDeOutrosCreditosExcluir.beforeClass();
 		tabelaDeOutrosCreditosExcluir.login();
 		tabelaDeOutrosCreditosExcluir.acessarMDR();
 		tabelaDeOutrosCreditosExcluir.excluir();
 		tabelaDeOutrosCreditosExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos Fim-------------------------");
 	}
-	//42
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos
+
+	// 42
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos
 	@Test(priority = 42)
 	public void tabelaDeProdutosCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos-------------------------");
 		tabelaDeProdutosCriar = new TabelaDeProdutosCriar();
 		tabelaDeProdutosCriar.beforeClass();
 		tabelaDeProdutosCriar.login();
@@ -818,7 +967,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeProdutosCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 43)
 	public void tabelaDeProdutosDetalhes() {
 		tabelaDeProdutosDetalhes = new TabelaDeProdutosDetalhes();
@@ -829,8 +978,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeProdutosDetalhes.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 44)
 	public void tabelaDeProdutosExcluir() {
 		tabelaDeProdutosExcluir = new TabelaDeProdutosExcluir();
@@ -839,15 +987,17 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeProdutosExcluir.acessarMDR();
 		tabelaDeProdutosExcluir.excluir();
 		tabelaDeProdutosExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos Fim-------------------------");
-		
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos Fim-------------------------");
+
 	}
-	
-	//48
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouro
+
+	// 48
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouro
 	@Test(priority = 48)
 	public void tabelaLogradouroCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouro-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouro-------------------------");
 		tabelaLogradouroCriar = new TabelaLogradouroCriar();
 		tabelaLogradouroCriar.beforeClass();
 		tabelaLogradouroCriar.login();
@@ -856,10 +1006,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaLogradouroCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 49)
 	public void tabelaLograduroDetalhes() {
-		
+
 		tabelaLograduroDetalhes = new TabelaLograduroDetalhes();
 		tabelaLograduroDetalhes.beforeClass();
 		tabelaLograduroDetalhes.login();
@@ -868,10 +1018,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaLograduroDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 50)
 	public void tabelaLogradouroEditar() {
-		
+
 		tabelaLogradouroEditar = new TabelaLogradouroEditar();
 		tabelaLogradouroEditar.beforeClass();
 		tabelaLogradouroEditar.login();
@@ -880,12 +1030,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaLogradouroEditar.afterClass();
 
 	}
-	
-	
-	
+
 	@Test(priority = 51)
 	public void tabelaLogradouroVisuzalizar() {
-		
+
 		tabelaLogradouroVisualizar = new TabelaLogradouroVisualizar();
 		tabelaLogradouroVisualizar.beforeClass();
 		tabelaLogradouroVisualizar.login();
@@ -893,25 +1041,27 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaLogradouroVisualizar.visualizar();
 		tabelaLogradouroVisualizar.afterClass();
 	}
-	
+
 	@Test(priority = 52)
 	public void tabelaLogradouroExcluir() {
-		
+
 		tabelaLogradouroExcluir = new TabelaLogradouroExcluir();
 		tabelaLogradouroExcluir.beforeClass();
 		tabelaLogradouroExcluir.login();
 		tabelaLogradouroExcluir.acessarMDR();
 		tabelaLogradouroExcluir.excluir();
 		tabelaLogradouroExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouro Fim-------------------------");
-		
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouro Fim-------------------------");
+
 	}
-	
-	//54
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE
+
+	// 54
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE
 	@Test(priority = 54)
 	public void tabelaMunicipioIBGECriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE-------------------------");
 		tabelaMunicipioIBGECriar = new TabelaMunicipioIBGECriar();
 		tabelaMunicipioIBGECriar.beforeClass();
 		tabelaMunicipioIBGECriar.login();
@@ -920,10 +1070,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaMunicipioIBGECriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 55)
 	public void tabelaMunicipioIBGEDetalhes() {
-		
+
 		tabelaMunicipioIBGEDetalhes = new TabelaMunicipioIBGEDetalhes();
 		tabelaMunicipioIBGEDetalhes.beforeClass();
 		tabelaMunicipioIBGEDetalhes.login();
@@ -932,10 +1082,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaMunicipioIBGEDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 56)
 	public void tabelaMunicipioIBGEEditar() {
-		
+
 		tabelaMunicipioIBGEEditar = new TabelaMunicipioIBGEEditar();
 		tabelaMunicipioIBGEEditar.beforeClass();
 		tabelaMunicipioIBGEEditar.login();
@@ -944,39 +1094,40 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaMunicipioIBGEEditar.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 57)
 	public void tabelaMunicipioIBGEVisualizar() {
-		
+
 		tabelaMunicipioIBGEVisualizar = new TabelaMunicipioIBGEVisualizar();
 		tabelaMunicipioIBGEVisualizar.beforeClass();
 		tabelaMunicipioIBGEVisualizar.login();
 		tabelaMunicipioIBGEVisualizar.acessarMDR();
 		tabelaMunicipioIBGEVisualizar.visualizar();
 		tabelaMunicipioIBGEVisualizar.afterClass();
-		
+
 	}
-	
+
 	@Test(priority = 58)
 	public void tabelaMunicipioIBGEExcluir() {
-		
+
 		tabelaMunicipioIBGEExcluir = new TabelaMunicipioIBGEExcluir();
 		tabelaMunicipioIBGEExcluir.beforeClass();
 		tabelaMunicipioIBGEExcluir.login();
 		tabelaMunicipioIBGEExcluir.acessarMDR();
 		tabelaMunicipioIBGEExcluir.excluir();
 		tabelaMunicipioIBGEExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE Fim-------------------------");
-		
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de municípios IBGE Fim-------------------------");
+
 	}
-	
-	//60
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos
-	
+
+	// 60
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos
+
 	@Test(priority = 60)
 	public void tabelaOutrosDebitosCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos-------------------------");
 		tabelaOutrosDebitosCriar = new TabelaOutrosDebitosCriar();
 		tabelaOutrosDebitosCriar.beforeClass();
 		tabelaOutrosDebitosCriar.login();
@@ -985,12 +1136,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaOutrosDebitosCriar.afterClass();
 
 	}
-	
-	
 
 	@Test(priority = 61)
 	public void tabelaOutrosDebitosDetalhes() {
-		
+
 		tabelaOutrosDebitosDetalhes = new TabelaOutrosDebitosDetalhes();
 		tabelaOutrosDebitosDetalhes.beforeClass();
 		tabelaOutrosDebitosDetalhes.login();
@@ -999,10 +1148,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaOutrosDebitosDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 62)
 	public void tabelaOutosDebitosEditar() {
-		
+
 		tabelaOutosDebitosEditar = new TabelaOutosDebitosEditar();
 		tabelaOutosDebitosEditar.beforeClass();
 		tabelaOutosDebitosEditar.login();
@@ -1011,12 +1160,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaOutosDebitosEditar.afterClass();
 
 	}
-	
-	
-	
+
 	@Test(priority = 63)
 	public void tabelaOutrosDebitosVisualizar() {
-		
+
 		tabelaOutrosDebitosVisualizar = new TabelaOutrosDebitosVisualizar();
 		tabelaOutrosDebitosVisualizar.beforeClass();
 		tabelaOutrosDebitosVisualizar.login();
@@ -1025,27 +1172,29 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaOutrosDebitosVisualizar.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 64)
 	public void tabelaOutrosDebitosExcluir() {
-		
+
 		tabelaOutrosDebitosExcluir = new TabelaOutrosDebitosExcluir();
 		tabelaOutrosDebitosExcluir.beforeClass();
 		tabelaOutrosDebitosExcluir.login();
 		tabelaOutrosDebitosExcluir.acessarMDR();
 		tabelaOutrosDebitosExcluir.excluir();
 		tabelaOutrosDebitosExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos fim-------------------------");
-		
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos fim-------------------------");
+
 	}
-	
-	//66
-	//Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado)
-	
+
+	// 66
+	// Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas
+	// (Credito Fiscal Antecipado)
+
 	@Test(priority = 66)
-	public void  tabelaReceitasCreditoFiscalAntecipadoCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado)-------------------------");
+	public void tabelaReceitasCreditoFiscalAntecipadoCriar() {
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado)-------------------------");
 		tabelaReceitasCreditoFiscalAntecipadoCriar = new TabelaReceitasCreditoFiscalAntecipadoCriar();
 		tabelaReceitasCreditoFiscalAntecipadoCriar.beforeClass();
 		tabelaReceitasCreditoFiscalAntecipadoCriar.login();
@@ -1054,27 +1203,66 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasCreditoFiscalAntecipadoCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 67)
-	public void  tabelaReceitasCreditoFiscalAntecipadoEditar() {
-		
+	public void tabelaReceitasCreditoFiscalAntecipadoEditar() {
+
 		tabelaReceitasCreditoFiscalAntecipadoEditar = new TabelaReceitasCreditoFiscalAntecipadoEditar();
 		tabelaReceitasCreditoFiscalAntecipadoEditar.beforeClass();
 		tabelaReceitasCreditoFiscalAntecipadoEditar.login();
 		tabelaReceitasCreditoFiscalAntecipadoEditar.acessarMDR();
 		tabelaReceitasCreditoFiscalAntecipadoEditar.editar();
 		tabelaReceitasCreditoFiscalAntecipadoEditar.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado) Fim-------------------------");
-		
+
 	}
-	
-	//72
-	//Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas permitidas
-	
+
+	@Test(priority = 68)
+	public void tabelaReceitasCreditoFiscalAntecipadoVisualizar() {
+
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar = new TabelaReceitasCreditoFiscalAntecipadoVisualizar();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.login();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.visualizar();
+		tabelaReceitasCreditoFiscalAntecipadoVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 69)
+	public void tabelaReceitasCreditoFiscalAntecipadoDetalhes() {
+
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes = new TabelaReceitasCreditoFiscalAntecipadoDetalhes();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.login();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.detalhes();
+		tabelaReceitasCreditoFiscalAntecipadoDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 70)
+	public void tabelaReceitasCreditoFiscalAntecipadoExcluir() {
+
+		tabelaReceitasCreditoFiscalAntecipadoExcluir = new TabelaReceitasCreditoFiscalAntecipadoExcluir();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.login();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.excluir();
+		tabelaReceitasCreditoFiscalAntecipadoExcluir.afterClass();
+
+		System.out.println(
+				"------------------- Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado) Fin-------------------------");
+	}
+
+	// 72
+	// Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas
+	// permitidas
+
 	@Test(priority = 72)
-	public void  tabelaReceitasPermitidasCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas permitidas-------------------------");
-		tabelaReceitasPermitidasCriar= new TabelaReceitasPermitidasCriar();
+	public void tabelaReceitasPermitidasCriar() {
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas permitidas-------------------------");
+		tabelaReceitasPermitidasCriar = new TabelaReceitasPermitidasCriar();
 		tabelaReceitasPermitidasCriar.beforeClass();
 		tabelaReceitasPermitidasCriar.login();
 		tabelaReceitasPermitidasCriar.acessarMDR();
@@ -1082,11 +1270,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasPermitidasCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 73)
-	public void  tabelaReceitasPermitidasDetalhes() {
-		
-		tabelaReceitasPermitidasDetalhes= new TabelaReceitasPermitidasDetalhes();
+	public void tabelaReceitasPermitidasDetalhes() {
+
+		tabelaReceitasPermitidasDetalhes = new TabelaReceitasPermitidasDetalhes();
 		tabelaReceitasPermitidasDetalhes.beforeClass();
 		tabelaReceitasPermitidasDetalhes.login();
 		tabelaReceitasPermitidasDetalhes.acessarMDR();
@@ -1094,11 +1282,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasPermitidasDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 74)
-	public void  tabelaReceitasPermitidasEditar() {
-		
-		tabelaReceitasPermitidasEditar= new TabelaReceitasPermitidasEditar();
+	public void tabelaReceitasPermitidasEditar() {
+
+		tabelaReceitasPermitidasEditar = new TabelaReceitasPermitidasEditar();
 		tabelaReceitasPermitidasEditar.beforeClass();
 		tabelaReceitasPermitidasEditar.login();
 		tabelaReceitasPermitidasEditar.acessarMDR();
@@ -1106,11 +1294,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasPermitidasEditar.afterClass();
 
 	}
-	
+
 	@Test(priority = 75)
-	public void  tabelaReceitasPermitidasVisualizar() {
-		
-		tabelaReceitasPermitidasVisualizar= new TabelaReceitasPermitidasVisualizar();
+	public void tabelaReceitasPermitidasVisualizar() {
+
+		tabelaReceitasPermitidasVisualizar = new TabelaReceitasPermitidasVisualizar();
 		tabelaReceitasPermitidasVisualizar.beforeClass();
 		tabelaReceitasPermitidasVisualizar.login();
 		tabelaReceitasPermitidasVisualizar.acessarMDR();
@@ -1118,28 +1306,29 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasPermitidasVisualizar.afterClass();
 
 	}
-	
+
 	@Test(priority = 76)
-	public void  tabelaReceitasPermitidasExcluir() {
-		
-		tabelaReceitasPermitidasExcluir= new TabelaReceitasPermitidasExcluir();
+	public void tabelaReceitasPermitidasExcluir() {
+
+		tabelaReceitasPermitidasExcluir = new TabelaReceitasPermitidasExcluir();
 		tabelaReceitasPermitidasExcluir.beforeClass();
 		tabelaReceitasPermitidasExcluir.login();
 		tabelaReceitasPermitidasExcluir.acessarMDR();
 		tabelaReceitasPermitidasExcluir.excluir();
 		tabelaReceitasPermitidasExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas permitidas Fim-------------------------");
-		
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas permitidas Fim-------------------------");
 
 	}
-	
-	//78
-	//Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços
-	
+
+	// 78
+	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços
+
 	@Test(priority = 78)
-	public void  tabelaServicosCriar() {
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços-------------------------");
-		tabelaServicosCriar= new TabelaServicosCriar();
+	public void tabelaServicosCriar() {
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços-------------------------");
+		tabelaServicosCriar = new TabelaServicosCriar();
 		tabelaServicosCriar.beforeClass();
 		tabelaServicosCriar.login();
 		tabelaServicosCriar.acessarMDR();
@@ -1147,12 +1336,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaServicosCriar.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 79)
-	public void  tabelaServicosDetalhes() {
-		
-		tabelaServicosDetalhes= new TabelaServicosDetalhes();
+	public void tabelaServicosDetalhes() {
+
+		tabelaServicosDetalhes = new TabelaServicosDetalhes();
 		tabelaServicosDetalhes.beforeClass();
 		tabelaServicosDetalhes.login();
 		tabelaServicosDetalhes.acessarMDR();
@@ -1160,26 +1348,27 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaServicosDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 80)
-	public void  tabelaServicosExcluir() {
-		
-		tabelaServicosExcluir= new TabelaServicosExcluir();
+	public void tabelaServicosExcluir() {
+
+		tabelaServicosExcluir = new TabelaServicosExcluir();
 		tabelaServicosExcluir.beforeClass();
 		tabelaServicosExcluir.login();
 		tabelaServicosExcluir.acessarMDR();
 		tabelaServicosExcluir.excluir();
 		tabelaServicosExcluir.afterClass();
-		System.out.println("-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços Fim-------------------------");
+		System.out.println(
+				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços Fim-------------------------");
 	}
-	
-	//84
-	//Tipo de Tributo Conta Contabil
-	
+
+	// 84
+	// Tipo de Tributo Conta Contabil
+
 	@Test(priority = 84)
-	public void  tipoDeTributoContaContabilCriar() {
+	public void tipoDeTributoContaContabilCriar() {
 		System.out.println("-------------------Tipo de Tributo X Conta Contabil-------------------------");
-		tipoDeTributoContaContabilCriar= new TipoDeTributoContaContabilCriar();
+		tipoDeTributoContaContabilCriar = new TipoDeTributoContaContabilCriar();
 		tipoDeTributoContaContabilCriar.beforeClass();
 		tipoDeTributoContaContabilCriar.login();
 		tipoDeTributoContaContabilCriar.acessarMDR();
@@ -1187,11 +1376,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tipoDeTributoContaContabilCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 85)
-	public void  tipoDeTributoContaContabilExcluir() {
-		
-		tipoDeTributoContaContabilExcluir= new TipoDeTributoContaContabilExcluir();
+	public void tipoDeTributoContaContabilExcluir() {
+
+		tipoDeTributoContaContabilExcluir = new TipoDeTributoContaContabilExcluir();
 		tipoDeTributoContaContabilExcluir.beforeClass();
 		tipoDeTributoContaContabilExcluir.login();
 		tipoDeTributoContaContabilExcluir.acessarMDR();
@@ -1199,14 +1388,14 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tipoDeTributoContaContabilExcluir.afterClass();
 		System.out.println("-------------------Tipo de Tributo X Conta Contabil Fim-------------------------");
 	}
-	
-	//90
+
+	// 90
 	// Valor Adicionado > Inclusao de Campos Mar
-	
+
 	@Test(priority = 90)
 	public void inclusaoDeCamposMarCriar() {
 		System.out.println("-------------------Valor Adicionado > Inclusao de Campos Mar-------------------------");
-		inclusaoDeCamposMarCriar= new InclusaoDeCamposMarCriar();
+		inclusaoDeCamposMarCriar = new InclusaoDeCamposMarCriar();
 		inclusaoDeCamposMarCriar.beforeClass();
 		inclusaoDeCamposMarCriar.login();
 		inclusaoDeCamposMarCriar.acessarMDR();
@@ -1214,11 +1403,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		inclusaoDeCamposMarCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 91)
 	public void inclusaoDeCamposMarDetalhes() {
-		
-		inclusaoDeCamposMarDetalhes= new InclusaoDeCamposMarDetalhes();
+
+		inclusaoDeCamposMarDetalhes = new InclusaoDeCamposMarDetalhes();
 		inclusaoDeCamposMarDetalhes.beforeClass();
 		inclusaoDeCamposMarDetalhes.login();
 		inclusaoDeCamposMarDetalhes.acessarMDR();
@@ -1226,11 +1415,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		inclusaoDeCamposMarDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 92)
 	public void inclusaoDeCamposMarEditar() {
-		
-		inclusaoDeCamposMarEditar= new InclusaoDeCamposMarEditar();
+
+		inclusaoDeCamposMarEditar = new InclusaoDeCamposMarEditar();
 		inclusaoDeCamposMarEditar.beforeClass();
 		inclusaoDeCamposMarEditar.login();
 		inclusaoDeCamposMarEditar.acessarMDR();
@@ -1238,11 +1427,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		inclusaoDeCamposMarEditar.afterClass();
 
 	}
-	
+
 	@Test(priority = 93)
 	public void inclusaoDeCamposMarFiltrosAvançados() {
-		
-		inclusaoDeCamposMarFiltrosAvançados= new InclusaoDeCamposMarFiltrosAvançados();
+
+		inclusaoDeCamposMarFiltrosAvançados = new InclusaoDeCamposMarFiltrosAvançados();
 		inclusaoDeCamposMarFiltrosAvançados.beforeClass();
 		inclusaoDeCamposMarFiltrosAvançados.login();
 		inclusaoDeCamposMarFiltrosAvançados.acessarMDR();
@@ -1250,11 +1439,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		inclusaoDeCamposMarFiltrosAvançados.afterClass();
 
 	}
-	
+
 	@Test(priority = 94)
 	public void inclusaoDeCamposMarVisualizar() {
-		
-		inclusaoDeCamposMarVisualizar= new InclusaoDeCamposMarVisualizar();
+
+		inclusaoDeCamposMarVisualizar = new InclusaoDeCamposMarVisualizar();
 		inclusaoDeCamposMarVisualizar.beforeClass();
 		inclusaoDeCamposMarVisualizar.login();
 		inclusaoDeCamposMarVisualizar.acessarMDR();
@@ -1262,11 +1451,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		inclusaoDeCamposMarVisualizar.afterClass();
 
 	}
-	
+
 	@Test(priority = 95)
 	public void inclusaoDeCamposMarExcluir() {
-		
-		inclusaoDeCamposMarExcluir= new InclusaoDeCamposMarExcluir();
+
+		inclusaoDeCamposMarExcluir = new InclusaoDeCamposMarExcluir();
 		inclusaoDeCamposMarExcluir.beforeClass();
 		inclusaoDeCamposMarExcluir.login();
 		inclusaoDeCamposMarExcluir.acessarMDR();
@@ -1274,14 +1463,15 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		inclusaoDeCamposMarExcluir.afterClass();
 		System.out.println("-------------------Valor Adicionado > Inclusao de Campos Mar Fim-------------------------");
 	}
-	
-	//96
-	// Eventos e-social >  S1200 Remuneracao De Trabalhador...
-	
+
+	// 96
+	// Eventos e-social > S1200 Remuneracao De Trabalhador...
+
 	@Test(priority = 96)
 	public void s1200RemuneracaoDeTrabalhadorCriar() {
-		System.out.println("-------------------Eventos e-social >  S1200 Remuneracao De Trabalhador...-------------------------");
-		s1200RemuneracaoDeTrabalhadorCriar= new S1200RemuneracaoDeTrabalhadorCriar();
+		System.out.println(
+				"-------------------Eventos e-social >  S1200 Remuneracao De Trabalhador...-------------------------");
+		s1200RemuneracaoDeTrabalhadorCriar = new S1200RemuneracaoDeTrabalhadorCriar();
 		s1200RemuneracaoDeTrabalhadorCriar.beforeClass();
 		s1200RemuneracaoDeTrabalhadorCriar.login();
 		s1200RemuneracaoDeTrabalhadorCriar.acessarMDR();
@@ -1289,10 +1479,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		s1200RemuneracaoDeTrabalhadorCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 97)
 	public void s1200RemuneracaoDeTrabalhadorDetalhes() {
-		
+
 		s1200RemuneracaoDeTrabalhadorDetalhes = new S1200RemuneracaoDeTrabalhadorDetalhes();
 		s1200RemuneracaoDeTrabalhadorDetalhes.beforeClass();
 		s1200RemuneracaoDeTrabalhadorDetalhes.login();
@@ -1301,26 +1491,28 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		s1200RemuneracaoDeTrabalhadorDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 98)
 	public void s1200RemuneracaoDeTrabalhadorExcluir() {
-		
+
 		s1200RemuneracaoDeTrabalhadorExcluir = new S1200RemuneracaoDeTrabalhadorExcluir();
 		s1200RemuneracaoDeTrabalhadorExcluir.beforeClass();
 		s1200RemuneracaoDeTrabalhadorExcluir.login();
 		s1200RemuneracaoDeTrabalhadorExcluir.acessarMDR();
 		s1200RemuneracaoDeTrabalhadorExcluir.excluir();
 		s1200RemuneracaoDeTrabalhadorExcluir.afterClass();
-		System.out.println("-------------------Eventos e-social >  S1200 Remuneracao De Trabalhador... Fim-------------------------");
+		System.out.println(
+				"-------------------Eventos e-social >  S1200 Remuneracao De Trabalhador... Fim-------------------------");
 	}
-	
-	//103
-	// Eventos e-social >  S1250 Aquisicao De Producao Rural
-	
+
+	// 103
+	// Eventos e-social > S1250 Aquisicao De Producao Rural
+
 	@Test(priority = 103)
 	public void s1250AquisicaoDeProducaoRuralCriar() {
-		System.out.println("-------------------Eventos e-social >  S1250 Aquisicao De Producao Rural-------------------------");
-		s1250AquisicaoDeProducaoRuralCriar= new S1250AquisicaoDeProducaoRuralCriar();
+		System.out.println(
+				"-------------------Eventos e-social >  S1250 Aquisicao De Producao Rural-------------------------");
+		s1250AquisicaoDeProducaoRuralCriar = new S1250AquisicaoDeProducaoRuralCriar();
 		s1250AquisicaoDeProducaoRuralCriar.beforeClass();
 		s1250AquisicaoDeProducaoRuralCriar.login();
 		s1250AquisicaoDeProducaoRuralCriar.acessarMDR();
@@ -1328,11 +1520,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		s1250AquisicaoDeProducaoRuralCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 104)
 	public void s1250AquisicaoDeProducaoRuralEditar() {
-		
-		s1250AquisicaoDeProducaoRuralEditar= new S1250AquisicaoDeProducaoRuralEditar();
+
+		s1250AquisicaoDeProducaoRuralEditar = new S1250AquisicaoDeProducaoRuralEditar();
 		s1250AquisicaoDeProducaoRuralEditar.beforeClass();
 		s1250AquisicaoDeProducaoRuralEditar.login();
 		s1250AquisicaoDeProducaoRuralEditar.acessarMDR();
@@ -1340,25 +1532,27 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		s1250AquisicaoDeProducaoRuralEditar.afterClass();
 
 	}
-	
+
 	@Test(priority = 105)
 	public void s1250AquisicaoDeProducaoRuralExcluir() {
-		
-		s1250AquisicaoDeProducaoRuralExcluir= new S1250AquisicaoDeProducaoRuralExcluir();
+
+		s1250AquisicaoDeProducaoRuralExcluir = new S1250AquisicaoDeProducaoRuralExcluir();
 		s1250AquisicaoDeProducaoRuralExcluir.beforeClass();
 		s1250AquisicaoDeProducaoRuralExcluir.login();
 		s1250AquisicaoDeProducaoRuralExcluir.acessarMDR();
 		s1250AquisicaoDeProducaoRuralExcluir.excluir();
 		s1250AquisicaoDeProducaoRuralExcluir.afterClass();
-		System.out.println("-------------------Eventos e-social >  S1250 Aquisicao De Producao Rural Fim-------------------------");
+		System.out.println(
+				"-------------------Eventos e-social >  S1250 Aquisicao De Producao Rural Fim-------------------------");
 	}
-	
-	//109
-	//Preço de Transferencia > Modelo De Apuraçao TP
+
+	// 109
+	// Preço de Transferencia > Modelo De Apuraçao TP
 	@Test(priority = 109)
 	public void modeloDeApuracaoTPCriar() {
-		System.out.println("-------------------Preço de Transferencia > Modelo De Apuraçao TP-------------------------");
-		modeloDeApuracaoTPCriar= new ModeloDeApuracaoTPCriar();
+		System.out
+				.println("-------------------Preço de Transferencia > Modelo De Apuraçao TP-------------------------");
+		modeloDeApuracaoTPCriar = new ModeloDeApuracaoTPCriar();
 		modeloDeApuracaoTPCriar.beforeClass();
 		modeloDeApuracaoTPCriar.login();
 		modeloDeApuracaoTPCriar.acessarMDR();
@@ -1366,11 +1560,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		modeloDeApuracaoTPCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 110)
 	public void modeloDeApuracaoTPDetalhes() {
-		
-		modeloDeApuracaoTPDetalhes= new ModeloDeApuracaoTPDetalhes();
+
+		modeloDeApuracaoTPDetalhes = new ModeloDeApuracaoTPDetalhes();
 		modeloDeApuracaoTPDetalhes.beforeClass();
 		modeloDeApuracaoTPDetalhes.login();
 		modeloDeApuracaoTPDetalhes.acessarMDR();
@@ -1378,11 +1572,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		modeloDeApuracaoTPDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 111)
 	public void modeloDeApuracaoTPEditar() {
-		
-		modeloDeApuracaoTPEditar= new ModeloDeApuracaoTPEditar();
+
+		modeloDeApuracaoTPEditar = new ModeloDeApuracaoTPEditar();
 		modeloDeApuracaoTPEditar.beforeClass();
 		modeloDeApuracaoTPEditar.login();
 		modeloDeApuracaoTPEditar.acessarMDR();
@@ -1390,26 +1584,28 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		modeloDeApuracaoTPEditar.afterClass();
 
 	}
-	
+
 	@Test(priority = 112)
 	public void modeloDeApuracaoTPExcluir() {
-		
-		modeloDeApuracaoTPExcluir= new ModeloDeApuracaoTPExcluir();
+
+		modeloDeApuracaoTPExcluir = new ModeloDeApuracaoTPExcluir();
 		modeloDeApuracaoTPExcluir.beforeClass();
 		modeloDeApuracaoTPExcluir.login();
 		modeloDeApuracaoTPExcluir.acessarMDR();
 		modeloDeApuracaoTPExcluir.excluir();
 		modeloDeApuracaoTPExcluir.afterClass();
-		System.out.println("-------------------Preço de Transferencia > Modelo De Apuraçao TP Fim-------------------------");
+		System.out.println(
+				"-------------------Preço de Transferencia > Modelo De Apuraçao TP Fim-------------------------");
 	}
-	
-	//116
-	//Preço de Transferencia > Parametros Modelo De Apuracao TP
-	
+
+	// 116
+	// Preço de Transferencia > Parametros Modelo De Apuracao TP
+
 	@Test(priority = 116)
 	public void parametrosModeloDeApuracaoTPCriar() {
-		System.out.println("-------------------Preço de Transferencia >  Parametros Modelo De Apuracao TP-------------------------");
-		parametrosModeloDeApuracaoTPCriar= new ParametrosModeloDeApuracaoTPCriar();
+		System.out.println(
+				"-------------------Preço de Transferencia >  Parametros Modelo De Apuracao TP-------------------------");
+		parametrosModeloDeApuracaoTPCriar = new ParametrosModeloDeApuracaoTPCriar();
 		parametrosModeloDeApuracaoTPCriar.beforeClass();
 		parametrosModeloDeApuracaoTPCriar.login();
 		parametrosModeloDeApuracaoTPCriar.acessarMDR();
@@ -1417,11 +1613,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosModeloDeApuracaoTPCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 117)
 	public void parametrosModeloDeApuracaoTPDetalhes() {
-		
-		parametrosModeloDeApuracaoTPDetalhes= new ParametrosModeloDeApuracaoTPDetalhes();
+
+		parametrosModeloDeApuracaoTPDetalhes = new ParametrosModeloDeApuracaoTPDetalhes();
 		parametrosModeloDeApuracaoTPDetalhes.beforeClass();
 		parametrosModeloDeApuracaoTPDetalhes.login();
 		parametrosModeloDeApuracaoTPDetalhes.acessarMDR();
@@ -1429,11 +1625,11 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosModeloDeApuracaoTPDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 118)
 	public void parametrosModeloDeApuracaoTPEditar() {
-		
-		parametrosModeloDeApuracaoTPEditar= new ParametrosModeloDeApuracaoTPEditar();
+
+		parametrosModeloDeApuracaoTPEditar = new ParametrosModeloDeApuracaoTPEditar();
 		parametrosModeloDeApuracaoTPEditar.beforeClass();
 		parametrosModeloDeApuracaoTPEditar.login();
 		parametrosModeloDeApuracaoTPEditar.acessarMDR();
@@ -1441,28 +1637,28 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosModeloDeApuracaoTPEditar.afterClass();
 
 	}
-	
+
 	@Test(priority = 119)
 	public void parametrosModeloDeApuracaoTPExcluir() {
-		
-		parametrosModeloDeApuracaoTPExcluir= new ParametrosModeloDeApuracaoTPExcluir();
+
+		parametrosModeloDeApuracaoTPExcluir = new ParametrosModeloDeApuracaoTPExcluir();
 		parametrosModeloDeApuracaoTPExcluir.beforeClass();
 		parametrosModeloDeApuracaoTPExcluir.login();
 		parametrosModeloDeApuracaoTPExcluir.acessarMDR();
 		parametrosModeloDeApuracaoTPExcluir.excluir();
 		parametrosModeloDeApuracaoTPExcluir.afterClass();
-		System.out.println("-------------------Preço de Transferencia >  Parametros Modelo De Apuracao TP Fim-------------------------");
-		
+		System.out.println(
+				"-------------------Preço de Transferencia >  Parametros Modelo De Apuracao TP Fim-------------------------");
 
 	}
-	
-	//123
-	//Preço de Transferencia >  Parametros para TP
-	
+
+	// 123
+	// Preço de Transferencia > Parametros para TP
+
 	@Test(priority = 123)
 	public void parametrosParaTPCriar() {
 		System.out.println("-------------------Preço de Transferencia > Parametros para TP-------------------------");
-		parametrosParaTPCriar= new ParametrosParaTPCriar();
+		parametrosParaTPCriar = new ParametrosParaTPCriar();
 		parametrosParaTPCriar.beforeClass();
 		parametrosParaTPCriar.login();
 		parametrosParaTPCriar.acessarMDR();
@@ -1470,10 +1666,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosParaTPCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 124)
 	public void parametrosParaTPEditar() {
-		parametrosParaTPEditar= new ParametrosParaTPEditar();
+		parametrosParaTPEditar = new ParametrosParaTPEditar();
 		parametrosParaTPEditar.beforeClass();
 		parametrosParaTPEditar.login();
 		parametrosParaTPEditar.acessarMDR();
@@ -1481,28 +1677,28 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosParaTPEditar.afterClass();
 
 	}
-	
+
 	@Test(priority = 125)
 	public void parametrosParaTPExcluir() {
-		parametrosParaTPExcluir= new ParametrosParaTPExcluir();
+		parametrosParaTPExcluir = new ParametrosParaTPExcluir();
 		parametrosParaTPExcluir.beforeClass();
 		parametrosParaTPExcluir.login();
 		parametrosParaTPExcluir.acessarMDR();
 		parametrosParaTPExcluir.excluir();
 		parametrosParaTPExcluir.afterClass();
-		
-		System.out.println("-------------------Preço de Transferencia > Parametros para TP Fim-------------------------");
-		
+
+		System.out
+				.println("-------------------Preço de Transferencia > Parametros para TP Fim-------------------------");
 
 	}
-	
-	//130
+
+	// 130
 	// Registro ECAC
-	
+
 	@Test(priority = 130)
 	public void registroECACCriar() {
 		System.out.println("-------------------Registro ECAC-------------------------");
-		registroECACCriar= new RegistroECACCriar();
+		registroECACCriar = new RegistroECACCriar();
 		registroECACCriar.beforeClass();
 		registroECACCriar.login();
 		registroECACCriar.acessarMDR();
@@ -1510,13 +1706,36 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		registroECACCriar.afterClass();
 
 	}
-	
-	//136
-	//Atividades Para Tributacao > Tipos De Servicos
+
+	@Test(priority = 131)
+	public void registroECACEditar() {
+		registroECACEditar = new RegistroECACEditar();
+		registroECACEditar.beforeClass();
+		registroECACEditar.login();
+		registroECACEditar.acessarMDR();
+		registroECACEditar.editar();
+		registroECACEditar.afterClass();
+
+	}
+
+	@Test(priority = 132)
+	public void registroECACExcluir() {
+		registroECACExcluir = new RegistroECACExcluir();
+		registroECACExcluir.beforeClass();
+		registroECACExcluir.login();
+		registroECACExcluir.acessarMDR();
+		registroECACExcluir.excluir();
+		registroECACExcluir.afterClass();
+		System.out.println("-------------------Registro ECAC Fim-------------------------");
+	}
+
+	// 136
+	// Atividades Para Tributacao > Tipos De Servicos
 	@Test(priority = 136)
 	public void tiposDeServicosCriar() {
-		System.out.println("-------------------Atividades Para Tributacao > Tipos De Servicos-------------------------");
-		tiposDeServicosCriar= new TiposDeServicosCriar();
+		System.out
+				.println("-------------------Atividades Para Tributacao > Tipos De Servicos-------------------------");
+		tiposDeServicosCriar = new TiposDeServicosCriar();
 		tiposDeServicosCriar.beforeClass();
 		tiposDeServicosCriar.login();
 		tiposDeServicosCriar.acessarMDR();
@@ -1524,10 +1743,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tiposDeServicosCriar.afterClass();
 
 	}
-	
+
 	@Test(priority = 137)
 	public void tiposDeServicosDetalhes() {
-		tiposDeServicosDetalhes= new TiposDeServicosDetalhes();
+		tiposDeServicosDetalhes = new TiposDeServicosDetalhes();
 		tiposDeServicosDetalhes.beforeClass();
 		tiposDeServicosDetalhes.login();
 		tiposDeServicosDetalhes.acessarMDR();
@@ -1535,10 +1754,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tiposDeServicosDetalhes.afterClass();
 
 	}
-	
+
 	@Test(priority = 138)
 	public void tiposDeServicosEditar() {
-		tiposDeServicosEditar= new TiposDeServicosEditar();
+		tiposDeServicosEditar = new TiposDeServicosEditar();
 		tiposDeServicosEditar.beforeClass();
 		tiposDeServicosEditar.login();
 		tiposDeServicosEditar.acessarMDR();
@@ -1546,11 +1765,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tiposDeServicosEditar.afterClass();
 
 	}
-	
-	
+
 	@Test(priority = 139)
 	public void tiposDeServicosVisualizar() {
-		tiposDeServicosVisualizar= new TiposDeServicosVisualizar();
+		tiposDeServicosVisualizar = new TiposDeServicosVisualizar();
 		tiposDeServicosVisualizar.beforeClass();
 		tiposDeServicosVisualizar.login();
 		tiposDeServicosVisualizar.acessarMDR();
@@ -1558,10 +1776,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tiposDeServicosVisualizar.afterClass();
 
 	}
-	
+
 	@Test(priority = 140)
 	public void tiposDeServicos() {
-		tiposDeServicosExcluir= new TiposDeServicosExcluir();
+		tiposDeServicosExcluir = new TiposDeServicosExcluir();
 		tiposDeServicosExcluir.beforeClass();
 		tiposDeServicosExcluir.login();
 		tiposDeServicosExcluir.acessarMDR();
@@ -1569,7 +1787,600 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tiposDeServicosExcluir.afterClass();
 
 	}
+
+	// 142
+	// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV
+
+	@Test(priority = 142)
+	public void valoresParaMetodoPVVCriar() {
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV-------------------------");
+		valoresParaMetodoPVVCriar = new ValoresParaMetodoPVVCriar();
+		valoresParaMetodoPVVCriar.beforeClass();
+		valoresParaMetodoPVVCriar.login();
+		valoresParaMetodoPVVCriar.acessarMDR();
+		valoresParaMetodoPVVCriar.criar();
+		valoresParaMetodoPVVCriar.afterClass();
+
+	}
+
+	@Test(priority = 142)
+	public void valoresParaMetodoPVVDetalhes() {
+
+		valoresParaMetodoPVVDetalhes = new ValoresParaMetodoPVVDetalhes();
+		valoresParaMetodoPVVDetalhes.beforeClass();
+		valoresParaMetodoPVVDetalhes.login();
+		valoresParaMetodoPVVDetalhes.acessarMDR();
+		valoresParaMetodoPVVDetalhes.Detalhes();
+		valoresParaMetodoPVVDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 143)
+	public void valoresParaMetodoPVVEditar() {
+
+		valoresParaMetodoPVVEditar = new ValoresParaMetodoPVVEditar();
+		valoresParaMetodoPVVEditar.beforeClass();
+		valoresParaMetodoPVVEditar.login();
+		valoresParaMetodoPVVEditar.acessarMDR();
+		valoresParaMetodoPVVEditar.editar();
+		valoresParaMetodoPVVEditar.afterClass();
+
+	}
+
+	@Test(priority = 144)
+	public void valoresParaMetodoPVVExcluir() {
+
+		valoresParaMetodoPVVExcluir = new ValoresParaMetodoPVVExcluir();
+		valoresParaMetodoPVVExcluir.beforeClass();
+		valoresParaMetodoPVVExcluir.login();
+		valoresParaMetodoPVVExcluir.acessarMDR();
+		valoresParaMetodoPVVExcluir.excluir();
+		valoresParaMetodoPVVExcluir.afterClass();
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV Fim-------------------------");
+
+	}
+
+	// 149
+	// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX
+
+	@Test(priority = 149)
+	public void valoresParaMetodoPVEXCriar() {
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX-------------------------");
+		valoresParaMetodoPVEXCriar = new ValoresParaMetodoPVEXCriar();
+		valoresParaMetodoPVEXCriar.beforeClass();
+		valoresParaMetodoPVEXCriar.login();
+		valoresParaMetodoPVEXCriar.acessarMDR();
+		valoresParaMetodoPVEXCriar.criar();
+		valoresParaMetodoPVEXCriar.afterClass();
+
+	}
+
+	@Test(priority = 150)
+	public void valoresParaMetodoPVEXDetalhes() {
+
+		valoresParaMetodoPVEXDetalhes = new ValoresParaMetodoPVEXDetalhes();
+		valoresParaMetodoPVEXDetalhes.beforeClass();
+		valoresParaMetodoPVEXDetalhes.login();
+		valoresParaMetodoPVEXDetalhes.acessarMDR();
+		valoresParaMetodoPVEXDetalhes.Detalhes();
+		valoresParaMetodoPVEXDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 151)
+	public void valoresParaMetodoPVEXEditar() {
+
+		valoresParaMetodoPVEXEditar = new ValoresParaMetodoPVEXEditar();
+		valoresParaMetodoPVEXEditar.beforeClass();
+		valoresParaMetodoPVEXEditar.login();
+		valoresParaMetodoPVEXEditar.acessarMDR();
+		valoresParaMetodoPVEXEditar.editar();
+		valoresParaMetodoPVEXEditar.afterClass();
+
+	}
+
+	@Test(priority = 152)
+	public void valoresParaMetodoPVEXExcluir() {
+
+		valoresParaMetodoPVEXExcluir = new ValoresParaMetodoPVEXExcluir();
+		valoresParaMetodoPVEXExcluir.beforeClass();
+		valoresParaMetodoPVEXExcluir.login();
+		valoresParaMetodoPVEXExcluir.acessarMDR();
+		valoresParaMetodoPVEXExcluir.excluir();
+		valoresParaMetodoPVEXExcluir.afterClass();
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX Fim-------------------------");
+	}
+
+	// 156
+	//// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX
+
+	@Test(priority = 156)
+	public void valoresParaMetodoPECEXCriar() {
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX-------------------------");
+		valoresParaMetodoPECEXCriar = new ValoresParaMetodoPECEXCriar();
+		valoresParaMetodoPECEXCriar.beforeClass();
+		valoresParaMetodoPECEXCriar.login();
+		valoresParaMetodoPECEXCriar.acessarMDR();
+		valoresParaMetodoPECEXCriar.criar();
+		valoresParaMetodoPECEXCriar.afterClass();
+
+	}
+
+	@Test(priority = 157)
+	public void valoresParaMetodoPECEXDetalhes() {
+
+		valoresParaMetodoPECEXDetalhes = new ValoresParaMetodoPECEXDetalhes();
+		valoresParaMetodoPECEXDetalhes.beforeClass();
+		valoresParaMetodoPECEXDetalhes.login();
+		valoresParaMetodoPECEXDetalhes.acessarMDR();
+		valoresParaMetodoPECEXDetalhes.Detalhes();
+		valoresParaMetodoPECEXDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 158)
+	public void valoresParaMetodoPECEXEditar() {
+
+		valoresParaMetodoPECEXEditar = new ValoresParaMetodoPECEXEditar();
+		valoresParaMetodoPECEXEditar.beforeClass();
+		valoresParaMetodoPECEXEditar.login();
+		valoresParaMetodoPECEXEditar.acessarMDR();
+		valoresParaMetodoPECEXEditar.editar();
+		valoresParaMetodoPECEXEditar.afterClass();
+
+	}
+
+	@Test(priority = 159)
+	public void valoresParaMetodoPECEXExcluir() {
+
+		valoresParaMetodoPECEXExcluir = new ValoresParaMetodoPECEXExcluir();
+		valoresParaMetodoPECEXExcluir.beforeClass();
+		valoresParaMetodoPECEXExcluir.login();
+		valoresParaMetodoPECEXExcluir.acessarMDR();
+		valoresParaMetodoPECEXExcluir.excluir();
+		valoresParaMetodoPECEXExcluir.afterClass();
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX Fim-------------------------");
+
+	}
+
+	// 163
+	// Reinf > Processos Adm/Judiciais
+
+	@Test(priority = 163)
+	public void processosAdmJudiciaisCriar() {
+		System.out.println("-------------------Reinf > Processos Adm/Judiciais-------------------------");
+		processosAdmJudiciaisCriar = new ProcessosAdmJudiciaisCriar();
+		processosAdmJudiciaisCriar.beforeClass();
+		processosAdmJudiciaisCriar.login();
+		processosAdmJudiciaisCriar.acessarMDR();
+		processosAdmJudiciaisCriar.criar();
+		processosAdmJudiciaisCriar.afterClass();
+
+	}
+
+	@Test(priority = 164)
+	public void processosAdmJudiciaisEditar() {
+
+		processosAdmJudiciaisEditar = new ProcessosAdmJudiciaisEditar();
+		processosAdmJudiciaisEditar.beforeClass();
+		processosAdmJudiciaisEditar.login();
+		processosAdmJudiciaisEditar.acessarMDR();
+		processosAdmJudiciaisEditar.editar();
+		processosAdmJudiciaisEditar.afterClass();
+
+	}
+
+	@Test(priority = 165)
+	public void processosAdmJudiciaisDetalhes() {
+
+		processosAdmJudiciaisDetalhes = new ProcessosAdmJudiciaisDetalhes();
+		processosAdmJudiciaisDetalhes.beforeClass();
+		processosAdmJudiciaisDetalhes.login();
+		processosAdmJudiciaisDetalhes.acessarMDR();
+		processosAdmJudiciaisDetalhes.detalhes();
+		processosAdmJudiciaisDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 166)
+	public void processosAdmJudiciaisExcluir() {
+
+		processosAdmJudiciaisExcluir = new ProcessosAdmJudiciaisExcluir();
+		processosAdmJudiciaisExcluir.beforeClass();
+		processosAdmJudiciaisExcluir.login();
+		processosAdmJudiciaisExcluir.acessarMDR();
+		processosAdmJudiciaisExcluir.excluir();
+		processosAdmJudiciaisExcluir.afterClass();
+
+		System.out.println("-------------------Reinf > Processos Adm/Judiciais Fim-------------------------");
+
+	}
+	// 169
+	// Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
+
+	@Test(priority = 169)
+	public void determinacaoDeRelevanciaPorRegraCriar() {
+		System.out.println(
+				"-------------------Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra-------------------------");
+		determinacaoDeRelevanciaPorRegraCriar = new DeterminacaoDeRelevanciaPorRegraCriar();
+		determinacaoDeRelevanciaPorRegraCriar.beforeClass();
+		determinacaoDeRelevanciaPorRegraCriar.login();
+		determinacaoDeRelevanciaPorRegraCriar.acessarMDR();
+		determinacaoDeRelevanciaPorRegraCriar.criar();
+		determinacaoDeRelevanciaPorRegraCriar.afterClass();
+
+	}
+
+	@Test(priority = 170)
+	public void determinacaoDeRelevanciaPorRegraEditar() {
+		determinacaoDeRelevanciaPorRegraEditar = new DeterminacaoDeRelevanciaPorRegraEditar();
+		determinacaoDeRelevanciaPorRegraEditar.beforeClass();
+		determinacaoDeRelevanciaPorRegraEditar.login();
+		determinacaoDeRelevanciaPorRegraEditar.acessarMDR();
+		determinacaoDeRelevanciaPorRegraEditar.editar();
+		determinacaoDeRelevanciaPorRegraEditar.afterClass();
+
+	}
+
+	@Test(priority = 171)
+	public void determinacaoDeRelevanciaPorRegraDetalhes() {
+		determinacaoDeRelevanciaPorRegraDetalhes = new DeterminacaoDeRelevanciaPorRegraDetalhes();
+		determinacaoDeRelevanciaPorRegraDetalhes.beforeClass();
+		determinacaoDeRelevanciaPorRegraDetalhes.login();
+		determinacaoDeRelevanciaPorRegraDetalhes.acessarMDR();
+		determinacaoDeRelevanciaPorRegraDetalhes.detalhes();
+		determinacaoDeRelevanciaPorRegraDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 172)
+	public void determinacaoDeRelevanciaPorRegraVisualizar() {
+		determinacaoDeRelevanciaPorRegraVisualizar = new DeterminacaoDeRelevanciaPorRegraVisualizar();
+		determinacaoDeRelevanciaPorRegraVisualizar.beforeClass();
+		determinacaoDeRelevanciaPorRegraVisualizar.login();
+		determinacaoDeRelevanciaPorRegraVisualizar.acessarMDR();
+		determinacaoDeRelevanciaPorRegraVisualizar.Visualizar();
+		determinacaoDeRelevanciaPorRegraVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 173)
+	public void determinacaoDeRelevanciaPorRegraExcluir() {
+		determinacaoDeRelevanciaPorRegraExcluir = new DeterminacaoDeRelevanciaPorRegraExcluir();
+		determinacaoDeRelevanciaPorRegraExcluir.beforeClass();
+		determinacaoDeRelevanciaPorRegraExcluir.login();
+		determinacaoDeRelevanciaPorRegraExcluir.acessarMDR();
+		determinacaoDeRelevanciaPorRegraExcluir.excluir();
+		determinacaoDeRelevanciaPorRegraExcluir.afterClass();
+		System.out.println(
+				"-------------------Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra Fim-------------------------");
+
+	}
+
+	// 176
+	// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP
+
+	@Test(priority = 176)
+	public void valoresParaMetodoCAPCriar() {
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP-------------------------");
+		valoresParaMetodoCAPCriar = new ValoresParaMetodoCAPCriar();
+		valoresParaMetodoCAPCriar.beforeClass();
+		valoresParaMetodoCAPCriar.login();
+		valoresParaMetodoCAPCriar.acessarMDR();
+		valoresParaMetodoCAPCriar.criar();
+		valoresParaMetodoCAPCriar.afterClass();
+
+	}
+
+	@Test(priority = 177)
+	public void valoresParaMetodoCAPEditar() {
+		valoresParaMetodoCAPEditar = new ValoresParaMetodoCAPEditar();
+		valoresParaMetodoCAPEditar.beforeClass();
+		valoresParaMetodoCAPEditar.login();
+		valoresParaMetodoCAPEditar.acessarMDR();
+		valoresParaMetodoCAPEditar.editar();
+		valoresParaMetodoCAPEditar.afterClass();
+
+	}
+
+	@Test(priority = 178)
+	public void valoresParaMetodoCAPDetalhes() {
+		valoresParaMetodoCAPDetalhes = new ValoresParaMetodoCAPDetalhes();
+		valoresParaMetodoCAPDetalhes.beforeClass();
+		valoresParaMetodoCAPDetalhes.login();
+		valoresParaMetodoCAPDetalhes.acessarMDR();
+		valoresParaMetodoCAPDetalhes.Detalhes();
+		valoresParaMetodoCAPDetalhes.afterClass();
+
+	}
+
+	@Test(priority = 179)
+	public void valoresParaMetodoCAPExcluir() {
+		valoresParaMetodoCAPExcluir = new ValoresParaMetodoCAPExcluir();
+		valoresParaMetodoCAPExcluir.beforeClass();
+		valoresParaMetodoCAPExcluir.login();
+		valoresParaMetodoCAPExcluir.acessarMDR();
+		valoresParaMetodoCAPExcluir.excluir();
+		valoresParaMetodoCAPExcluir.afterClass();
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP Fim-------------------------");
+
+	}
+
+	// 183
+	// Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA
+
+	@Test(priority = 183)
+	public void valoresParaMetodoPVACriar() {
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PVA-------------------------");
+		valoresParaMetodoPVACriar = new ValoresParaMetodoPVACriar();
+		valoresParaMetodoPVACriar.beforeClass();
+		valoresParaMetodoPVACriar.login();
+		valoresParaMetodoPVACriar.acessarMDR();
+		valoresParaMetodoPVACriar.criar();
+		valoresParaMetodoPVACriar.afterClass();
+
+	}
+
+	@Test(priority = 184)
+	public void valoresParaMetodoPVAEditar() {
+
+		valoresParaMetodoPVAEditar = new ValoresParaMetodoPVAEditar();
+		valoresParaMetodoPVAEditar.beforeClass();
+		valoresParaMetodoPVAEditar.login();
+		valoresParaMetodoPVAEditar.acessarMDR();
+		valoresParaMetodoPVAEditar.editar();
+		valoresParaMetodoPVAEditar.afterClass();
+
+	}
+
+	@Test(priority = 185)
+	public void valoresParaMetodoPVADetalhes() {
+
+		valoresParaMetodoPVADetalhes = new ValoresParaMetodoPVADetalhes();
+		valoresParaMetodoPVADetalhes.beforeClass();
+		valoresParaMetodoPVADetalhes.login();
+		valoresParaMetodoPVADetalhes.acessarMDR();
+		valoresParaMetodoPVADetalhes.Detalhes();
+		valoresParaMetodoPVADetalhes.afterClass();
+
+	}
+
+	@Test(priority = 186)
+	public void valoresParaMetodoPVAExcluir() {
+
+		valoresParaMetodoPVAExcluir = new ValoresParaMetodoPVAExcluir();
+		valoresParaMetodoPVAExcluir.beforeClass();
+		valoresParaMetodoPVAExcluir.login();
+		valoresParaMetodoPVAExcluir.acessarMDR();
+		valoresParaMetodoPVAExcluir.excluir();
+		valoresParaMetodoPVAExcluir.afterClass();
+
+		System.out.println(
+				"-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PVA Fim-------------------------");
+
+	}
+
+	// 190
+	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL
 	
-	//142
+		@Test(priority = 190)
+		public void valoresParaMetodoCPLCriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CPL-------------------------");
+			valoresParaMetodoCPLCriar = new ValoresParaMetodoCPLCriar();
+			valoresParaMetodoCPLCriar.beforeClass();
+			valoresParaMetodoCPLCriar.login();
+			valoresParaMetodoCPLCriar.acessarMDR();
+			valoresParaMetodoCPLCriar.criar();
+			valoresParaMetodoCPLCriar.afterClass();
+
+
+		}
 	
+		@Test(priority = 191)
+		public void valoresParaMetodoCPLEditar() {
+			valoresParaMetodoCPLEditar = new ValoresParaMetodoCPLEditar();
+			valoresParaMetodoCPLEditar.beforeClass();
+			valoresParaMetodoCPLEditar.login();
+			valoresParaMetodoCPLEditar.acessarMDR();
+			valoresParaMetodoCPLEditar.editar();
+			valoresParaMetodoCPLEditar.afterClass();
+
+		}
+		
+		@Test(priority = 192)
+		public void valoresParaMetodoCPLDetalhes() {
+			valoresParaMetodoCPLDetalhes = new ValoresParaMetodoCPLDetalhes();
+			valoresParaMetodoCPLDetalhes.beforeClass();
+			valoresParaMetodoCPLDetalhes.login();
+			valoresParaMetodoCPLDetalhes.acessarMDR();
+			valoresParaMetodoCPLDetalhes.Detalhes();
+			valoresParaMetodoCPLDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 193)
+		public void valoresParaMetodoCPLExcluir() {
+			valoresParaMetodoCPLExcluir = new ValoresParaMetodoCPLExcluir();
+			valoresParaMetodoCPLExcluir.beforeClass();
+			valoresParaMetodoCPLExcluir.login();
+			valoresParaMetodoCPLExcluir.acessarMDR();
+			valoresParaMetodoCPLExcluir.excluir();
+			valoresParaMetodoCPLExcluir.afterClass();
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CPL Fim-------------------------");
+			
+		}
+	//197
+	//Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI	
+		
+		@Test(priority = 197)
+		public void valoresParaMetodoPCICriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI-------------------------");
+			valoresParaMetodoPCICriar = new ValoresParaMetodoPCICriar();
+			valoresParaMetodoPCICriar.beforeClass();
+			valoresParaMetodoPCICriar.login();
+			valoresParaMetodoPCICriar.acessarMDR();
+			valoresParaMetodoPCICriar.criar();
+			valoresParaMetodoPCICriar.afterClass();
+
+		}
+		
+		@Test(priority = 198)
+		public void valoresParaMetodoPCIEditar() {
+			valoresParaMetodoPCIEditar = new ValoresParaMetodoPCIEditar();
+			valoresParaMetodoPCIEditar.beforeClass();
+			valoresParaMetodoPCIEditar.login();
+			valoresParaMetodoPCIEditar.acessarMDR();
+			valoresParaMetodoPCIEditar.editar();
+			valoresParaMetodoPCIEditar.afterClass();
+
+		}
+		
+		@Test(priority = 199)
+		public void valoresParaMetodoPCIDetalhes() {
+			valoresParaMetodoPCIDetalhes = new ValoresParaMetodoPCIDetalhes();
+			valoresParaMetodoPCIDetalhes.beforeClass();
+			valoresParaMetodoPCIDetalhes.login();
+			valoresParaMetodoPCIDetalhes.acessarMDR();
+			valoresParaMetodoPCIDetalhes.Detalhes();
+			valoresParaMetodoPCIDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 200)
+		public void valoresParaMetodoPCIExcluir() {
+			valoresParaMetodoPCIExcluir = new ValoresParaMetodoPCIExcluir();
+			valoresParaMetodoPCIExcluir.beforeClass();
+			valoresParaMetodoPCIExcluir.login();
+			valoresParaMetodoPCIExcluir.acessarMDR();
+			valoresParaMetodoPCIExcluir.excluir();
+			valoresParaMetodoPCIExcluir.afterClass();
+			
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI Fim-------------------------");
+			
+
+		}
+		
+		//204
+		//Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC
+		
+		@Test(priority = 204)
+		public void valoresParaMetodoPICCriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC-------------------------");
+			valoresParaMetodoPICCriar = new ValoresParaMetodoPICCriar();
+			valoresParaMetodoPICCriar.beforeClass();
+			valoresParaMetodoPICCriar.login();
+			valoresParaMetodoPICCriar.acessarMDR();
+			valoresParaMetodoPICCriar.criar();
+			valoresParaMetodoPICCriar.afterClass();
+
+		}
+		
+		@Test(priority = 205)
+		public void valoresParaMetodoPICEditar() {
+			
+			valoresParaMetodoPICEditar = new ValoresParaMetodoPICEditar();
+			valoresParaMetodoPICEditar.beforeClass();
+			valoresParaMetodoPICEditar.login();
+			valoresParaMetodoPICEditar.acessarMDR();
+			valoresParaMetodoPICEditar.editar();
+			valoresParaMetodoPICEditar.afterClass();
+
+		}
+		
+		@Test(priority = 206)
+		public void valoresParaMetodoPICDetalhes() {
+			
+			valoresParaMetodoPICDetalhes = new ValoresParaMetodoPICDetalhes();
+			valoresParaMetodoPICDetalhes.beforeClass();
+			valoresParaMetodoPICDetalhes.login();
+			valoresParaMetodoPICDetalhes.acessarMDR();
+			valoresParaMetodoPICDetalhes.Detalhes();
+			valoresParaMetodoPICDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 207)
+		public void valoresParaMetodoPICExcluir() {
+			
+			valoresParaMetodoPICExcluir = new ValoresParaMetodoPICExcluir();
+			valoresParaMetodoPICExcluir.beforeClass();
+			valoresParaMetodoPICExcluir.login();
+			valoresParaMetodoPICExcluir.acessarMDR();
+			valoresParaMetodoPICExcluir.excluir();
+			valoresParaMetodoPICExcluir.afterClass();
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC Fim-------------------------");
+			
+
+		}
+		
+		//211
+		//Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL
+		@Test(priority = 211)
+		public void valoresParaMetodoPRLCriar() {
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL-------------------------");
+			valoresParaMetodoPRLCriar = new ValoresParaMetodoPRLCriar();
+			valoresParaMetodoPRLCriar.beforeClass();
+			valoresParaMetodoPRLCriar.login();
+			valoresParaMetodoPRLCriar.acessarMDR();
+			valoresParaMetodoPRLCriar.criar();
+			valoresParaMetodoPRLCriar.afterClass();
+
+		}
+		
+		@Test(priority = 212)
+		public void valoresParaMetodoPRLEditar() {
+			valoresParaMetodoPRLEditar = new ValoresParaMetodoPRLEditar();
+			valoresParaMetodoPRLEditar.beforeClass();
+			valoresParaMetodoPRLEditar.login();
+			valoresParaMetodoPRLEditar.acessarMDR();
+			valoresParaMetodoPRLEditar.editar();
+			valoresParaMetodoPRLEditar.afterClass();
+
+		}
+		
+		@Test(priority = 213)
+		public void valoresParaMetodoPRLDetalhes() {
+			valoresParaMetodoPRLDetalhes = new ValoresParaMetodoPRLDetalhes();
+			valoresParaMetodoPRLDetalhes.beforeClass();
+			valoresParaMetodoPRLDetalhes.login();
+			valoresParaMetodoPRLDetalhes.acessarMDR();
+			valoresParaMetodoPRLDetalhes.Detalhes();
+			valoresParaMetodoPRLDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 214)
+		public void valoresParaMetodoPRLFiltroID() {
+			valoresParaMetodoPRLFiltroID = new ValoresParaMetodoPRLFiltroID();
+			valoresParaMetodoPRLFiltroID.beforeClass();
+			valoresParaMetodoPRLFiltroID.login();
+			valoresParaMetodoPRLFiltroID.acessarMDR();
+			valoresParaMetodoPRLFiltroID.filtro();
+			valoresParaMetodoPRLFiltroID.afterClass();
+
+		}
+		
+		@Test(priority = 215)
+		public void valoresParaMetodoPRLExcluir() {
+			valoresParaMetodoPRLExcluir = new ValoresParaMetodoPRLExcluir();
+			valoresParaMetodoPRLExcluir.beforeClass();
+			valoresParaMetodoPRLExcluir.login();
+			valoresParaMetodoPRLExcluir.acessarMDR();
+			valoresParaMetodoPRLExcluir.excluir();
+			valoresParaMetodoPRLExcluir.afterClass();
+			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL Fim-------------------------");
+			
+		}
+		
+		//218
+		
 }

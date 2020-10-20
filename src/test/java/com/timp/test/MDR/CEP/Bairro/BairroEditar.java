@@ -11,48 +11,43 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroEditarPO;
 
-
-public class BairroEditar extends TestBaseSteven{
+public class BairroEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	BairroEditarPO bairroEditarPO;
-	
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		bairroEditarPO = new BairroEditarPO();
 	}
-	
+
 	@AfterClass
-	public void afterClass(){
+	public void afterClass() {
 		driver.close();
 	}
-	
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
-		
+
 	}
-	
+
 	@Test(priority = 1)
 	public void acessarMDR() {
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 	}
-  
-	
-	 @Test(priority = 2)
-	  public void editar() {
-		  
-		 boolean sucesso =  bairroEditarPO.editar();
-		 
-		 assertTrue(sucesso, Editar);
-	  }
+
+	@Test(priority = 2)
+	public void editar() {
+
+		boolean sucesso = bairroEditarPO.editar();
+
+		assertTrue(sucesso, Editar);
+	}
 }

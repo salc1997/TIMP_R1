@@ -24,11 +24,7 @@ public class TestBaseEliel extends TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-<<<<<<< HEAD
 		driver.get(tp1);
-=======
-		driver.get(tq1);
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 
 	}
@@ -211,7 +207,7 @@ public String dataanterior() {
 	//MDR
 	public String Editar = "O valor do campo não foi editado";
 	public String EmpresaVisualizar = "Não foi possivél visalizar o registro";
-	public String Filtros = "Os resultados não são acorde aos filtros";
+	public String Filtros = "Os resultados não são de acordo aos filtros";
 	public String Criar = "O registro não foi criado com sucesso";
 	public String Eliminado = "O registro não foi eliminado com sucesso";
 	

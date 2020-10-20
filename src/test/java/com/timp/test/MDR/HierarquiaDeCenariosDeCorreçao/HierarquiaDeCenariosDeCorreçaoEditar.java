@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoEditarPO;
 
 public class HierarquiaDeCenariosDeCorreçaoEditar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	HierarquiaDeCenariosDeCorreçaoEditarPO hierarquiaDeCenariosDeCorreçaoEditarPO;
@@ -26,12 +25,12 @@ public class HierarquiaDeCenariosDeCorreçaoEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		hierarquiaDeCenariosDeCorreçaoEditarPO = new HierarquiaDeCenariosDeCorreçaoEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,17 +43,13 @@ public class HierarquiaDeCenariosDeCorreçaoEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
-		String sucesso =hierarquiaDeCenariosDeCorreçaoEditarPO.editar();
-		
-		 assertEquals(sucesso, "edit", visualizaçar); 
+
+		String sucesso = hierarquiaDeCenariosDeCorreçaoEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
-		
-	
-	
+
 }

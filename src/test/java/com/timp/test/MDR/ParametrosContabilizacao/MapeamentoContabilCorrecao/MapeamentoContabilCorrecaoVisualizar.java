@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoVisualizarPO;
 import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheVisualizarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoVisualizarPO;
 
-public class MapeamentoContabilCorrecaoVisualizar extends TestBaseSteven{
+public class MapeamentoContabilCorrecaoVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -31,9 +31,11 @@ public class MapeamentoContabilCorrecaoVisualizar extends TestBaseSteven{
 		mapeamentoContabilCorrecaoVisualizarPO = new MapeamentoContabilCorrecaoVisualizarPO();
 	}
 
-	
-	@AfterClass public void afterClass() { driver.close(); }
-	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

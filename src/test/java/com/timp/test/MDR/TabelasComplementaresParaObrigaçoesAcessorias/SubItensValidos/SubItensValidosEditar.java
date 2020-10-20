@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditarPO;
 
 public class SubItensValidosEditar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SubItensValidosEditarPO subItensValidosEditarPO;
@@ -25,12 +25,12 @@ public class SubItensValidosEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		subItensValidosEditarPO = new SubItensValidosEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,16 +43,14 @@ public class SubItensValidosEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = subItensValidosEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}		
-	
-	
+	}
+
 }

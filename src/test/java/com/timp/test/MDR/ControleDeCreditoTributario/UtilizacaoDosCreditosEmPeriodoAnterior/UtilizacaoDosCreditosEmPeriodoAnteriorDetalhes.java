@@ -14,23 +14,25 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPDetalhesPO;
 
-public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseEliel{
-	
-	
+public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UtilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO utilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO;
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		utilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO= new UtilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO();
+		utilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO = new UtilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,14 +51,12 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseElie
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = utilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-		
-	
-  
+	}
+
 }

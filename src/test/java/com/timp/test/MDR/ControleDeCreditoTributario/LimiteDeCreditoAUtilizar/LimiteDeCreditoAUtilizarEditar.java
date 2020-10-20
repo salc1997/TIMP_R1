@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditarPO;
 
 public class LimiteDeCreditoAUtilizarEditar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LimiteDeCreditoAUtilizarEditarPO limiteDeCreditoAUtilizarEditarPO;
@@ -25,12 +25,12 @@ public class LimiteDeCreditoAUtilizarEditar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		limiteDeCreditoAUtilizarEditarPO = new LimiteDeCreditoAUtilizarEditarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,18 +43,14 @@ public class LimiteDeCreditoAUtilizarEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = limiteDeCreditoAUtilizarEditarPO.editar();
-		
+
 		assertTrue(sucesso, Editar);
 
-	}	
-	
-	
-	
-	
+	}
+
 }

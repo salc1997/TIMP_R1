@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPCriarPO;
 
-public class TabelaDeAtribuicaoDeCodigoCFOPCriar extends TestBaseEliel{
- 
+public class TabelaDeAtribuicaoDeCodigoCFOPCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeAtribuicaoDeCodigoCFOPCriarPO tabelaDeAtribuicaoDeCodigoCFOPCriarPO;
@@ -25,9 +25,11 @@ public class TabelaDeAtribuicaoDeCodigoCFOPCriar extends TestBaseEliel{
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeAtribuicaoDeCodigoCFOPCriarPO = new TabelaDeAtribuicaoDeCodigoCFOPCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,16 +47,9 @@ public class TabelaDeAtribuicaoDeCodigoCFOPCriar extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaDeAtribuicaoDeCodigoCFOPCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-		
-		
-	
-	
-	
-	
-	
+
+	}
+
 }

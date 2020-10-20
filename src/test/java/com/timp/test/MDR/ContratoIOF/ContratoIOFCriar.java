@@ -14,9 +14,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class ContratoIOFCriar extends TestBaseEliel {
- 
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContratoIOFCriarPO contraIOFCriarPO;
@@ -29,9 +27,11 @@ public class ContratoIOFCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		contraIOFCriarPO = new ContratoIOFCriarPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -52,15 +52,6 @@ public class ContratoIOFCriar extends TestBaseEliel {
 
 		assertTrue(sucesso, semAcesso);
 
-		
-	}	
-	
-	
-		
-}	
-	
-	
-	
-	
+	}
 
-
+}

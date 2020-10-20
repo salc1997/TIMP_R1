@@ -2,17 +2,18 @@ package com.timp.test.MDR.TabelaDeApoioECF;
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriarPO;
 
-public class TabelaDeApoioECFCriar extends TestBaseEliel {
+public class TabelaDeApoioECFCriar extends TestBaseSteven {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeApoioECFCriarPO tabelaDeApoioECFCriarPO;
@@ -20,14 +21,16 @@ public class TabelaDeApoioECFCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeApoioECFCriarPO = new TabelaDeApoioECFCriarPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -45,10 +48,9 @@ public class TabelaDeApoioECFCriar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void criar() {
 
-		
 		boolean sucesso = tabelaDeApoioECFCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-		
-	}			
-	
+
+	}
+
 }

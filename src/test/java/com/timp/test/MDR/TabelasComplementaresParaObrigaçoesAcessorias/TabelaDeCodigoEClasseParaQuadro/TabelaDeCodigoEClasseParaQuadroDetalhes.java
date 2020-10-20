@@ -14,12 +14,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroDetalhesPO;
 
 public class TabelaDeCodigoEClasseParaQuadroDetalhes extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCodigoEClasseParaQuadroDetalhesPO tabelaDeCodigoEClasseParaQuadroDetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -28,9 +27,11 @@ public class TabelaDeCodigoEClasseParaQuadroDetalhes extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeCodigoEClasseParaQuadroDetalhesPO = new TabelaDeCodigoEClasseParaQuadroDetalhesPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {
@@ -49,12 +50,12 @@ public class TabelaDeCodigoEClasseParaQuadroDetalhes extends TestBaseEliel {
 	public void detalhes() {
 
 		ArrayList<Boolean> sucesso = tabelaDeCodigoEClasseParaQuadroDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-			
+
 			assertTrue(sucesso.get(i), Detalhes);
-			
+
 		}
-	}		
-	
+	}
+
 }

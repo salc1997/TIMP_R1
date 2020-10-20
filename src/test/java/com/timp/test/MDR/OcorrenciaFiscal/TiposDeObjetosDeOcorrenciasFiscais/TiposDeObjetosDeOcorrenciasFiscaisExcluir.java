@@ -10,9 +10,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirPO;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisExcluir extends TestBaseEliel{
+public class TiposDeObjetosDeOcorrenciasFiscaisExcluir extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeObjetosDeOcorrenciasFiscaisExcluirPO tiposDeObjetosDeOcorrenciasFiscaisExcluirPO;
@@ -45,9 +44,8 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluir extends TestBaseEliel{
 	@Test(priority = 2)
 	public void excluir() {
 
-		
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		
-	}			
+
+	}
 }

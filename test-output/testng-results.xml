@@ -1,68 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results total="3" passed="3" failed="0" skipped="0">
-=======
-<testng-results skipped="0" failed="0" total="3" passed="3">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-10-19T20:45:20Z" name="Default suite" finished-at="2020-10-19T20:48:12Z" duration-ms="171337">
-=======
-  <suite name="Default suite" duration-ms="102272" started-at="2020-10-19T16:36:09Z" finished-at="2020-10-19T16:37:51Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite started-at="2020-10-20T20:37:56Z" name="Default suite" finished-at="2020-10-20T20:39:15Z" duration-ms="78641">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-10-19T20:45:20Z" name="Default test" finished-at="2020-10-19T20:48:12Z" duration-ms="171337">
-      <class name="com.timp.test.MDR.Siscoserv.NBS.NBSEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:45:20Z" name="beforeClass" finished-at="2020-10-19T17:45:33Z" duration-ms="12385" status="PASS">
-=======
-    <test name="Default test" duration-ms="102272" started-at="2020-10-19T16:36:09Z" finished-at="2020-10-19T16:37:51Z">
-      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="17750" started-at="2020-10-19T10:36:09Z" finished-at="2020-10-19T10:36:26Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test started-at="2020-10-20T20:37:56Z" name="Default test" finished-at="2020-10-20T20:39:15Z" duration-ms="78641">
+      <class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:37:57Z" name="beforeClass" finished-at="2020-10-20T17:38:09Z" duration-ms="12788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:45:33Z" name="login" finished-at="2020-10-19T17:45:41Z" duration-ms="7692" status="PASS">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="login" duration-ms="8091" started-at="2020-10-19T10:36:26Z" finished-at="2020-10-19T10:36:34Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:38:09Z" name="login" finished-at="2020-10-20T17:38:17Z" duration-ms="8142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:45:41Z" name="acessarMDR" finished-at="2020-10-19T17:46:12Z" duration-ms="31793" status="PASS">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="acessarMDR" duration-ms="10511" started-at="2020-10-19T10:36:34Z" finished-at="2020-10-19T10:36:45Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:38:17Z" name="acessarMDR" finished-at="2020-10-20T17:38:40Z" duration-ms="22517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:46:12Z" name="editar" finished-at="2020-10-19T17:48:12Z" duration-ms="119386" status="PASS">
-=======
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="excluir" duration-ms="65801" started-at="2020-10-19T10:36:45Z" finished-at="2020-10-19T10:37:51Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:38:40Z" name="excluir" finished-at="2020-10-20T17:39:15Z" duration-ms="35132" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSEditar@f78a47e]" started-at="2020-10-19T17:48:12Z" name="afterClass" finished-at="2020-10-19T17:48:12Z" duration-ms="67" status="PASS">
-=======
         </test-method> <!-- excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="98" started-at="2020-10-19T10:37:51Z" finished-at="2020-10-19T10:37:51Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:39:15Z" name="afterClass" finished-at="2020-10-20T17:39:15Z" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.NBS.NBSEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

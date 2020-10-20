@@ -117,30 +117,5 @@ public class AssociaçãoEditarPO extends TestBaseFernando{
 		
 		
 		return sucesso;
-		
-		/*
-		 * btnBiblioteca.click(); sleep(1000); btnSim.click(); sleep(1000);
-		 * invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
-		 * 
-		 * btnUltimaPagina.click(); sleep(1000);
-		 * 
-		 * menu =
-		 * driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"))
-		 * ; açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+
-		 * "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		 * 
-		 * menu.click(); sleep(1000); açao.click(); sleep(3000);
-		 * invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
-		 * 
-		 * waitExpectElement(textoVisualizarMunicipioExecutor); String municipioExecutor
-		 * = textoVisualizarMunicipioExecutor.getText();
-		 * System.out.println(municipioExecutor);
-		 * 
-		 * boolean sucesso = false;
-		 * 
-		 * sucesso = municipioExecutor.contains("1100023");
-		 * 
-		 * return sucesso;
-		 */
 	}
 }

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO extends TestBaseSteven{
-	
+	 
 	
 	
 	

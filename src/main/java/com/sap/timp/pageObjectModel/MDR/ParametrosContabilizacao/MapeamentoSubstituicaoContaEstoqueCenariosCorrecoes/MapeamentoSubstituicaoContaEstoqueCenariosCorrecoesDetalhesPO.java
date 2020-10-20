@@ -12,7 +12,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO extends TestBaseSteven {
 
-
+ 
 
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
 	public WebElement parametro;

@@ -1,24 +1,26 @@
-package com.timp.test.MDR.TabelaApoioECD;
+package com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.CodigoFatosContabeisPO;
+import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisDetalhePO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
-public class CodigoFatosContabeis extends TestBaseFernando {
+public class CodigoFatosContabeisDetalhe extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
-	CodigoFatosContabeisPO ecd;
+	CodigoFatosContabeisDetalhePO codigoFatosContabeisDetalhePO;
 
-	public CodigoFatosContabeis() {
+	public CodigoFatosContabeisDetalhe() {
 		super();
 	}
 
@@ -27,7 +29,7 @@ public class CodigoFatosContabeis extends TestBaseFernando {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
-		ecd = new CodigoFatosContabeisPO();
+		codigoFatosContabeisDetalhePO = new CodigoFatosContabeisDetalhePO();
 	}
 
 	@AfterClass
@@ -41,13 +43,15 @@ public class CodigoFatosContabeis extends TestBaseFernando {
 
 	@Test(priority = 2)
 	public void mdrEntrar() {
-		boolean sucesso = acesarMDRPO.acessarMDR();
-		assertTrue(sucesso, "The element is not present");
+		acesarMDRPO.acessarMDR();
 	}
-
+	
 	@Test(priority = 3)
-	public void criar() {
-		boolean sucesso = ecd.criar();
-		assertTrue(sucesso, "There is an error...");
+	public void detalhe() {
+		ArrayList<Boolean> sucesso = codigoFatosContabeisDetalhePO.detalheCodigoFatosContabeisDetalhe();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 	}
 }

@@ -3,6 +3,80 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+  <suite started-at="2020-10-20T20:37:56Z" name="Default suite" finished-at="2020-10-20T20:39:15Z" duration-ms="78641">
+    <groups>
+    </groups>
+    <test started-at="2020-10-20T20:37:56Z" name="Default test" finished-at="2020-10-20T20:39:15Z" duration-ms="78641">
+      <class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:37:57Z" name="beforeClass" finished-at="2020-10-20T17:38:09Z" duration-ms="12788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:38:09Z" name="login" finished-at="2020-10-20T17:38:17Z" duration-ms="8142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:38:17Z" name="acessarMDR" finished-at="2020-10-20T17:38:40Z" duration-ms="22517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:38:40Z" name="excluir" finished-at="2020-10-20T17:39:15Z" duration-ms="35132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir@f78a47e]" started-at="2020-10-20T17:39:15Z" name="afterClass" finished-at="2020-10-20T17:39:15Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="163072" started-at="2020-10-20T16:22:02Z" finished-at="2020-10-20T16:24:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="163072" started-at="2020-10-20T16:22:02Z" finished-at="2020-10-20T16:24:45Z">
+      <class name="com.timp.test.BRB.NovoRelatorio">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11351" started-at="2020-10-20T10:22:02Z" finished-at="2020-10-20T10:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="login" duration-ms="7032" started-at="2020-10-20T10:22:14Z" finished-at="2020-10-20T10:22:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="brbEntrar" duration-ms="18327" started-at="2020-10-20T10:22:21Z" finished-at="2020-10-20T10:22:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brbEntrar -->
+        <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="novoRelatorio" duration-ms="46361" started-at="2020-10-20T10:22:39Z" finished-at="2020-10-20T10:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- novoRelatorio -->
+        <test-method status="PASS" signature="colunas()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="colunas" duration-ms="75892" started-at="2020-10-20T10:23:25Z" finished-at="2020-10-20T10:24:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- colunas -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.NovoRelatorio@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4093" started-at="2020-10-20T10:24:41Z" finished-at="2020-10-20T10:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
   <suite started-at="2020-10-19T22:09:07Z" name="Default suite" finished-at="2020-10-19T22:10:50Z" duration-ms="103830">
     <groups>
     </groups>
@@ -329,4 +403,6 @@ Session ID: f29baefabbae95156811ea75904e8c08
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

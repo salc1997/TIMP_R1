@@ -17,9 +17,12 @@
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir">
+=======
 <<<<<<< HEAD
       <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
 =======
@@ -33,7 +36,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <include name="formatacaoEVariante"/>
 =======
@@ -42,7 +48,10 @@
 <<<<<<< HEAD
 =======
           <include name="colunas"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
+<<<<<<< HEAD
+=======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
@@ -51,14 +60,22 @@
           <include name="afterClass"/>
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="excluir"/>
+<<<<<<< HEAD
+          <include name="beforeClass"/>
+=======
           <include name="afterClass"/>
 =======
           <include name="novoRelatorio"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
 =======
@@ -69,6 +86,7 @@
       </class> <!-- com.timp.test.MDR.Siscoserv.NBS.NBSExcluir -->
 =======
       </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

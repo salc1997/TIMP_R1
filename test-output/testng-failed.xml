@@ -21,6 +21,9 @@
   <test name="Default test(failed)" parallel="none">
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCriar">
 =======
 <<<<<<< HEAD
@@ -29,7 +32,11 @@
       <class name="com.timp.test.BRB.NovoRelatorio">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+          <include name="formatacaoEVariante"/>
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -50,7 +57,11 @@
           <include name="novoRelatorio"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCriar -->
 =======
@@ -58,6 +69,7 @@
       </class> <!-- com.timp.test.MDR.Siscoserv.NBS.NBSExcluir -->
 =======
       </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>

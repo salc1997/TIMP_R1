@@ -64,15 +64,9 @@ public class NovoRelatorio extends TestBaseSteven {
 	@Test(priority = 2)
 	public void novoRelatorio() {
 
-		boolean sucesso = false;
-		sucesso = novoRelatorioPO.criar();
-		System.out.println(sucesso + "Novo Relatório");
-		assertTrue(sucesso, novoRelatorio);
+		boolean sucesso = novoRelatorioPO.criar();
 		sleep(4000);
-		String texto = driver
-				.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div"))
-				.getText();
-		assertTrue(texto.contains("Prueba Automatizada"), "The names don't match");
+		assertTrue(sucesso, Criar);
 
 	}
 

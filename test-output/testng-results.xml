@@ -1,48 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="4" passed="2">
+<testng-results skipped="0" failed="1" total="28" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="88176" started-at="2020-10-06T19:47:07Z" finished-at="2020-10-06T19:48:35Z">
+  <suite name="Default suite" duration-ms="3694307" started-at="2020-10-06T20:45:57Z" finished-at="2020-10-06T21:47:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="88176" started-at="2020-10-06T19:47:07Z" finished-at="2020-10-06T19:48:35Z">
-      <class name="com.timp.test.BRB.Eliminar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@91161c7]" name="beforeClass" is-config="true" duration-ms="17626" started-at="2020-10-06T16:47:07Z" finished-at="2020-10-06T16:47:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@91161c7]" name="login" duration-ms="12308" started-at="2020-10-06T16:47:24Z" finished-at="2020-10-06T16:47:37Z">
+    <test name="Default test" duration-ms="3694307" started-at="2020-10-06T20:45:57Z" finished-at="2020-10-06T21:47:31Z">
+      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="login" duration-ms="31126" started-at="2020-10-06T17:45:57Z" finished-at="2020-10-06T17:46:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@91161c7]" name="brbEntrar" duration-ms="30025" started-at="2020-10-06T16:47:37Z" finished-at="2020-10-06T16:48:07Z">
+        <test-method status="PASS" signature="acessarBRB()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="acessarBRB" duration-ms="43948" started-at="2020-10-06T17:46:28Z" finished-at="2020-10-06T17:47:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brbEntrar -->
-        <test-method status="FAIL" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@91161c7]" name="eliminar" duration-ms="6495" started-at="2020-10-06T16:48:07Z" finished-at="2020-10-06T16:48:13Z">
+        </test-method> <!-- acessarBRB -->
+        <test-method status="PASS" signature="paginacion()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="paginacion" duration-ms="79394" started-at="2020-10-06T17:47:12Z" finished-at="2020-10-06T17:48:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paginacion -->
+        <test-method status="PASS" signature="filtrosAvanzados()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="filtrosAvanzados" duration-ms="58098" started-at="2020-10-06T17:48:31Z" finished-at="2020-10-06T17:49:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosAvanzados -->
+        <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="novoRelatorio" duration-ms="197291" started-at="2020-10-06T17:49:30Z" finished-at="2020-10-06T17:52:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- novoRelatorio -->
+        <test-method status="PASS" signature="publicoYPrivado()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="publicoYPrivado" duration-ms="139492" started-at="2020-10-06T17:52:47Z" finished-at="2020-10-06T17:55:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publicoYPrivado -->
+        <test-method status="PASS" signature="excluirColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="excluirColuna" duration-ms="147185" started-at="2020-10-06T17:55:06Z" finished-at="2020-10-06T17:57:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirColuna -->
+        <test-method status="PASS" signature="editarRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="editarRelatorio" duration-ms="131460" started-at="2020-10-06T17:57:33Z" finished-at="2020-10-06T17:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editarRelatorio -->
+        <test-method status="PASS" signature="reordenarColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="reordenarColuna" duration-ms="86872" started-at="2020-10-06T17:59:45Z" finished-at="2020-10-06T18:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reordenarColuna -->
+        <test-method status="PASS" signature="filtrosRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="filtrosRelatorio" duration-ms="218969" started-at="2020-10-06T18:01:12Z" finished-at="2020-10-06T18:04:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosRelatorio -->
+        <test-method status="PASS" signature="criarCopia()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="criarCopia" duration-ms="144503" started-at="2020-10-06T18:04:51Z" finished-at="2020-10-06T18:07:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarCopia -->
+        <test-method status="PASS" signature="ativarCorrecao()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="ativarCorrecao" duration-ms="86850" started-at="2020-10-06T18:07:15Z" finished-at="2020-10-06T18:08:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ativarCorrecao -->
+        <test-method status="PASS" signature="ativarComentario()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="ativarComentario" duration-ms="87878" started-at="2020-10-06T18:08:42Z" finished-at="2020-10-06T18:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ativarComentario -->
+        <test-method status="PASS" signature="renomearColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="renomearColuna" duration-ms="89116" started-at="2020-10-06T18:10:10Z" finished-at="2020-10-06T18:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renomearColuna -->
+        <test-method status="PASS" signature="formula()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="formula" duration-ms="174378" started-at="2020-10-06T18:11:39Z" finished-at="2020-10-06T18:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formula -->
+        <test-method status="PASS" signature="agrupadoPeloCampo()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="agrupadoPeloCampo" duration-ms="156986" started-at="2020-10-06T18:14:34Z" finished-at="2020-10-06T18:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agrupadoPeloCampo -->
+        <test-method status="PASS" signature="campoOutput()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="campoOutput" duration-ms="90898" started-at="2020-10-06T18:17:11Z" finished-at="2020-10-06T18:18:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campoOutput -->
+        <test-method status="FAIL" signature="formatacaoEVariante()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="formatacaoEVariante" duration-ms="170900" started-at="2020-10-06T18:18:41Z" finished-at="2020-10-06T18:21:32Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="list-item no-result"]"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 828c996259e43df2e0baacfbe3f8dc2e
-*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49285}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f29baefabbae95156811ea75904e8c08
+*** Element info: {Using=xpath, value=//li[@class="list-item no-result"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="list-item no-result"]"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 828c996259e43df2e0baacfbe3f8dc2e
-*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div}
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49285}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f29baefabbae95156811ea75904e8c08
+*** Element info: {Using=xpath, value=//li[@class="list-item no-result"]}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -57,9 +113,10 @@ Session ID: 828c996259e43df2e0baacfbe3f8dc2e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRB.EliminarPO.eliminar(EliminarPO.java:72)
-	at com.timp.test.BRB.Eliminar.eliminar(Eliminar.java:55)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.sap.timp.pageObjectModel.BRB.FormatacaoEVariantePO.excluirVariantes(FormatacaoEVariantePO.java:386)
+	at com.timp.test.BRB.FormatacaoEVariante.excluirVariante(FormatacaoEVariante.java:82)
+	at com.timp.test.BRB.Automacoes.AutomacoesBrb.formatacaoEVariante(AutomacoesBrb.java:331)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -89,143 +146,48 @@ Session ID: 828c996259e43df2e0baacfbe3f8dc2e
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eliminar -->
-        <test-method status="FAIL" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@91161c7]" name="eliminarLixeira" duration-ms="21419" started-at="2020-10-06T16:48:13Z" finished-at="2020-10-06T16:48:35Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 828c996259e43df2e0baacfbe3f8dc2e
-*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 828c996259e43df2e0baacfbe3f8dc2e
-*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:122)
-	at com.sap.timp.pageObjectModel.BRB.EliminarPO.eliminarLixeira(EliminarPO.java:129)
-	at com.timp.test.BRB.Eliminar.eliminarLixeira(Eliminar.java:65)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- formatacaoEVariante -->
+        <test-method status="PASS" signature="filtroColunas()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="filtroColunas" duration-ms="132162" started-at="2020-10-06T18:21:32Z" finished-at="2020-10-06T18:23:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eliminarLixeira -->
-        <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@91161c7]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-06T16:48:35Z" finished-at="2020-10-06T16:48:35Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 828c996259e43df2e0baacfbe3f8dc2e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NV7E9IV', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 828c996259e43df2e0baacfbe3f8dc2e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.timp.test.BRB.Eliminar.afterClass(Eliminar.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- filtroColunas -->
+        <test-method status="PASS" signature="gruposAvanzados()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="gruposAvanzados" duration-ms="325120" started-at="2020-10-06T18:23:44Z" finished-at="2020-10-06T18:29:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.Eliminar -->
+        </test-method> <!-- gruposAvanzados -->
+        <test-method status="PASS" signature="crescenteEDecrescente()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="crescenteEDecrescente" duration-ms="225161" started-at="2020-10-06T18:29:10Z" finished-at="2020-10-06T18:32:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crescenteEDecrescente -->
+        <test-method status="PASS" signature="comentarioListaSuspensa()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="comentarioListaSuspensa" duration-ms="194443" started-at="2020-10-06T18:32:55Z" finished-at="2020-10-06T18:36:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comentarioListaSuspensa -->
+        <test-method status="PASS" signature="comentarioLibre()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="comentarioLibre" duration-ms="166267" started-at="2020-10-06T18:36:09Z" finished-at="2020-10-06T18:38:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comentarioLibre -->
+        <test-method status="PASS" signature="imprimir()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="imprimir" duration-ms="94208" started-at="2020-10-06T18:38:55Z" finished-at="2020-10-06T18:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imprimir -->
+        <test-method status="PASS" signature="cabeçalho()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="cabeçalho" duration-ms="117530" started-at="2020-10-06T18:40:30Z" finished-at="2020-10-06T18:42:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cabeçalho -->
+        <test-method status="PASS" signature="exportar()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="exportar" duration-ms="109326" started-at="2020-10-06T18:42:27Z" finished-at="2020-10-06T18:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exportar -->
+        <test-method status="PASS" signature="visualizar()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="visualizar" duration-ms="66466" started-at="2020-10-06T18:44:17Z" finished-at="2020-10-06T18:45:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method status="PASS" signature="ExcluirRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@6f7fd0e6]" name="ExcluirRelatorio" duration-ms="128217" started-at="2020-10-06T18:45:23Z" finished-at="2020-10-06T18:47:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcluirRelatorio -->
+      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

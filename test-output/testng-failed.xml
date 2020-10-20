@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.Eliminar">
+      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
         <methods>
-          <include name="eliminarLixeira"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="eliminar"/>
+          <include name="formatacaoEVariante"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.Eliminar -->
+      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

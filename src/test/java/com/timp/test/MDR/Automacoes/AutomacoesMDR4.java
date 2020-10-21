@@ -196,6 +196,14 @@ import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaDetalhes;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaEditar;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluir;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaVisualizar;
+import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASCriar;
+import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASDetalhes;
+import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASEditar;
+import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluir;
+import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASFiltroID;
+import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASVisualizar;
+import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar;
+import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -522,7 +530,13 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		EnquadramentoVisualizar enquadramentoVisualizar;
 		EnquadramentoExcluir enquadramentoExcluir;
 				
-	
+	//Siscoserv > Registro RAS
+		RegistroRASCriar registroRASCriar;
+		RegistroRASEditar registroRASEditar;
+		RegistroRASDetalhes registroRASDetalhes;
+		RegistroRASVisualizar registroRASVisualizar;
+		RegistroRASFiltroID registroRASFiltroID;
+		RegistroRASExcluir registroRASExcluir;
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
@@ -2572,6 +2586,76 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//237
+		@Test(priority = 237)
+		public void registroRASCriar() {
+			System.out.println("-------------------Siscoserv > Registro RAS-------------------------");
+			registroRASCriar = new RegistroRASCriar();
+			registroRASCriar.beforeClass();
+			registroRASCriar.login();
+			registroRASCriar.acessarMDR();
+			registroRASCriar.criar();
+			registroRASCriar.afterClass();
+
+		}
+		
+		@Test(priority = 238)
+		public void registroRASEditar() {
+			registroRASEditar = new RegistroRASEditar();
+			registroRASEditar.beforeClass();
+			registroRASEditar.login();
+			registroRASEditar.acessarMDR();
+			registroRASEditar.editar();
+			registroRASEditar.afterClass();
+
+		}
+		
+		@Test(priority = 239)
+		public void registroRASDetalhes() {
+			registroRASDetalhes = new RegistroRASDetalhes();
+			registroRASDetalhes.beforeClass();
+			registroRASDetalhes.login();
+			registroRASDetalhes.acessarMDR();
+			registroRASDetalhes.detalhes();
+			registroRASDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 240)
+		public void registroRASFiltroID() {
+			registroRASFiltroID = new RegistroRASFiltroID();
+			registroRASFiltroID.beforeClass();
+			registroRASFiltroID.login();
+			registroRASFiltroID.acessarMDR();
+			registroRASFiltroID.filtroId();
+			registroRASFiltroID.afterClass();
+
+		}
+		
+		@Test(priority = 241)
+		public void registroRASVisualizar() {
+			registroRASVisualizar = new RegistroRASVisualizar();
+			registroRASVisualizar.beforeClass();
+			registroRASVisualizar.login();
+			registroRASVisualizar.acessarMDR();
+			registroRASVisualizar.Visualizar();
+			registroRASVisualizar.afterClass();
+
+		}
+		
+		@Test(priority = 242)
+		public void registroRASExcluir() {
+			registroRASExcluir = new RegistroRASExcluir();
+			registroRASExcluir.beforeClass();
+			registroRASExcluir.login();
+			registroRASExcluir.acessarMDR();
+			registroRASExcluir.excluir();
+			registroRASExcluir.afterClass();
+			System.out.println("-------------------Siscoserv > Registro RAS FIM-------------------------");
+			
+
+		}
+		
+		//244
 		
 		
 }

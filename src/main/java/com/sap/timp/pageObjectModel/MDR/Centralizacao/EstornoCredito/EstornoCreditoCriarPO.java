@@ -44,17 +44,17 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filiais\"]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"0299\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div[@class=\"list-item\" and @id]/div/label/span")
 	public WebElement opcao1filial;
 	
 
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"0300\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div[@class=\"list-item\" and @id]/div/label/span")
 	public WebElement opcao2filial;
 	
 	@FindBy(xpath="//input[ @placeholder=\"Selecionar Filial Centralizadora\"]")
 	public WebElement filialcentralizadora;
 	
-	@FindBy(xpath="/li[@id][1]")
+	@FindBy(xpath="//li[@id][1]")
 	public WebElement opcaofialcentralizadora;
 	
 	@FindBy(xpath = "//*[@id=\"tabs\"]/div/div/div[3]/div[5]/div/div/div[1]/div/div/label/span")

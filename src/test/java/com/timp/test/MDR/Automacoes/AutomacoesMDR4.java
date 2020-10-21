@@ -183,6 +183,19 @@ import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir;
+import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoCriar;
+import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoEditar;
+import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir;
+import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoVisualizar;
+import com.timp.test.MDR.Siscoserv.NBS.NBSCriar;
+import com.timp.test.MDR.Siscoserv.NBS.NBSDetalhes;
+import com.timp.test.MDR.Siscoserv.NBS.NBSEditar;
+import com.timp.test.MDR.Siscoserv.NBS.NBSExcluir;
+import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaCriar;
+import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaDetalhes;
+import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaEditar;
+import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluir;
+import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -489,7 +502,26 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ValoresParaMetodoPRLDetalhes valoresParaMetodoPRLDetalhes;
 		ValoresParaMetodoPRLExcluir valoresParaMetodoPRLExcluir;
 		ValoresParaMetodoPRLFiltroID valoresParaMetodoPRLFiltroID;
-
+	
+	//Siscoserv > Pais/Moeda
+		PaisMoedaCriar paisMoedaCriar;
+		PaisMoedaEditar paisMoedaEditar;
+		PaisMoedaDetalhes paisMoedaDetalhes;
+		PaisMoedaVisualizar paisMoedaVisualizar;
+		PaisMoedaExcluir paisMoedaExcluir;
+		
+	//Siscoserv > NBS
+		NBSCriar nbsCriar;
+		NBSEditar nbsEditar;
+		NBSDetalhes nbsDetalhes;
+		NBSExcluir nbsExcluir;
+		
+	//Siscoserv > Enquadramento
+		EnquadramentoCriar enquadramentoCriar;
+		EnquadramentoEditar enquadramentoEditar;
+		EnquadramentoVisualizar enquadramentoVisualizar;
+		EnquadramentoExcluir enquadramentoExcluir;
+				
 	
 	// --------------------------------------------------------------------------------------------------
 
@@ -2382,5 +2414,164 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//218
+		//Siscoserv > Pais/Moeda
+		@Test(priority = 218)
+		public void paisMoedaCriar() {
+			System.out.println("-------------------Siscoserv > Pais/Moeda-------------------------");
+			paisMoedaCriar = new PaisMoedaCriar();
+			paisMoedaCriar.beforeClass();
+			paisMoedaCriar.login();
+			paisMoedaCriar.acessarMDR();
+			paisMoedaCriar.criar();
+			paisMoedaCriar.afterClass();
+
+		}
+		
+		@Test(priority = 219)
+		public void paisMoedaEditar() {
+			paisMoedaEditar = new PaisMoedaEditar();
+			paisMoedaEditar.beforeClass();
+			paisMoedaEditar.login();
+			paisMoedaEditar.acessarMDR();
+			paisMoedaEditar.editar();
+			paisMoedaEditar.afterClass();
+
+		}
+		
+		@Test(priority = 220)
+		public void paisMoedaDetalhes() {
+			paisMoedaDetalhes = new PaisMoedaDetalhes();
+			paisMoedaDetalhes.beforeClass();
+			paisMoedaDetalhes.login();
+			paisMoedaDetalhes.acessarMDR();
+			paisMoedaDetalhes.detalhes();
+			paisMoedaDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 221)
+		public void paisMoedaVisualizar() {
+			paisMoedaVisualizar = new PaisMoedaVisualizar();
+			paisMoedaVisualizar.beforeClass();
+			paisMoedaVisualizar.login();
+			paisMoedaVisualizar.acessarMDR();
+			paisMoedaVisualizar.Visualizar();
+			paisMoedaVisualizar.afterClass();
+
+		}
+		
+		@Test(priority = 222)
+		public void paisMoedaExcluir() {
+			paisMoedaExcluir = new PaisMoedaExcluir();
+			paisMoedaExcluir.beforeClass();
+			paisMoedaExcluir.login();
+			paisMoedaExcluir.acessarMDR();
+			paisMoedaExcluir.excluir();
+			paisMoedaExcluir.afterClass();
+			System.out.println("-------------------Siscoserv > Pais/Moeda Fim-------------------------");
+			
+		}
+		
+		//224
+		////Siscoserv > NBS
+		
+		@Test(priority = 224)
+		public void nbsCriar() {
+			System.out.println("-------------------Siscoserv > NBS-------------------------");
+			nbsCriar = new NBSCriar();
+			nbsCriar.beforeClass();
+			nbsCriar.login();
+			nbsCriar.acessarMDR();
+			nbsCriar.criar();
+			nbsCriar.afterClass();
+
+		}
+		
+		@Test(priority = 225)
+		public void nbsEditar() {
+			nbsEditar = new NBSEditar();
+			nbsEditar.beforeClass();
+			nbsEditar.login();
+			nbsEditar.acessarMDR();
+			nbsEditar.editar();
+			nbsEditar.afterClass();
+
+		}
+		
+		@Test(priority = 226)
+		public void nbsDetalhes() {
+			nbsDetalhes = new NBSDetalhes();
+			nbsDetalhes.beforeClass();
+			nbsDetalhes.login();
+			nbsDetalhes.acessarMDR();
+			nbsDetalhes.detalhes();
+			nbsDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 227)
+		public void nbsExcluir() {
+			nbsExcluir = new NBSExcluir();
+			nbsExcluir.beforeClass();
+			nbsExcluir.login();
+			nbsExcluir.acessarMDR();
+			nbsExcluir.excluir();
+			nbsExcluir.afterClass();
+			System.out.println("-------------------Siscoserv > NBS FIM-------------------------");
+			
+		}
+		
+		//231
+		//Siscoserv > Enquadramento
+		
+		@Test(priority = 231)
+		public void enquadramentoCriar() {
+			System.out.println("-------------------Siscoserv > Enquadramento-------------------------");
+			enquadramentoCriar = new EnquadramentoCriar();
+			enquadramentoCriar.beforeClass();
+			enquadramentoCriar.login();
+			enquadramentoCriar.acessarMDR();
+			enquadramentoCriar.criar();
+			enquadramentoCriar.afterClass();
+
+		}
+		
+		@Test(priority = 232)
+		public void enquadramentoEditar() {
+			enquadramentoEditar = new EnquadramentoEditar();
+			enquadramentoEditar.beforeClass();
+			enquadramentoEditar.login();
+			enquadramentoEditar.acessarMDR();
+			enquadramentoEditar.editar();
+			enquadramentoEditar.afterClass();
+
+		}
+		
+		@Test(priority = 233)
+		public void enquadramentoVisualizar() {
+			enquadramentoVisualizar = new EnquadramentoVisualizar();
+			enquadramentoVisualizar.beforeClass();
+			enquadramentoVisualizar.login();
+			enquadramentoVisualizar.acessarMDR();
+			enquadramentoVisualizar.Visualizar();
+			enquadramentoVisualizar.afterClass();
+
+		}
+		
+		
+		@Test(priority = 234)
+		public void enquadramentoExcluir() {
+			enquadramentoExcluir = new EnquadramentoExcluir();
+			enquadramentoExcluir.beforeClass();
+			enquadramentoExcluir.login();
+			enquadramentoExcluir.acessarMDR();
+			enquadramentoExcluir.excluir();
+			enquadramentoExcluir.afterClass();
+			System.out.println("-------------------Siscoserv > Enquadramento Fim-------------------------");
+			
+		}
+		
+		//237
+		
 		
 }

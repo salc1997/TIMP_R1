@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela13;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela12;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,13 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ParteDoCorpoAtingidaCriarPO extends TestBaseSteven{
+public class CompatibilidadeEntreLotacaoCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela 13 - Parte do Corpo Atingida\"]")
-	public WebElement tabela13;
+	@FindBy(xpath = "//span[text()=\"Tabela 12 - Compatibilidade entre Lotação\"]")
+	public WebElement tabela12;
 	
 	@FindBy(xpath = "//button/span[contains(text(),\"Nova\")]")
 	public WebElement novo;
@@ -24,7 +24,7 @@ public class ParteDoCorpoAtingidaCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
 	public WebElement codigo;
 	
-	@FindBy(xpath = "//textarea[contains(@placeholder,\"Descrição\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Classificação\")]")
 	public WebElement descricao;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
@@ -56,7 +56,7 @@ public class ParteDoCorpoAtingidaCriarPO extends TestBaseSteven{
 	*/
 	
 	
-	public ParteDoCorpoAtingidaCriarPO() {
+	public CompatibilidadeEntreLotacaoCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -65,7 +65,7 @@ public class ParteDoCorpoAtingidaCriarPO extends TestBaseSteven{
 		sleep(2000);
 		tabelaApoio.click();
 		sleep(2000);
-		tabela13.click();
+		tabela12.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -85,9 +85,9 @@ public class ParteDoCorpoAtingidaCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("111");
+		codigo.sendKeys("12");
 		sleep(1000);
-		descricao.sendKeys("Teste Parte do Corpo Atingida");
+		descricao.sendKeys("Teste Compatibilidade Entre Lotação");
 		sleep(1000);
 		
 		String data = fechaActual();
@@ -118,7 +118,7 @@ public class ParteDoCorpoAtingidaCriarPO extends TestBaseSteven{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir2(idB);
+		idInserir1(idB);
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);

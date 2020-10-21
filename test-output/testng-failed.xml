@@ -1,96 +1,14 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoExcluir">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLograduroDetalhes">
         <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="detalhes"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoExcluir -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLograduroDetalhes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Siscoserv.NBS.NBSExcluir">
-=======
-      <class name="com.timp.test.BRB.NovoRelatorio">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="formatacaoEVariante"/>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-          <include name="colunas"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
-          <include name="afterClass"/>
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="excluir"/>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-=======
-          <include name="afterClass"/>
-=======
-          <include name="novoRelatorio"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.NBS.NBSExcluir -->
-=======
-      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

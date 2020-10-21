@@ -123,8 +123,10 @@ public class FatorCreditamentoCriarPO extends TestBaseKathy{
 		empresa.sendKeys(Keys.ENTER);
 		opcEmpresa.click();
 		sleep(3000);
+		
 		ufFilial.sendKeys(Keys.ENTER);
 		opcUfFilial.click();
+		
 		sleep(4000);
 		filiais.sendKeys(Keys.ENTER);
 		if(tc2==true) {

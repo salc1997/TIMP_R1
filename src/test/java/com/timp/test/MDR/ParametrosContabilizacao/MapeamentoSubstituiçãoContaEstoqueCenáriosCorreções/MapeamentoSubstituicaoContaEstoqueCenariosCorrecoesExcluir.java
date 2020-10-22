@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubst
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO;

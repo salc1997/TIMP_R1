@@ -1,7 +1,5 @@
 package com.sap.timp.pageObjectModel.MDR.Ajustes.AssociacaoCodigosAjustes;
 
-import java.net.URL;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -113,9 +111,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println(id);			
-		sleep(2000);
-		
-		
+		sleep(2000);	
 		
 		btnNovaAssociacao.click();
 		sleep(2000);
@@ -212,8 +208,8 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000); rows = driver.findElements(By.
-		xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		sleep(2000); 
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		  
 		boolean sucesso = false;
 		  

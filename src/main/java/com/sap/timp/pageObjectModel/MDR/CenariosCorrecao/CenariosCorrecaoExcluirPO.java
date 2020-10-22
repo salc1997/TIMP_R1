@@ -45,6 +45,9 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"option-2\"]")
 	public WebElement opc;
 	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement sim;
+	
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
 	public WebElement confirmacionGravar;
 	
@@ -89,6 +92,8 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 		sleep(1000);
 		excluir.click();
 		sleep(3000);
+		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
@@ -113,15 +118,7 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 			sucesso= true;
 		}
 		System.out.println(sucesso);
-		/*
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		*/
+
 		
 		//boolean sucesso = nenhumResult.isDisplayed();
 		return sucesso;

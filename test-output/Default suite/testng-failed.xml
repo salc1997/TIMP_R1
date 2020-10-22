@@ -14,14 +14,25 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId">
 =======
       <class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASFiltroID">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         <methods>
 <<<<<<< HEAD
           <include name="afterClass"/>
+          <include name="criar"/>
+=======
+<<<<<<< HEAD
+          <include name="afterClass"/>
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
           <include name="FiltrarSaldosId"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId -->
@@ -114,7 +125,11 @@
           <include name="acessarMDR"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaCriar -->
 =======
@@ -130,6 +145,7 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

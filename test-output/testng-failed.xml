@@ -19,6 +19,9 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaCriar">
 =======
 <<<<<<< HEAD
@@ -31,7 +34,13 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -109,7 +118,11 @@
           <include name="acessarMDR"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaCriar -->
 =======
@@ -125,6 +138,7 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,144 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
-<<<<<<< HEAD
     <classes>
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId">
+      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="FiltrarSaldosId"/>
+          <include name="CriarIncentivosFiscais"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId -->
-=======
-=======
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASFiltroID">
-=======
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR3">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
-<<<<<<< HEAD
-          <include name="filtroId"/>
-          <include name="login"/>
-=======
-          <include name="tabelaDeCodigoEClasseParaQuadroDetalhes"/>
-          <include name="tabelaDeCodigoEClasseParaQuadroVisualizar"/>
-          <include name="codigoDeOutrasSaidasDetalhes"/>
-          <include name="codigoDeOutrasSaidasEditar"/>
-          <include name="subItensValidosExcluir"/>
-          <include name="tabelaComplementarParaDIRFDetalhes"/>
-          <include name="tabelaComplementarParaDIRFCriar"/>
-          <include name="subItensValidosEditar"/>
-          <include name="codigoAjustesContribuiçaoCreditosExcluir"/>
-          <include name="tabelaDeAtribuicaoDeCodigoCFOPEditar"/>
-          <include name="codigoDeOutrasSaidasVisualizar"/>
-          <include name="tabelaDeAtribuicaoDeCodigoCFOPVisualzar"/>
-          <include name="tabelaComplementarParaDIRFEditar"/>
-          <include name="codigoDeMotivosDeAjustesEditar"/>
-          <include name="tabelaCodigoReceitaExcluir"/>
-          <include name="tabelaDeAtribuicaoDeCodigoCFOPCriar"/>
-          <include name="codigoDIPAMCriar"/>
-          <include name="codigoAjustesContribuiçaoCreditosCriar"/>
-          <include name="classificaçaoDeContribuintesDoIPICriar"/>
-          <include name="tabelaComplementarParaDIRFVisualizar"/>
-          <include name="tabelaCodigoReceitaDetalhes"/>
-          <include name="tabelaComplementarParaDIRFExcluir"/>
-          <include name="classificaçaoDeContribuintesDoIPIFiltros"/>
-          <include name="codigoDIPAMEditar"/>
-          <include name="tabelaCodigoReceitaCriar"/>
-          <include name="codigoDeMotivosDeAjustesCriar"/>
-          <include name="classificaçaoDeContribuintesDoIPIVisualizar"/>
-          <include name="tabelaDeCodigoEClasseParaQuadroEditar"/>
-          <include name="documentosFiscaisICMSExcluir"/>
-          <include name="tabelaCodigoDaSituaçaoTributariaCriar"/>
-          <include name="tabelaDeCodigoEClasseParaQuadroExcluir"/>
-          <include name="classificaçaoDeContribuintesDoIPIEditar"/>
-          <include name="tabelaDeAtribuicaoDeCodigoCFOPDetalhes"/>
-          <include name="tabelaDeAtribuicaoDeCodigoCFOPExcluir"/>
-          <include name="codigoDIPAMExcluir"/>
-          <include name="classificaçaoDeContribuintesDoIPIDetalhes"/>
-          <include name="documentosFiscaisICMSEditar"/>
-          <include name="atribuicaoMunicipioEstadoExcluir"/>
-          <include name="codigoDIPAMDetalhes"/>
-          <include name="codigoDeMotivosDeAjustesExcluir"/>
-          <include name="codigoDeOutrasSaidasExcluir"/>
-          <include name="codigoDIPAMVisualizar"/>
-          <include name="codigoDeOutrasSaidasCriar"/>
-          <include name="subItensValidosCriar"/>
-          <include name="tabelaDeCodigoEClasseParaQuadroCriar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR3 -->
-=======
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLograduroDetalhes">
-        <methods>
-          <include name="detalhes"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
-          <include name="afterClass"/>
-=======
-<<<<<<< HEAD
-          <include name="criar"/>
-=======
-          <include name="acessarMDR"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASFiltroID -->
-=======
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLograduroDetalhes -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

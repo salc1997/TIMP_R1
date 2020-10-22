@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRP;
+package com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,16 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class RegistroRPEditarPO extends TestBaseEliel {
-	
+public class RegistroRVSEditarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Siscoserv\"]")
 	public WebElement siscoserv;
 	
-	@FindBy(xpath = "//span[text()=\"Registro RP\"]")
-	public WebElement registrorp;
+	@FindBy(xpath = "//span[text()=\"Registro RVS\"]")
+	public WebElement registrorvs;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Registro RP\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Registro RVS\"]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
@@ -26,20 +25,21 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 	public WebElement opcao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número do Serviço Adquirido\"]")
-	public WebElement numeroservico;
-	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher/Selecionar Período\"]")
 	public WebElement periodo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número do Registro de Crédito\"]")
-	public WebElement numerodoregistro;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número NIF\"]")
 	public WebElement numeronif;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número do Declaração de Importação\"]")
-	public WebElement numerododeclaracao;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número de Serviço\"]")
+	public WebElement numeroservico;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número do Registro de Crédito\"]")
+	public WebElement numerodoregistro;
+
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número de Registro de Exportação\"]")
+	public WebElement numeroderegistroexpotacao;
 	
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -59,7 +59,7 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 	
 	
 	
-	public RegistroRPEditarPO() {
+	public RegistroRVSEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -69,7 +69,7 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		siscoserv.click();
 		sleep(2000);
 		
-		registrorp.click();
+		registrorvs.click();
 		
 		sleep(2000);
 		
@@ -100,13 +100,13 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		
 		
 		
-		String valor = numerodoregistro.getAttribute("value");
+		String valor = numeronif.getAttribute("value");
 
 		String enviar = "8";
 
-		numerodoregistro.clear();
+		numeronif.clear();
 		sleep(2000);
-		numerodoregistro.sendKeys(enviar);
+		numeronif.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -115,7 +115,7 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 
 		driver.navigate().refresh();
 		sleep(2000);
@@ -124,7 +124,7 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		
-		String novoTexto=numerodoregistro.getAttribute("value");
+		String novoTexto=numeronif.getAttribute("value");
 		
 		System.out.println(valor);
 		System.out.println(novoTexto);
@@ -133,10 +133,10 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		numerodoregistro.clear();
+		numeronif.clear();
 
 		sleep(2000);
-		numerodoregistro.sendKeys(valor);
+		numeronif.sendKeys(valor);
 		
 		sleep(2000);
 		
@@ -151,6 +151,5 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		
 		return sucesso;
 	}	
-
 
 }

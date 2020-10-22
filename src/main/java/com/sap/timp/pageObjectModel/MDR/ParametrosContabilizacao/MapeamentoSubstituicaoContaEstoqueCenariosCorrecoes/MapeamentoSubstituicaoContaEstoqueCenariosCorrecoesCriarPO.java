@@ -115,6 +115,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO extends 
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
+	
 		filial.click();
 		sleep(1000);
 		filialO.click();

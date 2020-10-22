@@ -178,19 +178,12 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		estrutura.sendKeys("Nota Fiscal (Itens com Impostos) + Empresa/Filial");
 		estrutura.sendKeys(Keys.ENTER);
 
-		
-		
-
 		sleep(1000);
 		
 		gravar.click();
 		waitExpectElement(mostrado);
-		boolean sucesso = false;
+
 		sleep(5000);
-		sucesso = mostrado.isDisplayed();
-		
-		
-		
 		
 		biblioteca.click();
 		
@@ -201,7 +194,12 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		String texto = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div")).getText();
+		System.out.println(texto);
 
+		boolean sucesso = texto.contains("Prueba Automatizada");
+		
 		return sucesso;
 		
 		

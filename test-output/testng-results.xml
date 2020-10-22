@@ -1,73 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results total="3" passed="3" failed="0" skipped="0">
-=======
-<testng-results skipped="0" failed="0" total="4" passed="4">
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+<testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-10-18T06:29:35Z" name="Default suite" finished-at="2020-10-18T06:31:35Z" duration-ms="119632">
-=======
-  <suite name="Default suite" duration-ms="126962" started-at="2020-10-18T22:46:37Z" finished-at="2020-10-18T22:48:44Z">
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+  <suite started-at="2020-10-20T04:31:09Z" name="Default suite" finished-at="2020-10-20T04:34:32Z" duration-ms="202888">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-10-18T06:29:35Z" name="Default test" finished-at="2020-10-18T06:31:35Z" duration-ms="119632">
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar@2e385cce]" started-at="2020-10-18T00:29:35Z" name="beforeClass" finished-at="2020-10-18T00:29:54Z" duration-ms="19129" status="PASS">
-=======
-    <test name="Default test" duration-ms="126962" started-at="2020-10-18T22:46:37Z" finished-at="2020-10-18T22:48:44Z">
-      <class name="com.timp.test.BRB.Eliminar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12493" started-at="2020-10-18T16:46:37Z" finished-at="2020-10-18T16:46:49Z">
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+    <test started-at="2020-10-20T04:31:09Z" name="Default test" finished-at="2020-10-20T04:34:32Z" duration-ms="202888">
+      <class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar@2e385cce]" started-at="2020-10-19T22:31:09Z" name="beforeClass" finished-at="2020-10-19T22:31:38Z" duration-ms="28801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar@2e385cce]" started-at="2020-10-18T00:29:54Z" name="login" finished-at="2020-10-18T00:30:07Z" duration-ms="12580" status="PASS">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="login" duration-ms="7393" started-at="2020-10-18T16:46:49Z" finished-at="2020-10-18T16:46:56Z">
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar@2e385cce]" started-at="2020-10-19T22:31:38Z" name="login" finished-at="2020-10-19T22:31:56Z" duration-ms="18651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar@2e385cce]" started-at="2020-10-18T00:30:07Z" name="acessarMDR" finished-at="2020-10-18T00:30:22Z" duration-ms="14811" status="PASS">
-=======
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="brbEntrar" duration-ms="28168" started-at="2020-10-18T16:46:56Z" finished-at="2020-10-18T16:47:25Z">
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar@2e385cce]" started-at="2020-10-19T22:31:56Z" name="acessarMDR" finished-at="2020-10-19T22:32:48Z" duration-ms="51349" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar@2e385cce]" started-at="2020-10-18T00:30:22Z" name="criar" finished-at="2020-10-18T00:31:35Z" duration-ms="73057" status="PASS">
-=======
-        </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminar" duration-ms="37243" started-at="2020-10-18T16:47:25Z" finished-at="2020-10-18T16:48:02Z">
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar@2e385cce]" started-at="2020-10-19T22:32:48Z" name="criar" finished-at="2020-10-19T22:34:31Z" duration-ms="103638" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]"}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SUF121B', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Gissell\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e4e77dc37451a6ed327ea54516475b2e
+*** Element info: {Using=xpath, value=//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]"}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SUF121B', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Gissell\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e4e77dc37451a6ed327ea54516475b2e
+*** Element info: {Using=xpath, value=//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC.ProdutosSCANCCriarPO.criar(ProdutosSCANCCriarPO.java:164)
+	at com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar.criar(ProductosSCANCCriar.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar@2e385cce]" started-at="2020-10-18T00:31:35Z" name="afterClass" finished-at="2020-10-18T00:31:35Z" duration-ms="1" status="PASS">
-=======
-        </test-method> <!-- eliminar -->
-        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminarLixeira" duration-ms="37302" started-at="2020-10-18T16:48:02Z" finished-at="2020-10-18T16:48:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eliminarLixeira -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4336" started-at="2020-10-18T16:48:39Z" finished-at="2020-10-18T16:48:44Z">
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar@2e385cce]" started-at="2020-10-19T22:34:31Z" name="afterClass" finished-at="2020-10-19T22:34:32Z" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar -->
-=======
-      </class> <!-- com.timp.test.BRB.Eliminar -->
->>>>>>> branch 'master' of git@github.com:salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package com.timp.test.MDR.PrecoDeTransferencia.ParametroModeloApuracaoTP;
+package com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,17 +11,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheCriarPO;
-import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheFiltroIdPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroIDPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroIDPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModelosApuracaoTP.ParametrosModelosApuracaoTPFiltroIDPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroIDPO;
+import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.AtividadeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroIDPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModelosApuracaoTPFiltroIDPO;
 
-public class ParametroModeloApuracaoTPFiltroID extends TestBaseSteven {
+
+public class AtividadeDeTributacaoXFornecedorFiltroID extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ParametrosModelosApuracaoTPFiltroIDPO parametrosModelosApuracaoTPFiltroIDPO;
+	AtividadeDeTributacaoXFornecedorFiltroIDPO parametrosModelosApuracaoTPFiltroIDPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -29,7 +26,7 @@ public class ParametroModeloApuracaoTPFiltroID extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		parametrosModelosApuracaoTPFiltroIDPO = new ParametrosModelosApuracaoTPFiltroIDPO();
+		parametrosModelosApuracaoTPFiltroIDPO = new AtividadeDeTributacaoXFornecedorFiltroIDPO();
 
 	}
 

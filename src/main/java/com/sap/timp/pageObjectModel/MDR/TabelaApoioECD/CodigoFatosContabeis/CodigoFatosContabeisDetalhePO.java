@@ -130,7 +130,6 @@ public class CodigoFatosContabeisDetalhePO extends TestBaseFernando{
 		sucesso.add(textoDataInicioValidade1.equals(textoDataInicioValidade));
 		sucesso.add(textoDataFinalValidade1.equals(textoDataFinalValidade));
 		sucesso.add(textoActivo1.equals(textoActivo));
-		System.out.println(sucesso);
 		return sucesso;
 	}
 }

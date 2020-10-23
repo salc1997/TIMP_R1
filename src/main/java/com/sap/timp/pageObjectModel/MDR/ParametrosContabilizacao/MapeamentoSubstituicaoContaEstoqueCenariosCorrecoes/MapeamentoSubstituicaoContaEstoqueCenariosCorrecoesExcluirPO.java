@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
-
+ 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")

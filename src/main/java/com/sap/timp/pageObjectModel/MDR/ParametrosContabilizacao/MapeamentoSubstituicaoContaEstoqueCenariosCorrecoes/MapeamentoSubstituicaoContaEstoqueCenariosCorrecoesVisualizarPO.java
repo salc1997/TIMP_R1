@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO extends TestBaseSteven {
-
+ 
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
 	public WebElement parametro;
 	

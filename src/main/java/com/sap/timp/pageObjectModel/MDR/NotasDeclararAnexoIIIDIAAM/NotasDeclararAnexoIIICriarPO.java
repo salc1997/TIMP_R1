@@ -42,7 +42,7 @@ public class NotasDeclararAnexoIIICriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"presentationDanfeDate\"]/div/div/span")
 	public WebElement inputDataApresentacaoDoDanfe;
 	
-	@FindBy(xpath = "//div[(@tabindex=\"0\" and @class=\"date today\") or (@tabindex=\"0\" and @class=\"date weekend today\")]")
+	@FindBy(xpath = "//div[@tabindex=\"0\" and @class=\"date weekend today\"]")
 	public WebElement dataApresentacao;
 
 	@FindBy(xpath = "//div[@id=\"NFeKey\"]/div/div/input")

@@ -125,6 +125,7 @@ public class ParteDoCorpoAtingidaCriarPO extends TestBaseSteven{
 		
 		double idD = convertToDouble(id);
 		double idBD = convertToDouble(idB);
+		
 		//compara pra ver se o novo id criado é realmente o ultimo
 		boolean sucesso = false;
 		

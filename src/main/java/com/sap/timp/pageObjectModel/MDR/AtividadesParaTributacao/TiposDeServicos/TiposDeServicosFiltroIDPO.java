@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModelosApuracaoTP;
+package com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos;
 
 import java.util.ArrayList;
 
@@ -10,12 +10,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosModelosApuracaoTPFiltroIDPO extends TestBaseSteven {
+public class TiposDeServicosFiltroIDPO extends TestBaseSteven {
 
-	@FindBy(xpath = "//li/div/span[text()=\"Preço de Transferência\"]")
-	public WebElement precoTransferencia;
-	@FindBy(xpath = "//li/div/span[text()=\"Parâmetros Modelos de Apuração TP\"]")
-	public WebElement parametro;
+	@FindBy(xpath = "//span[text()=\"Atividades para tributação\"]")
+	public WebElement atividadesTributacao;
+	@FindBy(xpath = "//span[text()=\"Tipos de Serviços\"]")
+	public WebElement tipoServicio;
 
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement id;
@@ -28,7 +28,7 @@ public class ParametrosModelosApuracaoTPFiltroIDPO extends TestBaseSteven {
 	
 	
 
-	public ParametrosModelosApuracaoTPFiltroIDPO() {
+	public TiposDeServicosFiltroIDPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -36,9 +36,9 @@ public class ParametrosModelosApuracaoTPFiltroIDPO extends TestBaseSteven {
 	public ArrayList<Boolean> filtro() {
 
 		
-		precoTransferencia.click();
+		atividadesTributacao.click();
 		sleep(1000);
-		parametro.click();
+		tipoServicio.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

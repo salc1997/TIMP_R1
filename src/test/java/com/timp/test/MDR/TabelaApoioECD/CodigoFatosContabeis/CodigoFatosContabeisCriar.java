@@ -41,13 +41,12 @@ public class CodigoFatosContabeisCriar extends TestBaseFernando {
 
 	@Test(priority = 2)
 	public void mdrEntrar() {
-		boolean sucesso = acesarMDRPO.acessarMDR();
-		assertTrue(sucesso, "The element is not present");
+		acesarMDRPO.acessarMDR();
 	}
 
 	@Test(priority = 3)
 	public void criar() {
 		boolean sucesso = ecd.criar();
-		assertTrue(sucesso, "There is an error...");
+		assertTrue(sucesso, Criar);
 	}
 }

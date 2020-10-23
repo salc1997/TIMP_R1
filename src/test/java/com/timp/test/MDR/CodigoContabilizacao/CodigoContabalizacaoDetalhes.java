@@ -1,24 +1,27 @@
-package com.timp.test.MDR.AtivaçaoParaMunicipio;
+package com.timp.test.MDR.CodigoContabilizacao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriarPO;
+import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoDetalhesPO;
+
 
 import org.testng.annotations.BeforeClass;
 
+
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AtivaçaoParaMunicipioCriar extends TestBaseSteven {
-
+public class CodigoContabalizacaoDetalhes extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	AtivaçaoParaMunicipioCriarPO ativaçaoParaMunicipioCriarPO;
+	CodigoContabilizacaoDetalhesPO codigoContabilizacaoDetalhesPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +29,7 @@ public class AtivaçaoParaMunicipioCriar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		ativaçaoParaMunicipioCriarPO = new AtivaçaoParaMunicipioCriarPO();
+		codigoContabilizacaoDetalhesPO = new CodigoContabilizacaoDetalhesPO();
 	}
 
 	@AfterClass
@@ -48,10 +51,15 @@ public class AtivaçaoParaMunicipioCriar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void detalhes() {
 
-		boolean sucesso = ativaçaoParaMunicipioCriarPO.criar();
-		assertTrue(sucesso, semAcesso);
+		ArrayList<Boolean> sucesso = codigoContabilizacaoDetalhesPO.detalhes();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), visualizaçar);
+
+		}
 
 	}
 }

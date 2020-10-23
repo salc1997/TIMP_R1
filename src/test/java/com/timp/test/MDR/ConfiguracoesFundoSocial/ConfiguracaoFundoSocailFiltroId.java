@@ -1,24 +1,20 @@
-package com.timp.test.MDR.AtivaçaoParaMunicipio;
+package com.timp.test.MDR.ConfiguracoesFundoSocial;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditarPO;
+import com.sap.timp.pageObjectModel.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialFiltroIdPO;
 
-
-public class AtivaçaoParaMunicipioEditar extends TestBaseSteven {
-
+public class ConfiguracaoFundoSocailFiltroId extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	AtivaçaoParaMunicipioEditarPO ativaçaoParaMunicipioEditarPO;
+	ConfiguracoesFundoSocialFiltroIdPO configuracoesFundoSocialFiltroIdPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,12 +22,12 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		ativaçaoParaMunicipioEditarPO = new AtivaçaoParaMunicipioEditarPO();
+		configuracoesFundoSocialFiltroIdPO = new ConfiguracoesFundoSocialFiltroIdPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -48,14 +44,11 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void editar() {
+	public void filtroId() {
 
-		// registroDeExportaçaoEditarPO.editar();
+		boolean sucesso = configuracoesFundoSocialFiltroIdPO.filtro();
 
-		boolean sucesso = ativaçaoParaMunicipioEditarPO.editar();
-
-		assertTrue(sucesso, Editar);
+		assertTrue(sucesso, Filtros);
 
 	}
-
 }

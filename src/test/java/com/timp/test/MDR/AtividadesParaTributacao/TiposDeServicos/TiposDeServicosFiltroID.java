@@ -1,23 +1,23 @@
-package com.timp.test.MDR.CodigoContabilizacao;
+package com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoCriarPO;
-import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoCriarPO;
+import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosFiltroIDPO;
 
-public class CodigoContabilizacaoCriar extends TestBaseSteven {
 
+public class TiposDeServicosFiltroID extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	CodigoContabilizacaoCriarPO codigoContabilizacaoCriarPO;
+	TiposDeServicosFiltroIDPO tiposDeServicosFiltroIDPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,12 +25,13 @@ public class CodigoContabilizacaoCriar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		codigoContabilizacaoCriarPO = new CodigoContabilizacaoCriarPO();
+		tiposDeServicosFiltroIDPO = new TiposDeServicosFiltroIDPO();
+
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -47,13 +48,13 @@ public class CodigoContabilizacaoCriar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
-		boolean sucesso = codigoContabilizacaoCriarPO.criar();
-		// boolean text = cadastroCondicaoCriarPO.criar();
-		// assertTrue(text, Criar);
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(sucesso, semAcesso);
+	public void filtro() {
+
+		ArrayList<Boolean> sucesso = tiposDeServicosFiltroIDPO.filtro();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Filtros);
+		}
 
 	}
-
 }

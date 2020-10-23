@@ -146,6 +146,8 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		paisO.click();
 		sleep(1000);
 		
+		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Validade Até\"]");
+		
 		moedaOrdem.click();
 		sleep(1000);
 		moedaOrdemO.click();
@@ -194,6 +196,9 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 	
 		double idbD = convertToDouble(idB);
 		double idD = convertToDouble(id);
+		System.out.println(idD);
+		System.out.println(idbD);
+
 		
 		boolean sucesso = false;
 		

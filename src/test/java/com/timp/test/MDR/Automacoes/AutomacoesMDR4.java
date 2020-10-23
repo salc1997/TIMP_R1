@@ -203,7 +203,16 @@ import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluir;
 import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASFiltroID;
 import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASVisualizar;
 import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar;
+import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPDetalhes;
 import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar;
+import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluir;
+import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPFiltroID;
+import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSCriar;
+import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSDetalhes;
+import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar;
+import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir;
+import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID;
+import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -537,6 +546,21 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		RegistroRASVisualizar registroRASVisualizar;
 		RegistroRASFiltroID registroRASFiltroID;
 		RegistroRASExcluir registroRASExcluir;
+		
+	//Siscoserv > Registro RP
+		RegistroRPCriar registroRPCriar;
+		RegistroRPDetalhes registroRPDetalhes;
+		RegistroRPEditar registroRPEditar;
+		RegistroRPFiltroID registroRPFiltroID;
+		RegistroRPExcluir registroRPExcluir;
+		
+	// Siscoserv > Registro RVS
+		RegistroRVSCriar registroRVSCriar;
+		RegistroRVSDetalhes registroRVSDetalhes;
+		RegistroRVSEditar registroRVSEditar;
+		RegistroRVSExcluir registroRVSExcluir;
+		RegistroRVSFiltroID registroRVSFiltroID;
+		RegistroRVSVisualizar registroRVSVisualizar;
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
@@ -2656,6 +2680,145 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//244
+		//Siscoserv > Registro RP
+		@Test(priority = 244)
+		public void registroRPCriar() {
+			System.out.println("-------------------Siscoserv > Registro RP-------------------------");
+			registroRPCriar = new RegistroRPCriar();
+			registroRPCriar.beforeClass();
+			registroRPCriar.login();
+			registroRPCriar.acessarMDR();
+			registroRPCriar.criar();
+			registroRPCriar.afterClass();
+
+		}
+		
+		@Test(priority = 245)
+		public void registroRPEditar() {
+			registroRPEditar = new RegistroRPEditar();
+			registroRPEditar.beforeClass();
+			registroRPEditar.login();
+			registroRPEditar.acessarMDR();
+			registroRPEditar.editar();
+			registroRPEditar.afterClass();
+
+		}
+		
+		@Test(priority = 246)
+		public void registroRPDetalhes() {
+			registroRPDetalhes = new RegistroRPDetalhes();
+			registroRPDetalhes.beforeClass();
+			registroRPDetalhes.login();
+			registroRPDetalhes.acessarMDR();
+			registroRPDetalhes.detalhes();
+			registroRPDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 247)
+		public void registroRPFiltroID() {
+			registroRPFiltroID = new RegistroRPFiltroID();
+			registroRPFiltroID.beforeClass();
+			registroRPFiltroID.login();
+			registroRPFiltroID.acessarMDR();
+			registroRPFiltroID.filtroId();
+			registroRPFiltroID.afterClass();
+
+		}
+		
+		@Test(priority = 248)
+		public void registroRPExcluir() {
+			registroRPExcluir = new RegistroRPExcluir();
+			registroRPExcluir.beforeClass();
+			registroRPExcluir.login();
+			registroRPExcluir.acessarMDR();
+			registroRPExcluir.excluir();
+			registroRPExcluir.afterClass();
+			System.out.println("-------------------Siscoserv > Registro RP Fim-------------------------");
+			
+
+		}
+		
+		//251
+		//Siscoserv > Registro RVS
+		@Test(priority = 251)
+		public void registroRVSCriar() {
+			System.out.println("-------------------Siscoserv > Registro RVS-------------------------");
+			registroRVSCriar = new RegistroRVSCriar();
+			registroRVSCriar.beforeClass();
+			registroRVSCriar.login();
+			registroRVSCriar.acessarMDR();
+			registroRVSCriar.criar();
+			registroRVSCriar.afterClass();
+
+		}
+		
+		@Test(priority = 252)
+		public void registroRVSDetalhes() {
+			
+			registroRVSDetalhes = new RegistroRVSDetalhes();
+			registroRVSDetalhes.beforeClass();
+			registroRVSDetalhes.login();
+			registroRVSDetalhes.acessarMDR();
+			registroRVSDetalhes.detalhes();
+			registroRVSDetalhes.afterClass();
+
+		}
+		
+		@Test(priority = 253)
+		public void registroRVSEditar() {
+			
+			registroRVSEditar = new RegistroRVSEditar();
+			registroRVSEditar.beforeClass();
+			registroRVSEditar.login();
+			registroRVSEditar.acessarMDR();
+			registroRVSEditar.editar();
+			registroRVSEditar.afterClass();
+
+		}
+		
+		@Test(priority = 254)
+		public void registroRVSVisualizar() {
+			
+			registroRVSVisualizar = new RegistroRVSVisualizar();
+			registroRVSVisualizar.beforeClass();
+			registroRVSVisualizar.login();
+			registroRVSVisualizar.acessarMDR();
+			registroRVSVisualizar.Visualizar();
+			registroRVSVisualizar.afterClass();
+
+		}
+		
+		@Test(priority = 255)
+		public void registroRVSFiltroID() {
+			
+			registroRVSFiltroID = new RegistroRVSFiltroID();
+			registroRVSFiltroID.beforeClass();
+			registroRVSFiltroID.login();
+			registroRVSFiltroID.acessarMDR();
+			registroRVSFiltroID.filtroId();
+			registroRVSFiltroID.afterClass();
+
+		}
+		
+		@Test(priority = 256)
+		public void registroRVSExcluir() {
+			
+			registroRVSExcluir = new RegistroRVSExcluir();
+			registroRVSExcluir.beforeClass();
+			registroRVSExcluir.login();
+			registroRVSExcluir.acessarMDR();
+			registroRVSExcluir.excluir();
+			registroRVSExcluir.afterClass();
+			
+			System.out.println("-------------------Siscoserv > Registro RVS Fim-------------------------");
+			
+
+		}
+		
+		//258
+		
+		
 		
 		
 }

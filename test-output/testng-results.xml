@@ -2,107 +2,34 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="65808" started-at="2020-10-22T23:09:46Z" finished-at="2020-10-22T23:10:52Z">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-10-22T20:50:06Z" name="Default suite" finished-at="2020-10-22T20:52:06Z" duration-ms="120719">
-=======
-  <suite started-at="2020-10-22T17:56:37Z" name="Default suite" finished-at="2020-10-22T17:58:00Z" duration-ms="82736">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite name="Default suite" duration-ms="103772" started-at="2020-10-23T22:34:17Z" finished-at="2020-10-23T22:36:01Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="65808" started-at="2020-10-22T23:09:46Z" finished-at="2020-10-22T23:10:52Z">
-      <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="10958" started-at="2020-10-22T17:09:46Z" finished-at="2020-10-22T17:09:57Z">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-10-22T20:50:06Z" name="Default test" finished-at="2020-10-22T20:52:06Z" duration-ms="120719">
-      <class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar@f78a47e]" started-at="2020-10-22T17:50:06Z" name="beforeClass" finished-at="2020-10-22T17:50:20Z" duration-ms="14128" status="PASS">
-=======
-    <test started-at="2020-10-22T17:56:37Z" name="Default test" finished-at="2020-10-22T17:58:00Z" duration-ms="82736">
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:56:37Z" name="beforeClass" finished-at="2020-10-22T11:56:52Z" duration-ms="15403" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test name="Default test" duration-ms="103772" started-at="2020-10-23T22:34:17Z" finished-at="2020-10-23T22:36:01Z">
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@b62fe6d]" name="beforeClass" is-config="true" duration-ms="12437" started-at="2020-10-23T16:34:17Z" finished-at="2020-10-23T16:34:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar@f2f2cc1]" name="login" duration-ms="7700" started-at="2020-10-22T17:09:57Z" finished-at="2020-10-22T17:10:05Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar@f78a47e]" started-at="2020-10-22T17:50:20Z" name="login" finished-at="2020-10-22T17:50:28Z" duration-ms="8517" status="PASS">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:56:52Z" name="login" finished-at="2020-10-22T11:57:02Z" duration-ms="9473" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@b62fe6d]" name="login" duration-ms="6398" started-at="2020-10-23T16:34:29Z" finished-at="2020-10-23T16:34:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar@f2f2cc1]" name="acessarMDR" duration-ms="27878" started-at="2020-10-22T17:10:05Z" finished-at="2020-10-22T17:10:33Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar@f78a47e]" started-at="2020-10-22T17:50:28Z" name="acessarMDR" finished-at="2020-10-22T17:50:39Z" duration-ms="10401" status="PASS">
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:57:02Z" name="acessarMDR" finished-at="2020-10-22T11:57:13Z" duration-ms="11515" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@b62fe6d]" name="acessarMDR" duration-ms="17185" started-at="2020-10-23T16:34:36Z" finished-at="2020-10-23T16:34:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar@f2f2cc1]" name="criar" duration-ms="19256" started-at="2020-10-22T17:10:33Z" finished-at="2020-10-22T17:10:52Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar@f78a47e]" started-at="2020-10-22T17:50:39Z" name="editar" finished-at="2020-10-22T17:52:06Z" duration-ms="87577" status="PASS">
-=======
-        <test-method signature="CriarIncentivosFiscais()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:57:13Z" name="CriarIncentivosFiscais" finished-at="2020-10-22T11:57:59Z" duration-ms="45936" status="FAIL">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@b62fe6d]" name="criar" duration-ms="67734" started-at="2020-10-23T16:34:53Z" finished-at="2020-10-23T16:36:01Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="Selecionar Filial Centralizadora"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4e2b9bc12871f7ff0f0f6b4f9bf1c5af
-*** Element info: {Using=xpath, value=//input[@placeholder="Selecionar Filial Centralizadora"]}]]>
+              <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="Selecionar Filial Centralizadora"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4e2b9bc12871f7ff0f0f6b4f9bf1c5af
-*** Element info: {Using=xpath, value=//input[@placeholder="Selecionar Filial Centralizadora"]}
-	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriarPO.fatorCreditamentoCriar(FatorCreditamentoCriarPO.java:141)
-	at com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar.criar(FatorCreditamentoCriar.java:46)
+              <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa.criar(CadastroMotivosReaberturaExcluirEmMassa.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,34 +56,11 @@ Session ID: 4e2b9bc12871f7ff0f0f6b4f9bf1c5af
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- criar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-10-22T17:10:52Z" finished-at="2020-10-22T17:10:52Z">
-=======
-<<<<<<< HEAD
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar@f78a47e]" started-at="2020-10-22T17:52:06Z" name="afterClass" finished-at="2020-10-22T17:52:06Z" duration-ms="81" status="PASS">
-=======
-        </test-method> <!-- CriarIncentivosFiscais -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:57:59Z" name="afterClass" finished-at="2020-10-22T11:58:00Z" duration-ms="382" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

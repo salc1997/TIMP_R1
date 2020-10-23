@@ -3,28 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar">
-=======
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar">
         <methods>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="CriarIncentivosFiscais"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="editar"/>
+          <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

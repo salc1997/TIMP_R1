@@ -16,7 +16,6 @@ public class RegraDeReaberturaCriarPO extends TestBaseMassiel{
 	
 	//submenu
 	@FindBy(xpath = "//span[text()=\"Regra de Reabertura\"]")
-	
 	public WebElement RDR;
 	
 	@FindBy(xpath ="//*[@id=\"list\"]/div/div[1]")
@@ -58,9 +57,6 @@ public class RegraDeReaberturaCriarPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			
-		   
-		   
 		   sleep(5000);
 		   dRTPMR.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 		   

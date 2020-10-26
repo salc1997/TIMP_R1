@@ -89,6 +89,7 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 		sleep(2000);
 		
 		Integer filas= driver.findElements(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]")).size();
+
 	
 		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+filas+"]/div[3]/div")).getText();
 		

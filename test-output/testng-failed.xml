@@ -17,9 +17,17 @@
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+=======
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio">
+=======
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa">
 =======
@@ -37,29 +45,34 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
           <include name="criar"/>
 =======
           <include name="afterClass"/>
 <<<<<<< HEAD
           <include name="criar"/>
 =======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
           <include name="criar"/>
 =======
 <<<<<<< HEAD
           <include name="editar"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
           <include name="afterClass"/>
@@ -71,7 +84,11 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa -->
 =======
@@ -85,6 +102,7 @@
       </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar -->
 =======
       </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

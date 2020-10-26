@@ -1,62 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar">
-=======
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="criar"/>
-=======
           <include name="afterClass"/>
-<<<<<<< HEAD
           <include name="criar"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-          <include name="afterClass"/>
-=======
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
-<<<<<<< HEAD
-=======
-          <include name="CriarIncentivosFiscais"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

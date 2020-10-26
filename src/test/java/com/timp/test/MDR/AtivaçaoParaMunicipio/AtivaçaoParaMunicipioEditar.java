@@ -1,18 +1,20 @@
 package com.timp.test.MDR.AtivaçaoParaMunicipio;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditarPO;
-import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoEditarPO;
 
-public class AtivaçaoParaMunicipioEditar extends TestBaseEliel {
+
+public class AtivaçaoParaMunicipioEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -21,7 +23,7 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		ativaçaoParaMunicipioEditarPO = new AtivaçaoParaMunicipioEditarPO();
@@ -50,9 +52,9 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseEliel {
 
 		// registroDeExportaçaoEditarPO.editar();
 
-		String sucesso = ativaçaoParaMunicipioEditarPO.editar();
+		boolean sucesso = ativaçaoParaMunicipioEditarPO.editar();
 
-		assertEquals(sucesso, "edit", visualizaçar);
+		assertTrue(sucesso, Editar);
 
 	}
 

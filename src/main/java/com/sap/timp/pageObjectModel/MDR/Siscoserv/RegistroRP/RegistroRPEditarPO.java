@@ -100,13 +100,13 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		
 		
 		
-		String valor = numeronif.getAttribute("value");
+		String valor = numerodoregistro.getAttribute("value");
 
 		String enviar = "8";
 
-		numeronif.clear();
+		numerodoregistro.clear();
 		sleep(2000);
-		numeronif.sendKeys(enviar);
+		numerodoregistro.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -115,7 +115,7 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 
 		driver.navigate().refresh();
 		sleep(2000);
@@ -124,7 +124,7 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		
-		String novoTexto=numeronif.getAttribute("value");
+		String novoTexto=numerodoregistro.getAttribute("value");
 		
 		System.out.println(valor);
 		System.out.println(novoTexto);
@@ -133,10 +133,10 @@ public class RegistroRPEditarPO extends TestBaseEliel {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		numeronif.clear();
+		numerodoregistro.clear();
 
 		sleep(2000);
-		numeronif.sendKeys(valor);
+		numerodoregistro.sendKeys(valor);
 		
 		sleep(2000);
 		

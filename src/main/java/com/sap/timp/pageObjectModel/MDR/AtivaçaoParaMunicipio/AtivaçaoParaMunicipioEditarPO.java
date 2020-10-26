@@ -14,46 +14,18 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Ativação para Município\"]")
 	public WebElement ativaçaoparamunicipio;
 	
-	@FindBy(xpath = "//span[text()=\"Novo\"]")
-	public WebElement novomunicipio;
-	
-	@FindBy(xpath = "//div[@class=\"field3\" and @id=\"company\"]/div/div/div[2]")
-	public WebElement empresa;
-	
-	@FindBy(xpath = "//li[@id][2]")
-	public WebElement opcaoempresa;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Razão Social\"]")
-	public WebElement razaosocial;
-	
-	@FindBy(xpath = "//div[@class=\"field3\" and @id=\"uf\"]/div/div/div[2]")
-	public WebElement uf;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaouf;
-	
 	@FindBy(xpath = "//div[@class=\"field3\" and @id=\"centralizing-branch\"]/div/div/div[2]")
 	public WebElement filialcentralizadora;
 	
 	@FindBy(xpath = "//li[@id][2]")
-	public WebElement opcaofilial;
+	public WebElement filialE;
 	
-	@FindBy(xpath = "//div[@class=\"field3\" and @id=\"county\"]/div/div[2]")
-	public WebElement municipio;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaomunicipio;
-	
-	@FindBy(xpath = "//div[@class=\"field3\" and @id=\"centralized-branches\"]/div/div/div[2]")
-	public WebElement filiaiscentralizadora;
+	@FindBy(xpath = "//span[@id=\"centralizingBranch\"]")
+	public WebElement filialV;
 
-	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
-	public WebElement opcaofiliais;
-	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 
-	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
@@ -75,7 +47,7 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		ativaçaoparamunicipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -101,7 +73,9 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		opcaofilial.click();
+		String filialE1= filialE.getText();
+		System.out.println(filialE1);
+		filialE.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -139,8 +113,13 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		//System.out.println(sucesso);	
+		String filialV1 = filialV.getText();
+		System.out.println(filialV1);
+		
+		
+		
+		boolean sucesso = filialV1.contains(filialE1);
+		System.out.println(sucesso);	
 		return sucesso;
 		
 	}

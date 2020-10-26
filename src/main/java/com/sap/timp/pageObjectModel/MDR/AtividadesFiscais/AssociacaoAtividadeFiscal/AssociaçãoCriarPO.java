@@ -186,8 +186,7 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 		btnUltimaPagina.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000); rows = driver.findElements(By.
-		xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		sleep(2000); rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		  
 		boolean sucesso = false;
 		  

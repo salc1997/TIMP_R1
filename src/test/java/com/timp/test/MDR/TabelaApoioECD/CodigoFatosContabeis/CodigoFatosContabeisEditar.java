@@ -13,36 +13,37 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoFatosContabeisEditar extends TestBaseFernando{
-  LoginTC loginTC;
-  AcessarMDRPO accesarMDRPO;
-  CodigoFatosContabeisEditarPO codigoFatosContabeisEditarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationF();
-	  loginTC = new LoginTC();
-	  accesarMDRPO = new AcessarMDRPO();
-	  codigoFatosContabeisEditarPO = new CodigoFatosContabeisEditarPO();
-  }
+public class CodigoFatosContabeisEditar extends TestBaseFernando {
+	
+	LoginTC loginTC;
+	AcessarMDRPO accesarMDRPO;
+	CodigoFatosContabeisEditarPO codigoFatosContabeisEditarPO;
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void ingresarMDR() {
-	  accesarMDRPO.acessarMDR();
-  }
-  
-  @Test(priority = 2)
-  public void editarCodigoFatosContabeis() {
-	  boolean sucesso = codigoFatosContabeisEditarPO.editarCodigoFatosContabeis();
-	  assertTrue(sucesso, Editar);
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationF();
+		loginTC = new LoginTC();
+		accesarMDRPO = new AcessarMDRPO();
+		codigoFatosContabeisEditarPO = new CodigoFatosContabeisEditarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
+	public void ingresar() {
+		loginTC.login();
+	}
+
+	@Test(priority = 1)
+	public void ingresarMDR() {
+		accesarMDRPO.acessarMDR();
+	}
+
+	@Test(priority = 2)
+	public void editarCodigoFatosContabeis() {
+		boolean sucesso = codigoFatosContabeisEditarPO.editarCodigoFatosContabeis();
+		assertTrue(sucesso, Editar);
+	}
 }

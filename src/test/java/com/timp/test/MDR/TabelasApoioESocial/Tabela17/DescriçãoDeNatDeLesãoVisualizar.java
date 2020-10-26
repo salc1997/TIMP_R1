@@ -9,6 +9,10 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela17.DescriçãoDe
 
 import org.testng.annotations.BeforeClass;
 
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
 public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando{
@@ -44,6 +48,10 @@ public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando{
 
 	@Test(priority = 3)
 	public void visualizar() {
-		descriçãoDeNatDeLesãoVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = descriçãoDeNatDeLesãoVisualizarPO.visualizar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}
 }

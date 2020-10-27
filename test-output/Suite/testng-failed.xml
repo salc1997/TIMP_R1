@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="none">
-  <test name="PruebaTestNG(failed)" parallel="none">
+  <test name="BRB(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="BRB"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar">
+      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
         <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
+          <include name="novoRelatorio"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar -->
-      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="detalhes"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes -->
-      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar -->
+      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
     </classes>
-  </test> <!-- PruebaTestNG(failed) -->
+  </test> <!-- BRB(failed) -->
 </suite> <!-- Failed suite [Suite] -->

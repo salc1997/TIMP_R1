@@ -32,25 +32,15 @@ public class NovoRelatorio extends TestBaseSteven {
 		novoRelatorioPO = new NovoRelatorioPO();
 	}
 
-	/*
-	 * @AfterClass public void afterClass() { quit(); }
-	 */
-	@Test(priority = 0)
-	public void login() {
+	
+	//@AfterClass public void afterClass() { quit(); }
 
-		loginTc.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		accesarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test(groups = {"brb"})
 	public void novoRelatorio() {
-
+		
+		loginTc.login();
+		accesarBrbPO.acessar();
 		boolean sucesso = false;
 		sucesso = novoRelatorioPO.criar();
 
@@ -61,19 +51,17 @@ public class NovoRelatorio extends TestBaseSteven {
 				.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div"))
 				.getText();
 		assertTrue(texto.contains("Prueba Automatizada"), "The names don't match");
+		
+		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
+		sucesso2 = novoRelatorioPO.colunas();
 
-	}
-
-	@Test(priority = 3)
-	public void colunas() {
-
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso = novoRelatorioPO.colunas();
-
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), "The Colunms weren't added");
+		for (int i = 0; i < sucesso2.size(); i++) {
+			assertTrue(sucesso2.get(i), "The Colunms weren't added");
 		}
 
+
 	}
+
+
 
 }

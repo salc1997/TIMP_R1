@@ -213,6 +213,18 @@ import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar;
 import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir;
 import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID;
 import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -561,6 +573,26 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		RegistroRVSExcluir registroRVSExcluir;
 		RegistroRVSFiltroID registroRVSFiltroID;
 		RegistroRVSVisualizar registroRVSVisualizar;
+		
+	// Tabela 01 - Categorias De Trabalhadores
+		CategoriasDeTrabalhadoresCriar categoriasDeTrabalhadoresCriar;
+		CategoriasDeTrabalhadoresEditar categoriasDeTrabalhadoresEditar;
+		CategoriasDeTrabalhadoresVisualizar categoriasDeTrabalhadoresVisualizar;
+		CategoriasDeTrabalhadoresExcluir categoriasDeTrabalhadoresExcluir;
+	
+	// Tabela 02 - Financiamento De Apos Esp
+		FinanciamentoDeAposEspCriar financiamentoDeAposEspCriar;
+		FinanciamentoDeAposEspEditar financiamentoDeAposEspEditar;
+		FinanciamentoDeAposEspVisualizar financiamentoDeAposEspVisualizar;
+		FinanciamentoDeAposEspExcluir financiamentoDeAposEspExcluir;
+	
+	// Tabela 03 - Natureza Das Rubricas
+		NaturezaDasRubricasCriar naturezaDasRubricasCriar;
+		NaturezaDasRubricasEditar naturezaDasRubricasEditar;
+		NaturezaDasRubricasVisualizar naturezaDasRubricasVisualizar;
+		NaturezaDasRubricasExcluir naturezaDasRubricasExcluir;
+		
+		
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
@@ -2817,8 +2849,160 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//258
+		// Tabela 01 - Categorias De Trabalhadores
+		
+		@Test(priority = 258)
+		public void categoriasDeTrabalhadoresCriar() {
+			System.out.println("------------------- Tabela 01 - Categorias De Trabalhadores-------------------------");
+			categoriasDeTrabalhadoresCriar = new CategoriasDeTrabalhadoresCriar();
+			categoriasDeTrabalhadoresCriar.beforeClass();
+			categoriasDeTrabalhadoresCriar.login();
+			categoriasDeTrabalhadoresCriar.acessarMDR();
+			categoriasDeTrabalhadoresCriar.criar();
+			categoriasDeTrabalhadoresCriar.afterClass();
+
+		}
+		
+		@Test(priority = 259)
+		public void categoriasDeTrabalhadoresEditar() {
+			categoriasDeTrabalhadoresEditar = new CategoriasDeTrabalhadoresEditar();
+			categoriasDeTrabalhadoresEditar.beforeClass();
+			categoriasDeTrabalhadoresEditar.login();
+			categoriasDeTrabalhadoresEditar.acessarMDR();
+			categoriasDeTrabalhadoresEditar.editar();
+			categoriasDeTrabalhadoresEditar.afterClass();
+
+		}
+		
+		@Test(priority = 260)
+		public void categoriasDeTrabalhadoresVisualizar() {
+			categoriasDeTrabalhadoresVisualizar = new CategoriasDeTrabalhadoresVisualizar();
+			categoriasDeTrabalhadoresVisualizar.beforeClass();
+			categoriasDeTrabalhadoresVisualizar.login();
+			categoriasDeTrabalhadoresVisualizar.acessarMDR();
+			categoriasDeTrabalhadoresVisualizar.Visualizar();
+			categoriasDeTrabalhadoresVisualizar.afterClass();
+
+		}
 		
 		
+		@Test(priority = 261)
+		public void categoriasDeTrabalhadoresExcluir() {
+			categoriasDeTrabalhadoresExcluir = new CategoriasDeTrabalhadoresExcluir();
+			categoriasDeTrabalhadoresExcluir.beforeClass();
+			categoriasDeTrabalhadoresExcluir.login();
+			categoriasDeTrabalhadoresExcluir.acessarMDR();
+			categoriasDeTrabalhadoresExcluir.excluir();
+			categoriasDeTrabalhadoresExcluir.afterClass();
+			System.out.println("------------------- Tabela 01 - Categorias De Trabalhadores Fim-------------------------");
+			
+		}
 		
+		//264
+		// Tabela 02 - Financiamento De Apos Esp
 		
+		@Test(priority = 264)
+		public void financiamentoDeAposEspCriar() {
+			System.out.println("------------------- Tabela 02 - Financiamento De Apos Esp-------------------------");
+			financiamentoDeAposEspCriar = new FinanciamentoDeAposEspCriar();
+			financiamentoDeAposEspCriar.beforeClass();
+			financiamentoDeAposEspCriar.login();
+			financiamentoDeAposEspCriar.acessarMDR();
+			financiamentoDeAposEspCriar.criar();
+			financiamentoDeAposEspCriar.afterClass();
+
+		}
+		
+		@Test(priority = 265)
+		public void financiamentoDeAposEspEditar() {
+			financiamentoDeAposEspEditar = new FinanciamentoDeAposEspEditar();
+			financiamentoDeAposEspEditar.beforeClass();
+			financiamentoDeAposEspEditar.login();
+			financiamentoDeAposEspEditar.acessarMDR();
+			financiamentoDeAposEspEditar.editar();
+			financiamentoDeAposEspEditar.afterClass();
+
+		}
+		
+		@Test(priority = 266)
+		public void financiamentoDeAposEspVisualizar() {
+			financiamentoDeAposEspVisualizar = new FinanciamentoDeAposEspVisualizar();
+			financiamentoDeAposEspVisualizar.beforeClass();
+			financiamentoDeAposEspVisualizar.login();
+			financiamentoDeAposEspVisualizar.acessarMDR();
+			financiamentoDeAposEspVisualizar.Visualizar();
+			financiamentoDeAposEspVisualizar.afterClass();
+
+		}
+		
+		@Test(priority = 267)
+		public void financiamentoDeAposEspExcluir() {
+			financiamentoDeAposEspExcluir = new FinanciamentoDeAposEspExcluir();
+			financiamentoDeAposEspExcluir.beforeClass();
+			financiamentoDeAposEspExcluir.login();
+			financiamentoDeAposEspExcluir.acessarMDR();
+			financiamentoDeAposEspExcluir.excluir();
+			financiamentoDeAposEspExcluir.afterClass();
+			
+			System.out.println("------------------- Tabela 02 - Financiamento De Apos Esp Fim-------------------------");
+			
+
+		}
+		
+		//270
+		//Tabela 03 - Natureza Das Rubricas
+		
+		@Test(priority = 270)
+		public void naturezaDasRubricasCriar() {
+			System.out.println("------------------- Tabela 03 - Natureza Das Rubricas-------------------------");
+			naturezaDasRubricasCriar = new NaturezaDasRubricasCriar();
+			naturezaDasRubricasCriar.beforeClass();
+			naturezaDasRubricasCriar.login();
+			naturezaDasRubricasCriar.acessarMDR();
+			naturezaDasRubricasCriar.criar();
+			naturezaDasRubricasCriar.afterClass();
+
+		}
+		
+		@Test(priority = 271)
+		public void naturezaDasRubricasEditar() {
+		    
+			naturezaDasRubricasEditar = new NaturezaDasRubricasEditar();
+			naturezaDasRubricasEditar.beforeClass();
+			naturezaDasRubricasEditar.login();
+			naturezaDasRubricasEditar.acessarMDR();
+			naturezaDasRubricasEditar.editar();
+			naturezaDasRubricasEditar.afterClass();
+
+		}
+		
+		@Test(priority = 272)
+		public void naturezaDasRubricasVisualizar() {
+		    
+			naturezaDasRubricasVisualizar = new NaturezaDasRubricasVisualizar();
+			naturezaDasRubricasVisualizar.beforeClass();
+			naturezaDasRubricasVisualizar.login();
+			naturezaDasRubricasVisualizar.acessarMDR();
+			naturezaDasRubricasVisualizar.Visualizar();
+			naturezaDasRubricasVisualizar.afterClass();
+
+		}
+		
+		@Test(priority = 273)
+		public void naturezaDasRubricasExcluir() {
+		    
+			naturezaDasRubricasExcluir = new NaturezaDasRubricasExcluir();
+			naturezaDasRubricasExcluir.beforeClass();
+			naturezaDasRubricasExcluir.login();
+			naturezaDasRubricasExcluir.acessarMDR();
+			naturezaDasRubricasExcluir.excluir();
+			naturezaDasRubricasExcluir.afterClass();
+			System.out.println("------------------- Tabela 03 - Natureza Das Rubricas Fim-------------------------");
+			
+		}
+		
+		//276
+
+
+
 }

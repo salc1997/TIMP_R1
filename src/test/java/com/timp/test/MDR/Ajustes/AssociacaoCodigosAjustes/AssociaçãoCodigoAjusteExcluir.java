@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluirPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class AssociaçãoCodigoAjusteExcluir extends TestBaseFernando{
@@ -39,6 +42,7 @@ public class AssociaçãoCodigoAjusteExcluir extends TestBaseFernando{
   
   @Test(priority = 2)
   public void excluirAssociaçãoCodigoAjuste() {
-	  associaçãoCodigoAjusteExcluirPO.excluirAssociaçãoCodigoAjuste();
+	  boolean sucesso = associaçãoCodigoAjusteExcluirPO.excluirAssociaçãoCodigoAjuste();
+	  assertTrue(sucesso, Eliminado);
   }
 }

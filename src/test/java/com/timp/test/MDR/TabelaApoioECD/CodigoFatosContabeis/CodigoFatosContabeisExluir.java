@@ -14,6 +14,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class CodigoFatosContabeisExluir extends TestBaseFernando {
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	CodigoFatosContabeisExluirPO codigoFatosContabeisExluirPO;

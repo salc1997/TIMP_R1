@@ -9,7 +9,7 @@ import com.timp.test.BRB.*;
 public class AutomacoesBrbTest extends TestBaseSteven {
 	LoginBRB loginTest;
 	BRBAcessar brbAcessar;
-	paginacion paginacion;
+	Paginacion paginacion;
 	ReordenarColuna reordenarColuna;
 	FiltrosAvançados filtrosAvanaçados;
 	NovoRelatorio novoRelatirio;
@@ -73,7 +73,7 @@ public class AutomacoesBrbTest extends TestBaseSteven {
 
 		System.out.println("-------------------Paginação-------------------------");
 
-		paginacion = new paginacion();
+		paginacion = new Paginacion();
 
 		paginacion.beforeClass();
 

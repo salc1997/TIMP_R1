@@ -131,7 +131,7 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		
 		name.sendKeys("Teste Atividade");
 		sleep(1000);
-		descricao.sendKeys("Prueba Atividade text");
+		descricao.sendKeys("Teste de Atividade Fiscal");
 		sleep(1000);
 		
 		diaE.click();

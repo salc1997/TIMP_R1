@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela11;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -6,50 +6,36 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
-import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoCriarPO;
 
-import net.bytebuddy.agent.builder.AgentBuilder.RedefinitionStrategy.BatchAllocator.ForTotal;
+public class CompatibilidadeEnCatTrabCriarPO extends TestBaseCristhian{
 
-public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 	
 	
-	@FindBy(xpath = "//span[text()=\"Taxas de Atualização\"]")
-	public WebElement taxasActualizacao;
 	
-	@FindBy(xpath = "//span[text()=\"Alíquotas de Taxa de Atualização\"]")
-	public WebElement aliquotas;
+	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
+	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//button/span[contains(text(),\"Novo\")]")
+	@FindBy(xpath = "//span[text()=\"Tabela 11 - Compatibilidade en Cat. Trab.\"]")
+	public WebElement tabela11;
+	
+	@FindBy(xpath = "//button/span[contains(text(),\"Nova Compatibilidade em Cat. Trab\")]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
 	public WebElement codigo;
 	
-	@FindBy(xpath = "//*[@id=\"form-builder\"]/div/div[2]/table/tr[1]/td[2]/div/div/div[2]/div/div[1]/div[2]/input")
-	public WebElement valor;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Preencher Classificação Tributária\")]")
+	public WebElement clasificacion;
 	
-	@FindBy(xpath = "//*[@id=\"form-builder\"]/div/div[2]/table/tr[3]/td[1]/div/div/div[2]/div/div[1]/div[2]/input")
-	public WebElement valorPeriodo;
+	@FindBy(xpath = "//*[@id=\"form-container\"]/div/div[2]/table/tr[4]/td/div/div[2]/div/label/span")
+	public WebElement selccion1;
 	
+	@FindBy(xpath = "//*[@id=\"form-container\"]/div/div[2]/table/tr[5]/td/div/div[2]/div/label/span")
+	public WebElement selccion2;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher o Fator Acumulado\")]")
-	public WebElement fatorAcum;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar Validade De\")]")
+	public WebElement validade;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher a Taxa\")]")
-	public WebElement taxa;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Início da Taxa\")]")
-	public WebElement inicioTaxa;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Fim da Taxa\")]")
-	public WebElement finTaxa;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Divulgação da Taxa\")]")
-	public WebElement dataDivulgacion;	
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Atualização da Taxa\")]")
-	public WebElement dataActualizacion;	
-
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
@@ -76,16 +62,16 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 	*/
 	
 	
-	public AliquotasDeTaxaDeActualizacaoCriarPO() {
+	public CompatibilidadeEnCatTrabCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		sleep(2000);
-		taxasActualizacao.click();
+		tabelaApoio.click();
 		sleep(2000);
-		aliquotas.click();
+		tabela11.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -105,39 +91,20 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("7107");
+		codigo.sendKeys("017");
+		sleep(1000);
+		clasificacion.sendKeys("Test de QA para excluir 1");
 		sleep(1000);
 		
-		valor.sendKeys("987");
+		selccion1.click();
 		sleep(1000);
 		
-		fatorAcum.sendKeys("765");
-		sleep(1000);
-		
-		taxa.sendKeys("432");
-		sleep(1000);
-		
-		valorPeriodo.sendKeys("3318");
+		selccion2.click();
 		sleep(1000);
 		
 		String data = fechaActual();
-		inicioTaxa.sendKeys(data);
+		validade.sendKeys(data);
 		sleep(1000);
-		
-		String data1 = fechaManana();
-		finTaxa.sendKeys(data1);
-		sleep(1000);
-		
-		String data2 = fechaManana();
-		dataDivulgacion.sendKeys(data2);
-		sleep(1000);
-		
-		String data3 = fechaManana();
-		dataActualizacion.sendKeys(data3);
-		sleep(1000);
-		
-		
-
 		
 		sleep(2000);
 		gravar.click();
@@ -161,11 +128,8 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 		
 		sleep(2000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer Totalfila = rows;
-		Totalfila = rows - 1;
-		Integer rFinal = 0; 
-		rFinal = rows - Totalfila;
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rFinal+"]/div[3]/div")).getText();
+		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir3(idB);
 		sleep(2000);
 		System.out.println("ID: "+id);
@@ -186,7 +150,4 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 		return sucesso;
 		
 	}
-		
-
-
 }

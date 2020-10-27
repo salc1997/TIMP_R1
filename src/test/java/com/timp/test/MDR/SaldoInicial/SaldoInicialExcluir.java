@@ -1,11 +1,12 @@
-package com.timp.test.MDR.IncentivosFiscais;
+package com.timp.test.MDR.SaldoInicial;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisCriarPO;
+import com.sap.timp.pageObjectModel.MDR.SaldoInicial.SaldoInicialCriarPO;
+import com.sap.timp.pageObjectModel.MDR.SaldoInicial.SaldoInicialExcluirPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,21 +14,20 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class IncentivosFiscaisCriar extends TestBaseKenssy {
+public class SaldoInicialExcluir extends TestBaseKenssy{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	IncentivosFiscaisCriarPO incentivosFiscaisCriarPO;
+	SaldoInicialExcluirPO saldoInicialExcluirPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationKen();
 	  loginTC = new LoginTC();
 	  acessarMDRPO = new AcessarMDRPO();
-	  incentivosFiscaisCriarPO = new IncentivosFiscaisCriarPO();
+	  saldoInicialExcluirPO =  new SaldoInicialExcluirPO();
   }
-  
 
-  	@AfterClass
+  @AfterClass
 	public void afterClass() {
 		driver.close();
 	}
@@ -40,24 +40,15 @@ public class IncentivosFiscaisCriar extends TestBaseKenssy {
 
 	@Test(priority = 1)
 	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
 	}
 
 	@Test(priority = 2)
-	  public void CriarIncentivosFiscais() {
-		//incentivosFiscaisCriarPO.CriarIncentivosFiscais();
+  public void ExcluirSaldoInicial() {
+		//saldoInicialExcluirPO.ExcluirSaldoInicial();
 		
-		
-		boolean sucesso = incentivosFiscaisCriarPO.CriarIncentivosFiscais();
+		boolean sucesso = saldoInicialExcluirPO.ExcluirSaldoInicial();
 
-		// teste pra conferir se o resultado mostrado é igual
-		assertTrue(sucesso, Criar);
-
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(incentivosFiscaisCriarPO.mostrar.isDisplayed(), semAcesso);
-		
-	  }
-	
+		assertTrue(sucesso, Eliminado);
+  }
 }

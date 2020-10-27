@@ -438,11 +438,13 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ModeloDeApuracaoTPEditar modeloDeApuracaoTPEditar;
 	ModeloDeApuracaoTPExcluir modeloDeApuracaoTPExcluir;
 
+
 	// Preço de Transferencia > Parametros Modelo De Apuracao TP
 	ParametrosModeloDeApuracaoTPCriar parametrosModeloDeApuracaoTPCriar;
 	ParametrosModeloDeApuracaoTPEditar parametrosModeloDeApuracaoTPEditar;
 	ParametrosModeloDeApuracaoTPDetalhes parametrosModeloDeApuracaoTPDetalhes;
 	ParametrosModeloDeApuracaoTPExcluir parametrosModeloDeApuracaoTPExcluir;
+	
 
 	//// Preço de Transferencia > Parametros para TP
 	ParametrosParaTPCriar parametrosParaTPCriar;

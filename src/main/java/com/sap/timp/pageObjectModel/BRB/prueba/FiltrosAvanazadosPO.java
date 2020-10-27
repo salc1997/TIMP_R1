@@ -29,12 +29,6 @@ public class FiltrosAvanazadosPO extends TestBaseSteven {
 	@FindBy(xpath = "//li[text()=\"Relatórios Dinâmicos\"]")
 	public WebElement opcao;
 	
-
-	
-	
-		
-	
-	
 	public FiltrosAvanazadosPO() {
 	
 		PageFactory.initElements(driver, this);
@@ -43,9 +37,6 @@ public class FiltrosAvanazadosPO extends TestBaseSteven {
 	
 	public List<String> filtro() {
 		
-		SessionId session = ((RemoteWebDriver) driver).getSessionId();
-		
-		System.out.println(session);
 		filtro.click();
 		
 		attributeToBeXpath("//div[@id=\"filter-type\"]/div","class","base-select ");

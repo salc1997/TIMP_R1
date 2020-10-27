@@ -4,7 +4,6 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriarPO;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -40,6 +39,8 @@ import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
+import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.*;
+
 
 public class AutomacoesMDR5 extends TestBaseSteven {
 
@@ -101,6 +102,9 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	MunicipioCriar municipioCriar;
 	MunicipioVisualizar municipioVisualizar;
 	MunicipioExcluir municipioExcluir;
+	
+	
+	
 
 	// 0
 
@@ -493,7 +497,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	// municipios Fiscais > municipios Fiscais
 
-	@Test(priority = 20)
+	@Test(priority = 42)
 	public void municipioCriar() {
 
 		System.out.println("-------------------municipio Fiscal > municipio Fiscal-------------------------");
@@ -507,7 +511,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 43)
 	public void municipioVisualizar() {
 
 		municipioVisualizar = new MunicipioVisualizar();
@@ -519,7 +523,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 44)
 	public void municipioExcluir() {
 
 		municipioExcluir = new MunicipioExcluir();
@@ -536,7 +540,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	// cadastroFornecedorcers Fiscais > cadastroFornecedorcers Fiscais
 
-	@Test(priority = 20)
+	@Test(priority = 48)
 	public void cadastroFornecedorcerCriar() {
 
 		System.out.println(
@@ -551,7 +555,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 21)
+	@Test(priority = 49)
 	public void cadastroFornecedorcerEditar() {
 
 		cadastroFornecedorEditar = new CadastroFornecedorEditar();
@@ -563,7 +567,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 50)
 	public void cadastroFornecedorcerVisualizar() {
 
 		cadastroFornecedorVisualizar = new CadastroFornecedorVisualizar();
@@ -575,7 +579,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 51)
 	public void cadastroFornecedorcerExcluir() {
 
 		cadastroFornecedorExcluir = new CadastroFornecedorExcluir();
@@ -588,5 +592,11 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		System.out.println(
 				"-------------------cadastroFornecedorcer Fiscal > cadastroFornecedorcer Fiscal Fin-------------------------");
 	}
+
+	
+	
+	
+	
+	
 
 }

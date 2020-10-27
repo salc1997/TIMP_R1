@@ -1,12 +1,11 @@
-package com.timp.test.BRB.testNg;
+package com.timp.test.BRB;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseParalelo2;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.prueba.PaginacionPO;
+import com.sap.timp.pageObjectModel.BRB.PaginacionPO;
 
 import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
@@ -24,12 +23,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
- 
-public class paginacion extends TestBaseSteven {
+
+public class Paginacion extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	PaginacionPO paginacionPO;
+	PaginacionPO paginacionOP;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -37,12 +36,14 @@ public class paginacion extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		paginacionPO = new PaginacionPO();
+		paginacionOP = new PaginacionPO();
 	}
 
-	/*
-	 * @AfterClass public void afterClass() { driver.close(); }
-	 */
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 1)
 	public void login() {
 
@@ -59,19 +60,19 @@ public class paginacion extends TestBaseSteven {
 	@Test(priority = 3)
 	public void paginacion() {
 
-		String paginaS = paginacionPO.paginacionPS();
+		String paginaS = paginacionOP.paginacionPS();
 		assertEquals(paginaS, "2", paginaSeguiente);
 
-		String paginaA = paginacionPO.paginacionPA();
+		String paginaA = paginacionOP.paginacionPA();
 		assertEquals(paginaA, "1", paginaAnterior);
 
-		String paginaF = paginacionPO.paginacionPF();
-		assertEquals(paginaF, paginacionPO.totalPAges.getAttribute("value"), paginaFinal);
+		String paginaF = paginacionOP.paginacionPF();
+		assertEquals(paginaF, paginacionOP.totalPAges.getAttribute("value"), paginaFinal);
 
-		String paginaI = paginacionPO.paginacionPI();
+		String paginaI = paginacionOP.paginacionPI();
 		assertEquals(paginaI, "1", paginaInicial);
 
-		String paginaB = paginacionPO.numero();
+		String paginaB = paginacionOP.numero();
 		assertEquals(paginaB, "1", paginaInserida);
 
 	}

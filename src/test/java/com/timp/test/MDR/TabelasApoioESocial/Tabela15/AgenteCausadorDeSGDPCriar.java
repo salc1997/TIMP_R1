@@ -18,6 +18,7 @@ public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeSGDPCriarPO agenteCausadorDeSGDPCriarPO;
+	
   @BeforeClass
   public void beforeClass() {
 

@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisCriarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class IncentivosFiscaisCriar extends TestBaseKenssy {
@@ -44,7 +47,16 @@ public class IncentivosFiscaisCriar extends TestBaseKenssy {
 
 	@Test(priority = 2)
 	  public void CriarIncentivosFiscais() {
-		incentivosFiscaisCriarPO.CriarIncentivosFiscais();
+		//incentivosFiscaisCriarPO.CriarIncentivosFiscais();
+		
+		
+		boolean sucesso = incentivosFiscaisCriarPO.CriarIncentivosFiscais();
+
+		// teste pra conferir se o resultado mostrado é igual
+		assertTrue(sucesso, Criar);
+
+		// Teste pra conferir se conseguiu acesssar o sistema
+		assertTrue(incentivosFiscaisCriarPO.mostrar.isDisplayed(), semAcesso);
 		
 	  }
 	

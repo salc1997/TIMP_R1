@@ -1,31 +1,27 @@
-package com.timp.test.MDR.TabelasApoioESocial.Tabela15;
+package com.timp.test.MDR.TaxasDeActualizacao;
 
 import org.testng.annotations.Test;
-
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPCriarPO;
-
+import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoCriarPO;
 import org.testng.annotations.BeforeClass;
-
 import static org.testng.Assert.assertTrue;
-
 import org.testng.annotations.AfterClass;
 
-public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian{
+public class AliquotasDeTaxaDeActualizacaoCriar extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	AgenteCausadorDeSGDPCriarPO agenteCausadorDeSGDPCriarPO;
-	
+	AliquotasDeTaxaDeActualizacaoCriarPO aliquotasDeTaxaDeActualizacaoCriarPO;
   @BeforeClass
   public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		agenteCausadorDeSGDPCriarPO = new AgenteCausadorDeSGDPCriarPO();
+		aliquotasDeTaxaDeActualizacaoCriarPO = new AliquotasDeTaxaDeActualizacaoCriarPO();
   }
 
   @AfterClass
@@ -48,7 +44,7 @@ public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian{
 	@Test(priority = 2)
 	public void criar() {
 
-		boolean sucesso = agenteCausadorDeSGDPCriarPO.criar();
+		boolean sucesso = aliquotasDeTaxaDeActualizacaoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
 

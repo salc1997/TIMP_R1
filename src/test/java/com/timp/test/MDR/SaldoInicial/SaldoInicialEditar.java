@@ -1,11 +1,11 @@
-package com.timp.test.MDR.IncentivosFiscais;
+package com.timp.test.MDR.SaldoInicial;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisCriarPO;
+import com.sap.timp.pageObjectModel.MDR.SaldoInicial.SaldoInicialEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,21 +13,22 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class IncentivosFiscaisCriar extends TestBaseKenssy {
+public class SaldoInicialEditar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	IncentivosFiscaisCriarPO incentivosFiscaisCriarPO;
+	SaldoInicialEditarPO saldoInicialEditarPO;
 	
+ 
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationKen();
 	  loginTC = new LoginTC();
 	  acessarMDRPO = new AcessarMDRPO();
-	  incentivosFiscaisCriarPO = new IncentivosFiscaisCriarPO();
+	  saldoInicialEditarPO = new SaldoInicialEditarPO();
+	  
   }
-  
 
-  	@AfterClass
+  @AfterClass
 	public void afterClass() {
 		driver.close();
 	}
@@ -40,24 +41,15 @@ public class IncentivosFiscaisCriar extends TestBaseKenssy {
 
 	@Test(priority = 1)
 	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
 	}
 
 	@Test(priority = 2)
-	  public void CriarIncentivosFiscais() {
-		//incentivosFiscaisCriarPO.CriarIncentivosFiscais();
+  public void editarSaldo() {
 		
+		boolean sucesso = saldoInicialEditarPO.editarSaldoInicial();
+		assertTrue(sucesso, Editar);
 		
-		boolean sucesso = incentivosFiscaisCriarPO.CriarIncentivosFiscais();
+  }
 
-		// teste pra conferir se o resultado mostrado é igual
-		assertTrue(sucesso, Criar);
-
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(incentivosFiscaisCriarPO.mostrar.isDisplayed(), semAcesso);
-		
-	  }
-	
 }

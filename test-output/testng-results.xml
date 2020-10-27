@@ -1,101 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="2" failed="1" skipped="0">
+<testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-22T17:56:37Z" name="Default suite" finished-at="2020-10-22T17:58:00Z" duration-ms="82736">
+  <suite started-at="2020-10-27T06:53:45Z" name="Default suite" finished-at="2020-10-27T06:55:21Z" duration-ms="96252">
     <groups>
     </groups>
-    <test started-at="2020-10-22T17:56:37Z" name="Default test" finished-at="2020-10-22T17:58:00Z" duration-ms="82736">
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:56:37Z" name="beforeClass" finished-at="2020-10-22T11:56:52Z" duration-ms="15403" status="PASS">
+    <test started-at="2020-10-27T06:53:45Z" name="Default test" finished-at="2020-10-27T06:55:21Z" duration-ms="96252">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa@5026735c]" started-at="2020-10-27T00:53:45Z" name="beforeClass" finished-at="2020-10-27T00:54:04Z" duration-ms="19133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:56:52Z" name="login" finished-at="2020-10-22T11:57:02Z" duration-ms="9473" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa@5026735c]" started-at="2020-10-27T00:54:04Z" name="ingresar" finished-at="2020-10-27T00:54:12Z" duration-ms="8338" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:57:02Z" name="acessarMDR" finished-at="2020-10-22T11:57:13Z" duration-ms="11515" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa@5026735c]" started-at="2020-10-27T00:54:12Z" name="mdrEntrar" finished-at="2020-10-27T00:54:41Z" duration-ms="28187" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="CriarIncentivosFiscais()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:57:13Z" name="CriarIncentivosFiscais" finished-at="2020-10-22T11:57:59Z" duration-ms="45936" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id][1]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7b005a7fde74edeffa95ea0459881b1c
-*** Element info: {Using=xpath, value=//li[@id][1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id][1]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7b005a7fde74edeffa95ea0459881b1c
-*** Element info: {Using=xpath, value=//li[@id][1]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisCriarPO.CriarIncentivosFiscais(IncentivosFiscaisCriarPO.java:147)
-	at com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar.CriarIncentivosFiscais(IncentivosFiscaisCriar.java:47)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- mdrEntrar -->
+        <test-method signature="excluirMasaMotivosDesligamento()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa@5026735c]" started-at="2020-10-27T00:54:41Z" name="excluirMasaMotivosDesligamento" finished-at="2020-10-27T00:55:17Z" duration-ms="36163" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CriarIncentivosFiscais -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@1672fe87]" started-at="2020-10-22T11:57:59Z" name="afterClass" finished-at="2020-10-22T11:58:00Z" duration-ms="382" status="PASS">
+        </test-method> <!-- excluirMasaMotivosDesligamento -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa@5026735c]" started-at="2020-10-27T00:55:17Z" name="afterClass" finished-at="2020-10-27T00:55:21Z" duration-ms="4413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

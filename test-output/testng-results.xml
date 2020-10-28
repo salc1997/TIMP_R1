@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-27T20:28:12Z" name="Default suite" finished-at="2020-10-27T20:29:24Z" duration-ms="71344">
+  <suite started-at="2020-10-28T15:06:24Z" name="Default suite" finished-at="2020-10-28T15:08:12Z" duration-ms="107986">
     <groups>
     </groups>
-    <test started-at="2020-10-27T20:28:12Z" name="Default test" finished-at="2020-10-27T20:29:24Z" duration-ms="71344">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:12Z" name="beforeClass" finished-at="2020-10-27T14:28:25Z" duration-ms="12307" status="PASS">
+    <test started-at="2020-10-28T15:06:24Z" name="Default test" finished-at="2020-10-28T15:08:12Z" duration-ms="107986">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar@7cbd9d24]" started-at="2020-10-28T09:06:24Z" name="beforeClass" finished-at="2020-10-28T09:06:40Z" duration-ms="16041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:25Z" name="login" finished-at="2020-10-27T14:28:32Z" duration-ms="7172" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar@7cbd9d24]" started-at="2020-10-28T09:06:40Z" name="login" finished-at="2020-10-28T09:06:48Z" duration-ms="8314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:32Z" name="acessarMDR" finished-at="2020-10-27T14:28:45Z" duration-ms="13443" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar@7cbd9d24]" started-at="2020-10-28T09:06:48Z" name="acessarMDR" finished-at="2020-10-28T09:06:58Z" duration-ms="9480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:45Z" name="visualizar" finished-at="2020-10-27T14:29:24Z" duration-ms="38397" status="PASS">
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar@7cbd9d24]" started-at="2020-10-28T09:06:58Z" name="visualizar" finished-at="2020-10-28T09:08:08Z" duration-ms="69814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:29:24Z" name="afterClass" finished-at="2020-10-27T14:29:24Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar@7cbd9d24]" started-at="2020-10-28T09:08:08Z" name="afterClass" finished-at="2020-10-28T09:08:12Z" duration-ms="4318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

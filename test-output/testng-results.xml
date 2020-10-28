@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
@@ -31,3 +32,74 @@
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-27T20:33:06Z" name="Default suite" finished-at="2020-10-27T20:34:27Z" duration-ms="80972">
+    <groups>
+    </groups>
+    <test started-at="2020-10-27T20:33:06Z" name="Default test" finished-at="2020-10-27T20:34:27Z" duration-ms="80972">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir@f78a47e]" started-at="2020-10-27T17:33:06Z" name="beforeClass" finished-at="2020-10-27T17:33:18Z" duration-ms="11775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir@f78a47e]" started-at="2020-10-27T17:33:18Z" name="login" finished-at="2020-10-27T17:33:26Z" duration-ms="7465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir@f78a47e]" started-at="2020-10-27T17:33:26Z" name="acessarMDR" finished-at="2020-10-27T17:33:48Z" duration-ms="21921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir@f78a47e]" started-at="2020-10-27T17:33:48Z" name="excluir" finished-at="2020-10-27T17:34:27Z" duration-ms="39753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir@f78a47e]" started-at="2020-10-27T17:34:27Z" name="afterClass" finished-at="2020-10-27T17:34:27Z" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-27T20:28:12Z" name="Default suite" finished-at="2020-10-27T20:29:24Z" duration-ms="71344">
+    <groups>
+    </groups>
+    <test started-at="2020-10-27T20:28:12Z" name="Default test" finished-at="2020-10-27T20:29:24Z" duration-ms="71344">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:12Z" name="beforeClass" finished-at="2020-10-27T14:28:25Z" duration-ms="12307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:25Z" name="login" finished-at="2020-10-27T14:28:32Z" duration-ms="7172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:32Z" name="acessarMDR" finished-at="2020-10-27T14:28:45Z" duration-ms="13443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:28:45Z" name="visualizar" finished-at="2020-10-27T14:29:24Z" duration-ms="38397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar@7cbd9d24]" started-at="2020-10-27T14:29:24Z" name="afterClass" finished-at="2020-10-27T14:29:24Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

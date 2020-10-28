@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela02;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela03;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,21 +7,23 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class FinanciamentoDeAposEspCriarPO extends TestBaseEliel{
-	
+public class NaturezaDasRubricasCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela 02 - Financiamento de Apos. Esp.\"]")
-	public WebElement tabela02;
+	@FindBy(xpath = "//span[text()=\"Tabela 03 - Natureza das Rúbricas\"]")
+	public WebElement tabela03;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Financiamento da Aposent. Especial\"]")
+	@FindBy(xpath = "//span[text()=\"Nova Natureza das Rubricas\"]")
 	public WebElement novo;
 	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Código\"]")
 	public WebElement codigo;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Nome da Natureza da Rúbrica\"]")
+	public WebElement natureza;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
 	public WebElement descricao;
@@ -42,7 +44,7 @@ public class FinanciamentoDeAposEspCriarPO extends TestBaseEliel{
 	public WebElement siguiente;
 	
 	
-	public FinanciamentoDeAposEspCriarPO() {
+	public NaturezaDasRubricasCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -51,7 +53,7 @@ public class FinanciamentoDeAposEspCriarPO extends TestBaseEliel{
 		sleep(2000);
 		tabelaApoio.click();
 		sleep(2000);
-		tabela02.click();
+		tabela03.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -74,6 +76,8 @@ public class FinanciamentoDeAposEspCriarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		codigo.sendKeys("07");
+		sleep(1000);
+		natureza.sendKeys("Natureza");
 		sleep(1000);
 		descricao.sendKeys("Teste da Descrição");
 		sleep(1000);

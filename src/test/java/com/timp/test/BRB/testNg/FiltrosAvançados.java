@@ -6,15 +6,12 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.prueba.FiltrosAvanazadosPO;
-import com.sap.timp.pageObjectModel.BRB.PaginacionPO;
+
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class FiltrosAvançados extends TestBaseSteven {
@@ -32,26 +29,15 @@ public class FiltrosAvançados extends TestBaseSteven {
 		filtrosAvanazadosPO = new FiltrosAvanazadosPO();
 
 	}
-	/*
-	 * @AfterClass public void afterClass(){ //driver.close(); }
-	 */
+	
+	//@AfterClass public void afterClass(){ driver.close(); }
+	 
 
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test(groups = {"brb"})
 	public void filtrosAvanzados() {
+		
+		loginTC.login();
+		acessarBrbPO.acessar();
 
 		ArrayList<String> datos = new ArrayList<String>();
 

@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CodigoFatosContabeisDetalhe extends TestBaseFernando {
+
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CodigoFatosContabeisDetalhePO codigoFatosContabeisDetalhePO;

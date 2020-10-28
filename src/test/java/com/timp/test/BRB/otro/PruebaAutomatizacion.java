@@ -10,7 +10,7 @@ import com.timp.test.BRB.*;
 public class PruebaAutomatizacion extends TestBaseSteven {
 	LoginBRB loginTest;
 	BRBAcessar brbAcessar;
-	paginacion paginacion;
+	Paginacion paginacion;
 	ReordenarColuna reordenarColuna;
 	FiltrosAvançados filtrosAvanaçados;
 	NovoRelatorio novoRelatirio;
@@ -60,7 +60,7 @@ public class PruebaAutomatizacion extends TestBaseSteven {
 
 	@Test
 	public void paginacion() {
-		paginacion = new paginacion();
+		paginacion = new Paginacion();
 
 		paginacion.beforeClass();
 		paginacion.login();

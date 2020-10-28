@@ -3,6 +3,7 @@ package com.sap.timp.base;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
+import java.util.Hashtable;
 import java.util.Locale;
 
 import org.openqa.selenium.WebDriver;
@@ -17,7 +18,7 @@ public class TestBaseKenssy extends TestBaseSteven{
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(td1);
+		driver.get(tc2);
 		return driver;
 	}
 
@@ -51,6 +52,23 @@ public class TestBaseKenssy extends TestBaseSteven{
 		
 		String anioString = String.valueOf(anio);
 		return anioString;
+	}
+	
+	public String getCodeMonthByMonth(String mes){
+	    Hashtable<String, String> meses = new Hashtable<String, String>();
+        meses.put("Janeiro","01");
+        meses.put("Fevereiro","02");
+        meses.put("Março","03");
+        meses.put("Abril","04");
+        meses.put("Maio","05");
+        meses.put("Junho","06");
+        meses.put("Julho","07");
+        meses.put("Agosto","08");
+        meses.put("Setembro","09");
+        meses.put("Outubro","10");
+        meses.put("Novembro","11");
+        meses.put("Dezembro","12");
+        return meses.get(mes);
 	}
 
 }

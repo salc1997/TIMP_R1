@@ -105,16 +105,16 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("01234");
+		codigo.sendKeys("7107");
 		sleep(1000);
 		
-		valor.sendKeys("3318");
+		valor.sendKeys("987");
 		sleep(1000);
 		
-		fatorAcum.sendKeys("3318");
+		fatorAcum.sendKeys("765");
 		sleep(1000);
 		
-		taxa.sendKeys("3318");
+		taxa.sendKeys("432");
 		sleep(1000);
 		
 		valorPeriodo.sendKeys("3318");

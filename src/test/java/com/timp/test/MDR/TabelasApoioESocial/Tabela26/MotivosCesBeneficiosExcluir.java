@@ -3,36 +3,34 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela26;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.SequenciaAcesso.SequenciaCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosEliminarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluirPO;
 
 import org.testng.annotations.BeforeClass;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
+public class MotivosCesBeneficiosExcluir extends TestBaseFernando {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MotivosCesBeneficiosEliminarPO motivosCesBeneficiosEliminarPO;
-
+	MotivosCesBeneficiosExcluirPO motivosCesBeneficiosExcluirPO;
+	
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		motivosCesBeneficiosEliminarPO = new MotivosCesBeneficiosEliminarPO();
+		//motivosCesBeneficiosEliminarPO = new MotivosCesBeneficiosEliminarPO();
+		motivosCesBeneficiosExcluirPO = new MotivosCesBeneficiosExcluirPO();
 	}
 
 	@AfterClass
@@ -56,8 +54,8 @@ public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
 	@Test(priority = 2)
 	public void excluir() {
 
-		boolean sucesso = motivosCesBeneficiosEliminarPO.eliminar();
-
+		//boolean sucesso = motivosCesBeneficiosEliminarPO.eliminar();
+		boolean sucesso = motivosCesBeneficiosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 
 	}

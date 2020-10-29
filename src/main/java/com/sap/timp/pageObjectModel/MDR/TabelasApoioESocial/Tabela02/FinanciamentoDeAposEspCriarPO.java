@@ -75,7 +75,7 @@ public class FinanciamentoDeAposEspCriarPO extends TestBaseEliel{
 		
 		codigo.sendKeys("07");
 		sleep(1000);
-		descricao.sendKeys("Teste da Deescrição");
+		descricao.sendKeys("Teste da Descrição");
 		sleep(1000);
 		
 		String data = fechaActual();

@@ -117,6 +117,18 @@ import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar;
 import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir;
 import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID;
 import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -478,6 +490,9 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		RegistroRVSExcluir registroRVSExcluir;
 		RegistroRVSFiltroID registroRVSFiltroID;
 		RegistroRVSVisualizar registroRVSVisualizar;
+		
+	
+		
 	// --------------------------------------------------------------------------------------------------
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de codigos de
@@ -2869,10 +2884,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//258
+<<<<<<< HEAD
 		
 
 
 		
 		
 		
+=======
+	
+		//276
+
+
+
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 }

@@ -81,7 +81,7 @@ public class RegraDeReaberturaCriarPO extends TestBaseMassiel{
 		   descripcion.sendKeys("Automatizado");
 		   descripcion.sendKeys(Keys.ENTER);
 		   
-		   fecha.sendKeys("23/03/2020");
+		   fecha.sendKeys(fechaActual());
 		   fecha.sendKeys(Keys.ENTER);
 		   
 		   
@@ -109,7 +109,7 @@ public class RegraDeReaberturaCriarPO extends TestBaseMassiel{
 			}
 			  
 			String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-			idInserir4(idB);
+			idInserir1(idB);
 			  
 			sleep(2000); 
 			System.out.println(id); 

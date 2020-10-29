@@ -2884,18 +2884,9 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//258
-<<<<<<< HEAD
-		
 
-
-		
-		
-		
-=======
 	
 		//276
 
 
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 }

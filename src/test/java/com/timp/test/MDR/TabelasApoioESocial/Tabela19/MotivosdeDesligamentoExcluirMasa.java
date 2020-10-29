@@ -9,6 +9,9 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela19.MotivosdeDe
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class MotivosdeDesligamentoExcluirMasa extends TestBaseKenssy {
@@ -42,7 +45,13 @@ public class MotivosdeDesligamentoExcluirMasa extends TestBaseKenssy {
 	
 	@Test(priority = 2)
 	public void excluirMasaMotivosDesligamento() {
-		motivosDesligamentoExcluirPO.excluirMasaMotivosDesligamento();
+		
+		
+		boolean sucesso = motivosDesligamentoExcluirPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+		boolean sucesso2 = motivosDesligamentoExcluirPO.excluirMasaMotivosDesligamento();
+		assertTrue(sucesso2, Eliminado);
 		
 	}
 

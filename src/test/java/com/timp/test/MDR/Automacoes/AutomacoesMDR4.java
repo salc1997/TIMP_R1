@@ -1,137 +1,33 @@
 package com.timp.test.MDR.Automacoes;
 
 import org.testng.annotations.Test;
-import org.yaml.snakeyaml.scanner.Constant;
+
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosDetalhesPO;
-import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFEditarPO;
-import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditarPO;
-import com.timp.test.ADM.LoginBRB;
-import com.timp.test.BRB.*;
-import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar;
-import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes;
-import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar;
-import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir;
-import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesVisualizar;
-import com.timp.test.MDR.Antecipacao.AntecipacaoCriar;
-import com.timp.test.MDR.Antecipacao.AntecipacaoEditar;
-import com.timp.test.MDR.Antecipacao.AntecipacaoEliminar;
-import com.timp.test.MDR.Antecipacao.AntecipacaoFiltros;
-import com.timp.test.MDR.Antecipacao.AntecipacaoVisualizar;
-import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriar;
-import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioDetalhes;
-import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditar;
-import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioExcluir;
-import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioVisualizar;
-import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar;
-import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar;
-import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar;
-import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro;
-import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar;
-import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeCriar;
-import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeEditar;
-import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeVisualizar;
+
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhes;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditar;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluir;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosVisualizar;
-import com.timp.test.MDR.CEP.Bairro.BairroCriar;
-import com.timp.test.MDR.CEP.Bairro.BairroEditar;
-import com.timp.test.MDR.CEP.Bairro.BairroEliminar;
-import com.timp.test.MDR.CEP.Bairro.BairroFiltros;
-import com.timp.test.MDR.CEP.Bairro.BairroVisualizar;
-import com.timp.test.MDR.CEP.Logradouro.LogradouroCriar;
-import com.timp.test.MDR.CEP.Logradouro.LogradouroEditar;
-import com.timp.test.MDR.CEP.Logradouro.LogradouroExcluir;
-import com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros;
-import com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar;
-import com.timp.test.MDR.CEP.Municipio.MunicipioCriar;
-import com.timp.test.MDR.CEP.Municipio.MunicipioEditar;
-import com.timp.test.MDR.CEP.Municipio.MunicipioEliminar;
-import com.timp.test.MDR.CEP.Municipio.MunicipioFiltros;
-import com.timp.test.MDR.CEP.Municipio.MunicipioVisualizar;
-import com.timp.test.MDR.CadastroCondiçao.*;
-import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoCriar;
-import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar;
-import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoFiltros;
-import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoVisualizar;
-import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoVisualizar;
-import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoCriar;
-import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoEditar;
-import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoExcluir;
-import com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar;
-import com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir;
-import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar;
-import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar;
-import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir;
-import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados;
-import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar;
-import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar;
-import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoEditar;
-import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir;
-import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoFiltros;
-import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar;
-import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar;
-import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros;
-import com.timp.test.MDR.Centralizacao.Tributos.TributosCriar;
-import com.timp.test.MDR.Centralizacao.Tributos.TributosDetalhes;
-import com.timp.test.MDR.Centralizacao.Tributos.TributosEditar;
-import com.timp.test.MDR.Centralizacao.Tributos.TributosExcluir;
-import com.timp.test.MDR.Centralizacao.Tributos.TributosVisualizar;
-import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar;
-import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar;
-import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar;
-import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir;
-import com.timp.test.MDR.CodigoReceita.CodigoReceitaCriar;
-import com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes;
-import com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar;
-import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluir;
-import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
-import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
-import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
-import com.timp.test.MDR.ContratoIOF.ContratoIOFEditar;
-import com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir;
-import com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar;
-import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoCriar;
-import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoDetalhes;
-import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoEditar;
-import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluir;
-import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoVisualizar;
-import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarCriar;
-import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarDetalhes;
-import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditar;
-import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarExcluir;
-import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizar;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorEditar;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoCriar;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhes;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoEditar;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir;
-import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoVisualizar;
+
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriar;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhes;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraEditar;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluir;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizar;
-import com.timp.test.MDR.Empresas.EmpresaEditar;
-import com.timp.test.MDR.Empresas.EmpresasFiltros;
-import com.timp.test.MDR.Empresas.EmpresasVisualizar;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir;
 import com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar;
 import com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar;
 import com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir;
-import com.timp.test.MDR.Filiais.FiliaisEditar;
-import com.timp.test.MDR.Filiais.FiliaisVisualizar;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPFiltroId;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametroModeloApuracaoTPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar;
@@ -139,34 +35,42 @@ import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.Param
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCICriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVACriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVADetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICEditar;
@@ -346,7 +250,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeOutrosCreditosEditar tabelaDeOutrosCreditosEditar;
 	TabelaDeOutrosCreditosExcluir tabelaDeOutrosCreditosExcluir;
 	TabelaDeOutrosCreditosVisualizar tabelaDeOutrosCreditosVisualizar;
-
+	
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos
 
 	TabelaDeProdutosCriar tabelaDeProdutosCriar;
@@ -425,6 +329,8 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ModeloDeApuracaoTPDetalhes modeloDeApuracaoTPDetalhes;
 	ModeloDeApuracaoTPEditar modeloDeApuracaoTPEditar;
 	ModeloDeApuracaoTPExcluir modeloDeApuracaoTPExcluir;
+	ModeloDeApuracaoTPFiltroId modeloDeApuracaoTPFiltroId;
+
 
 
 	// Preço de Transferencia > Parametros Modelo De Apuracao TP
@@ -432,12 +338,13 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ParametrosModeloDeApuracaoTPEditar parametrosModeloDeApuracaoTPEditar;
 	ParametrosModeloDeApuracaoTPDetalhes parametrosModeloDeApuracaoTPDetalhes;
 	ParametrosModeloDeApuracaoTPExcluir parametrosModeloDeApuracaoTPExcluir;
-	
+	ParametroModeloApuracaoTPFiltroID parametroModeloApuracaoTPFiltroID;
 
 	//// Preço de Transferencia > Parametros para TP
 	ParametrosParaTPCriar parametrosParaTPCriar;
 	ParametrosParaTPEditar parametrosParaTPEditar;
 	ParametrosParaTPExcluir parametrosParaTPExcluir;
+	ParametrosParaTPFiltroID parametrosParaTPFiltroID;
 
 	//// Registro ECAC
 
@@ -445,7 +352,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		RegistroECACCriar registroECACCriar;
 		RegistroECACEditar registroECACEditar;
 		RegistroECACExcluir registroECACExcluir;
-		
+		 
 	//Atividades Para Tributacao > Tipos De Servicos
 		TiposDeServicosCriar tiposDeServicosCriar;
 		TiposDeServicosDetalhes tiposDeServicosDetalhes;
@@ -458,17 +365,21 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ValoresParaMetodoPVVDetalhes valoresParaMetodoPVVDetalhes;
 		ValoresParaMetodoPVVEditar valoresParaMetodoPVVEditar;
 		ValoresParaMetodoPVVExcluir valoresParaMetodoPVVExcluir;
+		ValoresParaMetodoPVVFiltroID valoresParaMetodoPVVFiltroID;
+		
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX
 		ValoresParaMetodoPVEXCriar valoresParaMetodoPVEXCriar;
 		ValoresParaMetodoPVEXDetalhes valoresParaMetodoPVEXDetalhes;
 		ValoresParaMetodoPVEXEditar valoresParaMetodoPVEXEditar;
 		ValoresParaMetodoPVEXExcluir valoresParaMetodoPVEXExcluir;
+		ValoresParaMetodoPVEXFiltroID valoresParaMetodoPVEXFiltroID;
 		
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX
 		ValoresParaMetodoPECEXCriar valoresParaMetodoPECEXCriar;
 		ValoresParaMetodoPECEXDetalhes valoresParaMetodoPECEXDetalhes;
 		ValoresParaMetodoPECEXEditar valoresParaMetodoPECEXEditar;
 		ValoresParaMetodoPECEXExcluir valoresParaMetodoPECEXExcluir;
+		ValoresParaMetodoPECEXFiltroID valoresParaMetodoPECEXFiltroID;
 	
 	//Reinf > Processos Adm/Judiciais
 		ProcessosAdmJudiciaisCriar processosAdmJudiciaisCriar;
@@ -487,19 +398,22 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ValoresParaMetodoCAPCriar valoresParaMetodoCAPCriar;
 		ValoresParaMetodoCAPDetalhes valoresParaMetodoCAPDetalhes;
 		ValoresParaMetodoCAPEditar valoresParaMetodoCAPEditar;
-		ValoresParaMetodoCAPExcluir valoresParaMetodoCAPExcluir;	
+		ValoresParaMetodoCAPExcluir valoresParaMetodoCAPExcluir;
+		ValoresParaMetodoCAPFiltroID valoresParaMetodoCAPFiltroID;
 		
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA
 		ValoresParaMetodoPVACriar valoresParaMetodoPVACriar;
 		ValoresParaMetodoPVADetalhes valoresParaMetodoPVADetalhes;
 		ValoresParaMetodoPVAEditar valoresParaMetodoPVAEditar;
 		ValoresParaMetodoPVAExcluir valoresParaMetodoPVAExcluir;
+		ValoresParaMetodoPVAFiltroID valoresParaMetodoPVAFiltroID;
 		
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL
 		ValoresParaMetodoCPLCriar valoresParaMetodoCPLCriar;
 		ValoresParaMetodoCPLEditar valoresParaMetodoCPLEditar;
 		ValoresParaMetodoCPLDetalhes valoresParaMetodoCPLDetalhes;
 		ValoresParaMetodoCPLExcluir valoresParaMetodoCPLExcluir;
+		ValoresParaMetodoCPLFiltroID valoresParaMetodoCPLFiltroID;
 	
 		
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI
@@ -507,6 +421,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		ValoresParaMetodoPCIEditar valoresParaMetodoPCIEditar;
 		ValoresParaMetodoPCIDetalhes valoresParaMetodoPCIDetalhes;
 		ValoresParaMetodoPCIExcluir valoresParaMetodoPCIExcluir;
+		ValoresParaMetodoPCIFiltroID valoresParaMetodoPCIFiltroID;
 	
 	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PIC
 		ValoresParaMetodoPICCriar valoresParaMetodoPICCriar;
@@ -1656,8 +1571,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		modeloDeApuracaoTPEditar.afterClass();
 
 	}
-
+	
 	@Test(priority = 112)
+	public void modeloDeApuracaoFiltroId() {
+
+		modeloDeApuracaoTPFiltroId = new ModeloDeApuracaoTPFiltroId();
+		modeloDeApuracaoTPFiltroId.beforeClass();
+		modeloDeApuracaoTPFiltroId.login();
+		modeloDeApuracaoTPFiltroId.acessarMDR();
+		modeloDeApuracaoTPFiltroId.filtroId();
+		modeloDeApuracaoTPFiltroId.afterClass();
+
+	}
+
+	@Test(priority = 113)
 	public void modeloDeApuracaoTPExcluir() {
 
 		modeloDeApuracaoTPExcluir = new ModeloDeApuracaoTPExcluir();
@@ -1709,8 +1636,21 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosModeloDeApuracaoTPEditar.afterClass();
 
 	}
-
+	
 	@Test(priority = 119)
+	public void parametroModeloApuracaoTPFiltroID() {
+
+		parametroModeloApuracaoTPFiltroID = new ParametroModeloApuracaoTPFiltroID();
+		parametroModeloApuracaoTPFiltroID.beforeClass();
+		parametroModeloApuracaoTPFiltroID.login();
+		parametroModeloApuracaoTPFiltroID.acessarMDR();
+		parametroModeloApuracaoTPFiltroID.filtro();
+		parametroModeloApuracaoTPFiltroID.afterClass();
+
+	}
+
+
+	@Test(priority = 120)
 	public void parametrosModeloDeApuracaoTPExcluir() {
 
 		parametrosModeloDeApuracaoTPExcluir = new ParametrosModeloDeApuracaoTPExcluir();
@@ -1749,8 +1689,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosParaTPEditar.afterClass();
 
 	}
-
+	
 	@Test(priority = 125)
+	public void parametrosParaTPFiltroId() {
+		
+		parametrosParaTPFiltroID = new ParametrosParaTPFiltroID();
+		parametrosParaTPFiltroID.beforeClass();
+		parametrosParaTPFiltroID.login();
+		parametrosParaTPFiltroID.acessarMDR();
+		parametrosParaTPFiltroID.filtroId();
+		parametrosParaTPFiltroID.afterClass();
+
+	}
+
+	@Test(priority = 126)
 	public void parametrosParaTPExcluir() {
 		parametrosParaTPExcluir = new ParametrosParaTPExcluir();
 		parametrosParaTPExcluir.beforeClass();
@@ -1899,8 +1851,22 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoPVVEditar.afterClass();
 
 	}
+	
 
 	@Test(priority = 144)
+	public void valoresParaMetodoPVVFiltroID() {
+
+		valoresParaMetodoPVVFiltroID = new ValoresParaMetodoPVVFiltroID();
+		valoresParaMetodoPVVFiltroID.beforeClass();
+		valoresParaMetodoPVVFiltroID.login();
+		valoresParaMetodoPVVFiltroID.acessarMDR();
+		valoresParaMetodoPVVFiltroID.filtro();
+		valoresParaMetodoPVVFiltroID.afterClass();
+
+	}
+
+
+	@Test(priority = 145)
 	public void valoresParaMetodoPVVExcluir() {
 
 		valoresParaMetodoPVVExcluir = new ValoresParaMetodoPVVExcluir();
@@ -1953,8 +1919,22 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoPVEXEditar.afterClass();
 
 	}
+	
 
 	@Test(priority = 152)
+	public void valoresParaMetodoPVEXFiltroID() {
+
+		valoresParaMetodoPVEXFiltroID = new ValoresParaMetodoPVEXFiltroID();
+		valoresParaMetodoPVEXFiltroID.beforeClass();
+		valoresParaMetodoPVEXFiltroID.login();
+		valoresParaMetodoPVEXFiltroID.acessarMDR();
+		valoresParaMetodoPVEXFiltroID.filtro();
+		valoresParaMetodoPVEXFiltroID.afterClass();
+
+	}
+
+
+	@Test(priority = 153)
 	public void valoresParaMetodoPVEXExcluir() {
 
 		valoresParaMetodoPVEXExcluir = new ValoresParaMetodoPVEXExcluir();
@@ -2006,8 +1986,22 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoPECEXEditar.afterClass();
 
 	}
-
+	
+	//Preço de Transferência > Valores para Método / Valores para Método PECEX
 	@Test(priority = 159)
+	public void valoresParaMetodoPECEXFiltroID() {
+
+		valoresParaMetodoPECEXFiltroID = new ValoresParaMetodoPECEXFiltroID();
+		valoresParaMetodoPECEXFiltroID.beforeClass();
+		valoresParaMetodoPECEXFiltroID.login();
+		valoresParaMetodoPECEXFiltroID.acessarMDR();
+		valoresParaMetodoPECEXFiltroID.filtro();
+		valoresParaMetodoPECEXFiltroID.afterClass();
+
+	}
+
+
+	@Test(priority = 160)
 	public void valoresParaMetodoPECEXExcluir() {
 
 		valoresParaMetodoPECEXExcluir = new ValoresParaMetodoPECEXExcluir();
@@ -2172,8 +2166,22 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoCAPDetalhes.afterClass();
 
 	}
-
+	
+	
 	@Test(priority = 179)
+	public void valoresParaMetodoCAPFiltroID() {
+
+		valoresParaMetodoCAPFiltroID = new ValoresParaMetodoCAPFiltroID();
+		valoresParaMetodoCAPFiltroID.beforeClass();
+		valoresParaMetodoCAPFiltroID.login();
+		valoresParaMetodoCAPFiltroID.acessarMDR();
+		valoresParaMetodoCAPFiltroID.filtro();
+		valoresParaMetodoCAPFiltroID.afterClass();
+
+	}
+
+
+	@Test(priority = 180)
 	public void valoresParaMetodoCAPExcluir() {
 		valoresParaMetodoCAPExcluir = new ValoresParaMetodoCAPExcluir();
 		valoresParaMetodoCAPExcluir.beforeClass();
@@ -2225,8 +2233,22 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoPVADetalhes.afterClass();
 
 	}
+	
 
 	@Test(priority = 186)
+	public void valoresParaMetodoPVAFiltroID() {
+
+		valoresParaMetodoPVAFiltroID = new ValoresParaMetodoPVAFiltroID();
+		valoresParaMetodoPVAFiltroID.beforeClass();
+		valoresParaMetodoPVAFiltroID.login();
+		valoresParaMetodoPVAFiltroID.acessarMDR();
+		valoresParaMetodoPVAFiltroID.filtro();
+		valoresParaMetodoPVAFiltroID.afterClass();
+
+	}
+
+
+	@Test(priority = 187)
 	public void valoresParaMetodoPVAExcluir() {
 
 		valoresParaMetodoPVAExcluir = new ValoresParaMetodoPVAExcluir();
@@ -2279,7 +2301,21 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 		}
 		
+		
 		@Test(priority = 193)
+		public void valoresParaMetodoCPLFiltroID() {
+
+			valoresParaMetodoCPLFiltroID = new ValoresParaMetodoCPLFiltroID();
+			valoresParaMetodoCPLFiltroID.beforeClass();
+			valoresParaMetodoCPLFiltroID.login();
+			valoresParaMetodoCPLFiltroID.acessarMDR();
+			valoresParaMetodoCPLFiltroID.filtro();
+			valoresParaMetodoCPLFiltroID.afterClass();
+
+		}
+
+		
+		@Test(priority = 194)
 		public void valoresParaMetodoCPLExcluir() {
 			valoresParaMetodoCPLExcluir = new ValoresParaMetodoCPLExcluir();
 			valoresParaMetodoCPLExcluir.beforeClass();
@@ -2327,7 +2363,21 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 		}
 		
+
 		@Test(priority = 200)
+		public void valoresParaMetodoPCIFiltroID() {
+
+			valoresParaMetodoPCIFiltroID = new ValoresParaMetodoPCIFiltroID();
+			valoresParaMetodoPCIFiltroID.beforeClass();
+			valoresParaMetodoPCIFiltroID.login();
+			valoresParaMetodoPCIFiltroID.acessarMDR();
+			valoresParaMetodoPCIFiltroID.filtro();
+			valoresParaMetodoPCIFiltroID.afterClass();
+
+		}
+
+		
+		@Test(priority = 201)
 		public void valoresParaMetodoPCIExcluir() {
 			valoresParaMetodoPCIExcluir = new ValoresParaMetodoPCIExcluir();
 			valoresParaMetodoPCIExcluir.beforeClass();
@@ -2820,6 +2870,8 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		
 		//258
 		
+
+
 		
 		
 		

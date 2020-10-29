@@ -139,10 +139,6 @@ public class CompatibilidadeEntreLotacaoCriarPO extends TestBaseSteven{
 		return sucesso;
 		
 		
-		
-		
-		
-		
 	}
 	
 

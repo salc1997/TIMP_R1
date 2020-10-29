@@ -2,6 +2,7 @@ package com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros;
 
 import static org.testng.Assert.assertTrue;
 
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -9,7 +10,7 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriaPO;
-
+ 
 public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 
 	LoginTC loginTC;
@@ -24,9 +25,9 @@ public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		relacionamentoEntreQuadrosCriaPO = new RelacionamentoEntreQuadrosCriaPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
+	
+	@AfterClass public void afterClass(){ driver.close(); }
+	
 
 	@Test(priority = 0)
 	public void login() {

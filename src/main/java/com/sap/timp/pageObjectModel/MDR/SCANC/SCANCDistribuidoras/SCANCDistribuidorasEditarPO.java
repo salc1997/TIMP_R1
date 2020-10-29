@@ -18,6 +18,9 @@ public class SCANCDistribuidorasEditarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement ultimaPagina;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Nome\"]")
+	public WebElement empresa;
+	
 	@FindBy(xpath = "//div[@class=\"action-button\"]")
 	public WebElement botonMenu;
 	
@@ -41,7 +44,7 @@ public class SCANCDistribuidorasEditarPO extends TestBaseMassiel{
 		
 	}
 
-        public void  Editar() {
+        public boolean Editar() {
 
 		
 		sleep(2000);
@@ -69,34 +72,69 @@ public class SCANCDistribuidorasEditarPO extends TestBaseMassiel{
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		actionsMoveToElementElement(menu);
+		
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-	    
-		attributeToBeXpath("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(2000);
 		
-	  	String dataInicioVigenciaValorNuevo = fechaActual();
-	  	dataVigencia.clear(); // Limpio la fecha actual que tiene guardada
-	  	dataVigencia.sendKeys(dataInicioVigenciaValorNuevo); // Le envio la nueva fecha a editar	
-		System.out.println(dataInicioVigenciaValorNuevo); // Imprimo la fecha que se va editar el nuevo valor
+		attributoNotToBeEmptyElement(empresa, "value");
+	  	sleep(2000);
+	  	
+	  	
 		
-		sleep(2000);
-		Gravar.click();
-		sleep(2000);
+		String valor = empresa.getAttribute("value");
+		System.out.println(valor);
+		String enviar = "Test25";
+		
+
+		sleep(1000);
+		empresa.clear();
+
+		sleep(1000);
+	    empresa.sendKeys(enviar);
+        
+	    Gravar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
 		Sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		driver.navigate().refresh();
+		sleep(3000);
+		attributoNotToBeEmptyElement(empresa, "value");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String nuevoTexto = empresa.getAttribute("value");
+		System.out.println(valor);
+		System.out.println(nuevoTexto);
+		boolean sucesso = nuevoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		empresa.clear();
+		sleep(2000);
+		
 		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(1000);
+		empresa.sendKeys(valor);
 
-
-
-
-	  
-
-
+		Gravar.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+			 
+		Sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+			
+		return sucesso;
 		
      }
 

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseMassiel;
 
 public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseFernando{		
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-updateRates\"]")
@@ -135,7 +136,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseFernando{
 		boolean sucesso = false;
 		  
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText(); 
-		idInserir4(idB);
+		idInserir3(idB);
 		  
 		sleep(2000); 
 		System.out.println(idRegistro); 
@@ -154,4 +155,6 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseFernando{
 		  
 		return sucesso;		
 	}
+	
+
 }

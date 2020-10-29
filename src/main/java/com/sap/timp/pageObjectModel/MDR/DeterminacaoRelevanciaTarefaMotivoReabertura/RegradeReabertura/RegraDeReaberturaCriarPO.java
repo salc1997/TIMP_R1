@@ -81,7 +81,7 @@ public class RegraDeReaberturaCriarPO extends TestBaseMassiel{
 		   descripcion.sendKeys("Automatizado");
 		   descripcion.sendKeys(Keys.ENTER);
 		   
-		   fecha.sendKeys("23/03/2020");
+		   fecha.sendKeys(fechaActual());
 		   fecha.sendKeys(Keys.ENTER);
 		   
 		   

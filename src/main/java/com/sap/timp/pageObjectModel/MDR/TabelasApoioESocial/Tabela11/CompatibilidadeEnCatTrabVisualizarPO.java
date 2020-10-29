@@ -75,56 +75,56 @@ public class CompatibilidadeEnCatTrabVisualizarPO extends TestBaseFernando{
 	public WebElement validadeAte;
 	
 	// Datos visualizar
-		@FindBy(xpath = "//div[contains(@class, \"code_0_0\")]/div/div[2]/div/div/div[2]/input")
-		public WebElement codigo1;
-		
-		@FindBy(xpath = "//div[contains(@class, \"classificationTax_0_1\")]/div/div[2]/div/div/div[2]/input")
-		public WebElement clasificacaoTributaria1;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType01_0_3\")]/div/div/input")
-		public WebElement tipo011;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType02_0_4\")]/div/div/input")
-		public WebElement tipo021;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType03_0_5\")]/div/div/input")
-		public WebElement tipo031;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType04_0_6\")]/div/div/input")
-		public WebElement tipo041;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType05_0_7\")]/div/div/input")
-		public WebElement tipo051;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType06_0_8\")]/div/div/input")
-		public WebElement tipo061;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType07_0_9\")]/div/div/input")
-		public WebElement tipo071;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType08_0_10\")]/div/div/input")
-		public WebElement tipo081;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType09_0_11\")]/div/div/input")
-		public WebElement tipo091;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType10_0_12\")]/div/div/input")
-		public WebElement tipo101;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType21_0_13\")]/div/div/input")
-		public WebElement tipo211;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType24_0_14\")]/div/div/input")
-		public WebElement tipo241;
-		
-		@FindBy(xpath = "//div[contains(@class, \"taxCreditType90_0_15\")]/div/div/input")
-		public WebElement tipo901;
-		
-		@FindBy(xpath = "//div[contains(@class, \"effectiveDateFrom_0_17\")]/div/div/input")
-		public WebElement validadeDe1;
-		
-		@FindBy(xpath = "//div[contains(@class, \"effectiveDateTo_0_18\")]/div/div/input")
-		public WebElement validadeAte1;
+	@FindBy(xpath = "//div[contains(@class, \"code_0_0\")]/div/div[2]/div/div/div[2]/input")
+	public WebElement codigo1;
+	
+	@FindBy(xpath = "//div[contains(@class, \"classificationTax_0_1\")]/div/div[2]/div/div/div[2]/input")
+	public WebElement clasificacaoTributaria1;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType01_0_3\")]/div/div/input")
+	public WebElement tipo011;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType02_0_4\")]/div/div/input")
+	public WebElement tipo021;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType03_0_5\")]/div/div/input")
+	public WebElement tipo031;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType04_0_6\")]/div/div/input")
+	public WebElement tipo041;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType05_0_7\")]/div/div/input")
+	public WebElement tipo051;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType06_0_8\")]/div/div/input")
+	public WebElement tipo061;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType07_0_9\")]/div/div/input")
+	public WebElement tipo071;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType08_0_10\")]/div/div/input")
+	public WebElement tipo081;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType09_0_11\")]/div/div/input")
+	public WebElement tipo091;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType10_0_12\")]/div/div/input")
+	public WebElement tipo101;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType21_0_13\")]/div/div/input")
+	public WebElement tipo211;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType24_0_14\")]/div/div/input")
+	public WebElement tipo241;
+	
+	@FindBy(xpath = "//div[contains(@class, \"taxCreditType90_0_15\")]/div/div/input")
+	public WebElement tipo901;
+	
+	@FindBy(xpath = "//div[contains(@class, \"effectiveDateFrom_0_17\")]/div/div/input")
+	public WebElement validadeDe1;
+	
+	@FindBy(xpath = "//div[contains(@class, \"effectiveDateTo_0_18\")]/div/div/input")
+	public WebElement validadeAte1;
 	
 	public CompatibilidadeEnCatTrabVisualizarPO() {
 		PageFactory.initElements(driver, this);

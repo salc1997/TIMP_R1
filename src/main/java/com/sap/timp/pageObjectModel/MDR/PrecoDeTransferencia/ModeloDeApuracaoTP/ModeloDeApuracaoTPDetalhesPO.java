@@ -35,6 +35,7 @@ public class ModeloDeApuracaoTPDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	//DATOS DEL DETALLE
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
 	public WebElement id;
 	

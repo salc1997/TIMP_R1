@@ -22,6 +22,7 @@ import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriar;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioDetalhes;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditar;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioExcluir;
+import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioFiltroID;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioVisualizar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar;
@@ -97,6 +98,7 @@ import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.Li
 import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarFiltroId;
 import com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes;
@@ -147,6 +149,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	AtivaçaoParaMunicipioDetalhes ativaçaoParaMunicipioDetalhes;
 	AtivaçaoParaMunicipioVisualizar ativaçaoParaMunicipioVisualizar;
 	AtivaçaoParaMunicipioExcluir ativaçaoParaMunicipioExcluir;
+	AtivaçaoParaMunicipioFiltroID ativaçaoParaMunicipioFiltroID;
 
 	// Atividades Fiscais > Atividades Fiscais
 
@@ -273,6 +276,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	LimiteDeCreditoAUtilizarEditar limiteDeCreditoAUtilizarEditar;
 	LimiteDeCreditoAUtilizarExcluir limiteDeCreditoAUtilizarExcluir;
 	LimiteDeCreditoAUtilizarVisualizar limiteDeCreditoAUtilizarVisualizar;
+	LimiteDeCreditoAUtilizarFiltroId limiteDeCreditoAUtilizarFiltroId;
 
 	// Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
 	UtilizacaoDosCreditosEmPeriodoAnteriorCriar utilizacaoDosCreditosEmPeriodoAnteriorCriar;
@@ -523,6 +527,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		ativaçaoParaMunicipioVisualizar.afterClass();
 
 	}
+	
+	@Test(priority = 17)
+	public void ativacaoParaMunicipioFiltroID() {
+
+		ativaçaoParaMunicipioFiltroID = new AtivaçaoParaMunicipioFiltroID();
+		ativaçaoParaMunicipioFiltroID.beforeClass();
+		ativaçaoParaMunicipioFiltroID.login();
+		ativaçaoParaMunicipioFiltroID.acessarMDR();
+		ativaçaoParaMunicipioFiltroID.filtro();
+		ativaçaoParaMunicipioFiltroID.afterClass();
+
+	}
+
 
 	@Test(priority = 18)
 	public void ativacaoParaMunicipioDetalhes() {
@@ -1576,6 +1593,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		limiteDeCreditoAUtilizarDetalhes.afterClass();
 
 	}
+	
+	@Test(priority = 22)
+	public void limiteDeCreditoAUtilizarFiltroID() {
+
+		limiteDeCreditoAUtilizarFiltroId = new LimiteDeCreditoAUtilizarFiltroId();
+		limiteDeCreditoAUtilizarFiltroId.beforeClass();
+		limiteDeCreditoAUtilizarFiltroId.login();
+		limiteDeCreditoAUtilizarFiltroId.acessarMDR();
+		limiteDeCreditoAUtilizarFiltroId.filtroId();
+		limiteDeCreditoAUtilizarFiltroId.afterClass();
+
+	}
+
 
 	@Test(priority = 97)
 	public void limiteDeCreditoAUtilizarExcluir() {

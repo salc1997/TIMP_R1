@@ -279,8 +279,6 @@ public class ValoresParaMetodoPICExcluirEmMasaPO extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000); 
 		
 		//rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		

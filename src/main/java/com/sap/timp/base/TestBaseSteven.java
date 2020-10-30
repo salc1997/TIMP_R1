@@ -43,7 +43,7 @@ public class TestBaseSteven {
 	public WebDriver initialization() {
 
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 
 		
 		//ChromeOptions options = new ChromeOptions();
@@ -72,7 +72,8 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+
+		driver.get(tc2);	
 
 		return driver;
 	}
@@ -477,5 +478,25 @@ public class TestBaseSteven {
 	public String Detalhes = "As informações não são as esperadas";
 	
 	public String Atualizar = "Não foi possivel atualizar os registros";
-
+	
+	
+	//BCB
+	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
+	public String Acessar = "Erro ao tentar acessar ao componente";
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

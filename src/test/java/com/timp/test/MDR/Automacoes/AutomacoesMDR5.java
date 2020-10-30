@@ -4,6 +4,7 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirPO;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -36,10 +37,29 @@ import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
+import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
+import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar;
+import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.*;
+import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
+import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar;
+import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFCriar;
 
 
 public class AutomacoesMDR5 extends TestBaseSteven {
@@ -103,9 +123,45 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	MunicipioVisualizar municipioVisualizar;
 	MunicipioExcluir municipioExcluir;
 	
+	//Preço de Transferência > Commoditie para TP
+	CommoditieParaTPFiltroID commoditieParaTPFiltroID;
+	
+	//Preço de Transferência > Definição de Vinculação
+	DefinicaoVinculacaoFiltroID definicaoVinculacaoFiltroID;
+	
+	//SCANC > Relacionamento entre Quadros
+	RelacionamentoEntreQuadrosCriar relacionamentoEntreQuadrosCriar;
+	RelacionamentoEntreQuadrosEditar relacionamentoEntreQuadrosEditar;
+	RelacionamentoEntreQuadrosExcluir relacionamentoEntreQuadrosExcluir;
+	
+	//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
+	
+	ParteDoCorpoAtingidaCriar parteDoCorpoAtingidaCriar;
+	ParteDoCorpoAtingidaEditar parteDoCorpoAtingidaEditar;
+	ParteDoCorpoAtingidaExcluir parteDoCorpoAtingidaExcluir;
+	ParteDoCorpoAtingidaVisualizar parteDoCorpoAtingidaVisualizar;
 	
 	
-
+	//Tabelas de Apoio E-SOCIAL > Tabela 14 - Agente Causador de Acidente
+	
+	AgenteCausadorDeAcidenteCriar agenteCausadorDeAcidenteCriar;
+	AgenteCausadorDeAcidenteEditar agenteCausadorDeAcidenteEditar;
+	AgenteCausadorDeAcidenteExcluir agenteCausadorDeAcidenteExcluir;
+	AgenteCausadorDeAcidenteVisualizar agenteCausadorDeAcidenteVisualizar;
+	
+	
+	//Tabelas de Apoio E-SOCIAL > Tabela 12 - Compatibilidade entre Lotação
+	
+	CompatibilidadeEntreLotacaoCriar compatibilidadeEntreLotacaoCriar;
+	CompatibilidadeEntreLotacaoEditar compatibilidadeEntreLotacaoEditar;
+	CompatibilidadeEntreLotacaoExcluir compatibilidadeEntreLotacaoExcluir;
+	CompatibilidadeEntreLotacaoVisualizar compatibilidadeEntreLotacaoVisualizar;
+	
+	//Siscoserv > Registro RF
+	RegistroRFCriar registroRFCriar;
+	
+	
+	
 	// 0
 
 	// Determinação de Relevância de Tarefa por Motivo de Reabertura > Cadastro de
@@ -592,11 +648,271 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		System.out.println(
 				"-------------------cadastroFornecedorcer Fiscal > cadastroFornecedorcer Fiscal Fin-------------------------");
 	}
+	
+	//55
+	
+	//Preço de Transferência > Commoditie para TP
+	@Test(priority = 55)
+	public void commoditieParaTPFiltroID() {
+		
+		System.out.println("-------------------Preço de Transferência > Commoditie para TP-------------------------");
+
+		commoditieParaTPFiltroID = new CommoditieParaTPFiltroID();
+		commoditieParaTPFiltroID.beforeClass();
+		commoditieParaTPFiltroID.login();
+		commoditieParaTPFiltroID.acessarMDR();
+		commoditieParaTPFiltroID.filtro();
+		commoditieParaTPFiltroID.afterClass();
+		System.out.println("-------------------Preço de Transferência > Commoditie para TP Fin-------------------------");
+	}
+	
+	//62
+	@Test(priority = 62)
+	public void definicaoVinculacaoFiltroID() {
+
+		definicaoVinculacaoFiltroID = new DefinicaoVinculacaoFiltroID();
+		definicaoVinculacaoFiltroID.beforeClass();
+		definicaoVinculacaoFiltroID.login();
+		definicaoVinculacaoFiltroID.acessarMDR();
+		definicaoVinculacaoFiltroID.filtro();
+		definicaoVinculacaoFiltroID.afterClass();
+
+	}
 
 	
+	//69
 	
+	// SCANC > Relacionamento entre Quadros
+
+		@Test(priority = 69)
+		public void relacionamentoEntreQuadrosCriar() {
+
+			System.out.println("-------------------SCANC > Relacionamento entre Quadros-------------------------");
+
+			relacionamentoEntreQuadrosCriar = new RelacionamentoEntreQuadrosCriar();
+			relacionamentoEntreQuadrosCriar.beforeClass();
+			relacionamentoEntreQuadrosCriar.login();
+			relacionamentoEntreQuadrosCriar.acessarMDR();
+			relacionamentoEntreQuadrosCriar.criar();
+			relacionamentoEntreQuadrosCriar.afterClass();
+
+		}
+
+		@Test(priority = 70)
+		public void relacionamentoEntreQuadrosEditar() {
+
+			relacionamentoEntreQuadrosEditar = new RelacionamentoEntreQuadrosEditar();
+			relacionamentoEntreQuadrosEditar.beforeClass();
+			relacionamentoEntreQuadrosEditar.login();
+			relacionamentoEntreQuadrosEditar.acessarMDR();
+			relacionamentoEntreQuadrosEditar.editar();
+			relacionamentoEntreQuadrosEditar.afterClass();
+
+		}
+
+
+		@Test(priority = 71)
+		public void relacionamentoEntreQuadrosExcluir() {
+
+			relacionamentoEntreQuadrosExcluir = new RelacionamentoEntreQuadrosExcluir();
+			relacionamentoEntreQuadrosExcluir.beforeClass();
+			relacionamentoEntreQuadrosExcluir.login();
+			relacionamentoEntreQuadrosExcluir.acessarMDR();
+			relacionamentoEntreQuadrosExcluir.excluir();
+			relacionamentoEntreQuadrosExcluir.afterClass();
+
+			System.out.println("-------------------SCANC > Relacionamento entre Quadros Fin-------------------------");
+		}
+
 	
+	//75
+		
+		
+		//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
+		
 	
-	
+
+		@Test(priority = 75)
+		public void parteDoCorpoAtingidaCriar() {
+
+			System.out.println("-------------------//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida-------------------------");
+
+			parteDoCorpoAtingidaCriar = new ParteDoCorpoAtingidaCriar();
+			parteDoCorpoAtingidaCriar.beforeClass();
+			parteDoCorpoAtingidaCriar.login();
+			parteDoCorpoAtingidaCriar.acessarMDR();
+			parteDoCorpoAtingidaCriar.criar();
+			parteDoCorpoAtingidaCriar.afterClass();
+
+		}
+
+		@Test(priority = 76)
+		public void parteDoCorpoAtingidaEditar() {
+
+			parteDoCorpoAtingidaEditar = new ParteDoCorpoAtingidaEditar();
+			parteDoCorpoAtingidaEditar.beforeClass();
+			parteDoCorpoAtingidaEditar.login();
+			parteDoCorpoAtingidaEditar.acessarMDR();
+			parteDoCorpoAtingidaEditar.editar();
+			parteDoCorpoAtingidaEditar.afterClass();
+
+		}
+
+		@Test(priority = 77)
+		public void parteDoCorpoAtingidaVisualizar() {
+
+			parteDoCorpoAtingidaVisualizar = new ParteDoCorpoAtingidaVisualizar();
+			parteDoCorpoAtingidaVisualizar.beforeClass();
+			parteDoCorpoAtingidaVisualizar.login();
+			parteDoCorpoAtingidaVisualizar.acessarMDR();
+			parteDoCorpoAtingidaVisualizar.visualizar();
+			parteDoCorpoAtingidaVisualizar.afterClass();
+
+		}
+
+
+		@Test(priority = 78)
+		public void parteDoCorpoAtingidaExcluir() {
+
+			parteDoCorpoAtingidaExcluir = new ParteDoCorpoAtingidaExcluir();
+			parteDoCorpoAtingidaExcluir.beforeClass();
+			parteDoCorpoAtingidaExcluir.login();
+			parteDoCorpoAtingidaExcluir.acessarMDR();
+			parteDoCorpoAtingidaExcluir.excluir();
+			parteDoCorpoAtingidaExcluir.afterClass();
+
+			System.out.println("-------------------//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida Fin-------------------------");
+		}
+
+	//81
+		
+		// Tabelas de Apoio E-SOCIAL > Tabela 14 - Agente Causador de Acidente
+
+		@Test(priority = 81)
+		public void agenteCausadorDeAcidenteCriar() {
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 14 - Agente Causador de Acidente-------------------------");
+
+			agenteCausadorDeAcidenteCriar = new AgenteCausadorDeAcidenteCriar();
+			agenteCausadorDeAcidenteCriar.beforeClass();
+			agenteCausadorDeAcidenteCriar.login();
+			agenteCausadorDeAcidenteCriar.acessarMDR();
+			agenteCausadorDeAcidenteCriar.criar();
+			agenteCausadorDeAcidenteCriar.afterClass();
+
+		}
+
+		@Test(priority = 82)
+		public void agenteCausadorDeAcidenteEditar() {
+
+			agenteCausadorDeAcidenteEditar = new AgenteCausadorDeAcidenteEditar();
+			agenteCausadorDeAcidenteEditar.beforeClass();
+			agenteCausadorDeAcidenteEditar.login();
+			agenteCausadorDeAcidenteEditar.acessarMDR();
+			agenteCausadorDeAcidenteEditar.editar();
+			agenteCausadorDeAcidenteEditar.afterClass();
+
+		}
+
+		@Test(priority = 83)
+		public void agenteCausadorDeAcidenteVisualizar() {
+
+			agenteCausadorDeAcidenteVisualizar = new AgenteCausadorDeAcidenteVisualizar();
+			agenteCausadorDeAcidenteVisualizar.beforeClass();
+			agenteCausadorDeAcidenteVisualizar.login();
+			agenteCausadorDeAcidenteVisualizar.acessarMDR();
+			agenteCausadorDeAcidenteVisualizar.visualizar();
+			agenteCausadorDeAcidenteVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 84)
+		public void agenteCausadorDeAcidenteExcluir() {
+
+			agenteCausadorDeAcidenteExcluir = new AgenteCausadorDeAcidenteExcluir();
+			agenteCausadorDeAcidenteExcluir.beforeClass();
+			agenteCausadorDeAcidenteExcluir.login();
+			agenteCausadorDeAcidenteExcluir.acessarMDR();
+			agenteCausadorDeAcidenteExcluir.excluir();
+			agenteCausadorDeAcidenteExcluir.afterClass();
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 14 - Agente Causador de Acidente  Fin-------------------------");
+		}
+
+		
+	//88
+		
+		// Tabelas de Apoio E-SOCIAL > Tabela 12 - Compatibilidade entre Lotação
+
+		@Test(priority = 88)
+		public void compatibilidadeEntreLotacaoCriar() {
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 12 - Compatibilidade entre Lotação-------------------------");
+
+			compatibilidadeEntreLotacaoCriar = new CompatibilidadeEntreLotacaoCriar();
+			compatibilidadeEntreLotacaoCriar.beforeClass();
+			compatibilidadeEntreLotacaoCriar.login();
+			compatibilidadeEntreLotacaoCriar.acessarMDR();
+			compatibilidadeEntreLotacaoCriar.criar();
+			compatibilidadeEntreLotacaoCriar.afterClass();
+
+		}
+
+		@Test(priority = 89)
+		public void compatibilidadeEntreLotacaoEditar() {
+
+			compatibilidadeEntreLotacaoEditar = new CompatibilidadeEntreLotacaoEditar();
+			compatibilidadeEntreLotacaoEditar.beforeClass();
+			compatibilidadeEntreLotacaoEditar.login();
+			compatibilidadeEntreLotacaoEditar.acessarMDR();
+			compatibilidadeEntreLotacaoEditar.editar();
+			compatibilidadeEntreLotacaoEditar.afterClass();
+
+		}
+
+		@Test(priority = 90)
+		public void compatibilidadeEntreLotacaoVisualizar() {
+
+			compatibilidadeEntreLotacaoVisualizar = new CompatibilidadeEntreLotacaoVisualizar();
+			compatibilidadeEntreLotacaoVisualizar.beforeClass();
+			compatibilidadeEntreLotacaoVisualizar.login();
+			compatibilidadeEntreLotacaoVisualizar.acessarMDR();
+			compatibilidadeEntreLotacaoVisualizar.visualizar();
+			compatibilidadeEntreLotacaoVisualizar.afterClass();
+
+		}
+
+
+
+		@Test(priority = 91)
+		public void compatibilidadeEntreLotacaoExcluir() {
+
+			compatibilidadeEntreLotacaoExcluir = new CompatibilidadeEntreLotacaoExcluir();
+			compatibilidadeEntreLotacaoExcluir.beforeClass();
+			compatibilidadeEntreLotacaoExcluir.login();
+			compatibilidadeEntreLotacaoExcluir.acessarMDR();
+			compatibilidadeEntreLotacaoExcluir.excluir();
+			compatibilidadeEntreLotacaoExcluir.afterClass();
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 12 - Compatibilidade entre Lotação Fin-------------------------");
+		}
+
+	//95
+		
+		@Test(priority = 95)
+		public void registroRFCriar() {
+
+			registroRFCriar = new RegistroRFCriar();
+			registroRFCriar.beforeClass();
+			registroRFCriar.login();
+			registroRFCriar.acessarMDR();
+			registroRFCriar.criar();
+			registroRFCriar.afterClass();
+
+		}
+		
+	//102
+		
+		
 
 }

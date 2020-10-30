@@ -1,13 +1,12 @@
-package com.timp.test.MDR.ContratoIOF;
+package com.timp.test.MDR.TabelasApoioESocial.Tabela23;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFEditarPO;
-import com.sap.timp.pageObjectModel.MDR.SequenciaAcesso.SequenciaEditarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,22 +14,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ContratoIOFEditar extends TestBaseMassiel{
+public class FactoresDeRiscoExcluir extends TestBaseCristhian {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ContratoIOFEditarPO contratoIOFEditarPO;
+	FactoresDeRiscoExcluirPO factoresDeRiscoExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		contratoIOFEditarPO = new ContratoIOFEditarPO();
+		factoresDeRiscoExcluirPO = new FactoresDeRiscoExcluirPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
+		
 	}
 
 	@Test(priority = 0)
@@ -47,12 +48,11 @@ public class ContratoIOFEditar extends TestBaseMassiel{
 	}
 
 	@Test(priority = 2)
-	public void editar() {
+	public void excluirr() {
 
-		 boolean sucesso = 	contratoIOFEditarPO.editar();
+		boolean sucesso = factoresDeRiscoExcluirPO.excluir();
 
-			assertTrue(sucesso, Criar);
-
+		assertTrue(sucesso, Editar);
 
 	}
 

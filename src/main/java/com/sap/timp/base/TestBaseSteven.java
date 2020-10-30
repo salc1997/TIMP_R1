@@ -72,7 +72,7 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tq1);
 
 		return driver;
 	}
@@ -114,6 +114,30 @@ public class TestBaseSteven {
 		
 		return sucesso;
 	}
+	
+	public Boolean mayorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (mayor > menor) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean menorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (menor < mayor) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
 
 	public void waitExpectXpath(String locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
@@ -137,6 +161,14 @@ public class TestBaseSteven {
 		return valor;
 		
 		
+	}
+	
+	public String formatear(String valor) {
+		
+		valor = valor.replace(".", "");
+		valor = valor.replace(",", ".");
+		
+		return valor;
 	}
 
 	public void waitExpectElement(WebElement element) {

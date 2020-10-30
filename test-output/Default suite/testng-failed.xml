@@ -3,126 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasCriar">
-=======
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosCriarExcluirMassa">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle">
         <methods>
-<<<<<<< HEAD
-          <include name="login"/>
-          <include name="beforeClass"/>
-          <include name="acessarMDR"/>
-          <include name="criar"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
+          <include name="detalle"/>
           <include name="beforeClass"/>
-          <include name="excluirMassa"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosCriarExcluirMassa -->
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASExcluirEnMasa">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="excluirEnMasaCompatibilidadeEntreFPAS"/>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-        </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasCriar -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasEditar">
-=======
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizar">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="criar"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-          <include name="Visualizar"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-<<<<<<< HEAD
-=======
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

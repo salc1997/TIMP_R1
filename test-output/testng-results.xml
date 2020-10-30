@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="4" passed="4" failed="0" skipped="0">
+<testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-30T05:38:49Z" name="Default suite" finished-at="2020-10-30T05:41:06Z" duration-ms="136918">
+  <suite started-at="2020-10-30T20:34:50Z" name="Default suite" finished-at="2020-10-30T20:36:35Z" duration-ms="104963">
     <groups>
     </groups>
-    <test started-at="2020-10-30T05:38:49Z" name="Default test" finished-at="2020-10-30T05:41:06Z" duration-ms="136918">
-      <class name="com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa@1672fe87]" started-at="2020-10-29T23:38:49Z" name="beforeClass" finished-at="2020-10-29T23:39:01Z" duration-ms="12333" status="PASS">
+    <test started-at="2020-10-30T20:34:50Z" name="Default test" finished-at="2020-10-30T20:36:35Z" duration-ms="104963">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:34:50Z" name="beforeClass" finished-at="2020-10-30T17:35:03Z" duration-ms="12841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa@1672fe87]" started-at="2020-10-29T23:39:01Z" name="login" finished-at="2020-10-29T23:39:09Z" duration-ms="7312" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:35:03Z" name="login" finished-at="2020-10-30T17:35:11Z" duration-ms="8324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa@1672fe87]" started-at="2020-10-29T23:39:09Z" name="acessarMDR" finished-at="2020-10-29T23:39:21Z" duration-ms="12384" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:35:11Z" name="acessarMDR" finished-at="2020-10-30T17:35:36Z" duration-ms="24874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa@1672fe87]" started-at="2020-10-29T23:39:21Z" name="criar" finished-at="2020-10-29T23:40:30Z" duration-ms="69363" status="PASS">
+        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:35:36Z" name="editar" finished-at="2020-10-30T17:36:35Z" duration-ms="58841" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa@1672fe87]" started-at="2020-10-29T23:40:30Z" name="excluirMassa" finished-at="2020-10-29T23:41:06Z" duration-ms="35504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa@1672fe87]" started-at="2020-10-29T23:41:06Z" name="afterClass" finished-at="2020-10-29T23:41:06Z" duration-ms="1" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:36:35Z" name="afterClass" finished-at="2020-10-30T17:36:35Z" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

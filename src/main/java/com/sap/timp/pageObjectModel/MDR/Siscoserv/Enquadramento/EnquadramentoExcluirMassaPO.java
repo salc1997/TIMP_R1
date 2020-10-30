@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela25;
+package com.sap.timp.pageObjectModel.MDR.Siscoserv.Enquadramento;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,12 +7,52 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseFernando;
 
-public class TiposDeBenefíciosExcluirMassaPO extends TestBaseFernando{
-	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
-	public WebElement tabelaApoio;
+public class EnquadramentoExcluirMassaPO extends TestBaseFernando{
+	@FindBy(xpath = "//span[text()=\"Siscoserv\"]")
+	public WebElement siscoserv;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela 25 - Tipos de Benefícios\"]")
-	public WebElement tabela25;
+	@FindBy(xpath = "//span[text()=\"Enquadramento\"]")
+	public WebElement enquadramento;
+	
+	@FindBy(xpath = "//span[text()=\"Novo Configuração de Enquadramento\"]")
+	public WebElement novo;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de Enquadramento\"]")
+	public WebElement codigodeenquadramento;
+	
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcao;
+	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição\"]")
+	public WebElement descricao;
+	
+	@FindBy(xpath = "//div[@id=\"nbsCode\"]/div/div[2]")
+	public WebElement codigonbs;
+	
+	@FindBy(xpath = "//div[@id=\"indicator\"]/div/div/div[2]")
+	public WebElement indicatorrc;
+	
+	@FindBy(xpath = "//div[@id=\"salesModule\"]/div/div/div[2]")
+	public WebElement modulovenda;
+	
+	@FindBy(xpath = "//div[@id=\"acquisitionModule\"]/div/div/div[2]")
+	public WebElement moduloaquisicao;
+	
+	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
+	public WebElement gravar;
+	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement sim;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
+	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
+	public WebElement mensagem;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
@@ -20,83 +60,116 @@ public class TiposDeBenefíciosExcluirMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//button/span[text()=\"Salvar e Novo\"]")
 	public WebElement salvarENovo;
 	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
-	
-	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
-	public WebElement biblioteca;
-	
-	@FindBy(xpath = "//button/span[text()=\"Novo Tipo de Benefícios\"]")
-	public WebElement novoTipoDeBeneficio;
-	
-	@FindBy(xpath = "//div[contains(@class, \"code_0_0\")]/div/div[2]/div/div/div[2]/input")
-	public WebElement codigo;
-	
-	@FindBy(xpath = "//div[contains(@class, \"description_0_1\")]/div/textarea")
-	public WebElement descricao;
-	
-	@FindBy(xpath = "//div[contains(@class, \"effectiveDateFrom_0_2\")]/div/div/input")
-	public WebElement validadeDe;
-	
-	@FindBy(xpath = "//div[contains(@class, \"effectiveDateTo_0_3\")]/div/div/input")
-	public WebElement validadeAte;
-	
 	@FindBy(xpath = "//span[@class = \"button-icon icon-font-Sign-and-Symbols icon-persign\"]")
 	public WebElement btnExcluirMassa;
 	
-	public TiposDeBenefíciosExcluirMassaPO() {
+	public EnquadramentoExcluirMassaPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		sleep(2000);
-		tabelaApoio.click();
+		siscoserv.click();
 		
 		sleep(2000);
-		tabela25.click();
+		enquadramento.click();
 		
-		sleep(2000);
+		sleep(2000);		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		btnUltimaPagina.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		
-		String id = "0";
+		String id = "0"; // Ultimo ID antes de crear un registro
 		
 		if(rows > 0) {
 			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 			System.out.println(id);
-		}	
+		}
 		
-		novoTipoDeBeneficio.click();
+		novo.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.click();
-		sleep(1000);
-		codigo.sendKeys("001");
+		codigodeenquadramento.sendKeys("7");		
 		sleep(2000);
 		
-		descricao.click();
-		sleep(1000);
-		descricao.sendKeys("Teste automatizado");
+		descricao.sendKeys("descricao");		
 		sleep(2000);
 		
-		validadeDe.click();
-		sleep(1000);
-		validadeDe.sendKeys(fechaActual());
+		codigonbs.click();		
 		sleep(2000);
 		
-		validadeAte.click();
-		sleep(1000);
-		validadeAte.sendKeys(fechaActual());
+		opcao.click();		
+		sleep(2000);
+		
+		indicatorrc.click();		
+		sleep(2000);
+		
+		opcao.click();	
+		sleep(2000);
+		
+		modulovenda.click();
+		sleep(2000);
+		
+		opcao.click();		
+		sleep(2000);
+		
+		moduloaquisicao.click();		
+		sleep(2000);
+		
+		opcao.click();
+		sleep(2000);
+		
+		salvarENovo.click();
+		sleep(2000);
+		
+		waitExpectElement(sim);
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader\"]");
+		sleep(2000);
+		
+		codigodeenquadramento.sendKeys("8");		
+		sleep(2000);
+		
+		descricao.sendKeys("descricao 8");		
+		sleep(2000);
+		
+		attributeToBeXpath("//div[@id=\"nbsCode\"]/div", "class", "base-autocomplete required");
+		codigonbs.click();		
+		sleep(2000);
+		
+		opcao.click();		
+		sleep(2000);
+		
+		indicatorrc.click();		
+		sleep(2000);
+		
+		opcao.click();	
+		sleep(2000);
+		
+		modulovenda.click();
+		sleep(2000);
+		
+		opcao.click();		
+		sleep(2000);
+		
+		moduloaquisicao.click();		
+		sleep(2000);
+		
+		opcao.click();
 		sleep(2000);
 		
 		salvarENovo.click();
@@ -109,34 +182,8 @@ public class TiposDeBenefíciosExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);	
 		
 		sleep(2000);
-		codigo.click();
-		sleep(1000);
-		codigo.sendKeys("002");
+		invisibilityOfElement("//div[@class=\"overlay loader\"]");
 		sleep(2000);
-		
-		descricao.click();
-		sleep(1000);
-		descricao.sendKeys("Teste automatizado 2");
-		sleep(2000);
-		
-		validadeDe.click();
-		sleep(1000);
-		validadeDe.sendKeys(fechaActual());
-		sleep(2000);
-		
-		validadeAte.click();
-		sleep(1000);
-		validadeAte.sendKeys(fechaActual());
-		sleep(2000);
-		
-		salvarENovo.click();
-		sleep(2000);
-		
-		waitExpectElement(sim);
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
 		
 		biblioteca.click();
 		
@@ -157,23 +204,28 @@ public class TiposDeBenefíciosExcluirMassaPO extends TestBaseFernando{
 		if(rows == 0) {
 			return sucesso = true; 
 		}
-		  
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir4(idB);
+		
+		// Se obtiene el ultimo registro de la tabla
+		String idUltimoRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
+		idInserir4(idUltimoRegistro);
+		
+		int idPenultimoRegistro= convertToInt(idUltimoRegistro) - 1; // Este seria el penultimo registro, equivalente al primer registro que se crea cone sta automatizacion
 		  
 		sleep(2000); 
-		System.out.println(id); 
-		System.out.println(idB);
+		
 		  
-		double idD = Integer.valueOf(id); 
-		double idBD = Integer.valueOf(idB);
+		int idRegistroAntesDeCrearRegistroNuevo = Integer.valueOf(id); 
+		int idUltimoRegistroDespuesDeCrear = Integer.valueOf(idUltimoRegistro);
+		
+		System.out.println("");
+		System.out.println("Ultimo registro antes de registrar los nuevos: " + idRegistroAntesDeCrearRegistroNuevo); 
+		System.out.println("Ultimo registro despues de crear los nuevos: " + idUltimoRegistroDespuesDeCrear);
+		System.out.println("Ultimo penultimo despues de crear los nuevos: " + idPenultimoRegistro);
+		System.out.println("");
 		  
-		//compara pra ver se o novo id criado é realmente o ultimo
-		  
-		if (idBD > idD) { 
+		//compara pra ver se o novo id criado é realmente o ultimo		  
+		if (idUltimoRegistroDespuesDeCrear > idRegistroAntesDeCrearRegistroNuevo && idPenultimoRegistro > idRegistroAntesDeCrearRegistroNuevo) { 
 			sucesso = true; 
-		}else { 
-			sucesso = false; 
 		}
 		  
 		return sucesso;
@@ -181,7 +233,7 @@ public class TiposDeBenefíciosExcluirMassaPO extends TestBaseFernando{
 	
 	public boolean exluirMassa() {
 		sleep(1000);
-		if(!novoTipoDeBeneficio.isDisplayed()) {
+		if(!novo.isDisplayed()) {
 			return false;
 		}
 		sleep(2000);

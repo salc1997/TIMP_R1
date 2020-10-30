@@ -46,8 +46,9 @@ public class SCANCDistribuidorasEditar extends TestBaseMassiel{
   @Test(priority = 2)
   public void editar() {
 
-	  sCANCDistribuidorasEditarPO.Editar();
-	  
+	  boolean sucesso = sCANCDistribuidorasEditarPO.Editar();
+
+		assertTrue(sucesso, Criar);
 	  
 	}
 }

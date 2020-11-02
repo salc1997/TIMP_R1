@@ -8,8 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class CadastroCondicaoCriarPO extends TestBaseEliel{
+public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Cadastro da Condição\"]")
@@ -49,7 +50,7 @@ public class CadastroCondicaoCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][3]/div/div/label/span")
 	public WebElement opcaotributo;
 	
 	@FindBy(xpath ="//div[@class=\"element\" and @id=\"accessSeq\"]/div/div/div[2]")

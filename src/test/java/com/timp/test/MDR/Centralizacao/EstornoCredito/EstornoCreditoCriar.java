@@ -10,11 +10,12 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
 
-public class EstornoCreditoCriar extends TestBaseEliel {
+public class EstornoCreditoCriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 
@@ -23,7 +24,7 @@ public class EstornoCreditoCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		estornoCreditoCriarPO = new EstornoCreditoCriarPO();
@@ -32,7 +33,7 @@ public class EstornoCreditoCriar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		
 	}
 
 	@Test(priority = 0)

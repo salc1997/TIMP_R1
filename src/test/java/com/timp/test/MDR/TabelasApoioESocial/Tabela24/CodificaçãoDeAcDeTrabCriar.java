@@ -23,7 +23,7 @@ public class CodificaçãoDeAcDeTrabCriar extends TestBaseCristhian {
   @BeforeClass
   public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codificaçãoDeAcDeTrabCriarPO = new CodificaçãoDeAcDeTrabCriarPO();

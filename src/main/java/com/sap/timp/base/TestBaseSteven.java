@@ -73,8 +73,7 @@ public class TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tp1);
-
+		driver.get(tq1);
 
 		return driver;
 	}
@@ -88,7 +87,6 @@ public class TestBaseSteven {
 		try {
 			Thread.sleep(miliSeconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

@@ -1,8 +1,11 @@
 package com.sap.timp.base;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
+import java.util.Calendar;
 import java.util.Hashtable;
 import java.util.Locale;
 
@@ -15,10 +18,10 @@ public class TestBaseKenssy extends TestBaseSteven{
 
 	public WebDriver initializationKen() {
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tp1);
 		return driver;
 	}
 
@@ -69,6 +72,16 @@ public class TestBaseKenssy extends TestBaseSteven{
         meses.put("Novembro","11");
         meses.put("Dezembro","12");
         return meses.get(mes);
+	}
+	
+	public String dataanterior() {
+		
+		DateFormat df = new SimpleDateFormat ("dd/MM/yyyy");
+		Calendar cal = Calendar.getInstance();
+		cal.add (Calendar.DAY_OF_MONTH, -1);
+		
+		return df.format(cal.getTime());
+		
 	}
 
 }

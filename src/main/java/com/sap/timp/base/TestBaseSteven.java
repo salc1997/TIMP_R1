@@ -73,7 +73,7 @@ public class TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tq1);
+		driver.get(tp1);
 
 
 		return driver;
@@ -116,6 +116,20 @@ public class TestBaseSteven {
 		
 		return sucesso;
 	}
+	
+	public boolean isNum(String strNum) {
+	    boolean ret = true;
+	    try {
+
+	        Double.parseDouble(strNum);
+
+	    }catch (NumberFormatException e) {
+	        ret = false;
+	    }
+	    return ret;
+	}
+	
+	
 	
 	public Boolean mayorQue(double mayor, double menor ) {
 		

@@ -9,6 +9,7 @@ import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServico
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhes;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditar;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluir;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosFiltroID;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosVisualizar;
 
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriar;
@@ -371,6 +372,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		TiposDeServicosEditar tiposDeServicosEditar;
 		TiposDeServicosVisualizar tiposDeServicosVisualizar;
 		TiposDeServicosExcluir tiposDeServicosExcluir;
+		TiposDeServicosFiltroID tiposDeServicosFiltroID;
 		
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV
 		ValoresParaMetodoPVVCriar valoresParaMetodoPVVCriar;
@@ -1824,6 +1826,19 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tiposDeServicosExcluir.acessarMDR();
 		tiposDeServicosExcluir.excluir();
 		tiposDeServicosExcluir.afterClass();
+		
+
+	}
+	
+	@Test(priority = 141)
+	public void tiposDeServicosFiltroID() {
+
+		tiposDeServicosFiltroID = new TiposDeServicosFiltroID();
+		tiposDeServicosFiltroID.beforeClass();
+		tiposDeServicosFiltroID.login();
+		tiposDeServicosFiltroID.acessarMDR();
+		tiposDeServicosFiltroID.filtro();
+		tiposDeServicosFiltroID.afterClass();
 
 	}
 

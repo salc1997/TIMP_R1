@@ -5,6 +5,7 @@ import org.yaml.snakeyaml.scanner.Constant;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFEditarPO;
 import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
@@ -75,6 +76,7 @@ import com.timp.test.MDR.Centralizacao.Tributos.TributosDetalhes;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosEditar;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosExcluir;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosVisualizar;
+import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar;
@@ -85,6 +87,7 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluir;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
+import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFEditar;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir;
@@ -109,6 +112,7 @@ import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApur
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoFiltroId;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoVisualizar;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
@@ -243,6 +247,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	CodigoContabilizacaoCriar codigoContabilizacaoCriar;
 	CodigoContabalizacaoVisualizar codigoContabalizacaoVisualizar;
 	CodigoContabilizacaoEditar codigoContabilizacaoEditar;
+	CodigoContabalizacaoDetalhes codigoContabalizacaoDetalhes;
 	CodigoContabilizacaoExcluir codigoContabilizacaoExcluir;
 
 	// Código da Receita
@@ -254,7 +259,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// Configuração do Fundo Socail
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
-
+	ConfiguracaoFundoSocailFiltroId configuracaoFundoSocailFiltroId;
 	// Contrato IOF
 
 	ContratoIOFCriar contratoIOFCriar;
@@ -291,6 +296,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	UtilizacaoDosCreditosNaApuracaoEditar utilizacaoDosCreditosNaApuracaoEditar;
 	UtilizacaoDosCreditosNaApuracaoExcluir utilizacaoDosCreditosNaApuracaoExcluir;
 	UtilizacaoDosCreditosNaApuracaoVisualizar utilizacaoDosCreditosNaApuracaoVisualizar;
+	UtilizacaoDosCreditosNaApuracaoFiltroId utilizacaoDosCreditosNaApuracaoFiltroId;
 
 	// --------------------------------------------------------------------------------------------------
 
@@ -1326,6 +1332,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		codigoContabalizacaoVisualizar.afterClass();
 
 	}
+	
+	@Test(priority = 76)
+	public void codigoContabalizacaoDetalhes() {
+
+		codigoContabalizacaoDetalhes = new CodigoContabalizacaoDetalhes();
+		codigoContabalizacaoDetalhes.beforeClass();
+		codigoContabalizacaoDetalhes.login();
+		codigoContabalizacaoDetalhes.acessarMDR();
+		codigoContabalizacaoDetalhes.detalhes();
+		codigoContabalizacaoDetalhes.afterClass();
+
+	}
+
 
 	@Test(priority = 77)
 	public void codigoContabilizacaoExcluir() {
@@ -1420,6 +1439,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		configuracaoFundoSocailCriar.afterClass();
 
 	}
+	
+	@Test(priority = 83)
+	public void configuracaoFundoSocailFiltroId() {
+
+		configuracaoFundoSocailFiltroId = new ConfiguracaoFundoSocailFiltroId();
+		configuracaoFundoSocailFiltroId.beforeClass();
+		configuracaoFundoSocailFiltroId.login();
+		configuracaoFundoSocailFiltroId.acessarMDR();
+		configuracaoFundoSocailFiltroId.filtroId();
+		configuracaoFundoSocailFiltroId.afterClass();
+
+	}
+
 
 	// Contrato IOF
 
@@ -1755,5 +1787,18 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		System.out.println(
 				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração Fin-------------------------");
 	}
+	
+	@Test(priority = 22)
+	public void utilizacaoDosCreditosNaApuracaoFiltroId() {
+
+		utilizacaoDosCreditosNaApuracaoFiltroId = new UtilizacaoDosCreditosNaApuracaoFiltroId();
+		utilizacaoDosCreditosNaApuracaoFiltroId.beforeClass();
+		utilizacaoDosCreditosNaApuracaoFiltroId.login();
+		utilizacaoDosCreditosNaApuracaoFiltroId.acessarMDR();
+		utilizacaoDosCreditosNaApuracaoFiltroId.filtroId();
+		utilizacaoDosCreditosNaApuracaoFiltroId.afterClass();
+
+	}
+
 
 }

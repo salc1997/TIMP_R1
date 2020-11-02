@@ -1,69 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="153258" started-at="2020-10-30T22:47:36Z" finished-at="2020-10-30T22:50:10Z">
+  <suite name="Default suite" duration-ms="115357" started-at="2020-11-02T20:35:53Z" finished-at="2020-11-02T20:37:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="153258" started-at="2020-10-30T22:47:36Z" finished-at="2020-10-30T22:50:10Z">
-      <class name="com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="13148" started-at="2020-10-30T16:47:36Z" finished-at="2020-10-30T16:47:49Z">
+    <test name="Default test" duration-ms="115357" started-at="2020-11-02T20:35:53Z" finished-at="2020-11-02T20:37:48Z">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="beforeClass" is-config="true" duration-ms="10804" started-at="2020-11-02T14:35:53Z" finished-at="2020-11-02T14:36:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades@f2f2cc1]" name="login" duration-ms="7765" started-at="2020-10-30T16:47:49Z" finished-at="2020-10-30T16:47:57Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="login" duration-ms="6063" started-at="2020-11-02T14:36:03Z" finished-at="2020-11-02T14:36:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades@f2f2cc1]" name="brbEntrar" duration-ms="15488" started-at="2020-10-30T16:47:57Z" finished-at="2020-10-30T16:48:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- brbEntrar -->
-        <test-method status="PASS" signature="executar()[pri:0, instance:com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades@f2f2cc1]" name="executar" duration-ms="116833" started-at="2020-10-30T16:48:13Z" finished-at="2020-10-30T16:50:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades@f2f2cc1]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-10-30T16:50:10Z" finished-at="2020-10-30T16:50:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades -->
-=======
-<testng-results total="4" passed="4" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2020-10-30T22:07:39Z" name="Default suite" finished-at="2020-10-30T22:09:35Z" duration-ms="116276">
-    <groups>
-    </groups>
-    <test started-at="2020-10-30T22:07:39Z" name="Default test" finished-at="2020-10-30T22:09:35Z" duration-ms="116276">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa@1672fe87]" started-at="2020-10-30T16:07:39Z" name="beforeClass" finished-at="2020-10-30T16:07:52Z" duration-ms="13076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa@1672fe87]" started-at="2020-10-30T16:07:52Z" name="login" finished-at="2020-10-30T16:07:59Z" duration-ms="7010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa@1672fe87]" started-at="2020-10-30T16:07:59Z" name="acessarMDR" finished-at="2020-10-30T16:08:12Z" duration-ms="13407" status="PASS">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="acessarMDR" duration-ms="14243" started-at="2020-11-02T14:36:10Z" finished-at="2020-11-02T14:36:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa@1672fe87]" started-at="2020-10-30T16:08:12Z" name="criar" finished-at="2020-10-30T16:08:57Z" duration-ms="45347" status="PASS">
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="criar" duration-ms="84232" started-at="2020-11-02T14:36:24Z" finished-at="2020-11-02T14:37:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa@1672fe87]" started-at="2020-10-30T16:08:57Z" name="excluirMassa" finished-at="2020-10-30T16:09:35Z" duration-ms="37286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa@1672fe87]" started-at="2020-10-30T16:09:35Z" name="afterClass" finished-at="2020-10-30T16:09:35Z" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

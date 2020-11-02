@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela16.SGDPCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabCriarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluirPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,27 +14,27 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodificaçãoDeAcDeTrabCriar extends TestBaseCristhian {
+public class CodificaçãoDeAcDeTrabExcluir extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	CodificaçãoDeAcDeTrabCriarPO codificaçãoDeAcDeTrabCriarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+	CodificaçãoDeAcDeTrabExcluirPO codificaçãoDeAcDeTrabExcluirPO;
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		codificaçãoDeAcDeTrabCriarPO = new CodificaçãoDeAcDeTrabCriarPO();
-  }
+		codificaçãoDeAcDeTrabExcluirPO = new CodificaçãoDeAcDeTrabExcluirPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  
-  }
+	@AfterClass
+	public void afterClass() {
+		
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -46,12 +46,15 @@ public class CodificaçãoDeAcDeTrabCriar extends TestBaseCristhian {
 		acessarMDRPO.acessarMDR();
 
 	}
+
 	@Test(priority = 2)
-	public void criar() {
+	public void excluirr() {
 
-		boolean sucesso = codificaçãoDeAcDeTrabCriarPO.criar();
+		boolean sucesso = codificaçãoDeAcDeTrabExcluirPO.excluir();
 
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Editar);
 
 	}
+
+
 }

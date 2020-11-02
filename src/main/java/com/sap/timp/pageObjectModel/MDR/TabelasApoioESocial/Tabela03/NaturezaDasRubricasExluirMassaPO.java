@@ -171,6 +171,10 @@ public class NaturezaDasRubricasExluirMassaPO extends TestBaseFernando{
 	}
 	
 	public boolean exluirMassa() {
+		sleep(1000);
+		if(!novo.isDisplayed()) {
+			return false;
+		}
 		sleep(2000);
 		btnUltimaPagina.click();
 		sleep(2000);
@@ -197,6 +201,12 @@ public class NaturezaDasRubricasExluirMassaPO extends TestBaseFernando{
 		sleep(2000);
 		waitExpectElement(sim);
 		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		driver.navigate().refresh();
+		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

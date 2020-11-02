@@ -1,14 +1,17 @@
 package com.sap.timp.pageObjectModel.BCB;
 
-import java.awt.RenderingHints.Key;
+import static org.testng.Assert.assertTrue;
+
+import java.nio.channels.NonReadableChannelException;
 import java.util.ArrayList;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
+
 
 import com.sap.timp.base.TestBaseSteven;
 
@@ -17,7 +20,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 	public WebElement hierarquias;
 
-	@FindBy(xpath = "//span[text()=\"Hierarquia de Configura��o\"]")
+	@FindBy(xpath = "//span[text()=\"Hierarquia de Configuração\"]")
 	public WebElement hierarquiaConfiguracao;
 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
@@ -73,7 +76,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
 	public WebElement configuracoes;
 
-	@FindBy(xpath = "//span[text()=\"Configura��o da Consolida��o\"]")
+	@FindBy(xpath = "//span[text()=\"Configuração da Consolidação\"]")
 	public WebElement configuracaoDaConsolidacao;
 
 	@FindBy(xpath = "//input[contains(@placeholder,\"nome de Hierarquia\")]")
@@ -113,7 +116,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	@FindBy(xpath = "//span[contains(@class,\"icon-Calculator\")]")
 	public WebElement calculator;
 
-	@FindBy(xpath = "//span[contains(text(),\"Configura��o do Resultado Final\")]")
+	@FindBy(xpath = "//span[contains(text(),\"Configuração do Resultado Final\")]")
 	public WebElement resultadoFinal;
 
 	@FindBy(xpath = "//div[contains(@class,\"adjustments\")]/div/div/div[2]/div/div[2]/div/div/button")
@@ -121,7 +124,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 	@FindBy(xpath = "//div[@id=\"condition\"]/div/div/div[2]")
 	public WebElement condicao;
-	@FindBy(xpath = "//li[text()=\"N�o Exibir\"]")
+	@FindBy(xpath = "//li[text()=\"Não Exibir\"]")
 	public WebElement condacaoO;
 
 	@FindBy(xpath = "//button[contains(text(),\"Criar\")]")
@@ -134,7 +137,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"configuration\"]/div/div[2]")
 	public WebElement campolinha1;
-	@FindBy(xpath = "//li[text()=\"Relat�rio\"]")
+	@FindBy(xpath = "//li[text()=\"Relatório\"]")
 	public WebElement campoLinhaO1;
 
 	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"report\"]/div/div/input")
@@ -226,7 +229,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div[2]/div[4]/div[2]/div/div/div[2]")
 	public WebElement listaFiltroPorDatae;
 
-	@FindBy(xpath = "//li[text()=\"Data lan�amento doc. fiscal\"]")
+	@FindBy(xpath = "//li[text()=\"Data lançamento doc. fiscal\"]")
 	public WebElement listaFiltroPorDataOe;
 
 	// Quinto Subnivel
@@ -357,12 +360,178 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		@FindBy(xpath = "//div[@id=\"156\"]/div/label/span")
 		public WebElement listaSubAgrupamentoO9;
+		
+		
+		
+		//Execução
+		
+		@FindBy(xpath = "//span[text()=\"Executar\"]")
+		public WebElement executar;
+		
+		@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+		public WebElement pesquisar;
+		
+		@FindBy(xpath = "//div[@data-id and @class=\"tr\"]/div/div[1]/div/span[1]")
+		public WebElement menu;
+		
+		@FindBy(xpath = "//span[text()=\"Executar\"]")
+		public WebElement executarM;
+
+		@FindBy(xpath = "//span[contains(@class,\"icon-calendar\")]")
+		public WebElement periodo;
+		
+		@FindBy(xpath = "//div[contains(@class,\"icon-leftmenu\")]")
+		public WebElement paginaAnterior;
+		
+		@FindBy(xpath = "//div[text()=\"2016\"]")
+		public WebElement ano2016;
+		
+		@FindBy(xpath = "//div[text()=\"Jan\"]")
+		public WebElement jan;
+		
+		@FindBy(xpath = "//span[text()=\"1M\"]")
+		public WebElement m1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"execution-type\")]/div[2]/label/span")
+		public WebElement execucaoAnalitica;
+		
+		@FindBy(xpath = "//button[text()=\"Executar\"]")
+		public WebElement executarB;
+		
+		
+		//subNivel1
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+		public WebElement aba1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement hierarquia1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-2\")]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement grupo1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][1]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[1]/div[1]/div[1]/div[2]/a")
+		public WebElement verNoBRB1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[1]/div[1]/div[2]")
+		public WebElement valorAjusteTotalBCB1;
+		
+		@FindBy(xpath = "//span[text()=\"Configurações\"]")
+		public WebElement configuracoesBRB;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"ID_COMPANY\")]/div/div[4]/input")
+		public WebElement empresaBRB;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"ID_BRANCH\")]/div/div[4]/input")
+		public WebElement filialBRB;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"DT_LANC\")]/div[2]/div[4]/input")
+		public WebElement dataLancamento1BRB;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"DT_LANC\")]/div[3]/div[4]/input")
+		public WebElement dataLancamento2BRB;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"AJUSTE_VALUE\")][1]/div[2]/div[4]/input")
+		public WebElement valorDoAjuste1BRB;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"AJUSTE_VALUE\")][2]/div[2]/div[4]/input")
+		public WebElement valorDoAjuste2BRB;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"UF_FILIAL\")]/div[2]/div[4]/input")
+		public WebElement ufFilialBRB;
+		
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"ID_COMPANY\")]/div/div[2]/div")
+		public WebElement empresaOperador;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"ID_BRANCH\")]/div/div[2]/div")
+		public WebElement filialOperador;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"DT_LANC\")]/div[2]/div[2]/div")
+		public WebElement dataLancamento1Operador;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"DT_LANC\")]/div[3]/div[2]/div")
+		public WebElement dataLancamento2Operador;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"AJUSTE_VALUE\")][1]/div[2]/div[2]/div")
+		public WebElement valorDoAjuste1Operador;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"AJUSTE_VALUE\")][2]/div[2]/div[2]/div")
+		public WebElement valorDoAjuste2Operador;
+		
+		@FindBy(xpath = "//div[contains(@filter-key,\"UF_FILIAL\")]/div[2]/div[2]/div")
+		public WebElement ufFilialOperador;
+		
+		@FindBy(xpath = "//div[@data-column=\"14\" and not(@data-path or @aria-label)]/div")
+		public WebElement valorAjusteTotalBRB;
+		
+		
+		
+		//Subnivel 2
+	
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][2]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel2;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[2]/div[1]/div[1]/div[2]/a")
+		public WebElement verNoBRB2;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[2]/div[1]/div[1]/div[2]/div")
+		public WebElement tempoBCB;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[2]/div[1]/div[2]")
+		public WebElement valorAjusteTotalBCB2;
+		
+		
+		
+		
+		//Subnivel 3
+	
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][3]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel3;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[3]/div[1]/div[1]/div[2]/a")
+		public WebElement verNoBRB3;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[3]/div[1]/div[1]/div[2]/div")
+		public WebElement subPeriodoBCB3;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[3]/div[1]/div[2]")
+		public WebElement valorAjusteTotalBCB3;
 
 
+		//Subnivel 4
+	
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][4]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel4;
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[4]/div[1]/div[1]/div[2]/a")
+		public WebElement verNoBRB4;
+		
+		
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[4]/div[1]/div[2]")
+		public WebElement valorAjusteTotalBCB4;
+		
+		//Subnivel 5
+	
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][5]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel5;
+		
+		@FindBy(xpath = "//div[@id=\"1_1_1_5\"]/div[2]/div/table/tbody/tr/th[1]/span")
+		public WebElement cfop5;
+		
+		
 	public HierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
 	}
-
+	String valorBCBG = "";
+	String parentG = "";
 	public ArrayList<Boolean> criarConfiguracaoHierariquia() {
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -487,8 +656,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);
 
-		System.out.println("Id antes da cria��o: " + id1I);
-		System.out.println("Id Ap�s a cria��o: " + id2I);
+		System.out.println("Id antes da criação: " + id1I);
+		System.out.println("Id Após a criação: " + id2I);
 
 		if (id2I > id1I) {
 			sucesso.add(true);
@@ -1000,10 +1169,581 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
+
+	}
+	
+	public void executar() {
+		
+		//cometar desde aqui
+		sleep(2000);
+		configuracoes.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		configuracaoDaConsolidacao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys("972");
+		pesquisar.sendKeys(Keys.ENTER);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu.click();
+		sleep(1000);
+		executarM.click();
+		sleep(3000);
+		waitExpectElement(executar);
+		sleep(2000);
+		//hasta aqui
 		
 		
+		executar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
+		sleep(3000);
+		periodo.click();
+		sleep(3000);
+		paginaAnterior.click();
+		sleep(2000);
+		ano2016.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		jan.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		m1.click();
+		sleep(2000);
+		execucaoAnalitica.click();
+		sleep(1000);
+		executarB.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		invisibilityOfElement("//div[contains(@class,\"base-dialog\")]");
+		sleep(5000);
+		aba1.click();
+		sleep(1000);
+		hierarquia1.click();
+		sleep(1000);
+		grupo1.click();
+		sleep(1000);
+
+
+			
+		
+	}
+	
+	public ArrayList<Boolean> subnivel1Verificacao() {
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sleep(1000);
+		subnivel1.click();
+		sleep(1000);
+		valorBCBG = valorAjusteTotalBCB1.getText();
+		System.out.println(valorBCBG);
+		String parent = driver.getWindowHandle();
+		parentG = parent;
+		
+		System.out.println("Parent Window Id: " + parent);
+	
+		verNoBRB1.click();
+		sleep(2000);
+		
+		Set<String> allWindows = driver.getWindowHandles();
+		int count = allWindows.size();
+		System.out.println("Total Windows: "+count);
+		
+		for (String child : allWindows) {
+			if (!parent.equals(child)) {
+				driver.switchTo().window(child);
+			}
+		}
+		
+		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		System.out.println("--------------------------------------Subnivel 1------------------------------------");
+		
+		configuracoesBRB.click();
+		sleep(3000);
+		
+		
+		//valor total
+		String valorAjusteTotalBRBS = valorAjusteTotalBRB.getText();
+		valorAjusteTotalBRBS = formatear(valorAjusteTotalBRBS);
+		double valorAjusteTotalBRBD = convertToDouble(valorAjusteTotalBRBS);
+		System.out.println("Valor Ajuste Total BRB: " + valorAjusteTotalBRBS);
+		
+		String valorAjusteTotalBCB = valorBCBG;
+		valorAjusteTotalBCB = formatear(valorAjusteTotalBCB);
+		double valorAjusteTotalBCBD = convertToDouble(valorAjusteTotalBCB);
+		System.out.println("Valor Ajuste Total BCB: " + valorAjusteTotalBCB);
+		
+		System.out.println(igualDobule(valorAjusteTotalBRBD, valorAjusteTotalBCBD));
+		sucesso.add(igualDobule(valorAjusteTotalBRBD, valorAjusteTotalBCBD));
+		
+		
+		//empresa
+		
+		String empresaBRBS= empresaBRB.getAttribute("value");
+		String empresaOpradorS= empresaOperador.getText();
+		System.out.println("Empresa: " + empresaBRBS);
+		System.out.println("Operador: " + empresaOpradorS);
+		
+		System.out.println(empresaBRBS.equals("1000"));
+		sucesso.add(empresaBRBS.equals("1000"));
+		sucesso.add(empresaOpradorS.equals("="));
+		
+		//valor de ajuste
+		
+		String valorAjuste1BRBS = valorDoAjuste1BRB.getAttribute("value");
+		String valorAjuste1OperadorS = valorDoAjuste1Operador.getText();
+		System.out.println("Valor Ajuste 1: "+ valorAjuste1BRBS);
+		System.out.println("Valor Ajuste Operador 1: "+ valorAjuste1OperadorS);
+		System.out.println(valorAjuste1BRBS.equals("5000"));
+		sucesso.add(valorAjuste1BRBS.equals("5000"));
+		sucesso.add(valorAjuste1OperadorS.equals(">"));
+		
+		
+		
+		String valorAjuste2BRBS = valorDoAjuste2BRB.getAttribute("value");
+		String valorAjuste2OperadorS = valorDoAjuste2Operador.getText();
+		System.out.println("Valor Ajuste 2:" +valorAjuste2BRBS  );
+		System.out.println("Valor Ajuste 2: "+valorAjuste2OperadorS);
+		System.out.println(valorAjuste2BRBS.equals("0"));
+		sucesso.add(valorAjuste2BRBS.equals("0"));
+		sucesso.add(valorAjuste2OperadorS.equals(">"));
+
+		
+		
+		//filial
+		
+		String filialBRBS = filialBRB.getAttribute("value");
+		String filialOperadorS = filialOperador.getText();
+		System.out.println("Filial: "+filialBRBS);
+		System.out.println("Filial Operador: " +filialOperadorS);
+		System.out.println(filialBRBS.equals("0001"));
+		sucesso.add(filialBRBS.equals("0001"));
+		sucesso.add(filialOperadorS.equals("="));
+		
+
+		//data lancamento
+		String datalancamento1BRBS = dataLancamento1BRB.getAttribute("value");
+		String datalancamento1OperadorS = dataLancamento1Operador.getText();
+		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
+		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
+		System.out.println(datalancamento1BRBS.equals("01/01/2016"));
+		sucesso.add(datalancamento1BRBS.equals("01/01/2016"));
+
+		
+		String datalancamento2BRBS = dataLancamento2BRB.getAttribute("value");
+		String datalancamento2OpradorS = dataLancamento2Operador.getText();
+		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
+		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
+		System.out.println(datalancamento2BRBS.equals("31/01/2016"));
+		sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		
+		
+		//Uf filial
+		String ufFilialBRBS = ufFilialBRB.getAttribute("value");
+		String ufFilialOperadorS = ufFilialOperador.getText();
+		System.out.println("UF da Filial: "+ufFilialBRBS);
+		System.out.println("UF da Filial: "+ufFilialOperadorS);
+		System.out.println(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialOperadorS.equals("="));
+
+		
+		System.out.println(sucesso);
+		driver.close();
+		
+		driver.switchTo().window(parentG);
+		
+		
+		return sucesso;
+		
+	}
+	
+	
+	public ArrayList<Boolean> subNivel2() {
+		
+		System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
+		sleep(1000);
+		subnivel1.click();
+		sleep(1000);
+		subnivel2.click();
+		sleep(1000);
+		valorBCBG = valorAjusteTotalBCB2.getText();
+		String tempoBCBS = tempoBCB.getText();
+		
+		verNoBRB2.click();
+		sleep(2000);
+		
+		Set<String> allWindows = driver.getWindowHandles();
+		int count = allWindows.size();
+		System.out.println("Total Windows: "+count);
+		
+		for (String child : allWindows) {
+			if (!parentG.equals(child)) {
+				driver.switchTo().window(child);
+			}
+		}
+		
+		
+		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		configuracoesBRB.click();
+		sleep(3000);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(tempoBCBS.equals("(01/12/2015 - 31/01/2016)"));
+		
+		//valor de Ajusto Total
+		String valorAjusteTotalBRBS = valorAjusteTotalBRB.getText();
+		valorAjusteTotalBRBS = formatear(valorAjusteTotalBRBS);
+		double valorAjusteTotalBRBD = convertToDouble(valorAjusteTotalBRBS);
+		System.out.println("Valor Ajuste Total BRB: " + valorAjusteTotalBRBS);
+		
+		String valorAjusteTotalBCB = valorBCBG;
+		valorAjusteTotalBCB = formatear(valorAjusteTotalBCB);
+		double valorAjusteTotalBCBD = convertToDouble(valorAjusteTotalBCB);
+		System.out.println("Valor Ajuste Total BCB: " + valorAjusteTotalBCB);
+		
+		System.out.println(igualDobule(valorAjusteTotalBRBD, valorAjusteTotalBCBD));
+		sucesso.add(igualDobule(valorAjusteTotalBRBD, valorAjusteTotalBCBD));
+		
+		
+		//Empresa
+		
+		String empresaBRBS= empresaBRB.getAttribute("value");
+		String empresaOpradorS= empresaOperador.getText();
+		System.out.println("Empresa: " + empresaBRBS);
+		System.out.println("Operador: " + empresaOpradorS);
+		
+		System.out.println(empresaBRBS.equals("1000"));
+		sucesso.add(empresaBRBS.equals("1000"));
+		sucesso.add(empresaOpradorS.equals("="));
+		
+		//Valor de Ajuste
+		
+		String valorAjuste1BRBS = valorDoAjuste1BRB.getAttribute("value");
+		String valorAjuste1OperadorS = valorDoAjuste1Operador.getText();
+		System.out.println("Valor Ajuste: "+ valorAjuste1BRBS);
+		System.out.println("Valor Ajuste Operador: "+ valorAjuste1OperadorS);
+		System.out.println(valorAjuste1BRBS.equals("0"));
+		sucesso.add(valorAjuste1BRBS.equals("0"));
+		sucesso.add(valorAjuste1OperadorS.equals(">"));
+
+		
+		//Filial
+		
+		String filialBRBS = filialBRB.getAttribute("value");
+		String filialOperadorS = filialOperador.getText();
+		System.out.println("Filial: "+filialBRBS);
+		System.out.println("Filial Operador: " +filialOperadorS);
+		System.out.println(filialBRBS.equals("0001"));
+		sucesso.add(filialBRBS.equals("0001"));
+		sucesso.add(filialOperadorS.equals("="));
+		
+
+		//Data Lancamento
+		String datalancamento1BRBS = dataLancamento1BRB.getAttribute("value");
+		String datalancamento1OperadorS = dataLancamento1Operador.getText();
+		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
+		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
+		System.out.println(datalancamento1BRBS.equals("01/01/2016"));
+		sucesso.add(datalancamento1BRBS.equals("01/12/2015"));
+
+		
+		String datalancamento2BRBS = dataLancamento2BRB.getAttribute("value");
+		String datalancamento2OpradorS = dataLancamento2Operador.getText();
+		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
+		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
+		System.out.println(datalancamento2BRBS.equals("31/01/2016"));
+		sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		
+		
+		//Filial
+		String ufFilialBRBS = ufFilialBRB.getAttribute("value");
+		String ufFilialOperadorS = ufFilialOperador.getText();
+		System.out.println("UF da Filial: "+ufFilialBRBS);
+		System.out.println("UF da Filial: "+ufFilialOperadorS);
+		System.out.println(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialOperadorS.equals("="));
+
+		
+		System.out.println(sucesso);
+		driver.close();
+		
+		driver.switchTo().window(parentG);
+		
+		
+		
+		return sucesso;
 		
 
 	}
+	
+	public ArrayList<Boolean> subNivel3() {
+		
+		System.out.println("--------------------------------------------SubNivel 3-------------------------------------");
+		sleep(1000);
+		subnivel2.click();
+		sleep(1000);
+		subnivel3.click();
+		sleep(1000);
+		valorBCBG = valorAjusteTotalBCB3.getText();
+		String subPeriodoBCBS = subPeriodoBCB3.getText();
+		
+		verNoBRB3.click();
+		sleep(2000);
+		
+		Set<String> allWindows = driver.getWindowHandles();
+		int count = allWindows.size();
+		System.out.println("Total Windows: "+count);
+		
+		for (String child : allWindows) {
+			if (!parentG.equals(child)) {
+				driver.switchTo().window(child);
+			}
+		}
+		
+		
+		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		configuracoesBRB.click();
+		sleep(3000);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(subPeriodoBCBS.equals("(Subperíodo 12/2015 - 1M)"));
+		
+		//valor de Ajusto Total
+		String valorAjusteTotalBRBS = valorAjusteTotalBRB.getText();
+		valorAjusteTotalBRBS = formatear(valorAjusteTotalBRBS);
+		double valorAjusteTotalBRBD = convertToDouble(valorAjusteTotalBRBS);
+		System.out.println("Valor Ajuste Total BRB: " + valorAjusteTotalBRBS);
+		
+		String valorAjusteTotalBCB = valorBCBG;
+		valorAjusteTotalBCB = formatear(valorAjusteTotalBCB);
+		double valorAjusteTotalBCBD = convertToDouble(valorAjusteTotalBCB);
+		System.out.println("Valor Ajuste Total BCB: " + valorAjusteTotalBCB);
+		
+		System.out.println(igualDobule(valorAjusteTotalBRBD, valorAjusteTotalBCBD));
+		sucesso.add(igualDobule(valorAjusteTotalBRBD, valorAjusteTotalBCBD));
+		
+		
+		//Empresa
+		
+		String empresaBRBS= empresaBRB.getAttribute("value");
+		String empresaOpradorS= empresaOperador.getText();
+		System.out.println("Empresa: " + empresaBRBS);
+		System.out.println("Operador: " + empresaOpradorS);
+		
+		System.out.println(empresaBRBS.equals("1000"));
+		sucesso.add(empresaBRBS.equals("1000"));
+		sucesso.add(empresaOpradorS.equals("="));
+		
+		//Valor de Ajuste
+		
+		String valorAjuste1BRBS = valorDoAjuste1BRB.getAttribute("value");
+		String valorAjuste1OperadorS = valorDoAjuste1Operador.getText();
+		System.out.println("Valor Ajuste: "+ valorAjuste1BRBS);
+		System.out.println("Valor Ajuste Operador: "+ valorAjuste1OperadorS);
+		System.out.println(valorAjuste1BRBS.equals("0"));
+		sucesso.add(valorAjuste1BRBS.equals("0"));
+		sucesso.add(valorAjuste1OperadorS.equals(">"));
 
+		
+		//Filial
+		
+		String filialBRBS = filialBRB.getAttribute("value");
+		String filialOperadorS = filialOperador.getText();
+		System.out.println("Filial: "+filialBRBS);
+		System.out.println("Filial Operador: " +filialOperadorS);
+		System.out.println(filialBRBS.equals("0001"));
+		sucesso.add(filialBRBS.equals("0001"));
+		sucesso.add(filialOperadorS.equals("="));
+		
+
+		//Data Lancamento
+		String datalancamento1BRBS = dataLancamento1BRB.getAttribute("value");
+		String datalancamento1OperadorS = dataLancamento1Operador.getText();
+		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
+		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
+		System.out.println(datalancamento1BRBS.equals("01/12/2015"));
+		sucesso.add(datalancamento1BRBS.equals("01/12/2015"));
+
+		
+		String datalancamento2BRBS = dataLancamento2BRB.getAttribute("value");
+		String datalancamento2OpradorS = dataLancamento2Operador.getText();
+		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
+		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
+		System.out.println(datalancamento2BRBS.equals("31/12/2015"));
+		sucesso.add(datalancamento2BRBS.equals("31/12/2015"));
+		
+		
+		//Filial
+		String ufFilialBRBS = ufFilialBRB.getAttribute("value");
+		String ufFilialOperadorS = ufFilialOperador.getText();
+		System.out.println("UF da Filial: "+ufFilialBRBS);
+		System.out.println("UF da Filial: "+ufFilialOperadorS);
+		System.out.println(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialOperadorS.equals("="));
+
+		
+		System.out.println(sucesso);
+		driver.close();
+		
+		driver.switchTo().window(parentG);
+		
+		
+		
+		return sucesso;
+		
+	}
+	
+	
+	public ArrayList<Boolean> subNivel4() {
+		
+		System.out.println("--------------------------------------------SubNivel 4-------------------------------------");
+		sleep(1000);
+		//subnivel3.click();
+		sleep(1000);
+		subnivel4.click();
+		sleep(1000);
+
+		verNoBRB4.click();
+		sleep(2000);
+		
+		Set<String> allWindows = driver.getWindowHandles();
+		int count = allWindows.size();
+		System.out.println("Total Windows: "+count);
+		
+		for (String child : allWindows) {
+			if (!parentG.equals(child)) {
+				driver.switchTo().window(child);
+			}
+		}
+		
+		
+		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		configuracoesBRB.click();
+		sleep(3000);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+
+		
+		//Empresa
+		
+		String empresaBRBS= empresaBRB.getAttribute("value");
+		String empresaOpradorS= empresaOperador.getText();
+		System.out.println("Empresa: " + empresaBRBS);
+		System.out.println("Operador: " + empresaOpradorS);
+		
+		System.out.println(empresaBRBS.equals("1000"));
+		sucesso.add(empresaBRBS.equals("1000"));
+		sucesso.add(empresaOpradorS.equals("="));
+		
+		//Valor de Ajuste
+		
+		String valorAjuste1BRBS = valorDoAjuste1BRB.getAttribute("value");
+		String valorAjuste1OperadorS = valorDoAjuste1Operador.getText();
+		System.out.println("Valor Ajuste: "+ valorAjuste1BRBS);
+		System.out.println("Valor Ajuste Operador: "+ valorAjuste1OperadorS);
+		System.out.println(valorAjuste1BRBS.equals("0"));
+		sucesso.add(valorAjuste1BRBS.equals("0"));
+		sucesso.add(valorAjuste1OperadorS.equals(">"));
+
+		
+		//Filial
+		
+		String filialBRBS = filialBRB.getAttribute("value");
+		String filialOperadorS = filialOperador.getText();
+		System.out.println("Filial: "+filialBRBS);
+		System.out.println("Filial Operador: " +filialOperadorS);
+		System.out.println(filialBRBS.equals("0001"));
+		sucesso.add(filialBRBS.equals("0001"));
+		sucesso.add(filialOperadorS.equals("="));
+		
+
+		//Data Lancamento
+		String datalancamento1BRBS = dataLancamento1BRB.getAttribute("value");
+		String datalancamento1OperadorS = dataLancamento1Operador.getText();
+		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
+		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
+		System.out.println(datalancamento1BRBS.equals("01/01/2016"));
+		sucesso.add(datalancamento1BRBS.equals("01/01/2016"));
+
+		
+		String datalancamento2BRBS = dataLancamento2BRB.getAttribute("value");
+		String datalancamento2OpradorS = dataLancamento2Operador.getText();
+		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
+		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
+		System.out.println(datalancamento2BRBS.equals("31/01/2016"));
+		sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		
+		
+		//UFFilial
+		String ufFilialBRBS = ufFilialBRB.getAttribute("value");
+		String ufFilialOperadorS = ufFilialOperador.getText();
+		System.out.println("UF da Filial: "+ufFilialBRBS);
+		System.out.println("UF da Filial: "+ufFilialOperadorS);
+		System.out.println(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialBRBS.equals("SP"));
+		sucesso.add(ufFilialOperadorS.equals("="));
+
+		
+		System.out.println(sucesso);
+		driver.close();
+		
+		driver.switchTo().window(parentG);
+		
+		
+		return sucesso;
+		
+	}
+
+	
+	public boolean subNivel5() {
+		
+		System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
+		sleep(1000);
+		subnivel4.click();
+		sleep(1000);
+		subnivel5.click();
+		sleep(1000);
+		
+		boolean sucesso = cfop5.isDisplayed();
+		
+		System.out.println(sucesso);
+		return sucesso;
+		
+	}
+	
+	
+	
 }

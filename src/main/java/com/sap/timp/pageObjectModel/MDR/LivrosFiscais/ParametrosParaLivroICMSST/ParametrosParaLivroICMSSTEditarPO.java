@@ -1,23 +1,25 @@
-package com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito;
+package com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseMassiel;
 
-public class EstornoCreditoEditarPO extends TestBaseMassiel {
-
+public class ParametrosParaLivroICMSSTEditarPO extends TestBaseMassiel{
 	
+	@FindBy(xpath = "//span[text()=\"Livros Fiscais\"]")
+	public WebElement livrosfiscais;
 	
-	@FindBy(xpath = "//span[text()=\"Centralização\"]")
-	public WebElement centralizacao;
+	@FindBy(xpath = "//span[text()=\"Parâmetros para Livro ICMS ST\"]")
+	public WebElement parametrosparalivroicmsst;
 	
-	@FindBy(xpath = "//span[text()=\"Estorno de Crédito de Insumos\"]")
-	public WebElement estornocredito;
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	public WebElement siguiente;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a data de início de vigência\"]")
+	public WebElement fecha;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement Gravar;
@@ -25,34 +27,34 @@ public class EstornoCreditoEditarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement Sim;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement siguiente;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher/Selecionar  data\"]")
-	public WebElement fecha;
-	
-	public EstornoCreditoEditarPO() {
+	public ParametrosParaLivroICMSSTEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
-
 	public boolean Editar() {
-		//espera a página carregar
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		centralizacao.click();
-		sleep(2000);
-		estornocredito.click();
+	
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		livrosfiscais.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		parametrosparalivroicmsst.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		String idRegistro = idObter1();
-		
 		System.out.println(idRegistro);
-		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
@@ -65,16 +67,23 @@ public class EstornoCreditoEditarPO extends TestBaseMassiel {
 		attributoNotToBeEmptyElement(fecha, "value");
 	  	sleep(2000);
 		
+	  	sleep(9000);
+		sleep(9000);
+		
 	  	String valor = fecha.getAttribute("value");
 		System.out.println(valor);
 		String enviar = fechaAyer();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		sleep(1000);
 		fecha.clear();
 
 		sleep(1000);
 		fecha.sendKeys(enviar);
-		
+
 		Gravar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -91,6 +100,8 @@ public class EstornoCreditoEditarPO extends TestBaseMassiel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(9000);
+		sleep(9000);
 		String nuevoTexto = fecha.getAttribute("value");
 		System.out.println(valor);
 		System.out.println(nuevoTexto);
@@ -103,6 +114,8 @@ public class EstornoCreditoEditarPO extends TestBaseMassiel {
 		sleep(1000);
 		fecha.sendKeys(valor);
 
+	
+		
 		Gravar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -114,14 +127,5 @@ public class EstornoCreditoEditarPO extends TestBaseMassiel {
 		sleep(2000);
 		
 		return sucesso;
-
-		
-	}	
-	
-	
-	
-	
-	
-	
-	
+	}
 }

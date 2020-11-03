@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseEliel{
+public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 	
 	
 	
@@ -81,6 +82,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseEliel{
 		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
+		System.out.println(idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
@@ -132,17 +134,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseEliel{
 		
 		return sucesso;
 		
-		//pesquisa esse id
-		/*pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		
-		opcao.click();
-		
-		sleep(2000);
-		
-		engrenagem.click();*/
+
 	}	
 	
 	

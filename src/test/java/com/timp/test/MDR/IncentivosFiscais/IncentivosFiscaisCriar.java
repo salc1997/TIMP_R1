@@ -14,14 +14,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class IncentivosFiscaisCriar extends TestBaseMassiel {
+public class IncentivosFiscaisCriar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	IncentivosFiscaisCriarPO incentivosFiscaisCriarPO;
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initializationKen();
 	  loginTC = new LoginTC();
 	  acessarMDRPO = new AcessarMDRPO();
 	  incentivosFiscaisCriarPO = new IncentivosFiscaisCriarPO();
@@ -30,7 +30,7 @@ public class IncentivosFiscaisCriar extends TestBaseMassiel {
 
   	@AfterClass
 	public void afterClass() {
-		driver.close();
+		
 	}
 
 	@Test(priority = 0)

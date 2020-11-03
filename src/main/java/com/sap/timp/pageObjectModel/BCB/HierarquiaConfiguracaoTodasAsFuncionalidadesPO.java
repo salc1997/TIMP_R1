@@ -11,6 +11,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.apache.commons.*;
 
 
 import com.sap.timp.base.TestBaseSteven;
@@ -525,6 +526,15 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		@FindBy(xpath = "//div[@id=\"1_1_1_5\"]/div[2]/div/table/tbody/tr/th[1]/span")
 		public WebElement cfop5;
+		
+		//Subnivel 6
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][6]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel6;
+		
+		
+		//Subnivel 7
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][7]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel7;
 		
 		
 	public HierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
@@ -1184,8 +1194,9 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		pesquisar.sendKeys("972");
+		//TQ1 972
+		//TP1 332
+		pesquisar.sendKeys("332");
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(3000);
@@ -1627,7 +1638,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		System.out.println("--------------------------------------------SubNivel 4-------------------------------------");
 		sleep(1000);
-		//subnivel3.click();
+		subnivel3.click();
 		sleep(1000);
 		subnivel4.click();
 		sleep(1000);
@@ -1742,7 +1753,159 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		System.out.println(sucesso);
 		return sucesso;
 		
+		
 	}
+	
+	public ArrayList<Boolean> subNivel6() {
+		
+		System.out.println("--------------------------------------------SubNivel 6-------------------------------------");
+		sleep(1000);
+		//subnivel5.click();
+		sleep(1000);
+		subnivel6.click();
+		sleep(1000);
+		
+		int rows = driver.findElements(By.xpath("//div[@id=\"1_1_1_6\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]/td[1]/span")).size();
+		
+		ArrayList<Integer> cfopList = new ArrayList<Integer>();
+
+		String anterior ="";
+		String anteriorNumeros = "";
+		int f=1;
+		for (int i = 0; i < rows; i++) {
+			
+			String cfop = driver.findElement(By.xpath("//div[@id=\"1_1_1_6\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]["+f+"]/td[1]/span")).getText();
+			String cfopNumeros ="";
+			if (!cfop.isEmpty()) {
+				if (!cfop.equals(anterior)) {
+					String[] cfopSplit = cfop.split("/");
+					cfop = cfopSplit[0];
+					boolean numero = isNum(cfop);
+					if (numero == true) {
+						cfopNumeros = cfop;
+					}
+						
+					if (!cfopNumeros.equals(anteriorNumeros)) {
+						int cfopI = Integer.valueOf(cfopNumeros);
+						cfopList.add(cfopI);
+					}
+					
+
+				}
+			}
+			
+			anterior = cfop;
+			anteriorNumeros = cfopNumeros;
+			
+			f = f+1;
+		}
+		
+		System.out.println(cfopList);
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		for (int i = 0; i < cfopList.size()-1; i++) {
+			
+			int menor = 0;
+			int j = i+1;
+			System.out.println("Comparacion: "+j);	
+				menor = cfopList.get(i).compareTo(cfopList.get(j));
+				System.out.println("Registro  "+ i + "  "+ cfopList.get(i));	
+				System.out.println("Registro  "+ j + "  "+ cfopList.get(j));		
+				if (menor <  0) {
+					sucesso.add(true);
+				}else {
+					
+					sucesso.add(false);
+				}
+			System.out.println(sucesso.get(i));
+			
+		}
+		
+
+		System.out.println(sucesso);
+		
+		return sucesso;
+		
+	}
+		
+
+	
+	public ArrayList<Boolean> subNivel7() {
+		
+		System.out.println("--------------------------------------------SubNivel 7-------------------------------------");
+		sleep(1000);
+		subnivel6.click();
+		sleep(1000);
+		subnivel7.click();
+		sleep(1000);
+		
+		int rows = driver.findElements(By.xpath("//div[@id=\"1_1_1_7\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]/td[1]/span")).size();
+		
+		ArrayList<Integer> cfopList = new ArrayList<Integer>();
+
+		String anterior ="";
+		String anteriorNumeros = "";
+		int f=1;
+		for (int i = 0; i < rows; i++) {
+			
+			String cfop = driver.findElement(By.xpath("//div[@id=\"1_1_1_7\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]["+f+"]/td[1]/span")).getText();
+			String cfopNumeros ="";
+			if (!cfop.isEmpty()) {
+				if (!cfop.equals(anterior)) {
+					String[] cfopSplit = cfop.split("/");
+					cfop = cfopSplit[0];
+					boolean numero = isNum(cfop);
+					if (numero == true) {
+						cfopNumeros = cfop;
+					}
+						
+					if (!cfopNumeros.equals(anteriorNumeros)) {
+						int cfopI = Integer.valueOf(cfopNumeros);
+						cfopList.add(cfopI);
+					}
+					
+
+				}
+			}
+			
+			anterior = cfop;
+			anteriorNumeros = cfopNumeros;
+			
+			f = f+1;
+		}
+		
+		System.out.println(cfopList);
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		for (int i = 0; i < cfopList.size()-1; i++) {
+			
+			int menor = 0;
+			int j = i+1;
+			System.out.println("Comparacion: "+j);	
+				menor = cfopList.get(i).compareTo(cfopList.get(j));
+				System.out.println("Registro  "+ i + "  "+ cfopList.get(i));	
+				System.out.println("Registro  "+ j + "  "+ cfopList.get(j));		
+				if (menor >  0) {
+					sucesso.add(true);
+				}else {
+					
+					sucesso.add(false);
+				}
+			System.out.println(sucesso.get(i));
+			
+		}
+		
+
+		System.out.println(sucesso);
+		
+		return sucesso;
+		
+	}
+		
 	
 	
 	

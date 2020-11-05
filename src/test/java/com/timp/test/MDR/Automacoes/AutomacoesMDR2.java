@@ -56,11 +56,13 @@ import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoC
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluir;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoCriar;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoEditar;
+import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluir;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoVisualizar;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir;
+import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesFiltroId;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar;
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoCriar;
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoEditar;
@@ -204,6 +206,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	MapeamentoContabilCorrecaoCriar mapeamentoContabilCorrecaoCriar;
 	MapeamentoContabilCorrecaoEditar mapeamentoContabilCorrecaoEditar;
 	MapeamentoContabilCorrecaoVisualizar mapeamentoContabilCorrecaoVisualizar;
+	MapeamentoContabilCorrecaoExcluir mapeamentoContabilCorrecaoExcluir;
 
 	// ParametrosContabilizacao > Mapeamento Substituicao Conta Estoque Cenarios
 	// Correcoes
@@ -213,7 +216,9 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar;
-
+	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesFiltroId mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId;
+	
+	
 	// Registro de Exportação
 
 	RegistroDeExportaçaoCriar registroDeExportaçaoCriar;
@@ -1068,6 +1073,19 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		System.out.println(
 				"-------------------Parâmetros de Contabilização > Mapemaneto Contábil Por Correção Fin-------------------------");
 	}
+	
+	@Test(priority = 81)
+	public void mapeamentoContabilCorrecaoExcluir() {
+
+		mapeamentoContabilCorrecaoExcluir = new MapeamentoContabilCorrecaoExcluir();
+		mapeamentoContabilCorrecaoExcluir.beforeClass();
+		mapeamentoContabilCorrecaoExcluir.login();
+		mapeamentoContabilCorrecaoExcluir.acessarMDR();
+		mapeamentoContabilCorrecaoExcluir.excluir();
+		mapeamentoContabilCorrecaoExcluir.afterClass();
+
+	}
+
 
 	// 84
 
@@ -1138,6 +1156,19 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		System.out.println(
 				"-------------------ParametrosContabilizacao > Mapeamento Substituicao Conta Estoque Cenarios Correcoes Fin-------------------------");
 	}
+	
+	@Test(priority = 89)
+	public void mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId() {
+
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesFiltroId();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.beforeClass();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.login();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.acessarMDR();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.filtroId();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.afterClass();
+
+	}
+
 
 	// 90
 

@@ -34,7 +34,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseSteven
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -62,18 +62,107 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseSteven
 			assertTrue(sucesso.get(i), subniveis);
 		}
 		
-		
-		
 	}
 	
-
 	@Test(priority = 3)
 	public void criarConfiguracao() {
+		sleep(2000);
+		boolean sucesso = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracao();
+		assertTrue(sucesso, Criar);
 		
-		hierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracao();
-
-		
+		hierarquiaConfiguracaoTodasAsFuncionalidadesPO.configurarConfiguracao();
 		
 		
 	}
+
+	
+	@Test(priority = 4)
+	public void executar() {
+		
+		hierarquiaConfiguracaoTodasAsFuncionalidadesPO.executar();
+		
+		ArrayList<Boolean> subNivel1 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subnivel1();
+		
+		for (int i = 0; i < subNivel1.size(); i++) {
+			assertTrue(subNivel1.get(i), "Erro no Subnivel 1");
+		}
+		
+		ArrayList<Boolean> subNivel2 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel2();
+		
+		for (int i = 0; i < subNivel2.size(); i++) {
+			assertTrue(subNivel2.get(i), "Erro no Subnivel 2");
+		}
+		
+		ArrayList<Boolean> subNivel3 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel3();
+		
+		for (int i = 0; i < subNivel3.size(); i++) {
+			assertTrue(subNivel3.get(i), "Erro no Subnivel 3");
+		}
+
+		ArrayList<Boolean> subNivel4 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel4();
+		
+		for (int i = 0; i < subNivel4.size(); i++) {
+			assertTrue(subNivel4.get(i), "Erro no Subnivel 4");
+		}
+
+		boolean subNivel5 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel5();
+		
+		assertTrue(subNivel5, "Erro no Subnivel 5");
+
+		ArrayList<Boolean> subNivel6 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel6();
+		
+		for (int i = 0; i < subNivel6.size(); i++) {
+			assertTrue(subNivel6.get(i), "Erro no Subnivel 6");
+		}
+		
+
+		ArrayList<Boolean> subNivel7 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel7();
+		
+		for (int i = 0; i < subNivel7.size(); i++) {
+			assertTrue(subNivel7.get(i), "Erro no Subnivel 7");
+		}
+		
+		ArrayList<Boolean> subNivel8 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel8();
+		
+		for (int i = 0; i < subNivel8.size(); i++) {
+			assertTrue(subNivel8.get(i), "Erro no Subnivel 8");
+		}
+		
+		
+		ArrayList<Boolean> subNivel9 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel9();
+		
+		for (int i = 0; i < subNivel9.size(); i++) {
+			assertTrue(subNivel9.get(i), "Erro no Subnivel 9");
+		}
+	}
+	
+	
+	@Test(priority = 5)
+	public void excluirConfiguracao() {
+		
+		ArrayList<Boolean> sucesso = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracao();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+		
+		
+
+	}
+	
+	@Test(priority = 6)
+	public void excluirHierarquia() {
+		
+		ArrayList<Boolean> sucesso = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+		
+		
+
+	}
+	
+		
+	
 }

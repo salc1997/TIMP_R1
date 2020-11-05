@@ -9,9 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class EstornoCreditoCriarPO extends TestBaseEliel{
+public class EstornoCreditoCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Centralização\"]")
 	public WebElement centralizacao;
@@ -138,9 +139,6 @@ public class EstornoCreditoCriarPO extends TestBaseEliel{
 		
 		opcaofialcentralizadora.click();
 		
-		simregimeespecial.click();
-		
-		preechernumerico.sendKeys("7");
 		//pega a data atual
 		String dataatual = fechaActual();
 		datainicio.sendKeys(dataatual);

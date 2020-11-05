@@ -73,7 +73,7 @@ public class TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tc2);	
+		driver.get(tc2);
 
 		return driver;
 	}
@@ -87,7 +87,6 @@ public class TestBaseSteven {
 		try {
 			Thread.sleep(miliSeconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -108,6 +107,44 @@ public class TestBaseSteven {
 		
 		boolean sucesso = false;
 		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public boolean isNum(String strNum) {
+	    boolean ret = true;
+	    try {
+
+	        Double.parseDouble(strNum);
+
+	    }catch (NumberFormatException e) {
+	        ret = false;
+	    }
+	    return ret;
+	}
+	
+	
+	
+	public Boolean mayorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (mayor > menor) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean menorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (menor < mayor) {
 			sucesso = true;
 		}else {
 			sucesso = false;
@@ -138,6 +175,14 @@ public class TestBaseSteven {
 		return valor;
 		
 		
+	}
+	
+	public String formatear(String valor) {
+		
+		valor = valor.replace(".", "");
+		valor = valor.replace(",", ".");
+		
+		return valor;
 	}
 
 	public void waitExpectElement(WebElement element) {

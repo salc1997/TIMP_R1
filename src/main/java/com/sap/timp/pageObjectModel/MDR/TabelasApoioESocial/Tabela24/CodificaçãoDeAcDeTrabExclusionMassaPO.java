@@ -9,9 +9,6 @@ import com.sap.timp.base.TestBaseCristhian;
 
 public class CodificaçãoDeAcDeTrabExclusionMassaPO extends TestBaseCristhian{
 
-	
-	
-	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	

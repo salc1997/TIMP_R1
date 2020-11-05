@@ -3,6 +3,7 @@ package com.timp.test.MDR.IncentivosFiscais;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisCriarPO;
@@ -29,7 +30,7 @@ public class IncentivosFiscaisCriar extends TestBaseKenssy {
 
   	@AfterClass
 	public void afterClass() {
-		driver.close();
+		
 	}
 
 	@Test(priority = 0)

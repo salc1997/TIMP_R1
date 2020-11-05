@@ -1,5 +1,9 @@
 package com.sap.timp.base;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,5 +20,17 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver.get(tc2);
 	   return driver;
 	}
+	
+	//PARA PODER EJECUTAR TA-518
+	public String dataanterior() {
+		
+		DateFormat df = new SimpleDateFormat ("dd/MM/yyyy");
+		Calendar cal = Calendar.getInstance();
+		cal.add (Calendar.DAY_OF_MONTH, -1);
+		
+		return df.format(cal.getTime());
+		
+	}
+		
 
 }

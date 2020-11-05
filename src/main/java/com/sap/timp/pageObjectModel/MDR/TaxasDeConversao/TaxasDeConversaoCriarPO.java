@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos;
+package com.sap.timp.pageObjectModel.MDR.TaxasDeConversao;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,31 +7,29 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TiposDeServicosCriarPO extends TestBaseEliel{
+public class TaxasDeConversaoCriarPO extends TestBaseEliel {
 	
 	
-	@FindBy(xpath = "//span[text()=\"Atividades para tributação\"]")
-	public WebElement atividadesparatributacao;
+	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	public WebElement taxasdeconversao;
 	
-	@FindBy(xpath = "//span[text()=\"Tipos de Serviços\"]")
-	public WebElement tiposdeservicos;
-	
-	@FindBy(xpath = "//span[text()=\"Novo Tipos de Serviços\"]")
+	@FindBy(xpath = "//span[text()=\"Nova Taxa de Conversão\"]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de País\"]")
-	public WebElement codigopais;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Tipo de Taxa de Atualização\"]")
+	public WebElement tipo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Atividade para tributação\"]")
-	public WebElement atividade;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Grupo Atividade de Tributação\"]")
-	public WebElement grupo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição Atividade para Tributação\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Cadastro de Tipo de Taxa de Atualização\"]")
 	public WebElement descricao;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inclusão \"]")
+	public WebElement datainclusao;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
+	public WebElement taxa;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	public WebElement datainicio;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
@@ -45,23 +43,21 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	//@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
-	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
+	public WebElement mensagem;
 	
-	
-	public TiposDeServicosCriarPO() {
+	public TaxasDeConversaoCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
-		sleep(2000);
-		atividadesparatributacao.click();
-		sleep(2000);
 		
-		tiposdeservicos.click();
+		sleep(2000);
+		taxasdeconversao.click();
 		
 		sleep(2000);
 		
@@ -79,25 +75,31 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 		
 		System.out.println(id);
 		
-		sleep(2000);
+		
 		//criaçao
 		novo.click();
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigopais.sendKeys("BR");
 		
-		sleep(2000);
-		
-		atividade.sendKeys("atividade");
-		
-		sleep(2000);
-		grupo.sendKeys("7777");
+		tipo.sendKeys("Tipo");
 		
 		sleep(2000);
 		
 		descricao.sendKeys("descrição");
 		
+		sleep(2000);
+		
+		datainclusao.sendKeys(fechaActual());
+		
+		sleep(2000);
+		
+		taxa.sendKeys("7");
+		
+		sleep(2000);
+		
+		datainicio.sendKeys(fechaActual());
 		
 		sleep(2000);
 		gravar.click();
@@ -105,10 +107,11 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+	
 		
-		//biblioteca.click();
+		biblioteca.click();
 		
-		//sleep(2000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(siguiente);

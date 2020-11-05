@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos;
+package com.sap.timp.pageObjectModel.MDR.TaxasDeConversao;
 
 import java.util.ArrayList;
 
@@ -9,32 +9,28 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TiposDeServicosVisualizarPO extends TestBaseEliel{
+public class TaxasDeConversaoVisualizarPO extends TestBaseEliel {
 	
+	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	public WebElement taxasdeconversao;
 	
-	@FindBy(xpath = "//span[text()=\"Atividades para tributação\"]")
-	public WebElement atividadesparatributacao;
-	
-	@FindBy(xpath = "//span[text()=\"Tipos de Serviços\"]")
-	public WebElement tiposdeservicos;
-	
-	@FindBy(xpath = "//span[text()=\"Novo Tipos de Serviços\"]")
+	@FindBy(xpath = "//span[text()=\"Nova Taxa de Conversão\"]")
 	public WebElement novo;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Tipo de Taxa de Atualização\"]")
+	public WebElement tipo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de País\"]")
-	public WebElement codigopais;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Atividade para tributação\"]")
-	public WebElement atividade;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Grupo Atividade de Tributação\"]")
-	public WebElement grupo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição Atividade para Tributação\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Cadastro de Tipo de Taxa de Atualização\"]")
 	public WebElement descricao;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inclusão \"]")
+	public WebElement datainclusao;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
+	public WebElement taxa;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	public WebElement datainicio;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
@@ -50,35 +46,36 @@ public class TiposDeServicosVisualizarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
-
 	
-	@FindBy(xpath = "//span[@id=\"countryCode\"]")
-	public WebElement codigovi;
+	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
+	public WebElement mensagem;
 	
-	@FindBy(xpath = "//span[@id=\"taxActivity\"]")
-	public WebElement atividadevi;
+	@FindBy(xpath = "//span[@id=\"rateType\"]")
+	public WebElement tipovi;
 	
-	@FindBy(xpath = "//span[@id=\"groupTaxActivity\"]")
-	public WebElement grupovi;
-	
-	@FindBy(xpath = "//span[@id=\"descriptionTaxActivity\"]")
+	@FindBy(xpath = "//span[@id=\"rateDescription\"]")
 	public WebElement descricaovi;
 	
-	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
-	public WebElement fechar;
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inclusão \"]")
+	public WebElement datainclusaovi;
 	
-	public TiposDeServicosVisualizarPO() {
+	@FindBy(xpath = "//span[@id=\"rate\"]")
+	public WebElement taxavi;
+	
+	@FindBy(xpath = "//span[@id=\"validFrom\"]")
+	public WebElement datainiciovi;
+	
+	public TaxasDeConversaoVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 public ArrayList<Boolean> visualizar() {
 		
-		sleep(2000);
-		atividadesparatributacao.click();
+		
 		sleep(2000);
 		
-		tiposdeservicos.click();
+		taxasdeconversao.click();
 		
 		sleep(2000);
 		
@@ -104,27 +101,26 @@ public ArrayList<Boolean> visualizar() {
 		
 		visualizar.click();
 		sleep(2000);
-		//visualizar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		//visualizar
+		String tipovisualizar = tipovi.getText();
+		String descricaovisualizar =descricaovi.getText();
+		String taxavisualizar =taxavi.getText();
+		String datavisualizar =datainiciovi.getText();
 		
 		
-		String codigovisualizar = codigovi.getText();
-		String atividadevisualizar = atividadevi.getText();
-		String grupovisualizar = grupovi.getText();
-		String descricaovisualizar = descricaovi.getText();
-	
 		
-		
-	
-		System.out.println(codigovisualizar);
-		System.out.println(atividadevisualizar);
-		System.out.println(grupovisualizar);
+		System.out.println(tipovisualizar);
 		System.out.println(descricaovisualizar);
-	
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		System.out.println(taxavisualizar);
+		System.out.println(datavisualizar);
+		
+		
+		
+		
+		
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -150,33 +146,33 @@ public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		
+			
 		//editar
 		
 		
-		String codigoeditar=codigopais.getAttribute("value");
-		String atividadeeditar = atividade.getAttribute("value");
-		String grupoeditar = grupo.getAttribute("value");
+		String tipoeditar=tipo.getAttribute("value");
 		String descricaoeditar = descricao.getAttribute("value");
-	
+		String taxaeditar=taxa.getAttribute("value");
+		String dataeditar = datainicio.getAttribute("value");
 		
-		System.out.println( codigoeditar);
-		System.out.println(atividadeeditar);
-		System.out.println(grupoeditar);
+		
+		System.out.println( tipoeditar);
 		System.out.println(descricaoeditar);
-	
+		System.out.println( taxaeditar);
+		System.out.println(dataeditar);
+		
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		sucesso.add(tipoeditar.equals(tipovisualizar));
+		sucesso.add(descricaoeditar.equals(descricaovisualizar));
+		sucesso.add(taxaeditar.equals(taxavisualizar));
+		sucesso.add(dataeditar.equals(datavisualizar));
 		
-		sucesso.add(codigovisualizar.equals(codigoeditar));
-		sucesso.add(atividadevisualizar.equals(atividadeeditar));
-		sucesso.add(grupovisualizar.equals(grupoeditar));
-		sucesso.add(descricaovisualizar.equals(descricaoeditar));
-	
 		return sucesso;	
 
 	
 	}	
+
+	
 
 }

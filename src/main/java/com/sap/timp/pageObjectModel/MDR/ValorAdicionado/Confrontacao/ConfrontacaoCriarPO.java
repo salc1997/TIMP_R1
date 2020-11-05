@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos;
+package com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,30 +7,27 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TiposDeServicosCriarPO extends TestBaseEliel{
+public class ConfrontacaoCriarPO extends TestBaseEliel{
 	
 	
-	@FindBy(xpath = "//span[text()=\"Atividades para tributação\"]")
-	public WebElement atividadesparatributacao;
+	@FindBy(xpath = "//span[text()=\"Valor Adicionado\"]")
+	public WebElement valoradicionado;
 	
-	@FindBy(xpath = "//span[text()=\"Tipos de Serviços\"]")
-	public WebElement tiposdeservicos;
+	@FindBy(xpath = "//span[text()=\"Confrontação\"]")
+	public WebElement confrontacao;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Tipos de Serviços\"]")
+	@FindBy(xpath = "//span[text()=\"Nova Confrontação\"]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de País\"]")
-	public WebElement codigopais;
+	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div[2]")
+	public WebElement uf;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Atividade para tributação\"]")
-	public WebElement atividade;
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Grupo Atividade de Tributação\"]")
-	public WebElement grupo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição Atividade para Tributação\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	public WebElement data;
 	
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -45,23 +42,22 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	//@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
-	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
 	
 	
-	public TiposDeServicosCriarPO() {
+	public ConfrontacaoCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		sleep(2000);
-		atividadesparatributacao.click();
+		valoradicionado.click();
 		sleep(2000);
 		
-		tiposdeservicos.click();
+		confrontacao.click();
 		
 		sleep(2000);
 		
@@ -79,24 +75,24 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 		
 		System.out.println(id);
 		
-		sleep(2000);
+		
 		//criaçao
 		novo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigopais.sendKeys("BR");
+		uf.click();
 		
 		sleep(2000);
 		
-		atividade.sendKeys("atividade");
-		
-		sleep(2000);
-		grupo.sendKeys("7777");
+		opcao.click();
 		
 		sleep(2000);
 		
-		descricao.sendKeys("descrição");
+		data.sendKeys(fechaActual());
+		
+		sleep(2000);
+		
 		
 		
 		sleep(2000);
@@ -106,9 +102,9 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//biblioteca.click();
+		biblioteca.click();
 		
-		//sleep(2000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(siguiente);
@@ -140,6 +136,5 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 		return sucesso;
 		
 	}	
-
 
 }

@@ -1,75 +1,67 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2020-10-30T05:28:46Z" name="Default suite" finished-at="2020-10-30T05:30:27Z" duration-ms="100644">
-    <groups>
-    </groups>
-    <test started-at="2020-10-30T05:28:46Z" name="Default test" finished-at="2020-10-30T05:30:27Z" duration-ms="100644">
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@2a7f1f10]" started-at="2020-10-29T23:28:46Z" name="beforeClass" finished-at="2020-10-29T23:29:15Z" duration-ms="28974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@2a7f1f10]" started-at="2020-10-29T23:29:15Z" name="ingresar" finished-at="2020-10-29T23:29:23Z" duration-ms="7622" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresar -->
-        <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@2a7f1f10]" started-at="2020-10-29T23:29:23Z" name="ingresarMDR" finished-at="2020-10-29T23:29:47Z" duration-ms="23869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresarMDR -->
-        <test-method signature="detalle()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@2a7f1f10]" started-at="2020-10-29T23:29:47Z" name="detalle" finished-at="2020-10-29T23:30:27Z" duration-ms="40158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detalle -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@2a7f1f10]" started-at="2020-10-29T23:30:27Z" name="afterClass" finished-at="2020-10-29T23:30:27Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
-=======
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-30T02:03:44Z" name="Default suite" finished-at="2020-10-30T02:05:07Z" duration-ms="82819">
+  <suite started-at="2020-11-04T19:31:19Z" name="Default suite" finished-at="2020-11-04T19:32:15Z" duration-ms="55690">
     <groups>
     </groups>
-    <test started-at="2020-10-30T02:03:44Z" name="Default test" finished-at="2020-10-30T02:05:07Z" duration-ms="82819">
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles@c86b9e3]" started-at="2020-10-29T23:03:44Z" name="beforeClass" finished-at="2020-10-29T23:03:58Z" duration-ms="13633" status="PASS">
+    <test started-at="2020-11-04T19:31:19Z" name="Default test" finished-at="2020-11-04T19:32:15Z" duration-ms="55690">
+      <class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar@f78a47e]" started-at="2020-11-04T16:31:19Z" name="beforeClass" finished-at="2020-11-04T16:31:34Z" duration-ms="14681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles@c86b9e3]" started-at="2020-10-29T23:03:58Z" name="login" finished-at="2020-10-29T23:04:05Z" duration-ms="7189" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar@f78a47e]" started-at="2020-11-04T16:31:34Z" name="login" finished-at="2020-11-04T16:31:44Z" duration-ms="9529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles@c86b9e3]" started-at="2020-10-29T23:04:05Z" name="acessarMDR" finished-at="2020-10-29T23:04:27Z" duration-ms="22282" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar@f78a47e]" started-at="2020-11-04T16:31:44Z" name="acessarMDR" finished-at="2020-11-04T16:31:55Z" duration-ms="11836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="detalhes()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles@c86b9e3]" started-at="2020-10-29T23:04:27Z" name="detalhes" finished-at="2020-10-29T23:05:07Z" duration-ms="39692" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar@f78a47e]" started-at="2020-11-04T16:31:55Z" name="criar" finished-at="2020-11-04T16:32:11Z" duration-ms="15303" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[As informações não são as esperadas expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 10696aec897d080a150f9220285020ff
+*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: As informações não são as esperadas expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles.detalhes(DeterminacionRelevanciaPorMotivoDetalles.java:58)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 10696aec897d080a150f9220285020ff
+*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoCriarPO.criar(TaxasDeConversaoCriarPO.java:74)
+	at com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar.criar(TaxasDeConversaoCriar.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -92,51 +84,15 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- detalhes -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles@c86b9e3]" started-at="2020-10-29T23:05:07Z" name="afterClass" finished-at="2020-10-29T23:05:07Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoDetalles -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2020-10-30T20:34:50Z" name="Default suite" finished-at="2020-10-30T20:36:35Z" duration-ms="104963">
-    <groups>
-    </groups>
-    <test started-at="2020-10-30T20:34:50Z" name="Default test" finished-at="2020-10-30T20:36:35Z" duration-ms="104963">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:34:50Z" name="beforeClass" finished-at="2020-10-30T17:35:03Z" duration-ms="12841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:35:03Z" name="login" finished-at="2020-10-30T17:35:11Z" duration-ms="8324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:35:11Z" name="acessarMDR" finished-at="2020-10-30T17:35:36Z" duration-ms="24874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:35:36Z" name="editar" finished-at="2020-10-30T17:36:35Z" duration-ms="58841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar@f78a47e]" started-at="2020-10-30T17:36:35Z" name="afterClass" finished-at="2020-10-30T17:36:35Z" duration-ms="69" status="PASS">
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar@f78a47e]" started-at="2020-11-04T16:32:11Z" name="afterClass" finished-at="2020-11-04T16:32:15Z" duration-ms="4322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar -->
+      </class> <!-- com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

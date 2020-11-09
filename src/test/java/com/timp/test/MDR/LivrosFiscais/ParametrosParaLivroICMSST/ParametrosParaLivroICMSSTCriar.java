@@ -7,11 +7,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
 
-public class ParametrosParaLivroICMSSTCriar extends TestBaseEliel {
+public class ParametrosParaLivroICMSSTCriar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +21,7 @@ public class ParametrosParaLivroICMSSTCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaLivroICMSSTCriarPO = new ParametrosParaLivroICMSSTCriarPO();
@@ -28,7 +29,7 @@ public class ParametrosParaLivroICMSSTCriar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	
 	}
 
 	@Test(priority = 0)

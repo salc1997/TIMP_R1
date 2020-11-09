@@ -8,8 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class FatorCreditamentoCriarPO extends TestBaseKathy{
+public class FatorCreditamentoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//li/div/span[text()=\"Centralização\"]")
 	public WebElement centralização;
 	

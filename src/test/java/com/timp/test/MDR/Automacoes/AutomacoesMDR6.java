@@ -4,6 +4,12 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroCriarPO;
+import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoCriarPO;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa;
+import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa;
+import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluirEmMassa;
+import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluirEmMassa;
+import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluir;
@@ -32,6 +38,13 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesVisualizar;
+import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar;
+import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoEditar;
+import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluir;
+import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoVisualizar;
+import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfratacaoCriar;
+import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoDetalhes;
+import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoEditar;
 
 public class AutomacoesMDR6 extends TestBaseSteven{
 	
@@ -76,6 +89,31 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			TiposDeDependentesEditar tiposDeDependentesEditar;
 			TiposDeDependentesVisualizar tiposDeDependentesVisualizar;
 			TiposDeDependentesExcluir tiposDeDependentesExcluir;
+			
+		//Codigo receita
+			CodigoReceitaExcluirEmMassa codigoReceitaExcluirEmMassa;
+		//Siscoserv > Pais/Moeda
+			PaisMoedaExcluirEmMassa paisMoedaExcluirEmMassa;
+			
+		//Siscoserv > Registro Ras
+			RegistroRASExcluirEmMassa registroRASExcluirEmMassa;
+		
+		//Siscoserv > Registro RP
+			RegistroRPExcluirEmMassa registroRPExcluirEmMassa;
+		//Atividades Para Tributacao > Tipos De Servicos
+			TiposDeServicosExcluirEmMassa tiposDeServicosExcluirEmMassa;
+			
+		//Valor Adicionado > Confrontacao 
+			ConfratacaoCriar confratacaoCriar;
+			ConfrontacaoDetalhes confrontacaoDetalhes;
+			ConfrontacaoEditar confrontacaoEditar;
+			
+		//Taxas De Conversao
+			TaxasDeConversaoCriar taxasDeConversaoCriar;
+			TaxasDeConversaoEditar taxasDeConversaoEditar;
+			TaxasDeConversaoVisualizar taxasDeConversaoVisualizar;
+			TaxasDeConversaoExcluir taxasDeConversaoExcluir;
+		
 		//--------------------------------------------------------------------------
 			
 			//0
@@ -429,8 +467,158 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Tabela 07 - Tipos de Dependentes Fim-------------------------");
 				
 			}
+			//39
+			//Codigo receita	
+			@Test(priority = 39)
+			public void codigoReceitaExcluirEmMassa() {
+				System.out.println("-------------------Codigo receita-------------------------");
+				codigoReceitaExcluirEmMassa = new CodigoReceitaExcluirEmMassa();
+				codigoReceitaExcluirEmMassa.beforeClass();
+				codigoReceitaExcluirEmMassa.login();
+				codigoReceitaExcluirEmMassa.acessarMDR();
+				codigoReceitaExcluirEmMassa.criar();
+				codigoReceitaExcluirEmMassa.afterClass();
+
+			}
+			
+			//Siscoserv > Pais/Moeda
+			@Test(priority = 40)
+			public void paisMoedaExcluirEmMassa() {
+				System.out.println("-------------------Siscoserv > Pais/Moeda-------------------------");
+				paisMoedaExcluirEmMassa = new PaisMoedaExcluirEmMassa();
+				paisMoedaExcluirEmMassa.beforeClass();
+				paisMoedaExcluirEmMassa.login();
+				paisMoedaExcluirEmMassa.acessarMDR();
+				paisMoedaExcluirEmMassa.criar();
+				paisMoedaExcluirEmMassa.afterClass();
+
+			}
+			
+			//Siscoserv > RegistroRAS
+			@Test(priority = 41)
+			public void registroRASExcluirEmMassa() {
+				System.out.println("-------------------Siscoserv > RegistroRAS-------------------------");
+				registroRASExcluirEmMassa = new RegistroRASExcluirEmMassa();
+				registroRASExcluirEmMassa.beforeClass();
+				registroRASExcluirEmMassa.login();
+				registroRASExcluirEmMassa.acessarMDR();
+				registroRASExcluirEmMassa.criar();
+				registroRASExcluirEmMassa.afterClass();
+
+			}
+			
+			//Siscoserv > RegistroRP
+			@Test(priority = 42)
+			public void registroRPExcluirEmMassa() {
+				System.out.println("-------------------Siscoserv > RegistroRP-------------------------");
+				registroRPExcluirEmMassa = new RegistroRPExcluirEmMassa();
+				registroRPExcluirEmMassa.beforeClass();
+				registroRPExcluirEmMassa.login();
+				registroRPExcluirEmMassa.acessarMDR();
+				registroRPExcluirEmMassa.criar();
+				registroRPExcluirEmMassa.afterClass();
+
+			}
+			
+			//Atividades Para Tributacao > Tipos De Servicos 
+			@Test(priority = 43)
+			public void tiposDeServicosExcluirEmMassa() {
+				System.out.println("-------------------Atividades Para Tributacao > Tipos De Servicos-------------------------");
+				tiposDeServicosExcluirEmMassa = new TiposDeServicosExcluirEmMassa();
+				tiposDeServicosExcluirEmMassa.beforeClass();
+				tiposDeServicosExcluirEmMassa.login();
+				tiposDeServicosExcluirEmMassa.acessarMDR();
+				tiposDeServicosExcluirEmMassa.criar();
+				tiposDeServicosExcluirEmMassa.afterClass();
+
+			}
+			
+			//Valor Adicionado > Confrontacao
+			@Test(priority = 44)
+			public void confratacaoCriar() {
+				System.out.println("-------------------Valor Adicionado > Confrontacao-------------------------");
+				confratacaoCriar = new ConfratacaoCriar();
+				confratacaoCriar.beforeClass();
+				confratacaoCriar.login();
+				confratacaoCriar.acessarMDR();
+				confratacaoCriar.criar();
+				confratacaoCriar.afterClass();
+
+			}
+			
+			@Test(priority = 45)
+			public void confrontacaoDetalhes() {
+				confrontacaoDetalhes = new ConfrontacaoDetalhes();
+				confrontacaoDetalhes.beforeClass();
+				confrontacaoDetalhes.login();
+				confrontacaoDetalhes.acessarMDR();
+				confrontacaoDetalhes.detalhes();
+				confrontacaoDetalhes.afterClass();
+
+			}
+			
+			@Test(priority = 46)
+			public void confrontacaoEditar() {
+				confrontacaoEditar = new ConfrontacaoEditar();
+				confrontacaoEditar.beforeClass();
+				confrontacaoEditar.login();
+				confrontacaoEditar.acessarMDR();
+				confrontacaoEditar.editar();
+				confrontacaoEditar.afterClass();
+				System.out.println("-------------------Valor Adicionado > Confrontacao fim-------------------------");
+				
+			}
+			
+			//50
+			//Taxas De Conversao
+			@Test(priority = 50)
+			public void taxasDeConversaoCriar() {
+				System.out.println("-------------------Taxas De Conversao-------------------------");
+				taxasDeConversaoCriar = new TaxasDeConversaoCriar();
+				taxasDeConversaoCriar.beforeClass();
+				taxasDeConversaoCriar.login();
+				taxasDeConversaoCriar.acessarMDR();
+				taxasDeConversaoCriar.criar();
+				taxasDeConversaoCriar.afterClass();
+
+			}
 			
 			
+			@Test(priority = 51)
+			public void taxasDeConversaoEditar() {
+				taxasDeConversaoEditar = new TaxasDeConversaoEditar();
+				taxasDeConversaoEditar.beforeClass();
+				taxasDeConversaoEditar.login();
+				taxasDeConversaoEditar.acessarMDR();
+				taxasDeConversaoEditar.editar();
+				taxasDeConversaoEditar.afterClass();
+
+			}
 			
+			@Test(priority = 52)
+			public void taxasDeConversaoVisualizar() {
+				taxasDeConversaoVisualizar = new TaxasDeConversaoVisualizar();
+				taxasDeConversaoVisualizar.beforeClass();
+				taxasDeConversaoVisualizar.login();
+				taxasDeConversaoVisualizar.acessarMDR();
+				taxasDeConversaoVisualizar.Visualizar();
+				taxasDeConversaoVisualizar.afterClass();
+
+			}
+			
+			@Test(priority = 53)
+			public void taxasDeConversaoExcluir() {
+				taxasDeConversaoExcluir = new TaxasDeConversaoExcluir();
+				taxasDeConversaoExcluir.beforeClass();
+				taxasDeConversaoExcluir.login();
+				taxasDeConversaoExcluir.acessarMDR();
+				taxasDeConversaoExcluir.excluir();
+				taxasDeConversaoExcluir.afterClass();
+				System.out.println("-------------------Taxas De Conversao Fim-------------------------");
+				
+			}
+			
+		//57
+
 
 }

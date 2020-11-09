@@ -11,6 +11,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.apache.commons.*;
 
 
 import com.sap.timp.base.TestBaseSteven;
@@ -527,6 +528,38 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		@FindBy(xpath = "//div[@id=\"1_1_1_5\"]/div[2]/div/table/tbody/tr/th[1]/span")
 		public WebElement cfop5;
 		
+		//Subnivel 6
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][6]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel6;
+		
+		
+		//Subnivel 7
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][7]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel7;
+		
+		
+		//Subnivel 8
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][8]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel8;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][8]/div[2]/div/table/tbody/tr/th[2]/span")
+		public WebElement colunaCFOP;
+
+		
+		//Subnivel 9
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][9]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel9;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][9]/div[2]/div/table/tbody/tr[2]/td[1]/div/span")
+		public WebElement flecha9;
+		
+		@FindBy(xpath = "//button[text()=\"Sim\"]")
+		public WebElement sim;
+		
+		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveConfigurations\"]")
+		public WebElement lixeira;
+		
+		
 		
 	public HierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
@@ -545,6 +578,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		ultimo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -671,7 +705,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 	}
 
-	public void criarConfiguracao() {
+	public boolean criarConfiguracao() {
 
 		sleep(2000);
 		configuracoes.click();
@@ -682,13 +716,24 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		ultimo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
+		
+		
+		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
+		System.out.println("Id Configurações antes da criação: "+ id);
+		
 		nova.click();
 		sleep(3000);
 
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys(idObter1());
+		nomeHirarquia.sendKeys("teste automatizado hierar");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -737,8 +782,57 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		gravarC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		biblioteca.click();
 		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
+		sleep(3000);
+		
+		ultimo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
+		
+		
+		String idApos = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
+		idInserir2(idApos);
+		System.out.println("Id Configurações apos da criação: "+ idApos);
+		
+		
+		int idI = convertToInt(id);
+		int idAposI = convertToInt(idApos);
+		
+		boolean sucesso = false;
+		
+		if (idAposI > idI) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		
+		return sucesso;
+
+	}
+	
+	public void configurarConfiguracao() {
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		sleep(2000);
+	
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(6000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(calculator);
+		sleep(2000);
+		
 		calculator.click();
 		sleep(1000);
 		waitExpectElement(resultadoFinal);
@@ -1168,14 +1262,20 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		//waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(2000);
-
-
+		
+		executar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
+		sleep(3000);
+		
+		
 	}
 	
 	public void executar() {
-		
+		/*
 		//cometar desde aqui
 		sleep(2000);
 		configuracoes.click();
@@ -1186,7 +1286,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		//TQ1 972
+		//TP1 332
 		pesquisar.sendKeys("972");
 		pesquisar.sendKeys(Keys.ENTER);
 		
@@ -1201,13 +1302,10 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		waitExpectElement(executar);
 		sleep(2000);
 		//hasta aqui
+		*/
+
 		
-		
-		executar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
-		sleep(3000);
+
 		periodo.click();
 		sleep(3000);
 		paginaAnterior.click();
@@ -1242,7 +1340,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 	}
 	
-	public ArrayList<Boolean> subnivel1Verificacao() {
+	public ArrayList<Boolean> subnivel1() {
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -1375,7 +1473,6 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		return sucesso;
 		
 	}
-	
 	
 	public ArrayList<Boolean> subNivel2() {
 		
@@ -1624,12 +1721,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 	}
 	
-	
 	public ArrayList<Boolean> subNivel4() {
 		
 		System.out.println("--------------------------------------------SubNivel 4-------------------------------------");
 		sleep(1000);
-		//subnivel3.click();
+		subnivel3.click();
 		sleep(1000);
 		subnivel4.click();
 		sleep(1000);
@@ -1729,7 +1825,6 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 	}
 
-	
 	public boolean subNivel5() {
 		
 		System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
@@ -1744,6 +1839,403 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		System.out.println(sucesso);
 		return sucesso;
 		
+		
+	}
+	
+	public ArrayList<Boolean> subNivel6() {
+		
+		System.out.println("--------------------------------------------SubNivel 6-------------------------------------");
+		sleep(1000);
+		subnivel5.click();
+		sleep(1000);
+		subnivel6.click();
+		sleep(1000);
+		
+		int rows = driver.findElements(By.xpath("//div[@id=\"1_1_1_6\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]/td[1]/span")).size();
+		
+		ArrayList<Integer> cfopList = new ArrayList<Integer>();
+
+		String anterior ="";
+		String anteriorNumeros = "";
+		int f=1;
+		for (int i = 0; i < rows; i++) {
+			
+			String cfop = driver.findElement(By.xpath("//div[@id=\"1_1_1_6\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]["+f+"]/td[1]/span")).getText();
+			String cfopNumeros ="";
+			if (!cfop.isEmpty()) {
+				if (!cfop.equals(anterior)) {
+					String[] cfopSplit = cfop.split("/");
+					cfop = cfopSplit[0];
+					boolean numero = isNum(cfop);
+					if (numero == true) {
+						cfopNumeros = cfop;
+					}
+						
+					if (!cfopNumeros.equals(anteriorNumeros)) {
+						int cfopI = Integer.valueOf(cfopNumeros);
+						cfopList.add(cfopI);
+					}
+					
+
+				}
+			}
+			
+			anterior = cfop;
+			anteriorNumeros = cfopNumeros;
+			
+			f = f+1;
+		}
+		
+		System.out.println(cfopList);
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		for (int i = 0; i < cfopList.size()-1; i++) {
+			
+			int menor = 0;
+			int j = i+1;
+			System.out.println("Comparacion: "+j);	
+				menor = cfopList.get(i).compareTo(cfopList.get(j));
+				System.out.println("Registro  "+ i + "  "+ cfopList.get(i));	
+				System.out.println("Registro  "+ j + "  "+ cfopList.get(j));		
+				if (menor <  0) {
+					sucesso.add(true);
+				}else {
+					
+					sucesso.add(false);
+				}
+			System.out.println(sucesso.get(i));
+			
+		}
+		
+
+		System.out.println(sucesso);
+		
+		return sucesso;
+		
+	}
+		
+	public ArrayList<Boolean> subNivel7() {
+		
+		System.out.println("--------------------------------------------SubNivel 7-------------------------------------");
+		sleep(1000);
+		subnivel6.click();
+		sleep(1000);
+		subnivel7.click();
+		sleep(1000);
+		
+		int rows = driver.findElements(By.xpath("//div[@id=\"1_1_1_7\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]/td[1]/span")).size();
+		
+		ArrayList<Integer> cfopList = new ArrayList<Integer>();
+
+		String anterior ="";
+		String anteriorNumeros = "";
+		int f=1;
+		for (int i = 0; i < rows; i++) {
+			
+			String cfop = driver.findElement(By.xpath("//div[@id=\"1_1_1_7\"]/div[2]/div/table/tbody/tr[not(contains(@style,\"rgb\"))]["+f+"]/td[1]/span")).getText();
+			String cfopNumeros ="";
+			if (!cfop.isEmpty()) {
+				if (!cfop.equals(anterior)) {
+					String[] cfopSplit = cfop.split("/");
+					cfop = cfopSplit[0];
+					boolean numero = isNum(cfop);
+					if (numero == true) {
+						cfopNumeros = cfop;
+					}
+						
+					if (!cfopNumeros.equals(anteriorNumeros)) {
+						int cfopI = Integer.valueOf(cfopNumeros);
+						cfopList.add(cfopI);
+					}
+					
+
+				}
+			}
+			
+			anterior = cfop;
+			anteriorNumeros = cfopNumeros;
+			
+			f = f+1;
+		}
+		
+		System.out.println(cfopList);
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		for (int i = 0; i < cfopList.size()-1; i++) {
+			
+			int menor = 0;
+			int j = i+1;
+			System.out.println("Comparacion: "+j);	
+				menor = cfopList.get(i).compareTo(cfopList.get(j));
+				System.out.println("Registro  "+ i + "  "+ cfopList.get(i));	
+				System.out.println("Registro  "+ j + "  "+ cfopList.get(j));		
+				if (menor >  0) {
+					sucesso.add(true);
+				}else {
+					
+					sucesso.add(false);
+				}
+			System.out.println(sucesso.get(i));
+			
+		}
+		
+
+		System.out.println(sucesso);
+		
+		return sucesso;
+		
+	}
+	
+	public ArrayList<Boolean> subNivel8() {
+		
+		System.out.println("--------------------------------------------SubNivel 8-------------------------------------");
+		sleep(1000);
+		subnivel7.click();
+		sleep(1000);
+		subnivel8.click();
+		sleep(1000);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"lvl-3\")][8]/div[2]/div/table/tbody/tr[not(contains(@class,\"header\")) and @class]")).size();
+		
+		int f = 1; 
+		for (int i = 0; i < rows; i++) {
+			
+			String numeroColuna = driver.findElement(By.xpath("//div[contains(@class,\"lvl-3\")][8]/div[2]/div/table/tbody/tr[not(contains(@class,\"header\")) and @class]["+f+"]/td/div/div")).getText();
+			System.out.println(numeroColuna);
+			
+			int numeroColunaI = convertToInt(numeroColuna);
+			
+			if (numeroColunaI == f) {
+				sucesso.add(true);
+			}else {
+				sucesso.add(false);
+			}
+			
+
+			f = f+1;
+			
+		}
+		
+		System.out.println(sucesso);
+		return sucesso;
+		
+	}
+	
+	public ArrayList<Boolean> subNivel9() {
+		
+		System.out.println("--------------------------------------------SubNivel 9-------------------------------------");
+		sleep(1000);
+		subnivel8.click();
+		sleep(1000);
+		subnivel9.click();
+		sleep(1000);
+		
+		String cfopTabla = driver.findElement(By.xpath("//div[contains(@class,\"lvl-3\")][9]/div[2]/div/table/tbody/tr[2]/td[2]")).getText();
+		System.out.println(cfopTabla);
+		
+		flecha9.click();
+		sleep(1000);
+		
+	
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"lvl-3\")][9]/div[2]/div/table/tbody/tr[3]/td/table/tbody/tr[contains(@class,\"detail\")]")).size();
+		
+		int f = 1; 
+		for (int i = 0; i < rows; i++) {
+			
+			String cfopRegistro = driver.findElement(By.xpath("//div[contains(@class,\"lvl-3\")][9]/div[2]/div/table/tbody/tr[3]/td/table/tbody/tr[contains(@class,\"detail\")]["+rows+"]/td[2]/span")).getText();
+			System.out.println(cfopRegistro);
+			
+			if (cfopRegistro.equals(cfopTabla)) {
+				sucesso.add(true);
+			}else {
+				sucesso.add(false);
+			}
+			
+			
+
+			f = f+1;
+			
+		}
+		
+		String colunaData = driver.findElement(By.xpath("//div[contains(@class,\"lvl-3\")][9]/div[2]/div/table/tbody/tr[3]/td/table/tbody/tr/th[3]/span")).getText();
+		
+		System.out.println("Valor da Coluna: "+ colunaData.equals("Data lançamento doc. fiscal"));
+		sucesso.add(colunaData.equals("Data lançamento doc. fiscal"));
+		
+		
+		System.out.println(sucesso);
+		return sucesso;
+		
+	}
+
+	public ArrayList<Boolean> excluirConfiguracao() {
+		
+		
+		biblioteca.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		String idConfiguracao = idObter2();
+		
+		pesquisar.sendKeys(idConfiguracao);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
+		WebElement lixeiraO = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		
+		menu.click();
+		sleep(1000);
+		lixeiraO.click();
+		sleep(3000);
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+		
+		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		if (exclucao>0) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		
+		lixeira.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys(idConfiguracao);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
+		WebElement excluirL = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		menu.click();
+		sleep(1000);
+		excluirL.click();
+		sleep(3000);
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+		/*
+		int exclucao2 = driver.findElements(By.xpath("//span[contains(text(),\"A configuração do builder foi excluída com sucesso\")]")).size();
+		
+		if (exclucao2>1) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		*/
+		
+		return sucesso;
+	}
+	
+	public ArrayList<Boolean> excluirHierarquia() {
+		
+		hierarquias.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idHierarquia = idObter1();
+		
+		pesquisar.sendKeys(idHierarquia);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
+		WebElement lixeiraO = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		
+		menu.click();
+		sleep(1000);
+		lixeiraO.click();
+		sleep(3000);
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(3000);
+		
+		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		if (exclucao>0) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		
+		WebElement lixeiraH = driver.findElement(By.xpath("//li[@identifier=\"accordion-item-inactiveHierarchies\"]"));
+		lixeiraH.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys(idHierarquia);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
+		WebElement excluirL = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		menu.click();
+		sleep(1000);
+		excluirL.click();
+		sleep(3000);
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+		/*
+		int exclucao2 = driver.findElements(By.xpath("//span[contains(text(),\"A configuração do builder foi excluída com sucesso\")]")).size();
+		
+		if (exclucao2>1) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		
+		*/
+		return sucesso;
 	}
 	
 	

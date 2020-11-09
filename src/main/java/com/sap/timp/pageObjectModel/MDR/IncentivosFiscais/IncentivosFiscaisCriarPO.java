@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseMassiel;
 
 public class IncentivosFiscaisCriarPO extends TestBaseKenssy {
 	

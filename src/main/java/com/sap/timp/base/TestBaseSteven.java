@@ -43,8 +43,8 @@ public class TestBaseSteven {
 	public WebDriver initialization() {
 
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
-
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		
 		//ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
@@ -74,9 +74,15 @@ public class TestBaseSteven {
 		driver.manage().window().maximize();
 
 		driver.get(tc2);
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
+<<<<<<< HEAD
 		driver.get(tq1);
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 	}
 	
@@ -116,6 +122,20 @@ public class TestBaseSteven {
 		
 		return sucesso;
 	}
+	
+	public boolean isNum(String strNum) {
+	    boolean ret = true;
+	    try {
+
+	        Double.parseDouble(strNum);
+
+	    }catch (NumberFormatException e) {
+	        ret = false;
+	    }
+	    return ret;
+	}
+	
+	
 	
 	public Boolean mayorQue(double mayor, double menor ) {
 		

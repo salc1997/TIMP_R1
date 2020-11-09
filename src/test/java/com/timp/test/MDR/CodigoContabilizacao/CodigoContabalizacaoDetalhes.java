@@ -32,7 +32,7 @@ public class CodigoContabalizacaoDetalhes extends TestBaseSteven {
 		codigoContabilizacaoDetalhesPO = new CodigoContabilizacaoDetalhesPO();
 	}
 
-	@AfterClass
+	@AfterClass 
 	public void afterClass() {
 		driver.close();
 	}

@@ -27,7 +27,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestBaseSteven {
 
 	// TC2
-	protected String tc2   = "http://as1-100-01-tc2:8000/timp/login/#/login";
+	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
 	// TD1
 	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 
@@ -43,8 +43,8 @@ public class TestBaseSteven {
 	public WebDriver initialization() {
 
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
-
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		
 		//ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
@@ -73,9 +73,16 @@ public class TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
+		driver.get(tc2);
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
+<<<<<<< HEAD
 		driver.get(tq1);
-
-
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 	}
 	
@@ -88,7 +95,6 @@ public class TestBaseSteven {
 		try {
 			Thread.sleep(miliSeconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -116,6 +122,20 @@ public class TestBaseSteven {
 		
 		return sucesso;
 	}
+	
+	public boolean isNum(String strNum) {
+	    boolean ret = true;
+	    try {
+
+	        Double.parseDouble(strNum);
+
+	    }catch (NumberFormatException e) {
+	        ret = false;
+	    }
+	    return ret;
+	}
+	
+	
 	
 	public Boolean mayorQue(double mayor, double menor ) {
 		

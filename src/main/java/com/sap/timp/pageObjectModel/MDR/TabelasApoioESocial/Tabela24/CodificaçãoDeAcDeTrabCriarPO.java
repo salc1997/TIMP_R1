@@ -84,9 +84,9 @@ public class CodificaçãoDeAcDeTrabCriarPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("007");
+		codigo.sendKeys("077");
 		sleep(1000);
-		descricao.sendKeys("Test de QA para excluir");
+		descricao.sendKeys("Test de QA para Visualizar");
 		sleep(1000);
 		
 		String data = fechaActual();

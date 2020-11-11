@@ -6,12 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriarPO;
 
-public class DeterminacaoDeRelevanciaPorRegraCriar extends TestBaseEliel {
+public class DeterminacaoDeRelevanciaPorRegraCriar extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +21,7 @@ public class DeterminacaoDeRelevanciaPorRegraCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		determinacaoDeRelevanciaPorRegraCriarPO = new DeterminacaoDeRelevanciaPorRegraCriarPO();

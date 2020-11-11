@@ -4,7 +4,7 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirPO;
+
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -14,6 +14,7 @@ import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMo
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaDetalhes;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaEditar;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluir;
+import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaVisualizar;
 import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalCriar;
 import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalEditar;
@@ -37,6 +38,16 @@ import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoExcluir;
@@ -49,13 +60,16 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCr
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
-import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID;
-import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.*;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir;
@@ -72,7 +86,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	CadastroMotivosReaberturaEditar cadastroMotivosReaberturaEditar;
 	CadastroMotivosReaberturaExcluir cadastroMotivosReaberturaExcluir;
 	CadastroMotivosReaberturaVisualizar cadastroMotivosReaberturaVisualizar;
-
+	CadastroMotivosReaberturaExcluirEmMassa cadastroMotivosReaberturaExcluirEmMassa;
 	// Parâmetros de criação de NF > Cadastro de Nota Fiscal
 
 	CadastroNotaFiscalCriar cadastroNotaFiscalCriar;
@@ -161,6 +175,29 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	RegistroRFCriar registroRFCriar;
 	
 	
+	//Tabelas de Apoio E-SOCIAL	Tabela 09 - Tipos de Arquivos e-Social
+	
+	TiposDeArquivosESocialCriar tiposDeArquivosESocialCriar;
+	TiposDeArquivosESocialEditar tiposDeArquivosESocialEditar;
+	TiposDeArquivosESocialExcluir tiposDeArquivosESocialExcluir;
+	TiposDeArquivosESocialExcluirEmMassa tiposDeArquivosESocialExcluirEmMassa;
+	TiposDeArquivosESocialVisualizar tiposDeArquivosESocialVisualizar;
+	
+	
+	//Tabelas de Apoio E-SOCIAL > Tabela 10 - Tipos de Lotação Tributária
+	
+	TiposDeLotacaoTributarioCriar tiposDeLotacaoTributarioCriar;
+	TiposDeLotacaoTributarioEditar tiposDeLotacaoTributarioEditar;
+	TiposDeLotacaoTributarioExcluir tiposDeLotacaoTributarioExcluir;
+	TiposDeLotacaoTributarioExcluirEmMassa tiposDeLotacaoTributarioExcluirEmMassa;
+	TiposDeLotacaoTributarioVisualizar tiposDeLotacaoTributarioVisualizar;
+	
+	//Tabelas de Apoio E-SOCIAL > Tabela 18 - Motivos de Afastamento
+	MotivoDeAfastamentoCriar motivoDeAfastamentoCriar;
+	MotivoDeAfastamentoEditar motivoDeAfastamentoEditar;
+	MotivoDeAfastamentoExcluir motivoDeAfastamentoExcluir;
+	MotivoDeAfastamentoExcluirEmMassa motivoDeAfastamentoExcluirEmMassa;
+	MotivoDeAfastamentoVisualizar motivoDeAfastamentoVisualizar;
 	
 	// 0
 
@@ -205,6 +242,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		cadastroMotivosReaberturaVisualizar.afterClass();
 
 	}
+	
 
 	@Test(priority = 3)
 	public void cadastroMotivosReaberturaDetalhes() {
@@ -228,9 +266,24 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		cadastroMotivosReaberturaExcluir.excluir();
 		cadastroMotivosReaberturaExcluir.afterClass();
 
+		
+	}
+	
+	@Test(priority = 5)
+	public void cadastroMotivosReaberturaExcluirEmMassa() {
+
+		cadastroMotivosReaberturaExcluirEmMassa = new CadastroMotivosReaberturaExcluirEmMassa();
+		cadastroMotivosReaberturaExcluirEmMassa.beforeClass();
+		cadastroMotivosReaberturaExcluirEmMassa.login();
+		cadastroMotivosReaberturaExcluirEmMassa.acessarMDR();
+		cadastroMotivosReaberturaExcluirEmMassa.criar();
+		cadastroMotivosReaberturaExcluirEmMassa.afterClass();
+		
 		System.out.println(
 				"-------------------Determinação de Relevância de Tarefa por Motivo de Reabertura > Cadastro de Motivos de Reabertura Fin-------------------------");
+
 	}
+
 
 	// 6
 
@@ -913,6 +966,222 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 	//102
 		
+		// Tabelas de Apoio E-SOCIAL > Tabela 09 - Tipos de Arquivos e-Social
+
+		@Test(priority = 102)
+		public void tiposDeArquivosESocialCriar() {
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 09 - Tipos de Arquivos e-Social-------------------------");
+
+			tiposDeArquivosESocialCriar = new TiposDeArquivosESocialCriar();
+			tiposDeArquivosESocialCriar.beforeClass();
+			tiposDeArquivosESocialCriar.login();
+			tiposDeArquivosESocialCriar.acessarMDR();
+			tiposDeArquivosESocialCriar.criar();
+			tiposDeArquivosESocialCriar.afterClass();
+
+		}
+
+		@Test(priority = 103)
+		public void tiposDeArquivosESocialEditar() {
+
+			tiposDeArquivosESocialEditar = new TiposDeArquivosESocialEditar();
+			tiposDeArquivosESocialEditar.beforeClass();
+			tiposDeArquivosESocialEditar.login();
+			tiposDeArquivosESocialEditar.acessarMDR();
+			tiposDeArquivosESocialEditar.editar();
+			tiposDeArquivosESocialEditar.afterClass();
+
+		}
+
+		@Test(priority = 104)
+		public void tiposDeArquivosESocialVisualizar() {
+
+			tiposDeArquivosESocialVisualizar = new TiposDeArquivosESocialVisualizar();
+			tiposDeArquivosESocialVisualizar.beforeClass();
+			tiposDeArquivosESocialVisualizar.login();
+			tiposDeArquivosESocialVisualizar.acessarMDR();
+			tiposDeArquivosESocialVisualizar.visualizar();
+			tiposDeArquivosESocialVisualizar.afterClass();
+
+		}
+
+
+
+
+		@Test(priority = 105)
+		public void tiposDeArquivosESocialExcluir() {
+
+			tiposDeArquivosESocialExcluir = new TiposDeArquivosESocialExcluir();
+			tiposDeArquivosESocialExcluir.beforeClass();
+			tiposDeArquivosESocialExcluir.login();
+			tiposDeArquivosESocialExcluir.acessarMDR();
+			tiposDeArquivosESocialExcluir.excluir();
+			tiposDeArquivosESocialExcluir.afterClass();
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 09 - Tipos de Arquivos e-Social Fin-------------------------");
+		}
+		
+		
+		@Test(priority = 106)
+		public void tiposDeArquivosESocialExcluirEmMassa() {
+
+			tiposDeArquivosESocialExcluirEmMassa = new TiposDeArquivosESocialExcluirEmMassa();
+			tiposDeArquivosESocialExcluirEmMassa.beforeClass();
+			tiposDeArquivosESocialExcluirEmMassa.login();
+			tiposDeArquivosESocialExcluirEmMassa.acessarMDR();
+			tiposDeArquivosESocialExcluirEmMassa.criar();
+			tiposDeArquivosESocialExcluirEmMassa.afterClass();
+
+		}
+
+	
+		
+	//109
+		
+		// Tabelas de Apoio E-SOCIAL > Tabela 10 - Tipos de Lotação Tributária
+
+		@Test(priority = 109)
+		public void tiposDeLotacaoTributarioCriar() {
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 10 - Tipos de Lotação Tributária-------------------------");
+
+			tiposDeLotacaoTributarioCriar = new TiposDeLotacaoTributarioCriar();
+			tiposDeLotacaoTributarioCriar.beforeClass();
+			tiposDeLotacaoTributarioCriar.login();
+			tiposDeLotacaoTributarioCriar.acessarMDR();
+			tiposDeLotacaoTributarioCriar.criar();
+			tiposDeLotacaoTributarioCriar.afterClass();
+
+		}
+
+		@Test(priority = 110)
+		public void tiposDeLotacaoTributarioEditar() {
+
+			tiposDeLotacaoTributarioEditar = new TiposDeLotacaoTributarioEditar();
+			tiposDeLotacaoTributarioEditar.beforeClass();
+			tiposDeLotacaoTributarioEditar.login();
+			tiposDeLotacaoTributarioEditar.acessarMDR();
+			tiposDeLotacaoTributarioEditar.editar();
+			tiposDeLotacaoTributarioEditar.afterClass();
+
+		}
+
+		@Test(priority = 111)
+		public void tiposDeLotacaoTributarioVisualizar() {
+
+			tiposDeLotacaoTributarioVisualizar = new TiposDeLotacaoTributarioVisualizar();
+			tiposDeLotacaoTributarioVisualizar.beforeClass();
+			tiposDeLotacaoTributarioVisualizar.login();
+			tiposDeLotacaoTributarioVisualizar.acessarMDR();
+			tiposDeLotacaoTributarioVisualizar.visualizar();
+			tiposDeLotacaoTributarioVisualizar.afterClass();
+
+		}
+
+
+
+		@Test(priority = 112)
+		public void tiposDeLotacaoTributarioExcluir() {
+
+			tiposDeLotacaoTributarioExcluir = new TiposDeLotacaoTributarioExcluir();
+			tiposDeLotacaoTributarioExcluir.beforeClass();
+			tiposDeLotacaoTributarioExcluir.login();
+			tiposDeLotacaoTributarioExcluir.acessarMDR();
+			tiposDeLotacaoTributarioExcluir.excluir();
+			tiposDeLotacaoTributarioExcluir.afterClass();
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 10 - Tipos de Lotação Tributária Fin-------------------------");
+		}
+		
+
+		@Test(priority = 113)
+		public void tiposDeLotacaoTributarioExcluirEmMassa() {
+
+			tiposDeLotacaoTributarioExcluirEmMassa = new TiposDeLotacaoTributarioExcluirEmMassa();
+			tiposDeLotacaoTributarioExcluirEmMassa.beforeClass();
+			tiposDeLotacaoTributarioExcluirEmMassa.login();
+			tiposDeLotacaoTributarioExcluirEmMassa.acessarMDR();
+			tiposDeLotacaoTributarioExcluirEmMassa.criar();
+			tiposDeLotacaoTributarioExcluirEmMassa.afterClass();
+
+		}
+
+		
+		
+	//116
+		
+		// Tabelas de Apoio E-SOCIAL	Tabela 18 - Motivos de Afastamento
+
+		@Test(priority = 116)
+		public void motivoDeAfastamentoCriar() {
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL	Tabela 18 - Motivos de Afastamento-------------------------");
+
+			motivoDeAfastamentoCriar = new MotivoDeAfastamentoCriar();
+			motivoDeAfastamentoCriar.beforeClass();
+			motivoDeAfastamentoCriar.login();
+			motivoDeAfastamentoCriar.acessarMDR();
+			motivoDeAfastamentoCriar.criar();
+			motivoDeAfastamentoCriar.afterClass();
+
+		}
+
+		@Test(priority = 117)
+		public void motivoDeAfastamentoEditar() {
+
+			motivoDeAfastamentoEditar = new MotivoDeAfastamentoEditar();
+			motivoDeAfastamentoEditar.beforeClass();
+			motivoDeAfastamentoEditar.login();
+			motivoDeAfastamentoEditar.acessarMDR();
+			motivoDeAfastamentoEditar.editar();
+			motivoDeAfastamentoEditar.afterClass();
+
+		}
+
+		@Test(priority = 118)
+		public void motivoDeAfastamentoVisualizar() {
+
+			motivoDeAfastamentoVisualizar = new MotivoDeAfastamentoVisualizar();
+			motivoDeAfastamentoVisualizar.beforeClass();
+			motivoDeAfastamentoVisualizar.login();
+			motivoDeAfastamentoVisualizar.acessarMDR();
+			motivoDeAfastamentoVisualizar.visualizar();
+			motivoDeAfastamentoVisualizar.afterClass();
+
+		}
+
+
+
+		@Test(priority = 119)
+		public void motivoDeAfastamentoExcluir() {
+
+			motivoDeAfastamentoExcluir = new MotivoDeAfastamentoExcluir();
+			motivoDeAfastamentoExcluir.beforeClass();
+			motivoDeAfastamentoExcluir.login();
+			motivoDeAfastamentoExcluir.acessarMDR();
+			motivoDeAfastamentoExcluir.excluir();
+			motivoDeAfastamentoExcluir.afterClass();
+
+			
+		}
+		
+
+		@Test(priority = 120)
+		public void motivoDeAfastamentoExcluirEmMassa() {
+
+			motivoDeAfastamentoExcluirEmMassa = new MotivoDeAfastamentoExcluirEmMassa();
+			motivoDeAfastamentoExcluirEmMassa.beforeClass();
+			motivoDeAfastamentoExcluirEmMassa.login();
+			motivoDeAfastamentoExcluirEmMassa.acessarMDR();
+			motivoDeAfastamentoExcluirEmMassa.criar();
+			motivoDeAfastamentoExcluirEmMassa.afterClass();
+			
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL	Tabela 18 - Motivos de Afastamento Fin-------------------------");
+		}
+
+		//123
+
 		
 
 }

@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseEliel {
+public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
 	
 	
 	

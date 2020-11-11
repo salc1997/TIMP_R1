@@ -22,7 +22,7 @@ public class TiposDeServicosVisualizarPO extends TestBaseEliel{
 	public WebElement novo;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Código País\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de País\"]")
 	public WebElement codigopais;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Atividade para tributação\"]")

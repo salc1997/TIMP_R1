@@ -6,8 +6,10 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Hashtable;
-import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,7 +23,7 @@ public class TestBaseKenssy extends TestBaseSteven{
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tc2);
 		return driver;
 	}
 
@@ -47,6 +49,25 @@ public class TestBaseKenssy extends TestBaseSteven{
 		//String nombreMes = mes;
 		
 		return mes;
+	}
+	
+	public String diaHoy() {
+		Calendar c1 = Calendar.getInstance();
+		Calendar c2 = new GregorianCalendar();
+		
+		String dia = Integer.toString(c2.get(Calendar.DATE));
+		
+
+		return dia;
+
+	}
+	
+	public String diaActual() {
+		// Obtienes el mes actual
+		int anio = LocalDate.now().getDayOfMonth();
+		
+		String anioString = String.valueOf(anio);
+		return anioString;
 	}
 	
 	public String anioActual() {

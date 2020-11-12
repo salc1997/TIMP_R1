@@ -43,6 +43,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	// Nome da Hierarquia
 	@FindBy(xpath = "//input[contains(@placeholder,\"Nome da Hierarquia\")]")
 	public WebElement nomeDaHierarquia;
+	
 	@FindBy(xpath = "//div[@id=\"hierarchies\"]/div/div[@id=\"belongsTo\" and @class=\"field\"]/div/div/div[2]")
 	public WebElement listaNomeDaAba;
 
@@ -571,6 +572,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 	String valorBCBG = "";
 	String parentG = "";
+	
 	public ArrayList<Boolean> criarConfiguracaoHierariquia() {
 		
 		boolean tc2 = false;
@@ -608,7 +610,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 
-		nomeDeHierarquia.sendKeys("Teste Automatizado Hierarquia");
+		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Teste Automatizado");

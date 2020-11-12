@@ -19,7 +19,7 @@ public class TiposDeServicosCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Novo Tipos de Serviços\"]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Código País\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de País\"]")
 	public WebElement codigopais;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Atividade para tributação\"]")

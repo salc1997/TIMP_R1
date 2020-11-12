@@ -27,7 +27,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestBaseSteven {
 
 	// TC2
-	protected String tc2   = "http://as1-100-01-tc2:8000/timp/login/#/login";
+	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
 	// TD1
 	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 
@@ -45,7 +45,8 @@ public class TestBaseSteven {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
-		
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+	
 		//ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		//driver = new ChromeDriver(options);

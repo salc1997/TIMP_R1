@@ -2,6 +2,7 @@ package com.timp.test.MDR.CenariosCorrecao;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -15,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CenariosCorrecaoFiltrosAvanzados extends TestBaseKathy {
+public class CenariosCorrecaoFiltrosAvanzados extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoFiltrosAvanzadosPO cenariosCorrecaoFiltrosAvanzadosPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationK();
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cenariosCorrecaoFiltrosAvanzadosPO = new CenariosCorrecaoFiltrosAvanzadosPO();

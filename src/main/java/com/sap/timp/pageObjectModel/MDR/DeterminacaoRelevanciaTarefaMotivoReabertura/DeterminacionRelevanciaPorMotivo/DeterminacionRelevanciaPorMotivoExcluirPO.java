@@ -1,4 +1,4 @@
-package DeterminacaoRelevanciaTarefaMotivoReabertura;
+package com.sap.timp.pageObjectModel.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

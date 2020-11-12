@@ -43,7 +43,7 @@ public class TestBaseSteven {
 	public WebDriver initialization() {
 
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
 		
 		//ChromeOptions options = new ChromeOptions();
@@ -73,7 +73,7 @@ public class TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tc2);
+		driver.get(tp1);
 
 		return driver;
 	}

@@ -96,7 +96,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 	//public WebElement menulistaTd1;
 	@FindBy(xpath = "//div[contains(@class,\"comment\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div[contains(@class,\"downmenu\")]")
 	public WebElement menulistaTd1;
-	@FindBy(xpath = "//div[@data-column=\"n2\" and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div[2]")
+	@FindBy(xpath = "//div[contains(@data-column,\"n\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div[2]")
 	public WebElement menuListaTc2;
 	
 

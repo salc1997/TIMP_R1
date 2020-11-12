@@ -6,10 +6,12 @@ import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.prefs.Preferences;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +22,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestBaseParalelo2 extends TestBaseSteven {
+public class TestBaseParalelo2{
 
 	// TC2
 	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
@@ -31,10 +33,30 @@ public class TestBaseParalelo2 extends TestBaseSteven {
 
 	protected String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
 	
-	public static WebDriver driver;
-	public WebDriver initializationL() {
+	public ThreadLocal<ChromeDriver> driver2 = new ThreadLocal<ChromeDriver>();
 
+	public WebDriver getDriver() {
+		return driver2.get();
+	}
+	
+	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		driver2.set(new ChromeDriver());
+	}
+	
+	
+
+	
+	
+	public void tearDown() {
+		getDriver().quit();
+	}
+	/*
+	public WebDriver initializationL() {
+		
+		
+
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(td1);
@@ -42,15 +64,403 @@ public class TestBaseParalelo2 extends TestBaseSteven {
 		return driver;
 
 	}
+	*/
+	
+	
+public void close() {
+
+		
+	}
 
 	public void sleep(int miliSeconds) {
 		try {
 			Thread.sleep(miliSeconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+	
+	public Boolean igualInt(int valor, int esperado) {
+		
+		boolean sucesso = false;
+		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean igualDobule(double valor, double esperado) {
+		
+		boolean sucesso = false;
+		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public boolean isNum(String strNum) {
+	    boolean ret = true;
+	    try {
+
+	        Double.parseDouble(strNum);
+
+	    }catch (NumberFormatException e) {
+	        ret = false;
+	    }
+	    return ret;
+	}
+	
+	
+	
+	public Boolean mayorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (mayor > menor) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean menorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (menor < mayor) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+
+	public void waitExpectXpath(String locator) {
+		WebDriverWait wait = new WebDriverWait((WebDriver) driver2, 15000);
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+
+	}
+	
+	public String remplazarPuntos(String valor) {
+		
+		valor = valor.replace(".", "");
+
+		return valor;
+
+	}
+	
+	public String remplazarComas(String valor) {
+		
+		valor = valor.replace(",", ".");
+		
+		return valor;
+		
+		
+	}
+	
+	public String formatear(String valor) {
+		
+		valor = valor.replace(".", "");
+		valor = valor.replace(",", ".");
+		
+		return valor;
+	}
+
+	public void waitExpectElement(WebElement element) {
+		WebDriverWait wait = new WebDriverWait((WebDriver) driver2, 15000);
+
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+
+	}
+
+	public void actionsMoveToElementXpath(String xpath) {
+		Actions actions = new Actions(getDriver());
+		actions.moveToElement(((WebDriver) driver2).findElement(By.xpath(xpath))).perform();
+	}
+
+	public void actionsMoveToElementElement(WebElement element) {
+		Actions actions = new Actions(getDriver());
+		actions.moveToElement(element).perform();
+	}
+
+	public void invisibilityOfElement(String xpath) {
+		WebDriverWait wait = new WebDriverWait(getDriver(), 300000);
+
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
+
+	}
+
+	public void attributeToBeXpath(String locator, String attribute, String value) {
+		WebDriverWait wait = new WebDriverWait(getDriver(), 15000);
+
+		wait.until(ExpectedConditions.attributeToBe(By.xpath(locator), attribute, value));
+	}
+
+	public void attributeToBeElement(WebElement element, String attribute, String value) {
+		WebDriverWait wait = new WebDriverWait(getDriver(), 15000);
+
+		wait.until(ExpectedConditions.attributeToBe(element, attribute, value));
+	}
+
+	public void dobleClickXpath(String locator) {
+
+		Actions actions = new Actions(getDriver());
+		actions.doubleClick(((WebDriver) driver2).findElement(By.xpath(locator))).perform();
+
+	}
+
+	public void dobleClickElement(WebElement element) {
+
+		Actions actions = new Actions((WebDriver) driver2);
+		actions.doubleClick(element).perform();
+
+	}
+
+	public void moveToElement(WebElement element, WebElement hacia) {
+		Actions actions = new Actions((WebDriver) driver2);
+
+		actions.dragAndDrop(element, hacia).perform();
+
+	}
+
+	public String fechaActual() {
+
+		Date fecha = new Date();
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(fecha);
+
+	}
+
+	public String fechaAyer() {
+
+		Date fecha = new Date();
+
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(-1));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
+	
+
+	public String fechaManana() {
+
+		Date fecha = new Date();
+
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+1));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
+
+	public Double convertToDouble(String numero) {
+
+		Double result = new Double(numero);
+
+		return result;
+
+	}
+	
+	public String getText(WebElement element) {
+
+		String texto = element.getText();
+		
+		if (texto.isEmpty()==true) {
+			texto = "vazio";
+		}
+		
+		return texto;
+
+	}
+	
+	public String textContent(WebElement element) {
+
+		String texto = element.getAttribute("textContent");
+		
+		return texto;
+
+	}
+	
+	public String getValue(WebElement element) {
+
+		String texto = element.getAttribute("value");
+		
+		if (texto.isEmpty()==true) {
+			texto = "vazio";
+		}
+		
+		return texto;
+
+	}
+	
+	
+	public int convertToInt(String numero) {
+
+		int result = new Integer(numero);
+
+		return result;
+
+	}
+
+	public void attributoNotToBeEmptyElement(WebElement element, String attribute) {
+		WebDriverWait wait = new WebDriverWait((WebDriver) driver2, 15000);
+
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
+	}
+
+	public void attributoNotToBeEmptyXpath(String xpath, String attribute) {
+		WebDriverWait wait = new WebDriverWait((WebDriver) driver2, 15000);
+
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(((WebDriver) driver2).findElement(By.xpath(xpath)), attribute));
+	}
+
+	public void visibilityOfElementXpath(String xpath) {
+
+		boolean isPresent = ((WebDriver) driver2).findElement(By.xpath(xpath)).isDisplayed();
+
+		while (isPresent == false) {
+			sleep(3000);
+			isPresent = ((WebDriver) driver2).findElement(By.xpath(xpath)).isDisplayed();
+		}
+
+	}
+
+	public Integer contarWebElementsList(List<WebElement> colunas) {
+
+		int contar = -1;
+
+		if (colunas.size() > 0) {
+
+			for (int i = 0; i < colunas.size(); i++) {
+				contar = contar + 1;
+			}
+		} else {
+			contar = 0;
+		}
+
+		return contar;
+
+	}
+
+	public void idInserir1(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR1", idRegistro);
+
+	}
+
+	public String idObter1() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR1", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir2(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR2", idRegistro);
+
+	}
+
+	public String idObter2() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR2", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir3(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR3", idRegistro);
+
+	}
+
+	public String idObter3() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR3", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir4(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR4", idRegistro);
+
+	}
+
+	public String idObter4() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR4", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	
+	
+	public String ordenar(String dato) {
+		
+		String recorrer = dato;
+		
+	    String[] recorrer2 = recorrer.split("");
+
+	    Arrays.sort(recorrer2);
+
+	    String sorted = "";
+
+	    for(int i =0;i<recorrer2.length;i++){
+
+	      sorted += recorrer2[i];
+	    
+	    }
+		
+		return sorted; 
+	}
+	
+	
+	
+
+	
+	
 
 	// BRB
 	public String elementosDiferentes = "Os elementos não são iguais";
@@ -96,5 +506,11 @@ public class TestBaseParalelo2 extends TestBaseSteven {
 	public String Filtros = "Os resultados não são acorde aos filtros";
 	public String Criar = "O registro não foi criado com sucesso";
 	public String Eliminado = "O registro não foi eliminado com sucesso";
+	public String Detalhes = "As informações não são as esperadas";
+	
+	public String Atualizar = "Não foi possivel atualizar os registros";
+	
+	
+	
 
 }

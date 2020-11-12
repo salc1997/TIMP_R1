@@ -337,7 +337,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 3)
 	public void detalheTipoTributoFiltroIdDetalhes() {
 
 		detalheTipoTributoFiltroId = new DetalheFiltroId();
@@ -349,7 +349,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void detalheTipoTributoFiscalExcluir() {
 
 		detalheTipoTributoExcluir = new DetalheExcluir();

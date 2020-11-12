@@ -1,20 +1,21 @@
 package com.sap.timp.pageObjectModel.BCB;
 
-import static org.testng.Assert.assertTrue;
 
-import java.nio.channels.NonReadableChannelException;
+
+
 import java.util.ArrayList;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.apache.commons.*;
+
 
 
 import com.sap.timp.base.TestBaseSteven;
+
+import sun.reflect.generics.tree.Tree;
 
 public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseSteven {
 
@@ -103,6 +104,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	public WebElement filial;
 	@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
 	public WebElement filialO;
+	@FindBy(xpath = "//div[contains(@id,\"1000_SP_0121\")]/div/label/span")
+	public WebElement filialTc2;
 
 	@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")
 	public WebElement tipoApuracao;
@@ -394,6 +397,9 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		@FindBy(xpath = "//span[text()=\"1M\"]")
 		public WebElement m1;
 		
+		@FindBy(xpath = "//span[text()=\"1Y\"]")
+		public WebElement y1;
+		
 		@FindBy(xpath = "//div[contains(@class,\"execution-type\")]/div[2]/label/span")
 		public WebElement execucaoAnalitica;
 		
@@ -568,6 +574,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	String parentG = "";
 	
 	public ArrayList<Boolean> criarConfiguracaoHierariquia() {
+		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
@@ -636,7 +648,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		for (int i = 0; i < 9; i++) {
 
 		}
-
+		
+		
 		for (int i = 0; i < subniveisAdicionados; i++) {
 			WebElement nomeDoSubnivel = driver
 					.findElement(By.xpath("//div[@id=\"sublevels\"]/div[" + f + "]/div[3]/div/div/input"));
@@ -706,7 +719,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 
 	public boolean criarConfiguracao() {
-
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
+		
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -767,9 +785,16 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 		filial.click();
 		sleep(1000);
-		filialO.click();
-		filialO.sendKeys(Keys.ESCAPE);
-		sleep(1000);
+		if (tc2==true) {
+			filialTc2.click();
+			filialTc2.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else {
+			filialO.click();
+			filialO.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}
+
 
 		tipoApuracao.click();
 		sleep(1000);
@@ -821,6 +846,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	
 	public void configurarConfiguracao() {
 		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		sleep(2000);
@@ -865,7 +896,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		campoLinhaO1.click();
 		sleep(2000);
 
-		String url = driver.getCurrentUrl();
+
 		
 		String relatorioUsar = "";
 		if (url.contains("tq1")) {
@@ -1275,7 +1306,17 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 	
 	public void executar() {
-		/*
+		
+		boolean tc2 = false;
+		boolean tp1 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}
+		
+		
 		//cometar desde aqui
 		sleep(2000);
 		configuracoes.click();
@@ -1302,7 +1343,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		waitExpectElement(executar);
 		sleep(2000);
 		//hasta aqui
-		*/
+	
 
 		
 
@@ -1318,7 +1359,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		m1.click();
+		if (tc2 == true || tp1== true) {
+			y1.click();
+		}else {
+			m1.click();
+		}
+		
 		sleep(2000);
 		execucaoAnalitica.click();
 		sleep(1000);
@@ -1341,6 +1387,15 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 	
 	public ArrayList<Boolean> subnivel1() {
+		boolean tc2 = false;
+		boolean tp1 = false;
+		
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -1400,6 +1455,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		System.out.println("Empresa: " + empresaBRBS);
 		System.out.println("Operador: " + empresaOpradorS);
 		
+		
 		System.out.println(empresaBRBS.equals("1000"));
 		sucesso.add(empresaBRBS.equals("1000"));
 		sucesso.add(empresaOpradorS.equals("="));
@@ -1432,9 +1488,17 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String filialOperadorS = filialOperador.getText();
 		System.out.println("Filial: "+filialBRBS);
 		System.out.println("Filial Operador: " +filialOperadorS);
-		System.out.println(filialBRBS.equals("0001"));
-		sucesso.add(filialBRBS.equals("0001"));
-		sucesso.add(filialOperadorS.equals("="));
+		
+		if (tc2==true) {
+			System.out.println(filialBRBS.equals("0121"));
+			sucesso.add(filialBRBS.equals("0121"));
+			sucesso.add(filialOperadorS.equals("="));
+		}else {
+			System.out.println(filialBRBS.equals("0001"));
+			sucesso.add(filialBRBS.equals("0001"));
+			sucesso.add(filialOperadorS.equals("="));
+		}
+		
 		
 
 		//data lancamento
@@ -1442,6 +1506,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String datalancamento1OperadorS = dataLancamento1Operador.getText();
 		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
 		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
+		
+
 		System.out.println(datalancamento1BRBS.equals("01/01/2016"));
 		sucesso.add(datalancamento1BRBS.equals("01/01/2016"));
 
@@ -1450,8 +1516,15 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String datalancamento2OpradorS = dataLancamento2Operador.getText();
 		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
 		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
-		System.out.println(datalancamento2BRBS.equals("31/01/2016"));
-		sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		
+		if (tc2==true || tp1 == true) {
+			System.out.println(datalancamento2BRBS.equals("31/12/2016"));
+			sucesso.add(datalancamento2BRBS.equals("31/12/2016"));
+		}else {
+			System.out.println(datalancamento2BRBS.equals("31/01/2016"));
+			sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		}
+
 		
 		
 		//Uf filial
@@ -1476,6 +1549,15 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	
 	public ArrayList<Boolean> subNivel2() {
 		
+		boolean tc2 = false;
+		boolean tp1 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}
+		
 		System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
 		sleep(1000);
 		subnivel1.click();
@@ -1498,7 +1580,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 			}
 		}
 		
-		
+	
 		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1509,7 +1591,13 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sucesso.add(tempoBCBS.equals("(01/12/2015 - 31/01/2016)"));
+		if (tp1==true || tc2==true) {
+			
+			sucesso.add(tempoBCBS.equals("(01/01/2015 - 31/12/2016)"));
+		}else {
+			sucesso.add(tempoBCBS.equals("(01/12/2015 - 31/01/2016)"));
+		}
+		
 		
 		//valor de Ajusto Total
 		String valorAjusteTotalBRBS = valorAjusteTotalBRB.getText();
@@ -1554,8 +1642,17 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String filialOperadorS = filialOperador.getText();
 		System.out.println("Filial: "+filialBRBS);
 		System.out.println("Filial Operador: " +filialOperadorS);
-		System.out.println(filialBRBS.equals("0001"));
-		sucesso.add(filialBRBS.equals("0001"));
+		
+		if (tc2==true) {
+
+			System.out.println(filialBRBS.equals("0001"));
+			sucesso.add(filialBRBS.equals("0121"));
+		}else {
+			System.out.println(filialBRBS.equals("0001"));
+			sucesso.add(filialBRBS.equals("0001"));
+		}
+
+
 		sucesso.add(filialOperadorS.equals("="));
 		
 
@@ -1564,16 +1661,32 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String datalancamento1OperadorS = dataLancamento1Operador.getText();
 		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
 		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
-		System.out.println(datalancamento1BRBS.equals("01/01/2016"));
-		sucesso.add(datalancamento1BRBS.equals("01/12/2015"));
+
+		if (tp1==true || tc2==true) {
+
+			System.out.println(datalancamento1BRBS.equals("01/01/2015"));
+			sucesso.add(datalancamento1BRBS.equals("01/01/2015"));
+		}else {
+			System.out.println(datalancamento1BRBS.equals("01/12/2015"));
+			sucesso.add(datalancamento1BRBS.equals("01/12/2015"));
+		}
+
 
 		
 		String datalancamento2BRBS = dataLancamento2BRB.getAttribute("value");
 		String datalancamento2OpradorS = dataLancamento2Operador.getText();
 		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
 		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
-		System.out.println(datalancamento2BRBS.equals("31/01/2016"));
-		sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		
+		if (tp1==true || tc2==true) {
+			System.out.println(datalancamento2BRBS.equals("31/12/2016"));
+			sucesso.add(datalancamento2BRBS.equals("31/12/2016"));
+		}else {
+			System.out.println(datalancamento2BRBS.equals("31/01/2016"));
+			sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		}
+		
+
 		
 		
 		//Filial
@@ -1600,6 +1713,17 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	
 	public ArrayList<Boolean> subNivel3() {
 		
+		boolean tc2 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else {
+			tq1 = true;
+		}
 		System.out.println("--------------------------------------------SubNivel 3-------------------------------------");
 		sleep(1000);
 		subnivel2.click();
@@ -1633,7 +1757,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sucesso.add(subPeriodoBCBS.equals("(Subperíodo 12/2015 - 1M)"));
+		if (tp1 == true || tc2==true) {
+			sucesso.add(subPeriodoBCBS.equals("(Subperíodo 01/2015 - 1Y)"));
+		}else {
+			sucesso.add(subPeriodoBCBS.equals("(Subperíodo 12/2015 - 1M)"));
+		}
+		
 		
 		//valor de Ajusto Total
 		String valorAjusteTotalBRBS = valorAjusteTotalBRB.getText();
@@ -1678,8 +1807,14 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String filialOperadorS = filialOperador.getText();
 		System.out.println("Filial: "+filialBRBS);
 		System.out.println("Filial Operador: " +filialOperadorS);
-		System.out.println(filialBRBS.equals("0001"));
-		sucesso.add(filialBRBS.equals("0001"));
+		if (tc2==true) {
+			System.out.println(filialBRBS.equals("0121"));
+			sucesso.add(filialBRBS.equals("0121"));
+		}else{
+			System.out.println(filialBRBS.equals("0001"));
+			sucesso.add(filialBRBS.equals("0001"));
+		}
+		
 		sucesso.add(filialOperadorS.equals("="));
 		
 
@@ -1688,16 +1823,26 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String datalancamento1OperadorS = dataLancamento1Operador.getText();
 		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
 		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
-		System.out.println(datalancamento1BRBS.equals("01/12/2015"));
-		sucesso.add(datalancamento1BRBS.equals("01/12/2015"));
-
 		
+		if (tc2==true|| tq1==true) {
+			
+			System.out.println(datalancamento1BRBS.equals("01/12/2015"));
+			sucesso.add(datalancamento1BRBS.equals("01/12/2015"));
+		}else{
+			
+			System.out.println(datalancamento1BRBS.equals("01/01/2016"));
+			sucesso.add(datalancamento1BRBS.equals("01/01/2016"));
+		}
+
 		String datalancamento2BRBS = dataLancamento2BRB.getAttribute("value");
 		String datalancamento2OpradorS = dataLancamento2Operador.getText();
 		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
 		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
+		
 		System.out.println(datalancamento2BRBS.equals("31/12/2015"));
 		sucesso.add(datalancamento2BRBS.equals("31/12/2015"));
+
+
 		
 		
 		//Filial
@@ -1723,6 +1868,15 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	
 	public ArrayList<Boolean> subNivel4() {
 		
+		boolean tc2 = false;
+		boolean tp1 = false;
+		
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1=true;
+		}
 		System.out.println("--------------------------------------------SubNivel 4-------------------------------------");
 		sleep(1000);
 		subnivel3.click();
@@ -1783,8 +1937,13 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String filialOperadorS = filialOperador.getText();
 		System.out.println("Filial: "+filialBRBS);
 		System.out.println("Filial Operador: " +filialOperadorS);
-		System.out.println(filialBRBS.equals("0001"));
-		sucesso.add(filialBRBS.equals("0001"));
+		if (tc2==true) {
+			System.out.println(filialBRBS.equals("0121"));
+			sucesso.add(filialBRBS.equals("0121"));
+		}else{
+			System.out.println(filialBRBS.equals("0001"));
+			sucesso.add(filialBRBS.equals("0001"));
+		}
 		sucesso.add(filialOperadorS.equals("="));
 		
 
@@ -1793,16 +1952,27 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		String datalancamento1OperadorS = dataLancamento1Operador.getText();
 		System.out.println("Data Lançamento 1: "+datalancamento1BRBS);
 		System.out.println("Data Lançamento 1: " +datalancamento1OperadorS);
+		
 		System.out.println(datalancamento1BRBS.equals("01/01/2016"));
 		sucesso.add(datalancamento1BRBS.equals("01/01/2016"));
+
+
 
 		
 		String datalancamento2BRBS = dataLancamento2BRB.getAttribute("value");
 		String datalancamento2OpradorS = dataLancamento2Operador.getText();
 		System.out.println("Data Lançamento 2: "+ datalancamento2BRBS);
 		System.out.println("Data Lançamento 2: "+ datalancamento2OpradorS);
-		System.out.println(datalancamento2BRBS.equals("31/01/2016"));
-		sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		
+		if (tc2==true || tp1 == true) {
+			System.out.println(datalancamento2BRBS.equals("31/12/2016"));
+			sucesso.add(datalancamento2BRBS.equals("31/12/2016"));
+		}else {
+			System.out.println(datalancamento2BRBS.equals("31/01/2016"));
+			sucesso.add(datalancamento2BRBS.equals("31/01/2016"));
+		}
+		
+
 		
 		
 		//UFFilial
@@ -1827,6 +1997,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 	public boolean subNivel5() {
 		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
 		sleep(1000);
 		subnivel4.click();
@@ -1843,7 +2018,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 	
 	public ArrayList<Boolean> subNivel6() {
-		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		System.out.println("--------------------------------------------SubNivel 6-------------------------------------");
 		sleep(1000);
 		subnivel5.click();
@@ -1917,7 +2096,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 		
 	public ArrayList<Boolean> subNivel7() {
-		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		System.out.println("--------------------------------------------SubNivel 7-------------------------------------");
 		sleep(1000);
 		subnivel6.click();
@@ -1991,7 +2174,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 	
 	public ArrayList<Boolean> subNivel8() {
-		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		System.out.println("--------------------------------------------SubNivel 8-------------------------------------");
 		sleep(1000);
 		subnivel7.click();
@@ -2028,7 +2215,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 	
 	public ArrayList<Boolean> subNivel9() {
-		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		System.out.println("--------------------------------------------SubNivel 9-------------------------------------");
 		sleep(1000);
 		subnivel8.click();
@@ -2078,7 +2269,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 	public ArrayList<Boolean> excluirConfiguracao() {
 		
-		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -2158,7 +2353,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 	}
 	
 	public ArrayList<Boolean> excluirHierarquia() {
-		
+		boolean tc2 = false;
+		String url = driver.getCurrentUrl();
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		hierarquias.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

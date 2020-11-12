@@ -1,223 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results total="3" passed="1" failed="2" skipped="0">
-=======
 <testng-results total="4" passed="2" failed="2" skipped="0">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-11-08T02:24:24Z" name="Default suite" finished-at="2020-11-08T19:06:30Z" duration-ms="60126880">
-=======
-  <suite started-at="2020-11-08T23:57:09Z" name="Default suite" finished-at="2020-11-09T00:00:45Z" duration-ms="216707">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite started-at="2020-11-11T22:03:42Z" name="Default suite" finished-at="2020-11-11T22:06:13Z" duration-ms="151061">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-11-08T02:24:24Z" name="Default test" finished-at="2020-11-08T19:06:30Z" duration-ms="60126880">
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa@4416d64f]" started-at="2020-11-07T20:24:24Z" name="beforeClass" finished-at="2020-11-07T20:25:09Z" duration-ms="45698" status="PASS">
-=======
-    <test started-at="2020-11-08T23:57:09Z" name="Default test" finished-at="2020-11-09T00:00:45Z" duration-ms="216707">
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@ed7f8b4]" started-at="2020-11-08T20:57:09Z" name="beforeClass" finished-at="2020-11-08T20:57:27Z" duration-ms="18552" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test started-at="2020-11-11T22:03:42Z" name="Default test" finished-at="2020-11-11T22:06:13Z" duration-ms="151061">
+      <class name="com.timp.test.BRB.Eliminar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@1672fe87]" started-at="2020-11-11T16:03:42Z" name="beforeClass" finished-at="2020-11-11T16:04:05Z" duration-ms="23436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa@4416d64f]" started-at="2020-11-07T20:25:09Z" name="ingresar" finished-at="2020-11-07T20:25:23Z" duration-ms="14178" status="PASS">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@ed7f8b4]" started-at="2020-11-08T20:57:27Z" name="login" finished-at="2020-11-08T20:57:37Z" duration-ms="9603" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@1672fe87]" started-at="2020-11-11T16:04:05Z" name="login" finished-at="2020-11-11T16:04:16Z" duration-ms="10399" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- ingresar -->
-        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa@4416d64f]" started-at="2020-11-07T20:25:23Z" name="mdrEntrar" finished-at="2020-11-08T13:05:16Z" duration-ms="59992569" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-=======
         </test-method> <!-- login -->
-        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@ed7f8b4]" started-at="2020-11-08T20:57:37Z" name="brbEntrar" finished-at="2020-11-08T20:57:59Z" duration-ms="21810" status="PASS">
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@1672fe87]" started-at="2020-11-11T16:04:16Z" name="brbEntrar" finished-at="2020-11-11T16:04:41Z" duration-ms="25656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brbEntrar -->
-        <test-method signature="criarConfiguracaoHierarquia()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@ed7f8b4]" started-at="2020-11-08T20:57:59Z" name="criarConfiguracaoHierarquia" finished-at="2020-11-08T21:00:07Z" duration-ms="127953" status="FAIL">
-          <exception class="java.lang.AssertionError">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-            <message>
-<<<<<<< HEAD
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d69be9e027c4aa8206749d23713e156
-*** Element info: {Using=xpath, value=//li[@identifier="accordion-item-adjustments"]}]]>
-=======
-              <![CDATA[Os Subniveis não foram adicinados com sucesso expected [true] but found [false]]]>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-            </message>
-            <full-stacktrace>
-<<<<<<< HEAD
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=86.0.4240.183)
-=======
-              <![CDATA[java.lang.AssertionError: Os Subniveis não foram adicinados com sucesso expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia.criarConfiguracaoHierarquia(ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia.java:62)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarConfiguracaoHierarquia -->
-        <test-method signature="excluirr()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@ed7f8b4]" started-at="2020-11-08T21:00:07Z" name="excluirr" finished-at="2020-11-08T21:00:45Z" duration-ms="38764" status="FAIL">
+        <test-method signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@1672fe87]" started-at="2020-11-11T16:04:41Z" name="eliminar" finished-at="2020-11-11T16:04:47Z" duration-ms="5334" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][2]/div[3]/div"}
-  (Session info: chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-<<<<<<< HEAD
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-=======
-System info: host: 'CRISTHIAN-VASQU', ip: '169.254.139.242', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-<<<<<<< HEAD
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d69be9e027c4aa8206749d23713e156
-*** Element info: {Using=xpath, value=//li[@identifier="accordion-item-adjustments"]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-=======
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f2eb4a5cdc1c6b6b50cccea4f483a7d7
-*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][2]/div[3]/div}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][2]/div[3]/div"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div"}
   (Session info: chrome=86.0.4240.183)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '169.254.139.242', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f2eb4a5cdc1c6b6b50cccea4f483a7d7
-*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][2]/div[3]/div}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<<<<<<< HEAD
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:3388)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:683)
-	at java.base/java.lang.String.valueOf(String.java:3388)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
-	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:179)
-	at com.sap.timp.pageObjectModel.MDR.AcessarMDRPO.acessarMDR(AcessarMDRPO.java:45)
-	at com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa.mdrEntrar(AliquotasDeTaxaDeActualizacaoExcluirEmMassa.java:41)
-=======
-	at com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO.excluir(ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO.java:162)
-	at com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia.excluirr(ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia.java:70)
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- mdrEntrar -->
-        <test-method signature="excluirEmMassa()[pri:0, instance:com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa@4416d64f]" started-at="2020-11-08T13:06:13Z" name="excluirEmMassa" finished-at="2020-11-08T13:06:14Z" duration-ms="1106" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d69be9e027c4aa8206749d23713e156]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c093376c7c4f04dac17a1b37d6e3d719
+*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div"}
   (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d69be9e027c4aa8206749d23713e156
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c093376c7c4f04dac17a1b37d6e3d719
+*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div}
 	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -228,10 +52,15 @@ Session ID: 9d69be9e027c4aa8206749d23713e156
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
-	at com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO.criar(AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO.java:95)
-	at com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa.excluirEmMassa(AliquotasDeTaxaDeActualizacaoExcluirEmMassa.java:47)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.BRB.EliminarPO.eliminar(EliminarPO.java:72)
+	at com.timp.test.BRB.Eliminar.eliminar(Eliminar.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -258,29 +87,103 @@ Session ID: 9d69be9e027c4aa8206749d23713e156
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluirEmMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa@4416d64f]" started-at="2020-11-08T13:06:14Z" name="afterClass" finished-at="2020-11-08T13:06:14Z" duration-ms="0" status="FAIL">
+        </test-method> <!-- eliminar -->
+        <test-method signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@1672fe87]" started-at="2020-11-11T16:04:47Z" name="eliminarLixeira" finished-at="2020-11-11T16:06:13Z" duration-ms="85940" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=86.0.4240.183)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d69be9e027c4aa8206749d23713e156]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c093376c7c4f04dac17a1b37d6e3d719
+*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=86.0.4240.183)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d69be9e027c4aa8206749d23713e156
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c093376c7c4f04dac17a1b37d6e3d719
+*** Element info: {Using=xpath, value=//*[@id="right"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:159)
+	at com.sap.timp.pageObjectModel.BRB.EliminarPO.eliminarLixeira(EliminarPO.java:129)
+	at com.timp.test.BRB.Eliminar.eliminarLixeira(Eliminar.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@1672fe87]" started-at="2020-11-11T16:06:13Z" name="afterClass" finished-at="2020-11-11T16:06:13Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c093376c7c4f04dac17a1b37d6e3d719]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c093376c7c4f04dac17a1b37d6e3d719
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -294,7 +197,7 @@ Session ID: 9d69be9e027c4aa8206749d23713e156
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa.afterClass(AliquotasDeTaxaDeActualizacaoExcluirEmMassa.java:31)
+	at com.timp.test.BRB.Eliminar.afterClass(Eliminar.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -322,56 +225,10 @@ Session ID: 9d69be9e027c4aa8206749d23713e156
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
-=======
-        </test-method> <!-- excluirr -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@ed7f8b4]" started-at="2020-11-08T21:00:45Z" name="afterClass" finished-at="2020-11-08T21:00:45Z" duration-ms="0" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.Eliminar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
-<<<<<<< HEAD
-=======
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2020-11-06T19:51:42Z" name="Default suite" finished-at="2020-11-06T19:54:56Z" duration-ms="193978">
-    <groups>
-    </groups>
-    <test started-at="2020-11-06T19:51:42Z" name="Default test" finished-at="2020-11-06T19:54:56Z" duration-ms="193978">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa@54c5a2ff]" started-at="2020-11-06T16:51:42Z" name="beforeClass" finished-at="2020-11-06T16:52:00Z" duration-ms="17776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa@54c5a2ff]" started-at="2020-11-06T16:52:00Z" name="login" finished-at="2020-11-06T16:52:08Z" duration-ms="8120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa@54c5a2ff]" started-at="2020-11-06T16:52:08Z" name="acessarMDR" finished-at="2020-11-06T16:52:33Z" duration-ms="24328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa@54c5a2ff]" started-at="2020-11-06T16:52:33Z" name="criar" finished-at="2020-11-06T16:54:52Z" duration-ms="139428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa@54c5a2ff]" started-at="2020-11-06T16:54:52Z" name="afterClass" finished-at="2020-11-06T16:54:56Z" duration-ms="4312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

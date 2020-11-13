@@ -15,11 +15,10 @@ public class AtivaçaoParaMunicipioDestalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Novo\"]")
 	public WebElement novomunicipio;
 	
-	@FindBy(xpath = "//div[@class=\"field3\" and @id=\"company\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
+	public WebElement id;
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
 	public WebElement empresa;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaoempresa;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Razão Social\"]")
 	public WebElement razaosocial;
@@ -70,6 +69,13 @@ public class AtivaçaoParaMunicipioDestalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
 	
+	
+	
+
+	
+	
+
+
 	public AtivaçaoParaMunicipioDestalhesPO() {
 
 		PageFactory.initElements(driver, this);

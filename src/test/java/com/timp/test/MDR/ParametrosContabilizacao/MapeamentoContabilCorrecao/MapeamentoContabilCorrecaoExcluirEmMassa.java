@@ -1,23 +1,21 @@
-package com.timp.test.MDR.Centralizacao.EstornoCredito;
+package com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
+import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassaPO;
 
-public class EstornoCreditoFiltros extends TestBaseEliel {
+public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseEliel{
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	EstornoCreditoFiltrosPO estornoCreditoFiltrosPO;
+	MapeamentoContabilCorrecaoExcluirEmMassaPO mapeamentoContabilCorrecaoExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,8 +23,7 @@ public class EstornoCreditoFiltros extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		estornoCreditoFiltrosPO = new EstornoCreditoFiltrosPO();
-
+		mapeamentoContabilCorrecaoExcluirEmMassaPO = new MapeamentoContabilCorrecaoExcluirEmMassaPO();
 	}
 
 	@AfterClass
@@ -48,15 +45,16 @@ public class EstornoCreditoFiltros extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void filtro() {
+	public void criar() {
 
-		// teste pra conferir se o resultado mostrado é igual
-		boolean text = estornoCreditoFiltrosPO.filtroEstornoCredito();
-		assertTrue(text, "Resultado diferente");
-
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(estornoCreditoFiltrosPO.mostrar.isDisplayed(), semAcesso);
+		boolean sucesso = mapeamentoContabilCorrecaoExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+		boolean sucesso2 = mapeamentoContabilCorrecaoExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
 
 	}
 
+	
+	
 }

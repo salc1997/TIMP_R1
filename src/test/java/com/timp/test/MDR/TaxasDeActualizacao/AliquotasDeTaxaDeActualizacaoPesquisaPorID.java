@@ -1,23 +1,22 @@
-package com.timp.test.MDR.Centralizacao.EstornoCredito;
+package com.timp.test.MDR.TaxasDeActualizacao;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
+import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
 
-public class EstornoCreditoFiltros extends TestBaseEliel {
+public class AliquotasDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
+ 
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	EstornoCreditoFiltrosPO estornoCreditoFiltrosPO;
+	AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,7 +24,7 @@ public class EstornoCreditoFiltros extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		estornoCreditoFiltrosPO = new EstornoCreditoFiltrosPO();
+		aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO = new AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO();
 
 	}
 
@@ -46,17 +45,16 @@ public class EstornoCreditoFiltros extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
+	
 
 	@Test(priority = 2)
 	public void filtro() {
 
-		// teste pra conferir se o resultado mostrado é igual
-		boolean text = estornoCreditoFiltrosPO.filtroEstornoCredito();
-		assertTrue(text, "Resultado diferente");
+		boolean sucesso = aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO.filtro();
+		assertTrue(sucesso, Filtros);
 
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(estornoCreditoFiltrosPO.mostrar.isDisplayed(), semAcesso);
+		
 
 	}
-
+	
 }

@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasApoioESocial.Tabela20;
+package com.timp.test.MDR.TabelasApoioESocial.Tabela21;
 
 import org.testng.annotations.Test;
 
@@ -8,6 +8,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoVisualizarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,18 +18,18 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeLogradouroVisualizar extends TestBaseSteven{
+public class NaturezaJuridicaVisualizar extends TestBaseSteven{
   
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	TiposDeLogradouroVisualizarPO tiposDeLogradouroVisualizarPO;
+	NaturezaJuridicaVisualizarPO naturezaJuridicaVisualizarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initialization();
 	  loginTC = new LoginTC();
 	  accesarMDR = new AcessarMDRPO();
-	  tiposDeLogradouroVisualizarPO = new TiposDeLogradouroVisualizarPO();
+	  naturezaJuridicaVisualizarPO = new NaturezaJuridicaVisualizarPO();
   }
 
   @AfterClass
@@ -49,7 +50,7 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven{
   
   @Test(priority = 2)
   public void visualizar() {
-	  ArrayList<Boolean> sucesso = tiposDeLogradouroVisualizarPO.visualizar();
+	  ArrayList<Boolean> sucesso = naturezaJuridicaVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

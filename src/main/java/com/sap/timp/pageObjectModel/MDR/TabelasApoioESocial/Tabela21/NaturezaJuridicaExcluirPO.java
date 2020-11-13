@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela20;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela21;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,13 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class TiposDeLogradouroExcluirPO extends TestBaseKenssy {
+public class NaturezaJuridicaExcluirPO extends TestBaseKenssy {
 
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela 20 - Tipos de Logradouro\"]")
-	public WebElement tabela20;
+	@FindBy(xpath = "//span[text()=\"Tabela 21 - Natureza Jurídica\"]")
+	public WebElement tabela21;
 	
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
@@ -25,7 +25,7 @@ public class TiposDeLogradouroExcluirPO extends TestBaseKenssy {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	public TiposDeLogradouroExcluirPO() {
+	public NaturezaJuridicaExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -33,7 +33,7 @@ public class TiposDeLogradouroExcluirPO extends TestBaseKenssy {
 		sleep(2000);
 		tabelaApoio.click();
 		sleep(2000);
-		tabela20.click();
+		tabela21.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
@@ -41,7 +41,7 @@ public class TiposDeLogradouroExcluirPO extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter3();
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

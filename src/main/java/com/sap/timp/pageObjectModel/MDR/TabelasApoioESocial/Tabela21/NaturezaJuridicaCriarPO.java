@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela20;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela21;
 
 import javax.sql.RowSet;
 
@@ -10,15 +10,15 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeLogradouroCriarPO extends TestBaseSteven {
+public class NaturezaJuridicaCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela 20 - Tipos de Logradouro\"]")
-	public WebElement tabela20;
+	@FindBy(xpath = "//span[text()=\"Tabela 21 - Natureza Jurídica\"]")
+	public WebElement tabela21;
 	
-	@FindBy(xpath = "//button/span[contains(text(),\"Novo\")]")
+	@FindBy(xpath = "//button/span[contains(text(),\"Nova\")]")
 	public WebElement novo;
 	
 	
@@ -52,7 +52,7 @@ public class TiposDeLogradouroCriarPO extends TestBaseSteven {
 	public WebElement siguiente;
 	
 	
-	public TiposDeLogradouroCriarPO() {
+	public NaturezaJuridicaCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -62,7 +62,7 @@ public class TiposDeLogradouroCriarPO extends TestBaseSteven {
 		sleep(2000);
 		tabelaApoio.click();
 		sleep(2000);
-		tabela20.click();
+		tabela21.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -82,7 +82,7 @@ public class TiposDeLogradouroCriarPO extends TestBaseSteven {
 		
 		codigo.sendKeys("123");
 		sleep(1000);
-		descricao.sendKeys("Teste Tipos de Logradouro");
+		descricao.sendKeys("Teste Natureza Juridica");
 		sleep(1000);
 		
 		String data = fechaActual();
@@ -115,7 +115,7 @@ public class TiposDeLogradouroCriarPO extends TestBaseSteven {
 		boolean sucesso = false;
  
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir2(idB);
+		idInserir3(idB);
 		  
 		sleep(2000); 
 		System.out.println(id); 

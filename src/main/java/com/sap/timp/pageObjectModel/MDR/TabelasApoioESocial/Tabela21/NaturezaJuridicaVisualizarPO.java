@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela20;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela21;
 
 import java.util.ArrayList;
 
@@ -10,12 +10,12 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeLogradouroVisualizarPO extends TestBaseSteven {
+public class NaturezaJuridicaVisualizarPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela 20 - Tipos de Logradouro\"]")
-	public WebElement tabela20;
+	@FindBy(xpath = "//span[text()=\"Tabela 21 - Natureza Jurídica\"]")
+	public WebElement tabela21;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
@@ -42,7 +42,7 @@ public class TiposDeLogradouroVisualizarPO extends TestBaseSteven {
 	public WebElement siguiente;
 	
 	
-	public TiposDeLogradouroVisualizarPO() {
+	public NaturezaJuridicaVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -51,7 +51,7 @@ public class TiposDeLogradouroVisualizarPO extends TestBaseSteven {
 		sleep(2000);
 		tabelaApoio.click();
 		sleep(2000);
-		tabela20.click();
+		tabela21.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -60,7 +60,7 @@ public class TiposDeLogradouroVisualizarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter3();
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		

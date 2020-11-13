@@ -3,13 +3,15 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa">
+      <class name="com.timp.test.BRB.Formula">
         <methods>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="aplicar"/>
+          <include name="beforeClass"/>
+          <include name="formulaBoton"/>
+          <include name="formulaColuna"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa -->
+      </class> <!-- com.timp.test.BRB.Formula -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

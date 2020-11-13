@@ -1,18 +1,10 @@
 package com.sap.timp.pageObjectModel.BRB.prueba;
 
-
-import java.net.URL;
-import java.util.Set;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.SessionId;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseParalelo2;
-import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 
 public class AcessarBrbPO extends TestBaseParalelo2{
@@ -35,8 +27,12 @@ public class AcessarBrbPO extends TestBaseParalelo2{
 	public WebElement mostrar;
 	
 	public AcessarBrbPO() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
+	
+	
+	
+	
 	
 	
 	public boolean acessar() {

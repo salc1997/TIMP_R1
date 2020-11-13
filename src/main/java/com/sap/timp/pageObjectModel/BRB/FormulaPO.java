@@ -28,7 +28,7 @@ public class FormulaPO extends TestBaseSteven{
 	public WebElement tipoDado;
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
 	public WebElement decimal;
-	@FindBy(xpath = "//*[@id=\"browser-wrapper\"]/div/div[1]/div[2]/div[7]")
+	@FindBy(xpath = "//div[contains(text(),\"Colunas\")]")
 	public WebElement colunas;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div/div[5]/div/div/div[2]/div/div[2]/div[2]/div/div[1]/div/div/input")
 	public WebElement pesquisa;

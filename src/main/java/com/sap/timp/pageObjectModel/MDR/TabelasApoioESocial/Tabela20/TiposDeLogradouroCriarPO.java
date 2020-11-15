@@ -67,7 +67,7 @@ public class TiposDeLogradouroCriarPO extends TestBaseSteven {
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);

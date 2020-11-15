@@ -17,7 +17,6 @@ import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
 public class EstornoCreditoFiltros extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-
 	EstornoCreditoFiltrosPO estornoCreditoFiltrosPO;
 
 	@BeforeClass

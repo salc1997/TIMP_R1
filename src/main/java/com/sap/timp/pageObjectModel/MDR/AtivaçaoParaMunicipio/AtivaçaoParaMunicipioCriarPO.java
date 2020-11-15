@@ -80,8 +80,8 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 	
 		//conta o numero de linhas
@@ -93,6 +93,7 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		novomunicipio.click();
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -104,42 +105,30 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
 		//sleep(2000);
 		
 		uf.click();
-		
 		sleep(2000);
-		
 		opcaouf.click();
-		
 		sleep(2000);
 		
 		filialcentralizadora.click();
-		
 		sleep(2000);
-		
 		opcaofilial.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		municipio.click();
-		
 		sleep(2000);
-		
 		opcaomunicipio.click();
-		
 		sleep(2000);
 		
 		filiaiscentralizadora.click();
-		
 		sleep(2000);
-		
 		opcaofiliais.click();
-		
 		sleep(2000);
-		
 		opcaofiliais.sendKeys(Keys.ESCAPE);
 		
 		sleep(2000);
-		
+	
 		gravar.click();
 		sleep(2000);
 		sim.click();

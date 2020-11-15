@@ -126,7 +126,7 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 		sleep(2000);
 		empresaO.click();
 		empresaO.sendKeys(Keys.ESCAPE);
-		sleep(1000);
+		sleep(2000);
 		
 		tipoAjuste.click();
 		opcion.click();
@@ -137,10 +137,12 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		descriçao.sendKeys("Código Ajuste de Teste");
-		
+		sleep(1000);
+		actionsMoveToElementElement(codigoConta);
+		sleep(1000);
 		tributo.click();
 		sleep(1000);
-		actionsMoveToElementElement(tributoO);
+		
 		tributoO.click();
 		sleep(1000);
 		
@@ -149,9 +151,9 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 		tipoTributo.click();
 		sleep(1000);
 		opcion.click();
-		
-		attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(1000);
+		attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		sleep(2000);
 		detalheTributo.click();
 		sleep(1000);
 		detalheTributoO.click();

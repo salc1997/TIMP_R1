@@ -163,6 +163,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBaseEliel {
 		
 		açao.click();
 		sleep(2000);
+		waitExpectElement(empresaE);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

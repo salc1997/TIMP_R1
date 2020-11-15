@@ -37,18 +37,18 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven{
   }
   
   @Test(priority = 0)
-  public void ingresar() {
+  public void login() {
 	  loginTC.login();
   }
   
   @Test(priority = 1)
-  public void mdrEntrar() {
+  public void acessarMDR() {
 	 accesarMDR.acessarMDR();
 
   }
   
   @Test(priority = 2)
-  public void visualizarMotivosDesligamento() {
+  public void visualizar() {
 	  ArrayList<Boolean> sucesso = tiposDeLogradouroVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

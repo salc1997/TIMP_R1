@@ -14,7 +14,9 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 	public WebDriver initializationM() {
 
+
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver86.exe");
+
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

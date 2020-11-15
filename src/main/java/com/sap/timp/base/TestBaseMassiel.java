@@ -3,6 +3,7 @@ package com.sap.timp.base;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,11 +14,11 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 	public WebDriver initializationM() {
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver86.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tc2);
+		driver.get(tp1);
 	   return driver;
 	}
 	
@@ -30,6 +31,17 @@ public class TestBaseMassiel extends TestBaseSteven {
 		
 		return df.format(cal.getTime());
 		
+	}
+	
+	public String diaHoy() {
+		Calendar c1 = Calendar.getInstance();
+		Calendar c2 = new GregorianCalendar();
+		
+		String dia = Integer.toString(c2.get(Calendar.DATE));
+		
+
+		return dia;
+
 	}
 		
 

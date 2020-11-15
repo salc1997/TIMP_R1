@@ -2,65 +2,34 @@
 <testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-03T05:43:19Z" name="Default suite" finished-at="2020-11-03T05:44:39Z" duration-ms="79758">
+  <suite started-at="2020-11-07T20:22:30Z" name="Default suite" finished-at="2020-11-07T20:24:41Z" duration-ms="130816">
     <groups>
     </groups>
-    <test started-at="2020-11-03T05:43:19Z" name="Default test" finished-at="2020-11-03T05:44:39Z" duration-ms="79758">
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@26d9b808]" started-at="2020-11-02T23:43:19Z" name="beforeClass" finished-at="2020-11-02T23:43:30Z" duration-ms="11002" status="PASS">
+    <test started-at="2020-11-07T20:22:30Z" name="Default test" finished-at="2020-11-07T20:24:41Z" duration-ms="130816">
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle@644baf4a]" started-at="2020-11-07T14:22:30Z" name="beforeClass" finished-at="2020-11-07T14:23:09Z" duration-ms="38842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@26d9b808]" started-at="2020-11-02T23:43:30Z" name="login" finished-at="2020-11-02T23:43:37Z" duration-ms="7494" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle@644baf4a]" started-at="2020-11-07T14:23:09Z" name="login" finished-at="2020-11-07T14:23:15Z" duration-ms="5833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@26d9b808]" started-at="2020-11-02T23:43:37Z" name="acessarMDR" finished-at="2020-11-02T23:44:00Z" duration-ms="22446" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle@644baf4a]" started-at="2020-11-07T14:23:15Z" name="acessarMDR" finished-at="2020-11-07T14:23:38Z" duration-ms="23060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method signature="CriarIncentivosFiscais()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@26d9b808]" started-at="2020-11-02T23:44:00Z" name="CriarIncentivosFiscais" finished-at="2020-11-02T23:44:39Z" duration-ms="38799" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle@644baf4a]" started-at="2020-11-07T14:23:38Z" name="visualizar" finished-at="2020-11-07T14:24:41Z" duration-ms="63066" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id][1]"}
-  (Session info: chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8b685d48da915c988993ad58ed9050db
-*** Element info: {Using=xpath, value=//li[@id][1]}]]>
+              <![CDATA[O modo visualização não está ativado expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id][1]"}
-  (Session info: chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8b685d48da915c988993ad58ed9050db
-*** Element info: {Using=xpath, value=//li[@id][1]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisCriarPO.CriarIncentivosFiscais(IncentivosFiscaisCriarPO.java:186)
-	at com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar.CriarIncentivosFiscais(IncentivosFiscaisCriar.java:54)
+              <![CDATA[java.lang.AssertionError: O modo visualização não está ativado expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle.visualizar(ParametrosParaLivroICMSSTDetalle.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,53 +56,15 @@ Session ID: 8b685d48da915c988993ad58ed9050db
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CriarIncentivosFiscais -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar@26d9b808]" started-at="2020-11-02T23:44:39Z" name="afterClass" finished-at="2020-11-02T23:44:39Z" duration-ms="0" status="PASS">
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle@644baf4a]" started-at="2020-11-07T14:24:41Z" name="afterClass" finished-at="2020-11-07T14:24:41Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="115357" started-at="2020-11-02T20:35:53Z" finished-at="2020-11-02T20:37:48Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="115357" started-at="2020-11-02T20:35:53Z" finished-at="2020-11-02T20:37:48Z">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="beforeClass" is-config="true" duration-ms="10804" started-at="2020-11-02T14:35:53Z" finished-at="2020-11-02T14:36:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="login" duration-ms="6063" started-at="2020-11-02T14:36:03Z" finished-at="2020-11-02T14:36:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="acessarMDR" duration-ms="14243" started-at="2020-11-02T14:36:10Z" finished-at="2020-11-02T14:36:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa@b62fe6d]" name="criar" duration-ms="84232" started-at="2020-11-02T14:36:24Z" finished-at="2020-11-02T14:37:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

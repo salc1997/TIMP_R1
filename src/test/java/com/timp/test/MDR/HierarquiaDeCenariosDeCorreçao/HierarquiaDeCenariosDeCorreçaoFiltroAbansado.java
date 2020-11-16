@@ -46,15 +46,33 @@ public class HierarquiaDeCenariosDeCorreçaoFiltroAbansado extends TestBaseMassie
 	@Test(priority = 2)
 	public void Filtro() {
 		
-		ArrayList<Boolean> empresa = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.FiltroA();
-		for (int i = 0; i < empresa.size(); i++) {
-			assertTrue(empresa.get(i), Filtros);
-		}
+	//	ArrayList<Boolean> tributo = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.filtroTributo();
+	//	for (int i = 0; i < tributo.size(); i++) {
+	//	assertTrue(tributo.get(i), Filtros);
+	//	}
 		
-		ArrayList<Boolean> usuario = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.FiltroB();
-		for (int i = 0; i < usuario.size(); i++) {
-			assertTrue(usuario.get(i), Filtros);
-		}
+	//	ArrayList<Boolean> usuarioCriacao = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.filtroUsuarioCriacao();
+	//	for (int i = 0; i < usuarioCriacao.size(); i++) {
+	//	assertTrue(usuarioCriacao.get(i), Filtros);
+	//	}
+		
+	//	ArrayList<Boolean> dataCriacao = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.filtroDataCriacao();
+	//	for (int i = 0; i < dataCriacao.size(); i++) {
+	//		assertTrue(dataCriacao.get(i), Filtros);
+	//	}
+		
+	//	ArrayList<Boolean> usuarioModificado = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.filtroUsuarioModificado();
+	//	for (int i = 0; i < usuarioModificado.size(); i++) {
+	//		assertTrue(usuarioModificado.get(i), Filtros);
+	//	}
+		
+		
+		ArrayList<Boolean> dataModificado = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.filtroDataModificado();
+     	for (int i = 0; i  < dataModificado .size(); i++) {
+				assertTrue(dataModificado.get(i), Filtros);
+    	}
+			
+		
 	}
 
 

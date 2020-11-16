@@ -4,8 +4,6 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroEditarPO;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -75,6 +73,13 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaEditar;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
@@ -221,6 +226,16 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	NaturezaJuridicaEditar naturezaJuridicaEditar;
 	NaturezaJuridicaExcluir naturezaJuridicaExcluir;
 	NaturezaJuridicaVisualizar naturezaJuridicaVisualizar;
+	
+	//Tabelas de Apoio E-SOCIAL > Unidade de Medida
+	UnidadeDeMedidaCriar unidadeDeMedidaCriar;
+	UnidadeDeMedidaEditar unidadeDeMedidaEditar;
+	UnidadeDeMedidaDetalhes unidadeDeMedidaDetalhes;
+	UnidadeDeMedidaVisualizar unidadeDeMedidaVisualizar;
+	UnidadeDeMedidaExcluir unidadeDeMedidaExcluir;
+	UnidadeDeMedidaExcluirEmMasa unidadeDeMedidaExcluirEmMasa;
+	UnidadeDeMedidaFiltroCodigo unidadeDeMedidaFiltroCodigo;
+	
 	
 	
 	// 0
@@ -1334,6 +1349,105 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 
 		//135
+		
+		// Tabelas de Apoio E-SOCIAL > Unidade de Medida
+
+		@Test(priority = 135)
+		public void unidadeDeMedidaCriar() {
+
+			System.out.println("-------------------unidadeDeMedida Fiscal > unidadeDeMedida Fiscal-------------------------");
+
+			unidadeDeMedidaCriar = new UnidadeDeMedidaCriar();
+			unidadeDeMedidaCriar.beforeClass();
+			unidadeDeMedidaCriar.login();
+			unidadeDeMedidaCriar.acessarMDR();
+			unidadeDeMedidaCriar.criar();
+			unidadeDeMedidaCriar.afterClass();
+
+		}
+
+		@Test(priority = 136)
+		public void unidadeDeMedidaEditar() {
+
+			unidadeDeMedidaEditar = new UnidadeDeMedidaEditar();
+			unidadeDeMedidaEditar.beforeClass();
+			unidadeDeMedidaEditar.login();
+			unidadeDeMedidaEditar.acessarMDR();
+			unidadeDeMedidaEditar.editar();
+			unidadeDeMedidaEditar.afterClass();
+
+		}
+
+		@Test(priority = 137)
+		public void unidadeDeMedidaVisualizar() {
+
+			unidadeDeMedidaVisualizar = new UnidadeDeMedidaVisualizar();
+			unidadeDeMedidaVisualizar.beforeClass();
+			unidadeDeMedidaVisualizar.login();
+			unidadeDeMedidaVisualizar.acessarMDR();
+			unidadeDeMedidaVisualizar.visualizar();
+			unidadeDeMedidaVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 138)
+		public void unidadeDeMedidaDetalhes() {
+
+			unidadeDeMedidaDetalhes = new UnidadeDeMedidaDetalhes();
+			unidadeDeMedidaDetalhes.beforeClass();
+			unidadeDeMedidaDetalhes.login();
+			unidadeDeMedidaDetalhes.acessarMDR();
+			unidadeDeMedidaDetalhes.detalhes();
+			unidadeDeMedidaDetalhes.afterClass();
+
+		}
+
+
+		@Test(priority = 139)
+		public void unidadeDeMedidaExcluir() {
+
+			unidadeDeMedidaExcluir = new UnidadeDeMedidaExcluir();
+			unidadeDeMedidaExcluir.beforeClass();
+			unidadeDeMedidaExcluir.login();
+			unidadeDeMedidaExcluir.acessarMDR();
+			unidadeDeMedidaExcluir.excluir();
+			unidadeDeMedidaExcluir.afterClass();
+
+			
+		}
+		
+		@Test(priority = 140)
+		public void unidadeDeMedidaExcluirEmMassa() {
+
+			unidadeDeMedidaExcluirEmMasa = new UnidadeDeMedidaExcluirEmMasa();
+			unidadeDeMedidaExcluirEmMasa.beforeClass();
+			unidadeDeMedidaExcluirEmMasa.login();
+			unidadeDeMedidaExcluirEmMasa.acessarMDR();
+			unidadeDeMedidaExcluirEmMasa.excluir();
+			unidadeDeMedidaExcluirEmMasa.afterClass();
+
+		}
+		
+		@Test(priority = 141)
+		public void unidadeDeMedidaFiltroCodigo() {
+
+			unidadeDeMedidaFiltroCodigo = new UnidadeDeMedidaFiltroCodigo();
+			unidadeDeMedidaFiltroCodigo.beforeClass();
+			unidadeDeMedidaFiltroCodigo.login();
+			unidadeDeMedidaFiltroCodigo.acessarMDR();
+			unidadeDeMedidaFiltroCodigo.filtroCodigo();
+			unidadeDeMedidaFiltroCodigo.afterClass();
+			
+			System.out.println("-------------------unidadeDeMedida Fiscal > unidadeDeMedida Fiscal Fin-------------------------");
+
+		}
+
+		
+
+
+		
+		
+		//142
 		
 		
 		

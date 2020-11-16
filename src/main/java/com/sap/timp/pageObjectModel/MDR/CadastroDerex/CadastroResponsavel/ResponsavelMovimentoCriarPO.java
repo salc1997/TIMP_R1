@@ -152,6 +152,8 @@ public class ResponsavelMovimentoCriarPO extends TestBaseSteven{
 		
 		instituicao.click();
 		sleep(1000);
+		actionsMoveToElementElement(instituicaoO);
+		sleep(1000);
 		instituicaoO.click();
 		sleep(1000);
 			

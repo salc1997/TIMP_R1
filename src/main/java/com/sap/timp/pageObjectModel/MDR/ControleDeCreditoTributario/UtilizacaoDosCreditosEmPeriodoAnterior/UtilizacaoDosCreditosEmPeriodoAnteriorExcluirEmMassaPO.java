@@ -1,38 +1,60 @@
-package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes;
+package com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO extends TestBaseEliel{
+public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO extends TestBaseEliel{
 	
 	
-	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
-	public WebElement parametro;
+
+	@FindBy(xpath = "//span[text()=\"Controle de Crédito Tributário\"]")
+	public WebElement controledecreditotributario;
 	
-	@FindBy(xpath = "//li/div/span[contains(text(),\"Mapeamento para Substituição\")]")
-	public WebElement contabil;
+	@FindBy(xpath = "//span[text()=\"Utilização dos Créditos em Período Anterior\"]")
+	public WebElement utilizacaodoscreditos;
 	
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement empresaO;
+	
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcaoempresa;
+	
+	
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"tax\"]/div/div/div[2]")
+	public WebElement tributo;
+	
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"00\"]/div/label/span")
+	public WebElement opcaotributo;
 	
 
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement filialO;
-
 	
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcaofilial;
+	
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"creditCode\"]/div/div/div[2]")
+	public WebElement codigodecredito;
+	
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcaocodigodecredito;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Utilização\"]")
+	public WebElement utilizacao;
+	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
+	public WebElement dataincial;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -61,7 +83,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
 	public WebElement mensagem;
 	
-	public MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO() {
+	public UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -69,9 +91,11 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 	public boolean criar() {
 		
 		sleep(2000);
-		parametro.click();
-		sleep(1000);
-		contabil.click();
+		controledecreditotributario.click();
+		sleep(2000);
+		
+		utilizacaodoscreditos.click();
+		
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -93,17 +117,50 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
+		
 		empresa.click();
-		sleep(1000);
-		empresaO.click();
-		empresaO.sendKeys(Keys.ESCAPE);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		
 		sleep(2000);
-	
+		
+		opcaoempresa.click();
+		
+		sleep(2000);
+		
+		tributo.click();
+		
+		sleep(2000);
+		
+		opcaotributo.click();
+		
+		sleep(2000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		sleep(2000);
+		
 		filial.click();
-		sleep(1000);
-		filialO.click();
-		filialO.sendKeys(Keys.ESCAPE);
+		
+		sleep(2000);
+		
+		opcaofilial.click();
+		
+		sleep(2000);
+		
+		codigodecredito.click();
+		
+		sleep(2000);
+		
+		opcaocodigodecredito.click();
+		
+		sleep(2000);
+		
+		utilizacao.sendKeys("7");
+		
+		sleep(2000);
+		
+		String data=fechaActual();
+		dataincial.sendKeys(data);
+		
 		
 		sleep(1000);
 
@@ -119,22 +176,50 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		//Segundo Registro
 		
 		empresa.click();
-		sleep(1000);
-		empresaO.click();
-		empresaO.sendKeys(Keys.ESCAPE);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		
 		sleep(2000);
 		
-	
+		opcaoempresa.click();
+		
+		sleep(2000);
+		
+		tributo.click();
+		
+		sleep(2000);
+		
+		opcaotributo.click();
+		
+		sleep(2000);
+		
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		sleep(2000);
+		
 		filial.click();
-		sleep(1000);
-		filialO.click();
-		filialO.sendKeys(Keys.ESCAPE);
+		
+		sleep(2000);
+		
+		opcaofilial.click();
+		
+		sleep(2000);
+		
+		codigodecredito.click();
+		
+		sleep(2000);
+		
+		opcaocodigodecredito.click();
+		
+		sleep(2000);
+		
+		utilizacao.sendKeys("7");
+		
+		sleep(2000);
+		
+		
+		dataincial.sendKeys(data);
 		
 		sleep(1000);
 
-		
-		sleep(2000);
 		novo.click();
 		sleep(2000);
 		waitExpectElement(sim);
@@ -217,9 +302,9 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectElement(sim);
 		sleep(1000);
-		aceitar.click();
+		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -257,7 +342,6 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		
 		return sucesso;
 	}
-
 
 
 }

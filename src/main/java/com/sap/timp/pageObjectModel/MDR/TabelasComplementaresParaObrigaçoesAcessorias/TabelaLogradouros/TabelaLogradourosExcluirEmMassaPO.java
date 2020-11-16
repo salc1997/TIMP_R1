@@ -1,38 +1,41 @@
-package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes;
+package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO extends TestBaseEliel{
+public class TabelaLogradourosExcluirEmMassaPO extends TestBaseEliel {
 	
+	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
+	public WebElement obrigacoes;
 	
-	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
-	public WebElement parametro;
-	
-	@FindBy(xpath = "//li/div/span[contains(text(),\"Mapeamento para Substituição\")]")
-	public WebElement contabil;
+	@FindBy(xpath = "//span[text()=\"Tabela de Logradouros\"]")
+	public WebElement tabelaLogradouros;
 	
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
-	public WebElement empresa;
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement empresaO;
-	
+	@FindBy(xpath = "//span[contains(text(),\"Nova\")]")
+	public WebElement nova;
 
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
-	public WebElement filial;
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement filialO;
-
+	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div[2]")
+	public WebElement codigoUF;
 	
+	@FindBy(xpath = "//div[@id=\"obligation\"]/div/div/div[2]")
+	public WebElement obrigacao;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Código de Logradouro\")]")
+	public WebElement codigoLogradouro;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição da Logradouro\")]")
+	public WebElement descricaoLogradouro;
+	
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	public WebElement opcao;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -61,7 +64,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
 	public WebElement mensagem;
 	
-	public MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO() {
+	public TabelaLogradourosExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -69,9 +72,10 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 	public boolean criar() {
 		
 		sleep(2000);
-		parametro.click();
-		sleep(1000);
-		contabil.click();
+		obrigacoes.click();
+		sleep(2000);
+		tabelaLogradouros.click();
+		
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -88,24 +92,28 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		sleep(2000);
 		System.out.println(id);
 		
-		novo.click();
+		nova.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
-		empresa.click();
-		sleep(1000);
-		empresaO.click();
-		empresaO.sendKeys(Keys.ESCAPE);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
 		sleep(2000);
-	
-		filial.click();
-		sleep(1000);
-		filialO.click();
-		filialO.sendKeys(Keys.ESCAPE);
 		
+		
+		codigoUF.click();
 		sleep(1000);
+		opcao.click();
+		sleep(1000);
+		obrigacao.click();
+		sleep(1000);
+		opcao.click();
+		sleep(1000);
+
+		codigoLogradouro.sendKeys("123");
+		descricaoLogradouro.sendKeys("Teste de Tabela de Logradouros");
+		sleep(1000);
+	
 
 		novo.click();
 		sleep(2000);
@@ -118,23 +126,24 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		
 		//Segundo Registro
 		
-		empresa.click();
-		sleep(1000);
-		empresaO.click();
-		empresaO.sendKeys(Keys.ESCAPE);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
 		sleep(2000);
 		
-	
-		filial.click();
+		
+		codigoUF.click();
 		sleep(1000);
-		filialO.click();
-		filialO.sendKeys(Keys.ESCAPE);
+		opcao.click();
+		sleep(1000);
+		obrigacao.click();
+		sleep(1000);
+		opcao.click();
+		sleep(1000);
+
+		codigoLogradouro.sendKeys("123");
+		descricaoLogradouro.sendKeys("Teste de Tabela de Logradouros");
 		
 		sleep(1000);
 
-		
-		sleep(2000);
 		novo.click();
 		sleep(2000);
 		waitExpectElement(sim);
@@ -217,9 +226,9 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectElement(sim);
 		sleep(1000);
-		aceitar.click();
+		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -257,7 +266,5 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		
 		return sucesso;
 	}
-
-
 
 }

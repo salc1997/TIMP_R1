@@ -113,7 +113,7 @@ public class ParametrosModeloDeApuracaoTPEditarPO extends TestBaseEliel {
 
 		datainicial.clear();
 		sleep(2000);
-		datainicial.sendKeys(enviar);
+		datainicial.sendKeys("12/11/2020");
 		sleep(2000);
 		gravar.click();
 		sleep(2000);

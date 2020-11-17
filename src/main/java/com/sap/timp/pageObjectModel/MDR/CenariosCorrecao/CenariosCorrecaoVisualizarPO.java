@@ -175,7 +175,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 		sucesso.add(descricaoV1.contains(descricaoE1));
 		sucesso.add(codigoV1.contains(codigoE1));
 		sucesso.add(descricaoV1.contains(descricaoE1));
-		sucesso.add(campoV1.contains(campoE1));
+		sucesso.add(campoE1.contains(campoV1));
 		sucesso.add(dataVigenciaV1.contains(dataVigenciaE1));
 		System.out.println(sucesso);
 

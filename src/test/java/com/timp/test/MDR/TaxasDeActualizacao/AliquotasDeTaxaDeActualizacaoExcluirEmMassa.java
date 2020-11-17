@@ -48,7 +48,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassa extends TestBaseKenssy 
 	assertTrue(sucesso, Criar);
 	sleep(1000);
 	
-	boolean sucesso2 = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.aliquotasDeTaxaDeActualizacaoExcluirEmMassa();
+	boolean sucesso2 = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.excluir();
 	assertTrue(sucesso2, Eliminado);
   }
 

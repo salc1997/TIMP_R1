@@ -4,7 +4,6 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -65,6 +64,22 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluirEmMasa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaEditar;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo;
+import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
@@ -198,6 +213,30 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	MotivoDeAfastamentoExcluir motivoDeAfastamentoExcluir;
 	MotivoDeAfastamentoExcluirEmMassa motivoDeAfastamentoExcluirEmMassa;
 	MotivoDeAfastamentoVisualizar motivoDeAfastamentoVisualizar;
+	
+	//Tabelas de Apoio E-SOCIAL > Tabela 20 - Tipos de Logradouro
+	TiposDeLogradouroCriar tiposDeLogradouroCriar;
+	TiposDeLogradouroEditar tiposDeLogradouroEditar;
+	TiposDeLogradouroExcluir tiposDeLogradouroExcluir;
+	TiposDeLogradouroExcluirEmMasa tiposDeLogradouroExcluirEmMasa;
+	TiposDeLogradouroVisualizar tiposDeLogradouroVisualizar;
+	
+	//Tabelas de Apoio E-SOCIAL > Tabela 21 - Natureza Juridica
+	NaturezaJuridicaCriar naturezaJuridicaCriar;
+	NaturezaJuridicaEditar naturezaJuridicaEditar;
+	NaturezaJuridicaExcluir naturezaJuridicaExcluir;
+	NaturezaJuridicaVisualizar naturezaJuridicaVisualizar;
+	
+	//Tabelas de Apoio E-SOCIAL > Unidade de Medida
+	UnidadeDeMedidaCriar unidadeDeMedidaCriar;
+	UnidadeDeMedidaEditar unidadeDeMedidaEditar;
+	UnidadeDeMedidaDetalhes unidadeDeMedidaDetalhes;
+	UnidadeDeMedidaVisualizar unidadeDeMedidaVisualizar;
+	UnidadeDeMedidaExcluir unidadeDeMedidaExcluir;
+	UnidadeDeMedidaExcluirEmMasa unidadeDeMedidaExcluirEmMasa;
+	UnidadeDeMedidaFiltroCodigo unidadeDeMedidaFiltroCodigo;
+	
+	
 	
 	// 0
 
@@ -1181,7 +1220,236 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		}
 
 		//123
+		
+		@Test(priority = 123)
+		public void tiposDeLogradouroCriar() {
 
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL	Tabela 20 - Tipos de Logradouro-------------------------");
+
+			tiposDeLogradouroCriar = new TiposDeLogradouroCriar();
+			tiposDeLogradouroCriar.beforeClass();
+			tiposDeLogradouroCriar.login();
+			tiposDeLogradouroCriar.acessarMDR();
+			tiposDeLogradouroCriar.criar();
+			tiposDeLogradouroCriar.afterClass();
+
+		}
+
+		@Test(priority = 124)
+		public void tiposDeLogradouroEditar() {
+
+			tiposDeLogradouroEditar = new TiposDeLogradouroEditar();
+			tiposDeLogradouroEditar.beforeClass();
+			tiposDeLogradouroEditar.login();
+			tiposDeLogradouroEditar.acessarMDR();
+			tiposDeLogradouroEditar.editar();
+			tiposDeLogradouroEditar.afterClass();
+
+		}
+
+		@Test(priority = 125)
+		public void tiposDeLogradouroVisualizar() {
+
+			tiposDeLogradouroVisualizar = new TiposDeLogradouroVisualizar();
+			tiposDeLogradouroVisualizar.beforeClass();
+			tiposDeLogradouroVisualizar.login();
+			tiposDeLogradouroVisualizar.acessarMDR();
+			tiposDeLogradouroVisualizar.visualizar();
+			tiposDeLogradouroVisualizar.afterClass();
+
+		}
+
+
+
+		@Test(priority = 126)
+		public void tiposDeLogradouroExcluir() {
+
+			tiposDeLogradouroExcluir = new TiposDeLogradouroExcluir();
+			tiposDeLogradouroExcluir.beforeClass();
+			tiposDeLogradouroExcluir.login();
+			tiposDeLogradouroExcluir.acessarMDR();
+			tiposDeLogradouroExcluir.excluir();
+			tiposDeLogradouroExcluir.afterClass();
+
+			
+		}
+		
+
+		@Test(priority = 127)
+		public void tiposDeLogradouroExcluirEmMassa() {
+
+			tiposDeLogradouroExcluirEmMasa = new TiposDeLogradouroExcluirEmMasa();
+			tiposDeLogradouroExcluirEmMasa.beforeClass();
+			tiposDeLogradouroExcluirEmMasa.login();
+			tiposDeLogradouroExcluirEmMasa.acessarMDR();
+			tiposDeLogradouroExcluirEmMasa.excluir();
+			tiposDeLogradouroExcluirEmMasa.afterClass();
+			
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL	Tabela 20 - Tipos de Logradouro fin-------------------------");
+
+		}
+
+
+
+		//129
+		
+		
+		@Test(priority = 129)
+		public void naturezaJuridicaCriar() {
+
+			System.out.println("-------------------naturezaJuridica Fiscal > naturezaJuridica Fiscal-------------------------");
+
+			naturezaJuridicaCriar = new NaturezaJuridicaCriar();
+			naturezaJuridicaCriar.beforeClass();
+			naturezaJuridicaCriar.login();
+			naturezaJuridicaCriar.acessarMDR();
+			naturezaJuridicaCriar.criar();
+			naturezaJuridicaCriar.afterClass();
+
+		}
+
+		@Test(priority = 130)
+		public void naturezaJuridicaEditar() {
+
+			naturezaJuridicaEditar = new NaturezaJuridicaEditar();
+			naturezaJuridicaEditar.beforeClass();
+			naturezaJuridicaEditar.login();
+			naturezaJuridicaEditar.acessarMDR();
+			naturezaJuridicaEditar.editar();
+			naturezaJuridicaEditar.afterClass();
+
+		}
+
+		@Test(priority = 131)
+		public void naturezaJuridicaVisualizar() {
+
+			naturezaJuridicaVisualizar = new NaturezaJuridicaVisualizar();
+			naturezaJuridicaVisualizar.beforeClass();
+			naturezaJuridicaVisualizar.login();
+			naturezaJuridicaVisualizar.acessarMDR();
+			naturezaJuridicaVisualizar.visualizar();
+			naturezaJuridicaVisualizar.afterClass();
+
+		}
+
+
+
+		@Test(priority = 132)
+		public void naturezaJuridicaExcluir() {
+
+			naturezaJuridicaExcluir = new NaturezaJuridicaExcluir();
+			naturezaJuridicaExcluir.beforeClass();
+			naturezaJuridicaExcluir.login();
+			naturezaJuridicaExcluir.acessarMDR();
+			naturezaJuridicaExcluir.excluir();
+			naturezaJuridicaExcluir.afterClass();
+
+			System.out.println("-------------------naturezaJuridica Fiscal > naturezaJuridica Fiscal Fin-------------------------");
+		}
+
+
+		//135
+		
+		// Tabelas de Apoio E-SOCIAL > Unidade de Medida
+
+		@Test(priority = 135)
+		public void unidadeDeMedidaCriar() {
+
+			System.out.println("-------------------unidadeDeMedida Fiscal > unidadeDeMedida Fiscal-------------------------");
+
+			unidadeDeMedidaCriar = new UnidadeDeMedidaCriar();
+			unidadeDeMedidaCriar.beforeClass();
+			unidadeDeMedidaCriar.login();
+			unidadeDeMedidaCriar.acessarMDR();
+			unidadeDeMedidaCriar.criar();
+			unidadeDeMedidaCriar.afterClass();
+
+		}
+
+		@Test(priority = 136)
+		public void unidadeDeMedidaEditar() {
+
+			unidadeDeMedidaEditar = new UnidadeDeMedidaEditar();
+			unidadeDeMedidaEditar.beforeClass();
+			unidadeDeMedidaEditar.login();
+			unidadeDeMedidaEditar.acessarMDR();
+			unidadeDeMedidaEditar.editar();
+			unidadeDeMedidaEditar.afterClass();
+
+		}
+
+		@Test(priority = 137)
+		public void unidadeDeMedidaVisualizar() {
+
+			unidadeDeMedidaVisualizar = new UnidadeDeMedidaVisualizar();
+			unidadeDeMedidaVisualizar.beforeClass();
+			unidadeDeMedidaVisualizar.login();
+			unidadeDeMedidaVisualizar.acessarMDR();
+			unidadeDeMedidaVisualizar.visualizar();
+			unidadeDeMedidaVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 138)
+		public void unidadeDeMedidaDetalhes() {
+
+			unidadeDeMedidaDetalhes = new UnidadeDeMedidaDetalhes();
+			unidadeDeMedidaDetalhes.beforeClass();
+			unidadeDeMedidaDetalhes.login();
+			unidadeDeMedidaDetalhes.acessarMDR();
+			unidadeDeMedidaDetalhes.detalhes();
+			unidadeDeMedidaDetalhes.afterClass();
+
+		}
+
+
+		@Test(priority = 139)
+		public void unidadeDeMedidaExcluir() {
+
+			unidadeDeMedidaExcluir = new UnidadeDeMedidaExcluir();
+			unidadeDeMedidaExcluir.beforeClass();
+			unidadeDeMedidaExcluir.login();
+			unidadeDeMedidaExcluir.acessarMDR();
+			unidadeDeMedidaExcluir.excluir();
+			unidadeDeMedidaExcluir.afterClass();
+
+			
+		}
+		
+		@Test(priority = 140)
+		public void unidadeDeMedidaExcluirEmMassa() {
+
+			unidadeDeMedidaExcluirEmMasa = new UnidadeDeMedidaExcluirEmMasa();
+			unidadeDeMedidaExcluirEmMasa.beforeClass();
+			unidadeDeMedidaExcluirEmMasa.login();
+			unidadeDeMedidaExcluirEmMasa.acessarMDR();
+			unidadeDeMedidaExcluirEmMasa.excluir();
+			unidadeDeMedidaExcluirEmMasa.afterClass();
+
+		}
+		
+		@Test(priority = 141)
+		public void unidadeDeMedidaFiltroCodigo() {
+
+			unidadeDeMedidaFiltroCodigo = new UnidadeDeMedidaFiltroCodigo();
+			unidadeDeMedidaFiltroCodigo.beforeClass();
+			unidadeDeMedidaFiltroCodigo.login();
+			unidadeDeMedidaFiltroCodigo.acessarMDR();
+			unidadeDeMedidaFiltroCodigo.filtroCodigo();
+			unidadeDeMedidaFiltroCodigo.afterClass();
+			
+			System.out.println("-------------------unidadeDeMedida Fiscal > unidadeDeMedida Fiscal Fin-------------------------");
+
+		}
+
+		
+
+
+		
+		
+		//142
+		
+		
 		
 
 }

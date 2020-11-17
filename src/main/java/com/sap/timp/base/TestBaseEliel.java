@@ -1,3 +1,4 @@
+
 package com.sap.timp.base;
 
 import java.text.DateFormat;
@@ -21,7 +22,12 @@ public class TestBaseEliel extends TestBaseSteven {
 
 	public WebDriver initializationE() {
 
+<<<<<<< HEAD
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+=======
+	/*Versão 83 do google*/	System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+	/*Versão 86 do google*/	//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(tc2);
@@ -215,3 +221,4 @@ public String dataanterior() {
 	
 
 }
+

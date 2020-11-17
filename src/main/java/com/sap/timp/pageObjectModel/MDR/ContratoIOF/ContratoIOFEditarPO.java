@@ -44,11 +44,13 @@ public class ContratoIOFEditarPO extends TestBaseMassiel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		contratoiof.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Pega o ultimo id
 		siguiente.click();
 		//setafinal.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -66,6 +68,8 @@ public class ContratoIOFEditarPO extends TestBaseMassiel{
 		sleep(1000);
 		editar.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"contractValue\"]/div/div", "class", "base-input  required type1 success");
 		sleep(2000);
@@ -85,7 +89,7 @@ public class ContratoIOFEditarPO extends TestBaseMassiel{
 		sleep(3000);
 		
 		butaosim.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -113,7 +117,7 @@ public class ContratoIOFEditarPO extends TestBaseMassiel{
 		sleep(3000);
 		
 		butaosim.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

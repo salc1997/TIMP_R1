@@ -249,7 +249,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 		return sucesso;
 	}
 	
-	public boolean aliquotasDeTaxaDeActualizacaoExcluirEmMassa() {
+	public boolean excluir() {
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();

@@ -8,6 +8,8 @@ import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeAct
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoCriarPO;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa;
+import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirEmMassa;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa;
@@ -15,6 +17,7 @@ import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLi
 import com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluirEmMassa;
 import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluirEmMassa;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFFiltroPorID;
 import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar;
@@ -55,6 +58,8 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteEx
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
 import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar;
 import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoEditar;
@@ -68,6 +73,7 @@ import com.timp.test.MDR.ThinCapitalization.Subcapitalizacao.SubcapitalizacaoExc
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfratacaoCriar;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoDetalhes;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoEditar;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
 
 public class AutomacoesMDR6 extends TestBaseSteven{
 	
@@ -171,18 +177,37 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		//Parametros Oficializacao Livros
 			ParametrosOficializacaoLivrosFiltroPorID parametrosOficializacaoLivrosFiltroPorID;
 			
-		//Parametros Contabilizacao Mapeamento Substituicao Conta Estoque Cenarios Correcoes
+		//Parametros Contabilizacao > Mapeamento Substituicao Conta Estoque Cenarios Correcoes
 			MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa;
 			
-		//Parametros Contabilizacao Mapeamento Contabil Correcao
+		//Parametros Contabilizacao > Mapeamento Contabil Correcao
 			MapeamentoContabilCorrecaoExcluirEmMassa mapeamentoContabilCorrecaoExcluirEmMassa;
 			
-		//Parametros Contabilizacao Mapeamento Contabil
+		//Parametros Contabilizacao > Mapeamento Contabil
 			MapeamentoContabilExcluirEmMassa mapeamentoContabilExcluirEmMassa;
 			
-		//Taxas De Actualizacao Aliquotas De Taxa De Atualizacao
+		//Taxas De Actualizacao > Aliquotas De Taxa De Atualizacao
 			AliquotasDeTaxaDeActualizacaoPesquisaPorID aliquotasDeTaxaDeActualizacaoPesquisaPorID;
+	
+		//Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
+			UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
+		
+		//Controle De Credito Tributario > Codigos De Credito
+			CodigosDeCreditoExcluirEmMassa codigosDeCreditoExcluirEmMassa;
 			
+		//Siscoserv  Registro RF
+			RegistroRFFiltroPorID registroRFFiltroPorID;
+		
+		//Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos
+			TabelaServicosExcluirEmMassa tabelaServicosExcluirEmMassa;
+		
+		//Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros
+			TabelaLogradouroExcluirEmMassa tabelaLogradouroExcluirEmMassa;
+			
+		//Valor Adicionado > Município
+			MunicipioExcluirEmMassa municipioExcluirEmMassa;
+			
+		
 		//--------------------------------------------------------------------------
 			
 			//0
@@ -956,6 +981,82 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				aliquotasDeTaxaDeActualizacaoPesquisaPorID.acessarMDR();
 				aliquotasDeTaxaDeActualizacaoPesquisaPorID.filtro();
 				aliquotasDeTaxaDeActualizacaoPesquisaPorID.afterClass();
+			}
+		//Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
+			
+			@Test(priority = 80)
+			public void utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa() {
+				System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior-------------------------");
+				utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa = new UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa();
+				utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.beforeClass();
+				utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.login();
+				utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.acessarMDR();
+				utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.criar();
+				utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.afterClass();
+			}
+
+			//Controle De Credito Tributario > Codigos De Credito
+			
+			@Test(priority = 81)
+			public void codigosDeCreditoExcluirEmMassa() {
+				System.out.println("-------------------Controle De Credito Tributario > Codigos De Credito-------------------------");
+				codigosDeCreditoExcluirEmMassa = new CodigosDeCreditoExcluirEmMassa();
+				codigosDeCreditoExcluirEmMassa.beforeClass();
+				codigosDeCreditoExcluirEmMassa.login();
+				codigosDeCreditoExcluirEmMassa.acessarMDR();
+				codigosDeCreditoExcluirEmMassa.criar();
+				codigosDeCreditoExcluirEmMassa.afterClass();
+			}
+			
+			//Siscoserv > Registro RF
+			
+			@Test(priority = 82)
+			public void registroRFFiltroPorID() {
+				System.out.println("-------------------Siscoserv > Registro RF-------------------------");
+				registroRFFiltroPorID = new RegistroRFFiltroPorID();
+				registroRFFiltroPorID.beforeClass();
+				registroRFFiltroPorID.login();
+				registroRFFiltroPorID.acessarMDR();
+				registroRFFiltroPorID.filtro();
+				registroRFFiltroPorID.afterClass();
+			}
+			
+			//Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos
+			
+			@Test(priority = 83)
+			public void tabelaServicosExcluirEmMassa() {
+				System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos-------------------------");
+				tabelaServicosExcluirEmMassa = new TabelaServicosExcluirEmMassa();
+				tabelaServicosExcluirEmMassa.beforeClass();
+				tabelaServicosExcluirEmMassa.login();
+				tabelaServicosExcluirEmMassa.acessarMDR();
+				tabelaServicosExcluirEmMassa.criar();
+				tabelaServicosExcluirEmMassa.afterClass();
+			}
+			//Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros
+			
+			@Test(priority = 84)
+			public void tabelaLogradouroExcluirEmMassa() {
+				System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros-------------------------");
+				tabelaLogradouroExcluirEmMassa = new TabelaLogradouroExcluirEmMassa();
+				tabelaLogradouroExcluirEmMassa.beforeClass();
+				tabelaLogradouroExcluirEmMassa.login();
+				tabelaLogradouroExcluirEmMassa.acessarMDR();
+				tabelaLogradouroExcluirEmMassa.criar();
+				tabelaLogradouroExcluirEmMassa.afterClass();
+			}
+			
+			//Valor Adicionado > Município
+			
+			@Test(priority = 85)
+			public void municipioExcluirEmMassa() {
+				System.out.println("-------------------Valor Adicionado > Município-------------------------");
+				municipioExcluirEmMassa = new MunicipioExcluirEmMassa();
+				municipioExcluirEmMassa.beforeClass();
+				municipioExcluirEmMassa.login();
+				municipioExcluirEmMassa.acessarMDR();
+				municipioExcluirEmMassa.criar();
+				municipioExcluirEmMassa.afterClass();
 			}
 
 }

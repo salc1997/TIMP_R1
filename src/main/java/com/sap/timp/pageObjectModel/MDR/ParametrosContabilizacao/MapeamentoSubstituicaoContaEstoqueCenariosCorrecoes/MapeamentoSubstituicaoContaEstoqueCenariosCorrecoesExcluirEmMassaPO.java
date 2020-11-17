@@ -217,9 +217,9 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectElement(aceitar);
 		sleep(1000);
-		sim.click();
+		aceitar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

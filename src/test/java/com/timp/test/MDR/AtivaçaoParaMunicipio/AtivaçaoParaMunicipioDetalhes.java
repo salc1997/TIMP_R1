@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunici
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -49,9 +52,13 @@ public class AtivaçaoParaMunicipioDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void detalhes() {
 
-		String sucesso = ativaçaoParaMunicipioDestalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = ativaçaoParaMunicipioDestalhesPO.detalhes();
 
-		assertEquals(sucesso, "edit", visualizaçar);
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), Detalhes);
+
+		}
 	}
 
 }

@@ -26,26 +26,26 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//*[@id=\"description\"]/div/div/input")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresa;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  um Tributo\"]")
+	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
 	//@FindBy (xpath = "//*[@id=\"23\"]/div[1]/label/span")
 	@FindBy (xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaotributo;
 
-	@FindBy(xpath =" //*[@id=\"select\"]/div[1]/input")
+	@FindBy(xpath ="//div[@id=\"structureGroup\"]/div/div/div[2]")
 	public WebElement grupoestrutura;
 	
 	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement opcaogrupo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Estrutura de Dados\"]")
+	@FindBy(xpath = "//div[@id=\"structure\"]/div/div/div[2]")
 	public WebElement estruturadados;
 	
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
@@ -132,14 +132,16 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		sleep(2000);
 		opcaoempresa.click();
 		sleep(2000);
-		empresa.sendKeys(Keys.ESCAPE);
+		opcaoempresa.sendKeys(Keys.ESCAPE);
 		sleep(2000);
+		
 		tributo.click();
 		sleep(2000);
 		opcaotributo.click();
 		sleep(2000);
-		tributo.sendKeys(Keys.ESCAPE);
+		opcaotributo.sendKeys(Keys.ESCAPE);
 		sleep(2000);
+		
 		grupoestrutura.click();
 		sleep(2000);
 		opcaogrupo.click();
@@ -170,7 +172,7 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		biblioteca.click();
 		
 		sleep(2000);
-		butaosim.click();
+		//butaosim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

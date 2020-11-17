@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisHierarquiaCriarComCópiaPO;
 
 import org.testng.annotations.BeforeClass;
 

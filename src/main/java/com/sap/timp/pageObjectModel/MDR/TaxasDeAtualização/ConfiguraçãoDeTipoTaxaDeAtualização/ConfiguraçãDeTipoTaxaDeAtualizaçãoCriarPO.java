@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.base.TestBaseMassiel;
 
-public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseFernando{		
+public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseMassiel{		
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-updateRates\"]")
 	public WebElement taxasDeActualizacao;
 	

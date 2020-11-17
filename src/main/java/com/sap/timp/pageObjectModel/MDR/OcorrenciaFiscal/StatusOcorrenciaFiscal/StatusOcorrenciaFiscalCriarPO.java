@@ -3,9 +3,11 @@ package com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.google.common.escape.Escaper;
 import com.sap.timp.base.TestBaseSteven;
 
 public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
@@ -64,9 +66,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 	public WebElement motivo;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement siguiente;
-	
-	
+	public WebElement siguiente;	
 	
 	@FindBy(xpath = "//body")
 	public WebElement body;
@@ -103,12 +103,14 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		
 		novo.click();
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		empresa.click();
 		sleep(1000);
 		opcao.click();
+		sleep(1000);
 		body.click();
 		sleep(1000);
 		
@@ -117,6 +119,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		ufFilial.click();
 		sleep(1000);
 		opcao.click();
+		sleep(1000);
 		body.click();
 		sleep(1000);
 		
@@ -125,6 +128,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		filial.click();
 		sleep(1000);
 		opcao.click();
+		sleep(1000);
 		body.click();
 		sleep(1000);
 		
@@ -136,13 +140,15 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		statusInicial.click();
 		sleep(1000);
 		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		new Actions(driver).moveToElement(statusInicial).click().perform();
 		sleep(1000);
 		
 		statusFinal.click();
 		sleep(1000);
 		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		sleep(2000);
+		new Actions(driver).moveToElement(statusFinal).click().perform();
 		sleep(1000);
 		
 		fechar.click();

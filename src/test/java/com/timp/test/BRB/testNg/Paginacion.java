@@ -2,27 +2,12 @@ package com.timp.test.BRB.testNg;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseParalelo2;
+
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.prueba.PaginacionPO;
-
-import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
-
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
  
 public class Paginacion extends TestBaseSteven {

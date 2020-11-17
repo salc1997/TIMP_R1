@@ -1,18 +1,14 @@
 package com.timp.test.BRB.testNg;
 
-import static org.testng.Assert.assertEquals;
+
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseParalelo2;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;

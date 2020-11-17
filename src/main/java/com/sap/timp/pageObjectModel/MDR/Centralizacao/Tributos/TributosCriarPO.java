@@ -23,19 +23,19 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/div/ul/li[1]/button")
 	public WebElement btnGravar;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione um  Empresa\"]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcEmpresa;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar UF Filial\"]")
+	@FindBy(xpath = "//div[@id=\"UF\"]/div/div/div[2]")
 	public WebElement ufFilial;
 	
 	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcUfFilial;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filiais\"]")
+	@FindBy(xpath = "//div[@id=\"branches\"]/div/div/div[2]")
 	public WebElement filiais;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
@@ -44,7 +44,7 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//div[contains(@class,\"overlay-multipleSelect3\")]")
 	public WebElement claseOpcFiliais;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo\"]")
+	@FindBy(xpath = "//div[@id=\"tribute\"]/div/div/div[2]")
 	public WebElement tributo;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[text()=\"ICMS\"]")
@@ -53,7 +53,7 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcTributoCIAP;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo Centralizador\"]")
+	@FindBy(xpath = "//div[@id=\"centralizedTribute\"]/div/div/div[2]")
 	public WebElement tributoCentralizador;
 	
 	@FindBy(xpath = "//li[@class=\"list-item\"]")
@@ -183,7 +183,7 @@ public class TributosCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"01\"]/div[2]")
 	public WebElement opcICMSST;
 	
-	@FindBy(xpath = "//*[@id=\"0008\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcFiliaisTC2;
 	
 	public TributosCriarPO() {
@@ -227,18 +227,24 @@ public class TributosCriarPO extends TestBaseKathy{
 		System.out.println(id);
 		
 		novo.click();
-		waitExpectElement(btnGravar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(empresa);
-		empresa.sendKeys(Keys.ENTER);
+		sleep(2000);
+
+
+		empresa.click();
+		sleep(1000);
 		opcEmpresa.click();
 		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(3000);
 		
-		ufFilial.sendKeys(Keys.ENTER);
+		ufFilial.click();
+		sleep(1000);
 		opcUfFilial.click();
 		attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
-		filiais.sendKeys(Keys.ENTER);
+		filiais.click();
+		sleep(1000);
 		if(tc2==true) {
 			opcFiliaisTC2.click();
 		}else {
@@ -246,40 +252,38 @@ public class TributosCriarPO extends TestBaseKathy{
 		}
 		
 		claseOpcFiliais.click();
+		sleep(2000);
 		
 		tributo.click();
-		/*
-		if (td1 == true || tq1==true ) {
-			opcTributoCIAP.click();
-			opcTributoICMS.click();
-		}else if (tp1 == true || tc2==true) {
-			opcTributoICMS.click();
-			opcICMSST.click();
-		}
-		*/
+		sleep(1000);
 		opcTributoCIAP.click();
+		sleep(1000);
 		opcTributoICMS.click();
-		
+		sleep(1000);
 		claseOpcFiliais.click();
 		
 		attributeToBeXpath("//div[@id=\"centralizedTribute\"]/div ", "class", "base-select required");
+		sleep(2000);
 		tributoCentralizador.click();
+		sleep(1000);
 		opcTributoCentralizador.click();
-		
+		sleep(1000);
 		String data = fechaActual();
 
 		dataVigenciaInicio.sendKeys(data);
-		dataVigenciaInicio.sendKeys(Keys.END);
-		sleep(1000);
-		dataVigenciaInicio.sendKeys(Keys.ESCAPE);
-		sleep(1000);
-		driver.findElement(By.xpath("//div[@id=\"until\"]/div/div/input")).click();
-			
+//		dataVigenciaInicio.sendKeys(Keys.END);
+//		sleep(1000);
+//		dataVigenciaInicio.sendKeys(Keys.ESCAPE);
+//		sleep(1000);
+//		driver.findElement(By.xpath("//div[@id=\"until\"]/div/div/input")).click();
+		sleep(2000);
 		pestañaAjuste.click();
 		waitExpectElement(btnNovoAjuste);
+		sleep(2000);
 		btnNovoAjuste.click();
 		sleep(1000);
 		waitExpectElement(filiaisAjuste);
+		sleep(1000);
 		filiaisAjuste.sendKeys(Keys.ENTER);
 		opcFiliaisAjuste.click();
 		
@@ -288,64 +292,39 @@ public class TributosCriarPO extends TestBaseKathy{
 		tributoOrigen.click();
 		sleep(1000);
 		opcTributoOrigen.click();
-		/*
-		if (td1 == true || tq1==true ) {
-			sleep(8000);
-		}else if (tp1 == true || tc2==true) {
-			sleep(10000);
-		}	
-		*/
+
 		sleep(1000);
 		attributeToBeXpath("//div[@id=\"tributeTypeOrigin\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoOrigen.click();
-		/*
-		if (td1 == true || tq1==true ) {
-			opcTipoOrigen.click();
-		}else if (tp1 == true || tc2==true) {
-			opcTipoOrigenTP1.click();
-		}		
-		*/
 		sleep(1000);
 		opcTipoOrigen.click();
 		sleep(2000);
-		/*
-		if (td1 == true || tq1==true ) {
-			sleep(9000);
-		}else if (tp1 == true || tc2==true) {
-			sleep(12000);
-		}
-		*/	
+
 		attributeToBeXpath("//div[@id=\"saldo\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		saldo.click();
+		sleep(1000);
 		opcSaldo.click();
 		sleep(2000);
-		/*
-		if (td1 == true || tq1==true) {
-			sleep(6000);
-		}else if (tp1 == true || tc2==true) {
-			sleep(8000);
-		}
-		*/		
-		detalheOrigen.click();
-		opcDetalheOrigen.click();
 		
+		detalheOrigen.click();
+		sleep(1000);
+		opcDetalheOrigen.click();
 		sleep(3000);
+		
 		tipoDocumentoOrigen.click();
+		sleep(1000);
 		opcTipoDocumentoOrigen.click();
-		/*
-		if (td1 == true || tq1==true ) {
-			sleep(8000);
-		}else if (tp1 == true || tc2==true) {
-			sleep(12000);
-		}
-		*/
+		sleep(1000);
+
 		attributeToBeXpath("//div[@id=\"documentNameOrigin\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		modeloGuiaOrigen.click();
+		sleep(1000);
 		opcModeloGuiaOrigen.click();
+		sleep(1000);
 		/*
 		if (td1 == true || tq1==true ) {
 			sleep(6000);
@@ -356,52 +335,40 @@ public class TributosCriarPO extends TestBaseKathy{
 		attributeToBeXpath("//div[@id=\"outputFieldOrigin\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		campoSaidaOrigen.click();
+		sleep(1000);
 		opcCampoSaidaOrigen.click();
-		
-		/*
-		if (td1 == true || tq1==true ) {
-			sleep(2500);
-		}else if (tp1 == true || tc2==true) {
-			sleep(4000);
-		}
-		*/
+
+
 		sleep(2000);
 		actionsMoveToElementElement(campoSaidaDestino);
+		sleep(1000);
+
 		
 		tributoDestino.click();
 		sleep(1000);
 		opcTributoDestino.click();
+		sleep(1000);
 		
-		/*
-		if (td1 == true || tq1==true ) {
-			sleep(6000);
-		}else if (tp1 == true || tc2==true) {
-			sleep(12000);
-		}
-		*/
+		
 		attributeToBeXpath("//div[@id=\"tributeTypeDestination\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		tipoDestino.click();
 		sleep(1000);
 		opcTipoDestino.click();
+		sleep(1000);
 		
-		/*
-		if (td1 == true || tq1==true ) {
-			sleep(8000);
-		}else if (tp1 == true || tc2==true) {
-			sleep(12000);
-		}
-		*/
 		attributeToBeXpath("//div[@id=\"detailDestination\"]/div/div", "class", "base-select required");
 		sleep(3000);
 		detalheDestino.click();
 		sleep(2000);
 		opcDetalheDestino.click();
-		
 		sleep(2000);
+		
+		
 		tipoDocumentoDestino.click();
 		sleep(1000);
 		opcTipoDocumentoDestino.click();
+		sleep(1000);
 		
 		/*
 		if (td1 == true || tq1==true ) {
@@ -424,19 +391,23 @@ public class TributosCriarPO extends TestBaseKathy{
 			sleep(12000);
 		}
 		*/
+		sleep(1000);
 		attributeToBeXpath("//div[@id=\"outputFieldDestination\"]/div/div", "class","base-select required");
 		sleep(2000);
 		campoSaidaDestino.click();
 		sleep(1000);
 		opcCampoSaidaDestino.click();
+		sleep(1000);
 		
 		btnNovoAjusteGravar.click();
 		
 		//Integer filas= driver.findElements(By.xpath("//*[@id=\"library\"]/div/div/div/div[2]/div[1]")).size();
 		
-		
+		sleep(3000);
 		btnGravar.click();
+		sleep(1000);
 		waitExpectElement(confirmacionGravar);
+		sleep(1000);
 		confirmacionGravar.click();
 		
 		sleep(3000);
@@ -446,7 +417,7 @@ public class TributosCriarPO extends TestBaseKathy{
 		sleep(2000);
 		//waitExpectElement(btnRegresar);
 		btnRegresar.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

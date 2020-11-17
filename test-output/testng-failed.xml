@@ -1,5 +1,23 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
@@ -8,8 +26,64 @@
           <include name="atualizar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
+=======
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+=======
+<<<<<<< HEAD
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="detalle"/>
         </methods>
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle -->
+=======
+<<<<<<< HEAD
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirEmMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirEmMassa -->
+=======
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="filtroCodigo"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

@@ -42,19 +42,19 @@ public class MovimentoSCANCCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Empresa\")]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
+	@FindBy(xpath = "//div[@id=\"UF\"]/div/div/div[2]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione Filial\")]")
+	@FindBy(xpath = "//div[@id=\"branches\"]/div/div/div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement filialO;
 		
-	@FindBy(xpath = "//input[contains(@placeholder,\"Filial Centralizadora\")]")
+	@FindBy(xpath = "//div[@id=\"centralizingBranch\"]/div/div/div[2]")
 	public WebElement filialCentralizadora;
 
 	@FindBy(xpath = "//div[@id=\"effectiveDate\"]/div/div/input")
@@ -101,29 +101,31 @@ public class MovimentoSCANCCriarPO extends TestBaseSteven{
 		
 	
 		
-		empresa.sendKeys(Keys.ENTER);
+		empresa.click();
 		sleep(1000);
 		opcao.click();
+		sleep(1000);
 		
 		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(2000);
 		
-		uf.sendKeys(Keys.ENTER);
+		uf.click();
 		sleep(1000);
 		opcao.click();
-		
+		sleep(1000);
 		attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);	
 		
-		filial.sendKeys(Keys.ENTER);
+		filial.click();
 		sleep(1000);
 		filialO.click();
+		sleep(1000);
 		filialO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 
 		
-		filialCentralizadora.sendKeys(Keys.ENTER);
+		filialCentralizadora.click();
 		sleep(1000);
 		opcao.click();
 		sleep(1000);

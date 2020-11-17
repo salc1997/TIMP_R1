@@ -2,15 +2,36 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-11-17T01:14:37Z" name="Default suite" finished-at="2020-11-17T01:15:54Z" duration-ms="77353">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-16T21:02:32Z" name="Default suite" finished-at="2020-11-16T21:05:06Z" duration-ms="153905">
+=======
+  <suite name="Default suite" duration-ms="65917" started-at="2020-11-16T19:09:57Z" finished-at="2020-11-16T19:11:03Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-11-17T01:14:37Z" name="Default test" finished-at="2020-11-17T01:15:54Z" duration-ms="77353">
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:14:37Z" name="beforeClass" finished-at="2020-11-16T19:14:54Z" duration-ms="17062" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-16T21:02:32Z" name="Default test" finished-at="2020-11-16T21:05:06Z" duration-ms="153905">
+      <class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:32Z" name="beforeClass" finished-at="2020-11-16T18:02:45Z" duration-ms="12524" status="PASS">
+=======
+    <test name="Default test" duration-ms="65917" started-at="2020-11-16T19:09:57Z" finished-at="2020-11-16T19:11:03Z">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="13386" started-at="2020-11-16T13:09:57Z" finished-at="2020-11-16T13:10:10Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:14:54Z" name="ingresar" finished-at="2020-11-16T19:15:02Z" duration-ms="7823" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -28,6 +49,46 @@
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes -->
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:45Z" name="login" finished-at="2020-11-16T18:02:53Z" duration-ms="7923" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="login" duration-ms="7468" started-at="2020-11-16T13:10:10Z" finished-at="2020-11-16T13:10:18Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:53Z" name="acessarMDR" finished-at="2020-11-16T18:03:16Z" duration-ms="23509" status="PASS">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="acessarMDR" duration-ms="10245" started-at="2020-11-16T13:10:18Z" finished-at="2020-11-16T13:10:28Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:03:16Z" name="criar" finished-at="2020-11-16T18:05:06Z" duration-ms="109866" status="PASS">
+=======
+        <test-method status="PASS" signature="filtroCodigo()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="filtroCodigo" duration-ms="30360" started-at="2020-11-16T13:10:28Z" finished-at="2020-11-16T13:10:58Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:05:06Z" name="afterClass" finished-at="2020-11-16T18:05:06Z" duration-ms="69" status="PASS">
+=======
+        </test-method> <!-- filtroCodigo -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4444" started-at="2020-11-16T13:10:58Z" finished-at="2020-11-16T13:11:03Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

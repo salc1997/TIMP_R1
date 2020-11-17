@@ -1,65 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluirEmMasa">
-        <methods>
-          <include name="ingresar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="mdrEntrar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluirEmMasa -->
-=======
-<<<<<<< HEAD
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa">
-        <methods>
-          <include name="excluirEmMassa"/>
-=======
-<<<<<<< HEAD
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia">
-=======
-      <class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="excluirr"/>
-          <include name="criarConfiguracaoHierarquia"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="mdrEntrar"/>
-          <include name="afterClass"/>
-=======
-          <include name="afterClass"/>
           <include name="criar"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia -->
-=======
-      </class> <!-- com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

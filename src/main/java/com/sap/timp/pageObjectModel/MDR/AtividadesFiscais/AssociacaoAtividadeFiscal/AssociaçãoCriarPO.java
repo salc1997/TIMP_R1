@@ -30,6 +30,9 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 	@FindBy(xpath = "//div[contains(@class, \"municipioExecutor\")]/div/div/div/div[2]")
 	public WebElement inputMunicipioExecutor;
 	
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
+	public WebElement opcionCheckbox1;
+	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcionCheckbox;
 	
@@ -115,8 +118,8 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 		sleep(2000);
 		inputEmpresa.click();
 		sleep(2000);
-		opcionCheckbox.click();
-		opcionCheckbox.sendKeys(Keys.ESCAPE);
+		opcionCheckbox1.click();
+		opcionCheckbox1.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 		attributeToBeXpath("//div[contains(@class, \"uf\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");

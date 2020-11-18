@@ -1,6 +1,5 @@
-package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
+package com.timp.test.MDR.TabelasApoioESocial.Tabela29;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -10,21 +9,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO;
 
-public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
-
+public class CodigoDeTreinamentoESimulacoesDeExerciciosEditar extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ContasDefaultParaExtemporaneoEditarPO contasDefaultParaExtemporaneoEditarPO;
+	CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO codigoDeTreinamentoESimulacoesDeExerciciosEditarPO;
 
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass()  {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		contasDefaultParaExtemporaneoEditarPO = new ContasDefaultParaExtemporaneoEditarPO();
+		codigoDeTreinamentoESimulacoesDeExerciciosEditarPO = new CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO();
 	}
 
 	@AfterClass
@@ -48,9 +46,10 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
+		boolean sucesso = codigoDeTreinamentoESimulacoesDeExerciciosEditarPO.editar();
+
 		assertTrue(sucesso, Editar);
-		//assertEquals(sucesso, "edit", visualizaçar);
+
 	}
 
 }

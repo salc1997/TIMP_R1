@@ -1,6 +1,5 @@
-package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
+package com.timp.test.MDR.Siscoserv.RegistroRF;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -10,13 +9,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditarPO;
+import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassaPO;
 
-public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
-
+public class RegistroRFExcluirEmMassa extends TestBaseEliel {
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ContasDefaultParaExtemporaneoEditarPO contasDefaultParaExtemporaneoEditarPO;
+	RegistroRFExcluirEmMassaPO registroRFExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +23,7 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		contasDefaultParaExtemporaneoEditarPO = new ContasDefaultParaExtemporaneoEditarPO();
+		registroRFExcluirEmMassaPO = new RegistroRFExcluirEmMassaPO();
 	}
 
 	@AfterClass
@@ -46,11 +45,16 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void editar() {
+	public void criar() {
 
-		boolean sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
-		assertTrue(sucesso, Editar);
-		//assertEquals(sucesso, "edit", visualizaçar);
+		boolean sucesso = registroRFExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+		boolean sucesso2 = registroRFExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+
 	}
-
+	
+	
+	
 }

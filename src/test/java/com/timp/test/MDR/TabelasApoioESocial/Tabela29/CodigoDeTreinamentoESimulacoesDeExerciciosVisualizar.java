@@ -1,6 +1,5 @@
-package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
+package com.timp.test.MDR.TabelasApoioESocial.Tabela29;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -12,13 +11,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO;
 
-public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
-
+public class CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar extends TestBaseEliel{
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ContasDefaultParaExtemporaneoVisualizarPO contasDefaultParaExtemporaneoVisualizarPO;
+	CodigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO codigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +25,7 @@ public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		contasDefaultParaExtemporaneoVisualizarPO = new ContasDefaultParaExtemporaneoVisualizarPO();
+		codigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO = new CodigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO();
 	}
 
 	@AfterClass
@@ -50,11 +49,14 @@ public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		ArrayList<Boolean> sucesso = contasDefaultParaExtemporaneoVisualizarPO.visualizar();
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
-		//assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
-	}
+		ArrayList<Boolean> sucesso = codigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO.visualizar();
 
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), visualizaçar);
+
+		}
+	}
+	
+  
 }

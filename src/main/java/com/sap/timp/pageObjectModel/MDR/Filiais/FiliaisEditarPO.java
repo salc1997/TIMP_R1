@@ -53,7 +53,7 @@ public class FiliaisEditarPO extends TestBaseSteven {
 
 		menu.click();
 		editar.click();
-;
+
 		
 		waitExpectXpath("//*[@id=\"toolbar\"]/div/ul/li[3]/button");
 		invisibilityOfElement("//*[@id=\"right-content\"]/div/div[4]/div/div/div/img");

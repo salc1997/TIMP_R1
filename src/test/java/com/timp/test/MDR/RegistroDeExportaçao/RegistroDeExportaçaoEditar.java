@@ -10,6 +10,7 @@ import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaça
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
@@ -51,9 +52,9 @@ public class RegistroDeExportaçaoEditar extends TestBaseEliel {
 
 		// registroDeExportaçaoEditarPO.editar();
 
-		String sucesso = registroDeExportaçaoEditarPO.editar();
-
-		assertEquals(sucesso, "edit", visualizaçar);
+		boolean sucesso = registroDeExportaçaoEditarPO.editar();
+		assertTrue(sucesso, Editar);
+		//assertEquals(sucesso, "edit", visualizaçar);
 
 	}
 

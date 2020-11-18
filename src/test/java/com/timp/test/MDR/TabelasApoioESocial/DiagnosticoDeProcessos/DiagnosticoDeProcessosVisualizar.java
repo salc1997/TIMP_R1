@@ -1,7 +1,8 @@
-package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
+package com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -10,13 +11,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosVisualizarPO;
 
-public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
-
+public class DiagnosticoDeProcessosVisualizar extends TestBaseEliel {
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ContasDefaultParaExtemporaneoEditarPO contasDefaultParaExtemporaneoEditarPO;
+	DiagnosticoDeProcessosVisualizarPO diagnosticoDeProcessosVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +25,7 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		contasDefaultParaExtemporaneoEditarPO = new ContasDefaultParaExtemporaneoEditarPO();
+		diagnosticoDeProcessosVisualizarPO = new DiagnosticoDeProcessosVisualizarPO();
 	}
 
 	@AfterClass
@@ -46,11 +47,16 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void editar() {
+	public void Visualizar() {
 
-		boolean sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
-		assertTrue(sucesso, Editar);
-		//assertEquals(sucesso, "edit", visualizaçar);
+		ArrayList<Boolean> sucesso = diagnosticoDeProcessosVisualizarPO.visualizar();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), visualizaçar);
+
+		}
 	}
-
+	
+ 
 }

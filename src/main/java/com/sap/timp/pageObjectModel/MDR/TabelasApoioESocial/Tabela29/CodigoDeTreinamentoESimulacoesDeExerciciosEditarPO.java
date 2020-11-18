@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,37 +7,26 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
+public class CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO extends TestBaseEliel {
 	
+	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
+	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
-	public WebElement tabelaApoioSped;
+	@FindBy(xpath = "//span[text()=\"Tabela 29 - Código de Treinamento e Simulações de Exercícios\"]")
+	public WebElement tabela29;
 	
-	@FindBy(xpath = "//span[text()=\"4.5.5 Classificação de Contribuintes do IPI\"]")
-	public WebElement classificacaodecontribuintes;
+	@FindBy(xpath = "//span[text()=\"Novo Dados de Código de Treinamento e Simulações de Exercícios\"]")
+	public WebElement novo;
+
 	
-	
-	@FindBy(xpath = "//span[text()=\"Novo Classificação de contribuintes do IPI\"]")
-	public WebElement novoclassificacao;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o código do Tipo de atividade\"]")
-	public WebElement tipodeatividade;
-	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
-	public WebElement siguiente;
-	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código Simul/Trein\"]")
+	public WebElement codigo;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
 	public WebElement descricao;
 	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
-	public WebElement codigodevalores;
-	
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
-	public WebElement datavigencia;
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
+	public WebElement datainicio;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -45,66 +34,72 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement nao;
-	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement siguiente;
 	
 	
-	public ClassificaçaoDeContribuintesDoIPIEditarPO() {
-
+	public  CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO() {
 		PageFactory.initElements(driver, this);
+		
 	}
+
 	
 	public boolean editar() {
 		sleep(2000);
-		tabelaApoioSped.click();
+		tabelaApoio.click();
 		sleep(2000);
-		classificacaodecontribuintes.click();
+		
+		tabela29.click();
+		
 		sleep(2000);
-
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		siguiente.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
-	
-		//pega o ultimo id que foi gerado no criar
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		String idRegistro = idObter1();
-				
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-	
+		
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
-		sleep(1000);
-		
+		sleep(2000);
 		editar.click();
+		
 		sleep(2000);
 		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		String valor = descricao.getAttribute("value");
-		
-		String enviar = "Teste da Descrição";
-		
-		descricao.clear();
-		descricao.sendKeys(enviar);
-		
 		sleep(2000);
 		
+		
+		
+		String valor = datainicio.getAttribute("value");
+
+		String enviar = dataanterior();
+
+		datainicio.clear();
+		sleep(2000);
+		datainicio.sendKeys(enviar);
+		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		sim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(sim);
 		sleep(2000);
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+
 		driver.navigate().refresh();
 		sleep(2000);
 		waitExpectElement(biblioteca);
@@ -112,7 +107,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		
-		String novoTexto=descricao.getAttribute("value");
+		String novoTexto=datainicio.getAttribute("value");
 		
 		System.out.println(valor);
 		System.out.println(novoTexto);
@@ -121,10 +116,10 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		descricao.clear();
+		datainicio.clear();
 
 		sleep(2000);
-		descricao.sendKeys(valor);
+		datainicio.sendKeys(valor);
 		
 		sleep(2000);
 		
@@ -135,12 +130,8 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sim.click();
 		
 		
-		System.out.println(sucesso);	
 		return sucesso;
-	}
-	
-
+	}	
 }

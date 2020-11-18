@@ -1,24 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-11-18T22:18:40Z" name="Default suite" finished-at="2020-11-18T22:21:33Z" duration-ms="173315">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-18T20:26:44Z" name="Default suite" finished-at="2020-11-18T20:29:14Z" duration-ms="149460">
+=======
+  <suite name="Default suite" duration-ms="83649" started-at="2020-11-18T17:38:37Z" finished-at="2020-11-18T17:40:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-11-18T22:18:40Z" name="Default test" finished-at="2020-11-18T22:21:33Z" duration-ms="173315">
       <class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar@644baf4a]" started-at="2020-11-18T16:18:40Z" name="beforeClass" finished-at="2020-11-18T16:19:18Z" duration-ms="37432" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-18T20:26:44Z" name="Default test" finished-at="2020-11-18T20:29:14Z" duration-ms="149460">
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa@54c5a2ff]" started-at="2020-11-18T17:26:44Z" name="beforeClass" finished-at="2020-11-18T17:26:58Z" duration-ms="14003" status="PASS">
+=======
+    <test name="Default test" duration-ms="83649" started-at="2020-11-18T17:38:37Z" finished-at="2020-11-18T17:40:00Z">
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11161" started-at="2020-11-18T11:38:37Z" finished-at="2020-11-18T11:38:48Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar@644baf4a]" started-at="2020-11-18T16:19:18Z" name="login" finished-at="2020-11-18T16:19:28Z" duration-ms="10464" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa@54c5a2ff]" started-at="2020-11-18T17:26:58Z" name="login" finished-at="2020-11-18T17:27:07Z" duration-ms="8197" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="login" duration-ms="6408" started-at="2020-11-18T11:38:48Z" finished-at="2020-11-18T11:38:54Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar@644baf4a]" started-at="2020-11-18T16:19:28Z" name="acessarMDR" finished-at="2020-11-18T16:19:39Z" duration-ms="11106" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa@54c5a2ff]" started-at="2020-11-18T17:27:07Z" name="acessarMDR" finished-at="2020-11-18T17:27:31Z" duration-ms="24151" status="PASS">
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="acessarMDR" duration-ms="23527" started-at="2020-11-18T11:38:54Z" finished-at="2020-11-18T11:39:18Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method signature="Editar()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar@644baf4a]" started-at="2020-11-18T16:19:39Z" name="Editar" finished-at="2020-11-18T16:21:33Z" duration-ms="114299" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
@@ -91,14 +132,39 @@ Session ID: 867a646ed8f1797390f37647feae1076
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa@54c5a2ff]" started-at="2020-11-18T17:27:31Z" name="criar" finished-at="2020-11-18T17:29:14Z" duration-ms="103036" status="PASS">
+=======
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="eliminar" duration-ms="42490" started-at="2020-11-18T11:39:18Z" finished-at="2020-11-18T11:40:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar@644baf4a]" started-at="2020-11-18T16:21:33Z" name="afterClass" finished-at="2020-11-18T16:21:33Z" duration-ms="0" status="PASS">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa@54c5a2ff]" started-at="2020-11-18T17:29:14Z" name="afterClass" finished-at="2020-11-18T17:29:14Z" duration-ms="61" status="PASS">
+=======
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="50" started-at="2020-11-18T11:40:00Z" finished-at="2020-11-18T11:40:00Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

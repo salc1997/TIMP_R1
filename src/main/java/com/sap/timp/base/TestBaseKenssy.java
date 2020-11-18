@@ -20,10 +20,10 @@ public class TestBaseKenssy extends TestBaseSteven{
 
 	public WebDriver initializationKen() {
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 		return driver;
 	}
 

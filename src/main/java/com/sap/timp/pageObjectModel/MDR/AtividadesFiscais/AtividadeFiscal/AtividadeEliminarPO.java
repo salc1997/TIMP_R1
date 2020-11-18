@@ -31,23 +31,11 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]")
+	@FindBy(xpath = "//li[contains(@class,\"collapsed\")]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades1;
 
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]/ul/li[1]")
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-fiscalActivities\"]")
 	public WebElement atividadesO1;
-
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]")
-	public WebElement atividades2;
-
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]/ul/li[1]")
-	public WebElement atividadesO2;
-	
-	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
-	public WebElement atividades;
-	
-	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Atividades Fiscais\"]")
-	public WebElement atividadesO;
 
 	public AtividadeEliminarPO() {
 
@@ -59,9 +47,9 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 		
 		String url = driver.getCurrentUrl();
 		
-		atividades.click();
+		atividades1.click();
 		sleep(2000);
-		atividadesO.click();
+		atividadesO1.click();
 		sleep(2000);
 		
 		

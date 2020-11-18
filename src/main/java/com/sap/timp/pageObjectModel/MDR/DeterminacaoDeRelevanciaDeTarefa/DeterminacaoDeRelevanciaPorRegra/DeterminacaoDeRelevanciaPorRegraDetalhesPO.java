@@ -206,7 +206,7 @@ public class DeterminacaoDeRelevanciaPorRegraDetalhesPO extends TestBaseEliel {
 		sucesso.add(descricaodecodigoderegravisualizar.equals(descricaodecodigoderegradetalhes));
 		sucesso.add(saidavisualizar.equals(saidadetalhes));
 		sucesso.add(datavisualizar.equals(datadetalhes));
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}
 

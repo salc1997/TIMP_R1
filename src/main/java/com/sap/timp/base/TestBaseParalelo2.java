@@ -40,7 +40,7 @@ public class TestBaseParalelo2{
 	}
 	
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		driver2.set(new ChromeDriver());
 	}
 	

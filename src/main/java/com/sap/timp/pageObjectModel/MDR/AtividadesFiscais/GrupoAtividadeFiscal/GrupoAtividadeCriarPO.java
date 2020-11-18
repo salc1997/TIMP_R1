@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class GrupoAtividadeCriarPO extends TestBaseSteven{
+public class GrupoAtividadeCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]")
 	public WebElement atividades1;
@@ -48,7 +49,7 @@ public class GrupoAtividadeCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
+	@FindBy(xpath = "//li[contains(@class,\"collapsed\")]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades;
 	
 	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Grupos de Atividades Fiscais\"]")

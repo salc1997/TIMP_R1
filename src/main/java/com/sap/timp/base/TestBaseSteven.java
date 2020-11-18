@@ -1,4 +1,5 @@
 
+
 package com.sap.timp.base;
 
 import java.awt.AWTException;
@@ -24,6 +25,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class TestBaseSteven {
 
@@ -76,6 +78,7 @@ public class TestBaseSteven {
 		driver.manage().window().maximize();
 
 		driver.get(tc2);
+
 
 		return driver;
 	}
@@ -545,9 +548,6 @@ public class TestBaseSteven {
 	
 	
 	
-	
-
-
 	
 }
 

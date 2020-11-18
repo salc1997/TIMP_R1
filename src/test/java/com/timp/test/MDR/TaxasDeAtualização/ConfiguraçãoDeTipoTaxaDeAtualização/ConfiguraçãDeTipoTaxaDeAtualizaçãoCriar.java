@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar extends TestBaseFernando{
+public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO configuraçãDeTipoTaxaDeAtualizaçãoCriarPO;
@@ -25,7 +25,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar extends TestBaseFernando{
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		configuraçãDeTipoTaxaDeAtualizaçãoCriarPO = new ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO();

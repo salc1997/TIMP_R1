@@ -1,124 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-11-17T06:28:59Z" name="Default suite" finished-at="2020-11-17T06:30:39Z" duration-ms="100580">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-11-17T01:14:37Z" name="Default suite" finished-at="2020-11-17T01:15:54Z" duration-ms="77353">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-11-16T21:02:32Z" name="Default suite" finished-at="2020-11-16T21:05:06Z" duration-ms="153905">
-=======
-  <suite name="Default suite" duration-ms="65917" started-at="2020-11-16T19:09:57Z" finished-at="2020-11-16T19:11:03Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite started-at="2020-11-18T00:25:07Z" name="Default suite" finished-at="2020-11-18T00:26:49Z" duration-ms="101468">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-11-17T06:28:59Z" name="Default test" finished-at="2020-11-17T06:30:39Z" duration-ms="100580">
-      <class name="com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:28:59Z" name="beforeClass" finished-at="2020-11-17T00:29:12Z" duration-ms="12873" status="PASS">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-11-17T01:14:37Z" name="Default test" finished-at="2020-11-17T01:15:54Z" duration-ms="77353">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:14:37Z" name="beforeClass" finished-at="2020-11-16T19:14:54Z" duration-ms="17062" status="PASS">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-11-16T21:02:32Z" name="Default test" finished-at="2020-11-16T21:05:06Z" duration-ms="153905">
-      <class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:32Z" name="beforeClass" finished-at="2020-11-16T18:02:45Z" duration-ms="12524" status="PASS">
-=======
-    <test name="Default test" duration-ms="65917" started-at="2020-11-16T19:09:57Z" finished-at="2020-11-16T19:11:03Z">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="13386" started-at="2020-11-16T13:09:57Z" finished-at="2020-11-16T13:10:10Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test started-at="2020-11-18T00:25:07Z" name="Default test" finished-at="2020-11-18T00:26:49Z" duration-ms="101468">
+      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar@4416d64f]" started-at="2020-11-17T18:25:07Z" name="beforeClass" finished-at="2020-11-17T18:25:20Z" duration-ms="12498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:29:12Z" name="ingresar" finished-at="2020-11-17T00:29:20Z" duration-ms="8305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresar -->
-        <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:29:20Z" name="ingresarMDR" finished-at="2020-11-17T00:29:57Z" duration-ms="36923" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresarMDR -->
-        <test-method signature="detalle()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:29:57Z" name="detalle" finished-at="2020-11-17T00:30:39Z" duration-ms="42440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detalle -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:30:39Z" name="afterClass" finished-at="2020-11-17T00:30:39Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle -->
-=======
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:14:54Z" name="ingresar" finished-at="2020-11-16T19:15:02Z" duration-ms="7823" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresar -->
-        <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:15:02Z" name="ingresarMDR" finished-at="2020-11-16T19:15:12Z" duration-ms="10913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresarMDR -->
-        <test-method signature="detalhes()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:15:12Z" name="detalhes" finished-at="2020-11-16T19:15:54Z" duration-ms="41533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detalhes -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:15:54Z" name="afterClass" finished-at="2020-11-16T19:15:54Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes -->
-=======
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:45Z" name="login" finished-at="2020-11-16T18:02:53Z" duration-ms="7923" status="PASS">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="login" duration-ms="7468" started-at="2020-11-16T13:10:10Z" finished-at="2020-11-16T13:10:18Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar@4416d64f]" started-at="2020-11-17T18:25:20Z" name="login" finished-at="2020-11-17T18:25:28Z" duration-ms="8180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:53Z" name="acessarMDR" finished-at="2020-11-16T18:03:16Z" duration-ms="23509" status="PASS">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="acessarMDR" duration-ms="10245" started-at="2020-11-16T13:10:18Z" finished-at="2020-11-16T13:10:28Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar@4416d64f]" started-at="2020-11-17T18:25:28Z" name="acessarMDR" finished-at="2020-11-17T18:25:49Z" duration-ms="21371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:03:16Z" name="criar" finished-at="2020-11-16T18:05:06Z" duration-ms="109866" status="PASS">
-=======
-        <test-method status="PASS" signature="filtroCodigo()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="filtroCodigo" duration-ms="30360" started-at="2020-11-16T13:10:28Z" finished-at="2020-11-16T13:10:58Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar@4416d64f]" started-at="2020-11-17T18:25:49Z" name="editar" finished-at="2020-11-17T18:26:49Z" duration-ms="59392" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5cae95102e1d01b6b2c55b1d9613e7d9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5cae95102e1d01b6b2c55b1d9613e7d9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:878)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:872)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseEliel.attributeToBeXpath(TestBaseEliel.java:77)
+	at com.sap.timp.pageObjectModel.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditarPO.editar(RelacionamentoEntreQuadrosEditarPO.java:143)
+	at com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar.editar(RelacionamentoEntreQuadrosEditar.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:05:06Z" name="afterClass" finished-at="2020-11-16T18:05:06Z" duration-ms="69" status="PASS">
-=======
-        </test-method> <!-- filtroCodigo -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4444" started-at="2020-11-16T13:10:58Z" finished-at="2020-11-16T13:11:03Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa -->
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- editar -->
+      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

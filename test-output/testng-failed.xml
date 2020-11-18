@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo">
+      <class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar">
         <methods>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="filtroCodigo"/>
+          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo -->
+      </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

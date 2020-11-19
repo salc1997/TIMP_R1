@@ -52,7 +52,7 @@ public class AjusteEInformaçoesDeValoresCriar extends TestBaseEliel {
 		// ajusteEInformaçoesDeValoresCriarPO.criar();
 
 		boolean sucesso = ajusteEInformaçoesDeValoresCriarPO.criar();
-		;
+		
 		assertTrue(sucesso, semAcesso);
 
 	}

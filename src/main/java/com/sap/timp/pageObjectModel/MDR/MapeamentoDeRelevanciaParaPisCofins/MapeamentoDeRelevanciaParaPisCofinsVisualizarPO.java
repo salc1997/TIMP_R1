@@ -189,6 +189,7 @@ public class MapeamentoDeRelevanciaParaPisCofinsVisualizarPO extends TestBaseEli
 		sucesso.add(relevanciavisualizar.equals(relevanciaeditar));
 		sucesso.add(datainicialvisualizar.equals(datainicialeditar));
 		sucesso.add(datafinalvisualizar.equals(datafinaleditar));
+		System.out.println(sucesso);
 		return sucesso;	
 
 	

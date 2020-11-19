@@ -110,6 +110,9 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		attributeToBeXpath("//div[@id=\"credit-adjustment-code\"]/div", "class", "base-select required");
+		sleep(2000);
+		
 		String valor = datainicio.getAttribute("value");
 
 		String enviar = dataanterior();
@@ -137,6 +140,8 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		attributeToBeXpath("//div[@id=\"credit-adjustment-code\"]/div", "class", "base-select required");
+		sleep(2000);
 		String novoTexto=datainicio.getAttribute("value");
 		
 		System.out.println(valor);

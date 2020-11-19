@@ -114,14 +114,14 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO extends TestBaseEliel{
 		//detalhes
 		String ocorrenciadetalhes = ocorrencia.getText();
 		String objetosdetalhes = objetos.getText();
-		String classificacaodetalhes = classificacao.getText();
+		//String classificacaodetalhes = classificacao.getText();
 		String datainiciodetalhes = datainicio.getText();
 		String datafimdetalhes = datafim.getText();
 		
 		
 		System.out.println( ocorrenciadetalhes);
 		System.out.println(objetosdetalhes);
-		System.out.println(classificacaodetalhes);
+		//System.out.println(classificacaodetalhes);
 		System.out.println(datainiciodetalhes);
 		System.out.println(datafimdetalhes);
 		
@@ -156,14 +156,14 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO extends TestBaseEliel{
 		
 		String ocorrenciavisualizar = ocorrenciavi.getText();
 		String objetosvisualizar = objetosvi.getText();
-		String classificacaovisualizar = classificacaovi.getText();
+		//String classificacaovisualizar = classificacaovi.getText();
 		String datainiciovisualizar = datainiciovi.getText();
 		String datafimvisualizar = datafimvi.getText();
 		
 		
 		System.out.println( ocorrenciavisualizar);
 		System.out.println(objetosvisualizar);
-		System.out.println(classificacaovisualizar);
+		//System.out.println(classificacaovisualizar);
 		System.out.println(datainiciovisualizar);
 		System.out.println(datafimvisualizar);
 	
@@ -172,10 +172,10 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhesPO extends TestBaseEliel{
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(ocorrenciavisualizar.equals(ocorrenciadetalhes));
 		sucesso.add(objetosvisualizar.equals(objetosdetalhes));
-		sucesso.add(classificacaovisualizar.equals(classificacaodetalhes));
+		//sucesso.add(classificacaovisualizar.equals(classificacaodetalhes));
 		sucesso.add( datainiciovisualizar.equals( datainiciodetalhes));
 		sucesso.add(datafimvisualizar.equals(datafimdetalhes));
-	
+		System.out.println(sucesso);
 		return sucesso;
 	}
 }

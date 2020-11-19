@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-
-import LivrosFiscais.ParametrizaçãoDoLivroOficialEditarPO;
+import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -45,9 +44,9 @@ public class ParametrizaçãoDoLivroOficialEditar extends TestBaseMassiel{
 
 	@Test(priority = 2)
 	public void Editar () {		
-		parametrizaçãoDoLivroOficialEditarPO.Editar();
-		//boolean sucesso = parametrizaçãoDoLivroOficialPO.criar();
-		//assertTrue(sucesso, Criar);
+		
+		boolean sucesso = parametrizaçãoDoLivroOficialEditarPO.Editar();
+		assertTrue(sucesso, Editar);
 	}
 
 }

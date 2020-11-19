@@ -8,6 +8,10 @@ import java.util.GregorianCalendar;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditarPO;
+
 public class TestBaseMassiel extends TestBaseSteven {
 
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
@@ -20,8 +24,6 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-
-		driver.get(tq1);
 
 		driver.get(tc2);
 
@@ -49,6 +51,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		return dia;
 
 	}
-		
+	
+
 
 }

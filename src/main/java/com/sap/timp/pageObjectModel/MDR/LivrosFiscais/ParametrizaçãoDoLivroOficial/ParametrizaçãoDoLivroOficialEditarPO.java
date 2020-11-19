@@ -1,4 +1,4 @@
-package LivrosFiscais;
+package com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -20,15 +20,18 @@ public class ParametrizaçãoDoLivroOficialEditarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement ultimaPagina;
 	
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
-	public WebElement filial;
+	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div[2]")
+	public WebElement tipoDoLibro;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label[not(contains(@for,\"check-all\"))]/span")
-	public WebElement opcionCheckboxDiferenteTodos;
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][2]")
+	public WebElement opcionCombo;
 	
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div/div/div[1]")
-	public WebElement opc;
+	
+	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div/input")
+	public WebElement opc1;
 
+	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div/input")
+	public WebElement opc2;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement Gravar;
@@ -43,7 +46,7 @@ public class ParametrizaçãoDoLivroOficialEditarPO extends TestBaseMassiel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void Editar() {
+	public boolean Editar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -73,30 +76,50 @@ public class ParametrizaçãoDoLivroOficialEditarPO extends TestBaseMassiel{
 		editar.click();
 		sleep(2000);
 		sleep(2000);
-		attributoNotToBeEmptyElement(opc, "value");
+		attributoNotToBeEmptyElement(opc1, "value");
 	  	sleep(2000);
 	  	
-	  	String valor = opc.getAttribute("value");
+	  	String valor = opc1.getAttribute("value");
 		System.out.println(valor);
 		
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		filial.click();
+		tipoDoLibro.click();
 		sleep(2000);
-		opcionCheckboxDiferenteTodos.click();
-		sleep(1000);
-		body.click();
-		sleep(1000);
+		opcionCombo.click();
+		sleep(2000);
+		
 		
 		Gravar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		Sim.click();
+		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu1);
 		sleep(2000);
-				
+		menu1.click();
+		sleep(2000);
+		editar1.click();
+		sleep(2000);
+		sleep(2000);
+		attributoNotToBeEmptyElement(opc2, "value");
+	  	sleep(2000);
+		
+	  	String enviar = opc2.getAttribute("value");
+		System.out.println(enviar);
+		
+	  	String nuevoTexto = opc1.getAttribute("value");
+		System.out.println(valor);
+		System.out.println(nuevoTexto);
+		boolean sucesso = nuevoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		return sucesso;
 
 	}
 }

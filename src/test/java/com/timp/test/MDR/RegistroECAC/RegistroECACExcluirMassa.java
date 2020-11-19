@@ -1,11 +1,11 @@
-package com.timp.test.MDR.DetalheTipoTributo;
+package com.timp.test.MDR.RegistroECAC;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheExcluirMassaPO;
+import com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACExcluirMassaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,17 +13,17 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DetalheExcluirMassa extends TestBaseFernando{
+public class RegistroECACExcluirMassa extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	DetalheExcluirMassaPO detalheExcluirMassaPO;
+	RegistroECACExcluirMassaPO registroECACExcluirMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		detalheExcluirMassaPO = new DetalheExcluirMassaPO();
+		registroECACExcluirMassaPO = new RegistroECACExcluirMassaPO();
 	}
 
 	@AfterClass
@@ -43,13 +43,13 @@ public class DetalheExcluirMassa extends TestBaseFernando{
 
 	@Test(priority = 2)
 	public void criar() {
-		boolean sucesso = detalheExcluirMassaPO.criar();
+		boolean sucesso = registroECACExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
 	@Test(priority = 3)
 	public void excluirMassa() {
-		boolean sucesso = detalheExcluirMassaPO.exluirMassa();
+		boolean sucesso = registroECACExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
 	}
 }

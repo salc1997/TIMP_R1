@@ -45,7 +45,7 @@ public class TestBaseSteven {
 	public WebDriver initialization() {
 
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	
@@ -76,13 +76,13 @@ public class TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-<<<<<<< HEAD
+
 		driver.get(tc2);
 //		driver.get(tp1);
 //		driver.get(tq1);
-=======
+
 		driver.get(tq1);
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
 
 		return driver;
 	}

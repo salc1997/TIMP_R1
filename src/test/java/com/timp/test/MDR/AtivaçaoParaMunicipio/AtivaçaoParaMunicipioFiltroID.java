@@ -8,12 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioFiltroIDPO;
 
-public class AtivaçaoParaMunicipioFiltroID extends TestBaseSteven {
+public class AtivaçaoParaMunicipioFiltroID extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtivaçaoParaMunicipioFiltroIDPO ativaçaoParaMunicipioFiltroIDPO;
@@ -21,7 +22,7 @@ public class AtivaçaoParaMunicipioFiltroID extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		ativaçaoParaMunicipioFiltroIDPO = new AtivaçaoParaMunicipioFiltroIDPO();

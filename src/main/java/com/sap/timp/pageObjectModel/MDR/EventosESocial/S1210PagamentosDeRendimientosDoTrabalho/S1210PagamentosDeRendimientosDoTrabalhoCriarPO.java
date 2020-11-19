@@ -108,7 +108,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoCriarPO extends TestBaseFern
 		cboEmpresa.click();
 		sleep(1000);
 		opcionCombo.click();
-		sleep(2000);;
+		sleep(2000);
 		
 		tipoDeEvento.click();
 		sleep(1000);

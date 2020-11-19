@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 package com.sap.timp.base;
 
 import org.openqa.selenium.WebDriver;
@@ -21,4 +24,7 @@ public class TestBaseKathy extends TestBaseSteven {
 	}
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

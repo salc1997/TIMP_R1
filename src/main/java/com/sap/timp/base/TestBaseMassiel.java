@@ -8,6 +8,10 @@ import java.util.GregorianCalendar;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditarPO;
+
 public class TestBaseMassiel extends TestBaseSteven {
 
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
@@ -15,12 +19,18 @@ public class TestBaseMassiel extends TestBaseSteven {
 	public WebDriver initializationM() {
 
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
+<<<<<<< HEAD
 		driver.get(tc2);
+=======
+
+		driver.get(tc2);
+
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	   return driver;
 	}
 	
@@ -45,6 +55,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		return dia;
 
 	}
-		
+	
+
 
 }

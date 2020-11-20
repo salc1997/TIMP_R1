@@ -130,6 +130,8 @@ public class DEPARAContasContábeisCriarPO extends TestBaseMassiel{
 		
 		//primer dato de la tabla
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")).getText();		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);		
 		idInserir4(String.valueOf(Integer.parseInt(idRegistro1)));
 		System.out.println(idRegistro1);			
 		sleep(2000);

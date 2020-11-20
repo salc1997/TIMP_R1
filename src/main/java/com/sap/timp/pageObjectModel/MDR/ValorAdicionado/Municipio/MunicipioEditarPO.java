@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis;
+package com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Municipio;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,17 +7,19 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class DEPARAContasContábeisEditarPO extends TestBaseMassiel{
-
-	@FindBy(xpath = "//span[text()=\"Cadastros IRPJ/CSLL\"]")
-	public WebElement cadastro;
+public class MunicipioEditarPO extends TestBaseMassiel{
 	
-	//submenu
-	@FindBy(xpath = "//span[text()=\" DE-PARA  Contas  Contábeis\"]")
-	public WebElement subItem;
+	@FindBy(xpath = "//span[text()=\"Valor Adicionado\"]")
+	public WebElement valorAdicionado;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Plano de Contas\"]")
-	public WebElement planoContais;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-valueAddedTax\"]/ul/li/div/span[text()=\"Municípios\"]")
+	public WebElement municipios;
+	
+	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
+	public WebElement ultimaPagina;
+	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Valor\")]")
+	public WebElement valor;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement Gravar;
@@ -25,7 +27,7 @@ public class DEPARAContasContábeisEditarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement Sim;
 	
-	public DEPARAContasContábeisEditarPO() {
+	public MunicipioEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -34,15 +36,19 @@ public class DEPARAContasContábeisEditarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		cadastro.click();
+		valorAdicionado.click();
 	    invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		subItem.click();
+		municipios.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter4();
+		ultimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		String idRegistro =idObter3();
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -54,18 +60,18 @@ public class DEPARAContasContábeisEditarPO extends TestBaseMassiel{
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(planoContais, "value");
+		attributoNotToBeEmptyElement(valor, "value");
 	  	sleep(2000);
 		
-	  	String valor = planoContais.getAttribute("value");
+	  	String valor1 = valor.getAttribute("value");
 		System.out.println(valor);
-		String enviar = "Massiel";
+		String enviar = "1997";
 		
 		sleep(1000);
-		planoContais.clear();
+		valor.clear();
 
 		sleep(1000);
-		planoContais.sendKeys(enviar);
+		valor.sendKeys(enviar);
 
 		Gravar.click();
 		sleep(5000);
@@ -77,32 +83,23 @@ public class DEPARAContasContábeisEditarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
-		actionsMoveToElementElement(menu1);
+		driver.navigate().refresh();
+		sleep(3000);
+		attributoNotToBeEmptyElement(valor, "value");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		menu1.click();
-		sleep(2000);
-		editar1.click();
-		sleep(2000);
-		attributoNotToBeEmptyElement(planoContais, "value");
-	  	sleep(2000);
 		
-	  	String enviar1 = planoContais.getAttribute("value");
-		System.out.println(enviar1);
-		
-		String nuevoTexto = planoContais.getAttribute("value");
+		String nuevoTexto = valor.getAttribute("value");
 		System.out.println(valor);
 		System.out.println(nuevoTexto);
-		boolean sucesso = nuevoTexto.equals(enviar1);
+		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
 		
-		planoContais.clear();
+		valor.clear();
 		sleep(2000);
 		
 		sleep(1000);
-		planoContais.sendKeys(valor);
+		valor.sendKeys(valor1);
 
 		Gravar.click();
 		sleep(5000);

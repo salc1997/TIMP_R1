@@ -25,7 +25,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver.manage().window().maximize();
 
 
-		driver.get(tc2);
+		driver.get(tq1);
 
 	   return driver;
 	}

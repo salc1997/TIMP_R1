@@ -1,7 +1,6 @@
 package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -48,9 +47,9 @@ public class ContasDefaultPorTributoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = contasDefaultPorTributoEditarPO.editar();
-		assertTrue(sucesso, Editar);
-		//assertEquals(sucesso, "edit", visualizaçar);
+		String sucesso = contasDefaultPorTributoEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
 
 }

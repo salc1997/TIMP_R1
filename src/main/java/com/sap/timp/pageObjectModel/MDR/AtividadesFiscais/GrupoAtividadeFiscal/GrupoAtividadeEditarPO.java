@@ -47,7 +47,7 @@ public class GrupoAtividadeEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//li[contains(@class,\"collapsed\")]/div/span[text()=\"Atividades Fiscais\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades;
 	
 	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Grupos de Atividades Fiscais\"]")
@@ -80,7 +80,20 @@ public class GrupoAtividadeEditarPO extends TestBaseSteven{
 	public void editar() {
 		
 		String url = driver.getCurrentUrl();
+		/*
+		if (url.contains("tc2") || url.contains("tp1")) {
+			atividades2.click();
+			sleep(2000);
+			atividadesO2.click();
+			sleep(2000);
+		} else {
 
+			atividades1.click();
+			sleep(2000);
+			atividadesO1.click();
+			sleep(2000);
+		}
+		*/
 
 		atividades.click();
 		sleep(2000);

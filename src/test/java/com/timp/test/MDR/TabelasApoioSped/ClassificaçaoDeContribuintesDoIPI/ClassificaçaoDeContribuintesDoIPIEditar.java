@@ -11,7 +11,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribu
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
@@ -50,9 +49,9 @@ public class ClassificaçaoDeContribuintesDoIPIEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = classificaçaoDeContribuintesDoIPIEditarPO.editar();
+		String sucesso = classificaçaoDeContribuintesDoIPIEditarPO.editar();
 
-		assertTrue(sucesso, Editar);
+		assertEquals(sucesso, "edit", visualizaçar);
 
 	}
 

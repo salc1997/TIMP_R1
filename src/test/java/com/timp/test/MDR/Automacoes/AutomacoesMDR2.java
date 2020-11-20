@@ -23,12 +23,10 @@ import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCo
 import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoEditar;
 import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoVisualizar;
 import com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar;
-import com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaDetalhes;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir;
-import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltroID;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaVisualizar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisDetalhes;
@@ -148,7 +146,6 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	// ICMS ST Transporte
 
 	ICMSSTTransporteCriar iCMSSTTransporteCriar;
-	ICMSSTTransporteFiltroID icmsstTransporteFiltroID;
 
 	// Límite de Competência
 
@@ -157,7 +154,6 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	LimiteCompetenciaEditar limiteCompetenciaEditar;
 	LimiteCompetenciaExcluir limiteCompetenciaExcluir;
 	LimiteCompetenciaVisualizar limiteCompetenciaVisualizar;
-	LimiteCompetenciaFiltroID limiteCompetenciaFiltroID;
 
 	// Livros Fiscais > Livros Fiscais
 
@@ -577,28 +573,8 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	 * iCMSSTTransporteCriar.afterClass();
 	 * 
 	 * }
+	 * 
 	 */
-	@Test(priority = 24)
-	public void icmsstTransporteFiltroID() {
-		
-		System.out.println("-------------------ICMS-ST Transporte-------------------------");
-
-		icmsstTransporteFiltroID = new ICMSSTTransporteFiltroID();
-		icmsstTransporteFiltroID.beforeClass();
-		icmsstTransporteFiltroID.login();
-		icmsstTransporteFiltroID.acessarMDR();
-		icmsstTransporteFiltroID.filtro();
-		icmsstTransporteFiltroID.afterClass();
-		
-		System.out.println("-------------------ICMS-ST Transporte Fin-------------------------");
-
-	}
-
-	
-	
-		
-	
-	
 
 	// Límite de Competência
 
@@ -651,21 +627,6 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		limiteCompetenciaDetalhes.afterClass();
 
 	}
-	
-	
-	
-	@Test(priority = 34)
-	public void limiteCompetenciaFiltroID() {
-
-		limiteCompetenciaFiltroID = new LimiteCompetenciaFiltroID();
-		limiteCompetenciaFiltroID.beforeClass();
-		limiteCompetenciaFiltroID.login();
-		limiteCompetenciaFiltroID.acessarMDR();
-		limiteCompetenciaFiltroID.filtro();
-		limiteCompetenciaFiltroID.afterClass();
-
-	}
-
 
 	@Test(priority = 35)
 	public void limiteCompetenciaExcluir() {

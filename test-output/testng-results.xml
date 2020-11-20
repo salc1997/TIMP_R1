@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="4" passed="0" failed="4" skipped="0">
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-11-19T21:26:44Z" name="Default suite" finished-at="2020-11-20T01:42:57Z" duration-ms="15373100">
+=======
+  <suite started-at="2020-11-19T16:42:57Z" name="Default suite" finished-at="2020-11-19T16:46:05Z" duration-ms="188157">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-11-19T21:26:44Z" name="Default test" finished-at="2020-11-20T01:42:57Z" duration-ms="15373100">
       <class name="com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa@73a8da0f]" started-at="2020-11-19T15:26:44Z" name="beforeClass" finished-at="2020-11-19T15:26:51Z" duration-ms="7396" status="PASS">
+=======
+    <test started-at="2020-11-19T16:42:57Z" name="Default test" finished-at="2020-11-19T16:46:05Z" duration-ms="188157">
+      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:42:57Z" name="beforeClass" finished-at="2020-11-19T13:43:25Z" duration-ms="27916" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa@73a8da0f]" started-at="2020-11-19T15:26:51Z" name="login" finished-at="2020-11-19T19:36:51Z" duration-ms="15000170" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
@@ -177,8 +192,20 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:43:25Z" name="login" finished-at="2020-11-19T13:43:31Z" duration-ms="6661" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:43:31Z" name="acessarMDR" finished-at="2020-11-19T13:43:48Z" duration-ms="16550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:43:48Z" name="criar" finished-at="2020-11-19T13:46:05Z" duration-ms="137006" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa@73a8da0f]" started-at="2020-11-19T19:42:42Z" name="criar" finished-at="2020-11-19T19:42:48Z" duration-ms="6007" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
@@ -266,7 +293,10 @@ Caused by: java.net.ConnectException: Connection refused: no further information
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa@73a8da0f]" started-at="2020-11-19T19:42:48Z" name="excluirMassa" finished-at="2020-11-19T19:42:53Z" duration-ms="5007" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
@@ -432,10 +462,17 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:46:05Z" name="afterClass" finished-at="2020-11-19T13:46:05Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa -->
+=======
+      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -59,8 +59,7 @@ public class ContasDefaultParaExtemporaneoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Detalhe da Linha do Livro\"]")
-	public WebElement detalhe;
+	
 	public ContasDefaultParaExtemporaneoCriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -122,8 +121,6 @@ public class ContasDefaultParaExtemporaneoCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		detalhe.sendKeys("teste");
-		sleep(1000);
 		gravar.click();
 		sleep(2000);
 		sim.click();

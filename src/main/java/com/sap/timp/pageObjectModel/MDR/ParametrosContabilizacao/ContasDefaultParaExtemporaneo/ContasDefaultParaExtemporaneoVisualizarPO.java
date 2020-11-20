@@ -1,7 +1,5 @@
 package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
 
-import java.util.ArrayList;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,43 +21,20 @@ public class ContasDefaultParaExtemporaneoVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Nova Contas Default para Extemporâneo\"]")
 	public WebElement novacontadefaultparaextemporaneo;
 	
-	
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição Padrão\"]")
-	public WebElement descricao;
-	
-	
-	//@FindBy(xpath = "//div[@class=\"detail-data\"]/div[6]/div/div")
-	//public WebElement tipodeajuste;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tributo\"]")
-	public WebElement tributo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de Tributo\"]")
-	public WebElement tipodeimposto;
-	
-	//@FindBy(xpath = "//div[@class=\"detail-data\"]/div[9]/div/div")
-	// WebElement detalhetributo;
-	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[12]/div/div")
-	public WebElement detalhedalinhadolivro;
-	
-	@FindBy(xpath = "//div[@id=\"multipleControlerId-1000\"]")
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresa;
 	
-	@FindBy(xpath = "//div[@id=\"multipleControlerId-1000_0001\"]")
+	@FindBy(xpath = "//div[@class=\"field\" and @id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaofilial;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione um Código de Ajuste \"]")
+	@FindBy(xpath = "//div[@class=\"field item-2\" and @id=\"adjustmentCode\"]/div/div[2]")
 	public WebElement codigodeajuste;
 	
 	@FindBy(xpath = "//li[@id][2]")
@@ -85,40 +60,15 @@ public class ContasDefaultParaExtemporaneoVisualizarPO extends TestBaseEliel {
 	public WebElement biblioteca;
 	
 	
-	@FindBy(xpath = "//span[@id=\"company\"]")
-	public WebElement empresavi;
-	
-	@FindBy(xpath = "//span[@id=\"description\"]")
-	public WebElement descricaovi;
-	
-	@FindBy(xpath = "//span[@id=\"branch\"]")
-	public WebElement filialvi;
-	
-	@FindBy(xpath = "//span[@id=\"adjustmentType\"]")
-	public WebElement tipodeajustevi;
-	
-	
-	@FindBy(xpath = "//span[@id=\"adjustmentCode\"]")
-	public WebElement codigodeajustevi;
-	
-	@FindBy(xpath = "//span[@id=\"tax\"]")
-	public WebElement tributovi;
-	
-	@FindBy(xpath = "//span[@id=\"taxType\"]")
-	public WebElement tipodeimpostovi;
-	
-	@FindBy(xpath = "//span[@id=\"taxTypeDetail\"]")
-	public WebElement detalhetributovi;
-	
-	@FindBy(xpath = "//span[@id=\"bookLineDetail\"]")
-	public WebElement detalhedalinhadolivrovi;
+	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
+	public WebElement fechar;
 	
 	public ContasDefaultParaExtemporaneoVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> visualizar() {
+	public String visualizar() {
 		sleep(2000);
 		parametrosdecontabilizacao.click();
 		sleep(2000);
@@ -147,23 +97,8 @@ public class ContasDefaultParaExtemporaneoVisualizarPO extends TestBaseEliel {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		String empresavisualizar = empresavi.getText();
-		String filialvisualizar = filialvi.getText();
-		String codigodeajustevisualizar = codigodeajustevi.getText();
-		String descricaovisualizar= descricaovi.getText();
-		String tributovisualizar = tributovi.getText();
-		String tipodeimpostovisualizar = tipodeimpostovi.getText();
-		String detalhedalinhadolivrovisualizar = detalhedalinhadolivrovi.getText();
-		
-		System.out.println(empresavisualizar);
-		System.out.println(filialvisualizar);
-		System.out.println(codigodeajustevisualizar);
-		System.out.println(descricaovisualizar);
-		System.out.println(tributovisualizar);
-		System.out.println(tipodeimpostovisualizar);
-		System.out.println(detalhedalinhadolivrovisualizar);
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -188,34 +123,8 @@ public class ContasDefaultParaExtemporaneoVisualizarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String empresaeditar = empresa.getText();
-		String filialeditar = filial.getText();
-		String codigodeajusteeditar = codigodeajuste.getAttribute("value");
-		String descricaoeditar = descricao.getAttribute("value");
-		String tributoeditar = tributo.getAttribute("value");
-		String tipodeimpostoeditar = tipodeimposto.getAttribute("value");
-		String detalhedalinhadolivroeditar = detalhedalinhadolivro.getAttribute("value");
-		
-		System.out.println(empresaeditar);
-		System.out.println(filialeditar);
-		System.out.println(codigodeajusteeditar);
-		System.out.println(descricaoeditar);
-		System.out.println(tributoeditar);
-		System.out.println(tipodeimpostoeditar);
-		System.out.println(detalhedalinhadolivroeditar);
-	
-		
-		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
-		sucesso.add(empresavisualizar.equals(empresaeditar));
-		sucesso.add(filialvisualizar.equals(filialeditar));
-		sucesso.add(codigodeajustevisualizar.equals(codigodeajusteeditar));
-		sucesso.add(tributovisualizar.equals(tributoeditar));
-		sucesso.add(descricaovisualizar.equals(descricaoeditar));
-		sucesso.add(tipodeimpostovisualizar.equals(tipodeimpostoeditar));
-		sucesso.add(detalhedalinhadolivrovisualizar.equals(detalhedalinhadolivroeditar));
-		
-		//String sucesso = driver.findElement(By.xpath("//div[@class=\"baseTabs-view-wrapper\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		String sucesso = driver.findElement(By.xpath("//div[@class=\"baseTabs-view-wrapper\"]")).getAttribute("class");
+		//System.out.println(sucesso);	
 		return sucesso;	
 	
 		

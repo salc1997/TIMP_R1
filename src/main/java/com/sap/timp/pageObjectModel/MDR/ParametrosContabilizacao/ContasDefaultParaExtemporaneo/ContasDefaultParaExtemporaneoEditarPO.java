@@ -57,15 +57,13 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Detalhe da Linha do Livro\"]")
-	public WebElement detalhe;
 	
 	public ContasDefaultParaExtemporaneoEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean editar() {
+	public String editar() {
 		sleep(2000);
 		parametrosdecontabilizacao.click();
 		sleep(2000);
@@ -91,60 +89,11 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 		
 		editar.click();
 		sleep(2000);
-		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
-		
-		String valor = detalhe.getAttribute("value");
-
-		String enviar = "detalhe";
-
-		detalhe.clear();
-		sleep(2000);
-		detalhe.sendKeys(enviar);
-		sleep(2000);
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-
-		driver.navigate().refresh();
-		sleep(2000);
-		waitExpectElement(biblioteca);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		String novoTexto=detalhe.getAttribute("value");
-		
-		System.out.println(valor);
-		System.out.println(novoTexto);
-		boolean sucesso = novoTexto.equals(enviar);
-		System.out.println(sucesso);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		detalhe.clear();
-
-		sleep(2000);
-		detalhe.sendKeys(valor);
-		
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//ediçao
-		/*
+		
 		codigodeajuste.click();
 		sleep(2000);
 		opcaocodigodeajuste.click();
@@ -179,7 +128,7 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		*/System.out.println(sucesso);	
+		System.out.println(sucesso);	
 		return sucesso;
 	}	
 

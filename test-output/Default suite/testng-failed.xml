@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar">
+      <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID">
         <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="acessarMDR"/>
-          <include name="login"/>
+          <include name="filtro"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar -->
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

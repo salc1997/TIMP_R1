@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="83649" started-at="2020-11-18T17:38:37Z" finished-at="2020-11-18T17:40:00Z">
+  <suite name="Default suite" duration-ms="56262" started-at="2020-11-20T17:57:08Z" finished-at="2020-11-20T17:58:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="83649" started-at="2020-11-18T17:38:37Z" finished-at="2020-11-18T17:40:00Z">
-      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11161" started-at="2020-11-18T11:38:37Z" finished-at="2020-11-18T11:38:48Z">
+    <test name="Default test" duration-ms="56262" started-at="2020-11-20T17:57:08Z" finished-at="2020-11-20T17:58:04Z">
+      <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11416" started-at="2020-11-20T11:57:08Z" finished-at="2020-11-20T11:57:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="login" duration-ms="6408" started-at="2020-11-18T11:38:48Z" finished-at="2020-11-18T11:38:54Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="login" duration-ms="7173" started-at="2020-11-20T11:57:20Z" finished-at="2020-11-20T11:57:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="acessarMDR" duration-ms="23527" started-at="2020-11-18T11:38:54Z" finished-at="2020-11-18T11:39:18Z">
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="acessarMDR" duration-ms="10282" started-at="2020-11-20T11:57:27Z" finished-at="2020-11-20T11:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="eliminar" duration-ms="42490" started-at="2020-11-18T11:39:18Z" finished-at="2020-11-18T11:40:00Z">
+        <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="filtro" duration-ms="27313" started-at="2020-11-20T11:57:37Z" finished-at="2020-11-20T11:58:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eliminar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="50" started-at="2020-11-18T11:40:00Z" finished-at="2020-11-18T11:40:00Z">
+        </test-method> <!-- filtro -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="64" started-at="2020-11-20T11:58:04Z" finished-at="2020-11-20T11:58:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar -->
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

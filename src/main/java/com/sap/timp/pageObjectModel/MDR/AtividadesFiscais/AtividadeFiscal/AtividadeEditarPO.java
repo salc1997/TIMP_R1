@@ -35,15 +35,26 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]")
+	public WebElement atividades1;
+
+	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[4]/ul/li[1]")
+	public WebElement atividadesO1;
+
+	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]")
+	public WebElement atividades2;
+
+	@FindBy(xpath = "//*[@id=\"left-content\"]/div/ul/li[3]/ul/li[1]")
+	public WebElement atividadesO2;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//li[contains(@class,\"collapsed\")]/div/span[text()=\"Atividades Fiscais\"]")
-	public WebElement atividades1;
-
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-fiscalActivities\"]")
-	public WebElement atividadesO1;
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividades;
+	
+	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividadesO;
 	
 	
 	public AtividadeEditarPO() {
@@ -54,10 +65,11 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	
 	public boolean editar() {
 
+		String url = driver.getCurrentUrl();
 
-		atividades1.click();
+		atividades.click();
 		sleep(2000);
-		atividadesO1.click();
+		atividadesO.click();
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

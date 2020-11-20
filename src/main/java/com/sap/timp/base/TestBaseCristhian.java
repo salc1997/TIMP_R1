@@ -13,11 +13,14 @@ public class TestBaseCristhian extends TestBaseSteven{
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationC() {
+
+
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 		return driver;
 	}
 	

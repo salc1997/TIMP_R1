@@ -160,7 +160,7 @@ public class TabelaDeAtribuicaoDeCodigoCFOPVisualizarPO extends TestBaseEliel{
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(obrigacaovisualizar.equals(obrigacaoeditar));
-		sucesso.add(cfopvisualizar.contains(cfopeditar));
+		sucesso.add(cfopvisualizar.equals(cfopeditar));
 		sucesso.add(ajustevisualizar.equals(ajusteeditar));
 		sucesso.add(datavisualizar.equals(dataeditar));
 		return sucesso;	

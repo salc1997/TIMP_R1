@@ -1506,7 +1506,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 	// 114
 
-	// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF
+	// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para
 	// DIRF
 
 	@Test(priority = 114)

@@ -1,7 +1,6 @@
 package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -48,9 +47,9 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		boolean sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
-		assertTrue(sucesso, Editar);
-		//assertEquals(sucesso, "edit", visualizaçar);
+		String sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
+
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
 
 }

@@ -11,7 +11,7 @@ import com.sap.timp.base.TestBaseMassiel;
 
 public class GrupoAtividadeFiscalDetallePO extends TestBaseMassiel{
 
-	@FindBy(xpath = "//li[contains(@class,\"collapsed\")]/div/span[text()=\"Atividades Fiscais\"]")
+	@FindBy(xpath = "//span[text()=\"Atividades Fiscais\"]")
 	public WebElement actividad;
 
 	//submenu
@@ -63,7 +63,7 @@ public class GrupoAtividadeFiscalDetallePO extends TestBaseMassiel{
 
 		actividad.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000); 
+		sleep(2000);
 
 		grupo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

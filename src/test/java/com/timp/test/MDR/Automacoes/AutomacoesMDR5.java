@@ -30,9 +30,6 @@ import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLi
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar;
-import com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar;
-import com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluir;
-import com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluirEmMasa;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar;
@@ -238,11 +235,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	UnidadeDeMedidaExcluir unidadeDeMedidaExcluir;
 	UnidadeDeMedidaExcluirEmMasa unidadeDeMedidaExcluirEmMasa;
 	UnidadeDeMedidaFiltroCodigo unidadeDeMedidaFiltroCodigo;
-	
-	//Parâmetros para Categoria de IRF
-	ParametrosParaCategoriaDeIRFCriar parametrosParaCategoriaDeIRFCriar;
-	ParametrosParaCategoriaDeIRFExcluir parametrosParaCategoriaDeIRFExcluir;
-	ParametrosParaCategoriaDeIRFExcluirEmMasa parametrosParaCategoriaDeIRFExcluirEmMasa;
 	
 	
 	
@@ -1456,54 +1448,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		
 		//142
-		
-		// Parâmetros para Categoria de IRF
-
-		@Test(priority = 142)
-		public void parametrosParaCategoriaDeIRFCriar() {
-
-			System.out.println("-------------------Parâmetros para Categoria de IRF------------------------");
-
-			parametrosParaCategoriaDeIRFCriar = new ParametrosParaCategoriaDeIRFCriar();
-			parametrosParaCategoriaDeIRFCriar.beforeClass();
-			parametrosParaCategoriaDeIRFCriar.login();
-			parametrosParaCategoriaDeIRFCriar.acessarMDR();
-			parametrosParaCategoriaDeIRFCriar.criar();
-			parametrosParaCategoriaDeIRFCriar.afterClass();
-
-		}
-
-
-
-		@Test(priority = 143)
-		public void parametrosParaCategoriaDeIRFExcluir() {
-
-			parametrosParaCategoriaDeIRFExcluir = new ParametrosParaCategoriaDeIRFExcluir();
-			parametrosParaCategoriaDeIRFExcluir.beforeClass();
-			parametrosParaCategoriaDeIRFExcluir.login();
-			parametrosParaCategoriaDeIRFExcluir.acessarMDR();
-			parametrosParaCategoriaDeIRFExcluir.excluir();
-			parametrosParaCategoriaDeIRFExcluir.afterClass();
-
-
-		}
-		
-		@Test(priority = 144)
-		public void parametrosParaCategoriaDeIRFVisualizar() {
-
-			parametrosParaCategoriaDeIRFExcluirEmMasa = new ParametrosParaCategoriaDeIRFExcluirEmMasa();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.beforeClass();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.login();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.acessarMDR();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.excluir();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.afterClass();
-			
-			System.out.println("-------------------Parâmetros para Categoria de IRF Fin-------------------------");
-		}
-
-		
-		
-		//148
 		
 		
 		

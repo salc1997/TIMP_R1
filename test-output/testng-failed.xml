@@ -1,36 +1,15 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa">
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho">
         <methods>
           <include name="criar"/>
-          <include name="excluirMassa"/>
-          <include name="acessarMDR"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa -->
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

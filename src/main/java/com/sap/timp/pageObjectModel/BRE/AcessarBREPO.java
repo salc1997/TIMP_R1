@@ -19,7 +19,7 @@ public class AcessarBREPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"acc-reports\"]/ul/li[3]/div/span[2]")
 	public WebElement cadastro;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-adjustments\"]")
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-root\"]")
 	public WebElement mostrar;
 	
 
@@ -41,7 +41,7 @@ public class AcessarBREPO extends TestBaseCristhian {
 
 		bre.click();
 	
-		//waitExpectElement(mostrar);
+		waitExpectElement(mostrar);
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);

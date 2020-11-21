@@ -53,6 +53,7 @@ import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoC
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar;
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoFiltros;
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoVisualizar;
+import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoDetalhes;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoVisualizar;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoCriar;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoEditar;
@@ -122,14 +123,6 @@ import com.timp.test.MDR.Filiais.FiliaisVisualizar;
 
 public class AutomacoesMDR1 extends TestBaseSteven {
 
-	// empresa
-	EmpresaEditar empresaEditar;
-	EmpresasVisualizar empresaVisualizar;
-	EmpresasFiltros empresasFiltros;
-
-	// Filiais
-	FiliaisEditar filiaisEditar;
-	FiliaisVisualizar filiaisVisualizar;
 
 	// Ajustes > Código Ajustes
 	CodigosAjustesCriar codigosAjustesCriar;
@@ -187,7 +180,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	InstitucaoVisualizar instituicaoVisualizar;
 	InstituicaoEditar instituicaoEditar;
 	InstituicaoExcluir instituicaoExcluir;
-
+	InstitucaoDetalhes institucaoDetalhes;
+	
 	// Cadastros IRPJ/CSLL > Contas ParteB LALUR/LACS
 
 	ContasParteBLALURCriar contasParteBLALURCriar;
@@ -300,69 +294,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// --------------------------------------------------------------------------------------------------
 
-	// Empresa
-
-	@Test(priority = 0)
-	public void empresaEditar() {
-		System.out.println("-------------------Empresa-------------------------");
-		empresaEditar = new EmpresaEditar();
-		empresaEditar.beforeClass();
-		empresaEditar.login();
-		empresaEditar.acessarMDR();
-		empresaEditar.editar();
-		empresaEditar.afterClass();
-
-	}
-
-	@Test(priority = 1)
-	public void empresaVisualizar() {
-
-		empresaVisualizar = new EmpresasVisualizar();
-		empresaVisualizar.beforeClass();
-		empresaVisualizar.login();
-		empresaVisualizar.acessarMDR();
-		empresaVisualizar.visualizar();
-		empresaVisualizar.afterClass();
-
-	}
-
-	@Test(priority = 2)
-	public void empresaFiltrosAvanzados() {
-		/*
-		 * empresaVisualizar = new EmpresasVisualizar();
-		 * empresaVisualizar.beforeClass(); empresaVisualizar.login();
-		 * empresaVisualizar.acessarMDR(); empresaVisualizar.visualizar();
-		 */
-		System.out.println("-------------------Empresa Fin-------------------------");
-
-	}
-
-	// Filias
-
-	@Test(priority = 3)
-	public void filiaisEditar() {
-		System.out.println("-------------------Filiais-------------------------");
-		filiaisEditar = new FiliaisEditar();
-		filiaisEditar.beforeClass();
-		filiaisEditar.login();
-		filiaisEditar.acessarMDR();
-		filiaisEditar.editar();
-		filiaisEditar.afterClass();
-
-	}
-
-	@Test(priority = 4)
-	public void filiaisVisualizar() {
-
-		filiaisVisualizar = new FiliaisVisualizar();
-		filiaisVisualizar.beforeClass();
-		filiaisVisualizar.login();
-		filiaisVisualizar.acessarMDR();
-		filiaisVisualizar.visualizar();
-		filiaisVisualizar.afterClass();
-
-		System.out.println("-------------------Filiais Fin-------------------------");
-	}
+	
 
 	// Ajustes > Código Ajustes
 
@@ -770,6 +702,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		instituicaoVisualizar.afterClass();
 
 	}
+	
+	@Test(priority = 34)
+	public void institucaoDetalhes() {
+
+		institucaoDetalhes = new InstitucaoDetalhes();
+		institucaoDetalhes.beforeClass();
+		institucaoDetalhes.login();
+		institucaoDetalhes.acessarMDR();
+		institucaoDetalhes.detalhes();
+		institucaoDetalhes.afterClass();
+
+	}
+
 
 //Cadastro Derex > Cadastro Responsável Pelo Movimento
 

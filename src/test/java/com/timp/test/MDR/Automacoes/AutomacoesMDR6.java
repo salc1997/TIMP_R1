@@ -10,6 +10,10 @@ import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServico
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa;
 import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirEmMassa;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
+import com.timp.test.MDR.Empresas.EmpresaEditar;
+import com.timp.test.MDR.Empresas.EmpresasDetalhes;
+import com.timp.test.MDR.Empresas.EmpresasFiltros;
+import com.timp.test.MDR.Empresas.EmpresasVisualizar;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa;
@@ -57,7 +61,6 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExclui
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
@@ -207,6 +210,9 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		//Valor Adicionado > Município
 			MunicipioExcluirEmMassa municipioExcluirEmMassa;
 			
+
+			
+
 		
 		//--------------------------------------------------------------------------
 			

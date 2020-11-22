@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriarPO;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheCriar;
+import com.timp.test.MDR.DetalheTipoTributo.DetalheDetalhes;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheEditar;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheExcluir;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheFiltroId;
@@ -14,6 +15,7 @@ import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondic
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar;
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoExcluir;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
+import com.timp.test.MDR.Empresas.EmpresasDetalhes;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
 import com.timp.test.MDR.Filiais.FiliaisEditar;
@@ -79,6 +81,7 @@ import com.timp.test.MDR.SCANC.AjustesDosAnexos.AjustesDosAnexosExcluir;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCEditar;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCExcluir;
+import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCFiltroID;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCVisualizar;
 import com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosCriar;
 import com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar;
@@ -117,6 +120,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	DetalheExcluir detalheTipoTributoExcluir;
 	DetalheVisualizar detalheTipoTributoVisualizar;
 	DetalheFiltroId detalheTipoTributoFiltroId;
+	DetalheDetalhes detalheTipoTributoDetalhes;
 
 	// Determinação de Tipo de Condição
 
@@ -130,6 +134,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	EmpresaEditar empresaEditar;
 	EmpresasFiltros empresasFiltros;
 	EmpresasVisualizar empresasVisualizar;
+	EmpresasDetalhes empresasDetalhes;
 
 	// Filiais
 
@@ -252,6 +257,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	MovimentoSCANCEditar movimentoSCANCEditar;
 	MovimentoSCANCExcluir movimentoSCANCExcluir;
 	MovimentoSCANCVisualizar movimentoSCANCVisualizar;
+	MovimentoSCANCFiltroID movimentoSCANCFiltroID;
 
 	// SCANC > OP Proprios Ressarcimentos
 
@@ -348,6 +354,19 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		detalheTipoTributoFiltroId.afterClass();
 
 	}
+	
+	@Test(priority = 3)
+	public void detalheTipoTributoDetalhes() {
+
+		detalheTipoTributoDetalhes = new DetalheDetalhes();
+		detalheTipoTributoDetalhes.beforeClass();
+		detalheTipoTributoDetalhes.login();
+		detalheTipoTributoDetalhes.acessarMDR();
+		detalheTipoTributoDetalhes.detalhes();
+		detalheTipoTributoDetalhes.afterClass();
+
+	}
+
 
 	@Test(priority = 4)
 	public void detalheTipoTributoFiscalExcluir() {
@@ -442,6 +461,19 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		empresasVisualizar.afterClass();
 
 	}
+	
+	@Test(priority = 13)
+	public void empresasDetalhes() {
+
+		empresasDetalhes = new EmpresasDetalhes();
+		empresasDetalhes.beforeClass();
+		empresasDetalhes.login();
+		empresasDetalhes.acessarMDR();
+		empresasDetalhes.detalhes();
+		empresasDetalhes.afterClass();
+
+	}
+
 
 	@Test(priority = 14)
 	public void empresaFiltros() {
@@ -1431,8 +1463,21 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		movimentoSCANCVisualizar.afterClass();
 
 	}
-
+	
 	@Test(priority = 119)
+	public void movimentoSCANCFiltroID() {
+
+		movimentoSCANCFiltroID = new MovimentoSCANCFiltroID();
+		movimentoSCANCFiltroID.beforeClass();
+		movimentoSCANCFiltroID.login();
+		movimentoSCANCFiltroID.acessarMDR();
+		movimentoSCANCFiltroID.filtro();
+		movimentoSCANCFiltroID.afterClass();
+
+	}
+
+
+	@Test(priority = 120)
 	public void movimentoSCANCExcluir() {
 
 		movimentoSCANCExcluir = new MovimentoSCANCExcluir();

@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditarPO;
+//import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditarPO;
 
 public class TestBaseMassiel extends TestBaseSteven {
 
@@ -23,14 +23,8 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-
-<<<<<<< HEAD
-		driver.get(tc2);
-=======
-
 		driver.get(tc2);
 
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	   return driver;
 	}
 	

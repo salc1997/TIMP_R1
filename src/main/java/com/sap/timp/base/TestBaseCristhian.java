@@ -13,18 +13,13 @@ public class TestBaseCristhian extends TestBaseSteven{
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationC() {
-<<<<<<< HEAD
 
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
 
-=======
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tc2);
 		return driver;
 	}
 	

@@ -103,6 +103,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		PageFactory.initElements(driver, this);
 	}
 	
+	
 	public boolean criar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -149,6 +150,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		opcionTipoTributo.click();
 		closeSelectTypeCheckbox(tipoTributo);
 		sleep(1000);
+		
 		
 		grupoDeEstrutura.click();
 		sleep(1000);

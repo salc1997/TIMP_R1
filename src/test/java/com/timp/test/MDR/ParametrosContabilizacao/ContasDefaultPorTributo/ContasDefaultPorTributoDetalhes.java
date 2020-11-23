@@ -1,9 +1,6 @@
 package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -51,14 +48,9 @@ public class ContasDefaultPorTributoDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Detalhes() {
 
-		ArrayList<Boolean> sucesso = contasDefaultPorTributoDetalhesPO.detalhes();
+		String sucesso = contasDefaultPorTributoDetalhesPO.detalhes();
 
-		for (int i = 0; i < sucesso.size(); i++) {
-
-			assertTrue(sucesso.get(i), Detalhes);
-
-		}
-		//assertEquals(sucesso, "edit", visualizaçar);
+		assertEquals(sucesso, "edit", visualizaçar);
 	}
 
 }

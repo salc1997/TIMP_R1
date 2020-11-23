@@ -105,7 +105,7 @@ public class SequenciaEditarPO extends TestBaseEliel{
 		attributeToBeXpath("//div[@id=\"description\"]/div/div", "class", "base-input  required type1");
 		//verifica se o valor inserido consta no relatório
 		String texto1 = descricao.getAttribute("value");
-		boolean text= texto1.contains(texto);
+		boolean text= texto1.contains(texto1);
 		System.out.println(text);
 		sleep(1000);
 		//volta com o campo modificado

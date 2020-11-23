@@ -141,13 +141,7 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);	
 		
 		biblioteca.click();
-		
-		if(URL.contains("tq1")) {
-			sleep(2000);
-		}else {
-			nao.click();
-		}
-		
+		nao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

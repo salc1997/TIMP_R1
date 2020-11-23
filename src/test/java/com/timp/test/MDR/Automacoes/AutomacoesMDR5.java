@@ -30,9 +30,6 @@ import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLi
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar;
-import com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar;
-import com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluir;
-import com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluirEmMasa;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar;
@@ -84,6 +81,7 @@ import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcl
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo;
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioDetalhes;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
@@ -91,7 +89,11 @@ import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVincu
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir;
+import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFCriar;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFDetalhes;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluir;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFVisualizar;
 
 
 public class AutomacoesMDR5 extends TestBaseSteven {
@@ -154,6 +156,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	MunicipioCriar municipioCriar;
 	MunicipioVisualizar municipioVisualizar;
 	MunicipioExcluir municipioExcluir;
+	MunicipioDetalhes municipioDetalhes;
 	
 	//Preço de Transferência > Commoditie para TP
 	CommoditieParaTPFiltroID commoditieParaTPFiltroID;
@@ -165,6 +168,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	RelacionamentoEntreQuadrosCriar relacionamentoEntreQuadrosCriar;
 	RelacionamentoEntreQuadrosEditar relacionamentoEntreQuadrosEditar;
 	RelacionamentoEntreQuadrosExcluir relacionamentoEntreQuadrosExcluir;
+	RelacionamentoEntreQuadrosFiltroID relacionamentoEntreQuadrosFiltroID;
 	
 	//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
 	
@@ -191,6 +195,9 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	
 	//Siscoserv > Registro RF
 	RegistroRFCriar registroRFCriar;
+	RegistroRFDetalhes registroRFDetalhes;
+	RegistroRFVisualizar registroRFVisualizar;
+	RegistroRFExcluir registroRFExcluir;
 	
 	
 	//Tabelas de Apoio E-SOCIAL	Tabela 09 - Tipos de Arquivos e-Social
@@ -238,11 +245,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	UnidadeDeMedidaExcluir unidadeDeMedidaExcluir;
 	UnidadeDeMedidaExcluirEmMasa unidadeDeMedidaExcluirEmMasa;
 	UnidadeDeMedidaFiltroCodigo unidadeDeMedidaFiltroCodigo;
-	
-	//Parâmetros para Categoria de IRF
-	ParametrosParaCategoriaDeIRFCriar parametrosParaCategoriaDeIRFCriar;
-	ParametrosParaCategoriaDeIRFExcluir parametrosParaCategoriaDeIRFExcluir;
-	ParametrosParaCategoriaDeIRFExcluirEmMasa parametrosParaCategoriaDeIRFExcluirEmMasa;
 	
 	
 	
@@ -651,12 +653,12 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	// 41
 
-	// municipios Fiscais > municipios Fiscais
+	// Valor Adicionado > municipios
 
 	@Test(priority = 42)
 	public void municipioCriar() {
 
-		System.out.println("-------------------municipio Fiscal > municipio Fiscal-------------------------");
+		System.out.println("-------------------Valor Adicionado > municipios-------------------------");
 
 		municipioCriar = new MunicipioCriar();
 		municipioCriar.beforeClass();
@@ -678,8 +680,21 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		municipioVisualizar.afterClass();
 
 	}
-
+	
 	@Test(priority = 44)
+	public void municipioDetalhes() {
+
+		municipioDetalhes = new MunicipioDetalhes();
+		municipioDetalhes.beforeClass();
+		municipioDetalhes.login();
+		municipioDetalhes.acessarMDR();
+		municipioDetalhes.detalhes();
+		municipioDetalhes.afterClass();
+
+	}
+
+
+	@Test(priority = 45)
 	public void municipioExcluir() {
 
 		municipioExcluir = new MunicipioExcluir();
@@ -689,7 +704,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		municipioExcluir.excluir();
 		municipioExcluir.afterClass();
 
-		System.out.println("-------------------municipio Fiscal > municipio Fiscal Fin-------------------------");
+		System.out.println("-------------------Valor Adicionado > municipios Fin-------------------------");
 	}
 
 	// 48
@@ -809,9 +824,22 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			relacionamentoEntreQuadrosEditar.afterClass();
 
 		}
-
-
+		
 		@Test(priority = 71)
+		public void relacionamentoEntreQuadrosFiltroID() {
+
+			relacionamentoEntreQuadrosFiltroID = new RelacionamentoEntreQuadrosFiltroID();
+			relacionamentoEntreQuadrosFiltroID.beforeClass();
+			relacionamentoEntreQuadrosFiltroID.login();
+			relacionamentoEntreQuadrosFiltroID.acessarMDR();
+			relacionamentoEntreQuadrosFiltroID.filtro();
+			relacionamentoEntreQuadrosFiltroID.afterClass();
+
+		}
+
+
+
+		@Test(priority = 72)
 		public void relacionamentoEntreQuadrosExcluir() {
 
 			relacionamentoEntreQuadrosExcluir = new RelacionamentoEntreQuadrosExcluir();
@@ -998,9 +1026,11 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		}
 
 	//95
-		
+		//Siscoserv > Registro RF Fin
 		@Test(priority = 95)
 		public void registroRFCriar() {
+			
+			System.out.println("-------------------Siscoserv > Registro RF -------------------------");
 
 			registroRFCriar = new RegistroRFCriar();
 			registroRFCriar.beforeClass();
@@ -1010,6 +1040,45 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			registroRFCriar.afterClass();
 
 		}
+		
+		@Test(priority = 96)
+		public void registroRFVisualizar() {
+
+			registroRFVisualizar = new RegistroRFVisualizar();
+			registroRFVisualizar.beforeClass();
+			registroRFVisualizar.login();
+			registroRFVisualizar.acessarMDR();
+			registroRFVisualizar.visualizar();
+			registroRFVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 97)
+		public void registroRFDetalhes() {
+
+			registroRFDetalhes = new RegistroRFDetalhes();
+			registroRFDetalhes.beforeClass();
+			registroRFDetalhes.login();
+			registroRFDetalhes.acessarMDR();
+			registroRFDetalhes.detalhes();
+			registroRFDetalhes.afterClass();
+
+		}
+
+
+		@Test(priority = 98)
+		public void registroRFExcluir() {
+
+			registroRFExcluir = new RegistroRFExcluir();
+			registroRFExcluir.beforeClass();
+			registroRFExcluir.login();
+			registroRFExcluir.acessarMDR();
+			registroRFExcluir.excluir();
+			registroRFExcluir.afterClass();
+
+			System.out.println("-------------------Siscoserv > Registro RF Fin-------------------------");
+		}
+
 		
 	//102
 		
@@ -1456,54 +1525,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		
 		//142
-		
-		// Parâmetros para Categoria de IRF
-
-		@Test(priority = 142)
-		public void parametrosParaCategoriaDeIRFCriar() {
-
-			System.out.println("-------------------Parâmetros para Categoria de IRF------------------------");
-
-			parametrosParaCategoriaDeIRFCriar = new ParametrosParaCategoriaDeIRFCriar();
-			parametrosParaCategoriaDeIRFCriar.beforeClass();
-			parametrosParaCategoriaDeIRFCriar.login();
-			parametrosParaCategoriaDeIRFCriar.acessarMDR();
-			parametrosParaCategoriaDeIRFCriar.criar();
-			parametrosParaCategoriaDeIRFCriar.afterClass();
-
-		}
-
-
-
-		@Test(priority = 143)
-		public void parametrosParaCategoriaDeIRFExcluir() {
-
-			parametrosParaCategoriaDeIRFExcluir = new ParametrosParaCategoriaDeIRFExcluir();
-			parametrosParaCategoriaDeIRFExcluir.beforeClass();
-			parametrosParaCategoriaDeIRFExcluir.login();
-			parametrosParaCategoriaDeIRFExcluir.acessarMDR();
-			parametrosParaCategoriaDeIRFExcluir.excluir();
-			parametrosParaCategoriaDeIRFExcluir.afterClass();
-
-
-		}
-		
-		@Test(priority = 144)
-		public void parametrosParaCategoriaDeIRFVisualizar() {
-
-			parametrosParaCategoriaDeIRFExcluirEmMasa = new ParametrosParaCategoriaDeIRFExcluirEmMasa();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.beforeClass();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.login();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.acessarMDR();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.excluir();
-			parametrosParaCategoriaDeIRFExcluirEmMasa.afterClass();
-			
-			System.out.println("-------------------Parâmetros para Categoria de IRF Fin-------------------------");
-		}
-
-		
-		
-		//148
 		
 		
 		

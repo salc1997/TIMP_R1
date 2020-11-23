@@ -1,9 +1,6 @@
 package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -50,11 +47,9 @@ public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		ArrayList<Boolean> sucesso = contasDefaultParaExtemporaneoVisualizarPO.visualizar();
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
-		//assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
+		String sucesso = contasDefaultParaExtemporaneoVisualizarPO.visualizar();
+
+		assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
 	}
 
 }

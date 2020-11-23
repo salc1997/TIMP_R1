@@ -10,12 +10,17 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class AtividadeCriarPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//li[contains(@class,\"collapsed\")]/div/span[text()=\"Atividades Fiscais\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades1;
 
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-fiscalActivities\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"][1]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividadesO1;
 
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividades2;
+
+	@FindBy(xpath = "//li[@tabindex=\"0\"][1]/div/span[text()=\"Atividades Fiscais\"]")
+	public WebElement atividadesO2;
 
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement id;
@@ -92,13 +97,20 @@ public class AtividadeCriarPO extends TestBaseSteven{
 	
 	public boolean criar() {
 		
+		String url = driver.getCurrentUrl();
 
+		if (url.contains("tc2") || url.contains("tp1")) {
+			atividades2.click();
+			sleep(2000);
+			atividadesO2.click();
+			sleep(2000);
+		} else {
 
-		atividades1.click();
-		sleep(2000);
-		atividadesO1.click();
-		sleep(2000);
-	
+			atividades1.click();
+			sleep(2000);
+			atividadesO1.click();
+			sleep(2000);
+		}
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

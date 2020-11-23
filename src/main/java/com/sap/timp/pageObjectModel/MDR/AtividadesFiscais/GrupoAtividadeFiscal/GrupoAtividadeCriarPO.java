@@ -49,7 +49,7 @@ public class GrupoAtividadeCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//li[contains(@class,\"collapsed\")]/div/span[text()=\"Atividades Fiscais\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades;
 	
 	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Grupos de Atividades Fiscais\"]")

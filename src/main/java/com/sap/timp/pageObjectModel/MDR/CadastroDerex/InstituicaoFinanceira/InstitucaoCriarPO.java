@@ -99,12 +99,12 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		derex.click();
 		sleep(1000);
 		instituicaoF.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -122,9 +122,10 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		empresa.click();
 		sleep(1000);
 		empresaO.click();
-		
+		sleep(2000);
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
-		sleep(1000);
+		sleep(2000);
+		
 		filial.click();
 		sleep(1000);
 		filialO.click();
@@ -135,11 +136,11 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		tributoO.click();
 		tributoO.sendKeys(Keys.ESCAPE);
 		
-		sleep(1000);
+		sleep(2000);
 		
 		instituicao.sendKeys("TA Instituição Financeira");
 		
-		sleep(1000);
+		sleep(2000);
 		
 		pais.click();
 		sleep(1000);
@@ -147,7 +148,7 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Validade Até\"]");
-		
+		sleep(2000);
 		moedaOrdem.click();
 		sleep(1000);
 		moedaOrdemO.click();
@@ -179,12 +180,12 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

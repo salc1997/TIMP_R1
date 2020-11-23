@@ -58,7 +58,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean editar() {
+	public String editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -87,15 +87,12 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		
 		editar.click();
 		sleep(2000);
-		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		String valor = descricao.getAttribute("value");
-		
-		String enviar = "Teste da Descrição";
+		waitExpectElement(descricao);
+		sleep(2000);
 		
 		descricao.clear();
-		descricao.sendKeys(enviar);
+		descricao.sendKeys("Teste da Descrição");
 		
 		sleep(2000);
 		
@@ -104,41 +101,37 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		driver.navigate().refresh();
-		sleep(2000);
-		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		
-		String novoTexto=descricao.getAttribute("value");
-		
-		System.out.println(valor);
-		System.out.println(novoTexto);
-		boolean sucesso = novoTexto.equals(enviar);
-		System.out.println(sucesso);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		biblioteca.click();
 		sleep(2000);
-		descricao.clear();
-
-		sleep(2000);
-		descricao.sendKeys(valor);
-		
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//sim.click();
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		System.out.println(sucesso);	
+	
+		waitExpectElement(siguiente);
+		sleep(2000);
+		siguiente.click();
+		
+		
+		//pega o ultimo id que foi gerado no criar
+		String idRegistro1 = idObter1();
+		
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		actionsMoveToElementElement(menu1);
+		sleep(2000);
+		menu1.click();
+		sleep(1000);
+		
+		visualizar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		//System.out.println(sucesso);	
 		return sucesso;
 	}
 	

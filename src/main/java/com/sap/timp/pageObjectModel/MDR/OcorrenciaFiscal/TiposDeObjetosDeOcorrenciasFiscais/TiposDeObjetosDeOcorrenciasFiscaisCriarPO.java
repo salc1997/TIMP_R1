@@ -148,9 +148,6 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"credit-adjustment-code\"]/div", "class", "base-select required");
-		sleep(2000);
-		
 		codigocredito.click();
 		
 		sleep(2000);

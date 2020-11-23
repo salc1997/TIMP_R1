@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
+
 public class TestBaseMassiel extends TestBaseSteven {
 
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
@@ -22,10 +23,8 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-
 		driver.get(tc2);
 
-		driver.get(tq1);
 
 	   return driver;
 	}

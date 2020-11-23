@@ -27,8 +27,8 @@ public class IncentivosFiscaisCriarPO extends TestBaseKenssy {
 	@FindBy(xpath="//div[@id=\"tribute\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-		@FindBy(xpath="//li[@id][1]")
-		public WebElement opcTributo;
+	@FindBy(xpath="//li[@id][1]")
+	public WebElement opcTributo;
 	
 	//SELECT CON CHECKBOX	
 		

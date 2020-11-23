@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
+<testng-results total="3" passed="2" failed="1" skipped="0">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <testng-results total="4" passed="0" failed="4" skipped="0">
 =======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2020-11-19T20:49:47Z" name="Default suite" finished-at="2020-11-19T20:51:52Z" duration-ms="124764">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-22T18:52:53Z" name="Default suite" finished-at="2020-11-22T18:56:29Z" duration-ms="215882">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-20T22:55:33Z" name="Default suite" finished-at="2020-11-20T22:57:45Z" duration-ms="132515">
+=======
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="56262" started-at="2020-11-20T17:57:08Z" finished-at="2020-11-20T17:58:04Z">
 =======
@@ -19,8 +42,26 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2020-11-19T20:49:47Z" name="Default test" finished-at="2020-11-19T20:51:52Z" duration-ms="124764">
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:49:47Z" name="beforeClass" finished-at="2020-11-19T17:50:00Z" duration-ms="13125" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-22T18:52:53Z" name="Default test" finished-at="2020-11-22T18:56:29Z" duration-ms="215882">
+      <class name="com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:52:53Z" name="beforeClass" finished-at="2020-11-22T15:53:07Z" duration-ms="13894" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-20T22:55:33Z" name="Default test" finished-at="2020-11-20T22:57:45Z" duration-ms="132515">
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho@10f7f7de]" started-at="2020-11-20T16:55:33Z" name="beforeClass" finished-at="2020-11-20T16:55:47Z" duration-ms="14480" status="PASS">
+=======
 <<<<<<< HEAD
     <test name="Default test" duration-ms="56262" started-at="2020-11-20T17:57:08Z" finished-at="2020-11-20T17:58:04Z">
       <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID">
@@ -42,9 +83,21 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:50:00Z" name="login" finished-at="2020-11-19T17:50:08Z" duration-ms="7798" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:53:07Z" name="login" finished-at="2020-11-22T15:53:15Z" duration-ms="7300" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho@10f7f7de]" started-at="2020-11-20T16:55:47Z" name="login" finished-at="2020-11-20T16:55:56Z" duration-ms="8742" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="login" duration-ms="7173" started-at="2020-11-20T11:57:20Z" finished-at="2020-11-20T11:57:27Z">
 =======
@@ -137,9 +190,21 @@ Session ID: 7476273c1fb8effac582dab3d85762f3
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:50:08Z" name="acessarMDR" finished-at="2020-11-19T17:50:24Z" duration-ms="16201" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:53:15Z" name="acessarMDR" finished-at="2020-11-22T15:53:39Z" duration-ms="24226" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho@10f7f7de]" started-at="2020-11-20T16:55:56Z" name="acessarBRE" finished-at="2020-11-20T16:56:09Z" duration-ms="13527" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="acessarMDR" duration-ms="10282" started-at="2020-11-20T11:57:27Z" finished-at="2020-11-20T11:57:37Z">
 =======
@@ -233,8 +298,14 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:43:25Z" name="login" finished-at="2020-11-19T13:43:31Z" duration-ms="6661" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho@10f7f7de]" started-at="2020-11-20T16:56:09Z" name="criar" finished-at="2020-11-20T16:57:45Z" duration-ms="95739" status="PASS">
+=======
 <<<<<<< HEAD
         </test-method> <!-- editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioEditar@644baf4a]" started-at="2020-11-20T01:54:04Z" name="afterClass" finished-at="2020-11-20T01:54:04Z" duration-ms="0" status="PASS">
@@ -242,17 +313,70 @@ Caused by: java.net.ConnectException: Connection refused: no further information
         </test-method> <!-- login -->
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:43:31Z" name="acessarMDR" finished-at="2020-11-19T13:43:48Z" duration-ms="16550" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:50:24Z" name="criar" finished-at="2020-11-19T17:51:48Z" duration-ms="83308" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:53:39Z" name="criar" finished-at="2020-11-22T15:56:29Z" duration-ms="170435" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa.criar(TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="filtro" duration-ms="27313" started-at="2020-11-20T11:57:37Z" finished-at="2020-11-20T11:58:04Z">
 =======
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:43:48Z" name="criar" finished-at="2020-11-19T13:46:05Z" duration-ms="137006" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:51:48Z" name="afterClass" finished-at="2020-11-19T17:51:52Z" duration-ms="4320" status="PASS">
+=======
 <<<<<<< HEAD
         </test-method> <!-- filtro -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="64" started-at="2020-11-20T11:58:04Z" finished-at="2020-11-20T11:58:04Z">
@@ -347,7 +471,14 @@ Caused by: java.net.ConnectException: Connection refused: no further information
           </reporter-output>
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- criar -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:56:29Z" name="afterClass" finished-at="2020-11-22T15:56:29Z" duration-ms="1" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho@10f7f7de]" started-at="2020-11-20T16:57:45Z" name="afterClass" finished-at="2020-11-20T16:57:45Z" duration-ms="1" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa@73a8da0f]" started-at="2020-11-19T19:42:48Z" name="excluirMassa" finished-at="2020-11-19T19:42:53Z" duration-ms="5007" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
@@ -519,9 +650,21 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID -->
 =======
@@ -532,6 +675,9 @@ Caused by: java.net.ConnectException: Connection refused: no further information
       </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa -->
 =======
       </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

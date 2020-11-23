@@ -10,11 +10,17 @@ import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.Confrontaca
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa;
 import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirEmMassa;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosEditar;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluirMassa;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar;
+import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasDetalhes;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirMassaPP;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa;
@@ -81,7 +87,6 @@ import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.Observaçõ
 import com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
-
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
@@ -231,7 +236,12 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		//Valor Adicionado > Município
 			MunicipioExcluirEmMassa municipioExcluirEmMassa;
 			
-/*
+
+
+
+		//Incentivos Fiscais > Projetos Patrocinados
+			IncentivosFiscaisExcluirMassaPP incentivosFiscaisExcluirMassaPP;
+
 		//Siscoserv  > Registro RVS
 			RegistroRVSExcluirEmMassa registroRVSExcluirEmMassa;
 
@@ -242,7 +252,15 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			DiagnosticoDeProcessosExcluir diagnosticoDeProcessosExcluir;
 			DiagnosticoDeProcessosExcluirEmMassa diagnosticoDeProcessosExcluirEmMassa;
 
-		
+
+		//Controle de Crédito Tributário > Status para Banco de Indébitos
+			statusParaBancoIndébitosCriar StatusParaBancoIndébitosCriar;
+			StatusParaBancoIndébitosEditar statusParaBancoIndébitosEditar;
+			StatusParaBancoIndébitosExcluirMassa statusParaBancoIndébitosExcluirMassa;
+			StatusParaBancoIndébitosVisualizar statusParaBancoIndébitosVisualizar;
+			StatusParaBancoIndébitosExcluir statusParaBancoIndébitosExcluir;
+
+
 		//Siscoserv > Registro RF
 			RegistroRFExcluirEmMassa registroRFExcluirEmMassa;
 		
@@ -271,7 +289,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		
 		//Tabela Apoio SPED > Codigos Das Obrigacoes De ICMS a Recolher
 			CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa;
-		
+
 			
 		//--------------------------------------------------------------------------
 			
@@ -1123,6 +1141,77 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				municipioExcluirEmMassa.criar();
 				municipioExcluirEmMassa.afterClass();
 			}
+
+			//Incentivos Fiscais > Projetos Patrocinados
+			//86
+			
+			@Test(priority = 86)
+			public void incentivosFiscaisPPExcluirEmMassa() {
+				System.out.println("-------------------Incentivos Fiscais > Projetos Patrocinados-------------------------");
+				incentivosFiscaisExcluirMassaPP = new IncentivosFiscaisExcluirMassaPP();
+				incentivosFiscaisExcluirMassaPP.beforeClass();
+				incentivosFiscaisExcluirMassaPP.login();
+				incentivosFiscaisExcluirMassaPP.acessarMDR();
+				incentivosFiscaisExcluirMassaPP.criar();
+				incentivosFiscaisExcluirMassaPP.afterClass();
+			}
+			//90
+			
+			//Controle de Crédito Tributário > Status para Banco de Indébitos
+			//91
+			@Test(priority = 91)
+			public void statusParaBancoIndébitosCriar() {
+				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos-------------------------");
+				StatusParaBancoIndébitosCriar = new statusParaBancoIndébitosCriar();
+				StatusParaBancoIndébitosCriar.beforeClass();
+				StatusParaBancoIndébitosCriar.login();
+				StatusParaBancoIndébitosCriar.acessarMDR();
+				StatusParaBancoIndébitosCriar.criar();
+				StatusParaBancoIndébitosCriar.afterClass();
+			}
+			@Test(priority = 92)
+			public void StatusParaBancoIndébitosEditar() {
+				
+				statusParaBancoIndébitosEditar = new StatusParaBancoIndébitosEditar();
+				statusParaBancoIndébitosEditar.beforeClass();
+				statusParaBancoIndébitosEditar.login();
+				statusParaBancoIndébitosEditar.acessarMDR();
+				statusParaBancoIndébitosEditar.editar();
+				statusParaBancoIndébitosEditar.afterClass();
+			}
+			@Test(priority = 93)
+			public void StatusParaBancoIndébitosVisualizar() {
+				
+				statusParaBancoIndébitosVisualizar = new StatusParaBancoIndébitosVisualizar();
+				statusParaBancoIndébitosVisualizar.beforeClass();
+				statusParaBancoIndébitosVisualizar.login();
+				statusParaBancoIndébitosVisualizar.acessarMDR();
+				statusParaBancoIndébitosVisualizar.visualizar();
+				statusParaBancoIndébitosVisualizar.afterClass();
+			}
+			@Test(priority = 94)
+			public void StatusParaBancoIndébitosExcluir() {
+				
+				statusParaBancoIndébitosExcluir = new StatusParaBancoIndébitosExcluir();
+				statusParaBancoIndébitosExcluir.beforeClass();
+				statusParaBancoIndébitosExcluir.login();
+				statusParaBancoIndébitosExcluir.acessarMDR();
+				statusParaBancoIndébitosExcluir.excluir();
+				statusParaBancoIndébitosExcluir.afterClass();
+			}
+			@Test(priority = 95)
+			public void StatusParaBancoIndébitosExcluirMassa() {
+				
+				statusParaBancoIndébitosExcluirMassa = new StatusParaBancoIndébitosExcluirMassa();
+				statusParaBancoIndébitosExcluirMassa.beforeClass();
+				statusParaBancoIndébitosExcluirMassa.login();
+				statusParaBancoIndébitosExcluirMassa.acessarMDR();
+				statusParaBancoIndébitosExcluirMassa.criar();
+				statusParaBancoIndébitosExcluirMassa.afterClass();
+				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");
+			}
+			//95
+
 			//Siscoserv  > Registro RVS
 		
 			@Test(priority = 86)
@@ -1334,5 +1423,5 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.criar();
 				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.afterClass();
 			}
-		
+
 }

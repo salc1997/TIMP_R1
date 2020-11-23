@@ -1,12 +1,16 @@
 package com.timp.test.MDR.Automacoes;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.Test;
 import org.yaml.snakeyaml.scanner.Constant;
 
 import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFEditarPO;
+import com.sap.timp.pageObjectModel.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriarPO;
 import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar;
@@ -25,6 +29,7 @@ import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditar;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioExcluir;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioFiltroID;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioVisualizar;
+import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar;
@@ -82,6 +87,7 @@ import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir;
+import com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaCriar;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar;
@@ -90,6 +96,7 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
+import com.timp.test.MDR.ContratoIOF.ContratoIOFDetalhes;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFEditar;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar;
@@ -120,6 +127,11 @@ import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
 import com.timp.test.MDR.Filiais.FiliaisEditar;
 import com.timp.test.MDR.Filiais.FiliaisVisualizar;
+import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIExcluirMassa;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosEditar;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluir;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluirMassa;
 
 public class AutomacoesMDR1 extends TestBaseSteven {
 
@@ -156,6 +168,10 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	AtividadeFiltro atividadeFiltro;
 	AtividadeVisualizar atividadeVisualizar;
 
+	// Atividades Fiscais > Associação de Atividades Fiscais
+
+	AssociaçãoExcluir associaçãoExcluir;
+	
 	// Atividades Fiscais > Grupo Atividades Fiscais
 
 	GrupoAtividadeCriar grupoAtividadeCriar;
@@ -243,6 +259,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	CodigoContabilizacaoEditar codigoContabilizacaoEditar;
 	CodigoContabalizacaoDetalhes codigoContabalizacaoDetalhes;
 	CodigoContabilizacaoExcluir codigoContabilizacaoExcluir;
+	CódigoContabilizaçãoExcluirMassa códigoContabilizaçãoExcluirMassa;
 
 	// Código da Receita
 	CodigoReceitaCriar codigoReceitaCriar;
@@ -254,11 +271,13 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	// Configuração do Fundo Socail
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
 	ConfiguracaoFundoSocailFiltroId configuracaoFundoSocailFiltroId;
+	
 	// Contrato IOF
 
 	ContratoIOFCriar contratoIOFCriar;
 	ContratoIOFEditar contratoIOFEditar;
 	ContratoIOFVisualizar contratoIOFVisualizar;
+	ContratoIOFDetalhes contratoIOFDetalhes;
 	ContratoIOFExcluir contratoIOFExcluir;
 
 	// Controle De crédito Tributario > Código Crédito
@@ -291,7 +310,15 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	UtilizacaoDosCreditosNaApuracaoExcluir utilizacaoDosCreditosNaApuracaoExcluir;
 	UtilizacaoDosCreditosNaApuracaoVisualizar utilizacaoDosCreditosNaApuracaoVisualizar;
 	UtilizacaoDosCreditosNaApuracaoFiltroId utilizacaoDosCreditosNaApuracaoFiltroId;
-
+	
+	//SPCB - Federais Retidos
+	SPCBFederaisRetidosCriar sPCBFederaisRetidosCriar;
+	SPCBFederaisRetidosEditar sPCBFederaisRetidosEditar;
+	SPCBFederaisRetidosExcluir sPCBFederaisRetidosExcluir;
+	SPCBFederaisRetidosExcluirMassa sPCBFederaisRetidosExcluirMassa;
+	
+	// Notas a Declarar Anexo III DIA-AM
+	NotasDeclararAnexoIIIExcluirMassa notasDeclararAnexoIIIExcluirMassa;
 	// --------------------------------------------------------------------------------------------------
 
 	
@@ -1289,6 +1316,17 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		codigoContabalizacaoDetalhes.afterClass();
 
 	}
+	@Test(priority = 76)
+	public void códigoContabilizaçãoExcluirMassa() {
+
+		códigoContabilizaçãoExcluirMassa = new CódigoContabilizaçãoExcluirMassa();
+		códigoContabilizaçãoExcluirMassa.beforeClass();
+		códigoContabilizaçãoExcluirMassa.login();
+		códigoContabilizaçãoExcluirMassa.acessarMDR();
+		códigoContabilizaçãoExcluirMassa.criar();
+		códigoContabilizaçãoExcluirMassa.afterClass();
+
+	}
 
 
 	@Test(priority = 77)
@@ -1435,6 +1473,17 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		contratoIOFVisualizar.acessarMDR();
 		contratoIOFVisualizar.visualizar();
 		contratoIOFVisualizar.afterClass();
+
+	}
+	@Test(priority = 86)
+	public void contratoIOFDetalhes() {
+
+		contratoIOFDetalhes = new ContratoIOFDetalhes();
+		contratoIOFDetalhes.beforeClass();
+		contratoIOFDetalhes.login();
+		contratoIOFDetalhes.acessarMDR();
+		contratoIOFDetalhes.Detalhes();
+		contratoIOFDetalhes.afterClass();
 
 	}
 
@@ -1744,6 +1793,80 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosNaApuracaoFiltroId.afterClass();
 
 	}
+	
+	// Atividades Fiscais > Associação de Atividades Fiscais
+	//108
+	@Test(priority = 109)
+	public void excluirAssociacao() {
+		associaçãoExcluir = new AssociaçãoExcluir();
+		associaçãoExcluir.beforeClass();
+		associaçãoExcluir.login();
+		associaçãoExcluir.acessarMDR();
+		associaçãoExcluir.excluirr();
+		associaçãoExcluir.afterClass();
+		
 
+	}
+
+	//112
+	
+	// SPCB - Federais Retidos
+		
+	@Test(priority = 113)
+	public void criarSPCB() {
+		sPCBFederaisRetidosCriar = new SPCBFederaisRetidosCriar();
+		sPCBFederaisRetidosCriar.beforeClass();
+		sPCBFederaisRetidosCriar.login();
+		sPCBFederaisRetidosCriar.acessarMDR();
+		sPCBFederaisRetidosCriar.criar();
+		sPCBFederaisRetidosCriar.afterClass();
+	}
+	
+	@Test(priority = 114)
+	public void editarSPCB() {
+		sPCBFederaisRetidosEditar = new SPCBFederaisRetidosEditar();
+		sPCBFederaisRetidosEditar.beforeClass();
+		sPCBFederaisRetidosEditar.login();
+		sPCBFederaisRetidosEditar.acessarMDR();
+		sPCBFederaisRetidosEditar.editar();
+		sPCBFederaisRetidosEditar.afterClass();
+	}
+	@Test(priority = 115)
+	public void excluirSPCB() {
+		sPCBFederaisRetidosExcluir = new SPCBFederaisRetidosExcluir();
+		sPCBFederaisRetidosExcluir.beforeClass();
+		sPCBFederaisRetidosExcluir.login();
+		sPCBFederaisRetidosExcluir.acessarMDR();
+		sPCBFederaisRetidosExcluir.excluirr();
+		sPCBFederaisRetidosExcluir.afterClass();
+	}
+	@Test(priority = 116)
+	public void excluirMassaSPCB() {
+		sPCBFederaisRetidosExcluirMassa = new SPCBFederaisRetidosExcluirMassa();
+		sPCBFederaisRetidosExcluirMassa.beforeClass();
+		sPCBFederaisRetidosExcluirMassa.login();
+		sPCBFederaisRetidosExcluirMassa.acessarMDR();
+		sPCBFederaisRetidosExcluirMassa.criar();
+		sPCBFederaisRetidosExcluirMassa.afterClass();
+		System.out.println(
+				"-------------------SPCB - Federais Retidos FIN-------------------------");
+	}
+	
+	// Notas a Declarar Anexo III DIA-AM
+	//117
+	
+	@Test(priority = 120)
+	public void excluirMassaNotas() {
+		notasDeclararAnexoIIIExcluirMassa = new NotasDeclararAnexoIIIExcluirMassa();
+		notasDeclararAnexoIIIExcluirMassa.beforeClass();
+		notasDeclararAnexoIIIExcluirMassa.login();
+		notasDeclararAnexoIIIExcluirMassa.acessarMDR();
+		notasDeclararAnexoIIIExcluirMassa.criar();
+		notasDeclararAnexoIIIExcluirMassa.afterClass();
+		System.out.println(
+				"-------------------Notas a Declarar Anexo III DIA-AM FIN-------------------------");
+	}
+	//120
+		
 
 }

@@ -69,7 +69,6 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExclui
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
-<<<<<<< HEAD
 import com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar;
@@ -82,8 +81,7 @@ import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.Observaçõ
 import com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
@@ -233,7 +231,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		//Valor Adicionado > Município
 			MunicipioExcluirEmMassa municipioExcluirEmMassa;
 			
-<<<<<<< HEAD
+/*
 		//Siscoserv  > Registro RVS
 			RegistroRVSExcluirEmMassa registroRVSExcluirEmMassa;
 
@@ -243,11 +241,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			DiagnosticoDeProcessosVisualizar diagnosticoDeProcessosVisualizar;
 			DiagnosticoDeProcessosExcluir diagnosticoDeProcessosExcluir;
 			DiagnosticoDeProcessosExcluirEmMassa diagnosticoDeProcessosExcluirEmMassa;
-=======
 
-			
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		
 		//Siscoserv > Registro RF
 			RegistroRFExcluirEmMassa registroRFExcluirEmMassa;
@@ -260,7 +254,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		
 		//Tabela De Apoio E Social Tabela28 - Dados De RAT
 			DadosDeRATExcluirEmMassa dadosDeRATExcluirEmMassa;
-			
+			*/
 		//Tabela Apoio SPED > Tabela Codigo Da Situação Tributária
 			TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 		//Tabela Apoio SPED > Codigo Tipo Credito
@@ -1130,7 +1124,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				municipioExcluirEmMassa.afterClass();
 			}
 			//Siscoserv  > Registro RVS
-			
+		
 			@Test(priority = 86)
 			public void registroRVSExcluirEmMassa() {
 				System.out.println("-------------------Siscoserv  > Registro RVS-------------------------");
@@ -1340,4 +1334,5 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.criar();
 				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.afterClass();
 			}
+		
 }

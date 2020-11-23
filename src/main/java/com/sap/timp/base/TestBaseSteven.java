@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 package com.sap.timp.base;
 
 import java.awt.AWTException;
@@ -541,22 +534,7 @@ public class TestBaseSteven {
 	
 	//BCB
 	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
-	public String Acessar = "Erro ao tentar acessar ao componente";
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public String Acessar = "Erro ao tentar acessar ao componente";	
 	
 	
 }
-

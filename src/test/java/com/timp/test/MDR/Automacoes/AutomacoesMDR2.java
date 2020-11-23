@@ -14,6 +14,7 @@ import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondic
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoDetalhes;
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar;
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoExcluir;
+import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoExcluirMassa;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasDetalhes;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
@@ -42,6 +43,7 @@ import com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevan
 import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisCriar;
 import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisDetalhes;
 import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisEditar;
+import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoCriar;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoDetalhes;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditar;
@@ -96,6 +98,7 @@ import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoExcluir;
+import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoExcluirMassa;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoFiltroID;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaCriar;
 import com.timp.test.MDR.SequenciaAcesso.SequenciaEditar;
@@ -128,6 +131,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	DeterminacaoDeTipoDeCondicaoDetalhes determinacaoDeTipoDeCondicaoDetalhes;
 	DeterminacaoDeTipoDeCondicaoEditar determinacaoDeTipoDeCondicaoEditar;
 	DeterminacaoDeTipoDeCondicaoExcluir determinacaoDeTipoDeCondicaoExcluir;
+	DeterminacaoDeTipoDeCondicaoExcluirMassa determinacaoDeTipoDeCondicaoExcluirMassa;
 
 	// Empresas
 
@@ -182,7 +186,8 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	TiposDeObjetosDeOcorrenciasFiscaisCriar tiposDeObjetosDeOcorrenciasFiscaisCriar;
 	TiposDeObjetosDeOcorrenciasFiscaisDetalhes tiposDeObjetosDeOcorrenciasFiscaisDetalhes;
 	TiposDeObjetosDeOcorrenciasFiscaisEditar tiposDeObjetosDeOcorrenciasFiscaisEditar;
-
+	TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa;
+	
 	// Parâmetros de Contabilização > Contas Default Para Extemporaneo
 
 	ContasDefaultParaExtemporaneoCriar contasDefaultParaExtemporaneoCriar;
@@ -246,7 +251,8 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	SaldoInicialDiferidoEditar saldoInicialDiferidoEditar;
 	SaldoInicialDiferidoExcluir saldoInicialDiferidoExcluir;
 	SaldoInicialDiferidoFiltroID saldoInicialDiferidoFiltroID;
-
+	SaldoInicialDiferidoExcluirMassa saldoInicialDiferidoExcluirMassa;
+	
 	// SCANC > Ajustes Dos Anexos
 
 	AjustesDosAnexosCriar ajustesDosAnexosCriar;
@@ -418,6 +424,17 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		determinacaoDeTipoDeCondicaoDetalhes.acessarMDR();
 		determinacaoDeTipoDeCondicaoDetalhes.Detalhes();
 		determinacaoDeTipoDeCondicaoDetalhes.afterClass();
+
+	}
+	@Test(priority = 8)
+	public void DeterminacaoDeTipoDeCondicaoExcluirMassa() {
+
+		determinacaoDeTipoDeCondicaoExcluirMassa = new DeterminacaoDeTipoDeCondicaoExcluirMassa();
+		determinacaoDeTipoDeCondicaoExcluirMassa.beforeClass();
+		determinacaoDeTipoDeCondicaoExcluirMassa.login();
+		determinacaoDeTipoDeCondicaoExcluirMassa.acessarMDR();
+		determinacaoDeTipoDeCondicaoExcluirMassa.criar();
+		determinacaoDeTipoDeCondicaoExcluirMassa.afterClass();
 
 	}
 
@@ -851,6 +868,18 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		tiposDeObjetosDeOcorrenciasFiscaisEditar.acessarMDR();
 		tiposDeObjetosDeOcorrenciasFiscaisEditar.editar();
 		tiposDeObjetosDeOcorrenciasFiscaisEditar.afterClass();
+
+	}
+	
+	@Test(priority = 56)
+	public void tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa() {
+
+		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa = new TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa();
+		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa.beforeClass();
+		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa.login();
+		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa.acessarMDR();
+		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa.criar();
+		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa.afterClass();
 
 	}
 
@@ -1376,7 +1405,17 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		saldoInicialDiferidoFiltroID.afterClass();
 
 	}
+	@Test(priority = 106)
+	public void saldoInicialDiferidoExcluirMassa() {
 
+		saldoInicialDiferidoExcluirMassa = new SaldoInicialDiferidoExcluirMassa();
+		saldoInicialDiferidoExcluirMassa.beforeClass();
+		saldoInicialDiferidoExcluirMassa.login();
+		saldoInicialDiferidoExcluirMassa.acessarMDR();
+		saldoInicialDiferidoExcluirMassa.criar();
+		saldoInicialDiferidoExcluirMassa.afterClass();
+
+	}
 	@Test(priority = 107)
 	public void saldoInicialDiferidoExcluir() {
 

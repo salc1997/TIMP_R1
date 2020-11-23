@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-
 public class TestBaseMassiel extends TestBaseSteven {
 
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();

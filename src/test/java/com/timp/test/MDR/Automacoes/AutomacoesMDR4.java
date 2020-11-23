@@ -17,6 +17,7 @@ import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanc
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraEditar;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluir;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizar;
+import com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir;
@@ -326,7 +327,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	InclusaoDeCamposMarExcluir inclusaoDeCamposMarExcluir;
 	InclusaoDeCamposMarFiltrosAvançados inclusaoDeCamposMarFiltrosAvançados;
 	InclusaoDeCamposMarVisualizar inclusaoDeCamposMarVisualizar;
-
+	
+	// Eventos e-social > S1060 - Ambientes de Trabalho
+	S1060AmbientesDeTrablhoExcluirMassa s1060AmbientesDeTrablhoExcluirMassa;
+	
 	// Eventos e-social > S1200 Remuneracao De Trabalhador...
 	S1200RemuneracaoDeTrabalhadorCriar s1200RemuneracaoDeTrabalhadorCriar;
 	S1200RemuneracaoDeTrabalhadorDetalhes s1200RemuneracaoDeTrabalhadorDetalhes;
@@ -2899,9 +2903,26 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//258
+		//Eventos e-Social	S1060 > Ambientes de Trabalho
 
+		
+		
+		@Test(priority = 262)
+		public void S1060AmbientesDeTrablhoExcluirMassa() {
+			
+			s1060AmbientesDeTrablhoExcluirMassa = new S1060AmbientesDeTrablhoExcluirMassa();
+			s1060AmbientesDeTrablhoExcluirMassa.beforeClass();
+			s1060AmbientesDeTrablhoExcluirMassa.login();
+			s1060AmbientesDeTrablhoExcluirMassa.acessarMDR();
+			s1060AmbientesDeTrablhoExcluirMassa.criar();
+			s1060AmbientesDeTrablhoExcluirMassa.afterClass();
+			
+			System.out.println("-------------------Eventos e-Social	S1060 > Ambientes de Trabalho Fim-------------------------");
+			
+
+		}
 	
-		//276
+		//262
 
 
 }

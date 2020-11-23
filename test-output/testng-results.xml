@@ -2,32 +2,62 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-11-23T17:31:32Z" name="Default suite" finished-at="2020-11-23T17:33:54Z" duration-ms="142136">
+=======
+  <suite started-at="2020-11-23T19:51:13Z" name="Default suite" finished-at="2020-11-23T19:53:40Z" duration-ms="147157">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-11-23T17:31:32Z" name="Default test" finished-at="2020-11-23T17:33:54Z" duration-ms="142136">
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:31:32Z" name="beforeClass" finished-at="2020-11-23T14:31:44Z" duration-ms="12030" status="PASS">
+=======
+    <test started-at="2020-11-23T19:51:13Z" name="Default test" finished-at="2020-11-23T19:53:40Z" duration-ms="147157">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:51:13Z" name="beforeClass" finished-at="2020-11-23T13:51:26Z" duration-ms="12526" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:31:44Z" name="login" finished-at="2020-11-23T14:31:51Z" duration-ms="6368" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:51:26Z" name="login" finished-at="2020-11-23T13:51:33Z" duration-ms="7564" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:31:51Z" name="acessarBRE" finished-at="2020-11-23T14:32:03Z" duration-ms="12185" status="PASS">
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:51:33Z" name="acessarBRE" finished-at="2020-11-23T13:51:48Z" duration-ms="14717" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarBRE -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:32:03Z" name="criar" finished-at="2020-11-23T14:33:54Z" duration-ms="111522" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:51:48Z" name="criar" finished-at="2020-11-23T13:53:40Z" duration-ms="112333" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:33:54Z" name="afterClass" finished-at="2020-11-23T14:33:54Z" duration-ms="1" status="PASS">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:53:40Z" name="afterClass" finished-at="2020-11-23T13:53:40Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos -->
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

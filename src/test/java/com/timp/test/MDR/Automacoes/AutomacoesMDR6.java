@@ -75,10 +75,6 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExclui
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 import com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar;
@@ -91,10 +87,6 @@ import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.Observaçõ
 import com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
@@ -244,11 +236,10 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		//Valor Adicionado > Município
 			MunicipioExcluirEmMassa municipioExcluirEmMassa;
 			
-<<<<<<< HEAD
-=======
+
 		//Incentivos Fiscais > Projetos Patrocinados
 			IncentivosFiscaisExcluirMassaPP incentivosFiscaisExcluirMassaPP;
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
 
 		//Siscoserv  > Registro RVS
 			RegistroRVSExcluirEmMassa registroRVSExcluirEmMassa;
@@ -260,8 +251,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			DiagnosticoDeProcessosExcluir diagnosticoDeProcessosExcluir;
 			DiagnosticoDeProcessosExcluirEmMassa diagnosticoDeProcessosExcluirEmMassa;
 
-<<<<<<< HEAD
-=======
 		//Controle de Crédito Tributário > Status para Banco de Indébitos
 			statusParaBancoIndébitosCriar StatusParaBancoIndébitosCriar;
 			StatusParaBancoIndébitosEditar statusParaBancoIndébitosEditar;
@@ -269,7 +258,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			StatusParaBancoIndébitosVisualizar statusParaBancoIndébitosVisualizar;
 			StatusParaBancoIndébitosExcluir statusParaBancoIndébitosExcluir;
 		
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
 		//Siscoserv > Registro RF
 			RegistroRFExcluirEmMassa registroRFExcluirEmMassa;
 		
@@ -1150,7 +1139,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				municipioExcluirEmMassa.criar();
 				municipioExcluirEmMassa.afterClass();
 			}
-<<<<<<< HEAD
+
 			//Incentivos Fiscais > Projetos Patrocinados
 			//86
 			

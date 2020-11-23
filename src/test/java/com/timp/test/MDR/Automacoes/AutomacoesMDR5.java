@@ -89,6 +89,7 @@ import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVincu
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir;
+import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFCriar;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFDetalhes;
@@ -169,6 +170,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	RelacionamentoEntreQuadrosEditar relacionamentoEntreQuadrosEditar;
 	RelacionamentoEntreQuadrosExcluir relacionamentoEntreQuadrosExcluir;
 	RelacionamentoEntreQuadrosFiltroID relacionamentoEntreQuadrosFiltroID;
+	RelacionamentoEntreQuadrosExcluirMassa relacionamentoEntreQuadrosExcluirMassa;
 	
 	//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
 	
@@ -848,6 +850,18 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			relacionamentoEntreQuadrosExcluir.acessarMDR();
 			relacionamentoEntreQuadrosExcluir.excluir();
 			relacionamentoEntreQuadrosExcluir.afterClass();
+
+		}
+		
+		@Test(priority = 73)
+		public void relacionamentoEntreQuadrosExcluirMassa() {
+
+			relacionamentoEntreQuadrosExcluirMassa = new RelacionamentoEntreQuadrosExcluirMassa();
+			relacionamentoEntreQuadrosExcluirMassa.beforeClass();
+			relacionamentoEntreQuadrosExcluirMassa.login();
+			relacionamentoEntreQuadrosExcluirMassa.acessarMDR();
+			relacionamentoEntreQuadrosExcluirMassa.criar();
+			relacionamentoEntreQuadrosExcluirMassa.afterClass();
 
 			System.out.println("-------------------SCANC > Relacionamento entre Quadros Fin-------------------------");
 		}

@@ -1,9 +1,12 @@
+<<<<<<< HEAD
+=======
 
 
 
 
 
 
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
 package com.sap.timp.base;
 
@@ -541,22 +544,11 @@ public class TestBaseSteven {
 	
 	//BCB
 	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
-	public String Acessar = "Erro ao tentar acessar ao componente";
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public String Acessar = "Erro ao tentar acessar ao componente";	
 	
 	
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

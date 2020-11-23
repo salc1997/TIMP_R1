@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class IncentivosFiscaisExcluirMassaPO extends TestBaseCristhian {
+public class IncentivosFiscaisExcluirMassaPPPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//ul[@class=\"accordion\"]/li[contains(@identifier,\"accordion-item-incentivosFiscais\")]/div/span[2]")
 	public WebElement incentivosFiscais;
@@ -89,7 +89,7 @@ public class IncentivosFiscaisExcluirMassaPO extends TestBaseCristhian {
 	@FindBy(xpath="//body")
 	public WebElement clickFuera;
 	
-	public IncentivosFiscaisExcluirMassaPO() {
+	public IncentivosFiscaisExcluirMassaPPPO() {
 
 		PageFactory.initElements(driver, this);
 	}

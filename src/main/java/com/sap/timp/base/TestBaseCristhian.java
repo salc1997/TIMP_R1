@@ -17,8 +17,11 @@ public class TestBaseCristhian extends TestBaseSteven{
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 

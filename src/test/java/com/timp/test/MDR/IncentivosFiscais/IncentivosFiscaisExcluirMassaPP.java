@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassaPO;
-import com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisExcluirMassaPO;
+import com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisExcluirMassaPPPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,10 +14,10 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class IncentivosFiscaisExcluirMassa extends TestBaseCristhian{
+public class IncentivosFiscaisExcluirMassaPP extends TestBaseCristhian{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	IncentivosFiscaisExcluirMassaPO incentivosFiscaisExcluirMassaPO;
+	IncentivosFiscaisExcluirMassaPPPO incentivosFiscaisExcluirMassaPPPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,12 +25,12 @@ public class IncentivosFiscaisExcluirMassa extends TestBaseCristhian{
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		incentivosFiscaisExcluirMassaPO = new IncentivosFiscaisExcluirMassaPO();
+		incentivosFiscaisExcluirMassaPPPO = new IncentivosFiscaisExcluirMassaPPPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -49,10 +49,10 @@ public class IncentivosFiscaisExcluirMassa extends TestBaseCristhian{
 	@Test(priority = 2)
 	public void criar() {
 
-		boolean sucesso = incentivosFiscaisExcluirMassaPO.criar();
+		boolean sucesso = incentivosFiscaisExcluirMassaPPPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
-		boolean sucesso2 = incentivosFiscaisExcluirMassaPO.excluir();
+		boolean sucesso2 = incentivosFiscaisExcluirMassaPPPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}

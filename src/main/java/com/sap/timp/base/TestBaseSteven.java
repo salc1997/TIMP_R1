@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-
 package com.sap.timp.base;
 
 import java.awt.AWTException;
@@ -548,7 +538,3 @@ public class TestBaseSteven {
 	
 	
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

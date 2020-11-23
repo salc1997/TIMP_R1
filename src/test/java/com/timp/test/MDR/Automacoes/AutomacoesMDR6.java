@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroCriarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluirEmMassaPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoCriarPO;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa;
@@ -27,8 +28,15 @@ import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLi
 import com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluirEmMassa;
 import com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluirEmMassa;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFFiltroPorID;
 import com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluirEmMassa;
+import com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar;
+import com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosEditar;
+import com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluir;
@@ -67,6 +75,20 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExclui
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
+
+import com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar;
+import com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuracaoXSpedFiscalExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçõesdoDocumentoFiscalExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
+
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
@@ -218,13 +240,53 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			
 		//Incentivos Fiscais > Projetos Patrocinados
 			IncentivosFiscaisExcluirMassaPP incentivosFiscaisExcluirMassaPP;
-			
+
+		//Siscoserv  > Registro RVS
+			RegistroRVSExcluirEmMassa registroRVSExcluirEmMassa;
+
+		//Tabela De Apoio E Social Diagnostico De Processos
+			DiagnosticoDeProcessosCriar diagnosticoDeProcessosCriar;
+			DiagnosticoDeProcessosEditar diagnosticoDeProcessosEditar;
+			DiagnosticoDeProcessosVisualizar diagnosticoDeProcessosVisualizar;
+			DiagnosticoDeProcessosExcluir diagnosticoDeProcessosExcluir;
+			DiagnosticoDeProcessosExcluirEmMassa diagnosticoDeProcessosExcluirEmMassa;
+
 		//Controle de Crédito Tributário > Status para Banco de Indébitos
 			statusParaBancoIndébitosCriar StatusParaBancoIndébitosCriar;
 			StatusParaBancoIndébitosEditar statusParaBancoIndébitosEditar;
 			StatusParaBancoIndébitosExcluirMassa statusParaBancoIndébitosExcluirMassa;
 			StatusParaBancoIndébitosVisualizar statusParaBancoIndébitosVisualizar;
 			StatusParaBancoIndébitosExcluir statusParaBancoIndébitosExcluir;
+		
+		//Siscoserv > Registro RF
+			RegistroRFExcluirEmMassa registroRFExcluirEmMassa;
+		
+		//Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	
+			CodigoDeTreinamentoESimulacoesDeExerciciosCriar codigoDeTreinamentoESimulacoesDeExerciciosCriar;
+			CodigoDeTreinamentoESimulacoesDeExerciciosEditar codigoDeTreinamentoESimulacoesDeExerciciosEditar;
+			CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar codigoDeTreinamentoESimulacoesDeExerciciosVisualizar;
+			CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa;
+		
+		//Tabela De Apoio E Social Tabela28 - Dados De RAT
+			DadosDeRATExcluirEmMassa dadosDeRATExcluirEmMassa;
+			
+		//Tabela Apoio SPED > Tabela Codigo Da Situação Tributária
+			TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
+		//Tabela Apoio SPED > Codigo Tipo Credito
+			CodigoTipoCreditoExcluirEmMassa codigoTipoCreditoExcluirEmMassa;
+			
+		//Tabela Apoio SPED > Observacoes do Documento Fiscal Registro 0460
+			ObservaçõesdoDocumentoFiscalExcluirEmMassa observaçõesdoDocumentoFiscalExcluirEmMassa;
+		
+		//Tabela Apoio SPED >Tipos De Utilização Dos Creditos Fiscais
+			TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa;
+			
+		//TabelaApoioSPED > De Para Livro Apuracao X Sped Fiscal
+			DeParaLivroApuracaoXSpedFiscalExcluirEmMassa deParaLivroApuracaoXSpedFiscalExcluirEmMassa;
+		
+		//Tabela Apoio SPED > Codigos Das Obrigacoes De ICMS a Recolher
+			CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa;
+
 			
 		//--------------------------------------------------------------------------
 			
@@ -1076,6 +1138,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				municipioExcluirEmMassa.criar();
 				municipioExcluirEmMassa.afterClass();
 			}
+<<<<<<< HEAD
 			//Incentivos Fiscais > Projetos Patrocinados
 			//86
 			
@@ -1145,4 +1208,217 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");
 			}
 			//95
+
+			//Siscoserv  > Registro RVS
+			
+			@Test(priority = 86)
+			public void registroRVSExcluirEmMassa() {
+				System.out.println("-------------------Siscoserv  > Registro RVS-------------------------");
+				registroRVSExcluirEmMassa = new RegistroRVSExcluirEmMassa();
+				registroRVSExcluirEmMassa.beforeClass();
+				registroRVSExcluirEmMassa.login();
+				registroRVSExcluirEmMassa.acessarMDR();
+				registroRVSExcluirEmMassa.criar();
+				registroRVSExcluirEmMassa.afterClass();
+			}
+			//Tabela De Apoio E Social > Diagnostico De Processos
+			
+			@Test(priority = 87)
+			public void diagnosticoDeProcessosCriar() {
+				System.out.println("-------------------Tabela De Apoio E Social > Diagnostico De Processos-------------------------");
+				diagnosticoDeProcessosCriar = new DiagnosticoDeProcessosCriar();
+				diagnosticoDeProcessosCriar.beforeClass();
+				diagnosticoDeProcessosCriar.login();
+				diagnosticoDeProcessosCriar.acessarMDR();
+				diagnosticoDeProcessosCriar.criar();
+				diagnosticoDeProcessosCriar.afterClass();
+			}
+			
+			@Test(priority = 88)
+			public void diagnosticoDeProcessosEditar() {
+				diagnosticoDeProcessosEditar = new DiagnosticoDeProcessosEditar();
+				diagnosticoDeProcessosEditar.beforeClass();
+				diagnosticoDeProcessosEditar.login();
+				diagnosticoDeProcessosEditar.acessarMDR();
+				diagnosticoDeProcessosEditar.editar();
+				diagnosticoDeProcessosEditar.afterClass();
+			}
+			
+		
+			@Test(priority = 89)
+			public void diagnosticoDeProcessosVisualizar() {
+				diagnosticoDeProcessosVisualizar = new DiagnosticoDeProcessosVisualizar();
+				diagnosticoDeProcessosVisualizar.beforeClass();
+				diagnosticoDeProcessosVisualizar.login();
+				diagnosticoDeProcessosVisualizar.acessarMDR();
+				diagnosticoDeProcessosVisualizar.Visualizar();
+				diagnosticoDeProcessosVisualizar.afterClass();
+			}
+			
+			@Test(priority = 90)
+			public void diagnosticoDeProcessosExcluir() {
+				diagnosticoDeProcessosExcluir = new DiagnosticoDeProcessosExcluir();
+				diagnosticoDeProcessosExcluir.beforeClass();
+				diagnosticoDeProcessosExcluir.login();
+				diagnosticoDeProcessosExcluir.acessarMDR();
+				diagnosticoDeProcessosExcluir.excluir();
+				diagnosticoDeProcessosExcluir.afterClass();
+			}
+			
+			@Test(priority = 91)
+			public void diagnosticoDeProcessosExcluirEmMassa() {
+				diagnosticoDeProcessosExcluirEmMassa = new DiagnosticoDeProcessosExcluirEmMassa();
+				diagnosticoDeProcessosExcluirEmMassa.beforeClass();
+				diagnosticoDeProcessosExcluirEmMassa.login();
+				diagnosticoDeProcessosExcluirEmMassa.acessarMDR();
+				diagnosticoDeProcessosExcluirEmMassa.criar();
+				diagnosticoDeProcessosExcluirEmMassa.afterClass();
+				System.out.println("-------------------Tabela De Apoio E Social > Diagnostico De Processos Fim-------------------------");
+				
+			}
+			
+			//Siscoserv > Registro RF
+			@Test(priority = 92)	
+			public void registroRFExcluirEmMassa() {
+				System.out.println("-------------------Siscoserv > Registro RF-------------------------");
+				registroRFExcluirEmMassa = new RegistroRFExcluirEmMassa();
+				registroRFExcluirEmMassa.beforeClass();
+				registroRFExcluirEmMassa.login();
+				registroRFExcluirEmMassa.acessarMDR();
+				registroRFExcluirEmMassa.criar();
+				registroRFExcluirEmMassa.afterClass();
+			}
+			//Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	
+			
+			@Test(priority = 93)	
+			public void codigoDeTreinamentoESimulacoesDeExerciciosCriar() {
+				System.out.println("-------------------Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	-------------------------");
+				codigoDeTreinamentoESimulacoesDeExerciciosCriar = new CodigoDeTreinamentoESimulacoesDeExerciciosCriar();
+				codigoDeTreinamentoESimulacoesDeExerciciosCriar.beforeClass();
+				codigoDeTreinamentoESimulacoesDeExerciciosCriar.login();
+				codigoDeTreinamentoESimulacoesDeExerciciosCriar.acessarMDR();
+				codigoDeTreinamentoESimulacoesDeExerciciosCriar.criar();
+				codigoDeTreinamentoESimulacoesDeExerciciosCriar.afterClass();
+			}
+			
+			@Test(priority = 94)	
+			public void codigoDeTreinamentoESimulacoesDeExerciciosEditar() {
+				codigoDeTreinamentoESimulacoesDeExerciciosEditar = new CodigoDeTreinamentoESimulacoesDeExerciciosEditar();
+				codigoDeTreinamentoESimulacoesDeExerciciosEditar.beforeClass();
+				codigoDeTreinamentoESimulacoesDeExerciciosEditar.login();
+				codigoDeTreinamentoESimulacoesDeExerciciosEditar.acessarMDR();
+				codigoDeTreinamentoESimulacoesDeExerciciosEditar.editar();
+				codigoDeTreinamentoESimulacoesDeExerciciosEditar.afterClass();
+			}
+			
+			@Test(priority = 95)	
+			public void codigoDeTreinamentoESimulacoesDeExerciciosVisualizar() {
+				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar= new CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar();
+				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.beforeClass();
+				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.login();
+				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.acessarMDR();
+				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.Visualizar();
+				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.afterClass();
+			}
+
+			@Test(priority = 96)	
+			public void codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa() {
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa= new CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.beforeClass();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.login();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.acessarMDR();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.criar();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.afterClass();
+				System.out.println("-------------------Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	Fim-------------------------");
+				
+			}
+			
+		//Tabela De Apoio E Social Tabela28 - Dados De RAT
+			@Test(priority = 97)	
+			public void dadosDeRATExcluirEmMassa() {
+				System.out.println("-------------------Tabela De Apoio E Social Tabela28 - Dados De RAT-------------------------");
+				dadosDeRATExcluirEmMassa = new DadosDeRATExcluirEmMassa();
+				dadosDeRATExcluirEmMassa.beforeClass();
+				dadosDeRATExcluirEmMassa.login();
+				dadosDeRATExcluirEmMassa.acessarMDR();
+				dadosDeRATExcluirEmMassa.criar();
+				dadosDeRATExcluirEmMassa.afterClass();
+			}
+		//Tabela Apoio SPED > Tabela Codigo Da Situação Tributária
+			
+			@Test(priority = 98)	
+			public void tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa() {
+				System.out.println("-------------------Tabela Apoio SPED > Tabela Codigo Da Situação Tributária-------------------------");
+				tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa = new TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa();
+				tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.beforeClass();
+				tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.login();
+				tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.acessarMDR();
+				tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.criar();
+				tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.afterClass();
+			}
+			
+			//Tabela Apoio SPED > Codigo Tipo Credito
+			
+			@Test(priority = 99)	
+			public void codigoTipoCreditoExcluirEmMassa() {
+				System.out.println("-------------------Tabela Apoio SPED > Codigo Tipo Credito-------------------------");
+				codigoTipoCreditoExcluirEmMassa = new CodigoTipoCreditoExcluirEmMassa();
+				codigoTipoCreditoExcluirEmMassa.beforeClass();
+				codigoTipoCreditoExcluirEmMassa.login();
+				codigoTipoCreditoExcluirEmMassa.acessarMDR();
+				codigoTipoCreditoExcluirEmMassa.criar();
+				codigoTipoCreditoExcluirEmMassa.afterClass();
+			}
+			
+			//Tabela Apoio SPED > Observacoes do Documento Fiscal Registro 0460
+			
+			@Test(priority = 100)	
+			public void observaçõesdoDocumentoFiscalExcluirEmMassa() {
+				System.out.println("-------------------Tabela Apoio SPED > Observacoes do Documento Fiscal Registro 0460-------------------------");
+				observaçõesdoDocumentoFiscalExcluirEmMassa = new ObservaçõesdoDocumentoFiscalExcluirEmMassa();
+				observaçõesdoDocumentoFiscalExcluirEmMassa.beforeClass();
+				observaçõesdoDocumentoFiscalExcluirEmMassa.login();
+				observaçõesdoDocumentoFiscalExcluirEmMassa.acessarMDR();
+				observaçõesdoDocumentoFiscalExcluirEmMassa.criar();
+				observaçõesdoDocumentoFiscalExcluirEmMassa.afterClass();
+			}
+			
+			//Tabela Apoio SPED > Tipos De Utilização Dos Creditos Fiscais
+			
+			@Test(priority = 101)	
+			public void tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa() {
+				System.out.println("-------------------Tabela Apoio SPED > Tipos De Utilização Dos Creditos Fiscais-------------------------");
+				tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa = new TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa();
+				tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.beforeClass();
+				tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.login();
+				tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.acessarMDR();
+				tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.criar();
+				tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.afterClass();
+			}
+			
+			//TabelaApoioSPED > De Para Livro Apuracao X Sped Fiscal
+			
+			@Test(priority = 102)	
+			public void deParaLivroApuracaoXSpedFiscalExcluirEmMassa() {
+				System.out.println("-------------------TabelaApoioSPED > De Para Livro Apuracao X Sped Fiscal-------------------------");
+				deParaLivroApuracaoXSpedFiscalExcluirEmMassa = new DeParaLivroApuracaoXSpedFiscalExcluirEmMassa();
+				deParaLivroApuracaoXSpedFiscalExcluirEmMassa.beforeClass();
+				deParaLivroApuracaoXSpedFiscalExcluirEmMassa.login();
+				deParaLivroApuracaoXSpedFiscalExcluirEmMassa.acessarMDR();
+				deParaLivroApuracaoXSpedFiscalExcluirEmMassa.criar();
+				deParaLivroApuracaoXSpedFiscalExcluirEmMassa.afterClass();
+			}
+			//Tabela Apoio SPED > Codigos Das Obrigacoes De ICMS a Recolher
+			
+			@Test(priority = 103)	
+			public void codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa() {
+				System.out.println("-------------------Tabela Apoio SPED > Codigos Das Obrigacoes De ICMS a Recolher-------------------------");
+				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa = new CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa();
+				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.beforeClass();
+				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.login();
+				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.acessarMDR();
+				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.criar();
+				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.afterClass();
+			}
+
 }

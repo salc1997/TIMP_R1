@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
 =======
 <<<<<<< HEAD
@@ -14,8 +17,12 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2020-11-19T20:49:47Z" name="Default suite" finished-at="2020-11-19T20:51:52Z" duration-ms="124764">
+=======
 <<<<<<< HEAD
   <suite started-at="2020-11-22T18:52:53Z" name="Default suite" finished-at="2020-11-22T18:56:29Z" duration-ms="215882">
 =======
@@ -37,8 +44,14 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2020-11-19T20:49:47Z" name="Default test" finished-at="2020-11-19T20:51:52Z" duration-ms="124764">
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:49:47Z" name="beforeClass" finished-at="2020-11-19T17:50:00Z" duration-ms="13125" status="PASS">
+=======
 <<<<<<< HEAD
     <test started-at="2020-11-22T18:52:53Z" name="Default test" finished-at="2020-11-22T18:56:29Z" duration-ms="215882">
       <class name="com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa">
@@ -72,9 +85,13 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:50:00Z" name="login" finished-at="2020-11-19T17:50:08Z" duration-ms="7798" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:53:07Z" name="login" finished-at="2020-11-22T15:53:15Z" duration-ms="7300" status="PASS">
 =======
@@ -175,9 +192,13 @@ Session ID: 7476273c1fb8effac582dab3d85762f3
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:50:08Z" name="acessarMDR" finished-at="2020-11-19T17:50:24Z" duration-ms="16201" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:53:15Z" name="acessarMDR" finished-at="2020-11-22T15:53:39Z" duration-ms="24226" status="PASS">
 =======
@@ -278,6 +299,7 @@ Caused by: java.net.ConnectException: Connection refused: no further information
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa@ed7f8b4]" started-at="2020-11-19T13:43:25Z" name="login" finished-at="2020-11-19T13:43:31Z" duration-ms="6661" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -298,6 +320,9 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 <<<<<<< HEAD
 =======
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:50:24Z" name="criar" finished-at="2020-11-19T17:51:48Z" duration-ms="83308" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa@ed7f8b4]" started-at="2020-11-22T15:53:39Z" name="criar" finished-at="2020-11-22T15:56:29Z" duration-ms="170435" status="FAIL">
           <exception class="java.lang.AssertionError">
@@ -345,8 +370,13 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa@54c5a2ff]" started-at="2020-11-19T17:51:48Z" name="afterClass" finished-at="2020-11-19T17:51:52Z" duration-ms="4320" status="PASS">
+=======
 <<<<<<< HEAD
         </test-method> <!-- filtro -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="64" started-at="2020-11-20T11:58:04Z" finished-at="2020-11-20T11:58:04Z">
@@ -622,9 +652,13 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa -->
 =======
@@ -641,6 +675,7 @@ Caused by: java.net.ConnectException: Connection refused: no further information
       </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa -->
 =======
       </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

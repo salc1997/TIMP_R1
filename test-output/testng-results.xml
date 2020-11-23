@@ -3,16 +3,26 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite started-at="2020-11-23T20:20:00Z" name="Default suite" finished-at="2020-11-23T20:23:17Z" duration-ms="197664">
+=======
+  <suite started-at="2020-11-23T17:31:32Z" name="Default suite" finished-at="2020-11-23T17:33:54Z" duration-ms="142136">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
   <suite started-at="2020-11-23T19:51:13Z" name="Default suite" finished-at="2020-11-23T19:53:40Z" duration-ms="147157">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <test started-at="2020-11-23T20:20:00Z" name="Default test" finished-at="2020-11-23T20:23:17Z" duration-ms="197664">
       <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa@54c5a2ff]" started-at="2020-11-23T17:20:00Z" name="beforeClass" finished-at="2020-11-23T17:20:14Z" duration-ms="14299" status="PASS">
+=======
+    <test started-at="2020-11-23T17:31:32Z" name="Default test" finished-at="2020-11-23T17:33:54Z" duration-ms="142136">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:31:32Z" name="beforeClass" finished-at="2020-11-23T14:31:44Z" duration-ms="12030" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
     <test started-at="2020-11-23T19:51:13Z" name="Default test" finished-at="2020-11-23T19:53:40Z" duration-ms="147157">
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho">
@@ -22,7 +32,11 @@
           </reporter-output>
         </test-method> <!-- beforeClass -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa@54c5a2ff]" started-at="2020-11-23T17:20:14Z" name="login" finished-at="2020-11-23T17:20:23Z" duration-ms="9312" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:31:44Z" name="login" finished-at="2020-11-23T14:31:51Z" duration-ms="6368" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:51:26Z" name="login" finished-at="2020-11-23T13:51:33Z" duration-ms="7564" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -30,7 +44,11 @@
           </reporter-output>
         </test-method> <!-- login -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa@54c5a2ff]" started-at="2020-11-23T17:20:23Z" name="acessarMDR" finished-at="2020-11-23T17:20:35Z" duration-ms="11706" status="PASS">
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:31:51Z" name="acessarBRE" finished-at="2020-11-23T14:32:03Z" duration-ms="12185" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:51:33Z" name="acessarBRE" finished-at="2020-11-23T13:51:48Z" duration-ms="14717" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -41,13 +59,20 @@
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa@54c5a2ff]" started-at="2020-11-23T17:20:35Z" name="criar" finished-at="2020-11-23T17:23:17Z" duration-ms="162335" status="PASS">
 =======
         </test-method> <!-- acessarBRE -->
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:32:03Z" name="criar" finished-at="2020-11-23T14:33:54Z" duration-ms="111522" status="PASS">
+=======
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:51:48Z" name="criar" finished-at="2020-11-23T13:53:40Z" duration-ms="112333" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa@54c5a2ff]" started-at="2020-11-23T17:23:17Z" name="afterClass" finished-at="2020-11-23T17:23:17Z" duration-ms="0" status="PASS">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos@4c309d4d]" started-at="2020-11-23T14:33:54Z" name="afterClass" finished-at="2020-11-23T14:33:54Z" duration-ms="1" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@10f7f7de]" started-at="2020-11-23T13:53:40Z" name="afterClass" finished-at="2020-11-23T13:53:40Z" duration-ms="0" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -55,7 +80,11 @@
           </reporter-output>
         </test-method> <!-- afterClass -->
 <<<<<<< HEAD
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

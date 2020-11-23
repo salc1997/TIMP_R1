@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.BRE;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -20,20 +21,69 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button/span[contains(text(),\"Nova Regra\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/table/tbody/tr[2]/td[2]/div/div/input")
+	@FindBy(xpath = "//td[@colspan=\"6\" and @class=\"title-field\"]/div[1]/div/input")
 	public WebElement nome;
 	
-	@FindBy(xpath = "//textarea[contains(@placeholder,\"Descrição\")]")
-	public WebElement descricao;
+	@FindBy(xpath = "//input[@placeholder=\" selecionar o tipo da Regra\"]")
+	public WebElement tipoDeRegra;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar o grupo de Estruturas de Dados\"]")
+	public WebElement grupo;
+	
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Estrutura de Dados\"]")
+	public WebElement estructura;
+	
+	@FindBy(xpath = "//li[@id=\"option-2\"]")
+	public WebElement opcTipoDeRegra;
+	
+	@FindBy(xpath = "//li[@id=\"option-3\"]")
+	public WebElement opcGrupo;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcEstructura;
+	
+	@FindBy(xpath = "//input[@placeholder=\" selecionar o Tributo\"]")
+	public WebElement tipoTributo;
+	
+	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
+	public WebElement opcionTipoTributo;
+	
+	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/table/tbody/tr[31]/td[2]/div/div[1]/input")
 	public WebElement validade;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
+	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	public WebElement aplicar;
+	
+	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
+	public WebElement justi;
+	
+	
+	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
+	public WebElement adicionar;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[1]/div/div[1]/input")
+	public WebElement condicoes;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Operador\"]")
+	public WebElement operador;
+	
+	@FindBy(xpath = "//div[@id=\"option-2\"]")
+	public WebElement opcOperador;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[4]/div/div[1]/input")
+	public WebElement condicoes2;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[4]/div[2]/div[1]/div/div[1]/input")
+	public WebElement acoes;
+	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
@@ -47,6 +97,8 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
+	@FindBy(xpath = "//*[@id=\"justification\"]/div/textarea")
+	public WebElement agg;
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -85,34 +137,94 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 		
 		novo.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	
+		sleep(6000);
+		
+		nome.sendKeys("PRUEBA QA 003");
 		sleep(2000);
 		
-		nome.sendKeys("PRUEBA QA 07");
+		
+		tipoDeRegra.click();
+		sleep(3000);
+		opcTipoDeRegra.click();
+		sleep(3000);
+		
+		tipoTributo.click();
+		sleep(3000);
+		opcionTipoTributo.click();
 		sleep(1000);
-		descricao.sendKeys("Test de QA para excluir");
-		sleep(1000);
+		opcionTipoTributo.sendKeys(Keys.ESCAPE);
+		sleep(3000);
+		
+		grupo.click();
+		sleep(3000);
+		opcGrupo.click();
+		sleep(3000);
+		
+		estructura.click();
+		sleep(3000);
+		opcEstructura.click();
+		sleep(3000);
 		
 		String data = fechaActual();
-		validade.sendKeys(data);
+		validade.sendKeys("01/01/2013");
 		sleep(1000);
 		
 		sleep(2000);
-		gravar.click();
+		aplicar.click();
 		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		waitExpectElement(adicionar);
 		sleep(2000);
+		adicionar.click();
+		
+		sleep(2000);
+		condicoes.sendKeys("Alíquota ICMS (ED)");
+		sleep(2000);
+		condicoes.sendKeys(Keys.ENTER);
+		sleep(2000);
+		
+		operador.click();
+		sleep(2000);
+		opcOperador.click();
+		sleep(2000);
+		
+		condicoes2.sendKeys("Alíquota COFINS (ED)");
+		sleep(2000);
+		condicoes2.sendKeys(Keys.ENTER);
+		sleep(2000);
+		
+		acoes.sendKeys("Alíquotas não apresentam valores iguais");
+		sleep(2000);
+		closeSelectTypeCheckbox(acoes);
+		
+		sleep(2000);
+		aplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		justi.click();
+		sleep(3000);
+		agg.sendKeys("Teste Criação");
+		sleep(2000);
+		
+		aceitar.click();
+
+		sleep(2000);
+		
 		biblioteca.click();
 		
 		sleep(2000);
+		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+		sleep(2000);
+		AN2.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

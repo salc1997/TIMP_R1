@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS;
+package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.DiagnosticoDeProcessos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,44 +7,29 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
  
-public class RegistroRVSExcluirEmMassaPO extends TestBaseEliel{
+public class DiagnosticoDeProcessosExcluirEmMassaPO extends TestBaseEliel {
 	
-	@FindBy(xpath = "//span[text()=\"Siscoserv\"]")
-	public WebElement siscoserv;
+	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
+	public WebElement tabelaApoio;
 	
-	@FindBy(xpath = "//span[text()=\"Registro RVS\"]")
-	public WebElement registrorvs;
-	
+	@FindBy(xpath = "//span[text()=\"Diagnóstico de Processos\"]")
+	public WebElement diagnosticodeprocessos;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
-	public WebElement empresa;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de Diagnostico\"]")
+	public WebElement codigo;
 	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcao;
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
+	public WebElement descricao;
 	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher/Selecionar Período\"]")
-	public WebElement periodo;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número NIF\"]")
-	public WebElement numeronif;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número de Serviço\"]")
-	public WebElement numeroservico;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número do Registro de Crédito\"]")
-	public WebElement numerodoregistro;
-
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Número de Registro de Exportação\"]")
-	public WebElement numeroderegistroexpotacao;
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
+	public WebElement datainicio;
 	
 	
-	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
-	public WebElement gravar;
+	@FindBy(xpath = "//button/span[text()=\"Salvar e Novo\"]")
+	public WebElement gravarNovo;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -55,8 +40,6 @@ public class RegistroRVSExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//div[@class=\"tr\" and @data-id]/div[4]/div")
-	public WebElement motivo;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
@@ -67,21 +50,21 @@ public class RegistroRVSExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 
-	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
-	public WebElement mensagem;
+
 	
-	public RegistroRVSExcluirEmMassaPO() {
+	
+	public DiagnosticoDeProcessosExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean criar() {
+public boolean criar() {
 		
 		sleep(2000);
-		siscoserv.click();
+		tabelaApoio.click();
 		sleep(2000);
 		
-		registrorvs.click();
+		diagnosticodeprocessos.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -103,32 +86,14 @@ public class RegistroRVSExcluirEmMassaPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
-empresa.click();
 		
-		sleep(2000);
+		codigo.sendKeys("07");
+		sleep(1000);
+		descricao.sendKeys("Teste da Deescrição");
+		sleep(1000);
 		
-		opcao.click();
-		
-		sleep(2000);
-		
-		numeroservico.sendKeys("7");
-		
-		sleep(2000);
-		
-		periodo.sendKeys("10/2020");
-		
-		sleep(2000);
-		
-		numerodoregistro.sendKeys("7");
-		
-		sleep(2000);
-		
-		numeronif.sendKeys("7");
-		
-		
-		sleep(2000);
-		
-		numeroderegistroexpotacao.sendKeys("7");
+		String data = fechaActual();
+		datainicio.sendKeys(data);
 		sleep(2000);
 		novo.click();
 		sleep(2000);
@@ -141,32 +106,12 @@ empresa.click();
 		
 		//Segundo Registro
 		
-empresa.click();
+		codigo.sendKeys("07");
+		sleep(1000);
+		descricao.sendKeys("Teste da Deescrição");
+		sleep(1000);
 		
-		sleep(2000);
-		
-		opcao.click();
-		
-		sleep(2000);
-		
-		numeroservico.sendKeys("7");
-		
-		sleep(2000);
-		
-		periodo.sendKeys("10/2020");
-		
-		sleep(2000);
-		
-		numerodoregistro.sendKeys("7");
-		
-		sleep(2000);
-		
-		numeronif.sendKeys("7");
-		
-		
-		sleep(2000);
-		
-		numeroderegistroexpotacao.sendKeys("7");
+		datainicio.sendKeys(data);
 		
 		sleep(2000);
 		novo.click();

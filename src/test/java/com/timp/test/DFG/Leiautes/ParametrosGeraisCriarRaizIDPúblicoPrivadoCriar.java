@@ -1,0 +1,57 @@
+package com.timp.test.DFG.Leiautes;
+
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
+import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO;
+import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
+import com.timp.test.DFG.AcessarDFG;
+
+
+public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar extends TestBaseSteven{
+	LoginTC loginTC;
+	AcessarDFGPO acessarDFGPO;
+	ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO parametrosGeraisCriarRaizIDPúblicoPrivado;
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarDFGPO = new AcessarDFGPO();
+		parametrosGeraisCriarRaizIDPúblicoPrivado = new ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
+	public void ingresar() {
+		loginTC.login();
+	}
+
+	@Test(priority = 1)
+	public void mdrEntrar() {
+		acessarDFGPO.acessarDFG();
+
+	}
+
+	@Test(priority = 2)
+	public void criar() {
+		ArrayList<Boolean> sucesso =parametrosGeraisCriarRaizIDPúblicoPrivado.criar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
+}

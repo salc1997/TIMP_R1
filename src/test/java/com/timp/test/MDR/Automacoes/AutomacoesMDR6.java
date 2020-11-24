@@ -81,7 +81,6 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteEx
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
-
 import com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar;
@@ -94,7 +93,6 @@ import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.Observaçõ
 import com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
-
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
@@ -252,6 +250,9 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		//Valor Adicionado > Município
 			MunicipioExcluirEmMassa municipioExcluirEmMassa;
 			
+
+
+
 		//Incentivos Fiscais > Projetos Patrocinados
 			IncentivosFiscaisExcluirMassaPP incentivosFiscaisExcluirMassaPP;
 
@@ -265,13 +266,15 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			DiagnosticoDeProcessosExcluir diagnosticoDeProcessosExcluir;
 			DiagnosticoDeProcessosExcluirEmMassa diagnosticoDeProcessosExcluirEmMassa;
 
+
 		//Controle de Crédito Tributário > Status para Banco de Indébitos
 			statusParaBancoIndébitosCriar StatusParaBancoIndébitosCriar;
 			StatusParaBancoIndébitosEditar statusParaBancoIndébitosEditar;
 			StatusParaBancoIndébitosExcluirMassa statusParaBancoIndébitosExcluirMassa;
 			StatusParaBancoIndébitosVisualizar statusParaBancoIndébitosVisualizar;
 			StatusParaBancoIndébitosExcluir statusParaBancoIndébitosExcluir;
-		
+
+
 		//Siscoserv > Registro RF
 			RegistroRFExcluirEmMassa registroRFExcluirEmMassa;
 		
@@ -283,7 +286,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		
 		//Tabela De Apoio E Social Tabela28 - Dados De RAT
 			DadosDeRATExcluirEmMassa dadosDeRATExcluirEmMassa;
-			
+			*/
 		//Tabela Apoio SPED > Tabela Codigo Da Situação Tributária
 			TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 		//Tabela Apoio SPED > Codigo Tipo Credito
@@ -1218,7 +1221,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				municipioExcluirEmMassa.criar();
 				municipioExcluirEmMassa.afterClass();
 			}
-<<<<<<< HEAD
+
 			//Incentivos Fiscais > Projetos Patrocinados
 			//86
 			
@@ -1290,7 +1293,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			//95
 
 			//Siscoserv  > Registro RVS
-			
+		
 			@Test(priority = 86)
 			public void registroRVSExcluirEmMassa() {
 				System.out.println("-------------------Siscoserv  > Registro RVS-------------------------");

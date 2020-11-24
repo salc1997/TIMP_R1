@@ -28,6 +28,7 @@ public class ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar extends TestBas
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 package com.sap.timp.base;
 
 import java.awt.AWTException;
@@ -80,11 +76,7 @@ public class TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tc2);
-//		driver.get(tp1);
-//		driver.get(tq1);
-
-		driver.get(tq1);
+		driver.get(tp1);
 
 
 		return driver;
@@ -541,10 +533,4 @@ public class TestBaseSteven {
 	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
 	public String Acessar = "Erro ao tentar acessar ao componente";	
 	
-	
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

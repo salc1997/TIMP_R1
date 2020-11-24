@@ -28,7 +28,7 @@ public class TiposDeBeneficiosEditar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -45,6 +45,6 @@ public class TiposDeBeneficiosEditar extends TestBaseFernando{
 	@Test(priority = 2)
 	public void editar() {
 		boolean sucesso = tiposDeBeneficiosEditarPO.editar();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Editar);
 	}
 }

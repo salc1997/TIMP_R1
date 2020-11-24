@@ -30,6 +30,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoDetalhe extends TestBaseFern
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -43,7 +44,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoDetalhe extends TestBaseFern
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void detalhe() {
 		ArrayList<Boolean> sucesso = s1210PagamentosDeRendimientosDoTrabalhoDetalhePO.detalhe();
 		
 		for (int i = 0; i < sucesso.size(); i++) {

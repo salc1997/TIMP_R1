@@ -48,22 +48,27 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspVisu
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroExcluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesExcluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesExcluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar;
@@ -73,6 +78,7 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaVis
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa;
@@ -123,30 +129,35 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			NaturezaDasRubricasEditar naturezaDasRubricasEditar;
 			NaturezaDasRubricasVisualizar naturezaDasRubricasVisualizar;
 			NaturezaDasRubricasExcluir naturezaDasRubricasExcluir;
+			NaturezaDasRubricasExluirMassa naturezaDasRubricasExluirMassa;
 			
 		//Tabela 04 - Codigos E Aliq. De FPRAS
 			CodigosEAliqDeFPRASCriar codigosEAliqDeFPRASCriar;
 			CodigosEAliqDeFPRASEditar codigosEAliqDeFPRASEditar;
 			CodigosEAliqDeFPRASVisualizar codigosEAliqDeFPRASVisualizar;
 			CodigosEAliqDeFPRASExcluir codigosEAliqDeFPRASExcluir;
+			CodigosEAliqDeFPRASExcluirMassa codigosEAliqDeFPRASExcluirMassa;
 			
 		//Tabela 05 - Tipos de Registro
 			TiposDeRegistroCriar tiposDeRegistroCriar;
 			TiposDeRegistroEditar tiposDeRegistroEditar;
 			TiposDeRegistroVisualizar tiposDeRegistroVisualizar;
 			TiposDeRegistroExcluir tiposDeRegistroExcluir;
+			TiposDeRegistroExcluirMassa tiposDeRegistroExcluirMassa;
 			
 		//Tabela 06 - Paises
 			PaisesCriar paisesCriar;
 			PaisesEditar paisesEditar;
 			PaisesVisualizar paisesVisualizar;
 			PaisesExcluir paisesExcluir;
+			PaisesExcluirMassa paisesExcluirMassa;
 		
 		//Tabela 07 - Tipos de Dependentes
 			TiposDeDependentesCriar tiposDeDependentesCriar;
 			TiposDeDependentesEditar tiposDeDependentesEditar;
 			TiposDeDependentesVisualizar tiposDeDependentesVisualizar;
 			TiposDeDependentesExcluir tiposDeDependentesExcluir;
+			TiposDeDependentesExcluirMassa tiposDeDependentesExcluirMassa;
 			
 		//Codigo receita
 			CodigoReceitaExcluirEmMassa codigoReceitaExcluirEmMassa;
@@ -172,11 +183,13 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			TaxasDeConversaoVisualizar taxasDeConversaoVisualizar;
 			TaxasDeConversaoExcluir taxasDeConversaoExcluir;
 			TaxasDeConversaoExcluirEmMassa taxasDeConversaoExcluirEmMassa;
+			
 		//Thin Capitalization > Subcapitalizacao
 			SubcapitalizacaoCriar subcapitalizacaoCriar;
 			SubcapitalizacaoEditar subcapitalizacaoEditar;
 			SubcapitalizacaoExcluir subcapitalizacaoExcluir;
 			SubcapitalizacaoExcluirEmMassa subcapitalizacaoExcluirEmMassa;
+			
 		//Tabela De Apoio E Social > Tabela 17 - Descricao De Nat De Lesão
 			DescricaoDeNatDeLesãoExcluirEmMassa descricaoDeNatDeLesãoExcluirEmMassa;
 		
@@ -198,6 +211,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			AgenteCausadorDeAcidenteExcluirEmMassa agenteCausadorDeAcidenteExcluirEmMassa;
 			
 		//Tabela De Apoio E Social > Tabela 16  - SGDP
+			SGDPExcluir sGDPExcluir;
 			SGDPExcluirEmMassa sgdpExcluirEmMassa;
 		
 		//Rateio De Consorcio
@@ -442,8 +456,19 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				naturezaDasRubricasExcluir.acessarMDR();
 				naturezaDasRubricasExcluir.excluir();
 				naturezaDasRubricasExcluir.afterClass();
+			}
+			
+			@Test(priority = 16)
+			public void naturezaDasRubricasExcluirMassa() {
+			    
+				naturezaDasRubricasExluirMassa = new NaturezaDasRubricasExluirMassa();
+				naturezaDasRubricasExluirMassa.beforeClass();
+				naturezaDasRubricasExluirMassa.login();
+				naturezaDasRubricasExluirMassa.acessarMDR();
+				naturezaDasRubricasExluirMassa.criar();
+				naturezaDasRubricasExluirMassa.excluirMassa();
+				naturezaDasRubricasExluirMassa.afterClass();
 				System.out.println("------------------- Tabela 03 - Natureza Das Rubricas Fim-------------------------");
-				
 			}
 			
 			//18
@@ -490,6 +515,18 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				codigosEAliqDeFPRASExcluir.acessarMDR();
 				codigosEAliqDeFPRASExcluir.excluir();
 				codigosEAliqDeFPRASExcluir.afterClass();
+				
+			}
+			
+			@Test(priority = 22)
+			public void codigosEAliqDeFPRASExcluirMassa() {
+				codigosEAliqDeFPRASExcluirMassa = new CodigosEAliqDeFPRASExcluirMassa();
+				codigosEAliqDeFPRASExcluirMassa.beforeClass();
+				codigosEAliqDeFPRASExcluirMassa.login();
+				codigosEAliqDeFPRASExcluirMassa.acessarMDR();
+				codigosEAliqDeFPRASExcluirMassa.criar();
+				codigosEAliqDeFPRASExcluirMassa.excluirMassa();
+				codigosEAliqDeFPRASExcluirMassa.afterClass();
 				System.out.println("------------------- Tabela 04 - Codigos E Aliq. De FPRAS Fim-------------------------");
 				
 			}
@@ -539,10 +576,19 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				tiposDeRegistroExcluir.acessarMDR();
 				tiposDeRegistroExcluir.excluir();
 				tiposDeRegistroExcluir.afterClass();
+			}
+			
+			@Test(priority = 27)
+			public void tiposDeRegistroExcluirMassa() {
+				tiposDeRegistroExcluirMassa = new TiposDeRegistroExcluirMassa();
+				tiposDeRegistroExcluirMassa.beforeClass();
+				tiposDeRegistroExcluirMassa.login();
+				tiposDeRegistroExcluirMassa.acessarMDR();
+				tiposDeRegistroExcluirMassa.criar();
+				tiposDeRegistroExcluirMassa.excluirMassa();
+				tiposDeRegistroExcluirMassa.afterClass();
 				
 				System.out.println("------------------- Tabela 05 - Tipos de Registro Fim-------------------------");
-				
-
 			}
 			
 			//28
@@ -593,6 +639,18 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				paisesExcluir.acessarMDR();
 				paisesExcluir.excluir();
 				paisesExcluir.afterClass();
+				
+			}
+			
+			@Test(priority = 32)
+			public void paisesExcluirMassa() {
+				paisesExcluirMassa = new PaisesExcluirMassa();
+				paisesExcluirMassa.beforeClass();
+				paisesExcluirMassa.login();
+				paisesExcluirMassa.acessarMDR();
+				paisesExcluirMassa.criar();
+				paisesExcluirMassa.excluirMassa();
+				paisesExcluirMassa.afterClass();
 				System.out.println("------------------- Tabela 06 - Paises Fim-------------------------");
 				
 			}
@@ -641,8 +699,18 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				tiposDeDependentesExcluir.acessarMDR();
 				tiposDeDependentesExcluir.excluir();
 				tiposDeDependentesExcluir.afterClass();
+			}
+			
+			@Test(priority = 38)
+			public void tiposDeDependentesExcluirMassa() {
+				tiposDeDependentesExcluirMassa = new TiposDeDependentesExcluirMassa();
+				tiposDeDependentesExcluirMassa.beforeClass();
+				tiposDeDependentesExcluirMassa.login();
+				tiposDeDependentesExcluirMassa.acessarMDR();
+				tiposDeDependentesExcluirMassa.criar();
+				tiposDeDependentesExcluirMassa.excluirMassa();
+				tiposDeDependentesExcluirMassa.afterClass();
 				System.out.println("-------------------Tabela 07 - Tipos de Dependentes Fim-------------------------");
-				
 			}
 			//39
 			//Codigo receita	
@@ -975,15 +1043,27 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			//Tabela De Apoio E Social > Tabela 16  - SGDP
 			
 			@Test(priority = 73)
-			public void sgdpExcluirEmMassa() {
+			public void sgdpExcluir() {
 				System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP-------------------------");
+				sGDPExcluir = new SGDPExcluir();
+				sGDPExcluir.beforeClass();
+				sGDPExcluir.login();
+				sGDPExcluir.acessarMDR();
+				sGDPExcluir.excluir();
+				sGDPExcluir.afterClass();
+
+			}
+			
+			@Test(priority = 74)
+			public void sgdpExcluirEmMassa() {
+				
 				sgdpExcluirEmMassa = new SGDPExcluirEmMassa();
 				sgdpExcluirEmMassa.beforeClass();
 				sgdpExcluirEmMassa.login();
 				sgdpExcluirEmMassa.acessarMDR();
 				sgdpExcluirEmMassa.criar();
 				sgdpExcluirEmMassa.afterClass();
-
+				System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP FIN-------------------------");
 			}
 			
 		//74

@@ -72,6 +72,7 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualiza
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar;
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes;
@@ -238,6 +239,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	NaturezaJuridicaEditar naturezaJuridicaEditar;
 	NaturezaJuridicaExcluir naturezaJuridicaExcluir;
 	NaturezaJuridicaVisualizar naturezaJuridicaVisualizar;
+	NaturezaJuridicaExcluirMassa naturezaJuridicaExcluirMassa;
 	
 	//Tabelas de Apoio E-SOCIAL > Unidade de Medida
 	UnidadeDeMedidaCriar unidadeDeMedidaCriar;
@@ -1434,6 +1436,19 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			naturezaJuridicaExcluir.acessarMDR();
 			naturezaJuridicaExcluir.excluir();
 			naturezaJuridicaExcluir.afterClass();
+		}
+		
+		
+		@Test(priority = 133)
+		public void naturezaJuridicaExcluirMassa() {
+
+			naturezaJuridicaExcluirMassa = new NaturezaJuridicaExcluirMassa();
+			naturezaJuridicaExcluirMassa.beforeClass();
+			naturezaJuridicaExcluirMassa.login();
+			naturezaJuridicaExcluirMassa.acessarMDR();
+			naturezaJuridicaExcluirMassa.criar();
+			naturezaJuridicaExcluirMassa.excluirMassa();
+			naturezaJuridicaExcluirMassa.afterClass();
 
 			System.out.println("-------------------naturezaJuridica Fiscal > naturezaJuridica Fiscal Fin-------------------------");
 		}

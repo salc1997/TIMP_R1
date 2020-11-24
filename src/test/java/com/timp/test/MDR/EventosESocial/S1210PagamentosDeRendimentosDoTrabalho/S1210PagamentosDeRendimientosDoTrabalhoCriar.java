@@ -28,6 +28,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoCriar extends TestBaseFernan
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  @Test(priority = 0)

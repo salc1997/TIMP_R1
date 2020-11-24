@@ -1,5 +1,9 @@
 package com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis;
 
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -28,6 +32,7 @@ public class CodigoFatosContabeisVisualizar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,6 +47,10 @@ public class CodigoFatosContabeisVisualizar extends TestBaseFernando{
 
 	@Test(priority = 3)
 	public void visualizar() {
-		codigoFatosContabeisVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = codigoFatosContabeisVisualizarPO.visualizar();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}
 }

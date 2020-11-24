@@ -10,8 +10,12 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+
+import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroIDPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaFiltroIDPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosFiltroPorIDPO;
+
+
 
 public class ICMSSTTransporteFiltroID extends TestBaseSteven{
 	

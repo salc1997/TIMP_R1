@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" parallel="none">
@@ -15,18 +17,26 @@
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
 =======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluirMasas">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="criar"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
+=======
       </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluirMasas -->
 =======
       <class name="com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe">
@@ -37,7 +47,7 @@
         </methods>
       </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

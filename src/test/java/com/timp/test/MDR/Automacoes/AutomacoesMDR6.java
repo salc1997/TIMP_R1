@@ -286,7 +286,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		
 		//Tabela De Apoio E Social Tabela28 - Dados De RAT
 			DadosDeRATExcluirEmMassa dadosDeRATExcluirEmMassa;
-			*/
+			
 		//Tabela Apoio SPED > Tabela Codigo Da Situação Tributária
 			TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 		//Tabela Apoio SPED > Codigo Tipo Credito

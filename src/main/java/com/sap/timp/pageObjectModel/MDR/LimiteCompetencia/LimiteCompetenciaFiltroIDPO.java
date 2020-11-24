@@ -7,12 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class LimiteCompetenciaFiltroIDPO extends TestBaseEliel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class LimiteCompetenciaFiltroIDPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//span[text()=\"Parâmetros de Oficialização de Livros\"]")
-	public WebElement parametrosOficializacaoLivros;
+	@FindBy(xpath = "//span[text()=\"Limite de Competência\"]")
+	public WebElement limiteCompetencia;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")
 	public WebElement id;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
@@ -20,6 +22,13 @@ public class LimiteCompetenciaFiltroIDPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button/span[text()=\"Limpar Filtros\"]")
 	public WebElement limpar;
+	
+
+
+	
+	@FindBy(xpath = "//span[text()=\"Parâmetros de Oficialização de Livros\"]")
+	public WebElement parametrosOficializacaoLivros;
+	
 	
 	
 
@@ -32,6 +41,7 @@ public class LimiteCompetenciaFiltroIDPO extends TestBaseEliel{
 		
 		sleep(2000);
 		parametrosOficializacaoLivros.click();
+
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

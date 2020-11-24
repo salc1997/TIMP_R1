@@ -11,7 +11,7 @@ import com.sap.timp.base.TestBaseSteven;
 public class ICMSSTTransporteFiltroIDPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"ICMS-ST Transporte\"]")
-	public WebElement transporte;
+	public WebElement icmssttransporte;
 	
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement id;
@@ -24,6 +24,11 @@ public class ICMSSTTransporteFiltroIDPO extends TestBaseSteven{
 	
 	
 
+
+	
+	
+	
+
 	public ICMSSTTransporteFiltroIDPO() {
 
 		PageFactory.initElements(driver, this);
@@ -32,7 +37,8 @@ public class ICMSSTTransporteFiltroIDPO extends TestBaseSteven{
 	public boolean filtro() {
 		
 		sleep(2000);
-		transporte.click();
+		icmssttransporte.click();
+
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

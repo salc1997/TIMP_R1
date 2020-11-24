@@ -29,6 +29,9 @@ public class CodigosDeLotacaoExcluirEmMasaPO extends TestBaseKenssy {
 	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
 	public WebElement validade;
 	
+
+
+
 	@FindBy(xpath = "//button/span[text()=\"Salvar e Novo\"]")
 	public WebElement gravareNovo;
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

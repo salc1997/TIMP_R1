@@ -11,6 +11,9 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+  <suite started-at="2020-11-24T18:52:55Z" name="Default suite" finished-at="2020-11-24T18:55:04Z" duration-ms="129397">
+=======
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="68928" started-at="2020-11-24T16:36:38Z" finished-at="2020-11-24T16:37:47Z">
 =======
 <<<<<<< HEAD
@@ -19,8 +22,14 @@
   <suite started-at="2020-11-24T05:39:09Z" name="Default suite" finished-at="2020-11-24T05:40:24Z" duration-ms="75043">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2020-11-24T18:52:55Z" name="Default test" finished-at="2020-11-24T18:55:04Z" duration-ms="129397">
+      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:52:55Z" name="beforeClass" finished-at="2020-11-24T15:53:10Z" duration-ms="15205" status="PASS">
+=======
 <<<<<<< HEAD
     <test name="Default test" duration-ms="68928" started-at="2020-11-24T16:36:38Z" finished-at="2020-11-24T16:37:47Z">
       <class name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID">
@@ -36,9 +45,13 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe@10f7f7de]" started-at="2020-11-23T23:39:09Z" name="beforeClass" finished-at="2020-11-23T23:39:22Z" duration-ms="12890" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:10Z" name="login" finished-at="2020-11-24T15:53:19Z" duration-ms="9405" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="login" duration-ms="7874" started-at="2020-11-24T10:36:53Z" finished-at="2020-11-24T10:37:01Z">
 =======
@@ -46,6 +59,7 @@
         <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.AcessarBPMA@f78a47e]" started-at="2020-11-24T09:19:41Z" name="login" finished-at="2020-11-24T09:19:47Z" duration-ms="5654" status="PASS">
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe@10f7f7de]" started-at="2020-11-23T23:39:22Z" name="ingresar" finished-at="2020-11-23T23:39:30Z" duration-ms="7967" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
@@ -101,17 +115,30 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- login -->
 <<<<<<< HEAD
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:19Z" name="acessarBRE" finished-at="2020-11-24T15:53:35Z" duration-ms="15845" status="PASS">
+=======
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="acessarMDR" duration-ms="13283" started-at="2020-11-24T10:37:01Z" finished-at="2020-11-24T10:37:14Z">
 =======
         <test-method signature="BPMAEntrar()[pri:0, instance:com.timp.test.BPMA.AcessarBPMA@f78a47e]" started-at="2020-11-24T09:19:47Z" name="BPMAEntrar" finished-at="2020-11-24T09:20:01Z" duration-ms="14665" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:35Z" name="criar" finished-at="2020-11-24T15:55:04Z" duration-ms="88930" status="PASS">
+=======
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="filtro" duration-ms="28103" started-at="2020-11-24T10:37:14Z" finished-at="2020-11-24T10:37:42Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:55:04Z" name="afterClass" finished-at="2020-11-24T15:55:04Z" duration-ms="0" status="PASS">
+=======
         </test-method> <!-- filtro -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4423" started-at="2020-11-24T10:37:42Z" finished-at="2020-11-24T10:37:47Z">
 =======
@@ -122,9 +149,13 @@
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe@10f7f7de]" started-at="2020-11-23T23:40:19Z" name="afterClass" finished-at="2020-11-23T23:40:24Z" duration-ms="4328" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID -->
 =======
@@ -132,6 +163,7 @@
       </class> <!-- com.timp.test.BPMA.AcessarBPMA -->
 =======
       </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->

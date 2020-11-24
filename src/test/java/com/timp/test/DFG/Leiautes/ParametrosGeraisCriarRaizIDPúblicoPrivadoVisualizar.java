@@ -13,22 +13,24 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO;
+import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO;
+import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
 import com.timp.test.DFG.AcessarDFG;
 
 
-public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar extends TestBaseSteven{
+public class ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
-	ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO parametrosGeraisCriarRaizIDPúblicoPrivado;
+	ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO parametrosGeraisCriarRaizIDPúblicoPrivado;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
-		parametrosGeraisCriarRaizIDPúblicoPrivado = new ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO();
+		parametrosGeraisCriarRaizIDPúblicoPrivado = new ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO();
 	}
 
 	@AfterClass
@@ -48,11 +50,10 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar extends TestBaseStev
 	}
 
 	@Test(priority = 2)
-	public void criar() {
-		ArrayList<Boolean> sucesso =parametrosGeraisCriarRaizIDPúblicoPrivado.criar();
+	public void editar() {
+		boolean sucesso = parametrosGeraisCriarRaizIDPúblicoPrivado.visualizar();
 		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
+		assertTrue(sucesso, Editar);
+	
 	}
 }

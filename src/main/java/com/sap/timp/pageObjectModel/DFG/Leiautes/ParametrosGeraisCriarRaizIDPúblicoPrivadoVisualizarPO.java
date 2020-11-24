@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseSteven{
+public class ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;
@@ -22,6 +22,9 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseS
 
 	@FindBy(xpath = "//span[text()=\"Editar\"]")
 	public WebElement editar;
+	
+	@FindBy(xpath = "//span[text()=\"Visualizar\"]")
+	public WebElement visualizar;
 
 	@FindBy(xpath = "//span[text()=\"Adicionar bloco\"]")
 	public WebElement bloco;
@@ -52,13 +55,13 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseS
 
 	
 
-	public ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO() {
+	public ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-	public boolean editar() {
+	public boolean visualizar() {
 		
 		leiautePublico.click();
 		sleep(3000);
@@ -81,44 +84,36 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseS
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
-		bloco.click();
-		sleep(2000);
-		nome.sendKeys("Teste Automatizado");
+	
+		String nomeE = nome.getAttribute("value");
+		System.out.println("Nome Editar: " + nomeE);
 		sleep(1000);
 		
-		gravar.click();
-		sleep(3000);
-		waitExpectElement(nao);
-		sleep(2000);
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
+		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		driver.navigate().refresh();
-		
+		pesquisar.sendKeys(idObter1());
+		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
-		waitExpectElement(bloco);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		menu.click();
+		sleep(1000);
+		visualizar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
+		String nomeV = nome.getAttribute("value");
+		System.out.println("Nome Visualizar: " + nomeV);
 		
-		int blocoM = driver.findElements(By.xpath("//div[@class=\"block-wrapper\"]")).size();
 		boolean sucesso = false;
 		
-		if (blocoM > 0) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
+		sucesso = nomeV.contains(nomeE);
 		System.out.println(sucesso);
-		
 		return sucesso;
 		
 	}

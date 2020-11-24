@@ -1,46 +1,15 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="excluir"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir -->
-=======
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN2CriarCaminhos -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho">
+      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
         <methods>
           <include name="criar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho -->
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

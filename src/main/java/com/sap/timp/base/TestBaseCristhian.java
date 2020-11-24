@@ -19,17 +19,13 @@ public class TestBaseCristhian extends TestBaseSteven{
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
 
-<<<<<<< HEAD
-=======
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(tp1);
 		return driver;
 	}
+	
 	
 	public String capitalize(String cadena) {
 		String[] split = cadena.split("");

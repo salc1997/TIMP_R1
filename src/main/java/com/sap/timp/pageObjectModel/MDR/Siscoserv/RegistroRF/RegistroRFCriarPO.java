@@ -6,9 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroRFCriarPO extends TestBaseSteven{
+public class RegistroRFCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Siscoserv\"]")
 	public WebElement siscoserv;

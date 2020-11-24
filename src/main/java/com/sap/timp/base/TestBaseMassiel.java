@@ -23,9 +23,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tc2);
-
-		driver.get(tq1);
+		driver.get(tp1);
 
 	   return driver;
 	}

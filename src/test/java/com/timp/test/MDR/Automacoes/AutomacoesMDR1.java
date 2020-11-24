@@ -175,6 +175,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	CadasatroCondicaoVisualizar cadasatroCondicaoVisualizar;
 	CadastroCondicaoEditar cadastroCondicaoEditar;
 	CadastroCondicaoExcluir cadastroCondicaoExcluir;
+	CadastroCondicaoExcluir cadastroCondicaoDetalle;
 
 	// Cadastro Derex > Responsavél Pelo Movimento
 	ResponsavelMovimentoCriar cadastroresponsavelPeloMovimentoCriar;

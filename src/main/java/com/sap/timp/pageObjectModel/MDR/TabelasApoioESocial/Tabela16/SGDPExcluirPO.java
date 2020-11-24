@@ -18,6 +18,7 @@ public class SGDPExcluirPO extends TestBaseFernando{
 	public WebElement btnUltimaPagina;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	
 	public WebElement btnAceitar;
 	
 	public SGDPExcluirPO() {

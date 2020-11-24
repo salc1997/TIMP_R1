@@ -1,30 +1,31 @@
-package com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis;
+package com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens;
 
 import org.testng.annotations.Test;
- 
+
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditarPO;
+import com.sap.timp.pageObjectModel.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMensagensDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
-public class CodigoFatosContabeisEditar extends TestBaseFernando {
-
+public class ParâmetrosParaEnvioDeMensagensDetalhes extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
-	CodigoFatosContabeisEditarPO codigoFatosContabeisEditarPO;
+	ParâmetrosParaEnvioDeMensagensDetalhesPO parâmetrosParaEnvioDeMensagensDetalhesPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		accesarMDRPO = new AcessarMDRPO();
-		codigoFatosContabeisEditarPO = new CodigoFatosContabeisEditarPO();
+		parâmetrosParaEnvioDeMensagensDetalhesPO = new ParâmetrosParaEnvioDeMensagensDetalhesPO();
 	}
 
 	@AfterClass
@@ -43,8 +44,11 @@ public class CodigoFatosContabeisEditar extends TestBaseFernando {
 	}
 
 	@Test(priority = 2)
-	public void editarCodigoFatosContabeis() {
-		boolean sucesso = codigoFatosContabeisEditarPO.editarCodigoFatosContabeis();
-		assertTrue(sucesso, Editar);
+	public void detalhes() {
+		ArrayList<Boolean> sucesso = parâmetrosParaEnvioDeMensagensDetalhesPO.detalhes();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 	}
 }

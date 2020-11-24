@@ -32,6 +32,7 @@ public class S1070ProcessosAdmJudiciaisExluir extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -47,6 +48,6 @@ public class S1070ProcessosAdmJudiciaisExluir extends TestBaseFernando{
 	@Test(priority = 3)
 	public void excluir() {
 		boolean sucesso = s1070ProcessosAdmJudiciaisExcluirPO.excluir();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Eliminado);
 	}
 }

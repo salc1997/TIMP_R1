@@ -32,6 +32,7 @@ public class DescriçãoDeNatDeLesãoEditar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -47,6 +48,6 @@ public class DescriçãoDeNatDeLesãoEditar extends TestBaseFernando{
 	@Test(priority = 3)
 	public void editar() {
 		boolean sucesso = descriçãoDeNatDeLesãoEditarPO.editar();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Editar);
 	}
 }

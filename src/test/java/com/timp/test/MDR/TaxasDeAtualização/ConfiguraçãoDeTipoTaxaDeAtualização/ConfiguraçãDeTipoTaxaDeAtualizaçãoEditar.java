@@ -32,6 +32,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -45,7 +46,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar extends TestBaseFernando{
 	}
 
 	@Test(priority = 3)
-	public void criar() {
+	public void editar() {
 		boolean sucesso = configuraçãDeTipoTaxaDeAtualizaçãoEditarPO.editar();
 		assertTrue(sucesso, Editar);
 	}

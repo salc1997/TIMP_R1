@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class DadosRATCriarPO extends TestBaseCristhian{
-	
+
+public class DadosDeRATCriarPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
@@ -54,7 +54,7 @@ public class DadosRATCriarPO extends TestBaseCristhian{
 	*/
 	
 	
-	public DadosRATCriarPO() {
+	public DadosDeRATCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -141,6 +141,5 @@ public class DadosRATCriarPO extends TestBaseCristhian{
 		
 		
 	}
-	
 
 }

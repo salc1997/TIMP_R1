@@ -22,14 +22,15 @@ import org.testng.annotations.AfterClass;
 public class ParametrosParaCategoriaDeIRFExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	ParametrosParaCategoriaDeIRFExcluirEmMasaPO categoriaDeIRFExcluirEmMasaPO;
+	ParametrosParaCategoriaDeIRFExcluirEmMasaPO parametrosParaCategoriaDeIRFExcluirEmMasaPO;
+	
 	
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();
 		  loginTC = new LoginTC();
 		  accesarMDR = new AcessarMDRPO();
-		  categoriaDeIRFExcluirEmMasaPO = new ParametrosParaCategoriaDeIRFExcluirEmMasaPO();
+		  parametrosParaCategoriaDeIRFExcluirEmMasaPO = new ParametrosParaCategoriaDeIRFExcluirEmMasaPO();
 	}
 
 	@AfterClass
@@ -52,10 +53,10 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasa extends TestBaseSteven {
 	public void excluir() {
 		
 		
-		boolean sucesso = categoriaDeIRFExcluirEmMasaPO.criar();
+		boolean sucesso = parametrosParaCategoriaDeIRFExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
-		boolean sucesso2 = categoriaDeIRFExcluirEmMasaPO.excluirMassa();
+		boolean sucesso2 = parametrosParaCategoriaDeIRFExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
 		
 	}

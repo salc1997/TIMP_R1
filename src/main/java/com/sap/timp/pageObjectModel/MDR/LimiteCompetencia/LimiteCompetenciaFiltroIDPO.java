@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+
 import com.sap.timp.base.TestBaseSteven;
 
 public class LimiteCompetenciaFiltroIDPO extends TestBaseSteven{
@@ -22,6 +23,13 @@ public class LimiteCompetenciaFiltroIDPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Limpar Filtros\"]")
 	public WebElement limpar;
 	
+
+
+	
+	@FindBy(xpath = "//span[text()=\"Parâmetros de Oficialização de Livros\"]")
+	public WebElement parametrosOficializacaoLivros;
+	
+	
 	
 
 	public LimiteCompetenciaFiltroIDPO() {
@@ -32,7 +40,8 @@ public class LimiteCompetenciaFiltroIDPO extends TestBaseSteven{
 	public boolean filtro() {
 		
 		sleep(2000);
-		limiteCompetencia.click();
+		parametrosOficializacaoLivros.click();
+
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

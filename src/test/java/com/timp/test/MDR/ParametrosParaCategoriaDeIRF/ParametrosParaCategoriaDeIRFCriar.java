@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -15,7 +16,13 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosP
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
-public class ParametrosParaCategoriaDeIRFCriar extends TestBaseSteven {
+
+
+
+
+import com.sap.timp.base.TestBaseMassiel;
+
+public class ParametrosParaCategoriaDeIRFCriar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -53,6 +60,7 @@ public class ParametrosParaCategoriaDeIRFCriar extends TestBaseSteven {
 
 		boolean sucesso = parametrosParaCategoriaDeIRFCriarPO.criar();
 		assertTrue(sucesso, Criar);
+
 
 	}
 

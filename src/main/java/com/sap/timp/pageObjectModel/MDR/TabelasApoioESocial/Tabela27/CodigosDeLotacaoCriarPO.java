@@ -22,6 +22,7 @@ public class CodigosDeLotacaoCriarPO extends TestBaseSteven {
 	public WebElement novo;
 	
 
+
 	@FindBy(xpath = "//div[contains(@class,\"company_0_0\")]/div/div/div/div[2]")
 	public WebElement empresa;
 	

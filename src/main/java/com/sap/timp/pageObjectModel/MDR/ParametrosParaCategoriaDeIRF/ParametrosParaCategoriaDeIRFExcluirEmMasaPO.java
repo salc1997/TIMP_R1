@@ -143,7 +143,11 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBaseKenssy 
 		sleep(3000);
 		waitExpectElement(categoriaIRF);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		sleep(5000);
+
+	
+
 		
 
 		categoriaIRF.click();

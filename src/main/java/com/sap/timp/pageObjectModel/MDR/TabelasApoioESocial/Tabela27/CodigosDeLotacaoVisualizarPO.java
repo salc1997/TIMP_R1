@@ -29,8 +29,6 @@ public class CodigosDeLotacaoVisualizarPO extends TestBaseSteven {
 	public WebElement codigoV;
 	@FindBy(xpath = "//td[@id=\"effectiveDateFrom\"]/span")
 	public WebElement dataVigenciaV;
-	
-	
 
 	@FindBy(xpath = "//input[contains(@placeholder,\"Empresas\")]")
 	public WebElement empresaE;
@@ -44,6 +42,10 @@ public class CodigosDeLotacaoVisualizarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
+
+
+	
+
 	
 	
 	public CodigosDeLotacaoVisualizarPO() {
@@ -56,6 +58,7 @@ public class CodigosDeLotacaoVisualizarPO extends TestBaseSteven {
 		tabelaApoio.click();
 		sleep(2000);
 		tabela27.click();
+
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

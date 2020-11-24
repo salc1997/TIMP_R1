@@ -71,6 +71,7 @@ import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEst
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoCriar;
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoEditar;
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluir;
+import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluirMassa;
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoFiltrosAvançados;
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoVisualizar;
 import com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisCriar;
@@ -236,6 +237,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	RegistroDeExportaçaoExcluir registroDeExportaçaoExcluir;
 	RegistroDeExportaçaoFiltrosAvançados registroDeExportaçaoFiltrosAvançados;
 	RegistroDeExportaçaoVisualizar registroDeExportaçaoVisualizar;
+	RegistroDeExportaçaoExcluirMassa registroDeExportaçaoExcluirMassa;
 
 	// Representantes Legais
 
@@ -1294,6 +1296,18 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		registroDeExportaçaoExcluir.acessarMDR();
 		registroDeExportaçaoExcluir.Excluir();
 		registroDeExportaçaoExcluir.afterClass();
+	}
+	
+	@Test(priority = 95)
+	public void registroDeExportaçaoExcluirMassa() {
+
+		registroDeExportaçaoExcluirMassa = new RegistroDeExportaçaoExcluirMassa();
+		registroDeExportaçaoExcluirMassa.beforeClass();
+		registroDeExportaçaoExcluirMassa.login();
+		registroDeExportaçaoExcluirMassa.acessarMDR();
+		registroDeExportaçaoExcluirMassa.criar();
+		registroDeExportaçaoExcluirMassa.excluirMassa();
+		registroDeExportaçaoExcluirMassa.afterClass();
 
 		System.out.println("-------------------Registro de Exportação Fin-------------------------");
 	}

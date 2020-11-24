@@ -24,6 +24,11 @@ public class ICMSSTTransporteFiltroIDPO extends TestBaseSteven{
 	
 	
 
+
+	
+	
+	
+
 	public ICMSSTTransporteFiltroIDPO() {
 
 		PageFactory.initElements(driver, this);
@@ -33,6 +38,7 @@ public class ICMSSTTransporteFiltroIDPO extends TestBaseSteven{
 		
 		sleep(2000);
 		icmssttransporte.click();
+
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

@@ -10,15 +10,18 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+
 import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroIDPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaFiltroIDPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosFiltroPorIDPO;
+
+
 
 public class ICMSSTTransporteFiltroID extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ICMSSTTransporteFiltroIDPO icmsstTransporteFiltroIDPO;
+	LimiteCompetenciaFiltroIDPO limiteCompetenciaFiltroIDPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +29,7 @@ public class ICMSSTTransporteFiltroID extends TestBaseSteven{
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		icmsstTransporteFiltroIDPO = new ICMSSTTransporteFiltroIDPO();
+		limiteCompetenciaFiltroIDPO = new LimiteCompetenciaFiltroIDPO();
 
 	}
 
@@ -51,7 +54,7 @@ public class ICMSSTTransporteFiltroID extends TestBaseSteven{
 	@Test(priority = 2)
 	public void filtro() {
 
-		boolean sucesso = icmsstTransporteFiltroIDPO.filtro();
+		boolean sucesso = limiteCompetenciaFiltroIDPO.filtro();
 		assertTrue(sucesso, Filtros);
 
 		

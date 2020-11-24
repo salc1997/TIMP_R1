@@ -17,6 +17,7 @@ public class ParametrosParaCategoriaDeIRFExcluirPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Parâmetros para Categoria de IRF \"]")
 	public WebElement parametros;
 	
+
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -39,6 +40,27 @@ public class ParametrosParaCategoriaDeIRFExcluirPO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
+	
+
+	@FindBy(xpath = "//span[text()=\"Códigos de Ajustes\"]")
+	public WebElement codigo;
+	
+	
+
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
+	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
+	public WebElement nenhumResult;
+	
+	
+
+	
+	
+	
+	
+	
+	
 	public Boolean excluir() {
 		
 		
@@ -55,8 +77,10 @@ public class ParametrosParaCategoriaDeIRFExcluirPO extends TestBaseSteven{
 		sleep(2000);
 		
 		String idRegistro = idObter2();
-
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		actionsMoveToElementElement(menu);
+
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
 		actionsMoveToElementElement(menu);

@@ -33,6 +33,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar extends TestBaseStev
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)

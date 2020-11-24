@@ -97,14 +97,14 @@ public class DEPARAContasContábeisVisualizarPO extends TestBaseMassiel{
 		String textoCodigoOrigen = codigoOrigen.getText();
 		String textoCodigoDestino = codigoOrigen.getText();
 		String textoDataInicio = dataInicial.getText();
-		String textoDataFinal = dataFinal.getText();
+
 		
 		System.out.println("Empresa: " + textoEmpresa);
 		System.out.println("Plano Contais: " + textoPlanoContais);
 		System.out.println("Codigo Origen: " + textoCodigoOrigen);
 		System.out.println("Codigo Destino: " + textoCodigoDestino);
 		System.out.println("Data Inicio: " + textoDataInicio);
-		System.out.println("Data Final: " + textoDataFinal);
+
 		
 		sleep(2000);
 		biblioteca.click();
@@ -129,15 +129,14 @@ public class DEPARAContasContábeisVisualizarPO extends TestBaseMassiel{
 		String textoCodigoOrigen1 = codigoOrigen1.getAttribute("value");
 		String textoCodigoDestino1 = codigoOrigen1.getAttribute("value");
 		String textoDataInicio1 = dataInicial1.getAttribute("value");
-		String textoDataFinal1 = dataFinal1.getAttribute("value");
-		
+
 		System.out.println("-------------------------------------------");
 		System.out.println("Empresa: " + textoEmpresa1);
 		System.out.println("Plano Contais: " + textoPlanoContais1);
 		System.out.println("Codigo Origen: " + textoCodigoOrigen1);
 		System.out.println("Codigo Destino: " + textoCodigoDestino1);
 		System.out.println("Data Inicio: " + textoDataInicio1);
-		System.out.println("Data Final: " + textoDataFinal1);
+
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso.add(textoEmpresa1.equals(textoEmpresa));
@@ -145,7 +144,7 @@ public class DEPARAContasContábeisVisualizarPO extends TestBaseMassiel{
 		sucesso.add(textoCodigoOrigen1.equals(textoCodigoOrigen));
 		sucesso.add(textoCodigoDestino1.equals( textoCodigoDestino));
 		sucesso.add(textoDataInicio1.equals(textoDataInicio));
-		sucesso.add(textoDataFinal1.equals(textoDataFinal));
+
 		
 		System.out.println(sucesso);
 		return sucesso;

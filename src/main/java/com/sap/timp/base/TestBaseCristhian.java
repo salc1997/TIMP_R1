@@ -16,9 +16,17 @@ public class TestBaseCristhian extends TestBaseSteven{
 
 	public WebDriver initializationC() {
 
+<<<<<<< HEAD
 		
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
 
+<<<<<<< HEAD
+=======
+		
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(tq1);

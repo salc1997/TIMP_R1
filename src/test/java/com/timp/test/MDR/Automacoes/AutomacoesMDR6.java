@@ -1,7 +1,7 @@
 package com.timp.test.MDR.Automacoes;
 
 import org.testng.annotations.Test;
-
+ 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluirEmMassaPO;
@@ -286,7 +286,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		
 		//Tabela De Apoio E Social Tabela28 - Dados De RAT
 			DadosDeRATExcluirEmMassa dadosDeRATExcluirEmMassa;
-			*/
+			
 		//Tabela Apoio SPED > Tabela Codigo Da Situação Tributária
 			TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 		//Tabela Apoio SPED > Codigo Tipo Credito

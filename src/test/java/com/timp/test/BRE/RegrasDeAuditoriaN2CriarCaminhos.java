@@ -29,6 +29,7 @@ public class RegrasDeAuditoriaN2CriarCaminhos  extends TestBaseCristhian{
 		regrasDeAuditoriaN2CriarCaminhosPO = new RegrasDeAuditoriaN2CriarCaminhosPO();
   }
 
+  
   @AfterClass
   public void afterClass() {
 	  

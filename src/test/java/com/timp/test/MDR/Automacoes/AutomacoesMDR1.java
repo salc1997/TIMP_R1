@@ -1,14 +1,23 @@
 package com.timp.test.MDR.Automacoes;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.Test;
 import org.yaml.snakeyaml.scanner.Constant;
 
 import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Tributos.TributosDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFEditarPO;
+import com.sap.timp.pageObjectModel.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriarPO;
 import com.timp.test.ADM.LoginBRB;
 import com.timp.test.BRB.*;
+import com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar;
+import com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe;
+import com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar;
+import com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir;
+import com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar;
@@ -25,17 +34,22 @@ import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditar;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioExcluir;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioFiltroID;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioVisualizar;
+import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar;
+import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeExcluirMassa;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeCriar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeEditar;
+import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluir;
+import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluirMassa;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeVisualizar;
 import com.timp.test.MDR.CEP.Bairro.BairroCriar;
 import com.timp.test.MDR.CEP.Bairro.BairroEditar;
 import com.timp.test.MDR.CEP.Bairro.BairroEliminar;
+import com.timp.test.MDR.CEP.Bairro.BairroExcluirMassa;
 import com.timp.test.MDR.CEP.Bairro.BairroFiltros;
 import com.timp.test.MDR.CEP.Bairro.BairroVisualizar;
 import com.timp.test.MDR.CEP.Logradouro.LogradouroCriar;
@@ -53,6 +67,7 @@ import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoC
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar;
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoFiltros;
 import com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoVisualizar;
+import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoDetalhes;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoVisualizar;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoCriar;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoEditar;
@@ -62,6 +77,7 @@ import com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALUREx
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir;
+import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar;
 import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar;
@@ -75,12 +91,14 @@ import com.timp.test.MDR.Centralizacao.Tributos.TributosCriar;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosDetalhes;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosEditar;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosExcluir;
+import com.timp.test.MDR.Centralizacao.Tributos.TributosFiltrar;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosVisualizar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir;
+import com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaCriar;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar;
@@ -89,6 +107,7 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
+import com.timp.test.MDR.ContratoIOF.ContratoIOFDetalhes;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFEditar;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar;
@@ -119,17 +138,25 @@ import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
 import com.timp.test.MDR.Filiais.FiliaisEditar;
 import com.timp.test.MDR.Filiais.FiliaisVisualizar;
+import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIICriar;
+import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIDetalhe;
+import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIExcluir;
+import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIExcluirMassa;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosEditar;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluir;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluirMassa;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.LogradouroExcluirMassa;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
 
 public class AutomacoesMDR1 extends TestBaseSteven {
-
-	// empresa
-	EmpresaEditar empresaEditar;
-	EmpresasVisualizar empresaVisualizar;
-	EmpresasFiltros empresasFiltros;
-
-	// Filiais
-	FiliaisEditar filiaisEditar;
-	FiliaisVisualizar filiaisVisualizar;
+	
+	// Ajustes > Associação de Códigos de Ajustes
+	AssociaçãoCodigoAjusteCriar associaçãoCodigoAjusteCriar;
+	AssociaçãoCodigoAjusteEditar associaçãoCodigoAjusteEditar;
+	AssociaçãoCodigoAjusteExcluir associaçãoCodigoAjusteExcluir;
+	AssociaçãoCodigoAjusteDetalhe associaçãoCodigoAjusteDetalhe;
+	AssociaçãoCodigoAjusteVisualizar associaçãoCodigoAjusteVisualizar;
 
 	// Ajustes > Código Ajustes
 	CodigosAjustesCriar codigosAjustesCriar;
@@ -162,12 +189,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	AtividadeEliminar atividadeEliminar;
 	AtividadeFiltro atividadeFiltro;
 	AtividadeVisualizar atividadeVisualizar;
+	AtividadeExcluirMassa atividadeExcluirMassa;
+	
+	// Atividades Fiscais > Associação de Atividades Fiscais
 
+	AssociaçãoExcluir associaçãoExcluir;
+	
 	// Atividades Fiscais > Grupo Atividades Fiscais
 
 	GrupoAtividadeCriar grupoAtividadeCriar;
 	GrupoAtividadeEditar grupoAtividadeEditar;
 	GrupoAtividadeVisualizar grupoAtividadeVisualizar;
+	GrupoAtividadeExcluir grupoAtividadeExcluir;
+	GrupoAtividadeExcluirMassa grupoAtividadeExcluirMassa;
 
 	// Cadastro da Condição
 
@@ -188,7 +222,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	InstitucaoVisualizar instituicaoVisualizar;
 	InstituicaoEditar instituicaoEditar;
 	InstituicaoExcluir instituicaoExcluir;
-
+	InstitucaoDetalhes institucaoDetalhes;
+	
 	// Cadastros IRPJ/CSLL > Contas ParteB LALUR/LACS
 
 	ContasParteBLALURCriar contasParteBLALURCriar;
@@ -201,6 +236,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	CenariosCorrecaoFiltrosAvanzados cenariosCorrecaoFiltrosAvanzados;
 	CenariosCorrecaoVisualizar cenariosCorrecaoVisualizar;
 	CenariosCorrecaoExcluir cenariosCorrecaoExcluir;
+	CenariosCorrecaoExcluirMassa cenariosCorrecaoExcluirMassa;
 
 	// Centralização > Estorno Crédito
 
@@ -221,6 +257,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	TributosEditar tributosEditar;
 	TributosVisualizar tributosVisualizar;
 	TributosExcluir tributosExcluir;
+	TributosFiltrar tributosFiltrar;
 
 	// CEP> Bairro
 
@@ -229,27 +266,31 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	BairroFiltros bairroFiltros;
 	BairroVisualizar bairroVisualizar;
 	BairroEliminar bairroEliminar;
-
+	BairroExcluirMassa bairroExcluirMassa;
+	
 	// CEP > Logradouro
 	LogradouroCriar logradouroCriar;
 	LogradouroEditar logradouroEditar;
 	LogradouroExcluir logradouroExcluir;
 	LogradouroFiltros logradouroFiltros;
 	LogradouroVisualizar logradouroVisualizar;
-
+	LogradouroExcluirMassa logradouroExcluirMassa;
+	
 	// CEP > Município
 	MunicipioCriar municipioCriar;
 	MunicipioEditar municipioEditar;
 	MunicipioEliminar municipioEliminar;
 	MunicipioFiltros municipioFiltros;
 	MunicipioVisualizar MunicipioVisualizar;
-
+	MunicipioExcluirEmMassa municipioExcluirEmMassa;
+	
 	// Código de Contabiliazação
 	CodigoContabilizacaoCriar codigoContabilizacaoCriar;
 	CodigoContabalizacaoVisualizar codigoContabalizacaoVisualizar;
 	CodigoContabilizacaoEditar codigoContabilizacaoEditar;
 	CodigoContabalizacaoDetalhes codigoContabalizacaoDetalhes;
 	CodigoContabilizacaoExcluir codigoContabilizacaoExcluir;
+	CódigoContabilizaçãoExcluirMassa códigoContabilizaçãoExcluirMassa;
 
 	// Código da Receita
 	CodigoReceitaCriar codigoReceitaCriar;
@@ -261,11 +302,13 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	// Configuração do Fundo Socail
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
 	ConfiguracaoFundoSocailFiltroId configuracaoFundoSocailFiltroId;
+	
 	// Contrato IOF
 
 	ContratoIOFCriar contratoIOFCriar;
 	ContratoIOFEditar contratoIOFEditar;
 	ContratoIOFVisualizar contratoIOFVisualizar;
+	ContratoIOFDetalhes contratoIOFDetalhes;
 	ContratoIOFExcluir contratoIOFExcluir;
 
 	// Controle De crédito Tributario > Código Crédito
@@ -298,72 +341,86 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	UtilizacaoDosCreditosNaApuracaoExcluir utilizacaoDosCreditosNaApuracaoExcluir;
 	UtilizacaoDosCreditosNaApuracaoVisualizar utilizacaoDosCreditosNaApuracaoVisualizar;
 	UtilizacaoDosCreditosNaApuracaoFiltroId utilizacaoDosCreditosNaApuracaoFiltroId;
-
+	
+	//SPCB - Federais Retidos
+	SPCBFederaisRetidosCriar sPCBFederaisRetidosCriar;
+	SPCBFederaisRetidosEditar sPCBFederaisRetidosEditar;
+	SPCBFederaisRetidosExcluir sPCBFederaisRetidosExcluir;
+	SPCBFederaisRetidosExcluirMassa sPCBFederaisRetidosExcluirMassa;
+	
+	// Notas a Declarar Anexo III DIA-AM
+	NotasDeclararAnexoIIICriar notasDeclararAnexoIIICriar;
+	NotasDeclararAnexoIIIDetalhe notasDeclararAnexoIIIDetalhe;
+	NotasDeclararAnexoIIIExcluir notasDeclararAnexoIIIExcluir;
+	NotasDeclararAnexoIIIExcluirMassa notasDeclararAnexoIIIExcluirMassa;
+	
 	// --------------------------------------------------------------------------------------------------
-
-	// Empresa
+	
+	// Ajustes > Associação de Códigos de Ajustes
 
 	@Test(priority = 0)
-	public void empresaEditar() {
-		System.out.println("-------------------Empresa-------------------------");
-		empresaEditar = new EmpresaEditar();
-		empresaEditar.beforeClass();
-		empresaEditar.login();
-		empresaEditar.acessarMDR();
-		empresaEditar.editar();
-		empresaEditar.afterClass();
+	public void associaçãoCodigoAjusteCriar() {
+
+		System.out.println("-------------------Ajustes > Associação de Códigos de Ajustes-------------------------");
+
+		associaçãoCodigoAjusteCriar = new AssociaçãoCodigoAjusteCriar();
+		associaçãoCodigoAjusteCriar.beforeClass();
+		associaçãoCodigoAjusteCriar.ingresar();
+		associaçãoCodigoAjusteCriar.ingresarMDR();
+		associaçãoCodigoAjusteCriar.criarAssociaçãoCodigoAjuste();
+		associaçãoCodigoAjusteCriar.afterClass();
 
 	}
-
+	
 	@Test(priority = 1)
-	public void empresaVisualizar() {
+	public void associaçãoCodigoAjusteEditar() {
 
-		empresaVisualizar = new EmpresasVisualizar();
-		empresaVisualizar.beforeClass();
-		empresaVisualizar.login();
-		empresaVisualizar.acessarMDR();
-		empresaVisualizar.visualizar();
-		empresaVisualizar.afterClass();
+		associaçãoCodigoAjusteEditar = new AssociaçãoCodigoAjusteEditar();
+		associaçãoCodigoAjusteEditar.beforeClass();
+		associaçãoCodigoAjusteEditar.ingresar();
+		associaçãoCodigoAjusteEditar.ingresarMDR();
+		associaçãoCodigoAjusteEditar.associaçãoCodigoAjusteEditar();
+		associaçãoCodigoAjusteEditar.afterClass();
 
 	}
-
+	
 	@Test(priority = 2)
-	public void empresaFiltrosAvanzados() {
-		/*
-		 * empresaVisualizar = new EmpresasVisualizar();
-		 * empresaVisualizar.beforeClass(); empresaVisualizar.login();
-		 * empresaVisualizar.acessarMDR(); empresaVisualizar.visualizar();
-		 */
-		System.out.println("-------------------Empresa Fin-------------------------");
+	public void associaçãoCodigoAjusteExcluir() {
+
+		associaçãoCodigoAjusteExcluir = new AssociaçãoCodigoAjusteExcluir();
+		associaçãoCodigoAjusteExcluir.beforeClass();
+		associaçãoCodigoAjusteExcluir.ingresar();
+		associaçãoCodigoAjusteExcluir.ingresarMDR();
+		associaçãoCodigoAjusteExcluir.excluirAssociaçãoCodigoAjuste();
+		associaçãoCodigoAjusteExcluir.afterClass();
 
 	}
-
-	// Filias
-
+	
 	@Test(priority = 3)
-	public void filiaisEditar() {
-		System.out.println("-------------------Filiais-------------------------");
-		filiaisEditar = new FiliaisEditar();
-		filiaisEditar.beforeClass();
-		filiaisEditar.login();
-		filiaisEditar.acessarMDR();
-		filiaisEditar.editar();
-		filiaisEditar.afterClass();
+	public void associaçãoCodigoAjusteDetalhe() {
+
+		associaçãoCodigoAjusteDetalhe = new AssociaçãoCodigoAjusteDetalhe();
+		associaçãoCodigoAjusteDetalhe.beforeClass();
+		associaçãoCodigoAjusteDetalhe.ingresar();
+		associaçãoCodigoAjusteDetalhe.ingresarMDR();
+		associaçãoCodigoAjusteDetalhe.detalhe();
+		associaçãoCodigoAjusteDetalhe.afterClass();
 
 	}
+	
+	@Test(priority = 3)
+	public void associaçãoCodigoAjusteVisualizar() {
 
-	@Test(priority = 4)
-	public void filiaisVisualizar() {
-
-		filiaisVisualizar = new FiliaisVisualizar();
-		filiaisVisualizar.beforeClass();
-		filiaisVisualizar.login();
-		filiaisVisualizar.acessarMDR();
-		filiaisVisualizar.visualizar();
-		filiaisVisualizar.afterClass();
-
-		System.out.println("-------------------Filiais Fin-------------------------");
+		associaçãoCodigoAjusteVisualizar = new AssociaçãoCodigoAjusteVisualizar();
+		associaçãoCodigoAjusteVisualizar.beforeClass();
+		associaçãoCodigoAjusteVisualizar.ingresar();
+		associaçãoCodigoAjusteVisualizar.ingresarMDR();
+		associaçãoCodigoAjusteVisualizar.visualizarAssociaçãoCodigoAjuste();
+		associaçãoCodigoAjusteVisualizar.afterClass();
+		
+		System.out.println("-------------------Ajustes > Associação de Códigos de Ajustes Fin-------------------------");
 	}
+	
 
 	// Ajustes > Código Ajustes
 
@@ -601,7 +658,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 21)
 	public void atividadeFiscalVisualizar() {
 
 		atividadeVisualizar = new AtividadeVisualizar();
@@ -613,7 +670,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 22)
 	public void atividadeFiscalFiltro() {
 
 		atividadeFiltro = new AtividadeFiltro();
@@ -625,7 +682,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 23)
 	public void atividadeFiscalExcluir() {
 
 		atividadeEliminar = new AtividadeEliminar();
@@ -634,6 +691,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		atividadeEliminar.acessarMDR();
 		atividadeEliminar.eliminar();
 		atividadeEliminar.afterClass();
+
+	}
+	
+	@Test(priority = 24)
+	public void atividadeExcluirMassa() {
+
+		atividadeExcluirMassa = new AtividadeExcluirMassa();
+		atividadeExcluirMassa.beforeClass();
+		atividadeExcluirMassa.login();
+		atividadeExcluirMassa.acessarMDR();
+		atividadeExcluirMassa.criar();
+		atividadeExcluirMassa.excluirMassa();
+		atividadeExcluirMassa.afterClass();
 
 		System.out.println("-------------------Atividade Fiscal > Atividade Fiscal Fin-------------------------");
 	}
@@ -666,7 +736,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 27)
+	@Test(priority = 26)
 	public void grupoAtividadeFiscalVisualizar() {
 
 		grupoAtividadeVisualizar = new GrupoAtividadeVisualizar();
@@ -675,13 +745,36 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		grupoAtividadeVisualizar.acessarMDR();
 		grupoAtividadeVisualizar.visualizar();
 		grupoAtividadeVisualizar.afterClass();
+	}
+	
+	@Test(priority = 27)
+	public void grupoAtividadeFiscalExcluir() {
+
+		grupoAtividadeExcluir = new GrupoAtividadeExcluir();
+		grupoAtividadeExcluir.beforeClass();
+		grupoAtividadeExcluir.ingresar();
+		grupoAtividadeExcluir.mdrEntrar();
+		grupoAtividadeExcluir.excluir();
+		grupoAtividadeExcluir.afterClass();
+
+	}
+	
+	@Test(priority = 28)
+	public void grupoAtividadeFiscalExcluirMassa() {
+
+		grupoAtividadeExcluirMassa = new GrupoAtividadeExcluirMassa();
+		grupoAtividadeExcluirMassa.beforeClass();
+		grupoAtividadeExcluirMassa.login();
+		grupoAtividadeExcluirMassa.acessarMDR();
+		grupoAtividadeExcluirMassa.excluirMassa();
+		grupoAtividadeExcluirMassa.afterClass();
 
 		System.out.println("-------------------Atividade Fiscal > Grupo Atividade Fiscal Fin-------------------------");
 	}
 
 	// Cadastro da Condição
 
-	@Test(priority = 28)
+	@Test(priority = 29)
 	public void cadastroCondicaoCriar() {
 
 		System.out.println("-------------------Cadastro da Condição-------------------------");
@@ -695,7 +788,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 29)
+	@Test(priority = 30)
 	public void cadastroCondicaoEditar() {
 
 		cadastroCondicaoEditar = new CadastroCondicaoEditar();
@@ -707,7 +800,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 30)
+	@Test(priority = 31)
 	public void cadastroCondicaoVisualizar() {
 
 		cadasatroCondicaoVisualizar = new CadasatroCondicaoVisualizar();
@@ -719,7 +812,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 31)
+	@Test(priority = 32)
 	public void cadastroCondicaoExcluir() {
 
 		cadastroCondicaoExcluir = new CadastroCondicaoExcluir();
@@ -734,7 +827,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// Cadastro Derex > Insituição Financeira
 
-	@Test(priority = 32)
+	@Test(priority = 33)
 	public void instituicaoFinanceiraCriar() {
 
 		System.out.println("-------------------Cadastro Derex > Insituição Financeira-------------------------");
@@ -748,7 +841,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 33)
+	@Test(priority = 34)
 	public void instituicaoFinanceiraEditar() {
 
 		instituicaoEditar = new InstituicaoEditar();
@@ -771,6 +864,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		instituicaoVisualizar.afterClass();
 
 	}
+	
+	@Test(priority = 35)
+	public void institucaoDetalhes() {
+
+		institucaoDetalhes = new InstitucaoDetalhes();
+		institucaoDetalhes.beforeClass();
+		institucaoDetalhes.login();
+		institucaoDetalhes.acessarMDR();
+		institucaoDetalhes.detalhes();
+		institucaoDetalhes.afterClass();
+
+	}
+
 
 //Cadastro Derex > Cadastro Responsável Pelo Movimento
 
@@ -902,7 +1008,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 44)
+	@Test(priority = 43)
 	public void cenarioCorrecaoVisualizar() {
 
 		cenariosCorrecaoVisualizar = new CenariosCorrecaoVisualizar();
@@ -914,7 +1020,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 45)
+	@Test(priority = 44)
 	public void cenarioCorrecaoFiltro() {
 
 		cenariosCorrecaoFiltrosAvanzados = new CenariosCorrecaoFiltrosAvanzados();
@@ -926,7 +1032,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 46)
+	@Test(priority = 45)
 	public void cenarioCorrecaoExcluir() {
 
 		cenariosCorrecaoExcluir = new CenariosCorrecaoExcluir();
@@ -935,6 +1041,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		cenariosCorrecaoExcluir.acessarMDR();
 		cenariosCorrecaoExcluir.excluir();
 		cenariosCorrecaoExcluir.afterClass();
+
+	}
+	
+	@Test(priority = 46)
+	public void cenarioCorrecaoExcluirMassa() {
+
+		cenariosCorrecaoExcluirMassa = new CenariosCorrecaoExcluirMassa();
+		cenariosCorrecaoExcluirMassa.beforeClass();
+		cenariosCorrecaoExcluirMassa.login();
+		cenariosCorrecaoExcluirMassa.acessarMDR();
+		cenariosCorrecaoExcluirMassa.criar();
+		cenariosCorrecaoExcluirMassa.excluirMassa();
+		cenariosCorrecaoExcluirMassa.afterClass();
 
 		System.out.println("-------------------Cenários de Correcão Fin-------------------------");
 	}
@@ -1062,7 +1181,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 56)
+	@Test(priority = 55)
 	public void tributosVisualizar() {
 
 		tributosVisualizar = new TributosVisualizar();
@@ -1074,7 +1193,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 57)
+	@Test(priority = 56)
 	public void tributosDetalhes() {
 
 		tributosDetalhes = new TributosDetalhes();
@@ -1083,6 +1202,18 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		tributosDetalhes.acessarMDR();
 		tributosDetalhes.detalhes();
 		tributosDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 57)
+	public void tributosFiltrar() {
+
+		tributosFiltrar = new TributosFiltrar();
+		tributosFiltrar.beforeClass();
+		tributosFiltrar.ingresar();
+		tributosFiltrar.ingresarMDR();
+		tributosFiltrar.filtrar();
+		tributosFiltrar.afterClass();
 
 	}
 
@@ -1127,7 +1258,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 61)
+	@Test(priority = 60)
 	public void bairroVisualizar() {
 
 		bairroVisualizar = new BairroVisualizar();
@@ -1139,7 +1270,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 62)
+	@Test(priority = 61)
 	public void bairroFiltro() {
 
 		bairroFiltros = new BairroFiltros();
@@ -1151,7 +1282,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 63)
+	@Test(priority = 62)
 	public void bairroExcluir() {
 
 		bairroEliminar = new BairroEliminar();
@@ -1160,6 +1291,18 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		bairroEliminar.acessarMDR();
 		bairroEliminar.eliminar();
 		bairroEliminar.afterClass();
+	}
+	
+	@Test(priority = 63)
+	public void bairroExcluirMassa() {
+
+		bairroExcluirMassa = new BairroExcluirMassa();
+		bairroExcluirMassa.beforeClass();
+		bairroExcluirMassa.login();
+		bairroExcluirMassa.acessarMDR();
+		bairroExcluirMassa.criar();
+		bairroExcluirMassa.excluirMassa();
+		bairroExcluirMassa.afterClass();
 
 		System.out.println("-------------------CEP > Bairro Fin-------------------------");
 	}
@@ -1192,7 +1335,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 66)
+	@Test(priority = 65)
 	public void logradouroVisualizar() {
 
 		logradouroVisualizar = new LogradouroVisualizar();
@@ -1204,7 +1347,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 67)
+	@Test(priority = 66)
 	public void logradouroFiltro() {
 
 		logradouroFiltros = new LogradouroFiltros();
@@ -1216,7 +1359,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 68)
+	@Test(priority = 67)
 	public void logradouroExcluir() {
 
 		logradouroExcluir = new LogradouroExcluir();
@@ -1225,6 +1368,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		logradouroExcluir.acessarMDR();
 		logradouroExcluir.excluir();
 		logradouroExcluir.afterClass();
+
+	}
+	
+	@Test(priority = 68)
+	public void logradouroExcluirMassa() {
+
+		logradouroExcluirMassa = new LogradouroExcluirMassa();
+		logradouroExcluirMassa.beforeClass();
+		logradouroExcluirMassa.login();
+		logradouroExcluirMassa.acessarMDR();
+		logradouroExcluirMassa.criar();
+		logradouroExcluirMassa.excluirMassa();
+		logradouroExcluirMassa.afterClass();
 
 		System.out.println("-------------------CEP > Logradouro Fin-------------------------");
 	}
@@ -1257,7 +1413,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 71)
+	@Test(priority = 70)
 	public void municipioVisualizar() {
 
 		MunicipioVisualizar = new MunicipioVisualizar();
@@ -1269,7 +1425,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 72)
+	@Test(priority = 71)
 	public void municipioFiltro() {
 
 		municipioFiltros = new MunicipioFiltros();
@@ -1281,7 +1437,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 73)
+	@Test(priority = 72)
 	public void municipioExcluir() {
 
 		municipioEliminar = new MunicipioEliminar();
@@ -1290,6 +1446,17 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		municipioEliminar.acessarMDR();
 		municipioEliminar.excluir();
 		municipioEliminar.afterClass();
+	}
+	
+	@Test(priority = 73)
+	public void municipioExcluirMassa() {
+
+		municipioExcluirEmMassa = new MunicipioExcluirEmMassa();
+		municipioExcluirEmMassa.beforeClass();
+		municipioExcluirEmMassa.login();
+		municipioExcluirEmMassa.acessarMDR();
+		municipioExcluirEmMassa.criar();
+		municipioExcluirEmMassa.afterClass();
 
 		System.out.println("-------------------CEP > Município Fin-------------------------");
 	}
@@ -1343,6 +1510,17 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		codigoContabalizacaoDetalhes.acessarMDR();
 		codigoContabalizacaoDetalhes.detalhes();
 		codigoContabalizacaoDetalhes.afterClass();
+
+	}
+	@Test(priority = 76)
+	public void códigoContabilizaçãoExcluirMassa() {
+
+		códigoContabilizaçãoExcluirMassa = new CódigoContabilizaçãoExcluirMassa();
+		códigoContabilizaçãoExcluirMassa.beforeClass();
+		códigoContabilizaçãoExcluirMassa.login();
+		códigoContabilizaçãoExcluirMassa.acessarMDR();
+		códigoContabilizaçãoExcluirMassa.criar();
+		códigoContabilizaçãoExcluirMassa.afterClass();
 
 	}
 
@@ -1491,6 +1669,17 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		contratoIOFVisualizar.acessarMDR();
 		contratoIOFVisualizar.visualizar();
 		contratoIOFVisualizar.afterClass();
+
+	}
+	@Test(priority = 86)
+	public void contratoIOFDetalhes() {
+
+		contratoIOFDetalhes = new ContratoIOFDetalhes();
+		contratoIOFDetalhes.beforeClass();
+		contratoIOFDetalhes.login();
+		contratoIOFDetalhes.acessarMDR();
+		contratoIOFDetalhes.Detalhes();
+		contratoIOFDetalhes.afterClass();
 
 	}
 
@@ -1800,6 +1989,109 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosNaApuracaoFiltroId.afterClass();
 
 	}
+	
+	// Atividades Fiscais > Associação de Atividades Fiscais
+	//108
+	@Test(priority = 109)
+	public void excluirAssociacao() {
+		associaçãoExcluir = new AssociaçãoExcluir();
+		associaçãoExcluir.beforeClass();
+		associaçãoExcluir.login();
+		associaçãoExcluir.acessarMDR();
+		associaçãoExcluir.excluirr();
+		associaçãoExcluir.afterClass();
+		
 
+	}
+
+	//112
+	
+	// SPCB - Federais Retidos
+		
+	@Test(priority = 113)
+	public void criarSPCB() {
+		sPCBFederaisRetidosCriar = new SPCBFederaisRetidosCriar();
+		sPCBFederaisRetidosCriar.beforeClass();
+		sPCBFederaisRetidosCriar.login();
+		sPCBFederaisRetidosCriar.acessarMDR();
+		sPCBFederaisRetidosCriar.criar();
+		sPCBFederaisRetidosCriar.afterClass();
+	}
+	
+	@Test(priority = 114)
+	public void editarSPCB() {
+		sPCBFederaisRetidosEditar = new SPCBFederaisRetidosEditar();
+		sPCBFederaisRetidosEditar.beforeClass();
+		sPCBFederaisRetidosEditar.login();
+		sPCBFederaisRetidosEditar.acessarMDR();
+		sPCBFederaisRetidosEditar.editar();
+		sPCBFederaisRetidosEditar.afterClass();
+	}
+	@Test(priority = 115)
+	public void excluirSPCB() {
+		sPCBFederaisRetidosExcluir = new SPCBFederaisRetidosExcluir();
+		sPCBFederaisRetidosExcluir.beforeClass();
+		sPCBFederaisRetidosExcluir.login();
+		sPCBFederaisRetidosExcluir.acessarMDR();
+		sPCBFederaisRetidosExcluir.excluirr();
+		sPCBFederaisRetidosExcluir.afterClass();
+	}
+	@Test(priority = 116)
+	public void excluirMassaSPCB() {
+		sPCBFederaisRetidosExcluirMassa = new SPCBFederaisRetidosExcluirMassa();
+		sPCBFederaisRetidosExcluirMassa.beforeClass();
+		sPCBFederaisRetidosExcluirMassa.login();
+		sPCBFederaisRetidosExcluirMassa.acessarMDR();
+		sPCBFederaisRetidosExcluirMassa.criar();
+		sPCBFederaisRetidosExcluirMassa.afterClass();
+		System.out.println(
+				"-------------------SPCB - Federais Retidos FIN-------------------------");
+	}
+	
+	// Notas a Declarar Anexo III DIA-AM
+	
+	@Test(priority = 117)
+	public void criarMassaNotas() {
+		System.out.println("-------------------Notas a Declarar Anexo III DIA-AM -------------------------");
+		notasDeclararAnexoIIICriar = new NotasDeclararAnexoIIICriar();
+		notasDeclararAnexoIIICriar.beforeClass();
+		notasDeclararAnexoIIICriar.ingresar();
+		notasDeclararAnexoIIICriar.mdrEntrar();
+		notasDeclararAnexoIIICriar.criar();
+		notasDeclararAnexoIIICriar.afterClass();
+	}
+	
+	@Test(priority = 118)
+	public void detalheMassaNotas() {
+		notasDeclararAnexoIIIDetalhe = new NotasDeclararAnexoIIIDetalhe();
+		notasDeclararAnexoIIIDetalhe.beforeClass();
+		notasDeclararAnexoIIIDetalhe.ingresar();
+		notasDeclararAnexoIIIDetalhe.mdrEntrar();
+		notasDeclararAnexoIIIDetalhe.detalhe();
+		notasDeclararAnexoIIIDetalhe.afterClass();
+	}
+	
+	@Test(priority = 119)
+	public void excluirNotas() {
+		notasDeclararAnexoIIIExcluir = new NotasDeclararAnexoIIIExcluir();
+		notasDeclararAnexoIIIExcluir.beforeClass();
+		notasDeclararAnexoIIIExcluir.ingresar();
+		notasDeclararAnexoIIIExcluir.mdrEntrar();
+		notasDeclararAnexoIIIExcluir.excluir();
+		notasDeclararAnexoIIIExcluir.afterClass();
+	}
+	
+	@Test(priority = 120)
+	public void excluirMassaNotas() {
+		notasDeclararAnexoIIIExcluirMassa = new NotasDeclararAnexoIIIExcluirMassa();
+		notasDeclararAnexoIIIExcluirMassa.beforeClass();
+		notasDeclararAnexoIIIExcluirMassa.login();
+		notasDeclararAnexoIIIExcluirMassa.acessarMDR();
+		notasDeclararAnexoIIIExcluirMassa.criar();
+		notasDeclararAnexoIIIExcluirMassa.afterClass();
+		System.out.println("-------------------Notas a Declarar Anexo III DIA-AM FIN-------------------------");
+	}
+	//120
+		
 
 }

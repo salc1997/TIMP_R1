@@ -28,7 +28,7 @@ public class TiposDeBenefíciosExcluir extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -43,8 +43,8 @@ public class TiposDeBenefíciosExcluir extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void exluir() {
+	public void excluir() {
 		boolean sucesso = tiposDeBenefíciosExcluirPO.excluir();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Eliminado);
 	}
 }

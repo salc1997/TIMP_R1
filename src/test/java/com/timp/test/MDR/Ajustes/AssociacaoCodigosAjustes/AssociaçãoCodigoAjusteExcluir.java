@@ -28,6 +28,7 @@ public class AssociaçãoCodigoAjusteExcluir extends TestBaseFernando{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test(priority = 0)

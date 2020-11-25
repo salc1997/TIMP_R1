@@ -39,6 +39,8 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 	public WebElement grupoEstrutura;
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
+	public WebElement opcaoGrupoEstruturaTP1;
+	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcaoGrupoEstrutura;
 	
 	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")
@@ -160,6 +162,8 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> criar() {
 		
+
+		
 		waitExpectElement(raiz1);
 		raiz1.click();
 		sleep(3000);
@@ -199,12 +203,26 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 		sleep(1000);
 		actionsMoveToElementElement(versaoLeiaute);
 		sleep(1000);
-		
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		boolean tp1 = false;
+		if (url.contains("tp1")) {
+			tp1 = true;
+		}else {
+			tp1 = false;
+		}
+		System.out.println(tp1);
 		grupoEstrutura.click();
 		sleep(1000);
 		actionsMoveToElementElement(opcaoGrupoEstrutura);
 		sleep(1000);
-		opcaoGrupoEstrutura.click();
+		
+		if (tp1 == true) {
+			opcaoGrupoEstruturaTP1.click();
+		}else {
+			opcaoGrupoEstrutura.click();
+		}
+		
 		sleep(1000);
 		
 		estrutura.click();
@@ -410,6 +428,7 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 		rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		
 		String idConfiguracaoTC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
+		idInserir2(idConfiguracaoTC);
 		String nomeC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[6]/div")).getText();
 		String empresaC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[9]/div/li")).getText();
 		String ufC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[10]/div/li")).getText();

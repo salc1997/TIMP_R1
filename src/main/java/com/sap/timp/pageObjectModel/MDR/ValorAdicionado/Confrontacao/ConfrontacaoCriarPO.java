@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ConfrontacaoCriarPO extends TestBaseEliel{
+public class ConfrontacaoCriarPO extends TestBaseMassiel{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Valor Adicionado\"]")

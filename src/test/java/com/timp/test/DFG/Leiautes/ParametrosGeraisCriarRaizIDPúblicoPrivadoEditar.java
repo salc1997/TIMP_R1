@@ -34,6 +34,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar extends TestBaseSte
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -48,8 +49,10 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar extends TestBaseSte
 	}
 
 	@Test(priority = 2)
-	public void criar() {
-		parametrosGeraisCriarRaizIDPúblicoPrivado.editar();
+	public void editar() {
+		boolean sucesso = parametrosGeraisCriarRaizIDPúblicoPrivado.editar();
+		
+		assertTrue(sucesso, Editar);
 	
 	}
 }

@@ -326,7 +326,7 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 		configuracoes.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(7000);
 		raiz2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

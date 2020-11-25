@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
+=======
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
     <classes>
       <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
         <methods>

@@ -3,6 +3,7 @@ package com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialCriarPO;
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrizaçãoDoLivroOficial extends TestBaseFernando{
+public class ParametrizaçãoDoLivroOficial extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrizaçãoDoLivroOficialCriarPO parametrizaçãoDoLivroOficialPO;
@@ -21,7 +22,7 @@ public class ParametrizaçãoDoLivroOficial extends TestBaseFernando{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationF();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrizaçãoDoLivroOficialPO = new ParametrizaçãoDoLivroOficialCriarPO();

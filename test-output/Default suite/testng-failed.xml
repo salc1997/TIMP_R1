@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia">
         <methods>
-          <include name="afterClass"/>
-          <include name="detalhe"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criarComCopia"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe -->
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

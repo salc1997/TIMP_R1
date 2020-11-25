@@ -42,7 +42,7 @@ public class AntecipacaoDetalhePO extends TestBaseFernando{
 	@FindBy(xpath = "//span[@id=\"BRANCH\"]")
 	public WebElement filial1;
 	
-	@FindBy(xpath = "//div[@id=\"detail-description\"][41]/div[2]/div")
+	@FindBy(xpath = "//span[@id=\"ANTICIPATION_PERIOD_START\"]")
 	public WebElement periodo1;
 	
 	@FindBy(xpath = "//span[@id=\"ACTIVE\"]")
@@ -85,14 +85,14 @@ public class AntecipacaoDetalhePO extends TestBaseFernando{
 		String empresaString = empresa.getText();
 		String ufString = uf.getText();
 		String filialString = filial.getText();
-		//String periodoString = periodo.getText();
+		String periodoString = periodo.getText();
 		String ativoString = ativo.getText();
 		
 		System.out.println("Datos detalhe");
 		System.out.println("Empresa: " + empresaString);
 		System.out.println("UF: " + ufString);
 		System.out.println("Filial: " + filialString);
-		//System.out.println("Periodo: " + periodoString);
+		System.out.println("Periodo: " + periodoString);
 		System.out.println("Ativo: " + ativoString);
 		
 		btnCerrar.click();
@@ -122,7 +122,7 @@ public class AntecipacaoDetalhePO extends TestBaseFernando{
 		String empresaString1 = empresa1.getText();
 		String ufString1 = uf1.getText();
 		String filialString1 = filial1.getText();
-		//String periodoString = periodo.getText();
+		String periodoString1 = periodo1.getText();
 		String ativoString1 = ativo1.getText();
 
 		System.out.println("");
@@ -130,7 +130,7 @@ public class AntecipacaoDetalhePO extends TestBaseFernando{
 		System.out.println("Empresa: " + empresaString1);
 		System.out.println("UF: " + ufString1);
 		System.out.println("Filial: " + filialString1);
-		//System.out.println("Periodo: " + periodoString);
+		System.out.println("Periodo: " + periodoString1);
 		System.out.println("Ativo: " + ativoString1);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -138,7 +138,8 @@ public class AntecipacaoDetalhePO extends TestBaseFernando{
 		sucesso.add(empresaString1.contains(empresaString));
 		sucesso.add(ufString1.contains(ufString));
 		sucesso.add(filialString1.contains(filialString));
-		sucesso.add(ativoString1.contains(ativoString));
+		sucesso.add(filialString1.contains(filialString));
+		sucesso.add(periodoString1.contains(periodoString));
 		System.out.println(sucesso);
 	
 		return sucesso;

@@ -23,7 +23,7 @@ public class TestBaseFernando extends TestBaseSteven {
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tc2);
 		return driver;
 	}
 

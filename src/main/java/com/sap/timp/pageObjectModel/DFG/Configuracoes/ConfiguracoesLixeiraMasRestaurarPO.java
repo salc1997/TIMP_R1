@@ -8,16 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseFernando;
 
-public class ConfiguracoesFavoritosPO extends TestBaseFernando{
+public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Display-and-Setting icon-setting padding-right \"]")
 	public WebElement configuracoes;
 	
 	@FindBy(xpath = "//div[@class=\"tabSettings-wrapper\"]/div/div/div[1]/div[1]/div[2]")
 	public WebElement raiz;
-	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement btnUltimaPagina;
-	
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
 	public WebElement btnFiltrosAvanzados;
 	
@@ -27,17 +23,17 @@ public class ConfiguracoesFavoritosPO extends TestBaseFernando{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-my-setting\"]")
-	public WebElement minhasConfiguracoes;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash-setting\"]")
+	public WebElement lixeira;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-favorite-setting\"]")
-	public WebElement meusFavoritos;
+	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
+	public WebElement limpiarFiltros;
 	
-	public ConfiguracoesFavoritosPO() {
+	public ConfiguracoesLixeiraMasRestaurarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean favoritos() {
+	public boolean lixeiraMasRestaurar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -74,31 +70,65 @@ public class ConfiguracoesFavoritosPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement favorito = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[3]/span"));
-		sleep(4000);
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		favorito.click();
+		menu.click();
+		sleep(1000);
+		açao.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		lixeira.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		limpiarFiltros.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		waitExpectElement(inputId);
+		inputId.clear();
+		inputId.click();
+		sleep(1000);
+		inputId.sendKeys(idRegistro);
+		sleep(1000);
+		inputId.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		minhasConfiguracoes.click();
-		sleep(1000);
-		meusFavoritos.click();
-		sleep(1000);
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Restaurar\"]"));
 		
+		menu.click();
+		sleep(1000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		raiz.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.click();
-		pesquisar.clear();
+		limpiarFiltros.click();
 		sleep(2000);
-		pesquisar.sendKeys(idRegistro);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		waitExpectElement(inputId);
+		inputId.clear();
+		inputId.click();
 		sleep(1000);
-		pesquisar.sendKeys(Keys.ENTER);
+		inputId.sendKeys(idRegistro);
+		sleep(1000);
+		inputId.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

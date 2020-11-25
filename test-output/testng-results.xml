@@ -1,29 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
 <testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="156784" started-at="2020-11-25T23:13:17Z" finished-at="2020-11-25T23:15:53Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-25T21:09:46Z" name="Default suite" finished-at="2020-11-25T21:13:27Z" duration-ms="221515">
+=======
+  <suite name="Default suite" duration-ms="238465" started-at="2020-11-25T21:04:52Z" finished-at="2020-11-25T21:08:51Z">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="156784" started-at="2020-11-25T23:13:17Z" finished-at="2020-11-25T23:15:53Z">
       <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11191" started-at="2020-11-25T17:13:17Z" finished-at="2020-11-25T17:13:28Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-25T21:09:46Z" name="Default test" finished-at="2020-11-25T21:13:27Z" duration-ms="221515">
+=======
+    <test name="Default test" duration-ms="238465" started-at="2020-11-25T21:04:52Z" finished-at="2020-11-25T21:08:51Z">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:09:46Z" name="beforeClass" finished-at="2020-11-25T15:09:57Z" duration-ms="11380" status="PASS">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="18187" started-at="2020-11-25T15:04:52Z" finished-at="2020-11-25T15:05:10Z">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="login" duration-ms="5965" started-at="2020-11-25T17:13:28Z" finished-at="2020-11-25T17:13:34Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:09:57Z" name="ingresar" finished-at="2020-11-25T15:10:07Z" duration-ms="9871" status="PASS">
+=======
+        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="ingresar" duration-ms="7598" started-at="2020-11-25T15:05:10Z" finished-at="2020-11-25T15:05:18Z">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="acessarMDR" duration-ms="20340" started-at="2020-11-25T17:13:34Z" finished-at="2020-11-25T17:13:54Z">
+=======
+        </test-method> <!-- ingresar -->
+<<<<<<< HEAD
+        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:10:07Z" name="mdrEntrar" finished-at="2020-11-25T15:10:22Z" duration-ms="14536" status="PASS">
+=======
+        <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="mdrEntrar" duration-ms="15528" started-at="2020-11-25T15:05:18Z" finished-at="2020-11-25T15:05:33Z">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="criar" duration-ms="114826" started-at="2020-11-25T17:13:54Z" finished-at="2020-11-25T17:15:49Z">
+=======
+        </test-method> <!-- mdrEntrar -->
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:10:22Z" name="criar" finished-at="2020-11-25T15:13:23Z" duration-ms="181367" status="PASS">
+=======
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="criar" duration-ms="192688" started-at="2020-11-25T15:05:33Z" finished-at="2020-11-25T15:08:46Z">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4450" started-at="2020-11-25T17:15:49Z" finished-at="2020-11-25T17:15:53Z">
+=======
+<<<<<<< HEAD
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:13:23Z" name="afterClass" finished-at="2020-11-25T15:13:27Z" duration-ms="4340" status="PASS">
+=======
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4443" started-at="2020-11-25T15:08:46Z" finished-at="2020-11-25T15:08:51Z">
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -44,7 +44,7 @@ public class AcessarDFGPO extends TestBaseMassiel{
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(3000);
 		return sucesso;
 		
 	}

@@ -17,69 +17,24 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseS
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;
 
-	@FindBy(xpath = "//button/span[text()=\"Novo Leiaute\"]")
-	public WebElement novo;
+	@FindBy(xpath = "//div[@class=\"actions\"]")
+	public WebElement menu;
 
-	@FindBy(xpath = "//input[contains(@placeholder,\"nome\")]")
+	@FindBy(xpath = "//span[text()=\"Editar\"]")
+	public WebElement editar;
+
+	@FindBy(xpath = "//span[text()=\"Adicionar bloco\"]")
+	public WebElement bloco;
+
+	@FindBy(xpath = "//input[contains(@placeholder,\"Nome\")]")
 	public WebElement nome;
-
-	@FindBy(xpath = "//div[@id=\"inputSelectTypeFile\"]/div/div/div[2]")
-	public WebElement tipo;
-
-	@FindBy(xpath = "//div[@id=\"inputStructureParent\"]/div/div/div[2]")
-	public WebElement grupoEstrutura;
-	
-	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")
-	public WebElement estrutura;
-
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
-	public WebElement dataVigencia;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Versão\")]")
-	public WebElement versaoLeiaute;
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-public-layout\"]")
 	public WebElement leiautePublico;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcao2;
-	
-	@FindBy(xpath = "//button[@id=\"advanced-filters-btn\"]")
-	public WebElement filtrosAvanzados;
-	
-	@FindBy(xpath = "//div[@id=\"mes\"]/div/div/div[2]")
-	public WebElement mes;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
-	public WebElement mesO;
-	
-	@FindBy(xpath = "//div[@id=\"recorrenciaFeriado\"]/div/div/div[2]")
-	public WebElement recorrencia;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
-	public WebElement recorrenciaO;
-	
-	@FindBy(xpath = "//*[@id=\"vigencia1-activities\"]/div/div[1]/input")
-	public WebElement data;
-	/*
-	@FindBy(xpath = "")
-	public WebElement ;
-	*/
-	
-	@FindBy(xpath = "//li[@tabindex=\"0\"]/div[@class=\"title\"]/span[text()=\"Atividades Fiscais\"]")
-	public WebElement atividades;
-	
-	@FindBy(xpath = "//button[text()=\"Salvar\"]")
-	public WebElement salvar;
-	
-	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
-	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement siguiente;
-	
+
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
@@ -103,19 +58,12 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseS
 	}
 	
 	
-	public void editar() {
+	public boolean editar() {
 		
 		leiautePublico.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
 		
 		pesquisar.sendKeys(idObter1());
 		pesquisar.sendKeys(Keys.ENTER);
@@ -123,6 +71,55 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseS
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(3000);
+		
+		sleep(3000);
+		waitExpectElement(bloco);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		bloco.click();
+		sleep(2000);
+		nome.sendKeys("Teste Automatizado");
+		sleep(1000);
+		
+		gravar.click();
+		sleep(3000);
+		waitExpectElement(nao);
+		sleep(2000);
+		nao.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		driver.navigate().refresh();
+		
+		sleep(3000);
+		waitExpectElement(bloco);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		
+		int blocoM = driver.findElements(By.xpath("//div[@class=\"block-wrapper\"]")).size();
+		boolean sucesso = false;
+		
+		if (blocoM > 0) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		System.out.println(sucesso);
+		
+		return sucesso;
 		
 	}
 	

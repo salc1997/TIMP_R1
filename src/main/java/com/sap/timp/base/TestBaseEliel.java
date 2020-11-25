@@ -171,6 +171,10 @@ public String dataanterior() {
 		
 	}
 	
+	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
+	}
+	
 	//BRB
 	public String elementosDiferentes = "Os elementos não são iguais";
 	public String comentariosInativos = "Os comentários não foram ativados";

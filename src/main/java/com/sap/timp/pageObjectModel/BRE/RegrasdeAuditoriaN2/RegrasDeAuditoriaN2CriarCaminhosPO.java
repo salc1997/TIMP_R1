@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE;
+package com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -36,10 +36,10 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//li[@id=\"option-2\"]")
 	public WebElement opcTipoDeRegra;
 	
-	@FindBy(xpath = "//li[@id=\"option-3\"]")
+	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcGrupo;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[text()=\"Ajustes Fiscais\"]")
 	public WebElement opcEstructura;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar o Tributo\"]")
@@ -140,7 +140,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	
 		sleep(6000);
 		
-		nome.sendKeys("PRUEBA QA 003");
+		nome.sendKeys("PRUEBA QA 001");
 		sleep(2000);
 		
 		
@@ -220,6 +220,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		sleep(2000);
 		sleep(2000);
 		AN2.click();

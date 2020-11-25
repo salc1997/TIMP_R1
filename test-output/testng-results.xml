@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <testng-results total="3" passed="3" failed="0" skipped="0">
 =======
 <<<<<<< HEAD
@@ -12,7 +14,10 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <testng-results total="2" passed="2" failed="0" skipped="0">
+<<<<<<< HEAD
+=======
 =======
 <testng-results total="3" passed="2" failed="1" skipped="0">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -20,8 +25,12 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2020-11-25T04:53:43Z" name="Default suite" finished-at="2020-11-25T04:54:21Z" duration-ms="38212">
+=======
 <<<<<<< HEAD
   <suite started-at="2020-11-25T03:40:01Z" name="Default suite" finished-at="2020-11-25T03:42:32Z" duration-ms="151416">
 =======
@@ -47,8 +56,14 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2020-11-25T04:53:43Z" name="Default test" finished-at="2020-11-25T04:54:21Z" duration-ms="38212">
+      <class name="com.timp.test.BSC.AcessarBSC">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:53:43Z" name="beforeClass" finished-at="2020-11-24T22:53:59Z" duration-ms="16614" status="PASS">
+=======
 <<<<<<< HEAD
     <test started-at="2020-11-25T03:40:01Z" name="Default test" finished-at="2020-11-25T03:42:32Z" duration-ms="151416">
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia">
@@ -88,9 +103,13 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:53:59Z" name="login" finished-at="2020-11-24T22:54:06Z" duration-ms="6699" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia@10f7f7de]" started-at="2020-11-24T21:40:17Z" name="login" finished-at="2020-11-24T21:40:26Z" duration-ms="8461" status="PASS">
 =======
@@ -115,8 +134,11 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia@10f7f7de]" started-at="2020-11-24T21:40:26Z" name="acessarBRE" finished-at="2020-11-24T21:40:39Z" duration-ms="13363" status="PASS">
@@ -238,7 +260,11 @@ Session ID: 7d79a1066814a56c8d4ba11769e1fe1b
 =======
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="BSCEntrar()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:54:06Z" name="BSCEntrar" finished-at="2020-11-24T22:54:21Z" duration-ms="14875" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:19Z" name="acessarBRE" finished-at="2020-11-24T15:53:35Z" duration-ms="15845" status="PASS">
 =======
@@ -248,8 +274,13 @@ Session ID: 7d79a1066814a56c8d4ba11769e1fe1b
         <test-method signature="BPMAEntrar()[pri:0, instance:com.timp.test.BPMA.AcessarBPMA@f78a47e]" started-at="2020-11-24T09:19:47Z" name="BPMAEntrar" finished-at="2020-11-24T09:20:01Z" duration-ms="14665" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- BSCEntrar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:54:21Z" name="afterClass" finished-at="2020-11-24T22:54:21Z" duration-ms="0" status="PASS">
+=======
 <<<<<<< HEAD
         </test-method> <!-- acessarBRE -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:35Z" name="criar" finished-at="2020-11-24T15:55:04Z" duration-ms="88930" status="PASS">
@@ -282,9 +313,13 @@ Session ID: 7d79a1066814a56c8d4ba11769e1fe1b
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BSC.AcessarBSC -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia -->
 =======
@@ -304,6 +339,7 @@ Session ID: 7d79a1066814a56c8d4ba11769e1fe1b
       </class> <!-- com.timp.test.BPMA.AcessarBPMA -->
 =======
       </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

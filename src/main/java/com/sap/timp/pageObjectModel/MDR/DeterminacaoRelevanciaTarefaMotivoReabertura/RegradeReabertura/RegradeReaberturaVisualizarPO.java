@@ -48,6 +48,7 @@ public class RegradeReaberturaVisualizarPO extends TestBaseMassiel{
 	public RegradeReaberturaVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
+	
 
 
 	public ArrayList<Boolean> visualizar() {

@@ -1,14 +1,14 @@
-package com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial;
+package com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrizaÃ§Ã£oDoLivroOficial;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.base.TestBaseMassiel;
 
-public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel{
+public class ParametrizaÃ§Ã£oDoLivroOficialCriarPO extends TestBaseMassiel {
+	
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Ajustes\"]")
 	public WebElement menuAjustesCerrar;
 	
@@ -30,7 +30,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
-	@FindBy(xpath = "//span[text()=\"Nova configuração livro oficial\"]")
+	@FindBy(xpath = "//span[text()=\"Nova configuraÃ§Ã£o livro oficial\"]")
 	public WebElement btnNovaConfigurazacaoDoLivroOficial;
 	
 	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div[2]")
@@ -165,10 +165,10 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//body")
 	public WebElement body;
 	
-	public ParametrizaçãoDoLivroOficialCriarPO() {
+	public ParametrizaÃ§Ã£oDoLivroOficialCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public boolean criar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -548,7 +548,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel{
 		double idD = Integer.valueOf(id); 
 		double idBD = Integer.valueOf(idB);
 		  
-		//compara pra ver se o novo id criado é realmente o ultimo
+		//compara pra ver se o novo id criado ï¿½ realmente o ultimo
 		  
 		if (idBD > idD) { 
 			sucesso = true; 

@@ -1,19 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="1" total="3" passed="2">
+=======
+<<<<<<< HEAD
+<testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
 <testng-results skipped="0" failed="0" total="3" passed="3">
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<testng-results total="2" passed="2" failed="0" skipped="0">
+<<<<<<< HEAD
+=======
+=======
+<testng-results total="3" passed="2" failed="1" skipped="0">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="111930" started-at="2020-11-25T15:54:02Z" finished-at="2020-11-25T15:55:54Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-25T04:53:43Z" name="Default suite" finished-at="2020-11-25T04:54:21Z" duration-ms="38212">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-25T03:40:01Z" name="Default suite" finished-at="2020-11-25T03:42:32Z" duration-ms="151416">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="71144" started-at="2020-11-24T23:55:59Z" finished-at="2020-11-24T23:57:10Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-24T13:54:08Z" name="Default suite" finished-at="2020-11-24T13:56:06Z" duration-ms="118652">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-24T18:52:55Z" name="Default suite" finished-at="2020-11-24T18:55:04Z" duration-ms="129397">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="68928" started-at="2020-11-24T16:36:38Z" finished-at="2020-11-24T16:37:47Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2020-11-24T15:19:25Z" name="Default suite" finished-at="2020-11-24T15:20:01Z" duration-ms="36545">
+=======
+  <suite started-at="2020-11-24T05:39:09Z" name="Default suite" finished-at="2020-11-24T05:40:24Z" duration-ms="75043">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="111930" started-at="2020-11-25T15:54:02Z" finished-at="2020-11-25T15:55:54Z">
       <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesEditar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesEditar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="15029" started-at="2020-11-25T09:54:02Z" finished-at="2020-11-25T09:54:17Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-25T04:53:43Z" name="Default test" finished-at="2020-11-25T04:54:21Z" duration-ms="38212">
+      <class name="com.timp.test.BSC.AcessarBSC">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:53:43Z" name="beforeClass" finished-at="2020-11-24T22:53:59Z" duration-ms="16614" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-25T03:40:01Z" name="Default test" finished-at="2020-11-25T03:42:32Z" duration-ms="151416">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia@10f7f7de]" started-at="2020-11-24T21:40:01Z" name="beforeClass" finished-at="2020-11-24T21:40:17Z" duration-ms="16453" status="PASS">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="71144" started-at="2020-11-24T23:55:59Z" finished-at="2020-11-24T23:57:10Z">
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="15859" started-at="2020-11-24T17:55:59Z" finished-at="2020-11-24T17:56:15Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-24T13:54:08Z" name="Default test" finished-at="2020-11-24T13:56:06Z" duration-ms="118652">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@4c309d4d]" started-at="2020-11-24T10:54:08Z" name="beforeClass" finished-at="2020-11-24T10:54:21Z" duration-ms="13337" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-24T18:52:55Z" name="Default test" finished-at="2020-11-24T18:55:04Z" duration-ms="129397">
+      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:52:55Z" name="beforeClass" finished-at="2020-11-24T15:53:10Z" duration-ms="15205" status="PASS">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="68928" started-at="2020-11-24T16:36:38Z" finished-at="2020-11-24T16:37:47Z">
+      <class name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="15223" started-at="2020-11-24T10:36:38Z" finished-at="2020-11-24T10:36:53Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2020-11-24T15:19:25Z" name="Default test" finished-at="2020-11-24T15:20:01Z" duration-ms="36545">
+      <class name="com.timp.test.BPMA.AcessarBPMA">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BPMA.AcessarBPMA@f78a47e]" started-at="2020-11-24T09:19:25Z" name="beforeClass" finished-at="2020-11-24T09:19:41Z" duration-ms="16208" status="PASS">
+=======
+    <test started-at="2020-11-24T05:39:09Z" name="Default test" finished-at="2020-11-24T05:40:24Z" duration-ms="75043">
+      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe@10f7f7de]" started-at="2020-11-23T23:39:09Z" name="beforeClass" finished-at="2020-11-23T23:39:22Z" duration-ms="12890" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesEditar@f2f2cc1]" name="ingresar" duration-ms="6240" started-at="2020-11-25T09:54:17Z" finished-at="2020-11-25T09:54:23Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:53:59Z" name="login" finished-at="2020-11-24T22:54:06Z" duration-ms="6699" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia@10f7f7de]" started-at="2020-11-24T21:40:17Z" name="login" finished-at="2020-11-24T21:40:26Z" duration-ms="8461" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="ingresar" duration-ms="7906" started-at="2020-11-24T17:56:15Z" finished-at="2020-11-24T17:56:23Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@4c309d4d]" started-at="2020-11-24T10:54:21Z" name="login" finished-at="2020-11-24T10:54:29Z" duration-ms="7637" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:10Z" name="login" finished-at="2020-11-24T15:53:19Z" duration-ms="9405" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="login" duration-ms="7874" started-at="2020-11-24T10:36:53Z" finished-at="2020-11-24T10:37:01Z">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.AcessarBPMA@f78a47e]" started-at="2020-11-24T09:19:41Z" name="login" finished-at="2020-11-24T09:19:47Z" duration-ms="5654" status="PASS">
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe@10f7f7de]" started-at="2020-11-23T23:39:22Z" name="ingresar" finished-at="2020-11-23T23:39:30Z" duration-ms="7967" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- login -->
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia@10f7f7de]" started-at="2020-11-24T21:40:26Z" name="acessarBRE" finished-at="2020-11-24T21:40:39Z" duration-ms="13363" status="PASS">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- login -->
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@4c309d4d]" started-at="2020-11-24T10:54:29Z" name="acessarBRE" finished-at="2020-11-24T10:54:45Z" duration-ms="16010" status="PASS">
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
         </test-method> <!-- ingresar -->
         <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesEditar@f2f2cc1]" name="mdrEntrar" duration-ms="16734" started-at="2020-11-25T09:54:23Z" finished-at="2020-11-25T09:54:40Z">
           <reporter-output>
@@ -22,12 +183,115 @@
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesEditar@f2f2cc1]" name="criar" duration-ms="73840" started-at="2020-11-25T09:54:40Z" finished-at="2020-11-25T09:55:54Z">
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- criarComCopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia@10f7f7de]" started-at="2020-11-24T21:42:32Z" name="afterClass" finished-at="2020-11-24T21:42:32Z" duration-ms="0" status="PASS">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- lexeira -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@4c309d4d]" started-at="2020-11-24T10:56:06Z" name="afterClass" finished-at="2020-11-24T10:56:06Z" duration-ms="0" status="PASS">
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="BSCEntrar()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:54:06Z" name="BSCEntrar" finished-at="2020-11-24T22:54:21Z" duration-ms="14875" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:19Z" name="acessarBRE" finished-at="2020-11-24T15:53:35Z" duration-ms="15845" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="acessarMDR" duration-ms="13283" started-at="2020-11-24T10:37:01Z" finished-at="2020-11-24T10:37:14Z">
+=======
+        <test-method signature="BPMAEntrar()[pri:0, instance:com.timp.test.BPMA.AcessarBPMA@f78a47e]" started-at="2020-11-24T09:19:47Z" name="BPMAEntrar" finished-at="2020-11-24T09:20:01Z" duration-ms="14665" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- BSCEntrar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BSC.AcessarBSC@f78a47e]" started-at="2020-11-24T22:54:21Z" name="afterClass" finished-at="2020-11-24T22:54:21Z" duration-ms="0" status="PASS">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:53:35Z" name="criar" finished-at="2020-11-24T15:55:04Z" duration-ms="88930" status="PASS">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- acessarMDR -->
+        <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="filtro" duration-ms="28103" started-at="2020-11-24T10:37:14Z" finished-at="2020-11-24T10:37:42Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesEditar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="72" started-at="2020-11-25T09:55:54Z" finished-at="2020-11-25T09:55:54Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="107" started-at="2020-11-24T17:57:10Z" finished-at="2020-11-24T17:57:10Z">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar@6d4d66d2]" started-at="2020-11-24T15:55:04Z" name="afterClass" finished-at="2020-11-24T15:55:04Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- filtro -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4423" started-at="2020-11-24T10:37:42Z" finished-at="2020-11-24T10:37:47Z">
+=======
+        </test-method> <!-- BPMAEntrar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.AcessarBPMA@f78a47e]" started-at="2020-11-24T09:20:01Z" name="afterClass" finished-at="2020-11-24T09:20:01Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- detalhe -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe@10f7f7de]" started-at="2020-11-23T23:40:19Z" name="afterClass" finished-at="2020-11-23T23:40:24Z" duration-ms="4328" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesEditar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BSC.AcessarBSC -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCriarComCopia -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BPMA.AcessarBPMA -->
+=======
+      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

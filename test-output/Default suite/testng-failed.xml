@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
+      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
         <methods>
-          <include name="criar"/>
           <include name="beforeClass"/>
+          <include name="criar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriar -->
+      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

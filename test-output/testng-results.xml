@@ -2,11 +2,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Fernando
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Eliel
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -16,8 +20,11 @@
 >>>>>>> refs/remotes/origin/Fernando
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Eliel
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,8 +42,12 @@
 =======
   <suite started-at="2020-11-25T18:43:43Z" name="Default suite" finished-at="2020-11-25T18:45:37Z" duration-ms="113673">
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2020-11-26T17:57:59Z" name="Default suite" finished-at="2020-11-26T18:00:10Z" duration-ms="130571">
+>>>>>>> refs/remotes/origin/Eliel
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,9 +77,15 @@
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:43:43Z" name="beforeClass" finished-at="2020-11-25T15:43:59Z" duration-ms="15578" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2020-11-26T17:57:59Z" name="Default test" finished-at="2020-11-26T18:00:10Z" duration-ms="130571">
+      <class name="com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:57:59Z" name="beforeClass" finished-at="2020-11-26T14:58:13Z" duration-ms="13327" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,13 +103,20 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:43:59Z" name="login" finished-at="2020-11-25T15:44:08Z" duration-ms="8509" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:58:13Z" name="login" finished-at="2020-11-26T14:58:20Z" duration-ms="7550" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="acessarMDR" duration-ms="20340" started-at="2020-11-25T17:13:34Z" finished-at="2020-11-25T17:13:54Z">
 =======
@@ -110,8 +134,12 @@
 =======
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:44:08Z" name="acessarMDR" finished-at="2020-11-25T15:44:19Z" duration-ms="11927" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:58:20Z" name="acessarBRE" finished-at="2020-11-26T14:58:37Z" duration-ms="17091" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -134,8 +162,13 @@
 =======
         <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:44:19Z" name="excluir" finished-at="2020-11-25T15:45:37Z" duration-ms="77629" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:58:37Z" name="editar" finished-at="2020-11-26T15:00:10Z" duration-ms="92586" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- criar -->
@@ -156,9 +189,14 @@
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:45:37Z" name="afterClass" finished-at="2020-11-25T15:45:37Z" duration-ms="1" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T15:00:10Z" name="afterClass" finished-at="2020-11-26T15:00:10Z" duration-ms="1" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
@@ -168,6 +206,9 @@
 =======
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar -->
+>>>>>>> refs/remotes/origin/Eliel
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

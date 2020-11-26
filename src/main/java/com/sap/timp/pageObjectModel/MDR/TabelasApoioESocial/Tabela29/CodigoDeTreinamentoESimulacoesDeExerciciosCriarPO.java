@@ -15,7 +15,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosCriarPO extends TestBaseE
 	@FindBy(xpath = "//span[text()=\"Tabela 29 - Código de Treinamento e Simulações de Exercícios\"]")
 	public WebElement tabela29;
 	
-	@FindBy(xpath = "//span[text()=\"Nova Categoría de Trabalhador\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Dados de Código de Treinamento e Simulações de Exercícios\"]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Código Simul/Trein\"]")

@@ -1,65 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results total="3" passed="3" failed="0" skipped="0">
-=======
-<testng-results skipped="0" failed="0" total="3" passed="3">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-11-25T21:09:46Z" name="Default suite" finished-at="2020-11-25T21:13:27Z" duration-ms="221515">
-=======
-  <suite name="Default suite" duration-ms="238465" started-at="2020-11-25T21:04:52Z" finished-at="2020-11-25T21:08:51Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+  <suite started-at="2020-11-26T00:55:53Z" name="Default suite" finished-at="2020-11-26T00:58:16Z" duration-ms="142406">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-11-25T21:09:46Z" name="Default test" finished-at="2020-11-25T21:13:27Z" duration-ms="221515">
-=======
-    <test name="Default test" duration-ms="238465" started-at="2020-11-25T21:04:52Z" finished-at="2020-11-25T21:08:51Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:09:46Z" name="beforeClass" finished-at="2020-11-25T15:09:57Z" duration-ms="11380" status="PASS">
-=======
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="18187" started-at="2020-11-25T15:04:52Z" finished-at="2020-11-25T15:05:10Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+    <test started-at="2020-11-26T00:55:53Z" name="Default test" finished-at="2020-11-26T00:58:16Z" duration-ms="142406">
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:55:53Z" name="beforeClass" finished-at="2020-11-25T18:56:07Z" duration-ms="13511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:09:57Z" name="ingresar" finished-at="2020-11-25T15:10:07Z" duration-ms="9871" status="PASS">
-=======
-        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="ingresar" duration-ms="7598" started-at="2020-11-25T15:05:10Z" finished-at="2020-11-25T15:05:18Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:56:07Z" name="ingresar" finished-at="2020-11-25T18:56:15Z" duration-ms="8699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ingresar -->
-<<<<<<< HEAD
-        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:10:07Z" name="mdrEntrar" finished-at="2020-11-25T15:10:22Z" duration-ms="14536" status="PASS">
-=======
-        <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="mdrEntrar" duration-ms="15528" started-at="2020-11-25T15:05:18Z" finished-at="2020-11-25T15:05:33Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:56:15Z" name="mdrEntrar" finished-at="2020-11-25T18:56:30Z" duration-ms="14163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mdrEntrar -->
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:10:22Z" name="criar" finished-at="2020-11-25T15:13:23Z" duration-ms="181367" status="PASS">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="criar" duration-ms="192688" started-at="2020-11-25T15:05:33Z" finished-at="2020-11-25T15:08:46Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="criarGerenciarMoverPasta()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:56:30Z" name="criarGerenciarMoverPasta" finished-at="2020-11-25T18:58:11Z" duration-ms="101673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:13:23Z" name="afterClass" finished-at="2020-11-25T15:13:27Z" duration-ms="4340" status="PASS">
-=======
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4443" started-at="2020-11-25T15:08:46Z" finished-at="2020-11-25T15:08:51Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- criarGerenciarMoverPasta -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:58:11Z" name="afterClass" finished-at="2020-11-25T18:58:16Z" duration-ms="4338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriar -->
+      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

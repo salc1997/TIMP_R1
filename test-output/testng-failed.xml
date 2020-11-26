@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -34,6 +35,20 @@
 =======
       </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta -->
 >>>>>>> refs/remotes/origin/Fernando
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar">
+        <methods>
+          <include name="login"/>
+          <include name="afterClass"/>
+          <include name="acessarMDR"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

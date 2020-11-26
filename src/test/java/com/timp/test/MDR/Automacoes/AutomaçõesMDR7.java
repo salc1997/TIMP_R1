@@ -2,6 +2,7 @@ package com.timp.test.MDR.Automacoes;
 
 import org.testng.annotations.Test;
 
+
 import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriar;
 import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoDetalhes;
 import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoEditar;
@@ -14,6 +15,9 @@ import com.timp.test.MDR.CEP.Bairro.BairroExcluirMassa;
 import com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosFiltrar;
+import com.sap.timp.pageObjectModel.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLLPO;
+import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriarPO;
+import com.timp.test.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLL;
 import com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar;
 import com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar;
 import com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir;
@@ -27,6 +31,8 @@ import com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S22
 import com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluir;
+import com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar;
+import com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar;
 import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIICriar;
 import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIDetalhe;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluirMassa;
@@ -35,9 +41,12 @@ import com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMen
 import com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMensagensEditar;
 import com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMensagensExcluir;
 import com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMensagensExcluirMassa;
+import com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMensagensFiltrosId;
 import com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMensagensVisualizar;
+import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXExcluirMassas;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluirMassa;
+import com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio;
 import com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluirMassa;
 import com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa;
 import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluirMassa;
@@ -84,7 +93,10 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCom
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar;
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar;
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluir;
+import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle;
+import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
+
 
 public class AutomaçõesMDR7 {	
 	// Atividades fiscais >	Associação de Atividades Fiscais
@@ -118,6 +130,9 @@ public class AutomaçõesMDR7 {
 	//Livros Fiscais > Parametrização do livro oficial
 	LivrosFiscaisCriar livrosFiscaisCriar;
 	LivrosFiscaisExcluir livrosFiscaisExcluir;
+	ParametrizaçãoDoLivroOficialEditar parametrizaçãoDoLivroOficialEditar;
+	ParametrizaçãoDoLivroOficialVisualizar parametrizaçãoDoLivroOficialVisualizar;
+	
 	
 	// Parametros de Contabilização	> Contas Default para Extemporâneo
 	ContasDefaultParaExtemporaneoExcluirMassa contasDefaultParaExtemporaneoExcluirMassa;
@@ -129,6 +144,7 @@ public class AutomaçõesMDR7 {
 	ParâmetrosParaEnvioDeMensagensExcluirMassa parâmetrosParaEnvioDeMensagensExcluirMassa;
 	ParâmetrosParaEnvioDeMensagensDetalhes parâmetrosParaEnvioDeMensagensDetalhes;
 	ParâmetrosParaEnvioDeMensagensVisualizar parâmetrosParaEnvioDeMensagensVisualizar;
+	ParâmetrosParaEnvioDeMensagensFiltrosId parâmetrosParaEnvioDeMensagensFiltrosId;
 	
 	// Preço de Transferência > Valores para Método / Valores para Método PVEX
 	ValoresParaMetodoPVEXExcluirMassa valoresParaMetodoPVEXExcluirMassa;
@@ -192,7 +208,14 @@ public class AutomaçõesMDR7 {
 	ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar configuraçãDeTipoTaxaDeAtualizaçãoCriar;
 	ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar configuraçãDeTipoTaxaDeAtualizaçãoEditar;	
 	ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluir configuraçãDeTipoTaxaDeAtualizaçãoExcluir;
+	ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar  configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar;
+	ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle  configuraçãoDeTipoTaxaDeAtualizaçãoDetalle;
 	
+	//Contas Especiais IRPJ/CSLL
+	ContasEspeciaisIRPJCSLL  contasEspeciaisIRPJCSLL;
+	
+	// Rateiro Consorcio
+	RateiroConsorcio  rateiroConsorcio;
 	
 	// -----------------------------------------------------------------------------------------
 	
@@ -415,7 +438,27 @@ public class AutomaçõesMDR7 {
 		livrosFiscaisCriar.afterClass();		
 	}
 	
+	
 	@Test(priority = 18)
+	public void parametrizaçãoDoLivroOficialEditar() {
+		parametrizaçãoDoLivroOficialEditar = new ParametrizaçãoDoLivroOficialEditar();
+		parametrizaçãoDoLivroOficialEditar.beforeClass();
+		parametrizaçãoDoLivroOficialEditar.login();
+		parametrizaçãoDoLivroOficialEditar.acessarMDR();
+		parametrizaçãoDoLivroOficialEditar.Editar();
+		parametrizaçãoDoLivroOficialEditar.afterClass();		
+	}
+	
+	@Test(priority = 19)
+	public void parametrizaçãoDoLivroOficialVisualizar() {
+		parametrizaçãoDoLivroOficialVisualizar= new ParametrizaçãoDoLivroOficialVisualizar();
+		parametrizaçãoDoLivroOficialVisualizar.beforeClass();
+		parametrizaçãoDoLivroOficialVisualizar.ingresar();
+		parametrizaçãoDoLivroOficialVisualizar.ingresarMDR();
+		parametrizaçãoDoLivroOficialVisualizar.visualizar();
+		parametrizaçãoDoLivroOficialVisualizar.afterClass();		
+	}
+	@Test(priority = 20)
 	public void livrosFiscaisExcluir() {
 		livrosFiscaisExcluir = new LivrosFiscaisExcluir();
 		livrosFiscaisExcluir.beforeClass();
@@ -465,6 +508,15 @@ public class AutomaçõesMDR7 {
 		parâmetrosParaEnvioDeMensagensEditar.afterClass();		
 	}
 	
+	@Test(priority = 29)
+	public void parâmetrosParaEnvioDeMensagensFiltrosId() {
+		parâmetrosParaEnvioDeMensagensFiltrosId = new ParâmetrosParaEnvioDeMensagensFiltrosId();
+		parâmetrosParaEnvioDeMensagensFiltrosId.beforeClass();
+		parâmetrosParaEnvioDeMensagensFiltrosId.login();
+		parâmetrosParaEnvioDeMensagensFiltrosId.acessarMDR();
+		parâmetrosParaEnvioDeMensagensFiltrosId.filtros();
+		parâmetrosParaEnvioDeMensagensFiltrosId.afterClass();		
+	}
 	@Test(priority = 30)
 	public void parâmetrosParaEnvioDeMensagensDetalhe() {
 		parâmetrosParaEnvioDeMensagensDetalhes = new ParâmetrosParaEnvioDeMensagensDetalhes();
@@ -899,6 +951,26 @@ public class AutomaçõesMDR7 {
 	}
 	
 	@Test(priority = 125)
+	public void configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar() {		
+		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar = new ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar();
+		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar.beforeClass();
+		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar.ingresar();
+		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar.mdrEntrar();
+		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar.visualizar();
+		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar.afterClass();				
+	}
+	
+	@Test(priority = 126)
+	public void configuraçãoDeTipoTaxaDeAtualizaçãoDetalle() {		
+		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle = new ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle();
+		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle.beforeClass();
+		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle.ingresar();
+		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle.ingresarMDR();
+		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle.detalle();
+		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle.afterClass();				
+	}
+	
+	@Test(priority = 127)
 	public void configuraçãDeTipoTaxaDeAtualizaçãoExcluir() {		
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir = new ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluir();
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir.beforeClass();
@@ -907,4 +979,33 @@ public class AutomaçõesMDR7 {
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir.excluir();
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir.afterClass();				
 	}
+	
+	// Contas Especiais IRPJ/CSLL
+		// 131  - 136
+		@Test(priority = 131)
+		public void  contasEspeciaisIRPJCSLL() {		
+			System.out.println("------------------- Contas Especiais IRPJ/CSLL -------------------------");
+			contasEspeciaisIRPJCSLL = new ContasEspeciaisIRPJCSLL();
+			contasEspeciaisIRPJCSLL.beforeClass();
+			contasEspeciaisIRPJCSLL.ingresar();
+			contasEspeciaisIRPJCSLL.ingresarMDR();
+			contasEspeciaisIRPJCSLL.criar();
+			contasEspeciaisIRPJCSLL.afterClass();				
+		}
+		
+		//137 - 144
+		
+		@Test(priority = 137)
+		public void  rateiroConsorcio() {		
+			System.out.println("------------------- Rateiro  Consorcio  -------------------------");
+			rateiroConsorcio = new RateiroConsorcio();
+			rateiroConsorcio.beforeClass();
+			rateiroConsorcio.ingresar();
+			rateiroConsorcio.ingresarMDR();
+			rateiroConsorcio.criar();
+			rateiroConsorcio.afterClass();				
+		}
+		
+
+		
  }  

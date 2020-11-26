@@ -1,3 +1,4 @@
+
 package com.timp.test.MDR.Automacoes;
 
 import org.testng.annotations.Test;
@@ -19,11 +20,14 @@ import com.timp.test.MDR.Empresas.EmpresaEditar;
 import com.timp.test.MDR.Empresas.EmpresasDetalhes;
 import com.timp.test.MDR.Empresas.EmpresasFiltros;
 import com.timp.test.MDR.Empresas.EmpresasVisualizar;
+import com.timp.test.MDR.Filiais.FiliaisDetalle;
 import com.timp.test.MDR.Filiais.FiliaisEditar;
 import com.timp.test.MDR.Filiais.FiliaisVisualizar;
 import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoCriar;
 import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoDetalhes;
 import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoEditar;
+import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoExcluirMasas;
+import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoFiltroAbansado;
 import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoVisualizar;
 import com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar;
@@ -145,6 +149,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	FiliaisEditar filiaisEditar;
 	FiliaisVisualizar filiaisVisualizar;
+	FiliaisDetalle     filiaisDetalle;
 
 	// Hierarquia De Cenarios De Correçao
 
@@ -152,6 +157,8 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	HierarquiaDeCenariosDeCorreçaoDetalhes hierarquiaDeCenariosDeCorreçaoDetalhes;
 	HierarquiaDeCenariosDeCorreçaoEditar hierarquiaDeCenariosDeCorreçaoEditar;
 	HierarquiaDeCenariosDeCorreçaoVisualizar hierarquiaDeCenariosDeCorreçaoVisualizar;
+	HierarquiaDeCenariosDeCorreçaoFiltroAbansado hierarquiaDeCenariosDeCorreçaoFiltroAbansado;
+	HierarquiaDeCenariosDeCorreçaoExcluirMasas  hierarquiaDeCenariosDeCorreçaoExcluirMasas;
 
 	// ICMS ST Transporte
 
@@ -533,9 +540,21 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		filiaisVisualizar.visualizar();
 		filiaisVisualizar.afterClass();
 
-		System.out.println("-------------------Filiais Fin-------------------------");
+	
 	}
 
+	@Test(priority = 17)
+	public void filiaisDetalle() {
+
+		filiaisDetalle = new FiliaisDetalle();
+		filiaisDetalle.beforeClass();
+		filiaisDetalle.ingresar();
+		filiaisDetalle.ingresarMDR();
+		filiaisDetalle.detalle();
+		filiaisDetalle.afterClass();
+
+		System.out.println("-------------------Filiais Fin-------------------------");
+	}
 	// Hierarquia De Cenarios De Correção
 
 	@Test(priority = 18)
@@ -585,6 +604,18 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		hierarquiaDeCenariosDeCorreçaoDetalhes.acessarMDR();
 		hierarquiaDeCenariosDeCorreçaoDetalhes.Detalhes();
 		hierarquiaDeCenariosDeCorreçaoDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 22)
+	public void hierarquiaDeCenariosDeCorreçaoFiltroAbansado() {
+
+		hierarquiaDeCenariosDeCorreçaoFiltroAbansado = new HierarquiaDeCenariosDeCorreçaoFiltroAbansado();
+		hierarquiaDeCenariosDeCorreçaoFiltroAbansado.beforeClass();
+		hierarquiaDeCenariosDeCorreçaoFiltroAbansado.ingresar();
+		hierarquiaDeCenariosDeCorreçaoFiltroAbansado.ingresarMDR();
+		hierarquiaDeCenariosDeCorreçaoFiltroAbansado.Filtro();
+		hierarquiaDeCenariosDeCorreçaoFiltroAbansado.afterClass();
 
 		System.out.println("-------------------Hierarquia De Cenarios De Correção Fin-------------------------");
 

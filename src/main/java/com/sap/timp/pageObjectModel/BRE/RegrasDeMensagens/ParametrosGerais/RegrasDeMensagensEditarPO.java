@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens;
+package com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais;
 
 import java.util.ArrayList;
 

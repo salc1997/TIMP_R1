@@ -82,6 +82,7 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.Val
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroID;
+import com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACEditar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACExcluir;
@@ -370,6 +371,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	RegistroECACCriar registroECACCriar;
 	RegistroECACEditar registroECACEditar;
 	RegistroECACExcluir registroECACExcluir;
+	RegistroECACCVisualizar registroECACCVisualizar;
 	RegistroECACExcluirMassa registroECACExcluirMassa;
 
 	//Atividades Para Tributacao > Tipos De Servicos
@@ -1755,6 +1757,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 
+	
 	@Test(priority = 131)
 	public void registroECACEditar() {
 		registroECACEditar = new RegistroECACEditar();
@@ -1765,8 +1768,19 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		registroECACEditar.afterClass();
 
 	}
-
+	
 	@Test(priority = 132)
+	public void registroECACCVisualizar() {
+		registroECACCVisualizar = new RegistroECACCVisualizar();
+		registroECACCVisualizar.beforeClass();
+		registroECACCVisualizar.ingresar();
+		registroECACCVisualizar.ingresarMDR();
+		registroECACCVisualizar.Visualizar();
+		registroECACCVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 133)
 	public void registroECACExcluir() {
 		registroECACExcluir = new RegistroECACExcluir();
 		registroECACExcluir.beforeClass();
@@ -1776,7 +1790,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		registroECACExcluir.afterClass();
 	}
 	
-	@Test(priority = 133)
+	@Test(priority = 134)
 	public void registroECACExcluirMassa() {
 		registroECACExcluirMassa = new RegistroECACExcluirMassa();
 		registroECACExcluirMassa.beforeClass();

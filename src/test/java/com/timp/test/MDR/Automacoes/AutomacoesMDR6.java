@@ -8,6 +8,8 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.Codig
 import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoCriarPO;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa;
+import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisCriar;
+import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisEditar;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa;
 import com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirEmMassa;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosEditar;
@@ -108,6 +110,7 @@ import com.timp.test.MDR.ThinCapitalization.Subcapitalizacao.SubcapitalizacaoExc
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfratacaoCriar;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoDetalhes;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoEditar;
+import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
 
 public class AutomacoesMDR6 extends TestBaseSteven{
@@ -176,6 +179,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			ConfratacaoCriar confratacaoCriar;
 			ConfrontacaoDetalhes confrontacaoDetalhes;
 			ConfrontacaoEditar confrontacaoEditar;
+			ConfrontacaoExcluir confrontacaoExcluir;
 			
 		//Taxas De Conversao
 			TaxasDeConversaoCriar taxasDeConversaoCriar;
@@ -813,7 +817,19 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Valor Adicionado > Confrontacao fim-------------------------");
 				
 			}
+		
 			
+			@Test(priority = 46)
+			public void confrontacaoExcluir() {
+				confrontacaoExcluir = new ConfrontacaoExcluir();
+				confrontacaoExcluir.beforeClass();
+				confrontacaoExcluir.ingresar();
+				confrontacaoExcluir.ingresarMDR();
+				confrontacaoExcluir.Excluir();
+				confrontacaoExcluir.afterClass();
+				System.out.println("-------------------Valor Adicionado > Confrontacao fim-------------------------");
+				
+			}
 			//50
 			//Taxas De Conversao
 			@Test(priority = 50)

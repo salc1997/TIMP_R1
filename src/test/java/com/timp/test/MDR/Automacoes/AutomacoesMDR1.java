@@ -45,6 +45,7 @@ import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeCr
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeEditar;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluir;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluirMassa;
+import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeFiscalDetalle;
 import com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeVisualizar;
 import com.timp.test.MDR.CEP.Bairro.BairroCriar;
 import com.timp.test.MDR.CEP.Bairro.BairroEditar;
@@ -202,14 +203,15 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	GrupoAtividadeVisualizar grupoAtividadeVisualizar;
 	GrupoAtividadeExcluir grupoAtividadeExcluir;
 	GrupoAtividadeExcluirMassa grupoAtividadeExcluirMassa;
-
+	GrupoAtividadeFiscalDetalle grupoAtividadeFiscalDetalle;
+	
 	// Cadastro da Condição
 
 	CadastroCondicaoCriar cadastroCondicaoCriar;
 	CadasatroCondicaoVisualizar cadasatroCondicaoVisualizar;
 	CadastroCondicaoEditar cadastroCondicaoEditar;
 	CadastroCondicaoExcluir cadastroCondicaoExcluir;
-	CadastroCondicaoExcluir cadastroCondicaoDetalle;
+	cadastrocondicaoDetalle cadastroCondicaoDetalle;
 
 	// Cadastro Derex > Responsavél Pelo Movimento
 	ResponsavelMovimentoCriar cadastroresponsavelPeloMovimentoCriar;
@@ -735,6 +737,18 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		grupoAtividadeEditar.afterClass();
 
 	}
+	
+	@Test(priority = 26)
+	public void grupoAtividadeFiscalDetalle() {
+
+		grupoAtividadeFiscalDetalle = new GrupoAtividadeFiscalDetalle();
+		grupoAtividadeFiscalDetalle.beforeClass();
+		grupoAtividadeFiscalDetalle.ingresar();
+		grupoAtividadeFiscalDetalle.ingresarMDR();
+		grupoAtividadeFiscalDetalle.detalle();
+		grupoAtividadeFiscalDetalle.afterClass();
+
+	}
 
 	@Test(priority = 26)
 	public void grupoAtividadeFiscalVisualizar() {
@@ -800,6 +814,17 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
+	@Test(priority = 30)
+	public void cadastroCondicaoDetalle() {
+
+		cadastroCondicaoDetalle = new cadastrocondicaoDetalle();
+		cadastroCondicaoDetalle.beforeClass();
+		cadastroCondicaoDetalle.ingresar();
+		cadastroCondicaoDetalle.ingresarMDR();
+		cadastroCondicaoDetalle.detalle();
+		cadastroCondicaoDetalle.afterClass();
+
+	}
 	@Test(priority = 31)
 	public void cadastroCondicaoVisualizar() {
 

@@ -1728,13 +1728,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro Fin-------------------------");
 	}
-	
-	//132
-	//Preço de Transferência > Commoditie para TP
-	
 
-	
-	//139
 
 	
 

@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasDeMensagens;
+package com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.RegrasDeMensagensEditarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditarPO;
 
 public class RegrasDeMensagensEditar extends TestBaseEliel {
 	

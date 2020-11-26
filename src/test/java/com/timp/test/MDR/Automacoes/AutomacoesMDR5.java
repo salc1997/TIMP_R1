@@ -4,6 +4,7 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
+import com.timp.test.MDR.CEP.Municipio.MunicipioEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -85,6 +86,7 @@ import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioDetalhes;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
+import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
@@ -94,6 +96,7 @@ import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQua
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFCriar;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFDetalhes;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFEditar;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluir;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFVisualizar;
 
@@ -159,9 +162,12 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	MunicipioVisualizar municipioVisualizar;
 	MunicipioExcluir municipioExcluir;
 	MunicipioDetalhes municipioDetalhes;
+	MunicipioEditar municipioEditar;
 	
 	//Preço de Transferência > Commoditie para TP
+	CommoditieParaTPCriar  commoditieParaTPCriar;
 	CommoditieParaTPFiltroID commoditieParaTPFiltroID;
+	
 	
 	//Preço de Transferência > Definição de Vinculação
 	DefinicaoVinculacaoFiltroID definicaoVinculacaoFiltroID;
@@ -198,6 +204,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	
 	//Siscoserv > Registro RF
 	RegistroRFCriar registroRFCriar;
+	RegistroRFEditar  registroRFEditar;
 	RegistroRFDetalhes registroRFDetalhes;
 	RegistroRFVisualizar registroRFVisualizar;
 	RegistroRFExcluir registroRFExcluir;
@@ -659,7 +666,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	// Valor Adicionado > municipios
 
-	@Test(priority = 42)
+	@Test(priority = 41)
 	public void municipioCriar() {
 
 		System.out.println("-------------------Valor Adicionado > municipios-------------------------");
@@ -672,7 +679,20 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		municipioCriar.afterClass();
 
 	}
+	
 
+	@Test(priority = 42)
+	public void municipioEditar() {
+
+		municipioEditar = new MunicipioEditar();
+		municipioEditar.beforeClass();
+		municipioEditar.login();
+		municipioEditar.acessarMDR();
+		municipioEditar.editar();
+		municipioEditar.afterClass();
+
+	}
+	
 	@Test(priority = 43)
 	public void municipioVisualizar() {
 
@@ -782,6 +802,17 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		commoditieParaTPFiltroID.acessarMDR();
 		commoditieParaTPFiltroID.filtro();
 		commoditieParaTPFiltroID.afterClass();
+	}
+	
+	@Test(priority = 56)
+	public void commoditieParaTPCriar() {
+		
+		 commoditieParaTPCriar = new CommoditieParaTPCriar();
+		 commoditieParaTPCriar.beforeClass();
+		 commoditieParaTPCriar.ingresar();
+		 commoditieParaTPCriar.ingresarMDR();
+		 commoditieParaTPCriar.criar();
+		 commoditieParaTPCriar.afterClass();
 		System.out.println("-------------------Preço de Transferência > Commoditie para TP Fin-------------------------");
 	}
 	
@@ -1081,8 +1112,19 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-
 		@Test(priority = 98)
+		public void registroRFEditar() {
+
+			registroRFEditar = new RegistroRFEditar();
+			registroRFEditar.beforeClass();
+			registroRFEditar.login();
+			registroRFEditar.acessarMDR();
+			registroRFEditar.Editar();
+			registroRFEditar.afterClass();
+
+		}
+		
+		@Test(priority = 99)
 		public void registroRFExcluir() {
 
 			registroRFExcluir = new RegistroRFExcluir();

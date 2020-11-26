@@ -11,6 +11,7 @@ import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACCriarPO;
+import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar;
 
 public class RegistroECACCriar extends TestBaseMassiel {
 
@@ -52,4 +53,7 @@ public class RegistroECACCriar extends TestBaseMassiel {
 		assertTrue(sucesso, semAcesso);
 
 	}
+	
+
 }
+

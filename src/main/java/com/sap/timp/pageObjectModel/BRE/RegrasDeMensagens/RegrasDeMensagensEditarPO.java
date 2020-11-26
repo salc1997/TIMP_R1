@@ -259,6 +259,8 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		//sleep(1000);
 		//String textor2 = r2.getText();
 		//String textoparacompararcomr2 ="r2";
+		waitExpectElement(r2);
+		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("O campo r2 está na página de edição");
 			boolean sucesso3=true;
@@ -274,6 +276,8 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		//waitExpectElement(r2);
 		//sleep(2000);
 		//String textor21 = r2.getText();
+		waitExpectElement(r2);
+		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("r2 ainda consta na edição");
 			boolean sucesso1=true;

@@ -136,6 +136,8 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+
+	
 	public RegrasDeMensagensCriaPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -186,7 +188,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		
 		String url = driver.getCurrentUrl();
 		
-		/*boolean tc2 = false;
+		boolean tc2 = false;
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
@@ -210,12 +212,9 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 			sleep(1000);
 			opcaogrupodeestrutura.click();
 			sleep(1000);
-		}*/
+		}
 		
-		grupodeestrutura.click();
-		sleep(1000);
-		opcaogrupodeestrutura.click();
-		sleep(1000);
+		
 		
 		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();

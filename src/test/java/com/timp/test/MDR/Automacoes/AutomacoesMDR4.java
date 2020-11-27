@@ -16,6 +16,7 @@ import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanc
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhes;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraEditar;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluir;
+import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluirEmMassa;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizar;
 import com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar;
@@ -28,30 +29,36 @@ import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuraca
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPExcluirEnMasa;
 import com.timp.test.MDR.PrecoDeTransferencia.ModeloDeApuracaoTP.ModeloDeApuracaoTPFiltroId;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametroModeloApuracaoTPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluirEmMasa;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluirEnMasa;
 import com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluirEmMassa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluirEmMassa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCICriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluirEmMassa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes;
@@ -62,6 +69,7 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVADetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluirEmMassa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhes;
@@ -72,21 +80,25 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluirEmMassa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluirEmMasa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroID;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACEditar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACExcluir;
 import com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa;
+import com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar;
@@ -350,7 +362,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ModeloDeApuracaoTPEditar modeloDeApuracaoTPEditar;
 	ModeloDeApuracaoTPExcluir modeloDeApuracaoTPExcluir;
 	ModeloDeApuracaoTPFiltroId modeloDeApuracaoTPFiltroId;
-
+	ModeloDeApuracaoTPExcluirEnMasa modeloDeApuracaoTPExcluirEnMasa;
 
 
 	// Preço de Transferencia > Parametros Modelo De Apuracao TP
@@ -359,12 +371,14 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ParametrosModeloDeApuracaoTPDetalhes parametrosModeloDeApuracaoTPDetalhes;
 	ParametrosModeloDeApuracaoTPExcluir parametrosModeloDeApuracaoTPExcluir;
 	ParametroModeloApuracaoTPFiltroID parametroModeloApuracaoTPFiltroID;
+	ParametrosModeloDeApuracaoTPExcluirEmMasa parametrosModeloDeApuracaoTPExcluirEmMasa;
 
 	//// Preço de Transferencia > Parametros para TP
 	ParametrosParaTPCriar parametrosParaTPCriar;
 	ParametrosParaTPEditar parametrosParaTPEditar;
 	ParametrosParaTPExcluir parametrosParaTPExcluir;
 	ParametrosParaTPFiltroID parametrosParaTPFiltroID;
+	ParametrosParaTPExcluirEnMasa parametrosParaTPExcluirEnMasa;
 
 	// Registro ECAC
 
@@ -373,6 +387,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	RegistroECACExcluir registroECACExcluir;
 	RegistroECACCVisualizar registroECACCVisualizar;
 	RegistroECACExcluirMassa registroECACExcluirMassa;
+	RegistroECACFiltrosAvan registroECACFiltrosAvan;
 
 	//Atividades Para Tributacao > Tipos De Servicos
 	TiposDeServicosCriar tiposDeServicosCriar;
@@ -388,6 +403,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoPVVEditar valoresParaMetodoPVVEditar;
 	ValoresParaMetodoPVVExcluir valoresParaMetodoPVVExcluir;
 	ValoresParaMetodoPVVFiltroID valoresParaMetodoPVVFiltroID;
+	ValoresParaMetodoPVVExcluirEmMassa valoresParaMetodoPVVExcluirEmMassa;
 
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX
 	ValoresParaMetodoPVEXCriar valoresParaMetodoPVEXCriar;
@@ -415,6 +431,8 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	DeterminacaoDeRelevanciaPorRegraEditar determinacaoDeRelevanciaPorRegraEditar;
 	DeterminacaoDeRelevanciaPorRegraVisualizar determinacaoDeRelevanciaPorRegraVisualizar;
 	DeterminacaoDeRelevanciaPorRegraExcluir determinacaoDeRelevanciaPorRegraExcluir;
+	DeterminacaoDeRelevanciaPorRegraExcluirEmMassa determinacaoDeRelevanciaPorRegraExcluirEmMassa;
+	
 
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP
 	ValoresParaMetodoCAPCriar valoresParaMetodoCAPCriar;
@@ -422,6 +440,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoCAPEditar valoresParaMetodoCAPEditar;
 	ValoresParaMetodoCAPExcluir valoresParaMetodoCAPExcluir;
 	ValoresParaMetodoCAPFiltroID valoresParaMetodoCAPFiltroID;
+	ValoresParaMetodoCAPExcluirEmMassa valoresParaMetodoCAPExcluirEmMassa;
 
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA
 	ValoresParaMetodoPVACriar valoresParaMetodoPVACriar;
@@ -429,6 +448,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoPVAEditar valoresParaMetodoPVAEditar;
 	ValoresParaMetodoPVAExcluir valoresParaMetodoPVAExcluir;
 	ValoresParaMetodoPVAFiltroID valoresParaMetodoPVAFiltroID;
+	ValoresParaMetodoPVAExcluirEmMassa valoresParaMetodoPVAExcluirEmMassa;
 
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL
 	ValoresParaMetodoCPLCriar valoresParaMetodoCPLCriar;
@@ -436,7 +456,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoCPLDetalhes valoresParaMetodoCPLDetalhes;
 	ValoresParaMetodoCPLExcluir valoresParaMetodoCPLExcluir;
 	ValoresParaMetodoCPLFiltroID valoresParaMetodoCPLFiltroID;
-
+	ValoresParaMetodoCPLExcluirEmMassa valoresParaMetodoCPLExcluirEmMassa;
 
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI
 	ValoresParaMetodoPCICriar valoresParaMetodoPCICriar;
@@ -444,12 +464,14 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoPCIDetalhes valoresParaMetodoPCIDetalhes;
 	ValoresParaMetodoPCIExcluir valoresParaMetodoPCIExcluir;
 	ValoresParaMetodoPCIFiltroID valoresParaMetodoPCIFiltroID;
+	ValoresParaMetodoPCIExcluirEmMassa valoresParaMetodoPCIExcluirEmMassa;
 
 	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PIC
 	ValoresParaMetodoPICCriar valoresParaMetodoPICCriar;
 	ValoresParaMetodoPICDetalhes valoresParaMetodoPICDetalhes;
 	ValoresParaMetodoPICEditar valoresParaMetodoPICEditar;
 	ValoresParaMetodoPICExcluir valoresParaMetodoPICExcluir;
+	ValoresParaMetodoPICExcluirEmMasa valoresParaMetodoPICExcluirEmMasa;	
 
 
 	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PRL
@@ -458,6 +480,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoPRLDetalhes valoresParaMetodoPRLDetalhes;
 	ValoresParaMetodoPRLExcluir valoresParaMetodoPRLExcluir;
 	ValoresParaMetodoPRLFiltroID valoresParaMetodoPRLFiltroID;
+	ValoresParaMetodoPRLExcluirEmMasa valoresParaMetodoPRLExcluirEmMasa;
 
 	//Siscoserv > Pais/Moeda
 	PaisMoedaCriar paisMoedaCriar;
@@ -1685,15 +1708,31 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosModeloDeApuracaoTPExcluir.acessarMDR();
 		parametrosModeloDeApuracaoTPExcluir.excluir();
 		parametrosModeloDeApuracaoTPExcluir.afterClass();
+	}
+	
+	@Test(priority = 121)
+	public void parametrosModeloDeApuracaoTPExcluirEmMasa() {
+
+		parametrosModeloDeApuracaoTPExcluirEmMasa = new ParametrosModeloDeApuracaoTPExcluirEmMasa();
+		parametrosModeloDeApuracaoTPExcluirEmMasa.beforeClass();
+		parametrosModeloDeApuracaoTPExcluirEmMasa.ingresar();
+		parametrosModeloDeApuracaoTPExcluirEmMasa.mdrEntrar();
+		parametrosModeloDeApuracaoTPExcluirEmMasa.excluirEmMasaParametrosModeloApuracaoTP();
+		parametrosModeloDeApuracaoTPExcluirEmMasa.afterClass();
+		
 		System.out.println(
 				"-------------------Preço de Transferencia >  Parametros Modelo De Apuracao TP Fim-------------------------");
 
 	}
+	
+	
+	//
+	
 
 	// 123
 	// Preço de Transferencia > Parametros para TP
 
-	@Test(priority = 123)
+	@Test(priority = 122)
 	public void parametrosParaTPCriar() {
 		System.out.println("-------------------Preço de Transferencia > Parametros para TP-------------------------");
 		parametrosParaTPCriar = new ParametrosParaTPCriar();
@@ -1705,7 +1744,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 124)
+	@Test(priority = 123)
 	public void parametrosParaTPEditar() {
 		parametrosParaTPEditar = new ParametrosParaTPEditar();
 		parametrosParaTPEditar.beforeClass();
@@ -1716,7 +1755,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 125)
+	@Test(priority = 124)
 	public void parametrosParaTPFiltroId() {
 		
 		parametrosParaTPFiltroID = new ParametrosParaTPFiltroID();
@@ -1728,7 +1767,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 126)
+	@Test(priority = 125)
 	public void parametrosParaTPExcluir() {
 		parametrosParaTPExcluir = new ParametrosParaTPExcluir();
 		parametrosParaTPExcluir.beforeClass();
@@ -1736,9 +1775,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		parametrosParaTPExcluir.acessarMDR();
 		parametrosParaTPExcluir.excluir();
 		parametrosParaTPExcluir.afterClass();
-
-		System.out
-				.println("-------------------Preço de Transferencia > Parametros para TP Fim-------------------------");
+	}
+	
+	@Test(priority = 126)
+	public void parametrosParaTPExcluirEnMasa() {
+		
+		parametrosParaTPExcluirEnMasa = new ParametrosParaTPExcluirEnMasa();
+		parametrosParaTPExcluirEnMasa.beforeClass();
+		parametrosParaTPExcluirEnMasa.ingresar();
+		parametrosParaTPExcluirEnMasa.mdrEntrar();
+		parametrosParaTPExcluirEnMasa.excluirEmMasaParametrosParaTP();
+		parametrosParaTPExcluirEnMasa.afterClass();
+		
+		System.out.println(
+				"-------------------Preço de Transferencia >  Parametros Para TP Fim-------------------------");
 
 	}
 
@@ -1799,7 +1849,21 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		registroECACExcluirMassa.criar();
 		registroECACExcluirMassa.excluirMassa();
 		registroECACExcluirMassa.afterClass();
+		}
+	
+
+	@Test(priority = 135)
+	public void registroECACFiltrosAvan() {
+
+		registroECACFiltrosAvan = new RegistroECACFiltrosAvan();
+		registroECACFiltrosAvan.beforeClass();
+		registroECACFiltrosAvan.login();
+		registroECACFiltrosAvan.acessarMDR();
+		registroECACFiltrosAvan.filtrarAvanRegistroECAC();
+		registroECACFiltrosAvan.afterClass();
+		
 		System.out.println("-------------------Registro ECAC Fim-------------------------");
+		
 	}
 
 	// 136
@@ -1937,9 +2001,21 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoPVVExcluir.acessarMDR();
 		valoresParaMetodoPVVExcluir.excluir();
 		valoresParaMetodoPVVExcluir.afterClass();
+		
+	}
+	
+	@Test(priority = 146)
+	public void valoresParaMetodoPVVExcluirEmMassa() {
+		
+		valoresParaMetodoPVVExcluirEmMassa = new ValoresParaMetodoPVVExcluirEmMassa();
+		valoresParaMetodoPVVExcluirEmMassa.beforeClass();
+		valoresParaMetodoPVVExcluirEmMassa.ingresar();
+		valoresParaMetodoPVVExcluirEmMassa.mdrEntrar();
+		valoresParaMetodoPVVExcluirEmMassa.excluirEmMassa();
+		valoresParaMetodoPVVExcluirEmMassa.afterClass();
+		
 		System.out.println(
 				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV Fim-------------------------");
-
 	}
 
 	// 149
@@ -2186,6 +2262,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		determinacaoDeRelevanciaPorRegraExcluir.acessarMDR();
 		determinacaoDeRelevanciaPorRegraExcluir.excluir();
 		determinacaoDeRelevanciaPorRegraExcluir.afterClass();
+		
+	}
+	
+	
+	@Test(priority = 174)
+	public void determinacaoDeRelevanciaPorRegraExcluirEmMassa() {
+		
+		determinacaoDeRelevanciaPorRegraExcluirEmMassa = new DeterminacaoDeRelevanciaPorRegraExcluirEmMassa();
+		determinacaoDeRelevanciaPorRegraExcluirEmMassa.beforeClass();
+		determinacaoDeRelevanciaPorRegraExcluirEmMassa.ingresar();
+		determinacaoDeRelevanciaPorRegraExcluirEmMassa.mdrEntrar();
+		determinacaoDeRelevanciaPorRegraExcluirEmMassa.excluirEmMassa();
+		determinacaoDeRelevanciaPorRegraExcluirEmMassa.afterClass();
+		
 		System.out.println(
 				"-------------------Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra Fim-------------------------");
 
@@ -2239,9 +2329,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoCAPFiltroID.acessarMDR();
 		valoresParaMetodoCAPFiltroID.filtro();
 		valoresParaMetodoCAPFiltroID.afterClass();
-
 	}
-
 
 	@Test(priority = 180)
 	public void valoresParaMetodoCAPExcluir() {
@@ -2251,9 +2339,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoCAPExcluir.acessarMDR();
 		valoresParaMetodoCAPExcluir.excluir();
 		valoresParaMetodoCAPExcluir.afterClass();
+	}
+	
+	@Test(priority = 181)
+	public void valoresParaMetodoCAPExcluirEmMassa() {
+		
+		valoresParaMetodoCAPExcluirEmMassa = new ValoresParaMetodoCAPExcluirEmMassa();
+		valoresParaMetodoCAPExcluirEmMassa.beforeClass();
+		valoresParaMetodoCAPExcluirEmMassa.ingresar();
+		valoresParaMetodoCAPExcluirEmMassa.mdrEntrar();
+		valoresParaMetodoCAPExcluirEmMassa.excluirEmMassa();
+		valoresParaMetodoCAPExcluirEmMassa.afterClass();
+		
 		System.out.println(
 				"-------------------Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP Fim-------------------------");
-
 	}
 
 	// 183
@@ -2320,6 +2419,19 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		valoresParaMetodoPVAExcluir.excluir();
 		valoresParaMetodoPVAExcluir.afterClass();
 
+		
+	}
+	
+	@Test(priority = 188)
+	public void valoresParaMetodoPVAExcluirEmMassa() {
+		
+		valoresParaMetodoPVAExcluirEmMassa = new ValoresParaMetodoPVAExcluirEmMassa();
+		valoresParaMetodoPVAExcluirEmMassa.beforeClass();
+		valoresParaMetodoPVAExcluirEmMassa.ingresar();
+		valoresParaMetodoPVAExcluirEmMassa.mdrEntrar();
+		valoresParaMetodoPVAExcluirEmMassa.excluirEmMassa();
+		valoresParaMetodoPVAExcluirEmMassa.afterClass();
+		
 		System.out.println(
 				"-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PVA Fim-------------------------");
 
@@ -2385,9 +2497,24 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 			valoresParaMetodoCPLExcluir.acessarMDR();
 			valoresParaMetodoCPLExcluir.excluir();
 			valoresParaMetodoCPLExcluir.afterClass();
+			
+		}
+		
+		@Test(priority = 195)
+		public void valoresParaMetodoCPLExcluirEmMassa() {
+			
+			valoresParaMetodoCPLExcluirEmMassa = new ValoresParaMetodoCPLExcluirEmMassa();
+			valoresParaMetodoCPLExcluirEmMassa.beforeClass();
+			valoresParaMetodoCPLExcluirEmMassa.ingresar();
+			valoresParaMetodoCPLExcluirEmMassa.mdrEntrar();
+			valoresParaMetodoCPLExcluirEmMassa.excluirEmMassa();
+			valoresParaMetodoCPLExcluirEmMassa.afterClass();
+			
 			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CPL Fim-------------------------");
 			
 		}
+		
+		
 	//197
 	//Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI	
 		
@@ -2448,6 +2575,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 			valoresParaMetodoPCIExcluir.excluir();
 			valoresParaMetodoPCIExcluir.afterClass();
 			
+			
+		}
+		
+		
+		@Test(priority = 202)
+		public void valoresParaMetodoPCIExcluirEmMassa() {
+			
+			valoresParaMetodoPCIExcluirEmMassa = new ValoresParaMetodoPCIExcluirEmMassa();
+			valoresParaMetodoPCIExcluirEmMassa.beforeClass();
+			valoresParaMetodoPCIExcluirEmMassa.ingresar();
+			valoresParaMetodoPCIExcluirEmMassa.mdrEntrar();
+			valoresParaMetodoPCIExcluirEmMassa.excluirEmMassa();
+			valoresParaMetodoPCIExcluirEmMassa.afterClass();
+			
 			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI Fim-------------------------");
 			
 
@@ -2501,10 +2642,24 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 			valoresParaMetodoPICExcluir.acessarMDR();
 			valoresParaMetodoPICExcluir.excluir();
 			valoresParaMetodoPICExcluir.afterClass();
+
+		}
+		
+		@Test(priority = 208)
+		public void valoresParaMetodoPICExcluirEmMasa() {
+			
+			 valoresParaMetodoPICExcluirEmMasa = new ValoresParaMetodoPICExcluirEmMasa();
+			 valoresParaMetodoPICExcluirEmMasa.beforeClass();
+			 valoresParaMetodoPICExcluirEmMasa.ingresar();
+			 valoresParaMetodoPICExcluirEmMasa.mdrEntrar();
+			 valoresParaMetodoPICExcluirEmMasa.excluirEnMasaCompatibilidadeEntreFPAS();
+			 valoresParaMetodoPICExcluirEmMasa.afterClass();
 			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC Fim-------------------------");
 			
 
 		}
+		
+		
 		
 		//211
 		//Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL
@@ -2563,6 +2718,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 			valoresParaMetodoPRLExcluir.afterClass();
 			System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL Fim-------------------------");
 			
+		}
+		
+		@Test(priority = 216)
+		public void valoresParaMetodoPRLExcluirEmMasa() {
+			System.out.println(
+					"-------------------Preço de Transferência > Valores para Método / Valores para Método CAP-------------------------");
+			valoresParaMetodoPRLExcluirEmMasa = new ValoresParaMetodoPRLExcluirEmMasa();
+			valoresParaMetodoPRLExcluirEmMasa.beforeClass();
+			valoresParaMetodoPRLExcluirEmMasa.ingresar();
+			valoresParaMetodoPRLExcluirEmMasa.mdrEntrar();
+			valoresParaMetodoPRLExcluirEmMasa.excluirEnMasaCompatibilidadeEntreFPAS();
+			valoresParaMetodoPRLExcluirEmMasa.afterClass();
 		}
 		
 		//218

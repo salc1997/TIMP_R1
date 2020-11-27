@@ -9,6 +9,7 @@ import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoExcluirM
 import com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasCriar;
 import com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasEditar;
 import com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasExcluir;
+import com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasExcluirEmMassa;
 import com.timp.test.MDR.CadastrosIRPJCSLL.CadastroContaisContabeis.CadastroContaisContabeisFiltroID;
 import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisCriar;
 import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisEditar;
@@ -43,7 +44,7 @@ public class AutomacoesMDR8 {
 	CadastroDeObrasCriar  cadastroDeObrasCriar;
 	CadastroDeObrasEditar cadastroDeObrasEditar;
 	CadastroDeObrasExcluir cadastroDeObrasExcluir;
-	
+	CadastroDeObrasExcluirEmMassa cadastroDeObrasExcluirEmMassa;
 	//  Cadastro Específico do INSS (CEI) >	Cadastro de Obras
 	ConfiguracaoFundoSocailCriar  configuracaoFundoSocailCriar;
 	ConfiguracoesFundoSocialEditar  configuracoesFundoSocialEditar;
@@ -174,9 +175,18 @@ public class AutomacoesMDR8 {
 		cadastroDeObrasExcluir.ingresarMDR();
 		cadastroDeObrasExcluir.excluir();
 		cadastroDeObrasExcluir.afterClass();
+	}
+	
+	@Test(priority = 9)
+	public void cadastroDeObrasExcluirEmMassa() {
+		cadastroDeObrasExcluirEmMassa = new CadastroDeObrasExcluirEmMassa();
+		cadastroDeObrasExcluirEmMassa.beforeClass();
+		cadastroDeObrasExcluirEmMassa.ingresar();
+		cadastroDeObrasExcluirEmMassa.mdrEntrar();
+		cadastroDeObrasExcluirEmMassa.excluirEmMassa();
+		cadastroDeObrasExcluirEmMassa.afterClass();
 		
 		System.out.println("-------------------Cadastro De Obras Fim-------------------------");
-
 	}
 	
 	//// 13-------18

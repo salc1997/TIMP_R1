@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio;
+package com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais;
 
 
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class RegraDeNegocioCriaComCopiaPO extends TestBaseEliel {
+public class RegrasDeNegocioCriarComCopiaPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
 	public WebElement regrasdenegocio;
@@ -33,7 +33,9 @@ public class RegraDeNegocioCriaComCopiaPO extends TestBaseEliel {
 	@FindBy(xpath = "//td[@class=\"title-field\"]/div/div/input")
 	public WebElement nome;
 	
-	public RegraDeNegocioCriaComCopiaPO() {
+	@FindBy(xpath = "//span[@id=\"textLabel\"]")
+	public WebElement mensagem;
+	public RegrasDeNegocioCriarComCopiaPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -113,30 +115,26 @@ public class RegraDeNegocioCriaComCopiaPO extends TestBaseEliel {
 			sucesso.add(sucesso1);
 		}
 		
+		
+		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroCopia+"\"]/div[1]/div"));
 		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroCopia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
 		menu.click();
 		sleep(1000);
 		açao.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		waitExpectElement(sim);
 		sim.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(3000);
-		invisibilityOfElement("//li[@class=\"base-toast  toast-success         \"]");
+		waitExpectElement(mensagem);
 		sleep(2000);
-		
-		sleep(3000);
-		invisibilityOfElement("//li[@class=\"base-toast  toast-success   \"]");
-		sleep(2000);
-		
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -148,51 +146,53 @@ public class RegraDeNegocioCriaComCopiaPO extends TestBaseEliel {
 		sleep(2000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
 		String idRegistroCopiaLixeira = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("ID Registro Copia en Lixeira: " + idRegistroCopiaLixeira);
+		System.out.println("ID Registro Copia na Lixeira: " + idRegistroCopiaLixeira);
 		
-		if(idRegistroCopiaLixeira != idRegistroCopia) {
-			//idInserir2(idB);
-			System.out.println("Copia existe en lixeira...");
-			System.out.println("ID Registro Copia en Lixeira: " + idRegistroCopiaLixeira);
-			boolean sucesso2 = true;
-			sucesso.add(sucesso2);
+		double idD = convertToDouble(idRegistroCopiaLixeira);
+		double idBD = convertToDouble(idRegistroCopia);
+		if(idD == idBD)
+		{
+			System.out.println("Sim o ID é o mesmo da Copia");
+			boolean sucesso1=true;
+			sucesso.add(sucesso1);
 		}else {
-			System.out.println("No esta la copia en lixeira...");			
-			 boolean sucesso2 = false;
-			 sucesso.add(sucesso2);
+			System.out.println("Não é o mesmo ID");
+			boolean sucesso1 = false;
+			sucesso.add(sucesso1);
 		}
-		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroCopiaLixeira+"\"]/div[1]/div"));
 		açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroCopiaLixeira+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
-		
 		menu.click();
 		sleep(1000);
 		açao.click();
-		sleep(3000);
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(sim);
-		sim.click();
-		sleep(3000);
+		ultimapagina.click();
+		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
-		String idUltimoRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("ID ultimo registro despues de lixeira: " + idUltimoRegistro);
-		
-		if(idUltimoRegistro.equals(idRegistro)) {
-			System.out.println("Es el mismo registro del cual se hizo copia...");			
-			return sucesso = true;			
+		String idRegistroLixeira = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		if(idRegistroCopiaLixeira != idRegistroLixeira) {
+			System.out.println("ID Registro Copia Lixeira: " + idRegistroCopiaLixeira);
+			System.out.println("ID Registro ultimo após apagar o registro copia da lixeira: " + idRegistroLixeira);	
+			boolean sucesso2 = true;
+			sucesso.add(sucesso2);
 		}else {
-			System.out.println("No fue eliminado la copia...");
-			System.out.println("ID ultimo registro despues de lixeira: " + idUltimoRegistro);
-			sucesso = false;
+			System.out.println("Não existe a cópia na lixeira");			
+			 boolean sucesso2 = false;
+			 sucesso.add(sucesso2);
 		}
+		
 		System.out.println(sucesso);
 		return sucesso;
 	}

@@ -93,6 +93,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCom
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar;
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar;
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluir;
+import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa;
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle;
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
@@ -210,6 +211,8 @@ public class AutomaçõesMDR7 {
 	ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluir configuraçãDeTipoTaxaDeAtualizaçãoExcluir;
 	ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar  configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar;
 	ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle  configuraçãoDeTipoTaxaDeAtualizaçãoDetalle;
+	ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa;
+	
 	
 	//Contas Especiais IRPJ/CSLL
 	ContasEspeciaisIRPJCSLL  contasEspeciaisIRPJCSLL;
@@ -978,6 +981,18 @@ public class AutomaçõesMDR7 {
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir.mdrEntrar();
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir.excluir();
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir.afterClass();				
+	}
+	
+	@Test(priority = 128)
+	public void configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa() {
+		System.out.println(
+				"------Taxas de Atualização	> Configuração de Tipo Taxa de Atualização----------");
+		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa = new ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa();
+		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.beforeClass();
+		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.ingresar();
+		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.mdrEntrar();
+		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.excluirEmMassa();
+		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.afterClass();
 	}
 	
 	// Contas Especiais IRPJ/CSLL

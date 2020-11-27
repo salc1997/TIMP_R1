@@ -30,6 +30,7 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluirEmMassa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluirEmMassa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluirEmMasa;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa;
 import com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialCriar;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialDetalhe;
@@ -103,78 +104,19 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	EmprestimosExcluir emprestimosExcluir;
 	EmprestimosExcluirEmMassa emprestimosExcluirEmMassa;
 	
-	///********************BUSCAR AUTOMATIZACION A LA QUE PERTENECE*********
 		//ICMS-ST Transporte
 		ICMSSTTransporteExcluirEmMassa iCMSSTTransporteExcluirEmMassa;
 		
-		//Cadastro Específico do INSS (CEI) > Cadastro de Obras
-		CadastroDeObrasExcluirEmMassa cadastroDeObrasExcluirEmMassa;
-		
-		//Código da Receita
-		CodigoReceitaFiltrosAvan codigoReceitaFiltrosAvan;
-		
-	    //Código de Contabilização
-		CodigoContabilizacaoFiltrosAvan codigoContabilizacaoFiltrosAvan;
-		//aqui
-		//Livros Fiscais > Parâmetros para Livro ICMS ST
-		ParametrosParaLivroICMSSTFiltrosAvan parametrosParaLivroICMSSTFiltrosAvan;
-		
-		//Preço de Transferência > Modelo de Apuração TP
-		ModeloDeApuracaoTPExcluirEnMasa modeloDeApuracaoTPExcluirEnMasa;
-		
-		//Preço de Transferência >	Parâmetros para TP
-		ParametrosParaTPExcluirEnMasa parametrosParaTPExcluirEnMasa;
-
-		//Preço de Transferência >	Valores para Método de Importação / Valores para Método PRL
-		//FALTAN EN LA AUTOMATIZACION
-		
-		//Preço de Transferência >	Valores para Método de Importação / Valores para Método PIC
-		ValoresParaMetodoPICExcluirEmMasa valoresParaMetodoPICExcluirEmMasa;	
-		
-		//Preço de Transferência > Valores para Método / Valores para Método CAP
-		ValoresParaMetodoCAPExcluirEmMassa valoresParaMetodoCAPExcluirEmMassa;
-		
-		//Preço de Transferência >	Valores para Método / Valores para Método PVV
-		ValoresParaMetodoPVVExcluirEmMassa valoresParaMetodoPVVExcluirEmMassa;
-		
-		//Registro ECAC
-		RegistroECACFiltrosAvan registroECACFiltrosAvan;
-		
-		//Preço de Transferência >	Parâmetros Modelos de Apuração TP
-		ParametrosModeloDeApuracaoTPExcluirEmMasa parametrosModeloDeApuracaoTPExcluirEmMasa;
-		
-		//Tabelas Complementares para Obrigações Acessórias	> Tabela Complementar para DIRF
-		TabelaComplementarParaDIRFFiltrosAvan tabelaComplementarParaDIRFFiltrosAvan;
-		
-		//Determinação de Relevância de Tarefa	Determinação de Relevância por Regra
-		DeterminacaoDeRelevanciaPorRegraExcluirEmMassa determinacaoDeRelevanciaPorRegraExcluirEmMassa;
 		
 		//Determinação de Relevância de Tarefa por Motivo de Reabertura	Determinação de Relevância por Motivo
 		DeterminacionRelevanciaPorMotivoExcluirEmMassa determinacionRelevanciaPorMotivoExcluirEmMassa;
 		
-		//Preço de Transferência	Valores para Método / Valores para Método CPL
-		ValoresParaMetodoCPLExcluirEmMassa valoresParaMetodoCPLExcluirEmMassa;
-		
-		//Preço de Transferência	Valores para Método / Valores para Método PCI
-		ValoresParaMetodoPCIExcluirEmMassa valoresParaMetodoPCIExcluirEmMassa;
-		
-		//Preço de Transferência	Valores para Método / Valores para Método PVA
-		ValoresParaMetodoPVAExcluirEmMassa valoresParaMetodoPVAExcluirEmMassa;
-		
-		//Taxas de Atualização	Configuração de Tipo Taxa de Atualização
-		ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa;
 		
 		//Taxas de Atualização	Alíquotas de Taxa de Atualização
 		AliquotasDeTaxaDeActualizacaoExcluirEmMassa aliquotasDeTaxaDeActualizacaoExcluirEmMassa;
 		
-		//Parâmetros de criação de NF	Cadastro de Nota Fiscal
-		CadastroNotaFiscalExcluirEmMassa cadastroNotaFiscalExcluirEmMassa;
-		
 		//Tabela de Apoio do SPED > 4.3.5 Tabela Código de Contribuição Social Apurada
 		TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa;
-		
-		//Livros Fiscais > Livros Fiscais
-		LivrosFiscaisExcluirEmMassa livrosFiscaisExcluirEmMassa;
 		
 		//Eventos e-Social > S2240 - Condições Amb do Trab - Fat de Risco
 		S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID;
@@ -466,149 +408,9 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		iCMSSTTransporteExcluirEmMassa.afterClass();
 	}
 	
-
-	@Test(priority = 26)
-	public void cadastroDeObrasExcluirEmMassa() {
-		System.out.println(
-				"-------------------Cadastro Específico do INSS (CEI) > Cadastro de Obras-------------------------");
-		cadastroDeObrasExcluirEmMassa = new CadastroDeObrasExcluirEmMassa();
-		cadastroDeObrasExcluirEmMassa.beforeClass();
-		cadastroDeObrasExcluirEmMassa.ingresar();
-		cadastroDeObrasExcluirEmMassa.mdrEntrar();
-		cadastroDeObrasExcluirEmMassa.excluirEmMassa();
-		cadastroDeObrasExcluirEmMassa.afterClass();
-	}
 	
-	@Test(priority = 27)
-	public void codigoReceitaFiltrosAvan() {
-		System.out.println(
-				"-------------------Codigo da Receita-------------------------");
-		codigoReceitaFiltrosAvan = new CodigoReceitaFiltrosAvan();
-		codigoReceitaFiltrosAvan.beforeClass();
-		codigoReceitaFiltrosAvan.login();
-		codigoReceitaFiltrosAvan.acessarMDR();
-		codigoReceitaFiltrosAvan.filtrosAvanzados();
-		codigoReceitaFiltrosAvan.afterClass();
-	}
-	
-	
-	@Test(priority = 28)
-	public void codigoContabilizacaoFiltrosAvan() {
-		System.out.println(
-				"-------------------Código de Contabilização-------------------------");
-		codigoContabilizacaoFiltrosAvan = new CodigoContabilizacaoFiltrosAvan();
-		codigoContabilizacaoFiltrosAvan.beforeClass();
-		codigoContabilizacaoFiltrosAvan.login();
-		codigoContabilizacaoFiltrosAvan.acessarMDR();
-		codigoContabilizacaoFiltrosAvan.filtrarAvanCodigoContabilizacao();
-		codigoContabilizacaoFiltrosAvan.afterClass();
-	}
-	
-	
-	@Test(priority = 29)
-	public void parametrosParaLivroICMSSTFiltrosAvan() {
-		System.out.println(
-				"-------------------Livros Fiscais > Parâmetros para Livro ICMS ST-------------------------");
-		parametrosParaLivroICMSSTFiltrosAvan = new ParametrosParaLivroICMSSTFiltrosAvan();
-		parametrosParaLivroICMSSTFiltrosAvan.beforeClass();
-		parametrosParaLivroICMSSTFiltrosAvan.login();
-		parametrosParaLivroICMSSTFiltrosAvan.acessarMDR();
-		parametrosParaLivroICMSSTFiltrosAvan.filtrosAvanzados();
-		parametrosParaLivroICMSSTFiltrosAvan.afterClass();
-	}
-	
-	
-
-	@Test(priority = 30)
-	public void modeloDeApuracaoTPExcluirEnMasa() {
-		System.out.println(
-				"-------------------Preço de Transferência >	Modelo para TP-------------------------");
-		modeloDeApuracaoTPExcluirEnMasa = new ModeloDeApuracaoTPExcluirEnMasa();
-		modeloDeApuracaoTPExcluirEnMasa.beforeClass();
-		modeloDeApuracaoTPExcluirEnMasa.ingresar();
-		modeloDeApuracaoTPExcluirEnMasa.mdrEntrar();
-		modeloDeApuracaoTPExcluirEnMasa.excluirEnMasaModeloApuracaoTP();
-		modeloDeApuracaoTPExcluirEnMasa.afterClass();
-	}
-	
-	
-	@Test(priority = 31)
-	public void parametrosParaTPExcluirEnMasa() {
-		System.out.println(
-				"-------------------Preço de Transferência >	Parâmetros para TP-------------------------");
-		parametrosParaTPExcluirEnMasa = new ParametrosParaTPExcluirEnMasa();
-		parametrosParaTPExcluirEnMasa.beforeClass();
-		parametrosParaTPExcluirEnMasa.ingresar();
-		parametrosParaTPExcluirEnMasa.mdrEntrar();
-		parametrosParaTPExcluirEnMasa.excluirEmMasaParametrosParaTP();
-		parametrosParaTPExcluirEnMasa.afterClass();
-	}
-	
-	
-	@Test(priority = 32)
-	public void valoresParaMetodoCAPExcluirEmMassa() {
-		System.out.println(
-				"-------------------Preço de Transferência > Valores para Método / Valores para Método CAP-------------------------");
-		valoresParaMetodoCAPExcluirEmMassa = new ValoresParaMetodoCAPExcluirEmMassa();
-		valoresParaMetodoCAPExcluirEmMassa.beforeClass();
-		valoresParaMetodoCAPExcluirEmMassa.ingresar();
-		valoresParaMetodoCAPExcluirEmMassa.mdrEntrar();
-		valoresParaMetodoCAPExcluirEmMassa.excluirEmMassa();
-		valoresParaMetodoCAPExcluirEmMassa.afterClass();
-	}
-	
-	
-	
-	@Test(priority = 33)
-	public void valoresParaMetodoPVVExcluirEmMassa() {
-		System.out.println(
-				"-------------------Preço de Transferência > Valores para Método / Valores para Método PVV-------------------------");
-		valoresParaMetodoPVVExcluirEmMassa = new ValoresParaMetodoPVVExcluirEmMassa();
-		valoresParaMetodoPVVExcluirEmMassa.beforeClass();
-		valoresParaMetodoPVVExcluirEmMassa.ingresar();
-		valoresParaMetodoPVVExcluirEmMassa.mdrEntrar();
-		valoresParaMetodoPVVExcluirEmMassa.excluirEmMassa();
-		valoresParaMetodoPVVExcluirEmMassa.afterClass();
-	}
-	
-	
-	@Test(priority = 34)
-	public void registroECACFiltrosAvan() {
-		System.out.println(
-				"------------------- Registro ECAC-------------------------");
-		registroECACFiltrosAvan = new RegistroECACFiltrosAvan();
-		registroECACFiltrosAvan.beforeClass();
-		registroECACFiltrosAvan.login();
-		registroECACFiltrosAvan.acessarMDR();
-		registroECACFiltrosAvan.filtrarAvanRegistroECAC();
-		registroECACFiltrosAvan.afterClass();
-	}
-	
-	
-	@Test(priority = 35)
-	public void tabelaComplementarParaDIRFFiltrosAvan() {
-		System.out.println(
-				"------Tabelas Complementares para Obrigações Acessórias	> Tabela Complementar para DIRF----------");
-		tabelaComplementarParaDIRFFiltrosAvan = new TabelaComplementarParaDIRFFiltrosAvan();
-		tabelaComplementarParaDIRFFiltrosAvan.beforeClass();
-		tabelaComplementarParaDIRFFiltrosAvan.login();
-		tabelaComplementarParaDIRFFiltrosAvan.acessarMDR();
-		tabelaComplementarParaDIRFFiltrosAvan.filtrosAvanTabelaComplementarParaDIRF();
-		tabelaComplementarParaDIRFFiltrosAvan.afterClass();
-	}
-	
-	
-	@Test(priority = 36)
-	public void determinacaoDeRelevanciaPorRegraExcluirEmMassa() {
-		System.out.println(
-				"------Determinação de Relevância de Tarefa > Determinação de Relevância por Regra----------");
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa = new DeterminacaoDeRelevanciaPorRegraExcluirEmMassa();
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa.beforeClass();
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa.ingresar();
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa.mdrEntrar();
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa.excluirEmMassa();
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa.afterClass();
-	}
+	//ESPACIO PARA LOS ANTERIORES 
+	// 31-36
 	
 	@Test(priority = 37)
 	public void determinacionRelevanciaPorMotivoExcluirEmMassa() {
@@ -621,59 +423,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		determinacionRelevanciaPorMotivoExcluirEmMassa.excluirEmMassa();
 		determinacionRelevanciaPorMotivoExcluirEmMassa.afterClass();
 	}
-	
-	
-	@Test(priority = 38)
-	public void valoresParaMetodoCPLExcluirEmMassa() {
-		System.out.println(
-				"------Preço de Transferência > Valores para Método / Valores para Método CPL----------");
-		valoresParaMetodoCPLExcluirEmMassa = new ValoresParaMetodoCPLExcluirEmMassa();
-		valoresParaMetodoCPLExcluirEmMassa.beforeClass();
-		valoresParaMetodoCPLExcluirEmMassa.ingresar();
-		valoresParaMetodoCPLExcluirEmMassa.mdrEntrar();
-		valoresParaMetodoCPLExcluirEmMassa.excluirEmMassa();
-		valoresParaMetodoCPLExcluirEmMassa.afterClass();
-	}
-	
-	@Test(priority = 39)
-	public void valoresParaMetodoPCIExcluirEmMassa() {
-		System.out.println(
-				"------Preço de Transferência	Valores para Método / Valores para Método PCI----------");
-		valoresParaMetodoPCIExcluirEmMassa = new ValoresParaMetodoPCIExcluirEmMassa();
-		valoresParaMetodoPCIExcluirEmMassa.beforeClass();
-		valoresParaMetodoPCIExcluirEmMassa.ingresar();
-		valoresParaMetodoPCIExcluirEmMassa.mdrEntrar();
-		valoresParaMetodoPCIExcluirEmMassa.excluirEmMassa();
-		valoresParaMetodoPCIExcluirEmMassa.afterClass();
-	}
-	
-	@Test(priority = 40)
-	public void valoresParaMetodoPVAExcluirEmMassa() {
-
-		System.out.println(
-				"------Preço de Transferência	Valores para Método / Valores para Método PVA----------");
-		valoresParaMetodoPVAExcluirEmMassa = new ValoresParaMetodoPVAExcluirEmMassa();
-		valoresParaMetodoPVAExcluirEmMassa.beforeClass();
-		valoresParaMetodoPVAExcluirEmMassa.ingresar();
-		valoresParaMetodoPVAExcluirEmMassa.mdrEntrar();
-		valoresParaMetodoPVAExcluirEmMassa.excluirEmMassa();
-		valoresParaMetodoPVAExcluirEmMassa.afterClass();
-	}
-	
-	
-	
-	@Test(priority = 41)
-	public void configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa() {
-		System.out.println(
-				"------Taxas de Atualização	> Configuração de Tipo Taxa de Atualização----------");
-		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa = new ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa();
-		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.beforeClass();
-		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.ingresar();
-		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.mdrEntrar();
-		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.excluirEmMassa();
-		configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa.afterClass();
-	}
-	
 	
 	@Test(priority = 42)
 	public void aliquotasDeTaxaDeActualizacaoExcluirEmMassa() {
@@ -688,20 +437,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	}
 	
 	
-	
-	@Test(priority = 43)
-	public void cadastroNotaFiscalExcluirEmMassa() {
-		System.out.println(
-				"------Parâmetros de criação de NF > Cadastro de Nota Fiscal----------");
-		cadastroNotaFiscalExcluirEmMassa = new CadastroNotaFiscalExcluirEmMassa();
-		cadastroNotaFiscalExcluirEmMassa.beforeClass();
-		cadastroNotaFiscalExcluirEmMassa.ingresar();
-		cadastroNotaFiscalExcluirEmMassa.mdrEntrar();
-		cadastroNotaFiscalExcluirEmMassa.excluirEmMassa();
-		cadastroNotaFiscalExcluirEmMassa.afterClass();
-	}
-	
-	
 	@Test(priority = 44)
 	public void tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa() {
 		System.out.println(
@@ -713,20 +448,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.excluirEmMassa();
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.afterClass();
 	}
-	
-	@Test(priority = 44)
-	public void livrosFiscaisExcluirEmMassa() {
-		System.out.println(
-				"------LivrosFiscais > LivrosFiscais----------");
-		livrosFiscaisExcluirEmMassa = new LivrosFiscaisExcluirEmMassa();
-		livrosFiscaisExcluirEmMassa.beforeClass();
-		livrosFiscaisExcluirEmMassa.ingresar();
-		livrosFiscaisExcluirEmMassa.mdrEntrar();
-		livrosFiscaisExcluirEmMassa.excluirEmMassa();
-		livrosFiscaisExcluirEmMassa.afterClass();
-	}
-	
-	
 
 	@Test(priority = 45)
 	public void s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID() {

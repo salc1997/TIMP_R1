@@ -44,7 +44,7 @@ public class EmprestimosExcluirEmMassa extends TestBaseKenssy {
   }
   
   @Test(priority = 2)
-  public void editarEmprestimos() {
+  public void excluirEmMassaEmprestimos() {
 	boolean sucesso = emprestimosExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 	sleep(1000);

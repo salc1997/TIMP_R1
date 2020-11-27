@@ -45,6 +45,12 @@ public class MovimentoSCANCAtualizarPO extends TestBaseKenssy{
 	public ArrayList<Boolean> atualizar() {
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
+		boolean tc2 = false;
+		boolean tq1 = false;
+		boolean tp1 = false;
+		String url = driver.getCurrentUrl();
+		
+		
 		sleep(2000);
 		scanc.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -56,7 +62,14 @@ public class MovimentoSCANCAtualizarPO extends TestBaseKenssy{
 		
 		recarregar.click();
 		
-		sleep(3000);
+		if (url.contains("tc2")) {
+			sleep(1000);
+		}else if(url.contains("tp1")){
+			sleep(1000);
+		}else {
+			sleep(1000);
+		}
+		
 		
 		int visible = driver.findElements(By.xpath("//div[@class=\"overlay loader dark\"]")).size();
 		System.out.println(visible + " após clicar no botão");

@@ -58,6 +58,9 @@ public class TabelaDeIsencoesExcluirPO extends TestBaseEliel{
 		excluir.click();
 		sleep(2000);
 		
+		waitExpectElement(sim);
+		sleep(2000);
+		
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

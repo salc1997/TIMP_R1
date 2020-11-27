@@ -1,230 +1,33 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="2" failed="1" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2020-11-17T02:26:38Z" name="Default suite" finished-at="2020-11-17T02:29:01Z" duration-ms="142558">
-    <groups>
-    </groups>
-    <test started-at="2020-11-17T02:26:38Z" name="Default test" finished-at="2020-11-17T02:29:01Z" duration-ms="142558">
-      <class name="com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar@6bf08014]" started-at="2020-11-16T20:26:38Z" name="beforeClass" finished-at="2020-11-16T20:27:32Z" duration-ms="53565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar@6bf08014]" started-at="2020-11-16T20:27:32Z" name="login" finished-at="2020-11-16T20:27:40Z" duration-ms="8501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar@6bf08014]" started-at="2020-11-16T20:27:40Z" name="acessarMDR" finished-at="2020-11-16T20:28:47Z" duration-ms="66219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="atualizar()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar@6bf08014]" started-at="2020-11-16T20:28:47Z" name="atualizar" finished-at="2020-11-16T20:29:00Z" duration-ms="13613" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Não foi possivel atualizar os registros expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Não foi possivel atualizar os registros expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar.atualizar(MovimentoSCANCAtualizar.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- atualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar@6bf08014]" started-at="2020-11-16T20:29:00Z" name="afterClass" finished-at="2020-11-16T20:29:01Z" duration-ms="623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-11-17T13:08:28Z" name="Default suite" finished-at="2020-11-17T13:11:50Z" duration-ms="202007">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-11-17T06:28:59Z" name="Default suite" finished-at="2020-11-17T06:30:39Z" duration-ms="100580">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-11-17T01:14:37Z" name="Default suite" finished-at="2020-11-17T01:15:54Z" duration-ms="77353">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-11-16T21:02:32Z" name="Default suite" finished-at="2020-11-16T21:05:06Z" duration-ms="153905">
-=======
-  <suite name="Default suite" duration-ms="65917" started-at="2020-11-16T19:09:57Z" finished-at="2020-11-16T19:11:03Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <suite started-at="2020-11-25T03:55:43Z" name="Default suite" finished-at="2020-11-25T03:57:05Z" duration-ms="81510">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-11-17T13:08:28Z" name="Default test" finished-at="2020-11-17T13:11:50Z" duration-ms="202007">
-      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar@ed7f8b4]" started-at="2020-11-17T10:08:28Z" name="beforeClass" finished-at="2020-11-17T10:09:13Z" duration-ms="44692" status="PASS">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-11-17T06:28:59Z" name="Default test" finished-at="2020-11-17T06:30:39Z" duration-ms="100580">
-      <class name="com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:28:59Z" name="beforeClass" finished-at="2020-11-17T00:29:12Z" duration-ms="12873" status="PASS">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-11-17T01:14:37Z" name="Default test" finished-at="2020-11-17T01:15:54Z" duration-ms="77353">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:14:37Z" name="beforeClass" finished-at="2020-11-16T19:14:54Z" duration-ms="17062" status="PASS">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-11-16T21:02:32Z" name="Default test" finished-at="2020-11-16T21:05:06Z" duration-ms="153905">
-      <class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:32Z" name="beforeClass" finished-at="2020-11-16T18:02:45Z" duration-ms="12524" status="PASS">
-=======
-    <test name="Default test" duration-ms="65917" started-at="2020-11-16T19:09:57Z" finished-at="2020-11-16T19:11:03Z">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="13386" started-at="2020-11-16T13:09:57Z" finished-at="2020-11-16T13:10:10Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <test started-at="2020-11-25T03:55:43Z" name="Default test" finished-at="2020-11-25T03:57:05Z" duration-ms="81510">
+      <class name="com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:55:43Z" name="beforeClass" finished-at="2020-11-24T21:55:58Z" duration-ms="14526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar@ed7f8b4]" started-at="2020-11-17T10:09:13Z" name="login" finished-at="2020-11-17T10:09:29Z" duration-ms="15841" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:29:12Z" name="ingresar" finished-at="2020-11-17T00:29:20Z" duration-ms="8305" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar@ed7f8b4]" started-at="2020-11-17T10:09:29Z" name="acessarMDR" finished-at="2020-11-17T10:11:10Z" duration-ms="101481" status="PASS">
-=======
-        </test-method> <!-- ingresar -->
-        <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:29:20Z" name="ingresarMDR" finished-at="2020-11-17T00:29:57Z" duration-ms="36923" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar@ed7f8b4]" started-at="2020-11-17T10:11:10Z" name="criar" finished-at="2020-11-17T10:11:50Z" duration-ms="39970" status="PASS">
-=======
-        </test-method> <!-- ingresarMDR -->
-        <test-method signature="detalle()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:29:57Z" name="detalle" finished-at="2020-11-17T00:30:39Z" duration-ms="42440" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar@ed7f8b4]" started-at="2020-11-17T10:11:50Z" name="afterClass" finished-at="2020-11-17T10:11:50Z" duration-ms="0" status="PASS">
-=======
-        </test-method> <!-- detalle -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle@644baf4a]" started-at="2020-11-17T00:30:39Z" name="afterClass" finished-at="2020-11-17T00:30:39Z" duration-ms="0" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle -->
-=======
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:14:54Z" name="ingresar" finished-at="2020-11-16T19:15:02Z" duration-ms="7823" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresar -->
-        <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:15:02Z" name="ingresarMDR" finished-at="2020-11-16T19:15:12Z" duration-ms="10913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresarMDR -->
-        <test-method signature="detalhes()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:15:12Z" name="detalhes" finished-at="2020-11-16T19:15:54Z" duration-ms="41533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detalhes -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes@10f7f7de]" started-at="2020-11-16T19:15:54Z" name="afterClass" finished-at="2020-11-16T19:15:54Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela25.ParâmetrosParaEnvioDeMensagensDetalhes -->
-=======
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:45Z" name="login" finished-at="2020-11-16T18:02:53Z" duration-ms="7923" status="PASS">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="login" duration-ms="7468" started-at="2020-11-16T13:10:10Z" finished-at="2020-11-16T13:10:18Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:55:58Z" name="login" finished-at="2020-11-24T21:56:08Z" duration-ms="10096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:02:53Z" name="acessarMDR" finished-at="2020-11-16T18:03:16Z" duration-ms="23509" status="PASS">
-=======
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="acessarMDR" duration-ms="10245" started-at="2020-11-16T13:10:18Z" finished-at="2020-11-16T13:10:28Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:56:08Z" name="brbEntrar" finished-at="2020-11-24T21:56:23Z" duration-ms="14567" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:03:16Z" name="criar" finished-at="2020-11-16T18:05:06Z" duration-ms="109866" status="PASS">
-=======
-        <test-method status="PASS" signature="filtroCodigo()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="filtroCodigo" duration-ms="30360" started-at="2020-11-16T13:10:28Z" finished-at="2020-11-16T13:10:58Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:56:23Z" name="excluir" finished-at="2020-11-24T21:57:05Z" duration-ms="42298" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa@54c5a2ff]" started-at="2020-11-16T18:05:06Z" name="afterClass" finished-at="2020-11-16T18:05:06Z" duration-ms="69" status="PASS">
-=======
-        </test-method> <!-- filtroCodigo -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4444" started-at="2020-11-16T13:10:58Z" finished-at="2020-11-16T13:11:03Z">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:57:05Z" name="afterClass" finished-at="2020-11-24T21:57:05Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa -->
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git

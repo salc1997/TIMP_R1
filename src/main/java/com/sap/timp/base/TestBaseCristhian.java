@@ -17,7 +17,7 @@ public class TestBaseCristhian extends TestBaseSteven{
 	public WebDriver initializationC() {
 		
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
 
 		driver = new ChromeDriver();
@@ -27,7 +27,8 @@ public class TestBaseCristhian extends TestBaseSteven{
 	}
 	
 	
-	public String capitalize(String cadena) {
+	public String capitalize(String 
+			cadena) {
 		String[] split = cadena.split("");
         for (int i = 0; i < split.length; i++) {
             if(i == 0 || split[i-1].equals(" ")) {

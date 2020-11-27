@@ -75,14 +75,7 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-<<<<<<< HEAD
 		driver.get(tc2);
-=======
-
-		driver.get(tq1);
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-
-
 		return driver;
 	}
 	

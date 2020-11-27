@@ -9,9 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosParaCategoriaDeIRFCriarPO extends TestBaseSteven{
+public class ParametrosParaCategoriaDeIRFCriarPO extends TestBaseMassiel{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Parâmetros para Categoria de IRF \"]")

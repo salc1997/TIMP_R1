@@ -130,9 +130,7 @@ public class AutomaçõesMDR7 {
 	//Livros Fiscais > Parametrização do livro oficial
 	LivrosFiscaisCriar livrosFiscaisCriar;
 	LivrosFiscaisExcluir livrosFiscaisExcluir;
-	ParametrizaçãoDoLivroOficialEditar parametrizaçãoDoLivroOficialEditar;
-	ParametrizaçãoDoLivroOficialVisualizar parametrizaçãoDoLivroOficialVisualizar;
-	
+
 	
 	// Parametros de Contabilização	> Contas Default para Extemporâneo
 	ContasDefaultParaExtemporaneoExcluirMassa contasDefaultParaExtemporaneoExcluirMassa;
@@ -439,25 +437,7 @@ public class AutomaçõesMDR7 {
 	}
 	
 	
-	@Test(priority = 18)
-	public void parametrizaçãoDoLivroOficialEditar() {
-		parametrizaçãoDoLivroOficialEditar = new ParametrizaçãoDoLivroOficialEditar();
-		parametrizaçãoDoLivroOficialEditar.beforeClass();
-		parametrizaçãoDoLivroOficialEditar.login();
-		parametrizaçãoDoLivroOficialEditar.acessarMDR();
-		parametrizaçãoDoLivroOficialEditar.Editar();
-		parametrizaçãoDoLivroOficialEditar.afterClass();		
-	}
 	
-	@Test(priority = 19)
-	public void parametrizaçãoDoLivroOficialVisualizar() {
-		parametrizaçãoDoLivroOficialVisualizar= new ParametrizaçãoDoLivroOficialVisualizar();
-		parametrizaçãoDoLivroOficialVisualizar.beforeClass();
-		parametrizaçãoDoLivroOficialVisualizar.ingresar();
-		parametrizaçãoDoLivroOficialVisualizar.ingresarMDR();
-		parametrizaçãoDoLivroOficialVisualizar.visualizar();
-		parametrizaçãoDoLivroOficialVisualizar.afterClass();		
-	}
 	@Test(priority = 20)
 	public void livrosFiscaisExcluir() {
 		livrosFiscaisExcluir = new LivrosFiscaisExcluir();

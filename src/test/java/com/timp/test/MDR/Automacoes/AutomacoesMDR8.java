@@ -10,6 +10,7 @@ import com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObr
 import com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasEditar;
 import com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasExcluir;
 import com.timp.test.MDR.CadastrosIRPJCSLL.CadastroContaisContabeis.CadastroContaisContabeisFiltroID;
+import com.timp.test.MDR.CadastrosIRPJCSLL.ContasContábeisRBLP.ContasContábeisRBLPFiltroId;
 import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisCriar;
 import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisEditar;
 import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisExcluir;
@@ -23,10 +24,14 @@ import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeRea
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaVisualizar;
 import com.timp.test.MDR.EventosESocial.S2230AfastamentoTemporário.S2230AfastamentoTemporárioFiltroId;
 import com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoExcluirMasas;
+import com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficial;
+import com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar;
+import com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTEditar;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluir;
+import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluirMasas;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTVisualizar;
 
 public class AutomacoesMDR8 {
@@ -79,8 +84,21 @@ public class AutomacoesMDR8 {
 	//Cadastro Derex > Cadastro Responsável pelo Movimento
 	
 	ResponsavelMovimientoExcluirMasas responsavelMovimientoExcluirMasas;
+	
 	//Cadastro Derex > Instituição Financeira
 	InstituicaoExcluirMasas instituicaoExcluirMasas;
+	
+	//Livros Fiscais > Parâmetros para Livro ICMS ST
+		ParametrosParaLivroICMSSTExcluirMasas  parametrosParaLivroICMSSTExcluirMasas;
+		
+	//Cadastros IRPJ/CSLL	> Contas Contábeis RB/LP
+		ContasContábeisRBLPFiltroId contasContábeisRBLPFiltroId;
+		
+	// Parametrização Do Livro Oficial
+		ParametrizaçãoDoLivroOficial parametrizaçãoDoLivroOficial;
+		ParametrizaçãoDoLivroOficialEditar parametrizaçãoDoLivroOficialEditar;
+		ParametrizaçãoDoLivroOficialVisualizar parametrizaçãoDoLivroOficialVisualizar;
+		
 	
 	// 0 --- 7
 	
@@ -378,7 +396,7 @@ public class AutomacoesMDR8 {
 	@Test(priority = 42)
 	public void cadastroCondiçaoExcluirMasas() {
 
-		System.out.println("---- Hierarquia De Cenarios De Correçao -------------");
+		System.out.println("---- Cadastro Condicao-------------");
 
 		cadastroCondiçaoExcluirMasas = new CadastroCondiçaoExcluirMasas();
 		cadastroCondiçaoExcluirMasas.beforeClass();
@@ -393,7 +411,7 @@ public class AutomacoesMDR8 {
 	@Test(priority = 43)
 	public void responsavelMovimientoExcluirMasas() {
 
-		System.out.println("---- Hierarquia De Cenarios De Correçao -------------");
+		System.out.println("---- Responsavel Movimiento -------------");
 
 		responsavelMovimientoExcluirMasas = new ResponsavelMovimientoExcluirMasas();
 		responsavelMovimientoExcluirMasas.beforeClass();
@@ -408,7 +426,7 @@ public class AutomacoesMDR8 {
 		@Test(priority = 44)
 		public void instituicaoExcluirMasas() {
 
-			System.out.println("---- Hierarquia De Cenarios De Correçao -------------");
+			System.out.println("----  institucao  -------------");
 
 			instituicaoExcluirMasas = new InstituicaoExcluirMasas();
 			instituicaoExcluirMasas.beforeClass();
@@ -418,5 +436,69 @@ public class AutomacoesMDR8 {
 			instituicaoExcluirMasas.afterClass();
 
 		}
-	
+		
+		//45 
+		
+		@Test(priority = 45)
+		public void parametrosParaLivroICMSSTExcluirMasas() {
+
+			System.out.println("----  Parametros Para Livro ICMSS  -------------");
+
+			parametrosParaLivroICMSSTExcluirMasas = new ParametrosParaLivroICMSSTExcluirMasas();
+			parametrosParaLivroICMSSTExcluirMasas.beforeClass();
+			parametrosParaLivroICMSSTExcluirMasas.login();
+			parametrosParaLivroICMSSTExcluirMasas.acessarMDR();
+			parametrosParaLivroICMSSTExcluirMasas.criar();
+			parametrosParaLivroICMSSTExcluirMasas.afterClass();
+
+		}
+		
+		//46
+		@Test(priority = 46)
+		public void contasContábeisRBLPFiltroId() {
+
+			System.out.println("----  Contas Contábeis RBLP  -------------");
+
+			contasContábeisRBLPFiltroId = new ContasContábeisRBLPFiltroId();
+			contasContábeisRBLPFiltroId.beforeClass();
+			contasContábeisRBLPFiltroId.login();
+			contasContábeisRBLPFiltroId.acessarMDR();
+			contasContábeisRBLPFiltroId.filtro();
+			contasContábeisRBLPFiltroId.afterClass();
+
+		}
+		//47 -52
+		
+		@Test(priority = 47)
+		public void parametrizaçãoDoLivroOficial() {
+
+			System.out.println("----  Parametrização Do Livro Oficial  -------------");
+
+			parametrizaçãoDoLivroOficial = new ParametrizaçãoDoLivroOficial();
+			parametrizaçãoDoLivroOficial.beforeClass();
+			parametrizaçãoDoLivroOficial.login();
+			parametrizaçãoDoLivroOficial.acessarMDR();
+			parametrizaçãoDoLivroOficial.criar();
+			parametrizaçãoDoLivroOficial.afterClass();		
+		}
+		
+		@Test(priority = 48)
+		public void parametrizaçãoDoLivroOficialEditar() {
+			parametrizaçãoDoLivroOficialEditar = new ParametrizaçãoDoLivroOficialEditar();
+			parametrizaçãoDoLivroOficialEditar.beforeClass();
+			parametrizaçãoDoLivroOficialEditar.login();
+			parametrizaçãoDoLivroOficialEditar.acessarMDR();
+			parametrizaçãoDoLivroOficialEditar.Editar();
+			parametrizaçãoDoLivroOficialEditar.afterClass();		
+		}
+		
+		@Test(priority = 49)
+		public void parametrizaçãoDoLivroOficialVisualizar() {
+			parametrizaçãoDoLivroOficialVisualizar= new ParametrizaçãoDoLivroOficialVisualizar();
+			parametrizaçãoDoLivroOficialVisualizar.beforeClass();
+			parametrizaçãoDoLivroOficialVisualizar.ingresar();
+			parametrizaçãoDoLivroOficialVisualizar.ingresarMDR();
+			parametrizaçãoDoLivroOficialVisualizar.visualizar();
+			parametrizaçãoDoLivroOficialVisualizar.afterClass();		
+		}
 }

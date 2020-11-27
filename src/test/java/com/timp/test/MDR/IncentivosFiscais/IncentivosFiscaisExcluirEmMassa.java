@@ -32,7 +32,7 @@ public class IncentivosFiscaisExcluirEmMassa extends TestBaseKenssy {
   }
   
   @Test(priority = 0)
-  public void ingresar() {
+  public void login() {
 	  loginTC.login();
   }
   

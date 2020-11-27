@@ -99,11 +99,13 @@ import com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar;
 import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir;
+import com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan;
 import com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaCriar;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluir;
+import com.timp.test.MDR.CodigoReceita.CodigoReceitaFiltrosAvan;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId;
@@ -294,6 +296,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	CodigoContabalizacaoDetalhes codigoContabalizacaoDetalhes;
 	CodigoContabilizacaoExcluir codigoContabilizacaoExcluir;
 	CódigoContabilizaçãoExcluirMassa códigoContabilizaçãoExcluirMassa;
+	CodigoContabilizacaoFiltrosAvan codigoContabilizacaoFiltrosAvan;
 
 	// Código da Receita
 	CodigoReceitaCriar codigoReceitaCriar;
@@ -301,6 +304,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	CodigoReceitaEditar codigoReceitaEditar;
 	CodigoReceitaVisualizar codigoReceitaVisualizar;
 	CodigoReceitaExcluir codigoReceitaExcluir;
+	CodigoReceitaFiltrosAvan codigoReceitaFiltrosAvan;
 
 	// Configuração do Fundo Socail
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
@@ -1550,7 +1554,6 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-
 	@Test(priority = 77)
 	public void codigoContabilizacaoExcluir() {
 
@@ -1563,10 +1566,23 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 		System.out.println("-------------------Codigo Contabilização Fin-------------------------");
 	}
+	
+	@Test(priority = 78)
+	public void codigoContabilizacaoFiltrosAvan() {
+		System.out.println(
+				"-------------------Código de Contabilização-------------------------");
+		codigoContabilizacaoFiltrosAvan = new CodigoContabilizacaoFiltrosAvan();
+		codigoContabilizacaoFiltrosAvan.beforeClass();
+		codigoContabilizacaoFiltrosAvan.login();
+		codigoContabilizacaoFiltrosAvan.acessarMDR();
+		codigoContabilizacaoFiltrosAvan.filtrarAvanCodigoContabilizacao();
+		codigoContabilizacaoFiltrosAvan.afterClass();
+	}
+	
 
 	// Código da Receita
 
-	@Test(priority = 78)
+	@Test(priority = 79)
 	public void codigoReceitaCriar() {
 
 		System.out.println("-------------------Código da Receita-------------------------");
@@ -1580,7 +1596,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 79)
+	@Test(priority = 80)
 	public void codigoReceitaEditar() {
 
 		codigoReceitaEditar = new CodigoReceitaEditar();
@@ -1604,7 +1620,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 81)
+	@Test(priority = 80)
 	public void codigoReceitaVisualizar() {
 
 		codigoReceitaVisualizar = new CodigoReceitaVisualizar();
@@ -1616,7 +1632,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 82)
+	@Test(priority = 81)
 	public void codigoReceitaExcluir() {
 
 		codigoReceitaExcluir = new CodigoReceitaExcluir();
@@ -1625,9 +1641,22 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		codigoReceitaExcluir.acessarMDR();
 		codigoReceitaExcluir.excluir();
 		codigoReceitaExcluir.afterClass();
-
+	}
+	
+	@Test(priority = 82)
+	public void codigoReceitaFiltrosAvan() {
+		
+		codigoReceitaFiltrosAvan = new CodigoReceitaFiltrosAvan();
+		codigoReceitaFiltrosAvan.beforeClass();
+		codigoReceitaFiltrosAvan.login();
+		codigoReceitaFiltrosAvan.acessarMDR();
+		codigoReceitaFiltrosAvan.filtrosAvanzados();
+		codigoReceitaFiltrosAvan.afterClass();
+		
 		System.out.println("-------------------Código da Receita Fin-------------------------");
 	}
+	
+	
 
 	// Configuração do Fundo Social
 

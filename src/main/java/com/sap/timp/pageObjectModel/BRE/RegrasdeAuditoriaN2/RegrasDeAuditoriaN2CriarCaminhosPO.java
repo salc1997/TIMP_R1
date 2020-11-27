@@ -10,8 +10,6 @@ import com.sap.timp.base.TestBaseCristhian;
 
 public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	
-	
-	
 	@FindBy(xpath = "//span[text()=\"Regras\"]")
 	public WebElement Regras;
 	
@@ -224,6 +222,8 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 		sleep(2000);
 		sleep(2000);
 		sleep(2000);
+		waitExpectElement(AN2);
+		sleep(4000);
 		AN2.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

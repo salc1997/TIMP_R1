@@ -136,16 +136,16 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start\"]")
 	public WebElement primeiracaixar1;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][1]")
+	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"][1]")
 	public WebElement primeiracaixar1editado;
 	
 	@FindBy(xpath = "//button[text()=\"Modificar\"]")
 	public WebElement modificar;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][1]")
+	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"][1]")
 	public WebElement parte1string;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][2]")
+	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"][2]")
 	public WebElement parte2string;
 
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div/div/input")
@@ -158,7 +158,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//*[name()=\"g\"][@height=\"24\"][6]")
 	public WebElement r2;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"]")
+	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"]")
 	public WebElement primeiracaixar2;
 	
 	@FindBy(xpath = "//button[text()=\"Remover\"]")
@@ -224,11 +224,15 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		sleep(2000);
 		waitExpectElement(nao);
 		sleep(2000);
+
+		sleep(3000);
+
 		nao.click();
-		sleep(1000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -265,11 +269,12 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sucesso.add(sucesso3);
 		}
 		gravar.click();
+
 		sleep(1000);
 		waitExpectElement(nao);
 		sleep(2000);
 		nao.click();
-		sleep(1000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -290,11 +295,15 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		remover.click();
 		sleep(1000);
 		gravar.click();
+
 		sleep(1000);
 		waitExpectElement(nao);
 		sleep(2000);
+
+		sleep(4000);
+
 		nao.click();
-		sleep(1000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -320,11 +329,15 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		aplicar.click();
 		sleep(1000);
 		gravar.click();
+
 		sleep(1000);
 		waitExpectElement(nao);
 		sleep(2000);
+
+		sleep(4000);
+
 		nao.click();
-		sleep(1000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		configuracoes.click();

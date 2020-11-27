@@ -26,6 +26,7 @@ import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroForneced
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluir;
+import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosDetalhes;
 import com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar;
@@ -117,6 +118,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	CadastroNotaFiscalCriar cadastroNotaFiscalCriar;
 	CadastroNotaFiscalEditar cadastroNotaFiscalEditar;
 	CadastroNotaFiscalExcluir cadastroNotaFiscalExcluir;
+	CadastroNotaFiscalExcluirEmMassa cadastroNotaFiscalExcluirEmMassa;
 
 	// Parâmetros de criação de NF > Cadastro de Fornecedor
 
@@ -385,11 +387,23 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		cadastroNotaFiscalExcluir.acessarMDR();
 		cadastroNotaFiscalExcluir.excluir();
 		cadastroNotaFiscalExcluir.afterClass();
+}
 
+	@Test(priority = 9)
+	public void cadastroNotaFiscalExcluirEmMassa() {
+
+		cadastroNotaFiscalExcluirEmMassa = new CadastroNotaFiscalExcluirEmMassa();
+		cadastroNotaFiscalExcluirEmMassa.beforeClass();
+		cadastroNotaFiscalExcluirEmMassa.ingresar();
+		cadastroNotaFiscalExcluirEmMassa.mdrEntrar();
+		cadastroNotaFiscalExcluirEmMassa.excluirEmMassa();
+		cadastroNotaFiscalExcluirEmMassa.afterClass();
+		
 		System.out.println(
 				"-------------------Parâmetros de criação de NF > Cadastro de Nota Fiscal Fin-------------------------");
+	
 	}
-
+	
 	// 12
 
 	// Ocorrência Fiscal > Status de Ocorrência Fiscal

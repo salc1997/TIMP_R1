@@ -1,245 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Fernando
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Eliel
 <testng-results total="3" passed="3" failed="0" skipped="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<testng-results skipped="0" failed="0" total="3" passed="3">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Fernando
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Eliel
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-11-26T19:15:37Z" name="Default suite" finished-at="2020-11-26T19:19:27Z" duration-ms="230043">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="156784" started-at="2020-11-25T23:13:17Z" finished-at="2020-11-25T23:15:53Z">
-=======
-<<<<<<< HEAD
-  <suite started-at="2020-11-25T21:09:46Z" name="Default suite" finished-at="2020-11-25T21:13:27Z" duration-ms="221515">
-=======
-  <suite name="Default suite" duration-ms="238465" started-at="2020-11-25T21:04:52Z" finished-at="2020-11-25T21:08:51Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
-  <suite started-at="2020-11-26T00:55:53Z" name="Default suite" finished-at="2020-11-26T00:58:16Z" duration-ms="142406">
->>>>>>> refs/remotes/origin/Fernando
-=======
-  <suite started-at="2020-11-25T18:43:43Z" name="Default suite" finished-at="2020-11-25T18:45:37Z" duration-ms="113673">
->>>>>>> refs/heads/Cristhian
-=======
-  <suite started-at="2020-11-26T17:57:59Z" name="Default suite" finished-at="2020-11-26T18:00:10Z" duration-ms="130571">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/Steven
+  <suite started-at="2020-11-27T20:43:45Z" name="Default suite" finished-at="2020-11-27T20:45:06Z" duration-ms="81081">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-11-26T19:15:37Z" name="Default test" finished-at="2020-11-26T19:19:27Z" duration-ms="230043">
-      <class name="com.timp.test.BRE.RegrasDeNegocio.RegrasDeNegocioCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.RegrasDeNegocioCriar@6d4d66d2]" started-at="2020-11-26T16:15:37Z" name="beforeClass" finished-at="2020-11-26T16:15:58Z" duration-ms="21119" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="156784" started-at="2020-11-25T23:13:17Z" finished-at="2020-11-25T23:15:53Z">
-      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11191" started-at="2020-11-25T17:13:17Z" finished-at="2020-11-25T17:13:28Z">
-=======
-<<<<<<< HEAD
-    <test started-at="2020-11-25T21:09:46Z" name="Default test" finished-at="2020-11-25T21:13:27Z" duration-ms="221515">
-=======
-    <test name="Default test" duration-ms="238465" started-at="2020-11-25T21:04:52Z" finished-at="2020-11-25T21:08:51Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:09:46Z" name="beforeClass" finished-at="2020-11-25T15:09:57Z" duration-ms="11380" status="PASS">
-=======
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="18187" started-at="2020-11-25T15:04:52Z" finished-at="2020-11-25T15:05:10Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
-    <test started-at="2020-11-26T00:55:53Z" name="Default test" finished-at="2020-11-26T00:58:16Z" duration-ms="142406">
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:55:53Z" name="beforeClass" finished-at="2020-11-25T18:56:07Z" duration-ms="13511" status="PASS">
->>>>>>> refs/remotes/origin/Fernando
-=======
-    <test started-at="2020-11-25T18:43:43Z" name="Default test" finished-at="2020-11-25T18:45:37Z" duration-ms="113673">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:43:43Z" name="beforeClass" finished-at="2020-11-25T15:43:59Z" duration-ms="15578" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-    <test started-at="2020-11-26T17:57:59Z" name="Default test" finished-at="2020-11-26T18:00:10Z" duration-ms="130571">
-      <class name="com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:57:59Z" name="beforeClass" finished-at="2020-11-26T14:58:13Z" duration-ms="13327" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/Steven
+    <test started-at="2020-11-27T20:43:45Z" name="Default test" finished-at="2020-11-27T20:45:06Z" duration-ms="81081">
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:43:45Z" name="beforeClass" finished-at="2020-11-27T17:43:58Z" duration-ms="13177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.RegrasDeNegocioCriar@6d4d66d2]" started-at="2020-11-26T16:15:58Z" name="login" finished-at="2020-11-26T16:16:14Z" duration-ms="15104" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="login" duration-ms="5965" started-at="2020-11-25T17:13:28Z" finished-at="2020-11-25T17:13:34Z">
-=======
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:09:57Z" name="ingresar" finished-at="2020-11-25T15:10:07Z" duration-ms="9871" status="PASS">
-=======
-        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="ingresar" duration-ms="7598" started-at="2020-11-25T15:05:10Z" finished-at="2020-11-25T15:05:18Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:56:07Z" name="ingresar" finished-at="2020-11-25T18:56:15Z" duration-ms="8699" status="PASS">
->>>>>>> refs/remotes/origin/Fernando
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:43:59Z" name="login" finished-at="2020-11-25T15:44:08Z" duration-ms="8509" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:58:13Z" name="login" finished-at="2020-11-26T14:58:20Z" duration-ms="7550" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/Steven
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:43:58Z" name="login" finished-at="2020-11-27T17:44:06Z" duration-ms="7617" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.RegrasDeNegocioCriar@6d4d66d2]" started-at="2020-11-26T16:16:14Z" name="acessarBRE" finished-at="2020-11-26T16:16:29Z" duration-ms="15643" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="acessarMDR" duration-ms="20340" started-at="2020-11-25T17:13:34Z" finished-at="2020-11-25T17:13:54Z">
-=======
-        </test-method> <!-- ingresar -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:10:07Z" name="mdrEntrar" finished-at="2020-11-25T15:10:22Z" duration-ms="14536" status="PASS">
-=======
-        <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="mdrEntrar" duration-ms="15528" started-at="2020-11-25T15:05:18Z" finished-at="2020-11-25T15:05:33Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:56:15Z" name="mdrEntrar" finished-at="2020-11-25T18:56:30Z" duration-ms="14163" status="PASS">
->>>>>>> refs/remotes/origin/Fernando
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:44:08Z" name="acessarMDR" finished-at="2020-11-25T15:44:19Z" duration-ms="11927" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:58:20Z" name="acessarBRE" finished-at="2020-11-26T14:58:37Z" duration-ms="17091" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/Steven
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:44:06Z" name="acessarBRE" finished-at="2020-11-27T17:44:23Z" duration-ms="17549" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-        </test-method> <!-- acessarMDR -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="criar" duration-ms="114826" started-at="2020-11-25T17:13:54Z" finished-at="2020-11-25T17:15:49Z">
-=======
-        </test-method> <!-- mdrEntrar -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:10:22Z" name="criar" finished-at="2020-11-25T15:13:23Z" duration-ms="181367" status="PASS">
-=======
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="criar" duration-ms="192688" started-at="2020-11-25T15:05:33Z" finished-at="2020-11-25T15:08:46Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="criarGerenciarMoverPasta()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:56:30Z" name="criarGerenciarMoverPasta" finished-at="2020-11-25T18:58:11Z" duration-ms="101673" status="PASS">
->>>>>>> refs/remotes/origin/Fernando
-=======
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:44:19Z" name="excluir" finished-at="2020-11-25T15:45:37Z" duration-ms="77629" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
         </test-method> <!-- acessarBRE -->
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.RegrasDeNegocioCriar@6d4d66d2]" started-at="2020-11-26T16:16:29Z" name="criar" finished-at="2020-11-26T16:19:27Z" duration-ms="178156" status="PASS">
-=======
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T14:58:37Z" name="editar" finished-at="2020-11-26T15:00:10Z" duration-ms="92586" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/Steven
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:44:23Z" name="editar" finished-at="2020-11-27T17:45:06Z" duration-ms="42721" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.RegrasDeNegocioCriar@6d4d66d2]" started-at="2020-11-26T16:19:27Z" name="afterClass" finished-at="2020-11-26T16:19:27Z" duration-ms="1" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BSC.FiltroPorIDRegistroCriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4450" started-at="2020-11-25T17:15:49Z" finished-at="2020-11-25T17:15:53Z">
-=======
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@6676f6a0]" started-at="2020-11-25T15:13:23Z" name="afterClass" finished-at="2020-11-25T15:13:27Z" duration-ms="4340" status="PASS">
-=======
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4443" started-at="2020-11-25T15:08:46Z" finished-at="2020-11-25T15:08:51Z">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
-        </test-method> <!-- criarGerenciarMoverPasta -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@10f7f7de]" started-at="2020-11-25T18:58:11Z" name="afterClass" finished-at="2020-11-25T18:58:16Z" duration-ms="4338" status="PASS">
->>>>>>> refs/remotes/origin/Fernando
-=======
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir@4c309d4d]" started-at="2020-11-25T15:45:37Z" name="afterClass" finished-at="2020-11-25T15:45:37Z" duration-ms="1" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
         </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar@6d4d66d2]" started-at="2020-11-26T15:00:10Z" name="afterClass" finished-at="2020-11-26T15:00:10Z" duration-ms="1" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/Steven
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:45:06Z" name="afterClass" finished-at="2020-11-27T17:45:06Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.RegrasDeNegocioCriar -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
-=======
-      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta -->
->>>>>>> refs/remotes/origin/Fernando
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir -->
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar -->
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/Steven
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,65 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
->>>>>>> branch 'Steven' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Fernando
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
-=======
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta">
->>>>>>> refs/remotes/origin/Fernando
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
         <methods>
-<<<<<<< HEAD
+          <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="criar"/>
-=======
->>>>>>> refs/remotes/origin/Fernando
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criarGerenciarMoverPasta"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
-=======
-      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta -->
->>>>>>> refs/remotes/origin/Fernando
-=======
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar">
-        <methods>
-          <include name="login"/>
-          <include name="afterClass"/>
-          <include name="acessarMDR"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar -->
->>>>>>> refs/heads/Cristhian
-=======
-    <classes>
-      <class name="com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar -->
->>>>>>> refs/remotes/origin/Eliel
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

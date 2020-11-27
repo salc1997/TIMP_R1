@@ -13,21 +13,22 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturasPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimularPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditarPO;
 
-public class RegrasDeMensagensSimular extends TestBaseSteven {
+public class RegrasDeMensagensEstruturas extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeMensagensSimularPO regrasDeMensagensSimularPO;
+	RegrasDeMensagensEstruturasPO regrasDeMensagensEstruturasPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeMensagensSimularPO = new RegrasDeMensagensSimularPO();
+		regrasDeMensagensEstruturasPO = new RegrasDeMensagensEstruturasPO();
 	}
 
 	@AfterClass
@@ -47,9 +48,8 @@ public class RegrasDeMensagensSimular extends TestBaseSteven {
 	
 	@Test(priority = 2)
 	public void editar() {
-		boolean sucesso = regrasDeMensagensSimularPO.simular();
-		
-		assertTrue(sucesso, filtros);
+		regrasDeMensagensEstruturasPO.estrutura();
+
 		
 	}
  

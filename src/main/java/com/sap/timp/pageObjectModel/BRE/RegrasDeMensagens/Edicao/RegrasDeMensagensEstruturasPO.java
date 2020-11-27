@@ -10,8 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeMensagensSimularPO extends TestBaseEliel {
+public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
 	public WebElement regrasdemensagens;
@@ -19,6 +20,11 @@ public class RegrasDeMensagensSimularPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
+	@FindBy(xpath = "//span[text()=\"Estruturas\"]")
+	public WebElement estruturas;
+	
+	@FindBy(xpath = "//button[text()=\"Create estructuras associadas\"]")
+	public WebElement crearEstruturas;
 
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
 	public WebElement adicionarcaminho;
@@ -57,12 +63,12 @@ public class RegrasDeMensagensSimularPO extends TestBaseEliel {
 	
 
 	
-	public RegrasDeMensagensSimularPO() {
+	public RegrasDeMensagensEstruturasPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 
-	public boolean simular() {
+	public void estrutura() {
 		
 		String url = driver.getCurrentUrl();
 		
@@ -105,55 +111,16 @@ public class RegrasDeMensagensSimularPO extends TestBaseEliel {
 		waitExpectElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		estruturas.click();
+		sleep(3000);
+		crearEstruturas.click();
+		sleep(3000);
+		
+		
+		
 
-		simulacao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		simulacaoR1.click();
-		sleep(1000);
-		dados.click();
-		sleep(2000);
-		ok.click();
-		sleep(2000);
 		
-		filtros.click();
-		sleep(2000);
-		waitExpectElement(aliquota);
-		sleep(2000);
-		aliquota.click();
-		sleep(1000);
-		aliquotaO.click();
-		sleep(1000);
-		
-		String constanteE = "";
-		
-		if (tq1== true) {
-			constanteE = "10";
-		}else if (tc2 == true) {
-			constanteE = "12";
-		}else {
-			constanteE = "12";
-		}
-		constante.sendKeys(constanteE);
-		sleep(1000);
-		aplicar.click();
-		sleep(2000);
-		simular.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		boolean sucesso = false;
-		int graficos = driver.findElements(By.xpath("//div[@class=\"charts\"]")).size();
-		int noResult = driver.findElements(By.xpath("//div[@id=\"noResult\"]")).size();
-		
-		if (graficos > 0 && noResult == 0) {
-			sucesso = true;
-		}
-		
-		System.out.println(sucesso);
-		return sucesso;
 		
 	}
 

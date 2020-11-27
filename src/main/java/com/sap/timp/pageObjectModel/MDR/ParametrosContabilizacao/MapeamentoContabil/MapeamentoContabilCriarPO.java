@@ -30,7 +30,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
 	public WebElement empresaO;
 	
 
@@ -137,7 +137,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		waitExpectElement(empresa);
 		
 		sleep(2000);
-		cabecalho.sendKeys("Teste Mapeamento Contábil");
+		cabecalho.sendKeys("Teste QA 1");
 		sleep(2000);
 		gravar.click();
 		sleep(2000);

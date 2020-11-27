@@ -51,6 +51,6 @@ public class MotivosCesBeneficiosExcluirMassa extends TestBaseFernando{
 	@Test(priority = 3)
 	public void excluirMassa() {
 		boolean sucesso = motivosCesBeneficiosExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Eliminado);
 	}
 }

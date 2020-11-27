@@ -6,7 +6,9 @@ import java.time.format.TextStyle;
 import java.util.Locale;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class TestBaseCristhian extends TestBaseSteven{
 
@@ -14,13 +16,23 @@ public class TestBaseCristhian extends TestBaseSteven{
 
 	public WebDriver initializationC() {
 
+<<<<<<< HEAD
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+=======
+		
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+<<<<<<< HEAD
 		driver.get(tp1);
+=======
+		driver.get(tq1);
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 	}
+	
 	
 	public String capitalize(String cadena) {
 		String[] split = cadena.split("");
@@ -50,6 +62,10 @@ public class TestBaseCristhian extends TestBaseSteven{
 		
 		String anioString = String.valueOf(anio);
 		return anioString;
+	}
+	
+	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
 	}
 
 }

@@ -17,6 +17,7 @@ import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanc
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraEditar;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluir;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizar;
+import com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes;
 import com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir;
@@ -81,9 +82,11 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.Val
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroID;
+import com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACCriar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACEditar;
 import com.timp.test.MDR.RegistroECAC.RegistroECACExcluir;
+import com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar;
@@ -96,6 +99,7 @@ import com.timp.test.MDR.Siscoserv.NBS.NBSCriar;
 import com.timp.test.MDR.Siscoserv.NBS.NBSDetalhes;
 import com.timp.test.MDR.Siscoserv.NBS.NBSEditar;
 import com.timp.test.MDR.Siscoserv.NBS.NBSExcluir;
+import com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaCriar;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaDetalhes;
 import com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaEditar;
@@ -326,7 +330,10 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	InclusaoDeCamposMarExcluir inclusaoDeCamposMarExcluir;
 	InclusaoDeCamposMarFiltrosAvançados inclusaoDeCamposMarFiltrosAvançados;
 	InclusaoDeCamposMarVisualizar inclusaoDeCamposMarVisualizar;
-
+	
+	// Eventos e-social > S1060 - Ambientes de Trabalho
+	S1060AmbientesDeTrablhoExcluirMassa s1060AmbientesDeTrablhoExcluirMassa;
+	
 	// Eventos e-social > S1200 Remuneracao De Trabalhador...
 	S1200RemuneracaoDeTrabalhadorCriar s1200RemuneracaoDeTrabalhadorCriar;
 	S1200RemuneracaoDeTrabalhadorDetalhes s1200RemuneracaoDeTrabalhadorDetalhes;
@@ -359,139 +366,141 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ParametrosParaTPExcluir parametrosParaTPExcluir;
 	ParametrosParaTPFiltroID parametrosParaTPFiltroID;
 
-	//// Registro ECAC
+	// Registro ECAC
 
+	RegistroECACCriar registroECACCriar;
+	RegistroECACEditar registroECACEditar;
+	RegistroECACExcluir registroECACExcluir;
+	RegistroECACCVisualizar registroECACCVisualizar;
+	RegistroECACExcluirMassa registroECACExcluirMassa;
 
-		RegistroECACCriar registroECACCriar;
-		RegistroECACEditar registroECACEditar;
-		RegistroECACExcluir registroECACExcluir;
-		 
 	//Atividades Para Tributacao > Tipos De Servicos
-		TiposDeServicosCriar tiposDeServicosCriar;
-		TiposDeServicosDetalhes tiposDeServicosDetalhes;
-		TiposDeServicosEditar tiposDeServicosEditar;
-		TiposDeServicosVisualizar tiposDeServicosVisualizar;
-		TiposDeServicosExcluir tiposDeServicosExcluir;
-		TiposDeServicosFiltroID tiposDeServicosFiltroID;
-		
+	TiposDeServicosCriar tiposDeServicosCriar;
+	TiposDeServicosDetalhes tiposDeServicosDetalhes;
+	TiposDeServicosEditar tiposDeServicosEditar;
+	TiposDeServicosVisualizar tiposDeServicosVisualizar;
+	TiposDeServicosExcluir tiposDeServicosExcluir;
+	TiposDeServicosFiltroID tiposDeServicosFiltroID;
+
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV
-		ValoresParaMetodoPVVCriar valoresParaMetodoPVVCriar;
-		ValoresParaMetodoPVVDetalhes valoresParaMetodoPVVDetalhes;
-		ValoresParaMetodoPVVEditar valoresParaMetodoPVVEditar;
-		ValoresParaMetodoPVVExcluir valoresParaMetodoPVVExcluir;
-		ValoresParaMetodoPVVFiltroID valoresParaMetodoPVVFiltroID;
-		
+	ValoresParaMetodoPVVCriar valoresParaMetodoPVVCriar;
+	ValoresParaMetodoPVVDetalhes valoresParaMetodoPVVDetalhes;
+	ValoresParaMetodoPVVEditar valoresParaMetodoPVVEditar;
+	ValoresParaMetodoPVVExcluir valoresParaMetodoPVVExcluir;
+	ValoresParaMetodoPVVFiltroID valoresParaMetodoPVVFiltroID;
+
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX
-		ValoresParaMetodoPVEXCriar valoresParaMetodoPVEXCriar;
-		ValoresParaMetodoPVEXDetalhes valoresParaMetodoPVEXDetalhes;
-		ValoresParaMetodoPVEXEditar valoresParaMetodoPVEXEditar;
-		ValoresParaMetodoPVEXExcluir valoresParaMetodoPVEXExcluir;
-		ValoresParaMetodoPVEXFiltroID valoresParaMetodoPVEXFiltroID;
-		
+	ValoresParaMetodoPVEXCriar valoresParaMetodoPVEXCriar;
+	ValoresParaMetodoPVEXDetalhes valoresParaMetodoPVEXDetalhes;
+	ValoresParaMetodoPVEXEditar valoresParaMetodoPVEXEditar;
+	ValoresParaMetodoPVEXExcluir valoresParaMetodoPVEXExcluir;
+	ValoresParaMetodoPVEXFiltroID valoresParaMetodoPVEXFiltroID;
+
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX
-		ValoresParaMetodoPECEXCriar valoresParaMetodoPECEXCriar;
-		ValoresParaMetodoPECEXDetalhes valoresParaMetodoPECEXDetalhes;
-		ValoresParaMetodoPECEXEditar valoresParaMetodoPECEXEditar;
-		ValoresParaMetodoPECEXExcluir valoresParaMetodoPECEXExcluir;
-		ValoresParaMetodoPECEXFiltroID valoresParaMetodoPECEXFiltroID;
-	
+	ValoresParaMetodoPECEXCriar valoresParaMetodoPECEXCriar;
+	ValoresParaMetodoPECEXDetalhes valoresParaMetodoPECEXDetalhes;
+	ValoresParaMetodoPECEXEditar valoresParaMetodoPECEXEditar;
+	ValoresParaMetodoPECEXExcluir valoresParaMetodoPECEXExcluir;
+	ValoresParaMetodoPECEXFiltroID valoresParaMetodoPECEXFiltroID;
+
 	//Reinf > Processos Adm/Judiciais
-		ProcessosAdmJudiciaisCriar processosAdmJudiciaisCriar;
-		ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
-		ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
-		ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
-		
+	ProcessosAdmJudiciaisCriar processosAdmJudiciaisCriar;
+	ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
+	ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
+	ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
+
 	//Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
-		DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
-		DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;
-		DeterminacaoDeRelevanciaPorRegraEditar determinacaoDeRelevanciaPorRegraEditar;
-		DeterminacaoDeRelevanciaPorRegraVisualizar determinacaoDeRelevanciaPorRegraVisualizar;
-		DeterminacaoDeRelevanciaPorRegraExcluir determinacaoDeRelevanciaPorRegraExcluir;
-		
+	DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
+	DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;
+	DeterminacaoDeRelevanciaPorRegraEditar determinacaoDeRelevanciaPorRegraEditar;
+	DeterminacaoDeRelevanciaPorRegraVisualizar determinacaoDeRelevanciaPorRegraVisualizar;
+	DeterminacaoDeRelevanciaPorRegraExcluir determinacaoDeRelevanciaPorRegraExcluir;
+
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP
-		ValoresParaMetodoCAPCriar valoresParaMetodoCAPCriar;
-		ValoresParaMetodoCAPDetalhes valoresParaMetodoCAPDetalhes;
-		ValoresParaMetodoCAPEditar valoresParaMetodoCAPEditar;
-		ValoresParaMetodoCAPExcluir valoresParaMetodoCAPExcluir;
-		ValoresParaMetodoCAPFiltroID valoresParaMetodoCAPFiltroID;
-		
+	ValoresParaMetodoCAPCriar valoresParaMetodoCAPCriar;
+	ValoresParaMetodoCAPDetalhes valoresParaMetodoCAPDetalhes;
+	ValoresParaMetodoCAPEditar valoresParaMetodoCAPEditar;
+	ValoresParaMetodoCAPExcluir valoresParaMetodoCAPExcluir;
+	ValoresParaMetodoCAPFiltroID valoresParaMetodoCAPFiltroID;
+
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA
-		ValoresParaMetodoPVACriar valoresParaMetodoPVACriar;
-		ValoresParaMetodoPVADetalhes valoresParaMetodoPVADetalhes;
-		ValoresParaMetodoPVAEditar valoresParaMetodoPVAEditar;
-		ValoresParaMetodoPVAExcluir valoresParaMetodoPVAExcluir;
-		ValoresParaMetodoPVAFiltroID valoresParaMetodoPVAFiltroID;
-		
+	ValoresParaMetodoPVACriar valoresParaMetodoPVACriar;
+	ValoresParaMetodoPVADetalhes valoresParaMetodoPVADetalhes;
+	ValoresParaMetodoPVAEditar valoresParaMetodoPVAEditar;
+	ValoresParaMetodoPVAExcluir valoresParaMetodoPVAExcluir;
+	ValoresParaMetodoPVAFiltroID valoresParaMetodoPVAFiltroID;
+
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL
-		ValoresParaMetodoCPLCriar valoresParaMetodoCPLCriar;
-		ValoresParaMetodoCPLEditar valoresParaMetodoCPLEditar;
-		ValoresParaMetodoCPLDetalhes valoresParaMetodoCPLDetalhes;
-		ValoresParaMetodoCPLExcluir valoresParaMetodoCPLExcluir;
-		ValoresParaMetodoCPLFiltroID valoresParaMetodoCPLFiltroID;
-	
-		
+	ValoresParaMetodoCPLCriar valoresParaMetodoCPLCriar;
+	ValoresParaMetodoCPLEditar valoresParaMetodoCPLEditar;
+	ValoresParaMetodoCPLDetalhes valoresParaMetodoCPLDetalhes;
+	ValoresParaMetodoCPLExcluir valoresParaMetodoCPLExcluir;
+	ValoresParaMetodoCPLFiltroID valoresParaMetodoCPLFiltroID;
+
+
 	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI
-		ValoresParaMetodoPCICriar valoresParaMetodoPCICriar;
-		ValoresParaMetodoPCIEditar valoresParaMetodoPCIEditar;
-		ValoresParaMetodoPCIDetalhes valoresParaMetodoPCIDetalhes;
-		ValoresParaMetodoPCIExcluir valoresParaMetodoPCIExcluir;
-		ValoresParaMetodoPCIFiltroID valoresParaMetodoPCIFiltroID;
-	
+	ValoresParaMetodoPCICriar valoresParaMetodoPCICriar;
+	ValoresParaMetodoPCIEditar valoresParaMetodoPCIEditar;
+	ValoresParaMetodoPCIDetalhes valoresParaMetodoPCIDetalhes;
+	ValoresParaMetodoPCIExcluir valoresParaMetodoPCIExcluir;
+	ValoresParaMetodoPCIFiltroID valoresParaMetodoPCIFiltroID;
+
 	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PIC
-		ValoresParaMetodoPICCriar valoresParaMetodoPICCriar;
-		ValoresParaMetodoPICDetalhes valoresParaMetodoPICDetalhes;
-		ValoresParaMetodoPICEditar valoresParaMetodoPICEditar;
-		ValoresParaMetodoPICExcluir valoresParaMetodoPICExcluir;
-		
+	ValoresParaMetodoPICCriar valoresParaMetodoPICCriar;
+	ValoresParaMetodoPICDetalhes valoresParaMetodoPICDetalhes;
+	ValoresParaMetodoPICEditar valoresParaMetodoPICEditar;
+	ValoresParaMetodoPICExcluir valoresParaMetodoPICExcluir;
+
 
 	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PRL
-		ValoresParaMetodoPRLCriar valoresParaMetodoPRLCriar;
-		ValoresParaMetodoPRLEditar valoresParaMetodoPRLEditar;
-		ValoresParaMetodoPRLDetalhes valoresParaMetodoPRLDetalhes;
-		ValoresParaMetodoPRLExcluir valoresParaMetodoPRLExcluir;
-		ValoresParaMetodoPRLFiltroID valoresParaMetodoPRLFiltroID;
-	
+	ValoresParaMetodoPRLCriar valoresParaMetodoPRLCriar;
+	ValoresParaMetodoPRLEditar valoresParaMetodoPRLEditar;
+	ValoresParaMetodoPRLDetalhes valoresParaMetodoPRLDetalhes;
+	ValoresParaMetodoPRLExcluir valoresParaMetodoPRLExcluir;
+	ValoresParaMetodoPRLFiltroID valoresParaMetodoPRLFiltroID;
+
 	//Siscoserv > Pais/Moeda
-		PaisMoedaCriar paisMoedaCriar;
-		PaisMoedaEditar paisMoedaEditar;
-		PaisMoedaDetalhes paisMoedaDetalhes;
-		PaisMoedaVisualizar paisMoedaVisualizar;
-		PaisMoedaExcluir paisMoedaExcluir;
-		
+	PaisMoedaCriar paisMoedaCriar;
+	PaisMoedaEditar paisMoedaEditar;
+	PaisMoedaDetalhes paisMoedaDetalhes;
+	PaisMoedaVisualizar paisMoedaVisualizar;
+	PaisMoedaExcluir paisMoedaExcluir;
+
 	//Siscoserv > NBS
-		NBSCriar nbsCriar;
-		NBSEditar nbsEditar;
-		NBSDetalhes nbsDetalhes;
-		NBSExcluir nbsExcluir;
-		
+	NBSCriar nbsCriar;
+	NBSEditar nbsEditar;
+	NBSDetalhes nbsDetalhes;
+	NBSExcluir nbsExcluir;
+	NBSExcluirMassa nBSExcluirMassa;
+
 	//Siscoserv > Enquadramento
-		EnquadramentoCriar enquadramentoCriar;
-		EnquadramentoEditar enquadramentoEditar;
-		EnquadramentoVisualizar enquadramentoVisualizar;
-		EnquadramentoExcluir enquadramentoExcluir;
-				
+	EnquadramentoCriar enquadramentoCriar;
+	EnquadramentoEditar enquadramentoEditar;
+	EnquadramentoVisualizar enquadramentoVisualizar;
+	EnquadramentoExcluir enquadramentoExcluir;
+
 	//Siscoserv > Registro RAS
-		RegistroRASCriar registroRASCriar;
-		RegistroRASEditar registroRASEditar;
-		RegistroRASDetalhes registroRASDetalhes;
-		RegistroRASVisualizar registroRASVisualizar;
-		RegistroRASFiltroID registroRASFiltroID;
-		RegistroRASExcluir registroRASExcluir;
-		
+	RegistroRASCriar registroRASCriar;
+	RegistroRASEditar registroRASEditar;
+	RegistroRASDetalhes registroRASDetalhes;
+	RegistroRASVisualizar registroRASVisualizar;
+	RegistroRASFiltroID registroRASFiltroID;
+	RegistroRASExcluir registroRASExcluir;
+
 	//Siscoserv > Registro RP
-		RegistroRPCriar registroRPCriar;
-		RegistroRPDetalhes registroRPDetalhes;
-		RegistroRPEditar registroRPEditar;
-		RegistroRPFiltroID registroRPFiltroID;
-		RegistroRPExcluir registroRPExcluir;
-		
+	RegistroRPCriar registroRPCriar;
+	RegistroRPDetalhes registroRPDetalhes;
+	RegistroRPEditar registroRPEditar;
+	RegistroRPFiltroID registroRPFiltroID;
+	RegistroRPExcluir registroRPExcluir;
+
 	// Siscoserv > Registro RVS
-		RegistroRVSCriar registroRVSCriar;
-		RegistroRVSDetalhes registroRVSDetalhes;
-		RegistroRVSEditar registroRVSEditar;
-		RegistroRVSExcluir registroRVSExcluir;
-		RegistroRVSFiltroID registroRVSFiltroID;
-		RegistroRVSVisualizar registroRVSVisualizar;
+	RegistroRVSCriar registroRVSCriar;
+	RegistroRVSDetalhes registroRVSDetalhes;
+	RegistroRVSEditar registroRVSEditar;
+	RegistroRVSExcluir registroRVSExcluir;
+	RegistroRVSFiltroID registroRVSFiltroID;
+	RegistroRVSVisualizar registroRVSVisualizar;
 		
 	
 		
@@ -1748,6 +1757,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 
+	
 	@Test(priority = 131)
 	public void registroECACEditar() {
 		registroECACEditar = new RegistroECACEditar();
@@ -1758,8 +1768,19 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		registroECACEditar.afterClass();
 
 	}
-
+	
 	@Test(priority = 132)
+	public void registroECACCVisualizar() {
+		registroECACCVisualizar = new RegistroECACCVisualizar();
+		registroECACCVisualizar.beforeClass();
+		registroECACCVisualizar.ingresar();
+		registroECACCVisualizar.ingresarMDR();
+		registroECACCVisualizar.Visualizar();
+		registroECACCVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 133)
 	public void registroECACExcluir() {
 		registroECACExcluir = new RegistroECACExcluir();
 		registroECACExcluir.beforeClass();
@@ -1767,6 +1788,17 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		registroECACExcluir.acessarMDR();
 		registroECACExcluir.excluir();
 		registroECACExcluir.afterClass();
+	}
+	
+	@Test(priority = 134)
+	public void registroECACExcluirMassa() {
+		registroECACExcluirMassa = new RegistroECACExcluirMassa();
+		registroECACExcluirMassa.beforeClass();
+		registroECACExcluirMassa.login();
+		registroECACExcluirMassa.acessarMDR();
+		registroECACExcluirMassa.criar();
+		registroECACExcluirMassa.excluirMassa();
+		registroECACExcluirMassa.afterClass();
 		System.out.println("-------------------Registro ECAC Fim-------------------------");
 	}
 
@@ -2636,9 +2668,19 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 			nbsExcluir.login();
 			nbsExcluir.acessarMDR();
 			nbsExcluir.excluir();
-			nbsExcluir.afterClass();
-			System.out.println("-------------------Siscoserv > NBS FIM-------------------------");
-			
+			nbsExcluir.afterClass();		
+		}
+		
+		@Test(priority = 228)
+		public void nbsExcluirMassa() {
+			nBSExcluirMassa = new NBSExcluirMassa();
+			nBSExcluirMassa.beforeClass();
+			nBSExcluirMassa.login();
+			nBSExcluirMassa.acessarMDR();
+			nBSExcluirMassa.criar();
+			nBSExcluirMassa.excluirMassa();
+			nBSExcluirMassa.afterClass();
+			System.out.println("-------------------Siscoserv > NBS FIM-------------------------");			
 		}
 		
 		//231
@@ -2899,9 +2941,26 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		//258
+		//Eventos e-Social	S1060 > Ambientes de Trabalho
 
+		
+		
+		@Test(priority = 262)
+		public void S1060AmbientesDeTrablhoExcluirMassa() {
+			
+			s1060AmbientesDeTrablhoExcluirMassa = new S1060AmbientesDeTrablhoExcluirMassa();
+			s1060AmbientesDeTrablhoExcluirMassa.beforeClass();
+			s1060AmbientesDeTrablhoExcluirMassa.login();
+			s1060AmbientesDeTrablhoExcluirMassa.acessarMDR();
+			s1060AmbientesDeTrablhoExcluirMassa.criar();
+			s1060AmbientesDeTrablhoExcluirMassa.afterClass();
+			
+			System.out.println("-------------------Eventos e-Social	S1060 > Ambientes de Trabalho Fim-------------------------");
+			
+
+		}
 	
-		//276
+		//262
 
 
 }

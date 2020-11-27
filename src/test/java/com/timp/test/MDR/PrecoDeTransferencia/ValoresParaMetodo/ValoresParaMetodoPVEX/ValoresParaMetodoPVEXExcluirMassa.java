@@ -28,7 +28,7 @@ public class ValoresParaMetodoPVEXExcluirMassa extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -51,6 +51,6 @@ public class ValoresParaMetodoPVEXExcluirMassa extends TestBaseFernando{
 	@Test(priority = 3)
 	public void excluirMassa() {
 		boolean sucesso = valoresParaMetodoPVEXExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Eliminado);
 	}
 }

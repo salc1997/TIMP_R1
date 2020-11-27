@@ -96,6 +96,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCom
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFExcluirMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPDetalhes;
@@ -265,6 +266,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	TabelaComplementarParaDIRFEditar tabelaComplementarParaDIRFEditar;
 	TabelaComplementarParaDIRFExcluir tabelaComplementarParaDIRFExcluir;
 	TabelaComplementarParaDIRFVisualizar tabelaComplementarParaDIRFVisualizar;
+	TabelaComplementarParaDIRFExcluirMassa tabelaComplementarParaDIRFExcluirMassa;
 
 	// Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de
 	// Código CFOP / Código de Ajuste para Obrigação
@@ -1570,10 +1572,23 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		tabelaComplementarParaDIRFExcluir.excluir();
 		tabelaComplementarParaDIRFExcluir.afterClass();
 
+	}
+	
+	@Test(priority = 119)
+	public void tabelaComplementarParaDIRFExcluirMassa() {
+
+		tabelaComplementarParaDIRFExcluirMassa = new TabelaComplementarParaDIRFExcluirMassa();
+		tabelaComplementarParaDIRFExcluirMassa.beforeClass();
+		tabelaComplementarParaDIRFExcluirMassa.login();
+		tabelaComplementarParaDIRFExcluirMassa.acessarMDR();
+		tabelaComplementarParaDIRFExcluirMassa.criar();
+		tabelaComplementarParaDIRFExcluirMassa.excluirMassa();
+		tabelaComplementarParaDIRFExcluirMassa.afterClass();
+
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF Fin-------------------------");
 	}
-
+	
 	// 120
 
 	// Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de
@@ -1713,13 +1728,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro Fin-------------------------");
 	}
-	
-	//132
-	//Preço de Transferência > Commoditie para TP
-	
 
-	
-	//139
 
 	
 

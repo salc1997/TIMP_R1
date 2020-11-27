@@ -48,6 +48,7 @@ public class RegradeReaberturaVisualizarPO extends TestBaseMassiel{
 	public RegradeReaberturaVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
+	
 
 
 	public ArrayList<Boolean> visualizar() {
@@ -100,7 +101,7 @@ public class RegradeReaberturaVisualizarPO extends TestBaseMassiel{
 
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
+	
 		menu1.click();
 		sleep(2000);
 		editar.click();

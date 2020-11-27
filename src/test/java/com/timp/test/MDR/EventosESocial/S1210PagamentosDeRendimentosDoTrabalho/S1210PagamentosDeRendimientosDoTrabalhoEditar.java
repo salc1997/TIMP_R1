@@ -28,6 +28,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoEditar extends TestBaseFerna
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  @Test(priority = 0)

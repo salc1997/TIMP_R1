@@ -22,11 +22,20 @@ public class TestBaseEliel extends TestBaseSteven {
 
 	public WebDriver initializationE() {
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	/*Versão 83 do google*/	System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 	/*Versão 86 do google*/	//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
 		return driver;
 
 	}
@@ -166,6 +175,10 @@ public String dataanterior() {
 		
 		return contar;
 		
+	}
+	
+	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
 	}
 	
 	//BRB

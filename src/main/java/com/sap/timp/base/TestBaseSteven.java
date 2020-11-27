@@ -75,7 +75,12 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+<<<<<<< HEAD
 		driver.get(tc2);
+=======
+
+		driver.get(tq1);
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
 
 		return driver;
@@ -530,22 +535,6 @@ public class TestBaseSteven {
 	
 	//BCB
 	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
-	public String Acessar = "Erro ao tentar acessar ao componente";
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public String Acessar = "Erro ao tentar acessar ao componente";	
 	
 }
-

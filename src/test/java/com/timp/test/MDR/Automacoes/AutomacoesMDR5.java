@@ -4,6 +4,7 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
+import com.timp.test.MDR.CEP.Municipio.MunicipioEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -72,6 +73,7 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualiza
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar;
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes;
@@ -81,14 +83,22 @@ import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcl
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo;
 import com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioDetalhes;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
+import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir;
+import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa;
+import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID;
 import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFCriar;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFDetalhes;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFEditar;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluir;
+import com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFVisualizar;
 
 
 public class AutomacoesMDR5 extends TestBaseSteven {
@@ -151,9 +161,13 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	MunicipioCriar municipioCriar;
 	MunicipioVisualizar municipioVisualizar;
 	MunicipioExcluir municipioExcluir;
+	MunicipioDetalhes municipioDetalhes;
+	MunicipioEditar municipioEditar;
 	
 	//Preço de Transferência > Commoditie para TP
+	CommoditieParaTPCriar  commoditieParaTPCriar;
 	CommoditieParaTPFiltroID commoditieParaTPFiltroID;
+	
 	
 	//Preço de Transferência > Definição de Vinculação
 	DefinicaoVinculacaoFiltroID definicaoVinculacaoFiltroID;
@@ -162,6 +176,8 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	RelacionamentoEntreQuadrosCriar relacionamentoEntreQuadrosCriar;
 	RelacionamentoEntreQuadrosEditar relacionamentoEntreQuadrosEditar;
 	RelacionamentoEntreQuadrosExcluir relacionamentoEntreQuadrosExcluir;
+	RelacionamentoEntreQuadrosFiltroID relacionamentoEntreQuadrosFiltroID;
+	RelacionamentoEntreQuadrosExcluirMassa relacionamentoEntreQuadrosExcluirMassa;
 	
 	//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
 	
@@ -188,6 +204,10 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	
 	//Siscoserv > Registro RF
 	RegistroRFCriar registroRFCriar;
+	RegistroRFEditar  registroRFEditar;
+	RegistroRFDetalhes registroRFDetalhes;
+	RegistroRFVisualizar registroRFVisualizar;
+	RegistroRFExcluir registroRFExcluir;
 	
 	
 	//Tabelas de Apoio E-SOCIAL	Tabela 09 - Tipos de Arquivos e-Social
@@ -226,6 +246,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	NaturezaJuridicaEditar naturezaJuridicaEditar;
 	NaturezaJuridicaExcluir naturezaJuridicaExcluir;
 	NaturezaJuridicaVisualizar naturezaJuridicaVisualizar;
+	NaturezaJuridicaExcluirMassa naturezaJuridicaExcluirMassa;
 	
 	//Tabelas de Apoio E-SOCIAL > Unidade de Medida
 	UnidadeDeMedidaCriar unidadeDeMedidaCriar;
@@ -643,12 +664,12 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	// 41
 
-	// municipios Fiscais > municipios Fiscais
+	// Valor Adicionado > municipios
 
-	@Test(priority = 42)
+	@Test(priority = 41)
 	public void municipioCriar() {
 
-		System.out.println("-------------------municipio Fiscal > municipio Fiscal-------------------------");
+		System.out.println("-------------------Valor Adicionado > municipios-------------------------");
 
 		municipioCriar = new MunicipioCriar();
 		municipioCriar.beforeClass();
@@ -658,7 +679,20 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		municipioCriar.afterClass();
 
 	}
+	
 
+	@Test(priority = 42)
+	public void municipioEditar() {
+
+		municipioEditar = new MunicipioEditar();
+		municipioEditar.beforeClass();
+		municipioEditar.login();
+		municipioEditar.acessarMDR();
+		municipioEditar.editar();
+		municipioEditar.afterClass();
+
+	}
+	
 	@Test(priority = 43)
 	public void municipioVisualizar() {
 
@@ -670,8 +704,21 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		municipioVisualizar.afterClass();
 
 	}
-
+	
 	@Test(priority = 44)
+	public void municipioDetalhes() {
+
+		municipioDetalhes = new MunicipioDetalhes();
+		municipioDetalhes.beforeClass();
+		municipioDetalhes.login();
+		municipioDetalhes.acessarMDR();
+		municipioDetalhes.detalhes();
+		municipioDetalhes.afterClass();
+
+	}
+
+
+	@Test(priority = 45)
 	public void municipioExcluir() {
 
 		municipioExcluir = new MunicipioExcluir();
@@ -681,7 +728,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		municipioExcluir.excluir();
 		municipioExcluir.afterClass();
 
-		System.out.println("-------------------municipio Fiscal > municipio Fiscal Fin-------------------------");
+		System.out.println("-------------------Valor Adicionado > municipios Fin-------------------------");
 	}
 
 	// 48
@@ -755,6 +802,17 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		commoditieParaTPFiltroID.acessarMDR();
 		commoditieParaTPFiltroID.filtro();
 		commoditieParaTPFiltroID.afterClass();
+	}
+	
+	@Test(priority = 56)
+	public void commoditieParaTPCriar() {
+		
+		 commoditieParaTPCriar = new CommoditieParaTPCriar();
+		 commoditieParaTPCriar.beforeClass();
+		 commoditieParaTPCriar.ingresar();
+		 commoditieParaTPCriar.ingresarMDR();
+		 commoditieParaTPCriar.criar();
+		 commoditieParaTPCriar.afterClass();
 		System.out.println("-------------------Preço de Transferência > Commoditie para TP Fin-------------------------");
 	}
 	
@@ -801,9 +859,22 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			relacionamentoEntreQuadrosEditar.afterClass();
 
 		}
-
-
+		
 		@Test(priority = 71)
+		public void relacionamentoEntreQuadrosFiltroID() {
+
+			relacionamentoEntreQuadrosFiltroID = new RelacionamentoEntreQuadrosFiltroID();
+			relacionamentoEntreQuadrosFiltroID.beforeClass();
+			relacionamentoEntreQuadrosFiltroID.login();
+			relacionamentoEntreQuadrosFiltroID.acessarMDR();
+			relacionamentoEntreQuadrosFiltroID.filtro();
+			relacionamentoEntreQuadrosFiltroID.afterClass();
+
+		}
+
+
+
+		@Test(priority = 72)
 		public void relacionamentoEntreQuadrosExcluir() {
 
 			relacionamentoEntreQuadrosExcluir = new RelacionamentoEntreQuadrosExcluir();
@@ -812,6 +883,18 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			relacionamentoEntreQuadrosExcluir.acessarMDR();
 			relacionamentoEntreQuadrosExcluir.excluir();
 			relacionamentoEntreQuadrosExcluir.afterClass();
+
+		}
+		
+		@Test(priority = 73)
+		public void relacionamentoEntreQuadrosExcluirMassa() {
+
+			relacionamentoEntreQuadrosExcluirMassa = new RelacionamentoEntreQuadrosExcluirMassa();
+			relacionamentoEntreQuadrosExcluirMassa.beforeClass();
+			relacionamentoEntreQuadrosExcluirMassa.login();
+			relacionamentoEntreQuadrosExcluirMassa.acessarMDR();
+			relacionamentoEntreQuadrosExcluirMassa.criar();
+			relacionamentoEntreQuadrosExcluirMassa.afterClass();
 
 			System.out.println("-------------------SCANC > Relacionamento entre Quadros Fin-------------------------");
 		}
@@ -990,9 +1073,11 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		}
 
 	//95
-		
+		//Siscoserv > Registro RF Fin
 		@Test(priority = 95)
 		public void registroRFCriar() {
+			
+			System.out.println("-------------------Siscoserv > Registro RF -------------------------");
 
 			registroRFCriar = new RegistroRFCriar();
 			registroRFCriar.beforeClass();
@@ -1002,6 +1087,56 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			registroRFCriar.afterClass();
 
 		}
+		
+		@Test(priority = 96)
+		public void registroRFVisualizar() {
+
+			registroRFVisualizar = new RegistroRFVisualizar();
+			registroRFVisualizar.beforeClass();
+			registroRFVisualizar.login();
+			registroRFVisualizar.acessarMDR();
+			registroRFVisualizar.visualizar();
+			registroRFVisualizar.afterClass();
+
+		}
+
+		@Test(priority = 97)
+		public void registroRFDetalhes() {
+
+			registroRFDetalhes = new RegistroRFDetalhes();
+			registroRFDetalhes.beforeClass();
+			registroRFDetalhes.login();
+			registroRFDetalhes.acessarMDR();
+			registroRFDetalhes.detalhes();
+			registroRFDetalhes.afterClass();
+
+		}
+
+		@Test(priority = 98)
+		public void registroRFEditar() {
+
+			registroRFEditar = new RegistroRFEditar();
+			registroRFEditar.beforeClass();
+			registroRFEditar.login();
+			registroRFEditar.acessarMDR();
+			registroRFEditar.Editar();
+			registroRFEditar.afterClass();
+
+		}
+		
+		@Test(priority = 99)
+		public void registroRFExcluir() {
+
+			registroRFExcluir = new RegistroRFExcluir();
+			registroRFExcluir.beforeClass();
+			registroRFExcluir.login();
+			registroRFExcluir.acessarMDR();
+			registroRFExcluir.excluir();
+			registroRFExcluir.afterClass();
+
+			System.out.println("-------------------Siscoserv > Registro RF Fin-------------------------");
+		}
+
 		
 	//102
 		
@@ -1343,6 +1478,19 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 			naturezaJuridicaExcluir.acessarMDR();
 			naturezaJuridicaExcluir.excluir();
 			naturezaJuridicaExcluir.afterClass();
+		}
+		
+		
+		@Test(priority = 133)
+		public void naturezaJuridicaExcluirMassa() {
+
+			naturezaJuridicaExcluirMassa = new NaturezaJuridicaExcluirMassa();
+			naturezaJuridicaExcluirMassa.beforeClass();
+			naturezaJuridicaExcluirMassa.login();
+			naturezaJuridicaExcluirMassa.acessarMDR();
+			naturezaJuridicaExcluirMassa.criar();
+			naturezaJuridicaExcluirMassa.excluirMassa();
+			naturezaJuridicaExcluirMassa.afterClass();
 
 			System.out.println("-------------------naturezaJuridica Fiscal > naturezaJuridica Fiscal Fin-------------------------");
 		}

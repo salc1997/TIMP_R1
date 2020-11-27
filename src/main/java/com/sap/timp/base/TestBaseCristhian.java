@@ -15,19 +15,38 @@ public class TestBaseCristhian extends TestBaseSteven{
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationC() {
+<<<<<<< HEAD
+=======
 		
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+<<<<<<< HEAD
+
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+=======
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		driver.get(tc2);
+<<<<<<< HEAD
+
+		driver.get(tp1);
+
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 	}
 	
 	
-	public String capitalize(String cadena) {
+	public String capitalize(String 
+			cadena) {
 		String[] split = cadena.split("");
         for (int i = 0; i < split.length; i++) {
             if(i == 0 || split[i-1].equals(" ")) {

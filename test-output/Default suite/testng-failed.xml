@@ -1,3 +1,53 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.BRE.RegrasdeNegócioExcluirdefinitivamente">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasdeNegócioExcluirdefinitivamente -->
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.BSC.CorrecoesNotaFiscal.AprovarSJOB">
+        <methods>
+          <include name="aprobar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorrecoesNotaFiscal.AprovarSJOB -->
+>>>>>>> refs/remotes/origin/Fernando
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.BCB.ParametrosGeraisHierarquiaCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criarConfiguracaoHierarquia"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquiaCriar -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" parallel="none">

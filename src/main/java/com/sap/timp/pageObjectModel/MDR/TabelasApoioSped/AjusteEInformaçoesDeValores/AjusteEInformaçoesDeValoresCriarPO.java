@@ -105,7 +105,7 @@ public class AjusteEInformaçoesDeValoresCriarPO extends TestBaseEliel {
 		String data = dataanterior();
 		sleep(2000);
 		datadeiniciodevigencia.sendKeys(data);
-		
+		sleep(1000);
 		gravar.click();
 		sleep(2000);
 		sim.click();

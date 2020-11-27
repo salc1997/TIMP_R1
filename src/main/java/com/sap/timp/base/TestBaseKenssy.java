@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
+import java.util.prefs.Preferences;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +20,6 @@ public class TestBaseKenssy extends TestBaseSteven{
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationKen() {
-
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -103,6 +103,46 @@ public class TestBaseKenssy extends TestBaseSteven{
 		
 		return df.format(cal.getTime());
 		
+	}
+	
+	public void idInserir5(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR1", idRegistro);
+
+	}
+
+	public String idObter5() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR1", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir6(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR1", idRegistro);
+
+	}
+
+	public String idObter6() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR1", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
 	}
 
 }

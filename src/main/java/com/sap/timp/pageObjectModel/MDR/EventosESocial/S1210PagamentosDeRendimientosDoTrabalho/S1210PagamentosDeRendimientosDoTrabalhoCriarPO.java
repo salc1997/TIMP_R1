@@ -79,8 +79,6 @@ public class S1210PagamentosDeRendimientosDoTrabalhoCriarPO extends TestBaseFern
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		waitExpectElement(menuEventosEsocial);
 		menuEventosEsocial.click();
 		sleep(1000);
 		

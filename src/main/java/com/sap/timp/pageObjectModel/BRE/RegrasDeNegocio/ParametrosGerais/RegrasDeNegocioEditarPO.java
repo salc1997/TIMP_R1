@@ -1,18 +1,20 @@
-package com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais;
+package com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais;
 
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class RegrasDeMensagensCriaPO extends TestBaseEliel {
-	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
-	public WebElement regrasdemensagens;
+public class RegrasDeNegocioEditarPO extends TestBaseEliel{
+	
+	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
+	public WebElement regrasdenegocio;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
@@ -129,6 +131,38 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
+	
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][1]")
+	public WebElement primeiracaixar1editado;
+	
+	@FindBy(xpath = "//button[text()=\"Modificar\"]")
+	public WebElement modificar;
+	
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][1]")
+	public WebElement parte1string;
+	
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][2]")
+	public WebElement parte2string;
+
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div/div/input")
+	public WebElement codigo;
+	
+	@FindBy(xpath = "//button[text()=\"Salvar como Cópia\"]")
+	public WebElement salvarcomocopia;
+	
+	//@FindBy(xpath = "//*[name()=\"g\"][@transform=\"translate(491.3333435058594,34)\"]/*/*[name()=\"tspan\"]")
+	@FindBy(xpath = "//*[name()=\"g\"][@height=\"24\"][6]")
+	public WebElement r2;
+	
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"]")
+	public WebElement primeiracaixar2;
+	
+	@FindBy(xpath = "//button[text()=\"Remover\"]")
+	public WebElement remover;
+	
+	@FindBy(xpath = "//span[text()=\"Configurações\"]")
+	public WebElement configuracoes;
+	
 
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
@@ -136,19 +170,32 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
-
 	
-	public RegrasDeMensagensCriaPO() {
+	@FindBy(xpath = "//div[@class=\"tabAction-obligatory\"]/div/label/span")
+	public WebElement preenchementoobrigatorio;
+	
+	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")][1]")
+	public WebElement primeiracaixar1;
+	
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]")
+	public WebElement primeiracaixar5;
+	
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[2]")
+	public WebElement texto;
+	
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[19]")
+	public WebElement r5;
+	public RegrasDeNegocioEditarPO() {
+
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-	public ArrayList<Boolean> criar() {
-		
+
+	public ArrayList<Boolean> editar() {
+
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		regrasdemensagens.click();
+		regrasdenegocio.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -159,177 +206,124 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		String	id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		System.out.println("Ultimo registro: " + id);
-	
+		String idRegistro = idObter1();
 		
-		novaregra.click();
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
 		sleep(2000);
-		waitExpectElement(nome);
-		sleep(2000);
-		
-		nome.click();
+
+		menu.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO6 - NAO MEXER");
-		sleep(1000);
-		
-		tiporegra.click();
-		sleep(1000);
-		opcaotiporegra.click();
-		sleep(1000);
-		
-		tipotributo.click();
-		sleep(1000);
-		opcaotipotributo.click();
-		closeSelectTypeCheckbox(tipotributo);
-		sleep(1000);
-		
-		String url = driver.getCurrentUrl();
-		
-		boolean tc2 = false;
-		boolean td1 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
-		if(tp1 == true) {
-		grupodeestrutura.click();
-		sleep(1000);
-		opcaogrupodeestruturatp1.click();
-		sleep(1000);
-		}else {
-			grupodeestrutura.click();
-			sleep(1000);
-			opcaogrupodeestrutura.click();
-			sleep(1000);
-		}
-		
-		
-		
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
-		estruturadedados.click();
-		sleep(1000);
-		opcaoestruturadedados.click();
-		sleep(1000);
-		
-		regulamento.click();
-		sleep(1000);
-		opcaoRegulamento.click();
-		sleep(1000);
-		//dataValidadeDe.click();
-		sleep(1000);
-		dataValidadeDe.sendKeys("01/01/2013");
-		sleep(1000);		
-		
-		aplicar.click();
+		editar.click();
 		sleep(2000);
 		waitExpectElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-	
-		
-		Justificactiva.click();
-		sleep(2000);
-		
-		waitExpectElement(justificativa);
-		sleep(2000);
-		justificativa.sendKeys("TESTE AUTOMATIZADO");
+		primeiracaixar1.click();
 		sleep(1000);
-		aceitar.click();
+		preenchementoobrigatorio.click();
 		sleep(1000);
-		//1 caminho
-		adicionarcaminho.click();
-		sleep(2000);
-		waitExpectElement(Condicoes);
-		Condicoes.click();
+		modificar.click();
 		sleep(1000);
-		Condicoes.sendKeys("Alíquota ICMS (ED)");
-		Condicoes.sendKeys(Keys.ENTER);
-		sleep(1000);
-		
-		Operador.click();
-		sleep(1000);
-		opcaoOperador.click();
-		sleep(1000);
-		
-		NomeDoValor.click();
-		sleep(1000);
-		NomeDoValor.sendKeys("BC ICMS (ED)");
-		NomeDoValor.sendKeys(Keys.ESCAPE);
-		
-		sleep(1000);
-		
-		acoes.sendKeys("Alíquota correta");
-		acoes.sendKeys(Keys.ENTER);
-	
-		sleep(1000);
-
-		aplicar.click();
-		sleep(2000);
-		
 		gravar.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		nao.click();
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		primeiracaixar1.click();
+		sleep(1000);
 		
-		WebElement caminhocriador1 = driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));
-		
-		if(caminhocriador1.isDisplayed()) {
-			System.out.println("Caminho criado r1");
-			sucesso.add(caminhocriador1.isDisplayed());
-		}
-		
-		biblioteca.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		sleep(2000);
-		regrasdemensagens.click();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	WebElement elementopreenchimentoobrigatorio = driver.findElement(By.xpath("//div[@class=\"tabAction-obligatory\"]/div/label/span"));
 
-		ultimapagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idB);
-
-		System.out.println(id);
-		System.out.println(idB);
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		
-		boolean sucesso2 = false;
-		if (idBD > idD) {
-			sucesso2 = true;
-			sucesso.add(sucesso2);
+		if (!elementopreenchimentoobrigatorio.isSelected())
+		{
+			boolean sucesso1 =true;
+		   System.out.println("O preechimento obrigatorio não está selecionado");
+		   sucesso.add(sucesso1);
 		}else {
-			sucesso2 = false;
+				boolean sucesso1 =false;
+			   System.out.println("O preechimento obrigatorio está selecionado");
+			   sucesso.add(sucesso1);
+			   }
+		codigo.clear();
+		sleep(1000);
+		codigo.sendKeys("r5");
+		sleep(1000);
+		NomeDoValor.clear();
+		sleep(1000);
+		NomeDoValor.sendKeys("COFINS");
+		sleep(1000);
+		NomeDoValor.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		salvarcomocopia.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		gravar.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		nao.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		if(r5.isDisplayed())
+		{
+			System.out.println("r5 consta na pagina de edição");
+			boolean sucesso2 = true;
 			sucesso.add(sucesso2);
 		}
+		/*String enviar="COFINS";
+		String texto1=texto.getText();
+		
+		boolean sucesso2 = texto1.contains(enviar);
+		sucesso.add(sucesso2);
+		*/
+		waitExpectElement(primeiracaixar5);
+		sleep(1000);
+		
+		primeiracaixar5.click();
+		sleep(1000);
+		remover.click();
+		sleep(1000);
+		gravar.click();
+		sleep(1000);
+		nao.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		configuracoes.click();
+		sleep(2000);
+		String nome1 = "TESTE AUTOMATIZADO - NAO MEXER";
+		
+		nome.clear();
+		sleep(1000);
+		nome.sendKeys(nome1);
+		
+		aplicar.click();
+		sleep(1000);
+		gravar.click();
+		sleep(1000);
+		nao.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		configuracoes.click();
+		sleep(1000);
+		String verficarnome = nome.getAttribute("value");
+		sucesso.add(verficarnome.contains(nome1));
 		System.out.println(sucesso);
 		return sucesso;
-	}
 
+	}
 
 }

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio;
+package com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais;
 
 import java.util.ArrayList;
 

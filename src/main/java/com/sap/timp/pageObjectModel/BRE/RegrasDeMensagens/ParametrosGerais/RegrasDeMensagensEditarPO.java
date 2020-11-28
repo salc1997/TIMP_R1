@@ -224,18 +224,20 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(2000);
+
 		sleep(3000);
+
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 
-		waitExpectElement(parte1string);
-		sleep(2000);
 		String texto1 = parte1string.getText();
-		//String texto2 = parte2string.getText();
-		//String textojuntado = texto1.concat(texto2);
 		
 		String enviar ="BC ICMS - C597";
 		
@@ -267,7 +269,10 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sucesso.add(sucesso3);
 		}
 		gravar.click();
-		sleep(4000);
+
+		sleep(1000);
+		waitExpectElement(nao);
+		sleep(2000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -290,7 +295,13 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		remover.click();
 		sleep(1000);
 		gravar.click();
+
+		sleep(1000);
+		waitExpectElement(nao);
+		sleep(2000);
+
 		sleep(4000);
+
 		nao.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -318,7 +329,13 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		aplicar.click();
 		sleep(1000);
 		gravar.click();
+
+		sleep(1000);
+		waitExpectElement(nao);
+		sleep(2000);
+
 		sleep(4000);
+
 		nao.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

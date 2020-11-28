@@ -115,6 +115,7 @@ import com.timp.test.MDR.SequenciaAcesso.SequenciaVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar;
+import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformacoesDeValoresExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresCriar;
 import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresDetalhes;
 import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresEditar;
@@ -319,6 +320,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	AjusteEInformaçoesDeValoresEditar ajusteEInformaçoesDeValoresEditar;
 	AjusteEInformaçoesDeValoresExcluir ajusteEInformaçoesDeValoresExcluir;
 	AjusteEInformaçoesDeValoresVisualizar ajusteEInformaçoesDeValoresVisualizar;
+	AjusteEInformacoesDeValoresExcluirEmMassa ajusteEInformacoesDeValoresExcluirEmMassa;
 	// 101
 
 	// -----------------------------------------------------------------------------------------------
@@ -1916,6 +1918,18 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		ajusteEInformaçoesDeValoresExcluir.acessarMDR();
 		ajusteEInformaçoesDeValoresExcluir.excluir();
 		ajusteEInformaçoesDeValoresExcluir.afterClass();
+
+		}
+	
+	@Test(priority = 156)
+	public void ajusteEInformacoesDeValoresExcluirEmMassa() {
+
+		ajusteEInformacoesDeValoresExcluirEmMassa = new AjusteEInformacoesDeValoresExcluirEmMassa();
+		ajusteEInformacoesDeValoresExcluirEmMassa.beforeClass();
+		ajusteEInformacoesDeValoresExcluirEmMassa.login();
+		ajusteEInformacoesDeValoresExcluirEmMassa.acessarMDR();
+		ajusteEInformacoesDeValoresExcluirEmMassa.criar();
+		ajusteEInformacoesDeValoresExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"------------------TabelasApoioSped > Ajustes e Informação de Valores Provenientes de Documento Fiscal Fin-------------------------");

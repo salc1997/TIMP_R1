@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 
 import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSExcluirEmMassaPO;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
 import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar;
 import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes;
@@ -12,6 +13,7 @@ import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.Clas
 import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir;
+import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaCriar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaDetalhes;
 import com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaEditar;
@@ -21,6 +23,7 @@ import com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDe
 import com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIDetalhes;
 import com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIEditar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIExcluir;
+import com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIVisualizar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoCriar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoDetalhes;
@@ -42,11 +45,13 @@ import com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscai
 import com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSDetalhes;
 import com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSEditar;
 import com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSExcluir;
+import com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSVisualizar;
 import com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisCriar;
 import com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisDetalhes;
 import com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditar;
 import com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisExcluir;
+import com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisVisualizar;
 import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObserbaçoesdoDocumentoFiscalExcluir;
 import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalCriar;
@@ -124,6 +129,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 	CodigoAjustesContribuiçaoCreditosCriar codigoAjustesContribuiçaoCreditosCriar;
 	CodigoAjustesContribuiçaoCreditosExcluir codigoAjustesContribuiçaoCreditosExcluir;
+	CodigoAjustesContribuiçoesCreditosExcluirEmMassa codigoAjustesContribuiçoesCreditosExcluirEmMassa;
 
 	// Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada
 
@@ -140,6 +146,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	CodigoDeAjusteDaApuraçaoDoIPIEditar codigoDeAjusteDaApuraçaoDoIPIEditar;
 	CodigoDeAjusteDaApuraçaoDoIPIExcluir codigoDeAjusteDaApuraçaoDoIPIExcluir;
 	CodigoDeAjusteDaApuraçaoDoIPIVisualizar codigoDeAjusteDaApuraçaoDoIPIVisualizar;
+	CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa;
 
 	// 5.4 Tabelas de Apoio do Sped > Códigos das Obrigacões de ICMS a Recolher
 
@@ -173,6 +180,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	DocumentosFiscaisICMSEditar documentosFiscaisICMSEditar;
 	DocumentosFiscaisICMSExcluir documentosFiscaisICMSExcluir;
 	DocumentosFiscaisICMSVisualizar documentosFiscaisICMSVisualizar;
+	DocumentosFiscaisICMSExcluirEmMassa documentosFiscaisICMSExcluirEmMassa;
 
 	// 5.2 Tabelas de Apoio do Sped > Informações Adicionais
 
@@ -181,6 +189,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	InformaçoesAdicionaisEditar informaçoesAdicionaisEditar;
 	InformaçoesAdicionaisExcluir informaçoesAdicionaisExcluir;
 	InformaçoesAdicionaisVisualizar informaçoesAdicionaisVisualizar;
+	InformaçoesAdicionaisExcluirEmMassa informaçoesAdicionaisExcluirEmMassa;
 
 	// Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461
 
@@ -389,6 +398,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		codigoAjustesContribuiçaoCreditosExcluir.excluir();
 		codigoAjustesContribuiçaoCreditosExcluir.afterClass();
 
+		}
+	
+	@Test(priority = 8)
+	public void codigoAjustesContribuiçoesCreditosExcluirEmMassa() {
+
+		codigoAjustesContribuiçoesCreditosExcluirEmMassa = new CodigoAjustesContribuiçoesCreditosExcluirEmMassa();
+		codigoAjustesContribuiçoesCreditosExcluirEmMassa.beforeClass();
+		codigoAjustesContribuiçoesCreditosExcluirEmMassa.login();
+		codigoAjustesContribuiçoesCreditosExcluirEmMassa.acessarMDR();
+		codigoAjustesContribuiçoesCreditosExcluirEmMassa.criar();
+		codigoAjustesContribuiçoesCreditosExcluirEmMassa.afterClass();
+
 		System.out.println(
 				"------------------Tabelas de Apoio do Sped > Código de Ajustes Contribuições de Créditos Fin-------------------------");
 	}
@@ -526,6 +547,20 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		codigoDeAjusteDaApuraçaoDoIPIExcluir.acessarMDR();
 		codigoDeAjusteDaApuraçaoDoIPIExcluir.excluir();
 		codigoDeAjusteDaApuraçaoDoIPIExcluir.afterClass();
+
+		System.out.println(
+				"-------------------4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI Fin-------------------------");
+	}
+	
+	@Test(priority = 23)
+	public void codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa() {
+
+		codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa = new CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa();
+		codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa.beforeClass();
+		codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa.login();
+		codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa.acessarMDR();
+		codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa.criar();
+		codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI Fin-------------------------");
@@ -815,6 +850,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		documentosFiscaisICMSExcluir.excluir();
 		documentosFiscaisICMSExcluir.afterClass();
 
+		}
+	
+	@Test(priority = 47)
+	public void documentosFiscaisICMSExcluirEmMassa() {
+
+		documentosFiscaisICMSExcluirEmMassa = new DocumentosFiscaisICMSExcluirEmMassa();
+		documentosFiscaisICMSExcluirEmMassa.beforeClass();
+		documentosFiscaisICMSExcluirEmMassa.login();
+		documentosFiscaisICMSExcluirEmMassa.acessarMDR();
+		documentosFiscaisICMSExcluirEmMassa.criar();
+		documentosFiscaisICMSExcluirEmMassa.afterClass();
+
 		System.out.println(
 				"------------------- 4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS Fin-------------------------");
 	}
@@ -884,8 +931,20 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		informaçoesAdicionaisExcluir.excluir();
 		informaçoesAdicionaisExcluir.afterClass();
 
+		
+	}
+	@Test(priority = 53)
+	public void informaçoesAdicionaisExcluirEmMassa() {
+
+		informaçoesAdicionaisExcluirEmMassa = new InformaçoesAdicionaisExcluirEmMassa();
+		informaçoesAdicionaisExcluirEmMassa.beforeClass();
+		informaçoesAdicionaisExcluirEmMassa.login();
+		informaçoesAdicionaisExcluirEmMassa.acessarMDR();
+		informaçoesAdicionaisExcluirEmMassa.criar();
+		informaçoesAdicionaisExcluirEmMassa.afterClass();
+
 		System.out.println(
-				"-------------------5.2 Tabelas de Apoio do Sped > Informações Adicionais Fin-------------------------");
+				"-------------------5.2 Tabelas de Apoio do Sped > Informações Adicionais Fim-------------------------");
 	}
 
 	// 54

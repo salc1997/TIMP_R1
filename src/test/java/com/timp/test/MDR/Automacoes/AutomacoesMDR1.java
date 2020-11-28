@@ -134,6 +134,7 @@ import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApur
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir;
+import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoFiltroId;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoVisualizar;
 import com.timp.test.MDR.Empresas.EmpresaEditar;
@@ -347,7 +348,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	UtilizacaoDosCreditosNaApuracaoExcluir utilizacaoDosCreditosNaApuracaoExcluir;
 	UtilizacaoDosCreditosNaApuracaoVisualizar utilizacaoDosCreditosNaApuracaoVisualizar;
 	UtilizacaoDosCreditosNaApuracaoFiltroId utilizacaoDosCreditosNaApuracaoFiltroId;
-	
+	UtilizacaoDosCreditosNaApuracaoExcluirEmMassa utilizacaoDosCreditosNaApuracaoExcluirEmMassa;
 	//SPCB - Federais Retidos
 	SPCBFederaisRetidosCriar sPCBFederaisRetidosCriar;
 	SPCBFederaisRetidosEditar sPCBFederaisRetidosEditar;
@@ -2028,8 +2029,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosNaApuracaoExcluir.excluir();
 		utilizacaoDosCreditosNaApuracaoExcluir.afterClass();
 
-		System.out.println(
-				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração Fin-------------------------");
+		
 	}
 	
 	@Test(priority = 22)
@@ -2042,6 +2042,20 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		utilizacaoDosCreditosNaApuracaoFiltroId.filtroId();
 		utilizacaoDosCreditosNaApuracaoFiltroId.afterClass();
 
+	}
+	
+	@Test(priority = 108)
+	public void utilizacaoDosCreditosNaApuracaoExcluirEmMassa() {
+
+		utilizacaoDosCreditosNaApuracaoExcluirEmMassa = new UtilizacaoDosCreditosNaApuracaoExcluirEmMassa();
+		utilizacaoDosCreditosNaApuracaoExcluirEmMassa.beforeClass();
+		utilizacaoDosCreditosNaApuracaoExcluirEmMassa.login();
+		utilizacaoDosCreditosNaApuracaoExcluirEmMassa.acessarMDR();
+		utilizacaoDosCreditosNaApuracaoExcluirEmMassa.criar();
+		utilizacaoDosCreditosNaApuracaoExcluirEmMassa.afterClass();
+
+		System.out.println(
+				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração Fin-------------------------");
 	}
 	
 	// Atividades Fiscais > Associação de Atividades Fiscais

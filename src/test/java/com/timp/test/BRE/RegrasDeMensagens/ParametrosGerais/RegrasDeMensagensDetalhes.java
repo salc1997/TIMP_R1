@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasDeNegocio;
+package com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,20 +11,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.RegrasDeNegocioCriarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhesPO;
 
-public class RegrasDeNegocioCriar extends TestBaseEliel {
+public class RegrasDeMensagensDetalhes extends TestBaseEliel {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeNegocioCriarPO regrasDeNegocioCriarPO;
+	RegrasDeMensagensDetalhesPO regrasDeMensagensDetalhesPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeNegocioCriarPO = new RegrasDeNegocioCriarPO();
+		regrasDeMensagensDetalhesPO = new RegrasDeMensagensDetalhesPO();
 	}
 
 	@AfterClass
@@ -43,12 +43,13 @@ public class RegrasDeNegocioCriar extends TestBaseEliel {
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
-		ArrayList<Boolean> sucesso = regrasDeNegocioCriarPO.criar();
+	public void editar() {
+		ArrayList<Boolean> sucesso = regrasDeMensagensDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
+			assertTrue(sucesso.get(i), Detalhes);
 		}
 		
 	}
+ 
  
 }

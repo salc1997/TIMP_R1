@@ -29,7 +29,7 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@id=\"select-associatedStructure\"]/div/div/div[2]")
 	public WebElement tabela;
 	
-	//@FindBy(xpath = "//div[@class=\"select-one\"]/div/div[2]")
+
 	@FindBy(xpath = "//li[text()=\"Ajustes Fiscais\"]")
 	public WebElement tabelaO;
 	

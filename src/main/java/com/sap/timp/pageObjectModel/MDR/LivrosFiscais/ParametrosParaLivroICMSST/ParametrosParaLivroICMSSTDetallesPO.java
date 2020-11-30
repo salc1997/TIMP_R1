@@ -115,7 +115,8 @@ public class ParametrosParaLivroICMSSTDetallesPO extends TestBaseMassiel{
 		String textofilial = filial.getText();
 		String textotributo = tributo.getText();
 		String textodataInicio = dataInicio.getText();
-		String textodataVigencia = dataVigencia.getText();
+		String textodataVigencia = "----------";
+		//String textodataVigencia = dataVigencia.getText();
 
 
 		System.out.println("Tipo do Livro: " + textotipolvro);

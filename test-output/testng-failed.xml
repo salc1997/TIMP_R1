@@ -1,11 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -27,31 +31,22 @@
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasdeNegócioExcluirdefinitivamente">
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle">
         <methods>
           <include name="afterClass"/>
+          <include name="visualizar"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeNegócioExcluirdefinitivamente -->
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BSC.CorrecoesNotaFiscal.AprovarSJOB">
-        <methods>
-          <include name="aprobar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorrecoesNotaFiscal.AprovarSJOB -->
->>>>>>> refs/remotes/origin/Fernando
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -145,3 +140,5 @@
 </suite> <!-- Failed suite [Default suite] -->
 =======
 >>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Cristhian

@@ -24,7 +24,7 @@ public class ParametrosParaCategoriaDeIRFCriar extends TestBaseMassiel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaCategoriaDeIRFCriarPO = new ParametrosParaCategoriaDeIRFCriarPO();

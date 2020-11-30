@@ -6,13 +6,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
+=======
+      <class name="com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
         </methods>
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
@@ -114,13 +122,20 @@
           <include name="s2210ComunicaçãoDeAcidenteDeTrabalhoEditar"/>
           <include name="valoresParaMetodoPVEXExcluirMassa"/>
           <include name="configuraçãDeTipoTaxaDeAtualizaçãoEditar"/>
+=======
+          <include name="executar"/>
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Automacoes.AutomaçõesMDR7 -->
 =======
       </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFCriar -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

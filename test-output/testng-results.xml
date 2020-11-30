@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="44" total="68" passed="24">
 =======
 <<<<<<< HEAD
@@ -9,7 +10,10 @@
 =======
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -18,8 +22,11 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="5058199" started-at="2020-11-27T22:20:22Z" finished-at="2020-11-27T23:44:40Z">
 =======
@@ -37,8 +44,12 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2020-11-30T09:52:10Z" name="Default suite" finished-at="2020-11-30T09:58:23Z" duration-ms="373123">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="5058199" started-at="2020-11-27T22:20:22Z" finished-at="2020-11-27T23:44:40Z">
       <class name="com.timp.test.MDR.Automacoes.AutomaçõesMDR7">
@@ -65,9 +76,15 @@
 >>>>>>> refs/remotes/origin/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2020-11-30T09:52:10Z" name="Default test" finished-at="2020-11-30T09:58:23Z" duration-ms="373123">
+      <class name="com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:10Z" name="beforeClass" finished-at="2020-11-30T03:52:26Z" duration-ms="15373" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:43:58Z" name="login" finished-at="2020-11-27T17:44:06Z" duration-ms="7617" status="PASS">
 =======
@@ -81,9 +98,13 @@
 >>>>>>> refs/remotes/origin/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:26Z" name="login" finished-at="2020-11-30T03:52:32Z" duration-ms="6962" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:44:06Z" name="acessarBRE" finished-at="2020-11-27T17:44:23Z" duration-ms="17549" status="PASS">
 =======
@@ -97,8 +118,12 @@
 >>>>>>> refs/remotes/origin/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:32Z" name="brbEntrar" finished-at="2020-11-30T03:52:54Z" duration-ms="21436" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -200,8 +225,13 @@ Session ID: 124c9e11ef3a3218267cf94ea0691443
           </exception> <!-- org.openqa.selenium.WebDriverException -->
 >>>>>>> refs/remotes/origin/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="executar()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:54Z" name="executar" finished-at="2020-11-30T03:58:23Z" duration-ms="329332" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@6d4d66d2]" started-at="2020-11-27T17:45:06Z" name="afterClass" finished-at="2020-11-27T17:45:06Z" duration-ms="0" status="PASS">
@@ -273,9 +303,14 @@ Session ID: a60330863854cf0a375508f7eabd41a7
           </exception> <!-- org.openqa.selenium.WebDriverException -->
 >>>>>>> refs/remotes/origin/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- executar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:58:23Z" name="afterClass" finished-at="2020-11-30T03:58:23Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar -->
 =======
@@ -284,6 +319,9 @@ Session ID: a60330863854cf0a375508f7eabd41a7
 =======
       </class> <!-- com.timp.test.BSC.CorrecoesNotaFiscal.AprovarSJOB -->
 >>>>>>> refs/remotes/origin/Fernando
+=======
+      </class> <!-- com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

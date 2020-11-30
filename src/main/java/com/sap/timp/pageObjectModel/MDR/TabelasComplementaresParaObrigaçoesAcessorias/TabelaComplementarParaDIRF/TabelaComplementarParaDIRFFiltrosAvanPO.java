@@ -228,7 +228,7 @@ public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
 			System.out.println("fecha criacao a buscar" + dataText1);
 			System.out.println("");
 		}else if (URL.contains("tc2")) {
-			dataCriacao.sendKeys("18/09/2020");
+			dataCriacao.sendKeys("18/11/2020");
 			//sleep(1000);
 			dataText1 = dataCriacao.getAttribute("value");
 			System.out.println("fecha criacao a buscar" + dataText1);

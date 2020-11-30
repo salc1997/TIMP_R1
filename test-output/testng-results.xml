@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -327,39 +328,42 @@ Session ID: a60330863854cf0a375508f7eabd41a7
 </testng-results>
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Fernando
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-25T03:55:43Z" name="Default suite" finished-at="2020-11-25T03:57:05Z" duration-ms="81510">
+  <suite started-at="2020-11-28T02:00:50Z" name="Default suite" finished-at="2020-11-28T02:02:13Z" duration-ms="83187">
     <groups>
     </groups>
-    <test started-at="2020-11-25T03:55:43Z" name="Default test" finished-at="2020-11-25T03:57:05Z" duration-ms="81510">
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:55:43Z" name="beforeClass" finished-at="2020-11-24T21:55:58Z" duration-ms="14526" status="PASS">
+    <test started-at="2020-11-28T02:00:50Z" name="Default test" finished-at="2020-11-28T02:02:13Z" duration-ms="83187">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir@6676f6a0]" started-at="2020-11-27T20:00:50Z" name="beforeClass" finished-at="2020-11-27T20:01:01Z" duration-ms="10843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:55:58Z" name="login" finished-at="2020-11-24T21:56:08Z" duration-ms="10096" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir@6676f6a0]" started-at="2020-11-27T20:01:01Z" name="login" finished-at="2020-11-27T20:01:08Z" duration-ms="6989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:56:08Z" name="brbEntrar" finished-at="2020-11-24T21:56:23Z" duration-ms="14567" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir@6676f6a0]" started-at="2020-11-27T20:01:08Z" name="acessarMDR" finished-at="2020-11-27T20:01:30Z" duration-ms="21978" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brbEntrar -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:56:23Z" name="excluir" finished-at="2020-11-24T21:57:05Z" duration-ms="42298" status="PASS">
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir@6676f6a0]" started-at="2020-11-27T20:01:30Z" name="excluir" finished-at="2020-11-27T20:02:13Z" duration-ms="43204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira@6ee4d9ab]" started-at="2020-11-24T21:57:05Z" name="afterClass" finished-at="2020-11-24T21:57:05Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir@6676f6a0]" started-at="2020-11-27T20:02:13Z" name="afterClass" finished-at="2020-11-27T20:02:13Z" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquiaLixeira -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="1" total="3" passed="2">
@@ -3537,3 +3541,5 @@ Session ID: 7c0437ffb86e00e86f5d12a285acaba9
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+=======
+>>>>>>> refs/remotes/origin/Fernando

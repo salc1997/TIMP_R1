@@ -4,7 +4,7 @@ package com.timp.test.MDR.Automacoes;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.timp.test.MDR.CEP.Municipio.MunicipioEditar;
+import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioEditar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar;
@@ -700,8 +700,8 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		municipioEditar = new MunicipioEditar();
 		municipioEditar.beforeClass();
-		municipioEditar.login();
-		municipioEditar.acessarMDR();
+		municipioEditar.ingresar();
+		municipioEditar.ingresarMDR();
 		municipioEditar.editar();
 		municipioEditar.afterClass();
 

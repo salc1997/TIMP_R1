@@ -18,7 +18,12 @@ public class TestBaseCristhian extends TestBaseSteven{
 
 		
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+<<<<<<< HEAD
 
+=======
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverx86.exe");
+>>>>>>> refs/remotes/origin/Fernando
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -53,21 +54,24 @@
 </suite> <!-- Failed suite [Default suite] -->
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Fernando
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquiaCriar">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir">
         <methods>
+          <include name="excluir"/>
           <include name="beforeClass"/>
-          <include name="criarConfiguracaoHierarquia"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquiaCriar -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -139,3 +143,5 @@
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+=======
+>>>>>>> refs/remotes/origin/Fernando

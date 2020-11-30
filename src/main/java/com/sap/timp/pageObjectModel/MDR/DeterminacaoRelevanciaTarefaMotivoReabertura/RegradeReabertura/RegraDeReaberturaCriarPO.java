@@ -75,7 +75,7 @@ public class RegraDeReaberturaCriarPO extends TestBaseMassiel{
 		   
 		   
 		 
-		   codigo.sendKeys("Test4");
+		   codigo.sendKeys("TestQA 1");
 		   codigo.sendKeys(Keys.ENTER);
 		   
 		   descripcion.sendKeys("Automatizado");

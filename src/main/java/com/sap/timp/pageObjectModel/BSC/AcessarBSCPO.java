@@ -44,6 +44,7 @@ public class AcessarBSCPO extends TestBaseMassiel {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		System.out.println(sucesso);
 		return sucesso;
 		
 	}

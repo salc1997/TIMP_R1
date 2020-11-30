@@ -65,19 +65,15 @@ public class ParametrosGeraisFiltroAvancados extends TestBaseMassiel{
 			assertTrue(versao.get(i), Filtros);
 		}
 
+
 		ArrayList<Boolean> tipo = parametrosGeraisFiltroAvancadosPO.FiltroTipo();
 		for (int i = 0; i < tipo.size(); i++) {
 		assertTrue(tipo.get(i), Filtros);
 		}
-
+		
 		ArrayList<Boolean> UsuarioCriado = parametrosGeraisFiltroAvancadosPO.FiltroUsuarioCriado();
 		for (int i = 0; i < UsuarioCriado.size(); i++) {
 			assertTrue(UsuarioCriado.get(i), Filtros);
-		}
-
-		ArrayList<Boolean> FechaUsuarioCriado = parametrosGeraisFiltroAvancadosPO.FiltroFechaUsuarioCriado();
-		for (int i = 0; i < FechaUsuarioCriado.size(); i++) {
-		assertTrue(FechaUsuarioCriado.get(i), Filtros);
 		}
 		
 		ArrayList<Boolean> UsuarioModificado = parametrosGeraisFiltroAvancadosPO.FiltroUsuarioModicado();
@@ -85,10 +81,20 @@ public class ParametrosGeraisFiltroAvancados extends TestBaseMassiel{
 			assertTrue(UsuarioModificado.get(i1), Filtros);
 		}
 
+	
+
 		ArrayList<Boolean> FechaUsuarioModificado = parametrosGeraisFiltroAvancadosPO.FiltroFechaUsuarioModificado();
 		for (int i1 = 0; i1 < FechaUsuarioModificado.size(); i1++) {
 			assertTrue(FechaUsuarioModificado.get(i1), Filtros);
 		}
+		
+		
+
+		ArrayList<Boolean> FechaUsuarioCriado = parametrosGeraisFiltroAvancadosPO.FiltroFechaUsuarioCriado();
+		for (int i = 0; i < FechaUsuarioCriado.size(); i++) {
+		assertTrue(FechaUsuarioCriado.get(i), Filtros);
+		}
+
 
 	}
 }

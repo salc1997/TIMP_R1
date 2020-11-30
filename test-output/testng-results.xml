@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-27T15:01:37Z" name="Default suite" finished-at="2020-11-27T15:03:43Z" duration-ms="125340">
+  <suite started-at="2020-11-30T09:52:10Z" name="Default suite" finished-at="2020-11-30T09:58:23Z" duration-ms="373123">
     <groups>
     </groups>
-    <test started-at="2020-11-27T15:01:37Z" name="Default test" finished-at="2020-11-27T15:03:43Z" duration-ms="125340">
-      <class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar@644baf4a]" started-at="2020-11-27T09:01:37Z" name="beforeClass" finished-at="2020-11-27T09:01:51Z" duration-ms="13629" status="PASS">
+    <test started-at="2020-11-30T09:52:10Z" name="Default test" finished-at="2020-11-30T09:58:23Z" duration-ms="373123">
+      <class name="com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:10Z" name="beforeClass" finished-at="2020-11-30T03:52:26Z" duration-ms="15373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar@644baf4a]" started-at="2020-11-27T09:01:51Z" name="login" finished-at="2020-11-27T09:01:59Z" duration-ms="8280" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:26Z" name="login" finished-at="2020-11-30T03:52:32Z" duration-ms="6962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar@644baf4a]" started-at="2020-11-27T09:01:59Z" name="acessarMDR" finished-at="2020-11-27T09:02:09Z" duration-ms="10089" status="PASS">
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:32Z" name="brbEntrar" finished-at="2020-11-30T03:52:54Z" duration-ms="21436" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar@644baf4a]" started-at="2020-11-27T09:02:09Z" name="criar" finished-at="2020-11-27T09:03:43Z" duration-ms="93325" status="PASS">
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="executar()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:52:54Z" name="executar" finished-at="2020-11-30T03:58:23Z" duration-ms="329332" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar@644baf4a]" started-at="2020-11-27T09:03:43Z" name="afterClass" finished-at="2020-11-27T09:03:43Z" duration-ms="0" status="PASS">
+        </test-method> <!-- executar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar@644baf4a]" started-at="2020-11-30T03:58:23Z" name="afterClass" finished-at="2020-11-30T03:58:23Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar -->
+      </class> <!-- com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

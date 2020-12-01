@@ -1,11 +1,11 @@
-package com.timp.test.BRE;
+package com.timp.test.BRE.RegrasDeNegocio;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasdeNegócioExcluirdefinitivamentePO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.RegrasdeNegócioExcluirdefinitivamentePO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhosPO;
 
 import org.testng.annotations.BeforeClass;

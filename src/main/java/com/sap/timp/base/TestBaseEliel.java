@@ -26,7 +26,11 @@ public class TestBaseEliel extends TestBaseSteven {
 	/*Versão 86 do google*/	//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+<<<<<<< HEAD
 		driver.get(tp1);
+=======
+		driver.get(tq1);
+>>>>>>> refs/heads/Cristhian
 		return driver;
 
 	}

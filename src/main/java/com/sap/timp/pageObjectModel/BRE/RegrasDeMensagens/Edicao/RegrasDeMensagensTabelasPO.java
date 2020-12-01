@@ -12,7 +12,7 @@ import org.testng.annotations.Factory;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
+public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
 	public WebElement regrasdemensagens;
@@ -20,17 +20,16 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//span[text()=\"Estruturas\"]")
-	public WebElement estruturas;
+	@FindBy(xpath = "//span[text()=\"Tabelas\"]")
+	public WebElement tabelas;
 	
-	@FindBy(xpath = "//button[text()=\"Create estructuras associadas\"]")
-	public WebElement crearEstruturas;
+	@FindBy(xpath = "//button[@id=\"add-object\"]")
+	public WebElement asociarTabela;
 
-	@FindBy(xpath = "//div[@id=\"select-associatedStructure\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"select-table\"]/div/div/div[2]")
 	public WebElement tabela;
 	
-	//@FindBy(xpath = "//div[@class=\"select-one\"]/div/div[2]")
-	@FindBy(xpath = "//li[text()=\"Ajustes Fiscais\"]")
+	@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER\"]")
 	public WebElement tabelaO;
 	
 	@FindBy(xpath = "//div[@id=\"main-icon\"]")
@@ -39,23 +38,26 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 	@FindBy(xpath = "//li[text()=\"Alíquota ICMS (ED)\"]")
 	public WebElement campoO;
 	
-	@FindBy(xpath = "//div[@class=\"has-list\"]/div/div/div")
-	public WebElement regraAplicada;
+	@FindBy(xpath = "//li[text()=\"Alíquota COFINS (ED)\"]")
+	public WebElement campoO2;
 	
-	@FindBy(xpath = "//button[@id=\"edit-button\"]")
-	public WebElement editarB;
+	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
+	public WebElement adicionarCaminho;
 	
-	@FindBy(xpath = "//button[@id=\"delete-button\"]")
-	public WebElement excluirB;
+	@FindBy(xpath = "//div[@class=\"conditions-section\"]/div/div/div/div/div[1]/div/div/input")
+	public WebElement nomeValor;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"campo\")]")
-	public WebElement campoE;
+	@FindBy(xpath = "//li[text()=\"Alíquota ICMS (ED)\"]")
+	public WebElement nomeValorO;
 	
-	@FindBy(xpath = "//li[text()=\"ID ajuste (ED)\"]")
-	public WebElement campoEO;
+	@FindBy(xpath = "//div[@class=\"conditions-section\"]/div/div/div/div/div[4]/div/div/input")
+	public WebElement nomeValor2;
 	
-	@FindBy(xpath = "//div[@class=\"no-list\"]")
-	public WebElement noList;
+	@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER - ALIQUOTA_ICMS (VE)\"]")
+	public WebElement nomeValorO2;
+	
+	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/input")
+	public WebElement acao;
 	
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
@@ -81,15 +83,30 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Ok\"]")
 	public WebElement ok;
 	
+	@FindBy(xpath = "//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = TA-TESTE NÃO MEXER -\")]")
+	public WebElement regraAdicionada;
 	
+	@FindBy(xpath = "//button[@id=\"edit-button\"]")
+	public WebElement editarB;
+	
+	@FindBy(xpath = "//button[@id=\"delete-button\"]")
+	public WebElement excluirB;
+	
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[4]")
+	public WebElement primeiraRegra;
+	
+	@FindBy(xpath = "//button[text()=\"Remover\"]")
+	public WebElement remover;
 
+	@FindBy(xpath = "//span[@id=\"textLabel\"]")
+	public WebElement verificar;
 	
-	public RegrasDeMensagensEstruturasPO() {
+	public RegrasDeMensagensTabelasPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 
-	public ArrayList<Boolean> estrutura() {
+	public ArrayList<Boolean> tabela() {
 		
 		String url = driver.getCurrentUrl();
 		
@@ -123,7 +140,7 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		actionsMoveToElementElement(menu);
-		sleep(4000);
+		sleep(2000);
 
 		menu.click();
 		sleep(1000);
@@ -133,9 +150,9 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		estruturas.click();
+		tabelas.click();
 		sleep(3000);
-		crearEstruturas.click();
+		asociarTabela.click();
 		sleep(3000);
 		
 		tabela.click();
@@ -148,54 +165,121 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		campoO.click();
 		sleep(1000);
 		
-		
 		aplicar.click();
 		sleep(3000);
 		fechar.click();
-		sleep(2000);
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		nao.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		adicionarCaminho.click();
 		sleep(2000);
 		
-		estruturas.click();
-		sleep(3000);
-		int visible = driver.findElements(By.xpath("//div[@class=\"has-list\"]/div/div/div")).size();
+		nomeValor.sendKeys("Alíquota ICMS (ED)");
+		sleep(1000);
+		nomeValorO.click();
+		sleep(1000);
+		
+		nomeValor2.sendKeys("TA-TESTE NÃO MEXER - ALIQUOTA_ICMS (VE)");
+		sleep(1000);
+		nomeValorO2.click();
+		sleep(1000);
+		
+		acao.sendKeys("Alíquota RJ");
+		acao.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		
+		aplicar.click();
+		
+		sleep(2000);
+		
+		int adicionada1 = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = TA-TESTE NÃO MEXER -\")]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		String reglaAplicadaS = regraAplicada.getText();
-		System.out.println(reglaAplicadaS);
-		if (visible > 0) {
+		System.out.println(adicionada1 + " Verifcação de Caminho Adicionado 1");
+		if (adicionada1>0) {
 			sucesso.add(true);
+			
 		}else {
 			sucesso.add(false);
 		}
-		
-		if (reglaAplicadaS.equals("Ajustes Fiscais")) {
-			sucesso.add(true);
-		}else {
-			sucesso.add(false);
-		}
-		
-		
-		
 		System.out.println(sucesso);
+		sleep(1000);
+		
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(2000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		biblioteca.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//li[contains(@class,\"toast-success\")]/div/span[3]");
+		sleep(1000);
+		
+		regrasdemensagens.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(2000);
+		waitExpectXpath("//span[text()=\"Adicionar Caminho\"]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int adicionada2 = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = TA-TESTE NÃO MEXER -\")]")).size();
+		
+		System.out.println(adicionada2 + " Verifcação de Caminho Adicionado 2");
+		if (adicionada2>0) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		System.out.println(sucesso);
+		sleep(1000);
+		
+		
+		tabelas.click();
 		sleep(3000);
 		editarB.click();
-		sleep(3000);
-		campoE.clear();
+		sleep(2000);
+		campo.click();
 		sleep(1000);
-		campoE.sendKeys("ID");
-		sleep(1000);
-		campoEO.click();
+		campoO2.click();
 		sleep(1000);
 		aplicar.click();
 		sleep(3000);
+		fechar.click();
+		sleep(3000);
+		primeiraRegra.click();
+		sleep(2000);
+		remover.click();
+		
+		sleep(2000);
+		
+		tabelas.click();
+		sleep(2000);
+		excluirB.click();
+		sleep(2000);
+		ok.click();
+		sleep(2000);
 		fechar.click();
 		sleep(2000);
 		gravar.click();
@@ -206,110 +290,12 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		biblioteca.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		invisibilityOfElement("//li[contains(@class,\"toast-success\")]/div/span[3]");
-		sleep(1000);
 		
+		String verificarT = verificar.getText();
+		System.out.println(verificarT + "Gravado com sucesso");
+		System.out.println(verificarT.contains("Regra atualizada com sucesso"));
 		
-		
-		regrasdemensagens.click();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		ultimapagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
-		actionsMoveToElementElement(menu);
-		sleep(4000);
-
-		menu.click();
-		sleep(1000);
-		editar.click();
-		sleep(2000);
-		waitExpectXpath("//span[text()=\"Adicionar Caminho\"]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		estruturas.click();
-		sleep(3000);
-		editarB.click();
-		sleep(3000);
-		String campoT = campoE.getAttribute("value");
-		sleep(1000);
-		System.out.println(campoT);
-		sleep(1000);
-		
-	    System.out.println(campoT.equals("ID ajuste (ED)")  + " Verificação após edição");
-	    aplicar.click();
-	    sleep(2000);
-	    excluirB.click();
-	    sleep(2000);
-	    waitExpectElement(ok);
-	    sleep(1000);
-	    ok.click();
-	    sleep(2000);
-	    fechar.click();
-	    sleep(2000);
-	    gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		nao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		biblioteca.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		invisibilityOfElement("//li[contains(@class,\"toast-success\")]/div/span[3]");
-		sleep(1000);
-
-		
-		
-		regrasdemensagens.click();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		ultimapagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
-		actionsMoveToElementElement(menu);
-		sleep(4000);
-
-		menu.click();
-		sleep(1000);
-		editar.click();
-		sleep(2000);
-		waitExpectXpath("//span[text()=\"Adicionar Caminho\"]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		estruturas.click();
-		sleep(3000);
-		
-		String noListT = noList.getText();
-		System.out.println(noListT);
-		System.out.println(noListT.equals("A regra ainda não tem estructuras associadas") + " Apos Exclusão Estritura");
-		
-		if (noListT.equals("A regra ainda não tem estructuras associadas")) {
+		if (verificarT.contains("Regra atualizada com sucesso")) {
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);
@@ -318,9 +304,6 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		System.out.println(sucesso);
 		
 		return sucesso;
-		
-
-		
 		
 	}
 

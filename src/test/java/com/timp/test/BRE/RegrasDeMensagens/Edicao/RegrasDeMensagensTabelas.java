@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais;
+package com.timp.test.BRE.RegrasDeMensagens.Edicao;
 
 import static org.testng.Assert.assertTrue;
 
@@ -10,22 +10,26 @@ import org.testng.annotations.Test;
 
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturasPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimularPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelasPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditarPO;
 
-public class RegrasDeMensagensEditar extends TestBaseEliel {
+public class RegrasDeMensagensTabelas extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeMensagensEditarPO regrasDeMensagensEditarPO;
+	RegrasDeMensagensTabelasPO regrasDeMensagensTabelasPO;
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeMensagensEditarPO = new RegrasDeMensagensEditarPO();
+		regrasDeMensagensTabelasPO = new RegrasDeMensagensTabelasPO();
 	}
 
 	@AfterClass
@@ -45,7 +49,8 @@ public class RegrasDeMensagensEditar extends TestBaseEliel {
 	
 	@Test(priority = 2)
 	public void editar() {
-		ArrayList<Boolean> sucesso = regrasDeMensagensEditarPO.editar();
+		ArrayList<Boolean> sucesso = regrasDeMensagensTabelasPO.tabela();
+		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Editar);
 		}

@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="165556" started-at="2020-11-30T21:00:47Z" finished-at="2020-11-30T21:03:33Z">
+  <suite name="Default suite" duration-ms="201919" started-at="2020-12-01T01:27:19Z" finished-at="2020-12-01T01:30:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="165556" started-at="2020-11-30T21:00:47Z" finished-at="2020-11-30T21:03:33Z">
-      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="13591" started-at="2020-11-30T15:00:47Z" finished-at="2020-11-30T15:01:01Z">
+    <test name="Default test" duration-ms="201919" started-at="2020-12-01T01:27:19Z" finished-at="2020-12-01T01:30:41Z">
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="13738" started-at="2020-11-30T19:27:19Z" finished-at="2020-11-30T19:27:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@f2f2cc1]" name="login" duration-ms="9513" started-at="2020-11-30T15:01:01Z" finished-at="2020-11-30T15:01:11Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@f2f2cc1]" name="login" duration-ms="7250" started-at="2020-11-30T19:27:33Z" finished-at="2020-11-30T19:27:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@f2f2cc1]" name="acessarBRE" duration-ms="12855" started-at="2020-11-30T15:01:11Z" finished-at="2020-11-30T15:01:23Z">
+        <test-method status="PASS" signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@f2f2cc1]" name="acessarBRE" duration-ms="12520" started-at="2020-11-30T19:27:40Z" finished-at="2020-11-30T19:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarBRE -->
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@f2f2cc1]" name="editar" duration-ms="129580" started-at="2020-11-30T15:01:23Z" finished-at="2020-11-30T15:03:33Z">
+        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@f2f2cc1]" name="editar" duration-ms="163958" started-at="2020-11-30T19:27:52Z" finished-at="2020-11-30T19:30:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-11-30T15:03:33Z" finished-at="2020-11-30T15:03:33Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4435" started-at="2020-11-30T19:30:36Z" finished-at="2020-11-30T19:30:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

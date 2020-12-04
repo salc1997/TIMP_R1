@@ -36,6 +36,8 @@ public class CampoOutputPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"draggable-66\"]/div/div/div/div[4]/span[contains(@class, \"output\")]")
 	public WebElement mostrado;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	
 	
@@ -69,7 +71,7 @@ public class CampoOutputPO extends TestBaseSteven{
 	
 		
 		menu.click();
-
+		sleep(1000);
 		opcao.click();
 
 		
@@ -86,13 +88,20 @@ public class CampoOutputPO extends TestBaseSteven{
 		aplicar.click();
 		
 		
-		waitExpectXpath("//*[@id=\"editor-toolbar\"]/div/ul/li[3]/button");
-		sleep(5000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		
 		gravar.click();
 		
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		driver.navigate().refresh();
 		
 

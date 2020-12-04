@@ -34,6 +34,9 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[1]")
+	public WebElement nao1;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
 	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/div/ul/li[3]/button")
@@ -146,7 +149,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		
 		edicao.click();
 		sleep(3000);
-		nao.click();
+		nao1.click();
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		grupoAvanzado.click();
@@ -185,9 +188,13 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		aplicar.click();
 		sleep(2000);
 		gravar.click();
+		sleep(2000);
+		waitExpectElement(nao1);
+		sleep(1000);
+		nao1.click();
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		execucao.click();
 		sleep(5000);
@@ -283,7 +290,13 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		eliminar.click();
 		
 		gravar.click();
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		driver.navigate().refresh();
 		

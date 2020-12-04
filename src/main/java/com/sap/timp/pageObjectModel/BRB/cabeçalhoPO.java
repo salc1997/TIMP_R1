@@ -56,6 +56,8 @@ public class cabeçalhoPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[8]/button")
 	public WebElement imprimir;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -118,9 +120,13 @@ public class cabeçalhoPO extends TestBaseSteven{
 		sleep(2000);
 		
 		gravar.click();
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		execucao.click();
 		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

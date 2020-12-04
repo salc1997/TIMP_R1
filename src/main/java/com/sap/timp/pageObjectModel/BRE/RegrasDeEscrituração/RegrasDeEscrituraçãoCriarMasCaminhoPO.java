@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração;
 
+import org.omg.DynamicAny.NameDynAnyPair;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -38,6 +39,9 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Ajuste\"][1]")
 	public WebElement opcionGrupoDeEstrutura;
+	
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Ajustes\"][1]")
+	public WebElement opcionGrupoDeEstruturaTP1;
 	
 	@FindBy(xpath = "//td[contains(@class, \"datastructure-field\")]/div/div/div[2]")
 	public WebElement estruturaDeDatos;
@@ -105,6 +109,16 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 	
 	
 	public boolean criar() {
+		
+		String url = driver.getCurrentUrl();
+
+		boolean tp1 = false;
+		
+		if (url.contains("tp1")) {
+			tp1 = true;
+		}
+		
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -154,7 +168,12 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		
 		grupoDeEstrutura.click();
 		sleep(1000);
-		opcionGrupoDeEstrutura.click();
+		if (tp1 == true) {
+			opcionGrupoDeEstruturaTP1.click();
+		}else {
+			opcionGrupoDeEstrutura.click();
+		}
+		
 		sleep(1000);
 		
 		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
@@ -203,6 +222,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		sleep(1000);
 		opcionCondicoesOperador.click();
 		sleep(1000);
+
 		
 		cboNomeDoValor.click();
 		sleep(1000);

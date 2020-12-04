@@ -412,16 +412,6 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 	}
 
-	/*
-	 * 
-	 * @Test(priority = 24) public void regras() { regras = new Regras();
-	 * 
-	 * regras.beforeClass(); regras.login(); regras.brbEntrar(); regras.regras();
-	 * regras.afterClass();
-	 * 
-	 * 
-	 * }
-	 */
 	@Test(priority = 25)
 	public void cabeçalho() {
 

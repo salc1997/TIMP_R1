@@ -6,7 +6,9 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -23,7 +25,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 	   return driver;
 	}
 	
@@ -47,6 +49,10 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 		return dia;
 
+	}
+	
+	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
 	}
 	
 

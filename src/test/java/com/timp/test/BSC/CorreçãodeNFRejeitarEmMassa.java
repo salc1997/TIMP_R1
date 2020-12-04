@@ -1,4 +1,4 @@
-package com.timp.test.BSC.CorreçãodeNF;
+package com.timp.test.BSC;
 
 import org.testng.annotations.Test;
 
@@ -6,8 +6,7 @@ import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BSC.AcessarBSCPO;
-import com.sap.timp.pageObjectModel.BSC.NotaFiscal.CorreçãodeNFEditarPO;
-import com.timp.test.BSC.AcessarBSC;
+import com.sap.timp.pageObjectModel.BSC.CorreçãodeNFRejeitarEmMassaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,29 +16,25 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CorreçãodeNFEditar extends TestBaseMassiel {
+public class CorreçãodeNFRejeitarEmMassa extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
 	AcessarBrbPO acessarBrbPO;
-	CorreçãodeNFEditarPO correcaodeNFEditarPO;
-	
+	CorreçãodeNFRejeitarEmMassaPO   correçãodeNFRejeitarEmMassaPO;
 
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();
 	  loginTC = new LoginTC();
 	  acessarBrbPO = new AcessarBrbPO();
-	  correcaodeNFEditarPO = new CorreçãodeNFEditarPO();
-	  acessarBSC = new  AcessarBSCPO();
-	  
-	  
+	  correçãodeNFRejeitarEmMassaPO = new CorreçãodeNFRejeitarEmMassaPO();
   }
 
   @AfterClass
   public void afterClass() {
   }
   
-	@Test(priority = 0)
+  @Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
@@ -53,19 +48,12 @@ public class CorreçãodeNFEditar extends TestBaseMassiel {
 	}
 	
 	@Test(priority = 2)
-	public void  executar() {
-	  // correcaodeNFEditarPO.Executar();
+	public void  rejeitar() {
+		
 	   
-	   ArrayList<Boolean> viEdi =  correcaodeNFEditarPO.Executar();
-		for (int i = 0; i < viEdi.size(); i++) {
-		assertTrue(viEdi.get(i), Filtros);
+	   ArrayList<Boolean> rejeitar =   correçãodeNFRejeitarEmMassaPO.Rejeitar();
+		for (int i = 0; i < rejeitar.size(); i++) {
+		assertTrue(rejeitar.get(i), Filtros);
 		}
-
 	}
-	
-	
-	
-
-
-
 }

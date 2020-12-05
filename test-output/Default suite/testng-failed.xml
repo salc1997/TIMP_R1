@@ -6,11 +6,7 @@
     <classes>
       <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
         <methods>
-          <include name="crescenteEDecrescente"/>
-          <include name="publicoYPrivado"/>
           <include name="formatacaoEVariante"/>
-          <include name="gruposAvanzados"/>
-          <include name="paginacion"/>
         </methods>
       </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
 =======

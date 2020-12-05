@@ -1,6 +1,6 @@
 package com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração;
 
-import org.omg.DynamicAny.NameDynAnyPair;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

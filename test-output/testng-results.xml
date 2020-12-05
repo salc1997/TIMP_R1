@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="5" total="28" passed="23">
   <reporter-output>
   </reporter-output>
@@ -136,24 +137,56 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
           </reporter-output>
         </test-method> <!-- publicoYPrivado -->
         <test-method status="PASS" signature="excluirColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="excluirColuna" duration-ms="161351" started-at="2020-12-03T19:35:21Z" finished-at="2020-12-03T19:38:02Z">
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-03T04:49:26Z" name="Default suite" finished-at="2020-12-03T04:54:14Z" duration-ms="288186">
+    <groups>
+    </groups>
+    <test started-at="2020-12-03T04:49:26Z" name="Default test" finished-at="2020-12-03T04:54:14Z" duration-ms="288186">
+      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa@7526515b]" started-at="2020-12-02T22:49:26Z" name="beforeClass" finished-at="2020-12-02T22:49:47Z" duration-ms="21026" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- excluirColuna -->
         <test-method status="PASS" signature="editarRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="editarRelatorio" duration-ms="91430" started-at="2020-12-03T19:38:02Z" finished-at="2020-12-03T19:39:34Z">
+=======
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa@7526515b]" started-at="2020-12-02T22:49:47Z" name="login" finished-at="2020-12-02T22:49:54Z" duration-ms="7579" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- editarRelatorio -->
         <test-method status="PASS" signature="reordenarColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="reordenarColuna" duration-ms="98996" started-at="2020-12-03T19:39:34Z" finished-at="2020-12-03T19:41:13Z">
+=======
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa@7526515b]" started-at="2020-12-02T22:49:54Z" name="brbEntrar" finished-at="2020-12-02T22:50:19Z" duration-ms="24614" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- reordenarColuna -->
         <test-method status="PASS" signature="filtrosRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="filtrosRelatorio" duration-ms="239758" started-at="2020-12-03T19:41:13Z" finished-at="2020-12-03T19:45:13Z">
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="rejeitar()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa@7526515b]" started-at="2020-12-02T22:50:19Z" name="rejeitar" finished-at="2020-12-02T22:54:14Z" duration-ms="234851" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- filtrosRelatorio -->
         <test-method status="PASS" signature="criarCopia()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="criarCopia" duration-ms="146126" started-at="2020-12-03T19:45:13Z" finished-at="2020-12-03T19:47:39Z">
+=======
+        </test-method> <!-- rejeitar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa@7526515b]" started-at="2020-12-02T22:54:14Z" name="afterClass" finished-at="2020-12-02T22:54:14Z" duration-ms="42" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criarCopia -->
         <test-method status="PASS" signature="ativarCorrecao()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="ativarCorrecao" duration-ms="93333" started-at="2020-12-03T19:47:39Z" finished-at="2020-12-03T19:49:12Z">
           <reporter-output>
@@ -425,6 +458,10 @@ Session ID: d86662973a5957faa012a9199f9a2e56
           </reporter-output>
         </test-method> <!-- ExcluirRelatorio -->
       </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
+=======
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

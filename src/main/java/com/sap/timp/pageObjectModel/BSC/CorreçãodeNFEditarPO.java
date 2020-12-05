@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BSC.NotaFiscal;
+package com.sap.timp.pageObjectModel.BSC;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
-import com.sap.timp.pageObjectModel.BSC.AcessarBSCPO;
 
 public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")

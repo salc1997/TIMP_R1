@@ -3,27 +3,33 @@ package com.timp.test.BRE.RegrasDeEscrituração;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarComCopiaPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminhoPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEditarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
-public class RegrasDeEscrituraçãoCriarMasCaminho extends TestBaseFernando{
+public class RegrasDeEscrituraçãoVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeEscrituraçãoCriarMasCaminhoPO regrasDeEscrituraçãoCriarMasCaminhoPO;
+	RegrasDeEscrituraçãoVisualizarPO regrasDeEscrituraçãoVisualizarPO;
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeEscrituraçãoCriarMasCaminhoPO = new RegrasDeEscrituraçãoCriarMasCaminhoPO();
+		regrasDeEscrituraçãoVisualizarPO = new RegrasDeEscrituraçãoVisualizarPO();
 	}
 
 	@AfterClass
@@ -42,8 +48,14 @@ public class RegrasDeEscrituraçãoCriarMasCaminho extends TestBaseFernando{
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
-		boolean sucesso = regrasDeEscrituraçãoCriarMasCaminhoPO.criar();
-		assertTrue(sucesso, Eliminado);
+	public void visualizar() {
+		
+		ArrayList<Boolean> sucesso = regrasDeEscrituraçãoVisualizarPO.visualizar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), editado);
+		}
+		
+		
 	}
 }

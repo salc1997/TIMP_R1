@@ -22,15 +22,12 @@ public class TestBaseEliel extends TestBaseSteven {
 
 	public WebDriver initializationE() {
 
-	/*Versão 83 do google*/	System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-	/*Versão 86 do google*/	//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-<<<<<<< HEAD
-		driver.get(tp1);
-=======
-		driver.get(tq1);
->>>>>>> refs/heads/Cristhian
+
+		driver.get(tc2);
+
 		return driver;
 
 	}

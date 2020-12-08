@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-07T16:30:36Z" name="Default suite" finished-at="2020-12-07T16:32:54Z" duration-ms="138066">
+  <suite started-at="2020-12-08T20:38:12Z" name="Default suite" finished-at="2020-12-08T20:39:59Z" duration-ms="107601">
     <groups>
     </groups>
-    <test started-at="2020-12-07T16:30:36Z" name="Default test" finished-at="2020-12-07T16:32:54Z" duration-ms="138066">
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:30:36Z" name="beforeClass" finished-at="2020-12-07T13:30:51Z" duration-ms="14474" status="PASS">
+    <test started-at="2020-12-08T20:38:12Z" name="Default test" finished-at="2020-12-08T20:39:59Z" duration-ms="107601">
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:12Z" name="beforeClass" finished-at="2020-12-08T17:38:27Z" duration-ms="15430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:30:51Z" name="login" finished-at="2020-12-07T13:30:59Z" duration-ms="7922" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:27Z" name="login" finished-at="2020-12-08T17:38:37Z" duration-ms="9906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:30:59Z" name="acessarBRE" finished-at="2020-12-07T13:31:16Z" duration-ms="17191" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:37Z" name="acessarMDR" finished-at="2020-12-08T17:38:49Z" duration-ms="12226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarBRE -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:31:16Z" name="editar" finished-at="2020-12-07T13:32:54Z" duration-ms="98462" status="PASS">
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="Visualizar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:49Z" name="Visualizar" finished-at="2020-12-08T17:39:59Z" duration-ms="69977" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:32:54Z" name="afterClass" finished-at="2020-12-07T13:32:54Z" duration-ms="1" status="PASS">
+        </test-method> <!-- Visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:39:59Z" name="afterClass" finished-at="2020-12-08T17:39:59Z" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

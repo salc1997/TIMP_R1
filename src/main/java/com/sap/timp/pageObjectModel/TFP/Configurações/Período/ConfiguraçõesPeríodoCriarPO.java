@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TFP.Configurações;
+package com.sap.timp.pageObjectModel.TFP.Configurações.Período;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -114,10 +114,7 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		dobleClickElement(empresaFlecha);
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		closeSelectTypeCheckbox(empresa);
 		
 		Estado.click();
 		sleep(2000);
@@ -129,26 +126,20 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		dobleClickElement(empresaFlecha);
+		closeSelectTypeCheckbox(Estado);
+		
+		
+		Filial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		FilialOpc.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		//Filial.click();
-		//sleep(2000);
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
-		
-		//FilialOpc.click();
-		//sleep(2000);
-		////invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
-		
-		//dobleClickElement(empresaFlecha);
-		//sleep(2000);
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
+		closeSelectTypeCheckbox(Filial);
 		
 		Abertura.click();
 		sleep(2000);

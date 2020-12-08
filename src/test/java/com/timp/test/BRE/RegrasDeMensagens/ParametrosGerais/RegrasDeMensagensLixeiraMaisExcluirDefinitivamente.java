@@ -11,22 +11,21 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensVisualizarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO;
 
-public class RegraDeMensagensVisualizar extends TestBaseEliel{
-  
+public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamente extends TestBaseEliel {
+
 	
-
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeMensagensVisualizarPO regrasDeMensagensVisualizarPO;
+	RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO regrasDeMensagensLixeiraMaisExcluirDefinitivamentePO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeMensagensVisualizarPO = new RegrasDeMensagensVisualizarPO();
+		regrasDeMensagensLixeiraMaisExcluirDefinitivamentePO = new RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO();
 	}
 
 	@AfterClass
@@ -45,10 +44,10 @@ public class RegraDeMensagensVisualizar extends TestBaseEliel{
 	}
 	
 	@Test(priority = 2)
-	public void visualizar() {
-		ArrayList<Boolean> sucesso = regrasDeMensagensVisualizarPO.visualizar();
+	public void excluir() {
+		ArrayList<Boolean> sucesso = regrasDeMensagensLixeiraMaisExcluirDefinitivamentePO.excluir();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), Editar);
 		}
 		
 	}

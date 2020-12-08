@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/main/java/com/sap/timp/pageObjectModel/BCB/HierarquiaConfiguracaoTodasAsFuncionalidadesPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/BRE/RegrasDeAuditoriaN3/RegrasDeAuditoriaN3CriarMasCaminhoPO.java=UTF-8
+encoding//src/main/java/com/sap/timp/pageObjectModel/BRE/RegrasDeAuditoriaN4/ParanetrosGerais/RegrasDeAuditoriaN4CriarPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/MDR/HierarquiaDeCenariosDeCorre\u00E7ao/HierarquiaDeCenariosDeCorre\u00E7aoFiltrosAbansadosPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/MDR/LivrosFiscais/Parametriza\u00E7\u00E3oDoLivroOficial/Parametriza\u00E7\u00E3oDoLivroOficialCriarPO.java=UTF-8

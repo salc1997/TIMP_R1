@@ -1,8 +1,6 @@
-package com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais;
+package com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -11,22 +9,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensVisualizarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasDeAuditoriaN4CriarPO;
 
-public class RegraDeMensagensVisualizar extends TestBaseEliel{
-  
+public class RegrasDeAuditoriaN4Criar extends TestBaseEliel {
 	
-
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeMensagensVisualizarPO regrasDeMensagensVisualizarPO;
+	RegrasDeAuditoriaN4CriarPO regrasDeAuditoriaN4CriarPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeMensagensVisualizarPO = new RegrasDeMensagensVisualizarPO();
+		regrasDeAuditoriaN4CriarPO = new RegrasDeAuditoriaN4CriarPO();
 	}
 
 	@AfterClass
@@ -45,11 +41,9 @@ public class RegraDeMensagensVisualizar extends TestBaseEliel{
 	}
 	
 	@Test(priority = 2)
-	public void visualizar() {
-		ArrayList<Boolean> sucesso = regrasDeMensagensVisualizarPO.visualizar();
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
-		
+	public void criar() {
+		boolean sucesso = regrasDeAuditoriaN4CriarPO.criar();
+		assertTrue(sucesso, Criar);
 	}
+ 
 }

@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais;
+package com.timp.test.BRE.Lixeira.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,22 +11,21 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensVisualizarPO;
+import com.sap.timp.pageObjectModel.BRE.Lixeira.ParametrosGerais.LixeiraRestaurarPO;
 
-public class RegraDeMensagensVisualizar extends TestBaseEliel{
-  
+public class LixeiraRestaurar extends TestBaseEliel{
 	
 
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeMensagensVisualizarPO regrasDeMensagensVisualizarPO;
+	LixeiraRestaurarPO lixeiraRestaurarPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeMensagensVisualizarPO = new RegrasDeMensagensVisualizarPO();
+		lixeiraRestaurarPO = new LixeiraRestaurarPO();
 	}
 
 	@AfterClass
@@ -45,11 +44,10 @@ public class RegraDeMensagensVisualizar extends TestBaseEliel{
 	}
 	
 	@Test(priority = 2)
-	public void visualizar() {
-		ArrayList<Boolean> sucesso = regrasDeMensagensVisualizarPO.visualizar();
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
-		
+	public void restaurar() {
+		boolean sucesso = lixeiraRestaurarPO.restaurar();
+		assertTrue(sucesso, Restaurar);
 	}
+
+ 
 }

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais;
+package com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN3.ParametrosGerais;
 
 import java.util.ArrayList;
 
@@ -7,20 +7,15 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Factory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class RegrasDeMensagensEditarPO extends TestBaseEliel {
-	
-	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
-	public WebElement regrasdemensagens;
+public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-a_rules\"]/div/span[text()=\"Regras de Auditoria N3\"]")
+	public WebElement regraAuditoriaN3;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
-	
-	@FindBy(xpath = "//span[text()=\"Nova Regra\"]")
-	public WebElement novaregra;
 	
 	@FindBy(xpath = "//td[@class=\"title-field\"]/div/div/input")
 	public WebElement nome;
@@ -85,18 +80,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
 	public WebElement adicionarcaminho;
 	
-	//@FindBy(xpath = "//div[@class=\"select-one\"]/div/div[2]")
-	@FindBy(xpath = "//div[@class=\"select-one\"]/div/div/input")
-	public WebElement Condicoes;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Tributo- (aba:Dados Lançamento) (ED)\"]")
-	public WebElement opcaoCondicoes;
-	
-	@FindBy(xpath = "//div[@class=\"select-three\"]/div/div/div[2]/div/div[2]")
-	public WebElement Operador;
-	
-	@FindBy(xpath = "//div[@id]/div[text()=\"<\"]")
-	public WebElement opcaoOperador;
 	
 	//@FindBy(xpath = "//div[@class=\"value-one\"]/div/div[2]")
 	@FindBy(xpath = "//div[@class=\"value-one\"]/div/div/input")
@@ -133,7 +117,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	public WebElement biblioteca;
 	
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start path-hl\"]/*/*[name()=\"tspan\"]")
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start\"]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[1]")
 	public WebElement primeiracaixar1;
 	
 	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"][1]")
@@ -142,8 +126,8 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Modificar\"]")
 	public WebElement modificar;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"][1]")
-	public WebElement parte1string;
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[2]/*/*")
+	public WebElement campo2;
 	
 	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"][2]")
 	public WebElement parte2string;
@@ -154,11 +138,11 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Salvar como Cópia\"]")
 	public WebElement salvarcomocopia;
 	
-	//@FindBy(xpath = "//*[name()=\"g\"][@transform=\"translate(491.3333435058594,34)\"]/*/*[name()=\"tspan\"]")
-	@FindBy(xpath = "//*[name()=\"g\"][@height=\"24\"][6]")
+	
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[7]/*/*")
 	public WebElement r2;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[5]")
 	public WebElement primeiracaixar2;
 	
 	@FindBy(xpath = "//button[text()=\"Remover\"]")
@@ -174,7 +158,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
-	public RegrasDeMensagensEditarPO() {
+	public RegrasDeAuditoriaN3EditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -184,7 +168,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		regrasdemensagens.click();
+		regraAuditoriaN3.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -197,7 +181,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter2();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -215,9 +199,10 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		
 		primeiracaixar1.click();
 		sleep(1000);
-		NomeDoValor.clear();
-		NomeDoValor.sendKeys("BC ICMS - C597 (ED)");
-		NomeDoValor.sendKeys(Keys.ENTER);
+		String enviar ="Teste Automatizado Auditoria N3";
+		acoes.clear();
+		acoes.sendKeys(enviar);
+		acoes.sendKeys(Keys.ENTER);
 		
 		modificar.click();
 		sleep(1000);
@@ -229,44 +214,36 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		waitExpectElement(nao);
 		sleep(2000);
 
-
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-
-		String texto1 = parte1string.getText();
-		
-		String enviar ="BC ICMS - C597";
+	
+		String texto1 = campo2.getText();
 		
 		sucesso.add(texto1.contains(enviar));
-		waitExpectElement(primeiracaixar1editado);
+		waitExpectElement(primeiracaixar1);
 		sleep(1000);
-		primeiracaixar1editado.click();
+		primeiracaixar1.click();
 		sleep(1000);
 		codigo.clear();
 		sleep(1000);
 		codigo.sendKeys("r2");
 		sleep(1000);
-		NomeDoValor.clear();
-		sleep(1000);
-		NomeDoValor.sendKeys("BC ICMS (ED)");
-		sleep(1000);
-		NomeDoValor.sendKeys(Keys.ENTER);
-		sleep(1000);
+		acoes.clear();
+		acoes.sendKeys("Teste Auditoria N3");
+		acoes.sendKeys(Keys.ENTER);
 		salvarcomocopia.click();
-		//waitExpectElement(r2);
-		//sleep(1000);
-		//String textor2 = r2.getText();
-		//String textoparacompararcomr2 ="r2";
+		
 		waitExpectElement(r2);
 		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("O campo r2 está na página de edição");
 			boolean sucesso3=true;
-		sucesso.add(sucesso3);
+			sucesso.add(sucesso3);
 		}
+		
+		sleep(1000);
 		gravar.click();
 
 		sleep(1000);
@@ -277,15 +254,6 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
-		waitExpectElement(r2);
-		sleep(2000);
-		if(r2.isDisplayed()) {
-			System.out.println("r2 ainda consta na edição");
-			boolean sucesso1=true;
-		sucesso.add(sucesso1);
-		}
-	
 		primeiracaixar2.click();
 		sleep(1000);
 		remover.click();
@@ -295,17 +263,16 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sleep(1000);
 		waitExpectElement(nao);
 		sleep(2000);
-
-
+		
 		nao.click();
-		sleep(4000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int removerr2 = driver.findElements(By.xpath("//*[name()=\"g\"][@height=\"24\"][6]")).size();
+		int removerr2 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[7]/*/*")).size();
 		if(removerr2 == 0)
 		{
-			System.out.println("Caminho r2 continua removido");
+			System.out.println("Caminho r2 foi removido");
 			sucesso.add(true);
 		}else {
 			System.out.println("Caminho r2 não foi removido");
@@ -315,12 +282,13 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		configuracoes.click();
 		sleep(1000);
 		
-		String nome1 = "TESTE AUTOMATIZADO - NAO MEXER";
+		String nome1 = "TESTE N3- NAO MEXER";
 		
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
-		
+		waitExpectElement(aplicar);
+		sleep(3000);
 		aplicar.click();
 		sleep(1000);
 		gravar.click();

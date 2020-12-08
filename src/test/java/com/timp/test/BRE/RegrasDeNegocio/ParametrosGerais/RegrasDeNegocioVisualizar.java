@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais;
+package com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,22 +11,21 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensVisualizarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioVisualizarPO;
 
-public class RegraDeMensagensVisualizar extends TestBaseEliel{
-  
-	
+public class RegrasDeNegocioVisualizar extends TestBaseEliel {
+
 
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeMensagensVisualizarPO regrasDeMensagensVisualizarPO;
+	RegrasDeNegocioVisualizarPO regrasDeNegocioVisualizarPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeMensagensVisualizarPO = new RegrasDeMensagensVisualizarPO();
+		regrasDeNegocioVisualizarPO = new RegrasDeNegocioVisualizarPO();
 	}
 
 	@AfterClass
@@ -46,10 +45,11 @@ public class RegraDeMensagensVisualizar extends TestBaseEliel{
 	
 	@Test(priority = 2)
 	public void visualizar() {
-		ArrayList<Boolean> sucesso = regrasDeMensagensVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = regrasDeNegocioVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 		
 	}
+	
 }

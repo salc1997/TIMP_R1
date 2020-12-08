@@ -15,7 +15,7 @@ import org.testng.annotations.AfterClass;
 public class AcessarBSC extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
-	
+
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();

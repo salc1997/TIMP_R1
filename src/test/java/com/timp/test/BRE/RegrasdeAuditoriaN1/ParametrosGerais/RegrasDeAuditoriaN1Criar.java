@@ -1,4 +1,4 @@
-package com.timp.test.BRE;
+package com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,7 +11,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN1CriarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1CriarPO;
+
 
 public class RegrasDeAuditoriaN1Criar extends TestBaseEliel {
 	

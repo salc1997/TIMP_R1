@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE;
+package com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.ParametrosGerais;
 
 import java.util.ArrayList;
 

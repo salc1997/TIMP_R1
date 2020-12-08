@@ -10,6 +10,9 @@ import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -48,8 +51,12 @@ public class EstornoCreditoVisualizar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Visualizar() {
 
-		String sucesso = estornoCreditoVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = estornoCreditoVisualizarPO.visualizar();
 
-		assertEquals(sucesso, "edit", visualizaçar);
+		for (int i = 0; i < sucesso.size(); i++) {
+			
+			assertTrue(sucesso.get(i), visualizaçar);
+			
+		}
 	}
 }

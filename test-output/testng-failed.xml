@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -28,21 +29,28 @@
         </methods>
       </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
 =======
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
+      <class name="com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar">
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="editar"/>
 =======
           <include name="rejeitar"/>
 >>>>>>> refs/remotes/origin/master
+=======
+          <include name="criar"/>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="criar"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar -->
 =======
@@ -75,6 +83,9 @@
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="3" passed="2">
 =======
 <<<<<<< HEAD
@@ -280,12 +281,15 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 <<<<<<< HEAD
         <test-method status="PASS" signature="excluirColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="excluirColuna" duration-ms="161351" started-at="2020-12-03T19:35:21Z" finished-at="2020-12-03T19:38:02Z">
 =======
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-03T04:49:26Z" name="Default suite" finished-at="2020-12-03T04:54:14Z" duration-ms="288186">
+  <suite started-at="2020-12-08T08:01:47Z" name="Default suite" finished-at="2020-12-08T08:03:58Z" duration-ms="130671">
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-12-03T04:49:26Z" name="Default test" finished-at="2020-12-03T04:54:14Z" duration-ms="288186">
       <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa@7526515b]" started-at="2020-12-02T22:49:26Z" name="beforeClass" finished-at="2020-12-02T22:49:47Z" duration-ms="21026" status="PASS">
@@ -293,22 +297,39 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 =======
         <test-method status="PASS" signature="excluirColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="excluirColuna" duration-ms="179358" started-at="2020-12-04T18:39:31Z" finished-at="2020-12-04T18:42:30Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+    <test started-at="2020-12-08T08:01:47Z" name="Default test" finished-at="2020-12-08T08:03:58Z" duration-ms="130671">
+      <class name="com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:01:47Z" name="beforeClass" finished-at="2020-12-08T02:02:04Z" duration-ms="16726" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- excluirColuna -->
 <<<<<<< HEAD
         <test-method status="PASS" signature="editarRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="editarRelatorio" duration-ms="91430" started-at="2020-12-03T19:38:02Z" finished-at="2020-12-03T19:39:34Z">
 =======
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="login" duration-ms="13722" started-at="2020-12-07T16:47:31Z" finished-at="2020-12-07T16:47:45Z">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:04Z" name="login" finished-at="2020-12-08T02:02:11Z" duration-ms="6610" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="acessarMDR" duration-ms="14796" started-at="2020-12-07T16:47:45Z" finished-at="2020-12-07T16:48:00Z">
+=======
+        <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:11Z" name="TFPEntrar" finished-at="2020-12-08T02:02:30Z" duration-ms="19779" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="criar" duration-ms="37662" started-at="2020-12-07T16:48:00Z" finished-at="2020-12-07T16:48:38Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
@@ -464,9 +485,18 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
           </reporter-output>
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:18:18Z" name="afterClass" finished-at="2020-12-08T07:18:18Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- TFPEntrar -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:30Z" name="criar" finished-at="2020-12-08T02:03:58Z" duration-ms="87539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:03:58Z" name="afterClass" finished-at="2020-12-08T02:03:58Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
 >>>>>>> refs/heads/Cristhian
@@ -475,6 +505,9 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

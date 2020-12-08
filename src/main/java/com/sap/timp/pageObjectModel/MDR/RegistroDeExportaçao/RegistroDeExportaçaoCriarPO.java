@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroDeExportaçaoCriarPO extends TestBaseEliel {
+public class RegistroDeExportaçaoCriarPO extends TestBaseSteven {
 
 	
 	@FindBy(xpath = "//span[text()=\"Registro de Exportação\"]")
@@ -19,13 +20,13 @@ public class RegistroDeExportaçaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[text()=\"3000\"]")
 	public WebElement opcaoempresa;
 	
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[text()=\"0031\"]")
 	public WebElement opcaofilial;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencha a(o) Docnum SAP\"]")
@@ -96,12 +97,12 @@ public class RegistroDeExportaçaoCriarPO extends TestBaseEliel {
 	public boolean criar() {
 		sleep(2000);
 		registroexportacao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
@@ -115,6 +116,7 @@ public class RegistroDeExportaçaoCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		novoregistro.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -141,7 +143,7 @@ public class RegistroDeExportaçaoCriarPO extends TestBaseEliel {
 		
 		codpais.sendKeys("001");
 		
-		String  data =fechaActual();
+		String  data = "01/01/2013";
 		
 		datalancamento.sendKeys(data);
 		
@@ -166,19 +168,20 @@ public class RegistroDeExportaçaoCriarPO extends TestBaseEliel {
 		gravar.click();
 		sleep(2000);
 		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		biblioteca.click();
 		
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
 		
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

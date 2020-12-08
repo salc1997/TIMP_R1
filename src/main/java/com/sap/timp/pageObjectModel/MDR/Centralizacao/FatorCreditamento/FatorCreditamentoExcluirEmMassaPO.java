@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseMassiel;
 
-public class FatorCreditamentoCriarPO extends TestBaseMassiel{
+public class FatorCreditamentoExcluirEmMassaPO extends TestBaseMassiel{
 	@FindBy(xpath = "//li/div/span[text()=\"Centralização\"]")
 	public WebElement centralização;
 	
@@ -32,8 +32,7 @@ public class FatorCreditamentoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//li[text()=\"1000\"]")
 	public WebElement opcaoEmpresaTC2;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
-	public WebElement idC;
+
 		
 	@FindBy(xpath = "//div[@id=\"UF\"]/div/div/div[2]")
 	public WebElement ufFilial;
@@ -83,10 +82,16 @@ public class FatorCreditamentoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement sim;
+	
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
 	
-	public FatorCreditamentoCriarPO() {
+	@FindBy(xpath = "//div[@id=\"right-content\"]/div/div/div/div/ul/li[3]/button")
+	public WebElement excluirMassa;
+	
+	public FatorCreditamentoExcluirEmMassaPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -203,6 +208,55 @@ public class FatorCreditamentoCriarPO extends TestBaseMassiel{
 			sucesso = true;
 		}
 	
+		return sucesso;
+	}
+	
+
+	public boolean excluir() {
+		
+		
+		String idRegistro = idObter1();
+
+
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[2]/label/span"));
+		
+		
+		excluir.click();
+		sleep(2000);
+		excluirMassa.click();
+		sleep(3000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println("Id antes da exlução: "+ id2);
+		System.out.println("Id após a exclução: " +id1);
+		
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+
+		System.out.println(sucesso);
 		return sucesso;
 	}
 }

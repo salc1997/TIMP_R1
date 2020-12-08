@@ -17,19 +17,19 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[text()=\"3000\"]")
 	public WebElement opcaoempresa;
 	
-	@FindBy(xpath = "//li[@id][3]")
+	@FindBy(xpath = "//li[text()=\"3000\"]")
 	public WebElement opcaoempresa2;
 	
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[text()=\"0031\"]")
 	public WebElement opcaofilial;
 	
-	@FindBy(xpath = "//li[@id][2]")
+	@FindBy(xpath = "//li[text()=\"0032\"]")
 	public WebElement opcaofilial2;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencha a(o) Docnum SAP\"]")
@@ -287,16 +287,13 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBaseFernando{
 		int idUltimoRegistro = convertToInt(idObter4());
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idUltimoRegistro+"\"]/div[2]/label/span")); 
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
-		
-		sleep(2000);
+
 		marcarCheckbox.click();
 		sleep(2000);
 		
 		int idPenultimoUltimoRegistro = idUltimoRegistro - 1;
 		marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idPenultimoUltimoRegistro+"\"]/div[2]/label/span"));
 		System.out.println("Id Penultimo registro: " + idPenultimoUltimoRegistro); // Penultimo registro que es el que se crea con la automatizacion
-		
-		sleep(2000);
 		marcarCheckbox.click();
 		sleep(2000);
 		
@@ -309,7 +306,8 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		waitExpectElement(btnUltimaPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -323,7 +321,7 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBaseFernando{
 		String idUltimoRegistroDespuesDeEliminar = "0";
 		
 		if(rows > 0) {
-			idUltimoRegistroDespuesDeEliminar = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			idUltimoRegistroDespuesDeEliminar = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]")).getAttribute("data-id");
 		}
 		
 		int id1 = convertToInt(idUltimoRegistroDespuesDeEliminar);
@@ -340,6 +338,26 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBaseFernando{
 			sucesso= true;
 		}
 		System.out.println(sucesso);
+		
+		
+		
+		int rows2 = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]")).size();
+		int f = 1;
+		for (int i = 0; i < rows2; i++) {
+			
+			String idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]["+f+"]/div[1]/div")).getText();
+			
+			
+			
+			f++;
+			i++;
+			
+		}	
+		
+		
 		return sucesso;
+		
+		
+		
 	}
 }

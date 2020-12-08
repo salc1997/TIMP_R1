@@ -1,4 +1,4 @@
-package com.timp.test.MDR.RegistroDeExportaçao;
+package com.timp.test.MDR.Centralizacao.FatorCreditamento;
 
 import static org.testng.Assert.assertTrue;
 
@@ -6,24 +6,24 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.*;
+import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluirPO;
 
-public class RegistroDeExportaçaoExcluir extends TestBaseSteven {
-
+public class FatorCreditamentoExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	RegistroDeExportaçaoExcluirPO registroDeExportaçaoExcluirPO;
+    FatorCreditamentoExcluirPO fatorCreditamentoExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		registroDeExportaçaoExcluirPO = new RegistroDeExportaçaoExcluirPO();
+		fatorCreditamentoExcluirPO = new FatorCreditamentoExcluirPO();
 	}
 
 	@AfterClass
@@ -34,16 +34,21 @@ public class RegistroDeExportaçaoExcluir extends TestBaseSteven {
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
+
 	}
 
 	@Test(priority = 1)
 	public void acessarMDR() {
+
 		acessarMDRPO.acessarMDR();
+
 	}
 
 	@Test(priority = 2)
-	public void Excluir() {
-		boolean sucesso = registroDeExportaçaoExcluirPO.excluir();
+	public void excluir() {
+
+		boolean sucesso = fatorCreditamentoExcluirPO.excluir();
+
 		assertTrue(sucesso, Eliminado);
 	}
 }

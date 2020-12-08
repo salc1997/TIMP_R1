@@ -1,29 +1,32 @@
-package com.timp.test.MDR.RegistroDeExportaçao;
+package com.timp.test.MDR.Centralizacao.FatorCreditamento;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.*;
+import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoDetalhesPO;
 
-public class RegistroDeExportaçaoExcluir extends TestBaseSteven {
-
+public class FatorCreditamentoDetalhes extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	RegistroDeExportaçaoExcluirPO registroDeExportaçaoExcluirPO;
+	FatorCreditamentoDetalhesPO fatorCreditamentoDetalhesPO;
 
 	@BeforeClass
 	public void beforeClass() {
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		registroDeExportaçaoExcluirPO = new RegistroDeExportaçaoExcluirPO();
+		fatorCreditamentoDetalhesPO = new FatorCreditamentoDetalhesPO();
 	}
 
 	@AfterClass
@@ -34,16 +37,23 @@ public class RegistroDeExportaçaoExcluir extends TestBaseSteven {
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
+
 	}
 
 	@Test(priority = 1)
 	public void acessarMDR() {
+
 		acessarMDRPO.acessarMDR();
+
 	}
 
 	@Test(priority = 2)
-	public void Excluir() {
-		boolean sucesso = registroDeExportaçaoExcluirPO.excluir();
-		assertTrue(sucesso, Eliminado);
+	public void detalhes() {
+
+		ArrayList<Boolean> sucesso = fatorCreditamentoDetalhesPO.detalhes();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 	}
 }

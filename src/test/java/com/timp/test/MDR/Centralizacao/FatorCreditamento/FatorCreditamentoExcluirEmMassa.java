@@ -8,6 +8,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriarPO;
+import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluirEmMassaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,21 +16,22 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class FatorCreditamentoCriar extends TestBaseSteven {
+public class FatorCreditamentoExcluirEmMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	FatorCreditamentoCriarPO fatorCreditamentoCriarPO;
+	FatorCreditamentoExcluirEmMassaPO fatorCreditamentoExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		fatorCreditamentoCriarPO = new FatorCreditamentoCriarPO();
+		fatorCreditamentoExcluirEmMassaPO = new FatorCreditamentoExcluirEmMassaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -44,7 +46,12 @@ public class FatorCreditamentoCriar extends TestBaseSteven {
 
 	@Test(priority = 2)
 	public void criar() {
-		boolean sucesso = fatorCreditamentoCriarPO.fatorCreditamentoCriar();
+		boolean sucesso = fatorCreditamentoExcluirEmMassaPO.fatorCreditamentoCriar();
 		assertTrue(sucesso, Criar);
+		
+		boolean sucesso2 = fatorCreditamentoExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+		
+		
 	}
 }

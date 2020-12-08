@@ -6,11 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 
-public class AcessarBRE extends TestBaseSteven {
+public class AcessarBRE extends TestBaseMassiel {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
@@ -22,7 +23,7 @@ public class AcessarBRE extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 	}

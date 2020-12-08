@@ -1,59 +1,49 @@
-package com.sap.timp.pageObjectModel.BRE;
+package com.sap.timp.pageObjectModel.TFP;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.base.TestBaseMassiel;
 
-public class AcessarBREPO extends TestBaseMassiel {
-	
-
-	@FindBy(xpath = "//div[text()=\"BRE\"]")
-	public WebElement bre;
+public class AcessarTFPPO extends TestBaseMassiel{
+	@FindBy(xpath = "//div[text()=\"TFP\"]")
+	public WebElement tFP;
 	
 	@FindBy(xpath = "//div[@class=\"dragger-pagination-right\"]")
-	public WebElement ar;
+	public WebElement flecha;
 
-	
 	@FindBy(xpath = "//*[@id=\"acc-reports\"]/ul/li[3]/div/span[2]")
 	public WebElement cadastro;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-root\"]")
+	@FindBy(xpath = "//span[text()=\"Períodos\"]")
 	public WebElement mostrar;
 	
-
-	public AcessarBREPO() {
-
+	public AcessarTFPPO() {
 		PageFactory.initElements(driver, this);
 	}
-
 	
-	public boolean acessarBRE() {
+	public boolean acessarTFP() {
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(1000);
-
-		while (!bre.isDisplayed()) {
-			ar.click();
+		
+		while (!tFP.isDisplayed()) {
+			flecha.click();
 		}
 		sleep(1000);
-
-		bre.click();
-	
+		
+		tFP.click();
+		
 		waitExpectElement(mostrar);
-	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();
-		waitExpectElement(mostrar);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
-		
+		sleep(3000);
+		System.out.println(sucesso);
 		return sucesso;
 		
-		
 	}
-
 }

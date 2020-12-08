@@ -48,7 +48,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	public ArrayList<Boolean> crescente() {
 
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");

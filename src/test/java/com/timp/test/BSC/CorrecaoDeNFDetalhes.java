@@ -6,8 +6,7 @@ import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BSC.AcessarBSCPO;
-import com.sap.timp.pageObjectModel.BSC.CorrecaoDeNFAprovarEmMassaCJOBPO;
-
+import com.sap.timp.pageObjectModel.BSC.CorrecaoDeNFDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,27 +16,27 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CorrecaoDeNFAprovarEmMassaCJOB extends TestBaseMassiel{
+public class CorrecaoDeNFDetalhes extends TestBaseMassiel{
+	
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
+	CorrecaoDeNFDetalhesPO correcaoDeNFDetalhesPO;
 	AcessarBrbPO acessarBrbPO;
-	CorrecaoDeNFAprovarEmMassaCJOBPO  correcaoDeNFAprovarEmMassaCJOBPO;
-	
-	
+
   @BeforeClass
   public void beforeClass() {
+	  
 	  driver = initializationM();
 	  loginTC = new LoginTC();
 	  acessarBrbPO = new AcessarBrbPO();
-	  correcaoDeNFAprovarEmMassaCJOBPO = new  CorrecaoDeNFAprovarEmMassaCJOBPO();
-	  acessarBSC = new  AcessarBSCPO();
+	  correcaoDeNFDetalhesPO = new CorrecaoDeNFDetalhesPO();
   }
 
   @AfterClass
   public void afterClass() {
   }
   
-	@Test(priority = 0)
+  @Test(priority = 0)
 	public void login() {
 
 		loginTC.login();
@@ -52,12 +51,13 @@ public class CorrecaoDeNFAprovarEmMassaCJOB extends TestBaseMassiel{
 	
 	@Test(priority = 2)
 	public void  Aprovar() {
-		
+	
 	   
-	   ArrayList<Boolean> viEdi =  correcaoDeNFAprovarEmMassaCJOBPO .enviar();
+	   ArrayList<Boolean> viEdi =   correcaoDeNFDetalhesPO.Detalhes();
 		for (int i = 0; i < viEdi.size(); i++) {
 		assertTrue(viEdi.get(i), Filtros);
 		}
 
 	}
+
 }

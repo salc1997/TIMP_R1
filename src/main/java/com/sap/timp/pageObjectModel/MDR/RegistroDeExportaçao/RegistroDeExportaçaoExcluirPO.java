@@ -47,12 +47,12 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 	public boolean excluir() {
 		sleep(2000);
 		registroexportacao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -75,10 +75,11 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 		sleep(2000);
 		driver.navigate().refresh();
 		waitExpectElement(siguiente);
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		siguiente.click();
 		sleep(2000);
+		siguiente.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -94,17 +95,6 @@ public class RegistroDeExportaçaoExcluirPO extends TestBaseEliel {
 		}
 		System.out.println(sucesso);
 		
-		/*
-		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		
-		boolean sucesso = nenhumResult.isDisplayed();
-		*/
 		return sucesso;
 	}
 

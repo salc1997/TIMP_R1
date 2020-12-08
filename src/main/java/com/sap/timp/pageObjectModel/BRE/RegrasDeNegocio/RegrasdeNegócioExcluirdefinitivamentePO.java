@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE;
+package com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

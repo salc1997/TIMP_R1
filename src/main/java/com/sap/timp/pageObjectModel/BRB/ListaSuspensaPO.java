@@ -99,7 +99,8 @@ public class ListaSuspensaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@data-column,\"n\") and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div[2]")
 	public WebElement menuListaTc2;
 	
-
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	
 	
@@ -164,11 +165,14 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		
 		
 		gravar.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(5000);
-		
-		waitExpectElement(execucao);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		
 		execucao.click();
 		
@@ -181,12 +185,8 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		executar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
 		sleep(2000);
-		
-		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-		
-		//actionsMoveToElementXpath("//div[contains(@aria-label,\"ListaSuspensa\")]");
+
 
 		
 		actionsMoveToElementXpath("//*[@data-column=\"126\"]");

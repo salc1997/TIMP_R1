@@ -116,8 +116,6 @@ public class S1210PagamentosDeRendimientosDoTrabalhoDetalhePO extends TestBaseFe
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		waitExpectElement(menuEventosEsocial);
 		menuEventosEsocial.click();
 		sleep(1000);
 		

@@ -111,6 +111,7 @@ import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfratacaoCriar;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoDetalhes;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoEditar;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoExcluir;
+import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
 
 public class AutomacoesMDR6 extends TestBaseSteven{
@@ -180,6 +181,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			ConfrontacaoDetalhes confrontacaoDetalhes;
 			ConfrontacaoEditar confrontacaoEditar;
 			ConfrontacaoExcluir confrontacaoExcluir;
+			ConfrontacaoVisualizar confrontacaoVisualizar;
 			
 		//Taxas De Conversao
 			TaxasDeConversaoCriar taxasDeConversaoCriar;
@@ -814,12 +816,21 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				confrontacaoEditar.acessarMDR();
 				confrontacaoEditar.editar();
 				confrontacaoEditar.afterClass();
-				System.out.println("-------------------Valor Adicionado > Confrontacao fim-------------------------");
 				
 			}
 		
 			
-			@Test(priority = 46)
+			@Test(priority = 47)
+			public void confrontacaoVisualizar() {
+				confrontacaoVisualizar = new ConfrontacaoVisualizar();
+				confrontacaoVisualizar.beforeClass();
+				confrontacaoVisualizar.ingresar();
+				confrontacaoVisualizar.ingresarMDR();
+				confrontacaoVisualizar.visualizar();
+				confrontacaoVisualizar.afterClass();
+				
+			}
+			@Test(priority = 48)
 			public void confrontacaoExcluir() {
 				confrontacaoExcluir = new ConfrontacaoExcluir();
 				confrontacaoExcluir.beforeClass();

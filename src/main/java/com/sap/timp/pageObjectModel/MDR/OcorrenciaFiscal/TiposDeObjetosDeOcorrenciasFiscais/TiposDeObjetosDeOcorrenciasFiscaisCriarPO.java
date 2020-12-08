@@ -146,7 +146,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseEliel{
 		
 		opcao1.click();
 		
-		sleep(2000);
+		sleep(27000);
 		
 		codigocredito.click();
 		

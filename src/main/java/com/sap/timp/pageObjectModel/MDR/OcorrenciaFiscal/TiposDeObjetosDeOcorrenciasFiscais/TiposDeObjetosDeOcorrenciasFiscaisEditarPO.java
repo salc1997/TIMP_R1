@@ -113,7 +113,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 		String valor = datainicio.getAttribute("value");
 
 		String enviar = dataanterior();
-
+		sleep(40000);
 		datainicio.clear();
 		sleep(2000);
 		datainicio.sendKeys(enviar);
@@ -145,7 +145,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 		System.out.println(sucesso);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(40000);
 		datainicio.clear();
 
 		sleep(2000);

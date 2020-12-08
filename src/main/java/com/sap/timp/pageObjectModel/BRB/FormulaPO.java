@@ -19,6 +19,9 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class FormulaPO extends TestBaseSteven{
 
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	@FindBy(xpath = "//li[contains(@class,\"add-column\")]/div/div/div")
 	public WebElement agregar;
 	
@@ -234,10 +237,13 @@ public class FormulaPO extends TestBaseSteven{
 
 		sleep(1000);
 		gravar.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(5000);
-		waitExpectElement(execucao);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		execucao.click();
 		sleep(5000);

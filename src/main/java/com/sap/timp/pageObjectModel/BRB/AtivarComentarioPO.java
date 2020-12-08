@@ -16,8 +16,10 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class AtivarComentarioPO extends TestBaseSteven{
 
-	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/ul/li[4]/button")
+	@FindBy(xpath = "//li[contains(@class,\"comments-btn\")]")
 	public WebElement comentario;
+	
+	
 	
 	@FindBy(xpath = "//*[@id=\"toast-wrapper\"]/ul/li")
 	public WebElement mostrado;
@@ -39,10 +41,11 @@ public class AtivarComentarioPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/ul/li[5]/button/span[1]")				
+	@FindBy(xpath = "//li[contains(@class,\"comments-done-btn\")]")				
 	public WebElement check;
 	
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	
 	
@@ -67,7 +70,7 @@ public class AtivarComentarioPO extends TestBaseSteven{
 		//sleep(menuT);
 
 		menu.click();
-
+		sleep(1000);
 		opcao.click();
 
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
@@ -91,12 +94,17 @@ public class AtivarComentarioPO extends TestBaseSteven{
 			}
 			
 			gravar.click();
-			sleep(5000);
+			sleep(2000);
+			waitExpectElement(nao);
+			sleep(1000);
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			
 			driver.navigate().refresh();
 			
 			waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
-			
 			
 			if (check.isDisplayed() == true) {
 				sucesso.add(true);
@@ -124,12 +132,18 @@ public class AtivarComentarioPO extends TestBaseSteven{
 			}
 
 			gravar.click();
-			sleep(5000);
+			sleep(2000);
+			waitExpectElement(nao);
+			sleep(1000);
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 
 			driver.navigate().refresh();
 
 			waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
-
+			
 			if (check.isDisplayed() == true) {
 				sucesso.add(true);
 				

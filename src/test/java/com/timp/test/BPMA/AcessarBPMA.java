@@ -37,7 +37,7 @@ public class AcessarBPMA extends TestBaseMassiel{
  	public void BPMAEntrar() {
 
  		
- 		boolean sucesso =  acessarBPMA.acessarDFG();
+ 		boolean sucesso =  acessarBPMA.acessarBPMA();
  		assertTrue(sucesso, "The element is not present");
 
  	}

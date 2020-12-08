@@ -66,7 +66,8 @@ public class ComentarioLibrePO extends TestBaseSteven{
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[2]")
 	public WebElement data1;
 	
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	
 	public ComentarioLibrePO() {
@@ -114,11 +115,14 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		actions.dragAndDrop(driver.findElement(By.xpath("//li[@column-name=\"ComentarioLibre\"]")), driver.findElement(By.xpath("//*[@id=\"draggable-126\"]"))).perform();
 		sleep(2000);
 		gravar.click();
-		sleep(5000);
-		
-		
-		waitExpectElement(execucao);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
 		
 		execucao.click();
 		sleep(5000);

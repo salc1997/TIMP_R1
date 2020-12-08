@@ -233,6 +233,8 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseMassiel{
 		}
 
 		sleep(2000);
+		attributeToBeXpath("//div[@class=\"field-element stateId_0_1\"]/div", "class", "input-element-wrapper");
+		sleep(1000);
 		
 		ufdafilial.click();
 		
@@ -247,6 +249,8 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseMassiel{
 		}
 		
 		sleep(2000);
+		attributeToBeXpath("//div[@class=\"field-element branchId_0_1\"]/div", "class", "input-element-wrapper");
+		sleep(1000);
 
 		
 		filial.click();
@@ -264,7 +268,6 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseMassiel{
 			sleep(1000);
 		}
 		body.click();
-		sleep(2000);
 		
 		tributo.click();
 		
@@ -322,6 +325,8 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseMassiel{
 		opcaoinformacaomdrinscricao.click();
 		
 		sleep(2000);
+		actionsMoveToElementElement(dataincial);
+		sleep(1000);
 		attributeToBeXpath("//div[@class=\"field-element stRegistrationFields_0_5\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 		camposinformacaomdrinscricao.click();
@@ -384,7 +389,7 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseMassiel{
 		
 		opcaocamposinformacaodeajustes.click();
 		opcaocamposinformacaodeajustes.sendKeys(Keys.ESCAPE);
-		
+		body.click();
 		sleep(2000);
 		
 		String data="01/01/2013";

@@ -9,6 +9,7 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar">
 =======
 <<<<<<< HEAD
@@ -23,6 +24,9 @@
       <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/remotes/origin/master
+=======
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar">
+>>>>>>> refs/remotes/origin/Eliel
         <methods>
 <<<<<<< HEAD
 =======
@@ -48,9 +52,14 @@
           <include name="criar"/>
 >>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
-          <include name="beforeClass"/>
           <include name="criar"/>
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="criar"/>
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar -->
@@ -99,6 +108,9 @@
         </methods>
       </class> <!-- com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

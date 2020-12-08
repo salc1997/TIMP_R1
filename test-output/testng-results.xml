@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="77879" started-at="2020-12-07T22:47:20Z" finished-at="2020-12-07T22:48:38Z">
 =======
 <<<<<<< HEAD
@@ -51,8 +52,12 @@
 =======
   <suite started-at="2020-12-08T17:27:15Z" name="Default suite" finished-at="2020-12-08T17:29:46Z" duration-ms="151466">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2020-12-08T20:38:12Z" name="Default suite" finished-at="2020-12-08T20:39:59Z" duration-ms="107601">
+>>>>>>> refs/remotes/origin/Eliel
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,9 +89,15 @@
       <class name="com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@6ee4d9ab]" started-at="2020-12-08T11:27:15Z" name="beforeClass" finished-at="2020-12-08T11:27:31Z" duration-ms="16400" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2020-12-08T20:38:12Z" name="Default test" finished-at="2020-12-08T20:39:59Z" duration-ms="107601">
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:12Z" name="beforeClass" finished-at="2020-12-08T17:38:27Z" duration-ms="15430" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -389,16 +400,24 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:04Z" name="login" finished-at="2020-12-08T02:02:11Z" duration-ms="6610" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:27Z" name="login" finished-at="2020-12-08T17:38:37Z" duration-ms="9906" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="acessarMDR" duration-ms="14796" started-at="2020-12-07T16:47:45Z" finished-at="2020-12-07T16:48:00Z">
 =======
         <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:11Z" name="TFPEntrar" finished-at="2020-12-08T02:02:30Z" duration-ms="19779" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:37Z" name="acessarMDR" finished-at="2020-12-08T17:38:49Z" duration-ms="12226" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="criar" duration-ms="37662" started-at="2020-12-07T16:48:00Z" finished-at="2020-12-07T16:48:38Z">
@@ -467,13 +486,23 @@ Session ID: 72e2751c61c4e90a379d05dbabab0e75
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+=======
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="Visualizar()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:49Z" name="Visualizar" finished-at="2020-12-08T17:39:59Z" duration-ms="69977" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-12-07T16:48:38Z" finished-at="2020-12-07T16:48:38Z">
+=======
+        </test-method> <!-- Visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:39:59Z" name="afterClass" finished-at="2020-12-08T17:39:59Z" duration-ms="49" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar -->
 =======
@@ -581,6 +610,9 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
 =======
       </class> <!-- com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
+>>>>>>> refs/remotes/origin/Eliel
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais;
+package com.timp.test.BRE;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,20 +11,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN1CriarPO;
 
-public class RegrasDeNegocioEditar extends TestBaseEliel {
+public class RegrasDeAuditoriaN1Criar extends TestBaseEliel {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeNegocioEditarPO regrasDeNegocioEditarPO;
+	RegrasDeAuditoriaN1CriarPO regrasDeAuditoriaN1CriarPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeNegocioEditarPO = new RegrasDeNegocioEditarPO();
+		regrasDeAuditoriaN1CriarPO = new RegrasDeAuditoriaN1CriarPO();
 	}
 
 	@AfterClass
@@ -44,12 +44,11 @@ public class RegrasDeNegocioEditar extends TestBaseEliel {
 	
 	@Test(priority = 2)
 	public void criar() {
-		ArrayList<Boolean> sucesso = regrasDeNegocioEditarPO.editar();
+		ArrayList<Boolean> sucesso = regrasDeAuditoriaN1CriarPO.criar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Editar);
+			assertTrue(sucesso.get(i), Criar);
 		}
 		
 	}
  
-
 }

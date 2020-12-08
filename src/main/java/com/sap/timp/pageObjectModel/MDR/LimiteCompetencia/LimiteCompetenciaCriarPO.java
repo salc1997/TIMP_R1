@@ -210,8 +210,8 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 		opcao2.click();
 		sleep(3000);
 		
-		valorDe.sendKeys("1000");
-		valorAte.sendKeys("5000");
+		valorDe.sendKeys("4000");
+		valorAte.sendKeys("7000");
 		
 		validadeDe.sendKeys(fechaActual());
 		

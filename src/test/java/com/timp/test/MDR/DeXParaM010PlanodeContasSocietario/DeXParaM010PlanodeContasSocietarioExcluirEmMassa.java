@@ -28,7 +28,7 @@ public class DeXParaM010PlanodeContasSocietarioExcluirEmMassa extends TestBaseKe
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	  //driver.close();
   }
   
   @Test(priority = 0)

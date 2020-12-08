@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,29 +39,156 @@ public class EstornoCreditoVisualizarPO extends TestBaseEliel{
 	public WebElement engrenagem;
 
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]")
-	public WebElement visualizar;
+	@FindBy(xpath = "//span[@id=\"company\"]")
+	public WebElement empresavi;
+	
+	@FindBy(xpath = "//span[@id=\"ufBranch\"]")
+	public WebElement uffilialvi;
+	
+	@FindBy(xpath = "//span[@id=\"branches\"]")
+	public WebElement filiaisvi;
+	
+	@FindBy(xpath = "//span[@id=\"centralizeBranch\"]")
+	public WebElement filialcentralizadoravi;
+	
+	@FindBy(xpath ="//span[@id=\"initDate\"]")
+	public WebElement datavi;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione uma empresa\"]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar UF Filial\"]")
+	public WebElement uffilial;
+	
+	@FindBy(xpath = "//div[@id=\"multipleControlerId-0001\"]")
+	public WebElement filiais1;
+	
+	@FindBy(xpath = "//div[@id=\"multipleControlerId-0002\"]")
+	public WebElement filiais2;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filial Centralizadora\"]")
+	public WebElement filialcentralizadora;
+	
+	@FindBy(xpath ="//div[@id=\"validity\"]/div/div/input")
+	public WebElement data;
+	
+	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
 	
 	public EstornoCreditoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-public String visualizar() {
+public ArrayList<Boolean> visualizar() {
 		
 		
 		//Actions action = new Actions(driver);
 
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		centralizacao.click();
 		sleep(2000);
 		estornocredito.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		//Pega o ultimo id
 		setafinal.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		idC.click();
+		sleep(2000);
+		//pega o ultimo id que foi gerado no criar
+		String idRegistro = idObter1();
+				
+				WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+				WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+				
+				actionsMoveToElementElement(menu);
+				sleep(2000);
+				menu.click();
+				sleep(1000);
+				
+				visualizar.click();
+				sleep(2000);
+				//visualizar
+				waitExpectElement(empresavi);
+				sleep(2000);
+			
+				
+				String empresavisualuzar = empresavi.getText();
+				String uffilialvisualizar = uffilialvi.getText();
+				String filiaisvisualizar = filiaisvi.getText();
+				String filialcentralizadoravisualizar = filialcentralizadoravi.getText();
+				String datavisualizar = datavi.getText();
+
+				
+				
+				
+				System.out.println(empresavisualuzar);
+				System.out.println(uffilialvisualizar);
+				System.out.println(filiaisvisualizar);
+				System.out.println(filialcentralizadoravisualizar);
+				System.out.println(datavisualizar);
+				
+				
+			
+				biblioteca.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				waitExpectElement(setafinal);
+				sleep(2000);
+				setafinal.click();
+				
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				
+				//pega o ultimo id que foi gerado no criar
+				String idRegistro1 = idObter1();
+				
+				WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+				WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+				actionsMoveToElementElement(menu1);
+				sleep(2000);
+				menu1.click();
+				sleep(1000);
+				
+				editar.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+				
+				
+				//editar
+				
+				
+				String empresaeditar=empresa.getAttribute("value");
+				String uffilialeditar=uffilial.getAttribute("value");
+				String filial1editar = filiais1.getText();
+				String filia2editar = filiais2.getText();
+				String filialcentralizadoraeditar = filialcentralizadora.getAttribute("value");
+				String dataeditar = data.getAttribute("value");
+				
+				
+				System.out.println( empresaeditar);
+				System.out.println( uffilialeditar);
+				System.out.println(filial1editar);
+				System.out.println(filia2editar);
+				System.out.println(filialcentralizadoraeditar);
+				System.out.println(dataeditar);
+				
+			
+				
+				ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+				sucesso.add(empresaeditar.equals(empresavisualuzar));
+				sucesso.add(uffilialvisualizar.equals(uffilialeditar));
+				sucesso.add(filiaisvisualizar.contains(filial1editar));
+				sucesso.add(filiaisvisualizar.contains(filia2editar));
+				sucesso.add(filialcentralizadoravisualizar.equals(filialcentralizadoraeditar));
+				sucesso.add(datavisualizar.equals(dataeditar));
+				System.out.println(sucesso);
+				return sucesso;
+		/*idC.click();
 		dobleClickElement(idC);
 		sleep(2000);
 		
@@ -76,6 +205,7 @@ public String visualizar() {
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		//System.out.println(sucesso);	
 		return sucesso;
+		*/
 	}
 
 }

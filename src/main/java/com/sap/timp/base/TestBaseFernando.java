@@ -27,6 +27,9 @@ public class TestBaseFernando extends TestBaseSteven {
 
 		driver.get(tq1);
 
+		driver.get(tp1);
+
+
 		return driver;
 	}
 

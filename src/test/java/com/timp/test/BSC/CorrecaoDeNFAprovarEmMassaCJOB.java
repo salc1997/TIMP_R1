@@ -52,11 +52,12 @@ public class CorrecaoDeNFAprovarEmMassaCJOB extends TestBaseMassiel{
 	
 	@Test(priority = 2)
 	public void  Aprovar() {
-		correcaoDeNFAprovarEmMassaCJOBPO .enviar();
+		
 	   
-	  // ArrayList<Boolean> viEdi =   correcaoDeNFAprovarEmMassaCJOBPO.enviar();
-	//	for (int i = 0; i < viEdi.size(); i++) {
-	//	assertTrue(viEdi.get(i), Filtros);
+	   ArrayList<Boolean> viEdi =  correcaoDeNFAprovarEmMassaCJOBPO .enviar();
+		for (int i = 0; i < viEdi.size(); i++) {
+		assertTrue(viEdi.get(i), Filtros);
 		}
 
+	}
 }

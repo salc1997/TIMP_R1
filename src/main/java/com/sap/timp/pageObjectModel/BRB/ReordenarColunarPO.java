@@ -34,6 +34,8 @@ public class ReordenarColunarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	
 	public ReordenarColunarPO() {
@@ -57,12 +59,12 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		//sleep(menuT);
 
 		menu.click();
-
+		sleep(1000);
 		opcao.click();
 
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
-
+		sleep(1000);
 		
 		Actions actions = new Actions(driver);
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
@@ -80,7 +82,14 @@ public class ReordenarColunarPO extends TestBaseSteven{
 
 		
 		gravar.click();
-		sleep(4000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		driver.navigate().refresh();
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
@@ -99,9 +108,14 @@ public class ReordenarColunarPO extends TestBaseSteven{
 		actions.dragAndDropBy(mover, -y, 0).perform();
 
 		gravar.click();
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
 		
 		return movido;

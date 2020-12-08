@@ -34,7 +34,7 @@ public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		
 	}
 
 	@Test(priority = 0)

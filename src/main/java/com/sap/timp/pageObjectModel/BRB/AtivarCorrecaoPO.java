@@ -13,7 +13,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class AtivarCorrecaoPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//li[contains(@class,\"correction\")]")
+	@FindBy(xpath = "//li[contains(@class,\"nf-correction-btn\")]")
 	public WebElement correcao;
 	
 	@FindBy(xpath = "//*[@id=\"draggable-126\"]")
@@ -36,9 +36,11 @@ public class AtivarCorrecaoPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//li[contains(@class,\"correction-done\")]")				
+	@FindBy(xpath = "//li[contains(@class,\"nf-correction-done-btn\")]")				
 	public WebElement check;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	
 	
@@ -89,7 +91,13 @@ public class AtivarCorrecaoPO extends TestBaseSteven{
 			}
 			
 			gravar.click();
-			sleep(5000);
+			sleep(2000);
+			waitExpectElement(nao);
+			sleep(1000);
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			
 			driver.navigate().refresh();
 			
@@ -124,7 +132,13 @@ public class AtivarCorrecaoPO extends TestBaseSteven{
 			}
 
 			gravar.click();
-			sleep(5000);
+			sleep(2000);
+			waitExpectElement(nao);
+			sleep(1000);
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 
 			driver.navigate().refresh();
 

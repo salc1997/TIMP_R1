@@ -143,7 +143,7 @@ public class RepresentantesLegaisCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nome.sendKeys("Teste Automatizado");
+		nome.sendKeys("Teste Automatizado qa");
 		
 		sleep(2000);
 	

@@ -139,7 +139,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	
 		sleep(6000);
 		
-		nome.sendKeys("PRUEBA QA 001");
+		nome.sendKeys("PRUEBA QA 002");
 		sleep(2000);
 		
 		

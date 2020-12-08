@@ -101,7 +101,9 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		
 		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		colunaOpcao.click();
-		sleep(5000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		String cfopV = (cfop.getAttribute("value"));
 		System.out.println(cfopV + " Valor Obtenido");
 		desmarcar.click();
@@ -159,7 +161,9 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		
 		colunaOpcao.click();
-		sleep(5000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		selecionar.click();
 		String cfopV = (cfop2.getAttribute("value"));
 		System.out.println(cfopV + " Valor Obtenido");

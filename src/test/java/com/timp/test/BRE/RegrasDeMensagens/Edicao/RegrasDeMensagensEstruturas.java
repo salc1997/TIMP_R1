@@ -33,7 +33,7 @@ public class RegrasDeMensagensEstruturas extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -48,8 +48,11 @@ public class RegrasDeMensagensEstruturas extends TestBaseSteven {
 	
 	@Test(priority = 2)
 	public void editar() {
-		regrasDeMensagensEstruturasPO.estrutura();
-
+		ArrayList<Boolean> sucesso = regrasDeMensagensEstruturasPO.estrutura();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Editar);
+		}
 		
 	}
  

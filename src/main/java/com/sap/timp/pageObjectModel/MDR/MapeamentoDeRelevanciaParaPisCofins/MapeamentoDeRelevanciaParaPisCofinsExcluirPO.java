@@ -93,15 +93,17 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		
+		waitExpectElement(aceitar);
+		sleep(2000);
 		aceitar.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

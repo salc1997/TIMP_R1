@@ -100,14 +100,13 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		actionsMoveToElementElement(menu);
-
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		sleep(200);
 
 		menu.click();
 		sleep(1000);
 		excluir.click();
 		sleep(3000);
-		sleep(1000);
 		waitExpectElement(butaosim);
 		sleep(2000);
 		butaosim.click();
@@ -119,6 +118,7 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

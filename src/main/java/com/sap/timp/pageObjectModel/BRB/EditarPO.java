@@ -32,6 +32,8 @@ public class EditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public EditarPO() {
 
@@ -74,11 +76,17 @@ public class EditarPO extends TestBaseSteven{
 		actions.dragAndDropBy(mover,hacia.x, 0).perform();
 		
 		gravar.click();
-		sleep(4000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		driver.navigate().refresh();
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
-
+		sleep(2000);
 		
 		boolean movido = false;
 		
@@ -92,7 +100,13 @@ public class EditarPO extends TestBaseSteven{
 		sleep(2000);
 		actions.dragAndDropBy(mover, -y, 0).perform();
 		gravar.click();
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		return movido;

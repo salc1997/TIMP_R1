@@ -24,7 +24,7 @@ public class AcessarBPMAPO extends TestBaseMassiel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean acessarDFG() {
+	public boolean acessarBPMA() {
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(1000);

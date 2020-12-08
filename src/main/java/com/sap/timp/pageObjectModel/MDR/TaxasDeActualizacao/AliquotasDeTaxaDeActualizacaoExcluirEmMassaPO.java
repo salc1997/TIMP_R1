@@ -163,6 +163,9 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 			
 			if (url.contains("tc2")) {
 				tc2 = true;
+				codigoIndice.click();
+				sleep(2000);
+				opcCodigoIndice.click();
 			}else if (url.contains("tp1")) {
 				tp1 = true;
 			}else if (url.contains("tq1")) {

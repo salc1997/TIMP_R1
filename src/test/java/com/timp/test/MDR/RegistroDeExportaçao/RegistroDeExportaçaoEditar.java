@@ -3,6 +3,7 @@ package com.timp.test.MDR.RegistroDeExportaçao;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoEditarPO;
@@ -10,10 +11,13 @@ import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaça
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroDeExportaçaoEditar extends TestBaseEliel {
+public class RegistroDeExportaçaoEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -22,7 +26,7 @@ public class RegistroDeExportaçaoEditar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		registroDeExportaçaoEditarPO = new RegistroDeExportaçaoEditarPO();
@@ -49,11 +53,9 @@ public class RegistroDeExportaçaoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		// registroDeExportaçaoEditarPO.editar();
+		boolean sucesso = registroDeExportaçaoEditarPO.editar();
 
-		String sucesso = registroDeExportaçaoEditarPO.editar();
-
-		assertEquals(sucesso, "edit", visualizaçar);
+		assertTrue(sucesso, editado);
 
 	}
 

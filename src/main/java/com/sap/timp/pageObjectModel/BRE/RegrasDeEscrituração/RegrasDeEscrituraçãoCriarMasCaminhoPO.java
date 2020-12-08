@@ -41,7 +41,8 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 	public WebElement opcionGrupoDeEstrutura;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Ajustes\"][1]")
-	public WebElement opcionGrupoDeEstruturaTP1;
+	public WebElement opcionGrupoDeEstruturatp1;
+
 	
 	@FindBy(xpath = "//td[contains(@class, \"datastructure-field\")]/div/div/div[2]")
 	public WebElement estruturaDeDatos;
@@ -110,14 +111,26 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 	
 	public boolean criar() {
 		
-		String url = driver.getCurrentUrl();
 
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		boolean td1 = false;
 		boolean tp1 = false;
+		boolean tq1 = false;
 		
-		if (url.contains("tp1")) {
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
 			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
 		}
+
 		
+
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -168,14 +181,20 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		
 		grupoDeEstrutura.click();
 		sleep(1000);
-		if (tp1 == true) {
-			opcionGrupoDeEstruturaTP1.click();
+
+		if(tp1 == true) {
+			opcionGrupoDeEstruturatp1.click();
+			sleep(1000);
 		}else {
 			opcionGrupoDeEstrutura.click();
+			sleep(1000);
 		}
+
+	
 		
 		sleep(1000);
 		
+
 		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturaDeDatos.click();
 		sleep(1000);

@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
-        <methods>
-          <include name="formatacaoEVariante"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="rejeitar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
->>>>>>> refs/remotes/origin/Yessy
-=======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa">
         <methods>
-          <include name="acessarBRE"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="criar"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
->>>>>>> refs/heads/Cristhian
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -48,17 +49,22 @@
       </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
 >>>>>>> refs/remotes/origin/Yessy
 =======
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa">
         <methods>
-          <include name="acessarBRE"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="criar"/>
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Cristhian
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
 =======
@@ -66,6 +72,9 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

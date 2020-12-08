@@ -187,11 +187,13 @@ public class RegraDeNegocioCriaComCopiaPO extends TestBaseEliel {
 		
 		if(idUltimoRegistro.equals(idRegistro)) {
 			System.out.println("Es el mismo registro del cual se hizo copia...");			
-			return sucesso = true;			
+			boolean sucesso3 = true;
+			sucesso.add(sucesso3);
 		}else {
 			System.out.println("No fue eliminado la copia...");
 			System.out.println("ID ultimo registro despues de lixeira: " + idUltimoRegistro);
-			sucesso = false;
+			boolean sucesso3 = false;
+			sucesso.add(sucesso3);
 		}
 		System.out.println(sucesso);
 		return sucesso;

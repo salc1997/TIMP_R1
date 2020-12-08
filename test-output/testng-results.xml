@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="3" failed="0" total="3" passed="0">
 =======
 <<<<<<< HEAD
@@ -420,27 +421,20 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 =======
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-08T08:01:47Z" name="Default suite" finished-at="2020-12-08T08:03:58Z" duration-ms="130671">
+  <suite started-at="2020-12-08T23:03:39Z" name="Default suite" finished-at="2020-12-08T23:06:37Z" duration-ms="177904">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-12-03T04:49:26Z" name="Default test" finished-at="2020-12-03T04:54:14Z" duration-ms="288186">
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa@7526515b]" started-at="2020-12-02T22:49:26Z" name="beforeClass" finished-at="2020-12-02T22:49:47Z" duration-ms="21026" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method status="PASS" signature="excluirColuna()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="excluirColuna" duration-ms="179358" started-at="2020-12-04T18:39:31Z" finished-at="2020-12-04T18:42:30Z">
->>>>>>> refs/remotes/origin/Steven
-=======
-    <test started-at="2020-12-08T08:01:47Z" name="Default test" finished-at="2020-12-08T08:03:58Z" duration-ms="130671">
-      <class name="com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:01:47Z" name="beforeClass" finished-at="2020-12-08T02:02:04Z" duration-ms="16726" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+    <test started-at="2020-12-08T23:03:39Z" name="Default test" finished-at="2020-12-08T23:06:37Z" duration-ms="177904">
+      <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:03:39Z" name="beforeClass" finished-at="2020-12-08T17:04:10Z" duration-ms="31237" status="PASS">
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- excluirColuna -->
@@ -451,7 +445,10 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 =======
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="SKIP" signature="ingresar()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="ingresar" duration-ms="1" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
 =======
@@ -464,6 +461,9 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:27Z" name="login" finished-at="2020-12-08T17:38:37Z" duration-ms="9906" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:10Z" name="login" finished-at="2020-12-08T17:04:18Z" duration-ms="8160" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -471,6 +471,7 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         <test-method status="SKIP" signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="ingresarMDR" duration-ms="4" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
 =======
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="acessarMDR" duration-ms="14796" started-at="2020-12-07T16:47:45Z" finished-at="2020-12-07T16:48:00Z">
@@ -481,8 +482,12 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:37Z" name="acessarMDR" finished-at="2020-12-08T17:38:49Z" duration-ms="12226" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:18Z" name="TFPEntrar" finished-at="2020-12-08T17:04:43Z" duration-ms="24526" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- ingresarMDR -->
         <test-method status="SKIP" signature="criarAssociaçãoCodigoAjuste()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="criarAssociaçãoCodigoAjuste" duration-ms="1" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
@@ -664,16 +669,18 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:18:18Z" name="afterClass" finished-at="2020-12-08T07:18:18Z" duration-ms="0" status="PASS">
 =======
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- TFPEntrar -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:30Z" name="criar" finished-at="2020-12-08T02:03:58Z" duration-ms="87539" status="PASS">
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:43Z" name="criar" finished-at="2020-12-08T17:06:37Z" duration-ms="113960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:03:58Z" name="afterClass" finished-at="2020-12-08T02:03:58Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:06:37Z" name="afterClass" finished-at="2020-12-08T17:06:37Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
@@ -693,6 +700,9 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

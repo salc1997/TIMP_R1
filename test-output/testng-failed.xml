@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar">
 =======
@@ -34,7 +38,11 @@
       <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar">
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="criarAssociaçãoCodigoAjuste"/>
           <include name="ingresar"/>
@@ -64,9 +72,12 @@
           <include name="rejeitar"/>
 >>>>>>> refs/remotes/origin/master
 =======
-          <include name="criar"/>
+=======
 >>>>>>> refs/remotes/origin/Yessy
+          <include name="criar"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
           <include name="beforeClass"/>
 <<<<<<< HEAD
@@ -74,7 +85,10 @@
 =======
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar -->
 =======
@@ -131,6 +145,9 @@
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar -->
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

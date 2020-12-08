@@ -294,12 +294,14 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		primeiracaixar5.click();
 		sleep(1000);
 		remover.click();
-		sleep(1000);
+		sleep(2000);
 		gravar.click();
-		sleep(1000);
+		sleep(2000);
 		nao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectElement(configuracoes);
 		sleep(2000);
 		configuracoes.click();
 		sleep(2000);

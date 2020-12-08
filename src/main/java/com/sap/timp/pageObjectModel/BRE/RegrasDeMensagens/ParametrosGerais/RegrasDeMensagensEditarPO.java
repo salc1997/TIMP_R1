@@ -203,7 +203,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		actionsMoveToElementElement(menu);
-		sleep(4000);
+		sleep(2000);
 
 		menu.click();
 		sleep(1000);
@@ -229,7 +229,6 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		waitExpectElement(nao);
 		sleep(2000);
 
-		sleep(3000);
 
 		nao.click();
 		sleep(3000);
@@ -278,9 +277,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//waitExpectElement(r2);
-		//sleep(2000);
-		//String textor21 = r2.getText();
+		
 		waitExpectElement(r2);
 		sleep(2000);
 		if(r2.isDisplayed()) {
@@ -288,8 +285,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 			boolean sucesso1=true;
 		sucesso.add(sucesso1);
 		}
-		//waitExpectElement(primeiracaixar2);
-		//sleep(1000);
+	
 		primeiracaixar2.click();
 		sleep(1000);
 		remover.click();
@@ -300,7 +296,6 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		waitExpectElement(nao);
 		sleep(2000);
 
-		sleep(4000);
 
 		nao.click();
 		sleep(4000);
@@ -334,10 +329,8 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		waitExpectElement(nao);
 		sleep(2000);
 
-		sleep(4000);
-
 		nao.click();
-		sleep(4000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		configuracoes.click();

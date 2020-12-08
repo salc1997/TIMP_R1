@@ -25,7 +25,6 @@ public class TestBaseEliel extends TestBaseSteven {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-
 		driver.get(tc2);
 
 		return driver;
@@ -217,7 +216,7 @@ public String dataanterior() {
 	public String Filtros = "Os resultados não são de acordo aos filtros";
 	public String Criar = "O registro não foi criado com sucesso";
 	public String Eliminado = "O registro não foi eliminado com sucesso";
-	
+	public String Restaurar = "O registro não foi restaurado com sucesso";
 	
 	
 

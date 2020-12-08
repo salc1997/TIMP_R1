@@ -45,7 +45,7 @@ public class RegraDeMensagensVisualizar extends TestBaseEliel{
 	}
 	
 	@Test(priority = 2)
-	public void editar() {
+	public void visualizar() {
 		ArrayList<Boolean> sucesso = regrasDeMensagensVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

@@ -34,7 +34,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//li[@id=\"option-2\"]")
 	public WebElement opcTipoDeRegra;
 	
-	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
+	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcGrupo;
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes Fiscais\"]")
@@ -139,7 +139,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	
 		sleep(6000);
 		
-		nome.sendKeys("PRUEBA QA 002");
+		nome.sendKeys("TESTE QA 2");
 		sleep(2000);
 		
 		

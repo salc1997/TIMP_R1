@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="3" failed="0" total="3" passed="0">
 =======
 <<<<<<< HEAD
@@ -468,17 +469,30 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Cristhian
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-12-08T23:03:39Z" name="Default suite" finished-at="2020-12-08T23:06:37Z" duration-ms="177904">
+=======
+  <suite started-at="2020-12-08T23:55:32Z" name="Default suite" finished-at="2020-12-08T23:56:51Z" duration-ms="79078">
+>>>>>>> refs/heads/Cristhian
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-12-08T23:03:39Z" name="Default test" finished-at="2020-12-08T23:06:37Z" duration-ms="177904">
       <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:03:39Z" name="beforeClass" finished-at="2020-12-08T17:04:10Z" duration-ms="31237" status="PASS">
+=======
+    <test started-at="2020-12-08T23:55:32Z" name="Default test" finished-at="2020-12-08T23:56:51Z" duration-ms="79078">
+      <class name="com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:55:32Z" name="beforeClass" finished-at="2020-12-08T20:55:47Z" duration-ms="14742" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -492,7 +506,10 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="SKIP" signature="ingresar()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="ingresar" duration-ms="1" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
@@ -509,6 +526,9 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:10Z" name="login" finished-at="2020-12-08T17:04:18Z" duration-ms="8160" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:55:47Z" name="login" finished-at="2020-12-08T20:55:54Z" duration-ms="6657" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -516,6 +536,7 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         <test-method status="SKIP" signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="ingresarMDR" duration-ms="4" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
 =======
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -530,8 +551,12 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 =======
         <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:18Z" name="TFPEntrar" finished-at="2020-12-08T17:04:43Z" duration-ms="24526" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:55:54Z" name="acessarBRE" finished-at="2020-12-08T20:56:10Z" duration-ms="16344" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- ingresarMDR -->
@@ -640,7 +665,10 @@ Session ID: 72e2751c61c4e90a379d05dbabab0e75
 =======
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- acessarBRE -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:17:07Z" name="criar" finished-at="2020-12-08T07:18:18Z" duration-ms="70802" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -713,10 +741,14 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:56:10Z" name="criar" finished-at="2020-12-08T20:56:51Z" duration-ms="41309" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:18:18Z" name="afterClass" finished-at="2020-12-08T07:18:18Z" duration-ms="0" status="PASS">
 =======
 =======
@@ -804,9 +836,13 @@ Session ID: d1886210e759b6ae873071afc7e0108a
         </test-method> <!-- subNivel5 -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@5a5338df]" started-at="2020-12-08T22:09:34Z" name="afterClass" finished-at="2020-12-08T22:09:34Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:56:51Z" name="afterClass" finished-at="2020-12-08T20:56:51Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -836,6 +872,9 @@ Session ID: d1886210e759b6ae873071afc7e0108a
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir -->
+>>>>>>> refs/heads/Cristhian
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

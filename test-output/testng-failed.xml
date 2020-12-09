@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,19 +104,18 @@
 =======
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa">
+      <class name="com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir">
         <methods>
-          <include name="afterClass"/>
           <include name="criar"/>
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
           <include name="beforeClass"/>
->>>>>>> refs/heads/Cristhian
+          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
@@ -155,6 +155,9 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

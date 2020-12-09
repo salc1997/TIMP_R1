@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="3" failed="0" total="3" passed="0">
 =======
 <<<<<<< HEAD
@@ -33,8 +34,12 @@
 =======
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results total="4" passed="2" failed="2" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="7351" started-at="2020-12-08T21:38:48Z" finished-at="2020-12-08T21:38:55Z">
 =======
@@ -64,8 +69,12 @@
   <suite started-at="2020-12-08T20:38:12Z" name="Default suite" finished-at="2020-12-08T20:39:59Z" duration-ms="107601">
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2020-12-09T04:07:16Z" name="Default suite" finished-at="2020-12-09T04:09:34Z" duration-ms="137457">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="7351" started-at="2020-12-08T21:38:48Z" finished-at="2020-12-08T21:38:55Z">
       <class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar">
@@ -100,7 +109,11 @@
 >>>>>>> refs/heads/Cristhian
 =======
     <test started-at="2020-12-08T17:27:15Z" name="Default test" finished-at="2020-12-08T17:29:46Z" duration-ms="151466">
+=======
+    <test started-at="2020-12-09T04:07:16Z" name="Default test" finished-at="2020-12-09T04:09:34Z" duration-ms="137457">
+>>>>>>> refs/remotes/origin/Kenssy
       <class name="com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades">
+<<<<<<< HEAD
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@6ee4d9ab]" started-at="2020-12-08T11:27:15Z" name="beforeClass" finished-at="2020-12-08T11:27:31Z" duration-ms="16400" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
 =======
@@ -108,9 +121,13 @@
       <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:12Z" name="beforeClass" finished-at="2020-12-08T17:38:27Z" duration-ms="15430" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@5a5338df]" started-at="2020-12-08T22:07:16Z" name="beforeClass" finished-at="2020-12-08T22:07:31Z" duration-ms="14986" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -127,20 +144,16 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@6ee4d9ab]" started-at="2020-12-08T11:27:31Z" name="login" finished-at="2020-12-08T11:27:41Z" duration-ms="9559" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
 =======
-        </test-method> <!-- login -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:30:59Z" name="acessarBRE" finished-at="2020-12-07T13:31:16Z" duration-ms="17191" status="PASS">
-=======
-        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@6ee4d9ab]" started-at="2020-12-08T11:27:41Z" name="brbEntrar" finished-at="2020-12-08T11:27:57Z" duration-ms="16262" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@5a5338df]" started-at="2020-12-08T22:07:31Z" name="login" finished-at="2020-12-08T22:07:41Z" duration-ms="9429" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@5a5338df]" started-at="2020-12-08T22:07:41Z" name="brbEntrar" finished-at="2020-12-08T22:07:59Z" duration-ms="18531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarBRE -->
         <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:31:16Z" name="editar" finished-at="2020-12-07T13:32:54Z" duration-ms="98462" status="PASS">
@@ -152,11 +165,13 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <exception class="org.openqa.selenium.NoSuchWindowException">
 =======
-        </test-method> <!-- brbEntrar -->
-        <test-method signature="outputBCB()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@6ee4d9ab]" started-at="2020-12-08T11:27:57Z" name="outputBCB" finished-at="2020-12-08T11:29:46Z" duration-ms="109209" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+=======
 >>>>>>> refs/remotes/origin/Kenssy
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="subNivel4()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@5a5338df]" started-at="2020-12-08T22:07:59Z" name="subNivel4" finished-at="2020-12-08T22:09:30Z" duration-ms="91179" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
@@ -189,8 +204,20 @@ Session ID: c79da34570d31f76fb29b9c663b0e0ab
 *** Element info: {Using=xpath, value=//div[@class="column-wrapper second"]/div/div/div/div/div/input}]]>
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="subLevel"][4]/div/div[@id="configuration"]/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.88.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d1886210e759b6ae873071afc7e0108a
+*** Element info: {Using=xpath, value=//div[@class="subLevel"][4]/div/div[@id="configuration"]/div/div[2]}]]>
+>>>>>>> refs/remotes/origin/Kenssy
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
@@ -226,8 +253,20 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 8
 Session ID: c79da34570d31f76fb29b9c663b0e0ab
 *** Element info: {Using=xpath, value=//div[@class="column-wrapper second"]/div/div/div/div/div/input}
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="subLevel"][4]/div/div[@id="configuration"]/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.88.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d1886210e759b6ae873071afc7e0108a
+*** Element info: {Using=xpath, value=//div[@class="subLevel"][4]/div/div[@id="configuration"]/div/div[2]}
+>>>>>>> refs/remotes/origin/Kenssy
 	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<<<<<<< HEAD
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -622,6 +661,10 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
 	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+=======
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+>>>>>>> refs/remotes/origin/Kenssy
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -635,12 +678,12 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.criar(RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.java:184)
-	at com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.criar(RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.java:52)
+	at com.sap.timp.pageObjectModel.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel4(FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.java:1054)
+	at com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades.subNivel4(FormulaHierarquiaConfiguracaoTodasAsFuncionalidades.java:111)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -666,6 +709,7 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:18:18Z" name="afterClass" finished-at="2020-12-08T07:18:18Z" duration-ms="0" status="PASS">
 =======
@@ -673,13 +717,91 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
 >>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- TFPEntrar -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:43Z" name="criar" finished-at="2020-12-08T17:06:37Z" duration-ms="113960" status="PASS">
+=======
+        </test-method> <!-- subNivel4 -->
+        <test-method signature="subNivel5()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@5a5338df]" started-at="2020-12-08T22:09:30Z" name="subNivel5" finished-at="2020-12-08T22:09:34Z" duration-ms="3301" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="subLevel"][5]/div/div[@id="configuration"]/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.88.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d1886210e759b6ae873071afc7e0108a
+*** Element info: {Using=xpath, value=//div[@class="subLevel"][5]/div/div[@id="configuration"]/div/div[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="subLevel"][5]/div/div[@id="configuration"]/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB7TMPD', ip: '192.168.88.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d1886210e759b6ae873071afc7e0108a
+*** Element info: {Using=xpath, value=//div[@class="subLevel"][5]/div/div[@id="configuration"]/div/div[2]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel5(FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.java:1157)
+	at com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades.subNivel5(FormulaHierarquiaConfiguracaoTodasAsFuncionalidades.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:06:37Z" name="afterClass" finished-at="2020-12-08T17:06:37Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- subNivel5 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades@5a5338df]" started-at="2020-12-08T22:09:34Z" name="afterClass" finished-at="2020-12-08T22:09:34Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -694,7 +816,10 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
       </class> <!-- com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar -->
 >>>>>>> refs/remotes/origin/Yessy
 =======
+=======
+>>>>>>> refs/remotes/origin/Kenssy
       </class> <!-- com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades -->
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Kenssy
 =======
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
@@ -703,6 +828,8 @@ Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
 =======
       </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

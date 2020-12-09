@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -130,16 +131,20 @@
       </class> <!-- com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar -->
 >>>>>>> refs/remotes/origin/Yessy
 =======
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
       <class name="com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades">
         <methods>
           <include name="beforeClass"/>
-          <include name="outputBCB"/>
           <include name="afterClass"/>
+          <include name="subNivel5"/>
+          <include name="subNivel4"/>
         </methods>
       </class> <!-- com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades -->
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Kenssy
 =======
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar -->
@@ -148,6 +153,8 @@
 =======
       </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

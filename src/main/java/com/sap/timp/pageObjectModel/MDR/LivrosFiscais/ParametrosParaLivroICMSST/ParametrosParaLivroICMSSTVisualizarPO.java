@@ -77,6 +77,7 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione Tipo de Livro\"]")
 	public WebElement tipolvro1;
 	
@@ -173,18 +174,31 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		String textofilial = filial.getText();
 		String textotributo = tributo.getText();
 		String textodataInicio = dataInicio.getText();
-		String textodataVigencia = dataVigencia.getText();
 		String textoinformacionMDRFilial = informacionMDRFilial.getText();
+		
+		
 		String textocamposInformacaoMDRFilialUFST = camposInformacaoMDRFilialUFST.getText();
+		textocamposInformacaoMDRFilialUFST = textocamposInformacaoMDRFilialUFST.toLowerCase();
+		
 		String textocamposInformacaoMDRFilialUF =  camposInformacaoMDRFilialUF.getText();
+		textocamposInformacaoMDRFilialUF = textocamposInformacaoMDRFilialUF.toLowerCase();
+		
+		
 		String textoInformaçãoMDRInscriçãoST = InformaçãoMDRInscriçãoST.getText();
+		
 		String textoCampodeInformaçãoMDRInscriçãoST = CampodeInformaçãoMDRInscriçãoST.getText();
+		textoCampodeInformaçãoMDRInscriçãoST = textoCampodeInformaçãoMDRInscriçãoST.toLowerCase();
+		
 		String textoInformaçãoOrigemdoMovimento = InformaçãoOrigemdoMovimento.getText();
 		String textoCamposdeInformaçãoOrigemdoMovimentoUF = CamposdeInformaçãoOrigemdoMovimentoUF.getText();
+		textoCamposdeInformaçãoOrigemdoMovimentoUF = textoCamposdeInformaçãoOrigemdoMovimentoUF.toLowerCase();
+		
 		String textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro = CamposdeInformaçãoOrigemdoMovimentoUFdoParceiro.getText();
+		textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro = textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro.toLowerCase();
 		String textoCamposdeInformaçãoOrigemdoMovimentoTributo = CamposdeInformaçãoOrigemdoMovimentoTributo.getText();
+		textoCamposdeInformaçãoOrigemdoMovimentoTributo = textoCamposdeInformaçãoOrigemdoMovimentoTributo.toLowerCase();
 		String textoInformaçãodeAjustes = InformaçãodeAjustes.getText();
-		String textoCamposdeInformaçãodeAjustes =  CamposdeInformaçãodeAjustes.getText();
+		textoInformaçãodeAjustes = textoInformaçãodeAjustes.toLowerCase();
 		
 		
 		System.out.println("Tipo do Livro: " + textotipolvro);
@@ -193,7 +207,6 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		System.out.println("Filial: " + textofilial );
 		System.out.println("Tributo: " + textotributo);
 		System.out.println("Data de Inicio de Vigência: " + textodataInicio);
-		System.out.println("Data de Fim de Vigência: " + textodataVigencia);
 		System.out.println("Informação MDR Filial: " + textoinformacionMDRFilial);
 		System.out.println("Campos de Informação de MDR de Filial - UF ST: " + textocamposInformacaoMDRFilialUFST);
 		System.out.println("Campos de Informação de MDR de Filial - UF: " + textocamposInformacaoMDRFilialUF);
@@ -204,7 +217,6 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		System.out.println("Campos de Informação Origem do Movimento - UF do Parceiro: " + textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro);
 		System.out.println("Campos de Informação Origem do Movimento - Tributo: " + textoCamposdeInformaçãoOrigemdoMovimentoTributo);
 		System.out.println("Informação de Ajustes: " + textoInformaçãodeAjustes);
-		System.out.println("Campos de Informação de Ajustes: " + textoCamposdeInformaçãodeAjustes);
 		
 		sleep(2000);
 		biblioteca.click();
@@ -223,12 +235,11 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		menu1.click();
 		sleep(2000);
 		editar.click();
-		sleep(3000);
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
-		sleep(9000);
-		sleep(9000);
-		sleep(2000);
+		sleep(1000);
+		attributeToBeXpath("//div[@class=\"field-element adjustmentsFields_0_8\"]/div", "class", "input-element-wrapper");
+		
 		sleep(2000);
 		String textotipolvro1 = tipolvro1.getAttribute("value");
 		String textoempresa1 = empresa1.getText();
@@ -236,22 +247,38 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		String textofilial1 = filial1.getText();
 		String textotributo1 = tributo1.getAttribute("value");
 		String textodataInicio1 = dataInicio1.getAttribute("value");
-		String textodataVigencia1 = dataVigencia1.getAttribute("value");
 		String textoinformacionMDRFilial1 = informacionMDRFilial1.getAttribute("value");
+		
+		
 		String textocamposInformacaoMDRFilialUFST1 = camposInformacaoMDRFilialUFST1.getAttribute("value");
+		textocamposInformacaoMDRFilialUFST1 = textocamposInformacaoMDRFilialUFST1.toLowerCase();
 		String textocamposInformacaoMDRFilialUF1 =  camposInformacaoMDRFilialUF1.getAttribute("value");
+		textocamposInformacaoMDRFilialUF1 = textocamposInformacaoMDRFilialUF1.toLowerCase();
+		
+		
+		
 		String textoInformaçãoMDRInscriçãoST1 = InformaçãoMDRInscriçãoST1.getAttribute("value");
+		
 		String textoCampodeInformaçãoMDRInscriçãoST1 = CampodeInformaçãoMDRInscriçãoST1.getAttribute("value");
+		textoCampodeInformaçãoMDRInscriçãoST1 =textoCampodeInformaçãoMDRInscriçãoST1.toLowerCase();
+		
 		String textoInformaçãoOrigemdoMovimento1 = InformaçãoOrigemdoMovimento1.getAttribute("value");
+		
+		
 		String textoCamposdeInformaçãoOrigemdoMovimentoUF1 = CamposdeInformaçãoOrigemdoMovimentoUF1.getAttribute("value");
+		textoCamposdeInformaçãoOrigemdoMovimentoUF1= textoCamposdeInformaçãoOrigemdoMovimentoUF1.toLowerCase();
+		
 		String textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro1 = CamposdeInformaçãoOrigemdoMovimentoUFdoParceiro1.getAttribute("value");
+		textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro1 = textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro1.toLowerCase();
 		String textoCamposdeInformaçãoOrigemdoMovimentoTributo1 = CamposdeInformaçãoOrigemdoMovimentoTributo1.getAttribute("value");
+		textoCamposdeInformaçãoOrigemdoMovimentoTributo1 = textoCamposdeInformaçãoOrigemdoMovimentoTributo1.toLowerCase();
+		
+		
 		String textoInformaçãodeAjustes1 = InformaçãodeAjustes1.getAttribute("value");
+		textoInformaçãodeAjustes1 = textoInformaçãodeAjustes1.toLowerCase();
 		sleep(2000);
 		//String textoCamposdeInformaçãodeAjustes1 =  CamposdeInformaçãodeAjustes1.getText();
-		
-		sleep(9000);
-		sleep(2000);
+
 		System.out.println("-------------------------------------------");
 		System.out.println("Tipo do Livro: " + textotipolvro1);
 		System.out.println("Empresa: " + textoempresa1);
@@ -259,7 +286,6 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		System.out.println("Filial: " + textofilial1);
 		System.out.println("Tributo: " + textotributo1);
 		System.out.println("Data de Inicio de Vigência: " + textodataInicio1);
-		System.out.println("Data de Fim de Vigência: " + textodataVigencia1);
 		System.out.println("Informação MDR Filial: " + textoinformacionMDRFilial1);
 		System.out.println("Campos de Informação de MDR de Filial - UF ST: " + textocamposInformacaoMDRFilialUFST1);
 		System.out.println("Campos de Informação de MDR de Filial - UF: " + textocamposInformacaoMDRFilialUF1);
@@ -271,29 +297,24 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		System.out.println("Campos de Informação Origem do Movimento - Tributo: " + textoCamposdeInformaçãoOrigemdoMovimentoTributo1);
 		System.out.println("Informação de Ajustes: " + textoInformaçãodeAjustes1);
 		sleep(2000);
-	 //   System.out.println("Campos de Informação de Ajustes: " + textoCamposdeInformaçãodeAjustes1);
-		
-	    sleep(9000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso.add(textotipolvro1.equals(textotipolvro));
-	 	sucesso.add(textoempresa1.equals(textoempresa));
-	 	sucesso.add(textoufFilial1.equals(textoufFilial));
-		sucesso.add(textofilial1.equals(textofilial));
-		sucesso.add(textotributo1.equals(textotributo));
-		sucesso.add(textodataInicio1.equals(textodataInicio));
-		sucesso.add(textodataVigencia1.equals(textodataVigencia));
-		sucesso.add(textoinformacionMDRFilial1.equals(textoinformacionMDRFilial));
-		sucesso.add(textocamposInformacaoMDRFilialUFST1.equals(textocamposInformacaoMDRFilialUFST));
-		sucesso.add(textocamposInformacaoMDRFilialUF1.equals(textocamposInformacaoMDRFilialUF));
-		sucesso.add(textoInformaçãoMDRInscriçãoST1.equals(textoInformaçãoMDRInscriçãoST));
-		sucesso.add(textoCampodeInformaçãoMDRInscriçãoST1.equals(textoCampodeInformaçãoMDRInscriçãoST));
-		sucesso.add(textoInformaçãoOrigemdoMovimento1.equals(textoInformaçãoOrigemdoMovimento));
-		sucesso.add(textoCamposdeInformaçãoOrigemdoMovimentoUF1.equals(textoCamposdeInformaçãoOrigemdoMovimentoUF));
-		sucesso.add(textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro1.equals(textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro));
-		sucesso.add(textoCamposdeInformaçãoOrigemdoMovimentoTributo1.equals(textoCamposdeInformaçãoOrigemdoMovimentoTributo));
-		sucesso.add(textoInformaçãodeAjustes1.equals( textoInformaçãodeAjustes));
-		//sucesso.add(textoCamposdeInformaçãodeAjustes1.equals(textoCamposdeInformaçãodeAjustes));
+		sucesso.add(textotipolvro1.contains(textotipolvro));
+	 	sucesso.add(textoempresa1.contains(textoempresa));
+	 	sucesso.add(textoufFilial1.contains(textoufFilial));
+		sucesso.add(textofilial1.contains(textofilial));
+		sucesso.add(textotributo1.contains(textotributo));
+		sucesso.add(textodataInicio1.contains(textodataInicio));
+		sucesso.add(textoinformacionMDRFilial1.contains(textoinformacionMDRFilial));
+		sucesso.add(textocamposInformacaoMDRFilialUFST1.contains(textocamposInformacaoMDRFilialUFST));
+		sucesso.add(textocamposInformacaoMDRFilialUF1.contains(textocamposInformacaoMDRFilialUF));
+		sucesso.add(textoInformaçãoMDRInscriçãoST1.contains(textoInformaçãoMDRInscriçãoST));
+		sucesso.add(textoCampodeInformaçãoMDRInscriçãoST1.contains(textoCampodeInformaçãoMDRInscriçãoST));
+		sucesso.add(textoInformaçãoOrigemdoMovimento1.contains(textoInformaçãoOrigemdoMovimento));
+		sucesso.add(textoCamposdeInformaçãoOrigemdoMovimentoUF1.contains(textoCamposdeInformaçãoOrigemdoMovimentoUF));//aqui
+		sucesso.add(textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro1.contains(textoCamposdeInformaçãoOrigemdoMovimentoUFdoParceiro));
+		sucesso.add(textoCamposdeInformaçãoOrigemdoMovimentoTributo1.contains(textoCamposdeInformaçãoOrigemdoMovimentoTributo));
+		sucesso.add(textoInformaçãodeAjustes1.contains(textoInformaçãodeAjustes));
 		System.out.println(sucesso);
 	     	
 		return sucesso;

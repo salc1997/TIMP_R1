@@ -25,7 +25,8 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tq1);
+
 	   return driver;
 	}
 	
@@ -54,6 +55,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 	public void closeSelectTypeCheckbox(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
 	}
+	
 	
 
 

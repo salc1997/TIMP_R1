@@ -27,7 +27,7 @@ public class AssociaçãoCodigoAjusteCriar extends TestBaseFernando{
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 // driver.close();
   }
   
   @Test(priority = 0)

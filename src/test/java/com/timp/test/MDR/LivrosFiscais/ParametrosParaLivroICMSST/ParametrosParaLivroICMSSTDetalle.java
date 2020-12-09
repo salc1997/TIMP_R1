@@ -3,6 +3,7 @@ package com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetallesPO;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosParaLivroICMSSTDetalle extends TestBaseMassiel{
+public class ParametrosParaLivroICMSSTDetalle extends TestBaseSteven{
 	
 	
 	LoginTC loginTC;
@@ -25,7 +26,7 @@ public class ParametrosParaLivroICMSSTDetalle extends TestBaseMassiel{
   @BeforeClass
   public void beforeClass() {
 	  
-	  driver = initializationM();
+	  driver = initialization();
       loginTC = new LoginTC();
 	  acessarMDRPO = new AcessarMDRPO();
 	  parametrosParaLivroICMSSTDetallesPO =new ParametrosParaLivroICMSSTDetallesPO();
@@ -33,6 +34,7 @@ public class ParametrosParaLivroICMSSTDetalle extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
   @Test()
@@ -49,7 +51,7 @@ public class ParametrosParaLivroICMSSTDetalle extends TestBaseMassiel{
  	}
 
  	@Test(priority = 2)
- 	public void visualizar() {
+ 	public void detalhes() {
 
  	      ArrayList<Boolean> sucesso = parametrosParaLivroICMSSTDetallesPO.Detalles();
 

@@ -45,7 +45,7 @@ public class FatorCreditamentoEditar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 		boolean sucesso = fatorCreditamentoEditarPO.editar();
 		assertTrue(sucesso, editado);
 	}

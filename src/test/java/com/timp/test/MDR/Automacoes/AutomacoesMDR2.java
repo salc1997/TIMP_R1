@@ -41,7 +41,12 @@ import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluir;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisVisualizar;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar;
+import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle;
+import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTEditar;
+import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluir;
+import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluirMasas;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTFiltrosAvan;
+import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTVisualizar;
 import com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsCriar;
 import com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar;
 import com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsExcluir;
@@ -185,6 +190,11 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	// Livros Fiscais > Parametros Para Livro ICMS ST
 	ParametrosParaLivroICMSSTCriar parametrosParaLivroICMSSTCriar;
+	ParametrosParaLivroICMSSTEditar parametrosParaLivroICMSSTEditar;
+	ParametrosParaLivroICMSSTDetalle parametrosParaLivroICMSSTDetalle;
+	ParametrosParaLivroICMSSTVisualizar parametrosParaLivroICMSSTVisualizar;
+	ParametrosParaLivroICMSSTExcluir parametrosParaLivroICMSSTExcluir;
+	ParametrosParaLivroICMSSTExcluirMasas parametrosParaLivroICMSSTExcluirMasas;
 	ParametrosParaLivroICMSSTFiltrosAvan parametrosParaLivroICMSSTFiltrosAvan;
 
 	// Mapeamento De Relevancia Para Pis Cofins
@@ -745,16 +755,18 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	/*
-	 * @Test(priority = 38) public void livrosFiscaisEditar() {
-	 * 
-	 * livrosFiscaisEditar = new livrosFiscaisEditar();
-	 * livrosFiscaisEditar.beforeClass(); livrosFiscaisEditar.login();
-	 * livrosFiscaisEditar.acessarMDR(); livrosFiscaisEditar.editar();
-	 * livrosFiscaisEditar.afterClass();
-	 * 
-	 * }
-	 */
+//	
+//	  @Test(priority = 38) public void livrosFiscaisEditar() {
+//	 
+//	  livrosFiscaisEditar = new livrosFiscaisEditar();
+//	  livrosFiscaisEditar.beforeClass(); 
+//	  livrosFiscaisEditar.login();
+//	  livrosFiscaisEditar.acessarMDR(); 
+//	  livrosFiscaisEditar.editar();
+//	  livrosFiscaisEditar.afterClass();
+//	  
+//	 }
+	
 	@Test(priority = 39)
 	public void livrosFiscaisVisualizar() {
 
@@ -821,6 +833,45 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	}
 	
 	@Test(priority = 44)
+	public void parametrosParaLivroICMSSTEditar() {
+		
+		parametrosParaLivroICMSSTEditar = new ParametrosParaLivroICMSSTEditar();
+		parametrosParaLivroICMSSTEditar.beforeClass();
+		parametrosParaLivroICMSSTEditar.login();
+		parametrosParaLivroICMSSTEditar.acessarMDR();
+		parametrosParaLivroICMSSTEditar.editar();
+		parametrosParaLivroICMSSTEditar.afterClass();
+
+	}
+	
+	
+	@Test(priority = 44)
+	public void parametrosParaLivroICMSSTDetalhes() {
+		
+		parametrosParaLivroICMSSTDetalle = new ParametrosParaLivroICMSSTDetalle();
+		parametrosParaLivroICMSSTDetalle.beforeClass();
+		parametrosParaLivroICMSSTDetalle.login();
+		parametrosParaLivroICMSSTDetalle.acessarMDR();
+		parametrosParaLivroICMSSTDetalle.detalhes();
+		parametrosParaLivroICMSSTDetalle.afterClass();
+
+	}
+	
+	
+	@Test(priority = 45)
+	public void parametrosParaLivroICMSSTVisualizar() {
+		
+		parametrosParaLivroICMSSTVisualizar = new ParametrosParaLivroICMSSTVisualizar();
+		parametrosParaLivroICMSSTVisualizar.beforeClass();
+		parametrosParaLivroICMSSTVisualizar.login();
+		parametrosParaLivroICMSSTVisualizar.acessarMDR();
+		parametrosParaLivroICMSSTVisualizar.visualizar();
+		parametrosParaLivroICMSSTVisualizar.afterClass();
+
+	}
+	
+	
+	@Test(priority = 46)
 	public void parametrosParaLivroICMSSTFiltrosAvan() {
 		
 		parametrosParaLivroICMSSTFiltrosAvan = new ParametrosParaLivroICMSSTFiltrosAvan();
@@ -829,11 +880,35 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		parametrosParaLivroICMSSTFiltrosAvan.acessarMDR();
 		parametrosParaLivroICMSSTFiltrosAvan.filtrosAvanzados();
 		parametrosParaLivroICMSSTFiltrosAvan.afterClass();
+
+	}
+	
+	@Test(priority = 47)
+	public void parametrosParaLivroICMSSTExcluir() {
+		
+		parametrosParaLivroICMSSTExcluir = new ParametrosParaLivroICMSSTExcluir();
+		parametrosParaLivroICMSSTExcluir.beforeClass();
+		parametrosParaLivroICMSSTExcluir.login();
+		parametrosParaLivroICMSSTExcluir.acessarMDR();
+		parametrosParaLivroICMSSTExcluir.Excluir();
+		parametrosParaLivroICMSSTExcluir.afterClass();
+		
+	}
+	
+	@Test(priority = 47)
+	public void parametrosParaLivroICMSSTExcluirEmMassa() {
+		
+		parametrosParaLivroICMSSTExcluirMasas = new ParametrosParaLivroICMSSTExcluirMasas();
+		parametrosParaLivroICMSSTExcluirMasas.beforeClass();
+		parametrosParaLivroICMSSTExcluirMasas.login();
+		parametrosParaLivroICMSSTExcluirMasas.acessarMDR();
+		parametrosParaLivroICMSSTExcluirMasas.criar();
+		parametrosParaLivroICMSSTExcluirMasas.afterClass();
 		
 		System.out.println(
 				"-------------------Livros Fiscais > Parametros Para Livro ICMS ST Fin-------------------------");
 	}
-
+	
 	// Mapeamento De Relevancia Para Pis Cofins
 
 	@Test(priority = 49)

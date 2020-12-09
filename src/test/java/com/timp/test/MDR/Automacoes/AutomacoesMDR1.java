@@ -87,7 +87,12 @@ import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir;
 import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoFiltros;
 import com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar;
 import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriar;
+import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoDetalhes;
+import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoEditar;
+import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluir;
+import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluirEmMassa;
 import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros;
+import com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoVisualizar;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosCriar;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosDetalhes;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosEditar;
@@ -253,6 +258,11 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// Centralização > Fator de Crecimento do CIAP
 	FatorCreditamentoCriar fatorCreditamentoCriar;
+	FatorCreditamentoEditar fatorCreditamentoEditar;
+	FatorCreditamentoDetalhes fatorCreditamentoDetalhes;
+	FatorCreditamentoVisualizar fatorCreditamentoVisualizar;
+	FatorCreditamentoExcluir fatorCreditamentoExcluir;
+	FatorCreditamentoExcluirEmMassa fatorCreditamentoExcluirEmMassa;
 	FatorCreditamentoFiltros fatorCreditamentoFiltros;
 
 	// Centralização > Tributos
@@ -391,7 +401,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void associaçãoCodigoAjusteExcluir() {
 
 		associaçãoCodigoAjusteExcluir = new AssociaçãoCodigoAjusteExcluir();
@@ -403,7 +413,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void associaçãoCodigoAjusteDetalhe() {
 
 		associaçãoCodigoAjusteDetalhe = new AssociaçãoCodigoAjusteDetalhe();
@@ -415,7 +425,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void associaçãoCodigoAjusteVisualizar() {
 
 		associaçãoCodigoAjusteVisualizar = new AssociaçãoCodigoAjusteVisualizar();
@@ -1168,6 +1178,44 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		fatorCreditamentoCriar.afterClass();
 
 	}
+	
+	@Test(priority = 53)
+	public void FatorCrecimentoCIAPEditar() {
+
+		fatorCreditamentoEditar = new FatorCreditamentoEditar();
+		fatorCreditamentoEditar.beforeClass();
+		fatorCreditamentoEditar.login();
+		fatorCreditamentoEditar.acessarMDR();
+		fatorCreditamentoEditar.editar();
+		fatorCreditamentoEditar.afterClass();
+
+	}
+	
+	@Test(priority = 53)
+	public void FatorCrecimentoCIAPDetalhes() {
+
+		fatorCreditamentoDetalhes = new FatorCreditamentoDetalhes();
+		fatorCreditamentoDetalhes.beforeClass();
+		fatorCreditamentoDetalhes.login();
+		fatorCreditamentoDetalhes.acessarMDR();
+		fatorCreditamentoDetalhes.detalhes();
+		fatorCreditamentoDetalhes.afterClass();
+
+	}
+	
+	@Test(priority = 53)
+	public void FatorCrecimentoCIAPVisualizar() {
+
+		fatorCreditamentoVisualizar = new FatorCreditamentoVisualizar();
+		fatorCreditamentoVisualizar.beforeClass();
+		fatorCreditamentoVisualizar.login();
+		fatorCreditamentoVisualizar.acessarMDR();
+		fatorCreditamentoVisualizar.visualizar();
+		fatorCreditamentoVisualizar.afterClass();
+
+	}
+	
+	
 
 	@Test(priority = 53)
 	public void FatorCrecimentoCIAPFiltro() {
@@ -1179,9 +1227,34 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		fatorCreditamentoFiltros.filtros();
 		fatorCreditamentoFiltros.afterClass();
 
-		System.out
-				.println("-------------------Centralização > Fator de Crecimento do CIAP Fin-------------------------");
 	}
+	
+	@Test(priority = 54)
+	public void FatorCrecimentoCIAPExcluir() {
+
+		fatorCreditamentoExcluir = new FatorCreditamentoExcluir();
+		fatorCreditamentoExcluir.beforeClass();
+		fatorCreditamentoExcluir.login();
+		fatorCreditamentoExcluir.acessarMDR();
+		fatorCreditamentoExcluir.excluir();
+		fatorCreditamentoExcluir.afterClass();
+
+	}
+	
+	@Test(priority = 55)
+	public void FatorCrecimentoCIAPExcluirEmMassa() {
+
+		fatorCreditamentoExcluirEmMassa = new FatorCreditamentoExcluirEmMassa();
+		fatorCreditamentoExcluirEmMassa.beforeClass();
+		fatorCreditamentoExcluirEmMassa.login();
+		fatorCreditamentoExcluirEmMassa.acessarMDR();
+		fatorCreditamentoExcluirEmMassa.criar();
+		fatorCreditamentoExcluirEmMassa.afterClass();
+		
+		System.out.println("-------------------Centralização > Fator de Crecimento do CIAP Fin-------------------------");
+
+	}
+	
 
 	// Centralização > Tributos
 

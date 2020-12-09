@@ -46,7 +46,7 @@ public class RegrasDeNegocioEditar extends TestBaseEliel {
 	public void criar() {
 		ArrayList<Boolean> sucesso = regrasDeNegocioEditarPO.editar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
+			assertTrue(sucesso.get(i), Editar);
 		}
 		
 	}

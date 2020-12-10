@@ -2,6 +2,7 @@ package com.sap.timp.base;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -25,7 +26,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tp1);
 
 	   return driver;
 	}
@@ -54,6 +55,14 @@ public class TestBaseMassiel extends TestBaseSteven {
 	
 	public void closeSelectTypeCheckbox(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
+	}
+	
+	public String anioActual() {
+		// Obtienes el mes actual
+		int anio = LocalDate.now().getYear();
+		
+		String anioString = String.valueOf(anio);
+		return anioString;
 	}
 	
 	

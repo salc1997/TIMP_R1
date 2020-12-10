@@ -76,16 +76,16 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBas
 //		}
 //	}
 //	
-	@Test(priority = 5)	
-	public void outputBCB() {
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.formulaOutputBCB();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		}
-	}
-	
+//	@Test(priority = 5)	
+//	public void outputBCB() {
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.formulaOutputBCB();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		}
+//	}
+//	
 //	@Test(priority = 6)	
 //	public void subNivel2() {
 //		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel2();
@@ -106,24 +106,24 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBas
 //		}
 //	}
 //	
-//	@Test(priority = 8)	
-//	public void subNivel4() {
-//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel4();
-//		System.out.println(sucesso);
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), subniveis);
-//		}
-//	}
-//	
-//	@Test(priority = 9)	
-//	public void subNivel5() {
-//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel5();
-//		System.out.println(sucesso);
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), subniveis);
-//		}
-//	}
+	@Test(priority = 8)	
+	public void subNivel4() {
+		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel4();
+		System.out.println(sucesso);
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), subniveis);
+		}
+	}
+	
+	@Test(priority = 9)	
+	public void subNivel5() {
+		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel5();
+		System.out.println(sucesso);
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), subniveis);
+		}
+	}
 
 }

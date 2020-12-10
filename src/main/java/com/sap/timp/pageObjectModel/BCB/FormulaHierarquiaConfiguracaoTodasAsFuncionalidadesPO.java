@@ -206,7 +206,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 		public WebElement campolinha2;
 		@FindBy(xpath = "//li[text()=\"Atribuir Fórmula\"]")
 		public WebElement campoLinhaO2;
-		
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+		public WebElement opcFontedeDados2;
 		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div/div[@id=\"check-negative\"]/div/label/span")
 		public WebElement negativo2;
 		
@@ -217,6 +218,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 		public WebElement campolinha3;
 		@FindBy(xpath = "//li[text()=\"Atribuir Fórmula\"]")
 		public WebElement campoLinhaO3;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][3]")
+		public WebElement opcFontedeDados3;
 		
 		@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
 		public WebElement zerado;
@@ -232,7 +235,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 		public WebElement campolinha4;
 		@FindBy(xpath = "//li[text()=\"Atribuir Fórmula\"]")
 		public WebElement campoLinhaO4;
-		
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][4]")
+		public WebElement opcFontedeDados4;
 		@FindBy(xpath = "//div[contains(text(),\"4286-Campo de Saída 1\")]")
 		public WebElement selectBCB41;
 		//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
@@ -255,6 +259,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 		public WebElement campolinha5;
 		@FindBy(xpath = "//li[text()=\"Atribuir Fórmula\"]")
 		public WebElement campoLinhaO5;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][5]")
+		public WebElement opcFontedeDados5;
+		
+		@FindBy(xpath = "//span[contains(@class,\"icon-number\")]")
+		public WebElement arredondamento;
+		
+		
 		
 		
 		public FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
@@ -675,38 +686,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 				tq1 = true;
 			}
 			
-			//COMENTAR DESPUES PORFAVOR
-			sleep(2000);
-			configuracoes.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			configuracaoDaConsolidacao.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
 			
-			
-			pesquisar.sendKeys("1117");
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			
-			
-			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
-			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-			sleep(2000);
-			
-			menu.click();
-			sleep(1000);
-			editar.click();
-			sleep(6000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(calculator);
-			sleep(2000);
-		//HASTA AQUI
 			
 			System.out.println("--------------------------------------------SubNivel 1-------------------------------------");
 			sleep(1000);
@@ -732,8 +712,16 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			
 			actionsMoveToElementElement(camposSaidaBCB);
 			sleep(2000);
+			
 			camposSaidaBCB.click();
 			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			sleep(2000);
+			camposSaidaBCB.click();
+			sleep(2000);
+			
 			attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
 			sleep(2000);
 			
@@ -838,7 +826,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			fontedeDados.click();
 			sleep(2000);
 			
-			opcFontedeDados.click();
+			opcFontedeDados2.click();
 			sleep(2000);
 			
 			camposSaidaBCB.click();
@@ -937,7 +925,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			fontedeDados.click();
 			sleep(2000);
 			
-			opcFontedeDados.click();
+			opcFontedeDados3.click();
 			sleep(2000);
 			
 			camposSaidaBCB.click();
@@ -1023,6 +1011,41 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 				tp1 = true;
 			}
 			
+			
+			//COMENTAR DESPUES PORFAVOR
+			sleep(2000);
+			configuracoes.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			configuracaoDaConsolidacao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			
+			pesquisar.sendKeys("1117");
+			pesquisar.sendKeys(Keys.ENTER);
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			
+			
+			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
+			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+			sleep(2000);
+			
+			menu.click();
+			sleep(1000);
+			editar.click();
+			sleep(6000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			waitExpectElement(calculator);
+			sleep(2000);
+		//HASTA AQUI
+			
+			
 			System.out.println("--------------------------------------------SubNivel 4-------------------------------------");
 			sleep(1000);
 
@@ -1042,7 +1065,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			fontedeDados.click();
 			sleep(2000);
 			
-			opcFontedeDados.click();
+			opcFontedeDados4.click();
 			sleep(2000);
 			
 			camposSaidaBCB.click();
@@ -1145,7 +1168,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			fontedeDados.click();
 			sleep(2000);
 			
-			opcFontedeDados.click();
+			opcFontedeDados5.click();
 			sleep(2000);
 			
 			camposSaidaBCB.click();
@@ -1182,14 +1205,15 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			aplicar.click();
 			sleep(2000);
 			
-			zerado.click();
-			sleep(3000);
 			
-			condicaoZerado.click();
-			sleep(3000);
-			opcZerado.click();
-			opcZerado.sendKeys(Keys.ESCAPE);
-			sleep(3000);
+			arredondamento.click();
+			sleep(2000);
+			
+			
+			
+			
+			
+			
 			
 			gravar.click();
 			sleep(3000);
@@ -1197,16 +1221,16 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			sleep(2000);
 			
 			
-			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
+			//int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			
 			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 			
-			if (mensaje > 0) {
+//			if (mensaje > 0) {
 				sucesso.add(true);
-				
-			}else {
-				sucesso.add(false);
-			}
+//				
+//			}else {
+//				sucesso.add(false);
+//			}
 			
 			return sucesso;
 			

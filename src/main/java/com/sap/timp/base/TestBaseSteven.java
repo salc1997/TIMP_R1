@@ -75,12 +75,20 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
 		return driver;
 	}
 	
 	public void close() {
 
+		
+	}
+	
+	public int rows(String element) {
+		
+		int rows = driver.findElements(By.xpath(element)).size();
+		
+		return rows;
 		
 	}
 

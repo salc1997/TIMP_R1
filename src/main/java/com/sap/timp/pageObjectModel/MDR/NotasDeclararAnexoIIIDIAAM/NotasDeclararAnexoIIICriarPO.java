@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class NotasDeclararAnexoIIICriarPO extends TestBaseFernando{
+public class NotasDeclararAnexoIIICriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[contains(@class, \"accordion-container\")]/ul/li/div/span[text()=\"Notas a Declarar Anexo III DIA-AM\"]")
 	public WebElement menuNotasDeclararAnexo;
 	
@@ -42,7 +43,7 @@ public class NotasDeclararAnexoIIICriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"presentationDanfeDate\"]/div/div/span")
 	public WebElement inputDataApresentacaoDoDanfe;
 	
-	@FindBy(xpath = "//div[@tabindex=\"0\" and @class=\"date weekend today\"]")
+	@FindBy(xpath = "//div[@tabindex=\"0\" and contains(@class,\"today\")]")
 	public WebElement dataApresentacao;
 
 	@FindBy(xpath = "//div[@id=\"NFeKey\"]/div/div/input")

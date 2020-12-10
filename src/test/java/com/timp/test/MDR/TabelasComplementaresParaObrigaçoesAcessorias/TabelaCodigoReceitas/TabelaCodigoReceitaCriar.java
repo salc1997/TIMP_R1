@@ -7,13 +7,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
 
-public class TabelaCodigoReceitaCriar extends TestBaseSteven {
+public class TabelaCodigoReceitaCriar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -22,7 +23,7 @@ public class TabelaCodigoReceitaCriar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasCriarPO = new TabelaCodigoReceitasCriarPO();

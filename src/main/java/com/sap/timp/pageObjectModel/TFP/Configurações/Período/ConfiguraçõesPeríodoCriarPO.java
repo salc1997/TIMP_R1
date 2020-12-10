@@ -23,26 +23,26 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Nova Configuração de Período\"]")
 	public WebElement nota;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Empresa\"]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"3000\"]")
-	public WebElement empresaOpc;
+	//@FindBy(xpath = "//div[@id=\"3000\"]")
+	//public WebElement empresaOpc;
 	
 	@FindBy(xpath = "//div[@id=\"dialogContentWraper\"]")
 	public WebElement empresaFlecha;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Estado\"]")
+	@FindBy(xpath = "//div[@id=\"state\"]/div/div/div[2]")
 	public WebElement Estado;
 	
-	@FindBy(xpath = "//div[@id=\"BA\"]")
-	public WebElement EstadoOPC;
+	//@FindBy(xpath = "//div[@id=\"BA\"]")
+	//public WebElement EstadoOPC;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filial\"]")
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement Filial;
 	
-	@FindBy(xpath = "//div[@id=\"3000-0031-BA\"]")
-	public WebElement FilialOpc;
+	//@FindBy(xpath = "//div[@id=\"3000-0031-BA\"]")
+	//public WebElement FilialOpc;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Abertura de período\"]")
 	public WebElement Abertura;
@@ -79,6 +79,19 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 	}
 	
 	public boolean criar() {
+		String url = driver.getCurrentUrl();
+		
+		boolean tq1 = false;
+		boolean tp1 = false;
+		boolean tc2 = false;
+		
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if (url.contains("tc2")) {
+			tc2 = true;
+		}else {
+			tp1 = true;
+		}
 		configuracoe.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -109,24 +122,87 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		empresaOpc.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1 == true) {
+			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"3000\"]"));
+			
+			empresaOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(empresa);
+			
+			
+		}else if (tc2 == true) {
+			
+			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"6000\"]"));
+			
+			empresaOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(empresa);
+			
 		
-		closeSelectTypeCheckbox(empresa);
+		}else {
+			
+			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"3000\"]"));
+			
+			empresaOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(empresa);
+			
+		}
+		
+		
+	
 		
 		Estado.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		EstadoOPC.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1 == true) {
+			WebElement EstadoOPC = driver.findElement(By.xpath( "//div[@id=\"BA\"]"));
+			
+			EstadoOPC.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Estado);
+			
+			
+		}else if (tc2 == true) {
+			
+			WebElement EstadoOPC = driver.findElement(By.xpath( "//div[@id=\"RJ\"]"));
+			
+			EstadoOPC.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Estado);
+			
+			
 		
-		closeSelectTypeCheckbox(Estado);
+		}else {
+			
+			WebElement EstadoOPC = driver.findElement(By.xpath( "//div[@id=\"BA\"]"));
+			
+			EstadoOPC.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Estado);
+			
+			
+		}
 		
 		
 		Filial.click();
@@ -134,12 +210,44 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		FilialOpc.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1 == true) {
+			WebElement FilialOpc = driver.findElement(By.xpath( "//div[@id=\"3000-0031-BA\"]"));
+			
+			FilialOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Filial);
+			
+			
+		}else if (tc2 == true) {
+			
+			WebElement FilialOpc = driver.findElement(By.xpath( "//div[@id=\"6000-0001-RJ\"]"));
+			
+			FilialOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Filial);
+			
+			
 		
-		closeSelectTypeCheckbox(Filial);
+		}else {
+			
+			WebElement FilialOpc = driver.findElement(By.xpath( "//div[@id=\"3000-0031-BA\"]"));;
+			
+			FilialOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Filial);
+			
+			
+		}
+		
 		
 		Abertura.click();
 		sleep(2000);

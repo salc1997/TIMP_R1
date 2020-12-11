@@ -156,8 +156,9 @@ public class TabelaServicosVisualizarPO extends TestBaseMassiel{
 		sucesso.add(textocodigoServicioObrigacaoD.equals(textocodigoServicioObrigacaoV));
 		sucesso.add(textodescripcionServicioObrigacaoD.equals(textodescripcionServicioObrigacaoV));
 		System.out.println(sucesso);
+		
 		return sucesso;
 	}
-	
+
 
 }

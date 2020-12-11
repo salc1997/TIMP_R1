@@ -17,9 +17,11 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
+	
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
 	ParametrosGeraisCriarProcesoRecorrentePO  parametrosGeraisCriarProcesoRecorrentePO;
+
 	
   @BeforeClass
   public void beforeClass() {
@@ -33,6 +35,7 @@ public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
   @AfterClass
   public void afterClass() {
   }
+  
   
   @Test(priority = 0)
  	public void login() {
@@ -56,5 +59,9 @@ public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
 		}
  		
  	}
-
 }
+
+
+
+
+

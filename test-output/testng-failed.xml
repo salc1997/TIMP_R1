@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -25,13 +26,15 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar">
+      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente">
         <methods>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="acessarMDR"/>
           <include name="login"/>
         </methods>
@@ -64,7 +67,11 @@
 >>>>>>> refs/remotes/origin/Kenssy
         <methods>
 <<<<<<< HEAD
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="criar"/>
+<<<<<<< HEAD
 =======
           <include name="afterClass"/>
           <include name="CriarCopia"/>
@@ -74,7 +81,10 @@
           <include name="afterClass"/>
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -130,6 +140,9 @@
 =======
       </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

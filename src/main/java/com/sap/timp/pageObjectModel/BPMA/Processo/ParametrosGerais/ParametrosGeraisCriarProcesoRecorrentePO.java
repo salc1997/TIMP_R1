@@ -12,6 +12,7 @@ import com.sap.timp.base.TestBaseKenssy;
 
 public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
 	
+
 	@FindBy(xpath = "//span[text()=\"Processo de negócio\"]")
 	public WebElement procesoNegocio;
 	

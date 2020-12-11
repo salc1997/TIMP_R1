@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="6" passed="6">
 =======
 <<<<<<< HEAD
@@ -420,84 +421,25 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite started-at="2020-12-08T23:03:39Z" name="Default suite" finished-at="2020-12-08T23:06:37Z" duration-ms="177904">
-=======
-  <suite started-at="2020-12-08T23:55:32Z" name="Default suite" finished-at="2020-12-08T23:56:51Z" duration-ms="79078">
->>>>>>> refs/heads/Cristhian
-=======
-  <suite started-at="2020-12-10T06:30:15Z" name="Default suite" finished-at="2020-12-10T06:31:57Z" duration-ms="102418">
->>>>>>> refs/remotes/origin/Yessy
+  <suite started-at="2020-12-11T01:16:14Z" name="Default suite" finished-at="2020-12-11T01:19:35Z" duration-ms="201021">
     <groups>
     </groups>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test started-at="2020-12-08T23:03:39Z" name="Default test" finished-at="2020-12-08T23:06:37Z" duration-ms="177904">
-      <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:03:39Z" name="beforeClass" finished-at="2020-12-08T17:04:10Z" duration-ms="31237" status="PASS">
-=======
-    <test started-at="2020-12-08T23:55:32Z" name="Default test" finished-at="2020-12-08T23:56:51Z" duration-ms="79078">
-      <class name="com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:55:32Z" name="beforeClass" finished-at="2020-12-08T20:55:47Z" duration-ms="14742" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-    <test started-at="2020-12-10T06:30:15Z" name="Default test" finished-at="2020-12-10T06:31:57Z" duration-ms="102418">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:30:15Z" name="beforeClass" finished-at="2020-12-10T00:30:39Z" duration-ms="24238" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+    <test started-at="2020-12-11T01:16:14Z" name="Default test" finished-at="2020-12-11T01:19:35Z" duration-ms="201021">
+      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:16:14Z" name="beforeClass" finished-at="2020-12-10T19:16:51Z" duration-ms="37376" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- excluirColuna -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="editarRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="editarRelatorio" duration-ms="91430" started-at="2020-12-03T19:38:02Z" finished-at="2020-12-03T19:39:34Z">
-=======
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="SKIP" signature="ingresar()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="ingresar" duration-ms="1" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="login" duration-ms="13722" started-at="2020-12-07T16:47:31Z" finished-at="2020-12-07T16:47:45Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:04Z" name="login" finished-at="2020-12-08T02:02:11Z" duration-ms="6610" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:27Z" name="login" finished-at="2020-12-08T17:38:37Z" duration-ms="9906" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:10Z" name="login" finished-at="2020-12-08T17:04:18Z" duration-ms="8160" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:55:47Z" name="login" finished-at="2020-12-08T20:55:54Z" duration-ms="6657" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:30:39Z" name="login" finished-at="2020-12-10T00:30:48Z" duration-ms="9009" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:16:51Z" name="login" finished-at="2020-12-10T19:17:05Z" duration-ms="13609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -521,8 +463,12 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:30:48Z" name="acessarMDR" finished-at="2020-12-10T00:31:08Z" duration-ms="19944" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="BPMAEntrar()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:17:05Z" name="BPMAEntrar" finished-at="2020-12-10T19:17:39Z" duration-ms="34462" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- mdrEntrar -->
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="criar" duration-ms="71009" started-at="2020-12-10T14:53:02Z" finished-at="2020-12-10T14:54:13Z">
@@ -541,8 +487,13 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         </test-method> <!-- acessarMDR -->
         <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:31:08Z" name="visualizar" finished-at="2020-12-10T00:31:57Z" duration-ms="49196" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- BPMAEntrar -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:17:39Z" name="criar" finished-at="2020-12-10T19:19:35Z" duration-ms="115556" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="editar" duration-ms="1" started-at="2020-12-10T14:54:13Z" finished-at="2020-12-10T14:54:13Z">
@@ -562,9 +513,14 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         </test-method> <!-- visualizar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:31:57Z" name="afterClass" finished-at="2020-12-10T00:31:57Z" duration-ms="0" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:19:35Z" name="afterClass" finished-at="2020-12-10T19:19:35Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar -->
 =======
@@ -806,6 +762,9 @@ Session ID: d1886210e759b6ae873071afc7e0108a
 =======
       </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

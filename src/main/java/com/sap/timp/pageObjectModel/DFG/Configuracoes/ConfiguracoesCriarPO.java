@@ -1,12 +1,9 @@
 package com.sap.timp.pageObjectModel.DFG.Configuracoes;
 
-import java.rmi.server.Skeleton;
 import java.util.ArrayList;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -41,7 +38,9 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcaoGrupoEstruturaTP1;
-	@FindBy(xpath = "//li[@id=\"option-7\"]")
+
+
+	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcaoGrupoEstrutura;
 	
 	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")
@@ -167,8 +166,6 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		boolean tp1 = false;
 		if (url.contains("tp1")) {
 			tp1 = true;
-		}else {
-			tp1 = false;
 		}
 		
 		waitExpectElement(raiz1);
@@ -216,10 +213,11 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		actionsMoveToElementElement(opcaoGrupoEstrutura);
 		sleep(1000);
 		
-		if (tp1 == true) {
-			opcaoGrupoEstruturaTP1.click();
-		}else {
+		if (tp1 == false) {
+
 			opcaoGrupoEstrutura.click();
+		}else {
+			opcaoGrupoEstruturaTP1.click();
 		}
 		
 		sleep(1000);

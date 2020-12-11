@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
-	
+public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
+
 	@FindBy(xpath = "//span[text()=\"Processo de negócio\"]")
 	public WebElement procesoNegocio;
 	
@@ -75,12 +75,11 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
 	
 	
 	
-	public ParametrosGeraisCriarProcesoRecorrentePO() {
-
+	public ParametrosGeraisVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> criar() {
+	public ArrayList<Boolean> visualizar() {
 		
 		procesos.click();
 		sleep(3000);
@@ -211,21 +210,12 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000); 
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		  
 	
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
-		
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
-		menu.click();
-		sleep(2000);
-		açao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText(); 
 		System.out.println(idB);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

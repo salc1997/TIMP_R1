@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
-import com.sap.timp.pageObjectModel.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrentePO;
-import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarCopiaPO;
+import com.sap.timp.pageObjectModel.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -16,10 +15,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
+public class ParametrosGeraisVisualizar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
-	ParametrosGeraisCriarProcesoRecorrentePO  parametrosGeraisCriarProcesoRecorrentePO;
+	ParametrosGeraisVisualizarPO  parametrosGeraisVisualizarPO;
 	
   @BeforeClass
   public void beforeClass() {
@@ -27,7 +26,7 @@ public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
 	  driver = initializationKen();
 	  loginTC = new LoginTC();
 	  acessarBPMA = new AcessarBPMAPO();
-	  parametrosGeraisCriarProcesoRecorrentePO = new  ParametrosGeraisCriarProcesoRecorrentePO();
+	  parametrosGeraisVisualizarPO = new  ParametrosGeraisVisualizarPO();
   }
 
   @AfterClass
@@ -47,12 +46,12 @@ public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
  	}
  	
  	@Test(priority = 1)
- 	public void criar() {
+ 	public void visualizar() {
  		
- 		ArrayList<Boolean> sucesso = parametrosGeraisCriarProcesoRecorrentePO.criar();
+ 		ArrayList<Boolean> sucesso = parametrosGeraisVisualizarPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
+			assertTrue(sucesso.get(i), "Visualizacon con Exito");
 		}
  		
  	}

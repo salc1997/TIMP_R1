@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos;
+package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos;
 
 import java.util.ArrayList;
 
@@ -9,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class TabelaServicosVisualizarPO extends TestBaseMassiel{
-	
+public class TabelaDeProdutosVisualizarPO extends TestBaseMassiel{
+
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement obrigacoes;
 	
-	@FindBy(xpath = "//span[text()=\"Tabela de Serviços\"]")
-	public WebElement tabelaServicos;
+	@FindBy(xpath = "//span[text()=\"Tabela de Produtos\"]")
+	public WebElement tabeladeprodutos;
 	
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement ultimaPagina;
@@ -29,17 +29,17 @@ public class TabelaServicosVisualizarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[@id=\"obrigation\"]")
 	public WebElement obrigacaoV;
 	
-	@FindBy(xpath = "//span[@id=\"servicesCode\"]")
-	public WebElement codigoServicioSistemaV;
+	@FindBy(xpath = "//span[@id=\"productCode\"]")
+	public WebElement codigoProductoSistemaV;
 	
-	@FindBy(xpath = "//span[@id=\"servicesDescription\"]")
-	public WebElement descripcionServicioSistemaV;
+	@FindBy(xpath = "//span[@id=\"productDescriptionAccessory\"]")
+	public WebElement descripcionProductoSistemaV;
 
-	@FindBy(xpath = "//span[@id=\"serviceObligationCode\"]")
-	public WebElement codigoServicioObrigacaoV;
+	@FindBy(xpath = "//span[@id=\"productObligationCode\"]")
+	public WebElement codigoProductoObrigacaoV;
 	
-	@FindBy(xpath = "//span[@id=\"serviceObligationDescription\"]")
-	public WebElement descripcionServicioObrigacaoV;
+	@FindBy(xpath = "//span[@id=\"productObligationDescription\"]")
+	public WebElement descripcionProductoObrigacaoV;
 	
 	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div/input")
 	public WebElement codigoUfD;
@@ -47,32 +47,31 @@ public class TabelaServicosVisualizarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"obligation\"]/div/div/input")
 	public WebElement obrigacaoD;
 	
-	@FindBy(xpath = "//div[@id=\"serviceCode\"]/div/div/div/input")
-	public WebElement codigoServicioSistemaD;
+	@FindBy(xpath = "//div[@id=\"productCode\"]/div/div/div/input")
+	public WebElement codigoProductoSistemaD;
 	
-	@FindBy(xpath = "//div[@id=\"serviceDescription\"]/div/div/div/input")
-	public WebElement descripcionServicioSistemaD;
-	
+	@FindBy(xpath = "//div[@id=\"productDescription\"]/div/div/div/input")
+	public WebElement descripcionProductoSistemaD;
+
 	@FindBy(xpath = "//div[@id=\"obligationCode\"]/div/div/input")
-	public WebElement codigoServicioObrigacaoD;
+	public WebElement codigoProductoObrigacaoD;
 	
 	@FindBy(xpath = "//div[@id=\"obligationDescription\"]/div/div/input")
-	public WebElement descripcionServicioObrigacaoD;
+	public WebElement descripcionProductoObrigacaoD;
 	
-	public TabelaServicosVisualizarPO() {
+	public TabelaDeProdutosVisualizarPO() {
 		
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public ArrayList<Boolean> visualizar() {
 		
-	
 		obrigacoes.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tabelaServicos.click();
+		tabeladeprodutos.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -98,17 +97,18 @@ public class TabelaServicosVisualizarPO extends TestBaseMassiel{
 		
 		String textocodigoUfV = codigoUfV.getText();
 		String textoobrigacaoV = obrigacaoV.getText();
-		String textocodigoServicioSistemaV = codigoServicioSistemaV.getText();
-		String textodescripcionServicioSistemaV = descripcionServicioSistemaV.getText();
-		String textocodigoServicioObrigacaoV = codigoServicioObrigacaoV.getText();
-		String textodescripcionServicioObrigacaoV = descripcionServicioObrigacaoV.getText();
+		String textocodigoProductoSistemaV = codigoProductoSistemaV.getText();
+		String textodescripcionProductoSistemaV = descripcionProductoSistemaV.getText();
+		String textocodigoProductoObrigacaoV = codigoProductoObrigacaoV.getText();
+		String textodescripcionProductoObrigacaoV = descripcionProductoObrigacaoV.getText();
 		
 		System.out.println("Código UF: " + textocodigoUfV);
 		System.out.println("Obrigação: " + textoobrigacaoV);
-		System.out.println("Código Serviço do Sistema: " + textocodigoServicioSistemaV);
-		System.out.println("Descrição Serviço do Sistema: " + textodescripcionServicioSistemaV);
-		System.out.println("Código Serviço Obrigação: " + textocodigoServicioObrigacaoV);
-		System.out.println("Descrição Serviço Obrigação: " + textodescripcionServicioObrigacaoV);
+		System.out.println("Código Produto do Sistema: " + textocodigoProductoSistemaV );
+		System.out.println("Descrição Produto do Sistema: " + textodescripcionProductoSistemaV);
+		System.out.println("Código Produto Obrigação: " + textocodigoProductoObrigacaoV );
+		System.out.println("Descrição Produto Obrigação: " + textodescripcionProductoObrigacaoV);
+		
 		
 		sleep(2000);
 		biblioteca.click();
@@ -133,31 +133,32 @@ public class TabelaServicosVisualizarPO extends TestBaseMassiel{
 		sleep(2000);
 		sleep(2000);
 		
-		String textocodigoUfD =  codigoUfD.getAttribute("value");
-		String textoobrigacaoD =  obrigacaoD.getAttribute("value");
-		String textocodigoServicioSistemaD =  codigoServicioSistemaD.getAttribute("value");
-		String textodescripcionServicioSistemaD =  descripcionServicioSistemaD.getAttribute("value");
-		String textocodigoServicioObrigacaoD =  codigoServicioObrigacaoD.getAttribute("value");
-		String textodescripcionServicioObrigacaoD =  descripcionServicioObrigacaoD.getAttribute("value");
+		
+		String textocodigoUfD = codigoUfD.getAttribute("value");
+		String textoobrigacaoD = obrigacaoD.getAttribute("value");
+		String textocodigoProductoSistemaD = codigoProductoSistemaD.getAttribute("value");
+		String textodescripcionProductoSistemaD = descripcionProductoSistemaD.getAttribute("value");
+		String textocodigoProductoObrigacaoD = codigoProductoObrigacaoD.getAttribute("value");
+		String textodescripcionProductoObrigacaoD = descripcionProductoObrigacaoD.getAttribute("value");
 		
 		System.out.println("Código UF: " + textocodigoUfD);
 		System.out.println("Obrigação: " + textoobrigacaoD);
-		System.out.println("Código Serviço do Sistema: " + textocodigoServicioSistemaD);
-		System.out.println("Descrição Serviço do Sistema: " + textodescripcionServicioSistemaD);
-		System.out.println("Código Serviço Obrigação: " + textocodigoServicioObrigacaoD);
-		System.out.println("Descrição Serviço Obrigação: " + textodescripcionServicioObrigacaoD);
+		System.out.println("Código Produto do Sistema: " + textocodigoProductoSistemaD );
+		System.out.println("Descrição Produto do Sistema: " + textodescripcionProductoSistemaD);
+		System.out.println("Código Produto Obrigação: " + textocodigoProductoObrigacaoD );
+		System.out.println("Descrição Produto Obrigação: " + textodescripcionProductoObrigacaoD);
 		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(textocodigoUfD.equals(textocodigoUfV));
 		sucesso.add(textoobrigacaoD.equals(textoobrigacaoV));
-		sucesso.add(textocodigoServicioSistemaD.equals(textocodigoServicioSistemaV));
-		sucesso.add(textodescripcionServicioSistemaD.equals(textodescripcionServicioSistemaV));
-		sucesso.add(textocodigoServicioObrigacaoD.equals(textocodigoServicioObrigacaoV));
-		sucesso.add(textodescripcionServicioObrigacaoD.equals(textodescripcionServicioObrigacaoV));
+		sucesso.add(textocodigoProductoSistemaD.equals(textocodigoProductoSistemaV));
+		sucesso.add(textodescripcionProductoSistemaD.equals(textodescripcionProductoSistemaV));
+		sucesso.add(textocodigoProductoObrigacaoD.equals(textocodigoProductoObrigacaoV));
+		sucesso.add(textodescripcionProductoObrigacaoD.equals(textodescripcionProductoObrigacaoV));
 		System.out.println(sucesso);
 		
 		return sucesso;
 	}
-
 }

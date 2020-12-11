@@ -10,9 +10,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracoesCriarPO extends TestBaseSteven{
+public class ConfiguracoesCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz1;
@@ -40,7 +41,7 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcaoGrupoEstruturaTP1;
-	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
+	@FindBy(xpath = "//li[@id=\"option-7\"]")
 	public WebElement opcaoGrupoEstrutura;
 	
 	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")

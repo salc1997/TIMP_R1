@@ -1,148 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar">
-        <methods>
-          <include name="editar"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/remotes/origin/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente">
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
         <methods>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="acessarMDR"/>
-          <include name="login"/>
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar -->
-=======
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/heads/Cristhian
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir">
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia">
->>>>>>> refs/remotes/origin/Kenssy
-        <methods>
-<<<<<<< HEAD
-=======
-          <include name="beforeClass"/>
->>>>>>> refs/remotes/origin/Yessy
           <include name="criar"/>
-<<<<<<< HEAD
-=======
-          <include name="afterClass"/>
-          <include name="CriarCopia"/>
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/remotes/origin/Yessy
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
-=======
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/remotes/origin/master
-=======
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa -->
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-=======
->>>>>>> refs/remotes/origin/Kenssy
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades">
-        <methods>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="subNivel5"/>
-          <include name="subNivel4"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar -->
-=======
-      </class> <!-- com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades -->
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar -->
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir -->
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar -->
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente -->
->>>>>>> refs/remotes/origin/Yessy
+      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

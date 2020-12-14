@@ -18,6 +18,12 @@ import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
 public class EFDICMSIPICriarPO extends TestBaseSteven{
 	
+	
+	
+	
+	@FindBy(xpath = "//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]")
+	public WebElement fecharMensagem;
+	
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;
 	
@@ -573,11 +579,6 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		
-		sleep(7000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
 		while(!mapeamentoSPED.isDisplayed()) {
 			buscarSeparadores.click();
 			sleep(500);
@@ -925,7 +926,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		
 		rows = rows("//div[@class=\"tr\" and @data-id]");
 		
-		String ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[3]/div")).getText();
+		String ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdACB);
 		
 		sleep(2000);
@@ -1423,7 +1424,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+				
 		
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		 acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar Atualizações\"]"));
@@ -1549,15 +1550,16 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		executarDFG.click();
+		
+		driver.navigate().refresh();
 		sleep(3000);
+		waitExpectElement(visualizarArquivos);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
 		visualizarArquivos.click();
 		System.out.println("dio clic en visualizar");
-		sleep(2000);
-		visualizarArquivos.click();
 		sleep(2000);
 		waitExpectElement(atualizar);
 		sleep(2000);
@@ -1585,8 +1587,12 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		
 		System.out.println(sucesso);
 		
-		fechar.click();
+		driver.navigate().refresh();
+		sleep(3000);
+		waitExpectElement(visualizarArquivos);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
 		
 		return sucesso;
 		
@@ -1628,6 +1634,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(1000);
 		lixeira.click();
 		sleep(3000);
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		System.out.println("-----------------------------Exclusão Leiaute-----------------------------------");
@@ -1669,6 +1676,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(1000);
 		excluir.click();
 		sleep(3000);
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1738,6 +1746,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		sleep(2000);
 		System.out.println("-----------------------------Exclusão Leiaute-----------------------------------");
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
@@ -1763,7 +1772,8 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.clear();
+		primeira.click();
+		sleep(100);
 		pesquisar.sendKeys(idObter3());
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -1771,8 +1781,9 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		
-		menu = driver.findElement(By.xpath("//div[@class=\"actions\"]"));
-		WebElement excluir = driver.findElement(By.xpath("//li/span[text()=\"Excluir\"]"));
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
 		
 		menu.click();
 		sleep(1000);
@@ -1783,6 +1794,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		sleep(2000);
 		
 		driver.navigate().refresh();

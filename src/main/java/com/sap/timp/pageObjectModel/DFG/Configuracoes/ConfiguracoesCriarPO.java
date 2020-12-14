@@ -15,7 +15,7 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz1;
 	
-	@FindBy(xpath = "//div[@class=\"tabSettings-wrapper\"]/div/div/div[1]/div[1]/div[2]")
+	@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]/div/div[1]")
 	public WebElement raiz2;
 
 	@FindBy(xpath = "//button/span[text()=\"Novo Leiaute\"]")
@@ -210,7 +210,13 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		
 		grupoEstrutura.click();
 		sleep(1000);
-		actionsMoveToElementElement(opcaoGrupoEstrutura);
+		if (tp1 == false) {
+
+			actionsMoveToElementElement(opcaoGrupoEstrutura);
+		}else {
+			actionsMoveToElementElement(opcaoGrupoEstruturaTP1);
+		}
+		
 		sleep(1000);
 		
 		if (tp1 == false) {

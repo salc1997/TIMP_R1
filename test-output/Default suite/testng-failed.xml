@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
-=======
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
->>>>>>> refs/heads/Steven
     <classes>
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar">
+      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
         <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="CriarIncentivosFiscais"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesCriar -->
+      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

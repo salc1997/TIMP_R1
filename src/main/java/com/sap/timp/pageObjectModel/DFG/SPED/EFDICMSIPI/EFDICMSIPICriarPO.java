@@ -27,10 +27,10 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	@FindBy(xpath = "//div[@class=\"base-pagination-wrapper\"]/div[contains(@class,\"icon-right\") and @tabindex=\"0\"][2]")
 	public WebElement siguiente;
 
-	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][1]")
+	@FindBy(xpath = "//div[@class=\"base-pagination-wrapper\"]/div[contains(@class,\"icon-left\") and @tabindex=\"0\"][1]")
 	public WebElement primeira;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Nov\")]")
@@ -916,10 +916,12 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		primeira.click();
+		System.out.println("Dio click en primera pagina");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
+		System.out.println("Dio click en ultima pagina");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -927,7 +929,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		rows = rows("//div[@class=\"tr\" and @data-id]");
 		
 		String ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdACB);
+		System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
 		
 		sleep(2000);
 		efdO.click();
@@ -938,14 +940,14 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		novo.click();
 		sleep(3000);
 		waitExpectElement(nome);
-		sleep(2000);
+		sleep(2000); 
 		
 		nome.sendKeys("Teste Automatizado");
 		sleep(1000);
 		
 		leiauteE.click();
 		sleep(1000);
-		WebElement leiauteO = driver.findElement(By.xpath("//li[@id=\""+idObter2()+"\"]"));
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
 		leiauteO.click();
 		sleep(1000);
 		
@@ -988,6 +990,8 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		
 		salvar.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		primeira.click();
 		sleep(5000);
@@ -1773,9 +1777,10 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		primeira.click();
-		sleep(100);
-		pesquisar.sendKeys(idObter3());
-		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1808,9 +1813,11 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.clear();
-		pesquisar.sendKeys(idObter3());
-		pesquisar.sendKeys(Keys.ENTER);
+		primeira.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

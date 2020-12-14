@@ -75,7 +75,7 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tq1);
 		return driver;
 	}
 	
@@ -89,6 +89,16 @@ public class TestBaseSteven {
 		int rows = driver.findElements(By.xpath(element)).size();
 		
 		return rows;
+		
+	}
+	
+	public void invisibilityOfElementOverlay() {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		sleep(3000);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"overlay loader dark\"]")));
+		sleep(2000);
+
 		
 	}
 

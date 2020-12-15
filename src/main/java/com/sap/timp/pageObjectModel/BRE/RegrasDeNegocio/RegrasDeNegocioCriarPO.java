@@ -201,7 +201,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO14 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO14 QA 001 - NAO MEXER");
 		sleep(1000);
 		
 		tiporegra.click();

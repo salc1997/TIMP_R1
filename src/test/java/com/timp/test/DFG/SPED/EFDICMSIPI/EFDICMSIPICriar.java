@@ -22,7 +22,7 @@ import com.timp.test.DFG.AcessarDFG;
 
 public class EFDICMSIPICriar extends TestBaseSteven{
 	LoginTC loginTC;
-	AcessarDFGPO acessarDFGPO;
+	AcessarDFGPO acessarDFGPO; 
 	EFDICMSIPICriarPO eFDICMSIPIpCriarPO;
 
 	@BeforeClass

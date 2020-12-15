@@ -25,7 +25,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	ECDFuncionalidadesPO ecdFuncionalidadesPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

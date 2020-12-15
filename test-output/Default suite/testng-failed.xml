@@ -1,147 +1,15 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Yessy
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
-=======
-      <class name="com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar">
->>>>>>> refs/remotes/origin/Yessy
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
-=======
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BRE.RegrasdeNegócioExcluirdefinitivamente">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeNegócioExcluirdefinitivamente -->
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BSC.CorrecoesNotaFiscal.AprovarSJOB">
-        <methods>
-          <include name="aprobar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorrecoesNotaFiscal.AprovarSJOB -->
->>>>>>> refs/remotes/origin/Fernando
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-=======
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Fernando
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao">
         <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="informacao"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir -->
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.MDR.Automacoes.AutomaçõesMDR7">
-        <methods>
-          <include name="codigoFatosContabeisDetalhe"/>
-          <include name="codigoFatosContabeisVisualizar"/>
-          <include name="s1210PagamentosDeRendimientosDoTrabalhoEditar"/>
-          <include name="codigoFatosContabeisFiltrar"/>
-          <include name="parâmetrosParaEnvioDeMensagensDetalhe"/>
-          <include name="parâmetrosParaEnvioDeMensagensExcluirMassa"/>
-          <include name="descriçãoDeNatDeLesãoVisualizar"/>
-          <include name="parametrizaçãoDoLivroOficialEditar"/>
-          <include name="parâmetrosParaEnvioDeMensagensVisualizar"/>
-          <include name="s1210PagamentosDeRendimientosDoTrabalhoDetalhe"/>
-          <include name="s2210ComunicaçãoDeAcidenteDeTrabalhoCriar"/>
-          <include name="classificaçaoDeContribuintesDoIPIExcluirMassa"/>
-          <include name="s1070ProcessosAdmJudiciaisCriar"/>
-          <include name="s1070ProcessosAdmJudiciaisEditar"/>
-          <include name="rateiroConsorcio"/>
-          <include name="valoresParaMetodoPECEXExcluirMassas"/>
-          <include name="parametrizaçãoDoLivroOficialVisualizar"/>
-          <include name="associaçãoCriar"/>
-          <include name="compatibilidadeEnCatTrabVisualizar"/>
-          <include name="contasEspeciaisIRPJCSLL"/>
-          <include name="configuraçãDeTipoTaxaDeAtualizaçãoExcluir"/>
-          <include name="contrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar"/>
-          <include name="balançoConsolidadoEditar"/>
-          <include name="s1210PagamentosDeRendimientosDoTrabalhoExcluir"/>
-          <include name="compatibilidadeEnCatTrabExcluir"/>
-          <include name="parâmetrosParaEnvioDeMensagensCriar"/>
-          <include name="codigoFatosContabeisCriar"/>
-          <include name="associaçãoVisualizar"/>
-          <include name="parâmetrosParaEnvioDeMensagensExcluir"/>
-          <include name="s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir"/>
-          <include name="associaçãoDetalhe"/>
-          <include name="parâmetrosParaEnvioDeMensagensFiltrosId"/>
-          <include name="codigoFatosContabeisEditar"/>
-          <include name="parâmetrosParaEnvioDeMensagensEditar"/>
-          <include name="codigoFatosContabeisExluir"/>
-          <include name="tabelaDeApoioECFCriar"/>
-          <include name="fatosContabeisFiltrar"/>
-          <include name="configuraçãDeTipoTaxaDeAtualizaçãoCriar"/>
-          <include name="s1070ProcessosAdmJudiciaisExcluir"/>
-          <include name="contasDefaultParaExtemporaneoExcluirMassa"/>
-          <include name="s1210PagamentosDeRendimientosDoTrabalhoCriar"/>
-          <include name="s2210ComunicaçãoDeAcidenteDeTrabalhoEditar"/>
-          <include name="valoresParaMetodoPVEXExcluirMassa"/>
-          <include name="configuraçãDeTipoTaxaDeAtualizaçãoEditar"/>
-=======
-          <include name="executar"/>
->>>>>>> refs/remotes/origin/Yessy
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomaçõesMDR7 -->
-=======
-      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFCriar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.BSC.CorreçãodeNF.CorreçãodeNFEditar -->
->>>>>>> refs/remotes/origin/Yessy
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-=======
->>>>>>> refs/remotes/origin/Fernando

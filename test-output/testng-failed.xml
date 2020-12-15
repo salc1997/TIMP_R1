@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
+      <class name="com.timp.test.DFG.SPED.ECD.ECDFuncionalidades">
         <methods>
-          <include name="formatacaoEVariante"/>
+          <include name="EditarECD"/>
+          <include name="InformacaoBlocoApuracao"/>
+          <include name="EditarBlocoApuracao"/>
+          <include name="beforeClass"/>
+          <include name="executarECD"/>
+          <include name="visualizarBlocoApuracao"/>
+          <include name="excluirVariante"/>
+          <include name="afterClass"/>
+          <include name="arquivosVerificar"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
+      </class> <!-- com.timp.test.DFG.SPED.ECD.ECDFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

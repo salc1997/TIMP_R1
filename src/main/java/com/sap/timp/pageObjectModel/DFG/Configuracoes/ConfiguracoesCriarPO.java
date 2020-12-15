@@ -319,7 +319,8 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		}else {
 			sucesso.add(false);
 		}
-		
+		System.out.println("IdLeiaute: " + idLeiauteT );
+		idInserir1(idLeiauteT);
 		System.out.println("Versão: " + versaoT.equals("1.0"));
 		System.out.println("Nome: " + nomeT.equals("Teste Automatizado"));
 		System.out.println("Tipo: " + tipoTE.equals(tipoT));

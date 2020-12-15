@@ -60,7 +60,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		}
 
 	}
-	/*
+
 	@Test(priority = 3)
 	public void EditarECD() {
 		
@@ -80,11 +80,11 @@ public class ECDFuncionalidades extends TestBaseSteven{
 
 
 	}
-	*/
+
 	@Test(priority = 5)
-	public void VisualizacaoECD() {
+	public void CriarBlocoApuracao() {
 		
-		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizar();
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.criarBlocoApuracao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
@@ -92,5 +92,101 @@ public class ECDFuncionalidades extends TestBaseSteven{
 
 
 	}
+	
+	@Test(priority = 6)
+	public void EditarBlocoApuracao() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.editarBlocoApuracao();
+		
+
+		assertTrue(sucesso, Editar);
+
+
+
+	}
+	
+	
+	@Test(priority = 7)
+	public void InformacaoBlocoApuracao() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.informacaoBlocoApuracao();
+		
+
+		assertTrue(sucesso, Editar);
+
+
+
+	}
+	
+	
+	@Test(priority = 8)
+	public void visualizarBlocoApuracao() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarBlocoApuracao();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
+	
+	
+	
+	@Test(priority = 9)
+	public void ExecucaoBlocoApuracao() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.ExecucaoBlocosApuracao();
+		
+		assertTrue(sucesso, Criar);
+
+	}
+	
+	
+	@Test(priority = 10)
+	public void visualizarAtualizacoesBlocoApuracao() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarActualizacoes();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
+	
+	
+	@Test(priority = 11)
+	public void arquivosVerificar() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.verificarArquivosRaiz();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
+	
+		
+	
+	@Test(priority = 12)
+	public void executarECD() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.executarVariante();
+		
+		assertTrue(sucesso, Criar);
+
+	}
+	
+	
+	@Test(priority = 13)
+	public void excluirVariante() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.excluirVariante();
+		
+		assertTrue(sucesso, Eliminado);
+
+	}
+	
+	
+	
 	
 }

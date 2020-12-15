@@ -75,7 +75,7 @@ public class TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 		return driver;
 	}
 	
@@ -84,6 +84,9 @@ public class TestBaseSteven {
 		
 	}
 	
+	public void refresh() {
+		driver.navigate().refresh();
+	}
 	public int rows(String element) {
 		
 		int rows = driver.findElements(By.xpath(element)).size();

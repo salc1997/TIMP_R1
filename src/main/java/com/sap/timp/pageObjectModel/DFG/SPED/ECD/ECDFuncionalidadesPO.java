@@ -544,7 +544,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		
 	}
 	
-	public boolean visualizar() {
+	public boolean informacao() {
 		
 
 		System.out.println("-------------------------------------Verificação Informação--------------------------------------------");
@@ -577,12 +577,116 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		
 		boolean sucesso = texto.equals(descricaoI1);
 		System.out.println(sucesso);
-		
+		sleep(1000);
+		fechar.click();
 		
 		return sucesso;
 		
 		
 	}
+	
+	public ArrayList<Boolean> visualizar() {
+		
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2  = false;
+		
+
+		if(url.contains("tc2")){
+			tc2 = true;
+		}
+		
+		String idRegistro = idObter1();
+		
+
+		System.out.println("-------------------------------------Verificação Visualizar-------------------------------------------");
+		
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		invisibilityOfElementOverlay();
+		System.out.println("----------Visualizar-------");
+		String nomeV1 = nomeV.getAttribute("value");
+		String descricaoV1 = descricaoV.getAttribute("value");
+		String leiauteV1 = leiauteV.getAttribute("value");
+		String versaoV1 = versaoV.getAttribute("value");
+		String tributoV1 = tributoV.getAttribute("value");
+		String empresaV1 = empresaV.getText();
+		String ufV1 = ufV.getText();
+		String filialV1 = filialV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getAttribute("value");
+		
+		System.out.println(nomeV1);
+		System.out.println(descricaoV1);
+		System.out.println(leiauteV1);
+		System.out.println(versaoV1);
+		System.out.println(tributoV1);
+		System.out.println(empresaV1);
+		System.out.println(ufV1);
+		System.out.println(filialV1);
+		System.out.println(dataVigenciaV1);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+
+		fechar.click();
+		sleep(2000);
+		
+	
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		invisibilityOfElementOverlay();
+		
+		String nomeE1 = nomeV.getAttribute("value");
+		String descricaoE1 = descricaoV.getAttribute("value");
+		String leiauteE1 = leiauteV.getAttribute("value");
+		String versaoE1 = versaoV.getAttribute("value");
+		String tributoE1 = tributoV.getAttribute("value");
+		String empresaE1 = empresaV.getText();
+		String ufE1 = ufV.getText();
+		String filialE1 = filialV.getText();
+		String dataVigenciaE1 = dataVigenciaV.getAttribute("value");
+		System.out.println("----------Editar-------");
+		
+		System.out.println(nomeE1);
+		System.out.println(descricaoE1);
+		System.out.println(leiauteE1);
+		System.out.println(versaoE1);
+		System.out.println(tributoE1);
+		System.out.println(empresaE1);
+		System.out.println(ufE1);
+		System.out.println(filialE1);
+		System.out.println(dataVigenciaE1);
+		
+
+		sucesso.add(nomeV1.equals(nomeE1));
+		sucesso.add(descricaoV1.equals(descricaoE1));
+		sucesso.add(leiauteV1.contains(leiauteE1));
+		sucesso.add(versaoV1.equals(versaoE1));
+		sucesso.add(tributoV1.equals(tributoE1));
+		sucesso.add(empresaV1.equals(empresaE1));
+		sucesso.add(ufV1.equals(ufE1));
+		sucesso.add(filialV1.contains(filialE1));
+		sucesso.add(dataVigenciaV1.equals(dataVigenciaE1));
+		
+		System.out.println(sucesso);
+		
+		fechar.click();
+		sleep(2000);
+
+		return sucesso;
+		
+		
+	}
+	
+	
 	
 	
 	

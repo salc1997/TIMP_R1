@@ -70,17 +70,27 @@ public class ECDFuncionalidades extends TestBaseSteven{
 
 
 	}
-	*/
-	@Test(priority = 3)
-	public void VisualizarECD() {
+
+	@Test(priority = 4)
+	public void InformacaoECD() {
 		
-		boolean sucesso = ecdFuncionalidadesPO.visualizar();
+		boolean sucesso = ecdFuncionalidadesPO.informacao();
 		
 		assertTrue(sucesso, visualizaçar);
 
 
 	}
-	
-	
+	*/
+	@Test(priority = 5)
+	public void VisualizacaoECD() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+
+
+	}
 	
 }

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -56,9 +57,12 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir">
 =======
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -66,7 +70,11 @@
     <classes>
       <class name="com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos">
+>>>>>>> refs/heads/Cristhian
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="beforeClass"/>
@@ -84,7 +92,13 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+>>>>>>> refs/heads/Cristhian
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -92,7 +106,10 @@
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
 =======
+=======
+>>>>>>> refs/heads/Cristhian
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
+<<<<<<< HEAD
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/remotes/origin/master
@@ -156,6 +173,8 @@
         </methods>
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao -->
 >>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

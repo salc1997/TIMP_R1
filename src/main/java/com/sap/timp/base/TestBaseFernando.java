@@ -21,8 +21,16 @@ public class TestBaseFernando extends TestBaseSteven {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+<<<<<<< HEAD
+=======
+		driver.get(tc2);
+>>>>>>> refs/heads/Cristhian
 
+<<<<<<< HEAD
 		driver.get(tp1);
+=======
+
+>>>>>>> refs/heads/Cristhian
 
 		return driver;
 	}

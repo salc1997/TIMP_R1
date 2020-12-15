@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="6" passed="6">
 =======
 <<<<<<< HEAD
@@ -19,7 +20,10 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51,8 +55,11 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Cristhian
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="191732" started-at="2020-12-10T20:52:08Z" finished-at="2020-12-10T20:55:20Z">
@@ -94,8 +101,12 @@
 =======
   <suite started-at="2020-12-11T00:34:22Z" name="Default suite" finished-at="2020-12-11T00:35:54Z" duration-ms="92455">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2020-12-14T14:30:43Z" name="Default suite" finished-at="2020-12-14T14:33:31Z" duration-ms="167703">
+>>>>>>> refs/heads/Cristhian
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="191732" started-at="2020-12-10T20:52:08Z" finished-at="2020-12-10T20:55:20Z">
@@ -158,9 +169,15 @@
       <class name="com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia@10f7f7de]" started-at="2020-12-10T18:34:22Z" name="beforeClass" finished-at="2020-12-10T18:34:35Z" duration-ms="12794" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2020-12-14T14:30:43Z" name="Default test" finished-at="2020-12-14T14:33:31Z" duration-ms="167703">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados@4c309d4d]" started-at="2020-12-14T11:30:43Z" name="beforeClass" finished-at="2020-12-14T11:30:55Z" duration-ms="12017" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="ingresar" duration-ms="8454" started-at="2020-12-10T14:52:24Z" finished-at="2020-12-10T14:52:32Z">
@@ -192,12 +209,20 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia@10f7f7de]" started-at="2020-12-10T18:34:35Z" name="login" finished-at="2020-12-10T18:34:44Z" duration-ms="9051" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados@4c309d4d]" started-at="2020-12-14T11:30:55Z" name="login" finished-at="2020-12-14T11:31:02Z" duration-ms="6948" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="BPMAEntrar()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia@10f7f7de]" started-at="2020-12-10T18:34:44Z" name="BPMAEntrar" finished-at="2020-12-10T18:34:58Z" duration-ms="13656" status="PASS">
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados@4c309d4d]" started-at="2020-12-14T11:31:02Z" name="acessarBRE" finished-at="2020-12-14T11:31:19Z" duration-ms="17010" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- BPMAEntrar -->
         <test-method signature="CriarCopia()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia@10f7f7de]" started-at="2020-12-10T18:34:58Z" name="CriarCopia" finished-at="2020-12-10T18:35:54Z" duration-ms="56928" status="FAIL">
           <exception class="org.openqa.selenium.JavascriptException">
@@ -303,14 +328,14 @@ Session ID: 3c47a7b93dad8464a68fa52ad58d78dd
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados@4c309d4d]" started-at="2020-12-14T11:31:19Z" name="editar" finished-at="2020-12-14T11:33:31Z" duration-ms="131705" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         </test-method> <!-- editar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar@6d4d66d2]" started-at="2020-12-07T13:32:54Z" name="afterClass" finished-at="2020-12-07T13:32:54Z" duration-ms="1" status="PASS">
 =======
 <<<<<<< HEAD
@@ -518,9 +543,13 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:19:35Z" name="afterClass" finished-at="2020-12-10T19:19:35Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados@4c309d4d]" started-at="2020-12-14T11:33:31Z" name="afterClass" finished-at="2020-12-14T11:33:31Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar -->
@@ -797,6 +826,9 @@ Session ID: d1886210e759b6ae873071afc7e0108a
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao -->
 >>>>>>> refs/remotes/origin/Fernando
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados -->
+>>>>>>> refs/heads/Cristhian
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

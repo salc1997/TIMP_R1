@@ -1,23 +1,21 @@
 package com.sap.timp.pageObjectModel.DFG.Configuracoes;
 
-import java.rmi.server.Skeleton;
 import java.util.ArrayList;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracoesCriarPO extends TestBaseSteven{
+public class ConfiguracoesCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz1;
 	
-	@FindBy(xpath = "//div[@class=\"tabSettings-wrapper\"]/div/div/div[1]/div[1]/div[2]")
+	@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]/div/div[1]")
 	public WebElement raiz2;
 
 	@FindBy(xpath = "//button/span[text()=\"Novo Leiaute\"]")
@@ -40,7 +38,9 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcaoGrupoEstruturaTP1;
-	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
+
+
+	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcaoGrupoEstrutura;
 	
 	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")
@@ -166,8 +166,6 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 		boolean tp1 = false;
 		if (url.contains("tp1")) {
 			tp1 = true;
-		}else {
-			tp1 = false;
 		}
 		
 		waitExpectElement(raiz1);
@@ -212,13 +210,20 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 		
 		grupoEstrutura.click();
 		sleep(1000);
-		actionsMoveToElementElement(opcaoGrupoEstrutura);
+		if (tp1 == false) {
+
+			actionsMoveToElementElement(opcaoGrupoEstrutura);
+		}else {
+			actionsMoveToElementElement(opcaoGrupoEstruturaTP1);
+		}
+		
 		sleep(1000);
 		
-		if (tp1 == true) {
-			opcaoGrupoEstruturaTP1.click();
-		}else {
+		if (tp1 == false) {
+
 			opcaoGrupoEstrutura.click();
+		}else {
+			opcaoGrupoEstruturaTP1.click();
 		}
 		
 		sleep(1000);
@@ -314,7 +319,8 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 		}else {
 			sucesso.add(false);
 		}
-		
+		System.out.println("IdLeiaute: " + idLeiauteT );
+		idInserir1(idLeiauteT);
 		System.out.println("Versão: " + versaoT.equals("1.0"));
 		System.out.println("Nome: " + nomeT.equals("Teste Automatizado"));
 		System.out.println("Tipo: " + tipoTE.equals(tipoT));

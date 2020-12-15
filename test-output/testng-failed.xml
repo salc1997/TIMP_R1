@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -30,11 +31,14 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente">
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar">
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
 <<<<<<< HEAD
           <include name="acessarMDR"/>
@@ -128,11 +132,13 @@
       <class name="com.timp.test.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidades">
         <methods>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="executar"/>
+>>>>>>> refs/heads/Yessy
           <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="subNivel5"/>
-          <include name="subNivel4"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar -->
 =======
@@ -175,6 +181,9 @@
 >>>>>>> refs/remotes/origin/Fernando
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar -->
+>>>>>>> refs/heads/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

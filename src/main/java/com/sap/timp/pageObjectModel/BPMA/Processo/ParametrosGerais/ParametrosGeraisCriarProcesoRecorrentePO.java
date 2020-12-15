@@ -217,15 +217,7 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
 	
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
-		menu.click();
-		sleep(2000);
-		açao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
 		
 		System.out.println(idB);
 		

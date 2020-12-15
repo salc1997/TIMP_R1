@@ -57,9 +57,11 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		boolean sucesso2 = eFDICMSIPIpCriarPO.BRE();
 		assertTrue(sucesso2, Criar);
 		
-		eFDICMSIPIpCriarPO.DFG();
+		ArrayList<Boolean> sucesso3 = eFDICMSIPIpCriarPO.DFG();
 		
-		
+		for (int i = 0; i < sucesso3.size(); i++) {
+			assertTrue(sucesso3.get(i), visualizaçar);
+		}
 		
 
 	}
@@ -67,9 +69,9 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 	@Test(priority = 3)
 	public void editar() {
 		
-		//boolean sucesso = eFDICMSIPIpCriarPO.editarDFG();
+		boolean sucesso = eFDICMSIPIpCriarPO.editarDFG();
 		
-		//assertTrue(sucesso, Editar);
+		assertTrue(sucesso, Editar);
 		
 
 	}
@@ -98,5 +100,47 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
+	@Test(priority = 5)
+	public void blocoApuracaoExecutar() {
+		
+		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.execucao();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+		
+
+	}
 	
+	@Test(priority = 6)
+	public void arquivos() {
+		
+		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.arquivos();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+
+	}
+	
+	@Test(priority = 7)
+	public void excluirDFG() {
+		
+		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.excluirDFG();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+
+	}
+	
+	@Test(priority = 8)
+	public void excluirBRE() {
+		
+		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.excluirBRE();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+
+	}
 }

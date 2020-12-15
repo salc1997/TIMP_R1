@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar">
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar">
         <methods>
-          <include name="afterClass"/>
+          <include name="executar"/>
           <include name="beforeClass"/>
-          <include name="CriarIncentivosFiscais"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar -->
+      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

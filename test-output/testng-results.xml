@@ -385,6 +385,7 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
             </message>
             <full-stacktrace>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="right"]/div/div[4]/div/div[2]/div/div[10]/div/div"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -716,6 +717,8 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 8
 Session ID: d1886210e759b6ae873071afc7e0108a
 *** Element info: {Using=xpath, value=//div[@class="subLevel"][5]/div/div[@id="configuration"]/div/div[2]}
 =======
+=======
+>>>>>>> refs/heads/Yessy
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="digitalFile-wrapper"]/div/ul/li/span"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html

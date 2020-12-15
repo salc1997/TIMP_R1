@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração;
+package com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.ParametrosGerais;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Lixeira\"]")
 	public WebElement lixeira;
@@ -17,9 +17,8 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-b_rules\"]")
-	public WebElement regradeescrituracao;
+	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N1\"]")
+	public WebElement regrasdeauditorian1;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -33,7 +32,7 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement primeira;
 	
-	public RegraDeEscritucacaoExcluirPO() {
+	public RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -43,7 +42,7 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		regradeescrituracao.click();
+		regrasdeauditorian1.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -54,7 +53,7 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement lixeira1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -66,9 +65,13 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		lixeira1.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectElement(mensagem);
 		sleep(2000);
 		waitExpectElement(mensagembloqueio);
 		sleep(2000);
@@ -114,15 +117,15 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
 		waitExpectElement(mensagem);
 		sleep(2000);
 		waitExpectElement(mensagembloqueio);
-		sleep(2000);
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -131,12 +134,12 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+	
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		System.out.println(idRegistro);
-		System.out.println(idB);
+		System.out.println("Id do registro criado:"+idRegistro);
+		System.out.println("Último Id:"+idB);
 		double idD = convertToDouble(idRegistro);
 		double idBD = convertToDouble(idB);
 		
@@ -152,5 +155,6 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		System.out.println(sucesso);
 		return sucesso;
 	}
+
 
 }

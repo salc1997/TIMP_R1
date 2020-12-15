@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais;
+package com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,21 +11,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasDeAuditoriaN4VisualizarPO;
 
-public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamente extends TestBaseEliel {
+public class RegrasDeAuditoriaN4Visualizar extends TestBaseEliel{
 
-	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO regrasDeMensagensLixeiraMaisExcluirDefinitivamentePO;
+	RegrasDeAuditoriaN4VisualizarPO regrasDeAuditoriaN4VisualizarPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeMensagensLixeiraMaisExcluirDefinitivamentePO = new RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO();
+		regrasDeAuditoriaN4VisualizarPO = new RegrasDeAuditoriaN4VisualizarPO();
 	}
 
 	@AfterClass
@@ -44,10 +43,10 @@ public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamente extends TestBase
 	}
 	
 	@Test(priority = 2)
-	public void excluir() {
-		ArrayList<Boolean> sucesso = regrasDeMensagensLixeiraMaisExcluirDefinitivamentePO.excluir();
+	public void visualizar() {
+		ArrayList<Boolean> sucesso = regrasDeAuditoriaN4VisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), "O registro não foi excluido");
+			assertTrue(sucesso.get(i), visualizaçar);
 		}
 		
 	}

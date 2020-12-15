@@ -7,19 +7,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
-import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaCriarPO;
-import com.sap.timp.pageObjectModel.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialCriarPO;
-import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
+import com.sap.timp.pageObjectModel.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluirPO;
 
-public class ConfiguracaoFundoSocailCriar extends TestBaseEliel {
-
+public class ConfiguracoesFundoSocialExcluir extends TestBaseEliel {
+  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ConfiguracoesFundoSocialCriarPO configuracoesFundoSocialCriarPO;
+	ConfiguracoesFundoSocialExcluirPO configuracoesFundoSocialExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -27,7 +23,7 @@ public class ConfiguracaoFundoSocailCriar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		configuracoesFundoSocialCriarPO = new ConfiguracoesFundoSocialCriarPO();
+		configuracoesFundoSocialExcluirPO = new ConfiguracoesFundoSocialExcluirPO();
 	}
 
 	@AfterClass
@@ -49,11 +45,12 @@ public class ConfiguracaoFundoSocailCriar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
-		boolean sucesso = configuracoesFundoSocialCriarPO.criar();
-
-		assertTrue(sucesso, Criar);
+		boolean sucesso = configuracoesFundoSocialExcluirPO.excluir();
+		assertTrue(sucesso, Eliminado);
+		
 
 	}
+	
 }

@@ -29,30 +29,30 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Novo Estorno de Crédito de Insumos\"]")
 	public WebElement novoestorno;
 	
-	@FindBy(xpath = "//*[@id=\"company\"]/div/div[1]/div[1]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
 	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaoempresa;
 	
-	@FindBy(xpath ="//input[@placeholder=\"Selecionar UF Filial\"]")
+	@FindBy(xpath ="//div[@id=\"UF\"]/div/div/div[2]")
 	public WebElement selecionaruffilial; 
 	
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaouffilial;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filiais\"]")
+	@FindBy(xpath = "//div[@id=\"branches\"]/div/div/div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div[@class=\"list-item\" and @id]/div/label/span")
 	public WebElement opcao1filial;
 	
 
-	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div[@class=\"list-item\" and @id]/div/label/span")
+	@FindBy(xpath = " //div[@class=\"list-option\"][2]/div/div[2]")
 	public WebElement opcao2filial;
 	
-	@FindBy(xpath="//input[ @placeholder=\"Selecionar Filial Centralizadora\"]")
+	@FindBy(xpath="//div[@id=\"centralizedBranch\"]/div/div/div[2]")
 	public WebElement filialcentralizadora;
 	
 	@FindBy(xpath="//li[@id][1]")
@@ -117,26 +117,28 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 		
 		//Preenchimento 
 		empresa.click();
-		
+		sleep(2000);
 		opcaoempresa.click();
-		
-		opcaoempresa.sendKeys(Keys.ESCAPE);
-		
+		sleep(2000);
+		//empresa.sendKeys(Keys.ESCAPE);
+		sleep(2000);
 		selecionaruffilial.click();
-		
+		sleep(2000);
 		opcaouffilial.click();
-		
-	    opcaouffilial.sendKeys(Keys.ESCAPE);
+		sleep(2000);
+	   // selecionaruffilial.sendKeys(Keys.ESCAPE);
+	 
+		sleep(2000);
 		filial.click();
-		
+		sleep(2000);
 		opcao1filial.click();
 		sleep(2000);
 		opcao2filial.click();
 		sleep(2000);
-		opcao2filial.sendKeys(Keys.ESCAPE);
-	
+		closeSelectTypeCheckbox(filial);
+		sleep(2000);
 		filialcentralizadora.click();
-		
+		sleep(2000);
 		opcaofialcentralizadora.click();
 		
 		//pega a data atual

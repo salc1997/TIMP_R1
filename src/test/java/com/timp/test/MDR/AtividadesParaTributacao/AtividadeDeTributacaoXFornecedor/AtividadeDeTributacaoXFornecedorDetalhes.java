@@ -1,25 +1,24 @@
-package com.timp.test.MDR.ConfiguracoesFundoSocial;
+package com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
-import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaCriarPO;
-import com.sap.timp.pageObjectModel.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialCriarPO;
-import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
+import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.AtividadeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhesPO;
 
-public class ConfiguracaoFundoSocailCriar extends TestBaseEliel {
+public class AtividadeDeTributacaoXFornecedorDetalhes extends TestBaseEliel{
 
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ConfiguracoesFundoSocialCriarPO configuracoesFundoSocialCriarPO;
+	AtividadeDeTributacaoXFornecedorDetalhesPO atividadeDeTributacaoXFornecedorDetalhesPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -27,7 +26,7 @@ public class ConfiguracaoFundoSocailCriar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		configuracoesFundoSocialCriarPO = new ConfiguracoesFundoSocialCriarPO();
+		atividadeDeTributacaoXFornecedorDetalhesPO = new AtividadeDeTributacaoXFornecedorDetalhesPO();
 	}
 
 	@AfterClass
@@ -49,11 +48,15 @@ public class ConfiguracaoFundoSocailCriar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void Detalhes() {
 
-		boolean sucesso = configuracoesFundoSocialCriarPO.criar();
+		ArrayList<Boolean> sucesso = atividadeDeTributacaoXFornecedorDetalhesPO.detalhes();
 
-		assertTrue(sucesso, Criar);
+		for (int i = 0; i < sucesso.size(); i++) {
 
+			assertTrue(sucesso.get(i), Detalhes);
+
+		}
 	}
+
 }

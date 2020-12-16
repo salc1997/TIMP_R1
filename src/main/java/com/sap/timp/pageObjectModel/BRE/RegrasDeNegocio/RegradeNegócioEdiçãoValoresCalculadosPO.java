@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhian{
+public class RegradeNegÃ³cioEdiÃ§Ã£oValoresCalculadosPO extends TestBaseCristhian{
 
 
-	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
+	@FindBy(xpath = "//span[text()=\"Regras de NegÃ³cio\"]")
 	public WebElement regrasdenegocio;
 	
 	@FindBy(xpath = "//span[text()=\"Valores Calculados\"]")
@@ -26,7 +26,7 @@ public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Nome\"]")
 	public WebElement nomeVCalculado;
 	
-	@FindBy(xpath = "//textarea[@aria-label=\"Insira a fórmula\"]")
+	@FindBy(xpath = "//textarea[@aria-label=\"Insira a fÃ³rmula\"]")
 	public WebElement formula;
 	
 	
@@ -55,11 +55,11 @@ public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhian{
 	@FindBy(xpath = "//div[@id=\"option-1\"]")
 	public WebElement opcOperador;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[4]/div/div[1]/input")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[5]/div/div[1]/input")
 	public WebElement condicoes2;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[4]/div[2]/div[1]/div/div[1]/input")
-	public WebElement acoes;
+	@FindBy(xpath = "//li[text()=\"CÃ³digo Registro SPED- (aba:Dados LanÃ§amento) (ED)\"]")
+	public WebElement opcCondicoes2;
 	
 	@FindBy(xpath = "//div[@id=\"graph\"]//*[name()=\"g\"][5]")
 	public WebElement CFOP;
@@ -105,7 +105,50 @@ public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhian{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnAceitar;
 	
-	public RegradeNegócioEdiçãoValoresCalculadosPO() {
+	
+	
+	@FindBy(xpath = "//div[@class=\"select-one\"]/div/div/input")
+	public WebElement Condicoes;
+	
+	@FindBy(xpath = "//li[@id][text()=\"Tributo- (aba:Dados LanÃ§amento) (ED)\"]")
+	public WebElement opcaoCondicoes;
+	
+	@FindBy(xpath = "//div[@class=\"select-three\"]/div/div/div[2]/div/div[2]")
+	public WebElement Operador;
+	
+	@FindBy(xpath = "//div[@id]/div[text()=\"=\"]")
+	public WebElement opcaoOperador;
+	
+	//@FindBy(xpath = "//div[@class=\"value-one\"]/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"value-one\"]/div/div/input")
+	public WebElement NomeDoValor;
+	
+	@FindBy(xpath = "//li[@id][text()=\"BC ICMS (ED)\"]")
+	public WebElement opcaoNomeDoValor;
+	
+	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/div[2]")
+	public WebElement acoes;
+	
+	//@FindBy(xpath = "//div[@id=\"T1\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Dados LanÃ§amento\"]")
+	public WebElement opcaoacoes;
+	
+	//@FindBy(xpath = "//div[@id=\"T2\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro E111\"]")
+	public WebElement opcaoacoesr2;
+	
+	//@FindBy(xpath = "//div[@id=\"T3\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro C197 ou D197\"]")
+	public WebElement opcaoacoesr3;
+	
+	@FindBy(xpath = "//div[@class=\"tabAction-enable\"]/div/label/span")
+	public WebElement habilitar;
+	
+	@FindBy(xpath = "//div[@class=\"tabAction-obligatory\"]/div/label/span")
+	public WebElement preenchementoobrigatorio;
+	
+	
+	public RegradeNegÃ³cioEdiÃ§Ã£oValoresCalculadosPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -125,12 +168,12 @@ public boolean editar() {
 	
 	String idRegistro = idObter1();
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+	WebElement aÃ§ao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
 	
 	menu.click();
 	sleep(1000);
-	açao.click();
+	aÃ§ao.click();
 	sleep(3000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
@@ -144,7 +187,7 @@ public boolean editar() {
 	nomeVCalculado.sendKeys("TA-TESTE-Terceiro Caractere");
 	sleep(3000);
 	
-	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 3, 1)");
+	formula.sendKeys("MID(\"CÃ³digo oficial- (aba:Dados LanÃ§amento) (ED)\", 3, 1)");
 	sleep(3000);
 	
 	aplicar.click();
@@ -163,7 +206,7 @@ public boolean editar() {
 	nomeVCalculado.sendKeys("TA-TESTE-Quarto Caractere");
 	sleep(3000);
 	
-	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 4, 1)");
+	formula.sendKeys("MID(\"CÃ³digo oficial- (aba:Dados LanÃ§amento) (ED)\", 4, 1)");
 	sleep(3000);
 	
 	aplicar.click();
@@ -179,7 +222,7 @@ public boolean editar() {
 	nomeVCalculado.sendKeys("TA-TESTE-Editar/Excluir");
 	sleep(3000);
 	
-	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 4, 1)");
+	formula.sendKeys("MID(\"CÃ³digo oficial- (aba:Dados LanÃ§amento) (ED)\", 4, 1)");
 	sleep(3000);
 	
 	aplicar.click();
@@ -191,7 +234,7 @@ public boolean editar() {
 	formula.clear();
 	sleep(3000);
 	
-	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 4, 2)");
+	formula.sendKeys("MID(\"CÃ³digo oficial- (aba:Dados LanÃ§amento) (ED)\", 4, 2)");
 	sleep(2000);
 
 	
@@ -200,7 +243,7 @@ public boolean editar() {
 	
 	excluirVCalculado.click();
 	sleep(3000);
-	ok.click();
+	aplicar.click();
 	
 	sleep(3000);
 	fechar.click();
@@ -210,35 +253,41 @@ public boolean editar() {
 	camino.click();
 	sleep(2000);
 	
-	sleep(2000);
-	condicoes.sendKeys("Código Registro SPED- (aba:Dados Lançamento) (ED)");
-	sleep(2000);
-	condicoes.sendKeys(Keys.ENTER);
-	sleep(2000);
+	Condicoes.click();
+	sleep(1000);
+	Condicoes.sendKeys("CÃ³digo Registro SPED- (aba:Dados LanÃ§amento) (ED)");
+	Condicoes.sendKeys(Keys.ENTER);
+	sleep(1000);
 	
-	operador.click();
-	sleep(2000);
-	opcOperador.click();
-	sleep(2000);
+	Operador.click();
+	sleep(1000);
+	opcaoOperador.click();
+	sleep(1000);
 	
-	condicoes2.sendKeys("1200");
-	sleep(2000);
-	condicoes2.sendKeys(Keys.ENTER);
-	sleep(2000);
+	NomeDoValor.click();
+	sleep(1000);
+	NomeDoValor.sendKeys("CÃ³digo Registro SPED- (aba:Dados LanÃ§amento) (ED)");
+	NomeDoValor.sendKeys(Keys.ESCAPE);
 	
+	sleep(1000);
 	
-	
-	acoes.sendKeys("Alíquotas não apresentam valores iguais");
-	sleep(2000);
+	acoes.click();
+	sleep(1000);
+	opcaoacoes.click();
 	closeSelectTypeCheckbox(acoes);
-	
+	sleep(1000);
+	habilitar.click();
+	sleep(1000);
+	preenchementoobrigatorio.click();
+	sleep(1000);
 	aplicar.click();
-	sleep(4000);
+	sleep(2000);
 	
 	
 	grabar.click();
 	sleep(2000);
 	
+	waitExpectElement(sim);
 	sim.click();
 	sleep(3000);
 	

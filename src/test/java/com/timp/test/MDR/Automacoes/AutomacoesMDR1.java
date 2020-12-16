@@ -114,6 +114,7 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaFiltrosAvan;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId;
+import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluir;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFDetalhes;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFEditar;
@@ -255,6 +256,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	EstornoCreditoExcluir estornoCreditoExcluir;
 	EstornoCreditoFiltros estornoCreditoFiltros;
 	EstornoCreditoVisualizar estornoCreditoVisualizar;
+	
 
 	// Centralização > Fator de Crecimento do CIAP
 	FatorCreditamentoCriar fatorCreditamentoCriar;
@@ -319,7 +321,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	// Configuração do Fundo Socail
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
 	ConfiguracaoFundoSocailFiltroId configuracaoFundoSocailFiltroId;
-	
+	ConfiguracoesFundoSocialExcluir configuracoesFundoSocialExcluir;
+
 	// Contrato IOF
 
 	ContratoIOFCriar contratoIOFCriar;
@@ -1747,7 +1750,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 83)
+	@Test(priority = 84)
 	public void configuracaoFundoSocailFiltroId() {
 
 		configuracaoFundoSocailFiltroId = new ConfiguracaoFundoSocailFiltroId();
@@ -1758,11 +1761,25 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		configuracaoFundoSocailFiltroId.afterClass();
 
 	}
+	
+	@Test(priority = 85)
+	public void configuracoesFundoSocialExcluir() {
+
+		configuracoesFundoSocialExcluir = new ConfiguracoesFundoSocialExcluir();
+		configuracoesFundoSocialExcluir.beforeClass();
+		configuracoesFundoSocialExcluir.login();
+		configuracoesFundoSocialExcluir.acessarMDR();
+		configuracoesFundoSocialExcluir.excluir();
+		configuracoesFundoSocialExcluir.afterClass();
+		System.out.println("-------------------Configuração do Fundo Social Fim-------------------------");
+
+
+	}
 
 
 	// Contrato IOF
 
-	@Test(priority = 84)
+	@Test(priority = 86)
 	public void contratoIOFCriar() {
 
 		System.out.println("-------------------Contrato IOF-------------------------");
@@ -1776,7 +1793,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 85)
+	@Test(priority = 87)
 	public void contratoIOFEditar() {
 
 		contratoIOFEditar = new ContratoIOFEditar();
@@ -1788,7 +1805,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 86)
+	@Test(priority = 88)
 	public void contratoIOFVisualizar() {
 
 		contratoIOFVisualizar = new ContratoIOFVisualizar();
@@ -1799,7 +1816,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		contratoIOFVisualizar.afterClass();
 
 	}
-	@Test(priority = 86)
+	@Test(priority = 89)
 	public void contratoIOFDetalhes() {
 
 		contratoIOFDetalhes = new ContratoIOFDetalhes();
@@ -1811,7 +1828,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 87)
+	@Test(priority = 90)
 	public void contratoIOFExcluir() {
 
 		contratoIOFExcluir = new ContratoIOFExcluir();
@@ -1826,7 +1843,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// Controle De crédito Tributario > Código Crédito
 
-	@Test(priority = 88)
+	@Test(priority = 91)
 	public void codigosDeCreditoCriarFiscalCriar() {
 
 		System.out
@@ -1841,7 +1858,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 89)
+	@Test(priority = 92)
 	public void codigosDeCreditoEditar() {
 
 		codigosDeCreditoEditar = new CodigosDeCreditoEditar();
@@ -1853,7 +1870,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 90)
+	@Test(priority = 93)
 	public void codigosDeCreditoVisualizar() {
 
 		codigosDeCreditoVisualizar = new CodigosDeCreditoVisualizar();
@@ -1865,7 +1882,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 91)
+	@Test(priority = 94)
 	public void codigosDeCreditoDetalhes() {
 
 		codigosDeCreditoDetalhes = new CodigosDeCreditoDetalhes();
@@ -1877,7 +1894,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 92)
+	@Test(priority = 95)
 	public void codigosDeCreditoExcluir() {
 
 		codigosDeCreditoExcluir = new CodigosDeCreditoExcluir();
@@ -1893,7 +1910,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// ControleDeCreditoTributario > Limite De Credito A Utilizar
 
-	@Test(priority = 93)
+	@Test(priority = 96)
 	public void limiteDeCreditoAUtilizarCriar() {
 
 		System.out.println(
@@ -1908,7 +1925,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 94)
+	@Test(priority = 97)
 	public void limiteDeCreditoAUtilizarEditar() {
 
 		limiteDeCreditoAUtilizarEditar = new LimiteDeCreditoAUtilizarEditar();
@@ -1920,7 +1937,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 95)
+	@Test(priority = 98)
 	public void limiteDeCreditoAUtilizarVisualizar() {
 
 		limiteDeCreditoAUtilizarVisualizar = new LimiteDeCreditoAUtilizarVisualizar();
@@ -1932,7 +1949,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 96)
+	@Test(priority = 99)
 	public void limiteDeCreditoAUtilizarDetalhes() {
 
 		limiteDeCreditoAUtilizarDetalhes = new LimiteDeCreditoAUtilizarDetalhes();
@@ -1944,7 +1961,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 22)
+	@Test(priority = 100)
 	public void limiteDeCreditoAUtilizarFiltroID() {
 
 		limiteDeCreditoAUtilizarFiltroId = new LimiteDeCreditoAUtilizarFiltroId();
@@ -1957,7 +1974,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 97)
+	@Test(priority = 101)
 	public void limiteDeCreditoAUtilizarExcluir() {
 
 		limiteDeCreditoAUtilizarExcluir = new LimiteDeCreditoAUtilizarExcluir();
@@ -1973,7 +1990,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
 
-	@Test(priority = 98)
+	@Test(priority = 102)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarCriar() {
 
 		System.out.println(
@@ -1988,7 +2005,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 99)
+	@Test(priority = 103)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarEditar() {
 
 		utilizacaoDosCreditosEmPeriodoAnteriorEditar = new UtilizacaoDosCreditosEmPeriodoAnteriorEditar();
@@ -2000,7 +2017,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 100)
+	@Test(priority = 104)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarDetalhes() {
 
 		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes = new UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes();
@@ -2012,7 +2029,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 101)
+	@Test(priority = 105)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorVisualizar() {
 
 		utilizacaoDosCreditosEmPeriodoAnteriorVisualizar = new UtilizacaoDosCreditosEmPeriodoAnteriorVisualizar();
@@ -2024,7 +2041,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 102)
+	@Test(priority = 106)
 	public void utilizacaoDosCreditosEmPeriodoAnteriorExcluir() {
 
 		utilizacaoDosCreditosEmPeriodoAnteriorExcluir = new UtilizacaoDosCreditosEmPeriodoAnteriorExcluir();
@@ -2041,7 +2058,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	// Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração
 
-	@Test(priority = 103)
+	@Test(priority = 107)
 	public void utilizacaoDosCreditosNaApuracaoCriar() {
 
 		System.out.println(
@@ -2056,7 +2073,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 104)
+	@Test(priority = 108)
 	public void utilizacaoDosCreditosNaApuracaoEditar() {
 
 		utilizacaoDosCreditosNaApuracaoEditar = new UtilizacaoDosCreditosNaApuracaoEditar();
@@ -2068,7 +2085,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 105)
+	@Test(priority = 109)
 	public void utilizacaoDosCreditosNaApuracaoVisualizar() {
 
 		utilizacaoDosCreditosNaApuracaoVisualizar = new UtilizacaoDosCreditosNaApuracaoVisualizar();
@@ -2080,7 +2097,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 106)
+	@Test(priority = 110)
 	public void utilizacaoDosCreditosNaApuracaoDetalhes() {
 
 		utilizacaoDosCreditosNaApuracaoDetalhes = new UtilizacaoDosCreditosNaApuracaoDetalhes();
@@ -2092,7 +2109,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 107)
+	@Test(priority = 111)
 	public void utilizacaoDosCreditosNaApuracaoExcluir() {
 
 		utilizacaoDosCreditosNaApuracaoExcluir = new UtilizacaoDosCreditosNaApuracaoExcluir();
@@ -2105,7 +2122,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		
 	}
 	
-	@Test(priority = 22)
+	@Test(priority = 112)
 	public void utilizacaoDosCreditosNaApuracaoFiltroId() {
 
 		utilizacaoDosCreditosNaApuracaoFiltroId = new UtilizacaoDosCreditosNaApuracaoFiltroId();
@@ -2117,7 +2134,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 108)
+	@Test(priority = 113)
 	public void utilizacaoDosCreditosNaApuracaoExcluirEmMassa() {
 
 		utilizacaoDosCreditosNaApuracaoExcluirEmMassa = new UtilizacaoDosCreditosNaApuracaoExcluirEmMassa();
@@ -2133,7 +2150,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	
 	// Atividades Fiscais > Associação de Atividades Fiscais
 	//108
-	@Test(priority = 109)
+	@Test(priority = 114)
 	public void excluirAssociacao() {
 		associaçãoExcluir = new AssociaçãoExcluir();
 		associaçãoExcluir.beforeClass();
@@ -2149,7 +2166,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	
 	// SPCB - Federais Retidos
 		
-	@Test(priority = 113)
+	@Test(priority = 115)
 	public void criarSPCB() {
 		sPCBFederaisRetidosCriar = new SPCBFederaisRetidosCriar();
 		sPCBFederaisRetidosCriar.beforeClass();
@@ -2159,7 +2176,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		sPCBFederaisRetidosCriar.afterClass();
 	}
 	
-	@Test(priority = 114)
+	@Test(priority = 116)
 	public void editarSPCB() {
 		sPCBFederaisRetidosEditar = new SPCBFederaisRetidosEditar();
 		sPCBFederaisRetidosEditar.beforeClass();
@@ -2168,7 +2185,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		sPCBFederaisRetidosEditar.editar();
 		sPCBFederaisRetidosEditar.afterClass();
 	}
-	@Test(priority = 115)
+	@Test(priority = 117)
 	public void excluirSPCB() {
 		sPCBFederaisRetidosExcluir = new SPCBFederaisRetidosExcluir();
 		sPCBFederaisRetidosExcluir.beforeClass();
@@ -2177,7 +2194,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		sPCBFederaisRetidosExcluir.excluirr();
 		sPCBFederaisRetidosExcluir.afterClass();
 	}
-	@Test(priority = 116)
+	@Test(priority = 118)
 	public void excluirMassaSPCB() {
 		sPCBFederaisRetidosExcluirMassa = new SPCBFederaisRetidosExcluirMassa();
 		sPCBFederaisRetidosExcluirMassa.beforeClass();
@@ -2191,7 +2208,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	
 	// Notas a Declarar Anexo III DIA-AM
 	
-	@Test(priority = 117)
+	@Test(priority = 119)
 	public void criarMassaNotas() {
 		System.out.println("-------------------Notas a Declarar Anexo III DIA-AM -------------------------");
 		notasDeclararAnexoIIICriar = new NotasDeclararAnexoIIICriar();
@@ -2202,7 +2219,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIICriar.afterClass();
 	}
 	
-	@Test(priority = 118)
+	@Test(priority = 120)
 	public void detalheMassaNotas() {
 		notasDeclararAnexoIIIDetalhe = new NotasDeclararAnexoIIIDetalhe();
 		notasDeclararAnexoIIIDetalhe.beforeClass();
@@ -2212,7 +2229,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIIDetalhe.afterClass();
 	}
 	
-	@Test(priority = 119)
+	@Test(priority = 121)
 	public void excluirNotas() {
 		notasDeclararAnexoIIIExcluir = new NotasDeclararAnexoIIIExcluir();
 		notasDeclararAnexoIIIExcluir.beforeClass();
@@ -2222,7 +2239,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIIExcluir.afterClass();
 	}
 	
-	@Test(priority = 120)
+	@Test(priority = 122)
 	public void excluirMassaNotas() {
 		notasDeclararAnexoIIIExcluirMassa = new NotasDeclararAnexoIIIExcluirMassa();
 		notasDeclararAnexoIIIExcluirMassa.beforeClass();
@@ -2232,7 +2249,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIIExcluirMassa.afterClass();
 		System.out.println("-------------------Notas a Declarar Anexo III DIA-AM FIN-------------------------");
 	}
-	//120
+	//122
 		
 
 }

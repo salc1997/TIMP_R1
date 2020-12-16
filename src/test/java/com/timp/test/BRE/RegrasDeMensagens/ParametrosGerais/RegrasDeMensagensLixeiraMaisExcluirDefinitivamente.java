@@ -47,7 +47,7 @@ public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamente extends TestBase
 	public void excluir() {
 		ArrayList<Boolean> sucesso = regrasDeMensagensLixeiraMaisExcluirDefinitivamentePO.excluir();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Editar);
+			assertTrue(sucesso.get(i), "O registro não foi excluido");
 		}
 		
 	}

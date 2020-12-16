@@ -13,7 +13,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class TestBaseKenssy extends TestBaseSteven{
 	
@@ -23,7 +25,8 @@ public class TestBaseKenssy extends TestBaseSteven{
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
+
 		return driver;
 	}
 
@@ -144,5 +147,11 @@ public class TestBaseKenssy extends TestBaseSteven{
 		return idReturn;
 
 	}
+	
+
+	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
+	}
+	
 
 }

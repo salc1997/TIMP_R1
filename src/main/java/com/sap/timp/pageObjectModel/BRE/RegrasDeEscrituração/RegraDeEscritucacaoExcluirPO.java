@@ -11,7 +11,7 @@ import com.sap.timp.base.TestBaseEliel;
 
 public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 	
-	@FindBy(xpath = "//li[@class=\"base-accordion-li \"]/div/span[text()=\"Lixeira\"]")
+	@FindBy(xpath = "//span[text()=\"Lixeira\"]")
 	public WebElement lixeira;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
@@ -118,7 +118,12 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		primeira.click();
+		
+		waitExpectElement(mensagem);
+		sleep(2000);
+		waitExpectElement(mensagembloqueio);
+		sleep(2000);
+		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

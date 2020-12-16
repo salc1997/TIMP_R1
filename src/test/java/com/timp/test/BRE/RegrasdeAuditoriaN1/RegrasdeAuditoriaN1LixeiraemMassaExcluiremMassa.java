@@ -49,7 +49,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa extends TestBaseCri
 	@Test(priority = 2)
 	public void criar() {
 
-		boolean sucesso = regrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.criar();
+		boolean sucesso = regrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.excluirMassa();
 
 		assertTrue(sucesso, Criar);
 

@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracoesCriarPO extends TestBaseSteven{
+public class ConfiguracoesCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz1;
@@ -37,6 +38,8 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcaoGrupoEstruturaTP1;
+
+
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcaoGrupoEstrutura;
 	
@@ -316,7 +319,8 @@ public class ConfiguracoesCriarPO extends TestBaseSteven{
 		}else {
 			sucesso.add(false);
 		}
-		
+		System.out.println("IdLeiaute: " + idLeiauteT );
+		idInserir1(idLeiauteT);
 		System.out.println("Versão: " + versaoT.equals("1.0"));
 		System.out.println("Nome: " + nomeT.equals("Teste Automatizado"));
 		System.out.println("Tipo: " + tipoTE.equals(tipoT));

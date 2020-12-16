@@ -12,44 +12,68 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 	
 	
 	
-	@FindBy(xpath = "//span[text()=\"Regras\"]")
-	public WebElement Regras;
-	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N1\"]")
-	public WebElement AN1;
+	public WebElement regrasdeauditorian1;
 	
-	@FindBy(xpath = "//span[contains(text(),\"Nova Regra\")]")
-	public WebElement novo;
+	@FindBy(xpath = "//span[text()=\"Nova Regra\"]")
+	public WebElement novaregra;
 	
-	@FindBy(xpath = "//td[@colspan=\"6\" and @class=\"title-field\"]/div[1]/div/input")
+	@FindBy(xpath = "//td[@class=\"title-field\"]/div/div/input")
 	public WebElement nome;
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar o tipo da Regra\"]")
-	public WebElement tipoDeRegra;
+	@FindBy(xpath = "//td[@class=\"ruletype-field\"]/div/div/div[2]")
+	public WebElement tiporegra;
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar o grupo de Estruturas de Dados\"]")
-	public WebElement grupo;
+	@FindBy(xpath = "//li[@id][text()=\"Auditoria Nvl 1\"]")
+	public WebElement opcaotiporegra;
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Estrutura de Dados\"]")
-	public WebElement estructura;
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componente;
 	
-	@FindBy(xpath = "//li[@id=\"option-2\"]")
-	public WebElement opcTipoDeRegra;
+	@FindBy(xpath = "//li[@id][text()=\"TAA\"]")
+	public WebElement opcaocomponente;
 	
-	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
-	public WebElement opcGrupo;
+	@FindBy(xpath = "//td[@class=\"tribute-field\"]/div/div/div[2]")
+	public WebElement tipotributo;
 	
-	@FindBy(xpath = "//li[text()=\"Ajustes Fiscais\"]")
-	public WebElement opcEstructura;
+	@FindBy(xpath = "//div[@id=\"00\"]/div/label/span")
+	public WebElement opcaotipotributo;
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar o Tributo\"]")
-	public WebElement tipoTributo;
+	@FindBy(xpath = "//td[@class=\"datastructureCategory-field\"]/div/div/div[2]")
+	public WebElement grupodeestrutura;
 	
-	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
-	public WebElement opcionTipoTributo;
+	@FindBy(xpath = "//li[@id][text()=\"Ajuste\"][1]")
+	public WebElement opcaogrupodeestrutura;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/table/tbody/tr[31]/td[2]/div/div[1]/input")
-	public WebElement validade;
+	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
+	public WebElement opcaogrupodeestruturatp1;
+	
+	@FindBy(xpath = "//td[@class=\"datastructure-field\"]/div/div/div[2]")
+	public WebElement estruturadedados;
+	
+	@FindBy(xpath = "//li[@id][text()=\"Ajustes Fiscais\"]")
+	public WebElement opcaoestruturadedados;
+	
+	@FindBy(xpath = "//td[@class=\"special-field\"]/div/div/div[2]")
+	public WebElement caracteristicaespecial;
+	
+	@FindBy(xpath = "//li[@id][text()=\"Abas\"]")
+	public WebElement opcaocaracteristicaespecial;
+	
+	@FindBy(xpath = "//td[@class=\"tab-field\"]/div/div/div[2]")
+	public WebElement abas;
+	
+	@FindBy(xpath = "//div[@class=\"list-option selectAll\"]/div/div/label/span")
+	public WebElement opcaoabas;
+	
+	@FindBy(xpath = "//td[@class=\"regulation-field\"]/div/div/div[2]")
+	public WebElement regulamento;
+	
+	@FindBy(xpath = "//li[@id][text()=\"TA-TESTE\"]")
+	public WebElement opcaoRegulamento;
+	
+	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
+	public WebElement dataValidadeDe;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -107,14 +131,14 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean criar() {
+	public boolean excluirMassa() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		Regras.click();
 		sleep(2000);
-		AN1.click();
+		regrasdeauditorian1.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -133,43 +157,70 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		//---------------------CREACION----------------------
 		//-----------PRIMERO----------------
 		System.out.println("prueba 2");
-		novo.click();
-		sleep(6000);
-		
-		cancelar.click();
-		sleep(3000);
-		
-		novo.click();
-		sleep(6000);
-		
-		nome.sendKeys("PRUEBA QA 001");
+		novaregra.click();
+		sleep(2000);
+		waitExpectElement(nome);
 		sleep(2000);
 		
-		System.out.println("prueba 3");
-		tipoDeRegra.click();
-		sleep(3000);
-		opcTipoDeRegra.click();
-		sleep(3000);
-		System.out.println("prueba 4");
-		tipoTributo.click();
-		sleep(3000);
-		opcionTipoTributo.click();
+		nome.click();
 		sleep(1000);
-		opcionTipoTributo.sendKeys(Keys.ESCAPE);
-		sleep(3000);
+		nome.sendKeys("TESTE QA 1");
+		sleep(1000);
 		
-		grupo.click();
-		sleep(3000);
-		opcGrupo.click();
-		sleep(3000);
+		tiporegra.click();
+		sleep(1000);
+		opcaotiporegra.click();
+		sleep(1000);
 		
-		estructura.click();
-		sleep(3000);
-		opcEstructura.click();
-		sleep(3000);
+		tipotributo.click();
+		sleep(1000);
+		opcaotipotributo.click();
+		closeSelectTypeCheckbox(tipotributo);
+		sleep(1000);
 		
-		String data = fechaActual();
-		validade.sendKeys("01/01/2013");
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}
+		if(tp1 == true) {
+		grupodeestrutura.click();
+		sleep(1000);
+		opcaogrupodeestruturatp1.click();
+		sleep(1000);
+		}else {
+			grupodeestrutura.click();
+			sleep(1000);
+			opcaogrupodeestrutura.click();
+			sleep(1000);
+		}
+		
+		
+		
+		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		estruturadedados.click();
+		sleep(1000);
+		opcaoestruturadedados.click();
+		sleep(1000);
+		
+		regulamento.click();
+		sleep(1000);
+		opcaoRegulamento.click();
+		sleep(1000);
+		//dataValidadeDe.click();
+		sleep(1000);
+		dataValidadeDe.sendKeys("01/01/2013");
 		sleep(1000);
 		
 		sleep(2000);
@@ -181,52 +232,78 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 //		agg.sendKeys("Teste Criação");
 //		sleep(2000);
 		
-		aceitar.click();
 
 		sleep(2000);
-		
+		waitExpectElement(biblioteca);
 		biblioteca.click();
 	
 		sleep(2000);
-		waitExpectElement(AN1);
+		waitExpectElement(regrasdeauditorian1);
 		sleep(4000);
-		AN1.click();
+		regrasdeauditorian1.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
 		
 		//-----------SEGUNDO----------------
-		novo.click();
-		sleep(6000);
-		
-		nome.sendKeys("PRUEBA QA 002");
+		novaregra.click();
+		sleep(2000);
+		waitExpectElement(nome);
 		sleep(2000);
 		
-		
-		tipoDeRegra.click();
-		sleep(3000);
-		opcTipoDeRegra.click();
-		sleep(3000);
-		
-		tipoTributo.click();
-		sleep(3000);
-		opcionTipoTributo.click();
+		nome.click();
 		sleep(1000);
-		opcionTipoTributo.sendKeys(Keys.ESCAPE);
-		sleep(3000);
+		nome.sendKeys("TESTE QA 2");
+		sleep(1000);
 		
-		grupo.click();
-		sleep(3000);
-		opcGrupo.click();
-		sleep(3000);
+		tiporegra.click();
+		sleep(1000);
+		opcaotiporegra.click();
+		sleep(1000);
 		
-		estructura.click();
-		sleep(3000);
-		opcEstructura.click();
-		sleep(3000);
+		tipotributo.click();
+		sleep(1000);
+		opcaotipotributo.click();
+		closeSelectTypeCheckbox(tipotributo);
+		sleep(1000);
 		
-		String data1 = fechaActual();
-		validade.sendKeys("01/01/2013");
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}
+		if(tp1 == true) {
+		grupodeestrutura.click();
+		sleep(1000);
+		opcaogrupodeestruturatp1.click();
+		sleep(1000);
+		}else {
+			grupodeestrutura.click();
+			sleep(1000);
+			opcaogrupodeestrutura.click();
+			sleep(1000);
+		}
+		
+		
+		
+		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		estruturadedados.click();
+		sleep(1000);
+		opcaoestruturadedados.click();
+		sleep(1000);
+		
+		regulamento.click();
+		sleep(1000);
+		opcaoRegulamento.click();
+		sleep(1000);
+		//dataValidadeDe.click();
+		sleep(1000);
+		dataValidadeDe.sendKeys("01/01/2013");
 		sleep(1000);
 		
 		sleep(2000);
@@ -238,16 +315,15 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 //		agg.sendKeys("Teste Criação");
 //		sleep(2000);
 		
-		aceitar.click();
 
 		sleep(2000);
-		
+		waitExpectElement(biblioteca);
 		biblioteca.click();
 
 		sleep(2000);
-		waitExpectElement(AN1);
+		waitExpectElement(regrasdeauditorian1);
 		sleep(4000);
-		AN1.click();
+		regrasdeauditorian1.click();
 		
 		//---------------------------eliminacion-------------------------------------------
 		
@@ -259,7 +335,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+		sleep(8000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		Integer fila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		Integer fila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
@@ -296,30 +372,34 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+		sleep(8000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer fila1D = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer fila2D = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		fila2 = fila2D - 1; 
+		Integer lfila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		Integer lfila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		fila2 = lfila2 - 1; 
 		
-		WebElement selecccionunoD = driver.findElement(By.xpath("//div[@data-id]["+fila1D+"]/div[2]/label/span"));
-		selecccionuno.click();
-		WebElement selecccionDosD = driver.findElement(By.xpath("//div[@data-id]["+fila2D+"]/div[2]/label/span"));
-		selecccionDos.click();
+		WebElement lselecccionuno = driver.findElement(By.xpath("//div[@data-id]["+lfila1+"]/div[2]/label/span"));
+		lselecccionuno.click();
+		WebElement lselecccionDos = driver.findElement(By.xpath("//div[@data-id]["+lfila2+"]/div[2]/label/span"));
+		lselecccionDos.click();
 		
-		WebElement excluirmassaD = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Finance-and-Office icon-trash\"]"));
+		WebElement lexcluirmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Sign-and-Symbols icon-persign\"]"));
 		excluirmassa.click();
+		
 		
 		sleep(2000);
 		waitExpectElement(sim);
 		sleep(2000);
 		
 		sim.click();
-		
 		
 		
 		

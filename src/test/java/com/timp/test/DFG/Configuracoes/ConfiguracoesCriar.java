@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
@@ -19,14 +20,14 @@ import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFis
 import com.timp.test.DFG.AcessarDFG;
 
 
-public class ConfiguracoesCriar extends TestBaseSteven{
+public class ConfiguracoesCriar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	ConfiguracoesCriarPO configuracoesCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initialization();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		configuracoesCriarPO = new ConfiguracoesCriarPO();

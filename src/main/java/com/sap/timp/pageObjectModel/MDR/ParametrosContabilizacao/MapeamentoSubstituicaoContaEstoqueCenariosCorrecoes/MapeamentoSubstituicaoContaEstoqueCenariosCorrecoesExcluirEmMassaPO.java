@@ -129,7 +129,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO
 		filial.click();
 		sleep(1000);
 		filialO.click();
-		filialO.sendKeys(Keys.ESCAPE);
+		closeSelectTypeCheckbox(filial);
 		
 		sleep(1000);
 

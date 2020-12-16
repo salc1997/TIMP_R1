@@ -108,6 +108,9 @@ public class CorrecaoDeNFAprovarEmMassaCJOBPO extends TestBaseMassiel{
 		PageFactory.initElements(driver, this);
 	}
 	
+	/**
+	 * @return
+	 */
 	public ArrayList<Boolean> enviar() {
 		
 		AcessarBSCPO acessarBSC;
@@ -208,31 +211,31 @@ public class CorrecaoDeNFAprovarEmMassaCJOBPO extends TestBaseMassiel{
 		
 		//------------ ESTO NO LO NECESITO EN TQ1
 
-		driver.navigate().refresh();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		sleep(2000);
-		sleep(2000);
-		sleep(2000);
-		sleep(2000);
+		//driver.navigate().refresh();
+		//sleep(3000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(2000);
+		//sleep(2000);
+		//sleep(2000);
+		//sleep(2000);
+		//sleep(2000);
 		
 		
-		notaFiscal.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		//notaFiscal.click();
+		//sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(3000);
 		
-		progresso.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(68000);
+		//progresso.click();
+		//sleep(3000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(68000);
 		
-		Corrigido.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		sleep(3000);
+		//Corrigido.click();
+		//sleep(3000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//sleep(3000);
+		//sleep(3000);
 		
 		
 		Corrigido.click();

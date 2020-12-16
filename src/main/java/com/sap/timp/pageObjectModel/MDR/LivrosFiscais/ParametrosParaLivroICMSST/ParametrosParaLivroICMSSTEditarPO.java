@@ -65,32 +65,27 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBaseMassiel{
 		editar.click();
 		sleep(2000);
 		attributoNotToBeEmptyElement(fecha, "value");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	  	sleep(2000);
-		
-	  	sleep(9000);
-		sleep(9000);
+
 		
 	  	String valor = fecha.getAttribute("value");
 		System.out.println(valor);
 		String enviar = fechaAyer();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
 		
 		sleep(1000);
 		fecha.clear();
 
 		sleep(1000);
 		fecha.sendKeys(enviar);
+		sleep(1000);
 
 		Gravar.click();
-		sleep(5000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		
+		waitExpectElement(Sim);
 		Sim.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -99,9 +94,7 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBaseMassiel{
 		attributoNotToBeEmptyElement(fecha, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		sleep(9000);
-		sleep(9000);
+
 		String nuevoTexto = fecha.getAttribute("value");
 		System.out.println(valor);
 		System.out.println(nuevoTexto);
@@ -117,12 +110,10 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBaseMassiel{
 	
 		
 		Gravar.click();
-		sleep(5000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-			 
+		sleep(3000);
+		waitExpectElement(Sim);
 		Sim.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

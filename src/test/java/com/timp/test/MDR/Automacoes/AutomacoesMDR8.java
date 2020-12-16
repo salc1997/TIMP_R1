@@ -237,68 +237,7 @@ public class AutomacoesMDR8 {
 	
 	//19------------24
 	
-	@Test(priority = 19)
-	public void parametrosParaLivroICMSSTCriar() {
-
-		System.out.println("---- Libros Fiscais Parametros Para Livro ICMSST-------------");
-
-		parametrosParaLivroICMSSTCriar = new ParametrosParaLivroICMSSTCriar();
-		parametrosParaLivroICMSSTCriar.beforeClass();
-		parametrosParaLivroICMSSTCriar.login();
-		parametrosParaLivroICMSSTCriar.acessarMDR();
-		parametrosParaLivroICMSSTCriar.criar();
-		parametrosParaLivroICMSSTCriar.afterClass();
-
-	}
 	
-	@Test(priority = 20)
-	public void  parametrosParaLivroICMSSTEditar() {
-
-		parametrosParaLivroICMSSTEditar = new ParametrosParaLivroICMSSTEditar();
-		parametrosParaLivroICMSSTEditar.beforeClass();
-		parametrosParaLivroICMSSTEditar.login();
-		parametrosParaLivroICMSSTEditar.acessarMDR();
-		parametrosParaLivroICMSSTEditar.editar();
-		parametrosParaLivroICMSSTEditar.afterClass();
-
-	}
-	
-	@Test(priority = 21)
-	public void  parametrosParaLivroICMSSTVisualizar() {
-
-		parametrosParaLivroICMSSTVisualizar = new ParametrosParaLivroICMSSTVisualizar();
-		parametrosParaLivroICMSSTVisualizar.beforeClass();
-		parametrosParaLivroICMSSTVisualizar.login();
-		parametrosParaLivroICMSSTVisualizar.acessarMDR();
-		parametrosParaLivroICMSSTVisualizar.visualizar();
-		parametrosParaLivroICMSSTVisualizar.afterClass();
-
-	}
-	
-	@Test(priority = 22)
-	public void parametrosParaLivroICMSSTDetalle() {
-
-		parametrosParaLivroICMSSTDetalle = new ParametrosParaLivroICMSSTDetalle();
-		parametrosParaLivroICMSSTDetalle.beforeClass();
-		parametrosParaLivroICMSSTDetalle.login();
-		parametrosParaLivroICMSSTDetalle.acessarMDR();
-		parametrosParaLivroICMSSTDetalle.visualizar();
-		parametrosParaLivroICMSSTDetalle.afterClass();
-
-	}
-	
-	@Test(priority = 23)
-	public void parametrosParaLivroICMSSTExcluir() {
-
-		parametrosParaLivroICMSSTExcluir= new ParametrosParaLivroICMSSTExcluir();
-		parametrosParaLivroICMSSTExcluir.beforeClass();
-		parametrosParaLivroICMSSTExcluir.ingresar();
-		parametrosParaLivroICMSSTExcluir.ingresarMDR();
-		parametrosParaLivroICMSSTExcluir.Excluir();
-		parametrosParaLivroICMSSTExcluir.afterClass();
-
-		System.out.println("-------------------Parametros Para Livro ICMSST Fim-------------------------");
-	}
 	//24 ---------30
 	
 	@Test(priority = 24)

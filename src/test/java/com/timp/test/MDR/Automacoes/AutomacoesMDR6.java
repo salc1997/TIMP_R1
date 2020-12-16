@@ -7,6 +7,12 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegi
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluirEmMassaPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoCriarPO;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhes;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroID;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorVisualizar;
+import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa;
 import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisCriar;
 import com.timp.test.MDR.CadastrosIRPJCSLL.DEPARAContasContábeis.DEPARAContasContábeisEditar;
@@ -310,7 +316,12 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 		//Tabela Apoio SPED > Codigos Das Obrigacoes De ICMS a Recolher
 			CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa;
 
-			
+		//Atividades Para tributacao >Atividade De Tributacao X Fornecedor	
+			AtividadeDeTributacaoXFornecedorCriar atividadeDeTributacaoXFornecedorCriar;
+			AtividadeDeTributacaoXFornecedorFiltroID atividadeDeTributacaoXFornecedorFiltroID;
+			AtividadeDeTributacaoXFornecedorDetalhes atividadeDeTributacaoXFornecedorDetalhes;
+			AtividadeDeTributacaoXFornecedorVisualizar atividadeDeTributacaoXFornecedorVisualizar;
+			AtividadeDeTributacaoXFornecedorExcluir atividadeDeTributacaoXFornecedorExcluir;
 		//--------------------------------------------------------------------------
 			
 			//0
@@ -783,6 +794,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				tiposDeServicosExcluirEmMassa.afterClass();
 
 			}
+		
 			
 			//Valor Adicionado > Confrontacao
 			@Test(priority = 44)
@@ -1530,5 +1542,64 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.criar();
 				codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.afterClass();
 			}
+			
+			//Atividades Para tributacao >Atividade De Tributacao X Fornecedor
+			
+			@Test(priority = 104)	
+			public void atividadeDeTributacaoXFornecedorCriar() {
+				System.out.println("-------------------Atividades Para tributacao >Atividade De Tributacao X Fornecedor-------------------------");
+				atividadeDeTributacaoXFornecedorCriar = new AtividadeDeTributacaoXFornecedorCriar();
+				atividadeDeTributacaoXFornecedorCriar.beforeClass();
+				atividadeDeTributacaoXFornecedorCriar.login();
+				atividadeDeTributacaoXFornecedorCriar.acessarMDR();
+				atividadeDeTributacaoXFornecedorCriar.criar();
+				atividadeDeTributacaoXFornecedorCriar.afterClass();
+			}
+			
+			@Test(priority = 105)	
+			public void atividadeDeTributacaoXFornecedorFiltroID() {
+				atividadeDeTributacaoXFornecedorFiltroID = new AtividadeDeTributacaoXFornecedorFiltroID();
+				atividadeDeTributacaoXFornecedorFiltroID.beforeClass();
+				atividadeDeTributacaoXFornecedorFiltroID.login();
+				atividadeDeTributacaoXFornecedorFiltroID.acessarMDR();
+				atividadeDeTributacaoXFornecedorFiltroID.filtro();
+				atividadeDeTributacaoXFornecedorFiltroID.afterClass();
+			}
+			
+			@Test(priority = 106)	
+			public void atividadeDeTributacaoXFornecedorDetalhes() {
+				atividadeDeTributacaoXFornecedorDetalhes = new AtividadeDeTributacaoXFornecedorDetalhes();
+				atividadeDeTributacaoXFornecedorDetalhes.beforeClass();
+				atividadeDeTributacaoXFornecedorDetalhes.login();
+				atividadeDeTributacaoXFornecedorDetalhes.acessarMDR();
+				atividadeDeTributacaoXFornecedorDetalhes.Detalhes();
+				atividadeDeTributacaoXFornecedorDetalhes.afterClass();
+			}
+			
+			@Test(priority = 107)	
+			public void atividadeDeTributacaoXFornecedorVisualizar() {
+				atividadeDeTributacaoXFornecedorVisualizar = new AtividadeDeTributacaoXFornecedorVisualizar();
+				atividadeDeTributacaoXFornecedorVisualizar.beforeClass();
+				atividadeDeTributacaoXFornecedorVisualizar.login();
+				atividadeDeTributacaoXFornecedorVisualizar.acessarMDR();
+				atividadeDeTributacaoXFornecedorVisualizar.Visualizar();
+				atividadeDeTributacaoXFornecedorVisualizar.afterClass();
+			}
+			
+			
+			@Test(priority = 108)	
+			public void atividadeDeTributacaoXFornecedorExcluir() {
+				atividadeDeTributacaoXFornecedorExcluir = new AtividadeDeTributacaoXFornecedorExcluir();
+				atividadeDeTributacaoXFornecedorExcluir.beforeClass();
+				atividadeDeTributacaoXFornecedorExcluir.login();
+				atividadeDeTributacaoXFornecedorExcluir.acessarMDR();
+				atividadeDeTributacaoXFornecedorExcluir.excluir();
+				atividadeDeTributacaoXFornecedorExcluir.afterClass();
+				System.out.println("-------------------Atividades Para tributacao >Atividade De Tributacao X Fornecedor Fim-------------------------");
+				
+			}
+			
+			
+		
 
 }

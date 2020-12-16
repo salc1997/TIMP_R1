@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -81,7 +82,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir">
+        <methods>
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Eliel
           <include name="beforeClass"/>
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
           <include name="criar"/>
 <<<<<<< HEAD
@@ -101,7 +111,11 @@
           <include name="afterClass"/>
           <include name="criar"/>
 >>>>>>> refs/heads/Cristhian
+=======
+          <include name="excluir"/>
+>>>>>>> refs/remotes/origin/Eliel
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -184,6 +198,9 @@
 =======
       </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar -->
 >>>>>>> refs/heads/Yessy
+=======
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

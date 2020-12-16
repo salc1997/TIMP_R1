@@ -29,15 +29,22 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Novo Estorno de Crédito de Insumos\"]")
 	public WebElement novoestorno;
 	
-	@FindBy(xpath = "//*[@id=\"company\"]/div/div[1]/div[2]")
+
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
+
 	public WebElement empresa;
 	
 	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
 	@FindBy(xpath = "//li[text()=\"3000\"]")
 	public WebElement opcaoempresa;
 	
+
 	@FindBy(xpath = "//li[text()=\"1000\"]")
 	public WebElement opcaoempresaTC2;
+
+	@FindBy(xpath ="//div[@id=\"UF\"]/div/div/div[2]")
+	public WebElement selecionaruffilial; 
+
 	
 	@FindBy(xpath ="//*[@id=\"UF\"]/div/div[1]/div[2]")
 	public WebElement ufFilial; 
@@ -45,19 +52,25 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//li[text()=\"BA\"]")
 	public WebElement opcaouffilial;
 	
+
 	@FindBy(xpath = "//li[text()=\"AL\"]")
 	public WebElement opcaouffilialTC2;
 	
-	@FindBy(xpath = "//*[@id=\"branches\"]/div/div[1]/div[2]")
+
+	@FindBy(xpath = "//div[@id=\"branches\"]/div/div/div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//*[@id=\"0031\"]/div[1]/label/span")
 	public WebElement opcao1filial;
 	
 
-	@FindBy(xpath = "//*[@id=\"0032\"]/div[1]/label/span")
+
+	//@FindBy(xpath = "//*[@id=\"0032\"]/div[1]/label/span")
+
+	@FindBy(xpath = " //div[@class=\"list-option\"][2]/div/div[2]")
 	public WebElement opcao2filial;
 	
+
 	
 	@FindBy(xpath = "//*[@id=\"0008\"]/div[1]/label/span")
 	public WebElement opcao1filialTC2;
@@ -67,7 +80,8 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 	public WebElement opcao2filialTC2;
 	
 	
-	@FindBy(xpath="//*[@id=\"centralizedBranch\"]/div/div[1]/div[2]")
+	@FindBy(xpath="//div[@id=\"centralizedBranch\"]/div/div/div[2]")
+
 	public WebElement filialcentralizadora;
 	
 	@FindBy(xpath="//li[text()=\"0031\"]")
@@ -143,6 +157,7 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 		
 		//Preenchimento 
 		empresa.click();
+
 		if (tc2 == true) {
 			opcaoempresaTC2.click();
 		}else {
@@ -159,9 +174,21 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 			opcaouffilial.click();
 		}
 		sleep(1000);
-		
+
+		sleep(2000);
+		opcaoempresa.click();
+		sleep(2000);
+		//empresa.sendKeys(Keys.ESCAPE);
+		sleep(2000);
+		selecionaruffilial.click();
+		sleep(2000);
+		opcaouffilial.click();
+		sleep(2000);
+	   // selecionaruffilial.sendKeys(Keys.ESCAPE);
+	 
+		sleep(2000);
 		filial.click();
-		
+
 		if (tc2 == true) {
 			opcao1filialTC2.click();
 			sleep(1000);
@@ -175,11 +202,22 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 			sleep(1000);
 			opcao2filial.sendKeys(Keys.ESCAPE);
 		}
-		sleep(2000);
-		
+
+		//sleep(2000);
+		//opcao1filial.click();
+
+		//sleep(2000);
+
 
 	
+
+		//opcao2filial.click();
+		//sleep(2000);
+		//closeSelectTypeCheckbox(filial);
+		//sleep(2000);
+
 		filialcentralizadora.click();
+
 		
 		if (tc2 == true) {
 			opcaofialcentralizadoraTC2.click();
@@ -187,7 +225,10 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 			opcaofialcentralizadora.click();
 		}
 		sleep(1000);
-		
+
+		sleep(2000);
+		opcaofialcentralizadora.click();
+
 		//pega a data atual
 		String dataatual = fechaActual();
 		datainicio.sendKeys(dataatual);

@@ -171,7 +171,7 @@ public ArrayList<Boolean> visualizar() {
 		String cnpjeditar = cnpj.getAttribute("value");
 		String nomeeditar = nome.getAttribute("value");
 		String anseditar = ans.getAttribute("value");
-	
+		filialeditar=filialeditar.replace(" ", "");
 		System.out.println(empresaeditar);
 		System.out.println(ufeditar);
 		System.out.println(filialeditar);
@@ -188,7 +188,7 @@ public ArrayList<Boolean> visualizar() {
 		sucesso.add(cnpjvisualizar.equals(cnpjeditar));
 		sucesso.add(nomevisualizar.equals(nomeeditar));
 		sucesso.add(ansvisualizar.equals(anseditar));
-		
+		System.out.println(sucesso);
 		return sucesso;	
 
 	

@@ -2,6 +2,7 @@ package com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class UnidadeDeMedidaDetalhes extends TestBaseSteven{
+public class UnidadeDeMedidaDetalhes extends TestBaseEliel{
   
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
@@ -27,7 +28,7 @@ public class UnidadeDeMedidaDetalhes extends TestBaseSteven{
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initialization();
+	  driver = initializationE();
 	  loginTC = new LoginTC();
 	  accesarMDR = new AcessarMDRPO();
 	  unidadeDeMedidaDetalhesPO = new UnidadeDeMedidaDetalhesPO();

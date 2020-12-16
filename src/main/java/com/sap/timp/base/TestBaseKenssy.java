@@ -26,6 +26,7 @@ public class TestBaseKenssy extends TestBaseSteven{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
+
 		driver.get(tp1);
 
 		return driver;

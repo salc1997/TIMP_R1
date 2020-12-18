@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="28" passed="27">
 =======
 <<<<<<< HEAD
@@ -30,7 +31,10 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -74,8 +78,11 @@
 >>>>>>> refs/remotes/origin/master
 =======
 >>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="3697486" started-at="2020-12-15T23:11:12Z" finished-at="2020-12-16T00:12:50Z">
@@ -133,8 +140,12 @@
 =======
   <suite started-at="2020-12-18T16:01:07Z" name="Default suite" finished-at="2020-12-18T16:04:54Z" duration-ms="227529">
 >>>>>>> refs/remotes/origin/Fernando
+=======
+  <suite started-at="2020-12-18T15:31:33Z" name="Default suite" finished-at="2020-12-18T15:35:01Z" duration-ms="207897">
+>>>>>>> refs/heads/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="3697486" started-at="2020-12-15T23:11:12Z" finished-at="2020-12-16T00:12:50Z">
@@ -221,6 +232,11 @@
       <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:07Z" name="beforeClass" finished-at="2020-12-18T10:01:24Z" duration-ms="16594" status="PASS">
 >>>>>>> refs/remotes/origin/Fernando
+=======
+    <test started-at="2020-12-18T15:31:33Z" name="Default test" finished-at="2020-12-18T15:35:01Z" duration-ms="207897">
+      <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:31:33Z" name="beforeClass" finished-at="2020-12-18T09:31:52Z" duration-ms="18907" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -228,6 +244,7 @@
         <test-method status="PASS" signature="acessarBRB()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="acessarBRB" duration-ms="44604" started-at="2020-12-15T17:11:41Z" finished-at="2020-12-15T17:12:26Z">
 =======
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -241,6 +258,9 @@
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:24Z" name="ingresar" finished-at="2020-12-18T10:01:32Z" duration-ms="8622" status="PASS">
 >>>>>>> refs/remotes/origin/Fernando
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:31:52Z" name="ingresar" finished-at="2020-12-18T09:32:01Z" duration-ms="8650" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -248,6 +268,7 @@
         <test-method status="PASS" signature="paginacion()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="paginacion" duration-ms="89246" started-at="2020-12-15T17:12:26Z" finished-at="2020-12-15T17:13:55Z">
 =======
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="mdrEntrar" duration-ms="29885" started-at="2020-12-10T14:52:32Z" finished-at="2020-12-10T14:53:02Z">
@@ -282,8 +303,12 @@
         <test-method signature="dfgEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@2a265ea9]" started-at="2020-12-15T08:33:03Z" name="dfgEntrar" finished-at="2020-12-15T08:33:22Z" duration-ms="19312" status="PASS">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+        <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:32:01Z" name="ingresarMDR" finished-at="2020-12-18T09:32:32Z" duration-ms="31812" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- paginacion -->
         <test-method status="PASS" signature="filtrosAvanzados()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="filtrosAvanzados" duration-ms="57939" started-at="2020-12-15T17:13:55Z" finished-at="2020-12-15T17:14:53Z">
@@ -701,52 +726,18 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Yessy
         </test-method> <!-- ingresarMDR -->
-        <test-method status="SKIP" signature="criarAssociaçãoCodigoAjuste()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="criarAssociaçãoCodigoAjuste" duration-ms="1" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Yessy
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:31:08Z" name="visualizar" finished-at="2020-12-10T00:31:57Z" duration-ms="49196" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        </test-method> <!-- BPMAEntrar -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:17:39Z" name="criar" finished-at="2020-12-10T19:19:35Z" duration-ms="115556" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method signature="Filtro()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:32:32Z" name="Filtro" finished-at="2020-12-18T09:35:01Z" duration-ms="148509" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="editar" duration-ms="1" started-at="2020-12-10T14:54:13Z" finished-at="2020-12-10T14:54:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method status="PASS" signature="informacoes()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="informacoes" duration-ms="26811" started-at="2020-12-10T14:54:13Z" finished-at="2020-12-10T14:54:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- informacoes -->
-        <test-method status="PASS" signature="blocoApuracao()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="blocoApuracao" duration-ms="39972" started-at="2020-12-10T14:54:40Z" finished-at="2020-12-10T14:55:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blocoApuracao -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-12-10T14:55:20Z" finished-at="2020-12-10T14:55:20Z">
-=======
-        </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:31:57Z" name="afterClass" finished-at="2020-12-10T00:31:57Z" duration-ms="0" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:19:35Z" name="afterClass" finished-at="2020-12-10T19:19:35Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados@4c309d4d]" started-at="2020-12-14T11:33:31Z" name="afterClass" finished-at="2020-12-14T11:33:31Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Cristhian
+        </test-method> <!-- Filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:35:01Z" name="afterClass" finished-at="2020-12-18T09:35:01Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1106,6 +1097,9 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
 =======
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo -->
 >>>>>>> refs/remotes/origin/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados -->
+>>>>>>> refs/heads/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

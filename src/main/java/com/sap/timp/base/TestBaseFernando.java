@@ -22,7 +22,7 @@ public class TestBaseFernando extends TestBaseSteven {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get(tp1);
+		driver.get(tc2);
 
 
 		return driver;

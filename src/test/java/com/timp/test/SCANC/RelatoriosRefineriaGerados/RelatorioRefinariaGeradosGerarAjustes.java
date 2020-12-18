@@ -11,19 +11,19 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
-import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO;
+import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustesPO;
 
-public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo extends TestBaseFernando{
+public class RelatorioRefinariaGeradosGerarAjustes extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
-	RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO;
+	RelatorioRefinariaGeradosGerarAjustesPO relatorioRefinariaGeradosGerarAjustesPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
-		relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO = new RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO();
+		relatorioRefinariaGeradosGerarAjustesPO = new RelatorioRefinariaGeradosGerarAjustesPO();
 	}
 
 	@AfterClass
@@ -42,11 +42,12 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 	}
 
 	@Test(priority = 2)
-	public void manutencaoCriarLancamentoVisualizacaoAnexo() {			
-		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO.manutencaoCriarLancamentoVisualizacaoAnexo();
-
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
+	public void criarCampoDeSaida() {	
+		relatorioRefinariaGeradosGerarAjustesPO.gerarAjustes();
+//		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosGerarAjustesPO.gerarAjustes();
+//
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), visualizaçar);
+//		}
 	}
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="28" passed="27">
 =======
 <<<<<<< HEAD
@@ -27,7 +28,10 @@
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -68,8 +72,11 @@
 =======
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="3697486" started-at="2020-12-15T23:11:12Z" finished-at="2020-12-16T00:12:50Z">
 =======
@@ -123,8 +130,12 @@
   <suite started-at="2020-12-15T14:32:40Z" name="Default suite" finished-at="2020-12-15T14:35:14Z" duration-ms="154272">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+  <suite started-at="2020-12-18T16:01:07Z" name="Default suite" finished-at="2020-12-18T16:04:54Z" duration-ms="227529">
+>>>>>>> refs/remotes/origin/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="3697486" started-at="2020-12-15T23:11:12Z" finished-at="2020-12-16T00:12:50Z">
       <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
@@ -205,6 +216,11 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@2a265ea9]" started-at="2020-12-15T08:32:40Z" name="beforeClass" finished-at="2020-12-15T08:32:56Z" duration-ms="16686" status="PASS">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+    <test started-at="2020-12-18T16:01:07Z" name="Default test" finished-at="2020-12-18T16:04:54Z" duration-ms="227529">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:07Z" name="beforeClass" finished-at="2020-12-18T10:01:24Z" duration-ms="16594" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -216,11 +232,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="ingresar" duration-ms="8454" started-at="2020-12-10T14:52:24Z" finished-at="2020-12-10T14:52:32Z">
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@2a265ea9]" started-at="2020-12-15T08:32:56Z" name="ingresar" finished-at="2020-12-15T08:33:03Z" duration-ms="6912" status="PASS">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:24Z" name="ingresar" finished-at="2020-12-18T10:01:32Z" duration-ms="8622" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -228,6 +248,7 @@
         <test-method status="PASS" signature="paginacion()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="paginacion" duration-ms="89246" started-at="2020-12-15T17:12:26Z" finished-at="2020-12-15T17:13:55Z">
 =======
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="mdrEntrar" duration-ms="29885" started-at="2020-12-10T14:52:32Z" finished-at="2020-12-10T14:53:02Z">
 =======
@@ -1055,17 +1076,21 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
           </reporter-output>
         </test-method> <!-- ingresar -->
         <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao@10f7f7de]" started-at="2020-12-14T20:43:15Z" name="scancEntrar" finished-at="2020-12-14T20:43:52Z" duration-ms="36815" status="PASS">
+=======
+        <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:32Z" name="scancEntrar" finished-at="2020-12-18T10:02:00Z" duration-ms="27868" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scancEntrar -->
-        <test-method signature="informacao()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao@10f7f7de]" started-at="2020-12-14T20:43:52Z" name="informacao" finished-at="2020-12-14T20:45:44Z" duration-ms="112068" status="PASS">
+        <test-method signature="manutencaoCriarLancamentoVisualizacaoAnexo()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:02:00Z" name="manutencaoCriarLancamentoVisualizacaoAnexo" finished-at="2020-12-18T10:04:54Z" duration-ms="174427" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- informacao -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao@10f7f7de]" started-at="2020-12-14T20:45:44Z" name="afterClass" finished-at="2020-12-14T20:45:44Z" duration-ms="0" status="PASS">
+        </test-method> <!-- manutencaoCriarLancamentoVisualizacaoAnexo -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:04:54Z" name="afterClass" finished-at="2020-12-18T10:04:54Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao -->
 >>>>>>> refs/remotes/origin/Fernando
 =======
@@ -1078,6 +1103,9 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa -->
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo -->
+>>>>>>> refs/remotes/origin/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

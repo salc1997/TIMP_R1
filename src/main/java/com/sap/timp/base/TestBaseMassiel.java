@@ -25,8 +25,6 @@ public class TestBaseMassiel extends TestBaseSteven {
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationM() {
-
-
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
 		ChromeOptions options = new ChromeOptions();
@@ -37,12 +35,6 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(tc2);
-<<<<<<< HEAD
-
-
-		
-=======
->>>>>>> refs/remotes/origin/Fernando
 
 	   return driver;
 	}

@@ -50,6 +50,7 @@ public class RRGConfiguracaoDeAjusteExcluirPO extends TestBaseFernando{
 		System.out.println("Primer ID: " + idPrimero);
 		
 		String idRegistro = idObter4();
+		System.out.println("ID a Eliminar: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@id=\"adjustment-table\"]/div/div//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@id=\"adjustment-table\"]/div/div//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		

@@ -8,6 +8,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -72,10 +73,14 @@ public class TestBaseSteven {
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         driver = new ChromeDriver(options);
 		*/
-
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		options.setExperimentalOption("useAutomationExtension", false);
+		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+        
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tc2);
 		return driver;
 	}
 	

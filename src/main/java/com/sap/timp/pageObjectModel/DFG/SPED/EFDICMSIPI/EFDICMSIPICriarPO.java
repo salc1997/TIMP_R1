@@ -1389,6 +1389,14 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		int aparece = rows("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		
+		if (aparece > 0) {
+			driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]")).click();
+		}
+		
+		
 		atualizarEstrutura.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

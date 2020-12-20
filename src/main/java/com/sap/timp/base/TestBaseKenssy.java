@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Hashtable;
@@ -15,6 +16,7 @@ import java.util.prefs.Preferences;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 public class TestBaseKenssy extends TestBaseSteven{
@@ -23,11 +25,15 @@ public class TestBaseKenssy extends TestBaseSteven{
 
 	public WebDriver initializationKen() {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		options.setExperimentalOption("useAutomationExtension", false);
+		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+        
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 
-
-		driver.get(tp1);
+		driver.get(tc2);
 
 		return driver;
 	}

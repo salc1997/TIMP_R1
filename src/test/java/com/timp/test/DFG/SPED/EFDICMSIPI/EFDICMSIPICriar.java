@@ -22,7 +22,7 @@ import com.timp.test.DFG.AcessarDFG;
 
 public class EFDICMSIPICriar extends TestBaseSteven{
 	LoginTC loginTC;
-	AcessarDFGPO acessarDFGPO;
+	AcessarDFGPO acessarDFGPO; 
 	EFDICMSIPICriarPO eFDICMSIPIpCriarPO;
 
 	@BeforeClass
@@ -48,14 +48,25 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		acessarDFGPO.acessarDFG();
 
 	}
-
+	
 	@Test(priority = 2)
-	public void criar() {
+	public void criarDFG() {
 		boolean sucesso = eFDICMSIPIpCriarPO.criar();
 		assertTrue(sucesso, Criar);
-		
+
+	}
+	
+	@Test(priority = 3)
+	public void criarBRE() {
+
 		boolean sucesso2 = eFDICMSIPIpCriarPO.BRE();
 		assertTrue(sucesso2, Criar);
+		
+	}
+	
+
+	@Test(priority = 4)
+	public void criarDFGSPED() {
 		
 		ArrayList<Boolean> sucesso3 = eFDICMSIPIpCriarPO.DFG();
 		
@@ -66,7 +77,8 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 3)
+	
+	@Test(priority = 5)
 	public void editar() {
 		
 		boolean sucesso = eFDICMSIPIpCriarPO.editarDFG();
@@ -76,7 +88,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 6)
 	public void informacoes() {
 		
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.informacao();
@@ -88,7 +100,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 7)
 	public void blocoApuracao() {
 		
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.blocoApuracao();
@@ -100,7 +112,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 8)
 	public void blocoApuracaoExecutar() {
 		
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.execucao();
@@ -111,7 +123,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 9)
 	public void arquivos() {
 		
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.arquivos();
@@ -122,7 +134,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 10)
 	public void excluirDFG() {
 		
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.excluirDFG();
@@ -133,7 +145,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 11)
 	public void excluirBRE() {
 		
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.excluirBRE();
@@ -143,4 +155,6 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		}
 
 	}
+	
+	
 }

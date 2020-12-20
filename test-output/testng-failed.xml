@@ -7,11 +7,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
+=======
       <class name="com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar">
+>>>>>>> refs/remotes/origin/master
         <methods>
+<<<<<<< HEAD
+          <include name="formatacaoEVariante"/>
+=======
           <include name="editar"/>
 =======
 <<<<<<< HEAD
@@ -34,11 +43,25 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Yessy
+=======
+>>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar">
+=======
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo">
+>>>>>>> refs/remotes/origin/Fernando
+=======
+      <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar">
+>>>>>>> refs/heads/Yessy
         <methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="afterClass"/>
 <<<<<<< HEAD
@@ -90,10 +113,21 @@
         <methods>
           <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Eliel
+=======
+          <include name="scancEntrar"/>
+          <include name="ingresar"/>
+>>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Yessy
           <include name="beforeClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Yessy
           <include name="criar"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="afterClass"/>
@@ -114,7 +148,11 @@
 =======
           <include name="excluir"/>
 >>>>>>> refs/remotes/origin/Eliel
+=======
+          <include name="manutencaoCriarLancamentoVisualizacaoAnexo"/>
+>>>>>>> refs/remotes/origin/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -150,8 +188,15 @@
           <include name="executar"/>
 >>>>>>> refs/heads/Yessy
           <include name="beforeClass"/>
+=======
+>>>>>>> refs/heads/Yessy
           <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/master
         </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar -->
@@ -201,6 +246,13 @@
 =======
       </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir -->
 >>>>>>> refs/remotes/origin/Eliel
+>>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo -->
+>>>>>>> refs/remotes/origin/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar -->
+>>>>>>> refs/heads/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

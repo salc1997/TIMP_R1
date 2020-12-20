@@ -12,7 +12,7 @@ import com.sap.timp.base.TestBaseEliel;
 
 public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	
-	
+	 
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
 	public WebElement regrasdenegocio;
 	

@@ -1,6 +1,7 @@
 package com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -48,9 +49,9 @@ public class HierarquiaDeCenariosDeCorreçaoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		String sucesso = hierarquiaDeCenariosDeCorreçaoEditarPO.editar();
-
-		assertEquals(sucesso, "edit", visualizaçar);
+		boolean sucesso = hierarquiaDeCenariosDeCorreçaoEditarPO.editar();
+		assertTrue(sucesso, Editar);
+		//assertEquals(sucesso, "edit", visualizaçar);
 	}
 
 }

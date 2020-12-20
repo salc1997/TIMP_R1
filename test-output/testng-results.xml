@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="28" passed="27">
 =======
 <<<<<<< HEAD
@@ -657,66 +658,28 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Eliel
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-12-11T01:16:14Z" name="Default suite" finished-at="2020-12-11T01:19:35Z" duration-ms="201021">
-=======
-  <suite started-at="2020-12-16T13:04:59Z" name="Default suite" finished-at="2020-12-16T13:09:14Z" duration-ms="254770">
->>>>>>> refs/remotes/origin/Eliel
+  <suite started-at="2020-12-20T23:18:57Z" name="Default suite" finished-at="2020-12-20T23:22:42Z" duration-ms="224963">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-12-11T01:16:14Z" name="Default test" finished-at="2020-12-11T01:19:35Z" duration-ms="201021">
-      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:16:14Z" name="beforeClass" finished-at="2020-12-10T19:16:51Z" duration-ms="37376" status="PASS">
-=======
-    <test started-at="2020-12-16T13:04:59Z" name="Default test" finished-at="2020-12-16T13:09:14Z" duration-ms="254770">
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa@6d4d66d2]" started-at="2020-12-16T10:04:59Z" name="beforeClass" finished-at="2020-12-16T10:05:27Z" duration-ms="27421" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+    <test started-at="2020-12-20T23:18:57Z" name="Default test" finished-at="2020-12-20T23:22:42Z" duration-ms="224963">
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:18:57Z" name="beforeClass" finished-at="2020-12-20T20:19:15Z" duration-ms="18473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:16:51Z" name="login" finished-at="2020-12-10T19:17:05Z" duration-ms="13609" status="PASS">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa@6d4d66d2]" started-at="2020-12-16T10:05:27Z" name="login" finished-at="2020-12-16T10:05:38Z" duration-ms="11638" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:19:15Z" name="login" finished-at="2020-12-20T20:19:26Z" duration-ms="10748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="acessarMDR" duration-ms="14796" started-at="2020-12-07T16:47:45Z" finished-at="2020-12-07T16:48:00Z">
-=======
-        <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:11Z" name="TFPEntrar" finished-at="2020-12-08T02:02:30Z" duration-ms="19779" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:37Z" name="acessarMDR" finished-at="2020-12-08T17:38:49Z" duration-ms="12226" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:18Z" name="TFPEntrar" finished-at="2020-12-08T17:04:43Z" duration-ms="24526" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:55:54Z" name="acessarBRE" finished-at="2020-12-08T20:56:10Z" duration-ms="16344" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:30:48Z" name="acessarMDR" finished-at="2020-12-10T00:31:08Z" duration-ms="19944" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="BPMAEntrar()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:17:05Z" name="BPMAEntrar" finished-at="2020-12-10T19:17:39Z" duration-ms="34462" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:19:26Z" name="acessarBRE" finished-at="2020-12-20T20:19:44Z" duration-ms="17638" status="PASS">
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- mdrEntrar -->
@@ -763,91 +726,14 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
           <reporter-output>
           </reporter-output>
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- acessarBRE -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:17:07Z" name="criar" finished-at="2020-12-08T07:18:18Z" duration-ms="70802" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()="Aceitar"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
-*** Element info: {Using=xpath, value=//button[text()="Aceitar"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()="Aceitar"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
-*** Element info: {Using=xpath, value=//button[text()="Aceitar"]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-=======
-=======
->>>>>>> refs/remotes/origin/Kenssy
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-	at com.sap.timp.base.TestBaseSteven.moveToElement(TestBaseSteven.java:242)
-	at com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarCopiaPO.criar(ProcessodeNegócioCriarCopiaPO.java:158)
-	at com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia.CriarCopia(ProcessodeNegocioCriarCopia.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-<<<<<<< HEAD
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-=======
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:56:10Z" name="criar" finished-at="2020-12-08T20:56:51Z" duration-ms="41309" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
->>>>>>> refs/remotes/origin/Kenssy
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:19:44Z" name="criar" finished-at="2020-12-20T20:22:42Z" duration-ms="178082" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:18:18Z" name="afterClass" finished-at="2020-12-08T07:18:18Z" duration-ms="0" status="PASS">
 =======
@@ -960,6 +846,9 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa@6d4d66d2]" started-at="2020-12-16T10:09:14Z" name="afterClass" finished-at="2020-12-16T10:09:14Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/remotes/origin/master
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:22:42Z" name="afterClass" finished-at="2020-12-20T20:22:42Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -1003,6 +892,7 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
       </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
 =======
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1100,6 +990,9 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
 =======
       </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados -->
 >>>>>>> refs/heads/Yessy
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
+>>>>>>> refs/remotes/origin/Eliel
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

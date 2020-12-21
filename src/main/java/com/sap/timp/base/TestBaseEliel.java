@@ -26,10 +26,10 @@ public class TestBaseEliel extends TestBaseSteven {
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("disable-infobars");
+		/*options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
-        
+        */
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(tq1);

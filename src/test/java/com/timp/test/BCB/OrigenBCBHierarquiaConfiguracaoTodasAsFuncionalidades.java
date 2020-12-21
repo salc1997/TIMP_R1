@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.HierarquiaExecucoesTodasAsFuncionalidadesPO;
+import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
 import com.sap.timp.pageObjectModel.BCB.OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
 
 import org.testng.annotations.BeforeClass;

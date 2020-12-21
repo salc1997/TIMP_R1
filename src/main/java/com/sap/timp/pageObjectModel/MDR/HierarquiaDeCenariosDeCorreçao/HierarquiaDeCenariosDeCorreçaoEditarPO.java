@@ -69,7 +69,7 @@ public class HierarquiaDeCenariosDeCorreçaoEditarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		hiearquiasdecenariosdecorrecao.click();
 		sleep(2000);
@@ -100,15 +100,62 @@ public class HierarquiaDeCenariosDeCorreçaoEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//ediçao
-		String data = fechaActual();
+		/*String data = fechaActual();
 		datadeiniciodevigencia.clear();
 		
 		sleep(2000);
 		
 		datadeiniciodevigencia.sendKeys(data);
+		*/
+		sleep(2000);
+		String valor = datadeiniciodevigencia.getAttribute("value");
+		String enviar = fechaActual();
+		datadeiniciodevigencia.clear();
+		sleep(2000);
+		datadeiniciodevigencia.sendKeys(enviar);
+		sleep(2000);
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+
+		driver.navigate().refresh();
+		sleep(2000);
+		waitExpectElement(biblioteca);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		String novoTexto=datadeiniciodevigencia.getAttribute("value");
+		
+		System.out.println(valor);
+		System.out.println(novoTexto);
+		boolean sucesso = novoTexto.equals(enviar);
+		System.out.println(sucesso);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		datadeiniciodevigencia.clear();
+
+		sleep(2000);
+		datadeiniciodevigencia.sendKeys(valor);
 		
 		sleep(2000);
 		
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		System.out.println(sucesso);	
+		return sucesso;
+		/*
 		gravar.click();
 		sleep(2000);
 		sim.click();
@@ -140,8 +187,7 @@ public class HierarquiaDeCenariosDeCorreçaoEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
-		return sucesso;
+		*/
 	}	
 
 }

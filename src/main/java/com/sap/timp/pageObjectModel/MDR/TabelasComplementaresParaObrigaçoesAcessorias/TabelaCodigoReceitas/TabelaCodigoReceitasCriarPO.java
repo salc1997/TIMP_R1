@@ -16,7 +16,7 @@ public class TabelaCodigoReceitasCriarPO extends TestBaseMassiel{
 	public WebElement obrigacoes;
 	
 	@FindBy(xpath = "//span[text()=\"Tabela de Código da Receitas\"]")
-	public WebElement rabelacodigoReceita;
+	public WebElement tabelacodigoReceita;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Nova\")]")
 	public WebElement novo;
@@ -69,7 +69,7 @@ public class TabelaCodigoReceitasCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		obrigacoes.click();
 		sleep(2000);
-		rabelacodigoReceita.click();
+		tabelacodigoReceita.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

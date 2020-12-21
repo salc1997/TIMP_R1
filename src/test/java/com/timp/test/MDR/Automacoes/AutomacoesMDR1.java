@@ -114,6 +114,7 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaFiltrosAvan;
 import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId;
+import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesDeFundoSocialExcluirEmMassa;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluir;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFDetalhes;
@@ -322,6 +323,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
 	ConfiguracaoFundoSocailFiltroId configuracaoFundoSocailFiltroId;
 	ConfiguracoesFundoSocialExcluir configuracoesFundoSocialExcluir;
+	ConfiguracoesDeFundoSocialExcluirEmMassa configuracoesDeFundoSocialExcluirEmMassa;
 
 	// Contrato IOF
 
@@ -1771,6 +1773,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		configuracoesFundoSocialExcluir.acessarMDR();
 		configuracoesFundoSocialExcluir.excluir();
 		configuracoesFundoSocialExcluir.afterClass();
+		
+
+	}
+	
+	@Test(priority = 85)
+	public void configuracoesDeFundoSocialExcluirEmMassa() {
+
+		configuracoesDeFundoSocialExcluirEmMassa = new ConfiguracoesDeFundoSocialExcluirEmMassa();
+		configuracoesDeFundoSocialExcluirEmMassa.beforeClass();
+		configuracoesDeFundoSocialExcluirEmMassa.login();
+		configuracoesDeFundoSocialExcluirEmMassa.acessarMDR();
+		configuracoesDeFundoSocialExcluirEmMassa.criar();
+		configuracoesDeFundoSocialExcluirEmMassa.afterClass();
 		System.out.println("-------------------Configuração do Fundo Social Fim-------------------------");
 
 

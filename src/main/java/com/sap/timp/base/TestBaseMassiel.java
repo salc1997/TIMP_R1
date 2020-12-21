@@ -6,12 +6,14 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
@@ -23,16 +25,16 @@ public class TestBaseMassiel extends TestBaseSteven {
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationM() {
-
-
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		options.setExperimentalOption("useAutomationExtension", false);
+		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+        
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(tq1);
-
-
-		
 
 	   return driver;
 	}

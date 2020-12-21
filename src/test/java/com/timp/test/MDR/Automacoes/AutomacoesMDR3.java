@@ -97,6 +97,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensV
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaDeCodigosDeReceitasExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFEditar;
@@ -267,6 +268,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	TabelaCodigoReceitaCriar tabelaCodigoReceitaCriar;
 	TabelaCodigoReceitaDetalhes tabelaCodigoReceitaDetalhes;
 	TabelaCodigoReceitaExcluir tabelaCodigoReceitaExcluir;
+	TabelaDeCodigosDeReceitasExcluirEmMassa tabelaDeCodigosDeReceitasExcluirEmMassa;
 
 	// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para
 	// DIRF
@@ -1562,6 +1564,19 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		tabelaCodigoReceitaExcluir.acessarMDR();
 		tabelaCodigoReceitaExcluir.excluir();
 		tabelaCodigoReceitaExcluir.afterClass();
+
+		
+	}
+	
+	@Test(priority = 110)
+	public void tabelaDeCodigosDeReceitasExcluirEmMassa() {
+
+		tabelaDeCodigosDeReceitasExcluirEmMassa= new TabelaDeCodigosDeReceitasExcluirEmMassa();
+		tabelaDeCodigosDeReceitasExcluirEmMassa.beforeClass();
+		tabelaDeCodigosDeReceitasExcluirEmMassa.login();
+		tabelaDeCodigosDeReceitasExcluirEmMassa.acessarMDR();
+		tabelaDeCodigosDeReceitasExcluirEmMassa.criar();
+		tabelaDeCodigosDeReceitasExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código da Receitas Fin-------------------------");

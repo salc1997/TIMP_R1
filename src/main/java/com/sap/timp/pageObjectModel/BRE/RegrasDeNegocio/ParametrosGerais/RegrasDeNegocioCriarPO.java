@@ -12,7 +12,7 @@ import com.sap.timp.base.TestBaseEliel;
 
 public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	
-	
+	 
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
 	public WebElement regrasdenegocio;
 	
@@ -145,14 +145,16 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	public WebElement biblioteca;
 
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]")
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\" and @transform=\"translate(0,100)\"]/*/*[1]")
+	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\" and @transform=\"translate(0,100)\"]/*/*[1]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[9]")
 	public WebElement primeiracaixar3;
 	
 	@FindBy(xpath = "//button[text()=\"Salvar como Cópia\"]")
 	public WebElement salvarcomocopia;
 	
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*[2]//*[3]")
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\" and @transform =\"translate(0,150)\"]/*[name()=\"text\"][1]/*[name()=\"tspan\"][2]")
+	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\" and @transform =\"translate(0,150)\"]/*[name()=\"text\"][1]/*[name()=\"tspan\"][2]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[13]/*/*[2]")
 	public WebElement text;
 	
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Sign-and-Symbols icon-plussign icon-btn btn flat trans\"]")
@@ -201,7 +203,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO14 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO NEGOCIOS 6 - NAO MEXER");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -337,8 +339,8 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		*/
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
-		WebElement caminhocriador1 = driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));
-		
+		//WebElement caminhocriador1 = driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));
+		WebElement caminhocriador1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[3]/*/*"));
 		if(caminhocriador1.isDisplayed()) {
 			System.out.println("Caminho criado r1");
 			sucesso.add(caminhocriador1.isDisplayed());
@@ -371,7 +373,9 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		aplicar.click();
 		sleep(1000);
 		//WebElement caminhor2 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"path-start\"]"));
-		WebElement caminhor2 =driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));
+		//WebElement caminhor2 =driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));
+		WebElement caminhor2 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[7]/*/*"));
+		
 		
 
 		if(caminhor2.isDisplayed()) {
@@ -407,15 +411,19 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		sleep(1000);
 		aplicar.click();
 		sleep(1000);
-		WebElement caminhor3 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"path-start edited\"]"));
-		
+		//WebElement caminhor3 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"path-start edited\"]"));
+		WebElement caminhor3 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[11]/*/*"));
 		if(caminhor3.isDisplayed()) {
 			System.out.println("Caminho criado r3");
 			sucesso.add(caminhor3.isDisplayed());
 		}
 		sleep(1000);
+		waitExpectElement(primeiracaixar3);
+		sleep(2000);
 		primeiracaixar3.click();
 		sleep(1000);
+		waitExpectElement(NomeDoValor);
+		sleep(2000);
 		NomeDoValor.clear();
 		NomeDoValor.sendKeys("D197");
 		NomeDoValor.sendKeys(Keys.ESCAPE);
@@ -462,7 +470,8 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		sleep(1000);
 		aplicar.click();
 		sleep(1000);
-		WebElement caminhor4 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"edited\"]"));
+		//WebElement caminhor4 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"edited\"]"));
+		WebElement caminhor4 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[15]/*/*"));
 		
 		if(caminhor4.isDisplayed()) {
 			System.out.println("Caminho criado r4");

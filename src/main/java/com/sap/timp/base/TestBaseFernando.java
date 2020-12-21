@@ -4,11 +4,13 @@ package com.sap.timp.base;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
+import java.util.Collections;
 import java.util.Locale;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 public class TestBaseFernando extends TestBaseSteven {
@@ -18,17 +20,24 @@ public class TestBaseFernando extends TestBaseSteven {
 	public WebDriver initializationF() {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
-
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		options.setExperimentalOption("useAutomationExtension", false);
+		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+        
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 
 		driver.get(tq1);
+<<<<<<< HEAD
 
 
 
 
 
 	
+=======
+>>>>>>> refs/remotes/origin/master
 
 		return driver;
 	}

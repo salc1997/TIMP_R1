@@ -148,7 +148,7 @@ public class RegistroRVSEditarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}	
 

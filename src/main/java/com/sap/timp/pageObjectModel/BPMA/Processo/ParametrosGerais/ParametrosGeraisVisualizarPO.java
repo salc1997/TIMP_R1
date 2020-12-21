@@ -79,7 +79,9 @@ public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
 		PageFactory.initElements(driver, this);
 	}
 
-	public void visualizar() {
+
+	public ArrayList<Boolean> visualizar() {
+
 
 		procesos.click();
 		sleep(3000);
@@ -96,6 +98,7 @@ public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+
 		System.out.println(id); 
 
 		sleep(2000);
@@ -211,9 +214,11 @@ public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
 		sleep(5000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000); 
+		sleep(2000);
+
 
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+
 		String idV = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println(id); 
 
@@ -226,12 +231,34 @@ public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(2000);
-		sleep(2000);
-		sleep(2000);
-		sleep(2000);
 
 
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div"));
+		WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
+		menu1.click();
+		sleep(2000);
+		açao1.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println(idB);
+
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+
+		double idD = Integer.valueOf(id);
+		double idBD = Integer.valueOf(idB);
+
+		//boolean sucesso1 = (Boolean) null;
+		if (idBD > idD) {
+			sucesso.add(true);
+
+		}else {
+			sucesso.add(false);
+		}
+
+		return sucesso;
 	}
 }

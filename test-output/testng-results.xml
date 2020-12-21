@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="28" passed="27">
 =======
 <<<<<<< HEAD
@@ -27,7 +31,16 @@
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -68,8 +81,17 @@
 =======
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Fernando
+=======
+>>>>>>> refs/heads/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="3697486" started-at="2020-12-15T23:11:12Z" finished-at="2020-12-16T00:12:50Z">
 =======
@@ -123,8 +145,20 @@
   <suite started-at="2020-12-15T14:32:40Z" name="Default suite" finished-at="2020-12-15T14:35:14Z" duration-ms="154272">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+  <suite started-at="2020-12-18T16:01:07Z" name="Default suite" finished-at="2020-12-18T16:04:54Z" duration-ms="227529">
+>>>>>>> refs/remotes/origin/Fernando
+=======
+  <suite started-at="2020-12-18T15:31:33Z" name="Default suite" finished-at="2020-12-18T15:35:01Z" duration-ms="207897">
+>>>>>>> refs/heads/Yessy
+=======
+  <suite started-at="2020-12-20T23:40:43Z" name="Default suite" finished-at="2020-12-20T23:42:13Z" duration-ms="89510">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="3697486" started-at="2020-12-15T23:11:12Z" finished-at="2020-12-16T00:12:50Z">
       <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
@@ -205,6 +239,21 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@2a265ea9]" started-at="2020-12-15T08:32:40Z" name="beforeClass" finished-at="2020-12-15T08:32:56Z" duration-ms="16686" status="PASS">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+    <test started-at="2020-12-18T16:01:07Z" name="Default test" finished-at="2020-12-18T16:04:54Z" duration-ms="227529">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:07Z" name="beforeClass" finished-at="2020-12-18T10:01:24Z" duration-ms="16594" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
+=======
+    <test started-at="2020-12-18T15:31:33Z" name="Default test" finished-at="2020-12-18T15:35:01Z" duration-ms="207897">
+      <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:31:33Z" name="beforeClass" finished-at="2020-12-18T09:31:52Z" duration-ms="18907" status="PASS">
+>>>>>>> refs/heads/Yessy
+=======
+    <test started-at="2020-12-20T23:40:43Z" name="Default test" finished-at="2020-12-20T23:42:13Z" duration-ms="89510">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:40:43Z" name="beforeClass" finished-at="2020-12-20T17:41:03Z" duration-ms="19562" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -216,11 +265,23 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="ingresar" duration-ms="8454" started-at="2020-12-10T14:52:24Z" finished-at="2020-12-10T14:52:32Z">
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@2a265ea9]" started-at="2020-12-15T08:32:56Z" name="ingresar" finished-at="2020-12-15T08:33:03Z" duration-ms="6912" status="PASS">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:24Z" name="ingresar" finished-at="2020-12-18T10:01:32Z" duration-ms="8622" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:31:52Z" name="ingresar" finished-at="2020-12-18T09:32:01Z" duration-ms="8650" status="PASS">
+>>>>>>> refs/heads/Yessy
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:41:03Z" name="ingresar" finished-at="2020-12-20T17:41:14Z" duration-ms="11325" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -228,6 +289,9 @@
         <test-method status="PASS" signature="paginacion()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="paginacion" duration-ms="89246" started-at="2020-12-15T17:12:26Z" finished-at="2020-12-15T17:13:55Z">
 =======
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="mdrEntrar" duration-ms="29885" started-at="2020-12-10T14:52:32Z" finished-at="2020-12-10T14:53:02Z">
 =======
@@ -261,8 +325,16 @@
         <test-method signature="dfgEntrar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@2a265ea9]" started-at="2020-12-15T08:33:03Z" name="dfgEntrar" finished-at="2020-12-15T08:33:22Z" duration-ms="19312" status="PASS">
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+        <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:32:01Z" name="ingresarMDR" finished-at="2020-12-18T09:32:32Z" duration-ms="31812" status="PASS">
+>>>>>>> refs/heads/Yessy
+=======
+        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:41:14Z" name="mdrEntrar" finished-at="2020-12-20T17:41:32Z" duration-ms="17818" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- paginacion -->
         <test-method status="PASS" signature="filtrosAvanzados()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="filtrosAvanzados" duration-ms="57939" started-at="2020-12-15T17:13:55Z" finished-at="2020-12-15T17:14:53Z">
@@ -611,121 +683,61 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Eliel
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2020-12-11T01:16:14Z" name="Default suite" finished-at="2020-12-11T01:19:35Z" duration-ms="201021">
-=======
-  <suite started-at="2020-12-16T13:04:59Z" name="Default suite" finished-at="2020-12-16T13:09:14Z" duration-ms="254770">
->>>>>>> refs/remotes/origin/Eliel
+  <suite started-at="2020-12-20T23:18:57Z" name="Default suite" finished-at="2020-12-20T23:22:42Z" duration-ms="224963">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2020-12-11T01:16:14Z" name="Default test" finished-at="2020-12-11T01:19:35Z" duration-ms="201021">
-      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:16:14Z" name="beforeClass" finished-at="2020-12-10T19:16:51Z" duration-ms="37376" status="PASS">
-=======
-    <test started-at="2020-12-16T13:04:59Z" name="Default test" finished-at="2020-12-16T13:09:14Z" duration-ms="254770">
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa@6d4d66d2]" started-at="2020-12-16T10:04:59Z" name="beforeClass" finished-at="2020-12-16T10:05:27Z" duration-ms="27421" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+    <test started-at="2020-12-20T23:18:57Z" name="Default test" finished-at="2020-12-20T23:22:42Z" duration-ms="224963">
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:18:57Z" name="beforeClass" finished-at="2020-12-20T20:19:15Z" duration-ms="18473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:16:51Z" name="login" finished-at="2020-12-10T19:17:05Z" duration-ms="13609" status="PASS">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa@6d4d66d2]" started-at="2020-12-16T10:05:27Z" name="login" finished-at="2020-12-16T10:05:38Z" duration-ms="11638" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:19:15Z" name="login" finished-at="2020-12-20T20:19:26Z" duration-ms="10748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar@3a079870]" name="acessarMDR" duration-ms="14796" started-at="2020-12-07T16:47:45Z" finished-at="2020-12-07T16:48:00Z">
-=======
-        <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.ConfiguraçõesPeríodoCriar@7526515b]" started-at="2020-12-08T02:02:11Z" name="TFPEntrar" finished-at="2020-12-08T02:02:30Z" duration-ms="19779" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar@6d4d66d2]" started-at="2020-12-08T17:38:37Z" name="acessarMDR" finished-at="2020-12-08T17:38:49Z" duration-ms="12226" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="TFPEntrar()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@7526515b]" started-at="2020-12-08T17:04:18Z" name="TFPEntrar" finished-at="2020-12-08T17:04:43Z" duration-ms="24526" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:55:54Z" name="acessarBRE" finished-at="2020-12-08T20:56:10Z" duration-ms="16344" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:30:48Z" name="acessarMDR" finished-at="2020-12-10T00:31:08Z" duration-ms="19944" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="BPMAEntrar()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:17:05Z" name="BPMAEntrar" finished-at="2020-12-10T19:17:39Z" duration-ms="34462" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:19:26Z" name="acessarBRE" finished-at="2020-12-20T20:19:44Z" duration-ms="17638" status="PASS">
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Kenssy
         </test-method> <!-- mdrEntrar -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="criar" duration-ms="71009" started-at="2020-12-10T14:53:02Z" finished-at="2020-12-10T14:54:13Z">
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Yessy
         </test-method> <!-- ingresarMDR -->
-        <test-method status="SKIP" signature="criarAssociaçãoCodigoAjuste()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@3a079870]" name="criarAssociaçãoCodigoAjuste" duration-ms="1" started-at="2020-12-08T15:38:55Z" finished-at="2020-12-08T15:38:55Z">
+        <test-method signature="Filtro()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:32:32Z" name="Filtro" finished-at="2020-12-18T09:35:01Z" duration-ms="148509" status="PASS">
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Yessy
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:31:08Z" name="visualizar" finished-at="2020-12-10T00:31:57Z" duration-ms="49196" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        </test-method> <!-- BPMAEntrar -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:17:39Z" name="criar" finished-at="2020-12-10T19:19:35Z" duration-ms="115556" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:41:32Z" name="criar" finished-at="2020-12-20T17:42:13Z" duration-ms="40780" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="editar" duration-ms="1" started-at="2020-12-10T14:54:13Z" finished-at="2020-12-10T14:54:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method status="PASS" signature="informacoes()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="informacoes" duration-ms="26811" started-at="2020-12-10T14:54:13Z" finished-at="2020-12-10T14:54:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- informacoes -->
-        <test-method status="PASS" signature="blocoApuracao()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="blocoApuracao" duration-ms="39972" started-at="2020-12-10T14:54:40Z" finished-at="2020-12-10T14:55:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blocoApuracao -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-12-10T14:55:20Z" finished-at="2020-12-10T14:55:20Z">
-=======
-        </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar@1ed4ae0f]" started-at="2020-12-10T00:31:57Z" name="afterClass" finished-at="2020-12-10T00:31:57Z" duration-ms="0" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- Filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:35:01Z" name="afterClass" finished-at="2020-12-18T09:35:01Z" duration-ms="0" status="PASS">
 =======
         </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente@76a4ebf2]" started-at="2020-12-10T19:19:35Z" name="afterClass" finished-at="2020-12-10T19:19:35Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasdeAuditoriaN3ValoresCalculados@4c309d4d]" started-at="2020-12-14T11:33:31Z" name="afterClass" finished-at="2020-12-14T11:33:31Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Cristhian
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:42:13Z" name="afterClass" finished-at="2020-12-20T17:42:13Z" duration-ms="1" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -751,91 +763,14 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
           <reporter-output>
           </reporter-output>
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- acessarBRE -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:17:07Z" name="criar" finished-at="2020-12-08T07:18:18Z" duration-ms="70802" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()="Aceitar"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
-*** Element info: {Using=xpath, value=//button[text()="Aceitar"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()="Aceitar"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8e586fd8416b6de08fb0bbc1e0721b3
-*** Element info: {Using=xpath, value=//button[text()="Aceitar"]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-=======
-=======
->>>>>>> refs/remotes/origin/Kenssy
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-	at com.sap.timp.base.TestBaseSteven.moveToElement(TestBaseSteven.java:242)
-	at com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarCopiaPO.criar(ProcessodeNegócioCriarCopiaPO.java:158)
-	at com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia.CriarCopia(ProcessodeNegocioCriarCopia.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-<<<<<<< HEAD
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-=======
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.BREGerenciarRegulamentosCriarEditarExcluir@4c309d4d]" started-at="2020-12-08T20:56:10Z" name="criar" finished-at="2020-12-08T20:56:51Z" duration-ms="41309" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
->>>>>>> refs/remotes/origin/Kenssy
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:19:44Z" name="criar" finished-at="2020-12-20T20:22:42Z" duration-ms="178082" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@4c309d4d]" started-at="2020-12-08T07:18:18Z" name="afterClass" finished-at="2020-12-08T07:18:18Z" duration-ms="0" status="PASS">
 =======
@@ -948,6 +883,9 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa@6d4d66d2]" started-at="2020-12-16T10:09:14Z" name="afterClass" finished-at="2020-12-16T10:09:14Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/remotes/origin/master
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@2a265ea9]" started-at="2020-12-20T20:22:42Z" name="afterClass" finished-at="2020-12-20T20:22:42Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -991,6 +929,7 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
       </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
 =======
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1055,17 +994,21 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
           </reporter-output>
         </test-method> <!-- ingresar -->
         <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao@10f7f7de]" started-at="2020-12-14T20:43:15Z" name="scancEntrar" finished-at="2020-12-14T20:43:52Z" duration-ms="36815" status="PASS">
+=======
+        <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:01:32Z" name="scancEntrar" finished-at="2020-12-18T10:02:00Z" duration-ms="27868" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scancEntrar -->
-        <test-method signature="informacao()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao@10f7f7de]" started-at="2020-12-14T20:43:52Z" name="informacao" finished-at="2020-12-14T20:45:44Z" duration-ms="112068" status="PASS">
+        <test-method signature="manutencaoCriarLancamentoVisualizacaoAnexo()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:02:00Z" name="manutencaoCriarLancamentoVisualizacaoAnexo" finished-at="2020-12-18T10:04:54Z" duration-ms="174427" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- informacao -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao@10f7f7de]" started-at="2020-12-14T20:45:44Z" name="afterClass" finished-at="2020-12-14T20:45:44Z" duration-ms="0" status="PASS">
+        </test-method> <!-- manutencaoCriarLancamentoVisualizacaoAnexo -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@73a8da0f]" started-at="2020-12-18T10:04:54Z" name="afterClass" finished-at="2020-12-18T10:04:54Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacao -->
 >>>>>>> refs/remotes/origin/Fernando
 =======
@@ -1078,6 +1021,18 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa -->
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo -->
+>>>>>>> refs/remotes/origin/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados -->
+>>>>>>> refs/heads/Yessy
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
+>>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2 -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

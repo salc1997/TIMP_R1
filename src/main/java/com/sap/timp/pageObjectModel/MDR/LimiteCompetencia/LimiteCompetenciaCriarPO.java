@@ -7,9 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class LimiteCompetenciaCriarPO extends TestBaseSteven{
+public class LimiteCompetenciaCriarPO extends TestBaseMassiel{
 	
 	
 	
@@ -44,7 +45,7 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@id,\"0031\")]/div/label/span")
 	public WebElement filialO;
 	
-	@FindBy(xpath = "//div[contains(@id,\"0080\")]/div/label/span")
+	@FindBy(xpath = "//div[contains(@id,\"1000_AL_0008\")]/div/label/span")
 	public WebElement filialOTC2;
 	
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
@@ -62,7 +63,7 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"approval-level\"]/div/div/div[2]")
 	public WebElement nivelAprovacao;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][2]")
 	public WebElement opcao2;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Valor de\")]")

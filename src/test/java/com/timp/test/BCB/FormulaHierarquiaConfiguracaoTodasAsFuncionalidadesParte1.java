@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
+import com.sap.timp.pageObjectModel.BCB.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO;
 import com.sap.timp.pageObjectModel.BCB.OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
 
 import org.testng.annotations.BeforeClass;
@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseKenssy {
+public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
+	FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
 
 
 	@BeforeClass
@@ -27,7 +27,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBas
 		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO = new FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO();
+		formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO = new FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO();
 	}
 
 	@AfterClass
@@ -116,87 +116,87 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBas
 		}
 	}
 	
-	@Test(priority = 9)	
-	public void subNivel5() {
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel5();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		}
-	}
-	
-	@Test(priority = 10)	
-	public void abrirSubnivel1() {
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubnivel1();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		} 
-	}
-	
-	
-	@Test(priority = 12)	
-	public void abrirSubnivel2() {
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubnivel2();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		}	 
-	}
-	
-	@Test(priority = 13)	
-	public void abrirSubnivel3() {
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubNivel3();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		}	 
-	}
-	
-	@Test(priority = 14)	
-	public void abrirSubnivel4() {
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubNivel4();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		}	 
-	}
-	
-	@Test(priority = 15)	
-	public void abrirSubnivel5() {
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubNivel5();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		}
-	}
-	
-	@Test(priority = 16)
-	public void excluirConfiguracoes() {
-		
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Eliminado);
-		}
-	}
-	
-	
-	@Test(priority = 17)
-	public void excluirHierarquia() {
-		
-		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Eliminado);
-		}
-	}
-	
+//	@Test(priority = 9)	
+//	public void subNivel5() {
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel5();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		}
+//	}
+//	
+//	@Test(priority = 10)	
+//	public void abrirSubnivel1() {
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubnivel1();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		} 
+//	}
+//	
+//	
+//	@Test(priority = 12)	
+//	public void abrirSubnivel2() {
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubnivel2();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		}	 
+//	}
+//	
+//	@Test(priority = 13)	
+//	public void abrirSubnivel3() {
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubNivel3();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		}	 
+//	}
+//	
+//	@Test(priority = 14)	
+//	public void abrirSubnivel4() {
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubNivel4();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		}	 
+//	}
+//	
+//	@Test(priority = 15)	
+//	public void abrirSubnivel5() {
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubNivel5();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		}
+//	}
+//	
+//	@Test(priority = 16)
+//	public void excluirConfiguracoes() {
+//		
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Eliminado);
+//		}
+//	}
+//	
+//	
+//	@Test(priority = 17)
+//	public void excluirHierarquia() {
+//		
+//		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Eliminado);
+//		}
+//	}
+//	
 
 }

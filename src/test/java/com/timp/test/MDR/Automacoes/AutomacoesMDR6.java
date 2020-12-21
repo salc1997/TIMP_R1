@@ -10,6 +10,7 @@ import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.Confrontaca
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhes;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluirEmMassa;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroID;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorVisualizar;
 import com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar;
@@ -322,6 +323,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			AtividadeDeTributacaoXFornecedorDetalhes atividadeDeTributacaoXFornecedorDetalhes;
 			AtividadeDeTributacaoXFornecedorVisualizar atividadeDeTributacaoXFornecedorVisualizar;
 			AtividadeDeTributacaoXFornecedorExcluir atividadeDeTributacaoXFornecedorExcluir;
+			AtividadeDeTributacaoXFornecedorExcluirEmMassa atividadeDeTributacaoXFornecedorExcluirEmMassa;
 		//--------------------------------------------------------------------------
 			
 			//0
@@ -1595,6 +1597,16 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorExcluir.acessarMDR();
 				atividadeDeTributacaoXFornecedorExcluir.excluir();
 				atividadeDeTributacaoXFornecedorExcluir.afterClass();
+			}
+			
+			@Test(priority = 109)	
+			public void atividadeDeTributacaoXFornecedorExcluirEmMassa() {
+				atividadeDeTributacaoXFornecedorExcluirEmMassa = new AtividadeDeTributacaoXFornecedorExcluirEmMassa();
+				atividadeDeTributacaoXFornecedorExcluirEmMassa.beforeClass();
+				atividadeDeTributacaoXFornecedorExcluirEmMassa.login();
+				atividadeDeTributacaoXFornecedorExcluirEmMassa.acessarMDR();
+				atividadeDeTributacaoXFornecedorExcluirEmMassa.criar();
+				atividadeDeTributacaoXFornecedorExcluirEmMassa.afterClass();
 				System.out.println("-------------------Atividades Para tributacao >Atividade De Tributacao X Fornecedor Fim-------------------------");
 				
 			}

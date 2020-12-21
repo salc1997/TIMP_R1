@@ -41,9 +41,7 @@ public class S1200RemuneracaoDeTrabalhadorDetalhes extends TestBaseEliel {
 
 	@Test(priority = 1)
 	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
 	}
 
 	@Test(priority = 2)

@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 
 
-public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
+public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	
 	//CRIAR CONFIGURACION
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][3]")
@@ -307,7 +307,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	public WebElement pastaLexeiraH;
 	
 	
-	public HierarquiaExecucoesTodasAsFuncionalidadesPO() {
+	public ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

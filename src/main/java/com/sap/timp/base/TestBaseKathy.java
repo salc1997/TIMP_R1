@@ -1,8 +1,11 @@
 
 package com.sap.timp.base;
 
+import java.util.Collections;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class TestBaseKathy extends TestBaseSteven {
 
@@ -11,7 +14,12 @@ public class TestBaseKathy extends TestBaseSteven {
 	public WebDriver initializationK() {
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		options.setExperimentalOption("useAutomationExtension", false);
+		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+        
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(tc2);
 		return driver;

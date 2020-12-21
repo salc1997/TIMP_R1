@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.Calendar;
+package com.sap.timp.pageObjectModel.Calendar.ParametrosGerais;
 
 
 
@@ -8,19 +8,19 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class AcessarCalendarPO extends TestBaseSteven{
+public class CalendarioDeUsuariosPO extends TestBaseSteven{
 
-	@FindBy(xpath = "//div[text()=\"CALENDAR\"]")
-	public WebElement calendar;
+	@FindBy(xpath = "//span[text()=\"Calendário de Usuários\"]")
+	public WebElement calendario;
 	
-	@FindBy(xpath = "//div[@class=\"dragger-pagination-right\"]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\") and @tabindex=\"0\"][2]")
 	public WebElement ar;
 	
 	@FindBy(xpath = "//span[text()=\"Calendário de Usuários\"]")
 	public WebElement mostrar;
 	
 
-	public AcessarCalendarPO() {
+	public CalendarioDeUsuariosPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -28,15 +28,16 @@ public class AcessarCalendarPO extends TestBaseSteven{
 	
 	public boolean acessarMDR() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
-		sleep(1000);
+		calendario.click();
+		sleep(3000);
+		waitExpectElement(ar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		while (!calendar.isDisplayed()) {
-			ar.click();
-		}
-		sleep(1000);
 		
-		calendar.click();
+		
+		
+		
 		
 		waitExpectElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

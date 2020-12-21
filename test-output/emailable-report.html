@@ -31,6 +31,7 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<<<<<<< HEAD
 <tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">44.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
@@ -42,5 +43,50 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <h2 id="m1">com.timp.test.CALENDAR.AcessarCalendar:CalendarEntrar</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">com.timp.test.CALENDAR.AcessarCalendar:login</h2>
+=======
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">160,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar</td><td><a href="#m1"><b>criar</b>  </a></td><td class="numi">1</td><td>1608586784670</td><td class="numi">120477</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar</td><td><a href="#m2"><b>login</b>  </a></td><td class="numi">1</td><td>1608586759260</td><td class="numi">9510</td></tr><tr class="passedodd"><td><a href="#m3"><b>acessarBRE</b>  </a></td><td class="numi">1</td><td>1608586768771</td><td class="numi">15896</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar:criar</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&quot;graph&quot;]/*/*/*[name()=&quot;g&quot;][10]/*/*[3]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-5P4F1JE&apos;, ip: &apos;192.168.1.88&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52068}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 23dc017287285b320686776e12ff9724
+*** Element info: {Using=xpath, value=//div[@id=&quot;graph&quot;]/*/*/*[name()=&quot;g&quot;][10]/*/*[3]}</p>
+jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarPO.criar(RegrasDeNegocioCriarPO.java:439)
+<br/>at com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar.criar(RegrasDeNegocioCriar.java:47)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar:acessarBRE</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar:login</h2>
+>>>>>>> refs/remotes/origin/Eliel
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

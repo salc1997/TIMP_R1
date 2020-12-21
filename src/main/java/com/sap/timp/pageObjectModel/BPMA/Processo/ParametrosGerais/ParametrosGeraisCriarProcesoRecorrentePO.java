@@ -213,12 +213,7 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
 		sleep(5000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		  
-	
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
-		
-
-		
 		System.out.println(idB);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

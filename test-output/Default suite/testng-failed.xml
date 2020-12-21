@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -50,9 +51,12 @@
 >>>>>>> refs/heads/Yessy
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,7 +67,11 @@
 =======
       <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar">
 >>>>>>> refs/heads/Yessy
+=======
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -139,12 +147,19 @@
 >>>>>>> refs/heads/Yessy
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="criar"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="CriarCopia"/>
 >>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
@@ -167,7 +182,10 @@
 >>>>>>> refs/remotes/origin/Fernando
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -273,6 +291,9 @@
 =======
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2 -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

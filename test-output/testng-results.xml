@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="28" passed="27">
 =======
 <<<<<<< HEAD
@@ -34,7 +35,10 @@
 >>>>>>> refs/remotes/origin/Fernando
 =======
 >>>>>>> refs/heads/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,8 +85,11 @@
 >>>>>>> refs/remotes/origin/Fernando
 =======
 >>>>>>> refs/heads/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -144,8 +151,12 @@
 =======
   <suite started-at="2020-12-18T15:31:33Z" name="Default suite" finished-at="2020-12-18T15:35:01Z" duration-ms="207897">
 >>>>>>> refs/heads/Yessy
+=======
+  <suite started-at="2020-12-20T23:40:43Z" name="Default suite" finished-at="2020-12-20T23:42:13Z" duration-ms="89510">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -238,6 +249,11 @@
       <class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:31:33Z" name="beforeClass" finished-at="2020-12-18T09:31:52Z" duration-ms="18907" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+    <test started-at="2020-12-20T23:40:43Z" name="Default test" finished-at="2020-12-20T23:42:13Z" duration-ms="89510">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:40:43Z" name="beforeClass" finished-at="2020-12-20T17:41:03Z" duration-ms="19562" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -245,6 +261,7 @@
         <test-method status="PASS" signature="acessarBRB()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="acessarBRB" duration-ms="44604" started-at="2020-12-15T17:11:41Z" finished-at="2020-12-15T17:12:26Z">
 =======
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -262,6 +279,9 @@
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:31:52Z" name="ingresar" finished-at="2020-12-18T09:32:01Z" duration-ms="8650" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:41:03Z" name="ingresar" finished-at="2020-12-20T17:41:14Z" duration-ms="11325" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -269,6 +289,7 @@
         <test-method status="PASS" signature="paginacion()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="paginacion" duration-ms="89246" started-at="2020-12-15T17:12:26Z" finished-at="2020-12-15T17:13:55Z">
 =======
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -307,8 +328,12 @@
 =======
         <test-method signature="ingresarMDR()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:32:01Z" name="ingresarMDR" finished-at="2020-12-18T09:32:32Z" duration-ms="31812" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:41:14Z" name="mdrEntrar" finished-at="2020-12-20T17:41:32Z" duration-ms="17818" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- paginacion -->
@@ -682,7 +707,10 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Kenssy
         </test-method> <!-- mdrEntrar -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar@f2f2cc1]" name="criar" duration-ms="71009" started-at="2020-12-10T14:53:02Z" finished-at="2020-12-10T14:54:13Z">
 =======
 <<<<<<< HEAD
@@ -693,13 +721,22 @@ Session ID: 85a3c4f2b7d82315e69de4ccfe0341fc
 >>>>>>> refs/heads/Yessy
         </test-method> <!-- ingresarMDR -->
         <test-method signature="Filtro()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:32:32Z" name="Filtro" finished-at="2020-12-18T09:35:01Z" duration-ms="148509" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:41:32Z" name="criar" finished-at="2020-12-20T17:42:13Z" duration-ms="40780" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Filtro -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@2a265ea9]" started-at="2020-12-18T09:35:01Z" name="afterClass" finished-at="2020-12-18T09:35:01Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@418c5a9c]" started-at="2020-12-20T17:42:13Z" name="afterClass" finished-at="2020-12-20T17:42:13Z" duration-ms="1" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -993,6 +1030,9 @@ Session ID: 0f146bf0e45f4bdbb254dfeecc80a8e2
 =======
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2 -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

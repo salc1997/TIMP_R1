@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseKenssy  {
+public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends TestBaseKenssy  {
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;
@@ -409,7 +409,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 		public WebElement pastaLexeiraH;
 		
 		
-		public FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
+		public FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO() {
 			PageFactory.initElements(driver, this);
 		}
 		
@@ -1247,16 +1247,16 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			sleep(2000);
 			
 			zerado4.click();
-			sleep(3000);
+			sleep(2000);
 			
 			condicaoZerado4.click();
-			sleep(3000);
+			sleep(2000);
 			opcZerado4.click();
 			opcZerado4.sendKeys(Keys.ESCAPE);
-			sleep(3000);
+			sleep(2000);
 			
 			gravar.click();
-			sleep(3000);
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
@@ -1276,724 +1276,732 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 	
 		}
 		
-		public ArrayList<Boolean> subNivel5() {
-			
-			boolean tc2 = false;
-			boolean tq1 = false;
-			boolean tp1 = false;
-			String url = driver.getCurrentUrl();
-			if (url.contains("tc2")) {
-				tc2 = true;
-			}
-			
-			if (url.contains("tq1")) {
-				tq1 = true;
-			}
-			
-			if (url.contains("tp1")) {
-				tp1 = true;
-			}
-			
-			//COMENTAR DESPUES PORFAVOR
+//		public ArrayList<Boolean> subNivel5() {
+//			
+//			boolean tc2 = false;
+//			boolean tq1 = false;
+//			boolean tp1 = false;
+//			String url = driver.getCurrentUrl();
+//			if (url.contains("tc2")) {
+//				tc2 = true;
+//			}
+//			
+//			if (url.contains("tq1")) {
+//				tq1 = true;
+//			}
+//			
+//			if (url.contains("tp1")) {
+//				tp1 = true;
+//			}
+//			
+//			//COMENTAR DESPUES PORFAVOR
+////			sleep(2000);
+////			configuracoes.click();
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+////			configuracaoDaConsolidacao.click();
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+////			
+////			
+////			pesquisar.sendKeys("1117");
+////			pesquisar.sendKeys(Keys.ENTER);
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+////			
+////			
+////			
+////			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
+////			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+////			sleep(2000);
+////			
+////			menu.click();
+////			sleep(1000);
+////			editar.click();
+////			sleep(6000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			waitExpectElement(calculator);
+////			sleep(2000);
+//		//HASTA AQUI
+//			
+//			
+//			System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
+//			sleep(1000);
+//
+//			quintoNivel.click();
 //			sleep(2000);
-//			configuracoes.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			
+//			campolinha5.click();
 //			sleep(2000);
-//			configuracaoDaConsolidacao.click();
+//			campoLinhaO5.click();
+//			sleep(2000);
+//			
+//			formula.click();
 //			sleep(3000);
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //			sleep(2000);
 //			
 //			
-//			pesquisar.sendKeys("1117");
+//			fontedeDados.click();
+//			sleep(2000);
+//			
+//			opcFontedeDados5.click();
+//			sleep(2000);
+//			
+//			camposSaidaBCB.click();
+//			sleep(2000);
+//			
+//			if (tq1 == true) {
+//				buscarCamposSaidaBCB.sendKeys("954");
+//				sleep(1000);
+//				selectBCB1.click();
+//				sleep(1000);
+//				dobleClickElement(selectBCB11);
+//				sleep(1000);
+//			}else if (tc2 ==true) {
+//				buscarCamposSaidaBCB.sendKeys("393");
+//				sleep(1000);
+//				selectBCB3.click();
+//				sleep(1000);
+//				dobleClickElement(selectBCB13);
+//				sleep(1000);
+//			}else {
+//				//CORREGIR AL EJECUTAR EN AMBIENTE
+//				buscarCamposSaidaBCB.sendKeys("328");
+//				sleep(1000);
+//				selectBCB2.click();
+//				sleep(1000);
+//				dobleClickElement(selectBCB12);
+//				sleep(1000);
+//			}
+//			
+//			
+//			caixaFormula.sendKeys("/56");
+//			sleep(2000);
+//			
+//			aplicar.click();
+//			sleep(2000);
+//			
+//			
+//			arredondamento.click();
+//			sleep(2000);
+//			
+//			adicionarConfiguracionArredondamento.click();
+//			sleep(2000);
+//			
+//			
+//			configuracaoArrendamiento.click();
+//			sleep(2000);
+//			configuracaoArrendamientoOpc.click();
+//			sleep(2000);
+//			
+////			if(tc2== true) {
+////				sim.click();
+////				sleep(2000);	
+////			}
+//			
+//
+//			decimais.sendKeys("3");
+//			sleep(2000);
+//			
+//			
+//			abaArredondar.click();
+//			sleep(2000);
+//			abaArredondarOpc.click();
+//			sleep(2000);
+//			
+//			
+//			hierarquiaArredondar.click();
+//			sleep(2000);
+//			hierarquiaArredondarOpc.click();
+//			sleep(2000);
+//			
+//			
+//			grupoArredondar.click();
+//			sleep(2000);
+//			grupoArredondarOpc.click();
+//			sleep(2000);
+//			
+//			
+//			subnivelArredondar.click();
+//			sleep(2000);
+//			subnivelArredondarOpc.click();
+//			sleep(2000);
+//			
+//			
+//			criarSubnivel5.click();
+//			sleep(2000);
+//			
+//			
+//			
+//			fecharSubnivel5.click();
+//			sleep(2000);
+//			
+//			fechar.click();
+//			sleep(3000);
+//			
+//			
+//			gravar.click();
+//			sleep(2000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(3000);
+//			waitExpectElement(executar);
+//			sleep(2000);
+//			
+//			
+////			sim.click();
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+////			
+////			aplicarJustificativa.click();
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+//			
+//			
+//			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
+//			
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			
+//			if (mensaje > 0) {
+//				sucesso.add(true);
+//				
+//			}else {
+//				sucesso.add(false);
+//			}
+//			
+//			return sucesso;
+//			
+//		}
+//		
+//		
+//		public ArrayList<Boolean> abrirSubnivel1() {
+//			
+//			boolean tc2 = false;
+//			boolean tq1 = false;
+//			boolean tp1 = false;
+//			String url = driver.getCurrentUrl();
+//			if (url.contains("tc2")) {
+//				tc2 = true;
+//			}
+//			
+//			if (url.contains("tq1")) {
+//				tq1 = true;
+//			}
+//			
+//			if (url.contains("tp1")) {
+//				tp1 = true;
+//			}
+//			
+//			//COMENTAR DESPUES PORFAVOR
+////			sleep(2000);
+////			configuracoes.click();
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+////			configuracaoDaConsolidacao.click();
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+////			
+////			
+////			pesquisar.sendKeys("1117");
+////			pesquisar.sendKeys(Keys.ENTER);
+////			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(2000);
+////			
+////			
+////			
+////			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
+////			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+////			sleep(2000);
+////			
+////			menu.click();
+////			sleep(1000);
+////			editar.click();
+////			sleep(6000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			waitExpectElement(calculator);
+////			sleep(2000);
+//		//HASTA AQUI
+//			
+//		
+//			
+//			
+//			sleep(1000);
+//			executar.click();
+//			sleep(2000);
+//			waitExpectElement(executarN);
+//			sleep(2000);
+//			executarN.click();
+//			
+//			sleep(1000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			
+//			periodo.click();
+//			sleep(2000);
+//			
+//			if (tc2) {
+//				paginaAnterior.click();
+//				sleep(2000);
+//				ano2015.click();
+//				sleep(1000);
+//				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//				sleep(2000);
+//				jan.click();
+//				sleep(1000);
+//				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//				sleep(2000);
+//				
+//				a1.click(); //OJO CORREGIR PARA TC2
+//			}else {
+//				paginaAnterior.click();
+//				sleep(2000);
+//				ano2016.click();
+//				sleep(1000);
+//				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//				sleep(2000);
+//				jan.click();
+//				sleep(1000);
+//				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//				sleep(2000);
+//				m1.click();
+//			}		
+//			
+//			sleep(2000);
+//			execucaoAnalitica.click();
+//			sleep(1000);
+//			
+//			executarB.click();
+//			sleep(3000);
+////			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+////			sleep(3000);
+//			
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			waitExpectElement(aba1);
+//			sleep(2000);
+//			
+//			aba1.click();
+//			sleep(2000);
+//			hierarquia1.click();
+//			sleep(2000);
+//			grupo1.click();
+//			sleep(2000);
+//					
+//					
+//			
+//			System.out.println("---------------------------------Abrir SubNivel 1-------------------------------------");
+//			sleep(1000);
+//			
+//			subnivel1.click();
+//			sleep(2000);
+//
+//			String valorFormulaSubNivel1 = verFormulaSubNivel1.getText();
+//			System.out.println("Campo Formula Subnivel1: "+ valorFormulaSubNivel1);
+//			
+//			String valorTotalizadorSubNivel1 = totalizadorSubNivel1.getText();
+//			System.out.println("Campo Totalizador Subnivel1: "+ valorTotalizadorSubNivel1);
+//			
+//			subnivel1.click();
+//			sleep(2000);
+//			
+//			
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			//if (tc2==true) {
+//				sucesso.add(valorFormulaSubNivel1.equals("1000/2"));
+//				sucesso.add(valorTotalizadorSubNivel1.equals("500,00"));
+//			//}else {
+////				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
+////				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
+//			//}
+//			
+//			System.out.println(sucesso);
+//			
+//			return sucesso;
+//			
+//		}
+//		
+//		
+//		public ArrayList<Boolean> abrirSubnivel2() {
+//			boolean tc2 = false;
+//			boolean tq1 = false;
+//			boolean tp1 = false;
+//			String url = driver.getCurrentUrl();
+//			if (url.contains("tc2")) {
+//				tc2 = true;
+//			}
+//			
+//			if (url.contains("tq1")) {
+//				tq1 = true;
+//			}
+//			
+//			if (url.contains("tp1")) {
+//				tp1 = true;
+//			}
+//			
+//			
+//			System.out.println("---------------------------------Abrir SubNivel 2-------------------------------------");
+//			sleep(1000);
+//			
+//			subnivel2.click();
+//			sleep(2000);
+//
+//			String valorFormulaSubNivel2 = verFormulaSubNivel2.getText();
+//			System.out.println("Campo Formula Subnivel2: "+ valorFormulaSubNivel2);
+//			
+//			String valorTotalizadorSubNivel2 = totalizadorSubNivel2.getText();
+//			System.out.println("Campo Totalizador Subnivel2: "+ valorTotalizadorSubNivel2);
+//			
+//			subnivel2.click();
+//			sleep(2000);
+//			
+//			
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			//if (tc2==true) {
+//				sucesso.add(valorFormulaSubNivel2.equals("-1000/2"));
+//				sucesso.add(valorTotalizadorSubNivel2.equals("-500,00"));
+//			//}else {
+////				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
+////				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
+//			//}
+//			
+//			System.out.println(sucesso);
+//			
+//			return sucesso;
+//			
+//		}
+//		
+//		
+//		public ArrayList<Boolean> abrirSubNivel3() {
+//			boolean tc2 = false;
+//			boolean tq1 = false;
+//			boolean tp1 = false;
+//			String url = driver.getCurrentUrl();
+//			if (url.contains("tc2")) {
+//				tc2 = true;
+//			}
+//			
+//			if (url.contains("tq1")) {
+//				tq1 = true;
+//			}
+//			
+//			if (url.contains("tp1")) {
+//				tp1 = true;
+//			}
+//			
+//			
+//			System.out.println("---------------------------------Abrir SubNivel 3-------------------------------------");
+//			sleep(1000);
+//			
+//			subnivel3.click();
+//			sleep(2000);
+//
+//			String valorFormulaSubNivel3 = verFormulaSubNivel3.getText();
+//			System.out.println("Campo Formula Subnivel3: "+ valorFormulaSubNivel3);
+//			
+//			String valorTotalizadorSubNivel3 = totalizadorSubNivel3.getText();
+//			System.out.println("Campo Totalizador Subnivel3: "+ valorTotalizadorSubNivel3);
+//			
+//			subnivel3.click();
+//			sleep(2000);
+//			
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			//if (tc2==true) {
+//				sucesso.add(valorFormulaSubNivel3.equals("1000/2"));
+//				sucesso.add(valorTotalizadorSubNivel3.equals("0,00"));
+//			//}else {
+////				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
+////				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
+//			//}
+//			
+//			System.out.println(sucesso);
+//			
+//			return sucesso;
+//		}
+//
+//		
+//		public ArrayList<Boolean> abrirSubNivel4() {
+//			boolean tc2 = false;
+//			boolean tq1 = false;
+//			boolean tp1 = false;
+//			String url = driver.getCurrentUrl();
+//			if (url.contains("tc2")) {
+//				tc2 = true;
+//			}
+//			
+//			if (url.contains("tq1")) {
+//				tq1 = true;
+//			}
+//			
+//			if (url.contains("tp1")) {
+//				tp1 = true;
+//			}
+//			
+//			
+//			System.out.println("---------------------------------Abrir SubNivel 4-------------------------------------");
+//			sleep(1000);
+//			
+//			subnivel4.click();
+//			sleep(2000);
+//
+//			String valorFormulaSubNivel4 = verFormulaSubNivel4.getText();
+//			System.out.println("Campo Formula Subnivel4: "+ valorFormulaSubNivel4);
+//			
+//			String valorTotalizadorSubNivel4 = totalizadorSubNivel4.getText();
+//			System.out.println("Campo Totalizador Subnivel4: "+ valorTotalizadorSubNivel4);
+//			
+//			subnivel4.click();
+//			sleep(2000);
+//			
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			//if (tc2==true) {
+//				sucesso.add(valorFormulaSubNivel4.equals("-1000/2"));
+//				sucesso.add(valorTotalizadorSubNivel4.equals("0,00"));
+//			//}else {
+////				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
+////				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
+//			//}
+//			
+//			System.out.println(sucesso);
+//			
+//			return sucesso;
+//		}
+//		
+//		public ArrayList<Boolean> abrirSubNivel5() {
+//			boolean tc2 = false;
+//			boolean tq1 = false;
+//			boolean tp1 = false;
+//			String url = driver.getCurrentUrl();
+//			if (url.contains("tc2")) {
+//				tc2 = true;
+//			}
+//			
+//			if (url.contains("tq1")) {
+//				tq1 = true;
+//			}
+//			
+//			if (url.contains("tp1")) {
+//				tp1 = true;
+//			}
+//			
+//			
+//			System.out.println("---------------------------------Abrir SubNivel 5-------------------------------------");
+//			sleep(1000);
+//			
+//			subnivel5.click();
+//			sleep(2000);
+//
+//			String valorFormulaSubNivel5 = verFormulaSubNivel5.getText();
+//			System.out.println("Campo Formula Subnivel5: "+ valorFormulaSubNivel5);
+//			
+//			String valorTotalizadorSubNivel5 = totalizadorSubNivel5.getText();
+//			System.out.println("Campo Totalizador Subnivel5: "+ valorTotalizadorSubNivel5);
+//			
+//			subnivel5.click();
+//			sleep(2000);
+//			
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			//if (tc2==true) {
+//				sucesso.add(valorFormulaSubNivel5.equals("1000/56"));
+//				sucesso.add(valorTotalizadorSubNivel5.equals("17,857"));
+//			//}else {
+////				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
+////				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
+//			//}
+//			
+//			System.out.println(sucesso);
+//			
+//			return sucesso;
+//		}
+//		
+//		
+//		public ArrayList<Boolean> excluirConfiguracoes() {
+//			//EXCLUIR CONFIGURACOES
+//
+//			sleep(2000);
+//			biblioteca.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			String idConfiguracao = idObter3();
+//			System.out.println("");
+//			System.out.println("*******EXCLUIR CONFIGURACOES************");
+//			System.out.println("OBTER 3:" + idConfiguracao);
+//			System.out.println("");
+//			
+//			
+//			pesquisar.sendKeys(idConfiguracao);
 //			pesquisar.sendKeys(Keys.ENTER);
 //			sleep(3000);
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //			sleep(2000);
 //			
+//			//idObter2();
 //			
-//			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
-//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
+//			WebElement lixeiraC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 //			sleep(2000);
+//			
+////			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1082\"]/div[1]/div"));
+////			WebElement lixeiraC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1082\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+////			sleep(2000);
 //			
 //			menu.click();
 //			sleep(1000);
-//			editar.click();
+//			lixeiraC.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			waitExpectElement(simLexeira);
+//			sleep(2000);
+//			
+//			simLexeira.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+//			sleep(2000);
+//			
+//			int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
+//			System.out.println(exclucao);
+//			
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			
+//			if (exclucao > 0) {
+//				sucesso.add(true);
+//				
+//			}else {
+//				sucesso.add(false);
+//			}
+//			
+//			pastaLexeiraC.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			pesquisar.sendKeys(idConfiguracao);
+//			pesquisar.sendKeys(Keys.ENTER);
+//			sleep(4000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
+//			WebElement excluirC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+//			
+//			menu.click();
+//			sleep(1000);
+//			excluirC.click();
 //			sleep(6000);
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			waitExpectElement(calculator);
 //			sleep(2000);
-		//HASTA AQUI
-			
-			
-			System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
-			sleep(1000);
-
-			quintoNivel.click();
-			sleep(2000);
-			
-			campolinha5.click();
-			sleep(2000);
-			campoLinhaO5.click();
-			sleep(2000);
-			
-			formula.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			
-			fontedeDados.click();
-			sleep(2000);
-			
-			opcFontedeDados5.click();
-			sleep(2000);
-			
-			camposSaidaBCB.click();
-			sleep(2000);
-			
-			if (tq1 == true) {
-				buscarCamposSaidaBCB.sendKeys("954");
-				sleep(1000);
-				selectBCB1.click();
-				sleep(1000);
-				dobleClickElement(selectBCB11);
-				sleep(1000);
-			}else if (tc2 ==true) {
-				buscarCamposSaidaBCB.sendKeys("393");
-				sleep(1000);
-				selectBCB3.click();
-				sleep(1000);
-				dobleClickElement(selectBCB13);
-				sleep(1000);
-			}else {
-				//CORREGIR AL EJECUTAR EN AMBIENTE
-				buscarCamposSaidaBCB.sendKeys("328");
-				sleep(1000);
-				selectBCB2.click();
-				sleep(1000);
-				dobleClickElement(selectBCB12);
-				sleep(1000);
-			}
-			
-			
-			caixaFormula.sendKeys("/56");
-			sleep(2000);
-			
-			aplicar.click();
-			sleep(2000);
-			
-			
-			arredondamento.click();
-			sleep(2000);
-			
-			adicionarConfiguracionArredondamento.click();
-			sleep(2000);
-			
-			
-			configuracaoArrendamiento.click();
-			sleep(2000);
-			configuracaoArrendamientoOpc.click();
-			sleep(2000);
-			
-			decimais.sendKeys("3");
-			sleep(2000);
-			
-			
-			abaArredondar.click();
-			sleep(2000);
-			abaArredondarOpc.click();
-			sleep(2000);
-			
-			
-			hierarquiaArredondar.click();
-			sleep(2000);
-			hierarquiaArredondarOpc.click();
-			sleep(2000);
-			
-			
-			grupoArredondar.click();
-			sleep(2000);
-			grupoArredondarOpc.click();
-			sleep(2000);
-			
-			
-			subnivelArredondar.click();
-			sleep(2000);
-			subnivelArredondarOpc.click();
-			sleep(2000);
-			
-			
-			criarSubnivel5.click();
-			sleep(3000);
-			
-			
-			
-			fecharSubnivel5.click();
-			sleep(3000);
-			
-			fechar.click();
-			sleep(3000);
-			
-			
-			gravar.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			
-//			sim.click();
+//			
+//			simExcluir.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+//			sleep(2000);
+//			
+//			return sucesso;
+//		}
+//		
+//		public ArrayList<Boolean> excluirHierarquia() {
+//			//EXCLUIR HIERARQUIA
+//			
+//			sleep(2000);
+//			hierarquias.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			hierarquiaConfiguracao.click();
 //			sleep(3000);
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //			sleep(2000);
 //			
-//			aplicarJustificativa.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-			
-			
-			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			
-			if (mensaje > 0) {
-				sucesso.add(true);
-				
-			}else {
-				sucesso.add(false);
-			}
-			
-			return sucesso;
-			
-		}
-		
-		
-		public ArrayList<Boolean> abrirSubnivel1() {
-			
-			boolean tc2 = false;
-			boolean tq1 = false;
-			boolean tp1 = false;
-			String url = driver.getCurrentUrl();
-			if (url.contains("tc2")) {
-				tc2 = true;
-			}
-			
-			if (url.contains("tq1")) {
-				tq1 = true;
-			}
-			
-			if (url.contains("tp1")) {
-				tp1 = true;
-			}
-			
-			//COMENTAR DESPUES PORFAVOR
-//			sleep(2000);
-//			configuracoes.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			configuracaoDaConsolidacao.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
+//			String idHierarquia = idObter1();
+//			//String idHierarquia = "1100";
+//			System.out.println("");
+//			System.out.println("*******EXCLUIR HIERARQUIA************");
+//			System.out.println("OBTER 1:" + idHierarquia);
+//			System.out.println("");
 //			
 //			
-//			pesquisar.sendKeys("1117");
+//			pesquisar.sendKeys(idHierarquia);
 //			pesquisar.sendKeys(Keys.ENTER);
 //			sleep(3000);
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //			sleep(2000);
 //			
+////			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1100\"]/div[1]/div"));
+////			WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1100\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+////			sleep(2000);
+//			
+//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
+//			WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+//			
+//			menu.click();
+//			sleep(1000);
+//			lixeiraH.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			waitExpectElement(simLexeira);
+//			sleep(2000);
+//			
+//			simLexeira.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+//			sleep(2000);
+//			
+//			int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
+//			System.out.println(exclucao);
 //			
 //			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
-//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+//			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//			
+//			if (exclucao>0) {
+//				sucesso.add(true);
+//				
+//			}else {
+//				sucesso.add(false);
+//			}
+//			
+//			
+//			
+//			pastaLexeiraH.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			pesquisar.sendKeys(idHierarquia);
+//			pesquisar.sendKeys(Keys.ENTER);
+//			sleep(4000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
+//			WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 //			sleep(2000);
 //			
 //			menu.click();
 //			sleep(1000);
-//			editar.click();
+//			excluirH.click();
 //			sleep(6000);
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			waitExpectElement(calculator);
 //			sleep(2000);
-		//HASTA AQUI
-			
-		
-			
-			
-			sleep(1000);
-			executar.click();
-			sleep(3000);
-			waitExpectElement(executarN);
-			sleep(2000);
-			executarN.click();
-			
-			sleep(1000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			
-			periodo.click();
-			sleep(3000);
-			
-			if (tc2) {
-				paginaAnterior.click();
-				sleep(2000);
-				ano2015.click();
-				sleep(1000);
-				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				sleep(2000);
-				jan.click();
-				sleep(1000);
-				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				sleep(2000);
-				
-				a1.click(); //OJO CORREGIR PARA TC2
-			}else {
-				paginaAnterior.click();
-				sleep(2000);
-				ano2016.click();
-				sleep(1000);
-				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				sleep(2000);
-				jan.click();
-				sleep(1000);
-				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				sleep(2000);
-				m1.click();
-			}		
-			
-			sleep(2000);
-			execucaoAnalitica.click();
-			sleep(1000);
-			
-			executarB.click();
-			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			
+//			simExcluir.click();
 //			sleep(3000);
-			
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(aba1);
-			sleep(2000);
-			
-			aba1.click();
-			sleep(2000);
-			hierarquia1.click();
-			sleep(2000);
-			grupo1.click();
-			sleep(2000);
-					
-					
-			
-			System.out.println("---------------------------------Abrir SubNivel 1-------------------------------------");
-			sleep(1000);
-			
-			subnivel1.click();
-			sleep(2000);
-
-			String valorFormulaSubNivel1 = verFormulaSubNivel1.getText();
-			System.out.println("Campo Formula Subnivel1: "+ valorFormulaSubNivel1);
-			
-			String valorTotalizadorSubNivel1 = totalizadorSubNivel1.getText();
-			System.out.println("Campo Totalizador Subnivel1: "+ valorTotalizadorSubNivel1);
-			
-			subnivel1.click();
-			sleep(2000);
-			
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			//if (tc2==true) {
-				sucesso.add(valorFormulaSubNivel1.equals("1000/2"));
-				sucesso.add(valorTotalizadorSubNivel1.equals("500,00"));
-			//}else {
-//				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-//				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
-			//}
-			
-			System.out.println(sucesso);
-			
-			return sucesso;
-			
-		}
-		
-		
-		public ArrayList<Boolean> abrirSubnivel2() {
-			boolean tc2 = false;
-			boolean tq1 = false;
-			boolean tp1 = false;
-			String url = driver.getCurrentUrl();
-			if (url.contains("tc2")) {
-				tc2 = true;
-			}
-			
-			if (url.contains("tq1")) {
-				tq1 = true;
-			}
-			
-			if (url.contains("tp1")) {
-				tp1 = true;
-			}
-			
-			
-			System.out.println("---------------------------------Abrir SubNivel 2-------------------------------------");
-			sleep(1000);
-			
-			subnivel2.click();
-			sleep(2000);
-
-			String valorFormulaSubNivel2 = verFormulaSubNivel2.getText();
-			System.out.println("Campo Formula Subnivel2: "+ valorFormulaSubNivel2);
-			
-			String valorTotalizadorSubNivel2 = totalizadorSubNivel2.getText();
-			System.out.println("Campo Totalizador Subnivel2: "+ valorTotalizadorSubNivel2);
-			
-			subnivel2.click();
-			sleep(2000);
-			
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			//if (tc2==true) {
-				sucesso.add(valorFormulaSubNivel2.equals("-1000/2"));
-				sucesso.add(valorTotalizadorSubNivel2.equals("-500,00"));
-			//}else {
-//				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-//				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
-			//}
-			
-			System.out.println(sucesso);
-			
-			return sucesso;
-			
-		}
-		
-		
-		public ArrayList<Boolean> abrirSubNivel3() {
-			boolean tc2 = false;
-			boolean tq1 = false;
-			boolean tp1 = false;
-			String url = driver.getCurrentUrl();
-			if (url.contains("tc2")) {
-				tc2 = true;
-			}
-			
-			if (url.contains("tq1")) {
-				tq1 = true;
-			}
-			
-			if (url.contains("tp1")) {
-				tp1 = true;
-			}
-			
-			
-			System.out.println("---------------------------------Abrir SubNivel 3-------------------------------------");
-			sleep(1000);
-			
-			subnivel3.click();
-			sleep(2000);
-
-			String valorFormulaSubNivel3 = verFormulaSubNivel3.getText();
-			System.out.println("Campo Formula Subnivel3: "+ valorFormulaSubNivel3);
-			
-			String valorTotalizadorSubNivel3 = totalizadorSubNivel3.getText();
-			System.out.println("Campo Totalizador Subnivel3: "+ valorTotalizadorSubNivel3);
-			
-			subnivel3.click();
-			sleep(2000);
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			//if (tc2==true) {
-				sucesso.add(valorFormulaSubNivel3.equals("1000/2"));
-				sucesso.add(valorTotalizadorSubNivel3.equals("0,00"));
-			//}else {
-//				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-//				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
-			//}
-			
-			System.out.println(sucesso);
-			
-			return sucesso;
-		}
-
-		
-		public ArrayList<Boolean> abrirSubNivel4() {
-			boolean tc2 = false;
-			boolean tq1 = false;
-			boolean tp1 = false;
-			String url = driver.getCurrentUrl();
-			if (url.contains("tc2")) {
-				tc2 = true;
-			}
-			
-			if (url.contains("tq1")) {
-				tq1 = true;
-			}
-			
-			if (url.contains("tp1")) {
-				tp1 = true;
-			}
-			
-			
-			System.out.println("---------------------------------Abrir SubNivel 4-------------------------------------");
-			sleep(1000);
-			
-			subnivel4.click();
-			sleep(2000);
-
-			String valorFormulaSubNivel4 = verFormulaSubNivel4.getText();
-			System.out.println("Campo Formula Subnivel4: "+ valorFormulaSubNivel4);
-			
-			String valorTotalizadorSubNivel4 = totalizadorSubNivel4.getText();
-			System.out.println("Campo Totalizador Subnivel4: "+ valorTotalizadorSubNivel4);
-			
-			subnivel4.click();
-			sleep(2000);
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			//if (tc2==true) {
-				sucesso.add(valorFormulaSubNivel4.equals("-1000/2"));
-				sucesso.add(valorTotalizadorSubNivel4.equals("0,00"));
-			//}else {
-//				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-//				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
-			//}
-			
-			System.out.println(sucesso);
-			
-			return sucesso;
-		}
-		
-		public ArrayList<Boolean> abrirSubNivel5() {
-			boolean tc2 = false;
-			boolean tq1 = false;
-			boolean tp1 = false;
-			String url = driver.getCurrentUrl();
-			if (url.contains("tc2")) {
-				tc2 = true;
-			}
-			
-			if (url.contains("tq1")) {
-				tq1 = true;
-			}
-			
-			if (url.contains("tp1")) {
-				tp1 = true;
-			}
-			
-			
-			System.out.println("---------------------------------Abrir SubNivel 5-------------------------------------");
-			sleep(1000);
-			
-			subnivel5.click();
-			sleep(2000);
-
-			String valorFormulaSubNivel5 = verFormulaSubNivel5.getText();
-			System.out.println("Campo Formula Subnivel5: "+ valorFormulaSubNivel5);
-			
-			String valorTotalizadorSubNivel5 = totalizadorSubNivel5.getText();
-			System.out.println("Campo Totalizador Subnivel5: "+ valorTotalizadorSubNivel5);
-			
-			subnivel5.click();
-			sleep(2000);
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			//if (tc2==true) {
-				sucesso.add(valorFormulaSubNivel5.equals("1000/56"));
-				sucesso.add(valorTotalizadorSubNivel5.equals("17,857"));
-			//}else {
-//				sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-//				sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
-			//}
-			
-			System.out.println(sucesso);
-			
-			return sucesso;
-		}
-		
-		
-		public ArrayList<Boolean> excluirConfiguracoes() {
-			//EXCLUIR CONFIGURACOES
-
-			sleep(2000);
-			biblioteca.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			String idConfiguracao = idObter3();
-			System.out.println("");
-			System.out.println("*******EXCLUIR CONFIGURACOES************");
-			System.out.println("OBTER 3:" + idConfiguracao);
-			System.out.println("");
-			
-			
-			pesquisar.sendKeys(idConfiguracao);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			//idObter2();
-			
-			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
-			WebElement lixeiraC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
-			sleep(2000);
-			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1082\"]/div[1]/div"));
-//			WebElement lixeiraC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1082\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 //			sleep(2000);
-			
-			menu.click();
-			sleep(1000);
-			lixeiraC.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(simLexeira);
-			sleep(2000);
-			
-			simLexeira.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-			sleep(2000);
-			
-			int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
-			System.out.println(exclucao);
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			
-			if (exclucao > 0) {
-				sucesso.add(true);
-				
-			}else {
-				sucesso.add(false);
-			}
-			
-			pastaLexeiraC.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			pesquisar.sendKeys(idConfiguracao);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(4000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
-			WebElement excluirC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
-			
-			menu.click();
-			sleep(1000);
-			excluirC.click();
-			sleep(6000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			simExcluir.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-			sleep(2000);
-			
-			return sucesso;
-		}
-		
-		public ArrayList<Boolean> excluirHierarquia() {
-			//EXCLUIR HIERARQUIA
-			
-			sleep(2000);
-			hierarquias.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			hierarquiaConfiguracao.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			String idHierarquia = idObter1();
-			//String idHierarquia = "1100";
-			System.out.println("");
-			System.out.println("*******EXCLUIR HIERARQUIA************");
-			System.out.println("OBTER 1:" + idHierarquia);
-			System.out.println("");
-			
-			
-			pesquisar.sendKeys(idHierarquia);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1100\"]/div[1]/div"));
-//			WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1100\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
-//			sleep(2000);
-			
-			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
-			WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
-			
-			menu.click();
-			sleep(1000);
-			lixeiraH.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(simLexeira);
-			sleep(2000);
-			
-			simLexeira.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-			sleep(2000);
-			
-			int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
-			System.out.println(exclucao);
-			
-			
-			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			
-			if (exclucao>0) {
-				sucesso.add(true);
-				
-			}else {
-				sucesso.add(false);
-			}
-			
-			
-			
-			pastaLexeiraH.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			pesquisar.sendKeys(idHierarquia);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(4000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
-			WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
-			sleep(2000);
-			
-			menu.click();
-			sleep(1000);
-			excluirH.click();
-			sleep(6000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			simExcluir.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-			sleep(2000);
-			
-			return sucesso;
-		}
-		
+//			
+//			return sucesso;
+//		}
+//		
 		
 		
 		

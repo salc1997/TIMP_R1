@@ -30,7 +30,6 @@ public class TestBaseFernando extends TestBaseSteven {
 
 		driver.get(tq1);
 
-
 		return driver;
 	}
 

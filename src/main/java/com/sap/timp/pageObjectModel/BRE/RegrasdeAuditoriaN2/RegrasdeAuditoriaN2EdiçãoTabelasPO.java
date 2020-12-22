@@ -25,7 +25,7 @@ public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
-	@FindBy(xpath = "//li[text()=\"ALIQUOTA INTERNA\"]")
+	@FindBy(xpath = "//li[text()=\"Apresent. Treinamento 4\"]")
 	public WebElement seleccionTabela;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")

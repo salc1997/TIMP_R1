@@ -173,18 +173,7 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 		}else {
 			opcaouffilial.click();
 		}
-		sleep(1000);
-
-		sleep(2000);
-		opcaoempresa.click();
-		sleep(2000);
-		//empresa.sendKeys(Keys.ESCAPE);
-		sleep(2000);
-		selecionaruffilial.click();
-		sleep(2000);
-		opcaouffilial.click();
-		sleep(2000);
-	   // selecionaruffilial.sendKeys(Keys.ESCAPE);
+		
 	 
 		sleep(2000);
 		filial.click();
@@ -203,18 +192,6 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 			opcao2filial.sendKeys(Keys.ESCAPE);
 		}
 
-		//sleep(2000);
-		//opcao1filial.click();
-
-		//sleep(2000);
-
-
-	
-
-		//opcao2filial.click();
-		//sleep(2000);
-		//closeSelectTypeCheckbox(filial);
-		//sleep(2000);
 
 		filialcentralizadora.click();
 
@@ -225,9 +202,6 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 			opcaofialcentralizadora.click();
 		}
 		sleep(1000);
-
-		sleep(2000);
-		opcaofialcentralizadora.click();
 
 		//pega a data atual
 		String dataatual = fechaActual();

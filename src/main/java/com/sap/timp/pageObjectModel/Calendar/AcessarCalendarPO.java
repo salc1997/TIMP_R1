@@ -26,7 +26,7 @@ public class AcessarCalendarPO extends TestBaseSteven{
 	}
 
 	
-	public boolean acessarMDR() {
+	public boolean acessarCalendar() {
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(1000);

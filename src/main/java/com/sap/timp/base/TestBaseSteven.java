@@ -90,7 +90,7 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tc2);
 		return driver;
 	}
 	
@@ -101,6 +101,10 @@ public class TestBaseSteven {
 
 	public void refresh() {
 		driver.navigate().refresh();
+	}
+	
+	public String url() {
+		return driver.getCurrentUrl();
 	}
 	public int rows(String element) {
 		

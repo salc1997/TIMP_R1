@@ -120,8 +120,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		waitExpectElement(nao);
 		sleep(1000);
 		nao.click();
-		sleep(3000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -139,7 +138,8 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		
 		
 		caminho.click();
-		sleep(2000);
+		invisibilityOfElementOverlay();
+
 		codigo.clear();
 		sleep(1000);
 		codigo.sendKeys("r2");
@@ -169,8 +169,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		waitExpectElement(nao);
 		sleep(1000);
 		nao.click();
-		sleep(3000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -194,7 +193,8 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		System.out.println("Verificação Cópia: " + sucesso.get(2));
 		
 		caixaCopia.click();
-		sleep(2000);
+
+		invisibilityOfElementOverlay();
 		
 		remover.click();
 		sleep(2000);
@@ -204,8 +204,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		waitExpectElement(nao);
 		sleep(1000);
 		nao.click();
-		sleep(3000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -229,14 +228,17 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		System.out.println("Verificação exclusão Cópia: " + sucesso.get(3));
 		
 		configuracoes.click();
-		sleep(1000);
+		invisibilityOfElementOverlay();
+
 		waitExpectElement(descricaoConf);
 		sleep(2000);
 		
 		
 		String enviar = "Teste Editar";
-		descricaoConf.sendKeys(enviar);
+		descricaoConf.clear();
 		sleep(1000);
+		descricaoConf.sendKeys(enviar);
+		sleep(2000);
 		aplicar.click();
 		sleep(3000);
 		
@@ -245,8 +247,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		waitExpectElement(nao);
 		sleep(1000);
 		nao.click();
-		sleep(3000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -259,7 +260,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		
 
 		configuracoes.click();
-		sleep(1000);
+		invisibilityOfElementOverlay();
 		waitExpectElement(descricaoConf);
 		sleep(2000);
 		

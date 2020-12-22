@@ -42,7 +42,7 @@ public class AcessarCalendar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void CalendarEntrar() {
 
-		boolean sucesso = acessarCalendarPO.acessarMDR();
+		boolean sucesso = acessarCalendarPO.acessarCalendar();
 		assertTrue(sucesso, "Não se Conseguiu Acessar o Componente");
 
 	}

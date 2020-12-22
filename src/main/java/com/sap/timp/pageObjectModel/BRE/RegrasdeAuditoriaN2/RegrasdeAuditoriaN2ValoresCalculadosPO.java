@@ -199,7 +199,7 @@ public boolean editar() {
 	
 	condicoes2.sendKeys("0");
 	sleep(2000);
-	condicoes2.sendKeys(Keys.ENTER);
+	condicoes2.sendKeys(Keys.ESCAPE);
 	sleep(2000);
 	
 	acoes.sendKeys("Apresenta valor nulo");

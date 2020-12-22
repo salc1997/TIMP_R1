@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultPorTributo;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,21 +22,14 @@ public class ContasDefaultPorTributoDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Nova Conta Default por Tributo\"]")
 	public WebElement novacontadefaultportributo;
 	
-	@FindBy(xpath = "//div[@class=\"field-element companyId_0_0\"]/div/div/div/div[2]")
-	public WebElement empresa;
+	@FindBy(xpath = "//div[@id=\"detail-description\"][2]/div[2]/div")
+	public WebElement codigoAjusteD;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaoempresa;
+	@FindBy(xpath = "//div[@id=\"detail-description\"][3]/div[2]/div")
+	public WebElement contaCreditoD;
 	
-	@FindBy(xpath = "//div[@class=\"field-element branchId_0_0\"]/div/div/div/div[2]")
-	public WebElement filial;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaofilial;
-	
-	
-	@FindBy(xpath = "//div[@class=\"field-element adjustmentCode_0_1\"]/div/div/div/div[2]")
-	public WebElement codigodeajuste;
+	@FindBy(xpath = "//div[@id=\"detail-description\"][4]/div[2]/div")
+	public WebElement contaDebitoD;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
@@ -55,14 +50,16 @@ public class ContasDefaultPorTributoDetalhesPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
-	public WebElement opcaocodigodeajuste;
+	@FindBy(xpath = "//span[@id=\"adjustmentCode\"]")
+	public WebElement codigoAjusteV;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Débito\"]")
-	public WebElement contadebito;
+	@FindBy(xpath = "//span[@id=\"creditAccount\"]")
+	public WebElement contaCreditoV;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Crédito\"]")
-	public WebElement contacredito;
+	@FindBy(xpath = "//span[@id=\"debitAccount\"]")
+	public WebElement contaDebitoV;
+	
+
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
@@ -73,19 +70,16 @@ public class ContasDefaultPorTributoDetalhesPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String detalhes() {
+	public ArrayList<Boolean> detalhes() {
 		
 		sleep(2000);
 		parametrosdecontabilizacao.click();
 		sleep(2000);
 		contasdefaultportributo.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-	
-		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
 		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
@@ -102,12 +96,20 @@ public class ContasDefaultPorTributoDetalhesPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		String codigoAjusteD1 = codigoAjusteD.getText();
+		String contaCreditoD1 = contaCreditoD.getText();
+		String contaDebitoD1 = contaDebitoD.getText();
+		
+		System.out.println(codigoAjusteD1);
+		System.out.println(contaCreditoD1);
+		System.out.println(contaDebitoD1);
+
+
+		
+		
 		fechar.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//pega o ultimo id que foi gerado no criar
@@ -121,12 +123,34 @@ public class ContasDefaultPorTributoDetalhesPO extends TestBaseEliel{
 		sleep(1000);
 		
 		visualizar.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		String codigoAjusteV1 = codigoAjusteV.getText();
+		String contaCreditoV1 = contaCreditoV.getText();
+		String contaDebitoV1 = contaDebitoV.getText();
+		
+
+		System.out.println(codigoAjusteV1);
+		System.out.println(contaCreditoV1);
+		System.out.println(contaDebitoV1);
+
+
+		
+	
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		
+		sucesso.add(codigoAjusteV1.contains(codigoAjusteD1));
+		sucesso.add(contaCreditoV1.contains(contaCreditoD1));
+		sucesso.add(contaDebitoV1.contains(contaDebitoD1));
+		
 		System.out.println(sucesso);	
 		return sucesso;	
+
 		
 	}
 }

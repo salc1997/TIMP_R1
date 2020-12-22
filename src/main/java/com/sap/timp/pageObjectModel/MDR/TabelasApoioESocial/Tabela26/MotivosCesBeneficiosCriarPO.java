@@ -134,7 +134,7 @@ public class MotivosCesBeneficiosCriarPO extends TestBaseSteven{
 			sucesso = false;
 		}
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		

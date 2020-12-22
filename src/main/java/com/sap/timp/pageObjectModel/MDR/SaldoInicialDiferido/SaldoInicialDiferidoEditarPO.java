@@ -114,7 +114,7 @@ public class SaldoInicialDiferidoEditarPO extends TestBaseSteven {
 		sleep(2000);
 		sim.click();
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		
+		System.out.println(sucesso);
 		return sucesso;
 
 	}

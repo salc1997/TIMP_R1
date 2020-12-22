@@ -162,8 +162,8 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBaseEliel{
 		String tipoAjusteV1 = tipoAjustV.getText();
 		String tributoV1 = tributoV.getText();
 		String tipoImpostoV1 = tipoImpostoV.getText();
-		String detalheTipoTributoV1 = getText(detalheTipoTributoV);
-		String utilizacaoV1 = getText(utilizacaoV);
+		String detalheTipoTributoV1 = detalheTipoTributoV.getText();
+		String utilizacaoV1 = utilizacaoV.getText();
 		String linhaLivroV1 = linhaLivroV.getText();
 		String contaDebitoV1 = contaDebitoV.getText();
 		String contaCreditoV1 = contaCreditoV.getText();
@@ -218,8 +218,8 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBaseEliel{
 		String tipoAjusteE1 = tipoAjusteE.getAttribute("value");
 		String tributoE1 = tributoE.getAttribute("value");
 		String tipoImpostoE1 = tipoImpostoE.getAttribute("value");
-		String detalheTipoTributoE1= getValue(detalheTipoTributoE);
-		String utiliacaoE1 = getValue(utilizacaoE);
+		String detalheTipoTributoE1= detalheTipoTributoE.getAttribute("value");
+		String utiliacaoE1 = utilizacaoE.getAttribute("value");
 		String linhaLivroE1 = linhaLivroE.getAttribute("value");
 		String contaDebitoE1 = contaDebitoE.getAttribute("value");
 		String contaCreditoE1 = contaCreditoE.getAttribute("value");

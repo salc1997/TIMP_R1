@@ -54,7 +54,9 @@ import com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevan
 import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisCriar;
 import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisDetalhes;
 import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisEditar;
+import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluir;
 import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa;
+import com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisVisualizar;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoCriar;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoDetalhes;
 import com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditar;
@@ -126,6 +128,7 @@ import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInf
 import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresEditar;
 import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresExcluir;
 import com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar;
+import com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilExcluir;
 
 public class AutomacoesMDR2 extends TestBaseSteven {
 
@@ -210,6 +213,8 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	TiposDeObjetosDeOcorrenciasFiscaisDetalhes tiposDeObjetosDeOcorrenciasFiscaisDetalhes;
 	TiposDeObjetosDeOcorrenciasFiscaisEditar tiposDeObjetosDeOcorrenciasFiscaisEditar;
 	TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa;
+	TiposDeObjetosDeOcorrenciasFiscaisExcluir tiposDeObjetosDeOcorrenciasFiscaisExcluir;
+	TiposDeObjetosDeOcorrenciasFiscaisVisualizar tiposDeObjetosDeOcorrenciasFiscaisVisualizar;
 	
 	// Parâmetros de Contabilização > Contas Default Para Extemporaneo
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -9,7 +10,20 @@
           <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDRKen">
+        <methods>
+          <include name="s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID"/>
+          <include name="deXParaM010PlanodeContasSocietarioExcluirEmMassa"/>
+          <include name="incentivosFiscaisCriar"/>
+          <include name="aliquotasDeTaxaDeActualizacaoExcluirEmMassa"/>
+          <include name="saldosCriar"/>
+>>>>>>> refs/remotes/origin/Cristhian
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.AcessarCalendar -->
 =======
@@ -27,6 +41,9 @@
 =======
       </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
 >>>>>>> refs/remotes/origin/Steven
+=======
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDRKen -->
+>>>>>>> refs/remotes/origin/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

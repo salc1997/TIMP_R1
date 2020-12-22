@@ -140,12 +140,12 @@ public class CadastroDeObrasCriarPO extends TestBaseMassiel{
 		
 		CEI.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		CEI.sendKeys(Keys.ENTER);
-		CEI.sendKeys("865854");
+		CEI.sendKeys("865855");
 		sleep(2000);
 		
 		Descripcion.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		Descripcion.sendKeys(Keys.ENTER);
-		Descripcion.sendKeys("tipo de cadastro");
+		Descripcion.sendKeys("tipo de cadastros");
 		
 		inpuEmpresa.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		inpuEmpresa.sendKeys(Keys.ENTER);
@@ -167,7 +167,7 @@ public class CadastroDeObrasCriarPO extends TestBaseMassiel{
 		BotonCodigo.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		NumeroCodigo.sendKeys("7");
+		NumeroCodigo.sendKeys("8");
 		sleep(4000);
 		
 		sim.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

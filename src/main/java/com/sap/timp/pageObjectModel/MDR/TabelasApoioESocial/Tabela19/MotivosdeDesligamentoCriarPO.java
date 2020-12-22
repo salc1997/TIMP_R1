@@ -86,7 +86,7 @@ public class MotivosdeDesligamentoCriarPO extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("124");
+		codigo.sendKeys("007");
 		sleep(1000);
 		descricao.sendKeys("Teste Compatibilidade Motivo Desligamento");
 		sleep(1000);

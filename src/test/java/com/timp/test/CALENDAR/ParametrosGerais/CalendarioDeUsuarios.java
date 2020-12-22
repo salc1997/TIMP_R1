@@ -1,4 +1,4 @@
-package com.timp.test.CALENDAR;
+package com.timp.test.CALENDAR.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,14 +9,16 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
+import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.CalendarioDeUsuariosPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-public class AcessarCalendar extends TestBaseSteven {
+public class CalendarioDeUsuarios extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
+	CalendarioDeUsuariosPO calendarioDeUsuariosPO;
 
-	public AcessarCalendar() {
+	public CalendarioDeUsuarios() {
 		super();
 	}
 
@@ -26,6 +28,7 @@ public class AcessarCalendar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
+		calendarioDeUsuariosPO = new CalendarioDeUsuariosPO();
 	}
 
 	@AfterClass
@@ -38,12 +41,18 @@ public class AcessarCalendar extends TestBaseSteven {
 		loginTC.login();
 
 	}
-
+	
 	@Test(priority = 2)
+	public void acessarCalendar() {
+		acessarCalendarPO.acessarCalendar();
+
+	}
+
+	@Test(priority = 3)
 	public void CalendarEntrar() {
 
-		boolean sucesso = acessarCalendarPO.acessarCalendar();
-		assertTrue(sucesso, "Não se Conseguiu Acessar o Componente");
+		boolean sucesso = calendarioDeUsuariosPO.acessarMDR();
+		assertTrue(sucesso, filtros);
 
 	}
 

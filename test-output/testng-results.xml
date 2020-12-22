@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="2" passed="2">
 =======
 <testng-results total="3" passed="2" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> refs/remotes/origin/Steven
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="44496" started-at="2020-12-21T12:17:06Z" finished-at="2020-12-21T12:17:50Z">
 =======
   <suite started-at="2020-12-21T21:39:04Z" name="Default suite" finished-at="2020-12-21T21:41:45Z" duration-ms="160207">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+  <suite name="Default suite" duration-ms="96345" started-at="2020-12-22T04:02:01Z" finished-at="2020-12-22T04:03:38Z">
+>>>>>>> refs/remotes/origin/Steven
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="44496" started-at="2020-12-21T12:17:06Z" finished-at="2020-12-21T12:17:50Z">
       <class name="com.timp.test.CALENDAR.AcessarCalendar">
@@ -22,30 +31,53 @@
       <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@6892b3b6]" started-at="2020-12-21T18:39:04Z" name="beforeClass" finished-at="2020-12-21T18:39:19Z" duration-ms="14309" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+    <test name="Default test" duration-ms="96345" started-at="2020-12-22T04:02:01Z" finished-at="2020-12-22T04:03:38Z">
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir@3a079870]" name="beforeClass" is-config="true" duration-ms="10600" started-at="2020-12-21T22:02:01Z" finished-at="2020-12-21T22:02:12Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.CALENDAR.AcessarCalendar@f2f2cc1]" name="login" duration-ms="6391" started-at="2020-12-21T06:17:17Z" finished-at="2020-12-21T06:17:23Z">
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@6892b3b6]" started-at="2020-12-21T18:39:19Z" name="login" finished-at="2020-12-21T18:39:28Z" duration-ms="9510" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir@3a079870]" name="login" duration-ms="8345" started-at="2020-12-21T22:02:12Z" finished-at="2020-12-21T22:02:20Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="CalendarEntrar()[pri:0, instance:com.timp.test.CALENDAR.AcessarCalendar@f2f2cc1]" name="CalendarEntrar" duration-ms="26861" started-at="2020-12-21T06:17:23Z" finished-at="2020-12-21T06:17:50Z">
 =======
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@6892b3b6]" started-at="2020-12-21T18:39:28Z" name="acessarBRE" finished-at="2020-12-21T18:39:44Z" duration-ms="15896" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir@3a079870]" name="acessarMDR" duration-ms="35418" started-at="2020-12-21T22:02:20Z" finished-at="2020-12-21T22:02:56Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
         </test-method> <!-- CalendarEntrar -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.AcessarCalendar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="85" started-at="2020-12-21T06:17:50Z" finished-at="2020-12-21T06:17:50Z">
+=======
+        </test-method> <!-- acessarMDR -->
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir@3a079870]" name="excluir" duration-ms="41890" started-at="2020-12-21T22:02:56Z" finished-at="2020-12-21T22:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir@3a079870]" name="afterClass" is-config="true" duration-ms="72" started-at="2020-12-21T22:03:38Z" finished-at="2020-12-21T22:03:38Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.AcessarCalendar -->
 =======
         </test-method> <!-- acessarBRE -->
@@ -124,6 +156,9 @@ Session ID: 23dc017287285b320686776e12ff9724
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir -->
+>>>>>>> refs/remotes/origin/Steven
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

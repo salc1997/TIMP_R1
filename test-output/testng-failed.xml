@@ -4,12 +4,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.CALENDAR.AcessarCalendar">
+      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
         <methods>
           <include name="beforeClass"/>
-          <include name="CalendarEntrar"/>
-          <include name="login"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.AcessarCalendar -->
 =======
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -23,6 +24,9 @@
         </methods>
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
+>>>>>>> refs/remotes/origin/Steven
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

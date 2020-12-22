@@ -321,7 +321,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		NomeDoValor.sendKeys(Keys.ESCAPE);
 		
 		sleep(1000);
-		
+				
 		acoes.click();
 		sleep(1000);
 		opcaoacoes.click();

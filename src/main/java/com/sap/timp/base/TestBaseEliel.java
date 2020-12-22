@@ -33,6 +33,7 @@ public class TestBaseEliel extends TestBaseSteven {
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+
 		
 		//Evita que la ventana de guardar contraseña aparezca
 		Map<String, Object> prefs = new HashMap<String, Object>();

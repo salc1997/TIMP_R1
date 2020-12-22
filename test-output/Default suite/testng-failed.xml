@@ -1,28 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.CALENDAR.AcessarCalendar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="CalendarEntrar"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- com.timp.test.CALENDAR.AcessarCalendar -->
-=======
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="contasDefaultParaExtemporaneoEditar"/>
+          <include name="oPPropriosRessarcimentosCriar"/>
+          <include name="tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa"/>
+          <include name="filiaisDetalle"/>
+          <include name="sCANCDistribuidorasDetalhes"/>
+          <include name="detalheTipoTributoFiscalEditar"/>
+          <include name="limiteCompetenciaDetalhes"/>
+          <include name="registroDeExportaçaoDetalhes"/>
+          <include name="saldoInicialDiferidoExcluir"/>
+          <include name="ajusteEInformacoesDeValoresExcluirEmMassa"/>
+          <include name="saldoInicialDiferidoEditar"/>
+          <include name="limiteCompetenciaVisualizar"/>
+          <include name="productosSCANCCriar"/>
+          <include name="tiposDeObjetosDeOcorrenciasFiscaisCriar"/>
+          <include name="registroDeExportaçaoEditar"/>
+          <include name="limiteCompetenciaEditar"/>
+          <include name="tiposDeObjetosDeOcorrenciasFiscaisDetalhes"/>
+          <include name="limiteCompetenciaCriar"/>
+          <include name="determinacaoDeTipoDeCondicaoCriarDetalhes"/>
+          <include name="empresaFiltros"/>
+          <include name="empresaEditar"/>
+          <include name="saldoInicialDiferidoExcluirMassa"/>
+          <include name="mapeamentoContabilEditar"/>
+          <include name="determinacaoDeTipoDeCondicaoCriarEditar"/>
+          <include name="determinacaoDeTipoDeCondicaoCriarExcluir"/>
+          <include name="tiposDeObjetosDeOcorrenciasFiscaisEditar"/>
+          <include name="determinacaoDeTipoDeCondicaoCriarCriar"/>
+          <include name="productosSCANCEditar"/>
+          <include name="saldoInicialDiferidoFiltroID"/>
+          <include name="productosSCANCExcluir"/>
+          <include name="limiteCompetenciaExcluir"/>
+          <include name="saldoInicialDiferidoCriar"/>
+          <include name="hierarquiaDeCenariosDeCorreçaoVisualizar"/>
+          <include name="motivosCesBeneficiosVisualizar"/>
+          <include name="productosSCANCDetalhes"/>
+          <include name="contasDefaultPorTributoDetalhes"/>
+          <include name="parametrosParaLivroICMSSTDetalhes"/>
+          <include name="contasDefaultParaExtemporaneoDetalhes"/>
+          <include name="sequenciaEditar"/>
+          <include name="hierarquiaDeCenariosDeCorreçaoDetalhes"/>
+          <include name="mapeamentoContabilCorrecaoVisualizar"/>
+          <include name="mapeamentoDeRelevanciaParaPisCofinsVisualizar"/>
+          <include name="productosSCANCVisualizar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
->>>>>>> refs/remotes/origin/Eliel
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

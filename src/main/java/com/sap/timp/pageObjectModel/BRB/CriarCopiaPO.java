@@ -201,13 +201,11 @@ public class CriarCopiaPO extends TestBaseSteven{
 		waitExpectElement(sim);
 		sleep(3000);
 		sim.click();
-		
-		sleep(2000);
+				
 		invisibilityOfElementOverlay();
 		
-		driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]")).click();
-		driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li[1]/div/span[3]")).click();
-		
+		fecharMensagens("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]", "//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");	
+	
 		sleep(2000);
 	
 		lixeira.click();

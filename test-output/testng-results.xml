@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="3" passed="3">
 =======
 <testng-results total="3" passed="2" failed="1" skipped="0">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="124077" started-at="2020-12-23T17:12:26Z" finished-at="2020-12-23T17:14:30Z">
 =======
   <suite started-at="2020-12-23T16:03:00Z" name="Default suite" finished-at="2020-12-23T16:10:33Z" duration-ms="453373">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2020-12-23T17:09:18Z" name="Default suite" finished-at="2020-12-23T17:11:15Z" duration-ms="117326">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="124077" started-at="2020-12-23T17:12:26Z" finished-at="2020-12-23T17:14:30Z">
       <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir">
@@ -22,25 +31,39 @@
       <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:03:00Z" name="beforeClass" finished-at="2020-12-23T10:03:13Z" duration-ms="12550" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2020-12-23T17:09:18Z" name="Default test" finished-at="2020-12-23T17:11:15Z" duration-ms="117326">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:09:18Z" name="beforeClass" finished-at="2020-12-23T11:09:29Z" duration-ms="11037" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@3a079870]" name="ingresar" duration-ms="8308" started-at="2020-12-23T11:12:40Z" finished-at="2020-12-23T11:12:49Z">
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:03:13Z" name="ingresar" finished-at="2020-12-23T10:03:21Z" duration-ms="8426" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:09:29Z" name="ingresar" finished-at="2020-12-23T11:09:38Z" duration-ms="8887" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@3a079870]" name="scancEntrar" duration-ms="27503" started-at="2020-12-23T11:12:49Z" finished-at="2020-12-23T11:13:16Z">
 =======
         <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:03:21Z" name="scancEntrar" finished-at="2020-12-23T10:03:46Z" duration-ms="25247" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:09:38Z" name="scancEntrar" finished-at="2020-12-23T11:10:05Z" duration-ms="26928" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scancEntrar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@3a079870]" name="excluir" duration-ms="69563" started-at="2020-12-23T11:13:16Z" finished-at="2020-12-23T11:14:26Z">
 =======
@@ -83,8 +106,12 @@
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:10:05Z" name="excluir" finished-at="2020-12-23T11:11:11Z" duration-ms="66081" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- excluir -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@3a079870]" name="afterClass" is-config="true" duration-ms="4437" started-at="2020-12-23T11:14:26Z" finished-at="2020-12-23T11:14:30Z">
@@ -92,14 +119,22 @@
         </test-method> <!-- criarCampoDeSaida -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:10:33Z" name="afterClass" finished-at="2020-12-23T10:10:33Z" duration-ms="0" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:11:11Z" name="afterClass" finished-at="2020-12-23T11:11:15Z" duration-ms="4355" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir -->
 =======
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

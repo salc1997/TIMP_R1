@@ -263,14 +263,14 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String valorCampoSaidaVerificar = "A6Q1L1.1.6";
+		String valorCampoSaidaVerificar = "A6Q1L116";
 		String valorLimitadorVerificar = "1.1.2";
 		
 		System.out.println("");
 		System.out.println("Valor campo saida a confirmar: " + valorCampoSaidaVerificar);
 		System.out.println("Valor limitador a confirmar: " + valorLimitadorVerificar);
 		
-		String valorCampoSaidaString = driver.findElement(By.xpath("//div[@id=\"outputSelect\"]/div/div/div/input")).getAttribute("value");
+		String valorCampoSaidaString = driver.findElement(By.xpath("//div[@id=\"outputSelect\"]/div/div/div/input")).getAttribute("value").replace(".", "");
 		
 		waitExpectElement(inputValorLimitador);
 		attributoNotToBeEmptyElement(inputValorLimitador, "value");
@@ -334,18 +334,10 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 			closeSelectTypeCheckbox(cboCnpjEmitente);
 		}
 		
-		if(url.contains("tc2")) {
-//			int rowsCnpj = driver.findElements(By.xpath("//div[@class=\"list-option\"]")).size();
-//			rowsCnpj = rowsCnpj - 1;
-//			
-//			actionsMoveToElementXpath("//div[@class=\"list-option\"]["+rowsCnpj+"]");
-//			sleep(1000);
-			
+		if(url.contains("tc2")) {			
 			WebElement inputCnpjFiltro = driver.findElement(By.xpath("//div[@id=\"cnpjEmit\"]/div/div[2]/div/div/div[2]/input"));
 			inputCnpjFiltro.sendKeys("33000167014323");
 			inputCnpjFiltro.sendKeys(Keys.ENTER);
-//			opcionCnpj = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"33000167014323\"]"));
-//			opcionCnpj.click();
 		}
 		
 		sleep(1000);

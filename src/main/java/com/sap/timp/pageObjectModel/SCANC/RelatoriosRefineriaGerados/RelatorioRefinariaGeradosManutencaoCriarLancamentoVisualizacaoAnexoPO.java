@@ -298,6 +298,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
+		driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]")).click();
 		actionsMoveToElementElement(btnGravar);
 		btnGravar.click();
 		sleep(1000);

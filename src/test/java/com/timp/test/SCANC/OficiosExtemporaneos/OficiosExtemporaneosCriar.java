@@ -1,4 +1,4 @@
-package com.timp.test.SCANC.RelatoriosRefineriaGerados;
+package com.timp.test.SCANC.OficiosExtemporaneos;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,24 +11,24 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
-import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustesPO;
+import com.sap.timp.pageObjectModel.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriarPO;
 
-public class RelatorioRefinariaGeradosGerarAjustes extends TestBaseFernando{
+public class OficiosExtemporaneosCriar extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
-	RelatorioRefinariaGeradosGerarAjustesPO relatorioRefinariaGeradosGerarAjustesPO;
+	OficiosExtemporaneosCriarPO oficiosExtemporaneosCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
-		relatorioRefinariaGeradosGerarAjustesPO = new RelatorioRefinariaGeradosGerarAjustesPO();
+		oficiosExtemporaneosCriarPO = new OficiosExtemporaneosCriarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,8 +42,9 @@ public class RelatorioRefinariaGeradosGerarAjustes extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void criarCampoDeSaida() {	
-		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosGerarAjustesPO.gerarAjustes();
+	public void criar() {		
+		
+		ArrayList<Boolean> sucesso = oficiosExtemporaneosCriarPO.criar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);

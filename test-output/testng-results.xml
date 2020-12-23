@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,20 +12,38 @@
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <testng-results skipped="0" failed="0" total="3" passed="3">
+=======
+<testng-results total="15" passed="15" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="125828" started-at="2020-12-22T22:06:47Z" finished-at="2020-12-22T22:08:52Z">
+=======
+  <suite started-at="2020-12-23T03:26:03Z" name="Default suite" finished-at="2020-12-23T03:33:03Z" duration-ms="419900">
+>>>>>>> refs/remotes/origin/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="125828" started-at="2020-12-22T22:06:47Z" finished-at="2020-12-22T22:08:52Z">
       <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="beforeClass" is-config="true" duration-ms="17500" started-at="2020-12-22T16:06:47Z" finished-at="2020-12-22T16:07:04Z">
+=======
+    <test started-at="2020-12-23T03:26:03Z" name="Default test" finished-at="2020-12-23T03:33:03Z" duration-ms="419900">
+      <class name="com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:03Z" name="beforeClass" finished-at="2020-12-22T21:26:15Z" duration-ms="12739" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="login" duration-ms="8082" started-at="2020-12-22T16:07:04Z" finished-at="2020-12-22T16:07:12Z">
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:15Z" name="ingresar" finished-at="2020-12-22T21:26:24Z" duration-ms="8865" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="acessarMDR" duration-ms="13273" started-at="2020-12-22T16:07:12Z" finished-at="2020-12-22T16:07:26Z">
           <reporter-output>
@@ -560,6 +579,70 @@ Session ID: baf6edc2685497e5eec22040067a06f1
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDRKen -->
 >>>>>>> refs/remotes/origin/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- ingresar -->
+        <test-method signature="dfgEntrar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:24Z" name="dfgEntrar" finished-at="2020-12-22T21:26:42Z" duration-ms="17944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dfgEntrar -->
+        <test-method signature="criarNovoEvento()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:42Z" name="criarNovoEvento" finished-at="2020-12-22T21:27:39Z" duration-ms="56983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarNovoEvento -->
+        <test-method signature="informacao()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:27:39Z" name="informacao" finished-at="2020-12-22T21:27:58Z" duration-ms="19155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- informacao -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:27:58Z" name="editar" finished-at="2020-12-22T21:28:40Z" duration-ms="41742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:28:40Z" name="visualizar" finished-at="2020-12-22T21:29:05Z" duration-ms="24825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method signature="execucao()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:29:05Z" name="execucao" finished-at="2020-12-22T21:30:12Z" duration-ms="67214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execucao -->
+        <test-method signature="gravar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:30:12Z" name="gravar" finished-at="2020-12-22T21:30:22Z" duration-ms="10010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gravar -->
+        <test-method signature="atualizarEstructuras()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:30:22Z" name="atualizarEstructuras" finished-at="2020-12-22T21:30:38Z" duration-ms="16188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atualizarEstructuras -->
+        <test-method signature="visualizarCriarAN3()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:30:38Z" name="visualizarCriarAN3" finished-at="2020-12-22T21:31:06Z" duration-ms="27478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizarCriarAN3 -->
+        <test-method signature="visualizarActualizacoes()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:31:06Z" name="visualizarActualizacoes" finished-at="2020-12-22T21:31:33Z" duration-ms="26735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizarActualizacoes -->
+        <test-method signature="gravarAN3()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:31:33Z" name="gravarAN3" finished-at="2020-12-22T21:32:14Z" duration-ms="41025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gravarAN3 -->
+        <test-method signature="informacao2()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:14Z" name="informacao2" finished-at="2020-12-22T21:32:36Z" duration-ms="22159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- informacao2 -->
+        <test-method signature="enviarSeleccionado()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:36Z" name="enviarSeleccionado" finished-at="2020-12-22T21:32:49Z" duration-ms="13080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enviarSeleccionado -->
+        <test-method signature="enviarPendencias()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:49Z" name="enviarPendencias" finished-at="2020-12-22T21:32:58Z" duration-ms="9324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enviarPendencias -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:58Z" name="afterClass" finished-at="2020-12-22T21:33:03Z" duration-ms="4396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades -->
+>>>>>>> refs/remotes/origin/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

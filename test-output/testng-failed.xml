@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,7 +16,16 @@
         <methods>
           <include name="beforeClass"/>
           <include name="criar"/>
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades">
+        <methods>
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Fernando
           <include name="afterClass"/>
+<<<<<<< HEAD
 =======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
@@ -55,6 +65,11 @@
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDRKen -->
 >>>>>>> refs/remotes/origin/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="enviarSeleccionado"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades -->
+>>>>>>> refs/remotes/origin/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

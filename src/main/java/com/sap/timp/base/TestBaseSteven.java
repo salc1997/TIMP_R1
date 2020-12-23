@@ -90,12 +90,36 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tp1);
 		return driver;
 	}
 	
 	public void close() {
 
+		
+	}
+	
+	public void fecharMensagens(String rows, String xpath) {
+		int rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		
+		if (rowsR > 0) {
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+		}
+		sleep(2000);
+		
+		rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		while (rowsR > 0) {
+			
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+			
+			rowsR = driver.findElements(By.xpath(xpath)).size();
+			sleep(2000);
+		}
+		
 		
 	}
 
@@ -118,6 +142,8 @@ public class TestBaseSteven {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 		sleep(3000);
+		
+		
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"overlay loader dark\"]")));
 		sleep(2000);
 

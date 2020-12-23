@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="3" passed="3">
 =======
 <testng-results total="3" passed="2" failed="1" skipped="0">
@@ -8,8 +9,12 @@
 =======
 <testng-results total="3" passed="3" failed="0" skipped="0">
 >>>>>>> refs/heads/Fernando
+=======
+<testng-results skipped="0" failed="0" total="4" passed="4">
+>>>>>>> refs/remotes/origin/Steven
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="124077" started-at="2020-12-23T17:12:26Z" finished-at="2020-12-23T17:14:30Z">
@@ -19,8 +24,12 @@
 =======
   <suite started-at="2020-12-23T17:09:18Z" name="Default suite" finished-at="2020-12-23T17:11:15Z" duration-ms="117326">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite name="Default suite" duration-ms="116717" started-at="2020-12-23T20:04:43Z" finished-at="2020-12-23T20:06:39Z">
+>>>>>>> refs/remotes/origin/Steven
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="124077" started-at="2020-12-23T17:12:26Z" finished-at="2020-12-23T17:14:30Z">
@@ -36,9 +45,15 @@
       <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:09:18Z" name="beforeClass" finished-at="2020-12-23T11:09:29Z" duration-ms="11037" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test name="Default test" duration-ms="116717" started-at="2020-12-23T20:04:43Z" finished-at="2020-12-23T20:06:39Z">
+      <class name="com.timp.test.BRB.Eliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11398" started-at="2020-12-23T14:04:43Z" finished-at="2020-12-23T14:04:54Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@3a079870]" name="ingresar" duration-ms="8308" started-at="2020-12-23T11:12:40Z" finished-at="2020-12-23T11:12:49Z">
@@ -48,8 +63,12 @@
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:09:29Z" name="ingresar" finished-at="2020-12-23T11:09:38Z" duration-ms="8887" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="login" duration-ms="6190" started-at="2020-12-23T14:04:54Z" finished-at="2020-12-23T14:05:00Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ingresar -->
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,8 +79,13 @@
 =======
         <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:09:38Z" name="scancEntrar" finished-at="2020-12-23T11:10:05Z" duration-ms="26928" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="brbEntrar" duration-ms="20545" started-at="2020-12-23T14:05:00Z" finished-at="2020-12-23T14:05:21Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- scancEntrar -->
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -109,8 +133,13 @@
 =======
         <test-method signature="excluir()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:10:05Z" name="excluir" finished-at="2020-12-23T11:11:11Z" duration-ms="66081" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminar" duration-ms="39850" started-at="2020-12-23T14:05:21Z" finished-at="2020-12-23T14:06:01Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- excluir -->
@@ -123,9 +152,18 @@
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@6bf08014]" started-at="2020-12-23T11:11:11Z" name="afterClass" finished-at="2020-12-23T11:11:15Z" duration-ms="4355" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="eliminarLixeira" duration-ms="34267" started-at="2020-12-23T14:06:01Z" finished-at="2020-12-23T14:06:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRB.Eliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4448" started-at="2020-12-23T14:06:35Z" finished-at="2020-12-23T14:06:39Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir -->
@@ -135,6 +173,9 @@
 =======
       </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.BRB.Eliminar -->
+>>>>>>> refs/remotes/origin/Steven
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

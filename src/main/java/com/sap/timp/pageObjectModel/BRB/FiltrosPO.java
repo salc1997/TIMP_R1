@@ -372,7 +372,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int fecharR = rows("//div[@id=\"settings-close\"]/button");
+		int fecharR = rows("//div[@class=\"overlap-right executor visible\"]");
 		
 		if (fecharR > 0) {
 			fechar.click();
@@ -441,11 +441,13 @@ public class FiltrosPO  extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int fecharR = rows("//div[@id=\"settings-close\"]/button");
-		System.out.println(fecharR);
 
+		
+		int fecharR = rows("//div[@class=\"overlap-right executor visible\"]");
 
-
+		if (fecharR > 0) {
+			fechar.click();
+		}
 
 	}
 	

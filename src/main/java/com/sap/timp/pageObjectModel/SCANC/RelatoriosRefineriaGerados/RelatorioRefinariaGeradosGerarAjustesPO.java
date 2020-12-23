@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -328,16 +330,25 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		if(url.contains("tq1")) {
 			opcionCnpj = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"74544297000192\"]"));
 			opcionCnpj.click();
+			sleep(1000);
+			closeSelectTypeCheckbox(cboCnpjEmitente);
 		}
 		
 		if(url.contains("tc2")) {
-			opcionCnpj = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"33000167014323\"]"));
-			opcionCnpj.click();
+//			int rowsCnpj = driver.findElements(By.xpath("//div[@class=\"list-option\"]")).size();
+//			rowsCnpj = rowsCnpj - 1;
+//			
+//			actionsMoveToElementXpath("//div[@class=\"list-option\"]["+rowsCnpj+"]");
+//			sleep(1000);
+			
+			WebElement inputCnpjFiltro = driver.findElement(By.xpath("//div[@id=\"cnpjEmit\"]/div/div[2]/div/div/div[2]/input"));
+			inputCnpjFiltro.sendKeys("33000167014323");
+			inputCnpjFiltro.sendKeys(Keys.ENTER);
+//			opcionCnpj = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"33000167014323\"]"));
+//			opcionCnpj.click();
 		}
 		
 		sleep(1000);
-		closeSelectTypeCheckbox(cboCnpjEmitente);
-		
 		cboRazaoSocialEmitente.click();
 		WebElement opcionRazaoSocial;
 		

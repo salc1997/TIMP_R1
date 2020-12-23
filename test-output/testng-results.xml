@@ -1,648 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="2" passed="2">
-=======
 <testng-results total="3" passed="2" failed="1" skipped="0">
->>>>>>> refs/remotes/origin/Eliel
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-<testng-results skipped="0" failed="0" total="3" passed="3">
-=======
-<testng-results total="15" passed="15" failed="0" skipped="0">
->>>>>>> refs/remotes/origin/Fernando
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="125828" started-at="2020-12-22T22:06:47Z" finished-at="2020-12-22T22:08:52Z">
-=======
-  <suite started-at="2020-12-23T03:26:03Z" name="Default suite" finished-at="2020-12-23T03:33:03Z" duration-ms="419900">
->>>>>>> refs/remotes/origin/Fernando
+  <suite started-at="2020-12-23T16:03:00Z" name="Default suite" finished-at="2020-12-23T16:10:33Z" duration-ms="453373">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="125828" started-at="2020-12-22T22:06:47Z" finished-at="2020-12-22T22:08:52Z">
-      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="beforeClass" is-config="true" duration-ms="17500" started-at="2020-12-22T16:06:47Z" finished-at="2020-12-22T16:07:04Z">
-=======
-    <test started-at="2020-12-23T03:26:03Z" name="Default test" finished-at="2020-12-23T03:33:03Z" duration-ms="419900">
-      <class name="com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:03Z" name="beforeClass" finished-at="2020-12-22T21:26:15Z" duration-ms="12739" status="PASS">
->>>>>>> refs/remotes/origin/Fernando
+    <test started-at="2020-12-23T16:03:00Z" name="Default test" finished-at="2020-12-23T16:10:33Z" duration-ms="453373">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:03:00Z" name="beforeClass" finished-at="2020-12-23T10:03:13Z" duration-ms="12550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="login" duration-ms="8082" started-at="2020-12-22T16:07:04Z" finished-at="2020-12-22T16:07:12Z">
-=======
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:15Z" name="ingresar" finished-at="2020-12-22T21:26:24Z" duration-ms="8865" status="PASS">
->>>>>>> refs/remotes/origin/Fernando
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:03:13Z" name="ingresar" finished-at="2020-12-23T10:03:21Z" duration-ms="8426" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="acessarMDR" duration-ms="13273" started-at="2020-12-22T16:07:12Z" finished-at="2020-12-22T16:07:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="editar" duration-ms="82529" started-at="2020-12-22T16:07:26Z" finished-at="2020-12-22T16:08:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar@3a079870]" name="afterClass" is-config="true" duration-ms="4430" started-at="2020-12-22T16:08:48Z" finished-at="2020-12-22T16:08:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.CALENDAR.AcessarCalendar -->
-=======
-        </test-method> <!-- acessarBRE -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@6892b3b6]" started-at="2020-12-21T18:39:44Z" name="criar" finished-at="2020-12-21T18:41:45Z" duration-ms="120477" status="FAIL">
-=======
-<testng-results total="30" passed="25" failed="5" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2020-12-21T23:35:35Z" name="Default suite" finished-at="2020-12-22T01:42:13Z" duration-ms="7597968">
-    <groups>
-    </groups>
-    <test started-at="2020-12-21T23:35:35Z" name="Default test" finished-at="2020-12-22T01:42:13Z" duration-ms="7597968">
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDRKen">
-        <test-method signature="saldosCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:35:35Z" name="saldosCriar" finished-at="2020-12-21T20:37:11Z" duration-ms="95973" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4c1d2143a2408c399b2f29f4a9d22023]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4c1d2143a2408c399b2f29f4a9d22023
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.Centralizacao.Saldos.SaldosCriarPO.CriarSaldo(SaldosCriarPO.java:147)
-	at com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar.CriarSaldo(SaldosCriar.java:50)
-	at com.timp.test.MDR.Automacoes.AutomacoesMDRKen.saldosCriar(AutomacoesMDRKen.java:133)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldosCriar -->
-        <test-method signature="saldosFiltrarId()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:37:11Z" name="saldosFiltrarId" finished-at="2020-12-21T20:38:25Z" duration-ms="74123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldosFiltrarId -->
-        <test-method signature="movimentoDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:38:25Z" name="movimentoDetalhes" finished-at="2020-12-21T20:39:53Z" duration-ms="88227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- movimentoDetalhes -->
-        <test-method signature="deXParaM010PlanodeContasSocietarioExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:39:53Z" name="deXParaM010PlanodeContasSocietarioExcluirEmMassa" finished-at="2020-12-21T20:40:37Z" duration-ms="44114" status="FAIL">
->>>>>>> refs/remotes/origin/Cristhian
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-<<<<<<< HEAD
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="graph"]/*/*/*[name()="g"][10]/*/*[3]"}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52068}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 23dc017287285b320686776e12ff9724
-*** Element info: {Using=xpath, value=//div[@id="graph"]/*/*/*[name()="g"][10]/*/*[3]}]]>
-=======
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="De x para M010"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 111a405f196b0e94a745a5f086530b67
-*** Element info: {Using=xpath, value=//span[text()="De x para M010"]}]]>
->>>>>>> refs/remotes/origin/Cristhian
-            </message>
-            <full-stacktrace>
-<<<<<<< HEAD
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="graph"]/*/*/*[name()="g"][10]/*/*[3]"}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52068}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 23dc017287285b320686776e12ff9724
-*** Element info: {Using=xpath, value=//div[@id="graph"]/*/*/*[name()="g"][10]/*/*[3]}
-=======
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="De x para M010"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 111a405f196b0e94a745a5f086530b67
-*** Element info: {Using=xpath, value=//span[text()="De x para M010"]}
->>>>>>> refs/remotes/origin/Cristhian
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<<<<<<< HEAD
-	at com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarPO.criar(RegrasDeNegocioCriarPO.java:439)
-	at com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar.criar(RegrasDeNegocioCriar.java:47)
-=======
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO.criar(DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO.java:69)
-	at com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa.excluirEmMassa(DeXParaM010PlanodeContasSocietarioExcluirEmMassa.java:47)
-	at com.timp.test.MDR.Automacoes.AutomacoesMDRKen.deXParaM010PlanodeContasSocietarioExcluirEmMassa(AutomacoesMDRKen.java:168)
->>>>>>> refs/remotes/origin/Cristhian
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar@6892b3b6]" started-at="2020-12-21T18:41:45Z" name="afterClass" finished-at="2020-12-21T18:41:45Z" duration-ms="1" status="PASS">
-=======
-        </test-method> <!-- deXParaM010PlanodeContasSocietarioExcluirEmMassa -->
-        <test-method signature="incentivosFiscaisCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:40:37Z" name="incentivosFiscaisCriar" finished-at="2020-12-21T20:42:14Z" duration-ms="96937" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id][1]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9549b303de2a05e7f218add5c591c159
-*** Element info: {Using=xpath, value=//li[@id][1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id][1]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9549b303de2a05e7f218add5c591c159
-*** Element info: {Using=xpath, value=//li[@id][1]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.IncentivosFiscais.IncentivosFiscaisCriarPO.CriarIncentivosFiscais(IncentivosFiscaisCriarPO.java:186)
-	at com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar.CriarIncentivosFiscais(IncentivosFiscaisCriar.java:54)
-	at com.timp.test.MDR.Automacoes.AutomacoesMDRKen.incentivosFiscaisCriar(AutomacoesMDRKen.java:180)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
->>>>>>> refs/remotes/origin/Cristhian
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
->>>>>>> refs/remotes/origin/Eliel
-=======
-      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluir -->
->>>>>>> refs/remotes/origin/Steven
-=======
-        </test-method> <!-- incentivosFiscaisCriar -->
-        <test-method signature="incentivosFiscaisExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:42:14Z" name="incentivosFiscaisExcluirEmMassa" finished-at="2020-12-21T20:45:55Z" duration-ms="220768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incentivosFiscaisExcluirEmMassa -->
-        <test-method signature="saldoInicialCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:45:55Z" name="saldoInicialCriar" finished-at="2020-12-21T20:48:13Z" duration-ms="138321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldoInicialCriar -->
-        <test-method signature="saldoInicialEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:48:13Z" name="saldoInicialEditar" finished-at="2020-12-21T20:50:28Z" duration-ms="135052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldoInicialEditar -->
-        <test-method signature="saldoInicialDetalhe()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:50:28Z" name="saldoInicialDetalhe" finished-at="2020-12-21T20:51:55Z" duration-ms="86861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldoInicialDetalhe -->
-        <test-method signature="saldoInicialVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:51:55Z" name="saldoInicialVisualizar" finished-at="2020-12-21T20:53:57Z" duration-ms="122352" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldoInicialVisualizar -->
-        <test-method signature="saldoInicialExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:53:57Z" name="saldoInicialExcluir" finished-at="2020-12-21T20:56:00Z" duration-ms="122727" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldoInicialExcluir -->
-        <test-method signature="saldoInicialFiltroAvan()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:56:00Z" name="saldoInicialFiltroAvan" finished-at="2020-12-21T20:59:31Z" duration-ms="210287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saldoInicialFiltroAvan -->
-        <test-method signature="motivosdeDesligamentoCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T20:59:31Z" name="motivosdeDesligamentoCriar" finished-at="2020-12-21T21:01:01Z" duration-ms="90673" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- motivosdeDesligamentoCriar -->
-        <test-method signature="motivosdeDesligamentoEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:01:01Z" name="motivosdeDesligamentoEditar" finished-at="2020-12-21T21:02:41Z" duration-ms="99831" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- motivosdeDesligamentoEditar -->
-        <test-method signature="motivosdeDesligamentoVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:02:41Z" name="motivosdeDesligamentoVisualizar" finished-at="2020-12-21T21:04:04Z" duration-ms="83429" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- motivosdeDesligamentoVisualizar -->
-        <test-method signature="motivosdeDesligamentoExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:04:04Z" name="motivosdeDesligamentoExcluir" finished-at="2020-12-21T21:05:47Z" duration-ms="102537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- motivosdeDesligamentoExcluir -->
-        <test-method signature="motivosdeDesligamentoExcluirMasa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:05:47Z" name="motivosdeDesligamentoExcluirMasa" finished-at="2020-12-21T21:11:00Z" duration-ms="312717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- motivosdeDesligamentoExcluirMasa -->
-        <test-method signature="compatibilidadeEntreFPASCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:11:00Z" name="compatibilidadeEntreFPASCriar" finished-at="2020-12-21T21:12:31Z" duration-ms="91259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compatibilidadeEntreFPASCriar -->
-        <test-method signature="compatibilidadeEntreFPASEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:12:31Z" name="compatibilidadeEntreFPASEditar" finished-at="2020-12-21T21:13:59Z" duration-ms="87707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compatibilidadeEntreFPASEditar -->
-        <test-method signature="compatibilidadeEntreFPASVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:13:59Z" name="compatibilidadeEntreFPASVisualizar" finished-at="2020-12-21T21:15:24Z" duration-ms="85401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compatibilidadeEntreFPASVisualizar -->
-        <test-method signature="compatibilidadeEntreFPASExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:15:24Z" name="compatibilidadeEntreFPASExcluir" finished-at="2020-12-21T21:17:01Z" duration-ms="97359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compatibilidadeEntreFPASExcluir -->
-        <test-method signature="emprestimosCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:17:01Z" name="emprestimosCriar" finished-at="2020-12-21T21:19:12Z" duration-ms="130691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emprestimosCriar -->
-        <test-method signature="emprestimosEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:19:12Z" name="emprestimosEditar" finished-at="2020-12-21T21:20:44Z" duration-ms="91579" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emprestimosEditar -->
-        <test-method signature="emprestimosExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:20:44Z" name="emprestimosExcluir" finished-at="2020-12-21T21:22:10Z" duration-ms="86525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emprestimosExcluir -->
-        <test-method signature="emprestimosExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:22:10Z" name="emprestimosExcluirEmMassa" finished-at="2020-12-21T21:24:57Z" duration-ms="166477" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emprestimosExcluirEmMassa -->
-        <test-method signature="iCMSSTTransporteExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:24:57Z" name="iCMSSTTransporteExcluirEmMassa" finished-at="2020-12-21T21:27:24Z" duration-ms="147527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iCMSSTTransporteExcluirEmMassa -->
-        <test-method signature="determinacionRelevanciaPorMotivoExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:27:24Z" name="determinacionRelevanciaPorMotivoExcluirEmMassa" finished-at="2020-12-21T21:35:46Z" duration-ms="501822" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- determinacionRelevanciaPorMotivoExcluirEmMassa -->
-        <test-method signature="aliquotasDeTaxaDeActualizacaoExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T21:35:46Z" name="aliquotasDeTaxaDeActualizacaoExcluirEmMassa" finished-at="2020-12-21T22:39:08Z" duration-ms="3801453" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9779422d48a57e10bffdd5ad9e31bea1
-*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9779422d48a57e10bffdd5ad9e31bea1
-*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:577)
-	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:573)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.sap.timp.base.TestBaseSteven.invisibilityOfElement(TestBaseSteven.java:217)
-	at com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO.criar(AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO.java:195)
-	at com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa.excluirEmMassa(AliquotasDeTaxaDeActualizacaoExcluirEmMassa.java:47)
-	at com.timp.test.MDR.Automacoes.AutomacoesMDRKen.aliquotasDeTaxaDeActualizacaoExcluirEmMassa(AutomacoesMDRKen.java:435)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
-        <test-method signature="tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T22:39:08Z" name="tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa" finished-at="2020-12-21T22:41:30Z" duration-ms="142292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa -->
-        <test-method signature="s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDRKen@683dbc2c]" started-at="2020-12-21T22:41:30Z" name="s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID" finished-at="2020-12-21T22:42:13Z" duration-ms="42832" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="accordion-container"]/ul/li/div/span[text()="Eventos e-Social"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: baf6edc2685497e5eec22040067a06f1
-*** Element info: {Using=xpath, value=//div[@class="accordion-container"]/ul/li/div/span[text()="Eventos e-Social"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="accordion-container"]/ul/li/div/span[text()="Eventos e-Social"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: baf6edc2685497e5eec22040067a06f1
-*** Element info: {Using=xpath, value=//div[@class="accordion-container"]/ul/li/div/span[text()="Eventos e-Social"]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.MDR.EventosESocial.S2240CondiçõesAmbDoTrabFatDeRisco.S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorIDPO.filtroPorId(S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorIDPO.java:35)
-	at com.timp.test.MDR.EventosESocial.S2240CondiçõesAmbDoTrabFatDeRisco.S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.filtroPorId(S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.java:51)
-	at com.timp.test.MDR.Automacoes.AutomacoesMDRKen.s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID(AutomacoesMDRKen.java:460)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID -->
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDRKen -->
->>>>>>> refs/remotes/origin/Cristhian
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
         </test-method> <!-- ingresar -->
-        <test-method signature="dfgEntrar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:24Z" name="dfgEntrar" finished-at="2020-12-22T21:26:42Z" duration-ms="17944" status="PASS">
+        <test-method signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:03:21Z" name="scancEntrar" finished-at="2020-12-23T10:03:46Z" duration-ms="25247" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dfgEntrar -->
-        <test-method signature="criarNovoEvento()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:26:42Z" name="criarNovoEvento" finished-at="2020-12-22T21:27:39Z" duration-ms="56983" status="PASS">
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="criarCampoDeSaida()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:03:46Z" name="criarCampoDeSaida" finished-at="2020-12-23T10:10:33Z" duration-ms="407126" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes.criarCampoDeSaida(RelatorioRefinariaGeradosGerarAjustes.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criarNovoEvento -->
-        <test-method signature="informacao()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:27:39Z" name="informacao" finished-at="2020-12-22T21:27:58Z" duration-ms="19155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- informacao -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:27:58Z" name="editar" finished-at="2020-12-22T21:28:40Z" duration-ms="41742" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:28:40Z" name="visualizar" finished-at="2020-12-22T21:29:05Z" duration-ms="24825" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visualizar -->
-        <test-method signature="execucao()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:29:05Z" name="execucao" finished-at="2020-12-22T21:30:12Z" duration-ms="67214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- execucao -->
-        <test-method signature="gravar()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:30:12Z" name="gravar" finished-at="2020-12-22T21:30:22Z" duration-ms="10010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gravar -->
-        <test-method signature="atualizarEstructuras()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:30:22Z" name="atualizarEstructuras" finished-at="2020-12-22T21:30:38Z" duration-ms="16188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- atualizarEstructuras -->
-        <test-method signature="visualizarCriarAN3()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:30:38Z" name="visualizarCriarAN3" finished-at="2020-12-22T21:31:06Z" duration-ms="27478" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visualizarCriarAN3 -->
-        <test-method signature="visualizarActualizacoes()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:31:06Z" name="visualizarActualizacoes" finished-at="2020-12-22T21:31:33Z" duration-ms="26735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visualizarActualizacoes -->
-        <test-method signature="gravarAN3()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:31:33Z" name="gravarAN3" finished-at="2020-12-22T21:32:14Z" duration-ms="41025" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gravarAN3 -->
-        <test-method signature="informacao2()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:14Z" name="informacao2" finished-at="2020-12-22T21:32:36Z" duration-ms="22159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- informacao2 -->
-        <test-method signature="enviarSeleccionado()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:36Z" name="enviarSeleccionado" finished-at="2020-12-22T21:32:49Z" duration-ms="13080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enviarSeleccionado -->
-        <test-method signature="enviarPendencias()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:49Z" name="enviarPendencias" finished-at="2020-12-22T21:32:58Z" duration-ms="9324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enviarPendencias -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades@4278284b]" started-at="2020-12-22T21:32:58Z" name="afterClass" finished-at="2020-12-22T21:33:03Z" duration-ms="4396" status="PASS">
+        </test-method> <!-- criarCampoDeSaida -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes@6bf08014]" started-at="2020-12-23T10:10:33Z" name="afterClass" finished-at="2020-12-23T10:10:33Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.Funcionalidades -->
->>>>>>> refs/remotes/origin/Fernando
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosGerarAjustes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

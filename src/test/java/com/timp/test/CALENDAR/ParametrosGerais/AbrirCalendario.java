@@ -2,29 +2,24 @@ package com.timp.test.CALENDAR.ParametrosGerais;
 
 import static org.testng.Assert.assertTrue;
 
-import java.util.ArrayList;
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
-import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.AtualizarPO;
+import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.AbrirCalendarioPO;
 import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.CalendarioDeUsuariosPO;
-import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.NovaTarefaPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-public class Atualizar extends TestBaseSteven {
+public class AbrirCalendario extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
-	AcessarBPMAPO acessarBPMAPO;
-	AtualizarPO atualizarPO;
+	AbrirCalendarioPO abrirCalendarioPO;
 
-	public Atualizar() {
+	public AbrirCalendario() {
 		super();
 	}
 
@@ -34,13 +29,12 @@ public class Atualizar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
-		atualizarPO = new AtualizarPO();
-		acessarBPMAPO = new AcessarBPMAPO();
+		abrirCalendarioPO = new AbrirCalendarioPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 1)
@@ -51,34 +45,16 @@ public class Atualizar extends TestBaseSteven {
 	
 	@Test(priority = 2)
 	public void acessarCalendar() {
-		acessarBPMAPO.acessarBPMA();
+		acessarCalendarPO.acessarCalendar();
 
 	}
 
 	@Test(priority = 3)
-	public void bpma() {
+	public void CalendarEntrar() {
 
-		boolean sucesso = atualizarPO.BPMA();
-
-		assertTrue(sucesso, Atualizar);
-
-	}
-	
-	@Test(priority = 4)
-	public void tfp() {
-
-		boolean sucesso = atualizarPO.TFP();
-
-		assertTrue(sucesso, Atualizar);
-
-	}
-	
-	@Test(priority = 5)
-	public void calendar() {
-
-		atualizarPO.Calendar();
-
+		boolean sucesso = abrirCalendarioPO.abrirCalendario();
 		
+		assertTrue(sucesso, filtros);
 
 	}
 

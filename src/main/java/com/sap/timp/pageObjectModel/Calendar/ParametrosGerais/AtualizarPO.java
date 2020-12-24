@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 
 public class AtualizarPO extends TestBaseSteven{
@@ -52,7 +53,7 @@ public class AtualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Excluir\"]")
 	public WebElement excluir;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\" and @tabindex=\"0\"]")
 	public WebElement pesquisar;
 	
 	@FindBy(xpath = "//span[text()=\"Ativar\"]")
@@ -60,6 +61,18 @@ public class AtualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement home;
+	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\") and @tabindex=\"0\"][2]")
+	public WebElement ar;
+	
+	@FindBy(xpath = "//div[@class=\"tr\" and @data-id and@tabindex=\"0\"][1]/div/label/span")
+	public WebElement flag;
+	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
+	
+	
+	
 	
 	public AtualizarPO() {
 
@@ -127,10 +140,8 @@ public class AtualizarPO extends TestBaseSteven{
 		
 		System.out.println(sucesso);
 		
-		home.click();
-		
-		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
-		invisibilityOfElementOverlay();
+
+	
 		
 		
 		return sucesso;
@@ -145,6 +156,12 @@ public class AtualizarPO extends TestBaseSteven{
 		
 		acessarTFPPO = new AcessarTFPPO();
 		
+		actionsMoveToElementElement(home);
+		sleep(1000);
+		home.click();
+		
+		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
+		invisibilityOfElementOverlay();
 		
 		acessarTFPPO.acessarTFP();
 		
@@ -193,7 +210,44 @@ public class AtualizarPO extends TestBaseSteven{
 			sucesso = true;
 		}
 		
+		
 		return sucesso;
+	}
+	
+	public void Calendar() {
+		
+		
+		dobleClickElement(home);
+		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
+		invisibilityOfElementOverlay();
+		
+		AcessarCalendarPO acessarCalendarPO;
+		acessarCalendarPO = new AcessarCalendarPO();
+		
+		acessarCalendarPO.acessarCalendar();
+		
+		calendario.click();
+		sleep(3000);
+		waitExpectElement(ar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys("LRIAN");
+		pesquisar.sendKeys(Keys.ENTER);
+		
+		invisibilityOfElementOverlay();
+		
+		flag.click();
+		sleep(1000);
+		aceitar.click();
+		invisibilityOfElementOverlay();
+		
+		
+		
+		
+		
+		
+		
 	}
 	
 }

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TBD.Configuracao.TipoDeDocumento;
+package com.sap.timp.pageObjectModel.TBD.Configuracao.CamposChaves;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,40 +7,49 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TipoDeDocumentoCriarPO extends TestBaseEliel{
+public class CamposChavesCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
 	public WebElement configuracao;
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de Tipo de Documento\"]")
-	public WebElement configuracaodetipodedocumento;
+	@FindBy(xpath = "//span[text()=\"Configuração de Campos Chaves\"]")
+	public WebElement configuracaodecamposchaves;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//span[text()=\"Nova Configuração de Tipo de Documento\"]")
+	@FindBy(xpath = "//span[text()=\"Nova Configuração de Campos Chaves\"]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de documento\"]")
+	@FindBy(xpath = "//div[@id=\"docType\"]/div/div[2]")
 	public WebElement tipodocumento;
+	
+	@FindBy(xpath = "//li[@id][text()=\"TA-T\"]")
+	public WebElement opcaotipodocumento;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//div[@id=\"numberRange\"]/div/div[2]")
-	public WebElement intervalonumerico;
-	
-	@FindBy(xpath = "//li[@id][text()=\"02\"]")
-	public WebElement opcaotq1;
-	
-	@FindBy(xpath = "//li[@id][text()=\"02\"]")
-	public WebElement opcaotp1;
+	@FindBy(xpath = "//div[@id=\"structure\"]/div/div[2]")
+	public WebElement estrutura;
 	
 	
-	@FindBy(xpath = "//li[@id][text()=\"10000\"]")
-	public WebElement opcaotc2;
+	@FindBy(xpath = "//li[@id][text()=\"Ajustes Fiscais\"]")
+	public WebElement opcaoestrutura;
+	
+	@FindBy(xpath = "//div[@id=\"keys\"]/div/div/div/div[2]")
+	public WebElement camposchaves;
 	
 	
+	@FindBy(xpath = "//li[@id][text()=\"Alíquota ICMS\"]")
+	public WebElement opcaocamposchaves;
+	
+	@FindBy(xpath = "//div[@id=\"componentOrigin\"]/div/div[2]")
+	public WebElement componenteorigem;
+	
+	@FindBy(xpath = "//li[@id][text()=\"BRB - Gestor de Relatórios\"]")
+	public WebElement opcaocomponenteorigem;
+
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
 	public WebElement validadede;
 	
@@ -57,7 +66,7 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
-	public TipoDeDocumentoCriarPO() {
+	public CamposChavesCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -70,7 +79,7 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		configuracaodetipodedocumento.click();
+		configuracaodecamposchaves.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -87,38 +96,28 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(tipodocumento);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(1000);
-		tipodocumento.sendKeys("Rel");
-		sleep(1000);
+	
 		
-		descricao.sendKeys("Teste");
+		tipodocumento.click();
 		sleep(1000);
-		intervalonumerico.click();
+		opcaotipodocumento.click();
+		sleep(2000);
+		estrutura.click();
 		sleep(1000);
-		String URL = driver.getCurrentUrl();
-		if(URL.contains("tc2")) {
-			// opcao para TC2
-			opcaotc2.click();
-			sleep(1000);
-		}
-		
-		// Opcao para TQ1
-		if(URL.contains("tq1")) {
-			opcaotq1.click();
-			sleep(1000);
-		}
-		
-		// Opcao para TP1
-		if(URL.contains("tp1")) {
-			opcaotp1.click();
-			sleep(1000);
-		}
+		opcaoestrutura.click();
+		sleep(2000);
+		camposchaves.click();
+		sleep(2000);
+		opcaocamposchaves.click();
+		sleep(2000);
 		
 		validadede.sendKeys("01/01/2013");
 		sleep(2000);
-		validadeate.sendKeys("16/12/2060");
+		componenteorigem.click();
+		sleep(2000);
+		opcaocomponenteorigem.click();
 		sleep(2000);
 		Gravar.click();
 		sleep(2000);
@@ -135,7 +134,7 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		
 		configuracao.click();
 		sleep(2000);
-		configuracaodetipodedocumento.click();
+		configuracaodecamposchaves.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -167,5 +166,6 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		System.out.println(sucesso);
 		return sucesso;
 	}
+
 
 }

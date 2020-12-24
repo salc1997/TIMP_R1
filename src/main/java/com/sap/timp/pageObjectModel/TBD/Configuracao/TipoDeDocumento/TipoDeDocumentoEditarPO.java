@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TipoDeDocumentoCriarPO extends TestBaseEliel{
+public class TipoDeDocumentoEditarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
 	public WebElement configuracao;
@@ -57,7 +57,7 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
-	public TipoDeDocumentoCriarPO() {
+	public TipoDeDocumentoEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -80,50 +80,38 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+		String idRegistro = idObter1();
 		
-		System.out.println("Ultimo registro: " + id);
+		System.out.println("Ultimo registro: " + idRegistro);
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		novo.click();
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(2000);
+		
 		sleep(2000);
 		waitExpectElement(tipodocumento);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(1000);
-		tipodocumento.sendKeys("Rel");
-		sleep(1000);
 		
-		descricao.sendKeys("Teste");
-		sleep(1000);
-		intervalonumerico.click();
-		sleep(1000);
-		String URL = driver.getCurrentUrl();
-		if(URL.contains("tc2")) {
-			// opcao para TC2
-			opcaotc2.click();
-			sleep(1000);
-		}
-		
-		// Opcao para TQ1
-		if(URL.contains("tq1")) {
-			opcaotq1.click();
-			sleep(1000);
-		}
-		
-		// Opcao para TP1
-		if(URL.contains("tp1")) {
-			opcaotp1.click();
-			sleep(1000);
-		}
-		
-		validadede.sendKeys("01/01/2013");
+		String enviar = "01/01/2014";
+		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
 		sleep(2000);
-		validadeate.sendKeys("16/12/2060");
+		validadede.clear();
 		sleep(2000);
+		validadede.sendKeys(enviar);
+		sleep(1000);
+		
 		Gravar.click();
 		sleep(2000);
-		sim.click();
+		waitExpectElement(sim);
 		sleep(2000);
+		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -146,25 +134,30 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
-		System.out.println("Rows:" +rows);
+		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
-		
-		idInserir1(idultimo);
+		actionsMoveToElementElement(menu);
+		sleep(2000);
 
-		System.out.println(id);
-		System.out.println(idultimo);
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idultimo);
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(2000);
 		
-		boolean sucesso = false;
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
-		}
+		sleep(2000);
+		waitExpectElement(tipodocumento);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
+		sleep(2000);
+		
+		String data = validadede.getAttribute("value");
+		System.out.println(data);
+
+		boolean sucesso = data.equals(enviar);
 		System.out.println(sucesso);
+		
 		return sucesso;
 	}
 

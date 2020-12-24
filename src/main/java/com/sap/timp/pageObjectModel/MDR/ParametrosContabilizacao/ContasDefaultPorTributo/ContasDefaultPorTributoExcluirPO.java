@@ -79,11 +79,6 @@ public class ContasDefaultPorTributoExcluirPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
 		
@@ -96,9 +91,10 @@ public class ContasDefaultPorTributoExcluirPO extends TestBaseEliel {
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		
+		waitExpectElement(sim);
+		sleep(1000);
 		sim.click();
-		
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -419,6 +419,8 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			System.out.println("Caminho criado r3");
 			sucesso.add(caminhor3.isDisplayed());
 		}
+		
+
 		sleep(1000);
 		waitExpectElement(primeiracaixar3);
 		sleep(2000);

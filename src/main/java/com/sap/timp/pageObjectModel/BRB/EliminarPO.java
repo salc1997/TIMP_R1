@@ -45,7 +45,8 @@ public class EliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[2]/div/div[2]/div/label/span")
 	public WebElement check;
 	
-	
+	@FindBy(xpath = "//span[text()=\"Relatórios\"]")
+	public WebElement relatorios;
 	
 	
 	public EliminarPO() {
@@ -66,9 +67,6 @@ public class EliminarPO extends TestBaseSteven{
 		sleep(2000);
 
 
-		//waitExpectElement(menu);
-		//sleep(menuT);
-
 		menu.click();
 		opcaoEditar.click();
 
@@ -77,13 +75,12 @@ public class EliminarPO extends TestBaseSteven{
 		
 		biblioteca.click();
 		
+		invisibilityOfElementOverlay();
 		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		relatorios.click();
+		
+		invisibilityOfElementOverlay();
 
-//		waitExpectElement(menu);
-//		sleep(menuT);
 		
 		check.click();
 		sleep(2000);
@@ -94,11 +91,7 @@ public class EliminarPO extends TestBaseSteven{
 		waitExpectElement(sim);
 		sim.click();
 		
-		sleep(7000);
-	
-		
-		
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[2]/div/div[2]/div/label/span");
+		invisibilityOfElementOverlay();
 		
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -108,9 +101,6 @@ public class EliminarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-
-		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[5]");
-		//sleep(menuT);
 		
 		boolean sucesso = driver.findElement(By.xpath("//div[contains(@class,\"tr-no-data\")]/div")).isDisplayed();
 		
@@ -125,26 +115,13 @@ public class EliminarPO extends TestBaseSteven{
 	
 		lixeira.click();
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
-		
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
 
-//		sleep(menuT);
-		
 		lixeira.click();
 		
-		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-//		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-	//	waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
-		//sleep(menuT);
 	
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -154,11 +131,6 @@ public class EliminarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		
-		//waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
-		//sleep(menuT);
-		
 		check.click();
 		sleep(2000);
 		opcaoE.click();
@@ -167,8 +139,7 @@ public class EliminarPO extends TestBaseSteven{
 		waitExpectElement(sim);
 		sim.click();
 		
-		sleep(7000);
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[2]/div/div[2]/div/label/span");
+		invisibilityOfElementOverlay();
 		
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -178,9 +149,6 @@ public class EliminarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-//		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[5]");
-	//	sleep(menuT);
-		
 		boolean sucesso = driver.findElement(By.xpath("//div[contains(@class,\"tr-no-data\")]/div")).isDisplayed(); 
 		System.out.println(driver.findElement(By.xpath("//div[contains(@class,\"tr-no-data\")]/div")).isDisplayed());
 		

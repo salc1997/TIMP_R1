@@ -132,11 +132,6 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
 		
@@ -187,11 +182,7 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		siguiente.click();
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

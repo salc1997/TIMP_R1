@@ -134,8 +134,12 @@ public class FiltrosPO  extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
-		
 	
+	@FindBy(xpath = "//span[text()=\"Relatórios\"]")
+	public WebElement relatorios;
+		
+	@FindBy(xpath = "//div[@id=\"settings-close\"]/button")
+	public WebElement fechar;
 	
 	public FiltrosPO() {
 
@@ -154,9 +158,11 @@ public class FiltrosPO  extends TestBaseSteven{
 			amb =false;
 		}
 		
+		
+		
 		sleep(2000);
 		editor.click();
-		
+		waitExpectElement(nao1);
 		sleep(1000);
 		nao1.click();
 		
@@ -236,8 +242,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//waitExpectElement(menu);
-		//sleep(menuT);
+
 
 		menu.click();
 		sleep(1000);
@@ -366,10 +371,13 @@ public class FiltrosPO  extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//waitExpectXpath("/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li[4]/button");
 		
+		int fecharR = rows("//div[@class=\"overlap-right executor visible\"]");
+		
+		if (fecharR > 0) {
+			fechar.click();
+		}
 
-		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 
 	}
@@ -388,20 +396,30 @@ public class FiltrosPO  extends TestBaseSteven{
 			amb =false;
 		}
 		
+		
 		biblioteca.click();
+		waitExpectElement(nao1);
+		sleep(1000);
 		nao1.click();
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
+		
+		
+		
+		invisibilityOfElementOverlay();
+		
+		relatorios.click();
 
-		waitExpectElement(menu);
-		sleep(menuT);
+
+		invisibilityOfElementOverlay();
+		
+		
 		menu.click();
+		sleep(1000);
 		executar.click();	
 		
 
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		
+		sleep(2000);
 		configuracion.click();
 		sleep(1000);
 		
@@ -422,8 +440,14 @@ public class FiltrosPO  extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 
+		
+		int fecharR = rows("//div[@class=\"overlap-right executor visible\"]");
 
+		if (fecharR > 0) {
+			fechar.click();
+		}
 
 	}
 	

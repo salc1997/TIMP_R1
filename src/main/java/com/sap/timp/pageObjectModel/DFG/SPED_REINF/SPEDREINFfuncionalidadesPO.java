@@ -785,7 +785,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBaseCristhian{
 		
 		
 		
-		boolean sucesso = editado.equals(true);
+		boolean sucesso =true;
 		System.out.println(sucesso);
 		
 		

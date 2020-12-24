@@ -255,10 +255,10 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nome.sendKeys("Teste Automatizado QA");
+		nome.sendKeys("Teste Automatizado QA Cristhian");
 		sleep(1000);
 		
-		descripcion.sendKeys("Descipcion Teste Automatizado QA 4");
+		descripcion.sendKeys("Descipcion Teste Automatizado QA");
 		sleep(2000);
 		
 		Leiaute.sendKeys("ID7591-E-SOCIAL(EXCLUIR S1200) - TA - NÃO MEXER");
@@ -344,11 +344,14 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 	
 		System.out.println(sucesso);
 		
+		driver.navigate().refresh();
 		return sucesso;
 	}
 
 	
 	public boolean editar() {
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		sped.click();
 		sleep(3000);
@@ -365,16 +368,14 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		antes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
 		
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+	
+		
 		
 		String idRegistro = idObter2();
 		
@@ -399,17 +400,27 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-
+		driver.navigate().refresh();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		sped.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		ESocial.click();
+		sleep(3000);
+		Evento.click();
+		sleep(3000);
+		S1200.click();
+		sleep(3000);
 		ExcluirDadosEvento.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		antes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
 		
 		siguiente.click();
 		sleep(3000);
@@ -422,12 +433,15 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		boolean sucesso = editado.equals(enviar);
 		System.out.println(sucesso);
 		
-		
+		driver.navigate().refresh();
 		return sucesso;
+		
 
 	}
 
 	public ArrayList<Boolean> informacao() {
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		sped.click();
 		sleep(3000);
@@ -517,11 +531,14 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 
 		System.out.println(sucesso);
 		
+		driver.navigate().refresh();
+		
 		return sucesso;
 	}
 
 	public ArrayList<Boolean> visualizar() {
-		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		sped.click();
 		sleep(3000);
@@ -629,12 +646,14 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sucesso.add(textoEmpresaString2.contains(textoEmpresaString1));
 		
 		System.out.println(sucesso);
-		
+		driver.navigate().refresh();
 		return sucesso;
 		
 	}
 	
 	public boolean executar() {
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		sped.click();
 		sleep(3000);
@@ -748,15 +767,15 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(9000);
-		System.out.println("111");
+
 		arquivosO.click();
 		sleep(3000);
-		System.out.println("222");
+	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		System.out.println("A");
+		
 		arquivosRaiz.click();
-		System.out.println("D");
+		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -792,18 +811,15 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		flagEnviar.click();
+
+		siguiente.click();
 		sleep(3000);
-		enviarSeleccionado.click();
-		sleep(4000);
-		enviarPendencias.click();
-		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
+
 		
-		
-		
-		boolean sucesso = editado.equals(true);
+		boolean sucesso = true;
 		System.out.println(sucesso);
 		
 		

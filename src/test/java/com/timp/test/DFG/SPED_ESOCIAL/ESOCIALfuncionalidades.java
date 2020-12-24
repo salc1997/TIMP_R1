@@ -47,26 +47,26 @@ public class ESOCIALfuncionalidades extends TestBaseCristhian {
 
 	@Test(priority = 2)
 	public void criar() {
-//		boolean sucesso = eSOCIALfuncionalidadesPO.criar();
-//		assertTrue(sucesso, Criar);		
+		boolean sucesso = eSOCIALfuncionalidadesPO.criar();
+		assertTrue(sucesso, Criar);		
 		
-//		boolean sucesso2 = eSOCIALfuncionalidadesPO.editar();
-//		assertTrue(sucesso2, Editar);	
+		boolean sucesso2 = eSOCIALfuncionalidadesPO.editar();
+		assertTrue(sucesso2, Editar);	
 		
-//		ArrayList<Boolean> sucesso3 = eSOCIALfuncionalidadesPO.informacao();
+		ArrayList<Boolean> sucesso3 = eSOCIALfuncionalidadesPO.informacao();
 		
-//		for (int i = 0; i < sucesso3.size(); i++) {
-	//		assertTrue(sucesso3.get(i), visualizaçar);
-		//}
+		for (int i = 0; i < sucesso3.size(); i++) {
+			assertTrue(sucesso3.get(i), visualizaçar);
+		}
 		
-//		ArrayList<Boolean> sucesso4 = eSOCIALfuncionalidadesPO.visualizar();
-//		
-//		for (int i = 0; i < sucesso4.size(); i++) {
-//			assertTrue(sucesso4.get(i), visualizaçar);
-//		}
+		ArrayList<Boolean> sucesso4 = eSOCIALfuncionalidadesPO.visualizar();
+		
+		for (int i = 0; i < sucesso4.size(); i++) {
+			assertTrue(sucesso4.get(i), visualizaçar);
+		}
 		
 		boolean sucesso5 = eSOCIALfuncionalidadesPO.executar();
-		assertTrue(sucesso5, visualizaçar);	
+		assertTrue(sucesso5);	
 
 	}
 	

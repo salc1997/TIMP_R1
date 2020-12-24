@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLograduroDetalhes">
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
         <methods>
-          <include name="detalhes"/>
           <include name="beforeClass"/>
+          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLograduroDetalhes -->
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

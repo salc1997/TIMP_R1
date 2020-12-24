@@ -1,6 +1,5 @@
 package com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1210;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
@@ -11,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
-public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
+public class S1210ExcluirDadosDoEventoPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-File-and-Folders icon-gooddoc padding-right \"]")
 	public WebElement sped;
 
@@ -24,18 +23,15 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210\"]")
 	public WebElement s1210agamentosDeRendimentosDoTrabalho;
 
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210\"]/ul/li[@identifier=\"accordion-item-scanc-calculationBlocks\"]/div/span[text()=\"Alterar Dados do Evento\"]")
-	public WebElement alterarDadosDoEvento;
-
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210\"]/ul/li[@identifier=\"accordion-item-scanc-calculationBlocks\"]/div/span[text()=\"Gerar Dados do Evento\"]")
-	public WebElement geradosDoEvento;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210\"]/ul/li[@identifier=\"accordion-item-scanc-calculationBlocks\"]/div/span[text()=\"Excluir Dados do Evento\"]")
+	public WebElement excluirDadosDoEvento;
 
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
-
+	
 	@FindBy(xpath = "//span[text()=\"Novo Evento S1210\"]")
 	public WebElement btnNovoEvento;
-
+	
 	@FindBy(xpath = "//div[contains(@class, \"name-input\")]/div/div/input")
 	public WebElement nome;
 
@@ -80,16 +76,16 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 	@FindBy(xpath = "//button[text()=\"Salvar\"]")
 	public WebElement btnSalvar;
-
+	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement btnCerrarPanelInformacao;
 
 	@FindBy(xpath = "//button[text()=\"Fechar\"]")
 	public WebElement btnFechar;
-
+	
 	@FindBy(xpath = "//button[text()=\"Editar\"]")
 	public WebElement btnEditar;
-
+	
 	@FindBy(xpath = "//div[@id=\"inputState\"]/div/div/div[2]")
 	public WebElement cboEstado;
 
@@ -98,10 +94,10 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 	@FindBy(xpath = "//div[@id=\"subPeriodPic\"]/div/div/span")
 	public WebElement inputSubperiodo;
-
+	
 	@FindBy(xpath = "//div[@id=\"settings-execute\"]/button/span[text()=\"Executar\"]")
 	public WebElement btnExecutar;
-
+	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement btnGravar;
 
@@ -140,19 +136,19 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@class=\"baseTabs-view -view-wrapper  selected\"]/div/div/div/div")
 	public WebElement btnRaiz;
 
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210-alter\"]")
-	public WebElement s10Alter;
-
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210-delete\"]")
+	public WebElement s1210Exclusion;
+	
 	String nomeString1 = "";
 	String descricaoString1 = "";
 	String empresaString1 = "";
 	String ufString1 = "";
 	String filialString1 = "";
-
-	public S1210AlterarDadosDoEventoPO() {
+	
+	public S1210ExcluirDadosDoEventoPO() {
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	public boolean criarNovoEvento() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -169,8 +165,8 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		sleep(1000);
 		s1210agamentosDeRendimentosDoTrabalho.click();
 		sleep(1000);
-		actionsMoveToElementElement(alterarDadosDoEvento);
-		alterarDadosDoEvento.click();
+		actionsMoveToElementElement(excluirDadosDoEvento);
+		excluirDadosDoEvento.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -185,7 +181,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		String id = "0";
 
 		if (rows > 0) {
-			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["	+ rows + "]/div[3]/div")).getText();
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[3]/div")).getText();
 		}
 
 		System.out.println("ID: " + id);
@@ -282,7 +278,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
-
+	
 	public ArrayList<Boolean> informacao() {
 		btnUltimaPagina.click();
 		sleep(2000);
@@ -316,7 +312,8 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		sleep(1000);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
-		açao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		açao = driver.findElement(
+				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 
 		menu.click();
 		sleep(1000);
@@ -343,7 +340,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
-
+	
 	public boolean editar() {
 		btnUltimaPagina.click();
 		sleep(2000);
@@ -382,8 +379,8 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		WebElement btnCerrarMensaje = driver.findElement(By.xpath("//span[@class=\"close icon icon-font-Sign-and-Symbols icon-persign\"]"));
 		btnCerrarMensaje.click();
 
-		actionsMoveToElementElement(alterarDadosDoEvento);
-		alterarDadosDoEvento.click();
+		actionsMoveToElementElement(excluirDadosDoEvento);
+		excluirDadosDoEvento.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -423,7 +420,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
-
+	
 	public ArrayList<Boolean> visualizar() {
 		btnUltimaPagina.click();
 		sleep(2000);
@@ -524,7 +521,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
-
+	
 	public void execucao() {
 		btnUltimaPagina.click();
 		sleep(2000);
@@ -535,8 +532,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
-		WebElement açao = driver.findElement(
-				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 
 		menu.click();
 		sleep(1000);
@@ -561,35 +557,30 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		inputSubperiodo.click();
 		sleep(2000);
 
-		WebElement flechaAtrasCalendario = driver.findElement(By.xpath(
-				"//div[@tabindex=\"0\" and @class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+		WebElement flechaAtrasCalendario = driver.findElement(By.xpath("//div[@tabindex=\"0\" and @class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
 		flechaAtrasCalendario.click();
 
 		String anio = "2016";
 
-		WebElement anioCalendar = driver.findElement(
-				By.xpath("//div[@tabindex=\"0\" and contains(@class, \"year\") and text()=\"" + anio + "\"]"));
+		WebElement anioCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"year\") and text()=\"" + anio + "\"]"));
 		anioCalendar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		WebElement monthCalendar = driver
-				.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Jan\"]"));
+		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Jan\"]"));
 		monthCalendar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		WebElement subperiodoCalendar = driver
-				.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
+		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
 		subperiodoCalendar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		WebElement cbkCentralizacaoDeMovimento = driver
-				.findElement(By.xpath("//div[contains(@class, \"movementCentralization\")][2]/label/span"));
+		WebElement cbkCentralizacaoDeMovimento = driver.findElement(By.xpath("//div[contains(@class, \"movementCentralization\")][2]/label/span"));
 		cbkCentralizacaoDeMovimento.click();
 		sleep(2000);
 
@@ -603,7 +594,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"dialog-indicator\"]");
 		sleep(2000);
 	}
-
+	
 	public boolean gravar() {
 		btnGravar.click();
 		sleep(3000);
@@ -625,47 +616,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
-
-	public boolean atualizarEstructuras() {
-		btnAtualizarEstrutura.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		LocalDateTime locaDate = LocalDateTime.now();
-
-		int hours = locaDate.getHour();
-		int minutes = locaDate.getMinute();
-
-		if (hours > 12) {
-			hours = hours - 12;
-		}
-
-		System.out.println("Hora actual: " + hours + ":" + minutes);
-		this.horaExecucao = hours + ":" + minutes;
-
-		sleep(2000);
-
-		// Verificar si es actulizado con exito, si no se va quedar esperando por el
-		// waitExpectXpath
-		sleep(3000);
-		waitExpectXpath("//li[@class=\"base-toast  toast-success         \"]");
-		String mensajeSucesso = driver
-				.findElement(By.xpath("//li[@class=\"base-toast  toast-success         \"]/div/span[2]/span"))
-				.getText();
-		invisibilityOfElement("//li[@class=\"base-toast  toast-success         \"]");
-		sleep(2000);
-
-		String valorSucessoString = "Submetido com sucesso";
-
-		boolean sucesso = false;
-
-		if (mensajeSucesso.contains(valorSucessoString)) {
-			sucesso = true;
-		}
-
-		return sucesso;
-	}
-
+	
 	public boolean visualizarCriarAN3() {
 		btnVisualizarN3.click();
 		sleep(3000);
@@ -703,65 +654,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
-
-	public boolean visualizarActualizacoes() {
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		WebElement btnUltimaPagina = driver.findElement(By.xpath("//div[contains(@class,\"icon-right\")][2]"));
-		btnUltimaPagina.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		String idRegistro = idObter4();
-		System.out.println("");
-		System.out.println("Id Registro: " + idRegistro);
-		WebElement menu = driver
-				.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + idRegistro + "\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + idRegistro
-				+ "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar Atualizações\"]"));
-
-		menu.click();
-		sleep(1000);
-		açao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		btnUltimaPaginaAtualizacoes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		int rows = driver.findElements(By.xpath(
-				"//div[@class=\"export-sped-files-dialog\"]/div[@class=\"table-container\"]/div/div/div/div[contains(@class, \"tbody\")]/div[@class=\"tr\" and @data-id and @tabindex=\"0\"]"))
-				.size();
-		System.out.println("");
-		System.out.println("Rows visualizar Atualizacoes: " + rows);
-
-		String horaExecucaoString = driver.findElement(By.xpath(
-				"//div[@class=\"export-sped-files-dialog\"]/div[@class=\"table-container\"]/div/div/div/div[contains(@class, \"tbody\")]/div[@class=\"tr\" and @data-id and @tabindex=\"0\"]["
-						+ rows + "]/div[9]/div"))
-				.getText();
-		System.out.println("Hora execucao ultimo registro de atualizacoes: " + horaExecucaoString);
-
-		boolean sucesso = false;
-
-		if (horaExecucaoString.contains(this.horaExecucao)) {
-			sucesso = true;
-		}
-
-		btnFechar.click();
-
-		return sucesso;
-	}
-
+	
 	public ArrayList<Boolean> gravarAN3() {
 		sleep(2000);
 		btnHome.click();
@@ -828,7 +721,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
-
+	
 	public ArrayList<Boolean> informacao2() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -845,19 +738,17 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		sleep(1000);
 		s1210agamentosDeRendimentosDoTrabalho.click();
 		sleep(1000);
-		actionsMoveToElementElement(s10Alter);
-		s10Alter.click();
+		actionsMoveToElementElement(s1210Exclusion);
+		s1210Exclusion.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String id = "13";
-		String eventID = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + id + "\"]/div[4]/div"))
-				.getText();
+		String id = "14";
+		String eventID = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + id + "\"]/div[4]/div")).getText();
 
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + id + "\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + id
-				+ "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + id + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
 
 		menu.click();
 		sleep(1000);
@@ -883,9 +774,8 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 	}
 
 	public boolean enviarSeleccionado() {
-		String id = "13";
-		WebElement checkbox = driver
-				.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + id + "\"]/div[2]/label/span"));
+		String id = "14";
+		WebElement checkbox = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"" + id + "\"]/div[2]/label/span"));
 
 		checkbox.click();
 
@@ -899,8 +789,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		String verificadoSucesso = "Arquivos Enviados";
 
 		waitExpectXpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span");
-		String mensajeResultado = driver.findElement(By.xpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span"))
-				.getText();
+		String mensajeResultado = driver.findElement(By.xpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span")).getText();
 
 		boolean sucesso = false;
 
@@ -924,8 +813,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 		String verificadoSucesso = "Arquivos Enviados";
 
 		waitExpectXpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span");
-		String mensajeResultado = driver.findElement(By.xpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span"))
-				.getText();
+		String mensajeResultado = driver.findElement(By.xpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span")).getText();
 
 		boolean sucesso = false;
 
@@ -937,4 +825,5 @@ public class S1210AlterarDadosDoEventoPO extends TestBaseFernando{
 
 		return sucesso;
 	}
+
 }

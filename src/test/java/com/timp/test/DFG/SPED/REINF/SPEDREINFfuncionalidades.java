@@ -1,4 +1,4 @@
-package com.timp.test.DFG.SPED_REINF;
+package com.timp.test.DFG.SPED.REINF;
 
 import org.testng.annotations.Test;
 
@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI.EFDICMSIPICriarPO;
-import com.sap.timp.pageObjectModel.DFG.SPED_REINF.SPEDREINFfuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.REINF.SPEDREINFfuncionalidadesPO;
 
 import org.testng.annotations.BeforeClass;
 

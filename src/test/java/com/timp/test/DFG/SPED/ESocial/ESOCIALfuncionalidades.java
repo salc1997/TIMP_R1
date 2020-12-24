@@ -1,12 +1,12 @@
-package com.timp.test.DFG.SPED_ESOCIAL;
+package com.timp.test.DFG.SPED.ESocial;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
-import com.sap.timp.pageObjectModel.DFG.SPED_ESOCIAL.ESOCIALfuncionalidadesPO;
-import com.sap.timp.pageObjectModel.DFG.SPED_REINF.SPEDREINFfuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.ESOCIALfuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.REINF.SPEDREINFfuncionalidadesPO;
 
 import org.testng.annotations.BeforeClass;
 

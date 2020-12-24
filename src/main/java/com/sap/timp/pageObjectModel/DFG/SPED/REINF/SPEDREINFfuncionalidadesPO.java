@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.DFG.SPED_ESOCIAL;
+package com.sap.timp.pageObjectModel.DFG.SPED.REINF;
 
 import java.util.ArrayList;
 
@@ -10,22 +10,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
+public class SPEDREINFfuncionalidadesPO extends TestBaseCristhian{
 	
 	@FindBy(xpath = "//span[@class=\"icon icon-font-File-and-Folders icon-gooddoc padding-right \"]")
 	public WebElement sped;
 	
-	@FindBy(xpath = "//span[text()=\"E-SOCIAL\"]")
-	public WebElement ESocial;
-	
-	@FindBy(xpath = "//span[text()=\"Eventos\"]")
-	public WebElement Evento;
-	
-	@FindBy(xpath = "//span[text()=\"S1200 Remuneração do Trabalhador Vinculado ao Regime Geral de Prev. Social\"]")
-	public WebElement S1200;
-	
-	@FindBy(xpath = "//span[text()=\"Excluir Dados do Evento\"]")
-	public WebElement ExcluirDadosEvento;
+	@FindBy(xpath = "//span[text()=\"REINF\"]")
+	public WebElement REINF;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[4]/div/ul/li[5]/ul/li[2]/div/span[2]")
 	public WebElement blocosApuracao;
@@ -57,7 +48,7 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Leiaute \"]")
 	public WebElement Leiaute;
 	
-	@FindBy(xpath = "//li[text()=\"ID7591-E-SOCIAL(EXCLUIR S1200) - TA - NÃO MEXER\"]")
+	@FindBy(xpath = "//li[text()=\"ID7565-REINF - TA - NÃO MEXER\"]")
 	public WebElement leiauteOpc;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Versão Leiaute\"]")
@@ -174,7 +165,7 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Regras\"]")
 	public WebElement AN3regras;
 	
-	@FindBy(xpath = "//div[@id=\"2364\"]/div/label/span")
+	@FindBy(xpath = "//div[@id=\"2337\"]/div/label/span")
 	public WebElement AN3regrasOpc;
 	
 	@FindBy(xpath = "//button[text()=\" Criar\"]")
@@ -215,24 +206,20 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//span[text()=\"Enviar pendências\"]")
 	public WebElement enviarPendencias;
 	
-	public ESOCIALfuncionalidadesPO() {
+	public SPEDREINFfuncionalidadesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	public boolean criar() {
 		sleep(3000);
 		sped.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		ESocial.click();
+		REINF.click();
 		sleep(3000);
-		Evento.click();
-		sleep(3000);
-		S1200.click();
-		sleep(3000);
-		ExcluirDadosEvento.click();
+		blocosApuracao.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -255,13 +242,13 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nome.sendKeys("Teste Automatizado QA");
+		nome.sendKeys("Teste Automatizado QA 004");
 		sleep(1000);
 		
 		descripcion.sendKeys("Descipcion Teste Automatizado QA 4");
 		sleep(2000);
 		
-		Leiaute.sendKeys("ID7591-E-SOCIAL(EXCLUIR S1200) - TA - NÃO MEXER");
+		Leiaute.sendKeys("ID7565-REINF - TA - NÃO MEXER");
 		sleep(2000);
 		leiauteOpc.click();
 		sleep(2000);
@@ -306,7 +293,7 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		sleep(3000);
-		ExcluirDadosEvento.click();
+		blocosApuracao.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -354,13 +341,8 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		ESocial.click();
-		sleep(3000);
-		Evento.click();
-		sleep(3000);
-		S1200.click();
-		sleep(3000);
-		ExcluirDadosEvento.click();
+
+		blocosApuracao.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -400,7 +382,7 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(2000);
 		
 
-		ExcluirDadosEvento.click();
+		blocosApuracao.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -433,17 +415,10 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		ESocial.click();
-		sleep(3000);
-		Evento.click();
-		sleep(3000);
-		S1200.click();
-		sleep(3000);
-		ExcluirDadosEvento.click();
+
+		blocosApuracao.click();
 		sleep(3000);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -527,13 +502,8 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		ESocial.click();
-		sleep(3000);
-		Evento.click();
-		sleep(3000);
-		S1200.click();
-		sleep(3000);
-		ExcluirDadosEvento.click();
+
+		blocosApuracao.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -640,13 +610,8 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		ESocial.click();
-		sleep(3000);
-		Evento.click();
-		sleep(3000);
-		S1200.click();
-		sleep(3000);
-		ExcluirDadosEvento.click();
+
+		blocosApuracao.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -699,6 +664,9 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		executa.click();
 		sleep(30000);
 		
+		AEstrutura.click();
+		sleep(3000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -724,6 +692,22 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(2000);
 		biblioteca.click();
 		sleep(3000);
+		
+		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement executar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar Atualizações\"]"));
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		menu2.click();
+		sleep(1000);
+		executar2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		fechar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(1000);
 
 		home.click();
 		sleep(3000);
@@ -781,13 +765,11 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		ESocial.click();
+		REINF.click();
 		sleep(3000);
-		Evento.click();
+		R1070.click();
 		sleep(3000);
-		S1200.click();
-		sleep(3000);
-		ExcluirDadosEvento.click();
+		R1070Insert.click();
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -809,5 +791,4 @@ public class ESOCIALfuncionalidadesPO extends TestBaseCristhian{
 		
 		return sucesso;
 	}
-
 }

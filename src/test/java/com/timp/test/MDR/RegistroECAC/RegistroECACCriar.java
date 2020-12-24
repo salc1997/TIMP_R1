@@ -7,11 +7,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACCriarPO;
+import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar;
 
-public class RegistroECACCriar extends TestBaseEliel {
+public class RegistroECACCriar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +22,7 @@ public class RegistroECACCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		registroECACCriarPO = new RegistroECACCriarPO();
@@ -51,4 +53,7 @@ public class RegistroECACCriar extends TestBaseEliel {
 		assertTrue(sucesso, semAcesso);
 
 	}
+	
+
 }
+

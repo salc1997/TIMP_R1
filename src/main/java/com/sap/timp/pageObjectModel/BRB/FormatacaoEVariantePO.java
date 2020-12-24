@@ -116,7 +116,8 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 	public WebElement sim;
 	
 	
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	@FindBy(xpath ="//li[@class=\"list-item no-result\"]")
 	 public WebElement noResult;
@@ -276,11 +277,16 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		nome.sendKeys("Visualizacão de teste");
 		aplicar.click();
 		sleep(3000);
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		driver.navigate().refresh();
 
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		sleep(4000);
+		attributeToBeXpath("//div[@id=\"variant-select\"]/div", "class", "base-select ");
+		sleep(2000);
 		visualizar.click();
+		sleep(1000);
 		visualizacao.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -377,10 +383,10 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		driver.navigate().refresh();
 		
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-
-		sleep(4000);
+		attributeToBeXpath("//div[@id=\"variant-select\"]/div", "class", "base-select ");
+		sleep(2000);
 		visualizar.click();
-		
+		sleep(2000);
 		boolean excluido = false;
 		
 		excluido = noResult.isDisplayed(); 

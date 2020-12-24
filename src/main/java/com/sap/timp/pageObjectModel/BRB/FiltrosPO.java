@@ -114,7 +114,7 @@ public class FiltrosPO  extends TestBaseSteven{
 	public WebElement biblioteca;
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[1]")
-	public WebElement nao;
+	public WebElement nao1;
 	
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div/div/div/div[2]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement executar;
@@ -131,9 +131,15 @@ public class FiltrosPO  extends TestBaseSteven{
 	public WebElement mayor;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div/div/div[4]/div[1]/div[3]/div[4]/div/div[1]/input")
 	public WebElement menor;
-
-		
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
+	@FindBy(xpath = "//span[text()=\"Relatórios\"]")
+	public WebElement relatorios;
+		
+	@FindBy(xpath = "//div[@id=\"settings-close\"]/button")
+	public WebElement fechar;
 	
 	public FiltrosPO() {
 
@@ -152,11 +158,13 @@ public class FiltrosPO  extends TestBaseSteven{
 			amb =false;
 		}
 		
+		
+		
 		sleep(2000);
 		editor.click();
-		
+		waitExpectElement(nao1);
 		sleep(1000);
-		nao.click();
+		nao1.click();
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
@@ -197,7 +205,14 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		aplicar.click();
 		
-		gravar.click();
+		gravar.click();		
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 	
@@ -227,17 +242,17 @@ public class FiltrosPO  extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//waitExpectElement(menu);
-		//sleep(menuT);
+
 
 		menu.click();
-
+		sleep(1000);
 		opcao.click();
 
 		
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");		
-
+		sleep(1000);
+		
 		filtros.click();	
 		sleep(1000);
 		
@@ -292,7 +307,13 @@ public class FiltrosPO  extends TestBaseSteven{
 		sleep(1000);
 		
 		gravar.click();
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 	
 		driver.navigate().refresh();
 		
@@ -350,10 +371,13 @@ public class FiltrosPO  extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//waitExpectXpath("/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li[4]/button");
 		
+		int fecharR = rows("//div[@class=\"overlap-right executor visible\"]");
+		
+		if (fecharR > 0) {
+			fechar.click();
+		}
 
-		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 
 	}
@@ -372,20 +396,30 @@ public class FiltrosPO  extends TestBaseSteven{
 			amb =false;
 		}
 		
-		biblioteca.click();
-		nao.click();
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
+		biblioteca.click();
+		waitExpectElement(nao1);
+		sleep(1000);
+		nao1.click();
+		
+		
+		
+		
+		invisibilityOfElementOverlay();
+		
+		relatorios.click();
 
-		waitExpectElement(menu);
-		sleep(menuT);
+
+		invisibilityOfElementOverlay();
+		
+		
 		menu.click();
+		sleep(1000);
 		executar.click();	
 		
 
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		
+		sleep(2000);
 		configuracion.click();
 		sleep(1000);
 		
@@ -406,11 +440,14 @@ public class FiltrosPO  extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//waitExpectXpath("/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div/div/div[1]/div/div[2]/div/ul/li[4]/button");
 		
-		//sleep(2000);
-		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
+		
+		int fecharR = rows("//div[@class=\"overlap-right executor visible\"]");
+
+		if (fecharR > 0) {
+			fechar.click();
+		}
 
 	}
 	

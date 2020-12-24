@@ -9,8 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ParametrosParaLivroICMSSTCriarPO extends TestBaseEliel{
+public class ParametrosParaLivroICMSSTCriarPO extends TestBaseMassiel{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Livros Fiscais\"]")
@@ -21,6 +22,9 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Novos Parâmetros para Livro ICMS ST\"]")
 	public WebElement novoparametros;
+	
+	@FindBy(xpath = "//body")
+	public WebElement body;
 	
 
 	
@@ -54,20 +58,29 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"field-element companyId_0_0\"]/div/div/div/div[2]")
 	public WebElement empresa;
 
-	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
+	@FindBy(xpath = "//label[contains(@for,\"3000\")]/span")
 	public WebElement opcaoempresa;
+
+	@FindBy(xpath = "//label[contains(@for,\"1000\")]/span")
+	public WebElement opcaoempresaTC2;
 	
 	@FindBy(xpath = "//div[@class=\"field-element stateId_0_1\"]/div/div/div/div[2]")
 	public WebElement ufdafilial;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div/label/span")
+	@FindBy(xpath = "//label[contains(@for,\"BA\")]/span")
 	public WebElement opcaoufdafilial;
+	
+	@FindBy(xpath = "//label[contains(@for,\"AL\")]/span")
+	public WebElement opcaoufdafilialTC2;
 	
 	@FindBy(xpath = "//div[@class=\"field-element branchId_0_1\"]/div/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy(xpath = "//label[contains(@for,\"0031\")]/span")
 	public WebElement opcaodafilial;
+	
+	@FindBy(xpath = "//label[contains(@for,\"0008\")]/span")
+	public WebElement opcaodafilialTC2;
 	
 	@FindBy(xpath = "//div[@class=\"field-element taxCode_0_2\"]/div/div/div/div[2]")
 	public WebElement tributo;
@@ -162,6 +175,15 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseEliel{
 	}
 	
 	public boolean criar() {
+		
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 =true;
+		}
+		
 		sleep(2000);
 		livrosfiscais.click();
 		sleep(2000);
@@ -202,40 +224,50 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseEliel{
 		empresa.click();
 		sleep(2000);
 		
-		opcaoempresa.click();
+		if (tc2 == true) {
+			opcaoempresaTC2.click();
+			opcaoempresaTC2.sendKeys(Keys.ESCAPE);
+		}else {
+			opcaoempresa.click();
+			opcaoempresa.sendKeys(Keys.ESCAPE);
+		}
+
 		sleep(2000);
-		
-		//empresa.sendKeys(Keys.ESCAPE);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		sleep(2000);
+		attributeToBeXpath("//div[@class=\"field-element stateId_0_1\"]/div", "class", "input-element-wrapper");
+		sleep(1000);
 		
 		ufdafilial.click();
 		
 		sleep(2000);
-		
-		opcaoufdafilial.click();
+		if (tc2 == true) {
+			opcaoufdafilialTC2.click();
+			opcaoufdafilialTC2.sendKeys(Keys.ESCAPE);
+			
+		}else {
+			opcaoufdafilial.click();
+			opcaoufdafilial.sendKeys(Keys.ESCAPE);
+		}
 		
 		sleep(2000);
-		
-		//ufdafilial.sendKeys(Keys.ESCAPE);
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		sleep(2000);
+		attributeToBeXpath("//div[@class=\"field-element branchId_0_1\"]/div", "class", "input-element-wrapper");
+		sleep(1000);
+
 		
 		filial.click();
 		
 		sleep(2000);
 		
-		opcaodafilial.click();
-		
-		sleep(2000);
-		
-		//filial.sendKeys(Keys.ESCAPE);
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		sleep(2000);
+		if (tc2 == true) {
+			opcaodafilialTC2.click();
+			sleep(1000);
+			opcaodafilialTC2.sendKeys(Keys.ESCAPE);
+		}else {
+			opcaodafilial.click();
+			sleep(1000);
+			opcaodafilial.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}
+		body.click();
 		
 		tributo.click();
 		
@@ -293,6 +325,8 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseEliel{
 		opcaoinformacaomdrinscricao.click();
 		
 		sleep(2000);
+		actionsMoveToElementElement(dataincial);
+		sleep(1000);
 		attributeToBeXpath("//div[@class=\"field-element stRegistrationFields_0_5\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 		camposinformacaomdrinscricao.click();
@@ -354,15 +388,11 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		opcaocamposinformacaodeajustes.click();
-		
+		opcaocamposinformacaodeajustes.sendKeys(Keys.ESCAPE);
+		body.click();
 		sleep(2000);
 		
-		//camposinformacaodeajustes.sendKeys(Keys.ESCAPE);
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		sleep(2000);
-		
-		String data=fechaActual();
+		String data="01/01/2013";
 		dataincial.sendKeys(data);
 		
 		sleep(2000);

@@ -31,8 +31,8 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
-	public WebElement codigodevalores;
+	@FindBy(xpath = "//span[@id=\"description\"]")
+	public WebElement campo;
 	
 	
 	
@@ -58,7 +58,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -90,9 +90,9 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(descricao);
 		sleep(2000);
-		
+		String enviar = "Teste da Descrição";
 		descricao.clear();
-		descricao.sendKeys("Teste da Descrição");
+		descricao.sendKeys(enviar);
 		
 		sleep(2000);
 		
@@ -129,9 +129,12 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		//System.out.println(sucesso);	
+		String textoCampo = campo.getText();
+		boolean sucesso = textoCampo.equals(enviar);
+		System.out.println(sucesso);
+		
 		return sucesso;
 	}
 	

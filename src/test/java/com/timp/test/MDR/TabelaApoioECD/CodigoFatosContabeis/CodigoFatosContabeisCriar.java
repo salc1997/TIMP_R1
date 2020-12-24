@@ -14,6 +14,8 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class CodigoFatosContabeisCriar extends TestBaseFernando {
+
+	
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CodigoFatosContabeisCriarPO ecd;
@@ -32,6 +34,7 @@ public class CodigoFatosContabeisCriar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)

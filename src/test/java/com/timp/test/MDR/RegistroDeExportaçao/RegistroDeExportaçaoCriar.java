@@ -3,6 +3,7 @@ package com.timp.test.MDR.RegistroDeExportaçao;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoCriarPO;
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroDeExportaçaoCriar extends TestBaseEliel {
+public class RegistroDeExportaçaoCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -22,7 +23,7 @@ public class RegistroDeExportaçaoCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		registroDeExportaçaoCriarPO = new RegistroDeExportaçaoCriarPO();

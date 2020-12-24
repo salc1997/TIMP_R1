@@ -48,7 +48,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	public ArrayList<Boolean> crescente() {
 
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
@@ -78,8 +78,31 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 
 		menuC.click();
-		waitExpectXpath("//*[@id=\"column-filters-apply\"]");
-		sleep(6000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String valorPrimeiro = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/input")).getAttribute("value");
+		System.out.println(valorPrimeiro);
+		
+		double valorPrimeroI =  Double.valueOf(valorPrimeiro);
+		WebElement valorPrimeiroE = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/label/span"));
+		WebElement aplicar = driver.findElement(By.xpath("//button[text()=\"Aplicar\"]"));
+		if (valorPrimeroI == 0) {
+			sleep(1000);
+			valorPrimeiroE.click();
+			sleep(2000);
+			aplicar.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+
+			menuC.click();
+			waitExpectXpath("//*[@id=\"column-filters-apply\"]");
+			sleep(6000);
+			
+		}
 		
 		
 		crescente.click();
@@ -115,9 +138,8 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 			if (n2 < rows) {
 
-				String n1C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n1 + "-\")]/div[2]")).getText();
-				String n2C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n2 + "-\")]/div[2]")).getText();
-				
+				String n1C = driver.findElement(By.xpath("//div[@class=\"row visible\"]["+n1+"]/div[@data-column=\"66\" and @data-path]/div[2]")).getText();
+				String n2C = driver.findElement(By.xpath("//div[@class=\"row visible\"]["+n2+"]/div[@data-column=\"66\" and @data-path]/div[2]")).getText();
 				n1C = n1C.replace(".", "");
 				n1C = n1C.replace(",", ".");
 
@@ -203,9 +225,9 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 			if (n2 < rows) {
 
-				String n1C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n1 + "-\")]/div[2]")).getText();
-				String n2C = driver.findElement(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: " + n2 + "-\")]/div[2]")).getText();
-				
+				String n1C = driver.findElement(By.xpath("//div[@class=\"row visible\"]["+n1+"]/div[@data-column=\"66\" and @data-path]/div[2]")).getText();
+				String n2C = driver.findElement(By.xpath("//div[@class=\"row visible\"]["+n2+"]/div[@data-column=\"66\" and @data-path]/div[2]")).getText();
+
 				n1C = n1C.replace(".", "");
 				n1C = n1C.replace(",", ".");
 

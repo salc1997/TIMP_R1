@@ -7,9 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class LimiteCompetenciaCriarPO extends TestBaseSteven{
+public class LimiteCompetenciaCriarPO extends TestBaseMassiel{
 	
 	
 	
@@ -22,17 +23,36 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"3000\"]/div/label/span")
+	public WebElement empresaO;
+	
+	@FindBy(xpath = "//div[@id=\"1000\"]/div/label/span")
+	public WebElement empresaOTC2;
+	
+	@FindBy(xpath = "//div[@id=\"uf\"]/div/div[1]/div[2]")
 	public WebElement ufFilial;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcao;
+	@FindBy(xpath = "//div[@id=\"BA\"]/div/label/span")
+	public WebElement ufFilialO;
+	
+	@FindBy(xpath = "//div[@id=\"AL\"]/div/label/span")
+	public WebElement ufFilialOTC2;
+	
 	
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
+	@FindBy(xpath = "//div[contains(@id,\"0031\")]/div/label/span")
+	public WebElement filialO;
+	
+	@FindBy(xpath = "//div[contains(@id,\"1000_AL_0008\")]/div/label/span")
+	public WebElement filialOTC2;
+	
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
+	
+	@FindBy(xpath = "//div[@id=\"00\"]/div/label/span")
+	public WebElement tributoO;
 	
 	@FindBy(xpath = "//div[@id=\"tax-type\"]/div/div/div[2]")
 	public WebElement tipoImposto;
@@ -43,7 +63,7 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"approval-level\"]/div/div/div[2]")
 	public WebElement nivelAprovacao;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][2]")
 	public WebElement opcao2;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Valor de\")]")
@@ -80,6 +100,9 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
 	public WebElement opcaocenariodecorrecao;
 	
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcao;
+	
 	
 	public LimiteCompetenciaCriarPO() {
 
@@ -87,6 +110,14 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 	}
 	
 	public boolean criar() {
+		
+		String url = driver.getCurrentUrl();
+		boolean tc2 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
+		
 		sleep(2000);
 		limiteCompetencia.click();
 		sleep(2000);
@@ -114,8 +145,14 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 		
 		empresa.click();
 		sleep(2000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		if (tc2== true) {
+			empresaOTC2.click();
+			empresaOTC2.sendKeys(Keys.ESCAPE);
+		}else {
+			empresaO.click();
+			empresaO.sendKeys(Keys.ESCAPE);
+		}
+
 		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
@@ -123,8 +160,13 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 		
 		ufFilial.click();
 		sleep(2000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		if (tc2== true) {
+			ufFilialOTC2.click();
+			ufFilialOTC2.sendKeys(Keys.ESCAPE);
+		}else {
+			ufFilialO.click();
+			ufFilialO.sendKeys(Keys.ESCAPE);
+		}
 		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
@@ -132,14 +174,19 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 		
 		filial.click();
 		sleep(2000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		if (tc2== true) {
+			filialOTC2.click();
+			filialOTC2.sendKeys(Keys.ESCAPE);
+		}else {
+			filialO.click();
+			filialO.sendKeys(Keys.ESCAPE);
+		}
 		sleep(3000);
 		
 		tributo.click();
 		sleep(2000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		tributoO.click();
+		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-MultipleSelect3 required");
@@ -154,15 +201,18 @@ public class LimiteCompetenciaCriarPO extends TestBaseSteven{
 		tipoProcesso.click();
 		sleep(2000);
 		opcao2.click();
-		sleep(3000);
+		sleep(1000);
+		
+		actionsMoveToElementElement(nivelAprovacao);
+		sleep(2000);
 		
 		nivelAprovacao.click();
 		sleep(2000);
 		opcao2.click();
 		sleep(3000);
 		
-		valorDe.sendKeys("1000");
-		valorAte.sendKeys("5000");
+		valorDe.sendKeys("4000");
+		valorAte.sendKeys("7000");
 		
 		validadeDe.sendKeys(fechaActual());
 		

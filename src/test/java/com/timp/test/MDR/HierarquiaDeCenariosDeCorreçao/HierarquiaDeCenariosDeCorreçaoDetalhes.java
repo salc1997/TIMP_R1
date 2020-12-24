@@ -1,12 +1,16 @@
 package com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoDetalhesPO;
@@ -48,9 +52,11 @@ public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Detalhes() {
 
-		String sucesso = hierarquiaDeCenariosDeCorreçaoDetalhesPO.detalhes();
-
-		assertEquals(sucesso, "edit", visualizaçar);
+		ArrayList<Boolean> sucesso = hierarquiaDeCenariosDeCorreçaoDetalhesPO.detalhes();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);	
+		}
+		//assertEquals(sucesso, "edit", visualizaçar);
 	}
 
 }

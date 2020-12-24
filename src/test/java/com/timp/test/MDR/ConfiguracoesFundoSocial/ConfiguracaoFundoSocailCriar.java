@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -14,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO;
 
-public class ConfiguracaoFundoSocailCriar extends TestBaseSteven {
+public class ConfiguracaoFundoSocailCriar extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -23,7 +24,7 @@ public class ConfiguracaoFundoSocailCriar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		configuracoesFundoSocialCriarPO = new ConfiguracoesFundoSocialCriarPO();

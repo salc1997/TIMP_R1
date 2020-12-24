@@ -67,7 +67,11 @@ public class CriarCopiaPO extends TestBaseSteven{
 	public WebElement sim;
 	@FindBy(xpath = "//*[@id=\"acc-reports\"]/ul/li[8]")
 	public WebElement lixeira;
-
+	
+	
+	@FindBy(xpath = "//span[text()=\"Relatórios\"]")
+	public WebElement relatorios;
+	
 	
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
@@ -79,6 +83,8 @@ public class CriarCopiaPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public CriarCopiaPO() {
 
@@ -103,7 +109,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 		//sleep(menuT);
 
 		menu.click();
-
+		sleep(1000);
 		opcao.click();
 
 		
@@ -114,12 +120,13 @@ public class CriarCopiaPO extends TestBaseSteven{
 		biblioteca.click();
 		
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
+		invisibilityOfElementOverlay();
 		sleep(2000);
+		
+		relatorios.click();
+		
+		invisibilityOfElementOverlay();
 
-		waitExpectElement(menu);
-		sleep(5000);
 		WebElement menu = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
 		menu.click();
 		
@@ -128,6 +135,9 @@ public class CriarCopiaPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"create-copy\"]/div/div[1]/input");
 		
 		gravar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		
@@ -163,9 +173,13 @@ public class CriarCopiaPO extends TestBaseSteven{
 		
 		biblioteca.click();
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
+		invisibilityOfElementOverlay();
+		
 		sleep(2000);
+		
+		relatorios.click();
+		
+		invisibilityOfElementOverlay();
 		
 		
 		String id = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[6]")).getText();
@@ -175,10 +189,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 		pesquisar.clear();
 		pesquisar.sendKeys("Cópia de "+id);
 		pesquisar.sendKeys(Keys.ENTER);
-		
-		//waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[2]");
-		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span");
-		//sleep(menuT);
+	
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -190,13 +201,11 @@ public class CriarCopiaPO extends TestBaseSteven{
 		waitExpectElement(sim);
 		sleep(3000);
 		sim.click();
+				
+		invisibilityOfElementOverlay();
 		
-		sleep(7000);
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[2]/div/div[2]/div/label/span");
-		
-		driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]")).click();
-		driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li[1]/div/span[3]")).click();
-		
+		fecharMensagens("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]", "//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");	
+	
 		sleep(2000);
 	
 		lixeira.click();

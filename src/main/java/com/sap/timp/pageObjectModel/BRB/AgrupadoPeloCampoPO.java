@@ -57,7 +57,8 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	
 	
@@ -98,10 +99,13 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		agrupado.click();
 		sleep(3000);
 		gravar.click();
-		
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		execucao.click();
 		sleep(8000);
@@ -141,7 +145,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 			
 			String cfopD = driver.findElement(By.xpath("//div[@data-column =\"115\" and contains(@aria-label , \"Linha: "+f+"\") and contains(@aria-label , \"CFOP: "+cfopS+"\")]/div[2]")).getText();
 			sucesso.add(cfopS.equals(cfopD));
-			
+			System.out.println(cfopD);
 			f = f+1;
 		}
 				
@@ -190,7 +194,13 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		excluirGrupo.click();
 		
 		gravar.click();
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 

@@ -96,9 +96,9 @@ public class CodigoTipoCreditoCriarPO extends TestBaseEliel{
 		sleep(1000);
 		tributoO.click(); 
 		sleep(1000);
-		codigo.sendKeys("124");
+		codigo.sendKeys("0007");
 		sleep(1000);
-		descricao.sendKeys("Teste Código Tipo Crédito");
+		descricao.sendKeys("Teste Código Tipo Crédito 2");
 		sleep(1000);
 		
 		String data= fechaActual();

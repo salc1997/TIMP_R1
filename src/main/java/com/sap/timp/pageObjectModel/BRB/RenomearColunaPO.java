@@ -40,6 +40,9 @@ public class RenomearColunaPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	
 	public RenomearColunaPO() {
 
@@ -62,7 +65,7 @@ public class RenomearColunaPO extends TestBaseSteven{
 		//sleep(menuT);
 
 		menu.click();
-
+		sleep(1000);
 		opcao.click();
 
 		
@@ -82,8 +85,13 @@ public class RenomearColunaPO extends TestBaseSteven{
 		sleep(1000);
 		coluna.sendKeys(nuevoN);
 		gravar.click();
-
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		driver.navigate().refresh();
 
@@ -103,7 +111,13 @@ public class RenomearColunaPO extends TestBaseSteven{
 		coluna.sendKeys(nombreC);
 
 		gravar.click();
-		sleep(5000);
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 

@@ -6,12 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.GrupoAtividadeFiscal.*;
 
-public class GrupoAtividadeCriar extends TestBaseSteven {
+public class GrupoAtividadeCriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	GrupoAtividadeCriarPO grupoAtividadeCriarPO;
@@ -19,7 +20,7 @@ public class GrupoAtividadeCriar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		grupoAtividadeCriarPO = new GrupoAtividadeCriarPO();

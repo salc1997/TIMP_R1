@@ -1,6 +1,7 @@
 package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
 
-import static org.testng.Assert.assertEquals;
+
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -28,7 +29,7 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 0)
@@ -47,9 +48,9 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void editar() {
 
-		String sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
+		boolean sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
 
-		assertEquals(sucesso, "edit", visualizaçar);
+		assertTrue(sucesso, visualizaçar);
 	}
 
 }

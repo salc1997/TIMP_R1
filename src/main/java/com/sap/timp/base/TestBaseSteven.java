@@ -1,3 +1,4 @@
+
 package com.sap.timp.base;
 
 import java.awt.AWTException;
@@ -7,8 +8,11 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
@@ -24,10 +28,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class TestBaseSteven {
 
 	// TC2
-	protected String tc2   = "http://as1-100-01-tc2:8000/timp/login/#/login";
+	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
 	// TD1
 	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 
@@ -45,7 +50,8 @@ public class TestBaseSteven {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
-		
+		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
+	
 		//ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		//driver = new ChromeDriver(options);
@@ -69,15 +75,77 @@ public class TestBaseSteven {
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         driver = new ChromeDriver(options);
 		*/
-
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		options.setExperimentalOption("useAutomationExtension", false);
+		
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);
+		options.setExperimentalOption("prefs", prefs);
+		
+		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--disable-extensions");
+        
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
-
+		driver.get(tp1);
 		return driver;
 	}
 	
 	public void close() {
+
+		
+	}
+	
+	public void fecharMensagens(String rows, String xpath) {
+		int rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		
+		if (rowsR > 0) {
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+		}
+		sleep(2000);
+		
+		rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		while (rowsR > 0) {
+			
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+			
+			rowsR = driver.findElements(By.xpath(xpath)).size();
+			sleep(2000);
+		}
+		
+		
+	}
+
+	public void refresh() {
+		driver.navigate().refresh();
+	}
+	
+	public String url() {
+		return driver.getCurrentUrl();
+	}
+	public int rows(String element) {
+		
+		int rows = driver.findElements(By.xpath(element)).size();
+		
+		return rows;
+		
+	}
+	
+	public void invisibilityOfElementOverlay() {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		sleep(3000);
+		
+		
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"overlay loader dark\"]")));
+		sleep(2000);
 
 		
 	}
@@ -86,7 +154,6 @@ public class TestBaseSteven {
 		try {
 			Thread.sleep(miliSeconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -107,6 +174,44 @@ public class TestBaseSteven {
 		
 		boolean sucesso = false;
 		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public boolean isNum(String strNum) {
+	    boolean ret = true;
+	    try {
+
+	        Double.parseDouble(strNum);
+
+	    }catch (NumberFormatException e) {
+	        ret = false;
+	    }
+	    return ret;
+	}
+	
+	
+	
+	public Boolean mayorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (mayor > menor) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean menorQue(double mayor, double menor ) {
+		
+		boolean sucesso = false;
+		if (menor < mayor) {
 			sucesso = true;
 		}else {
 			sucesso = false;
@@ -137,6 +242,14 @@ public class TestBaseSteven {
 		return valor;
 		
 		
+	}
+	
+	public String formatear(String valor) {
+		
+		valor = valor.replace(".", "");
+		valor = valor.replace(",", ".");
+		
+		return valor;
 	}
 
 	public void waitExpectElement(WebElement element) {
@@ -477,5 +590,10 @@ public class TestBaseSteven {
 	public String Detalhes = "As informações não são as esperadas";
 	
 	public String Atualizar = "Não foi possivel atualizar os registros";
-
+	
+	
+	//BCB
+	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
+	public String Acessar = "Erro ao tentar acessar ao componente";	
+	
 }

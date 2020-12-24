@@ -103,7 +103,8 @@ public class NovoRelatorioPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"draggable-66\"]")
 	public WebElement valorICMSC;
 
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement pesquisar;
@@ -187,7 +188,9 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		
 		biblioteca.click();
 		
-		sleep(5000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		pesquisar.sendKeys("Prueba Automatizada");
 		ferramenta.click();
@@ -218,11 +221,13 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		//sleep(menuT);
 
 		menu.click();
-	
+		sleep(1000);
 		editar.click();
 		
+		sleep(3000);
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 	
 		buscarCampo.sendKeys("Empresa");
 		Actions actions = new Actions(driver);
@@ -305,15 +310,21 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		sleep(2000);
 		
 		gravarE.click();
-		
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//sleep(7000);
+
 		
 		driver.navigate().refresh();
 		
+		sleep(3000);
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		sucesso.add(empresaC.isDisplayed());
 		sucesso.add(UfFilialC.isDisplayed());

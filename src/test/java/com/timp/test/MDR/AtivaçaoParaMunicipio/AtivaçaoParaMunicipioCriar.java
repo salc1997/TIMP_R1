@@ -3,6 +3,7 @@ package com.timp.test.MDR.AtivaçaoParaMunicipio;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriarPO;
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AtivaçaoParaMunicipioCriar extends TestBaseEliel {
+public class AtivaçaoParaMunicipioCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -22,7 +23,7 @@ public class AtivaçaoParaMunicipioCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		ativaçaoParaMunicipioCriarPO = new AtivaçaoParaMunicipioCriarPO();

@@ -6,16 +6,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaCodigoReceitasCriarPO extends TestBaseSteven{
+public class TabelaCodigoReceitasCriarPO extends TestBaseMassiel{
 
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement obrigacoes;
 	
 	@FindBy(xpath = "//span[text()=\"Tabela de Código da Receitas\"]")
-	public WebElement rabelacodigoReceita;
+	public WebElement tabelacodigoReceita;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Nova\")]")
 	public WebElement novo;
@@ -68,7 +69,7 @@ public class TabelaCodigoReceitasCriarPO extends TestBaseSteven{
 		sleep(2000);
 		obrigacoes.click();
 		sleep(2000);
-		rabelacodigoReceita.click();
+		tabelacodigoReceita.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

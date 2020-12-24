@@ -82,7 +82,7 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluirPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter3();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -93,15 +93,17 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		
+		waitExpectElement(aceitar);
+		sleep(2000);
 		aceitar.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

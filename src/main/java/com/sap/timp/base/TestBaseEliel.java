@@ -1,16 +1,21 @@
+
 package com.sap.timp.base;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,9 +27,24 @@ public class TestBaseEliel extends TestBaseSteven {
 	public WebDriver initializationE() {
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		driver = new ChromeDriver();
+		
+		//Evita que el mensaje de "Chorme siendo controlado por un software de automatizacion" aprezca
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		options.setExperimentalOption("useAutomationExtension", false);
+		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+
+		
+		//Evita que la ventana de guardar contraseña aparezca
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);
+		options.setExperimentalOption("prefs", prefs);
+        
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
+
 		return driver;
 
 	}
@@ -166,6 +186,10 @@ public String dataanterior() {
 		
 	}
 	
+	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
+	}
+	
 	//BRB
 	public String elementosDiferentes = "Os elementos não são iguais";
 	public String comentariosInativos = "Os comentários não foram ativados";
@@ -210,8 +234,9 @@ public String dataanterior() {
 	public String Filtros = "Os resultados não são de acordo aos filtros";
 	public String Criar = "O registro não foi criado com sucesso";
 	public String Eliminado = "O registro não foi eliminado com sucesso";
-	
+	public String Restaurar = "O registro não foi restaurado com sucesso";
 	
 	
 
 }
+

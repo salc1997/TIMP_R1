@@ -36,8 +36,8 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseEliel {
 	public WebElement novovalor;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
-	public WebElement codigodevalores;
+	@FindBy(xpath = "//span[@id=\"Description\"]")
+	public WebElement campo;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]")
 	public WebElement icms;
@@ -64,7 +64,7 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		tabelaApoioSped.click();
 		sleep(2000);
@@ -103,8 +103,8 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseEliel {
 		descricao.clear();
 		
 		sleep(2000);
-		
-		descricao.sendKeys("Teste da Descrição");
+		String enviar = "Teste da Descrição";
+		descricao.sendKeys(enviar);
 		
 		sleep(2000);
 		
@@ -136,8 +136,11 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseEliel {
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		
+		String textoCampo = campo.getText();
+		boolean sucesso = textoCampo.equals(enviar);
 		System.out.println(sucesso);	
 		return sucesso;
 	}	

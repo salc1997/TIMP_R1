@@ -33,10 +33,13 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div[2]")
 	public WebElement empresa;
+	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Data Inicial\")]")
 	public WebElement dataInicial;
+	
 	@FindBy(xpath = "")
 	public WebElement dataFinal;
+	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
 	public WebElement empresaO;
 
@@ -143,7 +146,6 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 		return sucesso;
 
 	}
-	
 	
 	public ArrayList<Boolean> filtroDataFinal() {
 

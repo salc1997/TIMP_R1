@@ -26,6 +26,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoExcluir extends TestBaseFern
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  @Test(priority = 0)
@@ -39,7 +40,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoExcluir extends TestBaseFern
 	  }
 	  
 	  @Test(priority = 2)
-	  public void criar() {
+	  public void excluir() {
 		  s1210PagamentosDeRendimientosDoTrabalhoExcluirPO.excluir();
 	  }
 }

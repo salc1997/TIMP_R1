@@ -55,7 +55,7 @@ public class AgenteCausadorDeAcidenteExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void excluirr() {
+	public void excluir() {
 
 		boolean sucesso = agenteCausadorDeAcidenteExcluirPO.excluir();
 

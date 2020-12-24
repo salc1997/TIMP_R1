@@ -8,8 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.j2objc.annotations.Weak;
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ContratoIOFCriarPO extends TestBaseEliel {
+public class ContratoIOFCriarPO extends TestBaseMassiel {
 
 	@FindBy(xpath = "//span[text()=\"Contrato IOF \"]")
 	public WebElement contratoiof;
@@ -138,74 +139,95 @@ public class ContratoIOFCriarPO extends TestBaseEliel {
 
 		
 		novocontratoiof.click();
-		sleep(1000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
 		
 		preenchercontrato.sendKeys("123");
-		
+		sleep(1000);
 		codigoreceita.click();
-	
+		sleep(1000);
 		opcaocodigoreceita.click();
+		sleep(1000);
 		
 		tipopessoa.click();
+		sleep(1000);
 		waitExpectElement(opcaotipopessoa);
 		sleep(2000);
 		opcaotipopessoa.click();
+		sleep(1000);
 		
 		cpf.sendKeys("13154614712");
+		sleep(1000);
+		actionsMoveToElementElement(validadede);
+		sleep(1000);
+		
 		
 		variacao.sendKeys("01");
-		
+		sleep(1000);
 		razaosocial.sendKeys("Razão");
-		
+		sleep(1000);
 		periocidade.click();
-		
+		sleep(1000);
 		opcaoperiocidade.click();
-		
+		sleep(1000);
 		waitExpectElement(moeda);
 		sleep(2000);
 		moeda.click();
-		
+		sleep(1000);
 		opcaomoeda.click();
-		
+		sleep(1000);
 		valorcontrato.sendKeys("1000");
-		
+		sleep(1000);
 		String data= fechaActual();
 		
 		validadede.sendKeys(data);
+		sleep(1000);
+		actionsMoveToElementElement(adicionar);
+		sleep(1000);
 		
 		empresa.click();
+		sleep(1000);
 		opcaoempresa.click();
+		sleep(1000);
 		
 		waitExpectElement(filial);
 		sleep(2000);
 		
 		filial.click();
-		
+		sleep(1000);
 		opcaofilial.click();
-		
 		opcaofilial.sendKeys(Keys.ESCAPE);
-	
+		sleep(1000);
 		
 		attributeToBeXpath("//div[@id=\"tax\"]/div/div/div/div[2]", "class", "new-tag");
-		
+		sleep(3000);
 		tributo.click();
+		sleep(1000);
 		opcaotributo.click();
+		sleep(1000);
 		opcaotributo.sendKeys(Keys.ESCAPE);
+		sleep(1000);
 		
 		adicionar.click();
-		
+		sleep(1000);
 		gravar.click();
-		
+		sleep(1000);
+		waitExpectElement(butaosim);
+		sleep(2000);
 		butaosim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	
+		sleep(2000);
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();

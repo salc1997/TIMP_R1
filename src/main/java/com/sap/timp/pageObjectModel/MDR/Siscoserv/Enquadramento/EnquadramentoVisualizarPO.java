@@ -185,7 +185,7 @@ public ArrayList<Boolean> visualizar() {
 		sucesso.add(indicadorrceditar.equals(indicadorrcvisualizar));
 		sucesso.add(modulovendaeditar.equals(modulovendavisualizar));
 		sucesso.add(moduloaquisicaoeditar.equals(moduloaquisicaovisualizar));
-		
+		System.out.println(sucesso);
 		return sucesso;	
 
 	

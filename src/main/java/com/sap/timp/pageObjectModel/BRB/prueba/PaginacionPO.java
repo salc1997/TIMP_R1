@@ -51,11 +51,11 @@ public class PaginacionPO extends TestBaseParalelo2{
 	@FindBy(xpath = "//span[text()=\"Relatórios de Outputs\"]")
 	public WebElement output;
 	
-	
-	public PaginacionPO() {
-		//PageFactory.initElements(driver, this);
-		PageFactory.initElements(driver, this);
-	}
+//	
+//	public PaginacionPO() {
+//		//PageFactory.initElements(driver, this);
+//		PageFactory.initElements(driver, this);
+//	}
 	
 	
 	public String paginacionPS() {
@@ -65,11 +65,11 @@ public class PaginacionPO extends TestBaseParalelo2{
 		System.out.println(session);
 		*/
 		
-		Set<String> acessar =driver.getWindowHandles();
-		for (String handle : acessar) {
-			System.out.println(acessar);
-		}
-		
+//		Set<String> acessar =driver.getWindowHandles();
+//		for (String handle : acessar) {
+//		System.out.println(acessar);
+//		}
+//		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		output.click();

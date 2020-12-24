@@ -6,13 +6,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriarPO;
 
-public class MapeamentoContabilCriar extends TestBaseSteven {
+public class MapeamentoContabilCriar extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -21,7 +22,7 @@ public class MapeamentoContabilCriar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoContabilCriarPO = new MapeamentoContabilCriarPO();
@@ -29,7 +30,7 @@ public class MapeamentoContabilCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 0)

@@ -36,7 +36,8 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span")
 	public WebElement publico;
 	
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 		
 	
 	
@@ -74,17 +75,22 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		sleep(5000);
 		
 		gravar.click();
-		
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
 		waitExpectXpath(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
-
+		sleep(2000);
+		
 		biblioteca.click();
 		
-		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[5]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]/div[2]/label/span");
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		actionsMoveToElementElement(publico);
 
@@ -119,21 +125,26 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		sleep(3000);
 		aceptar.click();
 		
-
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(5000);
 		
 		gravar.click();
-		
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
 		waitExpectXpath(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
+		sleep(2000);
 
 		biblioteca.click();
 		
-		//waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[5]");
-		waitExpectXpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]/div[2]/label/span");
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		actionsMoveToElementElement(publico);
 
@@ -177,10 +188,10 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		aceptar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		//sleep(menuT);
-
+		sleep(2000);
 		actionsMoveToElementElement(publico);
+		
+		
 		String privadoT = publico.getAttribute("aria-label");
 		System.out.println(privadoT);
 		

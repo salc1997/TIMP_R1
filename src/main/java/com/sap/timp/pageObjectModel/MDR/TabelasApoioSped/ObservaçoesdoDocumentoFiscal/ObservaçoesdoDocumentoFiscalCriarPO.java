@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseEliel {
+public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
 	
 	
 	
@@ -109,14 +110,14 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		uf.click();
-		
+		sleep(2000);
 		opcaouf.click();
 		sleep(2000);
 		
 		idregrademensagem.click();
-		
+		sleep(2000);
 		opcaoid.click();
-		
+		sleep(2000);
 		descricaosped.sendKeys("Descrição SPED");
 		
 		String data = dataanterior();

@@ -9,9 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 
-public class ProdutosSCANCCriarPO extends TestBaseSteven{
+public class ProdutosSCANCCriarPO extends TestBaseKathy{
 	
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
@@ -145,7 +146,7 @@ public class ProdutosSCANCCriarPO extends TestBaseSteven{
 		sleep(2000);
 
 		
-		dataVigencia.sendKeys(fechaActual());
+		dataVigencia.sendKeys("01/01/1870");
 		
 		
 		sleep(2000);
@@ -157,13 +158,13 @@ public class ProdutosSCANCCriarPO extends TestBaseSteven{
 		
 		biblioteca.click();
 		
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		siguiente.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

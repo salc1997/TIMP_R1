@@ -116,6 +116,7 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBaseEliel {
 		sleep(2000);
 		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
 		sleep(2000);
+		attributoNotToBeEmptyElement(datainicial, "value");
 		String valor = datainicial.getAttribute("value");
 
 		String enviar = dataanterior();

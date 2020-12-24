@@ -1,49 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-=======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDRKen">
+      <class name="com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades">
         <methods>
-          <include name="s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID"/>
-          <include name="deXParaM010PlanodeContasSocietarioExcluirEmMassa"/>
-          <include name="incentivosFiscaisCriar"/>
-          <include name="aliquotasDeTaxaDeActualizacaoExcluirEmMassa"/>
-          <include name="saldosCriar"/>
->>>>>>> refs/remotes/origin/Cristhian
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.CALENDAR.AcessarCalendar -->
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar">
-        <methods>
+          <include name="ingresar"/>
+          <include name="mdrEntrar"/>
+          <include name="criar"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriar -->
->>>>>>> refs/remotes/origin/Eliel
-=======
-      </class> <!-- com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar -->
->>>>>>> refs/remotes/origin/Steven
-=======
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDRKen -->
->>>>>>> refs/remotes/origin/Cristhian
+      </class> <!-- com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

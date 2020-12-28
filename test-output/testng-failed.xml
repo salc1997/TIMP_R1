@@ -75,14 +75,26 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa">
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.CampoPesquisa">
+>>>>>>> refs/remotes/origin/Steven
         <methods>
+<<<<<<< HEAD
           <include name="acessarMDR"/>
           <include name="criar"/>
+=======
+>>>>>>> refs/remotes/origin/Steven
           <include name="beforeClass"/>
+          <include name="filtro"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.CampoPesquisa -->
+>>>>>>> refs/remotes/origin/Steven
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

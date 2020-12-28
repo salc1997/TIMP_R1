@@ -99,6 +99,7 @@ public class TestBaseSteven {
 		
 	}
 	
+	
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
 		
@@ -313,7 +314,7 @@ public class TestBaseSteven {
 
 		Date fecha = new Date();
 
-		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
 		return df.format(fecha);
 

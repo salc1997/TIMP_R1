@@ -592,35 +592,71 @@ Session ID: 6c7807dbf391c02e649ca7e4dc63420e
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> refs/remotes/origin/Steven
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-12-28T14:32:41Z" name="Default suite" finished-at="2020-12-28T14:35:08Z" duration-ms="147143">
+=======
+  <suite name="Default suite" duration-ms="46211" started-at="2020-12-24T16:16:14Z" finished-at="2020-12-24T16:17:00Z">
+>>>>>>> refs/remotes/origin/Steven
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2020-12-28T14:32:41Z" name="Default test" finished-at="2020-12-28T14:35:08Z" duration-ms="147143">
       <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa@4416d64f]" started-at="2020-12-28T08:32:41Z" name="beforeClass" finished-at="2020-12-28T08:32:55Z" duration-ms="13895" status="PASS">
+=======
+    <test name="Default test" duration-ms="46211" started-at="2020-12-24T16:16:14Z" finished-at="2020-12-24T16:17:00Z">
+      <class name="com.timp.test.TBD.Configuração.TipoDeDocumento.FiltroPorID">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.TBD.Configuração.TipoDeDocumento.FiltroPorID@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="11554" started-at="2020-12-24T10:16:14Z" finished-at="2020-12-24T10:16:25Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa@4416d64f]" started-at="2020-12-28T08:32:55Z" name="login" finished-at="2020-12-28T08:33:04Z" duration-ms="8703" status="PASS">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.TBD.Configuração.TipoDeDocumento.FiltroPorID@f2f2cc1]" name="login" duration-ms="7809" started-at="2020-12-24T10:16:25Z" finished-at="2020-12-24T10:16:33Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa@4416d64f]" started-at="2020-12-28T08:33:04Z" name="acessarMDR" finished-at="2020-12-28T08:33:20Z" duration-ms="16232" status="PASS">
+=======
+        <test-method status="PASS" signature="acessarTCC()[pri:0, instance:com.timp.test.TBD.Configuração.TipoDeDocumento.FiltroPorID@f2f2cc1]" name="acessarTCC" duration-ms="14091" started-at="2020-12-24T10:16:33Z" finished-at="2020-12-24T10:16:47Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa@4416d64f]" started-at="2020-12-28T08:33:20Z" name="criar" finished-at="2020-12-28T08:35:08Z" duration-ms="108290" status="PASS">
+=======
+        </test-method> <!-- acessarTCC -->
+        <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.TBD.Configuração.TipoDeDocumento.FiltroPorID@f2f2cc1]" name="filtro" duration-ms="12657" started-at="2020-12-24T10:16:47Z" finished-at="2020-12-24T10:17:00Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa@4416d64f]" started-at="2020-12-28T08:35:08Z" name="afterClass" finished-at="2020-12-28T08:35:08Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- filtro -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.TBD.Configuração.TipoDeDocumento.FiltroPorID@f2f2cc1]" name="afterClass" is-config="true" duration-ms="73" started-at="2020-12-24T10:17:00Z" finished-at="2020-12-24T10:17:00Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.TBD.Configuração.TipoDeDocumento.FiltroPorID -->
+>>>>>>> refs/remotes/origin/Steven
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

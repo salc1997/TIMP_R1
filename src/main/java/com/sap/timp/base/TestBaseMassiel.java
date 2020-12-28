@@ -11,11 +11,10 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Locale;
-<<<<<<< HEAD
+
 import java.util.Map;
-=======
+
 import java.util.prefs.Preferences;
->>>>>>> refs/heads/Yessy
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

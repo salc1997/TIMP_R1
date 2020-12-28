@@ -38,6 +38,10 @@ public class TestBaseFernando extends TestBaseSteven {
 		driver.manage().window().maximize();
 
 		driver.get(tc2);
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/heads/Yessy
 
 		return driver;
 	}

@@ -19,6 +19,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
@@ -69,6 +70,18 @@
 =======
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.CampoPesquisa -->
 >>>>>>> refs/remotes/origin/Steven
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.DFG.SPED.ECF.ECFFuncionalidades">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.SPED.ECF.ECFFuncionalidades -->
+>>>>>>> refs/heads/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

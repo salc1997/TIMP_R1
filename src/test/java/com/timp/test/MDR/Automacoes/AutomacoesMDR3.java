@@ -232,9 +232,9 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	AtribuicaoMunicipioEstadoEditar atribuicaoMunicipioEstadoEditar;
 	AtribuicaoMunicipioEstadoExcluir atribuicaoMunicipioEstadoExcluir;
 	AtribuicaoMunicipioEstadoVisualizar atribuicaoMunicipioEstadoVisualizar;
-
-	// Tabelas Complementares para Obrigações Acessórias > Código de Motivos de
-	// Ajustes
+	
+//Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes
+	// 
 
 	CodigoDeMotivosDeAjustesCriar codigoDeMotivosDeAjustesCriar;
 	CodigoDeMotivosDeAjustesEditar codigoDeMotivosDeAjustesEditar;

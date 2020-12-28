@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,11 @@ public class DetalheEditarPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//div[@id=\"justification\"]/div/textarea")
+	public WebElement justificacion;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
+	public WebElement aplicar;
 	
 	
 	public DetalheEditarPO() {
@@ -75,13 +81,30 @@ public class DetalheEditarPO extends TestBaseSteven {
 		
 		campo.clear();
 		campo.sendKeys(enviar);
-		sleep(1000);
+		
 		gravar.click();
 		sleep(2000);
-		sim.click();
-		sleep(3000);		 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
 
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
+
+		justificacion.sendKeys("TestMassiel");
+		justificacion.sendKeys(Keys.ENTER);
+
+		aplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
+
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
+		 
 		
 		driver.navigate().refresh();
 		
@@ -101,10 +124,28 @@ public class DetalheEditarPO extends TestBaseSteven {
 		campo.sendKeys(valor);
 		
 		gravar.click();
-		waitExpectElement(sim);
 		sleep(2000);
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
+
 		sim.click();
-		
+		sleep(2000);
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
+
+		justificacion.sendKeys("TestMassiel");
+		justificacion.sendKeys(Keys.ENTER);
+
+		aplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
+
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
+		sleep(2000);
+
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		

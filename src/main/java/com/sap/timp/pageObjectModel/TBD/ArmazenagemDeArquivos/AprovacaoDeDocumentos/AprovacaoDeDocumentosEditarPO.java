@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TBD.Configuracao.TipoDeDocumento;
+package com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,45 +7,20 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TipoDeDocumentoEditarPO extends TestBaseEliel{
+public class AprovacaoDeDocumentosEditarPO extends TestBaseEliel {
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
-	public WebElement configuracao;
+	@FindBy(xpath = "//span[text()=\"Armazenagem de Arquivos\"]")
+	public WebElement armazenagemdearquivos;
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de Tipo de Documento\"]")
-	public WebElement configuracaodetipodedocumento;
+	
+	@FindBy(xpath = "//span[text()=\"Aprovação de Documentos\"]")
+	public WebElement aprovacaodocumentos;
+	
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//span[text()=\"Nova Configuração de Tipo de Documento\"]")
-	public WebElement novo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de documento\"]")
-	public WebElement tipodocumento;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição\"]")
-	public WebElement descricao;
-	
-	@FindBy(xpath = "//div[@id=\"numberRange\"]/div/div[2]")
-	public WebElement intervalonumerico;
-	
-	@FindBy(xpath = "//li[@id][text()=\"02\"]")
-	public WebElement opcaotq1;
-	
-	@FindBy(xpath = "//li[@id][text()=\"02\"]")
-	public WebElement opcaotp1;
-	
-	
-	@FindBy(xpath = "//li[@id][text()=\"10000\"]")
-	public WebElement opcaotc2;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
-	public WebElement validadede;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade Até\"]")
-	public WebElement validadeate;
 
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -57,7 +32,12 @@ public class TipoDeDocumentoEditarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
-	public TipoDeDocumentoEditarPO() {
+	
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Comentários\"]")
+	public WebElement comentario;
+	
+	
+	public AprovacaoDeDocumentosEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -66,11 +46,11 @@ public class TipoDeDocumentoEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		configuracao.click();
+		armazenagemdearquivos.click();
 		
 		sleep(2000);
 		
-		configuracaodetipodedocumento.click();
+		aprovacaodocumentos.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -95,16 +75,14 @@ public class TipoDeDocumentoEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(tipodocumento);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String enviar = "01/01/2014";
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
+		String enviar = "Teste automatizado";
+		comentario.clear();
 		sleep(2000);
-		validadede.clear();
-		sleep(2000);
-		validadede.sendKeys(enviar);
+		comentario.sendKeys(enviar);
 		sleep(1000);
 		
 		Gravar.click();
@@ -121,9 +99,9 @@ public class TipoDeDocumentoEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		configuracao.click();
+		armazenagemdearquivos.click();
 		sleep(2000);
-		configuracaodetipodedocumento.click();
+		aprovacaodocumentos.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -146,19 +124,18 @@ public class TipoDeDocumentoEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(tipodocumento);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
-		sleep(2000);
 		
-		String data = validadede.getAttribute("value");
-		System.out.println(data);
+		
+		String comentario1 = comentario.getAttribute("value");
+		System.out.println(comentario1);
 
-		boolean sucesso = data.equals(enviar);
+		boolean sucesso = comentario1.equals(enviar);
 		System.out.println(sucesso);
 		
 		return sucesso;
 	}
+
 
 }

@@ -102,10 +102,11 @@ public class ParametrosModeloDeApuracaoTPEditarPO extends TestBaseEliel {
 		editar.click();
 		
 		sleep(2000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		
 		String valor = datainicial.getAttribute("value");
 
@@ -126,6 +127,7 @@ public class ParametrosModeloDeApuracaoTPEditarPO extends TestBaseEliel {
 
 		driver.navigate().refresh();
 		sleep(2000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 			

@@ -1,4 +1,4 @@
-package com.timp.test.TBD.Configuração.TipoDeDocumento;
+package com.timp.test.TBD.ArmazenagemDeArquivos.ArmazenarArquivo;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
-import com.sap.timp.pageObjectModel.TBD.Configuracao.TipoDeDocumento.TipoDeDocumentoEditarPO;
+import com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.ArmazenarArquivo.ArmazenarArquivoEditarPO;
 
-public class TipoDeDocumentoEditar extends TestBaseEliel{
- 
+public class ArmazenarArquivoEditar extends TestBaseEliel{
+	
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
-	TipoDeDocumentoEditarPO tipoDeDocumentoEditarPO;
+	ArmazenarArquivoEditarPO armazenarArquivoEditarPO;
 	
 	@BeforeClass
 	  public void beforeClass() {
@@ -23,7 +23,7 @@ public class TipoDeDocumentoEditar extends TestBaseEliel{
 		  driver = initializationE();
 		  loginTC = new LoginTC();
 		  acessarTBDPO = new AcessarTBDPO();
-		  tipoDeDocumentoEditarPO = new  TipoDeDocumentoEditarPO();
+		  armazenarArquivoEditarPO = new  ArmazenarArquivoEditarPO();
 	  }
 
 	  @AfterClass
@@ -46,9 +46,10 @@ public class TipoDeDocumentoEditar extends TestBaseEliel{
 	 	@Test(priority = 1)
 	 	public void editar() {
 	 		
-	 		boolean sucesso = tipoDeDocumentoEditarPO.editar();
+	 		boolean sucesso = armazenarArquivoEditarPO.editar();
 			assertTrue(sucesso, Editar);
 		
 	 		
 	 	}
+
 }

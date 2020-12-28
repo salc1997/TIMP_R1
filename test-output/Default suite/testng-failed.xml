@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.BRB.CriarCopia">
-        <methods>
-          <include name="criarCopia"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CriarCopia -->
-=======
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento">
+      <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa">
         <methods>
-          <include name="gravarAN3"/>
+          <include name="acessarMDR"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -66,6 +66,9 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcGrupo;
 	
+	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
+	public WebElement opcGrupo1;
+	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Estrutura de arquivo\"]")
 	public WebElement estrutura;
 	
@@ -200,7 +203,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-File-and-Folders icon-layout padding-right \"]")
 	public WebElement leiautess;
 	
-	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[1]/div/div/div[1]/div[3]/div[1]")
+	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement arquivosRaiz;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[3]/div/div[1]/div/div/div[1]/div/div[3]/span")
@@ -216,8 +219,154 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 	public WebElement enviarPendencias;
 	
 
-	@FindBy(xpath = "//span[text()=\"Adicionar bloco\"]")
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[3]/div[1]/button/span[1]")
 	public WebElement adicionarBloco;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[1]/div[1]/div/div[3]/button")
+	public WebElement adicionarRegistro1;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[2]/div[1]/div/div[3]/button")
+	public WebElement adicionarRegistro2;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[3]/div[1]/div/div[3]/button")
+	public WebElement adicionarRegistro3;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[4]/div[1]/div/div[3]/button")
+	public WebElement adicionarRegistro4;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[5]/div[1]/div/div[3]/button")
+	public WebElement adicionarRegistro5;
+	
+	
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[1]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputbloco1;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputbloco2;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[3]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputbloco3;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[4]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputbloco4;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[5]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputbloco5;
+	
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputregistro1;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputregistro2;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[3]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputregistro3;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[4]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputregistro4;
+	
+	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[5]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement inputregistro5;
+	
+	
+	@FindBy(xpath = "//span[text()=\"Ajustes Fiscais\"]")
+	public WebElement ajusteF;
+	
+	@FindBy(xpath = "//span[text()=\"Ajustes\"]")
+	public WebElement ajuste;
+	
+	@FindBy(xpath = "//span[text()=\"Filtro\"]")
+	public WebElement filtros;
+	
+
+	@FindBy(xpath = "//*[@id=\"toolbarSecund\"]/div/div/ul/li[2]/button/span[2]")
+	public WebElement agrupamento;
+	
+	@FindBy(xpath = "//span[text()=\"Código da empresa\"]")
+	public WebElement codigoDaEmpresa;
+	
+	@FindBy(xpath = "//span[text()=\"Valor do ajuste\"]")
+	public WebElement valorDoAjuste;
+	
+	@FindBy(xpath = "//span[text()=\"Código da empresa (4)\"]")
+	public WebElement codigoDaEmpresa2;
+	
+	@FindBy(xpath = "//span[text()=\"Valor do ajuste (34)\"]")
+	public WebElement valorDoAjuste2;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Bloco\"]")
+	public WebElement bloco;
+	
+	@FindBy(xpath = "//li[text()=\"B1\"]")
+	public WebElement blocoInput;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Registro\"]")
+	public WebElement registro;
+	
+	@FindBy(xpath = "//li[text()=\"R1\"]")
+	public WebElement registroInput;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Estrutura de Dados\"]")
+	public WebElement estruturas;
+	
+	@FindBy(xpath = "//li[text()=\"Ajustes Fiscais\"]")
+	public WebElement estruturasInput;
+	
+	@FindBy(xpath = "//button[text()=\"Criar Agrupamento\"]")
+	public WebElement criarGrupo;
+	
+	@FindBy(xpath = "//div[@class=\"group-field\"][1]")
+	public WebElement codigoDaEmpresaA;
+	
+	@FindBy(xpath = "//div[@class=\"group-field\"][2]")
+	public WebElement valorDoAjusteA;
+	
+	//@FindBy(xpath = "//*[@id=\"group-container\"]/div[2]/div[2]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"group-container\"]/div[2]/div[2]/div[1]/div")
+	public WebElement cajaEmpresaA;
+	
+	//@FindBy(xpath = "//*[@id=\"group-container\"]/div[2]/div[2]/div[2]/div")
+	@FindBy(xpath = "//*[@id=\"group-container\"]/div[2]/div[2]/div[2]/div")
+	public WebElement cajaValorDoAjusteA;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Nome\"]")
+	public WebElement nomeGrupo;
+	
+	@FindBy(xpath = "//span[text()=\"Descrição complementar (500)\"]")
+	public WebElement descripcionCompletar;
+	
+	@FindBy(xpath = "//span[text()=\"Descrição complementar (500)\"]")
+	public WebElement descripcionCompletar2;
+	
+	@FindBy(xpath = "//span[text()=\"Ordenar\"]")
+	public WebElement ordenar;
+	
+	@FindBy(xpath = "//span[text()=\"Adicionar registro\"]")
+	public WebElement adicionarRegistroOrdenar;
+	
+	@FindBy(xpath = "//*[@id=\"dfg-sort-dialog\"]/div/ul/li/div[1]/div[1]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement bloboOrdenar;
+	
+	@FindBy(xpath = "//*[@id=\"option-3\"]/div")
+	public WebElement bloboOrdenarInput;
+	
+	@FindBy(xpath = "//*[@id=\"dfg-sort-dialog\"]/div/ul/li/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement seleccionRegistroOrdenar;
+	
+	@FindBy(xpath = "//*[@id=\"option-1\"]/div")
+	public WebElement seleccionRegistroOrdenarInput;
+	
+	@FindBy(xpath = "//span[text()=\"Adicionar campo\"]")
+	public WebElement adicionarCampoOrdenar;
+	
+	@FindBy(xpath = "//*[@id=\"dfg-sort-dialog\"]/div/ul/li/div[2]/li/div/div[1]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement seleccionCampoOrdenar;
+	
+	@FindBy(xpath = "//*[@id=\"option-1\"]/div")
+	public WebElement seleccionCampoOrdenarInput;
+	
 	
 	public LeiautesExecuçãoFuncionalidadesPO() {
 
@@ -253,7 +402,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nome.sendKeys("Teste Automatizado QA Cristhian");
+		nome.sendKeys("Teste Automatizado QA Cristhian 00");
 		sleep(1000);
 		
 		descripcion.sendKeys("Descipcion Teste Automatizado QA");
@@ -264,10 +413,36 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		leiauteOpc.click();
 		sleep(2000);
 		
-		grupo.click();
-		sleep(2000);
-		opcGrupo.click();
-		sleep(1000);
+		
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}
+		if(tp1 == true) {
+			grupo.click();
+			sleep(2000);
+			opcGrupo1.click();
+			sleep(1000);
+		}else {
+			grupo.click();
+			sleep(2000);
+			opcGrupo.click();
+			sleep(1000);;
+		}
+		
+		
 		
 		estrutura.click();
 		sleep(2000);
@@ -284,38 +459,200 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		
 		salvar.click();
 		
+		sleep(20000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(20000);
 		
-		adicionarBloco.click();
-		sleep(1000);
 		
-		adicionarBloco.click();
-		sleep(1000);
-		
-		adicionarBloco.click();
-		sleep(1000);
-		
-		adicionarBloco.click();
-		sleep(1000);
-		
-		adicionarBloco.click();
-		sleep(1000);
-		
-
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		antes.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		adicionarBloco.click();
+		sleep(1000);
 		
-		siguiente.click();
+//		adicionarBloco.click();
+//		sleep(1000);
+//		
+//		adicionarBloco.click();
+//		sleep(1000);
+//		
+//		adicionarBloco.click();
+//		sleep(1000);
+//		
+//		adicionarBloco.click();
+//		sleep(1000);
+		
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		adicionarRegistro1.click();
+		sleep(3000);
+		inputbloco1.sendKeys("B1");
+		sleep(3000);
+		inputregistro1.sendKeys("R1");
+		sleep(3000);
+		
+		
+//		adicionarRegistro2.click();
+//		sleep(3000);
+//		inputbloco2.sendKeys("B2");
+//		sleep(3000);
+//		inputregistro2.sendKeys("R2");
+//		sleep(3000);
+//		
+//		adicionarRegistro3.click();
+//		sleep(3000);
+//		inputbloco3.sendKeys("B3");
+//		sleep(3000);
+//		inputregistro3.sendKeys("R3");
+//		sleep(3000);
+//		
+//		adicionarRegistro4.click();
+//		sleep(3000);
+//		inputbloco4.sendKeys("B4");
+//		sleep(3000);
+//		inputregistro4.sendKeys("R4");
+//		sleep(3000);
+//		
+//		adicionarRegistro5.click();
+//		sleep(3000);
+//		inputbloco5.sendKeys("B5");
+//		sleep(3000);
+//		inputregistro5.sendKeys("R5");
+//		sleep(3000);
+		
+		//AGRUPAMIENTO
+		
+		
+		  ajusteF.click(); 
+		  sleep(3000); 
+		  ajuste.click(); 
+		  sleep(3000);
+		  
+		  if(tp1 == true) {
+		  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
+		  sleep(2000);
+		  moveToElement(codigoDaEmpresa, driver.findElement(By.xpath(
+		  "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
+		  sleep(2000);
+		  
+		  
+		  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
+		  sleep(2000);
+		  moveToElement(valorDoAjuste, driver.findElement(By.xpath(
+		  "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
+		  sleep(2000); 
+		  
+		  }else {
+		  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
+		  sleep(2000);
+		  moveToElement(codigoDaEmpresa2, driver.findElement(By.xpath(
+		  "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
+		  sleep(2000);
+		  
+		  
+		  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
+		  moveToElement(valorDoAjuste2, driver.findElement(By.xpath(
+		  "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
+		  sleep(2000); 
+		  }
+		  
+		  
+		  
+		  
+		  
+		  
+		  agrupamento.click(); sleep(3000);
+		  
+		  bloco.click(); sleep(3000); blocoInput.click(); sleep(3000);
+		  
+		  registro.click(); sleep(3000); registroInput.click(); sleep(3000);
+		  
+		  estruturas.click(); sleep(3000); estruturasInput.click(); sleep(3000);
+		  
+		  
+		  criarGrupo.click(); sleep(5000);
+		  
+		  //invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		  
+		  
+		  //invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		  //sleep(3000);
+		  actionsMoveToElementElement(codigoDaEmpresaA);
+		  sleep(1000);
+		  moveToElement(codigoDaEmpresaA, driver.findElement(By.xpath(
+		  "//div[@class=\"elements-panel\"]/div[2]/div[1]/div")));
+		  
+		  //System.out.println("2"); sleep(5000); //System.out.println("1");
+		  
+		  //invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		  //sleep(4000);
+		  
+		  moveToElement(valorDoAjusteA, driver.findElement(By.xpath(
+		  "//div[@class=\"elements-panel\"]/div[2]/div[2]/div")));
+		  //System.out.println("3"); //System.out.println("4"); sleep(5000);
+		  
+		  nomeGrupo.sendKeys("TESTE QA"); 
+		  sleep(3000);
+		  
+		  
+		  
+		  aplicar.click(); 
+		  sleep(3000);
+		  
+		  aplicar.click(); 
+		  sleep(3000);
+		 
+		
+		
+		ajusteF.click(); 
+		sleep(3000); 
+		ajuste.click(); 
+		sleep(3000);
+		
+		if(tp1 == true) {
+			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
+			  sleep(2000);
+			  
+			  moveToElement(descripcionCompletar, driver.findElement(By.xpath(
+			  "//*[@id=\"block-list-wrapper\"]/div[3]/div[2]/div/div[2]/div")));
+			  sleep(2000);
+			  
+			 
+		   sleep(2000); 
+		 }else {
+			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
+			  sleep(2000);
+			  
+			  moveToElement(descripcionCompletar, driver.findElement(By.xpath(
+			  "//*[@id=\"block-list-wrapper\"]/div[3]/div[2]/div/div[2]/div")));
+			  sleep(2000);
+		 }
+		
+		ordenar.click();
+		sleep(3000);
+		
+		adicionarRegistroOrdenar.click();
+		sleep(3000);
+		
+		bloboOrdenar.click();
+		sleep(3000);
+		bloboOrdenarInput.click();
+		sleep(3000);
+		
+		seleccionRegistroOrdenar.click();
+		sleep(3000);
+		seleccionRegistroOrdenarInput.click();
+		sleep(3000);
+		
+		adicionarCampoOrdenar.click();
+		sleep(3000);
+		
+		seleccionCampoOrdenar.click();
+		sleep(3000);
+		seleccionCampoOrdenarInput.click();
+		sleep(3000);
+		
+		aplicar.click();
+		
+		
+		System.out.println("Exito");
 		
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		

@@ -84,9 +84,9 @@ public class TiposDeArquivosESocialCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("12345");
+		codigo.sendKeys("007");
 		sleep(1000);
-		eventos.sendKeys("Teste Tipo de Arquivo e-Social");
+		eventos.sendKeys("Teste Tipo de Arquivo e-Social 7");
 		sleep(1000);
 
 		validade.sendKeys(fechaActual());

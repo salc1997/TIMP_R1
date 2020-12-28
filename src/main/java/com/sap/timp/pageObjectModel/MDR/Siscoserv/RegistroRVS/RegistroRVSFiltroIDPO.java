@@ -48,7 +48,7 @@ public boolean filtro() {
 		sleep(2000);
 		String idBusqueda = id.getText();
 		System.out.println(idBusqueda + " Id Buscada");
-
+		
 		boolean sucesso = idRegistro.equals(idBusqueda);
 		System.out.println(sucesso);
 

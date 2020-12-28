@@ -65,7 +65,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Aba\"]")
 	public WebElement abas;
-	@FindBy(xpath = "//*[@id=\"1\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"31\"]/div[1]/label/span")
 	public WebElement opcAbas;
 	
 	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/table/tbody/tr[31]/td[2]/div/div[1]/input")
@@ -100,7 +100,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[4]/div[2]/div[1]/div/div[1]/div[1]/div[2]/input")
 	public WebElement acoes;
-	@FindBy(xpath = "//*[@id=\"T1\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"T31\"]/div[1]/label/span")
 	public WebElement opcAcoes;
 	
 

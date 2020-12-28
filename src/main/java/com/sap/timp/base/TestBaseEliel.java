@@ -6,7 +6,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -25,14 +27,23 @@ public class TestBaseEliel extends TestBaseSteven {
 	public WebDriver initializationE() {
 
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		
+		//Evita que el mensaje de "Chorme siendo controlado por un software de automatizacion" aprezca
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+
+		
+		//Evita que la ventana de guardar contraseña aparezca
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);
+		options.setExperimentalOption("prefs", prefs);
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 
 		return driver;
 

@@ -184,6 +184,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeO
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluir;
@@ -285,6 +286,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeProdutosCriar tabelaDeProdutosCriar;
 	TabelaDeProdutosDetalhes tabelaDeProdutosDetalhes;
 	TabelaDeProdutosExcluir tabelaDeProdutosExcluir;
+	TabelaDeProdutosExcluirEmMassa tabelaDeProdutosExcluirEmMassa;
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouros
 	TabelaLogradouroCriar tabelaLogradouroCriar;
@@ -1023,6 +1025,17 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeProdutosExcluir.acessarMDR();
 		tabelaDeProdutosExcluir.excluir();
 		tabelaDeProdutosExcluir.afterClass();
+		
+	}
+	
+	@Test(priority = 46)
+	public void tabelaDeProdutosExcluirEmMassa() {
+		tabelaDeProdutosExcluirEmMassa = new TabelaDeProdutosExcluirEmMassa();
+		tabelaDeProdutosExcluirEmMassa.beforeClass();
+		tabelaDeProdutosExcluirEmMassa.login();
+		tabelaDeProdutosExcluirEmMassa.acessarMDR();
+		tabelaDeProdutosExcluirEmMassa.criar();
+		tabelaDeProdutosExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos Fim-------------------------");
 

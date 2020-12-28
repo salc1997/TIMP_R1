@@ -12,25 +12,8 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
 	public WebElement parametrosdecontabilizacao;
 	
-	
 	@FindBy(xpath = "//span[text()=\"Contas Default para Extemporâneo\"]")
 	public WebElement contasdefaultparaextemporaneo;
-	
-	@FindBy(xpath = "//span[text()=\"Nova Contas Default para Extemporâneo\"]")
-	public WebElement novacontadefaultparaextemporaneo;
-	
-	@FindBy(xpath = "//div[@class=\"field\" and @id=\"company\"]/div/div/div[2]")
-	public WebElement empresa;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaoempresa;
-	
-	@FindBy(xpath = "//div[@class=\"field\" and @id=\"branch\"]/div/div/div[2]")
-	public WebElement filial;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaofilial;
-	
 	
 	@FindBy(xpath = "//div[@class=\"field item-2\" and @id=\"adjustmentCode\"]/div/div[2]")
 	public WebElement codigodeajuste;
@@ -42,8 +25,8 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a data de início de vigência\"]")
-	public WebElement datavigencia;
+	@FindBy(xpath = "//span[@id=\"adjustmentCode\"]")
+	public WebElement campo;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -63,7 +46,7 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		sleep(2000);
 		parametrosdecontabilizacao.click();
 		sleep(2000);
@@ -98,13 +81,18 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 		sleep(2000);
 		opcaocodigodeajuste.click();
 		
+		String opcaoTexto = opcaocodigodeajuste.getText();
+		System.out.println("opção selecionada: " +opcaoTexto);
+		
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
 		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -124,11 +112,15 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 		sleep(1000);
 		
 		visualizar.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		String campoTexto = campo.getText();
+		System.out.println("Texto no Visualizar: " +campoTexto);
+		
+		boolean sucesso = campoTexto.equals(opcaoTexto);
+		
 		return sucesso;
 	}	
 

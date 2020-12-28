@@ -20,25 +20,11 @@ public class ContasDefaultPorTributoEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Nova Conta Default por Tributo\"]")
 	public WebElement novacontadefaultportributo;
 	
-	@FindBy(xpath = "//div[@class=\"field-element companyId_0_0\"]/div/div/div/div[2]")
-	public WebElement empresa;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaoempresa;
-	
-	@FindBy(xpath = "//div[@class=\"field-element branchId_0_0\"]/div/div/div/div[2]")
-	public WebElement filial;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaofilial;
-	
-	
-	@FindBy(xpath = "//div[@class=\"field-element adjustmentCode_0_1\"]/div/div/div/div[2]")
-	public WebElement codigodeajuste;
-	
+	@FindBy(xpath = "//span[@id=\"debitAccount\"]")
+	public WebElement campo;
+
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
-	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a data de início de vigência\"]")
 	public WebElement datavigencia;
@@ -55,14 +41,10 @@ public class ContasDefaultPorTributoEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
-	public WebElement opcaocodigodeajuste;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Débito\"]")
 	public WebElement contadebito;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta de Crédito\"]")
-	public WebElement contacredito;
 	
 	
 	public ContasDefaultPorTributoEditarPO() {
@@ -70,19 +52,16 @@ public class ContasDefaultPorTributoEditarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String editar() {
+	public boolean editar() {
 		
 		sleep(2000);
 		parametrosdecontabilizacao.click();
 		sleep(2000);
 		contasdefaultportributo.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
 		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();
@@ -106,7 +85,8 @@ public class ContasDefaultPorTributoEditarPO extends TestBaseEliel{
 		contadebito.clear();
 		sleep(2000);
 		
-		contadebito.sendKeys("1234567810");
+		String enviar = "1234567810";
+		contadebito.sendKeys(enviar);
 		sleep(2000);
 		
 		gravar.click();
@@ -118,27 +98,23 @@ public class ContasDefaultPorTributoEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		
-		actionsMoveToElementElement(menu1);
-		sleep(2000);
-		menu1.click();
+		menu.click();
 		sleep(1000);
 		
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
+		String campoTexto = campo.getText();
+		boolean sucesso = campoTexto.equals(enviar);
+		
 		System.out.println(sucesso);	
+		
 		return sucesso;
 	
 	}	

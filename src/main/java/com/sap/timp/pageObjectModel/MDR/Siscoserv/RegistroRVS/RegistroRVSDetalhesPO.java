@@ -192,7 +192,7 @@ public class RegistroRVSDetalhesPO extends TestBaseEliel{
 		sucesso.add(numerodoregistrovisualizar.equals(numerodoregistrodetalhes));
 		sucesso.add(numeroderegistroexpotacaovisualizar.equals(numeroderegistroexpotacaodetalhes));
 		sucesso.add(ativovisualizar.equals(ativodetalhes));
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}
 

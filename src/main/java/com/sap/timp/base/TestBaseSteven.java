@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
@@ -76,7 +78,15 @@ public class TestBaseSteven {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
+		
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);
+		options.setExperimentalOption("prefs", prefs);
+		
 		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--disable-extensions");
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
@@ -89,8 +99,37 @@ public class TestBaseSteven {
 		
 	}
 	
+	
+	public void fecharMensagens(String rows, String xpath) {
+		int rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		
+		if (rowsR > 0) {
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+		}
+		sleep(2000);
+		
+		rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		while (rowsR > 0) {
+			
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+			
+			rowsR = driver.findElements(By.xpath(xpath)).size();
+			sleep(2000);
+		}
+		
+		
+	}
+
 	public void refresh() {
 		driver.navigate().refresh();
+	}
+	
+	public String url() {
+		return driver.getCurrentUrl();
 	}
 	public int rows(String element) {
 		
@@ -104,6 +143,8 @@ public class TestBaseSteven {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 		sleep(3000);
+		
+		
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"overlay loader dark\"]")));
 		sleep(2000);
 
@@ -273,7 +314,7 @@ public class TestBaseSteven {
 
 		Date fecha = new Date();
 
-		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
 		return df.format(fecha);
 

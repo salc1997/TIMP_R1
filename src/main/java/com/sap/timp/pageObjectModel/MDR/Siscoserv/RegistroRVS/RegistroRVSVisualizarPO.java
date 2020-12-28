@@ -184,6 +184,7 @@ public ArrayList<Boolean> visualizar() {
 		sucesso.add(numeronifeditar.equals(numeronifvisualizar));
 		sucesso.add(numerodoregistroeditar.equals(numerodoregistrovisualizar));
 		sucesso.add(numeroderegistroexpotacaoeditar.equals(numeroderegistroexpotacaovisualizar));
+		System.out.println(sucesso);
 		return sucesso;	
 
 	

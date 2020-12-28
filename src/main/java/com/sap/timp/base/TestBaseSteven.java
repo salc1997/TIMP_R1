@@ -314,7 +314,7 @@ public class TestBaseSteven {
 
 		Date fecha = new Date();
 
-		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
 		return df.format(fecha);
 

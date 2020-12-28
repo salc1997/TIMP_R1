@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-24T14:48:50Z" name="Default suite" finished-at="2020-12-24T14:52:18Z" duration-ms="207197">
+  <suite started-at="2020-12-28T20:54:19Z" name="Default suite" finished-at="2020-12-28T20:55:36Z" duration-ms="76768">
     <groups>
     </groups>
-    <test started-at="2020-12-24T14:48:50Z" name="Default test" finished-at="2020-12-24T14:52:18Z" duration-ms="207197">
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6892b3b6]" started-at="2020-12-24T11:48:51Z" name="beforeClass" finished-at="2020-12-24T11:49:04Z" duration-ms="13447" status="PASS">
+    <test started-at="2020-12-28T20:54:19Z" name="Default test" finished-at="2020-12-28T20:55:36Z" duration-ms="76768">
+      <class name="com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluir@6892b3b6]" started-at="2020-12-28T17:54:19Z" name="beforeClass" finished-at="2020-12-28T17:54:32Z" duration-ms="12887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6892b3b6]" started-at="2020-12-24T11:49:04Z" name="login" finished-at="2020-12-24T11:49:13Z" duration-ms="8848" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluir@6892b3b6]" started-at="2020-12-28T17:54:32Z" name="login" finished-at="2020-12-28T17:54:40Z" duration-ms="7939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6892b3b6]" started-at="2020-12-24T11:49:13Z" name="acessarBRE" finished-at="2020-12-24T11:49:27Z" duration-ms="14021" status="PASS">
+        <test-method signature="TBDEntrar()[pri:0, instance:com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluir@6892b3b6]" started-at="2020-12-28T17:54:40Z" name="TBDEntrar" finished-at="2020-12-28T17:54:55Z" duration-ms="15437" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarBRE -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6892b3b6]" started-at="2020-12-24T11:49:27Z" name="criar" finished-at="2020-12-24T11:52:18Z" duration-ms="170852" status="PASS">
+        </test-method> <!-- TBDEntrar -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluir@6892b3b6]" started-at="2020-12-28T17:54:55Z" name="excluir" finished-at="2020-12-28T17:55:36Z" duration-ms="40485" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6892b3b6]" started-at="2020-12-24T11:52:18Z" name="afterClass" finished-at="2020-12-24T11:52:18Z" duration-ms="1" status="PASS">
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluir@6892b3b6]" started-at="2020-12-28T17:55:36Z" name="afterClass" finished-at="2020-12-28T17:55:36Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa -->
+      </class> <!-- com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

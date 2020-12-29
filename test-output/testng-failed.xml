@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades">
+        <methods>
+          <include name="ingresar"/>
+          <include name="mdrEntrar"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+=======
+<<<<<<< HEAD
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -9,7 +43,46 @@
           <include name="ExecucaoDFG"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.AN3.AN3Funcionalidades -->
+=======
+      </class> <!-- com.timp.test.BRB.CriarCopia -->
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento">
+        <methods>
+          <include name="gravarAN3"/>
+>>>>>>> refs/heads/master
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/heads/master
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades -->
+=======
+      </class> <!-- com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento -->
+>>>>>>> refs/heads/Fernando
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.DFG.SPED.ECF.ECFFuncionalidades">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.SPED.ECF.ECFFuncionalidades -->
+>>>>>>> refs/heads/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class AtividadeDeTributacaoXFornecedorCriarPO extends TestBaseEliel{
+public class AtividadeDeTributacaoXFornecedorCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Atividades para tributação\"]")
 	public WebElement atividadesTributacao;

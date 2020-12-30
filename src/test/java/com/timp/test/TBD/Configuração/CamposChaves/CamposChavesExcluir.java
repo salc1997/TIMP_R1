@@ -9,12 +9,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
-import com.sap.timp.pageObjectModel.TBD.Configuracao.CamposChaves.CamposChavesFiltroPorIDPO;
+import com.sap.timp.pageObjectModel.TBD.Configuracao.CamposChaves.CamposChavesExcluitPO;
 
-public class CamposChabesFiltroPorID extends TestBaseEliel{
+public class CamposChavesExcluir extends TestBaseEliel{
+	
+
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
-	CamposChavesFiltroPorIDPO camposChavesFiltroPorIDPO;
+	CamposChavesExcluitPO camposChavesExcluitPO;
 	
 	@BeforeClass
 	  public void beforeClass() {
@@ -22,7 +24,7 @@ public class CamposChabesFiltroPorID extends TestBaseEliel{
 		  driver = initializationE();
 		  loginTC = new LoginTC();
 		  acessarTBDPO = new AcessarTBDPO();
-		  camposChavesFiltroPorIDPO = new  CamposChavesFiltroPorIDPO();
+		  camposChavesExcluitPO = new  CamposChavesExcluitPO();
 	  }
 
 	  @AfterClass
@@ -43,12 +45,12 @@ public class CamposChabesFiltroPorID extends TestBaseEliel{
 	 	}
 	 	
 	 	@Test(priority = 1)
-	 	public void filtro() {
+	 	public void excluir() {
 	 		
-	 		boolean sucesso = camposChavesFiltroPorIDPO.filtro();
-			assertTrue(sucesso, Filtros);
+	 		boolean sucesso = camposChavesExcluitPO.excluir();
+			assertTrue(sucesso, Eliminado);
 		
 	 		
 	 	}
- 
+  
 }

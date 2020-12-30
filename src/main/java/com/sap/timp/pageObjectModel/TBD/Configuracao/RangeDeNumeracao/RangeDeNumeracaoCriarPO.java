@@ -1,4 +1,4 @@
-package com.timp.test.TBD.Configuração.TipoDeDocumento;
+package com.sap.timp.pageObjectModel.TBD.Configuracao.RangeDeNumeracao;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,45 +7,40 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class TipoDeDocumentoCriarPO extends TestBaseEliel{
+public class RangeDeNumeracaoCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
 	public WebElement configuracao;
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de Tipo de Documento\"]")
-	public WebElement configuracaodetipodedocumento;
+	@FindBy(xpath = "//span[text()=\"Configuração de Range de Numeração\"]")
+	public WebElement configuracaodereangedenumeracao;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//span[text()=\"Nova Configuração de Tipo de Documento\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Configuração de Range de Numeração\"]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de documento\"]")
-	public WebElement tipodocumento;
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Intervalo Numérico\"]")
+	public WebElement intervalornumerico;
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Range De\"]")
+	public WebElement rangede;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Descrição\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Range Até\"]")
+	public WebElement rangeate;
 	
-	@FindBy(xpath = "//div[@id=\"numberRange\"]/div/div[2]")
-	public WebElement intervalonumerico;
-	
-	@FindBy(xpath = "//li[@id][text()=\"02\"]")
-	public WebElement opcaotq1;
-	
-	@FindBy(xpath = "//li[@id][text()=\"02\"]")
-	public WebElement opcaotp1;
-	
-	
-	@FindBy(xpath = "//li[@id][text()=\"10000\"]")
-	public WebElement opcaotc2;
-	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Numeração Atual\"]")
+	public WebElement numeracaoatual;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
 	public WebElement validadede;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade Até\"]")
 	public WebElement validadeate;
+	
+
+	
+
 
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -57,7 +52,7 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
-	public TipoDeDocumentoCriarPO() {
+	public RangeDeNumeracaoCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -70,7 +65,7 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		configuracaodetipodedocumento.click();
+		configuracaodereangedenumeracao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -87,35 +82,17 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(tipodocumento);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(1000);
-		tipodocumento.sendKeys("Rel");
-		sleep(1000);
 		
-		descricao.sendKeys("Teste");
+		intervalornumerico.sendKeys("2500");
 		sleep(1000);
-		intervalonumerico.click();
+		rangede.sendKeys("0000000001");
 		sleep(1000);
-		String URL = driver.getCurrentUrl();
-		if(URL.contains("tc2")) {
-			// opcao para TC2
-			opcaotc2.click();
-			sleep(1000);
-		}
-		
-		// Opcao para TQ1
-		if(URL.contains("tq1")) {
-			opcaotq1.click();
-			sleep(1000);
-		}
-		
-		// Opcao para TP1
-		if(URL.contains("tp1")) {
-			opcaotp1.click();
-			sleep(1000);
-		}
-		
+		rangeate.sendKeys("1111111111");
+		sleep(1000);
+		numeracaoatual.sendKeys("0000000001");
+		sleep(1000);
 		validadede.sendKeys("01/01/2013");
 		sleep(2000);
 		validadeate.sendKeys("16/12/2060");
@@ -135,23 +112,28 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		
 		configuracao.click();
 		sleep(2000);
-		configuracaodetipodedocumento.click();
+		configuracaodereangedenumeracao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
+		System.out.println("Rows:" +rows);
 		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
-		idInserir1(idB);
+		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+		
+		idInserir1(idultimo);
 
 		System.out.println(id);
-		System.out.println(idB);
+		System.out.println(idultimo);
 		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
+		double idBD = convertToDouble(idultimo);
 		
 		boolean sucesso = false;
 		if (idBD > idD) {

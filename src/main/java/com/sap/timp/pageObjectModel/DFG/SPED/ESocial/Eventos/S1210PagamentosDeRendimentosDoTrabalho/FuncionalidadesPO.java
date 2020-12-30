@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho;
+package com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1210PagamentosDeRendimentosDoTrabalho;
 
 import java.util.ArrayList;
 

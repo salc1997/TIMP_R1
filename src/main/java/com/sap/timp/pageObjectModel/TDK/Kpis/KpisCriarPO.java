@@ -400,7 +400,7 @@ public class KpisCriarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		
-		regraAuditoriaN4.click();
+		//regraAuditoriaN4.click();
 		 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

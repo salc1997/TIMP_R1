@@ -1,4 +1,4 @@
-package com.timp.test.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho;
+package com.timp.test.DFG.SPED.ESocial.Eventos.S1210PagamentosDeRendimentosDoTrabalho;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
-import com.sap.timp.pageObjectModel.DFG.SPED.ESOCIAL.Eventos.S1210PagamentosDeRendimentosDoTrabalho.FuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1210PagamentosDeRendimentosDoTrabalho.FuncionalidadesPO;
 
 public class Funcionalidades extends TestBaseFernando{
 	LoginTC loginTC;

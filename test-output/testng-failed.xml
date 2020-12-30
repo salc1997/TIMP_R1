@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosVisualizar">
+      <class name="com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID">
         <methods>
+          <include name="filtro"/>
           <include name="beforeClass"/>
-          <include name="visualizar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosVisualizar -->
+      </class> <!-- com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

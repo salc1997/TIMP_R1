@@ -105,21 +105,21 @@ public class MapeamentoContabilCorrecaoVisualizarPO extends TestBaseSteven {
 		attributoNotToBeEmptyElement(cabecalhoE, "value");
 		sleep(3000);
 		
-		String empresaE1 = empresaE.getAttribute("textContent");
-		String filialE1 = filialE.getAttribute("textContent");
+		//String empresaE1 = empresaE.getAttribute("textContent");
+		//String filialE1 = filialE.getAttribute("textContent");
 		String cabecalhoE1 = cabecalhoE.getAttribute("value");
 
 		
 		
-		System.out.println(empresaE1);
-		System.out.println(filialE1);
+	//	System.out.println(empresaE1);
+	//	System.out.println(filialE1);
 		System.out.println(cabecalhoE1);
 
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sucesso.add(empresaV1.contains(empresaE1));
-		sucesso.add(filialV1.contains(filialE1));
+		//sucesso.add(empresaV1.contains(empresaE1));
+		//sucesso.add(filialV1.contains(filialE1));
 		sucesso.add(cabecalhoV1.contains(cabecalhoE1));
 
 		System.out.println(sucesso);

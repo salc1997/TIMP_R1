@@ -38,6 +38,15 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"validFrom\"]/div/div/input")
 	public WebElement validadeDe;
 	
+	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
+	public WebElement btnJustificativa;
+	
+	@FindBy(xpath = "//div[@id=\"justification\"]/div/textarea")
+	public WebElement inputJustificativa;
+	
+	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	public WebElement btnAplicar;
+	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
@@ -108,6 +117,15 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		descricao.sendKeys("Teste de Código da Receita");
 		
 		validadeDe.sendKeys(fechaActual());
+		sleep(1000);
+		
+		btnJustificativa.click();
+		sleep(2000);
+		
+		waitExpectElement(inputJustificativa);
+		inputJustificativa.sendKeys("TESTE AUTOMATIZADO");
+		sleep(1000);
+		btnAplicar.click();
 		
 		sleep(2000);
 		novo.click();
@@ -137,10 +155,17 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		codigoR.sendKeys("0123");
 		descricao.sendKeys("Teste de Código da Receita");
 		
-		validadeDe.sendKeys(fechaActual());
+		validadeDe.sendKeys(fechaActual());		
+		sleep(1000);
 		
-
+		btnJustificativa.click();
+		sleep(2000);
 		
+		waitExpectElement(inputJustificativa);
+		inputJustificativa.clear();
+		inputJustificativa.sendKeys("TESTE AUTOMATIZADO");
+		sleep(1000);
+		btnAplicar.click();
 		
 		sleep(2000);
 		novo.click();

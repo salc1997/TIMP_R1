@@ -54,7 +54,7 @@ public class Atualizar extends TestBaseSteven {
 		acessarBPMAPO.acessarBPMA();
 
 	}
-/*
+
 	@Test(priority = 3)
 	public void bpma() {
 
@@ -63,7 +63,7 @@ public class Atualizar extends TestBaseSteven {
 		assertTrue(sucesso, Atualizar);
 
 	}
-	*/
+	
 	@Test(priority = 4)
 	public void tfp() {
 
@@ -72,6 +72,14 @@ public class Atualizar extends TestBaseSteven {
 		assertTrue(sucesso, Atualizar);
 
 	}
+	
+	@Test(priority = 5)
+	public void calendar() {
 
+		atualizarPO.Calendar();
+
+		
+
+	}
 
 }

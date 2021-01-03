@@ -39,8 +39,11 @@ public class TestBaseFernando extends TestBaseSteven {
 
 		driver.get(tc2);
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> refs/heads/Cristhian
 		return driver;
 	}
 

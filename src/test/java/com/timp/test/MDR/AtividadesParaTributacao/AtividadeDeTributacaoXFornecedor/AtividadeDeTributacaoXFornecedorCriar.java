@@ -7,11 +7,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.AtividadeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriarPO;
 
-public class AtividadeDeTributacaoXFornecedorCriar extends TestBaseEliel{
+public class AtividadeDeTributacaoXFornecedorCriar extends TestBaseMassiel{
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +21,7 @@ public class AtividadeDeTributacaoXFornecedorCriar extends TestBaseEliel{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		atividadeDeTributacaoXFornecedorCriarPO = new AtividadeDeTributacaoXFornecedorCriarPO();

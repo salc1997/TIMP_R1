@@ -1,11 +1,12 @@
-package com.timp.test.DFG.SPED_ESOCIAL;
+package com.timp.test.DFG.SPED.ESocial.S1200;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
-import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.ESOCIALfuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.S1200.ESOCIALfuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.REINF.SPEDREINFfuncionalidadesPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -46,26 +47,26 @@ public class ESOCIALfuncionalidades extends TestBaseCristhian {
 
 	@Test(priority = 2)
 	public void criar() {
-		boolean sucesso = eSOCIALfuncionalidadesPO.criar();
-		assertTrue(sucesso, Criar);		
+//		boolean sucesso = eSOCIALfuncionalidadesPO.criar();
+//		assertTrue(sucesso, Criar);		
 		
-		boolean sucesso2 = eSOCIALfuncionalidadesPO.editar();
-		assertTrue(sucesso2, Editar);	
+//		boolean sucesso2 = eSOCIALfuncionalidadesPO.editar();
+//		assertTrue(sucesso2, Editar);	
 		
-		ArrayList<Boolean> sucesso3 = eSOCIALfuncionalidadesPO.informacao();
+//		ArrayList<Boolean> sucesso3 = eSOCIALfuncionalidadesPO.informacao();
 		
-		for (int i = 0; i < sucesso3.size(); i++) {
-			assertTrue(sucesso3.get(i), visualizaçar);
-		}
+//		for (int i = 0; i < sucesso3.size(); i++) {
+	//		assertTrue(sucesso3.get(i), visualizaçar);
+		//}
 		
-		ArrayList<Boolean> sucesso4 = eSOCIALfuncionalidadesPO.visualizar();
-		
-		for (int i = 0; i < sucesso4.size(); i++) {
-			assertTrue(sucesso4.get(i), visualizaçar);
-		}
+//		ArrayList<Boolean> sucesso4 = eSOCIALfuncionalidadesPO.visualizar();
+//		
+//		for (int i = 0; i < sucesso4.size(); i++) {
+//			assertTrue(sucesso4.get(i), visualizaçar);
+//		}
 		
 		boolean sucesso5 = eSOCIALfuncionalidadesPO.executar();
-		assertTrue(sucesso5);	
+		assertTrue(sucesso5, visualizaçar);	
 
 	}
 	

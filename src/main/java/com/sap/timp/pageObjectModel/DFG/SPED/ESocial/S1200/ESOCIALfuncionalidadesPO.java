@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.DFG.SPED.ESocial;
+package com.sap.timp.pageObjectModel.DFG.SPED.ESocial.S1200;
 
 import java.util.ArrayList;
 

@@ -1,53 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades">
+      <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
         <methods>
-          <include name="ingresar"/>
-          <include name="mdrEntrar"/>
-          <include name="criar"/>
           <include name="afterClass"/>
-=======
-<<<<<<< HEAD
->>>>>>> refs/heads/Cristhian
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.BRB.CriarCopia">
-        <methods>
-          <include name="criarCopia"/>
+          <include name="Aprovar"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.CriarCopia -->
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento">
-        <methods>
-          <include name="gravarAN3"/>
->>>>>>> refs/heads/master
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="afterClass"/>
->>>>>>> refs/heads/master
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades -->
-=======
-      </class> <!-- com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento -->
->>>>>>> refs/heads/Fernando
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

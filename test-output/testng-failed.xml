@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
@@ -7,9 +8,21 @@
         <methods>
           <include name="afterClass"/>
           <include name="Aprovar"/>
+=======
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades">
+        <methods>
+          <include name="criar"/>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

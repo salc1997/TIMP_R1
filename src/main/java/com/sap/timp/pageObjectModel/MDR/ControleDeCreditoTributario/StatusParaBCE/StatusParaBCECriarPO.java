@@ -146,7 +146,7 @@ public class StatusParaBCECriarPO extends TestBaseSteven {
 		aceitar.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de Status para BCE");
+		descricao.sendKeys("Teste de Status para BCE 01");
 		
 		dataVigencia.sendKeys(fechaActual());
 

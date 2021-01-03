@@ -116,8 +116,8 @@ public class MunicipioCriarPO extends TestBaseMassiel{
 		sleep(1000);
 		
 		valor.sendKeys("15");
-		pupulacao.sendKeys("1200");
-		coeficiente.sendKeys("20");
+		pupulacao.sendKeys("1300");
+		coeficiente.sendKeys("30");
 		dataVigencia.sendKeys(fechaActual());
 		mesCredito.click();
 		sleep(1000);

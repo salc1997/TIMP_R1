@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
@@ -21,15 +22,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades">
+      <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
         <methods>
-          <include name="ingresar"/>
-          <include name="mdrEntrar"/>
-          <include name="criar"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> refs/heads/Cristhian
@@ -39,10 +40,17 @@
     <classes>
       <class name="com.timp.test.DFG.AN3.AN3Funcionalidades">
         <methods>
+=======
+          <include name="Aprovar"/>
+>>>>>>> refs/heads/Cristhian
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="ExecucaoDFG"/>
           <include name="afterClass"/>
+=======
+>>>>>>> refs/heads/Cristhian
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.AN3.AN3Funcionalidades -->
 =======
@@ -83,6 +91,9 @@
       </class> <!-- com.timp.test.DFG.SPED.ECF.ECFFuncionalidades -->
 >>>>>>> refs/heads/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

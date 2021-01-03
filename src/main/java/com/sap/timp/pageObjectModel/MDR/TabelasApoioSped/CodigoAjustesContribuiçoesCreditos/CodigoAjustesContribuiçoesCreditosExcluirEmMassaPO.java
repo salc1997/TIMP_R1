@@ -112,10 +112,10 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 		tributoO.click();
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		codigo.sendKeys("71");
+		codigo.sendKeys("06");
 		
 		
-		descricao.sendKeys("Teste de código de ajuste 2");
+		descricao.sendKeys("Teste de código de ajuste006");
 		datavigencia.sendKeys(fechaActual());
 		
 		sleep(1000);
@@ -138,10 +138,10 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 		sleep(1000);
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		codigo.sendKeys("77");
+		codigo.sendKeys("09");
 		
 		
-		descricao.sendKeys("Teste de código de ajuste 2");
+		descricao.sendKeys("Teste de código de ajuste 006");
 		datavigencia.sendKeys(fechaActual());
 		
 		

@@ -99,17 +99,17 @@ public class RegistroRFCriarPO extends TestBaseMassiel{
 		
 		sleep(2000);
 		
-		numeroservico.sendKeys("1");
+		numeroservico.sendKeys("001");
 		sleep(1000);
 		String dataAtual = fechaActual();
 		dataAtual = dataAtual.substring(3);
 		periodo.sendKeys(dataAtual);
 		sleep(1000);
-		exportacao.sendKeys("123");
+		exportacao.sendKeys("12345");
 		sleep(1000);
-		recebidoMantido.sendKeys("4900");
+		recebidoMantido.sendKeys("490");
 		sleep(1000);
-		declaracaoImportacao.sendKeys("789");
+		declaracaoImportacao.sendKeys("78910");
 		
 		sleep(2000);
 		gravar.click();

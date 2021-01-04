@@ -19,8 +19,6 @@ import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 public class EFDICMSIPICriarPO extends TestBaseSteven{
 	
 	
-	
-	
 	@FindBy(xpath = "//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]")
 	public WebElement fecharMensagem;
 	

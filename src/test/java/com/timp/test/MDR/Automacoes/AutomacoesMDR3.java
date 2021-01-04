@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassaPO;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
 import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar;
 import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes;
@@ -72,6 +73,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.Agrupador
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoDetalhes;
@@ -82,14 +84,17 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIP
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
@@ -109,6 +114,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeA
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroDetalhes;
@@ -223,6 +229,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	AgrupadorDeCFOPEditar agrupadorDeCFOPEditar;
 	AgrupadorDeCFOPExcluir agrupadorDeCFOPExcluir;
 	AgrupadorDeCFOPVisualizar agrupadorDeCFOPVisualizar;
+	AgrupadorDeCFOPExcluirEmMassa agrupadorDeCFOPExcluirEmMassa;
 
 	// Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios
 	// por Estado / IBGE
@@ -239,6 +246,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	CodigoDeMotivosDeAjustesCriar codigoDeMotivosDeAjustesCriar;
 	CodigoDeMotivosDeAjustesEditar codigoDeMotivosDeAjustesEditar;
 	CodigoDeMotivosDeAjustesExcluir codigoDeMotivosDeAjustesExcluir;
+	CodigoDeMotivosDeAjustesExcluirEmMassa codigoDeMotivosDeAjustesExcluirEmMassa;
 
 	// Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas
 
@@ -247,6 +255,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	CodigoDeOutrasSaidasEditar codigoDeOutrasSaidasEditar;
 	CodigoDeOutrasSaidasExcluir codigoDeOutrasSaidasExcluir;
 	CodigoDeOutrasSaidasVisualizar codigoDeOutrasSaidasVisualizar;
+	CodigoDeOutrasSaidasExcluirEmMassa codigoDeOutrasSaidasExcluirEmMassa;
 
 	// Tabelas Complementares para Obrigações Acessórias > Código DIPAM
 
@@ -255,6 +264,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	CodigoDIPAMEditar codigoDIPAMEditar;
 	CodigoDIPAMExcluir codigoDIPAMExcluir;
 	CodigoDIPAMVisualizar codigoDIPAMVisualizar;
+	CodigoDIPAMExcluirEmMassa codigoDIPAMExcluirEmMassa;
 
 	// Tabelas Complementares para Obrigações Acessórias > SubItens Válidos
 
@@ -289,7 +299,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	TabelaDeAtribuicaoDeCodigoCFOPEditar tabelaDeAtribuicaoDeCodigoCFOPEditar;
 	TabelaDeAtribuicaoDeCodigoCFOPExcluir tabelaDeAtribuicaoDeCodigoCFOPExcluir;
 	TabelaDeAtribuicaoDeCodigoCFOPVisualizar tabelaDeAtribuicaoDeCodigoCFOPVisualizar;
-
+	TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa;
 	// Tabelas Complementares para Obrigações Acessórias Tabela de Código e Classe
 	// para Quadro
 
@@ -1220,10 +1230,21 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		agrupadorDeCFOPExcluir.excluir();
 		agrupadorDeCFOPExcluir.afterClass();
 
+		}
+
+	@Test(priority = 77)
+	public void agrupadorDeCFOPExcluirEmMassa() {
+
+		agrupadorDeCFOPExcluirEmMassa = new AgrupadorDeCFOPExcluirEmMassa();
+		agrupadorDeCFOPExcluirEmMassa.beforeClass();
+		agrupadorDeCFOPExcluirEmMassa.login();
+		agrupadorDeCFOPExcluirEmMassa.acessarMDR();
+		agrupadorDeCFOPExcluirEmMassa.criar();
+		agrupadorDeCFOPExcluirEmMassa.afterClass();
+
 		System.out.println(
 				"-------------------Tabelas Complementares Para Obrigaçoes Acessorias > Agrupador De CFOP Fin-------------------------");
 	}
-
 	// 78
 
 	// Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios
@@ -1336,6 +1357,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		codigoDeMotivosDeAjustesExcluir.excluir();
 		codigoDeMotivosDeAjustesExcluir.afterClass();
 
+			}
+	
+	@Test(priority = 87)
+	public void codigoDeMotivosDeAjustesExcluirEmMassa() {
+
+		codigoDeMotivosDeAjustesExcluirEmMassa = new CodigoDeMotivosDeAjustesExcluirEmMassa();
+		codigoDeMotivosDeAjustesExcluirEmMassa.beforeClass();
+		codigoDeMotivosDeAjustesExcluirEmMassa.login();
+		codigoDeMotivosDeAjustesExcluirEmMassa.acessarMDR();
+		codigoDeMotivosDeAjustesExcluirEmMassa.criar();
+		codigoDeMotivosDeAjustesExcluirEmMassa.afterClass();
+
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes Fin-------------------------");
 	}
@@ -1405,6 +1438,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		codigoDeOutrasSaidasExcluir.excluir();
 		codigoDeOutrasSaidasExcluir.afterClass();
 
+			}
+	
+	@Test(priority = 95)
+	public void codigoDeOutrasSaidasExcluirEmMassa() {
+
+		codigoDeOutrasSaidasExcluirEmMassa = new CodigoDeOutrasSaidasExcluirEmMassa();
+		codigoDeOutrasSaidasExcluirEmMassa.beforeClass();
+		codigoDeOutrasSaidasExcluirEmMassa.login();
+		codigoDeOutrasSaidasExcluirEmMassa.acessarMDR();
+		codigoDeOutrasSaidasExcluirEmMassa.criar();
+		codigoDeOutrasSaidasExcluirEmMassa.afterClass();
+
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Código de Outras Saídas Fin-------------------------");
 	}
@@ -1473,6 +1518,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		codigoDIPAMExcluir.acessarMDR();
 		codigoDIPAMExcluir.excluir();
 		codigoDIPAMExcluir.afterClass();
+
+		}
+	
+	@Test(priority = 101)
+	public void codigoDIPAMExcluirEmMassa() {
+
+		codigoDIPAMExcluirEmMassa = new CodigoDIPAMExcluirEmMassa();
+		codigoDIPAMExcluirEmMassa.beforeClass();
+		codigoDIPAMExcluirEmMassa.login();
+		codigoDIPAMExcluirEmMassa.acessarMDR();
+		codigoDIPAMExcluirEmMassa.criar();
+		codigoDIPAMExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Código DIPAM Fin-------------------------");
@@ -1742,11 +1799,21 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		tabelaDeAtribuicaoDeCodigoCFOPExcluir.acessarMDR();
 		tabelaDeAtribuicaoDeCodigoCFOPExcluir.excluir();
 		tabelaDeAtribuicaoDeCodigoCFOPExcluir.afterClass();
+	}
+
+	@Test(priority = 125)
+	public void tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa() {
+
+		tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa = new TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa.beforeClass();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa.login();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa.acessarMDR();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa.criar();
+		tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Atribuição de Código CFOP / Código de Ajuste para Obrigação Fin-------------------------");
 	}
-
 	// 126
 
 	// Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe

@@ -310,7 +310,7 @@ public class DeterminacaoDeTipoDeCondicaoExcluirMassaPO extends TestBaseCristhia
 			sucesso = false;
 		}
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 	}

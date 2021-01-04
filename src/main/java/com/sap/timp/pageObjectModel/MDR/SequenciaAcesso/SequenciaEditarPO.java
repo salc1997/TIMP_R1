@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
+import net.bytebuddy.asm.Advice.Return;
+
 public class SequenciaEditarPO extends TestBaseEliel{
 	
 	
@@ -47,7 +49,7 @@ public class SequenciaEditarPO extends TestBaseEliel{
 	
 	
 	
-	public void editar() {
+	public boolean editar() {
 		
 		
 		//Actions action = new Actions(driver);
@@ -87,7 +89,8 @@ public class SequenciaEditarPO extends TestBaseEliel{
 		descricao.clear();
 		sleep(1000);
 		//inseri novo texto no campo descriçao
-		descricao.sendKeys("detalhamento");
+		String enviar="detalhamento";
+		descricao.sendKeys(enviar);
 		//grava
 		sleep(1000);
 		gravar.click();
@@ -105,8 +108,9 @@ public class SequenciaEditarPO extends TestBaseEliel{
 		attributeToBeXpath("//div[@id=\"description\"]/div/div", "class", "base-input  required type1");
 		//verifica se o valor inserido consta no relatório
 		String texto1 = descricao.getAttribute("value");
-		boolean text= texto1.contains(texto1);
-		System.out.println(text);
+		boolean sucesso= texto1.contains(enviar);
+		
+		System.out.println(sucesso);
 		sleep(1000);
 		//volta com o campo modificado
 		descricao.clear();
@@ -119,8 +123,10 @@ public class SequenciaEditarPO extends TestBaseEliel{
 		sleep(2000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		System.out.println(sucesso);
+		return sucesso;
+		
 	}
-	
 
 
 }

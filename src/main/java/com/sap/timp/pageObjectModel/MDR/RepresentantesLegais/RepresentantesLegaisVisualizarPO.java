@@ -176,7 +176,7 @@ public class RepresentantesLegaisVisualizarPO extends TestBaseEliel {
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(nomevisualizar.equals(nomeeditar));
 		sucesso.add(emailvisualizar.equals(emaileditar));
-	
+		System.out.println(sucesso);
 		return sucesso;	
 
 	

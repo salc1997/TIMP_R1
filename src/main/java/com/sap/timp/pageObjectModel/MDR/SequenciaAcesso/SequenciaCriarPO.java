@@ -201,7 +201,7 @@ public class SequenciaCriarPO extends TestBaseEliel{
 			sucesso = false;
 		}
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 
 	}

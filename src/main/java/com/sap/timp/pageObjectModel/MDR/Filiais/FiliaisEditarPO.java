@@ -108,7 +108,7 @@ public class FiliaisEditarPO extends TestBaseSteven {
 		
 		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		

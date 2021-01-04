@@ -128,7 +128,7 @@ public class DeterminacaoDeTipoDeCondicaoEditarPO extends TestBaseEliel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		System.out.println(sucesso);
 		
 		return sucesso;
 	}	

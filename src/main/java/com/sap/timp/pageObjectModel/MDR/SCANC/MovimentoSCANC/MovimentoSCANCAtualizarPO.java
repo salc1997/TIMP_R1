@@ -92,7 +92,7 @@ public class MovimentoSCANCAtualizarPO extends TestBaseKenssy{
 			sucesso.add(false);
 		}
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 	}

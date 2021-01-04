@@ -75,7 +75,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//li[@id][text()=\"7519 - TA-TESTE (Complemento BRE - N4) - 1\"]")
 	public WebElement opcaoleiautereferenciatq1;
 	
-	@FindBy(xpath = "//li[@id][text()=\"395 - TA-TESTE (Complemento BRE - N4) - 1\"]")
+	@FindBy(xpath = "//li[@id][text()=\"347 - TA-TESTE (Complemento BRE - N4) - 1\"]")
 	public WebElement opcaoleiautereferenciatp1;
 	
 	@FindBy(xpath = "//li[@id][text()=\"141 - TA-TESTE (Complemento BRE - N4) - 1\"]")
@@ -93,7 +93,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//li[@id][text()=\"7520 - TA-TESTE  (Complemento BRE - N4) - 2\"]")
 	public WebElement opcaoleiautecomparacaotq1;
 	
-	@FindBy(xpath = "//li[@id][text()=\"396 - TA-TESTE (Complemento BRE - N4) - 2\"]")
+	@FindBy(xpath = "//li[@id][text()=\"348 - TA-TESTE  (Complemento BRE - N4) - 2\"]")
 	public WebElement opcaoleiautecomparacaotp1;
 	
 	@FindBy(xpath = "//li[@id][text()=\"143 - TA-TESTE (Complemento BRE - N4) - 2\"]")

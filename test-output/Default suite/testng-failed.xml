@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -8,15 +11,30 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
+=======
+      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="criar"/>
+=======
+          <include name="afterClass"/>
+          <include name="lixeira"/>
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
+=======
+      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
@@ -38,11 +56,21 @@
 <<<<<<< HEAD
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
       <class name="com.timp.test.DFG.AN3.AN3Funcionalidades">
         <methods>
+<<<<<<< HEAD
+          <include name="excluirDFG"/>
+          <include name="criar"/>
+          <include name="excluirDFGConf"/>
+          <include name="criarPastas"/>
+          <include name="moverPasta"/>
+          <include name="editarPasta"/>
+          <include name="excluirPasta"/>
+=======
 =======
           <include name="Aprovar"/>
 <<<<<<< HEAD
@@ -73,9 +101,12 @@
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.CriarCopia -->
 =======
+=======
+>>>>>>> refs/remotes/origin/Eliel
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento">
         <methods>
           <include name="gravarAN3"/>
@@ -103,11 +134,36 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
       <class name="com.timp.test.DFG.SPED.ECF.ECFFuncionalidades">
+=======
+      <class name="com.timp.test.ATR.AcessarATR">
+>>>>>>> refs/remotes/origin/Eliel
         <methods>
-          <include name="afterClass"/>
+          <include name="ATREntrar"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
           <include name="editar"/>
+<<<<<<< HEAD
+          <include name="beforeClass"/>
+          <include name="excluirBRE"/>
+          <include name="publicoyPrivado"/>
+          <include name="criarAN3Pasta2"/>
+          <include name="informacao"/>
+          <include name="Arquivos"/>
+          <include name="afterClass"/>
+          <include name="favorito"/>
+          <include name="AN3"/>
+=======
+=======
+          <include name="login"/>
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Eliel
+>>>>>>> refs/remotes/origin/master
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.DFG.AN3.AN3Funcionalidades -->
+=======
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED.ECF.ECFFuncionalidades -->
 >>>>>>> refs/heads/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -120,7 +176,16 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Cristhian
+<<<<<<< HEAD
+>>>>>>> refs/heads/master
+=======
+=======
+      </class> <!-- com.timp.test.ATR.AcessarATR -->
+>>>>>>> refs/remotes/origin/Eliel
+>>>>>>> refs/remotes/origin/master
 >>>>>>> refs/heads/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+=======
+>>>>>>> refs/heads/Fernando

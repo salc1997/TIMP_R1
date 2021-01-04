@@ -90,11 +90,8 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-<<<<<<< HEAD
-		driver.get(tq1);
-=======
 		driver.get(tc2);
->>>>>>> refs/heads/Cristhian
+
 		return driver;
 	}
 	

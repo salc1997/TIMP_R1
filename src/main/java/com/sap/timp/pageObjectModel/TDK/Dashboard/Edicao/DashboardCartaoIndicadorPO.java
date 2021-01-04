@@ -38,7 +38,8 @@ public class DashboardCartaoIndicadorPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@id][text()=\"Ajuste\"][1]")
 	public WebElement opcaogrupo;
 	
-	
+	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
+	public WebElement opcaogrupotp1;
 	
 	@FindBy(xpath = "//div[@id=\"select-structure\"]/div/div[2]")
 	public WebElement estruturadedados;
@@ -118,25 +119,36 @@ public class DashboardCartaoIndicadorPO extends TestBaseEliel{
 		cartaoindicador.click();
 		sleep(2000);
 		
-		waitExpectElement(criarwidget);
-		sleep(20000);
+		//waitExpectElement(criarwidget);
+	//	sleep(20000);
 		criarwidget.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		waitExpectElement(cabecalho);
+		sleep(2000);
 		cabecalho.sendKeys("Cabecalho");
 		sleep(2000);
+		String URL = driver.getCurrentUrl();
+		
 		grupoestrutura.click();
 		sleep(2000);
-		opcaogrupo.click();
-		sleep(2000);
+		if((URL.contains("tp1"))){
+			opcaogrupotp1.click();
+			sleep(2000);
+		}else {
+			opcaogrupo.click();
+			sleep(2000);
+		}
+		
 		attributeToBeXpath("//div[@id=\"select-structure\"]/div", "class", "base-autocomplete required");
 		sleep(4000);
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();
+		sleep(2000);
+		waitExpectElement(conteudo);
 		sleep(2000);
 		conteudo.click();
 		sleep(2000);

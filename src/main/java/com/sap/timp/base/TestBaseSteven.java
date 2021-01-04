@@ -90,11 +90,8 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-<<<<<<< HEAD
-		driver.get(tq1);
-=======
 		driver.get(tc2);
->>>>>>> refs/heads/Cristhian
+
 		return driver;
 	}
 	
@@ -517,6 +514,47 @@ public class TestBaseSteven {
 		return idReturn;
 
 	}
+	
+	public void idInserir5(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR5", idRegistro);
+
+	}
+
+	public String idObter5() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR5", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	
+	public void idInserir6(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR6", idRegistro);
+
+	}
+
+	public String idObter6() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR6", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
 
 	public void quit() {
 		driver.close();
@@ -595,6 +633,7 @@ public class TestBaseSteven {
 	public String Detalhes = "As informações não são as esperadas";
 	
 	public String Atualizar = "Não foi possivel atualizar os registros";
+	public String Favoritos = "Não foi possivel mandar o registro para favoritos";
 	
 	
 	//BCB

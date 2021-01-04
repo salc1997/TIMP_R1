@@ -41,6 +41,9 @@ public class S1250GerarDadosDoEventoPO extends TestBaseFernando{
 
 	@FindBy(xpath = "//div[contains(@class,\"layout-select\")]/div/div[2]")
 	public WebElement cboLeiaute;
+	
+	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and text()=\"ID7673-E-SOCIAL(GERAR S1250) - TA - NÃO MEXER\"]")
+	public WebElement opcionLeiaute;
 
 	@FindBy(xpath = "//div[contains(@class,\"version-select\")]/div/div/div[2]")
 	public WebElement cboVersaoLeiaute;
@@ -206,7 +209,7 @@ public class S1250GerarDadosDoEventoPO extends TestBaseFernando{
 
 		cboLeiaute.click();
 		sleep(1000);
-		opcionCombo.click();
+		opcionLeiaute.click();
 		sleep(1000);
 
 		cboVersaoLeiaute.click();

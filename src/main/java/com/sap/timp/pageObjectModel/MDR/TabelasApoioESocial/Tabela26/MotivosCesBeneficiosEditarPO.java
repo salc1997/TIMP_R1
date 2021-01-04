@@ -88,7 +88,7 @@ public class MotivosCesBeneficiosEditarPO extends TestBaseFernando{
 		
 		boolean sucesso = false;
 		sucesso = validadeEditada.equals(validadeDeNuevo); // Si es igual significa que si fue editado y que se mantiene el valor al actualizar la pagina
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}
 }

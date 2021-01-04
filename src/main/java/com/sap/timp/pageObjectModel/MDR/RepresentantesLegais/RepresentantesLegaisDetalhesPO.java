@@ -145,7 +145,7 @@ public class RepresentantesLegaisDetalhesPO extends TestBaseEliel {
 		sucesso.add(emailvisualizar.equals(emaildetalhes));
 		sucesso.add(logadourovisualizar.equals(logodourodetalhes));
 		//sucesso.add(tipovisualizar.equals(tipodetalhes));
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}
 

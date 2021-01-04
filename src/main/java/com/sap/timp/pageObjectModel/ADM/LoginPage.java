@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.sap.timp.base.TestBaseSteven;
 
 public class LoginPage extends TestBaseSteven{
-	
+	 
 	JavascriptExecutor js = ((JavascriptExecutor) driver);
 	WebDriverWait wait = new WebDriverWait(driver, 15000);
 	

@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-29T16:17:41Z" name="Default suite" finished-at="2020-12-29T16:18:49Z" duration-ms="67676">
+  <suite started-at="2020-12-31T15:55:17Z" name="Default suite" finished-at="2020-12-31T15:57:32Z" duration-ms="135597">
     <groups>
     </groups>
-    <test started-at="2020-12-29T16:17:41Z" name="Default test" finished-at="2020-12-29T16:18:49Z" duration-ms="67676">
-      <class name="com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID@6892b3b6]" started-at="2020-12-29T13:17:41Z" name="beforeClass" finished-at="2020-12-29T13:18:02Z" duration-ms="20464" status="PASS">
+    <test started-at="2020-12-31T15:55:17Z" name="Default test" finished-at="2020-12-31T15:57:32Z" duration-ms="135597">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:55:17Z" name="beforeClass" finished-at="2020-12-31T12:55:31Z" duration-ms="14207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID@6892b3b6]" started-at="2020-12-29T13:18:02Z" name="login" finished-at="2020-12-29T13:18:13Z" duration-ms="11808" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:55:31Z" name="login" finished-at="2020-12-31T12:55:39Z" duration-ms="8331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="TBDEntrar()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID@6892b3b6]" started-at="2020-12-29T13:18:13Z" name="TBDEntrar" finished-at="2020-12-29T13:18:30Z" duration-ms="16587" status="PASS">
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:55:39Z" name="acessarMDR" finished-at="2020-12-31T12:56:03Z" duration-ms="24046" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TBDEntrar -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID@6892b3b6]" started-at="2020-12-29T13:18:30Z" name="filtro" finished-at="2020-12-29T13:18:49Z" duration-ms="18798" status="PASS">
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:56:03Z" name="criar" finished-at="2020-12-31T12:57:32Z" duration-ms="88944" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID@6892b3b6]" started-at="2020-12-29T13:18:49Z" name="afterClass" finished-at="2020-12-29T13:18:49Z" duration-ms="1" status="PASS">
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:57:32Z" name="afterClass" finished-at="2020-12-31T12:57:32Z" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorID -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

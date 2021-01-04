@@ -7,15 +7,30 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
+=======
+      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="criar"/>
+=======
+          <include name="afterClass"/>
+          <include name="lixeira"/>
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
+=======
+      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
@@ -117,3 +132,5 @@
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+=======
+>>>>>>> refs/heads/Fernando

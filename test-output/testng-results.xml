@@ -2,26 +2,50 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <testng-results skipped="0" failed="1" total="3" passed="2">
+=======
+<testng-results total="11" passed="11" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="118557" started-at="2020-10-21T02:34:38Z" finished-at="2020-10-21T02:36:37Z">
+=======
+  <suite started-at="2021-01-04T05:15:06Z" name="Default suite" finished-at="2021-01-04T05:23:40Z" duration-ms="514472">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="118557" started-at="2020-10-21T02:34:38Z" finished-at="2020-10-21T02:36:37Z">
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar@5622fdf]" name="beforeClass" is-config="true" duration-ms="16294" started-at="2020-10-20T23:34:38Z" finished-at="2020-10-20T23:34:55Z">
+=======
+    <test started-at="2021-01-04T05:15:06Z" name="Default test" finished-at="2021-01-04T05:23:40Z" duration-ms="514472">
+      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:15:06Z" name="beforeClass" finished-at="2021-01-03T23:15:21Z" duration-ms="15471" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar@5622fdf]" name="login" duration-ms="10128" started-at="2020-10-20T23:34:55Z" finished-at="2020-10-20T23:35:05Z">
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:15:21Z" name="ingresar" finished-at="2021-01-03T23:15:31Z" duration-ms="9946" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar@5622fdf]" name="acessarMDR" duration-ms="29363" started-at="2020-10-20T23:35:05Z" finished-at="2020-10-20T23:35:34Z">
+=======
+        </test-method> <!-- ingresar -->
+        <test-method signature="dfgEntrar()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:15:31Z" name="dfgEntrar" finished-at="2021-01-03T23:15:50Z" duration-ms="18920" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar@5622fdf]" name="criar" duration-ms="62746" started-at="2020-10-20T23:35:34Z" finished-at="2020-10-20T23:36:37Z">
           <exception class="java.lang.AssertionError">
@@ -61,13 +85,59 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+        </test-method> <!-- dfgEntrar -->
+        <test-method signature="criarNovoLeiaute()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:15:50Z" name="criarNovoLeiaute" finished-at="2021-01-03T23:17:26Z" duration-ms="95654" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
+=======
+        </test-method> <!-- criarNovoLeiaute -->
+        <test-method signature="registros()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:17:26Z" name="registros" finished-at="2021-01-03T23:18:13Z" duration-ms="47497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registros -->
+        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:18:13Z" name="criarConfiguracao" finished-at="2021-01-03T23:19:13Z" duration-ms="59988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="executar()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:19:13Z" name="executar" finished-at="2021-01-03T23:20:49Z" duration-ms="96119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar -->
+        <test-method signature="idPublicoPrivado()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:20:49Z" name="idPublicoPrivado" finished-at="2021-01-03T23:21:18Z" duration-ms="28896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- idPublicoPrivado -->
+        <test-method signature="favorito()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:21:18Z" name="favorito" finished-at="2021-01-03T23:21:56Z" duration-ms="37591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- favorito -->
+        <test-method signature="informacao()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:21:56Z" name="informacao" finished-at="2021-01-03T23:22:05Z" duration-ms="8910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- informacao -->
+        <test-method signature="oficializarArquivo()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:22:05Z" name="oficializarArquivo" finished-at="2021-01-03T23:22:23Z" duration-ms="18728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oficializarArquivo -->
+        <test-method signature="lixeira()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:22:23Z" name="lixeira" finished-at="2021-01-03T23:23:40Z" duration-ms="76722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lixeira -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:23:40Z" name="afterClass" finished-at="2021-01-03T23:23:40Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
@@ -795,3 +865,5 @@ Session ID: eb477cc56acad423d375c25cfdfd41aa
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+=======
+>>>>>>> refs/heads/Fernando

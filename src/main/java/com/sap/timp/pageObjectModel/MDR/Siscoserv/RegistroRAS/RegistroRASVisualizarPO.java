@@ -150,6 +150,7 @@ public ArrayList<Boolean> visualizar() {
 		
 		editar.click();
 		sleep(2000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 			

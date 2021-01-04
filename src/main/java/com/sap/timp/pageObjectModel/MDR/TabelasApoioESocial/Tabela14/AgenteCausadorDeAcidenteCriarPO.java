@@ -85,9 +85,9 @@ public class AgenteCausadorDeAcidenteCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("111");
+		codigo.sendKeys("007");
 		sleep(1000);
-		descricao.sendKeys("Teste Parte do Corpo Atingida");
+		descricao.sendKeys("Teste Parte do Corpo Atingida 7");
 		sleep(1000);
 		
 		String data = fechaActual();

@@ -49,7 +49,7 @@ public class MovimentoSCANCFiltroIdPO extends TestBaseSteven {
 		String idBusqueda = id.getText();
 
 		boolean sucesso = idRegistro.equals(idBusqueda);
-
+		System.out.println(sucesso);
 		return sucesso;
 
 	}

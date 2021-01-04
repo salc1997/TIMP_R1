@@ -113,6 +113,7 @@ public class DeterminacaoDeRelevanciaPorRegraEditarPO extends TestBaseEliel{
 		editar.click();
 		
 		sleep(2000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -134,7 +135,8 @@ public class DeterminacaoDeRelevanciaPorRegraEditarPO extends TestBaseEliel{
 		
 
 		driver.navigate().refresh();
-	
+		sleep(2000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

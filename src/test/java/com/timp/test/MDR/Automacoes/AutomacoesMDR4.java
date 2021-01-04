@@ -155,6 +155,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeC
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCreditosPorObrigacao.TabelaDeCreditosPorObrigacaoDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCreditosPorObrigacao.TabelaDeCreditosPorObrigacaoEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCreditosPorObrigacao.TabelaDeCreditosPorObrigacaoExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCreditosPorObrigacao.TabelaDeCreditosPorObrigacaoExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCreditosPorObrigacao.TabelaDeCreditosPorObrigacaoVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Criar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro10.TabelaDeDetalhamentosParaRegistro10Detalhes;
@@ -165,21 +166,25 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeD
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11Detalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11Editar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11Excluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11ExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11Visualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Criar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Detalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Editar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Excluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12ExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeEstoqueParaRegistro12.TabelaDeEstoqueParaRegistro12Visualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosDetalhes;
@@ -199,6 +204,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOut
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoDetalhes;
@@ -209,6 +215,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaRec
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosDetalhes;
@@ -240,6 +247,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeCreditosPorObrigacaoEditar tabelaDeCreditosPorObrigacaoEditar;
 	TabelaDeCreditosPorObrigacaoExcluir tabelaDeCreditosPorObrigacaoExcluir;
 	TabelaDeCreditosPorObrigacaoVisualizar tabelaDeCreditosPorObrigacaoVisualizar;
+	TabelaDeCreditosPorObrigacaoExcluirEmMassa tabelaDeCreditosPorObrigacaoExcluirEmMassa;
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamento
 	// Para Registro 10
@@ -256,7 +264,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeDetalhamentosParaRegistro11Editar tabelaDeDetalhamentosParaRegistro11Editar;
 	TabelaDeDetalhamentosParaRegistro11Excluir tabelaDeDetalhamentosParaRegistro11Excluir;
 	TabelaDeDetalhamentosParaRegistro11Visualizar tabelaDeDetalhamentosParaRegistro11Visualizar;
-
+	TabelaDeDetalhamentosParaRegistro11ExcluirEmMassa tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa;
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para
 	// registro 12
 	TabelaDeEstoqueParaRegistro12Criar tabelaDeEstoqueParaRegistro12Criar;
@@ -264,6 +272,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeEstoqueParaRegistro12Detalhes tabelaDeEstoqueParaRegistro12Detalhes;
 	TabelaDeEstoqueParaRegistro12Excluir tabelaDeEstoqueParaRegistro12Excluir;
 	TabelaDeEstoqueParaRegistro12Visualizar tabelaDeEstoqueParaRegistro12Visualizar;
+	TabelaDeEstoqueParaRegistro12ExcluirEmMassa tabelaDeEstoqueParaRegistro12ExcluirEmMassa;
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de isençoes
 
@@ -272,6 +281,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeIsencoesEditar tabelaDeIsencoesEditar;
 	TabelaDeIsencoesExcluir tabelaDeIsencoesExcluir;
 	TabelaDeIsencoesVisualizar tabelaDeIsencoesVisualizar;
+	TabelaDeIsencoesExcluirEmMassa tabelaDeIsencoesExcluirEmMassa;
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos
 
@@ -280,6 +290,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeOutrosCreditosEditar tabelaDeOutrosCreditosEditar;
 	TabelaDeOutrosCreditosExcluir tabelaDeOutrosCreditosExcluir;
 	TabelaDeOutrosCreditosVisualizar tabelaDeOutrosCreditosVisualizar;
+	TabelaDeOutrosCreditosExcluirEmMassa tabelaDeOutrosCreditosExcluirEmMassa;
 	
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Produtos
 
@@ -308,6 +319,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaOutosDebitosEditar tabelaOutosDebitosEditar;
 	TabelaOutrosDebitosExcluir tabelaOutrosDebitosExcluir;
 	TabelaOutrosDebitosVisualizar tabelaOutrosDebitosVisualizar;
+	TabelaOutrosDebitosExcluirEmMassa tabelaOutrosDebitosExcluirEmMassa;
 
 	// Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas
 	// (Credito Fiscal Antecipado)
@@ -325,6 +337,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaReceitasPermitidasEditar tabelaReceitasPermitidasEditar;
 	TabelaReceitasPermitidasExcluir tabelaReceitasPermitidasExcluir;
 	TabelaReceitasPermitidasVisualizar tabelaReceitasPermitidasVisualizar;
+	TabelaReceitasPermitidasExcluirEmMassa tabelaReceitasPermitidasExcluirEmMassa;
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços
 
@@ -657,6 +670,17 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeCreditosPorObrigacaoExcluir.acessarMDR();
 		tabelaDeCreditosPorObrigacaoExcluir.excluir();
 		tabelaDeCreditosPorObrigacaoExcluir.afterClass();
+			}
+	
+	@Test(priority = 11)
+	public void tabelaDeCreditosPorObrigacaoExcluirEmMassa() {
+
+		tabelaDeCreditosPorObrigacaoExcluirEmMassa = new TabelaDeCreditosPorObrigacaoExcluirEmMassa();
+		tabelaDeCreditosPorObrigacaoExcluirEmMassa.beforeClass();
+		tabelaDeCreditosPorObrigacaoExcluirEmMassa.login();
+		tabelaDeCreditosPorObrigacaoExcluirEmMassa.acessarMDR();
+		tabelaDeCreditosPorObrigacaoExcluirEmMassa.criar();
+		tabelaDeCreditosPorObrigacaoExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de credito por obrigaçao Fim-------------------------");
 	}
@@ -790,6 +814,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeDetalhamentosParaRegistro11Excluir.acessarMDR();
 		tabelaDeDetalhamentosParaRegistro11Excluir.excluir();
 		tabelaDeDetalhamentosParaRegistro11Excluir.afterClass();
+		
+	}
+	
+	@Test(priority = 23)
+	public void tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa() {
+
+		tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa = new TabelaDeDetalhamentosParaRegistro11ExcluirEmMassa();
+		tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa.beforeClass();
+		tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa.login();
+		tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa.acessarMDR();
+		tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa.criar();
+		tabelaDeDetalhamentosParaRegistro11ExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de Detalhamentos Para Registro 11 Fim-------------------------");
 
@@ -857,6 +893,17 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeEstoqueParaRegistro12Excluir.acessarMDR();
 		tabelaDeEstoqueParaRegistro12Excluir.excluir();
 		tabelaDeEstoqueParaRegistro12Excluir.afterClass();
+			}
+	
+	@Test(priority = 29)
+	public void tabelaDeEstoqueParaRegistro12ExcluirEmMassa() {
+
+		tabelaDeEstoqueParaRegistro12ExcluirEmMassa = new TabelaDeEstoqueParaRegistro12ExcluirEmMassa();
+		tabelaDeEstoqueParaRegistro12ExcluirEmMassa.beforeClass();
+		tabelaDeEstoqueParaRegistro12ExcluirEmMassa.login();
+		tabelaDeEstoqueParaRegistro12ExcluirEmMassa.acessarMDR();
+		tabelaDeEstoqueParaRegistro12ExcluirEmMassa.criar();
+		tabelaDeEstoqueParaRegistro12ExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de estoque para registro 12 Fim-------------------------");
 	}
@@ -922,6 +969,17 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeIsencoesExcluir.acessarMDR();
 		tabelaDeIsencoesExcluir.excluir();
 		tabelaDeIsencoesExcluir.afterClass();
+	}
+	
+	@Test(priority = 35)
+	public void tabelaDeIsencoesExcluirEmMassa() {
+
+		tabelaDeIsencoesExcluirEmMassa = new TabelaDeIsencoesExcluirEmMassa();
+		tabelaDeIsencoesExcluirEmMassa.beforeClass();
+		tabelaDeIsencoesExcluirEmMassa.login();
+		tabelaDeIsencoesExcluirEmMassa.acessarMDR();
+		tabelaDeIsencoesExcluirEmMassa.criar();
+		tabelaDeIsencoesExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de inseçoes Fim-------------------------");
 
@@ -987,6 +1045,17 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeOutrosCreditosExcluir.acessarMDR();
 		tabelaDeOutrosCreditosExcluir.excluir();
 		tabelaDeOutrosCreditosExcluir.afterClass();
+		}
+	
+	@Test(priority = 41)
+	public void tabelaDeOutrosCreditosExcluirEmMassa() {
+
+		tabelaDeOutrosCreditosExcluirEmMassa = new TabelaDeOutrosCreditosExcluirEmMassa();
+		tabelaDeOutrosCreditosExcluirEmMassa.beforeClass();
+		tabelaDeOutrosCreditosExcluirEmMassa.login();
+		tabelaDeOutrosCreditosExcluirEmMassa.acessarMDR();
+		tabelaDeOutrosCreditosExcluirEmMassa.criar();
+		tabelaDeOutrosCreditosExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros creditos Fim-------------------------");
 	}
@@ -1231,6 +1300,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaOutrosDebitosExcluir.acessarMDR();
 		tabelaOutrosDebitosExcluir.excluir();
 		tabelaOutrosDebitosExcluir.afterClass();
+		
+	}
+	
+	@Test(priority = 65)
+	public void tabelaOutrosDebitosExcluirEmMassa() {
+
+		tabelaOutrosDebitosExcluirEmMassa = new TabelaOutrosDebitosExcluirEmMassa();
+		tabelaOutrosDebitosExcluirEmMassa.beforeClass();
+		tabelaOutrosDebitosExcluirEmMassa.login();
+		tabelaOutrosDebitosExcluirEmMassa.acessarMDR();
+		tabelaOutrosDebitosExcluirEmMassa.criar();
+		tabelaOutrosDebitosExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias > Tabela de outros debitos fim-------------------------");
 
@@ -1365,6 +1446,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasPermitidasExcluir.acessarMDR();
 		tabelaReceitasPermitidasExcluir.excluir();
 		tabelaReceitasPermitidasExcluir.afterClass();
+		
+	}
+	
+	@Test(priority = 77)
+	public void tabelaReceitasPermitidasExcluirEmMassa() {
+
+		tabelaReceitasPermitidasExcluirEmMassa = new TabelaReceitasPermitidasExcluirEmMassa();
+		tabelaReceitasPermitidasExcluirEmMassa.beforeClass();
+		tabelaReceitasPermitidasExcluirEmMassa.login();
+		tabelaReceitasPermitidasExcluirEmMassa.acessarMDR();
+		tabelaReceitasPermitidasExcluirEmMassa.criar();
+		tabelaReceitasPermitidasExcluirEmMassa.afterClass();
 		System.out.println(
 				"-------------------Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas permitidas Fim-------------------------");
 

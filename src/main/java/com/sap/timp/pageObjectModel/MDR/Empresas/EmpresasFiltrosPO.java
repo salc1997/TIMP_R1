@@ -141,7 +141,7 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 			sucesso.add(data.get(0).equals(empresa));
 			j= j+1;
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		
@@ -226,7 +226,7 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 			System.out.println(municipio);
 			sucesso.add(data.get(0).equals(municipio));
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		
@@ -314,7 +314,7 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 			System.out.println(dataFinal);
 			sucesso.add(data.get(0).equals(dataFinal));
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		

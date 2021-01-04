@@ -91,7 +91,7 @@ public class TabelaDeApoioECFCriarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste Tabela de Apoio ECF");
+		descricao.sendKeys("Teste Tabela de Apoio ECF 07");
 		
 		versaoleiaute.click();
 		

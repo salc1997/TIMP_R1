@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
@@ -109,8 +110,12 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+<testng-results total="2" passed="2" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Eliel
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="156893" started-at="2020-12-28T22:23:57Z" finished-at="2020-12-28T22:26:34Z">
@@ -150,8 +155,12 @@
 =======
   <suite started-at="2021-01-03T22:12:15Z" name="Default suite" finished-at="2021-01-03T22:14:15Z" duration-ms="120385">
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-01-04T12:52:20Z" name="Default suite" finished-at="2021-01-04T12:53:02Z" duration-ms="41959">
+>>>>>>> refs/remotes/origin/Eliel
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="156893" started-at="2020-12-28T22:23:57Z" finished-at="2020-12-28T22:26:34Z">
@@ -209,9 +218,15 @@
       <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFAprovarC_JOB@77f80c04]" started-at="2021-01-03T19:12:15Z" name="beforeClass" finished-at="2021-01-03T19:12:37Z" duration-ms="21649" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-01-04T12:52:20Z" name="Default test" finished-at="2021-01-04T12:53:02Z" duration-ms="41959">
+      <class name="com.timp.test.ATR.AcessarATR">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:52:20Z" name="beforeClass" finished-at="2021-01-04T09:52:36Z" duration-ms="15776" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.AN3.AN3Funcionalidades@f2f2cc1]" name="ingresar" duration-ms="8153" started-at="2020-12-28T16:24:16Z" finished-at="2020-12-28T16:24:24Z">
@@ -224,8 +239,20 @@
           <exception class="org.openqa.selenium.NoSuchWindowException">
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.SPED.ECF.ECFFuncionalidades@8f2ef19]" started-at="2020-12-28T10:01:15Z" name="ingresar" finished-at="2020-12-28T10:01:21Z" duration-ms="6328" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:52:36Z" name="login" finished-at="2021-01-04T09:52:46Z" duration-ms="10602" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="ATREntrar()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:52:46Z" name="ATREntrar" finished-at="2021-01-04T09:53:02Z" duration-ms="15560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATREntrar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:53:02Z" name="afterClass" finished-at="2021-01-04T09:53:02Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ingresar -->
         <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.SPED.ECF.ECFFuncionalidades@8f2ef19]" started-at="2020-12-28T10:01:21Z" name="mdrEntrar" finished-at="2020-12-28T10:01:36Z" duration-ms="14958" status="PASS">
           <reporter-output>
@@ -761,6 +788,10 @@ Session ID: eb477cc56acad423d375c25cfdfd41aa
 =======
       </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.AcessarATR -->
+>>>>>>> refs/remotes/origin/Eliel
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

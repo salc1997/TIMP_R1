@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
@@ -57,9 +58,12 @@
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.CriarCopia -->
 =======
+=======
+>>>>>>> refs/remotes/origin/Eliel
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento">
         <methods>
           <include name="gravarAN3"/>
@@ -87,17 +91,29 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
       <class name="com.timp.test.DFG.SPED.ECF.ECFFuncionalidades">
+=======
+      <class name="com.timp.test.ATR.AcessarATR">
+>>>>>>> refs/remotes/origin/Eliel
         <methods>
-          <include name="afterClass"/>
+          <include name="ATREntrar"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
+=======
+          <include name="login"/>
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Eliel
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED.ECF.ECFFuncionalidades -->
 >>>>>>> refs/heads/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
       </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.ATR.AcessarATR -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

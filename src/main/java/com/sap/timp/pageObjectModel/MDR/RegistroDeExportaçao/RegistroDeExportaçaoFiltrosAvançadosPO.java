@@ -144,7 +144,7 @@ public class RegistroDeExportaçaoFiltrosAvançadosPO extends TestBaseEliel {
 			sucesso.add(data.get(0).equals(empresa));
 			j=j+1;
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 			
@@ -199,7 +199,7 @@ public class RegistroDeExportaçaoFiltrosAvançadosPO extends TestBaseEliel {
 			sucesso.add(data.get(0).equals(filial));
 			j=j+1;
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 			
@@ -255,7 +255,7 @@ public class RegistroDeExportaçaoFiltrosAvançadosPO extends TestBaseEliel {
 			sucesso.add(data.get(0).equals(docnum));
 			j=j+1;
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 			
@@ -310,7 +310,7 @@ public class RegistroDeExportaçaoFiltrosAvançadosPO extends TestBaseEliel {
 			sucesso.add(data.get(0).equals(codigoitem));
 			j=j+1;
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 			
@@ -365,7 +365,7 @@ public class RegistroDeExportaçaoFiltrosAvançadosPO extends TestBaseEliel {
 			sucesso.add(data.get(0).equals(notafiscal));
 			j=j+1;
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 			
@@ -421,7 +421,7 @@ public class RegistroDeExportaçaoFiltrosAvançadosPO extends TestBaseEliel {
 			sucesso.add(data.get(0).equals(chavenfe));
 			j=j+1;
 		}
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 			

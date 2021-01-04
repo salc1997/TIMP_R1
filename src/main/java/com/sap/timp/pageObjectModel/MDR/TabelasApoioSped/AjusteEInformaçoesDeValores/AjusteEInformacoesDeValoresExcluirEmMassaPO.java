@@ -252,7 +252,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassaPO extends TestBaseEliel {
 			sucesso=false;
 		}
 		
-		
+		System.out.println(sucesso);
 		
 		return sucesso;
 	}

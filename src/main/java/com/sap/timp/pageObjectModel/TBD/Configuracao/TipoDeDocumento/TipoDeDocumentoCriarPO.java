@@ -142,16 +142,21 @@ public class TipoDeDocumentoCriarPO extends TestBaseEliel{
 		waitExpectElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
+		System.out.println("Rows:" +rows);
 		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
-		idInserir1(idB);
+		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+		
+		idInserir1(idultimo);
 
 		System.out.println(id);
-		System.out.println(idB);
+		System.out.println(idultimo);
 		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
+		double idBD = convertToDouble(idultimo);
 		
 		boolean sucesso = false;
 		if (idBD > idD) {

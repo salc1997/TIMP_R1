@@ -287,7 +287,7 @@ public class SaldoInicialDiferidoExcluirMassaPO extends TestBaseCristhian {
 			sucesso = false;
 		}
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 	}

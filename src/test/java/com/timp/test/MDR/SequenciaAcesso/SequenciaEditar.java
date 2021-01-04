@@ -47,7 +47,8 @@ public class SequenciaEditar extends TestBaseEliel {
 	@Test(priority = 2)
 	public void Editar() {
 
-		sequenciaEditarPO.editar();
+		boolean sucesso =sequenciaEditarPO.editar();
+		assertTrue(sucesso, Editar);
 
 	}
 

@@ -38,7 +38,7 @@ public class FiliaisVisualizarPO extends TestBaseSteven {
 		invisibilityOfElement("//*[@id=\"right-content\"]/div/div[4]/div/div/div/img");
 		
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}
 	

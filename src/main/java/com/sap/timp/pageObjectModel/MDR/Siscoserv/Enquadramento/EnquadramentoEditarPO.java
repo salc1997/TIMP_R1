@@ -150,7 +150,7 @@ public class EnquadramentoEditarPO extends TestBaseEliel{
 		waitExpectElement(mensagem);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		System.out.println(sucesso);
 		
 		return sucesso;
 	}	

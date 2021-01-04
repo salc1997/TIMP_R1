@@ -43,11 +43,10 @@ public class RelatorioRefinariaGeradosGerarAjustes extends TestBaseFernando{
 
 	@Test(priority = 2)
 	public void criarCampoDeSaida() {	
-		relatorioRefinariaGeradosGerarAjustesPO.gerarAjustes();
-//		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosGerarAjustesPO.gerarAjustes();
-//
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), visualizaçar);
-//		}
+		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosGerarAjustesPO.gerarAjustes();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
 	}
 }

@@ -195,7 +195,7 @@ public class EmprestimosCriarPO extends TestBaseKenssy {
 		prazo.sendKeys("01/12/2020");
 		sleep(2000);
 		
-		paisDoCredor.sendKeys("KENSSY");
+		paisDoCredor.sendKeys("CRISTHIAN");
 		sleep(2000);
 		
 		CidadedoCredor.sendKeys("MEDINA");

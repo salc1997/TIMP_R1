@@ -1,4 +1,4 @@
-package com.timp.test;
+package com.timp.test.TCC;
 
 import static org.testng.Assert.assertTrue;
 
@@ -7,18 +7,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
+import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 
-public class AcessarTAA extends TestBaseFernando{
+public class AcessarTCC extends TestBaseSteven{
 	LoginTC loginTC;
-	AcessarTAAPO acessarTAAPO;
+	AcessarTCCPO acessarTCCPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
-		acessarTAAPO  = new AcessarTAAPO();
+		acessarTCCPO = new AcessarTCCPO();
 	}
 
 	@AfterClass
@@ -33,7 +35,7 @@ public class AcessarTAA extends TestBaseFernando{
 
 	@Test(priority = 2)
 	public void taaEntrar() {
-		boolean sucesso =  acessarTAAPO.acessarTAA();
+		boolean sucesso =  acessarTCCPO.acessarTCC();
 		assertTrue(sucesso, "The element is not present");
 	}
 }

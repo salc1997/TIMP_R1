@@ -7,10 +7,14 @@ import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Locale;
+
 import java.util.Map;
+
+import java.util.prefs.Preferences;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,7 +48,7 @@ public class TestBaseMassiel extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tp1);
 
 	   return driver;
 	}

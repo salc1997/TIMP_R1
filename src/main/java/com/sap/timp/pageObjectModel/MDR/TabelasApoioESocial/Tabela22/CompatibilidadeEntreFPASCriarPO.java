@@ -80,7 +80,7 @@ public class CompatibilidadeEntreFPASCriarPO extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("111");
+		codigo.sendKeys("007");
 		sleep(1000);
 		classificacao.sendKeys("Teste Compatibilidade entre FPAS");
 		sleep(1000);

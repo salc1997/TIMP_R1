@@ -55,15 +55,15 @@ public class  LimiteCompetenciaFiltrosAvansados extends TestBaseMassiel{
 		  assertTrue(empresa .get(i), Filtros);
 	  }
 
-	  ArrayList<Boolean> uf = limiteCompetenciaFiltrosAvansadosPO.Uf();
-	  for (int i = 0; i < uf.size(); i++) {
-		  assertTrue(uf.get(i), Filtros);
-	  }
+	 // ArrayList<Boolean> uf = limiteCompetenciaFiltrosAvansadosPO.Uf();
+	 // for (int i = 0; i < uf.size(); i++) {
+	//	  assertTrue(uf.get(i), Filtros);
+	 // }
 	  
-	  ArrayList<Boolean> filial = limiteCompetenciaFiltrosAvansadosPO.Filial();
-	  for (int i = 0; i < filial.size(); i++) {
-		  assertTrue(filial.get(i), Filtros);
-	  }
+	 // ArrayList<Boolean> filial = limiteCompetenciaFiltrosAvansadosPO.Filial();
+	 // for (int i = 0; i < filial.size(); i++) {
+	//	  assertTrue(filial.get(i), Filtros);
+	 // }
 	  
 	  ArrayList<Boolean> tributo = limiteCompetenciaFiltrosAvansadosPO.Tributo();
 	  for (int i = 0; i < tributo.size(); i++) {

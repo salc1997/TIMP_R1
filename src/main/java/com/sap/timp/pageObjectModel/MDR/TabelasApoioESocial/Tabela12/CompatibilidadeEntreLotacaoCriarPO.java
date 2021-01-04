@@ -85,9 +85,9 @@ public class CompatibilidadeEntreLotacaoCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("12");
+		codigo.sendKeys("007");
 		sleep(1000);
-		descricao.sendKeys("Teste Compatibilidade Entre Lotação");
+		descricao.sendKeys("Teste Compatibilidade Entre Lotaçãon 7");
 		sleep(1000);
 		
 		String data = fechaActual();

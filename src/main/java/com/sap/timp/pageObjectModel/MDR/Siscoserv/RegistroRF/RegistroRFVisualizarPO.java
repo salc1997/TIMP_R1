@@ -106,8 +106,8 @@ public class RegistroRFVisualizarPO extends TestBaseSteven {
 		String empresaV1 = empresaV.getText();
 		String numeroServV1 = numeroServV.getText();
 		String periodoV1 = periodV.getText();
-		String numeroRegistroV1 = numeroRegistroV.getText();
-		String valorRecibidoV1 = valorRecibidoV.getText();
+//		String numeroRegistroV1 = numeroRegistroV.getText();
+//		String valorRecibidoV1 = valorRecibidoV.getText();
 		String numeroDeclaracaoV1 = numeroDeclaracaoV.getText();
 
 
@@ -115,8 +115,8 @@ public class RegistroRFVisualizarPO extends TestBaseSteven {
 		System.out.println(empresaV1);
 		System.out.println(numeroServV1);
 		System.out.println(periodoV1);
-		System.out.println(numeroRegistroV1);
-		System.out.println(valorRecibidoV1);
+//		System.out.println(numeroRegistroV1);
+//		System.out.println(valorRecibidoV1);
 		System.out.println(numeroDeclaracaoV1);
 
 
@@ -148,16 +148,16 @@ public class RegistroRFVisualizarPO extends TestBaseSteven {
 		String empresaE1 = empresaE.getAttribute("value");
 		String numeroServE1 = numeroServE.getAttribute("value");
 		String periodoE1 = periodoE.getAttribute("value");
-		String numeroRegistroE1 = numeroRegistroE.getAttribute("value");
-		String valorRecibidoE1 = valorRecibidoE.getAttribute("value");
+//		String numeroRegistroE1 = numeroRegistroE.getAttribute("value");
+//		String valorRecibidoE1 = valorRecibidoE.getAttribute("value");
 		String numeroDeclaracaoE1 = numeroDeclaracaoE.getAttribute("value");
 
 
 		System.out.println(empresaE1);
 		System.out.println(numeroServE1);
 		System.out.println(periodoE1);
-		System.out.println(numeroRegistroE1);
-		System.out.println(valorRecibidoE1);
+//		System.out.println(numeroRegistroE1);
+//		System.out.println(valorRecibidoE1);
 		System.out.println(numeroDeclaracaoE1);
 
 
@@ -166,8 +166,8 @@ public class RegistroRFVisualizarPO extends TestBaseSteven {
 		sucesso.add(empresaE1.contains(empresaV1));
 		sucesso.add(numeroServV1.contains(numeroServV1));
 		sucesso.add(periodoE1.contains(periodoV1));
-		sucesso.add(numeroRegistroE1.contains(numeroRegistroV1));
-		sucesso.add(valorRecibidoV1.contains(valorRecibidoE1));
+//		sucesso.add(numeroRegistroE1.contains(numeroRegistroV1));
+//		sucesso.add(valorRecibidoV1.contains(valorRecibidoE1));
 		sucesso.add(numeroDeclaracaoE1.contains(numeroDeclaracaoV1));
 
 

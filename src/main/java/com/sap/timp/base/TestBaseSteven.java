@@ -90,7 +90,11 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tp1);
+<<<<<<< HEAD
+		driver.get(tq1);
+=======
+		driver.get(tc2);
+>>>>>>> refs/heads/Cristhian
 		return driver;
 	}
 	
@@ -98,9 +102,38 @@ public class TestBaseSteven {
 
 		
 	}
+	
+	
+	public void fecharMensagens(String rows, String xpath) {
+		int rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		
+		if (rowsR > 0) {
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+		}
+		sleep(2000);
+		
+		rowsR = driver.findElements(By.xpath(xpath)).size();
+		
+		while (rowsR > 0) {
+			
+			WebElement fechar = driver.findElement(By.xpath(xpath));
+			fechar.click();
+			
+			rowsR = driver.findElements(By.xpath(xpath)).size();
+			sleep(2000);
+		}
+		
+		
+	}
 
 	public void refresh() {
 		driver.navigate().refresh();
+	}
+	
+	public String url() {
+		return driver.getCurrentUrl();
 	}
 	public int rows(String element) {
 		
@@ -114,6 +147,8 @@ public class TestBaseSteven {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
 		sleep(3000);
+		
+		
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"overlay loader dark\"]")));
 		sleep(2000);
 
@@ -283,7 +318,7 @@ public class TestBaseSteven {
 
 		Date fecha = new Date();
 
-		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
 		return df.format(fecha);
 

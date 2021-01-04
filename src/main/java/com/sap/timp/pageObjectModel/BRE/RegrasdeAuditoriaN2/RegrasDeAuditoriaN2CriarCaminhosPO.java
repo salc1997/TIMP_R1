@@ -98,6 +98,16 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//*[@id=\"justification\"]/div/textarea")
 	public WebElement agg;
+	
+	@FindBy(xpath = "//td[@class=\"datastructureCategory-field\"]/div/div/div[2]")
+	public WebElement grupodeestrutura;
+	
+	@FindBy(xpath = "//li[@id][text()=\"Ajuste\"][1]")
+	public WebElement opcaogrupodeestrutura;
+	
+	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
+	public WebElement opcaogrupodeestruturatp1;
+	
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -139,7 +149,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	
 		sleep(6000);
 		
-		nome.sendKeys("TESTE QA 2");
+		nome.sendKeys("TESTE AUTOMATIZADO QA 001");
 		sleep(2000);
 		
 		
@@ -155,10 +165,38 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 		opcionTipoTributo.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
-		grupo.click();
-		sleep(3000);
-		opcGrupo.click();
-		sleep(3000);
+		
+		
+		
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}
+		if(tp1 == true) {
+		grupodeestrutura.click();
+		sleep(1000);
+		opcaogrupodeestruturatp1.click();
+		sleep(1000);
+		}else {
+			grupodeestrutura.click();
+			sleep(1000);
+			opcaogrupodeestrutura.click();
+			sleep(1000);
+		}
+		
+		
 		
 		estructura.click();
 		sleep(3000);

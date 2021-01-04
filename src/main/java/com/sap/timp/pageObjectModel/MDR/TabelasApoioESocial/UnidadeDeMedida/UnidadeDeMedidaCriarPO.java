@@ -80,9 +80,9 @@ public class UnidadeDeMedidaCriarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		unidade.sendKeys("TA");
+		unidade.sendKeys("TA07");
 		sleep(1000);
-		descricao.sendKeys("Teste Unidade de Medida");
+		descricao.sendKeys("Teste Unidade de Medida 7");
 		sleep(1000);
 		
 		validade.sendKeys(fechaActual());

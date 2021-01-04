@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -51,11 +53,21 @@
 <<<<<<< HEAD
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
       <class name="com.timp.test.DFG.AN3.AN3Funcionalidades">
         <methods>
+<<<<<<< HEAD
+          <include name="excluirDFG"/>
+          <include name="criar"/>
+          <include name="excluirDFGConf"/>
+          <include name="criarPastas"/>
+          <include name="moverPasta"/>
+          <include name="editarPasta"/>
+          <include name="excluirPasta"/>
+=======
 =======
           <include name="Aprovar"/>
 >>>>>>> refs/heads/Cristhian
@@ -109,12 +121,28 @@
           <include name="ATREntrar"/>
           <include name="beforeClass"/>
 <<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
           <include name="editar"/>
+<<<<<<< HEAD
+          <include name="beforeClass"/>
+          <include name="excluirBRE"/>
+          <include name="publicoyPrivado"/>
+          <include name="criarAN3Pasta2"/>
+          <include name="informacao"/>
+          <include name="Arquivos"/>
+          <include name="afterClass"/>
+          <include name="favorito"/>
+          <include name="AN3"/>
+=======
 =======
           <include name="login"/>
           <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Eliel
+>>>>>>> refs/remotes/origin/master
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.DFG.AN3.AN3Funcionalidades -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED.ECF.ECFFuncionalidades -->
 >>>>>>> refs/heads/Yessy
@@ -125,6 +153,7 @@
 =======
       </class> <!-- com.timp.test.ATR.AcessarATR -->
 >>>>>>> refs/remotes/origin/Eliel
+>>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

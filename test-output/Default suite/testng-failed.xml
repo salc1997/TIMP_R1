@@ -3,13 +3,14 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosExcluirEmMassa">
+      <class name="com.timp.test.ATR.AcessarATR">
         <methods>
+          <include name="ATREntrar"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="login"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosExcluirEmMassa -->
+      </class> <!-- com.timp.test.ATR.AcessarATR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

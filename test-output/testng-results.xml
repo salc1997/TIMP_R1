@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-31T15:55:17Z" name="Default suite" finished-at="2020-12-31T15:57:32Z" duration-ms="135597">
+  <suite started-at="2021-01-04T12:52:20Z" name="Default suite" finished-at="2021-01-04T12:53:02Z" duration-ms="41959">
     <groups>
     </groups>
-    <test started-at="2020-12-31T15:55:17Z" name="Default test" finished-at="2020-12-31T15:57:32Z" duration-ms="135597">
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:55:17Z" name="beforeClass" finished-at="2020-12-31T12:55:31Z" duration-ms="14207" status="PASS">
+    <test started-at="2021-01-04T12:52:20Z" name="Default test" finished-at="2021-01-04T12:53:02Z" duration-ms="41959">
+      <class name="com.timp.test.ATR.AcessarATR">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:52:20Z" name="beforeClass" finished-at="2021-01-04T09:52:36Z" duration-ms="15776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:55:31Z" name="login" finished-at="2020-12-31T12:55:39Z" duration-ms="8331" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:52:36Z" name="login" finished-at="2021-01-04T09:52:46Z" duration-ms="10602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:55:39Z" name="acessarMDR" finished-at="2020-12-31T12:56:03Z" duration-ms="24046" status="PASS">
+        <test-method signature="ATREntrar()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:52:46Z" name="ATREntrar" finished-at="2021-01-04T09:53:02Z" duration-ms="15560" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:56:03Z" name="criar" finished-at="2020-12-31T12:57:32Z" duration-ms="88944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa@6892b3b6]" started-at="2020-12-31T12:57:32Z" name="afterClass" finished-at="2020-12-31T12:57:32Z" duration-ms="54" status="PASS">
+        </test-method> <!-- ATREntrar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.AcessarATR@11392934]" started-at="2021-01-04T09:53:02Z" name="afterClass" finished-at="2021-01-04T09:53:02Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassa -->
+      </class> <!-- com.timp.test.ATR.AcessarATR -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
+      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
         <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="BRE"/>
+          <include name="formatacaoEVariante"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
+      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

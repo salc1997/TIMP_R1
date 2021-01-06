@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
         <methods>
-          <include name="afterClass"/>
-          <include name="excluir"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="verificacaoBloco6"/>
+          <include name="excluirDFG"/>
+          <include name="verificacaoBloco1"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente -->
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

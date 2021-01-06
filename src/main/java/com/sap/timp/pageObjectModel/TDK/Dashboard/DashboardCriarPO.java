@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class DashboardCriarPO extends TestBaseEliel {
+public class DashboardCriarPO extends TestBaseMassiel {
 	
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;

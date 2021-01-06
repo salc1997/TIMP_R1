@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente">
         <methods>
-          <include name="formatacaoEVariante"/>
+          <include name="afterClass"/>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

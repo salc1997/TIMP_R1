@@ -36,9 +36,13 @@ public class TestBaseFernando extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+		driver.get(tc2);
 
+<<<<<<< HEAD
 		driver.get(tc2);
 		
+=======
+>>>>>>> refs/remotes/origin/master
 		return driver;
 	}
 

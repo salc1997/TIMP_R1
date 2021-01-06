@@ -96,7 +96,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		public WebElement uf;
 		@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
 		public WebElement ufO;
-		@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"DF\")]/div/label/span")
 		public WebElement ufO2;
 		
 		@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")

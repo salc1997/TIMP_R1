@@ -57,8 +57,6 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);
 		}
-		
-		//hierarquiaExecucoesTodasAsFuncionalidadesPO.ingresarDeUnSolo();
 	}
 	
 	@Test(priority = 3)
@@ -67,16 +65,20 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		boolean sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.criarConfiguracao();
 		assertTrue(sucesso, Criar);
 		
+		//hierarquiaExecucoesTodasAsFuncionalidadesPO.configurarConfiguracao();	
+	}
+	
+	@Test(priority = 4)
+	public void configurarConfiguracao() {
 		hierarquiaExecucoesTodasAsFuncionalidadesPO.configurarConfiguracao();	
 	}
 	
-	
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void executar() {
 		hierarquiaExecucoesTodasAsFuncionalidadesPO.executar();
 	}	
 	
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void resto() {
 		ArrayList<Boolean> sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.lixeiraYRestaurar();
 		System.out.println(sucesso);
@@ -86,7 +88,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		}
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void editar() {
 		ArrayList<Boolean> sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.editarEditarEntradaManualImprimirExportar();
 		System.out.println(sucesso);
@@ -96,7 +98,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		}
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void excluirExecucoes() {
 		ArrayList<Boolean> sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.excluirExecucoes();
 		
@@ -106,7 +108,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 	}
 	
 	
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void excluirConfiguracoes() {
 		
 		ArrayList<Boolean> sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.excluirConfiguracoes();
@@ -117,7 +119,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 	}
 	
 	
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void excluirHierarquia() {
 		
 		ArrayList<Boolean> sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.excluirHierarquia();

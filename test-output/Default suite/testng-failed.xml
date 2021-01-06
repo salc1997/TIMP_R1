@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -158,8 +159,23 @@
       </class> <!-- com.timp.test.ATR.AcessarATR -->
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/remotes/origin/master
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.DFG.AN4.AN4Funcionalidades">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="executarDFG"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.AN4.AN4Funcionalidades -->
+>>>>>>> refs/heads/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Yessy

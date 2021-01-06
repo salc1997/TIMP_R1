@@ -1,36 +1,34 @@
 package com.timp.test.TDK.Dashboard;
 
-import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
-
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
-import com.sap.timp.pageObjectModel.TDK.Dashboard.DashboardCriarPO;
+import com.sap.timp.pageObjectModel.TDK.Dashboard.DashboardEdiçãoTabelaPO;
 
-public class DashboardCriar extends TestBaseMassiel {
+import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+
+public class DashboardEdiçãoTabela extends TestBaseMassiel{
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
-	DashboardCriarPO dashboardCriarPO;
-	
+	DashboardEdiçãoTabelaPO dashboardEdiçãoTabelaPO;
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
-		dashboardCriarPO = new DashboardCriarPO();
+		 dashboardEdiçãoTabelaPO = new DashboardEdiçãoTabelaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,11 +40,12 @@ public class DashboardCriar extends TestBaseMassiel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
-	public void criar() {
-		boolean sucesso = dashboardCriarPO.criar();
-		assertTrue(sucesso,Criar);
-		
+	public void editar() {
+
+		dashboardEdiçãoTabelaPO.Editar();
+		//boolean sucesso = dashboardEdiçãoGráficoPO.Editar();
+		//assertTrue(sucesso,Criar);
 	}
 }

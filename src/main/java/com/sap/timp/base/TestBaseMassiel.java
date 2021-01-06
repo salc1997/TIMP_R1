@@ -50,7 +50,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver.manage().window().maximize();
 
 		driver.get(tp1);
-
+ 
 	   return driver;
 	}
 	
@@ -109,6 +109,87 @@ public class TestBaseMassiel extends TestBaseSteven {
 		
 		return nombreMes;
 	}
+	
+	public void idInserir5(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR5", idRegistro);
+
+	}
+
+	public String idObter5() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR5", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir6(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR6", idRegistro);
+
+	}
+
+	public String idObter6() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR6", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir7(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR7", idRegistro);
+
+	}
+
+	public String idObter7() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR7", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir8(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR8", idRegistro);
+
+	}
+
+	public String idObter8() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR8", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
 	
 	
 

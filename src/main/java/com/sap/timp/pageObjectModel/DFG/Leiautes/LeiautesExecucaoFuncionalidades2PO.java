@@ -410,7 +410,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@class=\"filter-group\"]/div[2]/div/div[1]/div[1]/div/div[2]")
 	public WebElement campo1;
 	
-	@FindBy(xpath = "//li[text()=\"Data de lançamento (10)\"]")
+	@FindBy(xpath = "//li[contains(text(),\"Data de lançamento\")]")
 	public WebElement campo1O;
 	
 	@FindBy(xpath = "//li[@class=\"filter-group\"]/div[2]/div/div[4]/div/div[3]/div/div/input")

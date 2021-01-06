@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseKenssy {
-	
+public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseKenssy{
+
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;
@@ -63,6 +63,9 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		@FindBy(xpath = "//button[text()=\"Sim\"]")
 		public WebElement sim;
 		
+		@FindBy(xpath = "//button[text()=\"Não\"]")
+		public WebElement nao;
+		
 		@FindBy(xpath = "//textarea[@placeholder=\"Preencher Justificativa\"]")
 		public WebElement justificativa;
 		
@@ -71,8 +74,9 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 		public WebElement biblioteca;
+			
 		
-	// Configuracao
+	// NUEVA CONFIGURACAO
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
 		public WebElement configuracoes;
 	
@@ -96,14 +100,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		public WebElement uf;
 		@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
 		public WebElement ufO;
-		@FindBy(xpath = "//div[contains(@id,\"DF\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"AL\")]/div/label/span")
 		public WebElement ufO2;
 		
 		@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 		public WebElement filial;
 		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
 		public WebElement filialO;
-		@FindBy(xpath = "//div[contains(@id,\"1000_DF_0019\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"1000_AL_0008\")]/div/label/span")
 		public WebElement filialTc2;
 	
 		@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")
@@ -137,285 +141,238 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		@FindBy(xpath = "//button[text()=\"Fechar\"]")
 		public WebElement fechar;
 		
+		@FindBy(xpath = "//html/body/div[4]/div/div[3]/button[1]")
+		public WebElement fecharEM;
+		
+		@FindBy(xpath = "//html/body/div[4]/div/div[3]/button[1]")
+		public WebElement fecharEM2;
+		
 		@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 		public WebElement pesquisar;
-	
+		
 	// primer subnivel
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][1]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement primerNivel;	
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][1]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement primerNivel;	
+			
+		@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"configuration\"]/div/div[2]")
+		public WebElement campolinha1;
+		@FindBy(xpath = "//li[text()=\"Campos de Saída BFB\"]")
+		public WebElement campoLinhaO1;
 		
-	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"configuration\"]/div/div[2]")
-	public WebElement campolinha1;
-	@FindBy(xpath = "//li[text()=\"Campos de Saída BCB\"]")
-	public WebElement campoLinhaO1;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"report\"]/div/div/div[2]")
-	public WebElement selectBCB;
-	
-	@FindBy(xpath = "//li[text()=\"954 - (BCB com campo de Output) TA\"]")
-	public WebElement selectBCB1;
-	
-	@FindBy(xpath = "//li[text()=\"328 - (BCB com campo de Output) TA\"]")
-	public WebElement selectBCB2;
-	
-	//este es para tc2, pendiente de ver
-		@FindBy(xpath = "//li[text()=\"393 - (BCB com campo de Output) TA\"]")
-		public WebElement selectBCB3;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"value\"]/div/div[2]")
-	public WebElement campoSaida1;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
-	public WebElement opcCampoSaida1;
-	
-	
+		@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"report\"]/div/div/div[2]")
+		public WebElement selectBFB;
 		
-	// SEGUNGO subnivel
-	@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"configuration\"]/div/div[2]")
-	public WebElement campolinha2;
-	@FindBy(xpath = "//li[text()=\"Campos de Saída BCB\"]")
-	public WebElement campoLinhaO2;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"report\"]/div/div/div[2]")
-	public WebElement selectBCBsub2;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"value\"]/div/div[2]")
-	public WebElement campoSaida2;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
-	public WebElement opcCampoSaida2;
-	
-	@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"2\"]")
-	public WebElement segundoNivel;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div/div[@id=\"check-accumulated\"]/div/label/span")
-	public WebElement subPeriodosAcumulados;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div/div[@id=\"accumulated-periods\"]/div/div/div[2]")
-	public WebElement cantSubPeriodosAcumulados;
-	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
-	public WebElement opcCantSubPeriodosAcumulados;
-	
-	
+		@FindBy(xpath = "//li[text()=\"44612 - (BCB Origem BFB) TA - NÃO MEXER\"]")
+		public WebElement selectBFB1;
+		//CORREGIR EN SU DEBIDO AMBIENTE
+		@FindBy(xpath = "//li[contains(text(),\"368 - (BCB Origem BFB) TA - NÃO MEXER\")]")
+		public WebElement selectBCB2;
+		@FindBy(xpath = "//li[contains(text(),\"232 - (BCB Origem BFB) TA - NÃO MEXER\")]")
+		public WebElement selectBFB3;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"value\"]/div/div[2]")
+		public WebElement campoSaida1;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+		public WebElement opcCampoSaida1;
+		
+		@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+		public WebElement aplicar;
+				
+		
+		// SEGUNGO subnivel
+		@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"2\"]")
+		public WebElement segundoNivel;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"configuration\"]/div/div[2]")
+		public WebElement campolinha2;
+		@FindBy(xpath = "//li[text()=\"Campos de Saída BFB\"]")
+		public WebElement campoLinhaO2;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"report\"]/div/div/div[2]")
+		public WebElement selectBFBsub2;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"value\"]/div/div[2]")
+		public WebElement campoSaida2;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+		public WebElement opcCampoSaida2;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div/div[@id=\"check-previous\"]/div/label/span")
+		public WebElement subPeriodosAnteriores2;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div/div[@id=\"previous-periods\"]/div/div/div[2]")
+		public WebElement cantSubPeriodosAnteriores2;
+		
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
+		public WebElement opcCantSubPeriodosAnteriores2;
+		
 	//TERCER SUBNIVEL
-	@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"3\"]")
-	public WebElement tercerNivel;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div[@id=\"configuration\"]/div/div[2]")
-	public WebElement campolinha3;
-	@FindBy(xpath = "//li[text()=\"Campos de Saída BCB\"]")
-	public WebElement campoLinhaO3;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div[@id=\"report\"]/div/div/div[2]")
-	public WebElement selectBCBsub3;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div[@id=\"value\"]/div/div[2]")
-	public WebElement campoSaida3;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
-	public WebElement opcCampoSaida3;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div/div[@id=\"check-previous\"]/div/label/span")
-	public WebElement subPeriodosAnteriores3;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div/div[@id=\"previous-periods\"]/div/div/div[2]")
-	public WebElement cantSubPeriodosAnteriores3;
-	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
-	public WebElement opcCantSubPeriodosAnteriores3;
-
-	
-	//CUARTO SUBNIVEL
-	@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"4\"]")
-	public WebElement cuartoNivel;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div[@id=\"configuration\"]/div/div[2]")
-	public WebElement campolinha4;
-	@FindBy(xpath = "//li[text()=\"Campos de Saída BCB\"]")
-	public WebElement campoLinhaO4;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div[@id=\"report\"]/div/div/div[2]")
-	public WebElement selectBCBsub4;
-	
-	//div[@class="subLevel"][2]//div[@id="zero-value"]/div/div/div[2]
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div[@id=\"value\"]/div/div[2]")
-	public WebElement campoSaida4;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
-	public WebElement opcCampoSaida4;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
-	public WebElement zerado;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]//div[@id=\"zero-value\"]/div/div/div[2]")
-	public WebElement condicaoZerado;
-	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
-	public WebElement opcZerado;
-	
-	
+		@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"3\"]")
+		public WebElement tercerNivel;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div[@id=\"configuration\"]/div/div[2]")
+		public WebElement campolinha3;
+		@FindBy(xpath = "//li[text()=\"Campos de Saída BFB\"]")
+		public WebElement campoLinhaO3;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div[@id=\"report\"]/div/div/div[2]")
+		public WebElement selectBFBsub3;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div[@id=\"value\"]/div/div[2]")
+		public WebElement campoSaida3;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+		public WebElement opcCampoSaida3;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
+		public WebElement zerado;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][3]//div[@id=\"zero-value\"]/div/div/div[2]")
+		public WebElement condicaoZerado;
+		
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+		public WebElement opcZerado;
+		
+		
+		//CUARTO SUBNIVEL
+		@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"4\"]")
+		public WebElement cuartoNivel;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div[@id=\"configuration\"]/div/div[2]")
+		public WebElement campolinha4;
+		@FindBy(xpath = "//li[text()=\"Campos de Saída BFB\"]")
+		public WebElement campoLinhaO4;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div[@id=\"report\"]/div/div/div[2]")
+		public WebElement selectBFBsub4;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div[@id=\"value\"]/div/div[2]")
+		public WebElement campoSaida4;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][3]")
+		public WebElement opcCampoSaida4;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
+		public WebElement zerado4;
+		@FindBy(xpath = "//div[@class=\"subLevel\"][4]//div[@id=\"zero-value\"]/div/div/div[2]")
+		public WebElement condicaoZerado4;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
+		public WebElement opcZerado4;
+		
 	//QUINTO SUBNIVEL
-	@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"5\"]")
-	public WebElement quintoNivel;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"configuration\"]/div/div[2]")
-	public WebElement campolinha5;
-	@FindBy(xpath = "//li[text()=\"Campos de Saída BCB\"]")
-	public WebElement campoLinhaO5;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"report\"]/div/div/div[2]")
-	public WebElement selectBCBsub5;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"value\"]/div/div[2]")
-	public WebElement campoSaida5;
-	@FindBy(xpath = "//li[text()=\"Campo de Saída 2\"][1]")
-	public WebElement opcCampoSaida5;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
-	public WebElement zerado5;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][5]//div[@id=\"zero-value\"]/div/div/div[2]")
-	public WebElement condicaoZerado5;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
-	public WebElement opcZerado5;
-	
-	
-	//SEXTO NIVEL
-	@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"6\"]")
-	public WebElement sextoNivel;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div[@id=\"configuration\"]/div/div[2]")
-	public WebElement campolinha6;
-	@FindBy(xpath = "//li[text()=\"Campos de Saída BCB\"]")
-	public WebElement campoLinhaO6;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div[@id=\"report\"]/div/div/div[2]")
-	public WebElement selectBCBsub6;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div[@id=\"value\"]/div/div[2]")
-	public WebElement campoSaida6;
-	@FindBy(xpath = "//li[text()=\"Campo de Saída 1\"][1]")
-	public WebElement opcCampoSaida6;
-	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div/div[@id=\"check-negative\"]/div/label/span")
-	public WebElement negativo6;
-	
-	@FindBy(xpath = "//span[text()=\"Executar\"]")
-	public WebElement executar;
+		@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"5\"]")
+		public WebElement quintoNivel;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"configuration\"]/div/div[2]")
+		public WebElement campolinha5;
+		@FindBy(xpath = "//li[text()=\"Campos de Saída BFB\"]")
+		public WebElement campoLinhaO5;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"report\"]/div/div/div[2]")
+		public WebElement selectBFBsub5;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"value\"]/div/div[2]")
+		public WebElement campoSaida5;
+		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+		public WebElement opcCampoSaida5;
+		
+		@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div/div[@id=\"check-negative\"]/div/label/span")
+		public WebElement negativo5;
+		
+		@FindBy(xpath = "//span[text()=\"Executar\"]")
+		public WebElement executar;
 
-	@FindBy(xpath = "//span[text()=\"Executar\"]")
-	public WebElement executarN;
+		@FindBy(xpath = "//span[text()=\"Executar\"]")
+		public WebElement executarN;
+		
 	
-	//EXECUTAR
-	
-	@FindBy(xpath = "//span[contains(@class,\"icon-calendar\")]")
-	public WebElement periodo;
-	
-	@FindBy(xpath = "//div[contains(@class,\"icon-leftmenu\")]")
-	public WebElement paginaAnterior;
-	
-	@FindBy(xpath = "//div[text()=\"2016\"]")
-	public WebElement ano2016;
-	
-	@FindBy(xpath = "//div[text()=\"2015\"]")
-	public WebElement ano2015;
-	
-	@FindBy(xpath = "//div[text()=\"Jan\"]")
-	public WebElement jan;
-	
-	@FindBy(xpath = "//span[text()=\"1M\"]")
-	public WebElement m1;
-	
-	@FindBy(xpath = "//span[text()=\"1A\"]")
-	public WebElement a1;
-	
-	@FindBy(xpath = "//div[contains(@class,\"execution-type\")]/div[2]/label/span")
-	public WebElement execucaoAnalitica;
-	
-	@FindBy(xpath = "//button[text()=\"Executar\"]")
-	public WebElement executarB;
-	
+	//EXECUTAR	
+		@FindBy(xpath = "//span[contains(@class,\"icon-calendar\")]")
+		public WebElement periodo;
+		
+		@FindBy(xpath = "//div[contains(@class,\"icon-leftmenu\")]")
+		public WebElement paginaAnterior;
+		
+		@FindBy(xpath = "//div[text()=\"2016\"]")
+		public WebElement ano2016;
+		
+		@FindBy(xpath = "//div[text()=\"2015\"]")
+		public WebElement ano2015;
+		
+		@FindBy(xpath = "//div[text()=\"Jan\"]")
+		public WebElement jan;
+		
+		@FindBy(xpath = "//span[text()=\"1M\"]")
+		public WebElement m1;
+		
+		@FindBy(xpath = "//span[text()=\"1A\"]")
+		public WebElement a1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"execution-type\")]/div[2]/label/span")
+		public WebElement execucaoAnalitica;
+		
+		@FindBy(xpath = "//button[text()=\"Executar\"]")
+		public WebElement executarB;
+		
 	//VERIFICAR INFORMACION DE SUBNIVELES
-	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
-	public WebElement aba1;
+		@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+		public WebElement aba1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement hierarquia1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-2\")]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement grupo1;
 	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement hierarquia1;
-	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-2\")]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement grupo1;
-	
-//	@FindBy(xpath = "//div[@class=\"hdr hdr-0\"]")
-//	public WebElement aba1;
-//	@FindBy(xpath = "//div[@class=\"hdr hdr-1\"]")
-//	public WebElement hierarquia1;
-//	@FindBy(xpath = "//div[@class=\"hdr hdr-2\"]")
-//	public WebElement grupo1;
-	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][1]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement subnivel1;
-	@FindBy(xpath = "//tr[@class=\"cell hdr-4\"][1]/td[1]/span[1]")
-	public WebElement verCampoSaidaSubNivel1;
-	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][2]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement subnivel2;
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][2]/div[2]/div/table/tbody/tr[2]/td/span")
-	public WebElement verCampoSaidaSubNivel2;
-	//TQ1 Y TP1
-	@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[2]/div[1]/div[1]/div[2]")
-	public WebElement periodoTiempo2;
-	
-	
-	//TQ1 Y TP1
-//	@FindBy(xpath = "//tr[@class=\"cell hdr-4\"][1]/td[1]/span[1]")
-//	public WebElement periodoTiempo21;
-	
-	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][3]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement subnivel3;
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][3]/div[2]/div/table/tbody/tr[2]/td/span")
-	public WebElement verCampoSaidaSubNivel3;
-	@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[3]/div[1]/div[1]/div[2]")
-	public WebElement periodoTiempo3;
-	
-	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][4]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement subnivel4;
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][4]/div[2]/div/table/tbody/tr[2]/td/span")
-	public WebElement verCampoSaidaSubNivel4;
-	
-	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][5]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement subnivel5;
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][5]/div[2]/div/table/tbody/tr[2]/td/span")
-	public WebElement verCampoSaidaSubNivel5;
-	@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[5]/div[1]/div[2]")
-	public WebElement totalizadorSubNivel5;
-	
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][6]/div[1]/div[1]/div[1]/div[1]")
-	public WebElement subnivel6;
-	@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][6]/div[2]/div/table/tbody/tr[2]/td/span")
-	public WebElement verCampoSaidaSubNivel6;
-	@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[6]/div[1]/div[2]")
-	public WebElement totalizadorSubNivel6;
-	
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][1]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel1;
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][1]/div[2]/div/table/tbody/tr[2]/td/span")
+		public WebElement verCampoSaidaSubNivel1;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][2]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel2;
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][2]/div[2]/div/table/tbody/tr[2]/td/span")
+		public WebElement verCampoSaidaSubNivel2;
+		//TQ1 Y TP1
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[2]/div[1]/div[1]/div[2]")
+		public WebElement periodoTiempo2;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][3]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel3;
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][3]/div[2]/div/table/tbody/tr[2]/td/span")
+		public WebElement verCampoSaidaSubNivel3;
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[3]/div[1]/div[2]")
+		public WebElement totalizador3;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][4]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel4;
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][4]/div[2]/div/table/tbody/tr[2]/td/span")
+		public WebElement verCampoSaidaSubNivel4;
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[4]/div[1]/div[2]")
+		public WebElement totalizador4;
+		
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][5]/div[1]/div[1]/div[1]/div[1]")
+		public WebElement subnivel5;
+		@FindBy(xpath = "//div[contains(@class,\"lvl-3\")][5]/div[2]/div/table/tbody/tr[2]/td/span")
+		public WebElement verCampoSaidaSubNivel5;
+		@FindBy(xpath = "//div[contains(@class,\"ctn ctn-3\")]/div[5]/div[1]/div[2]")
+		public WebElement totalizadorSubNivel5;
+		
 	//EXCLUIR
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement simLexeira;
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveExecutions\"]")
-	public WebElement pastaLexeira;
-	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement simExcluir;
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveConfigurations\"]")
-	public WebElement pastaLexeiraC;
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
-	public WebElement pastaLexeiraH;
-	
-	public OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
+		@FindBy(xpath = "//button[text()=\"Sim\"]")
+		public WebElement simLexeira;
+		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveExecutions\"]")
+		public WebElement pastaLexeira;
+		
+		@FindBy(xpath = "//button[text()=\"Sim\"]")
+		public WebElement simExcluir;
+		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveConfigurations\"]")
+		public WebElement pastaLexeiraC;
+		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
+		public WebElement pastaLexeiraH;	
+		
+	public OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public ArrayList<Boolean> criarConfiguracaoHierarquia() {
-		
 		boolean tc2 = false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
@@ -452,29 +409,29 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
+		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PRUEBA 1");
 		sleep(1000);
 
-		nomeDaAba.sendKeys("Teste Automatizado");
+		nomeDaAba.sendKeys("Aba 1");
 		sleep(1000);
 		
 		actionsMoveToElementElement(nomeDoCampoDeLinha);
 		sleep(1000);
-		nomeDaHierarquia.sendKeys("Teste Automatizado");
+		nomeDaHierarquia.sendKeys("Hierarquia 1");
 		sleep(1000);
 		listaNomeDaAba.click();
 		opcao.click();
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		nomeDoGrupo.sendKeys("Teste Automatizado");
+		nomeDoGrupo.sendKeys("Grupo 1");
 		sleep(1000);
 		listaNomeDoHierarquia.click();
 		opcao.click();
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 4; i++) {
 			adicionar.click();
 			sleep(1000);
 		}
@@ -484,7 +441,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		String subniveisAdicionadosS = String.valueOf(subniveisAdicionados);
 
-		sucesso.add(subniveisAdicionadosS.equals("6"));
+		sucesso.add(subniveisAdicionadosS.equals("5"));
 
 		int f = 1;
 		for (int i = 0; i < 1; i++) {
@@ -498,7 +455,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			WebElement listoDoNomeDoGrupo = driver.findElement(By.xpath("//div[@id=\"sublevels\"]/div[" + f
 					+ "]/div[@id=\"belongsTo\" and @class=\"field\"]/div/div/div[2]"));
 
-			nomeDoSubnivel.sendKeys("Teste Automatizado " + f);
+			nomeDoSubnivel.sendKeys("Subnivel " + f);
 			sleep(1000);
 			listoDoNomeDoGrupo.click();
 			opcao.click();
@@ -508,7 +465,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			f = f + 1;
 		}
 
-		nomeDoCampoDeLinha.sendKeys("Teste Automatizado");
+		nomeDoCampoDeLinha.sendKeys("Campo linha 1");
 		sleep(1000);
 		listanomeDoSubnivel.click();
 		opcaoTodos.click();
@@ -572,47 +529,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		return sucesso;
 	}
-	
-	public void ingresarDeUnSolo() {
-		boolean tc2 = false;
-		String url = driver.getCurrentUrl();
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}
 		
-		sleep(2000);
-		configuracoes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		configuracaoDaConsolidacao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		pesquisar.sendKeys("1033");
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1033\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1033\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		sleep(2000);
-	
-	
-		menu.click();
-		sleep(1000);
-		editar.click();
-		sleep(6000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(calculator);
-		sleep(2000);
-		
-		
-	}
-	
 	public boolean criarConfiguracionConfiguracao() {
 		
 		boolean tc2 = false;
@@ -638,7 +555,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
 		System.out.println("Id Configurações antes da criação: "+ id);
-		idInserir2(id); //antes de crear herarquia configuracao
+		//idInserir2(id); //antes de crear herarquia configuracao
 		
 		nova.click();
 		sleep(3000);
@@ -686,15 +603,15 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		filial.click();
 		sleep(1000);
-//		if (tc2==true) {
-//			filialTc2.click();
-//			filialTc2.sendKeys(Keys.ESCAPE);
-//			sleep(1000);
-		//}else {
+		if (tc2==true) {
+			filialTc2.click();
+			filialTc2.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else {
 			filialO.click();
 			filialO.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		//}
+		}
 
 
 		tipoApuracao.click();
@@ -852,8 +769,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		return sucesso;
 	}
 	
-	public ArrayList<Boolean> outputBCB() {
-		
+	public ArrayList<Boolean> outputBFB() {
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
@@ -868,8 +784,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		
-		
-		//COMENTAR DESPUES PORFAVOR
+//		//COMENTAR DESPUES PORFAVOR
 //		sleep(2000);
 //		configuracoes.click();
 //		sleep(3000);
@@ -881,7 +796,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		sleep(2000);
 //		
 //		
-//		pesquisar.sendKeys("359");
+//		pesquisar.sendKeys("1175");
 //		pesquisar.sendKeys(Keys.ENTER);
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -889,8 +804,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		
 //		
 //		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"359\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"359\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1175\"]/div[1]/div"));
+//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1175\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 //		sleep(2000);
 //		
 //		menu.click();
@@ -900,7 +815,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		waitExpectElement(calculator);
 //		sleep(2000);
-	//HASTA AQUI
+//	//HASTA AQUI
 		
 		//PRIMER SUBNIVEL
 		
@@ -919,17 +834,18 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 		sleep(3000);
 		
-		selectBCB.click();
+		selectBFB.click();
 		sleep(1000);
 		if (tc2==true) {
-			selectBCB3.click();
-			selectBCB3.sendKeys(Keys.ESCAPE);
+			selectBFB3.click();
+			selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
-			selectBCB1.click();
-			selectBCB1.sendKeys(Keys.ESCAPE);
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else {
+			//CORREGIR PARA TP1
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
@@ -947,11 +863,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(2000);
 		
 		//comentar cuando junte todo
-//		sim.click();
+//		nao.click();
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
-//		
+		
 //		justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
 //		sleep(2000);
 //		aplicarJustificativa.click();
@@ -972,7 +888,6 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		return sucesso;
-		
 	}
 	
 	public ArrayList<Boolean> subNivel2() {
@@ -994,39 +909,6 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		
-		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("1072");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-	//HASTA AQUI
-		
 		System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
 		sleep(1000);
 
@@ -1042,17 +924,18 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 //		sleep(3000);
 		
-		selectBCBsub2.click();
+		selectBFBsub2.click();
 		sleep(1000);
 		if (tc2==true) {
-			selectBCB3.click();
-			selectBCB3.sendKeys(Keys.ESCAPE);
+			selectBFB3.click();
+			selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
-			selectBCB1.click();
-			selectBCB1.sendKeys(Keys.ESCAPE);
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else {
+			//CORREGIR PARA TP1
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
@@ -1065,12 +948,12 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		
 		
-		subPeriodosAcumulados.click();
+		subPeriodosAnteriores2.click();
 		sleep(3000);
 		
-		cantSubPeriodosAcumulados.click();
+		cantSubPeriodosAnteriores2.click();
 		sleep(2000);		
-		opcCantSubPeriodosAcumulados.click();
+		opcCantSubPeriodosAnteriores2.click();
 		sleep(2000);
 		
 		
@@ -1101,9 +984,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			sucesso.add(false);
 		}
 		
-		return sucesso;
-		
-		
+		return sucesso;	
 	}
 	
 	public ArrayList<Boolean> subNivel3() {
@@ -1125,41 +1006,41 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("1072");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
+	//	sleep(2000);
+	//	configuracoes.click();
+	//	sleep(3000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	sleep(2000);
+	//	configuracaoDaConsolidacao.click();
+	//	sleep(3000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	sleep(2000);
+	//	
+	//	
+	//	pesquisar.sendKeys("1072");
+	//	pesquisar.sendKeys(Keys.ENTER);
+	//	sleep(3000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	sleep(2000);
+	//	
+	//	
+	//	
+	//	WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
+	//	WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+	//	sleep(2000);
+	//	
+	//	menu.click();
+	//	sleep(1000);
+	//	editar.click();
+	//	sleep(6000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	waitExpectElement(calculator);
+	//	sleep(2000);
 	//HASTA AQUI
 		
 		System.out.println("--------------------------------------------SubNivel 3-------------------------------------");
 		sleep(1000);
-
+	
 		
 		tercerNivel.click();
 		sleep(2000);
@@ -1169,18 +1050,18 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campoLinhaO3.click();
 		sleep(2000);
 		
-//		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
-//		sleep(3000);
+	//	attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
+	//	sleep(3000);
 		
-		selectBCBsub3.click();
+		selectBFBsub3.click();
 		sleep(1000);
 		if (tc2==true) {
-			selectBCB3.click();
-			selectBCB3.sendKeys(Keys.ESCAPE);
+			selectBFB3.click();
+			selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
-			selectBCB1.click();
-			selectBCB1.sendKeys(Keys.ESCAPE);
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else {
 			selectBCB2.click();
@@ -1195,29 +1076,29 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		
 		
-		subPeriodosAnteriores3.click();
+		zerado.click();
 		sleep(3000);
 		
-		cantSubPeriodosAnteriores3.click();
-		sleep(2000);		
-		opcCantSubPeriodosAnteriores3.click();
-		sleep(2000);
-		
+		condicaoZerado.click();
+		sleep(3000);
+		opcZerado.click();
+		opcZerado.sendKeys(Keys.ESCAPE);
+		sleep(3000);
 		
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-//		sim.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		aplicarJustificativa.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
+	//	sim.click();
+	//	sleep(3000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	sleep(2000);
+	//	
+	//	aplicarJustificativa.click();
+	//	sleep(3000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	sleep(2000);
 		
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -1231,10 +1112,10 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			sucesso.add(false);
 		}
 		
-		return sucesso;
-		
+		return sucesso;	
 	}
-	
+
+
 	public ArrayList<Boolean> subNivel4() {
 		
 		boolean tc2 = false;
@@ -1301,15 +1182,15 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 //		sleep(3000);
 		
-		selectBCBsub4.click();
+		selectBFBsub4.click();
 		sleep(1000);
 		if (tc2==true) {
-			selectBCB3.click();
-			selectBCB3.sendKeys(Keys.ESCAPE);
+			selectBFB3.click();
+			selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
-			selectBCB1.click();
-			selectBCB1.sendKeys(Keys.ESCAPE);
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else {
 			selectBCB2.click();
@@ -1324,13 +1205,13 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		
 		
-		zerado.click();
+		zerado4.click();
 		sleep(3000);
 		
-		condicaoZerado.click();
+		condicaoZerado4.click();
 		sleep(3000);
-		opcZerado.click();
-		opcZerado.sendKeys(Keys.ESCAPE);
+		opcZerado4.click();
+		opcZerado4.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		
@@ -1338,16 +1219,6 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-//		sim.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		aplicarJustificativa.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
 		
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -1396,15 +1267,15 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 //		sleep(3000);
 		
-		selectBCBsub5.click();
+		selectBFBsub5.click();
 		sleep(1000);
 		if (tc2==true) {
-			selectBCB3.click();
-			selectBCB3.sendKeys(Keys.ESCAPE);
+			selectBFB3.click();
+			selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
-			selectBCB1.click();
-			selectBCB1.sendKeys(Keys.ESCAPE);
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else {
 			selectBCB2.click();
@@ -1418,30 +1289,13 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		opcCampoSaida5.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
-		zerado5.click();
-		sleep(3000);
-		
-		condicaoZerado5.click();
-		sleep(3000);
-		opcZerado5.click();
-		opcZerado5.sendKeys(Keys.ESCAPE);
+		negativo5.click();
 		sleep(3000);
 		
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-//		
-//		sim.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		aplicarJustificativa.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-		
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 		
@@ -1455,136 +1309,6 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		return sucesso;
-		
-		
-	}
-	
-	public ArrayList<Boolean> subNivel6Negativo() {
-		boolean tc2 = false;
-		boolean tq1 = false;
-		boolean tp1 = false;
-		String url = driver.getCurrentUrl();
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}
-		
-		if (url.contains("tq1")) {
-			tq1 = true;
-		}
-		
-		if (url.contains("tp1")) {
-			tp1 = true;
-		}
-		
-		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("1072");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-	//HASTA AQUI
-		
-		System.out.println("--------------------------------------------SubNivel 6-------------------------------------");
-		sleep(1000);
-		
-		//COMENTAR PORFAVOR
-//			quintoNivel.click();
-//			sleep(2000);
-		//HASTA AQUI
-		
-		sextoNivel.click();
-		sleep(2000);
-		
-		campolinha6.click();
-		sleep(2000);
-		campoLinhaO6.click();
-		sleep(2000);
-		
-//		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
-//		sleep(3000);
-		
-		selectBCBsub6.click();
-		sleep(1000);
-		if (tc2==true) {
-			selectBCB3.click();
-			selectBCB3.sendKeys(Keys.ESCAPE);
-			sleep(1000);
-		}else if(tq1==true) {
-			selectBCB1.click();
-			selectBCB1.sendKeys(Keys.ESCAPE);
-			sleep(1000);
-		}else {
-			selectBCB2.click();
-			selectBCB2.sendKeys(Keys.ESCAPE);
-			sleep(1000);
-		}
-		
-		campoSaida6.click();
-		sleep(3000);
-		opcCampoSaida6.click();
-		opcCampoSaida6.sendKeys(Keys.ESCAPE);
-		sleep(3000);
-		
-		negativo6.click();
-		sleep(3000);
-		
-		
-		gravar.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-//		sim.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		aplicarJustificativa.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		
-	
-		
-		return sucesso;
-		
 	}
 	
 	public ArrayList<Boolean> abrirSubnivel1() {
@@ -1592,6 +1316,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -1604,42 +1329,6 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (url.contains("tp1")) {
 			tp1 = true;
 		}
-		
-		//COMENTAR DESPUES PORFAVOR
-//			sleep(2000);
-//			configuracoes.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			configuracaoDaConsolidacao.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			pesquisar.sendKeys("448");
-//			pesquisar.sendKeys(Keys.ENTER);
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"448\"]/div[1]/div"));
-//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"448\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//			sleep(2000);
-//			
-//			menu.click();
-//			sleep(1000);
-//			editar.click();
-//			sleep(6000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			waitExpectElement(calculator);
-//			sleep(2000);
-		//HASTA AQUI
-		
-	
-		
 		
 		sleep(1000);
 		executar.click();
@@ -1701,8 +1390,6 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		grupo1.click();
 		sleep(2000);
 				
-				
-		
 		System.out.println("---------------------------------Abrir SubNivel 1-------------------------------------");
 		sleep(1000);
 		
@@ -1717,7 +1404,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso.add(valorCampoSaidaSubNivel1.equals("1.000,00"));
+		sucesso.add(valorCampoSaidaSubNivel1.equals("5.000,00"));
 		
 		System.out.println(sucesso);
 		
@@ -1761,11 +1448,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tc2==true) {
-			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/01/2014 - 31/12/2015)"));
+			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("01/2014"));
 		}else {
-			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
+			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("12/2015 - 1M"));
 		}
 		
 		System.out.println(sucesso);
@@ -1801,27 +1488,23 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		String valorCampoSaidaSubNivel3 = verCampoSaidaSubNivel3.getText();
 		System.out.println("Campo Saida Subnivel3: "+ valorCampoSaidaSubNivel3);
 		
-		String valorCampoPeriodoTiempoSubNivel3 = periodoTiempo3.getText();
-		System.out.println("Campo Periodo Tiempo SubNivel3: "+ valorCampoPeriodoTiempoSubNivel3);
+		String valorTotalizadorSubNivel3 = totalizador3.getText();
+		System.out.println("Totalizador SubNivel3: "+ valorTotalizadorSubNivel3);
 		
 		subnivel3.click();
 		sleep(2000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		if (tc2==true) {
-			sucesso.add(valorCampoSaidaSubNivel3.equals("1.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals("(Subperíodo 01/2014 - 1Y)"));
-		}else {
-			sucesso.add(valorCampoSaidaSubNivel3.equals("1.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals("(Subperíodo 12/2015 - 1M)"));
-		}
+			sucesso.add(valorCampoSaidaSubNivel3.equals("5.000,00"));
+			sucesso.add(valorTotalizadorSubNivel3.equals("0,00"));
 		
 		System.out.println(sucesso);
 		
 		return sucesso;
 	}
 	
+
 	public ArrayList<Boolean> abrirSubNivel4() {
 		boolean tc2 = false;
 		boolean tq1 = false;
@@ -1849,13 +1532,17 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		String valorCampoSaidaSubNivel4 = verCampoSaidaSubNivel4.getText();
 		System.out.println("valorEntradaManual Editado"+ valorCampoSaidaSubNivel4);
 		
+		String valorTotalizadorSubNivel4 = totalizador4.getText();
+		System.out.println("Totalizador SubNivel4: "+ valorTotalizadorSubNivel4);
+		
 		subnivel4.click();
 		sleep(2000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso.add(valorCampoSaidaSubNivel4.equals("1.000,00"));
-		
+			sucesso.add(valorCampoSaidaSubNivel4.equals("-5.000,00"));
+			sucesso.add(valorTotalizadorSubNivel4.equals("0,00"));
+			
 		System.out.println(sucesso);
 		
 		return sucesso;
@@ -1897,52 +1584,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 	
-		sucesso.add(valorCampoSaidaSubNivel5.equals("-1.000,00"));
-		sucesso.add(valortotalizadorSubNivel5.equals("0,00"));
-		
-		System.out.println(sucesso);
-		
-		return sucesso;
-	}
-	
-	public ArrayList<Boolean> abrirSubnivel6() {
-		boolean tc2 = false;
-		boolean tq1 = false;
-		boolean tp1 = false;
-		String url = driver.getCurrentUrl();
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}
-		
-		if (url.contains("tq1")) {
-			tq1 = true;
-		}
-		
-		if (url.contains("tp1")) {
-			tp1 = true;
-		}
-		
-		
-		System.out.println("---------------------------------Abrir SubNivel 6-------------------------------------");
-		sleep(1000);
-		
-		subnivel6.click();
-		sleep(2000);
-		
-		String valorCampoSaidaSubNivel6 = verCampoSaidaSubNivel6.getText();
-		System.out.println("Campo Saida Subnivel5: "+ valorCampoSaidaSubNivel6);
-		
-		String valortotalizadorSubNivel6 = totalizadorSubNivel6.getText();
-		System.out.println("Totalizador SubNivel5: "+ valortotalizadorSubNivel6);
-		
-		subnivel6.click();
-		sleep(2000);
-		
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-	
-		sucesso.add(valorCampoSaidaSubNivel6.equals("1.000,00"));
-		sucesso.add(valortotalizadorSubNivel6.equals("-1.000,00"));
+		sucesso.add(valorCampoSaidaSubNivel5.equals("5.000,00"));
+		sucesso.add(valortotalizadorSubNivel5.equals("-5.000,00"));
 		
 		System.out.println(sucesso);
 		
@@ -2133,5 +1776,5 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	}
 	
 	
-	
+
 }

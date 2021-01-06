@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <testng-results skipped="0" failed="15" total="20" passed="5">
 =======
@@ -253,8 +254,12 @@
 >>>>>>> refs/remotes/origin/Eliel
 =======
 >>>>>>> refs/heads/Yessy
+=======
+<testng-results total="6" passed="6" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -302,8 +307,12 @@
 =======
   <suite started-at="2021-01-06T04:59:12Z" name="Default suite" finished-at="2021-01-06T05:00:39Z" duration-ms="87593">
 >>>>>>> refs/heads/Yessy
+=======
+  <suite started-at="2021-01-06T05:30:36Z" name="Default suite" finished-at="2021-01-06T05:35:10Z" duration-ms="274250">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1611,6 +1620,43 @@ Session ID: ad45101bffba7de2078bfe0ca28ae07c
       </class> <!-- com.timp.test.ATR.AcessarATR -->
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/remotes/origin/master
+=======
+    <test started-at="2021-01-06T05:30:36Z" name="Default test" finished-at="2021-01-06T05:35:10Z" duration-ms="274250">
+      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:30:36Z" name="beforeClass" finished-at="2021-01-05T23:30:50Z" duration-ms="14386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:30:50Z" name="login" finished-at="2021-01-05T23:30:59Z" duration-ms="9056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:30:59Z" name="brbEntrar" finished-at="2021-01-05T23:31:16Z" duration-ms="16756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="excluirConfiguracoes2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:31:16Z" name="excluirConfiguracoes2" finished-at="2021-01-05T23:32:21Z" duration-ms="64410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes2 -->
+        <test-method signature="excluirHierarquia2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:32:21Z" name="excluirHierarquia2" finished-at="2021-01-05T23:33:19Z" duration-ms="58179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia2 -->
+        <test-method signature="excluirConfiguracoes1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:33:19Z" name="excluirConfiguracoes1" finished-at="2021-01-05T23:34:17Z" duration-ms="57733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes1 -->
+        <test-method signature="excluirHierarquia1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:34:17Z" name="excluirHierarquia1" finished-at="2021-01-05T23:35:10Z" duration-ms="53691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades@332729ad]" started-at="2021-01-05T23:35:10Z" name="afterClass" finished-at="2021-01-05T23:35:10Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

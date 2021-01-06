@@ -67,8 +67,8 @@ public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//String idRegistro = idObter1();
-		String idRegistro = "1326";
+		String idRegistro = idObter1();
+		//String idRegistro = "1326";
 		//String idRegistro = "1289"; tc2
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));
@@ -94,8 +94,8 @@ public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
 		System.out.println("Estructura: "+estructuraValor);
 		System.out.println("Regulamento: "+regulamentoValor);
 		System.out.println("Campos 1: "+campo1Valor);
-		System.out.println("Campos 2:"+campo2Valor);
-		System.out.println("Campos3: "+campo3Valor);
+		System.out.println("Campos 2: "+campo2Valor);
+		System.out.println("Campos 3: "+campo3Valor);
 		System.out.println("*************************");
 		
 		fechar.click();
@@ -126,9 +126,9 @@ public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
 		System.out.println("Campos 3 V: "+campos3Valor3);
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
-		sucesso.add(campos1Valor1.contains(campo1Valor));
-		sucesso.add(campos2Valor2.contains(campo2Valor));
-		sucesso.add(campos3Valor3.contains(campo3Valor));
+		sucesso.add(campo1Valor.contains(campos1Valor1));
+		sucesso.add(campo2Valor.contains(campos2Valor2));
+		sucesso.add(campo3Valor.contains(campos3Valor3));
 		
 		return sucesso;
 	}

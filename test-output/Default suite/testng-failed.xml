@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -20,11 +21,24 @@
           <include name="beforeClass"/>
           <include name="criar"/>
 =======
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades">
+        <methods>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="lixeira"/>
           <include name="beforeClass"/>
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="excluirHierarquia1"/>
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
 =======
@@ -171,6 +185,9 @@
         </methods>
       </class> <!-- com.timp.test.DFG.AN4.AN4Funcionalidades -->
 >>>>>>> refs/heads/Yessy
+=======
+      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

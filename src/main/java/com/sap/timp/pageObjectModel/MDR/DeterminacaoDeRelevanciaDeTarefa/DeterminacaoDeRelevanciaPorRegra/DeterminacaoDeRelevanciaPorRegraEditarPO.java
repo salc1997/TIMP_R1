@@ -62,7 +62,7 @@ public class DeterminacaoDeRelevanciaPorRegraEditarPO extends TestBaseEliel{
 	public WebElement siguiente;
 
 	
-	@FindBy(xpath = "//button[text()=\"Gravar\"]")
+	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")

@@ -71,10 +71,10 @@ public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO extends TestBa
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
-		
-		lixeira.click();
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(1000);
+
+		regrasdemensagens.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -92,18 +92,33 @@ public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO extends TestBa
 		double id2 = convertToDouble(idRegistro);
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
-		if(id1 == id2)
+		if(id1 != id2)
 		{
-			System.out.println("Sim, o ID é o mesmo que foi criado");
 			boolean sucesso1=true;
 			sucesso.add(sucesso1);
 			
 		}else {
-			System.out.println("Não é o mesmo ID");
+
 			boolean sucesso1 = false;
 			sucesso.add(sucesso1);
 			
 		}
+		System.out.println("Id Excluido: "+ sucesso.get(0));
+		
+		lixeira.click();
+		
+		
+
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
 		
 		WebElement menu1= driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -121,6 +136,9 @@ public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO extends TestBa
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(1000);
 		
 		primeira.click();
 		sleep(2000);

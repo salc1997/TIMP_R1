@@ -580,7 +580,9 @@ public class TestBaseSteven {
 		return sorted; 
 	}
 	
-	
+	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
+	}
 	
 
 	

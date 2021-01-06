@@ -3,6 +3,7 @@ package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAces
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -53,6 +54,8 @@ public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
 	@FindBy(xpath = "//*[@id=\"modificationDate\"]/div/div[1]/input")
 	public WebElement dataModificao;
 	
+	@FindBy(xpath="//body")
+	public WebElement clickFuera;
 		
 	public TabelaComplementarParaDIRFFiltrosAvanPO() {
 		PageFactory.initElements(driver, this);
@@ -165,8 +168,8 @@ public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
 							+ rows + "]/div[6]/div"))
 					.getText();
 			System.out.println(textFiltroEmpresa + " Filial Filtro");
-			textFiltroEmpresa = textFiltroEmpresa.replace("1000-", "");
-			sucesso.add(empresaText.equals(textFiltroEmpresa));
+			//textFiltroEmpresa = textFiltroEmpresa.replace("1000-", "");
+			sucesso.add(textFiltroEmpresa.contains(empresaText));
 
 			f = f + 1;
 		}
@@ -227,12 +230,24 @@ public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
 			dataText1 = dataCriacao.getAttribute("value");
 			System.out.println("fecha criacao a buscar" + dataText1);
 			System.out.println("");
+			dataCriacao.sendKeys(Keys.ENTER);
+			sleep(2000);
+			//opcEmpresa.click();
+			clickFuera.click();
+			sleep(2000);
+			
 		}else if (URL.contains("tc2")) {
 			dataCriacao.sendKeys("18/11/2020");
 			//sleep(1000);
 			dataText1 = dataCriacao.getAttribute("value");
 			System.out.println("fecha criacao a buscar" + dataText1);
 			System.out.println("");
+			dataCriacao.sendKeys(Keys.ENTER);
+			sleep(2000);
+			//opcEmpresa.click();
+			clickFuera.click();
+			sleep(2000);
+			
 		}else {
 			//aplica SOLO PARA TP1
 			dataCriacao.sendKeys("12/03/2018");
@@ -240,6 +255,11 @@ public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
 			dataText1 = dataCriacao.getAttribute("value");
 			System.out.println("fecha criacao a buscar" + dataText1);
 			System.out.println("");
+			dataCriacao.sendKeys(Keys.ENTER);
+			sleep(2000);
+			//opcEmpresa.click();
+			clickFuera.click();
+			sleep(2000);
 		}
 		
 //		dataCriacao.sendKeys("18/09/2020");
@@ -319,12 +339,24 @@ public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
 			dataText1 = dataModificao.getAttribute("value");
 			System.out.println("fecha criacao a buscar" + dataText1);
 			System.out.println("");
+			dataModificao.sendKeys(Keys.ENTER);
+			sleep(2000);
+			//opcEmpresa.click();
+			clickFuera.click();
+			sleep(2000);
+			
 		}else if (URL.contains("tc2")) {
 			dataModificao.sendKeys("18/09/2020");
 			sleep(1000);
 			dataText1 = dataModificao.getAttribute("value");
 			System.out.println("fecha criacao a buscar" + dataText1);
 			System.out.println("");
+			dataModificao.sendKeys(Keys.ENTER);
+			sleep(2000);
+			//opcEmpresa.click();
+			clickFuera.click();
+			sleep(2000);
+			
 		}else {
 			//aplica SOLO PARA TP1
 			dataModificao.sendKeys("12/03/2018");
@@ -332,6 +364,12 @@ public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
 			dataText1 = dataModificao.getAttribute("value");
 			System.out.println("fecha criacao a buscar" + dataText1);
 			System.out.println("");
+			dataModificao.sendKeys(Keys.ENTER);
+			sleep(2000);
+			//opcEmpresa.click();
+			clickFuera.click();
+			sleep(2000);
+			
 		}
 		
 //		dataModificao.sendKeys("18/09/2020");

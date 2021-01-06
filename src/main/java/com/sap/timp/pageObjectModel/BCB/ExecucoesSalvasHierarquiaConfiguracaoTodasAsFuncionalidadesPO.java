@@ -70,6 +70,9 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
@@ -99,7 +102,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 	public WebElement uf;
 	@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
 	public WebElement ufO;
-	@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
+	@FindBy(xpath = "//div[contains(@id,\"DF\")]/div/label/span")
 	public WebElement ufO2;
 	
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
@@ -193,6 +196,12 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 	
 	@FindBy(xpath = "//span[text()=\"1Y\"]")
 	public WebElement y1;
+	
+	@FindBy(xpath = "//div[text()=\"2019\"]")
+	public WebElement ano2019;
+
+	@FindBy(xpath = "//div[text()=\"Nov\"]")
+	public WebElement nov;
 	
 	@FindBy(xpath = "//div[contains(@class,\"execution-type\")]/div[2]/label/span")
 	public WebElement execucaoAnalitica;
@@ -341,7 +350,9 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		String id = driver.findElement(By.xpath(
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
 				.getText();
+		
 		idInserir4(id);
+		
 		System.out.println("Ultimo ID de Execucoes: "+id);
 		System.out.println("");
 		System.out.println("*************************");
@@ -351,7 +362,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		hierarquias.click();
 		sleep(1000);
 		hierarquiaConfiguracao.click();
-		sleep(5000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -370,7 +381,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		
 		
 		nova.click();
-		sleep(3000);
+		sleep(2000);
 		waitExpectElement(nomeDeHierarquia);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
@@ -397,16 +408,17 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		for (int i = 0; i < 1; i++) {
-			adicionar.click();
-			sleep(1000);
-		}
+//		for (int i = 0; i < 1; i++) {
+//			adicionar.click();
+//			sleep(1000);
+//		}
 
 		int subniveisAdicionados = driver.findElements(By.xpath("//div[@id=\"sublevels\"]/div")).size();
 		System.out.println(subniveisAdicionados);
 
 		String subniveisAdicionadosS = String.valueOf(subniveisAdicionados);
-
+		System.out.println("subnivelS:" + subniveisAdicionadosS);
+		
 		sucesso.add(subniveisAdicionadosS.equals("1"));
 
 		int f = 1;
@@ -439,10 +451,16 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 
 		sleep(1000);
 		gravar.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		sleep(2000);
+		//waitExpectXpath("//span[@id=\"textLabel\"]");
 
+		nao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -452,23 +470,24 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		rows = driver
+		int rowsH2 = driver
 				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
 				.size();
-		String id2 = driver.findElement(By.xpath(
-				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
+		String iH2 = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rowsH2 + "]/div[4]/div"))
 				.getText();
 		String nome = driver.findElement(By.xpath(
-				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rowsH2 + "]/div[5]/div"))
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Teste Automatizado"));
+		sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
 
-		idInserir1(id2);
+		idInserir3(iH2);
+		System.out.println("Id ultimo de Hierarquia a excluir: " + iH2);
 
 		int id1I = convertToInt(idH);
-		int id2I = convertToInt(id2);
+		int id2I = convertToInt(iH2);
 
 		System.out.println("***********");
 		System.out.println("Hierarquia");
@@ -485,47 +504,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 
 		return sucesso;
 	}
-	
-	public void ingresarDeUnSolo() {
-		boolean tc2 = false;
-		String url = driver.getCurrentUrl();
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}
-		
-		sleep(2000);
-		configuracoes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		configuracaoDaConsolidacao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		pesquisar.sendKeys("1033");
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1033\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1033\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		sleep(2000);
-	
-	
-		menu.click();
-		sleep(1000);
-		editar.click();
-		sleep(6000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(calculator);
-		sleep(2000);
-		
-		
-	}
-	
+
 	public boolean criarConfiguracao() {
 		boolean tc2 = false;
 		String url = driver.getCurrentUrl();
@@ -552,7 +531,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
 		System.out.println("Id Configurações antes da criação: "+ id);
-		idInserir3(id); //antes de crear herarquia configuracao
+		//idInserir3(id); //antes de crear herarquia configuracao
 		
 		nova.click();
 		sleep(3000);
@@ -560,7 +539,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("teste automatizado hierar");
+		nomeHirarquia.sendKeys("prueba automatizada de hiera");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -625,13 +604,12 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(4000);
 		
 		biblioteca.click();
-		sleep(5000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		sleep(3000);
+		sleep(2000);
 		
 		ultimo.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -715,9 +693,13 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		//waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(2000);
 		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		entrada.click();
 		sleep(3000);
@@ -792,20 +774,29 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(3000);
 		paginaAnterior.click();
 		sleep(2000);
-		ano2016.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		jan.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		if (tc2) {
-			y1.click(); //OJO CORREGIR PARA TC2
+			ano2019.click();
+			sleep(1000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			nov.click();
+			sleep(1000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			m1.click(); //OJO CORREGIR PARA TC2
 		}else {
+			ano2016.click();
+			sleep(1000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			jan.click();
+			sleep(1000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			m1.click();
 		}
+
 		
 		sleep(2000);
 		execucaoAnalitica.click();
@@ -820,6 +811,11 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		salvarExecucoes.click();
 		sleep(3000);
@@ -866,14 +862,8 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		idInserir5(idE);
 		
 		
-		int idExecucoesA = Integer.valueOf(idObter4());
-		
+		int idExecucoesA = Integer.valueOf(idObter4());		
 		int idExecucoesB = Integer.valueOf(idE);
-		//idInserir6(idExecucoesB);
-		
-		
-		//idObter3(idExecucoesB);
-		
 		
 		System.out.println("");
 		System.out.println("***********");
@@ -903,20 +893,20 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 			tc2 = true;
 		}
 		
-		sleep(2000);
-		execucoes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		execucacoConsolidacao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		
-		ultimo.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		sleep(2000);
+//		execucoes.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(3000);
+//		execucacoConsolidacao.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(3000);
+//		
+//		ultimo.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		WebElement menusito = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
 		System.out.println("id de lexeira: "+menusito);
@@ -1069,55 +1059,10 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 	}
 	
 	public ArrayList<Boolean> editarEditarEntradaManualImprimirExportar() {
-//	//COMENTAR DE AQUI 
-//		sleep(2000);
-//		execucoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(3000);
-//		execucacoConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(3000);
-//		
-//		pesquisar.sendKeys(idObter5());
-//		//pesquisar.sendKeys("2271");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-////		ultimo.click();
-////		sleep(2000);
-////		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-////		sleep(2000);
-//		
-//		WebElement menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
-//		WebElement editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
-//		sleep(2000);
-//		
-////		WebElement menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2271\"]/div[1]/div"));
-////		WebElement editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2271\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-////		sleep(2000);
-//		
-//		menu1.click();
-//		sleep(1000);
-//		editar1.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//	//HASTA AQUI
-//		
-//		
-//		
 		
-		
-		
-		
-		
-		
+		sleep(2000);
 		entrada.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(editarEditarEntradaManual);
 		sleep(2000);
@@ -1159,9 +1104,6 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		String valorEntradaManualSegundo = valorEntradaManual1.getText();
 		System.out.println("valorEntradaManual Editado"+ valorEntradaManualSegundo);
 		
-		
-		
-		
 		imprimir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1199,6 +1141,11 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso.add(valorEntradaManualSegundo.equals(valorEntradaManualPrimero));
 		
+		biblioteca.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		System.out.println(sucesso);
 		
 		return sucesso;
@@ -1211,13 +1158,18 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 			tc2 = true;
 		}
 		
-		//EXCLUIR EXECUCOES
-		biblioteca.click();
 		sleep(2000);
+		execucoes.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		execucacoConsolidacao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+
 		
-		
+		//EXCLUIR EXECUCOES
 		String idExecucoes = idObter5();
 		
 		System.out.println("");
@@ -1243,17 +1195,17 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(2000);
 		
 		simLexeira.click();
-		sleep(6000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		//waitExpectElement(pastaLexeira);
-		sleep(5000);
+		sleep(2000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A versão de execução do builder foi enviada para a lixeira\")]")).size();
+		System.out.println(exclucao);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		if (exclucao>0) {
+		if (exclucao > 0) {
 			sucesso.add(true);
 			
 		}else {
@@ -1285,7 +1237,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		simExcluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectElement(configuracoes);
 		sleep(2000);
 		
 		return sucesso;
@@ -1310,23 +1262,15 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		System.out.println("*******EXCLUIR CONFIGURACOES************");
 		System.out.println("OBTER 2:" + idConfiguracao);
 		System.out.println("");
-		
-		
+
 		pesquisar.sendKeys(idConfiguracao);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//idObter2();
-		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
 		WebElement lixeiraC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
-		
-		
-//		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2271\"]/div[1]/div"));
-//		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2271\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
-//		sleep(2000);
 		
 		menu.click();
 		sleep(1000);
@@ -1337,16 +1281,17 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(2000);
 		
 		simLexeira.click();
-		sleep(6000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(5000);
+		sleep(2000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
+		System.out.println(exclucao);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		if (exclucao>0) {
+		if (exclucao > 0) {
 			sucesso.add(true);
 			
 		}else {
@@ -1388,18 +1333,19 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		
 		sleep(2000);
 		hierarquias.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		hierarquiaConfiguracao.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idHierarquia = idObter1();
+		//String idHierarquia = "1212";
+		String idHierarquia = idObter3();
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");
-		System.out.println("OBTER 1:" + idHierarquia);
+		System.out.println("OBTER 3:" + idHierarquia);
 		System.out.println("");
 		
 		
@@ -1422,23 +1368,22 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(2000);
 		
 		simLexeira.click();
-		sleep(6000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectElement(pastaLexeira);
-		sleep(5000);
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
+		System.out.println(exclucao);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		if (exclucao>0) {
+		if (exclucao > 0) {
 			sucesso.add(true);
 			
 		}else {
 			sucesso.add(false);
 		}
-		
-		
 		
 		pastaLexeiraH.click();
 		sleep(3000);
@@ -1465,7 +1410,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		simExcluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		return sucesso;

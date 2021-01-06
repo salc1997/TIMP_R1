@@ -154,7 +154,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*[2]//*[3]")
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\" and @transform =\"translate(0,150)\"]/*[name()=\"text\"][1]/*[name()=\"tspan\"][2]")
-	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[13]/*/*[2]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[name()=\"g\"][11]/*/*")
 	public WebElement text;
 	
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Sign-and-Symbols icon-plussign icon-btn btn flat trans\"]")
@@ -410,9 +410,12 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		habilitar.click();
 		sleep(1000);
 		aplicar.click();
+		System.out.println("click en aplicar 3");
 		sleep(1000);
 		//WebElement caminhor3 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"path-start edited\"]"));
 		WebElement caminhor3 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[11]/*/*"));
+		
+		System.out.println("creao caminho 3");
 		if(caminhor3.isDisplayed()) {
 			System.out.println("Caminho criado r3");
 			sucesso.add(caminhor3.isDisplayed());
@@ -469,10 +472,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		habilitar.click();
 		sleep(1000);
 		aplicar.click();
+		System.out.println("Dio click en aplicar");
 		sleep(1000);
 		//WebElement caminhor4 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"edited\"]"));
-		WebElement caminhor4 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[15]/*/*"));
-		
+		WebElement caminhor4 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][11]/*/*"));
+		System.out.println("Creo camihno 4");
 		if(caminhor4.isDisplayed()) {
 			System.out.println("Caminho criado r4");
 			sucesso.add(caminhor4.isDisplayed());

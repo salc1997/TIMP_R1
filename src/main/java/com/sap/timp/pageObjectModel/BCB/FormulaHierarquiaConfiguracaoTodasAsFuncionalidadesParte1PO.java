@@ -97,7 +97,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		public WebElement uf;
 		@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
 		public WebElement ufO;
-		@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"DF\")]/div/label/span")
 		public WebElement ufO2;
 		
 		@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
@@ -176,7 +176,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		@FindBy(xpath = "//div[contains(text(),\"ID954-(BCB com campo de Output) TA\")]")
 		public WebElement selectBCB1;
 		//CORREGIR EN SU DEBIDO AMBIENTE
-		@FindBy(xpath = "//div[text()=\"ID328-(BCB com campo de Output) TA\"]")
+		@FindBy(xpath = "//div[text()=\"ID326-(BCB com campo de Output) TA\"]")
 		public WebElement selectBCB2;
 		@FindBy(xpath = "//div[text()=\"ID393-(BCB com campo de Output) TA\"]")
 		public WebElement selectBCB3;
@@ -185,7 +185,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		@FindBy(xpath = "//div[contains(text(),\"4285-Campo de Saída 1\")]")
 		public WebElement selectBCB11;
 		//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
-		@FindBy(xpath = "//div[contains(text(),\"1535-Campo de Saída 1\")]")
+		@FindBy(xpath = "//div[contains(text(),\"1424-Campo de saída 1\")]")
 		public WebElement selectBCB12;
 		@FindBy(xpath = "//div[contains(text(),\"2275-Campo de Saída 1\")]")
 		public WebElement selectBCB13;
@@ -240,7 +240,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		@FindBy(xpath = "//div[contains(text(),\"4286-Campo de Saída 2\")]")
 		public WebElement selectBCB41;
 		//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
-		@FindBy(xpath = "//div[contains(text(),\"1536-Campo de Saída 2\")]")
+		@FindBy(xpath = "//div[contains(text(),\"1424-Campo de saída 1\")]")
 		public WebElement selectBCB42;
 		@FindBy(xpath = "//div[contains(text(),\"2276-Campo de Saída 2\")]")
 		public WebElement selectBCB43;
@@ -918,7 +918,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 			}else {
 				//CORREGIR AL EJECUTAR EN AMBIENTE
-				buscarCamposSaidaBCB.sendKeys("328");
+				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
 				selectBCB2.click();
 				sleep(1000);
@@ -1024,7 +1024,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 			}else {
 				//CORREGIR AL EJECUTAR EN AMBIENTE
-				buscarCamposSaidaBCB.sendKeys("328");
+				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
 				selectBCB2.click();
 				sleep(1000);
@@ -1123,7 +1123,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 			}else {
 				//CORREGIR AL EJECUTAR EN AMBIENTE
-				buscarCamposSaidaBCB.sendKeys("328");
+				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
 				selectBCB2.click();
 				sleep(1000);
@@ -1232,7 +1232,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 			}else {
 				//CORREGIR AL EJECUTAR EN AMBIENTE
-				buscarCamposSaidaBCB.sendKeys("328");
+				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
 				selectBCB2.click();
 				sleep(1000);
@@ -1370,7 +1370,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 //				sleep(1000);
 //			}else {
 //				//CORREGIR AL EJECUTAR EN AMBIENTE
-//				buscarCamposSaidaBCB.sendKeys("328");
+//				buscarCamposSaidaBCB.sendKeys("326");
 //				sleep(1000);
 //				selectBCB2.click();
 //				sleep(1000);

@@ -212,7 +212,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	@FindBy(xpath = "//div[contains(text(),\"ID954-(BCB com campo de Output) TA\")]")
 	public WebElement selectBCB1;
 	//CORREGIR EN SU DEBIDO AMBIENTE
-	@FindBy(xpath = "//div[text()=\"ID328-(BCB com campo de Output) TA\"]")
+	@FindBy(xpath = "//div[text()=\"ID326-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB2;
 	@FindBy(xpath = "//div[text()=\"ID393-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB3;
@@ -221,7 +221,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	@FindBy(xpath = "//div[contains(text(),\"4285-Campo de Saída 1\")]")
 	public WebElement selectBCB11;
 	//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
-	@FindBy(xpath = "//div[contains(text(),\"1535-Campo de Saída 1\")]")
+	@FindBy(xpath = "//div[contains(text(),\"1424-Campo de saída 1\")]")
 	public WebElement selectBCB12;
 	@FindBy(xpath = "//div[contains(text(),\"2275-Campo de Saída 1\")]")
 	public WebElement selectBCB13;
@@ -361,7 +361,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			sleep(1000);
 		}else {
 			//CORREGIR AL EJECUTAR EN AMBIENTE
-			buscarCamposSaidaBCB.sendKeys("328");
+			buscarCamposSaidaBCB.sendKeys("326");
 			sleep(1000);
 			selectBCB2.click();
 			sleep(1000);
@@ -752,13 +752,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		//if (tc2==true) {
+		if (tp1==true) {
+			sucesso.add(valorFormulaSubNivel4.equals("1000/2"));
+			sucesso.add(valorTotalizadorSubNivel4.equals("500,00"));
+		}else {
 			sucesso.add(valorFormulaSubNivel4.equals("-1000/2"));
 			sucesso.add(valorTotalizadorSubNivel4.equals("0,00"));
-		//}else {
-//			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
-//			sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals("(01/12/2015 - 31/01/2016)"));
-		//}
+		}
 		
 		System.out.println(sucesso);
 		

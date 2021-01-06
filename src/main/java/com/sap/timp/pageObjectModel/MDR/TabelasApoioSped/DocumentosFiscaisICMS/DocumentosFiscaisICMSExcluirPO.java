@@ -78,6 +78,9 @@ public class DocumentosFiscaisICMSExcluirPO  extends TestBaseEliel{
 		excluir.click();
 		sleep(2000);
 		
+		waitExpectElement(aceitar);
+		sleep(2000);
+
 		aceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

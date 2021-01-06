@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,20 +96,19 @@
 =======
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/heads/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.DFG.SPED.ESocial.Eventos.S1210.S1210ExcluirDadosDoEvento">
+      <class name="com.timp.test.TAA.Agendamento.AgendamentoCancelar">
         <methods>
-          <include name="gravarAN3"/>
->>>>>>> refs/heads/master
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
+          <include name="cancelar"/>
+          <include name="ingresarTAA"/>
           <include name="afterClass"/>
->>>>>>> refs/heads/master
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.SPED_ESOCIAL.ESOCIALfuncionalidades -->
 =======
@@ -182,9 +182,13 @@
       </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades -->
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.TAA.Agendamento.AgendamentoCancelar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -193,3 +197,5 @@
 =======
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/heads/Fernando

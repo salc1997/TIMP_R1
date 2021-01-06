@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" total="23" passed="20">
 =======
 <<<<<<< HEAD
@@ -147,7 +148,10 @@
 =======
 =======
 >>>>>>> refs/heads/Yessy
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
@@ -174,8 +178,11 @@
 =======
 <testng-results total="6" passed="6" failed="0" skipped="0">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -227,8 +234,12 @@
 =======
   <suite started-at="2021-01-06T05:30:36Z" name="Default suite" finished-at="2021-01-06T05:35:10Z" duration-ms="274250">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-01-06T02:46:20Z" name="Default suite" finished-at="2021-01-06T02:48:31Z" duration-ms="130050">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -300,6 +311,11 @@
       <class name="com.timp.test.DFG.AN4.AN4Funcionalidades">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.AN4.AN4Funcionalidades@7d0b7e3c]" started-at="2021-01-05T22:59:12Z" name="beforeClass" finished-at="2021-01-05T22:59:26Z" duration-ms="14506" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+    <test started-at="2021-01-06T02:46:20Z" name="Default test" finished-at="2021-01-06T02:48:31Z" duration-ms="130050">
+      <class name="com.timp.test.TAA.Agendamento.AgendamentoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TAA.Agendamento.AgendamentoCriar@5e3d57c7]" started-at="2021-01-05T20:46:20Z" name="beforeClass" finished-at="2021-01-05T20:46:35Z" duration-ms="14424" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -307,6 +323,7 @@
         <test-method status="PASS" signature="DFG()[pri:0, instance:com.timp.test.DFG.AN3.AN3Funcionalidades@3a079870]" name="DFG" duration-ms="125481" started-at="2020-12-31T16:20:16Z" finished-at="2020-12-31T16:22:22Z">
 =======
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -327,8 +344,12 @@
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.AN4.AN4Funcionalidades@7d0b7e3c]" started-at="2021-01-05T22:59:26Z" name="ingresar" finished-at="2021-01-05T22:59:33Z" duration-ms="6721" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.TAA.Agendamento.AgendamentoCriar@5e3d57c7]" started-at="2021-01-05T20:46:35Z" name="ingresar" finished-at="2021-01-05T20:46:44Z" duration-ms="9509" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- DFG -->
         <test-method status="PASS" signature="ExecucaoDFG()[pri:0, instance:com.timp.test.DFG.AN3.AN3Funcionalidades@3a079870]" name="ExecucaoDFG" duration-ms="95657" started-at="2020-12-31T16:22:22Z" finished-at="2020-12-31T16:23:57Z">
@@ -343,7 +364,10 @@
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.SPED.ECF.ECFFuncionalidades@8f2ef19]" started-at="2020-12-28T10:01:21Z" name="mdrEntrar" finished-at="2020-12-28T10:01:36Z" duration-ms="14958" status="PASS">
 >>>>>>> refs/remotes/origin/master
@@ -941,9 +965,21 @@ Session ID: eb477cc56acad423d375c25cfdfd41aa
         </test-method> <!-- executarDFG -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.AN4.AN4Funcionalidades@7d0b7e3c]" started-at="2021-01-05T23:00:39Z" name="afterClass" finished-at="2021-01-05T23:00:39Z" duration-ms="1" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+        <test-method signature="ingresarTAA()[pri:0, instance:com.timp.test.TAA.Agendamento.AgendamentoCriar@5e3d57c7]" started-at="2021-01-05T20:46:44Z" name="ingresarTAA" finished-at="2021-01-05T20:47:08Z" duration-ms="23198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresarTAA -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TAA.Agendamento.AgendamentoCriar@5e3d57c7]" started-at="2021-01-05T20:47:08Z" name="criar" finished-at="2021-01-05T20:48:26Z" duration-ms="78572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TAA.Agendamento.AgendamentoCriar@5e3d57c7]" started-at="2021-01-05T20:48:26Z" name="afterClass" finished-at="2021-01-05T20:48:31Z" duration-ms="4325" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1203,9 +1239,13 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
       </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades -->
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.TAA.Agendamento.AgendamentoCriar -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1217,3 +1257,5 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 </testng-results>
 >>>>>>> refs/heads/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/heads/Fernando

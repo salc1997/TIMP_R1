@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" total="23" passed="20">
 =======
 <<<<<<< HEAD
@@ -153,7 +154,10 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -186,8 +190,11 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,8 +254,12 @@
 =======
   <suite started-at="2021-01-07T12:11:05Z" name="Default suite" finished-at="2021-01-07T12:12:57Z" duration-ms="112297">
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-01-06T22:58:00Z" name="Default suite" finished-at="2021-01-06T22:58:54Z" duration-ms="54379">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -332,9 +343,15 @@
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir@6f45df59]" started-at="2021-01-07T09:11:05Z" name="beforeClass" finished-at="2021-01-07T09:11:21Z" duration-ms="16761" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-01-06T22:58:00Z" name="Default test" finished-at="2021-01-06T22:58:54Z" duration-ms="54379">
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:00Z" name="beforeClass" finished-at="2021-01-06T16:58:11Z" duration-ms="11582" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -363,8 +380,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir@6f45df59]" started-at="2021-01-07T09:11:21Z" name="login" finished-at="2021-01-07T09:11:30Z" duration-ms="8240" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:11Z" name="login" finished-at="2021-01-06T16:58:19Z" duration-ms="7542" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -373,14 +394,26 @@
 =======
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir@6f45df59]" started-at="2021-01-07T09:11:30Z" name="acessarMDR" finished-at="2021-01-07T09:11:43Z" duration-ms="13074" status="PASS">
+=======
+        <test-method signature="ATREntrar()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:19Z" name="ATREntrar" finished-at="2021-01-06T16:58:31Z" duration-ms="12371" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir@6f45df59]" started-at="2021-01-07T09:11:43Z" name="excluir" finished-at="2021-01-07T09:12:57Z" duration-ms="74201" status="PASS">
+=======
+        </test-method> <!-- ATREntrar -->
+        <test-method signature="filtrarPorIdMasLimpiarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:31Z" name="filtrarPorIdMasLimpiarFiltros" finished-at="2021-01-06T16:58:54Z" duration-ms="22711" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -999,9 +1032,14 @@ Session ID: eb477cc56acad423d375c25cfdfd41aa
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir@6f45df59]" started-at="2021-01-07T09:12:57Z" name="afterClass" finished-at="2021-01-07T09:12:57Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- filtrarPorIdMasLimpiarFiltros -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:54Z" name="afterClass" finished-at="2021-01-06T16:58:54Z" duration-ms="146" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1269,9 +1307,13 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 =======
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1289,3 +1331,5 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando

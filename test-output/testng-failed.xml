@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,15 +24,23 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> refs/heads/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades">
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
         <methods>
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+          <include name="criarRelacionamento"/>
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="lixeira"/>
@@ -46,7 +55,10 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,9 +69,13 @@
 =======
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoCriar -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -208,3 +224,5 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando

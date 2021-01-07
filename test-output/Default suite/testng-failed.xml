@@ -2,27 +2,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
-=======
-      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
->>>>>>> refs/heads/Fernando
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
           <include name="criar"/>
+<<<<<<< HEAD
 =======
 =======
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -31,25 +29,38 @@
       <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidades">
         <methods>
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Cristhian
           <include name="afterClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="lixeira"/>
+=======
+>>>>>>> refs/heads/Cristhian
           <include name="beforeClass"/>
+<<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
           <include name="excluirHierarquia1"/>
           <include name="beforeClass"/>
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Cristhian
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
 =======
       </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoCriar -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
@@ -199,3 +210,5 @@
 >>>>>>> refs/remotes/origin/master
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Cristhian

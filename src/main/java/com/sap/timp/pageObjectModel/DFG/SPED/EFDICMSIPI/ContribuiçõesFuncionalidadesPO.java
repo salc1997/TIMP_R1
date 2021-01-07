@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -8,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
+import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
 public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 	
@@ -256,13 +259,13 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//span[contains(@class,\"icon-gooddoc\")]")
 	public WebElement sped;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-efd-icmsipi\"]")
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[4]/div/ul/li[2]")
 	public WebElement efd;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-icmsipi\"]")
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[4]/div/ul/li[2]/ul/li[1]")
 	public WebElement efdO;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-icmsipi-calculationBlocks\"]")
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[4]/div/ul/li[2]/ul/li[2]/div/span[2]")
 	public WebElement blocosApuracao;
 	
 	
@@ -397,17 +400,23 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 	public WebElement arquivos;
 	
 	
-	@FindBy(xpath = "//div[contains(@class,\"company\")]/div/div/div[2]")
-	public WebElement empresaDFG;
+	@FindBy(xpath = "//table[@class=\"Contributions-form\"]/tbody/tr[10]/td/div/div/div[@id=\"select\"]")
+	public WebElement tipoE;
 	
-	@FindBy(xpath = "//li[text()=\"1000\"]")
-	public WebElement empresaDFGO;
+	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	public WebElement tiopEo;
 	
 	@FindBy(xpath = "//div[contains(@class,\"branch\")]/div/div/div[2]")
 	public WebElement filialDFG;
 	
 	@FindBy(xpath = "//div[@id=\"0001\"]/div/label/span")
 	public WebElement filialDFGO;
+	
+	@FindBy(xpath = "//div[contains(@class,\"company\")]/div/div/div[2]")
+	public WebElement empresaDFG;
+	
+	@FindBy(xpath = "//li[text()=\"1000\"]")
+	public WebElement empresaDFGO;
 	
 	
 	@FindBy(xpath = "//div[@id=\"toolbarTop\"]/div/div/ul/li[1]/button")
@@ -458,7 +467,7 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nome.sendKeys("Teste Automatizado");
+		nome.sendKeys("Teste Automatizado QA Cristhian");
 		sleep(1000);
 		actionsMoveToElementElement(versao);
 		sleep(1000);
@@ -865,4 +874,985 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		
 		
 	}
+
+	
+	
+	public ArrayList<Boolean> DFG() {
+		
+		home.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		AcessarDFGPO acessarDFGPO;
+		acessarDFGPO = new AcessarDFGPO();
+		
+		acessarDFGPO.acessarDFG();
+		
+		sleep(2000);
+
+		sped.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		efd.click();
+		sleep(2000);
+		efdO.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = rows("//div[@class=\"tr\" and @data-id]");
+		
+		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdAC);
+		
+		blocosApuracao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		primeira.click();
+		System.out.println("Dio click en primera pagina");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		System.out.println("Dio click en ultima pagina");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		rows = rows("//div[@class=\"tr\" and @data-id]");
+		
+		String ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
+		
+		sleep(2000);
+		efdO.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		novo.click();
+		sleep(3000);
+		waitExpectElement(nome);
+		sleep(2000); 
+		
+		nome.sendKeys("Teste Automatizado");
+		sleep(1000);
+		
+		leiauteE.click();
+		sleep(1000);
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		leiauteO.click();
+		sleep(1000);
+		
+		versaoE.click();
+		sleep(1000);
+		versaoEO.click();
+		sleep(1000);
+		
+		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		sleep(1000);
+		
+		tributoE.click();
+		sleep(1000);
+		tributoEO.click();
+		sleep(1000);
+		
+		empresaE.click();
+		sleep(1000);
+		empresaEO.click();
+		sleep(1000);
+		empresaEO.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		
+		ufE.click();
+		sleep(1000);
+		ufEO.click();
+		sleep(1000);
+		ufEO.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		
+		filialE.click();
+		sleep(1000);
+		filialEO.click();
+		sleep(1000);
+		filialEO.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		
+		dataVigenciaE.sendKeys("01/01/2013");
+		sleep(1000);
+		
+		salvar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		rows = rows("//div[@class=\"tr\" and @data-id]");
+		
+		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println("Id após da criação (DFG SPED EFD): "+ ultimoIdDC);
+		idInserir4(ultimoIdDC);
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[4]/div")).getText();
+		String tipo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[6]/div")).getText();
+		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[10]/div/li")).getText();
+		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[11]/div/li")).getText();
+		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[12]/div/li")).getText();
+		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[13]/div/li")).getText();
+		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[14]/div")).getText();
+		
+		System.out.println(nome);
+		System.out.println(tipo);
+		System.out.println(empresa);
+		System.out.println(uf);
+		System.out.println(filial);
+		System.out.println(tributo);
+		System.out.println(dataVigencia);
+		
+		
+		//sucesso.add(nome.contains("Teste Automatizado"));
+		//sucesso.add(tipo.contains("EFD ICMS / IPI"));
+		sucesso.add(empresa.contains("1000"));
+//		sucesso.add(uf.contains("SP"));
+//		sucesso.add(filial.contains("0001"));
+		sucesso.add(tributo.contains("ICMS"));
+		//sucesso.add(dataVigencia.contains("01/01/2013"));
+		
+		System.out.println(sucesso);
+		
+		return sucesso;
+		
+		
+	}
+	
+	
+	public boolean editarDFG() {
+		
+		String idRegistro = idObter4();
+		
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editarR = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		editarR.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		descricao.clear();
+		sleep(1000);
+		String enviar = "Teste Editar";
+		descricao.sendKeys(enviar);
+		sleep(1000);
+		editar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String editado = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[5]/div")).getText();
+		System.out.println("Edição do Campo: " + editado);
+		boolean sucesso = editado.equals(enviar);
+		System.out.println(sucesso);
+		
+		
+		return sucesso;
+		
+		
+		
+	}
+	
+	public ArrayList<Boolean> informacao() {
+		
+		String idRegistro = idObter4();
+		
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String descricaoI1 = descricaoI.getText();
+		System.out.println(descricaoI1);
+		
+		fecharInformacoes.click();
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		System.out.println("----------------------Visualizações----------------------------------");
+		String descricaoV1 = descricao.getAttribute("value");
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(descricaoI1.equals(descricaoV1));
+		System.out.println("Verificação Informação - Visualização: " + sucesso);
+		
+		String nomeV1 = nomeV.getAttribute("value");
+		String descricaoV11 = descricaoV.getAttribute("value");
+		String leiauteV1 = leiauteV.getAttribute("value");
+		String versaoV1 = versaoV.getAttribute("value");
+		String tributoV1 = tributoV.getAttribute("value");
+		String empresaV1 = empresaV.getText();
+		String ufV1 = ufV.getText();
+		String filialV1 = filialV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getAttribute("value");
+		
+		
+		System.out.println(nomeV1);
+		System.out.println(descricaoV11);
+		System.out.println(leiauteV1);
+		System.out.println(versaoV1);
+		System.out.println(tributoV1);
+		System.out.println(empresaV1);
+		System.out.println(ufV1);
+		System.out.println(filialV1);
+		System.out.println(dataVigenciaV1);
+		
+		sucesso.add(nomeV1.equals("Teste Automatizado"));
+		sucesso.add(descricaoV11.equals("Teste Editar"));
+		sucesso.add(leiauteV1.contains("Teste Automatizado"));
+		sucesso.add(versaoV1.contains("1.0"));
+		sucesso.add(tributoV1.equals("ICMS"));
+		sucesso.add(empresaV1.equals("1000"));
+		sucesso.add(ufV1.equals("SP"));
+		sucesso.add(filialV1.contains("0001"));
+		sucesso.add(dataVigenciaV1.equals("01/01/2013"));
+		
+		System.out.println(sucesso);
+		
+		fechar.click();
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editarR = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		editarR.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		System.out.println("----------------------Edição----------------------------------");
+		String nomeE1 = nomeV.getAttribute("value");
+		String descricaoE1 = descricaoV.getAttribute("value");
+		String leiauteE1 = leiauteV.getAttribute("value");
+		String versaoE1 = versaoV.getAttribute("value");
+		String tributoE1 = tributoV.getAttribute("value");
+		String empresaE1 = empresaV.getText();
+		String ufE1 = ufV.getText();
+		String filialE1 = filialV.getText();
+		String dataVigenciaE1 = dataVigenciaV.getAttribute("value");
+		
+		
+		sucesso.add(nomeV1.equals(nomeE1));
+		sucesso.add(descricaoV11.equals(descricaoE1));
+		sucesso.add(leiauteV1.contains(leiauteE1));
+		sucesso.add(versaoV1.contains(versaoE1));
+		sucesso.add(tributoV1.equals(tributoE1));
+		sucesso.add(empresaV1.equals(empresaE1));
+		sucesso.add(ufV1.equals(ufE1));
+		sucesso.add(filialV1.contains(filialE1));
+		sucesso.add(dataVigenciaV1.equals(dataVigenciaE1));
+		
+		System.out.println(sucesso);
+		
+		fechar.click();
+		
+		return sucesso;
+		
+		
+	}
+	
+	public ArrayList<Boolean> blocoApuracao() {
+		
+		blocosApuracao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idRegistro = idObter4();
+		
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String descricaoI1 = descricaoI.getText();
+		System.out.println(descricaoI1);
+		
+		fecharInformacoes.click();
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		System.out.println("----------------------Visualizações----------------------------------");
+		String descricaoV1 = descricao.getAttribute("value");
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(descricaoI1.equals(descricaoV1));
+		System.out.println("Verificação Informação - Visualização: " + sucesso);
+		
+		String nomeV1 = nomeV.getAttribute("value");
+		String descricaoV11 = descricaoV.getAttribute("value");
+		String leiauteV1 = leiauteV.getAttribute("value");
+		String versaoV1 = versaoV.getAttribute("value");
+		String tributoV1 = tributoV.getAttribute("value");
+		String empresaV1 = empresaV.getText();
+		String ufV1 = ufV.getText();
+		String filialV1 = filialV.getText();
+		String dataVigenciaV1 = dataVigenciaV.getAttribute("value");
+		
+		
+		System.out.println(nomeV1);
+		System.out.println(descricaoV11);
+		System.out.println(leiauteV1);
+		System.out.println(versaoV1);
+		System.out.println(tributoV1);
+		System.out.println(empresaV1);
+		System.out.println(ufV1);
+		System.out.println(filialV1);
+		System.out.println(dataVigenciaV1);
+		
+		sucesso.add(nomeV1.equals("Teste Automatizado"));
+		sucesso.add(descricaoV11.equals("Teste Editar"));
+		sucesso.add(leiauteV1.contains("Teste Automatizado"));
+		sucesso.add(versaoV1.contains("1.0"));
+		sucesso.add(tributoV1.equals("ICMS"));
+		sucesso.add(empresaV1.equals("1000"));
+		sucesso.add(ufV1.equals("SP"));
+		sucesso.add(filialV1.contains("0001"));
+		sucesso.add(dataVigenciaV1.equals("01/01/2013"));
+		
+		System.out.println(sucesso);
+		
+		fechar.click();
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editarR = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		editarR.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		System.out.println("----------------------Edição----------------------------------");
+		String nomeE1 = nomeV.getAttribute("value");
+		String descricaoE1 = descricaoV.getAttribute("value");
+		String leiauteE1 = leiauteV.getAttribute("value");
+		String versaoE1 = versaoV.getAttribute("value");
+		String tributoE1 = tributoV.getAttribute("value");
+		String empresaE1 = empresaV.getText();
+		String ufE1 = ufV.getText();
+		String filialE1 = filialV.getText();
+		String dataVigenciaE1 = dataVigenciaV.getAttribute("value");
+		
+		
+		sucesso.add(nomeV1.equals(nomeE1));
+		sucesso.add(descricaoV11.equals(descricaoE1));
+		sucesso.add(leiauteV1.contains(leiauteE1));
+		sucesso.add(versaoV1.contains(versaoE1));
+		sucesso.add(tributoV1.equals(tributoE1));
+		sucesso.add(empresaV1.equals(empresaE1));
+		sucesso.add(ufV1.equals(ufE1));
+		sucesso.add(filialV1.contains(filialE1));
+		sucesso.add(dataVigenciaV1.equals(dataVigenciaE1));
+		
+		System.out.println(sucesso);
+		
+		fechar.click();
+		
+		return sucesso;
+		
+		
+		
+		
+		
+	}
+	
+	public ArrayList<Boolean> execucao() {
+		
+		String idRegistro = idObter4();
+		String idRegra = idObter3();
+		
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		sleep(3000);
+		waitExpectElement(executar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ufFilialB.click();
+		sleep(1000);
+		ufFilialBO.click();
+		sleep(1000);
+		ufFilialBO.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		centralizacao.click();
+		sleep(1000);
+		
+		calendario.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		atras.click();
+		sleep(1000);
+		ano2016.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		jan.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		m1.click();
+		sleep(3000);
+		executarConf.click();
+		sleep(3000);
+		
+		
+		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int aparece = rows("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		
+		if (aparece > 0) {
+			driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]")).click();
+		}
+		
+		
+		atualizarEstrutura.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		gravar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		visualizarAN3.click();
+		sleep(2000);
+		waitExpectElement(criar);
+		sleep(2000);
+		
+		nomeR.sendKeys("Teste Automatizado Regra DFG");
+		sleep(100);
+		regra.click();
+		sleep(1000);
+		
+		WebElement regraO = driver.findElement(By.xpath("//div[@id=\""+idRegra+"\"]/div/label/span"));
+		regraO.click();
+		sleep(1000);
+		regraO.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		criar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(driver.findElement(By.xpath("//span[text()=\"Aprovar\"]")).isDisplayed());
+		System.out.println(sucesso);
+		
+		biblioteca.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+				
+		
+		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		 acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar Atualizações\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		sleep(2000);
+		waitExpectElement(atualizar);
+		sleep(2000);
+		String fechaHoy = fechaActual();
+		int rows = rows("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]");
+		int f=1;
+		System.out.println("--------------------------Verificação Modificações----------------------------------------");
+		for (int i = 0; i < rows; i++) {
+			
+			String dataMod = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]["+f+"]/div[10]/div")).getText();
+			System.out.println(dataMod);
+			sucesso.add(dataMod.equals(fechaHoy));
+		}
+		
+		System.out.println(sucesso);
+		
+		fechar.click();
+		sleep(3000);
+		
+		return sucesso;
+
+
+		
+	}
+	
+	public ArrayList<Boolean> arquivos() {
+		
+		String idRegistro = idObter4();
+		arquivos.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		int presente = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]")).size();
+		if (presente == 1) {
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
+		}
+
+		System.out.println("Verificação do Registro em Arquivos: " +sucesso);
+		
+		sped.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		efd.click();
+		sleep(2000);
+		efdO.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		primeira.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
+		
+		menu.click();
+		sleep(1000);
+		acao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		empresaDFG.click();
+		sleep(1000);
+		empresaDFGO.click();
+		sleep(1000);
+		
+		tipoE.click();
+		sleep(1000);
+		tiopEo.click();
+		sleep(1000);
+		
+//		filialDFG.click();
+//		sleep(1000);
+//		filialDFGO.click();
+//		sleep(1000);
+//		filialDFGO.sendKeys(Keys.ESCAPE);
+//		sleep(1000);
+		
+		
+		calendario.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		atras.click();
+		sleep(1000);
+		ano2016.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		jan.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		m1.click();
+		sleep(3000);
+		executarDFG.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		driver.navigate().refresh();
+		sleep(3000);
+		waitExpectElement(visualizarArquivos);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		visualizarArquivos.click();
+		System.out.println("dio clic en visualizar");
+		sleep(2000);
+		waitExpectElement(atualizar);
+		sleep(2000);
+		
+		int rows = rows("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]");
+		int f=1;
+		System.out.println("--------------------------Verificação Visualização----------------------------------------");
+	
+			
+		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]["+rows+"]/div[5]/div")).getText();
+		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]["+rows+"]/div[6]/div")).getText();
+		String dataInicial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]["+rows+"]/div[9]/div")).getText();
+		String dataFinal = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]["+rows+"]/div[10]/div")).getText();
+		
+		System.out.println(empresa);
+		System.out.println(filial);
+		System.out.println(dataInicial);
+		System.out.println(dataFinal);
+		
+		sucesso.add(empresa.equals("1000"));
+		sucesso.add(filial.equals("0001"));
+		sucesso.add(dataInicial.equals("20160101"));
+		sucesso.add(dataFinal.equals("20160131"));
+		
+		
+		System.out.println(sucesso);
+		
+		driver.navigate().refresh();
+		sleep(3000);
+		waitExpectElement(visualizarArquivos);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		
+		return sucesso;
+		
+		
+		
+	}
+	
+	public ArrayList<Boolean> excluirDFG() {
+		
+		String idRegistro = idObter2();
+		home.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		AcessarDFGPO acessarDFGPO;
+		acessarDFGPO = new AcessarDFGPO();
+		
+		acessarDFGPO.acessarDFG();
+		
+		sleep(2000);
+		
+		raiz.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys(idObter2());
+		sleep(1000);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"actions\"]"));
+		WebElement lixeira = driver.findElement(By.xpath("//li/span[text()=\"Lixeira\"]"));
+		
+		menu.click();
+		sleep(1000);
+		lixeira.click();
+		sleep(3000);
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		System.out.println("-----------------------------Exclusão Leiaute-----------------------------------");
+		int rows = rows("//div[@class=\"tr\" and @data-id]");
+		
+		String idDE = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+		
+		System.out.println("Ultimo Id após a Exclução: " +idDE);
+		
+		int idDEI = convertToInt(idDE);
+		int idRegistroI = convertToInt(idRegistro);
+		
+		System.out.println("Id Excluido: " + idRegistroI);
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		if (idDEI != idRegistroI) {
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
+		}
+		
+		lixeiraDFG.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.clear();
+		pesquisar.sendKeys(idObter2());
+		sleep(1000);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menu = driver.findElement(By.xpath("//div[@class=\"actions\"]"));
+		WebElement excluir = driver.findElement(By.xpath("//li/span[text()=\"Excluir\"]"));
+		
+		menu.click();
+		sleep(1000);
+		excluir.click();
+		sleep(3000);
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		driver.navigate().refresh();
+		sleep(3000);
+		waitExpectElement(pesquisar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		lixeiraDFG.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int excluido = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]")).size();
+		System.out.println(excluido);
+		if (excluido == 0 ) {
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
+		}
+		
+		
+		System.out.println(sucesso);
+		
+		return sucesso;
+		
+	}
+	
+	
+	public ArrayList<Boolean> excluirBRE() {
+		
+		String idRegistro = idObter3();
+		home.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		AcessarBREPO acessarBREPO;
+		acessarBREPO = new AcessarBREPO();
+		
+		acessarBREPO.acessarBRE();
+		
+		sleep(2000);
+		
+		regraAuditoriaN3.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys(idObter3());
+		sleep(1000);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"actions\"]"));
+		WebElement lixeira = driver.findElement(By.xpath("//li/span[text()=\"Lixeira\"]"));
+		
+		menu.click();
+		sleep(1000);
+		lixeira.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
+		sleep(2000);
+		System.out.println("-----------------------------Exclusão Leiaute-----------------------------------");
+		int rows = rows("//div[@class=\"tr\" and @data-id]");
+		
+		String idDE = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		System.out.println("Ultimo Id após a Exclução: " +idDE);
+		
+		int idDEI = convertToInt(idDE);
+		int idRegistroI = convertToInt(idRegistro);
+		
+		System.out.println("Id Excluido: " + idRegistroI);
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		if (idDEI != idRegistroI) {
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
+		}
+		
+		lixeiraBRE.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		
+		menu.click();
+		sleep(1000);
+		excluir.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
+		sleep(2000);
+		
+		driver.navigate().refresh();
+		sleep(3000);
+		waitExpectElement(pesquisar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		lixeiraBRE.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		int excluido = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]")).size();
+		System.out.println(excluido);
+		if (excluido == 0 ) {
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
+		}
+		
+		
+		System.out.println(sucesso);
+		
+		return sucesso;
+		
+	}
+	
+
+
 }

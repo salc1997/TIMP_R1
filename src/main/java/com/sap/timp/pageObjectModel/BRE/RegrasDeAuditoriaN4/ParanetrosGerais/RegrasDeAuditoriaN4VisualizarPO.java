@@ -160,7 +160,7 @@ public class RegrasDeAuditoriaN4VisualizarPO extends TestBaseEliel {
 		sucesso.add(nomeeditar.contains(nomevisualizar));
 		
 		sucesso.add(primeirocampo1.contains(primeirocampo1ed));
-		sucesso.add(segundocampo1.contains(segundocampo1ed1));
+		sucesso.add(segundocampo1ed1.contains(segundocampo1));
 		sucesso.add(segundocampo1visualizar.contains(segundocampo1editar));
 
 	

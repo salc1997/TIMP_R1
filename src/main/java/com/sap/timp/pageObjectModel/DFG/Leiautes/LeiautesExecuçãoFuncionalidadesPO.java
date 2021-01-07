@@ -9,9 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseCristhian;
 
 public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
-	
-	
-
 	@FindBy(xpath = "//span[@class=\"icon icon-font-File-and-Folders icon-gooddoc padding-right \"]")
 	public WebElement sped;
 	

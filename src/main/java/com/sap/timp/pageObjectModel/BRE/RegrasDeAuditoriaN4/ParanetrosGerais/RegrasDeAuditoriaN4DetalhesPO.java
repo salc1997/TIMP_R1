@@ -139,7 +139,7 @@ public class RegrasDeAuditoriaN4DetalhesPO extends TestBaseEliel{
 		sucesso.add(nomevisualizar.contains(nomedetalhes));
 		
 		sucesso.add(primeirocampo1.contains(campo1detalhes));
-		sucesso.add(segundocampo1.contains(campo2detalhes));
+		sucesso.add(campo2detalhes.contains(segundocampo1));
 		
 		
 		System.out.println(sucesso);

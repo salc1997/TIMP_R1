@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -188,15 +189,25 @@
 >>>>>>> refs/remotes/origin/Eliel
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Eliel
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TAA.Agendamento.AgendamentoCancelar">
+=======
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
+>>>>>>> refs/remotes/origin/Eliel
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="cancelar"/>
           <include name="ingresarTAA"/>
+=======
+>>>>>>> refs/remotes/origin/Eliel
           <include name="afterClass"/>
+<<<<<<< HEAD
         </methods>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -217,11 +228,17 @@
       <class name="com.timp.test.ATR.AcessarATR">
 >>>>>>> refs/remotes/origin/Eliel
         <methods>
+=======
+>>>>>>> refs/remotes/origin/Eliel
           <include name="ATREntrar"/>
           <include name="beforeClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Eliel
           <include name="editar"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="excluirBRE"/>
@@ -238,7 +255,10 @@
           <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.AN3.AN3Funcionalidades -->
 =======
@@ -275,6 +295,9 @@
 =======
       </class> <!-- com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa -->
 >>>>>>> refs/remotes/origin/Steven
+=======
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

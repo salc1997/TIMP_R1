@@ -108,11 +108,11 @@ public class CodigoDeMotivosDeAjustesExcluirEmMassaPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeajustes.sendKeys("7");
+		codigodeajustes.sendKeys("77093");
 		
 		sleep(2000);
 		
-		descricaodeajustes.sendKeys("Teste");
+		descricaodeajustes.sendKeys("Teste 17093");
 		
 		sleep(2000);
 		
@@ -137,11 +137,11 @@ public class CodigoDeMotivosDeAjustesExcluirEmMassaPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeajustes.sendKeys("7");
+		codigodeajustes.sendKeys("07093");
 		
 		sleep(2000);
 		
-		descricaodeajustes.sendKeys("Teste");
+		descricaodeajustes.sendKeys("Teste 7093");
 		
 		sleep(2000);
 		

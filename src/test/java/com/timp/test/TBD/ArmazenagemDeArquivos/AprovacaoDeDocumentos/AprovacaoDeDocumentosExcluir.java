@@ -46,7 +46,7 @@ public class AprovacaoDeDocumentosExcluir extends TestBaseEliel {
 	 	public void excluir() {
 	 		
 	 		boolean sucesso = aprovacaoDeDocumentosExcluirPO.excluir();
-			assertTrue(sucesso, Criar);
+			assertTrue(sucesso, Eliminado);
 		
 	 		
 	 	}

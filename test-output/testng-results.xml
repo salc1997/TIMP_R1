@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-01-08T10:56:39Z" name="Default suite" finished-at="2021-01-08T10:57:46Z" duration-ms="66863">
+=======
+  <suite started-at="2021-01-08T06:17:29Z" name="Default suite" finished-at="2021-01-08T06:19:06Z" duration-ms="96645">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-01-08T10:56:39Z" name="Default test" finished-at="2021-01-08T10:57:46Z" duration-ms="66863">
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:39Z" name="beforeClass" finished-at="2021-01-08T07:56:52Z" duration-ms="12560" status="PASS">
+=======
+    <test started-at="2021-01-08T06:17:29Z" name="Default test" finished-at="2021-01-08T06:19:06Z" duration-ms="96645">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:29Z" name="beforeClass" finished-at="2021-01-08T03:17:43Z" duration-ms="13837" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:52Z" name="login" finished-at="2021-01-08T07:56:59Z" duration-ms="7307" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -95,6 +110,25 @@ Session ID: 830fdb7b7491aaacd07105b6c7eefac4
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas -->
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:43Z" name="login" finished-at="2021-01-08T03:17:52Z" duration-ms="8223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:52Z" name="acessarBRE" finished-at="2021-01-08T03:18:09Z" duration-ms="17197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:18:09Z" name="visualizar" finished-at="2021-01-08T03:19:06Z" duration-ms="57335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:19:06Z" name="afterClass" finished-at="2021-01-08T03:19:06Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

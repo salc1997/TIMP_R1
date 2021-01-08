@@ -437,6 +437,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		salvarcomocopia.click();
 		int rows1 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*")).size();	
 		int j=1;
+<<<<<<< HEAD
 		for (int i = 0; i < rows1; i++) {
 			waitExpectElement(text);
 			sleep(2000);
@@ -447,6 +448,18 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			//sucesso.add(sucesso1);
 			j++;
 		}/*
+=======
+		//for (int i = 0; i < rows1; i++) {
+		//	waitExpectElement(text);
+		//	sleep(2000);
+		//	String texto = "D197";
+			//String texto1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][10]/*/*["+j+"]")).getText();
+			//System.out.println(texto1);
+		//	boolean sucesso1 = texto1.contains(texto);
+		//	sucesso.add(sucesso1);
+		//	j++;
+		//}
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		if(rows1 > 1) {
 			System.out.println("2 frases");
 			waitExpectElement(text);
@@ -457,16 +470,16 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			boolean sucesso1 = texto1.contains(texto);
 			sucesso.add(sucesso1);
 		}else {
-			System.out.println("Uma frase");*/
-			//WebElement text1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*[1]"));
-			/*waitExpectElement(text1);
+			System.out.println("Uma frase");
+			WebElement text1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*[1]"));
+			waitExpectElement(text1);
 			sleep(2000);
 			String texto="D197";
 			String texto1= text1.getText();
 			System.out.println(texto1);
 			boolean sucesso1 =texto1.contains(texto);
 			sucesso.add(sucesso1);
-		}*/
+		}
 		//4 registro
 		adicionarcaminho.click();
 		sleep(1000);

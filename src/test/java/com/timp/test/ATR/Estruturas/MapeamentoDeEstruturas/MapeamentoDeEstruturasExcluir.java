@@ -1,4 +1,4 @@
-package com.timp.test.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos;
+package com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas;
 
 import static org.testng.Assert.assertTrue;
 
@@ -8,21 +8,23 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluirPO;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
-import com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluirPO;
 
-public class AprovacaoDeDocumentosExcluir extends TestBaseEliel {
+public class MapeamentoDeEstruturasExcluir extends TestBaseEliel {
+ 
 	LoginTC loginTC;
-	AcessarTBDPO acessarTBDPO;
-	AprovacaoDeDocumentosExcluirPO aprovacaoDeDocumentosExcluirPO;
+	AcessarATRPO acessarATRPO;
+	MapeamentoDeEstruturasExcluirPO mapeamentoDeEstruturasExcluirPO;
 	
 	@BeforeClass
 	  public void beforeClass() {
 		  
 		  driver = initializationE();
 		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  aprovacaoDeDocumentosExcluirPO = new  AprovacaoDeDocumentosExcluirPO();
+		  acessarATRPO = new AcessarATRPO();
+		  mapeamentoDeEstruturasExcluirPO = new  MapeamentoDeEstruturasExcluirPO();
 	  }
 
 	  @AfterClass
@@ -37,15 +39,15 @@ public class AprovacaoDeDocumentosExcluir extends TestBaseEliel {
 	 	}
 
 	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
+	 	public void ATREntrar() {
+	 		 acessarATRPO.acessarATR();
 	 		
 	 	}
 	 	
 	 	@Test(priority = 1)
 	 	public void excluir() {
 	 		
-	 		boolean sucesso = aprovacaoDeDocumentosExcluirPO.excluir();
+	 		boolean sucesso = mapeamentoDeEstruturasExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
 		
 	 		

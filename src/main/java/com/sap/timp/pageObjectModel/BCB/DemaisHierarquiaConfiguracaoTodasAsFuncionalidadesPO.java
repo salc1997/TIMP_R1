@@ -2465,6 +2465,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBa
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(executar);
 		sleep(2000);
 		
 		mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -2490,41 +2491,41 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBa
 		}
 		
 		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		pesquisar.sendKeys("1209");
-//		//pesquisar.sendKeys("1171");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		//351 para tp1
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1209\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1209\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(executar);
-//		sleep(2000);
+		sleep(2000);
+		configuracoes.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		configuracaoDaConsolidacao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idConfiguracaoExecutar = idObter5();
+		
+		pesquisar.sendKeys(idConfiguracaoExecutar);
+		//pesquisar.sendKeys("1171");
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracaoExecutar+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracaoExecutar+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		sleep(2000);
+		
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(executar);
+		sleep(2000);
 		
 	//HASTA AQUI
 
 		
-		sleep(1000);
+		sleep(2000);
 		executar.click();
 		sleep(3000);
 		waitExpectElement(executarM);
@@ -2742,24 +2743,24 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBa
 	public ArrayList<Boolean> excluirConfiguracoes2() {
 		//EXCLUIR CONFIGURACOES
 
-//		sleep(2000);
-//		biblioteca.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
+		sleep(2000);
+		biblioteca.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		System.out.println("*******EXCLUIR CONFIGURACOES 2************");
 		System.out.println("");
 		
-		sleep(2000);
-		configuracoes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		configuracaoDaConsolidacao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		sleep(2000);
+//		configuracoes.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+//		configuracaoDaConsolidacao.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		
 		String idConfiguracao2 = idObter5();

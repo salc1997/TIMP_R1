@@ -196,6 +196,8 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBase
 		}
 	}
 	
+	//desde aqui dividir para hacer version 2
+	
 	@Test(priority = 17)
 	public void ejecutarFinal() {
 		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.ejecutarFinal();

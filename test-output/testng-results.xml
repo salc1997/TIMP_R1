@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" total="23" passed="20">
 =======
 <<<<<<< HEAD
@@ -22,33 +23,66 @@
 =======
 >>>>>>> refs/remotes/origin/Steven
 <testng-results skipped="0" failed="1" total="3" passed="2">
+=======
+<testng-results total="11" passed="11" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="197231" started-at="2021-01-08T00:14:27Z" finished-at="2021-01-08T00:17:44Z">
+=======
+  <suite started-at="2021-01-07T23:32:52Z" name="Default suite" finished-at="2021-01-07T23:39:26Z" duration-ms="393593">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="197231" started-at="2021-01-08T00:14:27Z" finished-at="2021-01-08T00:17:44Z">
       <class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="17245" started-at="2021-01-07T18:14:27Z" finished-at="2021-01-07T18:14:44Z">
+=======
+    <test started-at="2021-01-07T23:32:52Z" name="Default test" finished-at="2021-01-07T23:39:26Z" duration-ms="393593">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:32:52Z" name="beforeClass" finished-at="2021-01-07T17:33:14Z" duration-ms="21446" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="login" duration-ms="10075" started-at="2021-01-07T18:14:44Z" finished-at="2021-01-07T18:14:54Z">
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:33:14Z" name="ingresar" finished-at="2021-01-07T17:33:22Z" duration-ms="8880" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Kenssy
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="mdrEntrar" duration-ms="15853" started-at="2021-01-06T13:29:34Z" finished-at="2021-01-06T13:29:50Z">
+=======
+        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:33:22Z" name="mdrEntrar" finished-at="2021-01-07T17:33:42Z" duration-ms="19906" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mdrEntrar -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="criar" duration-ms="141808" started-at="2021-01-06T13:29:50Z" finished-at="2021-01-06T13:32:12Z">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:33:42Z" name="criar" finished-at="2021-01-07T17:34:20Z" duration-ms="37956" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="BRE()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="BRE" duration-ms="111568" started-at="2021-01-06T13:32:12Z" finished-at="2021-01-06T13:34:04Z">
+=======
+        <test-method signature="separadores()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:34:20Z" name="separadores" finished-at="2021-01-07T17:35:10Z" duration-ms="50019" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- BRE -->
         <test-method status="PASS" signature="EditarDFG()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="EditarDFG" duration-ms="91513" started-at="2021-01-06T13:34:04Z" finished-at="2021-01-06T13:35:35Z">
           <reporter-output>
@@ -79,46 +113,60 @@
           </reporter-output>
         </test-method> <!-- contadorDeRegistro -->
         <test-method status="PASS" signature="criarConfiguracao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="criarConfiguracao" duration-ms="70120" started-at="2021-01-06T13:38:12Z" finished-at="2021-01-06T13:39:22Z">
+=======
+        </test-method> <!-- separadores -->
+        <test-method signature="dataInicialDeReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:35:10Z" name="dataInicialDeReferencia" finished-at="2021-01-07T17:36:00Z" duration-ms="50160" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criarConfiguracao -->
         <test-method status="PASS" signature="execucao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="execucao" duration-ms="87898" started-at="2021-01-06T13:39:22Z" finished-at="2021-01-06T13:40:50Z">
+=======
+        </test-method> <!-- dataInicialDeReferencia -->
+        <test-method signature="saltodeLinha()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:36:00Z" name="saltodeLinha" finished-at="2021-01-07T17:36:21Z" duration-ms="21009" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- execucao -->
         <test-method status="FAIL" signature="verificacaoBloco1()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="verificacaoBloco1" duration-ms="3543" started-at="2021-01-06T13:40:50Z" finished-at="2021-01-06T13:40:54Z">
 =======
         </test-method> <!-- executar -->
         <test-method signature="idPublicoPrivado()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:20:49Z" name="idPublicoPrivado" finished-at="2021-01-03T23:21:18Z" duration-ms="28896" status="PASS">
+=======
+        </test-method> <!-- saltodeLinha -->
+        <test-method signature="dataFinalDeReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:36:21Z" name="dataFinalDeReferencia" finished-at="2021-01-07T17:37:01Z" duration-ms="39856" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- idPublicoPrivado -->
-        <test-method signature="favorito()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:21:18Z" name="favorito" finished-at="2021-01-03T23:21:56Z" duration-ms="37591" status="PASS">
+        </test-method> <!-- dataFinalDeReferencia -->
+        <test-method signature="versao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:37:01Z" name="versao" finished-at="2021-01-07T17:37:27Z" duration-ms="25537" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- favorito -->
-        <test-method signature="informacao()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:21:56Z" name="informacao" finished-at="2021-01-03T23:22:05Z" duration-ms="8910" status="PASS">
+        </test-method> <!-- versao -->
+        <test-method signature="horaDaExecucao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:37:27Z" name="horaDaExecucao" finished-at="2021-01-07T17:38:07Z" duration-ms="39770" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- informacao -->
-        <test-method signature="oficializarArquivo()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:22:05Z" name="oficializarArquivo" finished-at="2021-01-03T23:22:23Z" duration-ms="18728" status="PASS">
+        </test-method> <!-- horaDaExecucao -->
+        <test-method signature="dataDaExecucao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:38:07Z" name="dataDaExecucao" finished-at="2021-01-07T17:38:46Z" duration-ms="39455" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oficializarArquivo -->
-        <test-method signature="lixeira()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:22:23Z" name="lixeira" finished-at="2021-01-03T23:23:40Z" duration-ms="76722" status="PASS">
+        </test-method> <!-- dataDaExecucao -->
+        <test-method signature="periodoDaReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:38:46Z" name="periodoDaReferencia" finished-at="2021-01-07T17:39:26Z" duration-ms="39551" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lixeira -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@332729ad]" started-at="2021-01-03T23:23:40Z" name="afterClass" finished-at="2021-01-03T23:23:40Z" duration-ms="0" status="PASS">
+        </test-method> <!-- periodoDaReferencia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@352c1b98]" started-at="2021-01-07T17:39:26Z" name="afterClass" finished-at="2021-01-07T17:39:26Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1352,3 +1400,5 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Steven
+=======
+>>>>>>> refs/remotes/origin/Kenssy

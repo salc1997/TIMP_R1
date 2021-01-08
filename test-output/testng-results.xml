@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
 =======
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-08T10:56:39Z" name="Default suite" finished-at="2021-01-08T10:57:46Z" duration-ms="66863">
 =======
   <suite started-at="2021-01-08T06:17:29Z" name="Default suite" finished-at="2021-01-08T06:19:06Z" duration-ms="96645">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-01-08T14:12:05Z" name="Default suite" finished-at="2021-01-08T14:14:39Z" duration-ms="153845">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-08T10:56:39Z" name="Default test" finished-at="2021-01-08T10:57:46Z" duration-ms="66863">
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas">
@@ -22,18 +33,32 @@
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:29Z" name="beforeClass" finished-at="2021-01-08T03:17:43Z" duration-ms="13837" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-01-08T14:12:05Z" name="Default test" finished-at="2021-01-08T14:14:39Z" duration-ms="153845">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:05Z" name="beforeClass" finished-at="2021-01-08T08:12:17Z" duration-ms="11830" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:52Z" name="login" finished-at="2021-01-08T07:56:59Z" duration-ms="7307" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:17Z" name="login" finished-at="2021-01-08T08:12:25Z" duration-ms="7676" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:59Z" name="acessarBRE" finished-at="2021-01-08T07:57:16Z" duration-ms="17184" status="PASS">
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:25Z" name="acessarBRE" finished-at="2021-01-08T08:12:40Z" duration-ms="15909" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarBRE -->
+<<<<<<< HEAD
         <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:57:16Z" name="editar" finished-at="2021-01-08T07:57:46Z" duration-ms="29780" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -106,9 +131,17 @@ Session ID: 830fdb7b7491aaacd07105b6c7eefac4
           </reporter-output>
         </test-method> <!-- editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:57:46Z" name="afterClass" finished-at="2021-01-08T07:57:46Z" duration-ms="1" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:40Z" name="criar" finished-at="2021-01-08T08:14:39Z" duration-ms="118410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:14:39Z" name="afterClass" finished-at="2021-01-08T08:14:39Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas -->
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:43Z" name="login" finished-at="2021-01-08T03:17:52Z" duration-ms="8223" status="PASS">
@@ -129,6 +162,9 @@ Session ID: 830fdb7b7491aaacd07105b6c7eefac4
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

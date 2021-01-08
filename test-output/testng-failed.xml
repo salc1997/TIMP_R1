@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,9 +37,12 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
 =======
@@ -47,7 +51,11 @@
 =======
       <class name="com.timp.test.TAA.Ajustes.AjustesCriar">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetNotaFiscal.S1250DetNotaFiscalExcluir">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,7 +65,12 @@
 =======
           <include name="criarRelacionamento"/>
 =======
+=======
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="ajustesCriar"/>
 >>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
@@ -90,7 +103,10 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -113,9 +129,13 @@
 =======
       </class> <!-- com.timp.test.TAA.Ajustes.AjustesCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetNotaFiscal.S1250DetNotaFiscalExcluir -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -280,3 +300,5 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando

@@ -224,11 +224,11 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-<<<<<<< HEAD
+
 		nome.sendKeys("TESTEAUTOMATIZADO N4 QAA - NÃO MEXER ");
-=======
+
 		nome.sendKeys("TESTEAUTOMATIZADO N4 Teste 1 - NÃO MEXER ");
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
 		sleep(1000);
 		
 		tipoDeRegra.click();

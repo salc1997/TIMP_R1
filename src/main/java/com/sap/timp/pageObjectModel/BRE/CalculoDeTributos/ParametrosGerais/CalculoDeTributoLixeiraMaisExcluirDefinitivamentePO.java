@@ -97,13 +97,11 @@ public class CalculoDeTributoLixeiraMaisExcluirDefinitivamentePO extends TestBas
 		if(id1 == id2)
 		{
 			System.out.println("Sim, o ID é o mesmo que foi criado");
-			boolean sucesso1=true;
-			sucesso.add(sucesso1);
+			
 			
 		}else {
 			System.out.println("Não é o mesmo ID");
-			boolean sucesso1 = false;
-			sucesso.add(sucesso1);
+		
 			
 		}
 		

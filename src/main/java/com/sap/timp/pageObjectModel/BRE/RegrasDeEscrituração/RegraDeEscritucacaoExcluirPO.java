@@ -66,14 +66,18 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		lixeira1.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(1000);
 		sim.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(mensagembloqueio);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		lixeira.click();
+
+		regradeescrituracao.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -91,18 +95,29 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		double id2 = convertToDouble(idRegistro);
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
-		if(id1 == id2)
+		if(id1 != id2)
 		{
-			System.out.println("Sim, o ID é o mesmo que foi criado");
+
 			boolean sucesso1=true;
 			sucesso.add(sucesso1);
 			
 		}else {
-			System.out.println("Não é o mesmo ID");
+
 			boolean sucesso1 = false;
 			sucesso.add(sucesso1);
 			
 		}
+		
+		sleep(2000);
+		lixeira.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		WebElement menu1= driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -114,15 +129,15 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(1000);
 		sim.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
 		waitExpectElement(mensagem);
-		sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+		sleep(3000);
+
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

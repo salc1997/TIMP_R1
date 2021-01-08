@@ -135,7 +135,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
 	public WebElement justi;
 	
-	@FindBy(xpath = "//span[text()=\"Lixeira\"]")
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash_rules\"]")
 	public WebElement lixeira;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
@@ -565,7 +565,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		//--------------------------- excluir em massa ---------------------------------
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		//waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

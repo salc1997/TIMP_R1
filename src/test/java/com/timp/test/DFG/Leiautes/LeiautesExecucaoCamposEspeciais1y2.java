@@ -53,5 +53,59 @@ public class LeiautesExecucaoCamposEspeciais1y2 extends TestBaseKenssy {
 			assertTrue(sucesso.get(i), Criar);
 		}
 	}
+	
+	@Test(priority = 2)
+	public void separadores() {
+		ArrayList<Boolean> sucesso =leiautesExecucaoCamposEspeciais1y2PO.separadores();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
+	
+	@Test(priority = 3)
+	public void comparar() {
+		ArrayList<Boolean> sucesso =leiautesExecucaoCamposEspeciais1y2PO.comparar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
+	
+	@Test(priority = 4)
+	public void criarConfiguracao() {
+		ArrayList<Boolean> sucesso =leiautesExecucaoCamposEspeciais1y2PO.criarConfiguracao();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
 
+	@Test(priority = 5)
+	public void executar() {
+		ArrayList<Boolean> sucesso =leiautesExecucaoCamposEspeciais1y2PO.executar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
+	
+	@Test(priority = 6)
+	public void excluirConfiguracao() {
+		ArrayList<Boolean> sucesso =leiautesExecucaoCamposEspeciais1y2PO.excluirConfiguracao();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
+	
+	@Test(priority = 7)
+	public void excluirLeiaute() {
+		ArrayList<Boolean> sucesso =leiautesExecucaoCamposEspeciais1y2PO.excluirLeiaute();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
+	
 }

@@ -49,7 +49,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		acessarDFGPO.acessarDFG();
 
 	}
-/*
+
 	@Test(priority = 2)
 	public void criar() {
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.criar();
@@ -69,7 +69,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void DFG() {
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.DFG();
 		
@@ -77,9 +77,9 @@ public class AN3Funcionalidades extends TestBaseSteven{
 			assertTrue(sucesso.get(i), Criar);
 		}
 	}
-	*/
+
 	
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void ExecucaoDFG() {
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.execucao();
 		
@@ -87,4 +87,165 @@ public class AN3Funcionalidades extends TestBaseSteven{
 			assertTrue(sucesso.get(i), Criar);
 		}
 	}
+	
+	
+	@Test(priority = 6)
+	public void Arquivos() {
+		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.arquivos();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+	}
+	
+
+	
+	@Test(priority = 7)
+	public void AN3() {
+		
+		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.DFGAN3();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+	
+	}
+
+	@Test(priority = 8)
+	public void publicoyPrivado() {
+		
+		boolean sucesso = an3FuncionalidadesPO.publicoYPrivado();
+
+		assertTrue(sucesso, descompartilharB);
+
+	
+	}
+
+	@Test(priority = 9)
+	public void favorito() {
+		
+		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.favorito();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Favoritos);
+		}
+
+	
+	}
+
+	@Test(priority = 10)
+	public void editar() {
+		
+		boolean sucesso = an3FuncionalidadesPO.editar();
+		
+		assertTrue(sucesso, Editar);
+
+	
+	}
+	
+	
+
+	
+	@Test(priority = 11)
+	public void informacao() {
+		
+		boolean sucesso = an3FuncionalidadesPO.informacao();
+		
+		assertTrue(sucesso, Editar);
+
+	
+	}
+	
+	
+	
+	@Test(priority = 12)
+	public void criarPastas() {
+		
+		boolean sucesso = an3FuncionalidadesPO.criarPasta();
+		
+		assertTrue(sucesso, Criar);
+
+	
+	}
+	
+	
+
+	@Test(priority = 13)
+	public void moverPasta() {
+		
+		boolean sucesso = an3FuncionalidadesPO.moverPasta();
+		
+		assertTrue(sucesso, Criar);
+
+	
+	}
+	
+
+	
+	@Test(priority = 14)
+	public void criarAN3Pasta2() {
+
+		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.criarAN3Pasta2();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+	}
+
+	@Test(priority = 15)
+	public void editarPasta() {
+			
+		boolean sucesso = an3FuncionalidadesPO.editarAN3Pasta2();
+			
+		assertTrue(sucesso, editado);
+
+		
+	}
+	
+
+	@Test(priority = 16)
+	public void excluirPasta() {
+			
+		boolean sucesso = an3FuncionalidadesPO.excluirPasta();
+			
+		assertTrue(sucesso, Eliminado);
+
+		
+	}
+
+	@Test(priority = 17)
+	public void excluirDFGConf() {
+		
+		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.excluirDFGConf();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+
+	
+	}
+	
+
+	@Test(priority = 18)
+	public void excluirDFG() {
+		
+		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.excluirDFG();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+	}
+	
+
+	@Test(priority = 19)
+	public void excluirBRE() {
+		
+		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.excluirBRE();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+
+	
+	}
+
+	
 }

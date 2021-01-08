@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" total="23" passed="20">
 =======
 <<<<<<< HEAD
@@ -200,7 +201,10 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -236,8 +240,11 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -301,8 +308,12 @@
 =======
   <suite started-at="2021-01-06T22:58:00Z" name="Default suite" finished-at="2021-01-06T22:58:54Z" duration-ms="54379">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-01-08T00:49:33Z" name="Default suite" finished-at="2021-01-08T00:53:11Z" duration-ms="217947">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -392,9 +403,15 @@
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:00Z" name="beforeClass" finished-at="2021-01-06T16:58:11Z" duration-ms="11582" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-01-08T00:49:33Z" name="Default test" finished-at="2021-01-08T00:53:11Z" duration-ms="217947">
+      <class name="com.timp.test.TAA.Ajustes.AjustesCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TAA.Ajustes.AjustesCriar@2cf3d63b]" started-at="2021-01-07T18:49:34Z" name="beforeClass" finished-at="2021-01-07T18:50:36Z" duration-ms="62342" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -427,8 +444,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:11Z" name="login" finished-at="2021-01-06T16:58:19Z" duration-ms="7542" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.TAA.Ajustes.AjustesCriar@2cf3d63b]" started-at="2021-01-07T18:50:36Z" name="ingresar" finished-at="2021-01-07T18:50:58Z" duration-ms="22525" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -469,7 +490,10 @@
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- ingresar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.SPED.ECF.ECFFuncionalidades@8f2ef19]" started-at="2020-12-28T10:01:21Z" name="mdrEntrar" finished-at="2020-12-28T10:01:36Z" duration-ms="14958" status="PASS">
@@ -477,8 +501,12 @@
 =======
         <test-method signature="AN4IdDFG()[pri:0, instance:com.timp.test.DFG.AN4.AN4Funcionalidades@7d0b7e3c]" started-at="2021-01-05T22:59:33Z" name="AN4IdDFG" finished-at="2021-01-05T23:00:00Z" duration-ms="27361" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+        <test-method signature="TAAEntrar()[pri:0, instance:com.timp.test.TAA.Ajustes.AjustesCriar@2cf3d63b]" started-at="2021-01-07T18:50:58Z" name="TAAEntrar" finished-at="2021-01-07T18:51:29Z" duration-ms="30621" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- ExecucaoDFG -->
         <test-method status="FAIL" signature="Arquivos()[pri:0, instance:com.timp.test.DFG.AN3.AN3Funcionalidades@3a079870]" name="Arquivos" duration-ms="28339" started-at="2020-12-31T16:23:57Z" finished-at="2020-12-31T16:24:26Z">
@@ -524,8 +552,13 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+        </test-method> <!-- TAAEntrar -->
+        <test-method signature="ajustesCriar()[pri:0, instance:com.timp.test.TAA.Ajustes.AjustesCriar@2cf3d63b]" started-at="2021-01-07T18:51:29Z" name="ajustesCriar" finished-at="2021-01-07T18:53:11Z" duration-ms="102425" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- verificacaoBloco1 -->
         <test-method status="PASS" signature="verificacaoBloco2()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="verificacaoBloco2" duration-ms="7931" started-at="2021-01-06T13:40:54Z" finished-at="2021-01-06T13:41:02Z">
@@ -1096,9 +1129,14 @@ Session ID: eb477cc56acad423d375c25cfdfd41aa
         </test-method> <!-- excluir -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4471" started-at="2021-01-07T18:17:39Z" finished-at="2021-01-07T18:17:44Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+        </test-method> <!-- ajustesCriar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TAA.Ajustes.AjustesCriar@2cf3d63b]" started-at="2021-01-07T18:53:11Z" name="afterClass" finished-at="2021-01-07T18:53:11Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1374,9 +1412,13 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 =======
       </class> <!-- com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa -->
 >>>>>>> refs/remotes/origin/Steven
+=======
+      </class> <!-- com.timp.test.TAA.Ajustes.AjustesCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1402,3 +1444,5 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 >>>>>>> refs/remotes/origin/Steven
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/remotes/origin/Yessy

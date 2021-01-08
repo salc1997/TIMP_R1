@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -19,7 +20,12 @@
 >>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+>>>>>>> refs/remotes/origin/Yessy
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoCriar">
         <methods>
           <include name="criar"/>
@@ -38,7 +44,11 @@
 =======
       <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      <class name="com.timp.test.TAA.Ajustes.AjustesCriar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Kenssy
@@ -46,7 +56,12 @@
 >>>>>>> refs/heads/Cristhian
 =======
           <include name="criarRelacionamento"/>
+=======
+          <include name="afterClass"/>
+          <include name="ajustesCriar"/>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
           <include name="criar"/>
@@ -73,7 +88,10 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -92,9 +110,13 @@
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4 -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.TAA.Ajustes.AjustesCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -256,3 +278,5 @@
 >>>>>>> refs/remotes/origin/Steven
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/remotes/origin/Yessy

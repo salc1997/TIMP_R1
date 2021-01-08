@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" total="23" passed="20">
 =======
 <<<<<<< HEAD
@@ -18,29 +19,24 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
-<testng-results skipped="0" failed="1" total="3" passed="2">
 =======
-<testng-results total="11" passed="11" failed="0" skipped="0">
->>>>>>> refs/heads/Fernando
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/master
 >>>>>>> refs/remotes/origin/Steven
->>>>>>> refs/remotes/origin/master
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1021173" started-at="2021-01-06T19:29:14Z" finished-at="2021-01-06T19:46:15Z">
+  <suite name="Default suite" duration-ms="197231" started-at="2021-01-08T00:14:27Z" finished-at="2021-01-08T00:17:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1021173" started-at="2021-01-06T19:29:14Z" finished-at="2021-01-06T19:46:15Z">
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="beforeClass" is-config="true" duration-ms="13718" started-at="2021-01-06T13:29:14Z" finished-at="2021-01-06T13:29:28Z">
+    <test name="Default test" duration-ms="197231" started-at="2021-01-08T00:14:27Z" finished-at="2021-01-08T00:17:44Z">
+      <class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="17245" started-at="2021-01-07T18:14:27Z" finished-at="2021-01-07T18:14:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="ingresar" duration-ms="6845" started-at="2021-01-06T13:29:28Z" finished-at="2021-01-06T13:29:34Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="login" duration-ms="10075" started-at="2021-01-07T18:14:44Z" finished-at="2021-01-07T18:14:54Z">
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ingresar -->
         <test-method status="PASS" signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="mdrEntrar" duration-ms="15853" started-at="2021-01-06T13:29:34Z" finished-at="2021-01-06T13:29:50Z">
           <reporter-output>
@@ -396,14 +392,21 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Steven
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir@6f45df59]" started-at="2021-01-07T09:11:30Z" name="acessarMDR" finished-at="2021-01-07T09:11:43Z" duration-ms="13074" status="PASS">
 =======
         <test-method signature="ATREntrar()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:19Z" name="ATREntrar" finished-at="2021-01-06T16:58:31Z" duration-ms="12371" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="acessarMDR" duration-ms="13902" started-at="2021-01-07T18:14:54Z" finished-at="2021-01-07T18:15:08Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir@6f45df59]" started-at="2021-01-07T09:11:43Z" name="excluir" finished-at="2021-01-07T09:12:57Z" duration-ms="74201" status="PASS">
@@ -432,16 +435,20 @@
         </test-method> <!-- ExecucaoDFG -->
         <test-method status="FAIL" signature="Arquivos()[pri:0, instance:com.timp.test.DFG.AN3.AN3Funcionalidades@3a079870]" name="Arquivos" duration-ms="28339" started-at="2020-12-31T16:23:57Z" finished-at="2020-12-31T16:24:26Z">
 >>>>>>> refs/remotes/origin/master
+=======
+        </test-method> <!-- acessarMDR -->
+        <test-method status="FAIL" signature="excluir()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="excluir" duration-ms="151521" started-at="2021-01-07T18:15:08Z" finished-at="2021-01-07T18:17:39Z">
+>>>>>>> refs/remotes/origin/Steven
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Os resultados não são acorde aos filtros expected [true] but found [false]]]>
+              <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Os resultados não são acorde aos filtros expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2.verificacaoBloco1(LeiautesExecucaoFuncionalidades2.java:163)
+	at com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa.excluir(SCANCDistribuidorasExcluirEmMasa.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -471,6 +478,7 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- verificacaoBloco1 -->
         <test-method status="PASS" signature="verificacaoBloco2()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@3a079870]" name="verificacaoBloco2" duration-ms="7931" started-at="2021-01-06T13:40:54Z" finished-at="2021-01-06T13:41:02Z">
           <reporter-output>
@@ -1036,9 +1044,14 @@ Session ID: eb477cc56acad423d375c25cfdfd41aa
         </test-method> <!-- filtrarPorIdMasLimpiarFiltros -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@5a5338df]" started-at="2021-01-06T16:58:54Z" name="afterClass" finished-at="2021-01-06T16:58:54Z" duration-ms="146" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- excluir -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4471" started-at="2021-01-07T18:17:39Z" finished-at="2021-01-07T18:17:44Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1310,9 +1323,13 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 =======
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa -->
+>>>>>>> refs/remotes/origin/Steven
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1333,3 +1350,5 @@ Session ID: 2cd9c99ffc765030755eff0f8f11b29f
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Steven

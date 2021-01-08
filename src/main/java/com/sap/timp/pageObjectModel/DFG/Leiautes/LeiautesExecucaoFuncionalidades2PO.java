@@ -274,6 +274,9 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"action-section\"]/div[2]/div/div/div/input")
 	public WebElement acoes;
 	
+	@FindBy(xpath = "//div[@class=\"action-section\"]/div[2]/div[2]/div/div[1]/div/div/div/div/div/input")
+	public WebElement acoesTQ1;
+	
 
 	@FindBy(xpath = "//button[text()=\"Editar\"]")
 	public WebElement editar;
@@ -994,11 +997,14 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		
 		boolean tp1  = false;
 		boolean tc2  = false;
+		boolean tq1  = false;
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
 		}else if(url.contains("tc2")) {
 			tc2 = true;
+		}else {
+			tq1 = true;
 		}
 		home.click();
 		sleep(3000);
@@ -1126,10 +1132,16 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		condicao3.sendKeys(Keys.ENTER);
 		sleep(1000);
 		
-		
-		acoes.sendKeys("Valor de Ajuste menor que 10.000,00");
-		acoes.sendKeys(Keys.ENTER);
-		sleep(1000);
+		if (tq1 ==true) {
+			acoesTQ1.sendKeys("Valor de Ajuste menor que 10.000,00");
+			acoesTQ1.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}else {
+			acoes.sendKeys("Valor de Ajuste menor que 10.000,00");
+			acoes.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
+
 		
 		aplicar.click();
 		sleep(3000);
@@ -1842,7 +1854,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		System.out.println("--------------------------------------Regras de Negocio---------------------------");
 		for (int i = 0; i < rows; i++) {
 			
-			System.err.println("Registro: " + f);
+			System.out.println("Registro: " + f);
 			String valorAjuste = driver.findElement(By.xpath("//div[@class=\"tr-content\" and @id]["+f+"]/div[1]/div")).getText();
 			String mensagem = driver.findElement(By.xpath("//div[@class=\"tr-content\" and @id]["+f+"]/div[2]/div")).getText();
 			

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,17 +101,18 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/remotes/origin/master
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Steven
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
+      <class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa">
         <methods>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="verificacaoBloco6"/>
-          <include name="excluirDFG"/>
-          <include name="verificacaoBloco1"/>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
 =======
@@ -212,9 +214,13 @@
 =======
       </class> <!-- com.timp.test.TAA.Agendamento.AgendamentoCancelar -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa -->
+>>>>>>> refs/remotes/origin/Steven
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -230,3 +236,5 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Steven

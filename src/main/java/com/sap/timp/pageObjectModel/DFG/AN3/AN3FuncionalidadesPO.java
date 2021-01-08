@@ -182,6 +182,9 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
 	public WebElement componente;
 	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ1;
+	
 	@FindBy(xpath = "//li[text()=\"DFG\"]")
 	public WebElement componenteO;
 	
@@ -253,6 +256,11 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@class=\"action-section\"]/div[2]/div/div/div/input")
 	public WebElement acoes;
+	
+	@FindBy(xpath = "//div[@class=\"action-section\"]/div[2]/div[2]/div/div[1]/div/div/div/div/div/input")
+	public WebElement acoesTQ1;
+	
+	
 	
 
 	@FindBy(xpath = "//button[text()=\"Editar\"]")
@@ -739,9 +747,12 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		String url = driver.getCurrentUrl();
 		
 		boolean tp1  = false;
+		boolean tq1  = false;
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
+		}else if (url.contains("tp1")){
+			tq1 = true;
 		}
 		home.click();
 		sleep(3000);
@@ -782,7 +793,13 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		tipoRegraO.click();
 		sleep(1000);
 		
-		componente.click();
+		
+		if (tq1 == true) {
+			componenteTQ1.click();
+		}else {
+			componente.click();
+		}
+		
 		sleep(1000);
 		componenteO.click();
 		sleep(1000);
@@ -868,9 +885,16 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		condicao3O.click();
 		sleep(1000);
 		
-		acoes.sendKeys("TESTE");
-		acoes.sendKeys(Keys.ENTER);
-		sleep(1000);
+		if (tq1 == true) {
+			acoesTQ1.sendKeys("TESTE");
+			acoesTQ1.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}else {
+			acoes.sendKeys("TESTE");
+			acoes.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
+
 		
 		aplicar.click();
 		sleep(3000);

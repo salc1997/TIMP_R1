@@ -24,7 +24,7 @@ public class CalculodeTributosTabelasPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
-	@FindBy(xpath = "//li[text()=\"ALIQUOTA INTERNA\"]")
+	@FindBy(xpath = "//li[@id=\"option-220\"]")
 	public WebElement seleccionTabela;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")
@@ -127,6 +127,9 @@ public boolean editar() {
 	
 	inputSeleccionTabela.click();
 	sleep(3000);
+	
+	actionsMoveToElementXpath("//li[@id=\"option-220\"]");
+	
 	seleccionTabela.click();
 	sleep(3000);
 	sleep(3000);
@@ -167,6 +170,9 @@ public boolean editar() {
 	
 	grabar.click();
 	sleep(2000);
+	
+	waitExpectElement(sim);
+	sleep(3000);
 	
 	sim.click();
 	sleep(3000);

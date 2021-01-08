@@ -49,7 +49,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 
-		driver.get(tp1);
+		driver.get(tq1);
  
 	   return driver;
 	}
@@ -190,7 +190,65 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 	}
 
+	public void idInserir9(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR9", idRegistro);
+
+	}
+
+	public String idObter9() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR9", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
 	
+	public void idInserir10(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR10", idRegistro);
+
+	}
+
+	public String idObter10() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR10", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir11(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR11", idRegistro);
+
+	}
+
+	public String idObter11() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR11", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
 	
 
 

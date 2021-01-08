@@ -224,7 +224,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTEAUTOMATIZADO N4 QA - NÃO MEXER ");
+		nome.sendKeys("TESTEAUTOMATIZADO N4 Teste 1 - NÃO MEXER ");
 		sleep(1000);
 		
 		tipoDeRegra.click();
@@ -379,9 +379,11 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 		mensagem.sendKeys("Teste automatizado");
 		
 		sleep(1000);
-		
+		waitExpectElement(Gravar);
+		sleep(2000);
 		Gravar.click();
 		sleep(1000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

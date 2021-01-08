@@ -305,7 +305,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		sleep(2000);
 		configuracoes.click();
 		sleep(2000);
-		String nome1 = "TESTE AUTOMATIZADO - NAO MEXER";
+		String nome1 = "TESTE AUTOMATIZADO 007 - NAO MEXER";
 		
 		nome.clear();
 		sleep(1000);

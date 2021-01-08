@@ -203,7 +203,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO NEGOCIOS 3 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO NEGOCIOS 007 - NAO MEXER");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -443,8 +443,8 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			String texto = "D197";
 			String texto1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][10]/*/*["+j+"]")).getText();
 			System.out.println(texto1);
-			boolean sucesso1 = texto1.contains(texto);
-			sucesso.add(sucesso1);
+			//boolean sucesso1 = texto1.contains(texto);
+			//sucesso.add(sucesso1);
 			j++;
 		}/*
 		if(rows1 > 1) {
@@ -548,12 +548,13 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
+		System.out.println("p1");
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir1(idB);
+		
 
 		System.out.println(id);
-		System.out.println(idB);
+		System.out.println("Ultimo: "+idB);
 		double idD = convertToDouble(id);
 		double idBD = convertToDouble(idB);
 		

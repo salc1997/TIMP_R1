@@ -113,7 +113,7 @@ public class ObservaçõesdoDocumentoFiscalExcluirEmMassaPO extends TestBaseEliel{
 		sleep(2000);
 		opcaoid.click();
 		sleep(2000);
-		descricaosped.sendKeys("Descrição SPED");
+		descricaosped.sendKeys("Descrição SPED 709312");
 		
 		String data = dataanterior();
 		
@@ -141,7 +141,7 @@ public class ObservaçõesdoDocumentoFiscalExcluirEmMassaPO extends TestBaseEliel{
 		sleep(2000);
 		opcaoid.click();
 		sleep(2000);
-		descricaosped.sendKeys("Descrição SPED");
+		descricaosped.sendKeys("Descrição SPED 709356");
 		
 		datavigencia.sendKeys(data);
 		

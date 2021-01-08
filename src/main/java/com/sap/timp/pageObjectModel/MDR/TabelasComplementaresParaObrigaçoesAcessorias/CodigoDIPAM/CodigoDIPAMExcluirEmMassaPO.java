@@ -115,7 +115,7 @@ public class CodigoDIPAMExcluirEmMassaPO extends TestBaseEliel {
 
 		sleep(2000);
 
-		descricao.sendKeys("Teste");
+		descricao.sendKeys("Teste 31");
 
 		sleep(2000);
 
@@ -149,7 +149,7 @@ public class CodigoDIPAMExcluirEmMassaPO extends TestBaseEliel {
 
 		sleep(2000);
 
-		descricao.sendKeys("Teste");
+		descricao.sendKeys("Teste55");
 
 		sleep(2000);
 

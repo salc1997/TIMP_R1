@@ -42,11 +42,7 @@ public class TestBaseKenssy extends TestBaseSteven{
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-<<<<<<< HEAD
-		driver.get(tc2);
-=======
 		driver.get(tp1);
->>>>>>> refs/remotes/origin/Kenssy
 		return driver;
 	}
 

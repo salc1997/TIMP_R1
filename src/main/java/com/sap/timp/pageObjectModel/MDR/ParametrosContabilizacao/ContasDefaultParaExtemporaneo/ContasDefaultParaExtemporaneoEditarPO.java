@@ -18,7 +18,10 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"field item-2\" and @id=\"adjustmentCode\"]/div/div[2]")
 	public WebElement codigodeajuste;
 	
-	@FindBy(xpath = "//li[@id][2]")
+	@FindBy(xpath = "//div[@class=\"field item-2\"]/div/div[1]/input")
+	public WebElement codigodeajuste1;
+	
+	@FindBy(xpath = "//li[@id=\"option-2\"]")
 	public WebElement opcaocodigodeajuste;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -76,15 +79,20 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		//ediçao
+		 
+		waitExpectElement(codigodeajuste);
+		sleep(2000);
 		
 		codigodeajuste.click();
 		sleep(2000);
 		opcaocodigodeajuste.click();
+		sleep(2000);
+		sleep(2000);
 		
-		String opcaoTexto = opcaocodigodeajuste.getText();
+		String opcaoTexto = codigodeajuste1.getAttribute("value");
 		System.out.println("opção selecionada: " +opcaoTexto);
 		
-		sleep(2000);
+		sleep(4000);
 		gravar.click();
 		sleep(2000);
 		sim.click();

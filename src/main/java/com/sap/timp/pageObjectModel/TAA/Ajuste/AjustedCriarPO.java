@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TAA.Ajusted;
+package com.sap.timp.pageObjectModel.TAA.Ajuste;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -68,13 +68,24 @@ public class AjustedCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"ajusteValue\"]/div/div/input")
 	public WebElement valorAjuste;
 	
+	@FindBy(xpath = "//div[@id=\"dtLanc\"]/div/div/input")
+	public WebElement fechaLancamento;
+	
+	@FindBy(xpath = "//body/div[@class=\"overlay dark\"][2]/div/div[3]/button[1]")
+	public WebElement no;
+	
+	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
+	public WebElement gravar;
+	
+	@FindBy(xpath = "//button[text()=\"Confirmar\"]")
+	public WebElement confirmar;
 	
 	public   AjustedCriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void criar() {
+	public boolean criar() {
 		
 		String url = driver.getCurrentUrl();
 
@@ -268,7 +279,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(valorAjuste);
+		waitExpectElement(gravar);
 		sleep(2000);
 		
 		valorAjuste.click();
@@ -277,8 +288,48 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		valorAjuste.sendKeys("23");
-		valorAjuste.sendKeys(Keys.ENTER);
+		sleep(2000);
 		
+		fechaLancamento.sendKeys(fechaActual());
+		sleep(2000);
+		
+		gravar.click();
+		sleep(4000);
+		
+		confirmar.click();
+		sleep(4000);
+		
+		no.click();
+		sleep(4000);
+		
+		confirmar.click();
+		sleep(4000);
+		
+		waitExpectElement(nueva);
+		sleep(2000);
+		
+		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String idN = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		idInserir1(idN );
+		System.out.println("Id Nuevo"+id);
+		
+
+		  
+		sleep(2000); 
+		System.out.println(id); 
+		System.out.println(idN);
+		  
+		boolean sucesso = false;
+		double idD = Integer.valueOf(id); 
+		double idBD = Integer.valueOf(idN);
+		
+		if (idBD > idD) { 
+			sucesso = true; 
+		}else { 
+			sucesso = false; 
+		}
+		  
+		return sucesso;	
 		
 		
 	}

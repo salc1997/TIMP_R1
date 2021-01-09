@@ -166,6 +166,10 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/div[1]/div/div[1]/input")
 	public WebElement Condicoes1;
 	
+	
+	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
+	public WebElement adicionarCaminho;
+	
 	//@FindBy(xpath = "//div[@id=\"T74\"]/div/label/span")
 	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro 1210\"]")
 	public WebElement opcaoacoesr4;
@@ -437,7 +441,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		salvarcomocopia.click();
 		int rows1 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*")).size();	
 		int j=1;
-<<<<<<< HEAD
+
 		for (int i = 0; i < rows1; i++) {
 			waitExpectElement(text);
 			sleep(2000);
@@ -447,19 +451,8 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			//boolean sucesso1 = texto1.contains(texto);
 			//sucesso.add(sucesso1);
 			j++;
-		}/*
-=======
-		//for (int i = 0; i < rows1; i++) {
-		//	waitExpectElement(text);
-		//	sleep(2000);
-		//	String texto = "D197";
-			//String texto1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][10]/*/*["+j+"]")).getText();
-			//System.out.println(texto1);
-		//	boolean sucesso1 = texto1.contains(texto);
-		//	sucesso.add(sucesso1);
-		//	j++;
-		//}
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+		}
+
 		if(rows1 > 1) {
 			System.out.println("2 frases");
 			waitExpectElement(text);

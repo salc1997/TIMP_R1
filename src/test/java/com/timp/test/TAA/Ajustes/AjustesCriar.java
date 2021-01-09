@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
-import com.sap.timp.pageObjectModel.TAA.Ajusted.AjustedCriarPO;
+import com.sap.timp.pageObjectModel.TAA.Ajuste.AjustedCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -43,16 +43,10 @@ public class AjustesCriar extends TestBaseMassiel{
   
   @Test(priority = 2)
  	public void ajustesCriar() {
-	  ajustedCriarPO.criar();
+	  boolean sucesso = ajustedCriarPO.criar();
+		assertTrue(sucesso, Criar);
 
  	}
 
- /* public void editarAN4() {
 
-		
-		boolean sucesso = aN4FuncionalidadesPO.EditarRegraN4();
-		assertTrue(sucesso, Criar);
-		
-
-	}*/
 }

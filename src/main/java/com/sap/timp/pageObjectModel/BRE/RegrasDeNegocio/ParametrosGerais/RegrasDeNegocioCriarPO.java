@@ -453,6 +453,20 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			j++;
 		}
 
+<<<<<<< HEAD
+=======
+		//for (int i = 0; i < rows1; i++) {
+		//	waitExpectElement(text);
+		//	sleep(2000);
+		//	String texto = "D197";
+			//String texto1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][10]/*/*["+j+"]")).getText();
+			//System.out.println(texto1);
+		//	boolean sucesso1 = texto1.contains(texto);
+		//	sucesso.add(sucesso1);
+		//	j++;
+		//
+
+>>>>>>> refs/heads/master
 		if(rows1 > 1) {
 			System.out.println("2 frases");
 			waitExpectElement(text);

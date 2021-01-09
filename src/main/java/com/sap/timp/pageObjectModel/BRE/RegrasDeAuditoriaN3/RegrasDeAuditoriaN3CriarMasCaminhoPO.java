@@ -27,6 +27,9 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Auditoria Nvl 3\"][1]")
 	public WebElement opcTipoDeRegra;
 	
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
+	public WebElement componenteTq1;
+	
 	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
 	public WebElement componente;
 	
@@ -154,7 +157,11 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		
 		nome.click();
 		sleep(1000);
+
 		nome.sendKeys("TA-TESTE QA - NÃO MEXER 1");
+
+		nome.sendKeys("TA-TESTE - NÃO MEXER");
+
 		sleep(1000);
 		
 		tipoDeRegra.click();
@@ -162,7 +169,14 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		opcTipoDeRegra.click();
 		sleep(1000);
 		
-		componente.click();
+		String URL = driver.getCurrentUrl();
+		
+		if(URL.contains("tq1")) {
+			componenteTq1.click();
+		}else {
+			componente.click();
+		}
+		
 		sleep(1000);
 		opcionComponente.click();
 		sleep(1000);
@@ -175,8 +189,6 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		
 		grupoDeEstrutura.click();
 		sleep(1000);
-		
-		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tp1")) {
 			WebElement opcionGrupoDeEstrutura = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"Ajustes\"][1]"));

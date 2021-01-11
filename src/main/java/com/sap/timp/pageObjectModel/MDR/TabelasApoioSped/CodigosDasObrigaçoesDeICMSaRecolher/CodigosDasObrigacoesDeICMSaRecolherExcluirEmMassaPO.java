@@ -95,11 +95,11 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		//Primeiro Registro
 		
-		codigodeobrigaçoesdeicms.sendKeys("071");
+		codigodeobrigaçoesdeicms.sendKeys("0770931");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de ICMS");
+		descricao.sendKeys("Teste de ICMS 7093");
 		
 		sleep(2000);
 		
@@ -118,11 +118,11 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO extends TestBas
 		
 		//Segundo Registro
 		
-		codigodeobrigaçoesdeicms.sendKeys("077");
+		codigodeobrigaçoesdeicms.sendKeys("7093077");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de ICMS");
+		descricao.sendKeys("Teste de ICMS 7093");
 		
 		sleep(2000);
 		

@@ -139,10 +139,10 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 	public WebElement salvarcomocopia;
 	
 	
-	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[7]/*/*")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[10]/*/*")
 	public WebElement r2;
 	
-	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[5]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[4]")
 	public WebElement primeiracaixar2;
 	
 	@FindBy(xpath = "//button[text()=\"Remover\"]")
@@ -228,7 +228,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		sleep(1000);
 		codigo.clear();
 		sleep(1000);
-		codigo.sendKeys("r2");
+		codigo.sendKeys("r3");
 		sleep(1000);
 		acoes.clear();
 		acoes.sendKeys("Teste Auditoria N3");
@@ -269,7 +269,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int removerr2 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[7]/*/*")).size();
+		int removerr2 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[10]/*/*")).size();
 		if(removerr2 == 0)
 		{
 			System.out.println("Caminho r2 foi removido");

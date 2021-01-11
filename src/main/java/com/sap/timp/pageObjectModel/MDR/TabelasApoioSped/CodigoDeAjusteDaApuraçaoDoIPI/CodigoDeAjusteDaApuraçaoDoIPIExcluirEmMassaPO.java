@@ -101,7 +101,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassaPO extends TestBaseEliel
 		sleep(2000);
 		//Primeiro Registro
 		
-		codigo.sendKeys("0778");
+		codigo.sendKeys("07798");
 		
 		sleep(2000);
 		
@@ -111,7 +111,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassaPO extends TestBaseEliel
 		opcaoindicadorajuste.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste do IPI 1");
+		descricao.sendKeys("Teste do IPI 7093");
 		
 		sleep(2000);
 		
@@ -130,7 +130,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassaPO extends TestBaseEliel
 		
 		//Segundo Registro
 		
-		codigo.sendKeys("077");
+		codigo.sendKeys("01277");
 		
 		sleep(2000);
 		
@@ -140,7 +140,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassaPO extends TestBaseEliel
 		opcaoindicadorajuste.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste do IPI 1");
+		descricao.sendKeys("Teste do IPI 7093");
 		
 		sleep(2000);
 		

@@ -253,7 +253,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE QA 2");
+		nome.sendKeys("TESTE QAA 2");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -337,8 +337,8 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		sleep(8000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer fila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer fila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int fila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int fila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		fila2 = fila2 - 1; 
 		
 		WebElement selecccionuno = driver.findElement(By.xpath("//div[@data-id]["+fila1+"]/div[2]/label/span"));
@@ -382,17 +382,18 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		sleep(8000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer lfila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer lfila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int lfila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int lfila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		fila2 = lfila2 - 1; 
-		
+		System.out.println("1: "+lfila1);
+		System.out.println("2: "+fila2);
 		WebElement lselecccionuno = driver.findElement(By.xpath("//div[@data-id]["+lfila1+"]/div[2]/label/span"));
 		lselecccionuno.click();
-		WebElement lselecccionDos = driver.findElement(By.xpath("//div[@data-id]["+lfila2+"]/div[2]/label/span"));
+		WebElement lselecccionDos = driver.findElement(By.xpath("//div[@data-id]["+fila2+"]/div[2]/label/span"));
 		lselecccionDos.click();
-		
+		sleep(2000);
 		WebElement lexcluirmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Sign-and-Symbols icon-persign\"]"));
-		excluirmassa.click();
+		lexcluirmassa.click();
 		
 		
 		sleep(2000);

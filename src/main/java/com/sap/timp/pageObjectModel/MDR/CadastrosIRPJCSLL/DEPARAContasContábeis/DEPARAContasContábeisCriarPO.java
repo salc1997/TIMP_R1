@@ -93,7 +93,7 @@ public class DEPARAContasContábeisCriarPO extends TestBaseMassiel{
 	   invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	   sleep(2000);
 	   
-	   planoContais.sendKeys("Test4");
+	   planoContais.sendKeys("Test421");
 	   planoContais.sendKeys(Keys.ENTER);
 	   invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	   sleep(2000);

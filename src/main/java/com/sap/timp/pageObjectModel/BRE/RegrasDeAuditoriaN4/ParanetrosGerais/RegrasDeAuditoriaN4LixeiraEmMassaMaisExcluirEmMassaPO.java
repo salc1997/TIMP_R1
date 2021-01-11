@@ -135,7 +135,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
 	public WebElement justi;
 	
-	@FindBy(xpath = "//span[text()=\"Lixeira\"]")
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash_rules\"]")
 	public WebElement lixeira;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
@@ -513,7 +513,11 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		rows = rows-1;
+		
+		if(rows > 1) {
+			rows = rows-1;
+		}
+		
 		
 		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
@@ -545,7 +549,9 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		check1.click();
 		sleep(2000);
 		
-		rows1 = rows1-1;
+		if(rows1 > 1) {
+			rows1 = rows1-1;
+		}
 		
 		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[2]/label/span"));
 		check2.click();
@@ -565,7 +571,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		//--------------------------- excluir em massa ---------------------------------
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		//waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -580,7 +586,9 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		String idRegistro1lixeira = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[3]/div")).getText();
 		
-		rows2 = rows2-1;
+		if(rows2 > 1) {
+			rows2 = rows2-1;
+		}
 		
 		String idRegistro2lixeira = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[3]/div")).getText();
 		
@@ -609,7 +617,9 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		check3.click();
 		sleep(2000);
 		
-		rows3 = rows3-1;
+		if(rows3 > 1) {
+			rows3 = rows3-1;
+		}
 		
 		WebElement check4 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows3+"]/div[2]/label/span"));
 		check4.click();

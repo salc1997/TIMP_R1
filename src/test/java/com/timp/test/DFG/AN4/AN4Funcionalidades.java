@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
 public class AN4Funcionalidades extends TestBaseMassiel{
@@ -35,7 +37,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 		loginTC.login();
 	}
 
-/*	@Test(priority = 1)
+	@Test(priority = 1)
 	public void DFGEntrar() {
 		acessarDFGPO.acessarDFG();
 
@@ -75,7 +77,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 		boolean sucesso = aN4FuncionalidadesPO.CriarRegra();
 		assertTrue(sucesso, Criar);
-	}*/
+	}
 	
 	@Test(priority = 7)
 	public void AN4IdDFG() {
@@ -84,7 +86,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 	}
 	
-	/*@Test(priority = 8)
+	@Test(priority = 8)
 	public void criarRaizDFG() {
 
 		boolean sucesso = aN4FuncionalidadesPO.CriarConfiguracoe();
@@ -100,15 +102,62 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 		assertTrue(sucesso, Criar);
 		
 
-	}*/
+	}
 	
 	@Test(priority = 10)
 	public void executarDFG() {
 
-		aN4FuncionalidadesPO. ExecutarConfiguracao();
-		//boolean sucesso = 
-		//assertTrue(sucesso, Criar);
+		
+		ArrayList<Boolean> sucesso = aN4FuncionalidadesPO. ExecutarConfiguracao(); 
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 		
 
 	}
+	
+	@Test(priority = 11)
+	public void criarAN4() {
+
+		
+		boolean sucesso = aN4FuncionalidadesPO.RegraN4();
+		assertTrue(sucesso, Criar);
+		
+
+	}
+
+	@Test(priority = 12)
+	public void editarAN4() {
+
+		
+		boolean sucesso = aN4FuncionalidadesPO.EditarRegraN4();
+		assertTrue(sucesso, Criar);
+		
+
+	}
+	
+	@Test(priority = 13)
+	public void executarAN4() {
+
+	
+		ArrayList<Boolean> sucesso = aN4FuncionalidadesPO.ExecutarRegraN4();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
+		
+
+	}
+	
+	@Test(priority = 14)
+	public void lixeriarAN4() {
+
+		
+		boolean sucesso = aN4FuncionalidadesPO.LixeriaRegraN4();
+		assertTrue(sucesso, Criar);
+		
+
+	}
+	
 }

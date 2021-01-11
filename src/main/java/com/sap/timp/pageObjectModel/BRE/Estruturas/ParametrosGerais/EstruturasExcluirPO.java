@@ -77,15 +77,37 @@ public class EstruturasExcluirPO extends TestBaseCristhian{
 		sleep(2000);
 
 
+		driver.navigate().refresh();
+		waitExpectElement(ultimapagina);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		estruturas.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		boolean sucesso1=true;
-		sucesso.add(sucesso1);
+		double id1 = convertToInt(id);
+		double id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
+		
+		if (id1 != id2) {
+			boolean sucesso1=true;
+			sucesso.add(sucesso1);
+		}
+	
 		
 		System.out.println(sucesso);
 		return sucesso;

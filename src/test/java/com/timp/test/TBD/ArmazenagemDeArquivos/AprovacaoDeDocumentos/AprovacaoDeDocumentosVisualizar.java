@@ -50,7 +50,7 @@ public class AprovacaoDeDocumentosVisualizar extends TestBaseEliel {
 	 		
 	 		ArrayList<Boolean> sucesso = aprovacaoDeDocumentosVisualizarPO.visualizar();
 			for (int i = 0; i < sucesso.size(); i++) {
-				assertTrue(sucesso.get(i), Criar);
+				assertTrue(sucesso.get(i), visualizaçar);
 			}
 	 		
 		

@@ -103,11 +103,11 @@ public class TabelaCodigoDaSituaçãoTributáriaExcluirEmMassaPO extends TestBaseEl
 		opcaotributo.click();
 		
 		sleep(2000);
-		codigocst.sendKeys("17");
+		codigocst.sendKeys("709317");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA 2");
+		descricao.sendKeys("Teste QA 70932");
 		
 		sleep(2000);
 		
@@ -133,11 +133,11 @@ public class TabelaCodigoDaSituaçãoTributáriaExcluirEmMassaPO extends TestBaseEl
 		opcaotributo.click();
 		
 		sleep(2000);
-		codigocst.sendKeys("77");
+		codigocst.sendKeys("770937");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA 2");
+		descricao.sendKeys("Teste QA 27093");
 		
 		sleep(2000);
 		

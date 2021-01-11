@@ -17,6 +17,7 @@ encoding//src/main/java/com/sap/timp/pageObjectModel/BRE/RegrasdeAuditoriaN2/Reg
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/AN3/AN3FuncionalidadesPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/Leiautes/LeiautesExecucaoFuncionalidades2PO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ECD/ECDFuncionalidadesPO.java=UTF-8
+encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/EFDICMSIPI/Contribui\u00E7\u00F5esFuncionalidadesPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/EFDICMSIPI/EFDICMSIPICriarPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ESocial/S1200/S1200AlterarDadosDoEventoPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ESocial/S1200/S1200GerarDadosDoEventoPO.java=UTF-8

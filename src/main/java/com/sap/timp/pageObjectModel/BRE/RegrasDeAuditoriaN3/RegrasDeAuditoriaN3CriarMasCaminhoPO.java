@@ -102,8 +102,11 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Código da filial(Bloco 1 Teste-Registro 1 Teste-18S3C0) (ED)\"][1]")
 	public WebElement opcioncboNomeDoValor;
 	
-	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/input")
+	@FindBy(xpath = "//div[@id=\"parameter-selection-input-1\"]/div/div/div/input")
 	public WebElement acoes;
+	
+	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/input")
+	public WebElement acoes2;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement btnNao;
@@ -157,8 +160,6 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		
 		nome.click();
 		sleep(1000);
-
-		nome.sendKeys("TA-TESTE QA - NÃO MEXER 1");
 
 		nome.sendKeys("TA-TESTE - NÃO MEXER");
 
@@ -231,7 +232,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		
 		// Opcion para TP1
 		if(URL.contains("tp1")) {
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID336-TA-TESTE (Complemento BRE)\"][1]"));
+			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID547-TA-TESTE (Complemento BRE)\"][1]"));
 			opcionLeiaute.click();
 			sleep(1000);
 		}
@@ -281,11 +282,21 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		opcioncboNomeDoValor.click();
 		sleep(1000);
 		
-		acoes.click();
-		sleep(1000);
-		acoes.sendKeys("Teste Auditoria N3");
-		acoes.sendKeys(Keys.ENTER);
-		sleep(1000);
+		if(URL.contains("tq1")) {
+			acoes.click();
+			sleep(1000);
+			acoes.sendKeys("Teste Auditoria N3");
+			acoes.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
+		
+		if(URL.contains("tp1") || URL.contains("tc2")) {
+			acoes2.click();
+			sleep(1000);
+			acoes2.sendKeys("Teste Auditoria N3");
+			acoes2.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
 		
 		aplicar.click();
 		sleep(2000);

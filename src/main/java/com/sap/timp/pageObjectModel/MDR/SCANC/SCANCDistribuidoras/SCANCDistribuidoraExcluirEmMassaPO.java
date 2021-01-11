@@ -33,6 +33,9 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
+	
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
@@ -161,6 +164,57 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
+		empresa.click();
+		sleep(2000);
+		opcao.click();
+		opcao.sendKeys(Keys.ESCAPE);
+		sleep(2000);
+		
+		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		sleep(2000);
+		
+		uf.click();
+		sleep(2000);
+		opcao.click();
+		sleep(1000);
+		
+		
+		driver.findElement(By.xpath("//body")).click();
+		sleep(2000);
+		
+		
+		nome.sendKeys("Teste Distribuidora");
+		
+		sleep(1000);
+		
+		filtro.click();
+		sleep(1000);
+		waitExpectElement(opcoes);
+		sleep(1000);
+		opcoes.click();
+		sleep(1000);
+		descricao.sendKeys("1");
+		sim.click();
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+
+
+		dataVigencia.sendKeys(fechaActual());
+		
+		
+		sleep(2000);
+		gravar.click();
+		sleep(2000);
+		sim.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		biblioteca.click();
 		
 		sleep(2000);
@@ -220,9 +274,9 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectElement(aceitar);
 		sleep(1000);
-		sim.click();
+		aceitar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -255,6 +309,8 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		}else {
 			sucesso=false;
 		}
+		
+		System.out.println("Ids Excluidos com sucesso: " +sucesso);
 	
 		return sucesso;
 		

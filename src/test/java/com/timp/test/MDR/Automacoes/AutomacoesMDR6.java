@@ -9,6 +9,7 @@ import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeAct
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoCriarPO;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhes;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorEditar;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluirEmMassa;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroID;
@@ -319,6 +320,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 
 		//Atividades Para tributacao >Atividade De Tributacao X Fornecedor	
 			AtividadeDeTributacaoXFornecedorCriar atividadeDeTributacaoXFornecedorCriar;
+			AtividadeDeTributacaoXFornecedorEditar atividadeDeTributacaoXFornecedorEditar;
 			AtividadeDeTributacaoXFornecedorFiltroID atividadeDeTributacaoXFornecedorFiltroID;
 			AtividadeDeTributacaoXFornecedorDetalhes atividadeDeTributacaoXFornecedorDetalhes;
 			AtividadeDeTributacaoXFornecedorVisualizar atividadeDeTributacaoXFornecedorVisualizar;
@@ -1588,8 +1590,20 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorVisualizar.afterClass();
 			}
 			
-			
 			@Test(priority = 108)	
+			public void atividadeDeTributacaoXFornecedorEditar() {
+				atividadeDeTributacaoXFornecedorEditar = new AtividadeDeTributacaoXFornecedorEditar();
+				atividadeDeTributacaoXFornecedorEditar.beforeClass();
+				atividadeDeTributacaoXFornecedorEditar.login();
+				atividadeDeTributacaoXFornecedorEditar.acessarMDR();
+				atividadeDeTributacaoXFornecedorEditar.editar();
+				atividadeDeTributacaoXFornecedorEditar.afterClass();
+			}
+			
+			
+			
+			
+			@Test(priority = 109)	
 			public void atividadeDeTributacaoXFornecedorExcluir() {
 				atividadeDeTributacaoXFornecedorExcluir = new AtividadeDeTributacaoXFornecedorExcluir();
 				atividadeDeTributacaoXFornecedorExcluir.beforeClass();
@@ -1599,7 +1613,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorExcluir.afterClass();
 			}
 			
-			@Test(priority = 109)	
+			@Test(priority = 110)	
 			public void atividadeDeTributacaoXFornecedorExcluirEmMassa() {
 				atividadeDeTributacaoXFornecedorExcluirEmMassa = new AtividadeDeTributacaoXFornecedorExcluirEmMassa();
 				atividadeDeTributacaoXFornecedorExcluirEmMassa.beforeClass();

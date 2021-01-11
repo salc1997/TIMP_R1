@@ -159,7 +159,7 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO Mensagem 1 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO Mensagem 1 ");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -247,7 +247,7 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO Mensagem 2 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO Mensagem 2 ");
 		sleep(1000);
 		
 		tiporegra.click();

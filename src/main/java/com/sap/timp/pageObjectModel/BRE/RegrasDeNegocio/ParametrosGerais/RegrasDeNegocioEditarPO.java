@@ -241,7 +241,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		primeiracaixar1.click();
 		sleep(1000);
 		
-	WebElement elementopreenchimentoobrigatorio = driver.findElement(By.xpath("//div[@class=\"tabAction-obligatory\"]/div/label/span"));
+	WebElement elementopreenchimentoobrigatorio = driver.findElement(By.xpath("//div[@class=\"tabAction-obligatory\"]/div/input"));
 
 		if (!elementopreenchimentoobrigatorio.isSelected())
 		{
@@ -289,7 +289,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		sucesso.add(sucesso2);
 		*/
 		waitExpectElement(primeiracaixar5);
-		sleep(1000);
+		sleep(2000);
 		
 		primeiracaixar5.click();
 		sleep(1000);
@@ -305,18 +305,18 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		sleep(2000);
 		configuracoes.click();
 		sleep(2000);
-		String nome1 = "TESTE AUTOMATIZADO - NAO MEXER";
+		String nome1 = "TESTE AUTOMATIZADO 007 - NAO MEXER";
 		
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
 		
 		aplicar.click();
-		sleep(1000);
+		sleep(2000);
 		gravar.click();
-		sleep(1000);
+		sleep(2000);
 		nao.click();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		configuracoes.click();

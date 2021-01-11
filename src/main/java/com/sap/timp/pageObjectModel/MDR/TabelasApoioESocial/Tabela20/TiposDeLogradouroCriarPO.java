@@ -111,10 +111,9 @@ public class TiposDeLogradouroCriarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
 		boolean sucesso = false;
  
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir2(idB);
 		  
 		sleep(2000); 

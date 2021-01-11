@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Factory;
 
 import com.sap.timp.base.TestBaseFernando;
 
@@ -80,6 +81,8 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Justificativa\"]")
+	public WebElement justificativa;	
 	public AssociaçãoCodigoAjusteCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -190,7 +193,8 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		sleep(1000);
 		btnGravar.click();
 		sleep(2000);
-		
+		justificativa.sendKeys("Teste automatizado");
+		sleep(2000);
 		waitExpectElement(btnSim);
 		btnSim.click();
 		sleep(2000);

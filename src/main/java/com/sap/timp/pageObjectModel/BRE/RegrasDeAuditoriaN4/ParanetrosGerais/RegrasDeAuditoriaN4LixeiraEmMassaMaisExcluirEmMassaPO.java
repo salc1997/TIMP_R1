@@ -26,8 +26,11 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Auditoria Nvl 4\"][1]")
 	public WebElement opcaotipoderegra;
 	
-	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componentetp1;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
 	public WebElement opcaocomponente;
@@ -135,7 +138,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
 	public WebElement justi;
 	
-	@FindBy(xpath = "//span[text()=\"Lixeira\"]")
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash_rules\"]")
 	public WebElement lixeira;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
@@ -217,8 +220,15 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		opcaotipoderegra.click();
 		sleep(1000);
 		
-		componente.click();
-		sleep(1000);
+		String URL = driver.getCurrentUrl();
+		
+		if(URL.contains("tp1") || URL.contains("tc2")) {
+			componentetp1.click();
+			sleep(1000);
+		}else {
+			componente.click();
+			sleep(1000);
+		}	 
 		opcaocomponente.click();
 		sleep(1000);
 		
@@ -230,7 +240,6 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		grupodeestrutura.click();
 		sleep(1000);
-		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tp1")) {
 			opcaogrupodeestruturatp1.click();
@@ -371,8 +380,13 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		opcaotipoderegra.click();
 		sleep(1000);
 		
-		componente.click();
-		sleep(1000);
+		if(URL.contains("tp1") || URL.contains("tc2")) {
+			componentetp1.click();
+			sleep(1000);
+		}else {
+			componente.click();
+			sleep(1000);
+		}	 
 		opcaocomponente.click();
 		sleep(1000);
 		
@@ -513,7 +527,11 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		rows = rows-1;
+		
+		if(rows > 1) {
+			rows = rows-1;
+		}
+		
 		
 		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
@@ -545,7 +563,9 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		check1.click();
 		sleep(2000);
 		
-		rows1 = rows1-1;
+		if(rows1 > 1) {
+			rows1 = rows1-1;
+		}
 		
 		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[2]/label/span"));
 		check2.click();
@@ -565,7 +585,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		//--------------------------- excluir em massa ---------------------------------
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		//waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -580,7 +600,9 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		String idRegistro1lixeira = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[3]/div")).getText();
 		
-		rows2 = rows2-1;
+		if(rows2 > 1) {
+			rows2 = rows2-1;
+		}
 		
 		String idRegistro2lixeira = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[3]/div")).getText();
 		
@@ -609,7 +631,9 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		check3.click();
 		sleep(2000);
 		
-		rows3 = rows3-1;
+		if(rows3 > 1) {
+			rows3 = rows3-1;
+		}
 		
 		WebElement check4 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows3+"]/div[2]/label/span"));
 		check4.click();

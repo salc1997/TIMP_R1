@@ -28,9 +28,11 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Auditoria Nvl 4\"][1]")
 	public WebElement opcaotipoderegra;
 	
-	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
 	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componentetp1;
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
 	public WebElement opcaocomponente;
 	
@@ -77,7 +79,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@id][text()=\"7519 - TA-TESTE (Complemento BRE - N4) - 1\"]")
 	public WebElement opcaoleiautereferenciatq1;
 	
-	@FindBy(xpath = "//li[@id][text()=\"395 - TA-TESTE (Complemento BRE - N4) - 1\"]")
+	@FindBy(xpath = "//li[@id][text()=\"347 - TA-TESTE (Complemento BRE - N4) - 1\"]")
 	public WebElement opcaoleiautereferenciatp1;
 	
 	@FindBy(xpath = "//li[@id][text()=\"141 - TA-TESTE (Complemento BRE - N4) - 1\"]")
@@ -95,7 +97,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@id][text()=\"7520 - TA-TESTE  (Complemento BRE - N4) - 2\"]")
 	public WebElement opcaoleiautecomparacaotq1;
 	
-	@FindBy(xpath = "//li[@id][text()=\"396 - TA-TESTE (Complemento BRE - N4) - 2\"]")
+	@FindBy(xpath = "//li[@id][text()=\"575 - TA-TESTE (Complemento BRE - N4) - 2\"]")
 	public WebElement opcaoleiautecomparacaotp1;
 	
 	@FindBy(xpath = "//li[@id][text()=\"143 - TA-TESTE (Complemento BRE - N4) - 2\"]")
@@ -224,16 +226,24 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTEAUTOMATIZADO N4 QA - NÃO MEXER ");
+
+		nome.sendKeys("TESTEAUTOMATIZADO N4 QAA - NÃO MEXER ");
 		sleep(1000);
 		
 		tipoDeRegra.click();
 		sleep(1000);
 		opcaotipoderegra.click();
 		sleep(1000);
+		String URL = driver.getCurrentUrl();
 		
-		componente.click();
-		sleep(1000);
+		if(URL.contains("tp1") || URL.contains("tc2")) {
+			componentetp1.click();
+			sleep(1000);
+		}else {
+			componente.click();
+			sleep(1000);
+		}	 
+		
 		opcaocomponente.click();
 		sleep(1000);
 		
@@ -245,7 +255,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 		
 		grupodeestrutura.click();
 		sleep(1000);
-		String URL = driver.getCurrentUrl();
+		
 		
 		if(URL.contains("tp1")) {
 			opcaogrupodeestruturatp1.click();
@@ -379,9 +389,11 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 		mensagem.sendKeys("Teste automatizado");
 		
 		sleep(1000);
-		
+		waitExpectElement(Gravar);
+		sleep(2000);
 		Gravar.click();
 		sleep(1000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

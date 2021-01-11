@@ -229,8 +229,8 @@ public class AutomaçõesMDR7 {
 
 		associaçãoCriar = new AssociaçãoCriar();
 		associaçãoCriar.beforeClass();
-		associaçãoCriar.ingresar();
-		associaçãoCriar.mdrEntrar();
+		associaçãoCriar.login();
+		associaçãoCriar.acessarMDR();
 		associaçãoCriar.criarAssociação();
 		associaçãoCriar.afterClass();
 
@@ -242,7 +242,7 @@ public class AutomaçõesMDR7 {
 		associaçãoEditar = new AssociaçãoEditar();
 		associaçãoEditar.beforeClass();
 		associaçãoEditar.login();
-		associaçãoEditar.ingresarMDR();
+		associaçãoEditar.acessarMDR();
 		associaçãoEditar.editarAssociação();
 		associaçãoEditar.afterClass();
 

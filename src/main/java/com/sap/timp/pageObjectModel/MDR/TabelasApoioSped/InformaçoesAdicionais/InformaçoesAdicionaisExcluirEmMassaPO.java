@@ -98,7 +98,7 @@ public class InformaçoesAdicionaisExcluirEmMassaPO extends TestBaseEliel{
 		codigodevalores.sendKeys("SP00002");
 		codigodevalores.sendKeys(Keys.ENTER);
 		sleep(1000);
-		descricao.sendKeys("Teste");
+		descricao.sendKeys("Teste 70931");
 		sleep(1000);
 		//data atual
 		String data = fechaActual();
@@ -120,7 +120,7 @@ public class InformaçoesAdicionaisExcluirEmMassaPO extends TestBaseEliel{
 		codigodevalores.sendKeys("SP00003");
 		codigodevalores.sendKeys(Keys.ENTER);
 		sleep(1000);
-		descricao.sendKeys("Teste");
+		descricao.sendKeys("Teste 709323");
 		sleep(1000);
 		datavigencia.sendKeys(data);
 		

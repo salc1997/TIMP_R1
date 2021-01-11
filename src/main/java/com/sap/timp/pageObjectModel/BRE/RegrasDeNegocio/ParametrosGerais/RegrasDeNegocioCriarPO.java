@@ -154,7 +154,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*[2]//*[3]")
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\" and @transform =\"translate(0,150)\"]/*[name()=\"text\"][1]/*[name()=\"tspan\"][2]")
-	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[13]/*/*[2]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[name()=\"g\"][11]/*/*")
 	public WebElement text;
 	
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Sign-and-Symbols icon-plussign icon-btn btn flat trans\"]")
@@ -165,6 +165,10 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/div[1]/div/div[1]/input")
 	public WebElement Condicoes1;
+	
+	
+	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
+	public WebElement adicionarCaminho;
 	
 	//@FindBy(xpath = "//div[@id=\"T74\"]/div/label/span")
 	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro 1210\"]")
@@ -203,7 +207,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO NEGOCIOS 3 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO NEGOCIOS 007 - NAO MEXER");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -412,9 +416,12 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		habilitar.click();
 		sleep(1000);
 		aplicar.click();
+		System.out.println("click en aplicar 3");
 		sleep(1000);
 		//WebElement caminhor3 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"path-start edited\"]"));
 		WebElement caminhor3 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[11]/*/*"));
+		
+		System.out.println("creao caminho 3");
 		if(caminhor3.isDisplayed()) {
 			System.out.println("Caminho criado r3");
 			sucesso.add(caminhor3.isDisplayed());
@@ -434,16 +441,19 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		salvarcomocopia.click();
 		int rows1 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*")).size();	
 		int j=1;
+
 		for (int i = 0; i < rows1; i++) {
 			waitExpectElement(text);
 			sleep(2000);
 			String texto = "D197";
 			String texto1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][10]/*/*["+j+"]")).getText();
 			System.out.println(texto1);
-			boolean sucesso1 = texto1.contains(texto);
-			sucesso.add(sucesso1);
+			//boolean sucesso1 = texto1.contains(texto);
+			//sucesso.add(sucesso1);
 			j++;
-		}/*
+		}
+
+
 		if(rows1 > 1) {
 			System.out.println("2 frases");
 			waitExpectElement(text);
@@ -454,16 +464,16 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			boolean sucesso1 = texto1.contains(texto);
 			sucesso.add(sucesso1);
 		}else {
-			System.out.println("Uma frase");*/
-			//WebElement text1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*[1]"));
-			/*waitExpectElement(text1);
+			System.out.println("Uma frase");
+			WebElement text1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*[1]"));
+			waitExpectElement(text1);
 			sleep(2000);
 			String texto="D197";
 			String texto1= text1.getText();
 			System.out.println(texto1);
 			boolean sucesso1 =texto1.contains(texto);
 			sucesso.add(sucesso1);
-		}*/
+		}
 		//4 registro
 		adicionarcaminho.click();
 		sleep(1000);
@@ -497,10 +507,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		habilitar.click();
 		sleep(1000);
 		aplicar.click();
+		System.out.println("Dio click en aplicar");
 		sleep(1000);
 		//WebElement caminhor4 =driver.findElement(By.xpath("//*[name()=\"g\"][@class=\"edited\"]"));
-		WebElement caminhor4 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[15]/*/*"));
-		
+		WebElement caminhor4 =driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][11]/*/*"));
+		System.out.println("Creo camihno 4");
 		if(caminhor4.isDisplayed()) {
 			System.out.println("Caminho criado r4");
 			sucesso.add(caminhor4.isDisplayed());
@@ -544,12 +555,13 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
+		System.out.println("p1");
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir1(idB);
+		
 
 		System.out.println(id);
-		System.out.println(idB);
+		System.out.println("Ultimo: "+idB);
 		double idD = convertToDouble(id);
 		double idBD = convertToDouble(idB);
 		

@@ -277,7 +277,7 @@ public class LIxeiraCriarPO extends TestBaseEliel{
 		menu.click();
 		sleep(1000);
 		lixeira1.click();
-		sleep(2000);
+		sleep(5000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

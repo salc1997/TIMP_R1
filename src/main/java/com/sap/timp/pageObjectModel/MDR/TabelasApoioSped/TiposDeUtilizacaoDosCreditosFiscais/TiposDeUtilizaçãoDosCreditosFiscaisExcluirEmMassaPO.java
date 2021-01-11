@@ -98,7 +98,7 @@ public class TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassaPO extends TestBas
 		codigo.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA 1");;
+		descricao.sendKeys("Teste QA 70931");;
 		
 		sleep(2000);
 		
@@ -123,7 +123,7 @@ public class TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassaPO extends TestBas
 		codigo.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA 1");;
+		descricao.sendKeys("Teste QA 709311");;
 		
 		sleep(2000);
 		

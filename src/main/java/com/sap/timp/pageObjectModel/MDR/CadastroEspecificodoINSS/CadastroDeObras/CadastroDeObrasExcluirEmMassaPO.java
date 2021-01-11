@@ -164,7 +164,7 @@ public class CadastroDeObrasExcluirEmMassaPO extends TestBaseKenssy {
 			CEI.click();
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			CEI.sendKeys(Keys.ENTER);
-			CEI.sendKeys("865854");
+			CEI.sendKeys("12865854");
 			sleep(2000);
 			
 			Descripcion.click();
@@ -198,7 +198,7 @@ public class CadastroDeObrasExcluirEmMassaPO extends TestBaseKenssy {
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			NumeroCodigo.sendKeys("7");
+			NumeroCodigo.sendKeys("73");
 			sleep(4000);
 			
 			sim.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

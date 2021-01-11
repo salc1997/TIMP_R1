@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
+      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
         <methods>
+          <include name="criar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

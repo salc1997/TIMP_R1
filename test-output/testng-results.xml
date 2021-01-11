@@ -1,299 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results total="3" passed="2" failed="1" skipped="0">
-=======
-=======
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite started-at="2021-01-08T10:56:39Z" name="Default suite" finished-at="2021-01-08T10:57:46Z" duration-ms="66863">
-=======
-  <suite started-at="2021-01-08T06:17:29Z" name="Default suite" finished-at="2021-01-08T06:19:06Z" duration-ms="96645">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-  <suite started-at="2021-01-08T14:12:05Z" name="Default suite" finished-at="2021-01-08T14:14:39Z" duration-ms="153845">
->>>>>>> refs/heads/Fernando
-=======
-  <suite started-at="2021-01-09T06:09:13Z" name="Default suite" finished-at="2021-01-09T06:10:44Z" duration-ms="90914">
->>>>>>> refs/remotes/origin/Yessy
-=======
-  <suite started-at="2021-01-11T00:10:03Z" name="Default suite" finished-at="2021-01-11T00:11:27Z" duration-ms="84430">
->>>>>>> refs/heads/Fernando
+  <suite started-at="2021-01-11T17:08:40Z" name="Default suite" finished-at="2021-01-11T17:10:05Z" duration-ms="84442">
     <groups>
     </groups>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test started-at="2021-01-08T10:56:39Z" name="Default test" finished-at="2021-01-08T10:57:46Z" duration-ms="66863">
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:39Z" name="beforeClass" finished-at="2021-01-08T07:56:52Z" duration-ms="12560" status="PASS">
-=======
-    <test started-at="2021-01-08T06:17:29Z" name="Default test" finished-at="2021-01-08T06:19:06Z" duration-ms="96645">
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:29Z" name="beforeClass" finished-at="2021-01-08T03:17:43Z" duration-ms="13837" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-    <test started-at="2021-01-08T14:12:05Z" name="Default test" finished-at="2021-01-08T14:14:39Z" duration-ms="153845">
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:05Z" name="beforeClass" finished-at="2021-01-08T08:12:17Z" duration-ms="11830" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-    <test started-at="2021-01-09T06:09:13Z" name="Default test" finished-at="2021-01-09T06:10:44Z" duration-ms="90914">
-      <class name="com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:09:13Z" name="beforeClass" finished-at="2021-01-09T00:09:32Z" duration-ms="18884" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-    <test started-at="2021-01-11T00:10:03Z" name="Default test" finished-at="2021-01-11T00:11:27Z" duration-ms="84430">
+    <test started-at="2021-01-11T17:08:40Z" name="Default test" finished-at="2021-01-11T17:10:05Z" duration-ms="84442">
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:03Z" name="beforeClass" finished-at="2021-01-10T18:10:14Z" duration-ms="11781" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-11T11:08:40Z" name="beforeClass" finished-at="2021-01-11T11:08:52Z" duration-ms="12068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:52Z" name="login" finished-at="2021-01-08T07:56:59Z" duration-ms="7307" status="PASS">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:17Z" name="login" finished-at="2021-01-08T08:12:25Z" duration-ms="7676" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:09:32Z" name="login" finished-at="2021-01-09T00:09:38Z" duration-ms="6014" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:14Z" name="login" finished-at="2021-01-10T18:10:23Z" duration-ms="8059" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-11T11:08:52Z" name="login" finished-at="2021-01-11T11:09:00Z" duration-ms="7671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:59Z" name="acessarBRE" finished-at="2021-01-08T07:57:16Z" duration-ms="17184" status="PASS">
-=======
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:25Z" name="acessarBRE" finished-at="2021-01-08T08:12:40Z" duration-ms="15909" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:09:38Z" name="acessarMDR" finished-at="2021-01-09T00:10:04Z" duration-ms="26035" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:23Z" name="acessarBRE" finished-at="2021-01-10T18:10:35Z" duration-ms="12214" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-11T11:09:00Z" name="acessarBRE" finished-at="2021-01-11T11:09:12Z" duration-ms="12232" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- acessarBRE -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:57:16Z" name="editar" finished-at="2021-01-08T07:57:46Z" duration-ms="29780" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()="Apresent. Treinamento 4"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61038}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 830fdb7b7491aaacd07105b6c7eefac4
-*** Element info: {Using=xpath, value=//li[text()="Apresent. Treinamento 4"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()="Apresent. Treinamento 4"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61038}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 830fdb7b7491aaacd07105b6c7eefac4
-*** Element info: {Using=xpath, value=//li[text()="Apresent. Treinamento 4"]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelasPO.editar(RegrasdeAuditoriaN2EdiçãoTabelasPO.java:134)
-	at com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas.editar(RegrasdeAuditoriaN2EdiçãoTabelas.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:57:46Z" name="afterClass" finished-at="2021-01-08T07:57:46Z" duration-ms="1" status="PASS">
-=======
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:40Z" name="criar" finished-at="2021-01-08T08:14:39Z" duration-ms="118410" status="PASS">
-=======
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:35Z" name="criar" finished-at="2021-01-10T18:11:27Z" duration-ms="52351" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-11T11:09:12Z" name="criar" finished-at="2021-01-11T11:10:05Z" duration-ms="52453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:14:39Z" name="afterClass" finished-at="2021-01-08T08:14:39Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        </test-method> <!-- acessarMDR -->
-        <test-method signature="Visualizar()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:10:04Z" name="Visualizar" finished-at="2021-01-09T00:10:40Z" duration-ms="35649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:10:40Z" name="afterClass" finished-at="2021-01-09T00:10:44Z" duration-ms="4318" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:11:27Z" name="afterClass" finished-at="2021-01-10T18:11:27Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-11T11:10:05Z" name="afterClass" finished-at="2021-01-11T11:10:05Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas -->
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:43Z" name="login" finished-at="2021-01-08T03:17:52Z" duration-ms="8223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:17:52Z" name="acessarBRE" finished-at="2021-01-08T03:18:09Z" duration-ms="17197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarBRE -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:18:09Z" name="visualizar" finished-at="2021-01-08T03:19:06Z" duration-ms="57335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@1530c739]" started-at="2021-01-08T03:19:06Z" name="afterClass" finished-at="2021-01-08T03:19:06Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-<testng-results total="9" passed="9" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2021-01-09T17:09:49Z" name="Default suite" finished-at="2021-01-09T17:15:35Z" duration-ms="346670">
-    <groups>
-    </groups>
-    <test started-at="2021-01-09T17:09:49Z" name="Default test" finished-at="2021-01-09T17:15:35Z" duration-ms="346670">
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:09:49Z" name="beforeClass" finished-at="2021-01-09T11:10:04Z" duration-ms="14732" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:10:04Z" name="ingresar" finished-at="2021-01-09T11:10:15Z" duration-ms="11092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ingresar -->
-        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:10:15Z" name="mdrEntrar" finished-at="2021-01-09T11:10:36Z" duration-ms="21195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mdrEntrar -->
-        <test-method signature="dataInicialDeReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:10:36Z" name="dataInicialDeReferencia" finished-at="2021-01-09T11:12:21Z" duration-ms="105493" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataInicialDeReferencia -->
-        <test-method signature="saltodeLinha()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:12:21Z" name="saltodeLinha" finished-at="2021-01-09T11:12:40Z" duration-ms="19043" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saltodeLinha -->
-        <test-method signature="dataFinalDeReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:12:40Z" name="dataFinalDeReferencia" finished-at="2021-01-09T11:13:18Z" duration-ms="37651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataFinalDeReferencia -->
-        <test-method signature="versao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:13:18Z" name="versao" finished-at="2021-01-09T11:13:42Z" duration-ms="23834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- versao -->
-        <test-method signature="horaDaExecucao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:13:42Z" name="horaDaExecucao" finished-at="2021-01-09T11:14:20Z" duration-ms="38224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- horaDaExecucao -->
-        <test-method signature="dataDaExecucao()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:14:20Z" name="dataDaExecucao" finished-at="2021-01-09T11:14:58Z" duration-ms="37651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataDaExecucao -->
-        <test-method signature="periodoDaReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:14:58Z" name="periodoDaReferencia" finished-at="2021-01-09T11:15:35Z" duration-ms="37701" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- periodoDaReferencia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4@53251a66]" started-at="2021-01-09T11:15:35Z" name="afterClass" finished-at="2021-01-09T11:15:35Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4 -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
->>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -98,9 +98,9 @@ public class TabelaCodigoReceitasCriarPO extends TestBaseMassiel{
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		codigoReceita.sendKeys("123");
+		codigoReceita.sendKeys("1709323");
 		sleep(1000);
-		descricao.sendKeys("Teste de Tabela de Código da Receita");
+		descricao.sendKeys("Teste de Tabela de Código da Receita 7093");
 		sleep(1000);
 
 		

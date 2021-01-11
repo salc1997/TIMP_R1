@@ -164,7 +164,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TA-TESTE - NÃO MEXER QA");
+		nome.sendKeys("TA-TESTE - NÃO MEXER QAA");
 		sleep(1000);
 		
 		tipoDeRegra.click();

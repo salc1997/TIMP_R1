@@ -106,9 +106,9 @@ public class TabelaDeCodigosDeReceitasExcluirEmMassaPO extends TestBaseEliel {
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		codigoReceita.sendKeys("123");
+		codigoReceita.sendKeys("7093123");
 		sleep(1000);
-		descricao.sendKeys("Teste de Tabela de Código da Receita");
+		descricao.sendKeys("Teste de Tabela de Código da Receita7093");
 		sleep(1000);
 
 		
@@ -136,7 +136,7 @@ public class TabelaDeCodigosDeReceitasExcluirEmMassaPO extends TestBaseEliel {
 		sleep(1000);
 		codigoReceita.sendKeys("124");
 		sleep(1000);
-		descricao.sendKeys("Teste de Tabela de Código da Receita");
+		descricao.sendKeys("Teste de Tabela de Código da Receita 31");
 		
 		sleep(2000);
 		novo.click();

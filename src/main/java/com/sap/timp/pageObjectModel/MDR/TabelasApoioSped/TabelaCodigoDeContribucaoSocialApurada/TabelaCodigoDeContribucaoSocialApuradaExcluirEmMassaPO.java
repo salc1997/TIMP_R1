@@ -112,7 +112,7 @@ public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO extends Test
 			
 			sleep(2000);
 			
-			descricao.sendKeys("TESTE AUTOMATIZADO");
+			descricao.sendKeys("TESTE AUTOMATIZADO 7093");
 			
 			sleep(2000);
 			
@@ -134,7 +134,7 @@ public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO extends Test
 			
 			
 			sleep(2000);
-			codigocsa.sendKeys("10");
+			codigocsa.sendKeys("107093");
 			
 			sleep(2000);
 			

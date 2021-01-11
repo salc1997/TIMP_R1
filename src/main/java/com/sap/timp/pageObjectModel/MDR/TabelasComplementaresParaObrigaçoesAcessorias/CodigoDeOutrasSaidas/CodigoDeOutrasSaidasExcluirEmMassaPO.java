@@ -104,11 +104,11 @@ public class CodigoDeOutrasSaidasExcluirEmMassaPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodesaidas.sendKeys("7");
+		codigodesaidas.sendKeys("370937");
 		
 		sleep(2000);
 		
-		descricaodeoutrassaidas.sendKeys("Teste");
+		descricaodeoutrassaidas.sendKeys("Teste 7093");
 		
 		sleep(2000);
 		
@@ -133,11 +133,11 @@ public class CodigoDeOutrasSaidasExcluirEmMassaPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodesaidas.sendKeys("7");
+		codigodesaidas.sendKeys("170937");
 		
 		sleep(2000);
 		
-		descricaodeoutrassaidas.sendKeys("Teste");
+		descricaodeoutrassaidas.sendKeys("Teste 12");
 		
 		sleep(2000);
 		

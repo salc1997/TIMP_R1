@@ -143,7 +143,7 @@ public class RegistroECACVisualizarPO extends TestBaseMassiel {
 		String textoValorTotal = ValorTotal.getText();
 
 
-
+		System.out.println("-------DATOS DEL VISUALIZAR-----");
 		System.out.println("Empresa: " +textoEmpresa );
 		System.out.println("UF: " +textoUF );
 		System.out.println("Filial: " +textoFilial );
@@ -155,7 +155,7 @@ public class RegistroECACVisualizarPO extends TestBaseMassiel {
 		System.out.println("Número documento: " +textoNúmerodocumento );
 		System.out.println("Período de Apuração: " +textoPeríododeApuração  );
 		System.out.println("Valor Total: " +textoValorTotal );
-        
+        System.out.println("");
 		biblioteca.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -193,6 +193,7 @@ public class RegistroECACVisualizarPO extends TestBaseMassiel {
 		String textoValorTotal1 = ValorTotal1.getAttribute("value");
 		
 		System.out.println("-----------------------------------------------");
+		System.out.println("-------DATOS DEL EDITAR-----");
 		System.out.println("Empresa: " +textoEmpresa1 );
 		System.out.println("UF: " +textoUF1 );
 		System.out.println("Filial: " +textoFilial1 );
@@ -204,6 +205,7 @@ public class RegistroECACVisualizarPO extends TestBaseMassiel {
 		System.out.println("Número documento: " +textoNúmerodocumento1 );
 		System.out.println("Período de Apuração: " +textoPeríododeApuração1  );
 		System.out.println("Valor Total: " +textoValorTotal1 );
+		System.out.println("");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

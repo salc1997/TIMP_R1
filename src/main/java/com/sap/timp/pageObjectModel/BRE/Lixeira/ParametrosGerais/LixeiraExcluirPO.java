@@ -66,6 +66,7 @@ public class LixeiraExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		lixeira1.click();
 		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -114,6 +115,7 @@ public class LixeiraExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

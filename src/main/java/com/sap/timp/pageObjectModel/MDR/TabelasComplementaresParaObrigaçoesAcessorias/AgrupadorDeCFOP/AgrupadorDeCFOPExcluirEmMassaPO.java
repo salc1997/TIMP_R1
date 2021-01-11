@@ -102,11 +102,11 @@ public class AgrupadorDeCFOPExcluirEmMassaPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeagrupamento.sendKeys("007");
+		codigodeagrupamento.sendKeys("0709307");
 		
 		sleep(2000);
 		
-		agrupadorcfop.sendKeys("777");
+		agrupadorcfop.sendKeys("7770937");
 		
 		sleep(2000);
 		
@@ -134,11 +134,11 @@ public class AgrupadorDeCFOPExcluirEmMassaPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeagrupamento.sendKeys("008");
+		codigodeagrupamento.sendKeys("70931008");
 		
 		sleep(2000);
 		
-		agrupadorcfop.sendKeys("778");
+		agrupadorcfop.sendKeys("7093778");
 		
 		sleep(2000);
 		

@@ -24,7 +24,7 @@ public class CalculodeTributosTabelasPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
-	@FindBy(xpath = "//li[text()=\"ALIQUOTA INTERNA\"]")
+	@FindBy(xpath = "//li[text()=\"Alíquota Interna\"]")
 	public WebElement seleccionTabela;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")

@@ -21,9 +21,11 @@ public class ProcessosAdmJudiciaisCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"field-element company\"]/div/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"option-1\"]/div")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[text()][1]")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//div[@class=\"field-element branch\"]/div/div[2]/div/div[2]")
+	public WebElement filial;
 	
 	@FindBy(xpath = "//div[@class=\"field-element processType\"]/div/div/div/div[2]")
 	public WebElement tipodoprocesso;
@@ -102,6 +104,7 @@ public class ProcessosAdmJudiciaisCriarPO extends TestBaseEliel {
 		sleep(2000);
 		//criaçao
 		novo.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		empresa.click();
@@ -138,9 +141,16 @@ public class ProcessosAdmJudiciaisCriarPO extends TestBaseEliel {
 		opcao.click();
 		
 		sleep(2000);
+		actionsMoveToElementElement(tipodeautoria);
+		sleep(1000);
+		
+		filial.click();
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
 		
 		attributeToBeXpath("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
-		sleep(2000);
+		sleep(4000);
 		
 		codigomunicipio.click();
 		

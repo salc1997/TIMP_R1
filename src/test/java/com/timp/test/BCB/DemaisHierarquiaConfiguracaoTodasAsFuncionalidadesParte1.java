@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
+import com.sap.timp.pageObjectModel.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,10 +15,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseKenssy {
+public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
+	DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
 
 
 	@BeforeClass
@@ -26,7 +26,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBase
 		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO = new DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO();
+		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO = new DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO();
 	}
 
 	@AfterClass
@@ -198,66 +198,66 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBase
 	
 	//desde aqui dividir para hacer version 2
 	
-	@Test(priority = 17)
-	public void ejecutarFinal() {
-		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.ejecutarFinal();
-	}
-	
-	
-	@Test(priority = 18)
-	public void relacionamentoFinalyAbrirHierarquiaGrupo() {
-		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte2();
-		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.relacionamentoFinalyAbrirHierarquiaGrupo();
-		System.out.println(sucesso);
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
-		}
-	}
-	
-	
-	@Test(priority = 19)
-	public void excluirConfiguracoes2() {
-		
-		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes2();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Eliminado);
-		}
-	}
-	
-	
-	@Test(priority = 20)
-	public void excluirHierarquia2() {
-		
-		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia2();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Eliminado);
-		}
-	}
-	
-	
-	@Test(priority = 21)
-	public void excluirConfiguracoes1() {
-		
-		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes1();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Eliminado);
-		}
-	}
-	
-	
-	@Test(priority = 22)
-	public void excluirHierarquia1() {
-		
-		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia1();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Eliminado);
-		}
-	}
+//	@Test(priority = 17)
+//	public void ejecutarFinal() {
+//		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.ejecutarFinal();
+//	}
+//	
+//	
+//	@Test(priority = 18)
+//	public void relacionamentoFinalyAbrirHierarquiaGrupo() {
+//		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte2();
+//		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.relacionamentoFinalyAbrirHierarquiaGrupo();
+//		System.out.println(sucesso);
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), subniveis);
+//		}
+//	}
+//	
+//	
+//	@Test(priority = 19)
+//	public void excluirConfiguracoes2() {
+//		
+//		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes2();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Eliminado);
+//		}
+//	}
+//	
+//	
+//	@Test(priority = 20)
+//	public void excluirHierarquia2() {
+//		
+//		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia2();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Eliminado);
+//		}
+//	}
+//	
+//	
+//	@Test(priority = 21)
+//	public void excluirConfiguracoes1() {
+//		
+//		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes1();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Eliminado);
+//		}
+//	}
+//	
+//	
+//	@Test(priority = 22)
+//	public void excluirHierarquia1() {
+//		
+//		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia1();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Eliminado);
+//		}
+//	}
 	
 	
 }

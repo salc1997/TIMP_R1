@@ -226,7 +226,8 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTEAUTOMATIZADO N4 Teste 1 - NÃO MEXER ");
+
+		nome.sendKeys("TESTEAUTOMATIZADO N4 QAA - NÃO MEXER ");
 		sleep(1000);
 		
 		tipoDeRegra.click();

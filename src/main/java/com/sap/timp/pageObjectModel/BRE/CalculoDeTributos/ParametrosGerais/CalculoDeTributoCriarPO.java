@@ -274,7 +274,7 @@ public class CalculoDeTributoCriarPO extends TestBaseEliel{
 			sucesso.add(caminhocriado.isDisplayed());
 		}
 		
-	
+		sleep(3000);
 		biblioteca.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

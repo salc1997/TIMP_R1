@@ -42,6 +42,6 @@ public class S1250InfProcJudicialEditar extends TestBaseFernando{
 	@Test(priority = 2)
 	public void editar() {
 		boolean sucesso = s1250InfProcJudicialEditarPO.editar();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Editar);
 	}
 }

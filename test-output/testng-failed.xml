@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
@@ -23,11 +24,14 @@
         </methods>
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas -->
 =======
+=======
+>>>>>>> refs/heads/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Criar">
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="criar"/>
@@ -41,11 +45,15 @@
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho">
         <methods>
           <include name="criar"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
 =======
 >>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
+          <include name="criar"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho -->
 >>>>>>> refs/heads/Fernando
@@ -65,6 +73,9 @@
 =======
       </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

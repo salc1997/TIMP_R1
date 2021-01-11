@@ -3,13 +3,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
 =======
 =======
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -17,8 +21,11 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,8 +39,12 @@
 =======
   <suite started-at="2021-01-09T06:09:13Z" name="Default suite" finished-at="2021-01-09T06:10:44Z" duration-ms="90914">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-01-11T00:10:03Z" name="Default suite" finished-at="2021-01-11T00:11:27Z" duration-ms="84430">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55,9 +66,15 @@
       <class name="com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:09:13Z" name="beforeClass" finished-at="2021-01-09T00:09:32Z" duration-ms="18884" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+    <test started-at="2021-01-11T00:10:03Z" name="Default test" finished-at="2021-01-11T00:11:27Z" duration-ms="84430">
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:03Z" name="beforeClass" finished-at="2021-01-10T18:10:14Z" duration-ms="11781" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -68,9 +85,13 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:09:32Z" name="login" finished-at="2021-01-09T00:09:38Z" duration-ms="6014" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:14Z" name="login" finished-at="2021-01-10T18:10:23Z" duration-ms="8059" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:56:59Z" name="acessarBRE" finished-at="2021-01-08T07:57:16Z" duration-ms="17184" status="PASS">
@@ -80,10 +101,14 @@
 =======
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:09:38Z" name="acessarMDR" finished-at="2021-01-09T00:10:04Z" duration-ms="26035" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:23Z" name="acessarBRE" finished-at="2021-01-10T18:10:35Z" duration-ms="12214" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
         </test-method> <!-- acessarBRE -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:57:16Z" name="editar" finished-at="2021-01-08T07:57:46Z" duration-ms="29780" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -159,9 +184,13 @@ Session ID: 830fdb7b7491aaacd07105b6c7eefac4
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas@6f45df59]" started-at="2021-01-08T07:57:46Z" name="afterClass" finished-at="2021-01-08T07:57:46Z" duration-ms="1" status="PASS">
 =======
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:12:40Z" name="criar" finished-at="2021-01-08T08:14:39Z" duration-ms="118410" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:10:35Z" name="criar" finished-at="2021-01-10T18:11:27Z" duration-ms="52351" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.RegrasDeAuditoriaN3CriarMasCaminho@5a5338df]" started-at="2021-01-08T08:14:39Z" name="afterClass" finished-at="2021-01-08T08:14:39Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Fernando
 =======
@@ -172,9 +201,13 @@ Session ID: 830fdb7b7491aaacd07105b6c7eefac4
         </test-method> <!-- Visualizar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar@76a4ebf2]" started-at="2021-01-09T00:10:40Z" name="afterClass" finished-at="2021-01-09T00:10:44Z" duration-ms="4318" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@1fb19a0]" started-at="2021-01-10T18:11:27Z" name="afterClass" finished-at="2021-01-10T18:11:27Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EdiçãoTabelas -->
@@ -258,6 +291,9 @@ Session ID: 830fdb7b7491aaacd07105b6c7eefac4
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades4 -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

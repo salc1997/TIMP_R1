@@ -106,8 +106,8 @@ public class RegistroRFDetalhesPO extends TestBaseSteven {
 		String numeroServD1 = numeroServD.getText();
 		String periodoD1 = periodoD.getText();
 		String numeroRegistroD1 = numeroRegistroD.getText();
-		numeroRegistroD1 = numeroRegistroD1.replace("R$ ", "");
-		String valorRecibidoD1 = valorRecibidoD.getText();
+		numeroRegistroD1 = numeroRegistroD1.replace("R$ ", "").replace(".", "").replace(",", "");
+		String valorRecibidoD1 = valorRecibidoD.getText().replace(".", "").replace(",", "");
 		String numeroDeclaracaoD1 = numeroDeclaracaoD.getText();
 		String ativoD1 = ativoD.getText();
 
@@ -118,6 +118,7 @@ public class RegistroRFDetalhesPO extends TestBaseSteven {
 		System.out.println(valorRecibidoD1);
 		System.out.println(numeroDeclaracaoD1);
 		System.out.println(ativoD1);
+		System.out.println("");
 
 
 		sleep(2000);
@@ -139,8 +140,8 @@ public class RegistroRFDetalhesPO extends TestBaseSteven {
 		String empresaV1 = companyV.getText();
 		String numeroServV1 = numeroServV.getText();
 		String periodoV1 = periodV.getText();
-		String numeroRegistroV1 = numeroRegistroV.getText();
-		String valorRecibidoV1 = valorRecibidoV.getText();
+		String numeroRegistroV1 = numeroRegistroV.getText().replace(".", "").replace(",", "");
+		String valorRecibidoV1 = valorRecibidoV.getText().replace(".", "").replace(",", "");
 		valorRecibidoV1 = valorRecibidoV1.replace("R$ ", "");
 		String numeroDeclaracaoV1 = numeroDeclaracaoV.getText();
 		String ativoV1 = ativoV.getText();

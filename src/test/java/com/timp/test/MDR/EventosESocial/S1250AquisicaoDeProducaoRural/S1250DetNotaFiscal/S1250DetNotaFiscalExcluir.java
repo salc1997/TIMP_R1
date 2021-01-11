@@ -42,6 +42,6 @@ public class S1250DetNotaFiscalExcluir extends TestBaseFernando{
 	@Test(priority = 2)
 	public void excluir() {
 		boolean sucesso = s1250DetNotaFiscalExcluirPO.excluir();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, Eliminado);
 	}
 }

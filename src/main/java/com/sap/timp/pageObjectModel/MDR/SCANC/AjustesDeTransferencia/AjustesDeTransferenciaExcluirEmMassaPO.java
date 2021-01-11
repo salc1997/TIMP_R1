@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.SCANC.SCANCDistribuidoras;
+package com.sap.timp.pageObjectModel.MDR.SCANC.AjustesDeTransferencia;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,16 +12,16 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
+public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
 	public WebElement scanc;
 	
-	@FindBy(xpath = "//span[text()=\"SCANC Distribuidoras\"]")
-	public WebElement scancDistribuidoras;
+	@FindBy(xpath = "//span[text()=\"Ajustes de Transferência\"]")
+	public WebElement ajusteTransferencia;
 	
-	@FindBy(xpath = "//span[contains(text(),\"Nova\")]")
+	@FindBy(xpath = "//span[contains(text(),\"Nov\")]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
@@ -44,24 +44,41 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//div[contains(@class,\"company\")]/div/div/div/div[2]")
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcao2;
+	
+	@FindBy(xpath = "//div[contains(@id,\"company\")]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[contains(@class,\"uf\")]/div/div/div/div[2]")
-	public WebElement uf;
+	@FindBy(xpath = "//div[contains(@id,\"tax-transfers\")]/div/div/div[2]")
+	public WebElement tributo;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Nome\")]")
-	public WebElement nome;
+	@FindBy(xpath = "//div[contains(@id,\"tax-type-transfers\")]/div/div/div[2]")
+	public WebElement tipoImposto;
 	
-	@FindBy(xpath = "//button[@id=\"filterButtonStr\"]")
-	public WebElement filtro;
-	@FindBy(xpath = "//div[@id=\"rbtCode\"]/div/label/span")
-	public WebElement opcoes;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
-	public WebElement descricao;
-
-	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
 	public WebElement dataVigencia;
+	
+	
+	@FindBy(xpath = "//div[@id=\"origin-table\"]/div/div[1]/div[2]/div/div[2]")
+	public WebElement detalheTipoTributoO;
+	@FindBy(xpath = "//div[@id=\"origin-table\"]/div/div[2]/div[2]/div/div[2]")
+	public WebElement anexoO;
+	@FindBy(xpath = "//div[@id=\"origin-table\"]/div/div[3]/div[2]/div/div[2]")
+	public WebElement quadroO;
+	@FindBy(xpath = "//div[@id=\"origin-table\"]/div/div[4]/div[2]/div/div[2]")
+	public WebElement limiteO;
+	
+	@FindBy(xpath = "//div[@id=\"destiny-table\"]/div/div[1]/div[2]/div/div[2]")
+	public WebElement detalheTipoTributoD;
+	@FindBy(xpath = "//div[@id=\"destiny-table\"]/div/div[2]/div[2]/div/div[2]")
+	public WebElement anexoD;
+	@FindBy(xpath = "//div[@id=\"destiny-table\"]/div/div[3]/div[2]/div/div[2]")
+	public WebElement quadroD;
+	@FindBy(xpath = "//div[@id=\"destiny-table\"]/div/div[4]/div[2]/div/div[2]")
+	public WebElement limiteD;
+
+
 	
 
 	@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
@@ -69,7 +86,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 	
 	
 	
-	public SCANCDistribuidoraExcluirEmMassaPO() {
+	public AjustesDeTransferenciaExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -80,7 +97,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		scanc.click();
 		sleep(2000);
 		
-		scancDistribuidoras.click();
+		ajusteTransferencia.click();
 		
 		sleep(2000);
 		
@@ -102,6 +119,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		novo.click();
 		
 		sleep(3000);
+		waitExpectElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -113,41 +131,67 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
-		sleep(2000);
-		
-		uf.click();
-		sleep(2000);
-		opcao.click();
-		sleep(1000);
-		
-		
-		driver.findElement(By.xpath("//body")).click();
-		sleep(2000);
-		
-		
-		nome.sendKeys("Teste Distribuidora");
-		
-		sleep(1000);
-		
-		filtro.click();
-		sleep(1000);
-		waitExpectElement(opcoes);
-		sleep(1000);
-		opcoes.click();
-		sleep(1000);
-		descricao.sendKeys("1");
-		sim.click();
-		sleep(5000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
 
+		
+		tributo.click();
+		sleep(2000);
+		opcao2.click();
+		sleep(1000);
+		
+		attributeToBeXpath("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
+		sleep(2000);
+		
+		tipoImposto.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
 
 		dataVigencia.sendKeys(fechaActual());
 		
 		
+		
+		detalheTipoTributoO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		anexoO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		quadroO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		limiteO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		detalheTipoTributoD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		anexoD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		quadroD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		limiteD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+
+
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -171,39 +215,66 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
-		sleep(2000);
-		
-		uf.click();
-		sleep(2000);
-		opcao.click();
-		sleep(1000);
-		
-		
-		driver.findElement(By.xpath("//body")).click();
-		sleep(2000);
-		
-		
-		nome.sendKeys("Teste Distribuidora");
-		
-		sleep(1000);
-		
-		filtro.click();
-		sleep(1000);
-		waitExpectElement(opcoes);
-		sleep(1000);
-		opcoes.click();
-		sleep(1000);
-		descricao.sendKeys("1");
-		sim.click();
-		sleep(5000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
 
+		
+		tributo.click();
+		sleep(2000);
+		opcao2.click();
+		sleep(1000);
+		
+		attributeToBeXpath("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
+		sleep(2000);
+		
+		tipoImposto.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
 
 		dataVigencia.sendKeys(fechaActual());
+		
+		
+		
+		detalheTipoTributoO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		anexoO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		quadroO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		limiteO.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		detalheTipoTributoD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		anexoD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		quadroD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+		
+		limiteD.click();
+		sleep(1000);
+		opcao2.click();
+		sleep(1000);
+
 		
 		
 		sleep(2000);
@@ -274,9 +345,9 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectElement(sim);
 		sleep(1000);
-		aceitar.click();
+		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

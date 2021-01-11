@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.SCANC.SCANCDistribuidoras;
+package com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,19 +12,57 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
-public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
+public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBaseSteven{
 	
 	
-	@FindBy(xpath = "//span[text()=\"SCANC\"]")
-	public WebElement scanc;
 	
-	@FindBy(xpath = "//span[text()=\"SCANC Distribuidoras\"]")
-	public WebElement scancDistribuidoras;
+	@FindBy(xpath = "//span[text()=\"Reinf\"]")
+	public WebElement reinf;
 	
-	@FindBy(xpath = "//span[contains(text(),\"Nova\")]")
+	@FindBy(xpath = "//span[text()=\"R1070 - Processos Adm. / Judiciais\"]")
+	public WebElement processosadmjudiciais;
+	
+	@FindBy(xpath = "//span[text()=\"Novo Processo Reinf Adm/Judicial\"]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	@FindBy(xpath = "//div[@class=\"field-element company\"]/div/div/div/div[2]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[text()][1]")
+	public WebElement opcao;
+	
+	@FindBy(xpath = "//div[@class=\"field-element branch\"]/div/div[2]/div/div[2]")
+	public WebElement filial;
+	
+	@FindBy(xpath = "//div[@class=\"field-element processType\"]/div/div/div/div[2]")
+	public WebElement tipodoprocesso;
+	
+	@FindBy(xpath = "//div[@id=\"option-2\"]/div")
+	public WebElement opcao2;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Numero do Processo\"]")
+	public WebElement numerodoprocesso;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
+	public WebElement data1;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade Até\"]")
+	public WebElement data2;
+	
+	@FindBy(xpath = "//div[@class=\"field-element uf\"]/div/div/div/div[2]")
+	public WebElement uf;
+	
+	@FindBy(xpath = "//div[@class=\"field-element countyCode\"]/div/div/div/div[2]")
+	public WebElement codigomunicipio;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Vara Judicial\"]")
+	public WebElement varajudicial;
+	
+	@FindBy(xpath = "//div[@class=\"field-element authorshipType\"]/div/div/div/div[2]")
+	public WebElement tipodeautoria;
+	
+	
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -33,43 +71,20 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
-	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
-	public WebElement aceitar;
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
-	
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[contains(@class,\"company\")]/div/div/div/div[2]")
-	public WebElement empresa;
-	
-	@FindBy(xpath = "//div[contains(@class,\"uf\")]/div/div/div/div[2]")
-	public WebElement uf;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Nome\")]")
-	public WebElement nome;
-	
-	@FindBy(xpath = "//button[@id=\"filterButtonStr\"]")
-	public WebElement filtro;
-	@FindBy(xpath = "//div[@id=\"rbtCode\"]/div/label/span")
-	public WebElement opcoes;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
-	public WebElement descricao;
-
-	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
-	public WebElement dataVigencia;
 	
 
 	@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
 	public WebElement excluirMassa;
 	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
 	
-	
-	public SCANCDistribuidoraExcluirEmMassaPO() {
+	public ProcessosAdmJudiciaisExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -77,11 +92,11 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 	public boolean criar() {
 		
 		sleep(2000);
-		scanc.click();
+		
+		reinf.click();
 		sleep(2000);
-		
-		scancDistribuidoras.click();
-		
+		processosadmjudiciais.click();
+	
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -104,59 +119,78 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-	
-		
 		empresa.click();
-		sleep(2000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		opcao.click();
+		
+		sleep(2000);
+		
+		tipodoprocesso.click();
+		
+		sleep(2000);
+		
+		opcao2.click();
+		
+		sleep(2000);
+		numerodoprocesso.sendKeys("777");
+		sleep(2000);
+		 
+		
+		String data ="10/2020";
+		
+		data1.sendKeys(data);
+		
+		data2.sendKeys(data);
+		
+		
 		sleep(2000);
 		
 		uf.click();
+		
 		sleep(2000);
 		opcao.click();
+		
+		sleep(1000);
+		actionsMoveToElementElement(tipodeautoria);
 		sleep(1000);
 		
-		
-		driver.findElement(By.xpath("//body")).click();
+		filial.click();
+		sleep(2000);
+		opcao.click();
 		sleep(2000);
 		
 		
-		nome.sendKeys("Teste Distribuidora");
+		//attributoNotToBeEmptyXpath("//div[@class=\"field-element inscriptionNumber\"]/div/div[2]/div/div/div[2]/input", "textContent");
+		//System.out.println("paso de aqui");
+		attributeToBeXpath("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
+		sleep(4000);
 		
-		sleep(1000);
+		codigomunicipio.click();
 		
-		filtro.click();
-		sleep(1000);
-		waitExpectElement(opcoes);
-		sleep(1000);
-		opcoes.click();
-		sleep(1000);
-		descricao.sendKeys("1");
-		sim.click();
-		sleep(5000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		opcao2.click();
 		
+		sleep(2000);
+		
+		varajudicial.sendKeys("Vara");
+		
+		sleep(2000);
+		
+		tipodeautoria.click();
+		
+		sleep(2000);
+		
+		opcao2.click();
+		
+		sleep(2000);
 
-
-		dataVigencia.sendKeys(fechaActual());
-		
-		
-		sleep(2000);
 		gravar.click();
 		sleep(2000);
 		sim.click();
 		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
 		refresh();
 		
 		waitExpectElement(empresa);
@@ -164,49 +198,75 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
 		empresa.click();
-		sleep(2000);
-		opcao.click();
-		opcao.sendKeys(Keys.ESCAPE);
+		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		opcao.click();
+		
+		sleep(2000);
+		
+		tipodoprocesso.click();
+		
+		sleep(2000);
+		
+		opcao2.click();
+		
+		sleep(2000);
+		numerodoprocesso.sendKeys("777");
+		sleep(2000);
+		 
+		
+		data ="11/2020";
+		
+		data1.sendKeys(data);
+		
+		data2.sendKeys(data);
+		
+		
 		sleep(2000);
 		
 		uf.click();
+		
 		sleep(2000);
 		opcao.click();
+		
+		sleep(1000);
+		actionsMoveToElementElement(tipodeautoria);
 		sleep(1000);
 		
-		
-		driver.findElement(By.xpath("//body")).click();
+		filial.click();
+		sleep(2000);
+		opcao.click();
 		sleep(2000);
 		
 		
-		nome.sendKeys("Teste Distribuidora");
+		//attributoNotToBeEmptyXpath("//div[@class=\"field-element inscriptionNumber\"]/div/div[2]/div/div/div[2]/input", "value");
+		//System.out.println("paso de aqui");
+		attributeToBeXpath("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
+		sleep(4000);
 		
-		sleep(1000);
+		codigomunicipio.click();
 		
-		filtro.click();
-		sleep(1000);
-		waitExpectElement(opcoes);
-		sleep(1000);
-		opcoes.click();
-		sleep(1000);
-		descricao.sendKeys("1");
-		sim.click();
-		sleep(5000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		opcao2.click();
+		
+		sleep(2000);
+		
+		varajudicial.sendKeys("Vara");
+		
+		sleep(2000);
+		
+		tipodeautoria.click();
+		
+		sleep(2000);
+		
+		opcao2.click();
+		
 		sleep(2000);
 		
 		
-
-
-		dataVigencia.sendKeys(fechaActual());
-		
-		
-		sleep(2000);
 		gravar.click();
 		sleep(2000);
 		sim.click();
@@ -274,9 +334,9 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectElement(sim);
 		sleep(1000);
-		aceitar.click();
+		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

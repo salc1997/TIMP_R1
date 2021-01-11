@@ -127,6 +127,7 @@ public class AjustesDosAnexosCriarPO extends TestBaseEliel{
 		sleep(2000);
 		//criaçao
 		novoajuste.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

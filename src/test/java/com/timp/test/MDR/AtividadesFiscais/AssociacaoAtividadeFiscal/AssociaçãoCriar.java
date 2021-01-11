@@ -31,12 +31,12 @@ public class AssociaçãoCriar extends TestBaseFernando{
 	}
 
 	@Test(priority = 0)
-	public void ingresar() {
+	public void login() {
 		loginTC.login();
 	}
 
 	@Test(priority = 1)
-	public void mdrEntrar() {
+	public void acessarMDR() {
 		accesarMDR.acessarMDR();
 
 	}

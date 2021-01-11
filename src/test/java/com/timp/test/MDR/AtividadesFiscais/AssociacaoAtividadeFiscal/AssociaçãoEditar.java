@@ -36,7 +36,7 @@ public class AssociaçãoEditar extends TestBaseFernando{
   }
   
   @Test(priority = 1)
-  public void ingresarMDR() {
+  public void acessarMDR() {
 	  accesarMDRPO.acessarMDR();
   }
   

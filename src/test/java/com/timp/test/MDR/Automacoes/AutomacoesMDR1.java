@@ -24,6 +24,7 @@ import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir;
 import com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesVisualizar;
 import com.timp.test.MDR.Antecipacao.AntecipacaoCriar;
+import com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe;
 import com.timp.test.MDR.Antecipacao.AntecipacaoEditar;
 import com.timp.test.MDR.Antecipacao.AntecipacaoEliminar;
 import com.timp.test.MDR.Antecipacao.AntecipacaoFiltros;
@@ -34,7 +35,11 @@ import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditar;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioExcluir;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioFiltroID;
 import com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioVisualizar;
+import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriar;
+import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoDetalhes;
+import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoEditar;
 import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir;
+import com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoVisualizar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar;
 import com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar;
@@ -73,8 +78,10 @@ import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoVisualiza
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoCriar;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoEditar;
 import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoExcluir;
+import com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoFiltroId;
 import com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar;
 import com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir;
+import com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURFiltroID;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir;
@@ -115,6 +122,7 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesDeFundoSocialExcluirEmMassa;
+import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialEditar;
 import com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluir;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFCriar;
 import com.timp.test.MDR.ContratoIOF.ContratoIOFDetalhes;
@@ -183,7 +191,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	AntecipacaoFiltros antecipacaoFiltros;
 	AntecipacaoVisualizar antecipacaoVisualizar;
 	AntecipacaoEliminar antecipacaoEliminar;
-
+	AntecipacaoDetalhe antecipacaoDetalhe;
 	// Ativação para Município
 
 	AtivaçaoParaMunicipioCriar ativaçaoParaMunicipioCriar;
@@ -203,7 +211,10 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	AtividadeExcluirMassa atividadeExcluirMassa;
 	
 	// Atividades Fiscais > Associação de Atividades Fiscais
-
+	AssociaçãoCriar associaçãoCriar;
+	AssociaçãoDetalhes associaçãoDetalhes;
+	AssociaçãoEditar associaçãoEditar;
+	AssociaçãoVisualizar associaçãoVisualizar;
 	AssociaçãoExcluir associaçãoExcluir;
 	
 	// Atividades Fiscais > Grupo Atividades Fiscais
@@ -235,12 +246,12 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	InstituicaoEditar instituicaoEditar;
 	InstituicaoExcluir instituicaoExcluir;
 	InstitucaoDetalhes institucaoDetalhes;
-	
+	InstituicaoFiltroId instituicaoFiltroId;
 	// Cadastros IRPJ/CSLL > Contas ParteB LALUR/LACS
 
 	ContasParteBLALURCriar contasParteBLALURCriar;
 	ContasParteBLALURExcluir contasParteBLALURExcluir;
-
+	ContasParteBLALURFiltroID contasParteBLALURFiltroID;
 	// Cenarios de Correção
 
 	CenariosCorrecaoCriar cenariosCorrecaoCriar;
@@ -324,7 +335,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	ConfiguracaoFundoSocailFiltroId configuracaoFundoSocailFiltroId;
 	ConfiguracoesFundoSocialExcluir configuracoesFundoSocialExcluir;
 	ConfiguracoesDeFundoSocialExcluirEmMassa configuracoesDeFundoSocialExcluirEmMassa;
-
+	ConfiguracoesFundoSocialEditar configuracoesFundoSocialEditar;
 	// Contrato IOF
 
 	ContratoIOFCriar contratoIOFCriar;
@@ -560,8 +571,21 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		antecipacaoFiltros.afterClass();
 
 	}
-
+	
 	@Test(priority = 14)
+	public void antecipacaoDetalhe() {
+
+		antecipacaoDetalhe = new AntecipacaoDetalhe();
+		antecipacaoDetalhe.beforeClass();
+		antecipacaoDetalhe.login();
+		antecipacaoDetalhe.acessarMDR();
+		antecipacaoDetalhe.detalhe();
+		antecipacaoDetalhe.afterClass();
+
+	}
+
+
+	@Test(priority = 15)
 	public void antecipacaoExcluir() {
 
 		antecipacaoEliminar = new AntecipacaoEliminar();
@@ -921,6 +945,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		institucaoDetalhes.afterClass();
 
 	}
+	
+	@Test(priority = 36)
+	public void instituicaoFiltroId() {
+
+		instituicaoFiltroId = new InstituicaoFiltroId();
+		instituicaoFiltroId.beforeClass();
+		instituicaoFiltroId.login();
+		instituicaoFiltroId.acessarMDR();
+		instituicaoFiltroId.filtroId();
+		instituicaoFiltroId.afterClass();
+
+	}
+	
 
 
 //Cadastro Derex > Cadastro Responsável Pelo Movimento
@@ -1007,6 +1044,18 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		contasParteBLALURCriar.acessarMDR();
 		contasParteBLALURCriar.criar();
 		contasParteBLALURCriar.afterClass();
+
+	}
+	
+	@Test(priority = 41)
+	public void contasParteBLALURFiltroID() {
+
+		contasParteBLALURFiltroID = new ContasParteBLALURFiltroID();
+		contasParteBLALURFiltroID.beforeClass();
+		contasParteBLALURFiltroID.login();
+		contasParteBLALURFiltroID.acessarMDR();
+		contasParteBLALURFiltroID.filtro();
+		contasParteBLALURFiltroID.afterClass();
 
 	}
 
@@ -1791,6 +1840,17 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
+	@Test(priority = 85)
+	public void  configuracoesFundoSocialEditar() {
+
+		configuracoesFundoSocialEditar = new ConfiguracoesFundoSocialEditar();
+		configuracoesFundoSocialEditar.beforeClass();
+		configuracoesFundoSocialEditar.ingresar();
+		configuracoesFundoSocialEditar.ingresarMDR();
+		configuracoesFundoSocialEditar.editar();
+		configuracoesFundoSocialEditar.afterClass();
+
+	}
 
 	// Contrato IOF
 
@@ -2163,19 +2223,6 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 				"-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração Fin-------------------------");
 	}
 	
-	// Atividades Fiscais > Associação de Atividades Fiscais
-	//108
-	@Test(priority = 114)
-	public void excluirAssociacao() {
-		associaçãoExcluir = new AssociaçãoExcluir();
-		associaçãoExcluir.beforeClass();
-		associaçãoExcluir.login();
-		associaçãoExcluir.acessarMDR();
-		associaçãoExcluir.excluirr();
-		associaçãoExcluir.afterClass();
-		
-
-	}
 
 	//112
 	
@@ -2265,6 +2312,68 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		System.out.println("-------------------Notas a Declarar Anexo III DIA-AM FIN-------------------------");
 	}
 	//122
+
+	// Atividades Fiscais > Associação de Atividades Fiscais
+	//108
+	
+	@Test(priority = 123)
+	public void associaçãoCriar() {
+		associaçãoCriar = new AssociaçãoCriar();
+		associaçãoCriar.beforeClass();
+		associaçãoCriar.login();
+		associaçãoCriar.acessarMDR();
+		associaçãoCriar.criarAssociação();
+		associaçãoCriar.afterClass();
+		
+
+	}
+	
+	@Test(priority = 124)
+	public void associaçãoEditar() {
+		associaçãoEditar = new AssociaçãoEditar();
+		associaçãoEditar.beforeClass();
+		associaçãoEditar.login();
+		associaçãoEditar.acessarMDR();
+		associaçãoEditar.editarAssociação();
+		associaçãoEditar.afterClass();
+		
+
+	}
+	
+	@Test(priority = 125)
+	public void associaçãoVisualizar() {
+		associaçãoVisualizar = new AssociaçãoVisualizar();
+		associaçãoVisualizar.beforeClass();
+		associaçãoVisualizar.ingresar();
+		associaçãoVisualizar.mdrEntrar();
+		associaçãoVisualizar.visualizarAssociação();
+		associaçãoVisualizar.afterClass();
+		
+
+	}
+	
+	@Test(priority = 126)
+	public void associaçãoDetalhes() {
+		associaçãoDetalhes = new AssociaçãoDetalhes();
+		associaçãoDetalhes.beforeClass();
+		associaçãoDetalhes.ingresar();
+		associaçãoDetalhes.mdrEntrar();
+		associaçãoDetalhes.detalheAssociação();
+		associaçãoDetalhes.afterClass();
+		
+
+	}
+	@Test(priority = 127)
+	public void excluirAssociacao() {
+		associaçãoExcluir = new AssociaçãoExcluir();
+		associaçãoExcluir.beforeClass();
+		associaçãoExcluir.login();
+		associaçãoExcluir.acessarMDR();
+		associaçãoExcluir.excluirr();
+		associaçãoExcluir.afterClass();
+		System.out.println("-------------------Atividades Fiscais > Associação de Atividades Fiscais-------------------------");
+
+	}
 		
 
 }

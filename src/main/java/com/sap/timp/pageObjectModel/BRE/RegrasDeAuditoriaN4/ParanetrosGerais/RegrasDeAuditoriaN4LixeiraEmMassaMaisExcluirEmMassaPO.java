@@ -26,8 +26,11 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Auditoria Nvl 4\"][1]")
 	public WebElement opcaotipoderegra;
 	
-	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componentetp1;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
 	public WebElement opcaocomponente;
@@ -217,8 +220,15 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		opcaotipoderegra.click();
 		sleep(1000);
 		
-		componente.click();
-		sleep(1000);
+		String URL = driver.getCurrentUrl();
+		
+		if(URL.contains("tp1") || URL.contains("tc2")) {
+			componentetp1.click();
+			sleep(1000);
+		}else {
+			componente.click();
+			sleep(1000);
+		}	 
 		opcaocomponente.click();
 		sleep(1000);
 		
@@ -230,7 +240,6 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		grupodeestrutura.click();
 		sleep(1000);
-		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tp1")) {
 			opcaogrupodeestruturatp1.click();
@@ -371,8 +380,13 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		opcaotipoderegra.click();
 		sleep(1000);
 		
-		componente.click();
-		sleep(1000);
+		if(URL.contains("tp1") || URL.contains("tc2")) {
+			componentetp1.click();
+			sleep(1000);
+		}else {
+			componente.click();
+			sleep(1000);
+		}	 
 		opcaocomponente.click();
 		sleep(1000);
 		

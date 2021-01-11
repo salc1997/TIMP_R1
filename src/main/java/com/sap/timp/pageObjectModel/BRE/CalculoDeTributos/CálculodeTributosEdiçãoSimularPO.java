@@ -152,12 +152,12 @@ public boolean editar() {
 	
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	
-	
+	sleep(3000);
 	waitExpectElement(CFOP);
 	sleep(8000);
 	CFOP.click();
 	sleep(5000);
-	CFOP2.click();
+	//CFOP2.click();
 	sleep(5000);
 	
 	dados.click();

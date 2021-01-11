@@ -146,7 +146,7 @@ public class CalculoDeTributoCriarPO extends TestBaseEliel{
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO QAA 07 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO QAA 008 - NAO MEXER");
 		sleep(1000);
 		
 		tiporegra.click();

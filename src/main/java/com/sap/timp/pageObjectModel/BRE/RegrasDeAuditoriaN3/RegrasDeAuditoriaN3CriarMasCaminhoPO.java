@@ -161,11 +161,6 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		nome.click();
 		sleep(1000);
 
-<<<<<<< HEAD
-=======
-		nome.sendKeys("TA-TESTE QA - NÃO MEXER 1");
-
->>>>>>> refs/heads/Cristhian
 		nome.sendKeys("TA-TESTE - NÃO MEXER");
 
 		sleep(1000);

@@ -43,8 +43,14 @@ public class TestBaseEliel extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+<<<<<<< HEAD
 		
 		driver.get(tp1);
+=======
+		driver.get(tp1);
+
+
+>>>>>>> refs/heads/Cristhian
 
 		return driver;
 

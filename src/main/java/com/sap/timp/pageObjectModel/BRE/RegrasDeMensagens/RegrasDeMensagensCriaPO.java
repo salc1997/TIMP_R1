@@ -172,7 +172,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO5 - NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO5 07 - NAO MEXER");
 		sleep(1000);
 		
 		tiporegra.click();

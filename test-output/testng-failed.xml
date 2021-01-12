@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
-=======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas">
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer">
         <methods>
+          <include name="ver"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas -->
->>>>>>> refs/heads/Cristhian
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

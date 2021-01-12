@@ -188,8 +188,8 @@ public class AtivaçaoParaMunicipioDestalhesPO extends TestBaseEliel{
 				sucesso.add(empresavisualizar.contains(empresadetalhes));
 				sucesso.add(razaosocialvisualizar.contains(razaosocialdetalhes));
 				sucesso.add(municipiovisualizar.contains(municipiodetalhes));
-				sucesso.add(filialvisualizar.contains(filialdetalhes));
-				sucesso.add(filiaisvisualizar.contains(filiaisdetalhes));
+				sucesso.add(filialvisualizar.contains(filiaisdetalhes));
+				sucesso.add(filiaisvisualizar.contains(filialdetalhes));
 				sucesso.add(nomefantasiavisualizar.contains(nomefantasiadetalhes));
 				sucesso.add(cnpjvisuazizar.contains(cnpjdetalhes));
 				

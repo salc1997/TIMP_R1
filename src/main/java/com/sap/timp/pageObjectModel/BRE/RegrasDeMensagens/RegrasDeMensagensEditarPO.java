@@ -214,13 +214,13 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		primeiracaixar1.click();
-		sleep(1000);
+		sleep(1000);	
 		NomeDoValor.clear();
 		NomeDoValor.sendKeys("BC ICMS - C597 (ED)");
-		NomeDoValor.sendKeys(Keys.ENTER);
-		
-		modificar.click();
+		NomeDoValor.sendKeys(Keys.ESCAPE);
 		sleep(1000);
+		modificar.click();
+		sleep(2000);
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

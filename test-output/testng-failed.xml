@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
@@ -41,20 +42,34 @@
 =======
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
 =======
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer">
+>>>>>>> refs/heads/Cristhian
         <methods>
+<<<<<<< HEAD
           <include name="criar"/>
+=======
+          <include name="ver"/>
+>>>>>>> refs/heads/Cristhian
           <include name="beforeClass"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="editar"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Cristhian
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
 =======
@@ -63,6 +78,9 @@
 >>>>>>> refs/remotes/origin/master
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

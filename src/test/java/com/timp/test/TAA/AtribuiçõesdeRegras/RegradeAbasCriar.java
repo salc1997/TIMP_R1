@@ -1,27 +1,30 @@
-package com.timp.test.TAA.Agendamento;
+package com.timp.test.TAA.AtribuiçõesdeRegras;
+
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
+import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoCriarPO;
+import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegradeAbasCriarPO;
+
+import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
-import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
-import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoCriarPO;
-
-public class AgendamentoCriar extends TestBaseFernando{
+public class RegradeAbasCriar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTAAPO  acessarTAAPO;
-	AgendamentoCriarPO agendamentoCriarPO;
+	RegradeAbasCriarPO regradeAbasCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTAAPO = new AcessarTAAPO();
-		agendamentoCriarPO = new AgendamentoCriarPO();
+		regradeAbasCriarPO = new RegradeAbasCriarPO();
 	}
 
 	@AfterClass
@@ -41,7 +44,8 @@ public class AgendamentoCriar extends TestBaseFernando{
 
 	@Test(priority = 2)
 	public void criar() {
-		boolean sucesso = agendamentoCriarPO.criar();
+		boolean sucesso = regradeAbasCriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}
+
 }

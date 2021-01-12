@@ -1,10 +1,10 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas;
 
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-import org.testng.annotations.AfterClass;
+import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,12 +14,14 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasVisualizarPO;
 
-public class TabelaCodigoReceitaDetalhes extends TestBaseSteven {
+public class TabelaReceitasPermitidasVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaCodigoReceitasDetalhesPO tabelaCodigoReceitasDetalhesPO;
+	TabelaReceitasPermitidasVisualizarPO tabelaReceitasPermitidasVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -27,7 +29,7 @@ public class TabelaCodigoReceitaDetalhes extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaCodigoReceitasDetalhesPO = new TabelaCodigoReceitasDetalhesPO();
+		tabelaReceitasPermitidasVisualizarPO = new TabelaReceitasPermitidasVisualizarPO();
 	}
 
 	@AfterClass
@@ -49,9 +51,9 @@ public class TabelaCodigoReceitaDetalhes extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void detalhes() {
+	public void visualizar() {
 
-		ArrayList<Boolean> sucesso = tabelaCodigoReceitasDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = tabelaReceitasPermitidasVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 

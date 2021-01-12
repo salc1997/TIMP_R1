@@ -22,6 +22,7 @@ import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenci
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir;
+import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar;
@@ -36,6 +37,7 @@ import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirMasas;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar;
@@ -89,6 +91,7 @@ import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
+import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar;
@@ -119,6 +122,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	CadastroNotaFiscalEditar cadastroNotaFiscalEditar;
 	CadastroNotaFiscalExcluir cadastroNotaFiscalExcluir;
 	CadastroNotaFiscalExcluirEmMassa cadastroNotaFiscalExcluirEmMassa;
+	
 
 	// Parâmetros de criação de NF > Cadastro de Fornecedor
 
@@ -126,7 +130,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	CadastroFornecedorEditar cadastroFornecedorEditar;
 	CadastroFornecedorVisualizar cadastroFornecedorVisualizar;
 	CadastroFornecedorExcluir cadastroFornecedorExcluir;
-
+	CadastroFornecedorFiltroId cadastroFornecedorFiltroId;
 	// Ocorrência Fiscal > Status de Ocorrência Fiscal
 
 	StatusOcorrenciaFiscalCriar statusOcorrenciaFiscalCriar;
@@ -149,6 +153,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	TabelaDeApoioECFAtualizar tabelaDeApoioECFAtualizar;
 	TabelaDeApoioECFNovaTabelaECF tabelaDeApoioECFNovaTabelaECF;
 	TabelaDeApoioECFNovaVersaoLeiaute tabelaDeApoioECFNovaVersaoLeiaute;
+	TabelaDeApoioECFExcluirMasas tabelaDeApoioECFExcluirMasas;
 
 	// Controle de Crédito Tributário > Status para BCE
 
@@ -173,6 +178,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	
 	//Preço de Transferência > Definição de Vinculação
 	DefinicaoVinculacaoFiltroID definicaoVinculacaoFiltroID;
+	DefinicaoVinculacaoCriar definicaoVinculacaoCriar;
 	
 	//SCANC > Relacionamento entre Quadros
 	RelacionamentoEntreQuadrosCriar relacionamentoEntreQuadrosCriar;
@@ -593,8 +599,20 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		tabelaDeApoioECFNovaVersaoLeiaute.afterClass();
 
 	}
-
+	
 	@Test(priority = 32)
+	public void tabelaDeApoioECFExcluirMasas() {
+
+		tabelaDeApoioECFExcluirMasas = new TabelaDeApoioECFExcluirMasas();
+		tabelaDeApoioECFExcluirMasas.beforeClass();
+		tabelaDeApoioECFExcluirMasas.login();
+		tabelaDeApoioECFExcluirMasas.acessarMDR();
+		tabelaDeApoioECFExcluirMasas.criar();
+		tabelaDeApoioECFExcluirMasas.afterClass();
+
+	}
+
+	@Test(priority = 33)
 	public void tabelaDeApoioECFExcluir() {
 
 		tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
@@ -787,8 +805,20 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		cadastroFornecedorVisualizar.afterClass();
 
 	}
-
+	
 	@Test(priority = 51)
+	public void cadastroFornecedorFiltroId() {
+
+		cadastroFornecedorFiltroId = new CadastroFornecedorFiltroId();
+		cadastroFornecedorFiltroId.beforeClass();
+		cadastroFornecedorFiltroId.login();
+		cadastroFornecedorFiltroId.acessarMDR();
+		cadastroFornecedorFiltroId.filtroId();
+		cadastroFornecedorFiltroId.afterClass();
+
+	}
+
+	@Test(priority = 52)
 	public void cadastroFornecedorcerExcluir() {
 
 		cadastroFornecedorExcluir = new CadastroFornecedorExcluir();
@@ -840,6 +870,18 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		definicaoVinculacaoFiltroID.acessarMDR();
 		definicaoVinculacaoFiltroID.filtro();
 		definicaoVinculacaoFiltroID.afterClass();
+
+	}
+	
+	@Test(priority = 62)
+	public void definicaoVinculacaoCriar() {
+
+		definicaoVinculacaoCriar = new DefinicaoVinculacaoCriar();
+		definicaoVinculacaoCriar.beforeClass();
+		definicaoVinculacaoCriar.login();
+		definicaoVinculacaoCriar.acessarMDR();
+		definicaoVinculacaoCriar.criar();
+		definicaoVinculacaoCriar.afterClass();
 
 	}
 

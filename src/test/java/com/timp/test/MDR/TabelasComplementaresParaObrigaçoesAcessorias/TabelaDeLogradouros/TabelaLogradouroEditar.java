@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros;
 
 import static org.testng.Assert.assertTrue;
 

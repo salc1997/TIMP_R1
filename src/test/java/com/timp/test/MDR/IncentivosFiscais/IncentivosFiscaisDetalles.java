@@ -42,7 +42,7 @@ public class IncentivosFiscaisDetalles extends TestBaseMassiel{
 	}
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void detalhes() {
 		
 		
 		ArrayList<Boolean> sucesso = incentivosFiscaisDetallesPO .Detalle();

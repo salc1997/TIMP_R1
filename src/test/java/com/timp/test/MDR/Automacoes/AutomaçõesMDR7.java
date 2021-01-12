@@ -29,6 +29,7 @@ import com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNão
 import com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoCriar;
 import com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoEditar;
 import com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir;
+import com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluir;
 import com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar;
@@ -58,6 +59,7 @@ import com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabei
 import com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir;
 import com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisFiltrar;
 import com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar;
+import com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaExcluirEmMassa;
 import com.timp.test.MDR.TabelaApoioECD.FatosContabeis.FatosContabeisFiltrar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluirMassa;
@@ -114,7 +116,7 @@ public class AutomaçõesMDR7 {
 	S1070ProcessosAdmJudiciaisEditar s1070ProcessosAdmJudiciaisEditar;
 	S1070ProcessosAdmJudiciaisExluir s1070ProcessosAdmJudiciaisExluir;
 	
-	// Eventos e-Social > S1070 - S1210 - Pagamentos de Rendimentos do Trabalho
+	// Eventos e-Social >  S1210 - Pagamentos de Rendimentos do Trabalho
 	S1210PagamentosDeRendimientosDoTrabalhoCriar s1210PagamentosDeRendimientosDoTrabalhoCriar;
 	S1210PagamentosDeRendimientosDoTrabalhoEditar s1210PagamentosDeRendimientosDoTrabalhoCEditar;
 	S1210PagamentosDeRendimientosDoTrabalhoExcluir s1210PagamentosDeRendimientosDoTrabalhoExcluir;
@@ -124,6 +126,7 @@ public class AutomaçõesMDR7 {
 	S2210ComunicaçãoDeAcidenteDeTrabalhoCriar s2210ComunicaçãoDeAcidenteDeTrabalhoCriar;
 	S2210ComunicaçãoDeAcidenteDeTrabalhoEditar s2210ComunicaçãoDeAcidenteDeTrabalhoEditar;
 	S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir;
+	S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID;
 	
 	// Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários
 	ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar contrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar;
@@ -159,8 +162,7 @@ public class AutomaçõesMDR7 {
 	CFOPEditar CFOPEditar;
 	CFOVisualizar cFOVisualizar;
 	
-	// Tabela de Apoio do SPED	> 4.3.8 Código de Ajustes de Contribuições ou Créditos
-	CodigoAjustesContribuiçoesCreditosEditar codigoAjustesContribuiçoesCreditosEditar;
+	
 	
 	// Tabela de Apoio do SPED	4.5.5 Classificação de Contribuintes do IPI
 	ClassificaçaoDeContribuintesDoIPIExcluirMassa classificaçaoDeContribuintesDoIPIExcluirMassa;
@@ -175,7 +177,8 @@ public class AutomaçõesMDR7 {
 	
 	// Tabela de Apoio ECD > Fatos Contábeis
 	FatosContabeisFiltrar fatosContabeisFiltrar;
-	
+	// Tabela de Apoio ECD > DeXParaContraPartida
+	DeXParaContraPartidaExcluirEmMassa deXParaContraPartidaExcluirEmMassa;
 	// Tabela de Apoio ECD	> Balanço Consolidado
 	BalançoConsolidadoEditar balançoConsolidadoEditar;
 	
@@ -217,6 +220,8 @@ public class AutomaçõesMDR7 {
 	
 	// Rateiro Consorcio
 	RateiroConsorcio  rateiroConsorcio;
+	
+	//Tabela de Apoio do SPED > CFOP
 	
 	// -----------------------------------------------------------------------------------------
 	
@@ -327,7 +332,7 @@ public class AutomaçõesMDR7 {
 		System.out.println("-------------------Eventos e-Social > S1070 - Processos Adm. / Judiciais FIN-------------------------");
 	}
 	
-	// Eventos e-Social > S1070 - S1210 - Pagamentos de Rendimentos do Trabalho
+	// Eventos e-Social >  S1210 - Pagamentos de Rendimentos do Trabalho
 	
 	@Test(priority = 8)
 	public void s1210PagamentosDeRendimientosDoTrabalhoCriar() {
@@ -398,6 +403,16 @@ public class AutomaçõesMDR7 {
 	}
 	
 	@Test(priority = 14)
+	public void s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID() {
+		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID = new S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID();
+		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID.beforeClass();
+		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID.login();
+		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID.acessarMDR();
+		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID.filtro();
+		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID.afterClass();		
+	}
+	
+	@Test(priority = 15)
 	public void s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir() {
 		s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir = new S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir();
 		s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir.beforeClass();
@@ -622,15 +637,7 @@ public class AutomaçõesMDR7 {
 	
 	// Tabela de Apoio do SPED	> 4.3.8 Código de Ajustes de Contribuições ou Créditos
 	// 50 - 56
-	@Test(priority = 52)
-	public void codigoAjustesContribuiçoesCreditosEditar() {		
-		codigoAjustesContribuiçoesCreditosEditar = new CodigoAjustesContribuiçoesCreditosEditar();
-		codigoAjustesContribuiçoesCreditosEditar.beforeClass();
-		codigoAjustesContribuiçoesCreditosEditar.ingresar();
-		codigoAjustesContribuiçoesCreditosEditar.mdrEntrar();
-		codigoAjustesContribuiçoesCreditosEditar.editar();
-		codigoAjustesContribuiçoesCreditosEditar.afterClass();		
-	}
+	
 	
 	// Tabela de Apoio do SPED	4.5.5 Classificação de Contribuintes do IPI
 	// 57 - 64
@@ -1001,6 +1008,19 @@ public class AutomaçõesMDR7 {
 			rateiroConsorcio.afterClass();				
 		}
 		
+		// Tabela de Apoio ECD > DeXParaContraPartida
 
+		@Test(priority = 145)
+		public void  deXParaContraPartidaExcluirEmMassa() {		
+			System.out.println("------------------- Tabela de Apoio ECD > DeXParaContraPartida -------------------------");
+			deXParaContraPartidaExcluirEmMassa = new DeXParaContraPartidaExcluirEmMassa();
+			deXParaContraPartidaExcluirEmMassa.beforeClass();
+			deXParaContraPartidaExcluirEmMassa.login();
+			deXParaContraPartidaExcluirEmMassa.acessarMDR();
+			deXParaContraPartidaExcluirEmMassa.criar();
+			deXParaContraPartidaExcluirEmMassa.afterClass();				
+		}
+		
+		
 		
  }  

@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,20 +9,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradourosExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassaPO;
 
-public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
+public class TabelaLogradouro extends TestBaseEliel {
 	
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	TabelaLogradourosExcluirEmMassaPO tabelaLogradourosExcluirEmMassaPO;
+	TabelaServicosExcluirEmMassaPO tabelaServicosExcluirEmMassaPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationE();
 	  loginTC = new LoginTC();
 	  accesarMDR = new AcessarMDRPO();
-	  tabelaLogradourosExcluirEmMassaPO = new TabelaLogradourosExcluirEmMassaPO();
+	  tabelaServicosExcluirEmMassaPO = new TabelaServicosExcluirEmMassaPO();
   }
 
   @AfterClass
@@ -31,12 +31,12 @@ public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
   }
   
   @Test(priority = 0)
-  public void login() {
+  public void ingresar() {
 	  loginTC.login();
   }
   
   @Test(priority = 1)
-  public void acessarMDR() {
+  public void mdrEntrar() {
 	 accesarMDR.acessarMDR();
 
   }
@@ -44,13 +44,15 @@ public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
   @Test(priority = 2)
   public void criar() {
 	
-	  boolean sucesso = tabelaLogradourosExcluirEmMassaPO.criar();
+	  boolean sucesso = tabelaServicosExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 	sleep(1000);
 	
-	boolean sucesso2 = tabelaLogradourosExcluirEmMassaPO.excluir();
+	boolean sucesso2 = tabelaServicosExcluirEmMassaPO.excluir();
 	assertTrue(sucesso2, Eliminado);
   }
+
+
 	
- 
+	
 }

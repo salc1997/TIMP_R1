@@ -1,6 +1,8 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -10,14 +12,14 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluirPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasDetalhesPO;
 
-public class TabelaCodigoReceitaExcluir extends TestBaseSteven {
+public class TabelaCodigoReceitaDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaCodigoReceitasExcluirPO tabelaCodigoReceitasExcluirPO;
+	TabelaCodigoReceitasDetalhesPO tabelaCodigoReceitasDetalhesPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -25,7 +27,7 @@ public class TabelaCodigoReceitaExcluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaCodigoReceitasExcluirPO = new TabelaCodigoReceitasExcluirPO();
+		tabelaCodigoReceitasDetalhesPO = new TabelaCodigoReceitasDetalhesPO();
 	}
 
 	@AfterClass
@@ -47,11 +49,15 @@ public class TabelaCodigoReceitaExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void excluir() {
+	public void detalhes() {
 
-		boolean sucesso = tabelaCodigoReceitasExcluirPO.eliminar();
-		assertTrue(sucesso, Eliminado);
+		ArrayList<Boolean> sucesso = tabelaCodigoReceitasDetalhesPO.detalhes();
 
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), Detalhes);
+
+		}
 	}
 
 }

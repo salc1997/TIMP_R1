@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,14 +9,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaDeCodigosDeReceitasExcluirEmMassaPO;
 
-public class TabelaReceitasPermitidasExcluirEmMassa extends TestBaseEliel{
-
+public class TabelaDeCodigosDeReceitasExcluirEmMassa extends TestBaseEliel{
+ 
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaReceitasPermitidasExcluirEmMassaPO tabelaReceitasPermitidasExcluirEmMassaPO;
+	TabelaDeCodigosDeReceitasExcluirEmMassaPO tabelaDeCodigosDeReceitasExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +24,7 @@ public class TabelaReceitasPermitidasExcluirEmMassa extends TestBaseEliel{
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaReceitasPermitidasExcluirEmMassaPO = new TabelaReceitasPermitidasExcluirEmMassaPO();
+		tabelaDeCodigosDeReceitasExcluirEmMassaPO = new TabelaDeCodigosDeReceitasExcluirEmMassaPO();
 	}
 
 	@AfterClass
@@ -48,10 +48,10 @@ public class TabelaReceitasPermitidasExcluirEmMassa extends TestBaseEliel{
 	@Test(priority = 2)
 	public void criar() {
 
-		boolean sucesso = tabelaReceitasPermitidasExcluirEmMassaPO.criar();
+		boolean sucesso = tabelaDeCodigosDeReceitasExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
-		boolean sucesso2 = tabelaReceitasPermitidasExcluirEmMassaPO.excluir();
+		boolean sucesso2 = tabelaDeCodigosDeReceitasExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}

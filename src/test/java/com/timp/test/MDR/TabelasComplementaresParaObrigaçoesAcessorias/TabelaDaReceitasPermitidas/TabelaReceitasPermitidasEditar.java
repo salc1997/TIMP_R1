@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas;
 
 import static org.testng.Assert.assertTrue;
 
@@ -13,13 +13,13 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasEditarPO;
 
-public class TabelaReceitasPermitidasExcluir extends TestBaseSteven {
+public class TabelaReceitasPermitidasEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaReceitasPermitidasExcluirPO tabelaReceitasPermitidasExcluirPO;
+	TabelaReceitasPermitidasEditarPO tabelaReceitasPermitidasEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -27,7 +27,7 @@ public class TabelaReceitasPermitidasExcluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaReceitasPermitidasExcluirPO = new TabelaReceitasPermitidasExcluirPO();
+		tabelaReceitasPermitidasEditarPO = new TabelaReceitasPermitidasEditarPO();
 	}
 
 	@AfterClass
@@ -49,10 +49,10 @@ public class TabelaReceitasPermitidasExcluir extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void excluir() {
+	public void editar() {
 
-		boolean sucesso = tabelaReceitasPermitidasExcluirPO.eliminar();
-		assertTrue(sucesso, Eliminado);
+		boolean sucesso = tabelaReceitasPermitidasEditarPO.editar();
+		assertTrue(sucesso, Editar);
 
 	}
 

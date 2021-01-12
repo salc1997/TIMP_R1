@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,20 +9,20 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradourosExcluirEmMassaPO;
 
-public class TabelaLogradouro extends TestBaseEliel {
+public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
 	
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	TabelaServicosExcluirEmMassaPO tabelaServicosExcluirEmMassaPO;
+	TabelaLogradourosExcluirEmMassaPO tabelaLogradourosExcluirEmMassaPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationE();
 	  loginTC = new LoginTC();
 	  accesarMDR = new AcessarMDRPO();
-	  tabelaServicosExcluirEmMassaPO = new TabelaServicosExcluirEmMassaPO();
+	  tabelaLogradourosExcluirEmMassaPO = new TabelaLogradourosExcluirEmMassaPO();
   }
 
   @AfterClass
@@ -31,12 +31,12 @@ public class TabelaLogradouro extends TestBaseEliel {
   }
   
   @Test(priority = 0)
-  public void ingresar() {
+  public void login() {
 	  loginTC.login();
   }
   
   @Test(priority = 1)
-  public void mdrEntrar() {
+  public void acessarMDR() {
 	 accesarMDR.acessarMDR();
 
   }
@@ -44,15 +44,13 @@ public class TabelaLogradouro extends TestBaseEliel {
   @Test(priority = 2)
   public void criar() {
 	
-	  boolean sucesso = tabelaServicosExcluirEmMassaPO.criar();
+	  boolean sucesso = tabelaLogradourosExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 	sleep(1000);
 	
-	boolean sucesso2 = tabelaServicosExcluirEmMassaPO.excluir();
+	boolean sucesso2 = tabelaLogradourosExcluirEmMassaPO.excluir();
 	assertTrue(sucesso2, Eliminado);
   }
-
-
 	
-	
+ 
 }

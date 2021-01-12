@@ -1,32 +1,32 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasCriarPO;
 
-public class TabelaReceitasPermitidasCriar extends TestBaseSteven {
+public class TabelaCodigoReceitaCriar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaReceitasPermitidasCriarPO tabelaReceitasPermitidasCriarPO;
+	TabelaCodigoReceitasCriarPO tabelaCodigoReceitasCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaReceitasPermitidasCriarPO = new TabelaReceitasPermitidasCriarPO();
+		tabelaCodigoReceitasCriarPO = new TabelaCodigoReceitasCriarPO();
 	}
 
 	@AfterClass
@@ -50,7 +50,7 @@ public class TabelaReceitasPermitidasCriar extends TestBaseSteven {
 	@Test(priority = 2)
 	public void criar() {
 
-		boolean sucesso = tabelaReceitasPermitidasCriarPO.criar();
+		boolean sucesso = tabelaCodigoReceitasCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 
 	}

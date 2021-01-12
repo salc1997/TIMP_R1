@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros;
+package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros;
 
 import static org.testng.Assert.assertTrue;
 
@@ -15,14 +15,15 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriarPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroVisualizarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosVisualizarPO;
 
-public class TabelaLograduroDetalhes extends TestBaseSteven {
+public class TabelaLogradouroVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaLogradouroDetalhesPO tabelaLogradouroDetalhesPO;
+	TabelaLogradouroVisualizarPO tabelaLogradouroVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -30,7 +31,7 @@ public class TabelaLograduroDetalhes extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tabelaLogradouroDetalhesPO = new TabelaLogradouroDetalhesPO();
+		tabelaLogradouroVisualizarPO = new TabelaLogradouroVisualizarPO();
 	}
 
 	@AfterClass
@@ -52,9 +53,9 @@ public class TabelaLograduroDetalhes extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void detalhes() {
+	public void visualizar() {
 
-		ArrayList<Boolean> sucesso = tabelaLogradouroDetalhesPO.detalhes();
+		ArrayList<Boolean> sucesso = tabelaLogradouroVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);

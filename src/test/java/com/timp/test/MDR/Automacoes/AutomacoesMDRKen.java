@@ -13,11 +13,17 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaFiltrosAvan;
 import com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluirEmMassa;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluirEmMassa;
+import com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa;
 import com.timp.test.MDR.EventosESocial.S2240CondiçõesAmbDoTrabFatDeRisco.S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID;
 import com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteExcluirEmMassa;
+import com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID;
 import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisDetalles;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisEditar;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluir;
 import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisFiltroId;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTFiltrosAvan;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa;
@@ -32,6 +38,7 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluirEmMasa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa;
 import com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan;
+import com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialCriar;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialDetalhe;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialEditar;
@@ -58,6 +65,7 @@ import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa;
+import com.timp.test.TAA.Ajustes.AjusteCancelar;
 
 public class AutomacoesMDRKen extends TestBaseKenssy {
 
@@ -75,7 +83,10 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	IncentivosFiscaisCriar incentivosFiscaisCriar;
 	IncentivosFiscaisFiltroId incentivosFiscaisFiltroId;
 	IncentivosFiscaisExcluirEmMassa incentivosFiscaisExcluirEmMassa;
-	
+	IncentivosFiscaisDetalles incentivosFiscaisDetalles;
+	IncentivosFiscaisVisualizar incentivosFiscaisVisualizar;
+	IncentivosFiscaisEditar incentivosFiscaisEditar;
+	IncentivosFiscaisExcluir incentivosFiscaisExcluir;
 	//SaldoInicialCriar > SaldoInicialCriar
 	SaldoInicialCriar saldoInicialCriar;
 	SaldoInicialEditar saldoInicialEditar;
@@ -106,7 +117,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	
 		//ICMS-ST Transporte
 		ICMSSTTransporteExcluirEmMassa iCMSSTTransporteExcluirEmMassa;
-		
+		ICMSSTTransporteFiltroID icmsstTransporteFiltroID;
 		
 		//Determinação de Relevância de Tarefa por Motivo de Reabertura	Determinação de Relevância por Motivo
 		DeterminacionRelevanciaPorMotivoExcluirEmMassa determinacionRelevanciaPorMotivoExcluirEmMassa;
@@ -121,6 +132,10 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		//Eventos e-Social > S2240 - Condições Amb do Trab - Fat de Risco
 		S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID;
 		
+		//Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários
+		ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa;
+		//SCANC > Ajuste de Transferencia
+		AjusteDeTransferenciaExcluirEmMasa ajusteDeTransferenciaExcluirEmMasa;
 		
 	@Test(priority = 0)
 	public void saldosCriar() {
@@ -190,6 +205,61 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		incentivosFiscaisExcluirEmMassa.excluirEmMassa();
 		incentivosFiscaisExcluirEmMassa.afterClass();
 	}
+	
+
+	@Test(priority = 5)
+	public void incentivosFiscaisEditar() {
+		incentivosFiscaisEditar = new IncentivosFiscaisEditar();
+		incentivosFiscaisEditar.beforeClass();
+		incentivosFiscaisEditar.login();
+		incentivosFiscaisEditar.acessarMDR();
+		incentivosFiscaisEditar.editar();
+		incentivosFiscaisEditar.afterClass();
+	}
+	
+	@Test(priority = 5)
+	public void incentivosFiscaisDetalles() {
+		incentivosFiscaisDetalles = new IncentivosFiscaisDetalles();
+		incentivosFiscaisDetalles.beforeClass();
+		incentivosFiscaisDetalles.ingresar();
+		incentivosFiscaisDetalles.ingresarMDR();
+		incentivosFiscaisDetalles.detalhes();
+		incentivosFiscaisDetalles.afterClass();
+	}
+	
+	@Test(priority = 6)
+	public void incentivosFiscaisVisualizar() {
+		incentivosFiscaisVisualizar = new IncentivosFiscaisVisualizar();
+		incentivosFiscaisVisualizar.beforeClass();
+		incentivosFiscaisVisualizar.ingresar();
+		incentivosFiscaisVisualizar.ingresarMDR();
+		incentivosFiscaisVisualizar.visualizar();
+		incentivosFiscaisVisualizar.afterClass();
+	}
+	
+	
+	@Test(priority = 6)
+	public void incentivosFiscaisFiltroId() {
+		incentivosFiscaisFiltroId = new IncentivosFiscaisFiltroId();
+		incentivosFiscaisFiltroId.beforeClass();
+		incentivosFiscaisFiltroId.login();
+		incentivosFiscaisFiltroId.acessarMDR();
+		incentivosFiscaisFiltroId.FiltrarIncentivosFiscaisId();
+		incentivosFiscaisFiltroId.afterClass();
+	}
+	
+	
+	@Test(priority = 6)
+	public void incentivosFiscaisExcluir() {
+		incentivosFiscaisExcluir = new IncentivosFiscaisExcluir();
+		incentivosFiscaisExcluir.beforeClass();
+		incentivosFiscaisExcluir.ingresar();
+		incentivosFiscaisExcluir.ingresarMDR();
+		incentivosFiscaisExcluir.Excluir();
+		incentivosFiscaisExcluir.afterClass();
+	}
+	
+	
 	
 	@Test(priority = 6)
 	public void saldoInicialCriar() {
@@ -408,6 +478,16 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		iCMSSTTransporteExcluirEmMassa.afterClass();
 	}
 	
+	@Test(priority = 26)
+	public void icmsstTransporteFiltroID() {
+		icmsstTransporteFiltroID = new ICMSSTTransporteFiltroID();
+		icmsstTransporteFiltroID.beforeClass();
+		icmsstTransporteFiltroID.login();
+		icmsstTransporteFiltroID.acessarMDR();
+		icmsstTransporteFiltroID.filtro();
+		icmsstTransporteFiltroID.afterClass();
+	}
+	
 	
 	//ESPACIO PARA LOS ANTERIORES 
 	// 31-36
@@ -450,6 +530,18 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	}
 
 	@Test(priority = 45)
+	public void contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa() {
+		System.out.println(
+				"------Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários----------");
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa = new ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.beforeClass();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.excluirEmMassa();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.afterClass();
+	}
+	
+	@Test(priority = 46)
 	public void s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID() {
 		System.out.println(
 				"------Eventos e-Social > S2240 - Condições Amb do Trab - Fat de Risco----------");
@@ -459,6 +551,20 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.acessarMDR();
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.filtroPorId();
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.afterClass();
+	}
+	
+	//SCANC > Ajuste de Transferencia
+	
+	@Test(priority = 47)
+	public void ajusteDeTransferenciaExcluirEmMasa() {
+		System.out.println(
+				"------SCANC > Ajuste de Transferencia----------");
+		ajusteDeTransferenciaExcluirEmMasa = new AjusteDeTransferenciaExcluirEmMasa();
+		ajusteDeTransferenciaExcluirEmMasa.beforeClass();
+		ajusteDeTransferenciaExcluirEmMasa.login();
+		ajusteDeTransferenciaExcluirEmMasa.acessarMDR();
+		ajusteDeTransferenciaExcluirEmMasa.excluir();
+		ajusteDeTransferenciaExcluirEmMasa.afterClass();
 	}
 		
 }

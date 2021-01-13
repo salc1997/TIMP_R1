@@ -22,6 +22,7 @@ import com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenci
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir;
+import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar;
@@ -36,6 +37,7 @@ import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir;
+import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirMasas;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute;
 import com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar;
@@ -49,6 +51,11 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioEd
 import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadEnCatTrabExcluirMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoExcluir;
@@ -61,6 +68,11 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCr
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExlusionMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluir;
@@ -89,6 +101,7 @@ import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID;
+import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar;
 import com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar;
@@ -119,6 +132,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	CadastroNotaFiscalEditar cadastroNotaFiscalEditar;
 	CadastroNotaFiscalExcluir cadastroNotaFiscalExcluir;
 	CadastroNotaFiscalExcluirEmMassa cadastroNotaFiscalExcluirEmMassa;
+	
 
 	// Parâmetros de criação de NF > Cadastro de Fornecedor
 
@@ -126,7 +140,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	CadastroFornecedorEditar cadastroFornecedorEditar;
 	CadastroFornecedorVisualizar cadastroFornecedorVisualizar;
 	CadastroFornecedorExcluir cadastroFornecedorExcluir;
-
+	CadastroFornecedorFiltroId cadastroFornecedorFiltroId;
 	// Ocorrência Fiscal > Status de Ocorrência Fiscal
 
 	StatusOcorrenciaFiscalCriar statusOcorrenciaFiscalCriar;
@@ -149,6 +163,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	TabelaDeApoioECFAtualizar tabelaDeApoioECFAtualizar;
 	TabelaDeApoioECFNovaTabelaECF tabelaDeApoioECFNovaTabelaECF;
 	TabelaDeApoioECFNovaVersaoLeiaute tabelaDeApoioECFNovaVersaoLeiaute;
+	TabelaDeApoioECFExcluirMasas tabelaDeApoioECFExcluirMasas;
 
 	// Controle de Crédito Tributário > Status para BCE
 
@@ -173,6 +188,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	
 	//Preço de Transferência > Definição de Vinculação
 	DefinicaoVinculacaoFiltroID definicaoVinculacaoFiltroID;
+	DefinicaoVinculacaoCriar definicaoVinculacaoCriar;
 	
 	//SCANC > Relacionamento entre Quadros
 	RelacionamentoEntreQuadrosCriar relacionamentoEntreQuadrosCriar;
@@ -258,9 +274,18 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	UnidadeDeMedidaExcluir unidadeDeMedidaExcluir;
 	UnidadeDeMedidaExcluirEmMasa unidadeDeMedidaExcluirEmMasa;
 	UnidadeDeMedidaFiltroCodigo unidadeDeMedidaFiltroCodigo;
-	
-	
-	
+	//Tabelas de Apoio E-SOCIAL > Tabela 11 - Compatibilidade en Cat. Trab.
+	CompatibilidadeEnCatTrabCriar compatibilidadeEnCatTrabCriar;
+	CompatibilidadeEnCatTrabEditar compatibilidadeEnCatTrabEditar;
+	CompatibilidadeEnCatTrabExcluir compatibilidadeEnCatTrabExcluir;
+	CompatibilidadeEnCatTrabVisualizar compatibilidadeEnCatTrabVisualizar;
+	CompatibilidadEnCatTrabExcluirMassa compatibilidadEnCatTrabExcluirMassa;
+	//Tabelas de Apoio E-SOCIAL > Tabela 15 - Agente Causador de SGDP
+	AgenteCausadorDeSGDPCriar agenteCausadorDeSGDPCriar;
+	AgenteCausadorDeSGDPEditar agenteCausadorDeSGDPEditar;
+	AgenteCausadorDeSGDPExcluir agenteCausadorDeSGDPExcluir;
+	AgenteCausadorDeSGDPVisualizar agenteCausadorDeSGDPVisualizar;
+	AgenteCausadorDeSGDPExlusionMassa agenteCausadorDeSGDPExlusionMassa;
 	// 0
 
 	// Determinação de Relevância de Tarefa por Motivo de Reabertura > Cadastro de
@@ -593,8 +618,20 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		tabelaDeApoioECFNovaVersaoLeiaute.afterClass();
 
 	}
-
+	
 	@Test(priority = 32)
+	public void tabelaDeApoioECFExcluirMasas() {
+
+		tabelaDeApoioECFExcluirMasas = new TabelaDeApoioECFExcluirMasas();
+		tabelaDeApoioECFExcluirMasas.beforeClass();
+		tabelaDeApoioECFExcluirMasas.login();
+		tabelaDeApoioECFExcluirMasas.acessarMDR();
+		tabelaDeApoioECFExcluirMasas.criar();
+		tabelaDeApoioECFExcluirMasas.afterClass();
+
+	}
+
+	@Test(priority = 33)
 	public void tabelaDeApoioECFExcluir() {
 
 		tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
@@ -787,8 +824,20 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		cadastroFornecedorVisualizar.afterClass();
 
 	}
-
+	
 	@Test(priority = 51)
+	public void cadastroFornecedorFiltroId() {
+
+		cadastroFornecedorFiltroId = new CadastroFornecedorFiltroId();
+		cadastroFornecedorFiltroId.beforeClass();
+		cadastroFornecedorFiltroId.login();
+		cadastroFornecedorFiltroId.acessarMDR();
+		cadastroFornecedorFiltroId.filtroId();
+		cadastroFornecedorFiltroId.afterClass();
+
+	}
+
+	@Test(priority = 52)
 	public void cadastroFornecedorcerExcluir() {
 
 		cadastroFornecedorExcluir = new CadastroFornecedorExcluir();
@@ -840,6 +889,18 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		definicaoVinculacaoFiltroID.acessarMDR();
 		definicaoVinculacaoFiltroID.filtro();
 		definicaoVinculacaoFiltroID.afterClass();
+
+	}
+	
+	@Test(priority = 62)
+	public void definicaoVinculacaoCriar() {
+
+		definicaoVinculacaoCriar = new DefinicaoVinculacaoCriar();
+		definicaoVinculacaoCriar.beforeClass();
+		definicaoVinculacaoCriar.login();
+		definicaoVinculacaoCriar.acessarMDR();
+		definicaoVinculacaoCriar.criar();
+		definicaoVinculacaoCriar.afterClass();
 
 	}
 
@@ -1604,12 +1665,138 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		
-
-
-		
-		
 		//142
+		//Tabelas de Apoio E-SOCIAL > Tabela 11 - Compatibilidade en Cat. Trab.
+		@Test(priority = 142)
+		public void compatibilidadeEnCatTrabCriar() {
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 11 - Compatibilidade en Cat. Trab.-------------------------");
+
+			compatibilidadeEnCatTrabCriar = new CompatibilidadeEnCatTrabCriar();
+			compatibilidadeEnCatTrabCriar.beforeClass();
+			compatibilidadeEnCatTrabCriar.login();
+			compatibilidadeEnCatTrabCriar.acessarMDR();
+			compatibilidadeEnCatTrabCriar.criar();
+			compatibilidadeEnCatTrabCriar.afterClass();
+
+		}
+		
+		@Test(priority = 143)
+		public void compatibilidadeEnCatTrabEditar() {
+
+
+			compatibilidadeEnCatTrabEditar = new CompatibilidadeEnCatTrabEditar();
+			compatibilidadeEnCatTrabEditar.beforeClass();
+			compatibilidadeEnCatTrabEditar.login();
+			compatibilidadeEnCatTrabEditar.acessarMDR();
+			compatibilidadeEnCatTrabEditar.editar();
+			compatibilidadeEnCatTrabEditar.afterClass();
+
+		}
+		
+		@Test(priority = 144)
+		public void compatibilidadeEnCatTrabVisualizar() {
+
+
+			compatibilidadeEnCatTrabVisualizar = new CompatibilidadeEnCatTrabVisualizar();
+			compatibilidadeEnCatTrabVisualizar.beforeClass();
+			compatibilidadeEnCatTrabVisualizar.login();
+			compatibilidadeEnCatTrabVisualizar.acessarMDR();
+			compatibilidadeEnCatTrabVisualizar.visualizar();
+			compatibilidadeEnCatTrabVisualizar.afterClass();
+
+		}
+		
+		@Test(priority = 145)
+		public void compatibilidadeEnCatTrabExcluir() {
+
+
+			compatibilidadeEnCatTrabExcluir = new CompatibilidadeEnCatTrabExcluir();
+			compatibilidadeEnCatTrabExcluir.beforeClass();
+			compatibilidadeEnCatTrabExcluir.login();
+			compatibilidadeEnCatTrabExcluir.acessarMDR();
+			compatibilidadeEnCatTrabExcluir.excluir();
+			compatibilidadeEnCatTrabExcluir.afterClass();
+
+		}
+		
+		
+		@Test(priority = 146)
+		public void compatibilidadEnCatTrabExcluirMassa() {
+
+
+			compatibilidadEnCatTrabExcluirMassa = new CompatibilidadEnCatTrabExcluirMassa();
+			compatibilidadEnCatTrabExcluirMassa.beforeClass();
+			compatibilidadEnCatTrabExcluirMassa.login();
+			compatibilidadEnCatTrabExcluirMassa.acessarMDR();
+			compatibilidadEnCatTrabExcluirMassa.criar();
+			compatibilidadEnCatTrabExcluirMassa.afterClass();
+
+		}
+		
+		
+		//Tabelas de Apoio E-SOCIAL > Tabela 15 - Agente Causador de SGDP
+		
+		
+		@Test(priority = 149)
+		public void agenteCausadorDeSGDPCriar() {
+
+			System.out.println("-------------------Tabelas de Apoio E-SOCIAL > Tabela 15 - Agente Causador de SGDP-------------------------");
+
+			agenteCausadorDeSGDPCriar = new AgenteCausadorDeSGDPCriar();
+			agenteCausadorDeSGDPCriar.beforeClass();
+			agenteCausadorDeSGDPCriar.login();
+			agenteCausadorDeSGDPCriar.acessarMDR();
+			agenteCausadorDeSGDPCriar.criar();
+			agenteCausadorDeSGDPCriar.afterClass();
+
+		}
+		@Test(priority = 150)
+		public void agenteCausadorDeSGDPEditar() {
+
+			agenteCausadorDeSGDPEditar = new AgenteCausadorDeSGDPEditar();
+			agenteCausadorDeSGDPEditar.beforeClass();
+			agenteCausadorDeSGDPEditar.login();
+			agenteCausadorDeSGDPEditar.acessarMDR();
+			agenteCausadorDeSGDPEditar.editar();
+			agenteCausadorDeSGDPEditar.afterClass();
+
+		}
+		@Test(priority = 151)
+		public void agenteCausadorDeSGDPVisualizar() {
+
+			agenteCausadorDeSGDPVisualizar = new AgenteCausadorDeSGDPVisualizar();
+			agenteCausadorDeSGDPVisualizar.beforeClass();
+			agenteCausadorDeSGDPVisualizar.login();
+			agenteCausadorDeSGDPVisualizar.acessarMDR();
+			agenteCausadorDeSGDPVisualizar.visualizar();
+			agenteCausadorDeSGDPVisualizar.afterClass();
+
+		}
+		@Test(priority = 152)
+		public void agenteCausadorDeSGDPExcluir() {
+
+			agenteCausadorDeSGDPExcluir = new AgenteCausadorDeSGDPExcluir();
+			agenteCausadorDeSGDPExcluir.beforeClass();
+			agenteCausadorDeSGDPExcluir.login();
+			agenteCausadorDeSGDPExcluir.acessarMDR();
+			agenteCausadorDeSGDPExcluir.excluirr();
+			agenteCausadorDeSGDPExcluir.afterClass();
+
+		}
+		@Test(priority = 153)
+		public void agenteCausadorDeSGDPExlusionMassa() {
+
+			agenteCausadorDeSGDPExlusionMassa = new AgenteCausadorDeSGDPExlusionMassa();
+			agenteCausadorDeSGDPExlusionMassa.beforeClass();
+			agenteCausadorDeSGDPExlusionMassa.login();
+			agenteCausadorDeSGDPExlusionMassa.acessarMDR();
+			agenteCausadorDeSGDPExlusionMassa.criar();
+			agenteCausadorDeSGDPExlusionMassa.afterClass();
+
+		}
+		
+		
 		
 		
 		

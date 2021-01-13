@@ -159,12 +159,15 @@ import com.timp.test.MDR.Filiais.FiliaisEditar;
 import com.timp.test.MDR.Filiais.FiliaisVisualizar;
 import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIICriar;
 import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIDetalhe;
+import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIEditar;
 import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIExcluir;
 import com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIExcluirMassa;
 import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes;
 import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosEditar;
 import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluir;
 import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluirMassa;
+import com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.LogradouroExcluirMassa;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
 
@@ -379,6 +382,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	SPCBFederaisRetidosCriar sPCBFederaisRetidosCriar;
 	SPCBFederaisRetidosEditar sPCBFederaisRetidosEditar;
 	SPCBFederaisRetidosExcluir sPCBFederaisRetidosExcluir;
+	SPCBFederaisRetidosDetalhes spcbFederaisRetidosDetalhes;
+	SPCBFederaisRetidosVisualizar spcbFederaisRetidosVisualizar;
 	SPCBFederaisRetidosExcluirMassa sPCBFederaisRetidosExcluirMassa;
 	
 	// Notas a Declarar Anexo III DIA-AM
@@ -386,6 +391,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	NotasDeclararAnexoIIIDetalhe notasDeclararAnexoIIIDetalhe;
 	NotasDeclararAnexoIIIExcluir notasDeclararAnexoIIIExcluir;
 	NotasDeclararAnexoIIIExcluirMassa notasDeclararAnexoIIIExcluirMassa;
+	NotasDeclararAnexoIIIEditar notasDeclararAnexoIIIEditar;
 	
 	// --------------------------------------------------------------------------------------------------
 	
@@ -2247,7 +2253,28 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		sPCBFederaisRetidosEditar.editar();
 		sPCBFederaisRetidosEditar.afterClass();
 	}
+	
 	@Test(priority = 117)
+	public void spcbFederaisRetidosDetalhes() {
+		spcbFederaisRetidosDetalhes = new SPCBFederaisRetidosDetalhes();
+		spcbFederaisRetidosDetalhes.beforeClass();
+		spcbFederaisRetidosDetalhes.ingresar();
+		spcbFederaisRetidosDetalhes.mdrEntrar();
+		spcbFederaisRetidosDetalhes.detalhe();
+		spcbFederaisRetidosDetalhes.afterClass();
+	}
+	
+	@Test(priority = 117)
+	public void spcbFederaisRetidosVisualizar() {
+		spcbFederaisRetidosVisualizar = new SPCBFederaisRetidosVisualizar();
+		spcbFederaisRetidosVisualizar.beforeClass();
+		spcbFederaisRetidosVisualizar.ingresar();
+		spcbFederaisRetidosVisualizar.mdrEntrar();
+		spcbFederaisRetidosVisualizar.visualizar();
+		spcbFederaisRetidosVisualizar.afterClass();
+	}
+	
+	@Test(priority = 118)
 	public void excluirSPCB() {
 		sPCBFederaisRetidosExcluir = new SPCBFederaisRetidosExcluir();
 		sPCBFederaisRetidosExcluir.beforeClass();
@@ -2256,6 +2283,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		sPCBFederaisRetidosExcluir.excluirr();
 		sPCBFederaisRetidosExcluir.afterClass();
 	}
+	
+
 	@Test(priority = 118)
 	public void excluirMassaSPCB() {
 		sPCBFederaisRetidosExcluirMassa = new SPCBFederaisRetidosExcluirMassa();
@@ -2299,6 +2328,16 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIIExcluir.mdrEntrar();
 		notasDeclararAnexoIIIExcluir.excluir();
 		notasDeclararAnexoIIIExcluir.afterClass();
+	}
+	
+	@Test(priority = 122)
+	public void notasDeclararAnexoIIIEditar() {
+		notasDeclararAnexoIIIEditar = new NotasDeclararAnexoIIIEditar();
+		notasDeclararAnexoIIIEditar.beforeClass();
+		notasDeclararAnexoIIIEditar.ingresar();
+		notasDeclararAnexoIIIEditar.ingresarMDR();
+		notasDeclararAnexoIIIEditar.editar();
+		notasDeclararAnexoIIIEditar.afterClass();
 	}
 	
 	@Test(priority = 122)

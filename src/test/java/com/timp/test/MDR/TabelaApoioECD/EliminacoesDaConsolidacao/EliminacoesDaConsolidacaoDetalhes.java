@@ -35,7 +35,7 @@ public class EliminacoesDaConsolidacaoDetalhes extends TestBaseKenssy {
 	}
 
 	@Test(priority = 0)
-	public void ingresar() {
+	public void ingesar() {
 		loginTC.login();
 	}
 

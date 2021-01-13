@@ -138,11 +138,11 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Salvar como Cópia\"]")
 	public WebElement salvarcomocopia;
 	
-	
-	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[10]/*/*")
+	//@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[10]/*/*")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[7]/*/*")
 	public WebElement r2;
-	
-	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[4]")
+	//@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[4]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[5]")
 	public WebElement primeiracaixar2;
 	
 	@FindBy(xpath = "//button[text()=\"Remover\"]")
@@ -228,7 +228,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		sleep(1000);
 		codigo.clear();
 		sleep(1000);
-		codigo.sendKeys("r3");
+		codigo.sendKeys("r2");
 		sleep(1000);
 		acoes.clear();
 		acoes.sendKeys("Teste Auditoria N3");
@@ -269,7 +269,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int removerr2 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[10]/*/*")).size();
+		int removerr2 = driver.findElements(By.xpath("//div[@id=\"graph\"]/*/*/*[7]/*/*")).size();
 		if(removerr2 == 0)
 		{
 			System.out.println("Caminho r2 foi removido");

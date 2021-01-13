@@ -45,7 +45,7 @@ public class ParametrosParaCategoriaDeIRFEditar extends TestBaseMassiel{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		boolean sucesso = parametrosParaCategoriaDeIRFEditarPO.editar();
 		assertTrue(sucesso, Criar);

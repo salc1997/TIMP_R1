@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
+=======
 <<<<<<< HEAD
       <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar">
 =======
@@ -16,16 +38,40 @@
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
 >>>>>>> refs/remotes/origin/master
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
+>>>>>>> refs/heads/Fernando
 >>>>>>> refs/remotes/origin/master
         <methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
           <include name="afterClass"/>
 =======
 >>>>>>> refs/remotes/origin/master
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+>>>>>>> refs/remotes/origin/master
+=======
+<<<<<<< HEAD
+          <include name="formatacaoEVariante"/>
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
+          <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/master
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="criar"/>
           <include name="afterClass"/>
@@ -37,10 +83,26 @@
           <include name="excluir"/>
 =======
           <include name="afterClass"/>
+=======
+>>>>>>> refs/remotes/origin/master
           <include name="criar"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> refs/remotes/origin/master
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
 =======
@@ -49,23 +111,61 @@
 =======
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
 =======
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer">
+>>>>>>> refs/heads/Cristhian
         <methods>
+<<<<<<< HEAD
+          <include name="criar"/>
+=======
+          <include name="ver"/>
+>>>>>>> refs/heads/Cristhian
           <include name="beforeClass"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
           <include name="editar"/>
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Cristhian
 >>>>>>> refs/remotes/origin/master
         </methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
+>>>>>>> refs/remotes/origin/master
 =======
       </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas -->
 >>>>>>> refs/heads/Cristhian
 >>>>>>> refs/remotes/origin/master
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
+>>>>>>> refs/heads/Fernando
 >>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->

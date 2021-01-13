@@ -24,7 +24,7 @@ public class CalculodeTributosTabelasPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
-	@FindBy(xpath = "//li[text()=\"Alíquota Interna\"]")
+	@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER\"]")
 	public WebElement seleccionTabela;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")
@@ -157,7 +157,7 @@ public boolean editar() {
 	opcOperador.click();
 	sleep(2000);
 	
-	condicoes2.sendKeys("Apresent. Treinamento 4 - CFOP (VE)");
+	condicoes2.sendKeys("TA-TESTE ÑAO MEXER - ALIQUOTA_ICMS (VE)");
 	sleep(2000);
 	closeSelectTypeCheckbox(condicoes2);
 	sleep(2000);
@@ -216,7 +216,7 @@ public boolean editar() {
 	
 	campo.clear();
 	sleep(2000);
-	campo.sendKeys("Alíquota ICMS (ED)");
+	campo.sendKeys("BC ICMS (ED)");
 	sleep(2000);
 	campo.sendKeys(Keys.ENTER);
 	sleep(2000);

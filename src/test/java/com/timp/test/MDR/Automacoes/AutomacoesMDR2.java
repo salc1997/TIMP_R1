@@ -9,6 +9,7 @@ import com.timp.test.MDR.DetalheTipoTributo.DetalheCriar;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheDetalhes;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheEditar;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheExcluir;
+import com.timp.test.MDR.DetalheTipoTributo.DetalheExcluirMassa;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheFiltroId;
 import com.timp.test.MDR.DetalheTipoTributo.DetalheVisualizar;
 import com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoCriar;
@@ -34,6 +35,8 @@ import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaDetalhes;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir;
+import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltroID;
+import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados;
 import com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaVisualizar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisDetalhes;
@@ -94,9 +97,12 @@ import com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisDetalhes;
 import com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisExcluir;
 import com.timp.test.MDR.SCANC.AjustesDosAnexos.AjustesDosAnexosCriar;
 import com.timp.test.MDR.SCANC.AjustesDosAnexos.AjustesDosAnexosExcluir;
+import com.timp.test.MDR.SCANC.AjustesDosAnexos.AjustesDosAnexosExcluirEmMasa;
+import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCAtualizar;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCCriar;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCEditar;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCExcluir;
+import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCExcluirMasas;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCFiltroID;
 import com.timp.test.MDR.SCANC.MovimentoSCANC.MovimentoSCANCVisualizar;
 import com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosCriar;
@@ -107,7 +113,9 @@ import com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCVisualizar;
 import com.timp.test.MDR.SCANC.ProdutosSCANC.ProdutosSCANCDetalhes;
 import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasCriar;
 import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasDetalhes;
+import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasEditar;
 import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluir;
+import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa;
 import com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar;
 import com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar;
@@ -140,7 +148,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	DetalheVisualizar detalheTipoTributoVisualizar;
 	DetalheFiltroId detalheTipoTributoFiltroId;
 	DetalheDetalhes detalheTipoTributoDetalhes;
-
+	DetalheExcluirMassa detalheExcluirMassa;
 	// Determinação de Tipo de Condição
 
 	DeterminacaoDeTipoDeCondicaoCriar determinacaoDeTipoDeCondicaoCriar;
@@ -182,6 +190,8 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	LimiteCompetenciaEditar limiteCompetenciaEditar;
 	LimiteCompetenciaExcluir limiteCompetenciaExcluir;
 	LimiteCompetenciaVisualizar limiteCompetenciaVisualizar;
+	LimiteCompetenciaFiltroID limiteCompetenciaFiltroID;
+	LimiteCompetenciaFiltrosAvansados limiteCompetenciaFiltrosAvansados;
 
 	// Livros Fiscais > Livros Fiscais
 
@@ -286,14 +296,16 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	AjustesDosAnexosCriar ajustesDosAnexosCriar;
 	AjustesDosAnexosExcluir ajustesDosAnexosExcluir;
-
+	AjustesDosAnexosExcluirEmMasa ajustesDosAnexosExcluirEmMasa;
+	
 	// SCANC > Movimento SCANC
 	MovimentoSCANCCriar movimentoSCANCCriar;
 	MovimentoSCANCEditar movimentoSCANCEditar;
 	MovimentoSCANCExcluir movimentoSCANCExcluir;
 	MovimentoSCANCVisualizar movimentoSCANCVisualizar;
 	MovimentoSCANCFiltroID movimentoSCANCFiltroID;
-
+	MovimentoSCANCAtualizar movimentoSCANCAtualizar;
+	MovimentoSCANCExcluirMasas movimentoSCANCExcluirMasas;
 	// SCANC > OP Proprios Ressarcimentos
 
 	OPPropriosRessarcimentosCriar oPPropriosRessarcimentosCriar;
@@ -310,8 +322,10 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	SCANCDistribuidorasCriar sCANCDistribuidorasCriar;
 	SCANCDistribuidorasDetalhes sCANCDistribuidorasDetalhes;
+	SCANCDistribuidorasEditar scancDistribuidorasEditar;
 	SCANCDistribuidorasExcluir sCANCDistribuidorasExcluir;
 	SCANCDistribuidorasVisualizar sCANCDistribuidorasVisualizar;
+	SCANCDistribuidorasExcluirEmMasa scancDistribuidorasExcluirEmMasa;
 
 	// Sequência de Acesso
 
@@ -327,8 +341,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	MotivosCesBeneficiosExcluir motivosCesBeneficiosExcluir;
 	MotivosCesBeneficiosVisualizar motivosCesBeneficiosVisualizar;
 
-	// TabelasApoioSped > Ajustes e Informação de Valores Provenientes de Documento
-	// Fiscal
+	// TabelasApoioSped > Ajustes e Informação de Valores Provenientes de Documento Fiscal
 
 	AjusteEInformaçoesDeValoresCriar ajusteEInformaçoesDeValoresCriar;
 	AjusteEInformaçoesDeValoresDetalhes ajusteEInformaçoesDeValoresDetalhes;
@@ -405,6 +418,18 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 
 	@Test(priority = 4)
+	public void detalheExcluirMassa() {
+
+		detalheExcluirMassa = new DetalheExcluirMassa();
+		detalheExcluirMassa.beforeClass();
+		detalheExcluirMassa.login();
+		detalheExcluirMassa.acessarMDR();
+		detalheExcluirMassa.criar();
+		detalheExcluirMassa.afterClass();
+
+		}
+	
+	@Test(priority = 5)
 	public void detalheTipoTributoFiscalExcluir() {
 
 		detalheTipoTributoExcluir = new DetalheExcluir();
@@ -730,8 +755,32 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		limiteCompetenciaDetalhes.afterClass();
 
 	}
-
+	
 	@Test(priority = 35)
+	public void limiteCompetenciaFiltrosAvansados() {
+
+		limiteCompetenciaFiltrosAvansados = new LimiteCompetenciaFiltrosAvansados();
+		limiteCompetenciaFiltrosAvansados.beforeClass();
+		limiteCompetenciaFiltrosAvansados.ingresar();
+		limiteCompetenciaFiltrosAvansados.ingresarMDR();
+		limiteCompetenciaFiltrosAvansados.Filtro();
+		limiteCompetenciaFiltrosAvansados.afterClass();
+
+	}
+	
+	@Test(priority = 36)
+	public void limiteCompetenciaFiltroID() {
+
+		limiteCompetenciaFiltroID = new LimiteCompetenciaFiltroID();
+		limiteCompetenciaFiltroID.beforeClass();
+		limiteCompetenciaFiltroID.login();
+		limiteCompetenciaFiltroID.acessarMDR();
+		limiteCompetenciaFiltroID.filtro();
+		limiteCompetenciaFiltroID.afterClass();
+
+	}
+
+	@Test(priority = 37)
 	public void limiteCompetenciaExcluir() {
 
 		limiteCompetenciaExcluir = new LimiteCompetenciaExcluir();
@@ -1601,8 +1650,21 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		ajustesDosAnexosCriar.afterClass();
 
 	}
-
+	
 	@Test(priority = 111)
+	public void ajustesDosAnexosExcluirEmMasa() {
+
+		ajustesDosAnexosExcluirEmMasa = new AjustesDosAnexosExcluirEmMasa();
+		ajustesDosAnexosExcluirEmMasa.beforeClass();
+		ajustesDosAnexosExcluirEmMasa.login();
+		ajustesDosAnexosExcluirEmMasa.acessarMDR();
+		ajustesDosAnexosExcluirEmMasa.excluir();
+		ajustesDosAnexosExcluirEmMasa.afterClass();
+
+	}
+	
+
+	@Test(priority = 112)
 	public void ajustesDosAnexosExcluir() {
 
 		ajustesDosAnexosExcluir = new AjustesDosAnexosExcluir();
@@ -1668,9 +1730,36 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		movimentoSCANCFiltroID.afterClass();
 
 	}
-
-
+	
 	@Test(priority = 120)
+	public void movimentoSCANCAtualizar() {
+
+		movimentoSCANCAtualizar = new MovimentoSCANCAtualizar();
+		movimentoSCANCAtualizar.beforeClass();
+		movimentoSCANCAtualizar.login();
+		movimentoSCANCAtualizar.acessarMDR();
+		movimentoSCANCAtualizar.atualizar();
+		movimentoSCANCAtualizar.afterClass();
+
+	}
+	
+	
+	@Test(priority = 121)
+	public void movimentoSCANCExcluirMasas() {
+
+		movimentoSCANCExcluirMasas = new MovimentoSCANCExcluirMasas();
+		movimentoSCANCExcluirMasas.beforeClass();
+		movimentoSCANCExcluirMasas.login();
+		movimentoSCANCExcluirMasas.acessarMDR();
+		movimentoSCANCExcluirMasas.criar();
+		movimentoSCANCExcluirMasas.afterClass();
+
+	}
+
+
+	
+
+	@Test(priority = 122)
 	public void movimentoSCANCExcluir() {
 
 		movimentoSCANCExcluir = new MovimentoSCANCExcluir();
@@ -1809,8 +1898,34 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		sCANCDistribuidorasDetalhes.afterClass();
 
 	}
+	
 
 	@Test(priority = 137)
+	public void scancDistribuidorasEditar() {
+
+		scancDistribuidorasEditar = new SCANCDistribuidorasEditar();
+		scancDistribuidorasEditar.beforeClass();
+		scancDistribuidorasEditar.ingresar();
+		scancDistribuidorasEditar.ingresarMDR();
+		scancDistribuidorasEditar.editar();
+		scancDistribuidorasEditar.afterClass();
+
+	}
+	
+
+	@Test(priority = 138)
+	public void scancDistribuidorasExcluirEmMasa() {
+
+		scancDistribuidorasExcluirEmMasa = new SCANCDistribuidorasExcluirEmMasa();
+		scancDistribuidorasExcluirEmMasa.beforeClass();
+		scancDistribuidorasExcluirEmMasa.login();
+		scancDistribuidorasExcluirEmMasa.acessarMDR();
+		scancDistribuidorasExcluirEmMasa.excluir();
+		scancDistribuidorasExcluirEmMasa.afterClass();
+
+	}
+
+	@Test(priority = 139)
 	public void sCANCDistribuidorasExcluir() {
 
 		sCANCDistribuidorasExcluir = new SCANCDistribuidorasExcluir();

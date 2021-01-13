@@ -31,7 +31,7 @@ public class RegrasdeAuditoriaN1EdiçãoSimula extends TestBaseCristhian {
   
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
   @Test(priority = 0)

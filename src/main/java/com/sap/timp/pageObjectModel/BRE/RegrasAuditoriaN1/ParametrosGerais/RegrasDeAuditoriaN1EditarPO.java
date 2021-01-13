@@ -226,8 +226,11 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBaseEliel{
 		sleep(1000);
 		
 		primeiracaixar1.click();
+		attributoNotToBeEmptyElement(acoes, "value");
 		String texto1 = acoes.getAttribute("value");
 		
+		System.out.println("texto1: " + texto1);
+		System.out.println("enviar: " + enviar);
 		sucesso.add(texto1.contains(enviar));
 			
 		sleep(1000);

@@ -1,68 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa">
-=======
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
         <methods>
-<<<<<<< HEAD
           <include name="afterClass"/>
-=======
->>>>>>> refs/remotes/origin/master
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-<<<<<<< HEAD
-          <include name="excluir"/>
-=======
-          <include name="afterClass"/>
           <include name="criar"/>
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa -->
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
-=======
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-          <include name="editar"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
-=======
-      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas -->
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

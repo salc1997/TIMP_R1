@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
 
-public class AliquotasDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
+public class AliquotaDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
  
 	
 	LoginTC loginTC;

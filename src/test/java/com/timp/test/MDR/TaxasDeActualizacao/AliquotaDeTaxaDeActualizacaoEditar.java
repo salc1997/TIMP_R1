@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AliquotadDeTaxaDeActualizacaoEditar extends TestBaseCristhian {
+public class AliquotaDeTaxaDeActualizacaoEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotaDeTaxaDeActualizarEditarPO aliquotaDeTaxaDeActualizarEditarPO;

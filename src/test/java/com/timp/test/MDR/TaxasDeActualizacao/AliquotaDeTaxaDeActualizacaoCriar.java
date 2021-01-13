@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
-public class AliquotasDeTaxaDeActualizacaoCriar extends TestBaseCristhian {
+public class AliquotaDeTaxaDeActualizacaoCriar extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

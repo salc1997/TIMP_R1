@@ -11,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
-public class AliquotaDeTaxaDeAactualizacaoDetalhes extends TestBaseCristhian {
+public class AliquotaDeTaxaDeActualizacaoDetalhes extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

@@ -73,6 +73,7 @@ public class EstruturasExcluirPO extends TestBaseCristhian{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 

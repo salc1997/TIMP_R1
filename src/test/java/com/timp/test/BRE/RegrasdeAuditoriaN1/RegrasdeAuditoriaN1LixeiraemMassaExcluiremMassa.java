@@ -31,7 +31,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa extends TestBaseCri
   
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
   @Test(priority = 0)

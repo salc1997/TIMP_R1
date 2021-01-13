@@ -34,7 +34,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"structure-validation\"]/div/div/div[2]")
 	public WebElement estruturadevalidacao;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Empresa / Filial\"]")
+	@FindBy(xpath = "//li[@id][text()=\"Empresa/Filial\"]")
 	public WebElement opcaoestruturadevalidacao;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes Fiscais + Empresa/Filial\"]")

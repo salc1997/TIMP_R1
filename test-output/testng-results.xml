@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="28" passed="27">
@@ -12,7 +13,10 @@
 =======
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -24,8 +28,11 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-11T22:25:53Z" name="Default suite" finished-at="2021-01-11T22:31:42Z" duration-ms="349870">
 =======
@@ -55,8 +62,12 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-01-13T03:31:46Z" name="Default suite" finished-at="2021-01-13T03:34:15Z" duration-ms="148935">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-11T22:25:53Z" name="Default test" finished-at="2021-01-11T22:31:42Z" duration-ms="349870">
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa">
@@ -101,9 +112,15 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasExcluir@6f45df59]" started-at="2021-01-12T09:17:10Z" name="beforeClass" finished-at="2021-01-12T09:17:24Z" duration-ms="14141" status="PASS">
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-01-13T03:31:46Z" name="Default test" finished-at="2021-01-13T03:34:15Z" duration-ms="148935">
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@5a5338df]" started-at="2021-01-12T21:31:46Z" name="beforeClass" finished-at="2021-01-12T21:32:05Z" duration-ms="19347" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa@1530c739]" started-at="2021-01-11T19:26:05Z" name="login" finished-at="2021-01-11T19:26:13Z" duration-ms="7653" status="PASS">
 =======
@@ -130,10 +147,14 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@5a5338df]" started-at="2021-01-12T21:32:05Z" name="login" finished-at="2021-01-12T21:32:15Z" duration-ms="9934" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa@1530c739]" started-at="2021-01-11T19:26:13Z" name="acessarBRE" finished-at="2021-01-11T19:26:31Z" duration-ms="18180" status="PASS">
 =======
@@ -163,8 +184,12 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@5a5338df]" started-at="2021-01-12T21:32:15Z" name="acessarTCC" finished-at="2021-01-12T21:32:38Z" duration-ms="23168" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -272,6 +297,10 @@ Session ID: e9ead940390f607d6f38c9ff98f7f99d
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@5a5338df]" started-at="2021-01-12T21:32:38Z" name="criar" finished-at="2021-01-12T21:34:15Z" duration-ms="96466" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -335,6 +364,7 @@ Session ID: e9ead940390f607d6f38c9ff98f7f99d
         <test-method status="FAIL" signature="formatacaoEVariante()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="formatacaoEVariante" duration-ms="171814" started-at="2021-01-11T15:25:41Z" finished-at="2021-01-11T15:28:33Z">
 =======
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa@1530c739]" started-at="2021-01-11T19:31:42Z" name="afterClass" finished-at="2021-01-11T19:31:42Z" duration-ms="0" status="PASS">
 =======
@@ -439,6 +469,9 @@ Session ID: 8c8d0ebd2c3e9b9fb5b2b4cad529880f
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@5a5338df]" started-at="2021-01-12T21:34:15Z" name="afterClass" finished-at="2021-01-12T21:34:15Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -483,6 +516,7 @@ Session ID: 8c8d0ebd2c3e9b9fb5b2b4cad529880f
 =======
         </test-method> <!-- afterClass -->
 <<<<<<< HEAD
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa -->
 =======
 <<<<<<< HEAD
@@ -508,6 +542,9 @@ Session ID: 8c8d0ebd2c3e9b9fb5b2b4cad529880f
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -4,6 +4,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
 =======
@@ -12,11 +17,22 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Fernando
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
 <<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa">
 =======
@@ -38,6 +54,23 @@
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
 >>>>>>> refs/remotes/origin/master
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
+>>>>>>> refs/heads/Fernando
+<<<<<<< HEAD
+=======
+=======
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
 <<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
 =======
@@ -74,6 +107,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="criar"/>
+<<<<<<< HEAD
           <include name="afterClass"/>
 =======
 <<<<<<< HEAD
@@ -86,6 +120,8 @@
 =======
 >>>>>>> refs/remotes/origin/master
           <include name="criar"/>
+=======
+>>>>>>> refs/remotes/origin/master
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -113,26 +149,22 @@
 =======
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer">
->>>>>>> refs/heads/Cristhian
+      <class name="com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="criar"/>
+          <include name="ingresarTCC"/>
 =======
-          <include name="ver"/>
->>>>>>> refs/heads/Cristhian
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
+          <include name="criar"/>
           <include name="afterClass"/>
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
+<<<<<<< HEAD
           <include name="editar"/>
 <<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
@@ -141,11 +173,19 @@
 =======
 >>>>>>> refs/heads/Cristhian
 >>>>>>> refs/remotes/origin/master
+=======
+          <include name="criar"/>
+>>>>>>> refs/heads/Fernando
+>>>>>>> refs/remotes/origin/master
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar -->
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
 >>>>>>> refs/remotes/origin/master
@@ -166,6 +206,18 @@
 =======
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
 >>>>>>> refs/heads/Fernando
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+<<<<<<< HEAD
+=======
+=======
+      </class> <!-- com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
+>>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->

@@ -212,7 +212,8 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		waitExpectXpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]");
+		sleep(2000);
 		btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
 		sleep(1000);
@@ -241,7 +242,8 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		waitExpectXpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]");
+		sleep(2000);
 		btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
 		sleep(1000);

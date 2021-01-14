@@ -1036,7 +1036,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		waitExpectElement(nomeRegra);
 		sleep(2000);
 		
-		nomeRegra.sendKeys("Teste Automatizado Regra Leiaute");
+		nomeRegra.sendKeys("Teste Automatizado Regra Leiaute ");
 		sleep(1000);
 		
 		
@@ -2165,7 +2165,8 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		System.out.println("-----------------------------Exclusão Leiaute-----------------------------------");
-		int rows = rows("//div[@class=\"tr\" and @data-id]");
+		//int rows = rows("//div[@class=\"tr\" and @data-id]");
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		
 		String idDE = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		
@@ -2277,7 +2278,8 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		System.out.println("-----------------------------Exclusão Leiaute-----------------------------------");
-		int rows = rows("//div[@class=\"tr\" and @data-id]");
+		//int rows = rows("//div[@class=\"tr\" and @data-id]");
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		
 		String idDE = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		
@@ -2396,8 +2398,8 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		sleep(2000);
 		System.out.println("-----------------------------Exclusão Leiaute-----------------------------------");
-		int rows = rows("//div[@class=\"tr\" and @data-id]");
-		
+		//int rows = rows("//div[@class=\"tr\" and @data-id]");
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		String idDE = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println("Ultimo Id após a Exclução: " +idDE);

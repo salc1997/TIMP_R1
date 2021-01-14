@@ -4,11 +4,16 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
 =======
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar">
+>>>>>>> refs/remotes/origin/Eliel
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="afterClass"/>
@@ -16,7 +21,11 @@
           <include name="beforeClass"/>
 <<<<<<< HEAD
           <include name="excluirConfiguracao"/>
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Eliel
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="verificacaoBloco6"/>
           <include name="excluirBRE"/>
           <include name="excluirDFG"/>
@@ -25,9 +34,16 @@
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
 =======
           <include name="criar"/>
+=======
+          <include name="visualizar"/>
+>>>>>>> refs/remotes/origin/Eliel
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

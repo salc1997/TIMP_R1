@@ -3,7 +3,10 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
 <testsuite hostname="MIGUEL" failures="0" tests="3" name="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas" time="306.342" errors="0" timestamp="11 Jan 2021 21:46:05 GMT">
   <testcase classname="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas" name="acessarBRE" time="16.388"/>
   <testcase classname="com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas" name="login" time="7.593"/>

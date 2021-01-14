@@ -9,19 +9,19 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriarPO;
+import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutarPO;
 
-public class ConfiguracaoEExecucacoCriar extends TestBaseFernando{
+public class ConfiguracaoEExecucaoExecutar extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	ConfiguracaoEExecucacoCriarPO configuracaoEExecucacoCriarPO;
+	ConfiguracaoEExecucaoExecutarPO configuracaoEExecucaoExecutarPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		configuracaoEExecucacoCriarPO = new ConfiguracaoEExecucacoCriarPO();
+		configuracaoEExecucaoExecutarPO = new ConfiguracaoEExecucaoExecutarPO();
 	}
 
 	@AfterClass
@@ -41,8 +41,8 @@ public class ConfiguracaoEExecucacoCriar extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
-		boolean sucesso = configuracaoEExecucacoCriarPO.criar();
-		assertTrue(sucesso, Filtros);
+	public void executar() {
+		boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
+		assertTrue(sucesso, Criar);
 	}
 }

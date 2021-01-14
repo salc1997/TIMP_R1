@@ -182,6 +182,7 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoRegistroExecutado)) {
 			System.out.println("Registro executado correcctamente...");
+			idInserir4(idUltimoRegistroExecutados);
 			sucesso = true;
 		}else {
 			System.out.println("No se executo el registro...");

@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="23" passed="18" failed="5" skipped="0">
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-01-14T16:02:15Z" name="Default suite" finished-at="2021-01-14T16:22:14Z" duration-ms="1199390">
+=======
+  <suite started-at="2021-01-14T20:39:23Z" name="Default suite" finished-at="2021-01-14T20:44:14Z" duration-ms="291543">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-01-14T16:02:15Z" name="Default test" finished-at="2021-01-14T16:22:14Z" duration-ms="1199390">
       <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:02:15Z" name="beforeClass" finished-at="2021-01-14T13:02:30Z" duration-ms="15421" status="PASS">
+=======
+    <test started-at="2021-01-14T20:39:23Z" name="Default test" finished-at="2021-01-14T20:44:14Z" duration-ms="291543">
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-14T14:39:23Z" name="beforeClass" finished-at="2021-01-14T14:39:34Z" duration-ms="11659" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:02:30Z" name="ingresar" finished-at="2021-01-14T13:02:40Z" duration-ms="9770" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-14T14:39:34Z" name="login" finished-at="2021-01-14T14:39:42Z" duration-ms="7301" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ingresar -->
         <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:02:40Z" name="mdrEntrar" finished-at="2021-01-14T13:03:02Z" duration-ms="22495" status="PASS">
+=======
+        </test-method> <!-- login -->
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-14T14:39:42Z" name="acessarTCC" finished-at="2021-01-14T14:40:03Z" duration-ms="21351" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- mdrEntrar -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:03:02Z" name="criar" finished-at="2021-01-14T13:05:23Z" duration-ms="140450" status="PASS">
           <reporter-output>
@@ -104,12 +128,22 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NumberFormatException -->
+=======
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="executar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-14T14:40:03Z" name="executar" finished-at="2021-01-14T14:44:14Z" duration-ms="251210" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- verificacaoBloco1 -->
         <test-method signature="verificacaoBloco2()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:16:27Z" name="verificacaoBloco2" finished-at="2021-01-14T13:16:34Z" duration-ms="6502" status="PASS">
+=======
+        </test-method> <!-- executar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-14T14:44:14Z" name="afterClass" finished-at="2021-01-14T14:44:14Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- verificacaoBloco2 -->
         <test-method signature="verificacaoBloco3()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:16:34Z" name="verificacaoBloco3" finished-at="2021-01-14T13:17:01Z" duration-ms="27174" status="PASS">
           <reporter-output>
@@ -378,8 +412,14 @@ Session ID: 13dfedd726ce31118dc302454ee3f6ba
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:22:14Z" name="afterClass" finished-at="2021-01-14T13:22:14Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1187,6 +1187,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 	
 	
 	public boolean executarVariante() {
+		invisibilityOfElementOverlay();
 		String url = driver.getCurrentUrl();
 		
 		boolean tp1  = false;
@@ -1225,7 +1226,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		sleep(3000);
-		waitExpectElement(execicioFiscal);
+//		waitExpectElement(execicioFiscal);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

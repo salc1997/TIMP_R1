@@ -3,9 +3,18 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="excluirConfiguracao"/>
           <include name="afterClass"/>
           <include name="verificacaoBloco6"/>
@@ -14,6 +23,11 @@
           <include name="verificacaoBloco1"/>
         </methods>
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
+=======
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

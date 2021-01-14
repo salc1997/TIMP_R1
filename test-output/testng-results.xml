@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="28" passed="27">
@@ -16,7 +17,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -34,8 +38,11 @@
 =======
 <testng-results total="3" passed="1" failed="2" skipped="0">
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,8 +80,12 @@
 =======
   <suite started-at="2021-01-13T17:37:06Z" name="Default suite" finished-at="2021-01-13T17:38:05Z" duration-ms="59632">
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-01-14T03:06:25Z" name="Default suite" finished-at="2021-01-14T03:08:58Z" duration-ms="152622">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,9 +142,15 @@
       <class name="com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@6f45df59]" started-at="2021-01-13T14:37:06Z" name="beforeClass" finished-at="2021-01-13T14:37:24Z" duration-ms="18667" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-01-14T03:06:25Z" name="Default test" finished-at="2021-01-14T03:08:58Z" duration-ms="152622">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopia@5a5338df]" started-at="2021-01-13T21:06:25Z" name="beforeClass" finished-at="2021-01-13T21:06:40Z" duration-ms="14911" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -168,11 +185,18 @@
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@6f45df59]" started-at="2021-01-13T14:37:24Z" name="ingresar" finished-at="2021-01-13T14:37:32Z" duration-ms="7833" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopia@5a5338df]" started-at="2021-01-13T21:06:40Z" name="login" finished-at="2021-01-13T21:06:48Z" duration-ms="7834" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa@1530c739]" started-at="2021-01-11T19:26:13Z" name="acessarBRE" finished-at="2021-01-11T19:26:31Z" duration-ms="18180" status="PASS">
@@ -209,8 +233,12 @@
 =======
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@5a5338df]" started-at="2021-01-12T21:32:15Z" name="acessarTCC" finished-at="2021-01-12T21:32:38Z" duration-ms="23168" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopia@5a5338df]" started-at="2021-01-13T21:06:48Z" name="acessarBRE" finished-at="2021-01-13T21:07:01Z" duration-ms="13386" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -224,7 +252,10 @@
         <test-method status="FAIL" signature="excluir()[pri:0, instance:com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa@f2f2cc1]" name="excluir" duration-ms="28174" started-at="2021-01-08T15:55:32Z" finished-at="2021-01-08T15:56:00Z">
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- acessarBRE -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa@1530c739]" started-at="2021-01-11T19:26:31Z" name="criar" finished-at="2021-01-11T19:31:42Z" duration-ms="311143" status="PASS">
 =======
@@ -327,13 +358,16 @@ Session ID: e9ead940390f607d6f38c9ff98f7f99d
         </test-method> <!-- acessarTCC -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@5a5338df]" started-at="2021-01-12T21:32:38Z" name="criar" finished-at="2021-01-12T21:34:15Z" duration-ms="96466" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="criarComCopia()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopia@5a5338df]" started-at="2021-01-13T21:07:01Z" name="criarComCopia" finished-at="2021-01-13T21:08:58Z" duration-ms="116473" status="PASS">
+>>>>>>> refs/heads/Fernando
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarComCopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopia@5a5338df]" started-at="2021-01-13T21:08:58Z" name="afterClass" finished-at="2021-01-13T21:08:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
-        </test-method> <!-- paginacion -->
-        <test-method status="PASS" signature="filtrosAvanzados()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="filtrosAvanzados" duration-ms="59285" started-at="2021-01-11T14:52:52Z" finished-at="2021-01-11T14:53:51Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- filtrosAvanzados -->
         <test-method status="PASS" signature="novoRelatorio()[pri:0, instance:com.timp.test.BRB.Automacoes.AutomacoesBrb@55a561cf]" name="novoRelatorio" duration-ms="301343" started-at="2021-01-11T14:53:51Z" finished-at="2021-01-11T14:58:53Z">
           <reporter-output>
@@ -649,7 +683,10 @@ Session ID: 9175d18b9c79cfe09804ff2e9b9ef8c5
         </test-method> <!-- ExcluirRelatorio -->
       </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
 =======
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -684,6 +721,9 @@ Session ID: 9175d18b9c79cfe09804ff2e9b9ef8c5
 =======
       </class> <!-- com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopia -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

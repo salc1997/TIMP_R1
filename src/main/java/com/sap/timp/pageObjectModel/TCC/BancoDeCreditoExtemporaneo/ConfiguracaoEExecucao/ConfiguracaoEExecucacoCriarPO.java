@@ -217,6 +217,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseFernando{
 		if(id2 > id1) {
 			System.out.println("Registro creado satisfactoriamente...");
 			sucesso = true;
+			idInserir4(idRegistroNuevo);
 		}else {
 			System.out.println("No se pudo crear el registro...");
 		}

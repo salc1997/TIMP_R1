@@ -1,146 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/heads/Fernando
-<<<<<<< HEAD
-=======
-=======
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.Automacoes.AutomacoesBrb">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa">
-=======
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
->>>>>>> refs/heads/Fernando
-<<<<<<< HEAD
-=======
-=======
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos">
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="formatacaoEVariante"/>
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/heads/Fernando
-          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/heads/Fernando
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.Automacoes.AutomacoesBrb -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa -->
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
-=======
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/heads/Cristhian
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
-        <methods>
-          <include name="ingresarTCC"/>
-=======
->>>>>>> refs/heads/Fernando
-          <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="excluirConfiguracao"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-          <include name="criar"/>
->>>>>>> refs/heads/Fernando
+          <include name="verificacaoBloco6"/>
+          <include name="excluirBRE"/>
+          <include name="excluirDFG"/>
+          <include name="verificacaoBloco1"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculoDeTributoCriar -->
-=======
-      </class> <!-- com.timp.test.BRE.CalculoDeTributos.CalculodeTributosTabelas -->
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
->>>>>>> refs/heads/Fernando
-<<<<<<< HEAD
-=======
-=======
-      </class> <!-- com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

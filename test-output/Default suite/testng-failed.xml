@@ -3,47 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
-=======
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar">
->>>>>>> refs/remotes/origin/Eliel
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosVisualizar">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="afterClass"/>
->>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="excluirConfiguracao"/>
-=======
-          <include name="beforeClass"/>
->>>>>>> refs/remotes/origin/Eliel
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="verificacaoBloco6"/>
-          <include name="excluirBRE"/>
-          <include name="excluirDFG"/>
-          <include name="verificacaoBloco1"/>
-        </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
-=======
-          <include name="criar"/>
-=======
           <include name="visualizar"/>
->>>>>>> refs/remotes/origin/Eliel
+          <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar -->
->>>>>>> refs/remotes/origin/Eliel
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosVisualizar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

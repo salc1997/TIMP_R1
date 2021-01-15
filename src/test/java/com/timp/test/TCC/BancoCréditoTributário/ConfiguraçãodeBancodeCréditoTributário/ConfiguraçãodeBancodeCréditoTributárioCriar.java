@@ -1,4 +1,4 @@
-package com.timp.test.TCC.BancoCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário;
+package com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário;
 
 import org.testng.annotations.Test;
 
@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainelCriarPO;
-import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriarPO;
+import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriarPO;
 
 import org.testng.annotations.BeforeClass;
 

@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 =======
 <testng-results total="3" passed="2" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Cristhian
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-15T14:15:24Z" name="Default suite" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
 =======
   <suite started-at="2021-01-15T16:39:26Z" name="Default suite" finished-at="2021-01-15T16:40:57Z" duration-ms="91048">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-01-15T13:43:55Z" name="Default suite" finished-at="2021-01-15T13:46:46Z" duration-ms="170413">
+>>>>>>> refs/heads/Cristhian
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-15T14:15:24Z" name="Default test" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
@@ -22,25 +33,42 @@
       <class name="com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:26Z" name="beforeClass" finished-at="2021-01-15T10:39:43Z" duration-ms="16900" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+    <test started-at="2021-01-15T13:43:55Z" name="Default test" finished-at="2021-01-15T13:46:46Z" duration-ms="170413">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:43:55Z" name="beforeClass" finished-at="2021-01-15T10:44:15Z" duration-ms="20035" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:42Z" name="login" finished-at="2021-01-15T08:15:54Z" duration-ms="12183" status="PASS">
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:43Z" name="ingresar" finished-at="2021-01-15T10:39:51Z" duration-ms="7593" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:15Z" name="login" finished-at="2021-01-15T10:44:25Z" duration-ms="9738" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:54Z" name="acessarTCC" finished-at="2021-01-15T08:16:15Z" duration-ms="21428" status="PASS">
 =======
         </test-method> <!-- ingresar -->
         <test-method signature="ingresarTCC()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:51Z" name="ingresarTCC" finished-at="2021-01-15T10:40:15Z" duration-ms="24833" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:25Z" name="acessarBRE" finished-at="2021-01-15T10:44:42Z" duration-ms="17314" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarTCC -->
         <test-method signature="executar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:16:15Z" name="executar" finished-at="2021-01-15T08:18:43Z" duration-ms="147566" status="PASS">
@@ -118,19 +146,34 @@ Session ID: 0ace2013cf101ad9449099885eb73a88
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:42Z" name="editar" finished-at="2021-01-15T10:46:46Z" duration-ms="123295" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:46:46Z" name="afterClass" finished-at="2021-01-15T10:46:46Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Cristhian
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:40:57Z" name="afterClass" finished-at="2021-01-15T10:40:57Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+=======
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
 =======
       </class> <!-- com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
+>>>>>>> refs/heads/Cristhian
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

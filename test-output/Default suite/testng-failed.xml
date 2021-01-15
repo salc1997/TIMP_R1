@@ -3,31 +3,15 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
-=======
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
->>>>>>> refs/heads/Fernando
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizar">
         <methods>
-<<<<<<< HEAD
-=======
+          <include name="login"/>
           <include name="afterClass"/>
->>>>>>> refs/heads/Fernando
+          <include name="acessarTCC"/>
+          <include name="visualizar"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="excluirConfiguracao"/>
-          <include name="afterClass"/>
-          <include name="verificacaoBloco6"/>
-          <include name="excluirBRE"/>
-          <include name="excluirDFG"/>
-          <include name="verificacaoBloco1"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
-=======
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

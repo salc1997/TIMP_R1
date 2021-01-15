@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.BRE.TabelasExternas;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,6 +27,9 @@ public class TabelasExternasEditarPO extends TestBaseMassiel{
 
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
 
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement siguiente;
@@ -47,30 +51,40 @@ public class TabelasExternasEditarPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
-		siguiente.click();
-
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
+		
 		String idRegistro = null;
+		String idRegistro1 = null;
 
 		if (url.contains("tq1")==true) {
 
-			idRegistro = "list-check_171";
+			idRegistro1 = "list-check_177";
+			idRegistro = "177";
 
 		}if (url.contains("tc2")==true) {
-			idRegistro = "list-check_306";
+			idRegistro1 = "list-check_504";
+			idRegistro = "504";
+
 
 		} if (url.contains("tp1")==true) {
-			idRegistro = "list-check_281";
+			idRegistro1 = "list-check_281";
+			idRegistro = "281";
 		}
+	
 
+
+		
+		
 		System.out.println(idRegistro);
 
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		pesquisar.click();
+		
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(2000);
+		
+	
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
 		actionsMoveToElementElement(menu);
 		sleep(2000);
@@ -95,28 +109,33 @@ public class TabelasExternasEditarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		siguiente.click();
-
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
+		
 
 		if (url.contains("tq1")==true) {
 
-			idRegistro = "list-check_171";
+			idRegistro1 = "list-check_177";
+			idRegistro = "177";
 
 		}if (url.contains("tc2")==true) {
-			idRegistro = "list-check_306";
+			idRegistro1 = "list-check_504";
+			idRegistro = "504";
+
 
 		} if (url.contains("tp1")==true) {
-			idRegistro = "list-check_281";
+			idRegistro1 = "list-check_281";
+			idRegistro = "281";
 		}
 
+		pesquisar.click();
+		
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(2000);
+		
 		System.out.println(idRegistro);
 
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
 		actionsMoveToElementElement(menu1);
 		sleep(2000);

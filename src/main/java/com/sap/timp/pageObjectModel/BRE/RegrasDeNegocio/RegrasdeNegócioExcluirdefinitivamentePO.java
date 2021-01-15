@@ -38,8 +38,12 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	@FindBy(xpath = "//li[text()=\"Negócio\"]")
 	public WebElement opcTipoDeRegra;
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar o Componente\"]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componente2;
+	
 	@FindBy(xpath = "//li[text()=\"TAA\"]")
 	public WebElement opcComponente;
 	
@@ -65,12 +69,19 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Aba\"]")
 	public WebElement abas;
+	
+	@FindBy(xpath = "	//tr[28]/td[2]/div/div/div[2]")
+	public WebElement abas1;
+
+	
 	@FindBy(xpath = "//*[@id=\"31\"]/div[1]/label/span")
 	public WebElement opcAbas;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/table/tbody/tr[31]/td[2]/div/div[1]/input")
-	public WebElement validade;
+	@FindBy(xpath = "//div[@id=\"1\"]/div[1]/label/span")
+	public WebElement opcAbas1;
 	
+	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
+	public WebElement validade;
 	
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -103,7 +114,8 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	@FindBy(xpath = "//*[@id=\"T31\"]/div[1]/label/span")
 	public WebElement opcAcoes;
 	
-
+	@FindBy(xpath = "//*[@id=\"T1\"]/div[1]/label/span")
+	public WebElement opcAcoes1;
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
@@ -126,6 +138,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Descrição\"]")
 	public WebElement body;
 	
+
 	
 	public RegrasdeNegócioExcluirdefinitivamentePO() {
 
@@ -134,6 +147,21 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	
 public boolean criar() {
 		
+	System.out.println("---------- Id Anterior --------- " );
+	String url = driver.getCurrentUrl();
+
+	boolean tp1  = false;
+	boolean tc2  = false;
+	boolean tq1  = false;
+
+	if (url.contains("tq1")) {
+		tq1 = true;
+	}else if(url.contains("tc2")){
+		tc2 = true;
+	}else if(url.contains("tp1")){
+		tp1 = true;
+	}
+	
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -169,10 +197,30 @@ public boolean criar() {
 		opcTipoDeRegra.click();
 		sleep(3000);
 		
-		componente.click();
-		sleep(3000);
-		opcComponente.click();
-		sleep(3000);
+		
+		if (tq1 == true) {
+			componente.click();
+			sleep(1000);
+			opcComponente.click();
+			sleep(1000);
+
+			
+
+		}else if (tc2==true ) {
+			componente2.click();
+			sleep(1000);
+			opcComponente.click();
+			sleep(1000);
+			
+			
+		}else {
+			
+			componente2.click();
+			sleep(1000);
+			opcComponente.click();
+			sleep(1000);
+			
+		}
 		
 		tipoTributo.click();
 		sleep(3000);
@@ -196,13 +244,43 @@ public boolean criar() {
 		opcCaracteristicas.click();
 		sleep(4000);
 		
-		abas.click();
-		sleep(3000);
-		opcAbas.click();
-		sleep(1000);
-		opcAbas.sendKeys(Keys.ESCAPE);
-		sleep(3000);
 		
+		
+		if (tq1 == true) {
+			abas.click();
+			sleep(3000);
+			opcAbas1.click();
+			
+			sleep(1000);
+			opcAbas1.sendKeys(Keys.ESCAPE);
+			sleep(3000);
+
+			
+
+		}else if (tc2==true ) {
+			abas.click();
+			sleep(3000);
+			opcAbas.click();
+			
+			sleep(1000);
+			opcAbas.sendKeys(Keys.ESCAPE);
+			sleep(3000);
+
+			
+			
+		}else {
+			
+			abas.click();
+			sleep(3000);
+			opcAbas.click();
+			
+			sleep(1000);
+			opcAbas.sendKeys(Keys.ESCAPE);
+			sleep(3000);
+
+		}
+	
+		sleep(1000);
 		validade.sendKeys("01/01/2013");
 		sleep(1000);
 		
@@ -231,11 +309,34 @@ public boolean criar() {
 		condicoes2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		acoes.click();
-		sleep(2000);
-		opcAcoes.click();
-		sleep(2000);
-		closeSelectTypeCheckbox(acoes);
+		if (tq1 == true) {
+			acoes.click();
+			sleep(2000);
+			opcAcoes1.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(acoes);
+
+			
+
+		}else if (tc2==true ) {
+			acoes.click();
+			sleep(2000);
+			opcAcoes.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(acoes);
+			
+			
+		}else {
+			
+			acoes.click();
+			sleep(2000);
+			opcAcoes.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(acoes);
+
+			
+		}
+		
 		
 		
 		sleep(2000);

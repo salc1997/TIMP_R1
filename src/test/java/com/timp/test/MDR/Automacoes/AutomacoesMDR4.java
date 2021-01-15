@@ -339,6 +339,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaReceitasCreditoFiscalAntecipadoVisualizar tabelaReceitasCreditoFiscalAntecipadoVisualizar;
 	TabelaReceitasCreditoFiscalAntecipadoExcluir tabelaReceitasCreditoFiscalAntecipadoExcluir;
 	TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa;
+
 	// Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas
 	// permitidas
 	TabelaReceitasPermitidasCriar tabelaReceitasPermitidasCriar;
@@ -1407,19 +1408,9 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 
 	}
 	
+	
+
 	@Test(priority = 70)
-	public void tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa() {
-
-		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa = new TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa();
-		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.beforeClass();
-		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.login();
-		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.acessarMDR();
-		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.criar();
-		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.afterClass();
-
-	}
-
-	@Test(priority = 71)
 	public void tabelaReceitasCreditoFiscalAntecipadoExcluir() {
 
 		tabelaReceitasCreditoFiscalAntecipadoExcluir = new TabelaReceitasCreditoFiscalAntecipadoExcluir();
@@ -1428,6 +1419,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.acessarMDR();
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.excluir();
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.afterClass();
+
+		}
+	
+	@Test(priority = 71)
+	public void tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa() {
+
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa = new TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.login();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.criar();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"------------------- Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado) Fin-------------------------");

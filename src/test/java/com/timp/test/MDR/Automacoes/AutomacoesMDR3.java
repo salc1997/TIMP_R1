@@ -246,7 +246,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	AtribuicaoMunicipioEstadoExcluir atribuicaoMunicipioEstadoExcluir;
 	AtribuicaoMunicipioEstadoVisualizar atribuicaoMunicipioEstadoVisualizar;
 	AtribuicaoMunicipioEstadoExcluirEmMassa atribuicaoMunicipioEstadoExcluirEmMassa;
-	
+
 //Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes
 	// 
 
@@ -318,7 +318,6 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	TabelaDeCodigoEClasseParaQuadroExcluir tabelaDeCodigoEClasseParaQuadroExcluir;
 	TabelaDeCodigoEClasseParaQuadroVisualizar tabelaDeCodigoEClasseParaQuadroVisualizar;
 	TabelaDeCodigoEClasseParaQuadroExcluirEmMassa tabelaDeCodigoEClasseParaQuadroExcluirEmMassa;
-	
 
 	
 	
@@ -1319,19 +1318,9 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 	}
 	
+	
+
 	@Test(priority = 82)
-	public void atribuicaoMunicipioEstadoExcluirEmMassa() {
-
-		atribuicaoMunicipioEstadoExcluirEmMassa = new AtribuicaoMunicipioEstadoExcluirEmMassa();
-		atribuicaoMunicipioEstadoExcluirEmMassa.beforeClass();
-		atribuicaoMunicipioEstadoExcluirEmMassa.login();
-		atribuicaoMunicipioEstadoExcluirEmMassa.acessarMDR();
-		atribuicaoMunicipioEstadoExcluirEmMassa.criar();
-		atribuicaoMunicipioEstadoExcluirEmMassa.afterClass();
-
-	}
-
-	@Test(priority = 83)
 	public void atribuicaoMunicipioEstadoExcluir() {
 
 		atribuicaoMunicipioEstadoExcluir = new AtribuicaoMunicipioEstadoExcluir();
@@ -1340,6 +1329,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		atribuicaoMunicipioEstadoExcluir.acessarMDR();
 		atribuicaoMunicipioEstadoExcluir.excluir();
 		atribuicaoMunicipioEstadoExcluir.afterClass();
+
+		}
+	
+	@Test(priority = 83)
+	public void atribuicaoMunicipioEstadoExcluirEmMassa() {
+
+		atribuicaoMunicipioEstadoExcluirEmMassa = new AtribuicaoMunicipioEstadoExcluirEmMassa();
+		atribuicaoMunicipioEstadoExcluirEmMassa.beforeClass();
+		atribuicaoMunicipioEstadoExcluirEmMassa.login();
+		atribuicaoMunicipioEstadoExcluirEmMassa.acessarMDR();
+		atribuicaoMunicipioEstadoExcluirEmMassa.criar();
+		atribuicaoMunicipioEstadoExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE-------------------------");
@@ -1927,19 +1928,9 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	}
 	
 	
+	
+
 	@Test(priority = 130)
-	public void tabelaDeCodigoEClasseParaQuadroExcluirEmMassa() {
-
-		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa = new TabelaDeCodigoEClasseParaQuadroExcluirEmMassa();
-		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.beforeClass();
-		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.login();
-		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.acessarMDR();
-		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.criar();
-		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.afterClass();
-
-	}
-
-	@Test(priority = 131)
 	public void tabelaDeCodigoEClasseParaQuadroExcluir() {
 
 		tabelaDeCodigoEClasseParaQuadroExcluir = new TabelaDeCodigoEClasseParaQuadroExcluir();
@@ -1948,6 +1939,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		tabelaDeCodigoEClasseParaQuadroExcluir.acessarMDR();
 		tabelaDeCodigoEClasseParaQuadroExcluir.excluir();
 		tabelaDeCodigoEClasseParaQuadroExcluir.afterClass();
+
+			}
+	
+	@Test(priority = 131)
+	public void tabelaDeCodigoEClasseParaQuadroExcluirEmMassa() {
+
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa = new TabelaDeCodigoEClasseParaQuadroExcluirEmMassa();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.beforeClass();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.login();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.acessarMDR();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.criar();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro Fin-------------------------");

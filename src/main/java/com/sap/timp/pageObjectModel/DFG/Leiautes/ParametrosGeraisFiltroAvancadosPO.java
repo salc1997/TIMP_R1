@@ -179,7 +179,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBaseMassiel{
 		for (int i = 0; i < rows; i++) {
 
 			String textFiltroNombre = driver
-					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][\"+ rows	\"]/div	[7]/div"))
+					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][\""+f+"\"]/div	[7]/div"))
 					.getText();
 			System.out.println(textFiltroNombre + " Nombre  Filtro");
 

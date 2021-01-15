@@ -46,6 +46,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
 	public WebElement opcionTipoTributo;
 	
+
 	@FindBy(xpath = "//td[@class=\"EffectiveDateFrom\"]/div/div/input[@placeholder=\" selecionar Data\"]")
 	public WebElement validade;
 	

@@ -43,6 +43,6 @@ public class ConfiguracaoEExecucacoCriar extends TestBaseFernando{
 	@Test(priority = 2)
 	public void criar() {
 		boolean sucesso = configuracaoEExecucacoCriarPO.criar();
-		assertTrue(sucesso, Filtros);
+		assertTrue(sucesso, Criar);
 	}
 }

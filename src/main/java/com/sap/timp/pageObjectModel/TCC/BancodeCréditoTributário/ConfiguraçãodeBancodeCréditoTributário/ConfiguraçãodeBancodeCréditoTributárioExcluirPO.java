@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.PainelPerDcomp.ConfiguraçãodeBancodeCréditoTributário;
+package com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

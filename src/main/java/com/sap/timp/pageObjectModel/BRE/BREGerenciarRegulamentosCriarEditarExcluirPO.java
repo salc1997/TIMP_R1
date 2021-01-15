@@ -45,7 +45,7 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseCristh
 		novoRegulamento.click();
 		sleep(3000);
 		
-		nome.sendKeys("TESTE QA");
+		nome.sendKeys("ddd");
 		sleep(2000);
 		
 		aplicar.click();
@@ -61,7 +61,7 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseCristh
 		
 		nome.clear();
 		sleep(2000);
-		nome.sendKeys("TESTE QA 1");
+		nome.sendKeys("Massiel");
 		sleep(2000);
 		
 		aplicar.click();

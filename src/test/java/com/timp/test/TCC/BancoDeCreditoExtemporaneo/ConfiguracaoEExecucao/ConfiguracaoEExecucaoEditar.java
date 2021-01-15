@@ -9,24 +9,24 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriarPO;
+import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditarPO;
 
-public class ConfiguracaoEExecucacoCriar extends TestBaseFernando{
+public class ConfiguracaoEExecucaoEditar extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	ConfiguracaoEExecucacoCriarPO configuracaoEExecucacoCriarPO;
+	ConfiguracaoEExecucaoEditarPO configuracaoEExecucaoEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		configuracaoEExecucacoCriarPO = new ConfiguracaoEExecucacoCriarPO();
+		configuracaoEExecucaoEditarPO = new ConfiguracaoEExecucaoEditarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+//		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,8 +41,8 @@ public class ConfiguracaoEExecucacoCriar extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void criar() {
-		boolean sucesso = configuracaoEExecucacoCriarPO.criar();
-		assertTrue(sucesso, Criar);
+	public void editar() {
+		boolean sucesso = configuracaoEExecucaoEditarPO.editar();
+		assertTrue(sucesso, Editar);
 	}
 }

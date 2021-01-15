@@ -26,7 +26,7 @@ public class ConfiguracaoEExecucacoCriar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -43,6 +43,6 @@ public class ConfiguracaoEExecucacoCriar extends TestBaseFernando{
 	@Test(priority = 2)
 	public void criar() {
 		boolean sucesso = configuracaoEExecucacoCriarPO.criar();
-		assertTrue(sucesso, Filtros);
+		assertTrue(sucesso, Criar);
 	}
 }

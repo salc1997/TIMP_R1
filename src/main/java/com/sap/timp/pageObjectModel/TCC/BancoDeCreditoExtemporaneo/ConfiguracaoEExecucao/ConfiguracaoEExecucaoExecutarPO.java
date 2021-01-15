@@ -81,6 +81,12 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElementOverlay();
+
+		
+		btnUltimaPagina.click();
+		invisibilityOfElementOverlay();
+		
+
 		String idRegistroConfiguracaoEExecucao = idObter4();
 		System.out.println("");
 		System.out.println("ID Registro Configuracao execucaco: " + idRegistroConfiguracaoEExecucao);

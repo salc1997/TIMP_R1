@@ -3,13 +3,27 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosVisualizar">
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
+>>>>>>> refs/remotes/origin/master
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+          <include name="executar"/>
+>>>>>>> refs/remotes/origin/master
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="visualizar"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosVisualizar -->
+=======
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
+>>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

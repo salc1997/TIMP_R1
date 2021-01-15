@@ -17,35 +17,35 @@ public class AjusteCancelar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AjusteCancelarPO ajusteCancelarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTAAPO  = new AcessarTAAPO();
 		ajusteCancelarPO = new AjusteCancelarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void ingresar() {
 		loginTC.login();
 	}
 
-  @Test(priority = 1)
+	@Test(priority = 1)
 	public void TAAEntrar() {
-	  acessarTAAPO.acessarTAA();
+		acessarTAAPO.acessarTAA();
 
 	}
 
 	@Test(priority = 2)
 	public void ajustesCancelar() {
-	
-	boolean sucesso = ajusteCancelarPO .cancelar();
-	assertTrue(sucesso, Criar);
+
+		boolean sucesso = ajusteCancelarPO .cancelar();
+		assertTrue(sucesso, Criar);
 
 	}
 

@@ -17,8 +17,14 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Hierarquia\"]")
 	public WebElement hererarquia;
 	
-	@FindBy(xpath = "//div[text()=\"HCNF0053 - TA-1871 NÃO MEXER\"]")
-	public WebElement seleccionHererarquia;
+	@FindBy(xpath = "//div[text()=\"HCNF0110 - TA-1871 - NÃO MEXER\"]")
+	public WebElement seleccionHererarquiaTQ1;
+	
+	@FindBy(xpath = "//div[text()=\"HCNF0051 - TA-1871 NÃO MEXER\"]")
+	public WebElement seleccionHererarquiaTP1;
+	
+	@FindBy(xpath = "//div[text()=\"HCNF0125 - TA-1871 NÃO MEXER\"]")
+	public WebElement seleccionHererarquiaTC2;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Cenário\"]")
 	public WebElement cenario;
@@ -83,6 +89,20 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseCristhian {
 	
 public boolean editar() {
 	
+	String url = driver.getCurrentUrl();
+
+	boolean tp1  = false;
+	boolean tc2  = false;
+	boolean tq1  = false;
+
+	if (url.contains("tq1")) {
+		tq1 = true;
+	}else if(url.contains("tc2")){
+		tc2 = true;
+	}else if(url.contains("tp1")){
+		tp1 = true;
+	}
+	
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	AN2.click();
@@ -120,17 +140,45 @@ public boolean editar() {
 	adicionarCorrecoes.click();
 	sleep(3000);
 	
-	hererarquia.sendKeys("HCNF0053 - TA-1871 NÃO MEXER");
-	sleep(3000);
-	seleccionHererarquia.click();
-	sleep(4000);
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(6000);
+	if (tq1 == true) {
+		hererarquia.sendKeys("HCNF0110 - TA-1871 - NÃO MEXER");
+		sleep(3000);
+		seleccionHererarquiaTQ1.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		cenario.sendKeys("CCNF0168 - TA-1871 - NÃO MEXER");
+		sleep(3000);
+		cenario.sendKeys(Keys.ENTER);
+		sleep(3000);
+	} else if (tp1) {
+		hererarquia.sendKeys("HCNF0051 - TA-1871 NÃO MEXER");
+		sleep(3000);
+		seleccionHererarquiaTP1.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		cenario.sendKeys("CCNF0084 - TA-1871 - NÃO MEXER");
+		sleep(3000);
+		cenario.sendKeys(Keys.ENTER);
+		sleep(3000);
+	}else {
+		hererarquia.sendKeys("HCNF0125 - TA-1871 NÃO MEXER");
+		sleep(3000);
+		seleccionHererarquiaTC2.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		cenario.sendKeys("CCNF0189 - TA-1871 NÃO MEXER");
+		sleep(3000);
+		cenario.sendKeys(Keys.ENTER);
+		sleep(3000);
+	}
 	
-	cenario.sendKeys("CCNF0087 - TA-1871 - NÃO MEXER");
-	sleep(3000);
-	cenario.sendKeys(Keys.ENTER);
-	sleep(3000);
+	
 	
 	valor1.sendKeys("1");
 	sleep(3000);

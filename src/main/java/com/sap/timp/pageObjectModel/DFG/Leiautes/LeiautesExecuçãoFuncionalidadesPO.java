@@ -57,7 +57,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar o Tipo de Leiaute\"]")
 	public WebElement leiauteInput;
 	
-	@FindBy(xpath = "//li[text()=\"ALTER E-SOCIAL S1200\"]")
+	@FindBy(xpath = "//li[text()=\"E-Social\"]")
 	public WebElement leiauteOpc;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Grupo do Estrutura\"]")
@@ -733,7 +733,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		ajuste.click(); 
 		sleep(3000);
 		
-		if(tp1 == true) {
+		if(tp1 == true || tc2 == true) {
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 			  sleep(2000);
 			  
@@ -785,7 +785,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		
 		//Ordenar Por
 		
-		if(tp1 == true) {
+		if(tp1 == true || tc2 ==  true) {
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 			  sleep(2000);
 			  
@@ -824,7 +824,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		
 		//Formato
 		
-		if(tp1 == true) {
+		if(tp1 == true || tc2 ==  true) {
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 			  sleep(2000);
 			  
@@ -999,28 +999,32 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		flagAgrupamentos.click();
 		sleep(1000);
 		
+		System.out.println("1111");
+		
 		aplicar.click();
 		sleep(1000);
 		
 		BRegistro7.clear();
 		sleep(1000);
 		
+		System.out.println("2222");
+		
 		BRegistro7.sendKeys("Registro 2");
-		sleep(1000);
+		sleep(7000);
 		
 		gravar.click();
-		sleep(1000);
+		sleep(7000);
 		
 		nao.click();
 		sleep(1000);
 		sim.click();
-		sleep(1000);
+		sleep(7000);
 		
 		biblioteca.click();
-		sleep(1000);
+		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		siguiente.click();
 		sleep(3000);

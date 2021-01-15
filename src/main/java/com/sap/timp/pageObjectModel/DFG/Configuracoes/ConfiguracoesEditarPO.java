@@ -18,7 +18,7 @@ public class ConfiguracoesEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"container-tabs\"]/div[2]")
 	public WebElement configuracoes;
 	
-	@FindBy(xpath = "//div[@class=\"tabSettings-wrapper\"]/div/div/div[1]/div[1]/div[2]")
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[3]/div[3]/span")
 	public WebElement raiz2;
 	
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")

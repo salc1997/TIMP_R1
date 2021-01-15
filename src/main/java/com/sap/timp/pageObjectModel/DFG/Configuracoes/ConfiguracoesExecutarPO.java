@@ -213,9 +213,9 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		sleep(3000);
 		
 		executar1.click();
-		sleep(18000);
+		sleep(25000);
 		sleep(9000);
-		sleep(3000);
+		sleep(10000);
 	
 		String valorTC = "1000";
 
@@ -235,7 +235,7 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		btnExportar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(15000);
 		
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(1000);
@@ -264,13 +264,13 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String nuevoTexto2 = campoEstatico1.getAttribute("value");
-		System.out.println(nuevoTexto2);
-		
-		boolean sucesso2 = nuevoTexto2.equals(valorTC);
-		System.out.println(sucesso2 + " Dato campo estatico igual al dato TC");
-		sleep(9000);
-		sleep(3000);
+//		String nuevoTexto2 = campoEstatico1.getAttribute("value");
+//		System.out.println(nuevoTexto2);
+//		
+//		boolean sucesso2 = nuevoTexto2.equals(valorTC);
+//		System.out.println(sucesso2 + " Dato campo estatico igual al dato TC");
+//		sleep(9000);
+//		sleep(3000);
 		
 		gravar.click();
 		sleep(3000);

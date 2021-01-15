@@ -46,7 +46,8 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
 	public WebElement opcionTipoTributo;
 	
-	@FindBy(xpath = "//td[@class=\"EffectiveDateFrom\"]/div/div/input")
+
+	@FindBy(xpath = "//td[@class=\"EffectiveDateFrom\"]/div/div/input[@placeholder=\" selecionar Data\"]")
 	public WebElement validade;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -149,7 +150,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	
 		sleep(6000);
 		
-		nome.sendKeys("TESTE AUTOMATIZADO QA 0009");
+		nome.sendKeys("TESTE AUTOMATIZADO QA01A");
 		sleep(2000);
 		
 		

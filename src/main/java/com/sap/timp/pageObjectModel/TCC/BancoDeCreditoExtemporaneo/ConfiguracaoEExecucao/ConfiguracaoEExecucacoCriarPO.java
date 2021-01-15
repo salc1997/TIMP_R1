@@ -125,6 +125,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(2000);
 		cboUf.click();
 		sleep(1000);
 		opcionCheckbox.click();
@@ -132,6 +133,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(2000);
 		cboFilial.click();
 		sleep(1000);
 		opcionCheckbox.click();
@@ -144,6 +146,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		attributeToBeXpath("//div[@id=\"taxType\"]/div", "class", "base-select required");
+		sleep(2000);
 		cboTipoImposto.click();
 		sleep(1000);
 		opcionCombo.click();

@@ -65,7 +65,7 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
-		
+		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
 		
 		String idUltimoRegistroExecutado = "0"; // Ultimo ID 
@@ -76,11 +76,17 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		}
 		
 		configuracaoEExecucao.click();
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElementOverlay();
+
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
+
 		String idRegistroConfiguracaoEExecucao = idObter4();
 		System.out.println("");
 		System.out.println("ID Registro Configuracao execucaco: " + idRegistroConfiguracaoEExecucao);

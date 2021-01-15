@@ -13,6 +13,9 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+  <suite started-at="2021-01-15T15:17:07Z" name="Default suite" finished-at="2021-01-15T15:18:37Z" duration-ms="90603">
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-15T14:15:24Z" name="Default suite" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
 =======
@@ -21,8 +24,14 @@
 =======
   <suite started-at="2021-01-15T13:43:55Z" name="Default suite" finished-at="2021-01-15T13:46:46Z" duration-ms="170413">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2021-01-15T15:17:07Z" name="Default test" finished-at="2021-01-15T15:18:37Z" duration-ms="90603">
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:07Z" name="beforeClass" finished-at="2021-01-15T12:17:28Z" duration-ms="20972" status="PASS">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-15T14:15:24Z" name="Default test" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
@@ -38,9 +47,13 @@
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:43:55Z" name="beforeClass" finished-at="2021-01-15T10:44:15Z" duration-ms="20035" status="PASS">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:28Z" name="login" finished-at="2021-01-15T12:17:40Z" duration-ms="12004" status="PASS">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:42Z" name="login" finished-at="2021-01-15T08:15:54Z" duration-ms="12183" status="PASS">
@@ -50,6 +63,7 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:15Z" name="login" finished-at="2021-01-15T10:44:25Z" duration-ms="9738" status="PASS">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -57,6 +71,9 @@
 =======
 >>>>>>> refs/heads/Cristhian
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:40Z" name="acessarTCC" finished-at="2021-01-15T12:18:04Z" duration-ms="24182" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:54Z" name="acessarTCC" finished-at="2021-01-15T08:16:15Z" duration-ms="21428" status="PASS">
 =======
@@ -66,14 +83,19 @@
 =======
         <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:25Z" name="acessarBRE" finished-at="2021-01-15T10:44:42Z" duration-ms="17314" status="PASS">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarTCC -->
-        <test-method signature="executar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:16:15Z" name="executar" finished-at="2021-01-15T08:18:43Z" duration-ms="147566" status="PASS">
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:18:04Z" name="excluir" finished-at="2021-01-15T12:18:37Z" duration-ms="33417" status="PASS">
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:18:37Z" name="afterClass" finished-at="2021-01-15T12:18:37Z" duration-ms="1" status="PASS">
+=======
         </test-method> <!-- executar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:18:43Z" name="afterClass" finished-at="2021-01-15T08:18:43Z" duration-ms="0" status="PASS">
 =======
@@ -149,6 +171,7 @@ Session ID: 0ace2013cf101ad9449099885eb73a88
 =======
         </test-method> <!-- acessarBRE -->
         <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:42Z" name="editar" finished-at="2021-01-15T10:46:46Z" duration-ms="123295" status="PASS">
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editar -->
@@ -166,6 +189,9 @@ Session ID: 0ace2013cf101ad9449099885eb73a88
 >>>>>>> refs/heads/Cristhian
         </test-method> <!-- afterClass -->
 <<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
 =======
@@ -174,6 +200,7 @@ Session ID: 0ace2013cf101ad9449099885eb73a88
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
 >>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

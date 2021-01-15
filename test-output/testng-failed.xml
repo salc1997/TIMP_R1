@@ -5,16 +5,28 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
 =======
       <class name="com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
 >>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/master
         <methods>
+<<<<<<< HEAD
+=======
           <include name="afterClass"/>
 <<<<<<< HEAD
           <include name="executar"/>
+>>>>>>> refs/remotes/origin/master
           <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
+=======
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
 =======
           <include name="criar"/>
@@ -38,6 +50,7 @@
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
 >>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

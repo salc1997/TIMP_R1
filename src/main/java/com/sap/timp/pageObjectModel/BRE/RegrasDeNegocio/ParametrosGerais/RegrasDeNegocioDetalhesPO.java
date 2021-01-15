@@ -114,7 +114,7 @@ public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
+		sleep(6000);
 		//VISUALIZAR
 		String campos1Valor1 = camposV1.getText();
 		String campos2Valor2 = camposV2.getText();

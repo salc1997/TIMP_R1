@@ -31,7 +31,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@id][text()=\"Negócio\"]")
 	public WebElement opcaotiporegra;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//li[@id][text()=\"TAA\"]")
@@ -169,12 +169,31 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	//@FindBy(xpath = "//div[@id=\"T74\"]/div/label/span")
 	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro 1210\"]")
 	public WebElement opcaoacoesr4;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componente2;
+	
 	public RegrasDeNegocioCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	
 	public ArrayList<Boolean> criar() {
+		
+		System.out.println("---------- Id Anterior --------- " );
+		String url = driver.getCurrentUrl();
+
+		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
+			tp1 = true;
+		}
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -210,17 +229,36 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		sleep(1000);
 		opcaotiporegra.click();
 		sleep(1000);
-		componente.click();
-		sleep(1000);
-		opcaocomponente.click();
-		sleep(1000);
+		
+		if (tq1 == true) {
+			componente.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+
+			
+
+		}else if (tc2==true ) {
+			componente2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+			
+			
+		}else {
+			
+			componente2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+			
+		}
 		tipotributo.click();
 		sleep(1000);
 		opcaotipotributo.click();
 		closeSelectTypeCheckbox(tipotributo);
 		sleep(1000);
 		
-		String url = driver.getCurrentUrl();
 		
 		/*boolean tc2 = false;
 		boolean td1 = false;

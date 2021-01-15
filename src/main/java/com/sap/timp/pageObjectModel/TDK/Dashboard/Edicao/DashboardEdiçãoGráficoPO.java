@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TDK.Dashboard;
+package com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

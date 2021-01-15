@@ -62,7 +62,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
-	@FindBy(xpath = "//div[@id=\"subPeriod\"]/div/div[1]/span")
+	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
 	@FindBy(xpath = "//div[@id=\"ajusteValue\"]/div/div/input")
@@ -121,7 +121,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 
 		}else if (tp1==true ) {
 			
-			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[7]"));
+			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[15]"));
 			
 			icms.click();
 			sleep(3000);
@@ -129,6 +129,13 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			sleep(2000);
 			
 		}else {
+			
+			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[7]"));
+			
+			icms.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 		
 		}
 		
@@ -193,8 +200,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tp1==true ) {
-			
-			WebElement ufOPC = driver.findElement(By.xpath("//li[text()=\"AL\"]"));
+			WebElement ufOPC = driver.findElement(By.xpath("//li[text()=\"SP\"]"));
 			
 			ufOPC.click();
 			sleep(3000);
@@ -203,7 +209,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			
 		}else {
 		
-			WebElement ufOPC = driver.findElement(By.xpath("//li[text()=\"SP\"]"));
+			WebElement ufOPC = driver.findElement(By.xpath("//li[text()=\"AL\"]"));
 			
 			ufOPC.click();
 			sleep(3000);
@@ -227,7 +233,9 @@ public class AjustedCriarPO extends TestBaseMassiel{
 
 		}else if (tp1==true ) {
 			
-			WebElement filialOPC = driver.findElement(By.xpath("//li[text()=\"0008\"]"));
+			
+			
+			WebElement filialOPC = driver.findElement(By.xpath("//li[text()=\"0001\"]"));
 			
 			filialOPC.click();
 			sleep(3000);
@@ -236,7 +244,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			
 		}else {
 		
-			WebElement filialOPC = driver.findElement(By.xpath("//li[text()=\"0001\"]"));
+			WebElement filialOPC = driver.findElement(By.xpath("//li[text()=\"0008\"]"));
 			
 			filialOPC.click();
 			sleep(3000);
@@ -256,7 +264,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		sleep(3000);
 		
 		mes.click();
-		sleep(3000);
+		sleep(4000);
 		
 		periodo.click();
 		sleep(3000);
@@ -277,10 +285,11 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(16000);
 		
-		waitExpectElement(gravar);
-		sleep(2000);
+		waitExpectElement(biblioteca);
+		sleep(10000);
+		sleep(16000);
 		
 		valorAjuste.click();
 		sleep(2000);

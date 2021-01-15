@@ -64,7 +64,7 @@ public class AjustedContabilizarPO extends TestBaseMassiel{
 
 		}else if (tp1==true ) {
 			
-			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[7]"));
+			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[15]"));
 			
 			icms.click();
 			sleep(3000);
@@ -72,7 +72,13 @@ public class AjustedContabilizarPO extends TestBaseMassiel{
 			sleep(2000);
 			
 		}else {
-		
+			
+			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[7]"));
+			
+			icms.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 		}
 		String idRegistro = idObter1();
 		System.out.println(idRegistro );

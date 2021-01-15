@@ -236,23 +236,19 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		nao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(10000);
 		
 		primeiracaixar1.click();
-		sleep(1000);
+		sleep(4000);
 		
-	WebElement elementopreenchimentoobrigatorio = driver.findElement(By.xpath("//div[@class=\"tabAction-obligatory\"]/div/input"));
+	         WebElement elementopreenchimentoobrigatorio = driver.findElement(By.xpath("//div[@class=\"tabAction-obligatory\"]/div/input"));
 
 		if (!elementopreenchimentoobrigatorio.isSelected())
 		{
 			boolean sucesso1 =true;
 		   System.out.println("O preechimento obrigatorio não está selecionado");
 		   sucesso.add(sucesso1);
-		}else {
-				boolean sucesso1 =false;
-			   System.out.println("O preechimento obrigatorio está selecionado");
-			   sucesso.add(sucesso1);
-			   }
+		}
 		codigo.clear();
 		sleep(1000);
 		codigo.sendKeys("r5");
@@ -266,7 +262,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		salvarcomocopia.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -289,7 +285,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		sucesso.add(sucesso2);
 		*/
 		waitExpectElement(primeiracaixar5);
-		sleep(2000);
+		sleep(8000);
 		
 		primeiracaixar5.click();
 		sleep(1000);
@@ -322,6 +318,9 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		configuracoes.click();
 		sleep(1000);
 		String verficarnome = nome.getAttribute("value");
+		sleep(2000);
+		System.out.println(verficarnome);
+		
 		sucesso.add(verficarnome.contains(nome1));
 		System.out.println(sucesso);
 		return sucesso;

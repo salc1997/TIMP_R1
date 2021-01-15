@@ -2,62 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-01-15T14:46:11Z" name="Default suite" finished-at="2021-01-15T14:47:39Z" duration-ms="87586">
-=======
-  <suite started-at="2021-01-15T14:15:24Z" name="Default suite" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
->>>>>>> refs/remotes/origin/master
+  <suite started-at="2021-01-15T15:17:07Z" name="Default suite" finished-at="2021-01-15T15:18:37Z" duration-ms="90603">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2021-01-15T14:46:11Z" name="Default test" finished-at="2021-01-15T14:47:39Z" duration-ms="87586">
+    <test started-at="2021-01-15T15:17:07Z" name="Default test" finished-at="2021-01-15T15:18:37Z" duration-ms="90603">
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T11:46:11Z" name="beforeClass" finished-at="2021-01-15T11:46:25Z" duration-ms="14117" status="PASS">
-=======
-    <test started-at="2021-01-15T14:15:24Z" name="Default test" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:24Z" name="beforeClass" finished-at="2021-01-15T08:15:42Z" duration-ms="18079" status="PASS">
->>>>>>> refs/remotes/origin/master
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:07Z" name="beforeClass" finished-at="2021-01-15T12:17:28Z" duration-ms="20972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T11:46:25Z" name="login" finished-at="2021-01-15T11:46:35Z" duration-ms="10084" status="PASS">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:42Z" name="login" finished-at="2021-01-15T08:15:54Z" duration-ms="12183" status="PASS">
->>>>>>> refs/remotes/origin/master
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:28Z" name="login" finished-at="2021-01-15T12:17:40Z" duration-ms="12004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-<<<<<<< HEAD
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T11:46:35Z" name="acessarTCC" finished-at="2021-01-15T11:47:00Z" duration-ms="25013" status="PASS">
-=======
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:54Z" name="acessarTCC" finished-at="2021-01-15T08:16:15Z" duration-ms="21428" status="PASS">
->>>>>>> refs/remotes/origin/master
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:40Z" name="acessarTCC" finished-at="2021-01-15T12:18:04Z" duration-ms="24182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarTCC -->
-<<<<<<< HEAD
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T11:47:00Z" name="excluir" finished-at="2021-01-15T11:47:39Z" duration-ms="38356" status="PASS">
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:18:04Z" name="excluir" finished-at="2021-01-15T12:18:37Z" duration-ms="33417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T11:47:39Z" name="afterClass" finished-at="2021-01-15T11:47:39Z" duration-ms="1" status="PASS">
-=======
-        <test-method signature="executar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:16:15Z" name="executar" finished-at="2021-01-15T08:18:43Z" duration-ms="147566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:18:43Z" name="afterClass" finished-at="2021-01-15T08:18:43Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/master
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:18:37Z" name="afterClass" finished-at="2021-01-15T12:18:37Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
->>>>>>> refs/remotes/origin/master
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

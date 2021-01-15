@@ -5,6 +5,7 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
 =======
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
@@ -44,6 +45,15 @@
 =======
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades">
+        <methods>
+          <include name="TotaldeLinhasAgrupadas"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

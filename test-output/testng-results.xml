@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results total="23" passed="18" failed="5" skipped="0">
 =======
 =======
@@ -10,8 +11,12 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+<testng-results total="8" passed="8" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-14T16:02:15Z" name="Default suite" finished-at="2021-01-14T16:22:14Z" duration-ms="1199390">
@@ -21,8 +26,12 @@
 =======
   <suite started-at="2021-01-14T22:00:05Z" name="Default suite" finished-at="2021-01-14T22:01:21Z" duration-ms="76266">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+  <suite started-at="2021-01-15T00:19:41Z" name="Default suite" finished-at="2021-01-15T00:28:34Z" duration-ms="532561">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-14T16:02:15Z" name="Default test" finished-at="2021-01-14T16:22:14Z" duration-ms="1199390">
@@ -38,9 +47,15 @@
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir@1530c739]" started-at="2021-01-14T19:00:05Z" name="beforeClass" finished-at="2021-01-14T19:00:20Z" duration-ms="15013" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+    <test started-at="2021-01-15T00:19:41Z" name="Default test" finished-at="2021-01-15T00:28:34Z" duration-ms="532561">
+      <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:19:41Z" name="beforeClass" finished-at="2021-01-14T18:20:03Z" duration-ms="21199" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:02:30Z" name="ingresar" finished-at="2021-01-14T13:02:40Z" duration-ms="9770" status="PASS">
@@ -50,8 +65,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir@1530c739]" started-at="2021-01-14T19:00:20Z" name="login" finished-at="2021-01-14T19:00:29Z" duration-ms="8927" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:20:03Z" name="ingresar" finished-at="2021-01-14T18:20:14Z" duration-ms="11266" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- ingresar -->
@@ -64,8 +83,13 @@
         </test-method> <!-- login -->
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir@1530c739]" started-at="2021-01-14T19:00:29Z" name="acessarTCC" finished-at="2021-01-14T19:00:51Z" duration-ms="22439" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        </test-method> <!-- ingresar -->
+        <test-method signature="DFGEntrar()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:20:14Z" name="DFGEntrar" finished-at="2021-01-14T18:20:34Z" duration-ms="20317" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- mdrEntrar -->
@@ -297,8 +321,13 @@ Session ID: 13dfedd726ce31118dc302454ee3f6ba
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        </test-method> <!-- DFGEntrar -->
+        <test-method signature="RaizID()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:20:34Z" name="RaizID" finished-at="2021-01-14T18:20:44Z" duration-ms="10212" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- excluirConfiguracao -->
         <test-method signature="excluirDFG()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@2af004b]" started-at="2021-01-14T13:20:27Z" name="excluirDFG" finished-at="2021-01-14T13:21:27Z" duration-ms="59810" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -368,8 +397,13 @@ Session ID: 13dfedd726ce31118dc302454ee3f6ba
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
 =======
         <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir@1530c739]" started-at="2021-01-14T19:00:51Z" name="excluir" finished-at="2021-01-14T19:01:21Z" duration-ms="29876" status="PASS">
+=======
+        </test-method> <!-- RaizID -->
+        <test-method signature="CriarLeiaute()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:20:44Z" name="CriarLeiaute" finished-at="2021-01-14T18:22:44Z" duration-ms="119717" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir@1530c739]" started-at="2021-01-14T19:01:21Z" name="afterClass" finished-at="2021-01-14T19:01:21Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
@@ -453,7 +487,30 @@ Session ID: 13dfedd726ce31118dc302454ee3f6ba
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        </test-method> <!-- CriarLeiaute -->
+        <test-method signature="bloco()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:22:44Z" name="bloco" finished-at="2021-01-14T18:23:44Z" duration-ms="59561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bloco -->
+        <test-method signature="relaciona()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:23:44Z" name="relaciona" finished-at="2021-01-14T18:26:48Z" duration-ms="183887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relaciona -->
+        <test-method signature="ListarRegistros()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:26:48Z" name="ListarRegistros" finished-at="2021-01-14T18:27:12Z" duration-ms="24426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ListarRegistros -->
+        <test-method signature="TotaldeLinhasAgrupadas()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:27:12Z" name="TotaldeLinhasAgrupadas" finished-at="2021-01-14T18:28:34Z" duration-ms="81947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TotaldeLinhasAgrupadas -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@76b1e9b8]" started-at="2021-01-14T18:28:34Z" name="afterClass" finished-at="2021-01-14T18:28:34Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
@@ -463,6 +520,9 @@ Session ID: 13dfedd726ce31118dc302454ee3f6ba
 =======
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

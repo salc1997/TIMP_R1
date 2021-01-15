@@ -26,10 +26,13 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseE
 	@FindBy(xpath = "//li[@id][text()=\"Negócio\"]")
 	public WebElement opcaotiporegra;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
-	@FindBy(xpath = "//li[@id][text()=\"TAA\"]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componente2;
+	
+	@FindBy(xpath = "//li[text()=\"TAA\"]")
 	public WebElement opcaocomponente;
 	
 	@FindBy(xpath = "//td[@class=\"tribute-field\"]/div/div/div[2]")
@@ -125,6 +128,24 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseE
 	}
 	
 	public ArrayList<Boolean> criar() {
+		
+		System.out.println("---------- Id Anterior --------- " );
+		String url = driver.getCurrentUrl();
+
+		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
+			tp1 = true;
+		}
+		
+		System.out.println(url);
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -160,11 +181,34 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseE
 		tiporegra.click();
 		sleep(1000);
 		opcaotiporegra.click();
-		sleep(1000);
-		componente.click();
-		sleep(1000);
-		opcaocomponente.click();
-		sleep(1000);
+		sleep(3000);
+
+		
+		if (tq1 == true) {
+			componente.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+
+			
+
+		}else if (tc2==true ) {
+			componente2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+			
+			
+		}else {
+			
+			componente2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+			
+		}
+		
+		
 		tipotributo.click();
 		sleep(1000);
 		opcaotipotributo.click();
@@ -239,10 +283,31 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseE
 		sleep(1000);
 		opcaotiporegra.click();
 		sleep(1000);
-		componente.click();
-		sleep(1000);
-		opcaocomponente.click();
-		sleep(1000);
+		
+		if (tq1 == true) {
+			componente.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+
+			
+
+		}else if (tc2==true ) {
+			componente2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+			
+			
+		}else {
+			
+			componente2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+			
+		}
+		
 		tipotributo.click();
 		sleep(1000);
 		opcaotipotributo.click();
@@ -263,9 +328,8 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseE
 		caracteristicaespecial.click();
 		sleep(1000);
 		opcaocaracteristicaespecial.click();
-		sleep(1000);
-		attributeToBeXpath("//td[@class=\"tab-field\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
+		
 		abas.click();
 		sleep(1000);
 		opcaoabas.click();

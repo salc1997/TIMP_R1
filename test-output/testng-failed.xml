@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.DFG.SPED.ECF.ECFFuncionalidades">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar">
         <methods>
-          <include name="visualizarActualizacao"/>
           <include name="afterClass"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
-          <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.SPED.ECF.ECFFuncionalidades -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
+public class ConfiguracaoEExecucaoExecutarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
 	public WebElement bancoCreditoExtemporaneo;
 	
@@ -65,7 +66,7 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
-		
+		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
 		
 		String idUltimoRegistroExecutado = "0"; // Ultimo ID 
@@ -76,11 +77,17 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		}
 		
 		configuracaoEExecucao.click();
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElementOverlay();
+
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
+
 		String idRegistroConfiguracaoEExecucao = idObter4();
 		System.out.println("");
 		System.out.println("ID Registro Configuracao execucaco: " + idRegistroConfiguracaoEExecucao);
@@ -184,8 +191,9 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		boolean sucesso = false;
 		
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoRegistroExecutado)) {
-			System.out.println("Registro executado correcctamente...");
-			idInserir4(idUltimoRegistroExecutados);
+			System.out.println("Registro executado correcctamente..."+ idUltimoRegistroExecutados);
+			idInserir3(idUltimoRegistroExecutados);
+			
 			sucesso = true;
 		}else {
 			System.out.println("No se executo el registro...");

@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseCristhian{
+public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Banco de Crédito Tributário\"]")
 	public WebElement BancoCréditoTributário;

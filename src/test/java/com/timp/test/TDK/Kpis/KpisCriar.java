@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
-import com.sap.timp.pageObjectModel.TDK.Kpis.KpisCriarP;
+import com.sap.timp.pageObjectModel.TDK.Kpis.KpisCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -19,14 +19,14 @@ public class KpisCriar extends TestBaseMassiel{
  
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
-	KpisCriarP kpisCriarP;
+	KpisCriarPO kpisCriarP;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
-		kpisCriarP = new KpisCriarP();
+		kpisCriarP = new KpisCriarPO();
 		
   }
 

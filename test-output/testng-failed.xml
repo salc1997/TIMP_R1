@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
@@ -55,11 +56,18 @@
           <include name="criar"/>
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades">
+=======
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades">
+>>>>>>> refs/heads/Cristhian
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Cristhian
@@ -77,11 +85,19 @@
           <include name="afterClass"/>
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/heads/Cristhian
           <include name="criar"/>
+<<<<<<< HEAD
 >>>>>>> refs/heads/Cristhian
 >>>>>>> refs/remotes/origin/master
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+>>>>>>> refs/heads/Cristhian
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades -->
 =======
@@ -100,6 +116,9 @@
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> refs/remotes/origin/master
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,6 +7,7 @@
   <test name="Default test(failed)" parallel="none">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar">
 =======
 <<<<<<< HEAD
@@ -23,6 +24,9 @@
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento">
+>>>>>>> refs/heads/Fernando
         <methods>
 <<<<<<< HEAD
 =======
@@ -31,10 +35,14 @@
           <include name="afterClass"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="executar"/>
 >>>>>>> refs/remotes/origin/master
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="editar"/>
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
 <<<<<<< HEAD
           <include name="excluir"/>
@@ -47,6 +55,7 @@
           <include name="executarEditar"/>
 >>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
@@ -119,6 +128,9 @@
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

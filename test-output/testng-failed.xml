@@ -1,43 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
-=======
-      <class name="com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
->>>>>>> refs/remotes/origin/Yessy
-        <methods>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="executar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
-=======
-          <include name="criar"/>
-=======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades">
         <methods>
->>>>>>> refs/heads/Cristhian
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="afterClass"/>
           <include name="criar"/>
->>>>>>> refs/heads/Cristhian
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
->>>>>>> refs/heads/Cristhian
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

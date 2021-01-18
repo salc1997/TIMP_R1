@@ -95,7 +95,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
-public boolean editar() {
+	public boolean editar() {
 	
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);

@@ -3,6 +3,7 @@ package com.sap.timp.pageObjectModel.DFG.Leiautes;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -542,7 +543,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		nome.sendKeys("Teste Automatizado QA Cristhian 00");
 		sleep(1000);
 		
-		descripcion.sendKeys("Descipcion Teste Automatizado QA");
+		descripcion.sendKeys("Descipcion Teste Automatizado QA 0001");
 		sleep(2000);
 		
 		leiauteInput.click();
@@ -825,6 +826,10 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		//Formato
 		
 		if(tp1 == true || tc2 ==  true) {
+			
+//			  Actions action = new Actions(driver);
+//			  action.dragAndDrop(Sourcelocator, Destinationlocator).build().perform();
+			
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 			  sleep(2000);
 			  

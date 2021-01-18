@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-15T14:15:24Z" name="Default suite" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
+  <suite started-at="2021-01-15T21:38:42Z" name="Default suite" finished-at="2021-01-15T21:40:50Z" duration-ms="127907">
     <groups>
     </groups>
-    <test started-at="2021-01-15T14:15:24Z" name="Default test" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:24Z" name="beforeClass" finished-at="2021-01-15T08:15:42Z" duration-ms="18079" status="PASS">
+    <test started-at="2021-01-15T21:38:42Z" name="Default test" finished-at="2021-01-15T21:40:50Z" duration-ms="127907">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:38:42Z" name="beforeClass" finished-at="2021-01-15T15:38:55Z" duration-ms="12536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:42Z" name="login" finished-at="2021-01-15T08:15:54Z" duration-ms="12183" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:38:55Z" name="login" finished-at="2021-01-15T15:39:03Z" duration-ms="7961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:54Z" name="acessarTCC" finished-at="2021-01-15T08:16:15Z" duration-ms="21428" status="PASS">
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:39:03Z" name="acessarBRE" finished-at="2021-01-15T15:39:18Z" duration-ms="15488" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarTCC -->
-        <test-method signature="executar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:16:15Z" name="executar" finished-at="2021-01-15T08:18:43Z" duration-ms="147566" status="PASS">
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:39:18Z" name="editar" finished-at="2021-01-15T15:40:50Z" duration-ms="91903" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- executar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:18:43Z" name="afterClass" finished-at="2021-01-15T08:18:43Z" duration-ms="0" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:40:50Z" name="afterClass" finished-at="2021-01-15T15:40:50Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

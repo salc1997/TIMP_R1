@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento">
         <methods>
           <include name="afterClass"/>
-          <include name="executar"/>
+          <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

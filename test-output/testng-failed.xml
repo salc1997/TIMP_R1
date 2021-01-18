@@ -5,6 +5,7 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
 =======
 <<<<<<< HEAD
@@ -13,17 +14,28 @@
       <class name="com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> refs/remotes/origin/master
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
 <<<<<<< HEAD
 =======
           <include name="afterClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="executar"/>
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="excluir"/>
           <include name="afterClass"/>
+=======
+          <include name="executarEditar"/>
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
 =======
@@ -51,6 +63,9 @@
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
 >>>>>>> refs/heads/Cristhian
 >>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -445,6 +445,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			tp1 = true;
 		}
 		
+		
 		if (tq1 == true) {
 
 
@@ -1358,6 +1359,8 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		}else if(url.contains("tp1")){
 			tp1 = true;
 		}
+		sleep(2000);
+		sleep(2000);
 		
 		waitExpectElement(abaConfiguraciones);
 		sleep(2000);
@@ -2642,13 +2645,13 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		menu2.click();
 		sleep(2000);
 		editar2.click();
-		sleep(2000);
+		sleep(6000);
 		
 
 		attributoNotToBeEmptyElement(nomeAN4, "value");
-	  	sleep(2000);
+	  	sleep(8000);
 	  	
-	
+		sleep(8000);
 		this.nuevoTexto = nomeAN4.getAttribute("value");
 		System.out.println(valor);
 		System.out.println(this.nuevoTexto);

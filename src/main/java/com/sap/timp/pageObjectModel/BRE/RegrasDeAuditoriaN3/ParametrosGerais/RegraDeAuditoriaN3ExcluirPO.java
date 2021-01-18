@@ -94,6 +94,8 @@ public class RegraDeAuditoriaN3ExcluirPO extends TestBaseEliel{
 		
 		double id1 = convertToDouble(idregra2);
 		double id2 = convertToDouble(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
 		if(id1 == id2)
@@ -118,6 +120,8 @@ public class RegraDeAuditoriaN3ExcluirPO extends TestBaseEliel{
 		menu1.click();
 		sleep(1000);
 		excluir.click();
+		sleep(2000);
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

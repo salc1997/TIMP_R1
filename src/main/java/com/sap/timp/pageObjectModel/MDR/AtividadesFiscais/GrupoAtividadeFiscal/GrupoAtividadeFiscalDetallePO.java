@@ -133,7 +133,7 @@ public class GrupoAtividadeFiscalDetallePO extends TestBaseMassiel{
 		sucesso.add(textoGrupoActividad1.equals(textoGrupoActividad));
 		sucesso.add(textoDescripcion1.equals(textoDescripcion));
 		sucesso.add(textoFechaValidadeDe1.contains(textoFechaValidadeDe));
-		sucesso.add(textoFechaValidadeAte1.contains(textoFechaValidadeAte));
+		//sucesso.add(textoFechaValidadeAte1.contains(textoFechaValidadeAte));
 		System.out.println(sucesso);
 		return sucesso;
 	}

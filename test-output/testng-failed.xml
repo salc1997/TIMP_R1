@@ -3,13 +3,86 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
+=======
+      <class name="com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/master
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar">
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/master
         <methods>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <include name="executar"/>
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/Yessy
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="excluir"/>
+>>>>>>> refs/remotes/origin/master
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="criar"/>
+=======
+=======
+          <include name="executarEditar"/>
+>>>>>>> refs/remotes/origin/Yessy
+        </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
+=======
+          <include name="criar"/>
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos">
+        <methods>
+>>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
           <include name="afterClass"/>
           <include name="criar"/>
-          <include name="beforeClass"/>
+>>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarCaminhos -->
+>>>>>>> refs/heads/Cristhian
+>>>>>>> refs/remotes/origin/master
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar -->
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

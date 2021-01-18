@@ -13,11 +13,17 @@ import com.timp.test.MDR.CodigoReceita.CodigoReceitaFiltrosAvan;
 import com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa;
 import com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluirEmMassa;
 import com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluirEmMassa;
+import com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa;
 import com.timp.test.MDR.EventosESocial.S2240CondiçõesAmbDoTrabFatDeRisco.S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID;
 import com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteExcluirEmMassa;
+import com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID;
 import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisDetalles;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisEditar;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluir;
 import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisFiltroId;
+import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar;
 import com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTFiltrosAvan;
 import com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa;
@@ -32,6 +38,7 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetod
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluirEmMasa;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa;
 import com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan;
+import com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialCriar;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialDetalhe;
 import com.timp.test.MDR.SaldoInicial.SaldoInicialEditar;
@@ -48,16 +55,38 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEd
 import com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASExcluirEnMasa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoExcluirEmMasa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATCriar;
 import com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDeContribucaoSocialApurada.TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFFiltrosAvan;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
-import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa;
+import com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoCriar;
+import com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes;
+import com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar;
+import com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoExcluir;
+import com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoExcluirEmMassa;
+import com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoVisualizar;
 import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa;
+import com.timp.test.TAA.Ajustes.AjusteCancelar;
 
 public class AutomacoesMDRKen extends TestBaseKenssy {
 
@@ -75,7 +104,10 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	IncentivosFiscaisCriar incentivosFiscaisCriar;
 	IncentivosFiscaisFiltroId incentivosFiscaisFiltroId;
 	IncentivosFiscaisExcluirEmMassa incentivosFiscaisExcluirEmMassa;
-	
+	IncentivosFiscaisDetalles incentivosFiscaisDetalles;
+	IncentivosFiscaisVisualizar incentivosFiscaisVisualizar;
+	IncentivosFiscaisEditar incentivosFiscaisEditar;
+	IncentivosFiscaisExcluir incentivosFiscaisExcluir;
 	//SaldoInicialCriar > SaldoInicialCriar
 	SaldoInicialCriar saldoInicialCriar;
 	SaldoInicialEditar saldoInicialEditar;
@@ -98,6 +130,13 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	CompatibilidadeEntreFPASExcluir compatibilidadeEntreFPASExcluir;
 	CompatibilidadeEntreFPASExcluirEnMasa compatibilidadeEntreFPASExcluirEnMasa;
 	
+	
+	//Tabelas de Apoio E-SOCIAL	> Tabela 23 - Fatores de Risco
+		FatoresDeRiscoCriar fatoresDeRiscoCriar;
+		FatoresDeRiscoEditar fatoresDeRiscoEditar;
+		FactoresDeRiscoExcluir factoresDeRiscoExcluir;
+		FactoresDeRiscoVisualizar factoresDeRiscoVisualizar;
+		FactoresDeRiscoExcluirMassa factoresDeRiscoExcluirMassa;
 	//Thin Capitalization > Empréstimos
 	EmprestimosCriar emprestimosCriar;
 	EmprestimosEditar emprestimosEditar;
@@ -106,22 +145,43 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	
 		//ICMS-ST Transporte
 		ICMSSTTransporteExcluirEmMassa iCMSSTTransporteExcluirEmMassa;
-		
+		ICMSSTTransporteFiltroID icmsstTransporteFiltroID;
 		
 		//Determinação de Relevância de Tarefa por Motivo de Reabertura	Determinação de Relevância por Motivo
 		DeterminacionRelevanciaPorMotivoExcluirEmMassa determinacionRelevanciaPorMotivoExcluirEmMassa;
 		
 		
 		//Taxas de Atualização	Alíquotas de Taxa de Atualização
-		AliquotasDeTaxaDeActualizacaoExcluirEmMassa aliquotasDeTaxaDeActualizacaoExcluirEmMassa;
-		
+		AliquotaDeTaxaDeActualizacaoExcluirEmMassa aliquotasDeTaxaDeActualizacaoExcluirEmMassa;
+		AliquotaDeTaxaDeActualizacaoCriar aliquotaDeTaxaDeActualizacaoCriar;
+		AliquotaDeTaxaDeActualizacaoEditar aliquotaDeTaxaDeActualizacaoEditar;
+		AliquotaDeTaxaDeActualizacaoDetalhes aliquotaDeTaxaDeActualizacaoDetalhes;
+		AliquotaDeTaxaDeActualizacaoExcluir aliquotaDeTaxaDeActualizacaoExcluir;
+		AliquotaDeTaxaDeActualizacaoVisualizar aliquotaDeTaxaDeActualizacaoVisualizar;
 		//Tabela de Apoio do SPED > 4.3.5 Tabela Código de Contribuição Social Apurada
 		TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa;
 		
 		//Eventos e-Social > S2240 - Condições Amb do Trab - Fat de Risco
 		S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID;
 		
-		
+		//Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários
+		ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa;
+		//SCANC > Ajuste de Transferencia
+		AjusteDeTransferenciaExcluirEmMasa ajusteDeTransferenciaExcluirEmMasa;
+		//Tabelas de Apoio E-SOCIAL	> Tabela 24 - Codificação de Ac. de Trab.
+		CodificaçãoDeAcDeTrabCriar codificaçãoDeAcDeTrabCriar;
+		CodificaçãoDeAcDeTrabEditar codificaçãoDeAcDeTrabEditar;
+		CodificaçãoDeAcDeTrabExcluiMassa codificaçãoDeAcDeTrabExcluiMassa;
+		CodificaçãoDeAcDeTrabExcluir codificaçãoDeAcDeTrabExcluir;
+		CodificaçãoDeAcDeTrabVisualizar codificaçãoDeAcDeTrabVisualizar;
+		//Tabelas de Apoio E-SOCIAL	> Tabela 27 - Códigos de Lotação.
+		CodigosDeLotacaoCriar codigosDeLotacaoCriar;
+		CodigosDeLotacaoEditar codigosDeLotacaoEditar;
+		CodigosDeLotacaoVisualizar codigosDeLotacaoVisualizar;
+		CodigosDeLotacaoExcluir codigosDeLotacaoExcluir;
+		CodigosDeLotacaoExcluirEmMasa codigosDeLotacaoExcluirEmMasa;
+		//Tabelas de Apoio E-SOCIAL	> Tabela 28 - Dados de RAT
+		DadosDeRATCriar dadosDeRATCriar;
 	@Test(priority = 0)
 	public void saldosCriar() {
 		System.out.println(
@@ -190,6 +250,61 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		incentivosFiscaisExcluirEmMassa.excluirEmMassa();
 		incentivosFiscaisExcluirEmMassa.afterClass();
 	}
+	
+
+	@Test(priority = 5)
+	public void incentivosFiscaisEditar() {
+		incentivosFiscaisEditar = new IncentivosFiscaisEditar();
+		incentivosFiscaisEditar.beforeClass();
+		incentivosFiscaisEditar.login();
+		incentivosFiscaisEditar.acessarMDR();
+		incentivosFiscaisEditar.editar();
+		incentivosFiscaisEditar.afterClass();
+	}
+	
+	@Test(priority = 5)
+	public void incentivosFiscaisDetalles() {
+		incentivosFiscaisDetalles = new IncentivosFiscaisDetalles();
+		incentivosFiscaisDetalles.beforeClass();
+		incentivosFiscaisDetalles.ingresar();
+		incentivosFiscaisDetalles.ingresarMDR();
+		incentivosFiscaisDetalles.detalhes();
+		incentivosFiscaisDetalles.afterClass();
+	}
+	
+	@Test(priority = 6)
+	public void incentivosFiscaisVisualizar() {
+		incentivosFiscaisVisualizar = new IncentivosFiscaisVisualizar();
+		incentivosFiscaisVisualizar.beforeClass();
+		incentivosFiscaisVisualizar.ingresar();
+		incentivosFiscaisVisualizar.ingresarMDR();
+		incentivosFiscaisVisualizar.visualizar();
+		incentivosFiscaisVisualizar.afterClass();
+	}
+	
+	
+	@Test(priority = 6)
+	public void incentivosFiscaisFiltroId() {
+		incentivosFiscaisFiltroId = new IncentivosFiscaisFiltroId();
+		incentivosFiscaisFiltroId.beforeClass();
+		incentivosFiscaisFiltroId.login();
+		incentivosFiscaisFiltroId.acessarMDR();
+		incentivosFiscaisFiltroId.FiltrarIncentivosFiscaisId();
+		incentivosFiscaisFiltroId.afterClass();
+	}
+	
+	
+	@Test(priority = 6)
+	public void incentivosFiscaisExcluir() {
+		incentivosFiscaisExcluir = new IncentivosFiscaisExcluir();
+		incentivosFiscaisExcluir.beforeClass();
+		incentivosFiscaisExcluir.ingresar();
+		incentivosFiscaisExcluir.ingresarMDR();
+		incentivosFiscaisExcluir.Excluir();
+		incentivosFiscaisExcluir.afterClass();
+	}
+	
+	
 	
 	@Test(priority = 6)
 	public void saldoInicialCriar() {
@@ -353,6 +468,16 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	}
 	
 	@Test(priority = 21)
+	public void compatibilidadeEntreFPASExcluirEnMasa() {
+		compatibilidadeEntreFPASExcluirEnMasa = new CompatibilidadeEntreFPASExcluirEnMasa();
+		compatibilidadeEntreFPASExcluirEnMasa.beforeClass();
+		compatibilidadeEntreFPASExcluirEnMasa.ingresar();
+		compatibilidadeEntreFPASExcluirEnMasa.mdrEntrar();
+		compatibilidadeEntreFPASExcluirEnMasa.excluirEnMasaCompatibilidadeEntreFPAS();
+		compatibilidadeEntreFPASExcluirEnMasa.afterClass();
+	}
+	
+	@Test(priority = 21)
 	public void emprestimosCriar() {
 		System.out.println(
 				"-------------------Thin Capitalization	> Empréstimos-------------------------");
@@ -408,6 +533,16 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		iCMSSTTransporteExcluirEmMassa.afterClass();
 	}
 	
+	@Test(priority = 26)
+	public void icmsstTransporteFiltroID() {
+		icmsstTransporteFiltroID = new ICMSSTTransporteFiltroID();
+		icmsstTransporteFiltroID.beforeClass();
+		icmsstTransporteFiltroID.login();
+		icmsstTransporteFiltroID.acessarMDR();
+		icmsstTransporteFiltroID.filtro();
+		icmsstTransporteFiltroID.afterClass();
+	}
+	
 	
 	//ESPACIO PARA LOS ANTERIORES 
 	// 31-36
@@ -428,7 +563,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void aliquotasDeTaxaDeActualizacaoExcluirEmMassa() {
 		System.out.println(
 				"------Taxas de Atualização > Alíquotas de Taxa de Atualização----------");
-		aliquotasDeTaxaDeActualizacaoExcluirEmMassa = new AliquotasDeTaxaDeActualizacaoExcluirEmMassa();
+		aliquotasDeTaxaDeActualizacaoExcluirEmMassa = new AliquotaDeTaxaDeActualizacaoExcluirEmMassa();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.beforeClass();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.ingresar();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.mdrEntrar();
@@ -450,6 +585,18 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	}
 
 	@Test(priority = 45)
+	public void contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa() {
+		System.out.println(
+				"------Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários----------");
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa = new ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.beforeClass();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.excluirEmMassa();
+		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.afterClass();
+	}
+	
+	@Test(priority = 46)
 	public void s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID() {
 		System.out.println(
 				"------Eventos e-Social > S2240 - Condições Amb do Trab - Fat de Risco----------");
@@ -460,5 +607,251 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.filtroPorId();
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.afterClass();
 	}
-		
+	
+	//SCANC > Ajuste de Transferencia
+	
+	@Test(priority = 47)
+	public void ajusteDeTransferenciaExcluirEmMasa() {
+		System.out.println(
+				"------SCANC > Ajuste de Transferencia----------");
+		ajusteDeTransferenciaExcluirEmMasa = new AjusteDeTransferenciaExcluirEmMasa();
+		ajusteDeTransferenciaExcluirEmMasa.beforeClass();
+		ajusteDeTransferenciaExcluirEmMasa.login();
+		ajusteDeTransferenciaExcluirEmMasa.acessarMDR();
+		ajusteDeTransferenciaExcluirEmMasa.excluir();
+		ajusteDeTransferenciaExcluirEmMasa.afterClass();
+	}
+	
+	//Tabelas de Apoio E-SOCIAL	> Tabela 23 - Fatores de Risco
+	
+	@Test(priority = 48)
+	public void fatoresDeRiscoCriar() {
+		System.out.println(
+				"------Tabelas de Apoio E-SOCIAL	> Tabela 23 - Fatores de Risco----------");
+		fatoresDeRiscoCriar = new FatoresDeRiscoCriar();
+		fatoresDeRiscoCriar.beforeClass();
+		fatoresDeRiscoCriar.login();
+		fatoresDeRiscoCriar.acessarMDR();
+		fatoresDeRiscoCriar.criar();
+		fatoresDeRiscoCriar.afterClass();
+	}
+	
+	
+	
+	@Test(priority = 49)
+	public void fatoresDeRiscoEditar() {
+		fatoresDeRiscoEditar = new FatoresDeRiscoEditar();
+		fatoresDeRiscoEditar.beforeClass();
+		fatoresDeRiscoEditar.login();
+		fatoresDeRiscoEditar.acessarMDR();
+		fatoresDeRiscoEditar.editar();
+		fatoresDeRiscoEditar.afterClass();
+	}
+	
+	@Test(priority = 50)
+	public void factoresDeRiscoVisualizar() {
+		factoresDeRiscoVisualizar = new FactoresDeRiscoVisualizar();
+		factoresDeRiscoVisualizar.beforeClass();
+		factoresDeRiscoVisualizar.login();
+		factoresDeRiscoVisualizar.acessarMDR();
+		factoresDeRiscoVisualizar.visualizar();
+		factoresDeRiscoVisualizar.afterClass();
+	}
+	
+	@Test(priority = 51)
+	public void factoresDeRiscoExcluir() {
+		factoresDeRiscoExcluir = new FactoresDeRiscoExcluir();
+		factoresDeRiscoExcluir.beforeClass();
+		factoresDeRiscoExcluir.login();
+		factoresDeRiscoExcluir.acessarMDR();
+		factoresDeRiscoExcluir.excluirr();
+		factoresDeRiscoExcluir.afterClass();
+	}
+	
+	@Test(priority = 52)
+	public void factoresDeRiscoExcluirMassa() {
+		factoresDeRiscoExcluirMassa = new FactoresDeRiscoExcluirMassa();
+		factoresDeRiscoExcluirMassa.beforeClass();
+		factoresDeRiscoExcluirMassa.login();
+		factoresDeRiscoExcluirMassa.acessarMDR();
+		factoresDeRiscoExcluirMassa.criar();
+		factoresDeRiscoExcluirMassa.afterClass();
+	}
+	
+	//Tabelas de Apoio E-SOCIAL	> Tabela 24 - Codificação de Ac. de Trab.
+	
+	@Test(priority = 53)
+	public void codificaçãoDeAcDeTrabCriar() {
+		System.out.println(
+				"------Tabelas de Apoio E-SOCIAL	> Tabela 24 - Codificação de Ac. de Trab.----------");
+		codificaçãoDeAcDeTrabCriar = new CodificaçãoDeAcDeTrabCriar();
+		codificaçãoDeAcDeTrabCriar.beforeClass();
+		codificaçãoDeAcDeTrabCriar.login();
+		codificaçãoDeAcDeTrabCriar.acessarMDR();
+		codificaçãoDeAcDeTrabCriar.criar();
+		codificaçãoDeAcDeTrabCriar.afterClass();
+	}
+	
+	@Test(priority = 54)
+	public void codificaçãoDeAcDeTrabEditar() {
+		codificaçãoDeAcDeTrabEditar = new CodificaçãoDeAcDeTrabEditar();
+		codificaçãoDeAcDeTrabEditar.beforeClass();
+		codificaçãoDeAcDeTrabEditar.login();
+		codificaçãoDeAcDeTrabEditar.acessarMDR();
+		codificaçãoDeAcDeTrabEditar.editar();
+		codificaçãoDeAcDeTrabEditar.afterClass();
+	}
+	
+	@Test(priority = 55)
+	public void codificaçãoDeAcDeTrabVisualizar() {
+		codificaçãoDeAcDeTrabVisualizar = new CodificaçãoDeAcDeTrabVisualizar();
+		codificaçãoDeAcDeTrabVisualizar.beforeClass();
+		codificaçãoDeAcDeTrabVisualizar.login();
+		codificaçãoDeAcDeTrabVisualizar.acessarMDR();
+		codificaçãoDeAcDeTrabVisualizar.visualizar();
+		codificaçãoDeAcDeTrabVisualizar.afterClass();
+	}
+	
+	@Test(priority = 56)
+	public void codificaçãoDeAcDeTrabExcluir() {
+		codificaçãoDeAcDeTrabExcluir = new CodificaçãoDeAcDeTrabExcluir();
+		codificaçãoDeAcDeTrabExcluir.beforeClass();
+		codificaçãoDeAcDeTrabExcluir.login();
+		codificaçãoDeAcDeTrabExcluir.acessarMDR();
+		codificaçãoDeAcDeTrabExcluir.excluirr();
+		codificaçãoDeAcDeTrabExcluir.afterClass();
+	}
+	
+	@Test(priority = 57)
+	public void codificaçãoDeAcDeTrabExcluiMassa() {
+		codificaçãoDeAcDeTrabExcluiMassa = new CodificaçãoDeAcDeTrabExcluiMassa();
+		codificaçãoDeAcDeTrabExcluiMassa.beforeClass();
+		codificaçãoDeAcDeTrabExcluiMassa.login();
+		codificaçãoDeAcDeTrabExcluiMassa.acessarMDR();
+		codificaçãoDeAcDeTrabExcluiMassa.criar();
+		codificaçãoDeAcDeTrabExcluiMassa.afterClass();
+	}
+	
+	//Tabelas de Apoio E-SOCIAL	> Tabela 27 - Códigos de Lotação.
+	
+	@Test(priority = 58)
+	public void codigosDeLotacaoCriar() {
+		System.out.println(
+				"------Tabelas de Apoio E-SOCIAL	> Tabela 27 - Códigos de Lotação.----------");
+		codigosDeLotacaoCriar = new CodigosDeLotacaoCriar();
+		codigosDeLotacaoCriar.beforeClass();
+		codigosDeLotacaoCriar.login();
+		codigosDeLotacaoCriar.acessarMDR();
+		codigosDeLotacaoCriar.criar();
+		codigosDeLotacaoCriar.afterClass();
+	}
+	
+	@Test(priority = 59)
+	public void codigosDeLotacaoEditar() {
+		codigosDeLotacaoEditar = new CodigosDeLotacaoEditar();
+		codigosDeLotacaoEditar.beforeClass();
+		codigosDeLotacaoEditar.login();
+		codigosDeLotacaoEditar.acessarMDR();
+		codigosDeLotacaoEditar.editar();
+		codigosDeLotacaoEditar.afterClass();
+	}
+	
+	@Test(priority = 60)
+	public void codigosDeLotacaoVisualizar() {
+		codigosDeLotacaoVisualizar = new CodigosDeLotacaoVisualizar();
+		codigosDeLotacaoVisualizar.beforeClass();
+		codigosDeLotacaoVisualizar.login();
+		codigosDeLotacaoVisualizar.acessarMDR();
+		codigosDeLotacaoVisualizar.visualizar();
+		codigosDeLotacaoVisualizar.afterClass();
+	}
+	
+	@Test(priority = 61)
+	public void codigosDeLotacaoExcluir() {
+		codigosDeLotacaoExcluir = new CodigosDeLotacaoExcluir();
+		codigosDeLotacaoExcluir.beforeClass();
+		codigosDeLotacaoExcluir.login();
+		codigosDeLotacaoExcluir.acessarMDR();
+		codigosDeLotacaoExcluir.excluir();
+		codigosDeLotacaoExcluir.afterClass();
+	}
+	
+	@Test(priority = 62)
+	public void codigosDeLotacaoExcluirEmMasa() {
+		codigosDeLotacaoExcluirEmMasa = new CodigosDeLotacaoExcluirEmMasa();
+		codigosDeLotacaoExcluirEmMasa.beforeClass();
+		codigosDeLotacaoExcluirEmMasa.login();
+		codigosDeLotacaoExcluirEmMasa.acessarMDR();
+		codigosDeLotacaoExcluirEmMasa.excluir();
+		codigosDeLotacaoExcluirEmMasa.afterClass();
+	}
+	
+	//Tabelas de Apoio E-SOCIAL	> Tabela 28 - Dados de RAT
+	
+	@Test(priority = 63)
+	public void dadosDeRATCriar() {
+		System.out.println(
+				"------Tabelas de Apoio E-SOCIAL	> Tabela 28 - Dados de RAT.----------");
+		dadosDeRATCriar = new DadosDeRATCriar();
+		dadosDeRATCriar.beforeClass();
+		dadosDeRATCriar.login();
+		dadosDeRATCriar.acessarMDR();
+		dadosDeRATCriar.criar();
+		dadosDeRATCriar.afterClass();
+	}
+	//Taxas de Atualização	Alíquotas de Taxa de Atualização
+	@Test(priority = 64)
+	public void aliquotaDeTaxaDeActualizacaoCriar() {
+		System.out.println(
+				"------Taxas de Atualização	Alíquotas de Taxa de Atualização.----------");
+		aliquotaDeTaxaDeActualizacaoCriar = new AliquotaDeTaxaDeActualizacaoCriar();
+		aliquotaDeTaxaDeActualizacaoCriar.beforeClass();
+		aliquotaDeTaxaDeActualizacaoCriar.login();
+		aliquotaDeTaxaDeActualizacaoCriar.acessarMDR();
+		aliquotaDeTaxaDeActualizacaoCriar.criar();
+		aliquotaDeTaxaDeActualizacaoCriar.afterClass();
+	}
+	
+	
+	@Test(priority = 65)
+	public void aliquotaDeTaxaDeActualizacaoEditar() {
+		aliquotaDeTaxaDeActualizacaoEditar = new AliquotaDeTaxaDeActualizacaoEditar();
+		aliquotaDeTaxaDeActualizacaoEditar.beforeClass();
+		aliquotaDeTaxaDeActualizacaoEditar.login();
+		aliquotaDeTaxaDeActualizacaoEditar.acessarMDR();
+		aliquotaDeTaxaDeActualizacaoEditar.editar();
+		aliquotaDeTaxaDeActualizacaoEditar.afterClass();
+	}
+	
+	
+	@Test(priority = 66)
+	public void aliquotaDeTaxaDeActualizacaoDetalhes() {
+		aliquotaDeTaxaDeActualizacaoDetalhes = new AliquotaDeTaxaDeActualizacaoDetalhes();
+		aliquotaDeTaxaDeActualizacaoDetalhes.beforeClass();
+		aliquotaDeTaxaDeActualizacaoDetalhes.login();
+		aliquotaDeTaxaDeActualizacaoDetalhes.acessarMDR();
+		aliquotaDeTaxaDeActualizacaoDetalhes.detalhes();
+		aliquotaDeTaxaDeActualizacaoDetalhes.afterClass();
+	}
+	
+	@Test(priority = 67)
+	public void aliquotaDeTaxaDeActualizacaoVisualizar() {
+		aliquotaDeTaxaDeActualizacaoVisualizar = new AliquotaDeTaxaDeActualizacaoVisualizar();
+		aliquotaDeTaxaDeActualizacaoVisualizar.beforeClass();
+		aliquotaDeTaxaDeActualizacaoVisualizar.login();
+		aliquotaDeTaxaDeActualizacaoVisualizar.acessarMDR();
+		aliquotaDeTaxaDeActualizacaoVisualizar.visualizar();
+		aliquotaDeTaxaDeActualizacaoVisualizar.afterClass();
+	}
+	
+	@Test(priority = 68)
+	public void aliquotaDeTaxaDeActualizacaoExcluir() {
+		aliquotaDeTaxaDeActualizacaoExcluir = new AliquotaDeTaxaDeActualizacaoExcluir();
+		aliquotaDeTaxaDeActualizacaoExcluir.beforeClass();
+		aliquotaDeTaxaDeActualizacaoExcluir.login();
+		aliquotaDeTaxaDeActualizacaoExcluir.acessarMDR();
+		aliquotaDeTaxaDeActualizacaoExcluir.excluirr();
+		aliquotaDeTaxaDeActualizacaoExcluir.afterClass();
+	}
+	
 }

@@ -14,6 +14,7 @@ import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.Clas
 import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir;
+import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaCriar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaDetalhes;
@@ -79,6 +80,7 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.Atribuica
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMDetalhes;
@@ -99,10 +101,6 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeO
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaCriar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaDetalhes;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitaExcluir;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaDeCodigosDeReceitasExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFEditar;
@@ -116,10 +114,17 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeA
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluir;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPVisualizar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaCriar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitasEditar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitasVisualizar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaDeCodigosDeReceitasExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroVisualizar;
 
 public class AutomacoesMDR3 extends TestBaseSteven {
@@ -133,7 +138,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	ClassificaçaoDeContribuintesDoIPIVisualizar classificaçaoDeContribuintesDoIPIVisualizar;
 
 	// Tabelas de Apoio do Sped > Código de Ajustes Contribuições de Créditos
-
+	
+	CodigoAjustesContribuiçoesCreditosEditar codigoAjustesContribuiçoesCreditosEditar;
 	CodigoAjustesContribuiçaoCreditosCriar codigoAjustesContribuiçaoCreditosCriar;
 	CodigoAjustesContribuiçaoCreditosExcluir codigoAjustesContribuiçaoCreditosExcluir;
 	CodigoAjustesContribuiçoesCreditosExcluirEmMassa codigoAjustesContribuiçoesCreditosExcluirEmMassa;
@@ -239,7 +245,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	AtribuicaoMunicipioEstadoEditar atribuicaoMunicipioEstadoEditar;
 	AtribuicaoMunicipioEstadoExcluir atribuicaoMunicipioEstadoExcluir;
 	AtribuicaoMunicipioEstadoVisualizar atribuicaoMunicipioEstadoVisualizar;
-	
+	AtribuicaoMunicipioEstadoExcluirEmMassa atribuicaoMunicipioEstadoExcluirEmMassa;
+
 //Tabelas Complementares para Obrigações Acessórias > Código de Motivos de Ajustes
 	// 
 
@@ -279,6 +286,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	TabelaCodigoReceitaDetalhes tabelaCodigoReceitaDetalhes;
 	TabelaCodigoReceitaExcluir tabelaCodigoReceitaExcluir;
 	TabelaDeCodigosDeReceitasExcluirEmMassa tabelaDeCodigosDeReceitasExcluirEmMassa;
+	TabelaCodigoReceitasEditar tabelaCodigoReceitasEditar;
+	TabelaCodigoReceitasVisualizar tabelaCodigoReceitasVisualizar;
 
 	// Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para
 	// DIRF
@@ -308,7 +317,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 	TabelaDeCodigoEClasseParaQuadroEditar tabelaDeCodigoEClasseParaQuadroEditar;
 	TabelaDeCodigoEClasseParaQuadroExcluir tabelaDeCodigoEClasseParaQuadroExcluir;
 	TabelaDeCodigoEClasseParaQuadroVisualizar tabelaDeCodigoEClasseParaQuadroVisualizar;
-	
+	TabelaDeCodigoEClasseParaQuadroExcluirEmMassa tabelaDeCodigoEClasseParaQuadroExcluirEmMassa;
 
 	
 	
@@ -399,8 +408,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		codigoAjustesContribuiçaoCreditosCriar.afterClass();
 
 	}
-
+	
 	@Test(priority = 7)
+	public void codigoAjustesContribuiçoesCreditosEditar() {		
+		codigoAjustesContribuiçoesCreditosEditar = new CodigoAjustesContribuiçoesCreditosEditar();
+		codigoAjustesContribuiçoesCreditosEditar.beforeClass();
+		codigoAjustesContribuiçoesCreditosEditar.ingresar();
+		codigoAjustesContribuiçoesCreditosEditar.mdrEntrar();
+		codigoAjustesContribuiçoesCreditosEditar.editar();
+		codigoAjustesContribuiçoesCreditosEditar.afterClass();		
+	}
+
+	@Test(priority = 8)
 	public void codigoAjustesContribuiçaoCreditosExcluir() {
 
 		codigoAjustesContribuiçaoCreditosExcluir = new CodigoAjustesContribuiçaoCreditosExcluir();
@@ -412,7 +431,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		}
 	
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void codigoAjustesContribuiçoesCreditosExcluirEmMassa() {
 
 		codigoAjustesContribuiçoesCreditosExcluirEmMassa = new CodigoAjustesContribuiçoesCreditosExcluirEmMassa();
@@ -560,9 +579,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		codigoDeAjusteDaApuraçaoDoIPIExcluir.excluir();
 		codigoDeAjusteDaApuraçaoDoIPIExcluir.afterClass();
 
-		System.out.println(
-				"-------------------4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI Fin-------------------------");
-	}
+			}
 	
 	@Test(priority = 23)
 	public void codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa() {
@@ -1300,6 +1317,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		atribuicaoMunicipioEstadoDetalhes.afterClass();
 
 	}
+	
+	
 
 	@Test(priority = 82)
 	public void atribuicaoMunicipioEstadoExcluir() {
@@ -1310,6 +1329,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		atribuicaoMunicipioEstadoExcluir.acessarMDR();
 		atribuicaoMunicipioEstadoExcluir.excluir();
 		atribuicaoMunicipioEstadoExcluir.afterClass();
+
+		}
+	
+	@Test(priority = 83)
+	public void atribuicaoMunicipioEstadoExcluirEmMassa() {
+
+		atribuicaoMunicipioEstadoExcluirEmMassa = new AtribuicaoMunicipioEstadoExcluirEmMassa();
+		atribuicaoMunicipioEstadoExcluirEmMassa.beforeClass();
+		atribuicaoMunicipioEstadoExcluirEmMassa.login();
+		atribuicaoMunicipioEstadoExcluirEmMassa.acessarMDR();
+		atribuicaoMunicipioEstadoExcluirEmMassa.criar();
+		atribuicaoMunicipioEstadoExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Atribuição de Municípios por Estado / IBGE-------------------------");
@@ -1611,8 +1642,34 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		tabelaCodigoReceitaDetalhes.afterClass();
 
 	}
-
+	
 	@Test(priority = 110)
+	public void tabelaCodigoReceitasEditar() {
+
+		tabelaCodigoReceitasEditar = new TabelaCodigoReceitasEditar();
+		tabelaCodigoReceitasEditar.beforeClass();
+		tabelaCodigoReceitasEditar.login();
+		tabelaCodigoReceitasEditar.acessarMDR();
+		tabelaCodigoReceitasEditar.editar();
+		tabelaCodigoReceitasEditar.afterClass();
+
+	}
+	
+	@Test(priority = 111)
+	public void tabelaCodigoReceitasVisualizar() {
+
+		tabelaCodigoReceitasVisualizar = new TabelaCodigoReceitasVisualizar();
+		tabelaCodigoReceitasVisualizar.beforeClass();
+		tabelaCodigoReceitasVisualizar.login();
+		tabelaCodigoReceitasVisualizar.acessarMDR();
+		tabelaCodigoReceitasVisualizar.visualizar();
+		tabelaCodigoReceitasVisualizar.afterClass();
+
+	}
+	
+	
+
+	@Test(priority = 112)
 	public void tabelaCodigoReceitaExcluir() {
 
 		tabelaCodigoReceitaExcluir = new TabelaCodigoReceitaExcluir();
@@ -1625,7 +1682,7 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		
 	}
 	
-	@Test(priority = 110)
+	@Test(priority = 113)
 	public void tabelaDeCodigosDeReceitasExcluirEmMassa() {
 
 		tabelaDeCodigosDeReceitasExcluirEmMassa= new TabelaDeCodigosDeReceitasExcluirEmMassa();
@@ -1869,6 +1926,9 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		tabelaDeCodigoEClasseParaQuadroDetalhes.afterClass();
 
 	}
+	
+	
+	
 
 	@Test(priority = 130)
 	public void tabelaDeCodigoEClasseParaQuadroExcluir() {
@@ -1879,6 +1939,18 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 		tabelaDeCodigoEClasseParaQuadroExcluir.acessarMDR();
 		tabelaDeCodigoEClasseParaQuadroExcluir.excluir();
 		tabelaDeCodigoEClasseParaQuadroExcluir.afterClass();
+
+			}
+	
+	@Test(priority = 131)
+	public void tabelaDeCodigoEClasseParaQuadroExcluirEmMassa() {
+
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa = new TabelaDeCodigoEClasseParaQuadroExcluirEmMassa();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.beforeClass();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.login();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.acessarMDR();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.criar();
+		tabelaDeCodigoEClasseParaQuadroExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"-------------------Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro Fin-------------------------");

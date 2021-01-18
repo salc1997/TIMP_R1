@@ -87,6 +87,7 @@ import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.Val
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICEditar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluir;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICExcluirEmMasa;
+import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPIC.ValoresParaMetodoPICFiltroID;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLCriar;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLDetalhes;
 import com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar;
@@ -103,6 +104,7 @@ import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar;
 import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir;
+import com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirEmMasa;
 import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoCriar;
 import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoEditar;
 import com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir;
@@ -146,6 +148,12 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas.TabelaReceitasPermitidasCriar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas.TabelaReceitasPermitidasDetalhes;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas.TabelaReceitasPermitidasEditar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas.TabelaReceitasPermitidasExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas.TabelaReceitasPermitidasExcluirEmMassa;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDaReceitasPermitidas.TabelaReceitasPermitidasVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasEditar;
@@ -180,6 +188,11 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeI
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesExcluir;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesVisualizar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros.TabelaLogradouroCriar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros.TabelaLogradouroEditar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros.TabelaLogradouroExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros.TabelaLogradouroVisualizar;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros.TabelaLograduroDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosEditar;
@@ -188,13 +201,10 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeO
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosDetalhes;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosExcluir;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosExcluirEmMassa;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroCriar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroEditar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluir;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroVisualizar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLograduroDetalhes;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGECriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaMunicipiosIBGE.TabelaMunicipioIBGEEditar;
@@ -210,16 +220,13 @@ import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaRec
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoDetalhes;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoVisualizar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasCriar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasDetalhes;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasEditar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluir;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluirEmMassa;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasVisualizar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosCriar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosDetalhes;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluir;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar;
 import com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilCriar;
 import com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilExcluir;
 import com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarCriar;
@@ -298,6 +305,8 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaDeProdutosDetalhes tabelaDeProdutosDetalhes;
 	TabelaDeProdutosExcluir tabelaDeProdutosExcluir;
 	TabelaDeProdutosExcluirEmMassa tabelaDeProdutosExcluirEmMassa;
+	TabelaDeProdutosEditar tabelaDeProdutosEditar;
+	TabelaDeProdutosVisualizar tabelaDeProdutosVisualizar;
 
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Logradouros
 	TabelaLogradouroCriar tabelaLogradouroCriar;
@@ -329,6 +338,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaReceitasCreditoFiscalAntecipadoDetalhes tabelaReceitasCreditoFiscalAntecipadoDetalhes;
 	TabelaReceitasCreditoFiscalAntecipadoVisualizar tabelaReceitasCreditoFiscalAntecipadoVisualizar;
 	TabelaReceitasCreditoFiscalAntecipadoExcluir tabelaReceitasCreditoFiscalAntecipadoExcluir;
+	TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa;
 
 	// Tabelas Complementares para obrigaçoes acessorias >Tabela da Receitas
 	// permitidas
@@ -339,11 +349,14 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	TabelaReceitasPermitidasVisualizar tabelaReceitasPermitidasVisualizar;
 	TabelaReceitasPermitidasExcluirEmMassa tabelaReceitasPermitidasExcluirEmMassa;
 
+
 	// Tabelas Complementares para obrigaçoes acessorias > Tabela de Serviços
 
 	TabelaServicosCriar tabelaServicosCriar;
 	TabelaServicosDetalhes tabelaServicosDetalhes;
 	TabelaServicosExcluir tabelaServicosExcluir;
+	TabelaServicosEditar tabelaServicosEditar;
+	TabelaServicosVisualizar tabelaServicosVisualizar;
 
 	// Tipo de Tributo Conta Contabil
 	TipoDeTributoContaContabilCriar tipoDeTributoContaContabilCriar;
@@ -439,7 +452,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ProcessosAdmJudiciaisEditar processosAdmJudiciaisEditar;
 	ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
 	ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
-
+	ProcessosAdmJudiciaisExcluirEmMasa processosAdmJudiciaisExcluirEmMasa;
 	//Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
 	DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
 	DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;
@@ -449,7 +462,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	DeterminacaoDeRelevanciaPorRegraExcluirEmMassa determinacaoDeRelevanciaPorRegraExcluirEmMassa;
 	
 
-	//Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CAP
+	//Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CAP
 	ValoresParaMetodoCAPCriar valoresParaMetodoCAPCriar;
 	ValoresParaMetodoCAPDetalhes valoresParaMetodoCAPDetalhes;
 	ValoresParaMetodoCAPEditar valoresParaMetodoCAPEditar;
@@ -487,7 +500,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoPICEditar valoresParaMetodoPICEditar;
 	ValoresParaMetodoPICExcluir valoresParaMetodoPICExcluir;
 	ValoresParaMetodoPICExcluirEmMasa valoresParaMetodoPICExcluirEmMasa;	
-
+	ValoresParaMetodoPICFiltroID valoresParaMetodoPICFiltroID;
 
 	//Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PRL
 	ValoresParaMetodoPRLCriar valoresParaMetodoPRLCriar;
@@ -496,14 +509,14 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ValoresParaMetodoPRLExcluir valoresParaMetodoPRLExcluir;
 	ValoresParaMetodoPRLFiltroID valoresParaMetodoPRLFiltroID;
 	ValoresParaMetodoPRLExcluirEmMasa valoresParaMetodoPRLExcluirEmMasa;
-
+	
 	//Siscoserv > Pais/Moeda
 	PaisMoedaCriar paisMoedaCriar;
 	PaisMoedaEditar paisMoedaEditar;
 	PaisMoedaDetalhes paisMoedaDetalhes;
 	PaisMoedaVisualizar paisMoedaVisualizar;
 	PaisMoedaExcluir paisMoedaExcluir;
-
+	
 	//Siscoserv > NBS
 	NBSCriar nbsCriar;
 	NBSEditar nbsEditar;
@@ -540,7 +553,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	RegistroRVSFiltroID registroRVSFiltroID;
 	RegistroRVSVisualizar registroRVSVisualizar;
 		
-	
+
 		
 	// --------------------------------------------------------------------------------------------------
 
@@ -1085,8 +1098,31 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaDeProdutosDetalhes.afterClass();
 
 	}
+	
 
 	@Test(priority = 44)
+	public void tabelaDeProdutosEditar() {
+		tabelaDeProdutosEditar = new TabelaDeProdutosEditar();
+		tabelaDeProdutosEditar.beforeClass();
+		tabelaDeProdutosEditar.login();
+		tabelaDeProdutosEditar.acessarMDR();
+		tabelaDeProdutosEditar.editar();
+		tabelaDeProdutosEditar.afterClass();
+		
+	}
+	
+	@Test(priority = 45)
+	public void tabelaDeProdutosVisualizar() {
+		tabelaDeProdutosVisualizar = new TabelaDeProdutosVisualizar();
+		tabelaDeProdutosVisualizar.beforeClass();
+		tabelaDeProdutosVisualizar.login();
+		tabelaDeProdutosVisualizar.acessarMDR();
+		tabelaDeProdutosVisualizar.visualizar();
+		tabelaDeProdutosVisualizar.afterClass();
+		
+	}
+
+	@Test(priority = 46)
 	public void tabelaDeProdutosExcluir() {
 		tabelaDeProdutosExcluir = new TabelaDeProdutosExcluir();
 		tabelaDeProdutosExcluir.beforeClass();
@@ -1097,7 +1133,9 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		
 	}
 	
-	@Test(priority = 46)
+	
+	
+	@Test(priority = 47)
 	public void tabelaDeProdutosExcluirEmMassa() {
 		tabelaDeProdutosExcluirEmMassa = new TabelaDeProdutosExcluirEmMassa();
 		tabelaDeProdutosExcluirEmMassa.beforeClass();
@@ -1369,6 +1407,8 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasCreditoFiscalAntecipadoDetalhes.afterClass();
 
 	}
+	
+	
 
 	@Test(priority = 70)
 	public void tabelaReceitasCreditoFiscalAntecipadoExcluir() {
@@ -1379,6 +1419,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.acessarMDR();
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.excluir();
 		tabelaReceitasCreditoFiscalAntecipadoExcluir.afterClass();
+
+		}
+	
+	@Test(priority = 71)
+	public void tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa() {
+
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa = new TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.beforeClass();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.login();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.acessarMDR();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.criar();
+		tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa.afterClass();
 
 		System.out.println(
 				"------------------- Tabelas Complementares para obrigaçoes acessorias >Tabela de Receitas (Credito Fiscal Antecipado) Fin-------------------------");
@@ -1490,8 +1542,32 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		tabelaServicosDetalhes.afterClass();
 
 	}
-
+	
 	@Test(priority = 80)
+	public void tabelaServicosEditar() {
+
+		tabelaServicosEditar = new TabelaServicosEditar();
+		tabelaServicosEditar.beforeClass();
+		tabelaServicosEditar.login();
+		tabelaServicosEditar.acessarMDR();
+		tabelaServicosEditar.editar();
+		tabelaServicosEditar.afterClass();
+
+	}
+	
+	@Test(priority = 81)
+	public void tabelaServicosVisualizar() {
+
+		tabelaServicosVisualizar = new TabelaServicosVisualizar();
+		tabelaServicosVisualizar.beforeClass();
+		tabelaServicosVisualizar.login();
+		tabelaServicosVisualizar.acessarMDR();
+		tabelaServicosVisualizar.visualizar();
+		tabelaServicosVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 82)
 	public void tabelaServicosExcluir() {
 
 		tabelaServicosExcluir = new TabelaServicosExcluir();
@@ -1738,8 +1814,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		modeloDeApuracaoTPFiltroId.afterClass();
 
 	}
-
+	
 	@Test(priority = 113)
+	public void modeloDeApuracaoTPExcluirEnMasa() {
+
+		modeloDeApuracaoTPExcluirEnMasa = new ModeloDeApuracaoTPExcluirEnMasa();
+		modeloDeApuracaoTPExcluirEnMasa.beforeClass();
+		modeloDeApuracaoTPExcluirEnMasa.ingresar();
+		modeloDeApuracaoTPExcluirEnMasa.mdrEntrar();
+		modeloDeApuracaoTPExcluirEnMasa.excluirEnMasaModeloApuracaoTP();
+		modeloDeApuracaoTPExcluirEnMasa.afterClass();
+
+	}
+
+	@Test(priority = 114)
 	public void modeloDeApuracaoTPExcluir() {
 
 		modeloDeApuracaoTPExcluir = new ModeloDeApuracaoTPExcluir();
@@ -2297,8 +2385,20 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		processosAdmJudiciaisDetalhes.afterClass();
 
 	}
+	
+	@Test(priority = 165)
+	public void processosAdmJudiciaisExcluirEmMasa() {
 
-	@Test(priority = 166)
+		processosAdmJudiciaisExcluirEmMasa = new ProcessosAdmJudiciaisExcluirEmMasa();
+		processosAdmJudiciaisExcluirEmMasa.beforeClass();
+		processosAdmJudiciaisExcluirEmMasa.login();
+		processosAdmJudiciaisExcluirEmMasa.acessarMDR();
+		processosAdmJudiciaisExcluirEmMasa.excluir();
+		processosAdmJudiciaisExcluirEmMasa.afterClass();
+
+	}
+
+	@Test(priority = 167)
 	public void processosAdmJudiciaisExcluir() {
 
 		processosAdmJudiciaisExcluir = new ProcessosAdmJudiciaisExcluir();
@@ -2752,6 +2852,18 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 		}
 		
 		@Test(priority = 208)
+		public void valoresParaMetodoPICFiltroID() {
+			
+			valoresParaMetodoPICFiltroID = new ValoresParaMetodoPICFiltroID();
+			valoresParaMetodoPICFiltroID.beforeClass();
+			valoresParaMetodoPICFiltroID.login();
+			valoresParaMetodoPICFiltroID.acessarMDR();
+			valoresParaMetodoPICFiltroID.filtro();
+			valoresParaMetodoPICFiltroID.afterClass();
+
+		}
+		
+		@Test(priority = 209)
 		public void valoresParaMetodoPICExcluirEmMasa() {
 			
 			 valoresParaMetodoPICExcluirEmMasa = new ValoresParaMetodoPICExcluirEmMasa();

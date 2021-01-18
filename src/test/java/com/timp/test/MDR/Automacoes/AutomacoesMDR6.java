@@ -9,6 +9,7 @@ import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeAct
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoCriarPO;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhes;
+import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorEditar;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluirEmMassa;
 import com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroID;
@@ -49,11 +50,13 @@ import com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoD
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluir;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluirMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspVisualizar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamientoDeAposEspExcluiMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir;
@@ -87,12 +90,16 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaVis
 import com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPCriar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPEditar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPVisualizar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar;
+import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar;
 import com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluirEmMassa;
@@ -102,10 +109,11 @@ import com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.Observaçõ
 import com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa;
 import com.timp.test.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosEditar;
-import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradouroExcluirEmMassa;
+import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros.TabelaLogradouroExcluirEmMassa;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa;
-import com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorID;
+import com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoPesquisaPorID;
 import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar;
+import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoDetalhes;
 import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoEditar;
 import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluir;
 import com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa;
@@ -128,13 +136,13 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			CategoriasDeTrabalhadoresEditar categoriasDeTrabalhadoresEditar;
 			CategoriasDeTrabalhadoresVisualizar categoriasDeTrabalhadoresVisualizar;
 			CategoriasDeTrabalhadoresExcluir categoriasDeTrabalhadoresExcluir;
-		
+			CategoriasDeTrabalhadoresExcluirMassa categoriasDeTrabalhadoresExcluirMassa;
 		// Tabela 02 - Financiamento De Apos Esp
 			FinanciamentoDeAposEspCriar financiamentoDeAposEspCriar;
 			FinanciamentoDeAposEspEditar financiamentoDeAposEspEditar;
 			FinanciamentoDeAposEspVisualizar financiamentoDeAposEspVisualizar;
 			FinanciamentoDeAposEspExcluir financiamentoDeAposEspExcluir;
-		
+			FinanciamientoDeAposEspExcluiMassa financiamientoDeAposEspExcluiMassa;
 		// Tabela 03 - Natureza Das Rubricas
 			NaturezaDasRubricasCriar naturezaDasRubricasCriar;
 			NaturezaDasRubricasEditar naturezaDasRubricasEditar;
@@ -196,6 +204,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			TaxasDeConversaoVisualizar taxasDeConversaoVisualizar;
 			TaxasDeConversaoExcluir taxasDeConversaoExcluir;
 			TaxasDeConversaoExcluirEmMassa taxasDeConversaoExcluirEmMassa;
+			TaxasDeConversaoDetalhes taxasDeConversaoDetalhes;
 			
 		//Thin Capitalization > Subcapitalizacao
 			SubcapitalizacaoCriar subcapitalizacaoCriar;
@@ -224,7 +233,10 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			AgenteCausadorDeAcidenteExcluirEmMassa agenteCausadorDeAcidenteExcluirEmMassa;
 			
 		//Tabela De Apoio E Social > Tabela 16  - SGDP
+			SGDPCriar sgdpCriar;
+			SGDPEditar sgdpEditar;
 			SGDPExcluir sGDPExcluir;
+			SGDPVisualizar sgdpVisualizar;
 			SGDPExcluirEmMassa sgdpExcluirEmMassa;
 		
 		//Rateio De Consorcio
@@ -243,7 +255,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			MapeamentoContabilExcluirEmMassa mapeamentoContabilExcluirEmMassa;
 			
 		//Taxas De Actualizacao > Aliquotas De Taxa De Atualizacao
-			AliquotasDeTaxaDeActualizacaoPesquisaPorID aliquotasDeTaxaDeActualizacaoPesquisaPorID;
+			AliquotaDeTaxaDeActualizacaoPesquisaPorID aliquotasDeTaxaDeActualizacaoPesquisaPorID;
 	
 		//Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
 			UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
@@ -296,7 +308,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			CodigoDeTreinamentoESimulacoesDeExerciciosEditar codigoDeTreinamentoESimulacoesDeExerciciosEditar;
 			CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar codigoDeTreinamentoESimulacoesDeExerciciosVisualizar;
 			CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa;
-		
+			CodigoDeTreinamentoESimulacoesDeExerciciosExcluir codigoDeTreinamentoESimulacoesDeExerciciosExcluir;
 		//Tabela De Apoio E Social Tabela28 - Dados De RAT
 			DadosDeRATExcluirEmMassa dadosDeRATExcluirEmMassa;
 			
@@ -319,6 +331,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 
 		//Atividades Para tributacao >Atividade De Tributacao X Fornecedor	
 			AtividadeDeTributacaoXFornecedorCriar atividadeDeTributacaoXFornecedorCriar;
+			AtividadeDeTributacaoXFornecedorEditar atividadeDeTributacaoXFornecedorEditar;
 			AtividadeDeTributacaoXFornecedorFiltroID atividadeDeTributacaoXFornecedorFiltroID;
 			AtividadeDeTributacaoXFornecedorDetalhes atividadeDeTributacaoXFornecedorDetalhes;
 			AtividadeDeTributacaoXFornecedorVisualizar atividadeDeTributacaoXFornecedorVisualizar;
@@ -353,6 +366,17 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			}
 			
 			@Test(priority = 2)
+			public void categoriasDeTrabalhadoresExcluirMassa() {
+				categoriasDeTrabalhadoresExcluirMassa = new CategoriasDeTrabalhadoresExcluirMassa();
+				categoriasDeTrabalhadoresExcluirMassa.beforeClass();
+				categoriasDeTrabalhadoresExcluirMassa.login();
+				categoriasDeTrabalhadoresExcluirMassa.acessarMDR();
+				categoriasDeTrabalhadoresExcluirMassa.criar();
+				categoriasDeTrabalhadoresExcluirMassa.afterClass();
+
+			}
+			
+			@Test(priority = 3)
 			public void categoriasDeTrabalhadoresVisualizar() {
 				categoriasDeTrabalhadoresVisualizar = new CategoriasDeTrabalhadoresVisualizar();
 				categoriasDeTrabalhadoresVisualizar.beforeClass();
@@ -364,7 +388,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			}
 			
 			
-			@Test(priority = 3)
+			@Test(priority = 4)
 			public void categoriasDeTrabalhadoresExcluir() {
 				categoriasDeTrabalhadoresExcluir = new CategoriasDeTrabalhadoresExcluir();
 				categoriasDeTrabalhadoresExcluir.beforeClass();
@@ -903,6 +927,16 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			}
 			
 			@Test(priority = 54)
+			public void taxasDeConversaoDetalhes() {
+				taxasDeConversaoDetalhes = new TaxasDeConversaoDetalhes();
+				taxasDeConversaoDetalhes.beforeClass();
+				taxasDeConversaoDetalhes.login();
+				taxasDeConversaoDetalhes.acessarMDR();
+				taxasDeConversaoDetalhes.detalhes();
+				taxasDeConversaoDetalhes.afterClass();
+			}
+			
+			@Test(priority = 55)
 			public void taxasDeConversaoExcluir() {
 				taxasDeConversaoExcluir = new TaxasDeConversaoExcluir();
 				taxasDeConversaoExcluir.beforeClass();
@@ -1081,31 +1115,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 
 			}
 			
-			//Tabela De Apoio E Social > Tabela 16  - SGDP
 			
-			@Test(priority = 73)
-			public void sgdpExcluir() {
-				System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP-------------------------");
-				sGDPExcluir = new SGDPExcluir();
-				sGDPExcluir.beforeClass();
-				sGDPExcluir.login();
-				sGDPExcluir.acessarMDR();
-				sGDPExcluir.excluir();
-				sGDPExcluir.afterClass();
-
-			}
-			
-			@Test(priority = 74)
-			public void sgdpExcluirEmMassa() {
-				
-				sgdpExcluirEmMassa = new SGDPExcluirEmMassa();
-				sgdpExcluirEmMassa.beforeClass();
-				sgdpExcluirEmMassa.login();
-				sgdpExcluirEmMassa.acessarMDR();
-				sgdpExcluirEmMassa.criar();
-				sgdpExcluirEmMassa.afterClass();
-				System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP FIN-------------------------");
-			}
 			
 		//74
 		//Rateio De Consorcio
@@ -1179,7 +1189,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			@Test(priority = 79)
 			public void aliquotasDeTaxaDeActualizacaoPesquisaPorID() {
 				System.out.println("-------------------Parametros Contabilizacao Mapeamento Contabil -------------------------");
-				aliquotasDeTaxaDeActualizacaoPesquisaPorID = new AliquotasDeTaxaDeActualizacaoPesquisaPorID();
+				aliquotasDeTaxaDeActualizacaoPesquisaPorID = new AliquotaDeTaxaDeActualizacaoPesquisaPorID();
 				aliquotasDeTaxaDeActualizacaoPesquisaPorID.beforeClass();
 				aliquotasDeTaxaDeActualizacaoPesquisaPorID.login();
 				aliquotasDeTaxaDeActualizacaoPesquisaPorID.acessarMDR();
@@ -1444,6 +1454,17 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.Visualizar();
 				codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.afterClass();
 			}
+			
+
+			@Test(priority = 96)	
+			public void codigoDeTreinamentoESimulacoesDeExerciciosExcluir() {
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluir= new CodigoDeTreinamentoESimulacoesDeExerciciosExcluir();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluir.beforeClass();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluir.login();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluir.acessarMDR();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluir.excluir();
+				codigoDeTreinamentoESimulacoesDeExerciciosExcluir.afterClass();
+			}
 
 			@Test(priority = 96)	
 			public void codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa() {
@@ -1588,8 +1609,20 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorVisualizar.afterClass();
 			}
 			
-			
 			@Test(priority = 108)	
+			public void atividadeDeTributacaoXFornecedorEditar() {
+				atividadeDeTributacaoXFornecedorEditar = new AtividadeDeTributacaoXFornecedorEditar();
+				atividadeDeTributacaoXFornecedorEditar.beforeClass();
+				atividadeDeTributacaoXFornecedorEditar.login();
+				atividadeDeTributacaoXFornecedorEditar.acessarMDR();
+				atividadeDeTributacaoXFornecedorEditar.editar();
+				atividadeDeTributacaoXFornecedorEditar.afterClass();
+			}
+			
+			
+			
+			
+			@Test(priority = 109)	
 			public void atividadeDeTributacaoXFornecedorExcluir() {
 				atividadeDeTributacaoXFornecedorExcluir = new AtividadeDeTributacaoXFornecedorExcluir();
 				atividadeDeTributacaoXFornecedorExcluir.beforeClass();
@@ -1599,7 +1632,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorExcluir.afterClass();
 			}
 			
-			@Test(priority = 109)	
+			@Test(priority = 110)	
 			public void atividadeDeTributacaoXFornecedorExcluirEmMassa() {
 				atividadeDeTributacaoXFornecedorExcluirEmMassa = new AtividadeDeTributacaoXFornecedorExcluirEmMassa();
 				atividadeDeTributacaoXFornecedorExcluirEmMassa.beforeClass();
@@ -1609,6 +1642,69 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorExcluirEmMassa.afterClass();
 				System.out.println("-------------------Atividades Para tributacao >Atividade De Tributacao X Fornecedor Fim-------------------------");
 				
+			}
+			
+
+			//Tabela De Apoio E Social > Tabela 16  - SGDP
+			
+			
+			
+			@Test(priority = 111)
+			public void sgdpCriar() {
+				System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP-------------------------");
+				sgdpCriar = new SGDPCriar();
+				sgdpCriar.beforeClass();
+				sgdpCriar.login();
+				sgdpCriar.acessarMDR();
+				sgdpCriar.criar();
+				sgdpCriar.afterClass();
+
+			}
+			
+			
+			@Test(priority = 112)
+			public void sgdpEditar() {
+				sgdpEditar = new SGDPEditar();
+				sgdpEditar.beforeClass();
+				sgdpEditar.login();
+				sgdpEditar.acessarMDR();
+				sgdpEditar.editar();
+				sgdpEditar.afterClass();
+
+			}
+			
+			
+			@Test(priority = 113)
+			public void sgdpVisualizar() {
+				sgdpVisualizar = new SGDPVisualizar();
+				sgdpVisualizar.beforeClass();
+				sgdpVisualizar.login();
+				sgdpVisualizar.acessarMDR();
+				sgdpVisualizar.visualizar();
+				sgdpVisualizar.afterClass();
+
+			}
+			@Test(priority = 114)
+			public void sgdpExcluir() {
+				sGDPExcluir = new SGDPExcluir();
+				sGDPExcluir.beforeClass();
+				sGDPExcluir.login();
+				sGDPExcluir.acessarMDR();
+				sGDPExcluir.excluir();
+				sGDPExcluir.afterClass();
+
+			}
+			
+			@Test(priority = 115)
+			public void sgdpExcluirEmMassa() {
+				
+				sgdpExcluirEmMassa = new SGDPExcluirEmMassa();
+				sgdpExcluirEmMassa.beforeClass();
+				sgdpExcluirEmMassa.login();
+				sgdpExcluirEmMassa.acessarMDR();
+				sgdpExcluirEmMassa.criar();
+				sgdpExcluirEmMassa.afterClass();
+				System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP FIN-------------------------");
 			}
 			
 			

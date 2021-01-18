@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
+public class ConfiguracaoEExecucaoExecutarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
 	public WebElement bancoCreditoExtemporaneo;
 	
@@ -190,8 +191,9 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseFernando{
 		boolean sucesso = false;
 		
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoRegistroExecutado)) {
-			System.out.println("Registro executado correcctamente...");
-			idInserir4(idUltimoRegistroExecutados);
+			System.out.println("Registro executado correcctamente..."+ idUltimoRegistroExecutados);
+			idInserir3(idUltimoRegistroExecutados);
+			
 			sucesso = true;
 		}else {
 			System.out.println("No se executo el registro...");

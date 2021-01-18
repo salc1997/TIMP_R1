@@ -19,7 +19,7 @@ public class AcessarTPCPO extends TestBaseCristhian {
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-balanceConsolidation\"]")
 	public WebElement cadastro;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-balanceConsolidation\"]")
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-00\"]")
 	public WebElement mostrar;
 	
 
@@ -29,7 +29,7 @@ public class AcessarTPCPO extends TestBaseCristhian {
 	}
 
 	
-	public boolean acessarTCC() {
+	public boolean acessarTPC() {
 
 		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(1000);

@@ -950,9 +950,6 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseMassiel{
 		nomeAgrupamiento.sendKeys("Agrupamento 1");
 		sleep(2000);
 		
-		
-		
-		 
 	
 		// Add 5 seconds wait
 		sleep(5000);

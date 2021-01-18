@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
@@ -10,7 +11,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+>>>>>>> refs/remotes/origin/Yessy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,7 +42,11 @@
 =======
       <class name="com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,22 +65,25 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="excluir"/>
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
 =======
           <include name="criar"/>
 >>>>>>> refs/remotes/origin/Eliel
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
 =======
-=======
-          <include name="executarEditar"/>
 >>>>>>> refs/remotes/origin/Yessy
+          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,6 +164,9 @@
 =======
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

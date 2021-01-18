@@ -1,411 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results total="7" passed="6" failed="1" skipped="0">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="3" passed="3">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Eliel
-<testng-results total="3" passed="3" failed="0" skipped="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/heads/Cristhian
-<testng-results total="3" passed="2" failed="1" skipped="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Eliel
+<testng-results total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite started-at="2021-01-18T12:46:10Z" name="Default suite" finished-at="2021-01-18T12:51:51Z" duration-ms="340674">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="97177" started-at="2021-01-14T22:24:24Z" finished-at="2021-01-14T22:26:01Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite started-at="2021-01-15T15:17:07Z" name="Default suite" finished-at="2021-01-15T15:18:37Z" duration-ms="90603">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite started-at="2021-01-15T14:15:24Z" name="Default suite" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
-=======
-  <suite started-at="2021-01-15T16:39:26Z" name="Default suite" finished-at="2021-01-15T16:40:57Z" duration-ms="91048">
->>>>>>> refs/remotes/origin/Yessy
-=======
-  <suite started-at="2021-01-15T13:43:55Z" name="Default suite" finished-at="2021-01-15T13:46:46Z" duration-ms="170413">
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
-=======
-  <suite started-at="2021-01-18T06:23:42Z" name="Default suite" finished-at="2021-01-18T06:25:57Z" duration-ms="135032">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-  <suite started-at="2021-01-18T10:48:21Z" name="Default suite" finished-at="2021-01-18T10:55:05Z" duration-ms="403943">
->>>>>>> refs/heads/Cristhian
-=======
-  <suite started-at="2021-01-15T21:38:42Z" name="Default suite" finished-at="2021-01-15T21:40:50Z" duration-ms="127907">
->>>>>>> refs/heads/Fernando
-=======
-  <suite started-at="2021-01-18T14:50:47Z" name="Default suite" finished-at="2021-01-18T14:53:31Z" duration-ms="164615">
->>>>>>> refs/remotes/origin/Eliel
+  <suite started-at="2021-01-15T14:59:25Z" name="Default suite" finished-at="2021-01-18T16:39:51Z" duration-ms="265225394">
     <groups>
     </groups>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test started-at="2021-01-18T12:46:10Z" name="Default test" finished-at="2021-01-18T12:51:51Z" duration-ms="340674">
-      <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:46:10Z" name="beforeClass" finished-at="2021-01-18T09:46:27Z" duration-ms="16568" status="PASS">
-=======
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="97177" started-at="2021-01-14T22:24:24Z" finished-at="2021-01-14T22:26:01Z">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12034" started-at="2021-01-14T16:24:24Z" finished-at="2021-01-14T16:24:36Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test started-at="2021-01-15T15:17:07Z" name="Default test" finished-at="2021-01-15T15:18:37Z" duration-ms="90603">
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:07Z" name="beforeClass" finished-at="2021-01-15T12:17:28Z" duration-ms="20972" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test started-at="2021-01-15T14:15:24Z" name="Default test" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:24Z" name="beforeClass" finished-at="2021-01-15T08:15:42Z" duration-ms="18079" status="PASS">
-=======
-    <test started-at="2021-01-15T16:39:26Z" name="Default test" finished-at="2021-01-15T16:40:57Z" duration-ms="91048">
-      <class name="com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:26Z" name="beforeClass" finished-at="2021-01-15T10:39:43Z" duration-ms="16900" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-    <test started-at="2021-01-15T13:43:55Z" name="Default test" finished-at="2021-01-15T13:46:46Z" duration-ms="170413">
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:43:55Z" name="beforeClass" finished-at="2021-01-15T10:44:15Z" duration-ms="20035" status="PASS">
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
-=======
-    <test started-at="2021-01-18T06:23:42Z" name="Default test" finished-at="2021-01-18T06:25:57Z" duration-ms="135032">
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:23:42Z" name="beforeClass" finished-at="2021-01-18T00:23:59Z" duration-ms="17247" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-    <test started-at="2021-01-18T10:48:21Z" name="Default test" finished-at="2021-01-18T10:55:05Z" duration-ms="403943">
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades@6f45df59]" started-at="2021-01-18T07:48:21Z" name="beforeClass" finished-at="2021-01-18T07:48:34Z" duration-ms="12586" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-    <test started-at="2021-01-15T21:38:42Z" name="Default test" finished-at="2021-01-15T21:40:50Z" duration-ms="127907">
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:38:42Z" name="beforeClass" finished-at="2021-01-15T15:38:55Z" duration-ms="12536" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-    <test started-at="2021-01-18T14:50:47Z" name="Default test" finished-at="2021-01-18T14:53:31Z" duration-ms="164615">
-      <class name="com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:50:47Z" name="beforeClass" finished-at="2021-01-18T11:51:03Z" duration-ms="16513" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+    <test started-at="2021-01-15T14:59:25Z" name="Default test" finished-at="2021-01-18T16:39:51Z" duration-ms="265225394">
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@78e4deb0]" started-at="2021-01-15T11:59:25Z" name="beforeClass" finished-at="2021-01-15T11:59:43Z" duration-ms="17689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:46:27Z" name="ingresar" finished-at="2021-01-18T09:46:35Z" duration-ms="8368" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir@f2f2cc1]" name="login" duration-ms="6769" started-at="2021-01-14T16:24:36Z" finished-at="2021-01-14T16:24:43Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:28Z" name="login" finished-at="2021-01-15T12:17:40Z" duration-ms="12004" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:42Z" name="login" finished-at="2021-01-15T08:15:54Z" duration-ms="12183" status="PASS">
-=======
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:43Z" name="ingresar" finished-at="2021-01-15T10:39:51Z" duration-ms="7593" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:15Z" name="login" finished-at="2021-01-15T10:44:25Z" duration-ms="9738" status="PASS">
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:23:59Z" name="login" finished-at="2021-01-18T00:24:07Z" duration-ms="7748" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades@6f45df59]" started-at="2021-01-18T07:48:34Z" name="ingresar" finished-at="2021-01-18T07:48:41Z" duration-ms="6964" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:38:55Z" name="login" finished-at="2021-01-15T15:39:03Z" duration-ms="7961" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:51:03Z" name="login" finished-at="2021-01-18T11:51:13Z" duration-ms="9869" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/remotes/origin/Eliel
-        </test-method> <!-- login -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir@f2f2cc1]" name="acessarTCC" duration-ms="15872" started-at="2021-01-14T16:24:43Z" finished-at="2021-01-14T16:24:59Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:17:40Z" name="acessarTCC" finished-at="2021-01-15T12:18:04Z" duration-ms="24182" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:54Z" name="acessarTCC" finished-at="2021-01-15T08:16:15Z" duration-ms="21428" status="PASS">
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/heads/Cristhian
-        </test-method> <!-- ingresar -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="DFGEntrar()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:46:35Z" name="DFGEntrar" finished-at="2021-01-18T09:46:55Z" duration-ms="20030" status="PASS">
-=======
-        <test-method signature="ingresarTCC()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:51Z" name="ingresarTCC" finished-at="2021-01-15T10:40:15Z" duration-ms="24833" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:25Z" name="acessarBRE" finished-at="2021-01-15T10:44:42Z" duration-ms="17314" status="PASS">
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
-=======
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:24:07Z" name="acessarTCC" finished-at="2021-01-18T00:24:31Z" duration-ms="24037" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades@6f45df59]" started-at="2021-01-18T07:48:41Z" name="mdrEntrar" finished-at="2021-01-18T07:49:00Z" duration-ms="19167" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:39:03Z" name="acessarBRE" finished-at="2021-01-15T15:39:18Z" duration-ms="15488" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:51:13Z" name="acessarTDK" finished-at="2021-01-18T11:51:39Z" duration-ms="25538" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- DFGEntrar -->
-        <test-method signature="RaizID()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:46:55Z" name="RaizID" finished-at="2021-01-18T09:47:06Z" duration-ms="10446" status="PASS">
-=======
-<<<<<<< HEAD
-        </test-method> <!-- acessarTCC -->
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir@f2f2cc1]" name="excluir" duration-ms="58079" started-at="2021-01-14T16:24:59Z" finished-at="2021-01-14T16:25:57Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Yessy
-        </test-method> <!-- acessarTCC -->
-<<<<<<< HEAD
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:18:04Z" name="excluir" finished-at="2021-01-15T12:18:37Z" duration-ms="33417" status="PASS">
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        </test-method> <!-- acessarBRE -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:39:18Z" name="editar" finished-at="2021-01-15T15:40:50Z" duration-ms="91903" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        </test-method> <!-- acessarTDK -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:51:39Z" name="criar" finished-at="2021-01-18T11:53:31Z" duration-ms="112677" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- RaizID -->
-        <test-method signature="CriarLeiaute()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:47:06Z" name="CriarLeiaute" finished-at="2021-01-18T09:49:06Z" duration-ms="120796" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CriarLeiaute -->
-        <test-method signature="bloco()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:49:06Z" name="bloco" finished-at="2021-01-18T09:50:09Z" duration-ms="62189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bloco -->
-        <test-method signature="ListarRegistros()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:50:09Z" name="ListarRegistros" finished-at="2021-01-18T09:50:38Z" duration-ms="29019" status="FAIL">
-          <exception class="org.openqa.selenium.JavascriptException">
-=======
-<<<<<<< HEAD
-        </test-method> <!-- excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4407" started-at="2021-01-14T16:25:57Z" finished-at="2021-01-14T16:26:01Z">
-=======
-<<<<<<< HEAD
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir@1530c739]" started-at="2021-01-15T12:18:37Z" name="afterClass" finished-at="2021-01-15T12:18:37Z" duration-ms="1" status="PASS">
-=======
-        </test-method> <!-- executar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:18:43Z" name="afterClass" finished-at="2021-01-15T08:18:43Z" duration-ms="0" status="PASS">
-=======
-        </test-method> <!-- ingresarTCC -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:40:15Z" name="criar" finished-at="2021-01-15T10:40:57Z" duration-ms="41694" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-=======
-        <test-method signature="executarEditar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:24:31Z" name="executarEditar" finished-at="2021-01-18T00:25:57Z" duration-ms="85879" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        </test-method> <!-- mdrEntrar -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades@6f45df59]" started-at="2021-01-18T07:49:00Z" name="criar" finished-at="2021-01-18T07:55:04Z" duration-ms="364407" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
->>>>>>> refs/heads/Cristhian
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@78e4deb0]" started-at="2021-01-15T11:59:43Z" name="login" finished-at="2021-01-15T16:09:49Z" duration-ms="15006005" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e917cadd7a760877b24a332030ed6fb7]]>
-=======
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="subperiod-text" and text()="1M"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 01e22b4d10604d8f8eeb993107eb26ea
-*** Element info: {Using=xpath, value=//span[@class="subperiod-text" and text()="1M"]}]]>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="baseTabs-wrapper"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[2]/div[3]/span"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: dadfde1cece1b91dd416bf6b50a73c8c
-*** Element info: {Using=xpath, value=//*[@id="baseTabs-wrapper"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[2]/div[3]/span}]]>
->>>>>>> refs/heads/Cristhian
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="home-icon"] (tried for 15000 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e917cadd7a760877b24a332030ed6fb7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-=======
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="subperiod-text" and text()="1M"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 01e22b4d10604d8f8eeb993107eb26ea
-*** Element info: {Using=xpath, value=//span[@class="subperiod-text" and text()="1M"]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="baseTabs-wrapper"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[2]/div[3]/span"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: dadfde1cece1b91dd416bf6b50a73c8c
-*** Element info: {Using=xpath, value=//*[@id="baseTabs-wrapper"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[2]/div[3]/span}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
->>>>>>> refs/heads/Cristhian
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<<<<<<< HEAD
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-	at com.sap.timp.base.TestBaseSteven.moveToElement(TestBaseSteven.java:310)
-	at com.sap.timp.pageObjectModel.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidadesPO.ListarRegistros(LeiautesExecuçãoFuncionalidadesPO.java:874)
-	at com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades.ListarRegistros(LeiautesExecuçãoFuncionalidades.java:88)
-=======
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<<<<<<< HEAD
-	at com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditarPO.editar(ExecutadosEditarPO.java:144)
-	at com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar.executarEditar(ExecutadosEditar.java:47)
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.DFG.Leiautes.LeiautesExecuçãoFuncionalidadesPO.criar(LeiautesExecuçãoFuncionalidadesPO.java:1051)
-	at com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades.criar(LeiautesExecuçãoFuncionalidades.java:45)
->>>>>>> refs/heads/Cristhian
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="home-icon"] (tried for 15000 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:228)
+	at com.sap.timp.pageObjectModel.ADM.LoginTC.login(LoginTC.java:39)
+	at com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar.login(ConfiguracaoEExecucacoCriar.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -426,110 +47,245 @@ Session ID: dadfde1cece1b91dd416bf6b50a73c8c
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0da544b2adf0784d88e94c456a2d5af7
+*** Element info: {Using=xpath, value=//*[@id="home-icon"]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
 ]]>
             </full-stacktrace>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
-=======
-<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@78e4deb0]" started-at="2021-01-15T16:09:49Z" name="acessarTCC" finished-at="2021-01-18T09:29:42Z" duration-ms="235193256" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="home-icon"] (tried for 15000 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="home-icon"] (tried for 15000 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:228)
+	at com.sap.timp.pageObjectModel.TCC.AcessarTCCPO.acessarTCC(AcessarTCCPO.java:35)
+	at com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar.acessarTCC(ConfiguracaoEExecucacoCriar.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0da544b2adf0784d88e94c456a2d5af7
+*** Element info: {Using=xpath, value=//*[@id="home-icon"]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@78e4deb0]" started-at="2021-01-18T09:29:43Z" name="criar" finished-at="2021-01-18T13:39:46Z" duration-ms="15003265" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to no longer be visible: By.xpath: //div[@class="overlay loader dark"] (tried for 15000 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.xpath: //div[@class="overlay loader dark"] (tried for 15000 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.sap.timp.base.TestBaseSteven.invisibilityOfElementOverlay(TestBaseSteven.java:149)
+	at com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriarPO.criar(ConfiguracaoEExecucacoCriarPO.java:93)
+	at com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar.criar(ConfiguracaoEExecucacoCriar.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0da544b2adf0784d88e94c456a2d5af7
+*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:573)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@78e4deb0]" started-at="2021-01-18T13:39:46Z" name="afterClass" finished-at="2021-01-18T13:39:46Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0da544b2adf0784d88e94c456a2d5af7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5P4F1JE', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0da544b2adf0784d88e94c456a2d5af7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar.afterClass(ConfiguracaoEExecucacoCriar.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
-=======
-        </test-method> <!-- acessarBRE -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:44:42Z" name="editar" finished-at="2021-01-15T10:46:46Z" duration-ms="123295" status="PASS">
->>>>>>> refs/remotes/origin/master
-=======
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
->>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- ListarRegistros -->
-        <test-method signature="TotaldeLinhasAgrupadas()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:50:38Z" name="TotaldeLinhasAgrupadas" finished-at="2021-01-18T09:51:51Z" duration-ms="73222" status="PASS">
-=======
-<<<<<<< HEAD
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção@6f45df59]" started-at="2021-01-15T10:46:46Z" name="afterClass" finished-at="2021-01-15T10:46:46Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:53:31Z" name="afterClass" finished-at="2021-01-18T11:53:31Z" duration-ms="1" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- TotaldeLinhasAgrupadas -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:51:51Z" name="afterClass" finished-at="2021-01-18T09:51:51Z" duration-ms="0" status="PASS">
-=======
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-        </test-method> <!-- criar -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:40:57Z" name="afterClass" finished-at="2021-01-15T10:40:57Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        </test-method> <!-- executarEditar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:25:57Z" name="afterClass" finished-at="2021-01-18T00:25:57Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades@6f45df59]" started-at="2021-01-18T07:55:05Z" name="afterClass" finished-at="2021-01-18T07:55:05Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento@5a5338df]" started-at="2021-01-15T15:40:50Z" name="afterClass" finished-at="2021-01-15T15:40:50Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Fernando
-          <reporter-output>
-          </reporter-output>
-=======
->>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
-=======
-      </class> <!-- com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
->>>>>>> refs/heads/Cristhian
->>>>>>> refs/remotes/origin/master
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar -->
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades -->
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador -->
->>>>>>> refs/remotes/origin/Eliel
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

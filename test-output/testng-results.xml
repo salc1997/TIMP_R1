@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results total="7" passed="6" failed="1" skipped="0">
 =======
 <<<<<<< HEAD
@@ -14,7 +15,10 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,8 +40,11 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -75,8 +82,12 @@
 =======
   <suite started-at="2021-01-18T14:50:47Z" name="Default suite" finished-at="2021-01-18T14:53:31Z" duration-ms="164615">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+  <suite started-at="2021-01-18T16:48:11Z" name="Default suite" finished-at="2021-01-18T16:51:02Z" duration-ms="171016">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,9 +145,15 @@
       <class name="com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:50:47Z" name="beforeClass" finished-at="2021-01-18T11:51:03Z" duration-ms="16513" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+    <test started-at="2021-01-18T16:48:11Z" name="Default test" finished-at="2021-01-18T16:51:02Z" duration-ms="171016">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar@2cf3d63b]" started-at="2021-01-18T10:48:11Z" name="beforeClass" finished-at="2021-01-18T10:48:26Z" duration-ms="14472" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -174,8 +191,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:51:03Z" name="login" finished-at="2021-01-18T11:51:13Z" duration-ms="9869" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar@2cf3d63b]" started-at="2021-01-18T10:48:26Z" name="login" finished-at="2021-01-18T10:48:33Z" duration-ms="7690" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -189,7 +210,10 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -230,8 +254,12 @@
 =======
         <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:51:13Z" name="acessarTDK" finished-at="2021-01-18T11:51:39Z" duration-ms="25538" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar@2cf3d63b]" started-at="2021-01-18T10:48:33Z" name="acessarTCC" finished-at="2021-01-18T10:48:55Z" duration-ms="21991" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -240,7 +268,10 @@
         <test-method signature="RaizID()[pri:0, instance:com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades@15ca7889]" started-at="2021-01-18T09:46:55Z" name="RaizID" finished-at="2021-01-18T09:47:06Z" duration-ms="10446" status="PASS">
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- acessarTCC -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir@f2f2cc1]" name="excluir" duration-ms="58079" started-at="2021-01-14T16:24:59Z" finished-at="2021-01-14T16:25:57Z">
 =======
 <<<<<<< HEAD
@@ -261,8 +292,12 @@
         </test-method> <!-- acessarTDK -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador@1530c739]" started-at="2021-01-18T11:51:39Z" name="criar" finished-at="2021-01-18T11:53:31Z" duration-ms="112677" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="Exceutar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar@2cf3d63b]" started-at="2021-01-18T10:48:55Z" name="Exceutar" finished-at="2021-01-18T10:51:02Z" duration-ms="126848" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -445,8 +480,13 @@ Session ID: dadfde1cece1b91dd416bf6b50a73c8c
 =======
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- Exceutar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar@2cf3d63b]" started-at="2021-01-18T10:51:02Z" name="afterClass" finished-at="2021-01-18T10:51:02Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- ListarRegistros -->
@@ -492,7 +532,10 @@ Session ID: dadfde1cece1b91dd416bf6b50a73c8c
           </reporter-output>
 =======
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -530,6 +573,9 @@ Session ID: dadfde1cece1b91dd416bf6b50a73c8c
 =======
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -997,6 +997,8 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		siguiente.click();
 		sleep(3000);
+		
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

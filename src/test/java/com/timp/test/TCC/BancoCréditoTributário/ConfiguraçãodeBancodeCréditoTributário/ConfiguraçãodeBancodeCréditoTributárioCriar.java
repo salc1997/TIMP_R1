@@ -3,6 +3,7 @@ package com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTri
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainelCriarPO;
@@ -14,14 +15,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeBancodeCréditoTributárioCriar extends TestBaseCristhian {
+public class ConfiguraçãodeBancodeCréditoTributárioCriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO  acessarTCCPO;
 	ConfiguraçãodeBancodeCréditoTributárioCriarPO configuraçãodeBancodeCréditoTributárioCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãodeBancodeCréditoTributárioCriarPO = new ConfiguraçãodeBancodeCréditoTributárioCriarPO();

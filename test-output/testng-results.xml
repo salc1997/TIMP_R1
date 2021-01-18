@@ -1,78 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results total="3" passed="3" failed="0" skipped="0">
-=======
 <testng-results total="3" passed="2" failed="1" skipped="0">
->>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-01-15T14:15:24Z" name="Default suite" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
-=======
-  <suite started-at="2021-01-15T16:39:26Z" name="Default suite" finished-at="2021-01-15T16:40:57Z" duration-ms="91048">
->>>>>>> refs/remotes/origin/Yessy
+  <suite started-at="2021-01-18T06:23:42Z" name="Default suite" finished-at="2021-01-18T06:25:57Z" duration-ms="135032">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2021-01-15T14:15:24Z" name="Default test" finished-at="2021-01-15T14:18:43Z" duration-ms="199283">
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:24Z" name="beforeClass" finished-at="2021-01-15T08:15:42Z" duration-ms="18079" status="PASS">
-=======
-    <test started-at="2021-01-15T16:39:26Z" name="Default test" finished-at="2021-01-15T16:40:57Z" duration-ms="91048">
-      <class name="com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:26Z" name="beforeClass" finished-at="2021-01-15T10:39:43Z" duration-ms="16900" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+    <test started-at="2021-01-18T06:23:42Z" name="Default test" finished-at="2021-01-18T06:25:57Z" duration-ms="135032">
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:23:42Z" name="beforeClass" finished-at="2021-01-18T00:23:59Z" duration-ms="17247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:42Z" name="login" finished-at="2021-01-15T08:15:54Z" duration-ms="12183" status="PASS">
-=======
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:43Z" name="ingresar" finished-at="2021-01-15T10:39:51Z" duration-ms="7593" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:23:59Z" name="login" finished-at="2021-01-18T00:24:07Z" duration-ms="7748" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- login -->
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:15:54Z" name="acessarTCC" finished-at="2021-01-15T08:16:15Z" duration-ms="21428" status="PASS">
-=======
-        </test-method> <!-- ingresar -->
-        <test-method signature="ingresarTCC()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:39:51Z" name="ingresarTCC" finished-at="2021-01-15T10:40:15Z" duration-ms="24833" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:24:07Z" name="acessarTCC" finished-at="2021-01-18T00:24:31Z" duration-ms="24037" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- acessarTCC -->
-        <test-method signature="executar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:16:15Z" name="executar" finished-at="2021-01-15T08:18:43Z" duration-ms="147566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar@5a5338df]" started-at="2021-01-15T08:18:43Z" name="afterClass" finished-at="2021-01-15T08:18:43Z" duration-ms="0" status="PASS">
-=======
-        </test-method> <!-- ingresarTCC -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:40:15Z" name="criar" finished-at="2021-01-15T10:40:57Z" duration-ms="41694" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="executarEditar()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:24:31Z" name="executarEditar" finished-at="2021-01-18T00:25:57Z" duration-ms="85879" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[chrome not reachable
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="subperiod-text" and text()="1M"]"}
   (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0ace2013cf101ad9449099885eb73a88
-*** Element info: {Using=xpath, value=//input[@placeholder="Selecionar Componente Origem"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 01e22b4d10604d8f8eeb993107eb26ea
+*** Element info: {Using=xpath, value=//span[@class="subperiod-text" and text()="1M"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="subperiod-text" and text()="1M"]"}
   (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0ace2013cf101ad9449099885eb73a88
-*** Element info: {Using=xpath, value=//input[@placeholder="Selecionar Componente Origem"]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 01e22b4d10604d8f8eeb993107eb26ea
+*** Element info: {Using=xpath, value=//span[@class="subperiod-text" and text()="1M"]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -86,11 +56,8 @@ Session ID: 0ace2013cf101ad9449099885eb73a88
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriarPO.criar(ConfiguraçãodeBancodeCréditoTributárioCriarPO.java:223)
-	at com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar.criar(ConfiguraçãodeBancodeCréditoTributárioCriar.java:47)
+	at com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditarPO.editar(ExecutadosEditarPO.java:144)
+	at com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar.executarEditar(ExecutadosEditar.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,20 +84,15 @@ Session ID: 0ace2013cf101ad9449099885eb73a88
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar@53fe15ff]" started-at="2021-01-15T10:40:57Z" name="afterClass" finished-at="2021-01-15T10:40:57Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        </test-method> <!-- executarEditar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar@2cf3d63b]" started-at="2021-01-18T00:25:57Z" name="afterClass" finished-at="2021-01-18T00:25:57Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutar -->
-=======
-      </class> <!-- com.timp.test.TCC.BancoCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
->>>>>>> refs/remotes/origin/Yessy
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -2,10 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+>>>>>>> refs/remotes/origin/Eliel
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar">
@@ -27,7 +33,11 @@
 =======
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador">
+>>>>>>> refs/remotes/origin/Eliel
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -43,10 +53,16 @@
 =======
           <include name="editar"/>
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Eliel
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="excluir"/>
 >>>>>>> refs/remotes/origin/master
+=======
+          <include name="criar"/>
+>>>>>>> refs/remotes/origin/Eliel
           <include name="afterClass"/>
 <<<<<<< HEAD
           <include name="criar"/>
@@ -55,6 +71,7 @@
           <include name="executarEditar"/>
 >>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,6 +148,9 @@
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamento -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisCartaoIndicador -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

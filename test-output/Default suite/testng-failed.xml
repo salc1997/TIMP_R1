@@ -3,12 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico">
+      <class name="com.timp.test.TDK.Kpis.KpisCriar">
         <methods>
           <include name="beforeClass"/>
-          <include name="Grafico"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico -->
+      </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

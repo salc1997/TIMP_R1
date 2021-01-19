@@ -3,13 +3,37 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Visualizar">
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR6">
         <methods>
-          <include name="afterClass"/>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
+          <include name="atividadeDeTributacaoXFornecedorVisualizar"/>
+          <include name="StatusParaBancoIndébitosExcluir"/>
+          <include name="StatusParaBancoIndébitosExcluirMassa"/>
+          <include name="atividadeDeTributacaoXFornecedorFiltroID"/>
+          <include name="codigoDeTreinamentoESimulacoesDeExerciciosVisualizar"/>
+          <include name="diagnosticoDeProcessosCriar"/>
+          <include name="StatusParaBancoIndébitosEditar"/>
+          <include name="codigoDeTreinamentoESimulacoesDeExerciciosEditar"/>
+          <include name="codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa"/>
+          <include name="rateioDeConsorcioPesquisaPorID"/>
+          <include name="subcapitalizacaoExcluirEmMassa"/>
+          <include name="atividadeDeTributacaoXFornecedorCriar"/>
+          <include name="statusParaBancoIndébitosCriar"/>
+          <include name="StatusParaBancoIndébitosVisualizar"/>
+          <include name="atividadeDeTributacaoXFornecedorDetalhes"/>
+          <include name="incentivosFiscaisPPExcluirEmMassa"/>
+          <include name="atividadeDeTributacaoXFornecedorExcluir"/>
+          <include name="atividadeDeTributacaoXFornecedorExcluirEmMassa"/>
+          <include name="codigoDeTreinamentoESimulacoesDeExerciciosCriar"/>
+          <include name="codigoDeTreinamentoESimulacoesDeExerciciosExcluir"/>
+          <include name="tiposDeServicosExcluirEmMassa"/>
+          <include name="diagnosticoDeProcessosExcluir"/>
+          <include name="taxasDeConversaoExcluirEmMassa"/>
+          <include name="diagnosticoDeProcessosEditar"/>
+          <include name="diagnosticoDeProcessosExcluirEmMassa"/>
+          <include name="diagnosticoDeProcessosVisualizar"/>
+          <include name="atividadeDeTributacaoXFornecedorEditar"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Visualizar -->
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR6 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

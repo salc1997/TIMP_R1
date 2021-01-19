@@ -4,10 +4,14 @@
   <test parallel="none" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas">
 =======
       <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TDK.Kpis.KpisCriar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
 <<<<<<< HEAD
           <include name="verificar"/>
@@ -15,15 +19,24 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           <include name="Grafico"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="criar"/>
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas -->
 =======
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

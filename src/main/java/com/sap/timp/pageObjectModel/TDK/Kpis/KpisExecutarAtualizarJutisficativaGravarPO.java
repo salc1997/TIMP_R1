@@ -1,11 +1,13 @@
 package com.sap.timp.pageObjectModel.TDK.Kpis;
 
+import java.rmi.server.Skeleton;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Factory;
 
 import com.sap.timp.base.TestBaseEliel;
 
@@ -114,8 +116,29 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
 	public WebElement justificativa;
 	
+	@FindBy(xpath = "//textarea[@class=\"base-textarea\"]")
+	public WebElement textojustificativa;
+	
 	@FindBy(xpath = "//button[@class=\"btn icon icon-font-Sign-and-Symbols icon-persign\"]")
 	public WebElement fechar;
+	
+	//@FindBy(xpath = "//div[@id=\"UIComp_1\"]/*[1]/*[8]/*[1]/*/*/*[2]/*/*[2]")
+	@FindBy(xpath = "//div[@data-gs-height=\"5\"]/div[1]/div/div[2]/div/div/div/div/div/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[2]")
+	public WebElement primeiracolunagrafico;
+	
+	
+	@FindBy(xpath = "//div[@class=\"v-tooltip-mainDiv\"]/table/tr[1]/td[2]")
+	public WebElement dimensao;
+	
+	@FindBy(xpath = "//div[@class=\"v-tooltip-mainDiv\"]/table/tr[2]/td[2]")
+	public WebElement valoricms;
+	
+	@FindBy(xpath = "//button[text()=\"Sem anexo\"]")
+	public WebElement semanexo;
+	
+	@FindBy(xpath = "//button[text()=\"Confirmar\"]")
+	public WebElement confirmar;
+	
 	public KpisExecutarAtualizarJutisficativaGravarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -175,12 +198,29 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 		waitExpectElement(cartaoindicador);
 		sleep(2000);
 		
+		fechar.click();
+		
+		sleep(2000);
+		
+		//String valorcartãoindicador= driver.findElement(By.xpath("//div[@id=\"indicator-card-container\"]/div/p")).getText();
 		executarElement.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		fechar.click();
+		sleep(2000);
+		//String valorcartãoindicadorposexecutar= driver.findElement(By.xpath("//div[@id=\"indicator-card-container\"]/div/p")).getText();
+		primeiracolunagrafico.click();
+		sleep(2000);
+		
+		String dimensao1= dimensao.getText();
+		String valoricms1=valoricms.getText();
+		
+		System.out.println(dimensao1);
+		System.out.println(valoricms1);
+		
+		
 		sleep(2000);
 		atualizacao.click();
 		
@@ -201,42 +241,97 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 		Aceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(15000);
+		sleep(20000);
 		
 		pararatualizacao.click();
 		sleep(2000);
 		
+		primeiracolunagrafico.click();
+		sleep(2000);
 		
+		String dimensao2= dimensao.getText();
+		String valoricms2=valoricms.getText();
+		
+		System.out.println(dimensao2);
+		System.out.println(valoricms2);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		int cartaoindicador = driver.findElements(By.xpath("//div[@class=\"indicator-card base-card rounded all-border default-border-color default-card-color handler\"]")).size();
+		sucesso.add(dimensao1.contains(dimensao2));
+		sucesso.add(valoricms1.contains(valoricms2));
 		
-		if(cartaoindicador == 0)
-		{
-			System.out.println("Cartao indicador foi removido");
-			sucesso.add(false);
-		}else {
-			System.out.println("Cartao indicador consta na pagina de edicao");
-			sucesso.add(true);
-		}
-		/*
+		justificativa.click();
+		
+		sleep(2000);
+		
+		textojustificativa.sendKeys("Testeautomatizado");
+		
+		sleep(2000);
+		
+		waitExpectElement(Aceitar);
+		sleep(2000);
+		Aceitar.click();
+		sleep(2000);
 		Gravar.click();
+		sleep(2000);
+		waitExpectElement(semanexo);
+		sleep(2000);
+		semanexo.click();
+		sleep(2000);
+		waitExpectElement(confirmar);
+		sleep(2000);
+		confirmar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagemsalvo);
+		waitExpectElement(executarElement);
 		sleep(2000);
-		if(mensagemsalvo.isDisplayed() && cartaoindicador > 0)
-		{
-			System.out.println("foi salva com sucesso e o cartao consta na pagina de edicao");
+		
+		int mensagem = driver.findElements(By.xpath("//span[@id=\"textLabel\"]")).size();
+		
+		
+		
+		if (mensagem > 0) {
+			System.out.println("Execução salva com sucesso");
 			sucesso.add(true);
-		}else {
-			System.out.println("Nao foi salva com sucesso e o cartao não consta na pagina de edicao");
-			sucesso.add(false);
 			
+		}else {
+			System.out.println("Execução não salva com sucesso");
+			sucesso.add(false);
 		}
 		
-		*/
+		biblioteca.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		execucoes.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		execucoespublicas.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		
+
+		System.out.println(idultimoexecucoes);
+		System.out.println(idB);
+		double idD = convertToDouble(idultimoexecucoes);
+		double idBD = convertToDouble(idB);
+		
+		
+		if (idBD > idD) {
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
+		}
 		System.out.println(sucesso);
 		return sucesso;
 	}

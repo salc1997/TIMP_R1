@@ -24,21 +24,45 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhia
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//*[@id=\"value\"]")
-	public WebElement valor;
+	@FindBy(xpath = "//span[@id=\"indexCode\"]")
+	public WebElement codigoIndiceV;
+	@FindBy(xpath = "//span[@id=\"value\"]")
+	public WebElement valorV;
+	@FindBy(xpath = "//span[@id=\"accumulatedFactor\"]")
+	public WebElement fatorAcumuladoV;
+	@FindBy(xpath = "//span[@id=\"rate\"]")
+	public WebElement taxaV;
+	@FindBy(xpath = "//span[@id=\"periodValue\"]")
+	public WebElement valorPeriodoV;
+	@FindBy(xpath = "//span[@id=\"rateStartDate\"]")
+	public WebElement inicioTaxaV;
+	@FindBy(xpath = "//span[@id=\"rateEndDate\"]")
+	public WebElement fimTaxaV;
+	@FindBy(xpath = "//span[@id=\"updateRateDate\"]")
+	public WebElement dataAtualizacaoV;
+	@FindBy(xpath = "//span[@id=\"disclosureDate\"]")
+	public WebElement dataDivulgacaoV;
 	
-	@FindBy(xpath = "//*[@id=\"accumulatedFactor\"]")
-	public WebElement fAcumolado;
 	
-	@FindBy(xpath = "//*[@id=\"rate\"]")
-	public WebElement taxa;
 	
-	@FindBy(xpath = "//*[@id=\"form-builder\"]/div/div[2]/table/tr[1]/td[2]/div/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Código do índice\"]")
+	public WebElement codigoIndiceE;
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Valor\"]")
 	public WebElement valorE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher o Fator Acumulado\")]")
-	public WebElement fAcumuladoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher a Taxa\")]")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Valor Período\"]")
+	public WebElement valorPeriodoE;
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Fator Acumulado\"]")
+	public WebElement fatorAcumuladoE;
+	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
 	public WebElement taxaE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Início da Taxa\")]")
+	public WebElement inicioTaxaE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Fim da Taxa\")]")
+	public WebElement fimTaxaE;
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Divulgação da Taxa\")]")
+	public WebElement dataDivulgacionE;	
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Atualização da Taxa\")]")
+	public WebElement dataActualizacionE;	
 	
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
@@ -76,19 +100,33 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhia
 		sleep(1000);
 		
 		açao.click();
-		sleep(2000);
+		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		
-		String codigoV1 = valor.getText();
-		String descricaoV1 = fAcumolado.getText();
-		String dataVigenciaV1 = taxa.getText();
-		
-		System.out.println("Valor: "+codigoV1);
-		System.out.println("Factor A: "+descricaoV1);
-		System.out.println("Taxa: "+dataVigenciaV1);
+
+		String codigoIndiceV1 = codigoIndiceV.getText();
+		String valorV1 = valorV.getText();
+		String fatorAcumuladoV1 = fatorAcumuladoV.getText();
+		String taxaV1 = taxaV.getText();
+		String valorPeriodoV1 = valorPeriodoV.getText();
+		String inicioTaxaV1 = inicioTaxaV.getText();
+		String fimTaxaV1 = fimTaxaV.getText();
+		String dataDivulgacaoV1 = dataDivulgacaoV.getText();
+		String dataAtualizacaoV1 = dataAtualizacaoV.getText();
+
+
+		System.out.println(codigoIndiceV1);
+		System.out.println(valorV1);
+		System.out.println(fatorAcumuladoV1);
+		System.out.println(taxaV1);
+		System.out.println(valorPeriodoV1);
+		System.out.println(inicioTaxaV1);
+		System.out.println(fimTaxaV1);
+		System.out.println(dataDivulgacaoV1);
+		System.out.println(dataAtualizacaoV1);
 		
 		biblioteca.click();
 		
@@ -109,23 +147,40 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhia
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String codigoE1 = valorE.getAttribute("value");
-		String descricaoE1 = fAcumuladoE.getAttribute("value");
-		String dataVigenciaE1 = taxaE.getAttribute("value");
+		String codigoIndiceE1 = codigoIndiceE.getAttribute("value");
+		String valorE1 = valorE.getAttribute("value");
+		String fatorAcumuladoE1 = fatorAcumuladoE.getAttribute("value");
+		String taxaE1 = taxaE.getAttribute("value");
+		String valorPeriodoE1 = valorPeriodoE.getAttribute("value");
+		String inicioTaxaE1 = inicioTaxaE.getAttribute("value");
+		String fimTaxaE1 = fimTaxaE.getAttribute("value");
+		String dataDivulgacaoE1 = dataDivulgacionE.getAttribute("value");
+		String dataAtualizacaoE1 = dataActualizacionE.getAttribute("value");
 
-		
-		
-		System.out.println("Valor Editar: "+codigoE1);
-		System.out.println("Factor Acumulado Editar: "+descricaoE1);
-		System.out.println("Taxa Editar: "+dataVigenciaE1);
+
+		System.out.println(codigoIndiceE1);
+		System.out.println(valorE1);
+		System.out.println(fatorAcumuladoE1);
+		System.out.println(taxaE1);
+		System.out.println(valorPeriodoE1);
+		System.out.println(inicioTaxaE1);
+		System.out.println(fimTaxaE1);
+		System.out.println(dataDivulgacaoE1);
+		System.out.println(dataAtualizacaoE1);
 
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sucesso.add(codigoV1.contains(codigoE1));
-		sucesso.add(descricaoV1.contains(descricaoE1));
-		sucesso.add(dataVigenciaV1.contains(dataVigenciaE1));
 
+		sucesso.add(codigoIndiceE1.contains(codigoIndiceV1));
+		sucesso.add(valorV1.equals(valorE1));
+		sucesso.add(fatorAcumuladoV1.equals(fatorAcumuladoE1));
+		sucesso.add(taxaE1.equals(taxaV1));
+		sucesso.add(valorPeriodoV1.equals(valorPeriodoE1));
+		sucesso.add(inicioTaxaV1.equals(inicioTaxaE1));
+		sucesso.add(fimTaxaV1.equals(fimTaxaE1));
+		sucesso.add(dataDivulgacaoV1.equals(dataDivulgacaoE1));
+		sucesso.add(dataAtualizacaoV1.equals(dataAtualizacaoE1));
 		
 		
 		

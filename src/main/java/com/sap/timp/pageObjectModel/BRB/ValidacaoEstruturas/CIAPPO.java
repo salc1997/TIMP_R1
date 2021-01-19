@@ -99,194 +99,208 @@ public ArrayList<Boolean> verificar() {
 		String totalLinhasS = totalLinhas.getText();
 		System.out.println(totalLinhasS);
 		int totalLinhasI = Integer.valueOf(totalLinhasS);
-		int esperadoLinhas = 4;
+		int esperadoLinhas = 0;
 		System.out.println(esperadoLinhas);
-		sucesso.add(igualInt(totalLinhasI, esperadoLinhas));
-		System.out.println(igualInt(totalLinhasI, esperadoLinhas)+" numero linhas");
+		sucesso.add(mayorQue(totalLinhasI, esperadoLinhas));
+		System.out.println(mayorQue(totalLinhasI, esperadoLinhas)+" numero linhas");
 		
 		//Valor de mercadoria
 		System.out.println("-------------------------------------------------");
 		System.out.println("Valor de Mercadoria");
 		String valorMercadoriaS = valordamercadoria.getText();
+		valorMercadoriaS = valorMercadoriaS.replace(".", "");
 		valorMercadoriaS = valorMercadoriaS.replace(",", ".");
 		System.out.println(valorMercadoriaS + " String");
 		double valorMercadoriaD = new Double(valorMercadoriaS);
 		System.out.println(valorMercadoriaD + " Double");
-		double esperadovalorMercadoria = 400;
+		double esperadovalorMercadoria = 0;
 		System.out.println(esperadovalorMercadoria + " Esperado");
-		sucesso.add(igualDobule(valorMercadoriaD, esperadovalorMercadoria));
-		System.out.println(igualDobule(valorMercadoriaD,  esperadovalorMercadoria)+" Valor de Mercadoria");
+		sucesso.add(mayorQue(valorMercadoriaD, esperadovalorMercadoria));
+		System.out.println(mayorQue(valorMercadoriaD,  esperadovalorMercadoria)+" Valor de Mercadoria");
 		
 		System.out.println("-------------------------------------------------");
 		//Base do ICMS
 		System.out.println("Base do ICMS");
 		String BaseICMSS = basedoicms.getText();
+		BaseICMSS =BaseICMSS.replace(".", "");
 		BaseICMSS =BaseICMSS.replace(",", ".");
 		System.out.println(BaseICMSS+ " String");
 		double BaseICMSD = new Double(BaseICMSS);
 		System.out.println(BaseICMSD + " Double");
-		double esperadoBaseICMS = 487.80;
+		double esperadoBaseICMS = 0;
 		System.out.println(esperadoBaseICMS + " Esperado");
-		sucesso.add(igualDobule(BaseICMSD, esperadoBaseICMS));
-		System.out.println(igualDobule(BaseICMSD, esperadoBaseICMS)+" Base do ICMS");
+		sucesso.add(mayorQue(BaseICMSD, esperadoBaseICMS));
+		System.out.println(mayorQue(BaseICMSD, esperadoBaseICMS)+" Base do ICMS");
 		
 		System.out.println("-------------------------------------------------");
 		//Valor do ICMS
 		System.out.println("Valor do ICMS");
 		String valorICMSS = valordoicms.getText();
+		valorICMSS = valorICMSS.replace(".", "");
 		valorICMSS = valorICMSS.replace(",", ".");
 		System.out.println(valorICMSS+ " String");
 		double valorICMSD = new Double(valorICMSS);
 		System.out.println(valorICMSD + " Double");
-		double esperadoValorICMS = 87.80;
+		double esperadoValorICMS = 0;
 		System.out.println(esperadoValorICMS + " Esperado");
-		sucesso.add(igualDobule(valorICMSD, esperadoValorICMS));
-		System.out.println(igualDobule(valorICMSD, esperadoValorICMS)+" Valor do ICMS");
+		sucesso.add(mayorQue(valorICMSD, esperadoValorICMS));
+		System.out.println(mayorQue(valorICMSD, esperadoValorICMS)+" Valor do ICMS");
 		
 		System.out.println("-------------------------------------------------");
 		//Valor do ICMS Total
 		System.out.println("Valor do ICMS Total");
 		String valorICMSTotalS = valordoicmstotal.getText();
+		valorICMSTotalS = valorICMSTotalS.replace(".", "");
 		valorICMSTotalS = valorICMSTotalS.replace(",", ".");
 		System.out.println(valorICMSTotalS+ " String");
 		double valorICMSTotalD = new Double(valorICMSTotalS);
 		System.out.println(valorICMSTotalD + " Double");
-		double esperadoValorICMSTotal = 87.80;
+		double esperadoValorICMSTotal = 0;
 		System.out.println(esperadoValorICMSTotal + " Esperado");
-		sucesso.add(igualDobule(valorICMSTotalD, esperadoValorICMSTotal));
-		System.out.println(igualDobule(valorICMSTotalD, esperadoValorICMSTotal)+" Valor do ICMS Total");
+		sucesso.add(mayorQue(valorICMSTotalD, esperadoValorICMSTotal));
+		System.out.println(mayorQue(valorICMSTotalD, esperadoValorICMSTotal)+" Valor do ICMS Total");
 		
 		
 		System.out.println("-------------------------------------------------");
 		//Valor para credito do ICMS 
 		System.out.println("Valor para credito do ICMS");
 		String valorcreditoICMSS = valorparacreditodoicms.getText();
+		valorcreditoICMSS = valorcreditoICMSS.replace(".", "");
 		valorcreditoICMSS = valorcreditoICMSS.replace(",", ".");
 		System.out.println(valorcreditoICMSS+ " String");
 		double valorcreditoICMSD = new Double(valorcreditoICMSS);
 		System.out.println(valorcreditoICMSD + " Double");
-		double esperadoValorcreditoICMS = 86.90;
+		double esperadoValorcreditoICMS = 0;
 		System.out.println(esperadoValorcreditoICMS + " Esperado");
-		sucesso.add(igualDobule(valorcreditoICMSD, esperadoValorcreditoICMS));
-		System.out.println(igualDobule(valorcreditoICMSD, esperadoValorcreditoICMS)+" Valor para credito do ICMS ");
+		sucesso.add(mayorQue(valorcreditoICMSD, esperadoValorcreditoICMS));
+		System.out.println(mayorQue(valorcreditoICMSD, esperadoValorcreditoICMS)+" Valor para credito do ICMS ");
 		
 		System.out.println("-------------------------------------------------");
 		//Valor nao creditado do ICMS 
 		System.out.println("Valor nao creditado do ICMS");
 		String valornaocreditadoICMSS = valornaocreditadodoicms.getText();
+		valornaocreditadoICMSS = valornaocreditadoICMSS.replace(".", "");
 		valornaocreditadoICMSS = valornaocreditadoICMSS.replace(",", ".");
 		System.out.println(valornaocreditadoICMSS+ " String");
 		double valornaocreditadoICMSD = new Double(valornaocreditadoICMSS);
 		System.out.println(valornaocreditadoICMSD + " Double");
-		double esperadoValornaocreditadoICMS = 0.02;
+		double esperadoValornaocreditadoICMS = 0;
 		System.out.println(esperadoValornaocreditadoICMS + " Esperado");
-		sucesso.add(igualDobule(valornaocreditadoICMSD, esperadoValornaocreditadoICMS));
-		System.out.println(igualDobule(valornaocreditadoICMSD, esperadoValornaocreditadoICMS)+" Valor nao creditado do ICMS ");
+		sucesso.add(mayorQue(valornaocreditadoICMSD, esperadoValornaocreditadoICMS));
+		System.out.println(mayorQue(valornaocreditadoICMSD, esperadoValornaocreditadoICMS)+" Valor nao creditado do ICMS ");
 		
 		System.out.println("-------------------------------------------------");
 		//Valor do creditado do ICMS 
 		System.out.println("Valor do creditado do ICMS");
 		String valordocreditoICMSS = valordocreditodoicms.getText();
+		valordocreditoICMSS = valordocreditoICMSS.replace(".", "");
 		valordocreditoICMSS = valordocreditoICMSS.replace(",", ".");
 		System.out.println(valordocreditoICMSS+ " String");
 		double valordocreditoICMSD = new Double(valordocreditoICMSS);
 		System.out.println(valordocreditoICMSD + " Double");
-		double esperadoValordocreditoICMS = 0.88;
+		double esperadoValordocreditoICMS = 0;
 		System.out.println(esperadoValordocreditoICMS + " Esperado");
-		sucesso.add(igualDobule(valordocreditoICMSD, esperadoValordocreditoICMS));
-		System.out.println(igualDobule(valordocreditoICMSD, esperadoValordocreditoICMS)+" Valor do creditado do ICMS ");
+		sucesso.add(mayorQue(valordocreditoICMSD, esperadoValordocreditoICMS));
+		System.out.println(mayorQue(valordocreditoICMSD, esperadoValordocreditoICMS)+" Valor do creditado do ICMS ");
 		
 		System.out.println("-------------------------------------------------");
 		//Quantidade 
 		System.out.println("Quantidade");
 		String quantidadeS = quantidade.getText();
+		quantidadeS = quantidadeS.replace(".", "");
 		quantidadeS = quantidadeS.replace(",", ".");
 		System.out.println(quantidadeS+ " String");
 		double quantidadeD = new Double(quantidadeS);
 		System.out.println(quantidadeD + " Double");
-		double esperadoQuantidade = 4;
+		double esperadoQuantidade = 0;
 		System.out.println(esperadoQuantidade + " Esperado");
-		sucesso.add(igualDobule(quantidadeD, esperadoQuantidade));
-		System.out.println(igualDobule(quantidadeD, esperadoQuantidade)+"Quantidade");
+		sucesso.add(mayorQue(quantidadeD, esperadoQuantidade));
+		System.out.println(mayorQue(quantidadeD, esperadoQuantidade)+"Quantidade");
 		
 		System.out.println("-------------------------------------------------");
 		//Quantidade Original 
 		System.out.println("Quantidade Original");
 		String quantidadeoriginalS = quantidadeoriginal.getText();
+		quantidadeoriginalS = quantidadeoriginalS.replace(".", "");
 		quantidadeoriginalS = quantidadeoriginalS.replace(",", ".");
 		System.out.println(quantidadeoriginalS+ " String");
 		double quantidadeoriginalD = new Double(quantidadeoriginalS);
 		System.out.println(quantidadeoriginalD + " Double");
-		double esperadoQuantidadeOriginal = 4;
+		double esperadoQuantidadeOriginal = 0;
 		System.out.println(esperadoQuantidadeOriginal + " Esperado");
-		sucesso.add(igualDobule(quantidadeoriginalD, esperadoQuantidadeOriginal));
-		System.out.println(igualDobule(quantidadeoriginalD, esperadoQuantidadeOriginal)+"Quantidade Original");
+		sucesso.add(mayorQue(quantidadeoriginalD, esperadoQuantidadeOriginal));
+		System.out.println(mayorQue(quantidadeoriginalD, esperadoQuantidadeOriginal)+"Quantidade Original");
 		
 		System.out.println("-------------------------------------------------");
 		//Total valor CIAP
 		System.out.println("Total valor CIAP");
 		String totalvalorciapS = totalvalorciap.getText();
+		totalvalorciapS =totalvalorciapS.replace(".", "");
 		totalvalorciapS =totalvalorciapS.replace(",", ".");
 		System.out.println(totalvalorciapS+ " String");
 		double totalvalorciapD = new Double(totalvalorciapS);
 		System.out.println(totalvalorciapD + " Double");
-		double esperadoTotalValorCIAP = 487.80;
+		double esperadoTotalValorCIAP = 0;
 		System.out.println(esperadoTotalValorCIAP + " Esperado");
-		sucesso.add(igualDobule(totalvalorciapD, esperadoTotalValorCIAP));
-		System.out.println(igualDobule(totalvalorciapD, esperadoTotalValorCIAP)+"Total valor CIAP");
+		sucesso.add(mayorQue(totalvalorciapD, esperadoTotalValorCIAP));
+		System.out.println(mayorQue(totalvalorciapD, esperadoTotalValorCIAP)+"Total valor CIAP");
 		
 		System.out.println("-------------------------------------------------");
 		//Valor de credito do ICMS Possivel
 		System.out.println("Valor de credito do ICMS Possivel");
 		String icmspossivelS = valordecreditoicmspossivel.getText();
+		icmspossivelS =icmspossivelS.replace(".", "");
 		icmspossivelS =icmspossivelS.replace(",", ".");
 		System.out.println(icmspossivelS+ " String");
 		double icmspossivelD = new Double(icmspossivelS);
 		System.out.println(icmspossivelD + " Double");
-		double esperadoICMSPossivel = 0.45;
+		double esperadoICMSPossivel = 0;
 		System.out.println(esperadoICMSPossivel + " Esperado");
-		sucesso.add(igualDobule(icmspossivelD, esperadoICMSPossivel));
-		System.out.println(igualDobule(icmspossivelD, esperadoICMSPossivel)+"Valor de credito do ICMS Possivel");
+		sucesso.add(mayorQue(icmspossivelD, esperadoICMSPossivel));
+		System.out.println(mayorQue(icmspossivelD, esperadoICMSPossivel)+"Valor de credito do ICMS Possivel");
 		
 		System.out.println("-------------------------------------------------");
 		//Valor de credito do ICMS Efetivado
 		System.out.println("Valor de credito do ICMS efetivado");
 		String icmsefetivadoS = valordecreditoicmsefetivado.getText();
+		icmsefetivadoS =icmsefetivadoS.replace(".", "");
 		icmsefetivadoS =icmsefetivadoS.replace(",", ".");
 		System.out.println(icmsefetivadoS+ " String");
 		double icmsefetivadoD = new Double(icmsefetivadoS);
 		System.out.println(icmsefetivadoD + " Double");
-		double esperadoICMSEfetivado = 0.44;
+		double esperadoICMSEfetivado = 0;
 		System.out.println(esperadoICMSEfetivado + " Esperado");
-		sucesso.add(igualDobule(icmsefetivadoD, esperadoICMSEfetivado));
-		System.out.println(igualDobule(icmsefetivadoD, esperadoICMSEfetivado)+"Valor de credito do ICMS efetivado");
+		sucesso.add(mayorQue(icmsefetivadoD, esperadoICMSEfetivado));
+		System.out.println(mayorQue(icmsefetivadoD, esperadoICMSEfetivado)+"Valor de credito do ICMS efetivado");
 		
 		System.out.println("-------------------------------------------------");
 		//Valor de credito do ICMS nao Efetivado
 		System.out.println("Valor de credito do ICMS nao efetivado");
 		String icmsnaoefetivadoS = valordecreditoicmsnaoefetivado.getText();
+		icmsnaoefetivadoS =icmsnaoefetivadoS.replace(".", "");
 		icmsnaoefetivadoS =icmsnaoefetivadoS.replace(",", ".");
 		System.out.println(icmsnaoefetivadoS+ " String");
 		double icmsnaoefetivadoD = new Double(icmsnaoefetivadoS);
 		System.out.println(icmsnaoefetivadoD + " Double");
-		double esperadoICMSNaoEfetivado = 0.01;
+		double esperadoICMSNaoEfetivado = 0;
 		System.out.println(esperadoICMSNaoEfetivado + " Esperado");
-		sucesso.add(igualDobule(icmsnaoefetivadoD, esperadoICMSNaoEfetivado));
-		System.out.println(igualDobule(icmsnaoefetivadoD, esperadoICMSNaoEfetivado)+"Valor de credito do ICMS efetivado");
+		sucesso.add(mayorQue(icmsnaoefetivadoD, esperadoICMSNaoEfetivado));
+		System.out.println(mayorQue(icmsnaoefetivadoD, esperadoICMSNaoEfetivado)+"Valor de credito do ICMS efetivado");
 		
 		
 		System.out.println("-------------------------------------------------");
 		//Fator de crediamento da parcela
 		System.out.println("Fator de crediamento da parcela");
 		String fatorS = fatordecreditamentodaparcela.getText();
+		fatorS =fatorS.replace(".", "");
 		fatorS =fatorS.replace(",", ".");
 		System.out.println(fatorS+ " String");
 		double fatorD = new Double(fatorS);
 		System.out.println(fatorD + " Double");
-		double esperadoFator = -2.02;
+		double esperadoFator = 0;
 		System.out.println(esperadoFator + " Esperado");
-		sucesso.add(igualDobule(fatorD, esperadoFator));
-		System.out.println(igualDobule(fatorD, esperadoFator)+"Fator de crediamento da parcela");
+		sucesso.add(mayorQue(fatorD, esperadoFator));
+		System.out.println(mayorQue(fatorD, esperadoFator)+"Fator de crediamento da parcela");
 		System.out.println("-------------------------------------------------");
 		
 		return sucesso;

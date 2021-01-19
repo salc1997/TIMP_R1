@@ -1,27 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="3" passed="3">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results skipped="0" failed="1" total="3" passed="2">
+=======
+=======
+>>>>>>> refs/heads/Fernando
+<testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results total="3" passed="2" failed="1" skipped="0">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
 <testng-results total="112" passed="85" failed="27" skipped="0">
+>>>>>>> refs/remotes/origin/Eliel
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="118277" started-at="2021-01-19T05:28:24Z" finished-at="2021-01-19T05:30:22Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="196806" started-at="2021-01-18T19:28:25Z" finished-at="2021-01-18T19:31:42Z">
+=======
+  <suite started-at="2021-01-18T23:22:50Z" name="Default suite" finished-at="2021-01-18T23:28:53Z" duration-ms="363168">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-01-19T00:46:05Z" name="Default suite" finished-at="2021-01-19T00:50:10Z" duration-ms="245822">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-01-18T21:25:50Z" name="Default suite" finished-at="2021-01-18T21:29:17Z" duration-ms="207420">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
   <suite started-at="2021-01-19T03:47:48Z" name="Default suite" finished-at="2021-01-19T06:52:03Z" duration-ms="11055287">
+>>>>>>> refs/remotes/origin/Eliel
     <groups>
     </groups>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="118277" started-at="2021-01-19T05:28:24Z" finished-at="2021-01-19T05:30:22Z">
+      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="16284" started-at="2021-01-18T23:28:24Z" finished-at="2021-01-18T23:28:40Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="196806" started-at="2021-01-18T19:28:25Z" finished-at="2021-01-18T19:31:42Z">
+      <class name="com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas@657c8ad9]" name="beforeClass" is-config="true" duration-ms="12806" started-at="2021-01-18T13:28:25Z" finished-at="2021-01-18T13:28:38Z">
+=======
+    <test started-at="2021-01-18T23:22:50Z" name="Default test" finished-at="2021-01-18T23:28:53Z" duration-ms="363168">
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico@8f2ef19]" started-at="2021-01-18T17:22:50Z" name="beforeClass" finished-at="2021-01-18T17:23:04Z" duration-ms="14145" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-01-19T00:46:05Z" name="Default test" finished-at="2021-01-19T00:50:10Z" duration-ms="245822">
+      <class name="com.timp.test.TDK.Kpis.KpisCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:46:05Z" name="beforeClass" finished-at="2021-01-18T18:46:33Z" duration-ms="28322" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+    <test started-at="2021-01-18T21:25:50Z" name="Default test" finished-at="2021-01-18T21:29:17Z" duration-ms="207420">
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:25:50Z" name="beforeClass" finished-at="2021-01-18T15:26:03Z" duration-ms="13357" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
     <test started-at="2021-01-19T03:47:48Z" name="Default test" finished-at="2021-01-19T06:52:03Z" duration-ms="11055287">
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR6">
         <test-method signature="categoriasDeTrabalhadoresCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:47:48Z" name="categoriasDeTrabalhadoresCriar" finished-at="2021-01-19T00:49:14Z" duration-ms="86118" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@f2f2cc1]" name="login" duration-ms="9286" started-at="2021-01-18T23:28:40Z" finished-at="2021-01-18T23:28:50Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas@657c8ad9]" name="login" duration-ms="7513" started-at="2021-01-18T13:28:38Z" finished-at="2021-01-18T13:28:45Z">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico@8f2ef19]" started-at="2021-01-18T17:23:04Z" name="login" finished-at="2021-01-18T17:23:12Z" duration-ms="8322" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:46:33Z" name="login" finished-at="2021-01-18T18:46:41Z" duration-ms="7592" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:26:03Z" name="login" finished-at="2021-01-18T15:26:10Z" duration-ms="7140" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
         </test-method> <!-- categoriasDeTrabalhadoresCriar -->
         <test-method signature="categoriasDeTrabalhadoresEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:49:14Z" name="categoriasDeTrabalhadoresEditar" finished-at="2021-01-19T00:51:00Z" duration-ms="106075" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@f2f2cc1]" name="acessarMDR" duration-ms="27161" started-at="2021-01-18T23:28:50Z" finished-at="2021-01-18T23:29:17Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas@657c8ad9]" name="brbEntrar" duration-ms="28056" started-at="2021-01-18T13:28:45Z" finished-at="2021-01-18T13:29:14Z">
+=======
+        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico@8f2ef19]" started-at="2021-01-18T17:23:12Z" name="acessarTDK" finished-at="2021-01-18T17:23:37Z" duration-ms="24896" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:46:41Z" name="acessarTDK" finished-at="2021-01-18T18:47:06Z" duration-ms="25482" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:26:10Z" name="acessarBRE" finished-at="2021-01-18T15:26:25Z" duration-ms="15360" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
         </test-method> <!-- categoriasDeTrabalhadoresEditar -->
         <test-method signature="categoriasDeTrabalhadoresExcluirMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:51:00Z" name="categoriasDeTrabalhadoresExcluirMassa" finished-at="2021-01-19T00:52:49Z" duration-ms="109350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- categoriasDeTrabalhadoresExcluirMassa -->
         <test-method signature="categoriasDeTrabalhadoresVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:52:49Z" name="categoriasDeTrabalhadoresVisualizar" finished-at="2021-01-19T00:54:15Z" duration-ms="86240" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </test-method> <!-- acessarMDR -->
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@f2f2cc1]" name="excluir" duration-ms="65467" started-at="2021-01-18T23:29:17Z" finished-at="2021-01-18T23:30:22Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </test-method> <!-- brbEntrar -->
+        <test-method status="FAIL" signature="verificar()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas@657c8ad9]" name="verificar" duration-ms="148411" started-at="2021-01-18T13:29:14Z" finished-at="2021-01-18T13:31:42Z">
+          <exception class="java.lang.AssertionError">
+=======
         </test-method> <!-- categoriasDeTrabalhadoresVisualizar -->
         <test-method signature="categoriasDeTrabalhadoresExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:54:15Z" name="categoriasDeTrabalhadoresExcluir" finished-at="2021-01-19T00:55:41Z" duration-ms="85910" status="PASS">
           <reporter-output>
@@ -161,7 +286,11 @@
         </test-method> <!-- registroRPExcluirEmMassa -->
         <test-method signature="tiposDeServicosExcluirEmMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T01:54:15Z" name="tiposDeServicosExcluirEmMassa" finished-at="2021-01-19T01:55:00Z" duration-ms="45610" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
+>>>>>>> refs/remotes/origin/Eliel
             <message>
+<<<<<<< HEAD
+              <![CDATA[Os dados não concordam com os establecidos expected [true] but found [false]]]>
+=======
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Atividades para tributação"]"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -171,8 +300,20 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\eliel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: ca2f10f9f6fe3d2bcdfd83235ebda31a
 *** Element info: {Using=xpath, value=//span[text()="Atividades para tributação"]}]]>
+>>>>>>> refs/remotes/origin/Eliel
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
+              <![CDATA[java.lang.AssertionError: Os dados não concordam com os establecidos expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas.verificar(ATRCamposAdicionaisOrdemVendas.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+=======
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Atividades para tributação"]"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -206,6 +347,7 @@ Session ID: ca2f10f9f6fe3d2bcdfd83235ebda31a
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+>>>>>>> refs/remotes/origin/Eliel
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -228,6 +370,106 @@ Session ID: ca2f10f9f6fe3d2bcdfd83235ebda31a
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
+          </exception> <!-- java.lang.AssertionError -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="56" started-at="2021-01-18T23:30:22Z" finished-at="2021-01-18T23:30:22Z">
+=======
+        </test-method> <!-- verificar -->
+      </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas -->
+=======
+        </test-method> <!-- acessarTDK -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:47:06Z" name="criar" finished-at="2021-01-18T18:50:10Z" duration-ms="183579" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d199c86dd08101c2cf9fbab019df6924
+*** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d199c86dd08101c2cf9fbab019df6924
+*** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.TDK.Kpis.KpisCriarPO.Criar(KpisCriarPO.java:85)
+	at com.timp.test.TDK.Kpis.KpisCriar.criar(KpisCriar.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir -->
+=======
+<<<<<<< HEAD
+        </test-method> <!-- Grafico -->
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:50:10Z" name="afterClass" finished-at="2021-01-18T18:50:10Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="relacionamento()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:26:25Z" name="relacionamento" finished-at="2021-01-18T15:29:17Z" duration-ms="171544" status="PASS">
+=======
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
@@ -334,16 +576,33 @@ Session ID: 4cc67f9e4626695903398b6b7d0616c0
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- relacionamento -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:29:17Z" name="afterClass" finished-at="2021-01-18T15:29:17Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
         </test-method> <!-- taxasDeConversaoExcluirEmMassa -->
         <test-method signature="taxasDeConversaoDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T02:09:08Z" name="taxasDeConversaoDetalhes" finished-at="2021-01-19T02:10:27Z" duration-ms="78896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- taxasDeConversaoDetalhes -->
         <test-method signature="taxasDeConversaoExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T02:10:27Z" name="taxasDeConversaoExcluir" finished-at="2021-01-19T02:11:46Z" duration-ms="79038" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
         </test-method> <!-- taxasDeConversaoExcluir -->
         <test-method signature="subcapitalizacaoCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T02:11:46Z" name="subcapitalizacaoCriar" finished-at="2021-01-19T02:13:35Z" duration-ms="109242" status="PASS">
           <reporter-output>
@@ -2319,6 +2578,7 @@ Session ID: 2263d6abfb14b6c80446bf333f1d3c74
           </reporter-output>
         </test-method> <!-- StatusParaBancoIndébitosExcluirMassa -->
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR6 -->
+>>>>>>> refs/remotes/origin/Eliel
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -34,6 +34,9 @@ public class CodigoAjustesEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 
 	public CodigoAjustesEditarPO() {
 
@@ -84,11 +87,17 @@ public class CodigoAjustesEditarPO extends TestBaseSteven {
 		sleep(1000);
 		campo.sendKeys(enviar);
 		sleep(2000);
+	
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
@@ -117,9 +126,14 @@ public class CodigoAjustesEditarPO extends TestBaseSteven {
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
+		sleep(2000);
 		
 		return sucesso;
 

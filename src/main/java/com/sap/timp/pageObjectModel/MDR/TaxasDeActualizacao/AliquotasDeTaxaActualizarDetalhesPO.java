@@ -60,39 +60,37 @@ public class AliquotasDeTaxaActualizarDetalhesPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar;
 
-	@FindBy(xpath = "//div[@id=\"detail-description\"][1]/div[2]/div")
-	public WebElement codigoAjusteD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][2]/div[2]/div")
-	public WebElement descricaoD;
+	public WebElement codigoIndiceD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][3]/div[2]/div")
-	public WebElement ufD;
+	public WebElement valorD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][4]/div[2]/div")
-	public WebElement tipoApuracaoD;
+	public WebElement fatorAcumuladoD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][5]/div[2]/div")
-	public WebElement responsabilidadeD;
+	public WebElement taxaD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][6]/div[2]/div")
-	public WebElement influenciaD;
+	public WebElement valorPeriodoD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][7]/div[2]/div")
-	public WebElement origemD;
+	public WebElement incioTaxaD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][8]/div[2]/div")
-	public WebElement ativoD;
+	public WebElement fimTaxaD;
 
-	@FindBy(xpath = "//span[@id=\"Code\"]")
-	public WebElement codigoAjusteV;
-	@FindBy(xpath = "//span[@id=\"Description\"]")
-	public WebElement descricaoV;
-	@FindBy(xpath = "//span[@id=\"UF\"]")
-	public WebElement ufV;
-	@FindBy(xpath = "//span[@id=\"Calculation\"]")
-	public WebElement tipoApuracaoV;
-	@FindBy(xpath = "//span[@id=\"Responsability\"]")
-	public WebElement responsabilidadeV;
-	@FindBy(xpath = "//span[@id=\"Pickup\"]")
-	public WebElement influienciaV;
-	@FindBy(xpath = "//span[@id=\"Origin\"]")
-	public WebElement origemV;
-	@FindBy(xpath = "//span[@id=\"Inactive\"]")
-	public WebElement ativoV;
+
+	@FindBy(xpath = "//span[@id=\"indexCode\"]")
+	public WebElement codigoIndiceV;
+	@FindBy(xpath = "//span[@id=\"value\"]")
+	public WebElement valorV;
+	@FindBy(xpath = "//span[@id=\"accumulatedFactor\"]")
+	public WebElement fatorAcumuladoV;
+	@FindBy(xpath = "//span[@id=\"rate\"]")
+	public WebElement taxaV;
+	@FindBy(xpath = "//span[@id=\"periodValue\"]")
+	public WebElement valorPeriodoV;
+	@FindBy(xpath = "//span[@id=\"rateStartDate\"]")
+	public WebElement inicioTaxaV;
+	@FindBy(xpath = "//span[@id=\"rateEndDate\"]")
+	public WebElement fimTaxaV;
+
 
 	public AliquotasDeTaxaActualizarDetalhesPO() {
 
@@ -132,23 +130,23 @@ public class AliquotasDeTaxaActualizarDetalhesPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 
-//		String codigoAjusteD1 = codigoAjusteD.getText();
-//		String descricaoD1 = descricaoD.getText();
-//		String ufD1 = ufD.getText();
-//		String tipoApuracaoD1 = tipoApuracaoD.getText();
-//		String responsabilidadeD1 = responsabilidadeD.getText();
-//		String influenciaD1 = influenciaD.getText();
-//		String origemD1 = origemD.getText();
-//		String ativoD1 = ativoD.getText();
-//
-//		System.out.println(codigoAjusteD1);
-//		System.out.println(descricaoD1);
-//		System.out.println(ufD1);
-//		System.out.println(tipoApuracaoD1);
-//		System.out.println(responsabilidadeD1);
-//		System.out.println(influenciaD1);
-//		System.out.println(origemD1);
-//		System.out.println(ativoD1);
+		String codigoIndiceD1 = codigoIndiceD.getText();
+		String valorD1 = valorD.getText();
+		String fatorAcumuladoD1 = fatorAcumuladoD.getText();
+		String taxaD1 = taxaD.getText();
+		String valorPeriodoD1 = valorPeriodoD.getText();
+		String inicioTaxaD1 = incioTaxaD.getText();
+		String fimTaxaD1 = fimTaxaD.getText();
+
+
+		System.out.println(codigoIndiceD1);
+		System.out.println(valorD1);
+		System.out.println(fatorAcumuladoD1);
+		System.out.println(taxaD1);
+		System.out.println(valorPeriodoD1);
+		System.out.println(inicioTaxaD1);
+		System.out.println(fimTaxaD1);
+
 
 		sleep(2000);
 		fechar.click();
@@ -166,34 +164,33 @@ public class AliquotasDeTaxaActualizarDetalhesPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-//		String codigoAjusteV1 = codigoAjusteV.getText();
-//		String descricaoV1 = descricaoV.getText();
-//		String ufV1 = ufV.getText();
-//		String tipoApuracaoV1 = tipoApuracaoV.getText();
-//		String responsabilidadeV1 = responsabilidadeV.getText();
-//		String influenciaV1 = influienciaV.getText();
-//		String origemV1 = origemV.getText();
-//		String ativoV1 = ativoV.getText();
-//
-//		System.out.println(codigoAjusteV1);
-//		System.out.println(descricaoV1);
-//		System.out.println(ufV1);
-//		System.out.println(tipoApuracaoV1);
-//		System.out.println(responsabilidadeV1);
-//		System.out.println(influenciaV1);
-//		System.out.println(origemV1);
-//		System.out.println(ativoV1);
+		String codigoIndiceV1 = codigoIndiceV.getText();
+		String valorV1 = valorV.getText();
+		String fatorAcumuladoV1 = fatorAcumuladoV.getText();
+		String taxaV1 = taxaV.getText();
+		String valorPeriodoV1 = valorPeriodoV.getText();
+		String inicioTaxaV1 = inicioTaxaV.getText();
+		String fimTaxaV1 = fimTaxaV.getText();
+
+
+		System.out.println(codigoIndiceV1);
+		System.out.println(valorV1);
+		System.out.println(fatorAcumuladoV1);
+		System.out.println(taxaV1);
+		System.out.println(valorPeriodoV1);
+		System.out.println(inicioTaxaV1);
+		System.out.println(fimTaxaV1);
+
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
-//		sucesso.add(codigoAjusteV1.contains(codigoAjusteD1));
-//		sucesso.add(descricaoV1.contains(descricaoD1));
-//		sucesso.add(ufV1.contains(ufD1));
-//		sucesso.add(tipoApuracaoV1.contains(tipoApuracaoD1));
-//		sucesso.add(responsabilidadeV1.contains(responsabilidadeD1));
-//		sucesso.add(influenciaV1.contains(influenciaD1));
-//		sucesso.add(origemV1.contains(origemD1));
-//		sucesso.add(ativoV1.contains(ativoD1));
+		sucesso.add(codigoIndiceV1.contains(codigoIndiceD1));
+		sucesso.add(valorV1.contains(valorD1));
+		sucesso.add(fatorAcumuladoV1.contains(fatorAcumuladoD1));
+		sucesso.add(taxaV1.contains(taxaD1));
+		sucesso.add(valorPeriodoV1.contains(valorPeriodoD1));
+		sucesso.add(inicioTaxaV1.contains(inicioTaxaD1));
+		sucesso.add(fimTaxaV1.contains(fimTaxaD1));
 
 		System.out.println(sucesso);
 

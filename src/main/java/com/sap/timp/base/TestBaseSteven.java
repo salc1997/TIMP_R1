@@ -172,6 +172,7 @@ public class TestBaseSteven {
 		return sucesso;
 	}
 	
+	
 	public Boolean igualDobule(double valor, double esperado) {
 		
 		boolean sucesso = false;

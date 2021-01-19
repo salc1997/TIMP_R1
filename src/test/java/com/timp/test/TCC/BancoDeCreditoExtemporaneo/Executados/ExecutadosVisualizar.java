@@ -48,7 +48,7 @@ public class ExecutadosVisualizar extends TestBaseEliel{
 	public void visualizar() {
 		ArrayList<Boolean> sucesso = executadosVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
+			assertTrue(sucesso.get(i), visualizaçar);
 		}
 		
 	}

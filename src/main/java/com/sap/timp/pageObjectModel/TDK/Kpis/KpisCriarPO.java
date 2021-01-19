@@ -99,7 +99,7 @@ public class KpisCriarPO extends TestBaseMassiel {
 		nome.click();
 		sleep(3000);
 		
-		nome.sendKeys("TESTEAUTOMATIZADO MASSIEL ");
+		nome.sendKeys("TESTEAUTOMATIZADO");
 		sleep(2000);
 		
 		clasificacion.click();

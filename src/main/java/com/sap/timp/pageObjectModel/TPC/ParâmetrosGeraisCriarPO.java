@@ -23,7 +23,7 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo\"]")
 	public WebElement cboTributo;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and @id and @class=\"list-item\" and text()=\"COFINS\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and @id and @class=\"list-item\" and text()=\"ICMS\"]")
 	public WebElement opcionTributo;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Empresa\"]")
@@ -35,7 +35,7 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar UF\"]")
 	public WebElement cboUf;
 	
-	@FindBy(xpath = "//*[@id=\"SP\"]/div[1]/label/span")
+	@FindBy(xpath = "//li[text()=\"SP\"]")
 	public WebElement opcionUf;
 	
 	@FindBy(xpath = "//*[@id=\"AL\"]/div[1]/label/span")
@@ -44,46 +44,68 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Filial\"]")
 	public WebElement cboFilial;
 	
-	@FindBy(xpath = "//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
+	@FindBy(xpath = "//li[text()=\"0001\"]")
 	public WebElement opcionFilial;
 	
 	@FindBy(xpath = "//*[@id=\"1000_SP_0014\"]/div[1]/label/span")
 	public WebElement opcionFilialTC2;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tipo de Imposto\"]")
-	public WebElement cboTipoImposto;
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div[9]/div[2]/div/div[1]/span")
+	public WebElement calendario;
 	
-	@FindBy(xpath = "//li[text()=\"DIFAL\"]")
-	public WebElement opcionTipoImposto;
+	@FindBy(xpath = "/html/body/div[5]/div[2]/div[1]/div[1]")
+	public WebElement atrasCalendario;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Detalhe Tipo Tributo\"]")
-	public WebElement cboDetalheTipoTributo;
+	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[3]/div[8]")
+	public WebElement aniotp1;
 	
-	@FindBy(xpath = "//li[text()=\"IMPORTAÇÃO\"]")
-	public WebElement opcionDetalheTipoTributo;
+	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[3]/div[6]")
+	public WebElement aniotq1;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Leiaute \"]")
-	public WebElement cboLeiaute;
+	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[2]/div[2]")
+	public WebElement enero;
 	
-	@FindBy(xpath = "//*[@id=\"1018\"]")
-	public WebElement opcionLeiaute;
+	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[1]/div/div[1]")
+	public WebElement M1;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Componente\"]")
-	public WebElement cboComponente;
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Código da Receita\"]")
+	public WebElement codReceita;
 	
-	@FindBy(xpath = "//li[text()=\"ADM\"]")
-	public WebElement opcionComponente;
-
-	@FindBy(xpath = "//li[text()=\"ATR\"]")
-	public WebElement opcionComponenteTC2;
+	@FindBy(xpath = "//li[text()=\"1145\"]")
+	public WebElement opcCodReceitaTp1;
+	
+	@FindBy(xpath = "//li[text()=\"900-8\"]")
+	public WebElement opcCodReceitaTq1;
+	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Código de Ajuste\"]")
+	public WebElement codAjuste;
+	
+	@FindBy(xpath = "//li[text()=\"279 - P0003 - Pagamento ICMS - Conta Vinculada Maranhão\"]")
+	public WebElement opcCodAjusteTp1;
+	
+	@FindBy(xpath = "//li[text()=\"228 - P0070 - TIMP1913\"]")
+	public WebElement opcCodAjusteTq1;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Formulário\"]")
+	public WebElement formulario;
+	
+	@FindBy(xpath = "//li[text()=\"107 - Teste PR\"]")
+	public WebElement opcFormularioTp1;
+	
+	@FindBy(xpath = "//li[text()=\"1015 - SS\"]")
+	public WebElement opcFormularioTq1;
+	
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
+	public WebElement btnPrimeraPagina;
 	
 	
 	@FindBy(xpath = "//*[@id=\"validFrom\"]/div/div[1]/input")
 	public WebElement validaDe;
 	
-	@FindBy(xpath = "//button[text()=\" Criar\"]")
-	public WebElement btnCriar;
+	@FindBy(xpath = "//button[text()=\"Gravar\"]")
+	public WebElement btnGravar;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnSim;
@@ -96,6 +118,31 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 	}
 	
 	public boolean criar() {
+		
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		btnPrimeraPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		
+		String id = "0"; // Primer ID antes de crear un registro
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+			System.out.println("ID Primer Registro: " + id);
+		}
+		
+		btnNovo.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		String url = driver.getCurrentUrl();
 
@@ -110,32 +157,13 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 		}else if(url.contains("tp1")){
 			tp1 = true;
 		}
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		ultimapagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		
-		String id = "0"; // Primer ID antes de crear un registro
-		
-		if(rows > 0) {
-			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")).getText();
-			System.out.println("ID Primer Registro: " + id);
+		if ( tp1 == true) {
+			dtaVencimento.sendKeys("01/01/2016");
+		}else {
+			dtaVencimento.sendKeys("30/09/2016");
 		}
 		
-		btnNovo.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
-		String data = fechaManana();
-		dtaVencimento.sendKeys(data);
 		
 		cboTributo.click();
 		sleep(1000);
@@ -147,8 +175,7 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 		sleep(1000);
 		opcionEmpresa.click();
 		sleep(1000);
-		opcionEmpresa.sendKeys(Keys. ESCAPE);
-		sleep(1000);
+		
 		
 		
 		
@@ -156,144 +183,113 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 		sleep(1000);
 		opcionUf.click();
 		sleep(1000);
-		opcionUf.sendKeys(Keys. ESCAPE);
-		sleep(7000);
 		
 		
 		
 		
+		cboFilial.click();
+		sleep(1000);
+		opcionFilial.click();
+		sleep(1000);
 		
 		
-		if ( tp1 == true) {
-			
-			
-			cboFilial.click();
-			sleep(1000);
-			opcionFilial.click();
-			sleep(1000);
-			opcionFilial.sendKeys(Keys. ESCAPE);
-			sleep(1000);
-			
-			
-			cboTipoImposto.click();
-			sleep(1000);
-			opcionTipoImposto.click();
+		
+		calendario.click();
+		sleep(4000);
+		
+		atrasCalendario.click();
+		sleep(4000);
+		
+		if (tq1==true) {
+			aniotq1.click();
+			sleep(3000);
+		}else {
+			aniotp1.click();
+			sleep(3000);
+		}
+		
+		enero.click();
+		sleep(3000);
+		
+		M1.click();
+		sleep(17000);
+		
+		
+		
+		
+		if (tq1==true) {
+			codReceita.click();
+			sleep(3000);
+			opcCodReceitaTq1.click();
 			sleep(3000);
 			
-			cboDetalheTipoTributo.click();
+			codAjuste.click();
 			sleep(3000);
-			opcionDetalheTipoTributo.click();
-			sleep(1000);
-			
-			cboLeiaute.sendKeys("101 - teste");
-			sleep(3000);
-			cboLeiaute.sendKeys(Keys. ESCAPE);
-			sleep(1000);
-			
-			cboComponente.click();
-			sleep(3000);
-			opcionComponenteTC2.click();
-			sleep(3000);
-
-		}else if(tc2 == true ) {
-			
-			cboFilial.click();
-			sleep(1000);
-			opcionFilialTC2.click();
-			sleep(1000);
-			opcionFilialTC2.sendKeys(Keys. ESCAPE);
-			sleep(1000);
-			
-			
-			cboTipoImposto.click();
-			sleep(1000);
-			opcionTipoImposto.click();
+			opcCodAjusteTq1.click();
 			sleep(3000);
 			
-			cboDetalheTipoTributo.click();
+			formulario.click();
 			sleep(3000);
-			opcionDetalheTipoTributo.click();
-			sleep(1000);
+			opcFormularioTq1.click();
+			sleep(3000);
 			
-			cboLeiaute.sendKeys("1 - Livro de Entrada (Não Mexer)");
-			sleep(3000);
-			cboLeiaute.sendKeys(Keys. ESCAPE);
-			sleep(1000);
-			
-			cboComponente.click();
-			sleep(3000);
-			opcionComponenteTC2.click();
-			sleep(3000);
 			
 		}else {
-			cboFilial.click();
-			sleep(1000);
-			opcionFilial.click();
-			sleep(1000);
-			opcionFilial.sendKeys(Keys. ESCAPE);
-			sleep(1000);
-			
-			
-			cboTipoImposto.click();
-			sleep(1000);
-			opcionTipoImposto.click();
+			codReceita.click();
+			sleep(3000);
+			opcCodReceitaTp1.click();
 			sleep(3000);
 			
-			cboDetalheTipoTributo.click();
+			codAjuste.click();
 			sleep(3000);
-			opcionDetalheTipoTributo.click();
-			sleep(1000);
+			opcCodAjusteTp1.click();
+			sleep(3000);
 			
-			cboLeiaute.sendKeys("1017 - TEST DATOS");
+			formulario.click();
 			sleep(3000);
-			cboLeiaute.sendKeys(Keys. ESCAPE);
-			sleep(1000);
-			
-			cboComponente.click();
-			sleep(3000);
-			opcionComponente.click();
+			opcFormularioTp1.click();
 			sleep(3000);
 		}
 		
 		
+		sleep(5000);
+	
+		btnGravar.click();
 		
-	
-		validaDe.sendKeys("11/01/2021");
-		sleep(4000);
-
-	
-		btnCriar.click();
-		sleep(2000);
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		ultimapagina.click();
+		btnPrimeraPagina.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
-		System.out.println("Rows:" +rows);
-		
-		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
-		
-		idInserir1(idultimo);
-
-		System.out.println(id);
-		System.out.println(idultimo);
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idultimo);
-		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		  
 		boolean sucesso = false;
-		if (idBD > idD) {
-			sucesso = true;
-		}else {
-			sucesso = false;
+		  
+		if(rows == 0) {
+			return sucesso = true; 
 		}
-		System.out.println(sucesso);
+		
+		// Se obtiene el primer registro de la tabla
+		String idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText(); 
+		System.out.println("");
+		System.out.println("ID Primer nuevo registro: " + idPrimerRegistro);
+		
+		int id1 = convertToInt(id);
+		int id2 = convertToInt(idPrimerRegistro);
+		
+		//compara pra ver se o novo id criado é realmente o ultimo		  
+		if (id2 > id1) { 
+			sucesso = true; 
+			idInserir4(idPrimerRegistro);
+			System.out.println("Registro creado...");
+		}
+		
 		return sucesso;
 	}
 

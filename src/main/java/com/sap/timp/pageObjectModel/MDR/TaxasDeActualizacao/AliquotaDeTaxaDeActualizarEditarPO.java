@@ -57,7 +57,7 @@ public class AliquotaDeTaxaDeActualizarEditarPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		String idRegistro = idObter3();
-		System.out.println(idRegistro);
+
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -77,7 +77,7 @@ public class AliquotaDeTaxaDeActualizarEditarPO extends TestBaseCristhian{
 
 		String valor = taxa.getAttribute("value");
 
-		String enviar = "11,11";
+		String enviar = "1111";
 
 		taxa.clear();
 		sleep(1000);

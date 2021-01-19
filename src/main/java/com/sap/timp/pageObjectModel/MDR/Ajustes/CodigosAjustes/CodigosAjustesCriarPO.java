@@ -80,7 +80,8 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 	public WebElement validade;
 	
 	
-
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public CodigosAjustesCriarPO() {
 
@@ -165,12 +166,18 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 		
 		validade.sendKeys(fechaActual());
 		
-		sleep(2000);
+		sleep(1000);
 		gravar.click();
-		sleep(3000);
+		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
-		sleep(3000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
+		sleep(2000);
 		
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

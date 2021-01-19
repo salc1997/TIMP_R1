@@ -42,6 +42,9 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnSim;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement btnAplicar;
 	
@@ -193,19 +196,24 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		sleep(1000);
 		btnGravar.click();
 		sleep(2000);
-		justificativa.sendKeys("Teste automatizado");
-		sleep(2000);
 		waitExpectElement(btnSim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(btnSim);
+		sleep(2000);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(2000);		
+		sleep(2000);
+		
+		
 		btnBiblioteca.click();
-		waitExpectElement(btnSim);
-		btnSim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(2000);
+
+		sleep(5000);
+		nao.click();
+		sleep(500);
+		nao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

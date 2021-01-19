@@ -22,31 +22,24 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button/span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
+	@FindBy(xpath = "//div[@id=\"indexCode\"]/div/div/div/input")
 	public WebElement codigo;
-	
-	@FindBy(xpath = "//*[@id=\"form-builder\"]/div/div[2]/table/tr[1]/td[2]/div/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
+	public WebElement codigoO;
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Valor\"]")
 	public WebElement valor;
-	
-	@FindBy(xpath = "//*[@id=\"form-builder\"]/div/div[2]/table/tr[3]/td[1]/div/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Valor Período\"]")
 	public WebElement valorPeriodo;
-	
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher o Fator Acumulado\")]")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Fator Acumulado\"]")
 	public WebElement fatorAcum;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher a Taxa\")]")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
 	public WebElement taxa;
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Início da Taxa\")]")
 	public WebElement inicioTaxa;
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Fim da Taxa\")]")
 	public WebElement finTaxa;
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Divulgação da Taxa\")]")
 	public WebElement dataDivulgacion;	
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Atualização da Taxa\")]")
 	public WebElement dataActualizacion;	
 
@@ -105,8 +98,7 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("7107");
-		sleep(1000);
+
 		
 		valor.sendKeys("987");
 		sleep(1000);
@@ -136,6 +128,12 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 		dataActualizacion.sendKeys(data3);
 		sleep(1000);
 		
+		codigo.click();
+		sleep(1000);
+		codigoO.click();
+		sleep(1000);
+		
+		
 		
 
 		
@@ -161,11 +159,8 @@ public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
 		
 		sleep(2000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		Integer Totalfila = rows;
-		Totalfila = rows - 1;
-		Integer rFinal = 0; 
-		rFinal = rows - Totalfila;
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rFinal+"]/div[3]/div")).getText();
+
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		idInserir3(idB);
 		sleep(2000);
 		System.out.println("ID: "+id);

@@ -19,33 +19,26 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 	@FindBy(xpath = "//button/span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
+	@FindBy(xpath = "//div[@id=\"indexCode\"]/div/div/div/input")
 	public WebElement codigo;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher o Valor\")]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
+	public WebElement codigoO;
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Valor\"]")
 	public WebElement valor;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher o Valor Período\")]")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Valor Período\"]")
 	public WebElement valorPeriodo;
-	
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher o Fator Acumulado\")]")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher o Fator Acumulado\"]")
 	public WebElement fatorAcum;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Prencher a Taxa\")]")
+	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
 	public WebElement taxa;
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Início da Taxa\")]")
 	public WebElement inicioTaxa;
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Fim da Taxa\")]")
 	public WebElement finTaxa;
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Divulgação da Taxa\")]")
 	public WebElement dataDivulgacion;	
-	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Atualização da Taxa\")]")
-	public WebElement dataActualizacion;	
+	public WebElement dataActualizacion;		
 
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -123,94 +116,112 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 		//NUEVO REGISTRO
 		sleep(2000);
 		novo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+			
+		
+
+		valor.sendKeys("987");
+		sleep(1000);
+
+		fatorAcum.sendKeys("765");
+		sleep(1000);
+
+		taxa.sendKeys("432");
+		sleep(1000);
+
+		valorPeriodo.sendKeys("3318");
+		sleep(1000);
+
+		String data = fechaActual();
+		inicioTaxa.sendKeys(data);
+		sleep(1000);
+
+		String data1 = fechaManana();
+		finTaxa.sendKeys(data1);
+		sleep(1000);
+
+		String data2 = fechaManana();
+		dataDivulgacion.sendKeys(data2);
+		sleep(1000);
+
+		String data3 = fechaManana();
+		dataActualizacion.sendKeys(data3);
+		sleep(1000);
+		
+		codigo.click();
+		sleep(1000);
+		codigoO.click();
+		sleep(1000);
+	
+		
+		gravareNovo.click();
+		
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		biblioteca.click();
+		
+		waitExpectElement(novo);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		for (int i = 0; i < 2; i++) {
-			
 		
-			codigo.sendKeys("7107");
-			sleep(1000);
-			
-			valor.sendKeys("987");
-			sleep(1000);
-			
-			fatorAcum.sendKeys("765");
-			sleep(1000);
-			
-			taxa.sendKeys("432");
-			sleep(1000);
-			
-			valorPeriodo.sendKeys("3318");
-			sleep(1000);
-			
-			String data = fechaActual();
-			inicioTaxa.sendKeys(data);
-			sleep(1000);
-			
-			String data1 = fechaManana();
-			finTaxa.sendKeys(data1);
-			sleep(1000);
-			
-			String data2 = fechaManana();
-			dataDivulgacion.sendKeys(data2);
-			sleep(1000);
-			
-			String data3 = fechaManana();
-			dataActualizacion.sendKeys(data3);
-			sleep(1000);
-			
-			
-			if (url.contains("tc2")) {
-				tc2 = true;
-				codigoIndice.click();
-				sleep(2000);
-				opcCodigoIndice.click();
-			}else if (url.contains("tp1")) {
-				tp1 = true;
-			}else if (url.contains("tq1")) {
-				tq1 = true;
-				codigoIndice.click();
-				sleep(2000);
-				opcCodigoIndice.click();
-			}else {
-				td1 = true;
-			}
-			
-			
-			//sleep(2000);
-			//opcCodigoIndice.sendKeys(Keys.ESCAPE);
-			
-			
-	
-			
-			sleep(2000);
-			gravareNovo.click();
-			sleep(2000);
-//			waitExpectElement(sim);
-//			sleep(2000);
-			sim.click();
-			sleep(2000);
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-//			//sleep(2000);
-//			gravar.click();
-////			sleep(2000);
-////			waitExpectElement(sim);
-//			sleep(2000);
-//			sim.click();
-//			sleep(2000);
-//			//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-		}
-		
-		//sleep(2000);
-		biblioteca.click();
-		
+		novo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+			
+		
+
+		valor.sendKeys("987");
+		sleep(1000);
+
+		fatorAcum.sendKeys("765");
+		sleep(1000);
+
+		taxa.sendKeys("432");
+		sleep(1000);
+
+		valorPeriodo.sendKeys("3318");
+		sleep(1000);
+
+
+		inicioTaxa.sendKeys(data);
+		sleep(1000);
+
+
+		finTaxa.sendKeys(data1);
+		sleep(1000);
+
+
+		dataDivulgacion.sendKeys(data2);
+		sleep(1000);
+
+
+		dataActualizacion.sendKeys(data3);
+		sleep(1000);
+		
+		codigo.click();
+		sleep(1000);
+		codigoO.click();
+		sleep(1000);
+	
+		
+		gravareNovo.click();
+		
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

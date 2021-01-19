@@ -31,6 +31,9 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement btnGravar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public AssociaçãoCodigoAjusteEditarPO(){
 		PageFactory.initElements(driver, this);
 	}
@@ -75,13 +78,19 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		dataInicioVigencia.sendKeys(dataInicioVigenciaValorNuevo); // Le envio la nueva fecha a editar	
 		System.out.println(dataInicioVigenciaValorNuevo); // Imprimo la fecha que se va editar el nuevo valor
 		
-		sleep(2000);
+		sleep(1000);
 		btnGravar.click();
 		sleep(2000);
+		waitExpectElement(btnSim);
+		sleep(1000);
+		nao.click();
+		
+		waitExpectElement(btnSim);
+		sleep(2000);
 		btnSim.click();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(1000);
+		sleep(2000);	
 		
 		driver.navigate().refresh();
 		sleep(3000);

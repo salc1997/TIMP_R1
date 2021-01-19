@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="3" passed="2">
 =======
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 <testng-results total="3" passed="2" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="196806" started-at="2021-01-18T19:28:25Z" finished-at="2021-01-18T19:31:42Z">
@@ -19,8 +26,12 @@
 =======
   <suite started-at="2021-01-19T00:46:05Z" name="Default suite" finished-at="2021-01-19T00:50:10Z" duration-ms="245822">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-01-18T21:25:50Z" name="Default suite" finished-at="2021-01-18T21:29:17Z" duration-ms="207420">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="196806" started-at="2021-01-18T19:28:25Z" finished-at="2021-01-18T19:31:42Z">
@@ -36,9 +47,15 @@
       <class name="com.timp.test.TDK.Kpis.KpisCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:46:05Z" name="beforeClass" finished-at="2021-01-18T18:46:33Z" duration-ms="28322" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+    <test started-at="2021-01-18T21:25:50Z" name="Default test" finished-at="2021-01-18T21:29:17Z" duration-ms="207420">
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:25:50Z" name="beforeClass" finished-at="2021-01-18T15:26:03Z" duration-ms="13357" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas@657c8ad9]" name="login" duration-ms="7513" started-at="2021-01-18T13:28:38Z" finished-at="2021-01-18T13:28:45Z">
@@ -48,9 +65,13 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:46:33Z" name="login" finished-at="2021-01-18T18:46:41Z" duration-ms="7592" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:26:03Z" name="login" finished-at="2021-01-18T15:26:10Z" duration-ms="7140" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas@657c8ad9]" name="brbEntrar" duration-ms="28056" started-at="2021-01-18T13:28:45Z" finished-at="2021-01-18T13:29:14Z">
@@ -60,8 +81,12 @@
 =======
         <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:46:41Z" name="acessarTDK" finished-at="2021-01-18T18:47:06Z" duration-ms="25482" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:26:10Z" name="acessarBRE" finished-at="2021-01-18T15:26:25Z" duration-ms="15360" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- brbEntrar -->
         <test-method status="FAIL" signature="verificar()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas@657c8ad9]" name="verificar" duration-ms="148411" started-at="2021-01-18T13:29:14Z" finished-at="2021-01-18T13:31:42Z">
@@ -186,11 +211,23 @@ Session ID: d199c86dd08101c2cf9fbab019df6924
 =======
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2cf3d63b]" started-at="2021-01-18T18:50:10Z" name="afterClass" finished-at="2021-01-18T18:50:10Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="relacionamento()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:26:25Z" name="relacionamento" finished-at="2021-01-18T15:29:17Z" duration-ms="171544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relacionamento -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento@5a5338df]" started-at="2021-01-18T15:29:17Z" name="afterClass" finished-at="2021-01-18T15:29:17Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamento -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

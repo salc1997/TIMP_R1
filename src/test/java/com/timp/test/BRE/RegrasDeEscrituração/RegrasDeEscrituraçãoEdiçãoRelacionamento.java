@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasdeAuditoriaN2;
+package com.timp.test.BRE.RegrasDeEscrituração;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,25 +9,24 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamentoPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoEdiçãoRelacionamentoPO;
 
-public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando{
+public class RegrasDeEscrituraçãoEdiçãoRelacionamento extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeAuditoriaN2EdicaoRelacionamentoPO regrasDeAuditoriaN2EdicaoRelacionamentoPO;
-
+	RegrasDeEscrituraçãoEdiçãoRelacionamentoPO regrasDeEscrituraçãoEdiçãoRelacionamentoPO;
+	
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeAuditoriaN2EdicaoRelacionamentoPO = new RegrasDeAuditoriaN2EdicaoRelacionamentoPO();
+		regrasDeEscrituraçãoEdiçãoRelacionamentoPO = new RegrasDeEscrituraçãoEdiçãoRelacionamentoPO();
 	}
-
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+//		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -38,11 +37,11 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando{
 	@Test(priority = 1)
 	public void acessarBRE() {
 		acessarBREPO.acessarBRE();
-
 	}
+	
 	@Test(priority = 2)
-	public void editar() {
-		boolean sucesso = regrasDeAuditoriaN2EdicaoRelacionamentoPO.editar();
-		assertTrue(sucesso, Editar);
+	public void relacionamento() {
+		boolean sucesso = regrasDeEscrituraçãoEdiçãoRelacionamentoPO.relacionamento();
+		assertTrue(sucesso, Criar);
 	}
 }

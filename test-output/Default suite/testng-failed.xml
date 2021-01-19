@@ -3,13 +3,59 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas">
+=======
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TDK.Kpis.KpisCriar">
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="criarAssociaçãoCodigoAjuste"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          <include name="Grafico"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="criar"/>
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas -->
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

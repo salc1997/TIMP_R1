@@ -90,7 +90,7 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
 
 		return driver;
 	}
@@ -171,6 +171,7 @@ public class TestBaseSteven {
 		
 		return sucesso;
 	}
+	
 	
 	public Boolean igualDobule(double valor, double esperado) {
 		

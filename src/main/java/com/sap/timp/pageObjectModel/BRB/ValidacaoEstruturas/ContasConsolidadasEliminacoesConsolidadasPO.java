@@ -59,10 +59,10 @@ public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBaseSteven{
 		String totalLinhasS = totalLinhas.getText();
 		System.out.println(totalLinhasS);
 		int totalLinhasI = Integer.valueOf(totalLinhasS);
-		int esperadoLinhas = 1884;
+		int esperadoLinhas = 0;
 		System.out.println(esperadoLinhas);
-		sucesso.add(igualInt(totalLinhasI, esperadoLinhas));
-		System.out.println(igualInt(totalLinhasI, esperadoLinhas)+" numero linhas");
+		sucesso.add(mayorQue(totalLinhasI, esperadoLinhas));
+		System.out.println(mayorQue(totalLinhasI, esperadoLinhas)+" numero linhas");
 		
 		System.out.println("-------------------------------------------------");
 		//CGI
@@ -72,10 +72,10 @@ public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBaseSteven{
 		System.out.println(cgiS + " String");
 		double cgiD = new Double(cgiS);
 		System.out.println(cgiD + " Double");
-		double esperadocgi = -0.51;
+		double esperadocgi = 0;
 		System.out.println(esperadocgi + " Esperado");
-		sucesso.add(igualDobule(cgiD, esperadocgi));
-		System.out.println(igualDobule(cgiD, esperadocgi)+" peso bruto");
+		sucesso.add(mayorQue(cgiD, esperadocgi));
+		System.out.println(mayorQue(cgiD, esperadocgi)+" peso bruto");
 		
 		System.out.println("-------------------------------------------------");
 

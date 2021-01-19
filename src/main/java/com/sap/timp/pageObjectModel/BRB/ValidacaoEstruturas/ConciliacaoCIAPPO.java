@@ -60,10 +60,10 @@ public class ConciliacaoCIAPPO extends TestBaseSteven{
 		String totalLinhasS = totalLinhas.getText();
 		System.out.println(totalLinhasS);
 		int totalLinhasI = Integer.valueOf(totalLinhasS);
-		int esperadoLinhas = 48;
+		int esperadoLinhas = 0;
 		System.out.println(esperadoLinhas);
-		sucesso.add(igualInt(totalLinhasI, esperadoLinhas));
-		System.out.println(igualInt(totalLinhasI, esperadoLinhas)+" numero linhas");
+		sucesso.add(mayorQue(totalLinhasI, esperadoLinhas));
+		System.out.println(mayorQue(totalLinhasI, esperadoLinhas)+" numero linhas");
 		
 		System.out.println("-------------------------------------------------");
 		//Montante em Moeda Local
@@ -74,10 +74,10 @@ public class ConciliacaoCIAPPO extends TestBaseSteven{
 		System.out.println(montanteMoedaLocalS + " String");
 		double montanteMoedaLocalD = new Double(montanteMoedaLocalS);
 		System.out.println(montanteMoedaLocalD + " Double");
-		double esperadomontanteMoedaLocal = 194894587.84;
+		double esperadomontanteMoedaLocal = 0;
 		System.out.println(esperadomontanteMoedaLocal + " Esperado");
-		sucesso.add(igualDobule(montanteMoedaLocalD, esperadomontanteMoedaLocal));
-		System.out.println(igualDobule(montanteMoedaLocalD, esperadomontanteMoedaLocal)+" peso bruto");
+		sucesso.add(mayorQue(montanteMoedaLocalD, esperadomontanteMoedaLocal));
+		System.out.println(mayorQue(montanteMoedaLocalD, esperadomontanteMoedaLocal)+" peso bruto");
 		
 		System.out.println("-------------------------------------------------");
 		//Montante em moeda local (não absoluto)
@@ -88,10 +88,10 @@ public class ConciliacaoCIAPPO extends TestBaseSteven{
 		System.out.println(montanteMoedaLocalNaoAbsolutoS+ " String");
 		double montanteMoedaLocalNaoAbsolutoD = new Double(montanteMoedaLocalNaoAbsolutoS);
 		System.out.println(montanteMoedaLocalNaoAbsolutoD + " Double");
-		double esperadomontanteMoedaLocalNaoAbsoluto = -182978530.52;
+		double esperadomontanteMoedaLocalNaoAbsoluto = 0;
 		System.out.println(esperadomontanteMoedaLocalNaoAbsoluto + " Esperado");
-		sucesso.add(igualDobule(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto));
-		System.out.println(igualDobule(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto)+" peso Liquido");
+		sucesso.add(mayorQue(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto));
+		System.out.println(mayorQue(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto)+" peso Liquido");
 		
 		System.out.println("-------------------------------------------------");
 		

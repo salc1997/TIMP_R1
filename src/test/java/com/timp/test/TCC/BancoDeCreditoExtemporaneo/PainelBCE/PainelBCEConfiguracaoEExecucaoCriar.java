@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCEConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoCriarPO;
+import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoCriarPO;
 
 public class PainelBCEConfiguracaoEExecucaoCriar extends TestBaseEliel {
 

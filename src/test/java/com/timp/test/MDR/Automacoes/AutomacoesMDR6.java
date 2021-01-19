@@ -1288,59 +1288,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			}
 			//90
 			
-			//Controle de Crédito Tributário > Status para Banco de Indébitos
-			//91
-			@Test(priority = 91)
-			public void statusParaBancoIndébitosCriar() {
-				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos-------------------------");
-				StatusParaBancoIndébitosCriar = new statusParaBancoIndébitosCriar();
-				StatusParaBancoIndébitosCriar.beforeClass();
-				StatusParaBancoIndébitosCriar.login();
-				StatusParaBancoIndébitosCriar.acessarMDR();
-				StatusParaBancoIndébitosCriar.criar();
-				StatusParaBancoIndébitosCriar.afterClass();
-			}
-			@Test(priority = 92)
-			public void StatusParaBancoIndébitosEditar() {
-				
-				statusParaBancoIndébitosEditar = new StatusParaBancoIndébitosEditar();
-				statusParaBancoIndébitosEditar.beforeClass();
-				statusParaBancoIndébitosEditar.login();
-				statusParaBancoIndébitosEditar.acessarMDR();
-				statusParaBancoIndébitosEditar.editar();
-				statusParaBancoIndébitosEditar.afterClass();
-			}
-			@Test(priority = 93)
-			public void StatusParaBancoIndébitosVisualizar() {
-				
-				statusParaBancoIndébitosVisualizar = new StatusParaBancoIndébitosVisualizar();
-				statusParaBancoIndébitosVisualizar.beforeClass();
-				statusParaBancoIndébitosVisualizar.login();
-				statusParaBancoIndébitosVisualizar.acessarMDR();
-				statusParaBancoIndébitosVisualizar.visualizar();
-				statusParaBancoIndébitosVisualizar.afterClass();
-			}
-			@Test(priority = 94)
-			public void StatusParaBancoIndébitosExcluir() {
-				
-				statusParaBancoIndébitosExcluir = new StatusParaBancoIndébitosExcluir();
-				statusParaBancoIndébitosExcluir.beforeClass();
-				statusParaBancoIndébitosExcluir.login();
-				statusParaBancoIndébitosExcluir.acessarMDR();
-				statusParaBancoIndébitosExcluir.excluir();
-				statusParaBancoIndébitosExcluir.afterClass();
-			}
-			@Test(priority = 95)
-			public void StatusParaBancoIndébitosExcluirMassa() {
-				
-				statusParaBancoIndébitosExcluirMassa = new StatusParaBancoIndébitosExcluirMassa();
-				statusParaBancoIndébitosExcluirMassa.beforeClass();
-				statusParaBancoIndébitosExcluirMassa.login();
-				statusParaBancoIndébitosExcluirMassa.acessarMDR();
-				statusParaBancoIndébitosExcluirMassa.criar();
-				statusParaBancoIndébitosExcluirMassa.afterClass();
-				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");
-			}
+			
 			//95
 
 			//Siscoserv  > Registro RVS
@@ -1707,6 +1655,59 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP FIN-------------------------");
 			}
 			
+			//Controle de Crédito Tributário > Status para Banco de Indébitos
+			//91
+			@Test(priority = 116)
+			public void statusParaBancoIndébitosCriar() {
+				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos-------------------------");
+				StatusParaBancoIndébitosCriar = new statusParaBancoIndébitosCriar();
+				StatusParaBancoIndébitosCriar.beforeClass();
+				StatusParaBancoIndébitosCriar.login();
+				StatusParaBancoIndébitosCriar.acessarMDR();
+				StatusParaBancoIndébitosCriar.criar();
+				StatusParaBancoIndébitosCriar.afterClass();
+			}
+			@Test(priority = 117)
+			public void StatusParaBancoIndébitosEditar() {
+				
+				statusParaBancoIndébitosEditar = new StatusParaBancoIndébitosEditar();
+				statusParaBancoIndébitosEditar.beforeClass();
+				statusParaBancoIndébitosEditar.login();
+				statusParaBancoIndébitosEditar.acessarMDR();
+				statusParaBancoIndébitosEditar.editar();
+				statusParaBancoIndébitosEditar.afterClass();
+			}
+			@Test(priority = 118)
+			public void StatusParaBancoIndébitosVisualizar() {
+				
+				statusParaBancoIndébitosVisualizar = new StatusParaBancoIndébitosVisualizar();
+				statusParaBancoIndébitosVisualizar.beforeClass();
+				statusParaBancoIndébitosVisualizar.login();
+				statusParaBancoIndébitosVisualizar.acessarMDR();
+				statusParaBancoIndébitosVisualizar.visualizar();
+				statusParaBancoIndébitosVisualizar.afterClass();
+			}
+			@Test(priority = 119)
+			public void StatusParaBancoIndébitosExcluir() {
+				
+				statusParaBancoIndébitosExcluir = new StatusParaBancoIndébitosExcluir();
+				statusParaBancoIndébitosExcluir.beforeClass();
+				statusParaBancoIndébitosExcluir.login();
+				statusParaBancoIndébitosExcluir.acessarMDR();
+				statusParaBancoIndébitosExcluir.excluir();
+				statusParaBancoIndébitosExcluir.afterClass();
+			}
+			@Test(priority = 120)
+			public void StatusParaBancoIndébitosExcluirMassa() {
+				
+				statusParaBancoIndébitosExcluirMassa = new StatusParaBancoIndébitosExcluirMassa();
+				statusParaBancoIndébitosExcluirMassa.beforeClass();
+				statusParaBancoIndébitosExcluirMassa.login();
+				statusParaBancoIndébitosExcluirMassa.acessarMDR();
+				statusParaBancoIndébitosExcluirMassa.criar();
+				statusParaBancoIndébitosExcluirMassa.afterClass();
+				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");
+			}
 			
 		
 

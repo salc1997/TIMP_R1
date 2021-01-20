@@ -15,7 +15,7 @@ public class CadastroContasContábeisFiltroIdPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Cadastro Contas Contábeis\"]")
 	public WebElement subItem;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement id;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")

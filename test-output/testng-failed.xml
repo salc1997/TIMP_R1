@@ -10,6 +10,7 @@
 >>>>>>> refs/remotes/origin/Eliel
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.ValidacaoEstruturas.SaldoContabilNewGLECC">
 =======
 <<<<<<< HEAD
@@ -31,7 +32,11 @@
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR6">
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.BCB.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="verificar"/>
 =======
@@ -51,7 +56,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
           <include name="criar"/>
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -84,7 +92,25 @@
           <include name="atividadeDeTributacaoXFornecedorEditar"/>
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="criarConfiguracionConfiguracao"/>
+          <include name="excluirConfiguracoes"/>
+          <include name="beforeClass"/>
+          <include name="subNivel4"/>
+          <include name="subNivel3"/>
+          <include name="subNivel2"/>
+          <include name="outputBCB"/>
+          <include name="abrirSubnivel3"/>
+          <include name="subNivel5"/>
+          <include name="abrirSubnivel1"/>
+          <include name="abrirSubnivel2"/>
+          <include name="abrirSubnivel5"/>
+          <include name="abrirSubnivel4"/>
+          <include name="excluirHierarquia"/>
+          <include name="criarConfiguracao"/>
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.SaldoContabilNewGLECC -->
 =======
@@ -137,6 +163,9 @@
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR3 -->
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BCB.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

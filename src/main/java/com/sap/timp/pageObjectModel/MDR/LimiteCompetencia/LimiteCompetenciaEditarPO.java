@@ -112,18 +112,7 @@ public class LimiteCompetenciaEditarPO extends TestBaseSteven {
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
 
-		sleep(1000);
-		campo.clear();
 
-		sleep(1000);
-		campo.sendKeys(valor);
-
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		System.out.println(sucesso);
 		return sucesso;
 

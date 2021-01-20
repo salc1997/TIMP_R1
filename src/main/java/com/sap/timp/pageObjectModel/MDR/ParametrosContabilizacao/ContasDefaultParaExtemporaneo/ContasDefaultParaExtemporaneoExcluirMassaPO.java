@@ -139,7 +139,9 @@ public class ContasDefaultParaExtemporaneoExcluirMassaPO extends TestBaseFernand
 		sleep(2000);	
 		
 		biblioteca.click();
-		
+		sleep(2000);
+		waitExpectElement(sim);
+		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -173,7 +175,9 @@ public class ContasDefaultParaExtemporaneoExcluirMassaPO extends TestBaseFernand
 		sleep(2000);	
 		
 		biblioteca.click();
-		
+		sleep(2000);
+		waitExpectElement(sim);
+		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

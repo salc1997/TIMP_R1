@@ -97,11 +97,11 @@ public class AgrupadorDeCFOPCriarPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeagrupamento.sendKeys("0709307");
+		codigodeagrupamento.sendKeys("10709307");
 		
 		sleep(2000);
 		
-		agrupadorcfop.sendKeys("7709377");
+		agrupadorcfop.sendKeys("17709377");
 		
 		sleep(2000);
 		

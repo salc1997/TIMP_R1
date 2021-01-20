@@ -254,7 +254,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoCriarPO  extends TestBaseFernan
 		
 		numeroRegistro.click();
 		sleep(1000);
-		numeroRegistro.sendKeys("12345");
+		numeroRegistro.sendKeys("212345");
 		sleep(2000);
 		
 		matricula.click();

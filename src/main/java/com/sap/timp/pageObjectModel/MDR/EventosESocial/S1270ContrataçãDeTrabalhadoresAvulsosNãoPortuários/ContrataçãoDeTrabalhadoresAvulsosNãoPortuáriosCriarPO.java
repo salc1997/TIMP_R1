@@ -151,7 +151,7 @@ public class ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriarPO extends TestB
 		
 		lotacaoTributaria.click();
 		sleep(1000);
-		lotacaoTributaria.sendKeys("Prueba tester");
+		lotacaoTributaria.sendKeys("Prueba tester 01");
 		sleep(2000);
 		
 		actionsMoveToElementElement(validadeDe);

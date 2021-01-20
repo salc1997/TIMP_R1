@@ -85,9 +85,9 @@ public class MotivosCesBeneficiosCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("111");
+		codigo.sendKeys("1111");
 		sleep(1000);
-		descricao.sendKeys("Movito Teste");
+		descricao.sendKeys("Movito Teste1");
 		sleep(1000);
 		
 		String data = fechaActual();

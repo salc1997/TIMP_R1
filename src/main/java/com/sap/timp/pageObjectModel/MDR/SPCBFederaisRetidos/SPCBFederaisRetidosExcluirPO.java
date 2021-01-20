@@ -14,7 +14,7 @@ public class SPCBFederaisRetidosExcluirPO extends TestBaseCristhian{
 	@FindBy(xpath = "//span[text()=\"SPCB - Federais Retidos\"]")
 	public WebElement SPGB;	
 
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement sim;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")

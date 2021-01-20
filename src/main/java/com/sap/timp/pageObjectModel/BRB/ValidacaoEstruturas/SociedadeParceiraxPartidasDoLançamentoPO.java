@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBaseSteven{
+public class SociedadeParceiraxPartidasDoLançamentoPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement ferramenta;
@@ -23,19 +23,19 @@ public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@id=\"total-record\"]/span[@class=\"value cell\"]")
 	public WebElement totalLinhas;
-	@FindBy(xpath = "//div[@data-column=\"40\" and not(@data-path or @aria-label)]/div")
-	public WebElement cgi;
+	@FindBy(xpath = "//div[@data-column=\"12\" and not(@data-path or @aria-label)]/div")
+	public WebElement valorDocumento;
 
 	
 	
-	public ContasConsolidadasEliminacoesConsolidadasPO() {
+	public SociedadeParceiraxPartidasDoLançamentoPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	
 	public ArrayList<Boolean> verificar() {
 		sleep(2000);
-		ferramenta.sendKeys("8004412");
+		ferramenta.sendKeys("8004546");
 		ferramenta.sendKeys(Keys.ENTER);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -65,17 +65,18 @@ public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBaseSteven{
 		System.out.println(mayorQue(totalLinhasI, esperadoLinhas)+" numero linhas");
 		
 		System.out.println("-------------------------------------------------");
-		//CGI
-		System.out.println("CGI");
-		String cgiS = cgi.getText();
-		cgiS = cgiS.replace(",", ".");
-		System.out.println(cgiS + " String");
-		double cgiD = new Double(cgiS);
-		System.out.println(cgiD + " Double");
-		double esperadocgi = 0;
-		System.out.println(esperadocgi + " Esperado");
-		sucesso.add(diferenteDe(cgiD, esperadocgi));
-		System.out.println(diferenteDe(cgiD, esperadocgi)+" peso bruto");
+		//valor do documento
+		System.out.println("Valor do Documento");
+		String valorDocumentoS = valorDocumento.getText();
+		valorDocumentoS = valorDocumentoS.replace(".", "");
+		valorDocumentoS = valorDocumentoS.replace(",", ".");
+		System.out.println(valorDocumentoS + " String");
+		double valorDocumentoD = new Double(valorDocumentoS);
+		System.out.println(valorDocumentoD + " Double");
+		double esperadovalorDocumentoi = 0;
+		System.out.println(esperadovalorDocumentoi + " Esperado");
+		sucesso.add(diferenteDe(valorDocumentoD, esperadovalorDocumentoi));
+		System.out.println(diferenteDe(valorDocumentoD, esperadovalorDocumentoi)+" peso bruto");
 		
 		System.out.println("-------------------------------------------------");
 

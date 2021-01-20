@@ -3,40 +3,26 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas">
-=======
-      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.TDK.Kpis.KpisCriar">
->>>>>>> refs/remotes/origin/Yessy
+      <class name="com.timp.test.BCB.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
         <methods>
-<<<<<<< HEAD
-          <include name="verificar"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="Grafico"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-          <include name="criar"/>
           <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Yessy
+          <include name="criarConfiguracionConfiguracao"/>
+          <include name="excluirConfiguracoes"/>
+          <include name="beforeClass"/>
+          <include name="subNivel4"/>
+          <include name="subNivel3"/>
+          <include name="subNivel2"/>
+          <include name="outputBCB"/>
+          <include name="abrirSubnivel3"/>
+          <include name="subNivel5"/>
+          <include name="abrirSubnivel1"/>
+          <include name="abrirSubnivel2"/>
+          <include name="abrirSubnivel5"/>
+          <include name="abrirSubnivel4"/>
+          <include name="excluirHierarquia"/>
+          <include name="criarConfiguracao"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas -->
-=======
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
->>>>>>> refs/remotes/origin/Yessy
+      </class> <!-- com.timp.test.BCB.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

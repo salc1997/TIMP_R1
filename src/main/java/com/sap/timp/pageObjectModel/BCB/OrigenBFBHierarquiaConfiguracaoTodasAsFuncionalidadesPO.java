@@ -409,7 +409,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PRUEBA 1");
+		nomeDeHierarquia.sendKeys("Prueba Automatizada Massiel");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Aba 1");
@@ -507,7 +507,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
+		sucesso.add(nome.contains("Prueba Automatizada Massiel"));
 
 		idInserir1(id2);
 
@@ -563,7 +563,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
+		nomeHirarquia.sendKeys("Prueba Automatizada de Massiel");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);

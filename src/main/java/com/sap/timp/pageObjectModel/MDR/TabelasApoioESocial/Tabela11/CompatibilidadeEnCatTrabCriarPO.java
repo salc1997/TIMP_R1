@@ -91,9 +91,9 @@ public class CompatibilidadeEnCatTrabCriarPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("017");
+		codigo.sendKeys("0117");
 		sleep(1000);
-		clasificacion.sendKeys("Test de QA para excluir 1");
+		clasificacion.sendKeys("Test de QA para excluir 11");
 		sleep(1000);
 		
 		selccion1.click();

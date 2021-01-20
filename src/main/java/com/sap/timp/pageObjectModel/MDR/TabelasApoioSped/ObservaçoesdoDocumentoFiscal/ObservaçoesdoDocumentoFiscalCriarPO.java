@@ -118,7 +118,7 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
 		sleep(2000);
 		opcaoid.click();
 		sleep(2000);
-		descricaosped.sendKeys("Descrição SPED 7093");
+		descricaosped.sendKeys("Descrição SPED 17093");
 		
 		String data = dataanterior();
 		

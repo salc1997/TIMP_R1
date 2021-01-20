@@ -84,7 +84,7 @@ public class DocumentosFiscaisICMSCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigodedocumentofiscal.sendKeys("709309");
+		codigodedocumentofiscal.sendKeys("1709309");
 		sleep(2000);
 		
 		especie.click();

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="3" passed="3">
 =======
 <<<<<<< HEAD
@@ -10,7 +11,10 @@
 =======
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Cristhian
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -22,8 +26,11 @@
 =======
 <testng-results total="112" passed="85" failed="27" skipped="0">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> refs/heads/Cristhian
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="118277" started-at="2021-01-19T05:28:24Z" finished-at="2021-01-19T05:30:22Z">
@@ -45,8 +52,12 @@
 =======
   <suite started-at="2021-01-19T03:47:48Z" name="Default suite" finished-at="2021-01-19T06:52:03Z" duration-ms="11055287">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+  <suite started-at="2021-01-19T14:28:11Z" name="Default suite" finished-at="2021-01-19T14:29:35Z" duration-ms="84192">
+>>>>>>> refs/heads/Cristhian
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="118277" started-at="2021-01-19T05:28:24Z" finished-at="2021-01-19T05:30:22Z">
@@ -80,10 +91,16 @@
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR6">
         <test-method signature="categoriasDeTrabalhadoresCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:47:48Z" name="categoriasDeTrabalhadoresCriar" finished-at="2021-01-19T00:49:14Z" duration-ms="86118" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+    <test started-at="2021-01-19T14:28:11Z" name="Default test" finished-at="2021-01-19T14:29:35Z" duration-ms="84192">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir@5c90e579]" started-at="2021-01-19T11:28:11Z" name="beforeClass" finished-at="2021-01-19T11:28:23Z" duration-ms="12452" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@f2f2cc1]" name="login" duration-ms="9286" started-at="2021-01-18T23:28:40Z" finished-at="2021-01-18T23:28:50Z">
 =======
@@ -105,10 +122,17 @@
         </test-method> <!-- categoriasDeTrabalhadoresCriar -->
         <test-method signature="categoriasDeTrabalhadoresEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:49:14Z" name="categoriasDeTrabalhadoresEditar" finished-at="2021-01-19T00:51:00Z" duration-ms="106075" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir@5c90e579]" started-at="2021-01-19T11:28:23Z" name="login" finished-at="2021-01-19T11:28:31Z" duration-ms="7308" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir@f2f2cc1]" name="acessarMDR" duration-ms="27161" started-at="2021-01-18T23:28:50Z" finished-at="2021-01-18T23:29:17Z">
 =======
@@ -134,8 +158,12 @@
         </test-method> <!-- categoriasDeTrabalhadoresExcluirMassa -->
         <test-method signature="categoriasDeTrabalhadoresVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:52:49Z" name="categoriasDeTrabalhadoresVisualizar" finished-at="2021-01-19T00:54:15Z" duration-ms="86240" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir@5c90e579]" started-at="2021-01-19T11:28:31Z" name="acessarMDR" finished-at="2021-01-19T11:28:57Z" duration-ms="26286" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
@@ -149,8 +177,13 @@
 =======
         </test-method> <!-- categoriasDeTrabalhadoresVisualizar -->
         <test-method signature="categoriasDeTrabalhadoresExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:54:15Z" name="categoriasDeTrabalhadoresExcluir" finished-at="2021-01-19T00:55:41Z" duration-ms="85910" status="PASS">
+=======
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir@5c90e579]" started-at="2021-01-19T11:28:57Z" name="excluir" finished-at="2021-01-19T11:29:35Z" duration-ms="37976" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- categoriasDeTrabalhadoresExcluir -->
         <test-method signature="financiamentoDeAposEspCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR6@48bb62]" started-at="2021-01-19T00:55:41Z" name="financiamentoDeAposEspCriar" finished-at="2021-01-19T00:57:07Z" duration-ms="85969" status="PASS">
           <reporter-output>
@@ -594,7 +627,14 @@ Session ID: 4cc67f9e4626695903398b6b7d0616c0
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir@5c90e579]" started-at="2021-01-19T11:29:35Z" name="afterClass" finished-at="2021-01-19T11:29:35Z" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
 >>>>>>> refs/remotes/origin/Yessy
@@ -2579,6 +2619,9 @@ Session ID: 2263d6abfb14b6c80446bf333f1d3c74
         </test-method> <!-- StatusParaBancoIndébitosExcluirMassa -->
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR6 -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir -->
+>>>>>>> refs/heads/Cristhian
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

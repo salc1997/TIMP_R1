@@ -94,8 +94,8 @@ public class AtribuicaoMunicipioEstadoCriarPO extends TestBaseSteven{
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		ibge.sendKeys("1234567");
-		descricao.sendKeys("Teste de Atribuição de Municípios por Estado/IBGE 7093");
+		ibge.sendKeys("11234567");
+		descricao.sendKeys("Teste de Atribuição de Municípios por Estado/IBGE 17093");
 		codigoMunicipio.sendKeys("1234");
 		sleep(1000);
 

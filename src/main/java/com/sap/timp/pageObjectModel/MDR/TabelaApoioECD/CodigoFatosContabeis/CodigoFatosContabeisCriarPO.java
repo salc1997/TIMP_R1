@@ -71,11 +71,11 @@ public class CodigoFatosContabeisCriarPO extends TestBaseFernando{
 		
 		sleep(2000);
 		waitExpectElement(inputCodigoFatoContabil);
-		inputCodigoFatoContabil.sendKeys("105");
+		inputCodigoFatoContabil.sendKeys("1105");
 		
 		sleep(2000);
 		waitExpectElement(inputDescricaoFatoContabil);
-		inputDescricaoFatoContabil.sendKeys("Prueba de tester = verificar");
+		inputDescricaoFatoContabil.sendKeys("Prueba de tester = verificar1");
 		
 		sleep(2000);
 		waitExpectElement(inputDataInicio);

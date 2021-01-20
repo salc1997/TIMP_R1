@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
 =======
@@ -88,17 +89,39 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
       <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho">
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR3">
+>>>>>>> refs/heads/Cristhian
         <methods>
+<<<<<<< HEAD
           <include name="criar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
+=======
+          <include name="classificaçaoDeContribuintesDoIPIDetalhes"/>
+          <include name="classificaçaoDeContribuintesDoIPIVisualizar"/>
+          <include name="documentosFiscaisICMSEditar"/>
+          <include name="classificaçaoDeContribuintesDoIPICriar"/>
+          <include name="subItensValidosExcluir"/>
+          <include name="classificaçaoDeContribuintesDoIPIEditar"/>
+          <include name="classificaçaoDeContribuintesDoIPIFiltros"/>
+          <include name="subItensValidosEditar"/>
+          <include name="subItensValidosCriar"/>
+>>>>>>> refs/heads/Cristhian
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho -->
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR6 -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR3 -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,22 +6,22 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TPC.AcessarTPCPO;
 import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisAprovarPO;
-import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisCancelarPO;
+import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisCamposManuaisPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosGeraisCancelar extends TestBaseCristhian {
+public class ParâmetrosGeraisCamposManuais extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTPCPO  acessarTPCPO;
-	ParâmetrosGeraisCancelarPO parâmetrosGeraisCancelarPO;
+	ParâmetrosGeraisCamposManuaisPO parâmetrosGeraisCamposManuaisPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTPCPO = new AcessarTPCPO();
-		parâmetrosGeraisCancelarPO = new ParâmetrosGeraisCancelarPO();
+		parâmetrosGeraisCamposManuaisPO = new ParâmetrosGeraisCamposManuaisPO();
 	}
 
 	@AfterClass
@@ -42,9 +42,8 @@ public class ParâmetrosGeraisCancelar extends TestBaseCristhian {
 	}
 
 	@Test(priority = 2)
-	public void cacelado() {
+	public void aprovado() {
 		
-		boolean sucesso = parâmetrosGeraisCancelarPO.cacelado();
+		boolean sucesso = parâmetrosGeraisCamposManuaisPO.manuais();
 	}
-
 }

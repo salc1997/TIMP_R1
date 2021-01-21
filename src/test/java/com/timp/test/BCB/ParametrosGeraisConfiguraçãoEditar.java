@@ -49,6 +49,8 @@ public class ParametrosGeraisConfiguraçãoEditar extends TestBaseCristhian {
   @Test(priority = 2)
   public void editar() {
 
+	//  parametrosGeraisConfiguraçãoEditarPO.editar();
+	  
 	boolean sucesso = parametrosGeraisConfiguraçãoEditarPO.editar();
 
 	assertTrue(sucesso, Editar);

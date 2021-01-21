@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="20" total="29" passed="9">
+=======
+<<<<<<< HEAD
+<testng-results total="3" passed="2" failed="1" skipped="0">
+=======
+<testng-results total="17" passed="17" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="1881108" started-at="2021-01-21T21:43:11Z" finished-at="2021-01-21T22:14:32Z">
+=======
+<<<<<<< HEAD
+  <suite started-at="2021-01-21T08:09:58Z" name="Default suite" finished-at="2021-01-21T08:10:58Z" duration-ms="59822">
+=======
+  <suite started-at="2021-01-21T04:13:12Z" name="Default suite" finished-at="2021-01-21T04:32:44Z" duration-ms="1172179">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="1881108" started-at="2021-01-21T21:43:11Z" finished-at="2021-01-21T22:14:32Z">
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR8">
         <test-method status="PASS" signature="regraDeReaberturaCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaCriar" duration-ms="71453" started-at="2021-01-21T15:43:11Z" finished-at="2021-01-21T15:44:22Z">
+=======
+<<<<<<< HEAD
+    <test started-at="2021-01-21T08:09:58Z" name="Default test" finished-at="2021-01-21T08:10:58Z" duration-ms="59822">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:09:58Z" name="beforeClass" finished-at="2021-01-21T02:10:16Z" duration-ms="17791" status="PASS">
+=======
+    <test started-at="2021-01-21T04:13:12Z" name="Default test" finished-at="2021-01-21T04:32:44Z" duration-ms="1172179">
+      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:12Z" name="beforeClass" finished-at="2021-01-20T22:13:24Z" duration-ms="12117" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaCriar -->
         <test-method status="PASS" signature="regraDeReaberturaEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaEditar" duration-ms="99016" started-at="2021-01-21T15:44:22Z" finished-at="2021-01-21T15:46:01Z">
+=======
+        </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:16Z" name="login" finished-at="2021-01-21T02:10:29Z" duration-ms="13170" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:24Z" name="login" finished-at="2021-01-20T22:13:31Z" duration-ms="7175" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaEditar -->
         <test-method status="PASS" signature="regraDeReaberturaDetalle()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaDetalle" duration-ms="72060" started-at="2021-01-21T15:46:01Z" finished-at="2021-01-21T15:47:13Z">
+=======
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:29Z" name="acessarTCC" finished-at="2021-01-21T02:10:49Z" duration-ms="19590" status="PASS">
+=======
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:31Z" name="brbEntrar" finished-at="2021-01-20T22:13:46Z" duration-ms="14156" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaDetalle -->
         <test-method status="PASS" signature="regraDeReaberturaExcluirMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaExcluirMassa" duration-ms="113968" started-at="2021-01-21T15:47:13Z" finished-at="2021-01-21T15:49:07Z">
           <reporter-output>
@@ -25,7 +72,14 @@
         </test-method> <!-- regraDeReaberturaExcluirMassa -->
         <test-method status="FAIL" signature="regraDeReaberturaVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaVisualizar" duration-ms="51844" started-at="2021-01-21T15:49:07Z" finished-at="2021-01-21T15:49:59Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:49Z" name="criar" finished-at="2021-01-21T02:10:58Z" duration-ms="9245" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
             <message>
+<<<<<<< HEAD
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="379"]/div[1]/div"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -35,8 +89,18 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: b18d78081892ff41e57b7bae5f4fa88c
 *** Element info: {Using=xpath, value=//div[@data-id="379"]/div[1]/div}]]>
+=======
+              <![CDATA[element click intercepted: Element <li tabindex="0" class="base-accordion-li " identifier="accordion-item-creditPanelIcmsConfiguration">...</li> is not clickable at point (152, 597). Other element would receive the click: <li class="base-toast  toast-error  " style="bottom: 59px; display: list-item;">...</li>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cc6758a44c163af096b7754bb0cd9870]]>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="379"]/div[1]/div"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -142,6 +206,40 @@ Session ID: e256eacc7cba039f7c850c55e65e27b3
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
+=======
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li tabindex="0" class="base-accordion-li " identifier="accordion-item-creditPanelIcmsConfiguration">...</li> is not clickable at point (152, 597). Other element would receive the click: <li class="base-toast  toast-error  " style="bottom: 59px; display: list-item;">...</li>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cc6758a44c163af096b7754bb0cd9870
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriarPO.criar(ConfiguracaoEExecucaoPainelCreditoICMSCriarPO.java:90)
+	at com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar.criar(ConfiguracaoEExecucaoPainelCreditoICMSCriar.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -164,9 +262,17 @@ Session ID: e256eacc7cba039f7c850c55e65e27b3
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:46Z" name="criarConfiguracaoExecucoes" finished-at="2021-01-20T22:14:48Z" duration-ms="62084" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- cadastroDeObrasCriar -->
         <test-method status="FAIL" signature="cadastroDeObrasEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="cadastroDeObrasEditar" duration-ms="36876" started-at="2021-01-21T15:52:10Z" finished-at="2021-01-21T15:52:46Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -237,8 +343,58 @@ Session ID: 71ef6dd7a1afbff5c63c1f1d44fe5650
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracionConfiguracao()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:14:48Z" name="criarConfiguracionConfiguracao" finished-at="2021-01-20T22:17:37Z" duration-ms="169712" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:58Z" name="afterClass" finished-at="2021-01-21T02:10:58Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- criarConfiguracionConfiguracao -->
+        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:17:37Z" name="criarConfiguracao" finished-at="2021-01-20T22:19:23Z" duration-ms="105438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="entradaManual()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:19:23Z" name="entradaManual" finished-at="2021-01-20T22:19:59Z" duration-ms="36139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entradaManual -->
+        <test-method signature="campoOutput()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:19:59Z" name="campoOutput" finished-at="2021-01-20T22:20:51Z" duration-ms="52332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campoOutput -->
+        <test-method signature="executar1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:20:51Z" name="executar1" finished-at="2021-01-20T22:21:48Z" duration-ms="56902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar1 -->
+        <test-method signature="executar2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:21:48Z" name="executar2" finished-at="2021-01-20T22:22:08Z" duration-ms="19933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar2 -->
+        <test-method signature="adicionarEntradaManual2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:22:08Z" name="adicionarEntradaManual2" finished-at="2021-01-20T22:23:06Z" duration-ms="58094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adicionarEntradaManual2 -->
+        <test-method signature="criarConfiguracaoHierarquia2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:23:06Z" name="criarConfiguracaoHierarquia2" finished-at="2021-01-20T22:24:25Z" duration-ms="78333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracaoHierarquia2 -->
+        <test-method signature="criarConfiguracionConfiguracao2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:24:25Z" name="criarConfiguracionConfiguracao2" finished-at="2021-01-20T22:27:22Z" duration-ms="177901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracionConfiguracao2 -->
+        <test-method signature="configurarConfiguracaoRelacionamiento()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:27:22Z" name="configurarConfiguracaoRelacionamiento" finished-at="2021-01-20T22:29:18Z" duration-ms="115868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurarConfiguracaoRelacionamiento -->
+        <test-method signature="relacionamentoTotalizadorSubperiodoFixoReplicar()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:29:18Z" name="relacionamentoTotalizadorSubperiodoFixoReplicar" finished-at="2021-01-20T22:30:23Z" duration-ms="64932" status="PASS">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- cadastroDeObrasEditar -->
         <test-method status="FAIL" signature="cadastroDeObrasExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="cadastroDeObrasExcluir" duration-ms="40974" started-at="2021-01-21T15:52:46Z" finished-at="2021-01-21T15:53:27Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -1504,6 +1660,31 @@ Session ID: 6c95acaa02efebf4719cac4b152a7079
           </reporter-output>
         </test-method> <!-- cadastroDeCódigoDeRegrasCriar -->
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR8 -->
+=======
+        </test-method> <!-- relacionamentoTotalizadorSubperiodoFixoReplicar -->
+        <test-method signature="resultadoFinalParte1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:30:23Z" name="resultadoFinalParte1" finished-at="2021-01-20T22:31:34Z" duration-ms="70700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultadoFinalParte1 -->
+        <test-method signature="resultadoFinalParte2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:31:34Z" name="resultadoFinalParte2" finished-at="2021-01-20T22:31:58Z" duration-ms="23736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultadoFinalParte2 -->
+        <test-method signature="resultadoDoAbaParte1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:31:58Z" name="resultadoDoAbaParte1" finished-at="2021-01-20T22:32:44Z" duration-ms="46582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultadoDoAbaParte1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:32:44Z" name="afterClass" finished-at="2021-01-20T22:32:44Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
+=======
+      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

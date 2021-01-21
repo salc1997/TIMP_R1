@@ -49,6 +49,7 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
@@ -130,31 +131,22 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		
 		salvarENovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
+		waitExpectElement(nao);
+	
+		nao.click();
+		sleep(4000);
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
+		sim.click();
+		sleep(4000);
 		
 		biblioteca.click();
-		nao.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+	//	waitExpectElement(nao);
+	//	nao.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
 
-		btnUltimaPagina.click();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+
 		// Crear segundo registro
 		novoDetalhe.click();
 		
@@ -167,7 +159,11 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectElement(nao);
+		
+		nao.click();
+		sleep(2000);
+		
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -178,8 +174,6 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);	
 		
 		biblioteca.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		sleep(2000);

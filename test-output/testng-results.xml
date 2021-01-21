@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
+=======
+<testng-results total="17" passed="17" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-01-21T08:09:58Z" name="Default suite" finished-at="2021-01-21T08:10:58Z" duration-ms="59822">
+=======
+  <suite started-at="2021-01-21T04:13:12Z" name="Default suite" finished-at="2021-01-21T04:32:44Z" duration-ms="1172179">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-01-21T08:09:58Z" name="Default test" finished-at="2021-01-21T08:10:58Z" duration-ms="59822">
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:09:58Z" name="beforeClass" finished-at="2021-01-21T02:10:16Z" duration-ms="17791" status="PASS">
+=======
+    <test started-at="2021-01-21T04:13:12Z" name="Default test" finished-at="2021-01-21T04:32:44Z" duration-ms="1172179">
+      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:12Z" name="beforeClass" finished-at="2021-01-20T22:13:24Z" duration-ms="12117" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:16Z" name="login" finished-at="2021-01-21T02:10:29Z" duration-ms="13170" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:24Z" name="login" finished-at="2021-01-20T22:13:31Z" duration-ms="7175" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:29Z" name="acessarTCC" finished-at="2021-01-21T02:10:49Z" duration-ms="19590" status="PASS">
+=======
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:31Z" name="brbEntrar" finished-at="2021-01-20T22:13:46Z" duration-ms="14156" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarTCC -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:49Z" name="criar" finished-at="2021-01-21T02:10:58Z" duration-ms="9245" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
@@ -86,14 +109,83 @@ Session ID: cc6758a44c163af096b7754bb0cd9870
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:46Z" name="criarConfiguracaoExecucoes" finished-at="2021-01-20T22:14:48Z" duration-ms="62084" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracionConfiguracao()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:14:48Z" name="criarConfiguracionConfiguracao" finished-at="2021-01-20T22:17:37Z" duration-ms="169712" status="PASS">
+>>>>>>> refs/heads/Fernando
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:58Z" name="afterClass" finished-at="2021-01-21T02:10:58Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- criarConfiguracionConfiguracao -->
+        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:17:37Z" name="criarConfiguracao" finished-at="2021-01-20T22:19:23Z" duration-ms="105438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="entradaManual()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:19:23Z" name="entradaManual" finished-at="2021-01-20T22:19:59Z" duration-ms="36139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entradaManual -->
+        <test-method signature="campoOutput()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:19:59Z" name="campoOutput" finished-at="2021-01-20T22:20:51Z" duration-ms="52332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campoOutput -->
+        <test-method signature="executar1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:20:51Z" name="executar1" finished-at="2021-01-20T22:21:48Z" duration-ms="56902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar1 -->
+        <test-method signature="executar2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:21:48Z" name="executar2" finished-at="2021-01-20T22:22:08Z" duration-ms="19933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar2 -->
+        <test-method signature="adicionarEntradaManual2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:22:08Z" name="adicionarEntradaManual2" finished-at="2021-01-20T22:23:06Z" duration-ms="58094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adicionarEntradaManual2 -->
+        <test-method signature="criarConfiguracaoHierarquia2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:23:06Z" name="criarConfiguracaoHierarquia2" finished-at="2021-01-20T22:24:25Z" duration-ms="78333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracaoHierarquia2 -->
+        <test-method signature="criarConfiguracionConfiguracao2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:24:25Z" name="criarConfiguracionConfiguracao2" finished-at="2021-01-20T22:27:22Z" duration-ms="177901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracionConfiguracao2 -->
+        <test-method signature="configurarConfiguracaoRelacionamiento()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:27:22Z" name="configurarConfiguracaoRelacionamiento" finished-at="2021-01-20T22:29:18Z" duration-ms="115868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurarConfiguracaoRelacionamiento -->
+        <test-method signature="relacionamentoTotalizadorSubperiodoFixoReplicar()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:29:18Z" name="relacionamentoTotalizadorSubperiodoFixoReplicar" finished-at="2021-01-20T22:30:23Z" duration-ms="64932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relacionamentoTotalizadorSubperiodoFixoReplicar -->
+        <test-method signature="resultadoFinalParte1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:30:23Z" name="resultadoFinalParte1" finished-at="2021-01-20T22:31:34Z" duration-ms="70700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultadoFinalParte1 -->
+        <test-method signature="resultadoFinalParte2()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:31:34Z" name="resultadoFinalParte2" finished-at="2021-01-20T22:31:58Z" duration-ms="23736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultadoFinalParte2 -->
+        <test-method signature="resultadoDoAbaParte1()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:31:58Z" name="resultadoDoAbaParte1" finished-at="2021-01-20T22:32:44Z" duration-ms="46582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultadoDoAbaParte1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:32:44Z" name="afterClass" finished-at="2021-01-20T22:32:44Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
+=======
+      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

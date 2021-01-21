@@ -51,7 +51,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 
 
-		driver.get(tp1);
+		driver.get(tc2);
 
 	   return driver;
 

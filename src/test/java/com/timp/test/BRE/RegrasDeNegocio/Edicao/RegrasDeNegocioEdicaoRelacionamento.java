@@ -1,30 +1,27 @@
-package com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais;
+package com.timp.test.BRE.RegrasDeNegocio.Edicao;
 
 import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.Edicao.RegrasDeNegocioEdicaoRelacionamentoPO;
 
-public class RegrasDeNegocioCriar extends TestBaseEliel {
-	
+public class RegrasDeNegocioEdicaoRelacionamento extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegrasDeNegocioCriarPO regrasDeNegocioCriarPO;
-	
+	RegrasDeNegocioEdicaoRelacionamentoPO regrasDeNegocioEdicaoRelacionamentoPO;
+
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regrasDeNegocioCriarPO = new RegrasDeNegocioCriarPO();
+		regrasDeNegocioEdicaoRelacionamentoPO = new RegrasDeNegocioEdicaoRelacionamentoPO();
 	}
 
 	@AfterClass
@@ -43,12 +40,8 @@ public class RegrasDeNegocioCriar extends TestBaseEliel {
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
-		ArrayList<Boolean> sucesso = regrasDeNegocioCriarPO.criar();
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-		
+	public void relacionamento() {
+		boolean sucesso = regrasDeNegocioEdicaoRelacionamentoPO.relacionamento();
+		assertTrue(sucesso, Editar);
 	}
- 
 }

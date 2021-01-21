@@ -32,7 +32,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBaseK
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 	@Test(priority = 0)
@@ -53,7 +53,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBaseK
 	@Test(priority = 2)
 	public void criarConfiguracao() {
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO.favoritosConfiguracao();
-		assertTrue(sucesso, "Registro adicionado aos favoritos com sucesso");
+		assertTrue(sucesso, Criar);
 	}
 
 }

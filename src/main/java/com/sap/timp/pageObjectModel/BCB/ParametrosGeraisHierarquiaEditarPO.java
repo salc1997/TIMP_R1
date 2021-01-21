@@ -46,7 +46,10 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBaseCristhian {
 	}
 	
 	public boolean editar() {
-		sleep(2000);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
 		hierarquias.click();
 		sleep(2000);
 		hierarquiaConfiguracao.click();

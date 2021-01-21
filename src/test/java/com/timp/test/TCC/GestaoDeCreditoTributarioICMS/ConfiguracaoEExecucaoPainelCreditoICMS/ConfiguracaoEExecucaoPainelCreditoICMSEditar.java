@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,18 +13,19 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoPainelCreditoICMSCriar extends TestBaseMassiel{
+public class ConfiguracaoEExecucaoPainelCreditoICMSEditar extends TestBaseMassiel{
 	
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	ConfiguracaoEExecucaoPainelCreditoICMSCriarPO configuracaoEExecucaoPainelCreditoICMSCriarPO;
+	ConfiguracaoEExecucaoPainelCreditoICMSEditarPO configuracaoEExecucaoPainelCreditoICMSEditarPO;
+	
 
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		configuracaoEExecucaoPainelCreditoICMSCriarPO = new ConfiguracaoEExecucaoPainelCreditoICMSCriarPO();
+		configuracaoEExecucaoPainelCreditoICMSEditarPO = new ConfiguracaoEExecucaoPainelCreditoICMSEditarPO();
   }
 
   @AfterClass
@@ -45,14 +46,11 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriar extends TestBaseMassiel
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 
 		
-		boolean sucesso = configuracaoEExecucaoPainelCreditoICMSCriarPO.criar();
-
-		assertTrue(sucesso, Criar);
+		boolean sucesso = configuracaoEExecucaoPainelCreditoICMSEditarPO.Editar();
+		assertTrue(sucesso, Filtros);
 	}
-
-
 
 }

@@ -195,4 +195,6 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), Eliminado);
 		}
 	}
+
+
 }

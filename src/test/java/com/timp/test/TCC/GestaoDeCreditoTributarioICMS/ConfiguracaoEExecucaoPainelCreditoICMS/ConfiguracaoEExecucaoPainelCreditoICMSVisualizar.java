@@ -21,9 +21,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizar extends TestBaseMa
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO configuracaoEExecucaoPainelCreditoICMSVisualizarPO;
 	
-  @Test
-  public void f() {
-  }
+ 
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();
@@ -50,14 +48,14 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizar extends TestBaseMa
  	}
  	
  	@Test(priority = 2)
- 	public void editar() {
+ 	public void visualizar() {
 
- 		configuracaoEExecucaoPainelCreditoICMSVisualizarPO.visualizar();
- 	/*	ArrayList<Boolean> sucesso = configuracaoEExecucaoRegistro1200VisualizarPO.visualizar();
+ 		
+ 		ArrayList<Boolean> sucesso = configuracaoEExecucaoPainelCreditoICMSVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
-		}*/
+		}
  	}
 
 }

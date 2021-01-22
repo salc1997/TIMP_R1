@@ -3,13 +3,44 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar">
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
         <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
+          <include name="oPPropriosRessarcimentosCriar"/>
+          <include name="tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa"/>
+          <include name="filiaisDetalle"/>
+          <include name="contasDefaultParaExtemporaneoVisualizar"/>
+          <include name="livrosFiscaisVisualizar"/>
+          <include name="limiteCompetenciaDetalhes"/>
+          <include name="saldoInicialDiferidoExcluir"/>
+          <include name="saldoInicialDiferidoEditar"/>
+          <include name="limiteCompetenciaVisualizar"/>
+          <include name="productosSCANCCriar"/>
+          <include name="registroDeExportaçaoEditar"/>
+          <include name="mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes"/>
+          <include name="limiteCompetenciaEditar"/>
+          <include name="limiteCompetenciaCriar"/>
+          <include name="sCANCDistribuidorasExcluir"/>
+          <include name="empresaFiltros"/>
+          <include name="hierarquiaDeCenariosDeCorreçaoEditar"/>
+          <include name="empresaEditar"/>
+          <include name="saldoInicialDiferidoExcluirMassa"/>
+          <include name="mapeamentoContabilEditar"/>
+          <include name="detalheExcluirMassa"/>
+          <include name="productosSCANCEditar"/>
+          <include name="saldoInicialDiferidoFiltroID"/>
+          <include name="parametrosParaLivroICMSSTVisualizar"/>
+          <include name="productosSCANCExcluir"/>
+          <include name="limiteCompetenciaExcluir"/>
+          <include name="saldoInicialDiferidoCriar"/>
+          <include name="hierarquiaDeCenariosDeCorreçaoVisualizar"/>
+          <include name="productosSCANCDetalhes"/>
+          <include name="limiteCompetenciaFiltrosAvansados"/>
+          <include name="contasDefaultParaExtemporaneoDetalhes"/>
+          <include name="hierarquiaDeCenariosDeCorreçaoCriar"/>
+          <include name="hierarquiaDeCenariosDeCorreçaoDetalhes"/>
+          <include name="productosSCANCVisualizar"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

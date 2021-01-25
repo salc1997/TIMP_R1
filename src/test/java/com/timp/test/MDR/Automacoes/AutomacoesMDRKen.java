@@ -548,18 +548,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	//ESPACIO PARA LOS ANTERIORES 
 	// 31-36
 	
-	@Test(priority = 37)
-	public void determinacionRelevanciaPorMotivoExcluirEmMassa() {
-		System.out.println(
-				"------Determinação de Relevância de Tarefa por Motivo de Reabertura > Determinação de Relevância por Motivo----------");
-		determinacionRelevanciaPorMotivoExcluirEmMassa = new DeterminacionRelevanciaPorMotivoExcluirEmMassa();
-		determinacionRelevanciaPorMotivoExcluirEmMassa.beforeClass();
-		determinacionRelevanciaPorMotivoExcluirEmMassa.ingresar();
-		determinacionRelevanciaPorMotivoExcluirEmMassa.mdrEntrar();
-		determinacionRelevanciaPorMotivoExcluirEmMassa.excluirEmMassa();
-		determinacionRelevanciaPorMotivoExcluirEmMassa.afterClass();
-	}
-	
 	@Test(priority = 42)
 	public void aliquotasDeTaxaDeActualizacaoExcluirEmMassa() {
 		System.out.println(
@@ -568,7 +556,8 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.beforeClass();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.ingresar();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.mdrEntrar();
-		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.excluirEmMassa();
+		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.criar();
+		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.excluir();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.afterClass();
 	}
 	

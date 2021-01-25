@@ -42,12 +42,18 @@ public class AliquotaDeTaxaDeActualizacaoExcluirEmMassa extends TestBaseKenssy {
 
   }
   
+  
   @Test(priority = 2)
-  public void excluirEmMassa() {
+  public void criar() {
 	boolean sucesso = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 	sleep(1000);
-	
+
+  }
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluir() {
+
 	boolean sucesso2 = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.excluir();
 	assertTrue(sucesso2, Eliminado);
   }

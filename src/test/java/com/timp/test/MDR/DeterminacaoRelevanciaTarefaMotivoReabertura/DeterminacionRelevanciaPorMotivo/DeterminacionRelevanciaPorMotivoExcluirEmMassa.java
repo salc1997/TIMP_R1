@@ -31,7 +31,7 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassa extends TestBaseKens
 	  driver.close();
   }
   
-  @Test(priority = 0)
+  @Test(priority = 0) 
   public void ingresar() {
 	  loginTC.login();
   }
@@ -43,13 +43,23 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassa extends TestBaseKens
   }
   
   @Test(priority = 2)
-  public void excluirEmMassa() {
+  public void criar() {
 	boolean sucesso = determinacionRelevanciaPorMotivoExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
+
 	sleep(1000);
+	
+
+  }
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluir() {
+
 	
 	boolean sucesso2 = determinacionRelevanciaPorMotivoExcluirEmMassaPO.determinacaoDeRelevanciaPorMotivoExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);
   }
+
+  
 
 }

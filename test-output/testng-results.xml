@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -34,8 +35,12 @@
 =======
 <testng-results skipped="0" failed="0" total="3" passed="3">
 >>>>>>> refs/remotes/origin/Steven
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-25T17:35:31Z" name="Default suite" finished-at="2021-01-25T17:36:57Z" duration-ms="86022">
@@ -69,8 +74,12 @@
 =======
   <suite name="Default suite" duration-ms="95614" started-at="2021-01-25T21:56:10Z" finished-at="2021-01-25T21:57:45Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+  <suite started-at="2021-01-25T21:08:18Z" name="Default suite" finished-at="2021-01-25T21:10:49Z" duration-ms="150802">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-25T17:35:31Z" name="Default test" finished-at="2021-01-25T17:36:57Z" duration-ms="86022">
@@ -122,8 +131,14 @@
       <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEliminar">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12458" started-at="2021-01-25T15:56:10Z" finished-at="2021-01-25T15:56:22Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+    <test started-at="2021-01-25T21:08:18Z" name="Default test" finished-at="2021-01-25T21:10:49Z" duration-ms="150802">
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluir@6e9175d8]" started-at="2021-01-25T15:08:18Z" name="beforeClass" finished-at="2021-01-25T15:08:33Z" duration-ms="14944" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -141,7 +156,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Steven
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:35:45Z" name="login" finished-at="2021-01-25T14:35:52Z" duration-ms="7823" status="PASS">
@@ -172,8 +190,12 @@
 =======
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="login" duration-ms="6865" started-at="2021-01-25T15:56:22Z" finished-at="2021-01-25T15:56:29Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluir@6e9175d8]" started-at="2021-01-25T15:08:33Z" name="login" finished-at="2021-01-25T15:08:40Z" duration-ms="6685" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -191,7 +213,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Steven
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:35:52Z" name="acessarMDR" finished-at="2021-01-25T14:36:21Z" duration-ms="28499" status="PASS">
@@ -220,8 +245,12 @@
 =======
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="acessarMDR" duration-ms="23409" started-at="2021-01-25T15:56:29Z" finished-at="2021-01-25T15:56:53Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluir@6e9175d8]" started-at="2021-01-25T15:08:40Z" name="acessarMDR" finished-at="2021-01-25T15:09:04Z" duration-ms="24258" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
@@ -260,8 +289,13 @@
 =======
         <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="excluir" duration-ms="48453" started-at="2021-01-25T15:56:53Z" finished-at="2021-01-25T15:57:41Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluir@6e9175d8]" started-at="2021-01-25T15:09:04Z" name="excluir" finished-at="2021-01-25T15:10:49Z" duration-ms="104901" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -284,8 +318,13 @@
         </test-method> <!-- excluir -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4413" started-at="2021-01-25T15:57:41Z" finished-at="2021-01-25T15:57:45Z">
 >>>>>>> refs/remotes/origin/Steven
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluir@6e9175d8]" started-at="2021-01-25T15:10:49Z" name="afterClass" finished-at="2021-01-25T15:10:49Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- detalheTipoTributoDetalhes -->
         <test-method signature="detalheTipoTributoFiltroIdDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@5b247367]" started-at="2021-01-21T16:01:50Z" name="detalheTipoTributoFiltroIdDetalhes" finished-at="2021-01-21T16:02:39Z" duration-ms="49143" status="PASS">
@@ -1965,7 +2004,10 @@ Session ID: 6c95acaa02efebf4719cac4b152a7079
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Steven
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir -->
@@ -4510,6 +4552,9 @@ Session ID: ea9cab6e3303416e0349b7c94bb6724e
 =======
       </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEliminar -->
 >>>>>>> refs/remotes/origin/Steven
+=======
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluir -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

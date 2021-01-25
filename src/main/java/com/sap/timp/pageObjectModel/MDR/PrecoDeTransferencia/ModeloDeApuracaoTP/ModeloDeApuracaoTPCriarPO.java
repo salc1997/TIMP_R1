@@ -81,8 +81,11 @@ public class ModeloDeApuracaoTPCriarPO extends TestBaseEliel {
 	
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		String id = "0";
 		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		}
 		System.out.println(id);
 		
 		sleep(2000);

@@ -516,7 +516,8 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 		emprestimosExcluirEmMassa.beforeClass();
 		emprestimosExcluirEmMassa.ingresar();
 		emprestimosExcluirEmMassa.mdrEntrar();
-		emprestimosExcluirEmMassa.excluirEmMassaEmprestimos();
+		emprestimosExcluirEmMassa.criar();
+		emprestimosExcluirEmMassa.excluir();
 		emprestimosExcluirEmMassa.afterClass();
 	}
 	

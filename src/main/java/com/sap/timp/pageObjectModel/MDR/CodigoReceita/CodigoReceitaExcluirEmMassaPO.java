@@ -19,8 +19,11 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//li[text()=\"ICMS\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement tributoO;
+	
+	@FindBy(xpath = "//li[text()=\"ICMS\"]")
+	public WebElement tributoO2;
 	
 	@FindBy(xpath = "//li[@class=\"list-item\" and @id and string()][1]")
 	public WebElement opcao;
@@ -71,7 +74,8 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public CodigoReceitaExcluirEmMassaPO() {
 
@@ -94,7 +98,7 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		sleep(2000);
-		System.out.println(id);
+
 		
 		novo.click();
 		sleep(5000);
@@ -117,32 +121,27 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		descricao.sendKeys("Teste de Código da Receita");
 		
 		validadeDe.sendKeys(fechaActual());
-		sleep(1000);
+
 		
-		btnJustificativa.click();
-		sleep(2000);
-		
-		waitExpectElement(inputJustificativa);
-		inputJustificativa.sendKeys("TESTE AUTOMATIZADO");
-		sleep(1000);
-		btnAplicar.click();
 		
 		sleep(2000);
 		novo.click();
 		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
+		sleep(2000);
 
 		//Segundo Registro
 		
 		tributo.click();
 		sleep(2000);
-		tributoO.click();
+		tributoO2.click();
 
 		attributeToBeXpath("//div[@id=\"state\"]/div", "class", "base-select required");
 		sleep(2000);
@@ -157,19 +156,13 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		
 		validadeDe.sendKeys(fechaActual());		
 		sleep(1000);
+
 		
-		btnJustificativa.click();
+		gravar.click();
 		sleep(2000);
-		
-		waitExpectElement(inputJustificativa);
-		inputJustificativa.clear();
-		inputJustificativa.sendKeys("TESTE AUTOMATIZADO");
+		waitExpectElement(sim);
 		sleep(1000);
-		btnAplicar.click();
-		
-		sleep(2000);
-		novo.click();
-		sleep(2000);
+		nao.click();
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
@@ -179,7 +172,7 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		sleep(2000);
 		biblioteca.click();
 		
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -204,9 +197,9 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		
 	
 		sleep(2000);
-		System.out.println(id);
-		System.out.println(idRegistro1);
-		System.out.println(idRegistro2);
+		System.out.println("Id antes da criação: "+id);
+		System.out.println("Id após da criação: "+idRegistro1);
+		System.out.println("Id após da criação: "+idRegistro2);
 		
 		double idD = convertToDouble(id);
 		double idRegistroD1 = convertToDouble(idRegistro1);
@@ -219,7 +212,7 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		}else {
 			sucesso = false;
 		}
-		System.out.println(sucesso);
+		System.out.println("Registros Criados: "+sucesso);
 		
 		
 		return sucesso;
@@ -274,7 +267,7 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		int id2 = convertToInt(idRegistro1);
 		int id3 = convertToInt(idRegistro2);
 		
-		System.out.println(" Id Ultimo Registro: "+ id1);
+		System.out.println("Id Ultimo Registro: "+ id1);
 		System.out.println("Id Excluir Registro 1: " + id2);
 		System.out.println("Id Excluir Registro 2: " + id3);
 		

@@ -52,6 +52,18 @@ public class CódigoContabilizaçãoExcluirMassa  extends TestBaseCristhian{
 
 		assertTrue(sucesso, Criar);
 
+
 	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void exlcuir() {
+
+		
+		boolean sucesso = códigoContabilizaçãoExcluirMassaPO.excluir();
+
+		assertTrue(sucesso, Eliminado);
+
+	}
+
 
 }

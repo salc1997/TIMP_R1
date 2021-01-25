@@ -45,7 +45,10 @@ public class TestBaseEliel extends TestBaseSteven {
 		driver.manage().window().maximize();
 		driver.get(tc2);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 
 	}

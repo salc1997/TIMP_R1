@@ -138,14 +138,7 @@ public class CodigoContabilizacaoExcluirPO extends TestBaseEliel {
 			sucesso= true;
 		}
 
-		
-		/*
-		pesquisa.sendKeys(idRegistro);
-		pesquisa.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-		boolean sucesso = nenhumResult.isDisplayed();
-		*/
 		System.out.println(sucesso);
 		return sucesso;
 

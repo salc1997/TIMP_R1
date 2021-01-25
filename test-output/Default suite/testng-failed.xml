@@ -1,127 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
->>>>>>> refs/remotes/origin/Eliel
-    <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas">
-=======
-      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.TDK.Kpis.KpisCriar">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR6">
->>>>>>> refs/remotes/origin/Eliel
-        <methods>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-          <include name="criarAssociaçãoCodigoAjuste"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="Grafico"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-          <include name="criar"/>
-          <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-          <include name="atividadeDeTributacaoXFornecedorVisualizar"/>
-          <include name="StatusParaBancoIndébitosExcluir"/>
-          <include name="StatusParaBancoIndébitosExcluirMassa"/>
-          <include name="atividadeDeTributacaoXFornecedorFiltroID"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosVisualizar"/>
-          <include name="diagnosticoDeProcessosCriar"/>
-          <include name="StatusParaBancoIndébitosEditar"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosEditar"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa"/>
-          <include name="rateioDeConsorcioPesquisaPorID"/>
-          <include name="subcapitalizacaoExcluirEmMassa"/>
-          <include name="atividadeDeTributacaoXFornecedorCriar"/>
-          <include name="statusParaBancoIndébitosCriar"/>
-          <include name="StatusParaBancoIndébitosVisualizar"/>
-          <include name="atividadeDeTributacaoXFornecedorDetalhes"/>
-          <include name="incentivosFiscaisPPExcluirEmMassa"/>
-          <include name="atividadeDeTributacaoXFornecedorExcluir"/>
-          <include name="atividadeDeTributacaoXFornecedorExcluirEmMassa"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosCriar"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosExcluir"/>
-          <include name="tiposDeServicosExcluirEmMassa"/>
-          <include name="diagnosticoDeProcessosExcluir"/>
-          <include name="taxasDeConversaoExcluirEmMassa"/>
-          <include name="diagnosticoDeProcessosEditar"/>
-          <include name="diagnosticoDeProcessosExcluirEmMassa"/>
-          <include name="diagnosticoDeProcessosVisualizar"/>
-          <include name="atividadeDeTributacaoXFornecedorEditar"/>
->>>>>>> refs/remotes/origin/Eliel
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendas -->
-=======
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho">
-=======
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR3">
->>>>>>> refs/heads/Cristhian
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
         <methods>
-<<<<<<< HEAD
-          <include name="criar"/>
           <include name="beforeClass"/>
+          <include name="acessarTCC"/>
           <include name="afterClass"/>
-=======
-          <include name="classificaçaoDeContribuintesDoIPIDetalhes"/>
-          <include name="classificaçaoDeContribuintesDoIPIVisualizar"/>
-          <include name="documentosFiscaisICMSEditar"/>
-          <include name="classificaçaoDeContribuintesDoIPICriar"/>
-          <include name="subItensValidosExcluir"/>
-          <include name="classificaçaoDeContribuintesDoIPIEditar"/>
-          <include name="classificaçaoDeContribuintesDoIPIFiltros"/>
-          <include name="subItensValidosEditar"/>
-          <include name="subItensValidosCriar"/>
->>>>>>> refs/heads/Cristhian
+          <include name="login"/>
+          <include name="executarr"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.RegrasDeEscrituraçãoCriarMasCaminho -->
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR6 -->
->>>>>>> refs/remotes/origin/Eliel
-=======
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR3 -->
->>>>>>> refs/heads/Cristhian
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

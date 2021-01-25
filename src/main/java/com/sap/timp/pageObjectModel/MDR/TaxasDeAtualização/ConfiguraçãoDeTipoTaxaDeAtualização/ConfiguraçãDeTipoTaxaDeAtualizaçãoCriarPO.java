@@ -82,12 +82,12 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseMassiel{
 		
 		codigoNoIndice.click();
 		sleep(1000);
-		codigoNoIndice.sendKeys("010001");
+		codigoNoIndice.sendKeys("710001");
 		sleep(2000);
 		
 		nomeDoIndice.click();
 		sleep(1000);
-		nomeDoIndice.sendKeys("Tester1");
+		nomeDoIndice.sendKeys("Tester7");
 		sleep(2000);
 		
 		descricaoDoIndice.click();

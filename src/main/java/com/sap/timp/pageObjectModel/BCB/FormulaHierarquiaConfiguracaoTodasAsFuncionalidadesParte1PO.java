@@ -451,7 +451,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(1000);
 			
-			nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
+			nomeDeHierarquia.sendKeys("Prueba Automatizadaa QA1");
 			sleep(1000);
 
 			nomeDaAba.sendKeys("Teste Automatizado");
@@ -549,7 +549,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 					.getText();
 			System.out.println(nome);
 
-			sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
+			sucesso.add(nome.contains("Prueba Automatizadaa QA1"));
 
 			idInserir1(id2);
 
@@ -606,7 +606,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 			sleep(2000);
 
-			nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
+			nomeHirarquia.sendKeys("Prueba Automatizadaa QA1");
 			sleep(1000);
 			nomeHirarquia.sendKeys(Keys.ENTER);
 			sleep(1000);

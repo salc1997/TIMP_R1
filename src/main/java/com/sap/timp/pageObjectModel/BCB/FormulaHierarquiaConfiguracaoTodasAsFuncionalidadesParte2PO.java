@@ -571,6 +571,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		executarB.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(1000);
 		waitExpectElement(gravar);
 		sleep(3000);
 		

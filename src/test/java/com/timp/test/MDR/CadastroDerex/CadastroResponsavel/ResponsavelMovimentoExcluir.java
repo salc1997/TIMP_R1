@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel.*;
+import com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.*;
 
-public class ResponsavelMovimentoCriar extends TestBaseSteven {
-
+public class ResponsavelMovimentoExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	ResponsavelMovimentoCriarPO responsavelMovimentoCriarPO;
+	ResponsavelMovimentoExcluirPO responsavelMovimentoExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,12 +23,12 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		responsavelMovimentoCriarPO = new ResponsavelMovimentoCriarPO();
+		responsavelMovimentoExcluirPO = new ResponsavelMovimentoExcluirPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -45,12 +45,10 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven {
 	}
 
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
 
-		boolean sucesso = responsavelMovimentoCriarPO.criar();
+		boolean sucesso = responsavelMovimentoExcluirPO.eliminar();
 
-		assertTrue(sucesso, Criar);
-
+		assertTrue(sucesso, Eliminado);
 	}
-
 }

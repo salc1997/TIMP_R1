@@ -50,8 +50,15 @@ public class ResponsavelMovimientoExcluirMasas extends TestBaseMassiel{
 		boolean sucesso =responsavelMovimientoExcluirMasasPO.criar();
 		assertTrue(sucesso, Criar);
 		
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
 		boolean sucesso2 = responsavelMovimientoExcluirMasasPO.ResponsavelMovimientoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
 	}
+
 
 }

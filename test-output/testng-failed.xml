@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR8">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar">
-=======
-      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa">
         <methods>
-<<<<<<< HEAD
-          <include name="contasContábeisRBLPFiltroId"/>
-          <include name="dEPARAContasContábeisExcluir"/>
-          <include name="dEPARAContasContábeisEditar"/>
-          <include name="cadastroDeObrasEditar"/>
-          <include name="dEPARAContasContábeisCriar"/>
-          <include name="cadastroDeObrasExcluir"/>
-          <include name="parametrizaçãoDoLivroOficialExcluir"/>
-          <include name="parametrizaçãoDoLivroOficial"/>
-          <include name="cadastroContaisContabeisFiltroID"/>
-          <include name="cadastroDeObrasCriar"/>
-          <include name="parametrizaçãoDoLivroOficialEditar"/>
-          <include name="regraDeReaberturaVisualizar"/>
-          <include name="s2230AfastamentoTemporárioFiltroId"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoExcluirMasas"/>
-          <include name="instituicaoExcluirMasas"/>
-          <include name="cadastroDeObrasExcluirEmMassa"/>
-          <include name="dEPARAContasContábeisVisualizar"/>
-          <include name="responsavelMovimientoExcluirMasas"/>
-          <include name="cadastroCondiçaoExcluirMasas"/>
-          <include name="parametrizaçãoDoLivroOficialVisualizar"/>
-=======
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR8 -->
-=======
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
-=======
-          <include name="resultadoDoAbaParte1"/>
+          <include name="excluirEmMassa"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

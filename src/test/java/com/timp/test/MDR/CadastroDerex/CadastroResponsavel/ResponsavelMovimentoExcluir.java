@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TaxasDeActualizacao;
+package com.timp.test.MDR.CadastroDerex.CadastroResponsavel;
 
 import static org.testng.Assert.assertTrue;
 
@@ -6,26 +6,24 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
+import com.sap.timp.pageObjectModel.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.*;
 
-public class AliquotasDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
- 
-	
+public class ResponsavelMovimentoExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
+	ResponsavelMovimentoExcluirPO responsavelMovimentoExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO = new AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO();
-
+		responsavelMovimentoExcluirPO = new ResponsavelMovimentoExcluirPO();
 	}
 
 	@AfterClass
@@ -45,16 +43,12 @@ public class AliquotasDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-	
 
 	@Test(priority = 2)
-	public void filtro() {
+	public void excluir() {
 
-		boolean sucesso = aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO.filtro();
-		assertTrue(sucesso, Filtros);
+		boolean sucesso = responsavelMovimentoExcluirPO.eliminar();
 
-		
-
+		assertTrue(sucesso, Eliminado);
 	}
-	
 }

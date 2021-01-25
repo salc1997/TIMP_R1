@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="4" passed="4">
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <testng-results skipped="0" failed="20" total="29" passed="9">
@@ -14,10 +20,25 @@
 <testng-results total="127" passed="93" failed="34" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
 =======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
+=======
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2021-01-25T17:35:31Z" name="Default suite" finished-at="2021-01-25T17:36:57Z" duration-ms="86022">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="129138" started-at="2021-01-22T23:39:57Z" finished-at="2021-01-22T23:42:06Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,8 +56,24 @@
 =======
   <suite started-at="2021-01-25T00:23:18Z" name="Default suite" finished-at="2021-01-25T00:27:12Z" duration-ms="233652">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-01-22T23:57:11Z" name="Default suite" finished-at="2021-01-22T23:59:19Z" duration-ms="128455">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2021-01-25T17:35:31Z" name="Default test" finished-at="2021-01-25T17:36:57Z" duration-ms="86022">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:35:31Z" name="beforeClass" finished-at="2021-01-25T14:35:45Z" duration-ms="13263" status="PASS">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="129138" started-at="2021-01-22T23:39:57Z" finished-at="2021-01-22T23:42:06Z">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa@3a079870]" name="beforeClass" is-config="true" duration-ms="11199" started-at="2021-01-22T17:39:57Z" finished-at="2021-01-22T17:40:08Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,8 +101,19 @@
       <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:23:18Z" name="beforeClass" finished-at="2021-01-24T21:23:32Z" duration-ms="14042" status="PASS">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-01-22T23:57:11Z" name="Default test" finished-at="2021-01-22T23:59:19Z" duration-ms="128455">
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:57:11Z" name="beforeClass" finished-at="2021-01-22T17:57:22Z" duration-ms="11554" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,7 +122,16 @@
 =======
 =======
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:35:45Z" name="login" finished-at="2021-01-25T14:35:52Z" duration-ms="7823" status="PASS">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa@3a079870]" name="login" duration-ms="6685" started-at="2021-01-22T17:40:08Z" finished-at="2021-01-22T17:40:15Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:16Z" name="login" finished-at="2021-01-21T02:10:29Z" duration-ms="13170" status="PASS">
@@ -89,8 +146,17 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:23:32Z" name="login" finished-at="2021-01-24T21:23:39Z" duration-ms="7107" status="PASS">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:57:22Z" name="login" finished-at="2021-01-22T17:57:30Z" duration-ms="7844" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,7 +165,16 @@
 =======
 =======
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:35:52Z" name="acessarMDR" finished-at="2021-01-25T14:36:21Z" duration-ms="28499" status="PASS">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa@3a079870]" name="acessarMDR" duration-ms="15084" started-at="2021-01-22T17:40:15Z" finished-at="2021-01-22T17:40:30Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:29Z" name="acessarTCC" finished-at="2021-01-21T02:10:49Z" duration-ms="19590" status="PASS">
@@ -113,13 +188,32 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:23:39Z" name="acessarTCC" finished-at="2021-01-24T21:24:00Z" duration-ms="20184" status="PASS">
+=======
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:57:30Z" name="brbEntrar" finished-at="2021-01-22T17:57:44Z" duration-ms="14378" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:36:21Z" name="excluir" finished-at="2021-01-25T14:36:57Z" duration-ms="36243" status="PASS">
+=======
+<<<<<<< HEAD
         </test-method> <!-- acessarTCC -->
         <test-method signature="executarEditar()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:24:00Z" name="executarEditar" finished-at="2021-01-24T21:27:12Z" duration-ms="192299" status="PASS">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:36:57Z" name="afterClass" finished-at="2021-01-25T14:36:57Z" duration-ms="159" status="PASS">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- acessarMDR -->
+        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa@3a079870]" name="criar" duration-ms="69082" started-at="2021-01-22T17:40:30Z" finished-at="2021-01-22T17:41:39Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,8 +223,14 @@
         </test-method> <!-- executarEditar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:27:12Z" name="afterClass" finished-at="2021-01-24T21:27:12Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaExcluirMassa -->
         <test-method status="FAIL" signature="regraDeReaberturaVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaVisualizar" duration-ms="51844" started-at="2021-01-21T15:49:07Z" finished-at="2021-01-21T15:49:59Z">
@@ -388,7 +488,10 @@ Session ID: 1725de4ee03fb0847c697e36bae4f9df
 =======
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
 =======
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- brbEntrar -->
+<<<<<<< HEAD
         <test-method signature="criarConfiguracaoExecucoes()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:13:46Z" name="criarConfiguracaoExecucoes" finished-at="2021-01-20T22:14:48Z" duration-ms="62084" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -475,14 +578,20 @@ Session ID: 71ef6dd7a1afbff5c63c1f1d44fe5650
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:58Z" name="afterClass" finished-at="2021-01-21T02:10:58Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa@3a079870]" name="excluirMassa" duration-ms="27070" started-at="2021-01-22T17:41:39Z" finished-at="2021-01-22T17:42:06Z">
 =======
-        </test-method> <!-- criarConfiguracionConfiguracao -->
-        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:17:37Z" name="criarConfiguracao" finished-at="2021-01-20T22:19:23Z" duration-ms="105438" status="PASS">
+        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:57:44Z" name="criarConfiguracao" finished-at="2021-01-22T17:59:19Z" duration-ms="94656" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluirMassa -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa@3a079870]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-01-22T17:42:06Z" finished-at="2021-01-22T17:42:06Z">
+=======
         </test-method> <!-- criarConfiguracao -->
+<<<<<<< HEAD
         <test-method signature="entradaManual()[pri:0, instance:com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@48d61b48]" started-at="2021-01-20T22:19:23Z" name="entradaManual" finished-at="2021-01-20T22:19:59Z" duration-ms="36139" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -1805,10 +1914,22 @@ Session ID: 6c95acaa02efebf4719cac4b152a7079
         </test-method> <!-- detalheExcluirMassa -->
         <test-method signature="detalheTipoTributoFiscalExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@5b247367]" started-at="2021-01-21T16:04:04Z" name="detalheTipoTributoFiscalExcluir" finished-at="2021-01-21T16:05:32Z" duration-ms="88081" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:59:19Z" name="afterClass" finished-at="2021-01-22T17:59:19Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
 =======
@@ -4337,6 +4458,11 @@ Session ID: ea9cab6e3303416e0349b7c94bb6724e
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

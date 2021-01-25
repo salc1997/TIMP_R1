@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR8">
@@ -22,7 +27,15 @@
 =======
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
 >>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <include name="excluirEmMassa"/>
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="contasContábeisRBLPFiltroId"/>
@@ -95,9 +108,17 @@
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
 =======
           <include name="resultadoDoAbaParte1"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="criarConfiguracaoHierarquia"/>
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
+=======
       </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -105,19 +126,26 @@
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR2 -->
 >>>>>>> refs/remotes/origin/Yessy
 =======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
+      <class name="com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaExcluir">
         <methods>
           <include name="beforeClass"/>
-          <include name="acessarTCC"/>
+          <include name="excluir"/>
           <include name="afterClass"/>
-          <include name="login"/>
-          <include name="executarr"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaExcluir -->
+=======
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
 >>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

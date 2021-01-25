@@ -72,6 +72,8 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public CodigoContabilizacaoCriarPO() {
 		PageFactory.initElements(driver, this);
@@ -139,10 +141,17 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		datainicio.sendKeys(data);
 		
 		gravar.click();
-		
-		butaosim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		waitExpectElement(butaosim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(butaosim);
+		sleep(2000);
+		butaosim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
+		sleep(2000);
+
 		
 		biblioteca.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

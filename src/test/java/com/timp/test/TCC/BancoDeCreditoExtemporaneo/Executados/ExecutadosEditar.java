@@ -44,9 +44,9 @@ public class ExecutadosEditar extends TestBaseMassiel{
 	
 	@Test(priority = 2)
 	public void executarEditar() {
-		executadosEditarPO.editar();
-		/*boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
-		assertTrue(sucesso, Criar);*/
+	
+		boolean sucesso = 	executadosEditarPO.editar();
+		assertTrue(sucesso, Criar);
 	}
 
 }

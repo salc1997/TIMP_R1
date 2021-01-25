@@ -131,7 +131,7 @@ public class KpisCriarPO extends TestBaseMassiel {
 		sleep(2000);
 		
 		waitExpectElement(biblioteca);
-		sleep(2000);
+		sleep(4000);
 		
 		biblioteca.click();
 		sleep(2000);

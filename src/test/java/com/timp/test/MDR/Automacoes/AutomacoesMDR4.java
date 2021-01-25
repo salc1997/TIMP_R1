@@ -453,6 +453,7 @@ public class AutomacoesMDR4 extends TestBaseSteven {
 	ProcessosAdmJudiciaisDetalhes processosAdmJudiciaisDetalhes;
 	ProcessosAdmJudiciaisExcluir processosAdmJudiciaisExcluir;
 	ProcessosAdmJudiciaisExcluirEmMasa processosAdmJudiciaisExcluirEmMasa;
+	
 	//Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra
 	DeterminacaoDeRelevanciaPorRegraCriar determinacaoDeRelevanciaPorRegraCriar;
 	DeterminacaoDeRelevanciaPorRegraDetalhes determinacaoDeRelevanciaPorRegraDetalhes;

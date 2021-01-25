@@ -176,7 +176,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 		sleep(1000);
 	
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		//attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();

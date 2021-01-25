@@ -563,7 +563,7 @@ public class AutomacoesMDR8 {
 		parametrizaçãoDoLivroOficialEditar.afterClass();
 	}
 
-	@Test(priority = 49)
+	@Test(priority = 48)
 	public void parametrizaçãoDoLivroOficialVisualizar() {
 		parametrizaçãoDoLivroOficialVisualizar = new ParametrizaçãoDoLivroOficialVisualizar();
 		parametrizaçãoDoLivroOficialVisualizar.beforeClass();
@@ -599,6 +599,7 @@ public class AutomacoesMDR8 {
 	// Determinacao Relevancia Tarefa Motivo Reabertura > Determinacion Relevancia
 	// Por Motivo
 
+	@Test(priority = 51)
 	public void determinacionRelevanciaPorMotivoCriar() {
 
 		System.out.println(
@@ -612,6 +613,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoCriar.afterClass();
 	}
 
+	@Test(priority = 52)
 	public void determinacionRelevanciaPorMotivoEditar() {
 
 		determinacionRelevanciaPorMotivoEditar = new DeterminacionRelevanciaPorMotivoEditar();
@@ -622,6 +624,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoEditar.afterClass();
 	}
 
+	@Test(priority = 53)
 	public void determinacionRelevanciaPorMotivoDetalles() {
 
 		determinacionRelevanciaPorMotivoDetalles = new DeterminacionRelevanciaPorMotivoDetalles();
@@ -632,6 +635,8 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoDetalles.afterClass();
 	}
 
+	@Test(priority = 54)
+	
 	public void determinacionRelevanciaPorMotivoVisualizar() {
 
 		determinacionRelevanciaPorMotivoVisualizar = new DeterminacionRelevanciaPorMotivoVisualizar();
@@ -642,6 +647,8 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoVisualizar.afterClass();
 	}
 
+	@Test(priority = 55)
+	
 	public void determinacionRelevanciaPorMotivoExcluirEmMassa() {
 
 		determinacionRelevanciaPorMotivoExcluirEmMassa = new DeterminacionRelevanciaPorMotivoExcluirEmMassa();
@@ -652,6 +659,8 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoExcluirEmMassa.afterClass();
 	}
 
+	@Test(priority = 56)
+	
 	public void determinacionRelevanciaPorMotivoExcluir() {
 
 		determinacionRelevanciaPorMotivoExcluir = new DeterminacionRelevanciaPorMotivoExcluir();
@@ -668,6 +677,8 @@ public class AutomacoesMDR8 {
 
 	// Eventos e-Social > S1060 Ambientes de trabalho
 
+	@Test(priority = 57)
+	
 	public void s1060AmbientesDeTrablhoCriar() {
 
 		System.out.println("---- Eventos e-Social > S1060 Ambientes de trabalho -------------");
@@ -680,6 +691,8 @@ public class AutomacoesMDR8 {
 		s1060AmbientesDeTrablhoCriar.afterClass();
 	}
 
+	@Test(priority = 58)
+	
 	public void s1060AmbientesDeTrablhoEditar() {
 
 		s1060AmbientesDeTrablhoEditar = new S1060AmbientesDeTrablhoEditar();
@@ -690,6 +703,8 @@ public class AutomacoesMDR8 {
 		s1060AmbientesDeTrablhoEditar.afterClass();
 	}
 
+	@Test(priority = 59)
+	
 	public void s1060AmbientesDeTrabalhoFiltroID() {
 
 		s1060AmbientesDeTrabalhoFiltroID = new S1060AmbientesDeTrabalhoFiltroID();
@@ -700,6 +715,8 @@ public class AutomacoesMDR8 {
 		s1060AmbientesDeTrabalhoFiltroID.afterClass();
 	}
 
+	@Test(priority = 60)
+	
 	public void s1060AmbientesDeTrablhoExcluirMassa() {
 
 		s1060AmbientesDeTrablhoExcluirMassa = new S1060AmbientesDeTrablhoExcluirMassa();
@@ -710,6 +727,8 @@ public class AutomacoesMDR8 {
 		s1060AmbientesDeTrablhoExcluirMassa.afterClass();
 	}
 
+	@Test(priority = 61)
+	
 	public void s1060AmbientesDeTrablhoExcluir() {
 
 		s1060AmbientesDeTrablhoExcluir = new S1060AmbientesDeTrablhoExcluir();
@@ -724,6 +743,8 @@ public class AutomacoesMDR8 {
 
 //Eventos e-social > S1250 Aquisicao De Producao Rural/Aquisição
 
+	@Test(priority = 62)
+	
 	public void s1250AquisiçãoCriar() {
 
 		System.out.println("---- Eventos e-social > S1250 Aquisicao De Producao Rural/Aquisição -------------");
@@ -736,6 +757,8 @@ public class AutomacoesMDR8 {
 		s1250AquisiçãoCriar.afterClass();
 	}
 
+	@Test(priority = 63)
+	
 	public void s1250AquisiçãoEditar() {
 
 		s1250AquisiçãoEditar = new S1250AquisiçãoEditar();
@@ -746,6 +769,8 @@ public class AutomacoesMDR8 {
 		s1250AquisiçãoEditar.afterClass();
 	}
 
+	@Test(priority = 64)
+	
 	public void s1250AquisiçãoExcluir() {
 
 		s1250AquisiçãoExcluir = new S1250AquisiçãoExcluir();
@@ -761,6 +786,8 @@ public class AutomacoesMDR8 {
 
 //Eventos e-social > S1250 Aquisicao De Producao Rural/Aquisição Toltal
 
+	@Test(priority = 65)
+	
 	public void s1250AquisiçãoTotalCriar() {
 
 		System.out.println("---- Eventos e-social > S1250 Aquisicao De Producao Rural/Aquisição Toltal -------------");
@@ -773,6 +800,8 @@ public class AutomacoesMDR8 {
 		s1250AquisiçãoTotalCriar.afterClass();
 	}
 
+	@Test(priority = 66)
+	
 	public void s1250AquisiçãoTotalEditar() {
 
 		s1250AquisiçãoTotalEditar = new S1250AquisiçãoTotalEditar();
@@ -784,6 +813,8 @@ public class AutomacoesMDR8 {
 	}
 //Eventos e-social > S1250 Aquisicao De Producao Rural/Dados de eventos
 
+	@Test(priority = 67)
+	
 	public void s1250DadosdeEventoCriar() {
 
 		System.out.println("---- Eventos e-social > S1250 Aquisicao De Producao Rural/Dados de eventos -------------");
@@ -796,6 +827,8 @@ public class AutomacoesMDR8 {
 		s1250DadosdeEventoCriar.afterClass();
 	}
 
+	@Test(priority = 68)
+	
 	public void s1250DadosdeEventoEditar() {
 
 		s1250DadosdeEventoEditar = new S1250DadosdeEventoEditar();
@@ -806,6 +839,8 @@ public class AutomacoesMDR8 {
 		s1250DadosdeEventoEditar.afterClass();
 	}
 
+	@Test(priority = 69)
+	
 	public void s1250DadosdeEventoExcluir() {
 
 		s1250DadosdeEventoExcluir = new S1250DadosdeEventoExcluir();
@@ -821,6 +856,8 @@ public class AutomacoesMDR8 {
 
 //Eventos e-social > S1250 Aquisicao De Producao Rural/Det Aquisição
 
+	@Test(priority = 70)
+	
 	public void s1250DetAquisiçãoCriar() {
 
 		System.out.println("---- Eventos e-social > S1250 Aquisicao De Producao Rural/Det Aquisição -------------");
@@ -832,6 +869,8 @@ public class AutomacoesMDR8 {
 		s1250DetAquisiçãoCriar.criar();
 		s1250DetAquisiçãoCriar.afterClass();
 	}
+	
+	@Test(priority = 71)
 
 	public void s1250DetAquisiçãoEditar() {
 
@@ -843,6 +882,8 @@ public class AutomacoesMDR8 {
 		s1250DetAquisiçãoEditar.afterClass();
 	}
 
+	@Test(priority = 72)
+	
 	public void s1250DetAquisiçãoExcluir() {
 
 		s1250DetAquisiçãoExcluir = new S1250DetAquisiçãoExcluir();
@@ -858,6 +899,8 @@ public class AutomacoesMDR8 {
 
 //Eventos e-social > S1250 Aquisicao De Producao Rural/Det nota fiscal
 
+	@Test(priority = 73)
+	
 	public void s1250DetNotaFiscalCriar() {
 
 		System.out.println("---- Eventos e-social > S1250 Aquisicao De Producao Rural/Det nota fiscal  -------------");
@@ -870,6 +913,8 @@ public class AutomacoesMDR8 {
 		s1250DetNotaFiscalCriar.afterClass();
 	}
 
+	@Test(priority = 74)
+	
 	public void S1250DetNotaFiscalEditar() {
 
 		s1250DetNotaFiscalEditar = new S1250DetNotaFiscalEditar();
@@ -880,6 +925,8 @@ public class AutomacoesMDR8 {
 		s1250DetNotaFiscalEditar.afterClass();
 	}
 
+	@Test(priority = 75)
+	
 	public void S1250DetNotaFiscalExcluir() {
 
 		s1250DetNotaFiscalExcluir = new S1250DetNotaFiscalExcluir();
@@ -894,6 +941,8 @@ public class AutomacoesMDR8 {
 	}
 //Eventos e-social > S1250 Aquisicao De Producao Rural/Det Processo Judicial
 
+	@Test(priority = 76)
+	
 	public void s1250DetProcessoJudicialCriar() {
 
 		System.out.println(
@@ -907,6 +956,8 @@ public class AutomacoesMDR8 {
 		s1250DetProcessoJudicialCriar.afterClass();
 	}
 
+	@Test(priority = 77)
+	
 	public void s1250DetProcessoJudicialEditar() {
 
 		s1250DetProcessoJudicialEditar = new S1250DetProcessoJudicialEditar();
@@ -917,6 +968,8 @@ public class AutomacoesMDR8 {
 		s1250DetProcessoJudicialEditar.afterClass();
 	}
 
+	@Test(priority = 78)
+	
 	public void s1250DetProcessoJudicialExcluir() {
 
 		s1250DetProcessoJudicialExcluir = new S1250DetProcessoJudicialExcluir();
@@ -932,6 +985,8 @@ public class AutomacoesMDR8 {
 
 //Eventos e-social > S1250 Aquisicao De Producao Rural/Inf Proc Judicial
 
+	@Test(priority = 79)
+	
 	public void s1250InfProcJudicialCriar() {
 
 		System.out.println("----Eventos e-social > S1250 Aquisicao De Producao Rural/Inf Proc Judicial  -------------");
@@ -944,6 +999,8 @@ public class AutomacoesMDR8 {
 		s1250InfProcJudicialCriar.afterClass();
 	}
 
+	@Test(priority = 80)
+	
 	public void s1250InfProcJudicialEditar() {
 
 		s1250InfProcJudicialEditar = new S1250InfProcJudicialEditar();
@@ -954,6 +1011,8 @@ public class AutomacoesMDR8 {
 		s1250InfProcJudicialEditar.afterClass();
 	}
 
+	@Test(priority = 81)
+	
 	public void s1250InfProcJudicialExcluir() {
 
 		s1250InfProcJudicialExcluir = new S1250InfProcJudicialExcluir();
@@ -969,6 +1028,8 @@ public class AutomacoesMDR8 {
 	
 	//Parametros Para Categoria De IRF
 	
+	@Test(priority = 82)
+	
 	public void parametrosParaCategoriaDeIRFCriar() {
 
 		System.out.println("----Parametros Para Categoria De IRF-------------");
@@ -980,6 +1041,8 @@ public class AutomacoesMDR8 {
 		parametrosParaCategoriaDeIRFCriar.criar();
 		parametrosParaCategoriaDeIRFCriar.afterClass();
 	}
+	
+	@Test(priority = 83)
 	
 	public void parametrosParaCategoriaDeIRFDetalhes() {
 
@@ -993,6 +1056,8 @@ public class AutomacoesMDR8 {
 	
 	
 
+	@Test(priority = 84)
+	
 	public void parametrosParaCategoriaDeIRFEditar() {
 
 		parametrosParaCategoriaDeIRFEditar = new ParametrosParaCategoriaDeIRFEditar();
@@ -1003,6 +1068,7 @@ public class AutomacoesMDR8 {
 		parametrosParaCategoriaDeIRFEditar.afterClass();
 	}
 	
+	@Test(priority = 85)
 	
 	public void parametrosParaCategoriaDeIRFVisualizar() {
 
@@ -1015,6 +1081,8 @@ public class AutomacoesMDR8 {
 	}
 	
 
+	@Test(priority = 86)
+	
 	public void parametrosParaCategoriaDeIRFExcluirEmMasa() {
 
 		parametrosParaCategoriaDeIRFExcluirEmMasa = new ParametrosParaCategoriaDeIRFExcluirEmMasa();
@@ -1024,6 +1092,8 @@ public class AutomacoesMDR8 {
 		parametrosParaCategoriaDeIRFExcluirEmMasa.excluir();
 		parametrosParaCategoriaDeIRFExcluirEmMasa.afterClass();
 	}
+	
+	@Test(priority = 87)
 	
 	public void parametrosParaCategoriaDeIRFExcluir() {
 

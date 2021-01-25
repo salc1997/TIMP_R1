@@ -113,10 +113,17 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamen
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(configuracaoDaConsolidacao);
+		waitExpectElement(configuracoes);
 		sleep(2000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
+		
+		sleep(2000);
+		configuracoes.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		configuracaoDaConsolidacao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

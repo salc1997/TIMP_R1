@@ -190,10 +190,10 @@ public ArrayList<Boolean> verificar() {
 		String totalLinhasS = totalLinhas.getText();
 		System.out.println(totalLinhasS);
 		int totalLinhasI = Integer.valueOf(totalLinhasS);
-		int esperadoLinhas = 990;
+		int esperadoLinhas = 0;
 		System.out.println(esperadoLinhas);
-		sucesso.add(igualInt(totalLinhasI, esperadoLinhas));
-		System.out.println(igualInt(totalLinhasI, esperadoLinhas)+" numero linhas");
+		sucesso.add(mayorQue(totalLinhasI, esperadoLinhas));
+		System.out.println(mayorQue(totalLinhasI, esperadoLinhas)+" numero linhas");
 		
 		System.out.println("-------------------------------------------------");
 		//Saldo Janeiro
@@ -204,10 +204,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(saldojaneiroS + " String");
 		double saldojaneiroD = new Double(saldojaneiroS);
 		System.out.println(saldojaneiroD + " Double");
-		double esperadoSaldoJaneiro = 2891.57;
+		double esperadoSaldoJaneiro = 0;
 		System.out.println(esperadoSaldoJaneiro + " Esperado");
-		sucesso.add(igualDobule(saldojaneiroD, esperadoSaldoJaneiro));
-		System.out.println(igualDobule(saldojaneiroD, esperadoSaldoJaneiro) +" Saldo Janeiro");
+		sucesso.add(mayorQue(saldojaneiroD, esperadoSaldoJaneiro));
+		System.out.println(mayorQue(saldojaneiroD, esperadoSaldoJaneiro) +" Saldo Janeiro");
 		
 		System.out.println("-------------------------------------------------");
 		//Saldo fevereiro
@@ -218,10 +218,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(saldofevereiroS + " String");
 		double saldofevereiroD = new Double(saldofevereiroS);
 		System.out.println(saldofevereiroD + " Double");
-		double esperadoSaldoFevereiro = 2891.56;
+		double esperadoSaldoFevereiro = 0;
 		System.out.println(esperadoSaldoFevereiro + " Esperado");
-		sucesso.add(igualDobule(saldofevereiroD , esperadoSaldoFevereiro));
-		System.out.println(igualDobule(saldofevereiroD , esperadoSaldoFevereiro) +" Saldo fevereiro");
+		sucesso.add(diferenteDe(saldofevereiroD , esperadoSaldoFevereiro));
+		System.out.println(diferenteDe(saldofevereiroD , esperadoSaldoFevereiro) +" Saldo fevereiro");
 		
 		System.out.println("-------------------------------------------------");
 		//Saldo Março
@@ -232,10 +232,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(saldomarcoS + " String");
 		double saldomarcoD = new Double(saldomarcoS);
 		System.out.println( saldomarcoD + " Double");
-		double esperadoSaldoMarco = 2891.57;
+		double esperadoSaldoMarco = 0;
 		System.out.println(esperadoSaldoMarco + " Esperado");
-		sucesso.add(igualDobule( saldomarcoD , esperadoSaldoMarco));
-		System.out.println(igualDobule( saldomarcoD , esperadoSaldoMarco) +" Saldo marco");
+		sucesso.add(diferenteDe( saldomarcoD , esperadoSaldoMarco));
+		System.out.println(diferenteDe( saldomarcoD , esperadoSaldoMarco) +" Saldo marco");
 		
 		System.out.println("-------------------------------------------------");
 		//Saldo Abril
@@ -246,10 +246,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(saldoabrilS+ " String");
 		double saldoabrilD = new Double(saldoabrilS);
 		System.out.println( saldoabrilD + " Double");
-		double esperadoSaldoAbril = 3006.96;
+		double esperadoSaldoAbril = 0;
 		System.out.println(esperadoSaldoAbril + " Esperado");
-		sucesso.add(igualDobule( saldoabrilD , esperadoSaldoAbril));
-		System.out.println(igualDobule(saldoabrilD , esperadoSaldoAbril) +" Saldo abril");
+		sucesso.add(diferenteDe( saldoabrilD , esperadoSaldoAbril));
+		System.out.println(diferenteDe(saldoabrilD , esperadoSaldoAbril) +" Saldo abril");
 		
 		
 		System.out.println("-------------------------------------------------");
@@ -261,10 +261,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(saldoacumuladojaneiroS+ " String");
 		double saldoacumuladojaneiroD = new Double(saldoacumuladojaneiroS);
 		System.out.println( saldoacumuladojaneiroD + " Double");
-		double esperadoSaldoAcumuladoJaneiro = 2891.57;
+		double esperadoSaldoAcumuladoJaneiro = 0;
 		System.out.println(esperadoSaldoAcumuladoJaneiro + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladojaneiroD , esperadoSaldoAcumuladoJaneiro));
-		System.out.println(igualDobule(saldoacumuladojaneiroD , esperadoSaldoAcumuladoJaneiro) +" Saldo Acumulado Janeiro");
+		sucesso.add(mayorQue( saldoacumuladojaneiroD , esperadoSaldoAcumuladoJaneiro));
+		System.out.println(mayorQue(saldoacumuladojaneiroD , esperadoSaldoAcumuladoJaneiro) +" Saldo Acumulado Janeiro");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Fevereiro
@@ -275,10 +275,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(saldoacumuladofevereiroS+ " String");
 		double saldoacumuladofevereiroD = new Double(saldoacumuladofevereiroS);
 		System.out.println( saldoacumuladofevereiroD + " Double");
-		double esperadoSaldoAcumuladoFevereiro = 5783.13;
+		double esperadoSaldoAcumuladoFevereiro = 0;
 		System.out.println(esperadoSaldoAcumuladoFevereiro+ " Esperado");
-		sucesso.add(igualDobule( saldoacumuladofevereiroD , esperadoSaldoAcumuladoFevereiro));
-		System.out.println(igualDobule(saldoacumuladofevereiroD , esperadoSaldoAcumuladoFevereiro) +" Saldo Acumulado fevereiro");
+		sucesso.add(mayorQue( saldoacumuladofevereiroD , esperadoSaldoAcumuladoFevereiro));
+		System.out.println(mayorQue(saldoacumuladofevereiroD , esperadoSaldoAcumuladoFevereiro) +" Saldo Acumulado fevereiro");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -290,10 +290,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladomarcoS+ " String");
 		double  saldoacumuladomarcoD = new Double( saldoacumuladomarcoS);
 		System.out.println(  saldoacumuladomarcoD + " Double");
-		double esperadoSaldoAcumuladoMarco = 8674.70;
+		double esperadoSaldoAcumuladoMarco = 0;
 		System.out.println(esperadoSaldoAcumuladoMarco + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladomarcoD , esperadoSaldoAcumuladoMarco));
-		System.out.println(igualDobule(saldoacumuladomarcoD , esperadoSaldoAcumuladoMarco) +" Saldo Acumulado marco");
+		sucesso.add(mayorQue( saldoacumuladomarcoD , esperadoSaldoAcumuladoMarco));
+		System.out.println(mayorQue(saldoacumuladomarcoD , esperadoSaldoAcumuladoMarco) +" Saldo Acumulado marco");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Abril
@@ -304,10 +304,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladoabrilS+ " String");
 		double  saldoacumuladoabrilD = new Double( saldoacumuladoabrilS);
 		System.out.println(  saldoacumuladoabrilD + " Double");
-		double esperadoSaldoAcumuladoAbril = 11681.66;
+		double esperadoSaldoAcumuladoAbril = 0;
 		System.out.println(esperadoSaldoAcumuladoAbril + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladoabrilD , esperadoSaldoAcumuladoAbril));
-		System.out.println(igualDobule(saldoacumuladoabrilD , esperadoSaldoAcumuladoAbril) +" Saldo Acumulado abril");
+		sucesso.add(mayorQue( saldoacumuladoabrilD , esperadoSaldoAcumuladoAbril));
+		System.out.println(mayorQue(saldoacumuladoabrilD , esperadoSaldoAcumuladoAbril) +" Saldo Acumulado abril");
 		
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Maio
@@ -318,10 +318,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladomaioS+ " String");
 		double  saldoacumuladomaioD = new Double( saldoacumuladomaioS);
 		System.out.println(  saldoacumuladomaioD + " Double");
-		double esperadoSaldoAcumuladoMaio = 11681.66;
+		double esperadoSaldoAcumuladoMaio = 0;
 		System.out.println(esperadoSaldoAcumuladoMaio + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladomaioD , esperadoSaldoAcumuladoMaio));
-		System.out.println(igualDobule(saldoacumuladomaioD , esperadoSaldoAcumuladoMaio) +" Saldo Acumulado maio");
+		sucesso.add(mayorQue( saldoacumuladomaioD , esperadoSaldoAcumuladoMaio));
+		System.out.println(mayorQue(saldoacumuladomaioD , esperadoSaldoAcumuladoMaio) +" Saldo Acumulado maio");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Junho
@@ -332,10 +332,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladojunhoS+ " String");
 		double saldoacumuladojunhoD = new Double( saldoacumuladojunhoS);
 		System.out.println(  saldoacumuladojunhoD + " Double");
-		double esperadoSaldoAcumuladoJunho = 11681.66;
+		double esperadoSaldoAcumuladoJunho = 0;
 		System.out.println( esperadoSaldoAcumuladoJunho + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladojunhoD ,  esperadoSaldoAcumuladoJunho));
-		System.out.println(igualDobule(saldoacumuladojunhoD ,  esperadoSaldoAcumuladoJunho) +" Saldo Acumulado junho");
+		sucesso.add(mayorQue( saldoacumuladojunhoD ,  esperadoSaldoAcumuladoJunho));
+		System.out.println(mayorQue(saldoacumuladojunhoD ,  esperadoSaldoAcumuladoJunho) +" Saldo Acumulado junho");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Julho
@@ -346,10 +346,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladojulhoS+ " String");
 		double saldoacumuladojulhoD = new Double( saldoacumuladojulhoS);
 		System.out.println(  saldoacumuladojulhoD + " Double");
-		double esperadoSaldoAcumuladoJulho = 11681.66;
+		double esperadoSaldoAcumuladoJulho = 0;
 		System.out.println( esperadoSaldoAcumuladoJulho + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladojulhoD ,  esperadoSaldoAcumuladoJulho));
-		System.out.println(igualDobule(saldoacumuladojulhoD ,  esperadoSaldoAcumuladoJulho) +" Saldo Acumulado julho");
+		sucesso.add(mayorQue( saldoacumuladojulhoD ,  esperadoSaldoAcumuladoJulho));
+		System.out.println(mayorQue(saldoacumuladojulhoD ,  esperadoSaldoAcumuladoJulho) +" Saldo Acumulado julho");
 
 		
 		
@@ -362,10 +362,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladoagostoS+ " String");
 		double saldoacumuladoagostoD = new Double( saldoacumuladoagostoS);
 		System.out.println(  saldoacumuladoagostoD + " Double");
-		double esperadoSaldoAcumuladoAgosto = 11681.66;
+		double esperadoSaldoAcumuladoAgosto = 0;
 		System.out.println( esperadoSaldoAcumuladoAgosto + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladoagostoD ,  esperadoSaldoAcumuladoAgosto));
-		System.out.println(igualDobule(saldoacumuladoagostoD ,  esperadoSaldoAcumuladoAgosto) +" Saldo Acumulado agosto");
+		sucesso.add(mayorQue( saldoacumuladoagostoD ,  esperadoSaldoAcumuladoAgosto));
+		System.out.println(mayorQue(saldoacumuladoagostoD ,  esperadoSaldoAcumuladoAgosto) +" Saldo Acumulado agosto");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Setembro
@@ -376,10 +376,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladosetembroS+ " String");
 		double saldoacumuladosetembroD = new Double(saldoacumuladosetembroS);
 		System.out.println(  saldoacumuladosetembroD + " Double");
-		double esperadoSaldoAcumuladoSetembro = 11681.66;
+		double esperadoSaldoAcumuladoSetembro = 0;
 		System.out.println( esperadoSaldoAcumuladoSetembro + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladosetembroD ,  esperadoSaldoAcumuladoSetembro));
-		System.out.println(igualDobule(saldoacumuladosetembroD ,  esperadoSaldoAcumuladoSetembro) +" Saldo Acumulado setembro");
+		sucesso.add(mayorQue( saldoacumuladosetembroD ,  esperadoSaldoAcumuladoSetembro));
+		System.out.println(mayorQue(saldoacumuladosetembroD ,  esperadoSaldoAcumuladoSetembro) +" Saldo Acumulado setembro");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Outubro
@@ -390,10 +390,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladooutubroS+ " String");
 		double saldoacumuladooutubroD = new Double(saldoacumuladooutubroS);
 		System.out.println(  saldoacumuladooutubroD + " Double");
-		double esperadoSaldoAcumuladoOutubro = 11681.66;
+		double esperadoSaldoAcumuladoOutubro = 0;
 		System.out.println( esperadoSaldoAcumuladoOutubro  + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladooutubroD ,  esperadoSaldoAcumuladoOutubro ));
-		System.out.println(igualDobule(saldoacumuladooutubroD , esperadoSaldoAcumuladoOutubro ) +" Saldo Acumulado outubro");
+		sucesso.add(mayorQue( saldoacumuladooutubroD ,  esperadoSaldoAcumuladoOutubro ));
+		System.out.println(mayorQue(saldoacumuladooutubroD , esperadoSaldoAcumuladoOutubro ) +" Saldo Acumulado outubro");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -405,10 +405,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladonovembroS+ " String");
 		double saldoacumuladonovembroD = new Double(saldoacumuladonovembroS);
 		System.out.println(  saldoacumuladonovembroD + " Double");
-		double esperadoSaldoAcumuladoNovembro = 11681.66;
+		double esperadoSaldoAcumuladoNovembro = 0;
 		System.out.println( esperadoSaldoAcumuladoNovembro  + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladonovembroD , esperadoSaldoAcumuladoNovembro ));
-		System.out.println(igualDobule(saldoacumuladonovembroD , esperadoSaldoAcumuladoNovembro ) +" Saldo Acumulado novembro");
+		sucesso.add(mayorQue( saldoacumuladonovembroD , esperadoSaldoAcumuladoNovembro ));
+		System.out.println(mayorQue(saldoacumuladonovembroD , esperadoSaldoAcumuladoNovembro ) +" Saldo Acumulado novembro");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado Dezembro
@@ -419,10 +419,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumuladodezembroS+ " String");
 		double saldoacumuladodezembroD = new Double(saldoacumuladodezembroS);
 		System.out.println( saldoacumuladodezembroD + " Double");
-		double esperadoSaldoAcumuladoDezembro = 11681.66;
+		double esperadoSaldoAcumuladoDezembro = 0;
 		System.out.println( esperadoSaldoAcumuladoDezembro  + " Esperado");
-		sucesso.add(igualDobule( saldoacumuladodezembroD , esperadoSaldoAcumuladoDezembro ));
-		System.out.println(igualDobule(saldoacumuladodezembroD , esperadoSaldoAcumuladoDezembro ) +" Saldo Acumulado dezembro");
+		sucesso.add(mayorQue( saldoacumuladodezembroD , esperadoSaldoAcumuladoDezembro ));
+		System.out.println(mayorQue(saldoacumuladodezembroD , esperadoSaldoAcumuladoDezembro ) +" Saldo Acumulado dezembro");
 		
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado 13
@@ -433,10 +433,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumulado13S+ " String");
 		double saldoacumulado13D = new Double(saldoacumulado13S);
 		System.out.println(saldoacumulado13D + " Double");
-		double esperadoSaldoAcumulado13 = 11681.66;
+		double esperadoSaldoAcumulado13 = 0;
 		System.out.println( esperadoSaldoAcumulado13  + " Esperado");
-		sucesso.add(igualDobule(saldoacumulado13D , esperadoSaldoAcumulado13 ));
-		System.out.println(igualDobule(saldoacumulado13D , esperadoSaldoAcumulado13 ) +" Saldo Acumulado 13");
+		sucesso.add(mayorQue(saldoacumulado13D , esperadoSaldoAcumulado13 ));
+		System.out.println(mayorQue(saldoacumulado13D , esperadoSaldoAcumulado13 ) +" Saldo Acumulado 13");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado 14
@@ -447,10 +447,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumulado14S+ " String");
 		double saldoacumulado14D = new Double(saldoacumulado14S);
 		System.out.println(saldoacumulado14D + " Double");
-		double esperadoSaldoAcumulado14 = 11681.66;
+		double esperadoSaldoAcumulado14 = 0;
 		System.out.println( esperadoSaldoAcumulado14  + " Esperado");
-		sucesso.add(igualDobule(saldoacumulado14D , esperadoSaldoAcumulado14 ));
-		System.out.println(igualDobule(saldoacumulado14D , esperadoSaldoAcumulado14 ) +" Saldo Acumulado 14");
+		sucesso.add(mayorQue(saldoacumulado14D , esperadoSaldoAcumulado14 ));
+		System.out.println(mayorQue(saldoacumulado14D , esperadoSaldoAcumulado14 ) +" Saldo Acumulado 14");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado 15
@@ -461,10 +461,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumulado15S+ " String");
 		double saldoacumulado15D = new Double(saldoacumulado15S);
 		System.out.println(saldoacumulado15D + " Double");
-		double esperadoSaldoAcumulado15 = 11681.66;
+		double esperadoSaldoAcumulado15 = 0;
 		System.out.println( esperadoSaldoAcumulado15  + " Esperado");
-		sucesso.add(igualDobule(saldoacumulado14D , esperadoSaldoAcumulado15 ));
-		System.out.println(igualDobule(saldoacumulado14D , esperadoSaldoAcumulado15 ) +" Saldo Acumulado 15");
+		sucesso.add(mayorQue(saldoacumulado14D , esperadoSaldoAcumulado15 ));
+		System.out.println(mayorQue(saldoacumulado14D , esperadoSaldoAcumulado15 ) +" Saldo Acumulado 15");
 
 		System.out.println("-------------------------------------------------");
 		//Saldo Acumulado 16
@@ -475,10 +475,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( saldoacumulado16S+ " String");
 		double saldoacumulado16D = new Double(saldoacumulado16S);
 		System.out.println(saldoacumulado16D + " Double");
-		double esperadoSaldoAcumulado16 = 11681.66;
+		double esperadoSaldoAcumulado16 = 0;
 		System.out.println( esperadoSaldoAcumulado16  + " Esperado");
-		sucesso.add(igualDobule(saldoacumulado16D , esperadoSaldoAcumulado16 ));
-		System.out.println(igualDobule(saldoacumulado16D , esperadoSaldoAcumulado16 ) +" Saldo Acumulado 16");
+		sucesso.add(mayorQue(saldoacumulado16D , esperadoSaldoAcumulado16 ));
+		System.out.println(mayorQue(saldoacumulado16D , esperadoSaldoAcumulado16 ) +" Saldo Acumulado 16");
 
 		
 		
@@ -491,10 +491,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( creditoacumuladojaneiroS+ " String");
 		double creditoacumuladojaneiroD = new Double(creditoacumuladojaneiroS);
 		System.out.println(creditoacumuladojaneiroD + " Double");
-		double esperadocreditoacumuladojaneiro = 42306690413.66;
+		double esperadocreditoacumuladojaneiro = 0;
 		System.out.println( esperadocreditoacumuladojaneiro  + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladojaneiroD , esperadocreditoacumuladojaneiro ));
-		System.out.println(igualDobule(creditoacumuladojaneiroD , esperadocreditoacumuladojaneiro ) +" Credito acumulado janeiro");
+		sucesso.add(mayorQue(creditoacumuladojaneiroD , esperadocreditoacumuladojaneiro ));
+		System.out.println(mayorQue(creditoacumuladojaneiroD , esperadocreditoacumuladojaneiro ) +" Credito acumulado janeiro");
 
 		System.out.println("-------------------------------------------------");
 		//Credito acumulado fevereiro
@@ -505,10 +505,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( creditoacumuladofevereiroS+ " String");
 		double creditoacumuladofevereiroD = new Double(creditoacumuladofevereiroS);
 		System.out.println(creditoacumuladofevereiroD + " Double");
-		double esperadocreditoacumuladofevereiro = 69820361837.93;
+		double esperadocreditoacumuladofevereiro = 0;
 		System.out.println( esperadocreditoacumuladofevereiro  + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladofevereiroD , esperadocreditoacumuladofevereiro));
-		System.out.println(igualDobule(creditoacumuladofevereiroD , esperadocreditoacumuladofevereiro ) +" Credito acumulado fevereiro");
+		sucesso.add(mayorQue(creditoacumuladofevereiroD , esperadocreditoacumuladofevereiro));
+		System.out.println(mayorQue(creditoacumuladofevereiroD , esperadocreditoacumuladofevereiro ) +" Credito acumulado fevereiro");
 
 		System.out.println("-------------------------------------------------");
 		//Credito acumulado marco
@@ -519,10 +519,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( creditoacumuladomarcoS+ " String");
 		double creditoacumuladomarcoD = new Double(creditoacumuladomarcoS);
 		System.out.println(creditoacumuladomarcoD + " Double");
-		double esperadocreditoacumuladomarco = 22522317200.22;
+		double esperadocreditoacumuladomarco = 0;
 		System.out.println( esperadocreditoacumuladomarco  + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladomarcoD , esperadocreditoacumuladomarco));
-		System.out.println(igualDobule(creditoacumuladomarcoD , esperadocreditoacumuladomarco ) +" Credito acumulado marco");
+		sucesso.add(mayorQue(creditoacumuladomarcoD , esperadocreditoacumuladomarco));
+		System.out.println(mayorQue(creditoacumuladomarcoD , esperadocreditoacumuladomarco ) +" Credito acumulado marco");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -534,10 +534,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( creditoacumuladoabrilS+ " String");
 		double creditoacumuladoabrilD = new Double(creditoacumuladoabrilS);
 		System.out.println(creditoacumuladoabrilD + " Double");
-		double esperadocreditoacumuladoabril = 20369504016.14;
+		double esperadocreditoacumuladoabril = 0;
 		System.out.println( esperadocreditoacumuladoabril + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladoabrilD , esperadocreditoacumuladoabril));
-		System.out.println(igualDobule(creditoacumuladoabrilD , esperadocreditoacumuladoabril ) +" Credito acumulado abril");
+		sucesso.add(mayorQue(creditoacumuladoabrilD , esperadocreditoacumuladoabril));
+		System.out.println(mayorQue(creditoacumuladoabrilD , esperadocreditoacumuladoabril ) +" Credito acumulado abril");
 		
 		System.out.println("-------------------------------------------------");
 		//Credito acumulado maio
@@ -548,10 +548,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( creditoacumuladomaioS+ " String");
 		double creditoacumuladomaioD = new Double(creditoacumuladomaioS);
 		System.out.println(creditoacumuladomaioD + " Double");
-		double esperadocreditoacumuladomaio = 12032697944.82;
+		double esperadocreditoacumuladomaio = 0;
 		System.out.println( esperadocreditoacumuladomaio + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladomaioD , esperadocreditoacumuladomaio));
-		System.out.println(igualDobule(creditoacumuladomaioD , esperadocreditoacumuladomaio ) +" Credito acumulado maio");
+		sucesso.add(mayorQue(creditoacumuladomaioD , esperadocreditoacumuladomaio));
+		System.out.println(mayorQue(creditoacumuladomaioD , esperadocreditoacumuladomaio ) +" Credito acumulado maio");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -563,10 +563,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println( creditoacumuladojunhoS+ " String");
 		double creditoacumuladojunhoD = new Double(creditoacumuladojunhoS);
 		System.out.println(creditoacumuladojunhoD + " Double");
-		double esperadocreditoacumuladojunho = 21911123104.85;
+		double esperadocreditoacumuladojunho = 0;
 		System.out.println( esperadocreditoacumuladojunho + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladojunhoD , esperadocreditoacumuladojunho));
-		System.out.println(igualDobule(creditoacumuladojunhoD , esperadocreditoacumuladojunho ) +" Credito acumulado junho");
+		sucesso.add(mayorQue(creditoacumuladojunhoD , esperadocreditoacumuladojunho));
+		System.out.println(mayorQue(creditoacumuladojunhoD , esperadocreditoacumuladojunho ) +" Credito acumulado junho");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -578,10 +578,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(creditoacumuladojulhoS+ " String");
 		double creditoacumuladojulhoD = new Double(creditoacumuladojulhoS);
 		System.out.println(creditoacumuladojulhoD + " Double");
-		double esperadocreditoacumuladojulho = 24356170594.44;
+		double esperadocreditoacumuladojulho = 0;
 		System.out.println( esperadocreditoacumuladojulho + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladojulhoD , esperadocreditoacumuladojulho));
-		System.out.println(igualDobule(creditoacumuladojulhoD , esperadocreditoacumuladojulho ) +" Credito acumulado julho");
+		sucesso.add(mayorQue(creditoacumuladojulhoD , esperadocreditoacumuladojulho));
+		System.out.println(mayorQue(creditoacumuladojulhoD , esperadocreditoacumuladojulho ) +" Credito acumulado julho");
 
 		System.out.println("-------------------------------------------------");
 		//Credito acumulado Agosto
@@ -592,10 +592,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(creditoacumuladoagostoS+ " String");
 		double creditoacumuladoagostoD = new Double(creditoacumuladoagostoS);
 		System.out.println(creditoacumuladoagostoD + " Double");
-		double esperadocreditoacumuladoagosto = 4481888678.88;
+		double esperadocreditoacumuladoagosto = 0;
 		System.out.println( esperadocreditoacumuladoagosto + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladoagostoD , esperadocreditoacumuladoagosto));
-		System.out.println(igualDobule(creditoacumuladoagostoD , esperadocreditoacumuladoagosto ) +" Credito acumulado agosto");
+		sucesso.add(mayorQue(creditoacumuladoagostoD , esperadocreditoacumuladoagosto));
+		System.out.println(mayorQue(creditoacumuladoagostoD , esperadocreditoacumuladoagosto ) +" Credito acumulado agosto");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -607,10 +607,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(creditoacumuladosetembroS+ " String");
 		double creditoacumuladosetembroD = new Double(creditoacumuladosetembroS);
 		System.out.println(creditoacumuladosetembroD + " Double");
-		double esperadocreditoacumuladosetembro = 3581708266.64;
+		double esperadocreditoacumuladosetembro = 0;
 		System.out.println( esperadocreditoacumuladosetembro + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladosetembroD , esperadocreditoacumuladosetembro));
-		System.out.println(igualDobule(creditoacumuladosetembroD , esperadocreditoacumuladosetembro ) +" Credito acumulado setembro");
+		sucesso.add(mayorQue(creditoacumuladosetembroD , esperadocreditoacumuladosetembro));
+		System.out.println(mayorQue(creditoacumuladosetembroD , esperadocreditoacumuladosetembro ) +" Credito acumulado setembro");
 
 		
 		
@@ -623,10 +623,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(creditoacumuladooutubroS+ " String");
 		double creditoacumuladooutubroD = new Double(creditoacumuladooutubroS);
 		System.out.println(creditoacumuladooutubroD + " Double");
-		double esperadocreditoacumuladooutubro = 184009388.79;
+		double esperadocreditoacumuladooutubro = 0;
 		System.out.println( esperadocreditoacumuladooutubro + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladooutubroD , esperadocreditoacumuladooutubro));
-		System.out.println(igualDobule(creditoacumuladooutubroD , esperadocreditoacumuladooutubro ) +" Credito acumulado outubro");
+		sucesso.add(mayorQue(creditoacumuladooutubroD , esperadocreditoacumuladooutubro));
+		System.out.println(mayorQue(creditoacumuladooutubroD , esperadocreditoacumuladooutubro ) +" Credito acumulado outubro");
 
 		System.out.println("-------------------------------------------------");
 		//Credito acumulado Novembro
@@ -637,10 +637,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(creditoacumuladonovembroS+ " String");
 		double creditoacumuladonovembroD = new Double(creditoacumuladonovembroS);
 		System.out.println(creditoacumuladonovembroD + " Double");
-		double esperadocreditoacumuladonovembro = 2876229227.56 ;
+		double esperadocreditoacumuladonovembro = 0;
 		System.out.println( esperadocreditoacumuladonovembro + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladonovembroD , esperadocreditoacumuladonovembro));
-		System.out.println(igualDobule(creditoacumuladonovembroD , esperadocreditoacumuladonovembro ) +" Credito acumulado novembro");
+		sucesso.add(mayorQue(creditoacumuladonovembroD , esperadocreditoacumuladonovembro));
+		System.out.println(mayorQue(creditoacumuladonovembroD , esperadocreditoacumuladonovembro ) +" Credito acumulado novembro");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -652,10 +652,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(creditoacumuladodezembroS+ " String");
 		double creditoacumuladodezembroD = new Double(creditoacumuladodezembroS);
 		System.out.println(creditoacumuladodezembroD + " Double");
-		double esperadocreditoacumuladodezembro = 3406334619.14 ;
+		double esperadocreditoacumuladodezembro = 0;
 		System.out.println( esperadocreditoacumuladodezembro + " Esperado");
-		sucesso.add(igualDobule(creditoacumuladodezembroD , esperadocreditoacumuladodezembro));
-		System.out.println(igualDobule(creditoacumuladodezembroD , esperadocreditoacumuladodezembro ) +" Credito acumulado dezembro");
+		sucesso.add(mayorQue(creditoacumuladodezembroD , esperadocreditoacumuladodezembro));
+		System.out.println(mayorQue(creditoacumuladodezembroD , esperadocreditoacumuladodezembro ) +" Credito acumulado dezembro");
 
 		
 		System.out.println("-------------------------------------------------");
@@ -667,10 +667,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladojaneiroS+ " String");
 		double debitoacumuladojaneiroD = new Double(debitoacumuladojaneiroS);
 		System.out.println(debitoacumuladojaneiroD + " Double");
-		double esperadodebitoacumuladojaneiro = -42306693305.23 ;
+		double esperadodebitoacumuladojaneiro = 0;
 		System.out.println( esperadodebitoacumuladojaneiro + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladojaneiroD , esperadodebitoacumuladojaneiro));
-		System.out.println(igualDobule(debitoacumuladojaneiroD , esperadodebitoacumuladojaneiro) +"Debito Acumulado Janeiro");
+		sucesso.add(diferenteDe(debitoacumuladojaneiroD , esperadodebitoacumuladojaneiro));
+		System.out.println(diferenteDe(debitoacumuladojaneiroD , esperadodebitoacumuladojaneiro) +"Debito Acumulado Janeiro");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado fevereiro
@@ -681,10 +681,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladofevereiroS+ " String");
 		double debitoacumuladofevereiroD = new Double(debitoacumuladofevereiroS);
 		System.out.println(debitoacumuladofevereiroD + " Double");
-		double esperadodebitoacumuladofevereiro = -69820364729.49;
+		double esperadodebitoacumuladofevereiro = 0;
 		System.out.println( esperadodebitoacumuladofevereiro + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladofevereiroD , esperadodebitoacumuladofevereiro));
-		System.out.println(igualDobule(debitoacumuladofevereiroD , esperadodebitoacumuladofevereiro) +"Debito Acumulado fevereiro");
+		sucesso.add(diferenteDe(debitoacumuladofevereiroD , esperadodebitoacumuladofevereiro));
+		System.out.println(diferenteDe(debitoacumuladofevereiroD , esperadodebitoacumuladofevereiro) +"Debito Acumulado fevereiro");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado marco
@@ -695,10 +695,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladomarcoS+ " String");
 		double debitoacumuladomarcoD = new Double(debitoacumuladomarcoS);
 		System.out.println(debitoacumuladomarcoD + " Double");
-		double esperadodebitoacumuladomarco = -22522320091.79;
+		double esperadodebitoacumuladomarco = 0;
 		System.out.println( esperadodebitoacumuladomarco + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladomarcoD , esperadodebitoacumuladomarco));
-		System.out.println(igualDobule(debitoacumuladomarcoD , esperadodebitoacumuladomarco) +"Debito Acumulado marco");
+		sucesso.add(diferenteDe(debitoacumuladomarcoD , esperadodebitoacumuladomarco));
+		System.out.println(diferenteDe(debitoacumuladomarcoD , esperadodebitoacumuladomarco) +"Debito Acumulado marco");
 		
 		
 		System.out.println("-------------------------------------------------");
@@ -710,10 +710,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladoabrilS+ " String");
 		double debitoacumuladoabrilD = new Double(debitoacumuladoabrilS);
 		System.out.println(debitoacumuladoabrilD + " Double");
-		double esperadodebitoacumuladoabril = -20369507023.10;
+		double esperadodebitoacumuladoabril = 0;
 		System.out.println( esperadodebitoacumuladoabril + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladoabrilD , esperadodebitoacumuladoabril));
-		System.out.println(igualDobule(debitoacumuladoabrilD , esperadodebitoacumuladoabril) +"Debito Acumulado abril");
+		sucesso.add(diferenteDe(debitoacumuladoabrilD , esperadodebitoacumuladoabril));
+		System.out.println(diferenteDe(debitoacumuladoabrilD , esperadodebitoacumuladoabril) +"Debito Acumulado abril");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado maio
@@ -724,10 +724,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladomaioS+ " String");
 		double debitoacumuladomaioD = new Double(debitoacumuladomaioS);
 		System.out.println(debitoacumuladomaioD + " Double");
-		double esperadodebitoacumuladomaio = -12032697944.82;
+		double esperadodebitoacumuladomaio = 0;
 		System.out.println( esperadodebitoacumuladomaio + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladomaioD , esperadodebitoacumuladomaio));
-		System.out.println(igualDobule(debitoacumuladomaioD , esperadodebitoacumuladomaio) +"Debito Acumulado maio");
+		sucesso.add(diferenteDe(debitoacumuladomaioD , esperadodebitoacumuladomaio));
+		System.out.println(diferenteDe(debitoacumuladomaioD , esperadodebitoacumuladomaio) +"Debito Acumulado maio");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado junho
@@ -738,10 +738,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladojunhoS+ " String");
 		double debitoacumuladojunhoD = new Double(debitoacumuladojunhoS);
 		System.out.println(debitoacumuladojunhoD + " Double");
-		double esperadodebitoacumuladojunho = -21911123104.85;
+		double esperadodebitoacumuladojunho = 0;
 		System.out.println( esperadodebitoacumuladojunho + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladojunhoD , esperadodebitoacumuladojunho));
-		System.out.println(igualDobule(debitoacumuladojunhoD , esperadodebitoacumuladojunho) +"Debito Acumulado junho");
+		sucesso.add(diferenteDe(debitoacumuladojunhoD , esperadodebitoacumuladojunho));
+		System.out.println(diferenteDe(debitoacumuladojunhoD , esperadodebitoacumuladojunho) +"Debito Acumulado junho");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado julho
@@ -752,10 +752,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladojulhoS+ " String");
 		double debitoacumuladojulhoD = new Double(debitoacumuladojulhoS);
 		System.out.println(debitoacumuladojulhoD + " Double");
-		double esperadodebitoacumuladojulho = -24356170594.44;
+		double esperadodebitoacumuladojulho = 0;
 		System.out.println( esperadodebitoacumuladojulho + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladojulhoD , esperadodebitoacumuladojulho));
-		System.out.println(igualDobule(debitoacumuladojulhoD , esperadodebitoacumuladojulho) +"Debito Acumulado julho");
+		sucesso.add(diferenteDe(debitoacumuladojulhoD , esperadodebitoacumuladojulho));
+		System.out.println(diferenteDe(debitoacumuladojulhoD , esperadodebitoacumuladojulho) +"Debito Acumulado julho");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado Agosto
@@ -766,10 +766,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladoagostoS+ " String");
 		double debitoacumuladoagostoD = new Double(debitoacumuladoagostoS);
 		System.out.println(debitoacumuladoagostoD + " Double");
-		double esperadodebitoacumuladoagosto = -4481888678.88;
+		double esperadodebitoacumuladoagosto = 0;
 		System.out.println( esperadodebitoacumuladoagosto + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladoagostoD , esperadodebitoacumuladoagosto));
-		System.out.println(igualDobule(debitoacumuladoagostoD , esperadodebitoacumuladoagosto) +"Debito Acumulado agosto");
+		sucesso.add(diferenteDe(debitoacumuladoagostoD , esperadodebitoacumuladoagosto));
+		System.out.println(diferenteDe(debitoacumuladoagostoD , esperadodebitoacumuladoagosto) +"Debito Acumulado agosto");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado Setembro
@@ -780,10 +780,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladosetembroS+ " String");
 		double debitoacumuladosetembroD = new Double(debitoacumuladosetembroS);
 		System.out.println(debitoacumuladosetembroD + " Double");
-		double esperadodebitoacumuladosetembro = -3581708266.64;
+		double esperadodebitoacumuladosetembro = 0;
 		System.out.println( esperadodebitoacumuladosetembro + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladosetembroD , esperadodebitoacumuladosetembro));
-		System.out.println(igualDobule(debitoacumuladosetembroD , esperadodebitoacumuladosetembro) +"Debito Acumulado setembro");
+		sucesso.add(diferenteDe(debitoacumuladosetembroD , esperadodebitoacumuladosetembro));
+		System.out.println(diferenteDe(debitoacumuladosetembroD , esperadodebitoacumuladosetembro) +"Debito Acumulado setembro");
 		
 		
 		System.out.println("-------------------------------------------------");
@@ -795,10 +795,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladooutubroS+ " String");
 		double debitoacumuladooutubroD = new Double(debitoacumuladooutubroS);
 		System.out.println(debitoacumuladooutubroD + " Double");
-		double esperadodebitoacumuladooutubro = -184009388.79;
+		double esperadodebitoacumuladooutubro = 0;
 		System.out.println( esperadodebitoacumuladooutubro + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladooutubroD , esperadodebitoacumuladooutubro));
-		System.out.println(igualDobule(debitoacumuladooutubroD , esperadodebitoacumuladooutubro) +"Debito Acumulado outubro");
+		sucesso.add(diferenteDe(debitoacumuladooutubroD , esperadodebitoacumuladooutubro));
+		System.out.println(diferenteDe(debitoacumuladooutubroD , esperadodebitoacumuladooutubro) +"Debito Acumulado outubro");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado novembro
@@ -809,10 +809,10 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladonovembroS+ " String");
 		double debitoacumuladonovembroD = new Double(debitoacumuladonovembroS);
 		System.out.println(debitoacumuladonovembroD + " Double");
-		double esperadodebitoacumuladonovembro = -2876229227.56;
+		double esperadodebitoacumuladonovembro = 0;
 		System.out.println( esperadodebitoacumuladonovembro + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladonovembroD , esperadodebitoacumuladonovembro));
-		System.out.println(igualDobule(debitoacumuladonovembroD , esperadodebitoacumuladonovembro) +"Debito Acumulado novembro");
+		sucesso.add(diferenteDe(debitoacumuladonovembroD , esperadodebitoacumuladonovembro));
+		System.out.println(diferenteDe(debitoacumuladonovembroD , esperadodebitoacumuladonovembro) +"Debito Acumulado novembro");
 		
 		System.out.println("-------------------------------------------------");
 		//Debito Acumulado dezembro
@@ -823,12 +823,12 @@ public ArrayList<Boolean> verificar() {
 		System.out.println(debitoacumuladodezembroS+ " String");
 		double debitoacumuladodezembroD = new Double(debitoacumuladodezembroS);
 		System.out.println(debitoacumuladodezembroD + " Double");
-		double esperadodebitoacumuladodezembro = -3406334619.14;
+		double esperadodebitoacumuladodezembro = 0;
 		System.out.println( esperadodebitoacumuladodezembro + " Esperado");
-		sucesso.add(igualDobule(debitoacumuladodezembroD , esperadodebitoacumuladodezembro));
-		System.out.println(igualDobule(debitoacumuladodezembroD , esperadodebitoacumuladodezembro) +"Debito Acumulado dezembro");
+		sucesso.add(diferenteDe(debitoacumuladodezembroD , esperadodebitoacumuladodezembro));
+		System.out.println(diferenteDe(debitoacumuladodezembroD , esperadodebitoacumuladodezembro) +"Debito Acumulado dezembro");
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 }
 	

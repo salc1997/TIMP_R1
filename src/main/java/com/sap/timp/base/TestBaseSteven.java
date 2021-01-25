@@ -90,7 +90,7 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 
 		return driver;
 	}
@@ -177,6 +177,18 @@ public class TestBaseSteven {
 		
 		boolean sucesso = false;
 		if (valor == esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
+	public Boolean diferenteDe(double valor, double esperado) {
+		
+		boolean sucesso = false;
+		if (valor != esperado) {
 			sucesso = true;
 		}else {
 			sucesso = false;

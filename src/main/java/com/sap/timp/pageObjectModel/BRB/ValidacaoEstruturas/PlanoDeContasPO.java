@@ -60,8 +60,8 @@ public ArrayList<Boolean> verificar() {
 		int totalLinhasI = Integer.valueOf(totalLinhasS);
 		int esperadoLinhas = 24;
 		System.out.println(esperadoLinhas);
-		sucesso.add(igualInt(totalLinhasI, esperadoLinhas));
-		System.out.println(igualInt(totalLinhasI, esperadoLinhas)+" numero linhas");
+		sucesso.add(mayorQue(totalLinhasI, esperadoLinhas));
+		System.out.println(mayorQue(totalLinhasI, esperadoLinhas)+" numero linhas");
 		System.out.println("-------------------------------------------------");
 		
 		return sucesso;

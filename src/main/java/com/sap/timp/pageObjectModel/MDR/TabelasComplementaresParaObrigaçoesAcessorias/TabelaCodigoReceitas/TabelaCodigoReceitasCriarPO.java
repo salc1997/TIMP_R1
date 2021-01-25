@@ -100,7 +100,7 @@ public class TabelaCodigoReceitasCriarPO extends TestBaseMassiel{
 		sleep(1000);
 		codigoReceita.sendKeys("44709323");
 		sleep(1000);
-		descricao.sendKeys("Teste de Tabela de Código da Receita 17093");
+		descricao.sendKeys("Teste de Tabela de Código da Receita0 7093");
 		sleep(1000);
 
 		

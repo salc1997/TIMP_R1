@@ -143,7 +143,7 @@ public class TabelaComplementarParaDIRFCriarPO extends TestBaseEliel{
 		cnpj.sendKeys("3393007");
 		sleep(2000);
 		
-		nome.sendKeys("Teste 17093");
+		nome.sendKeys("Teste0 07093");
 		
 		sleep(2000);
 		

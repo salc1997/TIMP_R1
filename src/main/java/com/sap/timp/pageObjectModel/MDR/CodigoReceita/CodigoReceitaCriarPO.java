@@ -126,14 +126,18 @@ public class CodigoReceitaCriarPO extends TestBaseSteven{
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
 		biblioteca.click();
 		
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -157,7 +157,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 		sleep(1000);
 	
 		
-		gravareNovo.click();
+		gravar.click();
 		
 		waitExpectElement(sim);
 		sleep(1000);
@@ -216,7 +216,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 		sleep(1000);
 	
 		
-		gravareNovo.click();
+		gravar.click();
 		
 		waitExpectElement(sim);
 		sleep(1000);
@@ -224,9 +224,16 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		biblioteca.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

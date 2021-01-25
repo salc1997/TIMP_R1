@@ -51,9 +51,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver.get(tc2);
 
 
-
 	   return driver;
-
 	}
 	//PARA PODER EJECUTAR TA-518
 	public String dataanterior() {

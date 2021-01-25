@@ -60,7 +60,22 @@ public class ExecutadosEditarPO extends TestBaseMassiel{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public boolean editar() {
+		
+		System.out.println("---------- Editar --------- " );
+		String url = driver.getCurrentUrl();
+
+		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
+			tp1 = true;
+		}
 		
 		invisibilityOfElementOverlay();
 		bancoCreditoExtemporaneo.click();
@@ -137,17 +152,42 @@ public class ExecutadosEditarPO extends TestBaseMassiel{
 		anioCalendar.click();
 		sleep(3000);
 
-		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Fev\"]"));
-		monthCalendar.click();
-		sleep(3000);
+		if (tq1 == true) {
 
-		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
-		subperiodoCalendar.click();
-		sleep(3000);
+
+			WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Fev\"]"));
+			monthCalendar.click();
+			sleep(3000);
+
+			WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
+			subperiodoCalendar.click();
+			sleep(3000);
+
+		}else if (tc2==true) {
+
+			WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Mar\"]"));
+			monthCalendar.click();
+			sleep(3000);
+
+			WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
+			subperiodoCalendar.click();
+			sleep(3000);
+			
+		}else {
+			WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Fev\"]"));
+			monthCalendar.click();
+			sleep(3000);
+
+			WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
+			subperiodoCalendar.click();
+			sleep(3000);
+			
+		}
+		
 		
 		String enviar = SubperiodoInput.getAttribute("value");
+		enviar = enviar.replace(" ", "");
 		System.out.println("Texto Enviado " + enviar);
-		
 
 		btnExecutar2.click();
 		sleep(1000);
@@ -164,6 +204,6 @@ public class ExecutadosEditarPO extends TestBaseMassiel{
 		
 		boolean sucesso= nuevoTexto.contains(enviar);
 		System.out.println(sucesso);
-		
+		return sucesso;
 	}
 }

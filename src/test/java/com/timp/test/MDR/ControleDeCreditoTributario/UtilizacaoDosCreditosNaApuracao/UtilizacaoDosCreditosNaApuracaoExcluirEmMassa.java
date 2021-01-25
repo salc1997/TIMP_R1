@@ -51,6 +51,14 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassa extends TestBaseEliel
 		boolean sucesso = utilizacaoDosCreditosNaApuracaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+
 		boolean sucesso2 = utilizacaoDosCreditosNaApuracaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

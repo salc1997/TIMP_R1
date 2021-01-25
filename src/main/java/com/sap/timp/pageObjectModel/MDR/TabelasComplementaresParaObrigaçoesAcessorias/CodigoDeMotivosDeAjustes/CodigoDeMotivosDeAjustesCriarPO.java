@@ -98,7 +98,7 @@ public class CodigoDeMotivosDeAjustesCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		descricaodeajustes.sendKeys("Teste 17093");
+		descricaodeajustes.sendKeys("Teste 093");
 		
 		sleep(2000);
 		

@@ -74,6 +74,8 @@ public class CodigoContabilizacaoEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"tr first\" and @data-id][1]/div[2]/label/span")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public CodigoContabilizacaoEditarPO() {
 		PageFactory.initElements(driver, this);
@@ -81,7 +83,7 @@ public class CodigoContabilizacaoEditarPO extends TestBaseEliel {
 	
 	
 	
-	public String editar() {
+	public boolean editar() {
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -114,41 +116,38 @@ public class CodigoContabilizacaoEditarPO extends TestBaseEliel {
 		
 		descricaopadrao.clear();
 		
-		descricaopadrao.sendKeys("Teste automatizado");
+		String enviar = "Teste automatizado";
+		
+		descricaopadrao.sendKeys(enviar);
 		
 		gravar.click();
-		
+		sleep(2000);
+		waitExpectElement(butaosim);
+		sleep(1000);
+		nao.click();
 		waitExpectElement(butaosim);
 		sleep(2000);
 		butaosim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
-		biblioteca.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		refresh();
 		
-		
-		sleep(4000);
-		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		menu2.click();
-		sleep(2000);
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		sleep(2000);
-		visualizar.click();
+		waitExpectElement(descricaopadrao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
+		sleep(2000);
 		
-		attributeToBeXpath("//table[@class=\"edit\"]", "class", "edit");
+		String textoCampo = descricaopadrao.getAttribute("value");
+		System.out.println("Texto Campo: " +textoCampo);
+		System.out.println("Texto Esperado: " +enviar);
 		
-		// verifica se a modificação feita está presente
-		String sucesso = driver.findElement(By.xpath("//span[@id=\"padrao\"]")).getAttribute("class");
-		System.out.println(sucesso);	
+		boolean sucesso = textoCampo.equals(enviar);
+		System.out.println("Texto Modificado: " +sucesso);
+		
+		
 		return sucesso;
 		
     }

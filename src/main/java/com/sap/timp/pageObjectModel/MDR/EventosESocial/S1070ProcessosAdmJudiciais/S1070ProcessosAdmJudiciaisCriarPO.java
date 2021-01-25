@@ -154,7 +154,7 @@ public class S1070ProcessosAdmJudiciaisCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		numeroDoProceso.click();
-		numeroDoProceso.sendKeys("0012020");
+		numeroDoProceso.sendKeys("7001200");
 		sleep(1000);
 		
 		tipoProcesso.click();

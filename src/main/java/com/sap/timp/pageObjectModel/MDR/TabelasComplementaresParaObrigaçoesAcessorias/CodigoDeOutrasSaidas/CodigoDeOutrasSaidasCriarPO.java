@@ -98,7 +98,7 @@ public class CodigoDeOutrasSaidasCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		descricaodeoutrassaidas.sendKeys("Teste 17093");
+		descricaodeoutrassaidas.sendKeys("Teste 093");
 		
 		sleep(2000);
 		

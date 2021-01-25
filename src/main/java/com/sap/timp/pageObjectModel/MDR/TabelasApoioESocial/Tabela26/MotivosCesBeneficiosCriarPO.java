@@ -87,7 +87,7 @@ public class MotivosCesBeneficiosCriarPO extends TestBaseSteven{
 		
 		codigo.sendKeys("1111");
 		sleep(1000);
-		descricao.sendKeys("Movito Teste1");
+		descricao.sendKeys("Movito Teste7");
 		sleep(1000);
 		
 		String data = fechaActual();

@@ -105,7 +105,7 @@ public class TabelaDeCodigoEClasseParaQuadroCriarPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigo.sendKeys("70937");
+		codigo.sendKeys("332937");
 		
 		sleep(2000);
 		
@@ -117,7 +117,7 @@ public class TabelaDeCodigoEClasseParaQuadroCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste 17093");
+		descricao.sendKeys("Teste 33093");
 		
 		
 		sleep(2000);

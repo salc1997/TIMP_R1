@@ -208,7 +208,7 @@ public class ParametrosGeraisConfiguraçãoCriarPO extends TestBaseCristhian {
 
 		
 
-		nomeHirarquia.sendKeys("183 - Super Basica");
+		nomeHirarquia.sendKeys("super Basica");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);

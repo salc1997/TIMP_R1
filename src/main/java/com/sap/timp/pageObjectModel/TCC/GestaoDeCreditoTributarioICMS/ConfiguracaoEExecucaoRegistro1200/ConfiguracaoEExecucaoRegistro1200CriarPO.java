@@ -165,10 +165,12 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 		closeSelectTypeCheckbox(empresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(5000);
 		
 		uf.click();
+		sleep(1000);
+		actionsMoveToElementElement(ufO);
 		sleep(1000);
 		ufO.click();
 		sleep(1000);
@@ -177,7 +179,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 	
 		
 		//attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		sleep(5000);
 		
 		filial.click();
 		sleep(1000);

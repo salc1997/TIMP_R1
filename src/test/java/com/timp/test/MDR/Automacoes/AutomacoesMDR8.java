@@ -647,7 +647,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoVisualizar.afterClass();
 	}
 
-	@Test(priority = 55)
+	@Test(priority = 56)
 	
 	public void determinacionRelevanciaPorMotivoExcluirEmMassa() {
 
@@ -659,7 +659,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoExcluirEmMassa.afterClass();
 	}
 
-	@Test(priority = 56)
+	@Test(priority = 55)
 	
 	public void determinacionRelevanciaPorMotivoExcluir() {
 

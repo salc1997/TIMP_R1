@@ -3,30 +3,27 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR8">
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesPrueba">
         <methods>
-          <include name="contasContábeisRBLPFiltroId"/>
-          <include name="dEPARAContasContábeisExcluir"/>
-          <include name="dEPARAContasContábeisEditar"/>
-          <include name="cadastroDeObrasEditar"/>
-          <include name="dEPARAContasContábeisCriar"/>
-          <include name="cadastroDeObrasExcluir"/>
-          <include name="parametrizaçãoDoLivroOficialExcluir"/>
-          <include name="parametrizaçãoDoLivroOficial"/>
-          <include name="cadastroContaisContabeisFiltroID"/>
-          <include name="cadastroDeObrasCriar"/>
-          <include name="parametrizaçãoDoLivroOficialEditar"/>
-          <include name="regraDeReaberturaVisualizar"/>
-          <include name="s2230AfastamentoTemporárioFiltroId"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoExcluirMasas"/>
-          <include name="instituicaoExcluirMasas"/>
-          <include name="cadastroDeObrasExcluirEmMassa"/>
-          <include name="dEPARAContasContábeisVisualizar"/>
-          <include name="responsavelMovimientoExcluirMasas"/>
-          <include name="cadastroCondiçaoExcluirMasas"/>
-          <include name="parametrizaçãoDoLivroOficialVisualizar"/>
+          <include name="codigoContabilizacaoVisualizar"/>
+          <include name="bairroCriar"/>
+          <include name="codigoContabilizacaoCriar"/>
+          <include name="codigoReceitaExcluir"/>
+          <include name="codigoReceitaCriar"/>
+          <include name="codigoContabilizacaoEditar"/>
+          <include name="codigoContabilizacaoExcluir"/>
+          <include name="contratoIOFVisualizar"/>
+          <include name="codigoReceitaVisualizar"/>
+          <include name="spcbFederaisRetidosDetalhes"/>
+          <include name="codigoReceitaDetalhes"/>
+          <include name="codigoContabalizacaoDetalhes"/>
+          <include name="excluirSPCB"/>
+          <include name="notasDeclararAnexoIIIEditar"/>
+          <include name="codigoReceitaEditar"/>
+          <include name="bairroExcluirMassa"/>
+          <include name="codigoContabilizacaoFiltrosAvan"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR8 -->
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesPrueba -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

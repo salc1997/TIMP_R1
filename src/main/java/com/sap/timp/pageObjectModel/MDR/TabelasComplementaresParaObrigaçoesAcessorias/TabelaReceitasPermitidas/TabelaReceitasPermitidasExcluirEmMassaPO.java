@@ -1,6 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas;
 
-import java.lang.invoke.StringConcatFactory;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

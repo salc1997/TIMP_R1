@@ -1,162 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesPrueba">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR8">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar">
-=======
-      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/remotes/origin/master
+      <class name="com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa">
         <methods>
-<<<<<<< HEAD
-          <include name="codigoContabilizacaoVisualizar"/>
-          <include name="bairroCriar"/>
-          <include name="codigoContabilizacaoCriar"/>
-          <include name="codigoReceitaExcluir"/>
-          <include name="codigoReceitaCriar"/>
-          <include name="codigoContabilizacaoEditar"/>
-          <include name="codigoContabilizacaoExcluir"/>
-          <include name="contratoIOFVisualizar"/>
-          <include name="codigoReceitaVisualizar"/>
-          <include name="spcbFederaisRetidosDetalhes"/>
-          <include name="codigoReceitaDetalhes"/>
-          <include name="codigoContabalizacaoDetalhes"/>
-          <include name="excluirSPCB"/>
-          <include name="notasDeclararAnexoIIIEditar"/>
-          <include name="codigoReceitaEditar"/>
-          <include name="bairroExcluirMassa"/>
-          <include name="codigoContabilizacaoFiltrosAvan"/>
-=======
-<<<<<<< HEAD
-          <include name="excluirEmMassa"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="contasContábeisRBLPFiltroId"/>
-          <include name="dEPARAContasContábeisExcluir"/>
-          <include name="dEPARAContasContábeisEditar"/>
-          <include name="cadastroDeObrasEditar"/>
-          <include name="dEPARAContasContábeisCriar"/>
-          <include name="cadastroDeObrasExcluir"/>
-          <include name="parametrizaçãoDoLivroOficialExcluir"/>
-          <include name="parametrizaçãoDoLivroOficial"/>
-          <include name="cadastroContaisContabeisFiltroID"/>
-          <include name="cadastroDeObrasCriar"/>
-          <include name="parametrizaçãoDoLivroOficialEditar"/>
-          <include name="regraDeReaberturaVisualizar"/>
-          <include name="s2230AfastamentoTemporárioFiltroId"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoExcluirMasas"/>
-          <include name="instituicaoExcluirMasas"/>
-          <include name="cadastroDeObrasExcluirEmMassa"/>
-          <include name="dEPARAContasContábeisVisualizar"/>
-          <include name="responsavelMovimientoExcluirMasas"/>
-          <include name="cadastroCondiçaoExcluirMasas"/>
-          <include name="parametrizaçãoDoLivroOficialVisualizar"/>
-=======
-<<<<<<< HEAD
-          <include name="beforeClass"/>
+          <include name="afterClass"/>
           <include name="criar"/>
-          <include name="afterClass"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-          <include name="oPPropriosRessarcimentosCriar"/>
-          <include name="tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa"/>
-          <include name="filiaisDetalle"/>
-          <include name="contasDefaultParaExtemporaneoVisualizar"/>
-          <include name="livrosFiscaisVisualizar"/>
-          <include name="limiteCompetenciaDetalhes"/>
-          <include name="saldoInicialDiferidoExcluir"/>
-          <include name="saldoInicialDiferidoEditar"/>
-          <include name="limiteCompetenciaVisualizar"/>
-          <include name="productosSCANCCriar"/>
-          <include name="registroDeExportaçaoEditar"/>
-          <include name="mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes"/>
-          <include name="limiteCompetenciaEditar"/>
-          <include name="limiteCompetenciaCriar"/>
-          <include name="sCANCDistribuidorasExcluir"/>
-          <include name="empresaFiltros"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoEditar"/>
-          <include name="empresaEditar"/>
-          <include name="saldoInicialDiferidoExcluirMassa"/>
-          <include name="mapeamentoContabilEditar"/>
-          <include name="detalheExcluirMassa"/>
-          <include name="productosSCANCEditar"/>
-          <include name="saldoInicialDiferidoFiltroID"/>
-          <include name="parametrosParaLivroICMSSTVisualizar"/>
-          <include name="productosSCANCExcluir"/>
-          <include name="limiteCompetenciaExcluir"/>
-          <include name="saldoInicialDiferidoCriar"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoVisualizar"/>
-          <include name="productosSCANCDetalhes"/>
-          <include name="limiteCompetenciaFiltrosAvansados"/>
-          <include name="contasDefaultParaExtemporaneoDetalhes"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoCriar"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoDetalhes"/>
-          <include name="productosSCANCVisualizar"/>
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/remotes/origin/master
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesPrueba -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR8 -->
-=======
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
-=======
-          <include name="resultadoDoAbaParte1"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="excluir"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
-=======
-      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR2 -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="acessarTCC"/>
-          <include name="afterClass"/>
-          <include name="login"/>
-          <include name="executarr"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/remotes/origin/master
+      </class> <!-- com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

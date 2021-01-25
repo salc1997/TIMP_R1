@@ -655,7 +655,8 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoExcluirEmMassa.beforeClass();
 		determinacionRelevanciaPorMotivoExcluirEmMassa.ingresar();
 		determinacionRelevanciaPorMotivoExcluirEmMassa.mdrEntrar();
-		determinacionRelevanciaPorMotivoExcluirEmMassa.excluirEmMassa();
+		determinacionRelevanciaPorMotivoExcluirEmMassa.criar();
+		determinacionRelevanciaPorMotivoExcluirEmMassa.excluir();
 		determinacionRelevanciaPorMotivoExcluirEmMassa.afterClass();
 	}
 

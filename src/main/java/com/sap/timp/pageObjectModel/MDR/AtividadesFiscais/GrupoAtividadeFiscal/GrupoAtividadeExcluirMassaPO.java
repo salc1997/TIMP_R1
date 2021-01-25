@@ -207,21 +207,26 @@ public class GrupoAtividadeExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
-		int idUltimoRegistro = convertToInt(idObter4());
-		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idUltimoRegistro+"\"]/div[2]/label/span"));
+		int rows = rows("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]");
+		
+		String idUltimoRegistro = driver.findElement(By.xpath("//div[@data-id]["+rows+"]/div[3]/div")).getText();
+		
+		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id]["+rows+"]/div[2]/label/span"));
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
 		
-		sleep(2000);
+		sleep(1000);
 		marcarCheckbox.click();
-		sleep(2000);
+		sleep(1000);
 		
-		int idPenultimoUltimoRegistro = idUltimoRegistro - 1;
-		marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idPenultimoUltimoRegistro+"\"]/div[2]/label/span"));
+		rows = rows-1;
+		
+		String idPenultimoUltimoRegistro = driver.findElement(By.xpath("//div[@data-id]["+rows+"]/div[3]/div")).getText();
+		marcarCheckbox = driver.findElement(By.xpath("//div[@data-id]["+rows+"]/div[2]/label/span"));
 		System.out.println("Id Penultimo registro: " + idPenultimoUltimoRegistro); // Penultimo registro que es el que se crea con la automatizacion
 		
-		sleep(2000);
+		sleep(1000);
 		marcarCheckbox.click();
-		sleep(2000);
+		sleep(1000);
 		
 		btnExcluirMassa.click();
 		sleep(2000);
@@ -242,7 +247,7 @@ public class GrupoAtividadeExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idUltimoRegistroDespuesDeEliminar = "0";
 		
 		if(rows > 0) {
@@ -250,8 +255,8 @@ public class GrupoAtividadeExcluirMassaPO extends TestBaseFernando{
 		}
 		
 		int id1 = convertToInt(idUltimoRegistroDespuesDeEliminar);
-		int id2 = idUltimoRegistro;
-		int id3 = idPenultimoUltimoRegistro;
+		int id2 = convertToInt(idUltimoRegistro);
+		int id3 = convertToInt(idPenultimoUltimoRegistro);
 		
 		System.out.println("Ultimo registro al eliminar en massa: " + id1); // Ultimo registro despues de excluir el registro de la automatizacion y recargar
 		System.out.println("Ultimo registro: " + id2);

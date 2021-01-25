@@ -1652,7 +1652,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 76)
+	@Test(priority = 75)
 	public void codigoContabilizacaoVisualizar() {
 
 		codigoContabalizacaoVisualizar = new CodigoContabalizacaoVisualizar();
@@ -1664,7 +1664,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 76)
+	@Test(priority = 75)
 	public void codigoContabalizacaoDetalhes() {
 
 		codigoContabalizacaoDetalhes = new CodigoContabalizacaoDetalhes();
@@ -1675,19 +1675,9 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		codigoContabalizacaoDetalhes.afterClass();
 
 	}
+
+
 	@Test(priority = 76)
-	public void códigoContabilizaçãoExcluirMassa() {
-
-		códigoContabilizaçãoExcluirMassa = new CódigoContabilizaçãoExcluirMassa();
-		códigoContabilizaçãoExcluirMassa.beforeClass();
-		códigoContabilizaçãoExcluirMassa.login();
-		códigoContabilizaçãoExcluirMassa.acessarMDR();
-		códigoContabilizaçãoExcluirMassa.criar();
-		códigoContabilizaçãoExcluirMassa.afterClass();
-
-	}
-
-	@Test(priority = 77)
 	public void codigoContabilizacaoExcluir() {
 
 		codigoContabilizacaoExcluir = new CodigoContabilizacaoExcluir();
@@ -1698,6 +1688,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		codigoContabilizacaoExcluir.afterClass();
 
 		System.out.println("-------------------Codigo Contabilização Fin-------------------------");
+	}
+	
+	
+	@Test(priority = 77)
+	public void códigoContabilizaçãoExcluirMassa() {
+
+		códigoContabilizaçãoExcluirMassa = new CódigoContabilizaçãoExcluirMassa();
+		códigoContabilizaçãoExcluirMassa.beforeClass();
+		códigoContabilizaçãoExcluirMassa.login();
+		códigoContabilizaçãoExcluirMassa.acessarMDR();
+		códigoContabilizaçãoExcluirMassa.criar();
+		códigoContabilizaçãoExcluirMassa.afterClass();
+
 	}
 	
 	@Test(priority = 78)
@@ -1808,6 +1811,19 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	}
 	
 	@Test(priority = 84)
+	public void  configuracoesFundoSocialEditar() {
+
+		configuracoesFundoSocialEditar = new ConfiguracoesFundoSocialEditar();
+		configuracoesFundoSocialEditar.beforeClass();
+		configuracoesFundoSocialEditar.ingresar();
+		configuracoesFundoSocialEditar.ingresarMDR();
+		configuracoesFundoSocialEditar.editar();
+		configuracoesFundoSocialEditar.afterClass();
+
+	}
+	
+	
+	@Test(priority = 84)
 	public void configuracaoFundoSocailFiltroId() {
 
 		configuracaoFundoSocailFiltroId = new ConfiguracaoFundoSocailFiltroId();
@@ -1832,7 +1848,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 85)
+	@Test(priority = 86)
 	public void configuracoesDeFundoSocialExcluirEmMassa() {
 
 		configuracoesDeFundoSocialExcluirEmMassa = new ConfiguracoesDeFundoSocialExcluirEmMassa();
@@ -1846,17 +1862,6 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 85)
-	public void  configuracoesFundoSocialEditar() {
-
-		configuracoesFundoSocialEditar = new ConfiguracoesFundoSocialEditar();
-		configuracoesFundoSocialEditar.beforeClass();
-		configuracoesFundoSocialEditar.ingresar();
-		configuracoesFundoSocialEditar.ingresarMDR();
-		configuracoesFundoSocialEditar.editar();
-		configuracoesFundoSocialEditar.afterClass();
-
-	}
 
 	// Contrato IOF
 
@@ -2087,7 +2092,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	}
 
 	@Test(priority = 103)
-	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarEditar() {
+	public void utilizacaoDosCreditosEmPeriodoAnteriorEditar() {
 
 		utilizacaoDosCreditosEmPeriodoAnteriorEditar = new UtilizacaoDosCreditosEmPeriodoAnteriorEditar();
 		utilizacaoDosCreditosEmPeriodoAnteriorEditar.beforeClass();
@@ -2099,7 +2104,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	}
 
 	@Test(priority = 104)
-	public void utilizacaoDosCreditosEmPeriodoAnteriorCriarDetalhes() {
+	public void utilizacaoDosCreditosEmPeriodoAnteriorDetalhes() {
 
 		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes = new UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes();
 		utilizacaoDosCreditosEmPeriodoAnteriorDetalhes.beforeClass();
@@ -2254,7 +2259,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		sPCBFederaisRetidosEditar.afterClass();
 	}
 	
-	@Test(priority = 117)
+	@Test(priority = 116)
 	public void spcbFederaisRetidosDetalhes() {
 		spcbFederaisRetidosDetalhes = new SPCBFederaisRetidosDetalhes();
 		spcbFederaisRetidosDetalhes.beforeClass();
@@ -2264,7 +2269,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		spcbFederaisRetidosDetalhes.afterClass();
 	}
 	
-	@Test(priority = 117)
+	@Test(priority = 116)
 	public void spcbFederaisRetidosVisualizar() {
 		spcbFederaisRetidosVisualizar = new SPCBFederaisRetidosVisualizar();
 		spcbFederaisRetidosVisualizar.beforeClass();
@@ -2274,7 +2279,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		spcbFederaisRetidosVisualizar.afterClass();
 	}
 	
-	@Test(priority = 118)
+	@Test(priority = 117)
 	public void excluirSPCB() {
 		sPCBFederaisRetidosExcluir = new SPCBFederaisRetidosExcluir();
 		sPCBFederaisRetidosExcluir.beforeClass();
@@ -2300,7 +2305,7 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 	// Notas a Declarar Anexo III DIA-AM
 	
 	@Test(priority = 119)
-	public void criarMassaNotas() {
+	public void criarNotas() {
 		System.out.println("-------------------Notas a Declarar Anexo III DIA-AM -------------------------");
 		notasDeclararAnexoIIICriar = new NotasDeclararAnexoIIICriar();
 		notasDeclararAnexoIIICriar.beforeClass();
@@ -2310,27 +2315,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIICriar.afterClass();
 	}
 	
+	
 	@Test(priority = 120)
-	public void detalheMassaNotas() {
-		notasDeclararAnexoIIIDetalhe = new NotasDeclararAnexoIIIDetalhe();
-		notasDeclararAnexoIIIDetalhe.beforeClass();
-		notasDeclararAnexoIIIDetalhe.ingresar();
-		notasDeclararAnexoIIIDetalhe.mdrEntrar();
-		notasDeclararAnexoIIIDetalhe.detalhe();
-		notasDeclararAnexoIIIDetalhe.afterClass();
-	}
-	
-	@Test(priority = 121)
-	public void excluirNotas() {
-		notasDeclararAnexoIIIExcluir = new NotasDeclararAnexoIIIExcluir();
-		notasDeclararAnexoIIIExcluir.beforeClass();
-		notasDeclararAnexoIIIExcluir.ingresar();
-		notasDeclararAnexoIIIExcluir.mdrEntrar();
-		notasDeclararAnexoIIIExcluir.excluir();
-		notasDeclararAnexoIIIExcluir.afterClass();
-	}
-	
-	@Test(priority = 122)
 	public void notasDeclararAnexoIIIEditar() {
 		notasDeclararAnexoIIIEditar = new NotasDeclararAnexoIIIEditar();
 		notasDeclararAnexoIIIEditar.beforeClass();
@@ -2340,7 +2326,29 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIIEditar.afterClass();
 	}
 	
+	@Test(priority = 121)
+	public void detalheNotas() {
+		notasDeclararAnexoIIIDetalhe = new NotasDeclararAnexoIIIDetalhe();
+		notasDeclararAnexoIIIDetalhe.beforeClass();
+		notasDeclararAnexoIIIDetalhe.ingresar();
+		notasDeclararAnexoIIIDetalhe.mdrEntrar();
+		notasDeclararAnexoIIIDetalhe.detalhe();
+		notasDeclararAnexoIIIDetalhe.afterClass();
+	}
+	
+	
 	@Test(priority = 122)
+	public void excluirNotas() {
+		notasDeclararAnexoIIIExcluir = new NotasDeclararAnexoIIIExcluir();
+		notasDeclararAnexoIIIExcluir.beforeClass();
+		notasDeclararAnexoIIIExcluir.ingresar();
+		notasDeclararAnexoIIIExcluir.mdrEntrar();
+		notasDeclararAnexoIIIExcluir.excluir();
+		notasDeclararAnexoIIIExcluir.afterClass();
+	}
+
+	
+	@Test(priority = 123)
 	public void excluirMassaNotas() {
 		notasDeclararAnexoIIIExcluirMassa = new NotasDeclararAnexoIIIExcluirMassa();
 		notasDeclararAnexoIIIExcluirMassa.beforeClass();
@@ -2350,69 +2358,8 @@ public class AutomacoesMDR1 extends TestBaseSteven {
 		notasDeclararAnexoIIIExcluirMassa.afterClass();
 		System.out.println("-------------------Notas a Declarar Anexo III DIA-AM FIN-------------------------");
 	}
-	//122
 
-	// Atividades Fiscais > Associação de Atividades Fiscais
-	//108
-	
-	@Test(priority = 123)
-	public void associaçãoCriar() {
-		associaçãoCriar = new AssociaçãoCriar();
-		associaçãoCriar.beforeClass();
-		associaçãoCriar.login();
-		associaçãoCriar.acessarMDR();
-		associaçãoCriar.criarAssociação();
-		associaçãoCriar.afterClass();
-		
 
-	}
-	
-	@Test(priority = 124)
-	public void associaçãoEditar() {
-		associaçãoEditar = new AssociaçãoEditar();
-		associaçãoEditar.beforeClass();
-		associaçãoEditar.login();
-		associaçãoEditar.acessarMDR();
-		associaçãoEditar.editarAssociação();
-		associaçãoEditar.afterClass();
-		
-
-	}
-	
-	@Test(priority = 125)
-	public void associaçãoVisualizar() {
-		associaçãoVisualizar = new AssociaçãoVisualizar();
-		associaçãoVisualizar.beforeClass();
-		associaçãoVisualizar.ingresar();
-		associaçãoVisualizar.mdrEntrar();
-		associaçãoVisualizar.visualizarAssociação();
-		associaçãoVisualizar.afterClass();
-		
-
-	}
-	
-	@Test(priority = 126)
-	public void associaçãoDetalhes() {
-		associaçãoDetalhes = new AssociaçãoDetalhes();
-		associaçãoDetalhes.beforeClass();
-		associaçãoDetalhes.ingresar();
-		associaçãoDetalhes.mdrEntrar();
-		associaçãoDetalhes.detalheAssociação();
-		associaçãoDetalhes.afterClass();
-		
-
-	}
-	@Test(priority = 127)
-	public void excluirAssociacao() {
-		associaçãoExcluir = new AssociaçãoExcluir();
-		associaçãoExcluir.beforeClass();
-		associaçãoExcluir.login();
-		associaçãoExcluir.acessarMDR();
-		associaçãoExcluir.excluirr();
-		associaçãoExcluir.afterClass();
-		System.out.println("-------------------Atividades Fiscais > Associação de Atividades Fiscais-------------------------");
-
-	}
 		
 
 }

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Steven
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa">
@@ -31,7 +35,11 @@
 =======
       <class name="com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa">
+>>>>>>> refs/remotes/origin/Steven
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="excluirEmMassa"/>
@@ -61,7 +69,11 @@
 =======
 <<<<<<< HEAD
           <include name="beforeClass"/>
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Steven
           <include name="criar"/>
+<<<<<<< HEAD
           <include name="afterClass"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -112,9 +124,12 @@
 =======
           <include name="criarConfiguracaoHierarquia"/>
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Steven
           <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="excluir"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
@@ -146,6 +161,9 @@
       </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia -->
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa -->
+>>>>>>> refs/remotes/origin/Steven
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

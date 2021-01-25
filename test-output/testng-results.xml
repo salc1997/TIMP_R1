@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,8 +31,12 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> refs/remotes/origin/Steven
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-25T17:35:31Z" name="Default suite" finished-at="2021-01-25T17:36:57Z" duration-ms="86022">
 =======
@@ -61,8 +66,12 @@
   <suite started-at="2021-01-22T23:57:11Z" name="Default suite" finished-at="2021-01-22T23:59:19Z" duration-ms="128455">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite name="Default suite" duration-ms="95614" started-at="2021-01-25T21:56:10Z" finished-at="2021-01-25T21:57:45Z">
+>>>>>>> refs/remotes/origin/Steven
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-25T17:35:31Z" name="Default test" finished-at="2021-01-25T17:36:57Z" duration-ms="86022">
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir">
@@ -108,8 +117,14 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:57:11Z" name="beforeClass" finished-at="2021-01-22T17:57:22Z" duration-ms="11554" status="PASS">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test name="Default test" duration-ms="95614" started-at="2021-01-25T21:56:10Z" finished-at="2021-01-25T21:57:45Z">
+      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoEliminar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="12458" started-at="2021-01-25T15:56:10Z" finished-at="2021-01-25T15:56:22Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -124,7 +139,10 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Steven
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:35:45Z" name="login" finished-at="2021-01-25T14:35:52Z" duration-ms="7823" status="PASS">
 =======
@@ -151,8 +169,12 @@
         <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:57:22Z" name="login" finished-at="2021-01-22T17:57:30Z" duration-ms="7844" status="PASS">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="login" duration-ms="6865" started-at="2021-01-25T15:56:22Z" finished-at="2021-01-25T15:56:29Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -167,7 +189,10 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Steven
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:35:52Z" name="acessarMDR" finished-at="2021-01-25T14:36:21Z" duration-ms="28499" status="PASS">
 =======
@@ -192,8 +217,12 @@
         <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@332729ad]" started-at="2021-01-22T17:57:30Z" name="brbEntrar" finished-at="2021-01-22T17:57:44Z" duration-ms="14378" status="PASS">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="acessarMDR" duration-ms="23409" started-at="2021-01-25T15:56:29Z" finished-at="2021-01-25T15:56:53Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
         <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:36:21Z" name="excluir" finished-at="2021-01-25T14:36:57Z" duration-ms="36243" status="PASS">
@@ -211,7 +240,10 @@
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:36:57Z" name="afterClass" finished-at="2021-01-25T14:36:57Z" duration-ms="159" status="PASS">
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Steven
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa@3a079870]" name="criar" duration-ms="69082" started-at="2021-01-22T17:40:30Z" finished-at="2021-01-22T17:41:39Z">
 =======
 <<<<<<< HEAD
@@ -225,8 +257,12 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="excluir" duration-ms="48453" started-at="2021-01-25T15:56:53Z" finished-at="2021-01-25T15:57:41Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -244,8 +280,13 @@
 =======
         </test-method> <!-- detalheTipoTributoFiscalVisualizar -->
         <test-method signature="detalheTipoTributoDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@5b247367]" started-at="2021-01-21T16:00:40Z" name="detalheTipoTributoDetalhes" finished-at="2021-01-21T16:01:50Z" duration-ms="70411" status="PASS">
+=======
+        </test-method> <!-- excluir -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Antecipacao.AntecipacaoEliminar@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4413" started-at="2021-01-25T15:57:41Z" finished-at="2021-01-25T15:57:45Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- detalheTipoTributoDetalhes -->
         <test-method signature="detalheTipoTributoFiltroIdDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@5b247367]" started-at="2021-01-21T16:01:50Z" name="detalheTipoTributoFiltroIdDetalhes" finished-at="2021-01-21T16:02:39Z" duration-ms="49143" status="PASS">
           <reporter-output>
@@ -1922,7 +1963,10 @@ Session ID: 6c95acaa02efebf4719cac4b152a7079
           </reporter-output>
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Steven
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir -->
 =======
@@ -4463,6 +4507,9 @@ Session ID: ea9cab6e3303416e0349b7c94bb6724e
       </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente -->
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoEliminar -->
+>>>>>>> refs/remotes/origin/Steven
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

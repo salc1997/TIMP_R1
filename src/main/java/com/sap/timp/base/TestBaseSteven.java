@@ -447,6 +447,25 @@ public class TestBaseSteven {
 		return contar;
 
 	}
+	
+	public void idInserir(String nome,String idRegistro) {
+		Preferences id = Preferences.userRoot();
+
+		id.put(nome, idRegistro);
+		
+	}
+	
+	public String idObter(String nome) {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong(nome, 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
 
 	public void idInserir1(String idRegistro) {
 

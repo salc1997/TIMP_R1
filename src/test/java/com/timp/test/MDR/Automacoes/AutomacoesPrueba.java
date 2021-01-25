@@ -173,6 +173,24 @@ import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
 
 public class AutomacoesPrueba extends TestBaseSteven {
 	
+
+
+	// CEP> Bairro
+
+	BairroCriar bairroCriar;
+	BairroEditar bairroEditar;
+	BairroFiltros bairroFiltros;
+	BairroVisualizar bairroVisualizar;
+	BairroEliminar bairroEliminar;
+	BairroExcluirMassa bairroExcluirMassa;
+	
+	// CEP > Logradouro
+	LogradouroCriar logradouroCriar;
+	LogradouroEditar logradouroEditar;
+	LogradouroExcluir logradouroExcluir;
+	LogradouroFiltros logradouroFiltros;
+	LogradouroVisualizar logradouroVisualizar;
+	LogradouroExcluirMassa logradouroExcluirMassa;
 	
 	// CEP > Município
 	MunicipioCriar municipioCriar;
@@ -262,6 +280,163 @@ public class AutomacoesPrueba extends TestBaseSteven {
 	// --------------------------------------------------------------------------------------------------
 	
 	// Ajustes > Associação de Códigos de Ajustes
+
+	
+
+	// CEP > Bairro
+
+	@Test(priority = 59)
+	public void bairroCriar() {
+
+		System.out.println("------------------- CEP > Bairro-------------------------");
+
+		bairroCriar = new BairroCriar();
+		bairroCriar.beforeClass();
+		bairroCriar.login();
+		bairroCriar.acessarMDR();
+		bairroCriar.criar();
+		bairroCriar.afterClass();
+
+	}
+
+	@Test(priority = 60)
+	public void bairroEditar() {
+
+		bairroEditar = new BairroEditar();
+		bairroEditar.beforeClass();
+		bairroEditar.login();
+		bairroEditar.acessarMDR();
+		bairroEditar.editar();
+		bairroEditar.afterClass();
+
+	}
+
+	@Test(priority = 60)
+	public void bairroVisualizar() {
+
+		bairroVisualizar = new BairroVisualizar();
+		bairroVisualizar.beforeClass();
+		bairroVisualizar.login();
+		bairroVisualizar.acessarMDR();
+		bairroVisualizar.visualizar();
+		bairroVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 61)
+	public void bairroFiltro() {
+
+		bairroFiltros = new BairroFiltros();
+		bairroFiltros.beforeClass();
+		bairroFiltros.login();
+		bairroFiltros.acessarMDR();
+		bairroFiltros.filtro();
+		bairroFiltros.afterClass();
+
+	}
+
+	@Test(priority = 62)
+	public void bairroExcluir() {
+
+		bairroEliminar = new BairroEliminar();
+		bairroEliminar.beforeClass();
+		bairroEliminar.login();
+		bairroEliminar.acessarMDR();
+		bairroEliminar.eliminar();
+		bairroEliminar.afterClass();
+	}
+	
+	@Test(priority = 63)
+	public void bairroExcluirMassa() {
+
+		bairroExcluirMassa = new BairroExcluirMassa();
+		bairroExcluirMassa.beforeClass();
+		bairroExcluirMassa.login();
+		bairroExcluirMassa.acessarMDR();
+		bairroExcluirMassa.criar();
+		bairroExcluirMassa.excluirMassa();
+		bairroExcluirMassa.afterClass();
+
+		System.out.println("-------------------CEP > Bairro Fin-------------------------");
+	}
+
+	// CEP > Logradouro
+
+	@Test(priority = 64)
+	public void logradouroCriar() {
+
+		System.out.println("-------------------CEP > Logradouro-------------------------");
+
+		logradouroCriar = new LogradouroCriar();
+		logradouroCriar.beforeClass();
+		logradouroCriar.login();
+		logradouroCriar.acessarMDR();
+		logradouroCriar.criar();
+		logradouroCriar.afterClass();
+
+	}
+
+	@Test(priority = 65)
+	public void logradouroEditar() {
+
+		logradouroEditar = new LogradouroEditar();
+		logradouroEditar.beforeClass();
+		logradouroEditar.login();
+		logradouroEditar.acessarMDR();
+		logradouroEditar.editar();
+		logradouroEditar.afterClass();
+
+	}
+
+	@Test(priority = 65)
+	public void logradouroVisualizar() {
+
+		logradouroVisualizar = new LogradouroVisualizar();
+		logradouroVisualizar.beforeClass();
+		logradouroVisualizar.login();
+		logradouroVisualizar.acessarMDR();
+		logradouroVisualizar.visualizar();
+		logradouroVisualizar.afterClass();
+
+	}
+
+	@Test(priority = 66)
+	public void logradouroFiltro() {
+
+		logradouroFiltros = new LogradouroFiltros();
+		logradouroFiltros.beforeClass();
+		logradouroFiltros.login();
+		logradouroFiltros.acessarMDR();
+		logradouroFiltros.filtros();
+		logradouroFiltros.afterClass();
+
+	}
+
+	@Test(priority = 67)
+	public void logradouroExcluir() {
+
+		logradouroExcluir = new LogradouroExcluir();
+		logradouroExcluir.beforeClass();
+		logradouroExcluir.login();
+		logradouroExcluir.acessarMDR();
+		logradouroExcluir.excluir();
+		logradouroExcluir.afterClass();
+
+	}
+	
+	@Test(priority = 68)
+	public void logradouroExcluirMassa() {
+
+		logradouroExcluirMassa = new LogradouroExcluirMassa();
+		logradouroExcluirMassa.beforeClass();
+		logradouroExcluirMassa.login();
+		logradouroExcluirMassa.acessarMDR();
+		logradouroExcluirMassa.criar();
+		logradouroExcluirMassa.excluirMassa();
+		logradouroExcluirMassa.afterClass();
+
+		System.out.println("-------------------CEP > Logradouro Fin-------------------------");
+	}
 
 	// CEP > Município
 
@@ -1055,7 +1230,7 @@ public class AutomacoesPrueba extends TestBaseSteven {
 		notasDeclararAnexoIIIEditar.afterClass();
 	}
 	
-	@Test(priority = 123)
+	@Test(priority = 122)
 	public void excluirMassaNotas() {
 		notasDeclararAnexoIIIExcluirMassa = new NotasDeclararAnexoIIIExcluirMassa();
 		notasDeclararAnexoIIIExcluirMassa.beforeClass();
@@ -1067,7 +1242,6 @@ public class AutomacoesPrueba extends TestBaseSteven {
 	}
 	//122
 
-
-		
+	
 
 }

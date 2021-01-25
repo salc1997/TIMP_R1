@@ -230,7 +230,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		}
 		  
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir("",idB);
+		idInserir("AssociaçãoCodigoAjuste",idB);
 		  
 		sleep(2000); 
 		System.out.println(id); 

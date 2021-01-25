@@ -109,7 +109,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO extends Tes
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Cópia de Super Basica"));
+		sucesso.add(nome.contains("Cópia de Prueba QA Visualizar"));
 		
 		System.out.println("nuevo Copia: "+id2);
 		idInserir2(id2);

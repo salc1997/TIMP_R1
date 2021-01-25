@@ -9,6 +9,7 @@
   <test name="Default test(failed)" parallel="none">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa">
 =======
 <<<<<<< HEAD
@@ -25,7 +26,11 @@
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="excluirEmMassa"/>
 =======
@@ -102,9 +107,13 @@
 =======
           <include name="resultadoDoAbaParte1"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="criarConfiguracaoHierarquia"/>
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoExcluirEmMassa -->
 =======
@@ -129,6 +138,9 @@
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -87,7 +87,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de ICMS 17093");
+		descricao.sendKeys("Teste de ICMS 173");
 		
 		sleep(2000);
 		

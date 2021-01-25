@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="20" total="29" passed="9">
 =======
 <<<<<<< HEAD
@@ -12,8 +13,12 @@
 =======
 <testng-results total="127" passed="93" failed="34" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Cristhian
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="1881108" started-at="2021-01-21T21:43:11Z" finished-at="2021-01-21T22:14:32Z">
@@ -27,8 +32,12 @@
 =======
   <suite started-at="2021-01-21T21:55:32Z" name="Default suite" finished-at="2021-01-22T02:57:13Z" duration-ms="18100853">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-01-25T00:23:18Z" name="Default suite" finished-at="2021-01-25T00:27:12Z" duration-ms="233652">
+>>>>>>> refs/heads/Cristhian
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="1881108" started-at="2021-01-21T21:43:11Z" finished-at="2021-01-21T22:14:32Z">
@@ -50,14 +59,23 @@
       <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
         <test-method signature="detalheTipoTributoFiscalCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@5b247367]" started-at="2021-01-21T15:55:32Z" name="detalheTipoTributoFiscalCriar" finished-at="2021-01-21T15:57:16Z" duration-ms="103715" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+    <test started-at="2021-01-25T00:23:18Z" name="Default test" finished-at="2021-01-25T00:27:12Z" duration-ms="233652">
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:23:18Z" name="beforeClass" finished-at="2021-01-24T21:23:32Z" duration-ms="14042" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaCriar -->
         <test-method status="PASS" signature="regraDeReaberturaEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaEditar" duration-ms="99016" started-at="2021-01-21T15:44:22Z" finished-at="2021-01-21T15:46:01Z">
 =======
+=======
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:16Z" name="login" finished-at="2021-01-21T02:10:29Z" duration-ms="13170" status="PASS">
 =======
@@ -68,14 +86,21 @@
         </test-method> <!-- detalheTipoTributoFiscalCriar -->
         <test-method signature="detalheTipoTributoFiscalEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@5b247367]" started-at="2021-01-21T15:57:16Z" name="detalheTipoTributoFiscalEditar" finished-at="2021-01-21T15:59:14Z" duration-ms="118030" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:23:32Z" name="login" finished-at="2021-01-24T21:23:39Z" duration-ms="7107" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaEditar -->
         <test-method status="PASS" signature="regraDeReaberturaDetalle()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaDetalle" duration-ms="72060" started-at="2021-01-21T15:46:01Z" finished-at="2021-01-21T15:47:13Z">
 =======
+=======
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar@7674f035]" started-at="2021-01-21T02:10:29Z" name="acessarTCC" finished-at="2021-01-21T02:10:49Z" duration-ms="19590" status="PASS">
 =======
@@ -86,14 +111,27 @@
         </test-method> <!-- detalheTipoTributoFiscalEditar -->
         <test-method signature="detalheTipoTributoFiscalVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@5b247367]" started-at="2021-01-21T15:59:14Z" name="detalheTipoTributoFiscalVisualizar" finished-at="2021-01-21T16:00:40Z" duration-ms="85995" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:23:39Z" name="acessarTCC" finished-at="2021-01-24T21:24:00Z" duration-ms="20184" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="executarEditar()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:24:00Z" name="executarEditar" finished-at="2021-01-24T21:27:12Z" duration-ms="192299" status="PASS">
+>>>>>>> refs/heads/Cristhian
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaDetalle -->
         <test-method status="PASS" signature="regraDeReaberturaExcluirMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaExcluirMassa" duration-ms="113968" started-at="2021-01-21T15:47:13Z" finished-at="2021-01-21T15:49:07Z">
+=======
+        </test-method> <!-- executarEditar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar@6f45df59]" started-at="2021-01-24T21:27:12Z" name="afterClass" finished-at="2021-01-24T21:27:12Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- regraDeReaberturaExcluirMassa -->
         <test-method status="FAIL" signature="regraDeReaberturaVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR8@53ca01a2]" name="regraDeReaberturaVisualizar" duration-ms="51844" started-at="2021-01-21T15:49:07Z" finished-at="2021-01-21T15:49:59Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -4295,6 +4333,10 @@ Session ID: ea9cab6e3303416e0349b7c94bb6724e
         </test-method> <!-- ajusteEInformacoesDeValoresExcluirEmMassa -->
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR2 -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
+>>>>>>> refs/heads/Cristhian
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

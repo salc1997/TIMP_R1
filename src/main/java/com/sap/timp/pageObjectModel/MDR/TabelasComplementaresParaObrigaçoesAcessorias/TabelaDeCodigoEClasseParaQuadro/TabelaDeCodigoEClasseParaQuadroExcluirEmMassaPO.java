@@ -113,31 +113,31 @@ public class TabelaDeCodigoEClasseParaQuadroExcluirEmMassaPO extends TestBaseEli
 		sleep(2000);
 		//Primeiro Registro
 
-obrigacao.click();
+		obrigacao.click();
 		
 		sleep(2000);
 		
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigo.sendKeys("7");
+		codigo.sendKeys("99");
 		
 		sleep(2000);
 		
-		origem.sendKeys("7");
+		origem.sendKeys("99");
 		
 		sleep(2000);
 		
-		codigo12.sendKeys("7");
+		codigo12.sendKeys("99");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste");
+		descricao.sendKeys("Teste 99");
 		
 		
 		sleep(2000);
 		
-		classe.sendKeys("7");
+		classe.sendKeys("99");
 		sleep(2000);
 		
 		vencimento.sendKeys("007");
@@ -162,26 +162,26 @@ obrigacao.click();
 		//Segundo Registro
 		
 
-obrigacao.click();
+		obrigacao.click();
 		
 		sleep(2000);
 		
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigo.sendKeys("7");
+		codigo.sendKeys("88");
 		
 		sleep(2000);
 		
-		origem.sendKeys("7");
+		origem.sendKeys("88");
 		
 		sleep(2000);
 		
-		codigo12.sendKeys("7");
+		codigo12.sendKeys("88");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste");
+		descricao.sendKeys("Teste 88");
 		
 		
 		sleep(2000);

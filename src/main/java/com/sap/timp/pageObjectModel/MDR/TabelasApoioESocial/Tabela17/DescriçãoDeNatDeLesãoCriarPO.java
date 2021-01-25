@@ -82,7 +82,7 @@ public class DescriçãoDeNatDeLesãoCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		descricao.click();
-		descricao.sendKeys("Prueba de tester1");
+		descricao.sendKeys("Prueba de tester7");
 		sleep(1000);
 		
 		inputValidadeDe.click();

@@ -89,7 +89,7 @@ public class ClassificaçaoDeContribuintesDoIPICriarPO extends TestBaseEliel {
 		tipodeatividade.sendKeys("01011");
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA 1011");
+		descricao.sendKeys("Teste QA 011");
 		sleep(2000);
 		String data= fechaActual();
 		

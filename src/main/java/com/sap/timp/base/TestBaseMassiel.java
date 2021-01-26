@@ -48,12 +48,7 @@ public class TestBaseMassiel extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-<<<<<<< HEAD
 		driver.get(tc2);
-
-=======
-		driver.get(tp1);
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
 	   return driver;
 	}

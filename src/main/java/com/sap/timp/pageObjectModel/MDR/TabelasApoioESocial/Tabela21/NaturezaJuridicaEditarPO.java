@@ -69,6 +69,7 @@ public class NaturezaJuridicaEditarPO extends TestBaseSteven {
 		sleep(1000);
 		editar.click();
 		sleep(2000);
+		waitExpectElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");

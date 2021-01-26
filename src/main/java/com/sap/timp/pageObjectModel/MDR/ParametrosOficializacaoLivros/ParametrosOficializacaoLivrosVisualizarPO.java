@@ -123,7 +123,7 @@ public class ParametrosOficializacaoLivrosVisualizarPO extends TestBaseSteven {
 		String layoutTFBV1 = layoutTFBV.getText();
 		String configuracaoTFBV1 = configuracaoTFBV.getText();
 		String dataVigenciaV1 = dataVigenciaV.getText();
-
+		tipoLivroV1=tipoLivroV1.replace(" ", "");
 		
 		System.out.println(tipoLivroV1);
 		System.out.println(empresaV1);
@@ -171,8 +171,8 @@ public class ParametrosOficializacaoLivrosVisualizarPO extends TestBaseSteven {
 		String layoutTFBE1 = layoutTFBE.getAttribute("value");
 		String configuracaoTFBE1 = configuracaoTFBE.getAttribute("value");
 		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
-
-		
+		filialE1=filialE1.replace(" ", "");
+		tipoLivroE1=tipoLivroE1.replace(" ", "");
 		System.out.println(tipoLivroE1);
 		System.out.println(empresaE1);
 		System.out.println(ufE1);

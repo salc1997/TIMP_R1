@@ -232,7 +232,7 @@ public class ContratoIOFCriarPO extends TestBaseMassiel {
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		sleep(2000);
-		idInserir4(idB);
+		idInserir("ContratoIOF",idB);
 		System.out.println(id);
 		System.out.println(idB);
 				

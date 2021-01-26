@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLLPO;
+import com.sap.timp.pageObjectModel.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLLCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,7 +17,7 @@ public class ContasEspeciaisIRPJCSLL extends TestBaseMassiel{
 	
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
-	ContasEspeciaisIRPJCSLLPO  contasEspeciaisIRPJCSLLPO;
+	ContasEspeciaisIRPJCSLLCriarPO  contasEspeciaisIRPJCSLLPO;
 	
 	
 	
@@ -28,7 +28,7 @@ public class ContasEspeciaisIRPJCSLL extends TestBaseMassiel{
 	  driver = initializationM();
 	  accesarMDRPO = new AcessarMDRPO();
 	  loginTC = new LoginTC();
-	  contasEspeciaisIRPJCSLLPO = new ContasEspeciaisIRPJCSLLPO();
+	  contasEspeciaisIRPJCSLLPO = new ContasEspeciaisIRPJCSLLCriarPO();
   }
 
   @AfterClass

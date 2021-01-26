@@ -14,7 +14,7 @@ public class LimiteCompetenciaFiltroIDPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Limite de Competência\"]")
 	public WebElement limiteCompetencia;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement id;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")

@@ -33,7 +33,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia extends TestB
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
 	@Test(priority = 0)

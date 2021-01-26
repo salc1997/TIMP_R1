@@ -154,7 +154,7 @@ public class S1070ProcessosAdmJudiciaisCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		numeroDoProceso.click();
-		numeroDoProceso.sendKeys("002020");
+		numeroDoProceso.sendKeys("7001200");
 		sleep(1000);
 		
 		tipoProcesso.click();
@@ -232,7 +232,7 @@ public class S1070ProcessosAdmJudiciaisCriarPO extends TestBaseFernando{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir4(idB);
+		idInserir("S1070ProcessosAdmJudiciais",idB);
 
 		sleep(2000);
 		System.out.println(id);

@@ -15,7 +15,7 @@ import com.timp.test.MDR.CEP.Bairro.BairroExcluirMassa;
 import com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosFiltrar;
-import com.sap.timp.pageObjectModel.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLLPO;
+import com.sap.timp.pageObjectModel.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLLCriarPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriarPO;
 import com.timp.test.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLL;
 import com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar;
@@ -87,7 +87,9 @@ import com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExclui
 import com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar;
 import com.timp.test.MDR.TabelasApoioSped.CFOP.CFODetalhe;
 import com.timp.test.MDR.TabelasApoioSped.CFOP.CFOPEditar;
+import com.timp.test.MDR.TabelasApoioSped.CFOP.CFOPFiltrosAvancados;
 import com.timp.test.MDR.TabelasApoioSped.CFOP.CFOVisualizar;
+
 import com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa;
 import com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar;
 import com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.LogradouroExcluirMassa;
@@ -161,7 +163,7 @@ public class AutomaçõesMDR7 {
 	CFODetalhe cFODetalhe;
 	CFOPEditar CFOPEditar;
 	CFOVisualizar cFOVisualizar;
-	
+	CFOPFiltrosAvancados cFOPFiltrosAvancados;
 	
 	
 	// Tabela de Apoio do SPED	4.5.5 Classificação de Contribuintes do IPI
@@ -633,6 +635,16 @@ public class AutomaçõesMDR7 {
 		enquadramentoExcluirMassa.criar();
 		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
+	}
+	
+	@Test(priority = 50)
+	public void cFOPFiltrosAvancados() {		
+		cFOPFiltrosAvancados = new CFOPFiltrosAvancados();
+		cFOPFiltrosAvancados.beforeClass();
+		cFOPFiltrosAvancados.ingresar();
+		cFOPFiltrosAvancados.mdrEntrar();
+		cFOPFiltrosAvancados.filtros();
+		cFOPFiltrosAvancados.afterClass();		
 	}
 	
 	// Tabela de Apoio do SPED	> 4.3.8 Código de Ajustes de Contribuições ou Créditos

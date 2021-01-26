@@ -10,6 +10,7 @@ import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizaca
 
 import org.testng.annotations.BeforeClass;
 
+import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -49,13 +50,10 @@ public class CodigoContabilizacaoEditar extends TestBaseEliel {
 
 	@Test(priority = 2)
 	public void editar() {
-		// codigoContabilizacaoEditarPO.editar();
-		String sucesso = codigoContabilizacaoEditarPO.editar();
 
-		assertEquals(sucesso, "infoField", visualizaçar);
-
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(codigoContabilizacaoEditarPO.mostrar.isDisplayed(), semAcesso);
+		boolean sucesso = codigoContabilizacaoEditarPO.editar();
+		
+		assertTrue(sucesso, Editar);
 
 	}
 

@@ -124,6 +124,10 @@ public class RegistroECACEditarPO extends TestBaseEliel{
 		
 
 		driver.navigate().refresh();
+		sleep(3000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
 		sleep(3000);

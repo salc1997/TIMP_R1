@@ -66,6 +66,9 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	
 	
 	public ParametrosGeraisHierarquiaCriarPO() {
@@ -131,7 +134,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 		}
 
 		int subniveisAdicionados = driver.findElements(By.xpath("//div[@id=\"sublevels\"]/div")).size();
-		System.out.println(subniveisAdicionados);
+
 
 		String subniveisAdicionadosS = String.valueOf(subniveisAdicionados);
 
@@ -166,10 +169,14 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 
 		sleep(1000);
 		gravar.click();
+		sleep(2000);
+		waitExpectElement(nao);
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
-
+		sleep(2000);
+		
+		
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -179,18 +186,12 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		rows = driver
-				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
-				.size();
-		String id2 = driver.findElement(By.xpath(
-				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
-				.getText();
-		String nome = driver.findElement(By.xpath(
-				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
-				.getText();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div")).getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Prueba QA 12"));
+		sucesso.add(nome.equals("Prueba QA Visualizar"));
 
 		idInserir1(id2);
 

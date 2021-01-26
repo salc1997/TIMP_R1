@@ -45,6 +45,12 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
+	public WebElement lixeira;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public ParametrosGeraisHierarquiaCriarComCópiaPO() {
 
 		PageFactory.initElements(driver, this);
@@ -58,6 +64,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		hierarquias.click();
 		sleep(2000);
 		hierarquiaConfiguracao.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -66,7 +73,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		String idRegistro = idObter1();
-		Integer idRegistro2 = Integer.parseUnsignedInt(idRegistro) + 1;
+
 		System.out.println(idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -86,13 +93,20 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		sleep(2000);
 
 		gravar.click();
-		
+		sleep(2000);
+		waitExpectElement(nao);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
 
 		
 		int rows = driver
@@ -106,7 +120,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Cópia de - Prueba QA 08"));
+		sucesso.add(nome.contains("Cópia de - Prueba QA Visualiza"));
 		
 		System.out.println("nuevo Copia: "+id2);
 		idInserir2(id2);
@@ -125,8 +139,6 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 	
 	public boolean excluir() {
 		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String idRegistro = idObter2();
 		System.out.println("excluiremos: "+idRegistro);
@@ -147,9 +159,76 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectElement(lixeira);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[4]/div")).getText();
+		
+		int id1 = convertToInt(id);
+		int id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+		System.out.println("Registro Excluido: "+sucesso);
+		return sucesso;
+		
+	}
+	
+	
+	public boolean excluirLixeira() {
+		
+		lixeira.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		String idRegistro = idObter2();
+		System.out.println("excluiremos: "+idRegistro);
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
+		menu.click();
+		sleep(1000);
+		
+		excluir.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(lixeira);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		lixeira.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -168,7 +247,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		if (id1 != id2) {
 			sucesso= true;
 		}
-		
+		System.out.println("Registro Excluido da Lixeira: "+sucesso);
 		return sucesso;
 		
 	}

@@ -30,6 +30,7 @@ public class ParametrosGeraisConfiguraçãoEditar extends TestBaseCristhian {
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
   @Test(priority = 0)
@@ -49,6 +50,8 @@ public class ParametrosGeraisConfiguraçãoEditar extends TestBaseCristhian {
   @Test(priority = 2)
   public void editar() {
 
+	//  parametrosGeraisConfiguraçãoEditarPO.editar();
+	  
 	boolean sucesso = parametrosGeraisConfiguraçãoEditarPO.editar();
 
 	assertTrue(sucesso, Editar);

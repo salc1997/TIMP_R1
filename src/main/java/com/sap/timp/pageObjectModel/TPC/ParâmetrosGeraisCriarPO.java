@@ -85,7 +85,7 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//li[text()=\"279 - P0003 - Pagamento ICMS - Conta Vinculada Maranhão\"]")
 	public WebElement opcCodAjusteTp1;
 	
-	@FindBy(xpath = "//li[text()=\"228 - P0070 - TIMP1913\"]")
+	@FindBy(xpath = "//li[text()=\"258 - P0001 - Test Pagamento JMIDE\"]")
 	public WebElement opcCodAjusteTq1;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Formulário\"]")
@@ -94,7 +94,7 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//li[text()=\"107 - Teste PR\"]")
 	public WebElement opcFormularioTp1;
 	
-	@FindBy(xpath = "//li[text()=\"1015 - SS\"]")
+	@FindBy(xpath = "//li[text()=\"431 - Teste 29/09\"]")
 	public WebElement opcFormularioTq1;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
@@ -215,37 +215,49 @@ public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
 		sleep(17000);
 		
 		
-		
+		actionsMoveToElementElement(formulario);
 		
 		if (tq1==true) {
 			codReceita.click();
-			sleep(3000);
+			sleep(1000);
+			actionsMoveToElementElement(opcCodReceitaTq1);
+			sleep(1000);
 			opcCodReceitaTq1.click();
 			sleep(3000);
 			
 			codAjuste.click();
-			sleep(3000);
+			sleep(1000);
+			actionsMoveToElementElement(opcCodAjusteTq1);
+			sleep(1000);
 			opcCodAjusteTq1.click();
-			sleep(3000);
+			sleep(1000);
 			
 			formulario.click();
-			sleep(3000);
+			sleep(1000);
+			actionsMoveToElementElement(opcFormularioTq1);
+			sleep(1000);
 			opcFormularioTq1.click();
 			sleep(3000);
 			
 			
 		}else {
 			codReceita.click();
+			sleep(1000);
+			actionsMoveToElementElement(opcCodReceitaTp1);
 			sleep(3000);
 			opcCodReceitaTp1.click();
 			sleep(3000);
 			
 			codAjuste.click();
+			sleep(1000);
+			actionsMoveToElementElement(opcCodAjusteTp1);
 			sleep(3000);
 			opcCodAjusteTp1.click();
 			sleep(3000);
 			
 			formulario.click();
+			sleep(1000);
+			actionsMoveToElementElement(opcFormularioTp1);
 			sleep(3000);
 			opcFormularioTp1.click();
 			sleep(3000);

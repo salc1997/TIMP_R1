@@ -809,7 +809,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-//	
+	
 //	  @Test(priority = 38) public void livrosFiscaisEditar() {
 //	 
 //	  livrosFiscaisEditar = new livrosFiscaisEditar();
@@ -1913,7 +1913,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	}
 	
 
-	@Test(priority = 138)
+	@Test(priority = 139)
 	public void scancDistribuidorasExcluirEmMasa() {
 
 		scancDistribuidorasExcluirEmMasa = new SCANCDistribuidorasExcluirEmMasa();
@@ -1925,7 +1925,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 139)
+	@Test(priority = 138)
 	public void sCANCDistribuidorasExcluir() {
 
 		sCANCDistribuidorasExcluir = new SCANCDistribuidorasExcluir();

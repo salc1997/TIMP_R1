@@ -109,7 +109,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO extends Tes
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Cópia de - Prueba QA 08"));
+		sucesso.add(nome.contains("Cópia de Prueba QA Visualizar"));
 		
 		System.out.println("nuevo Copia: "+id2);
 		idInserir2(id2);
@@ -159,7 +159,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO extends Tes
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[4]/div")).getText();
 		
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro);

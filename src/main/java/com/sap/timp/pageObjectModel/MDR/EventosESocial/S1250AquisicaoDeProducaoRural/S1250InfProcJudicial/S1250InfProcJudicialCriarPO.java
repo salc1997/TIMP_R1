@@ -124,7 +124,7 @@ public class S1250InfProcJudicialCriarPO extends TestBaseFernando{
 		if(id2 > id1) {
 			System.out.println("Registro creado...");
 			sucesso = true;
-			idInserir4(idRegistroNuevo);
+			idInserir("S1250InfProcJudicial",idRegistroNuevo);
 		}else{
 			System.out.println("No se ha creado el registro...");
 		}

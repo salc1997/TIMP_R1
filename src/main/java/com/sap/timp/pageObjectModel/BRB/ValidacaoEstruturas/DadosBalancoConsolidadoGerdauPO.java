@@ -73,10 +73,10 @@ public class DadosBalancoConsolidadoGerdauPO extends TestBaseSteven{
 		String totalLinhasS = totalLinhas.getText();
 		System.out.println(totalLinhasS);
 		int totalLinhasI = Integer.valueOf(totalLinhasS);
-		int esperadoLinhas = 2835;
+		int esperadoLinhas = 0;
 		System.out.println(esperadoLinhas);
-		sucesso.add(igualInt(totalLinhasI, esperadoLinhas));
-		System.out.println(igualInt(totalLinhasI, esperadoLinhas)+" numero linhas");
+		sucesso.add(mayorQue(totalLinhasI, esperadoLinhas));
+		System.out.println(mayorQue(totalLinhasI, esperadoLinhas)+" numero linhas");
 		
 		System.out.println("-------------------------------------------------");
 		//CMG
@@ -87,10 +87,10 @@ public class DadosBalancoConsolidadoGerdauPO extends TestBaseSteven{
 		System.out.println(cmgS + " String");
 		double cmgD = new Double(cmgS);
 		System.out.println(cmgD + " Double");
-		double esperadocmg = -4045012.72;
+		double esperadocmg = 0;
 		System.out.println(esperadocmg + " Esperado");
-		sucesso.add(igualDobule(cmgD, esperadocmg));
-		System.out.println(igualDobule(cmgD, esperadocmg)+" peso bruto");
+		sucesso.add(diferenteDe(cmgD, esperadocmg));
+		System.out.println(diferenteDe(cmgD, esperadocmg)+" peso bruto");
 		
 		System.out.println("-------------------------------------------------");
 		//CGSA
@@ -101,10 +101,10 @@ public class DadosBalancoConsolidadoGerdauPO extends TestBaseSteven{
 		System.out.println(cgsaS+ " String");
 		double cgsaD = new Double(cgsaS);
 		System.out.println(cgsaD + " Double");
-		double esperadocgsa = -4045012.72;
+		double esperadocgsa = 0;
 		System.out.println(esperadocgsa + " Esperado");
-		sucesso.add(igualDobule(cgsaD, esperadocgsa));
-		System.out.println(igualDobule(cgsaD, esperadocgsa)+" peso Liquido");
+		sucesso.add(diferenteDe(cgsaD, esperadocgsa));
+		System.out.println(diferenteDe(cgsaD, esperadocgsa)+" peso Liquido");
 		
 		System.out.println("-------------------------------------------------");
 		//US79(HMAC)
@@ -114,10 +114,10 @@ public class DadosBalancoConsolidadoGerdauPO extends TestBaseSteven{
 		System.out.println(hmacS + " String");
 		double hmacD = new Double(hmacS);
 		System.out.println(hmacD + " Double");
-		double esperadohmac = 0.04;
+		double esperadohmac = 0;
 		System.out.println(esperadohmac + " Esperado");
-		sucesso.add(igualDobule(hmacD, esperadohmac));
-		System.out.println(igualDobule(hmacD, esperadohmac) +" Valor Doc Fiscal");
+		sucesso.add(mayorQue(hmacD, esperadohmac));
+		System.out.println(mayorQue(hmacD, esperadohmac) +" Valor Doc Fiscal");
 		
 		System.out.println("-------------------------------------------------");
 
@@ -128,9 +128,9 @@ public class DadosBalancoConsolidadoGerdauPO extends TestBaseSteven{
 		System.out.println(macsS + " String");
 		double macsD = new Double(macsS);
 		System.out.println(macsD + " Double");
-		double esperadomacs = -0.08;
+		double esperadomacs = 0;
 		System.out.println(esperadomacs + " Esperado");
-		sucesso.add(igualDobule(macsD, esperadomacs));
+		sucesso.add(diferenteDe(macsD, esperadomacs));
 		System.out.println(sucesso.get(4) + " Valor oper. ICMS ( BC+ISENT+OUT)");
 		
 		System.out.println("-------------------------------------------------");
@@ -143,10 +143,10 @@ public class DadosBalancoConsolidadoGerdauPO extends TestBaseSteven{
 		System.out.println(sjkS+" String");
 		double sjkD = new Double(sjkS);
 		System.out.println(sjkD + " Double");
-		double esperadosjk = 0.01;
+		double esperadosjk = 0;
 		System.out.println(esperadosjk + " Esperado");
-		sucesso.add(igualDobule(sjkD, esperadosjk));
-		System.out.println(igualDobule(sjkD, esperadosjk) + " Valor Liquido");
+		sucesso.add(mayorQue(sjkD, esperadosjk));
+		System.out.println(mayorQue(sjkD, esperadosjk) + " Valor Liquido");
 		System.out.println("-------------------------------------------------");
 		
 		//CGI
@@ -157,10 +157,10 @@ public class DadosBalancoConsolidadoGerdauPO extends TestBaseSteven{
 		System.out.println(cgiS+" String");
 		double cgiD = new Double(cgiS);
 		System.out.println(cgiD + " Double");
-		double esperadocgi = -4045012.72;
-		sucesso.add(igualDobule(cgiD, esperadocgi));
+		double esperadocgi = 0;
+		sucesso.add(diferenteDe(cgiD, esperadocgi));
 		System.out.println(esperadocgi + " Esperado");
-		System.out.println(igualDobule(cgiD, esperadocgi) +" Valor Total Doc Fiscal");
+		System.out.println(diferenteDe(cgiD, esperadocgi) +" Valor Total Doc Fiscal");
 
 		
 		

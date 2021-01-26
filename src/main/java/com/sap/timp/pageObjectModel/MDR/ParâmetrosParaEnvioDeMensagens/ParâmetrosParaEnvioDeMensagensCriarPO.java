@@ -92,7 +92,7 @@ public class ParâmetrosParaEnvioDeMensagensCriarPO extends TestBaseFernando{
 		
 		descricao.click();
 		sleep(1000);
-		descricao.sendKeys("Teste automatizado");
+		descricao.sendKeys("Teste automatizado 701");
 		sleep(2000);
 		
 		empresa.click();

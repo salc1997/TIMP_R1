@@ -90,8 +90,8 @@ public class ConciliacaoCIAPPO extends TestBaseSteven{
 		System.out.println(montanteMoedaLocalNaoAbsolutoD + " Double");
 		double esperadomontanteMoedaLocalNaoAbsoluto = 0;
 		System.out.println(esperadomontanteMoedaLocalNaoAbsoluto + " Esperado");
-		sucesso.add(mayorQue(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto));
-		System.out.println(mayorQue(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto)+" peso Liquido");
+		sucesso.add(diferenteDe(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto));
+		System.out.println(diferenteDe(montanteMoedaLocalNaoAbsolutoD, esperadomontanteMoedaLocalNaoAbsoluto)+" peso Liquido");
 		
 		System.out.println("-------------------------------------------------");
 		

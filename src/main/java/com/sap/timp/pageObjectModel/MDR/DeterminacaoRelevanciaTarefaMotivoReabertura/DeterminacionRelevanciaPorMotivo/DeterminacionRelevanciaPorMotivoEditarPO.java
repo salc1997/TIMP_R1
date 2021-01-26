@@ -23,7 +23,7 @@ public class DeterminacionRelevanciaPorMotivoEditarPO extends TestBaseCristhian 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 
-	@FindBy(xpath = "//*[@id=\"motiveCode\"]/div")
+	@FindBy(xpath = "//*[@id=\"motiveCode\"]/div/div/div[2]")
 	public WebElement chaveReavertura;
 	
 	@FindBy(xpath = "//*[@id=\"option-2\"]")
@@ -62,7 +62,7 @@ public class DeterminacionRelevanciaPorMotivoEditarPO extends TestBaseCristhian 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("DeterminacaoRelevanciaPorMotivo");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -98,10 +98,12 @@ public class DeterminacionRelevanciaPorMotivoEditarPO extends TestBaseCristhian 
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
+		sleep(4000);
 
-
+		waitExpectElement(chaveReavertura);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 
 		chaveReavertura.click();
 		sleep(3000);

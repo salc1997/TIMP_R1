@@ -40,13 +40,19 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public ParametrosGeraisHierarquiaEditarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean editar() {
-		sleep(2000);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
 		hierarquias.click();
 		sleep(2000);
 		hierarquiaConfiguracao.click();
@@ -85,13 +91,12 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBaseCristhian {
 		campo.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();
-//		sleep(2000);
-//		waitExpectElement(sim);
-//		sleep(2000);
-//		sim.click();
 		sleep(2000);
-
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectElement(nao);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		driver.navigate().refresh();
 
@@ -115,10 +120,11 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBaseCristhian {
 
 		gravar.click();
 		sleep(2000);
-//		waitExpectElement(sim);
-//		sleep(2000);
-//		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectElement(nao);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		return sucesso;
 	}

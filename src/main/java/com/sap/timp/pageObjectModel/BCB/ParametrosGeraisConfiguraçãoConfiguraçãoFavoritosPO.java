@@ -85,13 +85,17 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO extends TestBas
 		sleep(2000);
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id="+idRegistro+"]/div[4]/div")).getText();
-		
+		System.out.println("Registro favorito:"+idRegistro1);
 		boolean sucesso = false;
 		
-		if (idRegistro1 == idRegistro) {
+	
+		
+		if (convertToInt(idRegistro1) == convertToInt(idRegistro)) {
 			sucesso = true;
+			System.out.println("soy true");
 		}else {
 			sucesso=false;
+			System.out.println("soy false");
 		}
 	
 		return sucesso;

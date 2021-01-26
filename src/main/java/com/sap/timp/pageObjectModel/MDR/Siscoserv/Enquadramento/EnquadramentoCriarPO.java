@@ -93,11 +93,11 @@ public class EnquadramentoCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigodeenquadramento.sendKeys("7");
+		codigodeenquadramento.sendKeys("71");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("descricao");
+		descricao.sendKeys("descricao1");
 		
 		sleep(2000);
 		codigonbs.click();

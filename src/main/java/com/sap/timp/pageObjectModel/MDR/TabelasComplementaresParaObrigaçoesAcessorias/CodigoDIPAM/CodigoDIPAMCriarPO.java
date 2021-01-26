@@ -100,7 +100,7 @@ public class CodigoDIPAMCriarPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodi.sendKeys("0709307");
+		codigodi.sendKeys("02709307");
 		
 		sleep(2000);
 		
@@ -108,7 +108,7 @@ public class CodigoDIPAMCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste 7093");
+		descricao.sendKeys("Teste0 7093");
 		
 		sleep(2000);
 		

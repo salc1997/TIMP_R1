@@ -48,7 +48,7 @@ public class AtividadeExcluirMassa extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = atividadeExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);

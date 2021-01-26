@@ -147,7 +147,7 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 		Integer filas2= driver.findElements(By.xpath("//div[contains(@class,\"body\")]/div[@class=\"tr\"]")).size();
 
 		String id2 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+filas2+"]/div[3]/div")).getText();
-		idInserir2(id2);
+		idInserir("CenariosCorrecao",id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

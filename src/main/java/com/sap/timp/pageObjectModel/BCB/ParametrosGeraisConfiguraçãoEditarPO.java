@@ -10,10 +10,10 @@ import com.sap.timp.base.TestBaseCristhian;
 public class ParametrosGeraisConfiguraçãoEditarPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
-	public WebElement hierarquias;
+	public WebElement configuracoes;
 
-	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[2]/div/div[2]/ul/li[1]/div/span[2]")
-	public WebElement hierarquiaConfiguracao;
+	@FindBy(xpath = "//span[text()=\"Configuração da Consolidação\"]")
+	public WebElement configuracaoDaConsolidacao;
 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimo;
@@ -24,18 +24,19 @@ public class ParametrosGeraisConfiguraçãoEditarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 
-	@FindBy(xpath = "//input[contains(@placeholder,\"Preencher o nome de Hierarquia\")]")
+	@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div/input")
 	public WebElement campo;
 	
 	@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")
 	public WebElement tipoApuracao;
+	
 	@FindBy(xpath = "//li[text()=\"4 - FECP\"]")
 	public WebElement tipoApuracaoO;
 	
 	@FindBy(xpath = "//*[@id=\"main-content\"]/div/div/div[1]/div/div[1]/div/div/div/ul/li[3]/button/span")
 	public WebElement editarR;
 
-	@FindBy(xpath = "//span[text()=\"Gravar\"]")
+	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement gravar;
 
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
@@ -54,9 +55,16 @@ public class ParametrosGeraisConfiguraçãoEditarPO extends TestBaseCristhian {
 	
 	public boolean editar() {
 		sleep(2000);
-		hierarquias.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		hierarquiaConfiguracao.click();
+		
+		sleep(2000);
+		configuracoes.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		configuracaoDaConsolidacao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -78,39 +86,55 @@ public class ParametrosGeraisConfiguraçãoEditarPO extends TestBaseCristhian {
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
 		sleep(2000);
+		//attributoNotToBeEmptyElement(campo, "value");
+		//sleep(2000);
 		editarR.click();
 		
 		sleep(2000);
+		
+		String valor = campo.getAttribute("value");
 		
 		tipoApuracao.click();
 		sleep(1000);
 		tipoApuracaoO.click();
 		sleep(1000);
 
-		String valor = campo.getAttribute("value");
+		
 //
-		String enviar = "1013 - Teste 04/11";
+		String enviar = campo.getAttribute("value");
 //
 //		campo.clear();
 //		sleep(1000);
 //		campo.sendKeys(enviar);
 //		sleep(2000);
 		gravar.click();
-//		sleep(2000);
+		sleep(12000);
 //		waitExpectElement(sim);
-//		sleep(2000);
-//		sim.click();
-		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		sleep(8000);
+		//waitExpectElement(editarR);
+		sleep(8000);
+		editarR.click();
+		
+		sleep(2000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributoNotToBeEmptyElement(campo, "value");
-		waitExpectElement(campo);
+		//waitExpectElement(campo);
 		
 		sleep(2000);
 
@@ -119,19 +143,8 @@ public class ParametrosGeraisConfiguraçãoEditarPO extends TestBaseCristhian {
 		System.out.println(nuevoTexto);
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
+		
 
-		sleep(1000);
-		campo.clear();
-
-		sleep(1000);
-		campo.sendKeys(valor);
-
-		gravar.click();
-		sleep(2000);
-//		waitExpectElement(sim);
-//		sleep(2000);
-//		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		return sucesso;
 	}

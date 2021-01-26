@@ -65,7 +65,7 @@ public boolean excluir() {
 
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("CadastroCondicao");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

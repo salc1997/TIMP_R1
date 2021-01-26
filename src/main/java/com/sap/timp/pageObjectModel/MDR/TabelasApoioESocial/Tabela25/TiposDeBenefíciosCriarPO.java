@@ -78,12 +78,12 @@ public class TiposDeBenefíciosCriarPO extends TestBaseFernando{
 		
 		codigo.click();
 		sleep(1000);
-		codigo.sendKeys("001");
+		codigo.sendKeys("7001");
 		sleep(2000);
 		
 		descricao.click();
 		sleep(1000);
-		descricao.sendKeys("Teste automatizado");
+		descricao.sendKeys("Teste automatizado7");
 		sleep(2000);
 		
 		validadeDe.click();

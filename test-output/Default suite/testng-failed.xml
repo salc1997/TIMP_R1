@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -17,7 +18,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -47,7 +53,11 @@
 =======
       <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoEditar">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR4">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -122,7 +132,48 @@
           <include name="hierarquiaDeCenariosDeCorreçaoDetalhes"/>
           <include name="productosSCANCVisualizar"/>
 >>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="tiposDeServicosVisualizar"/>
+          <include name="valoresParaMetodoPVEXExcluir"/>
+          <include name="valoresParaMetodoPECEXFiltroID"/>
+          <include name="s1250AquisicaoDeProducaoRuralExcluir"/>
+          <include name="processosAdmJudiciaisDetalhes"/>
+          <include name="valoresParaMetodoPECEXEditar"/>
+          <include name="tiposDeServicosEditar"/>
+          <include name="processosAdmJudiciaisEditar"/>
+          <include name="s1250AquisicaoDeProducaoRuralEditar"/>
+          <include name="valoresParaMetodoCPLEditar"/>
+          <include name="valoresParaMetodoPVEXDetalhes"/>
+          <include name="parametrosParaTPExcluirEnMasa"/>
+          <include name="parametrosParaTPFiltroId"/>
+          <include name="processosAdmJudiciaisExcluirEmMasa"/>
+          <include name="processosAdmJudiciaisExcluir"/>
+          <include name="processosAdmJudiciaisCriar"/>
+          <include name="s1200RemuneracaoDeTrabalhadorCriar"/>
+          <include name="tiposDeServicosCriar"/>
+          <include name="valoresParaMetodoPECEXDetalhes"/>
+          <include name="valoresParaMetodoPVEXFiltroID"/>
+          <include name="tiposDeServicosDetalhes"/>
+          <include name="valoresParaMetodoPVEXEditar"/>
+          <include name="parametrosModeloDeApuracaoTPEditar"/>
+          <include name="parametrosParaTPCriar"/>
+          <include name="valoresParaMetodoPVAEditar"/>
+          <include name="S1060AmbientesDeTrablhoExcluirMassa"/>
+          <include name="valoresParaMetodoPVEXCriar"/>
+          <include name="parametrosParaTPExcluir"/>
+          <include name="registroRPEditar"/>
+          <include name="s1200RemuneracaoDeTrabalhadorExcluir"/>
+          <include name="tiposDeServicos"/>
+          <include name="s1200RemuneracaoDeTrabalhadorDetalhes"/>
+          <include name="s1250AquisicaoDeProducaoRuralCriar"/>
+          <include name="registroECACCVisualizar"/>
+          <include name="valoresParaMetodoPECEXCriar"/>
+          <include name="tiposDeServicosFiltroID"/>
+          <include name="valoresParaMetodoPECEXExcluir"/>
+          <include name="parametrosParaTPEditar"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR8 -->
@@ -181,6 +232,9 @@
 =======
       </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoEditar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR4 -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -306,7 +306,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 1,dependsOnMethods = )
+	@Test(priority = 1 )
 	public void cadastroMotivosReaberturaEditar() {
 
 		cadastroMotivosReaberturaEditar = new CadastroMotivosReaberturaEditar();

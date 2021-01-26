@@ -69,6 +69,7 @@ public class TiposDeLogradouroEditarPO extends TestBaseSteven {
 		sleep(1000);
 		editar.click();
 		sleep(2000);
+		waitExpectElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");
@@ -78,7 +79,7 @@ public class TiposDeLogradouroEditarPO extends TestBaseSteven {
 		System.out.println(valor);
 		
 		String enviar = "Teste Editar";
-
+		
 		campo.clear();
 		sleep(1000);
 		

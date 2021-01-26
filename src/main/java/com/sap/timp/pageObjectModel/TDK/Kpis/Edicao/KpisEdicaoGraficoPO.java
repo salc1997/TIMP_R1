@@ -3,6 +3,7 @@ package com.sap.timp.pageObjectModel.TDK.Kpis.Edicao;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -110,9 +111,11 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 	public WebElement gra;
 
 	@FindBy(xpath = "//div[@class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\"]")
+	//@FindBy(xpath = "//div[@data-gs-width=\"7\"]/div[2]")
 	public WebElement flechita;
 
-	@FindBy(xpath = "//div[@id=\"UIComp_3\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"][1]")
+	//@FindBy(xpath = "//div[@id=\"UIComp_3\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"][1]")
+	@FindBy(xpath = "//div[contains(@id,\"UIComp_\")]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"][1]")
 	public WebElement mostrar;
 
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
@@ -121,9 +124,11 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 
-	@FindBy(xpath = "//div[@id=\"UIComp_0\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"]")
+	//@FindBy(xpath = "//div[@id=\"UIComp_0\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"]")
+	@FindBy(xpath = "//div[contains(@id,\"UIComp_\")]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"][1]")
 	public WebElement mostrar1;
 	
+
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
@@ -183,8 +188,10 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(4000);
-		sleep(4000);
+		sleep(2000);
+		
+		waitExpectElement(adicionar);
+		sleep(2000);
 
 		adicionar.click();
 		sleep(2000);
@@ -216,7 +223,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		sleep(2000);
 
 		fonte.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -235,7 +242,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		}else if (tc2==true) {
 
 			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
-			sleep(3000);
+			sleep(2000);
 
 			WebElement fonteOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
 
@@ -247,7 +254,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		}else {
 
 			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
-			sleep(3000);
+			sleep(2000);
 
 			WebElement fonteOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
 
@@ -290,7 +297,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		}else {
 
 			actionsMoveToElementXpath("//li[@id=\"option-31\"]");
-			sleep(3000);
+			sleep(2000);
 
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-31\"]"));
 
@@ -309,7 +316,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		if (tq1 == true) {
 
 			actionsMoveToElementXpath("//li[@id=\"1834805491\"]");
-			sleep(3000);
+			sleep(2000);
 
 			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"1834805491\"]"));
 
@@ -321,7 +328,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		}else if (tc2==true) {
 
 			actionsMoveToElementXpath("//li[@id=\"option-1\"]");
-			sleep(3000);
+			sleep(2000);
 
 			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
 
@@ -365,7 +372,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		}else if (tc2==true) {
 
 			actionsMoveToElementXpath("//li[@id=\"option-40\"]");
-			sleep(3000);
+			sleep(2000);
 
 			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
 
@@ -376,7 +383,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 
 		}else {
 			actionsMoveToElementXpath("//li[@id=\"option-55\"]");
-			sleep(3000);
+			sleep(2000);
 
 			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-55\"]"));
 
@@ -971,7 +978,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		if (tq1 == true){
 
 			actionsMoveToElementElement(gra);
-
+			
 			sleep(2000);
 			moveToElement(flechita, driver.findElement(By.xpath("//div[@class=\"main-footer\"]/div[1]/div[3]")));
 			sleep(2000);
@@ -985,6 +992,13 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 			sleep(2000);
 
 		}else {
+			
+			actionsMoveToElementElement(gra);
+
+			sleep(2000);
+			moveToElement(flechita, driver.findElement(By.xpath("//div[@class=\"main-footer\"]/div[1]/div[3]")));
+			sleep(2000);
+
 
 		}
 

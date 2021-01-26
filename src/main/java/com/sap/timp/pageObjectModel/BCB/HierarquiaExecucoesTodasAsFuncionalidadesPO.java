@@ -99,7 +99,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	public WebElement uf;
 	@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
 	public WebElement ufO;
-	@FindBy(xpath = "//div[contains(@id,\"SP\")]/div/label/span")
+	@FindBy(xpath = "//div[contains(@id,\"DF\")]/div/label/span")
 	public WebElement ufO2;
 	
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
@@ -107,6 +107,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
 	public WebElement filialO;
 	@FindBy(xpath = "//div[contains(@id,\"1000_DF_0019\")]/div/label/span")
+	//@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
 	public WebElement filialTc2;
 
 	@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")
@@ -187,6 +188,13 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	
 	@FindBy(xpath = "//div[text()=\"Jan\"]")
 	public WebElement jan;
+	
+	@FindBy(xpath = "//div[text()=\"2019\"]")
+	public WebElement ano2019;
+	
+	@FindBy(xpath = "//div[text()=\"Nov\"]")
+	public WebElement nov;
+	
 	
 	@FindBy(xpath = "//span[text()=\"1M\"]")
 	public WebElement m1;
@@ -306,6 +314,9 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
 	public WebElement pastaLexeiraH;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	
 	public HierarquiaExecucoesTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
@@ -322,7 +333,11 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		execucoes.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		execucacoConsolidacao.click();
 		sleep(3000);
@@ -375,7 +390,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
+		nomeDeHierarquia.sendKeys("teste automatizado hierar");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Teste Automatizado");
@@ -407,8 +422,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 
 		String subniveisAdicionadosS = String.valueOf(subniveisAdicionados);
 
-		sucesso.add(subniveisAdicionadosS.equals("1"));
-
+		//sucesso.add(subniveisAdicionadosS.equals("1"));
+		sucesso.add(subniveisAdicionadosS.equals("2"));
 		int f = 1;
 		for (int i = 0; i < 1; i++) {
 
@@ -440,6 +455,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		sleep(1000);
 		gravar.click();
 		sleep(3000);
+		nao.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//span[@id=\"textLabel\"]");
 
@@ -463,13 +480,13 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Teste Automatizado"));
+		sucesso.add(nome.contains("teste automatizado"));
 
 		idInserir1(id2);
-
+		idInserir6(id2);
 		int id1I = convertToInt(idH);
 		int id2I = convertToInt(id2);
-
+		
 		System.out.println("***********");
 		System.out.println("Hierarquia");
 		System.out.println("Id antes da criação: " + id1I);
@@ -492,7 +509,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -532,7 +550,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -661,7 +680,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		}else {
 			sucesso = false;
 		}
-		
+		System.out.println(sucesso);
 		
 		return sucesso;
 
@@ -673,7 +692,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 //		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div"));
 //		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 //		sleep(2000);
@@ -714,6 +734,10 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 
 		gravar.click();
 		sleep(3000);
+		waitExpectElement(nao);
+		sleep(2000);
+		nao.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(2000);
@@ -761,7 +785,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		
 		
 		gravar.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	}
@@ -776,7 +800,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		}else if (url.contains("tp1")) {
 			tp1 = true;
 		}
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 		sleep(1000);
 		executar.click();
 		sleep(3000);
@@ -786,8 +811,24 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-
+		sleep(2000);
+		if(tc2 == true)
+		{
+			periodo.click();
+			sleep(3000);
+			paginaAnterior.click();
+			sleep(2000);
+			ano2019.click();
+			sleep(1000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			nov.click();
+			sleep(1000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			m1.click();
+			
+		}else {
 		periodo.click();
 		sleep(3000);
 		paginaAnterior.click();
@@ -800,12 +841,14 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		m1.click();
+		}
+		/*
 		if (tc2) {
 			y1.click(); //OJO CORREGIR PARA TC2
 		}else {
 			m1.click();
-		}
+		}*/
 		
 		sleep(2000);
 		execucaoAnalitica.click();
@@ -818,6 +861,10 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		
 		gravar.click();
 		sleep(3000);
+		waitExpectElement(nao);
+		sleep(2000);
+		nao.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -891,7 +938,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 			sucesso = false;
 		}
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 	}	
@@ -902,7 +949,18 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
+		String teste=idObter6();
+		String teste1=idObter1();
+		String teste2=idObter2();
+		String teste3=idObter3();
+		String teste4=idObter4();
+		String teste5=idObter5();
+		System.out.println("Id Após a teste: " + teste);
+		System.out.println("Id Após a teste idobter1: " + teste1);
+		System.out.println("Id Após a teste idobter2: " + teste2);
+		System.out.println("Id Após a teste idobter3: " + teste3);
+		System.out.println("Id Após a teste idobter4: " + teste4);
+		System.out.println("Id Após a teste idobter5: " + teste5);
 		sleep(2000);
 		execucoes.click();
 		sleep(3000);
@@ -1114,7 +1172,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		
 		
 		
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 		
 		entrada.click();
 		sleep(3000);
@@ -1210,7 +1269,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 		//EXCLUIR EXECUCOES
 		biblioteca.click();
 		sleep(2000);
@@ -1243,11 +1303,13 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		sleep(2000);
 		
 		simLexeira.click();
-		sleep(6000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		//waitExpectElement(pastaLexeira);
-		sleep(5000);
+		waitExpectXpath("//span[contains(text(),\"A versão de execução do builder foi enviada para a lixeira\")]");
+		sleep(2000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A versão de execução do builder foi enviada para a lixeira\")]")).size();
 		
@@ -1287,14 +1349,15 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 	}
 	
 	public ArrayList<Boolean> excluirConfiguracoes() {
 		//EXCLUIR CONFIGURACOES
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -1337,10 +1400,12 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		sleep(2000);
 		
 		simLexeira.click();
-		sleep(6000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(5000);
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+		waitExpectXpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]");
+		sleep(2000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
 		
@@ -1379,13 +1444,14 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}
 	
 	public ArrayList<Boolean> excluirHierarquia() {
 		//EXCLUIR HIERARQUIA
-		
+		String teste=idObter6();
+		System.out.println("Id Após a teste: " + teste);
 		sleep(2000);
 		hierarquias.click();
 		sleep(3000);
@@ -1395,23 +1461,36 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		ultimo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String idHierarquia = idObter1();
+		int rows = driver
+				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
+				.size();
+		String id2 = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
+				.getText();
+		/*String idHierarquia = idObter1();
+		String idHierarquia1 = idObter6();
+		*/
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");
-		System.out.println("OBTER 1:" + idHierarquia);
+	//	System.out.println("OBTER 1:" + idHierarquia);
+		System.out.println("OBTER 1:"+id2);
 		System.out.println("");
 		
 		
-		pesquisar.sendKeys(idHierarquia);
+		pesquisar.sendKeys(id2);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
-		WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+id2+"\"]/div[1]/div"));
+		WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+id2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -1422,11 +1501,13 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		sleep(2000);
 		
 		simLexeira.click();
-		sleep(6000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectElement(pastaLexeira);
-		sleep(5000);
-		
+		sleep(2000);
+		waitExpectXpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]");
+		sleep(2000);
+		/*
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -1437,7 +1518,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		}else {
 			sucesso.add(false);
 		}
-		
+		*/
 		
 		
 		pastaLexeiraH.click();
@@ -1445,14 +1526,14 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idHierarquia);
+		pesquisar.sendKeys(id2);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
-		WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+id2+"\"]/div[1]/div"));
+		WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+id2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		sleep(2000);
 		
 		menu.click();
@@ -1465,9 +1546,19 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		simExcluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
+		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A configuração hierarquia foi excluída com sucesso\")]")).size();
 		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		if (exclucao>0) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		System.out.println(sucesso);
 		return sucesso;
 	}
 	

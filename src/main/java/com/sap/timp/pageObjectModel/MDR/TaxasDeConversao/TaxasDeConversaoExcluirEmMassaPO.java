@@ -88,11 +88,11 @@ public boolean criar() {
 		sleep(2000);
 		//Primeiro Registro
 		
-		tipo.sendKeys("Tipo");
+		tipo.sendKeys("Tipo teste");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("descrição");
+		descricao.sendKeys("descrição teste");
 		
 		sleep(2000);
 		
@@ -117,11 +117,11 @@ public boolean criar() {
 		
 		//Segundo Registro
 		
-		tipo.sendKeys("Tipo");
+		tipo.sendKeys("Tipo teste 1");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("teste da descrição");
+		descricao.sendKeys("teste da descrição 1");
 		
 		sleep(2000);
 		

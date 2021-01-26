@@ -66,7 +66,7 @@ public ArrayList<Boolean> Detalle() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro =idObter3();
+		String idRegistro =idObter("municipio");
 		System.out.println(idRegistro);
 		
 		sleep(2000);

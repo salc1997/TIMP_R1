@@ -50,10 +50,17 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados extends Test
 	public void filtros() {
 
 		configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Filtros();
-		/*ArrayList<Boolean> sucesso = configuracaoEExecucaoPainelCreditoICMSVisualizarPO.visualizar();
+		
+		ArrayList<Boolean> sucesso = configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Empresa();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
-		}*/
+		}
+		
+		ArrayList<Boolean> Filial = configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Filial();
+
+		for (int i = 0; i < Filial.size(); i++) {
+			assertTrue(Filial.get(i), visualizaçar);
+		}
 	}
 }

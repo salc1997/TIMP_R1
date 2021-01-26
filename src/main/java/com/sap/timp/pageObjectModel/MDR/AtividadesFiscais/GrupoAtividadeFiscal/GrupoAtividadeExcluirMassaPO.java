@@ -163,7 +163,7 @@ public class GrupoAtividadeExcluirMassaPO extends TestBaseFernando{
 		// Se obtiene el ultimo registro de la tabla
 		String idUltimoRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
 		if(convertToInt(idUltimoRegistro) > convertToInt(id)) {
-			idInserir4(idUltimoRegistro);
+			idInserir("GrupoAtividadeFiscal",idUltimoRegistro);
 		}else {
 			creado = false;			
 		}

@@ -73,7 +73,7 @@ public class GrupoAtividadeFiscalDetallePO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro =idObter3();
+		String idRegistro =idObter("GrupoAtividadeFiscal");
 		System.out.println(idRegistro);
 		
 		sleep(2000);

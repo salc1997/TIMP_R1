@@ -79,7 +79,7 @@ public class DEPARAContasContábeisVisualizarPO extends TestBaseMassiel{
 		sleep(2000);
 
 	
-		String idRegistro =idObter4();
+		String idRegistro =idObter("DePARAContasContabeis");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

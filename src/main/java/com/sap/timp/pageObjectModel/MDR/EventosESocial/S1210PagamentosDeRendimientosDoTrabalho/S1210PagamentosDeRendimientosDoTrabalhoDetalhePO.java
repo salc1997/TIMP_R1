@@ -128,7 +128,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoDetalhePO extends TestBaseFe
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("S1210PagamentosDeRendimientosDoTrabalho");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 		System.out.println(idRegistro); // Primer registro que es el que se crea con la automatizacion

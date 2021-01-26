@@ -82,7 +82,7 @@ public class CodigoReceitaVisualizarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter4();
+		String idRegistro = idObter("CodigoReceita");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement açao = driver.findElement(

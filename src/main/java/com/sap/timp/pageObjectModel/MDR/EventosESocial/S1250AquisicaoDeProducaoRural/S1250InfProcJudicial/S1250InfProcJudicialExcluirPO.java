@@ -42,7 +42,7 @@ public class S1250InfProcJudicialExcluirPO extends TestBaseFernando{
 		btnPrimeraPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistro = idObter4();		
+		String idRegistro = idObter("S1250InfProcJudicial");		
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@id=\"judicial-process-list\"]/div/div/div/div[contains(@class,\"tbody\")]/div[@data-id and@class=\"tr\" and contains(@aria-label, \"Id: " +idRegistro+ "\")]/div[1]/div"));

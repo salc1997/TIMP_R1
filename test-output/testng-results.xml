@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -44,8 +45,12 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Eliel
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,8 +92,12 @@
 =======
   <suite started-at="2021-01-25T21:34:57Z" name="Default suite" finished-at="2021-01-25T21:36:40Z" duration-ms="102468">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-01-25T21:57:54Z" name="Default suite" finished-at="2021-01-25T21:59:32Z" duration-ms="97955">
+>>>>>>> refs/remotes/origin/Eliel
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -152,8 +161,14 @@
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar@5a5338df]" started-at="2021-01-25T15:34:57Z" name="beforeClass" finished-at="2021-01-25T15:35:10Z" duration-ms="12638" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-01-25T21:57:54Z" name="Default test" finished-at="2021-01-25T21:59:32Z" duration-ms="97955">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar@5b1669c0]" started-at="2021-01-25T18:57:54Z" name="beforeClass" finished-at="2021-01-25T18:58:10Z" duration-ms="15754" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,7 +192,10 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -216,8 +234,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar@5a5338df]" started-at="2021-01-25T15:35:10Z" name="login" finished-at="2021-01-25T15:35:17Z" duration-ms="7163" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar@5b1669c0]" started-at="2021-01-25T18:58:10Z" name="login" finished-at="2021-01-25T18:58:19Z" duration-ms="9609" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -241,7 +263,10 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -278,13 +303,20 @@
 =======
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar@5a5338df]" started-at="2021-01-25T15:35:17Z" name="acessarMDR" finished-at="2021-01-25T15:35:39Z" duration-ms="22223" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar@5b1669c0]" started-at="2021-01-25T18:58:19Z" name="acessarMDR" finished-at="2021-01-25T18:58:49Z" duration-ms="29692" status="PASS">
+>>>>>>> refs/remotes/origin/Eliel
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </test-method> <!-- acessarMDR -->
+<<<<<<< HEAD
         <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir@58ea606c]" started-at="2021-01-25T14:36:21Z" name="excluir" finished-at="2021-01-25T14:36:57Z" duration-ms="36243" status="PASS">
 =======
 <<<<<<< HEAD
@@ -4604,6 +4636,17 @@ Session ID: ea9cab6e3303416e0349b7c94bb6724e
 =======
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar -->
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="Visualizar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar@5b1669c0]" started-at="2021-01-25T18:58:49Z" name="Visualizar" finished-at="2021-01-25T18:59:28Z" duration-ms="38553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar@5b1669c0]" started-at="2021-01-25T18:59:28Z" name="afterClass" finished-at="2021-01-25T18:59:32Z" duration-ms="4327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar -->
+>>>>>>> refs/remotes/origin/Eliel
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

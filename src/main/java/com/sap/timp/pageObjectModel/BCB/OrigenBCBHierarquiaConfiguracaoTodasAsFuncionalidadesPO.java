@@ -104,6 +104,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
 		public WebElement filialO;
 		@FindBy(xpath = "//div[contains(@id,\"1000_DF_0019\")]/div/label/span")
+		//@FindBy(xpath = "//div[contains(@id,\"1000_DF_0013\")]/div/label/span")
 		public WebElement filialTc2;
 	
 		@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")
@@ -155,7 +156,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	@FindBy(xpath = "//li[text()=\"954 - (BCB com campo de Output) TA\"]")
 	public WebElement selectBCB1;
 	
-	@FindBy(xpath = "//li[text()=\"328 - (BCB com campo de Output) TA\"]")
+	//@FindBy(xpath = "//li[text()=\"328 - (BCB com campo de Output) TA\"]")
+	@FindBy(xpath = "//li[@id][text()=\"326 - (BCB com campo de Output) TA\"]")
 	public WebElement selectBCB2;
 	
 	//este es para tc2, pendiente de ver
@@ -266,7 +268,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"value\"]/div/div[2]")
 	public WebElement campoSaida5;
-	@FindBy(xpath = "//li[text()=\"Campo de Saída 2\"][1]")
+	//@FindBy(xpath = "//li[text()=\"Campo de Saída 2\"][1]")
+	@FindBy(xpath = "//li[@id][text()=\"Campo de saída 2\"][1]")
 	public WebElement opcCampoSaida5;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
@@ -292,7 +295,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div[@id=\"value\"]/div/div[2]")
 	public WebElement campoSaida6;
-	@FindBy(xpath = "//li[text()=\"Campo de Saída 1\"][1]")
+	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcCampoSaida6;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div/div[@id=\"check-negative\"]/div/label/span")
@@ -409,6 +412,9 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement pastaLexeiraC;
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
 	public WebElement pastaLexeiraH;
+	
+	@FindBy(xpath = "//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")
+	public WebElement mensagem;
 	
 	public OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
@@ -672,8 +678,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		uf.click();
 		sleep(1000);
 		if (tc2==true) {
-			ufO2.click();
-			ufO2.sendKeys(Keys.ESCAPE);
+			ufO.click();
+			ufO.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else {
 			ufO.click();
@@ -686,15 +692,15 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		filial.click();
 		sleep(1000);
-//		if (tc2==true) {
-//			filialTc2.click();
-//			filialTc2.sendKeys(Keys.ESCAPE);
-//			sleep(1000);
-		//}else {
+		if (tc2==true) {
 			filialO.click();
 			filialO.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		//}
+		}else {
+			filialO.click();
+			filialO.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}
 
 
 		tipoApuracao.click();
@@ -1546,8 +1552,10 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		campoSaida6.click();
 		sleep(3000);
-		opcCampoSaida6.click();
+		/*opcCampoSaida6.click();
 		opcCampoSaida6.sendKeys(Keys.ESCAPE);
+		*/
+		opcCampoSaida6.click();
 		sleep(3000);
 		
 		negativo6.click();
@@ -1991,11 +1999,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(2000);
 		
 		simLexeira.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+	//	waitExpectXpath("//span[contains(text(),\"A Confiia foi enviada para a Lixeira\")]");
 		sleep(2000);
 		
+	//	int exclucao = driver.findElements(By.xpath("guração de Hierarqu//span[contains(text(),\"A Confiia foi enviada para a Lixeira\")]")).size();
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
 		System.out.println(exclucao);
 		
@@ -2007,7 +2018,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}else {
 			sucesso.add(false);
 		}
-		
+		System.out.println(sucesso);
 		pastaLexeiraC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -2082,25 +2093,15 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		simLexeira.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
-		System.out.println(exclucao);
-		
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (exclucao>0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
+		//waitExpectXpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]");
+	
 		
 		
 		
+		//System.out.println(sucesso);
 		pastaLexeiraH.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -2124,10 +2125,25 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(2000);
 		
 		simExcluir.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		sleep(2000);
+		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A configuração hierarquia foi excluída com sucesso\")]")).size();
+		System.out.println(exclucao);
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		if (exclucao>0) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		
 		
 		return sucesso;
 	}

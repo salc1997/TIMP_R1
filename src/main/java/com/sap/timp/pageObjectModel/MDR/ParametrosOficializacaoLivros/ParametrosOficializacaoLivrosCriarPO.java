@@ -67,7 +67,9 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao2;
 
-	
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
+	public WebElement opcao3;
+
 	public ParametrosOficializacaoLivrosCriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -110,8 +112,11 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBaseSteven{
 		
 		uf.click();
 		sleep(1000);
-		opcao2.click();
+		/*opcao2.click();
 		opcao2.sendKeys(Keys.ESCAPE);
+		*/
+		opcao3.click();
+		opcao3.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");

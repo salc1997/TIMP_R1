@@ -3,6 +3,8 @@ package com.sap.timp.pageObjectModel.BCB;
 
 
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.ArrayList;
 import java.util.Set;
 import org.openqa.selenium.By;
@@ -565,7 +567,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveConfigurations\"]")
 		public WebElement lixeira;
 		
-		
+		@FindBy(xpath = "//button[text()=\"Não\"]")
+		public WebElement nao;
 		
 	public HierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
@@ -610,7 +613,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 
-		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
+		//nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
+		nomeDeHierarquia.sendKeys("Teste Automatizado de Hierar");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Teste Automatizado");
@@ -649,7 +653,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 		}
 		
-		
+	
 		for (int i = 0; i < subniveisAdicionados; i++) {
 			WebElement nomeDoSubnivel = driver
 					.findElement(By.xpath("//div[@id=\"sublevels\"]/div[" + f + "]/div[3]/div/div/input"));
@@ -675,6 +679,10 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(1000);
 		gravar.click();
 		sleep(3000);
+		waitExpectElement(nao);
+		sleep(2000);
+		nao.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//span[@id=\"textLabel\"]");
 
@@ -726,6 +734,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		}
 		
 		sleep(2000);
+		waitExpectElement(configuracoes);
+		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -751,7 +761,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("teste automatizado hierar");
+		nomeHirarquia.sendKeys("Teste Automatizado de Hierar");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -839,7 +849,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 			sucesso = false;
 		}
 		
-		
+		System.out.println(sucesso);
 		return sucesso;
 
 	}
@@ -945,6 +955,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 		gravar.click();
 		sleep(3000);
+		waitExpectElement(nao);
+		nao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(2000);
@@ -1309,15 +1321,20 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		boolean tc2 = false;
 		boolean tp1 = false;
+		boolean tq1=false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}else if (url.contains("tp1")) {
 			tp1 = true;
+		}else {
+			tq1=true;
 		}
 		
 		
 		//cometar desde aqui
+		sleep(2000);
+		waitExpectElement(configuracoes);
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -1329,9 +1346,14 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(2000);
 		//TQ1 972
 		//TP1 332
+		if (tp1 == true) {
+			pesquisar.sendKeys("332");
+			pesquisar.sendKeys(Keys.ENTER);
+			
+		}else if(tq1 == true){
 		pesquisar.sendKeys("972");
 		pesquisar.sendKeys(Keys.ENTER);
-		
+		}
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

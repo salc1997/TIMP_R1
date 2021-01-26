@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -15,14 +16,20 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
 =======
+=======
+>>>>>>> refs/remotes/origin/Eliel
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 =======
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Eliel
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -235,6 +242,15 @@
 =======
       </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR4 -->
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="Visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

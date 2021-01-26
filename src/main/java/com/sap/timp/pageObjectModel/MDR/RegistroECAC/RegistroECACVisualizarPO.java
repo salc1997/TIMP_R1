@@ -115,7 +115,7 @@ public class RegistroECACVisualizarPO extends TestBaseMassiel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro =idObter1();
+		String idRegistro = idObter("RegistroECAC");
 		System.out.println(idRegistro);
 		
 		sleep(2000);

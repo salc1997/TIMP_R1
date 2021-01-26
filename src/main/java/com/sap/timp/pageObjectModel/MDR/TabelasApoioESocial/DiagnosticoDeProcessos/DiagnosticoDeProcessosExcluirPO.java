@@ -47,7 +47,7 @@ public class DiagnosticoDeProcessosExcluirPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("DiagnosticoDeProcessos");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

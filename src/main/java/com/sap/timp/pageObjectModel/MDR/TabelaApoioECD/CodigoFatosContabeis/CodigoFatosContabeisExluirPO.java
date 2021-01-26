@@ -38,7 +38,7 @@ public class CodigoFatosContabeisExluirPO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("CodigoFatosContabeis");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

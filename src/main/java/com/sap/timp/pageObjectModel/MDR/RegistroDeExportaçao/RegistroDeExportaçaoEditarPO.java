@@ -51,7 +51,7 @@ public class RegistroDeExportaçaoEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegistroDeExportaçao");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

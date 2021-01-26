@@ -40,7 +40,8 @@ public class CompatibilidadeEnCatTrabExcluirPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("CompatibilidadeEnCatTrab");
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

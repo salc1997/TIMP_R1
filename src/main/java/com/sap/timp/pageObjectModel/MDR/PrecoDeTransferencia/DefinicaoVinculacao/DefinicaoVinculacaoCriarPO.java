@@ -145,7 +145,7 @@ public boolean criar() {
 		sleep(2000);
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
-		idInserir4(idB);
+		idInserir("DefinicaoVinculacao",idB);
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);

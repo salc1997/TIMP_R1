@@ -62,23 +62,23 @@ public class RateiroConsorcioPO extends TestBaseMassiel {
 		EmpresaConsorcio.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nombreEmpresaConsorcio.click();invisibilityOfElement("//div[@class=\\\"overlay loader dark\\\"]");
+		nombreEmpresaConsorcio.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(10000);
 		
 		//*[@id=\"rbtCode\"]/div/label/span
-		CNPJ.sendKeys("98676217");invisibilityOfElement("//div[@class=\\\"overlay loader dark\\\"]");
+		CNPJ.sendKeys("98676217");invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(10000);
 		
-		nuevaempresa.click();invisibilityOfElement("//div[@class=\\\"overlay loader dark\\\"]");
+		nuevaempresa.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		empresaconsorciadanovo.click();invisibilityOfElement("//div[@class=\\\"overlay loader dark\\\"]");
+		empresaconsorciadanovo.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		click.sendKeys(Keys.ENTER);
 	    sleep(2000);
 	    
-	    nuevaempresa.click();invisibilityOfElement("//div[@class=\\\"overlay loader dark\\\"]");
+	    nuevaempresa.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	    
 		

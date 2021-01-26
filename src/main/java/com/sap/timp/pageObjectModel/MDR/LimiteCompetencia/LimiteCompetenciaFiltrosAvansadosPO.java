@@ -73,7 +73,7 @@ public class LimiteCompetenciaFiltrosAvansadosPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("LimiteCompetencia");
 		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]"));

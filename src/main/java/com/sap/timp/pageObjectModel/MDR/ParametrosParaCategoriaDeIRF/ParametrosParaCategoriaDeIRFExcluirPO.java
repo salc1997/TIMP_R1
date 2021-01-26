@@ -53,14 +53,7 @@ public class ParametrosParaCategoriaDeIRFExcluirPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
-	
 
-	
-	
-	
-	
-	
-	
 	public Boolean excluir() {
 		
 		
@@ -76,7 +69,7 @@ public class ParametrosParaCategoriaDeIRFExcluirPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ParametrosParaCategoriaDeIRF");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		actionsMoveToElementElement(menu);

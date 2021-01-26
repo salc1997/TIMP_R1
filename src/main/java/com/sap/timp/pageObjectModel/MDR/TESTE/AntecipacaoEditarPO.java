@@ -61,7 +61,7 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		*/
 
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("teste");
 		//pesquisa esse id
 
 		

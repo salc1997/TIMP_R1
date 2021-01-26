@@ -145,7 +145,7 @@ public class ClassificaçaoDeContribuintesDoIPIExcluirMassaPO extends TestBaseFer
 		idPenulRegistro = convertToInt(idPenultimoRegistro);
 		
 		if(convertToInt(idPenultimoRegistro) > convertToInt(id)) {
-			idInserir4(idPenultimoRegistro);
+			idInserir("classificacaodecontibuintessdoipi", idPenultimoRegistro);
 		}else {
 			creado = false;			
 		}
@@ -196,7 +196,7 @@ public class ClassificaçaoDeContribuintesDoIPIExcluirMassaPO extends TestBaseFer
 		// Se obtiene el ultimo registro de la tabla
 		String idUltimoRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
 		if(convertToInt(idUltimoRegistro) > convertToInt(id)) {
-			idInserir4(idUltimoRegistro);
+			idInserir("classificacaodecontibuintessdoipi", idUltimoRegistro);
 		}else {
 			creado = false;			
 		}
@@ -238,7 +238,7 @@ public class ClassificaçaoDeContribuintesDoIPIExcluirMassaPO extends TestBaseFer
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
-		int idUltimoRegistro = convertToInt(idObter4());
+		int idUltimoRegistro = convertToInt(idObter("classificacaodecontibuintessdoipi"));
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idUltimoRegistro+"\"]/div[2]/label/span"));
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
 		

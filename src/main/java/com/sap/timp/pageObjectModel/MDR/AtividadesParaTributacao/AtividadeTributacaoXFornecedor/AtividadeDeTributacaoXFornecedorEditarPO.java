@@ -48,7 +48,7 @@ public class AtividadeDeTributacaoXFornecedorEditarPO  extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro =idObter1();
+		String idRegistro =idObter("AtividadeDeTributacaoXFornecedor");
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

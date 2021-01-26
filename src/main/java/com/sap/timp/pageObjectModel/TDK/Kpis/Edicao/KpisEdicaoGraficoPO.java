@@ -114,6 +114,9 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 	//@FindBy(xpath = "//div[@data-gs-width=\"7\"]/div[2]")
 	public WebElement flechita;
 
+
+	//@FindBy(xpath = "//div[@class=\"container-fluid\"]/div")
+
 	//@FindBy(xpath = "//div[@id=\"UIComp_3\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"][1]")
 	@FindBy(xpath = "//div[contains(@id,\"UIComp_\")]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"][1]")
 	public WebElement mostrar;

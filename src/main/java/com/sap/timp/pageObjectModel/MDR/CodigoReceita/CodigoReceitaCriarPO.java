@@ -126,14 +126,18 @@ public class CodigoReceitaCriarPO extends TestBaseSteven{
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
 		biblioteca.click();
 		
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -147,7 +151,7 @@ public class CodigoReceitaCriarPO extends TestBaseSteven{
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		
-		idInserir4(id2);
+		idInserir("CodigoReceita",id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

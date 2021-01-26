@@ -42,9 +42,9 @@ public class ParâmetrosGeraisCancelar extends TestBaseCristhian {
 	}
 
 	@Test(priority = 2)
-	public void aprovado() {
+	public void cacelado() {
 		
-		boolean sucesso = parâmetrosGeraisCancelarPO.aprovado();
+		boolean sucesso = parâmetrosGeraisCancelarPO.cacelado();
 	}
 
 }

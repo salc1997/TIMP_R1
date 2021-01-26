@@ -100,7 +100,7 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		codigodevalores.sendKeys("SP00002");
 		codigodevalores.sendKeys(Keys.ENTER);
 		
-		descricao.sendKeys("Teste 7093");
+		descricao.sendKeys("Teste0 0173");
 		
 		//data atual
 		String data = fechaActual();

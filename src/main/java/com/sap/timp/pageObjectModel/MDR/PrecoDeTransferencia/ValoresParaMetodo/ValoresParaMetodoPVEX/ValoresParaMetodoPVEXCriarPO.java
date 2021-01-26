@@ -150,7 +150,7 @@ public class ValoresParaMetodoPVEXCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		if(tc2 == true){
-		descricao.sendKeys("GASOLINA PB PODIUM C");
+		descricao.sendKeys("GASOLINA PB PODIUM C1");
 		}else if(tp1 == true) {
 		descricao.sendKeys("GASOLINA PB PODIUM C");
 		}else if(tq1 == true){

@@ -237,8 +237,8 @@ public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
 		editar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
-		attributeToBeXpath("//div[@class=\"field-element adjustmentsFields_0_8\"]/div", "class", "input-element-wrapper");
+		sleep(8000);
+		//attributeToBeXpath("//div[@class=\"field-element adjustmentsFields_0_8\"]/div", "class", "input-element-wrapper");
 		
 		sleep(2000);
 		String textotipolvro1 = tipolvro1.getAttribute("value");

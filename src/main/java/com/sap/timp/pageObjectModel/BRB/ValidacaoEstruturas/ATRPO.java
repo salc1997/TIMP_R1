@@ -271,6 +271,7 @@ public class ATRPO extends TestBaseEliel{
 		sucesso.add(mayorQue(bcICMSSTD, esperadobcICMSST));
 		System.out.println(mayorQue(bcICMSSTD, esperadobcICMSST) + " BC ICMS ST");
 		
+		/*
 		System.out.println("-------------------------------------------------");
 		// BC Difal
 		System.out.println("BC Difal");
@@ -284,7 +285,7 @@ public class ATRPO extends TestBaseEliel{
 		System.out.println(esperadobcDifal + " Esperado");
 		sucesso.add(mayorQue(bcDifalD, esperadobcDifal));
 		System.out.println(mayorQue(bcDifalD, esperadobcDifal) + " BC Difal");
-		
+		*/
 		
 		System.out.println("-------------------------------------------------");
 		// Valor ICMS ST
@@ -299,7 +300,7 @@ public class ATRPO extends TestBaseEliel{
 		System.out.println(esperadovalorICMSST+ " Esperado");
 		sucesso.add(mayorQue(valorICMSSTD, esperadovalorICMSST));
 		System.out.println(mayorQue(valorICMSSTD, esperadovalorICMSST) + " Valor ICMS ST");
-		
+		/*
 		System.out.println("-------------------------------------------------");
 		// Valor Difal
 		System.out.println("Valor Difal");
@@ -313,7 +314,7 @@ public class ATRPO extends TestBaseEliel{
 		System.out.println(esperadovalorDifal + " Esperado");
 		sucesso.add(mayorQue(valorDifalD, esperadovalorDifal));
 		System.out.println(mayorQue(valorDifalD, esperadovalorDifal) + " Valor Difal");
-		
+		*/
 		System.out.println("-------------------------------------------------");
 		
 		// BC Outras IPI
@@ -356,7 +357,7 @@ public class ATRPO extends TestBaseEliel{
 		System.out.println(esperadovalorContaICMSST + " Esperado");
 		sucesso.add(mayorQue(valorContaICMSSTD, esperadovalorContaICMSST));
 		System.out.println(mayorQue(valorContaICMSSTD, esperadovalorContaICMSST) + " Valor Conta ICMS ST");
-		
+		/*
 		System.out.println("-------------------------------------------------");
 		// Valor Conta Difal
 		System.out.println("Valor Conta Difal");
@@ -371,6 +372,7 @@ public class ATRPO extends TestBaseEliel{
 		sucesso.add(mayorQue(valorContaDifalD, esperadovalorContaDifal));
 		System.out.println(mayorQue(valorContaDifalD, esperadovalorContaDifal) + " Valor Conta Difal");
 		System.out.println("-------------------------------------------------");
+		*/
 		System.out.println(sucesso);
 		
 		return sucesso;

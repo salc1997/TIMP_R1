@@ -254,7 +254,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoCriarPO  extends TestBaseFernan
 		
 		numeroRegistro.click();
 		sleep(1000);
-		numeroRegistro.sendKeys("12345");
+		numeroRegistro.sendKeys("712345");
 		sleep(2000);
 		
 		matricula.click();
@@ -516,7 +516,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoCriarPO  extends TestBaseFernan
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir4(idB);
+		idInserir("S2210ComunicaçãoDeAcidenteDeTrabalho",idB);
 
 		sleep(2000);
 		System.out.println(id);

@@ -79,8 +79,12 @@ public class TabelaReceitasPermitidasCriarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = "0";
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		}
+		
 		sleep(2000);
 		System.out.println(id);
 		

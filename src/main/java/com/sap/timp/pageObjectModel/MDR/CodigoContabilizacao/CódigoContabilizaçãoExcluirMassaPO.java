@@ -70,7 +70,8 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaotipotributo;
 	
-	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -83,7 +84,7 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 
 		PageFactory.initElements(driver, this);
 	}
-	
+	String idAC = ""; 
 	public boolean criar() {
 		sleep(2000);
 		codigoscontabilizacao.click();
@@ -99,8 +100,9 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idAC = id;
 		sleep(2000);
-		System.out.println(id);
+		System.out.println("Id antes da criação: "+id);
 		
 		novocodigocontabilizacao.click();
 		
@@ -121,7 +123,7 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		descricaopadrao.sendKeys("Teste QA 1");
 		
 		tributo.click();
-		
+		sleep(1000);
 		opcaotributo.click();
 		
 		//tipotributo.sendKeys("A0002 - FUNDOS");
@@ -130,7 +132,7 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 		tipotributo.click();
-		
+		sleep(1000);
 		opcaotipotributo.click();
 		
 		//pega a data atual
@@ -143,11 +145,13 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		gravarNovo.click();
 		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
 		sleep(1000);
@@ -190,11 +194,13 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		gravarNovo.click();
 		sleep(2000);
 		waitExpectElement(sim);
+		sleep(1000);
+		nao.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
 	
@@ -205,26 +211,68 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
+		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		System.out.println("rows: "+rows);
+		
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		rows = rows -1;
+		
+		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+
+		
+		System.out.println("Id penultimo apos da cricação: " +id3);
+		System.out.println("Id ultimo apos da cricação: " +id2);
+		
+		boolean sucesso = false;
+		int idI = convertToInt(idAC);
+		int id2I = convertToInt(id2);
+		int id3I = convertToInt(id3);
+		
+		
+		if (idI < id2I && idI<id3I) {
+			sucesso = true;
+		}
+		
+		System.out.println("Registros Criados com Sucesso: "+sucesso);
+		
+		return sucesso;
+		
+		
+	}
+	
+	
+	public boolean excluir() {
+		
+		int rows = rows("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]");
+		
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println("Id antes da cricação: " +idAC);
+		
+		rows = rows -1;
+		
+		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		
+		rows = rows("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]");
+		
+		
 		Integer fila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		Integer fila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		fila2 = fila2 - 1; 
-		
-		System.out.println("fila1: "+fila1);
-		System.out.println("fila2: "+fila2);
+
 		
 		WebElement selecccionuno = driver.findElement(By.xpath("//div[@data-id]["+fila1+"]/div[2]/label/span"));
 		selecccionuno.click();
-		
+		sleep(1000);
 		WebElement selecccionDos = driver.findElement(By.xpath("//div[@data-id]["+fila2+"]/div[2]/label/span"));
 		selecccionDos.click();
 		
 		WebElement excluirmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Sign-and-Symbols icon-persign\"]"));
+		sleep(1000);
 		excluirmassa.click();
 		
 		sleep(2000);
@@ -233,23 +281,38 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		
 		aceitar.click();
 		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir3(idB);
-		sleep(2000);
-		System.out.println("ID: "+id);
-		System.out.println("IDB: "+idB);
+		invisibilityOfElementOverlay();
 		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		//compara pra ver se o novo id criado é realmente o ultimo
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		
+		System.out.println("Ultimo id Após a Exclusão: "+id);
+		
+		int idAC1 = convertToInt(id);
+		int id2I = convertToInt(id2);
+		int id3I = convertToInt(id3);
+
+		
+		
 		boolean sucesso = false;
 		
-		if (idBD > idD) {
+		if (idAC1 < id2I && idAC1<id3I) {
 			sucesso = true;
-		}else {
-			sucesso = false;
 		}
 		
+		
+
 		
 		return sucesso;
 		

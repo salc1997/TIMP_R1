@@ -49,6 +49,7 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
@@ -130,31 +131,22 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		
 		salvarENovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
+		waitExpectElement(nao);
+	
+		nao.click();
+		sleep(4000);
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
+		sim.click();
+		sleep(4000);
 		
 		biblioteca.click();
-		nao.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+	//	waitExpectElement(nao);
+	//	nao.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
 
-		btnUltimaPagina.click();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+
 		// Crear segundo registro
 		novoDetalhe.click();
 		
@@ -167,7 +159,11 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectElement(nao);
+		
+		nao.click();
+		sleep(2000);
+		
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -178,8 +174,6 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);	
 		
 		biblioteca.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		sleep(2000);
@@ -202,7 +196,7 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		
 		// Se obtiene el ultimo registro de la tabla
 		String idUltimoRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir4(idUltimoRegistro);
+		idInserir("DetalheTipoTributo",idUltimoRegistro);
 		
 		int idPenultimoRegistro= convertToInt(idUltimoRegistro) - 1; // Este seria el penultimo registro, equivalente al primer registro que se crea cone sta automatizacion
 		  
@@ -237,7 +231,7 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
-		int idUltimoRegistro = convertToInt(idObter4());
+		int idUltimoRegistro = convertToInt(idObter("DetalheTipoTributo"));
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idUltimoRegistro+"\"]/div[2]/label/span"));
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
 		

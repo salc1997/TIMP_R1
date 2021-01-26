@@ -149,7 +149,7 @@ public class S1250AquisiçãoCriarPO extends TestBaseCristhian {
 		String id2 = driver.findElement(By.xpath("//div[@id=\"acquisition-container\"]/div[2]/div/div[1]/div/div[3]/div[1]/div[2]/div")).getAttribute("textContent");
 		
 		
-		idInserir1(id2);
+		idInserir("S1250Aquisição",id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

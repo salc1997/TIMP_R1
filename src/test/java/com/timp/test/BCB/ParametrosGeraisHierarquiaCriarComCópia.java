@@ -60,18 +60,19 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseCristhian{
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);
+			
 		}
 		
+		boolean sucesso1 = parametrosGeraisHierarquiaCriarComCópiaPO.excluir();
+
+		assertTrue(sucesso1, Eliminado);
+		
+		boolean sucesso2 = parametrosGeraisHierarquiaCriarComCópiaPO.excluirLixeira();
+
+		assertTrue(sucesso2, Eliminado);
 	}
 	
-	@Test(priority = 3)
-	public void excluirr() {
 
-		boolean sucesso = parametrosGeraisHierarquiaCriarComCópiaPO.excluir();
-
-		assertTrue(sucesso, Editar);
-
-	}
 	
 
 

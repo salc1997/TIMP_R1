@@ -1709,6 +1709,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");
 			}
 			
-		
+		 
 
 }

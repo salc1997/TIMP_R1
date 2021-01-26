@@ -196,7 +196,7 @@ public class FatorCreditamentoExcluirEmMassaPO extends TestBaseMassiel{
 		
 			
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(id2);
+		idInserir("FatorCreditamentoCIAP",id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		
@@ -215,7 +215,7 @@ public class FatorCreditamentoExcluirEmMassaPO extends TestBaseMassiel{
 	public boolean excluir() {
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("FatorCreditamentoCIAP");
 
 
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[2]/label/span"));

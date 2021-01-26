@@ -31,7 +31,7 @@ public class ParâmetrosGeraisCancelarPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean aprovado(){
+	public boolean cacelado(){
 
 		
 		sleep(2000);

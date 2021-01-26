@@ -252,7 +252,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		int id2D = convertToInt(id2);
 		
 		System.out.println(idD);
-		System.out.println(id2D);
+		System.out.println("Registro Creado: "+id2D);
 		
 		boolean sucesso = false;
 		if (idD < id2D) {

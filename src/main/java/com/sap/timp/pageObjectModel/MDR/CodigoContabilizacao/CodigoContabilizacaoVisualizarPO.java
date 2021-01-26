@@ -150,7 +150,7 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter3();
+		String idRegistro = idObter("CodigoContabilizacao");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -198,7 +198,7 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 				sleep(2000);
 				
 				//pega o ultimo id que foi gerado no criar
-				String idRegistro1 = idObter3();
+				String idRegistro1 = idObter("CodigoContabilizacao");
 				
 				WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 				WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

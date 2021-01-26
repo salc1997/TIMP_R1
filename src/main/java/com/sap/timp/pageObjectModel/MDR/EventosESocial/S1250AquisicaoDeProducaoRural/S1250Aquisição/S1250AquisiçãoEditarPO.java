@@ -113,7 +113,7 @@ public class S1250AquisiçãoEditarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("S1250Aquisição");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@id=\"acquisition-container\"]/div[2]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//*[@id=\"acquisition-list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[1]/span[2]"));

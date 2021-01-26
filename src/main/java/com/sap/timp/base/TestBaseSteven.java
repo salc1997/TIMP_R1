@@ -185,6 +185,18 @@ public class TestBaseSteven {
 		return sucesso;
 	}
 	
+	public Boolean diferenteDe(double valor, double esperado) {
+		
+		boolean sucesso = false;
+		if (valor != esperado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+	}
+	
 	public boolean isNum(String strNum) {
 	    boolean ret = true;
 	    try {
@@ -433,6 +445,25 @@ public class TestBaseSteven {
 		}
 
 		return contar;
+
+	}
+	
+	public void idInserir(String nome,String idRegistro) {
+		Preferences id = Preferences.userRoot();
+
+		id.put(nome, idRegistro);
+		
+	}
+	
+	public String idObter(String nome) {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong(nome, 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
 
 	}
 

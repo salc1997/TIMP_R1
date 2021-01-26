@@ -74,8 +74,8 @@ public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBaseSteven{
 		System.out.println(cgiD + " Double");
 		double esperadocgi = 0;
 		System.out.println(esperadocgi + " Esperado");
-		sucesso.add(mayorQue(cgiD, esperadocgi));
-		System.out.println(mayorQue(cgiD, esperadocgi)+" peso bruto");
+		sucesso.add(diferenteDe(cgiD, esperadocgi));
+		System.out.println(diferenteDe(cgiD, esperadocgi)+" peso bruto");
 		
 		System.out.println("-------------------------------------------------");
 

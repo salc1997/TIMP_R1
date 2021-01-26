@@ -59,26 +59,6 @@ public class ContasParteBLALURCriarPO extends TestBaseSteven{
 	
 
 	
-	/*
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	*/
-	
-	/*
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	@FindBy(xpath = "")
-	public WebElement ;
-	*/
-	
 	
 	public ContasParteBLALURCriarPO() {
 
@@ -151,7 +131,7 @@ public class ContasParteBLALURCriarPO extends TestBaseSteven{
 		
 		System.out.println(id);
 		sleep(2000);
-		idInserir4(id2);
+		idInserir("ContasParteBLALUR",id2);
 		System.out.println(id2);
 		
 		double idD = convertToDouble(id);

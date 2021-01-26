@@ -59,7 +59,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("AssociaçãoCodigoAjuste");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
@@ -74,6 +74,8 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		sleep(2000);
 		
 		String dataInicioVigenciaValorNuevo = fechaAyer();
+		System.out.println("Data a ser inserida: " +dataInicioVigenciaValorNuevo);
+	
 		dataInicioVigencia.clear(); // Limpio la fecha actual que tiene guardada
 		dataInicioVigencia.sendKeys(dataInicioVigenciaValorNuevo); // Le envio la nueva fecha a editar	
 		System.out.println(dataInicioVigenciaValorNuevo); // Imprimo la fecha que se va editar el nuevo valor
@@ -103,7 +105,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		// Obtengo el valor actualizado ya recargada la página
 		actionsMoveToElementElement(dataInicioVigencia);
 		String dataInicioVigenciaEditada = dataInicioVigencia.getAttribute("value");
-		System.out.println(dataInicioVigenciaEditada);
+		System.out.println("Data Nova: " +dataInicioVigenciaEditada);
 		sleep(2000);
 		
 		boolean sucesso = false;

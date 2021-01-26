@@ -51,6 +51,13 @@ public class CodigoReceitaExcluirEmMassa extends TestBaseEliel{
 		boolean sucesso = codigoReceitaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+
 		boolean sucesso2 = codigoReceitaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

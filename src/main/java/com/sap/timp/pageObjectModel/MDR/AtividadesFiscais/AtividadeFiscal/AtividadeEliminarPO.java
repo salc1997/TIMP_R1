@@ -75,7 +75,7 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 
 		sleep(2000);
 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("AtividadeFiscal");
 		
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

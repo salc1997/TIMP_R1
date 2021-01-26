@@ -165,7 +165,7 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir3(id2);
+		idInserir("CodigoContabilizacao",id2);
 		System.out.println(id2);
 		double idD = convertToDouble(id);
 		double idBD = convertToDouble(id2);

@@ -56,8 +56,7 @@ public ArrayList<Boolean> Detalle() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		String idRegistro =idObter3();
+	
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id][1]/div[1]/div"));

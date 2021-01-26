@@ -24,6 +24,9 @@ public class DadosDeRATExcluirEmMassaPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@id=\"option-1\"]/div")
 	public WebElement opcao;
 	
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"1000\"]")
+	public WebElement opcaoempresa;
+	
 	@FindBy(xpath = "//div[@class=\"field-element tax_0_1\"]/div/div/div/div[2]")
 	public WebElement tributo;
 	
@@ -104,7 +107,7 @@ public class DadosDeRATExcluirEmMassaPO extends TestBaseEliel {
 		
 		empresa.click();
 		sleep(2000);
-		opcao.click();
+		opcaoempresa.click();
 		sleep(2000);
 		tributo.click();
 		sleep(2000);
@@ -133,7 +136,7 @@ public class DadosDeRATExcluirEmMassaPO extends TestBaseEliel {
 		
 		empresa.click();
 		sleep(2000);
-		opcao.click();
+		opcaoempresa.click();
 		sleep(2000);
 		tributo.click();
 		sleep(2000);

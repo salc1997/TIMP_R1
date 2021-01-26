@@ -58,7 +58,7 @@ public class NaturezaJuridicaEditarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("NaturezaJuridica");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
@@ -69,6 +69,7 @@ public class NaturezaJuridicaEditarPO extends TestBaseSteven {
 		sleep(1000);
 		editar.click();
 		sleep(2000);
+		waitExpectElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");

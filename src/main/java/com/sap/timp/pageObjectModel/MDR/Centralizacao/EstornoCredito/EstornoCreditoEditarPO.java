@@ -49,7 +49,7 @@ public class EstornoCreditoEditarPO extends TestBaseMassiel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("EstornoCredito");
 		
 		System.out.println(idRegistro);
 		

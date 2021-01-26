@@ -137,8 +137,6 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 
 		}else if (tc2==true ) {
 			
-			
-		
 
 			filialOPC1.click();
 			sleep(2000);

@@ -42,7 +42,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO extends TestBaseFerna
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();		
+		String idRegistro = idObter("S2210ComunicaçãoDeAcidenteDeTrabalho");		
 		WebElement check = driver.findElement(By.xpath("//div[@data-id=\""+ idRegistro +"\"]/div[2]/label/span"));
 		System.out.println(idRegistro); // Primer registro que es el que se crea con la automatizacion
 		

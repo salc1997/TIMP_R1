@@ -230,7 +230,7 @@ public class CadastroDeObrasCriarPO extends TestBaseMassiel{
 		}
 		  
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir1(idB);
+		idInserir("CadastroDeObras",idB);
 		  
 		sleep(2000); 
 		System.out.println(id); 

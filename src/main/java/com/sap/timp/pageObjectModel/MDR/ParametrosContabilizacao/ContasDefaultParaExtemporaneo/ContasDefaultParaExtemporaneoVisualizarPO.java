@@ -152,6 +152,7 @@ public class ContasDefaultParaExtemporaneoVisualizarPO extends TestBaseEliel {
 		
 		String empresaV1 = empresaV.getText();
 		String filialV1 = filialV.getText();
+		filialV1 = filialV1.replace("_","-");
 		String codigoAjusteV1 = codigoAjusteV.getText();
 		String descricaoV1 = descricaoV.getText();
 		String tipoAjusteV1 = tipoAjusteV.getText();
@@ -202,6 +203,8 @@ public class ContasDefaultParaExtemporaneoVisualizarPO extends TestBaseEliel {
 		
 		String empresaE1 = empresaE.getText();
 		String filialE1 = filialE.getText();
+		filialE1= filialE1.replace(" ","");
+		
 		String codigoAjusteE1 = codigoAjusteE.getAttribute("value");
 		String descricaoE1 = descricaoE.getAttribute("value");
 		String tipoAjusteE1 = tipoAjusteE.getAttribute("value");
@@ -232,12 +235,13 @@ public class ContasDefaultParaExtemporaneoVisualizarPO extends TestBaseEliel {
 		sucesso.add(descricaoV1.contains(descricaoE1));
 		sucesso.add(tipoAjusteV1.contains(tipoAjusteE1));
 		sucesso.add(tributoV1.contains(tributoE1));
-		sucesso.add(tipoImpostoV1.contains(tipoImpostoE1));
+		sucesso.add(tipoImpostoE1.contains(tipoImpostoV1));
 		sucesso.add(detalheTipoTributoV1.contains(detalheTipoTributoE1));
 		sucesso.add(utilizacaoV1.contains(utilizacaoE1));
-		sucesso.add(linhaLivroV1.contains(linhaLivroE1));
+		sucesso.add(linhaLivroE1.contains(linhaLivroV1));
 		sucesso.add(detalheLinhaLivroV1.contains(detalheLinhaLivroE1));
 	
+		System.out.println(sucesso);
 		return sucesso;	
 	
 		

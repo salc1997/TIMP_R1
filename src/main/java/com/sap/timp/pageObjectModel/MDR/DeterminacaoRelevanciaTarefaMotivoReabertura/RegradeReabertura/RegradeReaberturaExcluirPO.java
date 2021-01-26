@@ -53,7 +53,7 @@ public class RegradeReaberturaExcluirPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter2();
+		String idRegistro =idObter("DeterminacaoDeReabertura");
 		System.out.println(idRegistro);
 	    
 		sleep(2000);

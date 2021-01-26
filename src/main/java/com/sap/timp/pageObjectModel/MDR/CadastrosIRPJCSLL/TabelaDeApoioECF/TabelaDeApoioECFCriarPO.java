@@ -116,7 +116,7 @@ public class TabelaDeApoioECFCriarPO extends TestBaseFernando{
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();		
 		String[] idArray1 = idRegistro1.split("_");
 		String idB = idArray1[3];
-		idInserir4(String.valueOf(Integer.parseInt(idB)));
+		idInserir("TabelaDeApoioECF",idB);
 		System.out.println(idB);			
 		sleep(2000);
 		  

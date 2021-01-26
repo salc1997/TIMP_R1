@@ -50,7 +50,7 @@ public class TabelaDeProdutosEditarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro =idObter("TabelaDeProdutos");
 		System.out.println(idRegistro);
 		
 		sleep(2000);

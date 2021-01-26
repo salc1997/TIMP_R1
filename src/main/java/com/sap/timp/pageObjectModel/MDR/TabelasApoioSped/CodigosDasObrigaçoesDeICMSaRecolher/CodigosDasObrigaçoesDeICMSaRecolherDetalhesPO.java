@@ -91,7 +91,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherDetalhesPO extends TestBaseEliel
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("codigosdasobrigacoesdeicmsarecolher");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement açao = driver.findElement(

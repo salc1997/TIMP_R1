@@ -43,11 +43,16 @@ public class TestBaseEliel extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+
 		driver.get(tc2);
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+=======
+
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		return driver;
 
 	}

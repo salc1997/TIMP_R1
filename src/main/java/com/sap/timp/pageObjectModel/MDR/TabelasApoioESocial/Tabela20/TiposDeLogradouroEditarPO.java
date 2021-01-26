@@ -58,7 +58,7 @@ public class TiposDeLogradouroEditarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("TiposDeLogradouro");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
@@ -69,6 +69,7 @@ public class TiposDeLogradouroEditarPO extends TestBaseSteven {
 		sleep(1000);
 		editar.click();
 		sleep(2000);
+		waitExpectElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");
@@ -78,7 +79,7 @@ public class TiposDeLogradouroEditarPO extends TestBaseSteven {
 		System.out.println(valor);
 		
 		String enviar = "Teste Editar";
-
+		
 		campo.clear();
 		sleep(1000);
 		

@@ -39,7 +39,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirPO extends TestBaseFernand
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("configuracaodetipotaxadeatualizacao");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		System.out.println(idRegistro); // Primer registro que es el que se crea con la automatizacion

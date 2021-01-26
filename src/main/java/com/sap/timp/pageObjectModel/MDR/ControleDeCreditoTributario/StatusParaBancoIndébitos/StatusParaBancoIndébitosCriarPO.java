@@ -183,7 +183,7 @@ public class StatusParaBancoIndébitosCriarPO extends TestBaseCristhian{
 		Integer rows2 = rows - 1;
 		rows = rows - rows2;
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[3]/div")).getText();
-		idInserir2(idB);
+		idInserir("StatusParaBancoIndébitos",idB);
 		sleep(2000);
 		
 		System.out.println("segundo: "+id);

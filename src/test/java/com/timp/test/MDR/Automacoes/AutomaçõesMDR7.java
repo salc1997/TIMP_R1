@@ -15,7 +15,7 @@ import com.timp.test.MDR.CEP.Bairro.BairroExcluirMassa;
 import com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar;
 import com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa;
 import com.timp.test.MDR.Centralizacao.Tributos.TributosFiltrar;
-import com.sap.timp.pageObjectModel.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLLPO;
+import com.sap.timp.pageObjectModel.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLLCriarPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriarPO;
 import com.timp.test.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLL;
 import com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar;

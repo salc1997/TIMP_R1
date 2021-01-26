@@ -212,7 +212,7 @@ public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir4(idB);
+		idInserir("CadastroCondicao",idB);
 		System.out.println(id);
 		System.out.println(idB);
 		
@@ -229,14 +229,7 @@ public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 		
 		System.out.println( sucesso);
 
-		/*
-		pesquisar.sendKeys(idB);
-		pesquisar.sendKeys(Keys.ENTER);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//verificar se o relatório foi criado
-		boolean text= idB.contains(idR.getText());
-		System.out.println(text);
-		*/
+
 		return sucesso;
 
 	}

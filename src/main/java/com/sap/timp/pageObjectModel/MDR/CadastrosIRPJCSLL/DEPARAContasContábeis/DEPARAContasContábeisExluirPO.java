@@ -47,7 +47,7 @@ public class DEPARAContasContábeisExluirPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter4();
+		String idRegistro =idObter("DePARAContasContabeis");
 		System.out.println(idRegistro);
 	    
 		sleep(2000);

@@ -250,7 +250,7 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		int rows = rows("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]");
 		
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da cricação: " +idObter3());
+		System.out.println("Id antes da cricação: " +idAC);
 		
 		rows = rows -1;
 		

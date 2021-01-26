@@ -67,7 +67,7 @@ public class CadastroDeObrasEditarPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro =idObter1();
+		String idRegistro =idObter("CadastroDeObras");
 		
 	    sleep(2000);
 	    

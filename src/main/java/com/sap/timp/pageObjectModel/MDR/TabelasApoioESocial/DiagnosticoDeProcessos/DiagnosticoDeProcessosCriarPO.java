@@ -101,7 +101,7 @@ public class DiagnosticoDeProcessosCriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(idB);
+		idInserir("DiagnosticoDeProcessos",idB);
 		
 		
 		System.out.println(id);

@@ -180,7 +180,7 @@ public class SaldoInicialDiferidoCriarPO extends TestBaseEliel{
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		
-		idInserir1(id2);
+		idInserir("SaldoInicialDiferido",id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

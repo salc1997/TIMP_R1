@@ -163,7 +163,8 @@ public class CadastroFornecedorCriarPO extends TestBaseKathy{
 
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
-		idInserir4(idB);
+		idInserir("CadastroFornecedor",idB);
+		
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);

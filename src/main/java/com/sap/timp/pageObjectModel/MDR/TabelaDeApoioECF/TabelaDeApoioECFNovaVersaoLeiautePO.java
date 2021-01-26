@@ -106,7 +106,7 @@ public class TabelaDeApoioECFNovaVersaoLeiautePO extends TestBaseSteven{
 		String id2 = driver.findElement(By.xpath("//div[@class=\"dialog-content big\"]/div/div[2]/div/div/div/div[3]/div[@class=\"tr\" and @data-id]["+rows+"]/div[2]/div")).getText();
 		
 		
-		idInserir1(id2);
+		idInserir("TabelaDeApoioECFNovaVersaoLeiaute",id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

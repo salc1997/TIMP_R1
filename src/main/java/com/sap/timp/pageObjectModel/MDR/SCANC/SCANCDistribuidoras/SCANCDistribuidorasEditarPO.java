@@ -64,7 +64,7 @@ public class SCANCDistribuidorasEditarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter3();
+		String idRegistro = idObter("SCANCDistribuidora");
 		System.out.println(idRegistro);
 		
         sleep(2000);

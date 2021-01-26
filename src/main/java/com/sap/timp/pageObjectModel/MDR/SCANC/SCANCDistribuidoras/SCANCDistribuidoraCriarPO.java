@@ -166,7 +166,7 @@ public class SCANCDistribuidoraCriarPO extends TestBaseSteven{
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		
-		idInserir3(id2);
+		idInserir("SCANCDistribuidora",id2);
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		

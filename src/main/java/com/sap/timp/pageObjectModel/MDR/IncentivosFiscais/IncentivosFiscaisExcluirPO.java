@@ -47,7 +47,7 @@ public  boolean  Excluir() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro =idObter1();
+		String idRegistro =idObter("IncentivosFiscais");
 		System.out.println(idRegistro);
 		
 		

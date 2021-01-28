@@ -12,8 +12,6 @@ import com.sap.timp.base.TestBaseCristhian;
 
 public class DuplicidadePO extends TestBaseCristhian {
 	
-	
-	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
 	

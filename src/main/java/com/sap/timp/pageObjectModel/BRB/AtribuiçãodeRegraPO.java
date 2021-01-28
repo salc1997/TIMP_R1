@@ -1,55 +1,52 @@
 package com.sap.timp.pageObjectModel.BRB;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class DuplicidadePO extends TestBaseCristhian {
-	
+public class AtribuiçãodeRegraPO extends TestBaseCristhian{
+
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
 	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[1]/button")				
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/div/ul/li[6]/button/span")				
-	public WebElement btnDuplicidade;
-	
-	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[1]")				
-	public WebElement btnCancelar;
-	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar Campo de Período\"]")				
-	public WebElement inputPerido;
-	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")				
-	public WebElement opcPeriodo;
-	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div/div/label/span")				
-	public WebElement flag;
-	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[3]/div[2]/div/div[1]/span")				
-	public WebElement calendario;
-	
-	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[2]/div[1]/div[3]/div[13]")				
-	public WebElement seleccionCalendario;
-	
 	@FindBy(xpath = "/html/body/div[5]/div[2]/div[3]/div[2]/button[2]")				
 	public WebElement aplicar;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")				
-	public WebElement aplicar2;
+	@FindBy(xpath = "//ul[@class=\"addcolumn-ul\"]/li/div/div/div/div/div/span")				
+	public WebElement agregar;
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar Coluna do relatório\"]")				
-	public WebElement campos;
+	@FindBy(xpath = "//li[@id=\"draggable-n0\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
+	public WebElement inputColumna;
 	
-	@FindBy(xpath = "//*[@id=\"COD_NAT\"]/div[1]/label/span")				
-	public WebElement opcCampos;
+	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[5]/div/span")				
+	public WebElement opcColumna;
+	
+	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
+	public WebElement ferramenta;
+	
+	@FindBy(xpath = "//div[@class=\"rules-header\"]/div[@class=\"rules-header-search\"]/div/div/input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[86]/div[1]/label/span")
+	public WebElement flagSeleccionTQ1;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[40]/div[1]/label/span")
+	public WebElement flagSeleccionTP1;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[56]/div[1]/label/span")
+	public WebElement flagSeleccionTC2;
+	
+	@FindBy(xpath = "//button[text()=\"Próximo\"]")
+	public WebElement btnProximo;
+	
+	@FindBy(xpath = "//button[text()=\"Aplicar Regra\"]")
+	public WebElement aRegra;
 	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/ul/li[3]/button/span[2]")				
 	public WebElement btnExecucao;
@@ -60,12 +57,8 @@ public class DuplicidadePO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/ul/li[3]/button/span[2]")				
 	public WebElement btnEdicao;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div/label/span")				
-	public WebElement flagExcluir;
-	
-	
-	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
-	public WebElement ferramenta;
+	@FindBy(xpath = "//span[text()=\"Remover Coluna\"]")				
+	public WebElement removerColumna;
 	
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
@@ -79,7 +72,7 @@ public class DuplicidadePO extends TestBaseCristhian {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement e;
 	
-	public DuplicidadePO() {
+	public AtribuiçãodeRegraPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -133,45 +126,46 @@ public class DuplicidadePO extends TestBaseCristhian {
 
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
-		btnDuplicidade.click();
+		
+		actionsMoveToElementElement(agregar);
+		
+		agregar.click();
+		sleep(2000);
+		actionsMoveToElementElement(agregar);
+		
+		inputColumna.click();
 		sleep(2000);
 		
-		btnCancelar.click();
-		sleep(3000);
+		opcColumna.click();
+		sleep(7000);
 		
-		btnDuplicidade.click();
+		if (tc2==true) {
+			pesquisar.sendKeys("1690");
+			flagSeleccionTC2.click();
+			sleep(2000);
+		}else if (tq1==true) {
+			pesquisar.sendKeys("2795");
+			flagSeleccionTQ1.click();
+			sleep(2000);
+			
+		}else {
+			pesquisar.sendKeys("1111");
+			flagSeleccionTP1.click();
+			sleep(2000);
+			
+		}
+		
+		sleep(4000);
+		
+		btnProximo.click();
+		sleep(8000);
+		btnProximo.click();
+		sleep(6000);
+		aRegra.click();
 		sleep(2000);
+				
 		
-		inputPerido.click();
 		sleep(2000);
-		
-		opcPeriodo.click();
-		sleep(2000);
-		
-		flag.click();
-		sleep(2000);
-		
-//		calendario.click();
-//		sleep(2000);
-//		
-//		seleccionCalendario.click();
-//		sleep(2000);
-//		
-//		aplicar.click();
-//		sleep(1000);
-		
-		campos.click();
-		sleep(2000);
-		
-		opcCampos.click();
-		sleep(2000);
-		
-		opcCampos.sendKeys(Keys. ESCAPE);
-		sleep(2000);
-		
-		aplicar2.click();
-		sleep(1000);
-		
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(nao);
@@ -194,20 +188,20 @@ public class DuplicidadePO extends TestBaseCristhian {
 		
 		btnEdicao.click();
 		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(nao);
 		sleep(1000);
-		
-		btnDuplicidade.click();
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(flagExcluir);
 		
-		flagExcluir.click();
+		inputColumna.click();
 		sleep(2000);
 		
-		aplicar2.click();
-		sleep(4000);
+		removerColumna.click();
+		sleep(2000);
+		
 		
 		sleep(2000);
 		gravar.click();
@@ -229,5 +223,5 @@ public class DuplicidadePO extends TestBaseCristhian {
 		
 		
 	}
-
+	
 }

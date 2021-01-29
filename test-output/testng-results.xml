@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 =======
 <testng-results total="11" passed="11" failed="0" skipped="0">
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-28T18:21:10Z" name="Default suite" finished-at="2021-01-28T18:23:38Z" duration-ms="147536">
@@ -15,8 +22,12 @@
 =======
   <suite started-at="2021-01-28T04:44:22Z" name="Default suite" finished-at="2021-01-28T04:58:19Z" duration-ms="837074">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-01-29T18:05:50Z" name="Default suite" finished-at="2021-01-29T18:07:35Z" duration-ms="104434">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-28T18:21:10Z" name="Default test" finished-at="2021-01-28T18:23:38Z" duration-ms="147536">
@@ -32,9 +43,15 @@
       <class name="com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:22Z" name="beforeClass" finished-at="2021-01-27T22:44:34Z" duration-ms="12476" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-01-29T18:05:50Z" name="Default test" finished-at="2021-01-29T18:07:35Z" duration-ms="104434">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:05:50Z" name="beforeClass" finished-at="2021-01-29T12:06:07Z" duration-ms="16285" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:21:29Z" name="login" finished-at="2021-01-28T15:21:48Z" duration-ms="18853" status="PASS">
@@ -44,9 +61,13 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:34Z" name="login" finished-at="2021-01-27T22:44:42Z" duration-ms="7179" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:07Z" name="login" finished-at="2021-01-29T12:06:16Z" duration-ms="8920" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:21:48Z" name="acessarTDK" finished-at="2021-01-28T15:22:15Z" duration-ms="26921" status="PASS">
@@ -56,8 +77,12 @@
 =======
         <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:42Z" name="brbEntrar" finished-at="2021-01-27T22:44:57Z" duration-ms="15231" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:16Z" name="acessarTCC" finished-at="2021-01-29T12:06:49Z" duration-ms="33169" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarTDK -->
@@ -66,8 +91,13 @@
         </test-method> <!-- acessarTCC -->
         <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:27:11Z" name="excluir" finished-at="2021-01-28T18:27:55Z" duration-ms="43229" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:49Z" name="excluir" finished-at="2021-01-29T12:07:35Z" duration-ms="46041" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:23:38Z" name="afterClass" finished-at="2021-01-28T15:23:38Z" duration-ms="1" status="PASS">
@@ -127,6 +157,14 @@
 =======
       </class> <!-- com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades -->
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:07:35Z" name="afterClass" finished-at="2021-01-29T12:07:35Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

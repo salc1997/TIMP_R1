@@ -22,7 +22,6 @@ public class Executados1200VisualizarPO extends TestBaseEliel {
 	public WebElement registro12000;
 	
 	
-
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement ultimaPagina;
 	

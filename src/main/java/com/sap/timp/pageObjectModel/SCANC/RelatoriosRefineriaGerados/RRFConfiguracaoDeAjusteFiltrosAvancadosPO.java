@@ -293,7 +293,7 @@ public class RRFConfiguracaoDeAjusteFiltrosAvancadosPO extends TestBaseFernando{
 		// Filtro Data de lancamento
 		String dataLancamento = driver.findElement(By.xpath("//div[@id=\"adjustment-table\"]/div/div/div/div[@class=\"tbody\"]/div[@class=\"tr\" and @data-id][1]/div[8]/div")).getText();	
 		System.out.println("");
-		System.out.println("Valor enviado Data de Lancamento " + dataModificacao);
+		System.out.println("Valor enviado Data de Lancamento " + dataLancamento);
 		
 		inputDataDeLancamento.click();
 		inputDataDeLancamento.sendKeys(dataLancamento);

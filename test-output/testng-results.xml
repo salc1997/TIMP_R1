@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results total="11" passed="11" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-28T18:21:10Z" name="Default suite" finished-at="2021-01-28T18:23:38Z" duration-ms="147536">
 =======
   <suite started-at="2021-01-28T21:26:29Z" name="Default suite" finished-at="2021-01-28T21:27:55Z" duration-ms="85094">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+  <suite started-at="2021-01-28T04:44:22Z" name="Default suite" finished-at="2021-01-28T04:58:19Z" duration-ms="837074">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-28T18:21:10Z" name="Default test" finished-at="2021-01-28T18:23:38Z" duration-ms="147536">
       <class name="com.timp.test.TDK.Kpis.KpisCriar">
@@ -18,24 +27,38 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:26:30Z" name="beforeClass" finished-at="2021-01-28T18:26:42Z" duration-ms="12449" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+    <test started-at="2021-01-28T04:44:22Z" name="Default test" finished-at="2021-01-28T04:58:19Z" duration-ms="837074">
+      <class name="com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:22Z" name="beforeClass" finished-at="2021-01-27T22:44:34Z" duration-ms="12476" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:21:29Z" name="login" finished-at="2021-01-28T15:21:48Z" duration-ms="18853" status="PASS">
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:26:42Z" name="login" finished-at="2021-01-28T18:26:49Z" duration-ms="7541" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:34Z" name="login" finished-at="2021-01-27T22:44:42Z" duration-ms="7179" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:21:48Z" name="acessarTDK" finished-at="2021-01-28T15:22:15Z" duration-ms="26921" status="PASS">
 =======
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:26:49Z" name="acessarTCC" finished-at="2021-01-28T18:27:11Z" duration-ms="21861" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:42Z" name="brbEntrar" finished-at="2021-01-27T22:44:57Z" duration-ms="15231" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarTDK -->
         <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:22:15Z" name="criar" finished-at="2021-01-28T15:23:38Z" duration-ms="83264" status="PASS">
@@ -52,14 +75,58 @@
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:27:55Z" name="afterClass" finished-at="2021-01-28T18:27:55Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:57Z" name="criarConfiguracaoExecucoes" finished-at="2021-01-27T22:46:10Z" duration-ms="72870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:46:10Z" name="criarConfiguracao" finished-at="2021-01-27T22:48:38Z" duration-ms="148183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="configurarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:48:38Z" name="configurarConfiguracao" finished-at="2021-01-27T22:50:56Z" duration-ms="138622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurarConfiguracao -->
+        <test-method signature="executar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:50:56Z" name="executar" finished-at="2021-01-27T22:52:27Z" duration-ms="90578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar -->
+        <test-method signature="resto()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:52:27Z" name="resto" finished-at="2021-01-27T22:53:52Z" duration-ms="84698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resto -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:53:52Z" name="editar" finished-at="2021-01-27T22:55:02Z" duration-ms="70440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method signature="excluirExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:55:02Z" name="excluirExecucoes" finished-at="2021-01-27T22:56:02Z" duration-ms="59756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirExecucoes -->
+        <test-method signature="excluirConfiguracoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:56:02Z" name="excluirConfiguracoes" finished-at="2021-01-27T22:57:22Z" duration-ms="79942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes -->
+        <test-method signature="excluirHierarquia()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:57:22Z" name="excluirHierarquia" finished-at="2021-01-27T22:58:19Z" duration-ms="57063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:58:19Z" name="afterClass" finished-at="2021-01-27T22:58:19Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
 =======
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

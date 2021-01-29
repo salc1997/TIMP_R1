@@ -164,7 +164,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		
 		System.out.println(id);
 		sleep(2000);
-		idInserir1(id2);
+		idInserir("MapeamentoContabil",id2);
 		System.out.println(id2);
 		
 		double idD = convertToDouble(id);

@@ -243,7 +243,7 @@ public class AutomaçõesMDR7 {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,dependsOnMethods = "associaçãoCriar")
 	public void associaçãoEditar() {
 
 		associaçãoEditar = new AssociaçãoEditar();
@@ -255,7 +255,7 @@ public class AutomaçõesMDR7 {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,dependsOnMethods = "associaçãoCriar")
 	public void associaçãoDetalhe() {
 
 		associaçãoDetalhes = new AssociaçãoDetalhes();
@@ -267,7 +267,7 @@ public class AutomaçõesMDR7 {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,dependsOnMethods = "associaçãoCriar")
 	public void associaçãoVisualizar() {
 
 		associaçãoVisualizar = new AssociaçãoVisualizar();
@@ -308,7 +308,7 @@ public class AutomaçõesMDR7 {
 		s1070ProcessosAdmJudiciaisCriar.afterClass();		
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 6,dependsOnMethods = "s1070ProcessosAdmJudiciaisCriar")
 	public void s1070ProcessosAdmJudiciaisEditar() {
 		System.out.println("-------------------Eventos e-Social > S1070 - Processos Adm. / Judiciais-------------------------");
 
@@ -320,7 +320,7 @@ public class AutomaçõesMDR7 {
 		s1070ProcessosAdmJudiciaisEditar.afterClass();		
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 7,dependsOnMethods = "s1070ProcessosAdmJudiciaisCriar")
 	public void s1070ProcessosAdmJudiciaisExcluir() {
 		System.out.println("-------------------Eventos e-Social > S1070 - Processos Adm. / Judiciais-------------------------");
 
@@ -348,7 +348,7 @@ public class AutomaçõesMDR7 {
 		s1210PagamentosDeRendimientosDoTrabalhoCriar.afterClass();		
 	}
 	
-	@Test(priority = 9)
+	@Test(priority = 9,dependsOnMethods = "s1210PagamentosDeRendimientosDoTrabalhoCriar")
 	public void s1210PagamentosDeRendimientosDoTrabalhoEditar() {
 		s1210PagamentosDeRendimientosDoTrabalhoCEditar = new S1210PagamentosDeRendimientosDoTrabalhoEditar();
 		s1210PagamentosDeRendimientosDoTrabalhoCEditar.beforeClass();
@@ -358,7 +358,7 @@ public class AutomaçõesMDR7 {
 		s1210PagamentosDeRendimientosDoTrabalhoCEditar.afterClass();		
 	}
 	
-	@Test(priority = 10)
+	@Test(priority = 10,dependsOnMethods = "s1210PagamentosDeRendimientosDoTrabalhoCriar")
 	public void s1210PagamentosDeRendimientosDoTrabalhoExcluir() {
 		s1210PagamentosDeRendimientosDoTrabalhoExcluir = new S1210PagamentosDeRendimientosDoTrabalhoExcluir();
 		s1210PagamentosDeRendimientosDoTrabalhoExcluir.beforeClass();
@@ -368,7 +368,7 @@ public class AutomaçõesMDR7 {
 		s1210PagamentosDeRendimientosDoTrabalhoExcluir.afterClass();		
 	}
 	
-	@Test(priority = 11)
+	@Test(priority = 11,dependsOnMethods = "s1210PagamentosDeRendimientosDoTrabalhoCriar")
 	public void s1210PagamentosDeRendimientosDoTrabalhoDetalhe() {
 		s1210PagamentosDeRendimientosDoTrabalhoDetalhe = new S1210PagamentosDeRendimientosDoTrabalhoDetalhe();
 		s1210PagamentosDeRendimientosDoTrabalhoDetalhe.beforeClass();
@@ -394,7 +394,7 @@ public class AutomaçõesMDR7 {
 		s2210ComunicaçãoDeAcidenteDeTrabalhoCriar.afterClass();		
 	}
 	
-	@Test(priority = 13)
+	@Test(priority = 13,dependsOnMethods = "s2210ComunicaçãoDeAcidenteDeTrabalhoCriar")
 	public void s2210ComunicaçãoDeAcidenteDeTrabalhoEditar() {
 		s2210ComunicaçãoDeAcidenteDeTrabalhoEditar = new S2210ComunicaçãoDeAcidenteDeTrabalhoEditar();
 		s2210ComunicaçãoDeAcidenteDeTrabalhoEditar.beforeClass();
@@ -404,7 +404,7 @@ public class AutomaçõesMDR7 {
 		s2210ComunicaçãoDeAcidenteDeTrabalhoEditar.afterClass();		
 	}
 	
-	@Test(priority = 14)
+	@Test(priority = 14,dependsOnMethods = "s2210ComunicaçãoDeAcidenteDeTrabalhoCriar")
 	public void s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID() {
 		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID = new S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID();
 		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID.beforeClass();
@@ -414,7 +414,7 @@ public class AutomaçõesMDR7 {
 		s2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID.afterClass();		
 	}
 	
-	@Test(priority = 15)
+	@Test(priority = 15,dependsOnMethods = "s2210ComunicaçãoDeAcidenteDeTrabalhoCriar")
 	public void s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir() {
 		s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir = new S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir();
 		s2210ComunicaçãoDeAcidenteDeTrabalhoExcluir.beforeClass();
@@ -458,7 +458,7 @@ public class AutomaçõesMDR7 {
 	
 	
 	
-	@Test(priority = 20)
+	@Test(priority = 20,dependsOnMethods = "livrosFiscaisCriar")
 	public void livrosFiscaisExcluir() {
 		livrosFiscaisExcluir = new LivrosFiscaisExcluir();
 		livrosFiscaisExcluir.beforeClass();
@@ -498,7 +498,7 @@ public class AutomaçõesMDR7 {
 		parâmetrosParaEnvioDeMensagensCriar.afterClass();		
 	}
 	
-	@Test(priority = 29)
+	@Test(priority = 29,dependsOnMethods = "parâmetrosParaEnvioDeMensagensCriar")
 	public void parâmetrosParaEnvioDeMensagensEditar() {
 		parâmetrosParaEnvioDeMensagensEditar = new ParâmetrosParaEnvioDeMensagensEditar();
 		parâmetrosParaEnvioDeMensagensEditar.beforeClass();
@@ -508,7 +508,7 @@ public class AutomaçõesMDR7 {
 		parâmetrosParaEnvioDeMensagensEditar.afterClass();		
 	}
 	
-	@Test(priority = 29)
+	@Test(priority = 29,dependsOnMethods = "parâmetrosParaEnvioDeMensagensCriar")
 	public void parâmetrosParaEnvioDeMensagensFiltrosId() {
 		parâmetrosParaEnvioDeMensagensFiltrosId = new ParâmetrosParaEnvioDeMensagensFiltrosId();
 		parâmetrosParaEnvioDeMensagensFiltrosId.beforeClass();
@@ -517,7 +517,7 @@ public class AutomaçõesMDR7 {
 		parâmetrosParaEnvioDeMensagensFiltrosId.filtros();
 		parâmetrosParaEnvioDeMensagensFiltrosId.afterClass();		
 	}
-	@Test(priority = 30)
+	@Test(priority = 30,dependsOnMethods = "parâmetrosParaEnvioDeMensagensCriar")
 	public void parâmetrosParaEnvioDeMensagensDetalhe() {
 		parâmetrosParaEnvioDeMensagensDetalhes = new ParâmetrosParaEnvioDeMensagensDetalhes();
 		parâmetrosParaEnvioDeMensagensDetalhes.beforeClass();
@@ -527,7 +527,7 @@ public class AutomaçõesMDR7 {
 		parâmetrosParaEnvioDeMensagensDetalhes.afterClass();		
 	}
 	
-	@Test(priority = 31)
+	@Test(priority = 31,dependsOnMethods = "parâmetrosParaEnvioDeMensagensCriar")
 	public void parâmetrosParaEnvioDeMensagensVisualizar() {
 		parâmetrosParaEnvioDeMensagensVisualizar = new ParâmetrosParaEnvioDeMensagensVisualizar();
 		parâmetrosParaEnvioDeMensagensVisualizar.beforeClass();
@@ -537,7 +537,7 @@ public class AutomaçõesMDR7 {
 		parâmetrosParaEnvioDeMensagensVisualizar.afterClass();		
 	}
 	
-	@Test(priority = 32)
+	@Test(priority = 32,dependsOnMethods = "parâmetrosParaEnvioDeMensagensCriar")
 	public void parâmetrosParaEnvioDeMensagensExcluir() {
 		parâmetrosParaEnvioDeMensagensExcluir = new ParâmetrosParaEnvioDeMensagensExcluir();
 		parâmetrosParaEnvioDeMensagensExcluir.beforeClass();
@@ -678,7 +678,7 @@ public class AutomaçõesMDR7 {
 		codigoFatosContabeisCriar.afterClass();		
 	}
 	
-	@Test(priority = 66)
+	@Test(priority = 66,dependsOnMethods = "codigoFatosContabeisCriar")
 	public void codigoFatosContabeisEditar() {		
 		codigoFatosContabeisEditar = new CodigoFatosContabeisEditar();
 		codigoFatosContabeisEditar.beforeClass();
@@ -688,7 +688,7 @@ public class AutomaçõesMDR7 {
 		codigoFatosContabeisEditar.afterClass();		
 	}
 	
-	@Test(priority = 67)
+	@Test(priority = 67,dependsOnMethods = "codigoFatosContabeisCriar")
 	public void codigoFatosContabeisDetalhe() {		
 		codigoFatosContabeisDetalhe = new CodigoFatosContabeisDetalhe();
 		codigoFatosContabeisDetalhe.beforeClass();
@@ -698,7 +698,7 @@ public class AutomaçõesMDR7 {
 		codigoFatosContabeisDetalhe.afterClass();		
 	}
 	
-	@Test(priority = 68)
+	@Test(priority = 68,dependsOnMethods = "codigoFatosContabeisCriar")
 	public void codigoFatosContabeisVisualizar() {		
 		codigoFatosContabeisVisualizar = new CodigoFatosContabeisVisualizar();
 		codigoFatosContabeisVisualizar.beforeClass();
@@ -708,7 +708,7 @@ public class AutomaçõesMDR7 {
 		codigoFatosContabeisVisualizar.afterClass();		
 	}
 	
-	@Test(priority = 69)
+	@Test(priority = 69,dependsOnMethods = "codigoFatosContabeisCriar")
 	public void codigoFatosContabeisFiltrar() {		
 		codigoFatosContabeisFiltrar = new CodigoFatosContabeisFiltrar();
 		codigoFatosContabeisFiltrar.beforeClass();
@@ -718,7 +718,7 @@ public class AutomaçõesMDR7 {
 		codigoFatosContabeisFiltrar.afterClass();		
 	}
 	
-	@Test(priority = 70)
+	@Test(priority = 70,dependsOnMethods = "codigoFatosContabeisCriar")
 	public void codigoFatosContabeisExluir() {		
 		codigoFatosContabeisExluir = new CodigoFatosContabeisExluir();
 		codigoFatosContabeisExluir.beforeClass();
@@ -789,7 +789,7 @@ public class AutomaçõesMDR7 {
 		descriçãoDeNatDeLesãoCriar.afterClass();		
 	}
 	
-	@Test(priority = 96)
+	@Test(priority = 96,dependsOnMethods = "descriçãoDeNatDeLesãoCriar")
 	public void descriçãoDeNatDeLesãoEditar() {		
 		descriçãoDeNatDeLesãoEditar = new DescriçãoDeNatDeLesãoEditar();
 		descriçãoDeNatDeLesãoEditar.beforeClass();
@@ -799,7 +799,7 @@ public class AutomaçõesMDR7 {
 		descriçãoDeNatDeLesãoEditar.afterClass();		
 	}
 	
-	@Test(priority = 97)
+	@Test(priority = 97,dependsOnMethods = "descriçãoDeNatDeLesãoCriar")
 	public void descriçãoDeNatDeLesãoExcluir() {		
 		descriçãoDeNatDeLesãoExcluir = new DescriçãoDeNatDeLesãoExcluir();
 		descriçãoDeNatDeLesãoExcluir.beforeClass();
@@ -809,7 +809,7 @@ public class AutomaçõesMDR7 {
 		descriçãoDeNatDeLesãoExcluir.afterClass();		
 	}
 	
-	@Test(priority = 98)
+	@Test(priority = 98,dependsOnMethods = "descriçãoDeNatDeLesãoCriar")
 	public void descriçãoDeNatDeLesãoVisualizar() {		
 		descriçãoDeNatDeLesãoVisualizar = new DescriçãoDeNatDeLesãoVisualizar();
 		descriçãoDeNatDeLesãoVisualizar.beforeClass();
@@ -832,7 +832,7 @@ public class AutomaçõesMDR7 {
 		tiposDeBenefíciosCriar.afterClass();		
 	}
 	
-	@Test(priority = 109)
+	@Test(priority = 109,dependsOnMethods = "tiposDeBenefíciosCriar")
 	public void tiposDeBeneficiosEditar() {		
 		tiposDeBeneficiosEditar = new TiposDeBeneficiosEditar();
 		tiposDeBeneficiosEditar.beforeClass();
@@ -842,7 +842,7 @@ public class AutomaçõesMDR7 {
 		tiposDeBeneficiosEditar.afterClass();		
 	}
 	
-	@Test(priority = 110)
+	@Test(priority = 110,dependsOnMethods = "tiposDeBenefíciosCriar")
 	public void tiposDeBenefíciosVisualizar() {		
 		tiposDeBenefíciosVisualizar = new TiposDeBenefíciosVisualizar();
 		tiposDeBenefíciosVisualizar.beforeClass();
@@ -852,7 +852,7 @@ public class AutomaçõesMDR7 {
 		tiposDeBenefíciosVisualizar.afterClass();		
 	}
 	
-	@Test(priority = 111)
+	@Test(priority = 111,dependsOnMethods = "tiposDeBenefíciosCriar")
 	public void tiposDeBenefíciosExcluir() {		
 		tiposDeBenefíciosExcluir = new TiposDeBenefíciosExcluir();
 		tiposDeBenefíciosExcluir.beforeClass();
@@ -887,7 +887,7 @@ public class AutomaçõesMDR7 {
 		motivosCesBeneficiosCriar.afterClass();		
 	}
 	
-	@Test(priority = 117)
+	@Test(priority = 117,dependsOnMethods = "motivosCesBeneficiosCriar")
 	public void motivosCesBeneficiosEditar() {		
 		motivosCesBeneficiosEditar = new MotivosCesBeneficiosEditar();
 		motivosCesBeneficiosEditar.beforeClass();
@@ -897,7 +897,7 @@ public class AutomaçõesMDR7 {
 		motivosCesBeneficiosEditar.afterClass();		
 	}
 	
-	@Test(priority = 118)
+	@Test(priority = 118,dependsOnMethods = "motivosCesBeneficiosCriar")
 	public void motivosCesBeneficiosVisualizar() {		
 		motivosCesBeneficiosVisualizar = new MotivosCesBeneficiosVisualizar();
 		motivosCesBeneficiosVisualizar.beforeClass();
@@ -907,7 +907,7 @@ public class AutomaçõesMDR7 {
 		motivosCesBeneficiosVisualizar.afterClass();		
 	}
 	
-	@Test(priority = 119)
+	@Test(priority = 119,dependsOnMethods = "motivosCesBeneficiosCriar")
 	public void motivosCesBeneficiosExcluir() {		
 		motivosCesBeneficiosExcluir = new MotivosCesBeneficiosExcluir();
 		motivosCesBeneficiosExcluir.beforeClass();
@@ -942,7 +942,7 @@ public class AutomaçõesMDR7 {
 		configuraçãDeTipoTaxaDeAtualizaçãoCriar.afterClass();				
 	}
 	
-	@Test(priority = 124)
+	@Test(priority = 124,dependsOnMethods = "configuraçãDeTipoTaxaDeAtualizaçãoCriar")
 	public void configuraçãDeTipoTaxaDeAtualizaçãoEditar() {		
 		configuraçãDeTipoTaxaDeAtualizaçãoEditar = new ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar();
 		configuraçãDeTipoTaxaDeAtualizaçãoEditar.beforeClass();
@@ -952,7 +952,7 @@ public class AutomaçõesMDR7 {
 		configuraçãDeTipoTaxaDeAtualizaçãoEditar.afterClass();				
 	}
 	
-	@Test(priority = 125)
+	@Test(priority = 125,dependsOnMethods = "configuraçãDeTipoTaxaDeAtualizaçãoCriar")
 	public void configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar() {		
 		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar = new ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar();
 		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar.beforeClass();
@@ -962,7 +962,7 @@ public class AutomaçõesMDR7 {
 		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizar.afterClass();				
 	}
 	
-	@Test(priority = 126)
+	@Test(priority = 126,dependsOnMethods = "configuraçãDeTipoTaxaDeAtualizaçãoCriar")
 	public void configuraçãoDeTipoTaxaDeAtualizaçãoDetalle() {		
 		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle = new ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle();
 		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle.beforeClass();
@@ -972,7 +972,7 @@ public class AutomaçõesMDR7 {
 		configuraçãoDeTipoTaxaDeAtualizaçãoDetalle.afterClass();				
 	}
 	
-	@Test(priority = 127)
+	@Test(priority = 127,dependsOnMethods = "configuraçãDeTipoTaxaDeAtualizaçãoCriar")
 	public void configuraçãDeTipoTaxaDeAtualizaçãoExcluir() {		
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir = new ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluir();
 		configuraçãDeTipoTaxaDeAtualizaçãoExcluir.beforeClass();

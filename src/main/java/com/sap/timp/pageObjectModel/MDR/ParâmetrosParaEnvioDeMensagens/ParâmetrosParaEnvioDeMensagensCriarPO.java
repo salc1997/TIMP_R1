@@ -229,7 +229,7 @@ public class ParâmetrosParaEnvioDeMensagensCriarPO extends TestBaseFernando{
 		//conta o numero de linhas	
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		String idB = idRegistro1;
-		idInserir4(String.valueOf(Integer.parseInt(idB)));
+		idInserir("ParâmetrosParaEnvioDeMensagens",String.valueOf(Integer.parseInt(idB)));
 		System.out.println(idB);			
 		sleep(2000);
 		  

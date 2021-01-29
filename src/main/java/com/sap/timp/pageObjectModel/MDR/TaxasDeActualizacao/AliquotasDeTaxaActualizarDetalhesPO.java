@@ -115,7 +115,7 @@ public class AliquotasDeTaxaActualizarDetalhesPO extends TestBaseCristhian {
 		sleep(2000);
 
 		// pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter3();
+		String idRegistro = idObter("taxasdeactualizacao");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement açao = driver.findElement(

@@ -116,7 +116,7 @@ public class SGDPCriarPO extends TestBaseCristhian {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir3(idB);
+		idInserir("SGDP",idB);
 		sleep(2000);
 		System.out.println("ID: "+id);
 		System.out.println("IDB: "+idB);

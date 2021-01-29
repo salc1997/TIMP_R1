@@ -123,7 +123,7 @@ public class SaldoInicialVisualizarPO extends TestBaseKenssy {
 		sleep(2000);
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("SaldoInicial");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement opcion = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -181,7 +181,7 @@ public class SaldoInicialVisualizarPO extends TestBaseKenssy {
 		
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 = idObter("SaldoInicial");
 		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		opcion = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

@@ -187,7 +187,7 @@ public class ParametrosParaLivroICMSSTExcluirMasasPO extends TestBaseMassiel {
 	}		
 	
 	public boolean ParametrosParaLivroICMSSTExcluirMasas() {
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ParametrosParaLivroICMSST");
 
 
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[2]/label/span"));

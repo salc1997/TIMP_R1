@@ -49,7 +49,7 @@ public class TabelaCodigoReceitasEditarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro =idObter("TabelaCodigoReceitas");
 		System.out.println(idRegistro);
 		
 		sleep(2000);

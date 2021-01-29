@@ -368,7 +368,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, dependsOnMethods = "detalheTipoTributoFiscalCriar" )
 	public void detalheTipoTributoFiscalEditar() {
 
 		detalheTipoTributoEditar = new DetalheEditar();
@@ -380,7 +380,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, dependsOnMethods = "detalheTipoTributoFiscalCriar")
 	public void detalheTipoTributoFiscalVisualizar() {
 
 		detalheTipoTributoVisualizar = new DetalheVisualizar();
@@ -404,7 +404,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = "detalheTipoTributoFiscalCriar")
 	public void detalheTipoTributoDetalhes() {
 
 		detalheTipoTributoDetalhes = new DetalheDetalhes();
@@ -417,7 +417,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void detalheExcluirMassa() {
 
 		detalheExcluirMassa = new DetalheExcluirMassa();
@@ -429,7 +429,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 		}
 	
-	@Test(priority = 5)
+	@Test(priority = 4, dependsOnMethods = "detalheTipoTributoFiscalCriar")
 	public void detalheTipoTributoFiscalExcluir() {
 
 		detalheTipoTributoExcluir = new DetalheExcluir();
@@ -458,7 +458,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, dependsOnMethods = "determinacaoDeTipoDeCondicaoCriarCriar")
 	public void determinacaoDeTipoDeCondicaoCriarEditar() {
 
 		determinacaoDeTipoDeCondicaoEditar = new DeterminacaoDeTipoDeCondicaoEditar();
@@ -470,7 +470,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 8, dependsOnMethods = "determinacaoDeTipoDeCondicaoCriarCriar")
 	public void determinacaoDeTipoDeCondicaoCriarDetalhes() {
 
 		determinacaoDeTipoDeCondicaoDetalhes = new DeterminacaoDeTipoDeCondicaoDetalhes();
@@ -481,7 +481,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		determinacaoDeTipoDeCondicaoDetalhes.afterClass();
 
 	}
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void DeterminacaoDeTipoDeCondicaoExcluirMassa() {
 
 		determinacaoDeTipoDeCondicaoExcluirMassa = new DeterminacaoDeTipoDeCondicaoExcluirMassa();
@@ -493,7 +493,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 8, dependsOnMethods = "determinacaoDeTipoDeCondicaoCriarCriar")
 	public void determinacaoDeTipoDeCondicaoCriarExcluir() {
 
 		determinacaoDeTipoDeCondicaoExcluir = new DeterminacaoDeTipoDeCondicaoExcluir();
@@ -617,7 +617,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 19)
+	@Test(priority = 19, dependsOnMethods = "hierarquiaDeCenariosDeCorreçaoCriar")
 	public void hierarquiaDeCenariosDeCorreçaoEditar() {
 
 		hierarquiaDeCenariosDeCorreçaoEditar = new HierarquiaDeCenariosDeCorreçaoEditar();
@@ -629,7 +629,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 20)
+	@Test(priority = 20, dependsOnMethods = "hierarquiaDeCenariosDeCorreçaoCriar")
 	public void hierarquiaDeCenariosDeCorreçaoVisualizar() {
 
 		hierarquiaDeCenariosDeCorreçaoVisualizar = new HierarquiaDeCenariosDeCorreçaoVisualizar();
@@ -641,7 +641,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 21)
+	@Test(priority = 21,dependsOnMethods = "hierarquiaDeCenariosDeCorreçaoCriar")
 	public void hierarquiaDeCenariosDeCorreçaoDetalhes() {
 
 		hierarquiaDeCenariosDeCorreçaoDetalhes = new HierarquiaDeCenariosDeCorreçaoDetalhes();
@@ -720,7 +720,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 32)
+	@Test(priority = 32, dependsOnMethods = "limiteCompetenciaCriar")
 	public void limiteCompetenciaEditar() {
 
 		limiteCompetenciaEditar = new LimiteCompetenciaEditar();
@@ -732,7 +732,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 33)
+	@Test(priority = 33, dependsOnMethods = "limiteCompetenciaCriar")
 	public void limiteCompetenciaVisualizar() {
 
 		limiteCompetenciaVisualizar = new LimiteCompetenciaVisualizar();
@@ -744,7 +744,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 34)
+	@Test(priority = 34, dependsOnMethods = "limiteCompetenciaCriar")
 	public void limiteCompetenciaDetalhes() {
 
 		limiteCompetenciaDetalhes = new LimiteCompetenciaDetalhes();
@@ -756,7 +756,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 35)
+	@Test(priority = 35, dependsOnMethods = "limiteCompetenciaCriar")
 	public void limiteCompetenciaFiltrosAvansados() {
 
 		limiteCompetenciaFiltrosAvansados = new LimiteCompetenciaFiltrosAvansados();
@@ -780,7 +780,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 37)
+	@Test(priority = 37, dependsOnMethods = "limiteCompetenciaCriar")
 	public void limiteCompetenciaExcluir() {
 
 		limiteCompetenciaExcluir = new LimiteCompetenciaExcluir();
@@ -821,7 +821,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 //	  
 //	 }
 	
-	@Test(priority = 39)
+	@Test(priority = 39, dependsOnMethods = "livrosFiscaisCriar")
 	public void livrosFiscaisVisualizar() {
 
 		livrosFiscaisVisualizar = new LivrosFiscaisVisualizar();
@@ -833,7 +833,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 40)
+	@Test(priority = 40, dependsOnMethods = "livrosFiscaisCriar")
 	public void livrosFiscaisDetalhes() {
 
 		livrosFiscaisDetalhes = new LivrosFiscaisDetalhes();
@@ -845,7 +845,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 41)
+	@Test(priority = 41, dependsOnMethods = "livrosFiscaisCriar")
 	public void livrosFiscaisExcluir() {
 
 		livrosFiscaisExcluir = new LivrosFiscaisExcluir();
@@ -886,7 +886,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 44)
+	@Test(priority = 44, dependsOnMethods = "parametrosParaLivroICMSSTCriarCriar")
 	public void parametrosParaLivroICMSSTEditar() {
 		
 		parametrosParaLivroICMSSTEditar = new ParametrosParaLivroICMSSTEditar();
@@ -899,7 +899,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	}
 	
 	
-	@Test(priority = 44)
+	@Test(priority = 44, dependsOnMethods = "parametrosParaLivroICMSSTCriarCriar")
 	public void parametrosParaLivroICMSSTDetalhes() {
 		
 		parametrosParaLivroICMSSTDetalle = new ParametrosParaLivroICMSSTDetalle();
@@ -912,7 +912,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	}
 	
 	
-	@Test(priority = 45)
+	@Test(priority = 45, dependsOnMethods = "parametrosParaLivroICMSSTCriarCriar")
 	public void parametrosParaLivroICMSSTVisualizar() {
 		
 		parametrosParaLivroICMSSTVisualizar = new ParametrosParaLivroICMSSTVisualizar();
@@ -937,7 +937,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 47)
+	@Test(priority = 47, dependsOnMethods = "parametrosParaLivroICMSSTCriarCriar")
 	public void parametrosParaLivroICMSSTExcluir() {
 		
 		parametrosParaLivroICMSSTExcluir = new ParametrosParaLivroICMSSTExcluir();
@@ -979,7 +979,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 50)
+	@Test(priority = 50, dependsOnMethods = "mapeamentoDeRelevanciaParaPisCofinsCriar")
 	public void mapeamentoDeRelevanciaParaPisCofinsEditar() {
 
 		mapeamentoDeRelevanciaParaPisCofinsEditar = new MapeamentoDeRelevanciaParaPisCofinsEditar();
@@ -991,7 +991,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 51)
+	@Test(priority = 51, dependsOnMethods = "mapeamentoDeRelevanciaParaPisCofinsCriar")
 	public void mapeamentoDeRelevanciaParaPisCofinsVisualizar() {
 
 		mapeamentoDeRelevanciaParaPisCofinsVisualizar = new MapeamentoDeRelevanciaParaPisCofinsVisualizar();
@@ -1020,7 +1020,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	 * }
 	 * 
 	 */
-	@Test(priority = 53)
+	@Test(priority = 53, dependsOnMethods = "mapeamentoDeRelevanciaParaPisCofinsCriar")
 	public void mapeamentoDeRelevanciaParaPisCofinsExcluir() {
 
 		mapeamentoDeRelevanciaParaPisCofinsExcluir = new MapeamentoDeRelevanciaParaPisCofinsExcluir();
@@ -1050,7 +1050,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 56)
+	@Test(priority = 56, dependsOnMethods = "tiposDeObjetosDeOcorrenciasFiscaisCriar")
 	public void tiposDeObjetosDeOcorrenciasFiscaisEditar() {
 
 		tiposDeObjetosDeOcorrenciasFiscaisEditar = new TiposDeObjetosDeOcorrenciasFiscaisEditar();
@@ -1062,7 +1062,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 56)
+	@Test(priority = 57)
 	public void tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa() {
 
 		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassa = new TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa();
@@ -1074,7 +1074,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 57)
+	@Test(priority = 56, dependsOnMethods = "tiposDeObjetosDeOcorrenciasFiscaisCriar")
 	public void tiposDeObjetosDeOcorrenciasFiscaisDetalhes() {
 
 		tiposDeObjetosDeOcorrenciasFiscaisDetalhes = new TiposDeObjetosDeOcorrenciasFiscaisDetalhes();
@@ -1108,7 +1108,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 62)
+	@Test(priority = 62, dependsOnMethods = "contasDefaultParaExtemporaneoCriar")
 	public void contasDefaultParaExtemporaneoEditar() {
 		contasDefaultParaExtemporaneoEditar = new ContasDefaultParaExtemporaneoEditar();
 		contasDefaultParaExtemporaneoEditar.beforeClass();
@@ -1119,7 +1119,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 63)
+	@Test(priority = 63, dependsOnMethods = "contasDefaultParaExtemporaneoCriar")
 	public void contasDefaultParaExtemporaneoVisualizar() {
 
 		contasDefaultParaExtemporaneoVisualizar = new ContasDefaultParaExtemporaneoVisualizar();
@@ -1131,7 +1131,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 64)
+	@Test(priority = 64, dependsOnMethods = "contasDefaultParaExtemporaneoCriar")
 	public void contasDefaultParaExtemporaneoDetalhes() {
 
 		contasDefaultParaExtemporaneoDetalhes = new ContasDefaultParaExtemporaneoDetalhes();
@@ -1155,7 +1155,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 65)
+	@Test(priority = 65, dependsOnMethods = "contasDefaultParaExtemporaneoCriar")
 	public void contasDefaultParaExtemporaneoExcluir() {
 
 		contasDefaultParaExtemporaneoExcluir = new ContasDefaultParaExtemporaneoExcluir();
@@ -1188,7 +1188,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 68)
+	@Test(priority = 68, dependsOnMethods = "contasDefaultPorTributoCriar")
 	public void contasDefaultPorTributoEditar() {
 
 		contasDefaultPorTributoEditar = new ContasDefaultPorTributoEditar();
@@ -1200,7 +1200,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 69)
+	@Test(priority = 69, dependsOnMethods = "contasDefaultPorTributoCriar")
 	public void contasDefaultPorTributoVisualizar() {
 
 		contasDefaultPorTributoVisualizar = new ContasDefaultPorTributoVisualizar();
@@ -1212,7 +1212,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 70)
+	@Test(priority = 70, dependsOnMethods = "contasDefaultPorTributoCriar")
 	public void contasDefaultPorTributoDetalhes() {
 
 		contasDefaultPorTributoDetalhes = new ContasDefaultPorTributoDetalhes();
@@ -1224,7 +1224,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 71)
+	@Test(priority = 71, dependsOnMethods = "contasDefaultPorTributoCriar")
 	public void contasDefaultPorTributoExcluir() {
 
 		contasDefaultPorTributoExcluir = new ContasDefaultPorTributoExcluir();
@@ -1255,7 +1255,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 73)
+	@Test(priority = 73, dependsOnMethods = "mapeamentoContabilCriar")
 	public void mapeamentoContabilEditar() {
 
 		mapeamentoContabilEditar = new MapeamentoContabilEditar();
@@ -1267,7 +1267,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 74)
+	@Test(priority = 74, dependsOnMethods = "mapeamentoContabilCriar")
 	public void mapeamentoContabilExcluir() {
 
 		mapeamentoContabilExcluir = new MapeamentoContabilExcluir();
@@ -1300,7 +1300,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 79)
+	@Test(priority = 79, dependsOnMethods = "mapeamentoContabilCorrecaoCriar")
 	public void mapeamentoContabilCorrecaoEditar() {
 
 		mapeamentoContabilCorrecaoEditar = new MapeamentoContabilCorrecaoEditar();
@@ -1312,7 +1312,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 80)
+	@Test(priority = 80, dependsOnMethods = "mapeamentoContabilCorrecaoCriar")
 	public void mapeamentoContabilCorrecaoVisualizar() {
 
 		mapeamentoContabilCorrecaoVisualizar = new MapeamentoContabilCorrecaoVisualizar();
@@ -1326,7 +1326,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 				"-------------------Parâmetros de Contabilização > Mapemaneto Contábil Por Correção Fin-------------------------");
 	}
 	
-	@Test(priority = 81)
+	@Test(priority = 81, dependsOnMethods = "mapeamentoContabilCorrecaoCriar")
 	public void mapeamentoContabilCorrecaoExcluir() {
 
 		mapeamentoContabilCorrecaoExcluir = new MapeamentoContabilCorrecaoExcluir();
@@ -1359,7 +1359,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 85)
+	@Test(priority = 85, dependsOnMethods = "mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar")
 	public void mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar() {
 
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar();
@@ -1371,7 +1371,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 86)
+	@Test(priority = 86, dependsOnMethods = "mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar")
 	public void mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar() {
 
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar();
@@ -1383,7 +1383,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 87)
+	@Test(priority = 87, dependsOnMethods = "mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar")
 	public void mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes() {
 
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes();
@@ -1395,7 +1395,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 88)
+	@Test(priority = 88, dependsOnMethods = "mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar")
 	public void mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir() {
 
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir();
@@ -1404,9 +1404,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir.acessarMDR();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir.excluir();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir.afterClass();
-
-		System.out.println(
-				"-------------------ParametrosContabilizacao > Mapeamento Substituicao Conta Estoque Cenarios Correcoes Fin-------------------------");
+	
 	}
 	
 	@Test(priority = 89)
@@ -1418,10 +1416,14 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.acessarMDR();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.filtroId();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesexCenariosCorrecoesFiltroId.afterClass();
+		
+		System.out.println(
+				"-------------------ParametrosContabilizacao > Mapeamento Substituicao Conta Estoque Cenarios Correcoes Fin-------------------------");
 
 	}
 
 
+	
 	// 90
 
 	// Registro de Exportação
@@ -1440,7 +1442,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 91)
+	@Test(priority = 91, dependsOnMethods = "registroDeExportaçaoCriar")
 	public void registroDeExportaçaoEditar() {
 
 		registroDeExportaçaoEditar = new RegistroDeExportaçaoEditar();
@@ -1452,7 +1454,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 92)
+	@Test(priority = 92, dependsOnMethods = "registroDeExportaçaoCriar")
 	public void registroDeExportaçaoVisualizar() {
 
 		registroDeExportaçaoVisualizar = new RegistroDeExportaçaoVisualizar();
@@ -1464,7 +1466,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 93)
+	@Test(priority = 93, dependsOnMethods = "registroDeExportaçaoCriar")
 	public void registroDeExportaçaoDetalhes() {
 
 		registroDeExportaçaoFiltrosAvançados = new RegistroDeExportaçaoFiltrosAvançados();
@@ -1476,7 +1478,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 94)
+	@Test(priority = 94, dependsOnMethods = "registroDeExportaçaoCriar")
 	public void registroDeExportaçaoExcluir() {
 
 		registroDeExportaçaoExcluir = new RegistroDeExportaçaoExcluir();
@@ -1518,7 +1520,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 99)
+	@Test(priority = 99, dependsOnMethods = "representanteLegaisCriar")
 	public void representanteLegaisEditar() {
 
 		representanteLegaisEditar = new RepresentanteLegaisEditar();
@@ -1530,7 +1532,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 100)
+	@Test(priority = 100, dependsOnMethods = "representanteLegaisCriar")
 	public void representanteLegaisVisualizar() {
 
 		representanteLegaisVisualizar = new RepresentanteLegaisVisualizar();
@@ -1542,7 +1544,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 101)
+	@Test(priority = 101, dependsOnMethods = "representanteLegaisCriar")
 	public void representanteLegaisDetalhes() {
 
 		representantesLegaisDetalhes = new RepresentantesLegaisDetalhes();
@@ -1554,7 +1556,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 102)
+	@Test(priority = 102, dependsOnMethods = "representanteLegaisCriar")
 	public void representanteLegaisExcluir() {
 
 		representantesLegaisExcluir = new RepresentantesLegaisExcluir();
@@ -1585,7 +1587,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 105)
+	@Test(priority = 105, dependsOnMethods = "saldoInicialDiferidoCriar")
 	public void saldoInicialDiferidoEditar() {
 
 		saldoInicialDiferidoEditar = new SaldoInicialDiferidoEditar();
@@ -1597,7 +1599,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 106)
+	@Test(priority = 105)
 	public void saldoInicialDiferidoFiltroID() {
 
 		saldoInicialDiferidoFiltroID = new SaldoInicialDiferidoFiltroID();
@@ -1608,7 +1610,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		saldoInicialDiferidoFiltroID.afterClass();
 
 	}
-	@Test(priority = 106)
+	@Test(priority = 107)
 	public void saldoInicialDiferidoExcluirMassa() {
 
 		saldoInicialDiferidoExcluirMassa = new SaldoInicialDiferidoExcluirMassa();
@@ -1619,7 +1621,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 		saldoInicialDiferidoExcluirMassa.afterClass();
 
 	}
-	@Test(priority = 107)
+	@Test(priority = 106, dependsOnMethods = "saldoInicialDiferidoCriar")
 	public void saldoInicialDiferidoExcluir() {
 
 		saldoInicialDiferidoExcluir = new SaldoInicialDiferidoExcluir();
@@ -1651,7 +1653,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 111)
+	@Test(priority = 112)
 	public void ajustesDosAnexosExcluirEmMasa() {
 
 		ajustesDosAnexosExcluirEmMasa = new AjustesDosAnexosExcluirEmMasa();
@@ -1664,7 +1666,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	}
 	
 
-	@Test(priority = 112)
+	@Test(priority = 111, dependsOnMethods = "ajustesDosAnexosCriar")
 	public void ajustesDosAnexosExcluir() {
 
 		ajustesDosAnexosExcluir = new AjustesDosAnexosExcluir();
@@ -1695,7 +1697,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 117)
+	@Test(priority = 117, dependsOnMethods = "movimentoSCANCCriar")
 	public void movimentoSCANCEditar() {
 
 		movimentoSCANCEditar = new MovimentoSCANCEditar();
@@ -1707,7 +1709,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 118)
+	@Test(priority = 118, dependsOnMethods = "movimentoSCANCCriar")
 	public void movimentoSCANCVisualizar() {
 
 		movimentoSCANCVisualizar = new MovimentoSCANCVisualizar();
@@ -1759,7 +1761,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	
 
-	@Test(priority = 122)
+	@Test(priority = 122, dependsOnMethods = "movimentoSCANCCriar")
 	public void movimentoSCANCExcluir() {
 
 		movimentoSCANCExcluir = new MovimentoSCANCExcluir();
@@ -1809,7 +1811,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 129)
+	@Test(priority = 129, dependsOnMethods = "productosSCANCCriar")
 	public void productosSCANCEditar() {
 
 		productosSCANCEditar = new ProductosSCANCEditar();
@@ -1821,7 +1823,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 130)
+	@Test(priority = 130, dependsOnMethods = "productosSCANCCriar")
 	public void productosSCANCVisualizar() {
 
 		productosSCANCVisualizar = new ProductosSCANCVisualizar();
@@ -1833,7 +1835,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 131)
+	@Test(priority = 131, dependsOnMethods = "productosSCANCCriar")
 	public void productosSCANCDetalhes() {
 
 		productosSCANCDetalhes = new ProdutosSCANCDetalhes();
@@ -1845,7 +1847,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 132)
+	@Test(priority = 132, dependsOnMethods = "productosSCANCCriar")
 	public void productosSCANCExcluir() {
 
 		productosSCANCExcluir = new ProductosSCANCExcluir();
@@ -1875,7 +1877,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 135)
+	@Test(priority = 135, dependsOnMethods = "sCANCDistribuidorasCriar")
 	public void sCANCDistribuidorasVisualizar() {
 
 		sCANCDistribuidorasVisualizar = new SCANCDistribuidorasVisualizar();
@@ -1887,7 +1889,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 136)
+	@Test(priority = 136, dependsOnMethods = "sCANCDistribuidorasCriar")
 	public void sCANCDistribuidorasDetalhes() {
 
 		sCANCDistribuidorasDetalhes = new SCANCDistribuidorasDetalhes();
@@ -1900,7 +1902,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 	}
 	
 
-	@Test(priority = 137)
+	@Test(priority = 137, dependsOnMethods = "sCANCDistribuidorasCriar")
 	public void scancDistribuidorasEditar() {
 
 		scancDistribuidorasEditar = new SCANCDistribuidorasEditar();
@@ -1925,7 +1927,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 138)
+	@Test(priority = 138, dependsOnMethods = "sCANCDistribuidorasCriar")
 	public void sCANCDistribuidorasExcluir() {
 
 		sCANCDistribuidorasExcluir = new SCANCDistribuidorasExcluir();
@@ -1955,7 +1957,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 141)
+	@Test(priority = 141, dependsOnMethods = "sequenciaCriar")
 	public void sequenciaEditar() {
 
 		sequenciaEditar = new SequenciaEditar();
@@ -1967,7 +1969,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 142)
+	@Test(priority = 142, dependsOnMethods = "sequenciaCriar")
 	public void sequenciaVisualizar() {
 
 		sequenciaVisualizar = new SequenciaVisualizar();
@@ -1991,7 +1993,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 144)
+	@Test(priority = 144, dependsOnMethods = "sequenciaCriar")
 	public void sequenciaExcluir() {
 
 		sequenciaExcluir = new SequenciaExcluir();
@@ -2022,7 +2024,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 146)
+	@Test(priority = 146, dependsOnMethods = "motivosCesBeneficiosCriar")
 	public void motivosCesBeneficiosVisualizar() {
 
 		motivosCesBeneficiosVisualizar = new MotivosCesBeneficiosVisualizar();
@@ -2034,7 +2036,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 147)
+	@Test(priority = 147, dependsOnMethods = "motivosCesBeneficiosCriar")
 	public void motivosCesBeneficiosExcluir() {
 
 		motivosCesBeneficiosExcluir = new MotivosCesBeneficiosExcluir();
@@ -2068,7 +2070,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 152)
+	@Test(priority = 152, dependsOnMethods = "ajusteEInformaçoesDeValoresCriar")
 	public void ajusteEInformaçoesDeValoresEditar() {
 
 		ajusteEInformaçoesDeValoresEditar = new AjusteEInformaçoesDeValoresEditar();
@@ -2080,7 +2082,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 153)
+	@Test(priority = 153, dependsOnMethods = "ajusteEInformaçoesDeValoresCriar")
 	public void ajusteEInformaçoesDeValoresVisualizar() {
 
 		ajusteEInformaçoesDeValoresVisualizar = new AjusteEInformaçoesDeValoresVisualizar();
@@ -2092,7 +2094,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 154)
+	@Test(priority = 154, dependsOnMethods = "ajusteEInformaçoesDeValoresCriar")
 	public void ajusteEInformaçoesDeValoresDetalhes() {
 
 		ajusteEInformaçoesDeValoresDetalhes = new AjusteEInformaçoesDeValoresDetalhes();
@@ -2104,7 +2106,7 @@ public class AutomacoesMDR2 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 155)
+	@Test(priority = 155, dependsOnMethods = "ajusteEInformaçoesDeValoresCriar")
 	public void ajusteEInformaçoesDeValoresExcluir() {
 
 		ajusteEInformaçoesDeValoresExcluir = new AjusteEInformaçoesDeValoresExcluir();

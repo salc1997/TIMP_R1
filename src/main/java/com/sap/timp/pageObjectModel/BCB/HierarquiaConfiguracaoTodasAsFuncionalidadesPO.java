@@ -897,6 +897,10 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 		gravar.click();
 		sleep(3000);
+		//pediu justificar tc2 em 27/01/2021
+		waitExpectElement(nao);
+		nao.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(2000);
@@ -955,9 +959,10 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 
 		gravar.click();
 		sleep(3000);
+		/*Não está pedindo para justificar em TC2.27/01/2021
 		waitExpectElement(nao);
 		nao.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		*/invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
@@ -1306,8 +1311,9 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectElement(executar);
 		sleep(2000);
-		
+		System.out.println("cheguei aqui");
 		executar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

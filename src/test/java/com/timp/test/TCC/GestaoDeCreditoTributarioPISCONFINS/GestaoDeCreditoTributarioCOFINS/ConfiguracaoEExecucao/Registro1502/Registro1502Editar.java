@@ -1,8 +1,6 @@
-package com.timp.test.TCC.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1210;
+package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502;
 
 import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -11,25 +9,26 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1210.Registro1210VisualizarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502EditarPO;
 
-public class Registro1210Visualizar extends TestBaseEliel {
+public class Registro1502Editar extends TestBaseEliel {
+ 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	Registro1210VisualizarPO registro1210VisualizarPO;
+	Registro1502EditarPO registro1502EditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registro1210VisualizarPO = new Registro1210VisualizarPO();
+		registro1502EditarPO = new Registro1502EditarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 0)
@@ -46,13 +45,11 @@ public class Registro1210Visualizar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void visualizar() {
+	public void editar() {
 
-		ArrayList<Boolean> sucesso = registro1210VisualizarPO.visualizar();
+		boolean sucesso = registro1502EditarPO.editar();
 
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
+		assertTrue(sucesso, Editar);
 	}
 	
 }

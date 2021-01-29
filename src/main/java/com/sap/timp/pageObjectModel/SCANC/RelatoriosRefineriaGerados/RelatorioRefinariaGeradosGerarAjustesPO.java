@@ -165,10 +165,10 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		inputDataDeCriacao.click();
 		sleep(1000);
 		
-		WebElement fecha1 = driver.findElement(By.xpath("//div[@class=\"calendar-wrapper\"][1]/div[@class=\"dates-wrapper\"]/div[contains(@class, \"date\") and @tabindex=\"0\" and text()=\""+dia+"\"]"));
+		WebElement fecha1 = driver.findElement(By.xpath("//div[@class=\"calendar-wrapper\"][1]/div[@class=\"dates-wrapper\"]/div[@class= \"date\" and @tabindex=\"0\" and text()=\""+dia+"\"]"));
 		fecha1.click();
 		
-		WebElement fecha2 = driver.findElement(By.xpath("//div[@class=\"calendar-wrapper\"][2]/div[@class=\"dates-wrapper\"]/div[contains(@class, \"date\") and @tabindex=\"0\" and text()=\""+dia+"\"]"));
+		WebElement fecha2 = driver.findElement(By.xpath("//div[@class=\"calendar-wrapper\"][2]/div[@class=\"dates-wrapper\"]/div[@class= \"date specialSelected\" and @tabindex=\"0\" and text()=\""+dia+"\"]"));
 		fecha2.click();
 		
 		btnAplicar.click();

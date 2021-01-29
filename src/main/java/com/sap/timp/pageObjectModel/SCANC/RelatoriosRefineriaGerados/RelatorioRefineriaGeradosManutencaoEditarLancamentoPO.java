@@ -125,7 +125,7 @@ public class RelatorioRefineriaGeradosManutencaoEditarLancamentoPO extends TestB
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		waitExpectElement(abaLancamentoo);
 		abaLancamentoo.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

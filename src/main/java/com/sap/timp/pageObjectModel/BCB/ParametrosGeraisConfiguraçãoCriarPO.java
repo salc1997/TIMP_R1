@@ -207,7 +207,7 @@ public class ParametrosGeraisConfiguraçãoCriarPO extends TestBaseCristhian {
 				.getText();
 
 		
-		nomeHirarquia.sendKeys("409 - Prueba QA Visualizar");
+		nomeHirarquia.sendKeys("Prueba QA Visualizar");
 
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);

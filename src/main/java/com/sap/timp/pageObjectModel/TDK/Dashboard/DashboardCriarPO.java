@@ -148,7 +148,7 @@ public class DashboardCriarPO extends TestBaseEliel {
 		String idB = driver.findElement(By.xpath(
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
 				.getText();
-		idInserir1(idB);
+		idInserir("dashboardsCriar",idB);
 
 		System.out.println(id);
 		System.out.println(idB);

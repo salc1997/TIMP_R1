@@ -8,8 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class DashboardCartaoIndicadorPO extends TestBaseEliel{
+public class DashboardCartaoIndicadorPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
@@ -95,7 +96,7 @@ public class DashboardCartaoIndicadorPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("dashboardsCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

@@ -124,6 +124,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
+	
 	public Registro1210CriarPO() {
 
 		PageFactory.initElements(driver, this);

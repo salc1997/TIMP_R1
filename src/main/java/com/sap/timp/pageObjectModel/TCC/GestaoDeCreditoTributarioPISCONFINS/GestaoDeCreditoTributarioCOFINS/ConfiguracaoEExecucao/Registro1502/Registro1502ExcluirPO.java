@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1210;
+package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,20 +7,21 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class Registro1210ExcluirPO extends TestBaseEliel{
+public class Registro1502ExcluirPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
 	
-	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS\"]")
-	public WebElement gestaocreditopis;
+	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário COFINS\"]")
+	public WebElement gestaocreditocofins;
 	
 
-	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[1]/ul/li[1]")
+	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[2]/ul/li[1]/div/span[2]")
 	public WebElement configuracaoEExecucao;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-pisRegister1210\"]")
-	public WebElement registro1210;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-register1502\"]")
+	public WebElement registro1502;
+	
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -43,7 +44,7 @@ public class Registro1210ExcluirPO extends TestBaseEliel{
 	
 	
 	
-	public Registro1210ExcluirPO() {
+	public Registro1502ExcluirPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -54,11 +55,11 @@ public class Registro1210ExcluirPO extends TestBaseEliel{
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);
-		gestaocreditopis.click();
+		gestaocreditocofins.click();
 		sleep(2000);
 		configuracaoEExecucao.click();
 		sleep(2000);
-		registro1210.click();
+		registro1502.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -87,25 +88,6 @@ public class Registro1210ExcluirPO extends TestBaseEliel{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		/*driver.navigate().refresh();
-		
-		sleep(2000);
-		waitExpectElement(siguiente);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		gestaoCredito.click();
-		sleep(2000);
-		gestaocreditopis.click();
-		sleep(2000);
-		configuracaoEExecucao.click();
-		sleep(2000);
-		registro1210.click();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		*/
 		
 		siguiente.click();
 		
@@ -136,5 +118,6 @@ public class Registro1210ExcluirPO extends TestBaseEliel{
 		
 		
 	}
+
 
 }

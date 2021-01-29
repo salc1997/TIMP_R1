@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1210;
+package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1300;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,8 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class Registro1210CriarPO extends TestBaseEliel {
-	
+public class Registro1300CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
 	
@@ -19,8 +18,8 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[1]/ul/li[1]")
 	public WebElement configuracaoEExecucao;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-pisRegister1210\"]")
-	public WebElement registro1210;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-register1300\"]")
+	public WebElement registro1300;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
@@ -31,7 +30,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Registro 1210\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Registro 1300\"]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[2]/div/div[2]")
@@ -58,23 +57,26 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement filialO;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de referência\"]")
-	public WebElement data;
+	@FindBy(xpath = "//div[@id=\"indNatRet\"]/div/div[2]")
+	public WebElement indicador;
 	
-	@FindBy(xpath = "//div[@id=\"vlOper\"]/div/div[2]")
-	public WebElement valordaoperacao;
+	@FindBy(xpath = "//div[@id=\"vlRetApu\"]/div/div[2]")
+	public WebElement valortotal;
 	
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcao;
 	
-	@FindBy(xpath = "//div[@id=\"vlBcPis\"]/div/div[2]")
-	public WebElement base;
+	@FindBy(xpath = "//div[@id=\"vlRetDed\"]/div/div[2]")
+	public WebElement valordeduzida;
 	
-	@FindBy(xpath = "//div[@id=\"aliqPis\"]/div/div[2]")
-	public WebElement aliquota;
+	@FindBy(xpath = "//div[@id=\"vlRetPer\"]/div/div[2]")
+	public WebElement valorutilizada;
 	
-	@FindBy(xpath = "//div[@id=\"vlPis\"]/div/div[2]")
-	public WebElement valordopispasep;
+	@FindBy(xpath = "//div[@id=\"vlRetDcomp\"]/div/div[2]")
+	public WebElement valorcompensacao;
+	
+	@FindBy(xpath = "//div[@id=\"sldRet\"]/div/div[2]")
+	public WebElement saldoretencao;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[text()=\"SP\"]")
 	public WebElement ufOrigemO;
@@ -125,7 +127,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	public Registro1210CriarPO() {
+	public Registro1300CriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -148,7 +150,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		sleep(2000);
 		configuracaoEExecucao.click();
 		sleep(2000);
-		registro1210.click();
+		registro1300.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -202,30 +204,30 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		closeSelectTypeCheckbox(filial);
 		sleep(1000);
 		
-		
-		data.sendKeys(fechaActual());
+		indicador.click();
 		sleep(1000);
-		
-		valordaoperacao.click();
+		opcao.click();
+		sleep(2000);
+		valortotal.click();
 		sleep(2000);
 		opcao.click();
 		sleep(2000);
-		base.click();
+		valordeduzida.click();
 		sleep(2000);
 		opcao.click();
 		sleep(2000);
-		aliquota.click();
+		valorutilizada.click();
 		sleep(2000);
 		opcao.click();
 		sleep(2000);
-		valordopispasep.click();
+		valorcompensacao.click();
 		sleep(2000);
 		opcao.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		saldoretencao.click();
 		sleep(2000);
-		
-	
+		opcao.click();
+		sleep(2000);
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);

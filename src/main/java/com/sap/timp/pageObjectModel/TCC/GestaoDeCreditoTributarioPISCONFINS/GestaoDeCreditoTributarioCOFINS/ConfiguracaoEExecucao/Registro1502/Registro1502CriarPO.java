@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1210;
+package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,20 +7,20 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class Registro1210CriarPO extends TestBaseEliel {
+public class Registro1502CriarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
 	
-	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS\"]")
-	public WebElement gestaocreditopis;
+	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário COFINS\"]")
+	public WebElement gestaocreditocofins;
 	
 
-	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[1]/ul/li[1]")
+	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[2]/ul/li[1]/div/span[2]")
 	public WebElement configuracaoEExecucao;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-pisRegister1210\"]")
-	public WebElement registro1210;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-register1502\"]")
+	public WebElement registro1502;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
@@ -31,7 +31,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Registro 1210\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Registro 1502\"]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[2]/div/div[2]")
@@ -58,51 +58,9 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement filialO;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de referência\"]")
-	public WebElement data;
-	
-	@FindBy(xpath = "//div[@id=\"vlOper\"]/div/div[2]")
-	public WebElement valordaoperacao;
 	
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcao;
-	
-	@FindBy(xpath = "//div[@id=\"vlBcPis\"]/div/div[2]")
-	public WebElement base;
-	
-	@FindBy(xpath = "//div[@id=\"aliqPis\"]/div/div[2]")
-	public WebElement aliquota;
-	
-	@FindBy(xpath = "//div[@id=\"vlPis\"]/div/div[2]")
-	public WebElement valordopispasep;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[text()=\"SP\"]")
-	public WebElement ufOrigemO;
-	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
-	public WebElement dataVigencia;
-	
-	@FindBy(xpath = "//span[text()=\"Cálculos de fórmula\"]")
-	public WebElement calculoFormula;
-	
-	@FindBy(xpath = "//button[text()=\"Adicionar Fórmula\"]")
-	public WebElement adicionarFormula;
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Nome\"]")
-	public WebElement nome;
-	
-	@FindBy(xpath = "//div[@id=\"formula-Box\"]/div/textarea")
-	public WebElement caixaFormula;
-	
-	@FindBy(xpath = "//div[@id=\"totalSuitableCreditInMonth\"]/div/div[1]/div[2]")
-	public WebElement mesApropiado;
-	
-	@FindBy(xpath = "//div[@id=\"totalCreditReceivedByTransfer\"]/div/div[1]/div[2]")
-	public WebElement recebidosPorTransferencia;
-	
-	@FindBy(xpath = "//div[@id=\"totalCreditUsedInPeriod\"]/div/div[1]/div[2]")
-	public WebElement utilizadosNoPeriodo;
-	
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -125,7 +83,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	public Registro1210CriarPO() {
+	public Registro1502CriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -144,11 +102,11 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);
-		gestaocreditopis.click();
+		gestaocreditocofins.click();
 		sleep(2000);
 		configuracaoEExecucao.click();
 		sleep(2000);
-		registro1210.click();
+		registro1502.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -203,27 +161,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		sleep(1000);
 		
 		
-		data.sendKeys(fechaActual());
-		sleep(1000);
 		
-		valordaoperacao.click();
-		sleep(2000);
-		opcao.click();
-		sleep(2000);
-		base.click();
-		sleep(2000);
-		opcao.click();
-		sleep(2000);
-		aliquota.click();
-		sleep(2000);
-		opcao.click();
-		sleep(2000);
-		valordopispasep.click();
-		sleep(2000);
-		opcao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 	
 		gravar.click();
@@ -303,5 +241,6 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		return sucesso;
 		}
 	}
+
 
 }

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1210;
+package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1220;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class Registro1210CriarPO extends TestBaseEliel {
+public class Registro1220CriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -19,8 +19,8 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[1]/ul/li[1]")
 	public WebElement configuracaoEExecucao;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-pisRegister1210\"]")
-	public WebElement registro1210;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-register1220\"]")
+	public WebElement registro1220;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
@@ -31,7 +31,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Registro 1210\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Registro 1220\"]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[2]/div/div[2]")
@@ -58,11 +58,11 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement filialO;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de referência\"]")
-	public WebElement data;
+	@FindBy(xpath = "//div[@id=\"origCred\"]/div/div[2]")
+	public WebElement origemcredito;
 	
-	@FindBy(xpath = "//div[@id=\"vlOper\"]/div/div[2]")
-	public WebElement valordaoperacao;
+	@FindBy(xpath = "//div[@id=\"vlCred\"]/div/div[2]")
+	public WebElement valorcredito;
 	
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcao;
@@ -125,7 +125,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	public Registro1210CriarPO() {
+	public Registro1220CriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -148,7 +148,7 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		sleep(2000);
 		configuracaoEExecucao.click();
 		sleep(2000);
-		registro1210.click();
+		registro1220.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -202,30 +202,15 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		closeSelectTypeCheckbox(filial);
 		sleep(1000);
 		
-		
-		data.sendKeys(fechaActual());
+		origemcredito.click();
 		sleep(1000);
-		
-		valordaoperacao.click();
-		sleep(2000);
 		opcao.click();
 		sleep(2000);
-		base.click();
+		valorcredito.click();
 		sleep(2000);
 		opcao.click();
-		sleep(2000);
-		aliquota.click();
-		sleep(2000);
-		opcao.click();
-		sleep(2000);
-		valordopispasep.click();
-		sleep(2000);
-		opcao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-	
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);
@@ -303,5 +288,6 @@ public class Registro1210CriarPO extends TestBaseEliel {
 		return sucesso;
 		}
 	}
+
 
 }

@@ -268,7 +268,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"value\"]/div/div[2]")
 	public WebElement campoSaida5;
-	//@FindBy(xpath = "//li[text()=\"Campo de Saída 2\"][1]")
+	@FindBy(xpath = "//li[text()=\"Campo de Saída 2\"][1]")
+	public WebElement opcCampoSaida5tc2;
 	@FindBy(xpath = "//li[@id][text()=\"Campo de saída 2\"][1]")
 	public WebElement opcCampoSaida5;
 	
@@ -458,7 +459,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
+		//nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
+		nomeDeHierarquia.sendKeys("teste automatizado hierar");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Teste Automatizado");
@@ -556,8 +558,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
-
+		//sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
+		sucesso.add(nome.contains("teste automatizado hierar"));
 		idInserir1(id2);
 
 		int id1I = convertToInt(idH);
@@ -652,7 +654,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
+		//nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
+		nomeHirarquia.sendKeys("teste automatizado hierar");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -1420,10 +1423,15 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		campoSaida5.click();
 		sleep(3000);
+		if (tc2==true) {
+			opcCampoSaida5tc2.click();
+			opcCampoSaida5tc2.sendKeys(Keys.ESCAPE);
+			sleep(3000);
+		}else {
 		opcCampoSaida5.click();
 		opcCampoSaida5.sendKeys(Keys.ESCAPE);
 		sleep(3000);
-		
+		}
 		zerado5.click();
 		sleep(3000);
 		

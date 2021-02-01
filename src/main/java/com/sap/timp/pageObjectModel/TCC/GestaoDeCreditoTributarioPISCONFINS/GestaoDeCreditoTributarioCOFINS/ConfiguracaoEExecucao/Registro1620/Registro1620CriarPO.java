@@ -1,26 +1,26 @@
-package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1200;
+package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1620;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseEliel;
 
-public class Registro1200CriarPO extends TestBaseCristhian{
-
+public class Registro1620CriarPO extends TestBaseEliel {
+	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
 	
-	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS\"]")
-	public WebElement gestaocreditopis;
+	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário COFINS\"]")
+	public WebElement gestaocreditocofins;
 	
 
-	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[1]/ul/li[1]")
+	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[2]/ul/li[1]/div/span[2]")
 	public WebElement configuracaoEExecucao;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-pisRegister1200\"]")
-	public WebElement registro1200;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-register1620\"]")
+	public WebElement registro1620;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
@@ -31,7 +31,7 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Registro 1200\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Registro 1620\"]")
 	public WebElement novo;
 	
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[2]/div/div[2]")
@@ -58,51 +58,14 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement filialO;
 	
+	@FindBy(xpath = "//div[@id=\"origCred\"]/div/div[2]")
+	public WebElement origem;
 	
-	@FindBy(xpath = "//div[@id=\"natContRec\"]/div/div[@id=\"main-icon\"]")
-	public WebElement naturaleza;
-	
-	@FindBy(xpath = "//*[@id=\"01\"]")
-	public WebElement naturalezaOTQ1;
-	
-	@FindBy(xpath = "//*[@id=\"01\"]")
-	public WebElement naturalezaOTC2;
-	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
-	public WebElement naturalezaOTP1;
-	
-	@FindBy(xpath = "//div[@id=\"vlContApur\"]/div/div[@id=\"main-icon\"]")
-	public WebElement valorApurada;
-	
-	@FindBy(xpath = "//div[@id=\"vlCredPisDesc\"]/div/div[@id=\"main-icon\"]")
-	public WebElement valorPis;
-	
-	@FindBy(xpath = "//div[@id=\"vlContDev\"]/div/div[@id=\"main-icon\"]")
-	public WebElement valorSocialDevida;
-	
-	@FindBy(xpath = "//div[@id=\"vlOutDed\"]/div/div[@id=\"main-icon\"]")
-	public WebElement valorSocialDeduções;
-	
-	@FindBy(xpath = "//div[@id=\"vlContExt\"]/div/div[@id=\"main-icon\"]")
-	public WebElement valorSocialAPagar;
-	
-	@FindBy(xpath = "//div[@id=\"vlMul\"]/div/div[@id=\"main-icon\"]")
-	public WebElement valorMulta;
-	
-	@FindBy(xpath = "//div[@id=\"vlJur\"]/div/div[@id=\"main-icon\"]")
-	public WebElement valorJuros;
-	
-	
-	@FindBy(xpath = "//li[text()=\"Zerado\"]")
-	public WebElement opcionesValores;
-	
-	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data de Recolhimento\"]")
-	public WebElement data;
+	@FindBy(xpath = "//div[@id=\"vlCred\"]/div/div[2]")
+	public WebElement valorcredito;
 	
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcao;
-	
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -124,7 +87,8 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
-	public Registro1200CriarPO() {
+	
+	public Registro1620CriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -134,27 +98,20 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 		String url = driver.getCurrentUrl();
 		
 		boolean tc2 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
+		
 		if (url.contains("tc2")) {
 			tc2 = true;
-		}if (url.contains("tq1")) {
-			tq1 = true;
-		} else {
-			tp1 = true;
 		}
-		
-
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);
-		gestaocreditopis.click();
+		gestaocreditocofins.click();
 		sleep(2000);
 		configuracaoEExecucao.click();
 		sleep(2000);
-		registro1200.click();
+		registro1620.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -166,10 +123,15 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-
-		String idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id ultimo registro: " +idRegistro);
+		String idRegistro="0";
 		
+		if(rows>0) {
+		idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println("Id ultimo registro: " +idRegistro);
+		}else {
+			//idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id ultimo registro: " +idRegistro);
+		}
 		novo.click();
 		sleep(2000);
 		waitExpectElement(empresa);
@@ -203,61 +165,16 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 		closeSelectTypeCheckbox(filial);
 		sleep(1000);
 		
-		naturaleza.click();
-		sleep(2000);
-		
-		if (tq1 == true) {
-			naturalezaOTQ1.click();
-			sleep(2000);
-		}else if (tp1== true) {
-			naturalezaOTP1.click();
-			sleep(2000);
-		}else {
-			naturalezaOTC2.click();
-			sleep(2000);
-		}
 		
 		
-		valorApurada.click();
+		origem.click();
 		sleep(2000);
-		opcionesValores.click();
+		opcao.click();
 		sleep(2000);
-		
-		valorPis.click();
+		valorcredito.click();
 		sleep(2000);
-		opcionesValores.click();
+		opcao.click();
 		sleep(2000);
-		
-		
-		valorSocialDevida.click();
-		sleep(2000);
-		opcionesValores.click();
-		sleep(2000);
-		
-		valorSocialDeduções.click();
-		sleep(2000);
-		opcionesValores.click();
-		sleep(2000);
-		
-		valorSocialAPagar.click();
-		sleep(2000);
-		opcionesValores.click();
-		sleep(2000);
-		
-		valorMulta.click();
-		sleep(2000);
-		opcionesValores.click();
-		sleep(2000);
-		
-		valorJuros.click();
-		sleep(2000);
-		opcionesValores.click();
-		sleep(2000);
-		
-		
-		data.sendKeys(fechaActual());
-		sleep(1000);
-		
 	
 		gravar.click();
 		sleep(2000);
@@ -273,39 +190,12 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		int naobotao= driver.findElements(By.xpath("//button[text()=\"Não\"]")).size();
-		if(naobotao>0) {
-		waitExpectElement(nao);
-		sleep(2000);
-		nao.click();
-		sleep(2000);
-		waitExpectElement(siguiente);
-		sleep(2000);
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		
-		idInserir1(id2);
-		int idD = convertToInt(idRegistro);
-		int id2D = convertToInt(id2);
-		
-		System.out.println(idD);
-		System.out.println(id2D);
-		
-		boolean sucesso = false;
-		if (idD < id2D) {
-			sucesso = true;
-		}
-		
-		System.out.println(sucesso);
-		
-		return sucesso;
-		}else {
+		if (naobotao > 0) {
 			
+			waitExpectElement(nao);
+			sleep(2000);
+			nao.click();
+			sleep(2000);
 			waitExpectElement(siguiente);
 			sleep(2000);
 			siguiente.click();
@@ -333,7 +223,35 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 			
 			return sucesso;
 			
+		}else {
+				
+		waitExpectElement(siguiente);
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		idInserir1(id2);
+		int idD = convertToInt(idRegistro);
+		int id2D = convertToInt(id2);
+		
+		System.out.println(idD);
+		System.out.println(id2D);
+		
+		boolean sucesso = false;
+		if (idD < id2D) {
+			sucesso = true;
+		}
+		
+		System.out.println(sucesso);
+		
+		return sucesso;
 		}
 	}
-	
+
 }

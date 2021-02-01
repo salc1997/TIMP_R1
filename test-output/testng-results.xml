@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
@@ -10,8 +11,12 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+<testng-results skipped="0" failed="0" total="3" passed="3">
+>>>>>>> refs/remotes/origin/Steven
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -25,8 +30,12 @@
 =======
   <suite started-at="2021-01-29T18:05:50Z" name="Default suite" finished-at="2021-01-29T18:07:35Z" duration-ms="104434">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite name="Default suite" duration-ms="80832" started-at="2021-01-27T22:25:32Z" finished-at="2021-01-27T22:26:53Z">
+>>>>>>> refs/remotes/origin/Steven
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -48,9 +57,15 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:05:50Z" name="beforeClass" finished-at="2021-01-29T12:06:07Z" duration-ms="16285" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+    <test name="Default test" duration-ms="80832" started-at="2021-01-27T22:25:32Z" finished-at="2021-01-27T22:26:53Z">
+      <class name="com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="beforeClass" is-config="true" duration-ms="11359" started-at="2021-01-27T16:25:32Z" finished-at="2021-01-27T16:25:43Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,8 +79,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:07Z" name="login" finished-at="2021-01-29T12:06:16Z" duration-ms="8920" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="ingresar" duration-ms="6559" started-at="2021-01-27T16:25:43Z" finished-at="2021-01-27T16:25:50Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,8 +99,13 @@
 =======
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:16Z" name="acessarTCC" finished-at="2021-01-29T12:06:49Z" duration-ms="33169" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        </test-method> <!-- ingresar -->
+        <test-method status="PASS" signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="scancEntrar" duration-ms="25697" started-at="2021-01-27T16:25:50Z" finished-at="2021-01-27T16:26:16Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -145,9 +169,18 @@
         </test-method> <!-- excluirHierarquia -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:58:19Z" name="afterClass" finished-at="2021-01-27T22:58:19Z" duration-ms="1" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- scancEntrar -->
+        <test-method status="PASS" signature="filtrosAvancados()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="filtrosAvancados" duration-ms="37192" started-at="2021-01-27T16:26:16Z" finished-at="2021-01-27T16:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosAvancados -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-01-27T16:26:53Z" finished-at="2021-01-27T16:26:53Z">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
@@ -165,6 +198,9 @@
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados -->
+>>>>>>> refs/remotes/origin/Steven
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

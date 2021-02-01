@@ -48,12 +48,8 @@ public class TestBaseMassiel extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tq1);
+		driver.get(tc2);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/heads/Cristhian
 	   return driver;
 	}
 	//PARA PODER EJECUTAR TA-518

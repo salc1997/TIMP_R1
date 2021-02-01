@@ -997,7 +997,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				
 
 			}
-			
+			/*
 			//63
 			//Tabela De Apoio E Social > Tabela 17 - Descricao De Nat De Lesão
 			
@@ -1527,7 +1527,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorCriar.afterClass();
 			}
 			
-			@Test(priority = 1056, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+			@Test(priority = 105, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
 			public void atividadeDeTributacaoXFornecedorFiltroID() {
 				atividadeDeTributacaoXFornecedorFiltroID = new AtividadeDeTributacaoXFornecedorFiltroID();
 				atividadeDeTributacaoXFornecedorFiltroID.beforeClass();
@@ -1707,7 +1707,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				statusParaBancoIndébitosExcluirMassa.criar();
 				statusParaBancoIndébitosExcluirMassa.afterClass();
 				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");
-			}
+			}*/
 			
 		 
 

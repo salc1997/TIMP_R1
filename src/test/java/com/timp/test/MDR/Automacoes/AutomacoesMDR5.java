@@ -980,7 +980,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
 		
-	
+		/*
 
 		@Test(priority = 75)
 		public void parteDoCorpoAtingidaCriar() {
@@ -1796,7 +1796,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 		
-		
+		*/
 		
 		
 		

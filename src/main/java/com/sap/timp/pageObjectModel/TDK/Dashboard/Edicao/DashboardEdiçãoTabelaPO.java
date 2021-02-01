@@ -118,7 +118,7 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"edit-icon\"]/span[@class=\"icon icon-font-Formatting-and-Tool icon-pensil\"][1]")
 	public WebElement lapiz;
 
-	
+	boolean sucesso;
 	
 	public DashboardEdiçãoTabelaPO() {
 		PageFactory.initElements(driver, this);
@@ -521,9 +521,9 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 		editar1.click();
 		sleep(4000);
 		sleep(4000);
-		boolean sucesso = false;
+		
 		sucesso = mostrar1.isDisplayed();
-		System.out.println(sucesso);
+	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 

@@ -177,22 +177,33 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 		String filialDestino = "0001 - SP";
 		String ufRelatorio = "SP";
 		String ufRelatorioDestino = "SP";
-		String quadroOrigem = "Quadros 4.1 > 7.1";
+		//String quadroOrigem = "Quadros 4.1 > 7.1";
+		String quadroOrigem = "A6Q41 -> A6Q71";
 		String cnpj = "00326969000319 - MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA";
 		String razaoSocial = "MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA";
 		String valorOperacao = "1.000,00";
 		String comunicado = "TESTE AUTOMATIZADO";
 		
 		String anexo1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")).getText();
+		System.out.println(anexo1);
 		String filialOrigem1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		System.out.println(filialOrigem1);
 		String filialDestino1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
+		System.out.println(filialDestino1);
 		String ufRelatorio1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[5]/div")).getText();
+		System.out.println(ufRelatorio1);
 		String ufRelatorioDestino1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[6]/div")).getText();
+		System.out.println(ufRelatorioDestino1);
 		String quadroOrigem1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[8]/div")).getText();
+		System.out.println(quadroOrigem1);
 		String cnpj1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[9]/div")).getText();
+		System.out.println(cnpj1);
 		String razaoSocial1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[10]/div")).getText();
+		System.out.println(razaoSocial1);
 		String valorOperacao1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[11]/div")).getText();
+		System.out.println(valorOperacao1);
 		String comunicado1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[12]/div")).getText();
+		System.out.println(comunicado1);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso.add(anexo.contains(anexo1));
@@ -210,7 +221,7 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 		System.out.println(sucesso);
 		
 		btnBiblioteca.click();
-		sleep(3000);
+		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

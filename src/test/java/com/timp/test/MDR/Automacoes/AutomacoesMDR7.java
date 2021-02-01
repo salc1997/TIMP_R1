@@ -103,7 +103,7 @@ import com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
 
 
-public class AutomaçõesMDR7 {	
+public class AutomacoesMDR7 {	
 	// Atividades fiscais >	Associação de Atividades Fiscais
 	AssociaçãoCriar associaçãoCriar;
 	AssociaçãoEditar associaçãoEditar;

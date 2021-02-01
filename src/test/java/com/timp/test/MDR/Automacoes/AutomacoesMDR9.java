@@ -88,7 +88,7 @@ import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir;
 import com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa;
 import com.timp.test.TAA.Ajustes.AjusteCancelar;
 
-public class AutomacoesMDRKen extends TestBaseKenssy {
+public class AutomacoesMDR9 extends TestBaseKenssy {
 
 	//Centralização	 > Saldos
 	SaldosCriar saldosCriar;

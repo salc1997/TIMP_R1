@@ -7,12 +7,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar">
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir">
         <methods>
           <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="Editar"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar -->
 =======
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -62,6 +63,9 @@
 =======
       </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao -->
 >>>>>>> refs/remotes/origin/Steven
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -136,6 +136,7 @@ public class DashboardTabelaExecutarPO extends TestBaseEliel {
 		sleep(2000);
 		executar.click();
 		sleep(2000);
+		waitExpectElement(aliquota);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		fechar.click();

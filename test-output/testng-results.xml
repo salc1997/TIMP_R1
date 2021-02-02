@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <testng-results total="11" passed="11" failed="0" skipped="0">
@@ -18,8 +22,11 @@
 =======
 <testng-results total="3" passed="2" failed="1" skipped="0">
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,8 +48,12 @@
 =======
   <suite started-at="2021-01-31T23:10:33Z" name="Default suite" finished-at="2021-01-31T23:26:14Z" duration-ms="941379">
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-02-02T15:06:42Z" name="Default suite" finished-at="2021-02-02T15:08:18Z" duration-ms="95866">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,9 +87,15 @@
       <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:10:33Z" name="beforeClass" finished-at="2021-01-31T20:10:50Z" duration-ms="16582" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-02-02T15:06:42Z" name="Default test" finished-at="2021-02-02T15:08:18Z" duration-ms="95866">
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:06:42Z" name="beforeClass" finished-at="2021-02-02T09:06:55Z" duration-ms="12681" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,10 +117,14 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:10:50Z" name="login" finished-at="2021-01-31T20:11:02Z" duration-ms="12041" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:06:55Z" name="login" finished-at="2021-02-02T09:07:03Z" duration-ms="7592" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -125,8 +146,12 @@
 =======
         <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:11:02Z" name="acessarTDK" finished-at="2021-01-31T20:11:25Z" duration-ms="23340" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:07:03Z" name="acessarBRE" finished-at="2021-02-02T09:07:19Z" duration-ms="16281" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,12 +238,20 @@ Session ID: 838fc6a2c30f0b5910539ac572da5c79
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:07:19Z" name="criar" finished-at="2021-02-02T09:08:18Z" duration-ms="59288" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:23:38Z" name="afterClass" finished-at="2021-01-28T15:23:38Z" duration-ms="1" status="PASS">
 =======
         </test-method> <!-- excluir -->
@@ -276,9 +309,13 @@ Session ID: 838fc6a2c30f0b5910539ac572da5c79
         </test-method> <!-- Editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:26:14Z" name="afterClass" finished-at="2021-01-31T20:26:14Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:08:18Z" name="afterClass" finished-at="2021-02-02T09:08:18Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -304,6 +341,9 @@ Session ID: 838fc6a2c30f0b5910539ac572da5c79
 =======
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -4,15 +4,30 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir">
+=======
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
+>>>>>>> refs/heads/Fernando
         <methods>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="Editar"/>
           <include name="beforeClass"/>
+=======
+          <include name="criar"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar -->
 =======
@@ -66,6 +81,9 @@
 =======
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

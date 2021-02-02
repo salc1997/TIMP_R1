@@ -71,6 +71,8 @@ public class RegraDeAuditoriaN3ExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		lixeira1.click();
 		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

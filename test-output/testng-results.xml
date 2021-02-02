@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-01T20:53:47Z" name="Default suite" finished-at="2021-02-01T20:55:48Z" duration-ms="120669">
+  <suite started-at="2021-02-02T12:51:12Z" name="Default suite" finished-at="2021-02-02T12:52:47Z" duration-ms="94664">
     <groups>
     </groups>
-    <test started-at="2021-02-01T20:53:47Z" name="Default test" finished-at="2021-02-01T20:55:48Z" duration-ms="120669">
-      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@6e9175d8]" started-at="2021-02-01T17:53:47Z" name="beforeClass" finished-at="2021-02-01T17:54:01Z" duration-ms="13639" status="PASS">
+    <test started-at="2021-02-02T12:51:12Z" name="Default test" finished-at="2021-02-02T12:52:47Z" duration-ms="94664">
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@6e9175d8]" started-at="2021-02-02T09:51:13Z" name="beforeClass" finished-at="2021-02-02T09:51:25Z" duration-ms="12303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@6e9175d8]" started-at="2021-02-01T17:54:01Z" name="login" finished-at="2021-02-01T17:54:12Z" duration-ms="10734" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@6e9175d8]" started-at="2021-02-02T09:51:25Z" name="login" finished-at="2021-02-02T09:51:33Z" duration-ms="8292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@6e9175d8]" started-at="2021-02-01T17:54:12Z" name="acessarTDK" finished-at="2021-02-01T17:54:35Z" duration-ms="23829" status="PASS">
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@6e9175d8]" started-at="2021-02-02T09:51:33Z" name="acessarBRE" finished-at="2021-02-02T09:51:50Z" duration-ms="17324" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarTDK -->
-        <test-method signature="cartaoindicadroexcluir()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@6e9175d8]" started-at="2021-02-01T17:54:35Z" name="cartaoindicadroexcluir" finished-at="2021-02-01T17:55:48Z" duration-ms="72440" status="PASS">
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@6e9175d8]" started-at="2021-02-02T09:51:50Z" name="visualizar" finished-at="2021-02-02T09:52:47Z" duration-ms="56727" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cartaoindicadroexcluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@6e9175d8]" started-at="2021-02-01T17:55:48Z" name="afterClass" finished-at="2021-02-01T17:55:48Z" duration-ms="0" status="PASS">
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar@6e9175d8]" started-at="2021-02-02T09:52:47Z" name="afterClass" finished-at="2021-02-02T09:52:47Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir -->
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4Visualizar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

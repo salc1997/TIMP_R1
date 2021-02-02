@@ -3,13 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicador">
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardTabelaExecutar">
         <methods>
           <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
+          <include name="TabelaExecutar"/>
         </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicador -->
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardTabelaExecutar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

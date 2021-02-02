@@ -223,7 +223,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	}
 	
 	
-	@Test(priority = 2, dependsOnMethods = "classificacaoTributariaCriar")
+	@Test(priority = 2)
 	public void classificacaoTributariaEditar() {
 		classificacaoTributariaEditar = new ClassificacaoTributariaEditar();
 		classificacaoTributariaEditar.beforeClass();
@@ -234,7 +234,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 3, dependsOnMethods = "classificacaoTributariaCriar")
+	@Test(priority = 3)
 	public void classificacaoTributariaVisualizar() {
 		classificacaoTributariaVisualizar = new ClassificacaoTributariaVisualizar();
 		classificacaoTributariaVisualizar.beforeClass();
@@ -245,7 +245,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 4, dependsOnMethods = "classificacaoTributariaCriar")
+	@Test(priority = 4)
 	public void classificacaoTributariaExcluirMassa() {
 		classificacaoTributariaExcluirMassa = new ClassificacaoTributariaExcluirMassa();
 		classificacaoTributariaExcluirMassa.beforeClass();
@@ -256,7 +256,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 5, dependsOnMethods = "classificacaoTributariaCriar")
+	@Test(priority = 5)
 	public void classificacaoTributariaExcluir() {
 		classificacaoTributariaExcluir = new ClassificacaoTributariaExcluir();
 		classificacaoTributariaExcluir.beforeClass();
@@ -511,7 +511,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		diagnosticoDeProcessosCriar.afterClass();
 	}
 	
-	@Test(priority = 26, dependsOnMethods = "diagnosticoDeProcessosCriar")
+	@Test(priority = 26)
 	public void diagnosticoDeProcessosEditar() {
 		diagnosticoDeProcessosEditar = new DiagnosticoDeProcessosEditar();
 		diagnosticoDeProcessosEditar.beforeClass();
@@ -522,7 +522,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	}
 	
 
-	@Test(priority = 27, dependsOnMethods = "diagnosticoDeProcessosCriar")
+	@Test(priority = 27)
 	public void diagnosticoDeProcessosVisualizar() {
 		diagnosticoDeProcessosVisualizar = new DiagnosticoDeProcessosVisualizar();
 		diagnosticoDeProcessosVisualizar.beforeClass();
@@ -532,7 +532,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		diagnosticoDeProcessosVisualizar.afterClass();
 	}
 	
-	@Test(priority = 28, dependsOnMethods = "diagnosticoDeProcessosCriar")
+	@Test(priority = 28)
 	public void diagnosticoDeProcessosExcluir() {
 		diagnosticoDeProcessosExcluir = new DiagnosticoDeProcessosExcluir();
 		diagnosticoDeProcessosExcluir.beforeClass();
@@ -542,7 +542,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		diagnosticoDeProcessosExcluir.afterClass();
 	}
 	
-	@Test(priority = 29, dependsOnMethods = "diagnosticoDeProcessosCriar")
+	@Test(priority = 29)
 	public void diagnosticoDeProcessosExcluirEmMassa() {
 		diagnosticoDeProcessosExcluirEmMassa = new DiagnosticoDeProcessosExcluirEmMassa();
 		diagnosticoDeProcessosExcluirEmMassa.beforeClass();
@@ -578,7 +578,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		codigoDeTreinamentoESimulacoesDeExerciciosCriar.afterClass();
 	}
 	
-	@Test(priority = 32, dependsOnMethods = "codigoDeTreinamentoESimulacoesDeExerciciosCriar")	
+	@Test(priority = 32)	
 	public void codigoDeTreinamentoESimulacoesDeExerciciosEditar() {
 		codigoDeTreinamentoESimulacoesDeExerciciosEditar = new CodigoDeTreinamentoESimulacoesDeExerciciosEditar();
 		codigoDeTreinamentoESimulacoesDeExerciciosEditar.beforeClass();
@@ -588,7 +588,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		codigoDeTreinamentoESimulacoesDeExerciciosEditar.afterClass();
 	}
 	
-	@Test(priority = 33, dependsOnMethods = "codigoDeTreinamentoESimulacoesDeExerciciosCriar")	
+	@Test(priority = 33)	
 	public void codigoDeTreinamentoESimulacoesDeExerciciosVisualizar() {
 		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar= new CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar();
 		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.beforeClass();
@@ -599,7 +599,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	}
 	
 
-	@Test(priority = 34, dependsOnMethods = "codigoDeTreinamentoESimulacoesDeExerciciosCriar")	
+	@Test(priority = 34)	
 	public void codigoDeTreinamentoESimulacoesDeExerciciosExcluir() {
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluir= new CodigoDeTreinamentoESimulacoesDeExerciciosExcluir();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluir.beforeClass();
@@ -609,7 +609,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluir.afterClass();
 	}
 
-	@Test(priority = 35, dependsOnMethods = "codigoDeTreinamentoESimulacoesDeExerciciosCriar")	
+	@Test(priority = 35)	
 	public void codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa() {
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa= new CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.beforeClass();
@@ -722,7 +722,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		atividadeDeTributacaoXFornecedorCriar.afterClass();
 	}
 	
-	@Test(priority = 44, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+	@Test(priority = 44)	
 	public void atividadeDeTributacaoXFornecedorFiltroID() {
 		atividadeDeTributacaoXFornecedorFiltroID = new AtividadeDeTributacaoXFornecedorFiltroID();
 		atividadeDeTributacaoXFornecedorFiltroID.beforeClass();
@@ -732,7 +732,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		atividadeDeTributacaoXFornecedorFiltroID.afterClass();
 	}
 	
-	@Test(priority = 45, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+	@Test(priority = 45)	
 	public void atividadeDeTributacaoXFornecedorDetalhes() {
 		atividadeDeTributacaoXFornecedorDetalhes = new AtividadeDeTributacaoXFornecedorDetalhes();
 		atividadeDeTributacaoXFornecedorDetalhes.beforeClass();
@@ -742,7 +742,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		atividadeDeTributacaoXFornecedorDetalhes.afterClass();
 	}
 	
-	@Test(priority = 46, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+	@Test(priority = 46)	
 	public void atividadeDeTributacaoXFornecedorVisualizar() {
 		atividadeDeTributacaoXFornecedorVisualizar = new AtividadeDeTributacaoXFornecedorVisualizar();
 		atividadeDeTributacaoXFornecedorVisualizar.beforeClass();
@@ -752,7 +752,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		atividadeDeTributacaoXFornecedorVisualizar.afterClass();
 	}
 	
-	@Test(priority = 47, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+	@Test(priority = 47)	
 	public void atividadeDeTributacaoXFornecedorEditar() {
 		atividadeDeTributacaoXFornecedorEditar = new AtividadeDeTributacaoXFornecedorEditar();
 		atividadeDeTributacaoXFornecedorEditar.beforeClass();
@@ -765,7 +765,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	
 	
 	
-	@Test(priority = 48, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+	@Test(priority = 48)	
 	public void atividadeDeTributacaoXFornecedorExcluir() {
 		atividadeDeTributacaoXFornecedorExcluir = new AtividadeDeTributacaoXFornecedorExcluir();
 		atividadeDeTributacaoXFornecedorExcluir.beforeClass();
@@ -775,7 +775,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		atividadeDeTributacaoXFornecedorExcluir.afterClass();
 	}
 	
-	@Test(priority = 49, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+	@Test(priority = 49)	
 	public void atividadeDeTributacaoXFornecedorExcluirEmMassa() {
 		atividadeDeTributacaoXFornecedorExcluirEmMassa = new AtividadeDeTributacaoXFornecedorExcluirEmMassa();
 		atividadeDeTributacaoXFornecedorExcluirEmMassa.beforeClass();
@@ -805,7 +805,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	}
 	
 	
-	@Test(priority = 51, dependsOnMethods = "sgdpCriar")
+	@Test(priority = 51)
 	public void sgdpEditar() {
 		sgdpEditar = new SGDPEditar();
 		sgdpEditar.beforeClass();
@@ -817,7 +817,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	}
 	
 	
-	@Test(priority = 52, dependsOnMethods = "sgdpCriar")
+	@Test(priority = 52)
 	public void sgdpVisualizar() {
 		sgdpVisualizar = new SGDPVisualizar();
 		sgdpVisualizar.beforeClass();
@@ -827,7 +827,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		sgdpVisualizar.afterClass();
 
 	}
-	@Test(priority = 53, dependsOnMethods = "sgdpCriar")
+	@Test(priority = 53)
 	public void sgdpExcluir() {
 		sGDPExcluir = new SGDPExcluir();
 		sGDPExcluir.beforeClass();
@@ -838,7 +838,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 
 	}
 	
-	@Test(priority = 54, dependsOnMethods = "sgdpCriar")
+	@Test(priority = 54)
 	public void sgdpExcluirEmMassa() {
 		
 		sgdpExcluirEmMassa = new SGDPExcluirEmMassa();
@@ -862,7 +862,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		StatusParaBancoIndébitosCriar.criar();
 		StatusParaBancoIndébitosCriar.afterClass();
 	}
-	@Test(priority = 56, dependsOnMethods = "statusParaBancoIndébitosCriar")
+	@Test(priority = 56)
 	public void StatusParaBancoIndébitosEditar() {
 		
 		statusParaBancoIndébitosEditar = new StatusParaBancoIndébitosEditar();
@@ -872,7 +872,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		statusParaBancoIndébitosEditar.editar();
 		statusParaBancoIndébitosEditar.afterClass();
 	}
-	@Test(priority = 57, dependsOnMethods = "statusParaBancoIndébitosCriar")
+	@Test(priority = 57)
 	public void StatusParaBancoIndébitosVisualizar() {
 		
 		statusParaBancoIndébitosVisualizar = new StatusParaBancoIndébitosVisualizar();
@@ -882,7 +882,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		statusParaBancoIndébitosVisualizar.visualizar();
 		statusParaBancoIndébitosVisualizar.afterClass();
 	}
-	@Test(priority = 58, dependsOnMethods = "statusParaBancoIndébitosCriar")
+	@Test(priority = 58)
 	public void StatusParaBancoIndébitosExcluir() {
 		
 		statusParaBancoIndébitosExcluir = new StatusParaBancoIndébitosExcluir();
@@ -892,7 +892,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		statusParaBancoIndébitosExcluir.excluir();
 		statusParaBancoIndébitosExcluir.afterClass();
 	}
-	@Test(priority = 59, dependsOnMethods = "statusParaBancoIndébitosCriar")
+	@Test(priority = 59)
 	public void StatusParaBancoIndébitosExcluirMassa() {
 		
 		statusParaBancoIndébitosExcluirMassa = new StatusParaBancoIndébitosExcluirMassa();

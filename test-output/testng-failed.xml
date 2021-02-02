@@ -3,39 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR17">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM115.RegistroM115Excluir">
         <methods>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosExcluir"/>
-          <include name="diagnosticoDeProcessosExcluir"/>
-          <include name="classificacaoTributariaExcluir"/>
-          <include name="classificacaoTributariaVisualizar"/>
-          <include name="diagnosticoDeProcessosVisualizar"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosCriar"/>
-          <include name="atividadeDeTributacaoXFornecedorEditar"/>
-          <include name="diagnosticoDeProcessosExcluirEmMassa"/>
-          <include name="diagnosticoDeProcessosEditar"/>
-          <include name="atividadeDeTributacaoXFornecedorCriar"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosEditar"/>
-          <include name="statusParaBancoIndébitosCriar"/>
-          <include name="classificacaoTributariaCriar"/>
-          <include name="rateioDeConsorcioPesquisaPorID"/>
-          <include name="StatusParaBancoIndébitosEditar"/>
-          <include name="StatusParaBancoIndébitosExcluir"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosVisualizar"/>
-          <include name="diagnosticoDeProcessosCriar"/>
-          <include name="StatusParaBancoIndébitosExcluirMassa"/>
-          <include name="atividadeDeTributacaoXFornecedorVisualizar"/>
-          <include name="atividadeDeTributacaoXFornecedorFiltroID"/>
-          <include name="codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa"/>
-          <include name="atividadeDeTributacaoXFornecedorExcluir"/>
-          <include name="deParaLivroApuracaoXSpedFiscalExcluirEmMassa"/>
-          <include name="atividadeDeTributacaoXFornecedorExcluirEmMassa"/>
-          <include name="incentivosFiscaisPPExcluirEmMassa"/>
-          <include name="classificacaoTributariaEditar"/>
-          <include name="StatusParaBancoIndébitosVisualizar"/>
-          <include name="atividadeDeTributacaoXFornecedorDetalhes"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR17 -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM115.RegistroM115Excluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

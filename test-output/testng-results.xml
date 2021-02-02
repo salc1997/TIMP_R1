@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-02T14:12:55Z" name="Default suite" finished-at="2021-02-02T14:17:09Z" duration-ms="254127">
+  <suite started-at="2021-02-02T17:28:41Z" name="Default suite" finished-at="2021-02-02T17:32:13Z" duration-ms="212795">
     <groups>
     </groups>
-    <test started-at="2021-02-02T14:12:55Z" name="Default test" finished-at="2021-02-02T14:17:09Z" duration-ms="254127">
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa@7d0b7e3c]" started-at="2021-02-02T11:12:55Z" name="beforeClass" finished-at="2021-02-02T11:13:07Z" duration-ms="11999" status="PASS">
+    <test started-at="2021-02-02T17:28:41Z" name="Default test" finished-at="2021-02-02T17:32:13Z" duration-ms="212795">
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosExcluir@6e9175d8]" started-at="2021-02-02T14:28:41Z" name="beforeClass" finished-at="2021-02-02T14:28:55Z" duration-ms="14010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa@7d0b7e3c]" started-at="2021-02-02T11:13:07Z" name="login" finished-at="2021-02-02T11:13:15Z" duration-ms="8135" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosExcluir@6e9175d8]" started-at="2021-02-02T14:28:55Z" name="login" finished-at="2021-02-02T14:29:04Z" duration-ms="9495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa@7d0b7e3c]" started-at="2021-02-02T11:13:15Z" name="acessarBRE" finished-at="2021-02-02T11:13:32Z" duration-ms="17504" status="PASS">
+        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosExcluir@6e9175d8]" started-at="2021-02-02T14:29:04Z" name="acessarTDK" finished-at="2021-02-02T14:29:29Z" duration-ms="24460" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarBRE -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa@7d0b7e3c]" started-at="2021-02-02T11:13:32Z" name="criar" finished-at="2021-02-02T11:17:09Z" duration-ms="216477" status="PASS">
+        </test-method> <!-- acessarTDK -->
+        <test-method signature="linkrapidoexcluir()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosExcluir@6e9175d8]" started-at="2021-02-02T14:29:29Z" name="linkrapidoexcluir" finished-at="2021-02-02T14:32:13Z" duration-ms="164811" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa@7d0b7e3c]" started-at="2021-02-02T11:17:09Z" name="afterClass" finished-at="2021-02-02T11:17:09Z" duration-ms="0" status="PASS">
+        </test-method> <!-- linkrapidoexcluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosExcluir@6e9175d8]" started-at="2021-02-02T14:32:13Z" name="afterClass" finished-at="2021-02-02T14:32:13Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa -->
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Excluir">
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosEditar">
         <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="linksrapidos"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Excluir -->
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidosEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

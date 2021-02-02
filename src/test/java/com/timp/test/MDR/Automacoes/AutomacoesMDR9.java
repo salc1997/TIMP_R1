@@ -243,7 +243,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 
 	
 
-	@Test(priority = 3, dependsOnMethods = "incentivosFiscaisCriar")
+	@Test(priority = 3)
 	public void incentivosFiscaisEditar() {
 		incentivosFiscaisEditar = new IncentivosFiscaisEditar();
 		incentivosFiscaisEditar.beforeClass();
@@ -253,7 +253,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		incentivosFiscaisEditar.afterClass();
 	}
 	
-	@Test(priority = 4, dependsOnMethods = "incentivosFiscaisCriar")
+	@Test(priority = 4)
 	public void incentivosFiscaisDetalles() {
 		incentivosFiscaisDetalles = new IncentivosFiscaisDetalles();
 		incentivosFiscaisDetalles.beforeClass();
@@ -263,7 +263,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		incentivosFiscaisDetalles.afterClass();
 	}
 	
-	@Test(priority = 4, dependsOnMethods = "incentivosFiscaisCriar")
+	@Test(priority = 4)
 	public void incentivosFiscaisVisualizar() {
 		incentivosFiscaisVisualizar = new IncentivosFiscaisVisualizar();
 		incentivosFiscaisVisualizar.beforeClass();
@@ -274,7 +274,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 	}
 	
 	
-	@Test(priority = 4, dependsOnMethods = "incentivosFiscaisCriar")
+	@Test(priority = 4)
 	public void incentivosFiscaisFiltroId() {
 		incentivosFiscaisFiltroId = new IncentivosFiscaisFiltroId();
 		incentivosFiscaisFiltroId.beforeClass();
@@ -285,7 +285,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 	}
 	
 	
-	@Test(priority = 5, dependsOnMethods = "incentivosFiscaisCriar")
+	@Test(priority = 5)
 	public void incentivosFiscaisExcluir() {
 		incentivosFiscaisExcluir = new IncentivosFiscaisExcluir();
 		incentivosFiscaisExcluir.beforeClass();
@@ -319,7 +319,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		saldoInicialCriar.afterClass();
 	}
 	
-	@Test(priority = 7, dependsOnMethods = "saldoInicialCriar")
+	@Test(priority = 7)
 	public void saldoInicialEditar() {
 		saldoInicialEditar = new SaldoInicialEditar();
 		saldoInicialEditar.beforeClass();
@@ -330,7 +330,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 	}
 	
 	
-	@Test(priority = 8, dependsOnMethods = "saldoInicialCriar")
+	@Test(priority = 8)
 	public void saldoInicialDetalhe() {
 		saldoInicialDetalhe = new SaldoInicialDetalhe();
 		saldoInicialDetalhe.beforeClass();
@@ -340,7 +340,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		saldoInicialDetalhe.afterClass();
 	}
 
-	@Test(priority = 9, dependsOnMethods = "saldoInicialCriar")
+	@Test(priority = 9)
 	public void saldoInicialVisualizar() {
 		saldoInicialVisualizar = new SaldoInicialVisualizar();
 		saldoInicialVisualizar.beforeClass();
@@ -350,7 +350,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		saldoInicialVisualizar.afterClass();
 	}
 	
-	@Test(priority = 10, dependsOnMethods = "saldoInicialCriar")
+	@Test(priority = 10)
 	public void saldoInicialExcluir() {
 		saldoInicialExcluir = new SaldoInicialExcluir();
 		saldoInicialExcluir.beforeClass();
@@ -383,7 +383,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		motivosdeDesligamentoCriar.afterClass();
 	}
 	
-	@Test(priority = 13, dependsOnMethods = "motivosdeDesligamentoCriar")
+	@Test(priority = 13)
 	public void motivosdeDesligamentoEditar() {
 		motivosdeDesligamentoEditar = new MotivosdeDesligamentoEditar();
 		motivosdeDesligamentoEditar.beforeClass();
@@ -394,7 +394,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 	}
 	
 	
-	@Test(priority = 14, dependsOnMethods = "motivosdeDesligamentoCriar")
+	@Test(priority = 14)
 	public void motivosdeDesligamentoVisualizar() {
 		motivosdeDesligamentoVisualizar = new MotivosdeDesligamentoVisualizar();
 		motivosdeDesligamentoVisualizar.beforeClass();
@@ -404,7 +404,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		motivosdeDesligamentoVisualizar.afterClass();
 	}
 	
-	@Test(priority = 15, dependsOnMethods = "motivosdeDesligamentoCriar")
+	@Test(priority = 15)
 	public void motivosdeDesligamentoExcluir() {
 		motivosdeDesligamentoExcluir = new MotivosdeDesligamentoExcluir();
 		motivosdeDesligamentoExcluir.beforeClass();
@@ -438,7 +438,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		compatibilidadeEntreFPASCriar.afterClass();
 	}
 	
-	@Test(priority = 18, dependsOnMethods = "compatibilidadeEntreFPASCriar")
+	@Test(priority = 18)
 	public void compatibilidadeEntreFPASEditar() {
 		compatibilidadeEntreFPASEditar = new CompatibilidadeEntreFPASEditar();
 		compatibilidadeEntreFPASEditar.beforeClass();
@@ -448,7 +448,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		compatibilidadeEntreFPASEditar.afterClass();
 	}
 	
-	@Test(priority = 19, dependsOnMethods = "compatibilidadeEntreFPASCriar")
+	@Test(priority = 19)
 	public void compatibilidadeEntreFPASVisualizar() {
 		compatibilidadeEntreFPASVisualizar = new CompatibilidadeEntreFPASVisualizar();
 		compatibilidadeEntreFPASVisualizar.beforeClass();
@@ -458,7 +458,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		compatibilidadeEntreFPASVisualizar.afterClass();
 	}
 	
-	@Test(priority = 20, dependsOnMethods = "compatibilidadeEntreFPASCriar")
+	@Test(priority = 20)
 	public void compatibilidadeEntreFPASExcluir() {
 		compatibilidadeEntreFPASExcluir = new CompatibilidadeEntreFPASExcluir();
 		compatibilidadeEntreFPASExcluir.beforeClass();
@@ -490,7 +490,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		emprestimosCriar.afterClass();
 	}
 	
-	@Test(priority = 22, dependsOnMethods = "emprestimosCriar")
+	@Test(priority = 22)
 	public void emprestimosEditar() {
 		emprestimosEditar = new EmprestimosEditar();
 		emprestimosEditar.beforeClass();
@@ -500,7 +500,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		emprestimosEditar.afterClass();
 	}
 	
-	@Test(priority = 23, dependsOnMethods = "emprestimosCriar")
+	@Test(priority = 23)
 	public void emprestimosExcluir() {
 		emprestimosExcluir = new EmprestimosExcluir();
 		emprestimosExcluir.beforeClass();
@@ -574,7 +574,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.excluirEmMassa();
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.afterClass();
 	}
-
+/*
 	@Test(priority = 45)
 	public void contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa() {
 		System.out.println(
@@ -586,7 +586,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.excluirEmMassa();
 		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.afterClass();
 	}
-	
+*/	
 	@Test(priority = 46)
 	public void s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID() {
 		System.out.println(
@@ -629,7 +629,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 	
 	
 	
-	@Test(priority = 49, dependsOnMethods = "fatoresDeRiscoCriar")
+	@Test(priority = 49)
 	public void fatoresDeRiscoEditar() {
 		fatoresDeRiscoEditar = new FatoresDeRiscoEditar();
 		fatoresDeRiscoEditar.beforeClass();
@@ -639,7 +639,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		fatoresDeRiscoEditar.afterClass();
 	}
 	
-	@Test(priority = 50, dependsOnMethods = "fatoresDeRiscoCriar")
+	@Test(priority = 50)
 	public void factoresDeRiscoVisualizar() {
 		factoresDeRiscoVisualizar = new FactoresDeRiscoVisualizar();
 		factoresDeRiscoVisualizar.beforeClass();
@@ -649,7 +649,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		factoresDeRiscoVisualizar.afterClass();
 	}
 	
-	@Test(priority = 51, dependsOnMethods = "fatoresDeRiscoCriar")
+	@Test(priority = 51)
 	public void factoresDeRiscoExcluir() {
 		factoresDeRiscoExcluir = new FactoresDeRiscoExcluir();
 		factoresDeRiscoExcluir.beforeClass();
@@ -683,7 +683,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		codificaçãoDeAcDeTrabCriar.afterClass();
 	}
 	
-	@Test(priority = 54, dependsOnMethods = "codificaçãoDeAcDeTrabCriar")
+	@Test(priority = 54)
 	public void codificaçãoDeAcDeTrabEditar() {
 		codificaçãoDeAcDeTrabEditar = new CodificaçãoDeAcDeTrabEditar();
 		codificaçãoDeAcDeTrabEditar.beforeClass();
@@ -693,7 +693,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		codificaçãoDeAcDeTrabEditar.afterClass();
 	}
 	
-	@Test(priority = 55, dependsOnMethods = "codificaçãoDeAcDeTrabCriar")
+	@Test(priority = 55)
 	public void codificaçãoDeAcDeTrabVisualizar() {
 		codificaçãoDeAcDeTrabVisualizar = new CodificaçãoDeAcDeTrabVisualizar();
 		codificaçãoDeAcDeTrabVisualizar.beforeClass();
@@ -703,7 +703,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		codificaçãoDeAcDeTrabVisualizar.afterClass();
 	}
 	
-	@Test(priority = 56, dependsOnMethods = "codificaçãoDeAcDeTrabCriar")
+	@Test(priority = 56)
 	public void codificaçãoDeAcDeTrabExcluir() {
 		codificaçãoDeAcDeTrabExcluir = new CodificaçãoDeAcDeTrabExcluir();
 		codificaçãoDeAcDeTrabExcluir.beforeClass();
@@ -737,7 +737,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		codigosDeLotacaoCriar.afterClass();
 	}
 	
-	@Test(priority = 59, dependsOnMethods = "codigosDeLotacaoCriar")
+	@Test(priority = 59)
 	public void codigosDeLotacaoEditar() {
 		codigosDeLotacaoEditar = new CodigosDeLotacaoEditar();
 		codigosDeLotacaoEditar.beforeClass();
@@ -747,7 +747,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		codigosDeLotacaoEditar.afterClass();
 	}
 	
-	@Test(priority = 60,dependsOnMethods = "codigosDeLotacaoCriar")
+	@Test(priority = 60)
 	public void codigosDeLotacaoVisualizar() {
 		codigosDeLotacaoVisualizar = new CodigosDeLotacaoVisualizar();
 		codigosDeLotacaoVisualizar.beforeClass();
@@ -757,7 +757,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		codigosDeLotacaoVisualizar.afterClass();
 	}
 	
-	@Test(priority = 61,dependsOnMethods = "codigosDeLotacaoCriar")
+	@Test(priority = 61)
 	public void codigosDeLotacaoExcluir() {
 		codigosDeLotacaoExcluir = new CodigosDeLotacaoExcluir();
 		codigosDeLotacaoExcluir.beforeClass();
@@ -804,7 +804,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 	}
 	
 	
-	@Test(priority = 65, dependsOnMethods = "aliquotaDeTaxaDeActualizacaoCriar")
+	@Test(priority = 65)
 	public void aliquotaDeTaxaDeActualizacaoEditar() {
 		aliquotaDeTaxaDeActualizacaoEditar = new AliquotaDeTaxaDeActualizacaoEditar();
 		aliquotaDeTaxaDeActualizacaoEditar.beforeClass();
@@ -815,7 +815,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 	}
 	
 	
-	@Test(priority = 66, dependsOnMethods = "aliquotaDeTaxaDeActualizacaoCriar")
+	@Test(priority = 66)
 	public void aliquotaDeTaxaDeActualizacaoDetalhes() {
 		aliquotaDeTaxaDeActualizacaoDetalhes = new AliquotaDeTaxaDeActualizacaoDetalhes();
 		aliquotaDeTaxaDeActualizacaoDetalhes.beforeClass();
@@ -825,7 +825,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		aliquotaDeTaxaDeActualizacaoDetalhes.afterClass();
 	}
 	
-	@Test(priority = 67, dependsOnMethods = "aliquotaDeTaxaDeActualizacaoCriar")
+	@Test(priority = 67)
 	public void aliquotaDeTaxaDeActualizacaoVisualizar() {
 		aliquotaDeTaxaDeActualizacaoVisualizar = new AliquotaDeTaxaDeActualizacaoVisualizar();
 		aliquotaDeTaxaDeActualizacaoVisualizar.beforeClass();
@@ -835,7 +835,7 @@ public class AutomacoesMDR9 extends TestBaseKenssy {
 		aliquotaDeTaxaDeActualizacaoVisualizar.afterClass();
 	}
 	
-	@Test(priority = 68, dependsOnMethods = "aliquotaDeTaxaDeActualizacaoCriar")
+	@Test(priority = 68)
 	public void aliquotaDeTaxaDeActualizacaoExcluir() {
 		aliquotaDeTaxaDeActualizacaoExcluir = new AliquotaDeTaxaDeActualizacaoExcluir();
 		aliquotaDeTaxaDeActualizacaoExcluir.beforeClass();

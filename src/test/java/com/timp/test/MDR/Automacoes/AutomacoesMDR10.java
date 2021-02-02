@@ -284,7 +284,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 41, dependsOnMethods = "contasParteBLALURCriarFiscalCriar")
+	@Test(priority = 41)
 	public void contasParteBLALURCriarFiscalExcluir() {
 
 		contasParteBLALURExcluir = new ContasParteBLALURExcluir();
@@ -315,7 +315,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 43, dependsOnMethods = "cenarioCorrecaoCriar")
+	@Test(priority = 43)
 	public void cenarioCorrecaoEditar() {
 
 		cenariosCorrecaoEditar = new CenariosCorrecaoEditar();
@@ -327,7 +327,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 43, dependsOnMethods = "cenarioCorrecaoCriar")
+	@Test(priority = 43)
 	public void cenarioCorrecaoVisualizar() {
 
 		cenariosCorrecaoVisualizar = new CenariosCorrecaoVisualizar();
@@ -351,7 +351,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 45, dependsOnMethods = "cenarioCorrecaoCriar")
+	@Test(priority = 45)
 	public void cenarioCorrecaoExcluir() {
 
 		cenariosCorrecaoExcluir = new CenariosCorrecaoExcluir();
@@ -393,7 +393,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 48, dependsOnMethods = "estornoCreditoCriar")
+	@Test(priority = 48)
 	public void estornoCreditoEditar() {
 
 		estornoCreditoEditar = new EstornoCreditoEditar();
@@ -405,7 +405,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 49, dependsOnMethods = "estornoCreditoCriar")
+	@Test(priority = 49)
 	public void estornoCreditoVisualizar() {
 
 		estornoCreditoVisualizar = new EstornoCreditoVisualizar();
@@ -429,7 +429,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 51, dependsOnMethods = "estornoCreditoCriar")
+	@Test(priority = 51)
 	public void estornoCreditoExcluir() {
 
 		estornoCreditoExcluir = new EstornoCreditoExcluir();
@@ -458,7 +458,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 53, dependsOnMethods = "FatorCrecimentoCIAPCriar")
+	@Test(priority = 53)
 	public void FatorCrecimentoCIAPEditar() {
 
 		fatorCreditamentoEditar = new FatorCreditamentoEditar();
@@ -470,7 +470,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 53, dependsOnMethods = "FatorCrecimentoCIAPCriar")
+	@Test(priority = 53)
 	public void FatorCrecimentoCIAPDetalhes() {
 
 		fatorCreditamentoDetalhes = new FatorCreditamentoDetalhes();
@@ -482,7 +482,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 53, dependsOnMethods = "FatorCrecimentoCIAPCriar")
+	@Test(priority = 53)
 	public void FatorCrecimentoCIAPVisualizar() {
 
 		fatorCreditamentoVisualizar = new FatorCreditamentoVisualizar();
@@ -508,7 +508,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 54, dependsOnMethods = "FatorCrecimentoCIAPCriar")
+	@Test(priority = 54)
 	public void FatorCrecimentoCIAPExcluir() {
 
 		fatorCreditamentoExcluir = new FatorCreditamentoExcluir();
@@ -551,7 +551,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 55, dependsOnMethods = "tributosCriar")
+	@Test(priority = 55)
 	public void tributosEditar() {
 
 		tributosEditar = new TributosEditar();
@@ -563,7 +563,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 55, dependsOnMethods = "tributosCriar")
+	@Test(priority = 55)
 	public void tributosVisualizar() {
 
 		tributosVisualizar = new TributosVisualizar();
@@ -575,7 +575,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 56, dependsOnMethods = "tributosCriar")
+	@Test(priority = 56)
 	public void tributosDetalhes() {
 
 		tributosDetalhes = new TributosDetalhes();
@@ -599,7 +599,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 58, dependsOnMethods = "tributosCriar")
+	@Test(priority = 58)
 	public void tributosExcluir() {
 
 		tributosExcluir = new TributosExcluir();
@@ -859,7 +859,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 75, dependsOnMethods = "codigoContabilizacaoCriar")
+	@Test(priority = 75)
 	public void codigoContabilizacaoEditar() {
 
 		codigoContabilizacaoEditar = new CodigoContabilizacaoEditar();
@@ -871,7 +871,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 75, dependsOnMethods = "codigoContabilizacaoCriar")
+	@Test(priority = 75)
 	public void codigoContabilizacaoVisualizar() {
 
 		codigoContabalizacaoVisualizar = new CodigoContabalizacaoVisualizar();
@@ -883,7 +883,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 75, dependsOnMethods = "codigoContabilizacaoCriar")
+	@Test(priority = 75)
 	public void codigoContabalizacaoDetalhes() {
 
 		codigoContabalizacaoDetalhes = new CodigoContabalizacaoDetalhes();
@@ -896,7 +896,7 @@ public class AutomacoesMDR10 extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 76, dependsOnMethods = "codigoContabilizacaoCriar")
+	@Test(priority = 76)
 	public void codigoContabilizacaoExcluir() {
 
 		codigoContabilizacaoExcluir = new CodigoContabilizacaoExcluir();

@@ -54,9 +54,9 @@ public class BairroEliminarPO extends TestBaseSteven{
 		
 		waitExpectElement(sim);
 		sim.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(2000);
 		
 		pesquisar.clear();
 		sleep(1000);

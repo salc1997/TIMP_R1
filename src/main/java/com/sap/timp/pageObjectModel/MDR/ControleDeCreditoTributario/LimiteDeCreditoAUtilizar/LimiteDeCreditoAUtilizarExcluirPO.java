@@ -72,7 +72,8 @@ public class LimiteDeCreditoAUtilizarExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		
+		waitExpectElement(sim);
+		sleep(10000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

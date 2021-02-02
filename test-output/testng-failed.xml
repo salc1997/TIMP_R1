@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar">
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
         <methods>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="criar"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar -->
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Editar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Editar -->
->>>>>>> refs/remotes/origin/Eliel
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
-        <methods>
-          <include name="resultadoDoAbaParte1"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

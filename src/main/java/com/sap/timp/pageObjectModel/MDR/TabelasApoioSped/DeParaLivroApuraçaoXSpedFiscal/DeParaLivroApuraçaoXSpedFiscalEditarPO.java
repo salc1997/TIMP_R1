@@ -135,23 +135,24 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 =  idObter("deparalivroapuracaoxspedfiscal");
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		actionsMoveToElementElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
 		
-		visualizar.click();
+		editar1.click();
 		sleep(2000);
+		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
-		
-		boolean sucesso = data.contains(campo.getText());
+		boolean sucesso = data.contains(datavigencia.getAttribute("value"));
 		System.out.println(sucesso);	
 		return sucesso;
 		

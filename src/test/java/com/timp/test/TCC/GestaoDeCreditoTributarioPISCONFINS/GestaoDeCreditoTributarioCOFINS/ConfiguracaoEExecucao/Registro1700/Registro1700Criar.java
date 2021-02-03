@@ -17,20 +17,20 @@ public class Registro1700Criar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1700CriarPO registro1700CriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registro1700CriarPO = new Registro1700CriarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -46,10 +46,10 @@ public class Registro1700Criar extends TestBaseMassiel{
 	@Test(priority = 2)
 	public void criar() {
 
-		registro1700CriarPO.criar();
-		/*boolean sucesso = registro1500CriarPO.criar();
 
-		assertTrue(sucesso, Criar);*/
+		boolean sucesso = registro1700CriarPO.criar();
+
+		assertTrue(sucesso, Criar);
 	}
 
 }

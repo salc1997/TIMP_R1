@@ -36,7 +36,7 @@ public class DeterminacaoDeTipoDeCondicaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"field-element company_0_0\"]/div/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]/div")
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
 	public WebElement opcaoempresa;
 	
 	@FindBy(xpath = "//div[@class=\"field-element process_0_0\"]/div/div/div/div[2]")
@@ -130,6 +130,7 @@ public class DeterminacaoDeTipoDeCondicaoCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
+		closeSelectTypeCheckbox(empresa);
 		processo.click();
 		
 		sleep(2000);

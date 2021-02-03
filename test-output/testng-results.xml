@@ -1,33 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="23" passed="17" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-01T15:06:09Z" name="Default suite" finished-at="2021-02-01T15:07:24Z" duration-ms="74956">
+  <suite started-at="2021-02-02T22:25:52Z" name="Default suite" finished-at="2021-02-02T23:13:49Z" duration-ms="2876946">
     <groups>
     </groups>
-    <test started-at="2021-02-01T15:06:09Z" name="Default test" finished-at="2021-02-01T15:07:24Z" duration-ms="74956">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1700.Registro1700Criar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1700.Registro1700Criar@76b1e9b8]" started-at="2021-02-01T09:06:09Z" name="beforeClass" finished-at="2021-02-01T09:06:30Z" duration-ms="21550" status="PASS">
+    <test started-at="2021-02-02T22:25:52Z" name="Default test" finished-at="2021-02-02T23:13:49Z" duration-ms="2876946">
+      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
+        <test-method signature="detalheTipoTributoFiscalCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:25:52Z" name="detalheTipoTributoFiscalCriar" finished-at="2021-02-02T16:27:36Z" duration-ms="103300" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1700.Registro1700Criar@76b1e9b8]" started-at="2021-02-01T09:06:30Z" name="login" finished-at="2021-02-01T09:06:40Z" duration-ms="9535" status="PASS">
+        </test-method> <!-- detalheTipoTributoFiscalCriar -->
+        <test-method signature="detalheTipoTributoFiscalEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:27:36Z" name="detalheTipoTributoFiscalEditar" finished-at="2021-02-02T16:29:39Z" duration-ms="123604" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1700.Registro1700Criar@76b1e9b8]" started-at="2021-02-01T09:06:40Z" name="acessarTCC" finished-at="2021-02-01T09:07:04Z" duration-ms="24075" status="PASS">
+        </test-method> <!-- detalheTipoTributoFiscalEditar -->
+        <test-method signature="detalheTipoTributoFiscalVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:29:39Z" name="detalheTipoTributoFiscalVisualizar" finished-at="2021-02-02T16:31:14Z" duration-ms="94925" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarTCC -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1700.Registro1700Criar@76b1e9b8]" started-at="2021-02-01T09:07:04Z" name="criar" finished-at="2021-02-01T09:07:24Z" duration-ms="19776" status="PASS">
+        </test-method> <!-- detalheTipoTributoFiscalVisualizar -->
+        <test-method signature="detalheTipoTributoDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:31:14Z" name="detalheTipoTributoDetalhes" finished-at="2021-02-02T16:32:44Z" duration-ms="89955" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1700.Registro1700Criar@76b1e9b8]" started-at="2021-02-01T09:07:24Z" name="afterClass" finished-at="2021-02-01T09:07:24Z" duration-ms="1" status="PASS">
+        </test-method> <!-- detalheTipoTributoDetalhes -->
+        <test-method signature="detalheTipoTributoFiltroIdDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:32:44Z" name="detalheTipoTributoFiltroIdDetalhes" finished-at="2021-02-02T16:33:54Z" duration-ms="70222" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1700.Registro1700Criar -->
+        </test-method> <!-- detalheTipoTributoFiltroIdDetalhes -->
+        <test-method signature="detalheTipoTributoFiscalExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:33:54Z" name="detalheTipoTributoFiscalExcluir" finished-at="2021-02-02T16:36:01Z" duration-ms="126960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- detalheTipoTributoFiscalExcluir -->
+        <test-method signature="detalheExcluirMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:36:01Z" name="detalheExcluirMassa" finished-at="2021-02-02T16:38:13Z" duration-ms="131555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- detalheExcluirMassa -->
+        <test-method signature="determinacaoDeTipoDeCondicaoCriarCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:38:13Z" name="determinacaoDeTipoDeCondicaoCriarCriar" finished-at="2021-02-02T16:41:17Z" duration-ms="184606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- determinacaoDeTipoDeCondicaoCriarCriar -->
+        <test-method signature="determinacaoDeTipoDeCondicaoCriarEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:41:17Z" name="determinacaoDeTipoDeCondicaoCriarEditar" finished-at="2021-02-02T16:43:34Z" duration-ms="136763" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f18c6bc387fddc9e221b75b1381b2fba
+*** Element info: {Using=xpath, value=//input[@placeholder="Selecione a Data de Inicio de Vigência "]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f18c6bc387fddc9e221b75b1381b2fba
+*** Element info: {Using=xpath, value=//input[@placeholder="Selecione a Data de Inicio de Vigência "]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditarPO.editar(DeterminacaoDeTipoDeCondicaoEditarPO.java:120)
+	at com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar.editar(DeterminacaoDeTipoDeCondicaoEditar.java:50)
+	at com.timp.test.MDR.Automacoes.AutomacoesMDR2.determinacaoDeTipoDeCondicaoCriarEditar(AutomacoesMDR2.java:366)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- determinacaoDeTipoDeCondicaoCriarEditar -->
+        <test-method signature="determinacaoDeTipoDeCondicaoCriarDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:43:34Z" name="determinacaoDeTipoDeCondicaoCriarDetalhes" finished-at="2021-02-02T16:45:14Z" duration-ms="99192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- determinacaoDeTipoDeCondicaoCriarDetalhes -->
+        <test-method signature="determinacaoDeTipoDeCondicaoCriarExcluir()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:45:14Z" name="determinacaoDeTipoDeCondicaoCriarExcluir" finished-at="2021-02-02T16:46:42Z" duration-ms="87939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- determinacaoDeTipoDeCondicaoCriarExcluir -->
+        <test-method signature="DeterminacaoDeTipoDeCondicaoExcluirMassa()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:46:42Z" name="DeterminacaoDeTipoDeCondicaoExcluirMassa" finished-at="2021-02-02T16:51:52Z" duration-ms="310419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeterminacaoDeTipoDeCondicaoExcluirMassa -->
+        <test-method signature="empresaEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:51:52Z" name="empresaEditar" finished-at="2021-02-02T16:54:42Z" duration-ms="170354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empresaEditar -->
+        <test-method signature="empresaVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:54:42Z" name="empresaVisualizar" finished-at="2021-02-02T16:57:02Z" duration-ms="139975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empresaVisualizar -->
+        <test-method signature="empresasDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:57:02Z" name="empresasDetalhes" finished-at="2021-02-02T16:58:37Z" duration-ms="95153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empresasDetalhes -->
+        <test-method signature="empresaFiltros()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:58:38Z" name="empresaFiltros" finished-at="2021-02-02T16:59:44Z" duration-ms="66680" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The results in the filter aren't equal expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The results in the filter aren't equal expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.Empresas.EmpresasFiltros.filtros(EmpresasFiltros.java:54)
+	at com.timp.test.MDR.Automacoes.AutomacoesMDR2.empresaFiltros(AutomacoesMDR2.java:455)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empresaFiltros -->
+        <test-method signature="filiaisEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T16:59:44Z" name="filiaisEditar" finished-at="2021-02-02T17:05:10Z" duration-ms="325923" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5ade071c68381a5fa70ba2b313203e16
+*** Element info: {Using=xpath, value=//*[@id="right-content"]/div/div[4]/div/div/div/img}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5ade071c68381a5fa70ba2b313203e16
+*** Element info: {Using=xpath, value=//*[@id="right-content"]/div/div[4]/div/div/div/img}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:573)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseSteven.invisibilityOfElement(TestBaseSteven.java:290)
+	at com.sap.timp.pageObjectModel.MDR.Filiais.FiliaisEditarPO.editar(FiliaisEditarPO.java:59)
+	at com.timp.test.MDR.Filiais.FiliaisEditar.editar(FiliaisEditar.java:52)
+	at com.timp.test.MDR.Automacoes.AutomacoesMDR2.filiaisEditar(AutomacoesMDR2.java:472)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filiaisEditar -->
+        <test-method signature="filiaisVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T17:05:10Z" name="filiaisVisualizar" finished-at="2021-02-02T17:06:11Z" duration-ms="61269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filiaisVisualizar -->
+        <test-method signature="filiaisDetalle()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T17:06:11Z" name="filiaisDetalle" finished-at="2021-02-02T17:07:41Z" duration-ms="89664" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[As informações não são as esperadas expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: As informações não são as esperadas expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.Filiais.FiliaisDetalle.detalle(FiliaisDetalle.java:52)
+	at com.timp.test.MDR.Automacoes.AutomacoesMDR2.filiaisDetalle(AutomacoesMDR2.java:497)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filiaisDetalle -->
+        <test-method signature="hierarquiaDeCenariosDeCorreçaoCriar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T17:07:41Z" name="hierarquiaDeCenariosDeCorreçaoCriar" finished-at="2021-02-02T17:09:20Z" duration-ms="98912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hierarquiaDeCenariosDeCorreçaoCriar -->
+        <test-method signature="hierarquiaDeCenariosDeCorreçaoEditar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T17:09:20Z" name="hierarquiaDeCenariosDeCorreçaoEditar" finished-at="2021-02-02T17:11:00Z" duration-ms="99996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hierarquiaDeCenariosDeCorreçaoEditar -->
+        <test-method signature="hierarquiaDeCenariosDeCorreçaoVisualizar()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T17:11:00Z" name="hierarquiaDeCenariosDeCorreçaoVisualizar" finished-at="2021-02-02T17:12:29Z" duration-ms="88874" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O modo visualização não está ativado expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O modo visualização não está ativado expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoVisualizar.visualizar(HierarquiaDeCenariosDeCorreçaoVisualizar.java:57)
+	at com.timp.test.MDR.Automacoes.AutomacoesMDR2.hierarquiaDeCenariosDeCorreçaoVisualizar(AutomacoesMDR2.java:537)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hierarquiaDeCenariosDeCorreçaoVisualizar -->
+        <test-method signature="hierarquiaDeCenariosDeCorreçaoDetalhes()[pri:0, instance:com.timp.test.MDR.Automacoes.AutomacoesMDR2@25ce9dc4]" started-at="2021-02-02T17:12:29Z" name="hierarquiaDeCenariosDeCorreçaoDetalhes" finished-at="2021-02-02T17:13:49Z" duration-ms="79757" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[As informações não são as esperadas expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: As informações não são as esperadas expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoDetalhes.Detalhes(HierarquiaDeCenariosDeCorreçaoDetalhes.java:57)
+	at com.timp.test.MDR.Automacoes.AutomacoesMDR2.hierarquiaDeCenariosDeCorreçaoDetalhes(AutomacoesMDR2.java:549)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hierarquiaDeCenariosDeCorreçaoDetalhes -->
+      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

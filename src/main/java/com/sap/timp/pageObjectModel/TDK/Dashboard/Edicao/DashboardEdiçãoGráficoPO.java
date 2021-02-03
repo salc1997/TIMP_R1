@@ -276,10 +276,10 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
 			sleep(1000);
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);

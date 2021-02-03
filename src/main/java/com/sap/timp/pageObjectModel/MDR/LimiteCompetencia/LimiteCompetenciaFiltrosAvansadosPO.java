@@ -94,7 +94,7 @@ public class LimiteCompetenciaFiltrosAvansadosPO extends TestBaseMassiel{
 	
 	public  String  Filtros1() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("LimiteCompetencia");
 		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]"));
@@ -115,7 +115,7 @@ public class LimiteCompetenciaFiltrosAvansadosPO extends TestBaseMassiel{
 	
 	public  String  Filtros2() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("LimiteCompetencia");
 		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]"));
@@ -135,7 +135,7 @@ public class LimiteCompetenciaFiltrosAvansadosPO extends TestBaseMassiel{
 	
 	public  String  Filtros3() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("LimiteCompetencia");
 		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]"));
@@ -156,7 +156,7 @@ public class LimiteCompetenciaFiltrosAvansadosPO extends TestBaseMassiel{
 	
 	public  String  Filtros4() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("LimiteCompetencia");
 		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]"));

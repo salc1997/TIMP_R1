@@ -23,7 +23,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO extends TestBaseCr
 	@FindBy(xpath = "//div[@id=\"occurrence\"]/div/div/div[2]")
 	public WebElement ocorrencia;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//li[@id][2]")
@@ -107,7 +107,7 @@ public boolean criar() {
 		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
 		sleep(2000);
 		System.out.println(id);
 		
@@ -202,7 +202,7 @@ public boolean criar() {
 		sleep(8000);
 		sleep(8000);
 		sleep(8000);
-		
+		sleep(8000);		
 		codigocredito.click();
 		sleep(2000);
 		opcao.click();
@@ -244,11 +244,11 @@ public boolean criar() {
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
 		
 		rows = rows-1;
 		
-		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
 		
 		
 		

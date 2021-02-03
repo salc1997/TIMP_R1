@@ -79,8 +79,8 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseCristh
 		eliminar.click();
 		sleep(3000);
 		
-		ok.click();
-		sleep(3000);
+		/*ok.click();
+		sleep(3000);*/
 		
 		
 

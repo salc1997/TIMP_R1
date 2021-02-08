@@ -70,7 +70,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBaseKenssy
 	@FindBy(xpath = "//span[text()=\"0\"][1]")
 	public WebElement valorCalculadoDerechaopc;
 	
-	@FindBy(xpath = "//div[contains(@data-id,\"0-0-0\") and @data-type ]")
+	@FindBy(xpath = "//*[@id=\"formula-accordion\"]/ul/li/ul/li/ul/li/div")
 	public WebElement valorCalculadoDerechaopc1;
 	
 	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[2]/div[2]/div[1]")
@@ -240,6 +240,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBaseKenssy
 		
 		driver.navigate().refresh();
 		sleep(3000);
+	
 		waitExpectElement(mensagem);
 		sleep(2000);
 		

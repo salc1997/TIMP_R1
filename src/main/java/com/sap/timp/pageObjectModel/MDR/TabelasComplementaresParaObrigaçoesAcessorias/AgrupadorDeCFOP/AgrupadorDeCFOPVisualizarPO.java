@@ -56,6 +56,8 @@ public class AgrupadorDeCFOPVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[@id=\"startDate\"]")
 	public WebElement datavi;
 	
+	
+	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de Agrupamento\"]")
 	public WebElement codigodeagrupamento;
 	
@@ -65,7 +67,7 @@ public class AgrupadorDeCFOPVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data Inicial\"]")
 	public WebElement datainicial;
 	
-	@FindBy(xpath = "//div[ @class=\"field\" and @id=\"obligation\"]/div/div/input")
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Obrigação \"]")
 	public WebElement obrigacaoed;
 	
 	public AgrupadorDeCFOPVisualizarPO() {
@@ -132,10 +134,10 @@ public class AgrupadorDeCFOPVisualizarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+
 		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		actionsMoveToElementElement(menu1);
 		sleep(2000);
 		menu1.click();

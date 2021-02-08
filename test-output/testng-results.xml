@@ -1,14 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<testng-results total="11" passed="11" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<testng-results skipped="0" failed="0" total="3" passed="3">
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Steven
+=======
+=======
+>>>>>>> refs/heads/Cristhian
+<testng-results total="3" passed="2" failed="1" skipped="0">
+<<<<<<< HEAD
+>>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Cristhian
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="129734" started-at="2021-02-02T22:49:10Z" finished-at="2021-02-02T22:51:20Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-28T18:21:10Z" name="Default suite" finished-at="2021-01-28T18:23:38Z" duration-ms="147536">
 =======
   <suite started-at="2021-01-28T21:26:29Z" name="Default suite" finished-at="2021-01-28T21:27:55Z" duration-ms="85094">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+  <suite started-at="2021-01-28T04:44:22Z" name="Default suite" finished-at="2021-01-28T04:58:19Z" duration-ms="837074">
+>>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-01-29T18:05:50Z" name="Default suite" finished-at="2021-01-29T18:07:35Z" duration-ms="104434">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite name="Default suite" duration-ms="80832" started-at="2021-01-27T22:25:32Z" finished-at="2021-01-27T22:26:53Z">
+>>>>>>> refs/remotes/origin/Steven
+=======
+  <suite started-at="2021-01-31T23:10:33Z" name="Default suite" finished-at="2021-01-31T23:26:14Z" duration-ms="941379">
+>>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-02-02T15:06:42Z" name="Default suite" finished-at="2021-02-02T15:08:18Z" duration-ms="95866">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-02-08T11:19:41Z" name="Default suite" finished-at="2021-02-08T11:21:40Z" duration-ms="118586">
+>>>>>>> refs/heads/Cristhian
     <groups>
     </groups>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="129734" started-at="2021-02-02T22:49:10Z" finished-at="2021-02-02T22:51:20Z">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="beforeClass" is-config="true" duration-ms="11362" started-at="2021-02-02T16:49:10Z" finished-at="2021-02-02T16:49:22Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-01-28T18:21:10Z" name="Default test" finished-at="2021-01-28T18:23:38Z" duration-ms="147536">
       <class name="com.timp.test.TDK.Kpis.KpisCriar">
@@ -18,48 +93,339 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:26:30Z" name="beforeClass" finished-at="2021-01-28T18:26:42Z" duration-ms="12449" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+    <test started-at="2021-01-28T04:44:22Z" name="Default test" finished-at="2021-01-28T04:58:19Z" duration-ms="837074">
+      <class name="com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:22Z" name="beforeClass" finished-at="2021-01-27T22:44:34Z" duration-ms="12476" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-01-29T18:05:50Z" name="Default test" finished-at="2021-01-29T18:07:35Z" duration-ms="104434">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:05:50Z" name="beforeClass" finished-at="2021-01-29T12:06:07Z" duration-ms="16285" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+    <test name="Default test" duration-ms="80832" started-at="2021-01-27T22:25:32Z" finished-at="2021-01-27T22:26:53Z">
+      <class name="com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="beforeClass" is-config="true" duration-ms="11359" started-at="2021-01-27T16:25:32Z" finished-at="2021-01-27T16:25:43Z">
+>>>>>>> refs/remotes/origin/Steven
+=======
+    <test started-at="2021-01-31T23:10:33Z" name="Default test" finished-at="2021-01-31T23:26:14Z" duration-ms="941379">
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:10:33Z" name="beforeClass" finished-at="2021-01-31T20:10:50Z" duration-ms="16582" status="PASS">
+>>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-02-02T15:06:42Z" name="Default test" finished-at="2021-02-02T15:08:18Z" duration-ms="95866">
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:06:42Z" name="beforeClass" finished-at="2021-02-02T09:06:55Z" duration-ms="12681" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-02-08T11:19:41Z" name="Default test" finished-at="2021-02-08T11:21:40Z" duration-ms="118586">
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:19:41Z" name="beforeClass" finished-at="2021-02-08T08:19:57Z" duration-ms="15888" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="login" duration-ms="7100" started-at="2021-02-02T16:49:22Z" finished-at="2021-02-02T16:49:29Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:21:29Z" name="login" finished-at="2021-01-28T15:21:48Z" duration-ms="18853" status="PASS">
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:26:42Z" name="login" finished-at="2021-01-28T18:26:49Z" duration-ms="7541" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:34Z" name="login" finished-at="2021-01-27T22:44:42Z" duration-ms="7179" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:07Z" name="login" finished-at="2021-01-29T12:06:16Z" duration-ms="8920" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="ingresar" duration-ms="6559" started-at="2021-01-27T16:25:43Z" finished-at="2021-01-27T16:25:50Z">
+>>>>>>> refs/remotes/origin/Steven
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:10:50Z" name="login" finished-at="2021-01-31T20:11:02Z" duration-ms="12041" status="PASS">
+>>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:06:55Z" name="login" finished-at="2021-02-02T09:07:03Z" duration-ms="7592" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:19:57Z" name="ingresar" finished-at="2021-02-08T08:20:05Z" duration-ms="8334" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="acessarMDR" duration-ms="72034" started-at="2021-02-02T16:49:29Z" finished-at="2021-02-02T16:50:41Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:21:48Z" name="acessarTDK" finished-at="2021-01-28T15:22:15Z" duration-ms="26921" status="PASS">
 =======
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:26:49Z" name="acessarTCC" finished-at="2021-01-28T18:27:11Z" duration-ms="21861" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:42Z" name="brbEntrar" finished-at="2021-01-27T22:44:57Z" duration-ms="15231" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:16Z" name="acessarTCC" finished-at="2021-01-29T12:06:49Z" duration-ms="33169" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+=======
+>>>>>>> refs/heads/Cristhian
+        </test-method> <!-- ingresar -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="scancEntrar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="scancEntrar" duration-ms="25697" started-at="2021-01-27T16:25:50Z" finished-at="2021-01-27T16:26:16Z">
+>>>>>>> refs/remotes/origin/Steven
+=======
+        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:11:02Z" name="acessarTDK" finished-at="2021-01-31T20:11:25Z" duration-ms="23340" status="PASS">
+>>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="acessarBRE()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:07:03Z" name="acessarBRE" finished-at="2021-02-02T09:07:19Z" duration-ms="16281" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:20:05Z" name="mdrEntrar" finished-at="2021-02-08T08:20:25Z" duration-ms="20166" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
+        </test-method> <!-- acessarMDR -->
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="excluir" duration-ms="39090" started-at="2021-02-02T16:50:41Z" finished-at="2021-02-02T16:51:20Z">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         </test-method> <!-- acessarTDK -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:22:15Z" name="criar" finished-at="2021-01-28T15:23:38Z" duration-ms="83264" status="PASS">
 =======
         </test-method> <!-- acessarTCC -->
         <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:27:11Z" name="excluir" finished-at="2021-01-28T18:27:55Z" duration-ms="43229" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:06:49Z" name="excluir" finished-at="2021-01-29T12:07:35Z" duration-ms="46041" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="Editar()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:11:25Z" name="Editar" finished-at="2021-01-31T20:26:14Z" duration-ms="889359" status="FAIL">
+=======
+        </test-method> <!-- mdrEntrar -->
+        <test-method signature="sequenciaDeItemPorDocumento()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:20:25Z" name="sequenciaDeItemPorDocumento" finished-at="2021-02-08T08:21:40Z" duration-ms="74134" status="FAIL">
+>>>>>>> refs/heads/Cristhian
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
+*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CRISTHIAN-VASQU', ip: '192.168.254.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CRISTH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
+*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:573)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseSteven.invisibilityOfElement(TestBaseSteven.java:290)
+	at com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5PO.sequenciaDeItemPorDocumento(LeiautesExecucacoFuncionalidades4Pt5PO.java:364)
+	at com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5.sequenciaDeItemPorDocumento(LeiautesExecucacoFuncionalidades4Pt5.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+<<<<<<< HEAD
+>>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:07:19Z" name="criar" finished-at="2021-02-02T09:08:18Z" duration-ms="59288" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:23:38Z" name="afterClass" finished-at="2021-01-28T15:23:38Z" duration-ms="1" status="PASS">
 =======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </test-method> <!-- excluir -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="afterClass" is-config="true" duration-ms="110" started-at="2021-02-02T16:51:20Z" finished-at="2021-02-02T16:51:20Z">
+=======
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:27:55Z" name="afterClass" finished-at="2021-01-28T18:27:55Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:44:57Z" name="criarConfiguracaoExecucoes" finished-at="2021-01-27T22:46:10Z" duration-ms="72870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:46:10Z" name="criarConfiguracao" finished-at="2021-01-27T22:48:38Z" duration-ms="148183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="configurarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:48:38Z" name="configurarConfiguracao" finished-at="2021-01-27T22:50:56Z" duration-ms="138622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurarConfiguracao -->
+        <test-method signature="executar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:50:56Z" name="executar" finished-at="2021-01-27T22:52:27Z" duration-ms="90578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar -->
+        <test-method signature="resto()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:52:27Z" name="resto" finished-at="2021-01-27T22:53:52Z" duration-ms="84698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resto -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:53:52Z" name="editar" finished-at="2021-01-27T22:55:02Z" duration-ms="70440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method signature="excluirExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:55:02Z" name="excluirExecucoes" finished-at="2021-01-27T22:56:02Z" duration-ms="59756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirExecucoes -->
+        <test-method signature="excluirConfiguracoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:56:02Z" name="excluirConfiguracoes" finished-at="2021-01-27T22:57:22Z" duration-ms="79942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes -->
+        <test-method signature="excluirHierarquia()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:57:22Z" name="excluirHierarquia" finished-at="2021-01-27T22:58:19Z" duration-ms="57063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@282cb7c7]" started-at="2021-01-27T22:58:19Z" name="afterClass" finished-at="2021-01-27T22:58:19Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- scancEntrar -->
+        <test-method status="PASS" signature="filtrosAvancados()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="filtrosAvancados" duration-ms="37192" started-at="2021-01-27T16:26:16Z" finished-at="2021-01-27T16:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosAvancados -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@3a079870]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-01-27T16:26:53Z" finished-at="2021-01-27T16:26:53Z">
+>>>>>>> refs/remotes/origin/Steven
+=======
+        </test-method> <!-- Editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir@68e5eea7]" started-at="2021-01-31T20:26:14Z" name="afterClass" finished-at="2021-01-31T20:26:14Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Cristhian
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@18e36d14]" started-at="2021-02-02T09:08:18Z" name="afterClass" finished-at="2021-02-02T09:08:18Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- sequenciaDeItemPorDocumento -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:21:40Z" name="afterClass" finished-at="2021-02-08T08:21:40Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
 =======
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir@17f62e33]" started-at="2021-01-29T12:07:35Z" name="afterClass" finished-at="2021-01-29T12:07:35Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados -->
+>>>>>>> refs/remotes/origin/Steven
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir -->
+>>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
+>>>>>>> refs/heads/Cristhian
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

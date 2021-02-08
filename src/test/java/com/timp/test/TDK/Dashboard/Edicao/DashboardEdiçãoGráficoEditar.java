@@ -1,11 +1,11 @@
-package com.timp.test.TDK.Dashboard;
+package com.timp.test.TDK.Dashboard.Edicao;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
-import com.sap.timp.pageObjectModel.TDK.Dashboard.DashboardEdiçãoTabelaPO;
+import com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao.DashboardEdiçãoGráficoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,25 +13,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardEdiçãoTabela extends TestBaseMassiel{
-
+public class DashboardEdiçãoGráficoEditar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
-	DashboardEdiçãoTabelaPO dashboardEdiçãoTabelaPO;
-
-	@BeforeClass
-	public void beforeClass() {
-		driver = initializationM();
+	DashboardEdiçãoGráficoEditarPO dashboardEdiçãoGráficoEditarPO;
+  
+  @BeforeClass
+  public void beforeClass() {
+	  driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
-		 dashboardEdiçãoTabelaPO = new DashboardEdiçãoTabelaPO();
-	}
+		dashboardEdiçãoGráficoEditarPO = new DashboardEdiçãoGráficoEditarPO();
+  }
 
-	@AfterClass
-	public void afterClass() {
-	}
+  @AfterClass
+  public void afterClass() {
+  }
 
-	@Test(priority = 0)
+  @Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -40,12 +39,12 @@ public class DashboardEdiçãoTabela extends TestBaseMassiel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-
+	
 	@Test(priority = 2)
 	public void editar() {
-
-		dashboardEdiçãoTabelaPO.Editar();
-		//boolean sucesso = dashboardEdiçãoGráficoPO.Editar();
-		//assertTrue(sucesso,Criar);
+	
+		
+		boolean sucesso = dashboardEdiçãoGráficoEditarPO.Editar();
+		assertTrue(sucesso,Criar);
 	}
 }

@@ -1,35 +1,37 @@
-package com.timp.test.TDK.Dashboard;
+package com.timp.test.TDK.Dashboard.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
-import com.sap.timp.pageObjectModel.TDK.Dashboard.DashboardEdiçãoGráficoPO;
+import com.sap.timp.pageObjectModel.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutarPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
-public class DashboardEdiçãoGráfico extends TestBaseMassiel{
+public class DashboardParametrosGeraisExcecutar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
-	DashboardEdiçãoGráficoPO dashboardEdiçãoGráficoPO;
-	
+	DashboardParametrosGeraisExcecutarPO dashboardParametrosGeraisExcecutarPO;
+
   @BeforeClass
   public void beforeClass() {
-	  	driver = initializationM();
+	  driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
-		dashboardEdiçãoGráficoPO = new DashboardEdiçãoGráficoPO();
+		dashboardParametrosGeraisExcecutarPO = new DashboardParametrosGeraisExcecutarPO();
   }
 
   @AfterClass
   public void afterClass() {
   }
-
+  
   @Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -41,9 +43,15 @@ public class DashboardEdiçãoGráfico extends TestBaseMassiel{
 	}
 	
 	@Test(priority = 2)
-	public void editar() {
-	
-		boolean sucesso = dashboardEdiçãoGráficoPO.Editar();
-		assertTrue(sucesso,Criar);
+	public void Executar() {
+		
+		
+		ArrayList<Boolean> sucesso = dashboardParametrosGeraisExcecutarPO.Executar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i),"Cartão não foi adicionado");
+		}
+		
+		
 	}
+
 }

@@ -2444,6 +2444,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		dobleClickElement(selectCampoSaidaAba1OPC2);
 		sleep(1000);
 		
+		sleep(5000);
 		criar.click();
 		sleep(2000);
 		
@@ -2458,6 +2459,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			sucesso.add(false);
 		}
 		
+		sleep(9000);
 		fechar.click();
 		sleep(2000);
 		

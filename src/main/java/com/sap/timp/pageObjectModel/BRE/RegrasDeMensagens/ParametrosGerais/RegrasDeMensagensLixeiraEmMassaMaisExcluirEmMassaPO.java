@@ -302,7 +302,9 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(regrasdemensagens);
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		sleep(2000);
+
 		regrasdemensagens.click();
 		sleep(2000);
 		waitExpectElement(siguiente);
@@ -362,13 +364,8 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		sleep(2000);
-		
-		
-		//--------------------------- excluir em massa ---------------------------------
-		//waitExpectElement(mensagem);
-		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -426,13 +423,11 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		
 		sim.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");
 		sleep(2000);
-		//waitExpectElement(mensagem);
-		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

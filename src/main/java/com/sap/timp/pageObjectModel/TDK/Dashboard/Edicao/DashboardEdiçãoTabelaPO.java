@@ -117,6 +117,22 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//div[@class=\"edit-icon\"]/span[@class=\"icon icon-font-Formatting-and-Tool icon-pensil\"][1]")
 	public WebElement lapiz;
+	
+	@FindBy(xpath = "//span[text()=\"Adicionar Filtro\"]")
+	public WebElement adicionarFiltro;
+	
+	@FindBy(xpath = "//div[@class=\"filter\"][2]/div[1]/div[2]/div[1]/button")
+	public WebElement candado2;
+	
+	@FindBy(xpath = "//div[@class=\"filter\"][2]/div[1]/div[2]/div[2]/div/div[1]/div[2]")
+	public WebElement operador;
+	
+	@FindBy(xpath = "//li[@id=\"option-3\"]")
+	public WebElement operadorOPC;
+	
+	@FindBy(xpath = "//div[@class=\"filter\"][2]/div[1]/div[2]/div[4]/div/div/input")
+	public WebElement insiraFiltro2;
+	
 
 	
 	
@@ -156,7 +172,7 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 		sleep(2000);
 
 		System.out.println("---------- Editar --------- " );
-		String idRegistro =idObter1();
+		String idRegistro =idObter("dashboardsCriar");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -464,6 +480,35 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 
 		insiraFiltro.sendKeys("12");
 		insiraFiltro.sendKeys(Keys.ENTER);
+		sleep(2000);
+		
+		adicionarFiltro.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		candado2.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		operador.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		operadorOPC.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		insiraFiltro2.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		insiraFiltro2.sendKeys("0");
+		insiraFiltro2.sendKeys(Keys.ENTER);
 		sleep(2000);
 		
 		aceitar1.click();

@@ -178,7 +178,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sleep(1000);
 		}else {
 			grupodeestrutura.click();
-			sleep(1000);
+			sleep(2000);
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}

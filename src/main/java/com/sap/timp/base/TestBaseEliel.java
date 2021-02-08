@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import java.util.prefs.Preferences;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -45,7 +46,7 @@ public class TestBaseEliel extends TestBaseSteven {
 		driver.manage().window().maximize();
 
 
-		driver.get(tc2);
+		driver.get(tp1);
 
 
  
@@ -192,6 +193,146 @@ public String dataanterior() {
 	
 	public void closeSelectTypeCheckbox(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
+	}
+	
+	public void idInserir(String nome,String idRegistro) {
+		Preferences id = Preferences.userRoot();
+
+		id.put(nome, idRegistro);
+		
+	}
+	
+	public String idObter(String nome) {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong(nome, 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir1(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR1", idRegistro);
+
+	}
+
+	public String idObter1() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR1", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir2(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR2", idRegistro);
+
+	}
+
+	public String idObter2() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR2", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir3(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR3", idRegistro);
+
+	}
+
+	public String idObter3() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR3", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir4(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR4", idRegistro);
+
+	}
+
+	public String idObter4() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR4", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir5(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR5", idRegistro);
+
+	}
+
+	public String idObter5() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR5", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	
+	public void idInserir6(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR6", idRegistro);
+
+	}
+
+	public String idObter6() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR6", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
 	}
 	
 	//BRB

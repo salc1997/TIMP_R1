@@ -97,7 +97,7 @@ public class DashboardCriarCopiaPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 
-	public ArrayList<Boolean> CartaoIndicador() {
+	public ArrayList<Boolean> Copia() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

@@ -72,6 +72,15 @@ public class SubcapitalizacaoExcluirEmMassaPO extends TestBaseEliel {
 	@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
 	public WebElement excluirMassa;
 	
+	@FindBy(xpath = "//div[@id=\"1000\"]/div/label/span")
+	public WebElement opcaoempresa;
+	
+	@FindBy(xpath = "//div[@id=\"SP\"]/div/label/span")
+	public WebElement opcaouf;
+	
+	@FindBy(xpath = "//div[@id=\"1000-SP-0001\"]/div/label/span")
+	public WebElement opcaofilial;
+	
 	public SubcapitalizacaoExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
@@ -229,7 +238,7 @@ public boolean criar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
-		} else {
+		}  else if(tq1 ==true) {
 			
 			
 			//Primeiro Registro
@@ -341,6 +350,118 @@ public boolean criar() {
 			biblioteca.click();
 			
 			
+		} else {
+			//primeiro
+			empresa.click();
+			
+			sleep(2000);
+			
+			//opcao.click();
+			opcaoempresa.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(empresa);
+			sleep(2000);
+			//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
+			//sleep(3000);
+			uf.click();
+			
+			sleep(2000);
+			
+			//opcao.click();
+			opcaouf.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(uf);
+			sleep(2000);
+			//attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-select required");
+			//sleep(3000);
+			
+			filial.click();
+			
+			sleep(2000);
+			opcaofilial.click();
+			//opcao1.click();
+			
+			sleep(2000);
+			closeSelectTypeCheckbox(filial);
+			sleep(2000);
+			tipodecredor.click();
+			
+			sleep(2000);
+			
+			opcao.click();
+			
+			sleep(2000);
+			
+			divida.sendKeys("1");
+			
+			sleep(2000);
+			
+			datainicio.sendKeys(fechaActual());
+			sleep(2000);
+			novo1.click();
+			sleep(2000);
+			waitExpectElement(sim);
+			sleep(2000);
+			sim.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(3000);
+			//segundo
+			empresa.click();
+			
+			sleep(2000);
+			
+			//opcao.click();
+			opcaoempresa.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(empresa);
+			sleep(2000);
+			//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
+			//sleep(3000);
+			uf.click();
+			
+			sleep(2000);
+			
+			//opcao.click();
+			opcaouf.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(uf);
+			sleep(2000);
+			//attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-select required");
+			//sleep(3000);
+			
+			filial.click();
+			
+			sleep(2000);
+			opcaofilial.click();
+			//opcao1.click();
+			
+			sleep(2000);
+			closeSelectTypeCheckbox(filial);
+			sleep(2000);
+			tipodecredor.click();
+			
+			sleep(2000);
+			
+			opcao.click();
+			
+			sleep(2000);
+			
+			divida.sendKeys("1");
+			
+			sleep(2000);
+			
+			datainicio.sendKeys(fechaActual());
+			sleep(2000);
+			novo1.click();
+			sleep(2000);
+			waitExpectElement(sim);
+			sleep(2000);
+			sim.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			biblioteca.click();
 		}
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

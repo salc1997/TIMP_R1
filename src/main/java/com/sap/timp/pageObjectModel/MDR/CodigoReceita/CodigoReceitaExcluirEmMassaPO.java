@@ -19,7 +19,7 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
+	@FindBy(xpath = "//li[@id][text()=\"ICMS\"]")
 	public WebElement tributoO;
 	
 	@FindBy(xpath = "//li[text()=\"ICMS\"]")
@@ -27,6 +27,9 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//li[@class=\"list-item\" and @id and string()][1]")
 	public WebElement opcao;
+	
+	@FindBy(xpath = "//li[@id][2]")
+	public WebElement opcao1;
 	
 	@FindBy(xpath = "//div[@id=\"state\"]/div/div/div[2]")
 	public WebElement ufOrigem;

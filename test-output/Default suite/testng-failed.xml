@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,15 +46,18 @@
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar -->
 =======
+=======
+>>>>>>> refs/heads/Eliel
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Editar">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM510.RegistroM510Editar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="editar"/>
+          <include name="Editar"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Editar -->
 >>>>>>> refs/remotes/origin/Eliel
 =======
@@ -92,6 +96,9 @@
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM510.RegistroM510Editar -->
+>>>>>>> refs/heads/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

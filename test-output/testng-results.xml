@@ -40,6 +40,7 @@
   </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="129734" started-at="2021-02-02T22:49:10Z" finished-at="2021-02-02T22:51:20Z">
 =======
 <<<<<<< HEAD
@@ -71,8 +72,12 @@
 =======
   <suite started-at="2021-02-08T11:19:41Z" name="Default suite" finished-at="2021-02-08T11:21:40Z" duration-ms="118586">
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-02-08T20:16:55Z" name="Default suite" finished-at="2021-02-08T20:19:10Z" duration-ms="134990">
+>>>>>>> refs/heads/Eliel
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="129734" started-at="2021-02-02T22:49:10Z" finished-at="2021-02-02T22:51:20Z">
@@ -124,9 +129,15 @@
       <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:19:41Z" name="beforeClass" finished-at="2021-02-08T08:19:57Z" duration-ms="15888" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-02-08T20:16:55Z" name="Default test" finished-at="2021-02-08T20:19:10Z" duration-ms="134990">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:16:55Z" name="beforeClass" finished-at="2021-02-08T17:17:08Z" duration-ms="12866" status="PASS">
+>>>>>>> refs/heads/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="login" duration-ms="7100" started-at="2021-02-02T16:49:22Z" finished-at="2021-02-02T16:49:29Z">
@@ -160,10 +171,14 @@
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:19:57Z" name="ingresar" finished-at="2021-02-08T08:20:05Z" duration-ms="8334" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:17:08Z" name="login" finished-at="2021-02-08T17:17:16Z" duration-ms="7966" status="PASS">
+>>>>>>> refs/heads/Eliel
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="acessarMDR" duration-ms="72034" started-at="2021-02-02T16:49:29Z" finished-at="2021-02-02T16:50:41Z">
 =======
@@ -199,8 +214,12 @@
 =======
         <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:20:05Z" name="mdrEntrar" finished-at="2021-02-08T08:20:25Z" duration-ms="20166" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:17:16Z" name="acessarTCC" finished-at="2021-02-08T17:17:31Z" duration-ms="15394" status="PASS">
+>>>>>>> refs/heads/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- acessarMDR -->
@@ -215,7 +234,10 @@
 <<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:22:15Z" name="criar" finished-at="2021-01-28T15:23:38Z" duration-ms="83264" status="PASS">
 =======
+=======
+>>>>>>> refs/heads/Eliel
         </test-method> <!-- acessarTCC -->
+<<<<<<< HEAD
         <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Excluir@7d0b7e3c]" started-at="2021-01-28T18:27:11Z" name="excluir" finished-at="2021-01-28T18:27:55Z" duration-ms="43229" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
 =======
@@ -304,8 +326,12 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:17:31Z" name="criar" finished-at="2021-02-08T17:19:10Z" duration-ms="98747" status="PASS">
+>>>>>>> refs/heads/Eliel
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -315,7 +341,10 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Eliel
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@3c0be339]" started-at="2021-01-28T15:23:38Z" name="afterClass" finished-at="2021-01-28T15:23:38Z" duration-ms="1" status="PASS">
 =======
@@ -386,9 +415,13 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
         </test-method> <!-- sequenciaDeItemPorDocumento -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@68e5eea7]" started-at="2021-02-08T08:21:40Z" name="afterClass" finished-at="2021-02-08T08:21:40Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:19:10Z" name="afterClass" finished-at="2021-02-08T17:19:10Z" duration-ms="2" status="PASS">
+>>>>>>> refs/heads/Eliel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir -->
@@ -426,6 +459,9 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar -->
+>>>>>>> refs/heads/Eliel
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

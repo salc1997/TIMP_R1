@@ -28,6 +28,14 @@ public class SubcapitalizacaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//li[@id][3]")
 	public WebElement opcao1;
 	
+	@FindBy(xpath = "//div[@id=\"1000\"]/div/label/span")
+	public WebElement opcaoempresa;
+	
+	@FindBy(xpath = "//div[@id=\"SP\"]/div/label/span")
+	public WebElement opcaouf;
+	
+	@FindBy(xpath = "//div[@id=\"1000-SP-0001\"]/div/label/span")
+	public WebElement opcaofilial;
 	
 	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div[2]")
 	public WebElement uf;
@@ -103,28 +111,34 @@ public class SubcapitalizacaoCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		opcao.click();
+		//opcao.click();
+		opcaoempresa.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
-		sleep(3000);
+		closeSelectTypeCheckbox(empresa);
+		sleep(2000);
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
+		//sleep(3000);
 		uf.click();
 		
 		sleep(2000);
 		
-		opcao.click();
-		
+		//opcao.click();
+		opcaouf.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-select required");
-		sleep(3000);
+		closeSelectTypeCheckbox(uf);
+		sleep(2000);
+		//attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-select required");
+		//sleep(3000);
 		
 		filial.click();
 		
 		sleep(2000);
-		
-		opcao1.click();
+		opcaofilial.click();
+		//opcao1.click();
 		
 		sleep(2000);
-		
+		closeSelectTypeCheckbox(filial);
+		sleep(2000);
 		tipodecredor.click();
 		
 		sleep(2000);

@@ -50,7 +50,8 @@ public class CodigoAjustesContribuiçoesCreditosEditarPO extends TestBaseFernando
 		sleep(2000);
 	
 		// Obtener el id del primer registro
-		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		//String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		String idRegistro =idObter("codigoajustescontribuicoescreditos");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));	
 		System.out.println(idRegistro);		

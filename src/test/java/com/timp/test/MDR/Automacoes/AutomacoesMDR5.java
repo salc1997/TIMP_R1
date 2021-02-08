@@ -306,7 +306,8 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 1,dependsOnMethods = "cadastroMotivosReaberturaCriar" )
+	//@Test(priority = 1,dependsOnMethods = "cadastroMotivosReaberturaCriar" )
+	@Test(priority = 1)
 	public void cadastroMotivosReaberturaEditar() {
 
 		cadastroMotivosReaberturaEditar = new CadastroMotivosReaberturaEditar();
@@ -318,7 +319,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 2, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 2)
 	public void cadastroMotivosReaberturaVisualizar() {
 
 		cadastroMotivosReaberturaVisualizar = new CadastroMotivosReaberturaVisualizar();
@@ -331,7 +332,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	}
 	
 
-	@Test(priority = 3, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 3)
 	public void cadastroMotivosReaberturaDetalhes() {
 
 		cadastroMotivosReaberturaDetalhes = new CadastroMotivosReaberturaDetalhes();
@@ -343,7 +344,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 4, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 4)
 	public void cadastroMotivosReaberturaExcluir() {
 
 		cadastroMotivosReaberturaExcluir = new CadastroMotivosReaberturaExcluir();
@@ -356,7 +357,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 	}
 	
-	@Test(priority = 5, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 5)
 	public void cadastroMotivosReaberturaExcluirEmMassa() {
 
 		cadastroMotivosReaberturaExcluirEmMassa = new CadastroMotivosReaberturaExcluirEmMassa();
@@ -391,7 +392,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 7, dependsOnMethods = "cadastroNotaFiscalCriar")
+	@Test(priority = 7)
 	public void cadastroNotaFiscalEditar() {
 
 		cadastroNotaFiscalEditar = new CadastroNotaFiscalEditar();
@@ -403,7 +404,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 8, dependsOnMethods = "cadastroNotaFiscalCriar")
+	@Test(priority = 8)
 	public void cadastroNotaFiscalExcluir() {
 
 		cadastroNotaFiscalExcluir = new CadastroNotaFiscalExcluir();
@@ -414,7 +415,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		cadastroNotaFiscalExcluir.afterClass();
 }
 
-	@Test(priority = 9, dependsOnMethods = "cadastroNotaFiscalCriar")
+	@Test(priority = 9)
 	public void cadastroNotaFiscalExcluirEmMassa() {
 
 		cadastroNotaFiscalExcluirEmMassa = new CadastroNotaFiscalExcluirEmMassa();
@@ -448,7 +449,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 13, dependsOnMethods = "statusOcorrenciaFiscalCriar")
+	@Test(priority = 13)
 	public void statusOcorrenciaFiscalEditar() {
 
 		statusOcorrenciaFiscalEditar = new StatusOcorrenciaFiscalEditar();
@@ -460,7 +461,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 14, dependsOnMethods = "statusOcorrenciaFiscalCriar")
+	@Test(priority = 14)
 	public void statusOcorrenciaFiscalExcluir() {
 
 		statusOcorrenciaFiscalExcluir = new StatusOcorrenciaFiscalExcluir();
@@ -492,7 +493,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 21, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 21)
 	public void parametrosOficializacaoLivrosEditar() {
 
 		parametrosOficializacaoLivrosEditar = new ParametrosOficializacaoLivrosEditar();
@@ -504,7 +505,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 22, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 22)
 	public void parametrosOficializacaoLivrosVisualizar() {
 
 		parametrosOficializacaoLivrosVisualizar = new ParametrosOficializacaoLivrosVisualizar();
@@ -516,7 +517,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 23, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 23)
 	public void parametrosOficializacaoLivrosDetalhes() {
 
 		parametrosOficializacaoLivrosDetalhes = new ParametrosOficializacaoLivrosDetalhes();
@@ -528,7 +529,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 24, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 24)
 	public void parametrosOficializacaoLivrosExcluir() {
 
 		parametrosOficializacaoLivrosExcluir = new ParametrosOficializacaoLivrosExcluir();
@@ -559,7 +560,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 27, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 27)
 	public void tabelaDeApoioECFEditar() {
 
 		tabelaDeApoioECFEditar = new TabelaDeApoioECFEditar();
@@ -571,7 +572,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 28, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 28)
 	public void tabelaDeApoioECFVisualizar() {
 
 		tabelaDeApoioECFVisualizar = new TabelaDeApoioECFVisualizar();
@@ -583,7 +584,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 29, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 29)
 	public void tabelaDeApoioECFNovaTabelaAtualizar() {
 
 		tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
@@ -595,7 +596,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 30, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 30)
 	public void tabelaDeApoioECFNovaTabelaNova() {
 
 		tabelaDeApoioECFNovaTabelaECF = new TabelaDeApoioECFNovaTabelaECF();
@@ -607,7 +608,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 31, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 31)
 	public void tabelaDeApoioECFNovaVersaoLeiaute() {
 
 		tabelaDeApoioECFNovaVersaoLeiaute = new TabelaDeApoioECFNovaVersaoLeiaute();
@@ -619,7 +620,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 32, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 32)
 	public void tabelaDeApoioECFExcluirMasas() {
 
 		tabelaDeApoioECFExcluirMasas = new TabelaDeApoioECFExcluirMasas();
@@ -631,7 +632,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 33, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 33)
 	public void tabelaDeApoioECFExcluir() {
 
 		tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
@@ -663,7 +664,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 36, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 36)
 	public void statusParaBCEEditar() {
 
 		statusParaBCEEditar = new StatusParaBCEEditar();
@@ -675,7 +676,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 37, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 37)
 	public void statusParaBCEVisualizar() {
 
 		statusParaBCEVisualizar = new StatusParaBCEVisualizar();
@@ -687,7 +688,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 38, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 38)
 	public void statusParaBCEDetalhes() {
 
 		statusParaBCEDetalhes = new StatusParaBCEDetalhes();
@@ -699,7 +700,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 39, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 39)
 	public void statusParaBCEExcluir() {
 
 		statusParaBCEExcluir = new StatusParaBCEExcluir();
@@ -732,7 +733,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	}
 	
 
-	@Test(priority = 42, dependsOnMethods = "municipioCriar")
+	@Test(priority = 42)
 	public void municipioEditar() {
 
 		municipioEditar = new MunicipioEditar();
@@ -744,7 +745,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 43, dependsOnMethods = "municipioCriar")
+	@Test(priority = 43)
 	public void municipioVisualizar() {
 
 		municipioVisualizar = new MunicipioVisualizar();
@@ -756,7 +757,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 44, dependsOnMethods = "municipioCriar")
+	@Test(priority = 44)
 	public void municipioDetalhes() {
 
 		municipioDetalhes = new MunicipioDetalhes();
@@ -769,7 +770,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 45, dependsOnMethods = "municipioCriar")
+	@Test(priority = 45)
 	public void municipioExcluir() {
 
 		municipioExcluir = new MunicipioExcluir();
@@ -801,7 +802,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 49, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 49)
 	public void cadastroFornecedorcerEditar() {
 
 		cadastroFornecedorEditar = new CadastroFornecedorEditar();
@@ -813,7 +814,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 50, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 50)
 	public void cadastroFornecedorcerVisualizar() {
 
 		cadastroFornecedorVisualizar = new CadastroFornecedorVisualizar();
@@ -825,7 +826,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 51, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 51)
 	public void cadastroFornecedorFiltroId() {
 
 		cadastroFornecedorFiltroId = new CadastroFornecedorFiltroId();
@@ -837,7 +838,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 52, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 52)
 	public void cadastroFornecedorcerExcluir() {
 
 		cadastroFornecedorExcluir = new CadastroFornecedorExcluir();
@@ -923,7 +924,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 
-		@Test(priority = 70, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 70)
 		public void relacionamentoEntreQuadrosEditar() {
 
 			relacionamentoEntreQuadrosEditar = new RelacionamentoEntreQuadrosEditar();
@@ -935,7 +936,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 		
-		@Test(priority = 71, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 71)
 		public void relacionamentoEntreQuadrosFiltroID() {
 
 			relacionamentoEntreQuadrosFiltroID = new RelacionamentoEntreQuadrosFiltroID();
@@ -949,7 +950,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 
 
-		@Test(priority = 72, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 72)
 		public void relacionamentoEntreQuadrosExcluir() {
 
 			relacionamentoEntreQuadrosExcluir = new RelacionamentoEntreQuadrosExcluir();
@@ -961,7 +962,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 		
-		@Test(priority = 73, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 73)
 		public void relacionamentoEntreQuadrosExcluirMassa() {
 
 			relacionamentoEntreQuadrosExcluirMassa = new RelacionamentoEntreQuadrosExcluirMassa();
@@ -980,7 +981,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
 		
-	
+		/*
 
 		@Test(priority = 75)
 		public void parteDoCorpoAtingidaCriar() {
@@ -1796,7 +1797,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 		
-		
+		*/
 		
 		
 		

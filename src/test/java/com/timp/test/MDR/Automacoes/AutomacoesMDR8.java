@@ -91,6 +91,7 @@ public class AutomacoesMDR8 {
 	CadastroDeObrasEditar cadastroDeObrasEditar;
 	CadastroDeObrasExcluir cadastroDeObrasExcluir;
 	CadastroDeObrasExcluirEmMassa cadastroDeObrasExcluirEmMassa;
+	
 	// Cadastro Específico do INSS (CEI) > Cadastro de Obras
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
 	ConfiguracoesFundoSocialEditar configuracoesFundoSocialEditar;
@@ -143,6 +144,7 @@ public class AutomacoesMDR8 {
 
 	// Determinacao De Relevancia De Tarefa > Cadastro De Código De Regras
 	CadastroDeCódigoDeRegrasCriar cadastroDeCódigoDeRegrasCriar;
+	
 	// Determinacao Relevancia Tarefa Motivo Reabertura > Determinacion Relevancia
 	// Por Motivo
 	DeterminacionRelevanciaPorMotivoCriar determinacionRelevanciaPorMotivoCriar;
@@ -203,7 +205,7 @@ public class AutomacoesMDR8 {
 	ParametrosParaCategoriaDeIRFExcluirEmMasa parametrosParaCategoriaDeIRFExcluirEmMasa;
 	// 0 --- 7
 
-	/*@Test(priority = 0)
+	@Test(priority = 0)
 	public void regraDeReaberturaCriar() {
 
 		System.out.println(
@@ -881,7 +883,7 @@ public class AutomacoesMDR8 {
 		s1250DetAquisiçãoEditar.acessarMDR();
 		s1250DetAquisiçãoEditar.editar();
 		s1250DetAquisiçãoEditar.afterClass();
-	}*/
+	}
 
 	@Test(priority = 72)
 	

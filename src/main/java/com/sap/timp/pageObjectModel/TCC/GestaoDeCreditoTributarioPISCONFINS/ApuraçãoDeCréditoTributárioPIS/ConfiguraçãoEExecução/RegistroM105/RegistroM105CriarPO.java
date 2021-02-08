@@ -1,6 +1,7 @@
 package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM105;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -56,12 +57,54 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"cstPis\"]/div/div/input")
 	public WebElement CódigoSituaçãoTributáriaReferenteAOPIS;
 	
+	@FindBy(xpath = "//div[@id=\"vlBcPisTot\"]/div/div[2]")
+	public WebElement ValorTotalBaseCálculoEscrituradaDocumentosOperações;
+	
+	@FindBy(xpath = "//div[@id=\"vlBcPisCum\"]/div/div[2]")
+	public WebElement ParcelaValorTotalBaseCálculoInformada;
+	
+	@FindBy(xpath = "//div[@id=\"vlBcPisNc\"]/div/div[2]")
+	public WebElement ValorTotalBaseCálculoCréditoVinculadaReceitasIncidênciaCumulativa;
+	
+	@FindBy(xpath = "//div[@id=\"vlBcPis\"]/div/div[2]")
+	public WebElement ValorBaseCálculoCréditoVinculadaTipoCreditoEscrituraM500;
+	
+	@FindBy(xpath = "//div[@id=\"quantBcPisTot\"]/div/div[2]")
+	public WebElement QuantidadeTotalBaseCálculoCréditoApuradoUnidadeMedidaProduto;
+	
+	@FindBy(xpath = "//div[@id=\"quantBcPis\"]/div/div[2]")
+	public WebElement ParcelaBaseCálculoCréditoQuantidadeVinculadaTipoCréditoEscrituradoM500;
+	
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement OPC11;
+	
+	@FindBy(xpath = "//li[@id=\"1\"]")
+	public WebElement OPC1;
+	
+	@FindBy(xpath = "//li[@id=\"01\"]")
+	public WebElement OPC;
+	
+	@FindBy(xpath = "//span[text()=\"Gravar\"]")
+	public WebElement gravar;
+	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement sim;
+	
+	@FindBy(xpath = "//Span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
+
+	
 	public RegistroM105CriarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 
-	public void criar() {
+	public boolean criar() {
 		String url = driver.getCurrentUrl();
 
 		boolean tp1  = false;
@@ -153,6 +196,194 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 			
 		}
 		
+		CódigoBaseCálculoCréditoApuradoPeríodo.click();
+		sleep(2000);
 		
+		if (tc2 == true) {
+
+
+			OPC11.click();
+			sleep(2000);
+
+		}else if (tq1==true ) {
+			OPC.click();
+			sleep(2000);
+			
+		}else {
+			OPC11.click();
+			sleep(2000);
+		}
+		
+		CódigoSituaçãoTributáriaReferenteAOPIS.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		CódigoSituaçãoTributáriaReferenteAOPIS.sendKeys("23");
+		CódigoSituaçãoTributáriaReferenteAOPIS.sendKeys(Keys.ENTER);
+		sleep(4000);
+		
+		ValorTotalBaseCálculoEscrituradaDocumentosOperações.click();
+		sleep(2000);
+		
+		if (tc2 == true) {
+
+
+			OPC11.click();
+			sleep(2000);
+
+		}else if (tq1==true ) {
+			OPC1.click();
+			sleep(2000);
+			
+		}else {
+			OPC11.click();
+			sleep(2000);
+		}
+		
+		ParcelaValorTotalBaseCálculoInformada.click();
+		sleep(2000);
+		
+		if (tc2 == true) {
+
+
+			OPC11.click();
+			sleep(2000);
+
+		}else if (tq1==true ) {
+			OPC1.click();
+			sleep(2000);
+			
+		}else {
+			OPC11.click();
+			sleep(2000);
+		}
+		
+		ValorTotalBaseCálculoCréditoVinculadaReceitasIncidênciaCumulativa.click();
+		sleep(2000);
+		
+		if (tc2 == true) {
+
+
+			OPC11.click();
+			sleep(2000);
+
+		}else if (tq1==true ) {
+			OPC1.click();
+			sleep(2000);
+			
+		}else {
+			OPC11.click();
+			sleep(2000);
+		}
+		
+		ValorBaseCálculoCréditoVinculadaTipoCreditoEscrituraM500.click();
+		sleep(2000);
+		
+		if (tc2 == true) {
+
+
+			OPC11.click();
+			sleep(2000);
+
+		}else if (tq1==true ) {
+			OPC1.click();
+			sleep(2000);
+			
+		}else {
+			OPC11.click();
+			sleep(2000);
+		}
+		
+		QuantidadeTotalBaseCálculoCréditoApuradoUnidadeMedidaProduto.click();
+		sleep(2000);
+		
+		if (tc2 == true) {
+
+
+			OPC11.click();
+			sleep(2000);
+
+		}else if (tq1==true ) {
+			OPC1.click();
+			sleep(2000);
+			
+		}else {
+			OPC11.click();
+			sleep(2000);
+		}
+		
+		ParcelaBaseCálculoCréditoQuantidadeVinculadaTipoCréditoEscrituradoM500.click();
+		sleep(2000);
+		
+		if (tc2 == true) {
+
+
+			OPC11.click();
+			sleep(2000);
+
+		}else if (tq1==true ) {
+			OPC1.click();
+			sleep(2000);
+			
+		}else {
+			OPC11.click();
+			sleep(2000);
+		}
+		
+		gravar.click();
+		sleep(2000);
+		
+		sim.click();
+		sleep(6000);
+		
+		waitExpectElement(biblioteca);
+		sleep(2000);
+		
+		biblioteca.click();
+		sleep(4000);
+		
+		
+		
+		if (tc2 == true) {
+
+
+			/*no.click();
+			sleep(2000);*/
+
+		}else if (tq1==true ) {
+			no.click();
+			sleep(2000);
+			
+		}else {
+			/*no.click();
+			sleep(2000);*/
+		}
+		
+		sleep(4000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		idInserir("ApuraçãodeCréditoTributárioPISRegistroM105",id2);
+		int idD = convertToInt(idRegistro);
+		int id2D = convertToInt(id2);
+		
+		System.out.println(idD);
+		System.out.println(id2D);
+		
+		boolean sucesso = false;
+		if (idD < id2D) {
+			sucesso = true;
+		}
+		
+		System.out.println(sucesso);
+		
+		return sucesso;
 	}
 }

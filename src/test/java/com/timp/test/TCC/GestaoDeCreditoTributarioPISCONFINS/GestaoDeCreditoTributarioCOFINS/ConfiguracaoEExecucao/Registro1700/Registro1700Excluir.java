@@ -30,6 +30,7 @@ public class Registro1700Excluir extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
   @Test(priority = 0)
@@ -47,7 +48,9 @@ public class Registro1700Excluir extends TestBaseMassiel{
 
 	@Test(priority = 2)
 	public void excluir() {
-		registro1700ExcluirPO.Excluir();
+		boolean sucesso = registro1700ExcluirPO.Excluir();
+
+		assertTrue(sucesso, Criar);
 		
 	}
 }

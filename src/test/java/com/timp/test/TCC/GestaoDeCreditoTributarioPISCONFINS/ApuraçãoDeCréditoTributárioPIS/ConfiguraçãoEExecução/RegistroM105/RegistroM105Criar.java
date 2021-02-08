@@ -28,6 +28,7 @@ public class RegistroM105Criar  extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
   @Test(priority = 0)
@@ -46,9 +47,9 @@ public class RegistroM105Criar  extends TestBaseMassiel{
 	@Test(priority = 2)
 	public void criar() {
 
-		registroM105CriarPO.criar();
-		/*boolean sucesso = registro1700CriarPO.criar();
+		
+		boolean sucesso = registroM105CriarPO.criar();
 
-		assertTrue(sucesso, Criar);*/
+		assertTrue(sucesso, Criar);
 	}
 }

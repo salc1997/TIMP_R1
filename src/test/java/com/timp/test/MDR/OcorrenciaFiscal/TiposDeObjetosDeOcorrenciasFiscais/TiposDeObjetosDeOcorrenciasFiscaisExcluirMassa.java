@@ -30,7 +30,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa extends TestBaseCris
 
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
   @Test(priority = 0)

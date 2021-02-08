@@ -32,6 +32,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltroAbansado extends TestBaseMassie
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test(priority = 0)

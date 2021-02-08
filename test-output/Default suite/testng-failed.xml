@@ -3,16 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Automacoes.AutomacoesMDR2">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Editar">
         <methods>
-          <include name="determinacaoDeTipoDeCondicaoCriarEditar"/>
-          <include name="filiaisDetalle"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoVisualizar"/>
-          <include name="filiaisEditar"/>
-          <include name="hierarquiaDeCenariosDeCorreçaoDetalhes"/>
-          <include name="empresaFiltros"/>
+          <include name="beforeClass"/>
+          <include name="Editar"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Automacoes.AutomacoesMDR2 -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Editar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

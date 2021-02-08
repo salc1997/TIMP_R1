@@ -311,7 +311,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		
 		/*no.click();
 		sleep(2000);*/
-		
+		waitExpectElement(nuevo);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

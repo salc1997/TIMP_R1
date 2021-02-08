@@ -639,7 +639,7 @@ public class AutomacoesMDR18 extends TestBaseSteven{
 	}
 	
 	
-	@Test(priority = 121)
+	@Test(priority = 122)
 	public void movimentoSCANCExcluirMasas() {
 
 		movimentoSCANCExcluirMasas = new MovimentoSCANCExcluirMasas();
@@ -654,7 +654,7 @@ public class AutomacoesMDR18 extends TestBaseSteven{
 
 	
 
-	@Test(priority = 122)
+	@Test(priority = 121)
 	public void movimentoSCANCExcluir() {
 
 		movimentoSCANCExcluir = new MovimentoSCANCExcluir();

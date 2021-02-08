@@ -97,7 +97,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@id][text()=\"7520 - TA-TESTE  (Complemento BRE - N4) - 2\"]")
 	public WebElement opcaoleiautecomparacaotq1;
 	
-	@FindBy(xpath = "//li[@id][text()=\"575 - TA-TESTE (Complemento BRE - N4) - 2\"]")
+	@FindBy(xpath = "//li[@id][text()=\"575 - TA-TESTE  (Complemento BRE - N4) - 2\"]")
 	public WebElement opcaoleiautecomparacaotp1;
 	
 	@FindBy(xpath = "//li[@id][text()=\"143 - TA-TESTE (Complemento BRE - N4) - 2\"]")

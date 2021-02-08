@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
 =======
@@ -15,20 +18,29 @@
 >>>>>>> refs/heads/Fernando
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir">
 =======
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
+>>>>>>> refs/heads/Cristhian
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="Editar"/>
+=======
+          <include name="sequenciaDeItemPorDocumento"/>
+>>>>>>> refs/heads/Cristhian
           <include name="beforeClass"/>
 =======
           <include name="criar"/>
 >>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar -->
@@ -77,6 +89,9 @@
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

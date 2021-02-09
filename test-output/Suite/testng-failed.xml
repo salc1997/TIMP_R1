@@ -1,64 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" name="Failed suite [Suite]" parallel="tests">
-  <test name="Prueba2(failed)" parallel="tests">
+<suite name="Failed suite [Suite]" parallel="classes">
+  <test name="Prueba1(failed)" parallel="classes">
     <classes>
-      <class name="com.timp.test.BRB.testNg.FiltrosAvançados">
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar">
         <methods>
           <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.testNg.FiltrosAvançados -->
-      <class name="com.timp.test.BRB.testNg.Paginacion">
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar">
         <methods>
-          <include name="paginacion"/>
+          <include name="afterClass"/>
+          <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.testNg.Paginacion -->
-      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
-        <methods>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
-    </classes>
-  </test> <!-- Prueba2(failed) -->
-  <test name="Prueba1(failed)" parallel="tests">
-    <classes>
-      <class name="com.timp.test.BRB.testNg.FiltrosAvançados">
-        <methods>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.FiltrosAvançados -->
-      <class name="com.timp.test.BRB.testNg.Paginacion">
-        <methods>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.Paginacion -->
-      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="novoRelatorio"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar -->
     </classes>
   </test> <!-- Prueba1(failed) -->
-  <test name="Prueba3(failed)" parallel="tests">
-    <classes>
-      <class name="com.timp.test.BRB.testNg.FiltrosAvançados">
-        <methods>
-          <include name="filtrosAvanzados"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.FiltrosAvançados -->
-      <class name="com.timp.test.BRB.testNg.Paginacion">
-        <methods>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.Paginacion -->
-      <class name="com.timp.test.BRB.testNg.NovoRelatorio">
-        <methods>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.testNg.NovoRelatorio -->
-    </classes>
-  </test> <!-- Prueba3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -99,11 +99,11 @@ public class TabelaDeCreditosPorObrigacaoCriarPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodecredito.sendKeys("7");
+		codigodecredito.sendKeys("9");
 		
 		sleep(2000);
 		
-		descricaocredito.sendKeys("Credito");
+		descricaocredito.sendKeys("Credito9");
 		
 		sleep(2000);
 		

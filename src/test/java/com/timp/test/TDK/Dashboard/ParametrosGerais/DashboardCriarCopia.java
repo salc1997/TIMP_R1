@@ -43,8 +43,8 @@ public class DashboardCriarCopia extends TestBaseEliel{
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
-		ArrayList<Boolean> sucesso = dashboardCriarCopiaPO.CartaoIndicador();
+	public void copia() {
+		ArrayList<Boolean> sucesso = dashboardCriarCopiaPO.Copia();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i),Criar);
 		}

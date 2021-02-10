@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,7 +14,10 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,8 +46,11 @@
 =======
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="112145" started-at="2021-02-05T20:15:27Z" finished-at="2021-02-05T20:17:19Z">
 =======
@@ -85,8 +92,12 @@
   <suite started-at="2021-02-08T20:16:55Z" name="Default suite" finished-at="2021-02-08T20:19:10Z" duration-ms="134990">
 >>>>>>> refs/heads/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-02-02T21:09:02Z" name="Default suite" finished-at="2021-02-02T21:10:19Z" duration-ms="77922">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="112145" started-at="2021-02-05T20:15:27Z" finished-at="2021-02-05T20:17:19Z">
       <class name="com.timp.test.TPC.ParâmetrosGeraisDetalhes">
@@ -150,9 +161,15 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:16:55Z" name="beforeClass" finished-at="2021-02-08T17:17:08Z" duration-ms="12866" status="PASS">
 >>>>>>> refs/heads/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-02-02T21:09:02Z" name="Default test" finished-at="2021-02-02T21:10:19Z" duration-ms="77922">
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:02Z" name="beforeClass" finished-at="2021-02-02T15:09:13Z" duration-ms="11828" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.TPC.ParâmetrosGeraisDetalhes@3a079870]" name="ingresar" duration-ms="17112" started-at="2021-02-05T14:15:43Z" finished-at="2021-02-05T14:16:00Z">
 =======
@@ -194,12 +211,19 @@
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:17:08Z" name="login" finished-at="2021-02-08T17:17:16Z" duration-ms="7966" status="PASS">
 >>>>>>> refs/heads/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:13Z" name="login" finished-at="2021-02-02T15:09:20Z" duration-ms="6998" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir@3a079870]" name="acessarMDR" duration-ms="72034" started-at="2021-02-02T16:49:29Z" finished-at="2021-02-02T16:50:41Z">
@@ -244,8 +268,12 @@
         <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:17:16Z" name="acessarTCC" finished-at="2021-02-08T17:17:31Z" duration-ms="15394" status="PASS">
 >>>>>>> refs/heads/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:20Z" name="acessarMDR" finished-at="2021-02-02T15:09:43Z" duration-ms="22680" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- ingresarTPC -->
         <test-method status="PASS" signature="detalhes()[pri:0, instance:com.timp.test.TPC.ParâmetrosGeraisDetalhes@3a079870]" name="detalhes" duration-ms="48561" started-at="2021-02-05T14:16:30Z" finished-at="2021-02-05T14:17:19Z">
@@ -361,8 +389,13 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
         <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:17:31Z" name="criar" finished-at="2021-02-08T17:19:10Z" duration-ms="98747" status="PASS">
 >>>>>>> refs/heads/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- acessarMDR -->
+        <test-method signature="Visualizar()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:43Z" name="Visualizar" finished-at="2021-02-02T15:10:19Z" duration-ms="36399" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- detalhes -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.TPC.ParâmetrosGeraisDetalhes@3a079870]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-02-05T14:17:19Z" finished-at="2021-02-05T14:17:19Z">
@@ -455,9 +488,14 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar@7d0b7e3c]" started-at="2021-02-08T17:19:10Z" name="afterClass" finished-at="2021-02-08T17:19:10Z" duration-ms="2" status="PASS">
 >>>>>>> refs/heads/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- Visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:10:19Z" name="afterClass" finished-at="2021-02-02T15:10:19Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TPC.ParâmetrosGeraisDetalhes -->
 =======
@@ -503,6 +541,9 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar -->
 >>>>>>> refs/heads/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -90,7 +90,7 @@ public class InclusaoDeCamposMarDetalhesPO extends TestBaseEliel{
 		
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 = idObter("inclusaodecamposmar");
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));

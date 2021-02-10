@@ -32,6 +32,7 @@ public class FiliaisDetalle extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
   @Test(priority = 0)

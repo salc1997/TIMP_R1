@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,7 +17,10 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -48,8 +52,11 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="112145" started-at="2021-02-05T20:15:27Z" finished-at="2021-02-05T20:17:19Z">
@@ -95,8 +102,12 @@
 =======
   <suite started-at="2021-02-02T21:09:02Z" name="Default suite" finished-at="2021-02-02T21:10:19Z" duration-ms="77922">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-02-09T23:10:46Z" name="Default suite" finished-at="2021-02-09T23:12:08Z" duration-ms="81959">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="112145" started-at="2021-02-05T20:15:27Z" finished-at="2021-02-05T20:17:19Z">
@@ -166,9 +177,15 @@
       <class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:02Z" name="beforeClass" finished-at="2021-02-02T15:09:13Z" duration-ms="11828" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-02-09T23:10:46Z" name="Default test" finished-at="2021-02-09T23:12:08Z" duration-ms="81959">
+      <class name="com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:10:46Z" name="beforeClass" finished-at="2021-02-09T17:11:08Z" duration-ms="22431" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.TPC.ParâmetrosGeraisDetalhes@3a079870]" name="ingresar" duration-ms="17112" started-at="2021-02-05T14:15:43Z" finished-at="2021-02-05T14:16:00Z">
@@ -214,6 +231,9 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:13Z" name="login" finished-at="2021-02-02T15:09:20Z" duration-ms="6998" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:11:08Z" name="login" finished-at="2021-02-09T17:11:21Z" duration-ms="12384" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -223,6 +243,7 @@
 =======
 >>>>>>> refs/heads/Fernando
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -271,8 +292,12 @@
 =======
         <test-method signature="acessarMDR()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:20Z" name="acessarMDR" finished-at="2021-02-02T15:09:43Z" duration-ms="22680" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="TBDEntrar()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:11:21Z" name="TBDEntrar" finished-at="2021-02-09T17:11:52Z" duration-ms="31357" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- ingresarTPC -->
@@ -393,8 +418,13 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
         </test-method> <!-- acessarMDR -->
         <test-method signature="Visualizar()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:09:43Z" name="Visualizar" finished-at="2021-02-02T15:10:19Z" duration-ms="36399" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- TBDEntrar -->
+        <test-method signature="detalle()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:11:52Z" name="detalle" finished-at="2021-02-09T17:12:08Z" duration-ms="15770" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- detalhes -->
@@ -492,9 +522,14 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
         </test-method> <!-- Visualizar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@18e36d14]" started-at="2021-02-02T15:10:19Z" name="afterClass" finished-at="2021-02-02T15:10:19Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- detalle -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:12:08Z" name="afterClass" finished-at="2021-02-09T17:12:08Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TPC.ParâmetrosGeraisDetalhes -->
@@ -544,6 +579,9 @@ Session ID: 31bcf9a0590fbe15ef0c8050e81dcb3f
 =======
       </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

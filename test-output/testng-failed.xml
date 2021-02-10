@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,14 +55,21 @@
 =======
 =======
 >>>>>>> refs/heads/Eliel
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM510.RegistroM510Editar">
 =======
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasVisualizar">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
           <include name="visualizar"/>
           <include name="beforeClass"/>
 <<<<<<< HEAD
@@ -120,6 +128,13 @@
 =======
       </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasVisualizar -->
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="detalle"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

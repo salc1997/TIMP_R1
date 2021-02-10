@@ -243,21 +243,7 @@ public class RegistroM300CriarPO extends TestBaseMassiel{
 		sleep(4000);
 		
 		
-		
-		if (tc2 == true) {
-
-
-			/*no.click();
-			sleep(2000);*/
-
-		}else if (tq1==true ) {
-			/*no.click();
-			sleep(2000);*/
-			
-		}else {
-			/*no.click();
-			sleep(2000);*/
-		}
+	
 		
 		sleep(4000);
 		waitExpectElement(siguiente);

@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-05T23:21:20Z" name="Default suite" finished-at="2021-02-05T23:22:43Z" duration-ms="82528">
+  <suite started-at="2021-02-09T23:10:46Z" name="Default suite" finished-at="2021-02-09T23:12:08Z" duration-ms="81959">
     <groups>
     </groups>
-    <test started-at="2021-02-05T23:21:20Z" name="Default test" finished-at="2021-02-05T23:22:43Z" duration-ms="82528">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Excluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Excluir@17f62e33]" started-at="2021-02-05T17:21:20Z" name="beforeClass" finished-at="2021-02-05T17:21:36Z" duration-ms="16275" status="PASS">
+    <test started-at="2021-02-09T23:10:46Z" name="Default test" finished-at="2021-02-09T23:12:08Z" duration-ms="81959">
+      <class name="com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:10:46Z" name="beforeClass" finished-at="2021-02-09T17:11:08Z" duration-ms="22431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Excluir@17f62e33]" started-at="2021-02-05T17:21:36Z" name="login" finished-at="2021-02-05T17:21:46Z" duration-ms="9744" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:11:08Z" name="login" finished-at="2021-02-09T17:11:21Z" duration-ms="12384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Excluir@17f62e33]" started-at="2021-02-05T17:21:46Z" name="acessarTCC" finished-at="2021-02-05T17:22:03Z" duration-ms="16672" status="PASS">
+        <test-method signature="TBDEntrar()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:11:21Z" name="TBDEntrar" finished-at="2021-02-09T17:11:52Z" duration-ms="31357" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarTCC -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Excluir@17f62e33]" started-at="2021-02-05T17:22:03Z" name="excluir" finished-at="2021-02-05T17:22:43Z" duration-ms="39808" status="PASS">
+        </test-method> <!-- TBDEntrar -->
+        <test-method signature="detalle()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:11:52Z" name="detalle" finished-at="2021-02-09T17:12:08Z" duration-ms="15770" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Excluir@17f62e33]" started-at="2021-02-05T17:22:43Z" name="afterClass" finished-at="2021-02-05T17:22:43Z" duration-ms="1" status="PASS">
+        </test-method> <!-- detalle -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes@17f62e33]" started-at="2021-02-09T17:12:08Z" name="afterClass" finished-at="2021-02-09T17:12:08Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuraçãoDeCréditoTributárioPIS.ConfiguraçãoEExecução.RegistroM230.RegistroM230Excluir -->
+      </class> <!-- com.timp.test.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosDetalhes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

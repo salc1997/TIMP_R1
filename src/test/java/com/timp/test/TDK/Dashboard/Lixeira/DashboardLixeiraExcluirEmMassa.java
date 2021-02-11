@@ -1,11 +1,11 @@
-package com.timp.test.TDK.Kpis;
+package com.timp.test.TDK.Dashboard.Lixeira;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
-import com.sap.timp.pageObjectModel.TDK.Kpis.KpisLixeiraExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.TDK.Dashboard.Lixeira.DashboardLixeiraExcluirEmMassaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,17 +13,17 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
+public class DashboardLixeiraExcluirEmMassa extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
-	KpisLixeiraExcluirEmMassaPO kpisLixeiraExcluirEmMassaPO;
-	
+	DashboardLixeiraExcluirEmMassaPO dashboardLixeiraExcluirEmMassaPO;
+  
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();
-			loginTC = new LoginTC();
-			acessarTDKPO = new AcessarTDKPO();
-			kpisLixeiraExcluirEmMassaPO = new KpisLixeiraExcluirEmMassaPO();
+		loginTC = new LoginTC();
+		acessarTDKPO = new AcessarTDKPO();
+		dashboardLixeiraExcluirEmMassaPO = new DashboardLixeiraExcluirEmMassaPO();
   }
 
   @AfterClass
@@ -42,17 +42,13 @@ public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
 	
 	@Test(priority = 2)
 	public void excluir() {
-		boolean sucesso = kpisLixeiraExcluirEmMassaPO.comparar();
+		boolean sucesso = dashboardLixeiraExcluirEmMassaPO.comparar();
 
 		assertTrue(sucesso, Criar);
 		
-		boolean sucesso2 = kpisLixeiraExcluirEmMassaPO.ExcluirMasas();
+		boolean sucesso2 = dashboardLixeiraExcluirEmMassaPO.ExcluirMasas();
 
 		assertTrue(sucesso2, Criar);
 	}
-		
-		
-		
-		
 
 }

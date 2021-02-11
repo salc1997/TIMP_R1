@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TDK.Kpis;
+package com.sap.timp.pageObjectModel.TDK.Kpis.Lixeira;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

@@ -1,11 +1,11 @@
-package com.timp.test.TDK.Dashboard;
+package com.timp.test.TDK.Kpis.Lixeira;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
-import com.sap.timp.pageObjectModel.TDK.Dashboard.DashboardLixeiraEmMassaPO;
+import com.sap.timp.pageObjectModel.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,17 +13,17 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardLixeiraEmMassa extends TestBaseMassiel{
-  
+public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
-	DashboardLixeiraEmMassaPO dashboardLixeiraEmMassaPO;
+	KpisLixeiraExcluirEmMassaPO kpisLixeiraExcluirEmMassaPO;
+	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();
-		loginTC = new LoginTC();
-		acessarTDKPO = new AcessarTDKPO();
-		dashboardLixeiraEmMassaPO = new DashboardLixeiraEmMassaPO();
+			loginTC = new LoginTC();
+			acessarTDKPO = new AcessarTDKPO();
+			kpisLixeiraExcluirEmMassaPO = new KpisLixeiraExcluirEmMassaPO();
   }
 
   @AfterClass
@@ -41,17 +41,18 @@ public class DashboardLixeiraEmMassa extends TestBaseMassiel{
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
+	public void excluir() {
+		boolean sucesso = kpisLixeiraExcluirEmMassaPO.comparar();
+
+		assertTrue(sucesso, Criar);
 		
-		boolean sucesso = dashboardLixeiraEmMassaPO .criar();
-		assertTrue(sucesso,Criar);
-		
-		boolean sucesso2 = dashboardLixeiraEmMassaPO .ExcluirMasas();
-		assertTrue(sucesso2,Criar);
-		
-		boolean sucesso3 = dashboardLixeiraEmMassaPO .comparar();
-		assertTrue(sucesso3,Criar);
-		
+		boolean sucesso2 = kpisLixeiraExcluirEmMassaPO.ExcluirMasas();
+
+		assertTrue(sucesso2, Criar);
 	}
+		
+		
+		
+		
 
 }

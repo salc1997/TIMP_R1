@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-11T04:27:22Z" name="Default suite" finished-at="2021-02-11T04:29:59Z" duration-ms="157496">
+  <suite started-at="2021-02-11T18:04:27Z" name="Default suite" finished-at="2021-02-11T18:08:26Z" duration-ms="239349">
     <groups>
     </groups>
-    <test started-at="2021-02-11T04:27:22Z" name="Default test" finished-at="2021-02-11T04:29:59Z" duration-ms="157496">
-      <class name="com.timp.test.TDK.Dashboard.DashboardLixeiraExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Dashboard.DashboardLixeiraExcluirEmMassa@17f62e33]" started-at="2021-02-10T22:27:22Z" name="beforeClass" finished-at="2021-02-10T22:28:11Z" duration-ms="49714" status="PASS">
+    <test started-at="2021-02-11T18:04:27Z" name="Default test" finished-at="2021-02-11T18:08:26Z" duration-ms="239349">
+      <class name="com.timp.test.TDK.Kpis.KpisCriarCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriarCopia@76b1e9b8]" started-at="2021-02-11T12:04:27Z" name="beforeClass" finished-at="2021-02-11T12:04:48Z" duration-ms="21531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Dashboard.DashboardLixeiraExcluirEmMassa@17f62e33]" started-at="2021-02-10T22:28:11Z" name="login" finished-at="2021-02-10T22:28:28Z" duration-ms="16323" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriarCopia@76b1e9b8]" started-at="2021-02-11T12:04:48Z" name="login" finished-at="2021-02-11T12:04:56Z" duration-ms="7877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Dashboard.DashboardLixeiraExcluirEmMassa@17f62e33]" started-at="2021-02-10T22:28:28Z" name="acessarTDK" finished-at="2021-02-10T22:29:15Z" duration-ms="47460" status="PASS">
+        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriarCopia@76b1e9b8]" started-at="2021-02-11T12:04:56Z" name="acessarTDK" finished-at="2021-02-11T12:05:20Z" duration-ms="23831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarTDK -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.TDK.Dashboard.DashboardLixeiraExcluirEmMassa@17f62e33]" started-at="2021-02-10T22:29:15Z" name="excluir" finished-at="2021-02-10T22:29:59Z" duration-ms="43980" status="PASS">
+        <test-method signature="criarCopia()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriarCopia@76b1e9b8]" started-at="2021-02-11T12:05:20Z" name="criarCopia" finished-at="2021-02-11T12:08:26Z" duration-ms="186088" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.DashboardLixeiraExcluirEmMassa@17f62e33]" started-at="2021-02-10T22:29:59Z" name="afterClass" finished-at="2021-02-10T22:29:59Z" duration-ms="0" status="PASS">
+        </test-method> <!-- criarCopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriarCopia@76b1e9b8]" started-at="2021-02-11T12:08:26Z" name="afterClass" finished-at="2021-02-11T12:08:26Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TDK.Dashboard.DashboardLixeiraExcluirEmMassa -->
+      </class> <!-- com.timp.test.TDK.Kpis.KpisCriarCopia -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

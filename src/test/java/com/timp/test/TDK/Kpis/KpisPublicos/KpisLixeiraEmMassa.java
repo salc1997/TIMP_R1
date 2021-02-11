@@ -1,11 +1,11 @@
-package com.timp.test.TDK.Kpis;
+package com.timp.test.TDK.Kpis.KpisPublicos;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
-import com.sap.timp.pageObjectModel.TDK.Kpis.KpisLixeiraEmMassaPO;
+import com.sap.timp.pageObjectModel.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassaPO;
 
 import org.testng.annotations.BeforeClass;
 

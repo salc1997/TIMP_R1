@@ -1,6 +1,8 @@
-package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505;
+package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM400;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,14 +11,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505EditarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM400.RegistroM400ExcluirPO;
 
-public class RegitroM505Editar extends TestBaseEliel {
+public class RegistroM400Excluir extends TestBaseEliel {
  
-	
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	RegistroM505EditarPO registroM505EditarPO;
+	RegistroM400ExcluirPO registroM400ExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -24,7 +25,7 @@ public class RegitroM505Editar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registroM505EditarPO = new RegistroM505EditarPO();
+		registroM400ExcluirPO = new RegistroM400ExcluirPO();
 	}
 
 	@AfterClass
@@ -46,12 +47,14 @@ public class RegitroM505Editar extends TestBaseEliel {
 	}
 
 	@Test(priority = 2)
-	public void Editar() {
+	public void excluir() {
 
-		boolean sucesso = registroM505EditarPO.editar();
+		ArrayList<Boolean> sucesso = registroM400ExcluirPO.excluir();
 
-		assertTrue(sucesso, Editar);
-	}	
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Eliminado);
+		}
+	}
 	
 	
 }

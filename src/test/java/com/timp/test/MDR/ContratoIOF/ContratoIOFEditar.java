@@ -31,23 +31,16 @@ public class ContratoIOFEditar extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void editar() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void editar() {
 
 		 boolean sucesso = 	contratoIOFEditarPO.editar();
 

@@ -36,7 +36,7 @@ public class AjusteDeTransferenciaExcluirEmMasa extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//  driver.close();
+		driver.close();
 	}
 	
 	@Test(priority = 0)
@@ -50,10 +50,14 @@ public class AjusteDeTransferenciaExcluirEmMasa extends TestBaseSteven {
 	
 	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 		
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
 		
+
 		boolean sucesso = ajustesDeTransferenciaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);

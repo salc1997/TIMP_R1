@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="classes">
-  <test name="Prueba1(failed)" parallel="classes">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa">
         <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
+          <include name="excluir"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar -->
-      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar -->
-      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa -->
     </classes>
-  </test> <!-- Prueba1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

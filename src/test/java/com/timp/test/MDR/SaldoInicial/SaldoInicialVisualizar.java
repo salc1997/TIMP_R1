@@ -33,20 +33,13 @@ public class SaldoInicialVisualizar extends TestBaseKenssy {
  		driver.close();
  	}
 
- 	@Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
 
- 	}
-
- 	@Test(priority = 1)
- 	public void acessarMDR() {
- 		acessarMDRPO.acessarMDR();
- 	}
-
- 	@Test(priority = 2)
+ 	@Test()
   public void VisualizarSaldoInicial() {
- 		//saldoInicialVisualizarPO.VisualizarSaldoInicial();
+
+		loginTC.login();
+
+		acessarMDRPO.acessarMDR();
  		
  		ArrayList<Boolean> sucesso = saldoInicialVisualizarPO.VisualizarSaldoInicial();
 

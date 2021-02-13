@@ -28,23 +28,19 @@ public class NotasDeclararAnexoIIIEditar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void ingresar() {
-		loginTC.login();
-	}
+
   
-  @Test(priority = 1)
-  public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
-  
-  
-  @Test(priority = 2)
+  @Test()
   public void editar() {
+	  
+		loginTC.login();
+
+		accesarMDRPO.acessarMDR();
 	
-	//  notasDeclararAnexoIIIEditarPO.Editar();
+
 	  boolean sucesso = notasDeclararAnexoIIIEditarPO.Editar();
 	  assertTrue(sucesso, Editar);
 	  

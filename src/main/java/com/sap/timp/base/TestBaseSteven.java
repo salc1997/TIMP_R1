@@ -4,8 +4,10 @@ package com.sap.timp.base;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.sql.Time;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -48,6 +50,8 @@ public class TestBaseSteven {
 	public WebDriver initialization() {
 
 		WebDriver driver;
+		
+		
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
@@ -90,7 +94,7 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tq1);
 
 		return driver;
 	}
@@ -142,10 +146,10 @@ public class TestBaseSteven {
 	
 	public void invisibilityOfElementOverlay() {
 		
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 360);
+		
 		sleep(3000);
-		
-		
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"overlay loader dark\"]")));
 		sleep(2000);
 
@@ -236,7 +240,7 @@ public class TestBaseSteven {
 	}
 
 	public void waitExpectXpath(String locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 
@@ -268,7 +272,7 @@ public class TestBaseSteven {
 	}
 
 	public void waitExpectElement(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 
@@ -285,20 +289,20 @@ public class TestBaseSteven {
 	}
 
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 300000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 
 	}
 
 	public void attributeToBeXpath(String locator, String attribute, String value) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 
 		wait.until(ExpectedConditions.attributeToBe(By.xpath(locator), attribute, value));
 	}
 
 	public void attributeToBeElement(WebElement element, String attribute, String value) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 
 		wait.until(ExpectedConditions.attributeToBe(element, attribute, value));
 	}
@@ -409,13 +413,13 @@ public class TestBaseSteven {
 	}
 
 	public void attributoNotToBeEmptyElement(WebElement element, String attribute) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 
 		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, attribute));
 	}
 
 	public void attributoNotToBeEmptyXpath(String xpath, String attribute) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 
 		wait.until(ExpectedConditions.attributeToBeNotEmpty(driver.findElement(By.xpath(xpath)), attribute));
 	}

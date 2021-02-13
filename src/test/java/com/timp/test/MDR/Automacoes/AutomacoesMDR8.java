@@ -332,35 +332,7 @@ public class AutomacoesMDR8 {
 		System.out.println("-------------------Cadastro De Obras Fim-------------------------");
 	}
 
-	//// 13-------18
-
-	@Test(priority = 13)
-	public void configuracaoFundoSocailCriar() {
-
-		System.out.println("----Configurações de Fundo Social-------------");
-
-		configuracaoFundoSocailCriar = new ConfiguracaoFundoSocailCriar();
-		configuracaoFundoSocailCriar.beforeClass();
-		configuracaoFundoSocailCriar.login();
-		configuracaoFundoSocailCriar.acessarMDR();
-		configuracaoFundoSocailCriar.criar();
-		configuracaoFundoSocailCriar.afterClass();
-
-	}
-
-	@Test(priority = 14, dependsOnMethods = "configuracaoFundoSocailCriar")
-	public void configuracoesFundoSocialEditar() {
-
-		configuracoesFundoSocialEditar = new ConfiguracoesFundoSocialEditar();
-		configuracoesFundoSocialEditar.beforeClass();
-		configuracoesFundoSocialEditar.ingresar();
-		configuracoesFundoSocialEditar.ingresarMDR();
-		configuracoesFundoSocialEditar.editar();
-		configuracoesFundoSocialEditar.afterClass();
-
-	}
-
-	// 19------------24
+	
 
 	// 24 ---------30
 
@@ -464,49 +436,6 @@ public class AutomacoesMDR8 {
 
 	// 42
 
-	@Test(priority = 42)
-	public void cadastroCondiçaoExcluirMasas() {
-
-		System.out.println("---- Cadastro Condicao-------------");
-
-		cadastroCondiçaoExcluirMasas = new CadastroCondiçaoExcluirMasas();
-		cadastroCondiçaoExcluirMasas.beforeClass();
-		cadastroCondiçaoExcluirMasas.login();
-		cadastroCondiçaoExcluirMasas.acessarMDR();
-		cadastroCondiçaoExcluirMasas.criar();
-		cadastroCondiçaoExcluirMasas.afterClass();
-
-	}
-
-	// 43
-	@Test(priority = 43)
-	public void responsavelMovimientoExcluirMasas() {
-
-		System.out.println("---- Responsavel Movimiento -------------");
-
-		responsavelMovimientoExcluirMasas = new ResponsavelMovimientoExcluirMasas();
-		responsavelMovimientoExcluirMasas.beforeClass();
-		responsavelMovimientoExcluirMasas.login();
-		responsavelMovimientoExcluirMasas.acessarMDR();
-		responsavelMovimientoExcluirMasas.criar();
-		responsavelMovimientoExcluirMasas.afterClass();
-
-	}
-
-	// 44
-	@Test(priority = 44)
-	public void instituicaoExcluirMasas() {
-
-		System.out.println("----  institucao  -------------");
-
-		instituicaoExcluirMasas = new InstituicaoExcluirMasas();
-		instituicaoExcluirMasas.beforeClass();
-		instituicaoExcluirMasas.login();
-		instituicaoExcluirMasas.acessarMDR();
-		instituicaoExcluirMasas.criar();
-		instituicaoExcluirMasas.afterClass();
-
-	}
 
 	// 45
 

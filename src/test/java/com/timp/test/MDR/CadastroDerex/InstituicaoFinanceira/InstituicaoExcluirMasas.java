@@ -14,44 +14,40 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.remote.NewSessionPayload;
 import org.testng.annotations.AfterClass;
 
-public class InstituicaoExcluirMasas extends TestBaseMassiel{
-	
+public class InstituicaoExcluirMasas extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InstituicaoExcluirMasasPO instituicaoExcluirMasasPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	 driver = initializationM();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	instituicaoExcluirMasasPO = new InstituicaoExcluirMasasPO();
-  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		instituicaoExcluirMasasPO = new InstituicaoExcluirMasasPO();
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void criar() {
+
+		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-		
-		
 		boolean sucesso = instituicaoExcluirMasasPO.criar();
 		assertTrue(sucesso, Criar);
-		
+
+	}
+
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
 		boolean sucesso2 = instituicaoExcluirMasasPO.InstituicaoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
 	}

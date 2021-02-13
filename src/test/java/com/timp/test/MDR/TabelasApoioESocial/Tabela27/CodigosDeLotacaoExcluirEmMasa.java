@@ -36,24 +36,27 @@ public class CodigosDeLotacaoExcluirEmMasa extends TestBaseSteven {
 		  driver.close();
 	}
 	
-	@Test(priority = 0)
-	public void login() {
-		  loginTC.login();
-	}
-	
-	@Test(priority = 1)
-	public void acessarMDR() {
-		 accesarMDR.acessarMDR();
-	
-	}
-	
-	@Test(priority = 2)
-	public void excluir() {
+
+	@Test()
+	public void criar() {
+		
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
 		
 		
 		boolean sucesso = codigosDeLotacaoExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+		
+	}
+	
+	
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
 		boolean sucesso2 = codigosDeLotacaoExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
 		

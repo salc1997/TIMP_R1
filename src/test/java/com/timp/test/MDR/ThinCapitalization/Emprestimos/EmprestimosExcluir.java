@@ -15,34 +15,28 @@ public class EmprestimosExcluir extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	EmprestimosExcluirPO emprestimosExcluirPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  emprestimosExcluirPO = new EmprestimosExcluirPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		emprestimosExcluirPO = new EmprestimosExcluirPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void excluirEmprestimos() {
-	  boolean sucesso = emprestimosExcluirPO.excluirEmprestimos();
-	  assertTrue(sucesso, Editar);
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void excluirEmprestimos() {
+		
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
+		
+		boolean sucesso = emprestimosExcluirPO.excluirEmprestimos();
+		assertTrue(sucesso, Editar);
+	}
 }

@@ -32,23 +32,18 @@ public class AssociaçãoCodigoAjusteVisualizar extends TestBaseFernando{
 	  public void afterClass() {
 		  driver.close();
 	  }
-	  
-	  @Test(priority = 0)
-	  public void ingresar() {
-		  loginTC.login();
-	  }
-	  
-	  @Test(priority = 1)
-	  public void ingresarMDR() {
-		  accesarMDRPO.acessarMDR();
-	  }
 	  		
-	  @Test(priority = 2) 
-	  public void visualizarAssociaçãoCodigoAjuste() { 		  
-		ArrayList<Boolean> sucesso = associaçãoCodigoAjusteVisualizarPO.visualizarAssociaçãoCodigoAjuste();
+	  @Test() 
+	  public void visualizarAssociaçãoCodigoAjuste() { 	
+		  
+		  loginTC.login();  
+		  
+		  accesarMDRPO.acessarMDR();
+		  
+		  ArrayList<Boolean> sucesso = associaçãoCodigoAjusteVisualizarPO.visualizarAssociaçãoCodigoAjuste();
 
-		for (int i = 0; i < sucesso.size(); i++) {
+		  for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
-		}
+		  }
 	  }		 
 }

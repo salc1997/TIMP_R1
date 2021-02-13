@@ -9,13 +9,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteCriarPO;
 //import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteCriarPO;
 
 public class ICMSSTTransporteCriar extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	// ICMSSTTransporteCriarPO icmsstTransporteCriarPO;
+	ICMSSTTransporteCriarPO icmsstTransporteCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,7 +24,7 @@ public class ICMSSTTransporteCriar extends TestBaseEliel {
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		// icmsstTransporteCriarPO = new ICMSSTTransporteCriarPO();
+		icmsstTransporteCriarPO = new ICMSSTTransporteCriarPO();
 	}
 
 	@AfterClass
@@ -31,24 +32,16 @@ public class ICMSSTTransporteCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void criar() {
+
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-
-		// boolean sucesso = icmsstTransporteCriarPO.criar();
-		// assertTrue(sucesso, semAcesso);
+		boolean sucesso = icmsstTransporteCriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 
 	}
 

@@ -3,13 +3,15 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TDK.Kpis.KpisCriarCopia">
+      <class name="com.timp.test.TDK.Dashboard.Lixeira.LixeiraFiltroId">
         <methods>
-          <include name="afterClass"/>
+          <include name="acessarTDK"/>
+          <include name="filtro"/>
           <include name="beforeClass"/>
-          <include name="criarCopia"/>
+          <include name="login"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TDK.Kpis.KpisCriarCopia -->
+      </class> <!-- com.timp.test.TDK.Dashboard.Lixeira.LixeiraFiltroId -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

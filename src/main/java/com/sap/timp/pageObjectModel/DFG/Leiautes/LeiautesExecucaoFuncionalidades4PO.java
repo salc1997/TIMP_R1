@@ -1110,12 +1110,6 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		
 	}
 	
-	
-	
-	
-	
-	
-	
 	//BLOCO 2 - REGISTRO 2
 	
 	public ArrayList<Boolean> campoFixo() {

@@ -409,6 +409,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 		public WebElement pastaLexeiraH;
 		
 		
+	
+		
+		
 		public FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO() {
 			PageFactory.initElements(driver, this);
 		}
@@ -1339,6 +1342,12 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			sleep(2000);
 			campoLinhaO5.click();
 			sleep(2000);
+			waitExpectElement(sim);
+			sleep(2000);
+			
+			sim.click();
+			sleep(2000);
+			
 			
 			formula.click();
 			sleep(3000);
@@ -1378,6 +1387,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 				dobleClickElement(selectBCB12);
 				sleep(1000);
 			}
+			
 			
 			
 			caixaFormula.sendKeys("/56");

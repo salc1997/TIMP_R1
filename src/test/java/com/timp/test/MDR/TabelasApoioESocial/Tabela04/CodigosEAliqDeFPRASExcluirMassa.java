@@ -30,7 +30,7 @@ public class CodigosEAliqDeFPRASExcluirMassa extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -41,16 +41,23 @@ public class CodigosEAliqDeFPRASExcluirMassa extends TestBaseFernando{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test(priority = 0)
 	public void criar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = codigosEAliqDeFPRASExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 1)
 	public void excluirMassa() {
-		boolean sucesso = codigosEAliqDeFPRASExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso, Criar);
+		
+		
+		
+		
+		boolean sucesso1 = codigosEAliqDeFPRASExcluirMassaPO.exluirMassa();
+		assertTrue(sucesso1, Criar);
 	}
 }

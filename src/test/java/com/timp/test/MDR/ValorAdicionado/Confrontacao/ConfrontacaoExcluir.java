@@ -31,6 +31,7 @@ public class ConfrontacaoExcluir extends TestBaseMassiel {
   public void afterClass() {
 	  driver.close();
   }
+  /*
   @Test(priority = 0)
   public void ingresar() {
 		loginTC.login();
@@ -40,11 +41,13 @@ public class ConfrontacaoExcluir extends TestBaseMassiel {
   public void ingresarMDR() {
 		accesarMDRPO.acessarMDR();
 	}
-  
-  @Test(priority = 2)
+  */
+  @Test()
   public void Excluir() {
 	  
-	 
+	  loginTC.login();
+	  accesarMDRPO.acessarMDR();
+		
 	  boolean sucesso = confrontacaoExcluirPO.Excluir();
 	  assertTrue(sucesso, Editar);
 	

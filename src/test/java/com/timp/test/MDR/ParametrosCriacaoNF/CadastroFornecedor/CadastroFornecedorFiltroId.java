@@ -33,9 +33,9 @@ public class CadastroFornecedorFiltroId extends TestBaseKathy {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -47,10 +47,13 @@ public class CadastroFornecedorFiltroId extends TestBaseKathy {
 
 		acessarMDRPO.acessarMDR();
 
-	}
+	}*/
 
-	@Test(priority = 2)
+	@Test()
 	public void filtroId() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> empresa = cadastroFornecedorFiltroIdPO.filtroEmpresa();
 

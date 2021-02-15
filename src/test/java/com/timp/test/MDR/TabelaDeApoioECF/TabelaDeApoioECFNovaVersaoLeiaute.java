@@ -33,7 +33,7 @@ public class TabelaDeApoioECFNovaVersaoLeiaute extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,10 +46,11 @@ public class TabelaDeApoioECFNovaVersaoLeiaute extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void novaTabela() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = tabelaDeApoioECFNovaVersaoLeiautePO.novaTabela();
 		assertTrue(sucesso, Criar);
 

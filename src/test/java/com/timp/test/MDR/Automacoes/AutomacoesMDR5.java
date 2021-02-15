@@ -299,8 +299,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroMotivosReaberturaCriar = new CadastroMotivosReaberturaCriar();
 		cadastroMotivosReaberturaCriar.beforeClass();
-		cadastroMotivosReaberturaCriar.login();
-		cadastroMotivosReaberturaCriar.acessarMDR();
+	
 		cadastroMotivosReaberturaCriar.criar();
 		cadastroMotivosReaberturaCriar.afterClass();
 
@@ -312,8 +311,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroMotivosReaberturaEditar = new CadastroMotivosReaberturaEditar();
 		cadastroMotivosReaberturaEditar.beforeClass();
-		cadastroMotivosReaberturaEditar.login();
-		cadastroMotivosReaberturaEditar.acessarMDR();
 		cadastroMotivosReaberturaEditar.editar();
 		cadastroMotivosReaberturaEditar.afterClass();
 
@@ -324,8 +321,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroMotivosReaberturaVisualizar = new CadastroMotivosReaberturaVisualizar();
 		cadastroMotivosReaberturaVisualizar.beforeClass();
-		cadastroMotivosReaberturaVisualizar.login();
-		cadastroMotivosReaberturaVisualizar.acessarMDR();
+	
 		cadastroMotivosReaberturaVisualizar.visualizar();
 		cadastroMotivosReaberturaVisualizar.afterClass();
 
@@ -337,8 +333,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroMotivosReaberturaDetalhes = new CadastroMotivosReaberturaDetalhes();
 		cadastroMotivosReaberturaDetalhes.beforeClass();
-		cadastroMotivosReaberturaDetalhes.login();
-		cadastroMotivosReaberturaDetalhes.acessarMDR();
+
 		cadastroMotivosReaberturaDetalhes.detalhes();
 		cadastroMotivosReaberturaDetalhes.afterClass();
 
@@ -349,8 +344,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroMotivosReaberturaExcluir = new CadastroMotivosReaberturaExcluir();
 		cadastroMotivosReaberturaExcluir.beforeClass();
-		cadastroMotivosReaberturaExcluir.login();
-		cadastroMotivosReaberturaExcluir.acessarMDR();
 		cadastroMotivosReaberturaExcluir.excluir();
 		cadastroMotivosReaberturaExcluir.afterClass();
 
@@ -362,8 +355,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroMotivosReaberturaExcluirEmMassa = new CadastroMotivosReaberturaExcluirEmMassa();
 		cadastroMotivosReaberturaExcluirEmMassa.beforeClass();
-		cadastroMotivosReaberturaExcluirEmMassa.login();
-		cadastroMotivosReaberturaExcluirEmMassa.acessarMDR();
 		cadastroMotivosReaberturaExcluirEmMassa.criar();
 		cadastroMotivosReaberturaExcluirEmMassa.afterClass();
 		
@@ -385,8 +376,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroNotaFiscalCriar = new CadastroNotaFiscalCriar();
 		cadastroNotaFiscalCriar.beforeClass();
-		cadastroNotaFiscalCriar.login();
-		cadastroNotaFiscalCriar.acessarMDR();
 		cadastroNotaFiscalCriar.criar();
 		cadastroNotaFiscalCriar.afterClass();
 
@@ -397,8 +386,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroNotaFiscalEditar = new CadastroNotaFiscalEditar();
 		cadastroNotaFiscalEditar.beforeClass();
-		cadastroNotaFiscalEditar.login();
-		cadastroNotaFiscalEditar.acessarMDR();
 		cadastroNotaFiscalEditar.editar();
 		cadastroNotaFiscalEditar.afterClass();
 
@@ -409,8 +396,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroNotaFiscalExcluir = new CadastroNotaFiscalExcluir();
 		cadastroNotaFiscalExcluir.beforeClass();
-		cadastroNotaFiscalExcluir.login();
-		cadastroNotaFiscalExcluir.acessarMDR();
+
 		cadastroNotaFiscalExcluir.excluir();
 		cadastroNotaFiscalExcluir.afterClass();
 }
@@ -420,8 +406,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroNotaFiscalExcluirEmMassa = new CadastroNotaFiscalExcluirEmMassa();
 		cadastroNotaFiscalExcluirEmMassa.beforeClass();
-		cadastroNotaFiscalExcluirEmMassa.ingresar();
-		cadastroNotaFiscalExcluirEmMassa.mdrEntrar();
 		cadastroNotaFiscalExcluirEmMassa.excluirEmMassa();
 		cadastroNotaFiscalExcluirEmMassa.afterClass();
 		
@@ -442,8 +426,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusOcorrenciaFiscalCriar = new StatusOcorrenciaFiscalCriar();
 		statusOcorrenciaFiscalCriar.beforeClass();
-		statusOcorrenciaFiscalCriar.login();
-		statusOcorrenciaFiscalCriar.acessarMDR();
 		statusOcorrenciaFiscalCriar.criar();
 		statusOcorrenciaFiscalCriar.afterClass();
 
@@ -454,8 +436,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusOcorrenciaFiscalEditar = new StatusOcorrenciaFiscalEditar();
 		statusOcorrenciaFiscalEditar.beforeClass();
-		statusOcorrenciaFiscalEditar.login();
-		statusOcorrenciaFiscalEditar.acessarMDR();
 		statusOcorrenciaFiscalEditar.editar();
 		statusOcorrenciaFiscalEditar.afterClass();
 
@@ -466,8 +446,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusOcorrenciaFiscalExcluir = new StatusOcorrenciaFiscalExcluir();
 		statusOcorrenciaFiscalExcluir.beforeClass();
-		statusOcorrenciaFiscalExcluir.login();
-		statusOcorrenciaFiscalExcluir.acessarMDR();
 		statusOcorrenciaFiscalExcluir.excluir();
 		statusOcorrenciaFiscalExcluir.afterClass();
 
@@ -486,8 +464,8 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		parametrosOficializacaoLivrosCriar = new ParametrosOficializacaoLivrosCriar();
 		parametrosOficializacaoLivrosCriar.beforeClass();
-		parametrosOficializacaoLivrosCriar.login();
-		parametrosOficializacaoLivrosCriar.acessarMDR();
+	//	parametrosOficializacaoLivrosCriar.login();
+	//	parametrosOficializacaoLivrosCriar.acessarMDR();
 		parametrosOficializacaoLivrosCriar.criar();
 		parametrosOficializacaoLivrosCriar.afterClass();
 
@@ -498,8 +476,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		parametrosOficializacaoLivrosEditar = new ParametrosOficializacaoLivrosEditar();
 		parametrosOficializacaoLivrosEditar.beforeClass();
-		parametrosOficializacaoLivrosEditar.login();
-		parametrosOficializacaoLivrosEditar.acessarMDR();
 		parametrosOficializacaoLivrosEditar.editar();
 		parametrosOficializacaoLivrosEditar.afterClass();
 
@@ -510,8 +486,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		parametrosOficializacaoLivrosVisualizar = new ParametrosOficializacaoLivrosVisualizar();
 		parametrosOficializacaoLivrosVisualizar.beforeClass();
-		parametrosOficializacaoLivrosVisualizar.login();
-		parametrosOficializacaoLivrosVisualizar.acessarMDR();
 		parametrosOficializacaoLivrosVisualizar.visualizar();
 		parametrosOficializacaoLivrosVisualizar.afterClass();
 
@@ -522,8 +496,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		parametrosOficializacaoLivrosDetalhes = new ParametrosOficializacaoLivrosDetalhes();
 		parametrosOficializacaoLivrosDetalhes.beforeClass();
-		parametrosOficializacaoLivrosDetalhes.login();
-		parametrosOficializacaoLivrosDetalhes.acessarMDR();
 		parametrosOficializacaoLivrosDetalhes.detalhes();
 		parametrosOficializacaoLivrosDetalhes.afterClass();
 
@@ -534,8 +506,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		parametrosOficializacaoLivrosExcluir = new ParametrosOficializacaoLivrosExcluir();
 		parametrosOficializacaoLivrosExcluir.beforeClass();
-		parametrosOficializacaoLivrosExcluir.login();
-		parametrosOficializacaoLivrosExcluir.acessarMDR();
 		parametrosOficializacaoLivrosExcluir.excluir();
 		parametrosOficializacaoLivrosExcluir.afterClass();
 
@@ -553,8 +523,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFCriar = new TabelaDeApoioECFCriar();
 		tabelaDeApoioECFCriar.beforeClass();
-		tabelaDeApoioECFCriar.login();
-		tabelaDeApoioECFCriar.acessarMDR();
 		tabelaDeApoioECFCriar.criar();
 		tabelaDeApoioECFCriar.afterClass();
 
@@ -565,8 +533,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFEditar = new TabelaDeApoioECFEditar();
 		tabelaDeApoioECFEditar.beforeClass();
-		tabelaDeApoioECFEditar.login();
-		tabelaDeApoioECFEditar.acessarMDR();
 		tabelaDeApoioECFEditar.editar();
 		tabelaDeApoioECFEditar.afterClass();
 
@@ -577,8 +543,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFVisualizar = new TabelaDeApoioECFVisualizar();
 		tabelaDeApoioECFVisualizar.beforeClass();
-		tabelaDeApoioECFVisualizar.login();
-		tabelaDeApoioECFVisualizar.acessarMDR();
 		tabelaDeApoioECFVisualizar.visualizar();
 		tabelaDeApoioECFVisualizar.afterClass();
 
@@ -589,8 +553,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
 		tabelaDeApoioECFAtualizar.beforeClass();
-		tabelaDeApoioECFAtualizar.login();
-		tabelaDeApoioECFAtualizar.acessarMDR();
 		tabelaDeApoioECFAtualizar.atualizar();
 		tabelaDeApoioECFAtualizar.afterClass();
 
@@ -601,8 +563,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFNovaTabelaECF = new TabelaDeApoioECFNovaTabelaECF();
 		tabelaDeApoioECFNovaTabelaECF.beforeClass();
-		tabelaDeApoioECFNovaTabelaECF.login();
-		tabelaDeApoioECFNovaTabelaECF.acessarMDR();
 		tabelaDeApoioECFNovaTabelaECF.novaTabela();
 		tabelaDeApoioECFNovaTabelaECF.afterClass();
 
@@ -613,8 +573,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFNovaVersaoLeiaute = new TabelaDeApoioECFNovaVersaoLeiaute();
 		tabelaDeApoioECFNovaVersaoLeiaute.beforeClass();
-		tabelaDeApoioECFNovaVersaoLeiaute.login();
-		tabelaDeApoioECFNovaVersaoLeiaute.acessarMDR();
 		tabelaDeApoioECFNovaVersaoLeiaute.novaTabela();
 		tabelaDeApoioECFNovaVersaoLeiaute.afterClass();
 
@@ -625,8 +583,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFExcluirMasas = new TabelaDeApoioECFExcluirMasas();
 		tabelaDeApoioECFExcluirMasas.beforeClass();
-		tabelaDeApoioECFExcluirMasas.login();
-		tabelaDeApoioECFExcluirMasas.acessarMDR();
 		tabelaDeApoioECFExcluirMasas.criar();
 		tabelaDeApoioECFExcluirMasas.afterClass();
 
@@ -637,8 +593,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
 		tabelaDeApoioECFExcluir.beforeClass();
-		tabelaDeApoioECFExcluir.login();
-		tabelaDeApoioECFExcluir.acessarMDR();
 		tabelaDeApoioECFExcluir.excluir();
 		tabelaDeApoioECFExcluir.afterClass();
 
@@ -657,8 +611,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusParaBCECriar = new StatusParaBCECriar();
 		statusParaBCECriar.beforeClass();
-		statusParaBCECriar.login();
-		statusParaBCECriar.acessarMDR();
 		statusParaBCECriar.criar();
 		statusParaBCECriar.afterClass();
 
@@ -669,8 +621,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusParaBCEEditar = new StatusParaBCEEditar();
 		statusParaBCEEditar.beforeClass();
-		statusParaBCEEditar.login();
-		statusParaBCEEditar.acessarMDR();
 		statusParaBCEEditar.editar();
 		statusParaBCEEditar.afterClass();
 
@@ -681,8 +631,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusParaBCEVisualizar = new StatusParaBCEVisualizar();
 		statusParaBCEVisualizar.beforeClass();
-		statusParaBCEVisualizar.login();
-		statusParaBCEVisualizar.acessarMDR();
 		statusParaBCEVisualizar.visualizar();
 		statusParaBCEVisualizar.afterClass();
 
@@ -693,8 +641,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusParaBCEDetalhes = new StatusParaBCEDetalhes();
 		statusParaBCEDetalhes.beforeClass();
-		statusParaBCEDetalhes.login();
-		statusParaBCEDetalhes.acessarMDR();
 		statusParaBCEDetalhes.detalhes();
 		statusParaBCEDetalhes.afterClass();
 
@@ -705,8 +651,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusParaBCEExcluir = new StatusParaBCEExcluir();
 		statusParaBCEExcluir.beforeClass();
-		statusParaBCEExcluir.login();
-		statusParaBCEExcluir.acessarMDR();
 		statusParaBCEExcluir.excluir();
 		statusParaBCEExcluir.afterClass();
 
@@ -725,8 +669,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		municipioCriar = new MunicipioCriar();
 		municipioCriar.beforeClass();
-		municipioCriar.login();
-		municipioCriar.acessarMDR();
 		municipioCriar.criar();
 		municipioCriar.afterClass();
 
@@ -738,8 +680,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		municipioEditar = new MunicipioEditar();
 		municipioEditar.beforeClass();
-		municipioEditar.ingresar();
-		municipioEditar.ingresarMDR();
 		municipioEditar.editar();
 		municipioEditar.afterClass();
 
@@ -750,8 +690,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		municipioVisualizar = new MunicipioVisualizar();
 		municipioVisualizar.beforeClass();
-		municipioVisualizar.login();
-		municipioVisualizar.acessarMDR();
 		municipioVisualizar.visualizar();
 		municipioVisualizar.afterClass();
 
@@ -762,8 +700,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		municipioDetalhes = new MunicipioDetalhes();
 		municipioDetalhes.beforeClass();
-		municipioDetalhes.login();
-		municipioDetalhes.acessarMDR();
 		municipioDetalhes.detalhes();
 		municipioDetalhes.afterClass();
 
@@ -775,8 +711,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		municipioExcluir = new MunicipioExcluir();
 		municipioExcluir.beforeClass();
-		municipioExcluir.login();
-		municipioExcluir.acessarMDR();
 		municipioExcluir.excluir();
 		municipioExcluir.afterClass();
 
@@ -795,8 +729,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroFornecedorcerCriar = new CadastroFornecedorCriar();
 		cadastroFornecedorcerCriar.beforeClass();
-		cadastroFornecedorcerCriar.login();
-		cadastroFornecedorcerCriar.acessarMDR();
 		cadastroFornecedorcerCriar.criar();
 		cadastroFornecedorcerCriar.afterClass();
 
@@ -807,8 +739,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroFornecedorEditar = new CadastroFornecedorEditar();
 		cadastroFornecedorEditar.beforeClass();
-		cadastroFornecedorEditar.login();
-		cadastroFornecedorEditar.acessarMDR();
 		cadastroFornecedorEditar.editar();
 		cadastroFornecedorEditar.afterClass();
 
@@ -819,8 +749,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroFornecedorVisualizar = new CadastroFornecedorVisualizar();
 		cadastroFornecedorVisualizar.beforeClass();
-		cadastroFornecedorVisualizar.login();
-		cadastroFornecedorVisualizar.acessarMDR();
 		cadastroFornecedorVisualizar.visualizar();
 		cadastroFornecedorVisualizar.afterClass();
 
@@ -831,8 +759,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroFornecedorFiltroId = new CadastroFornecedorFiltroId();
 		cadastroFornecedorFiltroId.beforeClass();
-		cadastroFornecedorFiltroId.login();
-		cadastroFornecedorFiltroId.acessarMDR();
 		cadastroFornecedorFiltroId.filtroId();
 		cadastroFornecedorFiltroId.afterClass();
 
@@ -843,8 +769,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroFornecedorExcluir = new CadastroFornecedorExcluir();
 		cadastroFornecedorExcluir.beforeClass();
-		cadastroFornecedorExcluir.login();
-		cadastroFornecedorExcluir.acessarMDR();
 		cadastroFornecedorExcluir.excluir();
 		cadastroFornecedorExcluir.afterClass();
 
@@ -862,8 +786,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		commoditieParaTPFiltroID = new CommoditieParaTPFiltroID();
 		commoditieParaTPFiltroID.beforeClass();
-		commoditieParaTPFiltroID.login();
-		commoditieParaTPFiltroID.acessarMDR();
 		commoditieParaTPFiltroID.filtro();
 		commoditieParaTPFiltroID.afterClass();
 	}
@@ -873,8 +795,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		 commoditieParaTPCriar = new CommoditieParaTPCriar();
 		 commoditieParaTPCriar.beforeClass();
-		 commoditieParaTPCriar.ingresar();
-		 commoditieParaTPCriar.ingresarMDR();
 		 commoditieParaTPCriar.criar();
 		 commoditieParaTPCriar.afterClass();
 		System.out.println("-------------------Preço de Transferência > Commoditie para TP Fin-------------------------");
@@ -886,20 +806,16 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		definicaoVinculacaoFiltroID = new DefinicaoVinculacaoFiltroID();
 		definicaoVinculacaoFiltroID.beforeClass();
-		definicaoVinculacaoFiltroID.login();
-		definicaoVinculacaoFiltroID.acessarMDR();
 		definicaoVinculacaoFiltroID.filtro();
 		definicaoVinculacaoFiltroID.afterClass();
 
 	}
 	
-	@Test(priority = 62)
+	@Test(priority = 63)
 	public void definicaoVinculacaoCriar() {
 
 		definicaoVinculacaoCriar = new DefinicaoVinculacaoCriar();
 		definicaoVinculacaoCriar.beforeClass();
-		definicaoVinculacaoCriar.login();
-		definicaoVinculacaoCriar.acessarMDR();
 		definicaoVinculacaoCriar.criar();
 		definicaoVinculacaoCriar.afterClass();
 
@@ -917,8 +833,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 			relacionamentoEntreQuadrosCriar = new RelacionamentoEntreQuadrosCriar();
 			relacionamentoEntreQuadrosCriar.beforeClass();
-			relacionamentoEntreQuadrosCriar.login();
-			relacionamentoEntreQuadrosCriar.acessarMDR();
 			relacionamentoEntreQuadrosCriar.criar();
 			relacionamentoEntreQuadrosCriar.afterClass();
 
@@ -929,8 +843,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 			relacionamentoEntreQuadrosEditar = new RelacionamentoEntreQuadrosEditar();
 			relacionamentoEntreQuadrosEditar.beforeClass();
-			relacionamentoEntreQuadrosEditar.login();
-			relacionamentoEntreQuadrosEditar.acessarMDR();
 			relacionamentoEntreQuadrosEditar.editar();
 			relacionamentoEntreQuadrosEditar.afterClass();
 
@@ -941,8 +853,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 			relacionamentoEntreQuadrosFiltroID = new RelacionamentoEntreQuadrosFiltroID();
 			relacionamentoEntreQuadrosFiltroID.beforeClass();
-			relacionamentoEntreQuadrosFiltroID.login();
-			relacionamentoEntreQuadrosFiltroID.acessarMDR();
 			relacionamentoEntreQuadrosFiltroID.filtro();
 			relacionamentoEntreQuadrosFiltroID.afterClass();
 
@@ -955,8 +865,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 			relacionamentoEntreQuadrosExcluir = new RelacionamentoEntreQuadrosExcluir();
 			relacionamentoEntreQuadrosExcluir.beforeClass();
-			relacionamentoEntreQuadrosExcluir.login();
-			relacionamentoEntreQuadrosExcluir.acessarMDR();
 			relacionamentoEntreQuadrosExcluir.excluir();
 			relacionamentoEntreQuadrosExcluir.afterClass();
 
@@ -967,8 +875,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 			relacionamentoEntreQuadrosExcluirMassa = new RelacionamentoEntreQuadrosExcluirMassa();
 			relacionamentoEntreQuadrosExcluirMassa.beforeClass();
-			relacionamentoEntreQuadrosExcluirMassa.login();
-			relacionamentoEntreQuadrosExcluirMassa.acessarMDR();
 			relacionamentoEntreQuadrosExcluirMassa.criar();
 			relacionamentoEntreQuadrosExcluirMassa.afterClass();
 

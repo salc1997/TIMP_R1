@@ -31,7 +31,7 @@ public class CategoriasDeTrabalhadoresExcluirMassa extends TestBaseCristhian {
   public void afterClass() {
 	  
   }
-
+  /*
   @Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,9 +43,12 @@ public class CategoriasDeTrabalhadoresExcluirMassa extends TestBaseCristhian {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-	@Test(priority = 2)
+	}*/
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = categoriaDeTrabalhadoresExcluirMassaPO.criar();
 

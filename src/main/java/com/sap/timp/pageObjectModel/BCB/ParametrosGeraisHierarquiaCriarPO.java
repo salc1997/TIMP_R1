@@ -106,22 +106,22 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1100);
 
-		nomeDeHierarquia.sendKeys("Prueba QA Visualizar");
+		nomeDeHierarquia.sendKeys("Teste QA PREUBA 007");
 		sleep(1100);
 
-		nomeDaAba.sendKeys("Teste Automatizado QA PREUBA 12");
+		nomeDaAba.sendKeys("Teste QA PREUBA 007");
 		sleep(1100);
 
 		actionsMoveToElementElement(nomeDoCampoDeLinha);
 		sleep(1100);
-		nomeDaHierarquia.sendKeys("Teste Automatizado QA PREUBA 12");
+		nomeDaHierarquia.sendKeys("Teste QA PREUBA 007");
 		sleep(1100);
 		listaNomeDaAba.click();
 		opcao.click();
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1100);
 
-		nomeDoGrupo.sendKeys("Teste Automatizado QA PREUBA 12");
+		nomeDoGrupo.sendKeys("Teste QA PREUBA 007");
 		sleep(1100);
 		listaNomeDoHierarquia.click();
 		opcao.click();
@@ -161,7 +161,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 			f = f + 1;
 		}
 
-		nomeDoCampoDeLinha.sendKeys("Teste Automatizado QA PREUBA 12");
+		nomeDoCampoDeLinha.sendKeys("Teste QA PREUBA 007");
 		sleep(1000);
 		listanomeDoSubnivel.click();
 		opcaoTodos.click();
@@ -191,7 +191,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 		String nome = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div")).getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.equals("Prueba QA Visualizar"));
+		sucesso.add(nome.equals("Teste QA PREUBA 007"));
 
 		idInserir1(id2);
 

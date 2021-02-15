@@ -30,7 +30,7 @@ public class TiposDeRegistroExcluirMassa extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -41,14 +41,16 @@ public class TiposDeRegistroExcluirMassa extends TestBaseFernando{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test(priority = 0)
 	public void criar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = tiposDeRegistroExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 1)
 	public void excluirMassa() {
 		boolean sucesso = tiposDeRegistroExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Criar);

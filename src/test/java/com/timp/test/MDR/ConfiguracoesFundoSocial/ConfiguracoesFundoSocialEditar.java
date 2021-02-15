@@ -13,42 +13,35 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracoesFundoSocialEditar extends TestBaseMassiel{
-	
+public class ConfiguracoesFundoSocialEditar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
-	ConfiguracoesFundoSocialEditarPO  configuracoesFundoSocialEditarPO;
-	 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  accesarMDRPO = new AcessarMDRPO();
-	  loginTC = new LoginTC();
-	  configuracoesFundoSocialEditarPO = new ConfiguracoesFundoSocialEditarPO();
-  }
+	ConfiguracoesFundoSocialEditarPO configuracoesFundoSocialEditarPO;
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		accesarMDRPO = new AcessarMDRPO();
+		loginTC = new LoginTC();
+		configuracoesFundoSocialEditarPO = new ConfiguracoesFundoSocialEditarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void editar() {
+
 		loginTC.login();
-	}
-  
-  @Test(priority = 1)
-  public void ingresarMDR() {
+
 		accesarMDRPO.acessarMDR();
-	}
-  
-  
-  @Test(priority = 2)
-  public void editar() {
-	
-	
-	 boolean sucesso = configuracoesFundoSocialEditarPO.Editar();
-	 assertTrue(sucesso, Editar);
-	  
+
+		boolean sucesso = configuracoesFundoSocialEditarPO.Editar();
+		assertTrue(sucesso, Editar);
+
 	}
 
 }

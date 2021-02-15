@@ -19,37 +19,31 @@ public class CodificaçãoDeAcDeTrabEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodificaçãoDeAcDeTrabEditarPO codificaçãoDeAcDeTrabEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationC();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	codificaçãoDeAcDeTrabEditarPO = new CodificaçãoDeAcDeTrabEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		codificaçãoDeAcDeTrabEditarPO = new CodificaçãoDeAcDeTrabEditarPO();
+	}
 
-  @Test(priority = 0)
-  public void login() {
-	loginTC.login();
-  }
-	
-	
-  @Test(priority = 1)
-  public void acessarMDR() {
-	acessarMDRPO.acessarMDR();
-  }
-  
-  @Test(priority = 2)
-  public void editar() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	boolean sucesso = codificaçãoDeAcDeTrabEditarPO.editar();
+	@Test()
+	public void editar() {
 
-	assertTrue(sucesso, Editar);
+		loginTC.login();
 
-  }
+		acessarMDRPO.acessarMDR();
+
+		boolean sucesso = codificaçãoDeAcDeTrabEditarPO.editar();
+
+		assertTrue(sucesso, Editar);
+
+	}
 
 }

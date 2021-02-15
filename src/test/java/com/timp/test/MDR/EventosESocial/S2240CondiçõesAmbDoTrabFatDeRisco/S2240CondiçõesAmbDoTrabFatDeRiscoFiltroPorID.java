@@ -28,29 +28,20 @@ public class S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID extends TestBaseKenssy
 
   @AfterClass
  	public void afterClass() {
- 		//driver.close();
+ 		driver.close();
  	}
 
- 	@Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
 
- 	}
-
- 	@Test(priority = 1)
- 	public void acessarMDR() {
-
- 		acessarMDRPO.acessarMDR();
-
- 	}
-
- 	@Test(priority = 2)
+ 	@Test()
 	  public void filtroPorId() {
- 		//incentivosFiscaisIdPO.FiltrarIncentivosFiscaisId();
+ 		
+		loginTC.login();
+
+		acessarMDRPO.acessarMDR();
  		 
  		boolean dato = s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorIDPO.filtroPorId();
 		   
-		 assertTrue(dato, "El registro devuelto no coincide con el buscado");
+		 assertTrue(dato, filtros);
 	  }
 
 

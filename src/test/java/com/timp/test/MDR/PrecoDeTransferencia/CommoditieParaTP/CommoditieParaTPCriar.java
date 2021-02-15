@@ -30,8 +30,9 @@ public class CommoditieParaTPCriar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
-  
+  /*
   @Test (priority = 0)
   public void ingresar() {
 	  
@@ -41,11 +42,13 @@ public class CommoditieParaTPCriar extends TestBaseMassiel{
   @Test(priority = 1)
  	public void ingresarMDR() {
 	  accesarMDRPO.acessarMDR();
- 	}
+ 	}*/
   
-  @Test(priority = 2)
+  @Test()
 	public void criar() {
 	  
+	  loginTC.login();
+	  accesarMDRPO.acessarMDR();
 	  boolean sucesso = commoditieParaTPCriarPO.Criar();
 	  assertTrue(sucesso, Criar);
 	}

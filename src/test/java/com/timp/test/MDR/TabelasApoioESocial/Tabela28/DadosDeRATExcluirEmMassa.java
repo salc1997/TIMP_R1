@@ -33,24 +33,24 @@ public class DadosDeRATExcluirEmMassa extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void criar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-
 		boolean sucesso = dadosDeRATExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+
+
+	}
+	
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
 		sleep(1000);
 		boolean sucesso2 = dadosDeRATExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

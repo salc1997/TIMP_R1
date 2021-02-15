@@ -14,51 +14,42 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class EmprestimosExcluirEmMassa extends TestBaseKenssy {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	EmprestimosExcluirEmMassaPO emprestimosExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  emprestimosExcluirEmMassaPO = new EmprestimosExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		emprestimosExcluirEmMassaPO = new EmprestimosExcluirEmMassaPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void criar() {
-	  
-	boolean sucesso = emprestimosExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
+	@Test(priority = 2)
+	public void criar() {
 
-  }
-  
-  @Test(dependsOnMethods = "criar")
-  public void excluir() {
+		loginTC.login();
 
-	boolean sucesso2 = emprestimosExcluirEmMassaPO.emprestimosExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
+		accesarMDR.acessarMDR();
 
-  }
-  
-  
+		boolean sucesso = emprestimosExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+
+	}
+
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+		boolean sucesso2 = emprestimosExcluirEmMassaPO.emprestimosExcluirEmMassa();
+		assertTrue(sucesso2, Eliminado);
+
+	}
+
 }

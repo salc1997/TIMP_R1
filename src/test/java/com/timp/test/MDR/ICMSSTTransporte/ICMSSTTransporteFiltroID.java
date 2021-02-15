@@ -38,21 +38,14 @@ public class ICMSSTTransporteFiltroID extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	public void filtro() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void filtro() {
 
 		boolean sucesso = limiteCompetenciaFiltroIDPO.filtro();
 		assertTrue(sucesso, Filtros);

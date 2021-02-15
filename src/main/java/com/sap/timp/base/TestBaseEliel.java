@@ -46,7 +46,9 @@ public class TestBaseEliel extends TestBaseSteven {
 		driver.manage().window().maximize();
 
 
-		driver.get(tc2);
+
+		driver.get(tq1);
+
 
 
 		return driver;

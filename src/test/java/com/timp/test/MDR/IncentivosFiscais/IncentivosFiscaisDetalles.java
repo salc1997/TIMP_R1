@@ -30,19 +30,17 @@ public class IncentivosFiscaisDetalles extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
+
+	@Test()
 	public void detalhes() {
+		
+		loginTC.login();
+
+		accesarMDRPO.acessarMDR();
 		
 		
 		ArrayList<Boolean> sucesso = incentivosFiscaisDetallesPO .Detalle();

@@ -30,7 +30,7 @@ public class TaxasDeConversaoDetalhes extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -40,9 +40,13 @@ public class TaxasDeConversaoDetalhes extends TestBaseFernando{
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void detalhes() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		ArrayList<Boolean> sucesso = taxasDeConversaoDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

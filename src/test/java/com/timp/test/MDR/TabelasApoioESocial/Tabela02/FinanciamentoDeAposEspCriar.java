@@ -30,7 +30,7 @@ public class FinanciamentoDeAposEspCriar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,10 +43,11 @@ public class FinanciamentoDeAposEspCriar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void criar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = financiamentoDeAposEspCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

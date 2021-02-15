@@ -32,7 +32,7 @@ public class NaturezaDasRubricasVisualizar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,10 +45,13 @@ public class NaturezaDasRubricasVisualizar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void Visualizar() {
 
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		ArrayList<Boolean> sucesso = naturezaDasRubricasVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -29,27 +29,22 @@ public class FactoresDeRiscoExcluirMassa extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void criar() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
-	public void criar() {
+		
 		boolean sucesso = factoresDeRiscoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = factoresDeRiscoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);

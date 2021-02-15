@@ -13,41 +13,34 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoVisualizarPO;
 
-
-public class AssociaçãoVisualizar extends TestBaseFernando{
+public class AssociaçãoVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AssociaçãoVisualizarPO associaçãoVisualizarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationF(); 
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  associaçãoVisualizarPO = new AssociaçãoVisualizarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	  boolean sucesso = accesarMDR.acessarMDR();
-	  assertTrue(sucesso, "The element is not present");
-  }
-  
-  @Test(priority = 2)
-  public void visualizarAssociação() {	  
-	  ArrayList<Boolean> sucesso = associaçãoVisualizarPO.visualizarAssociação();
-	  for(int i = 0; i < sucesso.size(); i++) {
-		  assertTrue(sucesso.get(i), "Ocurrio un error");
-	  }
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationF();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		associaçãoVisualizarPO = new AssociaçãoVisualizarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void visualizarAssociação() {
+
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
+
+		ArrayList<Boolean> sucesso = associaçãoVisualizarPO.visualizarAssociação();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), "Ocurrio un error");
+		}
+	}
 }

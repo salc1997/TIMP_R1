@@ -37,7 +37,7 @@ public class ParametrosOficializacaoLivrosDetalhes extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -49,11 +49,12 @@ public class ParametrosOficializacaoLivrosDetalhes extends TestBaseSteven {
 
 		acessarMDRPO.acessarMDR();
 
-	}
+	}*/
 
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = parametrosOficializacaoLivrosDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

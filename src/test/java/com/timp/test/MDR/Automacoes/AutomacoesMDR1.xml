@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<test name="Automações MDR 1">
+
+
+		<classes>
+
+
+			<!-- Associção Código de Ajustes -->
+			<class
+				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
+
+
+			<!-- Códigos de Ajuste -->
+			<class
+				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes"></class>
+
+			<class
+				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
+
+			<!-- Antecipação -->
+
+			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoCriar"></class>
+
+			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoDetalhe"></class>
+
+			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoEditar"></class>
+
+			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoFiltros"></class>
+
+			<class
+				name="com.timp.test.MDR.Antecipacao.AntecipacaoVisualizar"></class>
+
+			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoEliminar"></class>
+			
+			
+
+			<!-- Ativação Para Municipio -->
+
+			<class
+				name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioDetalhes"></class>
+
+			<class
+				name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioExcluir"></class>
+
+			<class
+				name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioFiltroID"></class>
+
+
+
+			<!-- Atividades Fiscais > Atividade Fiscal -->
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeExcluirMassa"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro"></class>
+
+			
+			
+			
+			<!-- Atividades Fiscais > Grupo de Atividade Fiscal -->
+
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeFiscalDetalle"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluir"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluirMassa"></class>
+			
+			
+			
+			
+
+			<!-- Atividades Fiscais > Associação de Atividade Fiscal -->
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoDetalhes"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir"></class>
+
+
+			
+
+
+
+			<!-- Cadastro da Condição -->
+
+			<class
+				name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroCondiçao.CadasatroCondicaoVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroCondiçao.cadastrocondicaoDetalle"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoExcluir"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroCondiçao.CadastroCondiçaoExcluirMasas"></class>
+
+
+
+			<!-- Cadastro Derex > Instituição Financeira -->
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoDetalhes"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstitucaoVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoExcluir"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoExcluirMasas"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoFiltroId"></class>
+
+
+
+
+			<!-- Cadastro Derex > Cadastro Responsavél Pelo Movimento -->
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoExcluir"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimientoExcluirMasas"></class>
+
+			<class
+				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoFiltros"></class>
+
+
+		</classes>
+
+	</test> <!-- PruebaTestNG -->
+</suite> <!-- Suite -->

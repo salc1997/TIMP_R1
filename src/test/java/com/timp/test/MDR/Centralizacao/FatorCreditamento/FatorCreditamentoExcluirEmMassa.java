@@ -34,24 +34,23 @@ public class FatorCreditamentoExcluirEmMassa extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+
+		loginTC.login();
+
+		acessarMDRPO.acessarMDR();
+
 		boolean sucesso = fatorCreditamentoExcluirEmMassaPO.fatorCreditamentoCriar();
 		assertTrue(sucesso, Criar);
-		
+
+	}
+
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
 		boolean sucesso2 = fatorCreditamentoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-		
-		
+
 	}
 }

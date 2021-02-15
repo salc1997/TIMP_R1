@@ -19,7 +19,6 @@ import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.St
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
-import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirMassaPP;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa;
@@ -132,8 +131,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 
 
 
-//Incentivos Fiscais > Projetos Patrocinados
-	IncentivosFiscaisExcluirMassaPP incentivosFiscaisExcluirMassaPP;
 
 //Siscoserv  > Registro RVS
 	RegistroRVSExcluirEmMassa registroRVSExcluirEmMassa;
@@ -379,44 +376,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		mapeamentoContabilExcluirEmMassa.afterClass();
 	}
 	
-	//Taxas De Actualizacao Aliquotas De Taxa De Atualizacao
-	
-	@Test(priority = 16)
-	public void aliquotasDeTaxaDeActualizacaoPesquisaPorID() {
-		System.out.println("-------------------Parametros Contabilizacao Mapeamento Contabil -------------------------");
-		aliquotasDeTaxaDeActualizacaoPesquisaPorID = new AliquotaDeTaxaDeActualizacaoPesquisaPorID();
-		aliquotasDeTaxaDeActualizacaoPesquisaPorID.beforeClass();
-		aliquotasDeTaxaDeActualizacaoPesquisaPorID.login();
-		aliquotasDeTaxaDeActualizacaoPesquisaPorID.acessarMDR();
-		aliquotasDeTaxaDeActualizacaoPesquisaPorID.filtro();
-		aliquotasDeTaxaDeActualizacaoPesquisaPorID.afterClass();
-	}
-//Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior
-	
-	@Test(priority = 17)
-	public void utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa() {
-		System.out.println("-------------------Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior-------------------------");
-		utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa = new UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa();
-		utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.beforeClass();
-		utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.login();
-		utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.acessarMDR();
-		utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.criar();
-		utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa.afterClass();
-	}
 
-	//Controle De Credito Tributario > Codigos De Credito
-	
-	@Test(priority = 18)
-	public void codigosDeCreditoExcluirEmMassa() {
-		System.out.println("-------------------Controle De Credito Tributario > Codigos De Credito-------------------------");
-		codigosDeCreditoExcluirEmMassa = new CodigosDeCreditoExcluirEmMassa();
-		codigosDeCreditoExcluirEmMassa.beforeClass();
-		codigosDeCreditoExcluirEmMassa.login();
-		codigosDeCreditoExcluirEmMassa.acessarMDR();
-		codigosDeCreditoExcluirEmMassa.criar();
-		codigosDeCreditoExcluirEmMassa.afterClass();
-	}
-	
 	//Siscoserv > Registro RF
 	
 	@Test(priority = 19)
@@ -471,17 +431,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	//Incentivos Fiscais > Projetos Patrocinados
 	//86
 	
-	@Test(priority = 23)
-	public void incentivosFiscaisPPExcluirEmMassa() {
-		System.out.println("-------------------Incentivos Fiscais > Projetos Patrocinados-------------------------");
-		incentivosFiscaisExcluirMassaPP = new IncentivosFiscaisExcluirMassaPP();
-		incentivosFiscaisExcluirMassaPP.beforeClass();
-		incentivosFiscaisExcluirMassaPP.login();
-		incentivosFiscaisExcluirMassaPP.acessarMDR();
-		incentivosFiscaisExcluirMassaPP.criar();
-		incentivosFiscaisExcluirMassaPP.afterClass();
-	}
-	//90
 	
 	
 	//95
@@ -621,17 +570,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		
 	}
 	
-//Tabela De Apoio E Social Tabela28 - Dados De RAT
-	@Test(priority = 36)	
-	public void dadosDeRATExcluirEmMassa() {
-		System.out.println("-------------------Tabela De Apoio E Social Tabela28 - Dados De RAT-------------------------");
-		dadosDeRATExcluirEmMassa = new DadosDeRATExcluirEmMassa();
-		dadosDeRATExcluirEmMassa.beforeClass();
-		dadosDeRATExcluirEmMassa.login();
-		dadosDeRATExcluirEmMassa.acessarMDR();
-		dadosDeRATExcluirEmMassa.criar();
-		dadosDeRATExcluirEmMassa.afterClass();
-	}
+
 //Tabela Apoio SPED > Tabela Codigo Da Situação Tributária
 	
 	@Test(priority = 37)	

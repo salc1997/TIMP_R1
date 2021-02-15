@@ -31,23 +31,19 @@ public class GrupoAtividadeExcluirMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = grupoAtividadeExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = grupoAtividadeExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);

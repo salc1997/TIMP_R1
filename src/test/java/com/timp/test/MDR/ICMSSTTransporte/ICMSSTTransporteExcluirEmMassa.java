@@ -19,38 +19,38 @@ public class ICMSSTTransporteExcluirEmMassa extends TestBaseKenssy {
 	AcessarMDRPO accesarMDR;
 	ICMSSTTransporteExcluirEmMassaPO iCMSSTTransporteExcluirEmMassaPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  iCMSSTTransporteExcluirEmMassaPO = new ICMSSTTransporteExcluirEmMassaPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		iCMSSTTransporteExcluirEmMassaPO = new ICMSSTTransporteExcluirEmMassaPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void excluirEmMassa() {
-	boolean sucesso = iCMSSTTransporteExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
+	@Test()
+	public void criar() {
+
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
+		
+		boolean sucesso = iCMSSTTransporteExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+
+	}
 	
-	boolean sucesso2 = iCMSSTTransporteExcluirEmMassaPO.iCMSSTTransporteExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
-  }
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+		boolean sucesso2 = iCMSSTTransporteExcluirEmMassaPO.iCMSSTTransporteExcluirEmMassa();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 }

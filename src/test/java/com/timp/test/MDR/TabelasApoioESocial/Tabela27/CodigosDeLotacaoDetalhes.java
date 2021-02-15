@@ -20,42 +20,36 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigosDeLotacaoDetalhes extends TestBaseSteven{
-  
+public class CodigosDeLotacaoDetalhes extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	CodigosDeLotacaoDetalhesPO codigosDeLotacaoDetalhesPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  codigosDeLotacaoDetalhesPO = new CodigosDeLotacaoDetalhesPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void acessarMDR() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		codigosDeLotacaoDetalhesPO = new CodigosDeLotacaoDetalhesPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void detalhes() {
-	  ArrayList<Boolean> sucesso = codigosDeLotacaoDetalhesPO.detalhes();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void detalhes() {
+
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
+
+		ArrayList<Boolean> sucesso = codigosDeLotacaoDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-  }
+	}
 }

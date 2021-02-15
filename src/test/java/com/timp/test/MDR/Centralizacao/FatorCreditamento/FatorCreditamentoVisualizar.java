@@ -35,21 +35,12 @@ public class FatorCreditamentoVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void visualizar() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void visualizar() {
 
 		ArrayList<Boolean> sucesso = fatorCreditamentoVisualizarPO.visualizar();
 

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AssociaçãoExcluir extends TestBaseCristhian{
+public class AssociaçãoExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AssociaçãoExcluirPO associaçãoExcluirPO;
@@ -33,27 +33,17 @@ public class AssociaçãoExcluir extends TestBaseCristhian{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void excluir() {
+
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void excluirr() {
 
 		boolean sucesso = associaçãoExcluirPO.excluir();
 
 		assertTrue(sucesso, Editar);
 
 	}
-
 
 }

@@ -29,29 +29,21 @@ public class CadastroCondicaoCriar extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 		
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void criar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-
 		boolean text = cadastroCondicaoCriarPO.criar();
 		assertTrue(text, Criar);
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(cadastroCondicaoCriarPO.mostrar.isDisplayed(), semAcesso);
+
 
 	}
 

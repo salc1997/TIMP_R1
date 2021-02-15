@@ -11,8 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
 
-
-public class AssociaçãoCriar extends TestBaseFernando{
+public class AssociaçãoCriar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AssociaçãoCriarPO associaçãoCriarPO;
@@ -30,19 +29,13 @@ public class AssociaçãoCriar extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
+	@Test()
+	public void criarAssociação() {
 
-	@Test(priority = 1)
-	public void acessarMDR() {
+		loginTC.login();
+
 		accesarMDR.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void criarAssociação() {
 		boolean sucesso = associaçãoCriarPO.criarAssociação();
 		assertTrue(sucesso, Criar);
 	}

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa">
+        <methods>
+          <include name="excluir"/>
+=======
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
@@ -9,9 +17,15 @@
           <include name="filtro"/>
           <include name="beforeClass"/>
           <include name="login"/>
+>>>>>>> refs/remotes/origin/master
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa -->
+=======
       </class> <!-- com.timp.test.TDK.Dashboard.Lixeira.LixeiraFiltroId -->
+>>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -14,38 +14,32 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class MotivosdeDesligamentoEditar extends TestBaseKenssy {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	MotivosdeDesligamentoEditarPO motivosDesligamentoEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  motivosDesligamentoEditarPO = new MotivosdeDesligamentoEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  //driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		motivosDesligamentoEditarPO = new MotivosdeDesligamentoEditarPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void editarMotivoDesligamento() {
-	  boolean sucesso = motivosDesligamentoEditarPO.editarMotivoDesligamento();
-	  assertTrue(sucesso, Editar);
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void editarMotivoDesligamento() {
+
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
+
+		boolean sucesso = motivosDesligamentoEditarPO.editarMotivoDesligamento();
+		assertTrue(sucesso, Editar);
+	}
 }

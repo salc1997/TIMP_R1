@@ -26,11 +26,6 @@ import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.St
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
-import com.timp.test.MDR.Empresas.EmpresaEditar;
-import com.timp.test.MDR.Empresas.EmpresasDetalhes;
-import com.timp.test.MDR.Empresas.EmpresasFiltros;
-import com.timp.test.MDR.Empresas.EmpresasVisualizar;
-import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirMassaPP;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa;
@@ -278,8 +273,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 
 
 
-		//Incentivos Fiscais > Projetos Patrocinados
-			IncentivosFiscaisExcluirMassaPP incentivosFiscaisExcluirMassaPP;
+	
 
 		//Siscoserv  > Registro RVS
 			RegistroRVSExcluirEmMassa registroRVSExcluirEmMassa;
@@ -754,19 +748,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				tiposDeDependentesExcluirMassa.excluirMassa();
 				tiposDeDependentesExcluirMassa.afterClass();
 				System.out.println("-------------------Tabela 07 - Tipos de Dependentes Fim-------------------------");
-			}
-			//39
-			//Codigo receita	
-			@Test(priority = 39)
-			public void codigoReceitaExcluirEmMassa() {
-				System.out.println("-------------------Codigo receita-------------------------");
-				codigoReceitaExcluirEmMassa = new CodigoReceitaExcluirEmMassa();
-				codigoReceitaExcluirEmMassa.beforeClass();
-				codigoReceitaExcluirEmMassa.login();
-				codigoReceitaExcluirEmMassa.acessarMDR();
-				codigoReceitaExcluirEmMassa.criar();
-				codigoReceitaExcluirEmMassa.afterClass();
-
 			}
 			
 			//Siscoserv > Pais/Moeda

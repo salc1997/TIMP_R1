@@ -31,29 +31,31 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa extends TestBa
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void criar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-
 		boolean sucesso = utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+
+
+	}
+	
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+
 		sleep(1000);
 		boolean sucesso2 = utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
+
 
  
 }

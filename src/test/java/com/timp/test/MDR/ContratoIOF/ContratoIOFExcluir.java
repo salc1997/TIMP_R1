@@ -33,26 +33,16 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void excluir() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void excluir() {
-
 		boolean sucesso = contratoIOFEcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(contratoIOFEcluirPO.mostrar.isDisplayed(), semAcesso);
 
 	}
 

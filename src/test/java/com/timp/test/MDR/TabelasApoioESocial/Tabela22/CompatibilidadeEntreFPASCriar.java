@@ -18,34 +18,31 @@ public class CompatibilidadeEntreFPASCriar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEntreFPASCriarPO compatibilidadeEntreFPASCriarFPASCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  compatibilidadeEntreFPASCriarFPASCriarPO = new  CompatibilidadeEntreFPASCriarPO();
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		compatibilidadeEntreFPASCriarFPASCriarPO = new CompatibilidadeEntreFPASCriarPO();
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	public void criarCompatibilidadeEntreFPAS() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
+		
+		
+		boolean sucesso = compatibilidadeEntreFPASCriarFPASCriarPO.criarCompatibilidadeEntreFPAS();
+		assertTrue(sucesso, Criar);
 	}
-
-	@Test(priority = 2)
-	  public void criarCompatibilidadeEntreFPAS() {
-			 boolean sucesso = compatibilidadeEntreFPASCriarFPASCriarPO.criarCompatibilidadeEntreFPAS();
-			  assertTrue(sucesso, Criar);
-	  }
 }

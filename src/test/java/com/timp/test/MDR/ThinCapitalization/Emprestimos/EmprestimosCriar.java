@@ -32,26 +32,17 @@ public class EmprestimosCriar extends TestBaseKenssy  {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	  public void criarEmprestimos() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
-	  public void criarEmprestimos() {
 		
 		boolean sucesso = emprestimosCriarPO.CriarEmprestimos();
 
-		// teste pra conferir se o resultado mostrado é igual
-		assertTrue(sucesso, Criar);
 
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(emprestimosCriarPO.mostrar.isDisplayed(), semAcesso);
 	  }
 }

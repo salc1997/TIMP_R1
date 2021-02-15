@@ -33,22 +33,14 @@ public class PublicoEPrivado extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
+	@Test()
+	public void publicoYPRivado() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-
+		
 		acessarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 2)
-	public void publicoYPRivado() {
 
 		boolean publicoEditor = publicoYPRivadoPO.publicoEditor();
 		System.out.println(publicoEditor);

@@ -34,21 +34,15 @@ public class Visualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
+
+	@Test()
+	public void visualizar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
+		
 		acessarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 2)
-	public void visualizar() {
 
 		boolean sucesso = true;
 		sucesso = visualizarPO.visualizar();

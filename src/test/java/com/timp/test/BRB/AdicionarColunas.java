@@ -3,11 +3,9 @@ package com.timp.test.BRB;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
+import java.util.ArrayList;
 
-import javax.swing.JList.DropLocation;
+import javax.swing.text.html.HTML;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,32 +15,33 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.http.AbstractHttpCommandCodec;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.ReordenarColunarPO;
+import com.sap.timp.pageObjectModel.BRB.AdicionarColunasPO;
+import com.sap.timp.pageObjectModel.BRB.NovoRelatorioPO;
 
-public class ReordenarColuna extends TestBaseSteven {
+public class AdicionarColunas extends TestBaseSteven {
 
-	LoginTC loginTC;
-	AcessarBrbPO acessarBrbPO;
-	ReordenarColunarPO reordenarColunarPO;
+	LoginTC loginTc;
+	AcessarBrbPO accesarBrbPO;
+	AdicionarColunasPO adicionarColunasPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
-		loginTC = new LoginTC();
-		acessarBrbPO = new AcessarBrbPO();
-		reordenarColunarPO = new ReordenarColunarPO();
-
+		loginTc = new LoginTC();
+		accesarBrbPO = new AcessarBrbPO();
+		adicionarColunasPO = new AdicionarColunasPO();
 	}
 
 	@AfterClass
@@ -50,21 +49,20 @@ public class ReordenarColuna extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
-	public void reordenar() {
+	public void adicionarColunas() {
 		
-		loginTC.login();
+		loginTc.login();
 		
-		acessarBrbPO.acessar();
+		accesarBrbPO.acessar();
+	
 
-
-		boolean sucesso = false;
-		sucesso = reordenarColunarPO.reordenar();
-		System.out.println(sucesso);
-
-		assertTrue(sucesso, reordenar);
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		sucesso = adicionarColunasPO.colunas();
+		System.out.println(sucesso + "Colunas");
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), "The Colunms weren't added");
+		}
 
 	}
 

@@ -1,277 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="1" passed="1">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="2" passed="2">
-=======
-=======
->>>>>>> refs/remotes/origin/Eliel
-<testng-results total="3" passed="3" failed="0" skipped="0">
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> refs/remotes/origin/Eliel
-=======
-<testng-results total="26" passed="25" failed="1" skipped="0">
->>>>>>> refs/remotes/origin/Cristhian
-=======
-<testng-results total="11" passed="11" failed="0" skipped="0">
->>>>>>> refs/heads/Fernando
->>>>>>> refs/remotes/origin/master
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="107570" started-at="2021-02-15T18:08:41Z" finished-at="2021-02-15T18:10:28Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="220000" started-at="2021-02-13T03:25:38Z" finished-at="2021-02-13T03:29:18Z">
-=======
-  <suite started-at="2021-02-12T04:49:58Z" name="Default suite" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
->>>>>>> refs/remotes/origin/master
-=======
-  <suite started-at="2021-02-15T06:03:50Z" name="Default suite" finished-at="2021-02-15T06:05:16Z" duration-ms="85988">
->>>>>>> refs/remotes/origin/Yessy
-=======
-  <suite started-at="2021-02-15T13:40:24Z" name="Default suite" finished-at="2021-02-15T13:41:51Z" duration-ms="87123">
->>>>>>> refs/remotes/origin/Eliel
-=======
-  <suite started-at="2021-02-12T13:16:02Z" name="Default suite" finished-at="2021-02-12T13:33:52Z" duration-ms="1070343">
->>>>>>> refs/remotes/origin/Cristhian
-=======
-  <suite started-at="2021-02-10T23:49:01Z" name="Default suite" finished-at="2021-02-11T00:03:12Z" duration-ms="851488">
->>>>>>> refs/heads/Fernando
->>>>>>> refs/remotes/origin/master
+  <suite name="Default suite" duration-ms="113426" started-at="2021-02-15T22:37:06Z" finished-at="2021-02-15T22:38:59Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="107570" started-at="2021-02-15T18:08:41Z" finished-at="2021-02-15T18:10:28Z">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="16325" started-at="2021-02-15T12:08:41Z" finished-at="2021-02-15T12:08:57Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="220000" started-at="2021-02-13T03:25:38Z" finished-at="2021-02-13T03:29:18Z">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="beforeClass" is-config="true" duration-ms="18852" started-at="2021-02-12T21:25:38Z" finished-at="2021-02-12T21:25:57Z">
-=======
-    <test started-at="2021-02-12T04:49:58Z" name="Default test" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
-      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:49:58Z" name="beforeClass" finished-at="2021-02-11T22:50:21Z" duration-ms="23142" status="PASS">
->>>>>>> refs/remotes/origin/master
-=======
-    <test started-at="2021-02-15T06:03:50Z" name="Default test" finished-at="2021-02-15T06:05:16Z" duration-ms="85988">
-      <class name="com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:03:50Z" name="beforeClass" finished-at="2021-02-15T00:04:05Z" duration-ms="14984" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-    <test started-at="2021-02-15T13:40:24Z" name="Default test" finished-at="2021-02-15T13:41:51Z" duration-ms="87123">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:40:24Z" name="beforeClass" finished-at="2021-02-15T10:40:39Z" duration-ms="14657" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
-=======
-    <test started-at="2021-02-12T13:16:02Z" name="Default test" finished-at="2021-02-12T13:33:52Z" duration-ms="1070343">
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:16:02Z" name="beforeClass" finished-at="2021-02-12T10:16:16Z" duration-ms="14174" status="PASS">
->>>>>>> refs/remotes/origin/Cristhian
-=======
-    <test started-at="2021-02-10T23:49:01Z" name="Default test" finished-at="2021-02-11T00:03:12Z" duration-ms="851488">
-      <class name="com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:01Z" name="beforeClass" finished-at="2021-02-10T17:49:14Z" duration-ms="13025" status="PASS">
->>>>>>> refs/heads/Fernando
->>>>>>> refs/remotes/origin/master
+    <test name="Default test" duration-ms="113426" started-at="2021-02-15T22:37:06Z" finished-at="2021-02-15T22:38:59Z">
+      <class name="com.timp.test.BRB.AdicionarColunas">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="19209" started-at="2021-02-15T16:37:06Z" finished-at="2021-02-15T16:37:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="excluir" duration-ms="86821" started-at="2021-02-15T12:08:57Z" finished-at="2021-02-15T12:10:24Z">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="criar" duration-ms="117954" started-at="2021-02-12T21:25:57Z" finished-at="2021-02-12T21:27:55Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:21Z" name="login" finished-at="2021-02-11T22:50:31Z" duration-ms="10000" status="PASS">
->>>>>>> refs/remotes/origin/master
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:05Z" name="login" finished-at="2021-02-15T00:04:13Z" duration-ms="7893" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:40:39Z" name="login" finished-at="2021-02-15T10:40:48Z" duration-ms="9141" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
-=======
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:16:16Z" name="ingresar" finished-at="2021-02-12T10:16:24Z" duration-ms="8001" status="PASS">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:14Z" name="login" finished-at="2021-02-10T17:49:21Z" duration-ms="7524" status="PASS">
->>>>>>> refs/heads/Fernando
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- ingresar -->
-        <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:16:24Z" name="mdrEntrar" finished-at="2021-02-12T10:16:43Z" duration-ms="19443" status="PASS">
->>>>>>> refs/remotes/origin/Cristhian
-=======
-        </test-method> <!-- login -->
-        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:21Z" name="brbEntrar" finished-at="2021-02-10T17:49:35Z" duration-ms="14126" status="PASS">
->>>>>>> refs/heads/Fernando
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="excluir" duration-ms="78762" started-at="2021-02-12T21:27:55Z" finished-at="2021-02-12T21:29:14Z">
-=======
-        </test-method> <!-- login -->
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:40:48Z" name="acessarTCC" finished-at="2021-02-15T10:41:10Z" duration-ms="21774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarTCC -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:41:10Z" name="excluir" finished-at="2021-02-15T10:41:51Z" duration-ms="41529" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/remotes/origin/master
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4414" started-at="2021-02-15T12:10:24Z" finished-at="2021-02-15T12:10:28Z">
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="afterClass" is-config="true" duration-ms="4417" started-at="2021-02-12T21:29:14Z" finished-at="2021-02-12T21:29:18Z">
-=======
-        </test-method> <!-- login -->
-        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:13Z" name="acessarTDK" finished-at="2021-02-15T00:04:44Z" duration-ms="30997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarTDK -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:44Z" name="filtro" finished-at="2021-02-15T00:05:16Z" duration-ms="32095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtro -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:51:13Z" name="afterClass" finished-at="2021-02-11T22:51:13Z" duration-ms="1" status="PASS">
->>>>>>> refs/remotes/origin/master
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:05:16Z" name="afterClass" finished-at="2021-02-15T00:05:16Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        </test-method> <!-- mdrEntrar -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:16:43Z" name="criar" finished-at="2021-02-12T10:17:22Z" duration-ms="38484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method signature="separadores()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:17:22Z" name="separadores" finished-at="2021-02-12T10:18:34Z" duration-ms="71884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- separadores -->
-        <test-method signature="dataInicialDeReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:18:34Z" name="dataInicialDeReferencia" finished-at="2021-02-12T10:20:15Z" duration-ms="101430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataInicialDeReferencia -->
-        <test-method signature="saltodeLinha()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:20:15Z" name="saltodeLinha" finished-at="2021-02-12T10:20:35Z" duration-ms="19625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saltodeLinha -->
-        <test-method signature="dataFinalDeReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:20:35Z" name="dataFinalDeReferencia" finished-at="2021-02-12T10:21:14Z" duration-ms="39060" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataFinalDeReferencia -->
-        <test-method signature="versao()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:21:14Z" name="versao" finished-at="2021-02-12T10:21:38Z" duration-ms="24150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- versao -->
-        <test-method signature="horaDaExecucao()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:21:38Z" name="horaDaExecucao" finished-at="2021-02-12T10:22:31Z" duration-ms="52423" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- horaDaExecucao -->
-        <test-method signature="dataDaExecucao()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:22:31Z" name="dataDaExecucao" finished-at="2021-02-12T10:23:09Z" duration-ms="38923" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataDaExecucao -->
-        <test-method signature="periodoDaReferencia()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:23:09Z" name="periodoDaReferencia" finished-at="2021-02-12T10:23:57Z" duration-ms="47199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- periodoDaReferencia -->
-        <test-method signature="campoFixo()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:23:57Z" name="campoFixo" finished-at="2021-02-12T10:25:47Z" duration-ms="110287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- campoFixo -->
-        <test-method signature="campoFixoManual()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:25:47Z" name="campoFixoManual" finished-at="2021-02-12T10:26:23Z" duration-ms="36356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- campoFixoManual -->
-        <test-method signature="sequencia()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:26:23Z" name="sequencia" finished-at="2021-02-12T10:27:26Z" duration-ms="62478" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sequencia -->
-        <test-method signature="sequenciaDeItemPorDocumento()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:27:26Z" name="sequenciaDeItemPorDocumento" finished-at="2021-02-12T10:28:25Z" duration-ms="58952" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sequenciaDeItemPorDocumento -->
-        <test-method signature="distinto()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:28:25Z" name="distinto" finished-at="2021-02-12T10:29:17Z" duration-ms="52655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- distinto -->
-        <test-method signature="comparar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:29:17Z" name="comparar" finished-at="2021-02-12T10:29:34Z" duration-ms="16217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- comparar -->
-        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:29:34Z" name="criarConfiguracao" finished-at="2021-02-12T10:30:36Z" duration-ms="62140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarConfiguracao -->
-        <test-method signature="executar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:30:36Z" name="executar" finished-at="2021-02-12T10:31:59Z" duration-ms="83229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executar -->
-        <test-method signature="verBloco1()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:31:59Z" name="verBloco1" finished-at="2021-02-12T10:32:11Z" duration-ms="11732" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verBloco1 -->
-        <test-method signature="verBloco2()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:32:11Z" name="verBloco2" finished-at="2021-02-12T10:32:15Z" duration-ms="4291" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verBloco2 -->
-        <test-method signature="verBloco3()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:32:15Z" name="verBloco3" finished-at="2021-02-12T10:32:22Z" duration-ms="6501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verBloco3 -->
-        <test-method signature="verBloco4()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:32:22Z" name="verBloco4" finished-at="2021-02-12T10:32:43Z" duration-ms="21436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verBloco4 -->
-        <test-method signature="verBloco5()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:32:43Z" name="verBloco5" finished-at="2021-02-12T10:32:55Z" duration-ms="11974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verBloco5 -->
-        <test-method signature="excluirConfiguracao()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:32:55Z" name="excluirConfiguracao" finished-at="2021-02-12T10:33:26Z" duration-ms="30974" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="adicionarColunas()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@f2f2cc1]" name="adicionarColunas" duration-ms="93939" started-at="2021-02-15T16:37:25Z" finished-at="2021-02-15T16:38:59Z">
+          <exception class="org.openqa.selenium.json.JsonException">
             <message>
-              <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5.excluirConfiguracao(LeiautesExecucacoFuncionalidades4Pt5.java:266)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at com.sap.timp.pageObjectModel.BRB.AdicionarColunasPO.colunas(AdicionarColunasPO.java:176)
+	at com.timp.test.BRB.AdicionarColunas.adicionarColunas(AdicionarColunas.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -292,91 +71,119 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 34 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 46 more
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 85422879521f56cc52130e40d30b43d0
+*** Element info: {Using=xpath, value=//div[@data-id="31"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 51 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluirConfiguracao -->
-        <test-method signature="excluirLeiaute()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:33:26Z" name="excluirLeiaute" finished-at="2021-02-12T10:33:52Z" duration-ms="26230" status="PASS">
-=======
-        </test-method> <!-- brbEntrar -->
-        <test-method signature="criarConfiguracaoExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:35Z" name="criarConfiguracaoExecucoes" finished-at="2021-02-10T17:50:48Z" duration-ms="72863" status="PASS">
->>>>>>> refs/heads/Fernando
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- excluirLeiaute -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:33:52Z" name="afterClass" finished-at="2021-02-12T10:33:52Z" duration-ms="1" status="PASS">
->>>>>>> refs/remotes/origin/Cristhian
-=======
-        </test-method> <!-- criarConfiguracaoExecucoes -->
-        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:50:48Z" name="criarConfiguracao" finished-at="2021-02-10T17:53:25Z" duration-ms="157066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarConfiguracao -->
-        <test-method signature="configurarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:53:25Z" name="configurarConfiguracao" finished-at="2021-02-10T17:55:44Z" duration-ms="139031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configurarConfiguracao -->
-        <test-method signature="executar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:55:44Z" name="executar" finished-at="2021-02-10T17:57:16Z" duration-ms="91436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executar -->
-        <test-method signature="resto()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:57:16Z" name="resto" finished-at="2021-02-10T17:58:40Z" duration-ms="84237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resto -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:58:40Z" name="editar" finished-at="2021-02-10T17:59:51Z" duration-ms="70859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method signature="excluirExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:59:51Z" name="excluirExecucoes" finished-at="2021-02-10T18:00:51Z" duration-ms="60043" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirExecucoes -->
-        <test-method signature="excluirConfiguracoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T18:00:51Z" name="excluirConfiguracoes" finished-at="2021-02-10T18:02:13Z" duration-ms="81976" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirConfiguracoes -->
-        <test-method signature="excluirHierarquia()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T18:02:13Z" name="excluirHierarquia" finished-at="2021-02-10T18:03:12Z" duration-ms="59269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirHierarquia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T18:03:12Z" name="afterClass" finished-at="2021-02-10T18:03:12Z" duration-ms="1" status="PASS">
->>>>>>> refs/heads/Fernando
->>>>>>> refs/remotes/origin/master
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa -->
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId -->
->>>>>>> refs/remotes/origin/master
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:41:51Z" name="afterClass" finished-at="2021-02-15T10:41:51Z" duration-ms="0" status="PASS">
+        </test-method> <!-- adicionarColunas -->
+        <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-02-15T16:38:59Z" finished-at="2021-02-15T16:38:59Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 85422879521f56cc52130e40d30b43d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 85422879521f56cc52130e40d30b43d0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at com.timp.test.BRB.AdicionarColunas.afterClass(AdicionarColunas.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir -->
->>>>>>> refs/remotes/origin/Eliel
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
->>>>>>> refs/remotes/origin/Cristhian
-=======
-      </class> <!-- com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades -->
->>>>>>> refs/heads/Fernando
->>>>>>> refs/remotes/origin/master
+      </class> <!-- com.timp.test.BRB.AdicionarColunas -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

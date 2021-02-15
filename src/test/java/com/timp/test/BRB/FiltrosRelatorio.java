@@ -47,21 +47,15 @@ public class FiltrosRelatorio extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtrosEditor() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
 		String url = driver.getCurrentUrl();
 
@@ -72,6 +66,7 @@ public class FiltrosRelatorio extends TestBaseSteven {
 		} else {
 			amb = false;
 		}
+		
 
 		boolean mostrado = false;
 		mostrado = filtrosPO.AsignarFiltros();
@@ -114,7 +109,7 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "filtrosEditor")
 
 	public void filtrosBiblioteca() {
 
@@ -164,7 +159,7 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 4)
+	@Test(dependsOnMethods = "filtrosEditor")
 	public void asignarValores() {
 
 		filtrosPO.establecerValores();

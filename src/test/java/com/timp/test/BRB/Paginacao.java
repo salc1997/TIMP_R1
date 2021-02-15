@@ -44,21 +44,15 @@ public class Paginacao extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void login() {
 
+
+	@Test()
+	public void paginacion() {
+		
 		loginTC.login();
-	}
-
-	@Test(priority = 2)
-	public void brbEntrar() {
-
+		
 		acessarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 3)
-	public void paginacion() {
 
 		String paginaS = paginacionOP.paginacionPS();
 		assertEquals(paginaS, "2", paginaSeguiente);

@@ -38,22 +38,15 @@ public class FiltrosAvancados extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtrosAvanzados() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
 		ArrayList<String> datos = new ArrayList<String>();
 

@@ -34,21 +34,16 @@ public class ComentarioLibre extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void comentarioLibre() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
+		
 		ArrayList<Boolean> sucesso = comentarioLibrePO.aplicarComentarioLibre();
 		System.out.println(sucesso);
 		for (int i = 0; i < sucesso.size(); i++) {

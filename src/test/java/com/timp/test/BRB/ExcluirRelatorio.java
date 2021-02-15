@@ -32,28 +32,22 @@ public class ExcluirRelatorio extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void eliminar() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
+		
 		boolean sucesso = eliminarPO.eliminar();
 
 		assertTrue(sucesso, eliminar);
 
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "eliminar")
 	public void eliminarLixeira() {
 
 		boolean sucesso = eliminarPO.eliminarLixeira();

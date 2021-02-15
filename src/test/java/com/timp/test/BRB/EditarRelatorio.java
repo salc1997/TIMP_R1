@@ -40,21 +40,15 @@ public class EditarRelatorio extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
 		boolean sucesso = false;
 		sucesso = editarPO.editar();

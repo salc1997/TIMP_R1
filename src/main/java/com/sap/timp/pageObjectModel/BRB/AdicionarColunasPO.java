@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class NovoRelatorioPO extends TestBaseSteven{
+public class AdicionarColunasPO extends TestBaseSteven{
 	
 	
 	
@@ -111,104 +111,156 @@ public class NovoRelatorioPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/span[1]")
 	public WebElement ferramenta;
 	
-	public NovoRelatorioPO() {
+	public AdicionarColunasPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	
+	public ArrayList<Boolean> colunas() {
+		
 	
-	public boolean criar() {
-		
-		String url = driver.getCurrentUrl();
-		
-		boolean td1 = false;
-		boolean tc2 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		novo.click();
-		
-		attributeToBeXpath("//*[@id=\"create-structure\"]/div", "class", "base-autocomplete required");
-		sleep(3000);
-		nome.sendKeys("Prueba Automatizada");
-		
-		tipo.click();
-		
-		tipoO.click();
-		sleep(1000);
-		
-		tributo.click();
-		
-		tributoO.click();
-		sleep(1000);
-		tributo.sendKeys(Keys.ESCAPE);
 	
-		sleep(1000);
-		
-		
-		if (tc2 == true) {
-			grupo.sendKeys("Notas Fiscais - v2.0");
-			grupo.sendKeys(Keys.ENTER);
-		}else if (tp1 == true) {
-			grupo.sendKeys("NF Nova");
-			grupo.sendKeys(Keys.ENTER);
-		}else if (tq1==true) {
-			grupo.sendKeys("Nota Fiscal - Nova");
-			grupo.sendKeys(Keys.ENTER);
-		}else {
-			grupo.sendKeys("Nota Fiscal Teste Automatizado");
-			grupo.sendKeys(Keys.ENTER);
-		}
-	
-		sleep(1000);
-		estrutura.sendKeys("Nota Fiscal (Itens com Impostos) + Empresa/Filial");
-		estrutura.sendKeys(Keys.ENTER);
-
-		sleep(1000);
-		
-		gravar.click();
-		waitExpectElement(mostrado);
-
-		sleep(5000);
-		
-		biblioteca.click();
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		pesquisar.sendKeys("Prueba Automatizada");
 		ferramenta.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		String texto = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div")).getText();
-		System.out.println(texto);
 
-		boolean sucesso = texto.contains("Prueba Automatizada");
+		
+	
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+	
+		//waitExpectElement(menu);
+		//sleep(menuT);
+
+		menu.click();
+		sleep(1000);
+		editar.click();
+		
+		sleep(3000);
+		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		buscarCampo.sendKeys("Empresa");
+		Actions actions = new Actions(driver);
+		actions.moveToElement(empresa);
+		sleep(3000);
+		actions.doubleClick(empresa).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("UF da Filial");
+		actions.moveToElement(ufFilial);
+		sleep(3000);
+		actions.doubleClick(ufFilial).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Filial");
+		actions.moveToElement(filial);
+		sleep(3000);
+		actions.doubleClick(filial).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Data lançamento doc. fiscal");
+		actions.moveToElement(docFiscal);
+		sleep(3000);
+		actions.doubleClick(docFiscal).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Docnum");
+		actions.moveToElement(docnum);
+		sleep(3000);
+		actions.doubleClick(docnum).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Categoria nota fiscal");
+		actions.moveToElement(categoria);
+		sleep(3000);
+		actions.doubleClick(categoria).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Valor");
+		actions.moveToElement(valor);
+		sleep(3000);
+		actions.doubleClick(valor).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Cód. material");
+		actions.moveToElement(codMaterial);
+		sleep(3000);
+		actions.doubleClick(codMaterial).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("CFOP");
+		actions.moveToElement(cfop);
+		sleep(3000);
+		actions.doubleClick(cfop).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("ICMS");
+		actions.moveToElement(cts);
+		sleep(3000);
+		actions.doubleClick(cts).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("BC ICMS");
+		actions.moveToElement(bc);
+		sleep(3000);
+		actions.doubleClick(bc).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Alíquota ICMS");
+		actions.moveToElement(aliquota);
+		sleep(3000);
+		actions.doubleClick(aliquota).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Valor ICMS");
+		actions.moveToElement(valorICMS);
+		sleep(3000);
+		actions.doubleClick(valorICMS).perform();
+		
+		sleep(2000);
+		
+		gravarE.click();
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		
+		driver.navigate().refresh();
+		
+		sleep(3000);
+		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sucesso.add(empresaC.isDisplayed());
+		sucesso.add(UfFilialC.isDisplayed());
+		sucesso.add(filialC.isDisplayed());
+		sucesso.add(dataC.isDisplayed());
+		sucesso.add(docnumC.isDisplayed());
+		sucesso.add(categoriaC.isDisplayed());
+		sucesso.add(valorC.isDisplayed());
+		sucesso.add(codMaterialC.isDisplayed());
+		sucesso.add(cfopC.isDisplayed());
+		sucesso.add(cstC.isDisplayed());
+		sucesso.add(bcC.isDisplayed());
+		sucesso.add(aliquotaC.isDisplayed());
+		sucesso.add(valorICMSC.isDisplayed());
 		
 		return sucesso;
 		
 		
+		
 	}
-	
-	
-	
 	
 	
 	

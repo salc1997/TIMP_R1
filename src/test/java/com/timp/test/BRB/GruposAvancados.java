@@ -34,21 +34,14 @@ public class GruposAvancados extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void gruposAvanzados() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
 
 		gruposAvanzadosPO.gruposAvanzadosAplicar();
 
@@ -70,7 +63,7 @@ public class GruposAvancados extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "gruposAvanzados")
 	public void eliminarGrupos() {
 
 		boolean sucesso = false;

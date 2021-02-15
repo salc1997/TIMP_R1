@@ -8,16 +8,16 @@ import com.timp.test.BRB.*;
 
 public class AutomacoesBrb extends TestBaseSteven {
 	LoginBRB loginTest;
-	BRBAcessar brbAcessar;
-	Paginacion paginacion;
+	AcessarBRB brbAcessar;
+	Paginacao paginacion;
 	ReordenarColuna reordenarColuna;
-	FiltrosAvançados filtrosAvanaçados;
+	FiltrosAvancados filtrosAvanaçados;
 	NovoRelatorio novoRelatirio;
-	PublicoYPrivado publicoYPrivado;
+	PublicoEPrivado publicoYPrivado;
 	ExcluirColuna excluirColuna;
-	Editar editar;
-	Filtros filtros;
-	CriarCopia criarCopia; 
+	EditarRelatorio editar;
+	FiltrosRelatorio filtros;
+	CriarComCopia criarCopia; 
 	AtivarCorrecao ativarCorrecao;
 	AtivarComentario ativarComentario;
 	RenomearColuna renomearColuna;
@@ -26,14 +26,14 @@ public class AutomacoesBrb extends TestBaseSteven {
 	CampoOutput campoOutput;
 	FormatacaoEVariante formatacaoEVariante;
 	FiltroColunas filtroColunas;
-	GruposAvanzados gruposAvanzados;
+	GruposAvancados gruposAvanzados;
 	CrescenteEDecrescente crescenteEDecrescente;
-	ListaSuspensa listaSuspensa;
+	ComentarioListaSuspensa listaSuspensa;
 	ComentarioLibre comentarioLibre;
 	Imprimir imprimir;
 	Exportar exportar;
 	Visualizar visualizar;
-	Eliminar eliminar;
+	ExcluirRelatorio eliminar;
 	Cabeçalho cabeçalho;
 	Regras regras;
 
@@ -57,7 +57,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void acessarBRB() {
 
 		System.out.println("-------------------Acessar BRB-------------------------");
-		brbAcessar = new BRBAcessar();
+		brbAcessar = new AcessarBRB();
 
 		brbAcessar.beforeClass();
 
@@ -73,7 +73,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		System.out.println("-------------------Paginação-------------------------");
 
-		paginacion = new Paginacion();
+		paginacion = new Paginacao();
 
 		paginacion.beforeClass();
 
@@ -89,7 +89,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void filtrosAvanzados() {
 
 		System.out.println("-------------------Filtros Avançados-------------------------");
-		filtrosAvanaçados = new FiltrosAvançados();
+		filtrosAvanaçados = new FiltrosAvancados();
 
 		filtrosAvanaçados.beforeClass();
 
@@ -123,7 +123,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void publicoYPrivado() {
 
 		System.out.println("-------------------Publico e Privado-------------------------");
-		publicoYPrivado = new PublicoYPrivado();
+		publicoYPrivado = new PublicoEPrivado();
 
 		publicoYPrivado.beforeClass();
 
@@ -157,7 +157,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void editarRelatorio() {
 
 		System.out.println("-------------------Editar Relatório-------------------------");
-		editar = new Editar();
+		editar = new EditarRelatorio();
 
 		editar.beforeClass();
 
@@ -188,7 +188,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 	@Test(priority = 9)
 	public void filtrosRelatorio() {
-		filtros = new Filtros();
+		filtros = new FiltrosRelatorio();
 
 		System.out.println("-------------------Filtros Relartório-------------------------");
 		filtros.beforeClass();
@@ -207,7 +207,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void criarCopia() {
 
 		System.out.println("-------------------Criar Cópia-------------------------");
-		criarCopia = new CriarCopia();
+		criarCopia = new CriarComCopia();
 		criarCopia.beforeClass();
 
 		criarCopia.login();
@@ -341,7 +341,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void gruposAvanzados() {
 
 		System.out.println("-------------------Grupos Avançados-------------------------");
-		gruposAvanzados = new GruposAvanzados();
+		gruposAvanzados = new GruposAvancados();
 		gruposAvanzados.beforeClass();
 
 		gruposAvanzados.login();
@@ -370,7 +370,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void comentarioListaSuspensa() {
 
 		System.out.println("-------------------Comentário em Lista Suspensa-------------------------");
-		listaSuspensa = new ListaSuspensa();
+		listaSuspensa = new ComentarioListaSuspensa();
 		listaSuspensa.beforeClass();
 		listaSuspensa.login();
 		listaSuspensa.brbEntrar();
@@ -463,7 +463,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 	@Test(priority = 28)
 	public void ExcluirRelatorio() {
 		System.out.println("-------------------Excluir-------------------------");
-		eliminar = new Eliminar();
+		eliminar = new ExcluirRelatorio();
 
 		eliminar.beforeClass();
 

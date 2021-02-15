@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ListaSuspensaPO;
 
-public class ListaSuspensa extends TestBaseSteven {
+public class ComentarioListaSuspensa extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

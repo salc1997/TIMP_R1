@@ -1,4 +1,4 @@
-package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.copy;
+package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630;
 
 import static org.testng.Assert.assertTrue;
 
@@ -15,12 +15,15 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505ExcluirPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600ExcluirPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.RegistroM605ExcluirPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM620.RegistroM620ExcluirPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625ExcluirPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630ExcluirPO;
 
-public class RegistroM605Excluir extends TestBaseSteven {
+public class RegistroM630Excluir extends TestBaseSteven {
   
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	RegistroM605ExcluirPO registroM605ExcluirPO;
+	RegistroM630ExcluirPO registroM630ExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -28,7 +31,7 @@ public class RegistroM605Excluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registroM605ExcluirPO = new RegistroM605ExcluirPO();
+		registroM630ExcluirPO = new RegistroM630ExcluirPO();
 	}
 
 	@AfterClass
@@ -36,23 +39,15 @@ public class RegistroM605Excluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void excluir() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
+		
 		acessarTCCPO.acessarTCC();
 
-	}
-
-	@Test(priority = 2)
-	public void excluir() {
-
-		ArrayList<Boolean> sucesso = registroM605ExcluirPO.excluir();
+		ArrayList<Boolean> sucesso = registroM630ExcluirPO.excluir();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);

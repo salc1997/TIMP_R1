@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.GruposAvanzadosPO;
 
-public class GruposAvanzados extends TestBaseSteven {
+public class GruposAvancados extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

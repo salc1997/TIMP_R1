@@ -1,64 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="2" passed="2">
-=======
-<testng-results total="3" passed="3" failed="0" skipped="0">
->>>>>>> refs/remotes/origin/master
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="220000" started-at="2021-02-13T03:25:38Z" finished-at="2021-02-13T03:29:18Z">
-=======
-  <suite started-at="2021-02-12T04:49:58Z" name="Default suite" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
->>>>>>> refs/remotes/origin/master
+  <suite name="Default suite" duration-ms="107570" started-at="2021-02-15T18:08:41Z" finished-at="2021-02-15T18:10:28Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="220000" started-at="2021-02-13T03:25:38Z" finished-at="2021-02-13T03:29:18Z">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="beforeClass" is-config="true" duration-ms="18852" started-at="2021-02-12T21:25:38Z" finished-at="2021-02-12T21:25:57Z">
-=======
-    <test started-at="2021-02-12T04:49:58Z" name="Default test" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
-      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:49:58Z" name="beforeClass" finished-at="2021-02-11T22:50:21Z" duration-ms="23142" status="PASS">
->>>>>>> refs/remotes/origin/master
+    <test name="Default test" duration-ms="107570" started-at="2021-02-15T18:08:41Z" finished-at="2021-02-15T18:10:28Z">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="16325" started-at="2021-02-15T12:08:41Z" finished-at="2021-02-15T12:08:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="criar" duration-ms="117954" started-at="2021-02-12T21:25:57Z" finished-at="2021-02-12T21:27:55Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:21Z" name="login" finished-at="2021-02-11T22:50:31Z" duration-ms="10000" status="PASS">
->>>>>>> refs/remotes/origin/master
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="excluir" duration-ms="78762" started-at="2021-02-12T21:27:55Z" finished-at="2021-02-12T21:29:14Z">
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="excluir" duration-ms="86821" started-at="2021-02-15T12:08:57Z" finished-at="2021-02-15T12:10:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="afterClass" is-config="true" duration-ms="4417" started-at="2021-02-12T21:29:14Z" finished-at="2021-02-12T21:29:18Z">
-=======
-        </test-method> <!-- login -->
-        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:31Z" name="acessarTDK" finished-at="2021-02-11T22:50:50Z" duration-ms="19236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarTDK -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:50Z" name="filtro" finished-at="2021-02-11T22:51:13Z" duration-ms="23468" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:51:13Z" name="afterClass" finished-at="2021-02-11T22:51:13Z" duration-ms="1" status="PASS">
->>>>>>> refs/remotes/origin/master
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4414" started-at="2021-02-15T12:10:24Z" finished-at="2021-02-15T12:10:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa -->
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId -->
->>>>>>> refs/remotes/origin/master
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

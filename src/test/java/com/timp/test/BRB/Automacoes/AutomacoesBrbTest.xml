@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+
+
+	<test name="Automações 1">
+		<classes>
+
+
+			<!-- Login -->
+			<class name="com.timp.test.ADM.LoginBRB.java"></class>
+
+
+			<!-- Acessar BRB -->
+			<class name="com.timp.test.BRB.AcessarBRB.java"></class>
+
+
+			<!-- Paginação -->
+			<class name="com.timp.test.BRB.Paginacao.java"></class>
+
+
+			<!-- Filtros Avançados -->
+			<class name="com.timp.test.BRB.FiltrosAvancados.java"></class>
+
+
+			<!-- Novo Relatório -->
+			<class name="com.timp.test.BRB.NovoRelatorio.java"></class>
+
+
+			<!-- Público e Privado -->
+			<class name="com.timp.test.BRB.PublicoEPrivado.java"></class>
+
+
+			<!-- Excluir Coluna -->
+			<class name="com.timp.test.BRB.ExcluirColuna.java"></class>
+
+
+			<!-- Editar Relatório -->
+			<class name="com.timp.test.BRB.EditarRelatorio.java"></class>
+
+
+			<!-- Reordenar Coluna -->
+			<class name="com.timp.test.BRB.ReordenarColuna.java"></class>
+
+
+			<!-- Filtros No Relatório -->
+			<class name="com.timp.test.BRB.FiltrosRelatorio.java"></class>
+
+
+			<!-- Criar Com Cópia -->
+			<class name="com.timp.test.BRB.CriarComCopia.java"></class>
+
+
+			<!-- Ativar Correção -->
+			<class name="com.timp.test.BRB.AtivarCorrecao.java"></class>
+
+
+			<!-- Ativar Comentário -->
+			<class name="com.timp.test.BRB.AtivarComentario.java"></class>
+
+
+			<!-- Renomear Coluna -->
+			<class name="com.timp.test.BRB.RenomearColuna.java"></class>
+
+
+			<!-- Fórmula -->
+			<class name="com.timp.test.BRB.Formula.java"></class>
+
+
+			<!-- Agrupado Pelo Campo -->
+			<class name="com.timp.test.BRB.AgrupadoPeloCampo.java"></class>
+
+
+			<!-- Campo Output -->
+			<class name="com.timp.test.BRB.CampoOutput.java"></class>
+
+
+			<!-- Formatação E Variante -->
+			<class name="com.timp.test.BRB.FormatacaoEVariante.java"></class>
+
+
+			<!-- Filtro Nas Colunas -->
+			<class name="com.timp.test.BRB.FiltroColunas.java"></class>
+
+
+			<!-- Grupos Avançados -->
+			<class name="com.timp.test.BRB.GruposAvancados.java"></class>
+
+
+			<!-- Crescente e Decrescente -->
+			<class name="com.timp.test.BRB.CrescenteEDecrescente.java"></class>
+
+
+			<!-- Comentário Em Lista Suspensa -->
+			<class name="com.timp.test.BRB.ComentarioListaSuspensa.java"></class>
+
+
+			<!-- Comentário Libre -->
+			<class name="com.timp.test.BRB.ComentarioLibre.java"></class>
+
+
+			<!-- Visualizar -->
+			<class name="com.timp.test.BRB.Visualizar.java"></class>
+
+
+			<!-- Excluir Relatório -->
+			<class name="com.timp.test.BRB.ExcluirRelatorio.java"></class>
+
+
+
+
+		</classes>
+	</test> <!-- PruebaTest -->
+
+</suite> <!-- Suite -->

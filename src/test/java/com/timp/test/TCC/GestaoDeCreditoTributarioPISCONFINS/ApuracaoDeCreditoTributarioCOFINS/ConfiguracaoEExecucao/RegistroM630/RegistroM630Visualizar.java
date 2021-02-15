@@ -1,4 +1,4 @@
-package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.copy;
+package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630;
 
 import static org.testng.Assert.assertTrue;
 
@@ -15,12 +15,16 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505VisualizarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600VisualizarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.RegistroM605VisualizarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM620.RegistroM620ExcluirPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM620.RegistroM620VisualizarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625VisualizarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630VisualizarPO;
 
-public class RegistroM605Visualizar extends TestBaseSteven {
+public class RegistroM630Visualizar extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	RegistroM605VisualizarPO registroM605VisualizarPO;
+	RegistroM630VisualizarPO registroM630VisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -28,7 +32,7 @@ public class RegistroM605Visualizar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registroM605VisualizarPO = new RegistroM605VisualizarPO();
+		registroM630VisualizarPO = new RegistroM630VisualizarPO();
 	}
 
 	@AfterClass
@@ -36,23 +40,15 @@ public class RegistroM605Visualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
-
-		ArrayList<Boolean> sucesso = registroM605VisualizarPO.visualizar();
+		
+		loginTC.login();
+		
+		acessarTCCPO.acessarTCC();
+		
+		ArrayList<Boolean> sucesso = registroM630VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

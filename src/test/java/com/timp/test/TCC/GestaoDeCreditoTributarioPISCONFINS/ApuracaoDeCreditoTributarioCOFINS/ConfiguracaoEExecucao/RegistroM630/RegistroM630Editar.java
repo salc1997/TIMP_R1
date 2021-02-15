@@ -1,4 +1,4 @@
-package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.copy;
+package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630;
 
 import static org.testng.Assert.assertTrue;
 
@@ -14,12 +14,15 @@ import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.Apur
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600CriarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600EditarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.RegistroM605EditarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM620.RegistroM620CriarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM620.RegistroM620EditarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630EditarPO;
 
-public class RegistroM605Editar extends TestBaseSteven {
+public class RegistroM630Editar extends TestBaseSteven {
  
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	RegistroM605EditarPO registroM605EditarPO;
+	RegistroM630EditarPO registroM630EditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -27,7 +30,7 @@ public class RegistroM605Editar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registroM605EditarPO = new RegistroM605EditarPO();
+		registroM630EditarPO = new RegistroM630EditarPO();
 	}
 
 	@AfterClass
@@ -35,23 +38,15 @@ public class RegistroM605Editar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void criar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
+		
 		acessarTCCPO.acessarTCC();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-
-		boolean sucesso = registroM605EditarPO.editar();
+		boolean sucesso = registroM630EditarPO.editar();
 
 		assertTrue(sucesso, editado);
 	}

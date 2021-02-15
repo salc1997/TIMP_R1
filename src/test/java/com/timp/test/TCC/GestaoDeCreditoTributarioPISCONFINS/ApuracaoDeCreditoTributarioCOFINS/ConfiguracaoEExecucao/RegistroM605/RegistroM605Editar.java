@@ -35,21 +35,13 @@ public class RegistroM605Editar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void editar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
+		
 		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
-	public void criar() {
 
 		boolean sucesso = registroM605EditarPO.editar();
 

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Editar">
         <methods>
+<<<<<<< HEAD
+          <include name="criar"/>
+=======
           <include name="excluir"/>
 =======
 <suite parallel="none" name="Failed suite [Default suite]">
@@ -23,6 +29,7 @@
 >>>>>>> refs/remotes/origin/master
 =======
 >>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/master
           <include name="afterClass"/>
 =======
 <suite name="Failed suite [Default suite]">
@@ -35,6 +42,9 @@
 >>>>>>> refs/remotes/origin/Cristhian
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Editar -->
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +87,7 @@
         </methods>
       </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
 >>>>>>> refs/heads/Fernando
+>>>>>>> refs/remotes/origin/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

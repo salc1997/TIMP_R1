@@ -20,7 +20,7 @@ import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.AtivarCorrecaoPO;
 import com.sap.timp.pageObjectModel.BRB.EditarPO;
 
-public class Editar extends TestBaseSteven {
+public class EditarRelatorio extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

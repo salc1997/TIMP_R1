@@ -32,21 +32,14 @@ public class RegistroM110Excluir extends TestBaseMassiel{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
+		
+		loginTC.login();
+		
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso = registroM110ExcluirPO.excluir();
 
 		assertTrue(sucesso, Criar);

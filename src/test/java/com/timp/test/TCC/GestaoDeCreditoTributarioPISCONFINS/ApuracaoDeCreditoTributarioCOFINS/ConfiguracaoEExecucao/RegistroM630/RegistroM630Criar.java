@@ -1,4 +1,4 @@
-package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.copy;
+package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630;
 
 import static org.testng.Assert.assertTrue;
 
@@ -13,12 +13,15 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505CriarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600CriarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.RegistroM605CriarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM620.RegistroM620CriarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625CriarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630CriarPO;
 
-public class RegistroM605Criar extends TestBaseSteven {
+public class RegistroM630Criar extends TestBaseSteven {
  
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	RegistroM605CriarPO registroM605CriarPO;
+	RegistroM630CriarPO registroM630CriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +29,7 @@ public class RegistroM605Criar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registroM605CriarPO = new RegistroM605CriarPO();
+		registroM630CriarPO = new RegistroM630CriarPO();
 	}
 
 	@AfterClass
@@ -34,23 +37,15 @@ public class RegistroM605Criar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void criar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
+		
 		acessarTCCPO.acessarTCC();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-
-		boolean sucesso = registroM605CriarPO.criar();
+		boolean sucesso = registroM630CriarPO.criar();
 
 		assertTrue(sucesso, Criar);
 	}

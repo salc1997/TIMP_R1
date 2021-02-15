@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="1" passed="1">
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18,8 +21,12 @@
 =======
 <testng-results total="11" passed="11" failed="0" skipped="0">
 >>>>>>> refs/heads/Fernando
+>>>>>>> refs/remotes/origin/master
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="107570" started-at="2021-02-15T18:08:41Z" finished-at="2021-02-15T18:10:28Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,8 +48,14 @@
 =======
   <suite started-at="2021-02-10T23:49:01Z" name="Default suite" finished-at="2021-02-11T00:03:12Z" duration-ms="851488">
 >>>>>>> refs/heads/Fernando
+>>>>>>> refs/remotes/origin/master
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="107570" started-at="2021-02-15T18:08:41Z" finished-at="2021-02-15T18:10:28Z">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="16325" started-at="2021-02-15T12:08:41Z" finished-at="2021-02-15T12:08:57Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,9 +89,13 @@
       <class name="com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:01Z" name="beforeClass" finished-at="2021-02-10T17:49:14Z" duration-ms="13025" status="PASS">
 >>>>>>> refs/heads/Fernando
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="excluir" duration-ms="86821" started-at="2021-02-15T12:08:57Z" finished-at="2021-02-15T12:10:24Z">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -125,9 +142,13 @@
         </test-method> <!-- acessarTCC -->
         <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:41:10Z" name="excluir" finished-at="2021-02-15T10:41:51Z" duration-ms="41529" status="PASS">
 >>>>>>> refs/remotes/origin/Eliel
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir@f2f2cc1]" name="afterClass" is-config="true" duration-ms="4414" started-at="2021-02-15T12:10:24Z" finished-at="2021-02-15T12:10:28Z">
+=======
 <<<<<<< HEAD
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="afterClass" is-config="true" duration-ms="4417" started-at="2021-02-12T21:29:14Z" finished-at="2021-02-12T21:29:18Z">
 =======
@@ -324,9 +345,13 @@
         </test-method> <!-- excluirHierarquia -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T18:03:12Z" name="afterClass" finished-at="2021-02-10T18:03:12Z" duration-ms="1" status="PASS">
 >>>>>>> refs/heads/Fernando
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Excluir -->
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -351,6 +376,7 @@
 =======
       </class> <!-- com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades -->
 >>>>>>> refs/heads/Fernando
+>>>>>>> refs/remotes/origin/master
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

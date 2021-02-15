@@ -1,125 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-=======
-=======
->>>>>>> refs/heads/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
->>>>>>> refs/heads/Fernando
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir">
-=======
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
->>>>>>> refs/heads/Cristhian
+      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
         <methods>
+          <include name="ejecutarFinal"/>
+          <include name="excluirConfiguracoes1"/>
+          <include name="excluirConfiguracoes2"/>
           <include name="beforeClass"/>
+          <include name="relacionamentoFinalyAbrirHierarquiaGrupo"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="Editar"/>
-=======
-          <include name="sequenciaDeItemPorDocumento"/>
->>>>>>> refs/heads/Cristhian
-          <include name="beforeClass"/>
-=======
-          <include name="criar"/>
->>>>>>> refs/heads/Fernando
+          <include name="excluirHierarquia1"/>
+          <include name="excluirHierarquia2"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisTabelasEditar -->
-=======
-=======
->>>>>>> refs/heads/Eliel
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM510.RegistroM510Editar">
-=======
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasVisualizar">
->>>>>>> refs/heads/Fernando
-        <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="Editar"/>
-=======
->>>>>>> refs/heads/Fernando
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1502.Registro1502Editar -->
->>>>>>> refs/remotes/origin/Eliel
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
-        <methods>
-          <include name="resultadoDoAbaParte1"/>
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
-    <classes>
-      <class name="com.timp.test.TPC.ParâmetrosGeraisCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TPC.ParâmetrosGeraisCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar -->
-=======
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao -->
->>>>>>> refs/remotes/origin/Steven
-=======
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdiçãoTabelasExcluir -->
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM510.RegistroM510Editar -->
->>>>>>> refs/heads/Eliel
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigosDeTransferencias.TabelaDeCodigosDeTransferenciasVisualizar -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -29,19 +29,15 @@ public class AssociaçãoCodigoAjusteCriar extends TestBaseFernando{
   public void afterClass() {
 	 driver.close();
   }
+ 
   
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void ingresarMDR() {
-	  accesarMDRPO.acessarMDR();
-  }
-  
-  @Test(priority = 2)
+  @Test()
   public void criarAssociaçãoCodigoAjuste() {
+	  
+	  loginTC.login();
+	  
+	  accesarMDRPO.acessarMDR();
+	  
 	  boolean sucesso = associaçãoCodigoAjusteCriarPO.criarAssociaçãoCodigoAjusteCriar();
 	  assertTrue(sucesso, Criar);
   }

@@ -31,19 +31,17 @@ public class AntecipacaoDetalhe extends TestBaseFernando{
 		  driver.close();
 	  }
 	  
-	  @Test(priority = 0)
-	  public void login() {
+	  
+
+	  
+	  @Test()
+	  public void detalhe() {	
+		  
 		  loginTC.login();
-	  }
-	  
-	  @Test(priority = 1)
-	  public void acessarMDR() {
-		  boolean sucesso = accesarMDR.acessarMDR();
-		  assertTrue(sucesso, "The element is not present");
-	  }
-	  
-	  @Test(priority = 2)
-	  public void detalhe() {	  
+		  
+		  accesarMDR.acessarMDR();
+		  
+		  
 		  ArrayList<Boolean> sucesso = antecipacaoDetalhePO.detalhe();
 		  for(int i = 0; i < sucesso.size(); i++) {
 			  assertTrue(sucesso.get(i), Detalhes);

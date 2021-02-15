@@ -31,18 +31,14 @@ public class AssociaçãoCodigoAjusteExcluir extends TestBaseFernando{
 	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void ingresarMDR() {
-	  accesarMDRPO.acessarMDR();
-  }
   
   @Test(priority = 2)
   public void excluirAssociaçãoCodigoAjuste() {
+	  
+	  loginTC.login();
+	  
+	  accesarMDRPO.acessarMDR();
+	  
 	  boolean sucesso = associaçãoCodigoAjusteExcluirPO.excluirAssociaçãoCodigoAjuste();
 	  assertTrue(sucesso, Eliminado);
   }

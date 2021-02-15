@@ -33,22 +33,18 @@ public class MunicipioEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void editar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void editar() {
-
-		municipioCriarPO.editar();
+		boolean sucesso = municipioCriarPO.editar();
+		
+		assertTrue(sucesso, editado);
+		
+		
 	}
 }

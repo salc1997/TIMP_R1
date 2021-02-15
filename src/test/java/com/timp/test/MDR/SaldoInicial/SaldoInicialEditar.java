@@ -17,39 +17,31 @@ public class SaldoInicialEditar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SaldoInicialEditarPO saldoInicialEditarPO;
-	
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  saldoInicialEditarPO = new SaldoInicialEditarPO();
-	  
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		saldoInicialEditarPO = new SaldoInicialEditarPO();
+
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void editarSaldo() {
+
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
-  public void editarSaldo() {
-		
 		boolean sucesso = saldoInicialEditarPO.editarSaldoInicial();
 		assertTrue(sucesso, Editar);
-		
-  }
+
+	}
 
 }

@@ -28,20 +28,17 @@ public class TributosExcluir extends TestBaseKathy {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
+		
+		loginTC.login();
+
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = tributosExcluirPO.tributosExcluir();
 		assertTrue(sucesso, Eliminado);
 	}

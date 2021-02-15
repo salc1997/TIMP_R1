@@ -14,39 +14,33 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class EmprestimosEditar extends TestBaseKenssy {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	EmprestimosEditarPO emprestimosEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  emprestimosEditarPO = new EmprestimosEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  //driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		emprestimosEditarPO = new EmprestimosEditarPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void editarEmprestimos() {
-	  boolean sucesso = emprestimosEditarPO.editarEmprestimos();
-	  assertTrue(sucesso, Editar);
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void editarEmprestimos() {
+
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
+
+		boolean sucesso = emprestimosEditarPO.editarEmprestimos();
+		assertTrue(sucesso, Editar);
+	}
 
 }

@@ -12,43 +12,42 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondiçaoExcluirenMasasPO;
 import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoExcluirMasasPO;
 
-public class CadastroCondiçaoExcluirMasas extends TestBaseMassiel{
+public class CadastroCondiçaoExcluirMasas extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondiçaoExcluirenMasasPO cadastroCondiçaoExcluirenMasasPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  	driver = initializationM();
-			loginTC = new LoginTC();
-			acessarMDRPO = new AcessarMDRPO();
-			 cadastroCondiçaoExcluirenMasasPO = new CadastroCondiçaoExcluirenMasasPO();
-	  }
-	 @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  @Test(priority = 0)
-		public void login() {
-			loginTC.login();
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		cadastroCondiçaoExcluirenMasasPO = new CadastroCondiçaoExcluirenMasasPO();
+	}
 
-		}
+	@AfterClass
+	public void afterClass() {
 
-		@Test(priority = 1)
-		public void acessarMDR() {
+		driver.close();
+	}
 
-			acessarMDRPO.acessarMDR();
+	@Test()
+	public void criar() {
 
-		}
+		loginTC.login();
 
-		@Test(priority = 2)
-		public void criar() {
-			
-			
-			boolean sucesso =  cadastroCondiçaoExcluirenMasasPO.criar();
-			assertTrue(sucesso, Criar);
-			
-			boolean sucesso2 = cadastroCondiçaoExcluirenMasasPO.HierarquiaDeCenariosDeCorreçaoExcluirMasas();
-			assertTrue(sucesso2, Eliminado);
-		}
+		acessarMDRPO.acessarMDR();
+
+		boolean sucesso = cadastroCondiçaoExcluirenMasasPO.criar();
+		assertTrue(sucesso, Criar);
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+		boolean sucesso2 = cadastroCondiçaoExcluirenMasasPO.HierarquiaDeCenariosDeCorreçaoExcluirMasas();
+		assertTrue(sucesso2, Eliminado);
+	}
+	
 }

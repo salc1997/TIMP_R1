@@ -15,42 +15,37 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CompatibilidadeEntreFPASVisualizar extends TestBaseKenssy{
+public class CompatibilidadeEntreFPASVisualizar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEntreFPASVisualizarPO compatibilidadeEntreFPASCriarFPASVisualizarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  compatibilidadeEntreFPASCriarFPASVisualizarPO = new CompatibilidadeEntreFPASVisualizarPO();
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		compatibilidadeEntreFPASCriarFPASVisualizarPO = new CompatibilidadeEntreFPASVisualizarPO();
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void visualizarCompatibilidadeEntreFPAS() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
+		
+		ArrayList<Boolean> sucesso = compatibilidadeEntreFPASCriarFPASVisualizarPO.visualizarCompatibilidadeEntreFPAS();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}
-
-	@Test(priority = 2)
-	  public void visualizarCompatibilidadeEntreFPAS() {
-		 ArrayList<Boolean> sucesso = compatibilidadeEntreFPASCriarFPASVisualizarPO.visualizarCompatibilidadeEntreFPAS();
-
-			for (int i = 0; i < sucesso.size(); i++) {
-				assertTrue(sucesso.get(i), visualizaçar);
-			}
-	  }
 
 }

@@ -33,22 +33,13 @@ public class AliquotaDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void filtro() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-	
-
-	@Test(priority = 2)
-	public void filtro() {
 
 		boolean sucesso = aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO.filtro();
 		assertTrue(sucesso, Filtros);

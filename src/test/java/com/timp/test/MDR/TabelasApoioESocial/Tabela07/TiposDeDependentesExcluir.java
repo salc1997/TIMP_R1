@@ -31,7 +31,7 @@ public class TiposDeDependentesExcluir extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,9 +44,12 @@ public class TiposDeDependentesExcluir extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void excluir() {
+
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tiposDeDependentesExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

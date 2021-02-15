@@ -30,7 +30,7 @@ public class ConfratacaoCriar extends TestBaseMassiel{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,9 +43,12 @@ public class ConfratacaoCriar extends TestBaseMassiel{
 		acessarMDRPO.acessarMDR();
 
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = confrontacaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);

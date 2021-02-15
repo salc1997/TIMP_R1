@@ -34,9 +34,9 @@ public class StatusParaBCEExcluir extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -48,10 +48,14 @@ public class StatusParaBCEExcluir extends TestBaseSteven {
 
 		acessarMDRPO.acessarMDR();
 
-	}
+	}*/
 
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
+		
+		loginTC.login();
+		
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = statusParaBCEExcluirPO.excluir();
 

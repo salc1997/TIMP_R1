@@ -28,7 +28,9 @@ public class MunicipioEditar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
+  /*
   @Test(priority = 0)
   public void ingresar() {
 		loginTC.login();
@@ -37,11 +39,15 @@ public class MunicipioEditar extends TestBaseMassiel{
   @Test(priority = 1)
   public void ingresarMDR() {
 		accesarMDRPO.acessarMDR();
-	}
+	}*/
   
   
-  @Test(priority = 2)
+  @Test()
   public void editar() {
+	  
+	  loginTC.login();
+	  accesarMDRPO.acessarMDR();
+
 	
 	  boolean sucesso = municipioEditarPO.Editar();
 	  assertTrue(sucesso, Editar);

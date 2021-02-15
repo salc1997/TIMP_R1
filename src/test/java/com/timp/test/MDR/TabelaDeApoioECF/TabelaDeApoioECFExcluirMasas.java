@@ -28,7 +28,7 @@ public class TabelaDeApoioECFExcluirMasas extends TestBaseMassiel{
   @AfterClass
   public void afterClass() {
   }
-
+  /*
   @Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -40,10 +40,13 @@ public class TabelaDeApoioECFExcluirMasas extends TestBaseMassiel{
 
 		acessarMDRPO.acessarMDR();
 
-	}
+	}*/
 	
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = tabelaDeApoioECFExcluirMasasPO.Criar();
 		assertTrue(sucesso, Criar);

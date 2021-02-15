@@ -347,8 +347,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 01 - Categorias De Trabalhadores-------------------------");
 				categoriasDeTrabalhadoresCriar = new CategoriasDeTrabalhadoresCriar();
 				categoriasDeTrabalhadoresCriar.beforeClass();
-				categoriasDeTrabalhadoresCriar.login();
-				categoriasDeTrabalhadoresCriar.acessarMDR();
 				categoriasDeTrabalhadoresCriar.criar();
 				categoriasDeTrabalhadoresCriar.afterClass();
 
@@ -358,8 +356,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void categoriasDeTrabalhadoresEditar() {
 				categoriasDeTrabalhadoresEditar = new CategoriasDeTrabalhadoresEditar();
 				categoriasDeTrabalhadoresEditar.beforeClass();
-				categoriasDeTrabalhadoresEditar.login();
-				categoriasDeTrabalhadoresEditar.acessarMDR();
 				categoriasDeTrabalhadoresEditar.editar();
 				categoriasDeTrabalhadoresEditar.afterClass();
 
@@ -369,8 +365,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void categoriasDeTrabalhadoresExcluirMassa() {
 				categoriasDeTrabalhadoresExcluirMassa = new CategoriasDeTrabalhadoresExcluirMassa();
 				categoriasDeTrabalhadoresExcluirMassa.beforeClass();
-				categoriasDeTrabalhadoresExcluirMassa.login();
-				categoriasDeTrabalhadoresExcluirMassa.acessarMDR();
 				categoriasDeTrabalhadoresExcluirMassa.criar();
 				categoriasDeTrabalhadoresExcluirMassa.afterClass();
 
@@ -380,8 +374,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void categoriasDeTrabalhadoresVisualizar() {
 				categoriasDeTrabalhadoresVisualizar = new CategoriasDeTrabalhadoresVisualizar();
 				categoriasDeTrabalhadoresVisualizar.beforeClass();
-				categoriasDeTrabalhadoresVisualizar.login();
-				categoriasDeTrabalhadoresVisualizar.acessarMDR();
 				categoriasDeTrabalhadoresVisualizar.Visualizar();
 				categoriasDeTrabalhadoresVisualizar.afterClass();
 
@@ -392,8 +384,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void categoriasDeTrabalhadoresExcluir() {
 				categoriasDeTrabalhadoresExcluir = new CategoriasDeTrabalhadoresExcluir();
 				categoriasDeTrabalhadoresExcluir.beforeClass();
-				categoriasDeTrabalhadoresExcluir.login();
-				categoriasDeTrabalhadoresExcluir.acessarMDR();
 				categoriasDeTrabalhadoresExcluir.excluir();
 				categoriasDeTrabalhadoresExcluir.afterClass();
 				System.out.println("------------------- Tabela 01 - Categorias De Trabalhadores Fim-------------------------");
@@ -408,8 +398,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 02 - Financiamento De Apos Esp-------------------------");
 				financiamentoDeAposEspCriar = new FinanciamentoDeAposEspCriar();
 				financiamentoDeAposEspCriar.beforeClass();
-				financiamentoDeAposEspCriar.login();
-				financiamentoDeAposEspCriar.acessarMDR();
 				financiamentoDeAposEspCriar.criar();
 				financiamentoDeAposEspCriar.afterClass();
 
@@ -419,8 +407,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void financiamentoDeAposEspEditar() {
 				financiamentoDeAposEspEditar = new FinanciamentoDeAposEspEditar();
 				financiamentoDeAposEspEditar.beforeClass();
-				financiamentoDeAposEspEditar.login();
-				financiamentoDeAposEspEditar.acessarMDR();
 				financiamentoDeAposEspEditar.editar();
 				financiamentoDeAposEspEditar.afterClass();
 
@@ -430,19 +416,25 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void financiamentoDeAposEspVisualizar() {
 				financiamentoDeAposEspVisualizar = new FinanciamentoDeAposEspVisualizar();
 				financiamentoDeAposEspVisualizar.beforeClass();
-				financiamentoDeAposEspVisualizar.login();
-				financiamentoDeAposEspVisualizar.acessarMDR();
 				financiamentoDeAposEspVisualizar.Visualizar();
 				financiamentoDeAposEspVisualizar.afterClass();
 
 			}
 			
 			@Test(priority = 9)
+			public void financiamientoDeAposEspExcluiMassa() {
+				financiamientoDeAposEspExcluiMassa = new FinanciamientoDeAposEspExcluiMassa();
+				financiamientoDeAposEspExcluiMassa.beforeClass();
+				financiamientoDeAposEspExcluiMassa.criar();
+				financiamientoDeAposEspExcluiMassa.excluirMassa();
+				financiamientoDeAposEspExcluiMassa.afterClass();
+
+			}
+			
+			@Test(priority = 10)
 			public void financiamentoDeAposEspExcluir() {
 				financiamentoDeAposEspExcluir = new FinanciamentoDeAposEspExcluir();
 				financiamentoDeAposEspExcluir.beforeClass();
-				financiamentoDeAposEspExcluir.login();
-				financiamentoDeAposEspExcluir.acessarMDR();
 				financiamentoDeAposEspExcluir.excluir();
 				financiamentoDeAposEspExcluir.afterClass();
 				
@@ -459,8 +451,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 03 - Natureza Das Rubricas-------------------------");
 				naturezaDasRubricasCriar = new NaturezaDasRubricasCriar();
 				naturezaDasRubricasCriar.beforeClass();
-				naturezaDasRubricasCriar.login();
-				naturezaDasRubricasCriar.acessarMDR();
 				naturezaDasRubricasCriar.criar();
 				naturezaDasRubricasCriar.afterClass();
 
@@ -471,8 +461,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			    
 				naturezaDasRubricasEditar = new NaturezaDasRubricasEditar();
 				naturezaDasRubricasEditar.beforeClass();
-				naturezaDasRubricasEditar.login();
-				naturezaDasRubricasEditar.acessarMDR();
 				naturezaDasRubricasEditar.editar();
 				naturezaDasRubricasEditar.afterClass();
 
@@ -483,8 +471,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			    
 				naturezaDasRubricasVisualizar = new NaturezaDasRubricasVisualizar();
 				naturezaDasRubricasVisualizar.beforeClass();
-				naturezaDasRubricasVisualizar.login();
-				naturezaDasRubricasVisualizar.acessarMDR();
 				naturezaDasRubricasVisualizar.Visualizar();
 				naturezaDasRubricasVisualizar.afterClass();
 
@@ -495,8 +481,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			    
 				naturezaDasRubricasExcluir = new NaturezaDasRubricasExcluir();
 				naturezaDasRubricasExcluir.beforeClass();
-				naturezaDasRubricasExcluir.login();
-				naturezaDasRubricasExcluir.acessarMDR();
 				naturezaDasRubricasExcluir.excluir();
 				naturezaDasRubricasExcluir.afterClass();
 			}
@@ -506,8 +490,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			    
 				naturezaDasRubricasExluirMassa = new NaturezaDasRubricasExluirMassa();
 				naturezaDasRubricasExluirMassa.beforeClass();
-				naturezaDasRubricasExluirMassa.login();
-				naturezaDasRubricasExluirMassa.acessarMDR();
 				naturezaDasRubricasExluirMassa.criar();
 				naturezaDasRubricasExluirMassa.excluirMassa();
 				naturezaDasRubricasExluirMassa.afterClass();
@@ -521,8 +503,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 04 - Codigos E Aliq. De FPRAS-------------------------");
 				codigosEAliqDeFPRASCriar = new CodigosEAliqDeFPRASCriar();
 				codigosEAliqDeFPRASCriar.beforeClass();
-				codigosEAliqDeFPRASCriar.login();
-				codigosEAliqDeFPRASCriar.acessarMDR();
 				codigosEAliqDeFPRASCriar.criar();
 				codigosEAliqDeFPRASCriar.afterClass();
 
@@ -532,8 +512,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void codigosEAliqDeFPRASEditar() {
 				codigosEAliqDeFPRASEditar = new CodigosEAliqDeFPRASEditar();
 				codigosEAliqDeFPRASEditar.beforeClass();
-				codigosEAliqDeFPRASEditar.login();
-				codigosEAliqDeFPRASEditar.acessarMDR();
 				codigosEAliqDeFPRASEditar.editar();
 				codigosEAliqDeFPRASEditar.afterClass();
 
@@ -543,8 +521,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void codigosEAliqDeFPRASVisualizar() {
 				codigosEAliqDeFPRASVisualizar = new CodigosEAliqDeFPRASVisualizar();
 				codigosEAliqDeFPRASVisualizar.beforeClass();
-				codigosEAliqDeFPRASVisualizar.login();
-				codigosEAliqDeFPRASVisualizar.acessarMDR();
 				codigosEAliqDeFPRASVisualizar.Visualizar();
 				codigosEAliqDeFPRASVisualizar.afterClass();
 
@@ -554,8 +530,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void codigosEAliqDeFPRASExcluir() {
 				codigosEAliqDeFPRASExcluir = new CodigosEAliqDeFPRASExcluir();
 				codigosEAliqDeFPRASExcluir.beforeClass();
-				codigosEAliqDeFPRASExcluir.login();
-				codigosEAliqDeFPRASExcluir.acessarMDR();
 				codigosEAliqDeFPRASExcluir.excluir();
 				codigosEAliqDeFPRASExcluir.afterClass();
 				
@@ -565,8 +539,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void codigosEAliqDeFPRASExcluirMassa() {
 				codigosEAliqDeFPRASExcluirMassa = new CodigosEAliqDeFPRASExcluirMassa();
 				codigosEAliqDeFPRASExcluirMassa.beforeClass();
-				codigosEAliqDeFPRASExcluirMassa.login();
-				codigosEAliqDeFPRASExcluirMassa.acessarMDR();
 				codigosEAliqDeFPRASExcluirMassa.criar();
 				codigosEAliqDeFPRASExcluirMassa.excluirMassa();
 				codigosEAliqDeFPRASExcluirMassa.afterClass();
@@ -582,8 +554,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 05 - Tipos de Registro-------------------------");
 				tiposDeRegistroCriar = new TiposDeRegistroCriar();
 				tiposDeRegistroCriar.beforeClass();
-				tiposDeRegistroCriar.login();
-				tiposDeRegistroCriar.acessarMDR();
 				tiposDeRegistroCriar.criar();
 				tiposDeRegistroCriar.afterClass();
 
@@ -593,8 +563,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeRegistroEditar() {
 				tiposDeRegistroEditar = new TiposDeRegistroEditar();
 				tiposDeRegistroEditar.beforeClass();
-				tiposDeRegistroEditar.login();
-				tiposDeRegistroEditar.acessarMDR();
 				tiposDeRegistroEditar.editar();
 				tiposDeRegistroEditar.afterClass();
 
@@ -604,8 +572,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeRegistroVisualizar() {
 				tiposDeRegistroVisualizar = new TiposDeRegistroVisualizar();
 				tiposDeRegistroVisualizar.beforeClass();
-				tiposDeRegistroVisualizar.login();
-				tiposDeRegistroVisualizar.acessarMDR();
 				tiposDeRegistroVisualizar.Visualizar();
 				tiposDeRegistroVisualizar.afterClass();
 
@@ -615,8 +581,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeRegistroExcluir() {
 				tiposDeRegistroExcluir = new TiposDeRegistroExcluir();
 				tiposDeRegistroExcluir.beforeClass();
-				tiposDeRegistroExcluir.login();
-				tiposDeRegistroExcluir.acessarMDR();
 				tiposDeRegistroExcluir.excluir();
 				tiposDeRegistroExcluir.afterClass();
 			}
@@ -625,8 +589,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeRegistroExcluirMassa() {
 				tiposDeRegistroExcluirMassa = new TiposDeRegistroExcluirMassa();
 				tiposDeRegistroExcluirMassa.beforeClass();
-				tiposDeRegistroExcluirMassa.login();
-				tiposDeRegistroExcluirMassa.acessarMDR();
 				tiposDeRegistroExcluirMassa.criar();
 				tiposDeRegistroExcluirMassa.excluirMassa();
 				tiposDeRegistroExcluirMassa.afterClass();
@@ -642,8 +604,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 06 - Paises-------------------------");
 				paisesCriar = new PaisesCriar();
 				paisesCriar.beforeClass();
-				paisesCriar.login();
-				paisesCriar.acessarMDR();
 				paisesCriar.criar();
 				paisesCriar.afterClass();
 
@@ -654,8 +614,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				
 				paisesEditar = new PaisesEditar();
 				paisesEditar.beforeClass();
-				paisesEditar.login();
-				paisesEditar.acessarMDR();
 				paisesEditar.editar();
 				paisesEditar.afterClass();
 
@@ -666,8 +624,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				
 				paisesVisualizar = new PaisesVisualizar();
 				paisesVisualizar.beforeClass();
-				paisesVisualizar.login();
-				paisesVisualizar.acessarMDR();
 				paisesVisualizar.Visualizar();
 				paisesVisualizar.afterClass();
 
@@ -678,8 +634,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				
 				paisesExcluir = new PaisesExcluir();
 				paisesExcluir.beforeClass();
-				paisesExcluir.login();
-				paisesExcluir.acessarMDR();
 				paisesExcluir.excluir();
 				paisesExcluir.afterClass();
 				
@@ -689,8 +643,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void paisesExcluirMassa() {
 				paisesExcluirMassa = new PaisesExcluirMassa();
 				paisesExcluirMassa.beforeClass();
-				paisesExcluirMassa.login();
-				paisesExcluirMassa.acessarMDR();
 				paisesExcluirMassa.criar();
 				paisesExcluirMassa.excluirMassa();
 				paisesExcluirMassa.afterClass();
@@ -704,8 +656,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Tabela 07 - Tipos de Dependentes-------------------------");
 				tiposDeDependentesCriar = new TiposDeDependentesCriar();
 				tiposDeDependentesCriar.beforeClass();
-				tiposDeDependentesCriar.login();
-				tiposDeDependentesCriar.acessarMDR();
 				tiposDeDependentesCriar.criar();
 				tiposDeDependentesCriar.afterClass();
 
@@ -716,8 +666,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeDependentesEditar() {
 			tiposDeDependentesEditar = new TiposDeDependentesEditar();
 				tiposDeDependentesEditar.beforeClass();
-				tiposDeDependentesEditar.login();
-				tiposDeDependentesEditar.acessarMDR();
 				tiposDeDependentesEditar.editar();
 				tiposDeDependentesEditar.afterClass();
 
@@ -727,8 +675,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeDependentesVisualizar() {
 				tiposDeDependentesVisualizar = new TiposDeDependentesVisualizar();
 				tiposDeDependentesVisualizar.beforeClass();
-				tiposDeDependentesVisualizar.login();
-				tiposDeDependentesVisualizar.acessarMDR();
 				tiposDeDependentesVisualizar.Visualizar();
 				tiposDeDependentesVisualizar.afterClass();
 
@@ -738,8 +684,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeDependentesExcluir() {
 				tiposDeDependentesExcluir = new TiposDeDependentesExcluir();
 				tiposDeDependentesExcluir.beforeClass();
-				tiposDeDependentesExcluir.login();
-				tiposDeDependentesExcluir.acessarMDR();
 				tiposDeDependentesExcluir.excluir();
 				tiposDeDependentesExcluir.afterClass();
 			}
@@ -748,8 +692,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void tiposDeDependentesExcluirMassa() {
 				tiposDeDependentesExcluirMassa = new TiposDeDependentesExcluirMassa();
 				tiposDeDependentesExcluirMassa.beforeClass();
-				tiposDeDependentesExcluirMassa.login();
-				tiposDeDependentesExcluirMassa.acessarMDR();
 				tiposDeDependentesExcluirMassa.criar();
 				tiposDeDependentesExcluirMassa.excluirMassa();
 				tiposDeDependentesExcluirMassa.afterClass();
@@ -774,9 +716,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void paisMoedaExcluirEmMassa() {
 				System.out.println("-------------------Siscoserv > Pais/Moeda-------------------------");
 				paisMoedaExcluirEmMassa = new PaisMoedaExcluirEmMassa();
-				paisMoedaExcluirEmMassa.beforeClass();
-				paisMoedaExcluirEmMassa.login();
-				paisMoedaExcluirEmMassa.acessarMDR();
+				paisMoedaExcluirEmMassa.beforeClass();;
 				paisMoedaExcluirEmMassa.criar();
 				paisMoedaExcluirEmMassa.afterClass();
 
@@ -788,8 +728,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Siscoserv > RegistroRAS-------------------------");
 				registroRASExcluirEmMassa = new RegistroRASExcluirEmMassa();
 				registroRASExcluirEmMassa.beforeClass();
-				registroRASExcluirEmMassa.login();
-				registroRASExcluirEmMassa.acessarMDR();
 				registroRASExcluirEmMassa.criar();
 				registroRASExcluirEmMassa.afterClass();
 
@@ -801,8 +739,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Siscoserv > RegistroRP-------------------------");
 				registroRPExcluirEmMassa = new RegistroRPExcluirEmMassa();
 				registroRPExcluirEmMassa.beforeClass();
-				registroRPExcluirEmMassa.login();
-				registroRPExcluirEmMassa.acessarMDR();
 				registroRPExcluirEmMassa.criar();
 				registroRPExcluirEmMassa.afterClass();
 
@@ -814,8 +750,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Atividades Para Tributacao > Tipos De Servicos-------------------------");
 				tiposDeServicosExcluirEmMassa = new TiposDeServicosExcluirEmMassa();
 				tiposDeServicosExcluirEmMassa.beforeClass();
-				tiposDeServicosExcluirEmMassa.login();
-				tiposDeServicosExcluirEmMassa.acessarMDR();
 				tiposDeServicosExcluirEmMassa.criar();
 				tiposDeServicosExcluirEmMassa.afterClass();
 
@@ -828,8 +762,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Valor Adicionado > Confrontacao-------------------------");
 				confratacaoCriar = new ConfratacaoCriar();
 				confratacaoCriar.beforeClass();
-				confratacaoCriar.login();
-				confratacaoCriar.acessarMDR();
 				confratacaoCriar.criar();
 				confratacaoCriar.afterClass();
 
@@ -839,8 +771,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void confrontacaoDetalhes() {
 				confrontacaoDetalhes = new ConfrontacaoDetalhes();
 				confrontacaoDetalhes.beforeClass();
-				confrontacaoDetalhes.login();
-				confrontacaoDetalhes.acessarMDR();
 				confrontacaoDetalhes.detalhes();
 				confrontacaoDetalhes.afterClass();
 
@@ -850,8 +780,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void confrontacaoEditar() {
 				confrontacaoEditar = new ConfrontacaoEditar();
 				confrontacaoEditar.beforeClass();
-				confrontacaoEditar.login();
-				confrontacaoEditar.acessarMDR();
 				confrontacaoEditar.editar();
 				confrontacaoEditar.afterClass();
 				
@@ -862,8 +790,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void confrontacaoVisualizar() {
 				confrontacaoVisualizar = new ConfrontacaoVisualizar();
 				confrontacaoVisualizar.beforeClass();
-				confrontacaoVisualizar.ingresar();
-				confrontacaoVisualizar.ingresarMDR();
 				confrontacaoVisualizar.visualizar();
 				confrontacaoVisualizar.afterClass();
 				
@@ -872,8 +798,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void confrontacaoExcluir() {
 				confrontacaoExcluir = new ConfrontacaoExcluir();
 				confrontacaoExcluir.beforeClass();
-				confrontacaoExcluir.ingresar();
-				confrontacaoExcluir.ingresarMDR();
 				confrontacaoExcluir.Excluir();
 				confrontacaoExcluir.afterClass();
 				System.out.println("-------------------Valor Adicionado > Confrontacao fim-------------------------");
@@ -886,8 +810,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Taxas De Conversao-------------------------");
 				taxasDeConversaoCriar = new TaxasDeConversaoCriar();
 				taxasDeConversaoCriar.beforeClass();
-				taxasDeConversaoCriar.login();
-				taxasDeConversaoCriar.acessarMDR();
 				taxasDeConversaoCriar.criar();
 				taxasDeConversaoCriar.afterClass();
 
@@ -898,8 +820,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void taxasDeConversaoEditar() {
 				taxasDeConversaoEditar = new TaxasDeConversaoEditar();
 				taxasDeConversaoEditar.beforeClass();
-				taxasDeConversaoEditar.login();
-				taxasDeConversaoEditar.acessarMDR();
+
 				taxasDeConversaoEditar.editar();
 				taxasDeConversaoEditar.afterClass();
 
@@ -909,8 +830,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void taxasDeConversaoVisualizar() {
 				taxasDeConversaoVisualizar = new TaxasDeConversaoVisualizar();
 				taxasDeConversaoVisualizar.beforeClass();
-				taxasDeConversaoVisualizar.login();
-				taxasDeConversaoVisualizar.acessarMDR();
 				taxasDeConversaoVisualizar.Visualizar();
 				taxasDeConversaoVisualizar.afterClass();
 
@@ -920,8 +839,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void taxasDeConversaoExcluirEmMassa() {
 				taxasDeConversaoExcluirEmMassa = new TaxasDeConversaoExcluirEmMassa();
 				taxasDeConversaoExcluirEmMassa.beforeClass();
-				taxasDeConversaoExcluirEmMassa.login();
-				taxasDeConversaoExcluirEmMassa.acessarMDR();
 				taxasDeConversaoExcluirEmMassa.criar();
 				taxasDeConversaoExcluirEmMassa.afterClass();
 			}
@@ -930,8 +847,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void taxasDeConversaoDetalhes() {
 				taxasDeConversaoDetalhes = new TaxasDeConversaoDetalhes();
 				taxasDeConversaoDetalhes.beforeClass();
-				taxasDeConversaoDetalhes.login();
-				taxasDeConversaoDetalhes.acessarMDR();
+
 				taxasDeConversaoDetalhes.detalhes();
 				taxasDeConversaoDetalhes.afterClass();
 			}
@@ -940,8 +856,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void taxasDeConversaoExcluir() {
 				taxasDeConversaoExcluir = new TaxasDeConversaoExcluir();
 				taxasDeConversaoExcluir.beforeClass();
-				taxasDeConversaoExcluir.login();
-				taxasDeConversaoExcluir.acessarMDR();
 				taxasDeConversaoExcluir.excluir();
 				taxasDeConversaoExcluir.afterClass();
 				System.out.println("-------------------Taxas De Conversao Fim-------------------------");
@@ -956,8 +870,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Thin Capitalization > Subcapitalizacao-------------------------");
 				subcapitalizacaoCriar = new SubcapitalizacaoCriar();
 				subcapitalizacaoCriar.beforeClass();
-				subcapitalizacaoCriar.login();
-				subcapitalizacaoCriar.acessarMDR();
 				subcapitalizacaoCriar.criar();
 				subcapitalizacaoCriar.afterClass();
 
@@ -967,8 +879,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void subcapitalizacaoEditar() {
 				subcapitalizacaoEditar = new SubcapitalizacaoEditar();
 				subcapitalizacaoEditar.beforeClass();
-				subcapitalizacaoEditar.login();
-				subcapitalizacaoEditar.acessarMDR();
 				subcapitalizacaoEditar.editar();
 				subcapitalizacaoEditar.afterClass();
 
@@ -978,8 +888,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void subcapitalizacaoExcluirEmMassa() {
 				subcapitalizacaoExcluirEmMassa = new SubcapitalizacaoExcluirEmMassa();
 				subcapitalizacaoExcluirEmMassa.beforeClass();
-				subcapitalizacaoExcluirEmMassa.login();
-				subcapitalizacaoExcluirEmMassa.acessarMDR();
 				subcapitalizacaoExcluirEmMassa.criar();
 				subcapitalizacaoExcluirEmMassa.afterClass();
 
@@ -989,8 +897,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void subcapitalizacaoExcluir() {
 				subcapitalizacaoExcluir = new SubcapitalizacaoExcluir();
 				subcapitalizacaoExcluir.beforeClass();
-				subcapitalizacaoExcluir.login();
-				subcapitalizacaoExcluir.acessarMDR();
 				subcapitalizacaoExcluir.excluir();
 				subcapitalizacaoExcluir.afterClass();
 				System.out.println("-------------------Thin Capitalization > Subcapitalizacao Fim-------------------------");

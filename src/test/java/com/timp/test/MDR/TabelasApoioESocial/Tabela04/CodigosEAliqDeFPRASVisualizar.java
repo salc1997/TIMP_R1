@@ -32,7 +32,7 @@ public class CodigosEAliqDeFPRASVisualizar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -45,9 +45,11 @@ public class CodigosEAliqDeFPRASVisualizar extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void Visualizar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = codigosEAliqDeFPRASVisualizarPO.visualizar();
 

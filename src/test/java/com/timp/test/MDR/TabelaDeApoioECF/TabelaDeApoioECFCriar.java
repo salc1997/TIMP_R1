@@ -31,7 +31,7 @@ public class TabelaDeApoioECFCriar extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -40,13 +40,16 @@ public class TabelaDeApoioECFCriar extends TestBaseSteven {
 
 	@Test(priority = 1)
 	public void acessarMDR() {
-
+		
 		acessarMDRPO.acessarMDR();
 
-	}
+	}*/
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tabelaDeApoioECFCriarPO.criar();
 		assertTrue(sucesso, semAcesso);

@@ -1097,6 +1097,24 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
 		System.out.println(mensaje);
 		
+
+		biblioteca.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+//		sim.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+		
+//		sim.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+		
+		
+		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		if (mensaje > 0) {
@@ -1168,11 +1186,26 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		nombreRegistro2.sendKeys("1");
 		sleep(2000);
 		
+		
+		abaCamposEspeciais.click();
+		sleep(2000);
+		
+		abaAjusteFiscais.click();
+		sleep(2000);
+		
+
+		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[2]/div[3]/div/div[5]");
 		sleep(2000);
 		moveToElement(camposFijoDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"1\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
+
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		nomeCampoFixo.sendKeys("Campo Fixo");
 		sleep(2000);
 		
@@ -1230,7 +1263,9 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		sleep(2000);
 		moveToElement(camposFijoManualDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"1\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
-		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		nomeCampoFixo.sendKeys("Campo Fixo Manual");
 		sleep(2000);
 		
@@ -1296,11 +1331,11 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		nombreRegistro3.sendKeys("1");
 		sleep(2000);
 		
-		abaCamposEspeciais.click();
-		sleep(2000);
-		
-		abaAjusteFiscais.click();
-		sleep(2000);
+//		abaCamposEspeciais.click();
+//		sleep(2000);
+//		
+//		abaAjusteFiscais.click();
+//		sleep(2000);
 		
 		subAbaAjusteFiscais.click();
 		sleep(2000);
@@ -1308,6 +1343,8 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		//ARRASTRAR ELEMENTOS
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[5]");
 		sleep(2000);
 		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
@@ -1328,11 +1365,11 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
-		abaAjusteFiscais.click();
-		sleep(2000);
-		
-		abaCamposEspeciais.click();
-		sleep(2000);
+//		abaAjusteFiscais.click();
+//		sleep(2000);
+//		
+//		abaCamposEspeciais.click();
+//		sleep(2000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1401,11 +1438,11 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		nombreRegistro4.sendKeys("1");
 		sleep(2000);
 		
-		abaCamposEspeciais.click();
-		sleep(2000);
-		
-		abaAjusteFiscais.click();
-		sleep(2000);
+//		abaCamposEspeciais.click();
+//		sleep(2000);
+//		
+//		abaAjusteFiscais.click();
+//		sleep(2000);
 		
 //		subAbaAjusteFiscais.click();
 //		sleep(2000);
@@ -1413,6 +1450,8 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		//ARRASTRAR ELEMENTOS
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[5]");
 		sleep(2000);
 		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
@@ -1433,11 +1472,11 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
-		abaAjusteFiscais.click();
-		sleep(2000);
-		
-		abaCamposEspeciais.click();
-		sleep(2000);
+//		abaAjusteFiscais.click();
+//		sleep(2000);
+//		
+//		abaCamposEspeciais.click();
+//		sleep(2000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1499,11 +1538,11 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		nombreRegistro5.sendKeys("1");
 		sleep(2000);
 		
-		abaCamposEspeciais.click();
-		sleep(2000);
-		
-		abaAjusteFiscais.click();
-		sleep(2000);
+//		abaCamposEspeciais.click();
+//		sleep(2000);
+//		
+//		abaAjusteFiscais.click();
+//		sleep(2000);
 		
 //		subAbaAjusteFiscais.click();
 //		sleep(2000);
@@ -1511,6 +1550,8 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		//ARRASTRAR ELEMENTOS
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[5]/div[3]/div/div[5]");
 		sleep(2000);
 		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"4\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
@@ -1531,8 +1572,8 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"4\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
-		abaAjusteFiscais.click();
-		sleep(2000);
+//		abaAjusteFiscais.click();
+//		sleep(2000);
 		
 		distinto5.click();
 		sleep(2000);
@@ -1912,11 +1953,11 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		parametrosManuais.click();
 		sleep(3000);
 		
-		camposManualExecutar.click();
-		sleep(2000);
-		
-		opcao.click();
-		sleep(2000);
+//		camposManualExecutar.click();
+//		sleep(2000);
+//		
+//		opcao.click();
+//		sleep(2000);
 		
 		execucao1.click();
 		sleep(3000);
@@ -2025,16 +2066,16 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 			sleep(2000);
 			
 			String campoFixoValor =  verCampoFixo.getText();
-			String campoFixoManualValor =  verCampoFixoManual.getText();
+			//String campoFixoManualValor =  verCampoFixoManual.getText();
 			
 			System.out.println("-----Datos Visualizar 2do Bloco----------");
 				System.out.println("Campo Fixo: "+ campoFixoValor);
-				System.out.println("Campo Fixo Manual: "+ campoFixoManualValor);
+				//System.out.println("Campo Fixo Manual: "+ campoFixoManualValor);
 			System.out.println("");
 			
 			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 				sucesso.add(campoFixoValor.contains("TESTE"));
-				sucesso.add(campoFixoManualValor.contains("TESTE 1"));
+				//sucesso.add(campoFixoManualValor.contains("TESTE 1"));
 			
 		return sucesso;
 	}
@@ -2100,7 +2141,7 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 			for (int i = 0; i < rows; i++) {
 				
 				System.out.println("Registro: " + f);
-				String totalRegistro = driver.findElement(By.xpath("//div[@class=\"tr-content\" and @id]["+f+"]/div[5]/div")).getText();
+				String totalRegistro = driver.findElement(By.xpath("//div[@class=\"tr-content\" and @id]["+f+"]/div[4]/div")).getText();
 	
 				//sucesso.add(totalRegistro.equals(f));
 				

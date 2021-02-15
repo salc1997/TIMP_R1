@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -22,8 +23,18 @@
 =======
 >>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirConfiguracao"/>
+>>>>>>> refs/remotes/origin/Cristhian
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa -->
@@ -45,6 +56,9 @@
         </methods>
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM410.RegistroM410Criar -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
+>>>>>>> refs/remotes/origin/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

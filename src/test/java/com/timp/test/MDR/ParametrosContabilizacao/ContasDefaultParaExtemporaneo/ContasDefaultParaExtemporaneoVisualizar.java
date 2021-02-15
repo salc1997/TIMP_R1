@@ -31,7 +31,7 @@ public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)

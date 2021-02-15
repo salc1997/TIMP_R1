@@ -91,6 +91,7 @@ public class AutomacoesMDR8 {
 	CadastroDeObrasEditar cadastroDeObrasEditar;
 	CadastroDeObrasExcluir cadastroDeObrasExcluir;
 	CadastroDeObrasExcluirEmMassa cadastroDeObrasExcluirEmMassa;
+	
 	// Cadastro Específico do INSS (CEI) > Cadastro de Obras
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
 	ConfiguracoesFundoSocialEditar configuracoesFundoSocialEditar;
@@ -143,6 +144,7 @@ public class AutomacoesMDR8 {
 
 	// Determinacao De Relevancia De Tarefa > Cadastro De Código De Regras
 	CadastroDeCódigoDeRegrasCriar cadastroDeCódigoDeRegrasCriar;
+	
 	// Determinacao Relevancia Tarefa Motivo Reabertura > Determinacion Relevancia
 	// Por Motivo
 	DeterminacionRelevanciaPorMotivoCriar determinacionRelevanciaPorMotivoCriar;
@@ -218,7 +220,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 1, dependsOnMethods = "regraDeReaberturaCriar")
+	@Test(priority = 1)
 	public void regraDeReaberturaEditar() {
 
 		regraDeReaberturaEditar = new RegraDeReaberturaEditar();
@@ -230,7 +232,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 2, dependsOnMethods = "regraDeReaberturaCriar")
+	@Test(priority = 2)
 	public void regraDeReaberturaDetalle() {
 
 		regraDeReaberturaDetalle = new RegraDeReaberturaDetalle();
@@ -254,7 +256,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "regraDeReaberturaCriar")
+	@Test(priority = 3)
 	public void regraDeReaberturaVisualizar() {
 
 		regraDeReaberturaVisualizar = new RegraDeReaberturaVisualizar();
@@ -266,7 +268,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 4, dependsOnMethods = "regraDeReaberturaCriar")
+	@Test(priority = 4)
 	public void regraDeReaberturaExcluir() {
 
 		regraDeReaberturaExcluir = new RegraDeReaberturaExcluir();
@@ -281,9 +283,9 @@ public class AutomacoesMDR8 {
 	}
 	// 12
 
-	// 7-------12
+	// 6-------12
 
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void cadastroDeObrasCriar() {
 
 		System.out.println("----Cadastro Específico do INSS (CEI) >	Cadastro de Obras-------------");
@@ -297,7 +299,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 7, dependsOnMethods = "cadastroDeObrasCriar")
+	@Test(priority = 7)
 	public void cadastroDeObrasEditar() {
 
 		cadastroDeObrasEditar = new CadastroDeObrasEditar();
@@ -309,7 +311,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 8, dependsOnMethods = "cadastroDeObrasCriar")
+	@Test(priority = 8)
 	public void cadastroDeObrasExcluir() {
 
 		cadastroDeObrasExcluir = new CadastroDeObrasExcluir();
@@ -332,7 +334,8 @@ public class AutomacoesMDR8 {
 		System.out.println("-------------------Cadastro De Obras Fim-------------------------");
 	}
 
-	
+
+
 
 	// 24 ---------30
 
@@ -381,7 +384,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 37, dependsOnMethods = "dEPARAContasContábeisCriar")
+	@Test(priority = 37)
 	public void dEPARAContasContábeisEditar() {
 
 		dEPARAContasContábeisEditar = new DEPARAContasContábeisEditar();
@@ -393,7 +396,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 38, dependsOnMethods = "dEPARAContasContábeisCriar")
+	@Test(priority = 38)
 	public void dEPARAContasContábeisVisualizar() {
 
 		dEPARAContasContábeisVisualizar = new DEPARAContasContábeisVisualizar();
@@ -405,7 +408,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	@Test(priority = 39, dependsOnMethods = "dEPARAContasContábeisCriar")
+	@Test(priority = 39)
 	public void dEPARAContasContábeisExcluir() {
 
 		dEPARAContasContábeisExcluir = new DEPARAContasContábeisExcluir();
@@ -482,7 +485,7 @@ public class AutomacoesMDR8 {
 		parametrizaçãoDoLivroOficial.afterClass();
 	}
 
-	@Test(priority = 48, dependsOnMethods = "parametrizaçãoDoLivroOficial")
+	@Test(priority = 48)
 	public void parametrizaçãoDoLivroOficialEditar() {
 		parametrizaçãoDoLivroOficialEditar = new ParametrizaçãoDoLivroOficialEditar();
 		parametrizaçãoDoLivroOficialEditar.beforeClass();
@@ -492,7 +495,7 @@ public class AutomacoesMDR8 {
 		parametrizaçãoDoLivroOficialEditar.afterClass();
 	}
 
-	@Test(priority = 48, dependsOnMethods = "parametrizaçãoDoLivroOficial")
+	@Test(priority = 48)
 	public void parametrizaçãoDoLivroOficialVisualizar() {
 		parametrizaçãoDoLivroOficialVisualizar = new ParametrizaçãoDoLivroOficialVisualizar();
 		parametrizaçãoDoLivroOficialVisualizar.beforeClass();
@@ -502,7 +505,7 @@ public class AutomacoesMDR8 {
 		parametrizaçãoDoLivroOficialVisualizar.afterClass();
 	}
 
-	@Test(priority = 49, dependsOnMethods = "parametrizaçãoDoLivroOficial")
+	@Test(priority = 49)
 	public void parametrizaçãoDoLivroOficialExcluir() {
 		parametrizaçãoDoLivroOficialExcluir = new ParametrizaçãoDoLivroOficialExcluir();
 		parametrizaçãoDoLivroOficialExcluir.beforeClass();
@@ -542,7 +545,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoCriar.afterClass();
 	}
 
-	@Test(priority = 52, dependsOnMethods = "determinacionRelevanciaPorMotivoCriar")
+	@Test(priority = 52)
 	public void determinacionRelevanciaPorMotivoEditar() {
 
 		determinacionRelevanciaPorMotivoEditar = new DeterminacionRelevanciaPorMotivoEditar();
@@ -553,7 +556,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoEditar.afterClass();
 	}
 
-	@Test(priority = 53, dependsOnMethods = "determinacionRelevanciaPorMotivoCriar")
+	@Test(priority = 53)
 	public void determinacionRelevanciaPorMotivoDetalles() {
 
 		determinacionRelevanciaPorMotivoDetalles = new DeterminacionRelevanciaPorMotivoDetalles();
@@ -564,7 +567,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoDetalles.afterClass();
 	}
 
-	@Test(priority = 54, dependsOnMethods = "determinacionRelevanciaPorMotivoCriar")
+	@Test(priority = 54)
 	
 	public void determinacionRelevanciaPorMotivoVisualizar() {
 
@@ -589,7 +592,7 @@ public class AutomacoesMDR8 {
 		determinacionRelevanciaPorMotivoExcluirEmMassa.afterClass();
 	}
 
-	@Test(priority = 55, dependsOnMethods = "determinacionRelevanciaPorMotivoCriar")
+	@Test(priority = 55)
 	
 	public void determinacionRelevanciaPorMotivoExcluir() {
 
@@ -621,7 +624,7 @@ public class AutomacoesMDR8 {
 		s1060AmbientesDeTrablhoCriar.afterClass();
 	}
 
-	@Test(priority = 58, dependsOnMethods = "s1060AmbientesDeTrablhoCriar")
+	@Test(priority = 58)
 	
 	public void s1060AmbientesDeTrablhoEditar() {
 
@@ -657,7 +660,7 @@ public class AutomacoesMDR8 {
 		s1060AmbientesDeTrablhoExcluirMassa.afterClass();
 	}
 
-	@Test(priority = 61, dependsOnMethods = "s1060AmbientesDeTrablhoCriar")
+	@Test(priority = 59)
 	
 	public void s1060AmbientesDeTrablhoExcluir() {
 
@@ -687,7 +690,7 @@ public class AutomacoesMDR8 {
 		s1250AquisiçãoCriar.afterClass();
 	}
 
-	@Test(priority = 63, dependsOnMethods = "s1250AquisiçãoCriar")
+	@Test(priority = 63)
 	
 	public void s1250AquisiçãoEditar() {
 
@@ -699,7 +702,7 @@ public class AutomacoesMDR8 {
 		s1250AquisiçãoEditar.afterClass();
 	}
 
-	@Test(priority = 64, dependsOnMethods = "s1250AquisiçãoCriar")
+	@Test(priority = 64)
 	
 	public void s1250AquisiçãoExcluir() {
 
@@ -730,7 +733,7 @@ public class AutomacoesMDR8 {
 		s1250AquisiçãoTotalCriar.afterClass();
 	}
 
-	@Test(priority = 66, dependsOnMethods = "s1250AquisiçãoTotalCriar")
+	@Test(priority = 66)
 	
 	public void s1250AquisiçãoTotalEditar() {
 
@@ -757,7 +760,7 @@ public class AutomacoesMDR8 {
 		s1250DadosdeEventoCriar.afterClass();
 	}
 
-	@Test(priority = 68, dependsOnMethods = "s1250DadosdeEventoCriar")
+	@Test(priority = 68)
 	
 	public void s1250DadosdeEventoEditar() {
 
@@ -769,7 +772,7 @@ public class AutomacoesMDR8 {
 		s1250DadosdeEventoEditar.afterClass();
 	}
 
-	@Test(priority = 69, dependsOnMethods = "s1250DadosdeEventoCriar")
+	@Test(priority = 69)
 	
 	public void s1250DadosdeEventoExcluir() {
 
@@ -800,7 +803,7 @@ public class AutomacoesMDR8 {
 		s1250DetAquisiçãoCriar.afterClass();
 	}
 	
-	@Test(priority = 71, dependsOnMethods = "s1250DetAquisiçãoCriar")
+	@Test(priority = 71)
 
 	public void s1250DetAquisiçãoEditar() {
 
@@ -812,7 +815,7 @@ public class AutomacoesMDR8 {
 		s1250DetAquisiçãoEditar.afterClass();
 	}
 
-	@Test(priority = 72, dependsOnMethods = "s1250DetAquisiçãoCriar")
+	@Test(priority = 72)
 	
 	public void s1250DetAquisiçãoExcluir() {
 
@@ -843,7 +846,7 @@ public class AutomacoesMDR8 {
 		s1250DetNotaFiscalCriar.afterClass();
 	}
 
-	@Test(priority = 74, dependsOnMethods = "s1250DetNotaFiscalCriar")
+	@Test(priority = 74)
 	
 	public void S1250DetNotaFiscalEditar() {
 
@@ -855,7 +858,7 @@ public class AutomacoesMDR8 {
 		s1250DetNotaFiscalEditar.afterClass();
 	}
 
-	@Test(priority = 75, dependsOnMethods = "s1250DetNotaFiscalCriar")
+	@Test(priority = 75)
 	
 	public void S1250DetNotaFiscalExcluir() {
 
@@ -886,7 +889,7 @@ public class AutomacoesMDR8 {
 		s1250DetProcessoJudicialCriar.afterClass();
 	}
 
-	@Test(priority = 77, dependsOnMethods = "s1250DetProcessoJudicialCriar")
+	@Test(priority = 77)
 	
 	public void s1250DetProcessoJudicialEditar() {
 
@@ -898,7 +901,7 @@ public class AutomacoesMDR8 {
 		s1250DetProcessoJudicialEditar.afterClass();
 	}
 
-	@Test(priority = 78, dependsOnMethods = "s1250DetProcessoJudicialCriar")
+	@Test(priority = 78)
 	
 	public void s1250DetProcessoJudicialExcluir() {
 
@@ -929,7 +932,7 @@ public class AutomacoesMDR8 {
 		s1250InfProcJudicialCriar.afterClass();
 	}
 
-	@Test(priority = 80, dependsOnMethods = "s1250InfProcJudicialCriar")
+	@Test(priority = 80)
 	
 	public void s1250InfProcJudicialEditar() {
 
@@ -941,7 +944,7 @@ public class AutomacoesMDR8 {
 		s1250InfProcJudicialEditar.afterClass();
 	}
 
-	@Test(priority = 81, dependsOnMethods = "s1250InfProcJudicialCriar")
+	@Test(priority = 81)
 	
 	public void s1250InfProcJudicialExcluir() {
 
@@ -972,7 +975,7 @@ public class AutomacoesMDR8 {
 		parametrosParaCategoriaDeIRFCriar.afterClass();
 	}
 	
-	@Test(priority = 83, dependsOnMethods = "parametrosParaCategoriaDeIRFCriar")
+	@Test(priority = 83)
 	
 	public void parametrosParaCategoriaDeIRFDetalhes() {
 
@@ -986,7 +989,7 @@ public class AutomacoesMDR8 {
 	
 	
 
-	@Test(priority = 84, dependsOnMethods = "parametrosParaCategoriaDeIRFCriar")
+	@Test(priority = 84)
 	
 	public void parametrosParaCategoriaDeIRFEditar() {
 
@@ -998,7 +1001,7 @@ public class AutomacoesMDR8 {
 		parametrosParaCategoriaDeIRFEditar.afterClass();
 	}
 	
-	@Test(priority = 85, dependsOnMethods = "parametrosParaCategoriaDeIRFCriar")
+	@Test(priority = 85)
 	
 	public void parametrosParaCategoriaDeIRFVisualizar() {
 
@@ -1023,7 +1026,7 @@ public class AutomacoesMDR8 {
 		parametrosParaCategoriaDeIRFExcluirEmMasa.afterClass();
 	}
 	
-	@Test(priority = 86, dependsOnMethods = "parametrosParaCategoriaDeIRFCriar")
+	@Test(priority = 86)
 	
 	public void parametrosParaCategoriaDeIRFExcluir() {
 

@@ -2,32 +2,32 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-12T04:49:58Z" name="Default suite" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
+  <suite started-at="2021-02-15T06:03:50Z" name="Default suite" finished-at="2021-02-15T06:05:16Z" duration-ms="85988">
     <groups>
     </groups>
-    <test started-at="2021-02-12T04:49:58Z" name="Default test" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
-      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:49:58Z" name="beforeClass" finished-at="2021-02-11T22:50:21Z" duration-ms="23142" status="PASS">
+    <test started-at="2021-02-15T06:03:50Z" name="Default test" finished-at="2021-02-15T06:05:16Z" duration-ms="85988">
+      <class name="com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:03:50Z" name="beforeClass" finished-at="2021-02-15T00:04:05Z" duration-ms="14984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:21Z" name="login" finished-at="2021-02-11T22:50:31Z" duration-ms="10000" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:05Z" name="login" finished-at="2021-02-15T00:04:13Z" duration-ms="7893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:31Z" name="acessarTDK" finished-at="2021-02-11T22:50:50Z" duration-ms="19236" status="PASS">
+        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:13Z" name="acessarTDK" finished-at="2021-02-15T00:04:44Z" duration-ms="30997" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acessarTDK -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:50Z" name="filtro" finished-at="2021-02-11T22:51:13Z" duration-ms="23468" status="PASS">
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:44Z" name="filtro" finished-at="2021-02-15T00:05:16Z" duration-ms="32095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:51:13Z" name="afterClass" finished-at="2021-02-11T22:51:13Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:05:16Z" name="afterClass" finished-at="2021-02-15T00:05:16Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId -->
+      </class> <!-- com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

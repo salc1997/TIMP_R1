@@ -3,15 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TDK.Dashboard.Lixeira.LixeiraFiltroId">
+      <class name="com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId">
         <methods>
-          <include name="acessarTDK"/>
           <include name="filtro"/>
-          <include name="beforeClass"/>
-          <include name="login"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.Lixeira.LixeiraFiltroId -->
+      </class> <!-- com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

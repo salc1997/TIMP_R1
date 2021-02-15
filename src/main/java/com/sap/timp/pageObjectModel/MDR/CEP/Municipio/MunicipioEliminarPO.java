@@ -50,7 +50,7 @@ public class MunicipioEliminarPO extends TestBaseSteven{
 	}
 
 	
-	public void eliminar() {
+	public boolean eliminar() {
 		
 		cep.click();
 		sleep(1000);
@@ -85,7 +85,7 @@ public class MunicipioEliminarPO extends TestBaseSteven{
 		
 		System.out.println(sucesso);
 		
-		
+		return sucesso;
 		
 		
 		

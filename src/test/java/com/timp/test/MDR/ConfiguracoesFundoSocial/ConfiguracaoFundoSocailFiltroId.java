@@ -27,24 +27,18 @@ public class ConfiguracaoFundoSocailFiltroId extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	public void filtroId() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void filtroId() {
 
 		boolean sucesso = configuracoesFundoSocialFiltroIdPO.filtro();
 

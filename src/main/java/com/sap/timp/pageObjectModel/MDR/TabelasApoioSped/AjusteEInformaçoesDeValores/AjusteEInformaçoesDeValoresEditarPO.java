@@ -111,19 +111,20 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseEliel {
 		gravar.click();
 		sleep(2000);
 		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		biblioteca.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
+		refresh();
 		
+
+		waitExpectElement(descricao);
+
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 = idObter("ajusteeinformacoesdevalores");
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -134,12 +135,17 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseEliel {
 		sleep(1000);
 		
 		visualizar.click();
+
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		//ediçao
+		attributoNotToBeEmptyXpath("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
+		sleep(2000);
 		
-		String textoCampo = campo.getText();
+		
+		String textoCampo = descricao.getAttribute("value");
 		boolean sucesso = textoCampo.equals(enviar);
 		System.out.println(sucesso);	
 		return sucesso;

@@ -181,8 +181,8 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		String idRegistro = idObter2();
-		
+		//String idRegistro = idObter2();
+		String idRegistro = idObter("An3");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		

@@ -34,28 +34,17 @@ public class EstornoCreditoFiltros extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtro() {
 
-		// teste pra conferir se o resultado mostrado é igual
+		loginTC.login();
+
+		acessarMDRPO.acessarMDR();
+		
 		boolean text = estornoCreditoFiltrosPO.filtroEstornoCredito();
 		assertTrue(text, "Resultado diferente");
-
-		// Teste pra conferir se conseguiu acesssar o sistema
-		assertTrue(estornoCreditoFiltrosPO.mostrar.isDisplayed(), semAcesso);
 
 	}
 

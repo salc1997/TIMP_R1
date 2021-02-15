@@ -188,8 +188,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------Centralizacao > Saldos-------------------------");
 		saldosCriar = new SaldosCriar();
 		saldosCriar.beforeClass();
-		saldosCriar.login();
-		saldosCriar.acessarMDR();
 		saldosCriar.CriarSaldo();
 		saldosCriar.afterClass();
 	}
@@ -198,8 +196,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void saldosFiltrarId() {
 		saldosFiltrarId = new SaldosFiltrarId();
 		saldosFiltrarId.beforeClass();
-		saldosFiltrarId.login();
-		saldosFiltrarId.acessarMDR();
 		saldosFiltrarId.FiltrarSaldosId();
 		saldosFiltrarId.afterClass();
 	}
@@ -211,8 +207,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------Centralizacao > Movimentos-------------------------");
 		movimentoDetalhes = new MovimentoDetalhes();
 		movimentoDetalhes.beforeClass();
-		movimentoDetalhes.login();
-		movimentoDetalhes.acessarMDR();
 		movimentoDetalhes.detalheMovimento();
 		movimentoDetalhes.afterClass();
 	}
@@ -223,8 +217,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------De X Para M010 Plano de Contas Societario-------------------------");
 		deXParaM010PlanodeContasSocietarioExcluirEmMassa = new DeXParaM010PlanodeContasSocietarioExcluirEmMassa();
 		deXParaM010PlanodeContasSocietarioExcluirEmMassa.beforeClass();
-		deXParaM010PlanodeContasSocietarioExcluirEmMassa.ingresar();
-		deXParaM010PlanodeContasSocietarioExcluirEmMassa.mdrEntrar();
 		deXParaM010PlanodeContasSocietarioExcluirEmMassa.excluirEmMassa();
 		deXParaM010PlanodeContasSocietarioExcluirEmMassa.afterClass();
 	}
@@ -235,8 +227,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------Incentivos Fiscais > Incentivos Fiscais-------------------------");
 		incentivosFiscaisCriar = new IncentivosFiscaisCriar();
 		incentivosFiscaisCriar.beforeClass();
-		incentivosFiscaisCriar.login();
-		incentivosFiscaisCriar.acessarMDR();
 		incentivosFiscaisCriar.CriarIncentivosFiscais();
 		incentivosFiscaisCriar.afterClass();
 	}
@@ -247,8 +237,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void incentivosFiscaisEditar() {
 		incentivosFiscaisEditar = new IncentivosFiscaisEditar();
 		incentivosFiscaisEditar.beforeClass();
-		incentivosFiscaisEditar.login();
-		incentivosFiscaisEditar.acessarMDR();
 		incentivosFiscaisEditar.editar();
 		incentivosFiscaisEditar.afterClass();
 	}
@@ -257,8 +245,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void incentivosFiscaisDetalles() {
 		incentivosFiscaisDetalles = new IncentivosFiscaisDetalles();
 		incentivosFiscaisDetalles.beforeClass();
-		incentivosFiscaisDetalles.ingresar();
-		incentivosFiscaisDetalles.ingresarMDR();
 		incentivosFiscaisDetalles.detalhes();
 		incentivosFiscaisDetalles.afterClass();
 	}
@@ -267,8 +253,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void incentivosFiscaisVisualizar() {
 		incentivosFiscaisVisualizar = new IncentivosFiscaisVisualizar();
 		incentivosFiscaisVisualizar.beforeClass();
-		incentivosFiscaisVisualizar.ingresar();
-		incentivosFiscaisVisualizar.ingresarMDR();
 		incentivosFiscaisVisualizar.visualizar();
 		incentivosFiscaisVisualizar.afterClass();
 	}
@@ -278,8 +262,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void incentivosFiscaisFiltroId() {
 		incentivosFiscaisFiltroId = new IncentivosFiscaisFiltroId();
 		incentivosFiscaisFiltroId.beforeClass();
-		incentivosFiscaisFiltroId.login();
-		incentivosFiscaisFiltroId.acessarMDR();
 		incentivosFiscaisFiltroId.FiltrarIncentivosFiscaisId();
 		incentivosFiscaisFiltroId.afterClass();
 	}
@@ -289,8 +271,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void incentivosFiscaisExcluir() {
 		incentivosFiscaisExcluir = new IncentivosFiscaisExcluir();
 		incentivosFiscaisExcluir.beforeClass();
-		incentivosFiscaisExcluir.ingresar();
-		incentivosFiscaisExcluir.ingresarMDR();
 		incentivosFiscaisExcluir.Excluir();
 		incentivosFiscaisExcluir.afterClass();
 	}
@@ -299,8 +279,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void incentivosFiscaisExcluirEmMassa() {
 		incentivosFiscaisExcluirEmMassa = new IncentivosFiscaisExcluirEmMassa();
 		incentivosFiscaisExcluirEmMassa.beforeClass();
-		incentivosFiscaisExcluirEmMassa.login();
-		incentivosFiscaisExcluirEmMassa.mdrEntrar();
 		incentivosFiscaisExcluirEmMassa.excluirEmMassa();
 		incentivosFiscaisExcluirEmMassa.afterClass();
 	}
@@ -313,8 +291,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------Saldo Inicial -------------------------");
 		saldoInicialCriar = new SaldoInicialCriar();
 		saldoInicialCriar.beforeClass();
-		saldoInicialCriar.login();
-		saldoInicialCriar.acessarMDR();
 		saldoInicialCriar.CriarSaldoInicial();
 		saldoInicialCriar.afterClass();
 	}
@@ -323,8 +299,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void saldoInicialEditar() {
 		saldoInicialEditar = new SaldoInicialEditar();
 		saldoInicialEditar.beforeClass();
-		saldoInicialEditar.login();
-		saldoInicialEditar.acessarMDR();
 		saldoInicialEditar.editarSaldo();
 		saldoInicialEditar.afterClass();
 	}
@@ -334,8 +308,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void saldoInicialDetalhe() {
 		saldoInicialDetalhe = new SaldoInicialDetalhe();
 		saldoInicialDetalhe.beforeClass();
-		saldoInicialDetalhe.login();
-		saldoInicialDetalhe.acessarMDR();
 		saldoInicialDetalhe.detalheSaldoInicial();
 		saldoInicialDetalhe.afterClass();
 	}
@@ -344,8 +316,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void saldoInicialVisualizar() {
 		saldoInicialVisualizar = new SaldoInicialVisualizar();
 		saldoInicialVisualizar.beforeClass();
-		saldoInicialVisualizar.login();
-		saldoInicialVisualizar.acessarMDR();
 		saldoInicialVisualizar.VisualizarSaldoInicial();
 		saldoInicialVisualizar.afterClass();
 	}
@@ -354,8 +324,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void saldoInicialExcluir() {
 		saldoInicialExcluir = new SaldoInicialExcluir();
 		saldoInicialExcluir.beforeClass();
-		saldoInicialExcluir.login();
-		saldoInicialExcluir.acessarMDR();
 		saldoInicialExcluir.ExcluirSaldoInicial();
 		saldoInicialExcluir.afterClass();
 	}
@@ -364,8 +332,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void saldoInicialFiltroAvan() {
 		saldoInicialFiltroAvan = new SaldoInicialFiltroAvan();
 		saldoInicialFiltroAvan.beforeClass();
-		saldoInicialFiltroAvan.login();
-		saldoInicialFiltroAvan.acessarMDR();
 		saldoInicialFiltroAvan.FiltrarAvanSaldoIncial();
 		saldoInicialFiltroAvan.afterClass();
 	}
@@ -377,8 +343,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento-------------------------");
 		motivosdeDesligamentoCriar = new MotivosdeDesligamentoCriar();
 		motivosdeDesligamentoCriar.beforeClass();
-		motivosdeDesligamentoCriar.login();
-		motivosdeDesligamentoCriar.acessarMDR();
 		motivosdeDesligamentoCriar.criarMotivoDesligamento();
 		motivosdeDesligamentoCriar.afterClass();
 	}
@@ -387,8 +351,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void motivosdeDesligamentoEditar() {
 		motivosdeDesligamentoEditar = new MotivosdeDesligamentoEditar();
 		motivosdeDesligamentoEditar.beforeClass();
-		motivosdeDesligamentoEditar.login();
-		motivosdeDesligamentoEditar.mdrEntrar();
 		motivosdeDesligamentoEditar.editarMotivoDesligamento();
 		motivosdeDesligamentoEditar.afterClass();
 	}
@@ -398,8 +360,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void motivosdeDesligamentoVisualizar() {
 		motivosdeDesligamentoVisualizar = new MotivosdeDesligamentoVisualizar();
 		motivosdeDesligamentoVisualizar.beforeClass();
-		motivosdeDesligamentoVisualizar.ingresar();
-		motivosdeDesligamentoVisualizar.mdrEntrar();
 		motivosdeDesligamentoVisualizar.visualizarMotivosDesligamento();
 		motivosdeDesligamentoVisualizar.afterClass();
 	}
@@ -408,8 +368,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void motivosdeDesligamentoExcluir() {
 		motivosdeDesligamentoExcluir = new MotivosdeDesligamentoExcluir();
 		motivosdeDesligamentoExcluir.beforeClass();
-		motivosdeDesligamentoExcluir.login();
-		motivosdeDesligamentoExcluir.acessarMDR();
 		motivosdeDesligamentoExcluir.excluirMotivosDesligamento();
 		motivosdeDesligamentoExcluir.afterClass();
 	}
@@ -419,8 +377,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void motivosdeDesligamentoExcluirMasa() {
 		motivosdeDesligamentoExcluirMasa = new MotivosdeDesligamentoExcluirMasa();
 		motivosdeDesligamentoExcluirMasa.beforeClass();
-		motivosdeDesligamentoExcluirMasa.ingresar();
-		motivosdeDesligamentoExcluirMasa.mdrEntrar();
 		motivosdeDesligamentoExcluirMasa.excluirMasaMotivosDesligamento();
 		motivosdeDesligamentoExcluirMasa.afterClass();
 	}
@@ -432,8 +388,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------------------- Tabelas de Apoio E-SOCIAL	> Tabela 22 - Compatibilidade entre FPAS-------------------------");
 		compatibilidadeEntreFPASCriar = new CompatibilidadeEntreFPASCriar();
 		compatibilidadeEntreFPASCriar.beforeClass();
-		compatibilidadeEntreFPASCriar.login();
-		compatibilidadeEntreFPASCriar.acessarMDR();
 		compatibilidadeEntreFPASCriar.criarCompatibilidadeEntreFPAS();
 		compatibilidadeEntreFPASCriar.afterClass();
 	}
@@ -442,8 +396,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void compatibilidadeEntreFPASEditar() {
 		compatibilidadeEntreFPASEditar = new CompatibilidadeEntreFPASEditar();
 		compatibilidadeEntreFPASEditar.beforeClass();
-		compatibilidadeEntreFPASEditar.ingresar();
-		compatibilidadeEntreFPASEditar.mdrEntrar();
 		compatibilidadeEntreFPASEditar.editarCompatibilidadeEntreFPAS();
 		compatibilidadeEntreFPASEditar.afterClass();
 	}
@@ -452,8 +404,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void compatibilidadeEntreFPASVisualizar() {
 		compatibilidadeEntreFPASVisualizar = new CompatibilidadeEntreFPASVisualizar();
 		compatibilidadeEntreFPASVisualizar.beforeClass();
-		compatibilidadeEntreFPASVisualizar.login();
-		compatibilidadeEntreFPASVisualizar.acessarMDR();
 		compatibilidadeEntreFPASVisualizar.visualizarCompatibilidadeEntreFPAS();
 		compatibilidadeEntreFPASVisualizar.afterClass();
 	}
@@ -462,8 +412,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void compatibilidadeEntreFPASExcluir() {
 		compatibilidadeEntreFPASExcluir = new CompatibilidadeEntreFPASExcluir();
 		compatibilidadeEntreFPASExcluir.beforeClass();
-		compatibilidadeEntreFPASExcluir.ingresar();
-		compatibilidadeEntreFPASExcluir.mdrEntrar();
 		compatibilidadeEntreFPASExcluir.excluirCompatibilidadeEntreFPAS();
 		compatibilidadeEntreFPASExcluir.afterClass();
 	}
@@ -472,9 +420,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void compatibilidadeEntreFPASExcluirEnMasa() {
 		compatibilidadeEntreFPASExcluirEnMasa = new CompatibilidadeEntreFPASExcluirEnMasa();
 		compatibilidadeEntreFPASExcluirEnMasa.beforeClass();
-		compatibilidadeEntreFPASExcluirEnMasa.ingresar();
-		compatibilidadeEntreFPASExcluirEnMasa.mdrEntrar();
-		compatibilidadeEntreFPASExcluirEnMasa.excluirEnMasaCompatibilidadeEntreFPAS();
+		compatibilidadeEntreFPASExcluirEnMasa.criar();
 		compatibilidadeEntreFPASExcluirEnMasa.afterClass();
 	}
 	
@@ -484,8 +430,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------Thin Capitalization	> Empréstimos-------------------------");
 		emprestimosCriar = new EmprestimosCriar();
 		emprestimosCriar.beforeClass();
-		emprestimosCriar.login();
-		emprestimosCriar.acessarMDR();
 		emprestimosCriar.criarEmprestimos();
 		emprestimosCriar.afterClass();
 	}
@@ -494,8 +438,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void emprestimosEditar() {
 		emprestimosEditar = new EmprestimosEditar();
 		emprestimosEditar.beforeClass();
-		emprestimosEditar.ingresar();
-		emprestimosEditar.mdrEntrar();
 		emprestimosEditar.editarEmprestimos();
 		emprestimosEditar.afterClass();
 	}
@@ -504,8 +446,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void emprestimosExcluir() {
 		emprestimosExcluir = new EmprestimosExcluir();
 		emprestimosExcluir.beforeClass();
-		emprestimosExcluir.ingresar();
-		emprestimosExcluir.mdrEntrar();
 		emprestimosExcluir.excluirEmprestimos();
 		emprestimosExcluir.afterClass();
 	}
@@ -515,8 +455,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void emprestimosExcluirEmMassa() {
 		emprestimosExcluirEmMassa = new EmprestimosExcluirEmMassa();
 		emprestimosExcluirEmMassa.beforeClass();
-		emprestimosExcluirEmMassa.ingresar();
-		emprestimosExcluirEmMassa.mdrEntrar();
 		emprestimosExcluirEmMassa.criar();
 		emprestimosExcluirEmMassa.excluir();
 		emprestimosExcluirEmMassa.afterClass();
@@ -529,9 +467,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"-------------------ICMS-ST Transporte-------------------------");
 		iCMSSTTransporteExcluirEmMassa = new ICMSSTTransporteExcluirEmMassa();
 		iCMSSTTransporteExcluirEmMassa.beforeClass();
-		iCMSSTTransporteExcluirEmMassa.ingresar();
-		iCMSSTTransporteExcluirEmMassa.mdrEntrar();
-		iCMSSTTransporteExcluirEmMassa.excluirEmMassa();
+		iCMSSTTransporteExcluirEmMassa.criar();
 		iCMSSTTransporteExcluirEmMassa.afterClass();
 	}
 	
@@ -539,8 +475,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void icmsstTransporteFiltroID() {
 		icmsstTransporteFiltroID = new ICMSSTTransporteFiltroID();
 		icmsstTransporteFiltroID.beforeClass();
-		icmsstTransporteFiltroID.login();
-		icmsstTransporteFiltroID.acessarMDR();
 		icmsstTransporteFiltroID.filtro();
 		icmsstTransporteFiltroID.afterClass();
 	}
@@ -555,8 +489,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Taxas de Atualização > Alíquotas de Taxa de Atualização----------");
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa = new AliquotaDeTaxaDeActualizacaoExcluirEmMassa();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.beforeClass();
-		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.ingresar();
-		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.mdrEntrar();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.criar();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.excluir();
 		aliquotasDeTaxaDeActualizacaoExcluirEmMassa.afterClass();
@@ -569,8 +501,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Tabela de Apoio do SPED > 4.3.5 Tabela Código de Contribuição Social Apurada----------");
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa = new TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa();
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.beforeClass();
-		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.ingresar();
-		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.mdrEntrar();
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.excluirEmMassa();
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa.afterClass();
 	}
@@ -593,8 +523,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Eventos e-Social > S2240 - Condições Amb do Trab - Fat de Risco----------");
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID = new S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID();
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.beforeClass();
-		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.login();
-		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.acessarMDR();
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.filtroPorId();
 		s2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorID.afterClass();
 	}
@@ -621,8 +549,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Tabelas de Apoio E-SOCIAL	> Tabela 23 - Fatores de Risco----------");
 		fatoresDeRiscoCriar = new FatoresDeRiscoCriar();
 		fatoresDeRiscoCriar.beforeClass();
-		fatoresDeRiscoCriar.login();
-		fatoresDeRiscoCriar.acessarMDR();
 		fatoresDeRiscoCriar.criar();
 		fatoresDeRiscoCriar.afterClass();
 	}
@@ -633,8 +559,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void fatoresDeRiscoEditar() {
 		fatoresDeRiscoEditar = new FatoresDeRiscoEditar();
 		fatoresDeRiscoEditar.beforeClass();
-		fatoresDeRiscoEditar.login();
-		fatoresDeRiscoEditar.acessarMDR();
 		fatoresDeRiscoEditar.editar();
 		fatoresDeRiscoEditar.afterClass();
 	}
@@ -643,8 +567,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void factoresDeRiscoVisualizar() {
 		factoresDeRiscoVisualizar = new FactoresDeRiscoVisualizar();
 		factoresDeRiscoVisualizar.beforeClass();
-		factoresDeRiscoVisualizar.login();
-		factoresDeRiscoVisualizar.acessarMDR();
 		factoresDeRiscoVisualizar.visualizar();
 		factoresDeRiscoVisualizar.afterClass();
 	}
@@ -653,8 +575,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void factoresDeRiscoExcluir() {
 		factoresDeRiscoExcluir = new FactoresDeRiscoExcluir();
 		factoresDeRiscoExcluir.beforeClass();
-		factoresDeRiscoExcluir.login();
-		factoresDeRiscoExcluir.acessarMDR();
 		factoresDeRiscoExcluir.excluirr();
 		factoresDeRiscoExcluir.afterClass();
 	}
@@ -663,8 +583,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void factoresDeRiscoExcluirMassa() {
 		factoresDeRiscoExcluirMassa = new FactoresDeRiscoExcluirMassa();
 		factoresDeRiscoExcluirMassa.beforeClass();
-		factoresDeRiscoExcluirMassa.login();
-		factoresDeRiscoExcluirMassa.acessarMDR();
 		factoresDeRiscoExcluirMassa.criar();
 		factoresDeRiscoExcluirMassa.afterClass();
 	}
@@ -677,8 +595,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Tabelas de Apoio E-SOCIAL	> Tabela 24 - Codificação de Ac. de Trab.----------");
 		codificaçãoDeAcDeTrabCriar = new CodificaçãoDeAcDeTrabCriar();
 		codificaçãoDeAcDeTrabCriar.beforeClass();
-		codificaçãoDeAcDeTrabCriar.login();
-		codificaçãoDeAcDeTrabCriar.acessarMDR();
 		codificaçãoDeAcDeTrabCriar.criar();
 		codificaçãoDeAcDeTrabCriar.afterClass();
 	}
@@ -687,8 +603,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codificaçãoDeAcDeTrabEditar() {
 		codificaçãoDeAcDeTrabEditar = new CodificaçãoDeAcDeTrabEditar();
 		codificaçãoDeAcDeTrabEditar.beforeClass();
-		codificaçãoDeAcDeTrabEditar.login();
-		codificaçãoDeAcDeTrabEditar.acessarMDR();
 		codificaçãoDeAcDeTrabEditar.editar();
 		codificaçãoDeAcDeTrabEditar.afterClass();
 	}
@@ -697,8 +611,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codificaçãoDeAcDeTrabVisualizar() {
 		codificaçãoDeAcDeTrabVisualizar = new CodificaçãoDeAcDeTrabVisualizar();
 		codificaçãoDeAcDeTrabVisualizar.beforeClass();
-		codificaçãoDeAcDeTrabVisualizar.login();
-		codificaçãoDeAcDeTrabVisualizar.acessarMDR();
 		codificaçãoDeAcDeTrabVisualizar.visualizar();
 		codificaçãoDeAcDeTrabVisualizar.afterClass();
 	}
@@ -707,9 +619,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codificaçãoDeAcDeTrabExcluir() {
 		codificaçãoDeAcDeTrabExcluir = new CodificaçãoDeAcDeTrabExcluir();
 		codificaçãoDeAcDeTrabExcluir.beforeClass();
-		codificaçãoDeAcDeTrabExcluir.login();
-		codificaçãoDeAcDeTrabExcluir.acessarMDR();
-		codificaçãoDeAcDeTrabExcluir.excluirr();
+		codificaçãoDeAcDeTrabExcluir.excluir();
 		codificaçãoDeAcDeTrabExcluir.afterClass();
 	}
 	
@@ -717,8 +627,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codificaçãoDeAcDeTrabExcluiMassa() {
 		codificaçãoDeAcDeTrabExcluiMassa = new CodificaçãoDeAcDeTrabExcluiMassa();
 		codificaçãoDeAcDeTrabExcluiMassa.beforeClass();
-		codificaçãoDeAcDeTrabExcluiMassa.login();
-		codificaçãoDeAcDeTrabExcluiMassa.acessarMDR();
 		codificaçãoDeAcDeTrabExcluiMassa.criar();
 		codificaçãoDeAcDeTrabExcluiMassa.afterClass();
 	}
@@ -731,8 +639,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Tabelas de Apoio E-SOCIAL	> Tabela 27 - Códigos de Lotação.----------");
 		codigosDeLotacaoCriar = new CodigosDeLotacaoCriar();
 		codigosDeLotacaoCriar.beforeClass();
-		codigosDeLotacaoCriar.login();
-		codigosDeLotacaoCriar.acessarMDR();
 		codigosDeLotacaoCriar.criar();
 		codigosDeLotacaoCriar.afterClass();
 	}
@@ -741,8 +647,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codigosDeLotacaoEditar() {
 		codigosDeLotacaoEditar = new CodigosDeLotacaoEditar();
 		codigosDeLotacaoEditar.beforeClass();
-		codigosDeLotacaoEditar.login();
-		codigosDeLotacaoEditar.acessarMDR();
 		codigosDeLotacaoEditar.editar();
 		codigosDeLotacaoEditar.afterClass();
 	}
@@ -751,8 +655,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codigosDeLotacaoVisualizar() {
 		codigosDeLotacaoVisualizar = new CodigosDeLotacaoVisualizar();
 		codigosDeLotacaoVisualizar.beforeClass();
-		codigosDeLotacaoVisualizar.login();
-		codigosDeLotacaoVisualizar.acessarMDR();
 		codigosDeLotacaoVisualizar.visualizar();
 		codigosDeLotacaoVisualizar.afterClass();
 	}
@@ -761,8 +663,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codigosDeLotacaoExcluir() {
 		codigosDeLotacaoExcluir = new CodigosDeLotacaoExcluir();
 		codigosDeLotacaoExcluir.beforeClass();
-		codigosDeLotacaoExcluir.login();
-		codigosDeLotacaoExcluir.acessarMDR();
 		codigosDeLotacaoExcluir.excluir();
 		codigosDeLotacaoExcluir.afterClass();
 	}
@@ -771,8 +671,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void codigosDeLotacaoExcluirEmMasa() {
 		codigosDeLotacaoExcluirEmMasa = new CodigosDeLotacaoExcluirEmMasa();
 		codigosDeLotacaoExcluirEmMasa.beforeClass();
-		codigosDeLotacaoExcluirEmMasa.login();
-		codigosDeLotacaoExcluirEmMasa.acessarMDR();
 		codigosDeLotacaoExcluirEmMasa.excluir();
 		codigosDeLotacaoExcluirEmMasa.afterClass();
 	}
@@ -785,8 +683,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Tabelas de Apoio E-SOCIAL	> Tabela 28 - Dados de RAT.----------");
 		dadosDeRATCriar = new DadosDeRATCriar();
 		dadosDeRATCriar.beforeClass();
-		dadosDeRATCriar.login();
-		dadosDeRATCriar.acessarMDR();
 		dadosDeRATCriar.criar();
 		dadosDeRATCriar.afterClass();
 	}
@@ -797,8 +693,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Taxas de Atualização	Alíquotas de Taxa de Atualização.----------");
 		aliquotaDeTaxaDeActualizacaoCriar = new AliquotaDeTaxaDeActualizacaoCriar();
 		aliquotaDeTaxaDeActualizacaoCriar.beforeClass();
-		aliquotaDeTaxaDeActualizacaoCriar.login();
-		aliquotaDeTaxaDeActualizacaoCriar.acessarMDR();
 		aliquotaDeTaxaDeActualizacaoCriar.criar();
 		aliquotaDeTaxaDeActualizacaoCriar.afterClass();
 	}
@@ -808,8 +702,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void aliquotaDeTaxaDeActualizacaoEditar() {
 		aliquotaDeTaxaDeActualizacaoEditar = new AliquotaDeTaxaDeActualizacaoEditar();
 		aliquotaDeTaxaDeActualizacaoEditar.beforeClass();
-		aliquotaDeTaxaDeActualizacaoEditar.login();
-		aliquotaDeTaxaDeActualizacaoEditar.acessarMDR();
 		aliquotaDeTaxaDeActualizacaoEditar.editar();
 		aliquotaDeTaxaDeActualizacaoEditar.afterClass();
 	}
@@ -819,8 +711,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void aliquotaDeTaxaDeActualizacaoDetalhes() {
 		aliquotaDeTaxaDeActualizacaoDetalhes = new AliquotaDeTaxaDeActualizacaoDetalhes();
 		aliquotaDeTaxaDeActualizacaoDetalhes.beforeClass();
-		aliquotaDeTaxaDeActualizacaoDetalhes.login();
-		aliquotaDeTaxaDeActualizacaoDetalhes.acessarMDR();
 		aliquotaDeTaxaDeActualizacaoDetalhes.detalhes();
 		aliquotaDeTaxaDeActualizacaoDetalhes.afterClass();
 	}
@@ -829,8 +719,6 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void aliquotaDeTaxaDeActualizacaoVisualizar() {
 		aliquotaDeTaxaDeActualizacaoVisualizar = new AliquotaDeTaxaDeActualizacaoVisualizar();
 		aliquotaDeTaxaDeActualizacaoVisualizar.beforeClass();
-		aliquotaDeTaxaDeActualizacaoVisualizar.login();
-		aliquotaDeTaxaDeActualizacaoVisualizar.acessarMDR();
 		aliquotaDeTaxaDeActualizacaoVisualizar.visualizar();
 		aliquotaDeTaxaDeActualizacaoVisualizar.afterClass();
 	}
@@ -839,9 +727,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void aliquotaDeTaxaDeActualizacaoExcluir() {
 		aliquotaDeTaxaDeActualizacaoExcluir = new AliquotaDeTaxaDeActualizacaoExcluir();
 		aliquotaDeTaxaDeActualizacaoExcluir.beforeClass();
-		aliquotaDeTaxaDeActualizacaoExcluir.login();
-		aliquotaDeTaxaDeActualizacaoExcluir.acessarMDR();
-		aliquotaDeTaxaDeActualizacaoExcluir.excluirr();
+		aliquotaDeTaxaDeActualizacaoExcluir.excluir();
 		aliquotaDeTaxaDeActualizacaoExcluir.afterClass();
 	}
 	

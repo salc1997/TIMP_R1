@@ -103,6 +103,7 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
 	public WebElement aceitarFiltros;
 
+	//@FindBy(xpath = "/html/body/div[4]/div/div[3]/button[2]")
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitarFiltros1;
 
@@ -112,13 +113,13 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\"]")
 	public WebElement flechita;
 
-	@FindBy(xpath = "//div[@id=\"UIComp_3\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"][1]")
+	@FindBy(xpath = "//div[contains(@id,\"UIComp_\")]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"]")
 	public WebElement mostrar;
 
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 
-	@FindBy(xpath = "//div[@id=\"UIComp_0\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"]")
+	@FindBy(xpath = "//div[contains(@id,\"UIComp_\")]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"rect\"]")
 	public WebElement mostrar1;
 
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -276,10 +277,22 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
-			sleep(1000);
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
+
+			//actionsMoveToElementXpath("//li[@id=\"option-7\"]");
+
+			actionsMoveToElementXpath("//li[@id][text()=\"Ajuste\"]");
+
+
+		//	actionsMoveToElementXpath("//li[@id=\"option-8\"]");
+
+			//WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
+			//WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-102\"]"));
+			
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id][text()=\"Ajuste\"]"));
+
+			//WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
+
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -288,12 +301,19 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		}else {
 
+
 			actionsMoveToElementXpath("//li[@id=\"option-2\"]");
+
+			//actionsMoveToElementXpath("//li[@id=\"option-31\"]");
+			actionsMoveToElementXpath("//li[@id][text()=\"Ajustes\"]");
+
 			sleep(3000);
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			//WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			//WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-31\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id][text()=\"Ajustes\"]"));
 
-			grupoEstructuraOPC .click();
+			grupoEstructuraOPC.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -320,10 +340,22 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-1\"]");
+
+		//	actionsMoveToElementXpath("//li[@id=\"option-1\"]");
+
+			//actionsMoveToElementXpath("//li[@id=\"option-42\"]");
+			actionsMoveToElementXpath("//li[@id][text()=\"Ajustes Fiscais\"]");
+			
+
 			sleep(3000);
 
-			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+
+			//WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+
+
+			//WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-42\"]"));
+			
+			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id][text()=\"Ajustes Fiscais\"]"));
 
 			estructuraDatosOPC .click();
 			sleep(2000);
@@ -332,10 +364,16 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		}else {
 
-			actionsMoveToElementXpath("//li[@id=\"option-1\"]");
+
+			//actionsMoveToElementXpath("//li[@id=\"option-1\"]");
+			//actionsMoveToElementXpath("//li[@id=\"option-2\"]");
+			actionsMoveToElementXpath("//li[@id][text()=\"Ajustes Fiscais\"]");
 			sleep(3000);
 
-			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+
+			//WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+			//WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id][text()=\"Ajustes Fiscais\"]"));
 
 			estructuraDatosOPC .click();
 			sleep(2000);
@@ -365,10 +403,19 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-40\"]");
+
+		//	actionsMoveToElementXpath("//li[@id=\"option-40\"]");
+		//	actionsMoveToElementXpath("//li[@id=\"option-55\"]");
+			actionsMoveToElementXpath("//li[@id][text()=\"CFOP legal\"]");	
+
 			sleep(3000);
 
-			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+			//WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+			//WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-55\"]"));
+			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id][text()=\"CFOP legal\"]"));
+
 
 			dimensaoOPC.click();
 			sleep(2000);
@@ -376,10 +423,18 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else {
+
 			actionsMoveToElementXpath("//li[@id=\"option-40\"]");
+
+			actionsMoveToElementXpath("//li[@id][text()=\"CFOP legal\"]");
+
 			sleep(3000);
 
-			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+			//WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+			//WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-55\"]"));
+			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id][text()=\"CFOP legal\"]"));
 
 			dimensaoOPC.click();
 			sleep(2000);
@@ -585,12 +640,16 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-
+			 
 			closeSelectTypeCheckbox(valoresMedida);
 
 		}else if (tc2==true) {
 
+
 			actionsMoveToElementXpath("//div[@id=\"323\"]");
+
+			/*actionsMoveToElementXpath("//div[@id=\"172\"]");
+
 			sleep(1000);
 
 			actionsMoveToElementXpath("//div[@id=\"195\"]");
@@ -746,11 +805,82 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
+			 */
+			
+			actionsMoveToElementXpath("//div[@id=\"465\"]");
+			sleep(1000);
 
+			actionsMoveToElementXpath("//div[@id=\"518\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"519\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"532\"]");
+			sleep(1000);
+			/*
+			actionsMoveToElementXpath("//div[@id=\"211\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"314\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"4\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"318\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"216\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"212\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"219\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"184\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"182\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"213\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"214\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"46\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"132\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"320\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"63\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"443\"]");
+			sleep(1000);
+	       */
+			WebElement valoresMedidaOPC = driver.findElement(By.xpath("//div[@id=\"201\"]/div/label/span"));
+
+			valoresMedidaOPC.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			closeSelectTypeCheckbox(valoresMedida);
 		}else {
+
 			
 			actionsMoveToElementXpath("//div[@id=\"323\"]");
+
+			/*actionsMoveToElementXpath("//div[@id=\"172\"]");
+
 			sleep(1000);
 
 			actionsMoveToElementXpath("//div[@id=\"195\"]");
@@ -900,13 +1030,42 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 			actionsMoveToElementXpath("//div[@id=\"198\"]");
 			sleep(1000);
 
+			actionsMoveToElementXpath("//div[@id=\"46\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"132\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"320\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"63\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"443\"]");
+			sleep(1000);*/
+			
+			
+			actionsMoveToElementXpath("//div[@id=\"465\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"518\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"519\"]");
+			sleep(1000);
+
+			actionsMoveToElementXpath("//div[@id=\"532\"]");
+			sleep(1000);
+
+
 			WebElement valoresMedidaOPC = driver.findElement(By.xpath("//div[@id=\"201\"]/div/label/span"));
 
 			valoresMedidaOPC.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-
+			 
 			closeSelectTypeCheckbox(valoresMedida);
 
 
@@ -928,11 +1087,12 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"275\"]");
+			actionsMoveToElementXpath("//li[@id][text()=\"CFOP legal\"]");
 			sleep(3000);
 
-			WebElement tipoFiltroOPC = driver.findElement(By.xpath("//li[@id=\"275\"]"));
-
+			//WebElement tipoFiltroOPC = driver.findElement(By.xpath("//li[@id=\"275\"]"));
+			WebElement tipoFiltroOPC = driver.findElement(By.xpath("//li[@id][text()=\"CFOP legal\"]"));
+			
 			tipoFiltroOPC.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -940,7 +1100,12 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 
 		}else if (tc2==true) {
 
-			WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+			//WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+
+			//WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id=\"option-55\"]"));
+			WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id][text()=\"CFOP legal\"]"));
 
 			formatoMedidaoOPC .click();
 			sleep(2000);
@@ -948,7 +1113,12 @@ public class DashboardEdiçãoGráficoPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else {
-			WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+			//WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+
+
+		//	WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id=\"option-55\"]"));
+			WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id][text()=\"CFOP legal\"]"));
 
 			formatoMedidaoOPC .click();
 			sleep(2000);

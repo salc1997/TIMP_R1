@@ -123,7 +123,7 @@ public class MapeamentoContabilEditarPO extends TestBaseSteven{
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println(nuevoTexto);
 
-		boolean sucesso = nuevoTexto.equals(enviar);
+		boolean sucesso = nuevoTexto.contains(enviar);
 		System.out.println(sucesso);
 		
 		campo.clear();

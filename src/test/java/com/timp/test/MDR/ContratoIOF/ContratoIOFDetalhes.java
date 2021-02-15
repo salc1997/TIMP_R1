@@ -35,21 +35,14 @@ public class ContratoIOFDetalhes extends TestBaseCristhian{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	public void Detalhes() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void Detalhes() {
 
 		ArrayList<Boolean> sucesso = contratoIOFDetalhesPO.detalhes();
 

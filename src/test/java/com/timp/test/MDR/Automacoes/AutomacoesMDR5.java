@@ -299,70 +299,62 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroMotivosReaberturaCriar = new CadastroMotivosReaberturaCriar();
 		cadastroMotivosReaberturaCriar.beforeClass();
-		cadastroMotivosReaberturaCriar.login();
-		cadastroMotivosReaberturaCriar.acessarMDR();
+	
 		cadastroMotivosReaberturaCriar.criar();
 		cadastroMotivosReaberturaCriar.afterClass();
 
 	}
 
-	@Test(priority = 1,dependsOnMethods = "cadastroMotivosReaberturaCriar" )
+	//@Test(priority = 1,dependsOnMethods = "cadastroMotivosReaberturaCriar" )
+	@Test(priority = 1)
 	public void cadastroMotivosReaberturaEditar() {
 
 		cadastroMotivosReaberturaEditar = new CadastroMotivosReaberturaEditar();
 		cadastroMotivosReaberturaEditar.beforeClass();
-		cadastroMotivosReaberturaEditar.login();
-		cadastroMotivosReaberturaEditar.acessarMDR();
 		cadastroMotivosReaberturaEditar.editar();
 		cadastroMotivosReaberturaEditar.afterClass();
 
 	}
 
-	@Test(priority = 2, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 2)
 	public void cadastroMotivosReaberturaVisualizar() {
 
 		cadastroMotivosReaberturaVisualizar = new CadastroMotivosReaberturaVisualizar();
 		cadastroMotivosReaberturaVisualizar.beforeClass();
-		cadastroMotivosReaberturaVisualizar.login();
-		cadastroMotivosReaberturaVisualizar.acessarMDR();
+	
 		cadastroMotivosReaberturaVisualizar.visualizar();
 		cadastroMotivosReaberturaVisualizar.afterClass();
 
 	}
 	
 
-	@Test(priority = 3, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 3)
 	public void cadastroMotivosReaberturaDetalhes() {
 
 		cadastroMotivosReaberturaDetalhes = new CadastroMotivosReaberturaDetalhes();
 		cadastroMotivosReaberturaDetalhes.beforeClass();
-		cadastroMotivosReaberturaDetalhes.login();
-		cadastroMotivosReaberturaDetalhes.acessarMDR();
+
 		cadastroMotivosReaberturaDetalhes.detalhes();
 		cadastroMotivosReaberturaDetalhes.afterClass();
 
 	}
 
-	@Test(priority = 4, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 4)
 	public void cadastroMotivosReaberturaExcluir() {
 
 		cadastroMotivosReaberturaExcluir = new CadastroMotivosReaberturaExcluir();
 		cadastroMotivosReaberturaExcluir.beforeClass();
-		cadastroMotivosReaberturaExcluir.login();
-		cadastroMotivosReaberturaExcluir.acessarMDR();
 		cadastroMotivosReaberturaExcluir.excluir();
 		cadastroMotivosReaberturaExcluir.afterClass();
 
 		
 	}
 	
-	@Test(priority = 5, dependsOnMethods = "cadastroMotivosReaberturaCriar")
+	@Test(priority = 5)
 	public void cadastroMotivosReaberturaExcluirEmMassa() {
 
 		cadastroMotivosReaberturaExcluirEmMassa = new CadastroMotivosReaberturaExcluirEmMassa();
 		cadastroMotivosReaberturaExcluirEmMassa.beforeClass();
-		cadastroMotivosReaberturaExcluirEmMassa.login();
-		cadastroMotivosReaberturaExcluirEmMassa.acessarMDR();
 		cadastroMotivosReaberturaExcluirEmMassa.criar();
 		cadastroMotivosReaberturaExcluirEmMassa.afterClass();
 		
@@ -384,43 +376,36 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroNotaFiscalCriar = new CadastroNotaFiscalCriar();
 		cadastroNotaFiscalCriar.beforeClass();
-		cadastroNotaFiscalCriar.login();
-		cadastroNotaFiscalCriar.acessarMDR();
 		cadastroNotaFiscalCriar.criar();
 		cadastroNotaFiscalCriar.afterClass();
 
 	}
 
-	@Test(priority = 7, dependsOnMethods = "cadastroNotaFiscalCriar")
+	@Test(priority = 7)
 	public void cadastroNotaFiscalEditar() {
 
 		cadastroNotaFiscalEditar = new CadastroNotaFiscalEditar();
 		cadastroNotaFiscalEditar.beforeClass();
-		cadastroNotaFiscalEditar.login();
-		cadastroNotaFiscalEditar.acessarMDR();
 		cadastroNotaFiscalEditar.editar();
 		cadastroNotaFiscalEditar.afterClass();
 
 	}
 
-	@Test(priority = 8, dependsOnMethods = "cadastroNotaFiscalCriar")
+	@Test(priority = 8)
 	public void cadastroNotaFiscalExcluir() {
 
 		cadastroNotaFiscalExcluir = new CadastroNotaFiscalExcluir();
 		cadastroNotaFiscalExcluir.beforeClass();
-		cadastroNotaFiscalExcluir.login();
-		cadastroNotaFiscalExcluir.acessarMDR();
+
 		cadastroNotaFiscalExcluir.excluir();
 		cadastroNotaFiscalExcluir.afterClass();
 }
 
-	@Test(priority = 9, dependsOnMethods = "cadastroNotaFiscalCriar")
+	@Test(priority = 9)
 	public void cadastroNotaFiscalExcluirEmMassa() {
 
 		cadastroNotaFiscalExcluirEmMassa = new CadastroNotaFiscalExcluirEmMassa();
 		cadastroNotaFiscalExcluirEmMassa.beforeClass();
-		cadastroNotaFiscalExcluirEmMassa.ingresar();
-		cadastroNotaFiscalExcluirEmMassa.mdrEntrar();
 		cadastroNotaFiscalExcluirEmMassa.excluirEmMassa();
 		cadastroNotaFiscalExcluirEmMassa.afterClass();
 		
@@ -441,32 +426,26 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusOcorrenciaFiscalCriar = new StatusOcorrenciaFiscalCriar();
 		statusOcorrenciaFiscalCriar.beforeClass();
-		statusOcorrenciaFiscalCriar.login();
-		statusOcorrenciaFiscalCriar.acessarMDR();
 		statusOcorrenciaFiscalCriar.criar();
 		statusOcorrenciaFiscalCriar.afterClass();
 
 	}
 
-	@Test(priority = 13, dependsOnMethods = "statusOcorrenciaFiscalCriar")
+	@Test(priority = 13)
 	public void statusOcorrenciaFiscalEditar() {
 
 		statusOcorrenciaFiscalEditar = new StatusOcorrenciaFiscalEditar();
 		statusOcorrenciaFiscalEditar.beforeClass();
-		statusOcorrenciaFiscalEditar.login();
-		statusOcorrenciaFiscalEditar.acessarMDR();
 		statusOcorrenciaFiscalEditar.editar();
 		statusOcorrenciaFiscalEditar.afterClass();
 
 	}
 
-	@Test(priority = 14, dependsOnMethods = "statusOcorrenciaFiscalCriar")
+	@Test(priority = 14)
 	public void statusOcorrenciaFiscalExcluir() {
 
 		statusOcorrenciaFiscalExcluir = new StatusOcorrenciaFiscalExcluir();
 		statusOcorrenciaFiscalExcluir.beforeClass();
-		statusOcorrenciaFiscalExcluir.login();
-		statusOcorrenciaFiscalExcluir.acessarMDR();
 		statusOcorrenciaFiscalExcluir.excluir();
 		statusOcorrenciaFiscalExcluir.afterClass();
 
@@ -485,56 +464,48 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		parametrosOficializacaoLivrosCriar = new ParametrosOficializacaoLivrosCriar();
 		parametrosOficializacaoLivrosCriar.beforeClass();
-		parametrosOficializacaoLivrosCriar.login();
-		parametrosOficializacaoLivrosCriar.acessarMDR();
+	//	parametrosOficializacaoLivrosCriar.login();
+	//	parametrosOficializacaoLivrosCriar.acessarMDR();
 		parametrosOficializacaoLivrosCriar.criar();
 		parametrosOficializacaoLivrosCriar.afterClass();
 
 	}
 
-	@Test(priority = 21, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 21)
 	public void parametrosOficializacaoLivrosEditar() {
 
 		parametrosOficializacaoLivrosEditar = new ParametrosOficializacaoLivrosEditar();
 		parametrosOficializacaoLivrosEditar.beforeClass();
-		parametrosOficializacaoLivrosEditar.login();
-		parametrosOficializacaoLivrosEditar.acessarMDR();
 		parametrosOficializacaoLivrosEditar.editar();
 		parametrosOficializacaoLivrosEditar.afterClass();
 
 	}
 
-	@Test(priority = 22, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 22)
 	public void parametrosOficializacaoLivrosVisualizar() {
 
 		parametrosOficializacaoLivrosVisualizar = new ParametrosOficializacaoLivrosVisualizar();
 		parametrosOficializacaoLivrosVisualizar.beforeClass();
-		parametrosOficializacaoLivrosVisualizar.login();
-		parametrosOficializacaoLivrosVisualizar.acessarMDR();
 		parametrosOficializacaoLivrosVisualizar.visualizar();
 		parametrosOficializacaoLivrosVisualizar.afterClass();
 
 	}
 
-	@Test(priority = 23, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 23)
 	public void parametrosOficializacaoLivrosDetalhes() {
 
 		parametrosOficializacaoLivrosDetalhes = new ParametrosOficializacaoLivrosDetalhes();
 		parametrosOficializacaoLivrosDetalhes.beforeClass();
-		parametrosOficializacaoLivrosDetalhes.login();
-		parametrosOficializacaoLivrosDetalhes.acessarMDR();
 		parametrosOficializacaoLivrosDetalhes.detalhes();
 		parametrosOficializacaoLivrosDetalhes.afterClass();
 
 	}
 
-	@Test(priority = 24, dependsOnMethods = "parametrosOficializacaoLivrosCriar")
+	@Test(priority = 24)
 	public void parametrosOficializacaoLivrosExcluir() {
 
 		parametrosOficializacaoLivrosExcluir = new ParametrosOficializacaoLivrosExcluir();
 		parametrosOficializacaoLivrosExcluir.beforeClass();
-		parametrosOficializacaoLivrosExcluir.login();
-		parametrosOficializacaoLivrosExcluir.acessarMDR();
 		parametrosOficializacaoLivrosExcluir.excluir();
 		parametrosOficializacaoLivrosExcluir.afterClass();
 
@@ -552,92 +523,76 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		tabelaDeApoioECFCriar = new TabelaDeApoioECFCriar();
 		tabelaDeApoioECFCriar.beforeClass();
-		tabelaDeApoioECFCriar.login();
-		tabelaDeApoioECFCriar.acessarMDR();
 		tabelaDeApoioECFCriar.criar();
 		tabelaDeApoioECFCriar.afterClass();
 
 	}
 
-	@Test(priority = 27, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 27)
 	public void tabelaDeApoioECFEditar() {
 
 		tabelaDeApoioECFEditar = new TabelaDeApoioECFEditar();
 		tabelaDeApoioECFEditar.beforeClass();
-		tabelaDeApoioECFEditar.login();
-		tabelaDeApoioECFEditar.acessarMDR();
 		tabelaDeApoioECFEditar.editar();
 		tabelaDeApoioECFEditar.afterClass();
 
 	}
 
-	@Test(priority = 28, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 28)
 	public void tabelaDeApoioECFVisualizar() {
 
 		tabelaDeApoioECFVisualizar = new TabelaDeApoioECFVisualizar();
 		tabelaDeApoioECFVisualizar.beforeClass();
-		tabelaDeApoioECFVisualizar.login();
-		tabelaDeApoioECFVisualizar.acessarMDR();
 		tabelaDeApoioECFVisualizar.visualizar();
 		tabelaDeApoioECFVisualizar.afterClass();
 
 	}
 
-	@Test(priority = 29, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 29)
 	public void tabelaDeApoioECFNovaTabelaAtualizar() {
 
 		tabelaDeApoioECFAtualizar = new TabelaDeApoioECFAtualizar();
 		tabelaDeApoioECFAtualizar.beforeClass();
-		tabelaDeApoioECFAtualizar.login();
-		tabelaDeApoioECFAtualizar.acessarMDR();
 		tabelaDeApoioECFAtualizar.atualizar();
 		tabelaDeApoioECFAtualizar.afterClass();
 
 	}
 
-	@Test(priority = 30, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 30)
 	public void tabelaDeApoioECFNovaTabelaNova() {
 
 		tabelaDeApoioECFNovaTabelaECF = new TabelaDeApoioECFNovaTabelaECF();
 		tabelaDeApoioECFNovaTabelaECF.beforeClass();
-		tabelaDeApoioECFNovaTabelaECF.login();
-		tabelaDeApoioECFNovaTabelaECF.acessarMDR();
 		tabelaDeApoioECFNovaTabelaECF.novaTabela();
 		tabelaDeApoioECFNovaTabelaECF.afterClass();
 
 	}
 
-	@Test(priority = 31, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 31)
 	public void tabelaDeApoioECFNovaVersaoLeiaute() {
 
 		tabelaDeApoioECFNovaVersaoLeiaute = new TabelaDeApoioECFNovaVersaoLeiaute();
 		tabelaDeApoioECFNovaVersaoLeiaute.beforeClass();
-		tabelaDeApoioECFNovaVersaoLeiaute.login();
-		tabelaDeApoioECFNovaVersaoLeiaute.acessarMDR();
 		tabelaDeApoioECFNovaVersaoLeiaute.novaTabela();
 		tabelaDeApoioECFNovaVersaoLeiaute.afterClass();
 
 	}
 	
-	@Test(priority = 32, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 32)
 	public void tabelaDeApoioECFExcluirMasas() {
 
 		tabelaDeApoioECFExcluirMasas = new TabelaDeApoioECFExcluirMasas();
 		tabelaDeApoioECFExcluirMasas.beforeClass();
-		tabelaDeApoioECFExcluirMasas.login();
-		tabelaDeApoioECFExcluirMasas.acessarMDR();
 		tabelaDeApoioECFExcluirMasas.criar();
 		tabelaDeApoioECFExcluirMasas.afterClass();
 
 	}
 
-	@Test(priority = 33, dependsOnMethods = "tabelaDeApoioECFCriar")
+	@Test(priority = 33)
 	public void tabelaDeApoioECFExcluir() {
 
 		tabelaDeApoioECFExcluir = new TabelaDeApoioECFExcluir();
 		tabelaDeApoioECFExcluir.beforeClass();
-		tabelaDeApoioECFExcluir.login();
-		tabelaDeApoioECFExcluir.acessarMDR();
 		tabelaDeApoioECFExcluir.excluir();
 		tabelaDeApoioECFExcluir.afterClass();
 
@@ -656,56 +611,46 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		statusParaBCECriar = new StatusParaBCECriar();
 		statusParaBCECriar.beforeClass();
-		statusParaBCECriar.login();
-		statusParaBCECriar.acessarMDR();
 		statusParaBCECriar.criar();
 		statusParaBCECriar.afterClass();
 
 	}
 
-	@Test(priority = 36, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 36)
 	public void statusParaBCEEditar() {
 
 		statusParaBCEEditar = new StatusParaBCEEditar();
 		statusParaBCEEditar.beforeClass();
-		statusParaBCEEditar.login();
-		statusParaBCEEditar.acessarMDR();
 		statusParaBCEEditar.editar();
 		statusParaBCEEditar.afterClass();
 
 	}
 
-	@Test(priority = 37, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 37)
 	public void statusParaBCEVisualizar() {
 
 		statusParaBCEVisualizar = new StatusParaBCEVisualizar();
 		statusParaBCEVisualizar.beforeClass();
-		statusParaBCEVisualizar.login();
-		statusParaBCEVisualizar.acessarMDR();
 		statusParaBCEVisualizar.visualizar();
 		statusParaBCEVisualizar.afterClass();
 
 	}
 
-	@Test(priority = 38, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 38)
 	public void statusParaBCEDetalhes() {
 
 		statusParaBCEDetalhes = new StatusParaBCEDetalhes();
 		statusParaBCEDetalhes.beforeClass();
-		statusParaBCEDetalhes.login();
-		statusParaBCEDetalhes.acessarMDR();
 		statusParaBCEDetalhes.detalhes();
 		statusParaBCEDetalhes.afterClass();
 
 	}
 
-	@Test(priority = 39, dependsOnMethods = "statusParaBCECriar")
+	@Test(priority = 39)
 	public void statusParaBCEExcluir() {
 
 		statusParaBCEExcluir = new StatusParaBCEExcluir();
 		statusParaBCEExcluir.beforeClass();
-		statusParaBCEExcluir.login();
-		statusParaBCEExcluir.acessarMDR();
 		statusParaBCEExcluir.excluir();
 		statusParaBCEExcluir.afterClass();
 
@@ -724,58 +669,48 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		municipioCriar = new MunicipioCriar();
 		municipioCriar.beforeClass();
-		municipioCriar.login();
-		municipioCriar.acessarMDR();
 		municipioCriar.criar();
 		municipioCriar.afterClass();
 
 	}
 	
 
-	@Test(priority = 42, dependsOnMethods = "municipioCriar")
+	@Test(priority = 42)
 	public void municipioEditar() {
 
 		municipioEditar = new MunicipioEditar();
 		municipioEditar.beforeClass();
-		municipioEditar.ingresar();
-		municipioEditar.ingresarMDR();
 		municipioEditar.editar();
 		municipioEditar.afterClass();
 
 	}
 	
-	@Test(priority = 43, dependsOnMethods = "municipioCriar")
+	@Test(priority = 43)
 	public void municipioVisualizar() {
 
 		municipioVisualizar = new MunicipioVisualizar();
 		municipioVisualizar.beforeClass();
-		municipioVisualizar.login();
-		municipioVisualizar.acessarMDR();
 		municipioVisualizar.visualizar();
 		municipioVisualizar.afterClass();
 
 	}
 	
-	@Test(priority = 44, dependsOnMethods = "municipioCriar")
+	@Test(priority = 44)
 	public void municipioDetalhes() {
 
 		municipioDetalhes = new MunicipioDetalhes();
 		municipioDetalhes.beforeClass();
-		municipioDetalhes.login();
-		municipioDetalhes.acessarMDR();
 		municipioDetalhes.detalhes();
 		municipioDetalhes.afterClass();
 
 	}
 
 
-	@Test(priority = 45, dependsOnMethods = "municipioCriar")
+	@Test(priority = 45)
 	public void municipioExcluir() {
 
 		municipioExcluir = new MunicipioExcluir();
 		municipioExcluir.beforeClass();
-		municipioExcluir.login();
-		municipioExcluir.acessarMDR();
 		municipioExcluir.excluir();
 		municipioExcluir.afterClass();
 
@@ -794,56 +729,46 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		cadastroFornecedorcerCriar = new CadastroFornecedorCriar();
 		cadastroFornecedorcerCriar.beforeClass();
-		cadastroFornecedorcerCriar.login();
-		cadastroFornecedorcerCriar.acessarMDR();
 		cadastroFornecedorcerCriar.criar();
 		cadastroFornecedorcerCriar.afterClass();
 
 	}
 
-	@Test(priority = 49, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 49)
 	public void cadastroFornecedorcerEditar() {
 
 		cadastroFornecedorEditar = new CadastroFornecedorEditar();
 		cadastroFornecedorEditar.beforeClass();
-		cadastroFornecedorEditar.login();
-		cadastroFornecedorEditar.acessarMDR();
 		cadastroFornecedorEditar.editar();
 		cadastroFornecedorEditar.afterClass();
 
 	}
 
-	@Test(priority = 50, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 50)
 	public void cadastroFornecedorcerVisualizar() {
 
 		cadastroFornecedorVisualizar = new CadastroFornecedorVisualizar();
 		cadastroFornecedorVisualizar.beforeClass();
-		cadastroFornecedorVisualizar.login();
-		cadastroFornecedorVisualizar.acessarMDR();
 		cadastroFornecedorVisualizar.visualizar();
 		cadastroFornecedorVisualizar.afterClass();
 
 	}
 	
-	@Test(priority = 51, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 51)
 	public void cadastroFornecedorFiltroId() {
 
 		cadastroFornecedorFiltroId = new CadastroFornecedorFiltroId();
 		cadastroFornecedorFiltroId.beforeClass();
-		cadastroFornecedorFiltroId.login();
-		cadastroFornecedorFiltroId.acessarMDR();
 		cadastroFornecedorFiltroId.filtroId();
 		cadastroFornecedorFiltroId.afterClass();
 
 	}
 
-	@Test(priority = 52, dependsOnMethods = "cadastroFornecedorcerCriar")
+	@Test(priority = 52)
 	public void cadastroFornecedorcerExcluir() {
 
 		cadastroFornecedorExcluir = new CadastroFornecedorExcluir();
 		cadastroFornecedorExcluir.beforeClass();
-		cadastroFornecedorExcluir.login();
-		cadastroFornecedorExcluir.acessarMDR();
 		cadastroFornecedorExcluir.excluir();
 		cadastroFornecedorExcluir.afterClass();
 
@@ -861,8 +786,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		commoditieParaTPFiltroID = new CommoditieParaTPFiltroID();
 		commoditieParaTPFiltroID.beforeClass();
-		commoditieParaTPFiltroID.login();
-		commoditieParaTPFiltroID.acessarMDR();
 		commoditieParaTPFiltroID.filtro();
 		commoditieParaTPFiltroID.afterClass();
 	}
@@ -872,8 +795,6 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		 commoditieParaTPCriar = new CommoditieParaTPCriar();
 		 commoditieParaTPCriar.beforeClass();
-		 commoditieParaTPCriar.ingresar();
-		 commoditieParaTPCriar.ingresarMDR();
 		 commoditieParaTPCriar.criar();
 		 commoditieParaTPCriar.afterClass();
 		System.out.println("-------------------Preço de Transferência > Commoditie para TP Fin-------------------------");
@@ -885,20 +806,16 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		definicaoVinculacaoFiltroID = new DefinicaoVinculacaoFiltroID();
 		definicaoVinculacaoFiltroID.beforeClass();
-		definicaoVinculacaoFiltroID.login();
-		definicaoVinculacaoFiltroID.acessarMDR();
 		definicaoVinculacaoFiltroID.filtro();
 		definicaoVinculacaoFiltroID.afterClass();
 
 	}
 	
-	@Test(priority = 62)
+	@Test(priority = 63)
 	public void definicaoVinculacaoCriar() {
 
 		definicaoVinculacaoCriar = new DefinicaoVinculacaoCriar();
 		definicaoVinculacaoCriar.beforeClass();
-		definicaoVinculacaoCriar.login();
-		definicaoVinculacaoCriar.acessarMDR();
 		definicaoVinculacaoCriar.criar();
 		definicaoVinculacaoCriar.afterClass();
 
@@ -916,32 +833,26 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 			relacionamentoEntreQuadrosCriar = new RelacionamentoEntreQuadrosCriar();
 			relacionamentoEntreQuadrosCriar.beforeClass();
-			relacionamentoEntreQuadrosCriar.login();
-			relacionamentoEntreQuadrosCriar.acessarMDR();
 			relacionamentoEntreQuadrosCriar.criar();
 			relacionamentoEntreQuadrosCriar.afterClass();
 
 		}
 
-		@Test(priority = 70, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 70)
 		public void relacionamentoEntreQuadrosEditar() {
 
 			relacionamentoEntreQuadrosEditar = new RelacionamentoEntreQuadrosEditar();
 			relacionamentoEntreQuadrosEditar.beforeClass();
-			relacionamentoEntreQuadrosEditar.login();
-			relacionamentoEntreQuadrosEditar.acessarMDR();
 			relacionamentoEntreQuadrosEditar.editar();
 			relacionamentoEntreQuadrosEditar.afterClass();
 
 		}
 		
-		@Test(priority = 71, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 71)
 		public void relacionamentoEntreQuadrosFiltroID() {
 
 			relacionamentoEntreQuadrosFiltroID = new RelacionamentoEntreQuadrosFiltroID();
 			relacionamentoEntreQuadrosFiltroID.beforeClass();
-			relacionamentoEntreQuadrosFiltroID.login();
-			relacionamentoEntreQuadrosFiltroID.acessarMDR();
 			relacionamentoEntreQuadrosFiltroID.filtro();
 			relacionamentoEntreQuadrosFiltroID.afterClass();
 
@@ -949,25 +860,21 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 
 
-		@Test(priority = 72, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 72)
 		public void relacionamentoEntreQuadrosExcluir() {
 
 			relacionamentoEntreQuadrosExcluir = new RelacionamentoEntreQuadrosExcluir();
 			relacionamentoEntreQuadrosExcluir.beforeClass();
-			relacionamentoEntreQuadrosExcluir.login();
-			relacionamentoEntreQuadrosExcluir.acessarMDR();
 			relacionamentoEntreQuadrosExcluir.excluir();
 			relacionamentoEntreQuadrosExcluir.afterClass();
 
 		}
 		
-		@Test(priority = 73, dependsOnMethods = "relacionamentoEntreQuadrosCriar")
+		@Test(priority = 73)
 		public void relacionamentoEntreQuadrosExcluirMassa() {
 
 			relacionamentoEntreQuadrosExcluirMassa = new RelacionamentoEntreQuadrosExcluirMassa();
 			relacionamentoEntreQuadrosExcluirMassa.beforeClass();
-			relacionamentoEntreQuadrosExcluirMassa.login();
-			relacionamentoEntreQuadrosExcluirMassa.acessarMDR();
 			relacionamentoEntreQuadrosExcluirMassa.criar();
 			relacionamentoEntreQuadrosExcluirMassa.afterClass();
 
@@ -980,7 +887,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 		
 		//Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida
 		
-	
+		/*
 
 		@Test(priority = 75)
 		public void parteDoCorpoAtingidaCriar() {
@@ -1796,7 +1703,7 @@ public class AutomacoesMDR5 extends TestBaseSteven {
 
 		}
 		
-		
+		*/
 		
 		
 		

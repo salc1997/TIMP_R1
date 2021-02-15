@@ -52,7 +52,7 @@ public class MunicipioEditarPO extends TestBaseSteven{
 	}
 	
 	
-	public void editar() {
+	public boolean editar() {
 		
 		cep.click();
 		sleep(1000);
@@ -104,24 +104,7 @@ public class MunicipioEditarPO extends TestBaseSteven{
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
 		
-		sleep(1000);
-		campo.clear();
-		sleep(1000);
-		campo.sendKeys(valor);
-		
-		gravar.click();
-		
-		waitExpectElement(sim);
-		sleep(3000);
-		sim.click();
-		sleep(2000);
-		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		System.out.println(sucesso);
-		
+		return sucesso;
 		
 		
 		

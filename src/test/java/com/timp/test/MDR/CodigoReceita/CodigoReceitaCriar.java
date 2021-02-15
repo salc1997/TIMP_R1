@@ -33,21 +33,12 @@ public class CodigoReceitaCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void criar() {
+
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void criar() {
 
 		boolean sucesso = codigoReceitaCriarPO.criar();
 

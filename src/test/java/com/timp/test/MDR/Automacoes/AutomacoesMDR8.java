@@ -91,6 +91,7 @@ public class AutomacoesMDR8 {
 	CadastroDeObrasEditar cadastroDeObrasEditar;
 	CadastroDeObrasExcluir cadastroDeObrasExcluir;
 	CadastroDeObrasExcluirEmMassa cadastroDeObrasExcluirEmMassa;
+	
 	// Cadastro Específico do INSS (CEI) > Cadastro de Obras
 	ConfiguracaoFundoSocailCriar configuracaoFundoSocailCriar;
 	ConfiguracoesFundoSocialEditar configuracoesFundoSocialEditar;
@@ -143,6 +144,7 @@ public class AutomacoesMDR8 {
 
 	// Determinacao De Relevancia De Tarefa > Cadastro De Código De Regras
 	CadastroDeCódigoDeRegrasCriar cadastroDeCódigoDeRegrasCriar;
+	
 	// Determinacao Relevancia Tarefa Motivo Reabertura > Determinacion Relevancia
 	// Por Motivo
 	DeterminacionRelevanciaPorMotivoCriar determinacionRelevanciaPorMotivoCriar;
@@ -281,9 +283,9 @@ public class AutomacoesMDR8 {
 	}
 	// 12
 
-	// 7-------12
+	// 6-------12
 
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void cadastroDeObrasCriar() {
 
 		System.out.println("----Cadastro Específico do INSS (CEI) >	Cadastro de Obras-------------");
@@ -332,11 +334,10 @@ public class AutomacoesMDR8 {
 		System.out.println("-------------------Cadastro De Obras Fim-------------------------");
 	}
 
-	//// 13-------18
 
-	@Test(priority = 13)
+
+	@Test(priority = 10)
 	public void configuracaoFundoSocailCriar() {
-
 		System.out.println("----Configurações de Fundo Social-------------");
 
 		configuracaoFundoSocailCriar = new ConfiguracaoFundoSocailCriar();
@@ -360,7 +361,7 @@ public class AutomacoesMDR8 {
 
 	}
 
-	// 19------------24
+
 
 	// 24 ---------30
 
@@ -464,49 +465,6 @@ public class AutomacoesMDR8 {
 
 	// 42
 
-	@Test(priority = 42)
-	public void cadastroCondiçaoExcluirMasas() {
-
-		System.out.println("---- Cadastro Condicao-------------");
-
-		cadastroCondiçaoExcluirMasas = new CadastroCondiçaoExcluirMasas();
-		cadastroCondiçaoExcluirMasas.beforeClass();
-		cadastroCondiçaoExcluirMasas.login();
-		cadastroCondiçaoExcluirMasas.acessarMDR();
-		cadastroCondiçaoExcluirMasas.criar();
-		cadastroCondiçaoExcluirMasas.afterClass();
-
-	}
-
-	// 43
-	@Test(priority = 43)
-	public void responsavelMovimientoExcluirMasas() {
-
-		System.out.println("---- Responsavel Movimiento -------------");
-
-		responsavelMovimientoExcluirMasas = new ResponsavelMovimientoExcluirMasas();
-		responsavelMovimientoExcluirMasas.beforeClass();
-		responsavelMovimientoExcluirMasas.login();
-		responsavelMovimientoExcluirMasas.acessarMDR();
-		responsavelMovimientoExcluirMasas.criar();
-		responsavelMovimientoExcluirMasas.afterClass();
-
-	}
-
-	// 44
-	@Test(priority = 44)
-	public void instituicaoExcluirMasas() {
-
-		System.out.println("----  institucao  -------------");
-
-		instituicaoExcluirMasas = new InstituicaoExcluirMasas();
-		instituicaoExcluirMasas.beforeClass();
-		instituicaoExcluirMasas.login();
-		instituicaoExcluirMasas.acessarMDR();
-		instituicaoExcluirMasas.criar();
-		instituicaoExcluirMasas.afterClass();
-
-	}
 
 	// 45
 
@@ -573,7 +531,7 @@ public class AutomacoesMDR8 {
 		parametrizaçãoDoLivroOficialVisualizar.afterClass();
 	}
 
-	@Test(priority = 49, dependsOnMethods = "parametrizaçãoDoLivroOficial")
+	@Test(priority = 49)
 	public void parametrizaçãoDoLivroOficialExcluir() {
 		parametrizaçãoDoLivroOficialExcluir = new ParametrizaçãoDoLivroOficialExcluir();
 		parametrizaçãoDoLivroOficialExcluir.beforeClass();
@@ -728,7 +686,9 @@ public class AutomacoesMDR8 {
 		s1060AmbientesDeTrablhoExcluirMassa.afterClass();
 	}
 
+
 	@Test(priority = 61)
+
 	
 	public void s1060AmbientesDeTrablhoExcluir() {
 
@@ -801,7 +761,7 @@ public class AutomacoesMDR8 {
 		s1250AquisiçãoTotalCriar.afterClass();
 	}
 
-	@Test(priority = 66, dependsOnMethods = "s1250AquisiçãoTotalCriar")
+	@Test(priority = 66)
 	
 	public void s1250AquisiçãoTotalEditar() {
 

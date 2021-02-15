@@ -134,7 +134,7 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 	public WebElement insiraFiltro2;
 	
 
-	
+	boolean sucesso;
 	
 	public DashboardEdiçãoTabelaPO() {
 		PageFactory.initElements(driver, this);
@@ -265,8 +265,10 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 
 		}else if (tc2==true) {
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
-
+			//WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id][text()=\"Ajuste\"]"));
+			
+			
 			grupoEstructuraOPC.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -566,9 +568,9 @@ public class DashboardEdiçãoTabelaPO extends TestBaseMassiel{
 		editar1.click();
 		sleep(4000);
 		sleep(4000);
-		boolean sucesso = false;
+		
 		sucesso = mostrar1.isDisplayed();
-		System.out.println(sucesso);
+	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 

@@ -133,8 +133,8 @@ public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		
+		//String idRegistro1 = idObter1();
+		String idRegistro1 = idObter("taxasdeconversao");
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		actionsMoveToElementElement(menu1);

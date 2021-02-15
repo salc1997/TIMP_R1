@@ -118,6 +118,9 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
+	String idR1 = "";
+	String idR2 = "";
+	
 	public boolean criar() {
 		sleep(2000);
 		menuNotasDeclararAnexo.click();
@@ -323,7 +326,6 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBaseCristhian {
 		sleep(2000);
 		
 
-
 		biblioteca.click();
 		
 		sleep(2000);
@@ -334,15 +336,52 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBaseCristhian {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		rows = rows("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]");
+		
+		String idU = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idR1 = idU;
+		sleep(1000);
+		System.out.println("Último ID após a criação: " +idU);
+		
+		rows = rows-1;
+		String idP = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		idR2 = idP;
+		sleep(1000);
+		System.out.println("Penultimo ID após a criação: " +idP);
+		
+		
+		int idI = convertToInt(id);
+		int idUI = convertToInt(idU);
+		int idPI = convertToInt(idP);
+		
+
+		boolean sucesso = false;
+		
+		if (idI < idUI && idI < idPI) {
+			sucesso = true;
+		}else {
+			sucesso = false;
+		}
+		
+		return sucesso;
+		
+		
+		
+		
+		
+	}
+	
+	
+	public boolean excluir() {
+		
 		sleep(2000);
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		Integer fila1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		Integer fila2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		fila2 = fila2 - 1; 
 		
-		WebElement selecccionuno = driver.findElement(By.xpath("//div[@data-id]["+fila1+"]/div[2]/label/span"));
+		WebElement selecccionuno = driver.findElement(By.xpath("//div[@data-id=\""+idR1+"\"]/div[2]/label/span"));
 		selecccionuno.click();
-		WebElement selecccionDos = driver.findElement(By.xpath("//div[@data-id]["+fila2+"]/div[2]/label/span"));
+		WebElement selecccionDos = driver.findElement(By.xpath("//div[@data-id=\""+idR2+"\"]/div[2]/label/span"));
 		selecccionDos.click();
 		
 		WebElement excluirmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Sign-and-Symbols icon-persign\"]"));
@@ -354,18 +393,47 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBaseCristhian {
 		
 		aceitar.click();
 		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir3(idB);
-		sleep(2000);
-		System.out.println("ID: "+id);
-		System.out.println("IDB: "+idB);
 		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
+		invisibilityOfElementOverlay();
+		
+		refresh();
+		
+		sleep(2000);
+		waitExpectElement(menuNotasDeclararAnexo);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		menuNotasDeclararAnexo.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		
+		
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		
+		
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		sleep(2000);
+
+		System.out.println("Ultimo Registro: "+idR1);
+		System.out.println("Penultimo Registro: "+idR2);
+		
+		double idD = convertToDouble(idB);
+		double idU = convertToDouble(idR1);
+		double idP = convertToDouble(idR2);
+		
+		
 		//compara pra ver se o novo id criado é realmente o ultimo
 		boolean sucesso = false;
 		
-		if (idBD > idD) {
+		if (idU > idD && idP > idD) {
 			sucesso = true;
 		}else {
 			sucesso = false;
@@ -373,6 +441,11 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBaseCristhian {
 		
 		
 		return sucesso;
+		
+		
+		
+		
+		
 		
 	}
 }

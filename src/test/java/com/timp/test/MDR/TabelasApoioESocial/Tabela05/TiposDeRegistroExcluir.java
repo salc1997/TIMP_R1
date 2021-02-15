@@ -30,7 +30,7 @@ public class TiposDeRegistroExcluir extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -43,9 +43,12 @@ public class TiposDeRegistroExcluir extends TestBaseEliel{
 		acessarMDRPO.acessarMDR();
 
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void excluir() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tiposDeRegistroExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

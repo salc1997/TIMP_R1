@@ -236,8 +236,8 @@ public class AutomaçõesMDR7 {
 
 		associaçãoCriar = new AssociaçãoCriar();
 		associaçãoCriar.beforeClass();
-		associaçãoCriar.login();
-		associaçãoCriar.acessarMDR();
+	//	associaçãoCriar.login();
+	//	associaçãoCriar.acessarMDR();
 		associaçãoCriar.criarAssociação();
 		associaçãoCriar.afterClass();
 
@@ -248,8 +248,8 @@ public class AutomaçõesMDR7 {
 
 		associaçãoEditar = new AssociaçãoEditar();
 		associaçãoEditar.beforeClass();
-		associaçãoEditar.login();
-		associaçãoEditar.acessarMDR();
+		//associaçãoEditar.login();
+		//associaçãoEditar.acessarMDR();
 		associaçãoEditar.editarAssociação();
 		associaçãoEditar.afterClass();
 
@@ -260,8 +260,8 @@ public class AutomaçõesMDR7 {
 
 		associaçãoDetalhes = new AssociaçãoDetalhes();
 		associaçãoDetalhes.beforeClass();
-		associaçãoDetalhes.ingresar();
-		associaçãoDetalhes.mdrEntrar();
+	//	associaçãoDetalhes.ingresar();
+	//	associaçãoDetalhes.mdrEntrar();
 		associaçãoDetalhes.detalheAssociação();
 		associaçãoDetalhes.afterClass();
 
@@ -272,8 +272,8 @@ public class AutomaçõesMDR7 {
 
 		associaçãoVisualizar = new AssociaçãoVisualizar();
 		associaçãoVisualizar.beforeClass();
-		associaçãoVisualizar.ingresar();
-		associaçãoVisualizar.mdrEntrar();
+	//	associaçãoVisualizar.ingresar();
+		//associaçãoVisualizar.mdrEntrar();
 		associaçãoVisualizar.visualizarAssociação();
 		associaçãoVisualizar.afterClass();
 		

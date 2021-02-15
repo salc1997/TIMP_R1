@@ -346,7 +346,8 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		
 		String idConfiguracao = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
-		
+		System.out.println("++++++++++++++++++++++");
+		System.out.println("ID Configuracao: " + idConfiguracao);
 		leiautePublicoC.click();
 		
 		sleep(3000);
@@ -429,6 +430,10 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(10000);
 		
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		
 		String idConfiguracaoTC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
@@ -450,7 +455,9 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		
 		}
 		
-		System.out.println("ID: " + idConfiguracaoTC);
+		System.out.println("++++++++++++++++++++++");
+		
+		System.out.println("ID Configuracao Nueva: " + idConfiguracaoTC);
 		System.out.println("Nome: " + nomeC);
 		System.out.println("Empresa: "+ empresaC);
 		System.out.println("UF: " + ufC);

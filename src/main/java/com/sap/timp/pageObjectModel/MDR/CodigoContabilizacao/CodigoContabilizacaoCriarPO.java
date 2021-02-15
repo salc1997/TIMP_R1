@@ -150,16 +150,37 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		butaosim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(2000);
+		sleep(4000);
+
 
 		
 		biblioteca.click();
+		sleep(6000);
+		
+		int visible = rows("//button[text()=\"Não\"]\")");
+		
+		if (visible>0) {
+			sleep(2000);
+			waitExpectElement(butaosim);
+			sleep(1000);
+			nao.click();
+			waitExpectElement(butaosim);
+			sleep(2000);
+			butaosim.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay dark\"]");
+			sleep(4000);
+		}
+		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		//Pega o ultimo id depois do preenchimento
 
 		siguiente.click();
 		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

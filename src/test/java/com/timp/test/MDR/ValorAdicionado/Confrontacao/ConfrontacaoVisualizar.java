@@ -31,8 +31,9 @@ public class ConfrontacaoVisualizar extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
-	
+		/*
 	@Test(priority = 0)
 	public void ingresar() {
 		loginTC.login();
@@ -41,9 +42,12 @@ public class ConfrontacaoVisualizar extends TestBaseMassiel{
 	public void ingresarMDR() {
 		accesarMDRPO.acessarMDR();
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test()
 	public void visualizar() {
+		
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
 		
 		ArrayList<Boolean> sucesso = confrontacaoVisualizarPO.visualizar();
 

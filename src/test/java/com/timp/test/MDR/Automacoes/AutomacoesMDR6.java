@@ -26,11 +26,6 @@ import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.St
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar;
 import com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar;
 import com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa;
-import com.timp.test.MDR.Empresas.EmpresaEditar;
-import com.timp.test.MDR.Empresas.EmpresasDetalhes;
-import com.timp.test.MDR.Empresas.EmpresasFiltros;
-import com.timp.test.MDR.Empresas.EmpresasVisualizar;
-import com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirMassaPP;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassa;
 import com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa;
@@ -278,8 +273,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 
 
 
-		//Incentivos Fiscais > Projetos Patrocinados
-			IncentivosFiscaisExcluirMassaPP incentivosFiscaisExcluirMassaPP;
+	
 
 		//Siscoserv  > Registro RVS
 			RegistroRVSExcluirEmMassa registroRVSExcluirEmMassa;
@@ -347,53 +341,43 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 01 - Categorias De Trabalhadores-------------------------");
 				categoriasDeTrabalhadoresCriar = new CategoriasDeTrabalhadoresCriar();
 				categoriasDeTrabalhadoresCriar.beforeClass();
-				categoriasDeTrabalhadoresCriar.login();
-				categoriasDeTrabalhadoresCriar.acessarMDR();
 				categoriasDeTrabalhadoresCriar.criar();
 				categoriasDeTrabalhadoresCriar.afterClass();
 
 			}
 			
-			@Test(priority = 1, dependsOnMethods = "categoriasDeTrabalhadoresCriar")
+			@Test(priority = 1)
 			public void categoriasDeTrabalhadoresEditar() {
 				categoriasDeTrabalhadoresEditar = new CategoriasDeTrabalhadoresEditar();
 				categoriasDeTrabalhadoresEditar.beforeClass();
-				categoriasDeTrabalhadoresEditar.login();
-				categoriasDeTrabalhadoresEditar.acessarMDR();
 				categoriasDeTrabalhadoresEditar.editar();
 				categoriasDeTrabalhadoresEditar.afterClass();
 
 			}
 			
-			@Test(priority = 2, dependsOnMethods = "categoriasDeTrabalhadoresCriar")
+			@Test(priority = 2)
 			public void categoriasDeTrabalhadoresExcluirMassa() {
 				categoriasDeTrabalhadoresExcluirMassa = new CategoriasDeTrabalhadoresExcluirMassa();
 				categoriasDeTrabalhadoresExcluirMassa.beforeClass();
-				categoriasDeTrabalhadoresExcluirMassa.login();
-				categoriasDeTrabalhadoresExcluirMassa.acessarMDR();
 				categoriasDeTrabalhadoresExcluirMassa.criar();
 				categoriasDeTrabalhadoresExcluirMassa.afterClass();
 
 			}
 			
-			@Test(priority = 3, dependsOnMethods = "categoriasDeTrabalhadoresCriar")
+			@Test(priority = 3)
 			public void categoriasDeTrabalhadoresVisualizar() {
 				categoriasDeTrabalhadoresVisualizar = new CategoriasDeTrabalhadoresVisualizar();
 				categoriasDeTrabalhadoresVisualizar.beforeClass();
-				categoriasDeTrabalhadoresVisualizar.login();
-				categoriasDeTrabalhadoresVisualizar.acessarMDR();
 				categoriasDeTrabalhadoresVisualizar.Visualizar();
 				categoriasDeTrabalhadoresVisualizar.afterClass();
 
 			}
 			
 			
-			@Test(priority = 4, dependsOnMethods = "categoriasDeTrabalhadoresCriar")
+			@Test(priority = 4)
 			public void categoriasDeTrabalhadoresExcluir() {
 				categoriasDeTrabalhadoresExcluir = new CategoriasDeTrabalhadoresExcluir();
 				categoriasDeTrabalhadoresExcluir.beforeClass();
-				categoriasDeTrabalhadoresExcluir.login();
-				categoriasDeTrabalhadoresExcluir.acessarMDR();
 				categoriasDeTrabalhadoresExcluir.excluir();
 				categoriasDeTrabalhadoresExcluir.afterClass();
 				System.out.println("------------------- Tabela 01 - Categorias De Trabalhadores Fim-------------------------");
@@ -408,41 +392,43 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 02 - Financiamento De Apos Esp-------------------------");
 				financiamentoDeAposEspCriar = new FinanciamentoDeAposEspCriar();
 				financiamentoDeAposEspCriar.beforeClass();
-				financiamentoDeAposEspCriar.login();
-				financiamentoDeAposEspCriar.acessarMDR();
 				financiamentoDeAposEspCriar.criar();
 				financiamentoDeAposEspCriar.afterClass();
 
 			}
 			
-			@Test(priority = 7, dependsOnMethods = "financiamentoDeAposEspCriar")
+			@Test(priority = 7)
 			public void financiamentoDeAposEspEditar() {
 				financiamentoDeAposEspEditar = new FinanciamentoDeAposEspEditar();
 				financiamentoDeAposEspEditar.beforeClass();
-				financiamentoDeAposEspEditar.login();
-				financiamentoDeAposEspEditar.acessarMDR();
 				financiamentoDeAposEspEditar.editar();
 				financiamentoDeAposEspEditar.afterClass();
 
 			}
 			
-			@Test(priority = 8, dependsOnMethods = "financiamentoDeAposEspCriar")
+			@Test(priority = 8)
 			public void financiamentoDeAposEspVisualizar() {
 				financiamentoDeAposEspVisualizar = new FinanciamentoDeAposEspVisualizar();
 				financiamentoDeAposEspVisualizar.beforeClass();
-				financiamentoDeAposEspVisualizar.login();
-				financiamentoDeAposEspVisualizar.acessarMDR();
 				financiamentoDeAposEspVisualizar.Visualizar();
 				financiamentoDeAposEspVisualizar.afterClass();
 
 			}
 			
-			@Test(priority = 9, dependsOnMethods = "financiamentoDeAposEspCriar")
+			@Test(priority = 9)
+			public void financiamientoDeAposEspExcluiMassa() {
+				financiamientoDeAposEspExcluiMassa = new FinanciamientoDeAposEspExcluiMassa();
+				financiamientoDeAposEspExcluiMassa.beforeClass();
+				financiamientoDeAposEspExcluiMassa.criar();
+				financiamientoDeAposEspExcluiMassa.excluirMassa();
+				financiamientoDeAposEspExcluiMassa.afterClass();
+
+			}
+			
+			@Test(priority = 10)
 			public void financiamentoDeAposEspExcluir() {
 				financiamentoDeAposEspExcluir = new FinanciamentoDeAposEspExcluir();
 				financiamentoDeAposEspExcluir.beforeClass();
-				financiamentoDeAposEspExcluir.login();
-				financiamentoDeAposEspExcluir.acessarMDR();
 				financiamentoDeAposEspExcluir.excluir();
 				financiamentoDeAposEspExcluir.afterClass();
 				
@@ -459,55 +445,45 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 03 - Natureza Das Rubricas-------------------------");
 				naturezaDasRubricasCriar = new NaturezaDasRubricasCriar();
 				naturezaDasRubricasCriar.beforeClass();
-				naturezaDasRubricasCriar.login();
-				naturezaDasRubricasCriar.acessarMDR();
 				naturezaDasRubricasCriar.criar();
 				naturezaDasRubricasCriar.afterClass();
 
 			}
 			
-			@Test(priority = 13, dependsOnMethods = "naturezaDasRubricasCriar")
+			@Test(priority = 13)
 			public void naturezaDasRubricasEditar() {
 			    
 				naturezaDasRubricasEditar = new NaturezaDasRubricasEditar();
 				naturezaDasRubricasEditar.beforeClass();
-				naturezaDasRubricasEditar.login();
-				naturezaDasRubricasEditar.acessarMDR();
 				naturezaDasRubricasEditar.editar();
 				naturezaDasRubricasEditar.afterClass();
 
 			}
 			
-			@Test(priority = 14, dependsOnMethods = "naturezaDasRubricasCriar")
+			@Test(priority = 14)
 			public void naturezaDasRubricasVisualizar() {
 			    
 				naturezaDasRubricasVisualizar = new NaturezaDasRubricasVisualizar();
 				naturezaDasRubricasVisualizar.beforeClass();
-				naturezaDasRubricasVisualizar.login();
-				naturezaDasRubricasVisualizar.acessarMDR();
 				naturezaDasRubricasVisualizar.Visualizar();
 				naturezaDasRubricasVisualizar.afterClass();
 
 			}
 			
-			@Test(priority = 15, dependsOnMethods = "naturezaDasRubricasCriar")
+			@Test(priority = 15)
 			public void naturezaDasRubricasExcluir() {
 			    
 				naturezaDasRubricasExcluir = new NaturezaDasRubricasExcluir();
 				naturezaDasRubricasExcluir.beforeClass();
-				naturezaDasRubricasExcluir.login();
-				naturezaDasRubricasExcluir.acessarMDR();
 				naturezaDasRubricasExcluir.excluir();
 				naturezaDasRubricasExcluir.afterClass();
 			}
 			
-			@Test(priority = 16, dependsOnMethods = "naturezaDasRubricasCriar")
+			@Test(priority = 16)
 			public void naturezaDasRubricasExcluirMassa() {
 			    
 				naturezaDasRubricasExluirMassa = new NaturezaDasRubricasExluirMassa();
 				naturezaDasRubricasExluirMassa.beforeClass();
-				naturezaDasRubricasExluirMassa.login();
-				naturezaDasRubricasExluirMassa.acessarMDR();
 				naturezaDasRubricasExluirMassa.criar();
 				naturezaDasRubricasExluirMassa.excluirMassa();
 				naturezaDasRubricasExluirMassa.afterClass();
@@ -521,52 +497,42 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 04 - Codigos E Aliq. De FPRAS-------------------------");
 				codigosEAliqDeFPRASCriar = new CodigosEAliqDeFPRASCriar();
 				codigosEAliqDeFPRASCriar.beforeClass();
-				codigosEAliqDeFPRASCriar.login();
-				codigosEAliqDeFPRASCriar.acessarMDR();
 				codigosEAliqDeFPRASCriar.criar();
 				codigosEAliqDeFPRASCriar.afterClass();
 
 			}
 			
-			@Test(priority = 19, dependsOnMethods = "codigosEAliqDeFPRASCriar")
+			@Test(priority = 19)
 			public void codigosEAliqDeFPRASEditar() {
 				codigosEAliqDeFPRASEditar = new CodigosEAliqDeFPRASEditar();
 				codigosEAliqDeFPRASEditar.beforeClass();
-				codigosEAliqDeFPRASEditar.login();
-				codigosEAliqDeFPRASEditar.acessarMDR();
 				codigosEAliqDeFPRASEditar.editar();
 				codigosEAliqDeFPRASEditar.afterClass();
 
 			}
 			
-			@Test(priority = 20, dependsOnMethods = "codigosEAliqDeFPRASCriar")
+			@Test(priority = 20)
 			public void codigosEAliqDeFPRASVisualizar() {
 				codigosEAliqDeFPRASVisualizar = new CodigosEAliqDeFPRASVisualizar();
 				codigosEAliqDeFPRASVisualizar.beforeClass();
-				codigosEAliqDeFPRASVisualizar.login();
-				codigosEAliqDeFPRASVisualizar.acessarMDR();
 				codigosEAliqDeFPRASVisualizar.Visualizar();
 				codigosEAliqDeFPRASVisualizar.afterClass();
 
 			}
 			
-			@Test(priority = 21, dependsOnMethods = "codigosEAliqDeFPRASCriar")
+			@Test(priority = 21)
 			public void codigosEAliqDeFPRASExcluir() {
 				codigosEAliqDeFPRASExcluir = new CodigosEAliqDeFPRASExcluir();
 				codigosEAliqDeFPRASExcluir.beforeClass();
-				codigosEAliqDeFPRASExcluir.login();
-				codigosEAliqDeFPRASExcluir.acessarMDR();
 				codigosEAliqDeFPRASExcluir.excluir();
 				codigosEAliqDeFPRASExcluir.afterClass();
 				
 			}
 			
-			@Test(priority = 22, dependsOnMethods = "codigosEAliqDeFPRASCriar")
+			@Test(priority = 22)
 			public void codigosEAliqDeFPRASExcluirMassa() {
 				codigosEAliqDeFPRASExcluirMassa = new CodigosEAliqDeFPRASExcluirMassa();
 				codigosEAliqDeFPRASExcluirMassa.beforeClass();
-				codigosEAliqDeFPRASExcluirMassa.login();
-				codigosEAliqDeFPRASExcluirMassa.acessarMDR();
 				codigosEAliqDeFPRASExcluirMassa.criar();
 				codigosEAliqDeFPRASExcluirMassa.excluirMassa();
 				codigosEAliqDeFPRASExcluirMassa.afterClass();
@@ -582,51 +548,41 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 05 - Tipos de Registro-------------------------");
 				tiposDeRegistroCriar = new TiposDeRegistroCriar();
 				tiposDeRegistroCriar.beforeClass();
-				tiposDeRegistroCriar.login();
-				tiposDeRegistroCriar.acessarMDR();
 				tiposDeRegistroCriar.criar();
 				tiposDeRegistroCriar.afterClass();
 
 			}
 			
-			@Test(priority = 25, dependsOnMethods = "tiposDeRegistroCriar")
+			@Test(priority = 25)
 			public void tiposDeRegistroEditar() {
 				tiposDeRegistroEditar = new TiposDeRegistroEditar();
 				tiposDeRegistroEditar.beforeClass();
-				tiposDeRegistroEditar.login();
-				tiposDeRegistroEditar.acessarMDR();
 				tiposDeRegistroEditar.editar();
 				tiposDeRegistroEditar.afterClass();
 
 			}
 			
-			@Test(priority = 25, dependsOnMethods = "tiposDeRegistroCriar")
+			@Test(priority = 26)
 			public void tiposDeRegistroVisualizar() {
 				tiposDeRegistroVisualizar = new TiposDeRegistroVisualizar();
 				tiposDeRegistroVisualizar.beforeClass();
-				tiposDeRegistroVisualizar.login();
-				tiposDeRegistroVisualizar.acessarMDR();
 				tiposDeRegistroVisualizar.Visualizar();
 				tiposDeRegistroVisualizar.afterClass();
 
 			}
 			
-			@Test(priority = 26, dependsOnMethods = "tiposDeRegistroCriar")
+			@Test(priority = 26)
 			public void tiposDeRegistroExcluir() {
 				tiposDeRegistroExcluir = new TiposDeRegistroExcluir();
 				tiposDeRegistroExcluir.beforeClass();
-				tiposDeRegistroExcluir.login();
-				tiposDeRegistroExcluir.acessarMDR();
 				tiposDeRegistroExcluir.excluir();
 				tiposDeRegistroExcluir.afterClass();
 			}
 			
-			@Test(priority = 27, dependsOnMethods = "tiposDeRegistroCriar")
+			@Test(priority = 27)
 			public void tiposDeRegistroExcluirMassa() {
 				tiposDeRegistroExcluirMassa = new TiposDeRegistroExcluirMassa();
 				tiposDeRegistroExcluirMassa.beforeClass();
-				tiposDeRegistroExcluirMassa.login();
-				tiposDeRegistroExcluirMassa.acessarMDR();
 				tiposDeRegistroExcluirMassa.criar();
 				tiposDeRegistroExcluirMassa.excluirMassa();
 				tiposDeRegistroExcluirMassa.afterClass();
@@ -642,55 +598,45 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("------------------- Tabela 06 - Paises-------------------------");
 				paisesCriar = new PaisesCriar();
 				paisesCriar.beforeClass();
-				paisesCriar.login();
-				paisesCriar.acessarMDR();
 				paisesCriar.criar();
 				paisesCriar.afterClass();
 
 			}
 			
-			@Test(priority = 29, dependsOnMethods = "paisesCriar")
+			@Test(priority = 29)
 			public void paisesEditar() {
 				
 				paisesEditar = new PaisesEditar();
 				paisesEditar.beforeClass();
-				paisesEditar.login();
-				paisesEditar.acessarMDR();
 				paisesEditar.editar();
 				paisesEditar.afterClass();
 
 			}
 			
-			@Test(priority = 30, dependsOnMethods = "paisesCriar")
+			@Test(priority = 30)
 			public void paisesVisualizar() {
 				
 				paisesVisualizar = new PaisesVisualizar();
 				paisesVisualizar.beforeClass();
-				paisesVisualizar.login();
-				paisesVisualizar.acessarMDR();
 				paisesVisualizar.Visualizar();
 				paisesVisualizar.afterClass();
 
 			}
 			
-			@Test(priority = 31, dependsOnMethods = "paisesCriar")
+			@Test(priority = 31)
 			public void paisesExcluir() {
 				
 				paisesExcluir = new PaisesExcluir();
 				paisesExcluir.beforeClass();
-				paisesExcluir.login();
-				paisesExcluir.acessarMDR();
 				paisesExcluir.excluir();
 				paisesExcluir.afterClass();
 				
 			}
 			
-			@Test(priority = 32, dependsOnMethods = "paisesCriar")
+			@Test(priority = 32)
 			public void paisesExcluirMassa() {
 				paisesExcluirMassa = new PaisesExcluirMassa();
 				paisesExcluirMassa.beforeClass();
-				paisesExcluirMassa.login();
-				paisesExcluirMassa.acessarMDR();
 				paisesExcluirMassa.criar();
 				paisesExcluirMassa.excluirMassa();
 				paisesExcluirMassa.afterClass();
@@ -704,69 +650,46 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Tabela 07 - Tipos de Dependentes-------------------------");
 				tiposDeDependentesCriar = new TiposDeDependentesCriar();
 				tiposDeDependentesCriar.beforeClass();
-				tiposDeDependentesCriar.login();
-				tiposDeDependentesCriar.acessarMDR();
 				tiposDeDependentesCriar.criar();
 				tiposDeDependentesCriar.afterClass();
 
 			}
 			
 			
-			@Test(priority = 35, dependsOnMethods = "tiposDeDependentesCriar")
+			@Test(priority = 35)
 			public void tiposDeDependentesEditar() {
 			tiposDeDependentesEditar = new TiposDeDependentesEditar();
 				tiposDeDependentesEditar.beforeClass();
-				tiposDeDependentesEditar.login();
-				tiposDeDependentesEditar.acessarMDR();
 				tiposDeDependentesEditar.editar();
 				tiposDeDependentesEditar.afterClass();
 
 			}
 			
-			@Test(priority = 36, dependsOnMethods = "tiposDeDependentesCriar")
+			@Test(priority = 36)
 			public void tiposDeDependentesVisualizar() {
 				tiposDeDependentesVisualizar = new TiposDeDependentesVisualizar();
 				tiposDeDependentesVisualizar.beforeClass();
-				tiposDeDependentesVisualizar.login();
-				tiposDeDependentesVisualizar.acessarMDR();
 				tiposDeDependentesVisualizar.Visualizar();
 				tiposDeDependentesVisualizar.afterClass();
 
 			}
 			
-			@Test(priority = 37, dependsOnMethods = "tiposDeDependentesCriar")
+			@Test(priority = 37)
 			public void tiposDeDependentesExcluir() {
 				tiposDeDependentesExcluir = new TiposDeDependentesExcluir();
 				tiposDeDependentesExcluir.beforeClass();
-				tiposDeDependentesExcluir.login();
-				tiposDeDependentesExcluir.acessarMDR();
 				tiposDeDependentesExcluir.excluir();
 				tiposDeDependentesExcluir.afterClass();
 			}
 			
-			@Test(priority = 38, dependsOnMethods = "tiposDeDependentesCriar")
+			@Test(priority = 38)
 			public void tiposDeDependentesExcluirMassa() {
 				tiposDeDependentesExcluirMassa = new TiposDeDependentesExcluirMassa();
 				tiposDeDependentesExcluirMassa.beforeClass();
-				tiposDeDependentesExcluirMassa.login();
-				tiposDeDependentesExcluirMassa.acessarMDR();
 				tiposDeDependentesExcluirMassa.criar();
 				tiposDeDependentesExcluirMassa.excluirMassa();
 				tiposDeDependentesExcluirMassa.afterClass();
 				System.out.println("-------------------Tabela 07 - Tipos de Dependentes Fim-------------------------");
-			}
-			//39
-			//Codigo receita	
-			@Test(priority = 39)
-			public void codigoReceitaExcluirEmMassa() {
-				System.out.println("-------------------Codigo receita-------------------------");
-				codigoReceitaExcluirEmMassa = new CodigoReceitaExcluirEmMassa();
-				codigoReceitaExcluirEmMassa.beforeClass();
-				codigoReceitaExcluirEmMassa.login();
-				codigoReceitaExcluirEmMassa.acessarMDR();
-				codigoReceitaExcluirEmMassa.criar();
-				codigoReceitaExcluirEmMassa.afterClass();
-
 			}
 			
 			//Siscoserv > Pais/Moeda
@@ -774,9 +697,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 			public void paisMoedaExcluirEmMassa() {
 				System.out.println("-------------------Siscoserv > Pais/Moeda-------------------------");
 				paisMoedaExcluirEmMassa = new PaisMoedaExcluirEmMassa();
-				paisMoedaExcluirEmMassa.beforeClass();
-				paisMoedaExcluirEmMassa.login();
-				paisMoedaExcluirEmMassa.acessarMDR();
+				paisMoedaExcluirEmMassa.beforeClass();;
 				paisMoedaExcluirEmMassa.criar();
 				paisMoedaExcluirEmMassa.afterClass();
 
@@ -788,8 +709,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Siscoserv > RegistroRAS-------------------------");
 				registroRASExcluirEmMassa = new RegistroRASExcluirEmMassa();
 				registroRASExcluirEmMassa.beforeClass();
-				registroRASExcluirEmMassa.login();
-				registroRASExcluirEmMassa.acessarMDR();
 				registroRASExcluirEmMassa.criar();
 				registroRASExcluirEmMassa.afterClass();
 
@@ -801,8 +720,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Siscoserv > RegistroRP-------------------------");
 				registroRPExcluirEmMassa = new RegistroRPExcluirEmMassa();
 				registroRPExcluirEmMassa.beforeClass();
-				registroRPExcluirEmMassa.login();
-				registroRPExcluirEmMassa.acessarMDR();
 				registroRPExcluirEmMassa.criar();
 				registroRPExcluirEmMassa.afterClass();
 
@@ -814,8 +731,6 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Atividades Para Tributacao > Tipos De Servicos-------------------------");
 				tiposDeServicosExcluirEmMassa = new TiposDeServicosExcluirEmMassa();
 				tiposDeServicosExcluirEmMassa.beforeClass();
-				tiposDeServicosExcluirEmMassa.login();
-				tiposDeServicosExcluirEmMassa.acessarMDR();
 				tiposDeServicosExcluirEmMassa.criar();
 				tiposDeServicosExcluirEmMassa.afterClass();
 
@@ -828,52 +743,42 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Valor Adicionado > Confrontacao-------------------------");
 				confratacaoCriar = new ConfratacaoCriar();
 				confratacaoCriar.beforeClass();
-				confratacaoCriar.login();
-				confratacaoCriar.acessarMDR();
 				confratacaoCriar.criar();
 				confratacaoCriar.afterClass();
 
 			}
 			
-			@Test(priority = 45, dependsOnMethods = "confratacaoCriar")
+			@Test(priority = 45)
 			public void confrontacaoDetalhes() {
 				confrontacaoDetalhes = new ConfrontacaoDetalhes();
 				confrontacaoDetalhes.beforeClass();
-				confrontacaoDetalhes.login();
-				confrontacaoDetalhes.acessarMDR();
 				confrontacaoDetalhes.detalhes();
 				confrontacaoDetalhes.afterClass();
 
 			}
 			
-			@Test(priority = 46, dependsOnMethods = "confratacaoCriar")
+			@Test(priority = 46)
 			public void confrontacaoEditar() {
 				confrontacaoEditar = new ConfrontacaoEditar();
 				confrontacaoEditar.beforeClass();
-				confrontacaoEditar.login();
-				confrontacaoEditar.acessarMDR();
 				confrontacaoEditar.editar();
 				confrontacaoEditar.afterClass();
 				
 			}
 		
 			
-			@Test(priority = 47, dependsOnMethods = "confratacaoCriar")
+			@Test(priority = 47)
 			public void confrontacaoVisualizar() {
 				confrontacaoVisualizar = new ConfrontacaoVisualizar();
 				confrontacaoVisualizar.beforeClass();
-				confrontacaoVisualizar.ingresar();
-				confrontacaoVisualizar.ingresarMDR();
 				confrontacaoVisualizar.visualizar();
 				confrontacaoVisualizar.afterClass();
 				
 			}
-			@Test(priority = 48, dependsOnMethods = "confratacaoCriar")
+			@Test(priority = 48)
 			public void confrontacaoExcluir() {
 				confrontacaoExcluir = new ConfrontacaoExcluir();
 				confrontacaoExcluir.beforeClass();
-				confrontacaoExcluir.ingresar();
-				confrontacaoExcluir.ingresarMDR();
 				confrontacaoExcluir.Excluir();
 				confrontacaoExcluir.afterClass();
 				System.out.println("-------------------Valor Adicionado > Confrontacao fim-------------------------");
@@ -886,62 +791,52 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Taxas De Conversao-------------------------");
 				taxasDeConversaoCriar = new TaxasDeConversaoCriar();
 				taxasDeConversaoCriar.beforeClass();
-				taxasDeConversaoCriar.login();
-				taxasDeConversaoCriar.acessarMDR();
 				taxasDeConversaoCriar.criar();
 				taxasDeConversaoCriar.afterClass();
 
 			}
 			
 			
-			@Test(priority = 51, dependsOnMethods = "taxasDeConversaoCriar")
+			@Test(priority = 51)
 			public void taxasDeConversaoEditar() {
 				taxasDeConversaoEditar = new TaxasDeConversaoEditar();
 				taxasDeConversaoEditar.beforeClass();
-				taxasDeConversaoEditar.login();
-				taxasDeConversaoEditar.acessarMDR();
+
 				taxasDeConversaoEditar.editar();
 				taxasDeConversaoEditar.afterClass();
 
 			}
 			
-			@Test(priority = 52, dependsOnMethods = "taxasDeConversaoCriar")
+			@Test(priority = 52)
 			public void taxasDeConversaoVisualizar() {
 				taxasDeConversaoVisualizar = new TaxasDeConversaoVisualizar();
 				taxasDeConversaoVisualizar.beforeClass();
-				taxasDeConversaoVisualizar.login();
-				taxasDeConversaoVisualizar.acessarMDR();
 				taxasDeConversaoVisualizar.Visualizar();
 				taxasDeConversaoVisualizar.afterClass();
 
 			}
 			
-			@Test(priority = 53, dependsOnMethods = "taxasDeConversaoCriar")
+			@Test(priority = 53)
 			public void taxasDeConversaoExcluirEmMassa() {
 				taxasDeConversaoExcluirEmMassa = new TaxasDeConversaoExcluirEmMassa();
 				taxasDeConversaoExcluirEmMassa.beforeClass();
-				taxasDeConversaoExcluirEmMassa.login();
-				taxasDeConversaoExcluirEmMassa.acessarMDR();
 				taxasDeConversaoExcluirEmMassa.criar();
 				taxasDeConversaoExcluirEmMassa.afterClass();
 			}
 			
-			@Test(priority = 54, dependsOnMethods = "taxasDeConversaoCriar")
+			@Test(priority = 54)
 			public void taxasDeConversaoDetalhes() {
 				taxasDeConversaoDetalhes = new TaxasDeConversaoDetalhes();
 				taxasDeConversaoDetalhes.beforeClass();
-				taxasDeConversaoDetalhes.login();
-				taxasDeConversaoDetalhes.acessarMDR();
+
 				taxasDeConversaoDetalhes.detalhes();
 				taxasDeConversaoDetalhes.afterClass();
 			}
 			
-			@Test(priority = 55, dependsOnMethods = "taxasDeConversaoCriar")
+			@Test(priority = 55)
 			public void taxasDeConversaoExcluir() {
 				taxasDeConversaoExcluir = new TaxasDeConversaoExcluir();
 				taxasDeConversaoExcluir.beforeClass();
-				taxasDeConversaoExcluir.login();
-				taxasDeConversaoExcluir.acessarMDR();
 				taxasDeConversaoExcluir.excluir();
 				taxasDeConversaoExcluir.afterClass();
 				System.out.println("-------------------Taxas De Conversao Fim-------------------------");
@@ -956,48 +851,40 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				System.out.println("-------------------Thin Capitalization > Subcapitalizacao-------------------------");
 				subcapitalizacaoCriar = new SubcapitalizacaoCriar();
 				subcapitalizacaoCriar.beforeClass();
-				subcapitalizacaoCriar.login();
-				subcapitalizacaoCriar.acessarMDR();
 				subcapitalizacaoCriar.criar();
 				subcapitalizacaoCriar.afterClass();
 
 			}
 			
-			@Test(priority = 58, dependsOnMethods = "subcapitalizacaoCriar")
+			@Test(priority = 58)
 			public void subcapitalizacaoEditar() {
 				subcapitalizacaoEditar = new SubcapitalizacaoEditar();
 				subcapitalizacaoEditar.beforeClass();
-				subcapitalizacaoEditar.login();
-				subcapitalizacaoEditar.acessarMDR();
 				subcapitalizacaoEditar.editar();
 				subcapitalizacaoEditar.afterClass();
 
 			}
 			
-			@Test(priority = 59, dependsOnMethods = "subcapitalizacaoCriar")
+			@Test(priority = 59)
 			public void subcapitalizacaoExcluirEmMassa() {
 				subcapitalizacaoExcluirEmMassa = new SubcapitalizacaoExcluirEmMassa();
 				subcapitalizacaoExcluirEmMassa.beforeClass();
-				subcapitalizacaoExcluirEmMassa.login();
-				subcapitalizacaoExcluirEmMassa.acessarMDR();
 				subcapitalizacaoExcluirEmMassa.criar();
 				subcapitalizacaoExcluirEmMassa.afterClass();
 
 			}
 			
-			@Test(priority = 60, dependsOnMethods = "subcapitalizacaoCriar")
+			@Test(priority = 60)
 			public void subcapitalizacaoExcluir() {
 				subcapitalizacaoExcluir = new SubcapitalizacaoExcluir();
 				subcapitalizacaoExcluir.beforeClass();
-				subcapitalizacaoExcluir.login();
-				subcapitalizacaoExcluir.acessarMDR();
 				subcapitalizacaoExcluir.excluir();
 				subcapitalizacaoExcluir.afterClass();
 				System.out.println("-------------------Thin Capitalization > Subcapitalizacao Fim-------------------------");
 				
 
 			}
-			
+			/*
 			//63
 			//Tabela De Apoio E Social > Tabela 17 - Descricao De Nat De Lesão
 			
@@ -1527,7 +1414,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				atividadeDeTributacaoXFornecedorCriar.afterClass();
 			}
 			
-			@Test(priority = 1056, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
+			@Test(priority = 105, dependsOnMethods = "atividadeDeTributacaoXFornecedorCriar")	
 			public void atividadeDeTributacaoXFornecedorFiltroID() {
 				atividadeDeTributacaoXFornecedorFiltroID = new AtividadeDeTributacaoXFornecedorFiltroID();
 				atividadeDeTributacaoXFornecedorFiltroID.beforeClass();
@@ -1707,7 +1594,7 @@ public class AutomacoesMDR6 extends TestBaseSteven{
 				statusParaBancoIndébitosExcluirMassa.criar();
 				statusParaBancoIndébitosExcluirMassa.afterClass();
 				System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");
-			}
+			}*/
 			
 		 
 

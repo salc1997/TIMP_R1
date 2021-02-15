@@ -229,57 +229,7 @@ public class AutomacoesMDR7 {
 	
 	// Atividades fiscais >	Associação de Atividades Fiscais
 
-	@Test(priority = 0)
-	public void associaçãoCriar() {
 
-		System.out.println("-------------------Atividades fiscais >	Associação de Atividades Fiscais-------------------------");
-
-		associaçãoCriar = new AssociaçãoCriar();
-		associaçãoCriar.beforeClass();
-		associaçãoCriar.login();
-		associaçãoCriar.acessarMDR();
-		associaçãoCriar.criarAssociação();
-		associaçãoCriar.afterClass();
-
-	}
-
-	@Test(priority = 1,dependsOnMethods = "associaçãoCriar")
-	public void associaçãoEditar() {
-
-		associaçãoEditar = new AssociaçãoEditar();
-		associaçãoEditar.beforeClass();
-		associaçãoEditar.login();
-		associaçãoEditar.acessarMDR();
-		associaçãoEditar.editarAssociação();
-		associaçãoEditar.afterClass();
-
-	}
-
-	@Test(priority = 2,dependsOnMethods = "associaçãoCriar")
-	public void associaçãoDetalhe() {
-
-		associaçãoDetalhes = new AssociaçãoDetalhes();
-		associaçãoDetalhes.beforeClass();
-		associaçãoDetalhes.ingresar();
-		associaçãoDetalhes.mdrEntrar();
-		associaçãoDetalhes.detalheAssociação();
-		associaçãoDetalhes.afterClass();
-
-	}
-
-	@Test(priority = 3,dependsOnMethods = "associaçãoCriar")
-	public void associaçãoVisualizar() {
-
-		associaçãoVisualizar = new AssociaçãoVisualizar();
-		associaçãoVisualizar.beforeClass();
-		associaçãoVisualizar.ingresar();
-		associaçãoVisualizar.mdrEntrar();
-		associaçãoVisualizar.visualizarAssociação();
-		associaçãoVisualizar.afterClass();
-		
-		System.out.println("-------------------Atividade Fiscal > Atividade Fiscal Fin-------------------------");
-	}
-	
 	// Cadastros IRPJ/CSLL > Tabela de Apoio ECF
 	
 	@Test(priority = 4)

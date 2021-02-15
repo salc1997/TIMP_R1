@@ -31,21 +31,12 @@ public class AtividadeEliminar extends TestBaseCristhian {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void eliminar() {
+
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void eliminar() {
 
 		boolean sucesso = atividadeEliminarPO.eliminar();
 

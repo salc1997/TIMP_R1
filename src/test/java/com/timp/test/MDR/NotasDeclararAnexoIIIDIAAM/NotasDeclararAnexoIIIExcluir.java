@@ -35,18 +35,14 @@ public class NotasDeclararAnexoIIIExcluir extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 2)
-	public void mdrEntrar() {
-		acesarMDRPO.acessarMDR();
-	}
 	
-	@Test(priority = 3)
+	@Test()
 	public void excluir() {
+		
+		loginTC.login();
+
+		acesarMDRPO.acessarMDR();
+		
 		boolean sucesso = notasDeclararAnexoIIIExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

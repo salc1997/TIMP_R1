@@ -30,19 +30,17 @@ public class IncentivosFiscaisExcluir extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
+	@Test()
 	public void Excluir() {
+		
+		loginTC.login();
+
+		accesarMDRPO.acessarMDR();
+		
 		boolean sucesso =  incentivosFiscaisExcluirPO.Excluir();
 		assertTrue(sucesso, Editar);
 

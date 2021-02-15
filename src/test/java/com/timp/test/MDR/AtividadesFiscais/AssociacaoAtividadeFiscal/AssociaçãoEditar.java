@@ -11,39 +11,32 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoEditarPO;
 
+public class AssociaçãoEditar extends TestBaseFernando {
+	LoginTC loginTC;
+	AcessarMDRPO accesarMDRPO;
+	AssociaçãoEditarPO associaçãoEditarPO;
 
-public class AssociaçãoEditar extends TestBaseFernando{
-  LoginTC loginTC;
-  AcessarMDRPO accesarMDRPO;
-  AssociaçãoEditarPO associaçãoEditarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationF();
-	  loginTC = new LoginTC();
-	  accesarMDRPO = new AcessarMDRPO();
-	  associaçãoEditarPO = new AssociaçãoEditarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationF();
+		loginTC = new LoginTC();
+		accesarMDRPO = new AcessarMDRPO();
+		associaçãoEditarPO = new AssociaçãoEditarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void acessarMDR() {
-	  accesarMDRPO.acessarMDR();
-  }
-  
-  @Test(priority = 2)
-  public void editarAssociação() {
-	  //associaçãoEditarPO.editarAssociação();
-	  boolean sucesso = associaçãoEditarPO.editarAssociação();
-	  assertTrue(sucesso, Editar);
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void editarAssociação() {
+
+		loginTC.login();
+
+		accesarMDRPO.acessarMDR();
+
+		boolean sucesso = associaçãoEditarPO.editarAssociação();
+		assertTrue(sucesso, Editar);
+	}
 }

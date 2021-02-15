@@ -17,39 +17,41 @@ public class IncentivosFiscaisExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	IncentivosFiscaisExcluirEmMassaPO incentivosFiscaisExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  incentivosFiscaisExcluirEmMassaPO = new IncentivosFiscaisExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		incentivosFiscaisExcluirEmMassaPO = new IncentivosFiscaisExcluirEmMassaPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void excluirEmMassa() {
-	boolean sucesso = incentivosFiscaisExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+
+	@Test()
+	public void criar() {
+
+		loginTC.login();
+
+		accesarMDR.acessarMDR();
+		
+		boolean sucesso = incentivosFiscaisExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+
+	}
 	
-	boolean sucesso2 = incentivosFiscaisExcluirEmMassaPO.incentivosFiscaisExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
-  }
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
+
+	
+		boolean sucesso2 = incentivosFiscaisExcluirEmMassaPO.incentivosFiscaisExcluirEmMassa();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 }

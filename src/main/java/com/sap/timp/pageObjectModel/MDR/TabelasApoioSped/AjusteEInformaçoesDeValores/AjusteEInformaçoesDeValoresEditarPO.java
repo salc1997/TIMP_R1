@@ -119,7 +119,23 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseEliel {
 		
 		refresh();
 		
+
 		waitExpectElement(descricao);
+
+		
+		//pega o ultimo id que foi gerado no criar
+		String idRegistro1 = idObter("ajusteeinformacoesdevalores");
+		
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		actionsMoveToElementElement(menu1);
+		sleep(2000);
+		menu1.click();
+		sleep(1000);
+		
+		visualizar.click();
+
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

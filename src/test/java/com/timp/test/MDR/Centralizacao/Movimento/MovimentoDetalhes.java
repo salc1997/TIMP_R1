@@ -36,19 +36,15 @@ public class MovimentoDetalhes extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	  public void detalheMovimento() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
-	  public void detalheMovimento() {
+		
 		ArrayList<Boolean> sucesso = movimentoDetalhesPO.DetalheMovimento();
 
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -57,7 +53,7 @@ public class MovimentoDetalhes extends TestBaseKenssy {
 
 		}
 		
-		//saldoInicialDetalhePO.DetalheSaldoIncial();
+
 	  }
 
 }

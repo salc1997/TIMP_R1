@@ -32,28 +32,32 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassa extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void login() {
+	
+	@Test()
+	public void criar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
 
 		boolean sucesso =  configuracoesDeFundoSocialExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+
+
+	}
+
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+		loginTC.login();
+
+		acessarMDRPO.acessarMDR();
+
 		boolean sucesso2 = configuracoesDeFundoSocialExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
+
 }

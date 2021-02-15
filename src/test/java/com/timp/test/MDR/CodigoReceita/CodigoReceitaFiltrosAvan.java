@@ -37,21 +37,15 @@ public class CodigoReceitaFiltrosAvan extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	  public void filtrosAvanzados() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	  public void filtrosAvanzados() {
 		
 		ArrayList<Boolean> usuarioCriacao = codigoReceitaFiltrosAvanPO.filtroTributo();
 		for (int i = 0; i < usuarioCriacao.size(); i++) {

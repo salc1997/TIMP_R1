@@ -32,24 +32,18 @@ public class CodigoContabilizacaoFiltrosAvan extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	  public void filtrarAvanCodigoContabilizacao() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	  public void filtrarAvanCodigoContabilizacao() {
+		
 		ArrayList<Boolean> empresa = codigoContabilizacaoFiltrosAvanPO.filtroEmpresa();
 		for (int i = 0; i < empresa.size(); i++) {
 			assertTrue(empresa.get(i), Filtros);

@@ -36,19 +36,16 @@ public class SaldoInicialDetalhe extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	  public void detalheSaldoInicial() {
+		
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
-	  public void detalheSaldoInicial() {
+		
 		ArrayList<Boolean> sucesso = saldoInicialDetalhePO.DetalheSaldoInicial();
 
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -57,6 +54,5 @@ public class SaldoInicialDetalhe extends TestBaseKenssy {
 
 		}
 		
-		//saldoInicialDetalhePO.DetalheSaldoIncial();
 	  }
 }

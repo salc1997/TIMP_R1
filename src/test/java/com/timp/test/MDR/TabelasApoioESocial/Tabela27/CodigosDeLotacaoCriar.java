@@ -17,40 +17,36 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigosDeLotacaoCriar extends TestBaseSteven{
-  
+public class CodigosDeLotacaoCriar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosDeLotacaoCriarPO codigosDeLotacaoCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  codigosDeLotacaoCriarPO = new CodigosDeLotacaoCriarPO();
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		codigosDeLotacaoCriarPO = new CodigosDeLotacaoCriarPO();
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	public void criar() {
+
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
-	  public void criar() {
-			 boolean sucesso = codigosDeLotacaoCriarPO.criar();
-			  assertTrue(sucesso, Criar);
-	  }
+		boolean sucesso = codigosDeLotacaoCriarPO.criar();
+		assertTrue(sucesso, Criar);
+	}
 
 }

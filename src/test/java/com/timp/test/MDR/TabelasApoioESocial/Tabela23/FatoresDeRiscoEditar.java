@@ -19,37 +19,31 @@ public class FatoresDeRiscoEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FactoresDeRiscoEditarPO factoresDeRiscoEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	factoresDeRiscoEditarPO = new FactoresDeRiscoEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		factoresDeRiscoEditarPO = new FactoresDeRiscoEditarPO();
+	}
 
-  @Test(priority = 0)
-  public void login() {
-	loginTC.login();
-  }
-	
-	
-  @Test(priority = 1)
-  public void acessarMDR() {
-	acessarMDRPO.acessarMDR();
-  }
-  
-  @Test(priority = 2)
-  public void editar() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	boolean sucesso = factoresDeRiscoEditarPO.editar();
+	@Test()
+	public void editar() {
 
-	assertTrue(sucesso, Editar);
+		loginTC.login();
 
-  }
+		acessarMDRPO.acessarMDR();
+
+		boolean sucesso = factoresDeRiscoEditarPO.editar();
+
+		assertTrue(sucesso, Editar);
+
+	}
 
 }

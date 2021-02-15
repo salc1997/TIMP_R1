@@ -29,8 +29,6 @@ public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhia
 	@FindBy(xpath = "//textarea[@aria-label=\"Insira a fórmula\"]")
 	public WebElement formula;
 	
-	
-	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
@@ -230,7 +228,7 @@ public boolean editar() {
 	
 	editVCalculado.click();
 	
-	sleep(3000);
+	sleep(6000);
 	formula.clear();
 	sleep(3000);
 	

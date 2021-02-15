@@ -31,24 +31,18 @@ public class AliquotaDeTaxaDeActualizacaoExcluir extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 		
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	public void excluir() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void excluirr() {
 
 		boolean sucesso = aliquotaDeTaxaDeActualizarExcluirPO.excluir();
 

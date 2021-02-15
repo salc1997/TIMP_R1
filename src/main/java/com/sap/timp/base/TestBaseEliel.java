@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestBaseEliel extends TestBaseSteven {
-
+ 
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationE() {

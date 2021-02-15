@@ -57,7 +57,8 @@ public class RegrasDeAuditoriaN2CriarComCopiaPO extends TestBaseFernando{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		waitExpectElement(btnBiblioteca);
+		sleep(2000);
 		btnBiblioteca.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);

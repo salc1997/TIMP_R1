@@ -100,7 +100,7 @@ public class S1060AmbientesDeTrablhoCriarPO extends TestBaseEliel{
 		opcaotipoderegistro.click();
 		
 		sleep(2000);
-		numeroderegistro.sendKeys("777");
+		numeroderegistro.sendKeys("997");
 		
 		
 		sleep(2000);

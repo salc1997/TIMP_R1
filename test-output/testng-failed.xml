@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -59,6 +60,23 @@
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/remotes/origin/Cristhian
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
+        <methods>
+          <include name="ejecutarFinal"/>
+          <include name="excluirConfiguracoes1"/>
+          <include name="excluirConfiguracoes2"/>
+          <include name="beforeClass"/>
+          <include name="relacionamentoFinalyAbrirHierarquiaGrupo"/>
+          <include name="afterClass"/>
+          <include name="excluirHierarquia1"/>
+          <include name="excluirHierarquia2"/>
+        </methods>
+      </class> <!-- com.timp.test.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

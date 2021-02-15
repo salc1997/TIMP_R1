@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="2" passed="2">
 =======
 =======
@@ -14,8 +15,12 @@
 =======
 <testng-results total="26" passed="25" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Cristhian
+=======
+<testng-results total="11" passed="11" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -33,8 +38,12 @@
 =======
   <suite started-at="2021-02-12T13:16:02Z" name="Default suite" finished-at="2021-02-12T13:33:52Z" duration-ms="1070343">
 >>>>>>> refs/remotes/origin/Cristhian
+=======
+  <suite started-at="2021-02-10T23:49:01Z" name="Default suite" finished-at="2021-02-11T00:03:12Z" duration-ms="851488">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -62,9 +71,15 @@
       <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:16:02Z" name="beforeClass" finished-at="2021-02-12T10:16:16Z" duration-ms="14174" status="PASS">
 >>>>>>> refs/remotes/origin/Cristhian
+=======
+    <test started-at="2021-02-10T23:49:01Z" name="Default test" finished-at="2021-02-11T00:03:12Z" duration-ms="851488">
+      <class name="com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:01Z" name="beforeClass" finished-at="2021-02-10T17:49:14Z" duration-ms="13025" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,13 +96,22 @@
 >>>>>>> refs/remotes/origin/Eliel
 =======
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:16:16Z" name="ingresar" finished-at="2021-02-12T10:16:24Z" duration-ms="8001" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:14Z" name="login" finished-at="2021-02-10T17:49:21Z" duration-ms="7524" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ingresar -->
         <test-method signature="mdrEntrar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:16:24Z" name="mdrEntrar" finished-at="2021-02-12T10:16:43Z" duration-ms="19443" status="PASS">
 >>>>>>> refs/remotes/origin/Cristhian
+=======
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:21Z" name="brbEntrar" finished-at="2021-02-10T17:49:35Z" duration-ms="14126" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -254,14 +278,56 @@
           </reporter-output>
         </test-method> <!-- excluirConfiguracao -->
         <test-method signature="excluirLeiaute()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:33:26Z" name="excluirLeiaute" finished-at="2021-02-12T10:33:52Z" duration-ms="26230" status="PASS">
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:49:35Z" name="criarConfiguracaoExecucoes" finished-at="2021-02-10T17:50:48Z" duration-ms="72863" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- excluirLeiaute -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@548e6d58]" started-at="2021-02-12T10:33:52Z" name="afterClass" finished-at="2021-02-12T10:33:52Z" duration-ms="1" status="PASS">
 >>>>>>> refs/remotes/origin/Cristhian
+=======
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:50:48Z" name="criarConfiguracao" finished-at="2021-02-10T17:53:25Z" duration-ms="157066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="configurarConfiguracao()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:53:25Z" name="configurarConfiguracao" finished-at="2021-02-10T17:55:44Z" duration-ms="139031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurarConfiguracao -->
+        <test-method signature="executar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:55:44Z" name="executar" finished-at="2021-02-10T17:57:16Z" duration-ms="91436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar -->
+        <test-method signature="resto()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:57:16Z" name="resto" finished-at="2021-02-10T17:58:40Z" duration-ms="84237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resto -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:58:40Z" name="editar" finished-at="2021-02-10T17:59:51Z" duration-ms="70859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method signature="excluirExecucoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T17:59:51Z" name="excluirExecucoes" finished-at="2021-02-10T18:00:51Z" duration-ms="60043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirExecucoes -->
+        <test-method signature="excluirConfiguracoes()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T18:00:51Z" name="excluirConfiguracoes" finished-at="2021-02-10T18:02:13Z" duration-ms="81976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes -->
+        <test-method signature="excluirHierarquia()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T18:02:13Z" name="excluirHierarquia" finished-at="2021-02-10T18:03:12Z" duration-ms="59269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades@5a9f4771]" started-at="2021-02-10T18:03:12Z" name="afterClass" finished-at="2021-02-10T18:03:12Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -282,6 +348,9 @@
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/remotes/origin/Cristhian
+=======
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

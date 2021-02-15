@@ -34,7 +34,11 @@ public class ParametrosGeraisHierarquiaCriar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
+<<<<<<< HEAD
 		//driver.close();
+=======
+//		driver.close();
+>>>>>>> refs/heads/Fernando
 	}
 
 	@Test(priority = 0)

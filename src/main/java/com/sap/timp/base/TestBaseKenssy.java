@@ -43,7 +43,10 @@ public class TestBaseKenssy extends TestBaseSteven{
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(tc2);
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/heads/Fernando
 		return driver;
 	}
 

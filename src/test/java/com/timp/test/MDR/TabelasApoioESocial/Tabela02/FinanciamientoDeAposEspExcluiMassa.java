@@ -31,9 +31,9 @@ public class FinanciamientoDeAposEspExcluiMassa extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,16 +44,25 @@ public class FinanciamientoDeAposEspExcluiMassa extends TestBaseCristhian {
 	public void acessarMDR() {
 		acessarMDRPO.acessarMDR();
 	}
-
-	@Test(priority = 2)
+	*/
+	@Test(priority = 0)
 	public void criar() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = financiamientoDeAposEspExcluiMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
+	
+	@Test(priority = 1)
 	public void excluirMassa() {
-		boolean sucesso = financiamientoDeAposEspExcluiMassaPO.exluirMassa();
-		assertTrue(sucesso, Eliminado);
+	
+
+	
+		
+		boolean sucesso1 = financiamientoDeAposEspExcluiMassaPO.exluirMassa();
+		assertTrue(sucesso1, Eliminado);
 	}
 }

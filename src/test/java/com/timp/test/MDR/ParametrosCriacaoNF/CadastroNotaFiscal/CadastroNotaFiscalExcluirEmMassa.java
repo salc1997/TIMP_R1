@@ -31,7 +31,7 @@ public class CadastroNotaFiscalExcluirEmMassa extends TestBaseKenssy {
 	  driver.close();
   }
   
-  @Test(priority = 0)
+ /* @Test(priority = 0)
   public void ingresar() {
 	  loginTC.login();
   }
@@ -40,10 +40,13 @@ public class CadastroNotaFiscalExcluirEmMassa extends TestBaseKenssy {
   public void mdrEntrar() {
 	 accesarMDR.acessarMDR();
 
-  }
+  }*/
   
   @Test(priority = 2)
   public void excluirEmMassa() {
+	  
+	  loginTC.login();
+	  accesarMDR.acessarMDR();
 	boolean sucesso = cadastroNotaFiscalExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 	sleep(1000);

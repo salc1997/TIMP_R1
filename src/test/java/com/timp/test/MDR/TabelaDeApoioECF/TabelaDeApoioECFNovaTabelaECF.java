@@ -32,7 +32,7 @@ public class TabelaDeApoioECFNovaTabelaECF extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -44,10 +44,13 @@ public class TabelaDeApoioECFNovaTabelaECF extends TestBaseSteven {
 
 		acessarMDRPO.acessarMDR();
 
-	}
+	}*/
 
-	@Test(priority = 2)
+	@Test()
 	public void novaTabela() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tabelaDeApoioECFNovaTabelaECFPO.novaTabela();
 		assertTrue(sucesso, semAcesso);

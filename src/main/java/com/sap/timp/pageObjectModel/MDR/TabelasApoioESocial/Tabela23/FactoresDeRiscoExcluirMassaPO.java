@@ -160,7 +160,7 @@ public class FactoresDeRiscoExcluirMassaPO extends TestBaseCristhian {
 		}
 		  
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir4(idB);
+		idInserir("FactoresDeRiscoExcluirMassa",idB);
 		  
 		sleep(2000); 
 		System.out.println(id); 
@@ -187,7 +187,7 @@ public class FactoresDeRiscoExcluirMassaPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
-		int idUltimoRegistro = convertToInt(idObter4());
+		int idUltimoRegistro = convertToInt(idObter("FactoresDeRiscoExcluirMassa"));
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idUltimoRegistro+"\"]/div[2]/label/span"));
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
 		

@@ -35,17 +35,14 @@ public class FiliaisDetalle extends TestBaseMassiel{
 	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
+  
 
-	@Test(priority = 2 )
+	@Test(priority = 1 )
 	public void detalle() {
+		
+		loginTC.login();
+		
+		acessarMDRPO.acessarMDR();
 		
 		ArrayList<Boolean> sucesso = filiaisDetallePO.Detalle();
 		

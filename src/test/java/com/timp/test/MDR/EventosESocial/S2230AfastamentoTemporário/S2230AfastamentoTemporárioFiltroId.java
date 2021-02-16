@@ -29,23 +29,17 @@ public class S2230AfastamentoTemporárioFiltroId extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void filtro() {
+		
+		loginTC.login();
+		
+		acessarMDRPO.acessarMDR();
 	//	s2230AfastamentoTemporárioFiltroIdPO.filtro();
 
 		boolean sucesso = s2230AfastamentoTemporárioFiltroIdPO.filtro();

@@ -863,8 +863,8 @@ public class AutomacoesMDR13 extends TestBaseSteven{
 
 		s1060AmbientesDeTrablhoExcluirMassa = new S1060AmbientesDeTrablhoExcluirMassa();
 		s1060AmbientesDeTrablhoExcluirMassa.beforeClass();
-		s1060AmbientesDeTrablhoExcluirMassa.login();
-		s1060AmbientesDeTrablhoExcluirMassa.acessarMDR();
+		/*s1060AmbientesDeTrablhoExcluirMassa.login();
+		s1060AmbientesDeTrablhoExcluirMassa.acessarMDR();*/
 		s1060AmbientesDeTrablhoExcluirMassa.criar();
 		s1060AmbientesDeTrablhoExcluirMassa.afterClass();
 

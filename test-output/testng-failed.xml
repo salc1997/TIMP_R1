@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.timp.test.BRB.AdicionarColunas">
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
         <methods>
+          <include name="filtrosBiblioteca"/>
           <include name="beforeClass"/>
+          <include name="asignarValores"/>
           <include name="afterClass"/>
-          <include name="adicionarColunas"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.AdicionarColunas -->
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

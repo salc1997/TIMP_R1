@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
@@ -12,9 +13,12 @@
           <include name="asignarValores"/>
 =======
 =======
+=======
+>>>>>>> refs/heads/Fernando
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
         <methods>
 >>>>>>> refs/remotes/origin/Kenssy
@@ -25,7 +29,15 @@
 <<<<<<< HEAD
           <include name="adicionarColunas"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
 =======
@@ -37,6 +49,9 @@
       </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

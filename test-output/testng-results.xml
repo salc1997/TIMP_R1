@@ -1,123 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="2" passed="2">
-=======
-=======
->>>>>>> refs/remotes/origin/Eliel
 <testng-results total="3" passed="3" failed="0" skipped="0">
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> refs/remotes/origin/Eliel
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="220000" started-at="2021-02-13T03:25:38Z" finished-at="2021-02-13T03:29:18Z">
-=======
-  <suite started-at="2021-02-12T04:49:58Z" name="Default suite" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
->>>>>>> refs/remotes/origin/master
-=======
-  <suite started-at="2021-02-15T06:03:50Z" name="Default suite" finished-at="2021-02-15T06:05:16Z" duration-ms="85988">
->>>>>>> refs/remotes/origin/Yessy
-=======
-  <suite started-at="2021-02-15T13:40:24Z" name="Default suite" finished-at="2021-02-15T13:41:51Z" duration-ms="87123">
->>>>>>> refs/remotes/origin/Eliel
+  <suite started-at="2021-02-16T03:08:06Z" name="Default suite" finished-at="2021-02-16T03:09:59Z" duration-ms="112664">
     <groups>
     </groups>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="220000" started-at="2021-02-13T03:25:38Z" finished-at="2021-02-13T03:29:18Z">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="beforeClass" is-config="true" duration-ms="18852" started-at="2021-02-12T21:25:38Z" finished-at="2021-02-12T21:25:57Z">
-=======
-    <test started-at="2021-02-12T04:49:58Z" name="Default test" finished-at="2021-02-12T04:51:13Z" duration-ms="75870">
-      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:49:58Z" name="beforeClass" finished-at="2021-02-11T22:50:21Z" duration-ms="23142" status="PASS">
->>>>>>> refs/remotes/origin/master
-=======
-    <test started-at="2021-02-15T06:03:50Z" name="Default test" finished-at="2021-02-15T06:05:16Z" duration-ms="85988">
-      <class name="com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:03:50Z" name="beforeClass" finished-at="2021-02-15T00:04:05Z" duration-ms="14984" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-    <test started-at="2021-02-15T13:40:24Z" name="Default test" finished-at="2021-02-15T13:41:51Z" duration-ms="87123">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:40:24Z" name="beforeClass" finished-at="2021-02-15T10:40:39Z" duration-ms="14657" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+    <test started-at="2021-02-16T03:08:06Z" name="Default test" finished-at="2021-02-16T03:09:59Z" duration-ms="112664">
+      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:08:06Z" name="beforeClass" finished-at="2021-02-15T21:08:35Z" duration-ms="28615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="criar" duration-ms="117954" started-at="2021-02-12T21:25:57Z" finished-at="2021-02-12T21:27:55Z">
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:50:21Z" name="login" finished-at="2021-02-11T22:50:31Z" duration-ms="10000" status="PASS">
->>>>>>> refs/remotes/origin/master
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:05Z" name="login" finished-at="2021-02-15T00:04:13Z" duration-ms="7893" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:40:39Z" name="login" finished-at="2021-02-15T10:40:48Z" duration-ms="9141" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:08:35Z" name="login" finished-at="2021-02-15T21:08:48Z" duration-ms="13484" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="excluir" duration-ms="78762" started-at="2021-02-12T21:27:55Z" finished-at="2021-02-12T21:29:14Z">
-=======
         </test-method> <!-- login -->
-        <test-method signature="acessarTCC()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:40:48Z" name="acessarTCC" finished-at="2021-02-15T10:41:10Z" duration-ms="21774" status="PASS">
+        <test-method signature="acessarTCM()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:08:48Z" name="acessarTCM" finished-at="2021-02-15T21:09:04Z" duration-ms="16410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acessarTCC -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:41:10Z" name="excluir" finished-at="2021-02-15T10:41:51Z" duration-ms="41529" status="PASS">
->>>>>>> refs/remotes/origin/Eliel
+        </test-method> <!-- acessarTCM -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:09:04Z" name="excluir" finished-at="2021-02-15T21:09:54Z" duration-ms="49818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa@3a079870]" name="afterClass" is-config="true" duration-ms="4417" started-at="2021-02-12T21:29:14Z" finished-at="2021-02-12T21:29:18Z">
-=======
-        </test-method> <!-- login -->
-        <test-method signature="acessarTDK()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:13Z" name="acessarTDK" finished-at="2021-02-15T00:04:44Z" duration-ms="30997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acessarTDK -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:04:44Z" name="filtro" finished-at="2021-02-15T00:05:16Z" duration-ms="32095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtro -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId@76b1e9b8]" started-at="2021-02-11T22:51:13Z" name="afterClass" finished-at="2021-02-11T22:51:13Z" duration-ms="1" status="PASS">
->>>>>>> refs/remotes/origin/master
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId@76b1e9b8]" started-at="2021-02-15T00:05:16Z" name="afterClass" finished-at="2021-02-15T00:05:16Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:09:54Z" name="afterClass" finished-at="2021-02-15T21:09:59Z" duration-ms="4317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa -->
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraFiltroId -->
->>>>>>> refs/remotes/origin/master
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir@7d0b7e3c]" started-at="2021-02-15T10:41:51Z" name="afterClass" finished-at="2021-02-15T10:41:51Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM700.RegistroM700Excluir -->
->>>>>>> refs/remotes/origin/Eliel
+      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="1" passed="0">
+=======
+<testng-results total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="113426" started-at="2021-02-15T22:37:06Z" finished-at="2021-02-15T22:38:59Z">
+=======
+  <suite started-at="2021-02-16T03:08:06Z" name="Default suite" finished-at="2021-02-16T03:09:59Z" duration-ms="112664">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="113426" started-at="2021-02-15T22:37:06Z" finished-at="2021-02-15T22:38:59Z">
       <class name="com.timp.test.BRB.AdicionarColunas">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@f2f2cc1]" name="beforeClass" is-config="true" duration-ms="19209" started-at="2021-02-15T16:37:06Z" finished-at="2021-02-15T16:37:25Z">
+=======
+    <test started-at="2021-02-16T03:08:06Z" name="Default test" finished-at="2021-02-16T03:09:59Z" duration-ms="112664">
+      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:08:06Z" name="beforeClass" finished-at="2021-02-15T21:08:35Z" duration-ms="28615" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="adicionarColunas()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@f2f2cc1]" name="adicionarColunas" duration-ms="93939" started-at="2021-02-15T16:37:25Z" finished-at="2021-02-15T16:38:59Z">
           <exception class="org.openqa.selenium.json.JsonException">
             <message>
@@ -118,8 +133,12 @@ Session ID: 85422879521f56cc52130e40d30b43d0
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.json.JsonException -->
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:08:35Z" name="login" finished-at="2021-02-15T21:08:48Z" duration-ms="13484" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- adicionarColunas -->
         <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@f2f2cc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-02-15T16:38:59Z" finished-at="2021-02-15T16:38:59Z">
           <exception class="org.openqa.selenium.WebDriverException">
@@ -180,10 +199,26 @@ Session ID: 85422879521f56cc52130e40d30b43d0
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        </test-method> <!-- login -->
+        <test-method signature="acessarTCM()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:08:48Z" name="acessarTCM" finished-at="2021-02-15T21:09:04Z" duration-ms="16410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarTCM -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:09:04Z" name="excluir" finished-at="2021-02-15T21:09:54Z" duration-ms="49818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@573906eb]" started-at="2021-02-15T21:09:54Z" name="afterClass" finished-at="2021-02-15T21:09:59Z" duration-ms="4317" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.AdicionarColunas -->
+=======
+      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

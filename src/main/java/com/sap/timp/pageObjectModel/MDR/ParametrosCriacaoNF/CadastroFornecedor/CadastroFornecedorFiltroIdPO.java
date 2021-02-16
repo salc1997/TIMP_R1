@@ -1,3 +1,4 @@
+
 package com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor;
 
 import java.util.ArrayList;
@@ -196,7 +197,8 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 		System.out.println(sucesso);
 
 		return sucesso;
-
 	}
-
+		
 }
+
+

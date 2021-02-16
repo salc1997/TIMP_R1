@@ -2,7 +2,7 @@ package com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -28,7 +28,7 @@ public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 	
 	@AfterClass public void afterClass(){ driver.close(); }
 	
-
+	/*
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -40,11 +40,14 @@ public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 
 		acessarMDRPO.acessarMDR();
 
-	}
+	}*/
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = relacionamentoEntreQuadrosCriaPO.criar();
 		assertTrue(sucesso, semAcesso);
 

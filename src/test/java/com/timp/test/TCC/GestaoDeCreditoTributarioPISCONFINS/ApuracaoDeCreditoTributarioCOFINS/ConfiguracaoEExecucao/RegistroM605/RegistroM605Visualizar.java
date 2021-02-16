@@ -36,21 +36,13 @@ public class RegistroM605Visualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
+		
+		loginTC.login();
+		
+		acessarTCCPO.acessarTCC();
 
 		ArrayList<Boolean> sucesso = registroM605VisualizarPO.visualizar();
 

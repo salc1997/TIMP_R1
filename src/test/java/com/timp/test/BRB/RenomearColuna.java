@@ -41,21 +41,14 @@ public class RenomearColuna extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
+	@Test()
+	public void renomearColuna() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
+		
 		acessarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 2)
-	public void renomearColuna() {
 
 		ArrayList<String> sucesso = new ArrayList<String>();
 		sucesso = renomearColunaPO.renomear();

@@ -8,16 +8,16 @@ import com.timp.test.BRB.*;
 
 public class AutomacoesBrb extends TestBaseSteven {
 	LoginBRB loginTest;
-	BRBAcessar brbAcessar;
-	Paginacion paginacion;
+	AcessarBRB brbAcessar;
+	Paginacao paginacion;
 	ReordenarColuna reordenarColuna;
-	FiltrosAvançados filtrosAvanaçados;
+	FiltrosAvancados filtrosAvanaçados;
 	NovoRelatorio novoRelatirio;
-	PublicoYPrivado publicoYPrivado;
+	PublicoEPrivado publicoYPrivado;
 	ExcluirColuna excluirColuna;
-	Editar editar;
-	Filtros filtros;
-	CriarCopia criarCopia; 
+	EditarRelatorio editar;
+	FiltrosRelatorio filtros;
+	CriarComCopia criarCopia; 
 	AtivarCorrecao ativarCorrecao;
 	AtivarComentario ativarComentario;
 	RenomearColuna renomearColuna;
@@ -26,14 +26,14 @@ public class AutomacoesBrb extends TestBaseSteven {
 	CampoOutput campoOutput;
 	FormatacaoEVariante formatacaoEVariante;
 	FiltroColunas filtroColunas;
-	GruposAvanzados gruposAvanzados;
+	GruposAvancados gruposAvanzados;
 	CrescenteEDecrescente crescenteEDecrescente;
-	ListaSuspensa listaSuspensa;
+	ComentarioListaSuspensa listaSuspensa;
 	ComentarioLibre comentarioLibre;
 	Imprimir imprimir;
 	Exportar exportar;
 	Visualizar visualizar;
-	Eliminar eliminar;
+	ExcluirRelatorio eliminar;
 	Cabeçalho cabeçalho;
 	Regras regras;
 
@@ -57,11 +57,11 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void acessarBRB() {
 
 		System.out.println("-------------------Acessar BRB-------------------------");
-		brbAcessar = new BRBAcessar();
+		brbAcessar = new AcessarBRB();
 
 		brbAcessar.beforeClass();
 
-		brbAcessar.login();
+
 		brbAcessar.brbEntrar();
 		brbAcessar.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -73,12 +73,9 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		System.out.println("-------------------Paginação-------------------------");
 
-		paginacion = new Paginacion();
+		paginacion = new Paginacao();
 
 		paginacion.beforeClass();
-
-		paginacion.login();
-		paginacion.brbEntrar();
 		paginacion.paginacion();
 		paginacion.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -89,13 +86,9 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void filtrosAvanzados() {
 
 		System.out.println("-------------------Filtros Avançados-------------------------");
-		filtrosAvanaçados = new FiltrosAvançados();
+		filtrosAvanaçados = new FiltrosAvancados();
 
 		filtrosAvanaçados.beforeClass();
-
-		filtrosAvanaçados.login();
-
-		filtrosAvanaçados.brbEntrar();
 		filtrosAvanaçados.filtrosAvanzados();
 		filtrosAvanaçados.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -109,9 +102,6 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		novoRelatirio = new NovoRelatorio();
 		novoRelatirio.beforeClass();
-
-		novoRelatirio.login();
-		novoRelatirio.brbEntrar();
 		novoRelatirio.novoRelatorio();
 		novoRelatirio.colunas();
 		novoRelatirio.afterClass();
@@ -123,12 +113,11 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void publicoYPrivado() {
 
 		System.out.println("-------------------Publico e Privado-------------------------");
-		publicoYPrivado = new PublicoYPrivado();
+		publicoYPrivado = new PublicoEPrivado();
 
 		publicoYPrivado.beforeClass();
 
-		publicoYPrivado.login();
-		publicoYPrivado.brbEntrar();
+
 		publicoYPrivado.publicoYPRivado();
 		publicoYPrivado.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -144,8 +133,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		excluirColuna.beforeClass();
 
-		excluirColuna.login();
-		excluirColuna.brbEntrar();
+	
 		excluirColuna.excluirColunaDragNDrop();
 		excluirColuna.excluirColunaOpcao();
 		excluirColuna.afterClass();
@@ -157,12 +145,11 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void editarRelatorio() {
 
 		System.out.println("-------------------Editar Relatório-------------------------");
-		editar = new Editar();
+		editar = new EditarRelatorio();
 
 		editar.beforeClass();
 
-		editar.login();
-		editar.brbEntrar();
+
 		editar.editar();
 		editar.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -178,8 +165,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		reordenarColuna.beforeClass();
 
-		reordenarColuna.login();
-		reordenarColuna.brbEntrar();
+
 		reordenarColuna.reordenar();
 		reordenarColuna.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -188,13 +174,12 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 	@Test(priority = 9)
 	public void filtrosRelatorio() {
-		filtros = new Filtros();
+		filtros = new FiltrosRelatorio();
 
 		System.out.println("-------------------Filtros Relartório-------------------------");
 		filtros.beforeClass();
 
-		filtros.login();
-		filtros.brbEntrar();
+
 		filtros.filtrosEditor();
 		filtros.filtrosBiblioteca();
 		filtros.asignarValores();
@@ -207,11 +192,10 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void criarCopia() {
 
 		System.out.println("-------------------Criar Cópia-------------------------");
-		criarCopia = new CriarCopia();
+		criarCopia = new CriarComCopia();
 		criarCopia.beforeClass();
 
-		criarCopia.login();
-		criarCopia.brbEntrar();
+
 		criarCopia.criarCopia();
 		criarCopia.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -224,8 +208,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 		ativarCorrecao = new AtivarCorrecao();
 		ativarCorrecao.beforeClass();
 
-		ativarCorrecao.login();
-		ativarCorrecao.brbEntrar();
+
 		ativarCorrecao.ativarCorreccion();
 		ativarCorrecao.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -238,8 +221,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 		ativarComentario = new AtivarComentario();
 		ativarComentario.beforeClass();
 
-		ativarComentario.login();
-		ativarComentario.brbEntrar();
+
 		ativarComentario.ativarComentarios();
 		ativarComentario.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -253,8 +235,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 		renomearColuna = new RenomearColuna();
 		renomearColuna.beforeClass();
 
-		renomearColuna.login();
-		renomearColuna.brbEntrar();
+
 		renomearColuna.renomearColuna();
 		renomearColuna.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -267,8 +248,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 		formula = new Formula();
 		formula.beforeClass();
 
-		formula.login();
-		formula.brbEntrar();
+
 		formula.formulaColuna();
 		formula.formulaBoton();
 		formula.aplicar();
@@ -285,8 +265,6 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		agrupadoPeloCampo.beforeClass();
 
-		agrupadoPeloCampo.login();
-		agrupadoPeloCampo.brbEntrar();
 		agrupadoPeloCampo.agrupadoPeloCampo();
 		agrupadoPeloCampo.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -300,8 +278,6 @@ public class AutomacoesBrb extends TestBaseSteven {
 		campoOutput = new CampoOutput();
 		campoOutput.beforeClass();
 
-		campoOutput.login();
-		campoOutput.brbEntrar();
 		campoOutput.campoOutput();
 		campoOutput.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -314,8 +290,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 		formatacaoEVariante = new FormatacaoEVariante();
 		formatacaoEVariante.beforeClass();
 
-		formatacaoEVariante.login();
-		formatacaoEVariante.brbEntrar();
+
 		formatacaoEVariante.formatacaoEVariante();
 		formatacaoEVariante.excluirVariante();
 		formatacaoEVariante.afterClass();
@@ -329,8 +304,6 @@ public class AutomacoesBrb extends TestBaseSteven {
 		filtroColunas = new FiltroColunas();
 		filtroColunas.beforeClass();
 
-		filtroColunas.login();
-		filtroColunas.brbEntrar();
 		filtroColunas.filtroConFerramenta1();
 		filtroColunas.filtroConFerramenta2();
 		filtroColunas.afterClass();
@@ -341,11 +314,10 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void gruposAvanzados() {
 
 		System.out.println("-------------------Grupos Avançados-------------------------");
-		gruposAvanzados = new GruposAvanzados();
+		gruposAvanzados = new GruposAvancados();
 		gruposAvanzados.beforeClass();
 
-		gruposAvanzados.login();
-		gruposAvanzados.brbEntrar();
+
 		gruposAvanzados.gruposAvanzados();
 		gruposAvanzados.eliminarGrupos();
 		gruposAvanzados.afterClass();
@@ -358,8 +330,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 		System.out.println("-------------------Crescente e Descrecente-------------------------");
 		crescenteEDecrescente = new CrescenteEDecrescente();
 		crescenteEDecrescente.beforeClass();
-		crescenteEDecrescente.login();
-		crescenteEDecrescente.brbEntrar();
+
 		crescenteEDecrescente.crescenteEDecrescente();
 		crescenteEDecrescente.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -370,10 +341,9 @@ public class AutomacoesBrb extends TestBaseSteven {
 	public void comentarioListaSuspensa() {
 
 		System.out.println("-------------------Comentário em Lista Suspensa-------------------------");
-		listaSuspensa = new ListaSuspensa();
+		listaSuspensa = new ComentarioListaSuspensa();
 		listaSuspensa.beforeClass();
-		listaSuspensa.login();
-		listaSuspensa.brbEntrar();
+	
 		listaSuspensa.listaSuspensa();
 		listaSuspensa.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -388,8 +358,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		comentarioLibre.beforeClass();
 
-		comentarioLibre.login();
-		comentarioLibre.brbEntrar();
+
 		comentarioLibre.comentarioLibre();
 		comentarioLibre.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -404,8 +373,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		imprimir.beforeClass();
 
-		imprimir.login();
-		imprimir.brbEntrar();
+
 		imprimir.imprimir();
 		imprimir.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -420,8 +388,7 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		cabeçalho.beforeClass();
 
-		cabeçalho.login();
-		cabeçalho.brbEntrar();
+
 		cabeçalho.cabeçalho();
 		cabeçalho.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -435,8 +402,6 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		exportar.beforeClass();
 
-		exportar.login();
-		exportar.brbEntrar();
 		exportar.exportarCSV();
 		exportar.exportarXLSX();
 		exportar.afterClass();
@@ -452,8 +417,6 @@ public class AutomacoesBrb extends TestBaseSteven {
 
 		visualizar.beforeClass();
 
-		visualizar.login();
-		visualizar.brbEntrar();
 		visualizar.visualizar();
 		visualizar.afterClass();
 		System.out.println("--------------------------------------------------");
@@ -463,12 +426,11 @@ public class AutomacoesBrb extends TestBaseSteven {
 	@Test(priority = 28)
 	public void ExcluirRelatorio() {
 		System.out.println("-------------------Excluir-------------------------");
-		eliminar = new Eliminar();
+		eliminar = new ExcluirRelatorio();
 
 		eliminar.beforeClass();
 
-		eliminar.login();
-		eliminar.brbEntrar();
+	
 		eliminar.eliminar();
 		eliminar.eliminarLixeira();
 		eliminar.afterClass();

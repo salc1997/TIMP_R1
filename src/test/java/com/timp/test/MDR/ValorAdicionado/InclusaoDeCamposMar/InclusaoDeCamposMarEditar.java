@@ -3,7 +3,7 @@ package com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

@@ -35,17 +35,14 @@ public class HierarquiaDeCenariosDeCorreçaoFiltroAbansado extends TestBaseMassie
 	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
+  
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void Filtro() {
+		
+		loginTC.login();
+		
+		accesarMDRPO.acessarMDR();
 		
 		ArrayList<Boolean> tributo = hierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO.filtroTributo();
 		for (int i = 0; i < tributo.size(); i++) {

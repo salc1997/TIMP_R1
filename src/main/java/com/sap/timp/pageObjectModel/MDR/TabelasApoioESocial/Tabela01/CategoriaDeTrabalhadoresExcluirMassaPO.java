@@ -1,3 +1,4 @@
+
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela01;
 
 import org.openqa.selenium.By;
@@ -167,7 +168,7 @@ public class CategoriaDeTrabalhadoresExcluirMassaPO extends TestBaseCristhian {
 		sim.click();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir("CategoriaDeTrabalhadores", idB);
+		idInserir("CategoriaDeTrabalhadoresExcluirMassa",idB);
 		sleep(2000);
 		System.out.println("ID: "+id);
 		System.out.println("IDB: "+idB);
@@ -189,3 +190,4 @@ public class CategoriaDeTrabalhadoresExcluirMassaPO extends TestBaseCristhian {
 	}
 	
 }
+

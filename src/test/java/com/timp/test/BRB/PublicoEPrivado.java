@@ -1,6 +1,6 @@
 package com.timp.test.BRB;
 
-import static org.junit.Assert.assertEquals;
+
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;

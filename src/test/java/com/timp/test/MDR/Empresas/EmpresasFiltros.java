@@ -1,6 +1,6 @@
 package com.timp.test.MDR.Empresas;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;

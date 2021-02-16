@@ -1,6 +1,6 @@
 package com.timp.test.BRB;
 
-import static org.junit.Assert.assertEquals;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -50,7 +50,7 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 
 	@Test()
-	public void filtrosEditor() {
+	public void AfiltrosEditor() {
 		
 		loginTC.login();
 		
@@ -109,9 +109,9 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 	}
 
-	@Test(dependsOnMethods = "filtrosEditor")
+	@Test(dependsOnMethods  = "AfiltrosEditor")
 
-	public void filtrosBiblioteca() {
+	public void BfiltrosBiblioteca() {
 
 		String url = driver.getCurrentUrl();
 		boolean amb = false;
@@ -159,8 +159,8 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 	}
 
-	@Test(dependsOnMethods = "filtrosEditor")
-	public void asignarValores() {
+	@Test(dependsOnMethods  = "BfiltrosBiblioteca" )
+	public void CasignarValores() {
 
 		filtrosPO.establecerValores();
 

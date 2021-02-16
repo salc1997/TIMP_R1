@@ -1,9 +1,7 @@
 package com.timp.test.BRB;
 
-import static org.junit.Assert.assertTrue;
-import static org.testng.Assert.assertTrue;
 
-import java.util.ArrayList;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

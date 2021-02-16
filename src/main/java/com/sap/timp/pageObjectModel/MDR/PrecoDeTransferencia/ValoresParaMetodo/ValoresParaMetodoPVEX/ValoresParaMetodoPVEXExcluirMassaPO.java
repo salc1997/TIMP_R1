@@ -318,7 +318,7 @@ public class ValoresParaMetodoPVEXExcluirMassaPO extends TestBaseFernando{
 		
 		// Se obtiene el primer registro de la tabla
 		String idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText(); 
-		idInserir4(idPrimerRegistro);
+		idInserir("ValoresParaMetodoPVEX", idPrimerRegistro);
 		
 		int idSegundoRegistro = convertToInt(idPrimerRegistro) - 1; // Este seria el segundo registro, equivalente al primer registro que se crea cone sta automatizacion
 		  
@@ -353,7 +353,7 @@ public class ValoresParaMetodoPVEXExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
-		int idPrimerRegistro = convertToInt(idObter4());
+		int idPrimerRegistro = convertToInt(idObter("ValoresParaMetodoPVEX"));
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idPrimerRegistro+"\"]/div[2]/label/span"));
 		System.out.println("Id Primer registro: " + idPrimerRegistro); // Primer registro que es el que se crea con la automatizacion
 		

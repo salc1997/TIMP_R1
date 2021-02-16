@@ -117,7 +117,7 @@ public class ContasEspeciaisIRPJCSLLPO extends TestBaseMassiel{
 		
 		//primer dato de la tabla
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();		
-		idInserir4(String.valueOf(Integer.parseInt(idRegistro1)));
+		idInserir("ContasEspeciais", String.valueOf(Integer.parseInt(idRegistro1)));
 		System.out.println(idRegistro1);			
 		sleep(2000);
 		  

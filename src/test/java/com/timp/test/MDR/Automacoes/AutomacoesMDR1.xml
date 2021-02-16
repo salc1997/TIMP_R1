@@ -90,8 +90,6 @@
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar"></class>
 
-			<class
-				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar"></class>
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeExcluirMassa"></class>
@@ -143,7 +141,10 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir"></class>
-
+			
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar"></class>
+			
 
 			
 

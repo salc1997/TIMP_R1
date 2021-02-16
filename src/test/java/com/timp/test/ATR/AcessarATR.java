@@ -14,34 +14,33 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AcessarATR extends TestBaseEliel{
+public class AcessarATR extends TestBaseEliel {
 	LoginTC loginTC;
-	AcessarATRPO acessarATRPO ;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  acessarATRPO = new AcessarATRPO();
-  }
+	AcessarATRPO acessarATRPO;
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 1)
- 	public void login() {
- 		loginTC.login();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarATRPO = new AcessarATRPO();
+	}
 
- 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
- 	@Test(priority = 2)
- 	public void ATREntrar() {
+	@Test(priority = 1)
+	public void login() {
+		loginTC.login();
 
- 		
- 		boolean sucesso =  acessarATRPO.acessarATR();
- 		assertTrue(sucesso, "The element is not present");
+	}
 
- 	}
+	@Test(priority = 2)
+	public void ATREntrar() {
+
+		boolean sucesso = acessarATRPO.acessarATR();
+		assertTrue(sucesso, "The element is not present");
+
+	}
 
 }

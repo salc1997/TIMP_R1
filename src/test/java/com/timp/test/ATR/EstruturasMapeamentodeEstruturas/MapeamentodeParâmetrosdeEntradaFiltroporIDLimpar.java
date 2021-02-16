@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseCristhian{
+public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
 	MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO;
@@ -32,7 +32,7 @@ public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseCr
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -54,9 +54,6 @@ public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseCr
 		boolean sucesso = mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO.filtro();
 		assertTrue(sucesso, Filtros);
 
-		
-
 	}
-  
 
 }

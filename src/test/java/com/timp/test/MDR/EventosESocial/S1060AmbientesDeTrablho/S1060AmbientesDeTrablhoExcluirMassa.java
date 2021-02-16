@@ -21,7 +21,7 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();

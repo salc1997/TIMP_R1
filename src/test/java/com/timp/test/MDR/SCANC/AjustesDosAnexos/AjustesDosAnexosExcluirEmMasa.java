@@ -24,7 +24,7 @@ public class AjustesDosAnexosExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AjustesDosAnexosExcluirEmMassaPO ajustesDosAnexosExcluirEmMassaPO;
-	
+	 
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();

@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2EditarPO;
 
-public class RegrasdeAuditoriaN2Editar extends TestBaseFernando{
+public class RegrasdeAuditoriaN2Editar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2EditarPO regrasdeAuditoriaN2EditarPO;

@@ -27,8 +27,7 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"empresa\"]/div/div/div[2]")
 	public WebElement empresa;
 					 
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
-	public WebElement empresaOTc2;
+
 	@FindBy(xpath = "//div[@id=\"1000\"]/div/label/span")
 	public WebElement empresaOTd1;
 	
@@ -167,12 +166,9 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		
 		empresa.click();
 		sleep(2000);
-		if (tc2 == true || tp1 == true || tq1 == true) {
-			empresaOTc2.click();
-		}else {
-			empresaOTd1.click();
-			empresaOTd1.sendKeys(Keys.ESCAPE);
-		}
+		empresaOTd1.click();
+		empresaOTd1.sendKeys(Keys.ESCAPE);
+	
 		
 		
 		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-select required");

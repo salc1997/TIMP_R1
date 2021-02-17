@@ -22,7 +22,7 @@ public class CadastroFornecedorCriar extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroFornecedorCriarPO cadastroFornecedorCriarPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

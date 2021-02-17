@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2CriarComCopiaPO;
 
-public class RegrasDeAuditoriaN2CriarComCopia extends TestBaseFernando{
+public class RegrasDeAuditoriaN2CriarComCopia extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeAuditoriaN2CriarComCopiaPO regrasDeAuditoriaN2CriarComCopiaPO;
@@ -24,10 +24,9 @@ public class RegrasDeAuditoriaN2CriarComCopia extends TestBaseFernando{
 		regrasDeAuditoriaN2CriarComCopiaPO = new RegrasDeAuditoriaN2CriarComCopiaPO();
 	}
 
-
 	@AfterClass
 	public void afterClass() {
-		//	  driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -40,6 +39,7 @@ public class RegrasDeAuditoriaN2CriarComCopia extends TestBaseFernando{
 		acessarBREPO.acessarBRE();
 
 	}
+
 	@Test(priority = 2)
 	public void criarComCopia() {
 		boolean sucesso = regrasDeAuditoriaN2CriarComCopiaPO.criarComCopia();

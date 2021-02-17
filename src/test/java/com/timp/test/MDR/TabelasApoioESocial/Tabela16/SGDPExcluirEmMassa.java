@@ -17,7 +17,7 @@ public class SGDPExcluirEmMassa extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPExcluirEmMassaPO sgdpExcluirEmMassaPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

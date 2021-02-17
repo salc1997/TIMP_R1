@@ -26,7 +26,7 @@ public class MotivosdeDesligamentoExcluirMasa extends TestBaseKenssy {
 		  accesarMDR = new AcessarMDRPO();
 		  motivosDesligamentoExcluirPO = new MotivosdeDesligamentoExcluirMasaPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		  driver.close();

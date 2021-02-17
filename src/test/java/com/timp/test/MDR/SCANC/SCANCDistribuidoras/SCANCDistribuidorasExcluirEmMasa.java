@@ -23,7 +23,7 @@ public class SCANCDistribuidorasExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	SCANCDistribuidoraExcluirEmMassaPO scancDistribuidoraExcluirEmMassaPO;
-	
+	 
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();

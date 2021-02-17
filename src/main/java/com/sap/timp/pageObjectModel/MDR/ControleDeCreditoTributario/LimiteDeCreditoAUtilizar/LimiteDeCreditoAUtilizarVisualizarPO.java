@@ -139,8 +139,6 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBaseEliel {
 		//visualizar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		waitExpectElement(editar);
 		sleep(4000);
@@ -155,17 +153,17 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBaseEliel {
 		//System.out.println(tributovisualizar);
 		System.out.println(utilizacaodecreditovisualizar);
 		
-	
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -180,12 +178,7 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBaseEliel {
 		sleep(1000);
 		
 		editar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		//editar
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -21,7 +21,7 @@ public class DeterminacionRelevanciaPorMotivoVisualizar extends TestBaseCristhia
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacionRelevanciaPorMotivoVisualizarPO determinacionRelevanciaPorMotivoVisualizarPO;
-
+ 
   @BeforeClass
   public void beforeClass() {
 	driver = initialization();

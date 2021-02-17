@@ -20,13 +20,13 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorVisualizarPO extends TestBase
 	
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div/div/div/div[1]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"multipleControlerId-00\"]")
+	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div/div/div/div[1]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione Filial\"]")
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div/div/div[1]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Ind. Desc. Cred\"]")
@@ -58,23 +58,6 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorVisualizarPO extends TestBase
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//div[@id=\"detail-description\" and @class=\"detail\"][2]/div/div")
-	public WebElement empresade;
-	
-	@FindBy(xpath = "//div[@id=\"detail-description\" and @class=\"detail\"][3]/div/div")
-	public WebElement filialde;
-	
-	@FindBy(xpath = "//div[@id=\"detail-description\" and @class=\"detail\"][4]/div/div")
-	public WebElement tributode;
-	
-	@FindBy(xpath = "//div[@id=\"detail-description\" and @class=\"detail\"][5]/div/div")
-	public WebElement codigocreditode;
-	
-	@FindBy(xpath = "//div[@id=\"detail-description\" and @class=\"detail\"][6]/div/div")
-	public WebElement ordemde;
-	
-	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
-	public WebElement fechar;
 	
 	@FindBy(xpath = "//span[@id=\"companyCode\"]")
 	public WebElement empresavi;
@@ -188,8 +171,8 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorVisualizarPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String empresaeditar = empresa.getAttribute("value");
-		String filialeditar = filial.getAttribute("value");
+		String empresaeditar = empresa.getText();
+		String filialeditar = filial.getText();
 		String tributoeditar = tributo.getText();
 		String codigoeditar = codigodecredito.getAttribute("value");
 		String ordemdeutilizacaoeditar = ordemdeutilizacao.getAttribute("value");

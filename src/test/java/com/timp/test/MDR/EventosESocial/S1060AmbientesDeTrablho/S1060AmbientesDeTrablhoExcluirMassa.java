@@ -1,3 +1,4 @@
+
 package com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho;
 
 import org.testng.annotations.Test;
@@ -33,14 +34,11 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 		driver.close();
 	}
 
-
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
-		
 		loginTC.login();
-		
 		acessarMDRPO.acessarMDR();
-
+		
 		boolean sucesso = s1060AmbientesDeTrablhoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
@@ -49,3 +47,4 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 
 	}
 }
+

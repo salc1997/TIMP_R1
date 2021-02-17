@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2EdicaoRelacionamentoPO;
 
-public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando{
+public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeAuditoriaN2EdicaoRelacionamentoPO regrasDeAuditoriaN2EdicaoRelacionamentoPO;
@@ -23,7 +23,6 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando{
 		acessarBREPO = new AcessarBREPO();
 		regrasDeAuditoriaN2EdicaoRelacionamentoPO = new RegrasDeAuditoriaN2EdicaoRelacionamentoPO();
 	}
-
 
 	@AfterClass
 	public void afterClass() {
@@ -40,6 +39,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando{
 		acessarBREPO.acessarBRE();
 
 	}
+
 	@Test(priority = 2)
 	public void editar() {
 		boolean sucesso = regrasDeAuditoriaN2EdicaoRelacionamentoPO.editar();

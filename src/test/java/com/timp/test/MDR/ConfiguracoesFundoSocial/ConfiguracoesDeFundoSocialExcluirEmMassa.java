@@ -50,10 +50,6 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassa extends TestBaseEliel{
 	
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
-		loginTC.login();
-
-		acessarMDRPO.acessarMDR();
 
 		boolean sucesso2 = configuracoesDeFundoSocialExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

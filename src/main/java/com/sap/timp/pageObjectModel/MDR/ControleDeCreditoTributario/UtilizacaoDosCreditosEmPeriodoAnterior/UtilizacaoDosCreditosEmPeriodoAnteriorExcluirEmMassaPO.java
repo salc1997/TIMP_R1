@@ -26,27 +26,19 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO extends Test
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaoempresa;
-	
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcao;
 	
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"00\"]/div/label/span")
-	public WebElement opcaotributo;
-	
-
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaofilial;
 	
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"creditCode\"]/div/div/div[2]")
 	public WebElement codigodecredito;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[@id][2]")
 	public WebElement opcaocodigodecredito;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Utilização\"]")
@@ -119,32 +111,31 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO extends Test
 		//Primeiro Registro
 		
 		empresa.click();
-		
 		sleep(2000);
-		
-		opcaoempresa.click();
-		
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 		tributo.click();
-		
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaotributo.click();
 		
-		sleep(2000);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
+		
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
-		
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaofilial.click();
-		
-		sleep(2000);
 		
 		codigodecredito.click();
 		
@@ -161,8 +152,6 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO extends Test
 		String data=fechaActual();
 		dataincial.sendKeys(data);
 		
-		
-		sleep(1000);
 
 		novo.click();
 		sleep(2000);
@@ -176,32 +165,31 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO extends Test
 		//Segundo Registro
 		
 		empresa.click();
-		
 		sleep(2000);
-		
-		opcaoempresa.click();
-		
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 		tributo.click();
-		
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaotributo.click();
 		
-		sleep(2000);
 		
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
-		
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaofilial.click();
-		
-		sleep(2000);
 		
 		codigodecredito.click();
 		
@@ -215,10 +203,9 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO extends Test
 		
 		sleep(2000);
 		
-		
+		data=fechaActual();
 		dataincial.sendKeys(data);
 		
-		sleep(1000);
 
 		novo.click();
 		sleep(2000);

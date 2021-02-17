@@ -24,7 +24,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasa extends TestBaseSteven {
 	AcessarMDRPO accesarMDR;
 	ParametrosParaCategoriaDeIRFExcluirEmMasaPO parametrosParaCategoriaDeIRFExcluirEmMasaPO;
 	
-	
+	 
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();

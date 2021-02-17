@@ -19,6 +19,7 @@ import com.sap.timp.pageObjectModel.MDR.SCANC.MovimentoSCANC.MovimentoSCANCFiltr
 import com.sap.timp.pageObjectModel.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroIdPO;
 
 public class S1060AmbientesDeTrabalhoFiltroID extends TestBaseSteven {
+	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S1060AmbientesDeTrabalhoFiltroIdPO s1060AmbientesDeTrabalhoFiltroIdPO;
@@ -43,12 +44,12 @@ public class S1060AmbientesDeTrabalhoFiltroID extends TestBaseSteven {
 	public void filtro() {
 		
 		loginTC.login();
-		
 		acessarMDRPO.acessarMDR();
-
+		
 
 		boolean sucesso = s1060AmbientesDeTrabalhoFiltroIdPO.filtro();
-
 		assertTrue(sucesso, Filtros);
 	}
+		
+		
 }

@@ -342,8 +342,8 @@ public class AutomacoesMDR8 {
 
 		configuracaoFundoSocailCriar = new ConfiguracaoFundoSocailCriar();
 		configuracaoFundoSocailCriar.beforeClass();
-		configuracaoFundoSocailCriar.login();
-		configuracaoFundoSocailCriar.acessarMDR();
+//		configuracaoFundoSocailCriar.login();
+//		configuracaoFundoSocailCriar.acessarMDR();
 		configuracaoFundoSocailCriar.criar();
 		configuracaoFundoSocailCriar.afterClass();
 
@@ -354,8 +354,8 @@ public class AutomacoesMDR8 {
 
 		configuracoesFundoSocialEditar = new ConfiguracoesFundoSocialEditar();
 		configuracoesFundoSocialEditar.beforeClass();
-		configuracoesFundoSocialEditar.ingresar();
-		configuracoesFundoSocialEditar.ingresarMDR();
+//		configuracoesFundoSocialEditar.ingresar();
+//		configuracoesFundoSocialEditar.ingresarMDR();
 		configuracoesFundoSocialEditar.editar();
 		configuracoesFundoSocialEditar.afterClass();
 

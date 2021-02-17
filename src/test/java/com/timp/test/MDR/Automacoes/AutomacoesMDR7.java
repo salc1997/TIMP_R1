@@ -238,8 +238,7 @@ public class AutomacoesMDR7 {
 		
 		tabelaDeApoioECFCriar = new TabelaDeApoioECFCriar();
 		tabelaDeApoioECFCriar.beforeClass();
-		tabelaDeApoioECFCriar.login();
-		tabelaDeApoioECFCriar.acessarMDR();
+	
 		tabelaDeApoioECFCriar.criar();
 		tabelaDeApoioECFCriar.afterClass();		
 	}
@@ -252,8 +251,6 @@ public class AutomacoesMDR7 {
 
 		s1070ProcessosAdmJudiciaisCriar = new S1070ProcessosAdmJudiciaisCriar();
 		s1070ProcessosAdmJudiciaisCriar.beforeClass();
-		s1070ProcessosAdmJudiciaisCriar.ingresar();
-		s1070ProcessosAdmJudiciaisCriar.ingresarMDR();
 		s1070ProcessosAdmJudiciaisCriar.criar();
 		s1070ProcessosAdmJudiciaisCriar.afterClass();		
 	}
@@ -264,8 +261,6 @@ public class AutomacoesMDR7 {
 
 		s1070ProcessosAdmJudiciaisEditar = new S1070ProcessosAdmJudiciaisEditar();
 		s1070ProcessosAdmJudiciaisEditar.beforeClass();
-		s1070ProcessosAdmJudiciaisEditar.ingresar();
-		s1070ProcessosAdmJudiciaisEditar.ingresarMDR();
 		s1070ProcessosAdmJudiciaisEditar.editar();
 		s1070ProcessosAdmJudiciaisEditar.afterClass();		
 	}
@@ -276,8 +271,6 @@ public class AutomacoesMDR7 {
 
 		s1070ProcessosAdmJudiciaisExluir = new S1070ProcessosAdmJudiciaisExluir();
 		s1070ProcessosAdmJudiciaisExluir.beforeClass();
-		s1070ProcessosAdmJudiciaisExluir.ingresar();
-		s1070ProcessosAdmJudiciaisExluir.mdrEntrar();
 		s1070ProcessosAdmJudiciaisExluir.excluir();
 		s1070ProcessosAdmJudiciaisExluir.afterClass();		
 		

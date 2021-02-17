@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho;
 
 import org.testng.annotations.Test;
@@ -49,3 +50,53 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 
 	}
 }
+=======
+package com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho;
+
+import org.testng.annotations.Test;
+
+import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassaPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassaPO;
+
+import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+
+public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
+	LoginTC loginTC;
+	AcessarMDRPO acessarMDRPO;
+	S1060AmbientesDeTrablhoExcluirMassaPO s1060AmbientesDeTrablhoExcluirMassaPO;
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		s1060AmbientesDeTrablhoExcluirMassaPO = new S1060AmbientesDeTrablhoExcluirMassaPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void criar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
+		boolean sucesso = s1060AmbientesDeTrablhoExcluirMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+		boolean sucesso2 = s1060AmbientesDeTrablhoExcluirMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+
+	}
+}
+>>>>>>> refs/heads/Fernando

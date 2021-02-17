@@ -25,17 +25,32 @@ public class S1060AmbientesDeTrablhoCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		s1060AmbientesDeTrablhoCriarPO = new S1060AmbientesDeTrablhoCriarPO();
 	}
+<<<<<<< HEAD
 	
 	 @AfterClass public void afterClass() {
 		 driver.close();
 	 }
 	 
+=======
+>>>>>>> refs/heads/Fernando
 
+<<<<<<< HEAD
 	@Test(priority = 1)
+=======
+	@AfterClass public void afterClass(){ 
+		driver.close(); 
+	}
+
+	@Test()
+>>>>>>> refs/heads/Fernando
 	public void criar() {
+<<<<<<< HEAD
 		
 		loginTC.login();
 		
+=======
+		loginTC.login();
+>>>>>>> refs/heads/Fernando
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = s1060AmbientesDeTrablhoCriarPO.criar();

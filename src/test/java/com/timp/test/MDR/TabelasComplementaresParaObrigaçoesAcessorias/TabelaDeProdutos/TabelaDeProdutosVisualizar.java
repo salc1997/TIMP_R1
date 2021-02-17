@@ -20,34 +20,23 @@ public class TabelaDeProdutosVisualizar extends TestBaseMassiel {
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeProdutosVisualizarPO tabelaDeProdutosVisualizarPO;
 	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeProdutosVisualizarPO = new TabelaDeProdutosVisualizarPO();
-  }
-
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 2)
 	public void visualizar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = tabelaDeProdutosVisualizarPO .visualizar();
 

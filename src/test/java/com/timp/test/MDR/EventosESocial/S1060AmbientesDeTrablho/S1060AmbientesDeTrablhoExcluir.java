@@ -25,25 +25,15 @@ public class S1060AmbientesDeTrablhoExcluir extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		s1060AmbientesDeTrablhoExcluirPO = new S1060AmbientesDeTrablhoExcluirPO();
 	}
-	
-	 @AfterClass public void afterClass(){ driver.close(); }
-	 
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+	@AfterClass public void afterClass(){
+		driver.close(); 
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = s1060AmbientesDeTrablhoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

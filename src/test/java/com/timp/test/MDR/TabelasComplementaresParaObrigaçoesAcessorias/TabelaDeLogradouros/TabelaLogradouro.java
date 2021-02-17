@@ -16,41 +16,32 @@ public class TabelaLogradouro extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TabelaServicosExcluirEmMassaPO tabelaServicosExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  tabelaServicosExcluirEmMassaPO = new TabelaServicosExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		tabelaServicosExcluirEmMassaPO = new TabelaServicosExcluirEmMassaPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void criar() {
-	
-	  boolean sucesso = tabelaServicosExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
-	
-	boolean sucesso2 = tabelaServicosExcluirEmMassaPO.excluir();
-	assertTrue(sucesso2, Eliminado);
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void criar() {
+		loginTC.login();
+		accesarMDR.acessarMDR();
+		
+		boolean sucesso = tabelaServicosExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+
+		boolean sucesso2 = tabelaServicosExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 
 	

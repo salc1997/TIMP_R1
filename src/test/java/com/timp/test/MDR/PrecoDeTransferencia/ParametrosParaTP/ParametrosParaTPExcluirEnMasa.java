@@ -17,41 +17,33 @@ public class ParametrosParaTPExcluirEnMasa extends TestBaseKenssy{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	ParametrosParaTPExcluirEnMasaPO  parametrosParaTPExcluirEnMasaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  parametrosParaTPExcluirEnMasaPO = new ParametrosParaTPExcluirEnMasaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		parametrosParaTPExcluirEnMasaPO = new ParametrosParaTPExcluirEnMasaPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void excluirEmMasaParametrosParaTP() {
-	  boolean sucesso = parametrosParaTPExcluirEnMasaPO.criar();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void excluirEmMasaParametrosParaTP() {
+		loginTC.login();
+		accesarMDR.acessarMDR();
+
+		boolean sucesso = parametrosParaTPExcluirEnMasaPO.criar();
 		assertTrue(sucesso, Criar);
-		
-	  sleep(1000);
-	  
-	  boolean sucesso2 = parametrosParaTPExcluirEnMasaPO.excluirEmMasaParametrosParaTP();
-	  	assertTrue(sucesso2, Eliminado);
-  }
+
+		sleep(1000);
+
+		boolean sucesso2 = parametrosParaTPExcluirEnMasaPO.excluirEmMasaParametrosParaTP();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 
 }

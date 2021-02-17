@@ -43,13 +43,11 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[@id=\"ANTICIPATION_PARCEL\"]")
 	public WebElement parcelaV;
 	
-	@FindBy(xpath = "//div[contains(@id,\"multipleControlerId\")]")
+	@FindBy(xpath = "//div[@id=\"empresa\"]/div/div/div/div/div/div")
 	public WebElement empresaE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Empresa\")]")
-	public WebElement empresa2;
-	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
+	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div/div/div/div")
 	public WebElement ufE;
-	@FindBy(xpath = "//input[contains(@placeholder,\" uma  Filial\")]")
+	@FindBy(xpath = "//div[@id=\"filial\"]/div/div/div/div/div/div")
 	public WebElement filialE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"um  Tributo\")]")
 	public WebElement tributoE;
@@ -150,16 +148,9 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String empresaE1 = "";
-		
-		if (td1==true) {
-			empresaE1 = empresaE.getText();
-		}else {
-			empresaE1 = empresa2.getAttribute("value");
-		}
-
-		String ufE1 = ufE.getAttribute("value");
-		String filialE1 = filialE.getAttribute("value");
+		String empresaE1 = empresaE.getText();
+		String ufE1 = ufE.getText();
+		String filialE1 = filialE.getText();
 		String tributoE1 = tributoE.getAttribute("value");
 		String tipoTributoE1 = tipoTributoE.getAttribute("value");
 		String antecipacaoE1 = antecipacaoE.getAttribute("value");

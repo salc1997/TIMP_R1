@@ -33,18 +33,14 @@ public class ParâmetrosParaEnvioDeMensagensDetalhes extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
+
 
 	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
 	public void detalhes() {
+		
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
+		
 		ArrayList<Boolean> sucesso = parâmetrosParaEnvioDeMensagensDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

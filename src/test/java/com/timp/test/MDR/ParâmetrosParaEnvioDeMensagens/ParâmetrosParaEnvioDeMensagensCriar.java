@@ -31,18 +31,13 @@ public class ParâmetrosParaEnvioDeMensagensCriar extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
 	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
 	public void criar() {
+		
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
+		
 		boolean sucesso = parâmetrosParaEnvioDeMensagensCriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}

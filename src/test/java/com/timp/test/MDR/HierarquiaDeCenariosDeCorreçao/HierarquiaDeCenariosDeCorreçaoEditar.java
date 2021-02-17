@@ -1,4 +1,4 @@
-package com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao;
+ package com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;

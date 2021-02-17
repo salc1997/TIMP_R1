@@ -13,13 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO;
 
-public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBaseEliel{
- 
-	
+public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO regrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -30,7 +29,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBas
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,13 +41,13 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBas
 	public void acessarBRE() {
 		acessarBREPO.acessarBRE();
 	}
-	
+
 	@Test(priority = 2)
 	public void criar() {
 		ArrayList<Boolean> sucesso = regrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO.criar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-		
+
 	}
 }

@@ -1,6 +1,6 @@
 package com.timp.test.BRB;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -50,35 +50,29 @@ public class Formula extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void formulaColuna() {
-
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 		formulaPO.formulaColuna();
 
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "formulaColuna")
 	public void formulaBoton() {
 
 		formulaPO.formulaBoton();
 
 	}
 
-	@Test(priority = 4)
+	@Test(dependsOnMethods = "formulaBoton")
 	public void aplicar() {
+		
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = formulaPO.sucesso();

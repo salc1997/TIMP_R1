@@ -35,12 +35,11 @@ public class ResponsavelMovimentoFiltrosPO extends TestBaseSteven{
 	
 	public boolean filtros() {
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+
 		derex.click();
 		sleep(1000);
 		responsavelO.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 			
@@ -49,7 +48,7 @@ public class ResponsavelMovimentoFiltrosPO extends TestBaseSteven{
 		
 		pesquisar.sendKeys(id);
 		pesquisar.sendKeys(Keys.ENTER);
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

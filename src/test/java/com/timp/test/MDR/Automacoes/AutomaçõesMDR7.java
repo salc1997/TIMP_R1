@@ -446,8 +446,8 @@ public class AutomaçõesMDR7 {
 
 		livrosFiscaisCriar = new LivrosFiscaisCriar();
 		livrosFiscaisCriar.beforeClass();
-		livrosFiscaisCriar.login();
-		livrosFiscaisCriar.acessarMDR();
+		//livrosFiscaisCriar.login();
+		//livrosFiscaisCriar.acessarMDR();
 		livrosFiscaisCriar.criar();
 		livrosFiscaisCriar.afterClass();		
 	}
@@ -458,8 +458,8 @@ public class AutomaçõesMDR7 {
 	public void livrosFiscaisExcluir() {
 		livrosFiscaisExcluir = new LivrosFiscaisExcluir();
 		livrosFiscaisExcluir.beforeClass();
-		livrosFiscaisExcluir.login();
-		livrosFiscaisExcluir.acessarMDR();
+		//livrosFiscaisExcluir.login();
+		//livrosFiscaisExcluir.acessarMDR();
 		livrosFiscaisExcluir.excluir();
 		livrosFiscaisExcluir.afterClass();		
 	}
@@ -474,8 +474,8 @@ public class AutomaçõesMDR7 {
 		System.out.println("-------------------Parametros de Contabilização	> Contas Default para Extemporâneo -------------------------");
 		contasDefaultParaExtemporaneoExcluirMassa = new ContasDefaultParaExtemporaneoExcluirMassa();
 		contasDefaultParaExtemporaneoExcluirMassa.beforeClass();
-		contasDefaultParaExtemporaneoExcluirMassa.login();
-		contasDefaultParaExtemporaneoExcluirMassa.acessarMDR();
+		//contasDefaultParaExtemporaneoExcluirMassa.login();
+		//contasDefaultParaExtemporaneoExcluirMassa.acessarMDR();
 		contasDefaultParaExtemporaneoExcluirMassa.criar();
 		contasDefaultParaExtemporaneoExcluirMassa.excluirMassa();
 		contasDefaultParaExtemporaneoExcluirMassa.afterClass();		
@@ -488,8 +488,8 @@ public class AutomaçõesMDR7 {
 		System.out.println("-------------------Parâmetros para Envio de Mensagens -------------------------");
 		parâmetrosParaEnvioDeMensagensCriar = new ParâmetrosParaEnvioDeMensagensCriar();
 		parâmetrosParaEnvioDeMensagensCriar.beforeClass();
-		parâmetrosParaEnvioDeMensagensCriar.ingresar();
-		parâmetrosParaEnvioDeMensagensCriar.ingresarMDR();
+		//parâmetrosParaEnvioDeMensagensCriar.ingresar();
+		//parâmetrosParaEnvioDeMensagensCriar.ingresarMDR();
 		parâmetrosParaEnvioDeMensagensCriar.criar();
 		parâmetrosParaEnvioDeMensagensCriar.afterClass();		
 	}
@@ -498,8 +498,8 @@ public class AutomaçõesMDR7 {
 	public void parâmetrosParaEnvioDeMensagensEditar() {
 		parâmetrosParaEnvioDeMensagensEditar = new ParâmetrosParaEnvioDeMensagensEditar();
 		parâmetrosParaEnvioDeMensagensEditar.beforeClass();
-		parâmetrosParaEnvioDeMensagensEditar.ingresar();
-		parâmetrosParaEnvioDeMensagensEditar.ingresarMDR();
+		//parâmetrosParaEnvioDeMensagensEditar.ingresar();
+		//parâmetrosParaEnvioDeMensagensEditar.ingresarMDR();
 		parâmetrosParaEnvioDeMensagensEditar.editar();
 		parâmetrosParaEnvioDeMensagensEditar.afterClass();		
 	}
@@ -508,8 +508,8 @@ public class AutomaçõesMDR7 {
 	public void parâmetrosParaEnvioDeMensagensFiltrosId() {
 		parâmetrosParaEnvioDeMensagensFiltrosId = new ParâmetrosParaEnvioDeMensagensFiltrosId();
 		parâmetrosParaEnvioDeMensagensFiltrosId.beforeClass();
-		parâmetrosParaEnvioDeMensagensFiltrosId.login();
-		parâmetrosParaEnvioDeMensagensFiltrosId.acessarMDR();
+		//parâmetrosParaEnvioDeMensagensFiltrosId.login();
+		//parâmetrosParaEnvioDeMensagensFiltrosId.acessarMDR();
 		parâmetrosParaEnvioDeMensagensFiltrosId.filtros();
 		parâmetrosParaEnvioDeMensagensFiltrosId.afterClass();		
 	}
@@ -517,8 +517,8 @@ public class AutomaçõesMDR7 {
 	public void parâmetrosParaEnvioDeMensagensDetalhe() {
 		parâmetrosParaEnvioDeMensagensDetalhes = new ParâmetrosParaEnvioDeMensagensDetalhes();
 		parâmetrosParaEnvioDeMensagensDetalhes.beforeClass();
-		parâmetrosParaEnvioDeMensagensDetalhes.ingresar();
-		parâmetrosParaEnvioDeMensagensDetalhes.ingresarMDR();
+		////parâmetrosParaEnvioDeMensagensDetalhes.ingresar();
+		//parâmetrosParaEnvioDeMensagensDetalhes.ingresarMDR();
 		parâmetrosParaEnvioDeMensagensDetalhes.detalhes();
 		parâmetrosParaEnvioDeMensagensDetalhes.afterClass();		
 	}
@@ -527,8 +527,8 @@ public class AutomaçõesMDR7 {
 	public void parâmetrosParaEnvioDeMensagensVisualizar() {
 		parâmetrosParaEnvioDeMensagensVisualizar = new ParâmetrosParaEnvioDeMensagensVisualizar();
 		parâmetrosParaEnvioDeMensagensVisualizar.beforeClass();
-		parâmetrosParaEnvioDeMensagensVisualizar.ingresar();
-		parâmetrosParaEnvioDeMensagensVisualizar.ingresarMDR();
+		//parâmetrosParaEnvioDeMensagensVisualizar.ingresar();
+		//parâmetrosParaEnvioDeMensagensVisualizar.ingresarMDR();
 		parâmetrosParaEnvioDeMensagensVisualizar.visualizar();
 		parâmetrosParaEnvioDeMensagensVisualizar.afterClass();		
 	}
@@ -537,8 +537,8 @@ public class AutomaçõesMDR7 {
 	public void parâmetrosParaEnvioDeMensagensExcluir() {
 		parâmetrosParaEnvioDeMensagensExcluir = new ParâmetrosParaEnvioDeMensagensExcluir();
 		parâmetrosParaEnvioDeMensagensExcluir.beforeClass();
-		parâmetrosParaEnvioDeMensagensExcluir.ingresar();
-		parâmetrosParaEnvioDeMensagensExcluir.ingresarMDR();
+		//parâmetrosParaEnvioDeMensagensExcluir.ingresar();
+		//parâmetrosParaEnvioDeMensagensExcluir.ingresarMDR();
 		parâmetrosParaEnvioDeMensagensExcluir.excluir();
 		parâmetrosParaEnvioDeMensagensExcluir.afterClass();		
 	}
@@ -547,8 +547,8 @@ public class AutomaçõesMDR7 {
 	public void parâmetrosParaEnvioDeMensagensExcluirMassa() {
 		parâmetrosParaEnvioDeMensagensExcluirMassa = new ParâmetrosParaEnvioDeMensagensExcluirMassa();
 		parâmetrosParaEnvioDeMensagensExcluirMassa.beforeClass();
-		parâmetrosParaEnvioDeMensagensExcluirMassa.login();
-		parâmetrosParaEnvioDeMensagensExcluirMassa.acessarMDR();
+		//parâmetrosParaEnvioDeMensagensExcluirMassa.login();
+		//parâmetrosParaEnvioDeMensagensExcluirMassa.acessarMDR();
 		parâmetrosParaEnvioDeMensagensExcluirMassa.criar();
 		parâmetrosParaEnvioDeMensagensExcluirMassa.excluirMassa();
 		parâmetrosParaEnvioDeMensagensExcluirMassa.afterClass();	
@@ -877,8 +877,8 @@ public class AutomaçõesMDR7 {
 		System.out.println("------------------- Tabelas de Apoio E-SOCIAL > Tabela 26 - Motivos de Ces. Benefícios -------------------------");
 		motivosCesBeneficiosCriar = new MotivosCesBeneficiosCriar();
 		motivosCesBeneficiosCriar.beforeClass();
-		motivosCesBeneficiosCriar.login();
-		motivosCesBeneficiosCriar.acessarMDR();
+		//motivosCesBeneficiosCriar.login();
+		//motivosCesBeneficiosCriar.acessarMDR();
 		motivosCesBeneficiosCriar.criar();
 		motivosCesBeneficiosCriar.afterClass();		
 	}
@@ -887,8 +887,8 @@ public class AutomaçõesMDR7 {
 	public void motivosCesBeneficiosEditar() {		
 		motivosCesBeneficiosEditar = new MotivosCesBeneficiosEditar();
 		motivosCesBeneficiosEditar.beforeClass();
-		motivosCesBeneficiosEditar.login();
-		motivosCesBeneficiosEditar.acessarMDR();
+		//motivosCesBeneficiosEditar.login();
+		//motivosCesBeneficiosEditar.acessarMDR();
 		motivosCesBeneficiosEditar.editar();
 		motivosCesBeneficiosEditar.afterClass();		
 	}
@@ -897,8 +897,8 @@ public class AutomaçõesMDR7 {
 	public void motivosCesBeneficiosVisualizar() {		
 		motivosCesBeneficiosVisualizar = new MotivosCesBeneficiosVisualizar();
 		motivosCesBeneficiosVisualizar.beforeClass();
-		motivosCesBeneficiosVisualizar.login();
-		motivosCesBeneficiosVisualizar.acessarMDR();
+		//motivosCesBeneficiosVisualizar.login();
+		//motivosCesBeneficiosVisualizar.acessarMDR();
 		motivosCesBeneficiosVisualizar.visualizar();
 		motivosCesBeneficiosVisualizar.afterClass();		
 	}
@@ -907,8 +907,8 @@ public class AutomaçõesMDR7 {
 	public void motivosCesBeneficiosExcluir() {		
 		motivosCesBeneficiosExcluir = new MotivosCesBeneficiosExcluir();
 		motivosCesBeneficiosExcluir.beforeClass();
-		motivosCesBeneficiosExcluir.login();
-		motivosCesBeneficiosExcluir.acessarMDR();
+		//motivosCesBeneficiosExcluir.login();
+		//motivosCesBeneficiosExcluir.acessarMDR();
 		motivosCesBeneficiosExcluir.excluir();
 		motivosCesBeneficiosExcluir.afterClass();		
 	}
@@ -917,8 +917,8 @@ public class AutomaçõesMDR7 {
 	public void motivosCesBeneficiosExcluirMassa() {		
 		motivosCesBeneficiosExcluirMassa = new MotivosCesBeneficiosExcluirMassa();
 		motivosCesBeneficiosExcluirMassa.beforeClass();
-		motivosCesBeneficiosExcluirMassa.login();
-		motivosCesBeneficiosExcluirMassa.acessarMDR();
+		//motivosCesBeneficiosExcluirMassa.login();
+		//motivosCesBeneficiosExcluirMassa.acessarMDR();
 		motivosCesBeneficiosExcluirMassa.criar();
 		motivosCesBeneficiosExcluirMassa.excluirMassa();
 		motivosCesBeneficiosExcluirMassa.afterClass();		

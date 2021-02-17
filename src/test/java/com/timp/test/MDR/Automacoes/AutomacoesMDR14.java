@@ -636,8 +636,8 @@ public class AutomacoesMDR14 extends TestBaseSteven{
 				"-------------------Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra-------------------------");
 		determinacaoDeRelevanciaPorRegraCriar = new DeterminacaoDeRelevanciaPorRegraCriar();
 		determinacaoDeRelevanciaPorRegraCriar.beforeClass();
-		determinacaoDeRelevanciaPorRegraCriar.login();
-		determinacaoDeRelevanciaPorRegraCriar.acessarMDR();
+		/*determinacaoDeRelevanciaPorRegraCriar.login();
+		determinacaoDeRelevanciaPorRegraCriar.acessarMDR();*/
 		determinacaoDeRelevanciaPorRegraCriar.criar();
 		determinacaoDeRelevanciaPorRegraCriar.afterClass();
 
@@ -647,8 +647,8 @@ public class AutomacoesMDR14 extends TestBaseSteven{
 	public void determinacaoDeRelevanciaPorRegraEditar() {
 		determinacaoDeRelevanciaPorRegraEditar = new DeterminacaoDeRelevanciaPorRegraEditar();
 		determinacaoDeRelevanciaPorRegraEditar.beforeClass();
-		determinacaoDeRelevanciaPorRegraEditar.login();
-		determinacaoDeRelevanciaPorRegraEditar.acessarMDR();
+		/*determinacaoDeRelevanciaPorRegraEditar.login();
+		determinacaoDeRelevanciaPorRegraEditar.acessarMDR();*/
 		determinacaoDeRelevanciaPorRegraEditar.editar();
 		determinacaoDeRelevanciaPorRegraEditar.afterClass();
 
@@ -658,8 +658,8 @@ public class AutomacoesMDR14 extends TestBaseSteven{
 	public void determinacaoDeRelevanciaPorRegraDetalhes() {
 		determinacaoDeRelevanciaPorRegraDetalhes = new DeterminacaoDeRelevanciaPorRegraDetalhes();
 		determinacaoDeRelevanciaPorRegraDetalhes.beforeClass();
-		determinacaoDeRelevanciaPorRegraDetalhes.login();
-		determinacaoDeRelevanciaPorRegraDetalhes.acessarMDR();
+		/*determinacaoDeRelevanciaPorRegraDetalhes.login();
+		determinacaoDeRelevanciaPorRegraDetalhes.acessarMDR();*/
 		determinacaoDeRelevanciaPorRegraDetalhes.detalhes();
 		determinacaoDeRelevanciaPorRegraDetalhes.afterClass();
 
@@ -669,8 +669,8 @@ public class AutomacoesMDR14 extends TestBaseSteven{
 	public void determinacaoDeRelevanciaPorRegraVisualizar() {
 		determinacaoDeRelevanciaPorRegraVisualizar = new DeterminacaoDeRelevanciaPorRegraVisualizar();
 		determinacaoDeRelevanciaPorRegraVisualizar.beforeClass();
-		determinacaoDeRelevanciaPorRegraVisualizar.login();
-		determinacaoDeRelevanciaPorRegraVisualizar.acessarMDR();
+		/*determinacaoDeRelevanciaPorRegraVisualizar.login();
+		determinacaoDeRelevanciaPorRegraVisualizar.acessarMDR();*/
 		determinacaoDeRelevanciaPorRegraVisualizar.Visualizar();
 		determinacaoDeRelevanciaPorRegraVisualizar.afterClass();
 
@@ -680,8 +680,8 @@ public class AutomacoesMDR14 extends TestBaseSteven{
 	public void determinacaoDeRelevanciaPorRegraExcluir() {
 		determinacaoDeRelevanciaPorRegraExcluir = new DeterminacaoDeRelevanciaPorRegraExcluir();
 		determinacaoDeRelevanciaPorRegraExcluir.beforeClass();
-		determinacaoDeRelevanciaPorRegraExcluir.login();
-		determinacaoDeRelevanciaPorRegraExcluir.acessarMDR();
+		/*determinacaoDeRelevanciaPorRegraExcluir.login();
+		determinacaoDeRelevanciaPorRegraExcluir.acessarMDR();*/
 		determinacaoDeRelevanciaPorRegraExcluir.excluir();
 		determinacaoDeRelevanciaPorRegraExcluir.afterClass();
 
@@ -693,8 +693,8 @@ public class AutomacoesMDR14 extends TestBaseSteven{
 
 		determinacaoDeRelevanciaPorRegraExcluirEmMassa = new DeterminacaoDeRelevanciaPorRegraExcluirEmMassa();
 		determinacaoDeRelevanciaPorRegraExcluirEmMassa.beforeClass();
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa.ingresar();
-		determinacaoDeRelevanciaPorRegraExcluirEmMassa.mdrEntrar();
+		/*determinacaoDeRelevanciaPorRegraExcluirEmMassa.ingresar();
+		determinacaoDeRelevanciaPorRegraExcluirEmMassa.mdrEntrar();*/
 		determinacaoDeRelevanciaPorRegraExcluirEmMassa.excluirEmMassa();
 		determinacaoDeRelevanciaPorRegraExcluirEmMassa.afterClass();
 

@@ -5,7 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

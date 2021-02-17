@@ -45,24 +45,16 @@ public class NovoRelatorio extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-
+	@Test()
+	public void novoRelatorio() {
+		
 		loginTc.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
+		
 		accesarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 2)
-	public void novoRelatorio() {
 
 		boolean sucesso = novoRelatorioPO.criar();
 		sleep(4000);
@@ -70,16 +62,5 @@ public class NovoRelatorio extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 3)
-	public void colunas() {
-
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso = novoRelatorioPO.colunas();
-		System.out.println(sucesso + "Colunas");
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), "The Colunms weren't added");
-		}
-
-	}
 
 }

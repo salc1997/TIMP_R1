@@ -15,27 +15,26 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasDeAuditoriaN2CriarCaminhos  extends TestBaseCristhian{
+public class RegrasDeAuditoriaN2CriarCaminhos extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeAuditoriaN2CriarCaminhosPO regrasDeAuditoriaN2CriarCaminhosPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeAuditoriaN2CriarCaminhosPO = new RegrasDeAuditoriaN2CriarCaminhosPO();
-  }
+	}
 
-  
-  @AfterClass
-  public void afterClass() {
+	@AfterClass
+	public void afterClass() {
 //	  driver.close();
-  }
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -47,6 +46,7 @@ public class RegrasDeAuditoriaN2CriarCaminhos  extends TestBaseCristhian{
 		acessarBREPO.acessarBRE();
 
 	}
+
 	@Test(priority = 2)
 	public void criar() {
 

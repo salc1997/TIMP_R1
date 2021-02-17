@@ -78,7 +78,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		actions.moveToElement(excluir).perform();		
-		actions.dragAndDropBy(excluir, 0, 250).perform();
+		actions.dragAndDropBy(excluir, 0, 320).perform();
 		
 		sleep(1000);
 		
@@ -133,7 +133,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		
 		sleep(2000);
 
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		

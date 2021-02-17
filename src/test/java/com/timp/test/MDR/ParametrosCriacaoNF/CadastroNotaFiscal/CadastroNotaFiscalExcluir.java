@@ -2,7 +2,7 @@ package com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -24,7 +24,7 @@ public class CadastroNotaFiscalExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();

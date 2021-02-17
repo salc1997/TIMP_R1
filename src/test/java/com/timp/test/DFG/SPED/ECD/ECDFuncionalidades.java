@@ -36,7 +36,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -50,120 +50,120 @@ public class ECDFuncionalidades extends TestBaseSteven{
 
 	}
 	
-//	@Test(priority = 2)
-//	public void criarECD() {
-//		
-//		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.criar();
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), Criar);
-//		}
-//
-//	}
-//
-//	@Test(priority = 3)
-//	public void EditarECD() {
-//		
-//		boolean sucesso = ecdFuncionalidadesPO.editar();
-//		
-//		assertTrue(sucesso, Editar);
-//
-//
-//	}
-//
-//	@Test(priority = 4)
-//	public void InformacaoECD() {
-//		
-//		boolean sucesso = ecdFuncionalidadesPO.informacao();
-//		
-//		assertTrue(sucesso, visualizaçar);
-//
-//
-//	}
-//
-//	@Test(priority = 5)
-//	public void CriarBlocoApuracao() {
-//		
-//		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.criarBlocoApuracao();
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), visualizaçar);
-//		}
-//
-//
-//	}
-//	
-//	@Test(priority = 6)
-//	public void EditarBlocoApuracao() {
-//		
-//		boolean sucesso = ecdFuncionalidadesPO.editarBlocoApuracao();
-//		
-//
-//		assertTrue(sucesso, Editar);
-//
-//
-//
-//	}
-//	
-//	
-//	@Test(priority = 7)
-//	public void InformacaoBlocoApuracao() {
-//		
-//		boolean sucesso = ecdFuncionalidadesPO.informacaoBlocoApuracao();
-//		
-//
-//		assertTrue(sucesso, Editar);
-//
-//
-//
-//	}
-//	
-//	
-//	@Test(priority = 8)
-//	public void visualizarBlocoApuracao() {
-//		
-//		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarBlocoApuracao();
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), Criar);
-//		}
-//
-//	}
-//	
-//	
-//	
-//	@Test(priority = 9)
-//	public void ExecucaoBlocoApuracao() {
-//		
-//		boolean sucesso = ecdFuncionalidadesPO.ExecucaoBlocosApuracao();
-//		
-//		assertTrue(sucesso, Criar);
-//
-//	}
-//	
-//	
-//	@Test(priority = 10)
-//	public void visualizarAtualizacoesBlocoApuracao() {
-//		
-//		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarActualizacoes();
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), Criar);
-//		}
-//
-//	}
-//	
-//	
-//	@Test(priority = 11)
-//	public void arquivosVerificar() {
-//		
-//		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.verificarArquivosRaiz();
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), Criar);
-//		}
-//
-//	}
+	@Test(priority = 2)
+	public void criarECD() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.criar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
+
+	@Test(priority = 3)
+	public void EditarECD() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.editar();
+		
+		assertTrue(sucesso, Editar);
+
+
+	}
+
+	@Test(priority = 4)
+	public void InformacaoECD() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.informacao();
+		
+		assertTrue(sucesso, visualizaçar);
+
+
+	}
+
+	@Test(priority = 5)
+	public void CriarBlocoApuracao() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.criarBlocoApuracao();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+
+
+	}
+	
+	@Test(priority = 6)
+	public void EditarBlocoApuracao() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.editarBlocoApuracao();
+		
+
+		assertTrue(sucesso, Editar);
+
+
+
+	}
+	
+	
+	@Test(priority = 7)
+	public void InformacaoBlocoApuracao() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.informacaoBlocoApuracao();
+		
+
+		assertTrue(sucesso, Editar);
+
+
+
+	}
+	
+	
+	@Test(priority = 8)
+	public void visualizarBlocoApuracao() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarBlocoApuracao();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
+	
+	
+	
+	@Test(priority = 9)
+	public void ExecucaoBlocoApuracao() {
+		
+		boolean sucesso = ecdFuncionalidadesPO.ExecucaoBlocosApuracao();
+		
+		assertTrue(sucesso, Criar);
+
+	}
+	
+	
+	@Test(priority = 10)
+	public void visualizarAtualizacoesBlocoApuracao() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarActualizacoes();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
+	
+	
+	@Test(priority = 11)
+	public void arquivosVerificar() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.verificarArquivosRaiz();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
 	
 		
 	

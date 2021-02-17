@@ -16,12 +16,12 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN2Detalhes extends TestBaseCristhian{
-	
+public class RegrasdeAuditoriaN2Detalhes extends TestBaseCristhian {
+
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2DetalhesPO regrasdeAuditoriaN2DetalhesPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
@@ -32,7 +32,7 @@ public class RegrasdeAuditoriaN2Detalhes extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -44,14 +44,14 @@ public class RegrasdeAuditoriaN2Detalhes extends TestBaseCristhian{
 	public void acessarBRE() {
 		acessarBREPO.acessarBRE();
 	}
-	
+
 	@Test(priority = 2)
 	public void detalhes() {
 		ArrayList<Boolean> sucesso = regrasdeAuditoriaN2DetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-		
+
 	}
 
 }

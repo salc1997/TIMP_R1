@@ -19,7 +19,7 @@ public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RelacionamentoEntreQuadrosExcluirMassaPO relacionamentoEntreQuadrosExcluirMassaPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

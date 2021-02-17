@@ -18,23 +18,22 @@ public class RegrasdeAuditoriaN2Estrutura extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2EstruturaPO regrasdeAuditoriaN2EstruturaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN2EstruturaPO = new RegrasdeAuditoriaN2EstruturaPO();
-  }
+	}
 
-  
-  @AfterClass
-  public void afterClass() {
-	  
-  }
+	@AfterClass
+	public void afterClass() {
 
-  @Test(priority = 0)
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -46,14 +45,13 @@ public class RegrasdeAuditoriaN2Estrutura extends TestBaseCristhian {
 		acessarBREPO.acessarBRE();
 
 	}
+
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = regrasdeAuditoriaN2EstruturaPO.editar();
 		assertTrue(sucesso, Editar);
 
-
 	}
-
 
 }

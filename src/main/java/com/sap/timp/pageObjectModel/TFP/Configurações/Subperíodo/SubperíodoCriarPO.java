@@ -75,7 +75,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"day\"]/div/div/div[2]")
 	public WebElement dia;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id=\"option-2\"]")
 	public WebElement diaOpc;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data inicial\"]")
@@ -140,12 +140,46 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		empresaOpc.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
 		
-		closeSelectTypeCheckbox(empresa);
+		if (tq1 == true) {
+			
+			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"3000\"]"));
+			
+			empresaOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(empresa);
+			
+		}else if (tc2 == true) {
+			
+			
+			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"6000\"]"));
+			
+		
+			empresaOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(empresa);
+			
+		}else {
+			
+			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"3000\"]"));
+			
+			empresaOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(empresa);
+		}
+		
+		
+	
 		
 		
 		tributo.click();
@@ -154,7 +188,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		if (tq1 == true) {
-			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-13\"]"));
+			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-17\"]"));
 			
 			tributoOpc.click();
 			sleep(2000);
@@ -189,24 +223,81 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		estadoOpc.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1 == true) {
+			WebElement estadoOpc = driver.findElement(By.xpath( "//div[@id=\"BA\"]"));
+			
+			estadoOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(estado);
+			
+		}else if (tc2 == true) {
+			
+			WebElement estadoOpc = driver.findElement(By.xpath( "//div[@id=\"RJ\"]"));
+			
+			estadoOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(estado);
 		
-		closeSelectTypeCheckbox(estado);
+		}else {
+			
+			WebElement estadoOpc = driver.findElement(By.xpath( "//div[@id=\"BA\"]"));
+			
+			estadoOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(estado);
+			
+		}
+
 		
 		Filial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		FilialOpc.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-	
-		closeSelectTypeCheckbox(Filial);
+
+		
+		if (tq1 == true) {
+			WebElement FilialOpc = driver.findElement(By.xpath( "//div[@id=\"3000-0031-BA\"]"));
+			
+			FilialOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Filial);
+			
+		}else if (tc2 == true) {
+			
+			WebElement FilialOpc = driver.findElement(By.xpath( "//div[@id=\"6000-0001-RJ\"]"));
+			
+			FilialOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Filial);
+		
+		}else {
+			
+			WebElement FilialOpc = driver.findElement(By.xpath( "//div[@id=\"3000-0031-BA\"]"));
+			
+			FilialOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			closeSelectTypeCheckbox(Filial);
+			
+		}
 				
 		periodicidade.click();
 		sleep(2000);
@@ -245,6 +336,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
 		tipoDiaOpc.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -255,17 +347,19 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+
 		diaOpc.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
 		
-		validadeDE.sendKeys("01/01/2014");
+		validadeDE.sendKeys("01/01/1975");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		validadeAte.sendKeys("31/12/2014");
+		validadeAte.sendKeys("31/12/1976");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -285,7 +379,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		
 		System.out.println(id);
 		sleep(2000);
-		idInserir4(id2);
+		idInserir("ConfiguraçõesSubperíodo",id2);
 		System.out.println(id2);
 		
 		

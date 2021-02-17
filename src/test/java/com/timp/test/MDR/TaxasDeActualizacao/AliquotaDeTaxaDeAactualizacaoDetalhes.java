@@ -28,7 +28,7 @@ public class AliquotaDeTaxaDeAactualizacaoDetalhes extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -54,6 +54,5 @@ public class AliquotaDeTaxaDeAactualizacaoDetalhes extends TestBaseCristhian {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
 	}
-
 
 }

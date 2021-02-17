@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassaPO;
 
-public class TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa extends TestBaseEliel{
- 
+public class TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassaPO tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassaPO;
@@ -54,5 +54,5 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa extends TestBas
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

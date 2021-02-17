@@ -19,27 +19,26 @@ public class FatoresDeRiscoCriar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FactoresDeRiscoCriarPO factoresDeRiscoCriarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		factoresDeRiscoCriarPO = new FactoresDeRiscoCriarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  
-	  driver.close();
-	  
-  }
+	@AfterClass
+	public void afterClass() {
 
+		driver.close();
+
+	}
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

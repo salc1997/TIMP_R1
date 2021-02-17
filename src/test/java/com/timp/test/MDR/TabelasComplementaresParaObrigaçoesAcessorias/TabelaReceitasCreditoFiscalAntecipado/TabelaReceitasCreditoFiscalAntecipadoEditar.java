@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditarPO;
-
+ 
 public class TabelaReceitasCreditoFiscalAntecipadoEditar extends TestBaseSteven {
 
 	LoginTC loginTC;

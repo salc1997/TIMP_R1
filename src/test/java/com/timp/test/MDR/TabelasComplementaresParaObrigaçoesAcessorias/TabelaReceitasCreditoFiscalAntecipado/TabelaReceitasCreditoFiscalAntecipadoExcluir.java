@@ -29,7 +29,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluir extends TestBaseSteven
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaReceitasCreditoFiscalAntecipadoExcluirPO = new TabelaReceitasCreditoFiscalAntecipadoExcluirPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

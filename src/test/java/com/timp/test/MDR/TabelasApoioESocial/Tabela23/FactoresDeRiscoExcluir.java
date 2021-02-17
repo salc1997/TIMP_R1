@@ -32,13 +32,12 @@ public class FactoresDeRiscoExcluir extends TestBaseCristhian {
 	@AfterClass
 	public void afterClass() {
 		driver.close();
-		
-	}
 
+	}
 
 	@Test()
 	public void excluirr() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

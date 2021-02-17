@@ -29,7 +29,7 @@ public class TabelaServicosExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaServicosExcluirPO = new TabelaServicosExcluirPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		driver.close();

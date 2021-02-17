@@ -2,6 +2,7 @@ package com.timp.test.TFP.Configurações.Período;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçõesPeríodoCriar extends TestBaseMassiel{
+public class ConfiguraçõesPeríodoCriar extends TestBaseKenssy{
 	  LoginTC loginTC;
 	  AcessarTFPPO acessarTFPPO;
 	  ConfiguraçõesPeríodoCriarPO  configuraçõesPeríodoCriarPO;
@@ -21,7 +22,7 @@ public class ConfiguraçõesPeríodoCriar extends TestBaseMassiel{
   @BeforeClass
   public void beforeClass() {
 	  
-	  driver = initializationM();
+	  driver = initializationKen();
 	  loginTC = new LoginTC();
 	  acessarTFPPO = new AcessarTFPPO();
 	  configuraçõesPeríodoCriarPO = new ConfiguraçõesPeríodoCriarPO();
@@ -29,21 +30,14 @@ public class ConfiguraçõesPeríodoCriar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
 	@Test(priority = 1)
-	public void TFPEntrar() {
-		 acessarTFPPO .acessarTFP();
-	}
-	
-	@Test(priority = 2)
 	public void criar() {
+		loginTC.login();
+		
+		acessarTFPPO .acessarTFP();
 		
 		boolean sucesso = configuraçõesPeríodoCriarPO.criar();
 

@@ -14,27 +14,26 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseCristhian{
+public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO regrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO = new RegrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO();
-  }
+	}
 
-  
-  @AfterClass
-  public void afterClass() {
-	  
-  }
+	@AfterClass
+	public void afterClass() {
 
-  @Test(priority = 0)
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -46,6 +45,7 @@ public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseCr
 		acessarBREPO.acessarBRE();
 
 	}
+
 	@Test(priority = 2)
 	public void lexeira() {
 
@@ -56,6 +56,5 @@ public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseCr
 		assertTrue(sucesso1, Criar);
 
 	}
-	
 
 }

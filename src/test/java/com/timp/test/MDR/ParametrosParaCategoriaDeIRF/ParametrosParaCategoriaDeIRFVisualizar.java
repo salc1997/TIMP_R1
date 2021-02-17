@@ -19,9 +19,7 @@ public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 //	ParametrosParaCategoriaDeIRFVisualizarPO parametrosParaCategoriaDeIRFVisualizarPO;
-  @Test
-  public void f() {
-  }
+
   @BeforeClass
   public void beforeClass() {
 	  	driver = initializationM();
@@ -32,19 +30,14 @@ public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void visualizar() {
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
 		
 //		parametrosParaCategoriaDeIRFVisualizarPO.Visualizar();
 		//ArrayList<Boolean> sucesso = regradeReaberturaVisualizarPO.visualizar();

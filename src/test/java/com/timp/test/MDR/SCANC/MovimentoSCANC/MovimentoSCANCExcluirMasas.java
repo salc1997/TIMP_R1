@@ -31,21 +31,14 @@ public class MovimentoSCANCExcluirMasas extends TestBaseMassiel{
   public void afterClass() {
   }
   
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
 
- 	}
-
- 	@Test(priority = 1)
- 	public void acessarMDR() {
-
- 		acessarMDRPO.acessarMDR();
-
- 	}
  	
- 	@Test(priority = 2)
+ 	@Test(priority = 1)
  	public void criar() {
+ 		
+ 		loginTC.login();
+		
+		acessarMDRPO.acessarMDR();
  		
  		boolean sucesso = movimentoSCANCExcluirMasasPO.criar();
  		assertTrue(sucesso, Criar);

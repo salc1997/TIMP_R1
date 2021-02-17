@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<test name="Automações MDR 1">
+
+
+		<classes>
+
+
+			<!-- Cadastros IRPJ/CSLL > Tabela de Apoio ECF -->
+			
+			<class 
+			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar"></class>
+			<class 
+			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute"></class>
+			
+			<!-- Eventos e-Social > S1070 - Processos Adm. / Judiciais -->
+			
+			<class 
+			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar"></class>
+			<class 
+			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar"></class>
+			<class 
+			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExcluir"></class>
+			
+			<!-- Eventos e-Social > S1070 - Processos Adm. / Judiciais -->
+			
+			<class 
+			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar"></class>
+			<class 
+			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar"></class>
+			<class 
+			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExcluir"></class>
+			
+		</classes>
+
+	</test> 
+</suite> 

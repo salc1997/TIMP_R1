@@ -21,7 +21,7 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -30,24 +30,16 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
 
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void criar() {
+		
+		loginTC.login();
+		
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = s1060AmbientesDeTrablhoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);

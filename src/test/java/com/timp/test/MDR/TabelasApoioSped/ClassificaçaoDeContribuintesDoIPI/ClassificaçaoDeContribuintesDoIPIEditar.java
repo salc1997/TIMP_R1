@@ -10,7 +10,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribu
 
 import org.testng.annotations.BeforeClass;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 

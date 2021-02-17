@@ -50,21 +50,15 @@ public class ReordenarColuna extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
+
+	@Test()
+	public void reordenar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
+		
 		acessarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 2)
-	public void reordenar() {
 
 		boolean sucesso = false;
 		sucesso = reordenarColunarPO.reordenar();

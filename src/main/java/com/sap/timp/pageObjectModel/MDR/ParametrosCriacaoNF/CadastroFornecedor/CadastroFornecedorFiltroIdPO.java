@@ -1,3 +1,4 @@
+
 package com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor;
 
 import java.util.ArrayList;
@@ -155,7 +156,7 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("CadastroFornecedor");
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -196,7 +197,8 @@ public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
 		System.out.println(sucesso);
 
 		return sucesso;
-
 	}
-
+		
 }
+
+

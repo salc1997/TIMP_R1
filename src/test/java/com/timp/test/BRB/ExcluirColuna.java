@@ -31,6 +31,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
 public class ExcluirColuna extends TestBaseSteven {
@@ -53,21 +54,14 @@ public class ExcluirColuna extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluirColunaDragNDrop() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = excluirColunaPO.DragNDrop();
@@ -77,13 +71,14 @@ public class ExcluirColuna extends TestBaseSteven {
 		}
 
 	}
+	
 
-	@Test(priority = 3)
+	@Test()
 	public void excluirColunaOpcao() {
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso = excluirColunaPO.ExcluirColuna();
-		System.out.println(sucesso + "Opção");
+		System.out.println(sucesso + "Coluna");
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The element wasn't removed");
 		}

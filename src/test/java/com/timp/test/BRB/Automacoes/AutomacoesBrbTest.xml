@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+
+
+	<test name="Automações BRB">
+		<classes>
+
+
+			<!-- Login -->
+			<class name="com.timp.test.ADM.LoginBRB"></class>
+
+
+			<!-- Acessar BRB -->
+			<class name="com.timp.test.BRB.AcessarBRB"></class>
+
+
+			<!-- Paginação -->
+			<class name="com.timp.test.BRB.Paginacao"></class>
+
+
+			<!-- Filtros Avançados -->
+			<class name="com.timp.test.BRB.FiltrosAvancados"></class>
+
+
+			<!-- Novo Relatório -->
+			<class name="com.timp.test.BRB.NovoRelatorio"></class>
+
+			
+			<!-- Adicionar Colunas -->
+			<class name="com.timp.test.BRB.AdicionarColunas"></class>
+			
+			
+			<!-- Público e Privado -->
+			<class name="com.timp.test.BRB.PublicoEPrivado"></class>
+
+
+			<!-- Excluir Coluna -->
+			<class name="com.timp.test.BRB.ExcluirColuna"></class>
+
+
+			<!-- Editar Relatório -->
+			<class name="com.timp.test.BRB.EditarRelatorio"></class>
+
+
+			<!-- Reordenar Coluna -->
+			<class name="com.timp.test.BRB.ReordenarColuna"></class>
+
+
+			<!-- Filtros No Relatório -->
+			<class name="com.timp.test.BRB.FiltrosRelatorio"></class>
+
+
+			<!-- Criar Com Cópia -->
+			<class name="com.timp.test.BRB.CriarComCopia"></class>
+
+
+			<!-- Ativar Correção -->
+			<class name="com.timp.test.BRB.AtivarCorrecao"></class>
+
+
+			<!-- Ativar Comentário -->
+			<class name="com.timp.test.BRB.AtivarComentario"></class>
+
+
+			<!-- Renomear Coluna -->
+			<class name="com.timp.test.BRB.RenomearColuna"></class>
+
+
+			<!-- Fórmula -->
+			<class name="com.timp.test.BRB.Formula"></class>
+
+
+			<!-- Agrupado Pelo Campo -->
+			<class name="com.timp.test.BRB.AgrupadoPeloCampo"></class>
+
+
+			<!-- Campo Output -->
+			<class name="com.timp.test.BRB.CampoOutput"></class>
+
+
+			<!-- Formatação E Variante -->
+			<class name="com.timp.test.BRB.FormatacaoEVariante"></class>
+
+
+			<!-- Filtro Nas Colunas -->
+			<class name="com.timp.test.BRB.FiltroColunas"></class>
+
+
+			<!-- Grupos Avançados -->
+			<class name="com.timp.test.BRB.GruposAvancados"></class>
+
+
+			<!-- Crescente e Decrescente -->
+			<class name="com.timp.test.BRB.CrescenteEDecrescente"></class>
+
+
+			<!-- Comentário Em Lista Suspensa -->
+			<class name="com.timp.test.BRB.ComentarioListaSuspensa"></class>
+
+
+			<!-- Comentário Libre -->
+			<class name="com.timp.test.BRB.ComentarioLibre"></class>
+
+
+			<!-- Visualizar -->
+			<class name="com.timp.test.BRB.Visualizar"></class>
+
+
+			<!-- Excluir Relatório -->
+			<class name="com.timp.test.BRB.ExcluirRelatorio"></class>
+
+
+
+
+		</classes>
+	</test> <!-- PruebaTest -->
+
+</suite> <!-- Suite -->

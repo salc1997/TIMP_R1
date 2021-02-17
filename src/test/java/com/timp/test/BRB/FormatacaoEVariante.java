@@ -1,6 +1,6 @@
 package com.timp.test.BRB;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -35,21 +35,14 @@ public class FormatacaoEVariante extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void formatacaoEVariante() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
@@ -70,7 +63,7 @@ public class FormatacaoEVariante extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "formatacaoEVariante")
 	public void excluirVariante() {
 
 		boolean sucesso = false;

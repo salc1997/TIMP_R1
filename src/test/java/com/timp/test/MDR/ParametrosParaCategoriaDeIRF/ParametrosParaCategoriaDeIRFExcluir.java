@@ -2,7 +2,7 @@ package com.timp.test.MDR.ParametrosParaCategoriaDeIRF;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,7 +27,7 @@ public class ParametrosParaCategoriaDeIRFExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -40,21 +40,12 @@ public class ParametrosParaCategoriaDeIRFExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
 
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void excluir() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = parametrosParaCategoriaDeIRFExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

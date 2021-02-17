@@ -17,23 +17,23 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN2Visualizar  extends TestBaseCristhian{
+public class RegrasdeAuditoriaN2Visualizar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2VisualizarPO regrasdeAuditoriaN2VisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	driver = initializationC();
-	loginTC = new LoginTC();
-	acessarBREPO = new AcessarBREPO();
-	regrasdeAuditoriaN2VisualizarPO = new RegrasdeAuditoriaN2VisualizarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarBREPO = new AcessarBREPO();
+		regrasdeAuditoriaN2VisualizarPO = new RegrasdeAuditoriaN2VisualizarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
+	@AfterClass
+	public void afterClass() {
+	}
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();

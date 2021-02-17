@@ -37,21 +37,12 @@ public class RegistroM620Excluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
+		
+		loginTC.login();
+		
+		acessarTCCPO.acessarTCC();
 
 		ArrayList<Boolean> sucesso = registroM620ExcluirPO.excluir();
 

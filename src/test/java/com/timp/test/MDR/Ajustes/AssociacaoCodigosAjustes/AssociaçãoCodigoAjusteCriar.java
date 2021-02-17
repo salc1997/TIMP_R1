@@ -2,6 +2,7 @@ package com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes;
 
 import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -16,9 +17,11 @@ public class AssociaçãoCodigoAjusteCriar extends TestBaseFernando{
   LoginTC loginTC;
   AcessarMDRPO accesarMDRPO;
   AssociaçãoCodigoAjusteCriarPO associaçãoCodigoAjusteCriarPO;
+ 
   
   @BeforeClass
   public void beforeClass() {
+
 	  driver = initializationF();
 	  loginTC = new LoginTC();
 	  accesarMDRPO = new AcessarMDRPO();

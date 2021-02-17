@@ -1,4 +1,4 @@
-package com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST;
+ package com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST;
 
 import org.testng.annotations.Test;
 
@@ -37,22 +37,16 @@ public class ParametrosParaLivroICMSSTDetalle extends TestBaseSteven{
 	  driver.close();
   }
 
-  @Test()
- 	public void login() {
- 		loginTC.login();
 
- 	}
 
  	@Test(priority = 1)
- 	public void acessarMDR() {
-
- 		acessarMDRPO.acessarMDR();
-
- 	}
-
- 	@Test(priority = 2)
  	public void detalhes() {
-
+ 		
+ 		loginTC.login();
+ 		
+ 		acessarMDRPO.acessarMDR();
+ 		
+ 		
  	      ArrayList<Boolean> sucesso = parametrosParaLivroICMSSTDetallesPO.Detalles();
 
  			for (int i = 0; i < sucesso.size(); i++) {

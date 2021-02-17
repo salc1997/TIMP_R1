@@ -2,7 +2,7 @@ package com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal;
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -20,7 +20,7 @@ public class StatusOcorrenciaFiscalEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusOcorrenciaFiscalEditarPO statusOcorrenciaFiscalEditarPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -34,19 +34,7 @@ public class StatusOcorrenciaFiscalEditar extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
 
 	@Test()
 	public void editar() {

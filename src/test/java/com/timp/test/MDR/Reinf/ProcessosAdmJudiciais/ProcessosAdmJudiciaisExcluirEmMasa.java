@@ -24,7 +24,7 @@ public class ProcessosAdmJudiciaisExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	ProcessosAdmJudiciaisExcluirEmMassaPO processosAdmJudiciaisExcluirEmMassaPO;
-	
+	 
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();

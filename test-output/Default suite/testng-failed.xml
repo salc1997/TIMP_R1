@@ -4,6 +4,7 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Automacoes.AutomaçõesMDR7">
         <methods>
           <include name="codigoFatosContabeisDetalhe"/>
@@ -56,66 +57,111 @@
         </methods>
       </class> <!-- com.timp.test.MDR.Automacoes.AutomaçõesMDR7 -->
 =======
+      <class name="com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades">
+        <methods>
+          <include name="editarConfiguracion"/>
+=======
+<<<<<<< HEAD
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> refs/heads/master
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa">
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa">
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="filtrosBiblioteca"/>
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="asignarValores"/>
+=======
+=======
+=======
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
+=======
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular">
+>>>>>>> refs/remotes/origin/Yessy
+        <methods>
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="excluir"/>
 =======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId">
-        <methods>
-          <include name="filtro"/>
 <<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="login"/>
->>>>>>> refs/remotes/origin/master
+=======
+<<<<<<< HEAD
+          <include name="adicionarColunas"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular">
+        <methods>
 =======
 >>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
-=======
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluirConfiguracao"/>
->>>>>>> refs/remotes/origin/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="afterClass"/>
+=======
+          <include name="editar"/>
+<<<<<<< HEAD
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa -->
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
 =======
-      </class> <!-- com.timp.test.TDK.Dashboard.Lixeira.LixeiraFiltroId -->
->>>>>>> refs/remotes/origin/master
+      </class> <!-- com.timp.test.BRB.AdicionarColunas -->
 =======
-      </class> <!-- com.timp.test.TDK.Execucoes.MinhasExecuções.MeusFavoritos.MeusFavoritosFiltroId -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM410.RegistroM410Criar">
-        <methods>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="criar"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM410.RegistroM410Criar -->
->>>>>>> refs/remotes/origin/Eliel
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades -->
 =======
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/remotes/origin/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular -->
+>>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular -->
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

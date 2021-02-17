@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<test name="Automações MDR 14">
+		<classes>
+			<!-- Preço de Transferencia > Parametros para TP -->	
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroID"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluirEnMasa"></class>
+			
+			<!-- Registro ECAC -->	
+			<class name="com.timp.test.MDR.RegistroECAC.RegistroECACCriar"></class>
+			<class name="com.timp.test.MDR.RegistroECAC.RegistroECACEditar"></class>
+			<class name="com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar"></class>
+			<class name="com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan"></class>
+			<class name="com.timp.test.MDR.RegistroECAC.RegistroECACExcluir"></class>
+			<class name="com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa"></class>
+			
+			<!-- Atividades Para Tributacao > Tipos De Servicos -->	
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditar"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhes"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosVisualizar"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosFiltroID"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluir"></class>
+			
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVV -->	
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVCriar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVDetalhes"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVFiltroID"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluir"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVExcluirEmMassa"></class>
+			
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVEX -->	
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXEditar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhes"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXFiltroID"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluir"></class>
+			
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PECEX -->	
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXFiltroID"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXExcluir"></class>
+			
+			<!-- Reinf > Processos Adm/Judiciais -->	
+			<class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar"></class>
+			<class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar"></class>
+			<class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes"></class>
+			<class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir"></class>
+			<class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirEmMasa"></class>
+			
+			<!-- Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra -->	
+			<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraEditar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraDetalhes"></class>
+			<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluir"></class>
+			<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraExcluirEmMassa"></class>
+			
+			<!-- Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CAP -->	
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPCriar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPDetalhes"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPFiltroID"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluirEmMassa"></class>
+			
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PVA -->	
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVACriar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAEditar"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVADetalhes"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAFiltroID"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluir"></class>
+			<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAExcluirEmMassa"></class>
+		</classes>
+	</test> <!-- PruebaTestNG -->
+</suite> <!-- Suite -->

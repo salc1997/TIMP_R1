@@ -26,23 +26,16 @@ public class S1060AmbientesDeTrablhoEditar extends TestBaseEliel {
 		s1060AmbientesDeTrablhoEditarPO = new S1060AmbientesDeTrablhoEditarPO();
 	}
 
-	
 	 @AfterClass public void afterClass() {
-		 driver.close(); 
-		 
+		 driver.close(); 		 
 	 }
-	 
 
-
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
-		
 		loginTC.login();
-		
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = s1060AmbientesDeTrablhoEditarPO.editar();
-
 		assertTrue(sucesso, Editar);
 
 	}

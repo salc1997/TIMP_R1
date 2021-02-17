@@ -397,8 +397,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos-------------------------");
 		tabelaServicosExcluirEmMassa = new TabelaServicosExcluirEmMassa();
 		tabelaServicosExcluirEmMassa.beforeClass();
-		tabelaServicosExcluirEmMassa.login();
-		tabelaServicosExcluirEmMassa.acessarMDR();
+//		tabelaServicosExcluirEmMassa.login();
+//		tabelaServicosExcluirEmMassa.acessarMDR();
 		tabelaServicosExcluirEmMassa.criar();
 		tabelaServicosExcluirEmMassa.afterClass();
 	}
@@ -409,8 +409,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros-------------------------");
 		tabelaLogradouroExcluirEmMassa = new TabelaLogradouroExcluirEmMassa();
 		tabelaLogradouroExcluirEmMassa.beforeClass();
-		tabelaLogradouroExcluirEmMassa.login();
-		tabelaLogradouroExcluirEmMassa.acessarMDR();
+		//tabelaLogradouroExcluirEmMassa.login();
+		//tabelaLogradouroExcluirEmMassa.acessarMDR();
 		tabelaLogradouroExcluirEmMassa.criar();
 		tabelaLogradouroExcluirEmMassa.afterClass();
 	}

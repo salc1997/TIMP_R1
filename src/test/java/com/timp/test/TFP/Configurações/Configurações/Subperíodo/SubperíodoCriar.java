@@ -1,11 +1,11 @@
-package com.timp.test.TFP.Configurações.Subperíodo;
+package com.timp.test.TFP.Configurações.Configurações.Subperíodo;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.Subperíodo.SubperíodoCriarPO;
+import com.sap.timp.pageObjectModel.TFP.Configurações.Configurações.Subperíodo.SubperíodoCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -28,23 +28,18 @@ public class SubperíodoCriar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void TFPEntrar() {
-		 acessarTFPPO .acessarTFP();
-	}
 	
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void criar() {
 		
+		loginTC.login();
 		
+		 acessarTFPPO .acessarTFP();
+		 
 		boolean sucesso = subperíodoCriarPO.criar();
 
 		// teste pra conferir se o resultado mostrado é igual

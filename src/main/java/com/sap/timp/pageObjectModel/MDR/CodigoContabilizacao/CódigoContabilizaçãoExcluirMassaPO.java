@@ -199,7 +199,8 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		sleep(2000);
+		sleep(5000);
+		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		

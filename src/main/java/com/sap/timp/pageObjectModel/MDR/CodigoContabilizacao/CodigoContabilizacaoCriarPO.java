@@ -157,7 +157,7 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		biblioteca.click();
 		sleep(6000);
 		
-		int visible = rows("//button[text()=\"Não\"]\")");
+		int visible = rows("//button[text()=\"Não\"]");
 		
 		if (visible>0) {
 			sleep(2000);

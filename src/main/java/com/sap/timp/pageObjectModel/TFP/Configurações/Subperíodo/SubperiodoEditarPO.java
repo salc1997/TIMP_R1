@@ -18,10 +18,16 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
 	public WebElement primeira;
 	
-	@FindBy(xpath = "//div[@id=\"day\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"day\"]/div/div/div[1]/input")
 	public WebElement dia;
 	
-	@FindBy(xpath="//span[text()=\"Gravar\"]")
+	@FindBy(xpath = "//div[@id=\"day\"]/div/div/div[2]")
+	public WebElement dia1;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement diaOpc;
+	
+	@FindBy(xpath="//button[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
@@ -64,7 +70,7 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		sleep(2000);
 		
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ConfiguraçõesSubperíodo");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -74,46 +80,39 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		
 		sleep(2000);
-		waitExpectElement(biblioteca);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		
+
+		waitExpectElement(dia1);
+		sleep(2000);
 		
 		String valor = dia.getAttribute("value");
 		
-		String enviar = "2";
 
-		dia.clear();
+		dia1.click();
 		sleep(2000);
-		dia.sendKeys(enviar);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+
+		diaOpc.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+
+
 		
-		String novoTexto = dia.getAttribute("value");
+		sleep(2000);
+		String enviar = dia.getAttribute("value");
 		
-		System.out.println(valor);
-		System.out.println(novoTexto);
-		boolean sucesso = novoTexto.equals(enviar);
-		System.out.println(sucesso);
-		
-		
+		sleep(2000);
 		
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		
-		biblioteca.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		
+
 		
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -125,26 +124,15 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		editar2.click();
 		
 		sleep(2000);
-		waitExpectElement(biblioteca);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-//		sleep(2000);
-//		waitExpectElement(datainicial);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
+		String novoTexto = dia.getAttribute("value");
 		
-		dia.clear();
-
-		sleep(2000);
-		dia.sendKeys(valor);
+		System.out.println(valor);
+		System.out.println(novoTexto);
+		boolean sucesso = novoTexto.equals(enviar);
+		System.out.println(sucesso);
 		
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		return sucesso;
 		

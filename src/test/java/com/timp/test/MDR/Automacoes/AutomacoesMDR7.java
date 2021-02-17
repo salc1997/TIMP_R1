@@ -487,8 +487,8 @@ public class AutomacoesMDR7 {
 		valoresParaMetodoPVEXExcluirMassa = new ValoresParaMetodoPVEXExcluirMassa();
 		valoresParaMetodoPVEXExcluirMassa.beforeClass();
 		valoresParaMetodoPVEXExcluirMassa.login();
-		valoresParaMetodoPVEXExcluirMassa.acessarMDR();
-		valoresParaMetodoPVEXExcluirMassa.criar();
+//		valoresParaMetodoPVEXExcluirMassa.acessarMDR();
+//		valoresParaMetodoPVEXExcluirMassa.criar();
 		valoresParaMetodoPVEXExcluirMassa.excluirMassa();
 		valoresParaMetodoPVEXExcluirMassa.afterClass();		
 		System.out.println("------------------- Preço de Transferência > Valores para Método / Valores para Método PVEX FIN -------------------------");
@@ -500,8 +500,8 @@ public class AutomacoesMDR7 {
 	public void valoresParaMetodoPECEXExcluirMassas() {		
 		valoresParaMetodoPECEXExcluirMassas = new ValoresParaMetodoPECEXExcluirMassas();
 		valoresParaMetodoPECEXExcluirMassas.beforeClass();
-		valoresParaMetodoPECEXExcluirMassas.login();
-		valoresParaMetodoPECEXExcluirMassas.acessarMDR();
+//		valoresParaMetodoPECEXExcluirMassas.login();
+//		valoresParaMetodoPECEXExcluirMassas.acessarMDR();
 		valoresParaMetodoPECEXExcluirMassas.criar();
 		valoresParaMetodoPECEXExcluirMassas.excluirMassa();
 		valoresParaMetodoPECEXExcluirMassas.afterClass();	

@@ -3,9 +3,9 @@ package com.timp.test.TFP.Configurações.Período;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKenssy;
-import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
+import com.sap.timp.pageObjectModel.TFP.Configurações.Período.ConfiguraçõesPeríodoEditarPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Período.ConfiguraçõesPeríodoVerPO;
 
 import org.testng.annotations.BeforeClass;
@@ -16,38 +16,35 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçõesPeríodoVer extends TestBaseKenssy{
-	
-  LoginTC loginTC;
-  AcessarTFPPO acessarTFPPO;
-  ConfiguraçõesPeríodoVerPO configuraçõesPeríodoVerPO;
+public class ConfiguraçõesPeríodoEditar extends TestBaseKenssy {
+	 LoginTC loginTC;
+	 AcessarTFPPO acessarTFPPO;
+	 ConfiguraçõesPeríodoEditarPO configuraçõesPeríodoEditarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  configuraçõesPeríodoVerPO = new ConfiguraçõesPeríodoVerPO();
-  }
+	 @BeforeClass
+	 public void beforeClass() {
+		  driver = initializationKen();
+		  loginTC = new LoginTC();
+		  acessarTFPPO = new AcessarTFPPO();
+		  configuraçõesPeríodoEditarPO = new ConfiguraçõesPeríodoEditarPO();  
+	 }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-	
+	 @AfterClass
+	 public void afterClass() {
+		  driver.close();
+	 }
+ 
 	@Test(priority = 1)
-	public void ver() {
+	public void editar() {
+		
 		loginTC.login();
 		
 		acessarTFPPO .acessarTFP();
 		
-		ArrayList<Boolean> sucesso = configuraçõesPeríodoVerPO.ver();
+		ArrayList<Boolean> sucesso = configuraçõesPeríodoEditarPO.editar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-
 	}
-
 }

@@ -6,9 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.base.TestBaseMassiel;
 
-public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
+public class ConfiguraçõesPeríodoCriarPO extends TestBaseKenssy{
 
 
 	@FindBy(xpath = "//span[text()=\"Configurações\"]")
@@ -60,7 +61,7 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Dia\"]")
 	public WebElement Dia;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id=\"option-2\"]")
 	public WebElement DiaOpc;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data inicial\"]")
@@ -118,17 +119,17 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresa.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		if (tq1 == true) {
 			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"3000\"]"));
 			
 			empresaOpc.click();
-			sleep(2000);
+			sleep(1000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(1000);
 			
 			closeSelectTypeCheckbox(empresa);
 			
@@ -138,9 +139,9 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"6000\"]"));
 			
 			empresaOpc.click();
-			sleep(2000);
+			sleep(1000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(1000);
 			
 			closeSelectTypeCheckbox(empresa);
 			
@@ -150,9 +151,9 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 			WebElement empresaOpc = driver.findElement(By.xpath( "//div[@id=\"3000\"]"));
 			
 			empresaOpc.click();
-			sleep(2000);
+			sleep(1000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(1000);
 			
 			closeSelectTypeCheckbox(empresa);
 			
@@ -162,9 +163,9 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 	
 		
 		Estado.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		if (tq1 == true) {
 			WebElement EstadoOPC = driver.findElement(By.xpath( "//div[@id=\"BA\"]"));
@@ -206,9 +207,9 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		
 		
 		Filial.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		if (tq1 == true) {
 			WebElement FilialOpc = driver.findElement(By.xpath( "//div[@id=\"3000-0031-BA\"]"));
@@ -250,50 +251,50 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		
 		
 		Abertura.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		AberturaOpc.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		
 		tipoDia.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		tipoDiaOpc.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		Dia.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		DiaOpc.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
-		validadeDE.sendKeys("01/01/2014");
-		sleep(2000);
+		validadeDE.sendKeys("01/01/1975");
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
-		validadeAte.sendKeys("31/12/2014");
-		sleep(2000);
+		validadeAte.sendKeys("31/12/1976");
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		criar.click();
-		sleep(2000);
+		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 		primeira.click();
 		sleep(2000);
@@ -305,7 +306,7 @@ public class ConfiguraçõesPeríodoCriarPO extends TestBaseMassiel{
 		
 		System.out.println(id);
 		sleep(2000);
-		idInserir4(id2);
+		idInserir("idConfiguracoesPeriodo",id2);
 		System.out.println(id2);
 		
 		

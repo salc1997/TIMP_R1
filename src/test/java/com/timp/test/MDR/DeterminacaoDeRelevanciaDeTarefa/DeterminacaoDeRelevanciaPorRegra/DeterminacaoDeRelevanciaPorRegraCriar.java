@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra;
 
 import static org.testng.Assert.assertTrue;
@@ -8,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriarPO;
@@ -33,55 +31,10 @@ public class DeterminacaoDeRelevanciaPorRegraCriar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-	@Test(priority = 1)
-	public void criar() {
-		
-		loginTC.login();
-		acessarMDRPO.acessarMDR();
-		
-		boolean sucesso = determinacaoDeRelevanciaPorRegraCriarPO.criar();
-		assertTrue(sucesso, semAcesso);
-
-	}
-}
-=======
-package com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra;
-
-import static org.testng.Assert.assertTrue;
-
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseCristhian;
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriarPO;
-
-public class DeterminacaoDeRelevanciaPorRegraCriar extends TestBaseCristhian {
-
-	LoginTC loginTC;
-	AcessarMDRPO acessarMDRPO;
-	DeterminacaoDeRelevanciaPorRegraCriarPO determinacaoDeRelevanciaPorRegraCriarPO;
-
-	@BeforeClass
-	public void beforeClass() {
-
-		driver = initializationC();
-		loginTC = new LoginTC();
-		acessarMDRPO = new AcessarMDRPO();
-		determinacaoDeRelevanciaPorRegraCriarPO = new DeterminacaoDeRelevanciaPorRegraCriarPO();
-	}
-
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
 
 	@Test()
 	public void criar() {
+		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
@@ -90,4 +43,3 @@ public class DeterminacaoDeRelevanciaPorRegraCriar extends TestBaseCristhian {
 
 	}
 }
->>>>>>> refs/heads/Fernando

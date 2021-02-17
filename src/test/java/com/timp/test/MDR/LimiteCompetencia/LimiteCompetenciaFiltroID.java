@@ -34,21 +34,13 @@ public class LimiteCompetenciaFiltroID extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
+	
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void filtro() {
+		
+		loginTC.login();
+		
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = limiteCompetenciaFiltroIDPO.filtro();
 		assertTrue(sucesso, Filtros);

@@ -215,7 +215,9 @@ public class RegistroECACExcluirMassaPO extends TestBaseFernando{
 		
 		// Se obtiene el ultimo registro de la tabla
 		String idUltimoRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir4(idUltimoRegistro);
+
+		idInserir("RegistroECACExcluirMassa",idUltimoRegistro);
+
 		
 		int idPenultimoRegistro= convertToInt(idUltimoRegistro) - 1; // Este seria el penultimo registro, equivalente al primer registro que se crea cone sta automatizacion
 		  
@@ -251,7 +253,9 @@ public class RegistroECACExcluirMassaPO extends TestBaseFernando{
 		sleep(2000); 
 		
 		//div[contains(@aria-label,"Id: 68")]/div[2]/label/span
-		int idUltimoRegistro = convertToInt(idObter4());
+
+		int idUltimoRegistro = convertToInt(idObter("RegistroECACExcluirMassa"));
+
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[contains(@aria-label,\"Id: "+idUltimoRegistro+"\")]/div[2]/label/span"));
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
 		

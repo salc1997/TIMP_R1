@@ -16,40 +16,32 @@ import org.testng.annotations.AfterClass;
 public class ValoresParaMetodoPVAExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	 ValoresParaMetodoPVAExcluirEmMassaPO valoresParaMetodoPVAExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  valoresParaMetodoPVAExcluirEmMassaPO = new ValoresParaMetodoPVAExcluirEmMassaPO();
-  }
+	ValoresParaMetodoPVAExcluirEmMassaPO valoresParaMetodoPVAExcluirEmMassaPO;
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		valoresParaMetodoPVAExcluirEmMassaPO = new ValoresParaMetodoPVAExcluirEmMassaPO();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void excluirEmMassa() {
-	boolean sucesso = valoresParaMetodoPVAExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
-	boolean sucesso2 = valoresParaMetodoPVAExcluirEmMassaPO.valoresParaMetodoPVAExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void excluirEmMassa() {
+		loginTC.login();
+		accesarMDR.acessarMDR();
+
+		boolean sucesso = valoresParaMetodoPVAExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+		boolean sucesso2 = valoresParaMetodoPVAExcluirEmMassaPO.valoresParaMetodoPVAExcluirEmMassa();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 
 }

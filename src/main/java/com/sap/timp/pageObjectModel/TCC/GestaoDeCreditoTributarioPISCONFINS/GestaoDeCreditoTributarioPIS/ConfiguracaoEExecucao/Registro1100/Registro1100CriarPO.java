@@ -190,6 +190,8 @@ public class Registro1100CriarPO extends TestBaseMassiel{
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		idInserir("GestionCreditoTributoRegistro1100",id2);
+
+		
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

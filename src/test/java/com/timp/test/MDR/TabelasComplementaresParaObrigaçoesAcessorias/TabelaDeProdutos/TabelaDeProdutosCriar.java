@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -32,22 +32,11 @@ public class TabelaDeProdutosCriar extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = tabelaDeProdutosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

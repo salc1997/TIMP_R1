@@ -253,6 +253,8 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 	//HASTA AQUI
 
 		
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		executar.click();
 		sleep(3000);

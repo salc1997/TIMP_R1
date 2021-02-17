@@ -21,11 +21,10 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBaseEli
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"1000\"]/div/label/span")
-	public WebElement opcaoempresa;
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcao;
 	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaoempresatq1tp1tc2;
+
 	
 	@FindBy(xpath = "//div[@id=\"utilization\"]/div/div/div[2]")
 	public WebElement utilizacao;
@@ -35,9 +34,7 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBaseEli
 	
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaofilial;
+
 	
 	@FindBy(xpath = "//div[@id=\"indDescCred\"]/div/div/div[2]")
 	public WebElement inddesccred;
@@ -48,11 +45,10 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBaseEli
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@id=\"05\"]/div/label/span")
-	public WebElement opcaotributo;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
 	public WebElement datainicial;
+	
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
@@ -123,34 +119,29 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBaseEli
 		//Primeiro Registro
 	
 		empresa.click();
-		
 		sleep(2000);
-		
-		opcaoempresatq1tp1tc2.click();
+		opcao.click();
 		sleep(2000);
-		
-		
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		
+
 		utilizacao.click();
 		
 		sleep(2000);
 		
 		opcaoutilizacao.click();
 		
+
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
-		
-		
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaofilial.click();
-		sleep(2000);
 		
 		inddesccred.click();;
 		
@@ -161,22 +152,16 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBaseEli
 		sleep(2000);
 		
 		tributo.click();
-		
 		sleep(2000);
-		
-		opcaotributo.click();
-		
+		opcao.click();
 		sleep(2000);
-		
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		
 		
 		String data=fechaActual();
 		datainicial.sendKeys(data);
-
+		
+		
 		novo.click();
 		sleep(2000);
 		waitExpectElement(sim);
@@ -187,34 +172,30 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBaseEli
 		sleep(3000);
 		
 		//Segundo Registro
-		
 		empresa.click();
-		
 		sleep(2000);
-		
-	    opcaoempresatq1tp1tc2.click();
+		opcao.click();
 		sleep(2000);
-		
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		
+
 		utilizacao.click();
 		
 		sleep(2000);
 		
 		opcaoutilizacao.click();
 		
+
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
-		
-		
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaofilial.click();
-		sleep(2000);
 		
 		inddesccred.click();;
 		
@@ -225,21 +206,14 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBaseEli
 		sleep(2000);
 		
 		tributo.click();
-		
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaotributo.click();
-		
-		sleep(2000);
-		
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		
-		sleep(2000);
-		
-	
+		data=fechaActual();
 		datainicial.sendKeys(data);
-		
 		
 		sleep(2000);
 		novo.click();

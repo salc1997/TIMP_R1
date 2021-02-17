@@ -123,7 +123,7 @@ import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoEditar;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoExcluir;
 import com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoVisualizar;
 import com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa;
-
+ 
 public class AutomacoesMDR6 extends TestBaseSteven{
 	
 	// Tabela 01 - Categorias De Trabalhadores

@@ -13,29 +13,27 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN2ValoresCalculados extends TestBaseCristhian{
-  
-	
+public class RegrasdeAuditoriaN2ValoresCalculados extends TestBaseCristhian {
+
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2ValoresCalculadosPO regrasdeAuditoriaN2ValoresCalculadosPO;
-	
-@BeforeClass
-public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN2ValoresCalculadosPO = new RegrasdeAuditoriaN2ValoresCalculadosPO();
-}
+	}
 
+	@AfterClass
+	public void afterClass() {
 
-@AfterClass
-public void afterClass() {
-	  
-}
+	}
 
-@Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -47,12 +45,12 @@ public void afterClass() {
 		acessarBREPO.acessarBRE();
 
 	}
+
 	@Test(priority = 2)
 	public void editar() {
 
 		boolean sucesso = regrasdeAuditoriaN2ValoresCalculadosPO.editar();
 		assertTrue(sucesso, Editar);
-
 
 	}
 

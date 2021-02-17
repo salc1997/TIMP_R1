@@ -35,21 +35,13 @@ public class RegistroDeExportaçaoFiltrosAvançados extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void filtros() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = registroDeExportaçaoFiltrosAvançadosPO.codigoempresa();
 		sleep(2000);

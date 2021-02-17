@@ -21,7 +21,7 @@ public class SGDPVisualizar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPVisualizarPO spdgVisualizarPO;
-
+ 
   @BeforeClass
   public void beforeClass() {
 	driver = initialization();

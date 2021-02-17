@@ -344,8 +344,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Substituicao Conta Estoque Cenarios Correcoes-------------------------");
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.beforeClass();
-		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.login();
-		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.acessarMDR();
+		/*mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.login();
+		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.acessarMDR();*/
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.criar();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.afterClass();
 	}
@@ -357,8 +357,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Contabil Correcao-------------------------");
 		mapeamentoContabilCorrecaoExcluirEmMassa = new MapeamentoContabilCorrecaoExcluirEmMassa();
 		mapeamentoContabilCorrecaoExcluirEmMassa.beforeClass();
-		mapeamentoContabilCorrecaoExcluirEmMassa.login();
-		mapeamentoContabilCorrecaoExcluirEmMassa.acessarMDR();
+		/*mapeamentoContabilCorrecaoExcluirEmMassa.login();
+		mapeamentoContabilCorrecaoExcluirEmMassa.acessarMDR();*/
 		mapeamentoContabilCorrecaoExcluirEmMassa.criar();
 		mapeamentoContabilCorrecaoExcluirEmMassa.afterClass();
 	}
@@ -370,8 +370,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Contabil -------------------------");
 		mapeamentoContabilExcluirEmMassa = new MapeamentoContabilExcluirEmMassa();
 		mapeamentoContabilExcluirEmMassa.beforeClass();
-		mapeamentoContabilExcluirEmMassa.login();
-		mapeamentoContabilExcluirEmMassa.acessarMDR();
+		/*mapeamentoContabilExcluirEmMassa.login();
+		mapeamentoContabilExcluirEmMassa.acessarMDR();*/
 		mapeamentoContabilExcluirEmMassa.criar();
 		mapeamentoContabilExcluirEmMassa.afterClass();
 	}
@@ -397,8 +397,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos-------------------------");
 		tabelaServicosExcluirEmMassa = new TabelaServicosExcluirEmMassa();
 		tabelaServicosExcluirEmMassa.beforeClass();
-		tabelaServicosExcluirEmMassa.login();
-		tabelaServicosExcluirEmMassa.acessarMDR();
+//		tabelaServicosExcluirEmMassa.login();
+//		tabelaServicosExcluirEmMassa.acessarMDR();
 		tabelaServicosExcluirEmMassa.criar();
 		tabelaServicosExcluirEmMassa.afterClass();
 	}
@@ -409,8 +409,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros-------------------------");
 		tabelaLogradouroExcluirEmMassa = new TabelaLogradouroExcluirEmMassa();
 		tabelaLogradouroExcluirEmMassa.beforeClass();
-		tabelaLogradouroExcluirEmMassa.login();
-		tabelaLogradouroExcluirEmMassa.acessarMDR();
+		//tabelaLogradouroExcluirEmMassa.login();
+		//tabelaLogradouroExcluirEmMassa.acessarMDR();
 		tabelaLogradouroExcluirEmMassa.criar();
 		tabelaLogradouroExcluirEmMassa.afterClass();
 	}

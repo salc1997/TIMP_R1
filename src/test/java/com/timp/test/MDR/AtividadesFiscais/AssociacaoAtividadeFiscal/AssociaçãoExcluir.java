@@ -37,7 +37,7 @@ public class AssociaçãoExcluir extends TestBaseCristhian {
 	public void excluir() {
 
 		loginTC.login();
-
+ 
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = associaçãoExcluirPO.excluir();

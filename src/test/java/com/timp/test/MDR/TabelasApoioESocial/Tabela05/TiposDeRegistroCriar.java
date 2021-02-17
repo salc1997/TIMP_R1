@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegi
 
 public class TiposDeRegistroCriar extends TestBaseEliel {
 
-	
+	 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeRegistroCriarPO tiposDeRegistroCriarPO;

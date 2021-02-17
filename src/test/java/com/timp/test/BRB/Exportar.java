@@ -1,6 +1,6 @@
 package com.timp.test.BRB;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -32,18 +32,6 @@ public class Exportar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
 
 	@Test(priority = 2)
 	public void exportarCSV() {
@@ -57,6 +45,11 @@ public class Exportar extends TestBaseSteven {
 
 	@Test(priority = 3)
 	public void exportarXLSX() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
 		boolean sucesso = false;
 		sucesso = exportarPO.exportaXSLX();

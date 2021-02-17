@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -31,24 +31,12 @@ public class TabelaDeCreditosPorObrigacaoExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = tabelaDeCreditosPorObrigacaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
 	}
 }

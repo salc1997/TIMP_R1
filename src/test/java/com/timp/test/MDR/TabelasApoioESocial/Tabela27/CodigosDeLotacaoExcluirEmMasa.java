@@ -29,7 +29,7 @@ public class CodigosDeLotacaoExcluirEmMasa extends TestBaseSteven {
 		  loginTC = new LoginTC();
 		  accesarMDR = new AcessarMDRPO();
 		  codigosDeLotacaoExcluirEmMasaPO = new CodigosDeLotacaoExcluirEmMasaPO();
-	}
+	} 
 
 	@AfterClass
 	public void afterClass() {

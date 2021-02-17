@@ -1,6 +1,6 @@
 package com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 

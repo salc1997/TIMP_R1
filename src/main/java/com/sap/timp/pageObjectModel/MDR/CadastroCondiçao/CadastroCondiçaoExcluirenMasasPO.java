@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.sap.timp.base.TestBaseMassiel;
 
@@ -20,7 +21,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[1]/span/span")
 	public WebElement campoconfiguracao;
 
-	//@FindBy(xpath = "//div[@class=\"element\" and @id=\"company\"]/div/div/div[2]")
+
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
 	public WebElement empresa;
 	
@@ -28,8 +29,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresa;
 	
-	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
-	//public WebElement opcaoempresatc2tq1tp1;
+
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresatc2tq1tp1;
@@ -50,11 +50,8 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaotributo;
-	
-	@FindBy(xpath = "//div[@class=\"list-option\"][7]/div/div/label/span")
-	public WebElement opcaotributo2;
 	
 	@FindBy(xpath ="//div[@class=\"element\" and @id=\"accessSeq\"]/div/div/div[2]")
 	public WebElement sequenciaacesso;
@@ -64,7 +61,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"validFrom\"]/div/div/input")
 	public WebElement vigenciade;
-	
+
 	@FindBy(xpath = "//span[text()=\"Salvar e Novo\"]")
 	public WebElement salvar;
 	
@@ -81,11 +78,9 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 	public WebElement camposestrutura;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Taxa\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Bairro da empresa\"]")
 	public WebElement atribuicao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Valor\"]")
-	public WebElement atribuicao2;
 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement setafinal;
@@ -152,11 +147,14 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 		sleep(2000);
 		if (tc2 == true || tp1 == true || tq1 == true) {
 			opcaoempresatc2tq1tp1.click();
+			sleep(2000);
 			opcaoempresatc2tq1tp1.sendKeys(Keys.ESCAPE);
 		}else {
 			opcaoempresa.click();
+			sleep(2000);
 			opcaoempresa.sendKeys(Keys.ESCAPE);
 		}
+		sleep(2000);
 		
 		attributeToBeXpath("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
@@ -164,6 +162,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 		uf.click();
 		sleep(2000);
 		opcaouf.click();
+		sleep(2000);
 		
 		opcaouf.sendKeys(Keys.ESCAPE);
 		
@@ -171,8 +170,9 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		filial.click();
-		
+		sleep(2000);
 		opcaofilial.click();
+		sleep(2000);
 		
 		opcaofilial.sendKeys(Keys.ESCAPE);
 		
@@ -181,20 +181,14 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 		tributo.click();
 		
 		opcaotributo.click();
-		opcaotributo.sendKeys(Keys.ESCAPE);
-		//if (tc2 == true ) {
-		//	opcaotributo2.click();
-		//	opcaotributo2.sendKeys(Keys.ESCAPE);
-		//}else {
-		//	opcaotributo.click();
-		//	opcaotributo.sendKeys(Keys.ESCAPE);
-		//	}
-		
-	
-		//attributeToBeXpath("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
-		//sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		opcaotributo.sendKeys(Keys.ESCAPE);
+		sleep(2000);
+
+
+		attributeToBeXpath("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
+		sleep(2000);
+		
 		sequenciaacesso.click();
 		
 		opcaosequenciaacesso.click();
@@ -211,22 +205,13 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 		atribuicao.sendKeys("teste");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		atribuicao2.sendKeys("testemassile");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
 		salvar.click();
 		sleep(2000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-	//	biblioteca.click();
-	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	//	sleep(2000);
-	
-	//	novocadastrocondicao.click();
-	//	attributeToBeXpath("//*[@id=\"company\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
-	//	sleep(2000);
+
 		
 		campoconfiguracao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -236,46 +221,43 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 		
 		if (tc2 == true || tp1 == true || tq1 == true) {
 			opcaoempresatc2tq1tp1.click();
+			sleep(200);
 			opcaoempresatc2tq1tp1.sendKeys(Keys.ESCAPE);
 		}else {
 			opcaoempresa.click();
+			sleep(200);
 			opcaoempresa.sendKeys(Keys.ESCAPE);
 		}
-		
+		sleep(200);
 		attributeToBeXpath("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		uf.click();
 		sleep(2000);
 		opcaouf.click();
-		
+		sleep(200);
 		opcaouf.sendKeys(Keys.ESCAPE);
+		
 		
 		attributeToBeXpath("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		filial.click();
-		
+		sleep(200);
 		opcaofilial.click();
-		
+		sleep(200);
 		opcaofilial.sendKeys(Keys.ESCAPE);
-		
 		sleep(2000);
 		
 		tributo.click();
-		
+		sleep(200);
 		opcaotributo.click();
+		sleep(200);
 		opcaotributo.sendKeys(Keys.ESCAPE);
-		//if (tc2 == true || tp1 == true  ) {
-			//opcaotributo2.click();
-			//opcaotributo2.sendKeys(Keys.ESCAPE);
-		//}else {
-			
-	//	}
+		sleep(200);
 		
-	
-	//	attributeToBeXpath("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
-	//	sleep(2000);
+		attributeToBeXpath("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
+		sleep(2000);
 		
 		sequenciaacesso.click();
 		
@@ -289,14 +271,12 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 				
 		camposestrutura.click();
 		sleep(2000);
-		waitExpectElement(atribuicao);
+
 		atribuicao.sendKeys("teste");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
 		
-		atribuicao2.sendKeys("testemassile");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
 		
 		gravar.click();
 		sleep(2000);

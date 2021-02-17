@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais;
+ package com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -294,7 +294,10 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBaseSteven{
 		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		
-		idInserir3(id2);
+
+
+		idInserir("ProcessosAdmJudiciaisExcluirEmMassa",id2);
+
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(id2);
 		int id3D = Integer.valueOf(id3);

@@ -31,18 +31,14 @@ public class ParâmetrosParaEnvioDeMensagensExcluir extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
+	@Test(priority = 1 )
 	public void excluir() {
+		
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
+		
 		boolean sucesso = parâmetrosParaEnvioDeMensagensExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

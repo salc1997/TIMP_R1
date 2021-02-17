@@ -1,6 +1,6 @@
 package com.timp.test.MDR.Empresas;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -33,22 +33,14 @@ public class EmpresaEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
 
 	@Test(priority = 1)
-	public void acessarMDR() {
+	public void editar() {
+		
+		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void editar() {
-
+		
 		boolean sucesso = empresasEditarPO.editar();
 
 		assertTrue(sucesso, Editar);

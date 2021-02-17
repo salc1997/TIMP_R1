@@ -136,7 +136,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO N2 - 1");
+		nome.sendKeys("TESTE AUTOMATIZADO N2 RODADAS - 1");
 		sleep(2000);
 		
 		
@@ -216,7 +216,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE AUTOMATIZADO N2 - 2");
+		nome.sendKeys("TESTE AUTOMATIZADO N2 RODADAS - 2");
 		sleep(1000);
 		
 

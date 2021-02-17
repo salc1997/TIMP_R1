@@ -35,21 +35,13 @@ public class DetalheVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
 
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void visualizar() {
+		
+		loginTC.login();
+		
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = detalheVisualizarPO.visualizar();
 
@@ -58,6 +50,6 @@ public class DetalheVisualizar extends TestBaseSteven {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-		// assertEquals(sucesso, "edit", EmpresaVisualizar);
+		
 	}
 }

@@ -33,18 +33,15 @@ public class  LimiteCompetenciaFiltrosAvansados extends TestBaseMassiel{
 	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
+ 
+
   @Test(priority = 1)
-  public void ingresarMDR() {
-	  accesarMDRPO.acessarMDR();
-  }
-
-  @Test(priority = 2)
   public void Filtro() {
-
+	  
+	  loginTC.login();
+	  
+	  accesarMDRPO.acessarMDR();
+	  
 	  limiteCompetenciaFiltrosAvansadosPO.Filtros();
 	  limiteCompetenciaFiltrosAvansadosPO.Filtros1();
 	  limiteCompetenciaFiltrosAvansadosPO.Filtros2();

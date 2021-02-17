@@ -20,33 +20,23 @@ public class TabelaServicosVisualizar extends TestBaseMassiel{
 	AcessarMDRPO acessarMDRPO;
 	TabelaServicosVisualizarPO tabelaServicosVisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaServicosVisualizarPO = new TabelaServicosVisualizarPO();
-  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = tabelaServicosVisualizarPO.visualizar();
 

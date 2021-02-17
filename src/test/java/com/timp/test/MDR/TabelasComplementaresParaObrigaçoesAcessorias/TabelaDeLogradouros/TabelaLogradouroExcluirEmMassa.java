@@ -30,19 +30,13 @@ public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
 	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void acessarMDR() {
-	 accesarMDR.acessarMDR();
 
-  }
   
-  @Test(priority = 2)
+  @Test()
   public void criar() {
+	  
+	  loginTC.login();
+	  accesarMDR.acessarMDR();
 	
 	  boolean sucesso = tabelaLogradourosExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TFP.Configurações.StatusPeriodo;
+package com.sap.timp.pageObjectModel.TFP.Configurações.Status.Periodo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

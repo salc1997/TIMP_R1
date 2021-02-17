@@ -198,8 +198,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 17 - Descricao De Nat De Lesão-------------------------");
 		descricaoDeNatDeLesãoExcluirEmMassa = new DescricaoDeNatDeLesãoExcluirEmMassa();
 		descricaoDeNatDeLesãoExcluirEmMassa.beforeClass();
-		descricaoDeNatDeLesãoExcluirEmMassa.login();
-		descricaoDeNatDeLesãoExcluirEmMassa.acessarMDR();
 		descricaoDeNatDeLesãoExcluirEmMassa.criar();
 		descricaoDeNatDeLesãoExcluirEmMassa.afterClass();
 
@@ -212,8 +210,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 08 - Classificacao Tributaria-------------------------");
 		classificacaoTributariaCriar = new ClassificacaoTributariaCriar();
 		classificacaoTributariaCriar.beforeClass();
-		classificacaoTributariaCriar.login();
-		classificacaoTributariaCriar.acessarMDR();
 		classificacaoTributariaCriar.criar();
 		classificacaoTributariaCriar.afterClass();
 
@@ -224,8 +220,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void classificacaoTributariaEditar() {
 		classificacaoTributariaEditar = new ClassificacaoTributariaEditar();
 		classificacaoTributariaEditar.beforeClass();
-		classificacaoTributariaEditar.login();
-		classificacaoTributariaEditar.acessarMDR();
 		classificacaoTributariaEditar.editar();
 		classificacaoTributariaEditar.afterClass();
 
@@ -235,8 +229,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void classificacaoTributariaVisualizar() {
 		classificacaoTributariaVisualizar = new ClassificacaoTributariaVisualizar();
 		classificacaoTributariaVisualizar.beforeClass();
-		classificacaoTributariaVisualizar.login();
-		classificacaoTributariaVisualizar.acessarMDR();
 		classificacaoTributariaVisualizar.Visualizar();
 		classificacaoTributariaVisualizar.afterClass();
 
@@ -246,8 +238,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void classificacaoTributariaExcluirMassa() {
 		classificacaoTributariaExcluirMassa = new ClassificacaoTributariaExcluirMassa();
 		classificacaoTributariaExcluirMassa.beforeClass();
-		classificacaoTributariaExcluirMassa.login();
-		classificacaoTributariaExcluirMassa.acessarMDR();
 		classificacaoTributariaExcluirMassa.criar();
 		classificacaoTributariaExcluirMassa.afterClass();
 
@@ -257,8 +247,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void classificacaoTributariaExcluir() {
 		classificacaoTributariaExcluir = new ClassificacaoTributariaExcluir();
 		classificacaoTributariaExcluir.beforeClass();
-		classificacaoTributariaExcluir.login();
-		classificacaoTributariaExcluir.acessarMDR();
 		classificacaoTributariaExcluir.excluir();
 		classificacaoTributariaExcluir.afterClass();
 		
@@ -274,8 +262,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 08 - Classificacao Tributaria-------------------------");
 		compatibilidadeEntreLotaçãoExcluirEmMassa = new CompatibilidadeEntreLotaçãoExcluirEmMassa();
 		compatibilidadeEntreLotaçãoExcluirEmMassa.beforeClass();
-		compatibilidadeEntreLotaçãoExcluirEmMassa.login();
-		compatibilidadeEntreLotaçãoExcluirEmMassa.acessarMDR();
 		compatibilidadeEntreLotaçãoExcluirEmMassa.criar();
 		compatibilidadeEntreLotaçãoExcluirEmMassa.afterClass();
 
@@ -286,8 +272,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 13  -  Parte Do Corpo Atingida-------------------------");
 		parteDoCorpoAtingidaExcluirEmMassa = new ParteDoCorpoAtingidaExcluirEmMassa();
 		parteDoCorpoAtingidaExcluirEmMassa.beforeClass();
-		parteDoCorpoAtingidaExcluirEmMassa.login();
-		parteDoCorpoAtingidaExcluirEmMassa.acessarMDR();
 		parteDoCorpoAtingidaExcluirEmMassa.criar();
 		parteDoCorpoAtingidaExcluirEmMassa.afterClass();
 
@@ -300,8 +284,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 14  - Agente Causador De Acidente -------------------------");
 		agenteCausadorDeAcidenteExcluirEmMassa = new AgenteCausadorDeAcidenteExcluirEmMassa();
 		agenteCausadorDeAcidenteExcluirEmMassa.beforeClass();
-		agenteCausadorDeAcidenteExcluirEmMassa.login();
-		agenteCausadorDeAcidenteExcluirEmMassa.acessarMDR();
 		agenteCausadorDeAcidenteExcluirEmMassa.criar();
 		agenteCausadorDeAcidenteExcluirEmMassa.afterClass();
 
@@ -318,8 +300,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Rateio De Consorcio-------------------------");
 		rateioDeConsorcioPesquisaPorID = new RateioDeConsorcioPesquisaPorID();
 		rateioDeConsorcioPesquisaPorID.beforeClass();
-		rateioDeConsorcioPesquisaPorID.login();
-		rateioDeConsorcioPesquisaPorID.acessarMDR();
 		rateioDeConsorcioPesquisaPorID.filtro();
 		rateioDeConsorcioPesquisaPorID.afterClass();
 
@@ -332,8 +312,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Oficializacao Livros-------------------------");
 		parametrosOficializacaoLivrosFiltroPorID = new ParametrosOficializacaoLivrosFiltroPorID();
 		parametrosOficializacaoLivrosFiltroPorID.beforeClass();
-		parametrosOficializacaoLivrosFiltroPorID.login();
-		parametrosOficializacaoLivrosFiltroPorID.acessarMDR();
 		parametrosOficializacaoLivrosFiltroPorID.filtro();
 		parametrosOficializacaoLivrosFiltroPorID.afterClass();
 	}
@@ -344,8 +322,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Substituicao Conta Estoque Cenarios Correcoes-------------------------");
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.beforeClass();
-		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.login();
-		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.acessarMDR();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.criar();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.afterClass();
 	}
@@ -357,8 +333,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Contabil Correcao-------------------------");
 		mapeamentoContabilCorrecaoExcluirEmMassa = new MapeamentoContabilCorrecaoExcluirEmMassa();
 		mapeamentoContabilCorrecaoExcluirEmMassa.beforeClass();
-		mapeamentoContabilCorrecaoExcluirEmMassa.login();
-		mapeamentoContabilCorrecaoExcluirEmMassa.acessarMDR();
 		mapeamentoContabilCorrecaoExcluirEmMassa.criar();
 		mapeamentoContabilCorrecaoExcluirEmMassa.afterClass();
 	}
@@ -370,8 +344,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Contabil -------------------------");
 		mapeamentoContabilExcluirEmMassa = new MapeamentoContabilExcluirEmMassa();
 		mapeamentoContabilExcluirEmMassa.beforeClass();
-		mapeamentoContabilExcluirEmMassa.login();
-		mapeamentoContabilExcluirEmMassa.acessarMDR();
 		mapeamentoContabilExcluirEmMassa.criar();
 		mapeamentoContabilExcluirEmMassa.afterClass();
 	}
@@ -384,8 +356,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Registro RF-------------------------");
 		registroRFFiltroPorID = new RegistroRFFiltroPorID();
 		registroRFFiltroPorID.beforeClass();
-		registroRFFiltroPorID.login();
-		registroRFFiltroPorID.acessarMDR();
 		registroRFFiltroPorID.filtro();
 		registroRFFiltroPorID.afterClass();
 	}
@@ -397,8 +367,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos-------------------------");
 		tabelaServicosExcluirEmMassa = new TabelaServicosExcluirEmMassa();
 		tabelaServicosExcluirEmMassa.beforeClass();
-		tabelaServicosExcluirEmMassa.login();
-		tabelaServicosExcluirEmMassa.acessarMDR();
 		tabelaServicosExcluirEmMassa.criar();
 		tabelaServicosExcluirEmMassa.afterClass();
 	}
@@ -409,8 +377,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros-------------------------");
 		tabelaLogradouroExcluirEmMassa = new TabelaLogradouroExcluirEmMassa();
 		tabelaLogradouroExcluirEmMassa.beforeClass();
-		tabelaLogradouroExcluirEmMassa.login();
-		tabelaLogradouroExcluirEmMassa.acessarMDR();
 		tabelaLogradouroExcluirEmMassa.criar();
 		tabelaLogradouroExcluirEmMassa.afterClass();
 	}
@@ -422,8 +388,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Valor Adicionado > Município-------------------------");
 		municipioExcluirEmMassa = new MunicipioExcluirEmMassa();
 		municipioExcluirEmMassa.beforeClass();
-		municipioExcluirEmMassa.login();
-		municipioExcluirEmMassa.acessarMDR();
 		municipioExcluirEmMassa.criar();
 		municipioExcluirEmMassa.afterClass();
 	}
@@ -442,8 +406,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv  > Registro RVS-------------------------");
 		registroRVSExcluirEmMassa = new RegistroRVSExcluirEmMassa();
 		registroRVSExcluirEmMassa.beforeClass();
-		registroRVSExcluirEmMassa.login();
-		registroRVSExcluirEmMassa.acessarMDR();
 		registroRVSExcluirEmMassa.criar();
 		registroRVSExcluirEmMassa.afterClass();
 	}
@@ -454,8 +416,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Diagnostico De Processos-------------------------");
 		diagnosticoDeProcessosCriar = new DiagnosticoDeProcessosCriar();
 		diagnosticoDeProcessosCriar.beforeClass();
-		diagnosticoDeProcessosCriar.login();
-		diagnosticoDeProcessosCriar.acessarMDR();
 		diagnosticoDeProcessosCriar.criar();
 		diagnosticoDeProcessosCriar.afterClass();
 	}
@@ -464,8 +424,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void diagnosticoDeProcessosEditar() {
 		diagnosticoDeProcessosEditar = new DiagnosticoDeProcessosEditar();
 		diagnosticoDeProcessosEditar.beforeClass();
-		diagnosticoDeProcessosEditar.login();
-		diagnosticoDeProcessosEditar.acessarMDR();
 		diagnosticoDeProcessosEditar.editar();
 		diagnosticoDeProcessosEditar.afterClass();
 	}
@@ -475,8 +433,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void diagnosticoDeProcessosVisualizar() {
 		diagnosticoDeProcessosVisualizar = new DiagnosticoDeProcessosVisualizar();
 		diagnosticoDeProcessosVisualizar.beforeClass();
-		diagnosticoDeProcessosVisualizar.login();
-		diagnosticoDeProcessosVisualizar.acessarMDR();
 		diagnosticoDeProcessosVisualizar.Visualizar();
 		diagnosticoDeProcessosVisualizar.afterClass();
 	}
@@ -485,8 +441,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void diagnosticoDeProcessosExcluir() {
 		diagnosticoDeProcessosExcluir = new DiagnosticoDeProcessosExcluir();
 		diagnosticoDeProcessosExcluir.beforeClass();
-		diagnosticoDeProcessosExcluir.login();
-		diagnosticoDeProcessosExcluir.acessarMDR();
 		diagnosticoDeProcessosExcluir.excluir();
 		diagnosticoDeProcessosExcluir.afterClass();
 	}
@@ -495,8 +449,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void diagnosticoDeProcessosExcluirEmMassa() {
 		diagnosticoDeProcessosExcluirEmMassa = new DiagnosticoDeProcessosExcluirEmMassa();
 		diagnosticoDeProcessosExcluirEmMassa.beforeClass();
-		diagnosticoDeProcessosExcluirEmMassa.login();
-		diagnosticoDeProcessosExcluirEmMassa.acessarMDR();
 		diagnosticoDeProcessosExcluirEmMassa.criar();
 		diagnosticoDeProcessosExcluirEmMassa.afterClass();
 		System.out.println("-------------------Tabela De Apoio E Social > Diagnostico De Processos Fim-------------------------");
@@ -509,8 +461,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Registro RF-------------------------");
 		registroRFExcluirEmMassa = new RegistroRFExcluirEmMassa();
 		registroRFExcluirEmMassa.beforeClass();
-		registroRFExcluirEmMassa.login();
-		registroRFExcluirEmMassa.acessarMDR();
 		registroRFExcluirEmMassa.criar();
 		registroRFExcluirEmMassa.afterClass();
 	}
@@ -521,8 +471,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	-------------------------");
 		codigoDeTreinamentoESimulacoesDeExerciciosCriar = new CodigoDeTreinamentoESimulacoesDeExerciciosCriar();
 		codigoDeTreinamentoESimulacoesDeExerciciosCriar.beforeClass();
-		codigoDeTreinamentoESimulacoesDeExerciciosCriar.login();
-		codigoDeTreinamentoESimulacoesDeExerciciosCriar.acessarMDR();
 		codigoDeTreinamentoESimulacoesDeExerciciosCriar.criar();
 		codigoDeTreinamentoESimulacoesDeExerciciosCriar.afterClass();
 	}
@@ -531,8 +479,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void codigoDeTreinamentoESimulacoesDeExerciciosEditar() {
 		codigoDeTreinamentoESimulacoesDeExerciciosEditar = new CodigoDeTreinamentoESimulacoesDeExerciciosEditar();
 		codigoDeTreinamentoESimulacoesDeExerciciosEditar.beforeClass();
-		codigoDeTreinamentoESimulacoesDeExerciciosEditar.login();
-		codigoDeTreinamentoESimulacoesDeExerciciosEditar.acessarMDR();
 		codigoDeTreinamentoESimulacoesDeExerciciosEditar.editar();
 		codigoDeTreinamentoESimulacoesDeExerciciosEditar.afterClass();
 	}
@@ -541,8 +487,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void codigoDeTreinamentoESimulacoesDeExerciciosVisualizar() {
 		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar= new CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar();
 		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.beforeClass();
-		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.login();
-		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.acessarMDR();
+
 		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.Visualizar();
 		codigoDeTreinamentoESimulacoesDeExerciciosVisualizar.afterClass();
 	}
@@ -552,8 +497,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void codigoDeTreinamentoESimulacoesDeExerciciosExcluir() {
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluir= new CodigoDeTreinamentoESimulacoesDeExerciciosExcluir();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluir.beforeClass();
-		codigoDeTreinamentoESimulacoesDeExerciciosExcluir.login();
-		codigoDeTreinamentoESimulacoesDeExerciciosExcluir.acessarMDR();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluir.excluir();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluir.afterClass();
 	}
@@ -562,8 +505,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa() {
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa= new CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.beforeClass();
-		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.login();
-		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.acessarMDR();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.criar();
 		codigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa.afterClass();
 		System.out.println("-------------------Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	Fim-------------------------");
@@ -578,8 +519,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela Apoio SPED > Tabela Codigo Da Situação Tributária-------------------------");
 		tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa = new TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa();
 		tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.beforeClass();
-		tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.login();
-		tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.acessarMDR();
 		tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.criar();
 		tabelaCodigoDaSituaçãoTributáriaExcluirEmMassa.afterClass();
 	}
@@ -591,8 +530,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela Apoio SPED > Codigo Tipo Credito-------------------------");
 		codigoTipoCreditoExcluirEmMassa = new CodigoTipoCreditoExcluirEmMassa();
 		codigoTipoCreditoExcluirEmMassa.beforeClass();
-		codigoTipoCreditoExcluirEmMassa.login();
-		codigoTipoCreditoExcluirEmMassa.acessarMDR();
 		codigoTipoCreditoExcluirEmMassa.criar();
 		codigoTipoCreditoExcluirEmMassa.afterClass();
 	}
@@ -604,8 +541,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela Apoio SPED > Observacoes do Documento Fiscal Registro 0460-------------------------");
 		observaçõesdoDocumentoFiscalExcluirEmMassa = new ObservaçõesdoDocumentoFiscalExcluirEmMassa();
 		observaçõesdoDocumentoFiscalExcluirEmMassa.beforeClass();
-		observaçõesdoDocumentoFiscalExcluirEmMassa.login();
-		observaçõesdoDocumentoFiscalExcluirEmMassa.acessarMDR();
 		observaçõesdoDocumentoFiscalExcluirEmMassa.criar();
 		observaçõesdoDocumentoFiscalExcluirEmMassa.afterClass();
 	}
@@ -617,8 +552,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela Apoio SPED > Tipos De Utilização Dos Creditos Fiscais-------------------------");
 		tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa = new TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa();
 		tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.beforeClass();
-		tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.login();
-		tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.acessarMDR();
 		tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.criar();
 		tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa.afterClass();
 	}
@@ -630,8 +563,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------TabelaApoioSPED > De Para Livro Apuracao X Sped Fiscal-------------------------");
 		deParaLivroApuracaoXSpedFiscalExcluirEmMassa = new DeParaLivroApuracaoXSpedFiscalExcluirEmMassa();
 		deParaLivroApuracaoXSpedFiscalExcluirEmMassa.beforeClass();
-		deParaLivroApuracaoXSpedFiscalExcluirEmMassa.login();
-		deParaLivroApuracaoXSpedFiscalExcluirEmMassa.acessarMDR();
 		deParaLivroApuracaoXSpedFiscalExcluirEmMassa.criar();
 		deParaLivroApuracaoXSpedFiscalExcluirEmMassa.afterClass();
 	}
@@ -642,8 +573,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela Apoio SPED > Codigos Das Obrigacoes De ICMS a Recolher-------------------------");
 		codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa = new CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa();
 		codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.beforeClass();
-		codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.login();
-		codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.acessarMDR();
 		codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.criar();
 		codigosDasObrigacoesDeICMSaRecolherExcluirEmMassa.afterClass();
 	}
@@ -655,8 +584,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Atividades Para tributacao >Atividade De Tributacao X Fornecedor-------------------------");
 		atividadeDeTributacaoXFornecedorCriar = new AtividadeDeTributacaoXFornecedorCriar();
 		atividadeDeTributacaoXFornecedorCriar.beforeClass();
-		atividadeDeTributacaoXFornecedorCriar.login();
-		atividadeDeTributacaoXFornecedorCriar.acessarMDR();
 		atividadeDeTributacaoXFornecedorCriar.criar();
 		atividadeDeTributacaoXFornecedorCriar.afterClass();
 	}
@@ -665,8 +592,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void atividadeDeTributacaoXFornecedorFiltroID() {
 		atividadeDeTributacaoXFornecedorFiltroID = new AtividadeDeTributacaoXFornecedorFiltroID();
 		atividadeDeTributacaoXFornecedorFiltroID.beforeClass();
-		atividadeDeTributacaoXFornecedorFiltroID.login();
-		atividadeDeTributacaoXFornecedorFiltroID.acessarMDR();
 		atividadeDeTributacaoXFornecedorFiltroID.filtro();
 		atividadeDeTributacaoXFornecedorFiltroID.afterClass();
 	}
@@ -675,8 +600,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void atividadeDeTributacaoXFornecedorDetalhes() {
 		atividadeDeTributacaoXFornecedorDetalhes = new AtividadeDeTributacaoXFornecedorDetalhes();
 		atividadeDeTributacaoXFornecedorDetalhes.beforeClass();
-		atividadeDeTributacaoXFornecedorDetalhes.login();
-		atividadeDeTributacaoXFornecedorDetalhes.acessarMDR();
 		atividadeDeTributacaoXFornecedorDetalhes.Detalhes();
 		atividadeDeTributacaoXFornecedorDetalhes.afterClass();
 	}
@@ -685,8 +608,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void atividadeDeTributacaoXFornecedorVisualizar() {
 		atividadeDeTributacaoXFornecedorVisualizar = new AtividadeDeTributacaoXFornecedorVisualizar();
 		atividadeDeTributacaoXFornecedorVisualizar.beforeClass();
-		atividadeDeTributacaoXFornecedorVisualizar.login();
-		atividadeDeTributacaoXFornecedorVisualizar.acessarMDR();
 		atividadeDeTributacaoXFornecedorVisualizar.Visualizar();
 		atividadeDeTributacaoXFornecedorVisualizar.afterClass();
 	}
@@ -695,8 +616,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void atividadeDeTributacaoXFornecedorEditar() {
 		atividadeDeTributacaoXFornecedorEditar = new AtividadeDeTributacaoXFornecedorEditar();
 		atividadeDeTributacaoXFornecedorEditar.beforeClass();
-		atividadeDeTributacaoXFornecedorEditar.login();
-		atividadeDeTributacaoXFornecedorEditar.acessarMDR();
 		atividadeDeTributacaoXFornecedorEditar.editar();
 		atividadeDeTributacaoXFornecedorEditar.afterClass();
 	}
@@ -708,8 +627,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void atividadeDeTributacaoXFornecedorExcluir() {
 		atividadeDeTributacaoXFornecedorExcluir = new AtividadeDeTributacaoXFornecedorExcluir();
 		atividadeDeTributacaoXFornecedorExcluir.beforeClass();
-		atividadeDeTributacaoXFornecedorExcluir.login();
-		atividadeDeTributacaoXFornecedorExcluir.acessarMDR();
 		atividadeDeTributacaoXFornecedorExcluir.excluir();
 		atividadeDeTributacaoXFornecedorExcluir.afterClass();
 	}
@@ -718,8 +635,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void atividadeDeTributacaoXFornecedorExcluirEmMassa() {
 		atividadeDeTributacaoXFornecedorExcluirEmMassa = new AtividadeDeTributacaoXFornecedorExcluirEmMassa();
 		atividadeDeTributacaoXFornecedorExcluirEmMassa.beforeClass();
-		atividadeDeTributacaoXFornecedorExcluirEmMassa.login();
-		atividadeDeTributacaoXFornecedorExcluirEmMassa.acessarMDR();
 		atividadeDeTributacaoXFornecedorExcluirEmMassa.criar();
 		atividadeDeTributacaoXFornecedorExcluirEmMassa.afterClass();
 		System.out.println("-------------------Atividades Para tributacao >Atividade De Tributacao X Fornecedor Fim-------------------------");
@@ -736,8 +651,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP-------------------------");
 		sgdpCriar = new SGDPCriar();
 		sgdpCriar.beforeClass();
-		sgdpCriar.login();
-		sgdpCriar.acessarMDR();
 		sgdpCriar.criar();
 		sgdpCriar.afterClass();
 
@@ -748,8 +661,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void sgdpEditar() {
 		sgdpEditar = new SGDPEditar();
 		sgdpEditar.beforeClass();
-		sgdpEditar.login();
-		sgdpEditar.acessarMDR();
 		sgdpEditar.editar();
 		sgdpEditar.afterClass();
 
@@ -760,8 +671,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void sgdpVisualizar() {
 		sgdpVisualizar = new SGDPVisualizar();
 		sgdpVisualizar.beforeClass();
-		sgdpVisualizar.login();
-		sgdpVisualizar.acessarMDR();
 		sgdpVisualizar.visualizar();
 		sgdpVisualizar.afterClass();
 
@@ -770,8 +679,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 	public void sgdpExcluir() {
 		sGDPExcluir = new SGDPExcluir();
 		sGDPExcluir.beforeClass();
-		sGDPExcluir.login();
-		sGDPExcluir.acessarMDR();
 		sGDPExcluir.excluir();
 		sGDPExcluir.afterClass();
 
@@ -782,8 +689,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		
 		sgdpExcluirEmMassa = new SGDPExcluirEmMassa();
 		sgdpExcluirEmMassa.beforeClass();
-		sgdpExcluirEmMassa.login();
-		sgdpExcluirEmMassa.acessarMDR();
 		sgdpExcluirEmMassa.criar();
 		sgdpExcluirEmMassa.afterClass();
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 16  - SGDP FIN-------------------------");
@@ -796,8 +701,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos-------------------------");
 		StatusParaBancoIndébitosCriar = new statusParaBancoIndébitosCriar();
 		StatusParaBancoIndébitosCriar.beforeClass();
-		StatusParaBancoIndébitosCriar.login();
-		StatusParaBancoIndébitosCriar.acessarMDR();
 		StatusParaBancoIndébitosCriar.criar();
 		StatusParaBancoIndébitosCriar.afterClass();
 	}
@@ -806,8 +709,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		
 		statusParaBancoIndébitosEditar = new StatusParaBancoIndébitosEditar();
 		statusParaBancoIndébitosEditar.beforeClass();
-		statusParaBancoIndébitosEditar.login();
-		statusParaBancoIndébitosEditar.acessarMDR();
 		statusParaBancoIndébitosEditar.editar();
 		statusParaBancoIndébitosEditar.afterClass();
 	}
@@ -816,8 +717,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		
 		statusParaBancoIndébitosVisualizar = new StatusParaBancoIndébitosVisualizar();
 		statusParaBancoIndébitosVisualizar.beforeClass();
-		statusParaBancoIndébitosVisualizar.login();
-		statusParaBancoIndébitosVisualizar.acessarMDR();
 		statusParaBancoIndébitosVisualizar.visualizar();
 		statusParaBancoIndébitosVisualizar.afterClass();
 	}
@@ -826,8 +725,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		
 		statusParaBancoIndébitosExcluir = new StatusParaBancoIndébitosExcluir();
 		statusParaBancoIndébitosExcluir.beforeClass();
-		statusParaBancoIndébitosExcluir.login();
-		statusParaBancoIndébitosExcluir.acessarMDR();
 		statusParaBancoIndébitosExcluir.excluir();
 		statusParaBancoIndébitosExcluir.afterClass();
 	}
@@ -836,8 +733,6 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		
 		statusParaBancoIndébitosExcluirMassa = new StatusParaBancoIndébitosExcluirMassa();
 		statusParaBancoIndébitosExcluirMassa.beforeClass();
-		statusParaBancoIndébitosExcluirMassa.login();
-		statusParaBancoIndébitosExcluirMassa.acessarMDR();
 		statusParaBancoIndébitosExcluirMassa.criar();
 		statusParaBancoIndébitosExcluirMassa.afterClass();
 		System.out.println("-------------------Controle de Crédito Tributário > Status para Banco de Indébitos Fim-------------------------");

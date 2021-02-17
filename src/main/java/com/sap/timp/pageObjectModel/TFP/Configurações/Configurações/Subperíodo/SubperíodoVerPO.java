@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TFP.Configurações.Subperíodo;
+package com.sap.timp.pageObjectModel.TFP.Configurações.Configurações.Subperíodo;
 
 import java.util.ArrayList;
 

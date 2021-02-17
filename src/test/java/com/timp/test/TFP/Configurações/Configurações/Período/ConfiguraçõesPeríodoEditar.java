@@ -1,12 +1,11 @@
-package com.timp.test.TFP.Configurações.Período;
+package com.timp.test.TFP.Configurações.Configurações.Período;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.Período.ConfiguraçõesPeríodoEditarPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.Período.ConfiguraçõesPeríodoVerPO;
+import com.sap.timp.pageObjectModel.TFP.Configurações.Configurações.Período.ConfiguraçõesPeríodoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 

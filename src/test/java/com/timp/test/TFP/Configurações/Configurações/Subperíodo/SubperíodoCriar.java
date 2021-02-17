@@ -1,11 +1,11 @@
-package com.timp.test.TFP.Configurações.Subperíodo;
+package com.timp.test.TFP.Configurações.Configurações.Subperíodo;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.Subperíodo.SubperíodoCriarPO;
+import com.sap.timp.pageObjectModel.TFP.Configurações.Configurações.Subperíodo.SubperíodoCriarPO;
 
 import org.testng.annotations.BeforeClass;
 

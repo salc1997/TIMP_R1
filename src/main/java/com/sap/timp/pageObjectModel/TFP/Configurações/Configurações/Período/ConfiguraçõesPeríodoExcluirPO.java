@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TFP.Configurações.Período;
+package com.sap.timp.pageObjectModel.TFP.Configurações.Configurações.Período;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class ConfiguraçõesPeríodoEditarPO extends TestBaseKenssy {
+public class ConfiguraçõesPeríodoExcluirPO  extends TestBaseKenssy{
 
 	@FindBy(xpath = "//span[text()=\"Configurações\"]")
 	public WebElement configuracoe;
@@ -20,20 +20,14 @@ public class ConfiguraçõesPeríodoEditarPO extends TestBaseKenssy {
 	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
 	public WebElement primeira;
 	
-	@FindBy(xpath = "//div[@id=\"day\"]/div/div/div/input")
-	public WebElement Dia;
-	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
-	public WebElement DiaOpc;
-	
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
-	public ConfiguraçõesPeríodoEditarPO() {
+	public ConfiguraçõesPeríodoExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> editar() {
+	public boolean excluir() {
 		configuracoe.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -54,30 +48,14 @@ public class ConfiguraçõesPeríodoEditarPO extends TestBaseKenssy {
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
 		menu.click();
 		sleep(1000);
-		editar.click();
+		excluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		String dia1 = Dia.getAttribute("value");
-		System.out.println("Dia Antes de Editar: " +dia1);
-		
-		Dia.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
-		
-		DiaOpc.click();
-		sleep(1000);
-		String dia3 = Dia.getAttribute("value");
-		System.out.println("Dia valor a editar: " +dia3);
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
 		
 		aplicar.click();
 		sleep(1000);
@@ -94,26 +72,20 @@ public class ConfiguraçõesPeríodoEditarPO extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		menu2.click();
-		sleep(1000);
-		editar2.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		int id1 = convertToInt(id);
+		int id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
 		
-		String dia2 = Dia.getAttribute("value");
-		System.out.println("Dia Despues de Editar" +dia2);
+		boolean sucesso = false;
 		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			sucesso.add(dia3.contains(dia2));
-		
-		System.out.println(sucesso);
-		
+		if (id1 != id2) {
+			sucesso= true;
+		}
+		System.out.println( sucesso);
 		return sucesso;
-		
 	}
 }

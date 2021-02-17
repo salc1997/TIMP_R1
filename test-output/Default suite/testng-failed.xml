@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,8 +14,11 @@
           <include name="editarConfiguracion"/>
 =======
 <<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -25,13 +30,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
 >>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
+=======
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa">
 =======
       <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
 >>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -66,7 +78,11 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="exlcuir"/>
+=======
 <<<<<<< HEAD
           <include name="excluir"/>
 =======
@@ -92,7 +108,10 @@
           <include name="afterClass"/>
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <include name="afterClass"/>
 =======
@@ -115,7 +134,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="criar"/>
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
@@ -129,7 +151,11 @@
           <include name="copiar"/>
           <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa -->
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -155,9 +181,13 @@
 =======
       </class> <!-- com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoCopiar -->
 >>>>>>> refs/remotes/origin/Kenssy
+<<<<<<< HEAD
 =======
       </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoVer -->
 >>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -159,6 +159,7 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		moeda.click();
 		sleep(1000);
 		actionsMoveToElementElement(moedaO);
+		sleep(1000);
 		moedaO.click();
 		
 		
@@ -181,6 +182,7 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		sleep(2000);
 		biblioteca.click();
 		sleep(3000);
+		waitExpectElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

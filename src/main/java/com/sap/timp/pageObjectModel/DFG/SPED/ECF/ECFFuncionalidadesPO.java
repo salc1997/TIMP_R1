@@ -14,7 +14,6 @@ import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
 
-import bsh.This;
 
 public class ECFFuncionalidadesPO extends TestBaseMassiel{
 

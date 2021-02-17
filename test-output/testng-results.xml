@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results total="3" passed="2" failed="1" skipped="0">
 =======
 <<<<<<< HEAD
@@ -28,8 +29,12 @@
 =======
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+<testng-results total="1" passed="1" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-02-16T17:36:03Z" name="Default suite" finished-at="2021-02-16T17:38:29Z" duration-ms="146556">
@@ -59,8 +64,12 @@
 =======
   <suite started-at="2021-02-17T17:29:30Z" name="Default suite" finished-at="2021-02-17T17:31:04Z" duration-ms="93421">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-02-17T18:16:16Z" name="Default suite" finished-at="2021-02-17T18:18:02Z" duration-ms="106455">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-02-16T17:36:03Z" name="Default test" finished-at="2021-02-16T17:38:29Z" duration-ms="146556">
@@ -106,9 +115,15 @@
       <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar@413d1baf]" started-at="2021-02-17T17:29:30Z" name="beforeClass" finished-at="2021-02-17T17:30:08Z" duration-ms="38051" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+    <test started-at="2021-02-17T18:16:16Z" name="Default test" finished-at="2021-02-17T18:18:02Z" duration-ms="106455">
+      <class name="com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoExcluir@20435c40]" started-at="2021-02-17T12:16:16Z" name="beforeClass" finished-at="2021-02-17T12:16:47Z" duration-ms="31798" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades@68e5eea7]" started-at="2021-02-16T14:36:18Z" name="login" finished-at="2021-02-16T14:36:31Z" duration-ms="13024" status="PASS">
@@ -613,9 +628,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
           </exception> <!-- org.openqa.selenium.WebDriverException -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoExcluir@20435c40]" started-at="2021-02-17T12:16:47Z" name="excluir" finished-at="2021-02-17T12:17:58Z" duration-ms="70322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoExcluir@20435c40]" started-at="2021-02-17T12:17:58Z" name="afterClass" finished-at="2021-02-17T12:18:02Z" duration-ms="4324" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades -->
 =======
@@ -670,6 +693,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoExcluir -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

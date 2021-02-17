@@ -1,4 +1,4 @@
-package com.timp.test.TFP.Configurações.StatusPeriodo;
+package com.timp.test.TFP.Configurações.Status.Periodo;
 
 import org.testng.annotations.Test;
 

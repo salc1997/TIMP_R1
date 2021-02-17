@@ -33,21 +33,13 @@ public class AgenteCausadorDeSGDPVisualizar extends TestBaseCristhian {
   public void afterClass() {
   }
   
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = agenteCausadorDeSGDPVisualizarPO.visualizar();
 

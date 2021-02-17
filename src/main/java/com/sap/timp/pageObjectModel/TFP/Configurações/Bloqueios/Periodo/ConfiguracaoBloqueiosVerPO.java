@@ -7,11 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseEliel;
 
-public class ConfiguracaoBloqueiosVerPO extends TestBaseFernando{
+
+public class ConfiguracaoBloqueiosVerPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class, \"baseTabs-box\")]/span/span[text()=\"Configurações\"]")
-	public WebElement abaConfiguracoes;
+	public WebElement configuracoes;
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-Bloqueios\"]")
 	public WebElement bloqueios;
@@ -20,21 +21,39 @@ public class ConfiguracaoBloqueiosVerPO extends TestBaseFernando{
 	public WebElement periodo;
 	
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
-	public WebElement btnUltimaPagina;
+	public WebElement ultimapagina;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
-	public WebElement btnBiblioteca;
+	public WebElement biblioteca;
 	
 	public ConfiguracaoBloqueiosVerPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public ArrayList<Boolean> ver() {
+		
+		String url = driver.getCurrentUrl();
+
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+
+		if (url.contains("tc2")) {
+			tc2 = true;
+		} else if (url.contains("tp1")) {
+			tp1 = true;
+		} else if (url.contains("tq1")) {
+			tq1 = true;
+		} else {
+			td1 = true;
+		}
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		abaConfiguracoes.click();
+		configuracoes.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -47,24 +66,62 @@ public class ConfiguracaoBloqueiosVerPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		btnUltimaPagina.click();
+		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();		
-		System.out.println("ID REGISTRO: " + idRegistro);
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
-		
-		actionsMoveToElementElement(menu);
-		sleep(2000);
-		menu.click();
-		sleep(2000);
-		editar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1 == true) {
+			String idRegistro = "14";
+			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+			WebElement ver = driver.findElement(
+					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
+
+			actionsMoveToElementElement(menu);
+			sleep(2000);
+			menu.click();
+			sleep(2000);
+			ver.click();
+
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		} else if (tp1 == true) {
+			String idRegistro = "7";
+
+			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+			WebElement ver = driver.findElement(
+					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
+
+			actionsMoveToElementElement(menu);
+			sleep(2000);
+			menu.click();
+			sleep(2000);
+			ver.click();
+
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		} else {
+			String idRegistro = "9";
+
+			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+			WebElement ver = driver.findElement(
+					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
+
+			actionsMoveToElementElement(menu);
+			sleep(2000);
+			menu.click();
+			sleep(2000);
+			ver.click();
+
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}
 		
 		// Datos de Ver
 		String statusString = driver.findElement(By.xpath("//div[@id=\"statusInput\"]/div/textarea")).getAttribute("value").trim();
@@ -74,7 +131,7 @@ public class ConfiguracaoBloqueiosVerPO extends TestBaseFernando{
 		String validadeDeString = driver.findElement(By.xpath("//div[@id=\"validFrom\"]/div/textarea")).getAttribute("value").trim();
 		String componenteBfbString = driver.findElement(By.xpath("//div[@class=\"app-name droppable-tile-name\"]")).getText().trim();
 		
-		System.out.println("Datos de menu Ver");
+		System.out.println("Dados do menu Ver");
 		System.out.println("-------------------------------------------------------");
 		System.out.println("Status: " + statusString);
 		System.out.println("Empresa: " + empresaString);
@@ -84,27 +141,67 @@ public class ConfiguracaoBloqueiosVerPO extends TestBaseFernando{
 		System.out.println("Componente: " + componenteBfbString);
 		System.out.println("");
 		
-		btnBiblioteca.click();
+		biblioteca.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		btnUltimaPagina.click();
+		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
-		actionsMoveToElementElement(menu);
-		sleep(2000);
-		menu.click();
-		sleep(2000);
-		editar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1 == true) {
+			String idRegistro = "14";
+			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+			WebElement editar = driver.findElement(
+					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+
+			actionsMoveToElementElement(menu);
+			sleep(2000);
+			menu.click();
+			sleep(2000);
+			editar.click();
+
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		} else if (tp1 == true) {
+			String idRegistro = "7";
+
+			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+			WebElement editar = driver.findElement(
+					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+
+			actionsMoveToElementElement(menu);
+			sleep(2000);
+			menu.click();
+			sleep(2000);
+			editar.click();
+
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		} else {
+			String idRegistro = "9";
+
+			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+			WebElement editar = driver.findElement(
+					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+
+			actionsMoveToElementElement(menu);
+			sleep(2000);
+			menu.click();
+			sleep(2000);
+			editar.click();
+
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}
 		
 		// Datos de Editar
 		String statusString1 = driver.findElement(By.xpath("//div[@id=\"statusInput\"]/div/div/div/div/div/div[1]")).getText().trim();
@@ -114,7 +211,7 @@ public class ConfiguracaoBloqueiosVerPO extends TestBaseFernando{
 		String validadeDeString1 = driver.findElement(By.xpath("//div[@id=\"validFrom\"]/div/div/input")).getAttribute("value").trim();
 		String componenteBfbString1 = driver.findElement(By.xpath("//div[@id=\"list-r-elements-wrapper\"]/div[1]/div/div[2]/div[1]")).getText().trim();
 
-		System.out.println("Datos de menu Editar");
+		System.out.println("Dados do menu Editar");
 		System.out.println("-------------------------------------------------------");
 		System.out.println("Status: " + statusString1);
 		System.out.println("Empresa: " + empresaString1);
@@ -132,7 +229,7 @@ public class ConfiguracaoBloqueiosVerPO extends TestBaseFernando{
 		sucesso.add(validadeDeString1.equals(validadeDeString));
 		sucesso.add(componenteBfbString1.equals(componenteBfbString));
 		
-		System.out.println("");
+	
 		System.out.println(sucesso);
 		
 		return sucesso;

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
@@ -79,7 +80,17 @@
         <methods>
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoVer">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="ver"/>
+>>>>>>> refs/remotes/origin/Eliel
           <include name="afterClass"/>
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
 <<<<<<< HEAD
@@ -90,7 +101,10 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Eliel
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -141,6 +155,9 @@
 =======
       </class> <!-- com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoCopiar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoVer -->
+>>>>>>> refs/remotes/origin/Eliel
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

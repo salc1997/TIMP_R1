@@ -8,19 +8,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosVerPO;
 
-public class ConfiguracaoBloqueiosVer extends TestBaseFernando{
+public class ConfiguracaoBloqueiosVer extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	ConfiguracaoBloqueiosVerPO configuracaoBloqueiosVerPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTFPPO = new AcessarTFPPO();
 		configuracaoBloqueiosVerPO = new ConfiguracaoBloqueiosVerPO();

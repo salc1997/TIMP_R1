@@ -17,6 +17,7 @@ public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
 	AcessarMDRPO accesarMDR;
 	TabelaLogradourosExcluirEmMassaPO tabelaLogradourosExcluirEmMassaPO;
 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -25,23 +26,30 @@ public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
 		tabelaLogradourosExcluirEmMassaPO = new TabelaLogradourosExcluirEmMassaPO();
 	}
 
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
+  @AfterClass
+  public void afterClass() {
+	  driver.close();
+  }
+  
 
-	@Test()
-	public void criar() {
-		loginTC.login();
-		accesarMDR.acessarMDR();
 
-		boolean sucesso = tabelaLogradourosExcluirEmMassaPO.criar();
-		assertTrue(sucesso, Criar);
-		sleep(1000);
 
-		boolean sucesso2 = tabelaLogradourosExcluirEmMassaPO.excluir();
-		assertTrue(sucesso2, Eliminado);
-	}
+
+  
+  @Test()
+  public void criar() {
+	  
+	  loginTC.login();
+	  accesarMDR.acessarMDR();
+	
+	  boolean sucesso = tabelaLogradourosExcluirEmMassaPO.criar();
+	assertTrue(sucesso, Criar);
+	sleep(1000);
+	
+	boolean sucesso2 = tabelaLogradourosExcluirEmMassaPO.excluir();
+	assertTrue(sucesso2, Eliminado);
+  }
+
 	
  
 }

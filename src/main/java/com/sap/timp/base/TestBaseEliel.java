@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestBaseEliel extends TestBaseSteven {
-
+ 
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationE() {
@@ -45,6 +45,7 @@ public class TestBaseEliel extends TestBaseSteven {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(tc2);
+
 
 		return driver;
 

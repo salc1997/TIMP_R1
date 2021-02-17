@@ -31,20 +31,14 @@ public class AgenteCausadorDeSGDPEditar extends TestBaseCristhian {
   public void afterClass() {
   }
   
-  @Test(priority = 0)
-  public void login() {
-	loginTC.login();
-  }
-	
-	
-  @Test(priority = 1)
-  public void acessarMDR() {
-	acessarMDRPO.acessarMDR();
-  }
+
   
-  @Test(priority = 2)
+  @Test()
   public void editar() {
 
+	  loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 	boolean sucesso = agenteCausadorDeSGDPEditarPO.editar();
 
 	assertTrue(sucesso, Editar);

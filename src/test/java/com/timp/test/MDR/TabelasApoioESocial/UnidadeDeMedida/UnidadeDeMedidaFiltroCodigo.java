@@ -32,21 +32,13 @@ public class UnidadeDeMedidaFiltroCodigo extends TestBaseSteven {
 		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtroCodigo() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 
 		boolean sucesso = unidadeDeMedidaFiltroCodigoPO.filtro();
 

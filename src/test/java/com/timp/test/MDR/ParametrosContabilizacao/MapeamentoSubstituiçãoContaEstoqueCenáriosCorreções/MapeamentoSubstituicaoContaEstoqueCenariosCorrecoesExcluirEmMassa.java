@@ -31,8 +31,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa e
 		driver.close();
 	}
 
-
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();

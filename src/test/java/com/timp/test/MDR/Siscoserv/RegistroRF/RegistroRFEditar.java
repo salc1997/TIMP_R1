@@ -30,22 +30,12 @@ public class RegistroRFEditar extends TestBaseMassiel{
   public void afterClass() {
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void Editar() {
 		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = registroRFEditarPO.Editar();
 		assertTrue(sucesso, Criar);

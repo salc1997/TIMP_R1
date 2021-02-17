@@ -1,27 +1,29 @@
-package com.timp.test.TFP.Configurações.StatusPeriodo;
+package com.timp.test.TFP.Configurações.Status.Periodo;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.StatusPeriodo.ConfiguracoesStatusPeriodoCriarPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.StatusPeriodo.ConfiguracoesStatusPeriodoEditarPO;
+import com.sap.timp.pageObjectModel.TFP.Configurações.Status.Periodo.ConfiguracoesStatusPeriodoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracoesStatusPeriodoEditar extends TestBaseKenssy{
+public class ConfiguracoesStatusPeriodoEditar extends TestBaseEliel{
 	 LoginTC loginTC;
 	 AcessarTFPPO acessarTFPPO;
 	 ConfiguracoesStatusPeriodoEditarPO  configuracoesStatusPeriodoEditarPO;
 	
 	@BeforeClass
 	public void beforeClass() { 
-	  driver = initializationKen();
+	  driver = initializationE();
 	  loginTC = new LoginTC();
 	  acessarTFPPO = new AcessarTFPPO();
 	  configuracoesStatusPeriodoEditarPO = new ConfiguracoesStatusPeriodoEditarPO();
@@ -42,12 +44,14 @@ public class ConfiguracoesStatusPeriodoEditar extends TestBaseKenssy{
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
+	public void editar() {
 		
-		boolean sucesso = configuracoesStatusPeriodoEditarPO.editar();
-
-		// teste pra conferir se o resultado mostrado é igual
-		assertTrue(sucesso, Editar);
+		ArrayList<Boolean> sucesso = configuracoesStatusPeriodoEditarPO.editar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			// teste pra conferir se o resultado mostrado é igual
+			assertTrue(sucesso.get(i), Editar);
+		}
+		
 
 	}
 }

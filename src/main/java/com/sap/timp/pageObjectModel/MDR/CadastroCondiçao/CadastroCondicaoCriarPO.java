@@ -20,7 +20,7 @@ public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 	public WebElement novocadastrocondicao;
 	
 
-	//@FindBy(xpath = "//div[@class=\"element\" and @id=\"company\"]/div/div/div[2]")
+	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
 	public WebElement empresa;
 	
@@ -28,8 +28,7 @@ public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresa;
 	
-	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
-	//public WebElement opcaoempresatc2tq1tp1;
+
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresatc2tq1tp1;
@@ -50,7 +49,7 @@ public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"element\" and @id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][3]/div/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaotributo;
 	
 	@FindBy(xpath ="//div[@class=\"element\" and @id=\"accessSeq\"]/div/div/div[2]")
@@ -176,7 +175,7 @@ public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		sequenciaacesso.click();
-		
+		sleep(2000);
 		opcaosequenciaacesso.click();
 
 		sleep(2000);

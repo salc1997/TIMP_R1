@@ -62,14 +62,14 @@ public class TestBaseEliel extends TestBaseSteven {
 	}
 	
 	public void waitExpectXpath(String locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 		
 	}
 	
 	public void waitExpectElement(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		
@@ -86,20 +86,20 @@ public class TestBaseEliel extends TestBaseSteven {
 	}
 	
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 		
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 		
 	}
 
 	public void attributeToBeXpath(String locator, String attribute, String value) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 		
 		wait.until(ExpectedConditions.attributeToBe(By.xpath(locator), attribute, value));
 	}
 	
 	public void attributeToBeElement(WebElement element, String attribute, String value) {
-		WebDriverWait wait = new WebDriverWait(driver, 15000);
+		WebDriverWait wait = new WebDriverWait(driver, 360);
 		
 		wait.until(ExpectedConditions.attributeToBe(element, attribute, value));
 	}

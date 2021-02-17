@@ -26,37 +26,31 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@id=\"empresa\"]/div/div/div[2]")
 	public WebElement empresa;
-					 
-
-	@FindBy(xpath = "//div[@id=\"1000\"]/div/label/span")
-	public WebElement empresaOTd1;
 	
 	@FindBy(xpath = "//*[@id=\"uf\"]/div/div/div[2]")
 	public WebElement ufFilial;
 	@FindBy(xpath = "//li[text()=\"SP\"]")
 	public WebElement ufFilialO;
 	
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcao2;
+	
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcao1;
+	
+	
+	
 	@FindBy(xpath = "//*[@id=\"filial\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
-	public WebElement filialO;
-	
+
 	@FindBy(xpath = "//*[@id=\"tributo\"]/div/div/div[2]")
 	public WebElement tributo;
-	@FindBy(xpath = "//li[text()=\"ICMS\"]")
-	public WebElement tributoO;
-	
+
 	@FindBy(xpath = "//*[@id=\"tipoTributo\"]/div/div/div[2]")
 	public WebElement tipoTributo;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
-	public WebElement tipoTributoO;
 
 	@FindBy(xpath = "//*[@id=\"detalheTipoTributo\"]/div/div[2]")
 	public WebElement detalhe;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement detalheO;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement detalheOTq1;
 	
 	@FindBy(xpath = "//div[contains(@id,\"Antecipacao\")]/div/div/input")
 	public WebElement antecipacaoC;
@@ -66,28 +60,19 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@id=\"baseAntecipacao\"]/div/div[2]")
 	public WebElement base;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement baseOTd1;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement baseOTc2;
+
 	
 	
 	@FindBy(xpath = "//div[@id=\"linhaDeducao\"]/div/div[2]")
 	public WebElement linha;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement linhaOTd1;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement linhaOTc2;
+
 	
 	@FindBy(xpath = "//div[@id=\"codRegLancSped\"]/div/div/div[2]")
 	public WebElement lancamento;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement lancamentoO;
-	
+
 	@FindBy(xpath = "//div[@id=\"modRelatorio\"]/div/div/div[2]")
 	public WebElement modelo;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
-	public WebElement modeloO;
+
 	
 	@FindBy(xpath = "//*[@id=\"dtInicio\"]/div/div[1]/input")
 	public WebElement data;
@@ -166,45 +151,49 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		
 		empresa.click();
 		sleep(2000);
-		empresaOTd1.click();
-		empresaOTd1.sendKeys(Keys.ESCAPE);
+		opcao2.click();
+		sleep(1000);
+		opcao2.sendKeys(Keys.ESCAPE);
 	
 		
 		
-		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-select required");
-		
+		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(2000);
 		ufFilial.click();
 		sleep(2000);
-		ufFilialO.click();
+		opcao2.click();
+		sleep(1000);
+		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//*[@id=\"filial\"]/div", "class", "base-select required");
+		
+		
+		attributeToBeXpath("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(2000);
 		
 		filial.click();
 		sleep(2000);
-		filialO.click();
+		opcao2.click();
+		sleep(1000);
+		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 		tributo.click();
 		sleep(2000);
-		tributoO.click();
+		opcao1.click();
 		sleep(2000);
 		
 		attributeToBeXpath("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
+		
 		tipoTributo.click();
 		sleep(2000);
-		tipoTributoO.click();
+		opcao1.click();
 		sleep(2000);
 		
 		detalhe.click();
 		sleep(2000);
-		if (tq1==true || td1 == true) {
-			detalheOTq1.click();
-		}else {
-			detalheO.click();
-		}
-		
+		opcao1.click();
 		sleep(2000);
 		
 		antecipacaoC.sendKeys("20");
@@ -214,30 +203,22 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 		
 		base.click();
 		sleep(2000);
-		if (tc2 == true || tp1 == true) {
-			baseOTc2.click();
-		}else {
-			baseOTd1.click();
-		}
+		opcao1.click();
 		sleep(2000);
 		
 		linha.click();
 		sleep(2000);
-		if (tc2 == true || tp1 == true) {
-			linhaOTc2.click();
-		}else {
-			linhaOTd1.click();
-		}
+		opcao1.click();
 		sleep(2000);
 		
 		lancamento.click();
 		sleep(2000);
-		lancamentoO.click();
+		opcao1.click();
 		sleep(2000);
 		
 		modelo.click();
 		sleep(2000);
-		modeloO.click();
+		opcao1.click();
 		sleep(2000);
 		
 		String dataH = fechaActual();

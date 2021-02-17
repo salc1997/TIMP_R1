@@ -18,7 +18,7 @@ public class AgrupadorDeCFOPDetalhes extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPDetalhesPO agrupadorDeCFOPDetalhesPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

@@ -2,7 +2,7 @@ package com.timp.test.MDR.Automacoes;
 
 import org.testng.annotations.Test;
 
-
+ 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSExcluirEmMassaPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassaPO;

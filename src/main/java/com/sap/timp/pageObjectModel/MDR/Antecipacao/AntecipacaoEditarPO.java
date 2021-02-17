@@ -62,11 +62,13 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		sleep(1000);
 		editar.click();
 
-		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
+		waitExpectXpath("//div[@id=\"empresa\"]/div/div/div/div/div");
+		waitExpectXpath("//div[@id=\"uf\"]/div/div/div/div/div");
+		waitExpectXpath("//div[@id=\"filial\"]/div/div/div/div/div");
 		sleep(2000);
-		String url = driver.getCurrentUrl();
-		String valor = campo.getAttribute("value");
 
+		String valor = campo.getAttribute("value");
+		System.out.println("Valor antes da edição: " +valor);
 		String enviar = "30";
 
 		campo.clear();
@@ -85,29 +87,20 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		driver.navigate().refresh();
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-select required");
+		waitExpectXpath("//div[@id=\"empresa\"]/div/div/div/div/div");
+		waitExpectXpath("//div[@id=\"uf\"]/div/div/div/div/div");
+		waitExpectXpath("//div[@id=\"filial\"]/div/div/div/div/div");
 		waitExpectElement(campo);
 		
 		sleep(2000);
 
 		String nuevoTexto = campo.getAttribute("value");
-		System.out.println(valor);
-		System.out.println(nuevoTexto);
+		System.out.println("Valor após edição: " +nuevoTexto);
+
 		boolean sucesso = nuevoTexto.equals(enviar);
-		System.out.println(sucesso);
+		System.out.println("Valor editado com sucesso: "+sucesso);
 
-		sleep(1000);
-		campo.clear();
 
-		sleep(1000);
-		campo.sendKeys(valor);
-
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		return sucesso;
 

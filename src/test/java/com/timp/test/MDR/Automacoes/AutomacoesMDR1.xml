@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" preserve-order="true">
-	<test name="Automações MDR 1">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+	<test name="Automações MDR 1" preserve-order="true">
 
 
-		<classes>
+		<classes >
 
 
 			<!-- Associção Código de Ajustes -->
+
+			
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
-
+	
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
 

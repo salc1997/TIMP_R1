@@ -102,9 +102,8 @@ public class LimiteDeCreditoAUtilizarEditarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		String valor = limitedeutilizacaodecredito.getAttribute("value");
 
 		String enviar = "8";

@@ -29,7 +29,7 @@ public class UnidadeDeMedidaExcluirEmMasa extends TestBaseSteven {
 		  accesarMDR = new AcessarMDRPO();
 		  unidadeDeMedidaExcluirEmMasaPO = new UnidadeDeMedidaExcluirEmMasaPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		  driver.close();

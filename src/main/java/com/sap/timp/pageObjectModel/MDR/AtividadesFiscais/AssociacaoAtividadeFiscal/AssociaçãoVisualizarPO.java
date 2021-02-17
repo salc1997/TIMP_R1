@@ -125,7 +125,7 @@ public class AssociaçãoVisualizarPO extends TestBaseFernando{
 		String textoFilial1 = filial1.getText();
 		String textoMunicipioExecutor1 = municipioExecutor1.getAttribute("value");
 		String textoUF1 = uf1.getText();
-		String textoTributo1 = tributo1.getAttribute("id");
+		String textoTributo1 = tributo1.getText();
 
 		
 		System.out.println("--------------------------------------------------");

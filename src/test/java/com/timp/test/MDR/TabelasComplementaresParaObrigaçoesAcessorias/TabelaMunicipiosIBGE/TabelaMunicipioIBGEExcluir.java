@@ -25,7 +25,7 @@ public class TabelaMunicipioIBGEExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
-
+ 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();

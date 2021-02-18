@@ -19,14 +19,14 @@ import org.testng.annotations.AfterClass;
 public class NaturezaJuridicaEditar extends TestBaseSteven {
  
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO acessarMDRPO;
 	NaturezaJuridicaEditarPO naturezaJuridicaEditarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initialization();
 	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
+	  acessarMDRPO = new AcessarMDRPO();
 	  naturezaJuridicaEditarPO = new NaturezaJuridicaEditarPO();
   }
 
@@ -35,19 +35,12 @@ public class NaturezaJuridicaEditar extends TestBaseSteven {
 	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
   
   @Test(priority = 1)
-  public void acessarMDR() {
-	 accesarMDR.acessarMDR();
-
-  }
-  
-  @Test(priority = 2)
   public void editar() {
+	  loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 	  boolean sucesso = naturezaJuridicaEditarPO.editar();
 	  assertTrue(sucesso, Editar);
   }

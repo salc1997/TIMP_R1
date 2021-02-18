@@ -35,21 +35,13 @@ public class NaturezaJuridicaCriar extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
 	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
 	  public void criar() {
-			 boolean sucesso = naturezaJuridicaCriarPO.criar();
-			  assertTrue(sucesso, Criar);
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
+		boolean sucesso = naturezaJuridicaCriarPO.criar();
+		assertTrue(sucesso, Criar);
 	  }
 
 }

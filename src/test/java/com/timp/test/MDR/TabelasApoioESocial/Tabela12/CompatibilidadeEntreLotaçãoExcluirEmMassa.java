@@ -31,22 +31,11 @@ public class CompatibilidadeEntreLotaçãoExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void criar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = compatibilidadeEntreLotaçãoExcluirEmMassa.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
@@ -54,6 +43,5 @@ public class CompatibilidadeEntreLotaçãoExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
 	
 }

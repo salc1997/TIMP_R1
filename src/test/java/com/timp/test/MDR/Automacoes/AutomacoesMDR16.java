@@ -654,7 +654,7 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		naturezaJuridicaExcluirMassa = new NaturezaJuridicaExcluirMassa();
 		naturezaJuridicaExcluirMassa.beforeClass();
-		naturezaJuridicaExcluirMassa.criar();
+		//naturezaJuridicaExcluirMassa.criar();
 		naturezaJuridicaExcluirMassa.excluirMassa();
 		naturezaJuridicaExcluirMassa.afterClass();
 

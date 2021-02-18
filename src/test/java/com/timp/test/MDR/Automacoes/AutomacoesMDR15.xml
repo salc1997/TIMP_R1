@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<test name="Automações MDR 15">
+	
+		<classes>
+		
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLCriar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLDetalhes"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluir"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLFiltroID"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluirEmMassa"></class>
+
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCICriar.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIDetalhes.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIFiltroID.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluirEmMassa.java"></class>
+
+
+			<!-- Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PIC -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICCriar.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICEditar.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICDetalhes.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICExcluir.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICFiltroID.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICExcluirEmMasa.java"></class>
+
+			<!-- Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PRL -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLCriar.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLDetalhes.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroID.java"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa.java"></class>
+
+
+			<!-- Siscoserv > Pais/Moeda -->
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaCriar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaEditar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaDetalhes.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaVisualizar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluir.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluirEmMassa.java"></class>
+
+
+			<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				
+				
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				
+				
+				
+				
+				
+				
+				<!-- -->
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+				<class name=""></class>
+
+
+
+
+
+
+		</classes>
+
+
+
+	</test> <!-- PruebaTestNG -->
+</suite> <!-- Suite -->

@@ -30,16 +30,14 @@ public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian{
 
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
- 
-	@Test()
+	@Test(priority = 1)
 	public void criar() {
-		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = agenteCausadorDeSGDPCriarPO.criar();
 
 		assertTrue(sucesso, Criar);

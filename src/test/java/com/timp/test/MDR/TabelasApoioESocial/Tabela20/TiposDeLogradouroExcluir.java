@@ -36,14 +36,12 @@ public class TiposDeLogradouroExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	  public void excluir() {
 		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tiposDeLogradouroExluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	  }

@@ -35,14 +35,14 @@ public class UnidadeDeMedidaCriar extends TestBaseSteven{
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	  public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
+
 			 boolean sucesso = unidadeDeMedidaCriarPO.criar();
 			  assertTrue(sucesso, Criar);
+
 	  }
 
 }

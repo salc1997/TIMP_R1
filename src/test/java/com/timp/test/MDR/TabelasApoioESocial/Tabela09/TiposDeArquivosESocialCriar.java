@@ -30,14 +30,11 @@ public class TiposDeArquivosESocialCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	public void criar() {
-		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tiposDeArquivosESocialCriarPO.criar();
 
 		assertTrue(sucesso, Criar);

@@ -21,7 +21,6 @@ public class TiposDeLotacaoTributarioVisualizar extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
-
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -33,11 +32,9 @@ public class TiposDeLotacaoTributarioVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

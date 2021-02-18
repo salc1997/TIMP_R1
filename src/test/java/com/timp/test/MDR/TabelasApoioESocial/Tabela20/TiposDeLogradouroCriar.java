@@ -34,14 +34,14 @@ public class TiposDeLogradouroCriar extends TestBaseSteven{
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	  public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-			 boolean sucesso = tiposDeLogradouroCriarPO.criar();
-			  assertTrue(sucesso, Criar);
+
+		
+		 boolean sucesso = tiposDeLogradouroCriarPO.criar();
+		  assertTrue(sucesso, Criar);
 	  }
 
 }

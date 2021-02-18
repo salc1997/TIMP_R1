@@ -36,14 +36,11 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven{
 	  driver.close();
   }
   
-
-  
-  @Test()
-  public void visualizar() {
-	  
+  @Test(priority = 1)
+  public void visualizar() {	  
 		loginTC.login();
 		accesarMDR.acessarMDR();
-		
+
 	  ArrayList<Boolean> sucesso = tiposDeLogradouroVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

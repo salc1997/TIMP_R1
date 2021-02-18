@@ -35,11 +35,12 @@ public class RegistroRFCriar extends TestBaseMassiel {
 	}
 
 
+	@Test(priority = 1)
 
-	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
+
 		boolean sucesso = registroRFCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

@@ -21,14 +21,14 @@ import org.testng.annotations.AfterClass;
 public class NaturezaJuridicaVisualizar extends TestBaseSteven{
   
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO acessarMDRPO;
 	NaturezaJuridicaVisualizarPO naturezaJuridicaVisualizarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initialization();
 	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
+	  acessarMDRPO = new AcessarMDRPO();
 	  naturezaJuridicaVisualizarPO = new NaturezaJuridicaVisualizarPO();
   }
 
@@ -36,15 +36,13 @@ public class NaturezaJuridicaVisualizar extends TestBaseSteven{
   public void afterClass() {
 	  driver.close();
   }
-  
- 
-  
-  @Test()
+
+  @Test(priority = 1)
   public void visualizar() {
 	  
 		loginTC.login();
-		 accesarMDR.acessarMDR();
-		
+		acessarMDRPO.acessarMDR();
+
 	  ArrayList<Boolean> sucesso = naturezaJuridicaVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

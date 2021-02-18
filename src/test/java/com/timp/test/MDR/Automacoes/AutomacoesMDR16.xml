@@ -3,7 +3,7 @@
 
 
 <suite name="Suite" preserve-order="true">
-	<test name="Prueba1" >
+	<test name="Automações MDR 16" >
 	<classes>
 	
 			<!-- Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida  -->

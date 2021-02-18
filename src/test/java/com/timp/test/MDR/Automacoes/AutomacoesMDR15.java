@@ -144,8 +144,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo CPL-------------------------");
 		valoresParaMetodoCPLCriar = new ValoresParaMetodoCPLCriar();
 		valoresParaMetodoCPLCriar.beforeClass();
-		valoresParaMetodoCPLCriar.login();
-		valoresParaMetodoCPLCriar.acessarMDR();
+//		valoresParaMetodoCPLCriar.login();
+//		valoresParaMetodoCPLCriar.acessarMDR();
 		valoresParaMetodoCPLCriar.criar();
 		valoresParaMetodoCPLCriar.afterClass();
 
@@ -156,8 +156,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoCPLEditar() {
 		valoresParaMetodoCPLEditar = new ValoresParaMetodoCPLEditar();
 		valoresParaMetodoCPLEditar.beforeClass();
-		valoresParaMetodoCPLEditar.login();
-		valoresParaMetodoCPLEditar.acessarMDR();
+//		valoresParaMetodoCPLEditar.login();
+//		valoresParaMetodoCPLEditar.acessarMDR();
 		valoresParaMetodoCPLEditar.editar();
 		valoresParaMetodoCPLEditar.afterClass();
 
@@ -167,8 +167,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoCPLDetalhes() {
 		valoresParaMetodoCPLDetalhes = new ValoresParaMetodoCPLDetalhes();
 		valoresParaMetodoCPLDetalhes.beforeClass();
-		valoresParaMetodoCPLDetalhes.login();
-		valoresParaMetodoCPLDetalhes.acessarMDR();
+//		valoresParaMetodoCPLDetalhes.login();
+//		valoresParaMetodoCPLDetalhes.acessarMDR();
 		valoresParaMetodoCPLDetalhes.Detalhes();
 		valoresParaMetodoCPLDetalhes.afterClass();
 
@@ -180,8 +180,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoCPLFiltroID = new ValoresParaMetodoCPLFiltroID();
 		valoresParaMetodoCPLFiltroID.beforeClass();
-		valoresParaMetodoCPLFiltroID.login();
-		valoresParaMetodoCPLFiltroID.acessarMDR();
+//		valoresParaMetodoCPLFiltroID.login();
+//		valoresParaMetodoCPLFiltroID.acessarMDR();
 		valoresParaMetodoCPLFiltroID.filtro();
 		valoresParaMetodoCPLFiltroID.afterClass();
 
@@ -192,8 +192,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoCPLExcluir() {
 		valoresParaMetodoCPLExcluir = new ValoresParaMetodoCPLExcluir();
 		valoresParaMetodoCPLExcluir.beforeClass();
-		valoresParaMetodoCPLExcluir.login();
-		valoresParaMetodoCPLExcluir.acessarMDR();
+//		valoresParaMetodoCPLExcluir.login();
+//		valoresParaMetodoCPLExcluir.acessarMDR();
 		valoresParaMetodoCPLExcluir.excluir();
 		valoresParaMetodoCPLExcluir.afterClass();
 
@@ -204,8 +204,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoCPLExcluirEmMassa = new ValoresParaMetodoCPLExcluirEmMassa();
 		valoresParaMetodoCPLExcluirEmMassa.beforeClass();
-		valoresParaMetodoCPLExcluirEmMassa.ingresar();
-		valoresParaMetodoCPLExcluirEmMassa.mdrEntrar();
+//		valoresParaMetodoCPLExcluirEmMassa.ingresar();
+//		valoresParaMetodoCPLExcluirEmMassa.mdrEntrar();
 		valoresParaMetodoCPLExcluirEmMassa.excluirEmMassa();
 		valoresParaMetodoCPLExcluirEmMassa.afterClass();
 
@@ -222,8 +222,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo > Valores Para Metodo PCI-------------------------");
 		valoresParaMetodoPCICriar = new ValoresParaMetodoPCICriar();
 		valoresParaMetodoPCICriar.beforeClass();
-		valoresParaMetodoPCICriar.login();
-		valoresParaMetodoPCICriar.acessarMDR();
+//		valoresParaMetodoPCICriar.login();
+//		valoresParaMetodoPCICriar.acessarMDR();
 		valoresParaMetodoPCICriar.criar();
 		valoresParaMetodoPCICriar.afterClass();
 
@@ -233,8 +233,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoPCIEditar() {
 		valoresParaMetodoPCIEditar = new ValoresParaMetodoPCIEditar();
 		valoresParaMetodoPCIEditar.beforeClass();
-		valoresParaMetodoPCIEditar.login();
-		valoresParaMetodoPCIEditar.acessarMDR();
+//		valoresParaMetodoPCIEditar.login();
+//		valoresParaMetodoPCIEditar.acessarMDR();
 		valoresParaMetodoPCIEditar.editar();
 		valoresParaMetodoPCIEditar.afterClass();
 
@@ -244,8 +244,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoPCIDetalhes() {
 		valoresParaMetodoPCIDetalhes = new ValoresParaMetodoPCIDetalhes();
 		valoresParaMetodoPCIDetalhes.beforeClass();
-		valoresParaMetodoPCIDetalhes.login();
-		valoresParaMetodoPCIDetalhes.acessarMDR();
+//		valoresParaMetodoPCIDetalhes.login();
+//		valoresParaMetodoPCIDetalhes.acessarMDR();
 		valoresParaMetodoPCIDetalhes.Detalhes();
 		valoresParaMetodoPCIDetalhes.afterClass();
 
@@ -257,8 +257,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoPCIFiltroID = new ValoresParaMetodoPCIFiltroID();
 		valoresParaMetodoPCIFiltroID.beforeClass();
-		valoresParaMetodoPCIFiltroID.login();
-		valoresParaMetodoPCIFiltroID.acessarMDR();
+//		valoresParaMetodoPCIFiltroID.login();
+//		valoresParaMetodoPCIFiltroID.acessarMDR();
 		valoresParaMetodoPCIFiltroID.filtro();
 		valoresParaMetodoPCIFiltroID.afterClass();
 
@@ -269,8 +269,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoPCIExcluir() {
 		valoresParaMetodoPCIExcluir = new ValoresParaMetodoPCIExcluir();
 		valoresParaMetodoPCIExcluir.beforeClass();
-		valoresParaMetodoPCIExcluir.login();
-		valoresParaMetodoPCIExcluir.acessarMDR();
+//		valoresParaMetodoPCIExcluir.login();
+//		valoresParaMetodoPCIExcluir.acessarMDR();
 		valoresParaMetodoPCIExcluir.excluir();
 		valoresParaMetodoPCIExcluir.afterClass();
 
@@ -283,8 +283,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoPCIExcluirEmMassa = new ValoresParaMetodoPCIExcluirEmMassa();
 		valoresParaMetodoPCIExcluirEmMassa.beforeClass();
-		valoresParaMetodoPCIExcluirEmMassa.ingresar();
-		valoresParaMetodoPCIExcluirEmMassa.mdrEntrar();
+//		valoresParaMetodoPCIExcluirEmMassa.ingresar();
+//		valoresParaMetodoPCIExcluirEmMassa.mdrEntrar();
 		valoresParaMetodoPCIExcluirEmMassa.excluirEmMassa();
 		valoresParaMetodoPCIExcluirEmMassa.afterClass();
 
@@ -301,8 +301,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC-------------------------");
 		valoresParaMetodoPICCriar = new ValoresParaMetodoPICCriar();
 		valoresParaMetodoPICCriar.beforeClass();
-		valoresParaMetodoPICCriar.login();
-		valoresParaMetodoPICCriar.acessarMDR();
+//		valoresParaMetodoPICCriar.login();
+//		valoresParaMetodoPICCriar.acessarMDR();
 		valoresParaMetodoPICCriar.criar();
 		valoresParaMetodoPICCriar.afterClass();
 
@@ -313,8 +313,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoPICEditar = new ValoresParaMetodoPICEditar();
 		valoresParaMetodoPICEditar.beforeClass();
-		valoresParaMetodoPICEditar.login();
-		valoresParaMetodoPICEditar.acessarMDR();
+//		valoresParaMetodoPICEditar.login();
+//		valoresParaMetodoPICEditar.acessarMDR();
 		valoresParaMetodoPICEditar.editar();
 		valoresParaMetodoPICEditar.afterClass();
 
@@ -325,8 +325,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoPICDetalhes = new ValoresParaMetodoPICDetalhes();
 		valoresParaMetodoPICDetalhes.beforeClass();
-		valoresParaMetodoPICDetalhes.login();
-		valoresParaMetodoPICDetalhes.acessarMDR();
+//		valoresParaMetodoPICDetalhes.login();
+//		valoresParaMetodoPICDetalhes.acessarMDR();
 		valoresParaMetodoPICDetalhes.Detalhes();
 		valoresParaMetodoPICDetalhes.afterClass();
 
@@ -337,8 +337,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoPICExcluir = new ValoresParaMetodoPICExcluir();
 		valoresParaMetodoPICExcluir.beforeClass();
-		valoresParaMetodoPICExcluir.login();
-		valoresParaMetodoPICExcluir.acessarMDR();
+//		valoresParaMetodoPICExcluir.login();
+//		valoresParaMetodoPICExcluir.acessarMDR();
 		valoresParaMetodoPICExcluir.excluir();
 		valoresParaMetodoPICExcluir.afterClass();
 
@@ -349,8 +349,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoPICFiltroID = new ValoresParaMetodoPICFiltroID();
 		valoresParaMetodoPICFiltroID.beforeClass();
-		valoresParaMetodoPICFiltroID.login();
-		valoresParaMetodoPICFiltroID.acessarMDR();
+//		valoresParaMetodoPICFiltroID.login();
+//		valoresParaMetodoPICFiltroID.acessarMDR();
 		valoresParaMetodoPICFiltroID.filtro();
 		valoresParaMetodoPICFiltroID.afterClass();
 
@@ -361,8 +361,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		valoresParaMetodoPICExcluirEmMasa = new ValoresParaMetodoPICExcluirEmMasa();
 		valoresParaMetodoPICExcluirEmMasa.beforeClass();
-		valoresParaMetodoPICExcluirEmMasa.ingresar();
-		valoresParaMetodoPICExcluirEmMasa.mdrEntrar();
+//		valoresParaMetodoPICExcluirEmMasa.ingresar();
+//		valoresParaMetodoPICExcluirEmMasa.mdrEntrar();
 		valoresParaMetodoPICExcluirEmMasa.excluirEnMasaCompatibilidadeEntreFPAS();
 		valoresParaMetodoPICExcluirEmMasa.afterClass();
 		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PIC Fim-------------------------");
@@ -379,8 +379,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL-------------------------");
 		valoresParaMetodoPRLCriar = new ValoresParaMetodoPRLCriar();
 		valoresParaMetodoPRLCriar.beforeClass();
-		valoresParaMetodoPRLCriar.login();
-		valoresParaMetodoPRLCriar.acessarMDR();
+//		valoresParaMetodoPRLCriar.login();
+//		valoresParaMetodoPRLCriar.acessarMDR();
 		valoresParaMetodoPRLCriar.criar();
 		valoresParaMetodoPRLCriar.afterClass();
 
@@ -390,8 +390,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoPRLEditar() {
 		valoresParaMetodoPRLEditar = new ValoresParaMetodoPRLEditar();
 		valoresParaMetodoPRLEditar.beforeClass();
-		valoresParaMetodoPRLEditar.login();
-		valoresParaMetodoPRLEditar.acessarMDR();
+//		valoresParaMetodoPRLEditar.login();
+//		valoresParaMetodoPRLEditar.acessarMDR();
 		valoresParaMetodoPRLEditar.editar();
 		valoresParaMetodoPRLEditar.afterClass();
 
@@ -401,8 +401,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoPRLDetalhes() {
 		valoresParaMetodoPRLDetalhes = new ValoresParaMetodoPRLDetalhes();
 		valoresParaMetodoPRLDetalhes.beforeClass();
-		valoresParaMetodoPRLDetalhes.login();
-		valoresParaMetodoPRLDetalhes.acessarMDR();
+//		valoresParaMetodoPRLDetalhes.login();
+//		valoresParaMetodoPRLDetalhes.acessarMDR();
 		valoresParaMetodoPRLDetalhes.Detalhes();
 		valoresParaMetodoPRLDetalhes.afterClass();
 
@@ -412,8 +412,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoPRLFiltroID() {
 		valoresParaMetodoPRLFiltroID = new ValoresParaMetodoPRLFiltroID();
 		valoresParaMetodoPRLFiltroID.beforeClass();
-		valoresParaMetodoPRLFiltroID.login();
-		valoresParaMetodoPRLFiltroID.acessarMDR();
+//		valoresParaMetodoPRLFiltroID.login();
+//		valoresParaMetodoPRLFiltroID.acessarMDR();
 		valoresParaMetodoPRLFiltroID.filtro();
 		valoresParaMetodoPRLFiltroID.afterClass();
 
@@ -423,8 +423,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void valoresParaMetodoPRLExcluir() {
 		valoresParaMetodoPRLExcluir = new ValoresParaMetodoPRLExcluir();
 		valoresParaMetodoPRLExcluir.beforeClass();
-		valoresParaMetodoPRLExcluir.login();
-		valoresParaMetodoPRLExcluir.acessarMDR();
+//		valoresParaMetodoPRLExcluir.login();
+//		valoresParaMetodoPRLExcluir.acessarMDR();
 		valoresParaMetodoPRLExcluir.excluir();
 		valoresParaMetodoPRLExcluir.afterClass();
 		System.out.println("-------------------Preco De Transferencia > Valores Para Metodo de importaçao > Valores Para Metodo PRL Fim-------------------------");
@@ -437,8 +437,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 				"-------------------Preço de Transferência > Valores para Método / Valores para Método CAP-------------------------");
 		valoresParaMetodoPRLExcluirEmMasa = new ValoresParaMetodoPRLExcluirEmMasa();
 		valoresParaMetodoPRLExcluirEmMasa.beforeClass();
-		valoresParaMetodoPRLExcluirEmMasa.ingresar();
-		valoresParaMetodoPRLExcluirEmMasa.mdrEntrar();
+//		valoresParaMetodoPRLExcluirEmMasa.ingresar();
+//		valoresParaMetodoPRLExcluirEmMasa.mdrEntrar();
 		valoresParaMetodoPRLExcluirEmMasa.excluirEnMasaCompatibilidadeEntreFPAS();
 		valoresParaMetodoPRLExcluirEmMasa.afterClass();
 	}
@@ -450,8 +450,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Pais/Moeda-------------------------");
 		paisMoedaCriar = new PaisMoedaCriar();
 		paisMoedaCriar.beforeClass();
-		paisMoedaCriar.login();
-		paisMoedaCriar.acessarMDR();
+//		paisMoedaCriar.login();
+//		paisMoedaCriar.acessarMDR();
 		paisMoedaCriar.criar();
 		paisMoedaCriar.afterClass();
 
@@ -461,8 +461,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void paisMoedaEditar() {
 		paisMoedaEditar = new PaisMoedaEditar();
 		paisMoedaEditar.beforeClass();
-		paisMoedaEditar.login();
-		paisMoedaEditar.acessarMDR();
+//		paisMoedaEditar.login();
+//		paisMoedaEditar.acessarMDR();
 		paisMoedaEditar.editar();
 		paisMoedaEditar.afterClass();
 
@@ -472,8 +472,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void paisMoedaDetalhes() {
 		paisMoedaDetalhes = new PaisMoedaDetalhes();
 		paisMoedaDetalhes.beforeClass();
-		paisMoedaDetalhes.login();
-		paisMoedaDetalhes.acessarMDR();
+//		paisMoedaDetalhes.login();
+//		paisMoedaDetalhes.acessarMDR();
 		paisMoedaDetalhes.detalhes();
 		paisMoedaDetalhes.afterClass();
 
@@ -483,8 +483,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void paisMoedaVisualizar() {
 		paisMoedaVisualizar = new PaisMoedaVisualizar();
 		paisMoedaVisualizar.beforeClass();
-		paisMoedaVisualizar.login();
-		paisMoedaVisualizar.acessarMDR();
+//		paisMoedaVisualizar.login();
+//		paisMoedaVisualizar.acessarMDR();
 		paisMoedaVisualizar.Visualizar();
 		paisMoedaVisualizar.afterClass();
 
@@ -494,8 +494,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void paisMoedaExcluir() {
 		paisMoedaExcluir = new PaisMoedaExcluir();
 		paisMoedaExcluir.beforeClass();
-		paisMoedaExcluir.login();
-		paisMoedaExcluir.acessarMDR();
+//		paisMoedaExcluir.login();
+//		paisMoedaExcluir.acessarMDR();
 		paisMoedaExcluir.excluir();
 		paisMoedaExcluir.afterClass();
 		System.out.println("-------------------Siscoserv > Pais/Moeda Fim-------------------------");
@@ -510,8 +510,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > NBS-------------------------");
 		nbsCriar = new NBSCriar();
 		nbsCriar.beforeClass();
-		nbsCriar.login();
-		nbsCriar.acessarMDR();
+//		nbsCriar.login();
+//		nbsCriar.acessarMDR();
 		nbsCriar.criar();
 		nbsCriar.afterClass();
 
@@ -521,8 +521,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void nbsEditar() {
 		nbsEditar = new NBSEditar();
 		nbsEditar.beforeClass();
-		nbsEditar.login();
-		nbsEditar.acessarMDR();
+//		nbsEditar.login();
+//		nbsEditar.acessarMDR();
 		nbsEditar.editar();
 		nbsEditar.afterClass();
 
@@ -532,8 +532,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void nbsDetalhes() {
 		nbsDetalhes = new NBSDetalhes();
 		nbsDetalhes.beforeClass();
-		nbsDetalhes.login();
-		nbsDetalhes.acessarMDR();
+//		nbsDetalhes.login();
+//		nbsDetalhes.acessarMDR();
 		nbsDetalhes.detalhes();
 		nbsDetalhes.afterClass();
 
@@ -543,8 +543,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void nbsExcluir() {
 		nbsExcluir = new NBSExcluir();
 		nbsExcluir.beforeClass();
-		nbsExcluir.login();
-		nbsExcluir.acessarMDR();
+//		nbsExcluir.login();
+//		nbsExcluir.acessarMDR();
 		nbsExcluir.excluir();
 		nbsExcluir.afterClass();		
 	}
@@ -553,9 +553,9 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void nbsExcluirMassa() {
 		nBSExcluirMassa = new NBSExcluirMassa();
 		nBSExcluirMassa.beforeClass();
-		nBSExcluirMassa.login();
-		nBSExcluirMassa.acessarMDR();
-		nBSExcluirMassa.criar();
+//		nBSExcluirMassa.login();
+//		nBSExcluirMassa.acessarMDR();
+//		nBSExcluirMassa.criar();
 		nBSExcluirMassa.excluirMassa();
 		nBSExcluirMassa.afterClass();
 		System.out.println("-------------------Siscoserv > NBS FIM-------------------------");			
@@ -569,8 +569,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Enquadramento-------------------------");
 		enquadramentoCriar = new EnquadramentoCriar();
 		enquadramentoCriar.beforeClass();
-		enquadramentoCriar.login();
-		enquadramentoCriar.acessarMDR();
+//		enquadramentoCriar.login();
+//		enquadramentoCriar.acessarMDR();
 		enquadramentoCriar.criar();
 		enquadramentoCriar.afterClass();
 
@@ -580,8 +580,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void enquadramentoEditar() {
 		enquadramentoEditar = new EnquadramentoEditar();
 		enquadramentoEditar.beforeClass();
-		enquadramentoEditar.login();
-		enquadramentoEditar.acessarMDR();
+//		enquadramentoEditar.login();
+//		enquadramentoEditar.acessarMDR();
 		enquadramentoEditar.editar();
 		enquadramentoEditar.afterClass();
 
@@ -591,8 +591,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void enquadramentoVisualizar() {
 		enquadramentoVisualizar = new EnquadramentoVisualizar();
 		enquadramentoVisualizar.beforeClass();
-		enquadramentoVisualizar.login();
-		enquadramentoVisualizar.acessarMDR();
+//		enquadramentoVisualizar.login();
+//		enquadramentoVisualizar.acessarMDR();
 		enquadramentoVisualizar.Visualizar();
 		enquadramentoVisualizar.afterClass();
 
@@ -603,8 +603,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void enquadramentoExcluir() {
 		enquadramentoExcluir = new EnquadramentoExcluir();
 		enquadramentoExcluir.beforeClass();
-		enquadramentoExcluir.login();
-		enquadramentoExcluir.acessarMDR();
+//		enquadramentoExcluir.login();
+//		enquadramentoExcluir.acessarMDR();
 		enquadramentoExcluir.excluir();
 		enquadramentoExcluir.afterClass();
 		System.out.println("-------------------Siscoserv > Enquadramento Fim-------------------------");
@@ -617,8 +617,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Registro RAS-------------------------");
 		registroRASCriar = new RegistroRASCriar();
 		registroRASCriar.beforeClass();
-		registroRASCriar.login();
-		registroRASCriar.acessarMDR();
+//		registroRASCriar.login();
+//		registroRASCriar.acessarMDR();
 		registroRASCriar.criar();
 		registroRASCriar.afterClass();
 
@@ -628,8 +628,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRASEditar() {
 		registroRASEditar = new RegistroRASEditar();
 		registroRASEditar.beforeClass();
-		registroRASEditar.login();
-		registroRASEditar.acessarMDR();
+//		registroRASEditar.login();
+//		registroRASEditar.acessarMDR();
 		registroRASEditar.editar();
 		registroRASEditar.afterClass();
 
@@ -639,8 +639,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRASDetalhes() {
 		registroRASDetalhes = new RegistroRASDetalhes();
 		registroRASDetalhes.beforeClass();
-		registroRASDetalhes.login();
-		registroRASDetalhes.acessarMDR();
+//		registroRASDetalhes.login();
+//		registroRASDetalhes.acessarMDR();
 		registroRASDetalhes.detalhes();
 		registroRASDetalhes.afterClass();
 
@@ -650,8 +650,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRASFiltroID() {
 		registroRASFiltroID = new RegistroRASFiltroID();
 		registroRASFiltroID.beforeClass();
-		registroRASFiltroID.login();
-		registroRASFiltroID.acessarMDR();
+//		registroRASFiltroID.login();
+//		registroRASFiltroID.acessarMDR();
 		registroRASFiltroID.filtroId();
 		registroRASFiltroID.afterClass();
 
@@ -661,8 +661,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRASVisualizar() {
 		registroRASVisualizar = new RegistroRASVisualizar();
 		registroRASVisualizar.beforeClass();
-		registroRASVisualizar.login();
-		registroRASVisualizar.acessarMDR();
+//		registroRASVisualizar.login();
+//		registroRASVisualizar.acessarMDR();
 		registroRASVisualizar.Visualizar();
 		registroRASVisualizar.afterClass();
 
@@ -672,8 +672,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRASExcluir() {
 		registroRASExcluir = new RegistroRASExcluir();
 		registroRASExcluir.beforeClass();
-		registroRASExcluir.login();
-		registroRASExcluir.acessarMDR();
+//		registroRASExcluir.login();
+//		registroRASExcluir.acessarMDR();
 		registroRASExcluir.excluir();
 		registroRASExcluir.afterClass();
 		System.out.println("-------------------Siscoserv > Registro RAS FIM-------------------------");
@@ -688,8 +688,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Registro RP-------------------------");
 		registroRPCriar = new RegistroRPCriar();
 		registroRPCriar.beforeClass();
-		registroRPCriar.login();
-		registroRPCriar.acessarMDR();
+//		registroRPCriar.login();
+//		registroRPCriar.acessarMDR();
 		registroRPCriar.criar();
 		registroRPCriar.afterClass();
 
@@ -699,8 +699,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRPEditar() {
 		registroRPEditar = new RegistroRPEditar();
 		registroRPEditar.beforeClass();
-		registroRPEditar.login();
-		registroRPEditar.acessarMDR();
+//		registroRPEditar.login();
+//		registroRPEditar.acessarMDR();
 		registroRPEditar.editar();
 		registroRPEditar.afterClass();
 
@@ -710,8 +710,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRPDetalhes() {
 		registroRPDetalhes = new RegistroRPDetalhes();
 		registroRPDetalhes.beforeClass();
-		registroRPDetalhes.login();
-		registroRPDetalhes.acessarMDR();
+//		registroRPDetalhes.login();
+//		registroRPDetalhes.acessarMDR();
 		registroRPDetalhes.detalhes();
 		registroRPDetalhes.afterClass();
 
@@ -721,8 +721,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRPFiltroID() {
 		registroRPFiltroID = new RegistroRPFiltroID();
 		registroRPFiltroID.beforeClass();
-		registroRPFiltroID.login();
-		registroRPFiltroID.acessarMDR();
+//		registroRPFiltroID.login();
+//		registroRPFiltroID.acessarMDR();
 		registroRPFiltroID.filtroId();
 		registroRPFiltroID.afterClass();
 
@@ -732,8 +732,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 	public void registroRPExcluir() {
 		registroRPExcluir = new RegistroRPExcluir();
 		registroRPExcluir.beforeClass();
-		registroRPExcluir.login();
-		registroRPExcluir.acessarMDR();
+//		registroRPExcluir.login();
+//		registroRPExcluir.acessarMDR();
 		registroRPExcluir.excluir();
 		registroRPExcluir.afterClass();
 		System.out.println("-------------------Siscoserv > Registro RP Fim-------------------------");
@@ -748,8 +748,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Registro RVS-------------------------");
 		registroRVSCriar = new RegistroRVSCriar();
 		registroRVSCriar.beforeClass();
-		registroRVSCriar.login();
-		registroRVSCriar.acessarMDR();
+//		registroRVSCriar.login();
+//		registroRVSCriar.acessarMDR();
 		registroRVSCriar.criar();
 		registroRVSCriar.afterClass();
 
@@ -760,8 +760,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		registroRVSDetalhes = new RegistroRVSDetalhes();
 		registroRVSDetalhes.beforeClass();
-		registroRVSDetalhes.login();
-		registroRVSDetalhes.acessarMDR();
+//		registroRVSDetalhes.login();
+//		registroRVSDetalhes.acessarMDR();
 		registroRVSDetalhes.detalhes();
 		registroRVSDetalhes.afterClass();
 
@@ -772,8 +772,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		registroRVSEditar = new RegistroRVSEditar();
 		registroRVSEditar.beforeClass();
-		registroRVSEditar.login();
-		registroRVSEditar.acessarMDR();
+//		registroRVSEditar.login();
+//		registroRVSEditar.acessarMDR();
 		registroRVSEditar.editar();
 		registroRVSEditar.afterClass();
 
@@ -784,8 +784,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		registroRVSVisualizar = new RegistroRVSVisualizar();
 		registroRVSVisualizar.beforeClass();
-		registroRVSVisualizar.login();
-		registroRVSVisualizar.acessarMDR();
+//		registroRVSVisualizar.login();
+//		registroRVSVisualizar.acessarMDR();
 		registroRVSVisualizar.Visualizar();
 		registroRVSVisualizar.afterClass();
 
@@ -796,8 +796,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		registroRVSFiltroID = new RegistroRVSFiltroID();
 		registroRVSFiltroID.beforeClass();
-		registroRVSFiltroID.login();
-		registroRVSFiltroID.acessarMDR();
+//		registroRVSFiltroID.login();
+//		registroRVSFiltroID.acessarMDR();
 		registroRVSFiltroID.filtroId();
 		registroRVSFiltroID.afterClass();
 
@@ -808,8 +808,8 @@ public class AutomacoesMDR15 extends TestBaseSteven{
 
 		registroRVSExcluir = new RegistroRVSExcluir();
 		registroRVSExcluir.beforeClass();
-		registroRVSExcluir.login();
-		registroRVSExcluir.acessarMDR();
+//		registroRVSExcluir.login();
+//		registroRVSExcluir.acessarMDR();
 		registroRVSExcluir.excluir();
 		registroRVSExcluir.afterClass();
 

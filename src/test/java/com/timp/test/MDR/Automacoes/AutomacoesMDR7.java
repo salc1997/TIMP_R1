@@ -514,10 +514,10 @@ public class AutomacoesMDR7 {
 	public void enquadramentoExcluirMassa() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 		System.out.println("------------------- Siscoserv > Enquadramento FIN-------------------------");
 	}
@@ -528,10 +528,10 @@ public class AutomacoesMDR7 {
 	public void CFOPEditar() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 	}
 	
@@ -539,10 +539,10 @@ public class AutomacoesMDR7 {
 	public void cFODetalhe() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 	}
 	
@@ -550,10 +550,10 @@ public class AutomacoesMDR7 {
 	public void cFOVisualizar() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 	}
 	

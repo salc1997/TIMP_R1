@@ -32,24 +32,12 @@ public class RegistroRVSFiltroID extends TestBaseEliel{
 		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void filtroId() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = registroRVSFiltroIDPO.filtro();
-
 		assertTrue(sucesso, Filtros);
 
 	}

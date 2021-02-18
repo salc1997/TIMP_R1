@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,8 +46,12 @@
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="190145" started-at="2021-02-17T21:43:07Z" finished-at="2021-02-17T21:46:17Z">
 =======
@@ -91,8 +96,12 @@
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-02-18T00:38:44Z" name="Default suite" finished-at="2021-02-18T00:40:07Z" duration-ms="83330">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="190145" started-at="2021-02-17T21:43:07Z" finished-at="2021-02-17T21:46:17Z">
       <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
@@ -159,9 +168,15 @@
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-02-18T00:38:44Z" name="Default test" finished-at="2021-02-18T00:40:07Z" duration-ms="83330">
+      <class name="com.timp.test.TFP.Configurações.Configurações.Subperíodo.SubperíodoFiltroID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TFP.Configurações.Configurações.Subperíodo.SubperíodoFiltroID@6caf0677]" started-at="2021-02-18T00:38:44Z" name="beforeClass" finished-at="2021-02-18T00:39:06Z" duration-ms="22200" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="criar()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa@78b729e6]" name="criar" duration-ms="136747" started-at="2021-02-17T21:43:21Z" finished-at="2021-02-17T21:45:38Z">
 =======
@@ -185,8 +200,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular@13d4992d]" started-at="2021-02-15T16:54:43Z" name="login" finished-at="2021-02-15T16:54:50Z" duration-ms="7413" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="Filtro()[pri:1, instance:com.timp.test.TFP.Configurações.Configurações.Subperíodo.SubperíodoFiltroID@6caf0677]" started-at="2021-02-18T00:39:06Z" name="Filtro" finished-at="2021-02-18T00:40:03Z" duration-ms="56785" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         </test-method> <!-- login -->
@@ -713,9 +732,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoExcluir@20435c40]" started-at="2021-02-17T12:17:58Z" name="afterClass" finished-at="2021-02-17T12:18:02Z" duration-ms="4324" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        </test-method> <!-- Filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.Configurações.Subperíodo.SubperíodoFiltroID@6caf0677]" started-at="2021-02-18T00:40:03Z" name="afterClass" finished-at="2021-02-18T00:40:07Z" duration-ms="4327" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -786,6 +810,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Configurações.Subperíodo.SubperíodoFiltroID -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -27,11 +28,17 @@
   <test name="Default test(failed)" parallel="none">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
 =======
@@ -41,14 +48,21 @@
       <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="filtrosBiblioteca"/>
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="asignarValores"/>
 =======
@@ -135,7 +149,10 @@
 =======
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="criar"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -145,14 +162,20 @@
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 =======
           <include name="copiar"/>
           <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa -->
 =======
@@ -188,6 +211,9 @@
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

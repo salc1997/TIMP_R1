@@ -60,6 +60,9 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		public WebElement nomeDeHierarquia;
 		@FindBy(xpath = "//input[contains(@placeholder,\"Nome da Aba\")]")
 		public WebElement nomeDaAba;
+		
+		@FindBy(xpath = "//input[contains(@placeholder,\"Preencher Nome\")]")
+		public WebElement nomeDaAba2;
 	
 		// Nome da Hierarquia
 		@FindBy(xpath = "//input[contains(@placeholder,\"Nome da Hierarquia\")]")
@@ -102,10 +105,12 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		public WebElement nomeHirarquia;
 		@FindBy(xpath = "//div[contains(@id,\"00\")]/div/label/span")
 		public WebElement nomeHirarquiaO;
-		@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
+		@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo\"]")
 		public WebElement tributo;
-		@FindBy(xpath = "//*[@id=\"05\"]/div[1]/label/span")
+		@FindBy(xpath = "//*[@id=\"12\"]/div[1]/label/span")
 		public WebElement tributoO;
+		@FindBy(xpath = "//*[@id=\"overlay\"]/div/div[6]")
+		public WebElement tributoMove;
 		@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 		public WebElement empresa;
 		@FindBy(xpath = "//div[contains(@id,\"1000\")]/div/label/span")
@@ -142,6 +147,8 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		public WebElement cancelar;
 		@FindBy(xpath = "//button[text()=\"Fechar\"]")
 		public WebElement fechar;
+		@FindBy(xpath = "/html/body/div[4]/div/div[3]/button[1]")
+		public WebElement fechar2;
 		
 		// primer subnivel
 
@@ -196,7 +203,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		@FindBy(xpath = "//button[text()=\"Adicionar campo de saída\"]")
 		public WebElement campoSaidaAdd;
 		
-		@FindBy(xpath = "//input[@placeholder=\"Preencher Nome\"]")
+		@FindBy(xpath = "//input[@placeholder=\"Selecionar Aba\"]")
 		public WebElement aba;
 		@FindBy(xpath = "//li[text()=\"Teste QA PREUBA 007\"]")
 		public WebElement abaOpc;
@@ -212,13 +219,16 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		
 		@FindBy(xpath = "//input[@placeholder=\"Selecionar Relatório \"]")
 		public WebElement relatorio;
-		@FindBy(xpath = "//li[text()=\"8005235 - TA - Tarefas de usuário - Executar Relatório BRB - NÃO MEXER\"]")
+		@FindBy(xpath = "//li[text()=\"8005216 - TA - BCB(Ajustes e Pagamentos) - NÃO MEXER\"]")
 		public WebElement relatorioOpc;
 		
 		@FindBy(xpath = "//input[@placeholder=\"Selecionar Valor\"]")
 		public WebElement valorAjuste;
 		@FindBy(xpath = "//li[text()=\"BC IPI\"]")
 		public WebElement valorAjusteOpc;
+		
+		@FindBy(xpath = "//li[text()=\"Valor do ajuste\"]")
+		public WebElement valorAjusteSeleccion;
 		
 		@FindBy(xpath = "//*[@id=\"main-content\"]/div/div/div[1]/div/div[1]/div/div/div/ul/li[9]/button/span")
 		public WebElement verAjuste;
@@ -635,9 +645,10 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 //		nomeHirarquiaO.click();
 //		nomeHirarquiaO.sendKeys(Keys.ESCAPE);
 //		sleep(1000);
-
 		tributo.click();
-		actionsMoveToElementElement(tributoO);
+		sleep(2000);
+		tributo.sendKeys("IRPJ");
+		//actionsMoveToElementElement(tributoMove);
 		sleep(3000);
 		tributoO.click();
 		tributoO.sendKeys(Keys.ESCAPE);
@@ -760,7 +771,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		confResultado.click();
 		sleep(3000);
 		confResultadoSpan.click();
-		sleep(2000);
+		sleep(4000);
 		confResultadoAdd.click();
 		sleep(3000);
 		
@@ -777,42 +788,49 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		plus.click();
 		sleep(4000);
 		
+		campoSaidaAdd.click();
+		sleep(4000);
+		
 		aba.click();
 		sleep(2000);
 		abaOpc.click();
 		sleep(2000);
 		
-		nomeDaAba.sendKeys("TESTE QA");
+		nomeDaAba2.sendKeys("TESTE QA");
 		sleep(2000);
 		
 		criar.click();
-		sleep(2000);
+		sleep(4000);
 		
-		fechar.click();
+		fechar2.click();
 		sleep(4000);
 		fechar.click();
 		sleep(2000);
 		
 		campoLinha.click();
 		sleep(2000);
+		campoLinha.sendKeys("Relatório");
+		sleep(2000);
 		campoLinhaOpc.click();
 		sleep(2000);
 		
 		relatorio.click();
 		sleep(2000);
-		relatorioOpc.click();
+		relatorio.sendKeys("8005216 - TA - BCB(Ajustes e Pagamentos) - NÃO");
+		sleep(2000);
+		relatorio.sendKeys(Keys. ENTER);
 		sleep(5000);
 		
 		valorAjuste.click();
 		sleep(2000);
-		valorAjusteOpc.click();
-		sleep(2000);
-		
+		valorAjusteSeleccion.click();
+		sleep(4000);
+
 		verAjuste.click();
-		sleep(5000);
+		sleep(4000);
 		
 		addConfAjuste.click();
-		sleep(2000);
+		sleep(4000);
 		
 		tipoAjuste.click();
 		sleep(2000);

@@ -212,6 +212,8 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeAcidenteCriar = new AgenteCausadorDeAcidenteCriar();
 		agenteCausadorDeAcidenteCriar.beforeClass();
+//		agenteCausadorDeAcidenteCriar.login();
+//		agenteCausadorDeAcidenteCriar.acessarMDR();
 		agenteCausadorDeAcidenteCriar.criar();
 		agenteCausadorDeAcidenteCriar.afterClass();
 
@@ -222,6 +224,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeAcidenteEditar = new AgenteCausadorDeAcidenteEditar();
 		agenteCausadorDeAcidenteEditar.beforeClass();
+
+
+//		agenteCausadorDeAcidenteEditar.login();
+//		agenteCausadorDeAcidenteEditar.acessarMDR();
+
 		agenteCausadorDeAcidenteEditar.editar();
 		agenteCausadorDeAcidenteEditar.afterClass();
 
@@ -232,6 +239,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeAcidenteVisualizar = new AgenteCausadorDeAcidenteVisualizar();
 		agenteCausadorDeAcidenteVisualizar.beforeClass();
+
+
+//		agenteCausadorDeAcidenteVisualizar.login();
+//		agenteCausadorDeAcidenteVisualizar.acessarMDR();
+
 		agenteCausadorDeAcidenteVisualizar.visualizar();
 		agenteCausadorDeAcidenteVisualizar.afterClass();
 
@@ -242,6 +254,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeAcidenteExcluir = new AgenteCausadorDeAcidenteExcluir();
 		agenteCausadorDeAcidenteExcluir.beforeClass();
+
+
+//		agenteCausadorDeAcidenteExcluir.login();
+//		agenteCausadorDeAcidenteExcluir.acessarMDR();
+
 		agenteCausadorDeAcidenteExcluir.excluir();
 		agenteCausadorDeAcidenteExcluir.afterClass();
 
@@ -260,6 +277,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEntreLotacaoCriar = new CompatibilidadeEntreLotacaoCriar();
 		compatibilidadeEntreLotacaoCriar.beforeClass();
+
+
+//		compatibilidadeEntreLotacaoCriar.login();
+//		compatibilidadeEntreLotacaoCriar.acessarMDR();
+
 		compatibilidadeEntreLotacaoCriar.criar();
 		compatibilidadeEntreLotacaoCriar.afterClass();
 
@@ -270,6 +292,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEntreLotacaoEditar = new CompatibilidadeEntreLotacaoEditar();
 		compatibilidadeEntreLotacaoEditar.beforeClass();
+
+
+//		compatibilidadeEntreLotacaoEditar.login();
+//		compatibilidadeEntreLotacaoEditar.acessarMDR();
+
 		compatibilidadeEntreLotacaoEditar.editar();
 		compatibilidadeEntreLotacaoEditar.afterClass();
 
@@ -280,6 +307,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEntreLotacaoVisualizar = new CompatibilidadeEntreLotacaoVisualizar();
 		compatibilidadeEntreLotacaoVisualizar.beforeClass();
+
+
+//		compatibilidadeEntreLotacaoVisualizar.login();
+//		compatibilidadeEntreLotacaoVisualizar.acessarMDR();
+
 		compatibilidadeEntreLotacaoVisualizar.visualizar();
 		compatibilidadeEntreLotacaoVisualizar.afterClass();
 
@@ -292,6 +324,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEntreLotacaoExcluir = new CompatibilidadeEntreLotacaoExcluir();
 		compatibilidadeEntreLotacaoExcluir.beforeClass();
+
+
+//		compatibilidadeEntreLotacaoExcluir.login();
+//		compatibilidadeEntreLotacaoExcluir.acessarMDR();
+
 		compatibilidadeEntreLotacaoExcluir.excluir();
 		compatibilidadeEntreLotacaoExcluir.afterClass();
 
@@ -307,6 +344,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		registroRFCriar = new RegistroRFCriar();
 		registroRFCriar.beforeClass();
+
+
+//		registroRFCriar.login();
+//		registroRFCriar.acessarMDR();
+
 		registroRFCriar.criar();
 		registroRFCriar.afterClass();
 
@@ -317,6 +359,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		registroRFVisualizar = new RegistroRFVisualizar();
 		registroRFVisualizar.beforeClass();
+
+
+//		registroRFVisualizar.login();
+//		registroRFVisualizar.acessarMDR();
+
 		registroRFVisualizar.visualizar();
 		registroRFVisualizar.afterClass();
 
@@ -327,6 +374,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		registroRFDetalhes = new RegistroRFDetalhes();
 		registroRFDetalhes.beforeClass();
+
+
+//		registroRFDetalhes.login();
+//		registroRFDetalhes.acessarMDR();
+
 		registroRFDetalhes.detalhes();
 		registroRFDetalhes.afterClass();
 
@@ -337,6 +389,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		registroRFEditar = new RegistroRFEditar();
 		registroRFEditar.beforeClass();
+
+
+//		registroRFEditar.login();
+//		registroRFEditar.acessarMDR();
+
 		registroRFEditar.Editar();
 		registroRFEditar.afterClass();
 
@@ -347,6 +404,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		registroRFExcluir = new RegistroRFExcluir();
 		registroRFExcluir.beforeClass();
+
+
+//		registroRFExcluir.login();
+//		registroRFExcluir.acessarMDR();
+
 		registroRFExcluir.excluir();
 		registroRFExcluir.afterClass();
 
@@ -365,6 +427,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeArquivosESocialCriar = new TiposDeArquivosESocialCriar();
 		tiposDeArquivosESocialCriar.beforeClass();
+
+
+//		tiposDeArquivosESocialCriar.login();
+//		tiposDeArquivosESocialCriar.acessarMDR();
+
 		tiposDeArquivosESocialCriar.criar();
 		tiposDeArquivosESocialCriar.afterClass();
 
@@ -375,6 +442,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeArquivosESocialEditar = new TiposDeArquivosESocialEditar();
 		tiposDeArquivosESocialEditar.beforeClass();
+
+
+//		tiposDeArquivosESocialEditar.login();
+//		tiposDeArquivosESocialEditar.acessarMDR();
+
 		tiposDeArquivosESocialEditar.editar();
 		tiposDeArquivosESocialEditar.afterClass();
 
@@ -385,6 +457,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeArquivosESocialVisualizar = new TiposDeArquivosESocialVisualizar();
 		tiposDeArquivosESocialVisualizar.beforeClass();
+
+
+//		tiposDeArquivosESocialVisualizar.login();
+//		tiposDeArquivosESocialVisualizar.acessarMDR();
+
 		tiposDeArquivosESocialVisualizar.visualizar();
 		tiposDeArquivosESocialVisualizar.afterClass();
 
@@ -398,6 +475,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeArquivosESocialExcluir = new TiposDeArquivosESocialExcluir();
 		tiposDeArquivosESocialExcluir.beforeClass();
+
+
+//		tiposDeArquivosESocialExcluir.login();
+//		tiposDeArquivosESocialExcluir.acessarMDR();
+
 		tiposDeArquivosESocialExcluir.excluir();
 		tiposDeArquivosESocialExcluir.afterClass();
 
@@ -410,6 +492,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeArquivosESocialExcluirEmMassa = new TiposDeArquivosESocialExcluirEmMassa();
 		tiposDeArquivosESocialExcluirEmMassa.beforeClass();
+
+
+//		tiposDeArquivosESocialExcluirEmMassa.login();
+//		tiposDeArquivosESocialExcluirEmMassa.acessarMDR();
+
 		tiposDeArquivosESocialExcluirEmMassa.criar();
 		tiposDeArquivosESocialExcluirEmMassa.afterClass();
 
@@ -428,6 +515,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLotacaoTributarioCriar = new TiposDeLotacaoTributarioCriar();
 		tiposDeLotacaoTributarioCriar.beforeClass();
+
+
+//		tiposDeLotacaoTributarioCriar.login();
+//		tiposDeLotacaoTributarioCriar.acessarMDR();
+
 		tiposDeLotacaoTributarioCriar.criar();
 		tiposDeLotacaoTributarioCriar.afterClass();
 
@@ -438,6 +530,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLotacaoTributarioEditar = new TiposDeLotacaoTributarioEditar();
 		tiposDeLotacaoTributarioEditar.beforeClass();
+
+
+//		tiposDeLotacaoTributarioEditar.login();
+//		tiposDeLotacaoTributarioEditar.acessarMDR();
+
 		tiposDeLotacaoTributarioEditar.editar();
 		tiposDeLotacaoTributarioEditar.afterClass();
 
@@ -448,6 +545,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLotacaoTributarioVisualizar = new TiposDeLotacaoTributarioVisualizar();
 		tiposDeLotacaoTributarioVisualizar.beforeClass();
+
+
+//		tiposDeLotacaoTributarioVisualizar.login();
+//		tiposDeLotacaoTributarioVisualizar.acessarMDR();
+
 		tiposDeLotacaoTributarioVisualizar.visualizar();
 		tiposDeLotacaoTributarioVisualizar.afterClass();
 
@@ -460,6 +562,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLotacaoTributarioExcluir = new TiposDeLotacaoTributarioExcluir();
 		tiposDeLotacaoTributarioExcluir.beforeClass();
+
+
+//		tiposDeLotacaoTributarioExcluir.login();
+//		tiposDeLotacaoTributarioExcluir.acessarMDR();
+
 		tiposDeLotacaoTributarioExcluir.excluir();
 		tiposDeLotacaoTributarioExcluir.afterClass();
 
@@ -472,6 +579,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLotacaoTributarioExcluirEmMassa = new TiposDeLotacaoTributarioExcluirEmMassa();
 		tiposDeLotacaoTributarioExcluirEmMassa.beforeClass();
+
+
+//		tiposDeLotacaoTributarioExcluirEmMassa.login();
+//		tiposDeLotacaoTributarioExcluirEmMassa.acessarMDR();
+
 		tiposDeLotacaoTributarioExcluirEmMassa.criar();
 		tiposDeLotacaoTributarioExcluirEmMassa.afterClass();
 
@@ -490,6 +602,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		motivoDeAfastamentoCriar = new MotivoDeAfastamentoCriar();
 		motivoDeAfastamentoCriar.beforeClass();
+
+
+//		motivoDeAfastamentoCriar.login();
+//		motivoDeAfastamentoCriar.acessarMDR();
+
 		motivoDeAfastamentoCriar.criar();
 		motivoDeAfastamentoCriar.afterClass();
 
@@ -500,6 +617,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		motivoDeAfastamentoEditar = new MotivoDeAfastamentoEditar();
 		motivoDeAfastamentoEditar.beforeClass();
+
+
+//		motivoDeAfastamentoEditar.login();
+//		motivoDeAfastamentoEditar.acessarMDR();
+
 		motivoDeAfastamentoEditar.editar();
 		motivoDeAfastamentoEditar.afterClass();
 
@@ -510,6 +632,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		motivoDeAfastamentoVisualizar = new MotivoDeAfastamentoVisualizar();
 		motivoDeAfastamentoVisualizar.beforeClass();
+
+
+//		motivoDeAfastamentoVisualizar.login();
+//		motivoDeAfastamentoVisualizar.acessarMDR();
+
 		motivoDeAfastamentoVisualizar.visualizar();
 		motivoDeAfastamentoVisualizar.afterClass();
 
@@ -521,7 +648,13 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 	public void motivoDeAfastamentoExcluir() {
 
 		motivoDeAfastamentoExcluir = new MotivoDeAfastamentoExcluir();
+
 		motivoDeAfastamentoExcluir.beforeClass();;
+
+		motivoDeAfastamentoExcluir.beforeClass();
+//		motivoDeAfastamentoExcluir.login();
+//		motivoDeAfastamentoExcluir.acessarMDR();
+
 		motivoDeAfastamentoExcluir.excluir();
 		motivoDeAfastamentoExcluir.afterClass();
 
@@ -534,6 +667,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		motivoDeAfastamentoExcluirEmMassa = new MotivoDeAfastamentoExcluirEmMassa();
 		motivoDeAfastamentoExcluirEmMassa.beforeClass();
+
+
+//		motivoDeAfastamentoExcluirEmMassa.login();
+//		motivoDeAfastamentoExcluirEmMassa.acessarMDR();
+
 		motivoDeAfastamentoExcluirEmMassa.criar();
 		motivoDeAfastamentoExcluirEmMassa.afterClass();
 		
@@ -549,6 +687,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLogradouroCriar = new TiposDeLogradouroCriar();
 		tiposDeLogradouroCriar.beforeClass();
+
+
+//		tiposDeLogradouroCriar.login();
+//		tiposDeLogradouroCriar.acessarMDR();
+
 		tiposDeLogradouroCriar.criar();
 		tiposDeLogradouroCriar.afterClass();
 
@@ -559,6 +702,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLogradouroEditar = new TiposDeLogradouroEditar();
 		tiposDeLogradouroEditar.beforeClass();
+
+
+//		tiposDeLogradouroEditar.login();
+//		tiposDeLogradouroEditar.acessarMDR();
+
 		tiposDeLogradouroEditar.editar();
 		tiposDeLogradouroEditar.afterClass();
 
@@ -569,6 +717,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLogradouroVisualizar = new TiposDeLogradouroVisualizar();
 		tiposDeLogradouroVisualizar.beforeClass();
+
+
+//		tiposDeLogradouroVisualizar.login();
+//		tiposDeLogradouroVisualizar.acessarMDR();
+
 		tiposDeLogradouroVisualizar.visualizar();
 		tiposDeLogradouroVisualizar.afterClass();
 
@@ -581,6 +734,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLogradouroExcluir = new TiposDeLogradouroExcluir();
 		tiposDeLogradouroExcluir.beforeClass();
+
+
+//		tiposDeLogradouroExcluir.login();
+//		tiposDeLogradouroExcluir.acessarMDR();
+
 		tiposDeLogradouroExcluir.excluir();
 		tiposDeLogradouroExcluir.afterClass();
 
@@ -593,6 +751,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		tiposDeLogradouroExcluirEmMasa = new TiposDeLogradouroExcluirEmMasa();
 		tiposDeLogradouroExcluirEmMasa.beforeClass();
+
+
+//		tiposDeLogradouroExcluirEmMasa.login();
+//		tiposDeLogradouroExcluirEmMasa.acessarMDR();
+
 		tiposDeLogradouroExcluirEmMasa.excluir();
 		tiposDeLogradouroExcluirEmMasa.afterClass();
 		
@@ -612,6 +775,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		naturezaJuridicaCriar = new NaturezaJuridicaCriar();
 		naturezaJuridicaCriar.beforeClass();
+
+
+//		naturezaJuridicaCriar.login();
+//		naturezaJuridicaCriar.acessarMDR();
+
 		naturezaJuridicaCriar.criar();
 		naturezaJuridicaCriar.afterClass();
 
@@ -622,6 +790,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		naturezaJuridicaEditar = new NaturezaJuridicaEditar();
 		naturezaJuridicaEditar.beforeClass();
+
+
+//		naturezaJuridicaEditar.login();
+//		naturezaJuridicaEditar.acessarMDR();
+
 		naturezaJuridicaEditar.editar();
 		naturezaJuridicaEditar.afterClass();
 
@@ -632,6 +805,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		naturezaJuridicaVisualizar = new NaturezaJuridicaVisualizar();
 		naturezaJuridicaVisualizar.beforeClass();
+
+
+//		naturezaJuridicaVisualizar.login();
+//		naturezaJuridicaVisualizar.acessarMDR();
+
 		naturezaJuridicaVisualizar.visualizar();
 		naturezaJuridicaVisualizar.afterClass();
 
@@ -644,6 +822,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		naturezaJuridicaExcluir = new NaturezaJuridicaExcluir();
 		naturezaJuridicaExcluir.beforeClass();
+
+
+//		naturezaJuridicaExcluir.login();
+//		naturezaJuridicaExcluir.acessarMDR();
+
 		naturezaJuridicaExcluir.excluir();
 		naturezaJuridicaExcluir.afterClass();
 	}
@@ -654,7 +837,13 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		naturezaJuridicaExcluirMassa = new NaturezaJuridicaExcluirMassa();
 		naturezaJuridicaExcluirMassa.beforeClass();
+
 		//naturezaJuridicaExcluirMassa.criar();
+
+//		naturezaJuridicaExcluirMassa.login();
+//		naturezaJuridicaExcluirMassa.acessarMDR();
+//		naturezaJuridicaExcluirMassa.criar();
+
 		naturezaJuridicaExcluirMassa.excluirMassa();
 		naturezaJuridicaExcluirMassa.afterClass();
 
@@ -672,6 +861,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		unidadeDeMedidaCriar = new UnidadeDeMedidaCriar();
 		unidadeDeMedidaCriar.beforeClass();
+
+
+//		unidadeDeMedidaCriar.login();
+//		unidadeDeMedidaCriar.acessarMDR();
+
 		unidadeDeMedidaCriar.criar();
 		unidadeDeMedidaCriar.afterClass();
 
@@ -682,6 +876,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		unidadeDeMedidaEditar = new UnidadeDeMedidaEditar();
 		unidadeDeMedidaEditar.beforeClass();
+
+
+//		unidadeDeMedidaEditar.login();
+//		unidadeDeMedidaEditar.acessarMDR();
+
 		unidadeDeMedidaEditar.editar();
 		unidadeDeMedidaEditar.afterClass();
 
@@ -692,6 +891,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		unidadeDeMedidaVisualizar = new UnidadeDeMedidaVisualizar();
 		unidadeDeMedidaVisualizar.beforeClass();
+
+
+//		unidadeDeMedidaVisualizar.login();
+//		unidadeDeMedidaVisualizar.acessarMDR();
+
 		unidadeDeMedidaVisualizar.visualizar();
 		unidadeDeMedidaVisualizar.afterClass();
 
@@ -702,6 +906,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		unidadeDeMedidaDetalhes = new UnidadeDeMedidaDetalhes();
 		unidadeDeMedidaDetalhes.beforeClass();
+
+
+//		unidadeDeMedidaDetalhes.login();
+//		unidadeDeMedidaDetalhes.acessarMDR();
+
 		unidadeDeMedidaDetalhes.detalhes();
 		unidadeDeMedidaDetalhes.afterClass();
 
@@ -713,6 +922,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		unidadeDeMedidaExcluir = new UnidadeDeMedidaExcluir();
 		unidadeDeMedidaExcluir.beforeClass();
+
+
+//		unidadeDeMedidaExcluir.login();
+//		unidadeDeMedidaExcluir.acessarMDR();
+
 		unidadeDeMedidaExcluir.excluir();
 		unidadeDeMedidaExcluir.afterClass();
 
@@ -724,6 +938,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		unidadeDeMedidaExcluirEmMasa = new UnidadeDeMedidaExcluirEmMasa();
 		unidadeDeMedidaExcluirEmMasa.beforeClass();
+
+
+//		unidadeDeMedidaExcluirEmMasa.login();
+//		unidadeDeMedidaExcluirEmMasa.acessarMDR();
+
 		unidadeDeMedidaExcluirEmMasa.excluir();
 		unidadeDeMedidaExcluirEmMasa.afterClass();
 
@@ -734,6 +953,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		unidadeDeMedidaFiltroCodigo = new UnidadeDeMedidaFiltroCodigo();
 		unidadeDeMedidaFiltroCodigo.beforeClass();
+
+
+//		unidadeDeMedidaFiltroCodigo.login();
+//		unidadeDeMedidaFiltroCodigo.acessarMDR();
+
 		unidadeDeMedidaFiltroCodigo.filtroCodigo();
 		unidadeDeMedidaFiltroCodigo.afterClass();
 		
@@ -750,6 +974,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEnCatTrabCriar = new CompatibilidadeEnCatTrabCriar();
 		compatibilidadeEnCatTrabCriar.beforeClass();
+
+
+//		compatibilidadeEnCatTrabCriar.login();
+//		compatibilidadeEnCatTrabCriar.acessarMDR();
+
 		compatibilidadeEnCatTrabCriar.criar();
 		compatibilidadeEnCatTrabCriar.afterClass();
 
@@ -761,6 +990,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEnCatTrabEditar = new CompatibilidadeEnCatTrabEditar();
 		compatibilidadeEnCatTrabEditar.beforeClass();
+
+
+//		compatibilidadeEnCatTrabEditar.login();
+//		compatibilidadeEnCatTrabEditar.acessarMDR();
+
 		compatibilidadeEnCatTrabEditar.editar();
 		compatibilidadeEnCatTrabEditar.afterClass();
 
@@ -772,6 +1006,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEnCatTrabVisualizar = new CompatibilidadeEnCatTrabVisualizar();
 		compatibilidadeEnCatTrabVisualizar.beforeClass();
+
+
+//		compatibilidadeEnCatTrabVisualizar.login();
+//		compatibilidadeEnCatTrabVisualizar.acessarMDR();
+
 		compatibilidadeEnCatTrabVisualizar.visualizar();
 		compatibilidadeEnCatTrabVisualizar.afterClass();
 
@@ -783,6 +1022,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadeEnCatTrabExcluir = new CompatibilidadeEnCatTrabExcluir();
 		compatibilidadeEnCatTrabExcluir.beforeClass();
+
+
+//		compatibilidadeEnCatTrabExcluir.login();
+//		compatibilidadeEnCatTrabExcluir.acessarMDR();
+
 		compatibilidadeEnCatTrabExcluir.excluir();
 		compatibilidadeEnCatTrabExcluir.afterClass();
 
@@ -795,6 +1039,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		compatibilidadEnCatTrabExcluirMassa = new CompatibilidadEnCatTrabExcluirMassa();
 		compatibilidadEnCatTrabExcluirMassa.beforeClass();
+
+
+//		compatibilidadEnCatTrabExcluirMassa.login();
+//		compatibilidadEnCatTrabExcluirMassa.acessarMDR();
+
 		compatibilidadEnCatTrabExcluirMassa.criar();
 		compatibilidadEnCatTrabExcluirMassa.afterClass();
 
@@ -811,6 +1060,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeSGDPCriar = new AgenteCausadorDeSGDPCriar();
 		agenteCausadorDeSGDPCriar.beforeClass();
+
+
+//		agenteCausadorDeSGDPCriar.login();
+//		agenteCausadorDeSGDPCriar.acessarMDR();
+
 		agenteCausadorDeSGDPCriar.criar();
 		agenteCausadorDeSGDPCriar.afterClass();
 
@@ -820,6 +1074,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeSGDPEditar = new AgenteCausadorDeSGDPEditar();
 		agenteCausadorDeSGDPEditar.beforeClass();
+
+
+//		agenteCausadorDeSGDPEditar.login();
+//		agenteCausadorDeSGDPEditar.acessarMDR();
+
 		agenteCausadorDeSGDPEditar.editar();
 		agenteCausadorDeSGDPEditar.afterClass();
 
@@ -829,6 +1088,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeSGDPVisualizar = new AgenteCausadorDeSGDPVisualizar();
 		agenteCausadorDeSGDPVisualizar.beforeClass();
+
+
+//		agenteCausadorDeSGDPVisualizar.login();
+//		agenteCausadorDeSGDPVisualizar.acessarMDR();
+
 		agenteCausadorDeSGDPVisualizar.visualizar();
 		agenteCausadorDeSGDPVisualizar.afterClass();
 
@@ -838,6 +1102,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeSGDPExcluir = new AgenteCausadorDeSGDPExcluir();
 		agenteCausadorDeSGDPExcluir.beforeClass();
+
+
+//		agenteCausadorDeSGDPExcluir.login();
+//		agenteCausadorDeSGDPExcluir.acessarMDR();
+
 		agenteCausadorDeSGDPExcluir.excluirr();
 		agenteCausadorDeSGDPExcluir.afterClass();
 
@@ -847,6 +1116,11 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 
 		agenteCausadorDeSGDPExlusionMassa = new AgenteCausadorDeSGDPExlusionMassa();
 		agenteCausadorDeSGDPExlusionMassa.beforeClass();
+
+
+//		agenteCausadorDeSGDPExlusionMassa.login();
+//		agenteCausadorDeSGDPExlusionMassa.acessarMDR();
+
 		agenteCausadorDeSGDPExlusionMassa.criar();
 		agenteCausadorDeSGDPExlusionMassa.afterClass();
 

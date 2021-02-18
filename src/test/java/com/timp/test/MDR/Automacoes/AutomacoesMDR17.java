@@ -274,8 +274,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 08 - Classificacao Tributaria-------------------------");
 		compatibilidadeEntreLotaçãoExcluirEmMassa = new CompatibilidadeEntreLotaçãoExcluirEmMassa();
 		compatibilidadeEntreLotaçãoExcluirEmMassa.beforeClass();
-		compatibilidadeEntreLotaçãoExcluirEmMassa.login();
-		compatibilidadeEntreLotaçãoExcluirEmMassa.acessarMDR();
+//		compatibilidadeEntreLotaçãoExcluirEmMassa.login();
+//		compatibilidadeEntreLotaçãoExcluirEmMassa.acessarMDR();
 		compatibilidadeEntreLotaçãoExcluirEmMassa.criar();
 		compatibilidadeEntreLotaçãoExcluirEmMassa.afterClass();
 
@@ -300,8 +300,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Tabela De Apoio E Social > Tabela 14  - Agente Causador De Acidente -------------------------");
 		agenteCausadorDeAcidenteExcluirEmMassa = new AgenteCausadorDeAcidenteExcluirEmMassa();
 		agenteCausadorDeAcidenteExcluirEmMassa.beforeClass();
-		agenteCausadorDeAcidenteExcluirEmMassa.login();
-		agenteCausadorDeAcidenteExcluirEmMassa.acessarMDR();
+//		agenteCausadorDeAcidenteExcluirEmMassa.login();
+//		agenteCausadorDeAcidenteExcluirEmMassa.acessarMDR();
 		agenteCausadorDeAcidenteExcluirEmMassa.criar();
 		agenteCausadorDeAcidenteExcluirEmMassa.afterClass();
 
@@ -384,8 +384,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Registro RF-------------------------");
 		registroRFFiltroPorID = new RegistroRFFiltroPorID();
 		registroRFFiltroPorID.beforeClass();
-		registroRFFiltroPorID.login();
-		registroRFFiltroPorID.acessarMDR();
+//		registroRFFiltroPorID.login();
+//		registroRFFiltroPorID.acessarMDR();
 		registroRFFiltroPorID.filtro();
 		registroRFFiltroPorID.afterClass();
 	}
@@ -509,8 +509,8 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Siscoserv > Registro RF-------------------------");
 		registroRFExcluirEmMassa = new RegistroRFExcluirEmMassa();
 		registroRFExcluirEmMassa.beforeClass();
-		registroRFExcluirEmMassa.login();
-		registroRFExcluirEmMassa.acessarMDR();
+//		registroRFExcluirEmMassa.login();
+//		registroRFExcluirEmMassa.acessarMDR();
 		registroRFExcluirEmMassa.criar();
 		registroRFExcluirEmMassa.afterClass();
 	}

@@ -756,8 +756,8 @@ public class AutomaçõesMDR7 {
 	public void compatibilidadeEnCatTrabVisualizar() {		
 		compatibilidadeEnCatTrabVisualizar = new CompatibilidadeEnCatTrabVisualizar();
 		compatibilidadeEnCatTrabVisualizar.beforeClass();
-		compatibilidadeEnCatTrabVisualizar.login();
-		compatibilidadeEnCatTrabVisualizar.acessarMDR();
+//		compatibilidadeEnCatTrabVisualizar.login();
+//		compatibilidadeEnCatTrabVisualizar.acessarMDR();
 		compatibilidadeEnCatTrabVisualizar.visualizar();
 		compatibilidadeEnCatTrabVisualizar.afterClass();		
 	}
@@ -766,8 +766,8 @@ public class AutomaçõesMDR7 {
 	public void compatibilidadeEnCatTrabExcluir() {		
 		compatibilidadeEnCatTrabExcluir = new CompatibilidadeEnCatTrabExcluir();
 		compatibilidadeEnCatTrabExcluir.beforeClass();
-		compatibilidadeEnCatTrabExcluir.login();
-		compatibilidadeEnCatTrabExcluir.acessarMDR();
+//		compatibilidadeEnCatTrabExcluir.login();
+//		compatibilidadeEnCatTrabExcluir.acessarMDR();
 		compatibilidadeEnCatTrabExcluir.excluir();
 		compatibilidadeEnCatTrabExcluir.afterClass();		
 	}

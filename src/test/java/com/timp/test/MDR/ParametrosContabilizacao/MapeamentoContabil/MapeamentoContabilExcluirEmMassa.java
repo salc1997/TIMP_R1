@@ -33,12 +33,14 @@ public class MapeamentoContabilExcluirEmMassa extends TestBaseEliel {
 
 
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
+
 		
 		acessarMDRPO.acessarMDR();
+
 
 		boolean sucesso = mapeamentoContabilExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);

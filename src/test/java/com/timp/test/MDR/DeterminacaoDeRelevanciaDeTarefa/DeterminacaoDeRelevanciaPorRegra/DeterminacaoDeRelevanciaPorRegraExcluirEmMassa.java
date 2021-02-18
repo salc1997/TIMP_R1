@@ -33,7 +33,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassa extends TestBaseKens
   
 
   
-  @Test(priority = 1)
+  @Test()
   public void excluirEmMassa() {
 	  
 		loginTC.login();

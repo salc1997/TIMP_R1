@@ -563,8 +563,8 @@ public class AutomaçõesMDR7 {
 		valoresParaMetodoPVEXExcluirMassa = new ValoresParaMetodoPVEXExcluirMassa();
 		valoresParaMetodoPVEXExcluirMassa.beforeClass();
 		valoresParaMetodoPVEXExcluirMassa.login();
-		valoresParaMetodoPVEXExcluirMassa.acessarMDR();
-		valoresParaMetodoPVEXExcluirMassa.criar();
+		//valoresParaMetodoPVEXExcluirMassa.acessarMDR();
+		//valoresParaMetodoPVEXExcluirMassa.criar();
 		valoresParaMetodoPVEXExcluirMassa.excluirMassa();
 		valoresParaMetodoPVEXExcluirMassa.afterClass();		
 		System.out.println("------------------- Preço de Transferência > Valores para Método / Valores para Método PVEX FIN -------------------------");
@@ -576,8 +576,8 @@ public class AutomaçõesMDR7 {
 	public void valoresParaMetodoPECEXExcluirMassas() {		
 		valoresParaMetodoPECEXExcluirMassas = new ValoresParaMetodoPECEXExcluirMassas();
 		valoresParaMetodoPECEXExcluirMassas.beforeClass();
-		valoresParaMetodoPECEXExcluirMassas.login();
-		valoresParaMetodoPECEXExcluirMassas.acessarMDR();
+		//valoresParaMetodoPECEXExcluirMassas.login();
+		//valoresParaMetodoPECEXExcluirMassas.acessarMDR();
 		valoresParaMetodoPECEXExcluirMassas.criar();
 		valoresParaMetodoPECEXExcluirMassas.excluirMassa();
 		valoresParaMetodoPECEXExcluirMassas.afterClass();	
@@ -590,10 +590,10 @@ public class AutomaçõesMDR7 {
 	public void enquadramentoExcluirMassa() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 		System.out.println("------------------- Siscoserv > Enquadramento FIN-------------------------");
 	}
@@ -604,10 +604,10 @@ public class AutomaçõesMDR7 {
 	public void CFOPEditar() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 	}
 	
@@ -615,10 +615,10 @@ public class AutomaçõesMDR7 {
 	public void cFODetalhe() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 	}
 	
@@ -626,10 +626,10 @@ public class AutomaçõesMDR7 {
 	public void cFOVisualizar() {		
 		enquadramentoExcluirMassa = new EnquadramentoExcluirMassa();
 		enquadramentoExcluirMassa.beforeClass();
-		enquadramentoExcluirMassa.login();
-		enquadramentoExcluirMassa.acessarMDR();
+//		enquadramentoExcluirMassa.login();
+//		enquadramentoExcluirMassa.acessarMDR();
 		enquadramentoExcluirMassa.criar();
-		enquadramentoExcluirMassa.excluirMassa();
+//		enquadramentoExcluirMassa.excluirMassa();
 		enquadramentoExcluirMassa.afterClass();		
 	}
 	
@@ -756,8 +756,8 @@ public class AutomaçõesMDR7 {
 	public void compatibilidadeEnCatTrabVisualizar() {		
 		compatibilidadeEnCatTrabVisualizar = new CompatibilidadeEnCatTrabVisualizar();
 		compatibilidadeEnCatTrabVisualizar.beforeClass();
-		compatibilidadeEnCatTrabVisualizar.login();
-		compatibilidadeEnCatTrabVisualizar.acessarMDR();
+//		compatibilidadeEnCatTrabVisualizar.login();
+//		compatibilidadeEnCatTrabVisualizar.acessarMDR();
 		compatibilidadeEnCatTrabVisualizar.visualizar();
 		compatibilidadeEnCatTrabVisualizar.afterClass();		
 	}
@@ -766,8 +766,8 @@ public class AutomaçõesMDR7 {
 	public void compatibilidadeEnCatTrabExcluir() {		
 		compatibilidadeEnCatTrabExcluir = new CompatibilidadeEnCatTrabExcluir();
 		compatibilidadeEnCatTrabExcluir.beforeClass();
-		compatibilidadeEnCatTrabExcluir.login();
-		compatibilidadeEnCatTrabExcluir.acessarMDR();
+//		compatibilidadeEnCatTrabExcluir.login();
+//		compatibilidadeEnCatTrabExcluir.acessarMDR();
 		compatibilidadeEnCatTrabExcluir.excluir();
 		compatibilidadeEnCatTrabExcluir.afterClass();		
 	}

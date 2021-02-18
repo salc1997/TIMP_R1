@@ -21,14 +21,14 @@ import org.testng.annotations.AfterClass;
 public class UnidadeDeMedidaVisualizar extends TestBaseSteven{
   
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaVisualizarPO unidadeDeMedidaVisualizarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initialization();
 	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
+	  acessarMDRPO = new AcessarMDRPO();
 	  unidadeDeMedidaVisualizarPO = new UnidadeDeMedidaVisualizarPO();
   }
 
@@ -37,19 +37,13 @@ public class UnidadeDeMedidaVisualizar extends TestBaseSteven{
 	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
   
   @Test(priority = 1)
-  public void acessarMDR() {
-	 accesarMDR.acessarMDR();
-
-  }
-  
-  @Test(priority = 2)
   public void visualizar() {
+
+	  loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 	  ArrayList<Boolean> sucesso = unidadeDeMedidaVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

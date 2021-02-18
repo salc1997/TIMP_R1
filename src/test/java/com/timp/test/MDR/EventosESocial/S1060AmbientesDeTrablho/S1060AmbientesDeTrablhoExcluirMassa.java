@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassaPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -34,11 +33,9 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 	}
 
 
-	@Test(priority = 1)
-	public void criar() {
-		
-		loginTC.login();
-		
+	@Test()
+	public void criar() {		
+		loginTC.login();		
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = s1060AmbientesDeTrablhoExcluirMassaPO.criar();

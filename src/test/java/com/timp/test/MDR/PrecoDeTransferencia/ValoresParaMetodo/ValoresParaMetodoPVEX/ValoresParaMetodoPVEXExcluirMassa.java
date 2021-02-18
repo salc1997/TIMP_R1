@@ -36,20 +36,12 @@ public class ValoresParaMetodoPVEXExcluirMassa extends TestBaseFernando{
 		loginTC.login();
 
 	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-		boolean sucesso = valoresParaMetodoPVEXExcluirMassaPO.criar();
-		assertTrue(sucesso, Criar);
-	}
 	
-	@Test(priority = 3)
+	@Test()
 	public void excluirMassa() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = valoresParaMetodoPVEXExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
 	}

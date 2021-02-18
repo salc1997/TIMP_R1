@@ -283,14 +283,17 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		sleep(1000);
 		
 		String nome1 = "TESTE N3- NAO MEXER";
-		
+		waitExpectElement(nome);
+		sleep(2000);
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
 		waitExpectElement(aplicar);
 		sleep(3000);
 		aplicar.click();
-		sleep(1000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		gravar.click();
 
 		sleep(1000);
@@ -301,6 +304,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		configuracoes.click();
 		sleep(1000);
 		String verficarnome = nome.getAttribute("value");

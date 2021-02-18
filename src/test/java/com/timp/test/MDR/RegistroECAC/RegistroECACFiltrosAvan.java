@@ -19,7 +19,7 @@ public class RegistroECACFiltrosAvan extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroECACFiltrosAvanPO registroECACFiltrosAvanPO;
-	
+
 
 	@BeforeClass
 	public void beforeClass() {
@@ -28,7 +28,7 @@ public class RegistroECACFiltrosAvan extends TestBaseKenssy {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		registroECACFiltrosAvanPO = new RegistroECACFiltrosAvanPO();
-		
+
 	}
 
 	@AfterClass
@@ -36,32 +36,22 @@ public class RegistroECACFiltrosAvan extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void filtrarAvanRegistroECAC() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	  public void filtrarAvanRegistroECAC() {
 		ArrayList<Boolean> empresa = registroECACFiltrosAvanPO.filtroEmpresa();
 		for (int i = 0; i < empresa.size(); i++) {
 			assertTrue(empresa.get(i), Filtros);
 		}
-		
-		
+
+
 		ArrayList<Boolean> filial = registroECACFiltrosAvanPO.filtroFilial();
 		for (int i = 0; i < filial.size(); i++) {
 			assertTrue(filial.get(i), Filtros);
 		}
 
-	  }
+	}
 
 }

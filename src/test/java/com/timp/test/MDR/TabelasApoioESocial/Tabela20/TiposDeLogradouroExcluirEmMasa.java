@@ -18,15 +18,17 @@ import org.testng.annotations.AfterClass;
 
 public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO accesarMDRPO;
 	TiposDeLogradouroExcluirEmMasaPO tiposDeLogradouroExcluirEmMasaPO;
 
 	@BeforeClass
 	public void beforeClass() {
+
 		driver = initialization();
 		loginTC = new LoginTC();
-		accesarMDR = new AcessarMDRPO();
+		accesarMDRPO = new AcessarMDRPO();
 		tiposDeLogradouroExcluirEmMasaPO = new TiposDeLogradouroExcluirEmMasaPO();
+
 	}
 
 	@AfterClass
@@ -34,23 +36,26 @@ public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+
+	public void criar() {
+
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-		accesarMDR.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
-	public void excluir() {
-
+		accesarMDRPO.acessarMDR();
+	
 		boolean sucesso = tiposDeLogradouroExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+
+	}
+	
+	
+	@Test(dependsOnMethods = "criar")
+
+	public void excluir() {
+	
 		boolean sucesso2 = tiposDeLogradouroExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
 

@@ -18,36 +18,31 @@ import org.testng.annotations.AfterClass;
 public class TiposDeLogradouroEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO acessarMDRPO;
 	TiposDeLogradouroEditarPO tiposDeLogradouroEditarPO;
 
-	@BeforeClass
-	public void beforeClass() {
-		driver = initialization();
-		loginTC = new LoginTC();
-		accesarMDR = new AcessarMDRPO();
-		tiposDeLogradouroEditarPO = new TiposDeLogradouroEditarPO();
-	}
+	
+  @BeforeClass
+  public void beforeClass() {
+	  driver = initialization();
+	  loginTC = new LoginTC();
+	  acessarMDRPO = new AcessarMDRPO();
+	  tiposDeLogradouroEditarPO = new TiposDeLogradouroEditarPO();
+  }
+
 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
+  @Test()
+  public void editar() {
+	  loginTC.login();
+	  acessarMDRPO.acessarMDR();
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-		accesarMDR.acessarMDR();
+	  boolean sucesso = tiposDeLogradouroEditarPO.editar();
+	  assertTrue(sucesso, Editar);
+  }
 
-	}
-
-	@Test(priority = 2)
-	public void editar() {
-		boolean sucesso = tiposDeLogradouroEditarPO.editar();
-		assertTrue(sucesso, Editar);
-	}
 }

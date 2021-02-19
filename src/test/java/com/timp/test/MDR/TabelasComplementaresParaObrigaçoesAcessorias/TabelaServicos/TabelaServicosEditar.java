@@ -18,36 +18,25 @@ public class TabelaServicosEditar extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaServicosEditarPO tabelaServicosEditarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	   loginTC = new LoginTC();
-	   acessarMDRPO = new AcessarMDRPO();
-	   tabelaServicosEditarPO = new TabelaServicosEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		tabelaServicosEditarPO = new TabelaServicosEditarPO();
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
+	@Test()
+	public void editar() {
+		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void editar() {
-
-		
 		boolean sucesso = tabelaServicosEditarPO.Editar();
 		assertTrue(sucesso, semAcesso);
 

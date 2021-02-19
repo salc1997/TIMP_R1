@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeríodoCriarPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.Período.ConfiguraçõesPeríodoCriarPO;
 
 import org.testng.annotations.BeforeClass;
 

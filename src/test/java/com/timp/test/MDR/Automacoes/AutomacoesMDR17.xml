@@ -4,24 +4,116 @@
 	<test name="Prueba1" >
 		<classes>
 
-			<class name="com.timp.test.BRB.testNg.NovoRelatorio"></class>
+			<!-- Tabela De Apoio E Social > Tabela 17 - Descricao De Nat De Lesão -->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa"></class>
+			
+			<!--Tabela De Apoio E Social > Tabela 08 - Classificacao Tributaria -->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa"></class>
+			
+			<!--Tabela De Apoio E Social > Tabela 12 - Compatibilidade Entre Lotação -->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa"></class>
+			
+			<!--Tabela De Apoio E Social > Tabela 13  -  Parte Do Corpo Atingida -->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa"></class>
+			
+			<!--Tabela De Apoio E Social > Tabela 14  - Agente Causador De Acidente  -->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa"></class>
+			
+			<!--Rateio De Consorcio -->
+			<class name="com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID"></class>
+			
+			<!--Parametros Oficializacao Livros -->
+			<class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosFiltroPorID"></class>
+			
+			<!--Parametros Contabilizacao > Mapeamento Substituicao Conta Estoque Cenarios Correcoes -->
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa"></class>
+			
+			<!--Parametros Contabilizacao > Mapeamento Contabil Correcao -->
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassa"></class>
+			
+			<!--Parametros Contabilizacao > Mapeamento Contabil  -->
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa"></class>
+			
+			
+			<!--Siscoserv > Registro RF -->
+			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFFiltroPorID"></class>
+			
+			<!--Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos-->
+			<class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa"></class>
+			
+			<!--Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros-->
+			<class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeLogradouros.TabelaLogradouroExcluirEmMassa"></class>
+			
+			<!--Valor Adicionado > Município-->
+			<class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassa"></class>
+			
+			<!--Siscoserv  > Registro RVS-->
+			<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa"></class>
+			
+			<!--Tabela De Apoio E Social > Diagnostico De Processos-->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa"></class>
+			
+			<!--Siscoserv > Registro RF-->
+			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa"></class>
+			
+			<!--Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	-->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa"></class>
+			
 
+			<!--Tabela Apoio SPED > Tabela Codigo Da Situação Tributária-->
+			<class name="com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa"></class>
+		
+			<!--Tabela Apoio SPED > Codigo Tipo Credito-->
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluirEmMassa"></class>
+		
+			<!--Tabela Apoio SPED > Observacoes do Documento Fiscal Registro 0460-->
+			<class name="com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçõesdoDocumentoFiscalExcluirEmMassa"></class>
+		
+			<!--Tabela Apoio SPED > Tipos De Utilização Dos Creditos Fiscais-->
+			<class name="com.timp.test.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa"></class>
+		
+			<!--TabelaApoioSPED > De Para Livro Apuracao X Sped Fiscal-->
+			<class name="com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuracaoXSpedFiscalExcluirEmMassa"></class>
+		
+			<!--Tabela Apoio SPED > Codigos Das Obrigacoes De ICMS a Recolher-->
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa"></class>
+		
+			<!--Atividades Para tributacao >Atividade De Tributacao X Fornecedor-->
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorEditar"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhes"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorVisualizar"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroID"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir"></class>
+			<class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluirEmMassa"></class>
+		
+			<!--Tabela De Apoio E Social > Tabela 16  - SGDP-->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
+			
+			<!--Controle de Crédito Tributário > Status para Banco de Indébitos-->
+			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar"></class>
+			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosEditar"></class>
+			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar"></class>
+			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluir"></class>
+			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluirMassa"></class>
+			
 		</classes>
-	</test> <!-- PruebaTest -->
-		<test name="Prueba2">
-		<classes>
-
-
-			<class name="com.timp.test.BRB.testNg.Paginacion"></class>
-
-
-		</classes>
-	</test> <!-- PruebaTestNG -->
-		<test name="Prueba3">
-		<classes>
-
-			<class name="com.timp.test.BRB.testNg.FiltrosAvançados"></class>
-
-		</classes>
+	
 	</test> <!-- PruebaTestNG -->
 </suite> <!-- Suite -->

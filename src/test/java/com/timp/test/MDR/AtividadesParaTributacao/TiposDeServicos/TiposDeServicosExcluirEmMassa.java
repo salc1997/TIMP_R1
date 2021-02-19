@@ -53,7 +53,15 @@ public class TiposDeServicosExcluirEmMassa extends TestBaseEliel{
 		
 		boolean sucesso = tiposDeServicosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+	
+
+	}
+	
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+		
 		boolean sucesso2 = tiposDeServicosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

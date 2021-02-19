@@ -45,7 +45,7 @@ public class FinanciamientoDeAposEspExcluiMassa extends TestBaseCristhian {
 		acessarMDRPO.acessarMDR();
 	}
 	*/
-	@Test(priority = 0)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -56,7 +56,7 @@ public class FinanciamientoDeAposEspExcluiMassa extends TestBaseCristhian {
 	}
 	
 	
-	@Test(priority = 1)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 	
 

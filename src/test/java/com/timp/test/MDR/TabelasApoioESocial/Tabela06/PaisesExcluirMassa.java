@@ -42,7 +42,7 @@ public class PaisesExcluirMassa extends TestBaseFernando{
 		acessarMDRPO.acessarMDR();
 	}
 	*/
-	@Test(priority = 0)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -52,7 +52,7 @@ public class PaisesExcluirMassa extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 1)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = paisesExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Criar);

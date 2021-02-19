@@ -42,7 +42,7 @@ public class CodigosEAliqDeFPRASExcluirMassa extends TestBaseFernando{
 		acessarMDRPO.acessarMDR();
 	}
 	*/
-	@Test(priority = 0)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
@@ -51,7 +51,7 @@ public class CodigosEAliqDeFPRASExcluirMassa extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 1)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		
 		

@@ -54,7 +54,13 @@ public class TaxasDeConversaoExcluirEmMassa extends TestBaseEliel {
 
 		boolean sucesso = taxasDeConversaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+		
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+		
 		boolean sucesso2 = taxasDeConversaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

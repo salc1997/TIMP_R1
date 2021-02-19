@@ -52,7 +52,16 @@ public class SubcapitalizacaoExcluirEmMassa extends TestBaseEliel {
 
 		boolean sucesso = subcapitalizacaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+
 		boolean sucesso2 = subcapitalizacaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

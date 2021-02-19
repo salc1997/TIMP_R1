@@ -52,7 +52,15 @@ public class RegistroRPExcluirEmMassa extends TestBaseEliel{
 
 		boolean sucesso = registroRPExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+		
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+
+		
 		boolean sucesso2 = registroRPExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

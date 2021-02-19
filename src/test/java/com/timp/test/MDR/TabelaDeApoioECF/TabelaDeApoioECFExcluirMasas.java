@@ -51,6 +51,13 @@ public class TabelaDeApoioECFExcluirMasas extends TestBaseMassiel{
 		boolean sucesso = tabelaDeApoioECFExcluirMasasPO.Criar();
 		assertTrue(sucesso, Criar);
 		
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+		
 		boolean sucesso2 = tabelaDeApoioECFExcluirMasasPO.ExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
 	}

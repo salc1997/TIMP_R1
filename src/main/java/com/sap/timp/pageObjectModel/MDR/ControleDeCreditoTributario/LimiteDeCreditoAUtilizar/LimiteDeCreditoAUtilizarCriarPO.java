@@ -23,21 +23,18 @@ public class LimiteDeCreditoAUtilizarCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaoempresa;
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	public WebElement opcao;
 	
 
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
-	
-	@FindBy(xpath = "//li[@id][1]")
-	public WebElement opcaofilial;
+
 	
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaotributo;
+
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Limite de Utilização do Crédito\"]")
 	public WebElement limitedeutilizacaodecredito;
@@ -102,31 +99,22 @@ public class LimiteDeCreditoAUtilizarCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		empresa.click();
-		
 		sleep(2000);
-		
-		opcaoempresa.click();
-		
+		opcao.click();
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 		tributo.click();
-		
+		sleep(2000);
+		opcao.click();
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		opcaotributo.click();
-		
-		sleep(2000);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		action.sendKeys(Keys.ESCAPE).build().perform();
-		sleep(2000);
 		
 		filial.click();
-		
 		sleep(2000);
-		
-		opcaofilial.click();
-		
+		opcao.click();
+		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
 		limitedeutilizacaodecredito.sendKeys("7");

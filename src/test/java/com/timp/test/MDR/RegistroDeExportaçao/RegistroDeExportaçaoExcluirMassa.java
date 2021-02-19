@@ -33,23 +33,19 @@ public class RegistroDeExportaçaoExcluirMassa extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
+
 
 	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
 	public void criar() {
+		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = registroDeExportaçaoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void excluirMassa() {
 		boolean sucesso = registroDeExportaçaoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);

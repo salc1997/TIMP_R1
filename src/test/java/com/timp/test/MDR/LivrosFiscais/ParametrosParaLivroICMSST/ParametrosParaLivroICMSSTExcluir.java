@@ -35,17 +35,15 @@ public class ParametrosParaLivroICMSSTExcluir extends TestBaseSteven {
 	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void acessarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
+
+	@Test(priority = 1)
 	public void Excluir() {
+		
+		loginTC.login();
+		
+		accesarMDRPO.acessarMDR();
+		
 		boolean sucesso = parametrosParaLivroICMSSTVisualizarPO.Excluir();
 		assertTrue(sucesso, Editar);
 		  

@@ -36,22 +36,15 @@ public class ParametrosParaLivroICMSSTVisualizar extends TestBaseSteven{
 	  driver.close();
   }
 
-  @Test()
-	public void login() {
-		loginTC.login();
 
-	}
 
 	@Test(priority = 1)
-	public void acessarMDR() {
-
+	public void visualizar() {
+		
+		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void visualizar() {
-
+		
 	      ArrayList<Boolean> sucesso = parametrosParaLivroICMSSTVisualizarPO.Visualizar();
 
 			for (int i = 0; i < sucesso.size(); i++) {

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian{
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeSGDPCriarPO agenteCausadorDeSGDPCriarPO;
@@ -30,23 +30,13 @@ public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian{
 
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	@Test(priority = 2)
 	public void criar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = agenteCausadorDeSGDPCriarPO.criar();
 

@@ -24,7 +24,7 @@ public class AjustesDosAnexosExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AjustesDosAnexosExcluirEmMassaPO ajustesDosAnexosExcluirEmMassaPO;
-	
+	 
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();
@@ -38,20 +38,14 @@ public class AjustesDosAnexosExcluirEmMasa extends TestBaseSteven {
 		  driver.close();
 	}
 	
-	@Test(priority = 0)
-	public void login() {
-		  loginTC.login();
-	}
-	
-	@Test(priority = 1)
-	public void acessarMDR() {
-		 accesarMDR.acessarMDR();
-	
-	}
+
 	
 	@Test(priority = 2)
 	public void excluir() {
 		
+		loginTC.login();
+		
+		 accesarMDR.acessarMDR();
 		
 		boolean sucesso = ajustesDosAnexosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);

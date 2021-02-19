@@ -2,7 +2,7 @@ package com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPer
 
 import static org.testng.Assert.assertTrue;
 
-import org.junit.AfterClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -30,6 +30,7 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluir extends TestBaseEliel
 	public void afterClass() {
 		driver.close();
 	}
+
 
 
 

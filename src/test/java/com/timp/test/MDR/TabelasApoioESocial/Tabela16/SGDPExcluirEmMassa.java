@@ -17,7 +17,7 @@ public class SGDPExcluirEmMassa extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPExcluirEmMassaPO sgdpExcluirEmMassaPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -32,21 +32,14 @@ public class SGDPExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		
+		 loginTC.login();
+		  acessarMDRPO.acessarMDR();
+
 
 		boolean sucesso = sgdpExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);

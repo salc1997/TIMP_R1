@@ -32,22 +32,11 @@ public class PaisMoedaCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
 	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
 	public void criar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = paisMoedaCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

@@ -18,14 +18,14 @@ import org.testng.annotations.AfterClass;
 public class TiposDeLogradouroEditar extends TestBaseSteven {
  
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO acessarMDRPO;
 	TiposDeLogradouroEditarPO tiposDeLogradouroEditarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initialization();
 	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
+	  acessarMDRPO = new AcessarMDRPO();
 	  tiposDeLogradouroEditarPO = new TiposDeLogradouroEditarPO();
   }
 
@@ -34,19 +34,12 @@ public class TiposDeLogradouroEditar extends TestBaseSteven {
 	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void login() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void acessarMDR() {
-	 accesarMDR.acessarMDR();
 
-  }
-  
-  @Test(priority = 2)
+  @Test(priority = 1)
   public void editar() {
+	  loginTC.login();
+	  acessarMDRPO.acessarMDR();
+
 	  boolean sucesso = tiposDeLogradouroEditarPO.editar();
 	  assertTrue(sucesso, Editar);
   }

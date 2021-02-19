@@ -26,7 +26,7 @@ public class AntecipacaoDetalhePO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"detail-description\"][3]/div[2]/div")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//div[@id=\"detail-description\"][41]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][4]/div[2]/div")
 	public WebElement periodo;
 	
 	@FindBy(xpath = "//div[@id=\"detail-description\"][5]/div[2]/div")
@@ -139,7 +139,7 @@ public class AntecipacaoDetalhePO extends TestBaseFernando{
 		sucesso.add(ufString1.contains(ufString));
 		sucesso.add(filialString1.contains(filialString));
 		sucesso.add(filialString1.contains(filialString));
-		sucesso.add(periodoString1.contains(periodoString));
+		sucesso.add(periodoString.contains(periodoString1));
 		System.out.println(sucesso);
 	
 		return sucesso;

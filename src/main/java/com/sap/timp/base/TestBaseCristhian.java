@@ -1,5 +1,5 @@
 package com.sap.timp.base;
-       
+         
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
@@ -36,7 +36,8 @@ public class TestBaseCristhian extends TestBaseSteven{
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
+
 
 		return driver;
 	}

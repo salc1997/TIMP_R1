@@ -33,21 +33,14 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar extends TestBa
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+
+	@Test()
+	public void Visualizar() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarMDRPO.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void Visualizar() {
 
 		ArrayList<Boolean> sucesso = codigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO.visualizar();
 

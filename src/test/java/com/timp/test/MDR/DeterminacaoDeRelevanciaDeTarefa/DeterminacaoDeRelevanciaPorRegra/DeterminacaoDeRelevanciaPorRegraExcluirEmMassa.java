@@ -31,19 +31,14 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassa extends TestBaseKens
 	  driver.close();
   }
   
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
 
-  }
   
-  @Test(priority = 2)
+  @Test()
   public void excluirEmMassa() {
+	  
+		loginTC.login();
+		accesarMDR.acessarMDR();
+		
 	boolean sucesso = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 	sleep(1000);

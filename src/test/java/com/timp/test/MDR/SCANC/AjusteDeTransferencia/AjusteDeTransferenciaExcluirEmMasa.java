@@ -25,7 +25,7 @@ public class AjusteDeTransferenciaExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AjustesDeTransferenciaExcluirEmMassaPO ajustesDeTransferenciaExcluirEmMassaPO;
-	
+	 
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();

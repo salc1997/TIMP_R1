@@ -1,6 +1,6 @@
 package com.timp.test.BRB;
 
-import static org.junit.Assert.assertTrue;
+
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -31,21 +31,14 @@ public class CampoOutput extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void campoOutput() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
 		boolean sucesso = campoOutputPO.agregarOutput();
 		System.out.println(sucesso);

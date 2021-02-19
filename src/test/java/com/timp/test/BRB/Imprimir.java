@@ -29,21 +29,17 @@ public class Imprimir extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
+
+	@Test()
+	public void imprimir() {
+		
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
+		
 		acessarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 2)
-	public void imprimir() {
+		
 		imprimirPO.imprimir();
 	}
 

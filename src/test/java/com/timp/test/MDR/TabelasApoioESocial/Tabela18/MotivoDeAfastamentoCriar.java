@@ -32,14 +32,10 @@ public class MotivoDeAfastamentoCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
-	@Test()
-	public void criar() {
-		
+	@Test(priority = 1)
+	public void criar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
 		boolean sucesso = motivoDeAfastamentoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);

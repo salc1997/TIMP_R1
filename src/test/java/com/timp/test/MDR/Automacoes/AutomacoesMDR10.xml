@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
+
+
 	<test name="Automações MDR 10">
 
 
@@ -17,8 +19,20 @@
 			<class
 				name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir"></class>
 
-			<!-- Cenarios de Correção -->
 
+		</classes>
+
+
+
+	</test> <!-- PruebaTestNG -->
+
+
+
+
+
+	<test name="Cenarios de Correção">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar"></class>
@@ -39,9 +53,16 @@
 				name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados"></class>
 
 
+		</classes>
 
 
-			<!-- Centralização > Estorno de Crédito -->
+	</test>
+
+
+
+	<test name="Centralização > Estorno de Crédito">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoCriar"></class>
@@ -60,8 +81,15 @@
 				name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoFiltros"></class>
 
 
+		</classes>
 
-			<!-- Centralização > Fator de Crecimento do CIAP -->
+
+	</test>
+
+
+	<test name="Centralização > Fator de Crecimento do CIAP">
+
+		<classes>
 
 
 			<class
@@ -86,7 +114,17 @@
 				name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros"></class>
 
 
-			<!-- Centralização > Tributos -->
+		</classes>
+
+
+	</test>
+
+
+
+	<test name="Centralização > Tributos">
+
+		<classes>
+
 
 			<class
 				name="com.timp.test.MDR.Centralizacao.Tributos.TributosCriar"></class>
@@ -107,33 +145,51 @@
 				name="com.timp.test.MDR.Centralizacao.Tributos.TributosFiltrar"></class>
 
 
+		</classes>
 
-			<!-- CEP > Bairro -->
+
+	</test>
+
+
+
+
+	<test name="CEP > Bairro">
+
+		<classes>
+
 
 			<class name="com.timp.test.MDR.CEP.Bairro.BairroCriar"></class>
 
 			<class name="com.timp.test.MDR.CEP.Bairro.BairroEditar"></class>
 
-			<class
-				name="com.timp.test.MDR.CEP.Bairro.BairroVisualizar"></class>
+			<class name="com.timp.test.MDR.CEP.Bairro.BairroVisualizar"></class>
 
 			<class name="com.timp.test.MDR.CEP.Bairro.BairroDetalhes"></class>
 
 			<class name="com.timp.test.MDR.CEP.Bairro.BairroEliminar"></class>
 
-			<class
-				name="com.timp.test.MDR.CEP.Bairro.BairroExcluirMassa"></class>
+			<class name="com.timp.test.MDR.CEP.Bairro.BairroExcluirMassa"></class>
 
 			<class name="com.timp.test.MDR.CEP.Bairro.BairroFiltros"></class>
 
 
-			<!-- CEP > Logradouro -->
 
-			<class
-				name="com.timp.test.MDR.CEP.Logradouro.LogradouroCriar"></class>
 
-			<class
-				name="com.timp.test.MDR.CEP.Logradouro.LogradouroEditar"></class>
+
+		</classes>
+
+
+	</test>
+
+
+	<test name="CEP > Logradouro">
+
+		<classes>
+
+
+			<class name="com.timp.test.MDR.CEP.Logradouro.LogradouroCriar"></class>
+
+			<class name="com.timp.test.MDR.CEP.Logradouro.LogradouroEditar"></class>
 
 			<class
 				name="com.timp.test.MDR.CEP.Logradouro.LogradouroVisualizar"></class>
@@ -145,29 +201,46 @@
 				name="com.timp.test.MDR.CEP.Logradouro.LogradouroFiltros"></class>
 
 
+		</classes>
 
-			<!-- CEP > Município -->
 
-			<class
-				name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar"></class>
+	</test>
 
-			<class
-				name="com.timp.test.MDR.CEP.Municipio.MunicipioEditar"></class>
+
+
+	<test name="CEP > Município">
+
+		<classes>
+
+
+			<class name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar"></class>
+
+			<class name="com.timp.test.MDR.CEP.Municipio.MunicipioEditar"></class>
 
 			<class
 				name="com.timp.test.MDR.CEP.Municipio.MunicipioVisualizar"></class>
 
-			<class
-				name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar"></class>
+			<class name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar"></class>
 
 			<class
 				name="com.timp.test.MDR.CEP.Municipio.MunicipioExcluirMassa"></class>
 
-			<class
-				name="com.timp.test.MDR.CEP.Municipio.MunicipioFiltros"></class>
+			<class name="com.timp.test.MDR.CEP.Municipio.MunicipioFiltros"></class>
 
 
-			<!-- Código de Contabiliazação -->
+
+
+		</classes>
+
+
+	</test>
+
+
+
+	<test name="Código de Contabiliazação">
+
+		<classes>
+
 
 			<class
 				name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar"></class>
@@ -190,9 +263,16 @@
 			<class
 				name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan"></class>
 
-		</classes>
-		
-		
 
-	</test> <!-- PruebaTestNG -->
+
+		</classes>
+
+
+	</test>
+
+
+
+
+
+
 </suite> <!-- Suite -->

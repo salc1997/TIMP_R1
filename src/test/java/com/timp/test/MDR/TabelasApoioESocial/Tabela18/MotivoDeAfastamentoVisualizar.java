@@ -42,11 +42,9 @@ public class MotivoDeAfastamentoVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

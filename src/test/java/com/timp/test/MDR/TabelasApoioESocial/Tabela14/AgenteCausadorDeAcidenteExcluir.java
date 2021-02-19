@@ -41,9 +41,8 @@ public class AgenteCausadorDeAcidenteExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	
 
-	@Test()
+	@Test(priority = 1)
 	public void excluir() {
 		
 		loginTC.login();

@@ -36,12 +36,14 @@ public class RegistroRFDetalhes extends TestBaseSteven {
 		driver.close();
 	}
 
+	@Test(priority = 1)
 
-	@Test()
 	public void detalhes() {
+
 		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
+		
 
 		ArrayList<Boolean> sucesso = registroRFDetalhesPO.detalhes();
 

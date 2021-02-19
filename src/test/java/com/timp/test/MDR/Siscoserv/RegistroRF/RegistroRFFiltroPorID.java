@@ -33,7 +33,7 @@ public class RegistroRFFiltroPorID extends TestBaseEliel{
 	}
 
 
-	@Test()
+	@Test(priority = 1)
 	public void filtro() {
 		
 		loginTC.login();
@@ -41,9 +41,6 @@ public class RegistroRFFiltroPorID extends TestBaseEliel{
 
 		boolean sucesso = registroRFFiltroPorIDPO.filtro();
 		assertTrue(sucesso, Filtros);
-
-		
-
 	}
   
  

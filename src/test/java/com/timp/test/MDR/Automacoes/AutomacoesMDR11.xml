@@ -1,46 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
-	<test name="Automações MDR 11">
+
+	<test name="Código da Receita">
 
 
 		<classes>
 
+			<class
+				name="com.timp.test.MDR.CodigoReceita.CodigoReceitaCriar"></class>
 
-			<!-- Código da Receita -->
+			<class
+				name="com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar"></class>
 
-			<class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaCriar"></class>
+			<class
+				name="com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes"></class>
 
-			<class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaEditar"></class>
-			
-			<class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaDetalhes"></class>
-			
-			<class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar"></class>
-			
-			<class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluir"></class>
-			
-			<class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa"></class>
-			
-			<class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaFiltrosAvan"></class>
+			<class
+				name="com.timp.test.MDR.CodigoReceita.CodigoReceitaVisualizar"></class>
+
+			<class
+				name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluir"></class>
+
+			<class
+				name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa"></class>
+
+			<class
+				name="com.timp.test.MDR.CodigoReceita.CodigoReceitaFiltrosAvan"></class>
 
 
-
-			<!-- Configuração do Fundo Social -->
-
-			<class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar"></class>
-
-			<class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialEditar"></class>
-
-			<class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluir"></class>
-
-			<class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesDeFundoSocialExcluirEmMassa"></class>
-
-			<class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId"></class>
+		</classes>
 
 
 
+	</test> <!-- PruebaTestNG -->
 
-			<!-- Contrato IOF -->
+
+	<test name="Configuração do Fundo Social">
+
+		<classes>
+
+
+			<class
+				name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailCriar"></class>
+
+			<class
+				name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialEditar"></class>
+
+			<class
+				name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluir"></class>
+
+			<class
+				name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesDeFundoSocialExcluirEmMassa"></class>
+
+			<class
+				name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracaoFundoSocailFiltroId"></class>
+
+
+		</classes>
+
+
+	</test>
+
+
+
+
+	<test name="Contrato IOF">
+
+		<classes>
 
 			<class name="com.timp.test.MDR.ContratoIOF.ContratoIOFCriar"></class>
 
@@ -54,8 +81,15 @@
 			<class name="com.timp.test.MDR.ContratoIOF.ContratoIOFExcluir"></class>
 
 
+		</classes>
 
-			<!-- Controle De crédito Tributario > Código Crédito -->
+
+	</test>
+
+	<test name="Controle De crédito Tributario > Código Crédito">
+
+		<classes>
+
 
 			<class
 				name="com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoCriar"></class>
@@ -75,9 +109,17 @@
 			<class
 				name="com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluirEmMassa"></class>
 
+		</classes>
 
 
-			<!-- ControleDeCreditoTributario > Limite De Credito A Utilizar -->
+	</test>
+
+
+	<test
+		name="ControleDeCreditoTributario > Limite De Credito A Utilizar">
+
+		<classes>
+
 
 			<class
 				name="com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarCriar"></class>
@@ -98,9 +140,19 @@
 				name="com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarFiltroId"></class>
 
 
+		</classes>
 
-			<!-- Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo 
-				Anterior -->
+
+	</test>
+
+
+
+
+	<test
+		name="Controle De Credito Tributario > Utilizacao Dos Creditos Em Periodo Anterior">
+
+		<classes>
+
 
 			<class
 				name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorCriar"></class>
@@ -123,7 +175,17 @@
 
 
 
-			<!-- Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração -->
+		</classes>
+
+
+	</test>
+
+
+
+	<test
+		name="Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoCriar"></class>
@@ -150,7 +212,17 @@
 
 
 
-			<!-- SPCB - Federais Retidos -->
+		</classes>
+
+
+	</test>
+
+
+
+
+	<test name="SPCB - Federais Retidos">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosCriar"></class>
@@ -171,8 +243,18 @@
 				name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluirMassa"></class>
 
 
+		</classes>
 
-			<!-- Notas a Declarar Anexo III DIA-AM -->
+
+	</test>
+
+
+
+
+	<test name="Notas a Declarar Anexo III DIA-AM">
+
+		<classes>
+
 
 			<class
 				name="com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIICriar"></class>
@@ -190,38 +272,11 @@
 				name="com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIExcluirMassa"></class>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		</classes>
 
 
+	</test>
 
-	</test> <!-- PruebaTestNG -->
+
+
 </suite> <!-- Suite -->

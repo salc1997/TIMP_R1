@@ -19,14 +19,14 @@ import org.testng.annotations.AfterClass;
 
 public class UnidadeDeMedidaExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaExcluirEmMasaPO unidadeDeMedidaExcluirEmMasaPO;
 	
 	@BeforeClass
 	public void beforeClass() {
 		  driver = initialization();
 		  loginTC = new LoginTC();
-		  accesarMDR = new AcessarMDRPO();
+		  acessarMDRPO = new AcessarMDRPO();
 		  unidadeDeMedidaExcluirEmMasaPO = new UnidadeDeMedidaExcluirEmMasaPO();
 	}
  
@@ -35,12 +35,10 @@ public class UnidadeDeMedidaExcluirEmMasa extends TestBaseSteven {
 		  driver.close();
 	}
 	
-
-	
-	@Test()
+	@Test(priority = 1)
 	public void excluir() {
 		loginTC.login();
-		accesarMDR.acessarMDR();
+		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = unidadeDeMedidaExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);

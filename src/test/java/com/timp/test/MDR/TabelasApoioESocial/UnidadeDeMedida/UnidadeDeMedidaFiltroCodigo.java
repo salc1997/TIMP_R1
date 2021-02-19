@@ -33,12 +33,11 @@ public class UnidadeDeMedidaFiltroCodigo extends TestBaseSteven {
 	}
 
 
-	@Test()
+	@Test(priority = 1)
 	public void filtroCodigo() {
 		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
 
 		boolean sucesso = unidadeDeMedidaFiltroCodigoPO.filtro();
 

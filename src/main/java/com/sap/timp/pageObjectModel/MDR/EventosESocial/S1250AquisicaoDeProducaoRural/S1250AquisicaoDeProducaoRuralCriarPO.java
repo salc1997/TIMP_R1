@@ -144,11 +144,11 @@ public class S1250AquisicaoDeProducaoRuralCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		status.sendKeys("77");
+		status.sendKeys("99");
 		
 		sleep(2000);
 		
-		log.sendKeys("7");
+		log.sendKeys("9");
 		
 		sleep(2000);
 		

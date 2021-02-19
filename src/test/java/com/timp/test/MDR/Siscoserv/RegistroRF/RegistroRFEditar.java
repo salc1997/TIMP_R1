@@ -28,18 +28,17 @@ public class RegistroRFEditar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
-	
-	@Test()
+
+	@Test(priority = 1)
 	public void Editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = registroRFEditarPO.Editar();
 		assertTrue(sucesso, Criar);
-		
-
 	}
 }

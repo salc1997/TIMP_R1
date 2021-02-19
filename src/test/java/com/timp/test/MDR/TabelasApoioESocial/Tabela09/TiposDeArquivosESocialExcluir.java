@@ -25,7 +25,6 @@ public class TiposDeArquivosESocialExcluir extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeArquivosESocialExcluirPO = new TiposDeArquivosESocialExcluirPO();
-		
 	}
 
 	@AfterClass
@@ -33,10 +32,9 @@ public class TiposDeArquivosESocialExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-	@Test()
+	@Test(priority = 1)
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

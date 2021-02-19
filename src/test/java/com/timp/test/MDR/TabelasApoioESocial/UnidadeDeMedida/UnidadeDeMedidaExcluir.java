@@ -37,13 +37,10 @@ public class UnidadeDeMedidaExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	  public void excluir() {
-		
-		 loginTC.login();
-		 acessarMDRPO.acessarMDR();
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = unidadeDeMedidaExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

@@ -34,10 +34,9 @@ public class TiposDeArquivosESocialVisualizar extends TestBaseSteven {
 	}
 
 
-
-	@Test()
+	@Test(priority = 1)
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

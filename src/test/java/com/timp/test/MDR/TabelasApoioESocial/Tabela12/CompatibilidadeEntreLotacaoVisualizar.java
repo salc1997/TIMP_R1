@@ -41,11 +41,8 @@ public class CompatibilidadeEntreLotacaoVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	@Test()
-	public void visualizar() {
-		
+	@Test(priority = 1)
+	public void visualizar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

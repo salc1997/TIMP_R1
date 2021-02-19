@@ -46,7 +46,7 @@ public class RegistroRASExcluirEmMassa extends TestBaseEliel{
 
 	}
 	*/
-	@Test()
+	@Test(priority = 1)
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

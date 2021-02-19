@@ -31,19 +31,15 @@ public class AgenteCausadorDeSGDPExcluir extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		
+		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	public void excluirr() {
 		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-
 		boolean sucesso = agenteCausadorDeSGDPExcluirPO.excluir();
-
 		assertTrue(sucesso, Editar);
 
 	}

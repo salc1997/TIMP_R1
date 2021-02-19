@@ -98,11 +98,11 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		opcaotributo.click();
 		
 		sleep(2000);
-		codigocst.sendKeys("07937");
+		codigocst.sendKeys("99937");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA00");
+		descricao.sendKeys("Teste QA99");
 		
 		sleep(2000);
 		

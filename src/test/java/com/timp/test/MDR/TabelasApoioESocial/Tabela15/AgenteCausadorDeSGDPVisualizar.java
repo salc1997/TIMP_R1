@@ -31,11 +31,10 @@ public class AgenteCausadorDeSGDPVisualizar extends TestBaseCristhian {
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-
-
-	@Test()
+	@Test(priority = 1)
 	public void visualizar() {
 		
 		loginTC.login();

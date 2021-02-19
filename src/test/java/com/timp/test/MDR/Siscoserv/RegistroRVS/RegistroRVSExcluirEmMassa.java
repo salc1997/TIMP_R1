@@ -33,9 +33,7 @@ public class RegistroRVSExcluirEmMassa extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	public void criar() {
 
 		loginTC.login();

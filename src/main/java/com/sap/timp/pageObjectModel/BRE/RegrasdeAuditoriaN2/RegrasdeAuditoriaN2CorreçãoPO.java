@@ -41,7 +41,7 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button[@class=\"filter-btn btn trans icon icon-font-Sign-and-Symbols icon-plussign\"]")
 	public WebElement adicionarCorrecoes;
 	
-	@FindBy(xpath = "//div[@class=\"graph\"]//*[name()=\"g\"]//*[name()=\"g\"][1]")
+	@FindBy(xpath = "//div[@class=\"graph\"]//*[name()=\"g\"]//*[name()=\"g\"][5]")
 	public WebElement CFOP;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")

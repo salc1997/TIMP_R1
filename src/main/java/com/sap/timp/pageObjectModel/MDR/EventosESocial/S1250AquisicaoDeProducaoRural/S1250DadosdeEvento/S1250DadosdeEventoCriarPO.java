@@ -126,7 +126,7 @@ public class S1250DadosdeEventoCriarPO extends TestBaseCristhian {
 		
 		sleep(2000);
 		
-		noRecibo.sendKeys("001");
+		noRecibo.sendKeys("991");
 		
 		
 		sleep(2000);

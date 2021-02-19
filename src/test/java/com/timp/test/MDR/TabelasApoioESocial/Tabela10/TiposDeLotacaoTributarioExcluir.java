@@ -21,12 +21,10 @@ public class TiposDeLotacaoTributarioExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
-
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeLotacaoTributariaExcluirPO = new TiposDeLotacaoTributariaExcluirPO();
-		
 	}
 
 	@AfterClass
@@ -34,10 +32,9 @@ public class TiposDeLotacaoTributarioExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-	@Test()
+	@Test(priority = 1)
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

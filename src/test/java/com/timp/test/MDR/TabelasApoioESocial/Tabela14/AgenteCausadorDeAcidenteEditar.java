@@ -40,10 +40,8 @@ public class AgenteCausadorDeAcidenteEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-	@Test()
-	public void editar() {
-		
+	@Test(priority = 1)
+	public void editar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

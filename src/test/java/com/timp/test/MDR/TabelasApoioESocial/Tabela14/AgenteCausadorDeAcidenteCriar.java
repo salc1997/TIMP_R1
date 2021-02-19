@@ -39,7 +39,8 @@ public class AgenteCausadorDeAcidenteCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test()
+
+	@Test(priority = 1)
 	public void criar() {
 		
 		loginTC.login();

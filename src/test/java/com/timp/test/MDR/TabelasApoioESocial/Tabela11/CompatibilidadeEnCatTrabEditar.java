@@ -32,12 +32,10 @@ public class CompatibilidadeEnCatTrabEditar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

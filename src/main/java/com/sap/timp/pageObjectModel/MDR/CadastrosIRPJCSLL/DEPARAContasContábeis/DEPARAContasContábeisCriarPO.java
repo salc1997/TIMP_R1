@@ -93,12 +93,12 @@ public class DEPARAContasContábeisCriarPO extends TestBaseMassiel{
 	   invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	   sleep(2000);
 	   
-	   planoContais.sendKeys("Test421");
+	   planoContais.sendKeys("Test991");
 	   planoContais.sendKeys(Keys.ENTER);
 	   invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	   sleep(2000);
 	   
-	   CodigoContaisOrigen.sendKeys("152");
+	   CodigoContaisOrigen.sendKeys("992");
 	   CodigoContaisOrigen.sendKeys(Keys.ENTER);
 	   invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	   sleep(2000);

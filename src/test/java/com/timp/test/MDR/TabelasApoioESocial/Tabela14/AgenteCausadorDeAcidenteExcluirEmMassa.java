@@ -32,7 +32,7 @@ public class AgenteCausadorDeAcidenteExcluirEmMassa extends TestBaseEliel{
 	}
 
 
-	@Test()
+	@Test(priority = 1)
 	public void criar() {
 		
 		loginTC.login();

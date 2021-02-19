@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" preserve-order="true">
-	<test name="Prueba1" >
-		<classes>
 
+
+<suite name="Suite" preserve-order="true">
+	<test name="Automações MDR 16" >
+	<classes>
+	
 			<!-- Tabelas de Apoio E-SOCIAL > Tabela 13 - Parte do Corpo Atingida  -->
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaEditar"></class>
@@ -94,6 +96,6 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExlusionMassa"></class>
 			
 		</classes>
-	
+
 	</test> <!-- PruebaTestNG -->
 </suite> <!-- Suite -->

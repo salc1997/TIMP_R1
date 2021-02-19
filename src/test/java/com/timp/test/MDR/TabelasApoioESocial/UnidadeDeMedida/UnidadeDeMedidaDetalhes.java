@@ -23,14 +23,14 @@ import org.testng.annotations.AfterClass;
 public class UnidadeDeMedidaDetalhes extends TestBaseEliel{
   
 	LoginTC loginTC;
-	AcessarMDRPO accesarMDR;
+	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaDetalhesPO unidadeDeMedidaDetalhesPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationE();
 	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
+	  acessarMDRPO = new AcessarMDRPO();
 	  unidadeDeMedidaDetalhesPO = new UnidadeDeMedidaDetalhesPO();
   }
 
@@ -39,14 +39,12 @@ public class UnidadeDeMedidaDetalhes extends TestBaseEliel{
 	  driver.close();
   }
   
-
-  
-  @Test()
+  @Test(priority = 1)
   public void detalhes() {
-	  
+
 	  loginTC.login();
-	  accesarMDR.acessarMDR();
-	  
+	  acessarMDRPO.acessarMDR();
+		
 	  ArrayList<Boolean> sucesso = unidadeDeMedidaDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

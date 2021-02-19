@@ -109,7 +109,7 @@ public class S1250AquisiçãoCriarPO extends TestBaseCristhian {
 		
 		sleep(2000);
 		
-		idRegistro.sendKeys("001");
+		idRegistro.sendKeys("991");
 		
 		sleep(2000);
 		

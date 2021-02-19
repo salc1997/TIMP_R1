@@ -37,7 +37,6 @@ public class MotivoDeAfastamentoExcluir extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		motivoDeAfastamentoExcluirPO = new MotivoDeAfastamentoExcluirPO();
-		
 	}
 
 	@AfterClass
@@ -45,11 +44,9 @@ public class MotivoDeAfastamentoExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	@Test()
+	@Test(priority = 1)
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

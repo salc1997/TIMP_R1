@@ -32,15 +32,15 @@ public class CompatibilidadEnCatTrabExcluirMassa extends TestBaseCristhian {
 
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
-	@Test()
-	public void criar() {
-		
+
+	@Test(priority = 1)
+	public void criar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-
+		
 		boolean sucesso = compatibilidadEnCatTrabExcluirMassaPO.criar();
 
 		assertTrue(sucesso, Criar);

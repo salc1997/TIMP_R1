@@ -36,9 +36,10 @@ public class RegistroRFExcluir extends TestBaseSteven {
 	}
 
 
+	@Test(priority = 1)
 
-	@Test()
 	public void excluir() {
+
 		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

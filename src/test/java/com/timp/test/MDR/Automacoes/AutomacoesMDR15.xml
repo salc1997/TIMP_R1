@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<test name="Automações MDR 15">
+	
+		<classes>
+		
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLCriar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLDetalhes"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluir"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLFiltroID"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLExcluirEmMassa"></class>
+
+			<!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCICriar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIDetalhes"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluir"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIFiltroID"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluirEmMassa"></class>
+
+
+			<!-- Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PIC -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICCriar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICEditar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICDetalhes"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICExcluir"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICFiltroID"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPICExcluirEmMasa"></class>
+
+			<!-- Preco De Transferencia > Valores Para Metodo de Importaçao >Valores Para Metodo PRL -->
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLCriar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLEditar"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLDetalhes"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluir"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLFiltroID"></class>
+				<class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodosDeImportacao.ValoresParaMetodoPRL.ValoresParaMetodoPRLExcluirEmMasa"></class>
+
+
+			<!-- Siscoserv > Pais/Moeda -->
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaCriar"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaEditar"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaDetalhes"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaVisualizar"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluir"></class>
+				<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluirEmMassa"></class>
+
+
+			<!-- Siscoserv > NBS -->
+				<class name="com.timp.test.MDR.Siscoserv.NBS.NBSCriar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.NBS.NBSEditar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.NBS.NBSDetalhes.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.NBS.NBSExcluir.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.NBS.NBSExcluirMassa.java"></class>
+				
+				
+			<!-- Siscoserv > Enquadramento -->
+				<class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoCriar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoEditar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoVisualizar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluir.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.Enquadramento.EnquadramentoExcluirMassa.java"></class>
+				
+				
+				
+			<!-- Siscoserv > Registro RAS -->
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASCriar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASEditar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASDetalhes.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASVisualizar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluir.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASFiltroID.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluirEmMassa.java"></class>
+				
+				
+				
+			<!-- Siscoserv > Registro RP -->
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPCriar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPDetalhes.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluir.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPFiltroID.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluirEmMassa.java"></class>
+				
+				
+				
+				
+				<!--Siscoserv > Registro RVS  -->
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSCriar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSDetalhes.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID.java"></class>
+				<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa.java"></class>
+				
+				
+				
+				
+				
+				<!-- PARA PROXIMAS CLASES
+					<class name=""></class>
+					<class name=""></class>
+					<class name=""></class>
+					<class name=""></class>
+					<class name=""></class>
+				-->
+
+		</classes>
+	</test> <!-- PruebaTestNG -->
+</suite> <!-- Suite -->

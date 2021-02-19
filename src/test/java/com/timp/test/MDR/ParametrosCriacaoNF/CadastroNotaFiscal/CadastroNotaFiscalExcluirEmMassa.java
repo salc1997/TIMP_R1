@@ -42,14 +42,19 @@ public class CadastroNotaFiscalExcluirEmMassa extends TestBaseKenssy {
 
   }*/
   
-  @Test(priority = 2)
-  public void excluirEmMassa() {
+  @Test()
+  public void criar() {
 	  
 	  loginTC.login();
 	  accesarMDR.acessarMDR();
 	boolean sucesso = cadastroNotaFiscalExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
-	sleep(1000);
+  }
+  
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluirEmMassa() {
+	  
 	
 	boolean sucesso2 = cadastroNotaFiscalExcluirEmMassaPO.cadastroNotaFiscalExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);

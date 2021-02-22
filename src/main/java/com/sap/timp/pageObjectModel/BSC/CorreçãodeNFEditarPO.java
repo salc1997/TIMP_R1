@@ -220,14 +220,14 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		menu1.click();
 		sleep(1000);
 		editar1.click();
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
+		sleep(3000);
+//		sleep(8000);
+//		sleep(8000);
+//		sleep(8000);
+//		sleep(8000);
+//		sleep(8000);
+//		sleep(8000);
+//		sleep(8000);
 
 		String enviar = "11";
 
@@ -268,8 +268,8 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		aceitar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
-		sleep(8000);
+//		sleep(12000);
+//		sleep(8000);
 		sleep(8000);
 
 		driver.navigate().refresh();
@@ -292,10 +292,7 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
-		sleep(5000);
-		sleep(5000);
-		sleep(5000);
+		sleep(2000);
 
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idBSC+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idBSC+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -306,16 +303,12 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		menu2.click();
 		sleep(1000);
 		visualizar.click();
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-
-
-
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
+		
+		attributoNotToBeEmptyElement(cSTPIS1, "value");
 		String textocSTPIS1V = cSTPIS1.getAttribute("value");
 		String textocSTPIS2V = cSTPIS2.getAttribute("value");
 		String textobCPIS1V = bCPIS1.getAttribute("value");

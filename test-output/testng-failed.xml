@@ -3,13 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
+=======
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
           <include name="beforeClass"/>
+=======
+          <include name="criar"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

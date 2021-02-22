@@ -33,15 +33,18 @@ public class ValoresParaMetodoCAPExcluirEmMassa extends TestBaseKenssy{
 	}
 
 	@Test()
-	public void excluirEmMassa() {
+	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
 		
 		boolean sucesso = valoresParaMetodoCAPExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = valoresParaMetodoCAPExcluirEmMassaPO.valoresParaMetodoCAPExcluirEmMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
-
 }

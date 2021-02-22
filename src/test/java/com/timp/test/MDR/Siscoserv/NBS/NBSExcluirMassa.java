@@ -31,15 +31,19 @@ public class NBSExcluirMassa extends TestBaseFernando{
 		driver.close();
 	}
 	
-	@Test(priority = 1)
-	public void excluirMassa() {
+	@Test()
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = nBSExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	
+	}
+	@Test(dependsOnMethods = "criar")
+	public void excluirMassa() {
 		
 		boolean sucesso2 = nBSExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso2, Criar);
+		assertTrue(sucesso2, Eliminado);
 	}
 }

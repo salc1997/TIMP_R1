@@ -28,9 +28,11 @@ public class ValoresParaMetodoPRLCriar extends TestBaseEliel {
 		valoresParaMetodoPRLCriarPO = new ValoresParaMetodoPRLCriarPO();
 	}
 	
-	@AfterClass public void afterClass(){ driver.close(); }
+	@AfterClass public void afterClass(){ 
+		driver.close(); 
+	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

@@ -39,17 +39,14 @@ public class CompatibilidadeEntreLotacaoCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
-
 		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = compatibilidadeEntreLotacaoCriarPO.criar();
-
 		assertTrue(sucesso, Criar);
-
 	}
 
 }

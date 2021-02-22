@@ -28,10 +28,12 @@ public class ValoresParaMetodoPRLExcluir extends TestBaseEliel {
 		valoresParaMetodoPRLExcluirPO = new ValoresParaMetodoPRLExcluirPO();
 	}
 	
-	@AfterClass public void afterClass(){ driver.close(); }
+	@AfterClass public void afterClass(){ 
+		driver.close(); 
+	}
 	 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

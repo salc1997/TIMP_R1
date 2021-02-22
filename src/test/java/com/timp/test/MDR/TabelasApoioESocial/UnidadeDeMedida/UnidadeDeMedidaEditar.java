@@ -35,7 +35,7 @@ public class UnidadeDeMedidaEditar extends TestBaseSteven {
 	  driver.close();
   }
   
-  @Test(priority = 1)
+  @Test()
   public void editar() {
 
 	  loginTC.login();

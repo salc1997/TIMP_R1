@@ -40,15 +40,13 @@ public class CompatibilidadeEntreLotacaoEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = compatibilidadeEntreLotacaoEditarPO.editar();
-
 		assertTrue(sucesso, Editar);
-
 	}
 
 }

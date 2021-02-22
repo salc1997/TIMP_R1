@@ -36,7 +36,6 @@ public class IncentivosFiscaisExcluirEmMassa extends TestBaseKenssy {
 	public void criar() {
 
 		loginTC.login();
-
 		accesarMDR.acessarMDR();
 		
 		boolean sucesso = incentivosFiscaisExcluirEmMassaPO.criar();
@@ -48,8 +47,7 @@ public class IncentivosFiscaisExcluirEmMassa extends TestBaseKenssy {
 	
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
-
-	
+		
 		boolean sucesso2 = incentivosFiscaisExcluirEmMassaPO.incentivosFiscaisExcluirEmMassa();
 		assertTrue(sucesso2, Eliminado);
 	}

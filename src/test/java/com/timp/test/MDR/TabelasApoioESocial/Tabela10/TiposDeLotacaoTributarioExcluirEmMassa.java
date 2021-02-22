@@ -31,7 +31,7 @@ public class TiposDeLotacaoTributarioExcluirEmMassa extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();
@@ -39,7 +39,10 @@ public class TiposDeLotacaoTributarioExcluirEmMassa extends TestBaseSteven {
 
 		boolean sucesso = tiposDeLotacaoTributariaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = tiposDeLotacaoTributariaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

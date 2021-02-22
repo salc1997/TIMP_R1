@@ -5,17 +5,37 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
+=======
+>>>>>>> refs/heads/Cristhian
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
+<<<<<<< HEAD
 =======
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
 >>>>>>> refs/heads/Fernando
 =======
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
         <methods>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+          <include name="lixeiraExecucao"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
+=======
+          <include name="afterClass"/>
+          <include name="editar"/>
+>>>>>>> refs/heads/Cristhian
           <include name="beforeClass"/>
 >>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
@@ -37,12 +57,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
+<<<<<<< HEAD
 =======
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
 >>>>>>> refs/heads/Fernando
 =======
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

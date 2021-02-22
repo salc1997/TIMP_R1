@@ -3,13 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
+=======
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
+>>>>>>> refs/heads/master
         <methods>
+<<<<<<< HEAD
           <include name="lixeiraExecucao"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
+=======
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
+>>>>>>> refs/heads/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

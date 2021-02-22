@@ -1,28 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/master
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-02-22T16:57:14Z" name="Default suite" finished-at="2021-02-22T17:05:14Z" duration-ms="480052">
+=======
+  <suite started-at="2021-02-19T17:28:57Z" name="Default suite" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
+>>>>>>> refs/heads/master
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-02-22T16:57:14Z" name="Default test" finished-at="2021-02-22T17:05:14Z" duration-ms="480052">
       <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:14Z" name="beforeClass" finished-at="2021-02-22T16:57:29Z" duration-ms="15659" status="PASS">
+=======
+    <test started-at="2021-02-19T17:28:57Z" name="Default test" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:28:57Z" name="beforeClass" finished-at="2021-02-19T17:29:09Z" duration-ms="11751" status="PASS">
+>>>>>>> refs/heads/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:29Z" name="login" finished-at="2021-02-22T16:57:38Z" duration-ms="8572" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:09Z" name="login" finished-at="2021-02-19T17:29:16Z" duration-ms="7175" status="PASS">
+>>>>>>> refs/heads/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:38Z" name="acessarTDK" finished-at="2021-02-22T16:58:34Z" duration-ms="56640" status="PASS">
+=======
+        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:16Z" name="acessarBRE" finished-at="2021-02-19T17:29:32Z" duration-ms="16305" status="PASS">
+>>>>>>> refs/heads/master
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- acessarTDK -->
         <test-method signature="criar()[pri:2, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:58:34Z" name="criar" finished-at="2021-02-22T17:02:38Z" duration-ms="243756" status="PASS">
+=======
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:32Z" name="criar" finished-at="2021-02-19T17:33:13Z" duration-ms="220648" status="PASS">
+>>>>>>> refs/heads/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method signature="lixeira()[pri:3, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:02:38Z" name="lixeira" finished-at="2021-02-22T17:04:00Z" duration-ms="81948" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -36,10 +64,17 @@
           </reporter-output>
         </test-method> <!-- lixeiraExecucao -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:05:14Z" name="afterClass" finished-at="2021-02-22T17:05:14Z" duration-ms="0" status="PASS">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:33:13Z" name="afterClass" finished-at="2021-02-19T17:33:13Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
+>>>>>>> refs/heads/master
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -35,7 +35,7 @@ public class DeterminacionRelevanciaPorMotivoExcluir extends TestBaseCristhian {
 
 
 	
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
 		
 		loginTC.login();

@@ -33,7 +33,7 @@ public class ContasDefaultParaExtemporaneoExcluir extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 
 		loginTC.login();

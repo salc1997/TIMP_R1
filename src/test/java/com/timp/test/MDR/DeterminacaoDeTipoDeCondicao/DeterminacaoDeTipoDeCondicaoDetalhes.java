@@ -46,7 +46,7 @@ public class DeterminacaoDeTipoDeCondicaoDetalhes extends TestBaseEliel {
 
 	}
 
-	@Test(priority = 2)
+	@Test()
 	public void Detalhes() {
 
 		loginTC.login();

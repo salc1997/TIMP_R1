@@ -35,7 +35,7 @@ public class RegraDeReaberturaVisualizar extends TestBaseMassiel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 		
 		loginTC.login();

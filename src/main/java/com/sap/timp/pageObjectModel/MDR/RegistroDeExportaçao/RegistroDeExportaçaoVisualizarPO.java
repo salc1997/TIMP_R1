@@ -132,7 +132,7 @@ public class RegistroDeExportaçaoVisualizarPO extends TestBaseEliel {
 		sleep(1000);
 		
 		açao.click();
-		sleep(2000);
+		sleep(5000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -194,7 +194,7 @@ public class RegistroDeExportaçaoVisualizarPO extends TestBaseEliel {
 		menu.click();
 		sleep(1000);
 		açao.click();
-		sleep(2000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String empresaE1 = empresaE.getAttribute("value");

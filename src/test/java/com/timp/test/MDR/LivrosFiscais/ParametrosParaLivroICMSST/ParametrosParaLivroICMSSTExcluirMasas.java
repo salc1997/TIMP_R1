@@ -44,6 +44,13 @@ public class ParametrosParaLivroICMSSTExcluirMasas extends TestBaseSteven{
 		boolean sucesso = parametrosParaLivroICMSSTExcluirMasasPO.criar();
 		assertTrue(sucesso, Criar);
 		
+	
+	}
+	
+	@Test(dependsOnMethods = "criar" )
+	public void Excluir() {
+		
+	
 		boolean sucesso2 = parametrosParaLivroICMSSTExcluirMasasPO.ParametrosParaLivroICMSSTExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
 	}

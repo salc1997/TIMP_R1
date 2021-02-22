@@ -31,7 +31,7 @@ public class S1250InfProcJudicialExcluir extends TestBaseFernando{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		
 		loginTC.login();

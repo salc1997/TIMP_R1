@@ -38,7 +38,7 @@ public class SequenciaVisualizar extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Visualizar() {
 		
 		loginTC.login();

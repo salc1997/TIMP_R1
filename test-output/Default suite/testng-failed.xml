@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
 =======
@@ -28,8 +29,13 @@
 =======
 =======
           <include name="lixeiraExecucao"/>
+=======
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficial">
+        <methods>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
         </methods>
       </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
 =======
@@ -67,6 +73,11 @@
 =======
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Cristhian
+=======
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficial -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

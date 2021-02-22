@@ -31,7 +31,7 @@ public class RepresentanteLegaisEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		
 		loginTC.login();

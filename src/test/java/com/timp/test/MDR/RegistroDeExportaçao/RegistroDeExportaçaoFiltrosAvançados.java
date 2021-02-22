@@ -37,7 +37,7 @@ public class RegistroDeExportaçaoFiltrosAvançados extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtros() {
 		
 		loginTC.login();

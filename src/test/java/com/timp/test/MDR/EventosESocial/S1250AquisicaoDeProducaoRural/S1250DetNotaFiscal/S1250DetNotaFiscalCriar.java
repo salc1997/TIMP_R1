@@ -31,7 +31,7 @@ public class S1250DetNotaFiscalCriar extends TestBaseFernando{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

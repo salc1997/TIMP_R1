@@ -32,7 +32,7 @@ public class AjustesDosAnexosCriar extends TestBaseEliel {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();

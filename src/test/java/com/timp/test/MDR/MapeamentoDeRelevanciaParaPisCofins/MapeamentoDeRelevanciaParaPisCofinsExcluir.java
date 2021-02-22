@@ -34,7 +34,7 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluir extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

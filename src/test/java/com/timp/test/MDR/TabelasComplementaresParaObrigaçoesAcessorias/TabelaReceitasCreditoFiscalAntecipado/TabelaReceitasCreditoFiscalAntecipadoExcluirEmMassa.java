@@ -38,10 +38,12 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa extends TestBas
 		
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
-	
 }

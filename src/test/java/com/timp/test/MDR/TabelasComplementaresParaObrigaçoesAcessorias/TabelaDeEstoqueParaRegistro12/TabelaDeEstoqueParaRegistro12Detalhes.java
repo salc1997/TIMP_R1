@@ -33,7 +33,7 @@ public class TabelaDeEstoqueParaRegistro12Detalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

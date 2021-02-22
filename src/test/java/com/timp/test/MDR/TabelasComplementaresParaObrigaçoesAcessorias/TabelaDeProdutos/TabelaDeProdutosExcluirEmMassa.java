@@ -38,10 +38,12 @@ public class TabelaDeProdutosExcluirEmMassa extends TestBaseEliel{
 		
 		boolean sucesso = tabelaDeProdutosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = tabelaDeProdutosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
- 
 }

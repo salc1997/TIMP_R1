@@ -33,7 +33,7 @@ public class AgenteCausadorDeSGDPEditar extends TestBaseCristhian {
   }
  
   
-  @Test(priority = 1)
+  @Test()
   public void editar() {
 
 	  loginTC.login();

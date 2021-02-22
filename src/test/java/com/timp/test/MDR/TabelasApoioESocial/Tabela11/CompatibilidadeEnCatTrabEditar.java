@@ -35,15 +35,13 @@ public class CompatibilidadeEnCatTrabEditar extends TestBaseCristhian {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = compatibilidadeEnCatTrabEditarPO.editar();
-
 		assertTrue(sucesso, Editar);
-
 	}
 
 }

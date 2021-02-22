@@ -4,11 +4,16 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
 =======
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="beforeClass"/>
@@ -16,16 +21,28 @@
           <include name="afterClass"/>
 <<<<<<< HEAD
           <include name="editar"/>
+=======
+          <include name="excluirMassa"/>
+          <include name="criar"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 =======
           <include name="criar"/>
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
 =======
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

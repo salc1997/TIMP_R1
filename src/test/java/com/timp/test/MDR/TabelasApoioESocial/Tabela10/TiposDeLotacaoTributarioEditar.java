@@ -32,15 +32,13 @@ public class TiposDeLotacaoTributarioEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tiposDeLotacaoTributariaEditarPO.editar();
-
 		assertTrue(sucesso, Editar);
-
 	}
 
 }

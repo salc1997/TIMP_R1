@@ -34,7 +34,7 @@ public class PaisMoedaDetalhes extends TestBaseEliel {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

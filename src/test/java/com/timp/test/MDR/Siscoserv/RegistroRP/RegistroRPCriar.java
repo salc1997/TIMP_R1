@@ -32,7 +32,7 @@ public class RegistroRPCriar extends TestBaseEliel {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

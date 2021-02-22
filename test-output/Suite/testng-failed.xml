@@ -2,8 +2,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Contrato IOF(failed)">
+=======
+  <test thread-count="5" name="Preco De Transferencia &gt; Valores Para Metodo &gt;Valores Para Metodo CPL(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar">
         <methods>
           <include name="visualizar"/>
@@ -11,7 +16,17 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar -->
+=======
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
+<<<<<<< HEAD
   </test> <!-- Contrato IOF(failed) -->
   <test thread-count="5" name="ControleDeCreditoTributario &gt; Limite De Credito A Utilizar(failed)">
     <classes>
@@ -53,6 +68,49 @@
       </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
     </classes>
   </test> <!-- SPCB - Federais Retidos(failed) -->
+=======
+  </test> <!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL(failed) -->
+  <test thread-count="5" name="Preco De Transferencia &gt; Valores Para Metodo &gt;Valores Para Metodo PCI(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar -->
+    </classes>
+  </test> <!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI(failed) -->
+  <test thread-count="5" name="Siscoserv &gt; Registro RP(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar -->
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPFiltroID">
+        <methods>
+          <include name="filtroId"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPFiltroID -->
+    </classes>
+  </test> <!-- Siscoserv > Registro RP(failed) -->
+  <test thread-count="5" name="Siscoserv &gt; Registro RVS(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar -->
+    </classes>
+  </test> <!-- Siscoserv > Registro RVS(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 </suite> <!-- Failed suite [Suite] -->
 =======
 <?xml version="1.0" encoding="UTF-8"?>

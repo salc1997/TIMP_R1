@@ -37,7 +37,7 @@ public class RegistroRFVisualizar extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 
 		loginTC.login();

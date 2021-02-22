@@ -35,17 +35,19 @@ public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 	}
 
 	
-	@Test(priority = 1)
-	public void excluir() {
+	@Test()
+	public void criar() {
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
 		
 		boolean sucesso = tiposDeLogradouroExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = tiposDeLogradouroExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
-		
 	}
 
 }

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-02-19T17:28:57Z" name="Default suite" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
 =======
   <suite started-at="2021-02-19T21:37:43Z" name="Default suite" finished-at="2021-02-19T21:39:25Z" duration-ms="102104">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-02-20T00:07:57Z" name="Default suite" finished-at="2021-02-20T00:11:35Z" duration-ms="218019">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-02-19T17:28:57Z" name="Default test" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
@@ -18,16 +27,26 @@
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:37:43Z" name="beforeClass" finished-at="2021-02-19T21:37:59Z" duration-ms="15896" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-02-20T00:07:57Z" name="Default test" finished-at="2021-02-20T00:11:35Z" duration-ms="218019">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:07:57Z" name="beforeClass" finished-at="2021-02-20T00:08:37Z" duration-ms="40003" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:09Z" name="login" finished-at="2021-02-19T17:29:16Z" duration-ms="7175" status="PASS">
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:37:59Z" name="login" finished-at="2021-02-19T21:38:08Z" duration-ms="8890" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:08:37Z" name="criar" finished-at="2021-02-20T00:10:55Z" duration-ms="138250" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
 <<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:16Z" name="acessarBRE" finished-at="2021-02-19T17:29:32Z" duration-ms="16305" status="PASS">
@@ -44,20 +63,34 @@
 >>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:33:13Z" name="afterClass" finished-at="2021-02-19T17:33:13Z" duration-ms="0" status="PASS">
 =======
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:39:25Z" name="afterClass" finished-at="2021-02-19T21:39:25Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:10:55Z" name="excluirMassa" finished-at="2021-02-20T00:11:35Z" depends-on-methods="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa.criar" duration-ms="39744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirMassa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:11:35Z" name="afterClass" finished-at="2021-02-20T00:11:35Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
 =======
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

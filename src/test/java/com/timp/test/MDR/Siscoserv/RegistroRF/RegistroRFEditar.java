@@ -32,7 +32,7 @@ public class RegistroRFEditar extends TestBaseMassiel{
   }
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Editar() {
 
 		loginTC.login();

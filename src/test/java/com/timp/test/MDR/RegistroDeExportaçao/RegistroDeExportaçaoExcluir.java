@@ -33,7 +33,7 @@ public class RegistroDeExportaçaoExcluir extends TestBaseSteven {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Excluir() {
 		
 		loginTC.login();

@@ -35,7 +35,7 @@ public class CadastroDeObrasExcluir extends TestBaseMassiel {
   
 
   
-  @Test(priority = 1)
+  @Test()
   public void excluir() {
 	  
 	  loginTC.login();

@@ -38,7 +38,7 @@ public class DeterminacionRelevanciaPorMotivoDetalles extends TestBaseCristhian 
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void detalhes() {
 		
 		loginTC.login();

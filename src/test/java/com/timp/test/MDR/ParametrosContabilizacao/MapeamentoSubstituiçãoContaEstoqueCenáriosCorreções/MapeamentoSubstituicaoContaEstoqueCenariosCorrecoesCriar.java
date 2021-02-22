@@ -36,7 +36,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar extends Te
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();

@@ -31,7 +31,7 @@ public class S1250InfProcJudicialEditar extends TestBaseFernando{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

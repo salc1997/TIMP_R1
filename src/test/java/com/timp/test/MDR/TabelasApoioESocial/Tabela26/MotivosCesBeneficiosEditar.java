@@ -32,7 +32,7 @@ public class MotivosCesBeneficiosEditar extends TestBaseFernando{
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		
 		loginTC.login();

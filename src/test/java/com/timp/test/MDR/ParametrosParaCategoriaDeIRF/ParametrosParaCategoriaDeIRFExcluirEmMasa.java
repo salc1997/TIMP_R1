@@ -40,15 +40,22 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasa extends TestBaseSteven {
 	
 
 	
-	@Test(priority = 1)
-	public void excluir() {
+	@Test()
+	public void criar() {
 		
 		loginTC.login();
 		 accesarMDR.acessarMDR();
 		 
 		boolean sucesso = parametrosParaCategoriaDeIRFExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+		
+		
+	}
+	
+	@Test()
+	public void excluir() {
+		
+		
 		boolean sucesso2 = parametrosParaCategoriaDeIRFExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
 		

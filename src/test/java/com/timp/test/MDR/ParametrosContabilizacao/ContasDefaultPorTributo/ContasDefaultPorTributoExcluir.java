@@ -34,7 +34,7 @@ public class ContasDefaultPorTributoExcluir extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		
 		loginTC.login();

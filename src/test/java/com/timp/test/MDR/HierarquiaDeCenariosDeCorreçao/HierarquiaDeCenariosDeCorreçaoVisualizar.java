@@ -38,7 +38,7 @@ public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseEliel {
 
 	
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

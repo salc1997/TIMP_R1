@@ -33,7 +33,7 @@ public class ContasDefaultPorTributoEditar extends TestBaseEliel {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 
 		loginTC.login();

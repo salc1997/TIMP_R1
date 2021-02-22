@@ -575,7 +575,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void factoresDeRiscoExcluir() {
 		factoresDeRiscoExcluir = new FactoresDeRiscoExcluir();
 		factoresDeRiscoExcluir.beforeClass();
-		factoresDeRiscoExcluir.excluirr();
+		factoresDeRiscoExcluir.excluir();
 		factoresDeRiscoExcluir.afterClass();
 	}
 	
@@ -583,7 +583,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void factoresDeRiscoExcluirMassa() {
 		factoresDeRiscoExcluirMassa = new FactoresDeRiscoExcluirMassa();
 		factoresDeRiscoExcluirMassa.beforeClass();
-		factoresDeRiscoExcluirMassa.criar();
+		factoresDeRiscoExcluirMassa.ExcluirMassa();
 		factoresDeRiscoExcluirMassa.afterClass();
 	}
 	

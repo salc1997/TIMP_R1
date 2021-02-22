@@ -41,6 +41,13 @@ public class S1060AmbientesDeTrablhoExcluirMassa extends TestBaseCristhian{
 		boolean sucesso = s1060AmbientesDeTrablhoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void Excluir() {		
+		
 		boolean sucesso2 = s1060AmbientesDeTrablhoExcluirMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

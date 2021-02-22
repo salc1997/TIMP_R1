@@ -322,7 +322,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Substituicao Conta Estoque Cenarios Correcoes-------------------------");
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.beforeClass();
-		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.criar();
+		//mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.criar();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa.afterClass();
 	}
 	
@@ -333,7 +333,7 @@ public class AutomacoesMDR17 extends TestBaseSteven{
 		System.out.println("-------------------Parametros Contabilizacao Mapeamento Contabil Correcao-------------------------");
 		mapeamentoContabilCorrecaoExcluirEmMassa = new MapeamentoContabilCorrecaoExcluirEmMassa();
 		mapeamentoContabilCorrecaoExcluirEmMassa.beforeClass();
-		mapeamentoContabilCorrecaoExcluirEmMassa.criar();
+		//mapeamentoContabilCorrecaoExcluirEmMassa.criar();
 		mapeamentoContabilCorrecaoExcluirEmMassa.afterClass();
 	}
 	

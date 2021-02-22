@@ -31,21 +31,12 @@ public class ContasContábeisRBLPFiltroId extends TestBaseMassiel{
   public void afterClass() {
   }
   
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
 
- 	}
 
- 	@Test(priority = 1)
- 	public void acessarMDR() {
-
- 		acessarMDRPO.acessarMDR();
-
- 	}
-
- 	@Test(priority = 2)
+ 	@Test()
  	public void filtro() {
+ 		loginTC.login();
+ 		acessarMDRPO.acessarMDR();
 
  		contasContábeisRBLPFiltroIdPO.filtro();
  		//boolean sucesso = contasContábeisRBLPFiltroIdPO.filtro();

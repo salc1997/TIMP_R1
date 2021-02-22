@@ -39,7 +39,7 @@ public class ParametrosParaLivroICMSSTDetalle extends TestBaseSteven{
 
 
 
- 	@Test(priority = 1)
+ 	@Test()
  	public void detalhes() {
  		
  		loginTC.login();

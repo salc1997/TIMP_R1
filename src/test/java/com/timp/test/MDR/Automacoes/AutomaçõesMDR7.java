@@ -915,8 +915,8 @@ public class AutomaçõesMDR7 {
 		motivosCesBeneficiosExcluirMassa.beforeClass();
 		//motivosCesBeneficiosExcluirMassa.login();
 		//motivosCesBeneficiosExcluirMassa.acessarMDR();
-		motivosCesBeneficiosExcluirMassa.criar();
-		motivosCesBeneficiosExcluirMassa.excluirMassa();
+		//motivosCesBeneficiosExcluirMassa.criar();
+	//	motivosCesBeneficiosExcluirMassa.excluirMassa();
 		motivosCesBeneficiosExcluirMassa.afterClass();		
 		System.out.println("------------------- Tabelas de Apoio E-SOCIAL > Tabela 26 - Motivos de Ces. Benefícios -------------------------");
 	}

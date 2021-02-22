@@ -37,7 +37,7 @@ public class RegraDeReaberturaDetalle extends TestBaseMassiel{
 
 
 
-	@Test(priority = 1 )
+	@Test( )
 	public void detalle() {
 	
 		loginTC.login();

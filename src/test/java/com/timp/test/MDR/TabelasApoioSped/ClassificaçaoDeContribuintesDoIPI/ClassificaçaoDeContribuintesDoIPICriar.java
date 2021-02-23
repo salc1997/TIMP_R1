@@ -38,11 +38,6 @@ public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-<<<<<<< HEAD
-=======
-		// classificaçaoDeContribuintesDoIPICriarPO.criar();
-
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		boolean sucesso = classificaçaoDeContribuintesDoIPICriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

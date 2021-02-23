@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.DuplicidadePO;
-import com.sap.timp.pageObjectModel.BRB.EditarPO;
+import com.sap.timp.pageObjectModel.BRB.OutputAutomáticoPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,18 +14,17 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class Duplicidade extends TestBaseCristhian{
-
+public class OutputAutomático extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	DuplicidadePO duplicidadePO;
+	OutputAutomáticoPO outputAutomáticoPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		duplicidadePO = new DuplicidadePO();
+		outputAutomáticoPO = new OutputAutomáticoPO();
 
 	}
 
@@ -43,7 +42,7 @@ public class Duplicidade extends TestBaseCristhian{
 		acessarBrbPO.acessar();
 		
 		
-		boolean sucesso = duplicidadePO.editar();
+		boolean sucesso = outputAutomáticoPO.editar();
 		assertTrue(sucesso, Editar);
 
 	}

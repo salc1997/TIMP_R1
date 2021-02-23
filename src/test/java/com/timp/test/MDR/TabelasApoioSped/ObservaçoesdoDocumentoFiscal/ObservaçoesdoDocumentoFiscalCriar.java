@@ -33,23 +33,10 @@ public class ObservaçoesdoDocumentoFiscalCriar extends TestBaseMassiel {
 	public void afterClass() {
 		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		// observaçoesdoDocumentoFiscalCriarPO.criar();
 
 		boolean sucesso = observaçoesdoDocumentoFiscalCriarPO.criar();

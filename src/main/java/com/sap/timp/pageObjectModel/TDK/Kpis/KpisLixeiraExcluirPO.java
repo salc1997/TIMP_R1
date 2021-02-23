@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseCristhian;
 
-public class KpisLixeiraPO extends TestBaseEliel{
-	
+public class KpisLixeiraExcluirPO extends TestBaseCristhian{
+
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
 
@@ -92,7 +92,7 @@ public class KpisLixeiraPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash-kpi\"]")
 	public WebElement Lixeira;
 	
-	public KpisLixeiraPO() {
+	public KpisLixeiraExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
 
@@ -106,7 +106,7 @@ public class KpisLixeiraPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		kpispublicos.click();
+		Lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -114,12 +114,12 @@ public class KpisLixeiraPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter1();
 
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement lixeira = driver.findElement(
-				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
 		actionsMoveToElementElement(menu);
 		sleep(2000);
@@ -157,8 +157,8 @@ public class KpisLixeiraPO extends TestBaseEliel{
 		System.out.println(idB);
 		double idD = convertToDouble(idRegistro);
 		double idBD = convertToDouble(idB);
-		idInserir1(idB);
-		if (idBD == idD) {
+
+		if (idBD < idD) {
 			System.out.println("Sim, é o id que foi enviado para lixeira");
 			sucesso =true;
 		} else {
@@ -172,5 +172,6 @@ public class KpisLixeiraPO extends TestBaseEliel{
 		return sucesso;
 	}
 
-
+	
+	
 }

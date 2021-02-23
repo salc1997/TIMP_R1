@@ -4,6 +4,7 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
 =======
 <<<<<<< HEAD
@@ -11,7 +12,11 @@
 =======
 <<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar">
+=======
+      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,6 +41,10 @@
         <methods>
 <<<<<<< HEAD
 =======
+=======
+          <include name="excluirEmMassa"/>
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
           <include name="editar"/>
 >>>>>>> refs/heads/Cristhian
@@ -43,6 +52,7 @@
 <<<<<<< HEAD
 =======
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.OutputAutomático -->
 =======
@@ -105,6 +115,9 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

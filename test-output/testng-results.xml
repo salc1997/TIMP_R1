@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
 =======
@@ -14,7 +15,10 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
@@ -30,8 +34,11 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-02-23T00:49:52Z" name="Default suite" finished-at="2021-02-23T00:54:30Z" duration-ms="277302">
@@ -67,8 +74,12 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-02-23T04:11:14Z" name="Default suite" finished-at="2021-02-23T04:13:52Z" duration-ms="158440">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-02-23T00:49:52Z" name="Default test" finished-at="2021-02-23T00:54:30Z" duration-ms="277302">
@@ -120,9 +131,15 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-02-23T04:11:14Z" name="Default test" finished-at="2021-02-23T04:13:52Z" duration-ms="158440">
+      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:11:14Z" name="beforeClass" finished-at="2021-02-23T04:12:04Z" duration-ms="49937" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:51:42Z" name="login" finished-at="2021-02-23T00:52:05Z" duration-ms="23421" status="PASS">
@@ -158,6 +175,9 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:12:04Z" name="login" finished-at="2021-02-23T04:12:18Z" duration-ms="13998" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -173,6 +193,7 @@
 <<<<<<< HEAD
 >>>>>>> refs/heads/Cristhian
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:52:05Z" name="BPMAEntrar" finished-at="2021-02-23T00:52:45Z" duration-ms="39761" status="PASS">
 =======
@@ -193,8 +214,12 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:12:18Z" name="acessarTDK" finished-at="2021-02-23T04:13:20Z" duration-ms="62118" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- BPMAEntrar -->
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -293,8 +318,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- acessarTDK -->
+        <test-method signature="excluirEmMassa()[pri:2, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:13:20Z" name="excluirEmMassa" finished-at="2021-02-23T04:13:52Z" duration-ms="32366" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -345,9 +375,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- excluirEmMassa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:13:52Z" name="afterClass" finished-at="2021-02-23T04:13:52Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.TarefasMultiplasEstagios -->
 =======
@@ -378,6 +413,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

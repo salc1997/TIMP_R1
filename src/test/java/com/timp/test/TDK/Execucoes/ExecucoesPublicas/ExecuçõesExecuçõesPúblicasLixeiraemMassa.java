@@ -3,6 +3,7 @@ package com.timp.test.TDK.Execucoes.ExecucoesPublicas;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesLixeiraPO;
@@ -14,14 +15,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecuçõesExecuçõesPúblicasLixeiraemMassa extends TestBaseCristhian {
+public class ExecuçõesExecuçõesPúblicasLixeiraemMassa extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	ExecuçõesExecuçõesPúblicasLixeiraemMassaPO execuçõesExecuçõesPúblicasLixeiraemMassaPO;
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		execuçõesExecuçõesPúblicasLixeiraemMassaPO = new ExecuçõesExecuçõesPúblicasLixeiraemMassaPO();

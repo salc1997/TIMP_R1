@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseMassiel;
 
-public class ExecuçõesExecuçõesPúblicasLixeiraemMassaPO extends TestBaseCristhian {
+public class ExecuçõesExecuçõesPúblicasLixeiraemMassaPO extends TestBaseMassiel {
 
 	@FindBy(xpath = "//span[text()=\"KPI's Públicos\"]")
 	public WebElement kpispublicos;
@@ -402,11 +403,11 @@ public class ExecuçõesExecuçõesPúblicasLixeiraemMassaPO extends TestBaseCristhia
 		menu.click();
 		sleep(1000);
 		lixeira.click();
-		sleep(2000);
+		sleep(3000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		Lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -504,7 +505,7 @@ public class ExecuçõesExecuçõesPúblicasLixeiraemMassaPO extends TestBaseCristhia
 		sleep(2000);
 		
 		eliminar.click();
-		sleep(2000);
+		sleep(3000);
 		
 		sim.click();
 		sleep(2000);
@@ -527,7 +528,7 @@ public class ExecuçõesExecuçõesPúblicasLixeiraemMassaPO extends TestBaseCristhia
 				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
 				.size();
 		
-		int rowsL6= rows3 -1;
+		int rowsL6= rowsL5 -1;
 		
 		String idRegistroL1 = driver.findElement(By.xpath(
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rowsL5 + "]/div[5]/div"))
@@ -536,8 +537,8 @@ public class ExecuçõesExecuçõesPúblicasLixeiraemMassaPO extends TestBaseCristhia
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rowsL6 + "]/div[5]/div"))
 				.getText();
 		
-		idInserir2(idRegistroL1);
-		idInserir3(idRegistroL2);
+		idInserir("idRegistroL1",idRegistroL1);
+		idInserir("idRegistroL2",idRegistroL2);
 		
 		System.out.println("ID1 : "+idRegistroL1);
 		System.out.println("ID2 : "+idRegistroL2);

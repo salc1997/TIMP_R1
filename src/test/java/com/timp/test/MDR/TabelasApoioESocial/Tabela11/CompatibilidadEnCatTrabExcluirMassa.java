@@ -36,15 +36,13 @@ public class CompatibilidadEnCatTrabExcluirMassa extends TestBaseCristhian {
   }
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = compatibilidadEnCatTrabExcluirMassaPO.criar();
-
 		assertTrue(sucesso, Criar);
-
 	}
 
 }

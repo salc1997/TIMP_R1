@@ -33,7 +33,7 @@ public class TabelaDeProdutosVisualizar extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

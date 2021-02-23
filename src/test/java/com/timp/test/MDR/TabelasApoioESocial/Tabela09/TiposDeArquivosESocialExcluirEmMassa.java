@@ -32,7 +32,7 @@ public class TiposDeArquivosESocialExcluirEmMassa extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();
@@ -41,6 +41,11 @@ public class TiposDeArquivosESocialExcluirEmMassa extends TestBaseSteven {
 		boolean sucesso = tiposDeArquivosESocialExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
+
 		boolean sucesso2 = tiposDeArquivosESocialExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

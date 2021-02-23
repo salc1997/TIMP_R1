@@ -98,7 +98,11 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		opcaotributo.click();
 		
 		sleep(2000);
+<<<<<<< HEAD
 		codigocst.sendKeys("22937");
+=======
+		codigocst.sendKeys("33937");
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		
 		sleep(2000);
 		

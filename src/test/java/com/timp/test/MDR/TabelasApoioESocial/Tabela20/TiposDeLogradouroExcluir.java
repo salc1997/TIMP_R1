@@ -36,7 +36,7 @@ public class TiposDeLogradouroExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	  public void excluir() {
 		
 		loginTC.login();

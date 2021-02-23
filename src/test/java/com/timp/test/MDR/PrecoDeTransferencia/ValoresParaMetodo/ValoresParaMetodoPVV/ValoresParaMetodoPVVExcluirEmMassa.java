@@ -32,16 +32,18 @@ public class ValoresParaMetodoPVVExcluirEmMassa extends TestBaseKenssy{
 	}
 
 	@Test()
-	public void excluirEmMassa() {
+	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
 
 		boolean sucesso = valoresParaMetodoPVVExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = valoresParaMetodoPVVExcluirEmMassaPO.valoresParaMetodoPVVExcluirEmMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
-
-
 }

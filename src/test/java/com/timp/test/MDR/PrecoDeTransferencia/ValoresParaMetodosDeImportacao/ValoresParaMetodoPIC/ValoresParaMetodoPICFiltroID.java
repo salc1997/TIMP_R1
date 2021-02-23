@@ -35,7 +35,7 @@ public class  ValoresParaMetodoPICFiltroID extends TestBaseSteven{
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
 
 		loginTC.login();

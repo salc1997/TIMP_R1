@@ -32,7 +32,7 @@ public class ValoresParaMetodoPICDetalhes extends TestBaseEliel{
 	 @AfterClass public void afterClass(){ driver.close(); }
 	 
 
-	@Test(priority = 1)
+	@Test()
 	public void Detalhes() {
 
 		loginTC.login();

@@ -377,7 +377,7 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 	public void motivosdeDesligamentoExcluirMasa() {
 		motivosdeDesligamentoExcluirMasa = new MotivosdeDesligamentoExcluirMasa();
 		motivosdeDesligamentoExcluirMasa.beforeClass();
-		motivosdeDesligamentoExcluirMasa.excluirMasaMotivosDesligamento();
+		//motivosdeDesligamentoExcluirMasa.excluirMasaMotivosDesligamento();
 		motivosdeDesligamentoExcluirMasa.afterClass();
 	}
 	

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
-	<test name="Automações MDR 1" preserve-order="true">
+	<test name="Associção Código de Ajustes" preserve-order="true">
 
 
-		<classes >
+		<classes>
 
+<<<<<<< HEAD
+=======
 
 			<!-- Associção Código de Ajustes -->
 
-			
+>>>>>>> refs/remotes/origin/Kenssy
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
-	
+
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
 
@@ -25,8 +27,15 @@
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
 
+		</classes>
 
-			<!-- Códigos de Ajuste -->
+	</test> <!-- PruebaTestNG -->
+
+
+	<test name="Códigos de Ajuste">
+
+		<classes>
+
 			<class
 				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar"></class>
 
@@ -42,7 +51,15 @@
 			<class
 				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
 
-			<!-- Antecipação -->
+		</classes>
+
+
+	</test>
+
+
+	<test name="Antecipação">
+
+		<classes>
 
 			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoCriar"></class>
 
@@ -56,10 +73,17 @@
 				name="com.timp.test.MDR.Antecipacao.AntecipacaoVisualizar"></class>
 
 			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoEliminar"></class>
-			
-			
 
-			<!-- Ativação Para Municipio -->
+
+		</classes>
+
+
+	</test>
+
+
+	<test name="Ativação Para Municipio">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.AtivaçaoParaMunicipio.AtivaçaoParaMunicipioCriar"></class>
@@ -81,7 +105,15 @@
 
 
 
-			<!-- Atividades Fiscais > Atividade Fiscal -->
+		</classes>
+
+
+	</test>
+
+
+	<test name="Atividades Fiscais > Atividade Fiscal">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeCriar"></class>
@@ -99,11 +131,15 @@
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro"></class>
 
-			
-			
-			
-			<!-- Atividades Fiscais > Grupo de Atividade Fiscal -->
+		</classes>
 
+
+	</test>
+
+
+	<test name="Atividades Fiscais > Grupo de Atividade Fiscal">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeCriar"></class>
@@ -122,12 +158,17 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluirMassa"></class>
-			
-			
-			
-			
 
-			<!-- Atividades Fiscais > Associação de Atividade Fiscal -->
+		</classes>
+
+
+	</test>
+
+
+
+	<test name="Atividades Fiscais > Associação de Atividade Fiscal">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriar"></class>
@@ -143,16 +184,20 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir"></class>
-			
+
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar"></class>
-			
 
-			
-
+		</classes>
 
 
-			<!-- Cadastro da Condição -->
+	</test>
+
+
+
+	<test name="Cadastro da Condição">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.CadastroCondiçao.CadastroCondicaoCriar"></class>
@@ -172,9 +217,16 @@
 			<class
 				name="com.timp.test.MDR.CadastroCondiçao.CadastroCondiçaoExcluirMasas"></class>
 
+		</classes>
 
 
-			<!-- Cadastro Derex > Instituição Financeira -->
+	</test>
+
+
+
+	<test name="Cadastro Derex > Instituição Financeira">
+
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoCriar"></class>
@@ -196,11 +248,16 @@
 
 			<class
 				name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoFiltroId"></class>
+		</classes>
+
+
+	</test>
 
 
 
+	<test name="Cadastro Derex > Cadastro Responsável Pelo Movimento">
 
-			<!-- Cadastro Derex > Cadastro Responsavél Pelo Movimento -->
+		<classes>
 
 			<class
 				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoCriar"></class>
@@ -221,7 +278,13 @@
 				name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoFiltros"></class>
 
 
+
 		</classes>
 
-	</test> <!-- PruebaTestNG -->
+
+	</test>
+
+
+
+
 </suite> <!-- Suite -->

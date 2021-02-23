@@ -756,7 +756,7 @@ public class AutomacoesMDR16 extends TestBaseSteven{
 //		tiposDeLogradouroExcluirEmMasa.login();
 //		tiposDeLogradouroExcluirEmMasa.acessarMDR();
 
-		tiposDeLogradouroExcluirEmMasa.excluir();
+		//tiposDeLogradouroExcluirEmMasa.excluir();
 		tiposDeLogradouroExcluirEmMasa.afterClass();
 		
 		System.out.println("-------------------Tabelas de Apoio E-SOCIAL	Tabela 20 - Tipos de Logradouro fin-------------------------");

@@ -35,7 +35,7 @@ public class NaturezaJuridicaCriar extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	  public void criar() {
 		
 		loginTC.login();

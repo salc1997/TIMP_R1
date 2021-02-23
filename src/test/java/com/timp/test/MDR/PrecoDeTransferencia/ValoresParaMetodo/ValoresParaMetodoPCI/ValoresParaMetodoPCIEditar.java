@@ -30,14 +30,13 @@ public class ValoresParaMetodoPCIEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = valoresParaMetodoPCIEditarPO.editar();
-
 		assertTrue(sucesso, Editar);
 
 	}

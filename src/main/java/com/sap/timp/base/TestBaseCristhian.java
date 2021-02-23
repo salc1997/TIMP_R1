@@ -36,6 +36,10 @@ public class TestBaseCristhian extends TestBaseSteven{
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		driver.get(tc2);
 
 

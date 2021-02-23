@@ -33,7 +33,7 @@ public class RegistroRASVisualizar extends TestBaseEliel{
 		driver.close();
 	}
 
-	@Test(priority = 2)
+	@Test()
 	public void Visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

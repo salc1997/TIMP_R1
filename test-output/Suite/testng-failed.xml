@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
@@ -323,3 +324,204 @@
     </classes>
   </test> <!-- Rateiro Consorcio(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
+  <test thread-count="5" name="Contrato IOF(failed)">
+=======
+  <test thread-count="5" name="Preco De Transferencia &gt; Valores Para Metodo &gt;Valores Para Metodo CPL(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
+    <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar -->
+=======
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCPL.ValoresParaMetodoCPLEditar -->
+>>>>>>> refs/remotes/origin/Kenssy
+    </classes>
+<<<<<<< HEAD
+  </test> <!-- Contrato IOF(failed) -->
+  <test thread-count="5" name="ControleDeCreditoTributario &gt; Limite De Credito A Utilizar(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditar -->
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizar -->
+    </classes>
+  </test> <!-- ControleDeCreditoTributario > Limite De Credito A Utilizar(failed) -->
+  <test thread-count="5" name="Controle De Credito Tributario &gt; Utilizacao Dos Creditos Na Apuração(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhes">
+        <methods>
+          <include name="Detalhes"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoDetalhes -->
+    </classes>
+  </test> <!-- Controle De Credito Tributario > Utilizacao Dos Creditos Na Apuração(failed) -->
+  <test thread-count="5" name="SPCB - Federais Retidos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="detalhe"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
+    </classes>
+  </test> <!-- SPCB - Federais Retidos(failed) -->
+=======
+  </test> <!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo CPL(failed) -->
+  <test thread-count="5" name="Preco De Transferencia &gt; Valores Para Metodo &gt;Valores Para Metodo PCI(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIEditar -->
+    </classes>
+  </test> <!-- Preco De Transferencia > Valores Para Metodo >Valores Para Metodo PCI(failed) -->
+  <test thread-count="5" name="Siscoserv &gt; Registro RP(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPEditar -->
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPFiltroID">
+        <methods>
+          <include name="filtroId"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPFiltroID -->
+    </classes>
+  </test> <!-- Siscoserv > Registro RP(failed) -->
+  <test thread-count="5" name="Siscoserv &gt; Registro RVS(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar -->
+    </classes>
+  </test> <!-- Siscoserv > Registro RVS(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
+</suite> <!-- Failed suite [Suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="S1060AmbientesDeTrablho(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa -->
+    </classes>
+  </test> <!-- S1060AmbientesDeTrablho(failed) -->
+  <test thread-count="5" name="S1200RemuneracaoDeTrabalhador(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes -->
+      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar -->
+      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir -->
+    </classes>
+  </test> <!-- S1200RemuneracaoDeTrabalhador(failed) -->
+  <test thread-count="5" name="S1250AquisicaoDeProducaoRural(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar -->
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir -->
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar -->
+    </classes>
+  </test> <!-- S1250AquisicaoDeProducaoRural(failed) -->
+  <test thread-count="5" name="ParametrosModeloDeApuracaoTP(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
+    </classes>
+  </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git

@@ -31,17 +31,19 @@ public class NaturezaJuridicaExcluirMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void excluirMassa() {
+	@Test()
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = naturezaJuridicaExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		
-		boolean sucesso2 = naturezaJuridicaExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso2, Eliminado);
 	}
 	
+	@Test(dependsOnMethods = "criar")
+	public void excluirMassa() {
+		boolean sucesso = naturezaJuridicaExcluirMassaPO.exluirMassa();
+		assertTrue(sucesso, Eliminado);
+	}
 
 }

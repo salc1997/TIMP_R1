@@ -32,7 +32,7 @@ public class TiposDeLotacaoTributarioVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 
 		loginTC.login();

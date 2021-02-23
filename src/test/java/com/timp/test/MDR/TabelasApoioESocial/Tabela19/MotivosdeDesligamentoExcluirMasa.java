@@ -35,20 +35,18 @@ public class MotivosdeDesligamentoExcluirMasa extends TestBaseKenssy {
 
 	
 	@Test()
-	public void excluirMasaMotivosDesligamento() {
-		
+	public void criar() {
 		loginTC.login();
-
 		accesarMDR.acessarMDR();
-		
-		
 		
 		boolean sucesso = motivosDesligamentoExcluirPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = motivosDesligamentoExcluirPO.excluirMasaMotivosDesligamento();
 		assertTrue(sucesso2, Eliminado);
-		
 	}
 
 }

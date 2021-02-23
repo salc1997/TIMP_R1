@@ -33,7 +33,7 @@ public class RegistroRFFiltroPorID extends TestBaseEliel{
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
 		
 		loginTC.login();

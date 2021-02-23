@@ -39,10 +39,13 @@ public class TabelaDeCreditosPorObrigacaoExcluirEmMassa extends TestBaseEliel{
 		
 		boolean sucesso = tabelaDeCreditosPorObrigacaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = tabelaDeCreditosPorObrigacaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
-
 }

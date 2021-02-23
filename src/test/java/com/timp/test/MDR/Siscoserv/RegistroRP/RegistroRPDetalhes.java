@@ -33,7 +33,7 @@ public class RegistroRPDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

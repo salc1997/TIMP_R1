@@ -30,7 +30,7 @@ public class ValoresParaMetodoPRLDetalhes extends TestBaseEliel {
 	
 	 @AfterClass public void afterClass(){ driver.close(); }
 
-	@Test(priority = 1)
+	@Test()
 	public void Detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

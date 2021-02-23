@@ -44,16 +44,14 @@ public class CompatibilidadeEntreLotacaoExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = compatibilidadeEntreLotacaoExcluirPO.excluir();
-
 		assertTrue(sucesso, Editar);
-
 	}
 
 }

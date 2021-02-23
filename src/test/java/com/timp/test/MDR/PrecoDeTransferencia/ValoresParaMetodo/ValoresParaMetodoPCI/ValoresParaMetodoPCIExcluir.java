@@ -30,7 +30,7 @@ public class ValoresParaMetodoPCIExcluir extends TestBaseEliel {
 	  @AfterClass public void afterClass(){ driver.close(); }
 	 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

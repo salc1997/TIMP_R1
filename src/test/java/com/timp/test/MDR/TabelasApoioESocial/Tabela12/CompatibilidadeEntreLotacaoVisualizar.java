@@ -41,7 +41,7 @@ public class CompatibilidadeEntreLotacaoVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
@@ -51,7 +51,5 @@ public class CompatibilidadeEntreLotacaoVisualizar extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-
 	}
-
 }

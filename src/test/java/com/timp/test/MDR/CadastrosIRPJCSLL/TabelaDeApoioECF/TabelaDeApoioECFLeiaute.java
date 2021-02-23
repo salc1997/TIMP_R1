@@ -34,7 +34,7 @@ public class TabelaDeApoioECFLeiaute extends TestBaseMassiel{
   
 
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

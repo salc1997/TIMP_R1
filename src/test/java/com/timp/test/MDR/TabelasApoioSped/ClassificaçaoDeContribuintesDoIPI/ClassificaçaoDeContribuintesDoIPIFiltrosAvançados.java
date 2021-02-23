@@ -36,6 +36,10 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseE
 	}
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 	@Test()
 	public void filtros() {
 		loginTC.login();

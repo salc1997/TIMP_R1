@@ -31,6 +31,10 @@ public class ClassificaçaoDeContribuintesDoIPIExcluirMassa extends TestBaseFerna
 		driver.close();
 	}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 	@Test()
 	public void criar() {
 		loginTC.login();
@@ -40,8 +44,19 @@ public class ClassificaçaoDeContribuintesDoIPIExcluirMassa extends TestBaseFerna
 	}
 	
 	@Test(dependsOnMethods = "criar")
+<<<<<<< HEAD
 	public void excluirMassa() {
 		boolean sucesso = classificaçaoDeContribuintesDoIPIExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+=======
+	public void excluir() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+
+		
+		boolean sucesso2 = classificaçaoDeContribuintesDoIPIExcluirMassaPO.exluirMassa();
+		assertTrue(sucesso2, Eliminado);
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 	}
+
 }

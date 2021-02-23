@@ -311,7 +311,7 @@
 		</classes>
 	</test>
 	
-		<test name="Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro" >
+	<test name="Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro" >
 		<classes>
 			<class 
 			name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroCriar">

@@ -30,7 +30,7 @@ public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

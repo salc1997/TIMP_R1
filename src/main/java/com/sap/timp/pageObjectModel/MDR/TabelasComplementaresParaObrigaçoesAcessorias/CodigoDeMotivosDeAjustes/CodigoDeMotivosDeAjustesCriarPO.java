@@ -94,11 +94,15 @@ public class CodigoDeMotivosDeAjustesCriarPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
+<<<<<<< HEAD
+		codigodeajustes.sendKeys("229937");
+=======
 		codigodeajustes.sendKeys("339937");
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		
 		sleep(2000);
 		
-		descricaodeajustes.sendKeys("Teste0 99");
+		descricaodeajustes.sendKeys("Teste0 22");
 		
 		sleep(2000);
 		

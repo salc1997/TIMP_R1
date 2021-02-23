@@ -33,20 +33,13 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 2)
-	public void mdrEntrar() {
-		acesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 3)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acesarMDRPO.acessarMDR();
 		boolean sucesso = configuraçãDeTipoTaxaDeAtualizaçãoCriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}

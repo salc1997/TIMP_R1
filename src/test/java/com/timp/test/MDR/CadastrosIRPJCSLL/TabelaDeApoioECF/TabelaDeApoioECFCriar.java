@@ -32,7 +32,7 @@ public class TabelaDeApoioECFCriar extends TestBaseFernando{
 	}
 
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

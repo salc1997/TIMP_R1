@@ -31,26 +31,23 @@ public class TiposDeBenefíciosCriarExcluirMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = tiposDeBenefíciosExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 3)
-	public void excluirMassa() {
-		boolean sucesso = tiposDeBenefíciosExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso, Eliminado);
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+		boolean sucesso2 = tiposDeBenefíciosExcluirMassaPO.exluirMassa();
+		assertTrue(sucesso2, Eliminado);
 	}
+	
+
 }

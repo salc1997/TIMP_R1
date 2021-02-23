@@ -35,22 +35,12 @@ public class CodigoTipoCreditoFiltrosAvançados extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtros() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		// codigoTipoCreditoFiltrosAvançadosPO.filtros();
 
 		ArrayList<Boolean> sucesso = codigoTipoCreditoFiltrosAvançadosPO.filtros();

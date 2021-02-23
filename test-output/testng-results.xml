@@ -1,49 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+=======
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
 =======
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<<<<<<< HEAD
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite started-at="2021-02-23T00:49:52Z" name="Default suite" finished-at="2021-02-23T00:54:30Z" duration-ms="277302">
 =======
+  <suite started-at="2021-02-22T20:02:12Z" name="Default suite" finished-at="2021-02-22T20:06:11Z" duration-ms="238651">
+=======
+<<<<<<< HEAD
+  <suite started-at="2021-02-19T20:00:28Z" name="Default suite" finished-at="2021-02-19T20:04:19Z" duration-ms="231287">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
   <suite started-at="2021-02-22T23:34:28Z" name="Default suite" finished-at="2021-02-22T23:36:06Z" duration-ms="97510">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-02-22T16:57:14Z" name="Default suite" finished-at="2021-02-22T17:05:14Z" duration-ms="480052">
+=======
+>>>>>>> refs/heads/Cristhian
+  <suite started-at="2021-02-19T17:28:57Z" name="Default suite" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
+<<<<<<< HEAD
+=======
+  <suite started-at="2021-02-19T21:37:43Z" name="Default suite" finished-at="2021-02-19T21:39:25Z" duration-ms="102104">
+>>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-02-20T00:07:57Z" name="Default suite" finished-at="2021-02-20T00:11:35Z" duration-ms="218019">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-02-23T00:49:52Z" name="Default test" finished-at="2021-02-23T00:54:30Z" duration-ms="277302">
       <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:49:52Z" name="beforeClass" finished-at="2021-02-23T00:51:41Z" duration-ms="109212" status="PASS">
 =======
+    <test started-at="2021-02-22T20:02:12Z" name="Default test" finished-at="2021-02-22T20:06:11Z" duration-ms="238651">
+      <class name="com.timp.test.BRB.OutputAutomático">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.OutputAutomático@671a5887]" started-at="2021-02-22T20:02:12Z" name="beforeClass" finished-at="2021-02-22T20:02:30Z" duration-ms="17638" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2021-02-19T20:00:28Z" name="Default test" finished-at="2021-02-19T20:04:19Z" duration-ms="231287">
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:00:28Z" name="beforeClass" finished-at="2021-02-19T20:00:45Z" duration-ms="17072" status="PASS">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
     <test started-at="2021-02-22T23:34:28Z" name="Default test" finished-at="2021-02-22T23:36:06Z" duration-ms="97510">
       <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:34:28Z" name="beforeClass" finished-at="2021-02-22T23:34:40Z" duration-ms="11661" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-02-22T16:57:14Z" name="Default test" finished-at="2021-02-22T17:05:14Z" duration-ms="480052">
+      <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:14Z" name="beforeClass" finished-at="2021-02-22T16:57:29Z" duration-ms="15659" status="PASS">
+=======
+>>>>>>> refs/heads/Cristhian
+    <test started-at="2021-02-19T17:28:57Z" name="Default test" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:28:57Z" name="beforeClass" finished-at="2021-02-19T17:29:09Z" duration-ms="11751" status="PASS">
+<<<<<<< HEAD
+=======
+    <test started-at="2021-02-19T21:37:43Z" name="Default test" finished-at="2021-02-19T21:39:25Z" duration-ms="102104">
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:37:43Z" name="beforeClass" finished-at="2021-02-19T21:37:59Z" duration-ms="15896" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-02-20T00:07:57Z" name="Default test" finished-at="2021-02-20T00:11:35Z" duration-ms="218019">
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:07:57Z" name="beforeClass" finished-at="2021-02-20T00:08:37Z" duration-ms="40003" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:51:42Z" name="login" finished-at="2021-02-23T00:52:05Z" duration-ms="23421" status="PASS">
 =======
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRB.OutputAutomático@671a5887]" started-at="2021-02-22T20:02:30Z" name="editar" finished-at="2021-02-22T20:06:11Z" duration-ms="220975" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:00:45Z" name="login" finished-at="2021-02-19T20:00:55Z" duration-ms="10013" status="PASS">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:34:40Z" name="login" finished-at="2021-02-22T23:34:47Z" duration-ms="6665" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:29Z" name="login" finished-at="2021-02-22T16:57:38Z" duration-ms="8572" status="PASS">
+=======
+>>>>>>> refs/heads/Cristhian
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:09Z" name="login" finished-at="2021-02-19T17:29:16Z" duration-ms="7175" status="PASS">
+<<<<<<< HEAD
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:37:59Z" name="login" finished-at="2021-02-19T21:38:08Z" duration-ms="8890" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:08:37Z" name="criar" finished-at="2021-02-20T00:10:55Z" duration-ms="138250" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.OutputAutomático@671a5887]" started-at="2021-02-22T20:06:11Z" name="afterClass" finished-at="2021-02-22T20:06:11Z" duration-ms="1" status="PASS">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- login -->
+        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:00:55Z" name="acessarBRE" finished-at="2021-02-19T20:01:13Z" duration-ms="18379" status="PASS">
+=======
+<<<<<<< HEAD
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- login -->
 <<<<<<< HEAD
         <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:52:05Z" name="BPMAEntrar" finished-at="2021-02-23T00:52:45Z" duration-ms="39761" status="PASS">
 =======
+<<<<<<< HEAD
         <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:34:47Z" name="BPMAEntrar" finished-at="2021-02-22T23:35:00Z" duration-ms="13457" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:38Z" name="acessarTDK" finished-at="2021-02-22T16:58:34Z" duration-ms="56640" status="PASS">
+=======
+>>>>>>> refs/heads/Cristhian
+        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:16Z" name="acessarBRE" finished-at="2021-02-19T17:29:32Z" duration-ms="16305" status="PASS">
+<<<<<<< HEAD
+=======
+        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:38:08Z" name="acessarBRE" finished-at="2021-02-19T21:38:25Z" duration-ms="17214" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BPMAEntrar -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method signature="criar()[pri:2, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:52:45Z" name="criar" finished-at="2021-02-23T00:54:30Z" duration-ms="104832" status="PASS">
 =======
+=======
+<<<<<<< HEAD
+        </test-method> <!-- acessarTDK -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:58:34Z" name="criar" finished-at="2021-02-22T17:02:38Z" duration-ms="243756" status="PASS">
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
         <test-method signature="criar()[pri:2, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:35:00Z" name="criar" finished-at="2021-02-22T23:36:06Z" duration-ms="65659" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
@@ -113,18 +276,108 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- acessarBRE -->
+<<<<<<< HEAD
+        <test-method signature="editar()[pri:2, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:01:13Z" name="editar" finished-at="2021-02-19T20:04:15Z" duration-ms="181345" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="criar()[pri:2, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:32Z" name="criar" finished-at="2021-02-19T17:33:13Z" duration-ms="220648" status="PASS">
+<<<<<<< HEAD
+=======
+        <test-method signature="criar()[pri:2, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:38:25Z" name="criar" finished-at="2021-02-19T21:39:25Z" duration-ms="60001" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:04:15Z" name="afterClass" finished-at="2021-02-19T20:04:19Z" duration-ms="4425" status="PASS">
+=======
+=======
+>>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> refs/heads/Cristhian
         </test-method> <!-- criar -->
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:54:30Z" name="afterClass" finished-at="2021-02-23T00:54:30Z" duration-ms="1" status="PASS">
 =======
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:36:06Z" name="afterClass" finished-at="2021-02-22T23:36:06Z" duration-ms="0" status="PASS">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="lixeira()[pri:3, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:02:38Z" name="lixeira" finished-at="2021-02-22T17:04:00Z" duration-ms="81948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lixeira -->
+        <test-method signature="lixeiraDefinitiva()[pri:4, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:04:00Z" name="lixeiraDefinitiva" finished-at="2021-02-22T17:04:32Z" duration-ms="31697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lixeiraDefinitiva -->
+        <test-method signature="lixeiraExecucao()[pri:5, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:04:32Z" name="lixeiraExecucao" finished-at="2021-02-22T17:05:14Z" duration-ms="41740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lixeiraExecucao -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:05:14Z" name="afterClass" finished-at="2021-02-22T17:05:14Z" duration-ms="0" status="PASS">
+=======
+>>>>>>> refs/heads/Cristhian
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:33:13Z" name="afterClass" finished-at="2021-02-19T17:33:13Z" duration-ms="0" status="PASS">
+<<<<<<< HEAD
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:39:25Z" name="afterClass" finished-at="2021-02-19T21:39:25Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:10:55Z" name="excluirMassa" finished-at="2021-02-20T00:11:35Z" depends-on-methods="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa.criar" duration-ms="39744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirMassa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:11:35Z" name="afterClass" finished-at="2021-02-20T00:11:35Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.TarefasMultiplasEstagios -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.OutputAutomático -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
+=======
+>>>>>>> refs/heads/Cristhian
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
+<<<<<<< HEAD
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
+>>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

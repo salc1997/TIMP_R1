@@ -86,7 +86,7 @@ public class ClassificaçaoDeContribuintesDoIPICriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tipodeatividade.sendKeys("00011");
+		tipodeatividade.sendKeys("33011");
 		sleep(2000);
 		
 		descricao.sendKeys("Teste QA0 011");

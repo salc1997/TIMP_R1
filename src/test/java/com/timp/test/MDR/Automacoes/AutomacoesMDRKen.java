@@ -511,8 +511,8 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários----------");
 		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa = new ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa();
 		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.beforeClass();
-		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
-		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
+//		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
+//		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.ingresar();
 		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.excluirEmMassa();
 		contrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa.afterClass();
 	}

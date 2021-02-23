@@ -157,7 +157,7 @@ public class KpisLixeiraPO extends TestBaseEliel{
 		System.out.println(idB);
 		double idD = convertToDouble(idRegistro);
 		double idBD = convertToDouble(idB);
-
+		idInserir1(idB);
 		if (idBD == idD) {
 			System.out.println("Sim, é o id que foi enviado para lixeira");
 			sucesso =true;

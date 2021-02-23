@@ -170,7 +170,7 @@ public class RegistroDeExportaçaoCriarPO extends TestBaseSteven {
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		biblioteca.click();
 		

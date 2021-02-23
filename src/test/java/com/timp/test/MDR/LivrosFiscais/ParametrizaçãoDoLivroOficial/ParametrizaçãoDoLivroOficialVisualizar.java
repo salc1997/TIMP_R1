@@ -33,7 +33,7 @@ public class ParametrizaçãoDoLivroOficialVisualizar extends TestBaseMassiel{
 	  driver.close();
   }
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 		
 		loginTC.login();

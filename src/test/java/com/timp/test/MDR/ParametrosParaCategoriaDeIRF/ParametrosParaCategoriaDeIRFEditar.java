@@ -34,7 +34,7 @@ public class ParametrosParaCategoriaDeIRFEditar extends TestBaseMassiel{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 
 		loginTC.login();

@@ -37,7 +37,7 @@ public class FactoresDeRiscoExcluir extends TestBaseCristhian {
 
 
 	@Test()
-	public void excluirr() {
+	public void excluir() {
 		
 		loginTC.login();
 

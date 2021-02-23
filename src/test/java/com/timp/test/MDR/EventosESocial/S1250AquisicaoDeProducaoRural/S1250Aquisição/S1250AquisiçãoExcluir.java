@@ -35,7 +35,7 @@ public class S1250AquisiçãoExcluir extends TestBaseCristhian{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		
 		loginTC.login();

@@ -35,7 +35,7 @@ public class S1250DadosdeEventoEditar extends TestBaseCristhian {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		
 		loginTC.login();

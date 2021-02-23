@@ -36,7 +36,7 @@ public class S1250DadosdeEventoCriar extends TestBaseCristhian {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();

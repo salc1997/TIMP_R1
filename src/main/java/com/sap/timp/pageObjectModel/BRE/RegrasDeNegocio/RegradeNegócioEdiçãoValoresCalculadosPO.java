@@ -174,7 +174,7 @@ public boolean editar() {
 	açao.click();
 	sleep(3000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
+	sleep(4000);
 	
 	waitExpectElement(vCalculados);
 	vCalculados.click();
@@ -183,7 +183,7 @@ public boolean editar() {
 	sleep(3000);
 	//primer Valor Calculado
 	nomeVCalculado.sendKeys("TA-TESTE-Terceiro Caractere");
-	sleep(3000);
+	sleep(5000);
 	
 	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 3, 1)");
 	sleep(3000);

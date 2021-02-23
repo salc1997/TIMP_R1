@@ -37,7 +37,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltroAbansado extends TestBaseMassie
   
   
 
-	@Test(priority = 1)
+	@Test()
 	public void Filtro() {
 		
 		loginTC.login();

@@ -33,7 +33,7 @@ public class ContasDefaultParaExtemporaneoExcluirMassa extends TestBaseFernando{
 
 	
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -44,7 +44,7 @@ public class ContasDefaultParaExtemporaneoExcluirMassa extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 2)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = contasDefaultParaExtemporaneoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);

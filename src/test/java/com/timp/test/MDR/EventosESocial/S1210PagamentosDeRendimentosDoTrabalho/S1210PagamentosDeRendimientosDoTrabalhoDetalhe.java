@@ -33,18 +33,12 @@ public class S1210PagamentosDeRendimientosDoTrabalhoDetalhe extends TestBaseFern
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
 
-	@Test(priority = 2)
+	@Test()
 	public void detalhe() {
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = s1210PagamentosDeRendimientosDoTrabalhoDetalhePO.detalhe();
 		
 		for (int i = 0; i < sucesso.size(); i++) {

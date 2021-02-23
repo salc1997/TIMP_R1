@@ -36,19 +36,10 @@ public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 2)
-	public void mdrEntrar() {
-		acesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 3)
+	@Test()
 	public void visualizar() {
+		loginTC.login();
+		acesarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = descriçãoDeNatDeLesãoVisualizarPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {

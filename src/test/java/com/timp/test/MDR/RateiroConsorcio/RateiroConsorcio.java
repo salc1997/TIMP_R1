@@ -31,22 +31,16 @@ public class RateiroConsorcio extends TestBaseMassiel {
 	@AfterClass
 	  public void afterClass() {
 		//cerrar navegador
-		//driver.quit();
+		driver.close();
 	  }
 	
-    @Test(priority = 0)
-     public void ingresar() {
-		loginTC.login();
-	}
+
     
-    @Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
-    
-    @Test(priority = 2)
+    @Test()
    	public void criar() {
-    	 rateiroConsorcioPO.Criar();
+    	loginTC.login();
+    	accesarMDRPO.acessarMDR();
+    	rateiroConsorcioPO.Criar();
    	}
     
     

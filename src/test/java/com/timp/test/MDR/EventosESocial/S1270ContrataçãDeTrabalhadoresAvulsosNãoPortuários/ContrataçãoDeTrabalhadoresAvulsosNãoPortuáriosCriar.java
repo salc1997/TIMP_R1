@@ -31,18 +31,11 @@ public class ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar extends TestBas
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
 		boolean sucesso = contrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}

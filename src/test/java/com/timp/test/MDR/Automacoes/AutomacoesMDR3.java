@@ -256,8 +256,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		classificaçaoDeContribuintesDoIPICriar = new ClassificaçaoDeContribuintesDoIPICriar();
 		classificaçaoDeContribuintesDoIPICriar.beforeClass();
-		classificaçaoDeContribuintesDoIPICriar.login();
-		classificaçaoDeContribuintesDoIPICriar.acessarMDR();
+//		classificaçaoDeContribuintesDoIPICriar.login();
+//		classificaçaoDeContribuintesDoIPICriar.acessarMDR();
 		classificaçaoDeContribuintesDoIPICriar.criar();
 		classificaçaoDeContribuintesDoIPICriar.afterClass();
 
@@ -268,8 +268,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		classificaçaoDeContribuintesDoIPIEditar = new ClassificaçaoDeContribuintesDoIPIEditar();
 		classificaçaoDeContribuintesDoIPIEditar.beforeClass();
-		classificaçaoDeContribuintesDoIPIEditar.login();
-		classificaçaoDeContribuintesDoIPIEditar.acessarMDR();
+//		classificaçaoDeContribuintesDoIPIEditar.login();
+//		classificaçaoDeContribuintesDoIPIEditar.acessarMDR();
 		classificaçaoDeContribuintesDoIPIEditar.editar();
 		classificaçaoDeContribuintesDoIPIEditar.afterClass();
 
@@ -280,8 +280,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		classificaçaoDeContribuintesDoIPIVisualizar = new ClassificaçaoDeContribuintesDoIPIVisualizar();
 		classificaçaoDeContribuintesDoIPIVisualizar.beforeClass();
-		classificaçaoDeContribuintesDoIPIVisualizar.login();
-		classificaçaoDeContribuintesDoIPIVisualizar.acessarMDR();
+//		classificaçaoDeContribuintesDoIPIVisualizar.login();
+//		classificaçaoDeContribuintesDoIPIVisualizar.acessarMDR();
 		classificaçaoDeContribuintesDoIPIVisualizar.visualizar();
 		classificaçaoDeContribuintesDoIPIVisualizar.afterClass();
 
@@ -292,8 +292,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		classificaçaoDeContribuintesDoIPIDetalhes = new ClassificaçaoDeContribuintesDoIPIDetalhes();
 		classificaçaoDeContribuintesDoIPIDetalhes.beforeClass();
-		classificaçaoDeContribuintesDoIPIDetalhes.login();
-		classificaçaoDeContribuintesDoIPIDetalhes.acessarMDR();
+//		classificaçaoDeContribuintesDoIPIDetalhes.login();
+//		classificaçaoDeContribuintesDoIPIDetalhes.acessarMDR();
 		classificaçaoDeContribuintesDoIPIDetalhes.detalhes();
 		classificaçaoDeContribuintesDoIPIDetalhes.afterClass();
 
@@ -304,8 +304,8 @@ public class AutomacoesMDR3 extends TestBaseSteven {
 
 		classificaçaoDeContribuintesDoIPIFiltrosAvançados = new ClassificaçaoDeContribuintesDoIPIFiltrosAvançados();
 		classificaçaoDeContribuintesDoIPIFiltrosAvançados.beforeClass();
-		classificaçaoDeContribuintesDoIPIFiltrosAvançados.login();
-		classificaçaoDeContribuintesDoIPIFiltrosAvançados.acessarMDR();
+//		classificaçaoDeContribuintesDoIPIFiltrosAvançados.login();
+//		classificaçaoDeContribuintesDoIPIFiltrosAvançados.acessarMDR();
 		classificaçaoDeContribuintesDoIPIFiltrosAvançados.filtros();
 		classificaçaoDeContribuintesDoIPIFiltrosAvançados.afterClass();
 

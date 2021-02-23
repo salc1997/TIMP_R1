@@ -62,7 +62,7 @@ public class CodigoAjustesContribuiçoesCreditosEditarPO extends TestBaseFernando
 		açao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		String textoDataInicioVigenciaValorOriginal = inputDataInicioVigencia.getAttribute("value"); 
 		System.out.println("Data inicio vigencia valor original: " + textoDataInicioVigenciaValorOriginal);

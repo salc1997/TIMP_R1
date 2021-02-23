@@ -202,7 +202,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBaseEliel{
 		
 		primeiracaixar1.click();
 		sleep(1000);
-		String enviar ="Alíquota correta N1";
+		String enviar ="Alíquota correta N1 QA";
 		acoes.clear();
 		acoes.sendKeys(enviar);
 		acoes.sendKeys(Keys.ESCAPE);
@@ -290,7 +290,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBaseEliel{
 		configuracoes.click();
 		sleep(1000);
 		
-		String nome1 = "TESTE  N1- NAO MEXER";
+		String nome1 = "TESTE  N1- NAO MEXER QA";
 		
 		nome.clear();
 		sleep(1000);

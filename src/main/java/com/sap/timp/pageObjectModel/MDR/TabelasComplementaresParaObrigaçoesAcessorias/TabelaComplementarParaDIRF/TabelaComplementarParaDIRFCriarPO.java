@@ -147,7 +147,7 @@ public class TabelaComplementarParaDIRFCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		ans.sendKeys("9");
+		ans.sendKeys("3");
 		
 		sleep(2000);
 		gravar.click();

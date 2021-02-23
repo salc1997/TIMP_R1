@@ -32,18 +32,11 @@ public class CodigoFatosContabeisEditar extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void editarCodigoFatosContabeis() {
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
 		boolean sucesso = codigoFatosContabeisEditarPO.editarCodigoFatosContabeis();
 		assertTrue(sucesso, Editar);
 	}

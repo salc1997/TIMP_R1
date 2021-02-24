@@ -73,7 +73,7 @@
 
 		<classes>
 		
-			<!--  Contas Contábeis RBLP  -->
+			<!--  Cadastros IRPJ/CSLL > Contas Contábeis RBLP  -->
 				
 				<class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasContábeisRBLP.ContasContábeisRBLPFiltroId"></class>
 		

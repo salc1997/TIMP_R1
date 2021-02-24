@@ -36,11 +36,12 @@ public class HierarquiaDeCenariosDeCorreçaoEditar extends TestBaseEliel {
 
 	@Test()
 	public void editar() {
+		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = hierarquiaDeCenariosDeCorreçaoEditarPO.editar();
 		assertTrue(sucesso, Editar);
-		//assertEquals(sucesso, "edit", visualizaçar);
+	
 	}
 
 }

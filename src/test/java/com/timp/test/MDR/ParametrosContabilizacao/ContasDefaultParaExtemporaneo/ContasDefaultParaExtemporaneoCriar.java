@@ -28,7 +28,7 @@ public class ContasDefaultParaExtemporaneoCriar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 

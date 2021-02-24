@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
+      <class name="com.timp.test.CALENDAR.MultiplosUsuariosCalendar">
         <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="Calendar"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.CALENDAR.TarefasMultiplasEstagios -->
+      </class> <!-- com.timp.test.CALENDAR.MultiplosUsuariosCalendar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

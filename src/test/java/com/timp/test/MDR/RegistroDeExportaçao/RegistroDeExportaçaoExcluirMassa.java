@@ -35,7 +35,7 @@ public class RegistroDeExportaçaoExcluirMassa extends TestBaseSteven{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -43,11 +43,16 @@ public class RegistroDeExportaçaoExcluirMassa extends TestBaseSteven{
 		
 		boolean sucesso = registroDeExportaçaoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		
 	}
 	
-	@Test(priority = 2)
-	public void excluirMassa() {
-		boolean sucesso = registroDeExportaçaoExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso, Eliminado);
+	@Test(dependsOnMethods = "criar")
+	public void Excluir() {
+		
+		boolean sucesso2 = registroDeExportaçaoExcluirMassaPO.exluirMassa();
+		assertTrue(sucesso2, Eliminado);
 	}
+	
+	
 }

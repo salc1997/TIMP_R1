@@ -37,20 +37,14 @@ public class CodigoFatosContabeisCriar extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void mdrEntrar() {
-		boolean sucesso = acesarMDRPO.acessarMDR();
-		assertTrue(sucesso, "The element is not present");
+		loginTC.login();
+		boolean sucesso3 = acesarMDRPO.acessarMDR();
+		assertTrue(sucesso3, "The element is not present");
+		
+		boolean sucesso2 = ecd.criar();
+		assertTrue(sucesso2, "There is an error...");
 	}
 
-	@Test(priority = 3)
-	public void criar() {
-		boolean sucesso = ecd.criar();
-		assertTrue(sucesso, "There is an error...");
-	}
 }

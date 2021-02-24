@@ -28,7 +28,7 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa extends TestBaseE
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
 

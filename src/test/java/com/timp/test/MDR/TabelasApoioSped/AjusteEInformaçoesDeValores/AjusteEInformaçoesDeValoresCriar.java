@@ -35,7 +35,7 @@ public class AjusteEInformaçoesDeValoresCriar extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -45,7 +45,7 @@ public class AjusteEInformaçoesDeValoresCriar extends TestBaseEliel {
 		// ajusteEInformaçoesDeValoresCriarPO.criar();
 
 		boolean sucesso = ajusteEInformaçoesDeValoresCriarPO.criar();
-		;
+		
 		assertTrue(sucesso, semAcesso);
 
 	}

@@ -31,16 +31,18 @@ public class ValoresParaMetodoPCIExcluirEmMassa extends TestBaseKenssy {
 	  driver.close();
   }
   
-  
-  @Test(priority = 1)
-  public void excluirEmMassa() {
-	  
+  @Test()
+  public void criar() {
 	loginTC.login();
 	acessarMDRPO.acessarMDR();
 		
 	boolean sucesso = valoresParaMetodoPCIExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
-	sleep(1000);
+  }
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluirEmMassa() {
+	  
 	boolean sucesso2 = valoresParaMetodoPCIExcluirEmMassaPO.valoresParaMetodoPCIExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);
   }

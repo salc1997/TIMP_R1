@@ -31,7 +31,7 @@ public class S1070ProcessosAdmJudiciaisCriar extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		accesarMDRPO.acessarMDR();

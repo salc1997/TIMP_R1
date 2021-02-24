@@ -32,17 +32,19 @@ public class TabelaDeOutrosCreditosExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = tabelaDeOutrosCreditosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = tabelaDeOutrosCreditosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
-	
 }

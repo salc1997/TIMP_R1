@@ -31,7 +31,7 @@ public class S1250DetProcessoJudicialCriar extends TestBaseFernando{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();

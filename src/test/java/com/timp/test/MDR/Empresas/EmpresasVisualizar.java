@@ -37,7 +37,7 @@ public class EmpresasVisualizar extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 		
 		loginTC.login();
@@ -49,8 +49,7 @@ public class EmpresasVisualizar extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		// assertEquals(sucesso, "edit",EmpresaVisualizar);
-
+		
 	}
 
 }

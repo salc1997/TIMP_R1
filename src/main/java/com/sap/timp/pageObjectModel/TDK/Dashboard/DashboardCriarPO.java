@@ -11,7 +11,6 @@ import com.sap.timp.base.TestBaseMassiel;
 
 public class DashboardCriarPO extends TestBaseEliel {
 
-
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
 

@@ -39,9 +39,13 @@ public class TabelaDeDetalhamentosParaRegistro11ExcluirEmMassa extends TestBaseE
 		boolean sucesso = tabelaDeDetalhamentosParaRegistro11ExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluriEmMassa() {
+		sleep(1000);
 		boolean sucesso2 = tabelaDeDetalhamentosParaRegistro11ExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
-
 }

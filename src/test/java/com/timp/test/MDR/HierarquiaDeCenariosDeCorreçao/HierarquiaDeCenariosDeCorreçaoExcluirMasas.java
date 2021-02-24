@@ -32,7 +32,7 @@ public class HierarquiaDeCenariosDeCorreçaoExcluirMasas extends TestBaseMassiel{
   }
   
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -41,6 +41,11 @@ public class HierarquiaDeCenariosDeCorreçaoExcluirMasas extends TestBaseMassiel{
 		
 		boolean sucesso = hierarquiaDeCenariosDeCorreçaoExcluirMasasPO.criar();
 		assertTrue(sucesso, Criar);
+		
+	}
+	
+	@Test(dependsOnMethods = "criar" )
+	public void excluir() {
 		
 		boolean sucesso2 = hierarquiaDeCenariosDeCorreçaoExcluirMasasPO.HierarquiaDeCenariosDeCorreçaoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);

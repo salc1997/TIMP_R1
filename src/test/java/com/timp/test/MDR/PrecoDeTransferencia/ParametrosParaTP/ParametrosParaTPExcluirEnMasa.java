@@ -32,18 +32,19 @@ public class ParametrosParaTPExcluirEnMasa extends TestBaseKenssy{
 	}
 
 	@Test()
-	public void excluirEmMasaParametrosParaTP() {
+	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
 
 		boolean sucesso = parametrosParaTPExcluirEnMasaPO.criar();
 		assertTrue(sucesso, Criar);
-
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMasa() {
 		sleep(1000);
-
 		boolean sucesso2 = parametrosParaTPExcluirEnMasaPO.excluirEmMasaParametrosParaTP();
 		assertTrue(sucesso2, Eliminado);
 	}
-
 
 }

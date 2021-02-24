@@ -42,10 +42,13 @@ public class ParteDoCorpoAtingidaExcluirEmMassa extends TestBaseEliel {
 		
 		boolean sucesso = parteDoCorpoAtingidaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+	}
+	
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = parteDoCorpoAtingidaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
 	
 }

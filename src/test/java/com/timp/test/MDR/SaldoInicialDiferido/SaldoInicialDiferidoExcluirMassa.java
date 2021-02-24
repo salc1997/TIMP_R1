@@ -35,8 +35,8 @@ public class SaldoInicialDiferidoExcluirMassa extends TestBaseCristhian {
   }
 
 
-	@Test(priority = 1)
-	public void criar() {
+	@Test()
+	public void ExcluirMassa() {
 		
 		loginTC.login();
 		

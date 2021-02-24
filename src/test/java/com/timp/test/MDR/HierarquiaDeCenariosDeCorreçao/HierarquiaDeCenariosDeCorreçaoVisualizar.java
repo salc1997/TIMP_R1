@@ -38,7 +38,7 @@ public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseEliel {
 
 	
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
@@ -46,7 +46,6 @@ public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseEliel {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		//assertEquals(sucesso, "baseTabs-view-wrapper", visualizaçar);
 	}
 
 }

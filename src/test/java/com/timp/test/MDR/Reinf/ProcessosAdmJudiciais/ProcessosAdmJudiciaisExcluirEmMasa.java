@@ -39,16 +39,19 @@ public class ProcessosAdmJudiciaisExcluirEmMasa extends TestBaseSteven {
 	}
 	
 	@Test()
-	public void excluir() {
+	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
 		
 		boolean sucesso = processosAdmJudiciaisExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = processosAdmJudiciaisExcluirEmMassaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
 		
 	}
-
 }

@@ -34,7 +34,7 @@ public class S2230AfastamentoTemporárioFiltroId extends TestBaseMassiel{
   
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
 		
 		loginTC.login();

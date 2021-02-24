@@ -32,15 +32,18 @@ public class ValoresParaMetodoCPLExcluirEmMassa extends TestBaseKenssy {
 	  driver.close();
   }
   
-  
   @Test(priority = 1)
-  public void excluirEmMassa() {
+  public void criar() {
 	loginTC.login();
 	acessarMDRPO.acessarMDR();
 		
 	boolean sucesso = valoresParaMetodoCPLExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
-	sleep(1000);
+  }
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluirEmMassa() {
+
 	boolean sucesso2 = valoresParaMetodoCPLExcluirEmMassaPO.valoresParaMetodoCPLExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);
   }

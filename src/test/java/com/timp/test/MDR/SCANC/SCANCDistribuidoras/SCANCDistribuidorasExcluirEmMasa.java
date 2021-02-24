@@ -39,8 +39,8 @@ public class SCANCDistribuidorasExcluirEmMasa extends TestBaseSteven {
 	
 
 	
-	@Test(priority = 1)
-	public void excluir() {
+	@Test()
+	public void Criar() {
 		
 		loginTC.login();
 		
@@ -49,6 +49,14 @@ public class SCANCDistribuidorasExcluirEmMasa extends TestBaseSteven {
 		boolean sucesso = scancDistribuidoraExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+		
+	}
+	
+	@Test(dependsOnMethods = "Criar")
+	public void excluirMassa() {
+		
+	
 		boolean sucesso2 = scancDistribuidoraExcluirEmMassaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
 		

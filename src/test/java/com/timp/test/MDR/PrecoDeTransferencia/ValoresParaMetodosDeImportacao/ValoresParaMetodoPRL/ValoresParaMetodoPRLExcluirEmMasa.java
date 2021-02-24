@@ -32,20 +32,20 @@ public class ValoresParaMetodoPRLExcluirEmMasa extends TestBaseKenssy{
 	  driver.close();
   }
   
-  
-  @Test(priority = 1)
-  public void excluirEnMasaCompatibilidadeEntreFPAS() {
-	  
+  @Test()
+  public void criar() {
 	  loginTC.login();
 	  accesarMDR.acessarMDR();
 		
 	  boolean sucesso = valoresParaMetodoPRLExcluirEmMasaPO.criar();
-		assertTrue(sucesso, Criar);
-		
-	  sleep(1000);
+	  assertTrue(sucesso, Criar);
+  }
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluirEnMasaCompatibilidadeEntreFPAS() {
 	  
 	  boolean sucesso2 = valoresParaMetodoPRLExcluirEmMasaPO.excluirEmMasaValoresParaMetodoPRL();
-	  	assertTrue(sucesso2, Eliminado);
+	  assertTrue(sucesso2, Eliminado);
   }
 
 }

@@ -34,7 +34,7 @@ public class DEPARAContasContábeisExcluir extends TestBaseMassiel{
 
 
   
-  @Test(priority = 1)
+  @Test()
   public void excluir() {
 	  
 	  loginTC.login();

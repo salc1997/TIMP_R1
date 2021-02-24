@@ -34,19 +34,10 @@ public class CodigoFatosContabeisVisualizar extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 2)
-	public void mdrEntrar() {
-		acesarMDRPO.acessarMDR();
-	}
-
 	@Test(priority = 3)
 	public void visualizar() {
+		loginTC.login();
+		acesarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = codigoFatosContabeisVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

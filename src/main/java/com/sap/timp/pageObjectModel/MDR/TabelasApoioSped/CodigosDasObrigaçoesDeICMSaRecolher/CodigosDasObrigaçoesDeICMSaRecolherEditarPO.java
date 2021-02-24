@@ -138,7 +138,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherEditarPO extends TestBaseEliel{
 		Editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(7000);
 		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		
 		boolean sucesso = descriçao.contains(descricao.getAttribute("value"));

@@ -37,7 +37,7 @@ public class MovimentoSCANCCriar extends TestBaseSteven {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();

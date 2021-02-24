@@ -36,7 +36,7 @@ public class S1070ProcessosAdmJudiciaisExluir extends TestBaseFernando{
 	}
 
 
-	@Test(priority = 3)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 		acesarMDRPO.acessarMDR();

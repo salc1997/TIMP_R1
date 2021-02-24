@@ -45,12 +45,18 @@ public class MapeamentoContabilExcluirEmMassa extends TestBaseEliel {
 		boolean sucesso = mapeamentoContabilExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		
-		sleep(1000);
+	
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void Excluir() {
+		
 		
 		boolean sucesso2 = mapeamentoContabilExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
+
 
  
 }

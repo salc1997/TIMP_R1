@@ -35,7 +35,7 @@ public class CompatibilidadeEnCatTrabVisualizar extends TestBaseFernando{
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

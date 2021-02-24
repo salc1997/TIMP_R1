@@ -30,7 +30,7 @@ public class S1250DetNotaFiscalExcluir extends TestBaseFernando{
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

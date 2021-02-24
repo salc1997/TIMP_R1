@@ -174,7 +174,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
 		nome.click();
 		sleep(1000);
 
-		nome.sendKeys("TESTE AUTOMATIZADO N1 007- NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO N1 RODADA- NAO MEXER");
 
 		sleep(1000);
 		

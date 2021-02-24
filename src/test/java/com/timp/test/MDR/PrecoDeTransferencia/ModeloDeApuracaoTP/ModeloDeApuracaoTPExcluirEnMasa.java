@@ -33,17 +33,18 @@ public class ModeloDeApuracaoTPExcluirEnMasa extends TestBaseKenssy{
 	}
 
 	@Test()
-	public void excluirEnMasaModeloApuracaoTP() {
+	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
 
 		boolean sucesso = modeloDeApuracaoTPExcluirEnMasaPO.criar();
 		assertTrue(sucesso, Criar);
-
+	}
+	
+	@Test()
+	public void excluirEnMasaP() {
 		sleep(1000);
-
 		boolean sucesso2 = modeloDeApuracaoTPExcluirEnMasaPO.excluirEnMasaModeloApuracaoTP();
 		assertTrue(sucesso2, Eliminado);
 	}
-
 }

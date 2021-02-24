@@ -143,6 +143,9 @@ public class InstituicaoDetalhesPO extends TestBaseSteven {
 		String ativoV1 = ativoV.getText();
 
 
+		System.out.println("*********************");
+		System.out.println();
+		
 		System.out.println(empresaV1);
 		System.out.println(filialV1);
 		System.out.println(tributoV1);

@@ -37,7 +37,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes extends
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void detalhes() {
 
 		loginTC.login();

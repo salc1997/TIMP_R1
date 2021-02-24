@@ -32,7 +32,7 @@ public class CompatibilidadeEnCatTrabExcluir extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

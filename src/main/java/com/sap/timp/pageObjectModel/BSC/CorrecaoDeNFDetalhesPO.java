@@ -215,7 +215,9 @@ public class CorrecaoDeNFDetalhesPO extends TestBaseMassiel{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		
 		String idNotaD = idNota.getText();
 		String idItemD = idItem.getText();

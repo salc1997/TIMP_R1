@@ -164,9 +164,7 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
-		sleep(2000);
-		waitExpectElement(mensagembloqueio);
+
 		sleep(2000);
 		lixeira.click();
 		sleep(3000);

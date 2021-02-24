@@ -32,7 +32,7 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassa extends TestBaseKens
   }
 
   
-  @Test(priority = 1)
+  @Test()
   public void criar() {
 	  
 	  loginTC.login();
@@ -42,15 +42,12 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassa extends TestBaseKens
 	boolean sucesso = determinacionRelevanciaPorMotivoExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 
-	sleep(1000);
-	
 
   }
   
   @Test(dependsOnMethods = "criar")
   public void excluir() {
 
-	
 	boolean sucesso2 = determinacionRelevanciaPorMotivoExcluirEmMassaPO.determinacaoDeRelevanciaPorMotivoExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);
   }

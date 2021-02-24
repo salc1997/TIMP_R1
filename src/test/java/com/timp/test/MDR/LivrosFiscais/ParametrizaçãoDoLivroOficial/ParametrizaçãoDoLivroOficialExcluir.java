@@ -34,7 +34,7 @@ public class ParametrizaçãoDoLivroOficialExcluir extends TestBaseFernando{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {	
 		
 		loginTC.login();

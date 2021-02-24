@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassaPO;
 
 public class RegistroRFExcluirEmMassa extends TestBaseEliel {
-	
+	 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroRFExcluirEmMassaPO registroRFExcluirEmMassaPO;

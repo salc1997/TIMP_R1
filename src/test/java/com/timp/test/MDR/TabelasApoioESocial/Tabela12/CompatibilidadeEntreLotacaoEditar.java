@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CompatibilidadeEntreLotacaoEditar extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEntreLotacaoEditarPO compatibilidadeEntreLotacaoEditarPO;

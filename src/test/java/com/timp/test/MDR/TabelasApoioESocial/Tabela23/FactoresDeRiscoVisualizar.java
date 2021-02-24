@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class FactoresDeRiscoVisualizar extends TestBaseCristhian {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FactoresDeRiscoVisualizarPO factoresDeRiscoVisualizarPO;

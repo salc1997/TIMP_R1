@@ -11,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class TiposDeArquivosESocialCriar extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeArquivosESocialCriarPO tiposDeArquivosESocialCriarPO;

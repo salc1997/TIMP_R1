@@ -14,9 +14,9 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegradeAbasEditar extends TestBaseCristhian{
+public class RegradeAbasEditar extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTAAPO  acessarTAAPO;
+	AcessarTAAPO acessarTAAPO;
 	RegradeAbasEditarPO regradeAbasEditarPO;
 
 	@BeforeClass

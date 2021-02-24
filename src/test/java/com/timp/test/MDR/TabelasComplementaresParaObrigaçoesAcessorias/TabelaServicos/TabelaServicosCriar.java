@@ -29,7 +29,7 @@ public class TabelaServicosCriar extends TestBaseMassiel {
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaServicosCriarPO = new TabelaServicosCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -39,7 +39,7 @@ public class TabelaServicosCriar extends TestBaseMassiel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaServicosCriarPO.criar();
 		assertTrue(sucesso, Criar);
 

@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancadosPO;
 
-public class ArquivosImportadosFiltrosAvancados extends TestBaseFernando{
+public class ArquivosImportadosFiltrosAvancados extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	ArquivosImportadosFiltrosAvancadosPO arquivosImportadosFiltrosAvancadosPO;
@@ -28,7 +28,7 @@ public class ArquivosImportadosFiltrosAvancados extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,7 +42,7 @@ public class ArquivosImportadosFiltrosAvancados extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancados() {			
+	public void filtrosAvancados() {
 		ArrayList<Boolean> sucesso = arquivosImportadosFiltrosAvancadosPO.filtrosAvanzados();
 
 		for (int i = 0; i < sucesso.size(); i++) {

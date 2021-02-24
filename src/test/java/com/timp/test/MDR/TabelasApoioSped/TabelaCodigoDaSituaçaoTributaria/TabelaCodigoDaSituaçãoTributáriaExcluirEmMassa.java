@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçãoTributáriaExcluirEmMassaPO;
 
-public class TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa extends TestBaseEliel{
-  
+public class TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoDaSituaçãoTributáriaExcluirEmMassaPO tabelaCodigoDaSituaçãoTributáriaExcluirEmMassaPO;
@@ -31,10 +31,9 @@ public class TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa extends TestBaseElie
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = tabelaCodigoDaSituaçãoTributáriaExcluirEmMassaPO.criar();
@@ -44,6 +43,5 @@ public class TabelaCodigoDaSituaçãoTributáriaExcluirEmMassa extends TestBaseElie
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
-	
+
 }

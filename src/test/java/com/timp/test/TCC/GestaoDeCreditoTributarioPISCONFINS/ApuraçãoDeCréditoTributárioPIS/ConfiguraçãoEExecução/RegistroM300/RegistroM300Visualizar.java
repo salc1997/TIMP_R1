@@ -16,42 +16,37 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class RegistroM300Visualizar extends TestBaseMassiel {
- 
+
 	LoginTC loginTC;
-	  AcessarTCCPO acessarTCCPO;
-	  RegistroM300VisualizarPO registroM300VisualizarPO;
-	  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	AcessarTCCPO acessarTCCPO;
+	RegistroM300VisualizarPO registroM300VisualizarPO;
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registroM300VisualizarPO = new RegistroM300VisualizarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
- 
-	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
-		
-		
 		ArrayList<Boolean> sucesso = registroM300VisualizarPO.Visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-	
-		
+
 	}
 
 }

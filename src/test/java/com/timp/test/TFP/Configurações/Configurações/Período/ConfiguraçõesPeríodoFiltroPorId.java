@@ -15,37 +15,36 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçõesPeríodoFiltroPorId extends TestBaseKenssy{
+public class ConfiguraçõesPeríodoFiltroPorId extends TestBaseKenssy {
 	LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  ConfiguraçõesPeríodoFiltroPorIdPO configuraçõesPeríodoFiltroPorIdPO;
+	AcessarTFPPO acessarTFPPO;
+	ConfiguraçõesPeríodoFiltroPorIdPO configuraçõesPeríodoFiltroPorIdPO;
 
-	  @BeforeClass
-	  public void beforeClass() {
-		  driver = initializationKen();
-		  loginTC = new LoginTC();
-		  acessarTFPPO = new AcessarTFPPO();
-		  configuraçõesPeríodoFiltroPorIdPO = new ConfiguraçõesPeríodoFiltroPorIdPO();
-	  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		configuraçõesPeríodoFiltroPorIdPO = new ConfiguraçõesPeríodoFiltroPorIdPO();
+	}
 
-	  @AfterClass
-	  public void afterClass() {
-		  driver.close();
-	  }
-	  
-		
-		@Test(priority = 1)
-		public void filtro() {
-			loginTC.login();
-			
-			acessarTFPPO .acessarTFP();
-			
-			ArrayList<Boolean> sucesso = configuraçõesPeríodoFiltroPorIdPO.filtro();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-			for (int i = 0; i < sucesso.size(); i++) {
-				assertTrue(sucesso.get(i), visualizaçar);
-			}
+	@Test(priority = 1)
+	public void filtro() {
+		loginTC.login();
 
+		acessarTFPPO.acessarTFP();
+
+		ArrayList<Boolean> sucesso = configuraçõesPeríodoFiltroPorIdPO.filtro();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
 		}
+
+	}
 
 }

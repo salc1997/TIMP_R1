@@ -13,36 +13,33 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class EmprestimosCriar extends TestBaseKenssy  {
-  
+public class EmprestimosCriar extends TestBaseKenssy {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	EmprestimosCriarPO emprestimosCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initializationKen();
-		  loginTC = new LoginTC();
-		  acessarMDRPO = new AcessarMDRPO();
-		  emprestimosCriarPO = new EmprestimosCriarPO();
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		emprestimosCriarPO = new EmprestimosCriarPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-
-
 	@Test()
-	  public void criarEmprestimos() {
-		
+	public void criarEmprestimos() {
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = emprestimosCriarPO.CriarEmprestimos();
 
-
-	  }
+	}
 }

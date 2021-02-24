@@ -15,34 +15,33 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class StatusPeriodoFiltroID  extends TestBaseMassiel {
-	
-	 LoginTC loginTC;
-	 AcessarTFPPO acessarTFPPO;
-	 StatusPeriodoFiltroIDPO statusPeriodoFiltroIDPO;
+public class StatusPeriodoFiltroID extends TestBaseMassiel {
 
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  statusPeriodoFiltroIDPO = new StatusPeriodoFiltroIDPO();
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	StatusPeriodoFiltroIDPO statusPeriodoFiltroIDPO;
 
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		statusPeriodoFiltroIDPO = new StatusPeriodoFiltroIDPO();
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
+	}
 
-  }
-  @Test(priority = 1)
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+
+	}
+
+	@Test(priority = 1)
 	public void filtro() {
-	  loginTC.login();
-	  acessarTFPPO .acessarTFP();
-	  
-	  
-	  ArrayList<Boolean> sucesso = statusPeriodoFiltroIDPO.Filtro();
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
+
+		ArrayList<Boolean> sucesso = statusPeriodoFiltroIDPO.Filtro();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

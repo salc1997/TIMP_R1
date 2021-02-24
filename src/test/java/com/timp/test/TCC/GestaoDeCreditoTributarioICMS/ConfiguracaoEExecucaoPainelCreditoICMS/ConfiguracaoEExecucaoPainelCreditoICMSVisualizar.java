@@ -15,47 +15,45 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizar extends TestBaseMassiel{
-	
+public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO configuracaoEExecucaoPainelCreditoICMSVisualizarPO;
-	
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuracaoEExecucaoPainelCreditoICMSVisualizarPO = new ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
+	@AfterClass
+	public void afterClass() {
+	}
 
- 	}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
 
- 	@Test(priority = 1)
- 	public void acessarTCC() {
+	}
 
- 		acessarTCCPO.acessarTCC();
+	@Test(priority = 1)
+	public void acessarTCC() {
 
- 	}
- 	
- 	@Test(priority = 2)
- 	public void visualizar() {
+		acessarTCCPO.acessarTCC();
 
- 		
- 		ArrayList<Boolean> sucesso = configuracaoEExecucaoPainelCreditoICMSVisualizarPO.visualizar();
+	}
+
+	@Test(priority = 2)
+	public void visualizar() {
+
+		ArrayList<Boolean> sucesso = configuracaoEExecucaoPainelCreditoICMSVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
- 	}
+	}
 
 }

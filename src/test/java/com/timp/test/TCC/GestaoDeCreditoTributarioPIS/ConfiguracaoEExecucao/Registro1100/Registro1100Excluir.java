@@ -17,20 +17,20 @@ public class Registro1100Excluir extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1100ExcluirPO registro1100ExcluirPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registro1100ExcluirPO = new Registro1100ExcluirPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -42,11 +42,10 @@ public class Registro1100Excluir extends TestBaseMassiel {
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void Excluir() {
 
-		
 		boolean sucesso = registro1100ExcluirPO.Excluir();
 
 		assertTrue(sucesso, Criar);

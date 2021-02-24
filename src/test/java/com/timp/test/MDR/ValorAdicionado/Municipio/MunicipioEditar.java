@@ -13,44 +13,37 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class MunicipioEditar extends TestBaseMassiel{
+public class MunicipioEditar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	MunicipioEditarPO municipioEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  accesarMDRPO = new AcessarMDRPO();
-	  loginTC = new LoginTC();
-	  municipioEditarPO = new MunicipioEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  /*
-  @Test(priority = 0)
-  public void ingresar() {
-		loginTC.login();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		accesarMDRPO = new AcessarMDRPO();
+		loginTC = new LoginTC();
+		municipioEditarPO = new MunicipioEditarPO();
 	}
-  
-  @Test(priority = 1)
-  public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}*/
-  
-  
-  @Test()
-  public void editar() {
-	  
-	  loginTC.login();
-	  accesarMDRPO.acessarMDR();
 
-	
-	  boolean sucesso = municipioEditarPO.Editar();
-	  assertTrue(sucesso, Editar);
-	  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+	/*
+	 * @Test(priority = 0) public void ingresar() { loginTC.login(); }
+	 * 
+	 * @Test(priority = 1) public void ingresarMDR() { accesarMDRPO.acessarMDR(); }
+	 */
+
+	@Test()
+	public void editar() {
+
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
+
+		boolean sucesso = municipioEditarPO.Editar();
+		assertTrue(sucesso, Editar);
+
 	}
 }

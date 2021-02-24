@@ -42,7 +42,7 @@ public class TabelaOutrosDebitosVisualizar extends TestBaseSteven {
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaOutrosDebitosVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

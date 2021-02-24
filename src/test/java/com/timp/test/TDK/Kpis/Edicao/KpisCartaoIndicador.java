@@ -13,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Edicao.KpisCartaoIndicadorPO;
 
-public class KpisCartaoIndicador extends TestBaseEliel{
+public class KpisCartaoIndicador extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisCartaoIndicadorPO kpisCartaoIndicadorPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class KpisCartaoIndicador extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,15 +41,14 @@ public class KpisCartaoIndicador extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void criar() {
 		ArrayList<Boolean> sucesso = kpisCartaoIndicadorPO.CartaoIndicador();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),"Cartão não foi adicionado");
+			assertTrue(sucesso.get(i), "Cartão não foi adicionado");
 		}
-		
-		
+
 	}
-	
+
 }

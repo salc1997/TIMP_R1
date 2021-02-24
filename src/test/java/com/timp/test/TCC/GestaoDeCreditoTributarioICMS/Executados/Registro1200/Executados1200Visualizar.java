@@ -12,9 +12,8 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200VisualizarPO;
+
 public class Executados1200Visualizar extends TestBaseEliel {
-  
-	
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
@@ -30,7 +29,7 @@ public class Executados1200Visualizar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -50,6 +49,6 @@ public class Executados1200Visualizar extends TestBaseEliel {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 	}
 }

@@ -10,7 +10,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 
 import org.testng.annotations.BeforeClass;
 
-import static org.testng.Assert.assertEquals;
+
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroM230Visualiza extends TestBaseMassiel{
+public class RegistroM230Visualiza extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM230VisualizaPO registroM230VisualizaPO;
@@ -33,15 +33,13 @@ public class RegistroM230Visualiza extends TestBaseMassiel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
-		
 		ArrayList<Boolean> sucesso = registroM230VisualizaPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

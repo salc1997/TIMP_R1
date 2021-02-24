@@ -1,6 +1,5 @@
 package com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -62,5 +61,5 @@ public class ConfiguracaoEExecucaoVisualizar extends TestBaseSteven {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
-	
+
 }

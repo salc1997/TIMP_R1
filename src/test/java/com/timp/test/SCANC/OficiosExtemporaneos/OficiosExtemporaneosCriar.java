@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriarPO;
 
-public class OficiosExtemporaneosCriar extends TestBaseFernando{
+public class OficiosExtemporaneosCriar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	OficiosExtemporaneosCriarPO oficiosExtemporaneosCriarPO;
@@ -42,8 +42,8 @@ public class OficiosExtemporaneosCriar extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void criar() {		
-		
+	public void criar() {
+
 		ArrayList<Boolean> sucesso = oficiosExtemporaneosCriarPO.criar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

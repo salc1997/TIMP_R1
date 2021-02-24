@@ -13,26 +13,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa extends TestBaseKenssy{
+public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO = new TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO = new TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO();
+	}
 
-  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test()
 	public void criar() {
 
@@ -45,10 +43,9 @@ public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa extends TestBa
 		sleep(1000);
 
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
-
 
 		boolean sucesso2 = tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO.excluirEmMassa();
 		assertTrue(sucesso2, Eliminado);

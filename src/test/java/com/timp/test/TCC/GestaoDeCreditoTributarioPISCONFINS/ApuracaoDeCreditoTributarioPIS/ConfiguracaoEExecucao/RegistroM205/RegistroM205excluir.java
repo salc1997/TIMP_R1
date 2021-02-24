@@ -13,9 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM205.RegistroM205ExcluirPO;
 
-public class RegistroM205excluir extends TestBaseEliel{
-  
-	
+public class RegistroM205excluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM205ExcluirPO registroM205ExcluirPO;
@@ -34,13 +33,11 @@ public class RegistroM205excluir extends TestBaseEliel{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
 		ArrayList<Boolean> sucesso = registroM205ExcluirPO.excluir();
@@ -50,6 +47,4 @@ public class RegistroM205excluir extends TestBaseEliel{
 		}
 	}
 
-	
-	
 }

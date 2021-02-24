@@ -19,7 +19,7 @@ import org.testng.annotations.AfterClass;
 public class Registros1101Visualizar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	Registros1101VisualizarPO  registros1101VisualizarPO;
+	Registros1101VisualizarPO registros1101VisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -27,12 +27,12 @@ public class Registros1101Visualizar extends TestBaseCristhian {
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registros1101VisualizarPO = new  Registros1101VisualizarPO();
+		registros1101VisualizarPO = new Registros1101VisualizarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -51,11 +51,11 @@ public class Registros1101Visualizar extends TestBaseCristhian {
 	@Test(priority = 2)
 	public void visualizar() {
 
-		ArrayList<Boolean> sucesso =  registros1101VisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = registros1101VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
-	
+
 }

@@ -14,10 +14,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesDetalhesPO;
 
+public class ExecucoesDetalhes extends TestBaseEliel {
 
-public class ExecucoesDetalhes extends TestBaseEliel{
- 
-	
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	ExecucoesDetalhesPO execucoesDetalhesPO;

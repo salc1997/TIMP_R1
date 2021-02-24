@@ -24,7 +24,7 @@ public class AliquotaDeTaxaDeActualizacaoCriar extends TestBaseCristhian {
 		acessarMDRPO = new AcessarMDRPO();
 		aliquotasDeTaxaDeActualizacaoCriarPO = new AliquotasDeTaxaDeActualizacaoCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

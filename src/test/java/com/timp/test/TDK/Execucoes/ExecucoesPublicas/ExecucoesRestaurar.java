@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesRestaurarPO;
 
-public class ExecucoesRestaurar extends TestBaseEliel{
-  
+public class ExecucoesRestaurar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	ExecucoesRestaurarPO execucoesRestaurarPO;

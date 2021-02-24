@@ -34,15 +34,13 @@ public class AjusteEInformaçoesDeValoresEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = ajusteEInformaçoesDeValoresEditarPO.editar();
 
 		assertTrue(sucesso, visualizaçar);

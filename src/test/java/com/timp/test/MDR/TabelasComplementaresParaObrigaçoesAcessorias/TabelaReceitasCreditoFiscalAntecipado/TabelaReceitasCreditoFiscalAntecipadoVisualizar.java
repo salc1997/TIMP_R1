@@ -43,7 +43,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoVisualizar extends TestBaseSte
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaReceitasCreditoFiscalAntecipadoVisalizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

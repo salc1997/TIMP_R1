@@ -19,7 +19,7 @@ public class TabelaDeProdutosVisualizar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeProdutosVisualizarPO tabelaDeProdutosVisualizarPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationM();
@@ -38,13 +38,12 @@ public class TabelaDeProdutosVisualizar extends TestBaseMassiel {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		ArrayList<Boolean> sucesso = tabelaDeProdutosVisualizarPO .visualizar();
+		ArrayList<Boolean> sucesso = tabelaDeProdutosVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 
 	}
-
 
 }

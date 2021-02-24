@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosVisualizarPO;
 
-public class ArquivosImportadosVisualizar extends TestBaseFernando{
+public class ArquivosImportadosVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	ArquivosImportadosVisualizarPO arquivosImportadosVisualizarPO;
@@ -42,7 +42,7 @@ public class ArquivosImportadosVisualizar extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancados() {			
+	public void filtrosAvancados() {
 		ArrayList<Boolean> sucesso = arquivosImportadosVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -31,8 +31,6 @@ public class AgrupadorDeCFOPExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
 		loginTC.login();

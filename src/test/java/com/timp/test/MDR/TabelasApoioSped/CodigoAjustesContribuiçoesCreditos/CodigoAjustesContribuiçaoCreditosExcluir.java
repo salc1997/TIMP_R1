@@ -33,7 +33,6 @@ public class CodigoAjustesContribuiçaoCreditosExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 		loginTC.login();

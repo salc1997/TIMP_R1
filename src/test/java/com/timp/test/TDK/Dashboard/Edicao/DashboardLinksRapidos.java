@@ -13,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao.DashboardLinksRapidosPO;
 
-public class DashboardLinksRapidos extends TestBaseEliel{
-  
+public class DashboardLinksRapidos extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardLinksRapidosPO dashboardLinksRapidosPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class DashboardLinksRapidos extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,15 +41,14 @@ public class DashboardLinksRapidos extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void linksrapidos() {
 		ArrayList<Boolean> sucesso = dashboardLinksRapidosPO.linksrapidos();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),"Não foi possível adicionar o link rápido");
+			assertTrue(sucesso.get(i), "Não foi possível adicionar o link rápido");
 		}
-		
-		
+
 	}
-	
+
 }

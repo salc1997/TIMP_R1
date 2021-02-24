@@ -39,7 +39,7 @@ public class TabelaReceitasPermitidasExcluir extends TestBaseSteven {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasPermitidasExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
 

@@ -41,7 +41,7 @@ public class TabelaOutrosDebitosDetalhes extends TestBaseSteven {
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaOutrosDebitosDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

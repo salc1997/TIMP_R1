@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosCriarCampoDeSaidaPO;
 
-public class RelatorioRefinariaGeradosCriarCampoDeSaida extends TestBaseFernando{
+public class RelatorioRefinariaGeradosCriarCampoDeSaida extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosCriarCampoDeSaidaPO relatorioRefinariaGeradosCriarCampoDeSaidaPO;
@@ -42,7 +42,7 @@ public class RelatorioRefinariaGeradosCriarCampoDeSaida extends TestBaseFernando
 	}
 
 	@Test(priority = 2)
-	public void criarCampoDeSaida() {		
+	public void criarCampoDeSaida() {
 		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosCriarCampoDeSaidaPO.criarCampoDeSaida();
 
 		for (int i = 0; i < sucesso.size(); i++) {

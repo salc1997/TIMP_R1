@@ -35,7 +35,7 @@ public class TabelaDeIsencoesExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeIsencoesExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

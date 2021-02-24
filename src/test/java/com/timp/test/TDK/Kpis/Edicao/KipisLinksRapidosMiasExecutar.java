@@ -14,11 +14,11 @@ import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Edicao.KpisLinksRapidosMaisExecutarPO;
 
 public class KipisLinksRapidosMiasExecutar extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisLinksRapidosMaisExecutarPO kpisLinksRapidosMaisExecutarPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class KipisLinksRapidosMiasExecutar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,15 +41,14 @@ public class KipisLinksRapidosMiasExecutar extends TestBaseEliel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void linksrapidos() {
 		ArrayList<Boolean> sucesso = kpisLinksRapidosMaisExecutarPO.linksrapidos();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),"Não foi possível adicionar o link rápido");
+			assertTrue(sucesso.get(i), "Não foi possível adicionar o link rápido");
 		}
-		
-		
+
 	}
-	
+
 }

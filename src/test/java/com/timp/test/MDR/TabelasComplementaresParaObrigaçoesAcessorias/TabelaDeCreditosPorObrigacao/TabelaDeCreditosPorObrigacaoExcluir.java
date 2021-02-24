@@ -35,7 +35,7 @@ public class TabelaDeCreditosPorObrigacaoExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeCreditosPorObrigacaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

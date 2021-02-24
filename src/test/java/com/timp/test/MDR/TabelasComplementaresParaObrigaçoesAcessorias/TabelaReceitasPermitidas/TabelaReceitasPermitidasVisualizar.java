@@ -41,7 +41,7 @@ public class TabelaReceitasPermitidasVisualizar extends TestBaseSteven {
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaReceitasPermitidasVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

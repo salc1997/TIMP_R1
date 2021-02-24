@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutarPO;
 
-public class ConfiguracaoEExecucaoExecutar extends TestBaseMassiel{
+public class ConfiguracaoEExecucaoExecutar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoExecutarPO configuracaoEExecucaoExecutarPO;

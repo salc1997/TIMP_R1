@@ -13,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.ParametrosGerais.DashboardLixeiraPO;
 
-public class DashboardLixeira extends TestBaseEliel{
-	
+public class DashboardLixeira extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardLixeiraPO dashboardLixeiraPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class DashboardLixeira extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,14 +41,12 @@ public class DashboardLixeira extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void lixeira() {
 		boolean sucesso = dashboardLixeiraPO.lixeira();
-		assertTrue(sucesso,Eliminado);
-		
-		
-		
+		assertTrue(sucesso, Eliminado);
+
 	}
- 
+
 }

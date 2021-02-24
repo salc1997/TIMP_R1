@@ -35,7 +35,7 @@ public class TabelaDeEstoqueParaRegistro12Editar extends TestBaseEliel {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeEstoqueParaRegistro12EditarPO.editar();
 		assertTrue(sucesso, Editar);
 

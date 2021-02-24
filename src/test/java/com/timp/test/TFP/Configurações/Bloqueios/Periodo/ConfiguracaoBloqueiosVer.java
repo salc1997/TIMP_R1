@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosVerPO;
 
-public class ConfiguracaoBloqueiosVer extends TestBaseEliel{
+public class ConfiguracaoBloqueiosVer extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	ConfiguracaoBloqueiosVerPO configuracaoBloqueiosVerPO;
@@ -38,7 +38,7 @@ public class ConfiguracaoBloqueiosVer extends TestBaseEliel{
 
 	@Test(priority = 1)
 	public void TFPEntrar() {
-		acessarTFPPO .acessarTFP();
+		acessarTFPPO.acessarTFP();
 	}
 
 	@Test(priority = 2)

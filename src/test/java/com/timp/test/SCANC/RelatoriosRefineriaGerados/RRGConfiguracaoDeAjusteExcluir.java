@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluirPO;
 
-public class RRGConfiguracaoDeAjusteExcluir extends TestBaseFernando{
+public class RRGConfiguracaoDeAjusteExcluir extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjusteExcluirPO rRGConfiguracaoDeAjusteExcluirPO;
@@ -40,7 +40,7 @@ public class RRGConfiguracaoDeAjusteExcluir extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void excluir() {		
+	public void excluir() {
 		boolean sucesso = rRGConfiguracaoDeAjusteExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

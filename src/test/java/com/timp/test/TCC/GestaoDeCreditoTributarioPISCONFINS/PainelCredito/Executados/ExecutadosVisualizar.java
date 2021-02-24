@@ -30,7 +30,7 @@ public class ExecutadosVisualizar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -50,6 +50,6 @@ public class ExecutadosVisualizar extends TestBaseCristhian {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 	}
 }

@@ -36,7 +36,7 @@ public class InclusaoDeCamposMarDetalhes extends TestBaseEliel {
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		String sucesso = inclusaoDeCamposMarDetalhesPO.detalhes();
 		assertEquals(sucesso, "edit", visualizaçar);
 	}

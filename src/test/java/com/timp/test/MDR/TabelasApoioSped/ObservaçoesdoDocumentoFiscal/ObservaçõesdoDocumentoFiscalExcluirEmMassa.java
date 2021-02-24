@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçõesdoDocumentoFiscalExcluirEmMassaPO;
 
-public class ObservaçõesdoDocumentoFiscalExcluirEmMassa extends TestBaseEliel{
- 
+public class ObservaçõesdoDocumentoFiscalExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ObservaçõesdoDocumentoFiscalExcluirEmMassaPO observaçõesdoDocumentoFiscalExcluirEmMassaPO;
@@ -31,10 +31,9 @@ public class ObservaçõesdoDocumentoFiscalExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -45,5 +44,5 @@ public class ObservaçõesdoDocumentoFiscalExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

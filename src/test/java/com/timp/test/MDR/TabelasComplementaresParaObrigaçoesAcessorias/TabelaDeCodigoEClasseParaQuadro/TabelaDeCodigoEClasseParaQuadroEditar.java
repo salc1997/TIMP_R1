@@ -30,6 +30,7 @@ public class TabelaDeCodigoEClasseParaQuadroEditar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
+
 	@Test()
 	public void editar() {
 		loginTC.login();

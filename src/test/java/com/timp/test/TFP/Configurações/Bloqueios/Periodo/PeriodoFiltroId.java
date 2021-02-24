@@ -15,28 +15,28 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class PeriodoFiltroId extends TestBaseMassiel{
+public class PeriodoFiltroId extends TestBaseMassiel {
 	LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  PeriodoFiltroIdPO periodoFiltroIdPO;
-	  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  periodoFiltroIdPO = new PeriodoFiltroIdPO();
-  }
+	AcessarTFPPO acessarTFPPO;
+	PeriodoFiltroIdPO periodoFiltroIdPO;
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 1)
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		periodoFiltroIdPO = new PeriodoFiltroIdPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test(priority = 1)
 	public void Filtro() {
-	  loginTC.login();
-	  acessarTFPPO .acessarTFP();
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
 		ArrayList<Boolean> sucesso = periodoFiltroIdPO.filtro();
 
 		for (int i = 0; i < sucesso.size(); i++) {

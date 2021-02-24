@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasPermitidas.TabelaReceitasPermitidasExcluirEmMassaPO;
 
-public class TabelaReceitasPermitidasExcluirEmMassa extends TestBaseEliel{
+public class TabelaReceitasPermitidasExcluirEmMassa extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasPermitidasExcluirEmMassaPO tabelaReceitasPermitidasExcluirEmMassaPO;
@@ -36,7 +35,7 @@ public class TabelaReceitasPermitidasExcluirEmMassa extends TestBaseEliel{
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasPermitidasExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);

@@ -34,7 +34,7 @@ public class TabelaDeCodigosDeTransferenciasCriar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeCodigosDeTransferenciasCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

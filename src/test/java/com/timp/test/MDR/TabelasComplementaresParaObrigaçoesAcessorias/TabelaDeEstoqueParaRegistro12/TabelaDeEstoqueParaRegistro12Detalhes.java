@@ -37,7 +37,7 @@ public class TabelaDeEstoqueParaRegistro12Detalhes extends TestBaseEliel {
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaDeEstoqueParaRegistro12DetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

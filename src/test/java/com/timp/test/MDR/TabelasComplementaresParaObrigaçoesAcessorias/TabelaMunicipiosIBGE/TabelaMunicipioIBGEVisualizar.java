@@ -44,7 +44,7 @@ public class TabelaMunicipioIBGEVisualizar extends TestBaseSteven {
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaMunicipioIBGEVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

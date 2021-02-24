@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoDetalhesPO;
 
-public class TaxasDeConversaoDetalhes extends TestBaseFernando{
+public class TaxasDeConversaoDetalhes extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TaxasDeConversaoDetalhesPO taxasDeConversaoDetalhesPO;
@@ -30,23 +30,18 @@ public class TaxasDeConversaoDetalhes extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-	*/
+	/*
+	 * @Test(priority = 0) public void login() { loginTC.login(); }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() { acessarMDRPO.acessarMDR(); }
+	 */
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = taxasDeConversaoDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

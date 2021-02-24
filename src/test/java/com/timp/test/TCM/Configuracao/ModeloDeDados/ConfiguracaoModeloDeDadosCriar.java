@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoModeloDeDadosCriar extends TestBaseKenssy{
+public class ConfiguracaoModeloDeDadosCriar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarTCMPO acessarTCMPO;
 	ConfiguracaoModeloDeDadosCriarPO configuracaoModeloDeDadosCriarPO;
@@ -33,12 +33,11 @@ public class ConfiguracaoModeloDeDadosCriar extends TestBaseKenssy{
 
 	@Test(priority = 1)
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCMPO.acessarTCM();
 
-		
 		boolean sucesso = configuracaoModeloDeDadosCriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}

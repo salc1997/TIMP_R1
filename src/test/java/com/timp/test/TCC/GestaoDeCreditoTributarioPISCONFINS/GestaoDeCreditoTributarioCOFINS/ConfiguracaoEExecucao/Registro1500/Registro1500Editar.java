@@ -10,8 +10,9 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1500.Registro1500EditarPO;
-public class Registro1500Editar extends TestBaseEliel{
- 
+
+public class Registro1500Editar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1500EditarPO registro1500EditarPO;
@@ -27,7 +28,7 @@ public class Registro1500Editar extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -50,5 +51,5 @@ public class Registro1500Editar extends TestBaseEliel{
 
 		assertTrue(sucesso, Editar);
 	}
-	
+
 }

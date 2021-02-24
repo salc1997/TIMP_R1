@@ -18,7 +18,7 @@ public class TabelaCodigoReceitaExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoReceitasExcluirPO tabelaCodigoReceitasExcluirPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

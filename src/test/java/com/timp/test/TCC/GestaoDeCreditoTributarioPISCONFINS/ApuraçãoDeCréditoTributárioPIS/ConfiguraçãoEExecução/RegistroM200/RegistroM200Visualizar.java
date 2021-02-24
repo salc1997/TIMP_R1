@@ -15,12 +15,11 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroM200Visualizar extends TestBaseMassiel{
+public class RegistroM200Visualizar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM200VisualizarPO registroM200VisualizarPO;
-
 
 	@BeforeClass
 	public void beforeClass() {
@@ -35,12 +34,11 @@ public class RegistroM200Visualizar extends TestBaseMassiel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
 		ArrayList<Boolean> sucesso = registroM200VisualizarPO.visualizar();

@@ -37,7 +37,7 @@ public class TabelaDeOutrosCreditosDetalhes extends TestBaseEliel {
 	public void Detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaDeOutrosCreditosDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

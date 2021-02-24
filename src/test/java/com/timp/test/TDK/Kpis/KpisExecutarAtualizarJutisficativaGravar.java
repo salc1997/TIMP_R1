@@ -18,7 +18,7 @@ public class KpisExecutarAtualizarJutisficativaGravar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisExecutarAtualizarJutisficativaGravarPO kpisExecutarAtualizarJutisficativaGravarPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class KpisExecutarAtualizarJutisficativaGravar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,15 +41,14 @@ public class KpisExecutarAtualizarJutisficativaGravar extends TestBaseEliel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void executar() {
 		ArrayList<Boolean> sucesso = kpisExecutarAtualizarJutisficativaGravarPO.executar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),"Cartão não foi adicionado");
+			assertTrue(sucesso.get(i), "Cartão não foi adicionado");
 		}
-		
-		
+
 	}
-	
+
 }

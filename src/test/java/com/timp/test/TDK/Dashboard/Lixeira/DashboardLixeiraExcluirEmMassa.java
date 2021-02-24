@@ -17,20 +17,20 @@ public class DashboardLixeiraExcluirEmMassa extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardLixeiraExcluirEmMassaPO dashboardLixeiraExcluirEmMassaPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardLixeiraExcluirEmMassaPO = new DashboardLixeiraExcluirEmMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -39,13 +39,13 @@ public class DashboardLixeiraExcluirEmMassa extends TestBaseMassiel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void excluir() {
 		boolean sucesso = dashboardLixeiraExcluirEmMassaPO.comparar();
 
 		assertTrue(sucesso, Criar);
-		
+
 		boolean sucesso2 = dashboardLixeiraExcluirEmMassaPO.ExcluirMasas();
 
 		assertTrue(sucesso2, Criar);

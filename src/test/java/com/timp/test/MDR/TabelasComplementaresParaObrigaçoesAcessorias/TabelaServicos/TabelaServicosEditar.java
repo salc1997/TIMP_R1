@@ -13,8 +13,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaServicosEditar extends TestBaseMassiel{
-	
+public class TabelaServicosEditar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaServicosEditarPO tabelaServicosEditarPO;

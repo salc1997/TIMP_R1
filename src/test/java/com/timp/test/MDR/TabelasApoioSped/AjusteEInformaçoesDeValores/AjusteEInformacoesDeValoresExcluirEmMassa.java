@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformacoesDeValoresExcluirEmMassaPO;
 
-public class AjusteEInformacoesDeValoresExcluirEmMassa extends TestBaseEliel{
-	
+public class AjusteEInformacoesDeValoresExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AjusteEInformacoesDeValoresExcluirEmMassaPO ajusteEInformacoesDeValoresExcluirEmMassaPO;
@@ -31,32 +31,26 @@ public class AjusteEInformacoesDeValoresExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = ajusteEInformacoesDeValoresExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		
+
 		sleep(1000);
-	
 
 	}
-	
-	@Test(dependsOnMethods = "criar" )
+
+	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
-	
+
 		boolean sucesso2 = ajusteEInformacoesDeValoresExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
-	
-	
+
 }

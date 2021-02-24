@@ -14,44 +14,44 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class Registro1200Criar extends TestBaseCristhian{
-	 
-		LoginTC loginTC;
-		AcessarTCCPO acessarTCCPO;
-		Registro1200CriarPO registro1200CriarPO;
+public class Registro1200Criar extends TestBaseCristhian {
 
-		@BeforeClass
-		public void beforeClass() {
+	LoginTC loginTC;
+	AcessarTCCPO acessarTCCPO;
+	Registro1200CriarPO registro1200CriarPO;
 
-			driver = initializationC();
-			loginTC = new LoginTC();
-			acessarTCCPO = new AcessarTCCPO();
-			registro1200CriarPO = new Registro1200CriarPO();
-		}
+	@BeforeClass
+	public void beforeClass() {
 
-		@AfterClass
-		public void afterClass() {
-			//driver.close();
-		}
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarTCCPO = new AcessarTCCPO();
+		registro1200CriarPO = new Registro1200CriarPO();
+	}
 
-		@Test(priority = 0)
-		public void login() {
-			loginTC.login();
+	@AfterClass
+	public void afterClass() {
+		// driver.close();
+	}
 
-		}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
 
-		@Test(priority = 1)
-		public void acessarTCC() {
+	}
 
-			acessarTCCPO.acessarTCC();
+	@Test(priority = 1)
+	public void acessarTCC() {
 
-		}
+		acessarTCCPO.acessarTCC();
 
-		@Test(priority = 2)
-		public void criar() {
+	}
 
-			boolean sucesso = registro1200CriarPO.criar();
+	@Test(priority = 2)
+	public void criar() {
 
-			assertTrue(sucesso, Criar);
-		}
+		boolean sucesso = registro1200CriarPO.criar();
+
+		assertTrue(sucesso, Criar);
+	}
 }

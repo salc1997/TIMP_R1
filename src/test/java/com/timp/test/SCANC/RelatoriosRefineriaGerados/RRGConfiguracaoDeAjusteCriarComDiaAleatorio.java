@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteCriarComDiaAleatorioPO;
 
-public class RRGConfiguracaoDeAjusteCriarComDiaAleatorio extends TestBaseFernando{
+public class RRGConfiguracaoDeAjusteCriarComDiaAleatorio extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjusteCriarComDiaAleatorioPO rRGConfiguracaoDeAjusteCriarComDiaAleatorioPO;
@@ -40,7 +40,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaAleatorio extends TestBaseFernand
 	}
 
 	@Test(priority = 2)
-	public void criarComDiaAleatorio() {		
+	public void criarComDiaAleatorio() {
 		boolean sucesso = rRGConfiguracaoDeAjusteCriarComDiaAleatorioPO.criarComDiaAleatorio();
 		assertTrue(sucesso, Criar);
 	}

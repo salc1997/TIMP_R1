@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizarPO;
 
 public class PainelBCEExecutadosVisualizar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	PainelBCEExecutadosVisualizarPO painelBCEExecutadosVisualizarPO;
@@ -29,7 +29,7 @@ public class PainelBCEExecutadosVisualizar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -49,7 +49,7 @@ public class PainelBCEExecutadosVisualizar extends TestBaseEliel {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 	}
-  
+
 }

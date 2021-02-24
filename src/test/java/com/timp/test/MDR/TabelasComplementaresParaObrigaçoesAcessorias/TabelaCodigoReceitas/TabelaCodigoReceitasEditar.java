@@ -13,30 +13,30 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaCodigoReceitasEditar extends TestBaseMassiel{
-	
+public class TabelaCodigoReceitasEditar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaCodigoReceitasEditarPO tabelaCodigoReceitasEditarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	   loginTC = new LoginTC();
-	   acessarMDRPO = new AcessarMDRPO();
-	   tabelaCodigoReceitasEditarPO = new TabelaCodigoReceitasEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		tabelaCodigoReceitasEditarPO = new TabelaCodigoReceitasEditarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaCodigoReceitasEditarPO.Editar();
 		assertTrue(sucesso, semAcesso);
 

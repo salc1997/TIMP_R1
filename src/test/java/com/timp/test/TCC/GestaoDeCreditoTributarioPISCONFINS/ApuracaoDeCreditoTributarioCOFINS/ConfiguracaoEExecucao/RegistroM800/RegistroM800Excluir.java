@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM800.RegistroM800ExcluirPO;
 
-public class RegistroM800Excluir extends TestBaseEliel{
- 
+public class RegistroM800Excluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM800ExcluirPO registroM800ExcluirPO;
@@ -30,7 +30,7 @@ public class RegistroM800Excluir extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -55,5 +55,5 @@ public class RegistroM800Excluir extends TestBaseEliel{
 			assertTrue(sucesso.get(i), Eliminado);
 		}
 	}
-	
+
 }

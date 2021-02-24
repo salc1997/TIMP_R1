@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 
-public class AcessarTCC extends TestBaseSteven{
+public class AcessarTCC extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 
@@ -35,7 +35,7 @@ public class AcessarTCC extends TestBaseSteven{
 
 	@Test(priority = 2)
 	public void taaEntrar() {
-		boolean sucesso =  acessarTCCPO.acessarTCC();
+		boolean sucesso = acessarTCCPO.acessarTCC();
 		assertTrue(sucesso, "The element is not present");
 	}
 }

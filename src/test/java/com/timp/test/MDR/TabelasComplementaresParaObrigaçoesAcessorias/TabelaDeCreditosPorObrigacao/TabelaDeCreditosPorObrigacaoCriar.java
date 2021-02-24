@@ -35,7 +35,7 @@ public class TabelaDeCreditosPorObrigacaoCriar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeCreditosPorObrigacaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeLayoutdePainelFiltrosAvancados extends TestBaseCristhian{
+public class ConfiguraçãodeLayoutdePainelFiltrosAvancados extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeLayoutdePainelFiltrosAvancadosPO configuraçãodeLayoutdePainelFiltrosAvancadosPO;
@@ -33,7 +33,7 @@ public class ConfiguraçãodeLayoutdePainelFiltrosAvancados extends TestBaseCristh
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

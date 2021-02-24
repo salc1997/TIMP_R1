@@ -1,6 +1,5 @@
 package com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -55,5 +54,5 @@ public class CampoPesquisa extends TestBaseSteven {
 
 		assertTrue(sucesso, Filtros);
 	}
-	
+
 }

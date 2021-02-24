@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosExcluirEmMassaPO;
 
-public class TabelaOutrosDebitosExcluirEmMassa extends TestBaseEliel{
+public class TabelaOutrosDebitosExcluirEmMassa extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaOutrosDebitosExcluirEmMassaPO tabelaOutrosDebitosExcluirEmMassaPO;
@@ -34,11 +34,11 @@ public class TabelaOutrosDebitosExcluirEmMassa extends TestBaseEliel{
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaOutrosDebitosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		sleep(1000);

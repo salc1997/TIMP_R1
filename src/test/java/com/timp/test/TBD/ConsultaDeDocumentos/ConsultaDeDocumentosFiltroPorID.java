@@ -13,48 +13,45 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.ConsultaDeDocumentos.ConsultaDeDocumentosFiltroPorIDPO;
 
-public class ConsultaDeDocumentosFiltroPorID extends TestBaseEliel{
-	
+public class ConsultaDeDocumentosFiltroPorID extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	ConsultaDeDocumentosFiltroPorIDPO consultaDeDocumentosFiltroPorIDPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  consultaDeDocumentosFiltroPorIDPO = new  ConsultaDeDocumentosFiltroPorIDPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		consultaDeDocumentosFiltroPorIDPO = new ConsultaDeDocumentosFiltroPorIDPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void filtro() {
-	 		
-	 		ArrayList<Boolean> sucesso = consultaDeDocumentosFiltroPorIDPO.filtro();
-			for (int i = 0; i < sucesso.size(); i++) {
-				assertTrue(sucesso.get(i), Filtros);
-			}
-	 		
-		
-	 		
-	 	}
- 
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void TBDEntrar() {
+		acessarTBDPO.acessarTBD();
+
+	}
+
+	@Test(priority = 1)
+	public void filtro() {
+
+		ArrayList<Boolean> sucesso = consultaDeDocumentosFiltroPorIDPO.filtro();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Filtros);
+		}
+
+	}
+
 }

@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ThinCapitalization.Subcapitalizacao.SubcapitalizacaoExcluirEmMassaPO;
 
 public class SubcapitalizacaoExcluirEmMassa extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SubcapitalizacaoExcluirEmMassaPO subcapitalizacaoExcluirEmMassaPO;
@@ -30,23 +30,21 @@ public class SubcapitalizacaoExcluirEmMassa extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
+
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -57,5 +55,5 @@ public class SubcapitalizacaoExcluirEmMassa extends TestBaseEliel {
 		assertTrue(sucesso2, Eliminado);
 
 	}
- 
+
 }

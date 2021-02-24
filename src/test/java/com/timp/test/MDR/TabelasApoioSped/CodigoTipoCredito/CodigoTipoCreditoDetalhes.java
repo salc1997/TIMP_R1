@@ -36,8 +36,6 @@ public class CodigoTipoCreditoDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
 		loginTC.login();

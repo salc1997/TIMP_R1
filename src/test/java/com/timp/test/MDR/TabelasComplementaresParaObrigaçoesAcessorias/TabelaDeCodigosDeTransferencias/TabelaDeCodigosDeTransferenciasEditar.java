@@ -35,7 +35,7 @@ public class TabelaDeCodigosDeTransferenciasEditar extends TestBaseEliel {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeCodigosDeTransferenciasEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

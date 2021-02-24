@@ -14,35 +14,33 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SubperiodoEditar  extends TestBaseMassiel {
-	 LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  SubperiodoEditarPO subperiodoEditarPO;
+public class SubperiodoEditar extends TestBaseMassiel {
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	SubperiodoEditarPO subperiodoEditarPO;
 
-	 @BeforeClass
-	 public void beforeClass() {
-		  driver = initializationM();
-		  loginTC = new LoginTC();
-		  acessarTFPPO = new AcessarTFPPO();
-		  subperiodoEditarPO = new  SubperiodoEditarPO();
-	 }
-	
-	 @AfterClass
-	 public void afterClass() {
-		 driver.close();
-	 }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		subperiodoEditarPO = new SubperiodoEditarPO();
+	}
 
-	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 1)
 	public void Editar() {
-		
+
 		loginTC.login();
-		acessarTFPPO .acessarTFP();
+		acessarTFPPO.acessarTFP();
 		boolean sucesso = subperiodoEditarPO.editar();
 
 		// teste pra conferir se o resultado mostrado é igual
 		assertTrue(sucesso, Editar);
 	}
-
 
 }

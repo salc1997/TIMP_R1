@@ -10,6 +10,7 @@ import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 
+
 public class AcessarSCANC extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;

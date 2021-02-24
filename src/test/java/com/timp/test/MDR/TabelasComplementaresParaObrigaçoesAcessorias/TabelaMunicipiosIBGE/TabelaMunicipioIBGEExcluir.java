@@ -25,7 +25,7 @@ public class TabelaMunicipioIBGEExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -41,7 +41,7 @@ public class TabelaMunicipioIBGEExcluir extends TestBaseSteven {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaMunicipioIBGEExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
 

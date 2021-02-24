@@ -34,7 +34,7 @@ public class AcessarTCM extends TestBaseKenssy {
 
 	@Test(priority = 2)
 	public void tcmEntrar() {
-		boolean sucesso =  acessarTCMPO.acessarTCM();
+		boolean sucesso = acessarTCMPO.acessarTCM();
 		assertTrue(sucesso, "The element is not present");
 	}
 

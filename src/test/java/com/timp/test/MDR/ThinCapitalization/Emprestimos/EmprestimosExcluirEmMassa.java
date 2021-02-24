@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class EmprestimosExcluirEmMassa extends TestBaseKenssy {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	EmprestimosExcluirEmMassaPO emprestimosExcluirEmMassaPO;

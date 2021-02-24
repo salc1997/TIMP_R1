@@ -20,34 +20,35 @@ public class RaizFiltroId extends TestBaseMassiel {
 	AcessarTDKPO acessarTDKPO;
 	RaizFiltroIdPO raizFiltroIdPO;
 
-  @BeforeClass
-  public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		raizFiltroIdPO = new RaizFiltroIdPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
- 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
- 	@Test(priority = 1)
- 	public void acessarTDK() {
- 		acessarTDKPO.acessarTDK();
- 	}
- 	
- 	@Test(priority = 2)
- 	public void filtro() {
- 		
- 		ArrayList<Boolean> sucesso = raizFiltroIdPO .FiltroID();
- 		for (int i = 0; i < sucesso.size(); i++) {
- 			assertTrue(sucesso.get(i),Filtros);
- 		}
- 		
- 	}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
+
+	@Test(priority = 1)
+	public void acessarTDK() {
+		acessarTDKPO.acessarTDK();
+	}
+
+	@Test(priority = 2)
+	public void filtro() {
+
+		ArrayList<Boolean> sucesso = raizFiltroIdPO.FiltroID();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Filtros);
+		}
+
+	}
 }

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfrontacaoVisualizar extends TestBaseMassiel{
+public class ConfrontacaoVisualizar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
@@ -33,22 +33,18 @@ public class ConfrontacaoVisualizar extends TestBaseMassiel{
 	public void afterClass() {
 		driver.close();
 	}
-		/*
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
-	}
-	*/
+
+	/*
+	 * @Test(priority = 0) public void ingresar() { loginTC.login(); }
+	 * 
+	 * @Test(priority = 1) public void ingresarMDR() { accesarMDRPO.acessarMDR(); }
+	 */
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = confrontacaoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

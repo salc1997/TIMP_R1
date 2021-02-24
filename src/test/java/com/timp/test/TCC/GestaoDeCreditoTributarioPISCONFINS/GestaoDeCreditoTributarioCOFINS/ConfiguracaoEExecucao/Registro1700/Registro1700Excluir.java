@@ -15,25 +15,26 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class Registro1700Excluir extends TestBaseMassiel{
-  
+public class Registro1700Excluir extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1700ExcluirPO registro1700ExcluirPO;
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registro1700ExcluirPO = new Registro1700ExcluirPO ();
-  }
+		registro1700ExcluirPO = new Registro1700ExcluirPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -51,6 +52,6 @@ public class Registro1700Excluir extends TestBaseMassiel{
 		boolean sucesso = registro1700ExcluirPO.Excluir();
 
 		assertTrue(sucesso, Criar);
-		
+
 	}
 }

@@ -29,31 +29,29 @@ public class MunicipioCriar extends TestBaseMassiel {
 		acessarMDRPO = new AcessarMDRPO();
 		municipioCriarPO = new MunicipioCriarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = municipioCriarPO.criar();
 		assertTrue(sucesso, Criar);
 

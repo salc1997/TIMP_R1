@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteEditarPO;
 
-public class RRGConfiguracaoDeAjusteEditar extends TestBaseFernando{
+public class RRGConfiguracaoDeAjusteEditar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjusteEditarPO rRGConfiguracaoDeAjusteEditarPO;
@@ -40,7 +40,7 @@ public class RRGConfiguracaoDeAjusteEditar extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void editar() {		
+	public void editar() {
 		boolean sucesso = rRGConfiguracaoDeAjusteEditarPO.editar();
 		assertTrue(sucesso, Editar);
 	}

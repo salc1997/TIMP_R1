@@ -38,10 +38,12 @@ public class TabelaDeEstoqueParaRegistro12ExcluirEmMassa extends TestBaseEliel{
 		
 		boolean sucesso = tabelaDeEstoqueParaRegistro12ExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = tabelaDeEstoqueParaRegistro12ExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
-	
 }

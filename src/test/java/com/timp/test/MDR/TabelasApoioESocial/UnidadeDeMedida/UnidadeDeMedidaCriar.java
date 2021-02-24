@@ -30,19 +30,18 @@ public class UnidadeDeMedidaCriar extends TestBaseSteven{
 	  unidadeDeMedidaCriarPO = new UnidadeDeMedidaCriarPO();
   }
 
-  @AfterClass
+  	@AfterClass
 	public void afterClass() {
-		driver.close();
+  		driver.close();
 	}
 
-	@Test(priority = 1)
-	  public void criar() {
+  	@Test()
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-
-			 boolean sucesso = unidadeDeMedidaCriarPO.criar();
-			  assertTrue(sucesso, Criar);
-
-	  }
+		
+		boolean sucesso = unidadeDeMedidaCriarPO.criar();
+		assertTrue(sucesso, Criar);
+	}
 
 }

@@ -29,26 +29,15 @@ public class DeXParaContraPartidaExcluirEmMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = deXParaContraPartidaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		boolean sucesso2 = deXParaContraPartidaExcluirEmMassaPO.exluirMassa();
+		assertTrue(sucesso2, Eliminado);
 	}
 	
-	@Test(priority = 3)
-	public void excluirMassa() {
-		boolean sucesso = deXParaContraPartidaExcluirEmMassaPO.exluirMassa();
-		assertTrue(sucesso, Eliminado);
-	}
 }

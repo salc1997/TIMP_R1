@@ -36,19 +36,11 @@ public class CodigoFatosContabeisFiltrar extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 2)
-	public void mdrEntrar() {
-		boolean sucesso = acesarMDRPO.acessarMDR();
-		assertTrue(sucesso, "The element is not present");
-	}
-
-	@Test(priority = 3)
+	@Test()
 	public void filtrarCodigoFatosContabeis() {
+		loginTC.login();
+		boolean sucesso2 = acesarMDRPO.acessarMDR();
+		assertTrue(sucesso2, "The element is not present");
 		boolean sucesso = codigoFatosContabeisFiltrarPO.filtrarCodigoFatosContabeis();
 		assertTrue(sucesso, Filtros);
 	}

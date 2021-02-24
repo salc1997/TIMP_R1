@@ -33,7 +33,7 @@ public class UnidadeDeMedidaFiltroCodigo extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtroCodigo() {
 		
 		loginTC.login();

@@ -33,20 +33,13 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar extends TestBaseMassi
 
 	@AfterClass
 	public void afterClass() {
-	}
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
+		driver.close();
 	}
 
-	@Test(priority = 2)
-	public void mdrEntrar() {
-		acesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 3)
+	@Test()
 	public void visualizar() {
-		
+		loginTC.login();
+		acesarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = configuraçãoDeTipoTaxaDeAtualizaçãoVisualizarPO.Visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

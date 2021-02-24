@@ -30,18 +30,20 @@ public class ParametrosModeloDeApuracaoTPExcluirEmMasa extends TestBaseKenssy{
 	public void afterClass() {
 		driver.close();
 	}
+	
 	@Test()
-	public void excluirEmMasaParametrosModeloApuracaoTP() {
+	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
 		
 		boolean sucesso = parametrosModeloDeApuracaoTPExcluirEnMasaPO.criar();
 		assertTrue(sucesso, Criar);
-
+	}
+	
+	@Test()
+	public void excluirEmMasa() {
 		sleep(1000);
-
 		boolean sucesso2 = parametrosModeloDeApuracaoTPExcluirEnMasaPO.excluirEmMasaParametrosModeloApuracaoTP();
 		assertTrue(sucesso2, Eliminado);
 	}
-
 }

@@ -36,16 +36,23 @@ public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 		driver.close();
 	}
 
+<<<<<<< HEAD
 
 	@Test()
 
 	public void criar() {
 
+=======
+	
+	@Test()
+	public void criar() {
+>>>>>>> refs/remotes/origin/master
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
 	
 		boolean sucesso = tiposDeLogradouroExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
+<<<<<<< HEAD
 		sleep(1000);
 
 
@@ -56,9 +63,18 @@ public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 
 	public void excluir() {
 	
+=======
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
+>>>>>>> refs/remotes/origin/master
 		boolean sucesso2 = tiposDeLogradouroExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 	}
 
 }

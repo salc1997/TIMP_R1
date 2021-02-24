@@ -37,22 +37,10 @@ public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtrosAvanTabelaComplementarParaDIRF() {
-		
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		ArrayList<Boolean> empresa = tabelaComplementarParaDIRFFiltrosAvanPO.filtroEmpresa();
 		for (int i = 0; i < empresa.size(); i++) {
 			assertTrue(empresa.get(i), Filtros);

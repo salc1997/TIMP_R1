@@ -33,20 +33,33 @@ public class FactoresDeRiscoExcluirMassa extends TestBaseCristhian {
 	}
 
 	@Test()
+<<<<<<< HEAD
 	public void criar() {
 
+=======
+	public void ExcluirMassa() {
+		
+>>>>>>> refs/remotes/origin/master
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = factoresDeRiscoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		boolean sucesso2 = factoresDeRiscoExcluirMassaPO.exluirMassa();
+		assertTrue(sucesso2, Eliminado);
 	}
+<<<<<<< HEAD
 
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = factoresDeRiscoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
 	}
+=======
+	
+	
+>>>>>>> refs/remotes/origin/master
 
 }

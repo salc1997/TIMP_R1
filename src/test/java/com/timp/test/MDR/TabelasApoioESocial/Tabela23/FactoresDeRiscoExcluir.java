@@ -36,8 +36,13 @@ public class FactoresDeRiscoExcluir extends TestBaseCristhian {
 	}
 
 	@Test()
+<<<<<<< HEAD
 	public void excluirr() {
 
+=======
+	public void excluir() {
+		
+>>>>>>> refs/remotes/origin/master
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

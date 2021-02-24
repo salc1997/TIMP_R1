@@ -34,7 +34,7 @@ public class AgenteCausadorDeSGDPExcluir extends TestBaseCristhian {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void excluirr() {
 		
 		loginTC.login();

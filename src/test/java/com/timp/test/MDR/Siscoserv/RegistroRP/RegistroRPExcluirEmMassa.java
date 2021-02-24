@@ -38,14 +38,14 @@ public class RegistroRPExcluirEmMassa extends TestBaseEliel{
 
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void acessarMDR() {
 
 		acessarMDRPO.acessarMDR();
 
 	}
 	*/
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
@@ -53,6 +53,10 @@ public class RegistroRPExcluirEmMassa extends TestBaseEliel{
 		boolean sucesso = registroRPExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEnMassa() {
 		boolean sucesso2 = registroRPExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

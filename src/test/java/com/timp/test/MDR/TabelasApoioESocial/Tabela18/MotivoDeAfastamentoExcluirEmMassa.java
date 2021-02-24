@@ -33,7 +33,7 @@ public class MotivoDeAfastamentoExcluirEmMassa extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();
@@ -41,10 +41,12 @@ public class MotivoDeAfastamentoExcluirEmMassa extends TestBaseSteven {
 
 		boolean sucesso = motivoDeAfastamentoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = motivoDeAfastamentoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
 
 }

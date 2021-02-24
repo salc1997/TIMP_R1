@@ -36,7 +36,7 @@ public class DeterminacaoDeRelevanciaPorRegraVisualizar extends TestBaseCristhia
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Visualizar() {
 		
 		loginTC.login();

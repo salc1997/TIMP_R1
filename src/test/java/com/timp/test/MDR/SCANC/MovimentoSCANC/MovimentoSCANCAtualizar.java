@@ -36,7 +36,7 @@ public class MovimentoSCANCAtualizar extends TestBaseKenssy {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void atualizar() {
 		
 		loginTC.login();

@@ -30,20 +30,14 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
-	}
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-	@Test(priority = 1)
-	public void ingresarMDR() {
-		accesarMDRPO.acessarMDR();
+		driver.close();
 	}
 
-	@Test(priority = 2 )
+	@Test()
 	public void detalle() {
 		
-		
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = configuraçãoDeTipoTaxaDeAtualizaçãoDetallePO.Detalle();
 		
 		for (int i = 0; i < sucesso.size(); i++) {

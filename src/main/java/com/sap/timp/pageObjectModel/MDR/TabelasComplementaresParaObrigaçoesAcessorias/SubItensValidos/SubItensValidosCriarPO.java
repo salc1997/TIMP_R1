@@ -110,7 +110,7 @@ public class SubItensValidosCriarPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigosubitem.sendKeys("99937");
+		codigosubitem.sendKeys("33937");
 		
 		sleep(2000);
 		

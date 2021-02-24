@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO;
-import com.sap.timp.pageObjectModel.BCB.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO;
+import com.sap.timp.pageObjectModel.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO;
 
 import org.testng.annotations.BeforeClass;
 

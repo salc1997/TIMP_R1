@@ -136,16 +136,16 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start\"]")
 	public WebElement primeiracaixar1;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][1]")
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start path-hl\"]/*/*[name()=\"tspan\"][1]")
 	public WebElement primeiracaixar1editado;
 	
 	@FindBy(xpath = "//button[text()=\"Modificar\"]")
 	public WebElement modificar;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][1]")
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start path-hl\"]/*/*[name()=\"tspan\"][1]")
 	public WebElement parte1string;
 	
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start edited\"]/*/*[name()=\"tspan\"][2]")
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start path-hl\"]/*/*[name()=\"tspan\"][2]")
 	public WebElement parte2string;
 
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div/div/input")
@@ -209,10 +209,10 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		waitExpectElement(adicionarcaminho);
+		sleep(2000);
 		primeiracaixar1.click();
 		sleep(1000);	
 		NomeDoValor.clear();
@@ -231,7 +231,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 
-		waitExpectElement(parte1string);
+		//waitExpectElement(parte1string);
 		sleep(2000);
 		String texto1 = parte1string.getText();
 		//String texto2 = parte2string.getText();
@@ -322,7 +322,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		nao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		configuracoes.click();
 		sleep(1000);
 		String verficarnome = nome.getAttribute("value");

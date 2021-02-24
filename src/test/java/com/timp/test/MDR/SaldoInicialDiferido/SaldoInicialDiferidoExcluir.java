@@ -36,7 +36,7 @@ public class SaldoInicialDiferidoExcluir extends TestBaseSteven {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		
 		loginTC.login();

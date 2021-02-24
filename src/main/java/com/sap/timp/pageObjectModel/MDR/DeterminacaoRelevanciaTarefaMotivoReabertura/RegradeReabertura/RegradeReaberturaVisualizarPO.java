@@ -120,7 +120,7 @@ public class RegradeReaberturaVisualizarPO extends TestBaseMassiel{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso.add(textoCodigo1.equals(textoCodigo));
-		sucesso.add(textoDescripcion1.equals(textoDescripcion));
+		sucesso.add(textoDescripcion1.contains(textoDescripcion));
 		sucesso.add(textoFecha1.contains(textoFecha));
 		
 		return sucesso;

@@ -10,10 +10,10 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
+
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesDetalhesPO;
-import com.timp.test.TDK.AcessarTDK;
+
 
 public class ExecucoesDetalhes extends TestBaseEliel{
  

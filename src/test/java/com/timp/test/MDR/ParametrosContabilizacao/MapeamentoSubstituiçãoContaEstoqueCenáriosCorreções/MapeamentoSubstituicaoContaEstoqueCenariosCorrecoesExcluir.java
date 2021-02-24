@@ -37,8 +37,9 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir extends 
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
+		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

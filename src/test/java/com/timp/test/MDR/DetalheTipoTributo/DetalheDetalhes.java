@@ -44,7 +44,7 @@ public class DetalheDetalhes extends TestBaseSteven {
 
 	
 
-	@Test(priority = 1)
+	@Test()
 	public void detalhes() {
 
 		loginTC.login();

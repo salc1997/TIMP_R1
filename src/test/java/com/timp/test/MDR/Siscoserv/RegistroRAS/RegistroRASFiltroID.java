@@ -31,7 +31,7 @@ public class RegistroRASFiltroID extends TestBaseEliel{
 		 driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void filtroId() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

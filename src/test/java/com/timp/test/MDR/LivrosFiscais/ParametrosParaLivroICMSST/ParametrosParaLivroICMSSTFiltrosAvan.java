@@ -36,7 +36,7 @@ public class ParametrosParaLivroICMSSTFiltrosAvan extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	  public void filtrosAvanzados() {
 		
 		loginTC.login();

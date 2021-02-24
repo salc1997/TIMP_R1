@@ -38,7 +38,7 @@ public class  ValoresParaMetodoPCIFiltroID extends TestBaseSteven{
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

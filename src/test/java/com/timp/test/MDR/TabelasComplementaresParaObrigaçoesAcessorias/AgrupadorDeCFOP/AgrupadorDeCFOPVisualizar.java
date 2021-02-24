@@ -33,22 +33,10 @@ public class AgrupadorDeCFOPVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void Visualizar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = agrupadorDeCFOPVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

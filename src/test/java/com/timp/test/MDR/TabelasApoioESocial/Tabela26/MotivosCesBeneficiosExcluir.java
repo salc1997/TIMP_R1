@@ -40,7 +40,7 @@ public class MotivosCesBeneficiosExcluir extends TestBaseFernando {
 
 	
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 
 		loginTC.login();

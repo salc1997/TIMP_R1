@@ -17,34 +17,33 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassa extends TestBaseKens
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO  determinacaoDeRelevanciaPorRegraExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  determinacaoDeRelevanciaPorRegraExcluirEmMassaPO = new DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		determinacaoDeRelevanciaPorRegraExcluirEmMassaPO = new DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO();
+	}
 
-  
-  @Test()
-  public void excluirEmMassa() {
-	  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
-		
-	boolean sucesso = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
-	
-	boolean sucesso2 = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO.determinacaoDeRelevanciaPorRegraExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
-  }
 
+		boolean sucesso = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
+		sleep(1000);
+		boolean sucesso2 = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO.determinacaoDeRelevanciaPorRegraExcluirEmMassa();
+		assertTrue(sucesso2, Eliminado);
+	}
 }

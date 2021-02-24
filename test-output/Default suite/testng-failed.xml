@@ -1,241 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades">
-        <methods>
-          <include name="editarConfiguracion"/>
-=======
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
->>>>>>> refs/heads/master
-  <test thread-count="5" name="Default test(failed)">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-=======
->>>>>>> refs/remotes/origin/Yessy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/heads/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
 <<<<<<< HEAD
-      <class name="com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosEditar">
-=======
 <<<<<<< HEAD
 <<<<<<< HEAD
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
+      <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
 =======
 <<<<<<< HEAD
-      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa">
+      <class name="com.timp.test.BRB.OutputAutomático">
 =======
-      <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
+<<<<<<< HEAD
+      <class name="com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar">
+=======
+      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+      <class name="com.timp.test.CALENDAR.MultiplosUsuariosCalendar">
 >>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/heads/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="executarEditar"/>
-          <include name="afterClass"/>
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
-          <include name="filtrosBiblioteca"/>
-=======
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> refs/heads/master
-          <include name="beforeClass"/>
 <<<<<<< HEAD
 =======
+      <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
+=======
+>>>>>>> refs/heads/Cristhian
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
 <<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="asignarValores"/>
 =======
-=======
-=======
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
 >>>>>>> refs/heads/Fernando
 =======
->>>>>>> refs/remotes/origin/Yessy
-=======
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
 >>>>>>> refs/remotes/origin/Kenssy
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
 =======
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoCopiar">
->>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> refs/heads/master
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
         <methods>
 <<<<<<< HEAD
-<<<<<<< HEAD
+=======
+=======
+          <include name="excluirEmMassa"/>
+          <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Kenssy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
+=======
+          <include name="Calendar"/>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
 <<<<<<< HEAD
-          <include name="filtro"/>
-=======
-          <include name="ver"/>
->>>>>>> refs/remotes/origin/Eliel
+          <include name="editar"/>
+>>>>>>> refs/heads/Cristhian
           <include name="afterClass"/>
 <<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
 =======
-<<<<<<< HEAD
+=======
           <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Yessy
+        </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.OutputAutomático -->
 =======
+      </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
+=======
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
           <include name="editar"/>
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Cristhian
+          <include name="beforeClass"/>
 >>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/remotes/origin/Eliel
->>>>>>> refs/heads/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
+          <include name="afterClass"/>
 <<<<<<< HEAD
-      </class> <!-- com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId -->
+          <include name="editar"/>
 =======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosEditar -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
-=======
-      </class> <!-- com.timp.test.BRB.AdicionarColunas -->
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Yessy
+          <include name="excluirMassa"/>
+>>>>>>> refs/heads/Cristhian
           <include name="criar"/>
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
           <include name="beforeClass"/>
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-=======
->>>>>>> refs/remotes/origin/Yessy
-          <include name="afterClass"/>
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/Yessy
-=======
-          <include name="copiar"/>
-          <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Kenssy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Yessy
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa -->
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades -->
 =======
 <<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa -->
 =======
-      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
->>>>>>> refs/remotes/origin/Kenssy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular -->
+          <include name="criar"/>
 >>>>>>> refs/heads/Fernando
 =======
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular -->
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoCopiar -->
+          <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.CALENDAR.TarefasMultiplasEstagios -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
 <<<<<<< HEAD
 =======
-      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoVer -->
->>>>>>> refs/remotes/origin/Eliel
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
+>>>>>>> refs/heads/Fernando
 =======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
 =======
-      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId -->
->>>>>>> refs/remotes/origin/Yessy
 >>>>>>> refs/heads/master
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.CALENDAR.MultiplosUsuariosCalendar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

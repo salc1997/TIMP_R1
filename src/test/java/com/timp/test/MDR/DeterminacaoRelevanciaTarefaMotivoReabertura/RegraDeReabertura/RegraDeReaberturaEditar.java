@@ -34,7 +34,7 @@ public class RegraDeReaberturaEditar extends TestBaseMassiel{
   
   
   
-  @Test(priority = 1)
+  @Test()
   public void editar() {
 	  
 

@@ -33,8 +33,8 @@ public class MovimentoSCANCExcluirMasas extends TestBaseMassiel{
   
 
  	
- 	@Test(priority = 1)
- 	public void criar() {
+ 	@Test()
+ 	public void Criar() {
  		
  		loginTC.login();
 		
@@ -43,8 +43,16 @@ public class MovimentoSCANCExcluirMasas extends TestBaseMassiel{
  		boolean sucesso = movimentoSCANCExcluirMasasPO.criar();
  		assertTrue(sucesso, Criar);
  		
+ 		
+ 	}
+ 	
+ 	
+
+ 	@Test(dependsOnMethods = "Criar")
+ 	public void Excluir() {
+ 		
+ 		
  		boolean sucesso2 = movimentoSCANCExcluirMasasPO.ExcluirMasas();
  		assertTrue(sucesso2, Eliminado);
  	}
-
 }

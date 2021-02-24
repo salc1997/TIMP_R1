@@ -30,16 +30,14 @@ public class TiposDeLotacaoTributarioCriar extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tiposDeLotacaoTributariaCriarPO.criar();
-
 		assertTrue(sucesso, Criar);
-
 	}
 
 }

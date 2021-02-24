@@ -33,7 +33,7 @@ public class  ValoresParaMetodoPRLFiltroID extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

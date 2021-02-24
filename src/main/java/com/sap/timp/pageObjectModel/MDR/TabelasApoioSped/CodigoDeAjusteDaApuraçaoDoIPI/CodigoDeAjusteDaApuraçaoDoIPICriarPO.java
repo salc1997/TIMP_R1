@@ -91,7 +91,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("99093");
+		codigo.sendKeys("33093");
 		
 		sleep(2000);
 		

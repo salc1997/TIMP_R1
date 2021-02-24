@@ -97,10 +97,10 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigodevalores.sendKeys("SP00002");
+		codigodevalores.sendKeys("SP33002");
 		codigodevalores.sendKeys(Keys.ENTER);
 		
-		descricao.sendKeys("Teste0 99");
+		descricao.sendKeys("Teste0 33");
 		
 		//data atual
 		String data = fechaActual();

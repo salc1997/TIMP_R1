@@ -37,7 +37,7 @@ public class SequenciaExcluir extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Excluir() {
 		
 		loginTC.login();

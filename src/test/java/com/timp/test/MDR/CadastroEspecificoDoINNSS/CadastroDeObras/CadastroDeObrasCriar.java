@@ -36,7 +36,7 @@ public class CadastroDeObrasCriar extends TestBaseMassiel{
 	
   
   
-  @Test(priority = 1)
+  @Test()
   public void criar() {
 	  
   

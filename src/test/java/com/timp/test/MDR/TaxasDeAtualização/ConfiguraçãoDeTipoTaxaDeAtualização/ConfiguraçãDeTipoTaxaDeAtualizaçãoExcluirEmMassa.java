@@ -30,23 +30,20 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa extends TestBaseKe
   public void afterClass() {
 	  driver.close();
   }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
 
-  }
   
-  @Test(priority = 2)
-  public void excluirEmMassa() {
+  @Test()
+  public void criar() {
+		loginTC.login();
+		accesarMDR.acessarMDR();
 	boolean sucesso = configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
-	sleep(1000);
+
+  }
+
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluirEmMassa() {
 	
 	boolean sucesso2 = configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO.configuraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);

@@ -44,7 +44,7 @@ public class MotivoDeAfastamentoExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 
 		loginTC.login();

@@ -34,7 +34,7 @@ public class EmpresasFiltros extends TestBaseSteven {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtros() {
 		
 		loginTC.login();

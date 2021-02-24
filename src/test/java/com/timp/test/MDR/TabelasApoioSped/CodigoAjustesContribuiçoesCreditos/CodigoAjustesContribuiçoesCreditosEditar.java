@@ -30,21 +30,13 @@ public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 2)
-	public void mdrEntrar() {
-		acesarMDRPO.acessarMDR();
-	}
-
-	@Test(priority = 3)
+	@Test()
 	public void editar() {
+		loginTC.login();
+		acesarMDRPO.acessarMDR();
 		codigoAjustesContribuiçoesCreditosEditarPO.editar();
 	}
 }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
-	<test name="Automações MDR 2">
 
+	<test name="Detalhe Tipo Tributo">
 
 		<classes>
-
-
+		
 		<!-- Detalhe Tipo Tributo -->
 			
 			<class name="com.timp.test.MDR.DetalheTipoTributo.DetalheCriar"></class>
@@ -17,6 +16,14 @@
 			<class name="com.timp.test.MDR.DetalheTipoTributo.DetalheExcluir"></class>
 			<class name="com.timp.test.MDR.DetalheTipoTributo.DetalheExcluirMassa"></class>
 			
+			</classes>
+	
+	</test>
+	
+	<test name="Determinação de Tipo de Condição">
+
+		<classes>
+		
 		<!-- Determinação de Tipo de Condição -->
 			
 			<class name="com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoCriar"></class>
@@ -24,13 +31,28 @@
 			<class name="com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoEditar"></class>
 			<class name="com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoExcluir"></class>
 			<class name="com.timp.test.MDR.DeterminacaoDeTipoDeCondicao.DeterminacaoDeTipoDeCondicaoExcluirMassa"></class>
-			
+		</classes>
+	
+	</test>
+	
+	<test name="Empresas">
+
+		<classes>
+		
 		<!-- Empresas -->
 		
 			<class name="com.timp.test.MDR.Empresas.EmpresaEditar"></class>
 			<class name="com.timp.test.MDR.Empresas.EmpresasVisualizar"></class>
 			<class name="com.timp.test.MDR.Empresas.EmpresasDetalhes"></class>
 			<class name="com.timp.test.MDR.Empresas.EmpresasFiltros"></class>
+			
+		</classes>
+	
+	</test>
+	
+	<test name="- Filiais">
+
+		<classes>
 		
 		<!-- Filiais --> 
 		
@@ -38,15 +60,32 @@
 			<class name="com.timp.test.MDR.Filiais.FiliaisVisualizar"></class>
 			<class name="com.timp.test.MDR.Filiais.FiliaisDetalle"></class>
 			
+		</classes>
+	
+	</test>
+	
+	
+	<test name="Hierarquia De Cenarios De Correção">
+
+		<classes>
+			
 		<!-- Hierarquia De Cenarios De Correção -->
 		
-			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoCriar "></class>
-			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoEditar "></class>
+			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoCriar"></class>
+			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoEditar"></class>
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoVisualizar"></class>
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoDetalhes"></class>
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoFiltroAbansado"></class>
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoExcluirMasas"></class>
 		
+		</classes>
+	
+	</test>
+	
+	<test name="Límite de Competência">
+
+		<classes>
+	
 		<!-- Límite de Competência -->
 		
 			<class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar"></class>
@@ -56,7 +95,13 @@
 			<class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados"></class>
 			<class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltroID"></class>
 			<class name="com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir"></class>
-		
+		</classes>
+	
+	</test>
+	
+	<test name="Livros Fiscais > Livros Fiscais">
+
+		<classes>
 		<!-- Livros Fiscais > Livros Fiscais --> 		
 		
 			<class name="com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisCriar"></class>
@@ -65,23 +110,47 @@
 			<class name="com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluir"></class>
 			<class name="com.timp.test.MDR.LivrosFiscais.LivrosFiscais.LivrosFiscaisExcluirEmMassa"></class>
 	
+		</classes>
+	
+	</test>
+	
+	<test name="Livros Fiscais > Parametros Para Livro ICMS ST">
+
+		<classes>
+	
+	
 		<!-- Livros Fiscais > Parametros Para Livro ICMS ST --> 
 			
-			<class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrosParaLivroICMSSTCriar"></class>
-			<class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrosParaLivroICMSSTEditar"></class>
-			<class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrosParaLivroICMSSTDetalle"></class>
-			<class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrosParaLivroICMSSTVisualizar"></class>
-			<class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrosParaLivroICMSSTFiltrosAvan"></class>
-			<class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrosParaLivroICMSSTExcluir"></class>
-			<class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrosParaLivroICMSSTExcluirMasas"></class>
-			
+			<class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar"></class>
+			<class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTEditar"></class>
+			<class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle"></class>
+			<class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTVisualizar"></class>
+			<class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTFiltrosAvan"></class>
+			<class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluir"></class>
+			<class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluirMasas"></class>
+		
+		</classes>
+	
+	</test>
+	
+	<test name="Mapeamento De Relevancia Para Pis Cofins">
+
+		<classes>
+	
 		<!-- Mapeamento De Relevancia Para Pis Cofins --> 
 			
 			<class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsCriar"></class>
 			<class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsEditar"></class>
 			<class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsVisualizar"></class>
 			<class name="com.timp.test.MDR.MapeamentoDeRelevanciaParaPisCofins.MapeamentoDeRelevanciaParaPisCofinsExcluir"></class>
-			
+		
+		</classes>
+	
+	</test>
+	
+	<test name="Ocurrencia Fiscal > Tipos De Objetos De Ocorrencias Fiscais ">
+
+		<classes>
 		<!-- Ocurrencia Fiscal > Tipos De Objetos De Ocorrencias Fiscais --> 
 		
 			<class name="com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisCriar"></class>
@@ -90,7 +159,15 @@
 			<class name="com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisVisualizar"></class>
 			<class name="com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluir"></class>
 			<class name="com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa"></class>
+			
+			</classes>
+	
+	</test>
 
+	<test name="Parâmetros de Contabilização > Contas Default Para Extemporaneo ">
+
+		<classes>
+		
 		<!-- Parâmetros de Contabilização > Contas Default Para Extemporaneo -->
 		
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoCriar"></class>
@@ -101,14 +178,28 @@
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluir"></class>
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluirMassa"></class>
 		
+		</classes>
+	
+	</test>
+	
+	<test name="Parâmetros de Contabilização > Contas Default Por Tributo ">
+
+		<classes>
+		
 		<!-- Parâmetros de Contabilização > Contas Default Por Tributo -->
 		
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoCriar"></class>
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoEditar"></class>
-			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar"></class>
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoDetalhes"></class>
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar"></class>
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoExcluir"></class>
-			
+	 </classes>
+	
+	</test>
+	
+	<test name="Parâmetros de Contabilização > Mapemaneto Contábil">
+
+		<classes>
 			<!-- Parâmetros de Contabilização > Mapemaneto Contábil -->
 			
 			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriar"></class>
@@ -118,5 +209,5 @@
 			
 		</classes>
 
-	</test> <!-- PruebaTestNG -->
+	</test>
 </suite> <!-- Suite -->

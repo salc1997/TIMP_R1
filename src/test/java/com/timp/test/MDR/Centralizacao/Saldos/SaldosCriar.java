@@ -33,11 +33,10 @@ public class SaldosCriar extends TestBaseKenssy {
 
 
   
-	@Test(priority = 2)
+	@Test()
 	public void CriarSaldo() {
 		
 		loginTC.login();
-		
 		acessarMDRPO.acessarMDR();
 		
 		saldosCriarPO.CriarSaldo();

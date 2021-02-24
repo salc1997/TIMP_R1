@@ -33,7 +33,7 @@ public class S1250DetAquisiçãoCriar extends TestBaseCristhian{
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();

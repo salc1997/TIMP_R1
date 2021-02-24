@@ -33,7 +33,7 @@ public class MotivosCesBeneficiosExcluirMassa extends TestBaseFernando{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -41,11 +41,18 @@ public class MotivosCesBeneficiosExcluirMassa extends TestBaseFernando{
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = motivosCesBeneficiosExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		
 	}
 	
-	@Test(priority = 2)
-	public void excluirMassa() {
-		boolean sucesso = motivosCesBeneficiosExcluirMassaPO.exluirMassa();
-		assertTrue(sucesso, Eliminado);
+	@Test(dependsOnMethods = "criar")
+	public void Excluir() {
+		
+		
+		
+		boolean sucesso2 = motivosCesBeneficiosExcluirMassaPO.exluirMassa();
+		assertTrue(sucesso2, Eliminado);
 	}
+	
+	
 }

@@ -33,7 +33,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesFiltroId extends
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtroId() {
 		
 		loginTC.login();

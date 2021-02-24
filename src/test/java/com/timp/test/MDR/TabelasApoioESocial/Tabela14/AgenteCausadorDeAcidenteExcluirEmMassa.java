@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassaPO;
 
-public class AgenteCausadorDeAcidenteExcluirEmMassa extends TestBaseEliel{
- 
+public class AgenteCausadorDeAcidenteExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeAcidenteExcluirEmMassaPO agenteCausadorDeAcidenteExcluirEmMassaPO;
@@ -31,22 +31,20 @@ public class AgenteCausadorDeAcidenteExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = agenteCausadorDeAcidenteExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		boolean sucesso2 = agenteCausadorDeAcidenteExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}
-	
+
 }

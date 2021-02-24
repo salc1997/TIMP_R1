@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditarPO;
 
-public class NaturezaDasRubricasEditar extends TestBaseEliel{
- 
-	
+public class NaturezaDasRubricasEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaDasRubricasEditarPO naturezaDasRubricasEditarPO;
@@ -31,31 +30,28 @@ public class NaturezaDasRubricasEditar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
+
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
 
 		boolean sucesso = naturezaDasRubricasEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
 
 	}
-	
+
 }

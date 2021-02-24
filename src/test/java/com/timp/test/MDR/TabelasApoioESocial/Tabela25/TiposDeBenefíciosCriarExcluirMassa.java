@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeBenefíciosCriarExcluirMassa extends TestBaseFernando{
+public class TiposDeBenefíciosCriarExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeBenefíciosExcluirMassaPO tiposDeBenefíciosExcluirMassaPO;
@@ -31,8 +31,6 @@ public class TiposDeBenefíciosCriarExcluirMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 		loginTC.login();
@@ -40,14 +38,12 @@ public class TiposDeBenefíciosCriarExcluirMassa extends TestBaseFernando{
 		boolean sucesso = tiposDeBenefíciosExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
 
 		boolean sucesso2 = tiposDeBenefíciosExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
-	
 
 }

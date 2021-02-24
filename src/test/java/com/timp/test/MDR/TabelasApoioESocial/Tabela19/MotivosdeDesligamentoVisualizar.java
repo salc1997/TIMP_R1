@@ -36,11 +36,11 @@ public class MotivosdeDesligamentoVisualizar extends TestBaseKenssy {
 
 	@Test()
 	public void visualizarMotivosDesligamento() {
-		
+
 		loginTC.login();
 
 		accesarMDR.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = motivosDesligamentoVisualizarPO.visualizarMotivosDesligamento();
 
 		for (int i = 0; i < sucesso.size(); i++) {

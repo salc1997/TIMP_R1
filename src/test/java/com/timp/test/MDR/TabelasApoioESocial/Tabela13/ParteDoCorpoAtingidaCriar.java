@@ -38,14 +38,12 @@ public class ParteDoCorpoAtingidaCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = parteDoCorpoAtingidaCriarPO.criar();
 
 		assertTrue(sucesso, Criar);

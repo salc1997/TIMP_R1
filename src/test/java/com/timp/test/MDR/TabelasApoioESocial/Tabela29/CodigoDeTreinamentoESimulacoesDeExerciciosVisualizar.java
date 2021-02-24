@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO;
 
 public class CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO codigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO;
@@ -33,14 +33,11 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar extends TestBa
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-
 
 		ArrayList<Boolean> sucesso = codigoDeTreinamentoESimulacoesDeExerciciosVisualizarPO.visualizar();
 
@@ -50,6 +47,5 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar extends TestBa
 
 		}
 	}
-	
- 
+
 }

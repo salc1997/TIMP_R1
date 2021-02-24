@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir
 
 public class RegistroRVSExcluir extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroRVSExcluirPO registroRVSExcluirPO;
@@ -36,7 +35,7 @@ public class RegistroRVSExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroRVSExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

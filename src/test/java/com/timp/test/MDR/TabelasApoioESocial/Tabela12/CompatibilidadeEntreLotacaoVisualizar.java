@@ -42,7 +42,7 @@ public class CompatibilidadeEntreLotacaoVisualizar extends TestBaseSteven {
 	}
 
 	@Test()
-	public void visualizar() {		
+	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

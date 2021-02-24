@@ -16,34 +16,34 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NaturezaJuridicaCriar extends TestBaseSteven{
-  
+public class NaturezaJuridicaCriar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaJuridicaCriarPO naturezaJuridicaCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  naturezaJuridicaCriarPO = new NaturezaJuridicaCriarPO();
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		naturezaJuridicaCriarPO = new NaturezaJuridicaCriarPO();
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
 	@Test()
-	  public void criar() {
-		
+	public void criar() {
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
-		 boolean sucesso = naturezaJuridicaCriarPO.criar();
-		  assertTrue(sucesso, Criar);
 
-	  }
+		boolean sucesso = naturezaJuridicaCriarPO.criar();
+		assertTrue(sucesso, Criar);
+
+	}
 
 }

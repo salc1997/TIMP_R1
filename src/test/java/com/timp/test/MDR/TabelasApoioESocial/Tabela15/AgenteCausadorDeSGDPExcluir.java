@@ -19,7 +19,7 @@ public class AgenteCausadorDeSGDPExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeSGDPExcluirPO agenteCausadorDeSGDPExcluirPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -36,13 +36,12 @@ public class AgenteCausadorDeSGDPExcluir extends TestBaseCristhian {
 
 	@Test()
 	public void excluirr() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = agenteCausadorDeSGDPExcluirPO.excluir();
 		assertTrue(sucesso, Editar);
 
 	}
-
 
 }

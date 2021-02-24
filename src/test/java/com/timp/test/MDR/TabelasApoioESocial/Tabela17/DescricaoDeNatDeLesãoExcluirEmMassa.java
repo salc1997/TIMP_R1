@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassaPO;
 
-public class DescricaoDeNatDeLesãoExcluirEmMassa extends TestBaseEliel{
+public class DescricaoDeNatDeLesãoExcluirEmMassa extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -31,10 +31,9 @@ public class DescricaoDeNatDeLesãoExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -43,13 +42,13 @@ public class DescricaoDeNatDeLesãoExcluirEmMassa extends TestBaseEliel{
 		sleep(1000);
 
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
+
 		boolean sucesso2 = descricaoDeNatDeLesãoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

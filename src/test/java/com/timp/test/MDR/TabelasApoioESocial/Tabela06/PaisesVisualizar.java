@@ -13,10 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela06.PaisesVisualizarPO;
 
-public class PaisesVisualizar extends TestBaseEliel{
+public class PaisesVisualizar extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	PaisesVisualizarPO paisesVisualizarPO;
@@ -34,23 +32,21 @@ public class PaisesVisualizar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
+
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -61,5 +57,5 @@ public class PaisesVisualizar extends TestBaseEliel{
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-	}		
+	}
 }

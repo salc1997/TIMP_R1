@@ -36,24 +36,19 @@ public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
-	
 	@Test()
 	public void criar() {
 
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-	
+
 		boolean sucesso = tiposDeLogradouroExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
 
 		sleep(1000);
 
-
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 

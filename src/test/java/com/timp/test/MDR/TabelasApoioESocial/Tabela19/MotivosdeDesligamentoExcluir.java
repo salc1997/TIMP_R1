@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class MotivosdeDesligamentoExcluir extends TestBaseKenssy {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MotivosdeDesligamentoExcluirPO motivosDesligamentoExluirPO;
@@ -34,15 +34,14 @@ public class MotivosdeDesligamentoExcluir extends TestBaseKenssy {
 		driver.close();
 	}
 
-
 	@Test()
-	  public void excluirMotivosDesligamento() {
-		
+	public void excluirMotivosDesligamento() {
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = motivosDesligamentoExluirPO.excluirMotivosDesligamento();
 		assertTrue(sucesso, Eliminado);
-	  }
+	}
 }

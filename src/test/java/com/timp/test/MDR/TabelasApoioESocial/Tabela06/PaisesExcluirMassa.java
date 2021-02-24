@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class PaisesExcluirMassa extends TestBaseFernando{
+public class PaisesExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	PaisesExcluirMassaPO paisesExcluirMassaPO;
@@ -30,28 +30,24 @@ public class PaisesExcluirMassa extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
+
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-	*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() { acessarMDRPO.acessarMDR(); }
+	 */
 	@Test(priority = 0)
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = paisesExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(priority = 1)
 	public void excluirMassa() {
 		boolean sucesso = paisesExcluirMassaPO.exluirMassa();

@@ -30,14 +30,12 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosExcluir extends TestBaseC
 
 	@AfterClass
 	public void afterClass() {
-		 //driver.close();
+		// driver.close();
 	}
 
-
-	
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

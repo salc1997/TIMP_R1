@@ -41,17 +41,15 @@ public class FactoresDeRiscoExcluirMassa extends TestBaseCristhian {
 
 		boolean sucesso = factoresDeRiscoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		
+
 		boolean sucesso2 = factoresDeRiscoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
-
 
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = factoresDeRiscoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
 	}
-
 
 }

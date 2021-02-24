@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeBenefíciosExcluir extends TestBaseFernando{
+public class TiposDeBenefíciosExcluir extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeBenefíciosExcluirPO tiposDeBenefíciosExcluirPO;

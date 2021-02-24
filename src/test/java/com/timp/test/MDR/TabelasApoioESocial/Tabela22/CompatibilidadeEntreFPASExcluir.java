@@ -32,14 +32,13 @@ public class CompatibilidadeEntreFPASExcluir extends TestBaseKenssy {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluirCompatibilidadeEntreFPAS() {
-		
+
 		loginTC.login();
 
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = compatibilidadeEntreFPASExcluirPO.excluirCompatibilidadeEntreFPAS();
 		assertTrue(sucesso, Editar);
 	}

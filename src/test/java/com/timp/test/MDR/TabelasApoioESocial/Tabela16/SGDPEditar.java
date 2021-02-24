@@ -19,30 +19,28 @@ public class SGDPEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPEditarPO spdgEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	spdgEditarPO = new SGDPEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		spdgEditarPO = new SGDPEditarPO();
+	}
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  
-  @Test()
-  public void editar() {
-	  loginTC.login();
-	  acessarMDRPO.acessarMDR();
+	@Test()
+	public void editar() {
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
-	boolean sucesso = spdgEditarPO.editar();
+		boolean sucesso = spdgEditarPO.editar();
 
-	assertTrue(sucesso, Editar);
+		assertTrue(sucesso, Editar);
 
-  }
+	}
 }

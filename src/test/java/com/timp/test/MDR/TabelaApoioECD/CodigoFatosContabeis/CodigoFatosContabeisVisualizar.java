@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizarPO;
 
-public class CodigoFatosContabeisVisualizar extends TestBaseFernando{
+public class CodigoFatosContabeisVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CodigoFatosContabeisVisualizarPO codigoFatosContabeisVisualizarPO;
@@ -34,6 +34,7 @@ public class CodigoFatosContabeisVisualizar extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
+
 	@Test(priority = 3)
 	public void visualizar() {
 		loginTC.login();

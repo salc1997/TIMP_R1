@@ -13,9 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaVisualizarPO;
 
-public class ClassificacaoTributariaVisualizar extends TestBaseEliel{
+public class ClassificacaoTributariaVisualizar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificacaoTributariaVisualizarPO classificacaoTributariaVisualizarPO;
@@ -34,11 +33,9 @@ public class ClassificacaoTributariaVisualizar extends TestBaseEliel{
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -49,5 +46,5 @@ public class ClassificacaoTributariaVisualizar extends TestBaseEliel{
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-	}		
+	}
 }

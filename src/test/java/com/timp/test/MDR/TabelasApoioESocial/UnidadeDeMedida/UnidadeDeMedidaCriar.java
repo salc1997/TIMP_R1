@@ -16,30 +16,30 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class UnidadeDeMedidaCriar extends TestBaseSteven{
-  
+public class UnidadeDeMedidaCriar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaCriarPO unidadeDeMedidaCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  unidadeDeMedidaCriarPO = new UnidadeDeMedidaCriarPO();
-  }
 
-  	@AfterClass
-	public void afterClass() {
-  		driver.close();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		unidadeDeMedidaCriarPO = new UnidadeDeMedidaCriarPO();
 	}
 
-  	@Test()
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = unidadeDeMedidaCriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}

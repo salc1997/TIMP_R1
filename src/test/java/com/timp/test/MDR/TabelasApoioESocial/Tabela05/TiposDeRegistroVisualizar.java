@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroVisualizarPO;
 
-public class TiposDeRegistroVisualizar extends TestBaseEliel{
- 
+public class TiposDeRegistroVisualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeRegistroVisualizarPO tiposDeRegistroVisualizarPO;
@@ -32,23 +32,21 @@ public class TiposDeRegistroVisualizar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
+
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -59,6 +57,6 @@ public class TiposDeRegistroVisualizar extends TestBaseEliel{
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-	}		
-	
+	}
+
 }

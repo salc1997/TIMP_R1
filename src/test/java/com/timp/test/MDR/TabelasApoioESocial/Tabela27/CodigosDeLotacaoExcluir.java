@@ -20,7 +20,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class CodigosDeLotacaoExcluir extends TestBaseSteven {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosDeLotacaoExcluirPO codigosDeLotacaoExcluirPO;
@@ -39,15 +39,14 @@ public class CodigosDeLotacaoExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
-	  public void excluir() {
-		
+	public void excluir() {
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = codigosDeLotacaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-	  }
+	}
 }

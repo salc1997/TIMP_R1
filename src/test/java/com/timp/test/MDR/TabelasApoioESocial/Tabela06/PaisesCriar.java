@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela06.PaisesCriar
 
 public class PaisesCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	PaisesCriarPO paisesCriarPO;
@@ -31,27 +30,24 @@ public class PaisesCriar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
+
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
-		
+
 		boolean sucesso = paisesCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

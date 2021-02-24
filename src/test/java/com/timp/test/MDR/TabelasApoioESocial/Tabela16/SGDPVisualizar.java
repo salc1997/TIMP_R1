@@ -17,31 +17,29 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class SGDPVisualizar extends TestBaseCristhian {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPVisualizarPO spdgVisualizarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	driver = initialization();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	spdgVisualizarPO = new SGDPVisualizarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		spdgVisualizarPO = new SGDPVisualizarPO();
+	}
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void visualizar() {
-		
-		 loginTC.login();
-		  acessarMDRPO.acessarMDR();
 
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = spdgVisualizarPO.visualizar();
 

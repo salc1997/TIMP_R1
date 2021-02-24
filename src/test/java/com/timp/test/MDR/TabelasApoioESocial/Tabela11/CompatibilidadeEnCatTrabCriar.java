@@ -14,9 +14,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CompatibilidadeEnCatTrabCriar extends TestBaseCristhian{
+public class CompatibilidadeEnCatTrabCriar extends TestBaseCristhian {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEnCatTrabCriarPO compatibilidadeEnCatTrabCriarPO;
@@ -35,12 +34,11 @@ public class CompatibilidadeEnCatTrabCriar extends TestBaseCristhian{
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = compatibilidadeEnCatTrabCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 	}

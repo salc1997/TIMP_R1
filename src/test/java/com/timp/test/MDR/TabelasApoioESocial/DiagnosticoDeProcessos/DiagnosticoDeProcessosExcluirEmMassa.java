@@ -10,32 +10,31 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassaPO;
- 
+
 public class DiagnosticoDeProcessosExcluirEmMassa extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DiagnosticoDeProcessosExcluirEmMassaPO diagnosticoDeProcessosExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		diagnosticoDeProcessosExcluirEmMassaPO = new DiagnosticoDeProcessosExcluirEmMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-	  
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 
- 
+	}
+
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -45,8 +44,6 @@ public class DiagnosticoDeProcessosExcluirEmMassa extends TestBaseEliel {
 		boolean sucesso2 = diagnosticoDeProcessosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
-
 	}
-  
-	
+
 }

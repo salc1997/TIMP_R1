@@ -13,25 +13,25 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian{
- 
+public class AgenteCausadorDeSGDPCriar extends TestBaseCristhian {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeSGDPCriarPO agenteCausadorDeSGDPCriarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		agenteCausadorDeSGDPCriarPO = new AgenteCausadorDeSGDPCriarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void criar() {

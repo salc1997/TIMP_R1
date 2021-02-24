@@ -172,13 +172,13 @@ public class CorreçãodeNFVisualizarPO extends TestBaseMassiel  {
 		sleep(3000);
 		waitExpectXpath("//span[contains(@class,\"setting\")]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(2000);
 
 
 		executarE.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(2000);
 
 		String valor1 = docNum1.getText();
 		System.out.println("Número de Documento Dato 1: "+ valor1);
@@ -200,22 +200,20 @@ public class CorreçãodeNFVisualizarPO extends TestBaseMassiel  {
 		sleep(3000);
 		waitExpectElement(flecha);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(2000);
 		
 		acessarBREPO.acessarBRE();
 		
 		regraN2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		sleep(3000);
+		sleep(2000);
 		
 		String idR = "";
 		pesquisar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		sleep(3000);
+		sleep(2000);
 
 		
 		if (tq1 == true) {
@@ -250,10 +248,7 @@ public class CorreçãodeNFVisualizarPO extends TestBaseMassiel  {
 		Editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
-		sleep(3000);
-		sleep(3000);
-		sleep(3000);
+		sleep(2000);
 		
 		regra.click();
 		sleep(3000);
@@ -263,13 +258,9 @@ public class CorreçãodeNFVisualizarPO extends TestBaseMassiel  {
 		mas.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
-		sleep(3000);
-		sleep(3000);
-		sleep(3000);
-		sleep(3000);
+		sleep(2000);		
 		
-		
+		attributoNotToBeEmptyElement(cstPIS, "value");
 		String cstPISBR = cstPIS.getAttribute("value");
 		String bcPISBR = bcPIS.getAttribute("value");
 		String alquotaPISBR = alquotaPIS.getAttribute("value");

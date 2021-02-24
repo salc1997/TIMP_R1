@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
 =======
 <<<<<<< HEAD
@@ -19,7 +20,11 @@
 =======
       <class name="com.timp.test.CALENDAR.MultiplosUsuariosCalendar">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.BSC.CorreçãodeNFVisualizar">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -48,7 +53,12 @@
 =======
 =======
           <include name="excluirEmMassa"/>
+=======
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Kenssy
 =======
           <include name="Calendar"/>
@@ -63,7 +73,10 @@
 =======
           <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,6 +147,9 @@
 =======
       </class> <!-- com.timp.test.CALENDAR.MultiplosUsuariosCalendar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

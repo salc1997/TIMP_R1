@@ -34,7 +34,7 @@ public class RegistroDeExportaçaoVisualizar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 

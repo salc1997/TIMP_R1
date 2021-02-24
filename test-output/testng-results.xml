@@ -41,6 +41,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite started-at="2021-02-23T00:49:52Z" name="Default suite" finished-at="2021-02-23T00:54:30Z" duration-ms="277302">
 =======
   <suite started-at="2021-02-22T20:02:12Z" name="Default suite" finished-at="2021-02-22T20:06:11Z" duration-ms="238651">
@@ -77,8 +78,12 @@
 =======
   <suite started-at="2021-02-23T04:11:14Z" name="Default suite" finished-at="2021-02-23T04:13:52Z" duration-ms="158440">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-02-23T05:03:49Z" name="Default suite" finished-at="2021-02-23T05:04:49Z" duration-ms="59993">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -136,9 +141,15 @@
       <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:11:14Z" name="beforeClass" finished-at="2021-02-23T04:12:04Z" duration-ms="49937" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2021-02-23T05:03:49Z" name="Default test" finished-at="2021-02-23T05:04:49Z" duration-ms="59993">
+      <class name="com.timp.test.CALENDAR.MultiplosUsuariosCalendar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:03:49Z" name="beforeClass" finished-at="2021-02-23T05:04:00Z" duration-ms="11507" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,6 +189,9 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:12:04Z" name="login" finished-at="2021-02-23T04:12:18Z" duration-ms="13998" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:00Z" name="login" finished-at="2021-02-23T05:04:07Z" duration-ms="6575" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -188,6 +202,7 @@
 =======
 <<<<<<< HEAD
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:00:55Z" name="acessarBRE" finished-at="2021-02-19T20:01:13Z" duration-ms="18379" status="PASS">
 =======
 <<<<<<< HEAD
@@ -217,8 +232,12 @@
 =======
         <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:12:18Z" name="acessarTDK" finished-at="2021-02-23T04:13:20Z" duration-ms="62118" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="acessarCalendar()[pri:1, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:07Z" name="acessarCalendar" finished-at="2021-02-23T05:04:31Z" duration-ms="23654" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- BPMAEntrar -->
 <<<<<<< HEAD
@@ -233,8 +252,13 @@
 =======
 <<<<<<< HEAD
         <test-method signature="criar()[pri:2, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:35:00Z" name="criar" finished-at="2021-02-22T23:36:06Z" duration-ms="65659" status="FAIL">
+=======
+        </test-method> <!-- acessarCalendar -->
+        <test-method signature="Calendar()[pri:2, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:31Z" name="Calendar" finished-at="2021-02-23T05:04:49Z" duration-ms="18227" status="FAIL">
+>>>>>>> refs/remotes/origin/Yessy
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
+<<<<<<< HEAD
               <![CDATA[element not interactable
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -242,8 +266,18 @@ System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10',
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56390}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 2bb92f9e4ab271830d85e6a1c0be4fe9]]>
+=======
+              <![CDATA[element not interactable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: eb52a761284287e6567782779f347351]]>
+>>>>>>> refs/remotes/origin/Yessy
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -251,6 +285,15 @@ System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10',
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56390}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 2bb92f9e4ab271830d85e6a1c0be4fe9
+=======
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: eb52a761284287e6567782779f347351
+>>>>>>> refs/remotes/origin/Yessy
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -263,15 +306,15 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-at com.sap.timp.pageObjectModel.Calendar.TarefasMultiplasEstagiosPO.criarProceso(TarefasMultiplasEstagiosPO.java:173)
-at com.timp.test.CALENDAR.TarefasMultiplasEstagios.criar(TarefasMultiplasEstagios.java:53)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.Calendar.MultiplosUsuariosCalendarPO.Calendario(MultiplosUsuariosCalendarPO.java:71)
+at com.timp.test.CALENDAR.MultiplosUsuariosCalendar.Calendar(MultiplosUsuariosCalendar.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -324,6 +367,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -379,9 +423,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- excluirEmMassa -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:13:52Z" name="afterClass" finished-at="2021-02-23T04:13:52Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        </test-method> <!-- Calendar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:49Z" name="afterClass" finished-at="2021-02-23T05:04:49Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.TarefasMultiplasEstagios -->
@@ -416,6 +465,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.CALENDAR.MultiplosUsuariosCalendar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

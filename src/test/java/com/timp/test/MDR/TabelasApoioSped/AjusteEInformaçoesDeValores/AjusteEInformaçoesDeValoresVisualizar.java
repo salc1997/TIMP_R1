@@ -35,8 +35,6 @@ public class AjusteEInformaçoesDeValoresVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Visualizar() {
 		

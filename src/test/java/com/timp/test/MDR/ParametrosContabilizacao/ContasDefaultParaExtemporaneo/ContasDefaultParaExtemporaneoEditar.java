@@ -29,7 +29,7 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 

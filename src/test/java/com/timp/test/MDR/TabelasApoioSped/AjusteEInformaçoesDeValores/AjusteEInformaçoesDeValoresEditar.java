@@ -31,7 +31,7 @@ public class AjusteEInformaçoesDeValoresEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 

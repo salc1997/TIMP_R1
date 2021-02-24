@@ -1,6 +1,5 @@
 package com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -35,27 +34,23 @@ public class RelacionamentoEntreQuadrosFiltroID extends TestBaseSteven {
 		driver.close();
 	}
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 
 	@Test()
 	public void filtro() {
 
-		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
-		
+
 		boolean sucesso = relacionamentoEntreQuadrosFiltroIdPO.filtro();
 
 		assertTrue(sucesso, Filtros);

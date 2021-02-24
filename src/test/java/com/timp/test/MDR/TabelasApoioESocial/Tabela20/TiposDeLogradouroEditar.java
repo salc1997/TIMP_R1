@@ -31,14 +31,12 @@ public class TiposDeLogradouroEditar extends TestBaseSteven {
   }
 
 
-<<<<<<< HEAD
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-=======
->>>>>>> refs/remotes/origin/master
   @Test()
   public void editar() {
 	  loginTC.login();

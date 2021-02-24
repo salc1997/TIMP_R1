@@ -46,8 +46,5 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa extends TestBas
 		boolean sucesso2 = tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/master
 }

@@ -34,10 +34,9 @@ public class TiposDeLogradouroCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-<<<<<<< HEAD
-=======
+
 	@Test()
->>>>>>> refs/remotes/origin/master
+
 	  public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

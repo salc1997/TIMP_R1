@@ -36,16 +36,6 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven {
   public void afterClass() {
 	  driver.close();
   }
-<<<<<<< HEAD
-=======
-  
-  @Test()
-  public void visualizar() {	  
-		loginTC.login();
-		accesarMDR.acessarMDR();
->>>>>>> refs/remotes/origin/master
-
-
 
 
 	@Test()

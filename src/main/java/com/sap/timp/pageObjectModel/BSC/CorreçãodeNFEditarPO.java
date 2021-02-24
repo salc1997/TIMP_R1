@@ -150,9 +150,11 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(8000);
-		sleep(8000);
-
+		sleep(2000);
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(1000);
+		
 		executar2.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -169,7 +171,7 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		enviar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(2000);
 
 
 
@@ -179,8 +181,9 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		nao.click();
 		sleep(3000);
 		waitExpectElement(flecha);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		acessarBSC.acessarBSC();
 
@@ -196,7 +199,7 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(2000);
 
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 
@@ -221,28 +224,19 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		sleep(1000);
 		editar1.click();
 		sleep(3000);
-//		sleep(8000);
-//		sleep(8000);
-//		sleep(8000);
-//		sleep(8000);
-//		sleep(8000);
-//		sleep(8000);
-//		sleep(8000);
 
 		String enviar = "11";
 
 		sleep(1000);
-
+		
+		attributoNotToBeEmptyElement(datoEditar, "value");
+		sleep(2000);
 		datoEditar.clear();
 
 		sleep(1000);
 		datoEditar.sendKeys(enviar);
 		sleep(1000);
-		sleep(1000);
-		sleep(1000);
-
-
-
+		
 		String textocSTPIS1 = cSTPIS1.getAttribute("value");
 		String textocSTPIS2 = cSTPIS2.getAttribute("value");
 		String textobCPIS1 = bCPIS1.getAttribute("value");
@@ -266,11 +260,9 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		System.out.println("Valor PIS 1: " + textovalorPIS2);
 
 		aceitar.click();
-		sleep(5000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(12000);
-//		sleep(8000);
-		sleep(8000);
+		sleep(2000);
 
 		driver.navigate().refresh();
 		sleep(3000);
@@ -280,13 +272,13 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		notaFiscal.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(2000);
 
 
 		pendente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(2000);
 
 
 		siguiente.click();
@@ -306,7 +298,7 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(2000);
 		
 		attributoNotToBeEmptyElement(cSTPIS1, "value");
 		String textocSTPIS1V = cSTPIS1.getAttribute("value");
@@ -338,12 +330,6 @@ public class CorreçãodeNFEditarPO extends TestBaseMassiel{
 		sucesso4.add(textoalíquotaPIS2V .equals(textoalíquotaPIS2));
 		sucesso4.add(textovalorPIS1V .equals(textovalorPIS1));
 		sucesso4.add(textovalorPIS2V .equals(textovalorPIS2));
-
-
-
-
-
-
 
 		return sucesso4;
 	}

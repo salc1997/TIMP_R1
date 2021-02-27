@@ -36,7 +36,7 @@ public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Visualizar() {
 
 		loginTC.login();

@@ -35,7 +35,7 @@ public class ParametrosParaCategoriaDeIRFDetalhes extends TestBaseSteven {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

@@ -37,7 +37,7 @@ public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseEliel {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Detalhes() {
 
 		loginTC.login();

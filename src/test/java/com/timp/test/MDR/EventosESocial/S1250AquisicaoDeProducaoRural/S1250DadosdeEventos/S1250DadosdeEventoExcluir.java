@@ -35,7 +35,7 @@ public class S1250DadosdeEventoExcluir extends TestBaseCristhian{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		
 		loginTC.login();

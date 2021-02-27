@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
@@ -229,3 +230,118 @@
     </classes>
   </test> <!-- Prueba1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Tabelas de Apoio do Sped &gt; Classificação De Contribuentes Do IPI(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="filtros"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa">
+        <methods>
+          <include name="excluirMassa"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes -->
+    </classes>
+  </test> <!-- Tabelas de Apoio do Sped > Classificação De Contribuentes Do IPI(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio do Sped &gt; CodigoAjustesContribuiçoesCreditos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa -->
+    </classes>
+  </test> <!-- Tabelas de Apoio do Sped > CodigoAjustesContribuiçoesCreditos(failed) -->
+  <test thread-count="5" name="4.3.6 Tabelas de Apoio do Sped &gt; Código Tipo Crédito(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoVisualizar -->
+    </classes>
+  </test> <!-- 4.3.6 Tabelas de Apoio do Sped > Código Tipo Crédito(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio do Sped &gt; De Para Livro Apuração X Sped Fiscal (DE X Para)(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalEditar -->
+    </classes>
+  </test> <!-- Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)(failed) -->
+  <test thread-count="5" name="4.1.1 Tabelas de Apoio do Sped &gt; Documentos Fiscais ICMS(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.DocumentosFiscaisICMS.DocumentosFiscaisICMSEditar -->
+    </classes>
+  </test> <!-- 4.1.1 Tabelas de Apoio do Sped > Documentos Fiscais ICMS(failed) -->
+  <test thread-count="5" name="Tabelas Complementares para Obrigações Acessórias &gt; Tabela de Código e Classe para Quadro(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroExcluir -->
+    </classes>
+  </test> <!-- Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git

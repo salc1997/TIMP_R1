@@ -35,7 +35,7 @@ public class CadastroContaisContabeisFiltroID extends TestBaseMassiel{
   
 
 
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
 		
 		loginTC.login();

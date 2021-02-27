@@ -37,7 +37,7 @@ public class DeterminacionRelevanciaPorMotivoVisualizar extends TestBaseCristhia
   
 
 
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

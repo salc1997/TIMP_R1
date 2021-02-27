@@ -38,7 +38,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar extends T
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

@@ -33,7 +33,7 @@ public class SequenciaEditar extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Editar() {
 		
 		loginTC.login();

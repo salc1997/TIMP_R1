@@ -3,8 +3,13 @@
 <suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="4" parallel="tests" name="Prueba1(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa">
+=======
+      <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
           <include name="excluirEmMassa"/>
           <include name="criar"/>
@@ -57,8 +62,13 @@
         <methods>
           <include name="afterClass"/>
           <include name="excluirMassa"/>
+=======
+          <include name="criar"/>
+          <include name="afterClass"/>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa -->
       <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluir">
         <methods>
@@ -226,6 +236,9 @@
           <include name="excluir"/>
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir -->
+=======
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Prueba1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

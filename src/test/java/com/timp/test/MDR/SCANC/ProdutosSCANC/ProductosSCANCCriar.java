@@ -37,7 +37,7 @@ public class ProductosSCANCCriar extends TestBaseKathy {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();

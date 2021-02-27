@@ -33,8 +33,8 @@ public class CadastroDeObrasExcluirEmMassa extends TestBaseKenssy {
   
 
   
-  @Test(priority = 1)
-  public void excluirEmMassa() {
+  @Test()
+  public void criar() {
 	  
 	  loginTC.login();
 	  accesarMDR.acessarMDR();
@@ -42,6 +42,14 @@ public class CadastroDeObrasExcluirEmMassa extends TestBaseKenssy {
 	boolean sucesso = cadastroDeObrasExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 	sleep(1000);
+	
+
+  }
+  
+  @Test(dependsOnMethods = "criar")
+  public void excluirEmMassa() {
+	  
+	
 	
 	boolean sucesso2 = cadastroDeObrasExcluirEmMassaPO.cadastroDeObrasExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);

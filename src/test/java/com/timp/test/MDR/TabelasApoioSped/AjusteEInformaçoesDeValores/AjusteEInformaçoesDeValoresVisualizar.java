@@ -37,7 +37,7 @@ public class AjusteEInformaçoesDeValoresVisualizar extends TestBaseEliel {
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void Visualizar() {
 		
 		loginTC.login();

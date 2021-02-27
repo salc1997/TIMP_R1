@@ -33,7 +33,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassa extends TestBaseEliel{
 
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -44,6 +44,14 @@ public class AjusteEInformacoesDeValoresExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso, Criar);
 		
 		sleep(1000);
+	
+
+	}
+	
+	@Test(dependsOnMethods = "criar" )
+	public void excluir() {
+		
+	
 		boolean sucesso2 = ajusteEInformacoesDeValoresExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

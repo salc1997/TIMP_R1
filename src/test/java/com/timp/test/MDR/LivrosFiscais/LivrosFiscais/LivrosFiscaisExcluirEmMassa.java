@@ -32,8 +32,8 @@ public class LivrosFiscaisExcluirEmMassa extends TestBaseKenssy {
 	  }
 
 	  
-	  @Test(priority = 1)
-	  public void excluirEmMassa() {
+	  @Test()
+	  public void Criar() {
 		  
 		  loginTC.login();
 		  accesarMDR.acessarMDR();
@@ -42,6 +42,11 @@ public class LivrosFiscaisExcluirEmMassa extends TestBaseKenssy {
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 		
+	  }
+	  
+	  @Test(dependsOnMethods = "Criar")
+	  public void excluir() {
+		  
 		boolean sucesso2 = livrosFiscaisExcluirEmMassaPO.livrosFiscaisExcluirEmMassa();
 		assertTrue(sucesso2, Eliminado);
 	  }

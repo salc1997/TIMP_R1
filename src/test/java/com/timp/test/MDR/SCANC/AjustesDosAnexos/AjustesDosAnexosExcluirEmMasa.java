@@ -40,8 +40,8 @@ public class AjustesDosAnexosExcluirEmMasa extends TestBaseSteven {
 	
 
 	
-	@Test(priority = 2)
-	public void excluir() {
+	@Test()
+	public void Criar() {
 		
 		loginTC.login();
 		
@@ -50,9 +50,18 @@ public class AjustesDosAnexosExcluirEmMasa extends TestBaseSteven {
 		boolean sucesso = ajustesDosAnexosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
-		boolean sucesso2 = ajustesDosAnexosExcluirEmMassaPO.excluirMassa();
-		assertTrue(sucesso2, Eliminado);
+	
+		
 		
 	}
 
+	@Test(dependsOnMethods = "Criar")
+	public void excluir() {
+		
+		
+		boolean sucesso2 = ajustesDosAnexosExcluirEmMassaPO.excluirMassa();
+		assertTrue(sucesso2, Eliminado);
+		
+		
+	}
 }

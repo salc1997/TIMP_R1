@@ -32,7 +32,7 @@ public class DetalheExcluirMassa extends TestBaseFernando{
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();
@@ -43,7 +43,7 @@ public class DetalheExcluirMassa extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 2)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = detalheExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);

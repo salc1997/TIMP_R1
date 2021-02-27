@@ -36,7 +36,7 @@ public class ParametrosParaCategoriaDeIRFCriar extends TestBaseMassiel {
 	}
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		
 		loginTC.login();

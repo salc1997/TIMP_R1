@@ -32,13 +32,23 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa e
 	}
 
 	@Test()
-	public void criar() {
+	public void Criar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(1000);
+
+
+	}
+	
+	
+	@Test(dependsOnMethods = "Criar")
+	public void Excluir() {
+
+		
 		sleep(1000);
 		boolean sucesso2 = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

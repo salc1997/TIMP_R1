@@ -34,8 +34,8 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa extends TestBaseCris
   }
 
 
-	@Test(priority = 1)
-	public void criar() {
+	@Test()
+	public void Criar() {
 
 		loginTC.login();
 		
@@ -44,6 +44,13 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa extends TestBaseCris
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	
+	}
+	
+	@Test(dependsOnMethods = "Criar")
+	public void Excluir() {
+
+		
 		boolean sucesso2 = tiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

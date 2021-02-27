@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="60" passed="29" failed="31" skipped="0">
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-02-24T14:03:22Z" name="Suite" finished-at="2021-02-24T15:36:35Z" duration-ms="5592942">
+=======
+  <suite started-at="2021-02-27T23:14:40Z" name="Default suite" finished-at="2021-02-27T23:19:54Z" duration-ms="313743">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-02-24T14:03:22Z" name="Prueba1" finished-at="2021-02-24T15:36:35Z" duration-ms="5592942">
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa@45a37759]" started-at="2021-02-24T14:03:22Z" name="beforeClass" finished-at="2021-02-24T14:03:39Z" duration-ms="16769" status="PASS">
+=======
+    <test started-at="2021-02-27T23:14:40Z" name="Default test" finished-at="2021-02-27T23:19:54Z" duration-ms="313743">
+      <class name="com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas@3c947bc5]" started-at="2021-02-27T23:14:40Z" name="beforeClass" finished-at="2021-02-27T23:14:54Z" duration-ms="14286" status="PASS">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa@45a37759]" started-at="2021-02-24T14:03:39Z" name="criar" finished-at="2021-02-24T14:05:29Z" duration-ms="110304" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas@3c947bc5]" started-at="2021-02-27T23:14:54Z" name="login" finished-at="2021-02-27T23:15:02Z" duration-ms="7473" status="PASS">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa@45a37759]" started-at="2021-02-24T15:36:22Z" name="excluir" finished-at="2021-02-24T15:36:22Z" depends-on-methods="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa.criar" duration-ms="70" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
@@ -130,9 +149,22 @@ at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+=======
+        </test-method> <!-- login -->
+        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas@3c947bc5]" started-at="2021-02-27T23:15:02Z" name="acessarBRE" finished-at="2021-02-27T23:15:31Z" duration-ms="28714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acessarBRE -->
+        <test-method signature="editar()[pri:2, instance:com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas@3c947bc5]" started-at="2021-02-27T23:15:31Z" name="editar" finished-at="2021-02-27T23:19:53Z" duration-ms="262390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas@3c947bc5]" started-at="2021-02-27T23:19:53Z" name="afterClass" finished-at="2021-02-27T23:19:54Z" duration-ms="835" status="PASS">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa -->
       <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosEditar@36b4091c]" started-at="2021-02-24T15:32:40Z" name="beforeClass" finished-at="2021-02-24T15:32:52Z" duration-ms="12173" status="PASS">
@@ -3035,4 +3067,9 @@ at java.base/java.lang.Thread.run(Thread.java:834)
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa -->
     </test> <!-- Prueba1 -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

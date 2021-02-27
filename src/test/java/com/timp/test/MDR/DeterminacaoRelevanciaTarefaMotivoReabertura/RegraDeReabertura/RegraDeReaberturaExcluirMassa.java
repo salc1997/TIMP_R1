@@ -34,7 +34,7 @@ public class RegraDeReaberturaExcluirMassa extends TestBaseMassiel{
   
 
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 		 loginTC.login();
 		 acessarMDRPO.acessarMDR();
@@ -42,6 +42,13 @@ public class RegraDeReaberturaExcluirMassa extends TestBaseMassiel{
 		
 		boolean sucesso = regraDeReaberturaExcluirMassaPO.Criar();
 		assertTrue(sucesso, Criar);
+		
+	
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void Excluir() {
+		
 		
 		boolean sucesso2 = regraDeReaberturaExcluirMassaPO.ExcluirMasas();
 		assertTrue(sucesso2, Eliminado);

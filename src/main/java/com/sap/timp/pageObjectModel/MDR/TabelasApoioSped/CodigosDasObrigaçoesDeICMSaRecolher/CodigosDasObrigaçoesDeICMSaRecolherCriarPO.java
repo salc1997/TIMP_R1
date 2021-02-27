@@ -83,11 +83,11 @@ public class CodigosDasObrigaçoesDeICMSaRecolherCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigodeobrigaçoesdeicms.sendKeys("1170931");
+		codigodeobrigaçoesdeicms.sendKeys("5570931");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de ICMS0 13");
+		descricao.sendKeys("Teste de ICMS0 55");
 		
 		sleep(2000);
 		

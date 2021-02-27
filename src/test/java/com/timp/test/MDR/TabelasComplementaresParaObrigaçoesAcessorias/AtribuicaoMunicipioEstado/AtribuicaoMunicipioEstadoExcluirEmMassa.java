@@ -35,7 +35,8 @@ public class AtribuicaoMunicipioEstadoExcluirEmMassa extends TestBaseEliel{
 
 	@Test()
 	public void criar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = atribuicaoMunicipioEstadoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);

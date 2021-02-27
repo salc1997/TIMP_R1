@@ -3,88 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.OutputAutomático">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar">
-        <methods>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
-=======
->>>>>>> refs/heads/Cristhian
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
-<<<<<<< HEAD
-=======
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes">
         <methods>
           <include name="beforeClass"/>
-          <include name="editar"/>
           <include name="afterClass"/>
+          <include name="detalhes"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.OutputAutomático -->
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
-=======
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-          <include name="editar"/>
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-          <include name="beforeClass"/>
->>>>>>> refs/heads/Fernando
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-          <include name="excluirMassa"/>
-          <include name="criar"/>
->>>>>>> refs/remotes/origin/Kenssy
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-          <include name="criar"/>
->>>>>>> refs/heads/Fernando
-=======
-          <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Kenssy
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
-<<<<<<< HEAD
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

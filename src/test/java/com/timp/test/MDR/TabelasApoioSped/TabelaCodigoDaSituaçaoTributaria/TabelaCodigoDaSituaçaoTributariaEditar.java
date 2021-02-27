@@ -30,13 +30,14 @@ public class TabelaCodigoDaSituaçaoTributariaEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
 	@Test()
 	public void editar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = tabelaCodigoDaSituaçaoTributariaEditarPO.editar();
 
 		assertTrue(sucesso, Editar);

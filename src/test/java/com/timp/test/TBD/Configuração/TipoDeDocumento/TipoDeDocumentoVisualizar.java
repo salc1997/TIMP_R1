@@ -16,46 +16,43 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class TipoDeDocumentoVisualizar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	TipoDeDocumentoVisualizarPO tipoDeDocumentoVisualizarPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  tipoDeDocumentoVisualizarPO = new  TipoDeDocumentoVisualizarPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		tipoDeDocumentoVisualizarPO = new TipoDeDocumentoVisualizarPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void visualizar() {
-	 		
-	 		ArrayList<Boolean> sucesso = tipoDeDocumentoVisualizarPO.visualizar();
-			for (int i = 0; i < sucesso.size(); i++) {
-				assertTrue(sucesso.get(i), visualizaçar);
-			}
-	 		
-		
-	 		
-	 	}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void TBDEntrar() {
+		acessarTBDPO.acessarTBD();
+
+	}
+
+	@Test(priority = 1)
+	public void visualizar() {
+
+		ArrayList<Boolean> sucesso = tipoDeDocumentoVisualizarPO.visualizar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+
+	}
 }

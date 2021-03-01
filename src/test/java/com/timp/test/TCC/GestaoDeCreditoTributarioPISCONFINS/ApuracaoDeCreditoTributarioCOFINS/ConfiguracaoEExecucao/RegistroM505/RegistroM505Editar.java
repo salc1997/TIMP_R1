@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505EditarPO;
 
 public class RegistroM505Editar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM505EditarPO registroM505EditarPO;
@@ -29,7 +28,7 @@ public class RegistroM505Editar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -51,7 +50,6 @@ public class RegistroM505Editar extends TestBaseEliel {
 		boolean sucesso = registroM505EditarPO.editar();
 
 		assertTrue(sucesso, Editar);
-	}	
-	
-	
+	}
+
 }

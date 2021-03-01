@@ -13,24 +13,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class PainelCreditoICMSEditar extends TestBaseMassiel{
+public class PainelCreditoICMSEditar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	 PainelCreditoICMSEditarPO  painelCreditoICMSEditarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	PainelCreditoICMSEditarPO painelCreditoICMSEditarPO;
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		painelCreditoICMSEditarPO = new  PainelCreditoICMSEditarPO();
-  }
+		painelCreditoICMSEditarPO = new PainelCreditoICMSEditarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -40,12 +40,11 @@ public class PainelCreditoICMSEditar extends TestBaseMassiel{
 	public void acessarTCC() {
 		acessarTCCPO.acessarTCC();
 	}
-	
+
 	@Test(priority = 2)
 	public void Editar() {
-	
-		
-		boolean sucesso = 	painelCreditoICMSEditarPO.editar();
+
+		boolean sucesso = painelCreditoICMSEditarPO.editar();
 		assertTrue(sucesso, Criar);
 	}
 }

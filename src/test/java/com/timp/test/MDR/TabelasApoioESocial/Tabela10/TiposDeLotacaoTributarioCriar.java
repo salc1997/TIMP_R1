@@ -29,7 +29,6 @@ public class TiposDeLotacaoTributarioCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 

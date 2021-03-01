@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRFConfiguracaoDeAjusteFiltrosAvancadosPO;
 
-public class RRFConfiguracaoDeAjusteFiltrosAvancados extends TestBaseFernando{
+public class RRFConfiguracaoDeAjusteFiltrosAvancados extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRFConfiguracaoDeAjusteFiltrosAvancadosPO rRFConfiguracaoDeAjusteFiltrosAvancadosPO;
@@ -42,7 +42,7 @@ public class RRFConfiguracaoDeAjusteFiltrosAvancados extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancados() {				
+	public void filtrosAvancados() {
 		ArrayList<Boolean> sucesso = rRFConfiguracaoDeAjusteFiltrosAvancadosPO.filtrosAvancados();
 
 		for (int i = 0; i < sucesso.size(); i++) {

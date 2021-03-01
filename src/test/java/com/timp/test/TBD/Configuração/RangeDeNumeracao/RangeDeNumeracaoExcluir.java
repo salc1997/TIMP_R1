@@ -16,40 +16,38 @@ public class RangeDeNumeracaoExcluir extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	RangeDeNumeracaoExcluirPO rangeDeNumeracaoExcluirPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  rangeDeNumeracaoExcluirPO = new  RangeDeNumeracaoExcluirPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		rangeDeNumeracaoExcluirPO = new RangeDeNumeracaoExcluirPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void excluir() {
-	 		
-	 		boolean sucesso = rangeDeNumeracaoExcluirPO.excluir();
-			assertTrue(sucesso, Eliminado);
-		
-	 		
-	 	}
-	
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void TBDEntrar() {
+		acessarTBDPO.acessarTBD();
+
+	}
+
+	@Test(priority = 1)
+	public void excluir() {
+
+		boolean sucesso = rangeDeNumeracaoExcluirPO.excluir();
+		assertTrue(sucesso, Eliminado);
+
+	}
+
 }

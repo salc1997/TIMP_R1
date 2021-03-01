@@ -38,7 +38,6 @@ public class CodigosDeLotacaoVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
 

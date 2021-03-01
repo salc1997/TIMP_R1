@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class Registro1100Visualizar extends TestBaseMassiel{
+public class Registro1100Visualizar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1100VisualizarPO registro1100VisualizarPO;
@@ -44,11 +44,10 @@ public class Registro1100Visualizar extends TestBaseMassiel{
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = registro1100VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

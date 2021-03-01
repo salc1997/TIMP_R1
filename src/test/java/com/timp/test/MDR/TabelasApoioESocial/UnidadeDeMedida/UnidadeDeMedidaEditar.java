@@ -17,31 +17,31 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class UnidadeDeMedidaEditar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaEditarPO unidadeDeMedidaEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  unidadeDeMedidaEditarPO = new UnidadeDeMedidaEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test()
-  public void editar() {
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		unidadeDeMedidaEditarPO = new UnidadeDeMedidaEditarPO();
+	}
 
-	  loginTC.login();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void editar() {
+
+		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
-	  boolean sucesso = unidadeDeMedidaEditarPO.editar();
-	  assertTrue(sucesso, Editar);
-  }
+
+		boolean sucesso = unidadeDeMedidaEditarPO.editar();
+		assertTrue(sucesso, Editar);
+	}
 }

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaServicosVisualizar extends TestBaseMassiel{
+public class TabelaServicosVisualizar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaServicosVisualizarPO tabelaServicosVisualizarPO;

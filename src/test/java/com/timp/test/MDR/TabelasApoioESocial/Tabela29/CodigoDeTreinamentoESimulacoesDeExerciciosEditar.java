@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO;
 
-public class CodigoDeTreinamentoESimulacoesDeExerciciosEditar extends TestBaseEliel{
-	
+public class CodigoDeTreinamentoESimulacoesDeExerciciosEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO codigoDeTreinamentoESimulacoesDeExerciciosEditarPO;
@@ -31,18 +31,16 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosEditar extends TestBaseEl
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-
 
 		boolean sucesso = codigoDeTreinamentoESimulacoesDeExerciciosEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
 
 	}
- 
+
 }

@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluirEmMassaPO;
 
-public class AgrupadorDeCFOPExcluirEmMassa extends TestBaseEliel{
- 
+public class AgrupadorDeCFOPExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPExcluirEmMassaPO agrupadorDeCFOPExcluirEmMassaPO;

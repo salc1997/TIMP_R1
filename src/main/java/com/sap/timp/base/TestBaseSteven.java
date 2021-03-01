@@ -98,11 +98,7 @@ public class TestBaseSteven {
 
 		return driver;
 	}
-	
-	public void close() {
 
-		
-	}
 	
 	
 	public void fecharMensagens(String rows, String xpath) {
@@ -281,6 +277,8 @@ public class TestBaseSteven {
 	public void actionsMoveToElementXpath(String xpath) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(driver.findElement(By.xpath(xpath))).perform();
+	
+	
 	}
 
 	public void actionsMoveToElementElement(WebElement element) {

@@ -29,13 +29,12 @@ public class UnidadeDeMedidaFiltroCodigo extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		driver.close();
 	}
-
 
 	@Test()
 	public void filtroCodigo() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

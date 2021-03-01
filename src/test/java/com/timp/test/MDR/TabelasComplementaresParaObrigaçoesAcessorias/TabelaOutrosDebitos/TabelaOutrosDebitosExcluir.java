@@ -22,7 +22,7 @@ public class TabelaOutrosDebitosExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -38,7 +38,7 @@ public class TabelaOutrosDebitosExcluir extends TestBaseSteven {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaOutrosDebitosExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
 

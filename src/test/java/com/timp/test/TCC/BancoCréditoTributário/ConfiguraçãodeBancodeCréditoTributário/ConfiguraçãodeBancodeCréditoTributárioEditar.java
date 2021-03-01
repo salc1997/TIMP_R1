@@ -14,27 +14,28 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBaseMassiel {
-	
+
 	LoginTC loginTC;
-	AcessarTCCPO  acessarTCCPO;
+	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeBancodeCréditoTributárioEditarPO configuraçãodeBancodeCréditoTributárioEditarPO;
-	
-  @Test
-  public void f() {
-  }
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@Test
+	public void f() {
+	}
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãodeBancodeCréditoTributárioEditarPO = new ConfiguraçãodeBancodeCréditoTributárioEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void ingresar() {
 		loginTC.login();
 	}
@@ -46,8 +47,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBaseMassie
 
 	@Test(priority = 2)
 	public void editar() {
-		
-		
+
 		boolean sucesso = configuraçãodeBancodeCréditoTributárioEditarPO.Editar();
 		assertTrue(sucesso, Criar);
 	}

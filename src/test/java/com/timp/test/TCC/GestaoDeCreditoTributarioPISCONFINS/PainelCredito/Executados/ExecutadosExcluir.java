@@ -15,8 +15,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class ExecutadosExcluir extends TestBaseCristhian {
-	
-	
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ExecutadosExcluirPO executadosExcluirPO;
@@ -32,7 +31,7 @@ public class ExecutadosExcluir extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

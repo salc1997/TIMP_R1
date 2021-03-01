@@ -36,7 +36,7 @@ public class InclusaoDeCamposMarCriar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = inclusaoDeCamposMarCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.Apur
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.RegistroM605ExcluirPO;
 
 public class RegistroM605Excluir extends TestBaseSteven {
-  
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM605ExcluirPO registroM605ExcluirPO;
@@ -36,19 +36,18 @@ public class RegistroM605Excluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
-		
+
 		ArrayList<Boolean> sucesso = registroM605ExcluirPO.excluir();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
 	}
-	
+
 }

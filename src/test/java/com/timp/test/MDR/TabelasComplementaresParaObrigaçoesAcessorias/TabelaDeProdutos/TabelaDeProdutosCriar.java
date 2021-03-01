@@ -36,7 +36,7 @@ public class TabelaDeProdutosCriar extends TestBaseMassiel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeProdutosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

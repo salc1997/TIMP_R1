@@ -13,25 +13,25 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoPainelCreditoICMSExcluir extends TestBaseMassiel{
+public class ConfiguracaoEExecucaoPainelCreditoICMSExcluir extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoPainelCreditoICMSExcluirPO configuracaoEExecucaoPainelCreditoICMSExcluirPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuracaoEExecucaoPainelCreditoICMSExcluirPO = new ConfiguracaoEExecucaoPainelCreditoICMSExcluirPO();
-  }
-  
-  @AfterClass
-	public void afterClass() {
-		//driver.close();
 	}
 
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+		// driver.close();
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -43,7 +43,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExcluir extends TestBaseMassi
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void excluir() {
 
@@ -51,6 +51,5 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExcluir extends TestBaseMassi
 
 		assertTrue(sucesso, Criar);
 	}
-  
 
 }

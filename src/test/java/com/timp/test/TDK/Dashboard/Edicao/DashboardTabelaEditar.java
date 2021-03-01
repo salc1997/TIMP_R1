@@ -13,13 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao.DashboardTabelaEditarPO;
 
-public class DashboardTabelaEditar extends TestBaseEliel{
- 
-	
+public class DashboardTabelaEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardTabelaEditarPO dashboardTabelaEditarPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -30,7 +29,7 @@ public class DashboardTabelaEditar extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,15 +41,14 @@ public class DashboardTabelaEditar extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void linksrapidos() {
 		ArrayList<Boolean> sucesso = dashboardTabelaEditarPO.TabelaEditar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),Editar);
+			assertTrue(sucesso.get(i), Editar);
 		}
-		
-		
+
 	}
-	
+
 }

@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaComplementarParaDIRFExcluirMassa extends TestBaseFernando{
+public class TabelaComplementarParaDIRFExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaComplementarParaDIRFExcluirMassaPO tabelaComplementarParaDIRFExcluirMassaPO;
@@ -38,7 +38,7 @@ public class TabelaComplementarParaDIRFExcluirMassa extends TestBaseFernando{
 		boolean sucesso = tabelaComplementarParaDIRFExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = tabelaComplementarParaDIRFExcluirMassaPO.exluirMassa();

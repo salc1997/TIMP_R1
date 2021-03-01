@@ -10,9 +10,9 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirPO;
- 
-public class DiagnosticoDeProcessosExcluir extends TestBaseEliel{
-	
+
+public class DiagnosticoDeProcessosExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DiagnosticoDeProcessosExcluirPO diagnosticoDeProcessosExcluirPO;
@@ -31,10 +31,9 @@ public class DiagnosticoDeProcessosExcluir extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -42,5 +41,5 @@ public class DiagnosticoDeProcessosExcluir extends TestBaseEliel{
 		assertTrue(sucesso, Eliminado);
 
 	}
- 
+
 }

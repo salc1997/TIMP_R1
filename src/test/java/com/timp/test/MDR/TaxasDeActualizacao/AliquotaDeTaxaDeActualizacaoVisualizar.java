@@ -17,12 +17,11 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class AliquotaDeTaxaDeActualizacaoVisualizar extends TestBaseCristhian {
-	
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotasDeTaxaDeActualizacaoVisualizarPO aliquotasDeTaxaDeActualizacaoVisualizarPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -37,10 +36,9 @@ public class AliquotaDeTaxaDeActualizacaoVisualizar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

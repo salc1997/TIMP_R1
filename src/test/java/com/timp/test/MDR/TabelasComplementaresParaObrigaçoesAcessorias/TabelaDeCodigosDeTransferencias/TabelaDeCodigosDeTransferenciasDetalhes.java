@@ -37,7 +37,7 @@ public class TabelaDeCodigosDeTransferenciasDetalhes extends TestBaseEliel {
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaDeCodigosDeTransferenciasDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -33,7 +33,6 @@ public class ClassificaçaoDeContribuintesDoIPICriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 		loginTC.login();

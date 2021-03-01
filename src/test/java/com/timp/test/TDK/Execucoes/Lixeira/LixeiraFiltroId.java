@@ -15,24 +15,24 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LixeiraFiltroId  extends TestBaseMassiel{
+public class LixeiraFiltroId extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	LixeiraFiltroIdPO lixeiraFiltroIdPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
-		lixeiraFiltroIdPO  = new LixeiraFiltroIdPO();
-  }
+		lixeiraFiltroIdPO = new LixeiraFiltroIdPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,16 +41,15 @@ public class LixeiraFiltroId  extends TestBaseMassiel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void filtro() {
-		
-		
+
 		ArrayList<Boolean> sucesso = lixeiraFiltroIdPO.FiltroID();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),Filtros);
+			assertTrue(sucesso.get(i), Filtros);
 		}
-		
+
 	}
 
 }

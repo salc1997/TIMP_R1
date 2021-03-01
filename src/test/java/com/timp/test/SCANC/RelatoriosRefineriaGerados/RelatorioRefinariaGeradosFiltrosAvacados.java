@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosFiltrosAvacadosPO;
 
-public class RelatorioRefinariaGeradosFiltrosAvacados extends TestBaseFernando{
+public class RelatorioRefinariaGeradosFiltrosAvacados extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosFiltrosAvacadosPO relatorioReginariaGeradosFiltrosAvacadosPO;
@@ -42,7 +42,7 @@ public class RelatorioRefinariaGeradosFiltrosAvacados extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancados() {			
+	public void filtrosAvancados() {
 		ArrayList<Boolean> sucesso = relatorioReginariaGeradosFiltrosAvacadosPO.filtrosAvanzados();
 
 		for (int i = 0; i < sucesso.size(); i++) {

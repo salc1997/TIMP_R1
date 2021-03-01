@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SGDPExcluir extends TestBaseFernando{
+public class SGDPExcluir extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPExcluirPO sGDPExcluirPO;
@@ -29,15 +29,13 @@ public class SGDPExcluir extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		driver.close();
 	}
 
-
-	
 	@Test()
 	public void excluir() {
-		 loginTC.login();
-		  acessarMDRPO.acessarMDR();
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = sGDPExcluirPO.excluir();
 		assertTrue(sucesso, Criar);

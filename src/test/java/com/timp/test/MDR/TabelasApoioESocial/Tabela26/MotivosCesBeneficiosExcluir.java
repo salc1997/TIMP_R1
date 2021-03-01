@@ -22,14 +22,14 @@ public class MotivosCesBeneficiosExcluir extends TestBaseFernando {
 	AcessarMDRPO acessarMDRPO;
 	MotivosCesBeneficiosEliminarPO motivosCesBeneficiosEliminarPO;
 	MotivosCesBeneficiosExcluirPO motivosCesBeneficiosExcluirPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		//motivosCesBeneficiosEliminarPO = new MotivosCesBeneficiosEliminarPO();
+		// motivosCesBeneficiosEliminarPO = new MotivosCesBeneficiosEliminarPO();
 		motivosCesBeneficiosExcluirPO = new MotivosCesBeneficiosExcluirPO();
 	}
 
@@ -38,16 +38,14 @@ public class MotivosCesBeneficiosExcluir extends TestBaseFernando {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void excluir() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
-		//boolean sucesso = motivosCesBeneficiosEliminarPO.eliminar();
+
+		// boolean sucesso = motivosCesBeneficiosEliminarPO.eliminar();
 		boolean sucesso = motivosCesBeneficiosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

@@ -35,7 +35,7 @@ public class TabelaDeDetalhamentosParaRegistro10Editar extends TestBaseEliel {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeDetalhamentosParaRegistro10EditarPO.editar();
 		assertTrue(sucesso, Editar);
 

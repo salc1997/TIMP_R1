@@ -240,6 +240,7 @@ public class ConfiguracoesStatusPeriodoEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		

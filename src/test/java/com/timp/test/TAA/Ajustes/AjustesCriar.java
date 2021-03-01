@@ -13,40 +13,39 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AjustesCriar extends TestBaseMassiel{
+public class AjustesCriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AjustedCriarPO ajustedCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
-		acessarTAAPO  = new AcessarTAAPO();
+		acessarTAAPO = new AcessarTAAPO();
 		ajustedCriarPO = new AjustedCriarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void ingresar() {
 		loginTC.login();
 	}
-  
-  @Test(priority = 1)
+
+	@Test(priority = 1)
 	public void TAAEntrar() {
-	  acessarTAAPO.acessarTAA();
+		acessarTAAPO.acessarTAA();
 
 	}
-  
-  @Test(priority = 2)
- 	public void ajustesCriar() {
-	  boolean sucesso = ajustedCriarPO.criar();
+
+	@Test(priority = 2)
+	public void ajustesCriar() {
+		boolean sucesso = ajustedCriarPO.criar();
 		assertTrue(sucesso, Criar);
 
- 	}
-
+	}
 
 }

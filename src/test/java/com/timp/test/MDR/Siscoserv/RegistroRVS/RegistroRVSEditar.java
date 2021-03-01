@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSEditarPO;
 
 public class RegistroRVSEditar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroRVSEditarPO registroRVSEditarPO;
@@ -35,10 +35,10 @@ public class RegistroRVSEditar extends TestBaseEliel {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroRVSEditarPO.editar();
 		assertTrue(sucesso, Editar);
 
 	}
-	
+
 }

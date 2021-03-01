@@ -9,7 +9,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.Codig
 
 import org.testng.annotations.BeforeClass;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;

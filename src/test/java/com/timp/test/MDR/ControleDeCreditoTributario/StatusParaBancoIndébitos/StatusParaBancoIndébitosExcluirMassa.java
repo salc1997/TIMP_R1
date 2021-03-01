@@ -33,7 +33,7 @@ public class StatusParaBancoIndébitosExcluirMassa extends TestBaseCristhian {
 	@AfterClass
 	public void afterClass() {
 		driver.close();
-	}
+	} 
 
 
 	@Test()

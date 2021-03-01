@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO;
 
 public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO codigoAjustesContribuiçoesCreditosExcluirEmMassaPO;
@@ -42,8 +42,5 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseEl
 		assertTrue(sucesso2, Eliminado);
 
 	}
- 
 
-	
-	
 }

@@ -15,35 +15,35 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçõesPeríodoCopiar extends TestBaseKenssy{
-	 LoginTC loginTC;
-	 AcessarTFPPO acessarTFPPO;
-	 ConfiguraçõesPeríodoCopiarPO configuraçõesPeríodoCopiarPO;
+public class ConfiguraçõesPeríodoCopiar extends TestBaseKenssy {
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	ConfiguraçõesPeríodoCopiarPO configuraçõesPeríodoCopiarPO;
 
-	 @BeforeClass
-	 public void beforeClass() {
-		  driver = initializationKen();
-		  loginTC = new LoginTC();
-		  acessarTFPPO = new AcessarTFPPO();
-		  configuraçõesPeríodoCopiarPO = new ConfiguraçõesPeríodoCopiarPO();  
-	 }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		configuraçõesPeríodoCopiarPO = new ConfiguraçõesPeríodoCopiarPO();
+	}
 
-	 @AfterClass
-	 public void afterClass() {
-		  driver.close();
-	 }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 1)
 	public void copiar() {
-		
+
 		loginTC.login();
-		
-		acessarTFPPO .acessarTFP();
-		
-		//configuraçõesPeríodoCopiarPO.copiar();
+
+		acessarTFPPO.acessarTFP();
+
+		// configuraçõesPeríodoCopiarPO.copiar();
 		boolean sucesso = configuraçõesPeríodoCopiarPO.copiar();
 		assertTrue(sucesso, Editar);
-		
+
 //		ArrayList<Boolean> sucesso = configuraçõesPeríodoCopiarPO.copiar();
 //
 //		for (int i = 0; i < sucesso.size(); i++) {

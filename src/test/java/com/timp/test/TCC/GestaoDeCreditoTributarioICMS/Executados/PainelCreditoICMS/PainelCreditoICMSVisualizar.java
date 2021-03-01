@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class PainelCreditoICMSVisualizar extends TestBaseMassiel{
+public class PainelCreditoICMSVisualizar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	PainelCreditoICMSVisualizarPO painelCreditoICMSVisualizarPO;
@@ -46,7 +46,6 @@ public class PainelCreditoICMSVisualizar extends TestBaseMassiel{
 	@Test(priority = 2)
 	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = painelCreditoICMSVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);

@@ -39,10 +39,9 @@ public class ParteDoCorpoAtingidaEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

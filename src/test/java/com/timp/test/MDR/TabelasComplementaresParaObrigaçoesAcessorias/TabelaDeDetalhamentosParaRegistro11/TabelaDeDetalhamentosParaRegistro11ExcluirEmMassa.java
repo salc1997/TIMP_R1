@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11ExcluirEmMassaPO;
 
 public class TabelaDeDetalhamentosParaRegistro11ExcluirEmMassa extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeDetalhamentosParaRegistro11ExcluirEmMassaPO tabelaDeDetalhamentosParaRegistro11ExcluirEmMassaPO;
@@ -35,12 +35,12 @@ public class TabelaDeDetalhamentosParaRegistro11ExcluirEmMassa extends TestBaseE
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeDetalhamentosParaRegistro11ExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluriEmMassa() {
 		sleep(1000);

@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditarPO;
 
-public class ClassificacaoTributariaEditar extends TestBaseEliel{
+public class ClassificacaoTributariaEditar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificacaoTributariaEditarPO classificacaoTributariaEditarPO;
@@ -31,8 +30,6 @@ public class ClassificacaoTributariaEditar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
-	
 
 	@Test()
 	public void editar() {

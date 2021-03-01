@@ -36,8 +36,6 @@ public class CodigosDeLotacaoCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 

@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriarPO;
 
-public class ConfiguracaoBloqueiosCriar extends TestBaseFernando{
+public class ConfiguracaoBloqueiosCriar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	ConfiguracaoBloqueiosCriarPO configuracaoBloqueiosCriarPO;
@@ -36,7 +36,7 @@ public class ConfiguracaoBloqueiosCriar extends TestBaseFernando{
 
 	@Test(priority = 1)
 	public void TFPEntrar() {
-		acessarTFPPO .acessarTFP();
+		acessarTFPPO.acessarTFP();
 	}
 
 	@Test(priority = 2)

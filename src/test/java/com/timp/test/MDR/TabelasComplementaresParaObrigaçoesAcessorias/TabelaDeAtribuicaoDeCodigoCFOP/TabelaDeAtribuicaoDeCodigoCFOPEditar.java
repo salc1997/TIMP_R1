@@ -31,8 +31,6 @@ public class TabelaDeAtribuicaoDeCodigoCFOPEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void editar() {
 		loginTC.login();

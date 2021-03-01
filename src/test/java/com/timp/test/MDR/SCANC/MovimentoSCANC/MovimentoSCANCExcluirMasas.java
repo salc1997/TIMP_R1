@@ -13,46 +13,40 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class MovimentoSCANCExcluirMasas extends TestBaseMassiel{
-	
+public class MovimentoSCANCExcluirMasas extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	MovimentoSCANCExcluirMasasPO  movimentoSCANCExcluirMasasPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	MovimentoSCANCExcluirMasasPO movimentoSCANCExcluirMasasPO;
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		 movimentoSCANCExcluirMasasPO = new MovimentoSCANCExcluirMasasPO();
-  }
+		movimentoSCANCExcluirMasasPO = new MovimentoSCANCExcluirMasasPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
+	@AfterClass
+	public void afterClass() {
+	}
 
- 	
- 	@Test()
- 	public void Criar() {
- 		
- 		loginTC.login();
-		
+	@Test()
+	public void Criar() {
+
+		loginTC.login();
+
 		acessarMDRPO.acessarMDR();
- 		
- 		boolean sucesso = movimentoSCANCExcluirMasasPO.criar();
- 		assertTrue(sucesso, Criar);
- 		
- 		
- 	}
- 	
- 	
 
- 	@Test(dependsOnMethods = "Criar")
- 	public void Excluir() {
- 		
- 		
- 		boolean sucesso2 = movimentoSCANCExcluirMasasPO.ExcluirMasas();
- 		assertTrue(sucesso2, Eliminado);
- 	}
+		boolean sucesso = movimentoSCANCExcluirMasasPO.criar();
+		assertTrue(sucesso, Criar);
+
+	}
+
+	@Test(dependsOnMethods = "Criar")
+	public void Excluir() {
+
+		boolean sucesso2 = movimentoSCANCExcluirMasasPO.ExcluirMasas();
+		assertTrue(sucesso2, Eliminado);
+	}
 }

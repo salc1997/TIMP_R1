@@ -13,11 +13,11 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class FatosContabeisFiltrar extends TestBaseFernando{
+public class FatosContabeisFiltrar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	FatosContabeisFiltrarPO fatosContabeisFiltrarPO;
-	
+
 	public FatosContabeisFiltrar() {
 	}
 
@@ -28,12 +28,11 @@ public class FatosContabeisFiltrar extends TestBaseFernando{
 		acesarMDRPO = new AcessarMDRPO();
 		fatosContabeisFiltrarPO = new FatosContabeisFiltrarPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void filtrarFatosContabeis() {

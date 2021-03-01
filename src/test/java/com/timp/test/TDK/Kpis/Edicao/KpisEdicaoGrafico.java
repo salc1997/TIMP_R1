@@ -13,41 +13,41 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisEdicaoGrafico extends TestBaseMassiel{
- 
+public class KpisEdicaoGrafico extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisEdicaoGraficoPO kpisEdicaoGraficoPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisEdicaoGraficoPO = new KpisEdicaoGraficoPO();
-  }
+	}
 
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
 
-  
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
- 	}
+	@Test(priority = 1)
+	public void acessarTDK() {
+		acessarTDKPO.acessarTDK();
+	}
 
- 	@Test(priority = 1)
- 	public void acessarTDK() {
- 		acessarTDKPO.acessarTDK();
- 	}
- 	
- 	@Test(priority = 2)
- 	public void Grafico() {
- 		kpisEdicaoGraficoPO.Grafico();
- 		
- 	/*	boolean sucesso = kpisCriarP.Criar();
+	@Test(priority = 2)
+	public void Grafico() {
+		kpisEdicaoGraficoPO.Grafico();
 
- 		assertTrue(sucesso, Criar);*/
- 		
- 	}
+		/*
+		 * boolean sucesso = kpisCriarP.Criar();
+		 * 
+		 * assertTrue(sucesso, Criar);
+		 */
+
+	}
 
 }

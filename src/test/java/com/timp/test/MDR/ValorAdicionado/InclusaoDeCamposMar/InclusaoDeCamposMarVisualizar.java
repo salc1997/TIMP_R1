@@ -39,7 +39,7 @@ public class InclusaoDeCamposMarVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = inclusaoDeCamposMarVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registros1101.Registros1101CriarPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registros1102.Registros1102CriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class Registros1101Criar extends TestBaseCristhian{
+public class Registros1101Criar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registros1101CriarPO registros1101CriarPO;
@@ -30,7 +29,7 @@ public class Registros1101Criar extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

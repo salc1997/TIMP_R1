@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosEditarCampoDeSaidaPO;
 
-public class RelatorioRefinariaGeradosEditarCampoDeSaida extends TestBaseFernando{
+public class RelatorioRefinariaGeradosEditarCampoDeSaida extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosEditarCampoDeSaidaPO relatorioRefinariaGeradosEditarCampoDeSaidaPO;
@@ -40,7 +40,7 @@ public class RelatorioRefinariaGeradosEditarCampoDeSaida extends TestBaseFernand
 	}
 
 	@Test(priority = 2)
-	public void editar() {		
+	public void editar() {
 		boolean sucesso = relatorioRefinariaGeradosEditarCampoDeSaidaPO.editar();
 		assertTrue(sucesso, Editar);
 	}

@@ -1,6 +1,5 @@
 package com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -59,5 +58,5 @@ public class ConfiguracaoEExecucaoRegistro1200Excluir extends TestBaseSteven {
 
 		assertTrue(sucesso, Filtros);
 	}
-	
+
 }

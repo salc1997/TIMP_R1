@@ -32,7 +32,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasa extends TestBaseSteven {
 		  accesarMDR = new AcessarMDRPO();
 		  parametrosParaCategoriaDeIRFExcluirEmMasaPO = new ParametrosParaCategoriaDeIRFExcluirEmMasaPO();
 	}
-
+ 
 	@AfterClass
 	public void afterClass() {
 		  driver.close();

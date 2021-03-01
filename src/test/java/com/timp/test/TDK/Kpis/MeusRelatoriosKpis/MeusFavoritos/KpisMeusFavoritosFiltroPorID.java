@@ -14,11 +14,11 @@ import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.MeusRelatoriosKpis.MeusFavoritos.KpisMeusFavoritosFiltroPorIDPO;
 
 public class KpisMeusFavoritosFiltroPorID extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisMeusFavoritosFiltroPorIDPO kpisMeusFavoritosFiltroPorIDPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class KpisMeusFavoritosFiltroPorID extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,15 +41,14 @@ public class KpisMeusFavoritosFiltroPorID extends TestBaseEliel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void filtro() {
 		ArrayList<Boolean> sucesso = kpisMeusFavoritosFiltroPorIDPO.filtro();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),Filtros);
+			assertTrue(sucesso.get(i), Filtros);
 		}
-		
-		
+
 	}
- 
+
 }

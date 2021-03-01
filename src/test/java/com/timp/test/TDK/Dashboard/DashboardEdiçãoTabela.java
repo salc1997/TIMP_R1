@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardEdiçãoTabela extends TestBaseMassiel{
+public class DashboardEdiçãoTabela extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
@@ -24,7 +24,7 @@ public class DashboardEdiçãoTabela extends TestBaseMassiel{
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
-		 dashboardEdiçãoTabelaPO = new DashboardEdiçãoTabelaPO();
+		dashboardEdiçãoTabelaPO = new DashboardEdiçãoTabelaPO();
 	}
 
 	@AfterClass
@@ -45,7 +45,7 @@ public class DashboardEdiçãoTabela extends TestBaseMassiel{
 	public void editar() {
 
 		dashboardEdiçãoTabelaPO.Editar();
-		//boolean sucesso = dashboardEdiçãoGráficoPO.Editar();
-		//assertTrue(sucesso,Criar);
+		// boolean sucesso = dashboardEdiçãoGráficoPO.Editar();
+		// assertTrue(sucesso,Criar);
 	}
 }

@@ -11,13 +11,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassaPO;
 
-public class SGDPExcluirEmMassa extends TestBaseEliel{
+public class SGDPExcluirEmMassa extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPExcluirEmMassaPO sgdpExcluirEmMassaPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -32,14 +31,11 @@ public class SGDPExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
-		 loginTC.login();
-		  acessarMDRPO.acessarMDR();
 
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = sgdpExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
@@ -48,5 +44,5 @@ public class SGDPExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

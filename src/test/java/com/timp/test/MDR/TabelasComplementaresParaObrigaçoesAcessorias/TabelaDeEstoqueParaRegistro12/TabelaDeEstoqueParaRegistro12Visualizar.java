@@ -37,7 +37,7 @@ public class TabelaDeEstoqueParaRegistro12Visualizar extends TestBaseEliel {
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaDeEstoqueParaRegistro12VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

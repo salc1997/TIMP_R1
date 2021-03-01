@@ -34,13 +34,11 @@ public class MovimentoSCANCAtualizar extends TestBaseKenssy {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void atualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = movimentoSCANCAtualizarPO.atualizar();

@@ -39,10 +39,9 @@ public class AgenteCausadorDeAcidenteCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar extends TestBaseMassiel{
+public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO configuraçãDeTipoTaxaDeAtualizaçãoCriarPO;

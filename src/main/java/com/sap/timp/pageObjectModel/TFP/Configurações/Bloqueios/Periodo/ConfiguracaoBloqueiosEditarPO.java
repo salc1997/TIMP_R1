@@ -237,7 +237,7 @@ public class ConfiguracaoBloqueiosEditarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		System.out.println(sucesso);
 		return sucesso;
 	}
 }

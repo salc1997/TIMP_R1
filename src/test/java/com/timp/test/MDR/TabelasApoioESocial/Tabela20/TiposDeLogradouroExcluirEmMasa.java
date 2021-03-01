@@ -20,34 +20,41 @@ public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	TiposDeLogradouroExcluirEmMasaPO tiposDeLogradouroExcluirEmMasaPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  accesarMDRPO = new AcessarMDRPO();
-		  tiposDeLogradouroExcluirEmMasaPO = new TiposDeLogradouroExcluirEmMasaPO();
+
+		driver = initialization();
+		loginTC = new LoginTC();
+		accesarMDRPO = new AcessarMDRPO();
+		tiposDeLogradouroExcluirEmMasaPO = new TiposDeLogradouroExcluirEmMasaPO();
+
 	}
 
 	@AfterClass
 	public void afterClass() {
-		  driver.close();
+		driver.close();
 	}
 
-	
 	@Test()
 	public void criar() {
+
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tiposDeLogradouroExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
+
+		sleep(1000);
+
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
+
 		boolean sucesso2 = tiposDeLogradouroExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
+
 	}
 
 }

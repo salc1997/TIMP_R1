@@ -38,7 +38,7 @@ public class TabelaReceitasPermitidasCriar extends TestBaseSteven {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasPermitidasCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

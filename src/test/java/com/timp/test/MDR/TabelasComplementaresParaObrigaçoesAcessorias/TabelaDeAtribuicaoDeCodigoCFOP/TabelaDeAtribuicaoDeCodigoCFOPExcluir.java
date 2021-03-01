@@ -31,7 +31,6 @@ public class TabelaDeAtribuicaoDeCodigoCFOPExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 		loginTC.login();

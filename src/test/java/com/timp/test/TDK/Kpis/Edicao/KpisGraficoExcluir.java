@@ -11,28 +11,27 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Edicao.kpisGraficoExcluirPO;
 
-public class KpisGraficoExcluir extends TestBaseEliel{
- 
-	
+public class KpisGraficoExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	kpisGraficoExcluirPO kpisGraficoExcluirPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	    driver = initializationE();
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisGraficoExcluirPO = new kpisGraficoExcluirPO();
-		
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,13 +40,13 @@ public class KpisGraficoExcluir extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void grafico() {
-		
+
 		boolean sucesso = kpisGraficoExcluirPO.GraficoExcluir();
 
 		assertTrue(sucesso, "O Grafico  não foi excluido");
-		
+
 	}
 }

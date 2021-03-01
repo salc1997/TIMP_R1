@@ -20,20 +20,20 @@ public class ConfiguraçãoeExecuçãoFiltrosAva extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãoeExecuçãoFiltrosAvaPO configuraçãoeExecuçãoFiltrosAvaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationC();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãoeExecuçãoFiltrosAvaPO = new ConfiguraçãoeExecuçãoFiltrosAvaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -45,16 +45,14 @@ public class ConfiguraçãoeExecuçãoFiltrosAva extends TestBaseCristhian {
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void Filtro() {
 
-		
 		ArrayList<Boolean> Nome = configuraçãoeExecuçãoFiltrosAvaPO.filtros();
 		for (int i = 0; i < Nome.size(); i++) {
 			assertTrue(Nome.get(i), Filtros);
 		}
-		
 
 	}
 

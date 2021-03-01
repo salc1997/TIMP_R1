@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriarPO;
 
 public class CodigoDeTreinamentoESimulacoesDeExerciciosCriar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeTreinamentoESimulacoesDeExerciciosCriarPO codigoDeTreinamentoESimulacoesDeExerciciosCriarPO;
@@ -28,14 +28,12 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosCriar extends TestBaseEli
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
-
-
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -43,6 +41,5 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosCriar extends TestBaseEli
 		assertTrue(sucesso, semAcesso);
 
 	}
-	
 
 }

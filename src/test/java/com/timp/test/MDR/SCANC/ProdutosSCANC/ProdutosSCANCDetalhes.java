@@ -37,11 +37,9 @@ public class ProdutosSCANCDetalhes extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

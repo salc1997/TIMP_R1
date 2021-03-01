@@ -16,7 +16,6 @@ import org.testng.annotations.AfterClass;
 
 public class CompatibilidadeEnCatTrabEditar extends TestBaseCristhian {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEnCatTrabEditarPO compatibilidadeEnCatTrabEditarPO;

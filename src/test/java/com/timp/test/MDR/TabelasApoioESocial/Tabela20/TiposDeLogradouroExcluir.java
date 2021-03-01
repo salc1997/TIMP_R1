@@ -17,7 +17,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class TiposDeLogradouroExcluir extends TestBaseSteven {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeLogradouroExcluirPO tiposDeLogradouroExluirPO;
@@ -37,12 +37,13 @@ public class TiposDeLogradouroExcluir extends TestBaseSteven {
 	}
 
 	@Test()
-	  public void excluir() {
-		
+
+	public void excluir() {
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tiposDeLogradouroExluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-	  }
+	}
 }

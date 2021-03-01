@@ -14,11 +14,11 @@ import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao.DashboardLinksRapidosEditarPO;
 
 public class DashboardLinksRapidosEditar extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardLinksRapidosEditarPO dashboardLinksRapidosEditarPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class DashboardLinksRapidosEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,15 +41,14 @@ public class DashboardLinksRapidosEditar extends TestBaseEliel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void linksrapidos() {
 		ArrayList<Boolean> sucesso = dashboardLinksRapidosEditarPO.linksrapidos();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),"Não foi possível editar o link rápido");
+			assertTrue(sucesso.get(i), "Não foi possível editar o link rápido");
 		}
-		
-		
+
 	}
-	
+
 }

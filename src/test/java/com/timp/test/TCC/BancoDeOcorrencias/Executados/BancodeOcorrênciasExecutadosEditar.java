@@ -11,24 +11,24 @@ import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.Executados.BancodeOco
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
-public class BancodeOcorrênciasExecutadosEditar extends TestBaseCristhian{
+public class BancodeOcorrênciasExecutadosEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	BancodeOcorrênciasExecutadosEditarPO bancodeOcorrênciasExecutadosEditarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationC();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		bancodeOcorrênciasExecutadosEditarPO = new BancodeOcorrênciasExecutadosEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -38,11 +38,13 @@ public class BancodeOcorrênciasExecutadosEditar extends TestBaseCristhian{
 	public void acessarTCC() {
 		acessarTCCPO.acessarTCC();
 	}
-	
+
 	@Test(priority = 2)
 	public void executarEditar() {
 		bancodeOcorrênciasExecutadosEditarPO.editar();
-		/*boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
-		assertTrue(sucesso, Criar);*/
+		/*
+		 * boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
+		 * assertTrue(sucesso, Criar);
+		 */
 	}
 }

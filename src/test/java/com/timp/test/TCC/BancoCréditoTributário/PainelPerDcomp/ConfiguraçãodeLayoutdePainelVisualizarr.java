@@ -19,7 +19,7 @@ import org.testng.annotations.AfterClass;
 
 public class ConfiguraçãodeLayoutdePainelVisualizarr extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTCCPO  acessarTCCPO;
+	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeLayoutdePainelVisualizarrPO configuraçãodeLayoutdePainelVisualizarrPO;
 
 	@BeforeClass
@@ -32,7 +32,7 @@ public class ConfiguraçãodeLayoutdePainelVisualizarr extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

@@ -32,7 +32,7 @@ public class Registro1610Visualizar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -57,6 +57,5 @@ public class Registro1610Visualizar extends TestBaseCristhian {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
-
 
 }

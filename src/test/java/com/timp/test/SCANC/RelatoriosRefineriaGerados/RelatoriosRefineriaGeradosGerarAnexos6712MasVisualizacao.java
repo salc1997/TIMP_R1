@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO;
 
-public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacao extends TestBaseFernando{
+public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacao extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO relatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO;
@@ -42,8 +42,9 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacao extends Te
 	}
 
 	@Test(priority = 2)
-	public void gerarAnexosMasVisualizacao() {				
-		ArrayList<Boolean> sucesso = relatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO.gerarAnexosMasVisualizacao();
+	public void gerarAnexosMasVisualizacao() {
+		ArrayList<Boolean> sucesso = relatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO
+				.gerarAnexosMasVisualizacao();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

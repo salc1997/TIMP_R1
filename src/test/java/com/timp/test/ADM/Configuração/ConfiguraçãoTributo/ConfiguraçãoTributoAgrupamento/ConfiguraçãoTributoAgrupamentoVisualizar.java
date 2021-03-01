@@ -5,10 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoCriarPO;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoVisualizarPO;
-import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -34,7 +31,7 @@ public class ConfiguraçãoTributoAgrupamentoVisualizar extends TestBaseCristhian 
   @AfterClass
   public void afterClass() {
   }
-  
+   
   @Test(priority = 0)
 	public void login() {
 		loginTC.login();

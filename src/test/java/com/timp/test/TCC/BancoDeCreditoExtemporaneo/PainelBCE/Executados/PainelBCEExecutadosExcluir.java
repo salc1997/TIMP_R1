@@ -14,8 +14,7 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluirPO;
 
 public class PainelBCEExecutadosExcluir extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	PainelBCEExecutadosExcluirPO painelBCEExecutadosExcluirPO;
@@ -30,7 +29,7 @@ public class PainelBCEExecutadosExcluir extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -50,6 +49,6 @@ public class PainelBCEExecutadosExcluir extends TestBaseEliel {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-		
+
 	}
 }

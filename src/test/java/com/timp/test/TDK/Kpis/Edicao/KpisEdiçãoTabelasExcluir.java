@@ -18,21 +18,21 @@ public class KpisEdiçãoTabelasExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisEdiçãoTabelasExcluirPO kpisEdiçãoTabelasExcluirPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	driver = initializationC();
-	loginTC = new LoginTC();
-	acessarTDKPO = new AcessarTDKPO();
-	kpisEdiçãoTabelasExcluirPO = new KpisEdiçãoTabelasExcluirPO();
-		
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarTDKPO = new AcessarTDKPO();
+		kpisEdiçãoTabelasExcluirPO = new KpisEdiçãoTabelasExcluirPO();
+
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,13 +41,12 @@ public class KpisEdiçãoTabelasExcluir extends TestBaseCristhian {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void Editar() {
-		
+
 		boolean sucesso = kpisEdiçãoTabelasExcluirPO.tabelas();
 
-		
 	}
 
 }

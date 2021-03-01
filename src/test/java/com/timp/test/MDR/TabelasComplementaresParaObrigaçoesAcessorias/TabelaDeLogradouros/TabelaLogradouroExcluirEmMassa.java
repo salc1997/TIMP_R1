@@ -11,12 +11,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradourosExcluirEmMassaPO;
 
-public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
-	
+public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TabelaLogradourosExcluirEmMassaPO tabelaLogradourosExcluirEmMassaPO;
-
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,30 +25,23 @@ public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel{
 		tabelaLogradourosExcluirEmMassaPO = new TabelaLogradourosExcluirEmMassaPO();
 	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
+	@Test()
+	public void criar() {
 
+		loginTC.login();
+		accesarMDR.acessarMDR();
 
+		boolean sucesso = tabelaLogradourosExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
 
-  
-  @Test()
-  public void criar() {
-	  
-	  loginTC.login();
-	  accesarMDR.acessarMDR();
-	
-	  boolean sucesso = tabelaLogradourosExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
-	
-	boolean sucesso2 = tabelaLogradourosExcluirEmMassaPO.excluir();
-	assertTrue(sucesso2, Eliminado);
-  }
+		boolean sucesso2 = tabelaLogradourosExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+	}
 
-	
- 
 }

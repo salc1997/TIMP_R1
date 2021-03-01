@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosEditarPO;
 
-public class ConfiguracaoBloqueiosEditar extends TestBaseEliel{
+public class ConfiguracaoBloqueiosEditar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	ConfiguracaoBloqueiosEditarPO configuracaoBloqueiosEditarPO;
@@ -38,15 +38,15 @@ public class ConfiguracaoBloqueiosEditar extends TestBaseEliel{
 
 	@Test(priority = 1)
 	public void TFPEntrar() {
-		acessarTFPPO .acessarTFP();
+		acessarTFPPO.acessarTFP();
 	}
 
 	@Test(priority = 2)
 	public void editar() {
-		
+
 		ArrayList<Boolean> sucesso = configuracaoBloqueiosEditarPO.editar();
-	for (int i = 0; i < sucesso.size(); i++) {
-		assertTrue(sucesso.get(i), Editar);
-	}
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Editar);
+		}
 	}
 }

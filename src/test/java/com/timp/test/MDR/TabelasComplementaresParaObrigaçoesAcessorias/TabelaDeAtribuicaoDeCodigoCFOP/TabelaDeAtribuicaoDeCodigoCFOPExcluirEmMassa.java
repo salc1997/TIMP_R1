@@ -12,14 +12,14 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeAtribuicaoDeCodigoCFOP.TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassaPO;
 
 public class TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassaPO tabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -30,7 +30,6 @@ public class TabelaDeAtribuicaoDeCodigoCFOPExcluirEmMassa extends TestBaseEliel 
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void criar() {

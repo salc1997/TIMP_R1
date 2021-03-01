@@ -12,7 +12,6 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassaPO;
 
 public class ParteDoCorpoAtingidaExcluirEmMassa extends TestBaseEliel {
- 
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -32,23 +31,20 @@ public class ParteDoCorpoAtingidaExcluirEmMassa extends TestBaseEliel {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = parteDoCorpoAtingidaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		boolean sucesso2 = parteDoCorpoAtingidaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}
-	
+
 }

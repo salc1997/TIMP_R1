@@ -39,7 +39,7 @@ public class TabelaServicosExcluir extends TestBaseSteven {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaServicosExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
 

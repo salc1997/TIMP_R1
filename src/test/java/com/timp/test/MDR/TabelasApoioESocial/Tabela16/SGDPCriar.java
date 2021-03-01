@@ -14,25 +14,25 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SGDPCriar extends TestBaseCristhian{
+public class SGDPCriar extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SGDPCriarPO sgdpCriarPO;
-	 
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		sgdpCriarPO = new SGDPCriarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void criar() {

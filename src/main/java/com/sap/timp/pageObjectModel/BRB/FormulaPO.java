@@ -285,6 +285,7 @@ public class FormulaPO extends TestBaseSteven{
 			String valor2 = valor.replace(".", "");
 			String valor3 = valor2.replace(",", ".");
 			
+			
 			String suma1 = driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[contains(@aria-label,\"Linha: "+f+"-\") and contains(@aria-label,\"Suma1\")]/div[2]")).getText();
 			String suma11 = suma1.replace(".", "");
 			String suma12 = suma11.replace(",", ".");

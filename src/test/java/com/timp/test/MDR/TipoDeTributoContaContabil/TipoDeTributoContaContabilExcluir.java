@@ -35,7 +35,7 @@ public class TipoDeTributoContaContabilExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tipoDeTributoContaContabilExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

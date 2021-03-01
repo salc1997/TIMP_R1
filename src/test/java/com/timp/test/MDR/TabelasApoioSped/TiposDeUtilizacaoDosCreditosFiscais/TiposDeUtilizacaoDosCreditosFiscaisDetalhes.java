@@ -33,7 +33,6 @@ public class TiposDeUtilizacaoDosCreditosFiscaisDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void detalhes() {
 		loginTC.login();

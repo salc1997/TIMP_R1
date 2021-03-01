@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditarPO;
 
-public class ConfiguracaoEExecucaoEditar extends TestBaseFernando{
+public class ConfiguracaoEExecucaoEditar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoEditarPO configuracaoEExecucaoEditarPO;

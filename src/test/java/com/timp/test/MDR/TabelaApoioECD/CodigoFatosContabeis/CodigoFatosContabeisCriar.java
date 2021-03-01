@@ -15,7 +15,6 @@ import org.testng.annotations.AfterClass;
 
 public class CodigoFatosContabeisCriar extends TestBaseFernando {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CodigoFatosContabeisCriarPO ecd;
@@ -42,7 +41,7 @@ public class CodigoFatosContabeisCriar extends TestBaseFernando {
 		loginTC.login();
 		boolean sucesso3 = acesarMDRPO.acessarMDR();
 		assertTrue(sucesso3, "The element is not present");
-		
+
 		boolean sucesso2 = ecd.criar();
 		assertTrue(sucesso2, "There is an error...");
 	}

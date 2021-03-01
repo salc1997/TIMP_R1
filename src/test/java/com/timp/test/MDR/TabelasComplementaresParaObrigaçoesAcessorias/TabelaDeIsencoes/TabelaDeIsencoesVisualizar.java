@@ -37,7 +37,7 @@ public class TabelaDeIsencoesVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaDeIsencoesVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

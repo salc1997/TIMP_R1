@@ -15,20 +15,20 @@ public class ExecutadosEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ExecutadosEditarPO executadosEditarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationC();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		executadosEditarPO = new ExecutadosEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -38,11 +38,13 @@ public class ExecutadosEditar extends TestBaseCristhian {
 	public void acessarTCC() {
 		acessarTCCPO.acessarTCC();
 	}
-	
+
 	@Test(priority = 2)
 	public void executarEditar() {
 		executadosEditarPO.editarExe();
-		/*boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
-		assertTrue(sucesso, Criar);*/
+		/*
+		 * boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
+		 * assertTrue(sucesso, Criar);
+		 */
 	}
 }

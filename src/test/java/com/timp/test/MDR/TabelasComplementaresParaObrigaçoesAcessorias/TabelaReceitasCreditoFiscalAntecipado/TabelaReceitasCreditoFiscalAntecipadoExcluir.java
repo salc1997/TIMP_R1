@@ -39,7 +39,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluir extends TestBaseSteven
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoExcluirPO.excluir();
 		assertTrue(sucesso, Criar);
 

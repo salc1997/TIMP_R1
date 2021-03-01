@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CompatibilidadeEnCatTrabVisualizar extends TestBaseFernando{
+public class CompatibilidadeEnCatTrabVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEnCatTrabVisualizarPO compatibilidadeEnCatTrabVisualizarPO;
@@ -34,14 +34,13 @@ public class CompatibilidadeEnCatTrabVisualizar extends TestBaseFernando{
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = compatibilidadeEnCatTrabVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}

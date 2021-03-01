@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ClassificacaoTributariaExcluirMassa extends TestBaseFernando{
+public class ClassificacaoTributariaExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificacaoTributariaExcluirMassaPO classificacaoTributariaExcluirMassaPO;
@@ -31,17 +31,16 @@ public class ClassificacaoTributariaExcluirMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-
 	@Test(priority = 0)
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = classificacaoTributariaExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(priority = 1)
 	public void excluirMassa() {
 		boolean sucesso = classificacaoTributariaExcluirMassaPO.exluirMassa();

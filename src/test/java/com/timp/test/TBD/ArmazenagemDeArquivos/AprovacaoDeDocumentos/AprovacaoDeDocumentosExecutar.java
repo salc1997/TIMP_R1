@@ -11,47 +11,43 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExecutarPO;
 
-public class AprovacaoDeDocumentosExecutar extends TestBaseEliel{
-	
-	
+public class AprovacaoDeDocumentosExecutar extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	AprovacaoDeDocumentosExecutarPO aprovacaoDeDocumentosExecutarPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  aprovacaoDeDocumentosExecutarPO = new  AprovacaoDeDocumentosExecutarPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		aprovacaoDeDocumentosExecutarPO = new AprovacaoDeDocumentosExecutarPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void executar() {
-	 		
-	 		boolean sucesso = aprovacaoDeDocumentosExecutarPO.executar();
-			assertTrue(sucesso, "Não executado");
-		
-	 		
-	 	}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void TBDEntrar() {
+		acessarTBDPO.acessarTBD();
+
+	}
+
+	@Test(priority = 1)
+	public void executar() {
+
+		boolean sucesso = aprovacaoDeDocumentosExecutarPO.executar();
+		assertTrue(sucesso, "Não executado");
+
+	}
 
 }

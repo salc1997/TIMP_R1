@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesExcluirPO;
 
-public class TiposDeDependentesExcluir extends TestBaseEliel{
- 
-	
+public class TiposDeDependentesExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeDependentesExcluirPO tiposDeDependentesExcluirPO;
@@ -31,20 +30,7 @@ public class TiposDeDependentesExcluir extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
 	@Test()
 	public void excluir() {
 
@@ -55,5 +41,5 @@ public class TiposDeDependentesExcluir extends TestBaseEliel{
 		assertTrue(sucesso, Eliminado);
 
 	}
-	
+
 }

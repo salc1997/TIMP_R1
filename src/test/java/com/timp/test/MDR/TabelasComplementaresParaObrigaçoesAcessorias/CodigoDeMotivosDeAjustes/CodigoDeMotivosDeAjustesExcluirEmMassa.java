@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluirEmMassaPO;
 
-public class CodigoDeMotivosDeAjustesExcluirEmMassa extends TestBaseEliel{
-	
+public class CodigoDeMotivosDeAjustesExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeMotivosDeAjustesExcluirEmMassaPO codigoDeMotivosDeAjustesExcluirEmMassaPO;
@@ -42,5 +42,5 @@ public class CodigoDeMotivosDeAjustesExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso2, Eliminado);
 
 	}
- 
+
 }

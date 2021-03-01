@@ -17,36 +17,33 @@ import org.testng.annotations.AfterClass;
 
 public class SubperíodoCopiar extends TestBaseMassiel {
 	LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  SubperíodoCopiarPO subperíodoCopiarPO;
-	  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  subperíodoCopiarPO = new SubperíodoCopiarPO();
-  }
+	AcessarTFPPO acessarTFPPO;
+	SubperíodoCopiarPO subperíodoCopiarPO;
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-}
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		subperíodoCopiarPO = new SubperíodoCopiarPO();
+	}
 
-  @Test(priority = 1)
- 	public void Copiar() {
-	  
- 		loginTC.login();
- 		acessarTFPPO .acessarTFP();
- 		
- 		
- 		
- 		ArrayList<Boolean> sucesso = subperíodoCopiarPO.copiar();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
- 		for (int i = 0; i < sucesso.size(); i++) {
- 			assertTrue(sucesso.get(i), visualizaçar);
- 		}
+	@Test(priority = 1)
+	public void Copiar() {
 
- 	
- 	}
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
+
+		ArrayList<Boolean> sucesso = subperíodoCopiarPO.copiar();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+
+	}
 }

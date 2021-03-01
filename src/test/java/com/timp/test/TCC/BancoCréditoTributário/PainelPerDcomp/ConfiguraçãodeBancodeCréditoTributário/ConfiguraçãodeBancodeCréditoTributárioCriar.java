@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 
 public class ConfiguraçãodeBancodeCréditoTributárioCriar extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTCCPO  acessarTCCPO;
+	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeBancodeCréditoTributárioCriarPO configuraçãodeBancodeCréditoTributárioCriarPO;
 
 	@BeforeClass
@@ -29,7 +29,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriar extends TestBaseCristhi
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

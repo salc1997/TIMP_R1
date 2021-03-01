@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeBenefíciosVisualizar extends TestBaseFernando{
+public class TiposDeBenefíciosVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeBenefíciosVisualizarPO tiposDeBenefíciosVisualizarPO;
@@ -34,7 +34,7 @@ public class TiposDeBenefíciosVisualizar extends TestBaseFernando{
 	}
 
 	@Test()
-	public void visualizar() {	
+	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = tiposDeBenefíciosVisualizarPO.visualizar();

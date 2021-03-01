@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela28.DadosDeRATCriarPO;
 
 public class DadosDeRATCriar extends TestBaseCristhian {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DadosDeRATCriarPO dadosDeRATCriarPO;
@@ -31,15 +31,12 @@ public class DadosDeRATCriar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
 
 		boolean sucesso = dadosDeRATCriarPO.criar();
 		assertTrue(sucesso, semAcesso);

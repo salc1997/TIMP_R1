@@ -21,7 +21,7 @@ public class TabelaOutrosDebitosCriar extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -37,7 +37,7 @@ public class TabelaOutrosDebitosCriar extends TestBaseSteven {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelasOutrosDebitosCriarPO.criar();
 		assertTrue(sucesso, Criar);
 

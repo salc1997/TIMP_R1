@@ -18,36 +18,35 @@ public class AliquotadDeTaxaDeActualizacaoEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotaDeTaxaDeActualizarEditarPO aliquotaDeTaxaDeActualizarEditarPO;
-
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
+ 
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		aliquotaDeTaxaDeActualizarEditarPO = new AliquotaDeTaxaDeActualizarEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-  public void login() {
-	loginTC.login();
-  }
-	
-	
-  @Test(priority = 1)
-  public void acessarMDR() {
-	acessarMDRPO.acessarMDR();
-  }
-  
-  @Test(priority = 2)
-  public void editar() {
+	@AfterClass
+	public void afterClass() {
+	}
 
-	boolean sucesso = aliquotaDeTaxaDeActualizarEditarPO.editar();
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
 
-	assertTrue(sucesso, Editar);
+	@Test(priority = 1)
+	public void acessarMDR() {
+		acessarMDRPO.acessarMDR();
+	}
 
-  }
+	@Test(priority = 2)
+	public void editar() {
+
+		boolean sucesso = aliquotaDeTaxaDeActualizarEditarPO.editar();
+
+		assertTrue(sucesso, Editar);
+
+	}
 }

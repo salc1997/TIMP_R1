@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM220.RegistroM220VisualizarPO;
 
-public class RegistroM220Visualizar extends TestBaseEliel{
-  
+public class RegistroM220Visualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM220VisualizarPO registroM220VisualizarPO;
@@ -33,12 +33,11 @@ public class RegistroM220Visualizar extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
 		ArrayList<Boolean> sucesso = registroM220VisualizarPO.visualizar();
@@ -47,5 +46,5 @@ public class RegistroM220Visualizar extends TestBaseEliel{
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
-	
+
 }

@@ -14,24 +14,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecutadosEditar extends TestBaseMassiel{
+public class ExecutadosEditar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ExecutadosEditarPO executadosEditarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		executadosEditarPO = new ExecutadosEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -41,11 +41,11 @@ public class ExecutadosEditar extends TestBaseMassiel{
 	public void acessarTCC() {
 		acessarTCCPO.acessarTCC();
 	}
-	
+
 	@Test(priority = 2)
 	public void executarEditar() {
-	
-		boolean sucesso = 	executadosEditarPO.editar();
+
+		boolean sucesso = executadosEditarPO.editar();
 		assertTrue(sucesso, Criar);
 	}
 

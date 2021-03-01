@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Mapeamento Substituicao Conta Estoque Cenarios Correcoes(failed)">
+=======
+  <test thread-count="5" name="ParametrosParaTP(failed)">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa">
+=======
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="Criar"/>
+=======
+          <include name="criar"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="Excluir"/>
         </methods>
       </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa -->
@@ -66,7 +79,193 @@
         <methods>
           <include name="afterClass"/>
           <include name="Visualizar"/>
+=======
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar">
+        <methods>
+          <include name="editar"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluirEnMasa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirEmMasa"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluirEnMasa -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroID">
+        <methods>
+          <include name="filtroId"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroID -->
+    </classes>
+  </test> <!-- ParametrosParaTP(failed) -->
+  <test thread-count="5" name="RegistroECAC(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar -->
+    </classes>
+  </test> <!-- RegistroECAC(failed) -->
+  <test thread-count="5" name="TiposDeServicos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosVisualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="Visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosVisualizar -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluir -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosEditar -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosFiltroID">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="filtro"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosFiltroID -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhes -->
+    </classes>
+  </test> <!-- TiposDeServicos(failed) -->
+  <test thread-count="5" name="ValoresParaMetodoPVV(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar -->
+    </classes>
+  </test> <!-- ValoresParaMetodoPVV(failed) -->
+  <test thread-count="5" name="ValoresParaMetodoPVEX(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXEditar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhes">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="Detalhes"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXDetalhes -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluir -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXFiltroID">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtro"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXFiltroID -->
+    </classes>
+  </test> <!-- ValoresParaMetodoPVEX(failed) -->
+  <test thread-count="5" name="ValoresParaMetodoPECEX(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXFiltroID">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXFiltroID -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXExcluir -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes">
+        <methods>
+          <include name="Detalhes"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXDetalhes -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXEditar -->
+    </classes>
+  </test> <!-- ValoresParaMetodoPECEX(failed) -->
+  <test thread-count="5" name="ProcessosAdmJudiciais(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir">
+        <methods>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
+<<<<<<< HEAD
         </methods>
       </class> <!-- com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisVisualizar -->
       <class name="com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisEditar">
@@ -84,8 +283,12 @@
         <methods>
           <include name="beforeClass"/>
           <include name="editar"/>
+=======
+          <include name="excluir"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoEditar -->
       <class name="com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoExcluir">
         <methods>
@@ -102,11 +305,16 @@
         </methods>
       </class> <!-- com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoFiltroID -->
       <class name="com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar">
+=======
+      </class> <!-- com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluir -->
+      <class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
           <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoCriar -->
       <class name="com.timp.test.MDR.SaldoInicialDiferido.SaldoInicialDiferidoExcluirMassa">
         <methods>
@@ -156,10 +364,14 @@
         </methods>
       </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCExcluir -->
       <class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProdutosSCANCDetalhes">
+=======
+      </class> <!-- com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisCriar -->
+      <class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
           <include name="detalhes"/>
+<<<<<<< HEAD
         </methods>
       </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProdutosSCANCDetalhes -->
       <class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar">
@@ -177,18 +389,46 @@
         </methods>
       </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCVisualizar -->
       <class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCEditar">
+=======
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisDetalhes -->
+      <class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="editar"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCEditar -->
+=======
+      </class> <!-- com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar -->
+      <class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirEmMasa">
+        <methods>
+          <include name="excluirEmMassa"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirEmMasa -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- SCANC > Productos SCANC(failed) -->
   <test thread-count="5" name="SCANC &gt; SCANC Distribuidoras(failed)">
+=======
+  </test> <!-- ProcessosAdmJudiciais(failed) -->
+  <test thread-count="5" name="ValoresParaMetodoPVA(failed)">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa">
+=======
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAEditar">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="excluirMassa"/>
           <include name="afterClass"/>
           <include name="Criar"/>
@@ -251,7 +491,13 @@
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="excluir"/>
+=======
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformacoesDeValoresExcluirEmMassa -->
       <class name="com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresExcluir">
         <methods>
@@ -267,6 +513,13 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.AjusteEInformaçoesDeValores.AjusteEInformaçoesDeValoresVisualizar -->
+=======
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAEditar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- TabelasApoioSped > Ajustes e Informação de Valores Provenientes de Documento Fiscal(failed) -->
+=======
+  </test> <!-- ValoresParaMetodoPVA(failed) -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

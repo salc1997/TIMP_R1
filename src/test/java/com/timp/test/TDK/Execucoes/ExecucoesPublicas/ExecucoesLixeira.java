@@ -11,12 +11,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesLixeiraPO;
 
-public class ExecucoesLixeira extends TestBaseEliel{
- 
+public class ExecucoesLixeira extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	ExecucoesLixeiraPO execucoesLixeiraPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -27,7 +27,7 @@ public class ExecucoesLixeira extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -39,12 +39,12 @@ public class ExecucoesLixeira extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void lixeira() {
 		boolean sucesso = execucoesLixeiraPO.lixeira();
-		assertTrue(sucesso,"Não foi possível ir para Lixeira");
-		
+		assertTrue(sucesso, "Não foi possível ir para Lixeira");
+
 	}
-	
+
 }

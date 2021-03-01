@@ -4,8 +4,6 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainelFiltrosAvancadosPO;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesFiltrosAvaPO;
 
@@ -33,7 +31,7 @@ public class ExecucoesFiltrosAva extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

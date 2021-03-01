@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesExcluirDefinitivamentePO;
 
-public class ExecucoesExcluirDefinitivamente extends TestBaseEliel{
- 
+public class ExecucoesExcluirDefinitivamente extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	ExecucoesExcluirDefinitivamentePO execucoesExcluirDefinitivamentePO;
@@ -51,5 +51,5 @@ public class ExecucoesExcluirDefinitivamente extends TestBaseEliel{
 			assertTrue(sucesso.get(i), Eliminado);
 		}
 	}
-	
+
 }

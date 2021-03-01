@@ -35,15 +35,13 @@ public class MovimentoSCANCCriar extends TestBaseSteven {
 	//	driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = movimentoSCANCCriarPO.criar();
 
 		assertTrue(sucesso, Criar);

@@ -35,7 +35,7 @@ public class TipoDeTributoContaContabilCriar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tipoDeTributoContaContabilCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

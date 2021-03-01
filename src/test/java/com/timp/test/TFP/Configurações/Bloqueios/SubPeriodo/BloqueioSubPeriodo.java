@@ -15,25 +15,25 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class BloqueioSubPeriodo extends TestBaseCristhian{
-	  LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  BloqueioSubPeríodoCriarPO  bloqueioSubPeríodoCriarPO;
-	
-@BeforeClass
-public void beforeClass() {
-	  
-	  driver = initializationC();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  bloqueioSubPeríodoCriarPO = new BloqueioSubPeríodoCriarPO();
-}
+public class BloqueioSubPeriodo extends TestBaseCristhian {
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	BloqueioSubPeríodoCriarPO bloqueioSubPeríodoCriarPO;
 
-@AfterClass
-public void afterClass() {
-}
+	@BeforeClass
+	public void beforeClass() {
 
-@Test(priority = 0)
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		bloqueioSubPeríodoCriarPO = new BloqueioSubPeríodoCriarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -41,12 +41,12 @@ public void afterClass() {
 
 	@Test(priority = 1)
 	public void TFPEntrar() {
-		 acessarTFPPO .acessarTFP();
+		acessarTFPPO.acessarTFP();
 	}
-	
+
 	@Test(priority = 2)
 	public void criar() {
-		
+
 		ArrayList<Boolean> sucesso = bloqueioSubPeríodoCriarPO.criar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -535,8 +535,8 @@ public class AutomacoesMDRKen extends TestBaseKenssy {
 				"------SCANC > Ajuste de Transferencia----------");
 		ajusteDeTransferenciaExcluirEmMasa = new AjusteDeTransferenciaExcluirEmMasa();
 		ajusteDeTransferenciaExcluirEmMasa.beforeClass();
-		ajusteDeTransferenciaExcluirEmMasa.login();
-		ajusteDeTransferenciaExcluirEmMasa.acessarMDR();
+//		ajusteDeTransferenciaExcluirEmMasa.login();
+//		ajusteDeTransferenciaExcluirEmMasa.acessarMDR();
 		ajusteDeTransferenciaExcluirEmMasa.excluir();
 		ajusteDeTransferenciaExcluirEmMasa.afterClass();
 	}

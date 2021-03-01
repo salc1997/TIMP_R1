@@ -18,19 +18,19 @@ public class ContasEspeciaisIRPJCSLLCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Nova Conta Especial IRPJ/CSLL\"]")
 	public WebElement nuevoCoin;
 	
-	@FindBy(xpath = "//*[@id=\"form-container\"]/div/div[2]/table/tr[1]/td/div/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[contains(@class,\"empresa_0_0\")]/div/div/div/div[2]")
 	public WebElement Empresas;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]/div[2]")
+	@FindBy(xpath = "//*[@id=\"option-1\"]/div/label/span")
 	public WebElement numeroEmpresa;
 	
 	@FindBy(xpath = "//body")
 	public WebElement clickfuera;
 	
-	@FindBy(xpath = "//*[@id=\"form-container\"]/div/div[2]/table/tr[2]/td/div/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[contains(@class,\"taxes_0_1\")]/div/div/div/div[2]")
 	public WebElement Tributo;
 	
-	@FindBy(xpath = "//*[@id=\"option-2\"]/div[2]")
+	@FindBy(xpath = "//*[@id=\"option-2\"]/div/label/span")
 	public WebElement NumeroTributo;
 	
 	@FindBy(xpath = "//*[@id=\"form-container\"]/div/div[2]/table/tr[3]/td/div/div/div[2]/div/div[1]/div[2]/input")

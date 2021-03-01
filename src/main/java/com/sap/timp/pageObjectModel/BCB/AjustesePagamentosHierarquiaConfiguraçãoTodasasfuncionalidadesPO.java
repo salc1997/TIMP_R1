@@ -45,6 +45,8 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 	public WebElement bcb;
 	@FindBy(xpath = "//*[@id=\"login-btn\"]")
 	public WebElement botao;
+	
+	
 		//nova Herarquia
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;	
@@ -303,11 +305,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		PageFactory.initElements(driver, this);
 	}
 	
-		
-	
 	public boolean accesarTaa() {
-		
-		
 		String url = driver.getCurrentUrl();
 
 		boolean tp1  = false;
@@ -322,9 +320,8 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 			tp1 = true;
 		}
 		
-		
 		waitExpectXpath("//*[@id=\"home-icon\"]");
-		sleep(1000);
+		sleep(2000);
 		
 		while (!taa.isDisplayed()) {
 			flecha.click();
@@ -393,21 +390,22 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		
 		System.out.println("ID Primer Registro TAA: "+idTAA);
 		
+		home.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
 		return sucesso;	
 		
 	}
 	
 	public boolean accesarTpc() {
 		
-		home.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		
+		waitExpectXpath("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tpc.isDisplayed()) {
-			ar.click();
+			flecha.click();		
 		}
 		sleep(1000);
 		

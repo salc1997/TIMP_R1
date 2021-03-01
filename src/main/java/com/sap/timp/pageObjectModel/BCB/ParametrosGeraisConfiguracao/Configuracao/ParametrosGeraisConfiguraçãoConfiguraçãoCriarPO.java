@@ -175,12 +175,9 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseCri
 	}
 	
 	public ArrayList<Boolean> criarConfiguracao() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
 
-
-		
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -194,6 +191,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseCri
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		
 		nova.click();
 		sleep(3000);
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
@@ -207,7 +206,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseCri
 				.getText();
 
 		
-		nomeHirarquia.sendKeys("Prueba QA Visualizar");
+		nomeHirarquia.sendKeys("Teste QA PREUBA 007");
 
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
@@ -268,13 +267,12 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseCri
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//span[@id=\"textLabel\"]");
-		//sleep(2000);
+		sleep(3000);
 		
-//		ultimo.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		ultimo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 
 		rows = driver
 				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
@@ -285,17 +283,21 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseCri
 		String nome = driver.findElement(By.xpath(
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
 				.getText();
-		System.out.println("none: "+nome);
+		System.out.println(nome);
 
-		sucesso.add(nome.contains("191 - teste 99"));
-
+		//sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
+		sucesso.add(nome.contains("Teste QA PREUBA 007"));
 		idInserir1(id2);
 
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);
 
+		System.out.println("***********");
+		System.out.println("Hierarquia");
 		System.out.println("Id antes da criação: " + id1I);
 		System.out.println("Id Após a criação: " + id2I);
+		System.out.println("");
+		System.out.println("***********");
 
 		if (id2I > id1I) {
 			sucesso.add(true);

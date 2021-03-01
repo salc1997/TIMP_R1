@@ -33,6 +33,7 @@ public class ProcessodeNegócioCriarProcessocomTarefadeUsuário extends TestBaseCr
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   

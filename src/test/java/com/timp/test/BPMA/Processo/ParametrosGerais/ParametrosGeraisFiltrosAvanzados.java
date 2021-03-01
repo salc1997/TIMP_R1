@@ -35,6 +35,7 @@ public class ParametrosGeraisFiltrosAvanzados extends TestBaseKenssy {
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

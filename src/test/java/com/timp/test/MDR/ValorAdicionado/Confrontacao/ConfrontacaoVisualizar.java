@@ -34,11 +34,6 @@ public class ConfrontacaoVisualizar extends TestBaseMassiel {
 		driver.close();
 	}
 
-	/*
-	 * @Test(priority = 0) public void ingresar() { loginTC.login(); }
-	 * 
-	 * @Test(priority = 1) public void ingresarMDR() { accesarMDRPO.acessarMDR(); }
-	 */
 	@Test()
 	public void visualizar() {
 

@@ -33,6 +33,7 @@ public class GatewayEvento extends TestBaseCristhian{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   

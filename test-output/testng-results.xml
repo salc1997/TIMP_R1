@@ -1,322 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
-=======
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Kenssy
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-<<<<<<< HEAD
-=======
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
->>>>>>> refs/remotes/origin/Kenssy
-=======
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
->>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite started-at="2021-02-23T00:49:52Z" name="Default suite" finished-at="2021-02-23T00:54:30Z" duration-ms="277302">
-=======
-  <suite started-at="2021-02-22T20:02:12Z" name="Default suite" finished-at="2021-02-22T20:06:11Z" duration-ms="238651">
-=======
-<<<<<<< HEAD
-  <suite started-at="2021-02-19T20:00:28Z" name="Default suite" finished-at="2021-02-19T20:04:19Z" duration-ms="231287">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> refs/heads/Cristhian
-=======
-<<<<<<< HEAD
-  <suite started-at="2021-02-22T23:34:28Z" name="Default suite" finished-at="2021-02-22T23:36:06Z" duration-ms="97510">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-  <suite started-at="2021-02-22T16:57:14Z" name="Default suite" finished-at="2021-02-22T17:05:14Z" duration-ms="480052">
-=======
->>>>>>> refs/heads/Cristhian
-  <suite started-at="2021-02-19T17:28:57Z" name="Default suite" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
-<<<<<<< HEAD
-=======
-  <suite started-at="2021-02-19T21:37:43Z" name="Default suite" finished-at="2021-02-19T21:39:25Z" duration-ms="102104">
->>>>>>> refs/heads/Fernando
-=======
-  <suite started-at="2021-02-20T00:07:57Z" name="Default suite" finished-at="2021-02-20T00:11:35Z" duration-ms="218019">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-  <suite started-at="2021-02-23T04:11:14Z" name="Default suite" finished-at="2021-02-23T04:13:52Z" duration-ms="158440">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-  <suite started-at="2021-02-23T05:03:49Z" name="Default suite" finished-at="2021-02-23T05:04:49Z" duration-ms="59993">
->>>>>>> refs/remotes/origin/Yessy
-=======
-  <suite started-at="2021-02-23T20:17:47Z" name="Default suite" finished-at="2021-02-23T20:19:46Z" duration-ms="118947">
->>>>>>> refs/heads/Fernando
+  <suite started-at="2021-02-26T21:23:10Z" name="Default suite" finished-at="2021-02-26T21:24:37Z" duration-ms="87343">
     <groups>
     </groups>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test started-at="2021-02-23T00:49:52Z" name="Default test" finished-at="2021-02-23T00:54:30Z" duration-ms="277302">
-      <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:49:52Z" name="beforeClass" finished-at="2021-02-23T00:51:41Z" duration-ms="109212" status="PASS">
-=======
-    <test started-at="2021-02-22T20:02:12Z" name="Default test" finished-at="2021-02-22T20:06:11Z" duration-ms="238651">
-      <class name="com.timp.test.BRB.OutputAutomático">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.OutputAutomático@671a5887]" started-at="2021-02-22T20:02:12Z" name="beforeClass" finished-at="2021-02-22T20:02:30Z" duration-ms="17638" status="PASS">
-=======
-<<<<<<< HEAD
-    <test started-at="2021-02-19T20:00:28Z" name="Default test" finished-at="2021-02-19T20:04:19Z" duration-ms="231287">
-      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:00:28Z" name="beforeClass" finished-at="2021-02-19T20:00:45Z" duration-ms="17072" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> refs/heads/Cristhian
-=======
-<<<<<<< HEAD
-    <test started-at="2021-02-22T23:34:28Z" name="Default test" finished-at="2021-02-22T23:36:06Z" duration-ms="97510">
-      <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:34:28Z" name="beforeClass" finished-at="2021-02-22T23:34:40Z" duration-ms="11661" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-    <test started-at="2021-02-22T16:57:14Z" name="Default test" finished-at="2021-02-22T17:05:14Z" duration-ms="480052">
-      <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:14Z" name="beforeClass" finished-at="2021-02-22T16:57:29Z" duration-ms="15659" status="PASS">
-=======
->>>>>>> refs/heads/Cristhian
-    <test started-at="2021-02-19T17:28:57Z" name="Default test" finished-at="2021-02-19T17:33:13Z" duration-ms="255913">
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:28:57Z" name="beforeClass" finished-at="2021-02-19T17:29:09Z" duration-ms="11751" status="PASS">
-<<<<<<< HEAD
-=======
-    <test started-at="2021-02-19T21:37:43Z" name="Default test" finished-at="2021-02-19T21:39:25Z" duration-ms="102104">
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:37:43Z" name="beforeClass" finished-at="2021-02-19T21:37:59Z" duration-ms="15896" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-    <test started-at="2021-02-20T00:07:57Z" name="Default test" finished-at="2021-02-20T00:11:35Z" duration-ms="218019">
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:07:57Z" name="beforeClass" finished-at="2021-02-20T00:08:37Z" duration-ms="40003" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-    <test started-at="2021-02-23T04:11:14Z" name="Default test" finished-at="2021-02-23T04:13:52Z" duration-ms="158440">
-      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:11:14Z" name="beforeClass" finished-at="2021-02-23T04:12:04Z" duration-ms="49937" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-    <test started-at="2021-02-23T05:03:49Z" name="Default test" finished-at="2021-02-23T05:04:49Z" duration-ms="59993">
-      <class name="com.timp.test.CALENDAR.MultiplosUsuariosCalendar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:03:49Z" name="beforeClass" finished-at="2021-02-23T05:04:00Z" duration-ms="11507" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-    <test started-at="2021-02-23T20:17:47Z" name="Default test" finished-at="2021-02-23T20:19:46Z" duration-ms="118947">
-      <class name="com.timp.test.BSC.CorreçãodeNFVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFVisualizar@1ab06251]" started-at="2021-02-23T20:17:47Z" name="beforeClass" finished-at="2021-02-23T20:18:00Z" duration-ms="13239" status="PASS">
->>>>>>> refs/heads/Fernando
+    <test started-at="2021-02-26T21:23:10Z" name="Default test" finished-at="2021-02-26T21:24:37Z" duration-ms="87343">
+      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-02-26T21:23:10Z" name="beforeClass" finished-at="2021-02-26T21:23:28Z" duration-ms="17474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:51:42Z" name="login" finished-at="2021-02-23T00:52:05Z" duration-ms="23421" status="PASS">
-=======
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BRB.OutputAutomático@671a5887]" started-at="2021-02-22T20:02:30Z" name="editar" finished-at="2021-02-22T20:06:11Z" duration-ms="220975" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:00:45Z" name="login" finished-at="2021-02-19T20:00:55Z" duration-ms="10013" status="PASS">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> refs/heads/Cristhian
-=======
-<<<<<<< HEAD
-        <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:34:40Z" name="login" finished-at="2021-02-22T23:34:47Z" duration-ms="6665" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:29Z" name="login" finished-at="2021-02-22T16:57:38Z" duration-ms="8572" status="PASS">
-=======
->>>>>>> refs/heads/Cristhian
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:09Z" name="login" finished-at="2021-02-19T17:29:16Z" duration-ms="7175" status="PASS">
-<<<<<<< HEAD
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:37:59Z" name="login" finished-at="2021-02-19T21:38:08Z" duration-ms="8890" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:08:37Z" name="criar" finished-at="2021-02-20T00:10:55Z" duration-ms="138250" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:12:04Z" name="login" finished-at="2021-02-23T04:12:18Z" duration-ms="13998" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:00Z" name="login" finished-at="2021-02-23T05:04:07Z" duration-ms="6575" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFVisualizar@1ab06251]" started-at="2021-02-23T20:18:00Z" name="login" finished-at="2021-02-23T20:18:09Z" duration-ms="8587" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-02-26T21:23:28Z" name="login" finished-at="2021-02-26T21:23:44Z" duration-ms="16021" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.OutputAutomático@671a5887]" started-at="2021-02-22T20:06:11Z" name="afterClass" finished-at="2021-02-22T20:06:11Z" duration-ms="1" status="PASS">
-=======
-<<<<<<< HEAD
         </test-method> <!-- login -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:00:55Z" name="acessarBRE" finished-at="2021-02-19T20:01:13Z" duration-ms="18379" status="PASS">
-=======
-<<<<<<< HEAD
->>>>>>> refs/heads/Cristhian
-        </test-method> <!-- login -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:52:05Z" name="BPMAEntrar" finished-at="2021-02-23T00:52:45Z" duration-ms="39761" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:34:47Z" name="BPMAEntrar" finished-at="2021-02-22T23:35:00Z" duration-ms="13457" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:57:38Z" name="acessarTDK" finished-at="2021-02-22T16:58:34Z" duration-ms="56640" status="PASS">
-=======
->>>>>>> refs/heads/Cristhian
-        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:16Z" name="acessarBRE" finished-at="2021-02-19T17:29:32Z" duration-ms="16305" status="PASS">
-<<<<<<< HEAD
-=======
-        <test-method signature="acessarBRE()[pri:1, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:38:08Z" name="acessarBRE" finished-at="2021-02-19T21:38:25Z" duration-ms="17214" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:12:18Z" name="acessarTDK" finished-at="2021-02-23T04:13:20Z" duration-ms="62118" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-        <test-method signature="acessarCalendar()[pri:1, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:07Z" name="acessarCalendar" finished-at="2021-02-23T05:04:31Z" duration-ms="23654" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BSC.CorreçãodeNFVisualizar@1ab06251]" started-at="2021-02-23T20:18:09Z" name="brbEntrar" finished-at="2021-02-23T20:18:28Z" duration-ms="19593" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-02-26T21:23:44Z" name="BPMAEntrar" finished-at="2021-02-26T21:23:56Z" duration-ms="12150" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         </test-method> <!-- BPMAEntrar -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:2, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:52:45Z" name="criar" finished-at="2021-02-23T00:54:30Z" duration-ms="104832" status="PASS">
-=======
-=======
-<<<<<<< HEAD
-        </test-method> <!-- acessarTDK -->
-        <test-method signature="criar()[pri:2, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T16:58:34Z" name="criar" finished-at="2021-02-22T17:02:38Z" duration-ms="243756" status="PASS">
->>>>>>> refs/heads/Cristhian
-=======
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:2, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:35:00Z" name="criar" finished-at="2021-02-22T23:36:06Z" duration-ms="65659" status="FAIL">
-=======
-        </test-method> <!-- acessarCalendar -->
-        <test-method signature="Calendar()[pri:2, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:31Z" name="Calendar" finished-at="2021-02-23T05:04:49Z" duration-ms="18227" status="FAIL">
->>>>>>> refs/remotes/origin/Yessy
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="criar()[pri:1, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-02-26T21:23:56Z" name="criar" finished-at="2021-02-26T21:24:37Z" duration-ms="41586" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-<<<<<<< HEAD
-              <![CDATA[element not interactable
+              <![CDATA[element click intercepted: Element <foreignObject class="edit-btn" x="0.5" y="-7.5" height="15" width="15" tabindex="-100" style="opacity: 1;">...</foreignObject> is not clickable at point (816, 459). Other element would receive the click: <path class="listener-gat" d="M-8, -2L0, -8L8, -2L5, 7L-5, 7L-8, -2" fill="transparent" stroke="black" stroke-width="1"></path>
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+System info: host: 'MIGUEL', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56390}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2bb92f9e4ab271830d85e6a1c0be4fe9]]>
-=======
-              <![CDATA[element not interactable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: eb52a761284287e6567782779f347351]]>
->>>>>>> refs/remotes/origin/Yessy
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e0f10f06feefea36779cdb51fe5ac4d]]>
             </message>
             <full-stacktrace>
-<<<<<<< HEAD
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <foreignObject class="edit-btn" x="0.5" y="-7.5" height="15" width="15" tabindex="-100" style="opacity: 1;">...</foreignObject> is not clickable at point (816, 459). Other element would receive the click: <path class="listener-gat" d="M-8, -2L0, -8L8, -2L5, 7L-5, 7L-8, -2" fill="transparent" stroke="black" stroke-width="1"></path>
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+System info: host: 'MIGUEL', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56390}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2bb92f9e4ab271830d85e6a1c0be4fe9
-=======
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: eb52a761284287e6567782779f347351
->>>>>>> refs/remotes/origin/Yessy
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e0f10f06feefea36779cdb51fe5ac4d
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -336,8 +57,8 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.sap.timp.pageObjectModel.Calendar.MultiplosUsuariosCalendarPO.Calendario(MultiplosUsuariosCalendarPO.java:71)
-at com.timp.test.CALENDAR.MultiplosUsuariosCalendar.Calendar(MultiplosUsuariosCalendar.java:54)
+at com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.GatewayEventoPO.criar(GatewayEventoPO.java:203)
+at com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento.criar(GatewayEvento.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -365,214 +86,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-        </test-method> <!-- acessarBRE -->
-<<<<<<< HEAD
-        <test-method signature="editar()[pri:2, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:01:13Z" name="editar" finished-at="2021-02-19T20:04:15Z" duration-ms="181345" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method signature="criar()[pri:2, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:29:32Z" name="criar" finished-at="2021-02-19T17:33:13Z" duration-ms="220648" status="PASS">
-<<<<<<< HEAD
-=======
-        <test-method signature="criar()[pri:2, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:38:25Z" name="criar" finished-at="2021-02-19T21:39:25Z" duration-ms="60001" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-        </test-method> <!-- acessarTDK -->
-        <test-method signature="excluirEmMassa()[pri:2, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:13:20Z" name="excluirEmMassa" finished-at="2021-02-23T04:13:52Z" duration-ms="32366" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-        </test-method> <!-- brbEntrar -->
-        <test-method signature="visualizar()[pri:2, instance:com.timp.test.BSC.CorreçãodeNFVisualizar@1ab06251]" started-at="2021-02-23T20:18:28Z" name="visualizar" finished-at="2021-02-23T20:19:46Z" duration-ms="77487" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="table-data-wrapper"]/div[2]/div[5]/div[2]/a"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MIGUEL', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e98cec0f926db177fb8961cfd9f02239
-*** Element info: {Using=xpath, value=//div[@id="table-data-wrapper"]/div[2]/div[5]/div[2]/a}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="table-data-wrapper"]/div[2]/div[5]/div[2]/a"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MIGUEL', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e98cec0f926db177fb8961cfd9f02239
-*** Element info: {Using=xpath, value=//div[@id="table-data-wrapper"]/div[2]/div[5]/div[2]/a}
-at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy12.getText(Unknown Source)
-at com.sap.timp.pageObjectModel.BSC.CorreçãodeNFVisualizarPO.Visualizar(CorreçãodeNFVisualizarPO.java:183)
-at com.timp.test.BSC.CorreçãodeNFVisualizar.visualizar(CorreçãodeNFVisualizar.java:59)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
->>>>>>> refs/heads/Fernando
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@69fb6037]" started-at="2021-02-19T20:04:15Z" name="afterClass" finished-at="2021-02-19T20:04:19Z" duration-ms="4425" status="PASS">
-=======
-=======
->>>>>>> refs/remotes/origin/Kenssy
->>>>>>> refs/heads/Cristhian
         </test-method> <!-- criar -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@38604b81]" started-at="2021-02-23T00:54:30Z" name="afterClass" finished-at="2021-02-23T00:54:30Z" duration-ms="1" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.TarefasMultiplasEstagios@5e2c3d18]" started-at="2021-02-22T23:36:06Z" name="afterClass" finished-at="2021-02-22T23:36:06Z" duration-ms="0" status="PASS">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-        <test-method signature="lixeira()[pri:3, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:02:38Z" name="lixeira" finished-at="2021-02-22T17:04:00Z" duration-ms="81948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lixeira -->
-        <test-method signature="lixeiraDefinitiva()[pri:4, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:04:00Z" name="lixeiraDefinitiva" finished-at="2021-02-22T17:04:32Z" duration-ms="31697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lixeiraDefinitiva -->
-        <test-method signature="lixeiraExecucao()[pri:5, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:04:32Z" name="lixeiraExecucao" finished-at="2021-02-22T17:05:14Z" duration-ms="41740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lixeiraExecucao -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa@1356d4d4]" started-at="2021-02-22T17:05:14Z" name="afterClass" finished-at="2021-02-22T17:05:14Z" duration-ms="0" status="PASS">
-=======
->>>>>>> refs/heads/Cristhian
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@671a5887]" started-at="2021-02-19T17:33:13Z" name="afterClass" finished-at="2021-02-19T17:33:13Z" duration-ms="0" status="PASS">
-<<<<<<< HEAD
-=======
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir@3d246ea3]" started-at="2021-02-19T21:39:25Z" name="afterClass" finished-at="2021-02-19T21:39:25Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Fernando
-=======
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:10:55Z" name="excluirMassa" finished-at="2021-02-20T00:11:35Z" depends-on-methods="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa.criar" duration-ms="39744" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa@4241e0f4]" started-at="2021-02-20T00:11:35Z" name="afterClass" finished-at="2021-02-20T00:11:35Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-        </test-method> <!-- excluirEmMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa@38604b81]" started-at="2021-02-23T04:13:52Z" name="afterClass" finished-at="2021-02-23T04:13:52Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-        </test-method> <!-- Calendar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.MultiplosUsuariosCalendar@273444fe]" started-at="2021-02-23T05:04:49Z" name="afterClass" finished-at="2021-02-23T05:04:49Z" duration-ms="0" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
-=======
-        </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BSC.CorreçãodeNFVisualizar@1ab06251]" started-at="2021-02-23T20:19:46Z" name="afterClass" finished-at="2021-02-23T20:19:46Z" duration-ms="0" status="PASS">
->>>>>>> refs/heads/Fernando
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-02-26T21:24:37Z" name="afterClass" finished-at="2021-02-26T21:24:37Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.CALENDAR.TarefasMultiplasEstagios -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.OutputAutomático -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
-=======
->>>>>>> refs/heads/Cristhian
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
-<<<<<<< HEAD
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.CALENDAR.MultiplosUsuariosCalendar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

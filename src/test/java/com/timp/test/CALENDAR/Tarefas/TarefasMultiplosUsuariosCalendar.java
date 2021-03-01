@@ -1,11 +1,11 @@
-package com.timp.test.CALENDAR;
+package com.timp.test.CALENDAR.Tarefas;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
-import com.sap.timp.pageObjectModel.Calendar.MultiplosUsuariosCalendarPO;
+import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasMultiplosUsuariosCalendarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,24 +15,24 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class MultiplosUsuariosCalendar extends TestBaseMassiel{
+public class TarefasMultiplosUsuariosCalendar extends TestBaseMassiel{
 	
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
-	MultiplosUsuariosCalendarPO multiplosUsuariosCalendarPO;
+	TarefasMultiplosUsuariosCalendarPO multiplosUsuariosCalendarPO;
  
   @BeforeClass
   public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
-		multiplosUsuariosCalendarPO = new MultiplosUsuariosCalendarPO();
+		multiplosUsuariosCalendarPO = new TarefasMultiplosUsuariosCalendarPO();
 		
   }
 
   @AfterClass
   public void afterClass() {
-	 // driver.close();
+	  driver.close();
   }
 
   @Test(priority = 0)

@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.Calendar;
+package com.sap.timp.pageObjectModel.Calendar.Tarefas;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class MultiplosUsuariosCalendarPO extends TestBaseMassiel{
+public class TarefasMultiplosUsuariosCalendarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[@class=\"btn icon icon-font-Sign-and-Symbols icon-persign closeButton\"]")
 	public WebElement fechar;
@@ -17,7 +17,7 @@ public class MultiplosUsuariosCalendarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Calendário\"]")
 	public WebElement calendario;
 	
-	public MultiplosUsuariosCalendarPO() {
+	public TarefasMultiplosUsuariosCalendarPO() {
 
 		PageFactory.initElements(driver, this);
 	}

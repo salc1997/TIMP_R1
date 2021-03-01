@@ -71,6 +71,7 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
 =======
       <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa">
@@ -116,8 +117,18 @@
 =======
           <include name="excluirEmMassa"/>
           <include name="criar"/>
+=======
+      <class name="com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades">
+        <methods>
+          <include name="editarConfiguracion"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa">
         <methods>
@@ -567,6 +578,9 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Prueba1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

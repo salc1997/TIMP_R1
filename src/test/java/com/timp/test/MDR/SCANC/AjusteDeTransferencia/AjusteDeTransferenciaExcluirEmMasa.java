@@ -36,6 +36,7 @@ public class AjusteDeTransferenciaExcluirEmMasa extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
+<<<<<<< HEAD
 		driver.close();
 	}
 
@@ -48,6 +49,9 @@ public class AjusteDeTransferenciaExcluirEmMasa extends TestBaseSteven {
 	public void acessarMDR() {
 		accesarMDR.acessarMDR();
 
+=======
+		//driver.close();
+>>>>>>> refs/remotes/origin/Kenssy
 	}
 
 	@Test()

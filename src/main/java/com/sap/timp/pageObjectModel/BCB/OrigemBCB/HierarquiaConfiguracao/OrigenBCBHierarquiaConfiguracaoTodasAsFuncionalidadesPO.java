@@ -1427,10 +1427,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			opcCampoSaida5tc2.click();
 			opcCampoSaida5tc2.sendKeys(Keys.ESCAPE);
 			sleep(3000);
+		}else if(tq1==true) {
+			opcCampoSaida5tc2.click();
+			opcCampoSaida5tc2.sendKeys(Keys.ESCAPE);
+			sleep(3000);
 		}else {
-		opcCampoSaida5.click();
-		opcCampoSaida5.sendKeys(Keys.ESCAPE);
-		sleep(3000);
+			opcCampoSaida5.click();
+			opcCampoSaida5.sendKeys(Keys.ESCAPE);
+			sleep(3000);
 		}
 		zerado5.click();
 		sleep(3000);

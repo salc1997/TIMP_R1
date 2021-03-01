@@ -34,7 +34,7 @@ public class ParametrosGeraisHierarquiaCriar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 0)
@@ -63,52 +63,4 @@ public class ParametrosGeraisHierarquiaCriar extends TestBaseCristhian {
 		}
 		
 	}
-	
-//	@Test(priority = 3)
-//	public void criarConfiguracao() {
-//		
-//		//hierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracao();
-//
-//		
-//
-//	@Test(priority = 4)
-//	public void executar() {
-//		
-//		hierarquiaConfiguracaoTodasAsFuncionalidadesPO.executar();
-//		/*
-//		ArrayList<Boolean> subNivel1 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subnivel1Verificacao();
-//		
-//		for (int i = 0; i < subNivel1.size(); i++) {
-//			assertTrue(subNivel1.get(i), "Erro no Subnivel 1");
-//		}
-//		
-//		ArrayList<Boolean> subNivel2 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel2();
-//		
-//		for (int i = 0; i < subNivel2.size(); i++) {
-//			assertTrue(subNivel2.get(i), "Erro no Subnivel 2");
-//		}
-//		
-//		ArrayList<Boolean> subNivel3 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel3();
-//		
-//		for (int i = 0; i < subNivel3.size(); i++) {
-//			assertTrue(subNivel3.get(i), "Erro no Subnivel 3");
-//		}
-//		*/
-//		
-//		ArrayList<Boolean> subNivel4 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel4();
-//		
-//		for (int i = 0; i < subNivel4.size(); i++) {
-//			assertTrue(subNivel4.get(i), "Erro no Subnivel 4");
-//		}
-//		
-//		boolean subNivel5 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel5();
-//		
-//		assertTrue(subNivel5, "Erro no Subnivel 5");
-//		
-//		
-//		
-//		
-//		
-//	}
-
 }

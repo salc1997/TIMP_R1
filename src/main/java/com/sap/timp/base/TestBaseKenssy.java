@@ -43,11 +43,19 @@ public class TestBaseKenssy extends TestBaseSteven{
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 
-
-		driver.get(tq1);
-
+		driver.get(tc2);
 
 		return driver;
+	}
+	
+	
+	
+	public String diaDespues() {
+		DateFormat df = new SimpleDateFormat ("dd");
+		Calendar cal = Calendar.getInstance();
+		cal.add (Calendar.DATE, +1);
+		
+		return df.format(cal.getTime());
 	}
 
 	public String capitalize(String cadena) {

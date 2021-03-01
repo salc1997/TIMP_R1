@@ -113,7 +113,7 @@ public class CompatibilidadeEntreFPASEditarPO extends TestBaseKenssy{
 		sleep(1000);
 		
 		
-		boolean sucesso = nuevoTexto.equals(enviar);
+		boolean sucesso = nuevoTexto.contains(enviar);
 		System.out.println(sucesso);
 
 		return sucesso;

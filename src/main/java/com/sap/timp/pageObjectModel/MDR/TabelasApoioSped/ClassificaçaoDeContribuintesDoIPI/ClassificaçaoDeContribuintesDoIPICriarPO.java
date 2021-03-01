@@ -86,10 +86,10 @@ public class ClassificaçaoDeContribuintesDoIPICriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tipodeatividade.sendKeys("33011");
+		tipodeatividade.sendKeys("3411");
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA0 011");
+		descricao.sendKeys("Teste QA431");
 		sleep(2000);
 		String data= fechaActual();
 		

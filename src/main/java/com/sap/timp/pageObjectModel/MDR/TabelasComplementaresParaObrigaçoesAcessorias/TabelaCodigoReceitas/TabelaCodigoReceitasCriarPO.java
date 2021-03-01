@@ -98,7 +98,7 @@ public class TabelaCodigoReceitasCriarPO extends TestBaseMassiel{
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		codigoReceita.sendKeys("33709323");
+		codigoReceita.sendKeys("3537509323");
 		sleep(1000);
 		descricao.sendKeys("Teste de Tabela de Código da Receita0 9993");
 		sleep(1000);
@@ -129,18 +129,21 @@ public class TabelaCodigoReceitasCriarPO extends TestBaseMassiel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir("TabelaCodigoReceitas", idB);
+		
+			
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);
 		
 		double idD = convertToDouble(id);
 		double idBD = convertToDouble(idB);
+		
 		//compara pra ver se o novo id criado é realmente o ultimo
 		boolean sucesso = false;
 		
 		if (idBD > idD) {
 			sucesso = true;
+			idInserir1(idB);
 		}else {
 			sucesso = false;
 		}

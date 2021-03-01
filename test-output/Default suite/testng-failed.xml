@@ -64,11 +64,20 @@
 >>>>>>> refs/remotes/origin/Eliel
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
 =======
+      <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa">
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.CALENDAR.Tarefas.TarefasExecutarConfiguracaoBFB">
+=======
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes">
+>>>>>>> refs/heads/Cristhian
         <methods>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
       <class name="com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId">
@@ -133,6 +142,22 @@
           <include name="InformacaoBlocoApuracao"/>
           <include name="EditarBlocoApuracao"/>
 =======
+<<<<<<< HEAD
+=======
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes -->
+=======
+      <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+>>>>>>> refs/heads/Cristhian
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Kenssy
@@ -264,6 +289,13 @@
 >>>>>>> refs/remotes/origin/master
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

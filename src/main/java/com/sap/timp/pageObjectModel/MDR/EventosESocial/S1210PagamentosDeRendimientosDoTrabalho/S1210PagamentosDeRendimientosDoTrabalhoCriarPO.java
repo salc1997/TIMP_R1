@@ -110,7 +110,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoCriarPO extends TestBaseFern
 		
 		tipoDeEvento.click();
 		sleep(1000);
-		tipoDeEvento.sendKeys("12345");
+		tipoDeEvento.sendKeys("55545");
 		sleep(2000);
 		
 		status.click();
@@ -130,7 +130,7 @@ public class S1210PagamentosDeRendimientosDoTrabalhoCriarPO extends TestBaseFern
 		
 		nrRecibo.click();
 		sleep(1000);
-		nrRecibo.sendKeys("143523");
+		nrRecibo.sendKeys("555523");
 		sleep(2000);
 		
 		periodoDeApuracao.click();
@@ -145,17 +145,17 @@ public class S1210PagamentosDeRendimientosDoTrabalhoCriarPO extends TestBaseFern
 		
 		logSys.click();
 		sleep(1000);
-		logSys.sendKeys("123456");
+		logSys.sendKeys("553456");
 		sleep(2000);
 		
 		versãoDoProcesso.click();
 		sleep(1000);
-		versãoDoProcesso.sendKeys("12345");
+		versãoDoProcesso.sendKeys("15345");
 		sleep(2000);
 		
 		nrInscEvent.click();
 		sleep(1000);
-		nrInscEvent.sendKeys("123452");
+		nrInscEvent.sendKeys("153452");
 		sleep(2000);
 		
 		cboIndicativoApuração.click();

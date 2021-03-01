@@ -51,7 +51,11 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 
 
+<<<<<<< HEAD
 		driver.get(tq1);
+=======
+		driver.get(tc2);
+>>>>>>> refs/heads/Cristhian
 
 
 	   return driver;

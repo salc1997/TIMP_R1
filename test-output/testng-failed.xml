@@ -3,137 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.CALENDAR.TarefasMultiplasEstagios">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.OutputAutomático">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar">
-=======
-      <class name="com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      <class name="com.timp.test.CALENDAR.MultiplosUsuariosCalendar">
->>>>>>> refs/remotes/origin/Yessy
+      <class name="com.timp.test.DFG.SPED.ECD.ECDFuncionalidades">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      <class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa">
-=======
->>>>>>> refs/heads/Cristhian
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção">
-<<<<<<< HEAD
-=======
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-        <methods>
-<<<<<<< HEAD
-=======
-=======
-          <include name="excluirEmMassa"/>
-          <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Kenssy
-=======
-          <include name="Calendar"/>
->>>>>>> refs/remotes/origin/Yessy
+          <include name="ExecucaoBlocoApuracao"/>
+          <include name="EditarECD"/>
+          <include name="InformacaoBlocoApuracao"/>
+          <include name="EditarBlocoApuracao"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
->>>>>>> refs/heads/Cristhian
+          <include name="executarECD"/>
+          <include name="visualizarBlocoApuracao"/>
+          <include name="visualizarAtualizacoesBlocoApuracao"/>
+          <include name="excluirVariante"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-=======
-          <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Yessy
+          <include name="arquivosVerificar"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.OutputAutomático -->
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecuçõesExecuçõesPúblicasLixeiraemMassa -->
-=======
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-          <include name="editar"/>
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Cristhian
-          <include name="beforeClass"/>
->>>>>>> refs/heads/Fernando
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-          <include name="excluirMassa"/>
->>>>>>> refs/heads/Cristhian
-          <include name="criar"/>
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Kenssy
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-          <include name="criar"/>
->>>>>>> refs/heads/Fernando
-=======
-          <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Kenssy
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.CALENDAR.TarefasMultiplasEstagios -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.RegrasDeMensagensEditar -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.RegrasdeAuditoriaN2Correção -->
-<<<<<<< HEAD
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/master
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassa -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.CALENDAR.MultiplosUsuariosCalendar -->
->>>>>>> refs/remotes/origin/Yessy
+      </class> <!-- com.timp.test.DFG.SPED.ECD.ECDFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

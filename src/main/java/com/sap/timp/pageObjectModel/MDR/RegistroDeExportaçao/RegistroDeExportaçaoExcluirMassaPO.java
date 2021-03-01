@@ -128,11 +128,11 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);		
 		opcaofilial2.click();
 		
-		llenarDatos();
+		llenarDatoss();
 	}
 	
-	public void llenarDatos() {	
-		docnum.sendKeys("0123456789");
+	public void llenarDatoss() {	
+		docnum.sendKeys("0123457777");
 		
 		chavenfe.sendKeys("12345");
 		
@@ -159,6 +159,38 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBaseFernando{
 		preenchamodelo.sendKeys("12");
 		
 		notafiscal.sendKeys("123456789");
+		
+		dataemissaonf.sendKeys(data);
+	}
+	
+	public void llenarDatos() {	
+		docnum.sendKeys("0123456789");
+		
+		chavenfe.sendKeys("12385");
+		
+		codigoitem.sendKeys("123488");
+		
+		codpais.sendKeys("002");
+		
+		String  data =fechaActual();
+		
+		datalancamento.sendKeys(data);
+		
+		numerodeclaracao.sendKeys("13");
+		
+		datadeclaracao.sendKeys(data);
+		
+		tipodocexportacao.sendKeys("1");
+		
+		naturezadaexportacao.sendKeys("3");
+		
+		dataaverbacao.sendKeys(data);
+		
+		tipodeconhecembarque.sendKeys("85");
+		
+		preenchamodelo.sendKeys("12");
+		
+		notafiscal.sendKeys("1234567777");
 		
 		dataemissaonf.sendKeys(data);
 	}

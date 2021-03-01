@@ -18,7 +18,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement home;
 	
-	@FindBy(xpath = "//div[@class=\"baseTabs-view-wrapper\"]/div /div[1]/div/div[1]")
+	@FindBy(xpath = "//div[@class=\"baseTabs-view-wrapper\"]/div /div[1]/div/div[1]/div/div[1]")
 	public WebElement raiz;
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-wrapper\"]/div /div[1]/div/div[1]/div/div[1]")
@@ -537,7 +537,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -790,9 +790,9 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -1122,7 +1122,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 			
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
 
 			Opc3 .click();
 			sleep(2000);
@@ -1154,10 +1154,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
 			sleep(2000);
 			
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
 
 			Opc5 .click();
 			sleep(2000);
@@ -1372,7 +1372,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 
-			WebElement raizABA = driver.findElement(By.xpath("//div[@class=\"baseTabs-view-wrapper\"]/div /div[2]/div/div[1]"));
+			WebElement raizABA = driver.findElement(By.xpath("//div[@class=\"baseTabs-view-wrapper\"]/div/div[2]/div/div[1]/div/div[1]"));
 
 			raizABA .click();
 			sleep(2000);
@@ -2189,27 +2189,23 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(2000);
 		
 		nomeAN4.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		
 		nomeAN4.sendKeys("Test AN4 Massiel");
 		nomeAN4.sendKeys(Keys.ENTER);
 		
 		referenciaAN4.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		
 		AN4OPC.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(2000);
+	
 		
 		leiauteReferenciaAN4.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		
 		String idRegistro = idObter2();
 		System.out.println("leiaute criado"+idRegistro);
@@ -2220,22 +2216,19 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
 
 		Opc .click();
-		sleep(4000);
+		sleep(2000);
 		
 		versaoAN4.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		
 		AN4OPC.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		
 		
 		configuracionReferenciaAN4.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		
 		String idRegistro1 = idObter7();
 		System.out.println("Configuracion Referencia"+idRegistro1);
@@ -2248,17 +2241,21 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		Opc1.click();
 		sleep(4000);
 		
+		actionsMoveToElementElement(adicionarFiltroReferenciaAN4);
+		sleep(4000);
+		
 		adicionarFiltroReferenciaAN4.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		
 		if (tq1 == true) {
 
+			WebElement flecha = driver.findElement(By.xpath("//div[@class=\"wrapper small\"]/div[1]/div[1]"));
+			
 			calendario.click();
 			sleep(3000);
 			
-			flechacalendario.click();
+			flecha.click();
 			sleep(3000);
 			
 			anio.click();
@@ -2316,8 +2313,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		arquivoReferênciaAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 		
 		String idRegistro2 = idObter9();
 		System.out.println("Arquivo executado primero"+idRegistro2);
@@ -2333,18 +2329,15 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	
 		comperacaoAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
 		
 		AN4OPC2.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		
 		
 		leiauteComperacaoAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		
 		
 		String idRegistro3 = idObter3();
 		System.out.println("Leiaute Comparacao "+idRegistro3);
@@ -2359,18 +2352,15 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		versaoAN42.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		
 		
 		AN4OPC.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		
 		
 		configuracaoComparacaoAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		
 		
 		String idRegistro4 = idObter8();
 		System.out.println("Configuracao Comparacao"+idRegistro4);
@@ -2381,12 +2371,14 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc4 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro4+"\")]"));
 
 		Opc4.click();
-		sleep(4000);
+		sleep(8000);
+		
+		actionsMoveToElementElement(adicionarFiltroComperacaoAN4);
+		sleep(2000);
 		
 		adicionarFiltroComperacaoAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+	
 		
 
 		if (tq1 == true) {
@@ -2452,8 +2444,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		arquivoComparacaoAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 		
 		String idRegistro5 = idObter10();
 		System.out.println("Arquivo executado de Segundo"+idRegistro5);
@@ -2468,8 +2459,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		regraAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 		
 		String idRegistro6 = idObter5();
 		System.out.println("Regra de An4"+idRegistro6);
@@ -2486,13 +2476,11 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		criarAN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 		
 		aN4.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
 		
 		if (tq1 == true) {
 

@@ -18,7 +18,7 @@ public class ConfiguracoesFavoritos extends TestBaseFernando{
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initialization();
+		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		configuracoesFavoritosPO = new ConfiguracoesFavoritosPO();
@@ -26,7 +26,7 @@ public class ConfiguracoesFavoritos extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 	@Test(priority = 0)

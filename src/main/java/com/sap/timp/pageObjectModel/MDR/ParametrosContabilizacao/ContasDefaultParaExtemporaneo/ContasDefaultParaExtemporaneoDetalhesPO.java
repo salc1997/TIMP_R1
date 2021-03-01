@@ -221,7 +221,7 @@ public class ContasDefaultParaExtemporaneoDetalhesPO extends TestBaseEliel {
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(empresaV1.contains(empresaD1));
-		sucesso.add(filialV1.contains(filialD1));
+		sucesso.add(filialD1.contains(filialV1));
 		sucesso.add(codigoAjusteV1.contains(codigoAjusteD1));
 		sucesso.add(descricaoV1.contains(descricaoD1));
 		sucesso.add(tipoAjusteV1.contains(tipoAjusteD1));

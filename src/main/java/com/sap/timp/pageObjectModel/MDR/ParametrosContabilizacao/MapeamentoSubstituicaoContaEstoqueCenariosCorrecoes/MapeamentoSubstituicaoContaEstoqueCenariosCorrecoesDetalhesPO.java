@@ -111,7 +111,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO exten
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyXpath("//input[contains(@placeholder,\"IVA\")]", "value");
+		
 		sleep(2000);
 
 

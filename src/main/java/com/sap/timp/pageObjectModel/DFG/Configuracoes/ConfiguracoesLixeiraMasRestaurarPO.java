@@ -12,7 +12,7 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Display-and-Setting icon-setting padding-right \"]")
 	public WebElement configuracoes;
 	
-	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[3]/div[3]/span")
+	@FindBy(xpath = "//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[2]/div/div[1]/div/div[1]")
 	public WebElement raiz;
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
 	public WebElement btnFiltrosAvanzados;

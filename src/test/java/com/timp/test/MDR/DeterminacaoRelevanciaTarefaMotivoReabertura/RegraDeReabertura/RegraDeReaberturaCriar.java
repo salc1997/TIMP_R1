@@ -32,7 +32,7 @@ public class RegraDeReaberturaCriar extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

@@ -30,7 +30,7 @@ public class TiposDeDependentesExcluirMassa extends TestBaseFernando {
 	public void afterClass() {
 		driver.close();
 	}
-
+	
 	@Test()
 	public void criar() {
 		loginTC.login();
@@ -39,7 +39,7 @@ public class TiposDeDependentesExcluirMassa extends TestBaseFernando {
 		boolean sucesso = tiposDeDependentesExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-
+	
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = tiposDeDependentesExcluirMassaPO.exluirMassa();

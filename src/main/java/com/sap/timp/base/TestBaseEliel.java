@@ -48,7 +48,6 @@ public class TestBaseEliel extends TestBaseSteven {
 		driver.get(tc2);
 
 
-
 		return driver;
 
 	}

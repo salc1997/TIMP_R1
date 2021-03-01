@@ -40,7 +40,7 @@ public class SubcapitalizacaoExcluirEmMassa extends TestBaseEliel {
 	}
 	
 	@Test(dependsOnMethods = "criar")
-	public void excluirEmMassa() {
+	public void excluir() {		
 		boolean sucesso2 = subcapitalizacaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}

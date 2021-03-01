@@ -33,14 +33,13 @@ public class PaisesExcluirMassa extends TestBaseFernando {
 	
 	@Test()
 	public void criar() {
-
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = paisesExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-
+	
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = paisesExcluirMassaPO.exluirMassa();

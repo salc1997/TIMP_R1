@@ -35,7 +35,7 @@ public class FinanciamientoDeAposEspExcluiMassa extends TestBaseCristhian {
 	}
 
 	@Test()
-	public void criar() {	
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -43,7 +43,7 @@ public class FinanciamientoDeAposEspExcluiMassa extends TestBaseCristhian {
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(dependsOnMethods = "criar")	
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso1 = financiamientoDeAposEspExcluiMassaPO.exluirMassa();
 		assertTrue(sucesso1, Eliminado);

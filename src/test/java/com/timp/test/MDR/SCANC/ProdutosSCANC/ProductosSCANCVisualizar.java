@@ -37,11 +37,9 @@ public class ProductosSCANCVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

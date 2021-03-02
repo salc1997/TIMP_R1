@@ -35,7 +35,7 @@ public class TabelaDeEstoqueParaRegistro12Excluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeEstoqueParaRegistro12ExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

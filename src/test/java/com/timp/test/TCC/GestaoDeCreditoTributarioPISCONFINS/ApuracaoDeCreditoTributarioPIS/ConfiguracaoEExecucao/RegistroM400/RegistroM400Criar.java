@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM400.RegistroM400CriarPO;
 
-public class RegistroM400Criar extends TestBaseEliel{
-  
+public class RegistroM400Criar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM400CriarPO registroM400CriarPO;
@@ -31,17 +31,16 @@ public class RegistroM400Criar extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
 		boolean sucesso = registroM400CriarPO.criar();
 
 		assertTrue(sucesso, Criar);
 	}
-	
+
 }

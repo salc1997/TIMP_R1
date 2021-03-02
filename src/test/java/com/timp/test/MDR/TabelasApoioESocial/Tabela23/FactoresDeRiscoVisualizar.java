@@ -17,29 +17,27 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class FactoresDeRiscoVisualizar extends TestBaseCristhian {
-	
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FactoresDeRiscoVisualizarPO factoresDeRiscoVisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	driver = initialization();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	factoresDeRiscoVisualizarPO = new FactoresDeRiscoVisualizarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		factoresDeRiscoVisualizarPO = new FactoresDeRiscoVisualizarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

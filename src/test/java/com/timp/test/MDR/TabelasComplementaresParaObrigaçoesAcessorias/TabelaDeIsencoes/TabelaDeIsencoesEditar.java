@@ -35,7 +35,7 @@ public class TabelaDeIsencoesEditar extends TestBaseEliel {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeIsencoesEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

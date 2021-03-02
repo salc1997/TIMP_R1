@@ -25,12 +25,12 @@ public class ConfiguraçãoeExecuçãoEditar extends TestBaseCristhian {
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		configuraçãoeExecuçãoEditarPO = new 	ConfiguraçãoeExecuçãoEditarPO();
+		configuraçãoeExecuçãoEditarPO = new ConfiguraçãoeExecuçãoEditarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -49,7 +49,7 @@ public class ConfiguraçãoeExecuçãoEditar extends TestBaseCristhian {
 	@Test(priority = 2)
 	public void Editar() {
 
-		boolean sucesso = 	configuraçãoeExecuçãoEditarPO.Editar();
+		boolean sucesso = configuraçãoeExecuçãoEditarPO.Editar();
 
 		assertTrue(sucesso, Editar);
 	}

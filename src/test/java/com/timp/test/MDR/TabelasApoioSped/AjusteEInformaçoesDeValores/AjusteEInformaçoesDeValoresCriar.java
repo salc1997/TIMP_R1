@@ -33,19 +33,17 @@ public class AjusteEInformaçoesDeValoresCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		// ajusteEInformaçoesDeValoresCriarPO.criar();
 
 		boolean sucesso = ajusteEInformaçoesDeValoresCriarPO.criar();
-		;
+
 		assertTrue(sucesso, semAcesso);
 
 	}

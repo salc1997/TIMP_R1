@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM400.RegistroM400VisualizarPO;
 
-public class RegistroM400Visualizar extends TestBaseEliel{
- 
+public class RegistroM400Visualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM400VisualizarPO registroM400VisualizarPO;
@@ -30,7 +30,7 @@ public class RegistroM400Visualizar extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -55,5 +55,5 @@ public class RegistroM400Visualizar extends TestBaseEliel{
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
-	
+
 }

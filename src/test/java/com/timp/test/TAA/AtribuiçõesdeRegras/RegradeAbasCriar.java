@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 
 public class RegradeAbasCriar extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTAAPO  acessarTAAPO;
+	AcessarTAAPO acessarTAAPO;
 	RegradeAbasCriarPO regradeAbasCriarPO;
 
 	@BeforeClass
@@ -29,7 +29,7 @@ public class RegradeAbasCriar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

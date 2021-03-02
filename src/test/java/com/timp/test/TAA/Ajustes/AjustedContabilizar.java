@@ -13,39 +13,39 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AjustedContabilizar extends TestBaseMassiel{
-	
+public class AjustedContabilizar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
-	 AjustedContabilizarPO  ajustedContabilizarPO;
+	AjustedContabilizarPO ajustedContabilizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
-		acessarTAAPO  = new AcessarTAAPO();
+		acessarTAAPO = new AcessarTAAPO();
 		ajustedContabilizarPO = new AjustedContabilizarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void ingresar() {
 		loginTC.login();
 	}
 
-@Test(priority = 1)
+	@Test(priority = 1)
 	public void TAAEntrar() {
-	  acessarTAAPO.acessarTAA();
+		acessarTAAPO.acessarTAA();
 
 	}
 
-@Test(priority = 2)
+	@Test(priority = 2)
 	public void ajustesContabilizar() {
-  boolean sucesso = ajustedContabilizarPO.contabilizar();
-	assertTrue(sucesso, Criar);
+		boolean sucesso = ajustedContabilizarPO.contabilizar();
+		assertTrue(sucesso, Criar);
 
 	}
 

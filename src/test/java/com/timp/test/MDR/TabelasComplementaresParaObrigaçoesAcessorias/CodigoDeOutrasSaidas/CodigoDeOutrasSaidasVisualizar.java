@@ -35,7 +35,6 @@ public class CodigoDeOutrasSaidasVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
 		loginTC.login();

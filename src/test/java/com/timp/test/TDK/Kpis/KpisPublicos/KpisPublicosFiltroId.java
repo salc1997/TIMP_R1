@@ -15,24 +15,24 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisPublicosFiltroId extends TestBaseMassiel{
+public class KpisPublicosFiltroId extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisPublicosFiltroIdPO kpisPublicosFiltroIdPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisPublicosFiltroIdPO = new KpisPublicosFiltroIdPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,14 +41,14 @@ public class KpisPublicosFiltroId extends TestBaseMassiel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void filtro() {
-		
+
 		ArrayList<Boolean> sucesso = kpisPublicosFiltroIdPO.FiltroID();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),Filtros);
+			assertTrue(sucesso.get(i), Filtros);
 		}
-		
+
 	}
 }

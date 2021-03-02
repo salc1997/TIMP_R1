@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 @Test
-public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar extends TestBaseMassiel{
+public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;

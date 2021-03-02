@@ -15,39 +15,37 @@ public class AprovacaoDeDocumentosExcluir extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	AprovacaoDeDocumentosExcluirPO aprovacaoDeDocumentosExcluirPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  aprovacaoDeDocumentosExcluirPO = new  AprovacaoDeDocumentosExcluirPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		aprovacaoDeDocumentosExcluirPO = new AprovacaoDeDocumentosExcluirPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void excluir() {
-	 		
-	 		boolean sucesso = aprovacaoDeDocumentosExcluirPO.excluir();
-			assertTrue(sucesso, Eliminado);
-		
-	 		
-	 	}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void TBDEntrar() {
+		acessarTBDPO.acessarTBD();
+
+	}
+
+	@Test(priority = 1)
+	public void excluir() {
+
+		boolean sucesso = aprovacaoDeDocumentosExcluirPO.excluir();
+		assertTrue(sucesso, Eliminado);
+
+	}
 }

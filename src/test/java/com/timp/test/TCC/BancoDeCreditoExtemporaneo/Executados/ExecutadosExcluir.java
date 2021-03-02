@@ -13,9 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluirPO;
 
-public class ExecutadosExcluir extends TestBaseEliel{
-  
-	
+public class ExecutadosExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ExecutadosExcluirPO executadosExcluirPO;
@@ -30,7 +29,7 @@ public class ExecutadosExcluir extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -50,6 +49,6 @@ public class ExecutadosExcluir extends TestBaseEliel{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-		
+
 	}
 }

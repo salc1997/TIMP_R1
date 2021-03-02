@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class Registro1600Excluir extends TestBaseCristhian{
+public class Registro1600Excluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1600ExcluirPO registro1600ExcluirPO;
@@ -30,7 +30,7 @@ public class Registro1600Excluir extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -53,5 +53,5 @@ public class Registro1600Excluir extends TestBaseCristhian{
 
 		assertTrue(sucesso, Eliminado);
 	}
-	
+
 }

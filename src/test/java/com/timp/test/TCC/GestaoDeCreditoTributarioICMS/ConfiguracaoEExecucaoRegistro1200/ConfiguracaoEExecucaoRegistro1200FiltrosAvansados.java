@@ -16,24 +16,24 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansados extends TestBaseMassiel {
-	
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO configuracaoEExecucaoRegistro1200FiltrosAvansadosPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuracaoEExecucaoRegistro1200FiltrosAvansadosPO = new ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -45,26 +45,26 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansados extends TestBaseM
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void criar() {
 
 		configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.filtros();
-		
-		 ArrayList<Boolean> empresa = configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.Empresa();
-		  for (int i = 0; i < empresa .size(); i++) {
-			  assertTrue(empresa .get(i), Filtros);
-		  }
-		  
-		  ArrayList<Boolean> uf = configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.Uf();
-		  for (int i = 0; i < uf .size(); i++) {
-			  assertTrue(uf .get(i), Filtros);
-		  }
-		  
-		  ArrayList<Boolean> filial = configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.Filial();
-		  for (int i = 0; i < filial .size(); i++) {
-			  assertTrue(filial .get(i), Filtros);
-		  }
+
+		ArrayList<Boolean> empresa = configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.Empresa();
+		for (int i = 0; i < empresa.size(); i++) {
+			assertTrue(empresa.get(i), Filtros);
+		}
+
+		ArrayList<Boolean> uf = configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.Uf();
+		for (int i = 0; i < uf.size(); i++) {
+			assertTrue(uf.get(i), Filtros);
+		}
+
+		ArrayList<Boolean> filial = configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.Filial();
+		for (int i = 0; i < filial.size(); i++) {
+			assertTrue(filial.get(i), Filtros);
+		}
 	}
-	
+
 }

@@ -30,7 +30,7 @@ public class GatewayEventoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Processo\"]")
 	public WebElement descripcion;
 	
-	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[4]/div[2]/div[2]/label/span")
+	@FindBy(xpath = "//label[@for=\"rdProcessPeriodicity\"]/span")
 	public WebElement periodoFiscal;
 	
 	@FindBy(xpath = "//button[text()=\" Criar\"]")

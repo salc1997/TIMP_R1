@@ -18,11 +18,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CFOPFiltrosAvancados extends TestBaseCristhian{
+public class CFOPFiltrosAvancados extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CFOPFiltrosAvancadosPO cFOPFiltrosAvancadosPO;
-
 
 	@BeforeClass
 	public void beforeClass() {

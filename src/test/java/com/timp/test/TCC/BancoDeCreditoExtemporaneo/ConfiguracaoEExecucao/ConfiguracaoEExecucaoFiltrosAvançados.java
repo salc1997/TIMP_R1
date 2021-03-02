@@ -15,24 +15,24 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoFiltrosAvançados extends TestBaseMassiel{
+public class ConfiguracaoEExecucaoFiltrosAvançados extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoFiltrosAvançadosPO configuracaoEExecucaoFiltrosAvançadosPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuracaoEExecucaoFiltrosAvançadosPO = new ConfiguracaoEExecucaoFiltrosAvançadosPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -44,22 +44,22 @@ public class ConfiguracaoEExecucaoFiltrosAvançados extends TestBaseMassiel{
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void Filtro() {
 
 		configuracaoEExecucaoFiltrosAvançadosPO.filtro();
-		
+
 		ArrayList<Boolean> Nome = configuracaoEExecucaoFiltrosAvançadosPO.Empresa();
 		for (int i = 0; i < Nome.size(); i++) {
 			assertTrue(Nome.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> uf = configuracaoEExecucaoFiltrosAvançadosPO.uF();
 		for (int i = 0; i < uf.size(); i++) {
 			assertTrue(uf.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> filial = configuracaoEExecucaoFiltrosAvançadosPO.filial();
 		for (int i = 0; i < filial.size(); i++) {
 			assertTrue(filial.get(i), Filtros);

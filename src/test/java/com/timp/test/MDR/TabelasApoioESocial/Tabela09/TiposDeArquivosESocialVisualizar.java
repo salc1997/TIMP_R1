@@ -2,7 +2,6 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela09;
 
 import org.testng.annotations.Test;
 
-
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -32,7 +31,6 @@ public class TiposDeArquivosESocialVisualizar extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void visualizar() {

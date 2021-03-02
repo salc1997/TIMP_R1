@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeBeneficiosEditar extends TestBaseFernando{
+public class TiposDeBeneficiosEditar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeBeneficiosEditarPO tiposDeBeneficiosEditarPO;
@@ -30,8 +30,6 @@ public class TiposDeBeneficiosEditar extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
-
 
 	@Test()
 	public void editar() {

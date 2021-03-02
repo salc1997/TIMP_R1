@@ -94,15 +94,11 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tq1);
 
 		return driver;
 	}
-	
-	public void close() {
 
-		
-	}
 	
 	
 	public void fecharMensagens(String rows, String xpath) {
@@ -281,6 +277,8 @@ public class TestBaseSteven {
 	public void actionsMoveToElementXpath(String xpath) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(driver.findElement(By.xpath(xpath))).perform();
+	
+	
 	}
 
 	public void actionsMoveToElementElement(WebElement element) {

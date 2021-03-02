@@ -12,12 +12,11 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
 
 public class AliquotaDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotasDeTaxaDeActualizacaoPesquisaPorIDPO aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -33,10 +32,9 @@ public class AliquotaDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void filtro() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -44,8 +42,6 @@ public class AliquotaDeTaxaDeActualizacaoPesquisaPorID extends TestBaseEliel {
 		boolean sucesso = aliquotasDeTaxaDeActualizacaoPesquisaPorIDPO.filtro();
 		assertTrue(sucesso, Filtros);
 
-		
-
 	}
-	
+
 }

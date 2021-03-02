@@ -34,11 +34,9 @@ public class CodificaçãoDeAcDeTrabExcluir extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -48,6 +46,5 @@ public class CodificaçãoDeAcDeTrabExcluir extends TestBaseCristhian {
 		assertTrue(sucesso, Editar);
 
 	}
-
 
 }

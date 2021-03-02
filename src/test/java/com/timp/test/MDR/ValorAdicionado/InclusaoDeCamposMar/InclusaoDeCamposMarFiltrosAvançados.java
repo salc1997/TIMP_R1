@@ -38,7 +38,7 @@ public class InclusaoDeCamposMarFiltrosAvançados extends TestBaseEliel {
 	public void filtros() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = inclusaoDeCamposMarFiltrosAvançadosPO.filtrosusuario();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosPesquisaPO;
 
-public class ArquivosImportadosPesquisa extends TestBaseFernando{
+public class ArquivosImportadosPesquisa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	ArquivosImportadosPesquisaPO arquivosImportadosPesquisaPO;
@@ -42,7 +42,7 @@ public class ArquivosImportadosPesquisa extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void pesquisar() {		
+	public void pesquisar() {
 		ArrayList<Boolean> sucesso = arquivosImportadosPesquisaPO.pesquisar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

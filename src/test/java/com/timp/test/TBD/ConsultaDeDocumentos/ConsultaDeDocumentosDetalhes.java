@@ -15,25 +15,25 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConsultaDeDocumentosDetalhes extends TestBaseMassiel{
+public class ConsultaDeDocumentosDetalhes extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	ConsultaDeDocumentosDetalhesPO consultaDeDocumentosDetalhesPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTBDPO = new AcessarTBDPO();
-	  consultaDeDocumentosDetalhesPO = new ConsultaDeDocumentosDetalhesPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@BeforeClass
+	public void beforeClass() {
 
-  @Test(priority = 0)
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		consultaDeDocumentosDetalhesPO = new ConsultaDeDocumentosDetalhesPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -41,19 +41,18 @@ public class ConsultaDeDocumentosDetalhes extends TestBaseMassiel{
 
 	@Test(priority = 1)
 	public void TBDEntrar() {
-		 acessarTBDPO.acessarTBD();
-		
+		acessarTBDPO.acessarTBD();
+
 	}
-	
+
 	@Test(priority = 1)
 	public void detalle() {
-		
-		
-		ArrayList<Boolean> sucesso = consultaDeDocumentosDetalhesPO. detalles();
+
+		ArrayList<Boolean> sucesso = consultaDeDocumentosDetalhesPO.detalles();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 	}
 }

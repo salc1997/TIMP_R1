@@ -31,11 +31,11 @@ public class EmprestimosExcluir extends TestBaseKenssy {
 
 	@Test()
 	public void excluirEmprestimos() {
-		
+
 		loginTC.login();
 
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = emprestimosExcluirPO.excluirEmprestimos();
 		assertTrue(sucesso, Editar);
 	}

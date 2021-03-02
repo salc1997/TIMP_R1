@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.Apur
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM620.RegistroM620CriarPO;
 
 public class RegistroM620Criar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM620CriarPO registroM620CriarPO;
@@ -35,17 +35,16 @@ public class RegistroM620Criar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
 		boolean sucesso = registroM620CriarPO.criar();
 
 		assertTrue(sucesso, Criar);
 	}
-	
+
 }

@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 
 public class ConfiguraçãodeLayoutdePainelExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTCCPO  acessarTCCPO;
+	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeLayoutdePainelExcluirPO configuraçãodeLayoutdePainelExcluirPO;
 
 	@BeforeClass
@@ -44,10 +44,9 @@ public class ConfiguraçãodeLayoutdePainelExcluir extends TestBaseCristhian {
 
 	@Test(priority = 2)
 	public void excluir() {
-		
+
 		boolean sucesso2 = configuraçãodeLayoutdePainelExcluirPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}
-
 
 }

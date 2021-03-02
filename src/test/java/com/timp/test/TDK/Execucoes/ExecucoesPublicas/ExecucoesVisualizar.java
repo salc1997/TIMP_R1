@@ -14,8 +14,6 @@ import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesVisualizarPO;
 
 public class ExecucoesVisualizar extends TestBaseEliel {
- 
-	
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;

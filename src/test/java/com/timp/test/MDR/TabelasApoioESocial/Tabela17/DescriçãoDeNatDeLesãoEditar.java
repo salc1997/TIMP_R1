@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DescriçãoDeNatDeLesãoEditar extends TestBaseFernando{
+public class DescriçãoDeNatDeLesãoEditar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	DescriçãoDeNatDeLesãoEditarPO descriçãoDeNatDeLesãoEditarPO;
@@ -34,7 +34,6 @@ public class DescriçãoDeNatDeLesãoEditar extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void editar() {

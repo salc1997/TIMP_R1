@@ -31,31 +31,20 @@ public class TiposDeServicosExcluirEmMassa extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
 	@Test()
-	public void criar() {
-		
+	public void criar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = tiposDeServicosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
+	}
+	
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
 		boolean sucesso2 = tiposDeServicosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
 }

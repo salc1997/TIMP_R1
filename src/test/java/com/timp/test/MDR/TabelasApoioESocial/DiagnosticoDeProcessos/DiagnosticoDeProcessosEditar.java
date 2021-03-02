@@ -10,9 +10,9 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosEditarPO;
- 
-public class DiagnosticoDeProcessosEditar extends TestBaseEliel{
-	
+
+public class DiagnosticoDeProcessosEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DiagnosticoDeProcessosEditarPO diagnosticoDeProcessosEditarPO;
@@ -31,11 +31,9 @@ public class DiagnosticoDeProcessosEditar extends TestBaseEliel{
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -44,5 +42,5 @@ public class DiagnosticoDeProcessosEditar extends TestBaseEliel{
 		assertTrue(sucesso, Editar);
 
 	}
- 
+
 }

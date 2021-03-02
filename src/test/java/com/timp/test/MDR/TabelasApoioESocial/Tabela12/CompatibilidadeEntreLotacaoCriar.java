@@ -41,7 +41,7 @@ public class CompatibilidadeEntreLotacaoCriar extends TestBaseSteven {
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

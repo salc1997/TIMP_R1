@@ -20,8 +20,6 @@ public class EliminacoesDaConsolidacaoVisualizar extends TestBaseKenssy {
 	AcessarMDRPO acesarMDRPO;
 	EliminacoesDaConsolidacaVisualizarPO eliminacoesDaConsolidacaoVisualizarPO;
 
-
-
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationKen();

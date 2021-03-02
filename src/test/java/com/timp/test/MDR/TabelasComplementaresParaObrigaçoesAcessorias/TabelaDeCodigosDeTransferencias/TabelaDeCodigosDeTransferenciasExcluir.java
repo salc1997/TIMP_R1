@@ -35,7 +35,7 @@ public class TabelaDeCodigosDeTransferenciasExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeCodigosDeTransferenciasExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

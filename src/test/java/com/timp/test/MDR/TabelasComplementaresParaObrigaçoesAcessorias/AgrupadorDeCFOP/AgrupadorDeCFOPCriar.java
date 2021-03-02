@@ -16,7 +16,7 @@ public class AgrupadorDeCFOPCriar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPCriarPO agrupadorDeCFOPCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -30,7 +30,6 @@ public class AgrupadorDeCFOPCriar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void criar() {

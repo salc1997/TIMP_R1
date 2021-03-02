@@ -11,9 +11,9 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluirPO;
 
-public class RegraDeCamposExcluir extends TestBaseFernando{
+public class RegraDeCamposExcluir extends TestBaseFernando {
 	LoginTC loginTC;
-	AcessarTAAPO  acessarTAAPO;
+	AcessarTAAPO acessarTAAPO;
 	RegraDeCamposExcluirPO regraDeCamposExcluirPO;
 
 	@BeforeClass

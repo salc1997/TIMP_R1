@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class MotivosCesBeneficiosEditar extends TestBaseFernando{
+public class MotivosCesBeneficiosEditar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MotivosCesBeneficiosEditarPO motivosCesBeneficiosEditarPO;
@@ -31,14 +31,13 @@ public class MotivosCesBeneficiosEditar extends TestBaseFernando{
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = motivosCesBeneficiosEditarPO.editar();
 		assertTrue(sucesso, Editar);
 	}

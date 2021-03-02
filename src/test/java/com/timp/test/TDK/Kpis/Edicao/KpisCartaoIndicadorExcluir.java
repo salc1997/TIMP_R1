@@ -11,27 +11,27 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Edicao.KpisCartaoIndicadorExcluirPO;
 
-public class KpisCartaoIndicadorExcluir extends TestBaseEliel{
- 
+public class KpisCartaoIndicadorExcluir extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisCartaoIndicadorExcluirPO kpisCartaoIndicadorExcluirPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	    driver = initializationE();
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisCartaoIndicadorExcluirPO = new KpisCartaoIndicadorExcluirPO();
-		
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -40,13 +40,13 @@ public class KpisCartaoIndicadorExcluir extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void cartaoindicadroexcluir() {
-		
+
 		boolean sucesso = kpisCartaoIndicadorExcluirPO.cartaoindicadorexcluir();
 
 		assertTrue(sucesso, "O Cartão  não foi excluido");
-		
+
 	}
 }

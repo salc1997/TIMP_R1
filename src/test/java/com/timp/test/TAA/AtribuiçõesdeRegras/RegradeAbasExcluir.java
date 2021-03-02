@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 
 public class RegradeAbasExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTAAPO  acessarTAAPO;
+	AcessarTAAPO acessarTAAPO;
 	RegradeAbasExcluirPO regradeAbasExcluirPO;
 
 	@BeforeClass

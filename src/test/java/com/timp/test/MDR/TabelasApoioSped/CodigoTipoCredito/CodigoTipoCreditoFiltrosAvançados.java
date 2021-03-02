@@ -35,8 +35,6 @@ public class CodigoTipoCreditoFiltrosAvançados extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtros() {
 		loginTC.login();

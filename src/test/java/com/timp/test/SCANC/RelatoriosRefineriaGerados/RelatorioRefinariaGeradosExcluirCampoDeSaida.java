@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosExcluirCampoDeSaidaPO;
 
-public class RelatorioRefinariaGeradosExcluirCampoDeSaida extends TestBaseFernando{
+public class RelatorioRefinariaGeradosExcluirCampoDeSaida extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosExcluirCampoDeSaidaPO relatorioRefinariaGeradosExcluirCampoDeSaidaPO;
@@ -40,7 +40,7 @@ public class RelatorioRefinariaGeradosExcluirCampoDeSaida extends TestBaseFernan
 	}
 
 	@Test(priority = 2)
-	public void excluir() {		
+	public void excluir() {
 		boolean sucesso = relatorioRefinariaGeradosExcluirCampoDeSaidaPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

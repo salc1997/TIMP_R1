@@ -6,14 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisExcluirEmMassaPO;
 
 public class InformaçoesAdicionaisExcluirEmMassa extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	InformaçoesAdicionaisExcluirEmMassaPO informaçoesAdicionaisExcluirEmMassaPO;
@@ -32,7 +31,6 @@ public class InformaçoesAdicionaisExcluirEmMassa extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 		loginTC.login();
@@ -44,5 +42,5 @@ public class InformaçoesAdicionaisExcluirEmMassa extends TestBaseEliel {
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

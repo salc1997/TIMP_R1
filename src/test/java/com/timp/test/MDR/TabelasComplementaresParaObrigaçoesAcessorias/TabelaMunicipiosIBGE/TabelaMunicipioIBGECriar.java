@@ -19,7 +19,7 @@ public class TabelaMunicipioIBGECriar extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -35,7 +35,7 @@ public class TabelaMunicipioIBGECriar extends TestBaseSteven {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaMunicipioIBGECriarPO.criar();
 		assertTrue(sucesso, Criar);
 

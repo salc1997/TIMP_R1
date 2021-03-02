@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CFOVisualizar extends TestBaseFernando{
+public class CFOVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CFOPVisualizarPO cFOPVisualizarPO;
@@ -49,7 +49,7 @@ public class CFOVisualizar extends TestBaseFernando{
 	@Test(priority = 3)
 	public void visualizar() {
 		ArrayList<Boolean> sucesso = cFOPVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}

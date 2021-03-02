@@ -10,7 +10,7 @@ import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 
-public class AcessarTAA extends TestBaseFernando{
+public class AcessarTAA extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 
@@ -18,7 +18,7 @@ public class AcessarTAA extends TestBaseFernando{
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
-		acessarTAAPO  = new AcessarTAAPO();
+		acessarTAAPO = new AcessarTAAPO();
 	}
 
 	@AfterClass
@@ -33,7 +33,7 @@ public class AcessarTAA extends TestBaseFernando{
 
 	@Test(priority = 2)
 	public void taaEntrar() {
-		boolean sucesso =  acessarTAAPO.acessarTAA();
+		boolean sucesso = acessarTAAPO.acessarTAA();
 		assertTrue(sucesso, "The element is not present");
 	}
 }

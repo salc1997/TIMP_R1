@@ -24,7 +24,7 @@ public class TabelaLogradouroExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -40,7 +40,7 @@ public class TabelaLogradouroExcluir extends TestBaseSteven {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaLogradouroExcluirPO.eliminar();
 		assertTrue(sucesso, Eliminado);
 

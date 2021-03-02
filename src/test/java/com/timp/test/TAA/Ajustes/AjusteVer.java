@@ -15,45 +15,43 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AjusteVer extends TestBaseMassiel{
+public class AjusteVer extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AjusteVerPO ajusteVerPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
-		acessarTAAPO  = new AcessarTAAPO();
+		acessarTAAPO = new AcessarTAAPO();
 		ajusteVerPO = new AjusteVerPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
- 	public void ingresar() {
- 		loginTC.login();
- 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-   @Test(priority = 1)
- 	public void TAAEntrar() {
- 	  acessarTAAPO.acessarTAA();
+	@Test(priority = 0)
+	public void ingresar() {
+		loginTC.login();
+	}
 
- 	}
-   
-   @Test(priority = 2)
+	@Test(priority = 1)
+	public void TAAEntrar() {
+		acessarTAAPO.acessarTAA();
+
+	}
+
+	@Test(priority = 2)
 	public void Ver() {
-	  
-	   
-	   ArrayList<Boolean> sucesso = ajusteVerPO.ver();
+
+		ArrayList<Boolean> sucesso = ajusteVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 
-	
 	}
 
 }

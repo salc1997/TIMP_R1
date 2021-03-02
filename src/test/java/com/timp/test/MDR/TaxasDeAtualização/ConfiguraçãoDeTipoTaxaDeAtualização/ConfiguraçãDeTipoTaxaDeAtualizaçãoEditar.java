@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar extends TestBaseFernando{
+public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	ConfiguraçãDeTipoTaxaDeAtualizaçãoEditarPO configuraçãDeTipoTaxaDeAtualizaçãoEditarPO;
@@ -34,7 +34,6 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditar extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void editar() {

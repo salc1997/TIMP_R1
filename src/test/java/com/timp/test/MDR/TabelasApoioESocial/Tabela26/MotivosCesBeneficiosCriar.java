@@ -38,13 +38,11 @@ public class MotivosCesBeneficiosCriar extends TestBaseFernando {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = motivosCesBeneficiosCriarPO.criar();

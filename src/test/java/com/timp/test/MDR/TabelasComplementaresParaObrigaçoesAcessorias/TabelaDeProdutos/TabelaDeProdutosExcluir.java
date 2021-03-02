@@ -35,7 +35,7 @@ public class TabelaDeProdutosExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeProdutosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

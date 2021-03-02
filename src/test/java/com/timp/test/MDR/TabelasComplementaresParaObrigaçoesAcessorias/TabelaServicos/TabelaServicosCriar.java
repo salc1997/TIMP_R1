@@ -39,7 +39,7 @@ public class TabelaServicosCriar extends TestBaseMassiel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaServicosCriarPO.criar();
 		assertTrue(sucesso, Criar);
 

@@ -47,8 +47,6 @@ public class HierarquiaDeCenariosDeCorreçaoExcluirMasas extends TestBaseMassiel{
 	@Test(dependsOnMethods = "criar" )
 	public void excluir() {
 		
-		
-	
 		boolean sucesso2 = hierarquiaDeCenariosDeCorreçaoExcluirMasasPO.HierarquiaDeCenariosDeCorreçaoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
 	}

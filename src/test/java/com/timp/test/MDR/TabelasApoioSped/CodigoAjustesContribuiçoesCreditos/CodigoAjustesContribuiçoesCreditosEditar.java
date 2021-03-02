@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseFernando{
+public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CodigoAjustesContribuiçoesCreditosEditarPO codigoAjustesContribuiçoesCreditosEditarPO;
@@ -30,7 +30,7 @@ public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test()

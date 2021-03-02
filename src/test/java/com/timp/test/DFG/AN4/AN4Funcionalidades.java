@@ -37,13 +37,13 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 		loginTC.login();
 	}
 
-/*	@Test(priority = 1)
+	@Test(priority = 1)
 	public void DFGEntrar() {
 		acessarDFGPO.acessarDFG();
 
-	}*/
+	}
 
-	/*@Test(priority = 2)
+	@Test(priority = 2)
 	public void AN4ID() {
 		aN4FuncionalidadesPO.Id();
 
@@ -77,7 +77,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 		boolean sucesso = aN4FuncionalidadesPO.CriarRegra();
 		assertTrue(sucesso, Criar);
-	}*/
+	}
 	
 	@Test(priority = 7)
 	public void AN4IdDFG() {

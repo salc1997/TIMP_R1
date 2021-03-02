@@ -35,13 +35,11 @@ public class AjusteEInformaçoesDeValoresVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = ajusteEInformaçoesDeValoresVisualizarPO.visualizar();

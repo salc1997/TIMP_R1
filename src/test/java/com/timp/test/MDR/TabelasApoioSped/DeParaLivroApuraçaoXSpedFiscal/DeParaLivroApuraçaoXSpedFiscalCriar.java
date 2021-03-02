@@ -31,7 +31,6 @@ public class DeParaLivroApuraçaoXSpedFiscalCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 		loginTC.login();

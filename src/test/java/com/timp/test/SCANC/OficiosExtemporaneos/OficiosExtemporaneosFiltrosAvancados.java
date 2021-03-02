@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancadosPO;
 
-public class OficiosExtemporaneosFiltrosAvancados extends TestBaseFernando{
+public class OficiosExtemporaneosFiltrosAvancados extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	OficiosExtemporaneosFiltrosAvancadosPO oficiosExtemporaneosFiltrosAvancadosPO;
@@ -40,7 +40,7 @@ public class OficiosExtemporaneosFiltrosAvancados extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancados() {		
+	public void filtrosAvancados() {
 		boolean sucesso = oficiosExtemporaneosFiltrosAvancadosPO.filtrosAvancados();
 		assertTrue(sucesso, Filtros);
 	}

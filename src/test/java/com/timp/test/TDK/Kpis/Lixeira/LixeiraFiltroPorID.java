@@ -13,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Lixeira.LixeiraFiltroPorIDPO;
 
-public class LixeiraFiltroPorID extends TestBaseEliel{
-	
+public class LixeiraFiltroPorID extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	LixeiraFiltroPorIDPO lixeiraFiltroPorIDPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class LixeiraFiltroPorID extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,15 +41,14 @@ public class LixeiraFiltroPorID extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void filtro() {
 		ArrayList<Boolean> sucesso = lixeiraFiltroPorIDPO.filtro();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),Filtros);
+			assertTrue(sucesso.get(i), Filtros);
 		}
-		
-		
+
 	}
- 
+
 }

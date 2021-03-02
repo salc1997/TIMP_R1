@@ -19,7 +19,7 @@ import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.Apur
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630EditarPO;
 
 public class RegistroM630Editar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM630EditarPO registroM630EditarPO;
@@ -38,17 +38,16 @@ public class RegistroM630Editar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
 		boolean sucesso = registroM630EditarPO.editar();
 
 		assertTrue(sucesso, editado);
 	}
-	
+
 }

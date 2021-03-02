@@ -13,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.ParametrosGerais.DashboardCriarCopiaPO;
 
-public class DashboardCriarCopia extends TestBaseEliel{
- 
+public class DashboardCriarCopia extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardCriarCopiaPO dashboardCriarCopiaPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class DashboardCriarCopia extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,16 +41,14 @@ public class DashboardCriarCopia extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void copia() {
 		ArrayList<Boolean> sucesso = dashboardCriarCopiaPO.Copia();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),Criar);
+			assertTrue(sucesso.get(i), Criar);
 		}
-		
-		
+
 	}
- 
-	
+
 }

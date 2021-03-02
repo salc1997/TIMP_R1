@@ -35,7 +35,7 @@ public class TabelaDeEstoqueParaRegistro12Criar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeEstoqueParaRegistro12CriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

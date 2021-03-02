@@ -33,7 +33,6 @@ public class TabelaDeAtribuicaoDeCodigoCFOPVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void Visualizar() {
 		loginTC.login();

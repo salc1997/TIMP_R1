@@ -15,33 +15,33 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeLogradouroCriar extends TestBaseSteven{
-  
+public class TiposDeLogradouroCriar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeLogradouroCriarPO tiposDeLogradouroCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  tiposDeLogradouroCriarPO = new TiposDeLogradouroCriarPO();
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		tiposDeLogradouroCriarPO = new TiposDeLogradouroCriarPO();
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
 	@Test()
-	  public void criar() {
+
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		
-		 boolean sucesso = tiposDeLogradouroCriarPO.criar();
-		  assertTrue(sucesso, Criar);
-	  }
+		boolean sucesso = tiposDeLogradouroCriarPO.criar();
+		assertTrue(sucesso, Criar);
+	}
 
 }

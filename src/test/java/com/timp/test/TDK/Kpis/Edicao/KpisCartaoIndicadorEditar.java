@@ -10,42 +10,37 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Edicao.KpisCartaoIndicadorEditarPO;
 
-public class KpisCartaoIndicadorEditar extends TestBaseEliel{
- 
+public class KpisCartaoIndicadorEditar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisCartaoIndicadorEditarPO kpisCartaoIndicadorEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationE();
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisCartaoIndicadorEditarPO = new KpisCartaoIndicadorEditarPO();
-  }
+	}
 
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
 
-  
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
- 	}
+	@Test(priority = 1)
+	public void acessarTDK() {
+		acessarTDKPO.acessarTDK();
+	}
 
- 	@Test(priority = 1)
- 	public void acessarTDK() {
- 		acessarTDKPO.acessarTDK();
- 	}
- 	
- 	@Test(priority = 2)
- 	public void CartaoIndicador() {
- 		
- 		
- 		boolean sucesso = kpisCartaoIndicadorEditarPO.CartaoIndicador();
- 		assertTrue(sucesso, Editar);
- 		
- 		
- 	}
-	
-	
+	@Test(priority = 2)
+	public void CartaoIndicador() {
+
+		boolean sucesso = kpisCartaoIndicadorEditarPO.CartaoIndicador();
+		assertTrue(sucesso, Editar);
+
+	}
+
 }

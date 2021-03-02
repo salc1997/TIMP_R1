@@ -9,7 +9,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacaoPO;
 
-public class ArquivosImportadosNaVisualizacao extends TestBaseFernando{
+public class ArquivosImportadosNaVisualizacao extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	ArquivosImportadosNaVisualizacaoPO arquivosImportadosNaVisualizacaoPO;
@@ -38,7 +38,7 @@ public class ArquivosImportadosNaVisualizacao extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancados() {			
+	public void filtrosAvancados() {
 		arquivosImportadosNaVisualizacaoPO.filtrosAvancadosVisualizacao();
 	}
 }

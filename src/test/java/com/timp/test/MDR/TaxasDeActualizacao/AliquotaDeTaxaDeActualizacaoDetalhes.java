@@ -16,7 +16,7 @@ public class AliquotaDeTaxaDeActualizacaoDetalhes extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotasDeTaxaActualizarDetalhesPO aliquotasDeTaxaActualizarDetalhesPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 
@@ -31,11 +31,9 @@ public class AliquotaDeTaxaDeActualizacaoDetalhes extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -47,6 +45,5 @@ public class AliquotaDeTaxaDeActualizacaoDetalhes extends TestBaseCristhian {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
 	}
-
 
 }

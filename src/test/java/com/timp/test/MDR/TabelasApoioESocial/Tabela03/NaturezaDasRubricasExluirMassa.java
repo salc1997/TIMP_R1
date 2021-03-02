@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NaturezaDasRubricasExluirMassa extends TestBaseFernando{
+public class NaturezaDasRubricasExluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaDasRubricasExluirMassaPO naturezaDasRubricasExluirMassaPO;
@@ -30,19 +30,8 @@ public class NaturezaDasRubricasExluirMassa extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-	*/
-	@Test(priority = 0)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
@@ -50,9 +39,8 @@ public class NaturezaDasRubricasExluirMassa extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 1)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
-	
 		boolean sucesso1 = naturezaDasRubricasExluirMassaPO.exluirMassa();
 		assertTrue(sucesso1, Criar);
 	}

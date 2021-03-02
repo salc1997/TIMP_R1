@@ -14,9 +14,9 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeBancodeCréditoTributárioExcluir extends TestBaseCristhian{
+public class ConfiguraçãodeBancodeCréditoTributárioExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTCCPO  acessarTCCPO;
+	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeBancodeCréditoTributárioExcluirPO configuraçãodeBancodeCréditoTributárioExcluirPO;
 
 	@BeforeClass
@@ -44,7 +44,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioExcluir extends TestBaseCrist
 
 	@Test(priority = 2)
 	public void excluir() {
-		
+
 		boolean sucesso2 = configuraçãodeBancodeCréditoTributárioExcluirPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}

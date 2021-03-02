@@ -13,36 +13,35 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroM230Excluir extends TestBaseMassiel{
+public class RegistroM230Excluir extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM230ExcluirPO registroM230ExcluirPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registroM230ExcluirPO = new RegistroM230ExcluirPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
- 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
-		
- 		boolean sucesso = registroM230ExcluirPO.excluir();
+
+		boolean sucesso = registroM230ExcluirPO.excluir();
 
 		assertTrue(sucesso, Criar);
-		
+
 	}
 
 }

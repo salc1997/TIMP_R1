@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TiposDeUtilizacaoDosCreditosFiscais.TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassaPO;
 
 public class TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassaPO tiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassaPO;
@@ -32,11 +31,9 @@ public class TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa extends TestBaseE
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -47,5 +44,5 @@ public class TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassa extends TestBaseE
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

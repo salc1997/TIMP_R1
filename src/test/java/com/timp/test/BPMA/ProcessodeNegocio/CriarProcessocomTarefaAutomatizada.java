@@ -33,6 +33,7 @@ public class CriarProcessocomTarefaAutomatizada extends TestBaseCristhian {
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   

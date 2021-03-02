@@ -23,43 +23,39 @@ public class SCANCDistribuidorasExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	SCANCDistribuidoraExcluirEmMassaPO scancDistribuidoraExcluirEmMassaPO;
-	 
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  accesarMDR = new AcessarMDRPO();
-		  scancDistribuidoraExcluirEmMassaPO = new SCANCDistribuidoraExcluirEmMassaPO();
+		driver = initialization();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		scancDistribuidoraExcluirEmMassaPO = new SCANCDistribuidoraExcluirEmMassaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		  driver.close();
+		driver.close();
 	}
-	
 
-	
 	@Test()
 	public void Criar() {
-		
+
 		loginTC.login();
-		
+
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = scancDistribuidoraExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 
-		
 	}
-	
+
 	@Test(dependsOnMethods = "Criar")
 	public void excluirMassa() {
-		
-	
+
 		boolean sucesso2 = scancDistribuidoraExcluirEmMassaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
-		
+
 	}
 
 }

@@ -42,15 +42,12 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassa extends TestBaseKens
 	boolean sucesso = determinacionRelevanciaPorMotivoExcluirEmMassaPO.criar();
 	assertTrue(sucesso, Criar);
 
-	
-	
 
   }
   
   @Test(dependsOnMethods = "criar")
   public void excluir() {
 
-	
 	boolean sucesso2 = determinacionRelevanciaPorMotivoExcluirEmMassaPO.determinacaoDeRelevanciaPorMotivoExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);
   }

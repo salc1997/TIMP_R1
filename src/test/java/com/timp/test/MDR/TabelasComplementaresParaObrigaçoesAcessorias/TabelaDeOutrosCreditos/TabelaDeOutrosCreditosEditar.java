@@ -35,7 +35,7 @@ public class TabelaDeOutrosCreditosEditar extends TestBaseEliel {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeOutrosCreditosEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

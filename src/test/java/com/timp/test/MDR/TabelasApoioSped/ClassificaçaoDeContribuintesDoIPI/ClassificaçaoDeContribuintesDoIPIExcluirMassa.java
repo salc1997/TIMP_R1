@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ClassificaçaoDeContribuintesDoIPIExcluirMassa extends TestBaseFernando{
+public class ClassificaçaoDeContribuintesDoIPIExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificaçaoDeContribuintesDoIPIExcluirMassaPO classificaçaoDeContribuintesDoIPIExcluirMassaPO;
@@ -38,7 +38,7 @@ public class ClassificaçaoDeContribuintesDoIPIExcluirMassa extends TestBaseFerna
 		boolean sucesso = classificaçaoDeContribuintesDoIPIExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = classificaçaoDeContribuintesDoIPIExcluirMassaPO.exluirMassa();

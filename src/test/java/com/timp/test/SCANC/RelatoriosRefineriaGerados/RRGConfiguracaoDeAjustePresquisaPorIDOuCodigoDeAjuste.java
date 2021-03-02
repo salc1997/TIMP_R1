@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO;
 
-public class RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste extends TestBaseFernando{
+public class RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO rRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO;
@@ -42,7 +42,7 @@ public class RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste extends TestB
 	}
 
 	@Test(priority = 2)
-	public void pesquisar() {		
+	public void pesquisar() {
 		ArrayList<Boolean> sucesso = rRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO.pesquisar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -33,8 +33,6 @@ public class DocumentosFiscaisICMSDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
 		loginTC.login();

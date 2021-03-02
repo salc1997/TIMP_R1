@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassaPO;
 
-public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa extends TestBaseEliel{
-	
+public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassaPO codigoDeAjusteDaApuraçaoDoIPIExcluirEmMassaPO;
@@ -31,7 +31,6 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 		loginTC.login();
@@ -43,5 +42,5 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso2, Eliminado);
 
 	}
- 
+
 }

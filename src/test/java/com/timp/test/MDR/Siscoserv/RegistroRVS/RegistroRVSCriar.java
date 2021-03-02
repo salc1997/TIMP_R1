@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSCriarPO;
 
-public class RegistroRVSCriar extends TestBaseEliel{
- 
+public class RegistroRVSCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroRVSCriarPO registroRVSCriarPO;
@@ -35,11 +35,10 @@ public class RegistroRVSCriar extends TestBaseEliel{
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroRVSCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 
 	}
-	
-	
+
 }

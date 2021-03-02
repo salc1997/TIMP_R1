@@ -10,11 +10,9 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassaPO;
- 
+
 public class RegistroRVSExcluirEmMassa extends TestBaseEliel {
 
-	
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroRVSExcluirEmMassaPO registroRVSExcluirEmMassaPO;
@@ -38,14 +36,13 @@ public class RegistroRVSExcluirEmMassa extends TestBaseEliel {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroRVSExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
-		
 
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		boolean sucesso2 = registroRVSExcluirEmMassaPO.excluir();

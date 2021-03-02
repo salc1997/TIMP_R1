@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaDetal
 import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRF.RegistroRFVisualizarPO;
 
 public class RegistroRFVisualizar extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroRFVisualizarPO registroRFVisualizarPO;

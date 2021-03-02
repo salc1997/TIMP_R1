@@ -17,40 +17,39 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassa extends TestBaseKenssy 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO = new AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO();
-  }
+ 
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO = new AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  //driver.close();
-  }
-  
-  @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@AfterClass
+	public void afterClass() {
+		// driver.close();
+	}
 
-  }
-  
-  @Test(priority = 2)
-  public void excluirEmMassa() {
-	boolean sucesso = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
-	
-	boolean sucesso2 = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.excluir();
-	assertTrue(sucesso2, Eliminado);
-  }
+	@Test(priority = 0)
+	public void ingresar() {
+		loginTC.login();
+	}
 
+	@Test(priority = 1)
+	public void mdrEntrar() {
+		accesarMDR.acessarMDR();
+
+	}
+
+	@Test(priority = 2)
+	public void excluirEmMassa() {
+		boolean sucesso = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+
+		boolean sucesso2 = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 }

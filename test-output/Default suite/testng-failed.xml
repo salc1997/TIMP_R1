@@ -3,13 +3,27 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar">
+=======
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNADelegar">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="criar"/>
+=======
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="Calendar"/>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar -->
+=======
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNADelegar -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

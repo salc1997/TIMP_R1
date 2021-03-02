@@ -34,7 +34,6 @@ public class CodigosDasObrigaçoesDeICMSaRecolherDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void detalhes() {
 		loginTC.login();

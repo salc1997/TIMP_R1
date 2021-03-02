@@ -6,8 +6,6 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.EstruturasMapeamentodeEstruturas.MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRF.RegistroRFFiltroPorIDPO;
 
 import org.testng.annotations.BeforeClass;
 

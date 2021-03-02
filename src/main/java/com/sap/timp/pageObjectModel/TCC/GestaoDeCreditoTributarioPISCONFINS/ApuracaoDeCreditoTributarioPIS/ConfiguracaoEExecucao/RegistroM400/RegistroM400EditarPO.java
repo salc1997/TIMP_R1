@@ -6,35 +6,29 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluirPO;
 
-public class RegistroM400EditarPO extends TestBaseEliel{
-	
+public class RegistroM400EditarPO extends TestBaseEliel {
+
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
-	
+
 	@FindBy(xpath = "//span[text()=\"Apuração de Crédito Tributário PIS\"]")
 	public WebElement apuracaocreditopis;
-	
 
 	@FindBy(xpath = "//div[@class=\"left\"]/div/div[2]/ul/li[6]/ul/li[3]/ul/li[1]/div/span[2]")
 	public WebElement configuracaoEExecucao;
-	
+
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-registerM400\"]")
 	public WebElement registrom400;
-	
-	
+
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Indicador de natureza da retenção na Fonte \"]")
 	public WebElement indicador1;
-	
+
 	@FindBy(xpath = "//div[@id=\"indNatRet\"]/div/div[2]")
 	public WebElement indicador;
-	
 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
-
-	
 
 	@FindBy(xpath = "//li[@id][2]")
 	public WebElement opcao;
@@ -77,11 +71,9 @@ public class RegistroM400EditarPO extends TestBaseEliel{
 
 	@FindBy(xpath = "//div[@id=\"multipleControlerId-3000_BA_0031\"]")
 	public WebElement filialtp1;
-	
+
 	@FindBy(xpath = "//div[@id=\"multipleControlerId-RJ\"]")
 	public WebElement uftc2;
-
-	
 
 	@FindBy(xpath = "//div[@id=\"multipleControlerId-1000_SP_0001\"]")
 	public WebElement filial1;
@@ -94,19 +86,18 @@ public class RegistroM400EditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"componentToSearchId-1000_SP_0014\"]")
 	public WebElement filialtc2;
 
-	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Número do campo\"]")
 	public WebElement numerocampo;
-	
+
 	@FindBy(xpath = "//div[@id=\"indAj\"]/div/div[2]")
 	public WebElement indicadorajuste;
-	
+
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Indicador do Tipo de Ajuste \"]")
 	public WebElement indicadorajuste1;
-	
+
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Código de Situação Tributária referente ao PIS\"]")
 	public WebElement codigo;
-	
+
 	public RegistroM400EditarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -168,13 +159,11 @@ public class RegistroM400EditarPO extends TestBaseEliel{
 			sleep(2000);
 			waitExpectElement(filial1);
 			sleep(2000);
-			
-			
+
 			codigo.clear();
 			codigo.sendKeys("08");
 			String codigotetexto = codigo.getAttribute("value");
 			System.out.println("Codigo antes de atualizar:" + codigotetexto);
-
 
 			gravar.click();
 			sleep(2000);
@@ -200,55 +189,52 @@ public class RegistroM400EditarPO extends TestBaseEliel{
 			System.out.println(" Codigo pós atualizar:" + codigoatualizada);
 			boolean sucesso = false;
 			sucesso = codigotetexto.contains(codigoatualizada);
-			
+
 			System.out.println(sucesso);
 
 			return sucesso;
 
 		} else {
-			
-				waitExpectElement(uf1);
-				sleep(2000);
-				waitExpectElement(filialtc2);
-				sleep(2000);
 
-				
-				codigo.clear();
-				codigo.sendKeys("08");
-				String codigotetexto = codigo.getAttribute("value");
-				System.out.println("Codigo antes de atualizar:" + codigotetexto);
+			waitExpectElement(uf1);
+			sleep(2000);
+			waitExpectElement(filialtc2);
+			sleep(2000);
 
+			codigo.clear();
+			codigo.sendKeys("08");
+			String codigotetexto = codigo.getAttribute("value");
+			System.out.println("Codigo antes de atualizar:" + codigotetexto);
 
-				
-				gravar.click();
-				sleep(2000);
-				waitExpectElement(sim);
-				sim.click();
-				sleep(2000);
-				waitExpectElement(biblioteca);
-				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				sleep(2000);
+			gravar.click();
+			sleep(2000);
+			waitExpectElement(sim);
+			sim.click();
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 
-				driver.navigate().refresh();
+			driver.navigate().refresh();
 
-				sleep(2000);
-				waitExpectElement(biblioteca);
-				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				sleep(2000);
-				waitExpectElement(uf1);
-				sleep(2000);
-				waitExpectElement(filialtc2);
-				sleep(2000);
+			sleep(2000);
+			waitExpectElement(biblioteca);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			waitExpectElement(uf1);
+			sleep(2000);
+			waitExpectElement(filialtc2);
+			sleep(2000);
 
-				String codigoatualizada = codigo.getAttribute("value");
-				System.out.println(" Codigo pós atualizar:" + codigoatualizada);
-				boolean sucesso = false;
-				sucesso = codigotetexto.contains(codigoatualizada);
-				
-				System.out.println(sucesso);
+			String codigoatualizada = codigo.getAttribute("value");
+			System.out.println(" Codigo pós atualizar:" + codigoatualizada);
+			boolean sucesso = false;
+			sucesso = codigotetexto.contains(codigoatualizada);
 
-				return sucesso;
-			
+			System.out.println(sucesso);
+
+			return sucesso;
+
 		}
 	}
 

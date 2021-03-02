@@ -11,9 +11,9 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoCriarPO;
 
-public class AgendamentoCriar extends TestBaseFernando{
+public class AgendamentoCriar extends TestBaseFernando {
 	LoginTC loginTC;
-	AcessarTAAPO  acessarTAAPO;
+	AcessarTAAPO acessarTAAPO;
 	AgendamentoCriarPO agendamentoCriarPO;
 
 	@BeforeClass
@@ -26,7 +26,7 @@ public class AgendamentoCriar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

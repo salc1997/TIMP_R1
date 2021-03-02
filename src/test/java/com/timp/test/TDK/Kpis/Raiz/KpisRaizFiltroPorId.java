@@ -13,12 +13,12 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Raiz.KpisRaizFiltroPorIdPO;
 
-public class KpisRaizFiltroPorId extends TestBaseEliel{
- 
+public class KpisRaizFiltroPorId extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisRaizFiltroPorIdPO kpisRaizFiltroPorIdPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationE();
@@ -29,7 +29,7 @@ public class KpisRaizFiltroPorId extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,16 +41,14 @@ public class KpisRaizFiltroPorId extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void filtro() {
 		ArrayList<Boolean> sucesso = kpisRaizFiltroPorIdPO.filtro();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),Filtros);
+			assertTrue(sucesso.get(i), Filtros);
 		}
-		
-		
+
 	}
-	
-	
+
 }

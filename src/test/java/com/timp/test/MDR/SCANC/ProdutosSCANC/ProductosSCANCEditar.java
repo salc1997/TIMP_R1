@@ -35,14 +35,12 @@ public class ProductosSCANCEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = produtosSCANCEditarPO.editar();
 
 		assertTrue(sucesso, Criar);

@@ -33,7 +33,6 @@ public class TabelaCodigoReceitaExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 		loginTC.login();

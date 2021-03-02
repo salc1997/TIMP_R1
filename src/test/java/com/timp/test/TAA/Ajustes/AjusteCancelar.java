@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AjusteCancelar extends TestBaseMassiel{
+public class AjusteCancelar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AjusteCancelarPO ajusteCancelarPO;
@@ -22,7 +22,7 @@ public class AjusteCancelar extends TestBaseMassiel{
 	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
-		acessarTAAPO  = new AcessarTAAPO();
+		acessarTAAPO = new AcessarTAAPO();
 		ajusteCancelarPO = new AjusteCancelarPO();
 	}
 
@@ -44,7 +44,7 @@ public class AjusteCancelar extends TestBaseMassiel{
 	@Test(priority = 2)
 	public void ajustesCancelar() {
 
-		boolean sucesso = ajusteCancelarPO .cancelar();
+		boolean sucesso = ajusteCancelarPO.cancelar();
 		assertTrue(sucesso, Criar);
 
 	}

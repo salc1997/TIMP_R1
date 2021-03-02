@@ -28,14 +28,14 @@ public class TabelaDeCreditosPorObrigacaoExcluir extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+//		driver.close();
 	}
 
 	@Test()
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeCreditosPorObrigacaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

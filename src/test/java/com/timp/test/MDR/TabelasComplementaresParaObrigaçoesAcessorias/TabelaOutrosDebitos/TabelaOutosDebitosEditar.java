@@ -37,7 +37,7 @@ public class TabelaOutosDebitosEditar extends TestBaseSteven {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaOutrosDebitosEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

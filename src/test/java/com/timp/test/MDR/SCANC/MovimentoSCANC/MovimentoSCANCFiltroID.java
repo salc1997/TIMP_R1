@@ -1,6 +1,5 @@
 package com.timp.test.MDR.SCANC.MovimentoSCANC;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -34,13 +33,11 @@ public class MovimentoSCANCFiltroID extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtro() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = movimentoSCANCFiltroIdPO.filtro();

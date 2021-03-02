@@ -13,39 +13,36 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SubperíodoCriar extends TestBaseMassiel{
-	  LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  SubperíodoCriarPO subperíodoCriarPO;
+public class SubperíodoCriar extends TestBaseMassiel {
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	SubperíodoCriarPO subperíodoCriarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  subperíodoCriarPO = new  SubperíodoCriarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		subperíodoCriarPO = new SubperíodoCriarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	
 	@Test(priority = 1)
 	public void criar() {
-		
+
 		loginTC.login();
-		
-		 acessarTFPPO .acessarTFP();
-		 
+
+		acessarTFPPO.acessarTFP();
+
 		boolean sucesso = subperíodoCriarPO.criar();
 
 		// teste pra conferir se o resultado mostrado é igual
 		assertTrue(sucesso, Criar);
 
 	}
-
 
 }

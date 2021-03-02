@@ -17,29 +17,27 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CodificaçãoDeAcDeTrabVisualizar extends TestBaseCristhian {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodificaçãoDeAcDeTrabVisualizarPO codificaçãoDeAcDeTrabVisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	driver = initializationC();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	codificaçãoDeAcDeTrabVisualizarPO = new CodificaçãoDeAcDeTrabVisualizarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		codificaçãoDeAcDeTrabVisualizarPO = new CodificaçãoDeAcDeTrabVisualizarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

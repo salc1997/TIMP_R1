@@ -19,7 +19,7 @@ public class DashboardCriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardCriarPO dashboardCriarPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationM();
@@ -30,7 +30,7 @@ public class DashboardCriar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,11 +42,11 @@ public class DashboardCriar extends TestBaseMassiel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void criar() {
 		boolean sucesso = dashboardCriarPO.criar();
-		assertTrue(sucesso,Criar);
-		
+		assertTrue(sucesso, Criar);
+
 	}
 }

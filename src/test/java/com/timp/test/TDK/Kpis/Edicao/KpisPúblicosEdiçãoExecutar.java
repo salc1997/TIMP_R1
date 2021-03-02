@@ -18,36 +18,32 @@ public class KpisPúblicosEdiçãoExecutar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisPúblicosEdiçãoExecutarPO kpisPúblicosEdiçãoExecutarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationC();
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisPúblicosEdiçãoExecutarPO = new KpisPúblicosEdiçãoExecutarPO();
-  }
+	}
 
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
 
-  
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
- 	}
+	@Test(priority = 1)
+	public void acessarTDK() {
+		acessarTDKPO.acessarTDK();
+	}
 
- 	@Test(priority = 1)
- 	public void acessarTDK() {
- 		acessarTDKPO.acessarTDK();
- 	}
- 	
- 	@Test(priority = 2)
- 	public void executar() {
- 		
- 		
- 		boolean sucesso = kpisPúblicosEdiçãoExecutarPO.Grafico();
- 		assertTrue(sucesso, Editar);
- 		
- 		
- 	}
+	@Test(priority = 2)
+	public void executar() {
+
+		boolean sucesso = kpisPúblicosEdiçãoExecutarPO.Grafico();
+		assertTrue(sucesso, Editar);
+
+	}
 
 }

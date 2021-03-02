@@ -10,7 +10,7 @@ import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriaPO;
- 
+
 public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 
 	LoginTC loginTC;
@@ -25,29 +25,30 @@ public class RelacionamentoEntreQuadrosCriar extends TestBaseEliel {
 		acessarMDRPO = new AcessarMDRPO();
 		relacionamentoEntreQuadrosCriaPO = new RelacionamentoEntreQuadrosCriaPO();
 	}
-	
-	@AfterClass public void afterClass(){ driver.close(); }
-	
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
+	/*
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 
 	@Test()
 	public void criar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = relacionamentoEntreQuadrosCriaPO.criar();
 		assertTrue(sucesso, semAcesso);
 

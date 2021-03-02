@@ -1,6 +1,5 @@
 package com.timp.test.MDR.TabelasApoioESocial.Tabela15;
 
-
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseCristhian;
@@ -19,31 +18,28 @@ public class AgenteCausadorDeSGDPExlusionMassa extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeSGDPExlusionMassaPO agenteCausadorDeSGDPExlusionMassa;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		agenteCausadorDeSGDPExlusionMassa = new AgenteCausadorDeSGDPExlusionMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
-	public void criar() {		
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = agenteCausadorDeSGDPExlusionMassa.criar();
 		assertTrue(sucesso, Criar);
 	}
-  
-  
 
 }

@@ -16,23 +16,23 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracoesStatusPeriodoEditar extends TestBaseEliel{
-	 LoginTC loginTC;
-	 AcessarTFPPO acessarTFPPO;
-	 ConfiguracoesStatusPeriodoEditarPO  configuracoesStatusPeriodoEditarPO;
-	
+public class ConfiguracoesStatusPeriodoEditar extends TestBaseEliel {
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	ConfiguracoesStatusPeriodoEditarPO configuracoesStatusPeriodoEditarPO;
+
 	@BeforeClass
-	public void beforeClass() { 
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  configuracoesStatusPeriodoEditarPO = new ConfiguracoesStatusPeriodoEditarPO();
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		configuracoesStatusPeriodoEditarPO = new ConfiguracoesStatusPeriodoEditarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
 	}
-	
+
 	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -40,18 +40,17 @@ public class ConfiguracoesStatusPeriodoEditar extends TestBaseEliel{
 
 	@Test(priority = 1)
 	public void TFPEntrar() {
-		 acessarTFPPO .acessarTFP();
+		acessarTFPPO.acessarTFP();
 	}
-	
+
 	@Test(priority = 2)
 	public void editar() {
-		
+
 		ArrayList<Boolean> sucesso = configuracoesStatusPeriodoEditarPO.editar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			// teste pra conferir se o resultado mostrado é igual
 			assertTrue(sucesso.get(i), Editar);
 		}
-		
 
 	}
 }

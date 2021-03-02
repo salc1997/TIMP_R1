@@ -31,7 +31,6 @@ public class TabelaDeCodigoEClasseParaQuadroExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 

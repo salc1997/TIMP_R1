@@ -15,21 +15,22 @@ public class AliquotasDeTaxaDeActualizacaoCriar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotasDeTaxaDeActualizacaoCriarPO aliquotasDeTaxaDeActualizacaoCriarPO;
-  @BeforeClass
-  public void beforeClass() {
+ 
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		aliquotasDeTaxaDeActualizacaoCriarPO = new AliquotasDeTaxaDeActualizacaoCriarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  
-  }
+	@AfterClass
+	public void afterClass() {
 
-  @Test(priority = 0)
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -41,6 +42,7 @@ public class AliquotasDeTaxaDeActualizacaoCriar extends TestBaseCristhian {
 		acessarMDRPO.acessarMDR();
 
 	}
+
 	@Test(priority = 2)
 	public void criar() {
 

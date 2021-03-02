@@ -73,7 +73,7 @@
 
 		<classes>
 		
-			<!--  Contas Contábeis RBLP  -->
+			<!--  Cadastros IRPJ/CSLL > Contas Contábeis RBLP  -->
 				
 				<class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasContábeisRBLP.ContasContábeisRBLPFiltroId"></class>
 		
@@ -182,8 +182,8 @@
 			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Aquisição -->
 				
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoCriar"></class>
-				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoEditar.java"></class>
-				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoEditar.java"></class>
+				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoEditar"></class>
+				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoExcluir"></class>
 		</classes>
 	
 	</test>
@@ -219,9 +219,9 @@
 		<classes>
 			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Inf Proc Judicial -->
 				
-				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250AquisicaoDeProducaoRuralCriar"></class>
-				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250AquisicaoDeProducaoRuralEditar"></class>
-				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250AquisicaoDeProducaoRuralExcluir"></class>
+				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250InfProcJudicialCriar"></class>
+				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250InfProcJudicialEditar"></class>
+				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250InfProcJudicialExcluir"></class>
 		
 		</classes>
 	
@@ -238,7 +238,7 @@
 				<class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFDetalhes"></class>
 				<class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluir"></class>
 				<class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluirEmMasa"></class>
-				<class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF."></class>
+				
 				
 		</classes>
 	

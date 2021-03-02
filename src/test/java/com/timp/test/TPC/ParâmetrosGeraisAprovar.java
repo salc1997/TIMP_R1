@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 
 public class ParâmetrosGeraisAprovar extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTPCPO  acessarTPCPO;
+	AcessarTPCPO acessarTPCPO;
 	ParâmetrosGeraisAprovarPO parâmetrosGeraisAprovarPO;
 
 	@BeforeClass
@@ -29,7 +29,7 @@ public class ParâmetrosGeraisAprovar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -39,14 +39,14 @@ public class ParâmetrosGeraisAprovar extends TestBaseCristhian {
 
 	@Test(priority = 1)
 	public void ingresarTPC() {
-		
+
 		acessarTPCPO.acessarTPC();
-		
+
 	}
 
 	@Test(priority = 2)
 	public void aprovado() {
-		
+
 		boolean sucesso = parâmetrosGeraisAprovarPO.aprovado();
 	}
 }

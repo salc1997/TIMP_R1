@@ -22,7 +22,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -34,7 +34,6 @@ public class CodigoDeAjusteDaApuraçaoDoIPIExcluir extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void excluir() {

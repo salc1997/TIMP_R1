@@ -35,7 +35,7 @@ public class TabelaDeIsencoesCriar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeIsencoesCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

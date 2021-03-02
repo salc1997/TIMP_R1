@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NaturezaJuridicaExcluirMassa extends TestBaseFernando{
+public class NaturezaJuridicaExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaJuridicaExcluirMassaPO naturezaJuridicaExcluirMassaPO;
@@ -35,11 +35,11 @@ public class NaturezaJuridicaExcluirMassa extends TestBaseFernando{
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = naturezaJuridicaExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = naturezaJuridicaExcluirMassaPO.exluirMassa();

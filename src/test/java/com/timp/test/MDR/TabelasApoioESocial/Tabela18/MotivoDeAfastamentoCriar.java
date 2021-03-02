@@ -33,7 +33,7 @@ public class MotivoDeAfastamentoCriar extends TestBaseSteven {
 	}
 
 	@Test()
-	public void criar() {		
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = motivoDeAfastamentoCriarPO.criar();

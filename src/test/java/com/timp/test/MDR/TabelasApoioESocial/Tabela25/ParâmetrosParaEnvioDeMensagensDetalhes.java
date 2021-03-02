@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosParaEnvioDeMensagensDetalhes extends TestBaseFernando{
+public class ParâmetrosParaEnvioDeMensagensDetalhes extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	ParâmetrosParaEnvioDeMensagensDetalhesPO parâmetrosParaEnvioDeMensagensDetalhesPO;

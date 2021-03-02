@@ -13,30 +13,30 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SubperíodoExcluir extends TestBaseMassiel{
+public class SubperíodoExcluir extends TestBaseMassiel {
 	LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  SubperíodoExcluirPO subperíodoExcluirPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  subperíodoExcluirPO = new SubperíodoExcluirPO();
-  }
+	AcessarTFPPO acessarTFPPO;
+	SubperíodoExcluirPO subperíodoExcluirPO;
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		subperíodoExcluirPO = new SubperíodoExcluirPO();
+	}
 
-  @Test(priority = 1)
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test(priority = 1)
 	public void excluir() {
-	  loginTC.login();
-		acessarTFPPO .acessarTFP();
-		
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
+
 		boolean sucesso2 = subperíodoExcluirPO.Excluir();
 		assertTrue(sucesso2, Eliminado);
-  }
+	}
 }

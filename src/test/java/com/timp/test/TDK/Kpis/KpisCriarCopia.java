@@ -15,56 +15,53 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisCriarCopia extends TestBaseMassiel{
-	
+public class KpisCriarCopia extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisCriarCopiaPO kpisCriarCopiaPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-			loginTC = new LoginTC();
-			acessarTDKPO = new AcessarTDKPO();
-			kpisCriarCopiaPO = new KpisCriarCopiaPO(); 
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTDKPO = new AcessarTDKPO();
+		kpisCriarCopiaPO = new KpisCriarCopiaPO();
+	}
 
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
- 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
- 	@Test(priority = 1)
- 	public void acessarTDK() {
- 		acessarTDKPO.acessarTDK();
- 	}
- 	
- 	@Test(priority = 2)
- 	public void criarCopia() {
- 		
- 		ArrayList<Boolean> sucesso = kpisCriarCopiaPO.Criar();;
-		
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+	}
+
+	@Test(priority = 1)
+	public void acessarTDK() {
+		acessarTDKPO.acessarTDK();
+	}
+
+	@Test(priority = 2)
+	public void criarCopia() {
+
+		ArrayList<Boolean> sucesso = kpisCriarCopiaPO.Criar();
+		;
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
- 		
-		
-		
+
 		boolean sucesso1 = kpisCriarCopiaPO.Excluir();
 
- 		assertTrue(sucesso1, Criar);
- 		
- 		
- 		
- 		ArrayList<Boolean> sucesso2 =kpisCriarCopiaPO.comparar();
-		
+		assertTrue(sucesso1, Criar);
+
+		ArrayList<Boolean> sucesso2 = kpisCriarCopiaPO.comparar();
+
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), Detalhes);
 		}
- 		
- 	}
+
+	}
 }

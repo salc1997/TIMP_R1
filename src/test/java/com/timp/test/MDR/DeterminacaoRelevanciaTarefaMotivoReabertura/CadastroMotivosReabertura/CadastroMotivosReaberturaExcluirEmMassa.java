@@ -44,9 +44,20 @@ public class CadastroMotivosReaberturaExcluirEmMassa extends TestBaseSteven {
 		boolean sucesso = cadastroMotivosReaberturaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+
+	}
+	
+	
+
+	@Test(dependsOnMethods = "criar")
+	public void ExcluirEmMassa() {
+		
+	
+
 		boolean sucesso2 = cadastroMotivosReaberturaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
-
+	
 }

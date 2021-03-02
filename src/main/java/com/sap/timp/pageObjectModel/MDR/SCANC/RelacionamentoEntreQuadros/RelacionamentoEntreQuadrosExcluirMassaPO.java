@@ -85,6 +85,9 @@ public class RelacionamentoEntreQuadrosExcluirMassaPO extends TestBaseCristhian 
 		PageFactory.initElements(driver, this);
 	}
 	
+	String id1G = "";
+	String id2G = "";
+	
 public boolean criar() {
 		
 		sleep(2000);
@@ -226,11 +229,11 @@ public boolean criar() {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		
+		id1G= idRegistro1;
 		rows = rows-1;
 		
 		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		
+		id2G= idRegistro2;
 		
 		
 	
@@ -263,21 +266,17 @@ public boolean criar() {
 		
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
-		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-
-		
+		System.out.println("Rows Excluir");
 		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check1.click();
 		sleep(1000);
 		rows = rows-1;
-		
-		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		
+
 		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check2.click();
 		
 		sleep(1000);
+		System.out.println("Clico en los checks");
 		
 		excluirMassa.click();
 		sleep(1000);
@@ -286,13 +285,13 @@ public boolean criar() {
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
 		driver.navigate().refresh();
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -302,8 +301,8 @@ public boolean criar() {
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		int id1 = convertToInt(id);
-		int id2 = convertToInt(idRegistro1);
-		int id3 = convertToInt(idRegistro2);
+		int id2 = convertToInt(id1G);
+		int id3 = convertToInt(id2G);
 		
 		System.out.println(" Id Ultimo Registro: "+ id1);
 		System.out.println("Id Excluir Registro 1: " + id2);

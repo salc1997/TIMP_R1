@@ -113,7 +113,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		new Actions(driver).moveToElement(empresa).click().perform();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"state\"]/div/div/div/div", "class", "input-wrapper base-input  required");
+		attributeToBeXpath("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
 		
 		ufFilial.click();
 		sleep(1000);
@@ -121,7 +121,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		new Actions(driver).moveToElement(ufFilial).click().perform();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
 		
 		filial.click();
 		sleep(1000);

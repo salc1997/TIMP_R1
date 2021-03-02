@@ -28,18 +28,9 @@ public class TabelaDeApoioECFExcluirMasas extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
-	/*
-	 * @Test(priority = 0) public void login() { loginTC.login();
-	 * 
-	 * }
-	 * 
-	 * @Test(priority = 1) public void acessarMDR() {
-	 * 
-	 * acessarMDRPO.acessarMDR();
-	 * 
-	 * }
-	 */
+
 
 	@Test()
 	public void criar() {
@@ -49,6 +40,12 @@ public class TabelaDeApoioECFExcluirMasas extends TestBaseMassiel {
 
 		boolean sucesso = tabelaDeApoioECFExcluirMasasPO.Criar();
 		assertTrue(sucesso, Criar);
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void ExcluirEmMassa() {
+
 
 		boolean sucesso2 = tabelaDeApoioECFExcluirMasasPO.ExcluirMasas();
 		assertTrue(sucesso2, Eliminado);

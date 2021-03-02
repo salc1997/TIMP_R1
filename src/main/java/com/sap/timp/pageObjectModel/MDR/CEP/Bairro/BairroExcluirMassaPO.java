@@ -52,7 +52,7 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 	}
 	
 	public void llenarDatos1() {
-		String numEnviar = "99997";		
+		String numEnviar = "996761";		
 		numBairro.clear();
 		numBairro.sendKeys(numEnviar);
 		sleep(1000);
@@ -61,7 +61,7 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 	}
 	
 	public void llenarDatos2() {
-		String numEnviar = "99998";		
+		String numEnviar = "99678";		
 		numBairro.clear();
 		numBairro.sendKeys(numEnviar);
 		sleep(1000);
@@ -151,31 +151,24 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-
-		btnUltimaPagina.click();
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000); 
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		  
 		boolean sucesso = false;
 
-		String id1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[3]/div")).getText();
+		String id1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 
-		int id1I = convertToInt(id1);
+
 		rows = rows - 1;
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[3]/div")).getText();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println("Penultimo id após da criação: " +id1);
 		System.out.println("Último id após da criação: " +id2);
 		
-		int id2I = convertToInt(id2);
-		int idI = convertToInt(id);
 		
-		if (id1I > idI && id2I > idI) {
+	
+		if (id1.equals("996761") == true && id2.equals("99678") == true) {
 			sucesso = true;
 		}
 		
@@ -185,15 +178,8 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 	} 
 	
 	public boolean exluirMassa() {
-		sleep(1000);
-		if(!novo.isDisplayed()) {
-			return false;
-		}
-		sleep(2000);
-		btnUltimaPagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000); 
+
+
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
@@ -215,7 +201,7 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//li[contains(@class,\"toast-success\")]/div/span[3]");
 		sleep(2000);
 		
 		driver.navigate().refresh();

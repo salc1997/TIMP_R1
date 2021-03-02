@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
 =======
 <<<<<<< HEAD
@@ -96,8 +97,12 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="46581" started-at="2021-02-24T21:20:27Z" finished-at="2021-02-24T21:21:14Z">
 =======
@@ -192,8 +197,12 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-03-01T21:14:56Z" name="Default suite" finished-at="2021-03-01T21:16:15Z" duration-ms="79065">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="46581" started-at="2021-02-24T21:20:27Z" finished-at="2021-02-24T21:21:14Z">
       <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
@@ -334,9 +343,15 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-03-01T21:14:56Z" name="Default test" finished-at="2021-03-01T21:16:15Z" duration-ms="79065">
+      <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisPublicosDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisPublicosDetalhes@301eda63]" started-at="2021-03-01T21:14:56Z" name="beforeClass" finished-at="2021-03-01T21:15:11Z" duration-ms="14722" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar@501edcf1]" name="criar" duration-ms="31514" started-at="2021-02-24T21:20:38Z" finished-at="2021-02-24T21:21:10Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -416,8 +431,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades@4ebff610]" started-at="2021-02-27T00:32:16Z" name="login" finished-at="2021-02-27T00:32:27Z" duration-ms="11329" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisPublicosDetalhes@301eda63]" started-at="2021-03-01T21:15:11Z" name="login" finished-at="2021-03-01T21:15:18Z" duration-ms="7212" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -443,7 +462,10 @@
 >>>>>>> refs/remotes/origin/master
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.CALENDAR.Tarefas.TarefasGatewayAutomatico@6caf0677]" started-at="2021-03-01T20:45:06Z" name="BPMAEntrar" finished-at="2021-03-01T20:45:33Z" duration-ms="26992" status="PASS">
 =======
@@ -462,8 +484,12 @@
         <test-method signature="taaEntrar()[pri:1, instance:com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades@4ebff610]" started-at="2021-02-27T00:32:27Z" name="taaEntrar" finished-at="2021-02-27T00:33:24Z" duration-ms="56361" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisPublicosDetalhes@301eda63]" started-at="2021-03-01T21:15:18Z" name="acessarTDK" finished-at="2021-03-01T21:15:40Z" duration-ms="21668" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1174,13 +1200,18 @@ Session ID: 85422879521f56cc52130e40d30b43d0
           </reporter-output>
         </test-method> <!-- beforeClass -->
         <test-method status="PASS" signature="filtro()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURFiltroID@197d671]" name="filtro" duration-ms="89430" started-at="2021-02-18T19:01:51Z" finished-at="2021-02-18T19:03:20Z">
+=======
+        </test-method> <!-- acessarTDK -->
+        <test-method signature="filtro()[pri:2, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisPublicosDetalhes@301eda63]" started-at="2021-03-01T21:15:40Z" name="filtro" finished-at="2021-03-01T21:16:15Z" duration-ms="35187" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filtro -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURFiltroID@197d671]" name="afterClass" is-config="true" duration-ms="62" started-at="2021-02-18T19:03:20Z" finished-at="2021-02-18T19:03:20Z">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisPublicosDetalhes@301eda63]" started-at="2021-03-01T21:16:15Z" name="afterClass" finished-at="2021-03-01T21:16:15Z" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURFiltroID -->
     </test> <!-- Automações MDR 10 -->
     <test name="Cenarios de Correção" duration-ms="627667" started-at="2021-02-18T19:05:42Z" finished-at="2021-02-18T19:16:10Z">
@@ -7209,6 +7240,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisPublicosDetalhes -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git

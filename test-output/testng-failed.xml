@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 =======
 <<<<<<< HEAD
@@ -56,9 +57,12 @@
 >>>>>>> refs/remotes/origin/master
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <classes>
       <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
@@ -83,7 +87,10 @@
   <test thread-count="4" parallel="tests" name="Prueba1(failed)">
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.CALENDAR.Tarefas.TarefaManual">
 =======
@@ -125,7 +132,11 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -134,7 +145,10 @@
 =======
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="Calendar"/>
 =======
@@ -423,7 +437,12 @@
 >>>>>>> refs/remotes/origin/Eliel
 >>>>>>> refs/heads/master
 >>>>>>> refs/remotes/origin/master
+=======
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasExecutarConfiguracaoBFB -->
 =======
@@ -529,6 +548,9 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Prueba1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

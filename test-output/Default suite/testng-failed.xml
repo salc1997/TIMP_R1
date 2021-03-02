@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+>>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
         <methods>
@@ -27,7 +32,11 @@
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes">
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -122,8 +131,13 @@
           <include name="afterClass"/>
           <include name="Calendar"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="afterClass"/>
+          <include name="filtro"/>
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
 =======
@@ -225,6 +239,9 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

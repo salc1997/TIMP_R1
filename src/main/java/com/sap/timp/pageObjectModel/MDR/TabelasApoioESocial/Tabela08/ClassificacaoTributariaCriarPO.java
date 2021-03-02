@@ -73,11 +73,11 @@ public class ClassificacaoTributariaCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("07");
+		codigo.sendKeys("05");
 		sleep(1000);
 		
 		
-		descricao.sendKeys("Teste da Descrição");
+		descricao.sendKeys("Teste da Descrição55");
 		sleep(1000);
 		
 		String data = fechaActual();

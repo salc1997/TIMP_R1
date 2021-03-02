@@ -81,7 +81,7 @@ public class TabelaDeApoioECFCriarPO extends TestBaseFernando{
 		
 		descricao.click();
 		sleep(1000);
-		descricao.sendKeys("Teste Automatizado 7007");
+		descricao.sendKeys("Teste Automatizado 5");
 		sleep(2000);
 		
 		cboVersaoLeiaute.click();

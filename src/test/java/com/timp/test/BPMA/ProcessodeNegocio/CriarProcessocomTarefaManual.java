@@ -33,6 +33,7 @@ public class CriarProcessocomTarefaManual extends TestBaseCristhian{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   

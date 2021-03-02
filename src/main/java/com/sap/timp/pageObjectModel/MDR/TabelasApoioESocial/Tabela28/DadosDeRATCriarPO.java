@@ -16,17 +16,29 @@ public class DadosDeRATCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Tabela 28 - Dados de RAT\"]")
 	public WebElement tabela28;
 	
-	@FindBy(xpath = "//button/span[text()=\"Novo Motivo de Ces. Benefícios\"]")
+	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Código\")]")
-	public WebElement codigo;
+	@FindBy(xpath = "//div[@class=\"field-element company_0_0\"]/div/div/div/div[2]")
+	public WebElement empresa;
 	
-	@FindBy(xpath = "//textarea[contains(@placeholder,\"Descrição\")]")
-	public WebElement descricao;
+	@FindBy(xpath = "//div[@id=\"option-1\"]/div")
+	public WebElement opcao;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
-	public WebElement validade;
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"1000\"]")
+	public WebElement opcaoempresa;
+	
+	@FindBy(xpath = "//div[@class=\"field-element tax_0_1\"]/div/div/div/div[2]")
+	public WebElement tributo;
+	
+	@FindBy(xpath = "//div[@class=\"field-element filial_0_2\"]/div/div/div/div[2]")
+	public WebElement filial;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar  Competência\"]")
+	public WebElement competencia;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Validade De\"]")
+	public WebElement datainicio;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -83,13 +95,22 @@ public class DadosDeRATCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("111");
-		sleep(1000);
-		descricao.sendKeys("Movito Teste");
-		sleep(1000);
-		
+		empresa.click();
+		sleep(2000);
+		opcaoempresa.click();
+		sleep(2000);
+		tributo.click();
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
+		filial.click();
+		sleep(2000);
+		opcao.click();
+		sleep(2000);
 		String data = fechaActual();
-		validade.sendKeys(data);
+		competencia.sendKeys(data);
+		datainicio.sendKeys(data);
+		
 		sleep(1000);
 		
 		sleep(2000);

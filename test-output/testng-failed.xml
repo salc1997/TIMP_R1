@@ -1,15 +1,534 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Cenarios de Correção(failed)">
+=======
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <classes>
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa">
+        <methods>
+<<<<<<< HEAD
+=======
+          <include name="editarConfiguracion"/>
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+>>>>>>> refs/heads/master
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+=======
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/master
+>>>>>>> refs/remotes/origin/Eliel
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
     <classes>
       <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
+        <methods>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/heads/master
+>>>>>>> refs/remotes/origin/master
+>>>>>>> refs/remotes/origin/Eliel
+=======
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Prueba1(failed)">
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+    <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefaManual">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
+=======
+      <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa">
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefasExecutarConfiguracaoBFB">
+=======
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa">
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosEditar">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa">
+=======
+      <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId">
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/heads/master
+=======
+      <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <include name="executarEditar"/>
+=======
+>>>>>>> refs/heads/Cristhian
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="Calendar"/>
+=======
+<<<<<<< HEAD
+=======
+          <include name="excluirEmMassa"/>
+          <include name="criar"/>
+=======
+      <class name="com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades">
+        <methods>
+          <include name="editarConfiguracion"/>
+>>>>>>> refs/remotes/origin/Kenssy
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorEditar -->
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirMassa"/>
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="criar"/>
+          <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa -->
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluir -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa">
+        <methods>
+          <include name="excluirEmMassa"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa -->
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="excluirEmMassa"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa -->
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluir -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosVisualizar -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosEditar -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="criar"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa -->
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluirEmMassa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorExcluirEmMassa -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorVisualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Visualizar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorVisualizar -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa">
+        <methods>
+          <include name="excluir"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescricaoDeNatDeLesãoExcluirEmMassa -->
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosEditar -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="excluirEmMassa"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroID">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorFiltroID -->
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa -->
+      <class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="excluirEmMassa"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa -->
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluirMassa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluirMassa -->
+      <class name="com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID -->
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Detalhes"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorDetalhes -->
+      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir -->
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
+          <include name="filtrosBiblioteca"/>
+=======
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/heads/master
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefaManual -->
+=======
+      </class> <!-- com.timp.test.DFG.SPED.ECD.ECDFuncionalidades -->
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          <include name="afterClass"/>
+=======
+          <include name="editar"/>
+<<<<<<< HEAD
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Eliel
+>>>>>>> refs/heads/master
+>>>>>>> refs/remotes/origin/master
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasExecutarConfiguracaoBFB -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosEditar -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
+=======
+      </class> <!-- com.timp.test.BRB.AdicionarColunas -->
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/Eliel
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
+=======
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados">
+        <methods>
+          <include name="filtros"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados -->
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar -->
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa -->
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular -->
+>>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular -->
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoCopiar -->
+>>>>>>> refs/remotes/origin/Kenssy
+<<<<<<< HEAD
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoVer -->
+>>>>>>> refs/remotes/origin/Eliel
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId -->
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/heads/master
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/master
+>>>>>>> refs/remotes/origin/Eliel
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades -->
+>>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Prueba1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

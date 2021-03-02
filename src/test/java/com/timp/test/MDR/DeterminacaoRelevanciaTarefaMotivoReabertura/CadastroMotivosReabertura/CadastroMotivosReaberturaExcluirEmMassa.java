@@ -43,6 +43,7 @@ public class CadastroMotivosReaberturaExcluirEmMassa extends TestBaseSteven {
 
 		boolean sucesso = cadastroMotivosReaberturaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+<<<<<<< HEAD
 		sleep(1000);
 
 
@@ -55,6 +56,15 @@ public class CadastroMotivosReaberturaExcluirEmMassa extends TestBaseSteven {
 		
 	
 
+=======
+	
+
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+	
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		boolean sucesso2 = cadastroMotivosReaberturaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

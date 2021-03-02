@@ -30,11 +30,13 @@ public class TabelaDeApoioECFExcluirMasas extends TestBaseMassiel {
 	public void afterClass() {
 		driver.close();
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
 	@Test()
 	public void criar() {
-
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -44,9 +46,13 @@ public class TabelaDeApoioECFExcluirMasas extends TestBaseMassiel {
 	}
 	
 	@Test(dependsOnMethods = "criar")
+<<<<<<< HEAD
 	public void ExcluirEmMassa() {
 
 
+=======
+	public void excluir() {
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		boolean sucesso2 = tabelaDeApoioECFExcluirMasasPO.ExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
 	}

@@ -55,10 +55,10 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia extends TestB
 	public void criarConfiguracaoHierarquia() {
 		
 		ArrayList<Boolean> sucesso = parametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO.editar();
-		System.out.println("veamos"+sucesso);
+		System.out.println("veamos: "+sucesso);
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
+			assertTrue(sucesso.get(i), Criar);
 		}
 		
 	}

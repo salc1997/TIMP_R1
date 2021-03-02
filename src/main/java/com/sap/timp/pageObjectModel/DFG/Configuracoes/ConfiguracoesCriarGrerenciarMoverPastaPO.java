@@ -12,8 +12,8 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Display-and-Setting icon-setting padding-right \"]")
 	public WebElement configuracoes;
 	
-	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[3]/div[3]/span")
-	public WebElement raiz;
+	@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]/div/div[1]")
+	public WebElement raiz2;
 	
 	@FindBy(xpath = "//span[@class = \"button-icon icon-font-File-and-Folders icon-addfolder\"]")
 	public WebElement btnCriarPasta;
@@ -114,8 +114,8 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(raiz);
-		raiz.click();
+		waitExpectElement(raiz2);
+		raiz2.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

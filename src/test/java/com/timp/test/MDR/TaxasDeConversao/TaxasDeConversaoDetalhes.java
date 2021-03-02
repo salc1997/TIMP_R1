@@ -31,11 +31,6 @@ public class TaxasDeConversaoDetalhes extends TestBaseFernando {
 		driver.close();
 	}
 
-	/*
-	 * @Test(priority = 0) public void login() { loginTC.login(); }
-	 * 
-	 * @Test(priority = 1) public void acessarMDR() { acessarMDRPO.acessarMDR(); }
-	 */
 	@Test()
 	public void detalhes() {
 

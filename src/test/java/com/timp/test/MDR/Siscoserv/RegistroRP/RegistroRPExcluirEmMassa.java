@@ -31,20 +31,7 @@ public class RegistroRPExcluirEmMassa extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test()
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
 	@Test()
 	public void criar() {
 		loginTC.login();
@@ -52,11 +39,12 @@ public class RegistroRPExcluirEmMassa extends TestBaseEliel{
 
 		boolean sucesso = registroRPExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+
 		sleep(1000);
 	}
 	
 	@Test(dependsOnMethods = "criar")
-	public void excluirEnMassa() {
+	public void excluir() {
 		boolean sucesso2 = registroRPExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

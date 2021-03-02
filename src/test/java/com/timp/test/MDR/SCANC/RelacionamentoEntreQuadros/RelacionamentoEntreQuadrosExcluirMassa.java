@@ -33,17 +33,7 @@ public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian {
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	 * @Test(priority = 0) public void login() { loginTC.login();
-	 * 
-	 * }
-	 * 
-	 * @Test(priority = 1) public void acessarMDR() {
-	 * 
-	 * acessarMDRPO.acessarMDR();
-	 * 
-	 * }
-	 */
+
 
 	@Test()
 	public void criar() {
@@ -53,27 +43,16 @@ public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian {
 
 		boolean sucesso = relacionamentoEntreQuadrosExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
-<<<<<<< HEAD
+
 		sleep(1000);
 	
 
 	}
-	
 
-	@Test(dependsOnMethods = "criar")
-	public void ExcluirEmMassa() {
-
-	
-=======
-
-
-	}
 	
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
 		
-		
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		boolean sucesso2 = relacionamentoEntreQuadrosExcluirMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

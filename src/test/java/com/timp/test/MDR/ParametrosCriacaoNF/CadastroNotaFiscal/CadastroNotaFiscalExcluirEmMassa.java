@@ -26,7 +26,7 @@ public class CadastroNotaFiscalExcluirEmMassa extends TestBaseKenssy {
 		cadastroNotaFiscalExcluirEmMassaPO = new CadastroNotaFiscalExcluirEmMassaPO();
 	}
 
-<<<<<<< HEAD
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
@@ -49,26 +49,5 @@ public class CadastroNotaFiscalExcluirEmMassa extends TestBaseKenssy {
 		boolean sucesso2 = cadastroNotaFiscalExcluirEmMassaPO.cadastroNotaFiscalExcluirEmMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
-=======
-  }*/
-  
-  @Test()
-  public void criar() {
-	  
-	  loginTC.login();
-	  accesarMDR.acessarMDR();
-	boolean sucesso = cadastroNotaFiscalExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-  }
-  
-  
-  @Test(dependsOnMethods = "criar")
-  public void excluirEmMassa() {
-	  
-	
-	boolean sucesso2 = cadastroNotaFiscalExcluirEmMassaPO.cadastroNotaFiscalExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
-  }
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
 }

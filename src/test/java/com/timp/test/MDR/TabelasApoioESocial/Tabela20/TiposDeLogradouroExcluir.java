@@ -36,14 +36,8 @@ public class TiposDeLogradouroExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-<<<<<<< HEAD
-
-
 	@Test()
 
-=======
-	@Test()
->>>>>>> refs/remotes/origin/master
 	  public void excluir() {
 		
 		loginTC.login();

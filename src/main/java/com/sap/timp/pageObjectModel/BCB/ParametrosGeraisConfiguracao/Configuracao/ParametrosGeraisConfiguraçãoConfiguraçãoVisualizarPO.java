@@ -69,9 +69,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		hierarquiaConfiguracao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
 		siguiente.click();
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -83,10 +81,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-		
 		açao.click();
 		sleep(2000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

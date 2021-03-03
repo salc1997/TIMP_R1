@@ -33,7 +33,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseCr
 	@FindBy(xpath = "//li[text()=\"4 - FECP\"]")
 	public WebElement tipoApuracaoO;
 	
-	@FindBy(xpath = "//*[@id=\"main-content\"]/div/div/div[1]/div/div[1]/div/div/div/ul/li[3]/button/span")
+	@FindBy(xpath = "//span[contains(@class,\"icon-setting\")]")
 	public WebElement editarR;
 
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
@@ -41,6 +41,9 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseCr
 
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
@@ -54,9 +57,6 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseCr
 	}
 	
 	public boolean editar() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		sleep(2000);
 		configuracoes.click();
@@ -86,11 +86,11 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseCr
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		waitExpectElement(editarR);
+		sleep(3000);
 		//attributoNotToBeEmptyElement(campo, "value");
 		//sleep(2000);
 		editarR.click();
-		
 		sleep(2000);
 		
 		String valor = campo.getAttribute("value");
@@ -100,42 +100,34 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseCr
 		tipoApuracaoO.click();
 		sleep(1000);
 
-		
-//
 		String enviar = campo.getAttribute("value");
-//
-//		campo.clear();
-//		sleep(1000);
-//		campo.sendKeys(enviar);
-//		sleep(2000);
+		sleep(2000);
+		
+		sleep(1000);
 		gravar.click();
-		sleep(12000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+//		nao.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 //		waitExpectElement(sim);
 
 
 		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		sleep(8000);
-		//waitExpectElement(editarR);
-		sleep(8000);
-		editarR.click();
-		
-		sleep(2000);
-
+		sleep(3000);
+		waitExpectElement(editarR);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
-		//waitExpectElement(campo);
+		sleep(3000);
 		
+		editarR.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		attributoNotToBeEmptyElement(campo, "value");
 		sleep(2000);
 
 		String nuevoTexto = campo.getAttribute("value");
@@ -143,9 +135,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseCr
 		System.out.println(nuevoTexto);
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
-		
-
-		
+	
 		return sucesso;
 	}
 

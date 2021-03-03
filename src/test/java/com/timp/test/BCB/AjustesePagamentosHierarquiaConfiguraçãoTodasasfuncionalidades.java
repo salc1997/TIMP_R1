@@ -40,43 +40,43 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades exte
 		loginTC.login();
 	}
 
-//	@Test(priority = 1)
-//	public void taaEntrar() {
-//		boolean sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.accesarTaa();
-//		System.out.println(sucesso);
-//		assertTrue(sucesso,Acessar);
-//	}
-//	
-//	@Test(priority = 2)
-//	public void tpcEntrar() {
-//		boolean sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.accesarTpc();
-//		System.out.println(sucesso);
-//		assertTrue(sucesso,Acessar);
-//	}
+	@Test(priority = 1)
+	public void taaEntrar() {
+		boolean sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.accesarTaa();
+		System.out.println(sucesso);
+		assertTrue(sucesso,Acessar);
+	}
+	
+	@Test(priority = 2)
+	public void tpcEntrar() {
+		boolean sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.accesarTpc();
+		System.out.println(sucesso);
+		assertTrue(sucesso,Acessar);
+	}
 	@Test(priority = 3)
 	public void bcbEntrar() {
 		boolean sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.accesarBCB();
 		System.out.println(sucesso);
 		assertTrue(sucesso,Acessar);
 	}
-//	@Test(priority = 4)
-//	public void criarHerarquia() {
-//		ArrayList<Boolean> sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.criarHerarquia();
-//		System.out.println(sucesso);
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), subniveis);
-//		}
-//	}
-//	@Test(priority = 5)
-//	public void criarConfiguracao() {
-//		ArrayList<Boolean> sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.criarConfiguracao();
-//		System.out.println(sucesso);
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), subniveis);
-//		}
-//	}
+	@Test(priority = 4)
+	public void criarHerarquia() {
+		ArrayList<Boolean> sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.criarHerarquia();
+		System.out.println(sucesso);
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), subniveis);
+		}
+	}
+	@Test(priority = 5)
+	public void criarConfiguracao() {
+		ArrayList<Boolean> sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.criarConfiguracao();
+		System.out.println(sucesso);
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), subniveis);
+		}
+	}
 	  @Test(priority = 6)
 	  public void editarConfiguracion() {
 

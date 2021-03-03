@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="10" passed="2" failed="8" skipped="0">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-03-02T18:50:41Z" name="Default suite" finished-at="2021-03-02T18:52:16Z" duration-ms="95501">
+=======
+  <suite name="Default suite" duration-ms="215200" started-at="2021-03-02T21:49:28Z" finished-at="2021-03-02T21:53:03Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-03-02T18:50:41Z" name="Default test" finished-at="2021-03-02T18:52:16Z" duration-ms="95501">
       <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@4a668b6e]" started-at="2021-03-02T18:50:41Z" name="beforeClass" finished-at="2021-03-02T18:50:56Z" duration-ms="15173" status="PASS">
+=======
+    <test name="Default test" duration-ms="215200" started-at="2021-03-02T21:49:28Z" finished-at="2021-03-02T21:53:03Z">
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar@78b729e6]" name="beforeClass" is-config="true" duration-ms="19052" started-at="2021-03-02T21:49:28Z" finished-at="2021-03-02T21:49:47Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@4a668b6e]" started-at="2021-03-02T18:50:56Z" name="login" finished-at="2021-03-02T18:51:05Z" duration-ms="9080" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -157,8 +172,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method status="PASS" signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar@78b729e6]" name="editar" duration-ms="196126" started-at="2021-03-02T21:49:47Z" finished-at="2021-03-02T21:53:03Z">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- abrirSubnivel1 -->
         <test-method signature="abrirSubnivel2()[pri:12, instance:com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@4a668b6e]" started-at="2021-03-02T18:51:52Z" name="abrirSubnivel2" finished-at="2021-03-02T18:51:53Z" duration-ms="1042" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -594,6 +613,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
+=======
+        </test-method> <!-- editar -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar@78b729e6]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-03-02T21:53:03Z" finished-at="2021-03-02T21:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

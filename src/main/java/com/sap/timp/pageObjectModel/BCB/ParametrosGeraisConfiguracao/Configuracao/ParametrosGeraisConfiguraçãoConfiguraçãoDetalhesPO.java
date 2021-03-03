@@ -106,6 +106,10 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 		System.out.println("Tipo Apuracao: " + tipoApuracaoDValor);
 		System.out.println("Nome de Hierarquia: " + nomeHierarquiaDValor);
 
+		fecharPanel.click();
+		sleep(3000);
+
+		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idRegistro+"\"]/div[1]/div"));
 		açao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
@@ -118,5 +122,9 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
+		System.err.println("");
+		System.out.println("***************--------------------------------------------*******************");
+		System.out.println("NO HAY DATOS EN VISUALIZAR PARA PODER COMPARAR CON DETALHES, BUG YA REPORTADO");
+		System.out.println("***************--------------------------------------------*******************");
 	}
 }

@@ -34,7 +34,7 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 0)
@@ -55,11 +55,11 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseCristhian{
 	@Test(priority = 2)
 	public void criarConfiguracaoHierarquia() {
 		
-		ArrayList<Boolean> sucesso = parametrosGeraisHierarquiaCriarComCópiaPO.editar();
+		ArrayList<Boolean> sucesso = parametrosGeraisHierarquiaCriarComCópiaPO.criar();
 		System.out.println("veamos"+sucesso);
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), subniveis);
+			assertTrue(sucesso.get(i), Criar);
 			
 		}
 		

@@ -78,21 +78,15 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 			tp1 = true;
 		}
 
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		sleep(2000);
+		invisibilityOfElementOverlay();
+		
 		regraDeEscrituracao.click();
 
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
 
 		btnUltimaPagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
+		invisibilityOfElementOverlay();
 
 		String idRegistro = idObter2();
 
@@ -228,9 +222,9 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		System.out.println("Verificação exclusão Cópia: " + sucesso.get(3));
 		
 		configuracoes.click();
-		invisibilityOfElementOverlay();
-
+		
 		waitExpectElement(descricaoConf);
+		invisibilityOfElementOverlay();
 		sleep(2000);
 		
 		
@@ -260,8 +254,9 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		
 
 		configuracoes.click();
-		invisibilityOfElementOverlay();
 		waitExpectElement(descricaoConf);
+		invisibilityOfElementOverlay();
+		
 		sleep(2000);
 		
 		String texto = descricaoConf.getAttribute("value");

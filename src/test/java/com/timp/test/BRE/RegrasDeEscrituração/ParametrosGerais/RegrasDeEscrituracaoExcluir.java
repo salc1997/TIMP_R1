@@ -29,21 +29,17 @@ public class RegrasDeEscrituracaoExcluir extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void excluir() {
+		
+		
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
+		
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void criar() {
+		
 		ArrayList<Boolean> sucesso = regraDeEscritucacaoExcluirPO.excluir();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);

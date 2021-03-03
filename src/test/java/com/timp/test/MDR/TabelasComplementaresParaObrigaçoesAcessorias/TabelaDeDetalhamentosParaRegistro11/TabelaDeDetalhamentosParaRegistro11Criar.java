@@ -35,7 +35,7 @@ public class TabelaDeDetalhamentosParaRegistro11Criar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeDetalhamentosParaRegistro11CriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

@@ -16,24 +16,25 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LixeiraExcluirEmMassa extends TestBaseKenssy{
+public class LixeiraExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	LixeiraExcluirEmMassaPO lixeiraExcluirEmMassaPO;
-  @BeforeClass
-  public void beforeClass() {
-	driver = initializationKen();
-	loginTC = new LoginTC();
-	acessarTDKPO = new AcessarTDKPO();
-	lixeiraExcluirEmMassaPO = new LixeiraExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	//driver.close();
-  }
-  
-  @Test(priority = 0)
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarTDKPO = new AcessarTDKPO();
+		lixeiraExcluirEmMassaPO = new LixeiraExcluirEmMassaPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		// driver.close();
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -42,16 +43,16 @@ public class LixeiraExcluirEmMassa extends TestBaseKenssy{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void excluirEmMassa() {
-		//lixeiraExcluirEmMassaPO.lixeiraExcluirEmMassa();
-		
+		// lixeiraExcluirEmMassaPO.lixeiraExcluirEmMassa();
+
 		ArrayList<Boolean> sucesso = lixeiraExcluirEmMassaPO.lixeiraExcluirEmMassa();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 	}
 
 }

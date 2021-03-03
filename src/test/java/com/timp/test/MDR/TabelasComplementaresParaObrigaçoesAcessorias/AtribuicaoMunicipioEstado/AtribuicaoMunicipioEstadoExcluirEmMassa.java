@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoExcluirEmMassaPO;
 
-public class AtribuicaoMunicipioEstadoExcluirEmMassa extends TestBaseEliel{
-  
-	
+public class AtribuicaoMunicipioEstadoExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AtribuicaoMunicipioEstadoExcluirEmMassaPO atribuicaoMunicipioEstadoExcluirEmMassaPO;
@@ -32,10 +31,10 @@ public class AtribuicaoMunicipioEstadoExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = atribuicaoMunicipioEstadoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
@@ -43,5 +42,5 @@ public class AtribuicaoMunicipioEstadoExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

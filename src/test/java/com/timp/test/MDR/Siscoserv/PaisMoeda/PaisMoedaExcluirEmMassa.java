@@ -41,8 +41,9 @@ public class PaisMoedaExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso, Criar);
 	}
 	
+	
 	@Test(dependsOnMethods = "criar")
-	public void excluirEmMassa() {
+	public void excluir() {
 		boolean sucesso2 = paisMoedaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}

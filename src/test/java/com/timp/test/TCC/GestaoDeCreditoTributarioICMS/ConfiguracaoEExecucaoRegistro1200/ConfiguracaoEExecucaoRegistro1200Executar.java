@@ -14,25 +14,25 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoRegistro1200Executar  extends TestBaseMassiel{
-  
+public class ConfiguracaoEExecucaoRegistro1200Executar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoRegistro1200ExecutarPO configuracaoEExecucaoRegistro1200ExecutarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuracaoEExecucaoRegistro1200ExecutarPO = new ConfiguracaoEExecucaoRegistro1200ExecutarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -44,11 +44,11 @@ public class ConfiguracaoEExecucaoRegistro1200Executar  extends TestBaseMassiel{
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void Exceutar() {
-		
-		boolean sucesso =configuracaoEExecucaoRegistro1200ExecutarPO .executar();
+
+		boolean sucesso = configuracaoEExecucaoRegistro1200ExecutarPO.executar();
 		assertTrue(sucesso, Criar);
 	}
 

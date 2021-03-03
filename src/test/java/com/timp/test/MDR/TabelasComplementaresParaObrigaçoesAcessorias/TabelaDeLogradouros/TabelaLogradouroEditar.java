@@ -37,7 +37,7 @@ public class TabelaLogradouroEditar extends TestBaseSteven {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaLogradouroEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

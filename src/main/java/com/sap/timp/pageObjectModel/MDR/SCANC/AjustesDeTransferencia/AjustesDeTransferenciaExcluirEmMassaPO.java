@@ -110,7 +110,13 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 	
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = "0"; // Ultimo ID antes de crear un registro
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println(id);
+		}
+		//String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println(id);
 		

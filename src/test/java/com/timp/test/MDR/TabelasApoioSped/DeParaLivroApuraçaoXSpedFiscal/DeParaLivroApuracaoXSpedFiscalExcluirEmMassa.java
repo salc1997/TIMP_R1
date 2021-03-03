@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO;
 
 public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassa extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO deParaLivroApuracaoXSpedFiscalExcluirEmMassaPO;
@@ -31,11 +31,9 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassa extends TestBaseEliel 
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -46,5 +44,5 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassa extends TestBaseEliel 
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

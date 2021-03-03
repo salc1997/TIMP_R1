@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO;
 
-public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo extends TestBaseFernando{
+public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO;
@@ -42,8 +42,9 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 	}
 
 	@Test(priority = 2)
-	public void manutencaoCriarLancamentoVisualizacaoAnexo() {			
-		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO.manutencaoCriarLancamentoVisualizacaoAnexo();
+	public void manutencaoCriarLancamentoVisualizacaoAnexo() {
+		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO
+				.manutencaoCriarLancamentoVisualizacaoAnexo();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

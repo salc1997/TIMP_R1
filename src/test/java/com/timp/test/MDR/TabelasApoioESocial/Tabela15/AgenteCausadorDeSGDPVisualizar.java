@@ -16,27 +16,27 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class AgenteCausadorDeSGDPVisualizar extends TestBaseCristhian {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeSGDPVisualizarPO agenteCausadorDeSGDPVisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	driver = initialization();
-	loginTC = new LoginTC();
-	acessarMDRPO = new AcessarMDRPO();
-	agenteCausadorDeSGDPVisualizarPO = new AgenteCausadorDeSGDPVisualizarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		agenteCausadorDeSGDPVisualizarPO = new AgenteCausadorDeSGDPVisualizarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

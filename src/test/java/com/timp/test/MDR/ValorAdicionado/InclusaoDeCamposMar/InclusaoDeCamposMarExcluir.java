@@ -34,7 +34,7 @@ public class InclusaoDeCamposMarExcluir extends TestBaseEliel {
 	public void Excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = inclusaoDeCamposMarExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

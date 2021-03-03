@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela08.Classificac
 
 public class ClassificacaoTributariaExcluir extends TestBaseEliel {
 
-
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificacaoTributariaExcluirPO classificacaoTributariaExcluirPO;
@@ -32,11 +31,9 @@ public class ClassificacaoTributariaExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -44,5 +41,5 @@ public class ClassificacaoTributariaExcluir extends TestBaseEliel {
 		assertTrue(sucesso, Eliminado);
 
 	}
-	
+
 }

@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AtribuicaoMunicipioEstado.AtribuicaoMunicipioEstadoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasCriarPO;
-
+ 
 public class AtribuicaoMunicipioEstadoCriar extends TestBaseSteven {
 
 	LoginTC loginTC;

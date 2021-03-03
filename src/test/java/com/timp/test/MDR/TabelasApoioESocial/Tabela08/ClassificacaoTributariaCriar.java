@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaCriarPO;
 
-public class ClassificacaoTributariaCriar extends TestBaseEliel{
+public class ClassificacaoTributariaCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificacaoTributariaCriarPO classificacaoTributariaCriarPO;
@@ -32,14 +31,12 @@ public class ClassificacaoTributariaCriar extends TestBaseEliel{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = classificacaoTributariaCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

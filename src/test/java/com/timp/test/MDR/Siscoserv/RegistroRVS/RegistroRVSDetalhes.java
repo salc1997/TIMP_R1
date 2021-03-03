@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSDetalhesPO;
 
-public class RegistroRVSDetalhes extends TestBaseEliel{
+public class RegistroRVSDetalhes extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -37,13 +37,12 @@ public class RegistroRVSDetalhes extends TestBaseEliel{
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = registroRVSDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
 	}
-	
-	
+
 }

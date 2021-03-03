@@ -30,7 +30,7 @@ public class Registro1610Excluir extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -53,6 +53,5 @@ public class Registro1610Excluir extends TestBaseCristhian {
 
 		assertTrue(sucesso, Eliminado);
 	}
-	
 
 }

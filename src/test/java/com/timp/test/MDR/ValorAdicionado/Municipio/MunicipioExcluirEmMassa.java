@@ -12,37 +12,43 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassaPO;
 
 public class MunicipioExcluirEmMassa extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	MunicipioExcluirEmMassaPO municipioExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  municipioExcluirEmMassaPO = new MunicipioExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  
-  @Test()
-  public void criar() {
-	  
-	  loginTC.login();
-	  accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		municipioExcluirEmMassaPO = new MunicipioExcluirEmMassaPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void Criar() {
+
+		loginTC.login();
+		accesarMDR.acessarMDR();
+
+		boolean sucesso = municipioExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+
+	}
 	
-	  boolean sucesso = municipioExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-	sleep(1000);
 	
-	boolean sucesso2 = municipioExcluirEmMassaPO.excluir();
-	assertTrue(sucesso2, Eliminado);
-  }
+	@Test(dependsOnMethods = "Criar")
+	public void ExcluirEmMassa() {
+
+
+		boolean sucesso2 = municipioExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 }

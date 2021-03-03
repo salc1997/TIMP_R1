@@ -18,36 +18,35 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class UnidadeDeMedidaVisualizar extends TestBaseSteven{
-  
+public class UnidadeDeMedidaVisualizar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaVisualizarPO unidadeDeMedidaVisualizarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  unidadeDeMedidaVisualizarPO = new UnidadeDeMedidaVisualizarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  
-  @Test()
-  public void visualizar() {
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		unidadeDeMedidaVisualizarPO = new UnidadeDeMedidaVisualizarPO();
+	}
 
-	  loginTC.login();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void visualizar() {
+
+		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
-	  ArrayList<Boolean> sucesso = unidadeDeMedidaVisualizarPO.visualizar();
+
+		ArrayList<Boolean> sucesso = unidadeDeMedidaVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-  }
+	}
 }

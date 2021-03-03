@@ -15,25 +15,25 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados extends TestBaseMassiel{
- 
+public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-			loginTC = new LoginTC();
-			acessarTCCPO = new AcessarTCCPO();
-			configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO = new ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTCCPO = new AcessarTCCPO();
+		configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO = new ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO();
+	}
 
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -45,18 +45,18 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados extends Test
 		acessarTCCPO.acessarTCC();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void filtros() {
 
 		configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Filtros();
-		
+
 		ArrayList<Boolean> sucesso = configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Empresa();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
+
 		ArrayList<Boolean> Filial = configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Filial();
 
 		for (int i = 0; i < Filial.size(); i++) {

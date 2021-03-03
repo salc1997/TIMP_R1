@@ -33,6 +33,7 @@ public class ObservaçoesdoDocumentoFiscalCriar extends TestBaseMassiel {
 	public void afterClass() {
 		driver.close();
 	}
+
 	@Test()
 	public void criar() {
 		loginTC.login();

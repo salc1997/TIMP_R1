@@ -36,7 +36,7 @@ public class CompatibilidadeEntreLotacaoExcluir extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		compatibilidadeEntreLotacaoExcluirPO = new CompatibilidadeEntreLotacaoExcluirPO();
-		
+
 	}
 
 	@AfterClass
@@ -49,7 +49,7 @@ public class CompatibilidadeEntreLotacaoExcluir extends TestBaseSteven {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = compatibilidadeEntreLotacaoExcluirPO.excluir();
 		assertTrue(sucesso, Editar);
 	}

@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM220.RegistroM220EditarPO;
 
 public class RegistroM220Editar extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM220EditarPO registroM220EditarPO;
@@ -31,18 +31,16 @@ public class RegistroM220Editar extends TestBaseEliel {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void Editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
 
 		boolean sucesso = registroM220EditarPO.editar();
 
 		assertTrue(sucesso, Editar);
 	}
-	
+
 }

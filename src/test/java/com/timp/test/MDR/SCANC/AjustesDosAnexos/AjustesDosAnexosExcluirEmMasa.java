@@ -24,44 +24,38 @@ public class AjustesDosAnexosExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AjustesDosAnexosExcluirEmMassaPO ajustesDosAnexosExcluirEmMassaPO;
-	 
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  accesarMDR = new AcessarMDRPO();
-		  ajustesDosAnexosExcluirEmMassaPO = new AjustesDosAnexosExcluirEmMassaPO();
+		driver = initialization();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		ajustesDosAnexosExcluirEmMassaPO = new AjustesDosAnexosExcluirEmMassaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		  driver.close();
+		driver.close();
 	}
-	
 
-	
 	@Test()
 	public void Criar() {
-		
+
 		loginTC.login();
-		
-		 accesarMDR.acessarMDR();
-		
+
+		accesarMDR.acessarMDR();
+
 		boolean sucesso = ajustesDosAnexosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
-	
-		
-		
+
 	}
 
 	@Test(dependsOnMethods = "Criar")
 	public void excluir() {
-		
-		
+
 		boolean sucesso2 = ajustesDosAnexosExcluirEmMassaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
-		
-		
+
 	}
 }

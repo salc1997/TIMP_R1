@@ -36,8 +36,6 @@ public class AtribuicaoMunicipioEstadoDetalhes extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
 		loginTC.login();

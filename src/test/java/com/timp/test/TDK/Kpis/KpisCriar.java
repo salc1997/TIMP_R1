@@ -15,26 +15,26 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisCriar extends TestBaseMassiel{
- 
+public class KpisCriar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisCriarPO kpisCriarP;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisCriarP = new KpisCriarPO();
-		
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -43,15 +43,14 @@ public class KpisCriar extends TestBaseMassiel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void criar() {
-		
+
 		boolean sucesso = kpisCriarP.Criar();
 
 		assertTrue(sucesso, Criar);
-		
+
 	}
- 
 
 }

@@ -40,7 +40,7 @@ public class TabelaReceitasPermitidasDetalhes extends TestBaseSteven {
 	public void Detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaReceitasPermitidasDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

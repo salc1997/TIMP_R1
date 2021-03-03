@@ -15,9 +15,9 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeLayoutdePainelEditar extends TestBaseCristhian{
+public class ConfiguraçãodeLayoutdePainelEditar extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTCCPO  acessarTCCPO;
+	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeLayoutdePainelEditarPO configuraçãodeLayoutdePainelEditarPO;
 
 	@BeforeClass

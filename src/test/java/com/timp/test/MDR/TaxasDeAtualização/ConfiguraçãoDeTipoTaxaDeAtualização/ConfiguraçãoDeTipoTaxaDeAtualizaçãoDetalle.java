@@ -13,15 +13,15 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetallesPO;
 
-public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle extends TestBaseMassiel{
-	
+public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetallesPO configuraçãoDeTipoTaxaDeAtualizaçãoDetallePO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		
+
 		driver = initializationM();
 		loginTC = new LoginTC();
 		accesarMDRPO = new AcessarMDRPO();
@@ -35,15 +35,14 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle extends TestBaseMassiel{
 
 	@Test()
 	public void detalle() {
-		
+
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = configuraçãoDeTipoTaxaDeAtualizaçãoDetallePO.Detalle();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
-		assertTrue(sucesso.get(i), Detalhes);
+			assertTrue(sucesso.get(i), Detalhes);
 		}
 	}
-	
- }
 
+}

@@ -13,37 +13,36 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SCANCDistribuidorasEditar extends TestBaseMassiel{
-	
+public class SCANCDistribuidorasEditar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
-	SCANCDistribuidorasEditarPO  sCANCDistribuidorasEditarPO;
+	SCANCDistribuidorasEditarPO sCANCDistribuidorasEditarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationM();
-	  accesarMDRPO = new AcessarMDRPO();
-	  loginTC = new LoginTC();
-	  sCANCDistribuidorasEditarPO= new SCANCDistribuidorasEditarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+		driver = initializationM();
+		accesarMDRPO = new AcessarMDRPO();
+		loginTC = new LoginTC();
+		sCANCDistribuidorasEditarPO = new SCANCDistribuidorasEditarPO();
+	}
 
-  
-  @Test()
-  public void editar() {
-	  
-	  loginTC.login();
-		
-	  accesarMDRPO.acessarMDR();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	  boolean sucesso = sCANCDistribuidorasEditarPO.Editar();
+	@Test()
+	public void editar() {
+
+		loginTC.login();
+
+		accesarMDRPO.acessarMDR();
+
+		boolean sucesso = sCANCDistribuidorasEditarPO.Editar();
 
 		assertTrue(sucesso, Criar);
-	  
+
 	}
 }

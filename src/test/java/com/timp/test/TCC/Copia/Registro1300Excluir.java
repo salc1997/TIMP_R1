@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1300.Registro1300ExcluirPO;
 
 public class Registro1300Excluir extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1300ExcluirPO registro1300ExcluirPO;
@@ -29,7 +28,7 @@ public class Registro1300Excluir extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

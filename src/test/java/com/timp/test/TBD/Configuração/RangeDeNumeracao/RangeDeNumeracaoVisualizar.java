@@ -13,48 +13,44 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.Configuracao.RangeDeNumeracao.RangeDeNumeracaoVisualizarPO;
 
-public class RangeDeNumeracaoVisualizar extends TestBaseEliel{
-  
-	
+public class RangeDeNumeracaoVisualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	RangeDeNumeracaoVisualizarPO rangeDeNumeracaoVisualizarPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  rangeDeNumeracaoVisualizarPO = new  RangeDeNumeracaoVisualizarPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		rangeDeNumeracaoVisualizarPO = new RangeDeNumeracaoVisualizarPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void visualizar() {
-	 		
-	 		ArrayList<Boolean> sucesso = rangeDeNumeracaoVisualizarPO.visualizar();
-			for (int i = 0; i < sucesso.size(); i++) {
-				assertTrue(sucesso.get(i), visualizaçar);
-			}
-	 		
-		
-	 		
-	 	}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void TBDEntrar() {
+		acessarTBDPO.acessarTBD();
+
+	}
+
+	@Test(priority = 1)
+	public void visualizar() {
+
+		ArrayList<Boolean> sucesso = rangeDeNumeracaoVisualizarPO.visualizar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+
+	}
 }

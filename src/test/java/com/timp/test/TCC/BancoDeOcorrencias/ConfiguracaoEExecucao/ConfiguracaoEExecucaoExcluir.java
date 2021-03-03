@@ -1,6 +1,5 @@
 package com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -57,5 +56,5 @@ public class ConfiguracaoEExecucaoExcluir extends TestBaseSteven {
 
 		assertTrue(sucesso, Eliminado);
 	}
-	
+
 }

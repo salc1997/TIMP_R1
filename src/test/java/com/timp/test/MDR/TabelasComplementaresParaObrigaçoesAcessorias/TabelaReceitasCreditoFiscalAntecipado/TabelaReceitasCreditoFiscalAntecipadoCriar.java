@@ -38,7 +38,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoCriar extends TestBaseSteven {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoCriarPO.criar();
 		assertTrue(sucesso, Criar);
 

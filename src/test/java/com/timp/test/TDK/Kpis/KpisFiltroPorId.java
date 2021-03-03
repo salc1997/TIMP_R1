@@ -12,25 +12,25 @@ import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.KpisFiltroPorIdPO;
 
 public class KpisFiltroPorId extends TestBaseEliel {
-  
+
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisFiltroPorIdPO kpisFiltroPorIdPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisFiltroPorIdPO = new KpisFiltroPorIdPO();
-		
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -39,13 +39,13 @@ public class KpisFiltroPorId extends TestBaseEliel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void filtro() {
-		
+
 		boolean sucesso = kpisFiltroPorIdPO.filtro();
 
 		assertTrue(sucesso, Filtros);
-		
+
 	}
 }

@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegi
 
 public class TiposDeRegistroCriar extends TestBaseEliel {
 
-	 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeRegistroCriarPO tiposDeRegistroCriarPO;
@@ -31,26 +30,13 @@ public class TiposDeRegistroCriar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tiposDeRegistroCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

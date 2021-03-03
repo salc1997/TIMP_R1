@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizarPO;
 
 public class NaturezaDasRubricasVisualizar extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaDasRubricasVisualizarPO naturezaDasRubricasVisualizarPO;
@@ -32,26 +32,13 @@ public class NaturezaDasRubricasVisualizar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
 	@Test()
 	public void Visualizar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = naturezaDasRubricasVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -59,6 +46,6 @@ public class NaturezaDasRubricasVisualizar extends TestBaseEliel {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-	}		
-	
+	}
+
 }

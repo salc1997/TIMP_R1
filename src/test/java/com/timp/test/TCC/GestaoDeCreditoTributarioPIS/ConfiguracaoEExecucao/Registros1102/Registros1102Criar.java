@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class Registros1102Criar extends TestBaseCristhian{
+public class Registros1102Criar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registros1102CriarPO registros1102CriarPO;
@@ -30,7 +30,7 @@ public class Registros1102Criar extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

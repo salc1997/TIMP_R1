@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosPesquisarPO;
 
-public class RelatorioRefinariaGeradosPesquisar extends TestBaseFernando{
+public class RelatorioRefinariaGeradosPesquisar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosPesquisarPO relatorioRefinariaGeradosPesquisarPO;
@@ -42,7 +42,7 @@ public class RelatorioRefinariaGeradosPesquisar extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void pesquisar() {		
+	public void pesquisar() {
 		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosPesquisarPO.pesquisar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

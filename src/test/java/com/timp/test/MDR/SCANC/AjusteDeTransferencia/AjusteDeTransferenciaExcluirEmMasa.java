@@ -25,53 +25,39 @@ public class AjusteDeTransferenciaExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AjustesDeTransferenciaExcluirEmMassaPO ajustesDeTransferenciaExcluirEmMassaPO;
-	 
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  accesarMDR = new AcessarMDRPO();
-		  ajustesDeTransferenciaExcluirEmMassaPO = new AjustesDeTransferenciaExcluirEmMassaPO();
+		driver = initialization();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		ajustesDeTransferenciaExcluirEmMassaPO = new AjustesDeTransferenciaExcluirEmMassaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
-	@Test(priority = 0)
-	public void login() {
-		  loginTC.login();
-	}
-	
-	@Test(priority = 1)
-	public void acessarMDR() {
-		 accesarMDR.acessarMDR();
-	
-	}
-	
+
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		accesarMDR.acessarMDR();
-		
 
 		boolean sucesso = ajustesDeTransferenciaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 
-		
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
 
 		boolean sucesso2 = ajustesDeTransferenciaExcluirEmMassaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
-		
+
 	}
 
 }

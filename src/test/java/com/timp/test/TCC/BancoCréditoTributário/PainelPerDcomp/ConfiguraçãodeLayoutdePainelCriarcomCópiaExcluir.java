@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 
 public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTCCPO  acessarTCCPO;
+	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO configuraçãodeLayoutdePainelCriarcomCópiaExcluirPO;
 
 	@BeforeClass
@@ -46,7 +46,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir extends TestBaseCr
 	public void editar() {
 		boolean sucesso = configuraçãodeLayoutdePainelCriarcomCópiaExcluirPO.editar();
 		assertTrue(sucesso, Editar);
-		
+
 		boolean sucesso2 = configuraçãodeLayoutdePainelCriarcomCópiaExcluirPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}

@@ -15,33 +15,34 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class SubperíodoFiltroID extends TestBaseMassiel{
+public class SubperíodoFiltroID extends TestBaseMassiel {
 	LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  SubperíodoFiltroIDPO subperíodoFiltroIDPO;
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  subperíodoFiltroIDPO = new  SubperíodoFiltroIDPO();
-  }
+	AcessarTFPPO acessarTFPPO;
+	SubperíodoFiltroIDPO subperíodoFiltroIDPO;
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 1)
- 	public void Filtro() {
- 	  loginTC.login();
- 	  acessarTFPPO .acessarTFP();
- 		ArrayList<Boolean> sucesso = subperíodoFiltroIDPO.filtro();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		subperíodoFiltroIDPO = new SubperíodoFiltroIDPO();
+	}
 
- 		for (int i = 0; i < sucesso.size(); i++) {
- 			assertTrue(sucesso.get(i), Criar);
- 		}
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
- 	}
+	@Test(priority = 1)
+	public void Filtro() {
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
+		ArrayList<Boolean> sucesso = subperíodoFiltroIDPO.filtro();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Criar);
+		}
+
+	}
 
 }

@@ -34,13 +34,11 @@ public class AjusteEInformaçoesDeValoresDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = ajusteEInformaçoesDeValoresDetalhesPO.detalhes();

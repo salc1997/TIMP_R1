@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CFODetalhe extends TestBaseFernando{
+public class CFODetalhe extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CFODetalhePO cFODetalhePO;
@@ -49,7 +49,7 @@ public class CFODetalhe extends TestBaseFernando{
 	@Test(priority = 3)
 	public void detalhe() {
 		ArrayList<Boolean> sucesso = cFODetalhePO.detalhe();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}

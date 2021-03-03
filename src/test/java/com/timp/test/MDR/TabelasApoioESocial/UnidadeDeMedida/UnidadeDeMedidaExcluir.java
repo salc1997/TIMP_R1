@@ -18,7 +18,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class UnidadeDeMedidaExcluir extends TestBaseSteven {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaExcluirPO unidadeDeMedidaExcluirPO;
@@ -38,11 +38,11 @@ public class UnidadeDeMedidaExcluir extends TestBaseSteven {
 	}
 
 	@Test()
-	  public void excluir() {
+	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = unidadeDeMedidaExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-	  }
+	}
 }

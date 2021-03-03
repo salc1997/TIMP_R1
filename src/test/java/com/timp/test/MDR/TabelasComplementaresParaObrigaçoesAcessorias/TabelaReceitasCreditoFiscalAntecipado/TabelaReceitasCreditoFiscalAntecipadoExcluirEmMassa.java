@@ -35,11 +35,11 @@ public class TabelaReceitasCreditoFiscalAntecipadoExcluirEmMassa extends TestBas
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		sleep(1000);

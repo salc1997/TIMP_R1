@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaReceitasCreditoFiscalAntecipado.TabelaReceitasCreditoFiscalAntecipadoEditarPO;
- 
+
 public class TabelaReceitasCreditoFiscalAntecipadoEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
@@ -39,7 +39,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoEditar extends TestBaseSteven 
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasCreditoFiscalAntecipadoEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

@@ -13,8 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1500.Registro1500VisualizarPO;
 
-public class Registro1500Visualizar  extends TestBaseEliel{
-	
+public class Registro1500Visualizar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1500VisualizarPO registro1500VisualizarPO;
@@ -30,7 +30,7 @@ public class Registro1500Visualizar  extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

@@ -11,9 +11,9 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoCopiarPO;
 
-public class AgendamentoCopiar extends TestBaseFernando{
+public class AgendamentoCopiar extends TestBaseFernando {
 	LoginTC loginTC;
-	AcessarTAAPO  acessarTAAPO;
+	AcessarTAAPO acessarTAAPO;
 	AgendamentoCopiarPO agendamentoCopiarPO;
 
 	@BeforeClass

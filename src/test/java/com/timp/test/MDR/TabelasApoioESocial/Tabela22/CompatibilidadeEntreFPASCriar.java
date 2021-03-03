@@ -32,16 +32,13 @@ public class CompatibilidadeEntreFPASCriar extends TestBaseKenssy {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criarCompatibilidadeEntreFPAS() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
-		
+
 		boolean sucesso = compatibilidadeEntreFPASCriarFPASCriarPO.criarCompatibilidadeEntreFPAS();
 		assertTrue(sucesso, Criar);
 	}

@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeRegistroExcluirMassa extends TestBaseFernando{
+public class TiposDeRegistroExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeRegistroExcluirMassaPO tiposDeRegistroExcluirMassaPO;
@@ -30,19 +30,8 @@ public class TiposDeRegistroExcluirMassa extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-		acessarMDRPO.acessarMDR();
-	}
-	*/
-	@Test(priority = 0)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
@@ -50,7 +39,7 @@ public class TiposDeRegistroExcluirMassa extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test(priority = 1)
+	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = tiposDeRegistroExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Criar);

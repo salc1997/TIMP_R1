@@ -1,6 +1,5 @@
 package com.timp.test.TBD.Configuração.TipoDeDocumento;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -57,5 +56,5 @@ public class FiltroPorID extends TestBaseSteven {
 
 		assertTrue(sucesso, Filtros);
 	}
-	
+
 }

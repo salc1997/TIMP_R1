@@ -17,20 +17,20 @@ public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisLixeiraExcluirEmMassaPO kpisLixeiraExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-			loginTC = new LoginTC();
-			acessarTDKPO = new AcessarTDKPO();
-			kpisLixeiraExcluirEmMassaPO = new KpisLixeiraExcluirEmMassaPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTDKPO = new AcessarTDKPO();
+		kpisLixeiraExcluirEmMassaPO = new KpisLixeiraExcluirEmMassaPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -39,20 +39,16 @@ public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void excluir() {
 		boolean sucesso = kpisLixeiraExcluirEmMassaPO.comparar();
 
 		assertTrue(sucesso, Criar);
-		
+
 		boolean sucesso2 = kpisLixeiraExcluirEmMassaPO.ExcluirMasas();
 
 		assertTrue(sucesso2, Criar);
 	}
-		
-		
-		
-		
 
 }

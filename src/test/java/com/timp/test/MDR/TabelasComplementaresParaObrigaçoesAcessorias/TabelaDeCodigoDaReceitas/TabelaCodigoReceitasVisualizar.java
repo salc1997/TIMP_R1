@@ -16,30 +16,28 @@ import java.util.ArrayList;
 import org.openqa.selenium.remote.NewSessionPayload;
 import org.testng.annotations.AfterClass;
 
-public class TabelaCodigoReceitasVisualizar extends TestBaseMassiel{
-	
+public class TabelaCodigoReceitasVisualizar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TabelaCodigoReceitasVisualizarPO  tabelaCodigoReceitasVisualizarPO;
+	TabelaCodigoReceitasVisualizarPO tabelaCodigoReceitasVisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasVisualizarPO = new TabelaCodigoReceitasVisualizarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = tabelaCodigoReceitasVisualizarPO.visualizar();

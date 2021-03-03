@@ -34,21 +34,20 @@ public class CompatibilidadeEntreFPASExcluirEnMasa extends TestBaseKenssy {
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = compatibilidadeEntreFPASExcluirEnMasaPO.criar();
 		assertTrue(sucesso, Criar);
 
 		sleep(1000);
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
+
 		boolean sucesso2 = compatibilidadeEntreFPASExcluirEnMasaPO.excluirEnMasaCompatibilidadeEntreFPAS();
 		assertTrue(sucesso2, Eliminado);
 	}

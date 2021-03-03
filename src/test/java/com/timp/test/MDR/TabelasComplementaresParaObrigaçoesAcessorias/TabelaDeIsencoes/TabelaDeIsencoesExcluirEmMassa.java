@@ -12,8 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeIsencoes.TabelaDeIsencoesExcluirEmMassaPO;
 
 public class TabelaDeIsencoesExcluirEmMassa extends TestBaseEliel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeIsencoesExcluirEmMassaPO tabelaDeIsencoesExcluirEmMassaPO;
@@ -36,11 +35,11 @@ public class TabelaDeIsencoesExcluirEmMassa extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeIsencoesExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		sleep(1000);

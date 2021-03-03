@@ -19,7 +19,7 @@ public class AliquotaDeTaxaDeActualizacaoExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotaDeTaxaDeActualizarExcluirPO aliquotaDeTaxaDeActualizarExcluirPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 

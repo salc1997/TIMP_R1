@@ -36,13 +36,11 @@ public class MovimentoSCANCExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = movimentoSCANCExcluirPO.excluir();

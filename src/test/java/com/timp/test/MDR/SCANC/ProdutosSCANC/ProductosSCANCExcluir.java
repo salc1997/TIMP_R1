@@ -35,11 +35,9 @@ public class ProductosSCANCExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

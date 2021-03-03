@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO;
 
-public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseFernando{
+public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO rRGConfiguracaoDeAjusteCriarComDiaEspecificoPO;
@@ -40,7 +40,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseFernan
 	}
 
 	@Test(priority = 2)
-	public void criarComDiaEspecifico() {		
+	public void criarComDiaEspecifico() {
 		boolean sucesso = rRGConfiguracaoDeAjusteCriarComDiaEspecificoPO.criarComDiaEspecifico();
 		assertTrue(sucesso, Criar);
 	}

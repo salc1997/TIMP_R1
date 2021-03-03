@@ -15,24 +15,24 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardParametrosGeraisExcecutar extends TestBaseMassiel{
+public class DashboardParametrosGeraisExcecutar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardParametrosGeraisExcecutarPO dashboardParametrosGeraisExcecutarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardParametrosGeraisExcecutarPO = new DashboardParametrosGeraisExcecutarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,17 +41,15 @@ public class DashboardParametrosGeraisExcecutar extends TestBaseMassiel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void Executar() {
-		
-		
+
 		ArrayList<Boolean> sucesso = dashboardParametrosGeraisExcecutarPO.Executar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i),"Cartão não foi adicionado");
+			assertTrue(sucesso.get(i), "Cartão não foi adicionado");
 		}
-		
-		
+
 	}
 
 }

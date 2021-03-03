@@ -16,11 +16,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy{
+public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaComplementarParaDIRFFiltrosAvanPO tabelaComplementarParaDIRFFiltrosAvanPO;
-	
 
 	@BeforeClass
 	public void beforeClass() {
@@ -29,7 +28,7 @@ public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy{
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaComplementarParaDIRFFiltrosAvanPO = new TabelaComplementarParaDIRFFiltrosAvanPO();
-		
+
 	}
 
 	@AfterClass
@@ -45,27 +44,27 @@ public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy{
 		for (int i = 0; i < empresa.size(); i++) {
 			assertTrue(empresa.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> uf = tabelaComplementarParaDIRFFiltrosAvanPO.filtroUF();
 		for (int i = 0; i < uf.size(); i++) {
 			assertTrue(uf.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> filial = tabelaComplementarParaDIRFFiltrosAvanPO.filtroFilial();
 		for (int i = 0; i < filial.size(); i++) {
 			assertTrue(filial.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> usuarioCriacao = tabelaComplementarParaDIRFFiltrosAvanPO.filtroUsuarioCriacao();
 		for (int i = 0; i < usuarioCriacao.size(); i++) {
 			assertTrue(usuarioCriacao.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> dataCriacao = tabelaComplementarParaDIRFFiltrosAvanPO.filtroDataCriacao();
 		for (int i = 0; i < dataCriacao.size(); i++) {
 			assertTrue(dataCriacao.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> usuarioModificao = tabelaComplementarParaDIRFFiltrosAvanPO.filtroUsuarioModificao();
 		for (int i = 0; i < usuarioModificao.size(); i++) {
 			assertTrue(usuarioModificao.get(i), Filtros);
@@ -75,7 +74,5 @@ public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy{
 			assertTrue(dataModificaco.get(i), Filtros);
 		}
 	}
-	
-	
 
 }

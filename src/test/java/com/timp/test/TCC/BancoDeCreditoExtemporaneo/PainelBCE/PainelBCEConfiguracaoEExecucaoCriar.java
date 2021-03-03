@@ -13,7 +13,6 @@ import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Con
 
 public class PainelBCEConfiguracaoEExecucaoCriar extends TestBaseEliel {
 
-	
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	PainelBCEConfiguracaoEExecucaoCriarPO painelBCEConfiguracaoEExecucaoCriarPO;
@@ -28,7 +27,7 @@ public class PainelBCEConfiguracaoEExecucaoCriar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)

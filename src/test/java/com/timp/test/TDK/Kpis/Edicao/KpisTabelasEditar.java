@@ -18,21 +18,21 @@ public class KpisTabelasEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisTabelasEditarPO kpisTabelasEditarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	driver = initializationC();
-	loginTC = new LoginTC();
-	acessarTDKPO = new AcessarTDKPO();
-	kpisTabelasEditarPO = new KpisTabelasEditarPO();
-		
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
+		loginTC = new LoginTC();
+		acessarTDKPO = new AcessarTDKPO();
+		kpisTabelasEditarPO = new KpisTabelasEditarPO();
+
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -41,13 +41,13 @@ public class KpisTabelasEditar extends TestBaseCristhian {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void Editar() {
-		
+
 		boolean sucesso = kpisTabelasEditarPO.tabelas();
 
 		assertTrue(sucesso, "Tabela não criada");
-		
+
 	}
 }

@@ -5,8 +5,6 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecutarPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriarPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucaoPO;
 
 import org.testng.annotations.BeforeClass;

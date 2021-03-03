@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelaOutrosDebitosEditarPO;
 
 public class TabelaLogradouroEditar extends TestBaseSteven {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaLogradouroEditarPO tabelaLogradouroEditarPO;

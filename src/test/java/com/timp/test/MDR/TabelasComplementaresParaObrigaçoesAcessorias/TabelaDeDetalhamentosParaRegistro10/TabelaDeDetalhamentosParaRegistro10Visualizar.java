@@ -37,7 +37,7 @@ public class TabelaDeDetalhamentosParaRegistro10Visualizar extends TestBaseEliel
 	public void visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaDeDetalhamentosParaRegistro10VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

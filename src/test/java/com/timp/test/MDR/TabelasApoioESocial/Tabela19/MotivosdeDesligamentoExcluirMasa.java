@@ -18,31 +18,29 @@ public class MotivosdeDesligamentoExcluirMasa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	MotivosdeDesligamentoExcluirMasaPO motivosDesligamentoExcluirPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initializationKen();
-		  loginTC = new LoginTC();
-		  accesarMDR = new AcessarMDRPO();
-		  motivosDesligamentoExcluirPO = new MotivosdeDesligamentoExcluirMasaPO();
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		motivosDesligamentoExcluirPO = new MotivosdeDesligamentoExcluirMasaPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
-		  driver.close();
+		driver.close();
 	}
-	
 
-	
 	@Test()
 	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = motivosDesligamentoExcluirPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		boolean sucesso2 = motivosDesligamentoExcluirPO.excluirMasaMotivosDesligamento();

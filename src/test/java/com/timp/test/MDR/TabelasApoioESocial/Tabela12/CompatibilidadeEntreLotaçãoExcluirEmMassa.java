@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassaPO;
 
-public class CompatibilidadeEntreLotaçãoExcluirEmMassa extends TestBaseEliel{
+public class CompatibilidadeEntreLotaçãoExcluirEmMassa extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -36,16 +36,15 @@ public class CompatibilidadeEntreLotaçãoExcluirEmMassa extends TestBaseEliel{
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = compatibilidadeEntreLotaçãoExcluirEmMassa.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		boolean sucesso2 = compatibilidadeEntreLotaçãoExcluirEmMassa.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}
-	
+
 }

@@ -23,7 +23,6 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven {
 	AcessarMDRPO accesarMDR;
 	TiposDeLogradouroVisualizarPO tiposDeLogradouroVisualizarPO;
 
-
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
@@ -32,16 +31,22 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven {
 		tiposDeLogradouroVisualizarPO = new TiposDeLogradouroVisualizarPO();
 	}
 
+<<<<<<< HEAD
   @AfterClass
   public void afterClass() {
 	  driver.close();
   }
 
+=======
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+>>>>>>> refs/remotes/origin/master
 
 	@Test()
 	public void visualizar() {
 		ArrayList<Boolean> sucesso = tiposDeLogradouroVisualizarPO.visualizar();
-
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

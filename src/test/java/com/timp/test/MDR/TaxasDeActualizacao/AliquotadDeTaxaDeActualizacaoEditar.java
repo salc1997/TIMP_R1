@@ -18,7 +18,7 @@ public class AliquotadDeTaxaDeActualizacaoEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AliquotaDeTaxaDeActualizarEditarPO aliquotaDeTaxaDeActualizarEditarPO;
-
+ 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

@@ -18,35 +18,35 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class NaturezaJuridicaVisualizar extends TestBaseSteven{
-  
+public class NaturezaJuridicaVisualizar extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaJuridicaVisualizarPO naturezaJuridicaVisualizarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  naturezaJuridicaVisualizarPO = new NaturezaJuridicaVisualizarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		naturezaJuridicaVisualizarPO = new NaturezaJuridicaVisualizarPO();
+	}
 
-  @Test()
-  public void visualizar() {
-	  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void visualizar() {
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-	  ArrayList<Boolean> sucesso = naturezaJuridicaVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = naturezaJuridicaVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-  }
+	}
 }

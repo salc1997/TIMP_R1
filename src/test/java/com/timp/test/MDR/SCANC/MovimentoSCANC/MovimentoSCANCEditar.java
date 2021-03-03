@@ -36,14 +36,13 @@ public class MovimentoSCANCEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = movimentoSCANCEditarPO.editar();
 
 		assertTrue(sucesso, Editar);

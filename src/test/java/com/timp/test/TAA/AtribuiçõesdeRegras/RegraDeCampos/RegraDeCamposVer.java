@@ -13,9 +13,9 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVerPO;
 
-public class RegraDeCamposVer extends TestBaseFernando{
+public class RegraDeCamposVer extends TestBaseFernando {
 	LoginTC loginTC;
-	AcessarTAAPO  acessarTAAPO;
+	AcessarTAAPO acessarTAAPO;
 	RegraDeCamposVerPO regraDeCamposVerPO;
 
 	@BeforeClass

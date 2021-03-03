@@ -186,9 +186,15 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div")).getText();
-		String nome = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div")).getText();
+		rows = driver
+				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
+				.size();
+		String id2 = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
+				.getText();
+		String nome = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
+				.getText();
 		System.out.println(nome);
 
 		sucesso.add(nome.equals("Teste QA PREUBA 007"));

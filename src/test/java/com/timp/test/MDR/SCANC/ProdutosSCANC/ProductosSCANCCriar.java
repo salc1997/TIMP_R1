@@ -35,11 +35,9 @@ public class ProductosSCANCCriar extends TestBaseKathy {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

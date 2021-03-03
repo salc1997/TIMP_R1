@@ -20,7 +20,7 @@ public class TabelaCodigoDaSituaçaoTributariaExcluir extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -31,7 +31,6 @@ public class TabelaCodigoDaSituaçaoTributariaExcluir extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void excluir() {

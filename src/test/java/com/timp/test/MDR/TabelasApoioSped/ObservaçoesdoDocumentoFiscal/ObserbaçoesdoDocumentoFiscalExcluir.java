@@ -37,7 +37,6 @@ public class ObserbaçoesdoDocumentoFiscalExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 		loginTC.login();

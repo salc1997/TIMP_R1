@@ -35,7 +35,7 @@ public class TabelaDeDetalhamentosParaRegistro11Excluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaDeDetalhamentosParaRegistro11ExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

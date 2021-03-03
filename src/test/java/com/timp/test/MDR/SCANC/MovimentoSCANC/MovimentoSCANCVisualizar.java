@@ -38,13 +38,11 @@ public class MovimentoSCANCVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = movimentoSCANCVisualizarPO.visualizar();

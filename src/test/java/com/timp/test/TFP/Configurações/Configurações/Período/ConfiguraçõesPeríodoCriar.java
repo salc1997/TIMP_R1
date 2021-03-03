@@ -14,38 +14,36 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçõesPeríodoCriar extends TestBaseKenssy{
-	  LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  ConfiguraçõesPeríodoCriarPO  configuraçõesPeríodoCriarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  configuraçõesPeríodoCriarPO = new ConfiguraçõesPeríodoCriarPO();
-  }
+public class ConfiguraçõesPeríodoCriar extends TestBaseKenssy {
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	ConfiguraçõesPeríodoCriarPO configuraçõesPeríodoCriarPO;
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		configuraçõesPeríodoCriarPO = new ConfiguraçõesPeríodoCriarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 1)
 	public void criar() {
 		loginTC.login();
-		
-		acessarTFPPO .acessarTFP();
-		
+
+		acessarTFPPO.acessarTFP();
+
 		boolean sucesso = configuraçõesPeríodoCriarPO.criar();
 
 		// teste pra conferir se o resultado mostrado é igual
 		assertTrue(sucesso, Criar);
 
 	}
-	
-	
 
 }

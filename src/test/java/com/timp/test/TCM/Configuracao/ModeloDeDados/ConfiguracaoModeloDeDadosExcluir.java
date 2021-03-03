@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoModeloDeDadosExcluir extends TestBaseKenssy{
+public class ConfiguracaoModeloDeDadosExcluir extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarTCMPO acessarTCMPO;
 	ConfiguracaoModeloDeDadosExcluirPO configuracaoModeloDeDadosExcluirPO;
@@ -34,11 +34,11 @@ public class ConfiguracaoModeloDeDadosExcluir extends TestBaseKenssy{
 
 	@Test(priority = 1)
 	public void excluir() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCMPO.acessarTCM();
-		
+
 		boolean sucesso = configuracaoModeloDeDadosExcluirPO.excluir();
 		assertTrue(sucesso, Editar);
 	}

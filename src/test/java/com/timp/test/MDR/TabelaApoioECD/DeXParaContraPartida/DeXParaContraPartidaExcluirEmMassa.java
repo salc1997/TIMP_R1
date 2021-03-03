@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaExcluirEmMassaPO;
 
-public class DeXParaContraPartidaExcluirEmMassa extends TestBaseFernando{
+public class DeXParaContraPartidaExcluirEmMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeXParaContraPartidaExcluirEmMassaPO deXParaContraPartidaExcluirEmMassaPO;
@@ -35,9 +35,9 @@ public class DeXParaContraPartidaExcluirEmMassa extends TestBaseFernando{
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = deXParaContraPartidaExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		
+
 		boolean sucesso2 = deXParaContraPartidaExcluirEmMassaPO.exluirMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
-	
+
 }

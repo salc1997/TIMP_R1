@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeOutrasSaidas.CodigoDeOutrasSaidasExcluirEmMassaPO;
 
-public class CodigoDeOutrasSaidasExcluirEmMassa extends TestBaseEliel{
+public class CodigoDeOutrasSaidasExcluirEmMassa extends TestBaseEliel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -42,5 +42,5 @@ public class CodigoDeOutrasSaidasExcluirEmMassa extends TestBaseEliel{
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

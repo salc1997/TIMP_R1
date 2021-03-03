@@ -16,9 +16,9 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosGeraisDetalhes extends TestBaseCristhian{
+public class ParâmetrosGeraisDetalhes extends TestBaseCristhian {
 	LoginTC loginTC;
-	AcessarTPCPO  acessarTPCPO;
+	AcessarTPCPO acessarTPCPO;
 	ParâmetrosGeraisDetalhesPO parâmetrosGeraisDetalhesPO;
 
 	@BeforeClass
@@ -31,7 +31,7 @@ public class ParâmetrosGeraisDetalhes extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,9 +41,9 @@ public class ParâmetrosGeraisDetalhes extends TestBaseCristhian{
 
 	@Test(priority = 1)
 	public void ingresarTPC() {
-		
+
 		acessarTPCPO.acessarTPC();
-		
+
 	}
 
 	@Test(priority = 2)

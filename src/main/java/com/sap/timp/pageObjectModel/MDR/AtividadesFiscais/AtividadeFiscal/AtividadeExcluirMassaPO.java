@@ -99,18 +99,18 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 	}
 	
 	public void llenarDatos1() {
-		name.sendKeys("Teste Atividade");
+		name.sendKeys("Teste Atividade2");
 		sleep(1000);
-		descricao.sendKeys("Teste de Atividade Fiscal");
+		descricao.sendKeys("Teste de Atividade Fiscal 2");
 		sleep(1000);
 		
 		llenarDatos();
 	}
 	
 	public void llenarDatos2() {
-		name.sendKeys("Teste Atividade 2");
+		name.sendKeys("Teste Atividade 3");
 		sleep(1000);
-		descricao.sendKeys("Teste de Atividade Fiscal 2");
+		descricao.sendKeys("Teste de Atividade Fiscal 3");
 		sleep(1000);
 		
 		llenarDatos();

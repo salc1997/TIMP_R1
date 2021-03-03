@@ -20,7 +20,7 @@ import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.Apur
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625VisualizarPO;
 
 public class RegistroM625Visualizar extends TestBaseSteven {
-	
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM625VisualizarPO registroM625VisualizarPO;
@@ -39,14 +39,13 @@ public class RegistroM625Visualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarTCCPO.acessarTCC();
-		
+
 		ArrayList<Boolean> sucesso = registroM625VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

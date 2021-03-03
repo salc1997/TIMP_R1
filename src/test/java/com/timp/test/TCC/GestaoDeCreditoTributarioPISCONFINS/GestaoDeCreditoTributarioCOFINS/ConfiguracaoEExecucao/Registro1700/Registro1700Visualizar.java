@@ -15,25 +15,25 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class Registro1700Visualizar extends TestBaseMassiel{
+public class Registro1700Visualizar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1700VisualizarPO registro1700VisualizarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-			loginTC = new LoginTC();
-			acessarTCCPO = new AcessarTCCPO();
-			registro1700VisualizarPO = new Registro1700VisualizarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTCCPO = new AcessarTCCPO();
+		registro1700VisualizarPO = new Registro1700VisualizarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -49,13 +49,11 @@ public class Registro1700Visualizar extends TestBaseMassiel{
 	@Test(priority = 2)
 	public void visualizar() {
 
-		
 		ArrayList<Boolean> sucesso = registro1700VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
-
 
 }

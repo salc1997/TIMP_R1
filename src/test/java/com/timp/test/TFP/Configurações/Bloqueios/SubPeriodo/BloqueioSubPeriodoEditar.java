@@ -14,8 +14,7 @@ import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoEditarPO;
 
 public class BloqueioSubPeriodoEditar extends TestBaseEliel {
- 
-	
+
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	BloqueioSubPeriodoEditarPO bloqueioSubPeriodoEditarPO;
@@ -40,15 +39,15 @@ public class BloqueioSubPeriodoEditar extends TestBaseEliel {
 
 	@Test(priority = 1)
 	public void TFPEntrar() {
-		acessarTFPPO .acessarTFP();
+		acessarTFPPO.acessarTFP();
 	}
 
 	@Test(priority = 2)
 	public void editar() {
-		
+
 		ArrayList<Boolean> sucesso = bloqueioSubPeriodoEditarPO.editar();
-	for (int i = 0; i < sucesso.size(); i++) {
-		assertTrue(sucesso.get(i), Editar);
-	}
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Editar);
+		}
 	}
 }

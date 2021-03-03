@@ -18,7 +18,7 @@ public class AgrupadorDeCFOPDetalhes extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPDetalhesPO agrupadorDeCFOPDetalhesPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -32,7 +32,6 @@ public class AgrupadorDeCFOPDetalhes extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void detalhes() {

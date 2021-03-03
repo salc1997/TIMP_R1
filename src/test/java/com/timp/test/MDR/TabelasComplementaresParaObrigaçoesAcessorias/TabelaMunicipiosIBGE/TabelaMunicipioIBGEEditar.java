@@ -25,7 +25,7 @@ public class TabelaMunicipioIBGEEditar extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -41,7 +41,7 @@ public class TabelaMunicipioIBGEEditar extends TestBaseSteven {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaMunicipioIBGEEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

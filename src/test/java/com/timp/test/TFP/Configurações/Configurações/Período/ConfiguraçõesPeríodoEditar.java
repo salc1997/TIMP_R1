@@ -16,30 +16,30 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ConfiguraçõesPeríodoEditar extends TestBaseKenssy {
-	 LoginTC loginTC;
-	 AcessarTFPPO acessarTFPPO;
-	 ConfiguraçõesPeríodoEditarPO configuraçõesPeríodoEditarPO;
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	ConfiguraçõesPeríodoEditarPO configuraçõesPeríodoEditarPO;
 
-	 @BeforeClass
-	 public void beforeClass() {
-		  driver = initializationKen();
-		  loginTC = new LoginTC();
-		  acessarTFPPO = new AcessarTFPPO();
-		  configuraçõesPeríodoEditarPO = new ConfiguraçõesPeríodoEditarPO();  
-	 }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		configuraçõesPeríodoEditarPO = new ConfiguraçõesPeríodoEditarPO();
+	}
 
-	 @AfterClass
-	 public void afterClass() {
-		  driver.close();
-	 }
- 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test(priority = 1)
 	public void editar() {
-		
+
 		loginTC.login();
-		
-		acessarTFPPO .acessarTFP();
-		
+
+		acessarTFPPO.acessarTFP();
+
 		ArrayList<Boolean> sucesso = configuraçõesPeríodoEditarPO.editar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

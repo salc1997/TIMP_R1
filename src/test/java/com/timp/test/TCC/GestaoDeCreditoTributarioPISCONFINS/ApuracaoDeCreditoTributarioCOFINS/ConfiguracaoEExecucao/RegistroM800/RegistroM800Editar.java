@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM800.RegistroM800EditarPO;
 
-public class RegistroM800Editar extends TestBaseEliel{
-  
+public class RegistroM800Editar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM800EditarPO registroM800EditarPO;
@@ -51,5 +51,5 @@ public class RegistroM800Editar extends TestBaseEliel{
 
 		assertTrue(sucesso, editado);
 	}
-	
+
 }

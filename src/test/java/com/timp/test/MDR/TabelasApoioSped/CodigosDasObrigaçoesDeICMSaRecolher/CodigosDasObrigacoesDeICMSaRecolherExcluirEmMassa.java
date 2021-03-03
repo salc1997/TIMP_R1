@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigosDasObrigaçoesDeICMSaRecolher.CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO;
 
-public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa extends TestBaseEliel{
-	
+public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO codigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO;
@@ -31,11 +31,9 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa extends TestBaseE
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -46,8 +44,5 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassa extends TestBaseE
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
 
-	
-	
 }

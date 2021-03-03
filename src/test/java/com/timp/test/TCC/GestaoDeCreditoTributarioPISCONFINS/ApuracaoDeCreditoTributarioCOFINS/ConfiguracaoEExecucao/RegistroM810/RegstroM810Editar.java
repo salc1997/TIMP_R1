@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM810.RegistroM810EditarPO;
 
-public class RegstroM810Editar extends TestBaseEliel{
+public class RegstroM810Editar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM810EditarPO registroM810EditarPO;

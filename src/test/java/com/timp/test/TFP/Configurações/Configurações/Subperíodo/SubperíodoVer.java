@@ -16,38 +16,36 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class SubperíodoVer extends TestBaseMassiel {
-	
-	 LoginTC loginTC;
-	  AcessarTFPPO acessarTFPPO;
-	  SubperíodoVerPO subperíodoVerPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarTFPPO = new AcessarTFPPO();
-	  subperíodoVerPO = new SubperíodoVerPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 1)
+	LoginTC loginTC;
+	AcessarTFPPO acessarTFPPO;
+	SubperíodoVerPO subperíodoVerPO;
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarTFPPO = new AcessarTFPPO();
+		subperíodoVerPO = new SubperíodoVerPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test(priority = 1)
 	public void ver() {
-	  
+
 		loginTC.login();
-		acessarTFPPO .acessarTFP();
-		
+		acessarTFPPO.acessarTFP();
+
 		ArrayList<Boolean> sucesso = subperíodoVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 
-	
 	}
-
 
 }

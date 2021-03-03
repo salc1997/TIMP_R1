@@ -38,6 +38,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizar extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
+
 	@Test()
 	public void visualizar() {
 		loginTC.login();

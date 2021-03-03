@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoCriarPO;
 
-public class TaxasDeConversaoCriar extends TestBaseEliel{
-  
-	
+public class TaxasDeConversaoCriar extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TaxasDeConversaoCriarPO taxasDeConversaoCriarPO;
@@ -31,23 +30,10 @@ public class TaxasDeConversaoCriar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}
-	*/
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

@@ -34,8 +34,6 @@ public class TabelaCodigoReceitaCriar extends TestBaseMassiel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 		loginTC.login();

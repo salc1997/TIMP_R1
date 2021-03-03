@@ -38,7 +38,6 @@ public class CodigoFatosContabeisDetalhe extends TestBaseFernando {
 		driver.close();
 	}
 
-
 	@Test()
 	public void detalhe() {
 		loginTC.login();

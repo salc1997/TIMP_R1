@@ -12,44 +12,42 @@ import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.Configuracao.TipoDeDocumento.TipoDeDocumentoExcluirPO;
 
 public class TipoDeDocumentoExcluir extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	TipoDeDocumentoExcluirPO tipoDeDocumentoExcluirPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarTBDPO = new AcessarTBDPO();
-		  tipoDeDocumentoExcluirPO = new  TipoDeDocumentoExcluirPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTBDPO = new AcessarTBDPO();
+		tipoDeDocumentoExcluirPO = new TipoDeDocumentoExcluirPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+	}
 
-	 	@Test(priority = 1)
-	 	public void TBDEntrar() {
-	 		 acessarTBDPO.acessarTBD();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void excluir() {
-	 		
-	 		boolean sucesso = tipoDeDocumentoExcluirPO.excluir();
-			assertTrue(sucesso, Eliminado);
-		
-	 		
-	 	}
+	@Test(priority = 0)
+	public void login() {
+		loginTC.login();
+
+	}
+
+	@Test(priority = 1)
+	public void TBDEntrar() {
+		acessarTBDPO.acessarTBD();
+
+	}
+
+	@Test(priority = 1)
+	public void excluir() {
+
+		boolean sucesso = tipoDeDocumentoExcluirPO.excluir();
+		assertTrue(sucesso, Eliminado);
+
+	}
 
 }

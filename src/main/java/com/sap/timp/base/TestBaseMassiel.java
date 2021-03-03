@@ -50,7 +50,6 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver.manage().window().maximize();
 
 
-
 		driver.get(tc2);
 
 

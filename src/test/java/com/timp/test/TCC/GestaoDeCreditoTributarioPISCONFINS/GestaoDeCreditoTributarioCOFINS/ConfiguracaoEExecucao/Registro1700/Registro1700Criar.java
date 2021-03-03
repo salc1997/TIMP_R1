@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class Registro1700Criar extends TestBaseMassiel{
+public class Registro1700Criar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1700CriarPO registro1700CriarPO;
@@ -46,7 +46,6 @@ public class Registro1700Criar extends TestBaseMassiel{
 
 	@Test(priority = 2)
 	public void criar() {
-
 
 		boolean sucesso = registro1700CriarPO.criar();
 

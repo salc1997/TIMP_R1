@@ -14,12 +14,12 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian{
-	
+public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RelacionamentoEntreQuadrosExcluirMassaPO relacionamentoEntreQuadrosExcluirMassaPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -33,30 +33,26 @@ public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian{
 	public void afterClass() {
 		driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
 
 		boolean sucesso = relacionamentoEntreQuadrosExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+
 		sleep(1000);
+	
+
+	}
+
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
 		boolean sucesso2 = relacionamentoEntreQuadrosExcluirMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

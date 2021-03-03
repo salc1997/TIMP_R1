@@ -14,31 +14,30 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodificaçãoDeAcDeTrabExcluiMassa extends TestBaseCristhian{
+public class CodificaçãoDeAcDeTrabExcluiMassa extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodificaçãoDeAcDeTrabExclusionMassaPO codificaçãoDeAcDeTrabExclusionMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codificaçãoDeAcDeTrabExclusionMassaPO = new CodificaçãoDeAcDeTrabExclusionMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-	  
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 
+	}
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -48,13 +47,12 @@ public class CodificaçãoDeAcDeTrabExcluiMassa extends TestBaseCristhian{
 		assertTrue(sucesso, Criar);
 
 	}
-	
-	
+
 	@Test()
 	public void excluir() {
-		
+
 		sleep(1000);
-		
+
 		boolean sucesso = codificaçãoDeAcDeTrabExclusionMassaPO.excluir();
 
 		assertTrue(sucesso, Criar);

@@ -11,26 +11,26 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Edicao.KpisLinksRapidosExcluirPO;
 
-public class KpisLinksRapidosExcluir extends TestBaseEliel{
+public class KpisLinksRapidosExcluir extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisLinksRapidosExcluirPO kpisLinksRapidosExcluirPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  
-	    driver = initializationE();
+
+	@BeforeClass
+	public void beforeClass() {
+
+		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisLinksRapidosExcluirPO = new KpisLinksRapidosExcluirPO();
-		
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -39,16 +39,14 @@ public class KpisLinksRapidosExcluir extends TestBaseEliel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void linkrapidoexcluir() {
-		
+
 		boolean sucesso = kpisLinksRapidosExcluirPO.linksrapidosexcluir();
 
 		assertTrue(sucesso, "O link não foi excluido");
-		
+
 	}
- 
-	
-	
+
 }

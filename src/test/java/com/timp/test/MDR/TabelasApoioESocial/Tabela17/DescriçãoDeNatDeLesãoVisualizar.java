@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando{
+public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	DescriçãoDeNatDeLesãoVisualizarPO descriçãoDeNatDeLesãoVisualizarPO;
@@ -36,12 +36,13 @@ public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando{
 	public void afterClass() {
 		driver.close();
 	}
+
 	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acesarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = descriçãoDeNatDeLesãoVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}

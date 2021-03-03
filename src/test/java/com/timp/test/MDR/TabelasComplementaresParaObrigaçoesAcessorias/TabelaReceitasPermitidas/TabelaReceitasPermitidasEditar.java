@@ -39,7 +39,7 @@ public class TabelaReceitasPermitidasEditar extends TestBaseSteven {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tabelaReceitasPermitidasEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

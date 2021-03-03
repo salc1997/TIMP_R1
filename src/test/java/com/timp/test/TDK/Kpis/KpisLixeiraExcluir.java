@@ -18,7 +18,7 @@ public class KpisLixeiraExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisLixeiraExcluirPO kpisLixeiraExcluirPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
@@ -29,7 +29,7 @@ public class KpisLixeiraExcluir extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,14 +41,12 @@ public class KpisLixeiraExcluir extends TestBaseCristhian {
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void lixeira() {
 		boolean sucesso = kpisLixeiraExcluirPO.lixeira();
-		assertTrue(sucesso,Eliminado);
-		
-		
-		
+		assertTrue(sucesso, Eliminado);
+
 	}
 
 }

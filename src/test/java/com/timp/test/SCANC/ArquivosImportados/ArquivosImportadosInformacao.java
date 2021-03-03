@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosInformacaoPO;
 
-public class ArquivosImportadosInformacao extends TestBaseFernando{
+public class ArquivosImportadosInformacao extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	ArquivosImportadosInformacaoPO arquivosImportadosInformacaoPO;
@@ -40,7 +40,7 @@ public class ArquivosImportadosInformacao extends TestBaseFernando{
 	}
 
 	@Test(priority = 2)
-	public void informacao() {		
+	public void informacao() {
 		boolean sucesso = arquivosImportadosInformacaoPO.informacao();
 		assertTrue(sucesso, Detalhes);
 	}

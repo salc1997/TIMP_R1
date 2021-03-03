@@ -11,9 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaDeCodigosDeReceitasExcluirEmMassaPO;
 
-public class TabelaDeCodigosDeReceitasExcluirEmMassa extends TestBaseEliel{
- 
-	
+public class TabelaDeCodigosDeReceitasExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCodigosDeReceitasExcluirEmMassaPO tabelaDeCodigosDeReceitasExcluirEmMassaPO;
@@ -31,7 +30,6 @@ public class TabelaDeCodigosDeReceitasExcluirEmMassa extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void criar() {

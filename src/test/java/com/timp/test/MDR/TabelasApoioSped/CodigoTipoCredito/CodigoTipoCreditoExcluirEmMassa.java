@@ -12,14 +12,14 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoTipoCredito.CodigoTipoCreditoExcluirEmMassaPO;
 
 public class CodigoTipoCreditoExcluirEmMassa extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoTipoCreditoExcluirEmMassaPO codigoTipoCreditoExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -31,10 +31,9 @@ public class CodigoTipoCreditoExcluirEmMassa extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
@@ -45,7 +44,5 @@ public class CodigoTipoCreditoExcluirEmMassa extends TestBaseEliel {
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
-	
-	
+
 }

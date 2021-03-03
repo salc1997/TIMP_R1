@@ -40,6 +40,7 @@ public class ObservaçoesdoDocumentoFiscalVisualizar extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
+
 	@Test()
 	public void visualizar() {
 		loginTC.login();

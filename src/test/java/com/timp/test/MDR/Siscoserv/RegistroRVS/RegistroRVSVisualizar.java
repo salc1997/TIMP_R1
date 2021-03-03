@@ -37,7 +37,7 @@ public class RegistroRVSVisualizar extends TestBaseEliel {
 	public void Visualizar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = registroRVSVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -46,6 +46,5 @@ public class RegistroRVSVisualizar extends TestBaseEliel {
 
 		}
 	}
-	
-	
+
 }

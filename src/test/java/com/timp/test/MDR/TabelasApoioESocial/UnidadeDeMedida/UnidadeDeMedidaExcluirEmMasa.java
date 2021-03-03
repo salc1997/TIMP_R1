@@ -21,30 +21,30 @@ public class UnidadeDeMedidaExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UnidadeDeMedidaExcluirEmMasaPO unidadeDeMedidaExcluirEmMasaPO;
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  acessarMDRPO = new AcessarMDRPO();
-		  unidadeDeMedidaExcluirEmMasaPO = new UnidadeDeMedidaExcluirEmMasaPO();
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		unidadeDeMedidaExcluirEmMasaPO = new UnidadeDeMedidaExcluirEmMasaPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
-		  driver.close();
+		driver.close();
 	}
-	
+
 	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = unidadeDeMedidaExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
-		
+
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
 		boolean sucesso2 = unidadeDeMedidaExcluirEmMasaPO.excluirMassa();

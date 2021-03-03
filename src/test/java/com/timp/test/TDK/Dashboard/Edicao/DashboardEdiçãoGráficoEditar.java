@@ -13,24 +13,24 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardEdiçãoGráficoEditar extends TestBaseMassiel{
+public class DashboardEdiçãoGráficoEditar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardEdiçãoGráficoEditarPO dashboardEdiçãoGráficoEditarPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardEdiçãoGráficoEditarPO = new DashboardEdiçãoGráficoEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 	}
@@ -39,12 +39,11 @@ public class DashboardEdiçãoGráficoEditar extends TestBaseMassiel{
 	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
 	}
-	
+
 	@Test(priority = 2)
 	public void editar() {
-	
-		
+
 		boolean sucesso = dashboardEdiçãoGráficoEditarPO.Editar();
-		assertTrue(sucesso,Criar);
+		assertTrue(sucesso, Criar);
 	}
 }

@@ -37,9 +37,9 @@ public class AjusteEInformaçoesDeValoresVisualizar extends TestBaseEliel {
 
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = ajusteEInformaçoesDeValoresVisualizarPO.visualizar();

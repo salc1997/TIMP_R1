@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CompatibilidadeEnCatTrabExcluir extends TestBaseFernando{
+public class CompatibilidadeEnCatTrabExcluir extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEnCatTrabExcluirPO compatibilidadeEnCatTrabExcluirPO;
@@ -36,7 +36,7 @@ public class CompatibilidadeEnCatTrabExcluir extends TestBaseFernando{
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = compatibilidadeEnCatTrabExcluirPO.excluir();
 		assertTrue(sucesso, semAcesso);
 	}

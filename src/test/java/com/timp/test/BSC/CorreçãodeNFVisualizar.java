@@ -35,6 +35,7 @@ public class CorreçãodeNFVisualizar extends TestBaseMassiel {
 
   @AfterClass
   public void afterClass() {
+//	  driver.close();
   }
   
   @Test(priority = 0)

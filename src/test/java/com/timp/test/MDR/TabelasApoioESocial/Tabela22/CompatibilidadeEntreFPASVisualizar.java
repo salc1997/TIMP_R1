@@ -33,14 +33,13 @@ public class CompatibilidadeEntreFPASVisualizar extends TestBaseKenssy {
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizarCompatibilidadeEntreFPAS() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = compatibilidadeEntreFPASCriarFPASVisualizarPO.visualizarCompatibilidadeEntreFPAS();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -1,7 +1,7 @@
 package com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis;
 
 import org.testng.annotations.Test;
- 
+
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -31,7 +31,6 @@ public class CodigoFatosContabeisEditar extends TestBaseFernando {
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void editarCodigoFatosContabeis() {

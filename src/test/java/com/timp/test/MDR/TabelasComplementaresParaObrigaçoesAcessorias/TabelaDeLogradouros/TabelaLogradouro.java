@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassaPO;
 
 public class TabelaLogradouro extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TabelaServicosExcluirEmMassaPO tabelaServicosExcluirEmMassaPO;
@@ -34,7 +34,7 @@ public class TabelaLogradouro extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = tabelaServicosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
@@ -43,7 +43,4 @@ public class TabelaLogradouro extends TestBaseEliel {
 		assertTrue(sucesso2, Eliminado);
 	}
 
-
-	
-	
 }

@@ -22,7 +22,7 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhes extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -33,8 +33,6 @@ public class TabelaCodigoDaSituaçaoTributariaDetalhes extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-
-
 
 	@Test()
 	public void detalhes() {

@@ -14,8 +14,8 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.remote.NewSessionPayload;
 import org.testng.annotations.AfterClass;
 
-public class TabelaDeProdutosEditar extends TestBaseMassiel{
- 
+public class TabelaDeProdutosEditar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeProdutosEditarPO tabelaDeProdutosEditarPO;
@@ -42,6 +42,5 @@ public class TabelaDeProdutosEditar extends TestBaseMassiel{
 		assertTrue(sucesso, semAcesso);
 
 	}
-
 
 }

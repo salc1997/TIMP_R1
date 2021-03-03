@@ -37,7 +37,6 @@ public class CompatibilidadeEntreFPASEditar extends TestBaseKenssy {
 
 		loginTC.login();
 
-
 		accesarMDR.acessarMDR();
 
 		boolean sucesso = compatibilidadeEntreFPASEditarPO.editarCompatibilidadeEntreFPAS();

@@ -37,7 +37,7 @@ public class TabelaDeIsencoesDetalhes extends TestBaseEliel {
 	public void Detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tabelaDeIsencoesDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

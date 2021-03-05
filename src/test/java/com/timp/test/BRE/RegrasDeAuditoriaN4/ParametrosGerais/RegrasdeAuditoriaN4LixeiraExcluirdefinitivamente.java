@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO;
 
 import org.testng.annotations.BeforeClass;
@@ -31,31 +31,23 @@ public class RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente extends TestBaseCr
   
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
+	@Test()
+	public void lixeira() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
 		acessarBREPO.acessarBRE();
 
-	}
-	@Test(priority = 2)
-	public void lexeira() {
-
 		boolean sucesso = regrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO.lexeira();
-		assertTrue(sucesso, Criar);
+		assertTrue(sucesso, "Lixeira");
 		sleep(3000);
-		boolean sucesso1 = regrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO.excluirDefinitivo();
-		assertTrue(sucesso1, Criar);
-
+		
 	}
 	
-
+	@Test(dependsOnMethods = "lixeira")	
+	public void excluirDefinitivo() {
+		boolean sucesso1 = regrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO.excluirDefinitivo();
+		assertTrue(sucesso1, Eliminado);
+	}
 }

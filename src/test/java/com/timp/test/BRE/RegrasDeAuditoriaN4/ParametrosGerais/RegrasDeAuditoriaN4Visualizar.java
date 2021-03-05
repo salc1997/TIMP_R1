@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasDeAuditoriaN4VisualizarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4VisualizarPO;
 
 public class RegrasDeAuditoriaN4Visualizar extends TestBaseEliel{
 
@@ -29,21 +29,14 @@ public class RegrasDeAuditoriaN4Visualizar extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
+		
 		ArrayList<Boolean> sucesso = regrasDeAuditoriaN4VisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

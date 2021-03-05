@@ -35,8 +35,16 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBaseMassiel{
 	/*@FindBy(xpath = "//div[@id=\"container-fluid\"]/div[2]/div[2]/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"g\"][1]/*[name()=\"g\"][1]/*[name()=\"g\"][2]/*[name()=\"g\"][1]/*[name()=\"g\"][4]/*[name()=\"rect\"]")
 	public WebElement grafico;*/
 	
-	@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[5]")
+//	@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[5]")
+//	public WebElement grafico;
+	
+	//SI FUNCIONA ESTE XPATH EN TQ1
+	@FindBy(xpath = "//div[@id=\"UIComp_1\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"g\"][1]/*[name()=\"g\"][1]/*[name()=\"g\"][2]/*[name()=\"g\"][1]/*[name()=\"g\"][4]/*[name()=\"rect\"]")
 	public WebElement grafico;
+	
+	@FindBy(xpath = "//div[@id=\"UIComp_5\"]/*[name()=\"svg\"]/*[name()=\"g\"][7]/*[name()=\"g\"][1]/*[name()=\"g\"][1]/*[name()=\"g\"][1]/*[name()=\"g\"][2]/*[name()=\"g\"][1]/*[name()=\"g\"][4]/*[name()=\"rect\"]")
+	public WebElement grafico11;
+	
 	
 	@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div[1]/div[1]/div[1]/*[1]/*[8]/*[1]/*[4]/*[1]/*[2]/*[1]/*[2]")
 	public WebElement grafico2;
@@ -184,8 +192,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBaseMassiel{
 		waitExpectElement(etiquetaIndicador);
 		
 		fechar.click();
-		
-		sleep(2000);
+		sleep(3000);
 		
 		String valor2 = etiquetaIndicador.getText();
 		System.out.println(valor2);
@@ -257,9 +264,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBaseMassiel{
 		
 		
 		if (tq1 == true) {
-
-
-			grafico.click();
+			grafico11.click();
 			sleep(2000);
 
 		}else if (tc2==true) {

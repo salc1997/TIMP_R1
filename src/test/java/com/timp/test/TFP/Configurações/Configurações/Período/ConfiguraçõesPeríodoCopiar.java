@@ -33,22 +33,16 @@ public class ConfiguraçõesPeríodoCopiar extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void copiar() {
 
 		loginTC.login();
 
 		acessarTFPPO.acessarTFP();
 
-		// configuraçõesPeríodoCopiarPO.copiar();
 		boolean sucesso = configuraçõesPeríodoCopiarPO.copiar();
 		assertTrue(sucesso, Editar);
 
-//		ArrayList<Boolean> sucesso = configuraçõesPeríodoCopiarPO.copiar();
-//
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), visualizaçar);
-//		}
 	}
 
 }

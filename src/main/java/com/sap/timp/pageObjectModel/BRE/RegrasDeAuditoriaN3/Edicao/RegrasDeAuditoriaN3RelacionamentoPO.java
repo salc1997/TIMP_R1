@@ -69,9 +69,9 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 
-	public boolean editar() {
+	public boolean relacionamento() {
 		
-String url = driver.getCurrentUrl();
+		String url = driver.getCurrentUrl();
 		
 		boolean tc2 = false;
 		boolean td1 = false;
@@ -221,16 +221,8 @@ String url = driver.getCurrentUrl();
 				sucesso = true;
 			}
 		}
-		
-		
-		
-		
-	
+				
 		System.out.println(sucesso);
 		return sucesso;
-
 	}
-
-
-
 }

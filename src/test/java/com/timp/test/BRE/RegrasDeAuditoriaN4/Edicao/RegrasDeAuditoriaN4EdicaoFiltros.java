@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.Edicao.RegrasDeAuditoriaN4EdicaoFiltrosPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasDeAuditoriaN4CriarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4CriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -29,22 +29,16 @@ public class RegrasDeAuditoriaN4EdicaoFiltros extends TestBaseKenssy {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
-	public void criar() {
-		//regrasDeAuditoriaN4FiltrosPO.filtros();
+	@Test()
+	public void filtros() {
+		
+		loginTC.login();
+		acessarBREPO.acessarBRE();
+		
 		boolean sucesso = regrasDeAuditoriaN4FiltrosPO.filtros();
 		assertTrue(sucesso, "disque se mostro");
 	}

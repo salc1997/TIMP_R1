@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO;
 
 public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa extends TestBaseEliel{
 	
@@ -30,21 +30,14 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa extends TestBas
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void excluirEnMassa() {
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void criar() {
+		
 		ArrayList<Boolean> sucesso = regrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO.criar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);

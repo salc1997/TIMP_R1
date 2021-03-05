@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
 
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
 =======
@@ -77,7 +81,12 @@
 
           <include name="beforeClass"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar">
+        <methods>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="abrirSubnivel2"/>
           <include name="excluirConfiguracoes"/>
           <include name="abrirSubnivel3"/>
@@ -93,7 +102,11 @@
           <include name="criar"/>
 
           <include name="afterClass"/>
+=======
+          <include name="Executar"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
         </methods>
       </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar -->
@@ -154,6 +167,10 @@
       </class> <!-- com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes -->
 
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

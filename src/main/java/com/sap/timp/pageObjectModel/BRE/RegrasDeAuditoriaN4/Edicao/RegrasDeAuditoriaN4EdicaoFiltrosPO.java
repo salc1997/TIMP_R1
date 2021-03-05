@@ -95,7 +95,8 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBaseKenssy  {
 		sleep(2000);
 		
 		sleep(2000);
-		String idRegradeAuditoria = idObter2();
+		String idRegradeAuditoria = idObter("idAn4");
+		//String idRegradeAuditoria = idObter2();
 		//1304
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idRegradeAuditoria+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idRegradeAuditoria+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

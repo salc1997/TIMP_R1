@@ -29,27 +29,18 @@ public class RegrasDeAuditoriaN3Relacionamento extends TestBaseEliel{
   
   @AfterClass
   public void afterClass() {
-	  //driver.close();
+	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
+	@Test()
+	public void relacionamento() {
+	
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
 		acessarBREPO.acessarBRE();
-
-	}
-	@Test(priority = 2)
-	public void editar() {
-
-		boolean sucesso = regrasDeAuditoriaN3RelacionamentoPO.editar();
+		
+		boolean sucesso = regrasDeAuditoriaN3RelacionamentoPO.relacionamento();
 		assertTrue(sucesso, "Não foi adicionado o relacionamento");
-
+	
 	}
 
 	

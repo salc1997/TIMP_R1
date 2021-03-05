@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Regra de Escrituração(failed)">
+=======
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regras de Auditoria N4(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular">
         <methods>
           <include name="beforeClass"/>
@@ -12,4 +18,23 @@
       </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular -->
     </classes>
   </test> <!-- Regra de Escrituração(failed) -->
+=======
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa">
+        <methods>
+          <include name="excluirEnMassa"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="lixeira"/>
+          <include name="excluirDefinitivo"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente -->
+    </classes>
+  </test> <!-- Regras de Auditoria N4(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 </suite> <!-- Failed suite [Suite] -->

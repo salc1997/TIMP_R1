@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
@@ -9,10 +10,12 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Cristhian
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
@@ -23,38 +26,12 @@
       <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
 
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="abrirSubnivel1"/>
-          <include name="abrirSubnivel4"/>
-          <include name="abrirSubnivel5"/>
 =======
-
-          <include name="criar"/>
-          <include name="afterClass"/>
-
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefaManual">
-
-      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
-
-      <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa">
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasExecutarConfiguracaoBFB">
-
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes">
-      <class name="com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes">
-      <class name="com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId">
-
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosEditar">
-
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
-
-      <class name="com.timp.test.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosNaApuracao.UtilizacaoDosCreditosNaApuracaoExcluirEmMassa">
-
-      <class name="com.timp.test.TFP.Configurações.Subperíodo.SubperíodoCriar">
-      <class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId">
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
+>>>>>>> refs/heads/Cristhian
         <methods>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="subNivel5"/>
           <include name="excluirHierarquia"/>
@@ -134,8 +111,12 @@
       </class> <!-- com.timp.test.BRB.AdicionarColunas -->
 
           <include name="criar"/>
+=======
+          <include name="Calendario"/>
+>>>>>>> refs/heads/Cristhian
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 
       </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
 
@@ -171,6 +152,9 @@
         </methods>
       </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
@@ -12,9 +13,12 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,8 +33,12 @@
 =======
       <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
 >>>>>>> refs/heads/Cristhian
+=======
+      <class name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="subNivel5"/>
@@ -110,12 +118,15 @@
       </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
       </class> <!-- com.timp.test.BRB.AdicionarColunas -->
 
+=======
+>>>>>>> refs/heads/Fernando
           <include name="criar"/>
 =======
           <include name="Calendario"/>
 >>>>>>> refs/heads/Cristhian
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
       </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
@@ -155,6 +166,9 @@
 =======
       </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

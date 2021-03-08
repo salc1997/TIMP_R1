@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="10" passed="2" failed="8" skipped="0">
 =======
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
@@ -12,8 +13,12 @@
 =======
 <testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
 >>>>>>> refs/heads/Cristhian
+=======
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -27,8 +32,12 @@
 =======
   <suite started-at="2021-03-05T12:02:57Z" name="Default suite" finished-at="2021-03-05T12:10:56Z" duration-ms="478398">
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-03-08T21:17:23Z" name="Default suite" finished-at="2021-03-08T21:18:23Z" duration-ms="59972">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -50,9 +59,15 @@
       <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@1356d4d4]" started-at="2021-03-05T12:02:57Z" name="beforeClass" finished-at="2021-03-05T12:03:25Z" duration-ms="27205" status="PASS">
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-03-08T21:17:23Z" name="Default test" finished-at="2021-03-08T21:18:23Z" duration-ms="59972">
+      <class name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar@20f5281c]" started-at="2021-03-08T21:17:23Z" name="beforeClass" finished-at="2021-03-08T21:17:36Z" duration-ms="12722" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,8 +100,12 @@
         </test-method> <!-- acessarTDK -->
         <test-method signature="Executar()[pri:2, instance:com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar@babafc2]" started-at="2021-03-05T05:38:26Z" name="Executar" finished-at="2021-03-05T05:39:44Z" duration-ms="77674" status="FAIL">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar@20f5281c]" started-at="2021-03-08T21:17:36Z" name="criar" finished-at="2021-03-08T21:18:23Z" duration-ms="47213" status="FAIL">
+>>>>>>> refs/heads/Fernando
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="tr" and @data-id="639"]/div[1]/div"}
   (Session info: chrome=83.0.4103.106)
@@ -131,6 +150,28 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 8
 Session ID: 42234eb46c961862f02962771a1afb5b
 *** Element info: {Using=xpath, value=//div[@class="v-tooltip-mainDiv"]/table/tr[1]/td[2]}
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="list-item" and text()="1"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8468f9cdecf6104d6c7e31f3539b073
+*** Element info: {Using=xpath, value=//li[@class="list-item" and text()="1"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="list-item" and text()="1"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8468f9cdecf6104d6c7e31f3539b073
+*** Element info: {Using=xpath, value=//li[@class="list-item" and text()="1"]}
+>>>>>>> refs/heads/Fernando
 at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -252,8 +293,13 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
+<<<<<<< HEAD
 at com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasNASolicitarEsclarecimentoPO.Calendario(TarefasNASolicitarEsclarecimentoPO.java:1134)
 at com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento.Calendario(TarefasNASolicitarEsclarecimento.java:100)
+=======
+at com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriarPO.criar(DeXParaContraPartidaCriarPO.java:89)
+at com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar.criar(DeXParaContraPartidaCriar.java:36)
+>>>>>>> refs/heads/Fernando
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -284,6 +330,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Calendario -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@1356d4d4]" started-at="2021-03-05T12:10:56Z" name="afterClass" finished-at="2021-03-05T12:10:56Z" duration-ms="0" status="PASS">
           <reporter-output>
@@ -310,6 +357,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar@20f5281c]" started-at="2021-03-08T21:18:23Z" name="afterClass" finished-at="2021-03-08T21:18:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

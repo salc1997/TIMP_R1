@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -10,7 +11,11 @@
 <<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+>>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,7 +53,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar">
@@ -187,11 +195,15 @@
 =======
       <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
 >>>>>>> refs/heads/Cristhian
+=======
+      <class name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="beforeClass"/>
           <include name="Calendario"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir">
@@ -578,6 +590,9 @@
 =======
       </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

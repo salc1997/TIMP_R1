@@ -33,7 +33,7 @@ public class ConfiguraçõesPeríodoExcluir extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 

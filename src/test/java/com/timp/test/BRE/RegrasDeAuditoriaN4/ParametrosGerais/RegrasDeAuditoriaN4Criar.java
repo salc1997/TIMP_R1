@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasDeAuditoriaN4CriarPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4CriarPO;
 
 public class RegrasDeAuditoriaN4Criar extends TestBaseEliel {
 	
@@ -27,21 +27,14 @@ public class RegrasDeAuditoriaN4Criar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
-	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
+		driver.close();
 	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
+		
 		boolean sucesso = regrasDeAuditoriaN4CriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}

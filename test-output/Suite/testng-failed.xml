@@ -7,6 +7,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<<<<<<< HEAD
   <test thread-count="5" name="Cenarios de Correção(failed)">
 =======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
@@ -16,7 +17,15 @@
   <test thread-count="5" name="ParametrosParaTP(failed)">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <test thread-count="5" name="Regra de Escrituração(failed)">
+=======
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regras de Auditoria N4(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa">
         <methods>
@@ -74,6 +83,9 @@
   <test thread-count="5" name="RegistroDeExportaçao(failed)">
     <classes>
       <class name="com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoEditar">
+=======
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular">
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
           <include name="editar"/>
@@ -89,6 +101,7 @@
         </methods>
       </class> <!-- com.timp.test.MDR.RegistroDeExportaçao.RegistroDeExportaçaoExcluirMassa -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- RegistroDeExportaçao(failed) -->
   <test thread-count="5" name="Representantes Legais(failed)">
     <classes>
@@ -559,6 +572,28 @@
   </test> <!-- TabelasApoioSped > Ajustes e Informação de Valores Provenientes de Documento Fiscal(failed) -->
 =======
   </test> <!-- ValoresParaMetodoPVA(failed) -->
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  </test> <!-- Regra de Escrituração(failed) -->
+=======
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa">
+        <methods>
+          <include name="excluirEnMassa"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="lixeira"/>
+          <include name="excluirDefinitivo"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente -->
+    </classes>
+  </test> <!-- Regras de Auditoria N4(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->
 =======

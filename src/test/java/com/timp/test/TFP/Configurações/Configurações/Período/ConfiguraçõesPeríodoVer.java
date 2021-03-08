@@ -35,7 +35,7 @@ public class ConfiguraçõesPeríodoVer extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void ver() {
 		loginTC.login();
 

@@ -33,7 +33,7 @@ public class ConfiguraçõesPeríodoEditar extends TestBaseKenssy {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 
 		loginTC.login();

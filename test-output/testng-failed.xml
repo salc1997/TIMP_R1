@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,7 +15,14 @@
 >>>>>>> efff773 arquivos restantes
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+>>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -32,9 +44,14 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Fernando
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Cristhian
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,8 +80,20 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
 >>>>>>> efff773 arquivos restantes
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar">
@@ -93,7 +122,14 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.CALENDAR.Tarefas.TarefaManual">
@@ -139,7 +175,13 @@
 =======
       <class name="com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes">
 >>>>>>> refs/heads/Fernando
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+          <include name="abrirSubnivel1"/>
+          <include name="abrirSubnivel4"/>
+          <include name="abrirSubnivel5"/>
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -165,20 +207,41 @@
         <methods>
           <include name="editarConfiguracion"/>
 >>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="subNivel5"/>
+          <include name="excluirHierarquia"/>
+          <include name="afterClass"/>
+          <include name="abrirSubnivel2"/>
+          <include name="excluirConfiguracoes"/>
+          <include name="abrirSubnivel3"/>
+=======
 <<<<<<< HEAD
 =======
           <include name="afterClass"/>
 >>>>>>> refs/remotes/origin/Kenssy
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa">
+=======
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
+>>>>>>> refs/heads/Cristhian
+=======
+      <class name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="Calendario"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir">
         <methods>
@@ -188,18 +251,15 @@
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar">
+=======
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="Executar"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa -->
       <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorEditar">
         <methods>
@@ -1060,6 +1120,16 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> efff773 arquivos restantes
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar -->
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
+>>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Prueba1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -33,25 +33,16 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculados extends TestBaseKenssy{
 	
 	@AfterClass
 	public void afterClass() {
-		  
+		driver.close();  
 	}
-	
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void valoresCalculados() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
 		acessarBREPO.acessarBRE();
-
-	}
-	
-	@Test(priority = 2)
-	public void criar() {
-		ArrayList<Boolean> sucesso =regrasdeAuditoriaN4EdicaoValoresCalculadosPO.editar();
+		
+		ArrayList<Boolean> sucesso =regrasdeAuditoriaN4EdicaoValoresCalculadosPO.valoresCalculados();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "Valor calculado con exito");

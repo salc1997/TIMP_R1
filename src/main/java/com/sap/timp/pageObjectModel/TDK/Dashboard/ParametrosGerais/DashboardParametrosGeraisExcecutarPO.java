@@ -258,7 +258,6 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 
-
 			grafico.click();
 			sleep(2000);
 

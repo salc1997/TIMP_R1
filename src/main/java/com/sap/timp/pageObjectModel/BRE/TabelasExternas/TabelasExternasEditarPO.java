@@ -39,7 +39,7 @@ public class TabelasExternasEditarPO extends TestBaseMassiel{
 		PageFactory.initElements(driver, this);
 	}
 
-	public void Editar() {
+	public boolean Editar() {
 
 		String url = driver.getCurrentUrl();
 
@@ -152,7 +152,7 @@ public class TabelasExternasEditarPO extends TestBaseMassiel{
 		System.out.println(novoTexto);
 		boolean sucesso = novoTexto.equals(enviar);
 		System.out.println(sucesso);
-
+		return sucesso;
 
 	}
 }

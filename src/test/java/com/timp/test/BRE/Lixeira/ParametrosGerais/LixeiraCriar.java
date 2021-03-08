@@ -14,8 +14,6 @@ import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.Lixeira.ParametrosGerais.LIxeiraCriarPO;
 
 public class LixeiraCriar extends TestBaseEliel{
- 
-	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	LIxeiraCriarPO lIxeiraCriarPO;
@@ -32,19 +30,11 @@ public class LixeiraCriar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		ArrayList<Boolean> sucesso = lIxeiraCriarPO.criar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);

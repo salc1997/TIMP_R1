@@ -14,8 +14,6 @@ import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.Lixeira.ParametrosGerais.LixeiraRestaurarPO;
 
 public class LixeiraRestaurar extends TestBaseEliel{
-	
-
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	LixeiraRestaurarPO lixeiraRestaurarPO;
@@ -32,22 +30,12 @@ public class LixeiraRestaurar extends TestBaseEliel{
 	public void afterClass() {
 		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void restaurar() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		boolean sucesso = lixeiraRestaurarPO.restaurar();
 		assertTrue(sucesso, Restaurar);
-	}
-
- 
+	} 
 }

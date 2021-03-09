@@ -33,10 +33,9 @@ public class SubcapitalizacaoExcluir extends TestBaseEliel {
 
 	@Test()
 	public void excluir() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 		boolean sucesso = subcapitalizacaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
 	}
-
 }

@@ -196,7 +196,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idRegistro);
+		idInserir("EstructurasParametrosGerais", idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

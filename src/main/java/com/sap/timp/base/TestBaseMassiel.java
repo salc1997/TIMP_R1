@@ -65,6 +65,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 	}
 	
 	public String diaHoy() {
+		
 		Calendar c1 = Calendar.getInstance();
 		Calendar c2 = new GregorianCalendar();
 		
@@ -74,6 +75,25 @@ public class TestBaseMassiel extends TestBaseSteven {
 		return dia;
 
 	}
+	
+	public String diaDespues() {
+		
+		DateFormat df = new SimpleDateFormat ("d");
+		Calendar cal = Calendar.getInstance();
+		cal.add (Calendar.DATE, +1);
+		
+		return df.format(cal.getTime());
+	}
+	
+	public String diaActual() {
+		
+		// Obtienes el mes actual
+		int anio = LocalDate.now().getDayOfMonth();
+		
+		String anioString = String.valueOf(anio);
+		return anioString;
+	}
+	
 	
 	public void closeSelectTypeCheckbox(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();

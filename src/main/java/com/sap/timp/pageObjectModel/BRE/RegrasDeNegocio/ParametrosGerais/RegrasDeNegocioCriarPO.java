@@ -595,7 +595,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		System.out.println("p1");
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idB);
+		idInserir("RegrasDeNegocioCriar",idB);
 		
 
 		System.out.println(id);

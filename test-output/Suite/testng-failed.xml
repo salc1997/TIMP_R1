@@ -5,12 +5,21 @@
   <test thread-count="5" name="Automações MDR 10(failed)">
 =======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="TipoDeTributoContaContabil(failed)">
 >>>>>>> refs/heads/Fernando
+=======
+  <test thread-count="5" name="Livros Fiscais &gt; Parametros Para Livro ICMS ST(failed)">
+>>>>>>> refs/remotes/origin/Yessy
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir">
+=======
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluir">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="excluir"/>
           <include name="afterClass"/>
@@ -82,7 +91,10 @@
           <include name="criar"/>
           <include name="beforeClass"/>
           <include name="excluirEmMassa"/>
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="Excluir"/>
+<<<<<<< HEAD
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa -->
     </classes>
@@ -93,8 +105,16 @@
 >>>>>>> refs/heads/Fernando
         <methods>
           <include name="beforeClass"/>
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTExcluir -->
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle">
+        <methods>
           <include name="detalhes"/>
+<<<<<<< HEAD
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes -->
       <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar">
@@ -157,7 +177,25 @@
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
       <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir">
         <methods>
+=======
+          <include name="afterClass"/>
           <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTDetalle -->
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTVisualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTVisualizar -->
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="afterClass"/>
+>>>>>>> refs/remotes/origin/Yessy
+          <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="Excluir"/>
           <include name="afterClass"/>
         </methods>
@@ -205,15 +243,72 @@
       <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoDetalhes">
         <methods>
           <include name="detalhes"/>
+=======
+        </methods>
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTEditar -->
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar">
+        <methods>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTCriar -->
+    </classes>
+  </test> <!-- Livros Fiscais > Parametros Para Livro ICMS ST(failed) -->
+  <test thread-count="5" name="Parâmetros de Contabilização &gt; Contas Default Para Extemporaneo (failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoDetalhes">
+        <methods>
+          <include name="Detalhes"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoDetalhes -->
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoEditar -->
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoVisualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="Visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoVisualizar -->
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluirMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirMassa"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluirMassa -->
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+>>>>>>> refs/remotes/origin/Yessy
+          <include name="afterClass"/>
+<<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoDetalhes -->
       <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoFiltros">
+=======
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluir -->
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoCriar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
           <include name="filtros"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
@@ -343,4 +438,42 @@
     </classes>
   </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoCriar -->
+    </classes>
+  </test> <!-- Parâmetros de Contabilização > Contas Default Para Extemporaneo (failed) -->
+  <test thread-count="5" name="Parâmetros de Contabilização &gt; Contas Default Por Tributo (failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoExcluir -->
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizar -->
+    </classes>
+  </test> <!-- Parâmetros de Contabilização > Contas Default Por Tributo (failed) -->
+  <test thread-count="5" name="Parâmetros de Contabilização &gt; Mapemaneto Contábil(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilEditar -->
+    </classes>
+  </test> <!-- Parâmetros de Contabilização > Mapemaneto Contábil(failed) -->
+>>>>>>> refs/remotes/origin/Yessy
 </suite> <!-- Failed suite [Suite] -->

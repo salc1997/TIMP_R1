@@ -49,7 +49,7 @@ public class LivrosFiscaisCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"Tipo do Livro\")]")
 	public WebElement tipodolivro;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][2]")
 	public WebElement opcao;
 
 	@FindBy(xpath = "//input[contains(@placeholder,\"Empresa\")]")
@@ -88,17 +88,17 @@ public class LivrosFiscaisCriarPO extends TestBaseSteven{
 		sleep(2000);
 		livrosfiscais.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		livrosFiscaisO.click();
 		
 		sleep(2000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		sleep(2000);
 	
 		//conta o numero de linhas

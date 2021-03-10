@@ -1,62 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
-
-
-<test name="Tabela 01 - Categorias De Trabalhadores" >
+	<test name="Tabela 01 - Categorias De Trabalhadores" >
 		<classes>		
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar"></class>			
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriaDeTrabalhadoresDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluirMassa"></class>
 		</classes>
-	</test>
-	
+	</test>	
 	<test name="Tabela 02 - Financiamento De Apos Esp" >
 		<classes>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamientoDeAposEspExcluiMassa"></class>			
 		</classes>
 	</test>
-	
-	
 	<test name="Tabela 03 - Natureza Das Rubricas" >
 		<classes>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExluirMassa"></class>
 		</classes>
-	</test>
-	
+	</test>	
 	<test name="Tabela 04 - Codigos E Aliq. De FPRAS" >
 		<classes>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluirMassa"></class>
-
 		</classes>
-	</test>
-	
-	
+	</test>	
 	<test name="Tabela 05 - Tipos de Registro" >
 		<classes>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroExcluirMassa"></class>
 		</classes>
 	</test>
-	
-	
 	<test name="Tabela 06 - Paises" >
 		<classes>
 			
@@ -67,9 +61,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesExcluirMassa"></class>
 
 		</classes>
-	</test>
-	
-	
+	</test>	
 	<test name="Tabela 07 - Tipos de Dependentes">
 		<classes>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesCriar"></class>
@@ -80,8 +72,6 @@
 		</classes>
 
 	</test>
-	
-	
 	<test name="Pais/Moeda">
 		<classes>
 
@@ -89,32 +79,21 @@
 		</classes>
 
 	</test>
-	
 	<test name="Siscoserv > RegistroRAS">
 		<classes>	
-
 			<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluirEmMassa"></class>
-
 		</classes>
 	</test>
-	
-	
 	<test name="Siscoserv > RegistroRP">
 		<classes>
 			<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluirEmMassa"></class>
-
 		</classes>
-	</test>
-	
-	
+	</test>	
 	<test name="Atividades Para Tributacao > Tipos De Servicos">
 		<classes>
-
 			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa"></class>
-
 		</classes>
-	</test>
-	
+	</test>	
 	<test name="Valor Adicionado > Confrontacao">
 		<classes>
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfratacaoCriar"></class>
@@ -123,9 +102,7 @@
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoVisualizar"></class>
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoExcluir"></class>
 		</classes>
-
-	</test>
-	
+	</test>	
 	<test name="Taxas De Conversao">
 		<classes>
 			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar"></class>
@@ -135,8 +112,7 @@
 			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluir"></class>
 			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa"></class>
 		</classes>
-	</test>
-	
+	</test>	
 	<test name="Thin Capitalization > Subcapitalizacao">
 		<classes>
 			<!--Thin Capitalization > Subcapitalizacao-->			
@@ -146,8 +122,4 @@
 			<class name="com.timp.test.MDR.ThinCapitalization.Subcapitalizacao.SubcapitalizacaoExcluirEmMassa"></class>
 		</classes>	
 	</test> <!-- PruebaTestNG -->
-
-
-
-
 </suite> 

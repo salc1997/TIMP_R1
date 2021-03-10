@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela01.CategoriaDeTrabalhadorDetalhesPO;
 
-public class CategoriaDeTrabalhadorDetalhes extends TestBaseFernando{
+public class CategoriaDeTrabalhadoresDetalhes extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	CategoriaDeTrabalhadorDetalhesPO categoriaDeTrabalhadorDetalhesPO;

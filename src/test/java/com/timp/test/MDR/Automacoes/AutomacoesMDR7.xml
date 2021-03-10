@@ -169,6 +169,9 @@
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescriçãoDeNatDeLesãoVisualizar">
 			</class>
 			<class 
+			name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescriçãoDeNatDeLesãoDetalle">
+			</class>
+			<class 
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescriçãoDeNatDeLesãoExcluir">
 			</class>
 			<class 

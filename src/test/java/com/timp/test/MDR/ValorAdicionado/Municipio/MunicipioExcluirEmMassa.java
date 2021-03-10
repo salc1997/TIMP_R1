@@ -31,7 +31,7 @@ public class MunicipioExcluirEmMassa extends TestBaseEliel {
 	}
 
 	@Test()
-	public void criar() {
+	public void Criar() {
 
 		loginTC.login();
 		accesarMDR.acessarMDR();
@@ -39,6 +39,13 @@ public class MunicipioExcluirEmMassa extends TestBaseEliel {
 		boolean sucesso = municipioExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+	}
+	
+	
+	@Test(dependsOnMethods = "Criar")
+	public void ExcluirEmMassa() {
+
 
 		boolean sucesso2 = municipioExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

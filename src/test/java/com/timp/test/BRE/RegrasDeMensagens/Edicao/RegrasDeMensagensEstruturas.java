@@ -9,13 +9,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseEliel;
+
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturasPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimularPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditarPO;
+
 
 public class RegrasDeMensagensEstruturas extends TestBaseSteven {
 	
@@ -36,18 +35,15 @@ public class RegrasDeMensagensEstruturas extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
-	public void editar() {
+	@Test()
+	public void estruturas() {
+		
+		loginTC.login();
+		
+		acessarBREPO.acessarBRE();
+		
 		ArrayList<Boolean> sucesso = regrasDeMensagensEstruturasPO.estrutura();
 		
 		for (int i = 0; i < sucesso.size(); i++) {

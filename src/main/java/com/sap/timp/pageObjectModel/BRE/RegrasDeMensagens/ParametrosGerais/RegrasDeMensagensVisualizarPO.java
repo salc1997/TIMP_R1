@@ -50,19 +50,14 @@ public class RegrasDeMensagensVisualizarPO extends TestBaseEliel{
 	}
 	
 	public ArrayList<Boolean> visualizar() {
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		regrasdemensagens.click();
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
 
 		ultimapagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
+		invisibilityOfElementOverlay();
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		String	id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
@@ -97,15 +92,16 @@ public class RegrasDeMensagensVisualizarPO extends TestBaseEliel{
 		
 		biblioteca.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		waitExpectElement(ultimapagina);
+		invisibilityOfElementOverlay();
+
 		sleep(2000);
 		
 		ultimapagina.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
+		
+		
 		//pega o ultimo id que foi gerado no criar
 
 		
@@ -118,11 +114,12 @@ public class RegrasDeMensagensVisualizarPO extends TestBaseEliel{
 		sleep(1000);
 		
 		editar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		//editar
+		
 		waitExpectElement(campo1ed);
+		invisibilityOfElementOverlay();
+		
+		//editar
+		
 		sleep(2000);
 		String nomeeditar = nomeed.getText();
 		String r1editar = r1ed.getText();

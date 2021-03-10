@@ -31,23 +31,16 @@ public class BRERegradeEscrituraçãoEdiçãoSimular extends TestBaseCristhian {
   
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void simular() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
+		
 		acessarBREPO.acessarBRE();
-
-	}
-	@Test(priority = 2)
-	public void editar() {
 
 		boolean sucesso = bRERegradeEscrituraçãoEdiçãoSimularPO.editar();
 		assertTrue(sucesso, Editar);

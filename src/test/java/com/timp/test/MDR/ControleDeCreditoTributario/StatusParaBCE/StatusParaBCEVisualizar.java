@@ -36,19 +36,6 @@ public class StatusParaBCEVisualizar extends TestBaseSteven {
 	public void afterClass() {
 		 driver.close();
 	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
 
 	@Test()
 	public void visualizar() {

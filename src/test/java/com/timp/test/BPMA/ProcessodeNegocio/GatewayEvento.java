@@ -40,13 +40,11 @@ public class GatewayEvento extends TestBaseCristhian{
   @Test(priority = 0)
  	public void login() {
  		loginTC.login();
-
  	}
 
  	@Test(priority = 1)
  	public void BPMAEntrar() {
- 		 acessarBPMA.acessarBPMA();
- 		
+ 		 acessarBPMA.acessarBPMA(); 		
  	}
  	
  	@Test(priority = 1)

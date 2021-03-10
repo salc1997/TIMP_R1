@@ -63,17 +63,12 @@ public class AtividadeEliminarPO extends TestBaseSteven{
 		sleep(2000);
 		atividadesO.click();
 		sleep(2000);
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-		sleep(2000);
+		invisibilityOfElementOverlay();
 		
 		siguiente.click();
 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		sleep(2000);
+		invisibilityOfElementOverlay();
 
 		String idRegistro = idObter("AtividadeFiscal");
 		

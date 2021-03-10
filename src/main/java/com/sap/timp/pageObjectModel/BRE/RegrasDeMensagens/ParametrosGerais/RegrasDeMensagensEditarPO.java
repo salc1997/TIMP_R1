@@ -31,6 +31,14 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//li[@id][text()=\"Mensagens\"]")
 	public WebElement opcaotiporegra;
 	
+	
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcaoG;
+	
+	@FindBy(xpath = "//li[@id][2]")
+	public WebElement opcaoG2;
+	
+	
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
 	public WebElement componente;
 	
@@ -99,7 +107,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	public WebElement opcaoOperador;
 	
 	//@FindBy(xpath = "//div[@class=\"value-one\"]/div/div[2]")
-	@FindBy(xpath = "//div[@class=\"value-one\"]/div/div/input")
+	@FindBy(xpath = "//div[@class=\"value-one\"]/div/div[@id]")
 	public WebElement NomeDoValor;
 	
 	@FindBy(xpath = "//li[@id][text()=\"BC ICMS (ED)\"]")
@@ -174,6 +182,12 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[1]/*[2]/*")
+	public WebElement textoCaixa;
+	
+	
+	
+	
 	public RegrasDeMensagensEditarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -181,19 +195,14 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 
 	public ArrayList<Boolean> editar() {
 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		regrasdemensagens.click();
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
 
 		ultimapagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
+		invisibilityOfElementOverlay();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -203,21 +212,26 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		actionsMoveToElementElement(menu);
+		
 		sleep(2000);
-
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
 		waitExpectElement(adicionarcaminho);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		invisibilityOfElementOverlay();
+	
 		primeiracaixar1.click();
 		sleep(1000);
-		NomeDoValor.clear();
-		NomeDoValor.sendKeys("BC ICMS - C597 (ED)");
-		NomeDoValor.sendKeys(Keys.ENTER);
+		NomeDoValor.click();
+		sleep(1000);
+		String texto;
+		texto = opcaoG.getText();
+		opcaoG.click();
+		
+		texto = texto.replace(" (ED)", "");
+		System.out.println("O texto da opção é: " +texto);
+		sleep(1000);
 		
 		modificar.click();
 		sleep(1000);
@@ -228,62 +242,63 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sleep(2000);
 		waitExpectElement(nao);
 		sleep(2000);
-
-
 		nao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		invisibilityOfElementOverlay();
+		
+		refresh();
+		
 		sleep(2000);
+		waitExpectElement(adicionarcaminho);
+		invisibilityOfElementOverlay();
 		
-
-		String texto1 = parte1string.getText();
 		
-		String enviar ="BC ICMS - C597";
+		sucesso.add(textoCaixa.getText().contains(texto));
 		
-		sucesso.add(texto1.contains(enviar));
+		System.out.println("Regra Editada: " +sucesso.get(0));
+		
 		waitExpectElement(primeiracaixar1editado);
+		invisibilityOfElementOverlay();
 		sleep(1000);
+		
+		
 		primeiracaixar1editado.click();
 		sleep(1000);
 		codigo.clear();
 		sleep(1000);
 		codigo.sendKeys("r2");
 		sleep(1000);
-		NomeDoValor.clear();
+		NomeDoValor.click();
 		sleep(1000);
-		NomeDoValor.sendKeys("BC ICMS (ED)");
-		sleep(1000);
-		NomeDoValor.sendKeys(Keys.ENTER);
+		opcaoG2.click();
 		sleep(1000);
 		salvarcomocopia.click();
-		//waitExpectElement(r2);
-		//sleep(1000);
-		//String textor2 = r2.getText();
-		//String textoparacompararcomr2 ="r2";
+
 		waitExpectElement(r2);
 		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("O campo r2 está na página de edição");
-			boolean sucesso3=true;
-		sucesso.add(sucesso3);
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
 		}
+		
 		gravar.click();
 
 		sleep(1000);
 		waitExpectElement(nao);
 		sleep(2000);
 		nao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
 		
 		
 		waitExpectElement(r2);
 		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("r2 ainda consta na edição");
-			boolean sucesso1=true;
-		sucesso.add(sucesso1);
+			sucesso.add(true);
+		}else {
+			sucesso.add(false);
 		}
 	
 		primeiracaixar2.click();
@@ -298,9 +313,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 
 
 		nao.click();
-		sleep(4000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
 		
 		int removerr2 = driver.findElements(By.xpath("//*[name()=\"g\"][@height=\"24\"][6]")).size();
 		if(removerr2 == 0)
@@ -330,9 +343,15 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		sleep(2000);
 
 		nao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		invisibilityOfElementOverlay();
+		
+		refresh();
+		sleep(3000);
+
+		waitExpectElement(adicionarcaminho);
+		invisibilityOfElementOverlay();
+		
+		
 		configuracoes.click();
 		sleep(1000);
 		String verficarnome = nome.getAttribute("value");

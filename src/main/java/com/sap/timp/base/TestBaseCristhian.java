@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-
+ 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,7 +36,6 @@ public class TestBaseCristhian extends TestBaseSteven{
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-
 		driver.get(tc2);
 
 		return driver;

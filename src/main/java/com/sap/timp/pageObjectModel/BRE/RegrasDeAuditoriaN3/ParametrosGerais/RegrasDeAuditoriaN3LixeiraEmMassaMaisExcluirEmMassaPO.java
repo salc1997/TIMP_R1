@@ -532,5 +532,9 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		return sucesso;
 		
 	}
+	
+	public void excluirEmMassa() {
+		
+	}
 
 }

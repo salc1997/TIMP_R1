@@ -29,21 +29,17 @@ public class RegrasDeMensagensDetalhes extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void detalhes() {
+		
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
+		
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void editar() {
+		
 		ArrayList<Boolean> sucesso = regrasDeMensagensDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);

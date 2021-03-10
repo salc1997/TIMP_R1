@@ -27,22 +27,18 @@ public class RegrasDeEscrituraçãoCriarMasCaminho extends TestBaseFernando{
 	}
 
 	@AfterClass
-	public void afterClass() {
-//		driver.close();
+	public void afterClass() {		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
-	public void criar() {
+	@Test()
+	public void criarMaisCaminho() {
+		
+		loginTC.login();
+		
+		acessarBREPO.acessarBRE();
+		
 		boolean sucesso = regrasDeEscrituraçãoCriarMasCaminhoPO.criar();
 		assertTrue(sucesso, Eliminado);
 	}

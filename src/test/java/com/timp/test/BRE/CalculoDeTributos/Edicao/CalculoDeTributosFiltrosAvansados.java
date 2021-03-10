@@ -16,53 +16,37 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CalculoDeTributosFiltrosAvansados extends TestBaseMassiel{
-
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CalculoDeTributosFiltrosAbansadosPO  calculoDeTributosFiltrosAbansadosPO;
-	
-	
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		calculoDeTributosFiltrosAbansadosPO  = new CalculoDeTributosFiltrosAbansadosPO();
-  }
-
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
-	
-	@Test(priority = 2)
+
+	@Test()
 	public void Filtro() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 
-		//ArrayList<Boolean> regulamento = calculoDeTributosFiltrosAbansadosPO.filtrosRegulamento();
-		//for (int i = 0; i < regulamento.size(); i++) {
-		//assertTrue(regulamento.get(i), Filtros);
-		//}
-		
-		
 		ArrayList<Boolean> estructura = calculoDeTributosFiltrosAbansadosPO.Estructura();
 		for (int i = 0; i < estructura.size(); i++) {
-		assertTrue(estructura.get(i), Filtros);
+			assertTrue(estructura.get(i), Filtros);
 		}
-		
+
 		ArrayList<Boolean> tributo = calculoDeTributosFiltrosAbansadosPO.tributo();
 		for (int i = 0; i < tributo.size(); i++) {
-		assertTrue(tributo.get(i), Filtros);
+			assertTrue(tributo.get(i), Filtros);
 		}
-	}
-	
+	}	
 }

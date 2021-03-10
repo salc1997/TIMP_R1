@@ -110,7 +110,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBaseKenssy
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> editar() {
+	public ArrayList<Boolean> valoresCalculados() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -127,7 +127,8 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBaseKenssy
 		sleep(2000);
 		
 		sleep(2000);
-		String idRegradeAuditoria = idObter2();
+		String idRegradeAuditoria = idObter("idAn4");
+		//String idRegradeAuditoria = idObter2();
 		//1304
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idRegradeAuditoria+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idRegradeAuditoria+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

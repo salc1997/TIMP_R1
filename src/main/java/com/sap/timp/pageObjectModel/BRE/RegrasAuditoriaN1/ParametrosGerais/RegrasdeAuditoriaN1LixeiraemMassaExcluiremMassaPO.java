@@ -164,7 +164,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE QA 1");
+		nome.sendKeys("TESTE QA 111");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -253,7 +253,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE QAA 2");
+		nome.sendKeys("TESTE QAA 222");
 		sleep(1000);
 		
 		tiporegra.click();

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNADelegar">
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados">
         <methods>
           <include name="afterClass"/>
+          <include name="filtros"/>
           <include name="beforeClass"/>
-          <include name="Calendar"/>
         </methods>
-      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNADelegar -->
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

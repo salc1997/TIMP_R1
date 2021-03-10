@@ -105,7 +105,7 @@ public class UsuariosEditarPO extends TestBaseCristhian{
 		pesquisar.sendKeys("TESTEAUTOMATIZADO");
 		sleep(2000);
 		pesquisar.sendKeys(Keys. ENTER);
-		sleep(2000);
+		sleep(6000);
 		
 	
 		

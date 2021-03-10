@@ -1,4 +1,4 @@
-package com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais;
+package com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao;
 
 import org.testng.annotations.Test;
 

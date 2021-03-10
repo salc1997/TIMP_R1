@@ -6,12 +6,8 @@
 
 		<classes>
 
-<<<<<<< HEAD
-=======
-
 			<!-- Associção Código de Ajustes -->
 
->>>>>>> refs/remotes/origin/Kenssy
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
 

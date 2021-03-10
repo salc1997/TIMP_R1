@@ -81,12 +81,12 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		
-		codigo.sendKeys("Rj55");;
+		codigo.sendKeys("Rj00");;
 		sleep(2000);
 		codigo.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA55");;
+		descricao.sendKeys("Teste QA00");;
 		
 		sleep(2000);
 		

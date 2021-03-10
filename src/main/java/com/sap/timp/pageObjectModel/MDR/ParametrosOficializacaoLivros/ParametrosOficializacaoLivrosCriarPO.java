@@ -94,7 +94,7 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBaseSteven{
 		System.out.println(id);
 		
 		novo.click();
-		
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

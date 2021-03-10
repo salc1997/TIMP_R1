@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
-import com.sap.timp.pageObjectModel.Calendar.MultiplosUsuariosCalendarPO;
 import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasNAMúltiplosUsuáriosPO;
 
 import org.testng.annotations.BeforeClass;

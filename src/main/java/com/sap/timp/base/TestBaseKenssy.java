@@ -46,6 +46,16 @@ public class TestBaseKenssy extends TestBaseSteven{
 
 		return driver;
 	}
+	
+	
+	
+	public String diaDespues() {
+		DateFormat df = new SimpleDateFormat ("dd");
+		Calendar cal = Calendar.getInstance();
+		cal.add (Calendar.DATE, +1);
+		
+		return df.format(cal.getTime());
+	}
 
 	public String capitalize(String cadena) {
 		String[] split = cadena.split("");

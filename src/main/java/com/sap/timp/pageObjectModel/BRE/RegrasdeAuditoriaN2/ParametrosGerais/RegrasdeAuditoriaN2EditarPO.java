@@ -137,7 +137,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		sucesso.add(valorOperador.equals(valorEnviado));
 		
 		inputCodigo.clear();
-		inputCodigo.sendKeys("r2");
+		inputCodigo.sendKeys("r4");
 		sleep(1000);
 		
 		cboNomeDoValor2.click();
@@ -190,13 +190,13 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		System.out.println("Cantidad camninhos: " + cantCaminhos);
 		
 		// Si hay mas de 4 cuadros significa que no ha sido removido y si hay solamente 4 cuadros, significa que solo esta el camino original
-		if(cantCaminhos <= 4) {
-			System.out.println("Copia removida...");
-			sucesso.add(true);
-		}else {
-			System.out.println("La copia del caminho no se pudo remover...");
-			sucesso.add(false);
-		}
+//		if(cantCaminhos <= 4) {
+//			System.out.println("Copia removida...");
+//			sucesso.add(true);
+//		}else {
+//			System.out.println("La copia del caminho no se pudo remover...");
+//			sucesso.add(false);
+//		}
 		
 		sleep(2000);
 		

@@ -38,18 +38,14 @@ public class RegrasDeMensagensValoresCalculados extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
+	@Test()
+	public void valoresCalculados() {
+		
+		loginTC.login();
+		
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void editar() {
+		
 		ArrayList<Boolean> sucesso = regrasDeMensagensValoresCalculadosPO.valoresCalculados();
 		
 		for (int i = 0; i < sucesso.size(); i++) {

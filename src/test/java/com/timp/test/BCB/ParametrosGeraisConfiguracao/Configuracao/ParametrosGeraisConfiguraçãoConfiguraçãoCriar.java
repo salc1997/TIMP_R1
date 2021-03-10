@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
 public class ParametrosGeraisConfiguraçãoConfiguraçãoCriar extends TestBaseCristhian {
@@ -32,7 +34,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriar extends TestBaseCrist
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -52,9 +54,11 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriar extends TestBaseCrist
 	
 	@Test(priority = 2)
 	public void criarConfiguracao() {
+		ArrayList<Boolean> sucesso = parametrosGeraisConfiguraçãoCriarPO.criarConfiguracao();
+		System.out.println("veamos: "+sucesso);
 		
-		parametrosGeraisConfiguraçãoCriarPO.criarConfiguracao();
-
-		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), subniveis);
+		}
 	}
 }

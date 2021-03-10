@@ -58,7 +58,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluir"></class>
-			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa.java"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa"></class>
 		</classes>
 	</test>
 	

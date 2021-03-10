@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParanetrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioLixeiraExcluirdefinitivamenteCriarAbasPO;
 
 import org.testng.annotations.BeforeClass;

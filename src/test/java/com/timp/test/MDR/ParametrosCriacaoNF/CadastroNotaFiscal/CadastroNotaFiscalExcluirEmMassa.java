@@ -16,48 +16,38 @@ import org.testng.annotations.AfterClass;
 public class CadastroNotaFiscalExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	CadastroNotaFiscalExcluirEmMassaPO  cadastroNotaFiscalExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  cadastroNotaFiscalExcluirEmMassaPO = new CadastroNotaFiscalExcluirEmMassaPO();
-  }
+	CadastroNotaFiscalExcluirEmMassaPO cadastroNotaFiscalExcluirEmMassaPO;
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
- /* @Test(priority = 0)
-  public void ingresar() {
-	  loginTC.login();
-  }
-  
-  @Test(priority = 1)
-  public void mdrEntrar() {
-	 accesarMDR.acessarMDR();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		cadastroNotaFiscalExcluirEmMassaPO = new CadastroNotaFiscalExcluirEmMassaPO();
+	}
 
-  }*/
-  
-  @Test()
-  public void criar() {
-	  
-	  loginTC.login();
-	  accesarMDR.acessarMDR();
-	boolean sucesso = cadastroNotaFiscalExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
-  }
-  
-  
-  @Test(dependsOnMethods = "criar")
-  public void excluirEmMassa() {
-	  
-	
-	boolean sucesso2 = cadastroNotaFiscalExcluirEmMassaPO.cadastroNotaFiscalExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
-  }
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void Criar() {
+
+		loginTC.login();
+		accesarMDR.acessarMDR();
+		boolean sucesso = cadastroNotaFiscalExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
+		sleep(1000);
+
+	}
+
+	@Test(dependsOnMethods = "Criar")
+	public void ExcluirEmMassa() {
+
+		boolean sucesso2 = cadastroNotaFiscalExcluirEmMassaPO.cadastroNotaFiscalExcluirEmMassa();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 }

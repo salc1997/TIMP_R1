@@ -36,18 +36,13 @@ public class RegrasDeEscrituraçãoEditar extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
+	@Test()
+	public void editar() {
+		
+		loginTC.login();
+		
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void criar() {
 		
 		ArrayList<Boolean> sucesso = regrasDeEscrituraçãoEditarPO.editar();
 		

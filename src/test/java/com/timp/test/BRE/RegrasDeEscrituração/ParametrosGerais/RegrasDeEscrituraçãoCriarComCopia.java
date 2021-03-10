@@ -35,24 +35,28 @@ public class RegrasDeEscrituraçãoCriarComCopia extends TestBaseSteven{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
+	@Test()
+	public void criarcomCopia() {
+		
+		loginTC.login();
+		
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void criar() {
 		
 		
 		boolean sucesso = regrasDeEscrituraçãoCriarComCopiaPO.criar();
 		
 		assertTrue(sucesso, Criar);
 		
+
+		
+		
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+	
 		
 		ArrayList<Boolean> sucesso2 = regrasDeEscrituraçãoCriarComCopiaPO.excluir();
 		
@@ -62,4 +66,6 @@ public class RegrasDeEscrituraçãoCriarComCopia extends TestBaseSteven{
 		
 		
 	}
+	
+	
 }

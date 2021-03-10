@@ -220,7 +220,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	nomeVCalculado.sendKeys("TA-TESTE 2");
-	sleep(3000);
+	sleep(4000);
 	
 	formula.sendKeys("MID(\"Cód. material (ED)\", 1, 2)");
 	sleep(3000);

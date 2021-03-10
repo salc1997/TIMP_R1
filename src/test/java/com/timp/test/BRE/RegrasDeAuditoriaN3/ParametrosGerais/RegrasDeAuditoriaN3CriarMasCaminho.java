@@ -28,21 +28,14 @@ public class RegrasDeAuditoriaN3CriarMasCaminho extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void criarComCaminho() {
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void criar() {
+		
 		boolean sucesso = regrasDeAuditoriaN3CriarMasCaminhoPO.criar();
 		assertTrue(sucesso, Criar);
 	}

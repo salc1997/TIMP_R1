@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite"  preserve-order="true">
-	<test name="Tabela 01 - Categorias De Trabalhadores" >
-		<classes>
-			<!--MDr6-->			
-			<!-- Tabela 01 - Categorias De Trabalhadores -->		
+<suite name="Suite" preserve-order="true">
+
+
+<test name="Tabela 01 - Categorias De Trabalhadores" >
+		<classes>		
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresEditar"></class>			
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizar"></class>
@@ -12,8 +12,10 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresExcluirMassa"></class>
 		</classes>
 	</test>
+	
 	<test name="Tabela 02 - Financiamento De Apos Esp" >
 		<classes>
+<<<<<<< HEAD
 			<!-- Tabela 02 - Financiamento De Apos Esp -->		
 			
 			</classes>
@@ -22,19 +24,30 @@
 	<test name="Prueba2" >
 		<classes>
 			<!-- Tabela 02 - Financiamento De Apos Esp -->
+=======
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspExcluir"></class>
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela02.FinanciamientoDeAposEspExcluiMassa"></class>			
 		</classes>
 	</test>
 	
+<<<<<<< HEAD
 	<test name="Prueba3" >
 		<classes>
 			<!-- Tabela 03 - Natureza Das Rubricas -->
 			
+=======
+	
+	<test name="Tabela 03 - Natureza Das Rubricas" >
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasVisualizar"></class>
@@ -42,43 +55,80 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela03.NaturezaDasRubricasExluirMassa"></class>
 		</classes>
 	</test>
+<<<<<<< HEAD
 	<test name="Prueba4" >
 		<classes>
 			<!-- Tabela 04 - Codigos E Aliq. De FPRAS -->
 			
+=======
+	
+	<test name="Tabela 04 - Codigos E Aliq. De FPRAS" >
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluirMassa"></class>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		</classes>
 	</test>
+<<<<<<< HEAD
 	<test name="Prueba5" >
 		<classes>
 			<!--Tabela 05 - Tipos de Registro-->
 		
+=======
+	
+	
+	<test name="Tabela 05 - Tipos de Registro" >
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroExcluirMassa"></class>
 		</classes>
+<<<<<<< HEAD
 	</test>	
 	<test name="Prueba6" >
 		<classes>
 			<!--Tabela 06 - Paises-->
+=======
+	</test>
+	
+	
+	<test name="Tabela 06 - Paises" >
+		<classes>
+			
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela06.PaisesExcluirMassa"></class>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		</classes>
 	</test>
+<<<<<<< HEAD
 
 	<test name="Prueba7" >
 		<classes>
 			<!--Tabela 07 - Tipos de Dependentes-->	
+=======
+	
+	
+	<test name="Tabela 07 - Tipos de Dependentes">
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesVisualizar"></class>
@@ -86,50 +136,114 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela07.TiposDeDependentesExcluirMassa"></class>
 		</classes>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 	</test>
 	
+<<<<<<< HEAD
 	<test name="Prueba8" >
 		<classes>	
 			<!--Siscoserv > Pais/Moeda-->
+=======
+	
+	<test name="Pais/Moeda">
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 
 			<class name="com.timp.test.MDR.Siscoserv.PaisMoeda.PaisMoedaExcluirEmMassa"></class>
 			
 		</classes>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 	</test>
+<<<<<<< HEAD
 	<test name="Prueba9" >
 		<classes>		
 			<!--Siscoserv > RegistroRAS-->
+=======
+	
+	<test name="Siscoserv > RegistroRAS">
+		<classes>	
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.Siscoserv.RegistroRAS.RegistroRASExcluirEmMassa"></class>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		</classes>
 	</test>
 	
+<<<<<<< HEAD
 	<test name="Prueba10" >
 		<classes>	
 			<!--Siscoserv > RegistroRP-->
+=======
+	
+	<test name="Siscoserv > RegistroRP">
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.Siscoserv.RegistroRP.RegistroRPExcluirEmMassa"></class>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		</classes>
 	</test>
+<<<<<<< HEAD
 	<test name="Prueba11" >
 		<classes>	
 			<!--Atividades Para Tributacao > Tipos De Servicos -->
+=======
+	
+	
+	<test name="Atividades Para Tributacao > Tipos De Servicos">
+		<classes>
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa"></class>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 		</classes>
+<<<<<<< HEAD
 	</test> 
 	<test name="Prueba12" >
 		<classes>	
 			<!--Valor Adicionado > Confrontacao-->
+=======
+	</test>
+	
+	<test name="Valor Adicionado > Confrontacao">
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfratacaoCriar"></class>
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoDetalhes"></class>
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoEditar"></class>
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoVisualizar"></class>
 			<class name="com.timp.test.MDR.ValorAdicionado.Confrontacao.ConfrontacaoExcluir"></class>
 		</classes>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 	</test>
+<<<<<<< HEAD
 
 	<test name="Prueba13" >
 		<classes>		
 			<!--Taxas De Conversao-->
 
+=======
+	
+	<test name="Taxas De Conversao">
+		<classes>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar"></class>
 			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoEditar"></class>
 			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoVisualizar"></class>			
@@ -138,6 +252,7 @@
 			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa"></class>
 		</classes>
 	</test>
+	
 	<test name="Thin Capitalization > Subcapitalizacao">
 		<classes>
 			<!--Thin Capitalization > Subcapitalizacao-->			
@@ -147,6 +262,7 @@
 			<class name="com.timp.test.MDR.ThinCapitalization.Subcapitalizacao.SubcapitalizacaoExcluirEmMassa"></class>
 		</classes>	
 	</test> <!-- PruebaTestNG -->
+<<<<<<< HEAD
 		
 	</test> 
 	<test name="Prueba14" >
@@ -161,6 +277,14 @@
 			</classes>
 	
 	</test> 
+=======
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 
 
+<<<<<<< HEAD
 </suite> <!-- Suite -->
+=======
+
+
+</suite> 
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git

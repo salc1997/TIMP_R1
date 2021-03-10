@@ -56,7 +56,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> editar() {
+	public ArrayList<Boolean> criar() {
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -120,7 +120,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Cópia de - Prueba QA Visualiza"));
+		sucesso.add(nome.contains("Cópia de - Teste QA PREUBA 007"));
 		
 		System.out.println("nuevo Copia: "+id2);
 		idInserir2(id2);

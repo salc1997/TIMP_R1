@@ -92,8 +92,8 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBaseFernando {
 		sleep(1000);
 		acao.click();
 		sleep(6000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(configuracoes);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
 		
@@ -131,8 +131,8 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBaseFernando {
 		sleep(1000);
 		acao.click();
 		sleep(6000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(configuracoes);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
 		String caminho1D1 = caminho1E.getText();

@@ -31,6 +31,7 @@ public class SubcapitalizacaoExcluirEmMassa extends TestBaseEliel {
 		driver.close();
 	}
 
+	@Test()
 	public void criar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

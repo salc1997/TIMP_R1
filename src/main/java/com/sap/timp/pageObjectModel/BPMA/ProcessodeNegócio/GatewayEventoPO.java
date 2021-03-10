@@ -3,6 +3,7 @@ package com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -200,6 +201,15 @@ public class GatewayEventoPO extends TestBaseCristhian {
 		
 		seleccionarTodo.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement btnEditar = driver.findElement(By.xpath("//*[@class=\"edit-btn\"]"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].setAttribute('style', 'display:none')", btnEliminar);
+		js.executeScript("arguments[0].setAttribute('x', '12')", btnEditar);
+		js.executeScript("arguments[0].setAttribute('y', '-30')", btnEditar);
+		sleep(1000);
 		gatewayEventoEdit.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

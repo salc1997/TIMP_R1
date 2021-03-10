@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+>>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
+=======
+      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="Visualizar"/>
+=======
+          <include name="criar"/>
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
+=======
+      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

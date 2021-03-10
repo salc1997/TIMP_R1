@@ -30,7 +30,8 @@ public class TaxasDeConversaoExcluirEmMassa extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-
+	
+	@Test()
 	public void criar() {		
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

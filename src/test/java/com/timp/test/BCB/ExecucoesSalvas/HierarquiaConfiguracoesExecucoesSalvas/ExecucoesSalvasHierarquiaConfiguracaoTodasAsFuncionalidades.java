@@ -64,8 +64,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		sleep(2000);
 		boolean sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.criarConfiguracao();
 		assertTrue(sucesso, Criar);
-		
-		//hierarquiaExecucoesTodasAsFuncionalidadesPO.configurarConfiguracao();	
+	
 	}
 	
 	@Test(priority = 4)

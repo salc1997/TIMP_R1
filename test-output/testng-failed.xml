@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasAdicionarLink">
+      <class name="com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP">
         <methods>
-          <include name="irCalendario"/>
+          <include name="EnviarLixeria"/>
           <include name="afterClass"/>
-          <include name="BPMAEntrar2"/>
           <include name="beforeClass"/>
-          <include name="Lixeria"/>
         </methods>
-      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasAdicionarLink -->
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

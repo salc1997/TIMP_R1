@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriaDeTrabalhadorDetalhes">
+      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
         <methods>
-          <include name="detalhe"/>
           <include name="beforeClass"/>
+          <include name="criar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela01.CategoriaDeTrabalhadorDetalhes -->
+      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

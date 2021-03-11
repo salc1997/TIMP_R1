@@ -105,7 +105,7 @@ public class TabelaDeCodigoEClasseParaQuadroCriarPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigo.sendKeys("582937");
+		codigo.sendKeys("000937");
 		
 		sleep(2000);
 		

@@ -100,10 +100,10 @@ public class CodigoContribuicaoSocialApuradaCriarPO extends TestBaseSteven{
 		tributoO.click();
 		sleep(2000);
 		
-		codigo.sendKeys("5565");
-		descricao.sendKeys("Teste codigo de Contribuição Social Apurada 55");
+		codigo.sendKeys("0303");
+		descricao.sendKeys("Teste codigo de Contribuição Social Apurada 04");
 
-		codigo.sendKeys("55");
+		codigo.sendKeys("03");
 		descricao.sendKeys("Teste codigo de Contribuição ");
 
 		

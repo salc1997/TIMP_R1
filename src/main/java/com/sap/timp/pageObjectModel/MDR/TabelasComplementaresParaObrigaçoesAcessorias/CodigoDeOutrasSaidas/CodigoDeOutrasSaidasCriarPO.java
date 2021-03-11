@@ -94,11 +94,11 @@ public class CodigoDeOutrasSaidasCriarPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodesaidas.sendKeys("5570937");
+		codigodesaidas.sendKeys("0070937");
 		
 		sleep(2000);
 		
-		descricaodeoutrassaidas.sendKeys("Teste5 55");
+		descricaodeoutrassaidas.sendKeys("Teste00");
 		
 		sleep(2000);
 		

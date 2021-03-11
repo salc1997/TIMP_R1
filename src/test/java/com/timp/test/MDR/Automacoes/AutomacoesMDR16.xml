@@ -8,6 +8,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluirEmMassa"></class>
 		</classes>
@@ -20,6 +21,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluirEmMassa"></class>
 		</classes>
@@ -31,6 +33,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadEnCatTrabExcluirMassa"></class>
 		</classes>

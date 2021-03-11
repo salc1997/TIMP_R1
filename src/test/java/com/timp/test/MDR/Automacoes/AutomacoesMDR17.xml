@@ -15,6 +15,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela08.ClassificacaoTributariaExcluirMassa"></class>
 		</classes>

@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.TabelasExternas.TabelasExternasEditarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class TabelasExternasEditar extends TestBaseMassiel{
@@ -26,19 +29,17 @@ public class TabelasExternasEditar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+		driver.close();
   }
-  @Test(priority = 0)
-  public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void Editar() {
-		tabelasExternasEditarPO.Editar();
+		loginTC.login();
+		acessarBREPO.acessarBRE();
+		
+		boolean sucesso = tabelasExternasEditarPO.Editar();
+
+		assertTrue(sucesso, Criar);
 	}
 }

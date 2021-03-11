@@ -13,9 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.ParametrosGerais.CalculoDeTributosDetalhesPO;
 
-public class CalculoDeTributosDetalhes extends TestBaseEliel{
-
-	
+public class CalculoDeTributosDetalhes extends TestBaseEliel{	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CalculoDeTributosDetalhesPO calculoDeTributosDetalhesPO;
@@ -33,24 +31,13 @@ public class CalculoDeTributosDetalhes extends TestBaseEliel{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		ArrayList<Boolean> sucesso = calculoDeTributosDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
-		}
-		
+		}		
 	}
-	
-	
 }

@@ -1,8 +1,5 @@
 package com.sap.timp.pageObjectModel.BCB;
 
-
-
-
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;

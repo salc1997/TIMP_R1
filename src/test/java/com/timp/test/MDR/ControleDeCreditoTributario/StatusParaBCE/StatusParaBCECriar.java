@@ -27,21 +27,9 @@ public class StatusParaBCECriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
-	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
 
 	@Test()
 	public void criar() {

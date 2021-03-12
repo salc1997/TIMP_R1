@@ -53,12 +53,15 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseSteven {
 		
 		invisibilityOfElementOverlay();
 		
-		siguiente.click();
+		String idRegistro = idObter3();
 		
+		siguiente.click();
+		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
 		invisibilityOfElementOverlay();
 		
 		
-		String idRegistro = idObter3();
+		
+
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

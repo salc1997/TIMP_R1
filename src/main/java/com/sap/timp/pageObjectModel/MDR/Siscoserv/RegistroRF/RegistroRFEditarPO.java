@@ -32,15 +32,16 @@ public class RegistroRFEditarPO extends TestBaseMassiel{
 	}
 	
 	public boolean Editar() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		sleep(2000);
 		
 		siscoserv.click();
+		sleep(2000);
 	    invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		registrorp.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

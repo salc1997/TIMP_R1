@@ -69,7 +69,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseCri
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);	
 		
-		String idRegistro = idObter1();
+		//String idRegistro = idObter1();
+		String idRegistro = idObter("idBCT-ConfiguracaoDeBancoDeCreditoTributario");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

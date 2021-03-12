@@ -37,13 +37,13 @@ public class CadastroDeObrasExcluirEmMassaPO extends TestBaseKenssy {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Empresa \"]")
 	public WebElement inpuEmpresa;
 	
-	@FindBy(xpath = "//li[@id=\"1000\"]")
+	@FindBy(xpath = "//li[contains(@class, \"list-item\")][2]")
 	public WebElement Empresa;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Filial \"]")
 	public WebElement Filial;
 	
-	@FindBy(xpath = "//li[@id=\"0001\"]")
+	@FindBy(xpath = "//li[contains(@class, \"list-item\")][2]")
 	public WebElement NumeroFilial;
 	
 	@FindBy(xpath = "//button[@id=\"filterButtonStr\"]")
@@ -64,13 +64,13 @@ public class CadastroDeObrasExcluirEmMassaPO extends TestBaseKenssy {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Fornecedor \"]")
 	public WebElement fornecedor;
 	
-	@FindBy(xpath = "//li[@id=\"0000300007\"]")
+	@FindBy(xpath = "//li[contains(@class, \"list-item\")][2]")
 	public WebElement numfornecedor;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher CNPJ \"]")
 	public WebElement CNPJ;
 	
-	@FindBy(xpath = "//li[@id=\"02946485000136\"]")
+	@FindBy(xpath = "//li[contains(@class, \"list-item\")][2]")
 	public WebElement numCNPJ;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Nome \"]")

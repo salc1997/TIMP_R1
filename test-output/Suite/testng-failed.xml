@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Regra de Escrituração(failed)">
-=======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Regras de Auditoria N4(failed)">
->>>>>>> refs/remotes/origin/Kenssy
+  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; PainelBCE(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular">
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoExecutar">
         <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="executar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoExecutar -->
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosEditar">
+        <methods>
+          <include name="afterClass"/>
           <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular -->
-    </classes>
-  </test> <!-- Regra de Escrituração(failed) -->
-=======
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa">
-        <methods>
-          <include name="excluirEnMassa"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa -->
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente">
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosEditar -->
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir">
         <methods>
+          <include name="excluir"/>
           <include name="beforeClass"/>
-          <include name="lixeira"/>
-          <include name="excluirDefinitivo"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN4.ParametrosGerais.RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente -->
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir -->
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar -->
     </classes>
-  </test> <!-- Regras de Auditoria N4(failed) -->
->>>>>>> refs/remotes/origin/Kenssy
+  </test> <!-- Banco De Credito Extemporaneo > PainelBCE(failed) -->
 </suite> <!-- Failed suite [Suite] -->

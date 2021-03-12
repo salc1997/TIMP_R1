@@ -88,7 +88,8 @@ public class ExecutadosEditarPO extends TestBaseMassiel{
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistroConfiguracaoEExecucao = idObter3();
+		//String idRegistroConfiguracaoEExecucao = idObter3();
+		String idRegistroConfiguracaoEExecucao = idObter("idResultadoDeExecucaco");
 		System.out.println("");
 		System.out.println("ID Registro Excecutado: " + idRegistroConfiguracaoEExecucao);
 		

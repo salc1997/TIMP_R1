@@ -338,7 +338,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		idInserir1(idultimo);
+		idInserir("idBCT-ConfiguracaoDeBancoDeCreditoTributario",idultimo);
+		//idInserir1(idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);

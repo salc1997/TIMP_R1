@@ -111,6 +111,7 @@
 			<!-- Tabelas de Apoio E-SOCIAL > Tabela 21 - Natureza Juridica -->
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa"></class>

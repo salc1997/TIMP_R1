@@ -378,7 +378,7 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		
 		
 		String valor = driver.findElement(By.xpath("//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[3]/div/div[1]/div[2]/div[9]/div/div[2]")).getText();
-		
+		System.out.println("valor del final: "+valor);
 		sucesso.add(valor.equals(valorAjuste));
 		
 		System.out.println("");

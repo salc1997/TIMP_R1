@@ -2,11 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 =======
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
     <classes>
@@ -243,11 +247,17 @@
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosEditar -->
       <class name="com.timp.test.MDR.AtividadesParaTributacao.AtividadeDeTributacaoXFornecedor.AtividadeDeTributacaoXFornecedorCriar">
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
           <include name="criar"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa -->
 >>>>>>> refs/heads/Cristhian
@@ -326,6 +336,9 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

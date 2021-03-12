@@ -163,6 +163,7 @@
 		
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosExcluirMassa"></class>

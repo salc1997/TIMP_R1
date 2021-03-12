@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
 =======
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
 <testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
@@ -16,8 +20,11 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-03-10T21:15:01Z" name="Default suite" finished-at="2021-03-10T21:17:50Z" duration-ms="169485">
 =======
@@ -39,8 +46,12 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-03-11T23:37:15Z" name="Default suite" finished-at="2021-03-11T23:39:43Z" duration-ms="147710">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-03-10T21:15:01Z" name="Default test" finished-at="2021-03-10T21:17:50Z" duration-ms="169485">
       <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados">
@@ -74,9 +85,15 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-03-11T23:37:15Z" name="Default test" finished-at="2021-03-11T23:39:43Z" duration-ms="147710">
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:37:15Z" name="beforeClass" finished-at="2021-03-11T23:37:29Z" duration-ms="13920" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados@5552768b]" started-at="2021-03-10T21:15:17Z" name="login" finished-at="2021-03-10T21:15:24Z" duration-ms="7440" status="PASS">
 =======
@@ -95,6 +112,9 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:37:29Z" name="login" finished-at="2021-03-11T23:37:36Z" duration-ms="6882" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -107,6 +127,7 @@
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir -->
 =======
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-03-10T15:54:55Z" name="BPMAEntrar" finished-at="2021-03-10T15:55:11Z" duration-ms="16042" status="PASS">
 =======
@@ -124,8 +145,12 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="acessarTCC()[pri:1, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:37:36Z" name="acessarTCC" finished-at="2021-03-11T23:37:53Z" duration-ms="16696" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- BPMAEntrar -->
         <test-method signature="criar()[pri:1, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-03-10T15:55:11Z" name="criar" finished-at="2021-03-10T15:56:24Z" duration-ms="72916" status="FAIL">
@@ -143,8 +168,13 @@
         <test-method signature="Executar()[pri:2, instance:com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar@babafc2]" started-at="2021-03-05T05:38:26Z" name="Executar" finished-at="2021-03-05T05:39:44Z" duration-ms="77674" status="FAIL">
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- acessarTCC -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:37:53Z" name="criar" finished-at="2021-03-11T23:39:43Z" duration-ms="110161" status="FAIL">
+>>>>>>> refs/remotes/origin/Kenssy
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
+<<<<<<< HEAD
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -154,8 +184,20 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: a057ea5e63a5223bf1ee134fd7a526ab
 *** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}]]>
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()="110 - Auto de infração"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IN7IV9K5', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54033b7c216cc4eae593b47a8ffa31bf
+*** Element info: {Using=xpath, value=//div[text()="110 - Auto de infração"]}]]>
+>>>>>>> refs/remotes/origin/Kenssy
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"icon-right")][2]"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -165,6 +207,17 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: a057ea5e63a5223bf1ee134fd7a526ab
 *** Element info: {Using=xpath, value=//div[contains(@class,"icon-right")][2]}
+=======
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()="110 - Auto de infração"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IN7IV9K5', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54033b7c216cc4eae593b47a8ffa31bf
+*** Element info: {Using=xpath, value=//div[text()="110 - Auto de infração"]}
+>>>>>>> refs/remotes/origin/Kenssy
 at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -182,10 +235,19 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
+<<<<<<< HEAD
 at com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.GatewayEventoPO.criar(GatewayEventoPO.java:380)
 at com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento.criar(GatewayEvento.java:55)
+=======
+at com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriarPO.criar(ConfiguracaoEExecucaoCriarPO.java:218)
+at com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar.criar(ConfiguracaoEExecucaoCriar.java:54)
+>>>>>>> refs/remotes/origin/Kenssy
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+>>>>>>> refs/remotes/origin/Kenssy
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -216,6 +278,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-03-10T15:56:24Z" name="afterClass" finished-at="2021-03-10T15:56:24Z" duration-ms="1" status="PASS">
 =======
@@ -227,9 +290,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@1356d4d4]" started-at="2021-03-05T12:10:56Z" name="afterClass" finished-at="2021-03-05T12:10:56Z" duration-ms="0" status="PASS">
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:39:43Z" name="afterClass" finished-at="2021-03-11T23:39:43Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
 >>>>>>> refs/heads/Fernando
@@ -323,6 +391,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

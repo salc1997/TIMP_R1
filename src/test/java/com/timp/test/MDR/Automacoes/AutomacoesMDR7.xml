@@ -187,6 +187,9 @@
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBeneficiosEditar">
 			</class>
 			<class 
+			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBeneficiosDetalhes">
+			</class>
+			<class 
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosVisualizar">
 			</class>
 			<class 

@@ -51,6 +51,10 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver.get(tc2);
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/Kenssy
 	   return driver;
 	}
 	//PARA PODER EJECUTAR TA-518

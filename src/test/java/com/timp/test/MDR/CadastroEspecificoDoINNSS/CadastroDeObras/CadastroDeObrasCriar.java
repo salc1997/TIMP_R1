@@ -31,7 +31,7 @@ public class CadastroDeObrasCriar extends TestBaseMassiel{
 	
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	  //driver.close();
   }
 	
   

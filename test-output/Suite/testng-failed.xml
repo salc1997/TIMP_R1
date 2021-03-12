@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Automações MDR 10(failed)">
 =======
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <test thread-count="5" name="TipoDeTributoContaContabil(failed)">
@@ -19,7 +23,11 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; PainelBCE(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -244,9 +252,20 @@
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir -->
       <class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar">
+=======
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoExecutar">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="executar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoExecutar -->
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosEditar">
+        <methods>
+          <include name="afterClass"/>
           <include name="editar"/>
+<<<<<<< HEAD
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar -->
@@ -534,13 +553,35 @@
 <<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular">
 >>>>>>> refs/heads/Cristhian
-        <methods>
+=======
           <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosEditar -->
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir">
+>>>>>>> refs/remotes/origin/Kenssy
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoEditar -->
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosExcluir -->
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosVisualizar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
+<<<<<<< HEAD
   </test> <!-- Centralização > Estorno de Crédito(failed) -->
   <test thread-count="5" name="Centralização &gt; Fator de Crecimento do CIAP(failed)">
     <classes>
@@ -815,4 +856,7 @@
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+  </test> <!-- Banco De Credito Extemporaneo > PainelBCE(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 </suite> <!-- Failed suite [Suite] -->

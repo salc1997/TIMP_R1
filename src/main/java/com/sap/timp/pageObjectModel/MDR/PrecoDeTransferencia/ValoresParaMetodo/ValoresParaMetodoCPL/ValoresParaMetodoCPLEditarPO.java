@@ -127,10 +127,9 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		
 		String valor = datainicial.getAttribute("value");
-
 		String enviar = dataanterior();
 
 		datainicial.clear();
@@ -144,14 +143,13 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseEliel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 
 		driver.navigate().refresh();
 		sleep(2000);
 		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(2000);		
 		
 		String novoTexto=datainicial.getAttribute("value");
 		
@@ -168,6 +166,7 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseEliel{
 		datainicial.sendKeys(valor);
 		
 		sleep(2000);
+		
 		
 		gravar.click();
 		sleep(2000);

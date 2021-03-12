@@ -53,7 +53,8 @@ public class ExecutadosExcluirPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		//String idRegistro = idObter4();
+		String idRegistro = idObter("idResultadoDeExecucaco");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		

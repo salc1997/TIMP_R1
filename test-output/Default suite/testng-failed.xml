@@ -1,41 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-=======
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
->>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
-=======
-      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
->>>>>>> refs/heads/Fernando
+      <class name="com.timp.test.DFG.SPED.REINF.SPEDREINFfuncionalidades">
         <methods>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="Visualizar"/>
-=======
           <include name="criar"/>
->>>>>>> refs/heads/Fernando
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
-=======
-      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP">
-        <methods>
-          <include name="EnviarLixeria"/>
-          <include name="afterClass"/>
+          <include name="informacao"/>
           <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="executar"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP -->
->>>>>>> refs/remotes/origin/Yessy
+      </class> <!-- com.timp.test.DFG.SPED.REINF.SPEDREINFfuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -28,6 +28,7 @@ public class DashboardLixeiraExcluirEmMassa extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,14 +42,14 @@ public class DashboardLixeiraExcluirEmMassa extends TestBaseMassiel {
 	}
 
 	@Test(priority = 2)
-	public void excluir() {
+	public void criar() {
 		boolean sucesso = dashboardLixeiraExcluirEmMassaPO.comparar();
-
 		assertTrue(sucesso, Criar);
-
-		boolean sucesso2 = dashboardLixeiraExcluirEmMassaPO.ExcluirMasas();
-
-		assertTrue(sucesso2, Criar);
 	}
 
+	@Test(priority = 3)
+	public void excluirEmMassa() {
+		boolean sucesso2 = dashboardLixeiraExcluirEmMassaPO.ExcluirMasas();
+		assertTrue(sucesso2, Criar);
+	}
 }

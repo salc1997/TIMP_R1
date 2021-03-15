@@ -3,17 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.SPED.REINF.SPEDREINFfuncionalidades">
+      <class name="com.timp.test.DFG.SPED.ESocial.Eventos.S1250.S1250AlterarDadosDoEvento">
         <methods>
-          <include name="criar"/>
-          <include name="informacao"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="executar"/>
-          <include name="visualizar"/>
+          <include name="enviarSeleccionado"/>
+          <include name="gravarAN3"/>
+          <include name="atualizarEstructuras"/>
+          <include name="criarNovoEvento"/>
+          <include name="gravar"/>
+          <include name="visualizarCriarAN3"/>
           <include name="afterClass"/>
+          <include name="informacao"/>
+          <include name="visualizar"/>
+          <include name="execucao"/>
+          <include name="editar"/>
+          <include name="visualizarActualizacoes"/>
+          <include name="enviarPendencias"/>
+          <include name="informacao2"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.SPED.REINF.SPEDREINFfuncionalidades -->
+      </class> <!-- com.timp.test.DFG.SPED.ESocial.Eventos.S1250.S1250AlterarDadosDoEvento -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

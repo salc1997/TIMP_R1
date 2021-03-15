@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.DFG.SPED.ESocial.S1210;
+package com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1200;
 
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
  
 
-public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
+public class S1200GerarDadosDoEventoPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement home;
@@ -38,16 +38,16 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-events\"]")
 	public WebElement eventos;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210\"]")
-	public WebElement s1210;
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1200\"]")
+	public WebElement s1200;
 
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-s1210\"]/ul/li/div/span[text()=\"Gerar Dados do Evento\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"Gerar Dados do Evento\"]")
 	public WebElement gerarDados;
 	
 	@FindBy(xpath = "//div[@class=\"fileFolders-wrapper\"]")
 	public WebElement raizArquivos;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"S1210 - Insert\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"S1200 - Insert\"]")
 	public WebElement insert;
 	
 	//ECD
@@ -55,7 +55,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"inputs layout-select\"]/div/div[2]")
 	public WebElement leiauteS1000;
 	
-	@FindBy(xpath = "//li[contains(text(),\"7615\")]")
+	@FindBy(xpath = "//li[contains(text(),\"7577\")]")
 	public WebElement leiauteS1000O;
 
 	
@@ -127,7 +127,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar Leiaute\")]")
 	public WebElement leiauteV;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Versão Leiaute\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"VersÃ£o Leiaute\")]")
 	public WebElement versaoV;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Tributo\")]")
@@ -320,7 +320,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 
-	@FindBy(xpath = "//button[text()=\"Não\"]")
+	@FindBy(xpath = "//button[text()=\"NÃ£o\"]")
 	public WebElement nao;
 	
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
@@ -353,7 +353,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
 	public WebElement limparFiltros;
 	
-	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
+	@FindBy(xpath = "//span[text()=\"Filtros AvanÃ§ados\"]")
 	public WebElement filtrosAvancados;
 	
 	@FindBy(xpath = "//div[@id=\"detail-description\"][1]/div[2]/div")
@@ -377,11 +377,11 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Enviar selecionado\"]")
 	public WebElement selecionado;
 	
-	@FindBy(xpath = "//span[text()=\"Enviar pendências\"]")
+	@FindBy(xpath = "//span[text()=\"Enviar pendÃªncias\"]")
 	public WebElement pendencias;
 	
 	
-	public S1210GerarDadosDoEventoPO() {
+	public S1200GerarDadosDoEventoPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -402,7 +402,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		s1210.click();
+		s1200.click();
 		
 		invisibilityOfElementOverlay();
 		
@@ -608,7 +608,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		String idRegistro = idObter1();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"InformaÃ§Ã£o\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -635,7 +635,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		String nomeV1 = nome.getAttribute("value");
 		String descricaoV1 = descricao.getAttribute("value");
 		System.out.println("Texto Visualizar Nome: " +nomeI1);
-		System.out.println("Texto Visualizar Descrição: " +descricaoV1);
+		System.out.println("Texto Visualizar DescriÃ§Ã£o: " +descricaoV1);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -831,7 +831,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		sleep(100);
 		regra.click();
 		sleep(1000);
-		String idRegra = "2408";
+		String idRegra = "2348";
 		
 		WebElement regraO = driver.findElement(By.xpath("//div[@id=\""+idRegra+"\"]/div/label/span"));
 		regraO.click();
@@ -865,7 +865,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
-		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar Atualizações\"]"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar AtualizaÃ§Ãµes\"]"));
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -972,7 +972,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		
 		invisibilityOfElementOverlay();
 		
-		s1210.click();
+		s1200.click();
 
 		invisibilityOfElementOverlay();
 		
@@ -991,17 +991,17 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		
 		filtrosAvancados.click();
 		sleep(3000);
-		waitExpectXpath("//input[contains(@placeholder,\"Inscrição\")]");
+		waitExpectXpath("//input[contains(@placeholder,\"InscriÃ§Ã£o\")]");
 		limparFiltros.click();
 		
 		invisibilityOfElementOverlay();
 		System.out.println("-----------------------------------------VerificaÃ§Ã£o Insert------------------------------------------");
-		String idB = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[3]/div")).getText();
-		String eventIDB = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[4]/div")).getText();
-		String empresaB = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[5]/div")).getText();
-		String tipoInscricaoB = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[6]/div")).getText();
-		String numeroInscricaoB = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[7]/div")).getText();
-		String versaoProcesoB = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[8]/div")).getText();
+		String idB = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[3]/div")).getText();
+		String eventIDB = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[4]/div")).getText();
+		String empresaB = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[5]/div")).getText();
+		String tipoInscricaoB = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[6]/div")).getText();
+		String numeroInscricaoB = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[7]/div")).getText();
+		String versaoProcesoB = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[8]/div")).getText();
 		
 		System.out.println(idB);
 		System.out.println(eventIDB);
@@ -1014,8 +1014,8 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		
 		
 		
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[1]/div"));
-		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\"12\" and @class=\"tr\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[1]/div"));
+		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\"8\" and @class=\"tr\"]/div[1]/div/div[2]/ul/li/span[text()=\"InformaÃ§Ã£o\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -1056,7 +1056,7 @@ public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
 		String url = driver.getCurrentUrl();
 		
 		
-		WebElement flag = driver.findElement(By.xpath("//div[@data-id=\"12\"]/div[2]/label/span"));
+		WebElement flag = driver.findElement(By.xpath("//div[@data-id=\"8\"]/div[2]/label/span"));
 		
 		flag.click();
 		sleep(1000);

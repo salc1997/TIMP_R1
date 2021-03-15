@@ -1,4 +1,4 @@
-package com.timp.test.DFG.SPED.ESocial.S1210;
+package com.timp.test.DFG.SPED.ESocial.Eventos.S1200;
 
 import static org.testng.Assert.assertTrue;
 
@@ -15,24 +15,24 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI.EFDICMSIPICriarPO;
-import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.S1200.S1200GerarDadosDoEventoPO;
-import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.S1210.S1210GerarDadosDoEventoPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1200.S1200AlterarDadosDoEventoPO;
+import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1200.S1200GerarDadosDoEventoPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
 import com.timp.test.DFG.AcessarDFG;
 
 
-public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
+public class S1200AlterarDadosDoEventoCriar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO; 
-	S1210GerarDadosDoEventoPO s1210GerarDadosDoEventoPO;
+	S1200AlterarDadosDoEventoPO s1200AlterarDadosDoEventoPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
-		s1210GerarDadosDoEventoPO = new S1210GerarDadosDoEventoPO();
+		s1200AlterarDadosDoEventoPO = new S1200AlterarDadosDoEventoPO();
 	}
 
 	@AfterClass
@@ -53,7 +53,7 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	
 	@Test(priority = 2)
 	public void criarS1200() {
-		ArrayList<Boolean> sucesso = s1210GerarDadosDoEventoPO.criar();
+		ArrayList<Boolean> sucesso = s1200AlterarDadosDoEventoPO.criar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
@@ -63,14 +63,14 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	
 	@Test(priority = 3)
 	public void editarS1200() {
-		boolean sucesso = s1210GerarDadosDoEventoPO.editar();
+		boolean sucesso = s1200AlterarDadosDoEventoPO.editar();
 		assertTrue(sucesso, Editar);
 
 	}
 
 	@Test(priority = 4)
 	public void informacaoS1200() {
-		ArrayList<Boolean> sucesso = s1210GerarDadosDoEventoPO.informacao();
+		ArrayList<Boolean> sucesso = s1200AlterarDadosDoEventoPO.informacao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
@@ -81,7 +81,7 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	
 	@Test(priority = 5)
 	public void visualizarS1200() {
-		ArrayList<Boolean> sucesso = s1210GerarDadosDoEventoPO.visualizar();
+		ArrayList<Boolean> sucesso = s1200AlterarDadosDoEventoPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
@@ -92,7 +92,7 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	
 	@Test(priority = 6)
 	public void executarS1200() {
-		boolean sucesso = s1210GerarDadosDoEventoPO.ExecucaoS1000();
+		boolean sucesso = s1200AlterarDadosDoEventoPO.ExecucaoS1000();
 		assertTrue(sucesso, Editar);
 
 	}
@@ -100,7 +100,7 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	@Test(priority = 7)
 	public void visualizarAtualizacoesBlocoApuracao() {
 		
-		ArrayList<Boolean> sucesso = s1210GerarDadosDoEventoPO.visualizarActualizacoes();
+		ArrayList<Boolean> sucesso = s1200AlterarDadosDoEventoPO.visualizarActualizacoes();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
@@ -112,7 +112,7 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	@Test(priority = 8)
 	public void arquivosVerificar() {
 		
-		ArrayList<Boolean> sucesso = s1210GerarDadosDoEventoPO.verificarArquivosRaiz();
+		ArrayList<Boolean> sucesso = s1200AlterarDadosDoEventoPO.verificarArquivosRaiz();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
@@ -123,7 +123,7 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	@Test(priority = 9)
 	public void verificarInsert() {
 		
-		ArrayList<Boolean> sucesso = s1210GerarDadosDoEventoPO.verificacaoInsert();
+		ArrayList<Boolean> sucesso = s1200AlterarDadosDoEventoPO.verificacaoInsert();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
@@ -135,7 +135,7 @@ public class S1210GerarDadosDoEventoCriar extends TestBaseSteven{
 	@Test(priority = 10)
 	public void enviarInsert() {
 		
-		ArrayList<Boolean> sucesso = s1210GerarDadosDoEventoPO.enviarInsert();
+		ArrayList<Boolean> sucesso = s1200AlterarDadosDoEventoPO.enviarInsert();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);

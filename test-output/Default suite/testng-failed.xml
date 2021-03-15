@@ -2,17 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 =======
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados">
@@ -36,8 +43,16 @@
 >>>>>>> refs/heads/Cristhian
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar">
+>>>>>>> refs/heads/Fernando
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          <include name="beforeClass"/>
+          <include name="CartaoIndicador"/>
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
           <include name="filtros"/>
 =======
@@ -89,6 +104,7 @@
           <include name="abrirSubnivel3"/>
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados -->
 =======
@@ -146,6 +162,9 @@
         </methods>
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

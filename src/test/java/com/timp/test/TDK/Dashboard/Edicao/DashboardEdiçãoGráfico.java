@@ -28,6 +28,7 @@ public class DashboardEdiçãoGráfico extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
 =======
 <<<<<<< HEAD
@@ -22,8 +23,12 @@
 >>>>>>> refs/heads/Cristhian
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-03-10T21:15:01Z" name="Default suite" finished-at="2021-03-10T21:17:50Z" duration-ms="169485">
@@ -49,8 +54,12 @@
 =======
   <suite started-at="2021-03-11T23:37:15Z" name="Default suite" finished-at="2021-03-11T23:39:43Z" duration-ms="147710">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-03-12T21:24:04Z" name="Default suite" finished-at="2021-03-12T21:25:57Z" duration-ms="113056">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-03-10T21:15:01Z" name="Default test" finished-at="2021-03-10T21:17:50Z" duration-ms="169485">
@@ -90,9 +99,15 @@
       <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:37:15Z" name="beforeClass" finished-at="2021-03-11T23:37:29Z" duration-ms="13920" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2021-03-12T21:24:04Z" name="Default test" finished-at="2021-03-12T21:25:57Z" duration-ms="113056">
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@20f5281c]" started-at="2021-03-12T21:24:04Z" name="beforeClass" finished-at="2021-03-12T21:24:15Z" duration-ms="11013" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados@5552768b]" started-at="2021-03-10T21:15:17Z" name="login" finished-at="2021-03-10T21:15:24Z" duration-ms="7440" status="PASS">
@@ -115,8 +130,12 @@
 =======
         <test-method signature="login()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:37:29Z" name="login" finished-at="2021-03-11T23:37:36Z" duration-ms="6882" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@20f5281c]" started-at="2021-03-12T21:24:15Z" name="login" finished-at="2021-03-12T21:24:22Z" duration-ms="6783" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- Excluir -->
@@ -126,7 +145,10 @@
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir -->
 =======
+=======
+>>>>>>> refs/heads/Fernando
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento@301eda63]" started-at="2021-03-10T15:54:55Z" name="BPMAEntrar" finished-at="2021-03-10T15:55:11Z" duration-ms="16042" status="PASS">
@@ -148,8 +170,12 @@
 =======
         <test-method signature="acessarTCC()[pri:1, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar@20ca951f]" started-at="2021-03-11T23:37:36Z" name="acessarTCC" finished-at="2021-03-11T23:37:53Z" duration-ms="16696" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@20f5281c]" started-at="2021-03-12T21:24:22Z" name="acessarTDK" finished-at="2021-03-12T21:24:40Z" duration-ms="18850" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- BPMAEntrar -->
@@ -369,13 +395,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+        </test-method> <!-- acessarTDK -->
+        <test-method signature="cartaoindicadroexcluir()[pri:2, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@20f5281c]" started-at="2021-03-12T21:24:40Z" name="cartaoindicadroexcluir" finished-at="2021-03-12T21:25:57Z" duration-ms="76382" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- EnviarLixeria -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP@5524cca1]" started-at="2021-03-10T20:05:15Z" name="afterClass" finished-at="2021-03-10T20:05:15Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- cartaoindicadroexcluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir@20f5281c]" started-at="2021-03-12T21:25:57Z" name="afterClass" finished-at="2021-03-12T21:25:57Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP -->
 >>>>>>> refs/remotes/origin/Yessy
@@ -394,6 +430,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorExcluir -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

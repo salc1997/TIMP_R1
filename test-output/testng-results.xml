@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98896" started-at="2021-03-09T02:24:53Z" finished-at="2021-03-09T02:26:32Z">
+  <suite name="Default suite" duration-ms="362560" started-at="2021-03-11T17:15:19Z" finished-at="2021-03-11T17:21:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98896" started-at="2021-03-09T02:24:53Z" finished-at="2021-03-09T02:26:32Z">
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir@501edcf1]" name="beforeClass" is-config="true" duration-ms="16509" started-at="2021-03-09T02:24:53Z" finished-at="2021-03-09T02:25:10Z">
+    <test name="Default test" duration-ms="362560" started-at="2021-03-11T17:15:19Z" finished-at="2021-03-11T17:21:22Z">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@78b729e6]" name="beforeClass" is-config="true" duration-ms="16996" started-at="2021-03-11T17:15:19Z" finished-at="2021-03-11T17:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Excluir()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir@501edcf1]" name="Excluir" duration-ms="82296" started-at="2021-03-09T02:25:10Z" finished-at="2021-03-09T02:26:32Z">
+        <test-method status="PASS" signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@78b729e6]" name="ingresar" duration-ms="7252" started-at="2021-03-11T17:15:36Z" finished-at="2021-03-11T17:15:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Excluir -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir@501edcf1]" name="afterClass" is-config="true" duration-ms="58" started-at="2021-03-09T02:26:32Z" finished-at="2021-03-09T02:26:32Z">
+        </test-method> <!-- ingresar -->
+        <test-method status="PASS" signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@78b729e6]" name="scancEntrar" duration-ms="27135" started-at="2021-03-11T17:15:43Z" finished-at="2021-03-11T17:16:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method status="FAIL" signature="manutencaoCriarLancamentoVisualizacaoAnexo()[pri:2, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@78b729e6]" name="manutencaoCriarLancamentoVisualizacaoAnexo" duration-ms="311068" started-at="2021-03-11T17:16:10Z" finished-at="2021-03-11T17:21:22Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="report-wrapper"][5]/div[2]/div[4]/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e2a96dc9b9b0afd066ca68ac322a2f5
+*** Element info: {Using=xpath, value=//div[@class="report-wrapper"][5]/div[2]/div[4]/div/div[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="report-wrapper"][5]/div[2]/div[4]/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LITOSOLER', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e2a96dc9b9b0afd066ca68ac322a2f5
+*** Element info: {Using=xpath, value=//div[@class="report-wrapper"][5]/div[2]/div[4]/div/div[2]}
+at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO.llenarDatosTC2(RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO.java:722)
+at com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO.manutencaoCriarLancamentoVisualizacaoAnexo(RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO.java:793)
+at com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo.manutencaoCriarLancamentoVisualizacaoAnexo(RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manutencaoCriarLancamentoVisualizacaoAnexo -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo@78b729e6]" name="afterClass" is-config="true" duration-ms="73" started-at="2021-03-11T17:21:22Z" finished-at="2021-03-11T17:21:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluir -->
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

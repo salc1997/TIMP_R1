@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo">
         <methods>
           <include name="beforeClass"/>
-          <include name="Visualizar"/>
+          <include name="manutencaoCriarLancamentoVisualizacaoAnexo"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

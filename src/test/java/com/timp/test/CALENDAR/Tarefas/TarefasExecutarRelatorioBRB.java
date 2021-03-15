@@ -9,16 +9,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
-import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.AbrirCalendarioPO;
 import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasExecutarRelatorioBRBPO;
 
-public class TarefasExecutarRelatorioBRB extends TestBaseEliel{
-	
+public class TarefasExecutarRelatorioBRB extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
 	TarefasExecutarRelatorioBRBPO tarefasExecutarRelatorioBRBPO;
-
-	
 
 	@BeforeClass
 	public void beforeClass() {
@@ -39,7 +36,7 @@ public class TarefasExecutarRelatorioBRB extends TestBaseEliel{
 		loginTC.login();
 
 	}
-	
+
 	@Test(priority = 2)
 	public void acessarCalendar() {
 		acessarCalendarPO.acessarCalendar();
@@ -50,9 +47,9 @@ public class TarefasExecutarRelatorioBRB extends TestBaseEliel{
 	public void CalendarEntrar() {
 
 		boolean sucesso = tarefasExecutarRelatorioBRBPO.abrirCalendario();
-		
+
 		assertTrue(sucesso, "Não foi executado");
 
 	}
-  
+
 }

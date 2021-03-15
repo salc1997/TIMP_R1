@@ -45,23 +45,23 @@ public class LeiautesExecuçãoFuncionalidades extends TestBaseCristhian {
 		boolean sucesso = leiautesExecuçãoFuncionalidadesPO.criar();
 		assertTrue(sucesso, Criar);		
 		
-//		boolean sucesso2 = leiautesExecuçãoFuncionalidadesPO.editar();
-//		assertTrue(sucesso2, Editar);	
-//		
-//		ArrayList<Boolean> sucesso3 = leiautesExecuçãoFuncionalidadesPO.informacao();
-//		
-//		for (int i = 0; i < sucesso3.size(); i++) {
-//			assertTrue(sucesso3.get(i), visualizaçar);
-//		}
-//		
-//		ArrayList<Boolean> sucesso4 = leiautesExecuçãoFuncionalidadesPO.visualizar();
-//		
-//		for (int i = 0; i < sucesso4.size(); i++) {
-//			assertTrue(sucesso4.get(i), visualizaçar);
-//		}
-//		
-//		boolean sucesso5 = leiautesExecuçãoFuncionalidadesPO.executar();
-//		assertTrue(sucesso5);	
+	/*	boolean sucesso2 = leiautesExecuçãoFuncionalidadesPO.editar();
+		assertTrue(sucesso2, Editar);	
+		
+		ArrayList<Boolean> sucesso3 = leiautesExecuçãoFuncionalidadesPO.informacao();
+		
+		for (int i = 0; i < sucesso3.size(); i++) {
+			assertTrue(sucesso3.get(i), visualizaçar);
+		}
+		
+		ArrayList<Boolean> sucesso4 = leiautesExecuçãoFuncionalidadesPO.visualizar();
+		
+		for (int i = 0; i < sucesso4.size(); i++) {
+			assertTrue(sucesso4.get(i), visualizaçar);
+		}
+		
+		boolean sucesso5 = leiautesExecuçãoFuncionalidadesPO.executar();
+		assertTrue(sucesso5);	*/
 
 	}
 }

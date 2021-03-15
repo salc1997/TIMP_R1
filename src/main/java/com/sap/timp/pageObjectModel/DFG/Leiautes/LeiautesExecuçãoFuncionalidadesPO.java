@@ -207,7 +207,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement arquivosRaiz;
 	
-	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[1]/div[2]/div[3]/span")
+	@FindBy(xpath = "//div[@class=\"tabSettings-wrapper\"]/div[1]/div/div/div[1]/div")
 	public WebElement configuracaoRaiz;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[3]/div/div[1]/div/div/div[1]/div/div[3]/span")
@@ -1054,9 +1054,9 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		siguiente.click();
-		sleep(3000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		
@@ -1065,7 +1065,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseCristhian{
 		idInserir3(ultimoId);
 		
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
-		int ultimoIdACD = Integer.valueOf(ultimoId);
+		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
 		boolean sucesso = false;
 		
 		if (ultimoIdACD < ultimoIdDCD) {

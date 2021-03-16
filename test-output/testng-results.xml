@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="20626" started-at="2021-03-16T00:01:44Z" finished-at="2021-03-16T00:02:04Z">
+=======
+  <suite started-at="2021-03-15T22:31:35Z" name="Default suite" finished-at="2021-03-15T22:33:11Z" duration-ms="95894">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="20626" started-at="2021-03-16T00:01:44Z" finished-at="2021-03-16T00:02:04Z">
       <class name="com.timp.test.ADM.AcessarADM">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.AcessarADM@78b729e6]" name="beforeClass" is-config="true" duration-ms="12922" started-at="2021-03-16T00:01:44Z" finished-at="2021-03-16T00:01:57Z">
+=======
+    <test started-at="2021-03-15T22:31:35Z" name="Default test" finished-at="2021-03-15T22:33:11Z" duration-ms="95894">
+      <class name="com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:31:35Z" name="beforeClass" finished-at="2021-03-15T22:31:50Z" duration-ms="15320" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:1, instance:com.timp.test.ADM.AcessarADM@78b729e6]" name="login" duration-ms="6475" started-at="2021-03-16T00:01:57Z" finished-at="2021-03-16T00:02:03Z">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:31:50Z" name="login" finished-at="2021-03-15T22:32:00Z" duration-ms="9530" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="AcessarADM()[pri:2, instance:com.timp.test.ADM.AcessarADM@78b729e6]" name="AcessarADM" duration-ms="1104" started-at="2021-03-16T00:02:03Z" finished-at="2021-03-16T00:02:04Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -85,14 +104,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:32:00Z" name="acessarTDK" finished-at="2021-03-15T22:32:21Z" duration-ms="21792" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- acessarTDK -->
+        <test-method signature="filtro()[pri:2, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:32:21Z" name="filtro" finished-at="2021-03-15T22:33:11Z" duration-ms="49218" status="PASS">
+>>>>>>> refs/heads/Fernando
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- AcessarADM -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.ADM.AcessarADM@78b729e6]" name="afterClass" is-config="true" duration-ms="105" started-at="2021-03-16T00:02:04Z" finished-at="2021-03-16T00:02:04Z">
+=======
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:33:11Z" name="afterClass" finished-at="2021-03-15T22:33:11Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.ADM.AcessarADM -->
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

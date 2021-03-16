@@ -2,6 +2,7 @@ package com.timp.test.TDK.Dashboard.Edicao;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,11 @@ public class DashboardTabelaExecutar extends TestBaseEliel {
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardTabelaExecutarPO = new DashboardTabelaExecutarPO();
+	}
+	
+	@AfterClass
+	public void afterClass() {
+		 driver.close();
 	}
 
 	@Test(priority = 0)

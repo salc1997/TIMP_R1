@@ -114,110 +114,110 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-//		btnUltimaPagina.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		//conta o numero de linhas
-//		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-//		String id = "0";
-//		
-//		if(rows > 0) {
-//			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-//		}	
-//		
-//		System.out.println("ID: " + id);			
-//		sleep(2000);
-//		
-//		btnNovoEvento.click();
-//		sleep(1000);
-//		
-//		waitExpectElement(nome);
-//		nome.sendKeys("TESTE AUTOMATIZADO");
-//		sleep(1000);
-//		
-//		descricao.sendKeys("TESTE AUTOMATIZADO");
-//		sleep(1000);
-//		
-//		cboLeiaute.click();
-//		sleep(1000);
-//		opcionCombo.click();
-//		sleep(1000);
-//		
-//		cboVersaoLeiaute.click();
-//		sleep(1000);
-//		opcionCombo.click();
-//		sleep(1000);
-//		
-//		actionsMoveToElementElement(inputDataInicioVigencia);
-//		cboTributo.click();
-//		sleep(1000);
-//		opcionTributo.click();
-//		sleep(1000);
-//		
-//		attributeToBeXpath("//div[contains(@class, \"company-select\")]/div", "class", "base-MultipleSelect3 required");
-//		cboEmpresa.click();
-//		sleep(1000);
-//		opcionEmpresa.click();
-//		closeSelectTypeCheckbox(cboEmpresa);
-//		sleep(1000);
-//		
-//		attributeToBeXpath("//div[contains(@class, \"uf-select\")]/div", "class", "base-MultipleSelect3 required");
-//		cboUf.click();
-//		sleep(1000);
-//		opcionUf.click();
-//		closeSelectTypeCheckbox(cboUf);
-//		sleep(1000);
-//		
-//		attributeToBeXpath("//div[contains(@class, \"branch-select\")]/div", "class", "base-MultipleSelect3 required");
-//		cboFilial.click();
-//		sleep(1000);
-//		opcionFilial.click();
-//		closeSelectTypeCheckbox(cboFilial);
-//		sleep(1000);		
-//		
-//		inputDataInicioVigencia.click();
-//		inputDataInicioVigencia.sendKeys("01/01/2013");
-//		sleep(1000);
-//		
-//		btnSalvar.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		btnUltimaPagina.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-//		
-//		boolean sucesso = false;
-//		  
-//		if(rows == 0) {
-//			return sucesso = true; 
-//		}
-//		  
-//		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-//		idInserir4(idB);
-//		  
-//		sleep(2000); 
-//		System.out.println("ID Primer registro: " + id); 
-//		System.out.println("ID Ultimo registro: " + idB);
-//		  
-//		double idD = Integer.valueOf(id); 
-//		double idBD = Integer.valueOf(idB);
-//		  
-//		//compara pra ver se o novo id criado é realmente o ultimo
-//		  
-//		if (idBD > idD) { 
-//			sucesso = true; 
-//		}else { 
-//			sucesso = false; 
-//		}
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//conta o numero de linhas
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		String id = "0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		}	
+		
+		System.out.println("ID: " + id);			
+		sleep(2000);
+		
+		btnNovoEvento.click();
+		sleep(1000);
+		
+		waitExpectElement(nome);
+		nome.sendKeys("TESTE AUTOMATIZADO");
+		sleep(1000);
+		
+		descricao.sendKeys("TESTE AUTOMATIZADO");
+		sleep(1000);
+		
+		cboLeiaute.click();
+		sleep(1000);
+		opcionCombo.click();
+		sleep(1000);
+		
+		cboVersaoLeiaute.click();
+		sleep(1000);
+		opcionCombo.click();
+		sleep(1000);
+		
+		actionsMoveToElementElement(inputDataInicioVigencia);
+		cboTributo.click();
+		sleep(1000);
+		opcionTributo.click();
+		sleep(1000);
+		
+		attributeToBeXpath("//div[contains(@class, \"company-select\")]/div", "class", "base-MultipleSelect3 required");
+		cboEmpresa.click();
+		sleep(1000);
+		opcionEmpresa.click();
+		closeSelectTypeCheckbox(cboEmpresa);
+		sleep(1000);
+		
+		attributeToBeXpath("//div[contains(@class, \"uf-select\")]/div", "class", "base-MultipleSelect3 required");
+		cboUf.click();
+		sleep(1000);
+		opcionUf.click();
+		closeSelectTypeCheckbox(cboUf);
+		sleep(1000);
+		
+		attributeToBeXpath("//div[contains(@class, \"branch-select\")]/div", "class", "base-MultipleSelect3 required");
+		cboFilial.click();
+		sleep(1000);
+		opcionFilial.click();
+		closeSelectTypeCheckbox(cboFilial);
+		sleep(1000);		
+		
+		inputDataInicioVigencia.click();
+		inputDataInicioVigencia.sendKeys("01/01/2013");
+		sleep(1000);
+		
+		btnSalvar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		boolean sucesso = false;
 		  
-		return true;	
+		if(rows == 0) {
+			return sucesso = true; 
+		}
+		  
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
+		idInserir4(idB);
+		  
+		sleep(2000); 
+		System.out.println("ID Primer registro: " + id); 
+		System.out.println("ID Ultimo registro: " + idB);
+		  
+		double idD = Integer.valueOf(id); 
+		double idBD = Integer.valueOf(idB);
+		  
+		//compara pra ver se o novo id criado é realmente o ultimo
+		  
+		if (idBD > idD) { 
+			sucesso = true; 
+		}else { 
+			sucesso = false; 
+		}
+		  
+		return sucesso;	
 	}
 	
 	public ArrayList<Boolean> informacao() {

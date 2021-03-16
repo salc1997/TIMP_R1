@@ -18,23 +18,22 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseCristhia
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN1ParâmetrosgeraisSimularPO regrasdeAuditoriaN1ParâmetrosgeraisSimularPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN1ParâmetrosgeraisSimularPO = new RegrasdeAuditoriaN1ParâmetrosgeraisSimularPO();
-  }
+	}
 
-  
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  @Test(priority = 0)
+	@Test(priority = 0)
 	public void login() {
 		loginTC.login();
 
@@ -46,6 +45,7 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseCristhia
 		acessarBREPO.acessarBRE();
 
 	}
+
 	@Test(priority = 2)
 	public void editar() {
 
@@ -53,6 +53,5 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseCristhia
 		assertTrue(sucesso, Editar);
 
 	}
-
 
 }

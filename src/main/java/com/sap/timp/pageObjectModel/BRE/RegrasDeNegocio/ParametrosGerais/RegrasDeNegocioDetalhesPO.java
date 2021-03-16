@@ -67,7 +67,7 @@ public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegrasDeNegocioCriar");
 		//String idRegistro = "1326";
 		//String idRegistro = "1289"; tc2
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

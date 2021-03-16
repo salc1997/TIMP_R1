@@ -100,8 +100,8 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 	public WebElement opcFilialTP1;
 	
 	
-	@FindBy(xpath = "//*[@id=\"right-content\"]/div/div[3]/div[4]/button/span[2]")
-	public WebElement aplicar;
+	@FindBy(xpath = "//span[text()=\"Pesquisar\"]")
+	public WebElement pesquisar;
 	
 	
 	public ConfiguraçãoeExecuçãoFiltrosavançadosPO() {
@@ -167,7 +167,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 		}
 		
 		
-		aplicar.click();
+		pesquisar.click();
 		sleep(1000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -204,7 +204,9 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 			icms = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[2]/div")).getText();
 			sucesso.add(data.get(0).equals(icms));
 		}
-		
+	
+		System.out.println(sucesso);
+		sleep(3000);
 		return sucesso;
 		
 		

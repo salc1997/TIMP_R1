@@ -77,7 +77,7 @@ public class PaisesCriarPO extends TestBaseEliel{
 		sleep(1000);
 		
 		
-		nome.sendKeys("Brasil");
+		nome.sendKeys("Honduras");
 		sleep(1000);
 		
 		String data = fechaActual();

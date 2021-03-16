@@ -23,19 +23,19 @@ public class DeXParaContraPartidaCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"field-item-1\"]/div/div/div[2]")
 	public WebElement cboItem;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"103031\"]")
 	public WebElement opcItem;
 	
 	@FindBy(xpath = "//div[@id=\"field-item-counterpart-1\"]/div/div/div[2]")
 	public WebElement cboContraPartida;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"1\"]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"103031\"]")
 	public WebElement opcContraPartida;
 	
 	@FindBy(xpath = "//div[@id=\"field-item-documentType-1\"]/div/div/div[2]")
 	public WebElement cboTipoDocumento;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"XG\"]")
 	public WebElement opcTipoDocumento;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")

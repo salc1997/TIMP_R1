@@ -7,11 +7,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoExcecutarPO;
 
-public class PainelBCEConfiguracaoEExecucaoExecutar extends TestBaseEliel {
+public class PainelBCEConfiguracaoEExecucaoExecutar extends TestBaseKenssy {
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
@@ -19,7 +20,7 @@ public class PainelBCEConfiguracaoEExecucaoExecutar extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		painelBCEConfiguracaoEExecucaoExcecutarPO = new PainelBCEConfiguracaoEExecucaoExcecutarPO();
@@ -27,23 +28,15 @@ public class PainelBCEConfiguracaoEExecucaoExecutar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void executar() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
 		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-		boolean sucesso = painelBCEConfiguracaoEExecucaoExcecutarPO.criar();
+		
+		boolean sucesso = painelBCEConfiguracaoEExecucaoExcecutarPO.executar();
 		assertTrue(sucesso, "Não foi possível executar");
 	}
 }

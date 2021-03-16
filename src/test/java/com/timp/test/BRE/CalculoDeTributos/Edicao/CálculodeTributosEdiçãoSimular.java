@@ -27,7 +27,6 @@ public class CálculodeTributosEdiçãoSimular extends TestBaseCristhian {
 		cálculodeTributosEdiçãoSimularPO = new CálculodeTributosEdiçãoSimularPO();
 	}
 
-
 	@AfterClass
 	public void afterClass() {
 		driver.close();

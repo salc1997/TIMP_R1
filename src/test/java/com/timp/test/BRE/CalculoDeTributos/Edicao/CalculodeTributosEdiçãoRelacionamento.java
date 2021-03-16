@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.Edicao.CalculodeTributosEdiçãoRelacionamentoPO;
 
-public class CalculodeTributosEdiçãoRelacionamento extends TestBaseFernando{
+public class CalculodeTributosEdiçãoRelacionamento extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CalculodeTributosEdiçãoRelacionamentoPO calculodeTributosEdiçãoRelacionamentoPO;
@@ -23,7 +23,6 @@ public class CalculodeTributosEdiçãoRelacionamento extends TestBaseFernando{
 		acessarBREPO = new AcessarBREPO();
 		calculodeTributosEdiçãoRelacionamentoPO = new CalculodeTributosEdiçãoRelacionamentoPO();
 	}
-
 
 	@AfterClass
 	public void afterClass() {

@@ -27,22 +27,14 @@ public class PainelBCEExecutadosEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void editar() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
 		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
-	public void criar() {
+		
 		boolean sucesso = painelBCEExecutadosEditarPO.criar();
 		assertTrue(sucesso, Editar);
 	}

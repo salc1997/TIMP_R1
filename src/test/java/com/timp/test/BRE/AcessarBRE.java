@@ -40,7 +40,7 @@ public class AcessarBRE extends TestBaseMassiel {
 	}
 
 	@Test(priority = 2)
-	public void MDREntrar() {
+	public void BREEntrar() {
 
 		boolean sucesso = acessarBREPO.acessarBRE();
 		assertTrue(sucesso, "Elemento não Econtrado");

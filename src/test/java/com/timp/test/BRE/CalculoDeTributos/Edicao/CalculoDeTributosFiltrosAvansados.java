@@ -15,18 +15,17 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CalculoDeTributosFiltrosAvansados extends TestBaseMassiel{
+public class CalculoDeTributosFiltrosAvansados extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	CalculoDeTributosFiltrosAbansadosPO  calculoDeTributosFiltrosAbansadosPO;
-
+	CalculoDeTributosFiltrosAbansadosPO calculoDeTributosFiltrosAbansadosPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		calculoDeTributosFiltrosAbansadosPO  = new CalculoDeTributosFiltrosAbansadosPO();
+		calculoDeTributosFiltrosAbansadosPO = new CalculoDeTributosFiltrosAbansadosPO();
 	}
 
 	@AfterClass
@@ -48,5 +47,5 @@ public class CalculoDeTributosFiltrosAvansados extends TestBaseMassiel{
 		for (int i = 0; i < tributo.size(); i++) {
 			assertTrue(tributo.get(i), Filtros);
 		}
-	}	
+	}
 }

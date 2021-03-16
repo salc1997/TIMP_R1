@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseKenssy;
 
-public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseEliel {
+public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseKenssy {
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
 	public WebElement bancoCreditoExtemporaneo;
@@ -80,7 +81,7 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseEliel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean criar() {
+	public boolean executar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		bancoCreditoExtemporaneo.click();
@@ -91,10 +92,20 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		//ultimo idexecutado
-		String idexecutado = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
-		System.out.println("ID Ultimo Registro em Executados: " + idexecutado);
+		
+		String idexecutado = "0"; // Ultimo ID antes de crear un registro
+		
+		if(rows > 0) {
+			idexecutado = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+			System.out.println("ID Ultimo Registro: " + idexecutado);
+		}
+		
+//		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+//		//ultimo idexecutado
+//		String idexecutado = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+//		System.out.println("ID Ultimo Registro em Executados: " + idexecutado);
 		
 		configuracaoEExecucao.click();
 		sleep(2000);
@@ -106,7 +117,8 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		//String idRegistro = idObter1();
+		String idRegistro = idObter("idBCEPainelBCEConfiguracaoEExecucaco");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -179,8 +191,10 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		waitExpectElement(executados);
+		sleep(3000);
 	
+		sleep(4000);
 		executados.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -194,7 +208,8 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseEliel {
 		
 		String idRegistronovo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 			System.out.println("ID Ultimo Registro despues de crear: " + idRegistronovo);
-		idInserir2(idRegistronovo);
+			idInserir("idBCEPainelBCEConfiguracaoEExecucacoExecutados",idRegistronovo);
+		//idInserir2(idRegistronovo);
 		
 		boolean sucesso = false;
 		

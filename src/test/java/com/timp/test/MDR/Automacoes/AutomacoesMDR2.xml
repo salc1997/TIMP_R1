@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
 
-	<test name="Detalhe Tipo Tributo">
+<test name="Detalhe Tipo Tributo">
 
 		<classes>
 		
@@ -113,6 +113,7 @@
 		</classes>
 	
 	</test>
+
 	
 	<test name="Livros Fiscais > Parametros Para Livro ICMS ST">
 
@@ -163,6 +164,8 @@
 			</classes>
 	
 	</test>
+	
+	
 
 	<test name="Parâmetros de Contabilização > Contas Default Para Extemporaneo ">
 

@@ -122,7 +122,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		opcEmpresa.click();
 		sleep(1000);
 //		aplicar.click();
-//		sleep(2000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -165,9 +165,9 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		opcEmpresa.click();
 		sleep(1000);
 //		aplicar.click();
-//		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -206,11 +206,11 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		sleep(1000);
 		String dataText = opcEmpresa.getText();
 		opcEmpresa.click();
-		sleep(1000);
-//		aplicar.click();
-//		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		//aplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -224,7 +224,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 							+ rows + "]/div[8]/div"))
 					.getText();
 			System.out.println(textFiltroData + " data Filtro");
-			sucesso.add(dataText.equals(textFiltroData));
+			sucesso.add(dataText.contains(textFiltroData));
 
 			f = f + 1;
 		}
@@ -251,7 +251,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		opcEmpresa.click();
 		sleep(1000);
 //		aplicar.click();
-//		sleep(2000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -294,7 +294,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		opcEmpresa.click();
 		sleep(1000);
 //		aplicar.click();
-//		sleep(2000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -22,6 +22,10 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseFernando {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div/div/div[1]")
+	public WebElement branch;
+	
+	
 	public ConfiguracaoEExecucaoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -32,13 +36,14 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseFernando {
 		sleep(1000);
 		
 		configuracaoEExecucao.click();
+		sleep(2000);
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("idConfiguracaoEExecucaco");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -49,10 +54,12 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseFernando {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(branch);
 		sleep(2000);
 		
 		sleep(5000);
 		
+
 		String empresaString = driver.findElement(By.xpath("//div[@id=\"company\"]/div/div/div/div/div/div[1]")).getText().trim();
 		String ufString = driver.findElement(By.xpath("//div[@id=\"uf\"]/div/div/div/div/div/div[1]")).getText().trim();
 		String filialString = driver.findElement(By.xpath("//div[@id=\"branch\"]/div/div/div/div/div/div[1]")).getText().trim();
@@ -66,7 +73,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseFernando {
 		String tipoString = driver.findElement(By.xpath("//div[@id=\"type\"]/div/div/div/input")).getAttribute("value").trim();
 		
 		System.out.println("");
-		System.out.println("Datos de Visualizar");
+		System.out.println("***************Datos de Visualizar************");
 		System.out.println("Empresa: " + empresaString);
 		System.out.println("UF: " + ufString);
 		System.out.println("Filial: " + filialString);
@@ -93,9 +100,11 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseFernando {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(branch);
 		sleep(2000);
 		
 		sleep(5000);
+	
 		
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"company\"]/div/div/div/div/div/div[1]")).getText().trim();
 		String ufString1 = driver.findElement(By.xpath("//div[@id=\"uf\"]/div/div/div/div/div/div[1]")).getText().trim();
@@ -110,7 +119,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseFernando {
 		String tipoString1 = driver.findElement(By.xpath("//div[@id=\"type\"]/div/div/div/input")).getAttribute("value").trim();
 		
 		System.out.println("");
-		System.out.println("Datos de Editar");
+		System.out.println("*************Datos de Editar*************");
 		System.out.println("Empresa: " + empresaString1);
 		System.out.println("UF: " + ufString1);
 		System.out.println("Filial: " + filialString1);

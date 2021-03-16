@@ -28,7 +28,7 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassa extends TestBaseKens
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	  //driver.close();
   }
 
   

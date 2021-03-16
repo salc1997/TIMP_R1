@@ -51,26 +51,13 @@
 		
 			<!-- Incentivos Fiscais > Incentivos Fiscais -->
 
-			<class
-				name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar"></class>
-
-			<class
-				name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisEditar"></class>
-
-			<class
-				name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisDetalles"></class>
-
-			<class
-				name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar"></class>
-
-			<class
-				name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluir"></class>
-
-			<class
-				name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirEmMassa"></class>
-
-			<class
-				name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisFiltroId"></class>
+			<class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisCriar"></class>
+			<class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisEditar"></class>
+			<class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisDetalles"></class>
+			<class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar"></class>
+			<class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluir"></class>
+			<class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisExcluirEmMassa"></class>
+			<class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisFiltroId"></class>
 				
 		</classes>
 
@@ -83,49 +70,12 @@
 
 			<!-- Saldo Inicial -->
 
-			<class
-				name="com.timp.test.MDR.SaldoInicial.SaldoInicialCriar"></class>
-
-			<class
-				name="com.timp.test.MDR.SaldoInicial.SaldoInicialEditar"></class>
-
-			<class
-				name="com.timp.test.MDR.SaldoInicial.SaldoInicialDetalhe"></class>
-
-			<class
-				name="com.timp.test.MDR.SaldoInicial.SaldoInicialVisualizar"></class>
-
-			<class
-				name="com.timp.test.MDR.SaldoInicial.SaldoInicialExcluir"></class>
-
-			<class
-				name="com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan"></class>
-
-		</classes>
-
-	</test>
-	
-	
-	<test name="Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento">
-
-		<classes>
-
-			<!-- Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento -->
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoCriar"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoVisualizar"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluir"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa"></class>
+			<class name="com.timp.test.MDR.SaldoInicial.SaldoInicialCriar"></class>
+			<class name="com.timp.test.MDR.SaldoInicial.SaldoInicialEditar"></class>
+			<class name="com.timp.test.MDR.SaldoInicial.SaldoInicialDetalhe"></class>
+			<class name="com.timp.test.MDR.SaldoInicial.SaldoInicialVisualizar"></class>
+			<class name="com.timp.test.MDR.SaldoInicial.SaldoInicialExcluir"></class>
+			<class name="com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan"></class>
 
 		</classes>
 
@@ -133,30 +83,6 @@
 	
 	
 	
-	<test name="Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS">
-	
-		<classes>
-	
-			<!-- Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS -->
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASCriar"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASVisualizar"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASExcluir"></class>
-
-			<class
-				name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASExcluirEnMasa"></class>
-
-		</classes>
-
-	</test>
 	
 	
 	
@@ -166,17 +92,10 @@
 
 			<!-- Thin Capitalization > Empréstimos -->
 
-			<class
-				name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar"></class>
-
-			<class
-				name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar"></class>
-
-			<class
-				name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir"></class>
-
-			<class
-				name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa"></class>
+			<class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar"></class>
+			<class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar"></class>
+			<class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir"></class>
+			<class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa"></class>
 
 		</classes>
 
@@ -190,14 +109,9 @@
 
 			<!-- ICMS-ST Transporte -->
 
-			<class
-				name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar"></class>
-
-			<class
-				name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteExcluirEmMassa"></class>
-
-			<class
-				name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID"></class>
+			<class name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar"></class>
+			<class name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteExcluirEmMassa"></class>
+			<class name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroID"></class>
 
 		</classes>
 
@@ -245,6 +159,41 @@
 	</test>
 	
 	
+	<test name="Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento">
+
+		<classes>
+
+			<!-- Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento -->
+
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa"></class>
+
+		</classes>
+
+	</test>
+	
+	
+	
+	<test name="Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS">
+	
+		<classes>
+	
+			<!-- Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS -->
+
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASDetalhes"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASExcluirEnMasa"></class>
+
+		</classes>
+
+	</test>
+	
 	
 	<test name="Tabelas de Apoio E-SOCIAL > Tabela 23 - Fatores de Risco">
 
@@ -253,13 +202,10 @@
 			<!-- Tabelas de Apoio E-SOCIAL > Tabela 23 - Fatores de Risco -->
 
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoCriar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoEditar"></class>
-
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoVisualizar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluir"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa"></class>
 
 		</classes>
@@ -274,13 +220,10 @@
 			<!-- Tabelas de Apoio E-SOCIAL	> Tabela 24 - Codificação de Ac. de Trab. -->
 
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabCriar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabEditar"></class>
-
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabVisualizar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluir"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluiMassa"></class>
 
 		</classes>
@@ -295,15 +238,10 @@
 			<!-- Tabelas de Apoio E-SOCIAL	> Tabela 27 - Códigos de Lotação -->
 
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoCriar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoDetalhes"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoVisualizar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoExcluir"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoExcluirEmMasa"></class>
 		</classes>
 
@@ -317,7 +255,6 @@
 			<!-- Tabelas de Apoio E-SOCIAL	> Tabela 28 - Dados de RAT -->
 
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATCriar"></class>
-
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa"></class>
 
 		</classes>
@@ -331,17 +268,11 @@
 			<!-- Taxas de Atualização >	Alíquotas de Taxa de Atualização -->
 
 			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoCriar"></class>
-
 			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar"></class>
-
 			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes"></class>
-
 			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoVisualizar"></class>
-
 			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoExcluir"></class>
-
 			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoExcluirEmMassa"></class>
-
 			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoPesquisaPorID"></class>
 		
 		</classes>

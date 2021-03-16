@@ -95,12 +95,11 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseSteven {
 		
 		invisibilityOfElementOverlay();
 		
-		siguiente.click();
-		
-		invisibilityOfElementOverlay();
-		
-		
 		String idRegistro = idObter3();
+		
+		siguiente.click();
+		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
+		invisibilityOfElementOverlay();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));

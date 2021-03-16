@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela16.SGDPCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoCriarPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -18,7 +18,7 @@ public class FatoresDeRiscoCriar extends TestBaseCristhian {
  
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	FactoresDeRiscoCriarPO factoresDeRiscoCriarPO;
+	FatoresDeRiscoCriarPO factoresDeRiscoCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +26,7 @@ public class FatoresDeRiscoCriar extends TestBaseCristhian {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		factoresDeRiscoCriarPO = new FactoresDeRiscoCriarPO();
+		factoresDeRiscoCriarPO = new FatoresDeRiscoCriarPO();
 	}
 
 	@AfterClass

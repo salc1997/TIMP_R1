@@ -29,7 +29,7 @@ public class UsuariosFiltrosAvacadosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Filtrar por Usuário de Criação\"]")
 	public WebElement usuarioCriacao;
 	
-	@FindBy(xpath = "//*[@id=\"option-9\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@id=\"option-4\"]/div[1]/label/span")
 	public WebElement opcUsuarioCriacao;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Filtrar por Usuário de Modificação\"]")

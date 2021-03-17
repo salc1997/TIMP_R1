@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Antecipacao.AntecipacaoExcluirMassa">
+      <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
         <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="excluir"/>
           <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Antecipacao.AntecipacaoExcluirMassa -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

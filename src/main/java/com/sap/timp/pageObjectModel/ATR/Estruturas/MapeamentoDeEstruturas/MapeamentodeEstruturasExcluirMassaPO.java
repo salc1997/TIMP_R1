@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ATR.EstruturasMapeamentodeEstruturas;
+package com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas;
 
 import java.util.ArrayList;
 

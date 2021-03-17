@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ATR.EstruturasMapeamentodeEstruturas;
+package com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

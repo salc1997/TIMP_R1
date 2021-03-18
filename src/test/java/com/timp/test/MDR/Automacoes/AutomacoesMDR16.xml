@@ -57,6 +57,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaDetalles"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa"></class>
 		</classes>
@@ -68,6 +69,7 @@
 			<!-- Tabelas de Apoio E-SOCIAL > Tabela 14 - Agente Causador de Acidente  -->
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteDetalles"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir"></class>
 		</classes>
@@ -80,6 +82,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExlusionMassa"></class>
 		</classes>
@@ -92,6 +95,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa"></class>
 		</classes>

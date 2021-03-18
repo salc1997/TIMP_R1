@@ -151,22 +151,35 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		sleep(1000);
 		btnExpansaoPastaElement.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		WebElement pasta2 = driver.findElement(By.xpath("//span[text()=\"Pasta 2\"]"));
 		waitExpectElement(pasta2);
 		pasta2.click();
 		
 		btnNovaConfiguracao.click();
-		
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
 		waitExpectElement(nomeConfiguracao);
 		nomeConfiguracao.sendKeys("Teste Automatizado");
 		sleep(1000);
 		
 		cboLeiautes.click();
 		sleep(1000);
-		opcionLeiautes.click();
-		sleep(1000);
+		
+		String idRegistro = idObter3();
+		
+		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+		sleep(2000);
+
+		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
+
+		Opc6 .click();
+		sleep(4000);
 		
 		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		versao.click();

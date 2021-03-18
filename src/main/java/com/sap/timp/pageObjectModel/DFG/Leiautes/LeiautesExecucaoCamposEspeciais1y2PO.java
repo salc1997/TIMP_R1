@@ -30,6 +30,10 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 	public WebElement grupoEstrutura;
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcGrupoEstructura;
+	
+	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
+	public WebElement opcGrupoEstructura1;
+	
 	@FindBy(xpath = "//li[contains(text(),\"Ajuste\")][2]")
 	public WebElement opcGrupoEstructura2;
 	
@@ -369,7 +373,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 			sleep(1000);
 		}else {
 			//CORREGIR AL EJECUTAR EN AMBIENTE
-			opcGrupoEstructura.click();
+			opcGrupoEstructura1.click();
 			sleep(1000);
 		}
 		

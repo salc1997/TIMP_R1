@@ -163,7 +163,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBaseMa
 		sleep(1000);
 		
 		versaoLeiaute.sendKeys("1");
-		sleep(1000);
+		sleep(2000);
 		
 		salvar.click();
 		

@@ -31,13 +31,13 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBaseFernando{
 	@FindBy(xpath = "//div/span[text()=\"Ajustes\"][1]")
 	public WebElement subAbaAjusteFiscais;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[3]/button")
+	@FindBy(xpath = "//div[@block-id=\"3\"]/div/div/div[3]/button")
 	public WebElement adicionarRegistro4;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[@class=\"block-name\"]/div/div[2]/div/div/div[2]/input")
+	@FindBy(xpath = "//div[@block-id=\"3\"]/div/div/div[@class=\"block-name\"]/div/div[2]/div/div/div[2]/input")
 	public WebElement nombreBloco4;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[@class=\"record-name\"]/div/div[2]/div/div/div[2]/input")
+	@FindBy(xpath = "//div[@block-id=\"3\"]/div/div/div[@class=\"record-name\"]/div/div[2]/div/div/div[2]/input")
 	public WebElement nombreRegistro4;
 	
 	@FindBy(xpath = "//li[@data-id=\"sfid\"]/div/div/span[contains(text(),\"Sequência de Item por Documento\")][1]")
@@ -128,27 +128,34 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBaseFernando{
 		subAbaAjusteFiscais.click();
 		sleep(2000);
 		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[5]");
+		sleep(2000);
+		
+		
 		//ARRASTRAR ELEMENTOS
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(codigoFilial, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(codigoFilial, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(dataLanzamento, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(dataLanzamento, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		abaAjusteFiscais.click();
@@ -159,7 +166,7 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBaseFernando{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(campoSequenciaItemPorDocumento, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(campoSequenciaItemPorDocumento, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 	
 		btnAplicar.click();

@@ -19,8 +19,8 @@ encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/Leiautes/LeiautesExecuc
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ECD/ECDFuncionalidadesPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/EFDICMSIPI/Contribui\u00E7\u00F5esFuncionalidadesPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/EFDICMSIPI/EFDICMSIPICriarPO.java=UTF-8
-encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ESocial/S1200/S1200AlterarDadosDoEventoPO.java=UTF-8
-encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ESocial/S1200/S1200GerarDadosDoEventoPO.java=UTF-8
+encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ESocial/Eventos/S1200/S1200AlterarDadosDoEventoPO.java=UTF-8
+encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ESocial/Eventos/S1200/S1200GerarDadosDoEventoPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/MDR/HierarquiaDeCenariosDeCorre\u00E7ao/HierarquiaDeCenariosDeCorre\u00E7aoFiltrosAbansadosPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/MDR/LivrosFiscais/Parametriza\u00E7\u00E3oDoLivroOficial/Parametriza\u00E7\u00E3oDoLivroOficialCriarPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/TDK/Dashboard/DashboardCriarPO.java=UTF-8

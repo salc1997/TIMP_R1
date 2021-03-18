@@ -182,6 +182,10 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-my-digitalFile\"]")
 	public WebElement btnMeusArquivos;
 	
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-my-layout\"]")
+	public WebElement btnMeusArquivos2;
+	
+	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-favorite-digitalFile\"]")
 	public WebElement btnMeusFavoritoss;
 	
@@ -471,6 +475,11 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		rows = driver.findElements(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id and @tabindex=\"0\"]")).size();
 		String idRegistroConfiguracoes = driver.findElement(By.xpath("//div[@class=\"tr\" and @tabindex=\"0\" and @data-id]["+ rows +"]/div[5]/div")).getText();
 		
@@ -535,7 +544,18 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		abaConfiguracoes.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		btnRaiz.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -577,6 +597,11 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		sleep(2000);
 		
 		btnRaiz.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -773,7 +798,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		sleep(2000);
 		
 		String idRegistro = idObter2();
-		System.out.println("");
+		System.out.println("---");
 		System.out.println("Id Registro Arquivo publico: " + idRegistro);
 		
 		WebElement favorito = driver.findElement(By.xpath("//div[@class=\"tr\" and @tabindex=\"0\" and @data-id=\""+idRegistro+"\"]/div[3]/span"));
@@ -781,14 +806,24 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		favorito.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		
+		
+		if(URL.contains("tp1")) {
+			btnMeusArquivos = driver.findElement(By.xpath("//li[@identifier=\"accordion-item-my-digitalFile\"]"));
+		}
 		
 		btnMeusArquivos.click();
-		sleep(1000);
+		sleep(2000);
 		
 		sleep(3000);
+		
+		
+		if(URL.contains("tp1")) {
+			btnMeusFavoritoss = driver.findElement(By.xpath("//li[@identifier=\"accordion-item-favorite-digitalFile\"]"));
+		}
 		btnMeusFavoritoss.click();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

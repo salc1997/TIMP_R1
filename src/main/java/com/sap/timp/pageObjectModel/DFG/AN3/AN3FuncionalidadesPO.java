@@ -744,16 +744,22 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	
 	
 	public ArrayList<Boolean> BRE() {
+	
+		
 		String url = driver.getCurrentUrl();
-		
+
 		boolean tp1  = false;
+		boolean tc2  = false;
 		boolean tq1  = false;
-		
-		if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tp1")){
+
+		if (url.contains("tq1")) {
 			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
+			tp1 = true;
 		}
+		
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -791,13 +797,15 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		tipoRegra.click();
 		sleep(1000);
 		tipoRegraO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		
-		if (tq1 == true) {
-			componenteTQ1.click();
-		}else {
+		if (tc2 == true) {
 			componente.click();
+		}else if (tp1==true ) {
+			componente.click();
+		}else {
+			componenteTQ1.click();
 		}
 		
 		sleep(1000);

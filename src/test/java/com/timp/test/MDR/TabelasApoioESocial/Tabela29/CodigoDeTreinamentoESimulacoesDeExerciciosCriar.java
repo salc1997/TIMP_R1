@@ -7,11 +7,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriarPO;
 
-public class CodigoDeTreinamentoESimulacoesDeExerciciosCriar extends TestBaseEliel {
+public class CodigoDeTreinamentoESimulacoesDeExerciciosCriar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +21,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosCriar extends TestBaseEli
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeTreinamentoESimulacoesDeExerciciosCriarPO = new CodigoDeTreinamentoESimulacoesDeExerciciosCriarPO();
@@ -28,7 +29,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosCriar extends TestBaseEli
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
 	@Test()

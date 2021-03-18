@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt2">
         <methods>
           <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="campoFixoManual"/>
+          <include name="campoFixo"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
+      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

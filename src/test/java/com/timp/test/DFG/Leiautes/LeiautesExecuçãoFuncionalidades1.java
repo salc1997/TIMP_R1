@@ -9,19 +9,19 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
-import com.sap.timp.pageObjectModel.DFG.Leiautes.LeiautesExecuçãoFuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.Leiautes.LeiautesExecuçãoFuncionalidades1PO;
 
-public class LeiautesExecuçãoFuncionalidades extends TestBaseCristhian {
+public class LeiautesExecuçãoFuncionalidades1 extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
-	LeiautesExecuçãoFuncionalidadesPO leiautesExecuçãoFuncionalidadesPO;
+	LeiautesExecuçãoFuncionalidades1PO leiautesExecuçãoFuncionalidadesPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
-		leiautesExecuçãoFuncionalidadesPO = new LeiautesExecuçãoFuncionalidadesPO();
+		leiautesExecuçãoFuncionalidadesPO = new LeiautesExecuçãoFuncionalidades1PO();
 	}
 
 	@AfterClass
@@ -45,7 +45,7 @@ public class LeiautesExecuçãoFuncionalidades extends TestBaseCristhian {
 		boolean sucesso = leiautesExecuçãoFuncionalidadesPO.criar();
 		assertTrue(sucesso, Criar);		
 		
-	/*	boolean sucesso2 = leiautesExecuçãoFuncionalidadesPO.editar();
+		/*boolean sucesso2 = leiautesExecuçãoFuncionalidadesPO.editar();
 		assertTrue(sucesso2, Editar);	
 		
 		ArrayList<Boolean> sucesso3 = leiautesExecuçãoFuncionalidadesPO.informacao();

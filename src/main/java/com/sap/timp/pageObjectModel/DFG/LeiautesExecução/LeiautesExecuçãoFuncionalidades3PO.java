@@ -13,7 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseMassiel{
+public class LeiautesExecuçãoFuncionalidades3PO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-wrapper\"]/div /div[1]/div/div[1]")
 	public WebElement raiz;
 	
@@ -276,7 +276,7 @@ public class LeiautesExecuçãoFuncionalidadesPO extends TestBaseMassiel{
 	public WebElement agrupamientoTotalDeLinhasAgrupadasOPC;
 	
 	
-	public LeiautesExecuçãoFuncionalidadesPO () {
+	public LeiautesExecuçãoFuncionalidades3PO () {
 		PageFactory.initElements(driver, this);
 	}
 	

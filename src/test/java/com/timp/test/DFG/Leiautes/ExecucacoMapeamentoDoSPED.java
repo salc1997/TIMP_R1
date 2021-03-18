@@ -54,7 +54,7 @@ public class ExecucacoMapeamentoDoSPED extends TestBaseKenssy {
 	}
 	
 	
-/*	@Test(priority = 3)
+	@Test(priority = 3)
 	public void criarSPED() {
 		ArrayList<Boolean> sucesso =execucacoMapeamentoDoSPEDPO.criarSPED();
 		
@@ -79,6 +79,6 @@ public class ExecucacoMapeamentoDoSPED extends TestBaseKenssy {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-	}*/
+	}
 
 }

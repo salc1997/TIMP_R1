@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
-import com.sap.timp.pageObjectModel.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidadesPO;
+import com.sap.timp.pageObjectModel.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades3PO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,18 +15,18 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LeiautesExecuçãoFuncionalidades extends TestBaseMassiel{
+public class LeiautesExecuçãoFuncionalidades3 extends TestBaseMassiel{
 
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
-	LeiautesExecuçãoFuncionalidadesPO leiautesExecuçãoFuncionalidadesPO;
+	LeiautesExecuçãoFuncionalidades3PO leiautesExecuçãoFuncionalidadesPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
-		leiautesExecuçãoFuncionalidadesPO = new  LeiautesExecuçãoFuncionalidadesPO();
+		leiautesExecuçãoFuncionalidadesPO = new  LeiautesExecuçãoFuncionalidades3PO();
 	}
 
 	@AfterClass

@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.Conf
 
 public class ConfiguracaoDeTipoTributoEditar extends TestBaseEliel {
  
-	LoginTC loginTC;
+	LoginTC loginTC; 
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTipoTributoEditarPO configuracaoDeTipoTributoEditarPO;
  

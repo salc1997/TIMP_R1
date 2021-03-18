@@ -2,36 +2,35 @@ package com.timp.test.ADM.Configuração.ManuaisDeComponente;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteDetallePO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluirPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
-import java.util.ArrayList;
-
 import org.testng.annotations.AfterClass;
 
-public class ManuaisDeComponenteDetalle extends TestBaseMassiel{ 
+public class ManuaisDeComponenteExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ManuaisDeComponenteDetallePO manuaisDeComponenteVisualizarPO;
- 
+	ManuaisDeComponenteExcluirPO manuaisDeComponenteExcluirPO;
+	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initializationC();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  manuaisDeComponenteVisualizarPO = new ManuaisDeComponenteDetallePO();
+	  manuaisDeComponenteExcluirPO = new ManuaisDeComponenteExcluirPO();
   }
 
   @AfterClass
   public void afterClass() {
   }
-
+  
   @Test(priority = 0)
 	public void login() {
 		loginTC.login();
@@ -46,15 +45,12 @@ public class ManuaisDeComponenteDetalle extends TestBaseMassiel{
 	}
 	
 	@Test(priority = 2)
-	public void detalle() {
+	public void Excluir() {
 
 		
-		ArrayList<Boolean> sucesso = manuaisDeComponenteVisualizarPO.Detalle();
+		boolean sucesso = manuaisDeComponenteExcluirPO.exluir();
+		assertTrue(sucesso, eliminar);
 
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
 		
 	}
-	
 }

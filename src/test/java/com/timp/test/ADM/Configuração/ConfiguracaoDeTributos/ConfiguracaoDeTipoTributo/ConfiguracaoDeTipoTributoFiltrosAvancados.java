@@ -28,7 +28,7 @@ public class ConfiguracaoDeTipoTributoFiltrosAvancados extends TestBaseEliel{
 
   @AfterClass
   public void afterClass() {
-  }
+  } 
   
   @Test(priority = 0)
 	public void login() {

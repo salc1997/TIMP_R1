@@ -101,7 +101,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseEliel{
 		opcaoindicadorajuste.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste do IPI005");
+		descricao.sendKeys("Teste do IPI987");
 		
 		sleep(2000);
 		

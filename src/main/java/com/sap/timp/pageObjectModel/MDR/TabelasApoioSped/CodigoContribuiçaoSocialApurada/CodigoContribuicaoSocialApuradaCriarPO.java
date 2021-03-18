@@ -100,11 +100,11 @@ public class CodigoContribuicaoSocialApuradaCriarPO extends TestBaseSteven{
 		tributoO.click();
 		sleep(2000);
 		
-		codigo.sendKeys("0303");
-		descricao.sendKeys("Teste codigo de Contribuição Social Apurada 04");
+		codigo.sendKeys("987");
+		descricao.sendKeys("Teste codigo de Contribuição Social Apurada 987");
 
-		codigo.sendKeys("03");
-		descricao.sendKeys("Teste codigo de Contribuição ");
+		codigo.sendKeys("987");
+		descricao.sendKeys("Teste codigo de Contribuição 987");
 
 		
 		validFrom.sendKeys(fechaActual());

@@ -87,10 +87,10 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		tributoO.click();
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		codigo.sendKeys("04");
+		codigo.sendKeys("987");
 		
 		
-		descricao.sendKeys("Teste de código de ajustes 04");
+		descricao.sendKeys("Teste de código de ajustes 987");
 		datavigencia.sendKeys(fechaActual());
 				
 		gravar.click();

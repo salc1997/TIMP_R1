@@ -71,7 +71,7 @@ public class ConfiguracaoDeMapeamentoDeTributoCriarPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 
-	public boolean criar() {
+	public boolean criar() { 
 
 		String url = driver.getCurrentUrl();
 		

@@ -16,7 +16,7 @@ public class ConfiguracaoDeTipoTributoCriar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTipoTributoCriarPO configuracaoDeTipoTributoCriarPO;
- 
+  
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationE();

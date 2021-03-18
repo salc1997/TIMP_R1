@@ -17,7 +17,7 @@ public class ConfiguracaoDeTipoTributoVisualizar extends TestBaseEliel{
  
 	
 	LoginTC loginTC;
-	AcessarADMPO acessarADMPO;
+	AcessarADMPO acessarADMPO; 
 	ConfiguracaoDeTipoTributoVisualizarPO configuracaoDeTipoTributoVisualizarPO ;
 
   @BeforeClass

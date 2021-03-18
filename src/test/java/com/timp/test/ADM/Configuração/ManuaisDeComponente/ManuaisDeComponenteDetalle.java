@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ManuaisDeComponenteDetalle extends TestBaseMassiel{
+public class ManuaisDeComponenteDetalle extends TestBaseMassiel{ 
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ManuaisDeComponenteDetallePO manuaisDeComponenteVisualizarPO;

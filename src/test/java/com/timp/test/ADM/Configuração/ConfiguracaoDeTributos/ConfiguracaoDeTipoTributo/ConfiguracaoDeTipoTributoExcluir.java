@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.Conf
 public class ConfiguracaoDeTipoTributoExcluir extends TestBaseEliel {
  
 	LoginTC loginTC;
-	AcessarADMPO acessarADMPO;
+	AcessarADMPO acessarADMPO; 
 	ConfiguracaoDeTipoTributoExcluirPO configuracaoDeTipoTributoExcluirPO;
  
   @BeforeClass

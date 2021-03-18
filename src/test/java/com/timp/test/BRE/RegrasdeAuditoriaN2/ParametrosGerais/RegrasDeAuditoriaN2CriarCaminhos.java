@@ -24,32 +24,20 @@ public class RegrasDeAuditoriaN2CriarCaminhos extends TestBaseCristhian {
 	public void beforeClass() {
 
 		driver = initializationC();
-		loginTC = new LoginTC();
+		loginTC = new LoginTC(); 
 		acessarBREPO = new AcessarBREPO();
 		regrasDeAuditoriaN2CriarCaminhosPO = new RegrasDeAuditoriaN2CriarCaminhosPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-//	  driver.close();
+	  driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
-		acessarBREPO.acessarBRE();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
-
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasDeAuditoriaN2CriarCaminhosPO.criar();
 
 		assertTrue(sucesso, Criar);

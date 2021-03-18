@@ -239,7 +239,7 @@ public class TarefasNADelegarPO extends TestBaseCristhian {
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);
-			dia23.click();
+			dia23.click(); 
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);

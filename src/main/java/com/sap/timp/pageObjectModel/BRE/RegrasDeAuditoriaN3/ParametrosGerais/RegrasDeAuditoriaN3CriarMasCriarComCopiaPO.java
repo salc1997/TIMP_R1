@@ -27,7 +27,7 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopiaPO extends TestBaseFernando
 	public WebElement lixeira;
 	
 	public RegrasDeAuditoriaN3CriarMasCriarComCopiaPO() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this); 
 	}
 	
 	public boolean criarComCopia() {

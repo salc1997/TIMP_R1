@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.Conf
 
 public class ConfiguracaoDeMapeamentoDeTributoCriar extends TestBaseEliel{
  
-	
+	 
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeMapeamentoDeTributoCriarPO configuracaoDeMapeamentoDeTributoCriarPO;

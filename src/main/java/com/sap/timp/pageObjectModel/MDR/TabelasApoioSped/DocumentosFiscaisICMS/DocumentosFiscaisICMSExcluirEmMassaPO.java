@@ -96,7 +96,7 @@ public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseEliel {
 		sleep(2000);
 		//Primeiro Registro
 	
-		codigodedocumentofiscal.sendKeys("770937");
+		codigodedocumentofiscal.sendKeys("798737");
 		sleep(2000);
 		
 		especie.click();
@@ -123,7 +123,7 @@ public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseEliel {
 		
 		
 		
-		codigodedocumentofiscal.sendKeys("787093");
+		codigodedocumentofiscal.sendKeys("789873");
 		sleep(2000);
 		
 		especie.click();

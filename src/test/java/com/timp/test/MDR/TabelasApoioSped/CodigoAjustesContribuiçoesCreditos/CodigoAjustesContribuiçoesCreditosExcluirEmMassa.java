@@ -20,7 +20,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseEl
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationE(); 
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçoesCreditosExcluirEmMassaPO = new CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO();
@@ -28,7 +28,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseEl
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

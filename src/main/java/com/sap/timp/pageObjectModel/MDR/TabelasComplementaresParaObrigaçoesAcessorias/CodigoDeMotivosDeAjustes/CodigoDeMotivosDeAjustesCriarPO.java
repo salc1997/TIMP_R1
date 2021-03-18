@@ -94,12 +94,12 @@ public class CodigoDeMotivosDeAjustesCriarPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeajustes.sendKeys("009937");
+		codigodeajustes.sendKeys("1209937");
 
 		
 		sleep(2000);
 		
-		descricaodeajustes.sendKeys("Teste000");
+		descricaodeajustes.sendKeys("Teste120");
 		
 		sleep(2000);
 		

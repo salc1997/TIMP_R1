@@ -34,7 +34,6 @@ public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 
@@ -45,14 +44,12 @@ public class RelacionamentoEntreQuadrosExcluirMassa extends TestBaseCristhian {
 		assertTrue(sucesso, Criar);
 
 		sleep(1000);
-	
 
 	}
 
-	
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
+
 		boolean sucesso2 = relacionamentoEntreQuadrosExcluirMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

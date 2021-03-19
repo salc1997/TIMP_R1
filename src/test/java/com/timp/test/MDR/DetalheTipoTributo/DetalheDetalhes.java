@@ -42,15 +42,13 @@ public class DetalheDetalhes extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void detalhes() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = detalheDetallePO.Detalle();
 
 		for (int i = 0; i < sucesso.size(); i++) {

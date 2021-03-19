@@ -1,4 +1,4 @@
- package com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao;
+package com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -33,15 +33,14 @@ public class HierarquiaDeCenariosDeCorreçaoEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = hierarquiaDeCenariosDeCorreçaoEditarPO.editar();
 		assertTrue(sucesso, Editar);
-	
+
 	}
 
 }

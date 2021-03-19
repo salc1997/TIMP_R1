@@ -32,7 +32,6 @@ public class ContasParteBLALURCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 

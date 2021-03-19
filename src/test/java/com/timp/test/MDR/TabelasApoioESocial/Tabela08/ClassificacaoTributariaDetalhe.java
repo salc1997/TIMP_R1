@@ -20,7 +20,7 @@ public class ClassificacaoTributariaDetalhe extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	ClassificacaoTributariaDetalhePO classificacaoTributariaDetalhePO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
@@ -31,7 +31,7 @@ public class ClassificacaoTributariaDetalhe extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test()

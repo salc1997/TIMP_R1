@@ -15,38 +15,34 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class IncentivosFiscaisEditar extends TestBaseMassiel{
-	
+public class IncentivosFiscaisEditar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	IncentivosFiscaisEditarPO  incentivosFiscaisEditarPO;
+	IncentivosFiscaisEditarPO incentivosFiscaisEditarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		incentivosFiscaisEditarPO = new IncentivosFiscaisEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = incentivosFiscaisEditarPO.Editar();
 		assertTrue(sucesso, semAcesso);
-
-		
 
 	}
 }

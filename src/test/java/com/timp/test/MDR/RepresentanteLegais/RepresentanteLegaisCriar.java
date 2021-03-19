@@ -31,15 +31,13 @@ public class RepresentanteLegaisCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = representantesLegaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

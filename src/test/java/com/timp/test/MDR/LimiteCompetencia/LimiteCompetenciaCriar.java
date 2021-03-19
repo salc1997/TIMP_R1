@@ -33,12 +33,11 @@ public class LimiteCompetenciaCriar extends TestBaseMassiel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = limiteCompetenciaCriarPO.criar();

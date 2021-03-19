@@ -33,13 +33,11 @@ public class TiposDeObjetosDeOcorrenciasFiscaisDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Detalhes() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = tiposDeObjetosDeOcorrenciasFiscaisDetalhesPO.detalhes();

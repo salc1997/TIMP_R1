@@ -20,7 +20,7 @@ public class TiposDeArquivosESocialDetalhe extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TiposDeArquivosESocialDetalhePO tiposDeArquivosESocialDetalhePO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
@@ -31,7 +31,7 @@ public class TiposDeArquivosESocialDetalhe extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test()

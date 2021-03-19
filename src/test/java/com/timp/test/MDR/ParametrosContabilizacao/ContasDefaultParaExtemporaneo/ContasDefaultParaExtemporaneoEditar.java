@@ -1,6 +1,5 @@
 package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo;
 
-
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
@@ -32,15 +31,13 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
 
 		assertTrue(sucesso, visualizaçar);

@@ -31,14 +31,13 @@ public class RepresentantesLegaisExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = representantesLegaisExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

@@ -33,10 +33,9 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorVisualizar extends TestBaseEl
 		driver.close();
 	}
 
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

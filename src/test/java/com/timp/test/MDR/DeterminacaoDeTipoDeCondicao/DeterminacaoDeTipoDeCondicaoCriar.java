@@ -31,13 +31,11 @@ public class DeterminacaoDeTipoDeCondicaoCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = determinacaoDeTipoDeCondicaoCriarPO.criar();

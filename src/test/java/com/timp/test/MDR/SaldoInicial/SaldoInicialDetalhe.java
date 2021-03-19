@@ -16,36 +16,32 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class SaldoInicialDetalhe extends TestBaseKenssy {
-  
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SaldoInicialDetalhePO saldoInicialDetalhePO;
-	
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  saldoInicialDetalhePO = new SaldoInicialDetalhePO();
-	  
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		saldoInicialDetalhePO = new SaldoInicialDetalhePO();
+
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-
-
 	@Test()
-	  public void detalheSaldoInicial() {
-		
-		
+	public void detalheSaldoInicial() {
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = saldoInicialDetalhePO.DetalheSaldoInicial();
 
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -53,6 +49,6 @@ public class SaldoInicialDetalhe extends TestBaseKenssy {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-		
-	  }
+
+	}
 }

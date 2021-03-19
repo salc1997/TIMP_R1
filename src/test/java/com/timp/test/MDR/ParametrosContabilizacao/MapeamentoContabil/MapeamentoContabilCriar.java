@@ -33,13 +33,11 @@ public class MapeamentoContabilCriar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = mapeamentoContabilCriarPO.criar();

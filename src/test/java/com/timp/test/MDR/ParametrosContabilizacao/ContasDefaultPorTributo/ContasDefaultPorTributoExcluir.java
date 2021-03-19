@@ -32,13 +32,11 @@ public class ContasDefaultPorTributoExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = contasDefaultPorTributoExcluirPO.excluir();

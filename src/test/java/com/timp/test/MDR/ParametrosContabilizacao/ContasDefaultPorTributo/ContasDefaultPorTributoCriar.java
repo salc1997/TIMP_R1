@@ -31,14 +31,13 @@ public class ContasDefaultPorTributoCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = contasDefaultPorTributoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

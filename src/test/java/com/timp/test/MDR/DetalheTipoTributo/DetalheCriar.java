@@ -30,14 +30,12 @@ public class DetalheCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
 
 		boolean sucesso = detalheCriarPO.criar();
 

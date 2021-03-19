@@ -37,12 +37,10 @@ public class RegistroECACCriar extends TestBaseMassiel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroECACCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 
 	}
-	
 
 }
-

@@ -20,7 +20,7 @@ public class CompatibilidadeEnCatTrabDetalhe extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	CompatibilidadeEnCatTrabDetalhePO compatibilidadeEnCatTrabDetalhePO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
@@ -31,7 +31,7 @@ public class CompatibilidadeEnCatTrabDetalhe extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test()

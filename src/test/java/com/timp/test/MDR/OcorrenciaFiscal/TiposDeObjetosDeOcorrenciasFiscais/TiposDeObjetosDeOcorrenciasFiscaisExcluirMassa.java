@@ -18,39 +18,37 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa extends TestBaseCris
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO tiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO = new TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void Criar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
-	
+
 	}
-	
+
 	@Test(dependsOnMethods = "Criar")
 	public void Excluir() {
 
-		
 		boolean sucesso2 = tiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 

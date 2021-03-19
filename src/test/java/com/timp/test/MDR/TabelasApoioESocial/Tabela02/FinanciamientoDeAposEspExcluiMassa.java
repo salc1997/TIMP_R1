@@ -42,7 +42,7 @@ public class FinanciamientoDeAposEspExcluiMassa extends TestBaseCristhian {
 		boolean sucesso = financiamientoDeAposEspExcluiMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso1 = financiamientoDeAposEspExcluiMassaPO.exluirMassa();

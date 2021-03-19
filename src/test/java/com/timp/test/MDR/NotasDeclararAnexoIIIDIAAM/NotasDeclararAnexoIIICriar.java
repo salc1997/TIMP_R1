@@ -14,11 +14,11 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NotasDeclararAnexoIIICriar extends TestBaseMassiel{
+public class NotasDeclararAnexoIIICriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	NotasDeclararAnexoIIICriarPO notasDeclararAnexoIIICriarPO;
-	
+
 	public NotasDeclararAnexoIIICriar() {
 		super();
 	}
@@ -36,15 +36,13 @@ public class NotasDeclararAnexoIIICriar extends TestBaseMassiel{
 		driver.close();
 	}
 
-
-	
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acesarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = notasDeclararAnexoIIICriarPO.criarNotasDeclararAnexoIIICriar();
 		assertTrue(sucesso, Criar);
 	}

@@ -36,10 +36,9 @@ public class ContratoIOFVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -52,6 +51,6 @@ public class ContratoIOFVisualizar extends TestBaseEliel {
 
 		}
 
-}
+	}
 
 }

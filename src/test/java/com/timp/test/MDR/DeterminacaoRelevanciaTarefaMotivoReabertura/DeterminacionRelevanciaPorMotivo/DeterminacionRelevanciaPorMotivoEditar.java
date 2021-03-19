@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class DeterminacionRelevanciaPorMotivoEditar extends TestBaseCristhian {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacionRelevanciaPorMotivoEditarPO determinacionRelevanciaPorMotivoEditarPO;
@@ -34,16 +34,13 @@ public class DeterminacionRelevanciaPorMotivoEditar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = determinacionRelevanciaPorMotivoEditarPO.editar();
 
 		assertTrue(sucesso, Editar);

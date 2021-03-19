@@ -23,42 +23,37 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	ParametrosParaCategoriaDeIRFExcluirEmMasaPO parametrosParaCategoriaDeIRFExcluirEmMasaPO;
-	
-	 
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  accesarMDR = new AcessarMDRPO();
-		  parametrosParaCategoriaDeIRFExcluirEmMasaPO = new ParametrosParaCategoriaDeIRFExcluirEmMasaPO();
+		driver = initialization();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		parametrosParaCategoriaDeIRFExcluirEmMasaPO = new ParametrosParaCategoriaDeIRFExcluirEmMasaPO();
 	}
- 
+
 	@AfterClass
 	public void afterClass() {
-		  driver.close();
+		driver.close();
 	}
-	
 
-	
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		 accesarMDR.acessarMDR();
-		 
+		accesarMDR.acessarMDR();
+
 		boolean sucesso = parametrosParaCategoriaDeIRFExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
-		
-		
+
 	}
-	
+
 	@Test()
 	public void excluir() {
-		
-		
+
 		boolean sucesso2 = parametrosParaCategoriaDeIRFExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
-		
+
 	}
 
 }

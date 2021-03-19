@@ -35,11 +35,9 @@ public class SequenciaExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

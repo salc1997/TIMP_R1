@@ -18,31 +18,29 @@ public class IncentivosFiscaisFiltroId extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	IncentivosFiscaisFiltroIdPO incentivosFiscaisIdPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  incentivosFiscaisIdPO = new IncentivosFiscaisFiltroIdPO();
-  }
 
-  @AfterClass
- 	public void afterClass() {
- 		driver.close();
- 	}
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		incentivosFiscaisIdPO = new IncentivosFiscaisFiltroIdPO();
+	}
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-
- 	@Test()
-	  public void FiltrarIncentivosFiscaisId() {
+	@Test()
+	public void FiltrarIncentivosFiscaisId() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
- 		 
- 		boolean dato = incentivosFiscaisIdPO.FiltrarIncentivosFiscaisId();
-		   
-		 assertTrue(dato, "El registro devuelto no coincide con el buscado");
-	  }
+
+		boolean dato = incentivosFiscaisIdPO.FiltrarIncentivosFiscaisId();
+
+		assertTrue(dato, "El registro devuelto no coincide con el buscado");
+	}
 }

@@ -26,7 +26,6 @@ public class CadastroNotaFiscalExcluirEmMassa extends TestBaseKenssy {
 		cadastroNotaFiscalExcluirEmMassaPO = new CadastroNotaFiscalExcluirEmMassaPO();
 	}
 
-
 	@AfterClass
 	public void afterClass() {
 		driver.close();

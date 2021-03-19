@@ -18,7 +18,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubst
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO;
@@ -37,14 +37,12 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar exten
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void visualizar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -31,15 +31,13 @@ public class SaldoInicialDiferidoCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = saldoInicialDiferidoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

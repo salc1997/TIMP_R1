@@ -30,16 +30,16 @@ public class TaxasDeConversaoExcluirEmMassa extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test()
-	public void criar() {		
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = taxasDeConversaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		boolean sucesso2 = taxasDeConversaoExcluirEmMassaPO.excluir();

@@ -30,19 +30,17 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluir extends TestBaseEliel {
 	 */
 
 	@AfterClass
-	  public void afterClass() {
-		  driver.close();
-	  }
-	
-
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void excluir() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

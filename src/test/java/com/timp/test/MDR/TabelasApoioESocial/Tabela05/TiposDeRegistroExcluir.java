@@ -30,7 +30,7 @@ public class TiposDeRegistroExcluir extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test()
 	public void excluir() {
 

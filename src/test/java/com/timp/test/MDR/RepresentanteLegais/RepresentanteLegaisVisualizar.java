@@ -33,11 +33,9 @@ public class RepresentanteLegaisVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

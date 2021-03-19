@@ -36,7 +36,6 @@ public class NotasDeclararAnexoIIIExcluirMassa extends TestBaseSteven {
 
 	}
 
-
 	@Test()
 	public void criar() {
 
@@ -49,8 +48,7 @@ public class NotasDeclararAnexoIIIExcluirMassa extends TestBaseSteven {
 		assertTrue(sucesso, Criar);
 
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
 

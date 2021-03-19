@@ -33,7 +33,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluir extends TestBaseEliel {
 
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

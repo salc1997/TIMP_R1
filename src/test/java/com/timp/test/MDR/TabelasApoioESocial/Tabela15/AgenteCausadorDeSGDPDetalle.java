@@ -15,30 +15,30 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AgenteCausadorDeSGDPDetalle extends TestBaseMassiel{
+public class AgenteCausadorDeSGDPDetalle extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeSGDPDetallePO agenteCausadorDeSGDPDetallePO;
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		agenteCausadorDeSGDPDetallePO = new AgenteCausadorDeSGDPDetallePO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test()
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
 	public void detalle() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		
 		ArrayList<Boolean> sucesso = agenteCausadorDeSGDPDetallePO.Detalle();
 
 		for (int i = 0; i < sucesso.size(); i++) {

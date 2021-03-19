@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class IncentivosFiscaisExcluir extends TestBaseMassiel{
+public class IncentivosFiscaisExcluir extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
@@ -24,7 +24,7 @@ public class IncentivosFiscaisExcluir extends TestBaseMassiel{
 		driver = initializationM();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
-		incentivosFiscaisExcluirPO =new IncentivosFiscaisExcluirPO();
+		incentivosFiscaisExcluirPO = new IncentivosFiscaisExcluirPO();
 
 	}
 
@@ -33,15 +33,14 @@ public class IncentivosFiscaisExcluir extends TestBaseMassiel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void Excluir() {
-		
+
 		loginTC.login();
 
 		accesarMDRPO.acessarMDR();
-		
-		boolean sucesso =  incentivosFiscaisExcluirPO.Excluir();
+
+		boolean sucesso = incentivosFiscaisExcluirPO.Excluir();
 		assertTrue(sucesso, Editar);
 
 	}

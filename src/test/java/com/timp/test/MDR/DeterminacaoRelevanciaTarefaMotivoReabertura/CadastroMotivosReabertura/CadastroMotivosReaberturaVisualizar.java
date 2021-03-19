@@ -39,11 +39,9 @@ public class CadastroMotivosReaberturaVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

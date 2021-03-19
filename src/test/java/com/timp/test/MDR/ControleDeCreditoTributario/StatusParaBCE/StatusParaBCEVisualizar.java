@@ -34,15 +34,14 @@ public class StatusParaBCEVisualizar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		driver.close();
 	}
 
 	@Test()
 	public void visualizar() {
-		
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = statusParaBCEVisualizarPO.visualizar();

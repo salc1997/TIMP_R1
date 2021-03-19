@@ -20,7 +20,7 @@ public class PaisesDetalhe extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	PaisesDetalhePO paisesDetalhePO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

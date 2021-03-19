@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassaPO;
 
-public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseEliel{
-	
+public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoContabilCorrecaoExcluirEmMassaPO mapeamentoContabilCorrecaoExcluirEmMassaPO;
@@ -31,28 +31,23 @@ public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void Criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = mapeamentoContabilCorrecaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 
-
 	}
-	
+
 	@Test(dependsOnMethods = "Criar")
 	public void ExcluirMassa() {
-		
 
 		boolean sucesso2 = mapeamentoContabilCorrecaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
 
-	
-	
 }

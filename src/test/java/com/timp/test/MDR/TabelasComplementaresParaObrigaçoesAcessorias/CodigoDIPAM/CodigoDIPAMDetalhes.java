@@ -18,7 +18,7 @@ public class CodigoDIPAMDetalhes extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDIPAMDetalhesPO codigoDIPAMDetalhesPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO  determinacaoDeRelevanciaPorRegraExcluirEmMassaPO;
+	DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO determinacaoDeRelevanciaPorRegraExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -39,11 +39,12 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassa extends TestBaseKens
 		boolean sucesso = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		sleep(1000);
-		boolean sucesso2 = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO.determinacaoDeRelevanciaPorRegraExcluirEmMassa();
+		boolean sucesso2 = determinacaoDeRelevanciaPorRegraExcluirEmMassaPO
+				.determinacaoDeRelevanciaPorRegraExcluirEmMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
 }

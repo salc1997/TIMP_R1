@@ -17,7 +17,7 @@ public class AliquotaDeTaxaDeActualizacaoExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationKen();

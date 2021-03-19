@@ -33,14 +33,13 @@ public class DeterminacionRelevanciaPorMotivoCriar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = determinacionRelevanciaPorMotivoCriarPO.criar();
 		assertTrue(sucesso, Criar);
 

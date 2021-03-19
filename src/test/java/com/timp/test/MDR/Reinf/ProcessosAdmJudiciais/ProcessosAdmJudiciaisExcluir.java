@@ -35,7 +35,7 @@ public class ProcessosAdmJudiciaisExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = processosAdmJudiciaisExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

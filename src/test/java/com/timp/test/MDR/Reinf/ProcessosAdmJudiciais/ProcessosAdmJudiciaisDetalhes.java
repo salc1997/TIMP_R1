@@ -37,7 +37,7 @@ public class ProcessosAdmJudiciaisDetalhes extends TestBaseEliel {
 	public void detalhes() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = processosAdmJudiciaisDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

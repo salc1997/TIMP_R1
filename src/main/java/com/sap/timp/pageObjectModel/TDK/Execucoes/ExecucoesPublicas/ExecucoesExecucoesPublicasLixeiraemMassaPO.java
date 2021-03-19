@@ -340,6 +340,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseMassiel 
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -507,6 +508,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseMassiel 
 		eliminar.click();
 		sleep(3000);
 		
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -515,6 +517,12 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseMassiel 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();

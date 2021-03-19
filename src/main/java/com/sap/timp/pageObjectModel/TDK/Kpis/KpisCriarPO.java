@@ -139,7 +139,12 @@ public class KpisCriarPO extends TestBaseMassiel {
 		sim.click();
 		sleep(2000);
 
-		waitExpectElement(kpispublicos);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		kpispublicos.click();

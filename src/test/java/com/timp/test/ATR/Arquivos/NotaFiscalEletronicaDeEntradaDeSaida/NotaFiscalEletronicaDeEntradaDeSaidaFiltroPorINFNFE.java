@@ -30,6 +30,7 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE extends TestBas
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

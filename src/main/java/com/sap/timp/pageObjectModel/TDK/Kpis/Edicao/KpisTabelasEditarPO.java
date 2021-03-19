@@ -152,8 +152,9 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		conteudo.click();
 		sleep(3000);
 		
+		waitExpectElement(nomeFlagPersonalizado);
 		nomeFlagPersonalizado.click();
-		sleep(2000);
+		sleep(3000);
 		
 		etiqueta.sendKeys("Base ICMS");
 		sleep(2000);
@@ -212,6 +213,7 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		editTabela.click();
 		sleep(2000);
 		
+		waitExpectElement(nomeCabelhaco);
 		String nuevoTexto = nomeCabelhaco.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

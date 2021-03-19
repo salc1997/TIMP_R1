@@ -30,6 +30,7 @@ public class GrupoDeEstruturaVer extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

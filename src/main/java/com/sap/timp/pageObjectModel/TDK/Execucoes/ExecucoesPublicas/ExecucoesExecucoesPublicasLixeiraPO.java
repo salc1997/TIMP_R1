@@ -50,7 +50,8 @@ public class ExecucoesExecucoesPublicasLixeiraPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[@id=\"textLabel\"]")
 	public WebElement mensagem;
 	
-	@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[5]")
+	//@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[5]")
+	@FindBy(xpath = "//*[name()=\"g\" and @class=\"v-datapoint-group\"]/*[name()=\"g\"]/*[name()=\"g\" and @data-id][4]")
 	public WebElement quartacolunagrafico;
 	
 	@FindBy(xpath = "//div[@id=\"indicator-card-container\"]")

@@ -28,6 +28,7 @@ public class GrupoDeEstruturasExcluir extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

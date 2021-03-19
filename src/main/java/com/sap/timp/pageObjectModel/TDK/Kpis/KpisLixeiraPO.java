@@ -128,6 +128,7 @@ public class KpisLixeiraPO extends TestBaseEliel{
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

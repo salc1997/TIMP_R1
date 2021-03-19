@@ -2,17 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 =======
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar">
 =======
@@ -26,6 +33,9 @@
       <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa">
+>>>>>>> refs/heads/Fernando
         <methods>
 <<<<<<< HEAD
           <include name="visualizar"/>
@@ -37,6 +47,7 @@
           <include name="afterClass"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="AcessarADM"/>
 =======
 >>>>>>> refs/heads/Fernando
@@ -46,7 +57,10 @@
           <include name="excluirConfiguracao"/>
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="afterClass"/>
 =======
@@ -62,7 +76,11 @@
           <include name="executar"/>
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="criar"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar -->
 =======
@@ -76,6 +94,9 @@
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

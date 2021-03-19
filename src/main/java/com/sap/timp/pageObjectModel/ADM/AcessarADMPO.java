@@ -8,7 +8,7 @@ import com.sap.timp.base.TestBaseMassiel;
 
 public class AcessarADMPO extends TestBaseMassiel{
 
-	@FindBy(xpath = "//div[text()=\"ADM  \"]")
+	@FindBy(xpath = "//div[text()=\"ADM\"]")
 	public WebElement adm;
 	
 	@FindBy(xpath = "//div[@class=\"dragger-pagination-right\"]")

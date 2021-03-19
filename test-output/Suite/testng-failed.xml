@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,28 +10,29 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
 <<<<<<< HEAD
   <test thread-count="5" name="Cenarios de Correção(failed)">
+=======
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ReordenarColuna(failed)">
     <classes>
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa">
+      <class name="com.timp.test.BRB.ReordenarColuna">
         <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="excluirMassa"/>
           <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa -->
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir -->
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
-        <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
+          <include name="reordenar"/>
           <include name="afterClass"/>
         </methods>
+      </class> <!-- com.timp.test.BRB.ReordenarColuna -->
+    </classes>
+  </test> <!-- ReordenarColuna(failed) -->
+  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
+>>>>>>> refs/heads/Fernando
+    <classes>
+      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="agrupadoPeloCampo"/>
+          <include name="afterClass"/>
+        </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
       <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar">
 =======
@@ -148,10 +150,19 @@
           <include name="excluir"/>
         </methods>
       </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialExcluir -->
+=======
+      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
+>>>>>>> refs/heads/Fernando
     </classes>
+<<<<<<< HEAD
   </test> <!-- Livros Fiscais > Parametrização Do Livro Oficial(failed) -->
   <test thread-count="5" name="Determinacao Relevancia Tarefa Motivo Reabertura &gt; Determinacion Relevancia Por Motivo(failed)">
+=======
+  </test> <!-- AgrupadoPeloCampo(failed) -->
+  <test thread-count="5" name="FormatacaoEVariante(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoExcluirEmMassa">
         <methods>
           <include name="afterClass"/>
@@ -179,13 +190,21 @@
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoCriar -->
       <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa">
+=======
+      <class name="com.timp.test.BRB.FormatacaoEVariante">
+>>>>>>> refs/heads/Fernando
         <methods>
+          <include name="formatacaoEVariante"/>
           <include name="afterClass"/>
-          <include name="criar"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="excluirEmMassa"/>
           <include name="Excluir"/>
+=======
+          <include name="excluirVariante"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa -->
       <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrabalhoFiltroID">
         <methods>
@@ -201,10 +220,19 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoEditar -->
+=======
+      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+>>>>>>> refs/heads/Fernando
     </classes>
+<<<<<<< HEAD
   </test> <!-- Eventos e-Social > S1060 Ambientes de trabalho(failed) -->
   <test thread-count="5" name="Eventos e-social &gt; S1250 Aquisicao De Producao Rural &gt; S1250 Aquisição(failed)">
+=======
+  </test> <!-- FormatacaoEVariante(failed) -->
+  <test thread-count="5" name="FiltroColunas(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250Aquisição.S1250AquisiçãoCriar">
         <methods>
           <include name="afterClass"/>
@@ -250,8 +278,12 @@
     <classes>
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DadosdeEventos.S1250DadosdeEventoEditar">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.BRB.FiltroColunas">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="afterClass"/>
@@ -312,8 +344,13 @@
         <methods>
           <include name="criar"/>
           <include name="beforeClass"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
+          <include name="filtroConFerramenta1"/>
+          <include name="filtroConFerramenta2"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetNotaFiscal.S1250DetNotaFiscalCriar -->
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetNotaFiscal.S1250DetNotaFiscalEditar">
         <methods>
@@ -419,16 +456,21 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir -->
+=======
+      </class> <!-- com.timp.test.BRB.FiltroColunas -->
+>>>>>>> refs/heads/Fernando
     </classes>
-  </test> <!-- S1200RemuneracaoDeTrabalhador(failed) -->
-  <test thread-count="5" name="S1250AquisicaoDeProducaoRural(failed)">
+  </test> <!-- FiltroColunas(failed) -->
+  <test thread-count="5" name="GruposAvancados(failed)">
     <classes>
-      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar">
+      <class name="com.timp.test.BRB.GruposAvancados">
         <methods>
+          <include name="gruposAvanzados"/>
           <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="eliminarGrupos"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar -->
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar">
         <methods>
@@ -445,10 +487,14 @@
           <include name="criar"/>
         </methods>
       </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar -->
+=======
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
+>>>>>>> refs/heads/Fernando
     </classes>
-  </test> <!-- Cenarios de Correção(failed) -->
-  <test thread-count="5" name="Centralização &gt; Estorno de Crédito(failed)">
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
         <methods>
           <include name="beforeClass"/>
@@ -456,7 +502,17 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
+=======
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="crescenteEDecrescente"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
+>>>>>>> refs/heads/Fernando
     </classes>
+<<<<<<< HEAD
   </test> <!-- Centralização > Estorno de Crédito(failed) -->
   <test thread-count="5" name="Centralização &gt; Fator de Crecimento do CIAP(failed)">
     <classes>
@@ -728,4 +784,29 @@
   </test> <!-- Parametros Para Categoria De IRF (failed) -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  </test> <!-- CrescenteEDecrescente(failed) -->
+  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
+        <methods>
+          <include name="listaSuspensa"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
+    </classes>
+  </test> <!-- ComentarioListaSuspensa(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioLibre">
+        <methods>
+          <include name="comentarioLibre"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+    </classes>
+  </test> <!-- ComentarioLibre(failed) -->
+>>>>>>> refs/heads/Fernando
 </suite> <!-- Failed suite [Suite] -->

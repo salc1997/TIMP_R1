@@ -2,17 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 =======
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar">
 =======
@@ -44,11 +51,15 @@
       </class> <!-- com.timp.test.ADM.AcessarADM -->
 =======
       <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardTabelaExecutar">
+=======
+      <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="TabelaExecutar"/>
+          <include name="criar"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardTabelaExecutar -->
 >>>>>>> refs/heads/Fernando
 =======
@@ -67,6 +78,9 @@
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

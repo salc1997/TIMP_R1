@@ -30,6 +30,7 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados extends TestBa
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
 =======
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
 <testng-results ignored="0" total="13" passed="2" failed="11" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="92736" started-at="2021-03-16T03:31:12Z" finished-at="2021-03-16T03:32:45Z">
 =======
@@ -27,8 +34,12 @@
   <suite started-at="2021-03-18T07:27:43Z" name="Default suite" finished-at="2021-03-18T07:29:48Z" duration-ms="124935">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-03-19T19:03:14Z" name="Default suite" finished-at="2021-03-19T19:04:53Z" duration-ms="98952">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="92736" started-at="2021-03-16T03:31:12Z" finished-at="2021-03-16T03:32:45Z">
       <class name="com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluir">
@@ -50,9 +61,15 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@6caf0677]" started-at="2021-03-18T07:27:43Z" name="beforeClass" finished-at="2021-03-18T07:27:56Z" duration-ms="13323" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-03-19T19:03:14Z" name="Default test" finished-at="2021-03-19T19:04:53Z" duration-ms="98952">
+      <class name="com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa@3f67593e]" started-at="2021-03-19T19:03:14Z" name="beforeClass" finished-at="2021-03-19T19:03:27Z" duration-ms="13270" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="excluir()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.CodigosDeCredito.CodigosDeCreditoExcluir@78b729e6]" name="excluir" duration-ms="79545" started-at="2021-03-16T03:31:25Z" finished-at="2021-03-16T03:32:45Z">
 =======
@@ -66,6 +83,9 @@
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@6caf0677]" started-at="2021-03-18T07:27:56Z" name="ingresar" finished-at="2021-03-18T07:28:04Z" duration-ms="7766" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa@3f67593e]" started-at="2021-03-19T19:03:27Z" name="login" finished-at="2021-03-19T19:03:37Z" duration-ms="9781" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
@@ -74,6 +94,7 @@
 =======
 <<<<<<< HEAD
         </test-method> <!-- login -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="FAIL" signature="AcessarADM()[pri:2, instance:com.timp.test.ADM.AcessarADM@78b729e6]" name="AcessarADM" duration-ms="1104" started-at="2021-03-16T00:02:03Z" finished-at="2021-03-16T00:02:04Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -261,14 +282,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
 =======
         <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:32:00Z" name="acessarTDK" finished-at="2021-03-15T22:32:21Z" duration-ms="21792" status="PASS">
+=======
+        <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa@3f67593e]" started-at="2021-03-19T19:03:37Z" name="acessarTDK" finished-at="2021-03-19T19:03:58Z" duration-ms="20614" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
         </test-method> <!-- acessarTDK -->
+<<<<<<< HEAD
         <test-method signature="filtro()[pri:2, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:32:21Z" name="filtro" finished-at="2021-03-15T22:33:11Z" duration-ms="49218" status="PASS">
+>>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="excluir()[pri:2, instance:com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa@3f67593e]" started-at="2021-03-19T19:03:58Z" name="excluir" finished-at="2021-03-19T19:04:53Z" duration-ms="55046" status="PASS">
 >>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- AcessarADM -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.ADM.AcessarADM@78b729e6]" name="afterClass" is-config="true" duration-ms="105" started-at="2021-03-16T00:02:04Z" finished-at="2021-03-16T00:02:04Z">
@@ -276,9 +305,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- filtro -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.MeusDashboards.MeusFavoritos.DashboardMeusFavoritosFiltroPorID@20f5281c]" started-at="2021-03-15T22:33:11Z" name="afterClass" finished-at="2021-03-15T22:33:11Z" duration-ms="1" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa@3f67593e]" started-at="2021-03-19T19:04:53Z" name="afterClass" finished-at="2021-03-19T19:04:53Z" duration-ms="200" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.ADM.AcessarADM -->
 =======
@@ -949,6 +983,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

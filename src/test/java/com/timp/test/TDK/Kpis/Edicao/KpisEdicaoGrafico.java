@@ -27,6 +27,11 @@ public class KpisEdicaoGrafico extends TestBaseMassiel {
 		acessarTDKPO = new AcessarTDKPO();
 		kpisEdicaoGraficoPO = new KpisEdicaoGraficoPO();
 	}
+	
+	@AfterClass
+	public void afterClass() {
+//		driver.close();
+	}
 
 	@Test(priority = 0)
 	public void login() {

@@ -49,9 +49,9 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Preencha o nome do grupo\"]")
 	public WebElement nomedogrupo;
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[2]")
-	public WebElement ajustefiscais;
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[1]")
 	public WebElement cfop;
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[1]")
+	public WebElement ajustefiscais;
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar; 

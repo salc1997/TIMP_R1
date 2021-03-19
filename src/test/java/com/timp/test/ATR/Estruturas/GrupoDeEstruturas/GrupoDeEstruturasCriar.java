@@ -29,6 +29,7 @@ public class GrupoDeEstruturasCriar extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

@@ -87,7 +87,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Filtrar por Usuário de Modificação\"]")
 	public WebElement usuarioModificador;
 	
-	@FindBy(xpath = "//li[text()=\"Elias Moreira\"]")
+	@FindBy(xpath = "//li[text()=\"TESTEAUTOMATIZADO TESTEAUTOMATIZADO\"]")
 	public WebElement opcUsuarios;
 	
 
@@ -157,7 +157,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		for (int i = 0; i < rows1; i++) {
 
 			String tributo ="";
-			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[3]")).getText();
+			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[4]")).getText();
 			
 			if (data.size()==0) {
 				
@@ -176,7 +176,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		
 		j=1;
 		for (int i = 0; i < rows; i++) {
-			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[3]")).getText();
+			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[4]")).getText();
 			sucesso.add(data.get(0).equals(datos));
 		}
 		
@@ -191,16 +191,16 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		sleep(2000);
 		idiomaOpc.click();
 		sleep(2000);
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		j=1;
 		rows1 = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
 		for (int i = 0; i < rows1; i++) {
 
 			String tributo ="";
-			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[3]")).getText();
+			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[5]")).getText();
 			
 			if (data.size()==0) {
 				
@@ -217,7 +217,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
 		j=1;
 		for (int i = 0; i < rows; i++) {
-			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[3]")).getText();
+			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[5]")).getText();
 			sucesso.add(data.get(0).equals(datos));
 		}
 		System.out.println(datos);
@@ -240,7 +240,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		for (int i = 0; i < rows1; i++) {
 
 			String tributo ="";
-			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[3]")).getText();
+			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[8]")).getText();
 			
 			if (data.size()==0) {
 				
@@ -257,7 +257,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
 		j=1;
 		for (int i = 0; i < rows; i++) {
-			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[3]")).getText();
+			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[8]")).getText();
 			sucesso.add(data.get(0).equals(datos));
 		}
 		System.out.println(datos);
@@ -280,7 +280,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		for (int i = 0; i < rows1; i++) {
 
 			String tributo ="";
-			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[3]")).getText();
+			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]//div[10]")).getText();
 			
 			if (data.size()==0) {
 				
@@ -297,7 +297,7 @@ public class ManuaisDeComponentesFiltrosAvançadosPO extends TestBaseCristhian {
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
 		j=1;
 		for (int i = 0; i < rows; i++) {
-			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[3]")).getText();
+			datos = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[10]")).getText();
 			sucesso.add(data.get(0).equals(datos));
 		}
 		

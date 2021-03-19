@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
 public class RelacionamentoEstruturasCriar extends TestBaseSteven{
@@ -49,7 +51,11 @@ public class RelacionamentoEstruturasCriar extends TestBaseSteven{
  	@Test(priority = 3)
  	public void criarRelacionamento() {
 
- 		relacionamentoEstruturasCriarPO.criar();
+ 		ArrayList<Boolean> sucesso =relacionamentoEstruturasCriarPO.criar();
+ 		
+ 		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 
  	}
 }

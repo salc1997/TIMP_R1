@@ -1,5 +1,4 @@
 package com.sap.timp.pageObjectModel.DFG.AN4;
-
 import java.security.MessageDigest;
 import java.util.ArrayList;
 
@@ -374,16 +373,16 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//button/span[text()=\"Executar\"][1]")
 	public WebElement executarAN4;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[1]")
+	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[1]")
 	public WebElement bloco1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[2]")
+	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[2]")
 	public WebElement registro1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[8]")
+	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[8]")
 	public WebElement bloco2;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[9]")
+	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[9]")
 	public WebElement registro2;
 	
 	//---------------
@@ -556,9 +555,9 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -809,9 +808,9 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -1134,7 +1133,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			Opc3 .click();
 			sleep(2000);
 		}else {
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
 
 			Opc3 .click();
 			sleep(2000);
@@ -1171,8 +1170,8 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
 
 			Opc5 .click();
 			sleep(2000);
@@ -2200,11 +2199,11 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		
 		AN4OPC.click();
-		sleep(2000);
+		sleep(3000);
 	
 		
 		leiauteReferenciaAN4.click();
-		sleep(2000);
+		sleep(3000);
 		
 		
 		String idRegistro = idObter2();
@@ -2245,7 +2244,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(4000);
 		
 		adicionarFiltroReferenciaAN4.click();
-		sleep(2000);
+		sleep(3000);
 		
 		
 		if (tq1 == true) {
@@ -2611,7 +2610,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(1000);
 		
 		nomeAN4.sendKeys(enviar);
-		sleep(10000);
+		sleep(12000);
 		
 		EditarAN4.click();
 		sleep(5000);

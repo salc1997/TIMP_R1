@@ -205,6 +205,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPVisualizar"></class>
+				<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
 			</classes>

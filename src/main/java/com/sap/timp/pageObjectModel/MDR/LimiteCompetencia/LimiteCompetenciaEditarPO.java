@@ -62,15 +62,15 @@ public class LimiteCompetenciaEditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		/*attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+/*
+		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-MultipleSelect3 required");
 		attributeToBeXpath("//div[@id=\"process-type\"]/div", "class", "base-select required");
 		attributeToBeXpath("//div[@id=\"approval-level\"]/div", "class", "base-select required");
 		attributeToBeXpath("//div[@id=\"value-from\"]/div/div", "class", "base-input  required type1");
-		attributeToBeXpath("//div[@id=\"value-to\"]/div/div", "class", "base-input  required type1");*/
-		
+		attributeToBeXpath("//div[@id=\"value-to\"]/div/div", "class", "base-input  required type1");
+		*/
 		sleep(8000);
 
 		String valor = campo.getAttribute("value");
@@ -91,8 +91,8 @@ public class LimiteCompetenciaEditarPO extends TestBaseSteven {
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
-
-		/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+/*
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
@@ -101,10 +101,11 @@ public class LimiteCompetenciaEditarPO extends TestBaseSteven {
 		attributeToBeXpath("//div[@id=\"process-type\"]/div", "class", "base-select required");
 		attributeToBeXpath("//div[@id=\"approval-level\"]/div", "class", "base-select required");
 		attributeToBeXpath("//div[@id=\"value-from\"]/div/div", "class", "base-input  required type1");
-		attributeToBeXpath("//div[@id=\"value-to\"]/div/div", "class", "base-input  required type1");*/
-		
+		attributeToBeXpath("//div[@id=\"value-to\"]/div/div", "class", "base-input  required type1");
+		*/
 		sleep(10000);
-
+		sleep(10000);
+		
 		String nuevoTexto = campo.getAttribute("value");
 
 		System.out.println(valor);

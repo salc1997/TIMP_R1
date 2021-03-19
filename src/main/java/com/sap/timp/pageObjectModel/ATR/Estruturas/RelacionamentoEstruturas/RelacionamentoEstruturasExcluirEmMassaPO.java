@@ -258,9 +258,9 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idUltimoRegistro+"\"]/div[2]/label/span"));
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
 		
-		sleep(2000);
+		sleep(5000);
 		marcarCheckbox.click();
-		sleep(2000);
+		sleep(5000);
 		
 		int idPenultimoUltimoRegistro = convertToInt(this.idPrimerRegistroCreado);
 		marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idPenultimoUltimoRegistro+"\"]/div[2]/label/span"));

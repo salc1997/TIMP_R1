@@ -82,7 +82,7 @@ public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		nomedogrupo.sendKeys("Teste ATR");
+		nomedogrupo.sendKeys("Teste ATR  MASSIEL2");
 		sleep(1000);
 		estruturadedados.click();
 		sleep(2000);

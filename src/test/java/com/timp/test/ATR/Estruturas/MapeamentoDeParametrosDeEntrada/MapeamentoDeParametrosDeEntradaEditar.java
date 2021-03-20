@@ -32,22 +32,13 @@ public class MapeamentoDeParametrosDeEntradaEditar extends TestBaseEliel {
 		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 2)
+	 	@Test()
 	 	public void editar() {
 	 		
+	 		loginTC.login();
+			 acessarATRPO.acessarATR();
+			 
 	 		boolean sucesso = mapeamentoDeParametrosDeEntradaeditarPO.Editar();
 			assertTrue(sucesso, Editar);
 		

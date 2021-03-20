@@ -24,32 +24,26 @@ public class GrupoDeEstruturasExcluir extends TestBaseEliel{
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  grupoDeEstruturasExcluirPO = new  GrupoDeEstruturasExcluirPO();
-	  }
+	}
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	 	}
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void criar() {
-	 		
-	 		boolean sucesso = grupoDeEstruturasExcluirPO.excluir();
-			assertTrue(sucesso, Eliminado);
-		
-	 		
-	 	}
-	
+
+	@Test()
+	public void criar() {
+
+		loginTC.login();
+
+		acessarATRPO.acessarATR();
+
+		boolean sucesso = grupoDeEstruturasExcluirPO.excluir();
+		assertTrue(sucesso, Eliminado);
+
+
+	}
+
 }

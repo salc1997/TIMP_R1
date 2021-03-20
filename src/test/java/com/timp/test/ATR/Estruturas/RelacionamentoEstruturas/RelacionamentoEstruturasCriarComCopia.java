@@ -34,24 +34,16 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 1)
- 	public void login() {
- 		loginTC.login();
 
- 	}
-
- 	@Test(priority = 2)
- 	public void ATREntrar() {
-
- 		boolean sucesso = acessarATRPO.acessarATR();
-
- 	}
-
- 	@Test(priority = 3)
+ 	@Test()
  	public void criarCopia() {
 
+ 		loginTC.login();
+		 acessarATRPO.acessarATR();
+		 
  		ArrayList<Boolean> sucesso =relacionamentoEstruturasCriarComCopiaPO.criar();
  		
  		for (int i = 0; i < sucesso.size(); i++) {
@@ -61,7 +53,7 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
  	}
  	
  	
- 	@Test(priority = 4)
+ 	@Test(dependsOnMethods = "criarCopia")
  	public void editarCopia() {
  		
  		ArrayList<Boolean> sucesso =relacionamentoEstruturasCriarComCopiaPO.editar();
@@ -72,7 +64,7 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
 
  	}
  	
- 	@Test(priority = 5)
+ 	@Test(dependsOnMethods = "editarCopia")
  	public void excluirCopia() {
  		
  		boolean sucesso =relacionamentoEstruturasCriarComCopiaPO.excluir();

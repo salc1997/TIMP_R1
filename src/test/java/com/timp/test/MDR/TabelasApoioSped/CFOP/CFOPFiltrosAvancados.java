@@ -8,7 +8,6 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CFOP.CFODetalhePO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CFOP.CFOPFiltrosAvancadosPO;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelFiltrosAvancadosPO;
 
 import org.testng.annotations.BeforeClass;
 

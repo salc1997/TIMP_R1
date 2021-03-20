@@ -21,41 +21,35 @@ public class GrupoDeEstruturasEditar extends TestBaseEliel {
 	GrupoDeEstruturasEditarPO grupoDeEstruturasEditarPO;
 	
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarATRPO = new AcessarATRPO();
-		  grupoDeEstruturasEditarPO = new  GrupoDeEstruturasEditarPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarATRPO = new AcessarATRPO();
+		grupoDeEstruturasEditarPO = new  GrupoDeEstruturasEditarPO();
+	}
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void editar() {
-	 		
-	 		ArrayList<Boolean> sucesso = grupoDeEstruturasEditarPO.editar();
-	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), Editar);
-				
-			}
-			
-		
-	 		
-	 	}
+
+	@Test()
+	public void editar() {
+
+		loginTC.login();
+
+		acessarATRPO.acessarATR();
+
+
+		ArrayList<Boolean> sucesso = grupoDeEstruturasEditarPO.editar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Editar);
+
+		}
+
+
+
+	}
 }

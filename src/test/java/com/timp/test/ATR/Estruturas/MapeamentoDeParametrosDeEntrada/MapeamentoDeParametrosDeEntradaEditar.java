@@ -9,14 +9,14 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
-import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEdPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditarPO;
 
 public class MapeamentoDeParametrosDeEntradaEditar extends TestBaseEliel {
 
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
-	MapeamentoDeParametrosDeEntradaEdPO mapeamentoDeParametrosDeEntradaeditarPO;
+	MapeamentoDeParametrosDeEntradaEditarPO mapeamentoDeParametrosDeEntradaeditarPO;
 	
 	@BeforeClass
 	  public void beforeClass() {
@@ -24,7 +24,7 @@ public class MapeamentoDeParametrosDeEntradaEditar extends TestBaseEliel {
 		  driver = initializationE();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
-		  mapeamentoDeParametrosDeEntradaeditarPO = new  MapeamentoDeParametrosDeEntradaEdPO();
+		  mapeamentoDeParametrosDeEntradaeditarPO = new  MapeamentoDeParametrosDeEntradaEditarPO();
 	  }
 
 	  @AfterClass

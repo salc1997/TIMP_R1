@@ -111,7 +111,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> criar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
 		String url = driver.getCurrentUrl();
 		

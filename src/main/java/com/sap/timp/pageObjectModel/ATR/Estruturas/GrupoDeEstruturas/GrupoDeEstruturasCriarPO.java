@@ -119,7 +119,7 @@ public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
 		
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(idultimo);
+		idInserir("GrupoDeEstruturasCriar",idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);

@@ -113,7 +113,7 @@ public class RelacionamentoEstruturasExcluirPO extends TestBaseSteven{
 		
 		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
-relacionamentoEstruturas.click();
+		relacionamentoEstruturas.click();
 		
 		invisibilityOfElementOverlay();
 		

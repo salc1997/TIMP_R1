@@ -172,7 +172,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		System.out.println("Id após da criação: " + idDC);
 		idInserir2(idDC);
 		
-		int idACI = convertToInt(idObter1());
+		int idACI = convertToInt(idObter("RelacionamentoEstruturasCriar"));
 		int idADI = convertToInt(idDC);
 		
 		

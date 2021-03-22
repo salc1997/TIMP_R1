@@ -47,8 +47,6 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassa extends TestBaseEliel
 	
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-
-		loginTC.login();
 		
 		boolean sucesso2 = mapeamentoDeParametrosDeEntradaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

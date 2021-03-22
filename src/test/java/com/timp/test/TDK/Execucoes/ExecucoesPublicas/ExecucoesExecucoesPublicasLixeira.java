@@ -27,24 +27,15 @@ public class ExecucoesExecucoesPublicasLixeira extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void lixeira() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = execucoesLixeiraPO.lixeira();
 		assertTrue(sucesso, "Não foi possível ir para Lixeira");
-
 	}
-
 }

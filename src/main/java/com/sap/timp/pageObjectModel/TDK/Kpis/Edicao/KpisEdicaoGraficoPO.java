@@ -180,7 +180,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		sleep(2000);
 		
 		System.out.println("---------- Editar --------- " );
-		String idRegistro =idObter2();
+		String idRegistro =idObter("KpisCriar");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

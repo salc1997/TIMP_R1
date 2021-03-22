@@ -362,7 +362,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBaseMassiel{
 		
 		
 		if (idBD > idD) {
-			idInserir1(idB);
+			idInserir("DashboardParametrosGeraisExecutar", idB);
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);

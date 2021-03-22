@@ -4,12 +4,17 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
+=======
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos">
+>>>>>>> refs/heads/Fernando
         <methods>
+          <include name="afterClass"/>
           <include name="linksrapidos"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
 =======
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
@@ -20,6 +25,9 @@
         </methods>
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

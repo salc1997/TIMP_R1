@@ -4,13 +4,22 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
 =======
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos">
+>>>>>>> refs/heads/Fernando
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/heads/Fernando
           <include name="linksrapidos"/>
+<<<<<<< HEAD
 =======
           <include name="afterClass"/>
           <include name="criarcopia"/>
@@ -20,12 +29,19 @@
           <include name="afterClass"/>
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
 =======
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

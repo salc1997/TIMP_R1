@@ -31,21 +31,12 @@ public class DashboardCartaoIndicadorEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void CartaoIndicador() {
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = dashboardCartaoIndicadorEditarPO.CartaoIndicador();
 		assertTrue(sucesso, Editar);
-
 	}
 }

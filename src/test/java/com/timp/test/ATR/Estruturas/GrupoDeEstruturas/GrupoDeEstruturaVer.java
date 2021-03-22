@@ -18,44 +18,37 @@ public class GrupoDeEstruturaVer extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
 	GrupoDeEstruturasVerPO grupoDeEstruturasVerPO;
-	
+
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarATRPO = new AcessarATRPO();
-		  grupoDeEstruturasVerPO = new  GrupoDeEstruturasVerPO();
-	  }
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarATRPO = new AcessarATRPO();
+		grupoDeEstruturasVerPO = new  GrupoDeEstruturasVerPO();
+	}
 
-	  @AfterClass
-	  public void afterClass() {
-		  driver.close();
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void visualizar() {
-	 		
-	 		ArrayList<Boolean> sucesso = grupoDeEstruturasVerPO.visualizar();
-	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), visualizaçar);
-				
-			}
-			
-		
-	 		
-	 	}
+
+
+	@Test()
+	public void visualizar() {
+
+		loginTC.login();
+
+		acessarATRPO.acessarATR();
+
+		ArrayList<Boolean> sucesso = grupoDeEstruturasVerPO.visualizar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+
+		}
+
+
+
+	}
 }

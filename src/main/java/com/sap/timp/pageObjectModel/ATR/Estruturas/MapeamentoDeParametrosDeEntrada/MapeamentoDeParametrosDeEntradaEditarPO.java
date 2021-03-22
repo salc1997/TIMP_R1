@@ -1,19 +1,19 @@
-package com.sap.timp.pageObjectModel.ATR.CopiaEstruturas.CopiaGrupoDeEstruturas;
-
-import java.util.ArrayList;
+package com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
 
-public class GrupoDeEstruturasEditarPO extends TestBaseEliel{
+public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseEliel{
 	
-
-	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
-	public WebElement grupodeestrutura;
+	@FindBy(xpath = "//span[text()=\"Mapeamento de Parâmetros de Entrada\"]")
+	public WebElement mapeamento;
+	
+	
 	
 	@FindBy(xpath = "//div[@class=\"select\"]/div/div[2]")
 	public WebElement estruturadedados;
@@ -24,8 +24,8 @@ public class GrupoDeEstruturasEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencha o nome do grupo\"]")
-	public WebElement nomedogrupo;
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Campo \"]")
+	public WebElement direcaomovimento;
 	
 
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
@@ -42,14 +42,14 @@ public class GrupoDeEstruturasEditarPO extends TestBaseEliel{
 	
 	
 	
-	public GrupoDeEstruturasEditarPO() {
+	public MapeamentoDeParametrosDeEntradaEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> editar() {
+	public boolean Editar() {
 		sleep(2000);
 		
-		grupodeestrutura.click();
+		mapeamento.click();
 		
 		sleep(2000);
 		
@@ -61,7 +61,7 @@ public class GrupoDeEstruturasEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("MapeamentoDeParametrosDeEntradaCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -76,26 +76,23 @@ public class GrupoDeEstruturasEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		estruturadedados.click();
-		sleep(2000);
-		opcaoestrutura2.click();
-		sleep(2000);
-		String enviar = "Teste ATR Editar";
-		nomedogrupo.clear();
-		sleep(2000);
-		nomedogrupo.sendKeys(enviar);
-		sleep(1000);
 		
+		String enviar = "Alíquota COFINS";
+		direcaomovimento.clear();
+		sleep(2000);
+		direcaomovimento.sendKeys(enviar);
+		sleep(1000);
+		direcaomovimento.sendKeys(Keys.ENTER);
+		sleep(2000);
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
-		grupodeestrutura.click();
+		mapeamento.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -121,22 +118,13 @@ public class GrupoDeEstruturasEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		boolean sucesso = false;
 		
-		String nomedogrupo1 = nomedogrupo.getAttribute("value");
-		System.out.println(nomedogrupo1);
-		sucesso.add(nomedogrupo1.equals(enviar));
+		String novadirecaomovimento = direcaomovimento.getAttribute("value");
+		System.out.println(novadirecaomovimento);
+		sucesso = novadirecaomovimento.equals(enviar);
 		
-		int cfop = driver.findElements(By.xpath("//div[@aria-label=\"Row; Nome: 4.2.2 - CFOP\"]/div[2]/div")).size();
-
-		if (cfop == 0) {
-			System.out.println("4.2.2 - CFOP não consta na página de Edição");
-			sucesso.add(false);
-			
-		} else {
-			System.out.println("4.2.2 - CFOP consta na página de Edição");
-			sucesso.add(true);
-		}
+		
 		System.out.println(sucesso);
 		
 		return sucesso;

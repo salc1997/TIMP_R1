@@ -24,8 +24,11 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseEliel {
 	public WebElement opcaotributoaavaliar;
 	
 	
-	@FindBy(xpath = "//div[@class=\"fieldMap taxSubset\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"fieldMap taxes\"]/div/div/div[2]")
 	public WebElement tributosaavaliar;
+	
+	@FindBy(xpath = "//div[@class=\"fieldMap taxSubset\"]/div/div/div[2]")
+	public WebElement tributosaavaliar2;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
@@ -82,7 +85,7 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("AgrupamentoDeTributosCriar");
 
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -110,6 +113,12 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseEliel {
 		opcaotributoaavaliar.click();
 		sleep(2000);
 		closeSelectTypeCheckbox(tributosaavaliar);
+		
+		tributosaavaliar2.click();
+		sleep(2000);
+		opcaotributoaavaliar.click();
+		sleep(2000);
+		closeSelectTypeCheckbox(tributosaavaliar2);
 		
 		sleep(2000);
 		gravar.click();

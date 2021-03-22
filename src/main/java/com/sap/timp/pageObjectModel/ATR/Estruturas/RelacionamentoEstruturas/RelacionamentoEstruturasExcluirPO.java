@@ -111,9 +111,9 @@ public class RelacionamentoEstruturasExcluirPO extends TestBaseSteven{
 	
 	public boolean excluir() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
-relacionamentoEstruturas.click();
+		relacionamentoEstruturas.click();
 		
 		invisibilityOfElementOverlay();
 		

@@ -32,24 +32,27 @@ public class GrupoDeEstruturasExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
+	
 
-	}
-
-	@Test(priority = 1)
-	public void acessarATR() {
-
-		acessarATRPO.acessarATR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+ 		
+		 acessarATRPO.acessarATR();
 
 		boolean sucesso = grupoDeEstruturasExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(1000);
+		boolean sucesso2 = grupoDeEstruturasExcluirEmMassaPO.excluir();
+		assertTrue(sucesso2, Eliminado);
+
+	}
+	
+	@Test(dependsOnMethods = "criar" )
+	public void Excluir () {
+		
+		
 		sleep(1000);
 		boolean sucesso2 = grupoDeEstruturasExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

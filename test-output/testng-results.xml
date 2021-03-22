@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-03-22T01:35:07Z" name="Default suite" finished-at="2021-03-22T01:36:27Z" duration-ms="79770">
+=======
+  <suite started-at="2021-03-22T07:10:31Z" name="Default suite" finished-at="2021-03-22T07:12:37Z" duration-ms="126050">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-03-22T01:35:07Z" name="Default test" finished-at="2021-03-22T01:36:27Z" duration-ms="79770">
       <class name="com.timp.test.TDK.Kpis.Lixeira.LixeiraFiltroPorID">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.Lixeira.LixeiraFiltroPorID@301eda63]" started-at="2021-03-22T01:35:07Z" name="beforeClass" finished-at="2021-03-22T01:35:23Z" duration-ms="15572" status="PASS">
+=======
+    <test started-at="2021-03-22T07:10:31Z" name="Default test" finished-at="2021-03-22T07:12:37Z" duration-ms="126050">
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@5afa3c9]" started-at="2021-03-22T07:10:31Z" name="beforeClass" finished-at="2021-03-22T07:10:43Z" duration-ms="12145" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.TDK.Kpis.Lixeira.LixeiraFiltroPorID@301eda63]" started-at="2021-03-22T01:35:23Z" name="login" finished-at="2021-03-22T01:35:32Z" duration-ms="8918" status="PASS">
+=======
+        <test-method signature="criarcopia()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@5afa3c9]" started-at="2021-03-22T07:10:43Z" name="criarcopia" finished-at="2021-03-22T07:12:33Z" duration-ms="109800" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method signature="acessarTDK()[pri:1, instance:com.timp.test.TDK.Kpis.Lixeira.LixeiraFiltroPorID@301eda63]" started-at="2021-03-22T01:35:32Z" name="acessarTDK" finished-at="2021-03-22T01:36:02Z" duration-ms="30393" status="PASS">
           <reporter-output>
@@ -24,10 +43,18 @@
           </reporter-output>
         </test-method> <!-- filtro -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.Lixeira.LixeiraFiltroPorID@301eda63]" started-at="2021-03-22T01:36:27Z" name="afterClass" finished-at="2021-03-22T01:36:27Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- criarcopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@5afa3c9]" started-at="2021-03-22T07:12:33Z" name="afterClass" finished-at="2021-03-22T07:12:37Z" duration-ms="4088" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Lixeira.LixeiraFiltroPorID -->
+=======
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

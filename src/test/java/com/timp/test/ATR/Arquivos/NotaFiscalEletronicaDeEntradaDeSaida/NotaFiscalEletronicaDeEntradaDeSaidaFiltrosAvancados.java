@@ -33,21 +33,14 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados extends TestBa
 		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
+	 	@Test()
+	 	public void filtroAvansado() {
 	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void filtro() {
+	 		loginTC.login();
+	 		
+	 		 acessarATRPO.acessarATR();
+	 		 
 	 		
 	 		ArrayList<Boolean> sucesso = notaFiscalEletronicaDeEntradaDeSaidaFiltrosAvançadosPO.filtro();
 			for (int i = 0; i < sucesso.size(); i++) {

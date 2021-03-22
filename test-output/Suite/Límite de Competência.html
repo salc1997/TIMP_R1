@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 15 18:13:17 CST 2021</td>
+<td>Started on:</td><td>Fri Mar 19 14:02:22 CST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>706 seconds (706452 ms)</td>
+<tr><td>Total time:</td><td>678 seconds (678755 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar.editar()'><b>editar</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar</td>
-<td><div><pre>java.lang.AssertionError: O relatório não foi modificado com sucesso expected [true] but found [false]
-	at com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar.editar(LimiteCompetenciaEditar.java:46)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace73877357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace73877357'><pre>java.lang.AssertionError: O relatório não foi modificado com sucesso expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar.editar(LimiteCompetenciaEditar.java:46)
+<td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar.criar()'><b>criar</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&quot;icon-right&quot;)][2]&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BNBDMGT&apos;, ip: &apos;192.168.1.43&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: da1e69f7c185f38aaf1bc18c18b05f34
+*** Element info: {Using=xpath, value=//div[contains(@class,&quot;icon-right&quot;)][2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO.criar(LimiteCompetenciaCriarPO.java:238)
+	at com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar.criar(LimiteCompetenciaCriar.java:44)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace319595943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace319595943'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&quot;icon-right&quot;)][2]&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BNBDMGT&apos;, ip: &apos;192.168.1.43&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: da1e69f7c185f38aaf1bc18c18b05f34
+*** Element info: {Using=xpath, value=//div[contains(@class,&quot;icon-right&quot;)][2]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaCriarPO.criar(LimiteCompetenciaCriarPO.java:238)
+	at com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar.criar(LimiteCompetenciaCriar.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,8 +155,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>87</td>
-<td>com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar@2dfaea86</td></tr>
+<td>112</td>
+<td>com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar@d554c5f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -123,18 +168,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados.Filtro()'><b>Filtro</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados</td>
 <td></td>
-<td>119</td>
+<td>114</td>
 <td>com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansados@14fc5f04</td></tr>
-<tr>
-<td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar.criar()'><b>criar</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar</td>
-<td></td>
-<td>122</td>
-<td>com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaCriar@d554c5f</td></tr>
 <tr>
 <td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaDetalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaDetalhes</td>
 <td></td>
-<td>63</td>
+<td>60</td>
 <td>com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaDetalhes@33ecda92</td></tr>
+<tr>
+<td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar.editar()'><b>editar</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar</td>
+<td></td>
+<td>97</td>
+<td>com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaEditar@2dfaea86</td></tr>
 <tr>
 <td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir.excluir()'><b>excluir</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaExcluir</td>
 <td></td>
@@ -143,7 +188,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltroID.filtro()'><b>filtro</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltroID</td>
 <td></td>
-<td>47</td>
+<td>44</td>
 <td>com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaFiltroID@6e2829c7</td></tr>
 <tr>
 <td title='com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaVisualizar.visualizar()'><b>visualizar</b><br>Test class: com.timp.test.MDR.LimiteCompetencia.LimiteCompetenciaVisualizar</td>

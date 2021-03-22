@@ -31,23 +31,16 @@ public class MapeamentoDeParametrosDeEntradaVisualizar extends TestBaseEliel {
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+	 
+	 	@Test()
 	 	public void visualizar() {
+	 		
+	 		loginTC.login();
+			 acessarATRPO.acessarATR();
 	 		
 	 		ArrayList<Boolean> sucesso = mapeamentoDeParametrosDeEntradaVisualizarPO.visualizar();
 	 		for (int i = 0; i < sucesso.size(); i++) {

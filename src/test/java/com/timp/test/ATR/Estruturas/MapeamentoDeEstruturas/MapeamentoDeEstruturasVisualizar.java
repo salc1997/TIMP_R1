@@ -30,32 +30,22 @@ public class MapeamentoDeEstruturasVisualizar extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
+ 	
+	 @Test()
+	 public void visualizar() {
 	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void visualizar() {
+	 	loginTC.login();
+		acessarATRPO.acessarATR();
 	 		
-	 		ArrayList<Boolean> sucesso = mapeamentoDeEstruturasVisualizarPO.visualizar();
-	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), visualizaçar);
+	 	ArrayList<Boolean> sucesso = mapeamentoDeEstruturasVisualizarPO.visualizar();
+	 	for (int i = 0; i < sucesso.size(); i++) {
+	 		assertTrue(sucesso.get(i), visualizaçar);
 				
-			}
-			
-		
-	 		
-	 	}
+		}
+				
+	 }
 
 }

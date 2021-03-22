@@ -44,7 +44,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirPO extends TestBaseEliel{
 		sleep(2000);
 
 		// pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("MapeamentoDeParametrosDeEntradaCriar");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(

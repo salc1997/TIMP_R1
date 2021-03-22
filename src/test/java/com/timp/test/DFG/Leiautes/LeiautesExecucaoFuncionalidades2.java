@@ -19,8 +19,7 @@ import com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesCriarPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.LeiautesExecucaoFuncionalidades2PO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
-import com.timp.test.DFG.AcessarDFG;
+
 
 
 public class LeiautesExecucaoFuncionalidades2 extends TestBaseSteven{

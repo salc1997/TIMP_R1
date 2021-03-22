@@ -35,25 +35,15 @@ public class RelacionamentoEstruturasExcluir extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 1)
- 	public void login() {
- 		loginTC.login();
 
- 	}
-
- 	@Test(priority = 2)
- 	public void ATREntrar() {
-
- 		boolean sucesso = acessarATRPO.acessarATR();
-
- 	}
-
- 
- 	
- 	@Test(priority = 3)
+ 	@Test()
  	public void excluir() {
+ 		
+ 		loginTC.login();
+ 		acessarATRPO.acessarATR();
  		
  		boolean sucesso =relacionamentoEstruturasExcluirPO.excluir();
 

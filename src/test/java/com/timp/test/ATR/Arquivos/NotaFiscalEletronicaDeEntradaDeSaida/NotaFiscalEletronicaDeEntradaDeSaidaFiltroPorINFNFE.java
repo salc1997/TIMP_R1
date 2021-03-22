@@ -33,21 +33,14 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE extends TestBas
 		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
 	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void filtro() {
+	 		
+	 		loginTC.login();
+	 		
+	 		 acessarATRPO.acessarATR();
+	 		 
 	 		
 	 		ArrayList<Boolean> sucesso = notaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFEPO.filtro();
 	 		for (int i = 0; i < sucesso.size(); i++) {

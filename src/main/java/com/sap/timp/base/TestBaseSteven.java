@@ -268,7 +268,7 @@ public class TestBaseSteven {
 	}
 
 	public void waitExpectElement(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 360);
+		WebDriverWait wait = new WebDriverWait(driver, 3600);
 
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 
@@ -287,7 +287,7 @@ public class TestBaseSteven {
 	}
 
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 360);
+		WebDriverWait wait = new WebDriverWait(driver, 3600);
 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 

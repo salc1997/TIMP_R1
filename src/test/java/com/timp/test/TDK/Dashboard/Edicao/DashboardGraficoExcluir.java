@@ -32,23 +32,13 @@ public class DashboardGraficoExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void grafico() {
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = dashboardGraficoExcluirPO.GraficoExcluir();
-
 		assertTrue(sucesso, "O Grafico  não foi excluido");
-
 	}
 
 }

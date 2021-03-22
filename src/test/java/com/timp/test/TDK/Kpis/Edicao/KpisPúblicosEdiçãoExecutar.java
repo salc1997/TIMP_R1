@@ -33,22 +33,12 @@ public class KpisPúblicosEdiçãoExecutar extends TestBaseCristhian {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void executar() {
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = kpisPúblicosEdiçãoExecutarPO.Grafico();
 		assertTrue(sucesso, Editar);
-
 	}
-
 }

@@ -33,21 +33,11 @@ public class KpisEdiçãoTabelasExcluir extends TestBaseCristhian {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void Editar() {
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = kpisEdiçãoTabelasExcluirPO.tabelas();
-
 	}
-
 }

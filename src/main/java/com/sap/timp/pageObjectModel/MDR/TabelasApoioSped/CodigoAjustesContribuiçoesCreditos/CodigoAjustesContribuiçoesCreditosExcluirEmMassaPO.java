@@ -88,7 +88,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		primeira.click();
+		primeira.click(); 
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -112,10 +112,10 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 		tributoO.click();
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		codigo.sendKeys("16");
+		codigo.sendKeys("987");
 		
 		
-		descricao.sendKeys("Teste de código de ajuste106");
+		descricao.sendKeys("Teste de código de ajuste987");
 		datavigencia.sendKeys(fechaActual());
 		
 		sleep(1000);
@@ -138,10 +138,10 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 		sleep(1000);
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		codigo.sendKeys("39");
+		codigo.sendKeys("76");
 		
 		
-		descricao.sendKeys("Teste de código de ajuste 306");
+		descricao.sendKeys("Teste de código de ajuste 76");
 		datavigencia.sendKeys(fechaActual());
 		
 		

@@ -42,12 +42,12 @@ public class TarefasNASolicitarEsclarecimento extends TestBaseCristhian {
 	}
 	
 
-	@Test(priority = 1)
-	public void AccesarBPMA() {
-
-		tarefasNASolicitarEsclarecimentoPO.acessarBPMA();
-	}
-	
+//	@Test(priority = 1)
+//	public void AccesarBPMA() {
+//
+//		tarefasNASolicitarEsclarecimentoPO.acessarBPMA();
+//	}
+//	
 //	@Test(priority = 2)
 //	public void CriarProceso() {
 //
@@ -58,49 +58,77 @@ public class TarefasNASolicitarEsclarecimento extends TestBaseCristhian {
 //		}
 //
 //	}
+//	
+//	@Test(priority = 3)
+//	public void ativadorProcesos() {
+//
+//		tarefasNASolicitarEsclarecimentoPO.ativadorProcesos();
+//
+//	}
+//	
+//	@Test(priority = 4)
+//	public void TFPEntrar() {
+//
+//		boolean sucesso = tarefasNASolicitarEsclarecimentoPO.acessarTFP();
+//		assertTrue(sucesso, "The element is not present");
+//
+//	}
+//
+//	@Test(priority = 5)
+//	public void filtroTFP() {
+//
+//		ArrayList<Boolean> sucesso = tarefasNASolicitarEsclarecimentoPO.filtroTFP();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Criar);
+//		}
+//
+//	}
 	
-	@Test(priority = 3)
-	public void ativadorProcesos() {
+//	@Test(priority = 6)
+//	public void CalendarEntrar() {
+//
+//		boolean sucesso = tarefasNASolicitarEsclarecimentoPO.acessarCalendar();
+//		assertTrue(sucesso, "Não se Conseguiu Acessar o Componente");
+//
+//	}
+	
+	
+//	@Test(priority = 7)
+//	public void Calendario() {
+//
+//		ArrayList<Boolean> sucesso = tarefasNASolicitarEsclarecimentoPO.Calendario();
+//		
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), Criar);
+//		}
+//
+//	}
+	
+	@Test(priority = 9)
+	public void AccesarBPMA2() {
 
-		tarefasNASolicitarEsclarecimentoPO.ativadorProcesos();
-
+		tarefasNASolicitarEsclarecimentoPO.acessarBPMA();
 	}
 	
-	@Test(priority = 4)
-	public void TFPEntrar() {
+	@Test(priority = 10)
+	public void Lexeira1() {
 
-		boolean sucesso = tarefasNASolicitarEsclarecimentoPO.acessarTFP();
-		assertTrue(sucesso, "The element is not present");
-
-	}
-
-	@Test(priority = 5)
-	public void filtroTFP() {
-
-		ArrayList<Boolean> sucesso = tarefasNASolicitarEsclarecimentoPO.filtroTFP();
+		ArrayList<Boolean> sucesso = tarefasNASolicitarEsclarecimentoPO.lexeiraProcesos();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
+			assertTrue(sucesso.get(i), eliminar);
 		}
 
 	}
 	
-	@Test(priority = 6)
-	public void CalendarEntrar() {
+	@Test(priority = 11)
+	public void Lexeira2() {
 
-		boolean sucesso = tarefasNASolicitarEsclarecimentoPO.acessarCalendar();
-		assertTrue(sucesso, "Não se Conseguiu Acessar o Componente");
-
-	}
-	
-	
-	@Test(priority = 7)
-	public void Calendario() {
-
-		ArrayList<Boolean> sucesso = tarefasNASolicitarEsclarecimentoPO.Calendario();
+		ArrayList<Boolean> sucesso = tarefasNASolicitarEsclarecimentoPO.lexeiraAtivador();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
+			assertTrue(sucesso.get(i), eliminar);
 		}
 
 	}

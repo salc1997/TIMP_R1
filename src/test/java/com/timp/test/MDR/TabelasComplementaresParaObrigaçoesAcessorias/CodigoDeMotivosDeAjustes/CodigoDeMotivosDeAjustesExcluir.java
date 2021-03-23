@@ -18,7 +18,7 @@ public class CodigoDeMotivosDeAjustesExcluir extends TestBaseEliel {
 	CodigoDeMotivosDeAjustesExcluirPO codigoDeMotivosDeAjustesExcluirPO;
 
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass() { 
 
 		driver = initializationE();
 		loginTC = new LoginTC();

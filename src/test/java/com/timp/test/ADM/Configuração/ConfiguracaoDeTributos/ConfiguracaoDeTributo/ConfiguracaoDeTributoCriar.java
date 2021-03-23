@@ -23,7 +23,7 @@ public class ConfiguracaoDeTributoCriar extends TestBaseEliel {
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationE();
-	  loginTC = new LoginTC();
+	  loginTC = new LoginTC(); 
 	  acessarADMPO = new AcessarADMPO();
 	  configuracaoDeTributoCriarPO = new ConfiguracaoDeTributoCriarPO();
   }
@@ -33,23 +33,12 @@ public class ConfiguracaoDeTributoCriar extends TestBaseEliel {
 	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
-
-		
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		boolean sucesso = configuracaoDeTributoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);

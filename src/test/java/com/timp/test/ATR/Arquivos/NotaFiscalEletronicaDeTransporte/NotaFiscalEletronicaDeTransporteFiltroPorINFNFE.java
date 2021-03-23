@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.ATR.Arquivos.NotaFiscalEletronicaDeTransport
 
 public class NotaFiscalEletronicaDeTransporteFiltroPorINFNFE extends TestBaseEliel {
 	
-	LoginTC loginTC;
+	LoginTC loginTC; 
 	AcessarATRPO acessarATRPO;
 	NotaFiscalEletronicaDeTransporteFiltroPorINFNFEPO notaFiscalEletronicaDeTransporteFiltroPorINFNFEPO;
 	

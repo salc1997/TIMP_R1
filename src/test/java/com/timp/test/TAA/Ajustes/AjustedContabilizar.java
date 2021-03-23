@@ -29,21 +29,15 @@ public class AjustedContabilizar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void TAAEntrar() {
-		acessarTAAPO.acessarTAA();
 
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void ajustesContabilizar() {
+		loginTC.login();
+		acessarTAAPO.acessarTAA();
 		boolean sucesso = ajustedContabilizarPO.contabilizar();
 		assertTrue(sucesso, Criar);
 

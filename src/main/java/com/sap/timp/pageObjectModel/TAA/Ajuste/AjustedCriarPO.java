@@ -221,7 +221,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		 
 		if (tq1 == true) {
 
 			WebElement filialOPC = driver.findElement(By.xpath("//li[text()=\"0001\"]"));
@@ -319,7 +319,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		
 		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idN = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
-		idInserir1(idN );
+		idInserir("Ajuste",idN);
 		System.out.println("Id Nuevo"+id);
 		
 

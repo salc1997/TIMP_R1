@@ -34,21 +34,10 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa extends TestBaseCri
 	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
-		acessarBREPO.acessarBRE();
-
-	}
 	@Test(priority = 2)
 	public void criar() {
-
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.excluirMassa();
 
 		assertTrue(sucesso, Criar);

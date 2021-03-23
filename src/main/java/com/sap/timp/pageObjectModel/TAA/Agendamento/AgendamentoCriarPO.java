@@ -205,10 +205,10 @@ public class AgendamentoCriarPO extends TestBaseFernando{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		  
 		boolean sucesso = false;
-		  
+		   
 		if(rows == 0) {
 			return sucesso = true; 
-		}
+		} 
 		
 		// Se obtiene el primer registro de la tabla
 		String idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText(); 
@@ -221,7 +221,7 @@ public class AgendamentoCriarPO extends TestBaseFernando{
 		//compara pra ver se o novo id criado é realmente o ultimo		  
 		if (id2 > id1) { 
 			sucesso = true; 
-			idInserir4(idPrimerRegistro);
+			idInserir("Agendamento",idPrimerRegistro);
 			System.out.println("Registro creado...");
 		}
 		

@@ -23,7 +23,7 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseEliel{
 	public WebElement id;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
-	public WebElement pesquisar;
+	public WebElement pesquisar; 
 	
 	@FindBy(xpath = "//button/span[text()=\"Limpar Filtros\"]")
 	public WebElement limpar;

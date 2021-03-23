@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 
 public class TabelaComplementarParaDIRFDetalhes extends TestBaseEliel {
 
-	LoginTC loginTC;
+	LoginTC loginTC; 
 	AcessarMDRPO acessarMDRPO;
 	TabelaComplementarParaDIRFDetalhesPO tabelaComplementarParaDIRFDetalhesPO;
 

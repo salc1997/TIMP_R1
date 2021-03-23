@@ -34,7 +34,7 @@
 			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia"></class>
 			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir"></class>
 			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa"></class>
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos."></class>
+			
 		</classes>
 
 	</test> 

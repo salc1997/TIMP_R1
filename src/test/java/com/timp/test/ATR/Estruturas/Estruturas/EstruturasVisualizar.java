@@ -58,6 +58,6 @@ public class EstruturasVisualizar extends TestBaseCristhian {
 	 			assertTrue(sucesso.get(i), visualizaçar);
 				
 			}	
-	 		
+	 		sleep(2000);
 	 }
 }

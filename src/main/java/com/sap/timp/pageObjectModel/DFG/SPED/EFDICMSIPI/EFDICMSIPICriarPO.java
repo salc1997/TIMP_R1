@@ -428,6 +428,9 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash_rules\"]")
 	public WebElement lixeiraBRE;
 	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ1;
+	
 	public EFDICMSIPICriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -688,11 +691,18 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 	
 	
 	public boolean BRE() {
+
 		String url = driver.getCurrentUrl();
-		
+
 		boolean tp1  = false;
-		
-		if (url.contains("tp1")) {
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
 			tp1 = true;
 		}
 		home.click();
@@ -734,7 +744,16 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		tipoRegraO.click();
 		sleep(1000);
 		
-		componente.click();
+
+		
+		if (tc2 == true) {
+			componente.click();
+		}else if (tp1==true ) {
+			componente.click();
+		}else {
+			componenteTQ1.click();
+		}
+		
 		sleep(1000);
 		componenteO.click();
 		sleep(1000);
@@ -759,7 +778,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		}
 		
 		
-		sleep(1000);
+		sleep(2000);
 		
 		estruturaR.click();
 		sleep(1000);
@@ -991,12 +1010,25 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		driver.navigate().refresh();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		blocosApuracao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		primeira.click();
-		sleep(5000);
+		System.out.println("Dio click en primera pagina");
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
+		System.out.println("Dio click en ultima pagina");
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

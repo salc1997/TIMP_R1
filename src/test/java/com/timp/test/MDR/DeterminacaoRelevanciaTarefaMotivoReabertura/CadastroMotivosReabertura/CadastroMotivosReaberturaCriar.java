@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class CadastroMotivosReaberturaCriar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroMotivosReaberturaCriarPO cadastroMotivosReaberturaCriarPO;
@@ -34,13 +34,11 @@ public class CadastroMotivosReaberturaCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = cadastroMotivosReaberturaCriarPO.criar();

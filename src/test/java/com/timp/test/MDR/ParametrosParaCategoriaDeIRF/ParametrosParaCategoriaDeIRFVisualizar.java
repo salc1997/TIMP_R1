@@ -15,36 +15,36 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel{
+public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 //	ParametrosParaCategoriaDeIRFVisualizarPO parametrosParaCategoriaDeIRFVisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
-	//	parametrosParaCategoriaDeIRFVisualizarPO = new ParametrosParaCategoriaDeIRFVisualizarPO();
-  }
+		// parametrosParaCategoriaDeIRFVisualizarPO = new
+		// ParametrosParaCategoriaDeIRFVisualizarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void visualizar() {
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
-//		parametrosParaCategoriaDeIRFVisualizarPO.Visualizar();
-		//ArrayList<Boolean> sucesso = regradeReaberturaVisualizarPO.visualizar();
 
-		//for (int i = 0; i < sucesso.size(); i++) {
-		//	assertTrue(sucesso.get(i), visualizaçar);
-		//}
+//		parametrosParaCategoriaDeIRFVisualizarPO.Visualizar();
+		// ArrayList<Boolean> sucesso = regradeReaberturaVisualizarPO.visualizar();
+
+		// for (int i = 0; i < sucesso.size(); i++) {
+		// assertTrue(sucesso.get(i), visualizaçar);
+		// }
 	}
 
 }

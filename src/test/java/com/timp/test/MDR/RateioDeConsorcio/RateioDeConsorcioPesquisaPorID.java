@@ -11,8 +11,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorIDPO;
 
-public class RateioDeConsorcioPesquisaPorID extends TestBaseEliel{
-	
+public class RateioDeConsorcioPesquisaPorID extends TestBaseEliel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RateioDeConsorcioPesquisaPorIDPO rateioDeConsorcioPesquisaPorIDPO;
@@ -32,20 +32,15 @@ public class RateioDeConsorcioPesquisaPorID extends TestBaseEliel{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtro() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = rateioDeConsorcioPesquisaPorIDPO.filtro();
 		assertTrue(sucesso, Filtros);
 
-		
-
 	}
-
 
 }

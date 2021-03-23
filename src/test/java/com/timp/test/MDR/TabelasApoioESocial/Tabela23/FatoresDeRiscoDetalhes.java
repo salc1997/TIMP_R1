@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class FatoresDeRiscoDetalhes extends TestBaseKenssy{
+public class FatoresDeRiscoDetalhes extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FatoresDeRiscoDetalhesPO fatoresDeRiscoDetalhesPO;
@@ -48,6 +48,5 @@ public class FatoresDeRiscoDetalhes extends TestBaseKenssy{
 		}
 
 	}
-
 
 }

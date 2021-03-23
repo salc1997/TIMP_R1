@@ -65,18 +65,24 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 	}
 	
 	public boolean criar() {
-		
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		tributos.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		agrupamentodetributos.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+		waitExpectElement(siguiente);
+		sleep(2000);
+		
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -138,8 +144,10 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 		gravar.click();
 		sleep(2000);
 	
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		agrupamentodetributos.click();
 		
 		sleep(2000);
@@ -150,10 +158,8 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 		
 		siguiente.click();
 		
-		sleep(3000);
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
 		

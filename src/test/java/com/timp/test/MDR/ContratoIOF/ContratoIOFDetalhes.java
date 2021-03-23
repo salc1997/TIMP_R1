@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ContratoIOFDetalhes extends TestBaseCristhian{
+public class ContratoIOFDetalhes extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContratoIOFDetalhesPO contratoIOFDetalhesPO;
@@ -35,11 +35,9 @@ public class ContratoIOFDetalhes extends TestBaseCristhian{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Detalhes() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

@@ -18,7 +18,7 @@ public class TabelaDeAtribuicaoDeCodigoCFOPDetalhes extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeAtribuicaoDeCodigoCFOPDetalhesPO tabelaDeAtribuicaoDeCodigoCFOPDetalhesPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class StatusParaBancoIndébitosExcluir extends TestBaseCristhian{
+public class StatusParaBancoIndébitosExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusParaBancoIndébitosExcluirPO statusParaBancoIndébitosExcluirPO;
@@ -33,10 +33,9 @@ public class StatusParaBancoIndébitosExcluir extends TestBaseCristhian{
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

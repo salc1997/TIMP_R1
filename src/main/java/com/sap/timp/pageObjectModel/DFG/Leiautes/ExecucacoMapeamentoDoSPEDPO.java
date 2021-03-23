@@ -512,7 +512,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		while (!mapeamento.isDisplayed()) {
 			flecha.click();
 		}
-		sleep(1000);
+		sleep(4000);
 		
 		mapeamento.click();
 		sleep(1000);
@@ -625,9 +625,11 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		raiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		sleep(3000);
 		siguiente.click();
 		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

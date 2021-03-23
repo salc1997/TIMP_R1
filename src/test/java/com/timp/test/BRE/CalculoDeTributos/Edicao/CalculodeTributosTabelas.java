@@ -28,7 +28,6 @@ public class CalculodeTributosTabelas extends TestBaseCristhian {
 		calculodeTributosTabelasPO = new CalculodeTributosTabelasPO();
 	}
 
-
 	@AfterClass
 	public void afterClass() {
 		driver.close();

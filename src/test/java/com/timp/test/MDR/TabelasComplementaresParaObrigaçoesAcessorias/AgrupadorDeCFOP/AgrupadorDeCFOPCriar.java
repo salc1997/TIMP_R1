@@ -17,7 +17,7 @@ public class AgrupadorDeCFOPCriar extends TestBaseEliel {
 	AcessarMDRPO acessarMDRPO;
 	AgrupadorDeCFOPCriarPO agrupadorDeCFOPCriarPO;
 
-	@BeforeClass
+	@BeforeClass 
 	public void beforeClass() {
 
 		driver = initializationE();

@@ -34,12 +34,11 @@ public class MapeamentoContabilCorrecaoEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = mapeamentoContabilCorrecaoEditarPO.editar();

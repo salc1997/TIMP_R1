@@ -16,7 +16,7 @@ public class TabelaDeCodigoEClasseParaQuadroCriar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeCodigoEClasseParaQuadroCriarPO tabelaDeCodigoEClasseParaQuadroCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

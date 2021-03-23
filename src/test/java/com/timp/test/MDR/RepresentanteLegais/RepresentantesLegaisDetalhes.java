@@ -33,15 +33,13 @@ public class RepresentantesLegaisDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = representantesLegaisDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

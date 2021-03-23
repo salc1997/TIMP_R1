@@ -32,8 +32,6 @@ public class MapeamentoDeRelevanciaParaPisCofinsExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
 		loginTC.login();

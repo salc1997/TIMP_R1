@@ -24,7 +24,7 @@ public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -36,19 +36,18 @@ public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void Detalhes() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = hierarquiaDeCenariosDeCorreçaoDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Detalhes);	
+			assertTrue(sucesso.get(i), Detalhes);
 		}
-		//assertEquals(sucesso, "edit", visualizaçar);
+		// assertEquals(sucesso, "edit", visualizaçar);
 	}
 
 }

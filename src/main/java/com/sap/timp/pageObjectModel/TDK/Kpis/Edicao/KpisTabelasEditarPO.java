@@ -109,7 +109,7 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter("KpisCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -152,8 +152,9 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		conteudo.click();
 		sleep(3000);
 		
+		waitExpectElement(nomeFlagPersonalizado);
 		nomeFlagPersonalizado.click();
-		sleep(2000);
+		sleep(3000);
 		
 		etiqueta.sendKeys("Base ICMS");
 		sleep(2000);
@@ -212,6 +213,7 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		editTabela.click();
 		sleep(2000);
 		
+		waitExpectElement(nomeCabelhaco);
 		String nuevoTexto = nomeCabelhaco.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

@@ -31,24 +31,18 @@ public class RelacionamentoEstruturasExcluirEmMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 2)
-	public void ATREntrar() {
-		acessarATRPO.acessarATR();
-	}
-
-	@Test(priority = 3)
+	@Test()
 	public void criarRelacionamento() {
+		
+		loginTC.login();
+ 		acessarATRPO.acessarATR();
+ 		
 		boolean sucesso = relacionamentoEstruturasExcluirEmMassaPO.criar();
 		assertTrue(sucesso,Criar);
 	}
 
-	@Test(priority = 4)
+	@Test(dependsOnMethods = "criarRelacionamento")
 	public void excluirMassa() {
 		boolean sucesso = relacionamentoEstruturasExcluirEmMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);

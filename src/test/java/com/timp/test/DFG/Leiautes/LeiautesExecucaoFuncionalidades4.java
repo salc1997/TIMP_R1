@@ -127,7 +127,7 @@ public class LeiautesExecucaoFuncionalidades4 extends TestBaseKenssy{
 	
 	
 	
-	
+	/*
 	
 	
 	@Test(priority = 10)
@@ -256,6 +256,6 @@ public class LeiautesExecucaoFuncionalidades4 extends TestBaseKenssy{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-	}
+	}*/
 	
 }

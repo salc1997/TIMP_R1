@@ -56,7 +56,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		String idRegistro = idObter("MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes");
-		
+		System.out.println(idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
@@ -68,14 +68,17 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		waitExpectElement(campo);
-		attributoNotToBeEmptyElement(campo, "value");
-
+		sleep(3000);
+		actionsMoveToElementElement(campo);
+		//attributoNotToBeEmptyElement(campo, "value");
+		
 		
 		sleep(3000);
 
 		String valor = campo.getAttribute("value");
-
+		System.out.println(valor);
 		String enviar = "20";
 
 		campo.clear();
@@ -95,8 +98,12 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
 		waitExpectElement(campo);
-		attributoNotToBeEmptyElement(campo, "value");
+		sleep(3000);
+		actionsMoveToElementElement(campo);
+		
+		//attributoNotToBeEmptyElement(campo, "value");
 		
 		sleep(2000);
 

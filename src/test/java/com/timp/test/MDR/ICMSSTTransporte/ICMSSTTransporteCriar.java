@@ -32,7 +32,6 @@ public class ICMSSTTransporteCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 

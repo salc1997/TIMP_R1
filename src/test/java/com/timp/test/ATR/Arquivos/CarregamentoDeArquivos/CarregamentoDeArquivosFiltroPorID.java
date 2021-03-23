@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorIDPO;
 
 public class CarregamentoDeArquivosFiltroPorID extends TestBaseEliel{
-	
+	 
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -31,31 +31,25 @@ public class CarregamentoDeArquivosFiltroPorID extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  
+		driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void filtro() {
 	 		
+	 		loginTC.login();
+	 		
+	 		 acessarATRPO.acessarATR();
+	 		 
 	 		ArrayList<Boolean> sucesso = carregamentoDeArquivosFiltroPorIDPO.filtro();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Filtros);
 			}
 			
 		
-	 		
+	 		sleep(2000);
 	 	}
 	
  

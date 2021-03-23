@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CodificaçãoDeAcDeTrabDetalhes  extends TestBaseKenssy{
+public class CodificaçãoDeAcDeTrabDetalhes extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodificaçãoDeAcDeTrabDetalhesPO codificaçãoDeAcDeTrabDetalhesPO;
@@ -48,6 +48,5 @@ public class CodificaçãoDeAcDeTrabDetalhes  extends TestBaseKenssy{
 		}
 
 	}
-
 
 }

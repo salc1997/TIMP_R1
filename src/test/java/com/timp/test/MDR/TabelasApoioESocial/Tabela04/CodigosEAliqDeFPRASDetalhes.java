@@ -13,11 +13,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASDetalhesPO;
 
-public class CodigosEAliqDeFPRASDetalhes extends TestBaseFernando{
+public class CodigosEAliqDeFPRASDetalhes extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	CodigosEAliqDeFPRASDetalhesPO codigosEAliqDeFPRASDetalhesPO;
-	 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
@@ -25,19 +25,19 @@ public class CodigosEAliqDeFPRASDetalhes extends TestBaseFernando{
 		accesarMDRPO = new AcessarMDRPO();
 		codigosEAliqDeFPRASDetalhesPO = new CodigosEAliqDeFPRASDetalhesPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	  
+
 	@Test()
-	public void detalhe() {		
-		loginTC.login();		
+	public void detalhe() {
+		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = codigosEAliqDeFPRASDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}

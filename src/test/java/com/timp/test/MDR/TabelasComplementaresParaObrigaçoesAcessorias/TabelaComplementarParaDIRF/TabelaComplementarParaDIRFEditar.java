@@ -16,7 +16,7 @@ public class TabelaComplementarParaDIRFEditar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaComplementarParaDIRFEditarPO tabelaComplementarParaDIRFEditarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -37,7 +37,7 @@ public class TabelaComplementarParaDIRFEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = tabelaComplementarParaDIRFEditarPO.editar();
 
-		assertTrue(sucesso, Editar);
+		assertTrue(sucesso, Editar); 
 
 	}
 

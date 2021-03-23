@@ -33,13 +33,11 @@ public class SaldoInicialDiferidoFiltroID extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtro() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = saldoInicialDiferidoFiltroIDPO.filtro();

@@ -27,11 +27,10 @@ public class CategoriasDeTrabalhadoresExcluirMassa extends TestBaseCristhian {
 		categoriaDeTrabalhadoresExcluirMassaPO = new CategoriaDeTrabalhadoresExcluirMassaPO();
 	}
 
-
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void criar() {

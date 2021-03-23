@@ -20,31 +20,28 @@ public class MovimentoDetalhes extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MovimentoDetalhesPO movimentoDetalhesPO;
-	
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  movimentoDetalhesPO = new MovimentoDetalhesPO();
-	  
-  }
 
-  @AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		movimentoDetalhesPO = new MovimentoDetalhesPO();
+
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-
-
 	@Test()
-	  public void detalheMovimento() {
-		
+	public void detalheMovimento() {
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = movimentoDetalhesPO.DetalheMovimento();
 
 		for (int i = 0; i < sucesso.size(); i++) {
@@ -52,8 +49,7 @@ public class MovimentoDetalhes extends TestBaseKenssy {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-		
 
-	  }
+	}
 
 }

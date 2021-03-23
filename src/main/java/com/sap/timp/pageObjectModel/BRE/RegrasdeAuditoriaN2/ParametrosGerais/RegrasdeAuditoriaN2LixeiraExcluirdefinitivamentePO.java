@@ -44,13 +44,14 @@ public boolean lexeira() {
 	AN2.click();
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
-
+ 
 	btnUltimaPagina.click();
 	sleep(2000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	//String idRegistro = idObter3();
+	String idRegistro = idObter("An2");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

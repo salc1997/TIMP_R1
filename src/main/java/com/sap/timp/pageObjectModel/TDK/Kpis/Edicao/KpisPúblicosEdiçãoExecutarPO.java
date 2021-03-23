@@ -115,7 +115,7 @@ public class KpisPúblicosEdiçãoExecutarPO extends TestBaseCristhian {
 		sleep(2000);
 		
 	
-		String idRegistro =idObter2();
+		String idRegistro =idObter("KpisCriar");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

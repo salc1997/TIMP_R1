@@ -23,7 +23,7 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseEliel{
 	public WebElement id;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
-	public WebElement pesquisar;
+	public WebElement pesquisar; 
 	
 	@FindBy(xpath = "//button/span[text()=\"Limpar Filtros\"]")
 	public WebElement limpar;
@@ -69,9 +69,11 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseEliel{
 		waitExpectElement(limpar);
 		sleep(2000);
 		limpar.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
+		
+		sleep(4000);
 		
 		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		

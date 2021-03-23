@@ -31,13 +31,11 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisEditarPO.editar();

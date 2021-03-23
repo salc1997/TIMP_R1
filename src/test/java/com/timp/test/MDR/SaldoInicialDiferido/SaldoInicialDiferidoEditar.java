@@ -33,15 +33,13 @@ public class SaldoInicialDiferidoEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = saldoInicialDiferidoEditarPO.editar();
 		assertTrue(sucesso, semAcesso);
 

@@ -33,8 +33,6 @@ public class ParametrosParaCategoriaDeIRFDetalhes extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
 		loginTC.login();

@@ -34,11 +34,9 @@ public class DeterminacaoDeRelevanciaPorRegraVisualizar extends TestBaseCristhia
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

@@ -34,30 +34,18 @@ public class FiltroPorIDRegistroCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void criar() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
 		acessarBrbPO.acessar();
 
-	}
-
-	@Test(priority = 2)
-	public void criar() {
-
 		ArrayList<Boolean> sucesso = filtroPorIDRegistroPO.filtro();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
 		}
 	}
-
 }

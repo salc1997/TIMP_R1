@@ -23,7 +23,7 @@ public class CadastroMotivosReaberturaExcluir extends TestBaseSteven {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -35,11 +35,9 @@ public class CadastroMotivosReaberturaExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

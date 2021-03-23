@@ -39,7 +39,7 @@ public class CodigosEAliqDeFPRASExcluirMassa extends TestBaseFernando {
 		boolean sucesso = codigosEAliqDeFPRASExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso1 = codigosEAliqDeFPRASExcluirMassaPO.exluirMassa();

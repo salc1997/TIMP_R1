@@ -72,10 +72,10 @@ public class ExecucoesExecucoesPublicasFiltrosAvaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Filtrar por Usuário de Criação\"]")
+	@FindBy(xpath = "//div[@id=\"creationUser\"]/div/div/div[2]")
 	public WebElement usuarioCreador;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Filtrar por Usuário de Modificação\"]")
+	@FindBy(xpath = "//div[@id=\"modificationUser\"]/div/div/div[2]")
 	public WebElement usuarioModificador;
 	
 	@FindBy(xpath = "//li[text()=\"TESTEAUTOMATIZADO TESTEAUTOMATIZADO\"]")
@@ -144,7 +144,7 @@ public class ExecucoesExecucoesPublicasFiltrosAvaPO extends TestBaseCristhian {
 		sleep(2000);
 		filModeloOpc.click();
 		sleep(2000);
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -178,7 +178,9 @@ public class ExecucoesExecucoesPublicasFiltrosAvaPO extends TestBaseCristhian {
 		fechar.click();
 		sleep(2000);
 		limparFiltros.click();
-		sleep(7000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		if (tq1==true) {
 			

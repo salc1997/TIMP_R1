@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class NaturezaJuridicaDetalhes extends TestBaseKenssy{
+public class NaturezaJuridicaDetalhes extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaJuridicaDetalhesPO naturezaJuridicaDetalhesPO;

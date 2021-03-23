@@ -65,7 +65,7 @@ public class ConfiguraçãoTributoAgrupamentoCriarPO extends TestBaseCristhian {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		 
 		btnPrimeraPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -104,7 +104,7 @@ public class ConfiguraçãoTributoAgrupamentoCriarPO extends TestBaseCristhian {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		 
 		btnPrimeraPagina.click();
 		
 		sleep(2000);
@@ -128,9 +128,9 @@ public class ConfiguraçãoTributoAgrupamentoCriarPO extends TestBaseCristhian {
 		int id2 = convertToInt(idPrimerRegistro);
 		
 		//compara pra ver se o novo id criado é realmente o ultimo		  
-		if (id2 > id1) { 
+		if (id2 > id1) {  
 			sucesso = true; 
-			idInserir4(idPrimerRegistro);
+			idInserir("ConfiguraçãoTributoAgrupamento",idPrimerRegistro);
 			System.out.println("Registro creado...");
 		}
 		

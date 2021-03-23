@@ -32,14 +32,13 @@ public class ContasDefaultPorTributoEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = contasDefaultPorTributoEditarPO.editar();
 
 		assertTrue(sucesso, visualizaçar);

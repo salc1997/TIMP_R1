@@ -18,25 +18,24 @@ public class SPCBFederaisRetidosExcluirMassa extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SPCBFederaisRetidosExcluirMassaPO sPCBFederaisRetidosExcluirMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		sPCBFederaisRetidosExcluirMassaPO = new SPCBFederaisRetidosExcluirMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -46,10 +45,9 @@ public class SPCBFederaisRetidosExcluirMassa extends TestBaseCristhian {
 		assertTrue(sucesso, Criar);
 
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-	
 
 		boolean sucesso = sPCBFederaisRetidosExcluirMassaPO.excluir();
 

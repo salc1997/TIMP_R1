@@ -33,15 +33,13 @@ public class DeterminacaoDeTipoDeCondicaoDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Detalhes() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = determinacaoDeTipoDeCondicaoDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

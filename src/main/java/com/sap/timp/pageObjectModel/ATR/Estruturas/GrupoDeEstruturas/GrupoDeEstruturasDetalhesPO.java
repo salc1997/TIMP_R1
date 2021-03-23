@@ -49,9 +49,9 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Preencha o nome do grupo\"]")
 	public WebElement nomedogrupo;
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[2]")
-	public WebElement ajustefiscais;
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[1]")
 	public WebElement cfop;
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[1]")
+	public WebElement ajustefiscais;
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar; 
@@ -78,7 +78,7 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseEliel {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("GrupoDeEstruturasCriar");
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
@@ -111,7 +111,7 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseEliel {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 = idObter("GrupoDeEstruturasCriar");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement ver = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));

@@ -13,11 +13,11 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NotasDeclararAnexoIIIExcluir extends TestBaseFernando{
+public class NotasDeclararAnexoIIIExcluir extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	NotasDeclararAnexoIIIExcluirPO notasDeclararAnexoIIIExcluirPO;
-	
+
 	public NotasDeclararAnexoIIIExcluir() {
 		super();
 	}
@@ -35,14 +35,13 @@ public class NotasDeclararAnexoIIIExcluir extends TestBaseFernando{
 		driver.close();
 	}
 
-	
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 
 		acesarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = notasDeclararAnexoIIIExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

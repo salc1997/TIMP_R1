@@ -18,32 +18,30 @@ public class IncentivosFiscaisCriar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	IncentivosFiscaisCriarPO incentivosFiscaisCriarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  incentivosFiscaisCriarPO = new IncentivosFiscaisCriarPO();
-  }
-  
 
-  	@AfterClass
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		incentivosFiscaisCriarPO = new IncentivosFiscaisCriarPO();
+	}
+
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-
 	@Test()
-	  public void CriarIncentivosFiscais() {
+	public void CriarIncentivosFiscais() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = incentivosFiscaisCriarPO.CriarIncentivosFiscais();
 		assertTrue(sucesso, Criar);
 
-	  }
-	
+	}
+
 }

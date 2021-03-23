@@ -22,32 +22,21 @@ public class ConfiguraçãodeTributoXTributoGrupoCriar extends TestBaseCristhian {
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationC();
-	  loginTC = new LoginTC();
+	  loginTC = new LoginTC(); 
 	  acessarADMPO = new AcessarADMPO();
 	  configuraçãodeTributoXTributoGrupoCriarPO = new ConfiguraçãodeTributoXTributoGrupoCriarPO();
   }
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
-
-		
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		boolean sucesso = configuraçãodeTributoXTributoGrupoCriarPO.criar();
 		assertTrue(sucesso, Criar);
 

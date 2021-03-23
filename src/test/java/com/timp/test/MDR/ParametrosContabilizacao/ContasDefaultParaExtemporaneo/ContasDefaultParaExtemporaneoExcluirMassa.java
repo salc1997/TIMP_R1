@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ContasDefaultParaExtemporaneoExcluirMassa extends TestBaseFernando{
+public class ContasDefaultParaExtemporaneoExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultParaExtemporaneoExcluirMassaPO contasDefaultParaExtemporaneoExcluirMassaPO;
@@ -31,19 +31,17 @@ public class ContasDefaultParaExtemporaneoExcluirMassa extends TestBaseFernando{
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = contasDefaultParaExtemporaneoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = contasDefaultParaExtemporaneoExcluirMassaPO.exluirMassa();

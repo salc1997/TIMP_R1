@@ -33,10 +33,9 @@ public class StatusParaBCEEditar extends TestBaseSteven {
 
 	@Test()
 	public void editar() {
-		
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = statusParaBCEEditarPO.editar();

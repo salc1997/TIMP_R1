@@ -14,39 +14,30 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class RateiroConsorcio extends TestBaseMassiel {
-	
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	RateiroConsorcioPO rateiroConsorcioPO;
-	
-	 @BeforeClass
-	    public void beforeClass() {
-		  driver = initializationM();
-		  accesarMDRPO = new AcessarMDRPO();
-		  loginTC = new LoginTC();
-		  rateiroConsorcioPO = new  RateiroConsorcioPO();
-	  }
-	 
-	@AfterClass
-	  public void afterClass() {
-		//cerrar navegador
-		driver.close();
-	  }
-	
 
-    
-    @Test()
-   	public void criar() {
-    	loginTC.login();
-    	accesarMDRPO.acessarMDR();
-    	rateiroConsorcioPO.Criar();
-   	}
-    
-    
-	
-   
- 
-  
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		accesarMDRPO = new AcessarMDRPO();
+		loginTC = new LoginTC();
+		rateiroConsorcioPO = new RateiroConsorcioPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		// cerrar navegador
+		driver.close();
+	}
+
+	@Test()
+	public void criar() {
+		loginTC.login();
+		accesarMDRPO.acessarMDR();
+		rateiroConsorcioPO.Criar();
+	}
 
 }

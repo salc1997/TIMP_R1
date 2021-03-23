@@ -22,7 +22,7 @@ public class CodigosDeLotacaoEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	CodigosDeLotacaoEditarPO codigosDeLotacaoEditarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

@@ -31,23 +31,21 @@ public class IncentivosFiscaisExcluirEmMassa extends TestBaseKenssy {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = incentivosFiscaisExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
-		
+
 		boolean sucesso2 = incentivosFiscaisExcluirEmMassaPO.incentivosFiscaisExcluirEmMassa();
 		assertTrue(sucesso2, Eliminado);
 	}

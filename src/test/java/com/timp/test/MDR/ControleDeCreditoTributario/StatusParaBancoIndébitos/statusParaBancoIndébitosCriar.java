@@ -33,10 +33,9 @@ public class statusParaBancoIndébitosCriar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

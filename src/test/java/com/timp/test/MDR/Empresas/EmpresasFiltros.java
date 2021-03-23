@@ -1,6 +1,5 @@
 package com.timp.test.MDR.Empresas;
 
-
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -33,14 +32,13 @@ public class EmpresasFiltros extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void filtros() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = empresasFiltrosPO.razaoSocial();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {

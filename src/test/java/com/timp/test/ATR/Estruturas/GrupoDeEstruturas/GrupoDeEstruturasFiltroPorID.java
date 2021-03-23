@@ -21,42 +21,37 @@ public class GrupoDeEstruturasFiltroPorID extends TestBaseEliel {
 	GrupoDeEstruturasFiltroPorIDPO grupoDeEstruturasFiltroPorIDPO;
 	
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarATRPO = new AcessarATRPO();
-		  grupoDeEstruturasFiltroPorIDPO = new  GrupoDeEstruturasFiltroPorIDPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarATRPO = new AcessarATRPO();
+		grupoDeEstruturasFiltroPorIDPO = new  GrupoDeEstruturasFiltroPorIDPO();
+	}
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void filtro() {
-	 		
-	 		ArrayList<Boolean> sucesso = grupoDeEstruturasFiltroPorIDPO.filtro();
-	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), Filtros);
-			}
-			
-		
-	 		
-	 	}
-	
-	
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+
+	@Test()
+	public void filtro() {
+
+		loginTC.login();
+
+		acessarATRPO.acessarATR();
+
+		ArrayList<Boolean> sucesso = grupoDeEstruturasFiltroPorIDPO.filtro();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Filtros);
+		}
+
+
+
+	}
+
+
 }

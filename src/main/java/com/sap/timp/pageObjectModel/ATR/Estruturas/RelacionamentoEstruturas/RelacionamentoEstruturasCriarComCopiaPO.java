@@ -111,7 +111,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> criar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
 		String url = driver.getCurrentUrl();
 		
@@ -170,9 +170,9 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		
 		String idDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id após da criação: " + idDC);
-		idInserir2(idDC);
+		idInserir("RelacionamentoEstruturasCriarCopia",idDC);
 		
-		int idACI = convertToInt(idObter1());
+		int idACI = convertToInt(idObter("RelacionamentoEstruturasCriar"));
 		int idADI = convertToInt(idDC);
 		
 		
@@ -212,7 +212,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> editar() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RelacionamentoEstruturasCriarCopia");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
@@ -266,7 +266,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	
 	public boolean excluir() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RelacionamentoEstruturasCriarCopia");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Excluir\"]"));

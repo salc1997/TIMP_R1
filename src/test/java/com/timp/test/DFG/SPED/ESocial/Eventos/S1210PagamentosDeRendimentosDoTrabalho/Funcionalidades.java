@@ -28,7 +28,7 @@ public class Funcionalidades extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -48,14 +48,14 @@ public class Funcionalidades extends TestBaseFernando{
 		assertTrue(sucesso, Criar);
 	}
 	
-//	@Test(priority = 3)
-//	public void informacao() {
-//		ArrayList<Boolean> sucesso = funcionalidadesPO.informacao();
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), visualizaçar);
-//		}
-//	}
+	@Test(priority = 3)
+	public void informacao() {
+		ArrayList<Boolean> sucesso = funcionalidadesPO.informacao();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+	}
 	
 	@Test(priority = 4)
 	public void visualizar() {

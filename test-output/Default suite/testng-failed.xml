@@ -1,151 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-=======
-=======
->>>>>>> refs/remotes/origin/Kenssy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Kenssy
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
->>>>>>> refs/heads/Fernando
-=======
-
-      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar">
-
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
->>>>>>> refs/heads/Cristhian
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-        <methods>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-          <include name="filtros"/>
-=======
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="Visualizar"/>
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="subNivel5"/>
-          <include name="excluirHierarquia"/>
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir">
 >>>>>>> refs/heads/Cristhian
 =======
 <<<<<<< HEAD
-=======
-          <include name="asignarValores"/>
-
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-
-      <class name="com.timp.test.DFG.SPED.ECD.ECDFuncionalidades">
-      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
-
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.BRERegradeEscrituraçãoEdiçãoSimular">
-
-      <class name="com.timp.test.TFP.Configurações.Período.ConfiguraçõesPeríodoCopiar">
-
-        <methods>
-
-          <include name="ExecucaoBlocoApuracao"/>
-          <include name="EditarECD"/>
-          <include name="InformacaoBlocoApuracao"/>
-          <include name="EditarBlocoApuracao"/>
-
-          <include name="beforeClass"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar">
-        <methods>
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="abrirSubnivel2"/>
-          <include name="excluirConfiguracoes"/>
-          <include name="abrirSubnivel3"/>
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
-=======
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoDaReceitas.TabelaCodigoReceitaDetalhes -->
-
-      <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar">
-
-=======
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar">
->>>>>>> refs/remotes/origin/Kenssy
-        <methods>
->>>>>>> refs/heads/Cristhian
-          <include name="criar"/>
-<<<<<<< HEAD
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="afterClass"/>
-<<<<<<< HEAD
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
-=======
-      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP">
-        <methods>
-          <include name="EnviarLixeria"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP -->
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
 >>>>>>> refs/remotes/origin/Yessy
 =======
-      </class> <!-- com.timp.test.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades -->
-      </class> <!-- com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes -->
-
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos">
+>>>>>>> refs/heads/Fernando
 =======
+      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar">
+>>>>>>> refs/remotes/origin/Yessy
+        <methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/heads/Fernando
+          <include name="linksrapidos"/>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> refs/remotes/origin/Yessy
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <include name="afterClass"/>
+=======
+>>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar -->
->>>>>>> refs/remotes/origin/Kenssy
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
 =======
-      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
->>>>>>> refs/heads/Cristhian
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos -->
+>>>>>>> refs/heads/Fernando
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir">
+=======
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+          <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+          <include name="Excluir"/>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir -->
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
 =======
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar -->
->>>>>>> refs/remotes/origin/Kenssy
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

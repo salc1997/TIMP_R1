@@ -22,17 +22,23 @@ public class LeiautesExecucacoFuncionalidades4Pt2PO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Adicionar bloco\"]")
 	public WebElement btnAdicionarBloco;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[3]/button")
+	@FindBy(xpath = "//button/span[text()=\"Adicionar bloco\"]")
+	public WebElement adicionarBloco;
+	
+	@FindBy(xpath = "//div[@block-id=\"1\"]/div/div/div[3]/button")
 	public WebElement adicionarRegistro2;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[@class=\"block-name\"]/div/div[2]/div/div/div[2]/input")
+	@FindBy(xpath = "//div[@block-id=\"1\"]/div/div/div[@class=\"block-name\"]/div/div[2]/div/div/div[2]/input")
 	public WebElement nombreBloco2;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[@class=\"record-name\"]/div/div[2]/div/div/div[2]/input")
+	@FindBy(xpath = "//div[@block-id=\"1\"]/div/div/div[@class=\"record-name\"]/div/div[2]/div/div/div[2]/input")
 	public WebElement nombreRegistro2;
 	
 	@FindBy(xpath = "//span[text()=\"Campos Especiais\"]")
 	public WebElement btnCamposEspeciais;
+	
+	@FindBy(xpath = "//div/span[text()=\"Campos Especiais\"][1]")
+	public WebElement abaCamposEspeciais;
 	
 	@FindBy(xpath = "//li[@data-id=\"fxf\"]/div/div/span[contains(text(),\"Campo Fixo\")][1]")
 	public WebElement camposFijoDaRegistro;
@@ -73,6 +79,9 @@ public class LeiautesExecucacoFuncionalidades4Pt2PO extends TestBaseFernando{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement btnNao;
 	
+	@FindBy(xpath = "//div/span[text()=\"Ajustes Fiscais\"][1]")
+	public WebElement abaAjusteFiscais;
+	
 	public LeiautesExecucacoFuncionalidades4Pt2PO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -93,6 +102,7 @@ public class LeiautesExecucacoFuncionalidades4Pt2PO extends TestBaseFernando{
 		System.out.println("");
 		System.out.println("ID Registro: " + idRegistro);
 		System.out.println("");
+		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -106,25 +116,37 @@ public class LeiautesExecucacoFuncionalidades4Pt2PO extends TestBaseFernando{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		sleep(2000);
+		sleep(2000);
 		
-		btnAdicionarBloco.click();
+		adicionarBloco.click();
 		sleep(2000);
 		
 		adicionarRegistro2.click();
 		sleep(2000);
 		
-		nombreBloco2.sendKeys("Bloco 2");
+		nombreBloco2.sendKeys("2");
 		sleep(2000);
 		
-		nombreRegistro2.sendKeys("Registro 1");
+		nombreRegistro2.sendKeys("1");
 		sleep(2000);
 		
-		btnCamposEspeciais.click();
+		
+		abaCamposEspeciais.click();
 		sleep(2000);
 		
+		abaAjusteFiscais.click();
+		sleep(2000);
+		
+
+		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(camposFijoDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[2]/div[3]/div/div[5]");
+		sleep(2000);
+		
+		moveToElement(camposFijoDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"1\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		nomeCampoFixo.sendKeys("Campo Fixo");
@@ -181,7 +203,7 @@ public class LeiautesExecucacoFuncionalidades4Pt2PO extends TestBaseFernando{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(camposFijoManualDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(camposFijoManualDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"1\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 
 		nomeCampoFixo.sendKeys("Campo Fixo Manual");

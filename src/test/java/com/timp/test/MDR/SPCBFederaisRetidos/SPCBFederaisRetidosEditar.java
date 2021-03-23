@@ -19,33 +19,30 @@ public class SPCBFederaisRetidosEditar extends TestBaseCristhian {
 	AcessarMDRPO acessarMDRPO;
 	SPCBFederaisRetidosEditarPO sPCBFederaisRetidosEditarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationC();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		sPCBFederaisRetidosEditarPO = new SPCBFederaisRetidosEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  
-  @Test()
-  public void editar() {
-	  
+	@Test()
+	public void editar() {
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
 
-	boolean sucesso = sPCBFederaisRetidosEditarPO.editar();
+		boolean sucesso = sPCBFederaisRetidosEditarPO.editar();
 
-	assertTrue(sucesso, Editar);
+		assertTrue(sucesso, Editar);
 
-  }
-
+	}
 
 }

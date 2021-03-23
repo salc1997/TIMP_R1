@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ManuaisDeComponenteDetalle extends TestBaseMassiel{
+public class ManuaisDeComponenteDetalle extends TestBaseMassiel{ 
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ManuaisDeComponenteDetallePO manuaisDeComponenteVisualizarPO;
@@ -30,24 +30,15 @@ public class ManuaisDeComponenteDetalle extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void detalle() {
-
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		
 		ArrayList<Boolean> sucesso = manuaisDeComponenteVisualizarPO.Detalle();
 

@@ -29,23 +29,15 @@ public class MapeamentoDeEstruturasCriar extends TestBaseEliel {
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+	 
+	 	@Test()
 	 	public void criar() {
+	 		
+	 		loginTC.login();
+	 		 acessarATRPO.acessarATR();
 	 		
 	 		boolean sucesso = mapeamentoDeEstruturasCriarPO.criar();
 			assertTrue(sucesso, Criar);

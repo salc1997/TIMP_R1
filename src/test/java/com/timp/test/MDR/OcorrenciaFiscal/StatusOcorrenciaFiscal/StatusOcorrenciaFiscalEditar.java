@@ -20,7 +20,7 @@ public class StatusOcorrenciaFiscalEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusOcorrenciaFiscalEditarPO statusOcorrenciaFiscalEditarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -35,10 +35,9 @@ public class StatusOcorrenciaFiscalEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

@@ -19,7 +19,7 @@ public class StatusOcorrenciaFiscalCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusOcorrenciaFiscalCriarPO statusOcorrenciaFiscalCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -34,13 +34,11 @@ public class StatusOcorrenciaFiscalCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-
 
 		boolean sucesso = statusOcorrenciaFiscalCriarPO.criar();
 		assertTrue(sucesso, Criar);

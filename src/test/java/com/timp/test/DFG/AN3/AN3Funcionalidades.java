@@ -15,10 +15,6 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.AN3.AN3FuncionalidadesPO;
 import com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesCriarPO;
-import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
-import com.timp.test.DFG.AcessarDFG;
 
 
 public class AN3Funcionalidades extends TestBaseSteven{
@@ -200,7 +196,6 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		
 	}
 	
-
 	@Test(priority = 16)
 	public void excluirPasta() {
 			

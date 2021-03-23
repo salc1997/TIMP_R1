@@ -16,7 +16,6 @@ import org.testng.annotations.AfterClass;
 
 public class StatusParaBancoIndébitosExcluirMassa extends TestBaseCristhian {
 
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusParaBancoIndébitosExcluirMassaPO statusParaBancoIndébitosExcluirMassaPO;
@@ -33,12 +32,11 @@ public class StatusParaBancoIndébitosExcluirMassa extends TestBaseCristhian {
 	@AfterClass
 	public void afterClass() {
 		driver.close();
-	} 
-
+	}
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

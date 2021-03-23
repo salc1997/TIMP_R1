@@ -35,13 +35,11 @@ public class MapeamentoContabilExcluir extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = mapeamentoContabilExcluirPO.excluir();

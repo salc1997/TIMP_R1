@@ -35,14 +35,13 @@ public class MapeamentoContabilCorrecaoExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = mapeamentoContabilCorrecaoExcluirPO.excluir();
 
 		assertTrue(sucesso, Criar);

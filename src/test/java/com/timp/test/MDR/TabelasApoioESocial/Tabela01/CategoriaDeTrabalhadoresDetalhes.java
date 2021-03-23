@@ -13,11 +13,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela01.CategoriaDeTrabalhadorDetalhesPO;
 
-public class CategoriaDeTrabalhadoresDetalhes extends TestBaseFernando{
+public class CategoriaDeTrabalhadoresDetalhes extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	CategoriaDeTrabalhadorDetalhesPO categoriaDeTrabalhadorDetalhesPO;
-	 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
@@ -25,19 +25,19 @@ public class CategoriaDeTrabalhadoresDetalhes extends TestBaseFernando{
 		accesarMDRPO = new AcessarMDRPO();
 		categoriaDeTrabalhadorDetalhesPO = new CategoriaDeTrabalhadorDetalhesPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	  
+
 	@Test()
-	public void detalhe() {		
-		loginTC.login();		
+	public void detalhe() {
+		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = categoriaDeTrabalhadorDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}

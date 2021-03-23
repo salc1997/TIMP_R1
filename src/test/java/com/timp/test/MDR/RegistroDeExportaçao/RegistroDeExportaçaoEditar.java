@@ -37,13 +37,12 @@ public class RegistroDeExportaçaoEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroDeExportaçaoEditarPO.editar();
 
 		assertTrue(sucesso, editado);

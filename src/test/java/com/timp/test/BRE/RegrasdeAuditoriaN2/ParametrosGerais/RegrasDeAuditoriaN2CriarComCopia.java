@@ -26,22 +26,14 @@ public class RegrasDeAuditoriaN2CriarComCopia extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criarComCopia() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasDeAuditoriaN2CriarComCopiaPO.criarComCopia();
 		assertTrue(sucesso, Criar);
 	}

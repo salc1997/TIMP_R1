@@ -50,8 +50,22 @@ public class SPEDREINFfuncionalidades extends TestBaseCristhian {
 		boolean sucesso = sPEDREINFfuncionalidadesPO.criar();
 		assertTrue(sucesso, Criar);		
 		
+
+	}
+	
+	@Test(priority = 3)
+	public void editar() {
+		
+		
 		boolean sucesso2 = sPEDREINFfuncionalidadesPO.editar();
 		assertTrue(sucesso2, Editar);	
+		
+
+	}
+	
+	@Test(priority = 4)
+	public void informacao() {
+		
 		
 		ArrayList<Boolean> sucesso3 = sPEDREINFfuncionalidadesPO.informacao();
 		
@@ -59,11 +73,27 @@ public class SPEDREINFfuncionalidades extends TestBaseCristhian {
 			assertTrue(sucesso3.get(i), visualizaçar);
 		}
 		
+
+	}
+	
+	
+	@Test(priority = 5)
+	public void visualizar() {
+	
+		
 		ArrayList<Boolean> sucesso4 = sPEDREINFfuncionalidadesPO.visualizar();
 		
 		for (int i = 0; i < sucesso4.size(); i++) {
 			assertTrue(sucesso4.get(i), visualizaçar);
 		}
+		
+
+	}
+	
+	@Test(priority = 6)
+	public void executar() {
+		
+		
 		
 		boolean sucesso5 = sPEDREINFfuncionalidadesPO.executar();
 		assertTrue(sucesso5, visualizaçar);	

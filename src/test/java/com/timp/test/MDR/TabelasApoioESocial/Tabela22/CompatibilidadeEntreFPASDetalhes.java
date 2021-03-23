@@ -40,7 +40,7 @@ public class CompatibilidadeEntreFPASDetalhes extends TestBaseKenssy {
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = compatibilidadeEntreFPASDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

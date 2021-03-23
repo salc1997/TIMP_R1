@@ -274,6 +274,9 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]")
 		public WebElement raizConfiguracao;
 		
+		@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]/div/div[1]")
+		public WebElement raizConfiguracao2;
+		
 		
 		@FindBy(xpath = "//div/span/span[contains(@class,\"icon-setting\")]")
 		public WebElement abaConfiguracao;
@@ -1674,9 +1677,16 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 	public ArrayList<Boolean> criarConfiguracao() {
 		
 		boolean tc2 = false;
+		boolean tq1 = false;
+		boolean tp1 = false;
 		String url = driver.getCurrentUrl();
+		
 		if (url.contains("tc2")) {
 			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
 		}
 		
 		
@@ -1688,10 +1698,19 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		abaConfiguracao.click();
 		sleep(2000);
 		
-		raizConfiguracao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1==true) {
+			raizConfiguracao.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}else {
+			raizConfiguracao2.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}
+		
+		
 		
 		siguiente.click();
 		sleep(2000);
@@ -1812,6 +1831,21 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		waitExpectElement(siguiente);
 		sleep(3000);
 		
+		sleep(2000);
+		abaConfiguracao.click();
+		sleep(2000);
+		
+		if (tq1==true) {
+			raizConfiguracao.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}else {
+			raizConfiguracao2.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1879,10 +1913,17 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		abaConfiguracao.click();
 		sleep(2000);
 		
-		raizConfiguracao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if (tq1==true) {
+			raizConfiguracao.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}else {
+			raizConfiguracao2.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}
 		
 		siguiente.click();
 		sleep(2000);

@@ -45,10 +45,10 @@ public class AjusteCancelarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		ajuste.click();
+		ajuste.click(); 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000); 
 		
 		if (tq1 == true) {
 
@@ -77,7 +77,7 @@ public class AjusteCancelarPO extends TestBaseMassiel{
 			sleep(2000);
 		
 		}
-		String idRegistro = idObter1();
+		String idRegistro = idObter("Ajuste");
 		System.out.println(idRegistro );
 				
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

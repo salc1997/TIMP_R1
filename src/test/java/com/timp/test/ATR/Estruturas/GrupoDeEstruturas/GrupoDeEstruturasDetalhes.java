@@ -49,5 +49,6 @@ public class GrupoDeEstruturasDetalhes extends TestBaseEliel{
 
 		  }
 
+		  sleep(2000);
 	  }
 }

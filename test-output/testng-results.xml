@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="53" passed="17" failed="33" skipped="3">
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 =======
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
@@ -17,8 +21,11 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,8 +48,12 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+  <suite started-at="2021-03-23T19:39:32Z" name="Default suite" finished-at="2021-03-23T19:42:39Z" duration-ms="187238">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,9 +88,15 @@
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+    <test started-at="2021-03-23T19:39:32Z" name="Default test" finished-at="2021-03-23T19:42:39Z" duration-ms="187238">
+      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar@16eb3ea3]" started-at="2021-03-23T19:39:32Z" name="beforeClass" finished-at="2021-03-23T19:39:59Z" duration-ms="27618" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,8 +119,12 @@
         <test-method signature="login()[pri:0, instance:com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir@5552768b]" started-at="2021-03-16T18:19:37Z" name="login" finished-at="2021-03-16T18:19:47Z" duration-ms="10692" status="PASS">
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar@16eb3ea3]" started-at="2021-03-23T19:39:59Z" name="criar" finished-at="2021-03-23T19:42:39Z" duration-ms="159605" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -253,9 +274,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- linksrapidos -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos@301eda63]" started-at="2021-03-22T17:05:55Z" name="afterClass" finished-at="2021-03-22T17:05:55Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar@16eb3ea3]" started-at="2021-03-23T19:42:39Z" name="afterClass" finished-at="2021-03-23T19:42:39Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         </test-method> <!-- Excluir -->
@@ -3167,6 +3193,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git

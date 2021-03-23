@@ -47,7 +47,7 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE extends TestBas
 	 			assertTrue(sucesso.get(i), Filtros);
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
 }

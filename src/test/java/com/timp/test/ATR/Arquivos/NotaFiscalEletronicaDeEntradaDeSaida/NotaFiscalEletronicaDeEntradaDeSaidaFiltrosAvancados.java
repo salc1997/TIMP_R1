@@ -47,7 +47,7 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados extends TestBa
 				assertTrue(sucesso.get(i), Filtros);
 			}
 	 		
-		
+			sleep(2000);
 	 		
 	 	}
    

@@ -43,7 +43,8 @@ public class GrupoDeEstruturasCriar extends TestBaseEliel{
 
 		boolean sucesso = grupoDeEstruturasCriarPO.criar();
 		assertTrue(sucesso, Criar);
-
+		
+		sleep(2000);
 
 	}
 

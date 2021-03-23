@@ -46,7 +46,7 @@ public class NotaFiscalEletronicaDeTransporteFiltroPorINFNFE extends TestBaseEli
 			}
 			
 		
-	 		
+	 		sleep(2000);
 	 	}
  
 }

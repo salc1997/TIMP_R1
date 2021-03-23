@@ -49,7 +49,7 @@ public class GrupoDeEstruturasEditar extends TestBaseEliel {
 			assertTrue(sucesso.get(i), Editar);
 
 		}
-
+		sleep(2000);
 
 
 	}

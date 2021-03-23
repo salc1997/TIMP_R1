@@ -33,42 +33,31 @@ public class ExecucoesExecucoesPublicasLixeiraemMassa extends TestBaseMassiel {
 		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = execuçõesExecuçõesPúblicasLixeiraemMassaPO.criar();
 		assertTrue(sucesso, Criar);
-
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = "criar")
 	public void lixeira() {
 		boolean sucesso = execuçõesExecuçõesPúblicasLixeiraemMassaPO.lixeira();
 		assertTrue(sucesso, "Não foi possível ir para Lixeira");
-
 	}
 
-	@Test(priority = 4)
+	@Test(dependsOnMethods = "lixeira")
 	public void lixeiraDefinitiva() {
 		boolean sucesso = execuçõesExecuçõesPúblicasLixeiraemMassaPO.lixeiraDefinitiva();
 		assertTrue(sucesso, "Não foi possível ir para Lixeira");
-
 	}
 
-	@Test(priority = 5)
+	@Test(dependsOnMethods = "lixeiraDefinitiva")
 	public void lixeiraExecucao() {
 		boolean sucesso = execuçõesExecuçõesPúblicasLixeiraemMassaPO.lixeiraExecucao();
 		assertTrue(sucesso, "Não foi possível ir para Lixeira");
-
 	}
 
 }

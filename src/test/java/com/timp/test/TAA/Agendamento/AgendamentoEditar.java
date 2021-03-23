@@ -18,7 +18,7 @@ public class AgendamentoEditar extends TestBaseFernando {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initializationF(); 
 		loginTC = new LoginTC();
 		acessarTAAPO = new AcessarTAAPO();
 		agendamentoEditarPO = new AgendamentoEditarPO();
@@ -26,21 +26,15 @@ public class AgendamentoEditar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTAAPO.acessarTAA();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
+		
+		loginTC.login();
+		acessarTAAPO.acessarTAA();
 		boolean sucesso = agendamentoEditarPO.editar();
 		assertTrue(sucesso, Editar);
 	}

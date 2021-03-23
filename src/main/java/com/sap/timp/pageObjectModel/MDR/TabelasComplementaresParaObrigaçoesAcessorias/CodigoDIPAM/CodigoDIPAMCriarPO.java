@@ -100,15 +100,15 @@ public class CodigoDIPAMCriarPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodi.sendKeys("00709307");
+		codigodi.sendKeys("6609307");
+
 		
 		sleep(2000);
 		
 		cabeçalho.sendKeys("Cabeçalho");
 		
 		sleep(2000);
-		
-		descricao.sendKeys("Teste5 0093");
+		descricao.sendKeys("Teste5 7793");
 		
 		sleep(2000);
 		

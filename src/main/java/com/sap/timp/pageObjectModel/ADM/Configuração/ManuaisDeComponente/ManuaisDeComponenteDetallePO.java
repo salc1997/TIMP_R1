@@ -41,7 +41,7 @@ public class ManuaisDeComponenteDetallePO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"detail-content\"]/div/div[6]/div[2]/div[2]/span")
 	public WebElement dataModificadoV;
 	
-	public ManuaisDeComponenteDetallePO() {
+	public ManuaisDeComponenteDetallePO() { 
 
 		PageFactory.initElements(driver, this);
 	}

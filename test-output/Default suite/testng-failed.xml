@@ -4,13 +4,27 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
 =======
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir">
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos">
+>>>>>>> refs/heads/Fernando
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> refs/heads/Fernando
           <include name="linksrapidos"/>
+<<<<<<< HEAD
 =======
           <include name="afterClass"/>
           <include name="criarcopia"/>
@@ -20,12 +34,48 @@
           <include name="afterClass"/>
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
 =======
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos -->
+>>>>>>> refs/heads/Fernando
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir">
+=======
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+          <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+          <include name="Excluir"/>
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir -->
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/heads/Cristhian
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

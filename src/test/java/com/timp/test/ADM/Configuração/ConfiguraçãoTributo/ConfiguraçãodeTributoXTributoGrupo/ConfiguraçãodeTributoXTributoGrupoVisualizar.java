@@ -31,29 +31,20 @@ public class ConfiguraçãodeTributoXTributoGrupoVisualizar extends TestBaseCristh
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
-
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		ArrayList<Boolean> sucesso = configuraçãodeTributoXTributoGrupoVisualizarPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-	}
+	} 
 
 }

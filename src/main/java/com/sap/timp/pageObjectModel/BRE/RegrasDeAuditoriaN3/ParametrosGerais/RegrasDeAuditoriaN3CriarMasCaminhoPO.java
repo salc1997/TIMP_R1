@@ -127,7 +127,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean criar() {
+	public boolean criar() { 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

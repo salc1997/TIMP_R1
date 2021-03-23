@@ -30,7 +30,7 @@ public class ObservaçoesdoDocumentoFiscalCriar extends TestBaseMassiel {
 	}
 
 	@AfterClass
-	public void afterClass() {
+	public void afterClass() { 
 		driver.close();
 	}
 

@@ -299,7 +299,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseMassiel 
 
 		boolean sucesso = false;
 		if (idBD > idD) {
-			idInserir1(idB);
+			idInserir("IdLixeira", idB);
 			sucesso = true;
 		} else {
 			sucesso = false;
@@ -326,7 +326,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseMassiel 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("IdLixeira");
 
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -391,7 +391,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseMassiel 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("IdLixeira");
 
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));

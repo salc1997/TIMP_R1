@@ -25,7 +25,7 @@ public class AgendamentoCancelarPO extends TestBaseFernando{
 	
 	public AgendamentoCancelarPO() {
 		PageFactory.initElements(driver, this);
-	}
+	} 
 	
 	public boolean cancelar() {
 		sleep(2000);
@@ -47,7 +47,7 @@ public class AgendamentoCancelarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);	
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("Agendamento");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

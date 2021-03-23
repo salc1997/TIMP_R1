@@ -34,28 +34,20 @@ public class KpisCriarCopia extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criarCopia() {
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
 		ArrayList<Boolean> sucesso = kpisCriarCopiaPO.Criar();
-		;
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-
+	}
+	
+	@Test(dependsOnMethods = "criarCopia")
+	public void comparar() {
 		boolean sucesso1 = kpisCriarCopiaPO.Excluir();
-
 		assertTrue(sucesso1, Criar);
 
 		ArrayList<Boolean> sucesso2 = kpisCriarCopiaPO.comparar();
@@ -63,6 +55,5 @@ public class KpisCriarCopia extends TestBaseMassiel {
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), Detalhes);
 		}
-
 	}
 }

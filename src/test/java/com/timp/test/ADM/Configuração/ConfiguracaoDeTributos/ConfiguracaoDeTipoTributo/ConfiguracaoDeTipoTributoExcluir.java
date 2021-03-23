@@ -14,38 +14,28 @@ import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.Conf
 public class ConfiguracaoDeTipoTributoExcluir extends TestBaseEliel {
  
 	LoginTC loginTC;
-	AcessarADMPO acessarADMPO;
+	AcessarADMPO acessarADMPO; 
 	ConfiguracaoDeTipoTributoExcluirPO configuracaoDeTipoTributoExcluirPO;
  
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTipoTributoExcluirPO = new ConfiguracaoDeTipoTributoExcluirPO();
-  }
+	  @BeforeClass
+	  public void beforeClass() {
+		  driver = initializationE();
+		  loginTC = new LoginTC();
+		  acessarADMPO = new AcessarADMPO();
+		  configuracaoDeTipoTributoExcluirPO = new ConfiguracaoDeTipoTributoExcluirPO();
+	  }
 
-  @AfterClass
-  public void afterClass() {
-  }
+	  @AfterClass
+	  public void afterClass() {
+		  driver.close();
+	  }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
-
-		
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		boolean sucesso = configuracaoDeTipoTributoExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);

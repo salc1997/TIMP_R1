@@ -362,7 +362,7 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 		
 		
 		if (idBD > idD) {
-			idInserir1(idB);
+			idInserir("KpisExecutarAtualizarJustificativaGravar", idB);
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);

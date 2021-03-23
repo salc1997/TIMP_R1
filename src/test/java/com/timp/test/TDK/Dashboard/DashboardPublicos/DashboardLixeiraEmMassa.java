@@ -32,28 +32,26 @@ public class DashboardLixeiraEmMassa extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
 
 		boolean sucesso = dashboardLixeiraEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = dashboardLixeiraEmMassaPO.ExcluirMasas();
 		assertTrue(sucesso2, Criar);
 
+	}
+	
+	@Test(dependsOnMethods = "excluirEmMassa")
+	public void comparar() {
 		boolean sucesso3 = dashboardLixeiraEmMassaPO.comparar();
 		assertTrue(sucesso3, Criar);
-
 	}
 
 }

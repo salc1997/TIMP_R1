@@ -18,34 +18,25 @@ public class ConfiguracaoDeTipoTributoFiltrosAvancados extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTipoTributoFiltrosAvancadosPO configuracaoDeTipoTributoFiltrosAvancadosPO;
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTipoTributoFiltrosAvancadosPO = new ConfiguracaoDeTipoTributoFiltrosAvancadosPO();
-  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
+	  @BeforeClass
+	  public void beforeClass() {
+		  driver = initializationE();
+		  loginTC = new LoginTC();
+		  acessarADMPO = new AcessarADMPO();
+		  configuracaoDeTipoTributoFiltrosAvancadosPO = new ConfiguracaoDeTipoTributoFiltrosAvancadosPO();
+	  }
 	
-	@Test(priority = 2)
-	public void filtro() {
+	  @AfterClass
+	  public void afterClass() {
+		  driver.close();
+	  } 
+  
 
+	
+	@Test()
+	public void filtro() {
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		
 		ArrayList<Boolean> sucesso = configuracaoDeTipoTributoFiltrosAvancadosPO.filtro();
 

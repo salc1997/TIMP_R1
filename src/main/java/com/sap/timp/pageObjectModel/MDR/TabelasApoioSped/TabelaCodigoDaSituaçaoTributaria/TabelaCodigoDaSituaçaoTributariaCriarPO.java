@@ -76,7 +76,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		 
 		sleep(2000);
 	
 		//conta o numero de linhas
@@ -98,13 +98,10 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		opcaotributo.click();
 		
 		sleep(2000);
-
 		codigocst.sendKeys("637");
-
-		
 		sleep(2000);
-		
 		descricao.sendKeys("Teste QA605");
+
 		
 		sleep(2000);
 		

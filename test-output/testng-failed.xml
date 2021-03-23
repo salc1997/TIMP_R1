@@ -3,7 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Cadastros IRPJ/CSLL &gt; Tabela de Apoio ECF(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir -->
+=======
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
@@ -16,7 +29,12 @@
           <include name="criar"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Cadastros IRPJ/CSLL > Tabela de Apoio ECF(failed) -->
   <test thread-count="5" name="Eventos e-Social &gt; S1070 - Processos Adm. / Judiciais(failed)">

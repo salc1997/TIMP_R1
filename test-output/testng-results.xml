@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="53" passed="17" failed="33" skipped="3">
+=======
+<<<<<<< HEAD
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-03-19T19:05:55Z" name="Suite" finished-at="2021-03-19T20:10:54Z" duration-ms="3898878">
+=======
+<<<<<<< HEAD
+  <suite started-at="2021-03-16T11:23:32Z" name="Default suite" finished-at="2021-03-16T11:24:52Z" duration-ms="80034">
+=======
+  <suite started-at="2021-03-16T18:19:22Z" name="Default suite" finished-at="2021-03-16T18:20:53Z" duration-ms="91100">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-03-19T19:05:55Z" name="Cadastros IRPJ/CSLL &gt; Tabela de Apoio ECF" finished-at="2021-03-19T19:09:17Z" duration-ms="202229">
       <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar@71e693fa]" started-at="2021-03-19T19:05:55Z" name="beforeClass" finished-at="2021-03-19T19:06:24Z" duration-ms="29040" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2021-03-16T11:23:32Z" name="Default test" finished-at="2021-03-16T11:24:52Z" duration-ms="80034">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluir@36d585c]" started-at="2021-03-16T11:23:32Z" name="beforeClass" finished-at="2021-03-16T11:23:43Z" duration-ms="11599" status="PASS">
+=======
+    <test started-at="2021-03-16T18:19:22Z" name="Default test" finished-at="2021-03-16T18:20:53Z" duration-ms="91100">
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir@5552768b]" started-at="2021-03-16T18:19:22Z" name="beforeClass" finished-at="2021-03-16T18:19:37Z" duration-ms="15039" status="PASS">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar@71e693fa]" started-at="2021-03-19T19:06:24Z" name="criar" finished-at="2021-03-19T19:07:29Z" duration-ms="64937" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
+=======
+<<<<<<< HEAD
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluir@36d585c]" started-at="2021-03-16T11:23:43Z" name="excluir" finished-at="2021-03-16T11:24:51Z" duration-ms="68205" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir@5552768b]" started-at="2021-03-16T18:19:37Z" name="login" finished-at="2021-03-16T18:19:47Z" duration-ms="10692" status="PASS">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluir@36d585c]" started-at="2021-03-16T11:24:51Z" name="afterClass" finished-at="2021-03-16T11:24:52Z" duration-ms="201" status="PASS">
+=======
+        </test-method> <!-- login -->
+        <test-method signature="AcessarADM()[pri:1, instance:com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir@5552768b]" started-at="2021-03-16T18:19:47Z" name="AcessarADM" finished-at="2021-03-16T18:20:02Z" duration-ms="14916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AcessarADM -->
+        <test-method signature="Excluir()[pri:2, instance:com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir@5552768b]" started-at="2021-03-16T18:20:02Z" name="Excluir" finished-at="2021-03-16T18:20:53Z" duration-ms="50411" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
             <message>
               <![CDATA[element not interactable
   (Session info: chrome=83.0.4103.106)
@@ -80,11 +129,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar@71e693fa]" started-at="2021-03-19T19:07:29Z" name="afterClass" finished-at="2021-03-19T19:07:33Z" duration-ms="3460" status="PASS">
+=======
+        </test-method> <!-- Excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir@5552768b]" started-at="2021-03-16T18:20:53Z" name="afterClass" finished-at="2021-03-16T18:20:53Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
       <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute@48793bef]" started-at="2021-03-19T19:07:33Z" name="beforeClass" finished-at="2021-03-19T19:07:45Z" duration-ms="12257" status="PASS">
@@ -2967,4 +3023,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio -->
     </test> <!-- Rateiro Consorcio -->
   </suite> <!-- Suite -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDIPAM.CodigoDIPAMExcluir -->
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

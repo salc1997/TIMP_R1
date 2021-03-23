@@ -94,13 +94,13 @@ public class CodigoDeMotivosDeAjustesCriarPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
+
 		codigodeajustes.sendKeys("04937");
 
 		
 		sleep(2000);
 		
-		descricaodeajustes.sendKeys("Teste60");
-		
+		descricaodeajustes.sendKeys("Teste120");
 		sleep(2000);
 		
 		String data=fechaActual();

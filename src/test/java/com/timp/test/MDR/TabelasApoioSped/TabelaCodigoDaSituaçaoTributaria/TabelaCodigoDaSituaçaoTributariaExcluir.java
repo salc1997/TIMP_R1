@@ -37,7 +37,7 @@ public class TabelaCodigoDaSituaçaoTributariaExcluir extends TestBaseEliel {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		// ajusteEInformaçoesDeValoresCriarPO.criar();
-
+ 
 		boolean sucesso = tabelaCodigoDaSituaçaoTributariaExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

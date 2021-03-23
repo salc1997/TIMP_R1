@@ -17,7 +17,7 @@ public class TabelaComplementarParaDIRFCriar extends TestBaseEliel {
 	AcessarMDRPO acessarMDRPO;
 	TabelaComplementarParaDIRFCriarPO tabelaComplementarParaDIRFCriarPO;
 
-	@BeforeClass
+	@BeforeClass 
 	public void beforeClass() {
  
 		driver = initializationE();

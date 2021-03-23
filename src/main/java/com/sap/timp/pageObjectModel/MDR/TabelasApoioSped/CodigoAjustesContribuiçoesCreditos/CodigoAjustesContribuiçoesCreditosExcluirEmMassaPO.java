@@ -88,7 +88,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		primeira.click();
+		primeira.click(); 
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

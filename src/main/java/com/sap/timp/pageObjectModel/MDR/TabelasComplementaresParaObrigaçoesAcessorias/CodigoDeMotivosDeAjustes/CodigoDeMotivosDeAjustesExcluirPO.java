@@ -27,7 +27,7 @@ public class CodigoDeMotivosDeAjustesExcluirPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
-	
+	 
 	
 	
 	public CodigoDeMotivosDeAjustesExcluirPO() {
@@ -63,7 +63,7 @@ public class CodigoDeMotivosDeAjustesExcluirPO extends TestBaseEliel {
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(2000);
+		sleep(4000);
 		
 		sim.click();
 		sleep(2000);

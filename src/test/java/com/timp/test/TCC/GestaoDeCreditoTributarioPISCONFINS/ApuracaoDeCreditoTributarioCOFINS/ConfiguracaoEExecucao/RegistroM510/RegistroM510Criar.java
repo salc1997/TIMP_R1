@@ -39,7 +39,6 @@ public class RegistroM510Criar extends TestBaseEliel {
 		acessarTCCPO.acessarTCC();
 
 		boolean sucesso = registroM510CriarPO.criar();
-
 		assertTrue(sucesso, Criar);
 	}
 }

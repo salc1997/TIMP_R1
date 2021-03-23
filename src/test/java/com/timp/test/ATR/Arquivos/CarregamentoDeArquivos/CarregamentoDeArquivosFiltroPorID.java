@@ -33,6 +33,7 @@ public class CarregamentoDeArquivosFiltroPorID extends TestBaseEliel{
 	  public void afterClass() {
 		  
 		driver.close();
+
 	  }
 	  
 

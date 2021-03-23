@@ -37,7 +37,7 @@ public class RegistroM610Editar extends TestBaseSteven {
 	}
 
 	@Test()
-	public void criar() {
+	public void editar() {
 
 		loginTC.login();
 

@@ -38,9 +38,7 @@ public class ValoresParaMetodoPICEditar extends TestBaseEliel {
 		acessarMDRPO.acessarMDR();
 		
 		boolean sucesso = valoresParaMetodoPICEditarPO.editar();
-		
 		assertTrue(sucesso, Editar);
-
 	}		
 
 	

@@ -137,6 +137,10 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO extends Te
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+		sleep(8000);
+//		attributeToBeXpath("//div[@id=\"uf-filter\"]/div", "class", "base-select  disabled");
+//		sleep(1000);
+		
 		uf.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

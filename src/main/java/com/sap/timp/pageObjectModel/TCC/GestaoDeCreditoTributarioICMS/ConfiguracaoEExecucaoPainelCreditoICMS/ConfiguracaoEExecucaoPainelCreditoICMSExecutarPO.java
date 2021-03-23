@@ -84,11 +84,19 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExecutarPO extends TestBaseMa
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		int rows = rows("//div[@class=\"tr\" and @data-id]");
-
-		String idUltimoExcecutado = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[2]/div")).getText();
-		System.out.println("Id ultimo registro Executado: " +idUltimoExcecutado);
+		//int rows = rows("//div[@class=\"tr\" and @data-id]");
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		
+		String idUltimoExcecutado = "0"; // Ultimo ID antes de crear un registro
+		
+		if(rows > 0) {
+			idUltimoExcecutado = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+			System.out.println("Id ultimo registro Executado: " + idUltimoExcecutado);
+		}
+		
+//		String idUltimoExcecutado = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[2]/div")).getText();
+//		System.out.println("Id ultimo registro Executado: " +idUltimoExcecutado);
+//		
 		configuracaoEExecucao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -147,7 +155,8 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExecutarPO extends TestBaseMa
 
 		WebElement flechaAtrasCalendario = driver.findElement(By.xpath("//div[@tabindex=\"0\" and @class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
 		flechaAtrasCalendario.click();
-
+		sleep(3000);
+		
 		String anio = "2016";
 
 		WebElement anioCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"year\") and text()=\"" + anio + "\"]"));
@@ -193,7 +202,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExecutarPO extends TestBaseMa
 		sleep(4000);
 		
 		executadosPainelCréditoICMS.click();
-		invisibilityOfElementOverlay();
+		//invisibilityOfElementOverlay();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

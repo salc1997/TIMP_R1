@@ -9,6 +9,9 @@ import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.Executados.Ex
 import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class BancodeOcorrênciasExecutadosEditar extends TestBaseCristhian {
@@ -26,25 +29,16 @@ public class BancodeOcorrênciasExecutadosEditar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void executarEditar() {
-		bancodeOcorrênciasExecutadosEditarPO.editar();
-		/*
-		 * boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
-		 * assertTrue(sucesso, Criar);
-		 */
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
+		boolean sucesso = bancodeOcorrênciasExecutadosEditarPO.editar();
+		assertTrue(sucesso, Criar);
+		 
 	}
 }

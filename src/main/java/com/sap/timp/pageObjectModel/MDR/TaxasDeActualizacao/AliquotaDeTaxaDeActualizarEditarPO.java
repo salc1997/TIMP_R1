@@ -77,7 +77,7 @@ public class AliquotaDeTaxaDeActualizarEditarPO extends TestBaseCristhian{
 
 		String valor = taxa.getAttribute("value");
 
-		String enviar = "1111";
+		String enviar = "1,11";
 
 		taxa.clear();
 		sleep(1000);

@@ -30,24 +30,15 @@ public class ConfiguracaoEExecucaoRegistro1200Executar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void executar() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
 		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
-	public void Exceutar() {
-
+		
 		boolean sucesso = configuracaoEExecucaoRegistro1200ExecutarPO.executar();
 		assertTrue(sucesso, Criar);
 	}

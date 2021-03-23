@@ -82,7 +82,9 @@ public class Executados1200EditarPO extends TestBaseMassiel{
 		sleep(4000);
 
 		executadosregistro1200.click();
-		sleep(4000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();

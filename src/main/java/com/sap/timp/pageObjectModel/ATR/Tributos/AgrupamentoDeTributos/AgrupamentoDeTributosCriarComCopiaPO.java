@@ -59,6 +59,13 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
+	
+	@FindBy(xpath = "//div[@class=\"fieldMap taxes\"]/div/div/div[2]")
+	public WebElement tributo;
+	
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"COFINS\"]")
+	public WebElement opcaotributo;
+	
 	public AgrupamentoDeTributosCriarComCopiaPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -108,6 +115,14 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseEliel {
 		sleep(2000);
 		excluiricms.click();
 		sleep(2000);
+		
+		tributo.click();
+		sleep(2000);
+		opcaotributo.click();
+		sleep(2000);
+		closeSelectTypeCheckbox(tributo);
+		sleep(2000);
+		
 		tributosaavaliar.click();
 		sleep(2000);
 		opcaotributoaavaliar.click();

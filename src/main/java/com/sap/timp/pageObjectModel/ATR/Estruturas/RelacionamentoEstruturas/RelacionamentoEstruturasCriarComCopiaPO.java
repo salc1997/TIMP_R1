@@ -88,10 +88,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"fieldRow-wrapper\"][3]/div/div[2]/div/div[1]/input")
 	public WebElement campoEstruturaI2;
 	
-
-	
-	
-	@FindBy(xpath = "//div[@class=\"fieldRow-wrapper\"][3]/div/div[@id=\"delete-icon\"]")
+	@FindBy(xpath = "//div[@class=\"fieldRow-wrapper\"][2]/div/div[@id=\"delete-icon\"]")
 	public WebElement excluir;
 	
 	

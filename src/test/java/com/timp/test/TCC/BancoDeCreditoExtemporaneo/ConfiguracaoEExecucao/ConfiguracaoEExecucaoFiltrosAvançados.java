@@ -33,21 +33,12 @@ public class ConfiguracaoEExecucaoFiltrosAvançados extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void Filtro() {
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 
 		configuracaoEExecucaoFiltrosAvançadosPO.filtro();
 

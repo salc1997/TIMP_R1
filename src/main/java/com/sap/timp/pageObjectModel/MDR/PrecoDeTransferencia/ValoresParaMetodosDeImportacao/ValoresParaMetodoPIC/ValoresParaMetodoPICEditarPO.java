@@ -79,7 +79,7 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseEliel {
 	public WebElement qtdedep;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data Inicial\"]")
+	@FindBy(xpath = "//div[@id=\"startDate\"]/div/div/input")
 	public WebElement datainicial;
 	
 	

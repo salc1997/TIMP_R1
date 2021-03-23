@@ -31,7 +31,7 @@ public class RegistroM225Criar extends TestBaseEliel {
 		driver.close();
 	}
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 
 		loginTC.login();

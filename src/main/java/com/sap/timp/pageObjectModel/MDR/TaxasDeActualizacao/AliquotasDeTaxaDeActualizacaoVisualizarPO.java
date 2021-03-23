@@ -172,7 +172,7 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhia
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 
-		sucesso.add(codigoIndiceE1.contains(codigoIndiceV1));
+		sucesso.add(codigoIndiceV1.contains(codigoIndiceE1));
 		sucesso.add(valorV1.equals(valorE1));
 		sucesso.add(fatorAcumuladoV1.equals(fatorAcumuladoE1));
 		sucesso.add(taxaE1.equals(taxaV1));

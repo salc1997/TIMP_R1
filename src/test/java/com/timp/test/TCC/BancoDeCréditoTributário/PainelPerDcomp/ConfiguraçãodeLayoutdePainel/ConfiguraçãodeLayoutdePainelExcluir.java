@@ -29,22 +29,14 @@ public class ConfiguraçãodeLayoutdePainelExcluir extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
-
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso2 = configuraçãodeLayoutdePainelExcluirPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}

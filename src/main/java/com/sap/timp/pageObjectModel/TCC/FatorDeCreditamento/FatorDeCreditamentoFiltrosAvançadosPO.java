@@ -52,7 +52,7 @@ public class FatorDeCreditamentoFiltrosAvançadosPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 
-	public Boolean Filtros() {
+	public boolean Filtros() {
 
 		String url = driver.getCurrentUrl();
 

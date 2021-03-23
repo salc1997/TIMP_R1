@@ -100,7 +100,6 @@ public class TestBaseSteven {
 	}
 
 	
-	
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
 		

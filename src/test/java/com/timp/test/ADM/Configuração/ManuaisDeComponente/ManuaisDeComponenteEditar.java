@@ -29,25 +29,15 @@ public class ManuaisDeComponenteEditar extends TestBaseCristhian {
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
 
-		
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		boolean sucesso = manuaisDeComponenteEditarPO.editar();
 
 		assertTrue(sucesso, Editar);

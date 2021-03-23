@@ -53,7 +53,7 @@ public class AgendamentoEditarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);	
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("Agendamento");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

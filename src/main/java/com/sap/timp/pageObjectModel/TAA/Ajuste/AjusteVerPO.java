@@ -144,7 +144,7 @@ public class AjusteVerPO extends TestBaseMassiel{
 			sleep(2000);
 		
 		}
-		String idRegistro = idObter1();
+		String idRegistro = idObter("Ajuste");
 		System.out.println(idRegistro );
 				
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

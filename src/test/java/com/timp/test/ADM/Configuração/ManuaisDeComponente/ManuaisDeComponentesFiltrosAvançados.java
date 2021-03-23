@@ -32,25 +32,14 @@ public class ManuaisDeComponentesFiltrosAvançados extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarADMPO.acessarADM();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtros() {
-
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		// codigoTipoCreditoFiltrosAvançadosPO.filtros();
 
 		ArrayList<Boolean> sucesso = manuaisDeComponentesFiltrosAvançadosPO.detalhes();

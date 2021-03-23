@@ -80,7 +80,7 @@ public class ManuaisDeComponenteExcluirPO extends TestBaseCristhian {
 			System.out.println("ID Ultimo Registro: " + id);
 		}
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ManuaisDeComponente");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

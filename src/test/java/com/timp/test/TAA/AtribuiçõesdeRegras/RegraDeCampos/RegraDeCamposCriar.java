@@ -28,19 +28,11 @@ public class RegraDeCamposCriar extends TestBaseFernando {
 	public void afterClass() {
 		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTAAPO.acessarTAA();
-	}
-
-	@Test(priority = 2)
+	
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarTAAPO.acessarTAA();
 		boolean sucesso = regraDeCamposCriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}

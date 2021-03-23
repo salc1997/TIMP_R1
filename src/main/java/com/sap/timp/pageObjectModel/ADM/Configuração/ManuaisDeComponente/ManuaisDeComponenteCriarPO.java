@@ -148,7 +148,7 @@ public class ManuaisDeComponenteCriarPO extends TestBaseCristhian {
 		//compara pra ver se o novo id criado é realmente o ultimo		  
 		if (id2 > id1) { 
 			sucesso = true; 
-			idInserir4(idPrimerRegistro);
+			idInserir("ManuaisDeComponente",idPrimerRegistro);
 			System.out.println("Registro creado...");
 		}
 		

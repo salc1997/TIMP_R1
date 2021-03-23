@@ -9,7 +9,7 @@ import org.testng.annotations.Factory;
 import com.sap.timp.base.TestBaseFernando;
 
 public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
-	String URL = driver.getCurrentUrl();
+	String URL = driver.getCurrentUrl(); 
 	
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Ajustes\"]")
 	public WebElement menuAjustes;

@@ -31,18 +31,10 @@ public class AgendamentoDetalhes extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTAAPO.acessarTAA();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
+		loginTC.login();
+		acessarTAAPO.acessarTAA();
 		ArrayList<Boolean> sucesso = agendamentoDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

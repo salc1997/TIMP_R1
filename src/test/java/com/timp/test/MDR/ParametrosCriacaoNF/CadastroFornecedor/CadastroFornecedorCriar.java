@@ -22,7 +22,7 @@ public class CadastroFornecedorCriar extends TestBaseKathy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroFornecedorCriarPO cadastroFornecedorCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -37,18 +37,16 @@ public class CadastroFornecedorCriar extends TestBaseKathy {
 		driver.close();
 	}
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 
 	@Test()
 	public void criar() {

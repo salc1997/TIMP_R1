@@ -17,46 +17,33 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CorreçãodeNFRejeitar extends TestBaseMassiel{
-	
+
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
 	AcessarBrbPO acessarBrbPO;
 	CorreçãodeNFRejeitarPO  correçãodeNFRejeitarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarBrbPO = new AcessarBrbPO();
-	  correçãodeNFRejeitarPO = new CorreçãodeNFRejeitarPO();
-  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {	  
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		correçãodeNFRejeitarPO = new CorreçãodeNFRejeitarPO();
 	}
 
-	@Test(priority = 1)
-	public void brbEntrar() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void  rejeitar() {
+		loginTC.login();
 		acessarBrbPO.acessar();
 
-	}
-	
-	@Test(priority = 2)
-	public void  rejeitar() {
-		
-		
 		ArrayList<Boolean> rejeitar =   correçãodeNFRejeitarPO.Rejeitar();
 		for (int i = 0; i < rejeitar.size(); i++) {
-		assertTrue(rejeitar.get(i), Filtros);
+			assertTrue(rejeitar.get(i), Filtros);
 		}
 	}
-
 }

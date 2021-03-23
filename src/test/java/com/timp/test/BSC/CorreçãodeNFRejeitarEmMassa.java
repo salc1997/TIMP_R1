@@ -22,39 +22,27 @@ public class CorreçãodeNFRejeitarEmMassa extends TestBaseMassiel{
 	AcessarBrbPO acessarBrbPO;
 	CorreçãodeNFRejeitarEmMassaPO   correçãodeNFRejeitarEmMassaPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarBrbPO = new AcessarBrbPO();
-	  correçãodeNFRejeitarEmMassaPO = new CorreçãodeNFRejeitarEmMassaPO();
-  }
-
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		correçãodeNFRejeitarEmMassaPO = new CorreçãodeNFRejeitarEmMassaPO();
 	}
 
-	@Test(priority = 1)
-	public void brbEntrar() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void  rejeitar() {
+		loginTC.login();
 		acessarBrbPO.acessar();
 
-	}
-	
-	@Test(priority = 2)
-	public void  rejeitar() {
-		
-	   
-	   ArrayList<Boolean> rejeitar =   correçãodeNFRejeitarEmMassaPO.Rejeitar();
+		ArrayList<Boolean> rejeitar =   correçãodeNFRejeitarEmMassaPO.Rejeitar();
 		for (int i = 0; i < rejeitar.size(); i++) {
-		assertTrue(rejeitar.get(i), Filtros);
+			assertTrue(rejeitar.get(i), Filtros);
 		}
 	}
 }

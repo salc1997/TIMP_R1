@@ -37,10 +37,9 @@ public class RegistroDeExportaçaoVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

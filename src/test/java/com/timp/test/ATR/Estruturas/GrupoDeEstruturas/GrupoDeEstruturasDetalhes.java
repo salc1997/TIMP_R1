@@ -31,31 +31,24 @@ public class GrupoDeEstruturasDetalhes extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
+	  @Test()
+	  public void detalhes() {
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void detalhes() {
-	 		
-	 		ArrayList<Boolean> sucesso = grupoDeEstruturasDetalhesPO.detalhes();
-	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), Detalhes);
-				
-			}
-			
-		
-	 		
-	 	}
+		  loginTC.login();
+
+		  acessarATRPO.acessarATR();
+
+
+		  ArrayList<Boolean> sucesso = grupoDeEstruturasDetalhesPO.detalhes();
+		  for (int i = 0; i < sucesso.size(); i++) {
+			  assertTrue(sucesso.get(i), Detalhes);
+
+		  }
+
+		  sleep(2000);
+	  }
 }

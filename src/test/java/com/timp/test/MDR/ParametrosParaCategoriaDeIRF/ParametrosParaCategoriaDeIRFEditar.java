@@ -13,36 +13,33 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosParaCategoriaDeIRFEditar extends TestBaseMassiel{
-	
+public class ParametrosParaCategoriaDeIRFEditar extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosParaCategoriaDeIRFEditarPO parametrosParaCategoriaDeIRFEditarPO;
 
-  @BeforeClass
-  public void beforeClass() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaCategoriaDeIRFEditarPO = new ParametrosParaCategoriaDeIRFEditarPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void editar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = parametrosParaCategoriaDeIRFEditarPO.editar();
 		assertTrue(sucesso, Criar);
-
 
 	}
 }

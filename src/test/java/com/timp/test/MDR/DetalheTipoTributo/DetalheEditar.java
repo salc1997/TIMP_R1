@@ -34,13 +34,11 @@ public class DetalheEditar extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = detalheEditarPO.editar();
@@ -48,5 +46,5 @@ public class DetalheEditar extends TestBaseSteven {
 		assertTrue(sucesso, Editar);
 
 	}
- 
+
 }

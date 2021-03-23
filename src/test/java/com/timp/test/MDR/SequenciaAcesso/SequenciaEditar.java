@@ -31,15 +31,13 @@ public class SequenciaEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Editar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		boolean sucesso =sequenciaEditarPO.editar();
+		boolean sucesso = sequenciaEditarPO.editar();
 		assertTrue(sucesso, Editar);
 
 	}

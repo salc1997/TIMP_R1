@@ -86,7 +86,8 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter("kpisCriar");
+		String idRegistro = idObter("KpisCriar");
+		//String idRegistro = idObter2();
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		
@@ -146,6 +147,10 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		kpispublicos.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

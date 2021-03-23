@@ -38,14 +38,13 @@ public class ICMSSTTransporteExcluirEmMassa extends TestBaseKenssy {
 		loginTC.login();
 
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = iCMSSTTransporteExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
 

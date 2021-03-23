@@ -36,11 +36,9 @@ public class DeterminacionRelevanciaPorMotivoDetalles extends TestBaseCristhian 
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

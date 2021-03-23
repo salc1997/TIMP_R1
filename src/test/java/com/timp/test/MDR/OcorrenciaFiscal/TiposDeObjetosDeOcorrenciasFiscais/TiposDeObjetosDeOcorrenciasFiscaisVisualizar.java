@@ -27,19 +27,17 @@ public class TiposDeObjetosDeOcorrenciasFiscaisVisualizar extends TestBaseEliel 
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeObjetosDeOcorrenciasFiscaisVisualizarPO = new TiposDeObjetosDeOcorrenciasFiscaisVisualizarPO();
 	}
-	
-	
-	@AfterClass
-	  public void afterClass() {
-		  driver.close();
-	  }
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = tiposDeObjetosDeOcorrenciasFiscaisVisualizarPO.visualizar();

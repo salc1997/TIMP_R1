@@ -38,13 +38,11 @@ public class CadastroMotivosReaberturaDetalhes extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = cadastroMotivosReaberturaDetalhesPO.detalhes();

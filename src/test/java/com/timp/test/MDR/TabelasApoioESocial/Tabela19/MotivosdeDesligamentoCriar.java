@@ -18,7 +18,7 @@ public class MotivosdeDesligamentoCriar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MotivosdeDesligamentoCriarPO motivoDesligamentoCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationKen();

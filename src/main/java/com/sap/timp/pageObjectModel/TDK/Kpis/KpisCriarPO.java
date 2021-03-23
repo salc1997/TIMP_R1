@@ -139,7 +139,12 @@ public class KpisCriarPO extends TestBaseMassiel {
 		sim.click();
 		sleep(2000);
 
-		waitExpectElement(kpispublicos);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		kpispublicos.click();
@@ -156,7 +161,7 @@ public class KpisCriarPO extends TestBaseMassiel {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
-		idInserir2(idB);
+		idInserir("KpisCriar", idB);
 
 		System.out.println(id);
 		System.out.println(idB);

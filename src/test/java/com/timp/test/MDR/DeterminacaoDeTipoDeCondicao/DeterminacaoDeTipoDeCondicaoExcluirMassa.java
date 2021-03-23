@@ -19,27 +19,26 @@ public class DeterminacaoDeTipoDeCondicaoExcluirMassa extends TestBaseCristhian 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeterminacaoDeTipoDeCondicaoExcluirMassaPO determinacaoDeTipoDeCondicaoExcluirMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		determinacaoDeTipoDeCondicaoExcluirMassaPO = new DeterminacaoDeTipoDeCondicaoExcluirMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	 driver.close();
-  }
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = determinacaoDeTipoDeCondicaoExcluirMassaPO.criar();

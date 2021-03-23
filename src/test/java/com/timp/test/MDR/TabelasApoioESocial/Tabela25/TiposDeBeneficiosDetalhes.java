@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeBeneficiosDetalhes extends TestBaseKenssy{
+public class TiposDeBeneficiosDetalhes extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeBeneficiosDetalhesPO tiposDeBeneficiosDetalhesPO;

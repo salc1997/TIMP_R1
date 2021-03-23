@@ -31,16 +31,16 @@ public class RegistroDeExportaçaoCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
-	}
 
-	
+		driver.close();
+
+	}
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroDeExportaçaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

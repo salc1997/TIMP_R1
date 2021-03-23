@@ -19,34 +19,33 @@ public class SaldoInicialVisualizar extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SaldoInicialVisualizarPO saldoInicialVisualizarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  acessarMDRPO = new AcessarMDRPO();
-	  saldoInicialVisualizarPO = new SaldoInicialVisualizarPO();
-  }
 
-  @AfterClass
- 	public void afterClass() {
- 		driver.close();
- 	}
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		acessarMDRPO = new AcessarMDRPO();
+		saldoInicialVisualizarPO = new SaldoInicialVisualizarPO();
+	}
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
- 	@Test()
-  public void VisualizarSaldoInicial() {
+	@Test()
+	public void VisualizarSaldoInicial() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
- 		
- 		ArrayList<Boolean> sucesso = saldoInicialVisualizarPO.VisualizarSaldoInicial();
+
+		ArrayList<Boolean> sucesso = saldoInicialVisualizarPO.VisualizarSaldoInicial();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-  }
+	}
 }

@@ -32,15 +32,12 @@ public class ContasDefaultParaExtemporaneoFiltroID extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtroId() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
 
 		boolean sucesso = contasDefaultParaExtemporaneoFiltroIdPO.filtro();
 

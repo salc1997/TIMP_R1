@@ -24,34 +24,34 @@ public class ProcessosAdmJudiciaisExcluirEmMasa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	ProcessosAdmJudiciaisExcluirEmMassaPO processosAdmJudiciaisExcluirEmMassaPO;
-	 
+
 	@BeforeClass
 	public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  accesarMDR = new AcessarMDRPO();
-		  processosAdmJudiciaisExcluirEmMassaPO = new ProcessosAdmJudiciaisExcluirEmMassaPO();
+		driver = initialization();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		processosAdmJudiciaisExcluirEmMassaPO = new ProcessosAdmJudiciaisExcluirEmMassaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		  driver.close();
+		driver.close();
 	}
-	 
+
 	@Test()
 	public void criar() {
 		loginTC.login();
 		accesarMDR.acessarMDR();
-		
+
 		boolean sucesso = processosAdmJudiciaisExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
 		sleep(1000);
 		boolean sucesso2 = processosAdmJudiciaisExcluirEmMassaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
-		
+
 	}
 }

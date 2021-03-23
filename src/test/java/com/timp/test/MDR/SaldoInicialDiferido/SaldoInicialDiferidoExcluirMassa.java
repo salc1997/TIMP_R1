@@ -19,27 +19,26 @@ public class SaldoInicialDiferidoExcluirMassa extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SaldoInicialDiferidoExcluirMassaPO saldoInicialDiferidoExcluirMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		saldoInicialDiferidoExcluirMassaPO = new SaldoInicialDiferidoExcluirMassaPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void ExcluirMassa() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = saldoInicialDiferidoExcluirMassaPO.criar();

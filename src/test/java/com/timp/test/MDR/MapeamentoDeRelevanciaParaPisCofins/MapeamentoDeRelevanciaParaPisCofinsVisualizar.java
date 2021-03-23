@@ -33,14 +33,12 @@ public class MapeamentoDeRelevanciaParaPisCofinsVisualizar extends TestBaseEliel
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = mapeamentoDeRelevanciaParaPisCofinsVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

@@ -31,6 +31,7 @@ public class ConfiguracoesLixeiraExcluir extends TestBaseMassiel {
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test(priority = 0)
@@ -45,7 +46,7 @@ public class ConfiguracoesLixeiraExcluir extends TestBaseMassiel {
 	}
 
 	@Test(priority = 2)
-	public void executar() {
+	public void Lixeria() {
 		
 		boolean sucesso = configuracoesLixeiraExcluirPO.LixeriaExcluir();
 		  assertTrue(sucesso, Editar);

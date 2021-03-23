@@ -19,7 +19,7 @@ public class SPCBFederaisRetidosExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SPCBFederaisRetidosExcluirPO sPCBFederaisRetidosExcluirPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
@@ -32,13 +32,12 @@ public class SPCBFederaisRetidosExcluir extends TestBaseCristhian {
 	@AfterClass
 	public void afterClass() {
 		driver.close();
-		
-	}
 
+	}
 
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

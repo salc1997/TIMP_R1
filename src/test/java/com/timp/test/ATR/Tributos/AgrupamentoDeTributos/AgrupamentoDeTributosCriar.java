@@ -31,20 +31,13 @@ public class AgrupamentoDeTributosCriar extends TestBaseEliel{
 	  }
 	  
 	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void criar() {
+	 		
+	 		loginTC.login();
+	 		acessarATRPO.acessarATR();
+	 		
 	 		
 	 		boolean sucesso = agrupamentoDeTributosCriarPO.criar();
 			assertTrue(sucesso, Criar);

@@ -2,7 +2,6 @@ package com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal;
 
 import org.testng.annotations.Test;
 
-
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -23,7 +22,7 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseMassiel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationM();
+		driver = initializationM(); 
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		observaçoesdoDocumentoFiscalEditarPO = new ObservaçoesdoDocumentoFiscalEditarPO();
@@ -31,7 +30,7 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

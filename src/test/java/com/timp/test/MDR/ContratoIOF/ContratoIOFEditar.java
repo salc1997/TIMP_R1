@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ContratoIOFEditar extends TestBaseMassiel{
+public class ContratoIOFEditar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContratoIOFEditarPO contratoIOFEditarPO;
@@ -34,18 +34,16 @@ public class ContratoIOFEditar extends TestBaseMassiel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
 
-		 boolean sucesso = 	contratoIOFEditarPO.editar();
+		boolean sucesso = contratoIOFEditarPO.editar();
 
-			assertTrue(sucesso, Criar);
-
+		assertTrue(sucesso, Criar);
 
 	}
 

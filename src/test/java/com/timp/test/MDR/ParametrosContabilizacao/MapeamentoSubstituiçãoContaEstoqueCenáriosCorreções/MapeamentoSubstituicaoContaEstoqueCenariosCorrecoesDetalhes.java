@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaDetal
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO;
@@ -36,13 +36,12 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes extends
 		driver.close();
 	}
 
-
 	@Test()
 	public void detalhes() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

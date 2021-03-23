@@ -20,7 +20,7 @@ public class TiposDeDependentesDetalhe extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TiposDeDependentesDetalhePO tiposDeDependentesDetalhePO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
@@ -31,7 +31,7 @@ public class TiposDeDependentesDetalhe extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		// driver.close();
 	}
 
 	@Test()

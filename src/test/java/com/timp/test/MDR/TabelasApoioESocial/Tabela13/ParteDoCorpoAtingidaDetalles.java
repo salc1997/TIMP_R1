@@ -15,32 +15,31 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParteDoCorpoAtingidaDetalles extends TestBaseMassiel{
-	
+public class ParteDoCorpoAtingidaDetalles extends TestBaseMassiel {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParteDoCorpoAtingidaDetallesPO parteDoCorpoAtingidaDetallesPO;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parteDoCorpoAtingidaDetallesPO = new ParteDoCorpoAtingidaDetallesPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  @Test()
+	@Test()
 	public void detalle() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		
 		ArrayList<Boolean> sucesso = parteDoCorpoAtingidaDetallesPO.Detalle();
 
 		for (int i = 0; i < sucesso.size(); i++) {

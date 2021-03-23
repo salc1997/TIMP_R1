@@ -24,7 +24,7 @@ public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -35,8 +35,6 @@ public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-
-	
 
 	@Test()
 	public void visualizar() {

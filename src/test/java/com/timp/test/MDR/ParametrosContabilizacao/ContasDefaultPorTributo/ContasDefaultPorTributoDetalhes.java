@@ -35,15 +35,13 @@ public class ContasDefaultPorTributoDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Detalhes() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = contasDefaultPorTributoDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

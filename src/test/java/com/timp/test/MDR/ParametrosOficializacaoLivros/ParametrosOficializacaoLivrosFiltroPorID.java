@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosFiltroPorIDPO;
 
 public class ParametrosOficializacaoLivrosFiltroPorID extends TestBaseEliel {
-	
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosOficializacaoLivrosFiltroPorIDPO parametrosOficializacaoLivrosFiltroPorIDPO;
@@ -32,20 +32,15 @@ public class ParametrosOficializacaoLivrosFiltroPorID extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtro() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = parametrosOficializacaoLivrosFiltroPorIDPO.filtro();
 		assertTrue(sucesso, Filtros);
 
-		
-
 	}
-  
-	
+
 }

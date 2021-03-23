@@ -129,7 +129,12 @@ public class RelatorioRefineriaGeradosManutencaoEditarLancamentoPO extends TestB
 		abaLancamentoo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
 		
 		menu = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[1]/div/div/span[2]"));
 		acoe = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

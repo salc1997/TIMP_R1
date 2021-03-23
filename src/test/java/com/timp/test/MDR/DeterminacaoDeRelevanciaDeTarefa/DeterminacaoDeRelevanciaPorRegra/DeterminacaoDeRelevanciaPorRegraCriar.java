@@ -31,13 +31,12 @@ public class DeterminacaoDeRelevanciaPorRegraCriar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = determinacaoDeRelevanciaPorRegraCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

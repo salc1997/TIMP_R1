@@ -14,25 +14,23 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.remote.NewSessionPayload;
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosParaEnvioDeMensagensFiltrosId extends TestBaseMassiel{
+public class ParâmetrosParaEnvioDeMensagensFiltrosId extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParâmetrosParaEnvioDeMensagensFiltroIdPO parâmetrosParaEnvioDeMensagensFiltroIdPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parâmetrosParaEnvioDeMensagensFiltroIdPO = new ParâmetrosParaEnvioDeMensagensFiltroIdPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test(priority = 1)
 	public void filtros() {
@@ -40,9 +38,9 @@ public class ParâmetrosParaEnvioDeMensagensFiltrosId extends TestBaseMassiel{
 		acessarMDRPO.acessarMDR();
 
 		parâmetrosParaEnvioDeMensagensFiltroIdPO.filtro();
-	//	String sucesso = antecipacaoFiltrosPO.filtro();
+		// String sucesso = antecipacaoFiltrosPO.filtro();
 
-	//	assertEquals(sucesso, antecipacaoFiltrosPO.id.getText(), Filtros);
+		// assertEquals(sucesso, antecipacaoFiltrosPO.id.getText(), Filtros);
 
 	}
 

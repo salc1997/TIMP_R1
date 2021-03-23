@@ -105,7 +105,7 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> visualizar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
 		String url = driver.getCurrentUrl();
 		

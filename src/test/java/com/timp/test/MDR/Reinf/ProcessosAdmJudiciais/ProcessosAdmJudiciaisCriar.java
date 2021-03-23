@@ -35,11 +35,10 @@ public class ProcessosAdmJudiciaisCriar extends TestBaseEliel {
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = processosAdmJudiciaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 
 	}
-
 
 }

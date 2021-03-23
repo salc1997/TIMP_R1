@@ -31,14 +31,13 @@ public class DeterminacaoDeTipoDeCondicaoExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = determinacaoDeTipoDeCondicaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

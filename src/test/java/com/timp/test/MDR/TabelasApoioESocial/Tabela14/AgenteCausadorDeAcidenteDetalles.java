@@ -15,36 +15,35 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AgenteCausadorDeAcidenteDetalles extends TestBaseMassiel{
+public class AgenteCausadorDeAcidenteDetalles extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AgenteCausadorDeAcidenteDetallesPO agenteCausadorDeAcidenteDetallesPO;
- 
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		agenteCausadorDeAcidenteDetallesPO = new AgenteCausadorDeAcidenteDetallesPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  @Test()
- 	public void detalle() {
+	@Test()
+	public void detalle() {
 
- 		loginTC.login();
- 		acessarMDRPO.acessarMDR();
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
 
- 		
- 		ArrayList<Boolean> sucesso = agenteCausadorDeAcidenteDetallesPO.Detalle();
+		ArrayList<Boolean> sucesso = agenteCausadorDeAcidenteDetallesPO.Detalle();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
 
- 	}
+	}
 }

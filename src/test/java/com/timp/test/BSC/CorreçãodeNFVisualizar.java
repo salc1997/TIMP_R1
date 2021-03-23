@@ -18,50 +18,34 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CorreçãodeNFVisualizar extends TestBaseMassiel {
-  
+
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
 	CorrecaoDeNFDetalhesPO correcaoDeNFDetalhesPO;
 	AcessarBrbPO acessarBrbPO;
 	CorreçãodeNFVisualizarPO  correçãodeNFVisualizarPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarBrbPO = new AcessarBrbPO();
-	  correçãodeNFVisualizarPO = new CorreçãodeNFVisualizarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-//	  driver.close();
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		correçãodeNFVisualizarPO = new CorreçãodeNFVisualizarPO();
 	}
 
-	@Test(priority = 1)
-	public void brbEntrar() {
-		acessarBrbPO.acessar();
-
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
-	
-	@Test(priority = 2)
+
+	@Test()
 	public void  visualizar() {
-	
-		
-	   
-	   ArrayList<Boolean> viEdi =  correçãodeNFVisualizarPO.Visualizar();
+		loginTC.login();
+		acessarBrbPO.acessar();		
+
+		ArrayList<Boolean> viEdi =  correçãodeNFVisualizarPO.Visualizar();
 		for (int i = 0; i < viEdi.size(); i++) {
-		assertTrue(viEdi.get(i), Filtros);
+			assertTrue(viEdi.get(i), Filtros);
 		}
-
 	}
-
-
 }

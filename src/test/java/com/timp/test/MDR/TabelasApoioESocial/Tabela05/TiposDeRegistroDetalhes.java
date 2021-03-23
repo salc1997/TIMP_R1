@@ -13,11 +13,11 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela05.TiposDeRegistroDetalhesPO;
 
-public class TiposDeRegistroDetalhes extends TestBaseFernando{
+public class TiposDeRegistroDetalhes extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	TiposDeRegistroDetalhesPO tiposDeRegistroDetalhesPO;
-	 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
@@ -25,19 +25,19 @@ public class TiposDeRegistroDetalhes extends TestBaseFernando{
 		accesarMDRPO = new AcessarMDRPO();
 		tiposDeRegistroDetalhesPO = new TiposDeRegistroDetalhesPO();
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	  
+
 	@Test()
-	public void detalhe() {		
-		loginTC.login();		
+	public void detalhe() {
+		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = tiposDeRegistroDetalhesPO.detalhes();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}

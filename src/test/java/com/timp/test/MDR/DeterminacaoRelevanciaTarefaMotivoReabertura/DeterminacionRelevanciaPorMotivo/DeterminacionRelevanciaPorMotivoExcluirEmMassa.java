@@ -16,42 +16,39 @@ import org.testng.annotations.AfterClass;
 public class DeterminacionRelevanciaPorMotivoExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
-	DeterminacionRelevanciaPorMotivoExcluirEmMassaPO  determinacionRelevanciaPorMotivoExcluirEmMassaPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationKen();
-	  loginTC = new LoginTC();
-	  accesarMDR = new AcessarMDRPO();
-	  determinacionRelevanciaPorMotivoExcluirEmMassaPO = new DeterminacionRelevanciaPorMotivoExcluirEmMassaPO();
-  }
+	DeterminacionRelevanciaPorMotivoExcluirEmMassaPO determinacionRelevanciaPorMotivoExcluirEmMassaPO;
 
-  @AfterClass
-  public void afterClass() {
-	  //driver.close();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationKen();
+		loginTC = new LoginTC();
+		accesarMDR = new AcessarMDRPO();
+		determinacionRelevanciaPorMotivoExcluirEmMassaPO = new DeterminacionRelevanciaPorMotivoExcluirEmMassaPO();
+	}
 
-  
-  @Test()
-  public void criar() {
-	  
-	  loginTC.login();
+	@AfterClass
+	public void afterClass() {
+		// driver.close();
+	}
 
-	  accesarMDR.acessarMDR();
-		
-	boolean sucesso = determinacionRelevanciaPorMotivoExcluirEmMassaPO.criar();
-	assertTrue(sucesso, Criar);
+	@Test()
+	public void criar() {
 
+		loginTC.login();
 
-  }
-  
-  @Test(dependsOnMethods = "criar")
-  public void excluir() {
+		accesarMDR.acessarMDR();
 
-	boolean sucesso2 = determinacionRelevanciaPorMotivoExcluirEmMassaPO.determinacaoDeRelevanciaPorMotivoExcluirEmMassa();
-	assertTrue(sucesso2, Eliminado);
-  }
+		boolean sucesso = determinacionRelevanciaPorMotivoExcluirEmMassaPO.criar();
+		assertTrue(sucesso, Criar);
 
-  
+	}
+
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+
+		boolean sucesso2 = determinacionRelevanciaPorMotivoExcluirEmMassaPO
+				.determinacaoDeRelevanciaPorMotivoExcluirEmMassa();
+		assertTrue(sucesso2, Eliminado);
+	}
 
 }

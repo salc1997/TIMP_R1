@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CálculodeTributosEdiçãoEstruturas extends TestBaseCristhian{
+public class CálculodeTributosEdiçãoEstruturas extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CálculodeTributosEdiçãoEstruturasPO cálculodeTributosEdiçãoEstruturasPO;
@@ -27,7 +27,6 @@ public class CálculodeTributosEdiçãoEstruturas extends TestBaseCristhian{
 		acessarBREPO = new AcessarBREPO();
 		cálculodeTributosEdiçãoEstruturasPO = new CálculodeTributosEdiçãoEstruturasPO();
 	}
-
 
 	@AfterClass
 	public void afterClass() {

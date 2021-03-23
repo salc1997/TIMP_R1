@@ -208,6 +208,8 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBaseMassiel{
 		
 		System.out.println(sucesso);
 		
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
 		if (tq1 == true) {
@@ -360,7 +362,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBaseMassiel{
 		
 		
 		if (idBD > idD) {
-			idInserir1(idB);
+			idInserir("DashboardParametrosGeraisExecutar", idB);
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);

@@ -22,42 +22,28 @@ public class CorreçãodeNFVisualizarHistorico extends TestBaseMassiel{
 	AcessarBSCPO acessarBSC;
 	AcessarBrbPO acessarBrbPO;
 	CorreçãodeNFVisualizarHistoricoPO correçãodeNFVisualizarHistoricoPO;
-	
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarBrbPO = new AcessarBrbPO();
-	  correçãodeNFVisualizarHistoricoPO = new CorreçãodeNFVisualizarHistoricoPO();
-	  
-  }
 
-  @AfterClass
-  public void afterClass() {
-  }
-  
-  @Test(priority = 0)
- 	public void login() {
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		correçãodeNFVisualizarHistoricoPO = new CorreçãodeNFVisualizarHistoricoPO();
 
- 		loginTC.login();
+	}
 
- 	}
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
- 	@Test(priority = 1)
- 	public void brbEntrar() {
- 		acessarBrbPO.acessar();
+	@Test()
+	public void  Aprovar() {
 
- 	}
- 	
- 	@Test(priority = 2)
- 	public void  Aprovar() {
- 
- 		
- 	   ArrayList<Boolean> viEdi =   correçãodeNFVisualizarHistoricoPO.VisualizarHistorico();
- 	   for (int i = 0; i < viEdi.size(); i++) {
- 		assertTrue(viEdi.get(i), Filtros);
- 		}
 
- 	}
-
+		ArrayList<Boolean> viEdi =   correçãodeNFVisualizarHistoricoPO.VisualizarHistorico();
+		for (int i = 0; i < viEdi.size(); i++) {
+			assertTrue(viEdi.get(i), Filtros);
+		}
+	}
 }

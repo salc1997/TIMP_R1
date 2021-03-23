@@ -17,37 +17,28 @@ public class ConfiguracaoDeTipoTributoVisualizar extends TestBaseEliel{
  
 	
 	LoginTC loginTC;
-	AcessarADMPO acessarADMPO;
+	AcessarADMPO acessarADMPO; 
 	ConfiguracaoDeTipoTributoVisualizarPO configuracaoDeTipoTributoVisualizarPO ;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTipoTributoVisualizarPO = new ConfiguracaoDeTipoTributoVisualizarPO();
-  }
+	  @BeforeClass
+	  public void beforeClass() {
+		  driver = initializationE();
+		  loginTC = new LoginTC();
+		  acessarADMPO = new AcessarADMPO();
+		  configuracaoDeTipoTributoVisualizarPO = new ConfiguracaoDeTipoTributoVisualizarPO();
+	  }
 
-  @AfterClass
-  public void afterClass() {
-  }
+	  @AfterClass
+	  public void afterClass() {
+		  driver.close();
+	  }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void Visualizar() {
-
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		
 		ArrayList<Boolean> sucesso = configuracaoDeTipoTributoVisualizarPO.visualizar();
 

@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 
 public class FatoresDeRiscoCriar extends TestBaseCristhian {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FatoresDeRiscoCriarPO factoresDeRiscoCriarPO;

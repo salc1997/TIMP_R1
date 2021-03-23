@@ -22,7 +22,7 @@ public class HierarquiaDeCenariosDeCorreçaoCriar extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
- 
+
 		driver = initializationE();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
@@ -34,16 +34,13 @@ public class HierarquiaDeCenariosDeCorreçaoCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void criar() {
-		
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = hierarquiaDeCenariosDeCorreçaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

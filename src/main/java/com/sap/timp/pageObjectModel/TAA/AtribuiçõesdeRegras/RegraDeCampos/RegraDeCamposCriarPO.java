@@ -180,10 +180,10 @@ public class RegraDeCamposCriarPO extends TestBaseFernando{
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro);
 		
-		if(id2 > id1) {
+		if(id2 > id1) { 
 			System.out.println("Registro creado...");
 			sucesso = true;
-			idInserir4(idRegistro);
+			idInserir("RegraDeCampos",idRegistro);
 		}else {
 			System.out.println("No se pudo crear el registro...");
 		}

@@ -33,11 +33,9 @@ public class DeterminacaoDeRelevanciaPorRegraDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

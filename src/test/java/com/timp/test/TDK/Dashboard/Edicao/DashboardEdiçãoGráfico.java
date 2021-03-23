@@ -28,21 +28,14 @@ public class DashboardEdiçãoGráfico extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = dashboardEdiçãoGráficoPO.Editar();
 		assertTrue(sucesso, Criar);
 	}

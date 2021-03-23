@@ -31,14 +31,13 @@ public class ContasDefaultParaExtemporaneoCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = contasDefaultParaExtemporaneoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

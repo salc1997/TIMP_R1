@@ -31,14 +31,12 @@ public class RegistroDeExportaçaoExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroDeExportaçaoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

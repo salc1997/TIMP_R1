@@ -56,13 +56,14 @@ public class RegrasdeAuditoriaN2DetalhesPO extends TestBaseCristhian{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+ 
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter3();
+		//String idRegistro = idObter3();
+		String idRegistro = idObter("An2");
 		//String idRegistro = "1326";
 		//String idRegistro = "1289"; tc2
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class StatusParaBancoIndébitosVisualizar extends TestBaseCristhian{
+public class StatusParaBancoIndébitosVisualizar extends TestBaseCristhian {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -33,13 +33,12 @@ public class StatusParaBancoIndébitosVisualizar extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		driver.close();
 	}
-
 
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

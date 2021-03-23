@@ -34,15 +34,13 @@ public class MapeamentoContabilEditar extends TestBaseCristhian {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void editar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = mapeamentoContabilEditarPO.editar();
 
 		assertTrue(sucesso, Editar);

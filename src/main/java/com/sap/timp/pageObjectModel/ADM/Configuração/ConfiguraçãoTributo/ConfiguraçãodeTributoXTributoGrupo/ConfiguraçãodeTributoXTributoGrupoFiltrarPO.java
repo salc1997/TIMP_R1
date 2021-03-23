@@ -62,7 +62,7 @@ public class ConfiguraçãodeTributoXTributoGrupoFiltrarPO extends TestBaseCristhi
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ConfiguraçãodeTributoXTributoGrupo");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		pesquisar.sendKeys(idRegistro);

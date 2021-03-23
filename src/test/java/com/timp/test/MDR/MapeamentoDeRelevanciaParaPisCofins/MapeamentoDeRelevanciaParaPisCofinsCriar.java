@@ -31,13 +31,11 @@ public class MapeamentoDeRelevanciaParaPisCofinsCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = mapeamentoDeRelevanciaParaPisCofinsCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

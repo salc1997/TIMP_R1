@@ -35,11 +35,9 @@ public class RegistroDeExportaçaoFiltrosAvançados extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtros() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

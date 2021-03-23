@@ -30,15 +30,13 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

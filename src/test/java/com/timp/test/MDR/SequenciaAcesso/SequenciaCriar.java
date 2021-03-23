@@ -35,14 +35,12 @@ public class SequenciaCriar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean text = sequenciaCriarPO.criar();
 
 		assertTrue(text, Criar);

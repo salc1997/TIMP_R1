@@ -34,15 +34,13 @@ public class ContratoIOFCriar extends TestBaseMassiel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = contraIOFCriarPO.criar();
 
 		assertTrue(sucesso, semAcesso);

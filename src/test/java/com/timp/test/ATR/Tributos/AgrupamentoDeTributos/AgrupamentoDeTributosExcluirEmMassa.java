@@ -29,27 +29,23 @@ public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseEliel{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarATR() {
-
-		acessarATRPO.acessarATR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+ 		acessarATRPO.acessarATR();
 
 		boolean sucesso = agrupamentoDeTributosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+	
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void Excluir() {
+		
 		sleep(1000);
 		boolean sucesso2 = agrupamentoDeTributosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

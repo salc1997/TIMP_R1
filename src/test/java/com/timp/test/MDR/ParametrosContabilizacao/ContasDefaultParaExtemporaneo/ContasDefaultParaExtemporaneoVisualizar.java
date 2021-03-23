@@ -34,17 +34,15 @@ public class ContasDefaultParaExtemporaneoVisualizar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Visualizar() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = contasDefaultParaExtemporaneoVisualizarPO.visualizar();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}

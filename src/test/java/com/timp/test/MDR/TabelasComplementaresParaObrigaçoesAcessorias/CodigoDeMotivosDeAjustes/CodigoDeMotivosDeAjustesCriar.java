@@ -16,11 +16,11 @@ public class CodigoDeMotivosDeAjustesCriar extends TestBaseEliel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeMotivosDeAjustesCriarPO codigoDeMotivosDeAjustesCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initializationE(); 
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoDeMotivosDeAjustesCriarPO = new CodigoDeMotivosDeAjustesCriarPO();

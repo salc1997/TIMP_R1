@@ -19,7 +19,7 @@ public class TabelaReceitasPermitidasCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaReceitasPermitidasCriarPO tabelaReceitasPermitidasCriarPO;
- 
+
 	@BeforeClass
 	public void beforeClass() {
 

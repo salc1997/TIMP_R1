@@ -82,7 +82,7 @@ public class AgrupamentoDeTributosDetalhesPO extends TestBaseEliel {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("AgrupamentoDeTributosCriar");
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
@@ -116,7 +116,7 @@ public class AgrupamentoDeTributosDetalhesPO extends TestBaseEliel {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 =  idObter("AgrupamentoDeTributosCriar");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement ver = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));

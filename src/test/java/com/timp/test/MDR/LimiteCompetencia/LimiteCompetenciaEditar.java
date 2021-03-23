@@ -30,17 +30,16 @@ public class LimiteCompetenciaEditar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
-
 
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = limiteCompetenciaEditarPO.editar();
 
 		assertTrue(sucesso, editado);

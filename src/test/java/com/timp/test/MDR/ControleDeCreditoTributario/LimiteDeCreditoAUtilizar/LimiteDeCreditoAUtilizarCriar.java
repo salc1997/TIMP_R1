@@ -30,15 +30,15 @@ public class LimiteDeCreditoAUtilizarCriar extends TestBaseEliel {
 	@AfterClass
 	public void afterClass() {
 		driver.close();
-	} 
+	}
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = limiteDeCreditoAUtilizarCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

@@ -46,7 +46,7 @@ public class ParametrosGeraisFiltroAvancados extends TestBaseMassiel{
 	}
 
 	@Test(priority = 2)
-	public void filtros() {
+	public void filtroNombre() {
 
 		//parametrosGeraisFiltroAvancadosPO.FiltroId();
 
@@ -55,10 +55,28 @@ public class ParametrosGeraisFiltroAvancados extends TestBaseMassiel{
 			assertTrue(Nome.get(i), Filtros);
 		}
 
+		
+
+
+	}
+	
+	@Test(priority = 3)
+	public void filtrosId() {
+
+		
 		ArrayList<Boolean> id = parametrosGeraisFiltroAvancadosPO.FiltroId();
 		for (int i = 0; i < id.size(); i++) {
 			assertTrue(id.get(i), Filtros);
 		}
+
+		
+
+
+	}
+	
+	@Test(priority = 4)
+	public void filtrosVersao() {
+
 
 		ArrayList<Boolean> versao = parametrosGeraisFiltroAvancadosPO.FiltroVersao();
 		for (int i = 0; i < versao.size(); i++) {
@@ -66,29 +84,56 @@ public class ParametrosGeraisFiltroAvancados extends TestBaseMassiel{
 		}
 
 
+	}
+	
+	@Test(priority = 5)
+	public void filtrosFiltroTipo() {
+
+		
 		ArrayList<Boolean> tipo = parametrosGeraisFiltroAvancadosPO.FiltroTipo();
 		for (int i = 0; i < tipo.size(); i++) {
 		assertTrue(tipo.get(i), Filtros);
 		}
+
+	}
+	
+	@Test(priority = 6)
+	public void filtrosUsuarioCriado() {
+
 		
 		ArrayList<Boolean> UsuarioCriado = parametrosGeraisFiltroAvancadosPO.FiltroUsuarioCriado();
 		for (int i = 0; i < UsuarioCriado.size(); i++) {
 			assertTrue(UsuarioCriado.get(i), Filtros);
 		}
 		
+
+	}
+	
+	@Test(priority =7 )
+	public void filtrosUsuarioModificado() {
+
+		
 		ArrayList<Boolean> UsuarioModificado = parametrosGeraisFiltroAvancadosPO.FiltroUsuarioModicado();
 		for (int i1 = 0; i1 < UsuarioModificado.size(); i1++) {
 			assertTrue(UsuarioModificado.get(i1), Filtros);
 		}
 
+	}
 	
+	@Test(priority = 8)
+	public void filtrosFechaUsuarioModificado() {
+
 
 		ArrayList<Boolean> FechaUsuarioModificado = parametrosGeraisFiltroAvancadosPO.FiltroFechaUsuarioModificado();
 		for (int i1 = 0; i1 < FechaUsuarioModificado.size(); i1++) {
 			assertTrue(FechaUsuarioModificado.get(i1), Filtros);
 		}
 		
-		
+	}
+	
+	@Test(priority = 9)
+	public void filtrosFechaUsuarioCriado() {
+
 
 		ArrayList<Boolean> FechaUsuarioCriado = parametrosGeraisFiltroAvancadosPO.FiltroFechaUsuarioCriado();
 		for (int i = 0; i < FechaUsuarioCriado.size(); i++) {

@@ -35,7 +35,7 @@ public class ProcessosAdmJudiciaisEditar extends TestBaseEliel {
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = processosAdmJudiciaisEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

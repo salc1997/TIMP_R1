@@ -31,33 +31,18 @@ public class ExecucoesExecucoesPublicasFiltrosAva extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarTDKPO.acessarTDK();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtros() {
-
-		// codigoTipoCreditoFiltrosAvançadosPO.filtros();
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		ArrayList<Boolean> sucesso = execucoesFiltrosAvaPO.detalhes();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The results in the filter aren't equal");
 		}
-
 	}
-
 }

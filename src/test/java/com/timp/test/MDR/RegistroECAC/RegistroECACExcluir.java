@@ -35,7 +35,7 @@ public class RegistroECACExcluir extends TestBaseEliel {
 	public void excluir() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroECACExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

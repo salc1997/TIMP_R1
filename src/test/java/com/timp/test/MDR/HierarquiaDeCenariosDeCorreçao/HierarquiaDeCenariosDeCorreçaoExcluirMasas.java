@@ -13,40 +13,39 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class HierarquiaDeCenariosDeCorreçaoExcluirMasas extends TestBaseMassiel{
+public class HierarquiaDeCenariosDeCorreçaoExcluirMasas extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	HierarquiaDeCenariosDeCorreçaoExcluirMasasPO hierarquiaDeCenariosDeCorreçaoExcluirMasasPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		hierarquiaDeCenariosDeCorreçaoExcluirMasasPO = new HierarquiaDeCenariosDeCorreçaoExcluirMasasPO();
-  }
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = hierarquiaDeCenariosDeCorreçaoExcluirMasasPO.criar();
 		assertTrue(sucesso, Criar);
-		
+
 	}
-	
-	@Test(dependsOnMethods = "criar" )
+
+	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
+
 		boolean sucesso2 = hierarquiaDeCenariosDeCorreçaoExcluirMasasPO.HierarquiaDeCenariosDeCorreçaoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
 	}

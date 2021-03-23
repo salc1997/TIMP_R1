@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa extends TestBaseEliel {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO;
@@ -36,23 +36,20 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa e
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 
-
 	}
-	
-	
+
 	@Test(dependsOnMethods = "Criar")
 	public void Excluir() {
 
-		
 		sleep(1000);
 		boolean sucesso2 = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

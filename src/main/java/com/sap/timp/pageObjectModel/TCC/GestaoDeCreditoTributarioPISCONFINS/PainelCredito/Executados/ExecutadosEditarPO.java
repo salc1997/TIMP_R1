@@ -64,7 +64,7 @@ public class ExecutadosEditarPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editarExe() {
+	public boolean editarExe() {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -84,11 +84,11 @@ public class ExecutadosEditarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro = idObter("idPainelCreditoConfiguracaoEExecucacoExecutados");
+		
 		System.out.println("registro: "+idRegistro);
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		
 		WebElement executar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		actionsMoveToElementElement(menu);
@@ -98,21 +98,28 @@ public class ExecutadosEditarPO extends TestBaseCristhian {
 		executar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		waitExpectElement(inputSubperiodo);
+		sleep(3000);
 		
-		String valor = inputSubperiodo.getText();
-		System.out.println("valor actual " + valor);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+//		String valor = inputSubperiodo.getText();
+//		System.out.println("valor actual " + valor);
 		
 		btnExecutar.click();
-		System.out.println("22");
+		invisibilityOfElementOverlay();
+		
 		waitExpectElement(cboEmpresa);
 		sleep(2000);
-		System.out.println("22");
+		
+		
 		cboEmpresa.click();
 		sleep(1000);
 		opcionEmpresa.click();
 		sleep(1000);
-		System.out.println("22");
+		
 		attributeToBeXpath("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboEstado.click();
 		sleep(1000);
@@ -150,8 +157,8 @@ public class ExecutadosEditarPO extends TestBaseCristhian {
 		sleep(3000);
 		
 		String enviar = SubperiodoInput.getAttribute("value");
+		enviar = enviar.replace(" ", "");
 		System.out.println("Texto Enviado " + enviar);
-		
 
 		btnExecutar2.click();
 		sleep(1000);
@@ -168,6 +175,7 @@ public class ExecutadosEditarPO extends TestBaseCristhian {
 		
 		boolean sucesso= nuevoTexto.contains(enviar);
 		System.out.println(sucesso);
+		return sucesso;
 		
 	}
 

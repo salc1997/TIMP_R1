@@ -29,21 +29,14 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravar extends TestBaseCristhia
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void executarGravar() {
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso = configuraçãodeLayoutdePainelExecutarGravarPO.executarGravar();
 		assertTrue(sucesso, Editar);
 	}

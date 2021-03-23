@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+
+	<test name="Transferencias de Saldos Credores">
+		<classes>
+				<!-- *******************************Transferencias de Saldos Credores*************************** -->
+				
+				<!-- Transferencias de Saldos Credores -->
+				<class name="com.timp.test.TCC.TransferenciaDeSaldosCredores.TransferenciaDeSaldosCredoresFiltroPorId"></class>
+				<class name="com.timp.test.TCC.TransferenciaDeSaldosCredores.TransferenciaDeSaldosCredoresFiltrosAvancados"></class>
+				
+		</classes>
+	</test>
+</suite> <!-- Suite -->

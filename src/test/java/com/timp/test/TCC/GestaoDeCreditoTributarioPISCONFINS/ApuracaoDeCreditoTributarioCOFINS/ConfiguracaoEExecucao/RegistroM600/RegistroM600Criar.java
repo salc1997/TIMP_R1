@@ -41,7 +41,6 @@ public class RegistroM600Criar extends TestBaseSteven {
 		acessarTCCPO.acessarTCC();
 
 		boolean sucesso = registroM600CriarPO.criar();
-
 		assertTrue(sucesso, Criar);
 	}
 

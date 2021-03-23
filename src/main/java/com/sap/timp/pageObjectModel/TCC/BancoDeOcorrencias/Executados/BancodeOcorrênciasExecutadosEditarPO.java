@@ -61,7 +61,7 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public boolean editar() {
 		
 		bancoOcorrencia.click();
 		sleep(2000);
@@ -165,6 +165,8 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		
 		boolean sucesso= nuevoTexto.contains(enviar);
 		System.out.println(sucesso);
+		
+		return sucesso;
 		
 	}
 

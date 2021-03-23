@@ -32,21 +32,14 @@ public class ConfiguraçãodeLayoutdePainelVisualizar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void ver() {
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		ArrayList<Boolean> sucesso = configuraçãodeLayoutdePainelVisualizarrPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {

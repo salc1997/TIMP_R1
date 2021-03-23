@@ -42,6 +42,7 @@ public class EstruturasVisualizar extends TestBaseCristhian {
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

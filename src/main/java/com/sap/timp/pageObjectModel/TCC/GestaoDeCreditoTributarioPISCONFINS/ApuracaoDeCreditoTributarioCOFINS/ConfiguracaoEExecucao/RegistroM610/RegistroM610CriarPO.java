@@ -211,7 +211,7 @@ public class RegistroM610CriarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+		sleep(4000);
 		biblioteca.click();
 		
 		sleep(3000);

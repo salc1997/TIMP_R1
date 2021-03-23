@@ -27,6 +27,7 @@ public class AgrupamentoDeTributosCriar extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  

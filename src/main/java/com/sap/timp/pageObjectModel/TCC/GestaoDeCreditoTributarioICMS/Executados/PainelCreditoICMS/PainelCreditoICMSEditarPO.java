@@ -93,19 +93,26 @@ public class PainelCreditoICMSEditarPO extends TestBaseMassiel{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
+		waitExpectElement(inputSubperiodo);
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 
-		String valor = inputSubperiodo.getText();
-		System.out.println("valor actual " + valor);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		waitExpectElement(inputSubperiodo);
+//		sleep(2000);
+
+//		String inputPeriodo = driver.findElement(By.xpath("//div[@id=\"executor-head\"][1]/div[2]/div[@class=\"sub-periodo\"]/text()")).getText();
+//
+//		System.out.println(inputPeriodo+ " valormio");
+
 		
+//		String valor = inputSubperiodo.getText();
+//		System.out.println("valor actual " + valor);
+		sleep(2000);
 		btnExecutar.click();
 		invisibilityOfElementOverlay();
 
-		waitExpectElement(cboEmpresa);
+		//waitExpectElement(cboEmpresa);
 		sleep(2000);
 
 		cboEmpresa.click();
@@ -159,7 +166,7 @@ public class PainelCreditoICMSEditarPO extends TestBaseMassiel{
 		sleep(4000);
 
 		driver.navigate().refresh();
-		sleep(8000);
+		//sleep(8000);
 		
 		waitExpectElement(inputSubperiodo);
 		sleep(2000);

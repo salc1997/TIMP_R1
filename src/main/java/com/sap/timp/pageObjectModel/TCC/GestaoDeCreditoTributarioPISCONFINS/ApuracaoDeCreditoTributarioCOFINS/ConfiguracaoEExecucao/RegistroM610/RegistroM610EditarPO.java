@@ -120,7 +120,7 @@ public class RegistroM610EditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		String textoCampoE = campoTexto.getAttribute("value");
-		System.out.println("O texto do campo após a edição é: " +textoCampoE);
+		System.out.println("O texto do campo após a edição é: " + textoCampoE);
 		
 		boolean sucesso = textoCampoE.equals(opcaoT);
 		

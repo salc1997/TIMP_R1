@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+
+	<test name="Banco De Credito Tributarop > Configuração de Banco de Crédito Tributário">
+		<classes>
+				<!-- *******************************BancoDeCreditoExtemporaneo*************************** -->
+				
+				<!-- PainelBCE > ConfiguracaoEExecucao -->
+				<class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes"></class>
+				<class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId"></class>
+				<class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados"></class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

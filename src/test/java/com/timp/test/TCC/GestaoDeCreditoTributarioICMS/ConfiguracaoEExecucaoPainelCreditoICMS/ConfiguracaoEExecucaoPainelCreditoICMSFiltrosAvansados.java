@@ -31,23 +31,14 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados extends Test
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtros() {
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 
 		configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Filtros();
 

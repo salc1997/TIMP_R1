@@ -114,7 +114,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		sleep(2000);
 		
 		closeSelectTypeCheckbox(empresa);
-		sleep(5000);
+		sleep(8000);
 		
 
 		filial.click();

@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1501.Registro1501EditarPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registros1101.Registros1101EditarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101EditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -30,25 +30,15 @@ public class Registro1501Editar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void Editar() {
-
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso = registro1501EditarPO.Editar();
 
 		assertTrue(sucesso, Editar);

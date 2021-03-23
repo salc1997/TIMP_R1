@@ -28,27 +28,15 @@ public class RegistroM505Editar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void Editar() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
 		acessarTCCPO.acessarTCC();
 
-	}
-
-	@Test(priority = 2)
-	public void Editar() {
-
 		boolean sucesso = registroM505EditarPO.editar();
-
 		assertTrue(sucesso, Editar);
 	}
 

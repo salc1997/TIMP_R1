@@ -18,7 +18,7 @@ public class RegistroRVSVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Registro RVS\"]")
 	public WebElement registrorvs;
 
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Empresa\"]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div/input")
 	public WebElement empresa;
 	
 	

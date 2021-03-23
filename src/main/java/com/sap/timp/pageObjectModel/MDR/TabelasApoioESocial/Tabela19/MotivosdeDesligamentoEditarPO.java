@@ -18,7 +18,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
 	
-	@FindBy(xpath = "//textarea[contains(@placeholder,\"Preencher Descrição\")]")
+	@FindBy(xpath = "//div[contains(@class,\"description_0_1\")]/div/textarea")
 	public WebElement campo;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

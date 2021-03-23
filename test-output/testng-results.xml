@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="53" passed="17" failed="33" skipped="3">
 =======
 <<<<<<< HEAD
@@ -27,8 +28,12 @@
 =======
 <testng-results ignored="0" total="27" passed="15" failed="12" skipped="0">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -59,8 +64,12 @@
 =======
   <suite started-at="2021-03-23T19:15:48Z" name="Gestao De Credito Tributario PIS/CONFINS  &gt; Gestao De Credito Tributario PIS &gt; Configuracao E Execucao" finished-at="2021-03-23T20:24:26Z" duration-ms="4117594">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-03-23T17:27:24Z" name="Default suite" finished-at="2021-03-23T17:28:55Z" duration-ms="90254">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -107,9 +116,15 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Visualizar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Visualizar@51549490]" started-at="2021-03-23T19:20:21Z" name="beforeClass" finished-at="2021-03-23T19:20:41Z" duration-ms="19714" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2021-03-23T17:27:24Z" name="Default test" finished-at="2021-03-23T17:28:55Z" duration-ms="90254">
+      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@1bd39d3c]" started-at="2021-03-23T17:27:24Z" name="beforeClass" finished-at="2021-03-23T17:27:38Z" duration-ms="13273" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,8 +152,12 @@
 =======
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar@16eb3ea3]" started-at="2021-03-23T19:39:59Z" name="criar" finished-at="2021-03-23T19:42:39Z" duration-ms="159605" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="excluir()[pri:1, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@1bd39d3c]" started-at="2021-03-23T17:27:38Z" name="excluir" finished-at="2021-03-23T17:28:54Z" duration-ms="76724" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3398,9 +3417,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- Editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Editar@1e8b7643]" started-at="2021-03-23T19:20:17Z" name="afterClass" finished-at="2021-03-23T19:20:21Z" duration-ms="4102" status="PASS">
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@1bd39d3c]" started-at="2021-03-23T17:28:54Z" name="afterClass" finished-at="2021-03-23T17:28:55Z" duration-ms="171" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Editar -->
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Excluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Excluir@71e9ebae]" started-at="2021-03-23T19:22:23Z" name="beforeClass" finished-at="2021-03-23T19:22:40Z" duration-ms="16614" status="PASS">
@@ -4347,4 +4371,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
     </test> <!-- Registro 1300 -->
   </suite> <!-- Gestao De Credito Tributario PIS/CONFINS  > Gestao De Credito Tributario PIS > Configuracao E Execucao -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> refs/heads/Fernando
 </testng-results>

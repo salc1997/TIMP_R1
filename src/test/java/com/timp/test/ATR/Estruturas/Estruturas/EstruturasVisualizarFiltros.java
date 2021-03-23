@@ -30,18 +30,13 @@ public class EstruturasVisualizarFiltros extends TestBaseFernando{
 	}
 
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ATREntrar() {
-		acessarATRPO.acessarATR();
-	}
-
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
+		
+		loginTC.login();
+		
+		acessarATRPO.acessarATR();
+		
 		boolean sucesso = estruturasVisualizarFiltrosPO.visualizar();
 		assertTrue(sucesso, visualizaçar);
 	}

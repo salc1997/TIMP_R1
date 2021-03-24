@@ -43,6 +43,9 @@ public class Registro1100CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")
 	public WebElement filialOPC;
 	
+	@FindBy(xpath = "//div[@id=\"1000_SP_0014\"]")
+	public WebElement filialOPCTC2;
+	
 	@FindBy(xpath = "//div[@id=\"origCred\"]/div/div/div[2]")
 	public WebElement origen;
 	
@@ -71,6 +74,14 @@ public class Registro1100CriarPO extends TestBaseMassiel{
 	}
 	
 	public boolean Criar() {
+		
+		String url = driver.getCurrentUrl();
+		
+		boolean tc2 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -107,36 +118,33 @@ public class Registro1100CriarPO extends TestBaseMassiel{
 		
 		empresa.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		opc.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
+		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(3000);
 		
 		uf.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		ufOPC.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		closeSelectTypeCheckbox(uf);
 		sleep(4000);
 		
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(3000);
+		
 		filial.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		if(tc2==true) {
+			filialOPCTC2.click();
+			sleep(2000);
+		}else {
+			filialOPC.click();
+			sleep(2000);	
+		}
 		
-		filialOPC.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		closeSelectTypeCheckbox(filial);
 		sleep(2000);

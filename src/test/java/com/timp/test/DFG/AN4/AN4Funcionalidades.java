@@ -30,6 +30,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -43,7 +44,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 	}
 
-		@Test(priority = 2)
+	@Test(priority = 2)
 	public void AN4ID() {
 		aN4FuncionalidadesPO.Id();
 

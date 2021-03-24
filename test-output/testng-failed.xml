@@ -1,16 +1,480 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Cadastros IRPJ/CSLL &gt; Tabela de Apoio ECF(failed)">
+>>>>>>> refs/heads/Cristhian
+=======
+<suite name="Failed suite [Gestao De Credito Tributario PIS/CONFINS  &gt; Gestao De Credito Tributario PIS &gt; Configuracao E Execucao]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Registros 1100(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
+=======
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos">
+>>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir">
+>>>>>>> refs/heads/Cristhian
+=======
+      <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
+>>>>>>> refs/heads/Fernando
+=======
       <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
+          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="executar"/>
+        </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
+=======
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir -->
+>>>>>>> refs/heads/Cristhian
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
+=======
+      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar">
+>>>>>>> refs/remotes/origin/Yessy
+        <methods>
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
           <include name="criar"/>
+<<<<<<< HEAD
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar -->
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
+>>>>>>> refs/heads/Fernando
+    </classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  </test> <!-- Cadastros IRPJ/CSLL > Tabela de Apoio ECF(failed) -->
+  <test thread-count="5" name="Eventos e-Social &gt; S1070 - Processos Adm. / Judiciais(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir -->
+      <class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar -->
+      <class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar -->
+    </classes>
+  </test> <!-- Eventos e-Social > S1070 - Processos Adm. / Judiciais(failed) -->
+  <test thread-count="5" name="Eventos e-Social &gt;  S1210 - Pagamentos de Rendimentos do Trabalho(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoExcluir -->
+      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoCriar -->
+      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoDetalhe">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="detalhe"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoDetalhe -->
+      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoEditar -->
+    </classes>
+  </test> <!-- Eventos e-Social >  S1210 - Pagamentos de Rendimentos do Trabalho(failed) -->
+  <test thread-count="5" name="Eventos e-Social &gt; S2210 – Comunicação de Acidente de Trabalho(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoEditar -->
+      <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoCriar -->
+      <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir -->
+      <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtro"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID -->
+    </classes>
+  </test> <!-- Eventos e-Social > S2210 – Comunicação de Acidente de Trabalho(failed) -->
+  <test thread-count="5" name=" Eventos e-Social &gt; S1270 - Contratação de Trabalhadores Avulsos Não Portuários(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar -->
+      <class name="com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa">
+=======
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Criar">
+>>>>>>> refs/remotes/origin/Kenssy
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="beforeClass"/>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="excluirEmMassa"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa -->
     </classes>
+<<<<<<< HEAD
+  </test> <!--  Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários(failed) -->
+  <test thread-count="5" name="Tabela de Apoio do SPED 4.5.5 Classificação de Contribuintes do IPI(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa">
+        <methods>
+          <include name="excluirMassa"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="filtros"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
+          <include name="beforeClass"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes -->
+    </classes>
+  </test> <!-- Tabela de Apoio do SPED 4.5.5 Classificação de Contribuintes do IPI(failed) -->
+  <test thread-count="5" name="Tabela de Apoio ECD &gt; Código dos Fatos Contábeis(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar">
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Criar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Editar">
+        <methods>
+          <include name="Editar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Editar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Excluir">
+        <methods>
+          <include name="Excluir"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Excluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Visualizar">
+>>>>>>> refs/remotes/origin/Kenssy
+        <methods>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar -->
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir">
+        <methods>
+          <include name="excluirCodigoFatosContabeis"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir -->
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="mdrEntrar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisCriar -->
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditar">
+        <methods>
+          <include name="editarCodigoFatosContabeis"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditar -->
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisDetalhe">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhe"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisDetalhe -->
+      <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisFiltrar">
+        <methods>
+          <include name="filtrarCodigoFatosContabeis"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisFiltrar -->
+    </classes>
+  </test> <!-- Tabela de Apoio ECD > Código dos Fatos Contábeis(failed) -->
+  <test thread-count="5" name=" Tabela de Apoio ECD &gt; Fatos Contábeis(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelaApoioECD.FatosContabeis.FatosContabeisFiltrar">
+        <methods>
+          <include name="filtrarFatosContabeis"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.FatosContabeis.FatosContabeisFiltrar -->
+    </classes>
+  </test> <!--  Tabela de Apoio ECD > Fatos Contábeis(failed) -->
+  <test thread-count="5" name="Tabela de Apoio ECD &gt; DeXParaContraPartida(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaExcluirEmMassa -->
+    </classes>
+  </test> <!-- Tabela de Apoio ECD > DeXParaContraPartida(failed) -->
+  <test thread-count="5" name="Tabela de Apoio ECD &gt; Balanço Consolidado(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelaApoioECD.BalançoConsolidado.BalançoConsolidadoEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaApoioECD.BalançoConsolidado.BalançoConsolidadoEditar -->
+>>>>>>> refs/heads/Cristhian
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Visualizar -->
+>>>>>>> refs/remotes/origin/Kenssy
+    </classes>
+<<<<<<< HEAD
+  </test> <!-- Tabela de Apoio ECD > Balanço Consolidado(failed) -->
+  <test thread-count="5" name="Taxas de Atualização &gt; Configuração de Tipo Taxa de Atualização(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="excluirEmMassa"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa -->
+    </classes>
+  </test> <!-- Taxas de Atualização > Configuração de Tipo Taxa de Atualização(failed) -->
+  <test thread-count="5" name="Contas Especiais IRPJ/CSLL(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLL">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ContasEspeciaisIRPJCSLL.ContasEspeciaisIRPJCSLL -->
+    </classes>
+  </test> <!-- Contas Especiais IRPJ/CSLL(failed) -->
+  <test thread-count="5" name="Rateiro Consorcio(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio -->
+    </classes>
+  </test> <!-- Rateiro Consorcio(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+=======
+  </test> <!-- Registros 1100(failed) -->
+  <test thread-count="5" name="Registro 1101(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Excluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Excluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Criar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Criar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Visualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Visualizar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Editar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="Editar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Editar -->
+    </classes>
+  </test> <!-- Registro 1101(failed) -->
+  <test thread-count="5" name="Registro 1102(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Criar">
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Criar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Editar">
+        <methods>
+          <include name="Editar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Editar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Excluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Excluir"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Excluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Visualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1102.Registro1102Visualizar -->
+    </classes>
+  </test> <!-- Registro 1102(failed) -->
+</suite> <!-- Failed suite [Gestao De Credito Tributario PIS/CONFINS  > Gestao De Credito Tributario PIS > Configuracao E Execucao] -->
+>>>>>>> refs/remotes/origin/Kenssy
+=======
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> refs/heads/Fernando
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> refs/remotes/origin/Kenssy

@@ -732,7 +732,12 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		
 		sucesso.add(versao.equals("1.0"));
 		sucesso.add(nome.equals("Teste Automatizado AN3"));
-		sucesso.add(tipoS.equals("ALTER E-SOCIAL S1200"));
+		
+		if(tc2) {			
+			sucesso.add(tipoS.equals("DCTF"));
+		}else {
+			sucesso.add(tipoS.equals("ALTER E-SOCIAL S1200"));
+		}		
 		
 		System.out.println(sucesso);
 		
@@ -839,13 +844,14 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		estruturaRO.click();
 		sleep(1000);
 		
-		caracteristica.click();
-		sleep(1000);
-		caracterisiticaO.click();
-		sleep(3000);
-		actionsMoveToElementElement(dataVigenciaR);
-		sleep(1000);
+//		caracteristica.click();
+//		sleep(1000);
+//		caracterisiticaO.click();
+//		sleep(3000);
+//		actionsMoveToElementElement(dataVigenciaR);
+//		sleep(1000);
 		
+		waitExpectElement(leiauteR);
 		leiauteR.click();
 		sleep(1000);
 		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));

@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="53" passed="17" failed="33" skipped="3">
 =======
 <<<<<<< HEAD
@@ -41,8 +42,12 @@
 =======
 <testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
 >>>>>>> refs/heads/Fernando
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,8 +90,12 @@
 =======
   <suite started-at="2021-03-24T03:29:33Z" name="Default suite" finished-at="2021-03-24T03:36:44Z" duration-ms="430716">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-03-24T15:19:24Z" name="Default suite" finished-at="2021-03-24T15:25:59Z" duration-ms="395539">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,9 +160,15 @@
       <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED@5454d35e]" started-at="2021-03-24T03:29:33Z" name="beforeClass" finished-at="2021-03-24T03:29:49Z" duration-ms="16439" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-03-24T15:19:24Z" name="Default test" finished-at="2021-03-24T15:25:59Z" duration-ms="395539">
+      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa@95e33cc]" started-at="2021-03-24T15:19:24Z" name="beforeClass" finished-at="2021-03-24T15:19:40Z" duration-ms="16499" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -367,9 +382,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar@16eb3ea3]" started-at="2021-03-24T06:15:04Z" name="criar" finished-at="2021-03-24T06:17:38Z" duration-ms="154209" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa@95e33cc]" started-at="2021-03-24T15:19:40Z" name="criar" finished-at="2021-03-24T15:24:51Z" duration-ms="311460" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute@48793bef]" started-at="2021-03-19T19:09:12Z" name="afterClass" finished-at="2021-03-19T19:09:17Z" duration-ms="5212" status="PASS">
@@ -585,8 +604,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="excluirEmMassa()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa@95e33cc]" started-at="2021-03-24T15:24:51Z" name="excluirEmMassa" finished-at="2021-03-24T15:25:59Z" depends-on-methods="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa.criar" duration-ms="67567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirEmMassa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa@95e33cc]" started-at="2021-03-24T15:25:59Z" name="afterClass" finished-at="2021-03-24T15:25:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
@@ -1631,4 +1662,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 </testng-results>

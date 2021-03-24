@@ -64,13 +64,13 @@ public class Registro1101CriarPO extends TestBaseCristhian{
 	@FindBy(xpath = "//div[@class=\"fieldSize1 company\"]/div/div[@id=\"main-icon\"]")
 	public WebElement empresaV;
 	
-	@FindBy(xpath = "//*[@id=\"1000\"]")
+	@FindBy(xpath = "//*[text()=\"1000\"]")
 	public WebElement empresaOV;
 	
 	@FindBy(xpath = "//div[@class=\"fieldSize1 branch\"]/div/div[@id=\"main-icon\"]")
 	public WebElement filialV;
 	
-	@FindBy(xpath = "//*[@id=\"0001\"]")
+	@FindBy(xpath = "//*[text()=\"0001\"]")
 	public WebElement filialOV;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[3]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/span")
@@ -204,9 +204,12 @@ public class Registro1101CriarPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-
-		String idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id ultimo registro: " +idRegistro);
+		String idRegistro = "0";
+		if(rows> 0) {
+			idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id ultimo registro: " +idRegistro);
+		}
+		 
 		
 		novo.click();
 		sleep(2000);

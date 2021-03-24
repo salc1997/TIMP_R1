@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseKenssy;
 
-public class R1070DadosAdicionaisCriarPO extends TestBaseMassiel{
+public class R1070DadosAdicionaisExcluirEmMassaPO extends TestBaseKenssy{
 	@FindBy(xpath = "//span[text()=\"Reinf\"]")
 	public WebElement Reinf;
 	
@@ -69,16 +69,27 @@ public class R1070DadosAdicionaisCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
+	@FindBy(xpath = "//span[text()=\"Salvar e Novo\"]")
+	public WebElement salvareNovo;
+	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement butaosim;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	public R1070DadosAdicionaisCriarPO() {
-		
-		PageFactory.initElements(driver, this);
 	
+	@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
+	public WebElement excluirMassa;
+	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
+	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement sim;
+	
+	public R1070DadosAdicionaisExcluirEmMassaPO() {	
+		PageFactory.initElements(driver, this);
 	}
 
 	public boolean Criar() {
@@ -177,43 +188,206 @@ public class R1070DadosAdicionaisCriarPO extends TestBaseMassiel{
 		ValorCPRBSuspensa.sendKeys("1");
 		sleep(2000);
 		
+		salvareNovo.click();
+		sleep(2000);
+		
+		butaosim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(empresa);
+		sleep(2000);
+		
+		biblioteca.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//SEGUNDO REGISTRO
+		Novo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		empresa.click();
+		sleep(2000);
+	
+		opc.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		filial.click();
+		sleep(2000);
+	
+		opcFilial.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String dataatual2 = fechaActual();
+		Data.sendKeys(dataatual2);
+		
+		tipoProcesso.click();
+		sleep(2000);
+	
+		opc.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		numeroProceso.click();
+		sleep(3000);
+	
+		opc.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		COD_SUSP.click();
+		sleep(2000);
+	
+		opc.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		NumeroInscrição.sendKeys("1");
+		sleep(2000);
+		
+		ValorRetenção.sendKeys("1");
+		sleep(2000);
+		
+		adicional.click();
+		sleep(3000);
+	
+		opcFilial.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ValorCPSuspensa.sendKeys("1");
+		sleep(2000);
+		
+		ValorRATSuspensa.sendKeys("1");
+		sleep(2000);
+		
+		ValorSENARSuspensa.sendKeys("1");
+		sleep(2000);
+		
+		ValorCPRBSuspensa.sendKeys("1");
+		sleep(2000);
+		
 		gravar.click();
 		sleep(2000);
 		
 		butaosim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(biblioteca);
 		sleep(2000);
-		biblioteca.click();
 		
+		biblioteca.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		
+		
 		//Pega o ultimo id depois do preenchimento
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-
-		idInserir("idDadosAdicionais",idB);
-
-		System.out.println(id);
-		System.out.println(idB);
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
-		//compara pra ver se o novo id criado é realmente o ultimo
+		rows = rows -1;
+		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		
+
+
+		//idInserir("ProcessosAdmJudiciaisExcluirEmMassa",id2);
+
+		int idD = Integer.valueOf(id);
+		int id2D = Integer.valueOf(id2);
+		int id3D = Integer.valueOf(id3);
+		
+		System.out.println(idD);
+		System.out.println(id2D);
+		
 		boolean sucesso = false;
-		
-		if (idBD > idD) {
+		if (idD < id2D && idD < id3D ) {
 			sucesso = true;
-		}else {
-			sucesso = false;
 		}
 		
-		System.out.println( sucesso);
+		System.out.println(sucesso);
+		
 		return sucesso;
+	}
+	
+	
+	public boolean excluirEmMassa() {
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
+		check1.click();
+		sleep(1000);
+		rows = rows-1;
+		
+		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		
+		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
+		check2.click();
+		
+		sleep(1000);
+		
+		excluirMassa.click();
+		sleep(1000);
+		waitExpectElement(sim);
+		sleep(1000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		sleep(2000);
+		
+		driver.navigate().refresh();
+		waitExpectElement(siguiente);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+
+		int id1 = convertToInt(id);
+		int id2 = convertToInt(idRegistro1);
+		int id3 = convertToInt(idRegistro2);
+		
+		System.out.println(" Id Ultimo Registro: "+ id1);
+		System.out.println("Id Excluir Registro 1: " + id2);
+		System.out.println("Id Excluir Registro 2: " + id3);
+		
+		boolean sucesso = false;
+		
+		if (id1 != id2 && id1!=id3) {
+			sucesso = true;
+		}else {
+			sucesso=false;
+		}
+		
+		System.out.println("Ids Excluidos com sucesso: " +sucesso);
+	
+		return sucesso;
+		
 	}
 }

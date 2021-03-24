@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
 =======
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir">
@@ -28,10 +29,20 @@
       <class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar">
 >>>>>>> refs/remotes/origin/Yessy
         <methods>
+=======
+      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa">
+        <methods>
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
           <include name="criar"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
+=======
+          <include name="excluirEmMassa"/>
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88,6 +99,9 @@
 =======
       </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

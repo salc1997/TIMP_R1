@@ -4,12 +4,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -24,7 +28,10 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,7 +52,11 @@
 =======
       <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="excluir"/>
@@ -68,8 +79,12 @@
       <class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar">
 >>>>>>> refs/remotes/origin/Yessy
         <methods>
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
           <include name="criar"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar -->
@@ -187,10 +202,13 @@
           <include name="afterClass"/>
 <<<<<<< HEAD
           <include name="beforeClass"/>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="excluirEmMassa"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa -->
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa -->
     </classes>
+<<<<<<< HEAD
   </test> <!--  Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários(failed) -->
   <test thread-count="5" name="Tabela de Apoio do SPED 4.5.5 Classificação de Contribuintes do IPI(failed)">
     <classes>
@@ -456,3 +474,7 @@
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
 >>>>>>> refs/heads/Fernando
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> refs/remotes/origin/Kenssy

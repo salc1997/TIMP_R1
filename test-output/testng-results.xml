@@ -4,12 +4,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="53" passed="17" failed="33" skipped="3">
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 =======
@@ -31,8 +35,11 @@
 =======
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,8 +74,12 @@
 =======
   <suite started-at="2021-03-23T17:27:24Z" name="Default suite" finished-at="2021-03-23T17:28:55Z" duration-ms="90254">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-03-24T06:14:42Z" name="Default suite" finished-at="2021-03-24T06:17:38Z" duration-ms="175521">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,9 +132,15 @@
       <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosExcluir@1bd39d3c]" started-at="2021-03-23T17:27:24Z" name="beforeClass" finished-at="2021-03-23T17:27:38Z" duration-ms="13273" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-03-24T06:14:42Z" name="Default test" finished-at="2021-03-24T06:17:38Z" duration-ms="175521">
+      <class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar@16eb3ea3]" started-at="2021-03-24T06:14:42Z" name="beforeClass" finished-at="2021-03-24T06:15:04Z" duration-ms="21290" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -472,17 +489,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar@16eb3ea3]" started-at="2021-03-24T06:15:04Z" name="criar" finished-at="2021-03-24T06:17:38Z" duration-ms="154209" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute@48793bef]" started-at="2021-03-19T19:09:12Z" name="afterClass" finished-at="2021-03-19T19:09:17Z" duration-ms="5212" status="PASS">
 =======
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Criar@3f57bcad]" started-at="2021-03-23T19:18:16Z" name="afterClass" finished-at="2021-03-23T19:18:20Z" duration-ms="4103" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar@16eb3ea3]" started-at="2021-03-24T06:17:38Z" name="afterClass" finished-at="2021-03-24T06:17:38Z" duration-ms="1" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute -->
     </test> <!-- Cadastros IRPJ/CSLL > Tabela de Apoio ECF -->
@@ -3336,8 +3361,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+<<<<<<< HEAD
 >>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
 =======
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1100.Registro1100Criar -->
@@ -4376,4 +4405,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
 </testng-results>

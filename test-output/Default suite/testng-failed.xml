@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
 =======
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir">
@@ -22,32 +23,15 @@
 =======
       <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar">
 >>>>>>> refs/remotes/origin/Yessy
-        <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-          <include name="afterClass"/>
->>>>>>> refs/heads/Fernando
-          <include name="linksrapidos"/>
-<<<<<<< HEAD
-=======
-=======
+      <class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar">
 >>>>>>> refs/remotes/origin/Yessy
+        <methods>
           <include name="afterClass"/>
           <include name="criar"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
-          <include name="beforeClass"/>
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,6 +83,9 @@
         </methods>
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1200.Registro1200Editar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

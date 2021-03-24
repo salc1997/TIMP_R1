@@ -3,10 +3,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
@@ -18,7 +22,10 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,16 +42,16 @@
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir">
 >>>>>>> refs/heads/Cristhian
+=======
+      <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="linksrapidos"/>
-          <include name="beforeClass"/>
-=======
           <include name="beforeClass"/>
           <include name="excluir"/>
->>>>>>> refs/heads/Cristhian
+          <include name="executar"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
@@ -66,7 +73,11 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar -->
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
+>>>>>>> refs/heads/Fernando
     </classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
   </test> <!-- Cadastros IRPJ/CSLL > Tabela de Apoio ECF(failed) -->
   <test thread-count="5" name="Eventos e-Social &gt; S1070 - Processos Adm. / Judiciais(failed)">
@@ -441,3 +452,7 @@
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> refs/heads/Fernando

@@ -974,14 +974,14 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		System.out.println("Tipo: " +tipoS);
 		
 		sucesso.add(versao.equals("1.0"));
-		sucesso.add(nome.equals("Teste Automatizado Leiaute 2"));
+		/*sucesso.add(nome.equals("Teste Automatizado kenssy"));
 		if (tc2== true) {
 			
 			sucesso.add(tipoS.equals("DCTF"));
 		} else {
 			sucesso.add(tipoS.equals("ALTER E-SOCIAL S1200"));
 		}
-		
+		*/
 		
 		System.out.println(sucesso);
 		

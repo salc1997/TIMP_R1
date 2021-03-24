@@ -45,7 +45,7 @@ public class LeiautesExecuçãoFuncionalidades1 extends TestBaseCristhian {
 		boolean sucesso = leiautesExecuçãoFuncionalidadesPO.criar();
 		assertTrue(sucesso, Criar);		
 		
-		/*boolean sucesso2 = leiautesExecuçãoFuncionalidadesPO.editar();
+	/*boolean sucesso2 = leiautesExecuçãoFuncionalidadesPO.editar();
 		assertTrue(sucesso2, Editar);	
 		
 		ArrayList<Boolean> sucesso3 = leiautesExecuçãoFuncionalidadesPO.informacao();

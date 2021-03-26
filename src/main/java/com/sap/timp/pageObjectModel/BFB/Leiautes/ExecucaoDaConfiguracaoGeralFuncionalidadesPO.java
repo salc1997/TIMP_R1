@@ -109,7 +109,10 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 		System.out.println("");
 		
 		idInserir("BFBLeiauteID", idRegistroLeiaute);
-		idInserir("BFBLeiauteIdCreado", "378");
+		
+		// Para probar en TC2 y TP1 si falla el metoddo de copiarEditarPublicoPrivadoFavoritoLixeiraRestaurarExcluir, agregar el Id de Leiaute Creado  manualmente aqui y descomentar la siguiente linea
+		// Comentar los metodos de Criar leiaute y copiarEditarPublicoPrivadoFavoritoLixeiraRestaurarExcluir para que continue con etiquetaComTexto
+//		idInserir("BFBLeiauteIdCreado", "380");
 	}
 	
 	public void criarLeiaute() {
@@ -1051,13 +1054,13 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 	}
 	
 	public ArrayList<Boolean> filtrosAvancados() {	
-//		btnVoltar.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		WebElement btnNao = driver.findElement(By.xpath("//button[text()=\"Não\"]"));
-//		btnNao.click();
+		btnVoltar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement btnNao = driver.findElement(By.xpath("//button[text()=\"Não\"]"));
+		btnNao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1345,6 +1348,10 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 	}
 	
 	public boolean executar() {
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		WebElement abaConfiguracao = driver.findElement(By.xpath("//span[text()=\"Configurações\"]"));
 		abaConfiguracao.click();
 		
@@ -1363,17 +1370,25 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		btnUltimaPagina.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		
 		WebElement inputPesquisar = driver.findElement(By.xpath("//input[@placeholder=\"Pesquisar\"]"));
-		inputPesquisar.sendKeys("1045");
+		inputPesquisar.sendKeys(idRegistro);
 		inputPesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		
-		String idRegistro = "1045";
+		//String idRegistro = "1045";
 		
 		if(rows == 0) {
 			System.out.println("No se encontro el registro...");

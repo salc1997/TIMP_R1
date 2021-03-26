@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO;
 
-public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa extends TestBaseEliel{
+public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa extends TestBaseSteven{
  
 	
 	LoginTC loginTC;
@@ -22,7 +22,7 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa extends TestBaseEli
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO = new RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO();

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracoesStatusSubPeriodoVerPO extends TestBaseEliel {
+public class ConfiguracoesStatusSubPeriodoVerPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"Configurações\"]")
 	public WebElement configuracoes;

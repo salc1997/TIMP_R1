@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseEliel {
+public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO;
@@ -23,7 +23,7 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançados extends TestBaseE
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		classificaçaoDeContribuintesDoIPIFiltrosAvançadosPO = new ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO();

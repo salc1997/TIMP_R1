@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
+public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[@class=\"baseTabs-title\"]/span[text()=\"Estruturas\"]")

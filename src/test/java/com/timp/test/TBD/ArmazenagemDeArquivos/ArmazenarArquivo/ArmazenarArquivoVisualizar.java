@@ -8,13 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.ArmazenarArquivo.ArmazenarArquivoVisualizarPO;
 
 
-public class ArmazenarArquivoVisualizar extends TestBaseEliel {
+public class ArmazenarArquivoVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
@@ -23,7 +23,7 @@ public class ArmazenarArquivoVisualizar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTBDPO = new AcessarTBDPO();
 		armazenarArquivoVisualizarPO = new ArmazenarArquivoVisualizarPO();

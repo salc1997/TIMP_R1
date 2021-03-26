@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisPesquisaPorNomeDeProcessoPO extends TestBaseEliel{
+public class ParametrosGeraisPesquisaPorNomeDeProcessoPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Processo de negócio\"]")
 	public WebElement procesoNegocio;

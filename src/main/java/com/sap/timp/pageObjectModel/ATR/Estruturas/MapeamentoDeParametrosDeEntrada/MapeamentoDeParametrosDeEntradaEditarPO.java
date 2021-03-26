@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseEliel{
+public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Parâmetros de Entrada\"]")
 	public WebElement mapeamento;

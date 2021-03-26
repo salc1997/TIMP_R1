@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
+public class CodigoContabilizacaoVisualizarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Códigos de Contabilização\"]")

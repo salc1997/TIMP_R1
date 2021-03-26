@@ -675,4 +675,7 @@ public class TestBaseSteven {
 	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
 	public String Acessar = "Erro ao tentar acessar ao componente";	
 	
+	
+	public String Restaurar = "O registro não foi restaurado com sucesso";
+	
 }

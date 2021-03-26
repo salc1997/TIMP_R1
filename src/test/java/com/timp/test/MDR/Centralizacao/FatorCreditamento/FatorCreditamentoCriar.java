@@ -2,8 +2,6 @@ package com.timp.test.MDR.Centralizacao.FatorCreditamento;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
-import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;

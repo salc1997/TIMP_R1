@@ -2,7 +2,6 @@ package com.timp.test.MDR.CEP.Logradouro;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;

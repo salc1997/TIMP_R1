@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseEliel{
+public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-b_rules\"]")
 	public WebElement regraDeEscrituracao;
 	

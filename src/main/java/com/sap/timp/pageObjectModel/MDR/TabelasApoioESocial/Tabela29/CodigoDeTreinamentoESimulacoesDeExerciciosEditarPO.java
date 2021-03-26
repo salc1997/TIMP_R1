@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO extends TestBaseEliel {
+public class CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
@@ -86,7 +86,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosEditarPO extends TestBase
 		
 		String valor = datainicio.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		datainicio.clear();
 		sleep(2000);

@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.Processo.ParametrosGerais.ParametrosGeraisPesquisaPorNomeDeProcessoPO;
 
-public class ParametrosGeraisPesquisaPorNomeDeProcesso extends TestBaseEliel {
+public class ParametrosGeraisPesquisaPorNomeDeProcesso extends TestBaseSteven {
 
 	
 	LoginTC loginTC;
@@ -22,7 +22,7 @@ public class ParametrosGeraisPesquisaPorNomeDeProcesso extends TestBaseEliel {
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBPMAPO = new AcessarBPMAPO();
 		parametrosGeraisPesquisaPorNomeDeProcessoPO = new ParametrosGeraisPesquisaPorNomeDeProcessoPO();

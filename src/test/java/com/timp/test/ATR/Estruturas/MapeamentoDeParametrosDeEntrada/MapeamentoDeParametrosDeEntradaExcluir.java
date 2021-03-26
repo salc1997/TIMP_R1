@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirPO;
 
-public class MapeamentoDeParametrosDeEntradaExcluir extends TestBaseEliel {
+public class MapeamentoDeParametrosDeEntradaExcluir extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -20,7 +20,7 @@ public class MapeamentoDeParametrosDeEntradaExcluir extends TestBaseEliel {
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  mapeamentoDeParametrosDeEntradaExcluirPO = new  MapeamentoDeParametrosDeEntradaExcluirPO();

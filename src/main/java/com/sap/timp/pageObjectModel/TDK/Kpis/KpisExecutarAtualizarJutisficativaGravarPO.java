@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
+public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")

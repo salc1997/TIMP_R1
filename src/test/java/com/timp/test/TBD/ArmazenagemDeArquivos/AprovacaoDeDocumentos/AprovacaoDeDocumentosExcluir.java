@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.AprovacaoDeDocumentos.AprovacaoDeDocumentosExcluirPO;
 
-public class AprovacaoDeDocumentosExcluir extends TestBaseEliel {
+public class AprovacaoDeDocumentosExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	AprovacaoDeDocumentosExcluirPO aprovacaoDeDocumentosExcluirPO;
@@ -19,7 +19,7 @@ public class AprovacaoDeDocumentosExcluir extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTBDPO = new AcessarTBDPO();
 		aprovacaoDeDocumentosExcluirPO = new AprovacaoDeDocumentosExcluirPO();

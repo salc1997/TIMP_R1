@@ -2,7 +2,7 @@ package com.timp.test.TFP.Configurações.Status.Periodo;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracoesStatusPeriodoEditar extends TestBaseEliel {
+public class ConfiguracoesStatusPeriodoEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	ConfiguracoesStatusPeriodoEditarPO configuracoesStatusPeriodoEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTFPPO = new AcessarTFPPO();
 		configuracoesStatusPeriodoEditarPO = new ConfiguracoesStatusPeriodoEditarPO();

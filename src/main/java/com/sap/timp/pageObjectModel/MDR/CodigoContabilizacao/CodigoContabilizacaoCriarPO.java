@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
+public class CodigoContabilizacaoCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Códigos de Contabilização\"]")
 	public WebElement codigoscontabilizacao;
@@ -137,7 +137,7 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		
 		//pega a data atual
 		//String data= fechaActual();
-		String data = dataanterior();
+		String data = fechaAyer();
 		datainicio.sendKeys(data);
 		
 		gravar.click();

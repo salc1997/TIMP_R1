@@ -8,19 +8,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.AtivadorDeProcessos.AtivadorDeProcessosPesquisaPorNomeDoProcessoPO;
 
-public class AtivadorDeProcessosPesquisaPorNomeDoProcesso extends TestBaseEliel{
+public class AtivadorDeProcessosPesquisaPorNomeDoProcesso extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMAPO;
 	AtivadorDeProcessosPesquisaPorNomeDoProcessoPO ativadorDeProcessosPesquisaPorNomeDoProcessoPO;
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBPMAPO = new AcessarBPMAPO();
 		ativadorDeProcessosPesquisaPorNomeDoProcessoPO = new AtivadorDeProcessosPesquisaPorNomeDoProcessoPO();

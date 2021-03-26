@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
+public class CenariosCorrecaoVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Cenários de Correção\"]")
 	public WebElement cenarios;
 		

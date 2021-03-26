@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N4\"]")
 	public WebElement regraAuditoriaN4;

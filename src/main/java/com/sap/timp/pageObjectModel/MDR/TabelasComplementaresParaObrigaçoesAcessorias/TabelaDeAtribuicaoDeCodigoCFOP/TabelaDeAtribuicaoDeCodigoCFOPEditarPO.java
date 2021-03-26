@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaDeAtribuicaoDeCodigoCFOPEditarPO extends TestBaseEliel {
+public class TabelaDeAtribuicaoDeCodigoCFOPEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -102,7 +102,7 @@ public class TabelaDeAtribuicaoDeCodigoCFOPEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		String valor = dataincial.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		dataincial.clear();
 		sleep(2000);

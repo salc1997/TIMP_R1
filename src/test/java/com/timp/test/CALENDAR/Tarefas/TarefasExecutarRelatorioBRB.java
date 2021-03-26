@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
 import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasExecutarRelatorioBRBPO;
 
-public class TarefasExecutarRelatorioBRB extends TestBaseEliel {
+public class TarefasExecutarRelatorioBRB extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
@@ -20,7 +20,7 @@ public class TarefasExecutarRelatorioBRB extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
 		tarefasExecutarRelatorioBRBPO = new TarefasExecutarRelatorioBRBPO();

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TaxasDeConversaoVisualizarPO extends TestBaseEliel {
+public class TaxasDeConversaoVisualizarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
 	public WebElement taxasdeconversao;

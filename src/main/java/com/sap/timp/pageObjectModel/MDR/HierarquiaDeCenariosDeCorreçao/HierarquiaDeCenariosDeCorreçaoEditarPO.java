@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class HierarquiaDeCenariosDeCorreçaoEditarPO extends TestBaseEliel{
+public class HierarquiaDeCenariosDeCorreçaoEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Hierarquias de Cenários de Correção\"]")
 	public WebElement hiearquiasdecenariosdecorrecao;

@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarPO;
 
-public class MapeamentoDeEstruturasCriar extends TestBaseEliel {
+public class MapeamentoDeEstruturasCriar extends TestBaseSteven {
  
 	
 	LoginTC loginTC;
@@ -21,7 +21,7 @@ public class MapeamentoDeEstruturasCriar extends TestBaseEliel {
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  mapeamentoDeEstruturasCriarPO = new  MapeamentoDeEstruturasCriarPO();

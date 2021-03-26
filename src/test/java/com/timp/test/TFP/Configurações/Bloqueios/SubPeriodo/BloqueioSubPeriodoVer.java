@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoVerPO;
 
-public class BloqueioSubPeriodoVer extends TestBaseEliel {
+public class BloqueioSubPeriodoVer extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
@@ -21,7 +21,7 @@ public class BloqueioSubPeriodoVer extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTFPPO = new AcessarTFPPO();
 		bloqueioSubPeriodoVerPO = new BloqueioSubPeriodoVerPO();

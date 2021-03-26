@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoPVVEditarPO extends TestBaseEliel {
+public class ValoresParaMetodoPVVEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Preço de Transferência\"]")
 	public WebElement precodetransferencia;
@@ -121,7 +121,7 @@ public class ValoresParaMetodoPVVEditarPO extends TestBaseEliel {
 		
 		String valor = datainicial.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		datainicial.clear();
 		sleep(2000);

@@ -7,10 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseFernando;
 
-public class ConfiguracaoBloqueiosEditarPO extends TestBaseEliel{
+public class ConfiguracaoBloqueiosEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class, \"baseTabs-box\")]/span/span[text()=\"Configurações\"]")
 	public WebElement configuracoes;
 	

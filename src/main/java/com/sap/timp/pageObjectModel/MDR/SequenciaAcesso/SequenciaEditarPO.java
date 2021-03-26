@@ -9,11 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
 import net.bytebuddy.asm.Advice.Return;
 
-public class SequenciaEditarPO extends TestBaseEliel{
+public class SequenciaEditarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Sequência de Acesso\"]")

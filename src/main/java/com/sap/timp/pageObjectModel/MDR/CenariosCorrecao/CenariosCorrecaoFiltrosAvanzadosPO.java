@@ -11,9 +11,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseKathy{
+public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"advanced-filters-btn\"]")
 	public WebElement filtro;
 	

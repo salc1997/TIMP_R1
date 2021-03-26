@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.Configuracao.TipoDeDocumento.TipoDeDocumentoCriarPO;
 
-public class TipoDeDocumentoCriar extends TestBaseEliel {
+public class TipoDeDocumentoCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	TipoDeDocumentoCriarPO tipoDeDocumentoCriarPO;
@@ -21,7 +21,7 @@ public class TipoDeDocumentoCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTBDPO = new AcessarTBDPO();
 		tipoDeDocumentoCriarPO = new TipoDeDocumentoCriarPO();

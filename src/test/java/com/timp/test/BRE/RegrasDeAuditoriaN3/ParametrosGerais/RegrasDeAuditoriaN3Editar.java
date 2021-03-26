@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3EditarPO;
 
-public class RegrasDeAuditoriaN3Editar extends TestBaseEliel {
+public class RegrasDeAuditoriaN3Editar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
@@ -21,7 +21,7 @@ public class RegrasDeAuditoriaN3Editar extends TestBaseEliel {
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeAuditoriaN3EditarPO = new RegrasDeAuditoriaN3EditarPO();

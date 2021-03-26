@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvançadosPO;
 
-public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados extends TestBaseEliel {
+public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -22,7 +22,7 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados extends TestBa
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  notaFiscalEletronicaDeEntradaDeSaidaFiltrosAvançadosPO = new  NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvançadosPO();

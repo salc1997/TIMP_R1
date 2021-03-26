@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassaPO;
 
-public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseEliel{
+public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseSteven{
   
 	
 	LoginTC loginTC;
@@ -21,7 +21,7 @@ public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseEliel{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarATRPO = new AcessarATRPO();
 		agrupamentoDeTributosExcluirEmMassaPO = new AgrupamentoDeTributosExcluirEmMassaPO();

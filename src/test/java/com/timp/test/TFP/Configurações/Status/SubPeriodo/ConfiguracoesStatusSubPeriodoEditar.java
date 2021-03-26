@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Status.SubPeriodo.ConfiguracoesStatusSubPeriodoEditarPO;
 
-public class ConfiguracoesStatusSubPeriodoEditar extends TestBaseEliel {
+public class ConfiguracoesStatusSubPeriodoEditar extends TestBaseSteven {
 	
 	
 	 LoginTC loginTC;
@@ -22,7 +22,7 @@ public class ConfiguracoesStatusSubPeriodoEditar extends TestBaseEliel {
 	
 	@BeforeClass
 	public void beforeClass() { 
-	  driver = initializationE();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarTFPPO = new AcessarTFPPO();
 	  configuracoesStatusSubPeriodoEditarPO = new ConfiguracoesStatusSubPeriodoEditarPO();

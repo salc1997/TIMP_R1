@@ -8,9 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigosDasObrigaçoesDeICMSaRecolherCriarPO extends TestBaseEliel{
+public class CodigosDasObrigaçoesDeICMSaRecolherCriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -91,7 +91,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		String data = dataanterior();
+		String data = fechaAyer();
 		datavigencia.sendKeys(data);
 		
 		sleep(2000);

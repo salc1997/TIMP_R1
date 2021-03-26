@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RepresentantesLegaisDetalhesPO extends TestBaseEliel {
+public class RepresentantesLegaisDetalhesPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Representantes Legais\"]")

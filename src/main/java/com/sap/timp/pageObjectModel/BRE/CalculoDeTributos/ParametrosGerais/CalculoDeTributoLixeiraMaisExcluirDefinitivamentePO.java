@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CalculoDeTributoLixeiraMaisExcluirDefinitivamentePO extends TestBaseEliel {
+public class CalculoDeTributoLixeiraMaisExcluirDefinitivamentePO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//li[@class=\"base-accordion-li \"]/div/span[text()=\"Lixeira\"]")
 	public WebElement lixeira;

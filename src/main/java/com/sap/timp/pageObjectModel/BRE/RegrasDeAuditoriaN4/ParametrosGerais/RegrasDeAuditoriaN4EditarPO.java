@@ -9,9 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN4EditarPO extends TestBaseEliel {
+public class RegrasDeAuditoriaN4EditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N4\"]")
 	public WebElement regraAuditoriaN4;

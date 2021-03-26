@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LogradouroEditarPO extends TestBaseKathy{
+public class LogradouroEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
 	public WebElement cep;
 	

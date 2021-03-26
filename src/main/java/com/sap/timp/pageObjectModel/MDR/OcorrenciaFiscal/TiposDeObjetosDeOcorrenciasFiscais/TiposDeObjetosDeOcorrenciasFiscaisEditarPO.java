@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
+public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Ocorrência Fiscal\"]")
 	public WebElement ocorrenciafiscal;
@@ -112,7 +112,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 		
 		String valor = datainicio.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 		sleep(40000);
 		datainicio.clear();
 		sleep(2000);

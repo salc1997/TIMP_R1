@@ -6,12 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.Configuracao.RangeDeNumeracao.RangeDeNumeracaoCriarPO;
 
-public class RangeDeNumeracaoCriar extends TestBaseEliel {
+public class RangeDeNumeracaoCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
@@ -20,7 +21,7 @@ public class RangeDeNumeracaoCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTBDPO = new AcessarTBDPO();
 		rangeDeNumeracaoCriarPO = new RangeDeNumeracaoCriarPO();

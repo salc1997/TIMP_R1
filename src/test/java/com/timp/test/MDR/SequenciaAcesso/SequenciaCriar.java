@@ -24,7 +24,9 @@ public class SequenciaCriar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
+
 		driver = initialization();
+
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		sequenciaCriarPO = new SequenciaCriarPO();

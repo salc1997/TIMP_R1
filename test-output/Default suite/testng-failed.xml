@@ -3,105 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
-=======
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir">
->>>>>>> refs/heads/Cristhian
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar">
->>>>>>> refs/remotes/origin/Yessy
-        <methods>
-=======
-      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa">
-        <methods>
-          <include name="beforeClass"/>
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="afterClass"/>
-          <include name="criar"/>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-=======
-          <include name="excluirEmMassa"/>
->>>>>>> refs/remotes/origin/Kenssy
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
-=======
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardLinksRapidos -->
->>>>>>> refs/heads/Fernando
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir">
-=======
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
->>>>>>> refs/heads/Fernando
+      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="executar"/>
+          <include name="CriarSaldo"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPExcluir -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir -->
-=======
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/heads/Cristhian
-=======
-      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1200.Registro1200Editar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="Editar"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1200.Registro1200Editar -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa -->
->>>>>>> refs/remotes/origin/Kenssy
+      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

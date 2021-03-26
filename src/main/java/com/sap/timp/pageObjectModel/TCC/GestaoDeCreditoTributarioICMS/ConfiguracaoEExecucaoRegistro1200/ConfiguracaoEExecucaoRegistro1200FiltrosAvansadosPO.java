@@ -81,7 +81,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200");
 		System.out.println(idRegistro);
 		
 		pesquisarID.sendKeys(idRegistro);

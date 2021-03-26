@@ -139,7 +139,7 @@ public class RegistroM410EditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ApuraçãodeCréditoTributárioPISRegistroM410");
 		System.out.println("ID Registro: " + idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));

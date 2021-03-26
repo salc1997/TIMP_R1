@@ -133,7 +133,7 @@ public class Executados1200VisualizarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200Executados");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

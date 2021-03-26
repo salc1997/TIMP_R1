@@ -110,6 +110,8 @@ public class R1070DadosAdicionaisCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		empresa.click();
 		sleep(2000);
+		
+	
 	
 		opc.click();
 		sleep(2000);
@@ -197,7 +199,7 @@ public class R1070DadosAdicionaisCriarPO extends TestBaseMassiel{
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 
-		idInserir("idDadosAdicionais",idB);
+		idInserir("DadosAdicionais",idB);
 
 		System.out.println(id);
 		System.out.println(idB);

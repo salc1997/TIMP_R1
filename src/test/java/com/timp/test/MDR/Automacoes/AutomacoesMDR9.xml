@@ -4,12 +4,12 @@
 	<test name="Centralização > Saldos">
 	
 		<classes>
-
 			<!-- Centralização > Saldos -->
 			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar"></class>
-
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar"></class>
 			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId"></class>
-			
 		</classes>
 
 	</test>

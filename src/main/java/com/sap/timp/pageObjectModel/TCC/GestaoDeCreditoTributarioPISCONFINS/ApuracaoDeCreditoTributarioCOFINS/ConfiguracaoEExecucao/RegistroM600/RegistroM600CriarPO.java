@@ -296,7 +296,7 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir("GestaoCreditoTributarioPISRegistroM600",id2);
+		idInserir("GestaoCreditoTributarioCOFINSRegistroM600",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

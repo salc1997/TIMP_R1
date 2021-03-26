@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseKenssy;
 
-public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseEliel{
+public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Determinação Automática de Guias\"]")

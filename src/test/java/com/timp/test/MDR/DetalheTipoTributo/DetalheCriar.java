@@ -34,12 +34,9 @@ public class DetalheCriar extends TestBaseSteven {
 	public void criar() {
 
 		loginTC.login();
-
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = detalheCriarPO.criar();
-
 		assertTrue(sucesso, Criar);
-
 	}
 }

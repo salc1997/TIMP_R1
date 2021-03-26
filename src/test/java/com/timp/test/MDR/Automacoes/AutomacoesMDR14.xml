@@ -74,6 +74,27 @@
 			<class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirEmMasa"></class>
 		</classes>
 	</test>
+	
+	<test name="R1070 Dados Adicionais">
+		<classes>
+			<!-- R1070 Dados Adicionais -->	
+			<class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar"></class>
+			<class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisEditar"></class>
+			<class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisDetalhes"></class>
+			<class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluir"></class>
+			<class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluirEmMassa"></class>
+		</classes>
+	</test>
+	
+	<test name="R 1070 Dados Suspenso">
+		<classes>
+			<!-- R 1070 Dados Suspenso -->	
+			<class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoCriar"></class>
+			<class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoEditar"></class>
+			<class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoDetalhes"></class>
+		</classes>
+	</test>
+	
 	<test name="DeterminacaoDeRelevanciaPorRegra">
 		<classes>
 			<!-- Determinacao De Relevancia De Tarefa > Determinacao De Relevancia Por Regra -->	

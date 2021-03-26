@@ -95,7 +95,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBaseSteven {
 		
 		invisibilityOfElementOverlay();
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("idBOConfiguracaoEExecucaco");
 		
 		siguiente.click();
 		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");

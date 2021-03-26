@@ -112,7 +112,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExecutarPO extends TestBaseMa
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucaco");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement Executar= driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
@@ -225,7 +225,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExecutarPO extends TestBaseMa
 		
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoExcecutado)) {
 			System.out.println("Registro executado correcctamente..."+ idUltimoRegistroExecutados);
-			idInserir3(idUltimoRegistroExecutados);
+			idInserir("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucacoExecutados",idUltimoRegistroExecutados);
 			
 			sucesso = true;
 		}else {

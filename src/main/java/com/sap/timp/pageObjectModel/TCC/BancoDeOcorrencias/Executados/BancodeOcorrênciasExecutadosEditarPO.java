@@ -69,11 +69,12 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		executados.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistroConfiguracaoEExecucao = idObter2();
+		String idRegistroConfiguracaoEExecucao = idObter("idBOConfiguracaoEExecucacoExecutados");
 		
 		System.out.println("");
 		System.out.println("ID Registro Excecutado: " + idRegistroConfiguracaoEExecucao);

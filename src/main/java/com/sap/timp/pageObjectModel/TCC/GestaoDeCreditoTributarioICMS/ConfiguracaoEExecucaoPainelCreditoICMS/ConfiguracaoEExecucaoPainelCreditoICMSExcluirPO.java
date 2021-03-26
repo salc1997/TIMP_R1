@@ -56,7 +56,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExcluirPO extends TestBaseMas
 		int rowsE = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idE = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rowsE+"]/div[2]/div")).getText();
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucaco");
 		int id1E = convertToInt(idE);
 		int id2E = convertToInt(idRegistro);
 		

@@ -72,7 +72,7 @@ public class RegistroM700ExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter("RegistroM700");
+		String idRegistro = idObter("GestaoCreditoTributarioPISRegistroM700");
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 		String idRegistro1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();

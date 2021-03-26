@@ -138,6 +138,13 @@
 		</classes>
 	</test>
 	
+	<test name="Determinacao Automatica De Guias" >
+		<classes>		
+			<!-- Determinacao Automatica De Guias -->
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
+		</classes>
+	</test>
 	
 	
 	

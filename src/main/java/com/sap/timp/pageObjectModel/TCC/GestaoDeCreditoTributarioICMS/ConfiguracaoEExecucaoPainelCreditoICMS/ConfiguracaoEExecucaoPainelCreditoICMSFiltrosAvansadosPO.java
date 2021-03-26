@@ -90,7 +90,8 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO extends Te
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucaco");
+		System.out.println("Id a Pesquisar: "+idRegistro);
 
 		pesquisarID.sendKeys(idRegistro);
 		sleep(1000);

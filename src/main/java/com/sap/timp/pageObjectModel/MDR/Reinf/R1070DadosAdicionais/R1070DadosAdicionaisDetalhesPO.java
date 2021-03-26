@@ -61,8 +61,7 @@ public class R1070DadosAdicionaisDetalhesPO extends TestBaseKenssy{
 	public WebElement fechar;
 	
 	//DATOS VISUALIZAR
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[1]/div/div")
-	public WebElement idD1;
+
 	@FindBy(xpath = "//span[@id=\"company\"]")
 	public WebElement empresaD1;
 	@FindBy(xpath = "//span[@id=\"branch\"]")
@@ -135,7 +134,7 @@ public class R1070DadosAdicionaisDetalhesPO extends TestBaseKenssy{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter("idDadosAdicionais");
+		String idRegistro = idObter("DadosAdicionais");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));

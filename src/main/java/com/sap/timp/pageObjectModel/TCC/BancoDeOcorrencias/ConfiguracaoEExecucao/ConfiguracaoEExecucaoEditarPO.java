@@ -41,11 +41,7 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseSteven {
 	}
 
 	public boolean editar() {
-
-
 		String url = driver.getCurrentUrl();
-		
-	
 		
 		bancoOcorrencia.click();
 		sleep(2000);
@@ -53,19 +49,16 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseSteven {
 		
 		invisibilityOfElementOverlay();
 		
-		String idRegistro = idObter3();
+		//String idRegistro = idObter3();
+		String idRegistro = idObter("idBOConfiguracaoEExecucaco");
 		
 		siguiente.click();
+		sleep(2000);
 		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
 		invisibilityOfElementOverlay();
-		
-		
-		
 
-		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-
 
 		menu.click();
 		sleep(1000);

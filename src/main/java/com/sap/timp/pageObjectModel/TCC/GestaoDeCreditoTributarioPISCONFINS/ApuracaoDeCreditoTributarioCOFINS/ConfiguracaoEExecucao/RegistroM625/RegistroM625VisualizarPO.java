@@ -102,7 +102,7 @@ public class RegistroM625VisualizarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter("GestaoCreditoTributarioPISRegistroM625");
+		String idRegistro = idObter("GestaoCreditoTributarioCOFINSRegistroM625");
 		System.out.println("ID Registro: " + idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));

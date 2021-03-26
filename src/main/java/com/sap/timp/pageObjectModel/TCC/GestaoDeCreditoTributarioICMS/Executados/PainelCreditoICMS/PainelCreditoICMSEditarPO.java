@@ -81,7 +81,9 @@ public class PainelCreditoICMSEditarPO extends TestBaseMassiel{
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 
-		String idRegistroConfiguracaoEExecucao = idObter3();
+		String idRegistroConfiguracaoEExecucao = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucacoExecutados");
+		
+		//String idRegistroConfiguracaoEExecucao = idObter3();
 		System.out.println("");
 		System.out.println("ID Registro Excecutado: " + idRegistroConfiguracaoEExecucao);
 

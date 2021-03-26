@@ -89,7 +89,7 @@ public class Executados1200EditarPO extends TestBaseMassiel{
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 
-		String idRegistroConfiguracaoEExecucao = idObter3();
+		String idRegistroConfiguracaoEExecucao = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200Executados");
 		System.out.println("");
 		System.out.println("ID Registro Excecutado: " + idRegistroConfiguracaoEExecucao);
 

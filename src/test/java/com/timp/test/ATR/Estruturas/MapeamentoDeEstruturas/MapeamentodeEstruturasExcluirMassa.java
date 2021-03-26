@@ -30,28 +30,27 @@ public class MapeamentodeEstruturasExcluirMassa extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
+	
+	@Test()
+	public void Criar() {
+		
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void mdrEntrar() {
-		boolean sucesso = acessarATRPO.acessarATR();
-
-	}
-
-	@Test(priority = 2)
-	public void excluirMasaMotivosDesligamento() {
+		 acessarATRPO.acessarATR();
 
 		ArrayList<Boolean> sucesso = mapeamentodeEstruturasExcluirMassaPO.criar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
 
+
+	}
+	
+	@Test(dependsOnMethods = "Criar")
+	public void excluirMasa() {
+		
 		boolean sucesso2 = mapeamentodeEstruturasExcluirMassaPO.excluirMasaMotivosDesligamento();
 		assertTrue(sucesso2, Eliminado);
 

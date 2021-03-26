@@ -19,39 +19,34 @@ public class GrupoDeEstruturasCriar extends TestBaseEliel{
 	GrupoDeEstruturasCriarPO grupoDeEstruturasCriarPO;
 	
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarATRPO = new AcessarATRPO();
-		  grupoDeEstruturasCriarPO = new  GrupoDeEstruturasCriarPO();
-	  }
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarATRPO = new AcessarATRPO();
+		grupoDeEstruturasCriarPO = new  GrupoDeEstruturasCriarPO();
+	}
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void criar() {
-	 		
-	 		boolean sucesso = grupoDeEstruturasCriarPO.criar();
-			assertTrue(sucesso, Criar);
+
+	@Test()
+	public void criar() {
+
+		loginTC.login();
+
+		acessarATRPO.acessarATR();
+
+
+		boolean sucesso = grupoDeEstruturasCriarPO.criar();
+		assertTrue(sucesso, Criar);
 		
-	 		
-	 	}
-	
-	
+		sleep(2000);
+
+	}
+
+
 }

@@ -33,23 +33,14 @@ public class RelacionamentoEstruturasCriar extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
-  
-  @Test(priority = 1)
- 	public void login() {
- 		loginTC.login();
-
- 	}
-
- 	@Test(priority = 2)
- 	public void ATREntrar() {
-
- 		boolean sucesso = acessarATRPO.acessarATR();
-
- 	}
-
- 	@Test(priority = 3)
+ 
+ 	@Test()
  	public void criarRelacionamento() {
+ 		
+ 		loginTC.login();
+		 acessarATRPO.acessarATR();
 
  		ArrayList<Boolean> sucesso =relacionamentoEstruturasCriarPO.criar();
  		

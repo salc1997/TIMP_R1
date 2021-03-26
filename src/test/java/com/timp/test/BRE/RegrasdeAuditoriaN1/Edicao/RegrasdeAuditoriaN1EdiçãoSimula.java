@@ -34,21 +34,10 @@ public class RegrasdeAuditoriaN1EdiçãoSimula extends TestBaseCristhian {
 	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
-		acessarBREPO.acessarBRE();
-
-	}
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
-
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasdeAuditoriaN1EdiçãoSimulaPO.editar();
 		assertTrue(sucesso, Editar);
 

@@ -211,7 +211,7 @@ public class RegistroM610CriarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+		sleep(4000);
 		biblioteca.click();
 		
 		sleep(3000);
@@ -227,7 +227,7 @@ public class RegistroM610CriarPO extends TestBaseSteven{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir("GestaoCreditoTributarioPISRegistroM610",id2);
+		idInserir("GestaoCreditoTributarioCOFINSRegistroM610",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

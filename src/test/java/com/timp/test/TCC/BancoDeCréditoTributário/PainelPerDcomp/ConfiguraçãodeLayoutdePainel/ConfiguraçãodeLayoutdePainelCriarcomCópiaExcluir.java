@@ -29,26 +29,23 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir extends TestBaseCr
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criarComCopiaExcluir() {
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso = configuraçãodeLayoutdePainelCriarcomCópiaExcluirPO.criar();
 		assertTrue(sucesso, Criar);
-
+	}
+	
+	@Test(dependsOnMethods = "criarComCopiaExcluir")
+	public void excluir() {
 		boolean sucesso2 = configuraçãodeLayoutdePainelCriarcomCópiaExcluirPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 	}
+	
 
 }

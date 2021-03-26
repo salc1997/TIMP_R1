@@ -28,27 +28,21 @@ public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void comparar() {
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
-	public void excluir() {
+		
 		boolean sucesso = kpisLixeiraExcluirEmMassaPO.comparar();
-
 		assertTrue(sucesso, Criar);
-
-		boolean sucesso2 = kpisLixeiraExcluirEmMassaPO.ExcluirMasas();
-
-		assertTrue(sucesso2, Criar);
 	}
 
+	@Test(dependsOnGroups = "comparar")
+	public void excluir() {
+		boolean sucesso2 = kpisLixeiraExcluirEmMassaPO.ExcluirMasas();
+		assertTrue(sucesso2, Criar);
+	}	
 }

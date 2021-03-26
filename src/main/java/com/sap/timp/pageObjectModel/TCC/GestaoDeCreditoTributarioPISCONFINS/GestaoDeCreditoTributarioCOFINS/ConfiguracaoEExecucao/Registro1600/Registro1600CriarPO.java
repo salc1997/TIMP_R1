@@ -167,8 +167,12 @@ public class Registro1600CriarPO extends TestBaseCristhian {
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 
-		String idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id ultimo registro: " +idRegistro);
+		String idRegistro = "0";
+		
+		if(rows > 0) {
+			idRegistro = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id ultimo registro: " +idRegistro);
+		} 
 		
 		novo.click();
 		sleep(2000);
@@ -288,7 +292,7 @@ public class Registro1600CriarPO extends TestBaseCristhian {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("GestaoCréditoTributárioCOFINSRegistro1600",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

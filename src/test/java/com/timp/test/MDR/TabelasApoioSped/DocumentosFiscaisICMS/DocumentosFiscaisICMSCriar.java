@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.DocumentosFiscaisICMS.D
 public class DocumentosFiscaisICMSCriar extends TestBaseEliel {
 
 	LoginTC loginTC;
-	AcessarMDRPO acessarMDRPO;
+	AcessarMDRPO acessarMDRPO; 
 	DocumentosFiscaisICMSCriarPO documentosFiscaisICMSCriarPO;
 
 	@BeforeClass

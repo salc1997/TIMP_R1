@@ -44,11 +44,8 @@ public class ConfiguracaoEExecucaoRegistro1200EditarPO extends TestBaseSteven {
 	}
 
 	public boolean editar() {
-
-
-		String url = driver.getCurrentUrl();
 		
-	
+		String url = driver.getCurrentUrl();
 		
 		gestaoCredito.click();
 		sleep(2000);
@@ -62,8 +59,7 @@ public class ConfiguracaoEExecucaoRegistro1200EditarPO extends TestBaseSteven {
 		
 		invisibilityOfElementOverlay();
 		
-		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

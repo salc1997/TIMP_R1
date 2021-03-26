@@ -26,7 +26,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseFernan
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 0)

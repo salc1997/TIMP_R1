@@ -31,6 +31,7 @@ public class LeiautesExecuçãoFuncionalidades3 extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+		//driver.close();
 	}
 
 

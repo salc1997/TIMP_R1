@@ -30,31 +30,29 @@ public class NotaFiscalEletronicaDeTransporteFiltrosAvancados extends TestBaseEl
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
 	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
+	 	public void filtroAvansado() {
+	 		loginTC.login();
 	 		
 	 	}
+
+	 	@Test(priority = 2)
+	 	public void ATREntrar() {
+	 		 acessarATRPO.acessarATR();
+	 		 
+	 	}
 	 	
-	 	@Test(priority = 1)
+	 	@Test(priority = 3)
 	 	public void filtro() {
 	 		
 	 		ArrayList<Boolean> sucesso = notaFiscalEletronicaDeTransporteFiltrosAvancadosPO.filtro();
 			for (int i = 0; i < sucesso.size(); i++) {
 				assertTrue(sucesso.get(i), Filtros);
 			}
-	 		
-		
-	 		
-	 	}
+			sleep(2000);
+	 }
 	
 }

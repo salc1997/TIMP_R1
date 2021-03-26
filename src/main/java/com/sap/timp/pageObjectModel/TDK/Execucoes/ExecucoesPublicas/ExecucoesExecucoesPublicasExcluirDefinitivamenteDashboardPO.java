@@ -100,7 +100,7 @@ public class ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboardPO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro1 =idObter1();
+		String idRegistro1 =idObter("DashboardParametrosGeraisExecutar");
 		System.out.println("Id Execuções"+idRegistro1);
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));

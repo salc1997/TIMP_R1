@@ -75,7 +75,7 @@ public class RegistroM620ExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter("GestaoCreditoTributarioPISRegistroM620");
+		String idRegistro = idObter("GestaoCreditoTributarioCOFINSRegistroM620");
 		System.out.println("Registro a ser excluido: " +idRegistro);
 		
 		

@@ -42,7 +42,7 @@ public class ConfiguracaoDeTributoEditarPO extends TestBaseEliel {
 	public WebElement aplicar;
 
 	@FindBy(xpath = "//button[text()=\"Fechar\"]")
-	public WebElement fechar;
+	public WebElement fechar; 
 
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
@@ -119,7 +119,7 @@ public class ConfiguracaoDeTributoEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ConfiguracaoDeTributo");
 		System.out.println("ID Registro: " + idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));

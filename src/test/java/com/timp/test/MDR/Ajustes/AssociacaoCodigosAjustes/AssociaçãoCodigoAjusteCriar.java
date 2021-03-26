@@ -22,7 +22,7 @@ public class AssociaçãoCodigoAjusteCriar extends TestBaseFernando{
   @BeforeClass
   public void beforeClass() {
 
-	  driver = initializationF();
+	  driver = initializationF(); 
 	  loginTC = new LoginTC();
 	  accesarMDRPO = new AcessarMDRPO();
 	  associaçãoCodigoAjusteCriarPO = new AssociaçãoCodigoAjusteCriarPO();

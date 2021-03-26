@@ -95,7 +95,7 @@ public class ConfiguracaoEExecucaoRegistro1200VisualizarPO extends TestBaseSteve
 		invisibilityOfElementOverlay();
 		
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));

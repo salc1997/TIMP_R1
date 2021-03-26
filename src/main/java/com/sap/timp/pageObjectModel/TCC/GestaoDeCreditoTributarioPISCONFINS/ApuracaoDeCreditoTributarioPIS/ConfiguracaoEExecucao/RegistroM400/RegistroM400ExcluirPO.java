@@ -71,7 +71,7 @@ public class RegistroM400ExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ApuraçãodeCréditoTributárioPISRegistroM400");
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 		String idRegistro1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id ultimo registro: " +idRegistro1);

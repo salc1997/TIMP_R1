@@ -21,51 +21,30 @@ public class CorreçãodeNFEditar extends TestBaseMassiel {
 	AcessarBSCPO acessarBSC;
 	AcessarBrbPO acessarBrbPO;
 	CorreçãodeNFEditarPO correcaodeNFEditarPO;
-	
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarBrbPO = new AcessarBrbPO();
-	  correcaodeNFEditarPO = new CorreçãodeNFEditarPO();
-	  acessarBSC = new  AcessarBSCPO();
-	  
-	  
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		correcaodeNFEditarPO = new CorreçãodeNFEditarPO();
+		acessarBSC = new  AcessarBSCPO();
 	}
 
-	@Test(priority = 1)
-	public void brbEntrar() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
+	@Test()
+	public void  executar() {
+		loginTC.login();
 		acessarBrbPO.acessar();
 
-	}
-	
-	@Test(priority = 2)
-	public void  executar() {
-	  // correcaodeNFEditarPO.Executar();
-	   
-	   ArrayList<Boolean> viEdi =  correcaodeNFEditarPO.Executar();
+		ArrayList<Boolean> viEdi =  correcaodeNFEditarPO.Executar();
 		for (int i = 0; i < viEdi.size(); i++) {
-		assertTrue(viEdi.get(i), Filtros);
+			assertTrue(viEdi.get(i), Filtros);
 		}
-
 	}
-	
-	
-	
-
-
-
 }

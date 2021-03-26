@@ -783,14 +783,16 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		estruturaR.click();
 		sleep(1000);
 		estruturaRO.click();
-		sleep(1000);
-		
-		caracteristica.click();
-		sleep(1000);
-		caracterisiticaO.click();
 		sleep(3000);
-		actionsMoveToElementElement(dataVigenciaR);
-		sleep(1000);
+		waitExpectElement(leiauteR);
+		sleep(3000);
+		
+//		caracteristica.click();
+//		sleep(1000);
+//		caracterisiticaO.click();
+//		sleep(3000);
+//		actionsMoveToElementElement(dataVigenciaR);
+//		sleep(1000);
 		
 		leiauteR.click();
 		sleep(1000);

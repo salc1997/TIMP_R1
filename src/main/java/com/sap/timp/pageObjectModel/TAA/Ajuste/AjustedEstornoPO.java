@@ -87,7 +87,7 @@ public class AjustedEstornoPO extends TestBaseMassiel {
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
-		String idRegistro = idObter1();
+		String idRegistro = idObter("Ajuste");
 		System.out.println(idRegistro );
 				
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

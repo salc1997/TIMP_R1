@@ -18,19 +18,19 @@ public class AcessarTDK extends TestBaseEliel{
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationE();
-	  loginTC = new LoginTC();
-	  acessarTDKPO = new  AcessarTDKPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationE();
+		loginTC = new LoginTC();
+		acessarTDKPO = new  AcessarTDKPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-  @Test(priority = 1)
+	@Test(priority = 1)
 	public void login() {
 		loginTC.login();
 
@@ -39,7 +39,7 @@ public class AcessarTDK extends TestBaseEliel{
 	@Test(priority = 2)
 	public void TDKEntrar() {
 
-		
+
 		boolean sucesso =  acessarTDKPO.acessarTDK();
 		assertTrue(sucesso, "The element is not present");
 

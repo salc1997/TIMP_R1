@@ -72,7 +72,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000); 
 		
 		siguiente.click();	
 		
@@ -95,7 +95,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		
+		sleep(4000);
 		
 		String valor = descricaosped.getAttribute("value");
 

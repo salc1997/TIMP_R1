@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluirEmMassaPO;
 
 public class CodigoDeMotivosDeAjustesExcluirEmMassa extends TestBaseEliel {
-
+ 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoDeMotivosDeAjustesExcluirEmMassaPO codigoDeMotivosDeAjustesExcluirEmMassaPO;

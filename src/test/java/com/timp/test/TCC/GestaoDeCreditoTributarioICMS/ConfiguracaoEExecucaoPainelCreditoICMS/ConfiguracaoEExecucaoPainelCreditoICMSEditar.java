@@ -29,26 +29,16 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSEditar extends TestBaseMassie
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
-
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso = configuracaoEExecucaoPainelCreditoICMSEditarPO.Editar();
-		assertTrue(sucesso, Filtros);
+		assertTrue(sucesso, Editar);
 	}
 
 }

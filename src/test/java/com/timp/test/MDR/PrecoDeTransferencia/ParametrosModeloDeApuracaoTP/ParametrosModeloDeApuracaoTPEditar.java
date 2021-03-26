@@ -28,7 +28,7 @@ public class ParametrosModeloDeApuracaoTPEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+//		driver.close();
 	}
 
 	@Test()

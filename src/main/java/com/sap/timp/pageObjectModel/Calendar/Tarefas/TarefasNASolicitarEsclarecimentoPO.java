@@ -318,11 +318,42 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"toolbar-wrapper\"]/div/ul/li[6]/button/span[2]")
 	public WebElement actualizar;
 	
+	@FindBy(xpath = "//*[@id=\"adv-filters-btn\"]/span[2]")
+	public WebElement filtrosAvaCal;
+	
+	@FindBy(xpath = "//*[@id=\"status-filter\"]/div/div[1]/div[2]")
+	public WebElement status;
+	
+	@FindBy(xpath = "//*[@id=\"1\"]/div[1]/label/span")
+	public WebElement statusOpc;
+	
+	@FindBy(xpath = "//*[@id=\"10\"]/div[1]/label/span")
+	public WebElement statusBloqueo;
+	
+	@FindBy(xpath = "//*[@id=\"apply-filters-btn\"]/span[2]")
+	public WebElement filtrosAvaCalAplicar;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
+	public WebElement enviar;
+	
+	@FindBy(xpath = "//*[@id=\"message\"]")
+	public WebElement message;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
+	public WebElement seleccionarDesti;
+	
+	@FindBy(xpath = "//*[@id=\"clear-filters-btn\"]/span[2]")
+	public WebElement limparFiltro;
 
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
+	@FindBy(xpath = "//*[@id=\"toolbar-wrapper\"]/div/ul/li[3]/button/span[2]")
+	public WebElement volverCalendario;
+	
+	@FindBy(xpath = "//*[@id=\"table\"]/div/div[1]/div/div[2]/div[1]/div[1]/label/span")
+	public WebElement flagEsclarecimento;
 	
 	public TarefasNASolicitarEsclarecimentoPO() {
 
@@ -642,7 +673,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBaseCristhian {
 		sleep(2000);
 		
 
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[5]")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]")).getText();
 		System.out.println(id);
 		
 		novoProceso.click();
@@ -813,7 +844,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBaseCristhian {
 		sleep(2000);
 	
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[5]")).getText();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]")).getText();
 		
 		System.out.println(id);
 		sleep(2000);
@@ -1040,7 +1071,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBaseCristhian {
 		System.out.println("ID obtenido: "+textId);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		
+		sucesso.add(true);
 	
 		System.out.println(sucesso);
 		
@@ -1107,19 +1138,65 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
+		actualizar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		filtrosAvaCal.click();
+		sleep(3000);
+		
+		status.click();
+		sleep(3000);
+		statusOpc.click();
+		sleep(3000);
+		closeSelectTypeCheckbox(status);
+		sleep(4000);
+		
+		filtrosAvaCalAplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div"));
+		WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div/div[2]/ul/li/span[text()=\"Solicitar esclarecimento\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		acoes.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		enviar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		message.sendKeys("teste automatizado");
+		sleep(3000);
+		
+		seleccionarDesti.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		pesquisar.sendKeys("MGASP");
+		sleep(4000);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(2000);
+		
+		flagEsclarecimento.click();
+		sleep(3000);
+		
+		enviar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(18000);
 		
 		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		Boolean existeElemento;
-		
-		if (existeElemento = driver.findElements(By.xpath("//div[text()=\"943457\"]")).size() != 0) {
-			System.out.println("EXISTE 1");
-			sucesso.add(true);
-		}else {
-			System.out.println("NO EXISTE 1");
-			sucesso.add(false); 
-		}
 		
 		UsuariosCalendario.click();
 		sleep(2000);
@@ -1131,30 +1208,240 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBaseCristhian {
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(2000);
 		
-		flag.click();
-		sleep(3000);
+		flagEsclarecimento.click();
+		sleep(6000);
 		
 		aceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		Boolean existeElemento2;
+		limparFiltro.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
-		if (existeElemento2 = driver.findElements(By.xpath("//div[text()=\"943458\"]")).size() != 0) {
-			System.out.println("EXISTE 2");
-			sucesso.add(true);
-		}else {
-			System.out.println("NO EXISTE 2");
-			sucesso.add(false); 
-		}
+		dia4.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
+		
+		status.click();
+		sleep(3000);
+		statusBloqueo.click();
+		sleep(3000);
+		closeSelectTypeCheckbox(status);
+		sleep(4000);
+		
+		filtrosAvaCalAplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div"));
+		WebElement acoesTarefa = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div/div[2]/ul/li/span[text()=\"Apropriar Tarefa\"]"));
+		
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		acoesTarefa.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		volverCalendario.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div"));
+		WebElement acoesEsclarecer = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div/div[2]/ul/li/span[text()=\"Esclarecer\"]"));
+		
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		acoesEsclarecer.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		message.sendKeys("teste automatizado");
+		sleep(3000);
+		
+		enviar.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		limparFiltro.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		status.click();
+		sleep(3000);
+		statusOpc.click();
+		sleep(3000);
+		closeSelectTypeCheckbox(status);
+		sleep(4000);
+		
+		filtrosAvaCalAplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		home.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		System.out.println(sucesso);
 		return sucesso;
 	}
 
-
-
-
+	public ArrayList<Boolean> lexeiraProcesos() {
+		
+		procesos.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
+		
+		//ultimo id de la tablas
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+				
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println(id); 
+		String idRegistro = idObter1();
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		acoes.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println(idB);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		double idD = Integer.valueOf(id); 
+		double idBD = Integer.valueOf(idB);
+		
+		//boolean sucesso1 = (Boolean) null;
+		if (idBD < idD) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		
+		return sucesso;
+	}
+	
+	public ArrayList<Boolean> lexeiraAtivador() {
+		
+		sleep(2000);
+		ativadordeprocessos.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//ultimo id de la tablas
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+				
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println(id); 
+		String idRegistro = idObter2();
+		sleep(2000);
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Desativar Configuração\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		acoes.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement acoesLexe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(2000);
+		acoesLexe.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println(idB);
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		double idD = Integer.valueOf(id); 
+		double idBD = Integer.valueOf(idB);
+		
+		//boolean sucesso1 = (Boolean) null;
+		if (idBD < idD) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		
+		return sucesso;
+	}
 }

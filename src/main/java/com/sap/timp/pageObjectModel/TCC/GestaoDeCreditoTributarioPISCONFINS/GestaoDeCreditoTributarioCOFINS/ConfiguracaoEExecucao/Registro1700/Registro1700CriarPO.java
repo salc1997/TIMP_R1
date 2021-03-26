@@ -132,7 +132,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		System.out.println("Id ultimo registro: " +idRegistro);
 		
 		nuevo.click();
-		sleep(4000);
+		sleep(6000);
 		
 		empresa.click();
 		sleep(2000);
@@ -213,7 +213,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -233,7 +233,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -251,7 +251,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -270,7 +270,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -289,7 +289,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -303,15 +303,19 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		sim.click();
 		sleep(6000);
 		
+		
+
 		waitExpectElement(biblioteca);
 		sleep(2000);
 		
+		
+		
 		biblioteca.click();
 		sleep(4000);
-		
+	
 		/*no.click();
 		sleep(2000);*/
-		waitExpectElement(nuevo);
+		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

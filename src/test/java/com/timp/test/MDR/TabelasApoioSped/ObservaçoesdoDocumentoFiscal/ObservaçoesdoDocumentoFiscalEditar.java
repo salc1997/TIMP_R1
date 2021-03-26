@@ -22,7 +22,7 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseMassiel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationM();
+		driver = initializationM(); 
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		observaçoesdoDocumentoFiscalEditarPO = new ObservaçoesdoDocumentoFiscalEditarPO();
@@ -30,7 +30,7 @@ public class ObservaçoesdoDocumentoFiscalEditar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

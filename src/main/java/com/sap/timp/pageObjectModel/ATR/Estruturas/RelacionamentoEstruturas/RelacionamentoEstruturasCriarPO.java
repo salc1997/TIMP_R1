@@ -200,7 +200,7 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 		
 		String idDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id após da criação: " + idDC);
-		idInserir1(idDC);
+		idInserir("RelacionamentoEstruturasCriar",idDC);
 		
 		int idACI = convertToInt(idAC);
 		int idADI = convertToInt(idDC);

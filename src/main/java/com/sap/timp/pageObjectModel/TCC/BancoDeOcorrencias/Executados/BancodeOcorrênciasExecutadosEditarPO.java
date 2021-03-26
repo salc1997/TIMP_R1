@@ -61,7 +61,7 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public boolean editar() {
 		
 		bancoOcorrencia.click();
 		sleep(2000);
@@ -69,11 +69,12 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		executados.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistroConfiguracaoEExecucao = idObter2();
+		String idRegistroConfiguracaoEExecucao = idObter("idBOConfiguracaoEExecucacoExecutados");
 		
 		System.out.println("");
 		System.out.println("ID Registro Excecutado: " + idRegistroConfiguracaoEExecucao);
@@ -165,6 +166,8 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		
 		boolean sucesso= nuevoTexto.contains(enviar);
 		System.out.println(sucesso);
+		
+		return sucesso;
 		
 	}
 

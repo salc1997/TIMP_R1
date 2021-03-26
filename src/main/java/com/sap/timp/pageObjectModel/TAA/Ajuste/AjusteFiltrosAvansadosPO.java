@@ -14,7 +14,7 @@ public class AjusteFiltrosAvansadosPO extends TestBaseMassiel{
 
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[1]")
 	public WebElement ajuste;
-	
+	 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 
@@ -125,7 +125,7 @@ public class AjusteFiltrosAvansadosPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
-		String idRegistro = idObter1();
+		String idRegistro = idObter("Ajuste");
 		System.out.println(idRegistro );
 		
 		pesquisar.click();

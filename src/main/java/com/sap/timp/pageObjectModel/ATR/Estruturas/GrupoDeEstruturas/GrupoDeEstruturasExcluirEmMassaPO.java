@@ -95,6 +95,9 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 	
 		gravar.click();
 		sleep(2000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

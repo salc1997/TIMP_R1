@@ -19,10 +19,6 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBaseMassie
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeBancodeCréditoTributárioEditarPO configuraçãodeBancodeCréditoTributárioEditarPO;
 
-	@Test
-	public void f() {
-	}
-
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationM();
@@ -33,21 +29,14 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBaseMassie
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
-
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTCC() {
-		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
+	
+	@Test()
 	public void editar() {
-
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso = configuraçãodeBancodeCréditoTributárioEditarPO.Editar();
 		assertTrue(sucesso, Criar);
 	}

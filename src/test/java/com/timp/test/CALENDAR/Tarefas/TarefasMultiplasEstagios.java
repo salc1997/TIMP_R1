@@ -9,7 +9,7 @@ import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.CriarProcessocomTaref
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
 import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasMultiplasEstagiosPO;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
-import com.timp.test.TFP.AcessarTFP;
+
 
 import org.testng.annotations.BeforeClass;
 

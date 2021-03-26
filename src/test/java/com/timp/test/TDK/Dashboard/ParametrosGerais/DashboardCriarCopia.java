@@ -32,23 +32,14 @@ public class DashboardCriarCopia extends TestBaseEliel {
 		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void copia() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		ArrayList<Boolean> sucesso = dashboardCriarCopiaPO.Copia();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
 	}
-
 }

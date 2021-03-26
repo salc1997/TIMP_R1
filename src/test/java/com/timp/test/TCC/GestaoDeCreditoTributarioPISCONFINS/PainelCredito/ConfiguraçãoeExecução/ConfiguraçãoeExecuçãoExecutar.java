@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoCriarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoExecutarPO;
 
 import org.testng.annotations.BeforeClass;
@@ -30,27 +29,16 @@ public class ConfiguraçãoeExecuçãoExecutar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void executar() {
-
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		boolean sucesso = configuraçãoeExecuçãoExecutarPO.executar();
-
+		assertTrue(sucesso, "executar");
 	}
 
 }

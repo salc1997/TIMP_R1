@@ -4,12 +4,12 @@
 	<test name="Centralização > Saldos">
 	
 		<classes>
-
 			<!-- Centralização > Saldos -->
 			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar"></class>
-
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar"></class>
 			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId"></class>
-			
 		</classes>
 
 	</test>
@@ -204,9 +204,9 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoDetalhes"></class>
-			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoVisualizar"></class>
-			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluir"></class>
-			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassa"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoExcluirMassa"></class>
 
 		</classes>
 

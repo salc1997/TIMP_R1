@@ -2,6 +2,7 @@ package com.timp.test.TDK.Kpis.Edicao;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -24,23 +25,18 @@ public class KpisGraficoEditar extends TestBaseEliel {
 		acessarTDKPO = new AcessarTDKPO();
 		kpisGraficoEditarPO = new KpisGraficoEditarPO();
 	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
+	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void Grafico() {
-
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		boolean sucesso = kpisGraficoEditarPO.Grafico();
 		assertTrue(sucesso, Editar);
-
 	}
-
 }

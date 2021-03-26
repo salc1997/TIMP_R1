@@ -30,24 +30,16 @@ public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseCr
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarATRPO() {
-
-		boolean sucesso = acessarATRPO.acessarATR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtro() {
+		
+		loginTC.login();
+		 acessarATRPO.acessarATR();
 
 		boolean sucesso = mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO.filtro();
 		assertTrue(sucesso, Filtros);

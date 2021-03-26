@@ -94,12 +94,11 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tc2);
+		driver.get(tp1);
 
 		return driver;
 	}
 
-	
 	
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
@@ -268,7 +267,7 @@ public class TestBaseSteven {
 	}
 
 	public void waitExpectElement(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 360);
+		WebDriverWait wait = new WebDriverWait(driver, 3600);
 
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 
@@ -287,7 +286,7 @@ public class TestBaseSteven {
 	}
 
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 360);
+		WebDriverWait wait = new WebDriverWait(driver, 3600);
 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 

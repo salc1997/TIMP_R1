@@ -34,7 +34,7 @@ public class Registro1610EditarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div[1]/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//*[@id=\"componentToSearchId-1000_SP_0014\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement Efilial;
 	
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div/div/div[1]")
@@ -73,7 +73,7 @@ public class Registro1610EditarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro = idObter("GestaoCréditoTributárioCOFINSRegistro1610");
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -86,17 +86,18 @@ public class Registro1610EditarPO extends TestBaseCristhian {
 		editar.click();
 		sleep(2000);
 		
-		waitExpectElement(filial);
-		sleep(8000);
+//		waitExpectElement(filial);
+//		sleep(8000);
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(5000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
 		String enviar = valor;
 		
 		
-		Efilial.click();
-		sleep(3000);
+//		Efilial.click();
+//		sleep(3000);
 		filial.click();
 		sleep(1000);
 		filialO.click();

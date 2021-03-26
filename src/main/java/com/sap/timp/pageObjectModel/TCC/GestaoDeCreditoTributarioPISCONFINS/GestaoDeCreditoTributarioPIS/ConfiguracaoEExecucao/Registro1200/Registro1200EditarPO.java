@@ -31,9 +31,11 @@ public class Registro1200EditarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement btnGravar;
 	
-	@FindBy(xpath = "//div[@id=\"natContRec\"]/div/div[@id=\"main-icon\"]")
+	@FindBy(xpath = "//div[@id=\"natContRec\"]/div/div[2]")
 	public WebElement naturaleza;
-
+	
+	@FindBy(xpath = "//div[@id=\"natContRec\"]/div/div/input")
+	public WebElement naturalezaValor;
 	
 	@FindBy(xpath = "//*[@id=\"02\"]")
 	public WebElement naturalezaOTQ1;
@@ -87,7 +89,7 @@ public class Registro1200EditarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro = idObter("GestaoCréditoTributárioPISRegistro1200");
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -99,28 +101,42 @@ public class Registro1200EditarPO extends TestBaseCristhian {
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		
 		waitExpectElement(naturaleza);
 		sleep(6000);
-		String valor = naturaleza.getText();
-		//String valor = filialE.getAttribute("value");
-		System.out.println(valor);
-		String enviar = valor;
 		
 		
-		naturaleza.click();
-		sleep(1000);
 		
 		
+		
+		String enviar= "";
 		if (tq1 == true) {
+			naturaleza.click();
+			sleep(3000);
+			
 			naturalezaOTQ1.click();
-			sleep(2000);
+			String valor = naturalezaOTQ1.getText();
+			//String valor = filialE.getAttribute("value");
+			System.out.println("Valor: "+valor);
+			enviar = valor;
+			
 		}else if (tp1== true) {
+			naturaleza.click();
+			sleep(3000);
+			
 			naturalezaOTP1.click();
-			sleep(2000);
+			String valor = naturalezaOTP1.getText();
+			//String valor = filialE.getAttribute("value");
+			System.out.println("Valor: "+valor);
+			 enviar = valor;
 		}else {
+			naturaleza.click();
+			sleep(3000);
+			
 			naturalezaOTC2.click();
-			sleep(2000);
+			String valor = naturalezaOTC2.getText();
+			//String valor = filialE.getAttribute("value");
+			System.out.println("Valor: "+valor);
+			 enviar = valor;
 		}
 
 		
@@ -136,9 +152,9 @@ public class Registro1200EditarPO extends TestBaseCristhian {
 		waitExpectElement(naturaleza);
 		sleep(6000);
 	  	
-	  	String nuevoTexto = naturaleza.getText();
-	  	System.out.println(enviar);
-		System.out.println(nuevoTexto);
+	  	String nuevoTexto = naturalezaValor.getAttribute("value");
+	  	System.out.println("Enviado: "+enviar);
+		System.out.println("Nuevo:" + nuevoTexto);
 		
 		if (enviar != nuevoTexto) {
 			boolean sucesso = true;

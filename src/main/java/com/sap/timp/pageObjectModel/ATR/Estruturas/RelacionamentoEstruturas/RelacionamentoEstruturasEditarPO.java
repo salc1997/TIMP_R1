@@ -105,7 +105,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> editar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
 		String url = driver.getCurrentUrl();
 		

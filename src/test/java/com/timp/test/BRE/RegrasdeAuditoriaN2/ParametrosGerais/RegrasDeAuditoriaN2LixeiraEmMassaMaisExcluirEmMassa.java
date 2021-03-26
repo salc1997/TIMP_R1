@@ -29,21 +29,12 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBas
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		ArrayList<Boolean> sucesso = regrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO.criar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);

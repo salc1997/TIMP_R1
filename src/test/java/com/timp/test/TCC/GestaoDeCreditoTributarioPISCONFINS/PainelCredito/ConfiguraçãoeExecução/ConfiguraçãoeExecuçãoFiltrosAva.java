@@ -31,24 +31,15 @@ public class ConfiguraçãoeExecuçãoFiltrosAva extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void Filtro() {
-
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		ArrayList<Boolean> Nome = configuraçãoeExecuçãoFiltrosAvaPO.filtros();
 		for (int i = 0; i < Nome.size(); i++) {
 			assertTrue(Nome.get(i), Filtros);

@@ -42,7 +42,7 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"1000_RJ_0001\"]/div[1]/label/span")
 	public WebElement filialOPC;
 	
-	@FindBy(xpath = "//*[@id=\"1000_RJ_0001\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
 	public WebElement filialOPCTP1;
 	
 	@FindBy(xpath = "//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
@@ -103,7 +103,7 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
 		} else {
 			tp1 = true;
 		}
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementElement(gestaoCredito);
@@ -236,7 +236,8 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("idPainelCreditoConfiguracaoEExecucaco",id2);
+		//idInserir1(id2);
 
 		
 		int idD = convertToInt(idRegistro);

@@ -42,7 +42,7 @@ public class ConfiguracaoDeTipoTributoExcluirPO extends TestBaseEliel{
 		configuracaotipotributo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000); 
 
 		primeira.click();
 
@@ -50,7 +50,7 @@ public class ConfiguracaoDeTipoTributoExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ConfiguracaoDeTipoTributo");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(

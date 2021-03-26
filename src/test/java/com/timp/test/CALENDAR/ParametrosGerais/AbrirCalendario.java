@@ -37,21 +37,16 @@ public class AbrirCalendario extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void login() {
+
+
+
+	@Test()
+	public void CalendarEntrar() {
+		
 		loginTC.login();
 
-	}
-	
-	@Test(priority = 2)
-	public void acessarCalendar() {
 		acessarCalendarPO.acessarCalendar();
-
-	}
-
-	@Test(priority = 3)
-	public void CalendarEntrar() {
-
+		
 		boolean sucesso = abrirCalendarioPO.abrirCalendario();
 		
 		assertTrue(sucesso, filtros);

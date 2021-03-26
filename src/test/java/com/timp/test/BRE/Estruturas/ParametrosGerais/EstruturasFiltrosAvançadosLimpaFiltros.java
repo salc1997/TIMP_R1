@@ -2,7 +2,7 @@ package com.timp.test.BRE.Estruturas.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.Edicao.CalculoDeTributosFiltrosAbansadosPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class EstruturasFiltrosAvançadosLimpaFiltros extends TestBaseCristhian {
+public class EstruturasFiltrosAvançadosLimpaFiltros extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	EstruturasFiltrosAvançadosLimpaFiltrosPO  estruturasFiltrosAvançadosLimpaFiltrosPO;
@@ -24,7 +24,7 @@ public class EstruturasFiltrosAvançadosLimpaFiltros extends TestBaseCristhian {
 	
   @BeforeClass
   public void beforeClass() {
-	  	driver = initializationC();
+	  	driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		estruturasFiltrosAvançadosLimpaFiltrosPO  = new EstruturasFiltrosAvançadosLimpaFiltrosPO();

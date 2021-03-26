@@ -2,7 +2,7 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Conf
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101VisualizarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoeExecuçãoVisualizar extends TestBaseCristhian {
+public class ConfiguraçãoeExecuçãoVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãoeExecuçãoVisualizarPO configuraçãoeExecuçãoVisualizarPO;
@@ -24,7 +24,7 @@ public class ConfiguraçãoeExecuçãoVisualizar extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãoeExecuçãoVisualizarPO = new ConfiguraçãoeExecuçãoVisualizarPO();

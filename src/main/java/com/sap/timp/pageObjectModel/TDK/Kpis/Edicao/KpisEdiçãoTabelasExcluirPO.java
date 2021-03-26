@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisEdiçãoTabelasExcluirPO extends TestBaseCristhian {
+public class KpisEdiçãoTabelasExcluirPO extends TestBaseSteven {
 	
 
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")

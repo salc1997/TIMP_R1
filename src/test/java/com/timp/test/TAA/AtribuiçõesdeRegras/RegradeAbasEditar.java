@@ -2,7 +2,7 @@ package com.timp.test.TAA.AtribuiçõesdeRegras;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoEditarPO;
@@ -14,14 +14,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegradeAbasEditar extends TestBaseCristhian {
+public class RegradeAbasEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	RegradeAbasEditarPO regradeAbasEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTAAPO = new AcessarTAAPO();
 		regradeAbasEditarPO = new RegradeAbasEditarPO();

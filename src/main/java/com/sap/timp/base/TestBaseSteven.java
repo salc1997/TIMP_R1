@@ -8,12 +8,16 @@ import java.sql.Time;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.TextStyle;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -616,6 +620,38 @@ public class TestBaseSteven {
 	public void closeSelectTypeCheckbox(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
 	}
+	
+	public String capitalize(String 
+			cadena) {
+		String[] split = cadena.split("");
+        for (int i = 0; i < split.length; i++) {
+            if(i == 0 || split[i-1].equals(" ")) {
+                split[i] = split[i].toUpperCase();
+            }
+        }
+        
+        return String.join("", split);
+	}
+	
+	public String mesActual() {
+		// Obtienes el mes actual
+		Month mes = LocalDate.now().getMonth();
+
+		// Obtienes el nombre del mes
+		String nombreMes = mes.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
+		nombreMes = capitalize(nombreMes);
+		
+		return nombreMes;
+	}
+	
+	public String anioActual() {
+		// Obtienes el mes actual
+		int anio = LocalDate.now().getYear();
+		
+		String anioString = String.valueOf(anio);
+		return anioString;
+	}
+	
 	
 
 	

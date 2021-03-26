@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela15;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPVisualizarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AgenteCausadorDeSGDPVisualizar extends TestBaseCristhian {
+public class AgenteCausadorDeSGDPVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

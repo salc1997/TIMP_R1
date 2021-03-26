@@ -2,7 +2,7 @@ package com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaEditarPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisHierarquiaEditar extends TestBaseCristhian {
+public class ParametrosGeraisHierarquiaEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
@@ -21,7 +21,7 @@ public class ParametrosGeraisHierarquiaEditar extends TestBaseCristhian {
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationC();
+	  driver = initialization();
 	loginTC = new LoginTC();
 	acessarBCBPO = new AcessarBCBPO();
 	parametrosGeraisHierarquiaEditarPO = new ParametrosGeraisHierarquiaEditarPO();

@@ -2,7 +2,7 @@ package com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250Aqui
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisiçãoTotal.S1250AquisiçãoTotalCriarPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class S1250AquisiçãoTotalCriar extends TestBaseCristhian{
+public class S1250AquisiçãoTotalCriar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S1250AquisiçãoTotalCriarPO s1250AquisiçãoTotalCriarPO;
@@ -22,7 +22,7 @@ public class S1250AquisiçãoTotalCriar extends TestBaseCristhian{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		s1250AquisiçãoTotalCriarPO = new S1250AquisiçãoTotalCriarPO();

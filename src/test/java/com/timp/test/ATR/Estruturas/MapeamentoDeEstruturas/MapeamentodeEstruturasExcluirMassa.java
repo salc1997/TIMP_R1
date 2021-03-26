@@ -2,7 +2,7 @@ package com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassaPO;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class MapeamentodeEstruturasExcluirMassa extends TestBaseCristhian {
+public class MapeamentodeEstruturasExcluirMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
 	MapeamentodeEstruturasExcluirMassaPO mapeamentodeEstruturasExcluirMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarATRPO = new AcessarATRPO();
 		mapeamentodeEstruturasExcluirMassaPO = new MapeamentodeEstruturasExcluirMassaPO();

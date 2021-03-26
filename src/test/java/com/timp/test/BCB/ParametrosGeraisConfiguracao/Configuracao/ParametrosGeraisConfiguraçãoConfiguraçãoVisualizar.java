@@ -2,7 +2,7 @@ package com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar extends TestBaseCristhian{
+public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO parametrosGeraisConfiguraçãoVisualizarPO;
 	
   @BeforeClass
   public void beforeClass() {
-	driver = initializationC();
+	driver = initialization();
 	loginTC = new LoginTC();
 	acessarBCBPO = new AcessarBCBPO();
 	parametrosGeraisConfiguraçãoVisualizarPO = new ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO();

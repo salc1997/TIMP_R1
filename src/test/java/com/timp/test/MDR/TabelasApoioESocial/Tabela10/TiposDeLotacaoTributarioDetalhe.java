@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela10;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialDetalhePO;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeLotacaoTributarioDetalhe extends TestBaseCristhian {
+public class TiposDeLotacaoTributarioDetalhe extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TiposDeLotacaoTributarioDetalhePO tiposDeLotacaoTributarioDetalhePO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		tiposDeLotacaoTributarioDetalhePO = new TiposDeLotacaoTributarioDetalhePO();

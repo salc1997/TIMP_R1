@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO extends TestBaseCristhian{
+public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapamentoEstruturas;

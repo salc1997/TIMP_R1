@@ -6,19 +6,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.LeiautesExecuçãoFuncionalidades1PO;
 
-public class LeiautesExecuçãoFuncionalidades1 extends TestBaseCristhian {
+public class LeiautesExecuçãoFuncionalidades1 extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	LeiautesExecuçãoFuncionalidades1PO leiautesExecuçãoFuncionalidadesPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		leiautesExecuçãoFuncionalidadesPO = new LeiautesExecuçãoFuncionalidades1PO();

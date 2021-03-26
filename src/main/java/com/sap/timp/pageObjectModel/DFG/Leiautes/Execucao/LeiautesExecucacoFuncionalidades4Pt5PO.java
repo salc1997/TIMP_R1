@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseFernando;
 
-public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
+public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;

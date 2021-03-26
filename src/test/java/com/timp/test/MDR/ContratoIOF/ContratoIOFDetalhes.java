@@ -2,7 +2,7 @@ package com.timp.test.MDR.ContratoIOF;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ContratoIOF.ContratoIOFDetalhesPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ContratoIOFDetalhes extends TestBaseCristhian {
+public class ContratoIOFDetalhes extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContratoIOFDetalhesPO contratoIOFDetalhesPO;
@@ -24,7 +24,7 @@ public class ContratoIOFDetalhes extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		contratoIOFDetalhesPO = new ContratoIOFDetalhesPO();

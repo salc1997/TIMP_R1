@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CorreçãoManualPO extends TestBaseCristhian {
+public class CorreçãoManualPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;

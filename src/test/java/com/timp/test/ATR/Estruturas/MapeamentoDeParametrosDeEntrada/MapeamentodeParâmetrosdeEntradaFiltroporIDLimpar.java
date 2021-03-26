@@ -2,7 +2,7 @@ package com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseCristhian {
+public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
 	MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO;
@@ -21,7 +21,7 @@ public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseCr
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarATRPO = new AcessarATRPO();
 		mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO = new MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO();

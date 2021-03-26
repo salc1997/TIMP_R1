@@ -2,7 +2,7 @@ package com.timp.test.ADM.Configuração.ManuaisDeComponente;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançadosPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class ManuaisDeComponentesFiltrosAvançados extends TestBaseCristhian {
+public class ManuaisDeComponentesFiltrosAvançados extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ManuaisDeComponentesFiltrosAvançadosPO manuaisDeComponentesFiltrosAvançadosPO;
@@ -24,7 +24,7 @@ public class ManuaisDeComponentesFiltrosAvançados extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarADMPO = new AcessarADMPO();
 		manuaisDeComponentesFiltrosAvançadosPO = new ManuaisDeComponentesFiltrosAvançadosPO();

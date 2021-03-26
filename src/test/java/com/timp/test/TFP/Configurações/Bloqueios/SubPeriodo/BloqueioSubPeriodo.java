@@ -2,7 +2,7 @@ package com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeríodoCriarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class BloqueioSubPeriodo extends TestBaseCristhian {
+public class BloqueioSubPeriodo extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	BloqueioSubPeríodoCriarPO bloqueioSubPeríodoCriarPO;
@@ -23,7 +23,7 @@ public class BloqueioSubPeriodo extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTFPPO = new AcessarTFPPO();
 		bloqueioSubPeríodoCriarPO = new BloqueioSubPeríodoCriarPO();

@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseCristhian {
+public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 	public WebElement hierarquias;

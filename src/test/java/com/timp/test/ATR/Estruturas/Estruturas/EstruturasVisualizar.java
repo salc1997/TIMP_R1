@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.ATR.Estruturas.Estruturas.EstruturasVisualiz
 
 
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class EstruturasVisualizar extends TestBaseCristhian {
+public class EstruturasVisualizar extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -34,7 +34,7 @@ public class EstruturasVisualizar extends TestBaseCristhian {
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationC();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  estruturasVisualizarPO = new  EstruturasVisualizarPO();

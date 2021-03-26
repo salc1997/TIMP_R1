@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseCristhian {
+public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapamentoEstruturas;

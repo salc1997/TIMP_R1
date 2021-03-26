@@ -2,7 +2,7 @@ package com.timp.test.TPC;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TPC.AcessarTPCPO;
 import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisCriarPO;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosGeraisVisualizar extends TestBaseCristhian {
+public class ParâmetrosGeraisVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTPCPO acessarTPCPO;
 	ParâmetrosGeraisVisualizarPO parâmetrosGeraisVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTPCPO = new AcessarTPCPO();
 		parâmetrosGeraisVisualizarPO = new ParâmetrosGeraisVisualizarPO();

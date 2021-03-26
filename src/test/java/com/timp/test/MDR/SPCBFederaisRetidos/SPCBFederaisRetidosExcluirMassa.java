@@ -2,7 +2,7 @@ package com.timp.test.MDR.SPCBFederaisRetidos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosExcluirMassaPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SPCBFederaisRetidosExcluirMassa extends TestBaseCristhian {
+public class SPCBFederaisRetidosExcluirMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SPCBFederaisRetidosExcluirMassaPO sPCBFederaisRetidosExcluirMassaPO;
@@ -22,7 +22,7 @@ public class SPCBFederaisRetidosExcluirMassa extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		sPCBFederaisRetidosExcluirMassaPO = new SPCBFederaisRetidosExcluirMassaPO();

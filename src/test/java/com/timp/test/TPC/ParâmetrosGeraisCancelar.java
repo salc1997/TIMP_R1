@@ -2,7 +2,7 @@ package com.timp.test.TPC;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TPC.AcessarTPCPO;
 import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisAprovarPO;
@@ -11,14 +11,14 @@ import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisCancelarPO;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosGeraisCancelar extends TestBaseCristhian {
+public class ParâmetrosGeraisCancelar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTPCPO acessarTPCPO;
 	ParâmetrosGeraisCancelarPO parâmetrosGeraisCancelarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTPCPO = new AcessarTPCPO();
 		parâmetrosGeraisCancelarPO = new ParâmetrosGeraisCancelarPO();

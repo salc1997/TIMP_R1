@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 
-public class CorreçãodeNFAprovarC_JOBPO extends TestBaseCristhian {
+public class CorreçãodeNFAprovarC_JOBPO extends TestBaseSteven {
 
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")

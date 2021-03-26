@@ -68,18 +68,7 @@ public class TestBaseKenssy extends TestBaseSteven{
         return String.join("", split);
 	}
 	
-	public Month mesActual() {
-		// Obtienes el mes actual
-		Month mes = LocalDate.now().getMonth();
 
-		// Obtienes el nombre del mes
-		//String nombreMes = mes.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
-		//nombreMes = capitalize(nombreMes);
-		
-		//String nombreMes = mes;
-		
-		return mes;
-	}
 	
 	public String diaHoy() {
 		Calendar c1 = Calendar.getInstance();

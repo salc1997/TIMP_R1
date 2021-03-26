@@ -2,7 +2,7 @@ package com.timp.test.TCC.FatorDeCreditamento;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltrosAvançadosPO;
@@ -14,14 +14,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class FatorDeCreditamentoFiltrosAvançados extends TestBaseCristhian{
+public class FatorDeCreditamentoFiltrosAvançados extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	FatorDeCreditamentoFiltrosAvançadosPO fatorDeCreditamentoFiltrosAvançadosPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		fatorDeCreditamentoFiltrosAvançadosPO = new FatorDeCreditamentoFiltrosAvançadosPO();

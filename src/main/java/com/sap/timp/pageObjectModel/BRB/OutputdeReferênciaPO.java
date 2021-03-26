@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class OutputdeReferênciaPO extends TestBaseCristhian {
+public class OutputdeReferênciaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;

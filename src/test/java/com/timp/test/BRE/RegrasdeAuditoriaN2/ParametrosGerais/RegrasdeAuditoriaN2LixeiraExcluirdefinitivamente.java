@@ -2,7 +2,7 @@ package com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhosPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO regrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO;
@@ -22,7 +22,7 @@ public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseCr
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO = new RegrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO();

@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.MDR.RegistroDeExportaçao.RegistroDeExportaçaoCriarPO;
 
 import net.bytebuddy.agent.builder.AgentBuilder.RedefinitionStrategy.BatchAllocator.ForTotal;
 
-public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseCristhian {
+public class AliquotasDeTaxaDeActualizacaoCriarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Taxas de Atualização\"]")

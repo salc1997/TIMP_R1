@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParâmetrosGeraisCriarPO extends TestBaseCristhian {
+public class ParâmetrosGeraisCriarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")

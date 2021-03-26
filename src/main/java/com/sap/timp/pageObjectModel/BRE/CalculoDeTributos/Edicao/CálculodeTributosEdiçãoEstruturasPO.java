@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CálculodeTributosEdiçãoEstruturasPO extends TestBaseCristhian{
+public class CálculodeTributosEdiçãoEstruturasPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Cálculo de Tributos\"]")
 	public WebElement calculodetributos;	

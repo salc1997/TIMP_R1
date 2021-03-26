@@ -2,7 +2,7 @@ package com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançadosPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoeExecuçãoFiltrosavançados extends TestBaseCristhian {
+public class ConfiguraçãoeExecuçãoFiltrosavançados extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãoeExecuçãoFiltrosavançadosPO configuraçãoeExecuçãoFiltrosavançadosPO;
@@ -23,7 +23,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançados extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãoeExecuçãoFiltrosavançadosPO = new ConfiguraçãoeExecuçãoFiltrosavançadosPO();

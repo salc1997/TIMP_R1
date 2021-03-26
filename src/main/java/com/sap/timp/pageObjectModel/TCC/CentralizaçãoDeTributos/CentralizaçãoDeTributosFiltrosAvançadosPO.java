@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CentralizaçãoDeTributosFiltrosAvançadosPO extends TestBaseCristhian{
+public class CentralizaçãoDeTributosFiltrosAvançadosPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Centralização de Tributos\"]")
 	public WebElement CentralizaçãodeTributos;

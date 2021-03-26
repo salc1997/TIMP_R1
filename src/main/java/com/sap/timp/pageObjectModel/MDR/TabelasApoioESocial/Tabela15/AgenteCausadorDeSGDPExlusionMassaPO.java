@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.mustache.Value;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AgenteCausadorDeSGDPExlusionMassaPO extends TestBaseCristhian{
+public class AgenteCausadorDeSGDPExlusionMassaPO extends TestBaseSteven{
 	
 	
 	

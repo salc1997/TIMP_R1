@@ -2,7 +2,7 @@ package com.timp.test.DFG.Leiautes.Execucao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt4PO;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseCristhian {
+public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	LeiautesExecucacoFuncionalidades4Pt5PO leiautesExecucacoFuncionalidades4Pt5PO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		leiautesExecucacoFuncionalidades4Pt5PO = new LeiautesExecucacoFuncionalidades4Pt5PO();

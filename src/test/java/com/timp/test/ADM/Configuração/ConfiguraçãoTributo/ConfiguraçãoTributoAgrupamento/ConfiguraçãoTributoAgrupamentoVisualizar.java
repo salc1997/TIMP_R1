@@ -2,7 +2,7 @@ package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAg
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoVisualizarPO;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoTributoAgrupamentoVisualizar extends TestBaseCristhian {
+public class ConfiguraçãoTributoAgrupamentoVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguraçãoTributoAgrupamentoVisualizarPO configuraçãoTributoAgrupamentoVisualizarPO;
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationC();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
 	  configuraçãoTributoAgrupamentoVisualizarPO = new ConfiguraçãoTributoAgrupamentoVisualizarPO();

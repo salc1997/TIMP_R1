@@ -2,7 +2,7 @@ package com.timp.test.BRE.RegrasdeAuditoriaN2.edicao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasdeAuditoriaN2EdiçãoSimularPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN2EdiçãoSimular extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2EdiçãoSimular extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN2EdiçãoSimularPO regrasdeAuditoriaN2EdiçãoSimularPO;
@@ -24,7 +24,7 @@ public class RegrasdeAuditoriaN2EdiçãoSimular extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN2EdiçãoSimularPO = new RegrasdeAuditoriaN2EdiçãoSimularPO();

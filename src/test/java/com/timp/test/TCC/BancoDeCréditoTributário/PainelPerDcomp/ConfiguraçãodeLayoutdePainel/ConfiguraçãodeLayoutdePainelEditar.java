@@ -2,7 +2,7 @@ package com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.Configuraçãode
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegradeAbasEditarPO;
@@ -15,14 +15,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeLayoutdePainelEditar extends TestBaseCristhian {
+public class ConfiguraçãodeLayoutdePainelEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeLayoutdePainelEditarPO configuraçãodeLayoutdePainelEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãodeLayoutdePainelEditarPO = new ConfiguraçãodeLayoutdePainelEditarPO();

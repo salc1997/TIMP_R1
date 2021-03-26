@@ -2,7 +2,7 @@ package com.timp.test.TPC;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TPC.AcessarTPCPO;
 import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisAprovarPO;
@@ -11,14 +11,14 @@ import com.sap.timp.pageObjectModel.TPC.ParâmetrosGeraisCamposManuaisPO;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosGeraisCamposManuais extends TestBaseCristhian {
+public class ParâmetrosGeraisCamposManuais extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTPCPO acessarTPCPO;
 	ParâmetrosGeraisCamposManuaisPO parâmetrosGeraisCamposManuaisPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTPCPO = new AcessarTPCPO();
 		parâmetrosGeraisCamposManuaisPO = new ParâmetrosGeraisCamposManuaisPO();

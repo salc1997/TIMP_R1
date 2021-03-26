@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
-public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
+public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 	
 
 	

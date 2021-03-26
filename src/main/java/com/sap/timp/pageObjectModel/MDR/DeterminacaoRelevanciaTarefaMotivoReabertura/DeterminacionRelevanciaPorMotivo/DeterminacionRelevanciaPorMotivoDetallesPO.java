@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseCristhian{
+public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[text()=\"Determinação de Relevância de Tarefa por Motivo de Reabertura\"]")

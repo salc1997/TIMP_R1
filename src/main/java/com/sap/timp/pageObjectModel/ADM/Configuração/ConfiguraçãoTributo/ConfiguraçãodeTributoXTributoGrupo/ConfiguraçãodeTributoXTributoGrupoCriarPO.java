@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguraçãodeTributoXTributoGrupoCriarPO extends TestBaseCristhian {
+public class ConfiguraçãodeTributoXTributoGrupoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
 	

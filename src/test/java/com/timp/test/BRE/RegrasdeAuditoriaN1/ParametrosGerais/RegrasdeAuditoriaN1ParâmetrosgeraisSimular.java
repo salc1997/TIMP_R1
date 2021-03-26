@@ -2,7 +2,7 @@ package com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimulaPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseCristhian {
+public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN1ParâmetrosgeraisSimularPO regrasdeAuditoriaN1ParâmetrosgeraisSimularPO;
@@ -22,7 +22,7 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseCristhia
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN1ParâmetrosgeraisSimularPO = new RegrasdeAuditoriaN1ParâmetrosgeraisSimularPO();

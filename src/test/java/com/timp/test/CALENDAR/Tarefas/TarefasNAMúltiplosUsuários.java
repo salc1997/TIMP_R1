@@ -2,7 +2,7 @@ package com.timp.test.CALENDAR.Tarefas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
 import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasNAMúltiplosUsuáriosPO;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TarefasNAMúltiplosUsuários extends TestBaseCristhian {
+public class TarefasNAMúltiplosUsuários extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
 	TarefasNAMúltiplosUsuáriosPO tarefasNAMúltiplosUsuáriosPO;
  
   @BeforeClass
   public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
 		tarefasNAMúltiplosUsuáriosPO = new TarefasNAMúltiplosUsuáriosPO();

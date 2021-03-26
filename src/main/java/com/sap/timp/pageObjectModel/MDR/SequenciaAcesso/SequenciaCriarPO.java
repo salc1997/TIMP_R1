@@ -23,32 +23,29 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Preencher  um Nome\"]")
 	public WebElement nome;
 	
-	@FindBy(xpath = "//*[@id=\"description\"]/div/div/input")
+	@FindBy(xpath = "//div[@id=\"description\"]/div/div/input")
 	public WebElement descricao;
 	
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div[@class=\"list-item\"]/div[2]")
 	public WebElement opcaoempresa;
 	
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div[2]")
 	public WebElement tributo;
 	
 	//@FindBy (xpath = "//*[@id=\"23\"]/div[1]/label/span")
-	@FindBy (xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy (xpath = "//div[@class=\"list-option\"]/div[@class=\"list-item\"]/div[text()=\"ICMS\"]")
 	public WebElement opcaotributo;
 
 	@FindBy(xpath ="//div[@id=\"structureGroup\"]/div/div/div[2]")
 	public WebElement grupoestrutura;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
-	public WebElement opcaogrupo;
-	
 	@FindBy(xpath = "//div[@id=\"structure\"]/div/div/div[2]")
 	public WebElement estruturadados;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"Ajustes Fiscais\"]")
 	public WebElement opcaoestrutura;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
@@ -74,8 +71,8 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	public WebElement camposestrutura;
 	
 	//@FindBy(xpath="//div[text()=\"Agrupamento\"]")
-	@FindBy(xpath = "//div[@data-item and @data-id][1]")
-	public WebElement agrupamento;
+	@FindBy(xpath = "//div[@class=\"field-info droppable-tile-info\"]/div[text()=\"Alíquota ICMS\"]")
+	public WebElement aliquotaICMS;
 	
 	@FindBy(xpath = "//*[@id=\"fields\"]/div[3]")
 	public WebElement camposselecionados;
@@ -96,69 +93,94 @@ public class SequenciaCriarPO extends TestBaseEliel{
 	
 	
 	
-	public boolean criar() {
-		
-		
+	public boolean criar() {				
 		Actions action = new Actions(driver);
-
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		sequencia.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");		
+		sleep(2000);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		String id = "0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		}
 		
 		sleep(2000);
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		System.out.println("Id Ultimo Registro: " + id);
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		sleep(2000);
-		System.out.println(id);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		sequenciaacesso.click();
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		nome.sendKeys("Teste");
-		
+		nome.sendKeys("Teste");		
 		descricao.sendKeys("descrição");
 		
 		empresa.click();
 		sleep(2000);
+		
 		opcaoempresa.click();
 		sleep(2000);
-		opcaoempresa.sendKeys(Keys.ESCAPE);
+		closeSelectTypeCheckbox(empresa);
 		sleep(2000);
 		
 		tributo.click();
-		sleep(2000);
+		sleep(2000);		
 		opcaotributo.click();
 		sleep(2000);
-		opcaotributo.sendKeys(Keys.ESCAPE);
+		closeSelectTypeCheckbox(tributo);
 		sleep(2000);
 		
+		actionsMoveToElementElement(estruturadados);
 		grupoestrutura.click();
 		sleep(2000);
-		opcaogrupo.click();
 		
+		WebElement opcaogrupo;
+		String url = driver.getCurrentUrl();
+		String xpathString = "";
+		
+		if(url.contains("tq1") || url.contains("tc2")) {
+			xpathString = "//li[@class=\"list-item\" and text()=\"Ajuste\"][1]";		
+			actionsMoveToElementXpath(xpathString);
+			opcaogrupo = driver.findElement(By.xpath(xpathString));
+		}else {
+			xpathString = "//li[@class=\"list-item\" and text()=\"Ajustes\"][1]";		
+			actionsMoveToElementXpath(xpathString);
+			opcaogrupo = driver.findElement(By.xpath(xpathString));
+		}
+	
+		opcaogrupo.click();		
 		sleep(1000);
 		
 		estruturadados.click();
 		sleep(2000);
+		
 		opcaoestrutura.click();
 		sleep(2000);
+		
 		camposestrutura.click();
 		
 		//arrastar a opçao para outro campo
-		action.clickAndHold(agrupamento).moveToElement(camposselecionados).release().build().perform();
+		action.clickAndHold(aliquotaICMS).moveToElement(camposselecionados).release().build().perform();		
 		
-		
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gravar.click();
@@ -167,35 +189,43 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		
 		butaosim.click();
 		
+		sleep(2000);		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		biblioteca.click();
 		
+		biblioteca.click();	
 		sleep(2000);
-		//butaosim.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir("Sequencia",idB);
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		String idB = "0";
+		
+		if(rows > 0) {
+			idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		}
+		
 		sleep(2000);
 		System.out.println(id);
 		System.out.println(idB);
 		
-		double idD = convertToDouble(id);
-		double idBD = convertToDouble(idB);
+		double idD = Integer.parseInt(id);
+		double idBD = Integer.parseInt(idB);
+		
 		//compara pra ver se o novo id criado é realmente o ultimo
 		boolean sucesso = false;
 		
 		if (idBD > idD) {
+			idInserir("Sequencia",idB);
 			sucesso = true;
 		}else {
 			sucesso = false;
@@ -203,7 +233,6 @@ public class SequenciaCriarPO extends TestBaseEliel{
 		
 		System.out.println(sucesso);
 		return sucesso;
-
 	}
 	
 

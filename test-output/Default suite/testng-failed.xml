@@ -8,6 +8,7 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
 =======
 <<<<<<< HEAD
@@ -22,10 +23,18 @@
 <<<<<<< HEAD
           <include name="afterClass"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
+        <methods>
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="afterClass"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="criar"/>
+<<<<<<< HEAD
 =======
           <include name="CriarSaldo"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -42,6 +51,11 @@
       </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

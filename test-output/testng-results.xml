@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
 =======
 <<<<<<< HEAD
@@ -8,8 +9,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="198131" started-at="2021-03-19T21:34:41Z" finished-at="2021-03-19T21:37:59Z">
 =======
@@ -19,8 +24,12 @@
   <suite started-at="2021-03-26T05:04:00Z" name="Default suite" finished-at="2021-03-26T08:16:34Z" duration-ms="11553771">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-03-26T15:50:12Z" name="Default suite" finished-at="2021-03-26T15:52:28Z" duration-ms="136206">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="198131" started-at="2021-03-19T21:34:41Z" finished-at="2021-03-19T21:37:59Z">
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
@@ -36,9 +45,15 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario@3f191845]" started-at="2021-03-26T05:04:00Z" name="beforeClass" finished-at="2021-03-26T05:04:52Z" duration-ms="51682" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-03-26T15:50:12Z" name="Default test" finished-at="2021-03-26T15:52:28Z" duration-ms="136206">
+      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@20f5281c]" started-at="2021-03-26T15:50:12Z" name="beforeClass" finished-at="2021-03-26T15:50:31Z" duration-ms="18661" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar@501edcf1]" name="criar" duration-ms="178761" started-at="2021-03-19T21:35:01Z" finished-at="2021-03-19T21:37:59Z">
           <exception class="java.lang.AssertionError">
@@ -139,6 +154,19 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
 at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:272)
 at com.sap.timp.pageObjectModel.ADM.LoginTC.login(LoginTC.java:31)
 at com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario.CalendarEntrar(AbrirCalendario.java:46)
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@20f5281c]" started-at="2021-03-26T15:50:31Z" name="criar" finished-at="2021-03-26T15:52:28Z" duration-ms="117512" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.timp.test.MDR.SequenciaAcesso.SequenciaCriar.criar(SequenciaCriar.java:45)
+>>>>>>> refs/heads/Fernando
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,6 +194,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
 >>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
@@ -251,6 +280,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@20f5281c]" started-at="2021-03-26T15:52:28Z" name="afterClass" finished-at="2021-03-26T15:52:28Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

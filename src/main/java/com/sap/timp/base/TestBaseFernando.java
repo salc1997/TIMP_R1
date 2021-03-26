@@ -28,7 +28,7 @@ public class TestBaseFernando extends TestBaseSteven {
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
 		
-		//Evita que la ventanas de guardar contraseña aparezca
+		//Evita que la ventasnas de guardar contraseña aparezca
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
@@ -36,6 +36,7 @@ public class TestBaseFernando extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+
 		driver.get(tq1);
 
 		return driver;

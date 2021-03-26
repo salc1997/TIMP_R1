@@ -1,72 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-=======
-=======
->>>>>>> refs/remotes/origin/Yessy
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Yessy
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.ADM.AcessarADM">
-=======
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="visualizar"/>
-=======
-<<<<<<< HEAD
-=======
-          <include name="excluirLeiaute"/>
->>>>>>> refs/remotes/origin/Yessy
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="AcessarADM"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="criar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar -->
-=======
-      </class> <!-- com.timp.test.ADM.AcessarADM -->
-=======
-      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardTabelaExecutar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="TabelaExecutar"/>
-        </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardTabelaExecutar -->
->>>>>>> refs/heads/Fernando
-=======
-          <include name="criarConfiguracao"/>
-          <include name="comparar"/>
-          <include name="excluirConfiguracao"/>
-          <include name="beforeClass"/>
-          <include name="distinto"/>
-          <include name="verBloco5"/>
-          <include name="verBloco2"/>
-          <include name="verBloco3"/>
-          <include name="verBloco1"/>
-          <include name="verBloco4"/>
-          <include name="executar"/>
-        </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

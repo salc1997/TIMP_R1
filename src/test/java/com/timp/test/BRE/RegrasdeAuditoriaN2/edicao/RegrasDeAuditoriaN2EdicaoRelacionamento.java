@@ -35,5 +35,6 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando {
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasDeAuditoriaN2EdicaoRelacionamentoPO.editar();
 		assertTrue(sucesso, Editar);
+		sleep(1000);
 	}
 }

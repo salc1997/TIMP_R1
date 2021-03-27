@@ -185,9 +185,9 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseEliel {
 		sleep(1000);
 		editar.click();
 
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		int icms = driver.findElements(By.xpath("//div[@class=\"fieldMap taxes\"]/div/div/div[1]/div[1]/div[1]/div[1][text()=\"ICMS\"]")).size();
 
@@ -198,6 +198,8 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseEliel {
 			System.out.println("ICMS  consta na edição");
 			sucesso.add(false);
 		}
+		
+		sleep(2000);
 		
 		int cofins = driver.findElements(By.xpath("//div[@class=\"fieldMap taxSubset\"]/div/div/div/div/div/div[1]")).size();
 

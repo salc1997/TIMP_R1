@@ -128,11 +128,11 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	sleep(3000);
 	
 	inputSeleccionTabela.click();
-	sleep(3000);
+	sleep(4000);
 	seleccionTabela.click();
 	sleep(3000);
 	sleep(3000);
-	
+	sleep(3000);
 	
 	waitExpectElement(campo);
 	campo.sendKeys("Alíquota COFINS (ED)");
@@ -176,7 +176,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro1 = idObter3();
+	String idRegistro1 = idObter("An2");
 	WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 	WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -237,7 +237,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro4 = idObter3();
+	String idRegistro4 = idObter("An2");;
 	WebElement menu4 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro4+"\"]/div[1]/div"));
 	WebElement açao4 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro4+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro4); // Ultimo registro que es el que se crea con la automatizacion
@@ -288,7 +288,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro2 = idObter3();
+	String idRegistro2 = idObter("An2");
 	WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div"));
 	WebElement açao2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

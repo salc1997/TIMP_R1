@@ -108,6 +108,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluirEmMasa"></class>
 		</classes>

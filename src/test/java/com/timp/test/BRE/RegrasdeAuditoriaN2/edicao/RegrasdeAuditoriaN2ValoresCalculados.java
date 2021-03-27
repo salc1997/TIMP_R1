@@ -30,7 +30,7 @@ public class RegrasdeAuditoriaN2ValoresCalculados extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

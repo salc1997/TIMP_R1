@@ -3,26 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
-=======
-      <class name="com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario">
->>>>>>> refs/remotes/origin/Yessy
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente">
         <methods>
-          <include name="CalendarEntrar"/>
           <include name="beforeClass"/>
+          <include name="lexeira"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="CriarSaldo"/>
-=======
->>>>>>> refs/remotes/origin/Yessy
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
-=======
-      </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario -->
->>>>>>> refs/remotes/origin/Yessy
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

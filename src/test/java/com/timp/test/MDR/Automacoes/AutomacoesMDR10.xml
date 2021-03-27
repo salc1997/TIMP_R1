@@ -79,9 +79,14 @@
 
 			<class
 				name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoFiltros"></class>
+				
+			<class
+				name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa"></class>
 
 
 		</classes>
+		
+		
 
 
 	</test>

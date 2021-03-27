@@ -69,6 +69,8 @@
 				name="com.timp.test.MDR.Antecipacao.AntecipacaoVisualizar"></class>
 
 			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoEliminar"></class>
+			
+			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoExcluirMassa"></class>
 
 
 		</classes>

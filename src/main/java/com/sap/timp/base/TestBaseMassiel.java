@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Locale;
 
 import java.util.Map;
-
+import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
 
 import org.openqa.selenium.WebDriver;
@@ -267,6 +267,19 @@ public class TestBaseMassiel extends TestBaseSteven {
 		return idReturn;
 
 	}
+	
+	public String fechaPasadoManana() {
+
+		Date fecha = new Date();
+
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+2));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
+
 	
 
 

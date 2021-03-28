@@ -126,6 +126,11 @@
 			<class 
 			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir">
 			</class>
+			
+			<class 
+			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExcluirMassa">
+			</class>
+			
 		</classes>
 	</test> 
 		

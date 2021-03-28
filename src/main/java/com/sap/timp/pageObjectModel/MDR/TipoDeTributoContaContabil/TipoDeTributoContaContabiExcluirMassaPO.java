@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.CodigoFatosContabeis;
+package com.sap.timp.pageObjectModel.MDR.TipoDeTributoContaContabil;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,166 +7,155 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class CodigoFatosContabeisExcluirMassaPO extends TestBaseMassiel{
-	@FindBy(xpath = "//span[text()=\" Tabelas de Apoio ECD\"]")
-	public WebElement tabelaECDE;
+public class TipoDeTributoContaContabiExcluirMassaPO extends TestBaseMassiel{
+	@FindBy(xpath = "//span[text()=\"Tipo de Tributo x Conta Contábil\"]")
+	public WebElement tipodetributocontacontabil;
 	
-	@FindBy(xpath = "//span[text()=\" Código dos Fatos Contábeis\"]")
-	public WebElement opcionCodigoFatosContabeis;
 	
-	@FindBy(xpath = "//span[text()=\"Novo  Código do Fato Contábil\"]")
-	public WebElement btnNovoCodigoFatoContabeisElement;
+	@FindBy(xpath = "//span[text()=\"Novo Tipo de Tributo x Conta Contábil\"]")
+	public WebElement novotipodetributocontacontabil;
 	
-	@FindBy(xpath = "//div[@id=\"accountingFactCode-1\"]/div/div/input")
-	public WebElement inputCodigoFatoContabil;
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
+	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"accountingFact-1\"]/div/div/input")
-	public WebElement inputDescricaoFatoContabil;
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcaoempresa;
 	
-	@FindBy(xpath = "//div[@id=\"startDate-1\"]/div/div/input")
-	public WebElement inputDataInicio;
 	
-	@FindBy(xpath = "//div[@id=\"endDate-1\"]/div/div/input")
-	public WebElement inputDataFinal;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Tributo Grupo\"]")
+	public WebElement tributogrupo;
 	
-	@FindBy(xpath = "//span[text()=\"Gravar\"]")
-	public WebElement btnGravar;
+	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
+	public WebElement descricao;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Data de Inicio de Vigência\"]")
+	public WebElement datainicial;
+	
+	
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	public WebElement siguiente;
+	
+	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
+	public WebElement gravar;
+	
+	@FindBy(xpath = "//button/span[text()=\"Salvar e Novo\"]")
+	public WebElement salvar;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement btnSim;
+	public WebElement sim;
 	
-	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
-	public WebElement btnBiblioteca;
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
-	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
-	public WebElement btnUltimaPagina;
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
 	
 	//BOTON EXCLUIR EN MASA
 		@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
 		public WebElement excluirMassa;
 
-		@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+		@FindBy(xpath = "//button[text()=\"Sim\"]")
 		public WebElement aceitar;
-	
-	public CodigoFatosContabeisExcluirMassaPO() {
+		
+	public TipoDeTributoContaContabiExcluirMassaPO() {
+
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
 		sleep(2000);
-		tabelaECDE.click();
-		
+		tipodetributocontacontabil.click();
 		sleep(2000);
-		opcionCodigoFatosContabeis.click();
-		sleep(2000);
+
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		siguiente.click();
 		
-		btnUltimaPagina.click();
-		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
+		sleep(2000);
+	
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = "0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		}
 		
 		System.out.println(id);
 		
 		sleep(2000);
-		btnNovoCodigoFatoContabeisElement.click();
-		
-		sleep(2000);
-		waitExpectElement(inputCodigoFatoContabil);
-		inputCodigoFatoContabil.sendKeys("110");
-		
-		sleep(2000);
-		waitExpectElement(inputDescricaoFatoContabil);
-		inputDescricaoFatoContabil.sendKeys("Prueba de tester = verificar5M");
-		
-		sleep(2000);
-		waitExpectElement(inputDataInicio);
-		inputDataInicio.sendKeys(fechaAyer());
-		
-		sleep(2000);
-		waitExpectElement(inputDataFinal);
-		inputDataFinal.sendKeys(fechaActual());
-		
-		sleep(2000);
-		
-		btnGravar.click();
-		
-		waitExpectElement(btnSim);
-		btnSim.click();
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		sleep(2000);
-		btnBiblioteca.click();
-		
-		sleep(2000);
+		//criaçao
+		novotipodetributocontacontabil.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		btnUltimaPagina.click();
+		empresa.click();
+		
 		sleep(2000);
+		
+		opcaoempresa.click();
+		
+		sleep(2000);
+		tributogrupo.sendKeys("Tributo");
+		
+		sleep(2000);
+		
+		descricao.sendKeys("teste");
+		
+		
+		sleep(2000);
+		
+		String data=fechaAyer();
+		datainicial.sendKeys(data);
+		
+		sleep(2000);
+		salvar.click();
+		sleep(2000);
+		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		driver.navigate().refresh();
-		sleep(2000);
-		waitExpectElement(btnUltimaPagina);
-		sleep(2000);
-		
-		//conta o numero de linhas
-		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
-		
-		System.out.println(id1);
-		
-		
-		sleep(2000);
-		btnNovoCodigoFatoContabeisElement.click();
-		
-		sleep(2000);
-		waitExpectElement(inputCodigoFatoContabil);
-		inputCodigoFatoContabil.sendKeys("111");
-		
-		sleep(2000);
-		waitExpectElement(inputDescricaoFatoContabil);
-		inputDescricaoFatoContabil.sendKeys("Prueba de tester");
-		
-		sleep(2000);
-		waitExpectElement(inputDataInicio);
-		inputDataInicio.sendKeys(fechaManana());
-		
-		sleep(2000);
-		waitExpectElement(inputDataFinal);
-		inputDataFinal.sendKeys(fechaPasadoManana());
+		empresa.click();
 		
 		sleep(2000);
 		
-		btnGravar.click();
-		
-		waitExpectElement(btnSim);
-		btnSim.click();
+		opcaoempresa.click();
 		
 		sleep(2000);
+		tributogrupo.sendKeys("Tributo 2 ");
+		
+		sleep(2000);
+		
+		descricao.sendKeys("teste 2");
+		
+		
+		sleep(2000);
+		
+		String data1=fechaActual();
+		datainicial.sendKeys(data1);
+		
+		sleep(2000);
+		
+		gravar.click();
+		sleep(2000);
+		
+		sim.click();
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
-		btnBiblioteca.click();
+		biblioteca.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		btnUltimaPagina.click();
+		//Pega o ultimo id depois do preenchimento
+		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
@@ -222,10 +211,10 @@ public class CodigoFatosContabeisExcluirMassaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(	btnUltimaPagina);
+		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		btnUltimaPagina.click();
+		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

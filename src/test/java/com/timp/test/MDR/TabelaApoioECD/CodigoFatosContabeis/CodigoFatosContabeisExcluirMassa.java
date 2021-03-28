@@ -30,19 +30,25 @@ public class CodigoFatosContabeisExcluirMassa extends TestBaseMassiel {
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test()
-	public void mdrEntrar() {
+	public void criar() {
 		loginTC.login();
 	    acesarMDRPO.acessarMDR();
 	
-		
-		codigoFatosContabeisExcluirMassaPO.criar();
-
-		/*boolean sucesso2 = ecd.criar();
-		assertTrue(sucesso2, "There is an error...");*/
+		boolean sucesso2 = codigoFatosContabeisExcluirMassaPO.criar();
+		assertTrue(sucesso2, "There is an error...");
+		sleep(2000);
 	}
 
+  @Test(dependsOnMethods = "criar")
+ 	public void excluir() {
+
+ 		boolean sucesso2 = codigoFatosContabeisExcluirMassaPO.ExcluirMasas();
+ 		assertTrue(sucesso2, "There is an error...");
+ 		sleep(2000);
+ 	}
 
 }

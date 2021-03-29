@@ -168,6 +168,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivodeDesligamentoDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoExcluirMasa"></class>
 

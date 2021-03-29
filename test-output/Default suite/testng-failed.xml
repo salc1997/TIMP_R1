@@ -1,61 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-=======
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
-=======
-      <class name="com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
           <include name="afterClass"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
-        <methods>
->>>>>>> refs/heads/Fernando
+          <include name="Lixeria"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
->>>>>>> refs/heads/Fernando
-          <include name="criar"/>
-<<<<<<< HEAD
-=======
-          <include name="CriarSaldo"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
-=======
-          <include name="CalendarEntrar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario -->
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

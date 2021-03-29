@@ -30,7 +30,7 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseCristhia
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+//		driver.close();
 	}
 
 

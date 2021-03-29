@@ -76,7 +76,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tc2")) {
-			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"ID 47-Ajustes Fiscais\"]"));
+			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"ID 58-Ajustes Fiscais\"]"));
 		}
 		
 		if(URL.contains("tp1")) {

@@ -204,8 +204,8 @@ public class SPCBFederaisRetidosDetalhesPO extends TestBaseKenssy {
 		btnCerrarDetalhe.click();
 		sleep(1000);
 		
-		menu = driver.findElement(By.xpath("//div[@data-id][1]/div[1]/div"));
-		opcion = driver.findElement(By.xpath("//div[@data-id][1]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		 opcion = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		menu.click();
 		sleep(1000);

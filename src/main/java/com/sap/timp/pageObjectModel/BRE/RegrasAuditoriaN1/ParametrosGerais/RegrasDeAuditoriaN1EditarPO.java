@@ -298,7 +298,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBaseSteven{
 		waitExpectElement(aplicar);
 		sleep(2000);
 		aplicar.click();
-		sleep(1000);
+		sleep(5000);
 		gravar.click();
 
 		sleep(1000);

@@ -1,90 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Automações MDR 10(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURExcluir -->
-      <class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar -->
-    </classes>
-  </test> <!-- Automações MDR 10(failed) -->
-  <test thread-count="5" name="Cenarios de Correção(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="excluirMassa"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa -->
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir -->
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
-        <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar -->
-      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar -->
-    </classes>
-  </test> <!-- Cenarios de Correção(failed) -->
-  <test thread-count="5" name="Centralização &gt; Estorno de Crédito(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="Visualizar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoVisualizar -->
-    </classes>
-  </test> <!-- Centralização > Estorno de Crédito(failed) -->
-  <test thread-count="5" name="Centralização &gt; Fator de Crecimento do CIAP(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluir">
-        <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluir -->
-      <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoEditar">
-=======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Regras de Auditoria N2(failed)">
+=======
+  <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura">
         <methods>
           <include name="editar"/>
@@ -566,13 +489,17 @@
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoExcluirEmMasa -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoDetalhes">
+=======
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="afterClass"/>
           <include name="detalhes"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoDetalhes -->
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 27 - Códigos de Lotação(failed) -->
   <test thread-count="5" name="Taxas de Atualização &gt; Alíquotas de Taxa de Atualização(failed)">
     <classes>
@@ -875,4 +802,7 @@
 =======
   </test> <!-- Regras de Auditoria N2(failed) -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
+>>>>>>> refs/heads/Fernando
 </suite> <!-- Failed suite [Suite] -->

@@ -536,7 +536,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -547,7 +547,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 			actionsMoveToElementXpath("//li[@id=\"option-2\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -557,7 +557,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			
 			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -571,7 +571,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(2000);
 		
 
-		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@id=\"18\"]"));
+		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"Ajustes Fiscais\"]"));
 
 
 		estructuraOPC .click();
@@ -791,7 +791,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -800,7 +800,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 		}else if (tp1==true) {
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -810,7 +810,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			
 			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -823,7 +823,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@id=\"18\"]"));
+		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"Ajustes Fiscais\"]"));
 
 
 		estructuraOPC .click();
@@ -1121,19 +1121,19 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 			
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc3 .click();
 			sleep(2000);
 		
 		}else if (tp1==true) {
 
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			Opc3 .click();
 			sleep(2000);
 		}else {
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc3 .click();
 			sleep(2000);
@@ -1142,7 +1142,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		EstructuraDatosReferencia.click();
 		sleep(2000);
 
-		WebElement Opc4 = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+		WebElement Opc4 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes Fiscais\"]]"));
 
 		Opc4 .click();
 		sleep(2000);
@@ -1156,14 +1156,14 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
 			sleep(2000);
 			
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc5 .click();
 			sleep(2000);
 
 		}else if (tp1==true) {
 
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			Opc5 .click();
 			sleep(2000);
@@ -1171,7 +1171,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		}else {
 			
 			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-6\"]"));
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc5 .click();
 			sleep(2000);
@@ -1180,7 +1180,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		EstructuraDatosComparacao.click();
 		sleep(2000);
 		
-		WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+		WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes Fiscais\"]"));
 
 		Opc5.click();
 		sleep(2000);

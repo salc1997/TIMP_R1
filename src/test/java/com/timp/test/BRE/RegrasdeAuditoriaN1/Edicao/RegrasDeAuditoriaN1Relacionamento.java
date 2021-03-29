@@ -15,30 +15,27 @@ public class RegrasDeAuditoriaN1Relacionamento extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeAuditoriaN1RelacionamentoPO regrasDeAuditoriaN1RelacionamentoPO;
-	
-  @BeforeClass
-  public void beforeClass() {
+
+	@BeforeClass
+	public void beforeClass() {
 
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeAuditoriaN1RelacionamentoPO = new RegrasDeAuditoriaN1RelacionamentoPO();
-  }
+	}
 
-  
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+
+	@AfterClass
+	public void afterClass() {
+			  driver.close();
+	}
+	
 	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasDeAuditoriaN1RelacionamentoPO.editar();
 		assertTrue(sucesso, "Não foi adicionado o relacionamento");
-
 	}
-
-	
-	
 }

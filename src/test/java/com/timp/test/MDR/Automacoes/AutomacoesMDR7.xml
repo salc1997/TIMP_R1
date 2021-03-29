@@ -25,7 +25,7 @@
 			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar"></class>
 			<class 
 			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir"></class>
-			
+			<class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExcluirEmMassa"></class>
 		</classes>
 	</test> 
 	

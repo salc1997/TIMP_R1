@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
 =======
 <<<<<<< HEAD
@@ -18,8 +19,12 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,8 +42,12 @@
 =======
   <suite started-at="2021-03-29T14:18:57Z" name="Default suite" finished-at="2021-03-29T14:19:57Z" duration-ms="60510">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-03-27T03:46:59Z" name="Default suite" finished-at="2021-03-27T03:50:01Z" duration-ms="181722">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,9 +75,15 @@
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@909217e]" started-at="2021-03-29T14:18:57Z" name="beforeClass" finished-at="2021-03-29T14:19:09Z" duration-ms="11878" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+    <test started-at="2021-03-27T03:46:59Z" name="Default test" finished-at="2021-03-27T03:50:01Z" duration-ms="181722">
+      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir@41ab013]" started-at="2021-03-27T03:46:59Z" name="beforeClass" finished-at="2021-03-27T03:47:17Z" duration-ms="17194" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,8 +163,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir@41ab013]" started-at="2021-03-27T03:47:17Z" name="ingresar" finished-at="2021-03-27T03:47:27Z" duration-ms="10060" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar@501edcf1]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-03-19T21:37:59Z" finished-at="2021-03-19T21:37:59Z">
 =======
@@ -174,6 +193,37 @@ Session ID: 6a15714abe7c60b29636a7f68fa2f1e7
 *** Element info: {Using=xpath, value=//div[@class="list-item-text" and text()="ID 47-Ajustes Fiscais"]}
 >>>>>>> refs/remotes/origin/Yessy
 at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+=======
+        </test-method> <!-- ingresar -->
+        <test-method signature="dfgEntrar()[pri:1, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir@41ab013]" started-at="2021-03-27T03:47:27Z" name="dfgEntrar" finished-at="2021-03-27T03:47:49Z" duration-ms="22216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dfgEntrar -->
+        <test-method signature="Lixeria()[pri:2, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir@41ab013]" started-at="2021-03-27T03:47:49Z" name="Lixeria" finished-at="2021-03-27T03:50:01Z" duration-ms="132200" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="1191"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 70d1a71a464552614871a7ab4880a788
+*** Element info: {Using=xpath, value=//div[@data-id="1191"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="1191"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 70d1a71a464552614871a7ab4880a788
+*** Element info: {Using=xpath, value=//div[@data-id="1191"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+>>>>>>> refs/heads/Fernando
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -187,6 +237,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<<<<<<< HEAD
 <<<<<<< HEAD
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
@@ -217,6 +268,10 @@ at com.timp.test.MDR.SequenciaAcesso.SequenciaCriar.criar(SequenciaCriar.java:45
 at com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasDeAuditoriaN2EdicaoRelacionamentoPO.editar(RegrasDeAuditoriaN2EdicaoRelacionamentoPO.java:79)
 at com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento.editar(RegrasDeAuditoriaN2EdicaoRelacionamento.java:36)
 >>>>>>> refs/remotes/origin/Yessy
+=======
+at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesLixeiraExcluirPO.LixeriaExcluir(ConfiguracoesLixeiraExcluirPO.java:240)
+at com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir.Lixeria(ConfiguracoesLixeiraExcluir.java:51)
+>>>>>>> refs/heads/Fernando
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -246,13 +301,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
 >>>>>>> refs/remotes/origin/Yessy
 =======
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- CriarSaldo -->
@@ -327,9 +387,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@909217e]" started-at="2021-03-29T14:19:57Z" name="afterClass" finished-at="2021-03-29T14:19:57Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        </test-method> <!-- Lixeria -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir@41ab013]" started-at="2021-03-27T03:50:01Z" name="afterClass" finished-at="2021-03-27T03:50:01Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
@@ -354,6 +419,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

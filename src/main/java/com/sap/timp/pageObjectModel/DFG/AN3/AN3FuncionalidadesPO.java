@@ -854,6 +854,8 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		waitExpectElement(leiauteR);
 		leiauteR.click();
 		sleep(1000);
+		actionsMoveToElementXpath("//li[contains(text(),\""+idObter2()+"\")]");
+		sleep(1000);
 		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
 		leiauteO.click();
 		sleep(1000);
@@ -1346,7 +1348,15 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		System.out.println(periodo);
 		
 		sucesso.add(nome.contains("Teste Automatizado Conf AN3"));
-		sucesso.add(tipo.equals("ALTER E-SOCIAL S1200"));
+		
+		String url = driver.getCurrentUrl();
+		
+		if(url.contains("tc2")){
+			sucesso.add(tipo.equals("DCTF"));
+		}else {
+			sucesso.add(tipo.equals("ALTER E-SOCIAL S1200"));
+		}
+		
 		sucesso.add(empresa.equals("1000"));
 		sucesso.add(uf.equals("SP"));
 		sucesso.add(filial.equals("0001"));

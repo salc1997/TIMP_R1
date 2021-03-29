@@ -95,11 +95,11 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 	  
 	   
 		String ajustefiscaisdetalhes = ajustefiscais.getText();
-		String cfopdetalhes = cfop.getText();
+		//String cfopdetalhes = cfop.getText();
 		
 		
 		System.out.println(ajustefiscaisdetalhes);
-		System.out.println(cfopdetalhes);
+		//System.out.println(cfopdetalhes);
 		
 		fechar.click();
 		sleep(2000);
@@ -127,11 +127,11 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		sleep(2000);
 		
 		String ajustefiscaisvisualizar = ajustefiscaisvi.getText();
-		String cfopvisualizar = cfopvi.getText();
+		//String cfopvisualizar = cfopvi.getText();
 		
 		
 		System.out.println(ajustefiscaisvisualizar);
-		System.out.println(cfopvisualizar);
+		//System.out.println(cfopvisualizar);
 		
 		
 		
@@ -139,7 +139,7 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		
 		
 		sucesso.add(ajustefiscaisdetalhes.contains(ajustefiscaisvisualizar));
-		sucesso.add(cfopdetalhes.contains(cfopvisualizar));
+		//sucesso.add(cfopdetalhes.contains(cfopvisualizar));
 		
 		
 

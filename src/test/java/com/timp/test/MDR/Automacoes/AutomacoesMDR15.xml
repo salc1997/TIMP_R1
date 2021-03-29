@@ -105,6 +105,8 @@
 			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFDetalhes"></class>
 			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFVisualizar"></class>
 			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluir"></class>
+			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFFiltroPorID"></class>
+			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa"></class>
 		</classes>
 	</test>
 		

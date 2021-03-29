@@ -52,6 +52,7 @@
 			<class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa"></class>
 		</classes>
 	</test>
 	<test name="TipoDeTributoContaContabil">

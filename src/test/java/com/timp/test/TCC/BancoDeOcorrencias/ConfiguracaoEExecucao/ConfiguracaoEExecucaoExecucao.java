@@ -29,7 +29,7 @@ public class ConfiguracaoEExecucaoExecucao extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

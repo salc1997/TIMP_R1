@@ -91,7 +91,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Taxa de Atualização\"]")
 	public WebElement cboTaxaAtualização;
 	
-	@FindBy(xpath = "//li[text()=\"00001 - Tester\"]")
+	//@FindBy(xpath = "//li[text()=\"00001 - Tester\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcionTaxaAtualizaçãoTC2;
 	
 	@FindBy(xpath = "//li[text()=\"00001 - Tester\"]")
@@ -125,6 +126,11 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	@FindBy(xpath = "//li[text()=\"COFINS\"]")
 	public WebElement opcionTributoDestinoTQ1;
 	
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tipo de Crédito\"]")
+	public WebElement cboTipoCredito;
+	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
+	public WebElement opcionTipoCreditoTC2;
 	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Ajuste de Débito\"]")
@@ -281,6 +287,14 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			opcionSaidaTC2.click();
 			sleep(7000);
 			
+			//aquiiiiiiiiiiiiiiiii
+			
+			cboTipoCredito.click();
+			sleep(2000);
+			opcionTipoCreditoTC2.click();
+			sleep(3000);
+			
+			
 			cboACredito.click();
 			sleep(1000);
 			opcionACreditoTC2.click();
@@ -303,6 +317,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			sleep(1000);
 			opcionTributoDestinoTC2.click();
 			
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
@@ -311,6 +326,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			opcionAjusteTC2.click();
 			sleep(7000);
 	
+			
+		
 			
 		}else {
 

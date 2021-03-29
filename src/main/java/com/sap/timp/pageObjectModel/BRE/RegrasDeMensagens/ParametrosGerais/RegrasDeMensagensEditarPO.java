@@ -215,28 +215,28 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		editar.click();
 		sleep(2000);
 		waitExpectElement(adicionarcaminho);
 		invisibilityOfElementOverlay();
 	
 		primeiracaixar1.click();
-		sleep(1000);
+		sleep(2000);
 		NomeDoValor.click();
-		sleep(1000);
+		sleep(2000);
 		String texto;
 		texto = opcaoG.getText();
 		opcaoG.click();
 		
 		texto = texto.replace(" (ED)", "");
 		System.out.println("O texto da opção é: " +texto);
-		sleep(1000);
+		sleep(2000);
 		
 		modificar.click();
-		sleep(1000);
+		sleep(2000);
 		gravar.click();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
@@ -259,19 +259,19 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		
 		waitExpectElement(primeiracaixar1editado);
 		invisibilityOfElementOverlay();
-		sleep(1000);
+		sleep(2000);
 		
 		
 		primeiracaixar1editado.click();
-		sleep(1000);
+		sleep(2000);
 		codigo.clear();
-		sleep(1000);
+		sleep(2000);
 		codigo.sendKeys("r2");
-		sleep(1000);
+		sleep(2000);
 		NomeDoValor.click();
-		sleep(1000);
+		sleep(2000);
 		opcaoG2.click();
-		sleep(1000);
+		sleep(2000);
 		salvarcomocopia.click();
 
 		waitExpectElement(r2);
@@ -285,7 +285,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		
 		gravar.click();
 
-		sleep(1000);
+		sleep(2000);
 		waitExpectElement(nao);
 		sleep(2000);
 		nao.click();
@@ -302,18 +302,19 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		}
 	
 		primeiracaixar2.click();
-		sleep(1000);
+		sleep(2000);
 		remover.click();
-		sleep(1000);
+		sleep(2000);
 		gravar.click();
 
-		sleep(1000);
+		sleep(2000);
 		waitExpectElement(nao);
 		sleep(2000);
 
 
 		nao.click();
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		int removerr2 = driver.findElements(By.xpath("//*[name()=\"g\"][@height=\"24\"][6]")).size();
 		if(removerr2 == 0)
@@ -326,19 +327,20 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		}
 		
 		configuracoes.click();
-		sleep(1000);
+		sleep(2000);;
 		
 		String nome1 = "TESTE AUTOMATIZADO - NAO MEXER";
 		
 		nome.clear();
-		sleep(1000);
+		sleep(2000);
 		nome.sendKeys(nome1);
+		sleep(2000);
 		
 		aplicar.click();
-		sleep(1000);
+		sleep(2000);
 		gravar.click();
 
-		sleep(1000);
+		sleep(2000);
 		waitExpectElement(nao);
 		sleep(2000);
 
@@ -353,7 +355,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseEliel {
 		
 		
 		configuracoes.click();
-		sleep(1000);
+		sleep(2000);
 		String verficarnome = nome.getAttribute("value");
 		sucesso.add(verficarnome.contains(nome1));
 		System.out.println(sucesso);

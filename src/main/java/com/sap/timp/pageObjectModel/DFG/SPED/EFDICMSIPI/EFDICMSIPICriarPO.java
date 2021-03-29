@@ -457,10 +457,11 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
-		
-		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
-		System.out.println("Último Id antes da criação do registro (Raiz): " + ultimoIdAC);
-
+		String ultimoIdAC = "0";
+		if(rows > 0) {
+			ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+			System.out.println("Último Id antes da criação do registro (Raiz): " + ultimoIdAC);
+		}
 		
 		novo.click();
 		sleep(3000);
@@ -926,9 +927,11 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdAC);
+		String ultimoIdAC = "0";
+		if(rows > 0) {
+			ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdAC);
+		} 
 		
 		blocosApuracao.click();
 		sleep(3000);
@@ -946,9 +949,11 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		String ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
+		String ultimoIdACB = "0";
+		if(rows > 0) {
+			ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
+		}  
 		
 		sleep(2000);
 		efdO.click();

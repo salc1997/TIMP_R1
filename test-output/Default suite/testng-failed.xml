@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
         <methods>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="CriarSaldo"/>
+          <include name="afterClass"/>
+          <include name="executarr"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

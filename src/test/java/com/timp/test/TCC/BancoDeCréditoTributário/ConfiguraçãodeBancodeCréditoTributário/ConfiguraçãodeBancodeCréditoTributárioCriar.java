@@ -29,7 +29,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriar extends TestBaseCristhi
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		 //driver.close();
 	}
 
 

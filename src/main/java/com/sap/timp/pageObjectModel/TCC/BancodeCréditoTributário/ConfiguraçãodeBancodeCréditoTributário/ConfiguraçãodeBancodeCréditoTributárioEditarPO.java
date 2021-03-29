@@ -25,6 +25,11 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement btnGravar;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Tributo Destino\"]")
+	public WebElement cboTributoDestino;
+	
+	@FindBy(xpath = "//li[text()=\"COFINS\"]")
+	public WebElement opcionTributoDestinoTC2;
 	
 	public ConfiguraçãodeBancodeCréditoTributárioEditarPO() {
 		PageFactory.initElements(driver, this);
@@ -63,9 +68,13 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(validaDe, "value");
+		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
+		sleep(2000);
 	  	sleep(8000);
-		
+	  	
+	  	
+//		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
+//		sleep(2000);
 	
 		String valor = validaDe.getAttribute("value");
 		System.out.println(valor);
@@ -77,6 +86,18 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		sleep(1000);
 		validaDe.sendKeys(enviar);
 		sleep(6000);
+		
+		cboTributoDestino.click();
+		sleep(1000);
+		opcionTributoDestinoTC2.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
+		sleep(2000);
 		
 		btnGravar.click();
 		sleep(6000);

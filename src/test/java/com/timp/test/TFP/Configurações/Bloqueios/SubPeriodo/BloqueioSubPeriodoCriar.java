@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class BloqueioSubPeriodo extends TestBaseCristhian {
+public class BloqueioSubPeriodoCriar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	BloqueioSubPeríodoCriarPO bloqueioSubPeríodoCriarPO;

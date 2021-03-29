@@ -154,6 +154,8 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluirMassa"></class>
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeFiltrosAvancados"></class>
 
 		</classes>
 
@@ -183,6 +185,8 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AssociaçãoExcluirEmMassa"></class>
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AssociaçãoFiltrosAvancados"></class>
 
 		</classes>
 

@@ -4,8 +4,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
 =======
+=======
+>>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Fernando
 =======
@@ -17,6 +20,7 @@
   <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
 >>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,7 +43,11 @@
 =======
       <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,9 +60,11 @@
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
-          <include name="Lixeria"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
@@ -72,7 +82,11 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+          <include name="detalhe"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -132,6 +146,9 @@
         </methods>
       </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
 </suite> <!-- Failed suite [Suite] -->

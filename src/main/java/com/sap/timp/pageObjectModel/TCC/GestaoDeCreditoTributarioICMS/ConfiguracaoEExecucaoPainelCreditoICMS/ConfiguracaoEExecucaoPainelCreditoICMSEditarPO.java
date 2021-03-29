@@ -90,6 +90,10 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSEditarPO extends TestBaseMass
 		editarB.click();
 		sleep(8000);
 		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		waitExpectElement(siguiente);
 		sleep(4000);
 		

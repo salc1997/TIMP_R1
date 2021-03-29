@@ -4,10 +4,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Fernando
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> refs/remotes/origin/Yessy
@@ -26,8 +30,11 @@
 =======
 <testng-results ignored="0" total="7" passed="1" failed="5" skipped="1">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,8 +60,12 @@
 =======
   <suite started-at="2021-03-29T17:27:07Z" name="Suite" finished-at="2021-03-29T17:47:39Z" duration-ms="1231814">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-03-29T23:00:34Z" name="Default suite" finished-at="2021-03-29T23:01:59Z" duration-ms="85409">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,9 +105,15 @@
       <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir@31add175]" started-at="2021-03-29T17:30:22Z" name="beforeClass" finished-at="2021-03-29T17:30:34Z" duration-ms="12597" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2021-03-29T23:00:34Z" name="Default test" finished-at="2021-03-29T23:01:59Z" duration-ms="85409">
+      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes@1bd39d3c]" started-at="2021-03-29T23:00:34Z" name="beforeClass" finished-at="2021-03-29T23:00:49Z" duration-ms="14716" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -250,8 +267,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="detalhe()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes@1bd39d3c]" started-at="2021-03-29T23:00:49Z" name="detalhe" finished-at="2021-03-29T23:01:55Z" duration-ms="66319" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- criar -->
@@ -511,9 +532,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir@31add175]" started-at="2021-03-29T17:32:43Z" name="afterClass" finished-at="2021-03-29T17:32:43Z" duration-ms="246" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        </test-method> <!-- detalhe -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes@1bd39d3c]" started-at="2021-03-29T23:01:55Z" name="afterClass" finished-at="2021-03-29T23:01:59Z" duration-ms="4344" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -542,6 +568,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> refs/remotes/origin/Yessy
 =======
       </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir -->
+>>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
 >>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

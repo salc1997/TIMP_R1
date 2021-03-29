@@ -3,6 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <test thread-count="5" name="Regras de Auditoria N2(failed)">
 =======
   <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
@@ -10,15 +11,23 @@
 =======
   <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <test thread-count="5" name="Contrato IOF(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura">
+=======
+      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar">
+>>>>>>> refs/heads/Fernando
         <methods>
-          <include name="editar"/>
+          <include name="visualizar"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura -->
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
         <methods>
@@ -41,10 +50,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialEditar -->
+=======
+      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar -->
+>>>>>>> refs/heads/Fernando
     </classes>
-  </test> <!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Processo Judicial (failed) -->
-  <test thread-count="5" name="Eventos e-social &gt; S1250 Aquisicao De Producao Rural &gt; S1250 Inf Proc Judicial (failed)">
+  </test> <!-- Contrato IOF(failed) -->
+  <test thread-count="5" name="ControleDeCreditoTributario &gt; Limite De Credito A Utilizar(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250InfProcJudicialEditar">
         <methods>
           <include name="editar"/>
@@ -214,125 +227,35 @@
   <test thread-count="5" name="Incentivos Fiscais &gt; Incentivos Fiscais(failed)">
     <classes>
       <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar">
+=======
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizar">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="visualizar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar -->
->>>>>>> refs/remotes/origin/Kenssy
-    </classes>
-  </test> <!-- Incentivos Fiscais > Incentivos Fiscais(failed) -->
-  <test thread-count="5" name="Saldo Inicial(failed)">
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir">
-=======
-      <class name="com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan">
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarVisualizar -->
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditar">
         <methods>
-          <include name="FiltrarAvanSaldoIncial"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan -->
-    </classes>
-  </test> <!-- Saldo Inicial(failed) -->
-  <test thread-count="5" name="Thin Capitalization &gt; Empréstimos(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar">
->>>>>>> refs/remotes/origin/Kenssy
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editarEmprestimos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar">
-        <methods>
-          <include name="criarEmprestimos"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir -->
-      <class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar">
-=======
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir">
->>>>>>> refs/remotes/origin/Kenssy
-        <methods>
-<<<<<<< HEAD
-          <include name="criar"/>
-=======
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisCriar -->
-      <class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar">
-        <methods>
-          <include name="beforeClass"/>
           <include name="editar"/>
-=======
-          <include name="excluirEmprestimos"/>
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir -->
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.LimiteDeCreditoAUtilizar.LimiteDeCreditoAUtilizarEditar -->
     </classes>
-  </test> <!-- Thin Capitalization > Empréstimos(failed) -->
-  <test thread-count="5" name="SCANC &gt; Ajuste de Transferencia(failed)">
+  </test> <!-- ControleDeCreditoTributario > Limite De Credito A Utilizar(failed) -->
+  <test thread-count="5" name="SPCB - Federais Retidos(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoExcluir">
+      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes">
         <methods>
           <include name="afterClass"/>
-=======
-      <class name="com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="excluir"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoExcluir -->
-      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoCriar -->
-      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoDetalhe">
-        <methods>
           <include name="beforeClass"/>
           <include name="detalhe"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoDetalhe -->
-      <class name="com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1210PagamentosDeRendimentosDoTrabalho.S1210PagamentosDeRendimientosDoTrabalhoEditar -->
-=======
-      </class> <!-- com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa -->
->>>>>>> refs/remotes/origin/Kenssy
+      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- SCANC > Ajuste de Transferencia(failed) -->
   <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 27 - Códigos de Lotação(failed)">
     <classes>
@@ -836,4 +759,7 @@
 =======
   </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  </test> <!-- SPCB - Federais Retidos(failed) -->
+>>>>>>> refs/heads/Fernando
 </suite> <!-- Failed suite [Suite] -->

@@ -30,7 +30,8 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 	public WebElement tabela;
 	
 	//@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER\"]")
-	@FindBy(xpath = "//li[text()=\"TA_TESTE_VS2\"]")
+	//@FindBy(xpath = "//li[text()=\"TA_TESTE_VS2\"]")
+	@FindBy(xpath = "//li[text()=\"xxxAlíquota Interna\"]")
 	public WebElement tabelaO;
 	
 	@FindBy(xpath = "//div[@id=\"main-icon\"]")
@@ -54,7 +55,8 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"conditions-section\"]/div/div/div/div/div[4]/div/div/input")
 	public WebElement nomeValor2;
 	
-	@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER - ALIQUOTA_ICMS (VE)\"]")
+	//@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER - ALIQUOTA_ICMS (VE)\"]")
+	@FindBy(xpath = "//li[text()=\"Alíquota ICMS (ED)\"]")
 	public WebElement nomeValorO2;
 	
 	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/input")
@@ -179,12 +181,12 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 		nomeValorO.click();
 		sleep(1000);
 		
-		nomeValor2.sendKeys("TA-TESTE NÃO MEXER - ALIQUOTA_ICMS (VE)");
+		nomeValor2.sendKeys("Alíquota ICMS (ED)");
 		sleep(1000);
 		nomeValorO2.click();
 		sleep(1000);
 		
-		acao.sendKeys("Alíquota RJ");
+		acao.sendKeys("Alíquota correta");
 		acao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
@@ -192,7 +194,7 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 		
 		sleep(2000);
 		
-		int adicionada1 = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = TA-TESTE NÃO MEXER -\")]")).size();
+		int adicionada1 = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = Alíquota ICMS\")]")).size();
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		System.out.println(adicionada1 + " Verifcação de Caminho Adicionado 1");
 		if (adicionada1>0) {
@@ -244,7 +246,7 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int adicionada2 = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = TA-TESTE NÃO MEXER -\")]")).size();
+		int adicionada2 = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = Alíquota ICMS -\")]")).size();
 		
 		System.out.println(adicionada2 + " Verifcação de Caminho Adicionado 2");
 		if (adicionada2>0) {

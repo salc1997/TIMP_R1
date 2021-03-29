@@ -2,11 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <test thread-count="5" name="Regras de Auditoria N2(failed)">
 =======
   <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
 >>>>>>> refs/heads/Fernando
+=======
+  <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura">
         <methods>
@@ -17,10 +22,23 @@
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura -->
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
         <methods>
+=======
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar">
+        <methods>
           <include name="afterClass"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
-          <include name="editar"/>
         </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar -->
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+>>>>>>> refs/remotes/origin/Kenssy
+          <include name="afterClass"/>
+          <include name="criarComCopiaExcluir"/>
+        </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialEditar -->
     </classes>
@@ -61,23 +79,28 @@
         </methods>
       </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluirEmMasa -->
       <class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluir">
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir -->
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
           <include name="excluir"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFExcluir -->
-      <class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar">
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir -->
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar">
         <methods>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="ver"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar -->
-      <class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFDetalhes">
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar -->
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar">
         <methods>
-          <include name="beforeClass"/>
+          <include name="executarGravar"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="detalhes"/>
         </methods>
       </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFDetalhes -->
@@ -88,10 +111,11 @@
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados">
 >>>>>>> refs/remotes/origin/Yessy
         <methods>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoEditar -->
@@ -100,7 +124,11 @@
           <include name="afterClass"/>
 =======
       </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar -->
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
+<<<<<<< HEAD
   </test> <!-- Parametros Para Categoria De IRF (failed) -->
 >>>>>>> refs/remotes/origin/Yessy
 =======
@@ -805,4 +833,7 @@
 =======
   </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
 >>>>>>> refs/heads/Fernando
+=======
+  </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 </suite> <!-- Failed suite [Suite] -->

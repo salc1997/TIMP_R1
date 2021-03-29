@@ -21,27 +21,9 @@
 		</classes>
 	
 	</test> 
-	<test name="Prueba3" >
-		<classes>
-			<!--Tabela De Apoio E Social > Tabela 12 - Compatibilidade Entre Lotação -->
-			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa"></class>
-			</classes>
-	
-	</test> 
-	<test name="Prueba4" >
-		<classes>
-			<!--Tabela De Apoio E Social > Tabela 13  -  Parte Do Corpo Atingida -->
-			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa"></class>
-		</classes>
-	
-	</test> 
-	<test name="Prueba5" >
-		<classes>
-			<!--Tabela De Apoio E Social > Tabela 14  - Agente Causador De Acidente  -->
-			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa"></class>
-		</classes>
-	
-	</test> 
+
+
+	 
 	<test name="Prueba6" >
 		<classes>
 			<!--Rateio De Consorcio -->
@@ -78,21 +60,8 @@
 	
 	</test> 
 	
-	<test name="Prueba11" >
-		<classes>
-			
-			<!--Siscoserv > Registro RF -->
-			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFFiltroPorID"></class>
-		</classes>
-	
-	</test> 
-	<test name="Prueba12" >
-		<classes>
-			<!--Tabelas Complementares Para Obrigações Acessórias > Tabela Servicos-->
-			<class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa"></class>
-		</classes>
-	
-	</test> 
+
+ 
 	<test name="Prueba13" >
 		<classes>
 			<!--Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros-->
@@ -107,13 +76,8 @@
 		</classes>
 	
 	</test> 
-	<test name="Prueba15" >
-		<classes>	
-			<!--Siscoserv  > Registro RVS-->
-			<class name="com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa"></class>
-		</classes>
 	
-	</test> 
+	 
 	<test name="Prueba16" >
 		<classes>	
 			<!--Tabela De Apoio E Social > Diagnostico De Processos-->
@@ -126,13 +90,8 @@
 		</classes>
 	
 	</test> 
-	<test name="Prueba17" >
-		<classes>	
-			<!--Siscoserv > Registro RF-->
-			<class name="com.timp.test.MDR.Siscoserv.RegistroRF.RegistroRFExcluirEmMassa"></class>
-			</classes>
-	
-	</test> 
+
+
 	<test name="Prueba18" >
 		<classes>
 			<!--Tabela De Apoio E Social Tabela29 - Codigo De Treinamento E Simulacoes De Exercicios	-->
@@ -201,6 +160,7 @@
 		</classes>
 	
 	</test>
+<<<<<<< HEAD
 	<test name="Prueba26" >
 		<classes> 
 			<!--Tabela De Apoio E Social > Tabela 16  - SGDP-->
@@ -212,8 +172,9 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
 			
 			</classes>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
 	
-	</test>
 	
 	<test name="Prueba27" >
 		<classes> 

@@ -170,6 +170,10 @@
 			<class 
 			name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluir">
 			</class>
+			<class 
+			name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosExcluirEmMassa">
+			</class>
+			
 		</classes>
 	</test>
 	

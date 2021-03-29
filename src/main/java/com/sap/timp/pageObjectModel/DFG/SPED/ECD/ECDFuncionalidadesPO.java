@@ -391,9 +391,11 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		String idECDAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id Antes da Criação (ECD): " +idECDAC);
+		String idECDAC = "0";
+		if (rows > 0) {
+			idECDAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id Antes da Criação (ECD): " +idECDAC);
+		} 
 		
 		blocoApuracao.click();
 		sleep(3000);
@@ -411,10 +413,12 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		sleep(2000);
 		
 		rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		String idBAAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idBAAC);
-		System.out.println("Id Antes da Criação (Bloco Apuração): " +idBAAC);
+		String idBAAC = "0";
+		if (rows > 0) {
+			idBAAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			idInserir1(idBAAC);
+			System.out.println("Id Antes da Criação (Bloco Apuração): " +idBAAC);
+		} 
 		
 		
 		eCDO.click();

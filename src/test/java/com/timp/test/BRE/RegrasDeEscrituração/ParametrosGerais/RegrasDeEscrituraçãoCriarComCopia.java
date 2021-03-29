@@ -32,7 +32,7 @@ public class RegrasDeEscrituraçãoCriarComCopia extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
@@ -40,31 +40,20 @@ public class RegrasDeEscrituraçãoCriarComCopia extends TestBaseSteven{
 	public void criarcomCopia() {
 		
 		loginTC.login();
-		
 		acessarBREPO.acessarBRE();
 		
-		
 		boolean sucesso = regrasDeEscrituraçãoCriarComCopiaPO.criar();
-		
 		assertTrue(sucesso, Criar);
-		
-
-		
-		
 	}
 	
-	@Test(dependsOnMethods = "criar")
+	@Test(dependsOnMethods = "criarcomCopia")
 	public void excluir() {
-		
-	
 		
 		ArrayList<Boolean> sucesso2 = regrasDeEscrituraçãoCriarComCopiaPO.excluir();
 		
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), Eliminado);
 		}
-		
-		
 	}
 	
 	

@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
 =======
 <<<<<<< HEAD
@@ -21,7 +22,11 @@
 =======
       <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,7 +50,10 @@
 =======
           <include name="Lixeria"/>
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -62,7 +70,12 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="afterClass"/>
+          <include name="executarr"/>
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88,6 +101,9 @@
 =======
       </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

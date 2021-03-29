@@ -48,6 +48,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa"></class>
 		</classes>
 	</test>
 	
@@ -72,6 +73,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteDetalles"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa"></class>
 		</classes>
 	</test>
 	
@@ -126,6 +128,18 @@
 		</classes>
 	</test>
 		
+	<test name="Tabela De Apoio E Social > Tabela 16  - SGDP" >
+		<classes> 
+			<!--Tabela De Apoio E Social > Tabela 16  - SGDP-->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPDetalle"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
+		</classes>
+	</test>
+	
 	<test name="Tabelas de Apoio E-SOCIAL > Unidade de Medida" >
 		<classes>		
 			<!-- Tabelas de Apoio E-SOCIAL > Unidade de Medida -->

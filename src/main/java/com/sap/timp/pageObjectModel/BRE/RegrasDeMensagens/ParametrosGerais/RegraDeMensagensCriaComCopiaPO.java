@@ -155,10 +155,11 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseSteven {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(lixeira);
 		sleep(2000);
 		
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+		
+		sleep(10000);
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

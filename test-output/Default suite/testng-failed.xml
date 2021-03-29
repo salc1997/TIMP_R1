@@ -9,6 +9,7 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
 =======
 <<<<<<< HEAD
@@ -17,17 +18,28 @@
       <class name="com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
       <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
         <methods>
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="editar"/>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="afterClass"/>
@@ -38,7 +50,10 @@
 =======
           <include name="CriarSaldo"/>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
 =======
@@ -56,6 +71,9 @@
         </methods>
       </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

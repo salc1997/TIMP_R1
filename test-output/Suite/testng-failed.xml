@@ -83,70 +83,22 @@
       <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoEditar">
 =======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <test thread-count="5" name="S1060AmbientesDeTrablho(failed)">
-=======
-  <test thread-count="5" name="Determinação de Relevância de Tarefa por Motivo de Reabertura &gt; Regra de Reabertura(failed)">
->>>>>>> refs/remotes/origin/Yessy
-=======
-  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed)">
->>>>>>> refs/remotes/origin/Yessy
+  <test thread-count="5" name="Regras de Auditoria N2(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura">
         <methods>
+          <include name="editar"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="excluir"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir -->
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="excluirMasa"/>
-          <include name="Criar"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa -->
-    </classes>
-  </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed) -->
-  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA (failed)">
-    <classes>
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa">
-        <methods>
-          <include name="excluir"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa -->
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det nota fiscal (failed) -->
-  <test thread-count="5" name="Eventos e-social &gt; S1250 Aquisicao De Producao Rural &gt; S1250 Det Processo Judicial (failed)">
-    <classes>
-      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialCriar -->
-      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialExcluir">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialExcluir -->
-      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialEditar">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="editar"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialEditar -->
     </classes>
   </test> <!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Processo Judicial (failed) -->
@@ -208,11 +160,16 @@
       </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFDetalhes -->
       <class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
           <include name="beforeClass"/>
           <include name="editar"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoEditar -->
       <class name="com.timp.test.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluirEmMassa">
@@ -430,80 +387,30 @@
     <classes>
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoEditar">
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
           <include name="editar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoEditar -->
-      <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoCriar">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente">
         <methods>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="lexeira"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoCriar -->
-      <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir">
-=======
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoExcluir">
->>>>>>> refs/remotes/origin/Kenssy
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir -->
-      <class name="com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="filtro"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID -->
-=======
-      </class> <!-- com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID -->
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Eventos e-Social > S2210 – Comunicação de Acidente de Trabalho(failed) -->
-  <test thread-count="5" name=" Eventos e-Social &gt; S1270 - Contratação de Trabalhadores Avulsos Não Portuários(failed)">
-=======
-<<<<<<< HEAD
-  </test> <!-- Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria(failed) -->
-  <test thread-count="5" name="Tabelas Complementares para Obrigações Acessórias &gt; Código de Motivos de Ajustes(failed)">
-=======
-  </test> <!-- Prueba6(failed) -->
-  <test thread-count="5" name="Prueba16(failed)">
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.CodigoDeMotivosDeAjustes.CodigoDeMotivosDeAjustesExcluir">
-=======
-      <class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar">
->>>>>>> branch 'Cristhian' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriar -->
-      <class name="com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa">
-=======
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoExcluir -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
         <methods>
           <include name="afterClass"/>
           <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoCriar">
 >>>>>>> refs/remotes/origin/Kenssy
@@ -557,7 +464,11 @@
 =======
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.EventosESocial.S1270ContrataçãDeTrabalhadoresAvulsosNãoPortuários.ContrataçãoDeTrabalhadoresAvulsosNãoPortuariosExcluirEnMassa -->
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
+<<<<<<< HEAD
   </test> <!--  Eventos e-Social > S1270 - Contratação de Trabalhadores Avulsos Não Portuários(failed) -->
   <test thread-count="5" name="Tabela de Apoio do SPED 4.5.5 Classificação de Contribuintes do IPI(failed)">
     <classes>
@@ -961,4 +872,7 @@
   </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização(failed) -->
 >>>>>>> refs/remotes/origin/Kenssy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  </test> <!-- Regras de Auditoria N2(failed) -->
+>>>>>>> refs/remotes/origin/Yessy
 </suite> <!-- Failed suite [Suite] -->

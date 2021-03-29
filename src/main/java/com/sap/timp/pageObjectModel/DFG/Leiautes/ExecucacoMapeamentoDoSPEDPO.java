@@ -511,8 +511,11 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		
 		while (!mapeamento.isDisplayed()) {
 			flecha.click();
+			sleep(1000);
 		}
-		sleep(12000);
+
+
+		sleep(20000);
 		
 		mapeamento.click();
 		sleep(1000);

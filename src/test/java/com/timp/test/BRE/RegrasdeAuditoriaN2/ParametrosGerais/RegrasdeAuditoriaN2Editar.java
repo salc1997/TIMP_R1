@@ -28,7 +28,7 @@ public class RegrasdeAuditoriaN2Editar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
@@ -41,6 +41,8 @@ public class RegrasdeAuditoriaN2Editar extends TestBaseFernando {
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
+			
 		}
+		sleep(1000);
 	}
 }

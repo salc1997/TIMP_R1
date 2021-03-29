@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
 =======
 <<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
 =======
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="Default suite" duration-ms="198131" started-at="2021-03-19T21:34:41Z" finished-at="2021-03-19T21:37:59Z">
@@ -27,8 +34,12 @@
 =======
   <suite started-at="2021-03-26T15:50:12Z" name="Default suite" finished-at="2021-03-26T15:52:28Z" duration-ms="136206">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-03-29T14:18:57Z" name="Default suite" finished-at="2021-03-29T14:19:57Z" duration-ms="60510">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="198131" started-at="2021-03-19T21:34:41Z" finished-at="2021-03-19T21:37:59Z">
@@ -50,9 +61,15 @@
       <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SequenciaAcesso.SequenciaCriar@20f5281c]" started-at="2021-03-26T15:50:12Z" name="beforeClass" finished-at="2021-03-26T15:50:31Z" duration-ms="18661" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-03-29T14:18:57Z" name="Default test" finished-at="2021-03-29T14:19:57Z" duration-ms="60510">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@909217e]" started-at="2021-03-29T14:18:57Z" name="beforeClass" finished-at="2021-03-29T14:19:09Z" duration-ms="11878" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="FAIL" signature="criar()[pri:0, instance:com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar@501edcf1]" name="criar" duration-ms="178761" started-at="2021-03-19T21:35:01Z" finished-at="2021-03-19T21:37:59Z">
@@ -64,7 +81,12 @@
         <test-method signature="CalendarEntrar()[pri:0, instance:com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario@3f191845]" started-at="2021-03-26T05:04:52Z" name="CalendarEntrar" finished-at="2021-03-26T08:16:15Z" duration-ms="11482331" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@909217e]" started-at="2021-03-29T14:19:09Z" name="editar" finished-at="2021-03-29T14:19:57Z" duration-ms="48613" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+>>>>>>> refs/remotes/origin/Yessy
             <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
 =======
@@ -78,8 +100,20 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 8
 Session ID: 4cb4bd1901819a7a4204c2fd4b2ba484
 *** Element info: {Using=xpath, value=//*[@id="login-btn"]}]]>
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="list-item-text" and text()="ID 47-Ajustes Fiscais"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55431}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6a15714abe7c60b29636a7f68fa2f1e7
+*** Element info: {Using=xpath, value=//div[@class="list-item-text" and text()="ID 47-Ajustes Fiscais"]}]]>
+>>>>>>> refs/remotes/origin/Yessy
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
@@ -128,6 +162,17 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 4cb4bd1901819a7a4204c2fd4b2ba484
 *** Element info: {Using=xpath, value=//*[@id="login-btn"]}
+=======
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="list-item-text" and text()="ID 47-Ajustes Fiscais"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55431}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6a15714abe7c60b29636a7f68fa2f1e7
+*** Element info: {Using=xpath, value=//div[@class="list-item-text" and text()="ID 47-Ajustes Fiscais"]}
+>>>>>>> refs/remotes/origin/Yessy
 at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -142,6 +187,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<<<<<<< HEAD
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.toString(Unknown Source)
@@ -167,6 +213,10 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at com.timp.test.MDR.SequenciaAcesso.SequenciaCriar.criar(SequenciaCriar.java:45)
 >>>>>>> refs/heads/Fernando
+=======
+at com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasDeAuditoriaN2EdicaoRelacionamentoPO.editar(RegrasDeAuditoriaN2EdicaoRelacionamentoPO.java:79)
+at com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento.editar(RegrasDeAuditoriaN2EdicaoRelacionamento.java:36)
+>>>>>>> refs/remotes/origin/Yessy
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -195,10 +245,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
 <<<<<<< HEAD
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
 >>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- CriarSaldo -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar@44d52de2]" started-at="2021-03-26T00:20:25Z" name="afterClass" finished-at="2021-03-26T00:20:25Z" duration-ms="0" status="PASS">
@@ -268,9 +323,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.WebDriverException -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@909217e]" started-at="2021-03-29T14:19:57Z" name="afterClass" finished-at="2021-03-29T14:19:57Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
 =======
@@ -291,6 +351,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

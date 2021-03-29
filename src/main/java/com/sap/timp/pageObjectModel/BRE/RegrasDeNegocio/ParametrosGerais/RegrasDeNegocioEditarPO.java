@@ -306,9 +306,9 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
-		
+		sleep(3000);
 		aplicar.click();
-		sleep(2000);
+		sleep(3000);
 		gravar.click();
 		sleep(2000);
 		nao.click();

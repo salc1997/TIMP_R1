@@ -21,8 +21,8 @@
 					<class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados"></class>
 				
 				<!-- Parametros Gerais de Nuevo -->
-				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente"></class>
-				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa"></class>
+				<class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente"></class>
+				<class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa"></class>
 				
 		</classes>
 	</test>

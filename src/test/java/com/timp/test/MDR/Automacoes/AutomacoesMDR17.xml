@@ -120,6 +120,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.DiagnosticoDeProcessos.DiagnosticoDeProcessosExcluirEmMassa"></class>
 		</classes>
@@ -138,6 +139,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosDetalles"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosExcluirEmMassa"></class>
 		</classes>
@@ -205,9 +207,10 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPVisualizar"></class>
-				<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPDetalle"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
+			
 			</classes>
 	
 	</test>

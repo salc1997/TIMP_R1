@@ -125,7 +125,9 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		sleep(2000);
 		
 		waitExpectElement(cboOperador);
+		sleep(2000);
 		attributoNotToBeEmptyXpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input", "value");
+		sleep(2000);
 		String valorOperador = driver.findElement(By.xpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input")).getAttribute("value").trim();
 		System.out.println("");
 		System.out.println("Valor operador editado: " + valorOperador);
@@ -133,7 +135,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		String valorEnviado = "<";
 		System.out.println("");
 		System.out.println("Valor operador enviado: " + valorEnviado);
-
+		sleep(1000);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso.add(valorOperador.equals(valorEnviado));
 		

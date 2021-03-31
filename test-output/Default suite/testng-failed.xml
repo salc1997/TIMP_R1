@@ -4,6 +4,7 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.GruposAvancados">
 =======
 <<<<<<< HEAD
@@ -33,7 +34,11 @@
       <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar">
+>>>>>>> refs/remotes/origin/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="gruposAvanzados"/>
 =======
@@ -86,7 +91,10 @@
           <include name="afterClass"/>
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Fernando
           <include name="criar"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="CriarSaldo"/>
@@ -117,9 +125,12 @@
       </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
 =======
           <include name="CalendarEntrar"/>
+=======
+>>>>>>> refs/remotes/origin/Fernando
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario -->
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -141,6 +152,9 @@
       </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioCriar -->
+>>>>>>> refs/remotes/origin/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
 =======
 <<<<<<< HEAD
@@ -13,7 +14,10 @@
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Fernando
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -36,8 +40,11 @@
 =======
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-03-31T03:16:04Z" name="Default suite" finished-at="2021-03-31T03:18:16Z" duration-ms="132309">
 =======
@@ -71,8 +78,12 @@
   <suite started-at="2021-03-29T23:00:34Z" name="Default suite" finished-at="2021-03-29T23:01:59Z" duration-ms="85409">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <suite started-at="2021-03-30T02:20:18Z" name="Default suite" finished-at="2021-03-30T02:21:58Z" duration-ms="99863">
+>>>>>>> refs/remotes/origin/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-03-31T03:16:04Z" name="Default test" finished-at="2021-03-31T03:18:16Z" duration-ms="132309">
       <class name="com.timp.test.BRB.GruposAvancados">
@@ -124,9 +135,15 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes@1bd39d3c]" started-at="2021-03-29T23:00:34Z" name="beforeClass" finished-at="2021-03-29T23:00:49Z" duration-ms="14716" status="PASS">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+    <test started-at="2021-03-30T02:20:18Z" name="Default test" finished-at="2021-03-30T02:21:58Z" duration-ms="99863">
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEditar@20f5281c]" started-at="2021-03-30T02:20:18Z" name="beforeClass" finished-at="2021-03-30T02:20:33Z" duration-ms="15185" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="gruposAvanzados()[pri:0, instance:com.timp.test.BRB.GruposAvancados@56c4278e]" started-at="2021-03-31T03:16:17Z" name="gruposAvanzados" finished-at="2021-03-31T03:18:16Z" duration-ms="119582" status="FAIL">
 =======
@@ -282,8 +299,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         <test-method signature="detalhe()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes@1bd39d3c]" started-at="2021-03-29T23:00:49Z" name="detalhe" finished-at="2021-03-29T23:01:55Z" duration-ms="66319" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEditar@20f5281c]" started-at="2021-03-30T02:20:33Z" name="editar" finished-at="2021-03-30T02:21:58Z" duration-ms="84608" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -403,9 +424,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes@1bd39d3c]" started-at="2021-03-29T23:01:55Z" name="afterClass" finished-at="2021-03-29T23:01:59Z" duration-ms="4344" status="PASS">
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CEP.Municipio.MunicipioEditar@20f5281c]" started-at="2021-03-30T02:21:58Z" name="afterClass" finished-at="2021-03-30T02:21:58Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.GruposAvancados -->
 =======
@@ -443,6 +469,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
 >>>>>>> refs/heads/Fernando
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEditar -->
+>>>>>>> refs/remotes/origin/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,6 +31,7 @@ public class UsuáriosAtivarDesativar extends TestBaseSteven {
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test(priority = 0)

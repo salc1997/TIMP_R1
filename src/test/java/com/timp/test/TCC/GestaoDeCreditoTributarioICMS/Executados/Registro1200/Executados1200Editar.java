@@ -28,7 +28,7 @@ public class Executados1200Editar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 

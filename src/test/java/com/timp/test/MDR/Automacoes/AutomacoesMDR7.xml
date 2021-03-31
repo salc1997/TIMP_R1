@@ -204,7 +204,7 @@
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosExcluir">
 			</class>
 			<class 
-			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosCriarExcluirMassa">
+			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosExcluirMassa">
 			</class>
 		</classes>
 	</test>		

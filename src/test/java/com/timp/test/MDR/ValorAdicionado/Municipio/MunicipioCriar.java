@@ -32,7 +32,7 @@ public class MunicipioCriar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 	/*
 	 * @Test(priority = 0) public void login() { loginTC.login();

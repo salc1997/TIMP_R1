@@ -84,7 +84,7 @@ public class Registro1501EditarPO extends TestBaseSteven {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(2000);
+		sleep(12000);
 		
 		waitExpectElement(filial);
 		sleep(8000);
@@ -114,7 +114,7 @@ public class Registro1501EditarPO extends TestBaseSteven {
 		driver.navigate().refresh();
 		waitExpectElement(filial);
 		sleep(8000);
-	  	
+		sleep(10000);
 	  	String nuevoTexto = filialE.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos">
+      <class name="com.timp.test.CALENDAR.ParametrosGerais.NovaTarefa">
         <methods>
           <include name="afterClass"/>
+          <include name="excluir"/>
+          <include name="novaTarefa"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos -->
+      </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.NovaTarefa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

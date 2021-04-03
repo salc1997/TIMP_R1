@@ -12,19 +12,19 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
-import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.AtualizarPO;
+import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.TarefasAtualizarPO;
 import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.CalendarioDeUsuariosPO;
 import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.NovaTarefaPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-public class Atualizar extends TestBaseSteven {
+public class TarefaAtualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
 	AcessarBPMAPO acessarBPMAPO;
-	AtualizarPO atualizarPO;
+	TarefasAtualizarPO atualizarPO;
 
-	public Atualizar() {
+	public TarefaAtualizar() {
 		super();
 	}
 
@@ -34,7 +34,7 @@ public class Atualizar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
-		atualizarPO = new AtualizarPO();
+		atualizarPO = new TarefasAtualizarPO();
 		acessarBPMAPO = new AcessarBPMAPO();
 	}
 

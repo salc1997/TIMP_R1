@@ -32,7 +32,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"ID 50-Ajustes Fiscais\"]")
+	@FindBy(xpath = "//div[contains(text(),\"Ajustes Fiscais\")]")
 	public WebElement opcion;
 	
 	public RegrasDeAuditoriaN2EdicaoRelacionamentoPO() {
@@ -64,7 +64,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		btnSeleccionarRelacionamento.click();
 		sleep(2000);
@@ -134,7 +134,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		btnSeleccionarRelacionamento.click();
 		sleep(2000);

@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.CALENDAR.ParametrosGerais.NovaTarefa">
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefaManual">
         <methods>
+          <include name="acessarCalendar"/>
+          <include name="login"/>
           <include name="afterClass"/>
-          <include name="excluir"/>
-          <include name="novaTarefa"/>
+          <include name="Calendar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.NovaTarefa -->
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefaManual -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

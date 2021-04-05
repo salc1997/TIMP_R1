@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class TarefasMultiplosUsuariosCalendarPO extends TestBaseMassiel{
+public class TarefasGatewayAprovaçãoPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[@class=\"btn icon icon-font-Sign-and-Symbols icon-persign closeButton\"]")
 	public WebElement fechar;
@@ -17,7 +17,7 @@ public class TarefasMultiplosUsuariosCalendarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Calendário\"]")
 	public WebElement calendario;
 	
-	public TarefasMultiplosUsuariosCalendarPO() {
+	public TarefasGatewayAprovaçãoPO() {
 
 		PageFactory.initElements(driver, this);
 	}

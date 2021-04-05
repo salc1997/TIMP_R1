@@ -27,22 +27,16 @@ public class AprovacaoDeDocumentosExcluir extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void TBDEntrar() {
-		acessarTBDPO.acessarTBD();
-
-	}
-
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
+		loginTC.login();
+		
+		acessarTBDPO.acessarTBD();
 
 		boolean sucesso = aprovacaoDeDocumentosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);

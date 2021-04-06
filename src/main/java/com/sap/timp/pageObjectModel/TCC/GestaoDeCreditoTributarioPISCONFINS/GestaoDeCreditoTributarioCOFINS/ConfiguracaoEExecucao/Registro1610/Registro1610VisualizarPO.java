@@ -144,7 +144,7 @@ public class Registro1610VisualizarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(10000);
 		
 		System.out.println("==============================");
 		String empresaeditar = empresa.getAttribute("value");

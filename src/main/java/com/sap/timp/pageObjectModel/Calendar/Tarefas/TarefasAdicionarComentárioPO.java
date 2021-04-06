@@ -781,6 +781,8 @@ public class TarefasAdicionarComentárioPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
+			waitExpectElement(pesquisarBPMA);
+			sleep(2000);
 			actionsMoveToElementElement(pesquisarBPMA);
 			sleep(4000);
 			

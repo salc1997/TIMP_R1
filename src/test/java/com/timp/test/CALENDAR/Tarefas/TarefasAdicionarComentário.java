@@ -38,6 +38,7 @@ public class TarefasAdicionarComentário extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test(priority = 0)
@@ -46,7 +47,7 @@ public class TarefasAdicionarComentário extends TestBaseMassiel{
 
 	}
 
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	public void BPMAEntrar() {
 		 acessarBPMA.acessarBPMA();
 		
@@ -61,7 +62,7 @@ public class TarefasAdicionarComentário extends TestBaseMassiel{
 			assertTrue(sucesso.get(i),Criar);
 		}
 		
-	}
+	}*/
 	
 	@Test(priority = 3)
 	public void TFPEntrar() {

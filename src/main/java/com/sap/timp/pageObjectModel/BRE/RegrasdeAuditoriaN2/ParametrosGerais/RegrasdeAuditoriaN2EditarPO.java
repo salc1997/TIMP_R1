@@ -107,7 +107,13 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		sleep(1000);
 		opcionOperador.click();
 		sleep(1000);
-
+		
+		String valorOperador1 = driver.findElement(By.xpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input")).getAttribute("value").trim();
+		System.out.println("");
+		System.out.println("Valor operador editado: " + valorOperador1);
+		
+		sleep(4000);
+		
 		btnMotificar.click();
 		sleep(2000);
 		
@@ -120,7 +126,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		CFOP.click();
+		CFOP2.click();
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		

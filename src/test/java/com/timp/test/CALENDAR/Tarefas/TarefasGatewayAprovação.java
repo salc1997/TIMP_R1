@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
-import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasMultiplosUsuariosCalendarPO;
+import com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasGatewayAprovaçãoPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,18 +15,18 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TarefasMultiplosUsuariosCalendar extends TestBaseMassiel{
+public class TarefasGatewayAprovação extends TestBaseMassiel{
 	
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
-	TarefasMultiplosUsuariosCalendarPO multiplosUsuariosCalendarPO;
+	TarefasGatewayAprovaçãoPO multiplosUsuariosCalendarPO;
  
   @BeforeClass
   public void beforeClass() {
 		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
-		multiplosUsuariosCalendarPO = new TarefasMultiplosUsuariosCalendarPO();
+		multiplosUsuariosCalendarPO = new TarefasGatewayAprovaçãoPO();
 		
   }
 

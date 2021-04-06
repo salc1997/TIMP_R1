@@ -1,3 +1,4 @@
+
 package com.timp.test.ADM.Configuração.ManuaisDeComponente;
 
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class ManuaisDeComponenteCriar extends TestBaseSteven {
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 // driver.close();
   }
   
 
@@ -44,3 +45,4 @@ public class ManuaisDeComponenteCriar extends TestBaseSteven {
 		
 	}
 }
+

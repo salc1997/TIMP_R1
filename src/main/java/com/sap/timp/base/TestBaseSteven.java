@@ -98,12 +98,11 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tp1);
+		driver.get(tc2);
 
 		return driver;
 	}
 
-	
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
 		
@@ -715,3 +714,4 @@ public class TestBaseSteven {
 	public String Restaurar = "O registro não foi restaurado com sucesso";
 	
 }
+

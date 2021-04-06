@@ -103,8 +103,14 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 	@FindBy(xpath = "//td[@class=\"datastructureCategory-field\"]/div/div/div[2]")
 	public WebElement grupodeestrutura;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Ajuste\"][1]")
+	@FindBy(xpath = "//li[@id][text()=\"TA-TESTE\"][1]")
 	public WebElement opcaogrupodeestrutura;
+	
+	@FindBy(xpath = "//td[@class=\"regulation-field\"]/div/div/div[2]")
+	public WebElement regulamiento;
+	
+	@FindBy(xpath = "//li[@id][text()=\"TA-TESTE\"][1]")
+	public WebElement regulamientoOPC;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
 	public WebElement opcaogrupodeestruturatp1;
@@ -197,13 +203,21 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 			sleep(1000);
 		}
 		
-		
+	 
 		
 		estructura.click();
 		sleep(3000);
 		opcEstructura.click();
 		sleep(3000);
 		
+		 regulamiento.click();
+		sleep(3000);
+		
+		actionsMoveToElementElement(regulamientoOPC);
+		sleep(4000);
+		regulamientoOPC.click();
+		sleep(3000);
+			
 		String data = fechaActual();
 		validade.sendKeys("01/01/2013");
 		sleep(1000);

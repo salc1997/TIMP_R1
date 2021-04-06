@@ -52,6 +52,12 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+	public WebElement fecharCalendario;
+	
+	@FindBy(xpath = "//div[@class=\"title\"]")
+	public WebElement titulo;
+	
 	public TarefasNADelegarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -84,10 +90,22 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		atras.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		WebElement setaesquerda = driver
+				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+		
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
+		}
+
 		dia23.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -100,7 +118,7 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 		Boolean existeElemento1;
 		Boolean existeElemento2;
 		if (tc2==true) {
-			if (existeElemento1 = driver.findElements(By.xpath("//div[text()=\"6484\"]")).size() != 0) {
+			if (existeElemento1 = driver.findElements(By.xpath("//div[text()=\"6479\"]")).size() != 0) {
 				System.out.println("EXISTE 1");
 				sucesso.add(true);
 			}else {
@@ -150,10 +168,21 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);
 			
-			atras.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(4000);
+			WebElement setaesquerda1 = driver
+					.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+			
+			boolean calendarMonthString1 = true;	
+			
+			while (calendarMonthString1)  {
+				if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+					calendarMonthString = false;
+				}else {
+					setaesquerda1.click();
+					sleep(2000);
+					invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+					sleep(2000);
+				}
+			}
 			dia23.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -161,7 +190,7 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 			
 			
 			
-			if (existeElemento2 = driver.findElements(By.xpath("//div[text()=\"6484\"]")).size() != 0) {
+			if (existeElemento2 = driver.findElements(By.xpath("//div[text()=\"6479\"]")).size() != 0) {
 				System.out.println("EXISTE 2");
 				sucesso.add(true);
 			}else {
@@ -235,10 +264,21 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);
 			
-			atras.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(4000);
+			WebElement setaesquerda2 = driver
+					.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+			
+			boolean calendarMonthString2 = true;	
+			
+			while (calendarMonthString2)  {
+				if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+					calendarMonthString2 = false;
+				}else {
+					setaesquerda2.click();
+					sleep(2000);
+					invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+					sleep(2000);
+				}
+			}
 			dia23.click(); 
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -270,7 +310,7 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 			
 		}else {
 			
-			if (existeElemento1 = driver.findElements(By.xpath("//div[text()=\"73078\"]")).size() != 0) {
+			if (existeElemento1 = driver.findElements(By.xpath("//div[text()=\"73073\"]")).size() != 0) {
 				System.out.println("EXISTE 1");
 				sucesso.add(true);
 			}else {
@@ -320,10 +360,21 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);
 			
-			atras.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(4000);
+			WebElement setaesquerda3 = driver
+					.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+			
+			boolean calendarMonthString3 = true;	
+			
+			while (calendarMonthString3)  {
+				if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+					calendarMonthString3 = false;
+				}else {
+					setaesquerda3.click();
+					sleep(2000);
+					invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+					sleep(2000);
+				}
+			}
 			dia23.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -331,7 +382,7 @@ public class TarefasNADelegarPO extends TestBaseSteven {
 			
 			
 			
-			if (existeElemento2 = driver.findElements(By.xpath("//div[text()=\"73078\"]")).size() != 0) {
+			if (existeElemento2 = driver.findElements(By.xpath("//div[text()=\"73073\"]")).size() != 0) {
 				System.out.println("EXISTE 2");
 				sucesso.add(true);
 			}else {

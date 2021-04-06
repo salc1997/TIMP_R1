@@ -1132,10 +1132,12 @@ public class TarefaAutomatizadaPO extends TestBaseMassiel{
 			sleep(3000);
 			
 			sim.click();
-			sleep(4000);
+			sleep(6000);
 			
 			waitExpectElement(pesquisarBPMA);
-			sleep(4000);
+			sleep(6000);
+			
+			System.out.println("ACTIVADOR DE PROCESO LIXERIA");
 			
 			lixeriaProceso.click();
 			sleep(2000);
@@ -1143,9 +1145,9 @@ public class TarefaAutomatizadaPO extends TestBaseMassiel{
 			sleep(2000);
 			
 			primeira.click();
-			sleep(2000);
+			sleep(6000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(6000);
 			
 			String idAtivadorProcesosl = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
 			System.out.println( idAtivadorProcesosl);

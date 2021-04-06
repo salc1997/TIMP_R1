@@ -45,7 +45,7 @@ public class TarefasDeManualAbaPrazo extends TestBaseMassiel{
 
 	}
 
-	@Test(priority = 1)
+  	@Test(priority = 1)
 	public void BPMAEntrar() {
 		 acessarBPMA.acessarBPMA();
 		

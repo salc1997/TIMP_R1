@@ -58,7 +58,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar o Tipo de Leiaute\"]")
 	public WebElement leiauteInput;
 	
-	@FindBy(xpath = "//li[text()=\"E-Social\"]")
+	@FindBy(xpath = "//li[text()=\"ALTER E-SOCIAL S1200\"]")
 	public WebElement leiauteOpc;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Grupo do Estrutura\"]")

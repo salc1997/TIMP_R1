@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <test thread-count="5" name="CrescenteEDecrescente(failed)">
 =======
 <<<<<<< HEAD
@@ -23,7 +24,11 @@
 =======
   <test thread-count="5" name="ParametrosParaTP(failed)">
 >>>>>>> refs/remotes/origin/Fernando
+=======
+  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Executados &gt; PainelICMS(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.BRB.CrescenteEDecrescente">
@@ -38,7 +43,11 @@
 =======
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar">
 >>>>>>> refs/remotes/origin/Fernando
+=======
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="visualizar"/>
           <include name="afterClass"/>
@@ -657,4 +666,20 @@
 >>>>>>> refs/remotes/origin/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSVisualizar -->
+    </classes>
+  </test> <!-- Gestao De Credito Tributario ICMS > Executados > PainelICMS(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 </suite> <!-- Failed suite [Suite] -->

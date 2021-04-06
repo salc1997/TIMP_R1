@@ -78,6 +78,7 @@ public class CadastroNotaFiscalCriarPO extends TestBaseSteven{
 		parametrosCriacaoNotaFiscal.click();
 		sleep(2000);
 
+
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

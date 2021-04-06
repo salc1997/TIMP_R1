@@ -5,47 +5,22 @@
 
 	<test name="Tabelas de Apoio do Sped > Classificação De Contribuentes Do IPI" >
 		<classes>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa">
-			</class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa"></class>
 
 		</classes>
 	</test> 
 	
 	<test name="Tabelas de Apoio do Sped > CodigoAjustesContribuiçoesCreditos" >
 		<classes>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa">
-			</class>
-			
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa"></class>
 		</classes>
 	</test> 
 	

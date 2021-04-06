@@ -380,6 +380,10 @@ public class SaldosCriarPO extends TestBaseKenssy{
 		opcDetalheDestinoA.click();
 		sleep(1000);
 		
+		sleep(1000);
+		actionsMoveToElementElement(documentoA);
+		sleep(1000);
+		
 		filialsA.click();
 		sleep(1000);
 		opcfilialsA.click();

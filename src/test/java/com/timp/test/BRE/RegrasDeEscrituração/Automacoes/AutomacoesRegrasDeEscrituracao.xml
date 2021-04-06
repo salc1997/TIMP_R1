@@ -23,7 +23,7 @@
 
 
 			<class
-				name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular"></class>
+				name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular"></class>
 
 			<class
 				name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoRelacionamento"></class>

@@ -531,11 +531,13 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idECF =idObter1();
-		System.out.println("Id Antes da Criação (ECF): " +idECF);
+		
 
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-
+		
+		String idECF =idObter1();
+		System.out.println("Id Antes da Criação (ECF): " +idECF);
+		
 		String idNuevo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id n da Criação (ECF): " +idNuevo);
 		idInserir3(idNuevo);
@@ -1280,10 +1282,10 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
+			actionsMoveToElementXpath("//li[text()=\"ICMS\"]");
 			sleep(3000);
 			
-			WebElement tributoOPC = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
+			WebElement tributoOPC = driver.findElement(By.xpath("//li[text()=\"ICMS\"]"));
 			
 			tributoOPC.click();
 			sleep(3000);

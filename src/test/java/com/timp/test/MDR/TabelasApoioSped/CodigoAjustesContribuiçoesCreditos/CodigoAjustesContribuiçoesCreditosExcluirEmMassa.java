@@ -28,19 +28,23 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseSt
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = codigoAjustesContribuiçoesCreditosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = codigoAjustesContribuiçoesCreditosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
 
 }

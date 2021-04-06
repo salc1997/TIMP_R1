@@ -9,11 +9,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriarPO;
-import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriarPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class CadastroFornecedorCriar extends TestBaseSteven {
 

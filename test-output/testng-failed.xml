@@ -1,111 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-=======
-=======
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.GruposAvancados">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
-=======
-      <class name="com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      <class name="com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes">
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioCriar">
->>>>>>> refs/remotes/origin/Fernando
-        <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="gruposAvanzados"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="eliminarGrupos"/>
-=======
-=======
->>>>>>> refs/remotes/origin/Fernando
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar">
+      <class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar">
         <methods>
           <include name="beforeClass"/>
-          <include name="ver"/>
+          <include name="visualizar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar">
-        <methods>
-          <include name="executarGravar"/>
-          <include name="afterClass"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosDetalhes -->
->>>>>>> refs/heads/Fernando
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioCriar -->
->>>>>>> refs/remotes/origin/Fernando
+      </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

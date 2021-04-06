@@ -103,7 +103,6 @@ public class TestBaseSteven {
 		return driver;
 	}
 
-	
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
 		
@@ -715,3 +714,4 @@ public class TestBaseSteven {
 	public String Restaurar = "O registro não foi restaurado com sucesso";
 	
 }
+

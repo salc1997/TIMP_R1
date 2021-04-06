@@ -1,6 +1,11 @@
 package com.sap.timp.pageObjectModel.Calendar.Tarefas;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.TextStyle;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -211,6 +216,10 @@ public class TarefasDeManualAbaPrazoPO extends TestBaseMassiel{
 		
 		@FindBy(xpath = "//span[text()=\"Lixeira de Processos\"]")
 		public WebElement lixeriaProceso;
+		
+		
+		@FindBy(xpath = "//div[@class=\"title\"]")
+		public WebElement titulo;
 	
 	public TarefasDeManualAbaPrazoPO() {
 		PageFactory.initElements(driver, this);
@@ -767,6 +776,7 @@ public class TarefasDeManualAbaPrazoPO extends TestBaseMassiel{
 		return sucesso;
 	}
 	
+
 	
 		public ArrayList<Boolean> irTFP() {
 			
@@ -923,10 +933,64 @@ public class TarefasDeManualAbaPrazoPO extends TestBaseMassiel{
 			sleep(3000);
 			waitExpectXpath("//div[@class=\"day\"][1]");
 			sleep(2000);
+			
+			Calendar fecha = Calendar.getInstance();
+			
+			int mes = fecha.get(Calendar.MONTH) + 2;
 		
-			String diaTarefa = diaActual();
+			String mesString;
+			switch (mes) {
+			        case 1:  mesString = "Janeiro";
+			                 break;
+			        case 2:  mesString  = "Fevereiro";
+			                 break;
+			        case 3:  mesString = "Março";
+			                 break;
+			        case 4:  mesString = "Abril";
+			                 break;
+			        case 5:  mesString = "Maio";
+			                 break;
+			        case 6:  mesString = "Junho";
+			                 break;
+			        case 7:  mesString = "Julho";
+			                 break;
+			        case 8:  mesString = "Agosto";
+			                 break;
+			        case 9:  mesString = "Setembro";
+			                 break;
+			        case 10: mesString = "Outubro";
+			                 break;
+			        case 11: mesString = "Novembro";
+			                 break;
+			        case 12: mesString = "Dezembro";
+			                 break;
+			        default: mesString = "Invalid month";
+			                 break;
+			        }
+			
+			System.out.println(mesString);
+			
+			WebElement setaesquerda = driver
+					.findElement(By.xpath("//div[@class=\"right-arrow icon icon-font-Sign-and-Symbols icon-rightmenu\"]"));
+			
+			boolean calendarMonthString = true;	
+			
+			while (calendarMonthString)  {
+				if(titulo.getText().contentEquals(mesString +", 2021")  ) {
+					calendarMonthString = false;
+				}else {
+					setaesquerda.click();
+					sleep(2000);
+					invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+					sleep(2000);
+				}
+			}
+			
+			
+			String diaTarefa = "1";
+			
 		
-			System.out.println("Dia creada Tarefa: "+diaTarefa);
+			System.out.println("Dia "+diaTarefa);
 			WebElement diaTarefaCalendario = driver.findElement(
 					By.xpath("//div[@class=\"dates-wrapper\"]/div[@date=\""+diaTarefa+"\"][1]"));
 		

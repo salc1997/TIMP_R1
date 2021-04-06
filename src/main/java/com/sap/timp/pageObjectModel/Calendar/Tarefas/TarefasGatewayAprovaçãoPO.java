@@ -9,15 +9,21 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class TarefasMultiplosUsuariosCalendarPO extends TestBaseMassiel{
+public class TarefasGatewayAprovaçãoPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[@class=\"btn icon icon-font-Sign-and-Symbols icon-persign closeButton\"]")
 	public WebElement fechar;
 	
-	@FindBy(xpath = "//span[text()=\"Calendário\"]")
-	public WebElement calendario;
+	@FindBy(xpath = "//span[text()=\"Abrir Calendário\"]")
+	public WebElement abrirCalendario;
 	
-	public TarefasMultiplosUsuariosCalendarPO() {
+	@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+	public WebElement fecharCalendario;
+	
+	@FindBy(xpath = "//div[@class=\"title\"]")
+	public WebElement titulo;
+	
+	public TarefasGatewayAprovaçãoPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -44,34 +50,56 @@ public class TarefasMultiplosUsuariosCalendarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		calendario.click();
+		abrirCalendario.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		if (tq1 == true) {
 
-			WebElement OPC = driver.findElement(By.xpath("//div[@id=\"year-wrapper\"]/div[2]/div/div[2]/div[1]/div[2]/div[21]"));
+		WebElement setaesquerda = driver
+				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+		
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
+		}
 
-			OPC.click();
+		String tituloS = titulo.getText();
+		System.out.println("Titulo: " + tituloS);
+		
+		if (tc2 == true || tp1 == true) {
+			WebElement dia20 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"21\"]"));
+			dia20.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000); 
+			sleep(2000);
+		} else {
 
-		}else  {
-
-			WebElement OPC = driver.findElement(By.xpath("//div[@id=\"year-wrapper\"]/div[2]/div/div[2]/div[1]/div[2]/div[22]"));
-
-			OPC.click();
+			WebElement dia21 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"20\"]"));
+			dia21.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
+
 		}
 		
-		fechar.click();
+		
+	
+		
+		fecharCalendario.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
+			
+
 		
 		
 		

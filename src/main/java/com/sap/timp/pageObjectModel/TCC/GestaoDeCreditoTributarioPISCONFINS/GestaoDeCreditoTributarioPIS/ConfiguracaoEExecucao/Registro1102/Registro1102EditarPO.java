@@ -87,7 +87,10 @@ public class Registro1102EditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		
-		waitExpectElement(filial);
+		//waitExpectElement(filial);
+		sleep(6000);
+		sleep(6000);
+		sleep(6000);
 		sleep(6000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
@@ -95,8 +98,8 @@ public class Registro1102EditarPO extends TestBaseSteven {
 		String enviar = valor;
 		
 		
-		Efilial.click();
-		sleep(3000);
+		/*Efilial.click();
+		sleep(3000);*/
 		filial.click();
 		sleep(1000);
 		filialO.click();
@@ -115,7 +118,8 @@ public class Registro1102EditarPO extends TestBaseSteven {
 		driver.navigate().refresh();
 		waitExpectElement(filial);
 		sleep(6000);
-	  	
+		sleep(6000);
+		sleep(6000);
 	  	String nuevoTexto = filialE.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

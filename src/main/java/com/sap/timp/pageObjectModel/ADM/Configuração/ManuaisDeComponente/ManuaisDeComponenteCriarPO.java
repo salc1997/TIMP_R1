@@ -1,3 +1,4 @@
+
 package com.sap.timp.pageObjectModel.ADM.Configuração.ManuaisDeComponente;
 
 import java.io.File;
@@ -97,7 +98,7 @@ public class ManuaisDeComponenteCriarPO extends TestBaseSteven {
 		sleep(2000);
 		
 
-		File filePath = new File("C:\\Users\\Cristhian Vasquez\\Desktop\\Exemplo - Especificacion Técnica TIM-791.pdf");
+		File filePath = new File("C:\\Users\\ymass\\Documents\\Agile Solutions\\Evidencias de Rodar Pruebas\\2021\\Marzo\\29-03-2021\\MDR\\MDR18\\Evidências da Rodagem de Testes Automatizados No MDR No TC2 No Dia 29032021 Classe MDR18");
 		String pathString = filePath.getAbsolutePath();
 		
 		driver.findElement(By.className("file-uploader")).sendKeys(pathString);
@@ -157,3 +158,4 @@ public class ManuaisDeComponenteCriarPO extends TestBaseSteven {
 
 
 }
+

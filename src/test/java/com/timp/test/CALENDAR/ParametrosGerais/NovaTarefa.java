@@ -20,7 +20,7 @@ public class NovaTarefa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
 	NovaTarefaPO novaTarefaPO;
-
+	
 	public NovaTarefa() {
 		super();
 	}

@@ -146,7 +146,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseSteven{
 		
 		opcao1.click();
 		
-		sleep(27000);
+		sleep(30000);
 		
 		codigocredito.click();
 		

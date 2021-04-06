@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class AbrirCalendarioPO extends TestBaseSteven{
+public class TarefasAbrirCalendarioPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Calendário de Usuários\"]")
 	public WebElement calendario;
@@ -46,7 +46,7 @@ public class AbrirCalendarioPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Excluir\"]")
 	public WebElement excluir;
 
-	public AbrirCalendarioPO() {
+	public TarefasAbrirCalendarioPO() {
 
 		PageFactory.initElements(driver, this);
 	}

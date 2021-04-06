@@ -12,7 +12,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 
-public class AtualizarPO extends TestBaseSteven{
+public class TarefasAtualizarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Calendário de Usuários\"]")
 	public WebElement calendario;
@@ -74,7 +74,7 @@ public class AtualizarPO extends TestBaseSteven{
 	
 	
 	
-	public AtualizarPO() {
+	public TarefasAtualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -128,7 +128,7 @@ public class AtualizarPO extends TestBaseSteven{
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElementOverlay();
 		
-		WebElement ativada = driver.findElement(By.xpath("//div[@data-id=\"29226\"]/div[3]/span"));
+		WebElement ativada = driver.findElement(By.xpath("//div[@data-id=\""+procurar+"\"]/div[3]/span"));
 		
 		actionsMoveToElementElement(ativada);
 		sleep(1000);

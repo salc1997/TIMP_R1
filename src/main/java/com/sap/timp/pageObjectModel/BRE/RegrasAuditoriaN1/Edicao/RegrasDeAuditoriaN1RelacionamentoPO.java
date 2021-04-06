@@ -24,13 +24,13 @@ public class RegrasDeAuditoriaN1RelacionamentoPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"structure-relation-select\"]/div/div/div[2]")
 	public WebElement relacionamentoestrutura;
 	
-	@FindBy(xpath = "//div[@id=\"50\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]")
 	public WebElement opcaorelacionamentotq1;
 	
-	@FindBy(xpath = "//div[@id=\"14\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]")
 	public WebElement opcaorelacionamentotp1;
 	
-	@FindBy(xpath = "//div[@id=\"47\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]")
 	public WebElement opcaorelacionamentotc2;
 
 		
@@ -192,7 +192,7 @@ String url = driver.getCurrentUrl();
 		
 		if(tq1== true)
 		{
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-50\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div[1]/div[@class=\"componentName\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");
@@ -204,7 +204,7 @@ String url = driver.getCurrentUrl();
 			
 		}else if(tp1 == true)
 		{
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-14\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div[1]/div[@class=\"componentName\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");
@@ -214,7 +214,7 @@ String url = driver.getCurrentUrl();
 				sucesso = true;
 			}
 		}else {
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-47\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div[1]/div[@class=\"componentName\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");

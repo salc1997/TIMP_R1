@@ -9,17 +9,17 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
-import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.AbrirCalendarioPO;
+import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.TarefasAbrirCalendarioPO;
 import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.CalendarioDeUsuariosPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-public class AbrirCalendario extends TestBaseSteven {
+public class TarefaAbrirCalendario extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;
-	AbrirCalendarioPO abrirCalendarioPO;
+	TarefasAbrirCalendarioPO abrirCalendarioPO;
 
-	public AbrirCalendario() {
+	public TarefaAbrirCalendario() {
 		super();
 	}
 
@@ -29,7 +29,7 @@ public class AbrirCalendario extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarCalendarPO = new AcessarCalendarPO();
-		abrirCalendarioPO = new AbrirCalendarioPO();
+		abrirCalendarioPO = new TarefasAbrirCalendarioPO();
 	}
 
 	@AfterClass

@@ -786,7 +786,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
-	
+
 	public ArrayList<Boolean> criar() {
 		
 		String url = driver.getCurrentUrl();

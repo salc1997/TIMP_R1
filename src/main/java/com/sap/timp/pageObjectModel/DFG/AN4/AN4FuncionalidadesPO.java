@@ -1142,7 +1142,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		EstructuraDatosReferencia.click();
 		sleep(2000);
 
-		WebElement Opc4 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes Fiscais\"]]"));
+		WebElement Opc4 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes Fiscais\"]"));
 
 		Opc4 .click();
 		sleep(2000);
@@ -1153,7 +1153,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
 			sleep(2000);
 			
 			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
@@ -1162,7 +1162,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tp1==true) {
-
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
 			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			Opc5 .click();
@@ -1170,7 +1170,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
 			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc5 .click();
@@ -2178,8 +2178,12 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		}
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-
-		String idAN4 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+		String idAN4 = "0";
+		
+		if(rows > 0) {
+			idAN4 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+		}
+		
 		System.out.println("Id Antes da Criação en AN4: " +idAN4);
 		
 		nuevoAN4.click();
@@ -2440,6 +2444,8 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		aplicar.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		arquivoComparacaoAN4.click();
 		sleep(3000);

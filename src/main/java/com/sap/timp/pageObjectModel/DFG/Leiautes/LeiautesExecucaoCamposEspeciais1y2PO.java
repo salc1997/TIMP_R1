@@ -34,7 +34,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcGrupoEstructura1;
 	
-	@FindBy(xpath = "//li[contains(text(),\"Ajuste\")][2]")
+	@FindBy(xpath = "//li[contains(text(),\"Ajuste\")][1]")
 	public WebElement opcGrupoEstructura2;
 	
 	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")
@@ -415,7 +415,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		sleep(2000);
 		waitExpectXpath("//*[@id=\"home-icon\"]");
-		sleep(1000);
+		sleep(10000);
 		
 		while (!separadores.isDisplayed()) {
 			flecha.click();

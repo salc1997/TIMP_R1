@@ -22,8 +22,6 @@
 	
 	</test> 
 
-
-	 
 	<test name="Prueba6" >
 		<classes>
 			<!--Rateio De Consorcio -->
@@ -61,7 +59,6 @@
 	</test> 
 	
 
- 
 	<test name="Prueba13" >
 		<classes>
 			<!--Tabelas Complementares Para Obrigações Acessórias > Tabela Logradouros-->
@@ -77,7 +74,7 @@
 	
 	</test> 
 	
-	 
+
 	<test name="Prueba16" >
 		<classes>	
 			<!--Tabela De Apoio E Social > Diagnostico De Processos-->
@@ -90,7 +87,6 @@
 		</classes>
 	
 	</test> 
-
 
 	<test name="Prueba18" >
 		<classes>
@@ -160,8 +156,8 @@
 		</classes>
 	
 	</test>
-<<<<<<< HEAD
-	<test name="Prueba26" >
+	
+		<test name="Prueba26" >
 		<classes> 
 			<!--Tabela De Apoio E Social > Tabela 16  - SGDP-->
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPCriar"></class>
@@ -172,9 +168,8 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
 			
 			</classes>
-=======
->>>>>>> refs/remotes/origin/Kenssy
-	
+
+	</test>
 	
 	<test name="Prueba27" >
 		<classes> 

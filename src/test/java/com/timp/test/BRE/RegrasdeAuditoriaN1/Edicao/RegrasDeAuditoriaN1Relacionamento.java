@@ -28,11 +28,11 @@ public class RegrasDeAuditoriaN1Relacionamento extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-			  driver.close();
+		driver.close();
 	}
 	
 	@Test()
-	public void editar() {
+	public void relacionamento() {
 		loginTC.login();
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasDeAuditoriaN1RelacionamentoPO.editar();

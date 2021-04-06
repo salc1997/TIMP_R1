@@ -61,8 +61,10 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseSteven{
 	}
 	
 	public ArrayList<Boolean> tributo(){
+		sleep(2000);
 		cenarios.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);	
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
@@ -112,6 +114,9 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseSteven{
 		}
 		sleep(4000);
 		filtro.sendKeys(Keys.ENTER);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		attributeToBeXpath("//*[@id=\"tax\"]/div/div[2]/div", "class", "base-select-wrapper");
 		sleep(8000);
 	

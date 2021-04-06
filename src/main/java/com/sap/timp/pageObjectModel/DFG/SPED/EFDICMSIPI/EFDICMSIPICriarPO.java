@@ -736,7 +736,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		waitExpectElement(nomeRegra);
 		sleep(2000);
 		
-		nomeRegra.sendKeys("Teste Automatizado DFG Massi");
+		nomeRegra.sendKeys("Teste Automatizado DFG Massi3");
 		sleep(1000);
 		
 		
@@ -967,7 +967,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000); 
 		
 		nome.sendKeys("Teste Automatizado");
-		sleep(1000);
+		sleep(3000);
 		
 		leiauteE.click();
 		sleep(1000);

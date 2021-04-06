@@ -82,7 +82,7 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBaseFernando {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RegraDeEscrituracao");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement acao = driver.findElement(

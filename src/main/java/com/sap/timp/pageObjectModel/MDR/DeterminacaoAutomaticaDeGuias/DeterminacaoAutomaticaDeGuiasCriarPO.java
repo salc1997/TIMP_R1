@@ -26,6 +26,8 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	public WebElement opcaoempresa;
 	
 	
+	
+	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
 	public WebElement descricao;
 	
@@ -85,20 +87,19 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		sleep(2000);
 		//criaçao
 		novodeterminacaoautomaticadeguias.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		empresa.click();
-		
 		sleep(2000);
-		
 		opcaoempresa.click();
-		
+		sleep(2000);
+		closeSelectTypeCheckbox(empresa);
 		sleep(2000);
 		
-		empresa.sendKeys(Keys.ESCAPE);
 		
-		sleep(2000);
+		
 		
 		String data=fechaActual();
 		dataincial.sendKeys(data);

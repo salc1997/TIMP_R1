@@ -1,137 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-=======
-=======
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Fernando
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
-=======
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
->>>>>>> refs/remotes/origin/Kenssy
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
-=======
-      <class name="com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario">
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar">
->>>>>>> refs/remotes/origin/Kenssy
+      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="afterClass"/>
-          <include name="criar"/>
->>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/Fernando
-          <include name="afterClass"/>
-          <include name="Lixeria"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/Yessy
-          <include name="afterClass"/>
           <include name="editar"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="CriarSaldo"/>
-=======
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Kenssy
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
-=======
-      </class> <!-- com.timp.test.CALENDAR.ParametrosGerais.AbrirCalendario -->
->>>>>>> refs/remotes/origin/Yessy
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-=======
-      <class name="com.timp.test.MDR.SequenciaAcesso.SequenciaCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.SequenciaAcesso.SequenciaCriar -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir">
-        <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criarComCopiaExcluir"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir">
-        <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="ver"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar">
-        <methods>
-          <include name="executarGravar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
->>>>>>> refs/remotes/origin/Kenssy
+      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar -->
     </classes>
-  </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

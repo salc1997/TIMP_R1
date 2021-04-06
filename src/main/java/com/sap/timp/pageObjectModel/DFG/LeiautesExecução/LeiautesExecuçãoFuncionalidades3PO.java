@@ -405,9 +405,9 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBaseMassiel{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);

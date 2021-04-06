@@ -30,7 +30,7 @@ public class RegrasDeAuditoriaN1RelacionamentoPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"14\"]/div[2]")
 	public WebElement opcaorelacionamentotp1;
 	
-	@FindBy(xpath = "//div[@id=\"47\"]/div[2]")
+	@FindBy(xpath = "//div[@id=\"58\"]/div[2]")
 	public WebElement opcaorelacionamentotc2;
 
 		
@@ -214,7 +214,7 @@ String url = driver.getCurrentUrl();
 				sucesso = true;
 			}
 		}else {
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-47\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-58\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");

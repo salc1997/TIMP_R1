@@ -76,7 +76,7 @@ public class CadastroNotaFiscalCriarPO extends TestBaseSteven{
 		parametrosCriacaoNotaFiscal.click();
 		sleep(2000);
 		
-		if(url.contains("td1") || url.contains("tq1")) {
+		if(url.contains("td1")) {
 			cadastroNotaFiscal.click();
 			sleep(2000);
 		}

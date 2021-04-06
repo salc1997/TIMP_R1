@@ -160,7 +160,6 @@
 		</classes>
 	
 	</test>
-<<<<<<< HEAD
 	<test name="Prueba26" >
 		<classes> 
 			<!--Tabela De Apoio E Social > Tabela 16  - SGDP-->
@@ -172,9 +171,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
 			
 			</classes>
-=======
->>>>>>> refs/remotes/origin/Kenssy
-	
+	</test>
 	
 	<test name="Prueba27" >
 		<classes> 

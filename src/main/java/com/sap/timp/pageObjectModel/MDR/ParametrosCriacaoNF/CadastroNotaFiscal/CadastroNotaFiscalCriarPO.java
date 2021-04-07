@@ -72,7 +72,7 @@ public class CadastroNotaFiscalCriarPO extends TestBaseSteven{
 		
 		String url = driver.getCurrentUrl();
 		
-		
+	
 		
 		sleep(2000);
 		parametrosCriacaoNotaFiscal.click();

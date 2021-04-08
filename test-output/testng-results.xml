@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-06T16:17:38Z" name="Default suite" finished-at="2021-04-06T16:19:31Z" duration-ms="113536">
+  <suite started-at="2021-04-08T17:08:41Z" name="Default suite" finished-at="2021-04-08T17:10:14Z" duration-ms="92276">
     <groups>
     </groups>
-    <test started-at="2021-04-06T16:17:38Z" name="Default test" finished-at="2021-04-06T16:19:31Z" duration-ms="113536">
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar@20f5281c]" started-at="2021-04-06T16:17:38Z" name="beforeClass" finished-at="2021-04-06T16:17:53Z" duration-ms="15579" status="PASS">
+    <test started-at="2021-04-08T17:08:41Z" name="Default test" finished-at="2021-04-08T17:10:14Z" duration-ms="92276">
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@20f5281c]" started-at="2021-04-08T17:08:41Z" name="beforeClass" finished-at="2021-04-08T17:09:03Z" duration-ms="21716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar@20f5281c]" started-at="2021-04-06T16:17:53Z" name="criar" finished-at="2021-04-06T16:19:31Z" duration-ms="97916" status="PASS">
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@20f5281c]" started-at="2021-04-08T17:09:03Z" name="filtro" finished-at="2021-04-08T17:10:14Z" duration-ms="70520" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar@20f5281c]" started-at="2021-04-06T16:19:31Z" name="afterClass" finished-at="2021-04-06T16:19:31Z" duration-ms="0" status="PASS">
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@20f5281c]" started-at="2021-04-08T17:10:14Z" name="afterClass" finished-at="2021-04-08T17:10:14Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar -->
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

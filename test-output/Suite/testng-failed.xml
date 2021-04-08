@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <test thread-count="5" name="CrescenteEDecrescente(failed)">
 =======
 <<<<<<< HEAD
@@ -12,7 +13,21 @@
 <<<<<<< HEAD
   <test thread-count="5" name="Regras de Auditoria N2(failed)">
 =======
+=======
+  <test thread-count="5" name="ATR - Arquivos(failed)">
+    <classes>
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+        <methods>
+          <include name="filtro"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+    </classes>
+  </test> <!-- ATR - Arquivos(failed) -->
+>>>>>>> refs/heads/Fernando
   <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
+<<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
   <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
@@ -27,7 +42,10 @@
 =======
   <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Executados &gt; PainelICMS(failed)">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -380,28 +398,21 @@
         </methods>
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXExcluir -->
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar">
+=======
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar -->
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXFiltroID">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="filtro"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXFiltroID -->
-    </classes>
-  </test> <!-- ValoresParaMetodoPVEX(failed) -->
-  <test thread-count="5" name="ValoresParaMetodoPECEX(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar">
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa">
         <methods>
           <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
         </methods>
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXCriar -->
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPECEX.ValoresParaMetodoPECEXFiltroID">
@@ -524,25 +535,13 @@
       <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluir">
         <methods>
           <include name="afterClass"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="Excluir"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisExcluir -->
-      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisEditar">
-        <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisEditar -->
-      <class name="com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar -->
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- R1070 Dados Adicionais(failed) -->
   <test thread-count="5" name="R 1070 Dados Suspenso(failed)">
     <classes>
@@ -652,7 +651,10 @@
   </test> <!-- Regras de Auditoria N2(failed) -->
 >>>>>>> refs/remotes/origin/Yessy
 =======
+=======
+>>>>>>> refs/heads/Fernando
   </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
+<<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
 =======
   </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
@@ -682,4 +684,6 @@
     </classes>
   </test> <!-- Gestao De Credito Tributario ICMS > Executados > PainelICMS(failed) -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/heads/Fernando
 </suite> <!-- Failed suite [Suite] -->

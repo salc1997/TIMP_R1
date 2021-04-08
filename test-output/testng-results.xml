@@ -12,6 +12,7 @@
   </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite started-at="2021-04-06T16:17:38Z" name="Default suite" finished-at="2021-04-06T16:19:31Z" duration-ms="113536">
 =======
   <suite started-at="2021-04-06T19:31:13Z" name="Default suite" finished-at="2021-04-06T19:50:28Z" duration-ms="1155452">
@@ -19,8 +20,12 @@
 =======
   <suite started-at="2021-04-06T23:02:04Z" name="Default suite" finished-at="2021-04-06T23:05:02Z" duration-ms="178873">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-04-08T17:08:41Z" name="Default suite" finished-at="2021-04-08T17:10:14Z" duration-ms="92276">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-04-06T16:17:38Z" name="Default test" finished-at="2021-04-06T16:19:31Z" duration-ms="113536">
@@ -36,9 +41,15 @@
       <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa@95e33cc]" started-at="2021-04-06T23:02:04Z" name="beforeClass" finished-at="2021-04-06T23:02:16Z" duration-ms="11990" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2021-04-08T17:08:41Z" name="Default test" finished-at="2021-04-08T17:10:14Z" duration-ms="92276">
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@20f5281c]" started-at="2021-04-08T17:08:41Z" name="beforeClass" finished-at="2021-04-08T17:09:03Z" duration-ms="21716" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar@20f5281c]" started-at="2021-04-06T16:17:53Z" name="criar" finished-at="2021-04-06T16:19:31Z" duration-ms="97916" status="PASS">
@@ -53,8 +64,12 @@
         </test-method> <!-- mdrEntrar -->
         <test-method signature="criar()[pri:2, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2@4681c175]" started-at="2021-04-06T19:31:55Z" name="criar" finished-at="2021-04-06T19:34:07Z" duration-ms="132368" status="PASS">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@20f5281c]" started-at="2021-04-08T17:09:03Z" name="filtro" finished-at="2021-04-08T17:10:14Z" duration-ms="70520" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar@20f5281c]" started-at="2021-04-06T16:19:31Z" name="afterClass" finished-at="2021-04-06T16:19:31Z" duration-ms="0" status="PASS">
@@ -297,9 +312,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- ExcluirEmMassa -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa@95e33cc]" started-at="2021-04-06T23:05:02Z" name="afterClass" finished-at="2021-04-06T23:05:02Z" duration-ms="45" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@20f5281c]" started-at="2021-04-08T17:10:14Z" name="afterClass" finished-at="2021-04-08T17:10:14Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar -->
@@ -309,6 +329,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

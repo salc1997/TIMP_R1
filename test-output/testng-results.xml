@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-07T05:44:16Z" name="Default suite" finished-at="2021-04-07T05:49:03Z" duration-ms="287226">
+  <suite started-at="2021-04-09T05:35:09Z" name="Default suite" finished-at="2021-04-09T05:36:53Z" duration-ms="103868">
     <groups>
     </groups>
-    <test started-at="2021-04-07T05:44:16Z" name="Default test" finished-at="2021-04-07T05:49:03Z" duration-ms="287226">
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalVisualizar@273444fe]" started-at="2021-04-07T05:44:16Z" name="beforeClass" finished-at="2021-04-07T05:45:20Z" duration-ms="64080" status="PASS">
+    <test started-at="2021-04-09T05:35:09Z" name="Default test" finished-at="2021-04-09T05:36:53Z" duration-ms="103868">
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:35:09Z" name="beforeClass" finished-at="2021-04-09T05:35:23Z" duration-ms="14278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Visualizar()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalVisualizar@273444fe]" started-at="2021-04-07T05:45:20Z" name="Visualizar" finished-at="2021-04-07T05:48:51Z" duration-ms="210553" status="PASS">
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:35:23Z" name="excluir" finished-at="2021-04-09T05:36:53Z" duration-ms="89327" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalVisualizar@273444fe]" started-at="2021-04-07T05:48:51Z" name="afterClass" finished-at="2021-04-07T05:49:03Z" duration-ms="12576" status="PASS">
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:36:53Z" name="afterClass" finished-at="2021-04-09T05:36:53Z" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalVisualizar -->
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

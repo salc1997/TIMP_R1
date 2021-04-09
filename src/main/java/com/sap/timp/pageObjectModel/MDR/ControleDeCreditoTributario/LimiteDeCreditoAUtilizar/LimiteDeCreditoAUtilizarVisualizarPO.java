@@ -67,16 +67,16 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBaseSteven {
 	public WebElement biblioteca;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar  uma  Empresa\"]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div/div/div/div")
 	public WebElement empresaed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione Filial\"]")
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div/div/div")
 	public WebElement filialed;
 	
 	@FindBy(xpath = "//div[@id=\"multipleControlerId-23\"]")
 	public WebElement tributoed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Limite de Utilização do Crédito\"]")
+	@FindBy(xpath = "//div[@id=\"creditUtilizationLimit\"]/div/div/input")
 	public WebElement utilizacaodecreditoed;
 	
 	
@@ -182,8 +182,12 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String empresaeditar=empresaed.getAttribute("value");
-		String filialeditar=filialed.getAttribute("value");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		String empresaeditar=empresaed.getText();
+		String filialeditar=filialed.getText();
 		//String tributoeditar=tributoed.getText();
 		String utilizacaodecreditoeditar = utilizacaodecreditoed.getAttribute("value");
 	

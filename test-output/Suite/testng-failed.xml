@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="ParametrosParaTP(failed)">
     <classes>
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar">
@@ -18,31 +19,23 @@
         </methods>
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar -->
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir">
+=======
+  <test thread-count="5" name="TipoDeTributoContaContabil(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabiExcluirMassa">
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
           <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir -->
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluirEnMasa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluirEmMasa"/>
-          <include name="beforeClass"/>
           <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluirEnMasa -->
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroID">
-        <methods>
-          <include name="filtroId"/>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroID -->
+      </class> <!-- com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabiExcluirMassa -->
     </classes>
-  </test> <!-- ParametrosParaTP(failed) -->
-  <test thread-count="5" name="RegistroECAC(failed)">
+  </test> <!-- TipoDeTributoContaContabil(failed) -->
+  <test thread-count="5" name="S1060AmbientesDeTrablho(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar">
         <methods>
           <include name="Visualizar"/>
@@ -213,7 +206,15 @@
       </class> <!-- com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisEditar -->
       <class name="com.timp.test.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirEmMasa">
         <methods>
+=======
+      <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
           <include name="excluirEmMassa"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
@@ -271,12 +272,25 @@
           <include name="afterClass"/>
           <include name="criar"/>
           <include name="beforeClass"/>
+=======
+          <include name="Excluir"/>
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriar -->
+=======
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa -->
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- R1070 Dados Adicionais(failed) -->
   <test thread-count="5" name="R 1070 Dados Suspenso(failed)">
+=======
+  </test> <!-- S1060AmbientesDeTrablho(failed) -->
+  <test thread-count="5" name="S1200RemuneracaoDeTrabalhador(failed)">
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoEditar">
         <methods>
           <include name="beforeClass"/>
@@ -311,4 +325,72 @@
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar -->
     </classes>
   </test> <!-- ValoresParaMetodoCAP(failed) -->
+=======
+      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes -->
+      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir -->
+      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar -->
+    </classes>
+  </test> <!-- S1200RemuneracaoDeTrabalhador(failed) -->
+  <test thread-count="5" name="S1250AquisicaoDeProducaoRural(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar -->
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir -->
+      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar -->
+    </classes>
+  </test> <!-- S1250AquisicaoDeProducaoRural(failed) -->
+  <test thread-count="5" name="ParametrosModeloDeApuracaoTP(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
+    </classes>
+  </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

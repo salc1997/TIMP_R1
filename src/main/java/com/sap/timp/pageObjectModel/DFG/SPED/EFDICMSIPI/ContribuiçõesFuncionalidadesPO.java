@@ -728,7 +728,7 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		waitExpectElement(nomeRegra);
 		sleep(2000);
 		
-		nomeRegra.sendKeys("Teste Automatizado DFG Cristhian");
+		nomeRegra.sendKeys("Teste Automatizado DFG Ken Prueba");
 		sleep(1000);
 		
 		
@@ -769,10 +769,10 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		estruturaRO.click();
 		sleep(1000);
 		
-//		caracteristica.click();
-//		sleep(1000);
-//		caracterisiticaO.click();
-//		sleep(3000);
+		caracteristica.click();
+		sleep(1000);
+		caracterisiticaO.click();
+		sleep(3000);
 		actionsMoveToElementElement(dataVigenciaR);
 		sleep(3000);
 		

@@ -88,7 +88,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		
 		invisibilityOfElementOverlay();
 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RegraDeEscrituracao");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(

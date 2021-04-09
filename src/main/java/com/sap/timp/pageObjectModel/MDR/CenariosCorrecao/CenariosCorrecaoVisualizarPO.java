@@ -121,6 +121,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseSteven{
 		visibilityOfElementXpath("//span[@id=\"tax\"]");
 		sleep(1000);
 		
+		
 		String tributoV1 = tributoV.getText();
 		String codigoV1 = codigoV.getText();
 		String descricaoV1 = descricaoV.getText();
@@ -129,6 +130,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseSteven{
 		String dataVigenciaV1 = dataVigenciaV.getText();
 		
 		
+		System.out.println("Datos del Visualizar");
 		System.out.println(tributoV1);
 		System.out.println(codigoV1);
 		System.out.println(descricaoV1);
@@ -162,7 +164,8 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseSteven{
 		String campoE1 = campoE.getAttribute("value");
 		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
 		
-		
+		System.out.println("");
+		System.out.println("Datos del Editar");
 		System.out.println(tributoE1);
 		System.out.println(codigoE1);
 		System.out.println(descricaoE1);

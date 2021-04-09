@@ -63,7 +63,7 @@ public class RegrasDeMensagensVisualizarPO extends TestBaseSteven{
 		String	id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println("Ultimo registro: " + id);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegraDeMensagens");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualização\"]"));

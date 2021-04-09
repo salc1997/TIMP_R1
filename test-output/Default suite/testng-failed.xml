@@ -4,26 +4,23 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
-      <class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar">
 =======
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
->>>>>>> refs/remotes/origin/Yessy
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
 <<<<<<< HEAD
-          <include name="visualizar"/>
-=======
->>>>>>> refs/remotes/origin/Yessy
+          <include name="editar"/>
           <include name="afterClass"/>
-          <include name="verificacaoBloco6"/>
-          <include name="excluirDFG"/>
-          <include name="verificacaoBloco1"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar -->
 =======
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
->>>>>>> refs/remotes/origin/Yessy
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
+>>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -97,12 +97,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 	public void EditarBlocoApuracao() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.editarBlocoApuracao();
-		
-
 		assertTrue(sucesso, Editar);
-
-
-
 	}
 	
 	
@@ -185,8 +180,4 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		assertTrue(sucesso, Eliminado);
 
 	}
-	
-	
-	
-	
 }

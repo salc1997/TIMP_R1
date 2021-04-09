@@ -99,7 +99,6 @@ public class TabelaCodigoDaSituaçaoTributariaEditarPO extends TestBaseSteven{
 		String enviar = "Teste da descricao";
 
 		descricao.clear();
-		sleep(2000);
 		descricao.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();

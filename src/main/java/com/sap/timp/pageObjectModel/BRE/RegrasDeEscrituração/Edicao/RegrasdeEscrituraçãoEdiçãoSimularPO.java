@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class BRERegradeEscrituraçãoEdiçãoSimularPO extends TestBaseSteven {
+public class RegrasdeEscrituraçãoEdiçãoSimularPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-b_rules\"]")
@@ -117,7 +117,7 @@ public class BRERegradeEscrituraçãoEdiçãoSimularPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnAceitar;
 	
-	public BRERegradeEscrituraçãoEdiçãoSimularPO() {
+	public RegrasdeEscrituraçãoEdiçãoSimularPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -135,7 +135,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter2();
+	String idRegistro = idObter("RegraDeEscrituracao");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

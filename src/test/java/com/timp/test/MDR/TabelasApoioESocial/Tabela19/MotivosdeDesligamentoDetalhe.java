@@ -14,7 +14,7 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela02.FinanciamentoDeAposEspDetalhePO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoDetalhePO;
 
-public class MotivodeDesligamentoDetalhe extends TestBaseFernando{
+public class MotivosdeDesligamentoDetalhe extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	MotivosdeDesligamentoDetalhePO motivosdeDesligamentoDetalhePO;

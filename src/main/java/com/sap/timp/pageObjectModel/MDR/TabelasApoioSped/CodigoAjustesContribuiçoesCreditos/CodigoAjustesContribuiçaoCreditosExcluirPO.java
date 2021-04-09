@@ -75,8 +75,6 @@ public class CodigoAjustesContribuiçaoCreditosExcluirPO extends TestBaseSteven {
 		
 		ajusteeinformacao.click();
 		sleep(2000);
-		
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -103,7 +101,14 @@ public class CodigoAjustesContribuiçaoCreditosExcluirPO extends TestBaseSteven {
 		sleep(2000);
 		
 
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id = "0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println(id);
+		}
 		
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro);

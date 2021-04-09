@@ -750,6 +750,10 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -949,7 +953,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 			btnRaiz2.click();
 		}
 		
-		if(URL.contains("tq1")) {
+		if(URL.contains("tq1") || URL.contains("tc2")) {
 			btnRaiz.click();
 		}
 		

@@ -37,6 +37,9 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@id][text()=\"Empresa/Filial\"]")
 	public WebElement opcaoestruturadevalidacao;
 	
+	@FindBy(xpath = "//li[@id][text()=\"Empresa / Filial\"]")
+	public WebElement opcaoestruturadevalidacaoTQ1;
+	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes Fiscais + Empresa/Filial\"]")
 	public WebElement opcaoestruturadevalidacaotp1;
 	
@@ -167,6 +170,9 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 		sleep(2000);
 		if(tp1 == true) {
 			opcaoestruturadevalidacaotp1.click();
+			sleep(2000);
+		}else if (tq1 == true) {
+			opcaoestruturadevalidacaoTQ1.click();
 			sleep(2000);
 		}else {
 			opcaoestruturadevalidacao.click();

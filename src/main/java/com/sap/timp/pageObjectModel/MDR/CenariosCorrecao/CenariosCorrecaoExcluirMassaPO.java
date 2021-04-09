@@ -23,9 +23,13 @@ public class CenariosCorrecaoExcluirMassaPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//*[@id=\"correction-object\"]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement objetoCorrecao;
+	@FindBy(xpath = "//div[@class=\"list-item\"]/div[text()=\"NF\"]")
+	public WebElement opcObjetoCorrecao;
 	
 	@FindBy(xpath = "//*[@id=\"web-service\"]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement servicoWeb;
+	@FindBy(xpath = "//div[@class=\"list-item\"]/div[text()=\"TMFNotaFiscalCorrectionsSyncIn\"]")
+	public WebElement opcServicoWeb;
 	
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
@@ -84,11 +88,13 @@ public class CenariosCorrecaoExcluirMassaPO extends TestBaseFernando{
 		
 		objetoCorrecao.click();
 		sleep(1000);
-		opc.click();
+		opcObjetoCorrecao.click();
 		sleep(1000);
+		
 		servicoWeb.click();
 		sleep(1000);
-		opc.click();
+		opcServicoWeb.click();
+
 		sleep(3000);
 		waitExpectElement(btnAgregarCampo);
 		btnAgregarCampo.sendKeys(Keys.ENTER);

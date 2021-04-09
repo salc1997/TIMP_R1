@@ -85,14 +85,13 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBaseSteven{
 		sleep(3000);
 		waitExpectXpath("//div[@class=\"day\"][1]");
 		sleep(2000);
-
-
+		
+		String tituloS = titulo.getText();
 		// System.out.println("Titulo: " + tituloS);
 
-		// Elemento del Calendar 
-		
 		WebElement setaesquerda = driver
 				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+
 		
 		boolean calendarMonthString = true;	
 		
@@ -106,12 +105,12 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBaseSteven{
 				sleep(2000);
 			}
 		}
-		
-			WebElement dia18 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"18\"]"));
-			dia18.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+
+		WebElement dia18 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"18\"]"));
+		dia18.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		actionsMoveToElementElement(pesquisar);

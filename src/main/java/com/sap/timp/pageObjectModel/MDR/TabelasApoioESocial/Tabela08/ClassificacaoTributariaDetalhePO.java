@@ -60,7 +60,7 @@ public class ClassificacaoTributariaDetalhePO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter("TiposDeDependentes");
+		String idRegistro = idObter("ClassificacaoTributaria");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement açao = driver.findElement(
@@ -73,7 +73,7 @@ public class ClassificacaoTributariaDetalhePO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(10000);
 
 		String empresaD1 = descripcion.getText();
 		String razaoD1 = codigo.getText();

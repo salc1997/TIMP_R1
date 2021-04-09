@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Cadastros IRPJ/CSLL &gt; Tabela de Apoio ECF(failed)">
+=======
+  <test thread-count="5" name="SCANC &gt; Relacionamento entre Quadros(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar">
+=======
+      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
           <include name="criar"/>
           <include name="beforeClass"/>
@@ -134,8 +143,38 @@
         <methods>
           <include name="beforeClass"/>
           <include name="visualizar"/>
+=======
+          <include name="beforeClass"/>
+          <include name="editar"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+        </methods>
+      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar -->
+    </classes>
+  </test> <!-- SCANC > Relacionamento entre Quadros(failed) -->
+  <test thread-count="5" name="Parâmetros de criação de NF &gt; Cadastro de Nota Fiscal(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
           <include name="afterClass"/>
         </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar -->
+    </classes>
+  </test> <!-- Parâmetros de criação de NF > Cadastro de Nota Fiscal(failed) -->
+  <test thread-count="5" name="Ocorrência Fiscal &gt; Status de Ocorrência Fiscal(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar -->
       <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa">
         <methods>
@@ -153,18 +192,88 @@
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados -->
       <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
+=======
+      </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluir -->
+    </classes>
+  </test> <!-- Ocorrência Fiscal > Status de Ocorrência Fiscal(failed) -->
+  <test thread-count="5" name="Parâmetros de Oficialização de Livros(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar -->
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir -->
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosDetalhes">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosDetalhes -->
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar -->
+      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar -->
+    </classes>
+  </test> <!-- Parâmetros de Oficialização de Livros(failed) -->
+  <test thread-count="5" name="Tabela de Apoio ECF(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirMasas">
+        <methods>
+          <include name="ExcluirEmMassa"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirMasas -->
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF">
+        <methods>
+          <include name="afterClass"/>
+          <include name="novaTabela"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF -->
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar -->
       <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar">
+=======
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir -->
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="atualizar"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar -->
       <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes">
         <methods>
@@ -178,6 +287,24 @@
   <test thread-count="5" name="Tabela de Apoio ECD &gt; Código dos Fatos Contábeis(failed)">
     <classes>
       <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar">
+=======
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar -->
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute">
+        <methods>
+          <include name="novaTabela"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute -->
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="visualizar"/>
           <include name="afterClass"/>
@@ -197,6 +324,7 @@
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditar -->
       <class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisCriar">
         <methods>
@@ -213,7 +341,18 @@
           <include name="excluir"/>
         </methods>
       </class> <!-- com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExcluirMassa -->
+=======
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar -->
+      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Tabela de Apoio ECD > Código dos Fatos Contábeis(failed) -->
   <test thread-count="5" name=" Tabela de Apoio ECD &gt; Fatos Contábeis(failed)">
     <classes>
@@ -270,4 +409,93 @@
       </class> <!-- com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio -->
     </classes>
   </test> <!-- Rateiro Consorcio(failed) -->
+=======
+  </test> <!-- Tabela de Apoio ECF(failed) -->
+  <test thread-count="5" name="Controle de Crédito Tributário &gt; Status para BCE(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar -->
+    </classes>
+  </test> <!-- Controle de Crédito Tributário > Status para BCE(failed) -->
+  <test thread-count="5" name="Parametros Criacao NF &gt; Cadastro Fornecedor(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir -->
+      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar -->
+      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar -->
+      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtroId"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId -->
+      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar -->
+    </classes>
+  </test> <!-- Parametros Criacao NF > Cadastro Fornecedor(failed) -->
+  <test thread-count="5" name=" Preço de Transferência &gt; Commoditie para TP(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID">
+        <methods>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID -->
+    </classes>
+  </test> <!--  Preço de Transferência > Commoditie para TP(failed) -->
+  <test thread-count="5" name="Preco de transferencia &gt; Definicao Vinculacao(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID">
+        <methods>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID -->
+    </classes>
+  </test> <!-- Preco de transferencia > Definicao Vinculacao(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

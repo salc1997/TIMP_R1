@@ -2,15 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-04-09T06:54:59Z" name="Default suite" finished-at="2021-04-09T07:26:56Z" duration-ms="1916634">
+=======
+  <suite started-at="2021-04-09T05:35:09Z" name="Default suite" finished-at="2021-04-09T05:36:53Z" duration-ms="103868">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-04-09T06:54:59Z" name="Default test" finished-at="2021-04-09T07:26:56Z" duration-ms="1916634">
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar@5afa3c9]" started-at="2021-04-09T06:54:59Z" name="beforeClass" finished-at="2021-04-09T06:55:12Z" duration-ms="12944" status="PASS">
+=======
+    <test started-at="2021-04-09T05:35:09Z" name="Default test" finished-at="2021-04-09T05:36:53Z" duration-ms="103868">
+      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:35:09Z" name="beforeClass" finished-at="2021-04-09T05:35:23Z" duration-ms="14278" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar@5afa3c9]" started-at="2021-04-09T06:55:12Z" name="criar" finished-at="2021-04-09T07:26:55Z" duration-ms="1903431" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
@@ -80,8 +91,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:35:23Z" name="excluir" finished-at="2021-04-09T05:36:53Z" duration-ms="89327" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar@5afa3c9]" started-at="2021-04-09T07:26:55Z" name="afterClass" finished-at="2021-04-09T07:26:56Z" duration-ms="239" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
@@ -145,10 +160,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:36:53Z" name="afterClass" finished-at="2021-04-09T05:36:53Z" duration-ms="235" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar -->
+=======
+      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

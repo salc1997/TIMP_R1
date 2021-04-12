@@ -113,17 +113,18 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseSteven {
 		gravar.click();
 		sleep(2000);
 		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		biblioteca.click();
 		
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

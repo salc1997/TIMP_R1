@@ -37,7 +37,7 @@ public class CodigoFatosContabeisCriar extends TestBaseFernando {
 	}
 
 	@Test()
-	public void mdrEntrar() {
+	public void criar() {
 		loginTC.login();
 		boolean sucesso3 = acesarMDRPO.acessarMDR();
 		assertTrue(sucesso3, "The element is not present");

@@ -190,7 +190,7 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
 		public WebElement fecharCalendario;
 		
-		
+
 	public TarefasGatewayAutomaticoPO() {
 		PageFactory.initElements(driver, this);
 	}

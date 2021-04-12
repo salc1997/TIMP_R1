@@ -2,6 +2,7 @@
 package com.sap.timp.base;
 
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -49,7 +50,13 @@ public class TestBaseMassiel extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+<<<<<<< HEAD
 		driver.get(tp1);
+=======
+
+		driver.get(tc2);
+>>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+
 
 	   return driver;
 	}
@@ -280,6 +287,17 @@ public class TestBaseMassiel extends TestBaseSteven {
 		return df.format(ayer);
 
 	}
+	
+	public static boolean validarFecha(String fecha) {
+        try {
+            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+            formatoFecha.setLenient(false);
+            formatoFecha.parse(fecha);
+        } catch (ParseException e) {
+            return false;
+        }
+        return true;
+    }
 	
 }
 

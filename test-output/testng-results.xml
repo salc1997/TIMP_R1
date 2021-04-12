@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-12T06:06:34Z" name="Default suite" finished-at="2021-04-12T06:10:41Z" duration-ms="246328">
+  <suite started-at="2021-04-12T14:37:41Z" name="Default suite" finished-at="2021-04-12T14:48:20Z" duration-ms="638260">
     <groups>
     </groups>
-    <test started-at="2021-04-12T06:06:34Z" name="Default test" finished-at="2021-04-12T06:10:41Z" duration-ms="246328">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:06:34Z" name="beforeClass" finished-at="2021-04-12T06:06:56Z" duration-ms="21737" status="PASS">
+    <test started-at="2021-04-12T14:37:41Z" name="Default test" finished-at="2021-04-12T14:48:20Z" duration-ms="638260">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:37:41Z" name="beforeClass" finished-at="2021-04-12T14:39:44Z" duration-ms="122286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Editar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:06:56Z" name="Editar" finished-at="2021-04-12T06:10:41Z" duration-ms="224501" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:39:44Z" name="ingresar" finished-at="2021-04-12T14:39:59Z" duration-ms="15268" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:10:41Z" name="afterClass" finished-at="2021-04-12T06:10:41Z" duration-ms="73" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="mdrEntrar()[pri:1, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:39:59Z" name="mdrEntrar" finished-at="2021-04-12T14:40:59Z" duration-ms="59559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mdrEntrar -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:40:59Z" name="criar" finished-at="2021-04-12T14:41:40Z" duration-ms="41423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method signature="separadores()[pri:2, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:41:40Z" name="separadores" finished-at="2021-04-12T14:44:26Z" duration-ms="166166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- separadores -->
+        <test-method signature="comparar()[pri:3, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:44:26Z" name="comparar" finished-at="2021-04-12T14:44:41Z" duration-ms="14617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparar -->
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:44:41Z" name="criarConfiguracao" finished-at="2021-04-12T14:45:38Z" duration-ms="57137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="executar()[pri:5, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:45:38Z" name="executar" finished-at="2021-04-12T14:47:01Z" duration-ms="82972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar -->
+        <test-method signature="excluirConfiguracao()[pri:6, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:47:01Z" name="excluirConfiguracao" finished-at="2021-04-12T14:47:31Z" duration-ms="30101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracao -->
+        <test-method signature="excluirLeiaute()[pri:7, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:47:31Z" name="excluirLeiaute" finished-at="2021-04-12T14:48:20Z" duration-ms="48690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirLeiaute -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:48:20Z" name="afterClass" finished-at="2021-04-12T14:48:20Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar -->
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

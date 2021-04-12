@@ -1098,12 +1098,13 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		if (resultado.isDisplayed()) {
 			exclucao = driver.findElements(By.xpath("//div[@class=\"tr-no-data\"]/div[contains(text(),\"Nenhum resultado\")]")).size();
-			////div[@class="tr-no-data" and not (@tabindex="0")]/div[contains(text(),"Nenhum resultado")]
+			//exclucao = driver.findElements(By.xpath("//div[@class=\"tr-no-data\"]/div[contains(text(),\"Nenhum resultado\")]")).size();
+			//div[@class="tr-no-data" and not (@tabindex="0")]/div[contains(text(),"Nenhum resultado")]
 		}
 		
 		System.out.println(exclucao);

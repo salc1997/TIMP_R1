@@ -20,7 +20,7 @@ public class AcessarTCCPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-balanceConsolidation\"]")
 	public WebElement cadastro;
 	
-	@FindBy(xpath = "//li[@identifier=\"accordion-item-balanceConsolidation\"]")
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-balanceConsolidation\"")
 	public WebElement mostrar;
 	
 

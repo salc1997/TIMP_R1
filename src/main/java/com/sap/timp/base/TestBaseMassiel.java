@@ -50,15 +50,9 @@ public class TestBaseMassiel extends TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-<<<<<<< HEAD
-		driver.get(tp1);
-=======
-
 		driver.get(tc2);
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 
-
-	   return driver;
+	    return driver;
 	}
 	//PARA PODER EJECUTAR TA-518
 	public String dataanterior() {

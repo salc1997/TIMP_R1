@@ -125,7 +125,7 @@ public class Registro1501CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "/html/body/div[4]/div[2]/div[2]/div[1]/div/div/span")
 	public WebElement m1;
 	
-	@FindBy(xpath = "/html/body/div[4]/div[2]/div[2]/div[1]/div/div/span")
+	@FindBy(xpath = "//span[text()=\"1A\"]")
 	public WebElement a1;
 	
 	public Registro1501CriarPO() {
@@ -152,6 +152,7 @@ public class Registro1501CriarPO extends TestBaseSteven{
 			tp1 = true;
 		}
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();

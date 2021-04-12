@@ -71,6 +71,7 @@ public class Registro1501VisualizarPO extends TestBaseSteven{
 	}
 	
 	public ArrayList<Boolean> visualizar() {
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
@@ -144,6 +145,10 @@ public class Registro1501VisualizarPO extends TestBaseSteven{
 		sleep(1000);
 		editar.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+		
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
 		

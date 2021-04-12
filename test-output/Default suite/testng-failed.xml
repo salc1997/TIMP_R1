@@ -3,51 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar">
-=======
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa">
->>>>>>> refs/heads/Fernando
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
         <methods>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="visualizar"/>
-=======
->>>>>>> refs/remotes/origin/Yessy
-          <include name="afterClass"/>
-          <include name="verificacaoBloco6"/>
-          <include name="excluirDFG"/>
-          <include name="verificacaoBloco1"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar -->
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoFuncionalidades2 -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-          <include name="editar"/>
-=======
           <include name="criar"/>
->>>>>>> refs/heads/Fernando
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="Excluir"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa -->
->>>>>>> refs/heads/Fernando
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -34,12 +34,12 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExcluirPO extends TestBaseMas
 	public boolean Excluir() {
 		gestaoCredito.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		configuracaoEExecucao.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
 		painelCréditoICMS.click();

@@ -2,10 +2,10 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoT
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300CriarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300EditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,17 +13,17 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroM300Criar extends TestBaseMassiel {
+public class RegistroM300Editar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
-	RegistroM300CriarPO registroM300CriarPO;
+	RegistroM300EditarPO registroM300EditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
-		registroM300CriarPO = new RegistroM300CriarPO();
+		registroM300EditarPO = new RegistroM300EditarPO();
 	}
 
 	@AfterClass
@@ -33,14 +33,10 @@ public class RegistroM300Criar extends TestBaseMassiel {
 
 	@Test()
 	public void criar() {
-
 		loginTC.login();
-
 		acessarTCCPO.acessarTCC();
 
-		boolean sucesso = registroM300CriarPO.Crear();
-
-		assertTrue(sucesso, Criar);
-
+		boolean sucesso = registroM300EditarPO.editar();
+		assertTrue(sucesso, Editar);
 	}
 }

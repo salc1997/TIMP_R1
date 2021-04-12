@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-04-09T14:06:30Z" name="Default suite" finished-at="2021-04-09T14:07:54Z" duration-ms="84092">
+=======
+  <suite started-at="2021-04-12T06:06:34Z" name="Default suite" finished-at="2021-04-12T06:10:41Z" duration-ms="246328">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-04-09T14:06:30Z" name="Default test" finished-at="2021-04-09T14:07:54Z" duration-ms="84092">
       <class name="com.timp.test.TCC.AcessarTCC">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:06:30Z" name="beforeClass" finished-at="2021-04-09T14:06:41Z" duration-ms="11395" status="PASS">
+=======
+    <test started-at="2021-04-12T06:06:34Z" name="Default test" finished-at="2021-04-12T06:10:41Z" duration-ms="246328">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:06:34Z" name="beforeClass" finished-at="2021-04-12T06:06:56Z" duration-ms="21737" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:1, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:06:41Z" name="login" finished-at="2021-04-09T14:06:48Z" duration-ms="6817" status="PASS">
+=======
+        <test-method signature="Editar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:06:56Z" name="Editar" finished-at="2021-04-12T06:10:41Z" duration-ms="224501" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method signature="taaEntrar()[pri:2, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:06:48Z" name="taaEntrar" finished-at="2021-04-09T14:07:54Z" duration-ms="65830" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
@@ -96,10 +115,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- taaEntrar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:07:54Z" name="afterClass" finished-at="2021-04-09T14:07:54Z" duration-ms="2" status="PASS">
+=======
+        </test-method> <!-- Editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:10:41Z" name="afterClass" finished-at="2021-04-12T06:10:41Z" duration-ms="73" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.AcessarTCC -->
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -119,7 +119,7 @@ public class ConsultaDeDocumentosDetalhesPO extends TestBaseMassiel {
 		if (tc2 == true) {
 
 
-			Numero1 = Numero1.replace("Igor Pereira, ", "");
+			Numero1 = Numero1.replace("TESTEAUTOMATIZADO TESTEAUTOMATIZADO, ", "");
 			Numero2 = Numero2.replace("Igor Pereira, ", "");
 			
 			Numero3 = Numero3.replace("Criado por Igor Pereira, ", "");

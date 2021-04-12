@@ -4,11 +4,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
 <<<<<<< HEAD
 =======
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
@@ -17,12 +22,21 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+<<<<<<< HEAD
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/Yessy
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-04-12T14:18:55Z" name="Default suite" finished-at="2021-04-12T14:21:40Z" duration-ms="164887">
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -34,11 +48,15 @@
 <<<<<<< HEAD
 >>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
 =======
-<<<<<<< HEAD
-  <suite started-at="2021-04-09T06:54:59Z" name="Default suite" finished-at="2021-04-09T07:26:56Z" duration-ms="1916634">
+  <suite started-at="2021-04-12T14:37:41Z" name="Default suite" finished-at="2021-04-12T14:48:20Z" duration-ms="638260">
+>>>>>>> refs/remotes/origin/Yessy
 =======
-  <suite started-at="2021-04-09T05:35:09Z" name="Default suite" finished-at="2021-04-09T05:36:53Z" duration-ms="103868">
+<<<<<<< HEAD
+  <suite started-at="2021-04-09T14:06:30Z" name="Default suite" finished-at="2021-04-09T14:07:54Z" duration-ms="84092">
+=======
+  <suite started-at="2021-04-12T06:06:34Z" name="Default suite" finished-at="2021-04-12T06:10:41Z" duration-ms="246328">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -47,6 +65,9 @@
   <suite started-at="2021-04-12T14:18:55Z" name="Default suite" finished-at="2021-04-12T14:21:40Z" duration-ms="164887">
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
 <<<<<<< HEAD
@@ -55,6 +76,7 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar@301eda63]" started-at="2021-04-12T14:18:55Z" name="beforeClass" finished-at="2021-04-12T14:19:12Z" duration-ms="17176" status="PASS">
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -70,15 +92,21 @@
 <<<<<<< HEAD
 >>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
 =======
-<<<<<<< HEAD
-    <test started-at="2021-04-09T06:54:59Z" name="Default test" finished-at="2021-04-09T07:26:56Z" duration-ms="1916634">
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar@5afa3c9]" started-at="2021-04-09T06:54:59Z" name="beforeClass" finished-at="2021-04-09T06:55:12Z" duration-ms="12944" status="PASS">
+    <test started-at="2021-04-12T14:37:41Z" name="Default test" finished-at="2021-04-12T14:48:20Z" duration-ms="638260">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:37:41Z" name="beforeClass" finished-at="2021-04-12T14:39:44Z" duration-ms="122286" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
 =======
-    <test started-at="2021-04-09T05:35:09Z" name="Default test" finished-at="2021-04-09T05:36:53Z" duration-ms="103868">
-      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:35:09Z" name="beforeClass" finished-at="2021-04-09T05:35:23Z" duration-ms="14278" status="PASS">
+<<<<<<< HEAD
+    <test started-at="2021-04-09T14:06:30Z" name="Default test" finished-at="2021-04-09T14:07:54Z" duration-ms="84092">
+      <class name="com.timp.test.TCC.AcessarTCC">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:06:30Z" name="beforeClass" finished-at="2021-04-09T14:06:41Z" duration-ms="11395" status="PASS">
+=======
+    <test started-at="2021-04-12T06:06:34Z" name="Default test" finished-at="2021-04-12T06:10:41Z" duration-ms="246328">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:06:34Z" name="beforeClass" finished-at="2021-04-12T06:06:56Z" duration-ms="21737" status="PASS">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -89,6 +117,9 @@
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar@301eda63]" started-at="2021-04-12T14:18:55Z" name="beforeClass" finished-at="2021-04-12T14:19:12Z" duration-ms="17176" status="PASS">
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
@@ -154,45 +185,77 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar@20f5281c]" started-at="2021-04-09T03:58:00Z" name="editar" finished-at="2021-04-09T03:59:54Z" duration-ms="113272" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:39:44Z" name="ingresar" finished-at="2021-04-12T14:39:59Z" duration-ms="15268" status="PASS">
 =======
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir@20f5281c]" started-at="2021-04-09T03:39:29Z" name="excluir" finished-at="2021-04-09T03:40:41Z" duration-ms="71816" status="PASS">
->>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
+        <test-method signature="login()[pri:1, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:06:41Z" name="login" finished-at="2021-04-09T14:06:48Z" duration-ms="6817" status="PASS">
+=======
+        <test-method signature="Editar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:06:56Z" name="Editar" finished-at="2021-04-12T06:10:41Z" duration-ms="224501" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPEditar@20f5281c]" started-at="2021-04-09T03:59:54Z" name="afterClass" finished-at="2021-04-09T03:59:54Z" duration-ms="0" status="PASS">
-=======
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir@20f5281c]" started-at="2021-04-09T03:40:41Z" name="afterClass" finished-at="2021-04-09T03:40:41Z" duration-ms="0" status="PASS">
->>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- ingresar -->
+        <test-method signature="mdrEntrar()[pri:1, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:39:59Z" name="mdrEntrar" finished-at="2021-04-12T14:40:59Z" duration-ms="59559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mdrEntrar -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:40:59Z" name="criar" finished-at="2021-04-12T14:41:40Z" duration-ms="41423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method signature="separadores()[pri:2, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:41:40Z" name="separadores" finished-at="2021-04-12T14:44:26Z" duration-ms="166166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- separadores -->
+        <test-method signature="comparar()[pri:3, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:44:26Z" name="comparar" finished-at="2021-04-12T14:44:41Z" duration-ms="14617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparar -->
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:44:41Z" name="criarConfiguracao" finished-at="2021-04-12T14:45:38Z" duration-ms="57137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="executar()[pri:5, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:45:38Z" name="executar" finished-at="2021-04-12T14:47:01Z" duration-ms="82972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executar -->
+        <test-method signature="excluirConfiguracao()[pri:6, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:47:01Z" name="excluirConfiguracao" finished-at="2021-04-12T14:47:31Z" duration-ms="30101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracao -->
+        <test-method signature="excluirLeiaute()[pri:7, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:47:31Z" name="excluirLeiaute" finished-at="2021-04-12T14:48:20Z" duration-ms="48690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirLeiaute -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2@273444fe]" started-at="2021-04-12T14:48:20Z" name="afterClass" finished-at="2021-04-12T14:48:20Z" duration-ms="0" status="PASS">
 =======
 <<<<<<< HEAD
-        <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar@5afa3c9]" started-at="2021-04-09T06:55:12Z" name="criar" finished-at="2021-04-09T07:26:55Z" duration-ms="1903431" status="FAIL">
+        </test-method> <!-- login -->
+        <test-method signature="taaEntrar()[pri:2, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:06:48Z" name="taaEntrar" finished-at="2021-04-09T14:07:54Z" duration-ms="65830" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+System info: host: 'DESKTOP-C57COV6', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7e1e6f82a2e3136dc55e5e1846659e81
-*** Element info: {Using=xpath, value=//li[@identifier="accordion-item-balanceConsolidation"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56893}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f388ae2d0a162a07c388462e7f96724c
+*** Element info: {Using=xpath, value=//li[@identifier="accordion-item-taxConsolidation"}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+System info: host: 'DESKTOP-C57COV6', ip: '192.168.1.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7e1e6f82a2e3136dc55e5e1846659e81
-*** Element info: {Using=xpath, value=//li[@identifier="accordion-item-balanceConsolidation"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56893}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f388ae2d0a162a07c388462e7f96724c
+*** Element info: {Using=xpath, value=//li[@identifier="accordion-item-taxConsolidation"}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -209,10 +272,18 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-at com.sap.timp.pageObjectModel.TCC.AcessarTCCPO.acessarTCC(AcessarTCCPO.java:48)
-at com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar.criar(RegistroM515Criar.java:37)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:277)
+at com.sap.timp.pageObjectModel.TCC.AcessarTCCPO.acessarTCC(AcessarTCCPO.java:45)
+at com.timp.test.TCC.AcessarTCC.taaEntrar(AcessarTCC.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -239,84 +310,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
-=======
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:35:23Z" name="excluir" finished-at="2021-04-09T05:36:53Z" duration-ms="89327" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar@5afa3c9]" started-at="2021-04-09T07:26:55Z" name="afterClass" finished-at="2021-04-09T07:26:56Z" duration-ms="239" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7e1e6f82a2e3136dc55e5e1846659e81]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BNBDMGT', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ymass\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7e1e6f82a2e3136dc55e5e1846659e81
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar.afterClass(RegistroM515Criar.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- taaEntrar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:07:54Z" name="afterClass" finished-at="2021-04-09T14:07:54Z" duration-ms="2" status="PASS">
 =======
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir@13b13b5d]" started-at="2021-04-09T05:36:53Z" name="afterClass" finished-at="2021-04-09T05:36:53Z" duration-ms="235" status="PASS">
+        </test-method> <!-- Editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar@5afa3c9]" started-at="2021-04-12T06:10:41Z" name="afterClass" finished-at="2021-04-12T06:10:41Z" duration-ms="73" status="PASS">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
@@ -324,6 +334,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar -->
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -335,11 +346,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 <<<<<<< HEAD
 >>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
 =======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar -->
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2 -->
+>>>>>>> refs/remotes/origin/Yessy
 =======
-      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir -->
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.AcessarTCC -->
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar -->
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -348,6 +363,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar -->
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

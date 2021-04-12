@@ -28,12 +28,22 @@ public class RegistroM625EditarPO  extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//div[@id=\"dtOperAj\"]/div/div[1]/input")
 	public WebElement fecha;
-	
-	@FindBy(xpath = "//span[text()=\"Gravar\"]")
-	public WebElement gravar;
 
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
+	
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div[1]/div[1]/input")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@id=\"uf\"]/div/div[1]/div[1]/div[1]/div/div[1]")
+	public WebElement uf;
+	
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div[1]/div[1]/div[1]/div/div[1]")
+	public WebElement filial;
+	
+	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[1]/div[1]/input")
+	public WebElement tributo;
+	
+	@FindBy(xpath = "//div[@id=\"reg\"]/div/div[1]/input")
+	public WebElement registro;
 	
 	public RegistroM625EditarPO() {
 
@@ -75,60 +85,75 @@ public class RegistroM625EditarPO  extends TestBaseMassiel{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 		
-		String valor = fecha.getAttribute("value");
+		String empresa1 = empresa.getAttribute("value");
+		String uf1 = uf.getText();
+		String filial1 = filial.getText();
+		String fecha1 = fecha.getAttribute("value");
+		String tributo1 = tributo.getAttribute("value");
+		String registro1 = registro.getAttribute("value");
 		
-		String enviar =fechaManana();
-		
-		
-
 		boolean sucesso1 = false;
 		boolean sucesso2 = false;
 		
 		
-		System.out.println(valor);
+		System.out.println(empresa1);
+		System.out.println(uf1);
+		System.out.println(filial1);
+		System.out.println(tributo1);
+		System.out.println(registro1);
+		System.out.println(fecha1);
+
 		
-		System.out.println(enviar);
-		
-		
-		sucesso1 = validarFecha(valor);
+		sucesso1 = validarFecha(fecha1);
 		
 		System.out.println(sucesso1);
 		
-		fecha.clear();
-		sleep(1000);
-		fecha.sendKeys(enviar);
-		sleep(2000);
 		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		sim.click();
-		sleep(3000);
 		
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(18000);
 		
 		
-		String nuevoValor = fecha.getAttribute("value");
+		String empresa11 = empresa.getAttribute("value");
+		String uf11 = uf.getText();
+		String filial11 = filial.getText();
+		String fecha11 = fecha.getAttribute("value");
+		String tributo11 = tributo.getAttribute("value");
+		String registro11 = registro.getAttribute("value");
 		
-		System.out.println("Valor após edição: " +nuevoValor);
+
 		
-		sucesso2 = validarFecha(nuevoValor);
+		
+		System.out.println(empresa11);
+		System.out.println(uf11);
+		System.out.println(filial11);
+		System.out.println(tributo11);
+		System.out.println(registro11);
+		System.out.println(fecha11);
+
+	
+		
+		sucesso2 = validarFecha(fecha11);
 		
 		System.out.println(sucesso2);
 		
-		boolean sucesso3 = nuevoValor.equals(enviar);
-		System.out.println("Valor editado com sucesso: "+sucesso3);
+	
 		
 		 ArrayList<Boolean>  sucesso = new ArrayList<Boolean>(); 
 	        sucesso.add(sucesso1);
 	        sucesso.add(sucesso2);
-	        sucesso.add(sucesso3);
+	        sucesso.add(empresa11.equals(empresa1));
+	        sucesso.add(uf11.equals(uf1));
+	        sucesso.add(filial11.equals(filial1));
+	        sucesso.add(fecha11.equals(fecha1));
+	        sucesso.add(tributo11.equals(tributo1));
+	        sucesso.add(registro11.equals(registro1));
+	        
+	      System.out.println(sucesso);
 	      return sucesso;
 		
 	}

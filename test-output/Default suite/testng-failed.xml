@@ -9,11 +9,16 @@
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> refs/heads/Fernando
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar">
 =======
+      <class name="com.timp.test.TCC.AcessarTCC">
+>>>>>>> refs/remotes/origin/Yessy
+=======
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
 <<<<<<< HEAD
 >>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
@@ -22,7 +27,11 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar">
 =======
       <class name="com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID">
+=======
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar">
+>>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -31,12 +40,15 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="criar"/>
           <include name="beforeClass"/>
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
@@ -53,7 +65,10 @@
           <include name="beforeClass"/>
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -63,10 +78,17 @@
 =======
           <include name="filtro"/>
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+=======
+          <include name="taaEntrar"/>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/remotes/origin/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar -->
@@ -76,9 +98,14 @@
 >>>>>>> refs/heads/Fernando
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar -->
 =======
-          <include name="excluir"/>
+      </class> <!-- com.timp.test.TCC.AcessarTCC -->
+>>>>>>> refs/remotes/origin/Yessy
+=======
+          <include name="Editar"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
 <<<<<<< HEAD
 >>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
@@ -87,7 +114,11 @@
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM515.RegistroM515Criar -->
 =======
       </class> <!-- com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID -->
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar -->
+>>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Yessy
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
@@ -96,6 +127,8 @@
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar -->
 >>>>>>> refs/heads/master
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

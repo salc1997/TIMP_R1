@@ -4,16 +4,26 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar">
 =======
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
 >>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
+>>>>>>> refs/heads/master
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
 <<<<<<< HEAD
           <include name="editar"/>
+=======
+          <include name="criar"/>
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/master
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar -->
 =======
           <include name="excluir"/>
@@ -21,6 +31,9 @@
         </methods>
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
 >>>>>>> branch 'Fernando' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar -->
+>>>>>>> refs/heads/master
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

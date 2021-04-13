@@ -5,6 +5,7 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
 =======
 <<<<<<< HEAD
@@ -42,11 +43,18 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar">
+>>>>>>> refs/heads/Fernando
         <methods>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="criar"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,7 +62,10 @@
 >>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
 <<<<<<< HEAD
+=======
+>>>>>>> refs/heads/Fernando
           <include name="editar"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
@@ -103,8 +114,11 @@
 =======
           <include name="Editar"/>
           <include name="beforeClass"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
 <<<<<<< HEAD
@@ -129,6 +143,9 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

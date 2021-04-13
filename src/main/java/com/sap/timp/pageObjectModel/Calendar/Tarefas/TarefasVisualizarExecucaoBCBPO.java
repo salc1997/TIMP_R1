@@ -48,6 +48,10 @@ public class TarefasVisualizarExecucaoBCBPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
+	@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+	public WebElement fecharCalendario;
+	
+
 	public TarefasVisualizarExecucaoBCBPO() {
 
 		PageFactory.initElements(driver, this);
@@ -83,26 +87,32 @@ public class TarefasVisualizarExecucaoBCBPO extends TestBaseSteven {
 		waitExpectXpath("//div[@class=\"day\"][1]");
 		sleep(2000);
 
-		String tituloS = titulo.getText();
-		System.out.println("Titulo: " + tituloS);
-
 		WebElement setaesquerda = driver
 				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
-		int Fevereiro2021 = driver.findElements(By.xpath("//div[@class=\"title\"][text()=\"Fevereiro, 2021\"]")).size();
-		while (Fevereiro2021 == 0) {
-			setaesquerda.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+		
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
 		}
-
 		
 			WebElement dia17 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"17\"]"));
 			dia17.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-		
+			
+		fecharCalendario.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		actionsMoveToElementElement(pesquisar);
 		sleep(2000);

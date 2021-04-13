@@ -39,9 +39,14 @@ public class TarefasNAGatewayPortaMultiplaPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"table\"]/div/div[1]/div/div[2]/div[1]/div[1]/label/span")
 	public WebElement flag;
 	
+	@FindBy(xpath = "//div[@class=\"title\"]")
+	public WebElement titulo;
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
+	
+	@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+	public WebElement fecharCalendario;
 	
 	
 	public TarefasNAGatewayPortaMultiplaPO() {
@@ -75,17 +80,30 @@ public class TarefasNAGatewayPortaMultiplaPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
+		WebElement setaesquerda = driver
+				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
 		
-		atras.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
+		}
 		dia22.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		
+		fecharCalendario.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

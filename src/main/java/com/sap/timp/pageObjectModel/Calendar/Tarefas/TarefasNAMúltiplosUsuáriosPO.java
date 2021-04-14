@@ -42,6 +42,14 @@ public class TarefasNAMúltiplosUsuáriosPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
+	@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+	public WebElement fecharCalendario;
+	
+	
+	@FindBy(xpath = "//div[@class=\"title\"]")
+	public WebElement titulo;
+	
+	
 	
 	public TarefasNAMúltiplosUsuáriosPO() {
 
@@ -75,11 +83,28 @@ public class TarefasNAMúltiplosUsuáriosPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		atras.click();
+		WebElement setaesquerda = driver
+				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+		
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
+		}
+		
+		dia20.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
-		dia20.click();
+		
+		fecharCalendario.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);

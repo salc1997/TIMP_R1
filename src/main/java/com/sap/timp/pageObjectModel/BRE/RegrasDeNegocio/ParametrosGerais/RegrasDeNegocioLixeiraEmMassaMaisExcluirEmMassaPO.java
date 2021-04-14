@@ -29,8 +29,12 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente2;
+	
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componente3;
 	
 	@FindBy(xpath = "//li[text()=\"TAA\"]")
 	public WebElement opcaocomponente;
@@ -201,7 +205,7 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 			
 		}else {
 			
-			componente2.click();
+			componente3.click();
 			sleep(1000);
 			opcaocomponente.click();
 			sleep(1000);
@@ -301,7 +305,7 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 			
 		}else {
 			
-			componente2.click();
+			componente3.click();
 			sleep(1000);
 			opcaocomponente.click();
 			sleep(1000);

@@ -2,13 +2,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Yessy
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
@@ -34,8 +38,11 @@
 =======
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,8 +83,12 @@
 =======
   <suite started-at="2021-04-12T23:20:01Z" name="Default suite" finished-at="2021-04-12T23:23:07Z" duration-ms="186229">
 >>>>>>> refs/heads/Fernando
+=======
+  <suite started-at="2021-04-14T21:21:47Z" name="Default suite" finished-at="2021-04-14T21:25:31Z" duration-ms="223852">
+>>>>>>> refs/heads/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,9 +145,15 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar@301eda63]" started-at="2021-04-12T23:20:01Z" name="beforeClass" finished-at="2021-04-12T23:20:16Z" duration-ms="14903" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+    <test started-at="2021-04-14T21:21:47Z" name="Default test" finished-at="2021-04-14T21:25:31Z" duration-ms="223852">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:21:47Z" name="beforeClass" finished-at="2021-04-14T21:21:59Z" duration-ms="11727" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -200,9 +217,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:21:59Z" name="criar" finished-at="2021-04-14T21:25:31Z" duration-ms="212100" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar@301eda63]" started-at="2021-04-12T14:21:40Z" name="afterClass" finished-at="2021-04-12T14:21:40Z" duration-ms="0" status="PASS">
 <<<<<<< HEAD
 =======
@@ -352,9 +373,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar@301eda63]" started-at="2021-04-12T23:23:07Z" name="afterClass" finished-at="2021-04-12T23:23:07Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:25:31Z" name="afterClass" finished-at="2021-04-14T21:25:31Z" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -395,6 +420,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
+>>>>>>> refs/heads/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

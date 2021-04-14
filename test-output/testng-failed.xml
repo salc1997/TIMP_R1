@@ -5,6 +5,7 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
 =======
 <<<<<<< HEAD
@@ -17,7 +18,11 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="criar"/>
           <include name="beforeClass"/>
@@ -29,8 +34,11 @@
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar">
         <methods>
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
           <include name="editar"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
@@ -81,8 +89,11 @@
 =======
           <include name="Editar"/>
           <include name="beforeClass"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
 <<<<<<< HEAD
@@ -107,6 +118,9 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

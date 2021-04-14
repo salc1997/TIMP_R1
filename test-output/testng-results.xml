@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-13T13:51:32Z" name="Default suite" finished-at="2021-04-13T13:55:10Z" duration-ms="218770">
+  <suite started-at="2021-04-14T21:21:47Z" name="Default suite" finished-at="2021-04-14T21:25:31Z" duration-ms="223852">
     <groups>
     </groups>
-    <test started-at="2021-04-13T13:51:32Z" name="Default test" finished-at="2021-04-13T13:55:10Z" duration-ms="218770">
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:51:32Z" name="beforeClass" finished-at="2021-04-13T13:51:43Z" duration-ms="11279" status="PASS">
+    <test started-at="2021-04-14T21:21:47Z" name="Default test" finished-at="2021-04-14T21:25:31Z" duration-ms="223852">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:21:47Z" name="beforeClass" finished-at="2021-04-14T21:21:59Z" duration-ms="11727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:51:43Z" name="ingresar" finished-at="2021-04-13T13:51:49Z" duration-ms="6352" status="PASS">
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:21:59Z" name="criar" finished-at="2021-04-14T21:25:31Z" duration-ms="212100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ingresar -->
-        <test-method signature="Entrar()[pri:1, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:51:49Z" name="Entrar" finished-at="2021-04-13T13:52:06Z" duration-ms="16323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Entrar -->
-        <test-method signature="filtroNombre()[pri:2, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:52:06Z" name="filtroNombre" finished-at="2021-04-13T13:52:29Z" duration-ms="23309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtroNombre -->
-        <test-method signature="filtrosId()[pri:3, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:52:29Z" name="filtrosId" finished-at="2021-04-13T13:52:52Z" duration-ms="22941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosId -->
-        <test-method signature="filtrosVersao()[pri:4, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:52:52Z" name="filtrosVersao" finished-at="2021-04-13T13:53:13Z" duration-ms="21317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosVersao -->
-        <test-method signature="filtrosFiltroTipo()[pri:5, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:53:13Z" name="filtrosFiltroTipo" finished-at="2021-04-13T13:53:34Z" duration-ms="21176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosFiltroTipo -->
-        <test-method signature="filtrosUsuarioCriado()[pri:6, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:53:34Z" name="filtrosUsuarioCriado" finished-at="2021-04-13T13:53:55Z" duration-ms="20805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosUsuarioCriado -->
-        <test-method signature="filtrosUsuarioModificado()[pri:7, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:53:55Z" name="filtrosUsuarioModificado" finished-at="2021-04-13T13:54:16Z" duration-ms="21084" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosUsuarioModificado -->
-        <test-method signature="filtrosFechaUsuarioModificado()[pri:8, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:54:16Z" name="filtrosFechaUsuarioModificado" finished-at="2021-04-13T13:54:43Z" duration-ms="27158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosFechaUsuarioModificado -->
-        <test-method signature="filtrosFechaUsuarioCriado()[pri:9, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:54:43Z" name="filtrosFechaUsuarioCriado" finished-at="2021-04-13T13:55:10Z" duration-ms="26994" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrosFechaUsuarioCriado -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@710c2b53]" started-at="2021-04-13T13:55:10Z" name="afterClass" finished-at="2021-04-13T13:55:10Z" duration-ms="0" status="PASS">
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:25:31Z" name="afterClass" finished-at="2021-04-14T21:25:31Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

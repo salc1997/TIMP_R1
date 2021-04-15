@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
 =======
 <<<<<<< HEAD
@@ -27,27 +28,13 @@
 =======
       <class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar">
 >>>>>>> refs/remotes/origin/Kenssy
-        <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="criar"/>
-          <include name="beforeClass"/>
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVV.ValoresParaMetodoPVVEditar">
-        <methods>
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Fernando
-=======
-          <include name="afterClass"/>
-          <include name="criar"/>
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
 >>>>>>> refs/remotes/origin/Kenssy
+        <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="editar"/>
 <<<<<<< HEAD
@@ -65,7 +52,10 @@
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar">
 >>>>>>> refs/remotes/origin/Yessy
         <methods>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="criar"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="afterClass"/>
 =======
@@ -111,6 +101,10 @@
 =======
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM505.RegistroM505Criar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

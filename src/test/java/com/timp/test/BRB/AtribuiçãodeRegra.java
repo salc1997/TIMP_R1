@@ -35,16 +35,11 @@ public class AtribuiçãodeRegra extends TestBaseSteven {
 
 
 	@Test()
-	public void editar() {
-		
-		loginTC.login();
-		
-		acessarBrbPO.acessar();
-		
+	public void editar() {		
+		loginTC.login();		
+		acessarBrbPO.acessar();		
 
 		boolean sucesso = atribuiçãodeRegraPO.editar();
 		assertTrue(sucesso, Editar);
-
 	}
-
 }

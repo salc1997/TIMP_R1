@@ -101,7 +101,6 @@ public class TestBaseSteven {
 
 		driver.get(tc2);
 
-
 		return driver;
 	}
 

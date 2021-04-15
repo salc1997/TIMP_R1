@@ -67,6 +67,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(campo);
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");
 		
@@ -77,7 +78,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 		String enviar = "Teste Editar KENSSY 7";
 
 		campo.clear();
-		sleep(1000);
+		sleep(2000);
 		
 		campo.sendKeys(enviar);
 		sleep(2000);
@@ -96,6 +97,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 		driver.navigate().refresh();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(campo);
 		sleep(1000);
 		
 		waitExpectElement(campo);

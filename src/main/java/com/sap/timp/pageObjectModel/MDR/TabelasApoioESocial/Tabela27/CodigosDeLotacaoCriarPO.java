@@ -69,8 +69,13 @@ public class CodigosDeLotacaoCriarPO extends TestBaseSteven {
 		sleep(2000);
 
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		sleep(2000);
+		String id = "0";
+		if (rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			sleep(2000);
+			System.out.println("1er ultimo id:" + id);
+		}
+		
 		novo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

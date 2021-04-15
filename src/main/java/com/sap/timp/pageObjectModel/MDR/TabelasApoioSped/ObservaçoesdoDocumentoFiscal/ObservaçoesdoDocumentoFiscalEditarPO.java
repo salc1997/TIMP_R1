@@ -94,7 +94,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(descricaosped);
 		sleep(4000);
 		
 		String valor = descricaosped.getAttribute("value");
@@ -112,17 +112,15 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-			
 		waitExpectElement(descricaosped);
-		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		
 		
 		String novoTexto=descricaosped.getAttribute("value");
 		

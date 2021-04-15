@@ -85,13 +85,13 @@ public class RangeDeNumeracaoCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		intervalornumerico.sendKeys("2500");
+		intervalornumerico.sendKeys("2400");
 		sleep(1000);
-		rangede.sendKeys("0000000001");
+		rangede.sendKeys("896606821");
 		sleep(1000);
-		rangeate.sendKeys("1111111111");
+		rangeate.sendKeys("896606822");
 		sleep(1000);
-		numeracaoatual.sendKeys("0000000001");
+		numeracaoatual.sendKeys("896606823");
 		sleep(1000);
 		validadede.sendKeys("01/01/2013");
 		sleep(2000);

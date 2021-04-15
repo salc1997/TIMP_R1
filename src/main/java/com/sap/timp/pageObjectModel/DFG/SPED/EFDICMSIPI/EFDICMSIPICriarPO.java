@@ -178,6 +178,8 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
 	public WebElement componente;
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componentetc2;
 	
 	@FindBy(xpath = "//li[text()=\"DFG\"]")
 	public WebElement componenteO;
@@ -748,7 +750,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 
 		
 		if (tc2 == true) {
-			componente.click();
+			componentetc2.click();
 		}else if (tp1==true ) {
 			componente.click();
 		}else {
@@ -785,15 +787,15 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(1000);
 		estruturaRO.click();
 		sleep(3000);
-		waitExpectElement(leiauteR);
-		sleep(3000);
-		
-//		caracteristica.click();
-//		sleep(1000);
-//		caracterisiticaO.click();
+//		waitExpectElement(leiauteR);
 //		sleep(3000);
-//		actionsMoveToElementElement(dataVigenciaR);
-//		sleep(1000);
+		
+		caracteristica.click();
+		sleep(1000);
+		caracterisiticaO.click();
+		sleep(3000);
+		actionsMoveToElementElement(dataVigenciaR);
+		sleep(1000);
 		
 		leiauteR.click();
 		sleep(1000);
@@ -914,17 +916,24 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		System.out.println("dio click 1");
+		
 		efd.click();
 		sleep(2000);
 		efdO.click();
 		
+		System.out.println("dio click 2");
+		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		System.out.println("dio click 3");
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 		String ultimoIdAC = "0";
@@ -937,6 +946,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		primeira.click();
 		System.out.println("Dio click en primera pagina");
 		sleep(3000);
@@ -1017,10 +1027,17 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		driver.navigate().refresh();
+		primeira.click();
+		System.out.println("Dio click en primera pagina");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		siguiente.click();
+		System.out.println("Dio click en ultima pagina");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		
 		blocosApuracao.click();
 		sleep(3000);

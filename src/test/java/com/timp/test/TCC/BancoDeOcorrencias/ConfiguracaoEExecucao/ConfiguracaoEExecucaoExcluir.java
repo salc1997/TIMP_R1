@@ -9,12 +9,7 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
-import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AtividadeFiscal.*;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.CampoPesquisaPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriarPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluirPO;
 
 public class ConfiguracaoEExecucaoExcluir extends TestBaseSteven {
@@ -37,7 +32,7 @@ public class ConfiguracaoEExecucaoExcluir extends TestBaseSteven {
 	}
 
 	@Test()
-	public void criar() {
+	public void excluirExecutar() {
 		loginTC.login();
 		acessarTCCPO.acessarTCC();
 		

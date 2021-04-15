@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class LogradouroExcluirPO extends TestBaseSteven{
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Logradouro\"]")

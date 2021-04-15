@@ -31,11 +31,31 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 	@FindBy(xpath = "//li[text()=\"COFINS\"]")
 	public WebElement opcionTributoDestinoTC2;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Ajuste de Débito\"]")
+	public WebElement cboAjuste;
+	@FindBy(xpath = "//li[text()=\"427 - A0205\"]")
+	public WebElement opcionAjusteTC2;
+	@FindBy(xpath = "//li[text()=\"433 - P0039\"]")
+	public WebElement opcionAjusteTQ1;
+	
 	public ConfiguraçãodeBancodeCréditoTributárioEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean Editar() {
+		String url = driver.getCurrentUrl();
+
+		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
+			tp1 = true;
+		}
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -68,9 +88,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
+		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select ");
 		sleep(2000);
-	  	sleep(8000);
 	  	
 	  	
 //		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
@@ -95,12 +114,22 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(2000);
-		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
-		sleep(2000);
+		if ( tq1 == true) {
+			cboAjuste.click();
+			sleep(1000);
+			opcionAjusteTQ1.click();
+			sleep(7000);
+		}else if (tc2 == true) {
+			cboAjuste.click();
+			sleep(1000);
+			opcionAjusteTC2.click();
+			sleep(7000);
+		}
 		
 		btnGravar.click();
-		sleep(6000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		sleep(2000);
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -112,8 +141,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		sleep(2000);
 		editar1.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(validaDe, "value");
-	  	sleep(8000);
+		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select ");
+		sleep(2000);
 	  	
 	  	String nuevoTexto = validaDe.getAttribute("value");
 	  	System.out.println(enviar);

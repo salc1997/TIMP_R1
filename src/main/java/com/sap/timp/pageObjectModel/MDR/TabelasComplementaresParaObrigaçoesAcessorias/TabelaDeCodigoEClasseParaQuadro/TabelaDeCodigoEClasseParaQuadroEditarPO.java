@@ -95,9 +95,8 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(codigo);
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String valor = codigo.getAttribute("value");
 
@@ -114,17 +113,15 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseSteven{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-
+		
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-			
 		waitExpectElement(codigo);
-		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		
 		String novoTexto=codigo.getAttribute("value");
 		
@@ -133,7 +130,9 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseSteven{
 		boolean sucesso = novoTexto.equals(enviar);
 		System.out.println(sucesso);
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(codigo);
 		sleep(2000);
 		codigo.clear();
 
@@ -149,7 +148,7 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseSteven{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		
 		return sucesso;
 	}	

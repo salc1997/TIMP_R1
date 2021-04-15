@@ -173,8 +173,12 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"Auditoria Nvl 3\"]")
 	public WebElement tipoRegraO;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componenteTC2;
+	
 	
 	@FindBy(xpath = "//li[text()=\"DFG\"]")
 	public WebElement componenteO;
@@ -217,6 +221,10 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//td[@class=\"EffectiveDateFrom\"]/div/div/input")
 	public WebElement dataVigenciaR;
+	
+	@FindBy(xpath = "//td[@class=\"EffectiveDateTo\"]/div/div/input")
+	public WebElement dataVigenciato;
+	
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
 	public WebElement adicionarCaminho;
@@ -694,10 +702,20 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		String url = driver.getCurrentUrl();
 		
 		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
 		
+		if (url.contains("tq1")) {
+			tp1 = true;
+		}	
 		if (url.contains("tp1")) {
 			tp1 = true;
 		}
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
+		
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -737,10 +755,23 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		tipoRegraO.click();
 		sleep(1000);
 		
-		componente.click();
-		sleep(1000);
-		componenteO.click();
-		sleep(1000);
+		if (tc2 == true) {
+			componenteTC2.click();
+			sleep(1000);
+			componenteO.click();
+			sleep(1000);
+		}else if (tq1 == true) {
+			componente.click();
+			sleep(1000);
+			componenteO.click();
+			sleep(1000);
+		}else {
+			componenteTC2.click();
+			sleep(1000);
+			componenteO.click();
+			sleep(1000);
+		}
+		
 		
 		actionsMoveToElementElement(dataVigenciaR);
 		
@@ -774,6 +805,7 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		caracterisiticaO.click();
 		sleep(3000);
 		actionsMoveToElementElement(dataVigenciaR);
+		waitExpectElement(leiauteR);
 		sleep(3000);
 		
 		leiauteR.click();
@@ -787,8 +819,12 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		versaoLeiauteRO.click();
 		sleep(1000);
 		
-		dataVigenciaR.sendKeys("01/01/2013");
 		sleep(1000);
+		actionsMoveToElementElement(dataVigenciato);
+		sleep(2000);
+		
+		dataVigenciaR.sendKeys("01/01/2013");
+		sleep(2000);
 		aplicar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

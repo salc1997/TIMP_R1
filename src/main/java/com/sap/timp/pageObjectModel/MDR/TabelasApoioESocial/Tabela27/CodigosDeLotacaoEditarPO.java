@@ -67,6 +67,7 @@ public class CodigosDeLotacaoEditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(campo);
 		sleep(2000);
 		
 		String valor = campo.getAttribute("value");
@@ -75,7 +76,7 @@ public class CodigosDeLotacaoEditarPO extends TestBaseSteven {
 		String enviar = "00000";
 
 		campo.clear();
-		sleep(1000);
+		sleep(2000);
 		
 		campo.sendKeys(enviar);
 		sleep(2000);
@@ -87,17 +88,18 @@ public class CodigosDeLotacaoEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		sim.click();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(2000);
 
 		driver.navigate().refresh();
-		sleep(1000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
-		
 		waitExpectElement(campo);
-		attributoNotToBeEmptyElement(campo, "value");
+		sleep(3000);
+		
+		
+		//attributoNotToBeEmptyElement(campo, "value");
 		
 		String nuevoTexto = campo.getAttribute("value");
 

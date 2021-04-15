@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
 =======
 <<<<<<< HEAD
@@ -22,7 +23,11 @@
 =======
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="criar"/>
@@ -37,7 +42,12 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="afterClass"/>
+          <include name="criar"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,7 +109,10 @@
 =======
 >>>>>>> refs/heads/Yessy
           <include name="afterClass"/>
+=======
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -132,6 +145,9 @@
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
 >>>>>>> refs/heads/Yessy
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

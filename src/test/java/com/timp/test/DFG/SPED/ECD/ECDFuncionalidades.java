@@ -8,17 +8,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
-import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
-import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.ECD.ECDFuncionalidadesPO;
-import com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI.EFDICMSIPICriarPO;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriarPO;
-import com.timp.test.DFG.AcessarDFG;
 
 
 public class ECDFuncionalidades extends TestBaseSteven{
@@ -75,13 +68,20 @@ public class ECDFuncionalidades extends TestBaseSteven{
 	public void InformacaoECD() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.informacao();
-		
 		assertTrue(sucesso, visualizaçar);
-
-
 	}
 
 	@Test(priority = 5)
+	public void visualizacaoECD() {
+		
+		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizar();
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+	}
+	
+	@Test(priority = 6)
 	public void CriarBlocoApuracao() {
 		
 		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.criarBlocoApuracao();
@@ -89,11 +89,9 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-
-
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void EditarBlocoApuracao() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.editarBlocoApuracao();
@@ -101,20 +99,15 @@ public class ECDFuncionalidades extends TestBaseSteven{
 	}
 	
 	
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void InformacaoBlocoApuracao() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.informacaoBlocoApuracao();
-		
-
 		assertTrue(sucesso, Editar);
-
-
-
 	}
 	
 	
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void visualizarBlocoApuracao() {
 		
 		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarBlocoApuracao();
@@ -122,22 +115,17 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
 	}
 	
-	
-	
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void ExecucaoBlocoApuracao() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.ExecucaoBlocosApuracao();
-		
 		assertTrue(sucesso, Criar);
-
 	}
 	
 	
-	@Test(priority = 10)
+	@Test(priority = 11)
 	public void visualizarAtualizacoesBlocoApuracao() {
 		
 		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizarActualizacoes();
@@ -145,11 +133,10 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
 	}
 	
 	
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void arquivosVerificar() {
 		
 		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.verificarArquivosRaiz();
@@ -157,12 +144,9 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
 	}
 	
-		
-	
-	@Test(priority = 12)
+	@Test(priority = 13)
 	public void executarECD() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.executarVariante();
@@ -172,7 +156,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 	}
 	
 	
-	@Test(priority = 13)
+	@Test(priority = 14)
 	public void excluirVariante() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.excluirVariante();

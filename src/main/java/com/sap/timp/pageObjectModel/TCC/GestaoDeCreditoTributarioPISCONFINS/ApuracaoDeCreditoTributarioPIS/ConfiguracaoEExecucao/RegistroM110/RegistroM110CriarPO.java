@@ -234,16 +234,19 @@ public class RegistroM110CriarPO extends TestBaseMassiel{
 		}
 		
 		gravar.click();
-		sleep(2000);
-		
+		sleep(4000);
 		sim.click();
-		sleep(6000);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		waitExpectElement(biblioteca);
 		sleep(2000);
 		
 		biblioteca.click();
-		sleep(4000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		

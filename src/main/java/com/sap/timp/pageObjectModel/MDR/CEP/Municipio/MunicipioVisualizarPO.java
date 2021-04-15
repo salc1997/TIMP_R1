@@ -24,7 +24,7 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/span[text()=\"Visualizar\"]")
 	public WebElement visualizar;
 	
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
@@ -56,7 +56,7 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"CEP\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"cep\")]")
 	public WebElement cepN;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Loc in sit\")]")

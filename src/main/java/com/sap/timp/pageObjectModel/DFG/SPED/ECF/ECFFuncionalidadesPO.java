@@ -1273,10 +1273,7 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 
 		//------------------- Tributo------------------
 		
-		
-
 		if (tc2==true) {
-
 			tributoExecutar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1291,25 +1288,21 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-
-			
 		}else if (tp1==true) {
-			
 			tributoExecutar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementXpath("//li[@id=\"option-18\"]");
+			actionsMoveToElementXpath("//li[text()=\"ICMS\"]");
 			sleep(3000);
 			
-			WebElement tributoOPC = driver.findElement(By.xpath("//li[@id=\"option-18\"]"));
+			WebElement tributoOPC = driver.findElement(By.xpath("//li[text()=\"ICMS\"]"));
 			
 			tributoOPC.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-
 		}
 
 		calendar.click();

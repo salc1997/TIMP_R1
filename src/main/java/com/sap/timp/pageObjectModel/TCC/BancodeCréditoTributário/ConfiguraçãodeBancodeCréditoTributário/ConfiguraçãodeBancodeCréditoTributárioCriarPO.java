@@ -1,12 +1,10 @@
 package com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 
 public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassiel{
@@ -77,12 +75,16 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	
 	
 	
+	@FindBy(xpath = "//div[@id=\"creditType\"]/div/div/div[2]")
+	public WebElement tipoCredito;
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	public WebElement opcionTipoCredito;
+	
+	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Ajuste de Crédito\"]")
 	public WebElement cboACredito;
-	
 	@FindBy(xpath = "//li[text()=\"427 - A0205\"]")
 	public WebElement opcionACreditoTC2;
-	
 	@FindBy(xpath = "//li[text()=\"433 - P0039\"]")
 	public WebElement opcionACreditoTQ1;
 	
@@ -94,8 +96,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	//@FindBy(xpath = "//li[text()=\"00001 - Tester\"]")
 	@FindBy(xpath = "//li[@class=\"list-item\"][1]")
 	public WebElement opcionTaxaAtualizaçãoTC2;
-	
-	@FindBy(xpath = "//li[text()=\"00001 - Tester\"]")
+	@FindBy(xpath = "//li[text()=\"11 - SELIC\"]")
 	public WebElement opcionTaxaAtualizaçãoTQ1;
 	
 	
@@ -245,6 +246,15 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			opcionSaidaTQ1.click();
 			sleep(7000);
 			
+			tipoCredito.click();
+			sleep(2000);
+			opcionTipoCredito.click();
+			sleep(2000);
+			
+			sleep(2000);
+			actionsMoveToElementElement(validaDe);
+			sleep(2000);
+			
 			cboACredito.click();
 			sleep(1000);
 			opcionACreditoTQ1.click();
@@ -266,7 +276,11 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboTributoDestino.click();
 			sleep(1000);
 			opcionTributoDestinoTQ1.click();
-			sleep(7000);
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			
 			
 			cboAjuste.click();
 			sleep(1000);
@@ -287,13 +301,19 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			opcionSaidaTC2.click();
 			sleep(7000);
 			
-			//aquiiiiiiiiiiiiiiiii
+			tipoCredito.click();
+			sleep(2000);
+			opcionTipoCredito.click();
+			sleep(2000);
+			
+			sleep(2000);
+			actionsMoveToElementElement(validaDe);
+			sleep(2000);
 			
 			cboTipoCredito.click();
 			sleep(2000);
 			opcionTipoCreditoTC2.click();
 			sleep(3000);
-			
 			
 			cboACredito.click();
 			sleep(1000);
@@ -316,7 +336,6 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboTributoDestino.click();
 			sleep(1000);
 			opcionTributoDestinoTC2.click();
-			
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -325,12 +344,58 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			sleep(1000);
 			opcionAjusteTC2.click();
 			sleep(7000);
-	
-			
-		
 			
 		}else {
-
+			cboIDOrigen.click();
+			sleep(1000);
+			opcionIDOrigenTQ1.click();
+			sleep(7000);
+			
+			cboSaida.click();
+			sleep(1000);
+			opcionSaidaTQ1.click();
+			sleep(7000);
+			
+			tipoCredito.click();
+			sleep(2000);
+			opcionTipoCredito.click();
+			sleep(2000);
+			
+			sleep(2000);
+			actionsMoveToElementElement(validaDe);
+			sleep(2000);
+			
+			cboACredito.click();
+			sleep(1000);
+			opcionACreditoTQ1.click();
+			sleep(7000);
+			
+			cboTaxaAtualização.click();
+			sleep(1000);
+			opcionTaxaAtualizaçãoTQ1.click();
+			sleep(7000);
+			
+			cboClassificaçãoAcesso.click();
+			sleep(1000);
+			opcionClassificaçãoAcessoTQ1.click();
+			sleep(7000);
+			
+			validaDe.sendKeys("11/01/2021");
+			sleep(4000);
+			
+			cboTributoDestino.click();
+			sleep(1000);
+			opcionTributoDestinoTQ1.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			
+			
+			cboAjuste.click();
+			sleep(1000);
+			opcionAjusteTQ1.click();
+			sleep(7000);
 		}
 		
 		

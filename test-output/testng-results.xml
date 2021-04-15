@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 =======
 <<<<<<< HEAD
@@ -40,8 +41,12 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Yessy
+=======
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,8 +91,12 @@
 =======
   <suite started-at="2021-04-14T21:21:47Z" name="Default suite" finished-at="2021-04-14T21:25:31Z" duration-ms="223852">
 >>>>>>> refs/heads/Yessy
+=======
+  <suite started-at="2021-04-15T04:12:08Z" name="Default suite" finished-at="2021-04-15T04:13:01Z" duration-ms="53115">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -150,9 +159,15 @@
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:21:47Z" name="beforeClass" finished-at="2021-04-14T21:21:59Z" duration-ms="11727" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+    <test started-at="2021-04-15T04:12:08Z" name="Default test" finished-at="2021-04-15T04:13:01Z" duration-ms="53115">
+      <class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar@44d52de2]" started-at="2021-04-15T04:12:08Z" name="beforeClass" finished-at="2021-04-15T04:12:22Z" duration-ms="13282" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -299,6 +314,32 @@ Session ID: f388ae2d0a162a07c388462e7f96724c
 *** Element info: {Using=xpath, value=//li[@identifier="accordion-item-taxConsolidation"}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar@44d52de2]" started-at="2021-04-15T04:12:22Z" name="criar" finished-at="2021-04-15T04:13:01Z" duration-ms="39812" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IN7IV9K5', ip: '192.168.116.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50658}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 346daa6d978aca99dae8ab71dfb3f478
+*** Element info: {Using=xpath, value=//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IN7IV9K5', ip: '192.168.116.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50658}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 346daa6d978aca99dae8ab71dfb3f478
+*** Element info: {Using=xpath, value=//div[@class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right"]}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+>>>>>>> refs/remotes/origin/Kenssy
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -314,6 +355,7 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<<<<<<< HEAD
 at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
 at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
@@ -325,6 +367,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:277)
 at com.sap.timp.pageObjectModel.TCC.AcessarTCCPO.acessarTCC(AcessarTCCPO.java:45)
 at com.timp.test.TCC.AcessarTCC.taaEntrar(AcessarTCC.java:38)
+=======
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriarPO.criar(ConfiguraçãoTributoTributoXEstruturaCriarPO.java:71)
+at com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar.criar(ConfiguraçãoTributoTributoXEstruturaCriar.java:40)
+>>>>>>> refs/remotes/origin/Kenssy
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -352,9 +399,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- taaEntrar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.AcessarTCC@2892dae4]" started-at="2021-04-09T14:07:54Z" name="afterClass" finished-at="2021-04-09T14:07:54Z" duration-ms="2" status="PASS">
 =======
@@ -376,9 +428,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:25:31Z" name="afterClass" finished-at="2021-04-14T21:25:31Z" duration-ms="0" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar@44d52de2]" started-at="2021-04-15T04:13:01Z" name="afterClass" finished-at="2021-04-15T04:13:01Z" duration-ms="0" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -423,6 +480,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
 >>>>>>> refs/heads/Yessy
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

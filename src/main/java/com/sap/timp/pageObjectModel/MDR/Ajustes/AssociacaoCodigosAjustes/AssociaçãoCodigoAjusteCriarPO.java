@@ -209,10 +209,12 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		
 		btnBiblioteca.click();
 
-		sleep(5000);
-		nao.click();
-		sleep(500);
-		nao.click();
+//		sleep(5000);
+//		nao.click();
+//		System.out.println("primer nao");
+//		sleep(500);
+//		nao.click();
+//		System.out.println("segundo nao");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

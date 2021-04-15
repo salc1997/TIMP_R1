@@ -73,9 +73,8 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 	
 		//conta o numero de linhas
@@ -89,6 +88,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		novodeterminacaoautomaticadeguias.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(empresa);
 		sleep(2000);
 		
 		empresa.click();

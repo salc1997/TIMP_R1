@@ -130,7 +130,8 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseSteven {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(datainicial);
+		sleep(2000);
 		
 		String valor = datainicial.getAttribute("value");
 
@@ -147,11 +148,11 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseSteven {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectElement(datainicial);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -163,10 +164,12 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseSteven {
 		boolean sucesso = novoTexto.equals(enviar);
 		System.out.println(sucesso);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(datainicial);
+		sleep(2000);
+		
 		datainicial.clear();
-
 		sleep(2000);
 		datainicial.sendKeys(valor);
 		

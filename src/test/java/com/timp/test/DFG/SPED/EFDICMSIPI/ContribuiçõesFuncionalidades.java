@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI.ContribuiçõesFuncionalidadesPO;
-import com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI.EFDICMSIPICriarPO;
 
 import org.testng.annotations.BeforeClass;
 

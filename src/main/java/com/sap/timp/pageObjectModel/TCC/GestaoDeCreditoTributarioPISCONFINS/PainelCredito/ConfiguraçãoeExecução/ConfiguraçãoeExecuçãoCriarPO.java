@@ -104,7 +104,7 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseSteven {
 			tp1 = true;
 		}
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementElement(gestaoCredito);
 		sleep(2000);

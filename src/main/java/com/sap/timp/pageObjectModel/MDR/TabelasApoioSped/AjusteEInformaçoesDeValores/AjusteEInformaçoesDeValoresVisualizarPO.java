@@ -138,7 +138,7 @@ public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseSteven{
 		
 		
 		biblioteca.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
@@ -161,10 +161,9 @@ public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseSteven{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
 		sleep(2000);
 		
+		sleep(12000);
 		String codigoE1 = codigoE.getAttribute("value");
 		String origemE1 = origemE.getAttribute("value");
 		String ufE1 = ufE.getAttribute("value");

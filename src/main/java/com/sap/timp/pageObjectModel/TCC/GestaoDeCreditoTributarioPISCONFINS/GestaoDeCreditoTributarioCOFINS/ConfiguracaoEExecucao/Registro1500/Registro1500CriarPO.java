@@ -103,6 +103,7 @@ public class Registro1500CriarPO extends TestBaseSteven{
 			tc2 = true;
 		}
 		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();

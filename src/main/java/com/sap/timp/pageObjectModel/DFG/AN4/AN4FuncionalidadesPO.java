@@ -373,30 +373,30 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//button/span[text()=\"Executar\"][1]")
 	public WebElement executarAN4;
 	
-	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[1]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[1]")
 	public WebElement bloco1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[2]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[2]")
 	public WebElement registro1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[8]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[8]")
 	public WebElement bloco2;
 	
-	@FindBy(xpath = "//tr[@line-id=\"179.179\"]/td[9]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[9]")
 	public WebElement registro2;
 	
 	//---------------
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[1]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[1]")
 	public WebElement bloco1TP1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[2]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[2]")
 	public WebElement registro1TP1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[8]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[8]")
 	public WebElement bloco2TP1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[9]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[9]")
 	public WebElement registro2TP1;
 	//----------
 	@FindBy(xpath = "//tr[@line-id=\"0.0\"]/td[1]")
@@ -744,6 +744,13 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		System.out.println("---------- Criar2 --------- " );
 		String url = driver.getCurrentUrl();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		boolean tp1  = false;
 		boolean tc2  = false;
@@ -1162,7 +1169,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(2000);
 
 		}else if (tp1==true) {
-			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]");
 			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			Opc5 .click();
@@ -2248,7 +2255,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(4000);
 		
 		adicionarFiltroReferenciaAN4.click();
-		sleep(3000);
+		sleep(5000);
 		
 		
 		if (tq1 == true) {
@@ -2277,7 +2284,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			WebElement flecha = driver.findElement(By.xpath("//div[@class=\"wrapper small\"]/div[1]/div[1]"));
 
 			calendario .click();
-			sleep(2000);
+			sleep(5000);
 			
 			flecha .click();
 			sleep(2000);
@@ -2338,6 +2345,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(3000);
 		
 		
+		attributeToBeXpath("//div[contains(@class, \"layout-dfg-selectComparison\")]/div", "class", "base-select required");
 		leiauteComperacaoAN4.click();
 		sleep(3000);
 		
@@ -2346,13 +2354,14 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		System.out.println("Leiaute Comparacao "+idRegistro3);
 
 		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro3+"\")]");
-		sleep(2000);
+		sleep(3000);
 
 		WebElement Opc3 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro3+"\")]"));
 
 		Opc3.click();
 		sleep(4000);
 		
+		attributeToBeXpath("//div[contains(@class, \"version-selectComparison\")]/div", "class", "base-select required");
 		versaoAN42.click();
 		sleep(3000);
 		
@@ -2759,7 +2768,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			waitExpectElement(bloco1TP1);
 			sleep(3000);
 		
-			this. blocoReferencia = bloco1TP1.getText();
+			this.blocoReferencia = bloco1TP1.getText();
 			System.out.println(blocoReferencia);
 			
 			this.registroReferencia  = registro1TP1.getText();

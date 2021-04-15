@@ -100,7 +100,7 @@ public class ParametrosOficializacaoLivrosDetalhesPO extends TestBaseSteven {
 		sleep(2000);
 		menu.click();
 		sleep(1000);
-
+		
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

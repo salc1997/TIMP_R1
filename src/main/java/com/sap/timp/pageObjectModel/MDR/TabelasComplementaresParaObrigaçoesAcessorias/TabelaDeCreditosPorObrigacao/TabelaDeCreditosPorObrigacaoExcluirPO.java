@@ -66,6 +66,7 @@ public class TabelaDeCreditosPorObrigacaoExcluirPO extends TestBaseSteven {
 		excluir.click();
 		sleep(2000);
 		
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

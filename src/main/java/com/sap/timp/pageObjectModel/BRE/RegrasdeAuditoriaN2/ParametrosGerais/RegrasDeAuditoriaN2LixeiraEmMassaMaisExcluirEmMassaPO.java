@@ -45,8 +45,11 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
 	public WebElement opcionTipoTributo;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/table/tbody/tr[31]/td[2]/div/div[1]/input")
+	@FindBy(xpath = "//div[@class=\"dialog-content big\"]/div/table/tbody/tr[40]/td[2]/div/div[1]/input")
 	public WebElement validade;
+	
+	@FindBy(xpath = "//div[@class=\"dialog-content big\"]/div/table/tbody/tr[31]/td[2]/div/div[1]/input")
+	public WebElement validade1;
 		
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -168,6 +171,8 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		}else {
 			td1 = true;
 		}
+		
+		
 		if(tp1 == true) {
 		grupodeestrutura.click();
 		sleep(1000);
@@ -179,35 +184,49 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}
+		
+		
 		estructura.click();
 		sleep(3000);
 		opcEstructura.click();
 		sleep(3000);
 		
+		if(tp1 == true) {
+			validade1.sendKeys("01/01/2013");	
+			
+			sleep(2000);
+			}else {
+				validade.sendKeys("01/01/2013");	
+				
+				sleep(2000);
+			}
 		
-		validade.sendKeys("01/01/2013");	
 		
-		sleep(2000);
+		
+		
 		aplicar.click();
 		sleep(2000);
 		waitExpectElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		biblioteca.click();
 	
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		waitExpectElement(AN2);
 		sleep(2000);
+		
 		AN2.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		//-----------SEGUNDO----------------
 		novo.click();
@@ -250,7 +269,16 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(3000);
 		
 		
-		validade.sendKeys("01/01/2013");
+		if(tp1 == true) {
+			validade1.sendKeys("01/01/2013");	
+			
+			sleep(2000);
+			}else {
+				validade.sendKeys("01/01/2013");	
+				
+				sleep(2000);
+			}
+		
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);

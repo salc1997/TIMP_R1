@@ -119,8 +119,9 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBaseSteven {
 		attributoNotToBeEmptyElement(datainicial, "value");
 		String valor = datainicial.getAttribute("value");
 
-		String enviar = fechaAyer();
-
+		String enviar = fechaActual();
+		System.out.println(enviar);
+		
 		datainicial.clear();
 		sleep(2000);
 		datainicial.sendKeys(enviar);
@@ -141,11 +142,11 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBaseSteven {
 		
 		
 		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
-		sleep(3000);
+		sleep(6000);
 		
 		waitExpectElement(datainicial);
 		
-		sleep(3000);
+		sleep(6000);
 		String novoTexto=datainicial.getAttribute("value");
 		
 		System.out.println(valor);

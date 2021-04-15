@@ -174,8 +174,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro 1210\"]")
 	public WebElement opcaoacoesr4;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente2;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componente3;
 	
 	public RegrasDeNegocioCriarPO() {
 		PageFactory.initElements(driver, this);
@@ -251,7 +254,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 			
 		}else {
 			
-			componente2.click();
+			componente3.click();
 			sleep(1000);
 			opcaocomponente.click();
 			sleep(1000);

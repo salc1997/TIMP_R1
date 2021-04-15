@@ -137,15 +137,23 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 		
 		gestaoCredito.click();
 		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
+		
 		configuracaoEExecucao.click();
 		sleep(2000);
-		registro1200.click();
-		
 		invisibilityOfElementOverlay();
+		sleep(2000);
+		
+		registro1200.click();
+		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 

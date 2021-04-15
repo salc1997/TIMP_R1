@@ -1535,15 +1535,15 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			
 		
 			
-			
-			sleep(1000);
+			sleep(10000);
+			sleep(10000);
 			executar.click();
 			sleep(3000);
 			waitExpectElement(executarN);
 			sleep(2000);
 			executarN.click();
 			
-			sleep(1000);
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			
 			periodo.click();
@@ -1581,11 +1581,12 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			sleep(1000);
 			
 			executarB.click();
-			sleep(3000);
+			sleep(10000);
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //			sleep(3000);
 			
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(3000);
 			waitExpectElement(aba1);
 			sleep(2000);
 			
@@ -1599,10 +1600,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 					
 			
 			System.out.println("---------------------------------Abrir SubNivel 1-------------------------------------");
-			sleep(1000);
+			sleep(4000);
 			
 			subnivel1.click();
-			sleep(2000);
+			sleep(4000);
 
 			String valorFormulaSubNivel1 = verFormulaSubNivel1.getText();
 			System.out.println("Campo Formula Subnivel1: "+ valorFormulaSubNivel1);
@@ -1649,10 +1650,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			
 			
 			System.out.println("---------------------------------Abrir SubNivel 2-------------------------------------");
-			sleep(1000);
+			sleep(4000);
 			
 			subnivel2.click();
-			sleep(2000);
+			sleep(4000);
 
 			String valorFormulaSubNivel2 = verFormulaSubNivel2.getText();
 			System.out.println("Campo Formula Subnivel2: "+ valorFormulaSubNivel2);

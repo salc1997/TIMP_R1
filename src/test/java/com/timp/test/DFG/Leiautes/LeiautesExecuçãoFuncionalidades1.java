@@ -40,28 +40,85 @@ public class LeiautesExecuçãoFuncionalidades1 extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 2)
+	/*@Test(priority = 2)
 	public void criar() {
 		boolean sucesso = leiautesExecuçãoFuncionalidadesPO.criar();
-		assertTrue(sucesso, Criar);		
+		assertTrue(sucesso, Criar);			
+
+	}
+	
+	@Test(priority = 3)
+	public void Filtro() {
+
+		boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.Filtro();
+		assertTrue(sucesso1, Criar);	
 		
-	/*boolean sucesso2 = leiautesExecuçãoFuncionalidadesPO.editar();
-		assertTrue(sucesso2, Editar);	
+
+	}
+	
+	@Test(priority = 4)
+	public void Agrupamiento() {
+
+		/*boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.Agrupamiento();
+		assertTrue(sucesso1, Criar);	*/
+/*		leiautesExecuçãoFuncionalidadesPO.Agrupamiento();
+
+	}
+	
+
+	@Test(priority = 5)
+	public void Ordenar() {
+
+		boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.Ordenar();
+		assertTrue(sucesso1, Criar);	
 		
-		ArrayList<Boolean> sucesso3 = leiautesExecuçãoFuncionalidadesPO.informacao();
+
+	}
+	
+	@Test(priority = 5)
+	public void OrdenarPor() {
+
+		boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.OrdenarPor();
+		assertTrue(sucesso1, Criar);	
 		
-		for (int i = 0; i < sucesso3.size(); i++) {
-			assertTrue(sucesso3.get(i), visualizaçar);
-		}
+
+	}
+	
+	@Test(priority = 6)
+	public void Formato() {
+
+		boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.formato();
+		assertTrue(sucesso1, Criar);	
 		
-		ArrayList<Boolean> sucesso4 = leiautesExecuçãoFuncionalidadesPO.visualizar();
+
+	}
+	
+	@Test(priority = 7)
+	public void separdor() {
+
+		boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.separadores();
+		assertTrue(sucesso1, Criar);	
 		
-		for (int i = 0; i < sucesso4.size(); i++) {
-			assertTrue(sucesso4.get(i), visualizaçar);
-		}
+
+	}
+	
+	@Test(priority = 8)
+	public void copiarBloco() {
+
+		boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.CopiarBloco();
+		assertTrue(sucesso1, Criar);	
 		
-		boolean sucesso5 = leiautesExecuçãoFuncionalidadesPO.executar();
-		assertTrue(sucesso5);	*/
+
+	}
+	
+	*/
+	@Test(priority = 9)
+	public void CriarConfiguracion() {
+
+		leiautesExecuçãoFuncionalidadesPO.criarConfiguracion();
+		/*boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.criarConfiguracion();
+		assertTrue(sucesso1, Criar);	*/
+		
 
 	}
 }

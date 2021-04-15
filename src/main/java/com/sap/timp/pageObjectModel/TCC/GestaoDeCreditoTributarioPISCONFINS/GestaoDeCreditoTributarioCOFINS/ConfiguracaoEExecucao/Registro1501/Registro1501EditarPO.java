@@ -54,7 +54,7 @@ public class Registro1501EditarPO extends TestBaseSteven {
 	}
 	
 	public boolean Editar() {
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();

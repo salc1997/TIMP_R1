@@ -92,7 +92,7 @@ public class TabelaCodigoDaSituaçaoTributariaExcluirPO extends TestBaseSteven{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		
+		waitExpectElement(aceitar);
 		aceitar.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

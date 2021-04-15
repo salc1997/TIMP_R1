@@ -38,9 +38,6 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSEditarPO extends TestBaseMass
 	}
 	
 	public boolean Editar() {
-		
-		
-		
 		gestaoCredito.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

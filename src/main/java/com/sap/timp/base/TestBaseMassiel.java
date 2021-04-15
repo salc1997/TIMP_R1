@@ -2,6 +2,7 @@
 package com.sap.timp.base;
 
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -51,7 +52,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 		driver.manage().window().maximize();
 		driver.get(tp1);
 
-	   return driver;
+	    return driver;
 	}
 	//PARA PODER EJECUTAR TA-518
 	public String dataanterior() {
@@ -280,6 +281,17 @@ public class TestBaseMassiel extends TestBaseSteven {
 		return df.format(ayer);
 
 	}
+	
+	public static boolean validarFecha(String fecha) {
+        try {
+            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+            formatoFecha.setLenient(false);
+            formatoFecha.parse(fecha);
+        } catch (ParseException e) {
+            return false;
+        }
+        return true;
+    }
 	
 }
 

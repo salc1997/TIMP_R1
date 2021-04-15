@@ -20,7 +20,7 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[text()=\"HCNF0110 - TA-1871 - NÃO MEXER\"]")
 	public WebElement seleccionHererarquiaTQ1;
 	
-	@FindBy(xpath = "//div[text()=\"HCNF0051 - TA-1871 NÃO MEXER\"]")
+	@FindBy(xpath = "//div[text()=\"HCNF0051 - TA-1871 - NÃO MEXER\"]")
 	public WebElement seleccionHererarquiaTP1;
 	
 	@FindBy(xpath = "//div[text()=\"HCNF0125 - TA-1871 NÃO MEXER\"]")
@@ -29,11 +29,15 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Cenário\"]")
 	public WebElement cenario;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement valor1;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement valor2;
+	
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[3]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement valor3;
+	
 	
 	@FindBy(xpath = "//button[@class=\"add-btn btn icon icon-font-Sign-and-Symbols icon-plussign\"]")
 	public WebElement adicionarAcoes;
@@ -125,7 +129,7 @@ public boolean editar() {
 	açao.click();
 	sleep(3000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(4000);
+	sleep(6000);
 	
 	waitExpectElement(CFOP);
 	
@@ -135,7 +139,7 @@ public boolean editar() {
 	adicionarAcoes.click();
 	sleep(3000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(6000);
+	sleep(8000);
 	
 	
 	adicionarCorrecoes.click();
@@ -154,7 +158,7 @@ public boolean editar() {
 		cenario.sendKeys(Keys.ENTER);
 		sleep(3000);
 	} else if (tp1) {
-		hererarquia.sendKeys("HCNF0051 - TA-1871 NÃO MEXER");
+		hererarquia.sendKeys("HCNF0051 - TA-1871 - NÃO MEXER");
 		sleep(3000);
 		seleccionHererarquiaTP1.click();
 		sleep(4000);
@@ -187,6 +191,11 @@ public boolean editar() {
 	valor2.sendKeys("1");
 	sleep(3000);
 	
+	
+	if (tq1 == true) {
+		valor3.sendKeys("1");
+		sleep(3000);
+	}
 	aplicar.click();
 	sleep(3000);
 	

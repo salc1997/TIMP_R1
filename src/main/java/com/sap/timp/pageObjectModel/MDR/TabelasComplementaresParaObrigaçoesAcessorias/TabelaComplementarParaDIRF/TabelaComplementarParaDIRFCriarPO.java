@@ -147,7 +147,7 @@ public class TabelaComplementarParaDIRFCriarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		
-		ans.sendKeys("00");
+		ans.sendKeys("1");
 		
 		sleep(2000);
 		gravar.click();

@@ -35,6 +35,7 @@
 			<class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasLixeira"></class>
 			<class name="com.timp.test.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasExecucoesRestaurar"></class>
 			<class name="com.timp.test.TDK.Execucoes.Raiz.RaizFiltroId"></class>
+			<class name="com.timp.test.TDK.Execucoes.ExecucoesIdPublicoePrivado"></class>
 		</classes>
 	</test>
 </suite>

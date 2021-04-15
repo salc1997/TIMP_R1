@@ -133,39 +133,39 @@ public class RegistroM605CriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		empresa.click();
-		sleep(1000);
+		sleep(2000);
 		opcao.click();
-		sleep(1000);
+		sleep(2000);
 		
 		
 		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		uf.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
 		closeSelectTypeCheckbox(uf);
-		sleep(1000);
+		sleep(2000);
 	
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
 		closeSelectTypeCheckbox(filial);
-		sleep(1000);
+		sleep(2000);
 	
 		numeroCampo.sendKeys("12");
 		
 		codigoReceita.click();
-		sleep(1000);
+		sleep(2000);
 		opcao.click();
 		sleep(2000);
 		
 		valorDebito.click();
-		sleep(1000);
+		sleep(2000);
 		opcao.click();
 		sleep(2000);
 		
@@ -179,7 +179,9 @@ public class RegistroM605CriarPO extends TestBaseSteven{
 		sleep(2000);
 
 		biblioteca.click();
-		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		sleep(6000);
 		

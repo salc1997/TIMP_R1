@@ -56,7 +56,7 @@ public class ConfiguracaoEExecucaoExcluirPO extends TestBaseSteven{
 		
 		invisibilityOfElementOverlay();
 		
-		String idRegistro = idObter("idBOConfiguracaoEExecucaco");
+		String idRegistro = idObter("idBOConfiguracaoEExecucacoExecutados");
 		
 		siguiente.click();
 		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");

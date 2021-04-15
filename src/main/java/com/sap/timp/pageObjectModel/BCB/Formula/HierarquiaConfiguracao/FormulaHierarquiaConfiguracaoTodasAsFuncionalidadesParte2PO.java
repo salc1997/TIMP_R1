@@ -241,6 +241,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Justificativa\"]")
 	public WebElement justificativa;
 	
@@ -439,19 +442,20 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		waitExpectElement(nao);
+		sleep(2000);
+		
+		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(executar);
 		sleep(2000);
-		
-		
-		sim.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		aplicarJustificativa.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		aplicarJustificativa.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -499,8 +503,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 //		
-//		
-//		pesquisar.sendKeys("1117");
+//		String idConfiguracaoSubnivel5= idObter3();
+//		pesquisar.sendKeys(idConfiguracaoSubnivel5);
 //		pesquisar.sendKeys(Keys.ENTER);
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -508,8 +512,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 //		
 //		
 //		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idConfiguracaoSubnivel5+"\"]/div[1]/div"));
+//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idConfiguracaoSubnivel5+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 //		sleep(2000);
 //		
 //		menu.click();
@@ -524,15 +528,16 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	
 		
 		
-		sleep(1000);
+		sleep(2000);
 		executar.click();
 		sleep(2000);
 		waitExpectElement(executarN);
 		sleep(2000);
 		executarN.click();
 		
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		periodo.click();
 		sleep(2000);
@@ -575,6 +580,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		waitExpectElement(gravar);
 		sleep(3000);
 		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		waitExpectElement(aba1);

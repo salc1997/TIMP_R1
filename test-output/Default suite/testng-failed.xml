@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
 =======
 <<<<<<< HEAD
@@ -50,7 +51,11 @@
 =======
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
 >>>>>>> refs/heads/Yessy
+=======
+      <class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,7 +65,12 @@
           <include name="criar"/>
 =======
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="afterClass"/>
+          <include name="criar"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -106,7 +116,10 @@
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 =======
 >>>>>>> refs/remotes/origin/Yessy
+=======
+>>>>>>> refs/remotes/origin/Kenssy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -160,6 +173,9 @@
 =======
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
 >>>>>>> refs/heads/Yessy
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

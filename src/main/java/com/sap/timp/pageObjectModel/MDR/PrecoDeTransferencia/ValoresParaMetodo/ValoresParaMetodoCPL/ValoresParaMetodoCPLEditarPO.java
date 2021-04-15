@@ -127,9 +127,11 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(datainicial);
 		sleep(2000);
 		
 		String valor = datainicial.getAttribute("value");
+		System.out.println(valor);
 		String enviar = fechaAyer();
 
 		datainicial.clear();
@@ -149,6 +151,7 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseSteven{
 		sleep(2000);
 		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(datainicial);
 		sleep(2000);		
 		
 		String novoTexto=datainicial.getAttribute("value");
@@ -158,13 +161,14 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseSteven{
 		boolean sucesso = novoTexto.equals(enviar);
 		System.out.println(sucesso);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(datainicial);
+		sleep(2000);
+		
 		datainicial.clear();
-
 		sleep(2000);
 		datainicial.sendKeys(valor);
-		
 		sleep(2000);
 		
 		

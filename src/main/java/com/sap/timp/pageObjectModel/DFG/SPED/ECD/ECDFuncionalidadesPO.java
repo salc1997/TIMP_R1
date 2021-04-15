@@ -60,7 +60,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[contains(text(),\"ID151\")]")
 	public WebElement leiauteECDOTC2;
 	
-	@FindBy(xpath = "//li[contains(text(),\"ID401\")]")
+	@FindBy(xpath = "//li[contains(text(),\"ID713\")]")
 	public WebElement leiauteECDOTP1;
 	
 	
@@ -584,10 +584,12 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
-		
+		waitExpectElement(descricao);
+		sleep(2000);
 		
 		String enviar = "Teste Editar";
 		descricao.clear();
+		sleep(2000);
 		descricao.sendKeys(enviar);
 		sleep(2000);
 		
@@ -983,11 +985,15 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		
 		ufFilialB.click();
 		sleep(2000);
-		if (tc2 == true || tp1 == true) {
+		if (tc2 == true ) {
 			ufFilialBOTC2.click();
 			sleep(2000);
 			ufFilialBOTC2.sendKeys(Keys.ESCAPE);
-		}else {
+		}else if (tp1 == true) {
+			ufFilialBO.click();
+			sleep(2000);
+			ufFilialBO.sendKeys(Keys.ESCAPE);
+		}else{
 			ufFilialBO.click();
 			sleep(2000);
 			ufFilialBO.sendKeys(Keys.ESCAPE);
@@ -1057,7 +1063,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		if (tc2 == true) {
 			idRegra = "1217";
 		}else if (tp1 == true) {
-			idRegra = "1099";
+			idRegra = "1150";
 		}else {
 			idRegra = "2307";
 		}
@@ -1347,7 +1353,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		waitExpectElement(fechar);
 		sleep(2000);
 		
-		WebElement varianteExcluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div/div"));
+		WebElement varianteExcluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div/div[@class=\"actions\"]"));
 		
 		varianteExcluir.click();
 		sleep(2000);

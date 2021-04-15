@@ -75,7 +75,7 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		String filialE1= filialE.getText();
-		System.out.println(filialE1);
+		System.out.println("filial 1: "+filialE1);
 		filialE.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -113,7 +113,7 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseSteven {
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(filialcentralizadora);
+		waitExpectElement(filialV);
 		sleep(2000);
 		
 		String filialV1 = filialV.getText();

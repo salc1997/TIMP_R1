@@ -26,7 +26,7 @@ public class CamposChavesFiltroPorIDPO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
-public boolean filtro() {
+	public boolean filtro() {
 
 		
 		sleep(2000);

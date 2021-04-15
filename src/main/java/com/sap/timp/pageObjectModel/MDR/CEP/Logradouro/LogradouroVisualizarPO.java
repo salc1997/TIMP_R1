@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class LogradouroVisualizarPO extends TestBaseSteven{
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Logradouro\"]")
@@ -47,7 +47,7 @@ public class LogradouroVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[@id=\"logradouroNome\"]")
 	public WebElement nomelogadourovi;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher CEP\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher cep\"]")
 	public WebElement numerobairroed;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher UF\"]")

@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="BRE - REGRAS DE NEGOCIO(failed)">
+=======
+  <test thread-count="5" name="Banco De Ocorrecias &gt; Configuracao E Execucao + Executados(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa">
+=======
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="criar"/>
+=======
+          <include name="executarEditar"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa -->
@@ -16,7 +28,22 @@
           <include name="criar"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir -->
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="executarr"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
+<<<<<<< HEAD
   </test> <!-- BRE - REGRAS DE NEGOCIO(failed) -->
+=======
+  </test> <!-- Banco De Ocorrecias > Configuracao E Execucao + Executados(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 </suite> <!-- Failed suite [Suite] -->

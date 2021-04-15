@@ -10,7 +10,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class MunicipioCriarPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
@@ -41,7 +41,7 @@ public class MunicipioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"CEP\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"cep\")]")
 	public WebElement cepN;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Loc in sit\")]")
@@ -79,7 +79,7 @@ public class MunicipioCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		numero.sendKeys("99999999");
+		numero.sendKeys("15364");
 		
 		nome.sendKeys("Teste Municipio");
 		

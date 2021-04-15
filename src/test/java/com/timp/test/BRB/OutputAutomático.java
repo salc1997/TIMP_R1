@@ -33,18 +33,12 @@ public class OutputAutomático extends TestBaseSteven {
 		//driver.close();
 	}
 
-
 	@Test()
-	public void editar() {
+	public void outputAutomatico() {		
+		loginTC.login();		
+		acessarBrbPO.acessar();		
 		
-		loginTC.login();
-		
-		acessarBrbPO.acessar();
-		
-		
-		boolean sucesso = outputAutomáticoPO.editar();
+		boolean sucesso = outputAutomáticoPO.outputAutomatico();
 		assertTrue(sucesso, Editar);
-
 	}
-
 }

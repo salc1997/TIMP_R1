@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.BRB;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,10 +22,10 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 	@FindBy(xpath = "//ul[@class=\"addcolumn-ul\"]/li/div/div/div/div/div/span")				
 	public WebElement agregar;
 	
-	@FindBy(xpath = "//li[@id=\"draggable-n0\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
+	@FindBy(xpath = "//li[@column-id=\"n1\"]/div/div/div[@id=\"chead\"]/span")				
 	public WebElement inputColumna;
 	
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[5]/div/span")				
+	@FindBy(xpath = "//span[text()=\"Atribuir Regra\"]")				
 	public WebElement opcColumna;
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
@@ -96,17 +97,17 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 		
 		if (tc2==true) {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("2278");
+			ferramenta.sendKeys("2277");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else if (tq1==true) {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("8005134");
+			ferramenta.sendKeys("8005133");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("1745");
+			ferramenta.sendKeys("1744");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}
@@ -133,8 +134,16 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 		sleep(2000);
 		actionsMoveToElementElement(agregar);
 		
-		inputColumna.click();
-		sleep(2000);
+		
+		if(url.contains("tc2") || url.contains("tp1")) {
+			inputColumna = driver.findElement(By.xpath("//li[@column-id=\"n0\"]/div/div/div[@id=\"chead\"]/span"));
+			inputColumna.click();
+			sleep(2000);
+		} else {
+			inputColumna.click();
+			sleep(2000);
+		}
+		
 		
 		opcColumna.click();
 		sleep(7000);
@@ -178,6 +187,11 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 		btnExecucao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		btnExecutar.click();
 		sleep(2000);
@@ -195,9 +209,18 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
-		inputColumna.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		if(url.contains("tc2") || url.contains("tp1")) {
+			inputColumna = driver.findElement(By.xpath("//li[@column-id=\"n0\"]/div/div/div[@id=\"chead\"]/span"));
+			inputColumna.click();
+			sleep(2000);
+		} else {
+			inputColumna.click();
+			sleep(2000);
+		}
 		
 		removerColumna.click();
 		sleep(2000);

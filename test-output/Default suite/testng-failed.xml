@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar">
 =======
 <<<<<<< HEAD
@@ -62,7 +63,11 @@
 =======
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      <class name="com.timp.test.BRB.ValidacaoEstruturas.ATR">
+>>>>>>> refs/heads/Fernando
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -79,7 +84,10 @@
 =======
 >>>>>>> refs/remotes/origin/Kenssy
           <include name="afterClass"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
 <<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Kenssy
@@ -137,7 +145,11 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+          <include name="verificar"/>
+>>>>>>> refs/heads/Fernando
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -205,6 +217,9 @@
 =======
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.ATR -->
+>>>>>>> refs/heads/Fernando
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

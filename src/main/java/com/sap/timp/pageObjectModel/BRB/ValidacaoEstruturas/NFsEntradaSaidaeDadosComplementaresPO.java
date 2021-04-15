@@ -219,6 +219,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		// Quantidade
 		System.out.println("Quantidade");
 		String quantidadeS = quantidade.getText();
+		quantidadeS = quantidadeS.replace(".", "");
 		quantidadeS = quantidadeS.replace(",", ".");
 		System.out.println(quantidadeS +" String");
 		double quantidadeD = new Double(quantidadeS);
@@ -234,6 +235,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		// Quantidade BC COFINS
 		System.out.println(" Quantidade BC COFINS");
 		String quantidadeBCCOFINSS = quantidadeBCCOFINS.getText();
+		quantidadeBCCOFINSS = quantidadeBCCOFINSS.replace(".", "");
 		quantidadeBCCOFINSS = quantidadeBCCOFINSS.replace(",", ".");
 		System.out.println(quantidadeBCCOFINSS +" String");
 		double quantidadeBCCOFINSD = new Double(quantidadeBCCOFINSS);
@@ -366,6 +368,7 @@ public class NFsEntradaSaidaeDadosComplementaresPO extends TestBaseSteven{
 		// QTD. BC PIS
 		System.out.println("QTD. BC PIS");
 		String qtdBCPISS = qtdBCPIS.getText();
+		qtdBCPISS = qtdBCPISS.replace(".", "");
 		qtdBCPISS = qtdBCPISS.replace(",", ".");
 		System.out.println(qtdBCPISS + "String");
 		double qtdBCPISD = new Double(qtdBCPISS);

@@ -25,24 +25,23 @@ public class OutputdeReferência extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		outputdeReferênciaPO = new OutputdeReferênciaPO();
-
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
 	@Test()
-	public void editar() {
+	public void outputReferencia() {
 		
 		loginTC.login();
 		
 		acessarBrbPO.acessar();
 		
 		
-		boolean sucesso = outputdeReferênciaPO.editar();
+		boolean sucesso = outputdeReferênciaPO.outputReferencia();
 		assertTrue(sucesso, Editar);
 
 	}

@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/Yessy
 =======
@@ -56,8 +57,12 @@
 >>>>>>> refs/remotes/origin/Yessy
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -114,8 +119,12 @@
 =======
   <suite started-at="2021-04-15T14:21:52Z" name="Default suite" finished-at="2021-04-15T15:03:16Z" duration-ms="2483842">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-04-15T15:31:00Z" name="Default suite" finished-at="2021-04-15T15:37:55Z" duration-ms="415293">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -196,9 +205,15 @@
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar@7922d892]" started-at="2021-04-15T14:21:52Z" name="beforeClass" finished-at="2021-04-15T14:22:12Z" duration-ms="19838" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2021-04-15T15:31:00Z" name="Default test" finished-at="2021-04-15T15:37:55Z" duration-ms="415293">
+      <class name="com.timp.test.BRB.ValidacaoEstruturas.ATR">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATR@20f5281c]" started-at="2021-04-15T15:31:00Z" name="beforeClass" finished-at="2021-04-15T15:31:16Z" duration-ms="16392" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,8 +228,12 @@
 =======
         <test-method signature="editar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210Editar@301eda63]" started-at="2021-04-12T23:20:16Z" name="editar" finished-at="2021-04-12T23:23:07Z" duration-ms="171294" status="PASS">
 >>>>>>> refs/heads/Fernando
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BRB.ValidacaoEstruturas.ATR@20f5281c]" started-at="2021-04-15T15:31:16Z" name="login" finished-at="2021-04-15T15:31:26Z" duration-ms="10099" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -229,15 +248,55 @@
 =======
         <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar@301eda63]" started-at="2021-04-12T14:19:12Z" name="criar" finished-at="2021-04-12T14:21:40Z" duration-ms="147682" status="FAIL">
           <exception class="java.lang.AssertionError">
+=======
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BRB.ValidacaoEstruturas.ATR@20f5281c]" started-at="2021-04-15T15:31:26Z" name="brbEntrar" finished-at="2021-04-15T15:31:46Z" duration-ms="20077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="verificar()[pri:2, instance:com.timp.test.BRB.ValidacaoEstruturas.ATR@20f5281c]" started-at="2021-04-15T15:31:46Z" name="verificar" finished-at="2021-04-15T15:37:55Z" duration-ms="368675" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+>>>>>>> refs/heads/Fernando
             <message>
-              <![CDATA[O valor do campo não foi editado expected [true] but found [false]]]>
+              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50046}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 76bd089fcfcff935dce9e5fcc1d91124
+*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: O valor do campo não foi editado expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar.criar(RegistroM300Editar.java:40)
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIGUEL', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Miguel\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50046}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 76bd089fcfcff935dce9e5fcc1d91124
+*** Element info: {Using=xpath, value=//div[@class="overlay loader dark"]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:577)
+at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:573)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.sap.timp.base.TestBaseSteven.invisibilityOfElement(TestBaseSteven.java:295)
+at com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.ATRPO.verificar(ATRPO.java:115)
+at com.timp.test.BRB.ValidacaoEstruturas.ATR.verificar(ATR.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -265,12 +324,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- java.lang.AssertionError -->
 =======
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5afa3c9]" started-at="2021-04-14T21:21:59Z" name="criar" finished-at="2021-04-14T21:25:31Z" duration-ms="212100" status="PASS">
 >>>>>>> refs/heads/Yessy
+=======
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
 <<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM300.RegistroM300Editar@301eda63]" started-at="2021-04-12T14:21:40Z" name="afterClass" finished-at="2021-04-12T14:21:40Z" duration-ms="0" status="PASS">
@@ -573,6 +637,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        </test-method> <!-- verificar -->
+      </class> <!-- com.timp.test.BRB.ValidacaoEstruturas.ATR -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -120,7 +120,7 @@ public class RegistroM610CriarPO extends TestBaseSteven{
 		registroM610.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		siguiente.click();
 		
@@ -206,18 +206,22 @@ public class RegistroM610CriarPO extends TestBaseSteven{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
 		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		sleep(4000);
+		sleep(12000);
+	
 		biblioteca.click();
+		sleep(6000);
 		
-		sleep(3000);
+		int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			nao.click();
+		}
+		
 		waitExpectElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

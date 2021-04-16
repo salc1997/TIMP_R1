@@ -1,6 +1,8 @@
 package com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM225;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -34,7 +36,18 @@ public class RegistroM225EditarPO extends TestBaseFernando{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean editar() {
+	public static boolean validarFecha(String fecha) {
+        try {
+            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+            formatoFecha.setLenient(false);
+            formatoFecha.parse(fecha);
+        } catch (ParseException e) {
+            return false;
+        }
+        return true;
+    }
+	
+	public   ArrayList<Boolean>  editar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -73,11 +86,8 @@ public class RegistroM225EditarPO extends TestBaseFernando{
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
+
 		
 		driver.navigate().refresh();
 		sleep(3000);
@@ -92,19 +102,18 @@ public class RegistroM225EditarPO extends TestBaseFernando{
 		System.out.println("");
 		System.out.println("Data da operação: " + valorDataOperacao);
 		
-		Date fechaDate = new Date(valorDataOperacao);
-		String formatoFechaValido = new SimpleDateFormat("MM/dd/yyyy").format(fechaDate).toString();
-		System.out.println("");
-		System.out.println("Data Operacao formato correcto: " + formatoFechaValido);
+		boolean sucesso1 = false;
 		
-		boolean sucesso = false;
+		/*Date fechaDate = new Date(valorDataOperacao);
+		String formatoFechaValido = new SimpleDateFormat("MM/dd/yyyy").format(fechaDate).toString();*/
+		//System.out.println("");
+		//System.out.println("Data Operacao formato correcto: " + formatoFechaValido);
 		
-		if(valorDataOperacao.equals(formatoFechaValido)){
-			System.out.println("Formato de fecha correcto...");
-			sucesso = true;
-		}else {
-			System.out.println("El formato de la fecha no es correcto, debe ser dd/mm/yyyy");
-		}
+		sucesso1 = validarFecha(valorDataOperacao);
+		
+	       ArrayList<Boolean>  sucesso = new ArrayList<Boolean>(); 
+	        sucesso.add(sucesso1);
+	        
 		
 		return sucesso;
 	}

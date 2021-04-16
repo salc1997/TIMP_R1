@@ -153,7 +153,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		sleep(6000);
 		
 		uf.click();
-		sleep(2000);
+		sleep(3000);
 		
 		if (tc2 == true) {
 
@@ -335,10 +335,9 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		sleep(2000);
 		
 		sim.click();
-		sleep(6000);
-		
+		sleep(10000);		
 		waitExpectElement(biblioteca);
-		sleep(2000);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(4000);
@@ -348,8 +347,8 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			/*no.click();
-			sleep(2000);*/
+			no.click();
+			sleep(2000);
 
 		}else if (tq1==true ) {
 			no.click();
@@ -360,7 +359,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 			sleep(2000);*/
 		}
 		
-		sleep(4000);
+		sleep(8000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

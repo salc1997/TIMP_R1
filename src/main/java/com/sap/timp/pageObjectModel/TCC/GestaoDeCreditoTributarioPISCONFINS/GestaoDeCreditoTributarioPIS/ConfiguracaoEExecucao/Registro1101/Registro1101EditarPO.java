@@ -94,8 +94,8 @@ public class Registro1101EditarPO extends TestBaseSteven{
 		String enviar = valor;
 		
 		
-		Efilial.click();
-		sleep(3000);
+		/*Efilial.click();
+		sleep(3000);*/
 		filial.click();
 		sleep(1000);
 		filialO.click();

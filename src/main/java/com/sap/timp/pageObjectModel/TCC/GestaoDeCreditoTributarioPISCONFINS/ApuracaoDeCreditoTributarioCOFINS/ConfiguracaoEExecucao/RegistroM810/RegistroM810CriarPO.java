@@ -133,7 +133,7 @@ public class RegistroM810CriarPO extends TestBaseSteven{
 			System.out.println("Id ultimo registro: " +idRegistro);
 		}
 		novo.click();
-		sleep(2000);
+		sleep(6000);
 		waitExpectElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -141,10 +141,10 @@ public class RegistroM810CriarPO extends TestBaseSteven{
 		empresa.click();
 		sleep(1000);
 		opcao.click();
-		sleep(1000);
+		sleep(6000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(4000);
 		
 		uf.click();

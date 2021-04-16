@@ -85,7 +85,7 @@ public class RegistroM625EditarPO  extends TestBaseMassiel{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(18000);
+		sleep(20000);
 		
 		String empresa1 = empresa.getAttribute("value");
 		String uf1 = uf.getText();

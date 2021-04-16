@@ -169,7 +169,7 @@ public class RegistroM610VisualizarPO extends TestBaseSteven{
 			nao.click();
 		}
 		
-		sleep(5000);
+		sleep(7000);
 		waitExpectElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

@@ -11,11 +11,11 @@
 				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Detalhes"></class>
 				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Visualizar"></class>
 				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1ParâmetrosgeraisSimular"></class>
-				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1EdiçãoEstruturas"></class>
-				
+					
 				<!-- Edicao -->
-					<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimula"></class>
-					<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento"></class>
+				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturas"></class>
+				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimula"></class>
+				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento"></class>
 				
 				<!-- Parametros Gerais de Nuevo -->
 				<class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente"></class>

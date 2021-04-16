@@ -282,10 +282,10 @@ public class LIxeiraCriarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+		//waitExpectElement(mensagembloqueio);
+		sleep(5000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

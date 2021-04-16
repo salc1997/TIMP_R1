@@ -166,7 +166,7 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		sleep(2000);
+		sleep(5000);
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -205,8 +205,8 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+//		waitExpectElement(mensagembloqueio);
+		sleep(5000);
 		
 		lixeira.click();
 		sleep(2000);

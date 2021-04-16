@@ -25,7 +25,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"structure-group\"]/div/div/div[2]")
 	public WebElement grupodeestrutura;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Ajuste\"][1]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"Ajuste\"][1]")
 	public WebElement opcaogrupodeestrutura;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
@@ -154,14 +154,16 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 		}else {
 			td1 = true;
 		}
+		
 		if(tp1 == true) {
-		grupodeestrutura.click();
-		sleep(1000);
-		opcaogrupodeestruturatp1.click();
-		sleep(1000);
-		}else {
 			grupodeestrutura.click();
 			sleep(1000);
+			opcaogrupodeestruturatp1.click();
+			sleep(1000);
+		}else {
+			grupodeestrutura.click();
+			sleep(2000);
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"][1]");
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}
@@ -217,6 +219,11 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		attributeToBeXpath("//div[@id=\"structure-validation\"]/div", "class", "base-select required");
 		estruturadevalidacao.click();
 		sleep(2000);
 		outraestruturadevalidacao.click();

@@ -3,29 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar">
-=======
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
-<<<<<<< HEAD
-=======
-          <include name="beforeClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
-<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="visualizar"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar -->
-=======
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -199,7 +199,7 @@ public class GatewayEventoPO extends TestBaseSteven {
 		moveToElement(gatewayEvento, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
 		
-		seleccionarTodo.click();
+	/*	seleccionarTodo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -229,10 +229,10 @@ public class GatewayEventoPO extends TestBaseSteven {
 		sleep(2000);
 		moveToElement(operacao, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
+	*/	
 		
 		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+/*		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
@@ -244,17 +244,17 @@ public class GatewayEventoPO extends TestBaseSteven {
 		sleep(2000);
 		
 		
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		moveToElement(actividad, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
-//		sleep(2000);
-//		
-//
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
-//		sleep(2000);
-//		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(actividad, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
+		sleep(2000);
+		
+
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
+		sleep(2000);
+	*/	
 //		dobleClickElement(NovoActividad);
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

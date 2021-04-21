@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar">
+      <class name="com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento">
         <methods>
+          <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar -->
+      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.GatewayEvento -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

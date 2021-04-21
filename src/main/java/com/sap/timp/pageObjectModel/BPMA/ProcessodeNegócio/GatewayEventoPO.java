@@ -127,6 +127,8 @@ public class GatewayEventoPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
+	@FindBy(xpath = "//button[text()=\"Cancelar\"]")
+	public WebElement cancelar;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div/div/ul[2]/ul/ul/li[4]/div")
 	public WebElement gatewayEvento;
@@ -143,7 +145,32 @@ public class GatewayEventoPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"createGatewayDialog\"]/div/div[1]/div[2]/div[2]/div/div/input")
 	public WebElement descripcionGateway;
 	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[1]/*/*[2]")
+	public WebElement puntoCirculo;
 	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[9]")
+	public WebElement puntoEvento;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[7]")
+	public WebElement puntoEvento2;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[3]/*/*[5]")
+	public WebElement puntotarefa;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*/*/span[@aria-label=\"Editar\"]")
+	public WebElement editar1;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[10]/body/span")
+	public WebElement editar;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/button[2]/span[2]")
+	public WebElement seleccionarTodo2;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[1]/*/*[2]")
+	public WebElement puntoCirculo3;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[9]")
+	public WebElement puntoEvento4;
 	
 	public GatewayEventoPO() {
 
@@ -199,7 +226,7 @@ public class GatewayEventoPO extends TestBaseSteven {
 		moveToElement(gatewayEvento, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
 		
-	/*	seleccionarTodo.click();
+		seleccionarTodo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -215,35 +242,118 @@ public class GatewayEventoPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		nameGateway.sendKeys("Teste QA");
+		cancelar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		seleccionarTodo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement btnEditar1 = driver.findElement(By.xpath("//*[@class=\"edit-btn\"]"));
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].setAttribute('style', 'display:none')", btnEliminar);
+		js.executeScript("arguments[0].setAttribute('x', '12')", btnEditar1);
+		js.executeScript("arguments[0].setAttribute('y', '-30')", btnEditar1);
 		sleep(1000);
-		nameGateway.sendKeys("Descripcion Teste QA");
+		
+		gatewayEventoEdit.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		nameGateway.sendKeys("Gateway evento");
+		sleep(1000);
+		descripcionGateway.sendKeys("Descripcion Teste QA");
 		sleep(1000);
 		aplicar.click();
 		sleep(1000);
 		
-		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(puntoCirculo, puntoEvento);
+		sleep(2000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(operacao, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
-	*/	
+
 		
 		
-/*		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
 		
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(puntoEvento2, puntotarefa);
+		sleep(2000);
+		
+		
+			
 		dobleClickElement(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(gatewayEvento, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
+		sleep(4000);
 		
+		seleccionarTodo2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		actionsMoveToElementElement(editar);
+		sleep(2000);
+		
+		editar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		
+		cancelar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		seleccionarTodo2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		actionsMoveToElementElement(editar);
+		sleep(2000);
+		
+		editar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		nameGateway.sendKeys("Gateway evento");
+		sleep(1000);
+		
+		descripcionGateway.sendKeys("Descripcion Teste QA");
+		sleep(1000);
+		
+		aplicar.click();
+		sleep(1000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(puntoCirculo3, puntoEvento4);
+		sleep(2000);
+		
+	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(actividad, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
@@ -254,7 +364,7 @@ public class GatewayEventoPO extends TestBaseSteven {
 		sleep(2000);
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
-	*/	
+	
 //		dobleClickElement(NovoActividad);
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

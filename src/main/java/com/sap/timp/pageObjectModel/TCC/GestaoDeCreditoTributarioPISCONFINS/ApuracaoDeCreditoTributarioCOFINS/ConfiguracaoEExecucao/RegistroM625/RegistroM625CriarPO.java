@@ -173,14 +173,12 @@ public class RegistroM625CriarPO extends TestBaseSteven{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		biblioteca.click();
 		
-		
 		sleep(6000);
 		
-
 		int botaoNao = rows("//button[text()=\"Não\"]");
 		
 		if (botaoNao > 0) {

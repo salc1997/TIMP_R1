@@ -301,11 +301,11 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		sim.click();
-		sleep(6000);
+		sleep(10000);
 		
 		
 
-		waitExpectElement(biblioteca);
+		//waitExpectElement(biblioteca);
 		sleep(2000);
 		
 		

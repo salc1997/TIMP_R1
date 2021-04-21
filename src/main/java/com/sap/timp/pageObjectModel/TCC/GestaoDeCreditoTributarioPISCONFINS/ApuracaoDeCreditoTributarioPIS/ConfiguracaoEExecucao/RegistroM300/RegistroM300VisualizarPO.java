@@ -58,15 +58,15 @@ public class RegistroM300VisualizarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
-		sleep(2000);
+		sleep(4000);
 		apuraçãoCrédito.click();
-		sleep(2000);
+		sleep(4000);
 		configuracaoEExecucao.click();
-		sleep(2000);
+		sleep(4000);
 		registroM300.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		siguiente.click();
 		sleep(2000);
 		
@@ -78,12 +78,9 @@ public class RegistroM300VisualizarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		visualizar.click();
-		sleep(6000);
+		sleep(3000);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		waitExpectElement(filial);
-		sleep(2000);
+		
 		
 		String empresaVisualizar = empresa.getAttribute("value");
 		String ufVisualizar = uf.getText();
@@ -92,7 +89,7 @@ public class RegistroM300VisualizarPO extends TestBaseMassiel{
 		String valorContribuiçãoApuradaVisualizar = valorContribuiçãoApurada.getAttribute("value");
 		String valorContribuiçãoRecolherDiferidaPeríodosAnterioresVisualizar = valorContribuiçãoRecolherDiferidaPeríodosAnteriores.getAttribute("value");
 		
-		System.out.println(empresaVisualizar);
+		System.out.println(" empresa"+empresaVisualizar);
 		System.out.println(ufVisualizar);
 		System.out.println(filialVisualizar);
 		System.out.println(códigoContribuiçãoSocialDiferidaPeríodosAnterioresVisualizar);
@@ -101,11 +98,8 @@ public class RegistroM300VisualizarPO extends TestBaseMassiel{
 		
 		biblioteca.click();
 		sleep(4000);
-		
-		no.click();
-		sleep(8000);
-			
 	
+		
 		sleep(4000);
 		waitExpectElement(siguiente);
 		sleep(2000);
@@ -121,13 +115,11 @@ public class RegistroM300VisualizarPO extends TestBaseMassiel{
 		menu1.click();
 		sleep(1000);
 		editar.click();
-		sleep(6000);
+		sleep(2000);
 		
-		sleep(4000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		waitExpectElement(filial);
-		sleep(2000);
+		
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		
 		String empresaEditar = empresa.getAttribute("value");
 		String ufEditar = uf.getText();

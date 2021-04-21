@@ -228,11 +228,11 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		sleep(3000);
 		waitExpectElement(sim);
 		sim.click();
-		sleep(3000);
+		sleep(6000);
 		
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

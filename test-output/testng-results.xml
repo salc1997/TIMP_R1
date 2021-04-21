@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-04-21T00:19:24Z" name="Default suite" finished-at="2021-04-21T00:20:56Z" duration-ms="91114">
+=======
+  <suite started-at="2021-04-21T02:26:19Z" name="Default suite" finished-at="2021-04-21T02:34:50Z" duration-ms="511022">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-04-21T00:19:24Z" name="Default test" finished-at="2021-04-21T00:20:56Z" duration-ms="91114">
       <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1620.Registro1620Criar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1620.Registro1620Criar@5afa3c9]" started-at="2021-04-21T00:19:24Z" name="beforeClass" finished-at="2021-04-21T00:20:43Z" duration-ms="78646" status="PASS">
+=======
+    <test started-at="2021-04-21T02:26:19Z" name="Default test" finished-at="2021-04-21T02:34:50Z" duration-ms="511022">
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluir@13b13b5d]" started-at="2021-04-21T02:26:19Z" name="beforeClass" finished-at="2021-04-21T02:26:33Z" duration-ms="14594" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1620.Registro1620Criar@5afa3c9]" started-at="2021-04-21T00:20:43Z" name="criar" finished-at="2021-04-21T00:20:55Z" duration-ms="12213" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
@@ -153,10 +168,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        <test-method signature="excluirExecutar()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluir@13b13b5d]" started-at="2021-04-21T02:26:33Z" name="excluirExecutar" finished-at="2021-04-21T02:34:45Z" duration-ms="492086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirExecutar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluir@13b13b5d]" started-at="2021-04-21T02:34:45Z" name="afterClass" finished-at="2021-04-21T02:34:50Z" duration-ms="4313" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1620.Registro1620Criar -->
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluir -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

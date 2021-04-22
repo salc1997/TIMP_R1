@@ -225,6 +225,7 @@ public class RegistroM225CriarO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		int naobotao= driver.findElements(By.xpath("//button[text()=\"Não\"]")).size();
 		if (naobotao > 0) {
 			

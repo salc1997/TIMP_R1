@@ -2,6 +2,8 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoT
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -30,7 +32,7 @@ public class RegistroM225Editar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -39,10 +41,12 @@ public class RegistroM225Editar extends TestBaseFernando {
 		loginTC.login();
 
 		acessarTCCPO.acessarTCC();
+	
+		ArrayList<Boolean> sucesso = registroM225EditarPO.editar();
 
-		boolean sucesso = registroM225EditarPO.editar();
-
-		assertTrue(sucesso, Editar);
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 	}
 
 }

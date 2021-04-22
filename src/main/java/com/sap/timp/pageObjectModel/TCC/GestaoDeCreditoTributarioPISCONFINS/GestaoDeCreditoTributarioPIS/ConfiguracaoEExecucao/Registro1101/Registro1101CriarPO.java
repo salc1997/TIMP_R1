@@ -70,7 +70,7 @@ public class Registro1101CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"fieldSize1 branch\"]/div/div[@id=\"main-icon\"]")
 	public WebElement filialV;
 	
-	@FindBy(xpath = "//*[text()=\"0001\"]")
+	@FindBy(xpath = "//li[text()=\"0001\"]")
 	public WebElement filialOV;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[3]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/span")

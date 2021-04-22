@@ -80,6 +80,9 @@ public class RangeDeNumeracaoEditarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		String enviar = "01/01/2014";
+		
+		System.out.println( enviar);
+		
 		validadede.clear();
 		sleep(2000);
 		validadede.sendKeys(enviar);

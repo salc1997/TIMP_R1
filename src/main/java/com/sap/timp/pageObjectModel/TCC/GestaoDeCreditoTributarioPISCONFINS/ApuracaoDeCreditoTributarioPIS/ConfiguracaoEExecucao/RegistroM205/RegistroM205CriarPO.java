@@ -192,10 +192,10 @@ public class RegistroM205CriarPO extends TestBaseSteven{
 		ufO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(uf);
-		sleep(1000);
+		sleep(6000);
 	
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+	//	attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();
@@ -208,7 +208,7 @@ public class RegistroM205CriarPO extends TestBaseSteven{
 		numerocampo.sendKeys("07");
 		sleep(1000);
 		codigoreceita.click();
-		sleep(2000);
+		sleep(4000);
 		opcao.click();
 		sleep(2000);
 		valordebito.click();

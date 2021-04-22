@@ -176,7 +176,7 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componenteTC2;
 	
 	
@@ -194,6 +194,9 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement grupoEstruturaRO;
+	
+	@FindBy(xpath = "//li[@id=\"option-17\"]")
+	public WebElement grupoEstruturaROTC2;
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement grupoEstruturaROTP1;
@@ -706,8 +709,9 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		boolean tq1  = false;
 		
 		if (url.contains("tq1")) {
-			tp1 = true;
+			tq1 = true;
 		}	
+		
 		if (url.contains("tp1")) {
 			tp1 = true;
 		}
@@ -765,7 +769,7 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 			sleep(1000);
 			componenteO.click();
 			sleep(1000);
-		}else {
+		}else if (tp1 == true){
 			componenteTC2.click();
 			sleep(1000);
 			componenteO.click();
@@ -786,9 +790,17 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 		
 		grupoEstruturaR.click();
 		sleep(1000);
-		if (tp1 == true) {
+		
+		if (tq1 == true) {
+			
+			actionsMoveToElementElement(grupoEstruturaROTC2);
+			grupoEstruturaROTC2.click();
+			
+		}else if (tp1 == true) {
+		
 			grupoEstruturaROTP1.click();
-		}else {
+			
+		}else if (tc2 == true) {
 			grupoEstruturaRO.click();
 		}
 		

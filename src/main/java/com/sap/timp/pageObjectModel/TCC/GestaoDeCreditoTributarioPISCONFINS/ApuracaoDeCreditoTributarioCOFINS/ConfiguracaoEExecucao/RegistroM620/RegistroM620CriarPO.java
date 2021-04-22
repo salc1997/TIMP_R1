@@ -130,7 +130,7 @@ public class RegistroM620CriarPO extends TestBaseSteven{
 		}
 		
 		novo.click();
-		sleep(2000);
+		sleep(4000);
 		waitExpectElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -184,7 +184,7 @@ public class RegistroM620CriarPO extends TestBaseSteven{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		biblioteca.click();
 		

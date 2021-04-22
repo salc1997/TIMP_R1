@@ -41,46 +41,46 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure\"]/div/div/div/input")
 	public WebElement estructuraNotaFiscal;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div[1]/div[1]/input[@placeholder=\"Docnum\"]")
 	public WebElement estructuraNotaFiscalopc1;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div[1]/div[1]/input[@placeholder=\"Item-Docnum\"]")
 	public WebElement estructuraNotaFiscalopc2;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div[1]/div[1]/input[@placeholder=\"Indicador Tipo de Operação\"]")
 	public WebElement estructuraNotaFiscalopc3;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div[1]/div[1]/input[@placeholder=\"Status do documento\"]")
 	public WebElement estructuraNotaFiscalopc4;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div[1]/div[1]/input[@placeholder=\"Código do modelo doc. fiscal\"]")
 	public WebElement estructuraNotaFiscalopc5;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div[1]/div[1]/input[@placeholder=\"Classificação da Nota\"]")
 	public WebElement estructuraNotaFiscalopc6;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div[1]/div[1]/input[@placeholder=\"Empresa\"]")
 	public WebElement estructuraNotaFiscalopc7;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div[1]/div[1]/input[@placeholder=\"UF Filial\"]")
 	public WebElement estructuraNotaFiscalopc8;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div[1]/div[1]/input[@placeholder=\"Filial\"]")
 	public WebElement estructuraNotaFiscalopc9;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div[1]/div[1]/input[@placeholder=\"UF do Parceiro\"]")
 	public WebElement estructuraNotaFiscalopc10;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div[1]/div[1]/input[@placeholder=\"Data de lançamento\"]")
 	public WebElement estructuraNotaFiscalopc11;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div[1]/div[1]/input[@placeholder=\"Cancelado\"]")
 	public WebElement estructuraNotaFiscalopc12;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div[1]/div[1]/input[@placeholder=\"Valor Imposto\"]")
 	public WebElement estructuraNotaFiscalopc13;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div[1]/div[1]/input[@placeholder=\"Valor Fecp\"]")
 	public WebElement estructuraNotaFiscalopc14;
 	
 	//------------------ Estructura Cabecalho
@@ -168,46 +168,46 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure\"]/div/div/div/input")
 		public WebElement estructuraNotaFiscalE;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc1E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc2E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc3E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc4E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc5E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc6E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc7E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc8E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc9E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc10E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc11E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc12E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc13E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div[1]/div[1]/input")
 		public WebElement estructuraNotaFiscalopc14E;
 		
 		//------------------ Estructura Cabecalho
@@ -310,27 +310,27 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		visualizar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 
 		String textotipoLibro = tipoLibro.getAttribute("value");
 		String textoempresa = empresa.getText();
 		String textouf = uf.getText();
 		String textofilial = filial.getText();
-		String textoestructuraNotaFiscal = estructuraNotaFiscal.getAttribute("value");
+		//String textoestructuraNotaFiscal = estructuraNotaFiscal.getAttribute("value");
 		String textoestructuraNotaFiscalopc1 = estructuraNotaFiscalopc1.getText();
-		String textoestructuraNotaFiscalopc2 = estructuraNotaFiscalopc2.getText();
-		String textoestructuraNotaFiscalopc3 = estructuraNotaFiscalopc3.getText();
-		String textoestructuraNotaFiscalopc4 = estructuraNotaFiscalopc4.getText();
-		String textoestructuraNotaFiscalopc5 = estructuraNotaFiscalopc5.getText();
-		String textoestructuraNotaFiscalopc6 = estructuraNotaFiscalopc6.getText();
-		String textoestructuraNotaFiscalopc7 = estructuraNotaFiscalopc7.getText();
-		String textoestructuraNotaFiscalopc8 = estructuraNotaFiscalopc8.getText();
-		String textoestructuraNotaFiscalopc9 = estructuraNotaFiscalopc9.getText();
-		String textoestructuraNotaFiscalopc10 = estructuraNotaFiscalopc10.getText();
-		String textoestructuraNotaFiscalopc11 = estructuraNotaFiscalopc11.getText();
-		String textoestructuraNotaFiscalopc12 = estructuraNotaFiscalopc12.getText();
-		String textoestructuraNotaFiscalopc13 = estructuraNotaFiscalopc13.getText();
-		String textoestructuraNotaFiscalopc14 = estructuraNotaFiscalopc14.getText();
+		String textoestructuraNotaFiscalopc2 = estructuraNotaFiscalopc2.getAttribute("value");
+		String textoestructuraNotaFiscalopc3 = estructuraNotaFiscalopc3.getAttribute("value");
+		String textoestructuraNotaFiscalopc4 = estructuraNotaFiscalopc4.getAttribute("value");
+		String textoestructuraNotaFiscalopc5 = estructuraNotaFiscalopc5.getAttribute("value");
+		String textoestructuraNotaFiscalopc6 = estructuraNotaFiscalopc6.getAttribute("value");
+		String textoestructuraNotaFiscalopc7 = estructuraNotaFiscalopc7.getAttribute("value");
+		String textoestructuraNotaFiscalopc8 = estructuraNotaFiscalopc8.getAttribute("value");
+		String textoestructuraNotaFiscalopc9 = estructuraNotaFiscalopc9.getAttribute("value");
+		String textoestructuraNotaFiscalopc10 = estructuraNotaFiscalopc10.getAttribute("value");
+		String textoestructuraNotaFiscalopc11 = estructuraNotaFiscalopc11.getAttribute("value");
+		String textoestructuraNotaFiscalopc12 = estructuraNotaFiscalopc12.getAttribute("value");
+		String textoestructuraNotaFiscalopc13 = estructuraNotaFiscalopc13.getAttribute("value");
+		String textoestructuraNotaFiscalopc14 = estructuraNotaFiscalopc14.getAttribute("value");
 		//-------------estructura  cabecaho
 		String textoestructuraDeCabecalho = estructuraDeCabecalho.getAttribute("value");
 		String textoestructuraDeCabecalho1 = estructuraDeCabecalho1.getText();
@@ -360,7 +360,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		System.out.println("Empresa: " + textoempresa);
 		System.out.println("UF: " + textouf);
 		System.out.println("Filial: " + textofilial);
-		System.out.println("Estructura Nota Fiscal: " + textoestructuraNotaFiscal);
+		//System.out.println("Estructura Nota Fiscal: " + textoestructuraNotaFiscal);
 		System.out.println("Estructura Nota Fiscal 1: " + textoestructuraNotaFiscalopc1);
 		System.out.println("Estructura Nota Fiscal 2: " + textoestructuraNotaFiscalopc2);
 		System.out.println("Estructura Nota Fiscal 3: " + textoestructuraNotaFiscalopc3);
@@ -419,28 +419,27 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(6000);
 		
 		String textotipoLibroE = tipoLibroE.getAttribute("value");
 		String textoempresaE = empresaE.getText();
 		String textoufE = ufE.getText();
 		String textofilialE = filialE.getText();
-		String textoestructuraNotaFiscalE = estructuraNotaFiscalE.getAttribute("value");
-		String textoestructuraNotaFiscalopc1E = estructuraNotaFiscalopc1E.getText();
-		String textoestructuraNotaFiscalopc2E = estructuraNotaFiscalopc2E.getText();
-		String textoestructuraNotaFiscalopc3E = estructuraNotaFiscalopc3E.getText();
-		String textoestructuraNotaFiscalopc4E = estructuraNotaFiscalopc4E.getText();
-		String textoestructuraNotaFiscalopc5E = estructuraNotaFiscalopc5E.getText();
-		String textoestructuraNotaFiscalopc6E = estructuraNotaFiscalopc6E.getText();
-		String textoestructuraNotaFiscalopc7E= estructuraNotaFiscalopc7E.getText();
-		String textoestructuraNotaFiscalopc8E = estructuraNotaFiscalopc8E.getText();
-		String textoestructuraNotaFiscalopc9E = estructuraNotaFiscalopc9E.getText();
-		String textoestructuraNotaFiscalopc10E = estructuraNotaFiscalopc10E.getText();
-		String textoestructuraNotaFiscalopc11E = estructuraNotaFiscalopc11E.getText();
-		String textoestructuraNotaFiscalopc12E = estructuraNotaFiscalopc12E.getText();
-		String textoestructuraNotaFiscalopc13E = estructuraNotaFiscalopc13E.getText();
-		String textoestructuraNotaFiscalopc14E = estructuraNotaFiscalopc14E.getText();
+		//String textoestructuraNotaFiscalE = estructuraNotaFiscalE.getAttribute("value");
+		String textoestructuraNotaFiscalopc1E = estructuraNotaFiscalopc1E.getAttribute("value");
+		String textoestructuraNotaFiscalopc2E = estructuraNotaFiscalopc2E.getAttribute("value");
+		String textoestructuraNotaFiscalopc3E = estructuraNotaFiscalopc3E.getAttribute("value");
+		String textoestructuraNotaFiscalopc4E = estructuraNotaFiscalopc4E.getAttribute("value");
+		String textoestructuraNotaFiscalopc5E = estructuraNotaFiscalopc5E.getAttribute("value");
+		String textoestructuraNotaFiscalopc6E = estructuraNotaFiscalopc6E.getAttribute("value");
+		String textoestructuraNotaFiscalopc7E= estructuraNotaFiscalopc7E.getAttribute("value");
+		String textoestructuraNotaFiscalopc8E = estructuraNotaFiscalopc8E.getAttribute("value");
+		String textoestructuraNotaFiscalopc9E = estructuraNotaFiscalopc9E.getAttribute("value");
+		String textoestructuraNotaFiscalopc10E = estructuraNotaFiscalopc10E.getAttribute("value");
+		String textoestructuraNotaFiscalopc11E = estructuraNotaFiscalopc11E.getAttribute("value");
+		String textoestructuraNotaFiscalopc12E = estructuraNotaFiscalopc12E.getAttribute("value");
+		String textoestructuraNotaFiscalopc13E = estructuraNotaFiscalopc13E.getAttribute("value");
+		String textoestructuraNotaFiscalopc14E = estructuraNotaFiscalopc14E.getAttribute("value");
 		//-------------estructura  cabecaho
 		String textoestructuraDeCabecalhoE = estructuraDeCabecalhoE.getAttribute("value");
 		String textoestructuraDeCabecalho1E = estructuraDeCabecalho1E.getText();
@@ -470,7 +469,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		System.out.println("Empresa: " + textoempresaE);
 		System.out.println("UF: " + textoufE);
 		System.out.println("Filial: " + textofilialE);
-		System.out.println("Estructura Nota Fiscal: " + textoestructuraNotaFiscalE);
+		//System.out.println("Estructura Nota Fiscal: " + textoestructuraNotaFiscalE);
 		System.out.println("Estructura Nota Fiscal 1: " + textoestructuraNotaFiscalopc1E);
 		System.out.println("Estructura Nota Fiscal 2: " + textoestructuraNotaFiscalopc2E);
 		System.out.println("Estructura Nota Fiscal 3: " + textoestructuraNotaFiscalopc3E);
@@ -517,7 +516,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		sucesso.add(textofilialE.equals(textofilial));
 		
 		
-		sucesso.add(textoestructuraNotaFiscalE.equals(textoestructuraNotaFiscal));
+	//	sucesso.add(textoestructuraNotaFiscalE.equals(textoestructuraNotaFiscal));
 		sucesso.add(textoestructuraNotaFiscalopc1E.equals(textoestructuraNotaFiscalopc1));
 		sucesso.add(textoestructuraNotaFiscalopc2E.equals(textoestructuraNotaFiscalopc2));
 		sucesso.add(textoestructuraNotaFiscalopc2E.equals(textoestructuraNotaFiscalopc2));

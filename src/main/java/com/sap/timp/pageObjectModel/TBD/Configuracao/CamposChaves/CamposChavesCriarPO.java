@@ -99,7 +99,6 @@ public class CamposChavesCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		
 		tipodocumento.click();
 		sleep(1000);
 		opcaotipodocumento.click();

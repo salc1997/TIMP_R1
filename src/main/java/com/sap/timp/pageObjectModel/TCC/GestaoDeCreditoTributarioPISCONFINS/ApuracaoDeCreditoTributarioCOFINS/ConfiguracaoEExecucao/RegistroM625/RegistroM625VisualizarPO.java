@@ -138,7 +138,7 @@ public class RegistroM625VisualizarPO extends TestBaseSteven{
 		System.out.println(dataOperacaoV);
 		System.out.println(descricaoV);
 		
-		sleep(3000);
+		sleep(6000);
 		
 		biblioteca.click();
 		

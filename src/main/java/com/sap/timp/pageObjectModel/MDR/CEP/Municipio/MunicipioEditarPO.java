@@ -10,7 +10,7 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class MunicipioEditarPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")

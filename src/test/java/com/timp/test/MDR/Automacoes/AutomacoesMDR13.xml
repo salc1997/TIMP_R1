@@ -59,6 +59,7 @@
 		<classes>
 			<!-- Tipo de Tributo Conta Contabil -->	
 			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilCriar"></class>
+			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilEditar"></class>
 			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilExcluir"></class>
 			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabiExcluirMassa"></class>
 			

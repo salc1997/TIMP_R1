@@ -1,3 +1,4 @@
+
 package com.sap.timp.pageObjectModel.ADM.Configuração.ManuaisDeComponente;
 
 import java.io.File;
@@ -97,7 +98,7 @@ public class ManuaisDeComponenteCriarPO extends TestBaseSteven {
 		sleep(2000);
 		
 
-		File filePath = new File("C:\\Users\\Cristhian Vasquez\\Desktop\\Exemplo - Especificacion Técnica TIM-791.pdf");
+		File filePath = new File("C:\\Users\\ymass\\Desktop\\automatizacion.txt");
 		String pathString = filePath.getAbsolutePath();
 		
 		driver.findElement(By.className("file-uploader")).sendKeys(pathString);
@@ -157,3 +158,4 @@ public class ManuaisDeComponenteCriarPO extends TestBaseSteven {
 
 
 }
+

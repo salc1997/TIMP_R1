@@ -6,6 +6,7 @@
 			<!--  Parametros Gerais -->	
 			<class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasCriarMaisEditarMaisVisualizar"></class>
 			<class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasExcluir"></class>
+			<class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros"></class>
 		</classes>
 	</test>
 </suite>

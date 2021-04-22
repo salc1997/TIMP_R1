@@ -886,8 +886,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		waitExpectElement(calculator);
 		sleep(2000);
 		
@@ -2342,21 +2343,21 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	public ArrayList<Boolean> resultadoFinalParte2() {
 		
 		calculator.click();
-		sleep(1000);
+		sleep(5000);
 		waitExpectElement(resultadoFinal);
-		sleep(2000);
+		sleep(5000);
 		resultadoFinal.click();
-		sleep(1000);
+		sleep(5000);
 
 		adicionarConfiguracao.click();
-		sleep(1000);
+		sleep(5000);
 		
 		nomedoResultado.sendKeys("Resultado Final 1");
 		sleep(1000);
 		
 		
 		actionsMoveToElementElement(camposSaidaBCB);
-		sleep(2000);
+		sleep(5000);
 		
 		camposSaidaBCB.click();
 		sleep(2000);
@@ -2371,16 +2372,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC1);
-		sleep(1000);
+		sleep(5000);
 	
 		caixaFormula.sendKeys("+");
-		sleep(2000);
+		sleep(5000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC2);
-		sleep(1000);
+		sleep(5000);
 		
 		criar.click();
-		sleep(2000);
+		sleep(5000);
 		
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Configuração de Resultado inserido com sucesso\")]")).size();

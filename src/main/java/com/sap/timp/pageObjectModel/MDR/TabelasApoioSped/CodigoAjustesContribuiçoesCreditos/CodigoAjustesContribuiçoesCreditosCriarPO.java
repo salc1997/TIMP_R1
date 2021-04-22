@@ -62,17 +62,20 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		ajusteeinformacao.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 	
 		//conta o numero de linhas
 
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		System.out.println(id);
+		String id = "0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println(id);
+		}	
 		
 		sleep(2000);
 		
@@ -112,7 +115,14 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		sleep(2000);
 
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String id2 = "0";
+		
+		if(rows > 0) {
+			id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+			System.out.println(id2);
+		}
 		
 		
 		idInserir("codigoajustescontribuicoescreditos", id2);

@@ -174,14 +174,16 @@ public class Registro1102CriarPO extends TestBaseSteven {
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		sleep(3000);
+		sleep(6000);
 		
 		uf.click();
+		sleep(4000);
+		actionsMoveToElementElement(ufO);
 		sleep(1000);
 		ufO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(uf);
-		sleep(1000);
+		sleep(6000);
 	
 	
 		sleep(3000);
@@ -206,11 +208,11 @@ public class Registro1102CriarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(nao);
+		//waitExpectElement(nao);
 		sleep(2000);
-		nao.click();
+		//nao.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
+		//waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

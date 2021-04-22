@@ -51,11 +51,10 @@ public class MapeamentoDeEstruturasEditarPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> editar() {
 		sleep(2000);
-		
 		mapeamentodeestruturas.click();
-		
 		sleep(2000);
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -82,6 +81,8 @@ public class MapeamentoDeEstruturasEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
+		sleep(2000);
+		
 		tributo.click();
 		sleep(2000);
 		opcaotributo.click();
@@ -123,6 +124,7 @@ public class MapeamentoDeEstruturasEditarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(cofins);
 		sleep(2000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

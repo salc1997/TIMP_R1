@@ -90,15 +90,20 @@ public class CodigosDasObrigaçoesDeICMSaRecolherExcluirPO extends TestBaseSteven
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(aceitar);
+		sleep(2000);
 		
 		aceitar.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		driver.navigate().refresh();
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.DFG.Leiautes;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -13,7 +15,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-File-and-Folders icon-gooddoc padding-right \"]")
 	public WebElement sped;
 	
-	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
+	@FindBy(xpath = "//div[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
 	public WebElement configuracoes;
 	
 	@FindBy(xpath = "//span[text()=\"E-SOCIAL\"]")
@@ -58,7 +60,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar o Tipo de Leiaute\"]")
 	public WebElement leiauteInput;
 	
-	@FindBy(xpath = "//li[text()=\"E-Social\"]")
+	@FindBy(xpath = "//li[text()=\"ALTER E-SOCIAL S1200\"]")
 	public WebElement leiauteOpc;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Grupo do Estrutura\"]")
@@ -207,7 +209,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement arquivosRaiz;
 	
-	@FindBy(xpath = "//div[@class=\"tabSettings-wrapper\"]/div[1]/div/div/div[1]/div")
+	@FindBy(xpath = "//div[@class=\"tabSettings-wrapper\"]/div[1]/div/div/div[1]/div[3]")
 	public WebElement configuracaoRaiz;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[3]/div/div[1]/div/div/div[1]/div/div[3]/span")
@@ -303,13 +305,13 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Bloco\"]")
 	public WebElement bloco;
 	
-	@FindBy(xpath = "//li[text()=\"B1\"]")
+	@FindBy(xpath = "//li[text()=\"B2\"]")
 	public WebElement blocoInput;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Registro\"]")
 	public WebElement registro;
 	
-	@FindBy(xpath = "//li[text()=\"R1\"]")
+	@FindBy(xpath = "//li[text()=\"Agrupamento\"]")
 	public WebElement registroInput;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Estrutura de Dados\"]")
@@ -384,10 +386,10 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[4]/div[2]/div/div[1]/div/div[3]/div[2]")
 	public WebElement ordenarPor;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div/div[1]/div[2]/div/div[1]/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[@class=\"order-field-select fselect\"]/div/div[1]/div[2]")
 	public WebElement seleccionCampoOrdenarPor;
 	
-	@FindBy(xpath = "//*[@id=\"5\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"14\"]/div[1]/label/span")
 	public WebElement seleccionCampoOrdenarPorInput;
 	
 	@FindBy(xpath = "//*[@id=\"select\"]/div[1]/input")
@@ -404,13 +406,13 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Bloco\"]")
 	public WebElement blocoFormato;
 	
-	@FindBy(xpath = "//*[@id=\"option-6\"]")
+	@FindBy(xpath = "//li[text()=\"B5\"]")
 	public WebElement blocoFormatoInput;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Registro\"]")
 	public WebElement seleccionRegistroFormato;
 	
-	@FindBy(xpath = "//*[@id=\"option-2\"]")
+	@FindBy(xpath = "//li[text()=\"formato\"]")
 	public WebElement seleccionRegistroFormatoInput;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Campo\"]")
@@ -452,8 +454,12 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Sem separador\"]")
 	public WebElement separadoresInput;
 	
-	@FindBy(xpath = "//*[@id=\"chkBol\"]/div/label/span")
+	@FindBy(xpath = "//div[@id=\"chkBol\"]/div/label/span")
 	public WebElement inicioLinha;
+	
+
+	@FindBy(xpath = "//div[@id=\"chkEol\"]/div/label/span")
+	public WebElement fimLinha;
 	
 	//copia bloco
 	
@@ -499,9 +505,82 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//*[@id=\"block-list-wrapper\"]/div[6]/div[2]/div[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement BRegistro7;
-	
+	// primer Bloco
 
+	@FindBy(xpath = "//span[text()=\"Ajustes Fiscais\"][1]")
+	public WebElement ajusteFiscal;
 	
+	@FindBy(xpath = "//span[text()=\"Ajustes\"]")
+	public WebElement ajuste1;
+	
+	@FindBy(xpath = "//div[@class=\"element-wrapper\"]/ul/li[2]/div[2]/ul/li[1]/div[2]/ul/li[14]")
+	public WebElement valorAjuste;
+	
+	@FindBy(xpath = "//span[text()=\"Filtro\"]")
+	public WebElement filtro;
+	
+	@FindBy(xpath = "//div[@id=\"comboBlocks\"]/div/div[1]/div[2]")
+	public WebElement blocoO;
+	
+	@FindBy(xpath = "//li[text()=\"B1\"]")
+	public WebElement blocoOPC;
+	
+	@FindBy(xpath = "//div[@id=\"comboRecords\"]/div/div[1]/div[2]")
+	public WebElement registroO;
+	
+	@FindBy(xpath = "//li[text()=\"Filtro\"]")
+	public WebElement registroOPC;
+	
+	@FindBy(xpath = "//div[@id=\"comboColumns\"]/div/div[1]/div[2]")
+	public WebElement camposO;
+	
+	@FindBy(xpath = "//li[text()=\"Valor do ajuste (34)\"]")
+	public WebElement camposOPC;
+	
+	@FindBy(xpath = "//li[text()=\"Valor do ajuste\"]")
+	public WebElement camposOPC1;
+	
+	@FindBy(xpath = "//span[text()=\"Adicionar grupo\"]")
+	public WebElement adicionar;
+	
+	@FindBy(xpath = "//div[@class=\"iconEdit\"]")
+	public WebElement editarIcono;
+	
+	@FindBy(xpath = "//input[@class=\"nomeCase ativo\"]")
+	public WebElement editarNombre;
+	
+	@FindBy(xpath = "//span[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]")
+	public WebElement flechaExpancion;
+	
+	@FindBy(xpath = "//div[@class=\"satisfy\"]/div/div[1]/div[2]")
+	public WebElement adicionarCampo;
+	
+	@FindBy(xpath = "//div[@class=\"inputOperator\"]/div/div[1]/div[2]/div/div[2]")
+	public WebElement adicionarOperador;
+	
+	@FindBy(xpath = "//div[@id=\"option-3\"]")
+	public WebElement adicionarOperadorOPC;
+	
+	@FindBy(xpath = "//div[@class=\"inputValue\"]/div/div/input")
+	public WebElement adicionarCampo2;
+	
+	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	public WebElement aplicarB1;
+	
+	@FindBy(xpath = "//div[@class=\"name-input\"]/div/div/input")
+	public WebElement nombreAgrupamiento;
+	
+	@FindBy(xpath = "//button[text()=\"Cancelar\"]")
+	public WebElement cancelar;
+	
+	@FindBy(xpath = "//div[@class=\"elements-panel\"]/div[2]/div[1]/div/div")
+	public WebElement verificarBloco2;
+	
+	@FindBy(xpath = "//span[text()=\"Excluir campo\"]")
+	public WebElement verificarBloco3;
+	
+	@FindBy(xpath = "//div[@class=\"order-field-select fselect\"]/div/div[1]/div[1]/div[1]/div")
+	public WebElement verificarBloco4;
 	
 	public LeiautesExecuçãoFuncionalidades1PO() {
 
@@ -512,6 +591,23 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	 * @return
 	 */
 	public boolean criar() {
+		
+		String url = driver.getCurrentUrl();
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}	
+		
 		sleep(3000);
 		leiautess.click();
 		sleep(3000);
@@ -533,7 +629,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		System.out.println(rows);
 		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Último Id antes da criação do registro (Raiz): " + ultimoIdAC);
-
+		idInserir("ultimoIdAC",ultimoIdAC);
 		
 		novo.click();
 		sleep(3000);
@@ -550,36 +646,17 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(2000);
 		leiauteOpc.click();
 		sleep(2000);
+	
+		grupo.click();
+		sleep(2000);
 		
-		
-		String url = driver.getCurrentUrl();
-		
-		boolean tc2 = false;
-		boolean td1 = false;
-		boolean tp1 = false;
-		boolean tq1 = false;
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
-		if(tp1 == true) {
-			grupo.click();
-			sleep(2000);
-			opcGrupo1.click();
-			sleep(1000);
-		}else {
-			grupo.click();
-			sleep(2000);
-			opcGrupo.click();
-			sleep(1000);;
-		}
-		
+		 if(tq1 == true) {
+			 opcGrupo.click();
+			 sleep(2000);
+		 }else{
+			 opcGrupo1.click();
+			 sleep(2000);
+		 }
 		
 		
 		estrutura.click();
@@ -596,13 +673,14 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(1000);
 		
 		salvar.click();
-		
-		sleep(10000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(20000);
+		sleep(6000);
+		
+		waitExpectElement(adicionarBloco);
+		sleep(1000);
 		
 		
-		sleep(3000);
 		adicionarBloco.click();
 		sleep(1000);
 		
@@ -616,8 +694,42 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(1000);
 		
 		adicionarBloco.click();
-		sleep(1000);
+		sleep(4000);
+
+		boolean sucesso = false;
 		
+		if(inputbloco5.isDisplayed())
+		{
+			sucesso = true;
+			System.out.println("Agregado");
+			 
+		}else {
+			System.out.println("no esta Agregado");
+			 sucesso = false;
+		}
+
+		return sucesso;
+		
+	}
+	
+	public Boolean  Filtro() {
+
+		String url = driver.getCurrentUrl();
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}	
+
 		sleep(3000);
 		adicionarRegistro1.click();
 		sleep(3000);
@@ -627,13 +739,258 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(3000);
 		
 		
+		ajusteFiscal.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ajuste1.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		  if(tp1 == true) {
+		  
+			  moveToElement(dataLancamento2, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"][1]/div[1]/div[2]/div[1]/div[2]/div")));
+				sleep(2000);
+				
+				
+				moveToElement( valorDoAjuste, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"][1]/div[1]/div[2]/div[1]/div[2]/div")));
+				sleep(2000);
+		  
+		  }else {
+		  
+			  moveToElement(dataLancamento, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"][1]/div[1]/div[2]/div[1]/div[2]/div")));
+				sleep(2000);
+				
+				
+				moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"][1]/div[1]/div[2]/div[1]/div[2]/div")));
+				sleep(2000);										
+		  }
+	
+		filtro.click();
+		sleep(2000);
+		
+		blocoO.click();
+		sleep(2000);
+	
+		blocoOPC.click();
+		sleep(2000);
+	
+		registroO.click();
+		sleep(2000);
+
+		registroOPC.click();
+		sleep(2000);
+		
+		camposO.click();
+		sleep(2000);
+
+
+		  if(tp1 == true) {
+		  
+				camposOPC1.click();
+				sleep(2000);
+		  
+		  }else {
+		  
+				camposOPC.click();
+				sleep(2000);										
+		  }
+		  
+	
+		
+		
+		
+		adicionar.click();
+		sleep(2000);
+		
+		editarIcono.click();
+		sleep(2000);
+		
+		editarNombre.clear();
+		sleep(2000);
+		
+		editarNombre.sendKeys("Valor de Ajuste Filtro");
+		sleep(3000);
+		
+		flechaExpancion.click();
+		sleep(2000);
+		
+		adicionarCampo.click();
+		sleep(2000);
+		
+		 if(tp1 == true) {
+			  
+				camposOPC1.click();
+				sleep(2000);
+		  
+		  }else {
+		  
+				camposOPC.click();
+				sleep(2000);										
+		  }
+		 
+	
+		adicionarOperador.click();
+		sleep(2000);
+
+		adicionarOperadorOPC.click();
+		sleep(2000);
+		
+		adicionarCampo2.sendKeys("0");
+		sleep(3000);
+		
+		boolean sucesso = false;
+		
+		if(adicionarCampo2.isDisplayed())
+		{
+			sucesso = true;
+			System.out.println("Listo");
+			 
+		}else {
+			System.out.println("No esta Agregado");
+			 sucesso = false;
+		}
+
+
+		aplicarB1.click();
+		sleep(2000);
+		
+		
+		return sucesso;	
+	}	
+	
+	public void  Agrupamiento() {	
+			
+			String url = driver.getCurrentUrl();
+			boolean tc2 = false;
+			boolean td1 = false;
+			boolean tp1 = false;
+			boolean tq1 = false;
+			
+			if (url.contains("tc2")) {
+				tc2 = true;
+			}else if (url.contains("tp1")) {
+				tp1 = true;
+			}else if (url.contains("tq1")) {
+				tq1 = true;
+			}else {
+				td1 = true;
+			}		
 		adicionarRegistro2.click();
 		sleep(3000);
 		inputbloco2.sendKeys("B2");
 		sleep(3000);
-		inputregistro2.sendKeys("Agrupamento");
-		sleep(3000);
 		
+		inputregistro2.sendKeys("Agrupamento"); 
+		 sleep(3000);
+		  
+		
+		actionsMoveToElementXpath("//div[@id=\"block-list-wrapper\"]/div[2]/div[3]/div/div[2]");
+		sleep(2000);
+		  //AGRUPAMIENTO
+		  
+		  if(tp1 == true) {
+		  
+		 invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
+		  moveToElement(codigoDaEmpresa, driver.findElement(By.xpath( "//div[@id=\"block-list-wrapper\"]/div[2]/div[2]/div/div[2]")));
+		  sleep(2000);
+		  
+		  
+		  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
+		  moveToElement(valorDoAjuste, driver.findElement(By.xpath( "//div[@id=\"block-list-wrapper\"]/div[2]/div[2]/div/div[2]")));
+		  sleep(2000);
+		  
+		  }else {
+		  
+		  invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		  sleep(2000); moveToElement(codigoDaEmpresa2, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"]/div[2]/div[2]/div/div[2]")));
+		  sleep(2000);
+		  
+		  
+		  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
+		  moveToElement(valorDoAjuste2, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"]/div[2]/div[2]/div/div[2]")));
+		  sleep(2000); 
+		  }
+		  
+		  
+		/*
+		  agrupamento.click(); 
+		  sleep(3000);
+		  
+		  bloco.click(); 
+		  sleep(3000); 
+		  
+		  blocoInput.click(); 
+		  sleep(3000);
+		  
+		  registro.click(); 
+		  sleep(3000); 
+		  
+		  registroInput.click(); 
+		  sleep(3000);
+		  
+		  estruturas.click(); 
+		  sleep(3000); 
+		  
+		  estruturasInput.click(); 
+		  sleep(3000);
+		  
+		  
+		  criarGrupo.click(); 
+		  sleep(5000);
+		  
+		  
+		  nombreAgrupamiento.sendKeys("Agrupamento Nombre");
+			sleep(3000);
+
+		  moveToElement(codigoDaEmpresaA, driver.findElement(By.xpath(  "//div[@class=\"elements-panel\"]/div[2]/div[1]/div")));
+		  
+
+		  moveToElement(valorDoAjusteA, driver.findElement(By.xpath("//div[@class=\"elements-panel\"]/div[2]/div[2]/div")));
+		
+		
+			boolean sucesso = false;
+			
+			if(verificarBloco2.isDisplayed())
+			{
+				sucesso = true;
+				System.out.println("Listo");
+				 
+			}else {
+				System.out.println("No esta Agregado");
+				 sucesso = false;
+			}
+			
+		  cancelar.click(); 
+	     	sleep(3000);
+			  
+		  
+		  aplicar.click(); 
+		  sleep(3000);
+			return sucesso;	*/
+		}
+		
+	public Boolean  Ordenar() {
+		
+		String url = driver.getCurrentUrl();
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+			
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		} 
+		
+		//Ordenar
 		adicionarRegistro3.click();
 		sleep(3000);
 		inputbloco3.sendKeys("B3");
@@ -641,98 +998,8 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		inputregistro3.sendKeys("ordenar");
 		sleep(3000);
 		
-		adicionarRegistro4.click();
-		sleep(3000);
-		inputbloco4.sendKeys("B4");
-		sleep(3000);
-		inputregistro4.sendKeys("ordenar por");
-		sleep(3000);
-		
-		adicionarRegistro5.click();
-		sleep(3000);
-		inputbloco5.sendKeys("B5");
-		sleep(3000);
-		inputregistro5.sendKeys("formato");
-		sleep(3000);
-		
-		/*
-		 * //AGRUPAMIENTO
-		 * 
-		 * 
-		 * 
-		 * 
-		 * if(tp1 == true) {
-		 * invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
-		 * moveToElement(codigoDaEmpresa, driver.findElement(By.xpath(
-		 * "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
-		 * sleep(2000);
-		 * 
-		 * 
-		 * invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
-		 * moveToElement(valorDoAjuste, driver.findElement(By.xpath(
-		 * "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
-		 * sleep(2000);
-		 * 
-		 * }else { invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		 * sleep(2000); moveToElement(codigoDaEmpresa2, driver.findElement(By.xpath(
-		 * "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
-		 * sleep(2000);
-		 * 
-		 * 
-		 * invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); sleep(2000);
-		 * moveToElement(valorDoAjuste2, driver.findElement(By.xpath(
-		 * "//*[@id=\"block-list-wrapper\"]/div[1]/div[2]/div/div[2]/div")));
-		 * sleep(2000); }
-		 * 
-		 * 
-		 * 
-		 * 
-		 * 
-		 * 
-		 * agrupamento.click(); sleep(3000);
-		 * 
-		 * bloco.click(); sleep(3000); blocoInput.click(); sleep(3000);
-		 * 
-		 * registro.click(); sleep(3000); registroInput.click(); sleep(3000);
-		 * 
-		 * estruturas.click(); sleep(3000); estruturasInput.click(); sleep(3000);
-		 * 
-		 * 
-		 * criarGrupo.click(); sleep(5000);
-		 * 
-		 * //invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		 * 
-		 * 
-		 * //invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		 * //sleep(3000); actionsMoveToElementElement(codigoDaEmpresaA); sleep(1000);
-		 * moveToElement(codigoDaEmpresaA, driver.findElement(By.xpath(
-		 * "//div[@class=\"elements-panel\"]/div[2]/div[1]/div")));
-		 * 
-		 * //System.out.println("2"); sleep(5000); //System.out.println("1");
-		 * 
-		 * //invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		 * //sleep(4000);
-		 * 
-		 * moveToElement(valorDoAjusteA, driver.findElement(By.xpath(
-		 * "//div[@class=\"elements-panel\"]/div[2]/div[2]/div")));
-		 * //System.out.println("3"); //System.out.println("4"); sleep(5000);
-		 * 
-		 * nomeGrupo.sendKeys("TESTE QA"); sleep(3000);
-		 * 
-		 * 
-		 * 
-		 * aplicar.click(); sleep(3000);
-		 * 
-		 * aplicar.click(); sleep(3000);
-		 */
-		 
-		//Ordenar
-		
-		
-		ajusteF.click(); 
-		sleep(3000); 
-		ajuste.click(); 
-		sleep(3000);
+		actionsMoveToElementXpath("//div[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[2]");
+		sleep(2000);
 		
 		if(tp1 == true || tc2 == true) {
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
@@ -777,20 +1044,62 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		seleccionCampoOrdenarInput.click();
 		sleep(3000);
 		
+		
+		boolean sucesso = false;
+		
+		if(verificarBloco3.isDisplayed())
+		{
+			sucesso = true;
+			
+			System.out.println("Ordenar Èxito");
+			 
+		}else {
+			
+			System.out.println("Ordenar Fallo");
+			 sucesso = false;
+		}
+		
+
 		aplicar.click();
 		sleep(3000);
+	
+		return sucesso;	
 		
-		System.out.println("Ordenar Èxito");
-		
+	}
+	public Boolean OrdenarPor() {
+		String url = driver.getCurrentUrl();
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+			
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		} 
+			
+		adicionarRegistro4.click();
+		sleep(3000);
+		inputbloco4.sendKeys("B4");
+		sleep(3000);
+		inputregistro4.sendKeys("ordenar por");
+		sleep(3000);
 		
 		
 		//Ordenar Por
 		
+		actionsMoveToElementXpath("//div[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[2]");
+		sleep(2000);
 		if(tp1 == true || tc2 ==  true) {
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 			  sleep(2000);
 			  
-			  moveToElement(dataLancamento2, driver.findElement(By.xpath(
+			  moveToElement(valorDoAjuste, driver.findElement(By.xpath(
 			  "//*[@id=\"block-list-wrapper\"]/div[4]/div[2]/div/div[2]/div")));
 			  sleep(2000);
 			  
@@ -800,7 +1109,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 			  sleep(2000);
 			  
-			  moveToElement(dataLancamento, driver.findElement(By.xpath(
+			  moveToElement(valorDoAjuste2, driver.findElement(By.xpath(
 			  "//*[@id=\"block-list-wrapper\"]/div[4]/div[2]/div/div[2]/div")));
 			  sleep(2000);
 		 }
@@ -810,20 +1119,76 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		
 		seleccionCampoOrdenarPor.click();
 		sleep(1000);
-		seleccionCampoOrdenarPorInput.click();
+		
+		if(tp1 == true || tc2 ==  true) {
+			seleccionCampoOrdenarPorInput.click();
+			sleep(1000);
+			  
+			 
+		   sleep(2000); 
+		 }else {
+			 seleccionCampoOrdenarPorInput.click();
+				sleep(1000);
+		 }
+		
+		closeSelectTypeCheckbox(seleccionCampoOrdenarPor);
 		sleep(1000);
-		seleccionCampoOrdenarPorInput.sendKeys(Keys. ESCAPE);
 		
 		seleccionOrdem.click();
 		sleep(1000);
 		seleccionOrdemInput.click();
 		sleep(1000);
 		
+		
+
+		
+		boolean sucesso = false;
+		
+		if(verificarBloco4.isDisplayed())
+		{
+			sucesso = true;
+			
+			System.out.println("Ordenar Èxito");
+			 
+		}else {
+			
+			System.out.println("Ordenar Fallo");
+			 sucesso = false;
+		}
+		
+
 		aplicar.click();
-		sleep(1000);
+		sleep(3000);
+	
+		return sucesso;	
 		
 		
+	}
+	public Boolean formato() {	
 		//Formato
+		
+		String url = driver.getCurrentUrl();
+		boolean tc2 = false;
+		boolean td1 = false;
+		boolean tp1 = false;
+		boolean tq1 = false;
+			
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}else if (url.contains("tp1")) {
+			tp1 = true;
+		}else if (url.contains("tq1")) {
+			tq1 = true;
+		}else {
+			td1 = true;
+		}
+		
+		adicionarRegistro5.click();
+		sleep(3000);
+		inputbloco5.sendKeys("B5");
+		sleep(3000);
+		inputregistro5.sendKeys("formato");
+		sleep(3000);
 		
 		if(tp1 == true || tc2 ==  true) {
 			
@@ -862,6 +1227,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		seleccionRegistroFormatoInput.click();
 		sleep(1000);
 		
+		
 		seleccionCampoFormato.click();
 		sleep(1000);
 		seleccionCampoFormatoInput.click();
@@ -886,29 +1252,75 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		separadores.sendKeys("/");
 		sleep(1000);
 		
+		boolean sucesso = false;
+		
+		if( separadores.isDisplayed())
+		{
+			sucesso = true;
+			
+			System.out.println("Ordenar Èxito");
+			 
+		}else {
+			
+			System.out.println("Ordenar Fallo");
+			 sucesso = false;
+		}
+		
+
 		aplicar.click();
-		sleep(1000);
+		sleep(3000);
+	
+		return sucesso;	
 		
 		
+	}
+		
+		
+		
+		
+	
+	public Boolean separadores() {	
 		//SEPARADORES
 		
 		next.click();
 		sleep(1000);
-		
+				
 		separadoresSpan.click();
 		sleep(1000);
-		
+				
 		separadoresInput.sendKeys("|");;
 		sleep(1000);
-		
+				
 		inicioLinha.click();
 		sleep(1000);
 		
-		aplicar.click();
+		fimLinha.click();
 		sleep(1000);
 		
-		//COPIAR BLOCOS
+		boolean sucesso = false;
 		
+		if( fimLinha.isDisplayed())
+		{
+			sucesso = true;
+			
+			System.out.println("Ordenar Èxito");
+			 
+		}else {
+			
+			System.out.println("Ordenar Fallo");
+			 sucesso = false;
+		}
+		
+
+		aplicar.click();
+		sleep(3000);
+	
+		return sucesso;	
+		
+		
+	}
+	
+	public Boolean CopiarBloco() {	
 		next.click();
 		sleep(3000);
 		
@@ -961,7 +1373,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(1000);
 		
 		aplicar.click();
-		sleep(1000);
+		sleep(3000);
 		
 		B6.clear();
 		sleep(1000);
@@ -1004,50 +1416,78 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		flagAgrupamentos.click();
 		sleep(1000);
 		
-		System.out.println("1111");
-		
+
 		aplicar.click();
 		sleep(1000);
 		
 		BRegistro7.clear();
 		sleep(1000);
 		
-		System.out.println("2222");
+	
 		
 		BRegistro7.sendKeys("Registro 2");
-		sleep(7000);
+		sleep(2000);
+
+		actionsMoveToElementXpath("//span[text()=\"Gravar\"]");
+		sleep(2000);
+		
+		System.out.println("Se movio");
 		
 		gravar.click();
-		sleep(7000);
+		sleep(1000);
+		
+		System.out.println("gravar");
 		
 		nao.click();
 		sleep(1000);
+		
+		System.out.println("no");
 		sim.click();
 		sleep(7000);
 		
+		System.out.println("si");
+		
 		biblioteca.click();
 		sleep(3000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(2000);
+		
 		
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Último Id após da criação do registro Leiautes: " + ultimoIdDC);
 		idInserir2(ultimoIdDC);
 		
+		String ultimoIdAC = idObter("ultimoIdAC");
+				
+		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
+		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
+		boolean sucesso = false;
+		
+		if (ultimoIdACD < ultimoIdDCD) {
+			sucesso = true;
+		}
+		
+		return sucesso;
+		
+	}	
+	
+	public void criarConfiguracion() {	
 		
 		sleep(3000);
 		configuracoes.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		configuracaoRaiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1058,13 +1498,23 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
+		
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
+		
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		
-		String ultimoId = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
-		System.out.println("Último Id após da criação do registro Leiautes: " + ultimoId);
-		idInserir3(ultimoId);
+
 		
-		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
+		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println("Último Id após da criação do registro Leiautes: " + ultimoIdDC);
+		
+		
+		
+		
+		
+		
+		
+	/*	int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
 		boolean sucesso = false;
 		
@@ -1081,7 +1531,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		System.out.println(sucesso);
 		
 		driver.navigate().refresh();
-		return sucesso;
+		return sucesso;*/
 	}
 	
 	

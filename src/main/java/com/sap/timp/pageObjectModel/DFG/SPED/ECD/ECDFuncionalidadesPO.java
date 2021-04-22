@@ -60,7 +60,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[contains(text(),\"ID151\")]")
 	public WebElement leiauteECDOTC2;
 	
-	@FindBy(xpath = "//li[contains(text(),\"ID401\")]")
+	@FindBy(xpath = "//li[contains(text(),\"ID713\")]")
 	public WebElement leiauteECDOTP1;
 	
 	
@@ -432,10 +432,10 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		sleep(2000);
 		
 		nome.sendKeys("Teste Automatizado");
-		sleep(1000);
+		sleep(2000);
 		
 		leiauteECD.click();
-		sleep(1000);
+		sleep(2000);
 		
 		if (tc2 == true) {
 			leiauteECDOTC2.click();
@@ -444,63 +444,63 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		}else {
 			leiauteECDOTQ1.click();
 		}
-		sleep(1000);
+		sleep(2000);
 		
 		versaoECD.click();
-		sleep(1000);
+		sleep(2000);
 		versaoECDO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
-		sleep(1000);
+		sleep(2000);
 		
 		tributoECD.click();
-		sleep(1000);
+		sleep(2000);
 		tributoECDO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		empresaECD.click();
-		sleep(1000);
+		sleep(2000);
 		empresaECDO.click();
-		sleep(1000);
+		sleep(2000);
 		empresaECDO.sendKeys(Keys.ESCAPE);
-		sleep(1000);
+		sleep(2000);
 		
 		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
-		sleep(1000);
+		sleep(2000);
 		
 		ufECD.click();
-		sleep(1000);
+		sleep(2000);
 		if (tc2 == true) {
 			ufECDOTC2.click();
-			sleep(1000);
+			sleep(2000);
 			ufECDOTC2.sendKeys(Keys.ESCAPE);
 		}else {
 			ufECDO.click();
-			sleep(1000);
+			sleep(2000);
 			ufECDO.sendKeys(Keys.ESCAPE);
 		}
 		
-		sleep(1000);
+		sleep(2000);
 		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
-		sleep(1000);
+		sleep(2000);
 		
 		filialECD.click();
 		
 		if (tc2 == true) {
 			filialECDOTC2.click();
-			sleep(1000);
+			sleep(2000);
 			filialECDOTC2.sendKeys(Keys.ESCAPE);
 		}else {
 			filialECDO.click();
-			sleep(1000);
+			sleep(2000);
 			filialECDO.sendKeys(Keys.ESCAPE);
 		}
-		sleep(1000);
+		sleep(2000);
 		
 		
 		dataVigenciaE.sendKeys("01/01/2013");
-		sleep(1000);
+		sleep(2000);
 		salvar.click();
 		
 		invisibilityOfElementOverlay();
@@ -533,7 +533,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 			sucesso.add(false);
 		}
 		
-		System.out.println("Verificação da criação: " + sucesso.get(0));
+		System.out.println("Verificação da criação: " + sucesso);
 		
 		
 		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[4]/div")).getText();
@@ -581,15 +581,17 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
-		
+		waitExpectElement(descricao);
+		sleep(2000);
 		
 		String enviar = "Teste Editar";
 		descricao.clear();
+		sleep(2000);
 		descricao.sendKeys(enviar);
-		sleep(1000);
+		sleep(2000);
 		
 		editar.click();
 		invisibilityOfElementOverlay();
@@ -608,7 +610,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		System.out.println("-----------------------------------Verificação Edição-------------------------------------------------");
@@ -633,7 +635,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		
@@ -647,7 +649,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		
@@ -656,7 +658,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		
 		boolean sucesso = texto.equals(descricaoI1);
 		System.out.println(sucesso);
-		sleep(1000);
+		sleep(2000);
 		fechar.click();
 		
 		return sucesso;
@@ -685,7 +687,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		System.out.println("----------Visualizar-------");
@@ -719,7 +721,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		
@@ -835,7 +837,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		
@@ -865,7 +867,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		
@@ -903,7 +905,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		System.out.println("----------Visualizar-------");
@@ -928,15 +930,13 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		System.out.println(dataVigenciaV1);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-
+			sucesso.add(nomeV1.equals("Teste Automatizado"));
+			sucesso.add(descricaoV1.equals("Teste Editar"));
+			sucesso.add(leiauteV1.contains("ECD - TA - NÃO MEXER"));
+			sucesso.add(versaoV1.equals("1.0"));
+			sucesso.add(tributoV1.equals("ICMS"));
+			sucesso.add(empresaV1.equals("1000"));
 		
-
-		sucesso.add(nomeV1.equals("Teste Automatizado"));
-		sucesso.add(descricaoV1.equals("Teste Editar"));
-		sucesso.add(leiauteV1.contains("ECD - TA - NÃO MEXER"));
-		sucesso.add(versaoV1.equals("1.0"));
-		sucesso.add(tributoV1.equals("ICMS"));
-		sucesso.add(empresaV1.equals("1000"));
 		if (tc2==true) {
 			sucesso.add(ufV1.equals("AL"));
 			sucesso.add(filialV1.contains("0008"));
@@ -979,36 +979,40 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
 		
 		ufFilialB.click();
-		sleep(1000);
-		if (tc2 == true || tp1 == true) {
+		sleep(2000);
+		if (tc2 == true ) {
 			ufFilialBOTC2.click();
-			sleep(1000);
+			sleep(2000);
 			ufFilialBOTC2.sendKeys(Keys.ESCAPE);
-		}else {
+		}else if (tp1 == true) {
 			ufFilialBO.click();
-			sleep(1000);
+			sleep(2000);
+			ufFilialBO.sendKeys(Keys.ESCAPE);
+		}else{
+			ufFilialBO.click();
+			sleep(2000);
 			ufFilialBO.sendKeys(Keys.ESCAPE);
 		}
 		
 		if (tc2 ==true || tp1 == true) {
 			tributoTC2.click();
-			sleep(1000);
+			sleep(2000);
 			tributoECDO.click();
 		}
 		
-		sleep(1000);
+		sleep(2000);
 		
 		calendario.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		atras.click();
-		sleep(1000);
+		sleep(2000);
 		ano2016.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1027,7 +1031,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		waitExpectXpath("//div[contains(@class,\"draggable\")]");
 		sleep(2000);
 		invisibilityOfElement("//div[contains(@class,\"draggable\")]");
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		int aparece = rows("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
@@ -1053,22 +1057,22 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		nomeR.sendKeys("Teste Automatizado Regra ECD");
 		sleep(100);
 		regra.click();
-		sleep(1000);
+		sleep(2000);
 		String idRegra = "";
 		
 		if (tc2 == true) {
 			idRegra = "1217";
 		}else if (tp1 == true) {
-			idRegra = "1099";
+			idRegra = "1150";
 		}else {
 			idRegra = "2307";
 		}
 		
 		WebElement regraO = driver.findElement(By.xpath("//div[@id=\""+idRegra+"\"]/div/label/span"));
 		regraO.click();
-		sleep(1000);
+		sleep(2000);
 		regraO.sendKeys(Keys.ESCAPE);
-		sleep(1000);
+		sleep(2000);
 		criar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1101,7 +1105,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		sleep(2000);
 		waitExpectElement(atualizar);
@@ -1135,7 +1139,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		home.click();
 		sleep(3000);
 		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
-		sleep(1000);
+		sleep(2000);
 		
 		AcessarDFGPO acessarDFGPO;
 		acessarDFGPO = new AcessarDFGPO();
@@ -1227,7 +1231,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		acao.click();
 		sleep(3000);
 //		waitExpectElement(execicioFiscal);
@@ -1237,74 +1241,74 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		
 		execicioFiscal.sendKeys("2016");
 		
-		sleep(1000);
+		sleep(2000);
 		actionsMoveToElementXpath("//div[@id=\"account-to\"]");
-		sleep(1000);
+		sleep(2000);
 		
 		mesExecucao.click();
-		sleep(1000);
+		sleep(2000);
 		mesExecucaoO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		mesAte.click();
-		sleep(1000);
+		sleep(2000);
 		mesAteO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		actionsMoveToElementElement(tipoEscrituracao);
 		
 		empresa.click();
-		sleep(1000);
+		sleep(2000);
 		empresaO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		actionsMoveToElementElement(estrBalanco);
-		sleep(1000);
+		sleep(2000);
 		
 		tipoEscrituracao.click();
-		sleep(1000);
+		sleep(2000);
 		tipoEscrituracaoO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		sitInicio.click();
-		sleep(1000);
+		sleep(2000);
 		sitInicioO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		finalidadeEscrituracao.click();
-		sleep(1000);
+		sleep(2000);
 		finalidadeEscrituracaoO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		livro.click();
-		sleep(1000);
+		sleep(2000);
 		livroO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		
 		actionsMoveToElementXpath("//div[@id=\"current-shareholder\"]");
 		
 		estrBalanco.click();
-		sleep(1000);
+		sleep(2000);
 		estrBalancoO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		tpDocEnc.sendKeys("SB");
 		
 		actionsMoveToElementXpath("//div[@id=\"file-name\"]");
 		
 		empresaGrande.click();
-		sleep(1000);
+		sleep(2000);
 		empresaGrandeO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		criarVariante.click();
 		sleep(2000);
 		waitExpectElement(nomeVariante);
-		sleep(1000);
+		sleep(2000);
 		
 		nomeVariante.sendKeys("Variante Teste");
-		sleep(1000);
+		sleep(2000);
 		criar.click();
 		invisibilityOfElementOverlay();
 		
@@ -1314,12 +1318,12 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		invisibilityOfElementOverlay();
 		
 		variante.click();
-		sleep(1000);
+		sleep(2000);
 		varianteO.click();
 		String varianteID = varianteO.getAttribute("id");
 		System.out.println("Id da Variante: " +varianteID);
 		idInserir2(varianteID);
-		sleep(1000);
+		sleep(2000);
 		
 
 		
@@ -1327,7 +1331,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		executarDFG.click();
 		System.out.println("-------------------Verficação Execução da Variante---------------------------------");
 		waitExpectXpath("//span[contains(text(),\"ECD executado com sucesso\")]");
-		sleep(1000);
+		sleep(2000);
 		
 		boolean sucesso = driver.findElement(By.xpath("//span[contains(text(),\"ECD executado com sucesso\")]")).isDisplayed();
 		
@@ -1347,14 +1351,14 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		excluirVariante.click();
 		sleep(2000);
 		waitExpectElement(fechar);
-		sleep(1000);
+		sleep(2000);
 		
-		WebElement varianteExcluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div/div"));
+		WebElement varianteExcluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div/div[@class=\"actions\"]"));
 		
 		varianteExcluir.click();
 		sleep(2000);
 		waitExpectElement(aceitar);
-		sleep(1000);
+		sleep(2000);
 		aceitar.click();
 		invisibilityOfElementOverlay();
 		

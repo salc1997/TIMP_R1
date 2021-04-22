@@ -277,9 +277,9 @@ public class Registro1220EditarPO extends TestBaseSteven {
 
 		} else {
 			if (tc2 == true) {
-				waitExpectElement(uf1);
-				sleep(2000);
-				waitExpectElement(filialtc2);
+				//waitExpectElement(uf1);
+				sleep(10000);
+				//waitExpectElement(filialtc2);
 				empresa.click();
 				sleep(1000);
 				opcao.click();
@@ -336,8 +336,9 @@ public class Registro1220EditarPO extends TestBaseSteven {
 				empresa.click();
 				sleep(2000);
 				opcao1.click();
+				sleep(6000);
 
-				attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			//	attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 				sleep(3000);
 
 				uf.click();

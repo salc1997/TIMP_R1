@@ -371,9 +371,9 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			//IR A HIERARQUIA CONFIGURACAO
 			sleep(2000);
 			hierarquias.click();
-			sleep(1000);
+			sleep(5000);
 			hierarquiaConfiguracao.click();
-			sleep(2000);
+			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
@@ -1150,7 +1150,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 			
 			int factorR = driver.findElements(By.xpath("//span[contains(text(),\"Fator de Creditamento atualizado com sucesso\")]")).size();
-			System.out.println("Despues de Gravar"+ factorR);
+			System.out.println("Despues de Gravar: "+ factorR);
 			
 			
 			if (factorR >0) {

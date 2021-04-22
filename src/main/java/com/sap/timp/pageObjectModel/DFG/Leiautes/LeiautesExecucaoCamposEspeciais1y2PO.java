@@ -34,7 +34,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement opcGrupoEstructura1;
 	
-	@FindBy(xpath = "//li[contains(text(),\"Ajuste\")][2]")
+	@FindBy(xpath = "//li[contains(text(),\"Ajuste\")][1]")
 	public WebElement opcGrupoEstructura2;
 	
 	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")
@@ -391,11 +391,15 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(1000);
 		
 		salvar.click();
-		sleep(3000);
-		//waitExpectElement(gravar);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
+		if (tq1 == true && tc2 == true) {
+			sleep(3000);
+			//waitExpectElement(gravar);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O leiaute foi criado com sucesso\")]")).size();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -415,7 +419,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		sleep(2000);
 		waitExpectXpath("//*[@id=\"home-icon\"]");
-		sleep(1000);
+		sleep(10000);
 		
 		while (!separadores.isDisplayed()) {
 			flecha.click();
@@ -1098,12 +1102,13 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		if (resultado.isDisplayed()) {
 			exclucao = driver.findElements(By.xpath("//div[@class=\"tr-no-data\"]/div[contains(text(),\"Nenhum resultado\")]")).size();
-			////div[@class="tr-no-data" and not (@tabindex="0")]/div[contains(text(),"Nenhum resultado")]
+			//exclucao = driver.findElements(By.xpath("//div[@class=\"tr-no-data\"]/div[contains(text(),\"Nenhum resultado\")]")).size();
+			//div[@class="tr-no-data" and not (@tabindex="0")]/div[contains(text(),"Nenhum resultado")]
 		}
 		
 		System.out.println(exclucao);

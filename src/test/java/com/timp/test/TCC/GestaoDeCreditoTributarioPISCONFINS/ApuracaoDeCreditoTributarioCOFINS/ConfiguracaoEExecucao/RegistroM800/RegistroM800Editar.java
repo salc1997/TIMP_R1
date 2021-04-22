@@ -32,7 +32,7 @@ public class RegistroM800Editar extends TestBaseSteven {
 	}
 	
 	@Test()
-	public void criar() {
+	public void editar() {
 		loginTC.login();
 		acessarTCCPO.acessarTCC();
 		

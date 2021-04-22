@@ -786,7 +786,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
-	
+
 	public ArrayList<Boolean> criar() {
 		
 		String url = driver.getCurrentUrl();
@@ -1885,7 +1885,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 	
 	
 	public ArrayList<Boolean> verificaoDadosBloco2() {
-		
+		sleep(6000);
 		bloco.click();
 		sleep(1000);
 		blocoO2.click();
@@ -2085,7 +2085,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 	
 	
 	public boolean verificaoDadosBloco6() {
-		
+		sleep(6000);
 		bloco.click();
 		sleep(1000);
 		blocoO6.click();
@@ -2325,7 +2325,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		sleep(3000);
 		waitExpectElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		lixeiraDFG.click();
 		sleep(3000);

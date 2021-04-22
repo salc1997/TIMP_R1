@@ -39,7 +39,7 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//*[@id=\"1000_RJ_0001\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@id=\"1000_RJ_0001\"]/div[1]/label/span")
 	public WebElement filialOPC;
 	
 	@FindBy(xpath = "//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
@@ -104,7 +104,7 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseSteven {
 			tp1 = true;
 		}
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementElement(gestaoCredito);
 		sleep(2000);
@@ -142,32 +142,33 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		closeSelectTypeCheckbox(empresa);
-		sleep(4000);
+		sleep(10000);
 		
 		filial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		if (tq1 == true) {
 			filialOPCTQ1.click();
 			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);*/
 			closeSelectTypeCheckbox(filial);
 			sleep(4000);
-		}else if (tp1== true) {
-			filialOPCTP1.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			closeSelectTypeCheckbox(filial);
-			sleep(4000);
-		}else {
+		}else if (tc2== true) {
 			filialOPC.click();
 			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);*/
+			closeSelectTypeCheckbox(filial);
+			sleep(4000);
+		}else  if (tp1== true){
+			
+			filialOPCTP1.click();
 			sleep(2000);
+			/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);*/
 			closeSelectTypeCheckbox(filial);
 			sleep(4000);
 		}

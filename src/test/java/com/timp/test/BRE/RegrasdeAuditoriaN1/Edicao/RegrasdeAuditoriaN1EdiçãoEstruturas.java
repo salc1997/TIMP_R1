@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturasPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasdeAuditoriaN2EstruturaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -31,7 +30,7 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturas extends TestBaseSteven{
   
   @AfterClass
   public void afterClass() {
-	 // driver.close();
+	  driver.close();
   }
 
   @Test(priority = 0)

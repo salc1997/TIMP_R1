@@ -1,3 +1,4 @@
+
 package com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao;
 
 import static org.testng.Assert.assertTrue;
@@ -28,7 +29,7 @@ public class RegrasDeAuditoriaN1Relacionamento extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 	
 	@Test()

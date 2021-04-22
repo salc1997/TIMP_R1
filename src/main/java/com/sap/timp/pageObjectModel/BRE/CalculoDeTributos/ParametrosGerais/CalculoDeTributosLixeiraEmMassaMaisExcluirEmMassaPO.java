@@ -362,8 +362,8 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		//--------------------------- excluir em massa ---------------------------------
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+//		waitExpectElement(mensagembloqueio);
+		sleep(5000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

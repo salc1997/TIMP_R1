@@ -187,10 +187,10 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		@FindBy(xpath = "//button[text()=\"Sim\"]")
 		public WebElement sim;
 		
+		@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+		public WebElement fecharCalendario;
 		
-		
-		
-	
+
 	public TarefasGatewayAutomaticoPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -758,6 +758,11 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		fecharCalendario.click();
+		sleep(4000);
+		
+		actionsMoveToElementElement(pesquisarBPMA);
+		sleep(4000);
 		
 		pesquisarBPMA.click();
 		sleep(2000);

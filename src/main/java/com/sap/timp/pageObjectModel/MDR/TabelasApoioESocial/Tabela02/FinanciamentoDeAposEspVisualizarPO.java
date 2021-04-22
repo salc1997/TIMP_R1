@@ -100,10 +100,6 @@ public ArrayList<Boolean> visualizar() {
 		System.out.println(descricaovisualizar);
 		System.out.println(datavisualizar);
 		
-		
-		
-		
-		
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -130,9 +126,11 @@ public ArrayList<Boolean> visualizar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 			
-		//editar
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		
+		//editar		
 		String codigoeditar = codigo.getAttribute("value");
 		String descricaoeditar=descricao.getAttribute("value");
 		String dataeditar = datainicio.getAttribute("value");

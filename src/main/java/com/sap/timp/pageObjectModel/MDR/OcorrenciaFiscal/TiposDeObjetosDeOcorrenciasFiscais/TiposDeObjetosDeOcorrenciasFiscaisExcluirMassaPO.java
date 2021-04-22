@@ -145,9 +145,10 @@ public boolean criar() {
 		sleep(8000);
 		sleep(8000);
 		sleep(8000);
+		sleep(8000);
 		
 		codigocredito.click();
-		sleep(2000);
+		sleep(3000);
 		opcao.click();
 		sleep(2000);
 		

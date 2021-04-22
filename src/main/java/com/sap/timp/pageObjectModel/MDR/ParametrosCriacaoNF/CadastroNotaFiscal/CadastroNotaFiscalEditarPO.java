@@ -54,7 +54,7 @@ public class CadastroNotaFiscalEditarPO extends TestBaseSteven {
 		parametrosCriacaoNotaFiscal.click();
 		sleep(2000);
 		
-		if(url.contains("td1") || url.contains("tq1")) {
+		if(url.contains("td1")) {
 			cadastroNotaFiscal.click();
 			sleep(2000);
 		}
@@ -80,17 +80,18 @@ public class CadastroNotaFiscalEditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
-		
-		
 		sleep(2000);
-
+		//attributoNotToBeEmptyElement(campo, "value");
+		sleep(2000);
+		actionsMoveToElementElement(campo);
+		sleep(2000);
+		
 		String valor = campo.getAttribute("value");
 
 		String enviar = "30";
 
 		campo.clear();
-		sleep(1000);
+		sleep(2000);
 		campo.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();
@@ -99,27 +100,30 @@ public class CadastroNotaFiscalEditarPO extends TestBaseSteven {
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-
-		driver.navigate().refresh();
-
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
-		waitExpectElement(campo);
-		
 		sleep(2000);
 
+		
+
+		driver.navigate().refresh();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		waitExpectElement(campo);
+		sleep(2000);
+		actionsMoveToElementElement(campo);
+		sleep(2000);
+		
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println(valor);
 		System.out.println(nuevoTexto);
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
 
-		sleep(1000);
+		sleep(2000);
 		campo.clear();
 
-		sleep(1000);
+		sleep(2000);
 		campo.sendKeys(valor);
 
 		gravar.click();

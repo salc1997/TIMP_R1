@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroNotaFiscal;
 
+import java.lang.invoke.StringConcatFactory;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -70,16 +72,12 @@ public class CadastroNotaFiscalCriarPO extends TestBaseSteven{
 		
 		String url = driver.getCurrentUrl();
 		
-		
+	
 		
 		sleep(2000);
 		parametrosCriacaoNotaFiscal.click();
 		sleep(2000);
-		
-		if(url.contains("td1") || url.contains("tq1")) {
-			cadastroNotaFiscal.click();
-			sleep(2000);
-		}
+
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -90,8 +88,12 @@ public class CadastroNotaFiscalCriarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id = "0";
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		}
+		
 		sleep(2000);
 		System.out.println(id);
 		

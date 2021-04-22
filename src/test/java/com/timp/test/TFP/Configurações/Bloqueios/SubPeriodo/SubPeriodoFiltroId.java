@@ -31,7 +31,7 @@ public class SubPeriodoFiltroId extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 1)

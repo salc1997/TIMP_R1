@@ -59,6 +59,9 @@ public class GatewayEventoPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
@@ -163,14 +166,50 @@ public class GatewayEventoPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[10]/body/span")
 	public WebElement editar;
 	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[10]/body/span")
+	public WebElement editar2;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[1]/*/*[2]")
+	public WebElement puntoCirculo4;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[9]")
+	public WebElement puntoEvento6;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[7]")
+	public WebElement puntoEvento7;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[3]/*/*[6]")
+	public WebElement puntoTarefa;
+	
 	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/button[2]/span[2]")
 	public WebElement seleccionarTodo2;
 	
-	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[1]/*/*[2]")
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/button[2]/span[2]")
+	public WebElement seleccionarTodo3;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[1]/*/*[2]")
 	public WebElement puntoCirculo3;
 	
 	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[9]")
 	public WebElement puntoEvento4;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[2]/*[7]")
+	public WebElement puntoEvento5;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[3]/*/*[5]")
+	public WebElement puntoActividad;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[3]/*/*[4]")
+	public WebElement puntoActividad2;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[4]/*/*[3]")
+	public WebElement puntoFin;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[3]/*/*[5]")
+	public WebElement puntoTarefa2;
+	
+	@FindBy(xpath = "//div[@id=\"tabs-container\"]/div/div[2]/div/div[3]/div/div[2]/div/div/div/div/div/*[1]/*[name()=\"g\" and @id=\"artifacts\"]/*[4]/*/*[4]")
+	public WebElement puntoFin2;
 	
 	public GatewayEventoPO() {
 
@@ -220,6 +259,8 @@ public class GatewayEventoPO extends TestBaseSteven {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		System.out.println("--------- Primer Figura--------------"); 
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -302,6 +343,8 @@ public class GatewayEventoPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		System.out.println("--------- segunda Figura--------------"); 
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(gatewayEvento, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
@@ -310,7 +353,7 @@ public class GatewayEventoPO extends TestBaseSteven {
 		seleccionarTodo2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 	
 		actionsMoveToElementElement(editar);
 		sleep(2000);
@@ -346,7 +389,7 @@ public class GatewayEventoPO extends TestBaseSteven {
 		sleep(1000);
 		
 		aplicar.click();
-		sleep(1000);
+		sleep(4000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -359,133 +402,130 @@ public class GatewayEventoPO extends TestBaseSteven {
 		moveToElement(actividad, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
 		
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(puntoEvento5, puntoActividad);
+		sleep(2000);
+		
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement( puntoActividad2, puntoFin);
+		sleep(2000);
+		
+		System.out.println("--------- tercera Figura--------------"); 
+		
+		dobleClickElement(NovoActividad);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(gatewayEvento, driver.findElement(By.xpath("//div[@id=\"Activity\"]/div/div/div/div/div")));
+		sleep(4000);
+		
+		seleccionarTodo3.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 	
-//		dobleClickElement(NovoActividad);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		moveToElement(tarefa, driver.findElement(By.xpath("//div[@id=\"Activity\"]/div/div/div/div/div")));
-//		sleep(2000);
-//		
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Activity\"]/div/div/div/div/div")));
-//		sleep(2000);
-//		
-//		tarefaDiv.click();
-//		sleep(3000);
-//		tarefaEdit.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(3000);
-//		
-//		tipoTSele.click();
-//		sleep(3000);
-//		tipoTSeleOpc.click();
-//		sleep(3000);
-//		
-//		componente.click();
-//		sleep(3000);
-//		componeteOpc.click();
-//		sleep(3000);
-//		
-//		tarefaSele.click();
-//		sleep(3000);
-//		tarefaSeleOpc.click();
-//		sleep(3000);
-//
-//		entrada.click();
-//		sleep(3000);
-//		
-//		variant.click();
-//		sleep(3000);
-//		
-//		waitExpectElement(opacao);
-//		opacao.click();
-//		sleep(3000);
-//		
-//		inputEntrada.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(3000);
-//		
-//		flag.click();
-//		sleep(3000);
-//		
-//		confirmar.click();
-//		sleep(5000);
-//		
-//		aplicar.click();
-//
-//		
-//		sleep(4000);
-//		gravar.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		sim.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		justificativa.sendKeys("JUSTIFICATIVA TESTE AUTOMATIZADO");
-//		sleep(2000);
-//		aplicarJustificativa.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(5000);
-//		
-//		driver.navigate().refresh();
-//		
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(5000);
-//		
-//		
-//		dobleClickElement(NovoOperacao);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		dobleClickElement(NovoActividad);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(8000);
-//		
-//		
-//		
-//		
-//		
-//		biblioteca.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		sim.click();
-//		sleep(3000);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-////		
-//		procesos.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
+		actionsMoveToElementElement(editar2);
+		sleep(2000);
+		
+		editar2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		cancelar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		seleccionarTodo3.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		actionsMoveToElementElement(editar2);
+		sleep(2000);
+		
+		editar2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		nameGateway.sendKeys("Gateway evento");
+		sleep(1000);
+		
+		descripcionGateway.sendKeys("Descripcion Teste QA");
+		sleep(1000);
+		
+		aplicar.click();
+		sleep(4000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(puntoCirculo4, puntoEvento6);
+		sleep(2000);
+		
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(tarefa, driver.findElement(By.xpath("//div[@id=\"Activity\"]/div/div/div/div/div")));
+		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement( puntoEvento7 , puntoTarefa);
+		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Activity\"]/div/div/div/div/div")));
+		sleep(2000);
+		
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement( puntoTarefa2,puntoFin2);
+		sleep(2000);
+		
+
+		sleep(4000);
+		gravar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		no.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+				
+		biblioteca.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//sim.click();
+		sleep(3000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		procesos.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		siguiente.click();
 		sleep(3000);

@@ -100,6 +100,8 @@ public class TipoDeDocumentoEditarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		String enviar = "01/01/2014";
+		
+		System.out.println(enviar);
 		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
 		sleep(2000);
 		validadede.clear();

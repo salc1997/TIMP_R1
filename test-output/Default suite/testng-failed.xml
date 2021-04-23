@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
+      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
         <methods>
-          <include name="Filtro"/>
-          <include name="beforeClass"/>
+          <include name="resultadoFinalParte2"/>
+          <include name="resultadoFinalParte1"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="resultadoDoAbaParte1"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
+      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

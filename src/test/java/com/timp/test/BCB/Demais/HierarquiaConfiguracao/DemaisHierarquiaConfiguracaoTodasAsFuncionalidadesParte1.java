@@ -120,11 +120,6 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 		}
 	}
 	
-	
-	
-	
-	
-
 	@Test(priority = 10)
 	public void criarConfiguracaoHierarquia2() {
 		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracaoHierarquia2();

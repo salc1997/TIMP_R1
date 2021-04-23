@@ -626,6 +626,9 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);
 			
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(4000);
 
 			biblioteca.click();
 			sleep(2000);

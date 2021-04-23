@@ -28,8 +28,6 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriar extends TestBaseSteve
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		parametrosGeraisConfiguraçãoCriarPO = new ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO();
-
-
 	}
 
 	@AfterClass
@@ -39,9 +37,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriar extends TestBaseSteve
 
 	@Test(priority = 0)
 	public void login() {
-
 		loginTC.login();
-
 	}
 
 	@Test(priority = 1)
@@ -49,7 +45,6 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriar extends TestBaseSteve
 		boolean sucesso = acessarBCBPO.acessar();
 		System.out.println(sucesso);
 		assertTrue(sucesso,Acessar);
-
 	}
 	
 	@Test(priority = 2)

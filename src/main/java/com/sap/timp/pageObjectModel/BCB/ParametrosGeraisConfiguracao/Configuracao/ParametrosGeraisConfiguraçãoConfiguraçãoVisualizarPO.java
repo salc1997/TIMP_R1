@@ -66,10 +66,14 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		sleep(2000);
 		hierarquias.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		hierarquiaConfiguracao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -86,19 +90,31 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+		String url = driver.getCurrentUrl();
 		
-		String nomeHerarquiaText = nomeHerarquia.getAttribute("value");
-		String abaText = aba.getAttribute("value");
-		String nomeHerarquia1Text = nomeHerarquia1.getAttribute("value");
-		String grupoText = grupo.getAttribute("value");
-		String u1timoSText = ultimoSubnivel.getText();
+		String nomeHerarquiaText = "";
+		String subNivel = "";
 		
-		System.out.println("Visualizar");
-		System.out.println(nomeHerarquiaText);
-		System.out.println(abaText);
-		System.out.println(nomeHerarquia1Text);
-		System.out.println(grupoText);
-		System.out.println(u1timoSText);
+		if(url.contains("tc2") || url.contains("tp1")) {
+			nomeHerarquiaText = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/label")).getText().trim();
+			subNivel = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[4]/div/div[1]/div[3]")).getText().trim();
+		} else {
+			nomeHerarquiaText = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[1]/div/div/div[2]/label")).getText().trim();
+			subNivel = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/div/div[1]/div[3]")).getText().trim();
+		}
+	
+//		String abaText = aba.getAttribute("value");
+//		String nomeHerarquia1Text = nomeHerarquia1.getAttribute("value");
+//		String grupoText = grupo.getAttribute("value");
+//		String u1timoSText = ultimoSubnivel.getText();
+		
+		System.out.println("---------------- DATOS DE VISUALIZAR -----------");
+		System.out.println("Nome Hierarquia: " + nomeHerarquiaText);
+		System.out.println("Subnivel 1:" + subNivel);
+//		System.out.println(abaText);
+//		System.out.println(nomeHerarquia1Text);
+//		System.out.println(grupoText);
+//		System.out.println(u1timoSText);
 		System.out.println("-------------------------");
 		biblioteca.click();
 		
@@ -119,32 +135,41 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String nomeHerarquiaTextE = nomeHerarquia.getAttribute("value");
-		String abaTextE = aba.getAttribute("value");
-		String nomeHerarquia1TextE = nomeHerarquia1.getAttribute("value");
-		String grupoTextE = grupo.getAttribute("value");
-		String u1timoSTextE = ultimoSubnivel.getText();
+		String nomeHerarquiaText1 = "";
+		String subNivel1 = "";
 		
-		System.out.println("Editar");
-		System.out.println(nomeHerarquiaTextE);
-		System.out.println(abaTextE);
-		System.out.println(nomeHerarquia1TextE);
-		System.out.println(grupoTextE);
-		System.out.println(u1timoSTextE);
+		if(url.contains("tc2") || url.contains("tp1")) {
+			nomeHerarquiaText1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/label")).getText().trim();
+			subNivel1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[4]/div/div[1]/div[3]")).getText().trim();
+		} else {
+			nomeHerarquiaText1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[1]/div/div/div[2]/label")).getText().trim();
+			subNivel1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/div/div[1]/div[3]")).getText().trim();
+		}
+//		String abaTextE = aba.getAttribute("value");
+//		String nomeHerarquia1TextE = nomeHerarquia1.getAttribute("value");
+//		String grupoTextE = grupo.getAttribute("value");
+//		String u1timoSTextE = ultimoSubnivel.getText();
+		
+		System.out.println("---------------- DATOS DE EDITAR -----------");
+		System.out.println("Nome Hierarquia: " + nomeHerarquiaText1);
+		System.out.println("Subnivel 1:" + subNivel1);
+//		System.out.println(nomeHerarquiaTextE);
+//		System.out.println(abaTextE);
+//		System.out.println(nomeHerarquia1TextE);
+//		System.out.println(grupoTextE);
+//		System.out.println(u1timoSTextE);
 		System.out.println("-------------------------");
 
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sucesso.add(nomeHerarquiaText.contains(nomeHerarquiaTextE));
-		sucesso.add(abaText.contains(abaTextE));
-		sucesso.add(nomeHerarquia1Text.contains(nomeHerarquia1TextE));
-		sucesso.add(grupoText.contains(grupoTextE));
-		sucesso.add(u1timoSText.contains(u1timoSTextE));
+		sucesso.add(nomeHerarquiaText1.contains(nomeHerarquiaText));
+		sucesso.add(subNivel1.contains(subNivel));
+//		sucesso.add(abaText.contains(abaTextE));
+//		sucesso.add(nomeHerarquia1Text.contains(nomeHerarquia1TextE));
+//		sucesso.add(grupoText.contains(grupoTextE));
+//		sucesso.add(u1timoSText.contains(u1timoSTextE));
 
-		
-		
-		
 		System.out.println(sucesso);
 		
 		return sucesso;

@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 =======
 <testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-04-16T19:53:03Z" name="Default suite" finished-at="2021-04-16T19:55:09Z" duration-ms="126593">
 =======
   <suite started-at="2021-04-22T23:28:13Z" name="Default suite" finished-at="2021-04-22T23:33:20Z" duration-ms="306584">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+  <suite started-at="2021-04-23T03:36:31Z" name="Default suite" finished-at="2021-04-23T03:45:03Z" duration-ms="511846">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2021-04-16T19:53:03Z" name="Default test" finished-at="2021-04-16T19:55:09Z" duration-ms="126593">
       <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados@20f5281c]" started-at="2021-04-16T19:53:03Z" name="beforeClass" finished-at="2021-04-16T19:53:20Z" duration-ms="17010" status="PASS">
+=======
+    <test started-at="2021-04-23T03:36:31Z" name="Default test" finished-at="2021-04-23T03:45:03Z" duration-ms="511846">
+      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:36:31Z" name="beforeClass" finished-at="2021-04-23T03:37:03Z" duration-ms="32701" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="Filtro()[pri:0, instance:com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados@20f5281c]" started-at="2021-04-16T19:53:20Z" name="Filtro" finished-at="2021-04-16T19:55:09Z" duration-ms="109536" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
@@ -128,8 +143,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
           </exception> <!-- org.openqa.selenium.TimeoutException -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:37:03Z" name="login" finished-at="2021-04-23T03:37:14Z" duration-ms="10943" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- Filtro -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados@20f5281c]" started-at="2021-04-16T19:55:09Z" name="afterClass" finished-at="2021-04-16T19:55:09Z" duration-ms="0" status="PASS">
@@ -332,14 +351,50 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar@3315d2d7]" started-at="2021-04-22T23:33:20Z" name="afterClass" finished-at="2021-04-22T23:33:20Z" duration-ms="0" status="SKIP">
 >>>>>>> refs/remotes/origin/Yessy
+=======
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:37:14Z" name="brbEntrar" finished-at="2021-04-23T03:37:39Z" duration-ms="24299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="ejecutarFinal()[pri:1, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:37:39Z" name="ejecutarFinal" finished-at="2021-04-23T03:40:40Z" duration-ms="180812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ejecutarFinal -->
+        <test-method signature="relacionamentoFinalyAbrirHierarquiaGrupo()[pri:2, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:40:40Z" name="relacionamentoFinalyAbrirHierarquiaGrupo" finished-at="2021-04-23T03:40:55Z" duration-ms="15880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relacionamentoFinalyAbrirHierarquiaGrupo -->
+        <test-method signature="excluirConfiguracoes2()[pri:3, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:40:55Z" name="excluirConfiguracoes2" finished-at="2021-04-23T03:41:57Z" duration-ms="61116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes2 -->
+        <test-method signature="excluirConfiguracoes1()[pri:4, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:41:57Z" name="excluirConfiguracoes1" finished-at="2021-04-23T03:43:08Z" duration-ms="71077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes1 -->
+        <test-method signature="excluirHierarquia2()[pri:4, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:43:08Z" name="excluirHierarquia2" finished-at="2021-04-23T03:44:08Z" duration-ms="60642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia2 -->
+        <test-method signature="excluirHierarquia1()[pri:6, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:44:08Z" name="excluirHierarquia1" finished-at="2021-04-23T03:45:03Z" duration-ms="54332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2@3f67593e]" started-at="2021-04-23T03:45:03Z" name="afterClass" finished-at="2021-04-23T03:45:03Z" duration-ms="1" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
 =======
       </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar -->
 >>>>>>> refs/remotes/origin/Yessy
+=======
+      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
+>>>>>>> refs/heads/Fernando
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

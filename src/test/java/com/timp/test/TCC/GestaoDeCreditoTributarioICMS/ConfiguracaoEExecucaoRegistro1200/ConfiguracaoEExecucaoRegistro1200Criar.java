@@ -39,5 +39,4 @@ public class ConfiguracaoEExecucaoRegistro1200Criar extends TestBaseMassiel {
 		boolean sucesso = configuracaoEExecucaoRegistro1200CriarPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-
 }

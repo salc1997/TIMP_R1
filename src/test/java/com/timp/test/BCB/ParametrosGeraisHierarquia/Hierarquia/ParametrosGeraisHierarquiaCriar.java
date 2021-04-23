@@ -28,13 +28,11 @@ public class ParametrosGeraisHierarquiaCriar extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		parametrosGeraisHierarquiaCriarPO = new ParametrosGeraisHierarquiaCriarPO();
-
-
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)

@@ -1,49 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="BRE - REGRAS DE NEGOCIO(failed)">
-=======
-  <test thread-count="5" name="Banco De Ocorrecias &gt; Configuracao E Execucao + Executados(failed)">
->>>>>>> refs/remotes/origin/Kenssy
+  <test thread-count="5" name="Tabela de Apoio do SPED &gt; 4.3.3 Tabela Codigo Da Situaçao Tributaria(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa">
-=======
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
->>>>>>> refs/remotes/origin/Kenssy
-        <methods>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="criar"/>
-=======
-          <include name="executarEditar"/>
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa -->
-      <class name="com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir">
+      <class name="com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar">
         <methods>
           <include name="afterClass"/>
-          <include name="criar"/>
           <include name="beforeClass"/>
+          <include name="editar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir -->
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="executarr"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
->>>>>>> refs/remotes/origin/Kenssy
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- BRE - REGRAS DE NEGOCIO(failed) -->
-=======
-  </test> <!-- Banco De Ocorrecias > Configuracao E Execucao + Executados(failed) -->
->>>>>>> refs/remotes/origin/Kenssy
+  </test> <!-- Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria(failed) -->
+  <test thread-count="5" name="Tabelas Complementares para Obrigações Acessórias &gt; SubItens Válidos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosVisualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosVisualizar -->
+    </classes>
+  </test> <!-- Tabelas Complementares para Obrigações Acessórias > SubItens Válidos(failed) -->
 </suite> <!-- Failed suite [Suite] -->

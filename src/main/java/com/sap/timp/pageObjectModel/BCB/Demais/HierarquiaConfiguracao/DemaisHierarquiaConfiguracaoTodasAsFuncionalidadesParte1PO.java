@@ -1133,9 +1133,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		sleep(1000);
 		executar.click();
-		sleep(2000);
+		sleep(5000);
 		waitExpectElement(executarM);
-		sleep(2000);
+		sleep(5000);
 		executarM.click();
 		
 		sleep(1000);
@@ -2332,6 +2332,10 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		fechar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -2343,42 +2347,47 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	public ArrayList<Boolean> resultadoFinalParte2() {
 		
 		calculator.click();
-		sleep(5000);
+		sleep(9000);
 		waitExpectElement(resultadoFinal);
-		sleep(5000);
+		sleep(9000);
+		waitExpectXpath("//button[text()=\"Sim\"]");
+		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
+		sleep(1000);
+		btnSeguirBloqueo.click();
+		sleep(2000);
 		resultadoFinal.click();
-		sleep(5000);
+		sleep(9000);
 
 		adicionarConfiguracao.click();
-		sleep(5000);
+		sleep(9000);
 		
 		nomedoResultado.sendKeys("Resultado Final 1");
-		sleep(1000);
+		sleep(9000);
 		
 		
 		actionsMoveToElementElement(camposSaidaBCB);
-		sleep(5000);
+		sleep(9000);
 		
 		camposSaidaBCB.click();
-		sleep(2000);
+		sleep(9000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 //		sleep(2000);
 //		camposSaidaBCB.click();
 //		sleep(2000);
 		
 		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
-		sleep(2000);
+		sleep(9000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC1);
-		sleep(5000);
+		sleep(9000);
 	
 		caixaFormula.sendKeys("+");
-		sleep(5000);
+		sleep(9000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC2);
-		sleep(5000);
+		sleep(9000);
 		
 		criar.click();
 		sleep(5000);

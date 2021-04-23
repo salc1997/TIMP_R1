@@ -1,6 +1,5 @@
 package com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -11,14 +10,7 @@ import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
-import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AtividadeFiscal.*;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.CampoPesquisaPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriarPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditarPO;
-import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200VisualizarPO;
 
 public class ConfiguracaoEExecucaoRegistro1200Visualizar extends TestBaseSteven {

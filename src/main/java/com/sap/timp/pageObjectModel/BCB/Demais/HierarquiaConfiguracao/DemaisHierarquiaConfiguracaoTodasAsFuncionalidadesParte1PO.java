@@ -835,6 +835,10 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		ultimo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -2347,9 +2351,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	public ArrayList<Boolean> resultadoFinalParte2() {
 		
 		calculator.click();
-		sleep(9000);
+		sleep(3000);
 		waitExpectElement(resultadoFinal);
-		sleep(9000);
+		sleep(2000);
 		waitExpectXpath("//button[text()=\"Sim\"]");
 		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
 		sleep(1000);
@@ -2359,35 +2363,35 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(9000);
 
 		adicionarConfiguracao.click();
-		sleep(9000);
+		sleep(3000);
 		
 		nomedoResultado.sendKeys("Resultado Final 1");
-		sleep(9000);
+		sleep(3000);
 		
 		
 		actionsMoveToElementElement(camposSaidaBCB);
-		sleep(9000);
+		sleep(3000);
 		
 		camposSaidaBCB.click();
-		sleep(9000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		sleep(3000);
 		
 //		sleep(2000);
 //		camposSaidaBCB.click();
 //		sleep(2000);
 		
 		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
-		sleep(9000);
+		sleep(3000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC1);
-		sleep(9000);
+		sleep(3000);
 	
 		caixaFormula.sendKeys("+");
 		sleep(9000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC2);
-		sleep(9000);
+		sleep(3000);
 		
 		criar.click();
 		sleep(5000);
@@ -2404,6 +2408,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			sucesso.add(false);
 		}
 		
+		sleep(5000);
 		fechar.click();
 		sleep(2000);
 		

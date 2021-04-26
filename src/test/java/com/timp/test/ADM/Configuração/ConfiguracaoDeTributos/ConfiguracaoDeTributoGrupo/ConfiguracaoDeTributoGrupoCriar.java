@@ -11,47 +11,30 @@ import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTributoGrupo.ConfiguracaoDeTributoGrupoCriarPO;
 
-public class ConfiguracaoDeTributoGrupoCriar extends TestBaseSteven{
-  
+public class ConfiguracaoDeTributoGrupoCriar extends TestBaseSteven{  
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTributoGrupoCriarPO configuracaoDeTributoGrupoCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTributoGrupoCriarPO = new ConfiguracaoDeTributoGrupoCriarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarADMPO = new AcessarADMPO();
+		configuracaoDeTributoGrupoCriarPO = new ConfiguracaoDeTributoGrupoCriarPO();
 	}
 
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
-	
-	@Test(priority = 2)
+
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarADMPO.acessarADM();
 
-		
 		boolean sucesso = configuracaoDeTributoGrupoCriarPO.criar();
-
-		assertTrue(sucesso, Criar);
-		
-		
+		assertTrue(sucesso, Criar);		
 	}
-	
 }

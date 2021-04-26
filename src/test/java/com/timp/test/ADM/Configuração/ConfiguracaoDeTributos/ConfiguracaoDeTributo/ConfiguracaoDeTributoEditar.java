@@ -14,27 +14,24 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoEditarPO;
 
 public class ConfiguracaoDeTributoEditar extends TestBaseSteven{
- 
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTributoEditarPO configuracaoDeTributoEditarPO;
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTributoEditarPO = new ConfiguracaoDeTributoEditarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarADMPO = new AcessarADMPO();
+		configuracaoDeTributoEditarPO = new ConfiguracaoDeTributoEditarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	
 	@Test()
 	public void editar() {
-
 		loginTC.login();
 		acessarADMPO.acessarADM();
 		ArrayList<Boolean> sucesso = configuracaoDeTributoEditarPO.editar();
@@ -42,7 +39,5 @@ public class ConfiguracaoDeTributoEditar extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Editar);
 		}
-		
 	}
-	
 }

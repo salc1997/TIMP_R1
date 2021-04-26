@@ -11,24 +11,23 @@ import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoEditarPO;
 
-public class ConfiguracaoDeTipoTributoEditar extends TestBaseSteven {
- 
+public class ConfiguracaoDeTipoTributoEditar extends TestBaseSteven { 
 	LoginTC loginTC; 
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTipoTributoEditarPO configuracaoDeTipoTributoEditarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTipoTributoEditarPO = new ConfiguracaoDeTipoTributoEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarADMPO = new AcessarADMPO();
+		configuracaoDeTipoTributoEditarPO = new ConfiguracaoDeTipoTributoEditarPO();
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
 	@Test()
 	public void editar() {
@@ -36,10 +35,6 @@ public class ConfiguracaoDeTipoTributoEditar extends TestBaseSteven {
 		acessarADMPO.acessarADM();
 		boolean sucesso = configuracaoDeTipoTributoEditarPO.editar();
 
-		assertTrue(sucesso, Editar);
-		
-		
+		assertTrue(sucesso, Editar);		
 	}
- 
-	
 }

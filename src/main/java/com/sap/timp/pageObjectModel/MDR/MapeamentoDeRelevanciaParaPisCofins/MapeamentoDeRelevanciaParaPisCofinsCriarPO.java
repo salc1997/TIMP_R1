@@ -99,13 +99,13 @@ public class MapeamentoDeRelevanciaParaPisCofinsCriarPO extends TestBaseSteven {
 		
 		sleep(2000);
 		
-		tributo.click();
+		/*tributo.click();
 		
 		sleep(2000);
 		
 		opcaotributo.click();
 		
-		sleep(2000);
+		sleep(2000);*/
 		
 		relevancia.sendKeys("Teste");
 		

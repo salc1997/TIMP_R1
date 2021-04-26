@@ -108,28 +108,13 @@
 	<test name="Tabela de Apoio ECD	> Código dos Fatos Contábeis">
 		<classes>		
 			<!-- Tabela de Apoio ECD	> Código dos Fatos Contábeis -->
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisCriar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisDetalhe">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisFiltrar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExcluirMassa">
-			</class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisCriar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisDetalhe"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisFiltrar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExcluirMassa"></class>
 			
 		</classes>
 	</test> 
@@ -148,6 +133,10 @@
 				<!-- Tabela de Apoio ECD > DeXParaContraPartida -->
 			<class 
 			name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaExcluirEmMassa">
+			</class>
+			
+			<class 
+			name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar">
 			</class>
 		</classes>
 	</test>	
@@ -245,7 +234,11 @@
 		<classes>		
 			<!--  Rateiro Consorcio-->
 			<class 
-			name="com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio">
+			name="com.timp.test.MDR.RateioDeConsorcio.RateiroConsorcio">
+			</class>
+			
+			<class 
+			name="com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID">
 			</class>
 			
 		</classes>

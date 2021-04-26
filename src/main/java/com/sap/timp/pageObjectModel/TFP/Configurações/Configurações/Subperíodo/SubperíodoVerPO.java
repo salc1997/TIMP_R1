@@ -126,8 +126,8 @@ public class SubperíodoVerPO extends TestBaseMassiel {
 		menu1.click();
 		sleep(2000);
 		acao1.click();
-		sleep(2000);
-		sleep(2000);
+		sleep(6000);
+
 		
 		System.out.println("---------- Editar -----------");
 		

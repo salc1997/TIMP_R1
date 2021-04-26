@@ -87,7 +87,7 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		sleep(2000);
 		
 		String valor = dia.getAttribute("value");
-		
+		System.out.println(valor);
 
 		dia1.click();
 		sleep(2000);
@@ -105,26 +105,26 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		
 		sleep(2000);
 		String enviar = dia.getAttribute("value");
+		System.out.println(enviar);
 		
 		sleep(2000);
 		
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 
 		
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		System.out.println(menu2);
+		//System.out.println(menu2);
 		actionsMoveToElementElement(menu2);
 		sleep(2000);
 		menu2.click();
 		sleep(2000);
-		editar2.click();
-		
-		sleep(2000);
-		sleep(2000);
+		editar2.click();		
+		sleep(6000);
+
 		
 		String novoTexto = dia.getAttribute("value");
 		

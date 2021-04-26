@@ -48,9 +48,9 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencha o nome do grupo\"]")
 	public WebElement nomedogrupo;
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[2]")
-	public WebElement cfop;
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[1]")
+	public WebElement cfop;
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div[2]")
 	public WebElement ajustefiscais;
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
@@ -93,13 +93,13 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 	    sleep(2000);
 	    
 	  
-	   
+	   System.out.println("detalhes");
 		String ajustefiscaisdetalhes = ajustefiscais.getText();
-		//String cfopdetalhes = cfop.getText();
+		String cfopdetalhes = cfop.getText();
 		
 		
 		System.out.println(ajustefiscaisdetalhes);
-		//System.out.println(cfopdetalhes);
+		System.out.println(cfopdetalhes);
 		
 		fechar.click();
 		sleep(2000);
@@ -127,11 +127,12 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		sleep(2000);
 		
 		String ajustefiscaisvisualizar = ajustefiscaisvi.getText();
-		//String cfopvisualizar = cfopvi.getText();
+		String cfopvisualizar = cfopvi.getText();
 		
-		
+		 System.out.println("");
+		 System.out.println("visualizar");
 		System.out.println(ajustefiscaisvisualizar);
-		//System.out.println(cfopvisualizar);
+		System.out.println(cfopvisualizar);
 		
 		
 		

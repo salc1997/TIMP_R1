@@ -66,7 +66,8 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetallesPO extends TestBaseMassi
 	@FindBy(xpath ="//span[@id=\"indexEndDate\"]")
 	public WebElement FimVigencia1;
 	
-	
+	@FindBy(xpath = "//div[contains(@class, \"icon-left\")][2]")
+	public WebElement btnPrimerPagina;
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement cerrar;
@@ -90,7 +91,7 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetallesPO extends TestBaseMassi
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		ultimaPagina.click();
+		btnPrimerPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -129,7 +130,7 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetallesPO extends TestBaseMassi
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		ultimaPagina.click();
+		btnPrimerPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

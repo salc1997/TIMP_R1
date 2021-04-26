@@ -34,28 +34,15 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamen
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
-	}
-
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
+		driver.close();
 	}
 	
 	@Test(priority = 2)
 	public void criarConfiguracao() {
+		loginTC.login();
+		acessarBCBPO.acessar();
+		
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO.lixeiraExcluirDefinitivamenteConfiguracao();
-
 		assertTrue(sucesso, Eliminado);
 	}
 

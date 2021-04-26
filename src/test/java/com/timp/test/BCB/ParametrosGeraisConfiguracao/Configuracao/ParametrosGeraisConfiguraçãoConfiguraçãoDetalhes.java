@@ -6,9 +6,6 @@ import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
-import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Ajustes.CodigosAjustes.CodigoAjustesDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -36,32 +33,20 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes  extends TestBaseK
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
-		parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO.parametrosGeraisDetalhes();
-//		ArrayList<Boolean> sucesso = parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO.detalhes();
-//
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), Detalhes);
-//		}
+		loginTC.login();
+		acessarBCBPO.acessar();
+		
+		//parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO.parametrosGeraisDetalhes();
+		ArrayList<Boolean> sucesso = parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO.parametrosGeraisDetalhes();
+
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 
 	}
 

@@ -153,14 +153,18 @@ public class ConfiguraçãodeLayoutdePainelFiltrosAvancadosPO extends TestBaseStev
 		sleep(2000);
 		
 		opcEmpresa.click();
-		sleep(7000);
+		sleep(2000);
+		
+		attributeToBeXpath("//div[@class=\"uf-filter\"]/div", "class", "base-select ");
+		sleep(1000);
 		
 		uf.click();
 		sleep(2000);
-		
 		opcUf.click();
-		sleep(7000);
+		sleep(2000);
 		
+		attributeToBeXpath("//div[@class=\"branch-filter\"]/div", "class", "base-select ");
+		sleep(1000);
 		
 		filial.click();
 		sleep(2000);

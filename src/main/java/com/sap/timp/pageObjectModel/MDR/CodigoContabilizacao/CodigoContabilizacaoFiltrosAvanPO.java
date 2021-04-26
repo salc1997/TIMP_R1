@@ -84,11 +84,22 @@ public class CodigoContabilizacaoFiltrosAvanPO extends TestBaseKenssy {
 	}
 	
 	public ArrayList<Boolean> filtroDataIniVigencia() {
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		codigoscontabilizacao.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		limpar.click();
+		
+		filtros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		sleep(2000);
+//		limpar.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 //		filtros.click();
 //		sleep(2000);

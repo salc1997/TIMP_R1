@@ -13,6 +13,9 @@ public class MunicipioEliminarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
 	
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
+	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
 	public WebElement municipio;
 	
@@ -52,13 +55,24 @@ public class MunicipioEliminarPO extends TestBaseSteven{
 	
 	public boolean eliminar() {
 		
-		cep.click();
-		sleep(1000);
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+		} else {
+			cep.click();
+			sleep(1000);
+		}
+		
 		municipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys("99999999");
+		String idRegistro = idObter("CEP-Municipio");
+	    System.out.println("idExcluir: "+ idRegistro);
+	    
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -75,7 +89,7 @@ public class MunicipioEliminarPO extends TestBaseSteven{
 		
 		pesquisar.clear();
 		sleep(1000);
-		pesquisar.sendKeys("99999999");
+		pesquisar.sendKeys("15364");
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

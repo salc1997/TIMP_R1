@@ -31,11 +31,12 @@ public class TabelaDeCodigoEClasseParaQuadroExcluirPO extends TestBaseSteven{
 	public boolean excluir() {
 		sleep(2000);
 		tabelacomplementares.click();
-		sleep(2000);
+		
+		sleep(3000);
 		
 		tabeladecodigoeclasseparaquadro.click();
 		
-		sleep(2000);
+		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

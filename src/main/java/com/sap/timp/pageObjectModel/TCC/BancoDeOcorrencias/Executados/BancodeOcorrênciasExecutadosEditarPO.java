@@ -161,7 +161,7 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseSteven {
 		
 		String nuevoTexto = inputSubperiodo.getText();
 		nuevoTexto = nuevoTexto.replace("-", ",");
-		nuevoTexto = nuevoTexto.replace(" ", "");
+		//nuevoTexto = nuevoTexto.replace(" ", "");
 		System.out.println("nuevo Texto " + nuevoTexto);
 		
 		boolean sucesso= nuevoTexto.contains(enviar);

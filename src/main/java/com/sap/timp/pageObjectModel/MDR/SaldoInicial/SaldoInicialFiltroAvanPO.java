@@ -124,7 +124,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 //		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(10000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

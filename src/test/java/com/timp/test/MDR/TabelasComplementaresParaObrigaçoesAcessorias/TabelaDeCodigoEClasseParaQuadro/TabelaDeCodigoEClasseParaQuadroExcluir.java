@@ -28,12 +28,14 @@ public class TabelaDeCodigoEClasseParaQuadroExcluir extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()
 	public void excluir() {
-
+		loginTC.login();
+		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = tabelaDeCodigoEClasseParaQuadroExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

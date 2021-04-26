@@ -167,7 +167,7 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 		}
 		System.out.println(sucesso);
 		
-		
+		System.out.println("paso criar");
 		return sucesso;
 		
 		
@@ -180,7 +180,6 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-
 		
 		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check1.click();
@@ -191,7 +190,6 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 		
 		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check2.click();
-		
 		sleep(1000);
 		
 		excluirMassa.click();
@@ -202,7 +200,11 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		  
+		driver.navigate().refresh(); 
+		waitExpectElement(siguiente); 
+		sleep(2000);
+		  
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -214,8 +216,13 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size(); 
+	  String id = "0";
+	  
+	  if(rows > 0) { 
+		  id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
+		  System.out.println(id); 
+	  }
 		
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro1);

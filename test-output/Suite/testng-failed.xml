@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <test thread-count="5" name="SCANC &gt; Relacionamento entre Quadros(failed)">
 =======
   <test thread-count="5" name="Cadastros IRPJ/CSLL &gt; Tabela de Apoio ECF(failed)">
@@ -14,7 +15,11 @@
 =======
   <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <test thread-count="5" name="ParametrosModeloDeApuracaoTP(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -199,34 +204,24 @@
         </methods>
       </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar -->
       <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar">
+=======
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="editar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir">
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
         <methods>
           <include name="beforeClass"/>
           <include name="excluir"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtroId"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- Parametros Criacao NF > Cadastro Fornecedor(failed) -->
   <test thread-count="5" name=" Preço de Transferência &gt; Commoditie para TP(failed)">
     <classes>
@@ -535,4 +530,7 @@
 =======
   </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
+>>>>>>> refs/heads/Fernando
 </suite> <!-- Failed suite [Suite] -->

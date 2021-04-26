@@ -41,7 +41,7 @@ public class ModeloDeApuracaoTPExcluirEnMasa extends TestBaseKenssy{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test()
+	@Test(dependsOnMethods = "criar")
 	public void excluirEnMasaP() {
 		sleep(1000);
 		boolean sucesso2 = modeloDeApuracaoTPExcluirEnMasaPO.excluirEnMasaModeloApuracaoTP();

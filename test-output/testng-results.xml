@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 =======
 <testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
@@ -12,8 +13,12 @@
 =======
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> refs/heads/Fernando
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -27,8 +32,12 @@
 =======
   <suite started-at="2021-04-25T03:28:45Z" name="Default suite" finished-at="2021-04-25T04:31:41Z" duration-ms="3775318">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+  <suite started-at="2021-04-26T00:06:47Z" name="Suite" finished-at="2021-04-26T00:11:38Z" duration-ms="291018">
+>>>>>>> refs/heads/Fernando
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,9 +54,15 @@
       <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes@44d52de2]" started-at="2021-04-25T03:28:45Z" name="beforeClass" finished-at="2021-04-25T03:28:56Z" duration-ms="10964" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+    <test started-at="2021-04-26T00:06:47Z" name="ParametrosModeloDeApuracaoTP" finished-at="2021-04-26T00:11:38Z" duration-ms="291018">
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes@4397ad89]" started-at="2021-04-26T00:08:40Z" name="beforeClass" finished-at="2021-04-26T00:08:55Z" duration-ms="14081" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="Filtro()[pri:0, instance:com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados@20f5281c]" started-at="2021-04-16T19:53:20Z" name="Filtro" finished-at="2021-04-16T19:55:09Z" duration-ms="109536" status="FAIL">
@@ -218,8 +233,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
           </exception> <!-- org.openqa.selenium.TimeoutException -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        <test-method signature="Detalhes()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes@4397ad89]" started-at="2021-04-26T00:08:55Z" name="Detalhes" finished-at="2021-04-26T00:10:09Z" duration-ms="73958" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -460,9 +479,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- detalhes -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes@44d52de2]" started-at="2021-04-25T04:31:41Z" name="afterClass" finished-at="2021-04-25T04:31:41Z" duration-ms="0" status="PASS">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+        </test-method> <!-- Detalhes -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes@4397ad89]" started-at="2021-04-26T00:10:09Z" name="afterClass" finished-at="2021-04-26T00:10:09Z" duration-ms="190" status="PASS">
+>>>>>>> refs/heads/Fernando
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -478,4 +502,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> refs/remotes/origin/Kenssy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPDetalhes -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir@59cba5a]" started-at="2021-04-26T00:10:09Z" name="beforeClass" finished-at="2021-04-26T00:10:21Z" duration-ms="12037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir@59cba5a]" started-at="2021-04-26T00:10:21Z" name="excluir" finished-at="2021-04-26T00:11:38Z" duration-ms="77413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir@59cba5a]" started-at="2021-04-26T00:11:38Z" name="afterClass" finished-at="2021-04-26T00:11:38Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@341814d3]" started-at="2021-04-26T00:06:47Z" name="beforeClass" finished-at="2021-04-26T00:06:59Z" duration-ms="12267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@341814d3]" started-at="2021-04-26T00:06:59Z" name="criar" finished-at="2021-04-26T00:08:40Z" duration-ms="101021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar@341814d3]" started-at="2021-04-26T00:08:40Z" name="afterClass" finished-at="2021-04-26T00:08:40Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPCriar -->
+    </test> <!-- ParametrosModeloDeApuracaoTP -->
+  </suite> <!-- Suite -->
+>>>>>>> refs/heads/Fernando
 </testng-results>

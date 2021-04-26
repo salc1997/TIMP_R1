@@ -1,5 +1,7 @@
 package com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -39,6 +41,15 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 
 	
 	//DATOS DEL VISUALIZAR
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/label")
+	public WebElement nombreHierarquiaV;
+	
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div/div/div[2]/div/div[4]/div/div[2]/label")
+	public WebElement nombreHierarquiaVTC2;
+	
+	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div/div/div[2]/div/div[4]/div/div[2]/label")
+	public WebElement nombreHierarquiaVTP1;
+	
 //	@FindBy(xpath = "//span[@id=\"id\"]")
 //	public WebElement empresaV;
 //	@FindBy(xpath = "//span[@id=\"id\"]")
@@ -56,7 +67,9 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void parametrosGeraisDetalhes() {
+	public ArrayList<Boolean> parametrosGeraisDetalhes() {
+		String url = driver.getCurrentUrl();
+		
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -120,11 +133,40 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		//waitExpectElement(nombreHierarquiaV);
+		sleep(3000);
 		
-		System.err.println("");
-		System.out.println("***************--------------------------------------------*******************");
-		System.out.println("NO HAY DATOS EN VISUALIZAR PARA PODER COMPARAR CON DETALHES, BUG YA REPORTADO");
-		System.out.println("***************--------------------------------------------*******************");
+		String hierarquiaV = "";
+		
+		if (url.contains("tq1")) {
+			hierarquiaV = nombreHierarquiaV.getText();
+			System.out.println("Visualizar");
+			System.out.println("Nome de Hierarquia: " + hierarquiaV);
+			System.err.println("");
+		} else if (url.contains("tc2")) {
+			
+			hierarquiaV = nombreHierarquiaVTC2.getText();
+			System.out.println("Visualizar");
+			System.out.println("Nome de Hierarquia: " + hierarquiaV);
+			System.err.println("");
+		}else {
+			hierarquiaV = nombreHierarquiaVTC2.getText();
+			System.out.println("Visualizar");
+			System.out.println("Nome de Hierarquia: " + hierarquiaV);
+			System.err.println("");
+		}
+		
+		
+		
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(nomeHierarquiaDValor.contains(hierarquiaV));
+		System.out.println(sucesso);
+		return sucesso;
+		
+//		System.out.println("***************--------------------------------------------*******************");
+//		System.out.println("NO HAY DATOS EN VISUALIZAR PARA PODER COMPARAR CON DETALHES, BUG YA REPORTADO");
+//		System.out.println("***************--------------------------------------------*******************");
 	}
 }

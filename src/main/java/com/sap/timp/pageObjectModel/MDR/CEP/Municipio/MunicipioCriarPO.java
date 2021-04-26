@@ -13,6 +13,9 @@ public class MunicipioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
 	
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
+	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
 	public WebElement municipio;
 	
@@ -41,7 +44,7 @@ public class MunicipioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"cep\")]")
+	@FindBy(xpath = "//div[contains(@class,\"cep_0_3\")]/div/div[2]/div/div/div[2]/input")
 	public WebElement cepN;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Loc in sit\")]")
@@ -67,9 +70,16 @@ public class MunicipioCriarPO extends TestBaseSteven{
 	
 	
 	public boolean criar() {
+		String url = driver.getCurrentUrl();
 		
-		cep.click();
-		sleep(1000);
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+		} else {
+			cep.click();
+			sleep(1000);
+		}
+		
 		municipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -108,7 +118,7 @@ public class MunicipioCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys("99999999");
+		pesquisar.sendKeys("15364");
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(2000);
@@ -117,7 +127,10 @@ public class MunicipioCriarPO extends TestBaseSteven{
 		
 		String registro= localiza.getText();
 		
-		boolean sucesso = registro.contains("99999999");
+		idInserir("CEP-Municipio",registro);
+		System.out.println("IdMunicipio: "+ registro);
+		
+		boolean sucesso = registro.contains("15364");
 		
 		return sucesso;
 		

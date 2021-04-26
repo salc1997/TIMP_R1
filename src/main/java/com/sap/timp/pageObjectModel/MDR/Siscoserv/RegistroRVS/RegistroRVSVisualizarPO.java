@@ -110,6 +110,7 @@ public ArrayList<Boolean> visualizar() {
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectElement(empresa);
 		sleep(2000);
 		
 		//visualizar
@@ -157,10 +158,11 @@ public ArrayList<Boolean> visualizar() {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(empresa);
 		sleep(2000);
 			
 		//editar
-		
+		System.out.println("Datos del editar");
 		
 		String empresaeditar=empresa.getAttribute("value");
 		String periodoeditar = periodo.getAttribute("value");
@@ -169,9 +171,9 @@ public ArrayList<Boolean> visualizar() {
 		String numerodoregistroeditar = numerodoregistro.getAttribute("value");
 		String numeroderegistroexpotacaoeditar = numeroderegistroexpotacao.getAttribute("value");
 		
-		System.out.println( empresaeditar);
+		System.out.println(empresaeditar);
 		System.out.println(periodoeditar);
-		System.out.println( numeroserviçoeditar);
+		System.out.println(numeroserviçoeditar);
 		System.out.println(numeronifeditar);
 		System.out.println(numerodoregistroeditar);
 		System.out.println(numeroderegistroexpotacaoeditar);
@@ -188,7 +190,5 @@ public ArrayList<Boolean> visualizar() {
 		return sucesso;	
 
 	
-	}	
-
-
+	}
 }

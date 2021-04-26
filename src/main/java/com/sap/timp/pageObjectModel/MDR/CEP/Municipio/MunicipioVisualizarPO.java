@@ -26,6 +26,8 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
 	public WebElement municipio;
@@ -91,37 +93,29 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> visualizar() {
 
-		cep.click();
-		sleep(1000);
+String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+		} else {
+			cep.click();
+			sleep(1000);
+		}
+		
 		municipio.click();
-
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
 		sleep(2000);
-
-		/*siguiente.click();
-
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		idC.click();
-		sleep(1000);
-		dobleClickElement(idC);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idRegistro = idObter("CEP-Municipio");
+	    System.out.println("idEditar: "+ idRegistro);
 	    
-		
-		menu.click();
-		sleep(1000);
-		visualizar.click();
-		*/
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
-		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		//System.out.println(sucesso);
-		
-		String numEnviar = "99999999";
-		
-		pesquisar.sendKeys(numEnviar);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -140,6 +134,8 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 		String locinsitvisualizar = locSvi.getText();
 		String locintipolocvisualizar = locTvi.getText();
 		
+		System.out.println("******Visualizar******");
+		
 		System.out.println(numerovisualizar);
 		System.out.println(nomevisualizar);
 		System.out.println (ufvisualizar);
@@ -154,7 +150,7 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(numEnviar);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -169,7 +165,8 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 		//editar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		System.out.println("");
+		System.out.println("******Editar******");
 		String numeroeditar=numero.getAttribute("value");
 		String nomeeditar=nome.getAttribute("value");
 		String ufeditar=uf.getAttribute("value");

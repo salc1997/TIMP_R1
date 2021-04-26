@@ -10,6 +10,8 @@ import com.sap.timp.base.TestBaseFernando;
 public class BairroExcluirMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cepTQ1;
@@ -105,12 +107,13 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 			tp1 = true;
 		}
 		
-		if (tq1 == true) {
-			sleep(2000);
-			cepTQ1.click();
-		}else {
-			sleep(2000);
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+		} else {
 			cep.click();
+			sleep(1000);
 		}
 		
 		

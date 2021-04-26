@@ -91,7 +91,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseMassiel{
 	}
 	
 	public boolean criar() {
-		//invisibilityOfElementOverlay();
+		invisibilityOfElementOverlay();
 		bancoCreditoExtemporaneo.click();
 		sleep(1000);
 		
@@ -200,6 +200,8 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseMassiel{
 		
 		btnBiblioteca.click();
 		invisibilityOfElementOverlay();
+		waitExpectElement(btnUltimaPagina);
+		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();

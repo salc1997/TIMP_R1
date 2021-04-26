@@ -32,23 +32,12 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditar extends TestBaseStev
 	  driver.close();
   }
 
-  @Test(priority = 0)
-  public void login() {
-	loginTC.login();
-  }
-	
-	
-  @Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
 
-	}
-  
-  @Test(priority = 2)
+  @Test()
   public void editar() {
-
+	  loginTC.login();
+		acessarBCBPO.acessar();
+		
 	//  parametrosGeraisConfiguraçãoEditarPO.editar();
 	  
 	boolean sucesso = parametrosGeraisConfiguraçãoEditarPO.editar();

@@ -32,29 +32,16 @@ public class ParametrosGeraisHierarquiaRaiz extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
-	}
-
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
+		driver.close();
 	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void criarConfiguracao() {
+		loginTC.login();
+		acessarBCBPO.acessar();
+		
 		boolean sucesso = parametrosGeraisHierarquiaRaizPO.raizHierarquia();
 		assertTrue(sucesso, "O registro existe na raiz");
-	
 	}
 
 

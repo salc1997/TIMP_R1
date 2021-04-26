@@ -111,7 +111,11 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-	
+		boolean tq1 = false;
+		
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}
 		
 		bancoOcorrencia.click();
 		sleep(2000);
@@ -214,8 +218,10 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		
 		if (tc2==true) {
 			idTipoObjetoTC2.click();
-		}else {
+		}else if(tq1 == true) {
 			idTipoObjetoTQ1.click();
+		}else {
+			idTipoObjetoTC2.click();
 		}
 		
 		invisibilityOfElementOverlay();
@@ -229,10 +235,10 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		waitExpectElement(sim);
 		sim.click();
 		sleep(3000);
-		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		waitExpectElement(biblioteca);
+		sleep(3000);
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

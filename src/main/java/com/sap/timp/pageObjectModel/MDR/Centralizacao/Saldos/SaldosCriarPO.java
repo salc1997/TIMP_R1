@@ -81,8 +81,12 @@ public class SaldosCriarPO extends TestBaseKenssy{
 	@FindBy(xpath="//div[@id=\"iniVigencia\"]/div/div/span")
 	public WebElement fechaIniVigencia;
 	
-	@FindBy(xpath="//div[@class=\"date today\" and @tabindex=\"0\"]")
+//	@FindBy(xpath="//div[@class=\"date today\" and @tabindex=\"0\"]")
+//	public WebElement diaHoy;
+	
+	@FindBy(xpath="//div[@class=\"calendar-wrapper\"]/div[@class=\"dates-wrapper\"]/div[contains(@class,\"today\") and @tabindex=\"0\"]")
 	public WebElement diaHoy;
+
 	
 		
 	@FindBy(xpath="//body")

@@ -348,12 +348,12 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		}else {
 			cboIDOrigen.click();
 			sleep(1000);
-			opcionIDOrigenTQ1.click();
+			opcionIDOrigenTP1.click();
 			sleep(7000);
 			
 			cboSaida.click();
 			sleep(1000);
-			opcionSaidaTQ1.click();
+			opcionSaidaTP1.click();
 			sleep(7000);
 			
 			tipoCredito.click();

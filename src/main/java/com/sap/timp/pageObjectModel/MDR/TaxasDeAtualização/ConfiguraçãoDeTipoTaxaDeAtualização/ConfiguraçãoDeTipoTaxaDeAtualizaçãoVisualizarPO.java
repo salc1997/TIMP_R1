@@ -85,13 +85,14 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizarPO extends TestBaseMas
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		//btnPrimerPagina.click();
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
-		ultimaPagina.click();
+		btnPrimerPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+//		ultimaPagina.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		String idRegistro =idObter("configuracaodetipotaxadeatualizacao");
 		
 		System.out.println(idRegistro);
@@ -129,7 +130,7 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizarPO extends TestBaseMas
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		ultimaPagina.click();
+		btnPrimerPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

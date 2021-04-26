@@ -137,6 +137,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseSteven{
 			tributo = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[6]/div")).getText();
 			sucesso.add(data.get(0).equals(tributo));
 		}
+		System.out.println("paso usuario tributo");
 		
 		return sucesso;
 		
@@ -220,16 +221,27 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBaseSteven{
 			usuario = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[9]/div")).getText();
 			sucesso2.add(data.get(0).equals(usuario));
 		}
-		
+		System.out.println("paso usuario criacao");
 		return sucesso2;
+		
 		
 	}
 	
 	
 	public ArrayList<Boolean> usuarioModificado(){
+//		sleep(2000);
+//		cenarios.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+//		sleep(4000);
+//		filtro.sendKeys(Keys.ENTER);
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		sleep(10000);
 		limpiar.sendKeys(Keys.ENTER);
-
+		sleep(10000);
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		

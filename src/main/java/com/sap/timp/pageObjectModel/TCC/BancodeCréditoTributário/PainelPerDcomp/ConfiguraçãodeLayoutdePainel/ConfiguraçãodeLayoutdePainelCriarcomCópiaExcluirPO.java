@@ -84,7 +84,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String url = driver.getCurrentUrl();
 
@@ -100,7 +100,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 			tp1 = true;
 		}
 		
-		if (tc2 == true || tp1 == true) {
+		if (tp1 == true) {
 			
 			cboLeiaute.clear();
 			sleep(1000);
@@ -109,7 +109,8 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 			cboLeiaute.sendKeys(Keys. ESCAPE);
 			sleep(1000);
 
-		}else {
+		}else if (tq1== true) {
+			
 		
 			cboLeiaute.clear();
 			sleep(1000);
@@ -118,6 +119,13 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 			cboLeiaute.sendKeys(Keys. ESCAPE);
 			sleep(1000);
 			
+		}else {
+			cboLeiaute.clear();
+			sleep(3000);
+			cboLeiaute.sendKeys("235 - TESTE AUTOMATIZADO - QA");
+			sleep(3000);
+			cboLeiaute.sendKeys(Keys. ESCAPE);
+			sleep(3000);
 		}
 		
 		

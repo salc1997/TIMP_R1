@@ -35,7 +35,7 @@ public class CodigoFatosContabeisVisualizar extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 3)
+	@Test()
 	public void visualizar() {
 		loginTC.login();
 		acesarMDRPO.acessarMDR();

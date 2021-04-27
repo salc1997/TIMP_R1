@@ -1724,7 +1724,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 				
 		
 		System.out.println("---------------------------------Abrir SubNivel 1-------------------------------------");
-		sleep(1000);
+		sleep(8000);
 		
 		subnivel1.click();
 		sleep(2000);

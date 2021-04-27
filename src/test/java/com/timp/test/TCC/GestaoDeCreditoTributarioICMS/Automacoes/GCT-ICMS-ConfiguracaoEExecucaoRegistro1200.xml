@@ -21,8 +21,7 @@
 			<!-- PainelBCE > Executados -->
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Editar"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Visualizar"></class>
-				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Excluir"></class>
-				
+				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Excluir"></class>				
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir"></class>
 		</classes>
 	

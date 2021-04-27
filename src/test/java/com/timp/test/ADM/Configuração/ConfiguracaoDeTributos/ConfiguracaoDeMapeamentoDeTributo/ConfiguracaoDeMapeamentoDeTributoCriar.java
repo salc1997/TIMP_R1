@@ -12,46 +12,28 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriarPO;
 
 public class ConfiguracaoDeMapeamentoDeTributoCriar extends TestBaseSteven{
- 
-	 
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeMapeamentoDeTributoCriarPO configuracaoDeMapeamentoDeTributoCriarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeMapeamentoDeTributoCriarPO = new ConfiguracaoDeMapeamentoDeTributoCriarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarADMPO = new AcessarADMPO();
+		configuracaoDeMapeamentoDeTributoCriarPO = new ConfiguracaoDeMapeamentoDeTributoCriarPO();
 	}
 
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
+	@AfterClass
+	public void afterClass() {
+		driver.close();
 	}
-	
-	@Test(priority = 2)
+
+	@Test()
 	public void criar() {
-
-		
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		boolean sucesso = configuracaoDeMapeamentoDeTributoCriarPO.criar();
-
 		assertTrue(sucesso, Criar);
-		
-		
 	}
 }

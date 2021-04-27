@@ -172,15 +172,14 @@ public class FatorDeCreditamentoFiltrosAvançadosPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String textEmpresa = driver
-				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+rows+"\"]/div[3]/div"))
-				.getText();
+		String textEmpresa = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+rows+"\"]/div[3]/div")).getText();
 
 		System.out.println(this.textEmpresa);
 
-		Boolean existeElemento = true;
+//		Boolean existeElemento = true;
 		Boolean sucesso= true;
-		if(existeElemento = driver.findElements(By.id(textEmpresa)).size() != 0){
+//		if(existeElemento = driver.findElements(By.id(textEmpresa)).size() != 0){
+		if(textEmpresa != ""){
 			  System.out.println("Existe elemento");
 			  sucesso= true;
 		}else{//0, elemento no esta presente.

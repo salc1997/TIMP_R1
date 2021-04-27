@@ -28,32 +28,17 @@ public class ParametrosGeraisHierarquiaCriar extends TestBaseSteven {
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		parametrosGeraisHierarquiaCriarPO = new ParametrosGeraisHierarquiaCriarPO();
-
-
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criarConfiguracaoHierarquia() {
+		loginTC.login();
+		acessarBCBPO.acessar();
 		
 		ArrayList<Boolean> sucesso = parametrosGeraisHierarquiaCriarPO.criarConfiguracaoHierariquia();
 		System.out.println("veamos"+sucesso);

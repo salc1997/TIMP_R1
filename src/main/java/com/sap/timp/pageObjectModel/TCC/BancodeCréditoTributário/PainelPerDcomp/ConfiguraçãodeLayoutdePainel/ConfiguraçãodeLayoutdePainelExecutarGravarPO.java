@@ -125,7 +125,7 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		btnExecuta.click();
 		sleep(2000);
@@ -133,25 +133,25 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 		sleep(2000);
 		
 		cboEmpresa.click();
-		sleep(1000);
+		sleep(2000);
 		opcionEmpresa.click();
-		sleep(1000);
+		sleep(2000);
 
 		
 		cboUf.click();
-		sleep(1000);
+		sleep(2000);
 		opcionUf.click();
-		sleep(1000);
+		sleep(2000);
 		opcionUf.sendKeys(Keys. ESCAPE);
 		sleep(7000);
 		
 		
-		cboFilial.click();
-		sleep(1000);
-		opcionFilial.click();
-		sleep(1000);
-		opcionFilial.sendKeys(Keys. ESCAPE);
-		sleep(1000);
+//		cboFilial.click();
+//		sleep(2000);
+//		opcionFilial.click();
+//		sleep(2000);
+//		opcionFilial.sendKeys(Keys. ESCAPE);
+//		sleep(2000);
 		
 		calendario.click();
 		sleep(3000);
@@ -204,7 +204,7 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 		WebElement açao2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		menu2.click();
-		sleep(1000);
+		sleep(2000);
 		açao2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -10,7 +10,6 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Municipio.MunicipioCriarPO;
-import com.sap.timp.pageObjectModel.MDR.CEP.Municipio.MunicipioFiltroPO;
 
 public class MunicipioCriar extends TestBaseSteven {
 
@@ -29,7 +28,7 @@ public class MunicipioCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

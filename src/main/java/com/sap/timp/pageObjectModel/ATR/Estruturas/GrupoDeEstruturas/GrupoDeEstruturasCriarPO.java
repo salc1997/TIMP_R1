@@ -78,12 +78,12 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(nomedogrupo);
 		sleep(2000);
 	
 		nomedogrupo.sendKeys("Teste ATR  MASSIE");
-		sleep(1000);
+		sleep(2000);
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();

@@ -14,25 +14,23 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoVisualizarPO;
 
 public class ConfiguracaoDeTributoVisualizar extends TestBaseSteven{
- 
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTributoVisualizarPO configuracaoDeTributoVisualizarPO ;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTributoVisualizarPO = new ConfiguracaoDeTributoVisualizarPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarADMPO = new AcessarADMPO();
+		configuracaoDeTributoVisualizarPO = new ConfiguracaoDeTributoVisualizarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-	
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
+
 	@Test()
 	public void Visualizar() {
 
@@ -43,8 +41,5 @@ public class ConfiguracaoDeTributoVisualizar extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
 	}
-	
-	
 }

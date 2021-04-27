@@ -2,35 +2,95 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   <test thread-count="5" name="SCANC &gt; Relacionamento entre Quadros(failed)">
 =======
   <test thread-count="5" name="Cadastros IRPJ/CSLL &gt; Tabela de Apoio ECF(failed)">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+=======
+  <test thread-count="5" name="Tabela de Apoio do SPED &gt; 4.3.3 Tabela Codigo Da Situaçao Tributaria(failed)">
+>>>>>>> refs/heads/Fernando
+=======
+  <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+  <test thread-count="5" name="ParametrosModeloDeApuracaoTP(failed)">
+>>>>>>> refs/heads/Fernando
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa">
 =======
       <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar">
+>>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir">
+>>>>>>> refs/remotes/origin/Kenssy
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
           <include name="excluir"/>
+=======
+>>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
+          <include name="editar"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa -->
       <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar">
         <methods>
+=======
+          <include name="excluir"/>
+>>>>>>> refs/remotes/origin/Kenssy
           <include name="beforeClass"/>
           <include name="editar"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar -->
 =======
       </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaEditar -->
+>>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir -->
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelEditar -->
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="ver"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar -->
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar">
+        <methods>
+          <include name="executarGravar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
+>>>>>>> refs/remotes/origin/Kenssy
     </classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   </test> <!-- SCANC > Relacionamento entre Quadros(failed) -->
   <test thread-count="5" name="Parâmetros de criação de NF &gt; Cadastro de Nota Fiscal(failed)">
@@ -144,34 +204,24 @@
         </methods>
       </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar -->
       <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar">
+=======
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
+>>>>>>> refs/heads/Fernando
         <methods>
           <include name="editar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir">
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
         <methods>
           <include name="beforeClass"/>
           <include name="excluir"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtroId"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar -->
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- Parametros Criacao NF > Cadastro Fornecedor(failed) -->
   <test thread-count="5" name=" Preço de Transferência &gt; Commoditie para TP(failed)">
     <classes>
@@ -463,4 +513,24 @@
     </classes>
   </test> <!-- Rateiro Consorcio(failed) -->
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+=======
+  </test> <!-- Tabela de Apoio do SPED > 4.3.3 Tabela Codigo Da Situaçao Tributaria(failed) -->
+  <test thread-count="5" name="Tabelas Complementares para Obrigações Acessórias &gt; SubItens Válidos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosVisualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosVisualizar -->
+    </classes>
+  </test> <!-- Tabelas Complementares para Obrigações Acessórias > SubItens Válidos(failed) -->
+>>>>>>> refs/heads/Fernando
+=======
+  </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+  </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
+>>>>>>> refs/heads/Fernando
 </suite> <!-- Failed suite [Suite] -->

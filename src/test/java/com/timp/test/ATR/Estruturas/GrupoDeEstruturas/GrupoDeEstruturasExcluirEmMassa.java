@@ -43,10 +43,6 @@ public class GrupoDeEstruturasExcluirEmMassa extends TestBaseSteven{
 
 		boolean sucesso = grupoDeEstruturasExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		sleep(1000);
-		boolean sucesso2 = grupoDeEstruturasExcluirEmMassaPO.excluir();
-		assertTrue(sucesso2, Eliminado);
-
 	}
 	
 	@Test(dependsOnMethods = "criar" )

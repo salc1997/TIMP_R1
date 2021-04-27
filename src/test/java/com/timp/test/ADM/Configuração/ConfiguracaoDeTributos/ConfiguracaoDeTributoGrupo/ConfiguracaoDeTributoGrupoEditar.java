@@ -11,48 +11,30 @@ import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTributoGrupo.ConfiguracaoDeTributoGrupoEditarPO;
 
-public class ConfiguracaoDeTributoGrupoEditar extends TestBaseSteven{
-  
+public class ConfiguracaoDeTributoGrupoEditar extends TestBaseSteven{  
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTributoGrupoEditarPO configuracaoDeTributoGrupoEditarPO;
- 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initialization();
-	  loginTC = new LoginTC();
-	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTributoGrupoEditarPO = new ConfiguracaoDeTributoGrupoEditarPO();
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarADMPO = new AcessarADMPO();
+		configuracaoDeTributoGrupoEditarPO = new ConfiguracaoDeTributoGrupoEditarPO();
 	}
 
-	@Test(priority = 1)
-	public void AcessarADM() {
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
+	@Test()
+	public void editar() {
+		loginTC.login();
 		acessarADMPO.acessarADM();
 		
-	}
-	
-	@Test(priority = 2)
-	public void editar() {
-
-		
 		boolean sucesso = configuracaoDeTributoGrupoEditarPO.editar();
-
 		assertTrue(sucesso, Editar);
-		
-		
 	}
- 
-	
 }

@@ -11,27 +11,24 @@ import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoExcluirPO;
 
-public class ConfiguracaoDeTipoTributoExcluir extends TestBaseSteven {
- 
+public class ConfiguracaoDeTipoTributoExcluir extends TestBaseSteven { 
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO; 
 	ConfiguracaoDeTipoTributoExcluirPO configuracaoDeTipoTributoExcluirPO;
- 
-	  @BeforeClass
-	  public void beforeClass() {
-		  driver = initialization();
-		  loginTC = new LoginTC();
-		  acessarADMPO = new AcessarADMPO();
-		  configuracaoDeTipoTributoExcluirPO = new ConfiguracaoDeTipoTributoExcluirPO();
-	  }
 
-	  @AfterClass
-	  public void afterClass() {
-		  driver.close();
-	  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarADMPO = new AcessarADMPO();
+		configuracaoDeTipoTributoExcluirPO = new ConfiguracaoDeTipoTributoExcluirPO();
+	}
 
+	@AfterClass
+	public void afterClass() {
+		driver.close();
+	}
 
-	
 	@Test()
 	public void excluir() {
 		loginTC.login();
@@ -39,9 +36,5 @@ public class ConfiguracaoDeTipoTributoExcluir extends TestBaseSteven {
 		boolean sucesso = configuracaoDeTipoTributoExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
-		
-		
 	}
- 
-	
 }

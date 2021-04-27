@@ -58,7 +58,7 @@ public class RepresentantesLegaisCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"atribuicoesEmpresa\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]")
 	public WebElement opcaoempresa;
 	
 	@FindBy(xpath = "//div[@id=\"iniVigenciaRepresentante\"]/div[1]/div/input")
@@ -82,7 +82,7 @@ public class RepresentantesLegaisCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"atribuicoesUF\"]/div/div/div[2]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]")
 	public WebElement opcaouf;
 	
 	@FindBy(xpath = "//div[@id=\"atribuicoesFilial\"]/div/div/div[2]")
@@ -203,7 +203,9 @@ public class RepresentantesLegaisCriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		opcaoempresa.click();
+		sleep(2000);
 		
+		closeSelectTypeCheckbox(empresa);
 		sleep(2000);
 		
 		uf.click();
@@ -214,12 +216,18 @@ public class RepresentantesLegaisCriarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		
+		closeSelectTypeCheckbox(uf);
+		sleep(2000);
+		
 		filial.click();
 		
 		sleep(2000);
 		
 		opcaofilial.click();
 		
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(filial);
 		sleep(2000);
 		
 		Actions action = new Actions(driver);

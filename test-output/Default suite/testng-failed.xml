@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
 =======
       <class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar">
@@ -22,13 +23,20 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
+>>>>>>> refs/heads/Yessy
         <methods>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="Filtro"/>
+=======
+>>>>>>> refs/heads/Yessy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 =======
           <include name="TFPEntrar"/>
           <include name="beforeClass"/>
@@ -50,7 +58,10 @@
           <include name="relacionamentoTotalizadorSubperiodoFixoReplicar"/>
           <include name="adicionarEntradaManual2"/>
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Yessy
           <include name="afterClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="detalhes"/>
 =======
@@ -70,7 +81,11 @@
           <include name="resultadoDoAbaParte1"/>
 =======
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+          <include name="criar"/>
+>>>>>>> refs/heads/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -90,6 +105,9 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
+>>>>>>> refs/heads/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

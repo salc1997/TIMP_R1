@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
 =======
       <class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar">
@@ -20,7 +21,11 @@
 =======
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
 >>>>>>> refs/heads/Fernando
+=======
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
+>>>>>>> refs/heads/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -33,7 +38,10 @@
 =======
           <include name="editar"/>
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Yessy
           <include name="beforeClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -48,7 +56,10 @@
 >>>>>>> refs/heads/Fernando
 =======
 >>>>>>> refs/heads/Fernando
+=======
+>>>>>>> refs/heads/Yessy
           <include name="afterClass"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="resultadoDoAbaParte1"/>
@@ -56,7 +67,11 @@
 >>>>>>> refs/remotes/origin/Kenssy
 =======
 >>>>>>> refs/heads/Fernando
+=======
+          <include name="criar"/>
+>>>>>>> refs/heads/Yessy
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,6 +96,9 @@
         </methods>
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
 >>>>>>> refs/heads/Fernando
+=======
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
+>>>>>>> refs/heads/Yessy
     </classes>
   </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
 </suite> <!-- Failed suite [Suite] -->

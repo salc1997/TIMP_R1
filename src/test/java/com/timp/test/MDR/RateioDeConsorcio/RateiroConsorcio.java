@@ -1,4 +1,4 @@
-package com.timp.test.MDR.RateiroConsorcio;
+package com.timp.test.MDR.RateioDeConsorcio;
 
 import org.testng.annotations.Test;
 

@@ -1,104 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ParametrosModeloDeApuracaoTP(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
-=======
-      <class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes">
->>>>>>> refs/remotes/origin/Kenssy
-=======
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
->>>>>>> refs/heads/Yessy
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="Filtro"/>
-=======
-          <include name="afterClass"/>
-          <include name="detalhes"/>
->>>>>>> refs/remotes/origin/Kenssy
-=======
           <include name="editar"/>
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Yessy
           <include name="beforeClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="TFPEntrar"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="login"/>
->>>>>>> refs/remotes/origin/Yessy
-=======
-          <include name="resultadoFinalParte2"/>
-          <include name="resultadoFinalParte1"/>
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Yessy
           <include name="afterClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="resultadoDoAbaParte1"/>
-=======
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/Fernando
-=======
-          <include name="criar"/>
->>>>>>> refs/heads/Yessy
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
-=======
-      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPExcluir -->
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
->>>>>>> refs/heads/Yessy
     </classes>
-  </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

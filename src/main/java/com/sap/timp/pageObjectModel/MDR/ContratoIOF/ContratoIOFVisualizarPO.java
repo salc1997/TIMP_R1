@@ -83,36 +83,36 @@ public class ContratoIOFVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[@id=\"validityOf\"]")
 	public WebElement datavi;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Contrato No.\"]")
+	@FindBy(xpath = "//div[@id=\"contractNumber\"]/div/div/input")
 	public WebElement contratoed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Código da Receita\"]")
+	@FindBy(xpath = "//div[@id=\"revenueCode\"]/div/div[1]/div/input")
 	public WebElement codigoreceitaed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de Pessoa\"]")
+	@FindBy(xpath = "//div[@id=\"personType\"]/div/div[1]/div/input")
 	public WebElement tipopessoaed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher CPF\"]")
+	@FindBy(xpath = "//div[@id=\"cpf\"]/div/div/input")
 	public WebElement cpfed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Variação\"]")
+	@FindBy(xpath = "//div[@id=\"variation\"]/div/div/input")
 	public WebElement variacaoed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Razão Social\"]")
+	@FindBy(xpath = "//div[@id=\"socialReason\"]/div/div/input")
 	public WebElement razaosocialed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Periodicidade\"]")
+	@FindBy(xpath = "//div[@id=\"periodicity\"]/div/div/div[1]/input")
 	public WebElement periodicidadeed;
 	
-	@FindBy(xpath = "//span[@id=\"coin\"]")
+	@FindBy(xpath = "//div[@id=\"coin\"]/div/div/input")
 	public WebElement moedaed;
 	
-	@FindBy(xpath = "//span[@id=\"contractValue\"]")
+	@FindBy(xpath = "//div[@id=\"contractValue\"]/div/div/input")
 	public WebElement valordecontratoed;
 	
-	@FindBy(xpath = "//span[@id=\"validityOf\"]")
+	@FindBy(xpath = "//div[@id=\"validFrom\"]/div/div/input")
 	public WebElement dataed;
-	
+
 //	@FindBy(xpath ="//*[@id=\"table\"]/div/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/ul/li[2]/span[2]")
 //	public WebElement visualizar;
 	
@@ -146,23 +146,30 @@ public class ContratoIOFVisualizarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		//visualizar
-		/*
-		String empresavisualizar = empresavi.getText();
-		String pagamentovisualizar = pagamentovi.getText();
-		String codigocontabilizacaovisualizar = codigocontabilizacaovi.getText();
-		String descricaovisualizar = descricaopadraovi.getText();
-		String tributovisualizar = tributovi.getText();
-		String tipotributovisualizar= tipotributovi.getText();
+		
+		String contratovisualizar = contratovi.getText();
+		String codigoreceitavisualizar = codigoreceitavi.getText();
+		String tipopessoavisualizar = tipopessoavi.getText();
+		String cpfvisualizar = cpfvi.getText();
+		String variacaovisualizar =variacaovi.getText();
+		String razaosocialvisualizar= razaosocialvi.getText();
+		String periodicidadevisualizar = periodicidadevi.getText();
+		String moedavisualizar = moedavi.getText();
+		String valordecontratovisualizar = valordecontratovi.getText();
 		String datavisualizar = datavi.getText();
 				
-		System.out.println(empresavisualizar);
-		System.out.println(pagamentovisualizar);
-		System.out.println(codigocontabilizacaovisualizar);
-		System.out.println(descricaovisualizar);
-		System.out.println(tributovisualizar);
-		System.out.println(tipotributovisualizar);
+		System.out.println(contratovisualizar);
+		System.out.println(codigoreceitavisualizar);
+		System.out.println(tipopessoavisualizar);
+		System.out.println(cpfvisualizar);
+		System.out.println(variacaovisualizar);
+		System.out.println(razaosocialvisualizar);
+		System.out.println(periodicidadevisualizar);
+		System.out.println(moedavisualizar );
+		System.out.println(valordecontratovisualizar);
 		System.out.println(datavisualizar);
-	*/
+	
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
@@ -195,36 +202,48 @@ public class ContratoIOFVisualizarPO extends TestBaseSteven{
 		//editar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
-		sleep(2000);
-		/*
-		String empresaeditar = empresaed.getText();
-		String pagamentoeditar = pagamentoed.getAttribute("value");
-		String codigocontabilizacaoeditar = codigocontabilizacaoed.getAttribute("value");
-		String descricaoeditar = descricaopadraoed.getAttribute("value");
-		String tributoeditar = tributoed.getAttribute("value");
-		String tipotributoeditar= tipotributoed.getAttribute("value");
-		String dataeditar = dataed.getAttribute("value");
+		//attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
+		sleep(7000);
+	
+		String contratoeditar = contratoed.getAttribute("Value");
+		String codigoreceitaeditar = codigoreceitaed.getAttribute("Value");
+		String tipopessoaeditar = tipopessoaed.getAttribute("Value");
+		String cpfeditar = cpfed.getAttribute("Value");
+		String variacaoeditar =variacaoed.getAttribute("Value");
+		String razaosocialeditar= razaosocialed.getAttribute("Value");
+		String periodicidadeeditar = periodicidadeed.getAttribute("Value");
+		String moedaeditar = moedaed.getAttribute("Value");
+		String valordecontratoeditar = valordecontratoed.getAttribute("Value");
+		String dataeditar = dataed.getAttribute("Value");
 				
-		System.out.println(empresaeditar);
-		System.out.println(pagamentoeditar);
-		System.out.println(codigocontabilizacaoeditar);
-		System.out.println(descricaoeditar);
-		System.out.println(tributoeditar);
-		System.out.println(tipotributoeditar);
+		System.out.println(contratoeditar);
+		System.out.println(codigoreceitaeditar);
+		System.out.println(tipopessoaeditar);
+		System.out.println(cpfeditar);
+		System.out.println(variacaoeditar);
+		System.out.println(razaosocialeditar);
+		System.out.println(periodicidadeeditar);
+		System.out.println(moedaeditar);
+		System.out.println(valordecontratoeditar);
 		System.out.println(dataeditar);
+	
+	
 	
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
-		sucesso.add(empresaeditar.equals(empresavisualizar));
-		sucesso.add(pagamentoeditar.equals(pagamentovisualizar));
-		sucesso.add(codigocontabilizacaoeditar.equals(codigocontabilizacaovisualizar));
-		sucesso.add(descricaoeditar.equals(descricaovisualizar));
-		sucesso.add(tributoeditar.equals(tributovisualizar));
-		sucesso.add(tipotributoeditar.contains(tipotributovisualizar));
+		sucesso.add(contratoeditar.equals(contratovisualizar));
+		sucesso.add(codigoreceitaeditar.equals(codigoreceitavisualizar));
+		sucesso.add(tipopessoaeditar.equals(tipopessoavisualizar));
+		sucesso.add(cpfeditar.equals(cpfvisualizar));
+		sucesso.add(variacaoeditar.equals(variacaovisualizar));
+		sucesso.add(razaosocialeditar.contains(razaosocialvisualizar));
+		sucesso.add(periodicidadevisualizar.equals(periodicidadeeditar));
+		sucesso.add(moedavisualizar.equals(moedaeditar));
+		sucesso.add(valordecontratovisualizar.equals(valordecontratoeditar));
 		sucesso.add(datavisualizar.equals(dataeditar));
-		*/
-		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
+		
+	
+		//ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
 		//System.out.println(sucesso);	
 		return sucesso;

@@ -78,7 +78,7 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 	public WebElement biblioteca;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement no;
+	public WebElement nao;
 	
 	
 	public RegistroM230CriarPO() {
@@ -237,28 +237,23 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 		sim.click();
 		sleep(6000);
 		
-		waitExpectElement(biblioteca);
-		sleep(2000);
+	//	waitExpectElement(biblioteca);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(4000);
 		
 		
 		
-		if (tc2 == true) {
+		sleep(6000);
+		
 
-
-			/*no.click();
-			sleep(2000);*/
-
-		}else if (tq1==true ) {
-			no.click();
-			sleep(2000);
-			
-		}else {
-			/*no.click();
-			sleep(2000);*/
+		int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			nao.click();
 		}
+		
 		
 		sleep(4000);
 		waitExpectElement(siguiente);

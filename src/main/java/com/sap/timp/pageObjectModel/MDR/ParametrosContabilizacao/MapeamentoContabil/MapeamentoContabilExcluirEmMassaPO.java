@@ -29,8 +29,11 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
 	public WebElement filialO;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"][3]/div/div/label/span")
+	public WebElement filialO1;
 	
 	@FindBy(xpath = "//*[@id=\"adjustCode-button\"]")
 	public WebElement ajuste;
@@ -81,6 +84,20 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBaseSteven {
 	
 	public boolean criar() {
 		
+		System.out.println("---------- Id Anterior --------- " );
+		String url = driver.getCurrentUrl();
+
+		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
+			tp1 = true;
+		}
 		sleep(2000);
 		parametro.click();
 		sleep(1000);
@@ -120,11 +137,27 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBaseSteven {
 		
 		sleep(1000);
 		ajuste.click();
-		waitExpectElement(primero);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		codigo.click();
-		sleep(1000);
+		
+		if (tp1 == true) {
+
+
+			WebElement codi = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][4]/div[1]/label/span"));
+
+			codi  .click();
+			sleep(2000);
+
+		}else {
+			WebElement codi = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[1]/label/span"));
+
+			codi  .click();
+			sleep(2000);
+
+			
+		}
+		
 		aceitar.click();
 		
 		sleep(1000);
@@ -149,16 +182,32 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBaseSteven {
 		
 		filial.click();
 		sleep(1000);
-		filialO.click();
-		filialO.sendKeys(Keys.ESCAPE);
+		filialO1.click();
+		filialO1.sendKeys(Keys.ESCAPE);
 		
 		sleep(1000);
 		ajuste.click();
-		waitExpectElement(primero);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		codigo1.click();
-		sleep(1000);
+		
+		if (tp1 == true) {
+
+
+			WebElement codi = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][4]/div[1]/label/span"));
+
+			codi  .click();
+			sleep(2000);
+
+		}else {
+			WebElement codi = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][3]/div[1]/label/span"));
+
+			codi  .click();
+			sleep(2000);
+
+			
+		}
+		sleep(2000);
 		aceitar.click();
 		
 		sleep(2000);

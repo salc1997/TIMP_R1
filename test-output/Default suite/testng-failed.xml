@@ -3,25 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
-=======
-      <class name="com.timp.test.TPC.ParâmetrosGeraisCriar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefasGatewayAutomatico">
         <methods>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
+          <include name="irCalendario"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
-=======
-      </class> <!-- com.timp.test.TPC.ParâmetrosGeraisCriar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasGatewayAutomatico -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

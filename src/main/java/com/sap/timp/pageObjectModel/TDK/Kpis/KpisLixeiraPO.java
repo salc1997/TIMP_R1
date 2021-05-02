@@ -113,7 +113,7 @@ public class KpisLixeiraPO extends TestBaseSteven{
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		String idRegistro = idObter("KpisCriar");
 
 		System.out.println("Ultimo registro: " + idRegistro);

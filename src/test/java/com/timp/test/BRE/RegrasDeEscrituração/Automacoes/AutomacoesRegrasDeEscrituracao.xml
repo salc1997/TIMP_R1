@@ -27,6 +27,9 @@
 
 			<class
 				name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoRelacionamento"></class>
+			
+			<class
+				name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados"></class>
 
 			<class
 				name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoExcluir"></class>

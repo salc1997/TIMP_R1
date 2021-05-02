@@ -44,7 +44,7 @@ public class TarefasGatewayAutomatico extends TestBaseMassiel{
 
 	}
 
-	@Test(priority = 1)
+/*	@Test(priority = 1)
 	public void BPMAEntrar() {
 		 acessarBPMA.acessarBPMA();
 		
@@ -74,7 +74,7 @@ public class TarefasGatewayAutomatico extends TestBaseMassiel{
 		}
 	}
  	
-	
+	*/
 	@Test(priority = 5)
 	public void CalendarioEntrar() {
 		acessarCalendarPO.acessarCalendar();

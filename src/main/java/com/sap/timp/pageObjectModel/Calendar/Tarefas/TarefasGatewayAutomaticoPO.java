@@ -758,8 +758,33 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		fecharCalendario.click();
-		sleep(4000);
+		
+		fecharPanel.click();
+		sleep(2000);
+		
+	//	fecharCalendario.click();
+	//	sleep(4000);
+		
+		abrirCalendario.click();
+		sleep(3000);
+		waitExpectXpath("//div[@class=\"day\"][1]");
+		sleep(2000);
+		
+		 diaTarefa = diaActual();
+		
+		System.out.println("Dia creada Tarefa: "+diaTarefa);
+		diaTarefaCalendario = driver.findElement(
+				By.xpath("//div[@class=\"dates-wrapper\"]/div[@date=\""+diaTarefa+"\"][1]"));
+		
+
+		diaTarefaCalendario.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		fecharPanel.click();
+		sleep(2000);
 		
 		actionsMoveToElementElement(pesquisarBPMA);
 		sleep(4000);

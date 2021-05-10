@@ -1219,7 +1219,7 @@ public class TarefasDeManualAbaPrazoPO extends TestBaseMassiel{
 			sleep(3000);
 			
 			sim.click();
-			sleep(8000);
+			sleep(10000);
 			
 
 			lixeriaProceso.click();

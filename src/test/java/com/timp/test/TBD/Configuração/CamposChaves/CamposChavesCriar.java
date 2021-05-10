@@ -43,7 +43,7 @@ public class CamposChavesCriar extends TestBaseSteven {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void criar() {
 
 		boolean sucesso = camposChavesCriarPO.criar();

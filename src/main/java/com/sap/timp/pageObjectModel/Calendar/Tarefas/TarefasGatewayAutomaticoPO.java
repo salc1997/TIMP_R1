@@ -190,6 +190,17 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
 		public WebElement fecharCalendario;
 		
+		//*******************LIXERIA************
+
+	
+				
+		@FindBy(xpath = "//span[text()=\"Lixeira\"]")
+		public WebElement lixeria;
+
+		@FindBy(xpath = "//span[text()=\"Lixeira de Processos\"]")
+		public WebElement lixeriaProceso;
+				
+		
 
 	public TarefasGatewayAutomaticoPO() {
 		PageFactory.initElements(driver, this);
@@ -300,7 +311,7 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		editarAutomatico.click();
 		sleep(2000);
 		
-		nomeAutomatico.sendKeys("Gateway automático");
+		nomeAutomatico.sendKeys("Gateway automático2");
 		sleep(2000);
 		
 		String txtnomeAutomatico = nomeAutomatico.getText();
@@ -554,6 +565,7 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 			
 			String idAtivadorProcesosNuevo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
 			System.out.println( idAtivadorProcesosNuevo); 
+			idInserir("idAtivadorProcesosNuevo",idAtivadorProcesosNuevo);
 			
 			double idDD = Integer.valueOf(idAtivadorProcesos); 
 			double idBDD = Integer.valueOf(idAtivadorProcesosNuevo);
@@ -758,41 +770,17 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+	
 		
-		fecharPanel.click();
-		sleep(2000);
-		
-	//	fecharCalendario.click();
-	//	sleep(4000);
-		
-		abrirCalendario.click();
-		sleep(3000);
-		waitExpectXpath("//div[@class=\"day\"][1]");
-		sleep(2000);
-		
-		 diaTarefa = diaActual();
-		
-		System.out.println("Dia creada Tarefa: "+diaTarefa);
-		diaTarefaCalendario = driver.findElement(
-				By.xpath("//div[@class=\"dates-wrapper\"]/div[@date=\""+diaTarefa+"\"][1]"));
-		
-
-		diaTarefaCalendario.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		fecharPanel.click();
-		sleep(2000);
-		
-		actionsMoveToElementElement(pesquisarBPMA);
+		fecharCalendario.click();
 		sleep(4000);
+		
+		
 		
 		pesquisarBPMA.click();
 		sleep(2000);
 		
-		pesquisarBPMA.sendKeys("Gateway automático");
+		pesquisarBPMA.sendKeys("Gateway automático2");
 		pesquisarBPMA.sendKeys(Keys.ENTER);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -816,19 +804,187 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		System.out.println("Nombre Proceso: "+ nombreProceso); 
 		sleep(2000);
 		
-		sucesso.add(nombre.contains("Gateway automático"));
+		sucesso.add(nombre.contains("Gateway automático2"));
 		sucesso.add(status.contains("Concluida"));
 		sucesso.add(nombreProceso.contains("PRUEBA TESTEAUTOMATIZADO TAREFAS GATEWAY AUTOMATICO MASSIEL"));
 		
 		
-		/*sleep(2000);
+		sleep(2000);
 		menu.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);*/
+		sleep(2000);
 		
 		System.out.println(sucesso);
 		return sucesso;		
+	}
+	
+	public ArrayList<Boolean>  BPMA() {
+		
+		System.out.println(" PROCESO");
+
+		procesos.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		pesquisarBPMA.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idRegistro = idObter("idProcesoNegocio");
+		
+		pesquisarBPMA.sendKeys(idRegistro);
+		sleep(2000);
+		pesquisarBPMA.sendKeys(Keys.ENTER);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
+
+		menu.click();
+		sleep(1000);
+		excluir.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(9000);
+		
+		sim.click();
+		sleep(3000);
+		
+		procesos.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+
+		
+		//verificando que fue a lixeria
+		
+		lixeria.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		int rowsl = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String idl = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rowsl+"]/div[5]/div")).getText();
+		
+		int idll = convertToInt(idl);
+		int id2 = convertToInt(idRegistro);
+
+		if (idll == id2) {
+			sucesso.add(true);
+		}
+		
+		System.out.println( sucesso);
+		
+		System.out.println("ACTIVADOR DE PROCESO");
+	
+		ativadorProcesos.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idRegistro2 = idObter("idAtivadorProcesosNuevo");
+		
+		pesquisarBPMA.sendKeys(idRegistro2);
+		sleep(2000);
+		pesquisarBPMA.sendKeys(Keys.ENTER);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idPro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[5]/div")).getText();
+		System.out.println(idPro);
+
+		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div"));
+		WebElement excluir2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Desativar Configuração\"]"));
+		
+		
+				
+		actionsMoveToElementElement(menu2);
+		sleep(4000);
+
+		menu2.click();
+		sleep(1000);
+		
+		excluir2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		WebElement menu3 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div"));
+		WebElement excluir3 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		
+	
+		actionsMoveToElementElement(menu3);
+		sleep(4000);
+
+		menu3.click();
+		sleep(1000);
+		
+		excluir3.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		sim.click();
+		sleep(4000);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		
+		waitExpectElement(lixeriaProceso);
+		sleep(4000);
+		
+		lixeriaProceso.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		primeira.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String idAtivadorProcesosl = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
+		System.out.println( idAtivadorProcesosl);
+		
+		
+		int id1l = convertToInt(idAtivadorProcesosl);
+		int id2l = convertToInt(idPro);
+		System.out.println(id1l);
+		System.out.println(id2l);
+		
+		if (id1l == id2l) {
+			sucesso.add(true);
+		}
+		
+
+		//verificando que fue a lixeria
+		
+		System.out.println( sucesso);
+		return sucesso;
 	}
 	
 }

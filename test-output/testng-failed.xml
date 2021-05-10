@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasGatewayAutomatico">
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefasDeManualAbaPrazo">
         <methods>
+          <include name="CalendarioEntrar"/>
+          <include name="Lixeria"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="irTFP"/>
+          <include name="TFPEntrar"/>
           <include name="irCalendario"/>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="BPMAEntrar2"/>
         </methods>
-      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasGatewayAutomatico -->
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasDeManualAbaPrazo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

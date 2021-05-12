@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TabelaDeDetalhamentosParaRegistro11(failed)">
     <classes>
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasDeManualAbaPrazo">
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11Visualizar">
         <methods>
-          <include name="CalendarioEntrar"/>
-          <include name="Lixeria"/>
-          <include name="criar"/>
           <include name="beforeClass"/>
-          <include name="irTFP"/>
-          <include name="TFPEntrar"/>
-          <include name="irCalendario"/>
           <include name="afterClass"/>
-          <include name="BPMAEntrar2"/>
+          <include name="visualizar"/>
         </methods>
-      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasDeManualAbaPrazo -->
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeDetalhamentosParaRegistro11.TabelaDeDetalhamentosParaRegistro11Visualizar -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TabelaDeDetalhamentosParaRegistro11(failed) -->
+  <test thread-count="5" name="TabelaDeOutrosCreditos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosExcluirEmMassa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="excluirEmMassa"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeOutrosCreditos.TabelaDeOutrosCreditosExcluirEmMassa -->
+    </classes>
+  </test> <!-- TabelaDeOutrosCreditos(failed) -->
+</suite> <!-- Failed suite [Suite] -->

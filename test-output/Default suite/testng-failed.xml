@@ -3,111 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
-=======
-      <class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar">
->>>>>>> refs/remotes/origin/Yessy
-=======
-=======
->>>>>>> refs/heads/Fernando
-      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
-<<<<<<< HEAD
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes">
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/Fernando
-=======
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
->>>>>>> refs/heads/Yessy
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="Filtro"/>
-=======
->>>>>>> refs/heads/Yessy
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="TFPEntrar"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="login"/>
->>>>>>> refs/remotes/origin/Yessy
-=======
-=======
-          <include name="campoOutput"/>
-          <include name="criarConfiguracionConfiguracao2"/>
->>>>>>> refs/heads/Fernando
-          <include name="resultadoFinalParte2"/>
-          <include name="resultadoFinalParte1"/>
-<<<<<<< HEAD
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/remotes/origin/Kenssy
-=======
-          <include name="relacionamentoTotalizadorSubperiodoFixoReplicar"/>
-          <include name="adicionarEntradaManual2"/>
->>>>>>> refs/heads/Fernando
-=======
->>>>>>> refs/heads/Yessy
           <include name="afterClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="detalhes"/>
-=======
-          <include name="criarConfiguracionConfiguracao"/>
-          <include name="entradaManual"/>
->>>>>>> refs/heads/Fernando
           <include name="beforeClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="criarConfiguracaoHierarquia2"/>
-          <include name="configurarConfiguracaoRelacionamiento"/>
-          <include name="executar2"/>
-          <include name="executar1"/>
-          <include name="criarConfiguracao"/>
->>>>>>> refs/heads/Fernando
-          <include name="resultadoDoAbaParte1"/>
-=======
->>>>>>> refs/remotes/origin/Kenssy
-=======
-          <include name="criar"/>
->>>>>>> refs/heads/Yessy
+          <include name="crescenteEDecrescente"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
-=======
-      </class> <!-- com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-=======
->>>>>>> refs/heads/Fernando
-      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
-<<<<<<< HEAD
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/heads/Fernando
-=======
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
->>>>>>> refs/heads/Yessy
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

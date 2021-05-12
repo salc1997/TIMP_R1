@@ -75,7 +75,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+	//	actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 
 		menuC.click();
 		sleep(3000);
@@ -89,14 +89,14 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		WebElement valorPrimeiroE = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/label/span"));
 		WebElement aplicar = driver.findElement(By.xpath("//button[text()=\"Aplicar\"]"));
 		if (valorPrimeroI == 0) {
-			sleep(1000);
+			sleep(25000);
 			valorPrimeiroE.click();
 			sleep(2000);
 			aplicar.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+			//actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 
 			menuC.click();
 			waitExpectXpath("//*[@id=\"column-filters-apply\"]");
@@ -186,7 +186,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 	
 	public ArrayList<Boolean> decrescente() {
 
-		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+	//	actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 		sleep(2000);
 		
 		menuC.click();
@@ -202,9 +202,9 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 		for (int i = 0; i < 10; i++) {
 			rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
-			actionsMoveToElementXpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: "+rows+"\")]");
-			waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-
+	//		actionsMoveToElementXpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: "+rows+"\")]");
+		//	waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+			sleep(5000);
 		}
 		
 		sleep(5000);
@@ -213,7 +213,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		
-		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+	//	actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 		
 		rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
 		

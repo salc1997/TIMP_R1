@@ -429,27 +429,18 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		sim.click();
 		sleep(6000);
 		
-		waitExpectElement(biblioteca);
-		sleep(2000);
+	//	waitExpectElement(biblioteca);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(4000);
 		
 		
 		
-		if (tc2 == true) {
-
-
-			/*no.click();
-			sleep(2000);*/
-
-		}else if (tq1==true ) {
+		int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
 			no.click();
-			sleep(2000);
-			
-		}else {
-			/*no.click();
-			sleep(2000);*/
 		}
 		
 		sleep(4000);

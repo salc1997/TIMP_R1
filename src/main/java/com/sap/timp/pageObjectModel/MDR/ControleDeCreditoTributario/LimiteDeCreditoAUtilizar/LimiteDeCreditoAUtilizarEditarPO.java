@@ -102,7 +102,7 @@ public class LimiteDeCreditoAUtilizarEditarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		String valor = limitedeutilizacaodecredito.getAttribute("value");
 
@@ -132,7 +132,7 @@ public class LimiteDeCreditoAUtilizarEditarPO extends TestBaseSteven{
 			
 		waitExpectElement(limitedeutilizacaodecredito);
 		
-		sleep(2000);
+		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String novoTexto=limitedeutilizacaodecredito.getAttribute("value");

@@ -43,8 +43,8 @@ public class TarefasGatewayAutomatico extends TestBaseMassiel{
 		loginTC.login();
 
 	}
-
-	@Test(priority = 1)
+  
+ 	@Test(priority = 1)
 	public void BPMAEntrar() {
 		 acessarBPMA.acessarBPMA();
 		
@@ -74,7 +74,7 @@ public class TarefasGatewayAutomatico extends TestBaseMassiel{
 		}
 	}
  	
-	
+
 	@Test(priority = 5)
 	public void CalendarioEntrar() {
 		acessarCalendarPO.acessarCalendar();
@@ -90,15 +90,15 @@ public class TarefasGatewayAutomatico extends TestBaseMassiel{
 		}
 	}
  	
- 	/*@Test(priority = 5)
+ 	@Test(priority = 7)
  	public void BPMAEntrarDeNuevo() {
  		 acessarBPMA.acessarBPMA();
  	}
  	
- 	@Test(priority = 6)
+ 	@Test(priority = 8)
  	public void lixeiraProcesoNegocio() {
- 		tarefasMultiplasEstagiosPO.lixeiraProcesoNegocio();
- 	}*/
+ 		tarefasGatewayAutomaticoPO.BPMA();
+ 	}
  	
  	
 

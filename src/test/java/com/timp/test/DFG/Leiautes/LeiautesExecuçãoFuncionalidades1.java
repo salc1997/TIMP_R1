@@ -40,7 +40,7 @@ public class LeiautesExecuçãoFuncionalidades1 extends TestBaseSteven {
 
 	}
 
-	/*@Test(priority = 2)
+	@Test(priority = 2)
 	public void criar() {
 		boolean sucesso = leiautesExecuçãoFuncionalidadesPO.criar();
 		assertTrue(sucesso, Criar);			
@@ -61,7 +61,7 @@ public class LeiautesExecuçãoFuncionalidades1 extends TestBaseSteven {
 
 		/*boolean sucesso1 = leiautesExecuçãoFuncionalidadesPO.Agrupamiento();
 		assertTrue(sucesso1, Criar);	*/
-/*		leiautesExecuçãoFuncionalidadesPO.Agrupamiento();
+		leiautesExecuçãoFuncionalidadesPO.Agrupamiento();
 
 	}
 	
@@ -111,7 +111,7 @@ public class LeiautesExecuçãoFuncionalidades1 extends TestBaseSteven {
 
 	}
 	
-	*/
+
 	@Test(priority = 9)
 	public void CriarConfiguracion() {
 

@@ -50,14 +50,17 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		boolean tq1 = false;
 		boolean tp1 = false;
 		boolean tc2 = false;
+		boolean tq2 = false;
 
 
 		if (url.contains("tq1")) {
 			tq1 = true;
 		}else if (url.contains("tc2")) {
 			tc2 = true;
-		}else {
+		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else {
+			tq2 = true;
 		}
 		
 		aba.click();
@@ -188,7 +191,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		
 
-		if (tq1 == true) {
+		if (tq1 == true || tq2 == true){
 			WebElement raiz1 = driver.findElement(By.xpath("//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[1]/div/div[1]"));
 														  
 			raiz1.click();

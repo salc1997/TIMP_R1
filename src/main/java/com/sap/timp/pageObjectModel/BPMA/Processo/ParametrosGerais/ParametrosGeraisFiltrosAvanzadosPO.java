@@ -34,6 +34,8 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
 	public WebElement opc;
 	
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	public WebElement opc1;
 	@FindBy(xpath = "//*[@id=\"creationDate\"]/div/div[1]/input")
 	public WebElement filtroDataCriacao;
 	@FindBy(xpath = "//*[@id=\"modificationDate\"]/div/div[1]/input")
@@ -100,8 +102,9 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 		
 		usuarioModificao.click();
 		sleep(1000);
-		String usuarioModificaoText = opc.getText();
-		opc.click();
+		String usuarioModificaoText = opc1.getText();
+		usuarioModificaoText = usuarioModificaoText.replace(" ","");
+		opc1.click();
 		sleep(1000);
 		//String empresaText = opcEmpresa.getText();
 		System.out.println("USUARIO MODIFICAO: "+ usuarioModificaoText);
@@ -120,8 +123,8 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
 							+ rows + "]/div[11]/div"))
 					.getText();
-			System.out.println(textFiltroUsuarioModificao + " Usuario Criacao Filtro");
-			sucesso.add(usuarioModificaoText.contains(textFiltroUsuarioModificao));
+			System.out.println(textFiltroUsuarioModificao + " Usuario Modificado Filtro");
+			sucesso.add(textFiltroUsuarioModificao.contains(usuarioModificaoText));
 
 			f = f + 1;
 		}

@@ -18,7 +18,8 @@ public class ConfiguracoesVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"container-tabs\"]/div[2]")
 	public WebElement configuracoes;
 	
-	@FindBy(xpath = "//div[@class=\"baseTabs-view -view-wrapper  selected\"]/div/div/div/div/div/div[2]/div[1]")
+	
+	@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]/div/div[1]")
 	public WebElement raiz2;
 	
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")

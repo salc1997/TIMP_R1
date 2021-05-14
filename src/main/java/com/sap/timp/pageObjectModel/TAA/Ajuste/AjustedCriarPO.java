@@ -92,6 +92,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
+		boolean tq2  = false;
 
 		if (url.contains("tq1")) {
 			tq1 = true;
@@ -99,6 +100,8 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		sleep(2000);
@@ -110,7 +113,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		if (tq1 == true) {
+		if (tq1 == true || tq2 == true) {
 
 			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[1]"));
 			
@@ -190,7 +193,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		if (tq1 == true) {
+		if (tq1 == true|| tq2 == true) {
 
 			WebElement ufOPC = driver.findElement(By.xpath("//li[text()=\"SP\"]"));
 			
@@ -222,7 +225,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		 
-		if (tq1 == true) {
+		if (tq1 == true|| tq2 == true){
 
 			WebElement filialOPC = driver.findElement(By.xpath("//li[text()=\"0001\"]"));
 			

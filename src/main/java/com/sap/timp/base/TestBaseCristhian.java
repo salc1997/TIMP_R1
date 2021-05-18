@@ -36,8 +36,8 @@ public class TestBaseCristhian extends TestBaseSteven{
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(tq2);
-
+		driver.get(tc2);
+		
 		return driver;
 	}
 	

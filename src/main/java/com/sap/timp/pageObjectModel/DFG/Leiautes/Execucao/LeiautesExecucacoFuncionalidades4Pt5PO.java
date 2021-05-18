@@ -1662,11 +1662,11 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 //		}
 		
 		System.out.println("Versão: " + versaoT.equals("1.0"));
-		System.out.println("Nome: " + nomeT.contains("Teste Automatizado"));
-		System.out.println("Tipo: " + tipoTE.contains("ALTER E-SOCIAL S1200"));
+		System.out.println("Nome: " + nomeT.contains("Teste Automatizado kenssy"));
+		//System.out.println("Tipo: " + tipoTE.contains("ALTER E-SOCIAL S1200"));
 		
 		sucesso.add(versaoT.equals("1.0"));
-		sucesso.add(nomeT.contains("Teste Automatizado"));
+		sucesso.add(nomeT.contains("Teste Automatizado kenssy"));
 		if (tc2==true) {
 			sucesso.add(tipoTE.contains("DCTF"));
 		}else {

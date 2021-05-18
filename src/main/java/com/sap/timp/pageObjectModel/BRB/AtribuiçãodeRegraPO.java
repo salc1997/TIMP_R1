@@ -86,6 +86,7 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
+		boolean tq2  = false;
 
 		if (url.contains("tq1")) {
 			tq1 = true;
@@ -93,6 +94,8 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		if (tc2==true) {
@@ -213,7 +216,7 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		if(url.contains("tc2") || url.contains("tp1")) {
+		if(url.contains("tc2") || url.contains("tp1")|| url.contains("tq2")) {
 			inputColumna = driver.findElement(By.xpath("//li[@column-id=\"n0\"]/div/div/div[@id=\"chead\"]/span"));
 			inputColumna.click();
 			sleep(2000);

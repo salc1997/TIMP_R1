@@ -177,7 +177,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		
 		String idRegistro = idObter3();
 		
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+	//	actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
 		sleep(2000);
 
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));

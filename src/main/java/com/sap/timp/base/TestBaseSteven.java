@@ -45,6 +45,10 @@ public class TestBaseSteven {
 	protected String tq1 = "http://as1-100-01-tq1:8000/timp/login/#/login";
 
 	protected String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
+	
+	protected String tq2 = "http://as1-100-01-tq2:8000/timp/login/#/login";
+	
+	protected String td2 = "http://as1-100-01-td2:8000/timp/login/#/login";
 
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";

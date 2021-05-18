@@ -288,6 +288,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		
 		if (url.contains("tc2")) {
@@ -296,6 +297,8 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		raiz.click();
@@ -339,7 +342,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		tipo.click();
 		sleep(2000);
 		
-		if (tq1 == true) {
+		if (tq1 == true ||tq2 == true) {
 			opcTipo.click();
 			sleep(1000);
 //			String tipoT = opcTipo.getText();
@@ -365,7 +368,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		grupoEstrutura.click();
 		sleep(1000);
 		
-		if (tq1 == true) {
+		if ((tq1 == true ||tq2 == true)) {
 			opcGrupoEstructura.click();
 			sleep(1000);
 		}else if (tc2 ==true) {
@@ -394,7 +397,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		
 		
-		if (tq1 == true && tc2 == true) {
+		if (tq1 == true && tc2 == true||tq2 == true) {
 			sleep(3000);
 			//waitExpectElement(gravar);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

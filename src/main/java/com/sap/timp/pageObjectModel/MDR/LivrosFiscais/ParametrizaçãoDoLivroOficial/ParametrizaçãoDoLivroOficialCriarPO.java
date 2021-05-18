@@ -126,6 +126,9 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//div[@id=\"adjustmentStructure11\"]/div/div/div[2]")
 	public WebElement idAjuste;
 	
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure15\"]/div/div/div[2]")
+	public WebElement idAjuste11;
+	
 	@FindBy(xpath = "//div[@id=\"headerStructure\"]/div/div/div[2]")
 	public WebElement estructuraDeCabecalho;
 	
@@ -444,6 +447,13 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		sleep(1000);
 		body.click();
 		sleep(1000);
+		attributeToBeXpath("//div[@id=\"adjustmentStructure15\"]/div/div/div/div[2]/input", "class", "");
+		idAjuste11.click();
+		sleep(2000);
+		opcionCheckbox.click();
+		sleep(1000);
+		body.click();
+		sleep(1000);
 		
 		actionsMoveToElementElement(estructuraDeCabecalho);
 		estructuraDeCabecalho.click();
@@ -520,10 +530,12 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		sleep(1000);
 		btnGravar.click();
 		sleep(2000);
+		sleep(9000);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);		
+		sleep(9000);	
+		sleep(9000);
 
 		btnUltimaPagina.click();
 		

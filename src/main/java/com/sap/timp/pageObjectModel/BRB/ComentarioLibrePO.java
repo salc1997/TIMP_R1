@@ -97,7 +97,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		
 
 		actionsMoveToElementElement(agregar);
-		sleep(2000);
+		sleep(7000);
 		nombre.click();
 		
 		cambiarNombre.click();
@@ -180,7 +180,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		
 
 		sleep(5000);
-		driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
+		//driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

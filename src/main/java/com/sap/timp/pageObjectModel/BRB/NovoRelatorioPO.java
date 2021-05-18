@@ -126,6 +126,7 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		boolean tc2 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
+		boolean tq2 = false;
 		
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -133,6 +134,8 @@ public class NovoRelatorioPO extends TestBaseSteven{
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
@@ -167,6 +170,9 @@ public class NovoRelatorioPO extends TestBaseSteven{
 			grupo.sendKeys("NF Nova");
 			grupo.sendKeys(Keys.ENTER);
 		}else if (tq1==true) {
+			grupo.sendKeys("Nota Fiscal - Nova");
+			grupo.sendKeys(Keys.ENTER);
+		}else if (tq2==true) {
 			grupo.sendKeys("Nota Fiscal - Nova");
 			grupo.sendKeys(Keys.ENTER);
 		}else {

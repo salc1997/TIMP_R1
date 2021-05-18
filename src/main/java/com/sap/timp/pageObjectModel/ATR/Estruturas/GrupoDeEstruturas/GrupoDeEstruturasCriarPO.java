@@ -82,7 +82,7 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 		waitExpectElement(nomedogrupo);
 		sleep(2000);
 	
-		nomedogrupo.sendKeys("Teste ATR  MASSIE");
+		nomedogrupo.sendKeys("Teste ATR  MASS");
 		sleep(2000);
 		estruturadedados.click();
 		sleep(2000);

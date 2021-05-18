@@ -18,17 +18,22 @@ public class RegradeAbasExcluirPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Regras de Abas\"]")
 	public WebElement RegrasdeAbas;
 	
+	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement btnAceitar;
 	
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
+	public WebElement btnPrimeraPagina;
+	
 	public RegradeAbasExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean excluir() {
+
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -46,12 +51,12 @@ public class RegradeAbasExcluirPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		ultimapagina.click();
+		btnPrimeraPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000);	
 		
-		String idRegistro = idObter("RegraDeCampos");
+		String idRegistro = idObter("RegradeAbas");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

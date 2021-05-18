@@ -122,11 +122,11 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[15]");
+	//	actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[15]");
 		
 		rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
 		

@@ -207,6 +207,9 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"advancedSearch2\"]/div/div[1]/div/div/input")
 	public WebElement inputPesquisarId;
 	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement PesquisarId;
+	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash-setting\"]")
 	public WebElement pastaLixeira;
 	
@@ -963,7 +966,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 			btnRaiz2.click();
 		}
 		
-		if(URL.contains("tq1") || URL.contains("tc2")) {
+		if(URL.contains("tq1") || URL.contains("tc2")|| URL.contains("tq2")) {
 			btnRaiz.click();
 		}
 		
@@ -971,14 +974,16 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		btnFiltrosAvancados.click();
-		waitExpectElement(inputPesquisarId);
 		
-		String idRegistro = idObter4();		
-		inputPesquisarId.clear();
-		inputPesquisarId.sendKeys(idRegistro);
-		inputPesquisarId.sendKeys(Keys.ENTER);
+		String idRegistro = idObter4();	
+		
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		sleep(1000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1037,7 +1042,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 			btnRaiz2.click();
 		}
 		
-		if(URL.contains("tq1") || URL.contains("tc2")) {
+		if(URL.contains("tq1") || URL.contains("tc2")|| URL.contains("tq2")) {
 			btnRaiz = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper selected\")]/div/div/div/div/div/div/div[@class=\"folder-collapsed icon icon-font-File-and-Folders icon-Closedfolder\"]"));
 			btnRaiz.click();
 		}

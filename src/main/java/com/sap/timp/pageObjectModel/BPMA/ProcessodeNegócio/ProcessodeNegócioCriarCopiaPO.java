@@ -62,6 +62,8 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
 	@FindBy(xpath = "//span[text()=\"Processo de negócio\"]")
 	public WebElement justi;
 	
@@ -185,7 +187,8 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-
+		no.click();
+		sleep(3000);
 		
 		biblioteca.click();
 		sleep(3000);
@@ -214,7 +217,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		double idD = Integer.valueOf(id); 
 		double idBD = Integer.valueOf(idB);
 		
-		boolean sucesso1 = (Boolean) null;
+		boolean sucesso1 = false;
 		if (idBD > idD) { 
 			sucesso1 = true; 
 		}else { 
@@ -250,10 +253,15 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		no.click();
+		sleep(3000);
+		
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		
 		
 		procesos.click();
 		sleep(3000);

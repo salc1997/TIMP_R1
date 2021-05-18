@@ -31,7 +31,7 @@ public class RegradeAbasCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//li[@tabindex=\"0\" and @id and @class=\"list-item\" and text()=\"ICMS\"]")
 	public WebElement opcionTributo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"SelecionarEmpresa\"]")
+	@FindBy(xpath = "//div[@id=\"rule-company\"]/div/div/div[2]")
 	public WebElement cboEmpresa;
 	
 	@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
@@ -87,6 +87,7 @@ public class RegradeAbasCriarPO extends TestBaseSteven {
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
+		boolean tq2  = false;
 
 		if (url.contains("tq1")) {
 			tq1 = true;
@@ -94,6 +95,8 @@ public class RegradeAbasCriarPO extends TestBaseSteven {
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		sleep(2000);
@@ -141,11 +144,12 @@ public class RegradeAbasCriarPO extends TestBaseSteven {
 		sleep(1000);
 		opcionEmpresa.click();
 		sleep(1000);
-		opcionEmpresa.sendKeys(Keys. ESCAPE);
+		closeSelectTypeCheckbox(cboEmpresa);
+	//	opcionEmpresa.sendKeys(Keys. ESCAPE);
 		sleep(1000);
 		
 		
-		if (tq1 == true || tp1 == true) {
+		if (tq1 == true || tp1 == true || tq2 == true) {
 			
 			cboUf.click();
 			sleep(1000);

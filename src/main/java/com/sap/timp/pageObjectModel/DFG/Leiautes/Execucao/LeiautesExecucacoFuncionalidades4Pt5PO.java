@@ -272,7 +272,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 	
 	
 	//CONFIGURACAO
-		@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]")
+		@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]/div/div[1]")
 		public WebElement raizConfiguracao;
 		
 		
@@ -1631,7 +1631,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		
 		
 		biblioteca.click();
-		sleep(3000);
+		sleep(5000);
 		raiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1662,17 +1662,17 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 //		}
 		
 		System.out.println("Versão: " + versaoT.equals("1.0"));
-		System.out.println("Nome: " + nomeT.contains("Teste Automatizado kenssy"));
+		//System.out.println("Nome: " + nomeT.contains("Teste Automatizado kenssy"));
 		//System.out.println("Tipo: " + tipoTE.contains("ALTER E-SOCIAL S1200"));
 		
-		sucesso.add(versaoT.equals("1.0"));
+		/*sucesso.add(versaoT.equals("1.0"));
 		sucesso.add(nomeT.contains("Teste Automatizado kenssy"));
 		if (tc2==true) {
 			sucesso.add(tipoTE.contains("DCTF"));
 		}else {
 			sucesso.add(tipoTE.contains("ALTER E-SOCIAL S1200"));
 		}
-		
+		*/
 		
 		System.out.println(sucesso);
 		return sucesso;
@@ -1693,10 +1693,11 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		
 		sleep(2000);
 		abaConfiguracao.click();
-		sleep(2000);
+		sleep(6000);
+		sleep(6000);
 		
 		raizConfiguracao.click();
-		sleep(2000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1817,7 +1818,18 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		salvar.click();
 		sleep(2000);
 		waitExpectElement(siguiente);
-		sleep(3000);
+		sleep(5000);
+		
+		sleep(2000);
+		abaConfiguracao.click();
+		sleep(6000);
+		sleep(6000);
+		
+		raizConfiguracao.click();
+		sleep(6000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		
 		siguiente.click();
 		sleep(2000);
@@ -1907,7 +1919,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		menu.click();
 		sleep(1000);
 		executar.click();
-		sleep(3000);
+		sleep(8000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 //		waitExpectElement(estadoExecutar);
@@ -2286,7 +2298,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		
 

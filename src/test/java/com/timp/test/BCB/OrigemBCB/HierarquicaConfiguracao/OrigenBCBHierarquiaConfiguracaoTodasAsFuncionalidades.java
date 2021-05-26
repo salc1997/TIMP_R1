@@ -32,7 +32,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 	
 	@Test(priority = 0)
@@ -96,7 +96,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}	
 	
-	@Test(priority = 7)	
+		@Test(priority = 7)	
 	public void subNivel3() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel3();
 		System.out.println(sucesso);

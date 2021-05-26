@@ -28,7 +28,7 @@ public class RepresentantesLegaisExcluir extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

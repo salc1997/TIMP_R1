@@ -57,8 +57,8 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirPO extends TestBaseFernand
 		
 		// Recargo la pagina
 		driver.navigate().refresh();
-		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		sleep(12000);
+		//waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

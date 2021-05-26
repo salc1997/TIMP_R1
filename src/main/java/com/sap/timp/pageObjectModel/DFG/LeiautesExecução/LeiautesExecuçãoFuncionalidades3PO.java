@@ -405,9 +405,9 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBaseMassiel{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-12\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-12\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -792,7 +792,8 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBaseMassiel{
 			moveToElement(totalRegistrosFilhosTP1, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"][1]/div[1]/div[2]/div[1]/div[2]/div")));
 			sleep(2000);
 		}else {
-			
+			moveToElement(totalRegistrosFilhos, driver.findElement(By.xpath("//div[@id=\"block-list-wrapper\"][1]/div[1]/div[2]/div[1]/div[2]/div")));
+			sleep(2000);
 		}
 		
 		

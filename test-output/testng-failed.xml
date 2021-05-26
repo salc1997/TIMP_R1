@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Prueba11(failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
+      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa">
         <methods>
-          <include name="verBloco5"/>
-          <include name="verBloco2"/>
-          <include name="verBloco3"/>
-          <include name="excluirLeiaute"/>
-          <include name="verBloco1"/>
-          <include name="afterClass"/>
-          <include name="criarConfiguracao"/>
-          <include name="verBloco4"/>
-          <include name="comparar"/>
-          <include name="excluirConfiguracao"/>
+          <include name="excluir"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
-          <include name="executar"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
+      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Prueba11(failed) -->
+  <test thread-count="5" name="Prueba13(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar -->
+    </classes>
+  </test> <!-- Prueba13(failed) -->
+</suite> <!-- Failed suite [Suite] -->

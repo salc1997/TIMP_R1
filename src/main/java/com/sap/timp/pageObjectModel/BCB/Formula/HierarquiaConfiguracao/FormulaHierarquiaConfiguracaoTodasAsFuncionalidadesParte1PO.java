@@ -1170,7 +1170,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		
 		
 		public ArrayList<Boolean> subNivel4() {
-			
+			sleep(10000);
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;

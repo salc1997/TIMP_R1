@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SCANC > SCANC Distribuidoras</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 17 18:46:13 CST 2021</td>
+<td>Started on:</td><td>Thu May 20 19:08:05 CST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>734 seconds (734450 ms)</td>
+<tr><td>Total time:</td><td>836 seconds (836888 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,52 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa.Criar()'><b>Criar</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa</td>
+<td><div><pre>java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+	at com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa.Criar(SCANCDistribuidorasExcluirEmMasa.java:48)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1100325647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1100325647'><pre>java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa.Criar(SCANCDistribuidorasExcluirEmMasa.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>161</td>
+<td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@77102b91</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,40 +121,64 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa.Criar()'><b>Criar</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa</td>
-<td></td>
-<td>160</td>
-<td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@77102b91</td></tr>
-<tr>
 <td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasCriar.criar()'><b>criar</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasCriar</td>
 <td></td>
-<td>104</td>
+<td>129</td>
 <td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasCriar@524f3b3a</td></tr>
 <tr>
 <td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasDetalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasDetalhes</td>
 <td></td>
-<td>68</td>
+<td>73</td>
 <td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasDetalhes@29526c05</td></tr>
 <tr>
 <td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasEditar.editar()'><b>editar</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasEditar</td>
 <td></td>
-<td>105</td>
+<td>130</td>
 <td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasEditar@41e68d87</td></tr>
 <tr>
 <td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluir.excluir()'><b>excluir</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluir</td>
 <td></td>
-<td>79</td>
+<td>113</td>
 <td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluir@2ef14fe</td></tr>
-<tr>
-<td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa.excluirMassa()'><b>excluirMassa</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa</td>
-<td></td>
-<td>28</td>
-<td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@77102b91</td></tr>
 <tr>
 <td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar.visualizar()'><b>visualizar</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar</td>
 <td></td>
-<td>82</td>
+<td>80</td>
 <td>com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar@49ff7d8c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa.excluirMassa()'><b>excluirMassa</b><br>Test class: com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa</td>
+<td><div><pre>java.lang.Throwable: Method SCANCDistribuidorasExcluirEmMasa.excluirMassa()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@77102b91] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace164348172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace164348172'><pre>java.lang.Throwable: Method SCANCDistribuidorasExcluirEmMasa.excluirMassa()[pri:0, instance:com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa@77102b91] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>

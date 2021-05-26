@@ -3,22 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
+      <class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar">
         <methods>
-          <include name="verBloco5"/>
-          <include name="verBloco2"/>
-          <include name="verBloco3"/>
-          <include name="excluirLeiaute"/>
-          <include name="verBloco1"/>
           <include name="afterClass"/>
-          <include name="criarConfiguracao"/>
-          <include name="verBloco4"/>
-          <include name="comparar"/>
-          <include name="excluirConfiguracao"/>
           <include name="beforeClass"/>
-          <include name="executar"/>
+          <include name="visualizar"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
+      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

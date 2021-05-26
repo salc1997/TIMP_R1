@@ -98,7 +98,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(12000);
 		waitExpectElement(campo);
 		sleep(3000);
 		actionsMoveToElementElement(campo);

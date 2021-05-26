@@ -167,8 +167,13 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"value\"]/div/div[2]")
 	public WebElement campoSaida1;
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
-	public WebElement opcCampoSaida1;
+	public WebElement opcCampoSaida11;
 	
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"version\"]/div/div[2]")
+	public WebElement campoSaida11;
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	public WebElement opcCampoSaida1;
 	
 		
 	// SEGUNGO subnivel
@@ -184,6 +189,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement campoSaida2;
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 	public WebElement opcCampoSaida2;
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"version\"]/div/div[2]")
+	public WebElement campoSaida22;
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	public WebElement opcCampoSaida22;
 	
 	@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"2\"]")
 	public WebElement segundoNivel;
@@ -215,6 +225,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 	public WebElement opcCampoSaida3;
 	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div[@id=\"version\"]/div/div[2]")
+	public WebElement campoSaida33;
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	public WebElement opcCampoSaida33;
+	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div/div/div[@id=\"check-previous\"]/div/label/span")
 	public WebElement subPeriodosAnteriores3;
 	
@@ -243,6 +258,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement campoSaida4;
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 	public WebElement opcCampoSaida4;
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div[@id=\"version\"]/div/div[2]")
+	public WebElement campoSaida44;
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	public WebElement opcCampoSaida44;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
 	public WebElement zerado;
@@ -273,6 +293,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	@FindBy(xpath = "//li[@id][text()=\"Campo de saída 2\"][1]")
 	public WebElement opcCampoSaida5;
 	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"version\"]/div/div[2]")
+	public WebElement campoSaida55;
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	public WebElement opcCampoSaida55;
+	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
 	public WebElement zerado5;
 	
@@ -298,6 +323,12 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement campoSaida6;
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcCampoSaida6;
+	
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div[@id=\"version\"]/div/div[2]")
+	public WebElement campoSaida66;
+	@FindBy(xpath = "//li[@id][1]")
+	public WebElement opcCampoSaida66;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][6]/div/div/div[@id=\"check-negative\"]/div/label/span")
 	public WebElement negativo6;
@@ -918,7 +949,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		//sleep(2000);
 		//primerNivel.click();
-		sleep(2000);
+		sleep(3000);
+		
 		
 		campolinha1.click();
 		sleep(2000);
@@ -945,10 +977,17 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		
-		campoSaida1.click();
+		campoSaida11.click();
+		sleep(7000);
+		opcCampoSaida11.click();
 		sleep(3000);
+		
+		campoSaida1.click();
+		sleep(7000);
 		opcCampoSaida1.click();
 		sleep(3000);
+		
+	
 		
 		gravar.click();
 		sleep(3000);
@@ -1066,6 +1105,12 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}
+		
+		campoSaida22.click();
+		sleep(3000);
+		opcCampoSaida22.click();
+		opcCampoSaida22.sendKeys(Keys.ESCAPE);
+		sleep(3000);
 		
 		campoSaida2.click();
 		sleep(3000);
@@ -1197,6 +1242,12 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			sleep(1000);
 		}
 		
+		campoSaida33.click();
+		sleep(3000);
+		opcCampoSaida33.click();
+		opcCampoSaida33.sendKeys(Keys.ESCAPE);
+		sleep(3000);
+		
 		campoSaida3.click();
 		sleep(3000);
 		opcCampoSaida3.click();
@@ -1326,6 +1377,13 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			sleep(1000);
 		}
 		
+		campoSaida44.click();
+		sleep(3000);
+		opcCampoSaida44.click();
+		opcCampoSaida44.sendKeys(Keys.ESCAPE);
+		sleep(3000);
+		
+		
 		campoSaida4.click();
 		sleep(3000);
 		opcCampoSaida4.click();
@@ -1390,7 +1448,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (url.contains("tp1")) {
 			tp1 = true;
 		}
-		
+		sleep(10000);
 		System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
 		sleep(1000);
 		
@@ -1421,6 +1479,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			sleep(1000);
 		}
 		
+		campoSaida55.click();
+		
+		opcCampoSaida55.click();
+		opcCampoSaida55.sendKeys(Keys.ESCAPE);
+		sleep(3000);
+		
+		
+		
 		campoSaida5.click();
 		sleep(3000);
 		if (tc2==true) {
@@ -1436,6 +1502,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			opcCampoSaida5.sendKeys(Keys.ESCAPE);
 			sleep(3000);
 		}
+		
 		zerado5.click();
 		sleep(3000);
 		
@@ -1561,6 +1628,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}
+		
+		campoSaida66.click();
+		sleep(3000);
+		/*opcCampoSaida6.click();
+		opcCampoSaida6.sendKeys(Keys.ESCAPE);
+		*/
+		opcCampoSaida66.click();
+		sleep(3000);
 		
 		campoSaida6.click();
 		sleep(3000);

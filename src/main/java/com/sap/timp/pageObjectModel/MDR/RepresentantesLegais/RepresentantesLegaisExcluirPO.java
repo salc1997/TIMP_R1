@@ -65,7 +65,7 @@ public class RepresentantesLegaisExcluirPO extends TestBaseSteven{
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(2000);
+		sleep(4000);
 		
 		aceitar.click();
 		sleep(2000);

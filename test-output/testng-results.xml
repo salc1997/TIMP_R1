@@ -2,224 +2,224 @@
 <testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-26T20:04:49Z" name="Suite" finished-at="2021-05-26T20:32:08Z" duration-ms="1639326">
+  <suite started-at="2021-05-27T13:15:53Z" name="Suite" finished-at="2021-05-27T13:42:24Z" duration-ms="1590882">
     <groups>
     </groups>
-    <test started-at="2021-05-26T20:04:49Z" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS " finished-at="2021-05-26T20:19:44Z" duration-ms="895398">
+    <test started-at="2021-05-27T13:15:53Z" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS " finished-at="2021-05-27T13:30:02Z" duration-ms="848624">
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@3f57bcad]" started-at="2021-05-26T20:14:22Z" name="beforeClass" finished-at="2021-05-26T20:14:33Z" duration-ms="11684" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@7922d892]" started-at="2021-05-27T13:24:39Z" name="beforeClass" finished-at="2021-05-27T13:24:54Z" duration-ms="15527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="filtrarPorIdMasLimpiarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@3f57bcad]" started-at="2021-05-26T20:14:33Z" name="filtrarPorIdMasLimpiarFiltros" finished-at="2021-05-26T20:15:17Z" duration-ms="44049" status="PASS">
+        <test-method signature="filtrarPorIdMasLimpiarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@7922d892]" started-at="2021-05-27T13:24:54Z" name="filtrarPorIdMasLimpiarFiltros" finished-at="2021-05-27T13:25:40Z" duration-ms="45777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filtrarPorIdMasLimpiarFiltros -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@3f57bcad]" started-at="2021-05-26T20:15:17Z" name="afterClass" finished-at="2021-05-26T20:15:22Z" duration-ms="4323" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@7922d892]" started-at="2021-05-27T13:25:40Z" name="afterClass" finished-at="2021-05-27T13:25:45Z" duration-ms="4413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros -->
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@457c9034]" started-at="2021-05-26T20:07:38Z" name="beforeClass" finished-at="2021-05-26T20:07:53Z" duration-ms="14635" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@600b9d27]" started-at="2021-05-27T13:17:54Z" name="beforeClass" finished-at="2021-05-27T13:18:08Z" duration-ms="13141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="EditarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@457c9034]" started-at="2021-05-26T20:07:53Z" name="EditarRelacionamento" finished-at="2021-05-26T20:09:54Z" duration-ms="121673" status="PASS">
+        <test-method signature="EditarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@600b9d27]" started-at="2021-05-27T13:18:08Z" name="EditarRelacionamento" finished-at="2021-05-27T13:20:11Z" duration-ms="123598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@457c9034]" started-at="2021-05-26T20:09:55Z" name="afterClass" finished-at="2021-05-26T20:09:55Z" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@600b9d27]" started-at="2021-05-27T13:20:11Z" name="afterClass" finished-at="2021-05-27T13:20:16Z" duration-ms="4437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@51549490]" started-at="2021-05-26T20:16:27Z" name="beforeClass" finished-at="2021-05-26T20:16:39Z" duration-ms="12016" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-05-27T13:26:53Z" name="beforeClass" finished-at="2021-05-27T13:27:04Z" duration-ms="11120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@51549490]" started-at="2021-05-26T20:16:39Z" name="criarRelacionamento" finished-at="2021-05-26T20:19:01Z" duration-ms="141699" status="PASS">
+        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-05-27T13:27:04Z" name="criarRelacionamento" finished-at="2021-05-27T13:29:19Z" duration-ms="134182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criarRelacionamento -->
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@51549490]" started-at="2021-05-26T20:19:01Z" name="excluirMassa" finished-at="2021-05-26T20:19:40Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento" duration-ms="39360" status="PASS">
+        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-05-27T13:29:19Z" name="excluirMassa" finished-at="2021-05-27T13:29:57Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento" duration-ms="38867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@51549490]" started-at="2021-05-26T20:19:40Z" name="afterClass" finished-at="2021-05-26T20:19:44Z" duration-ms="4551" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-05-27T13:29:57Z" name="afterClass" finished-at="2021-05-27T13:30:02Z" duration-ms="4426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@1e8b7643]" started-at="2021-05-26T20:15:22Z" name="beforeClass" finished-at="2021-05-26T20:15:34Z" duration-ms="12083" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@457c9034]" started-at="2021-05-27T13:25:45Z" name="beforeClass" finished-at="2021-05-27T13:25:55Z" duration-ms="10960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@1e8b7643]" started-at="2021-05-26T20:15:34Z" name="excluir" finished-at="2021-05-26T20:16:27Z" duration-ms="52870" status="PASS">
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@457c9034]" started-at="2021-05-27T13:25:55Z" name="excluir" finished-at="2021-05-27T13:26:49Z" duration-ms="53294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@1e8b7643]" started-at="2021-05-26T20:16:27Z" name="afterClass" finished-at="2021-05-26T20:16:27Z" duration-ms="298" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@457c9034]" started-at="2021-05-27T13:26:49Z" name="afterClass" finished-at="2021-05-27T13:26:53Z" duration-ms="4439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir -->
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@345f69f3]" started-at="2021-05-26T20:09:55Z" name="beforeClass" finished-at="2021-05-26T20:10:15Z" duration-ms="19821" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@3688eb5b]" started-at="2021-05-27T13:20:16Z" name="beforeClass" finished-at="2021-05-27T13:20:27Z" duration-ms="11930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="VisualizarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@345f69f3]" started-at="2021-05-26T20:10:15Z" name="VisualizarRelacionamento" finished-at="2021-05-26T20:11:28Z" duration-ms="73664" status="PASS">
+        <test-method signature="VisualizarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@3688eb5b]" started-at="2021-05-27T13:20:27Z" name="VisualizarRelacionamento" finished-at="2021-05-27T13:22:12Z" duration-ms="104201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VisualizarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@345f69f3]" started-at="2021-05-26T20:11:28Z" name="afterClass" finished-at="2021-05-26T20:11:29Z" duration-ms="304" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@3688eb5b]" started-at="2021-05-27T13:22:12Z" name="afterClass" finished-at="2021-05-27T13:22:12Z" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@50de186c]" started-at="2021-05-26T20:11:29Z" name="beforeClass" finished-at="2021-05-26T20:11:43Z" duration-ms="14791" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-05-27T13:22:12Z" name="beforeClass" finished-at="2021-05-27T13:22:26Z" duration-ms="14336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@50de186c]" started-at="2021-05-26T20:11:43Z" name="criarCopia" finished-at="2021-05-26T20:13:24Z" duration-ms="100828" status="PASS">
+        <test-method signature="criarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-05-27T13:22:26Z" name="criarCopia" finished-at="2021-05-27T13:23:38Z" duration-ms="72269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criarCopia -->
-        <test-method signature="editarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@50de186c]" started-at="2021-05-26T20:13:24Z" name="editarCopia" finished-at="2021-05-26T20:13:56Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.criarCopia" duration-ms="32175" status="PASS">
+        <test-method signature="editarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-05-27T13:23:38Z" name="editarCopia" finished-at="2021-05-27T13:24:08Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.criarCopia" duration-ms="29296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editarCopia -->
-        <test-method signature="excluirCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@50de186c]" started-at="2021-05-26T20:13:56Z" name="excluirCopia" finished-at="2021-05-26T20:14:17Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.editarCopia" duration-ms="20735" status="PASS">
+        <test-method signature="excluirCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-05-27T13:24:08Z" name="excluirCopia" finished-at="2021-05-27T13:24:34Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.editarCopia" duration-ms="26719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluirCopia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@50de186c]" started-at="2021-05-26T20:14:17Z" name="afterClass" finished-at="2021-05-26T20:14:22Z" duration-ms="4308" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-05-27T13:24:34Z" name="afterClass" finished-at="2021-05-27T13:24:39Z" duration-ms="4436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@7922d892]" started-at="2021-05-26T20:04:49Z" name="beforeClass" finished-at="2021-05-26T20:05:26Z" duration-ms="37184" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@ae3540e]" started-at="2021-05-27T13:15:53Z" name="beforeClass" finished-at="2021-05-27T13:16:05Z" duration-ms="11993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@7922d892]" started-at="2021-05-26T20:05:27Z" name="criarRelacionamento" finished-at="2021-05-26T20:07:34Z" duration-ms="126631" status="PASS">
+        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@ae3540e]" started-at="2021-05-27T13:16:05Z" name="criarRelacionamento" finished-at="2021-05-27T13:17:50Z" duration-ms="104723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@7922d892]" started-at="2021-05-26T20:07:34Z" name="afterClass" finished-at="2021-05-26T20:07:38Z" duration-ms="4337" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@ae3540e]" started-at="2021-05-27T13:17:50Z" name="afterClass" finished-at="2021-05-27T13:17:54Z" duration-ms="4432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
     </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS  -->
-    <test started-at="2021-05-26T20:19:45Z" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS " finished-at="2021-05-26T20:32:08Z" duration-ms="743762">
+    <test started-at="2021-05-27T13:30:02Z" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS " finished-at="2021-05-27T13:42:24Z" duration-ms="742116">
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@1fa1cab1]" started-at="2021-05-26T20:19:45Z" name="beforeClass" finished-at="2021-05-26T20:19:57Z" duration-ms="12153" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@172b013]" started-at="2021-05-27T13:30:02Z" name="beforeClass" finished-at="2021-05-27T13:30:14Z" duration-ms="12519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@1fa1cab1]" started-at="2021-05-26T20:19:57Z" name="criar" finished-at="2021-05-26T20:21:14Z" duration-ms="77523" status="PASS">
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@172b013]" started-at="2021-05-27T13:30:14Z" name="criar" finished-at="2021-05-27T13:31:34Z" duration-ms="79762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@1fa1cab1]" started-at="2021-05-26T20:21:14Z" name="afterClass" finished-at="2021-05-26T20:21:15Z" duration-ms="336" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@172b013]" started-at="2021-05-27T13:31:34Z" name="afterClass" finished-at="2021-05-27T13:31:39Z" duration-ms="4433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar -->
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@5b6ec132]" started-at="2021-05-26T20:29:40Z" name="beforeClass" finished-at="2021-05-26T20:29:55Z" duration-ms="15784" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-05-27T13:39:56Z" name="beforeClass" finished-at="2021-05-27T13:40:08Z" duration-ms="11550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@5b6ec132]" started-at="2021-05-26T20:29:55Z" name="criar" finished-at="2021-05-26T20:31:45Z" duration-ms="109217" status="PASS">
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-05-27T13:40:08Z" name="criar" finished-at="2021-05-27T13:41:55Z" duration-ms="107405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-        <test-method signature="Excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@5b6ec132]" started-at="2021-05-26T20:31:45Z" name="Excluir" finished-at="2021-05-26T20:32:08Z" depends-on-methods="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa.criar" duration-ms="23525" status="PASS">
+        <test-method signature="Excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-05-27T13:41:55Z" name="Excluir" finished-at="2021-05-27T13:42:20Z" depends-on-methods="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa.criar" duration-ms="24247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@5b6ec132]" started-at="2021-05-26T20:32:08Z" name="afterClass" finished-at="2021-05-26T20:32:08Z" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-05-27T13:42:20Z" name="afterClass" finished-at="2021-05-27T13:42:24Z" duration-ms="4443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa -->
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@62010f5c]" started-at="2021-05-26T20:23:11Z" name="beforeClass" finished-at="2021-05-26T20:23:23Z" duration-ms="12617" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@2796aeae]" started-at="2021-05-27T13:33:36Z" name="beforeClass" finished-at="2021-05-27T13:33:48Z" duration-ms="11541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="detalhes()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@62010f5c]" started-at="2021-05-26T20:23:23Z" name="detalhes" finished-at="2021-05-26T20:24:27Z" duration-ms="63721" status="PASS">
+        <test-method signature="detalhes()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@2796aeae]" started-at="2021-05-27T13:33:48Z" name="detalhes" finished-at="2021-05-27T13:34:53Z" duration-ms="64889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- detalhes -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@62010f5c]" started-at="2021-05-26T20:24:27Z" name="afterClass" finished-at="2021-05-26T20:24:27Z" duration-ms="352" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@2796aeae]" started-at="2021-05-27T13:34:53Z" name="afterClass" finished-at="2021-05-27T13:34:53Z" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@70f02c32]" started-at="2021-05-26T20:21:15Z" name="beforeClass" finished-at="2021-05-26T20:21:28Z" duration-ms="13483" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@70f02c32]" started-at="2021-05-26T20:21:28Z" name="editar" finished-at="2021-05-26T20:23:06Z" duration-ms="97780" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@70f02c32]" started-at="2021-05-26T20:23:06Z" name="afterClass" finished-at="2021-05-26T20:23:11Z" duration-ms="4617" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@31ff43be]" started-at="2021-05-26T20:28:17Z" name="beforeClass" finished-at="2021-05-26T20:28:34Z" duration-ms="17361" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@70f02c32]" started-at="2021-05-27T13:38:39Z" name="beforeClass" finished-at="2021-05-27T13:38:50Z" duration-ms="10771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@31ff43be]" started-at="2021-05-26T20:28:34Z" name="excluir" finished-at="2021-05-26T20:29:35Z" duration-ms="61090" status="PASS">
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@70f02c32]" started-at="2021-05-27T13:38:50Z" name="excluir" finished-at="2021-05-27T13:39:52Z" duration-ms="62210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@31ff43be]" started-at="2021-05-26T20:29:35Z" name="afterClass" finished-at="2021-05-26T20:29:40Z" duration-ms="4321" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@70f02c32]" started-at="2021-05-27T13:39:52Z" name="afterClass" finished-at="2021-05-27T13:39:56Z" duration-ms="4437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@401f7633]" started-at="2021-05-26T20:25:47Z" name="beforeClass" finished-at="2021-05-26T20:26:04Z" duration-ms="16714" status="PASS">
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@56673b2c]" started-at="2021-05-27T13:31:39Z" name="beforeClass" finished-at="2021-05-27T13:31:50Z" duration-ms="11044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarcopia()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@401f7633]" started-at="2021-05-26T20:26:04Z" name="criarcopia" finished-at="2021-05-26T20:28:12Z" duration-ms="128392" status="PASS">
+        <test-method signature="editar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@56673b2c]" started-at="2021-05-27T13:31:50Z" name="editar" finished-at="2021-05-27T13:33:32Z" duration-ms="102286" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criarcopia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@401f7633]" started-at="2021-05-26T20:28:12Z" name="afterClass" finished-at="2021-05-26T20:28:17Z" duration-ms="4708" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@56673b2c]" started-at="2021-05-27T13:33:32Z" name="afterClass" finished-at="2021-05-27T13:33:36Z" duration-ms="4439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@51fadaff]" started-at="2021-05-26T20:24:27Z" name="beforeClass" finished-at="2021-05-26T20:24:39Z" duration-ms="11963" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@b4711e2]" started-at="2021-05-27T13:34:53Z" name="beforeClass" finished-at="2021-05-27T13:35:04Z" duration-ms="11509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@51fadaff]" started-at="2021-05-26T20:24:39Z" name="visualizar" finished-at="2021-05-26T20:25:42Z" duration-ms="63207" status="PASS">
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@b4711e2]" started-at="2021-05-27T13:35:04Z" name="visualizar" finished-at="2021-05-27T13:36:09Z" duration-ms="64638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@51fadaff]" started-at="2021-05-26T20:25:42Z" name="afterClass" finished-at="2021-05-26T20:25:47Z" duration-ms="4573" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@b4711e2]" started-at="2021-05-27T13:36:09Z" name="afterClass" finished-at="2021-05-27T13:36:14Z" duration-ms="4438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer -->
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@1fa1cab1]" started-at="2021-05-27T13:36:14Z" name="beforeClass" finished-at="2021-05-27T13:36:25Z" duration-ms="11813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criarcopia()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@1fa1cab1]" started-at="2021-05-27T13:36:25Z" name="criarcopia" finished-at="2021-05-27T13:38:35Z" duration-ms="129209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarcopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@1fa1cab1]" started-at="2021-05-27T13:38:35Z" name="afterClass" finished-at="2021-05-27T13:38:39Z" duration-ms="4452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
     </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS  -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Código da Receita(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar">
+      <class name="com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa">
         <methods>
+          <include name="excluir"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoReceita.CodigoReceitaExcluirEmMassa -->
+    </classes>
+  </test> <!-- Código da Receita(failed) -->
+  <test thread-count="5" name="Contrato IOF(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
+      </class> <!-- com.timp.test.MDR.ContratoIOF.ContratoIOFVisualizar -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Contrato IOF(failed) -->
+</suite> <!-- Failed suite [Suite] -->

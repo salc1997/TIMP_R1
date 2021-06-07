@@ -66,7 +66,7 @@ public class RegistroM110EditarPO extends TestBaseMassiel{
 		sleep(3000);
 		waitExpectElement(numeroDocumento);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		String valor = numeroDocumento.getAttribute("value");
 		System.out.println(valor);

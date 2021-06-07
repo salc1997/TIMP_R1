@@ -138,7 +138,7 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseSteven{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		//Segundo Registro
 		

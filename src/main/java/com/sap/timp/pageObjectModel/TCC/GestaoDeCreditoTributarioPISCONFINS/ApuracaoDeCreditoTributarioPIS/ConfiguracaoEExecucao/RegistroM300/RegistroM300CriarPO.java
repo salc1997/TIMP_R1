@@ -130,10 +130,10 @@ public class RegistroM300CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresaoPC.click();
-		sleep(6000);
+		sleep(8000);
 		
 		uf.click();
-		sleep(2000);
+		sleep(4000);
 		
 		if (tc2 == true) {
 
@@ -250,6 +250,9 @@ public class RegistroM300CriarPO extends TestBaseMassiel{
 	
 		sleep(20000);
 		sleep(8000);
+		sleep(5000);
+		sleep(5000);
+		sleep(5000);
 		sleep(5000);
 		
 		siguiente.click();

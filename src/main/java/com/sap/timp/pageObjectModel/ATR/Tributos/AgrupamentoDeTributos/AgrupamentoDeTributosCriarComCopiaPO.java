@@ -199,7 +199,19 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseSteven {
 			sucesso.add(false);
 		}
 		
+		cancelar.click();
 		sleep(2000);
+		
+		sleep(2000);
+		
+		menu.click();
+		sleep(1000);
+		editar.click();
+
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
 		
 		int cofins = driver.findElements(By.xpath("//div[@class=\"fieldMap taxSubset\"]/div/div/div/div/div/div[1]")).size();
 

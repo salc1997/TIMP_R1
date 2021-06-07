@@ -4,28 +4,24 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
-      <class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar">
+      <class name="com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar">
 =======
-      <class name="com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED">
+      <class name="com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
-          <include name="afterClass"/>
 <<<<<<< HEAD
+          <include name="criar"/>
+          <include name="afterClass"/>
 =======
-          <include name="criarSPED"/>
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="visualizar"/>
-=======
-          <include name="excluir"/>
-          <include name="executar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+          <include name="detalle"/>
         </methods>
 <<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialVisualizar -->
+      </class> <!-- com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãDeTipoTaxaDeAtualizaçãoCriar -->
 =======
-      </class> <!-- com.timp.test.DFG.Leiautes.ExecucacoMapeamentoDoSPED -->
+      </class> <!-- com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoDetalle -->
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->

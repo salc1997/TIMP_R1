@@ -149,7 +149,7 @@ public class RegistroM200VisualizarPO extends TestBaseMassiel{
 		sleep(4000);
 		
 		no.click();
-		sleep(8000);
+		sleep(10000);
 			
 	
 		siguiente.click();
@@ -168,8 +168,8 @@ public class RegistroM200VisualizarPO extends TestBaseMassiel{
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(filial);
-		sleep(2000);
+		//waitExpectElement(filial);
+		sleep(12000);
 		
 		String empresaEditar = empresa.getAttribute("value");
 		String ufEditar = uf.getText();

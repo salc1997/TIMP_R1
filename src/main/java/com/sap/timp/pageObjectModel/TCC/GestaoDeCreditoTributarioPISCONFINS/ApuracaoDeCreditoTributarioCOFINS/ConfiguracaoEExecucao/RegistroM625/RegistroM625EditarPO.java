@@ -115,7 +115,7 @@ public class RegistroM625EditarPO  extends TestBaseMassiel{
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(18000);
+		sleep(25000);
 		
 		
 		String empresa11 = empresa.getAttribute("value");

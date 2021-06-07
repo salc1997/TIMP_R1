@@ -99,7 +99,7 @@ public class ConfiguraçãoeExecuçãoEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		waitExpectElement(componente);
-		sleep(6000);
+		sleep(9000);
 		String valor = componente.getAttribute("value");
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);

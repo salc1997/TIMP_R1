@@ -24,7 +24,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnSim;
 	
-	@FindBy(xpath = "//div[contains(@class, \"icon-left\")][2]")
+	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement btnPrimerPagina;
 	
 	@FindBy(xpath = "//span[text()=\"Novo Configuração de Tipo Taxa de Atualização\"]")
@@ -72,7 +72,11 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseMassiel{
 		
 		//conta o numero de linhas	
 		
-		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();		
+			
+		
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println(idRegistro);		
 		
 		btnNovoConfiguracao.click();
@@ -134,8 +138,11 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		boolean sucesso = false;
+		
+		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
 		  
-		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText(); 
+		
 		idInserir("configuracaodetipotaxadeatualizacao", idB);
 		  
 		sleep(2000); 

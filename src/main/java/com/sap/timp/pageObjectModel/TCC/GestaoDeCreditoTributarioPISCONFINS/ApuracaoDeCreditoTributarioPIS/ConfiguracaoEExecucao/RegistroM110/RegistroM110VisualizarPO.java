@@ -79,7 +79,7 @@ public class RegistroM110VisualizarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		visualizar.click();
-		sleep(6000);
+		sleep(10000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -104,7 +104,7 @@ public class RegistroM110VisualizarPO extends TestBaseMassiel{
 		sleep(4000);
 		
 		no.click();
-		sleep(8000);
+		sleep(12000);
 			
 	
 		siguiente.click();

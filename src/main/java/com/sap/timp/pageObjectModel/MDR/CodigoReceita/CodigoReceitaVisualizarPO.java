@@ -39,7 +39,7 @@ public class CodigoReceitaVisualizarPO extends TestBaseSteven {
 	public WebElement tributoD;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Esfera\")]")
 	public WebElement esferaD;
-	@FindBy(xpath = "//input[contains(@placeholder,\"UF Origem\")]")
+	@FindBy(xpath = "//div[@id=\"state\"]/div/div[1]/div[1]/input")
 	public WebElement ufOrigemD;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Código da Receita\")]")
 	public WebElement codigoRD;
@@ -134,7 +134,7 @@ public class CodigoReceitaVisualizarPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		String tributoD1 = tributoD.getAttribute("value");
 		String esferaD1 = esferaD.getAttribute("value");

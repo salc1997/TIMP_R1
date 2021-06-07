@@ -41,7 +41,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure\"]/div/div/div/input")
 	public WebElement estructuraNotaFiscal;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div[1]/div[1]/input[@placeholder=\"Docnum\"]")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div[1]/div[1]/input")
 	public WebElement estructuraNotaFiscalopc1;
 	
 	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div[1]/div[1]/input[@placeholder=\"Item-Docnum\"]")
@@ -310,12 +310,13 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		visualizar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(10000);
 
 		String textotipoLibro = tipoLibro.getAttribute("value");
 		String textoempresa = empresa.getText();
 		String textouf = uf.getText();
 		String textofilial = filial.getText();
+		
 		//String textoestructuraNotaFiscal = estructuraNotaFiscal.getAttribute("value");
 		String textoestructuraNotaFiscalopc1 = estructuraNotaFiscalopc1.getText();
 		String textoestructuraNotaFiscalopc2 = estructuraNotaFiscalopc2.getAttribute("value");

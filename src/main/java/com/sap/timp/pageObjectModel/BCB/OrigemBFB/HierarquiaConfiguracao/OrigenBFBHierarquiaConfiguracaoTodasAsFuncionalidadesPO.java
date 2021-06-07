@@ -1262,7 +1262,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campolinha5.click();
 		sleep(2000);
 		campoLinhaO5.click();
-		sleep(2000);
+		sleep(5000);
 		
 //		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 //		sleep(3000);
@@ -1284,13 +1284,13 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		campoSaida5.click();
-		sleep(3000);
+		sleep(5000);
 		opcCampoSaida5.click();
 		opcCampoSaida5.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		negativo5.click();
-		sleep(3000);
+		sleep(5000);
 		
 		gravar.click();
 		sleep(3000);

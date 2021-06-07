@@ -69,7 +69,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcGrupo;
 	
-	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
+	@FindBy(xpath = "//li[@id=\"option-12\"]")
 	public WebElement opcGrupo1;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Estrutura de arquivo\"]")

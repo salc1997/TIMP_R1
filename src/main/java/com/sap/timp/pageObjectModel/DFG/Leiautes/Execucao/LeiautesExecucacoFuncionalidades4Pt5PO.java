@@ -1816,7 +1816,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		sleep(1000);
 		
 		salvar.click();
-		sleep(2000);
+		sleep(6000);
 		waitExpectElement(siguiente);
 		sleep(5000);
 		
@@ -2182,7 +2182,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 			elegirBloco.click();
 			sleep(2000);
 			opcaoElegirBloco5.click();
-			sleep(2000);
+			sleep(7000);
 			
 			
 			int rows = rows("//div[@class=\"tr-content\" and @id]");
@@ -2192,6 +2192,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 			for (int i = 0; i < rows; i++) {
 				
 				System.out.println("Registro: " + f);
+				sleep(2000);
 				String totalRegistro = driver.findElement(By.xpath("//div[@class=\"tr-content\" and @id]["+f+"]/div[1]/div")).getText();
 	
 				sucesso.add(totalRegistro.equals("1000"));
@@ -2223,7 +2224,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		pastaLixeira.click();

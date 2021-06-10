@@ -101,8 +101,8 @@ public class AgrupamentoDeTributosEditarPO extends TestBaseSteven{
 		editar.click();
 		sleep(2000);
 		
-		sleep(2000);
-		waitExpectElement(nome);
+		sleep(8000);
+		//waitExpectElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		nome.clear();

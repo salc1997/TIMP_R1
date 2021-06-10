@@ -181,7 +181,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(7000);
 		
 		pasta1 = driver.findElement(By.xpath("//span[text()=\"Pasta 1 - edit\"]"));
 		

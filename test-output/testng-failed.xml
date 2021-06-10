@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed)">
     <classes>
+<<<<<<< HEAD
+=======
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
+        <methods>
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+    </classes>
+  </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed) -->
+  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
+    <classes>
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criarcopia"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
       <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa">
         <methods>
           <include name="beforeClass"/>
@@ -11,6 +33,16 @@
           <include name="Excluir"/>
         </methods>
       </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa -->
+<<<<<<< HEAD
+=======
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
+</suite> <!-- Failed suite [Suite] -->

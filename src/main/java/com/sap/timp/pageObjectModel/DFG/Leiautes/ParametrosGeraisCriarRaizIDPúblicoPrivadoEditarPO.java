@@ -69,7 +69,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBaseS
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		menu.click();
 		sleep(1000);

@@ -104,7 +104,7 @@ public class PainelNovaConfiguraçãoPO extends TestBaseSteven{
 		sleep(3000);
 		
 		criar.click();
-		sleep(3000);
+		sleep(6000);
 
 		configuracao.click();
 		sleep(3000);

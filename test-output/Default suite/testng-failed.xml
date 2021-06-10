@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar">
+      <class name="com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar">
         <methods>
+          <include name="blocoApuracao"/>
+          <include name="excluirBRE"/>
+          <include name="excluirDFG"/>
+          <include name="editar"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
           <include name="afterClass"/>
+          <include name="criarDFGSPED"/>
+          <include name="informacoes"/>
+          <include name="blocoApuracaoExecutar"/>
+          <include name="criarBRE"/>
+          <include name="arquivos"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar -->
+      </class> <!-- com.timp.test.DFG.SPED.EFDICMSIPI.EFDICMSIPICriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

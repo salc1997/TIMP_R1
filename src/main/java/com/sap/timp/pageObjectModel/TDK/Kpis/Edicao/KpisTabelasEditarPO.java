@@ -139,7 +139,7 @@ public class KpisTabelasEditarPO extends TestBaseSteven{
 		
 		waitExpectElement(nomeCabelhaco);
 		
-		String valor = nomeCabelhaco.getText();
+		String valor = nomeCabelhaco.getAttribute("value");
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
 		String enviar = valor;
@@ -147,14 +147,14 @@ public class KpisTabelasEditarPO extends TestBaseSteven{
 		nomeCabelhaco.clear();
 		sleep(2000);
 		nomeCabelhaco.sendKeys("Cabecalho Editado");
-		sleep(2000);
+		sleep(3000);
 		
 		conteudo.click();
-		sleep(3000);
+		sleep(9000);
 		
-		waitExpectElement(nomeFlagPersonalizado);
+		//waitExpectElement(nomeFlagPersonalizado);
 		nomeFlagPersonalizado.click();
-		sleep(3000);
+		sleep(12000);
 		
 		etiqueta.sendKeys("Base ICMS");
 		sleep(2000);
@@ -214,7 +214,7 @@ public class KpisTabelasEditarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		waitExpectElement(nomeCabelhaco);
-		String nuevoTexto = nomeCabelhaco.getText();
+		String nuevoTexto = nomeCabelhaco.getAttribute("value");
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);
 		

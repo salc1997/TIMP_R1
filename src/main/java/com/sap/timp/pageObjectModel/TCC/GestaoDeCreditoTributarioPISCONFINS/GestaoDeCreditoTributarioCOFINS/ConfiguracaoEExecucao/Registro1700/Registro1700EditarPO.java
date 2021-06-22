@@ -103,7 +103,7 @@ public class Registro1700EditarPO extends TestBaseMassiel{
 
 			OPC1.click();
 			sleep(2000);
-
+			
 		} else if(tq1 == true) {
 			OPC.click();
 			sleep(2000);
@@ -115,6 +115,7 @@ public class Registro1700EditarPO extends TestBaseMassiel{
 		
 		String enviado = indicadordeNaturezaInput.getAttribute("value");
 		System.out.println(enviado);
+		sleep(8000);
 		
 		gravar.click();
 		sleep(2000);
@@ -128,7 +129,7 @@ public class Registro1700EditarPO extends TestBaseMassiel{
 		
 		driver.navigate().refresh();
 		waitExpectElement(indicadordeNaturezaInput);
-		sleep(8000);
+		sleep(12000);
 		
 		String nuevoTexto = indicadordeNaturezaInput.getAttribute("value");
 		/*System.out.println(valor);*/

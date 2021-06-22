@@ -134,26 +134,29 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		Gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(biblioteca);
-		sleep(4000);
+		//waitExpectElement(biblioteca);
+		sleep(12000);
 		
 		biblioteca.click();
 		sleep(2000);
 		
 		sim.click();
-		sleep(2000);
+		sleep(12000);
 
-		waitExpectElement(kpispublicos);
+		//waitExpectElement(kpispublicos);
+		sleep(2000);
+		
+		kpis.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		kpispublicos.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		ultimapagina.click();
 		sleep(2000);

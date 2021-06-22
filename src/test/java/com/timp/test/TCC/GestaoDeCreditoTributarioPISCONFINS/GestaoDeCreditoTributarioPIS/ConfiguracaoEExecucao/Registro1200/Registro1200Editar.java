@@ -30,7 +30,7 @@ public class Registro1200Editar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 

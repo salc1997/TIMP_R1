@@ -103,6 +103,7 @@
 			<class name="com.timp.test.BRB.AgrupadoPeloCampo"></class>
 		</classes>
 	</test>
+	
 	<test name="CampoOutput">
 		<classes>
 			<!-- Campo Output -->
@@ -172,4 +173,6 @@
 			<class name="com.timp.test.BRB.AtribuiçãodeRegra"></class>
 		</classes>
 	</test>
+
+	
 </suite> <!-- Suite -->

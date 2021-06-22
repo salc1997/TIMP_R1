@@ -228,7 +228,7 @@ public class FormulaPO extends TestBaseSteven{
 	
 		aplicar.click();
 		
-		sleep(2000);
+		sleep(6000);
 	
 		nombre2.click();
 		
@@ -257,8 +257,8 @@ public class FormulaPO extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//sleep(2000);
-		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(9000);
+	//	waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 	}
 	

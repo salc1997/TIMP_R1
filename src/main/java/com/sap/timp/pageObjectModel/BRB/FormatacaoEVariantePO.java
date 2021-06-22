@@ -149,7 +149,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		opcao.click();
 
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-
+		sleep(10000);
 		executar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

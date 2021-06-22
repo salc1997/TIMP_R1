@@ -129,13 +129,13 @@ public class RegistroM505CriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
-		sleep(2000);
+		sleep(4000);
 		apuracaocreditocofins.click();
-		sleep(2000);
+		sleep(4000);
 		configuracaoEExecucao.click();
-		sleep(2000);
+		sleep(5000);
 		registrom505.click();
-		sleep(2000);
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -288,8 +288,8 @@ public class Registro1220EditarPO extends TestBaseSteven {
 				String empresatexto = empresa1.getAttribute("value");
 				System.out.println("Empresa antes de atualizar:" + empresatexto);
 
-				attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-				sleep(3000);
+			//	attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+				sleep(8000);
 
 				uf.click();
 				sleep(1000);
@@ -299,7 +299,7 @@ public class Registro1220EditarPO extends TestBaseSteven {
 				sleep(1000);
 
 				attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-				sleep(3000);
+				sleep(5000);
 
 				filial.click();
 				sleep(1000);

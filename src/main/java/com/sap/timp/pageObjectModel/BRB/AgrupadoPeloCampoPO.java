@@ -120,7 +120,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		sleep(5000);
 		//waitExpectXpath("//div[@data-group=\"1\"]/div/div[1]/span[1]/label");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		

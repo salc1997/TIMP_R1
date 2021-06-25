@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="TipoDeTributoContaContabil(failed)">
+=======
+  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilEditar">
         <methods>
           <include name="afterClass"/>
@@ -24,10 +29,33 @@
     </classes>
   </test> <!-- InclusaoDeCamposMar(failed) -->
   <test thread-count="5" name="S1060AmbientesDeTrablho(failed)">
+=======
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirCopia"/>
+          <include name="editarCopia"/>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
+        <methods>
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+    </classes>
+  </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed) -->
+  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
       <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa">
         <methods>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
           <include name="beforeClass"/>
           <include name="excluirEmMassa"/>
@@ -64,6 +92,13 @@
   <test thread-count="5" name="S1250AquisicaoDeProducaoRural(failed)">
     <classes>
       <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar">
+=======
+          <include name="criarcopia"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="criar"/>
@@ -85,6 +120,7 @@
         </methods>
       </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- S1250AquisicaoDeProducaoRural(failed) -->
   <test thread-count="5" name="ParametrosModeloDeApuracaoTP(failed)">
     <classes>
@@ -97,4 +133,7 @@
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
     </classes>
   </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
+=======
+  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

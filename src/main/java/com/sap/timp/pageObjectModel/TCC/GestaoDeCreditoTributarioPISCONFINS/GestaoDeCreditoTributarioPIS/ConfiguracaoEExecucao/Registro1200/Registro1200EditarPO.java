@@ -128,7 +128,7 @@ public class Registro1200EditarPO extends TestBaseSteven {
 			//String valor = filialE.getAttribute("value");
 			System.out.println("Valor: "+valor);
 			 enviar = valor;
-		}else {
+		}else if (tc2== true) {
 			naturaleza.click();
 			sleep(3000);
 			

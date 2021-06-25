@@ -90,8 +90,8 @@ public class Registro1700VisualizarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		visualizar.click();
-		sleep(3000);
-		waitExpectElement(filial);
+		sleep(9000);
+		//waitExpectElement(filial);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		

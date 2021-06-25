@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-06-24T15:06:23Z" name="Default suite" finished-at="2021-06-24T15:07:39Z" duration-ms="75872">
+=======
+  <suite started-at="2021-06-15T23:19:13Z" name="Default suite" finished-at="2021-06-15T23:23:51Z" duration-ms="277439">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-06-24T15:06:23Z" name="Default test" finished-at="2021-06-24T15:07:39Z" duration-ms="75872">
       <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar@13b13b5d]" started-at="2021-06-24T15:06:23Z" name="beforeClass" finished-at="2021-06-24T15:06:48Z" duration-ms="24536" status="PASS">
+=======
+    <test started-at="2021-06-15T23:19:13Z" name="Default test" finished-at="2021-06-15T23:23:51Z" duration-ms="277439">
+      <class name="com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar@600b9d27]" started-at="2021-06-15T23:19:13Z" name="beforeClass" finished-at="2021-06-15T23:20:38Z" duration-ms="84482" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar@13b13b5d]" started-at="2021-06-24T15:06:48Z" name="criar" finished-at="2021-06-24T15:07:39Z" duration-ms="51306" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -89,6 +104,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar -->
+=======
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar@600b9d27]" started-at="2021-06-15T23:20:38Z" name="visualizar" finished-at="2021-06-15T23:23:46Z" duration-ms="188520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar@600b9d27]" started-at="2021-06-15T23:23:46Z" name="afterClass" finished-at="2021-06-15T23:23:51Z" duration-ms="4423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

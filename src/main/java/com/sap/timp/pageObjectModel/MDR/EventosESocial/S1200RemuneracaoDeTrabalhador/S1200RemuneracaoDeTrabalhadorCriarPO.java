@@ -27,7 +27,7 @@ public class S1200RemuneracaoDeTrabalhadorCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"option-2\"]/div")
 	public WebElement opcao2;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de evento\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de Evento\"]")
 	public WebElement tipodeevento;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Versão:\"]")

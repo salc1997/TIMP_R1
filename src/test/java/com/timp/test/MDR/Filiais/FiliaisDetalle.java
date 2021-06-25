@@ -26,7 +26,7 @@ public class FiliaisDetalle extends TestBaseMassiel {
 		driver = initializationM();
 		acessarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
-		;
+		
 		filiaisDetallePO = new FiliaisDetallesPo();
 
 	}

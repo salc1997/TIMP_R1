@@ -1744,7 +1744,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		sleep(2000);
 		
 		versaoConfiguracao.click();
-		sleep(1000);
+		sleep(3000);
 		opcversaoConfiguracao.click();
 		sleep(1000);
 //		opcversaoSPED.sendKeys(Keys.ESCAPE);

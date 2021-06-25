@@ -740,7 +740,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		configuracaoDaConsolidacao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		ultimo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1308,8 +1308,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectXpath("//span[@id=\"textLabel\"]");
-		waitExpectElement(executar);
-		sleep(2000);
+		//waitExpectElement(executar);
+		sleep(12000);
 		System.out.println("cheguei aqui");
 		executar.click();
 		sleep(2000);
@@ -2390,8 +2390,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		String idHierarquia = idObter1();
 		
-		pesquisar.sendKeys(idHierarquia);
-		pesquisar.sendKeys(Keys.ENTER);
+		siguiente.click();
+		sleep(2000);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -2428,8 +2428,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idHierarquia);
-		pesquisar.sendKeys(Keys.ENTER);
+		siguiente.click();
+		sleep(2000);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

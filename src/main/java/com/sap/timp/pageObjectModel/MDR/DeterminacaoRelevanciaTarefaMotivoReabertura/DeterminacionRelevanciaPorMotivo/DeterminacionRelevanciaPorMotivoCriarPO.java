@@ -32,19 +32,19 @@ public class DeterminacionRelevanciaPorMotivoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]/input")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//*[@id=\"overlay\"]/div[1]/div/div/div[1]/label/span")
+	@FindBy(xpath = "//div/div[@id=\"AL\"]/div[1]/label/span")
 	public WebElement ufSeleccion;
 	
 	@FindBy(xpath = "//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]/input")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//*[@id=\"overlay\"]/div[1]/div/div/div[1]/label/span")
+	@FindBy(xpath = "//div/div[@id=\"1000_AL_0805\"]/div[1]/label/span")
 	public WebElement filialSeleccion;
 	
 	@FindBy(xpath = "//*[@id=\"tax\"]/div/div[1]/div[1]/div[2]/input")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//*[@id=\"overlay\"]/div[1]/div/div/div[1]/label/span")
+	@FindBy(xpath = "//div/div[@id=\"05\"]/div[1]/label/span")
 	public WebElement tributoSeleccion;
 	
 	@FindBy(xpath = "//*[@id=\"motiveCode\"]/div")

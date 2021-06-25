@@ -88,6 +88,10 @@ public class InclusaoDeCamposMarEditarPO extends TestBaseSteven {
 
 		datainiciovigencia.clear();
 		sleep(2000);
+		
+		datainiciovigencia.clear();
+		sleep(2000);
+		
 		datainiciovigencia.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();

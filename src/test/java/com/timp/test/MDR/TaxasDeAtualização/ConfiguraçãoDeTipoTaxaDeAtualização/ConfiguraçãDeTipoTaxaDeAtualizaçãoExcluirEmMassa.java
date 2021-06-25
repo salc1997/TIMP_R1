@@ -28,7 +28,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassa extends TestBaseKe
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

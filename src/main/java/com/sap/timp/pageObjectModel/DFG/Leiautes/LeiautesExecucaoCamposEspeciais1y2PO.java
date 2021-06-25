@@ -394,7 +394,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		
 		salvar.click();
-		sleep(8000);
+		sleep(9000);
 		
 		
 		if (tq1 == true && tc2 == true||tq2 == true) {

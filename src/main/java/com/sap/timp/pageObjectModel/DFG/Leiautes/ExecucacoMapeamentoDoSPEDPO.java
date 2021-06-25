@@ -603,7 +603,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		
 //		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso.\")]")).size();
@@ -624,7 +624,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 //	public ArrayList<Boolean> continuacionBlocosYRegistros() {
 		
 		biblioteca.click();
-		sleep(3000);
+		sleep(12000);
 		raiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -996,7 +996,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		visualizar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 	
 		String nomeV = nomeSpedVisualizar.getAttribute("value");
 		String leiauteV =  leiauteSpedVisualizar.getAttribute("value");
@@ -1036,12 +1036,12 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		
 		sucesso.add(dataV.contains("01/01/2013"));
 		
-		
+		sleep(8000);
 		fechar.click();
 		sleep(2000);
 		waitExpectElement(home);
 		sleep(3000);
-		
+		System.out.println(sucesso);
 		
 		return sucesso;
 	}

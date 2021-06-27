@@ -1,29 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Dashboard(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar">
-        <methods>
-=======
-      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa">
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardCriarCopia">
         <methods>
           <include name="beforeClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="criar"/>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-=======
-          <include name="Excluir"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="copia"/>
           <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar -->
-=======
-      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluirEmMassa -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardCriarCopia -->
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Executar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar -->
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="CartaoIndicador"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar -->
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardEdiçãoGráficoEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardEdiçãoGráficoEditar -->
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira">
+        <methods>
+          <include name="afterClass"/>
+          <include name="lixeira"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira -->
+      <class name="com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Dashboard(failed) -->
+</suite> <!-- Failed suite [Suite] -->

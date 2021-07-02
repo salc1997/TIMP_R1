@@ -15,10 +15,10 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[3]/button")
@@ -33,7 +33,7 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/ul/li[4]/button")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[4]/span")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[4]/span")
 	public WebElement publico;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
@@ -83,7 +83,7 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
-		waitExpectXpath(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
+		//waitExpectXpath(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
 		sleep(2000);
 		
 		biblioteca.click();
@@ -112,7 +112,7 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 		
 		sleep(1000);
 		
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
+		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[1]/div");
 		
 		menu.click();
 		opcao.click();
@@ -184,11 +184,11 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 	
 	public boolean privadoBiblioteca() {
 		publico.click();
-		sleep(2000);
-		aceptar.click();
 		sleep(3000);
+		aceptar.click();
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		actionsMoveToElementElement(publico);
 		
 		

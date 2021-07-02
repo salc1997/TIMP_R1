@@ -254,6 +254,8 @@ public class RegistroM300CriarPO extends TestBaseMassiel{
 		sleep(5000);
 		sleep(5000);
 		sleep(5000);
+		sleep(5000);
+		sleep(5000);
 		
 		siguiente.click();
 		sleep(2000);

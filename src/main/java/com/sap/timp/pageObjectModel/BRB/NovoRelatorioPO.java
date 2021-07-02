@@ -111,6 +111,10 @@ public class NovoRelatorioPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/span[1]")
 	public WebElement ferramenta;
 	
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-output\"]")
+	public WebElement cadastro;
+	
+	
 	public NovoRelatorioPO() {
 
 		PageFactory.initElements(driver, this);
@@ -140,6 +144,11 @@ public class NovoRelatorioPO extends TestBaseSteven{
 			td1 = true;
 		}
 		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		cadastro.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -201,9 +210,9 @@ public class NovoRelatorioPO extends TestBaseSteven{
 		ferramenta.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
-		String texto = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[7]/div")).getText();
+		String texto = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[7]")).getText();
 		System.out.println(texto);
 
 		boolean sucesso = texto.contains("Prueba Automatizada");

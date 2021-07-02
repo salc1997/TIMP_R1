@@ -45,7 +45,7 @@ public class NovoRelatorio extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+	//	driver.close();
 	}
 
 	@Test()
@@ -54,7 +54,7 @@ public class NovoRelatorio extends TestBaseSteven {
 		loginTc.login();
 		
 		accesarBrbPO.acessar();
-
+		sleep(4000);
 
 		boolean sucesso = novoRelatorioPO.criar();
 		sleep(4000);

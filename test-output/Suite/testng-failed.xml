@@ -1,139 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="TipoDeTributoContaContabil(failed)">
-=======
-  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Paginacao(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilEditar">
+      <class name="com.timp.test.BRB.Paginacao">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilEditar -->
-    </classes>
-  </test> <!-- TipoDeTributoContaContabil(failed) -->
-  <test thread-count="5" name="InclusaoDeCamposMar(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarEditar">
-        <methods>
-          <include name="editar"/>
+          <include name="paginacion"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ValorAdicionado.InclusaoDeCamposMar.InclusaoDeCamposMarEditar -->
+      </class> <!-- com.timp.test.BRB.Paginacao -->
     </classes>
-  </test> <!-- InclusaoDeCamposMar(failed) -->
-  <test thread-count="5" name="S1060AmbientesDeTrablho(failed)">
-=======
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
+  </test> <!-- Paginacao(failed) -->
+  <test thread-count="5" name="FiltrosAvancados(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FiltrosAvancados">
         <methods>
           <include name="afterClass"/>
-          <include name="excluirCopia"/>
-          <include name="editarCopia"/>
+          <include name="filtrosAvanzados"/>
           <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltrosAvancados -->
+    </classes>
+  </test> <!-- FiltrosAvancados(failed) -->
+  <test thread-count="5" name="PublicoEPrivado(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.PublicoEPrivado">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="publicoYPRivado"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.PublicoEPrivado -->
+    </classes>
+  </test> <!-- PublicoEPrivado(failed) -->
+  <test thread-count="5" name="FiltrosRelatorio(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
+        <methods>
+          <include name="CasignarValores"/>
+          <include name="BfiltrosBiblioteca"/>
+          <include name="beforeClass"/>
+          <include name="AfiltrosEditor"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
+    </classes>
+  </test> <!-- FiltrosRelatorio(failed) -->
+  <test thread-count="5" name="CriarComCopia(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CriarComCopia">
+        <methods>
           <include name="criarCopia"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
-        <methods>
-          <include name="criarRelacionamento"/>
-          <include name="excluirMassa"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+      </class> <!-- com.timp.test.BRB.CriarComCopia -->
     </classes>
-  </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed) -->
-  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- CriarComCopia(failed) -->
+  <test thread-count="5" name="AtivarComentario(failed)">
     <classes>
-      <class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa">
+      <class name="com.timp.test.BRB.AtivarComentario">
         <methods>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
+          <include name="ativarComentarios"/>
           <include name="beforeClass"/>
-          <include name="excluirEmMassa"/>
-          <include name="Excluir"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoExcluirMassa -->
+      </class> <!-- com.timp.test.BRB.AtivarComentario -->
     </classes>
-  </test> <!-- S1060AmbientesDeTrablho(failed) -->
-  <test thread-count="5" name="S1200RemuneracaoDeTrabalhador(failed)">
+  </test> <!-- AtivarComentario(failed) -->
+  <test thread-count="5" name="GruposAvancados(failed)">
     <classes>
-      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir">
+      <class name="com.timp.test.BRB.GruposAvancados">
         <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
+          <include name="gruposAvanzados"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorExcluir -->
-      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar">
-        <methods>
-          <include name="criar"/>
+          <include name="eliminarGrupos"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorCriar -->
-      <class name="com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1200RemuneracaoDeTrabalhador.S1200RemuneracaoDeTrabalhadorDetalhes -->
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
     </classes>
-  </test> <!-- S1200RemuneracaoDeTrabalhador(failed) -->
-  <test thread-count="5" name="S1250AquisicaoDeProducaoRural(failed)">
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
     <classes>
-      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar">
-=======
-          <include name="criarcopia"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
         <methods>
+          <include name="listaSuspensa"/>
           <include name="afterClass"/>
-          <include name="criar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralCriar -->
-      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir">
-        <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluir -->
-      <class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralEditar -->
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- S1250AquisicaoDeProducaoRural(failed) -->
-  <test thread-count="5" name="ParametrosModeloDeApuracaoTP(failed)">
+  </test> <!-- ComentarioListaSuspensa(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
     <classes>
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar">
+      <class name="com.timp.test.BRB.ComentarioLibre">
         <methods>
-          <include name="editar"/>
+          <include name="comentarioLibre"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModeloDeApuracaoTPEditar -->
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
     </classes>
-  </test> <!-- ParametrosModeloDeApuracaoTP(failed) -->
-=======
-  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- ComentarioLibre(failed) -->
+  <test thread-count="5" name="Visualizar(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.Visualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.Visualizar -->
+    </classes>
+  </test> <!-- Visualizar(failed) -->
+  <test thread-count="5" name="ExcluirRelatorio(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ExcluirRelatorio">
+        <methods>
+          <include name="afterClass"/>
+          <include name="eliminar"/>
+          <include name="eliminarLixeira"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ExcluirRelatorio -->
+    </classes>
+  </test> <!-- ExcluirRelatorio(failed) -->
 </suite> <!-- Failed suite [Suite] -->

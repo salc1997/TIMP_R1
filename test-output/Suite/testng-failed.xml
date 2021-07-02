@@ -1,16 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Paginacao(failed)">
+=======
+  <test thread-count="5" name="Dashboard(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.Paginacao">
+=======
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardCriarCopia">
         <methods>
+          <include name="beforeClass"/>
+          <include name="copia"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardCriarCopia -->
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+<<<<<<< HEAD
           <include name="paginacion"/>
+=======
+          <include name="afterClass"/>
+          <include name="Executar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar -->
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="CartaoIndicador"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar -->
+      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardEdiçãoGráficoEditar">
+        <methods>
+          <include name="editar"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.Paginacao -->
+=======
+      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardEdiçãoGráficoEditar -->
+      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira">
+        <methods>
+          <include name="afterClass"/>
+          <include name="lixeira"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira -->
+      <class name="com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Paginacao(failed) -->
   <test thread-count="5" name="FiltrosAvancados(failed)">
     <classes>
@@ -126,4 +178,7 @@
       </class> <!-- com.timp.test.BRB.ExcluirRelatorio -->
     </classes>
   </test> <!-- ExcluirRelatorio(failed) -->
+=======
+  </test> <!-- Dashboard(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

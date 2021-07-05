@@ -55,7 +55,7 @@ public class FiltrosAvanazadosPO extends TestBaseSteven {
 		
 		for (int i = 1; i < rows; i++) {
 			
-			String relatorio = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div["+i+"]/div[11]/div")).getText();
+			String relatorio = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div["+i+"]/div[11]/div")).getText();
 			verificar.add(relatorio);
 		
 		}

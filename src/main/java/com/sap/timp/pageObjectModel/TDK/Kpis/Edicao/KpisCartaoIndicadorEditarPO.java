@@ -141,10 +141,10 @@ public class KpisCartaoIndicadorEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		waitExpectElement(cabecalho);
-		sleep(2000);
+		sleep(6000);
 		
 		conteudo.click();
-		sleep(2000);
+		sleep(4000);
 		campos.click();
 		sleep(2000);
 		opcaocampos.click();

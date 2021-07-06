@@ -9,9 +9,9 @@
 			<!-- ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS     -->
 			
 				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia"></class>
 				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditar"></class>
 				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizar"></class>
-				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia"></class>
 				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorID"></class>
 				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir"></class>
 				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa"></class>

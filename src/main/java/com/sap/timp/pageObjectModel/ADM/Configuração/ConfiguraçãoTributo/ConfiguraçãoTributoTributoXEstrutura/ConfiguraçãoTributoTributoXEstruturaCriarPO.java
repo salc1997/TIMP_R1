@@ -103,9 +103,9 @@ public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
 		btnGravar.click();
 		sleep(4000);
 		
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		btnPrimeraPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

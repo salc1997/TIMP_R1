@@ -51,13 +51,15 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseSteven {
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
-		
+		boolean tq2 = false;
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}else if (url.contains("tp1")) {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
@@ -98,7 +100,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseSteven {
 		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
 		sleep(2000);	
-		if(tp1 == true || tq1 == true) {
+		if(tp1 == true || tq1 == true || tq2 == true) {
 		biblioteca.click();
 		
 		sleep(2000);

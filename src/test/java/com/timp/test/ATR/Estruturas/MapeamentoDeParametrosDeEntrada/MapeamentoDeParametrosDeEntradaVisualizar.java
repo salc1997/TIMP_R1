@@ -34,12 +34,10 @@ public class MapeamentoDeParametrosDeEntradaVisualizar extends TestBaseSteven {
 		  driver.close();
 	  }
 	  
-	  
-	 
 	 	@Test()
 	 	public void visualizar() {
 	 		
-	 		loginTC.login();
+	 		 loginTC.login();
 			 acessarATRPO.acessarATR();
 	 		
 	 		ArrayList<Boolean> sucesso = mapeamentoDeParametrosDeEntradaVisualizarPO.visualizar();
@@ -47,9 +45,6 @@ public class MapeamentoDeParametrosDeEntradaVisualizar extends TestBaseSteven {
 	 			assertTrue(sucesso.get(i), visualizaçar);
 				
 			}
-			
-		
-	 		
 	 	}
 	
 	

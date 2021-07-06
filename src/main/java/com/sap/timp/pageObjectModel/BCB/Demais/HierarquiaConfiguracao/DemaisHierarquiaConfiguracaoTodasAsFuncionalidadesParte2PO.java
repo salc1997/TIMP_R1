@@ -231,12 +231,18 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		
 		String idConfiguracaoExecutar = idObter5();
 		
-		pesquisar.sendKeys(idConfiguracaoExecutar);
-		//pesquisar.sendKeys("1171");
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
+		
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idConfiguracaoExecutar);
+//		//pesquisar.sendKeys("1171");
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracaoExecutar+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracaoExecutar+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -471,13 +477,24 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 	}
 	
 	public ArrayList<Boolean> excluirConfiguracoes2() {
-		//EXCLUIR CONFIGURACOES
-
+		
+		
 		sleep(2000);
-		biblioteca.click();
-		sleep(3000);
+		configuracoes.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		configuracaoDaConsolidacao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//EXCLUIR CONFIGURACOES
+
+//		sleep(2000);
+//		biblioteca.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		System.out.println("*******EXCLUIR CONFIGURACOES 2************");
 		System.out.println("");
@@ -500,11 +517,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		System.out.println("");
 		
 		
-		pesquisar.sendKeys(idConfiguracao2);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idConfiguracao2);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao2+"\"]/div[1]/div"));
 		WebElement lixeiraC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -541,11 +563,17 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idConfiguracao2);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(4000);
+		
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idConfiguracao2);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(4000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao2+"\"]/div[1]/div"));
 		WebElement excluirC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -588,12 +616,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		System.out.println("OBTER 4:" + idHierarquia2);
 		System.out.println("");
 		
-		
-		pesquisar.sendKeys(idHierarquia2);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idHierarquia2);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia2+"\"]/div[1]/div"));
 		WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -632,11 +664,17 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idHierarquia2);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(4000);
+		
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idHierarquia2);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(4000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia2+"\"]/div[1]/div"));
 		WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -680,11 +718,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		System.out.println("");
 		
 		
-		pesquisar.sendKeys(idConfiguracao1);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idConfiguracao1);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao1+"\"]/div[1]/div"));
 		WebElement lixeiraC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -721,11 +764,17 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idConfiguracao1);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(4000);
+		
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idConfiguracao1);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(4000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao1+"\"]/div[1]/div"));
 		WebElement excluirC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -769,11 +818,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		System.out.println("");
 		
 		
-		pesquisar.sendKeys(idHierarquia1);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idHierarquia1);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia1+"\"]/div[1]/div"));
 		WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -812,11 +866,17 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idHierarquia1);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(4000);
+		
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idHierarquia1);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(4000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia1+"\"]/div[1]/div"));
 		WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

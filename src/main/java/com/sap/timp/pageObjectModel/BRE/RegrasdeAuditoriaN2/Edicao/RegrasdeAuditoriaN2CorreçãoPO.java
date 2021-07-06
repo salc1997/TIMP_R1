@@ -98,14 +98,18 @@ public boolean editar() {
 	boolean tp1  = false;
 	boolean tc2  = false;
 	boolean tq1  = false;
-
+	boolean tq2  = false;
+	
 	if (url.contains("tq1")) {
 		tq1 = true;
 	}else if(url.contains("tc2")){
 		tc2 = true;
 	}else if(url.contains("tp1")){
 		tp1 = true;
+	}else if(url.contains("tq2")){
+		tq2 = true;
 	}
+	
 	
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
@@ -145,7 +149,7 @@ public boolean editar() {
 	adicionarCorrecoes.click();
 	sleep(3000);
 	
-	if (tq1 == true) {
+	if (tq1 == true || tq2 == true) {
 		hererarquia.sendKeys("HCNF0110 - TA-1871 - NÃO MEXER");
 		sleep(3000);
 		seleccionHererarquiaTQ1.click();
@@ -192,7 +196,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	
-	if (tq1 == true) {
+	if (tq1 == true || tq2 == true) {
 		valor3.sendKeys("1");
 		sleep(3000);
 	}

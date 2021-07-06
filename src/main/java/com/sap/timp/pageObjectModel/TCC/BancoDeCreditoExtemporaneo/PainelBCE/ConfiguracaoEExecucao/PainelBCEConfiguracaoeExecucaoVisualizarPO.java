@@ -26,7 +26,7 @@ public class PainelBCEConfiguracaoeExecucaoVisualizarPO extends TestBaseKenssy {
 	//DATOS VISUALIZAR
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div/div/div/div")
 	public WebElement empresaV;
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div/div/div")
+	@FindBy(xpath = "//div[@id=\"branch\"][1]/div/div/div/div/div/div[1]")
 	public WebElement filialV;
 	@FindBy(xpath = "//div[@id=\"tax\"]/div/div/div/input")
 	public WebElement tributoV;
@@ -76,6 +76,7 @@ public class PainelBCEConfiguracaoeExecucaoVisualizarPO extends TestBaseKenssy {
 		sleep(1000);
 		visualizar.click();
 		invisibilityOfElementOverlay();
+		waitExpectElement(filialV);
 		sleep(2000);
 		
 		String empresaV1 = empresaV.getText();
@@ -101,6 +102,7 @@ public class PainelBCEConfiguracaoeExecucaoVisualizarPO extends TestBaseKenssy {
 		sleep(1000);
 		editar1.click();
 		invisibilityOfElementOverlay();
+		waitExpectElement(filialE);
 		sleep(2000);
 		
 		String empresaE1 = empresaE.getText();

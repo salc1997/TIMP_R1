@@ -192,6 +192,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseSteven {
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
+		boolean tq2 = false;
 		
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -199,6 +200,8 @@ public class RegrasDeMensagensCriaPO extends TestBaseSteven {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}	else if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}

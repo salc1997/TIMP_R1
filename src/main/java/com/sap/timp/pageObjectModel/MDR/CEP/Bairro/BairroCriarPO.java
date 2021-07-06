@@ -76,7 +76,10 @@ public class BairroCriarPO extends TestBaseSteven{
 		if (url.contains("tq1")) {
 			cep2.click();
 			sleep(1000);
-		} else {
+		} else if (url.contains("tc2")) {
+			cep2.click();
+			sleep(1000);
+		}else {
 			cep.click();
 			sleep(1000);
 		}

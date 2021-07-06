@@ -287,6 +287,12 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 			sleep(1000);
 		}
 		
+		// Opcao para TQ1
+		if(URL.contains("tq2")) {
+			opcaoleiautereferenciatq1.click();
+			sleep(1000);
+		}
+		
 		// Opcao para TP1
 		if(URL.contains("tp1")) {
 			opcaoleiautereferenciatp1.click();
@@ -310,6 +316,12 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		// Opcao para TQ1
 		if(URL.contains("tq1")) {
+			opcaoleiautecomparacaotq1.click();
+			sleep(1000);
+		}
+		
+		// Opcao para TQ1
+		if(URL.contains("tq2")) {
 			opcaoleiautecomparacaotq1.click();
 			sleep(1000);
 		}
@@ -446,6 +458,11 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 			sleep(1000);
 		}
 		
+		// Opcao para TQ1
+		if(URL.contains("tq2")) {
+			opcaoleiautereferenciatq1.click();
+			sleep(1000);
+		}
 		// Opcao para TP1
 		if(URL.contains("tp1")) {
 			opcaoleiautereferenciatp1.click();
@@ -469,6 +486,12 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		// Opcao para TQ1
 		if(URL.contains("tq1")) {
+			opcaoleiautecomparacaotq1.click();
+			sleep(1000);
+		}
+		
+		// Opcao para TQ1
+		if(URL.contains("tq2")) {
 			opcaoleiautecomparacaotq1.click();
 			sleep(1000);
 		}

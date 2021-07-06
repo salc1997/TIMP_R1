@@ -65,13 +65,14 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 	public ArrayList<Boolean> detalhes() {
 		
 		sleep(2000);
-
+		
 		grupodeestrutura.click();
+		
 		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
-		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -79,12 +80,13 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter("GrupoDeEstruturasCriar");
+		System.out.println("Ultimo registro: " + idRegistro);
 		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElementElement(menu);
 		sleep(2000);
-		menu1.click();
+		menu.click();
 		sleep(1000);
 		
 		detalhes.click();
@@ -111,14 +113,14 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter("GrupoDeEstruturasCriar");
 		
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement ver = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElementElement(menu1);
 		sleep(2000);
-		menu.click();
+		menu1.click();
 		sleep(1000);
 		
 		ver.click();
@@ -138,9 +140,9 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		
-		sucesso.add(ajustefiscaisdetalhes.contains(ajustefiscaisvisualizar));
-		//sucesso.add(cfopdetalhes.contains(cfopvisualizar));
+		//cfopvisualizar
+		sucesso.add(ajustefiscaisdetalhes.contains(cfopvisualizar));
+		//sucesso.add(cfopdetalhes.contains(ajustefiscaisvisualizar));
 		
 		
 

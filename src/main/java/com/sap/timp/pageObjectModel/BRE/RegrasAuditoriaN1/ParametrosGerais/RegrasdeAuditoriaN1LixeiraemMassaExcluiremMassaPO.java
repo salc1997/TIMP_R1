@@ -184,6 +184,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseS
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
+		boolean tq2 = false;
 		
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -191,6 +192,8 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseS
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
@@ -268,15 +271,15 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseS
 		sleep(1000);
 		
 		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
+//		if (url.contains("tc2")) {
+//			tc2 = true;
+//		}else if (url.contains("tp1")) {
+//			tp1 = true;
+//		}else if (url.contains("tq1")) {
+//			tq1 = true;
+//		}else {
+//			td1 = true;
+//		}
 		if(tp1 == true) {
 		grupodeestrutura.click();
 		sleep(1000);

@@ -14,7 +14,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirPO extends TestBaseSteven{
 	
 	
 
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
 	public WebElement siguiente;
 
 	@FindBy(xpath = "//button[text()=\"Sim\"]")

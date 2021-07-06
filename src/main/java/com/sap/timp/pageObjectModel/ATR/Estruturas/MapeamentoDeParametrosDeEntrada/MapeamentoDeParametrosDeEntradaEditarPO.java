@@ -21,8 +21,8 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@id][text()=\"4.2.2 - CFOP\"]")
 	public WebElement opcaoestrutura2;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement ultimapagina;
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
+	public WebElement primerapagina;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Campo \"]")
 	public WebElement direcaomovimento;
@@ -56,7 +56,7 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		ultimapagina.click();
+		primerapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -96,9 +96,9 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectElement(primerapagina);
 		sleep(2000);
-		ultimapagina.click();
+		primerapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

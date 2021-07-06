@@ -70,7 +70,7 @@ public class ValoresParaMetodoPVAEditarPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Praticado\"]")
 	public WebElement precopraticado;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data Inicial\"]")
+	@FindBy(xpath = "//div[@id=\"startDate\"]/div/div/input")
 	public WebElement datainicial;
 	
 	
@@ -118,10 +118,10 @@ public class ValoresParaMetodoPVAEditarPO extends TestBaseSteven {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(datainicial);
+		sleep(2000);
 		
 		String valor = datainicial.getAttribute("value");
 

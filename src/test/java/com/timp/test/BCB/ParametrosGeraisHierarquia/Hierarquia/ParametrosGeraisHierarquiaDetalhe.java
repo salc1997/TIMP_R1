@@ -33,24 +33,15 @@ public class ParametrosGeraisHierarquiaDetalhe extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-
+	@Test()
+	public void criarConfiguracaoHierarquia() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
+		
 		boolean sucesso = acessarBCBPO.acessar();
 		System.out.println(sucesso);
 		assertTrue(sucesso,Acessar);
-
-	}
-
-	@Test(priority = 2)
-	public void criarConfiguracaoHierarquia() {
-		boolean sucesso = parametrosGeraisHierarquiaDetalhePO.hierarquiaDetalhe();
-		assertTrue(sucesso, Detalhes);
+		
+		boolean sucesso1 = parametrosGeraisHierarquiaDetalhePO.hierarquiaDetalhe();
+		assertTrue(sucesso1, Detalhes);
 	}
 }

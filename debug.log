@@ -1355,3 +1355,18 @@
 [1221/175101.498:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\Miguel\AppData\Local\Temp\scoped_dir29068_66332292\Crashpad: Espacio en disco insuficiente. (0x70)
 [0326/180208.617:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
 [0416/063120.017:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0510/222656.934:ERROR:process_info.cc(359)] UncheckedAllocate
+[0510/231451.537:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Agile\AppData\Local\Temp\scoped_dir29348_135091580\Crashpad\reports\1979f210-a047-4b3a-a694-3bfb4aa57bdd.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
+[0510/231451.575:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Agile\AppData\Local\Temp\scoped_dir30508_905515756\Crashpad\reports\afefc9fa-9d63-4fd5-8c7d-9d3743f99c15.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
+[0510/231505.308:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Agile\AppData\Local\Temp\scoped_dir1008_1361618523\Crashpad\reports\75b424c1-d82f-4902-ad29-0f556da243dc.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
+[0510/231506.248:ERROR:process_info.cc(359)] UncheckedAllocate
+[0510/231954.456:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Agile\AppData\Local\Temp\scoped_dir13448_1917693228\Crashpad\reports\9ad65efc-3212-42d4-9116-4da2bd8b5c83.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
+[0510/232705.260:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Agile\AppData\Local\Temp\scoped_dir33188_1671417920\Crashpad\reports\4908f1cf-4c54-49ff-8ade-918f331693b3.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
+[0510/232936.542:ERROR:process_info.cc(359)] UncheckedAllocate
+[0613/171721.706:ERROR:process_info.cc(359)] UncheckedAllocate
+[0613/171735.213:ERROR:process_info.cc(359)] UncheckedAllocate
+[0613/171748.335:ERROR:process_info.cc(359)] UncheckedAllocate
+[0613/171802.605:ERROR:process_info.cc(359)] UncheckedAllocate
+[0613/171805.980:ERROR:process_info.cc(359)] UncheckedAllocate
+[0613/224845.241:ERROR:process_info.cc(359)] UncheckedAllocate
+[0613/233449.545:ERROR:process_info.cc(359)] UncheckedAllocate

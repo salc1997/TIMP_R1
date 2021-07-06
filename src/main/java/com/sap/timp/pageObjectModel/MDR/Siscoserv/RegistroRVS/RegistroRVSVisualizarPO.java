@@ -159,7 +159,7 @@ public ArrayList<Boolean> visualizar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(empresa);
-		sleep(2000);
+		sleep(6000);
 			
 		//editar
 		System.out.println("Datos del editar");

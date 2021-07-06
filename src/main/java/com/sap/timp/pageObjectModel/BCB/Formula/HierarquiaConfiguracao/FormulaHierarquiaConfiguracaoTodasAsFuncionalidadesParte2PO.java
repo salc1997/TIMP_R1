@@ -262,6 +262,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -273,6 +274,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
+		}
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		//COMENTAR DESPUES PORFAVOR
@@ -362,7 +367,14 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			sleep(1000);
 			dobleClickElement(selectBCB13);
 			sleep(1000);
-		}else {
+		}else if (tq2 == true) {
+			buscarCamposSaidaBCB.sendKeys("954");
+			sleep(1000);
+			selectBCB1.click();
+			sleep(1000);
+			dobleClickElement(selectBCB11);
+			sleep(1000);
+		}else{
 			//CORREGIR AL EJECUTAR EN AMBIENTE
 			buscarCamposSaidaBCB.sendKeys("326");
 			sleep(1000);
@@ -479,6 +491,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -491,6 +504,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		if (url.contains("tp1")) {
 			tp1 = true;
 		}
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		
 		//COMENTAR DESPUES PORFAVOR
 //		sleep(2000);
@@ -634,6 +652,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -645,6 +664,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
+		}
+		
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		
@@ -684,6 +708,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
+		
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -697,6 +723,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			tp1 = true;
 		}
 		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+				
 		
 		System.out.println("---------------------------------Abrir SubNivel 3-------------------------------------");
 		sleep(1000);
@@ -729,10 +759,15 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 
 	
 	public ArrayList<Boolean> abrirSubNivel4() {
+		String url = driver.getCurrentUrl();
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
-		String url = driver.getCurrentUrl();
+		boolean tq2 = false;
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
@@ -776,10 +811,17 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	}
 	
 	public ArrayList<Boolean> abrirSubNivel5() {
+		String url = driver.getCurrentUrl();
+		
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
-		String url = driver.getCurrentUrl();
+		boolean tq2 = false;
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}

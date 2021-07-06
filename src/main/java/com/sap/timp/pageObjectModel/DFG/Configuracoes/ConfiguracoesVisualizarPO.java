@@ -64,16 +64,20 @@ public class ConfiguracoesVisualizarPO extends TestBaseSteven{
 			raiz2 = driver.findElement(By.xpath("//div[@class=\"baseTabs-view -view-wrapper  selected\"]/div/div/div/div/div/div[3]/div"));
 		}
 		
+		System.out.println("aqui");
 		raiz2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(siguiente);
 		sleep(3000);
+		
 		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		System.out.println("AQUI");
 		String id = idObter2();
 		System.out.println("Id Registro: " + id);
 		System.out.println("");

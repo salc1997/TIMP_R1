@@ -476,16 +476,16 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		sim.click();
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		justificativa.sendKeys("Justificativa TESTE AUTOMATIZADO");
-		aplicarJustificativa.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		justificativa.sendKeys("Justificativa TESTE AUTOMATIZADO");
+//		aplicarJustificativa.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		biblioteca.click();
 		sleep(3000);
@@ -742,17 +742,17 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sim.click();
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
-		sleep(2000);
-		aplicarJustificativa.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
+//		sleep(2000);
+//		aplicarJustificativa.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		//corregir mensaje al parecer
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -783,39 +783,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tq1 = true;
 		}
 		
-		
-//		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("1175");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1175\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1175\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-//	//HASTA AQUI
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
 		
 		//PRIMER SUBNIVEL
 		
@@ -844,7 +815,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			//CORREGIR PARA TP1
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
@@ -909,6 +884,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
 		sleep(1000);
 
@@ -934,7 +914,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			//CORREGIR PARA TP1
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
@@ -1005,6 +989,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		//COMENTAR DESPUES PORFAVOR
 	//	sleep(2000);
 	//	configuracoes.click();
@@ -1063,7 +1052,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
@@ -1134,6 +1127,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		//COMENTAR DESPUES PORFAVOR
 //		sleep(2000);
 //		configuracoes.click();
@@ -1192,7 +1190,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
@@ -1253,6 +1255,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
 		sleep(1000);
 		
@@ -1277,7 +1284,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);

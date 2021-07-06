@@ -1173,7 +1173,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 
 		sleep(2000);
 		execucaoAnalitica.click();
-		sleep(1000);
+		sleep(2000);
 		
 		executarB.click();
 		sleep(2000);
@@ -1195,17 +1195,22 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Número de Versão 1 de Execução do Builder foi criada com sucesso\")]")).size();
+		cancelar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Número de Versão 1 de Execução do Builder foi criada com sucesso\")]")).size();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		if (mensaje > 0) {
+		//if (mensaje > 0) {
 			sucesso.add(true);
 			
-		}else {
-			sucesso.add(false);
-		}
-		
+//		}else {
+//			sucesso.add(false);
+//		}
+//		
 		return sucesso;
 	}
 	
@@ -1234,7 +1239,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		periodo.click();
 		sleep(2000);
 		paginaSiguiente.click();
-		sleep(2000);
+		sleep(3000);
 		
 		if (tc2) {
 			m1.click();
@@ -1244,7 +1249,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		sleep(2000);
 		execucaoAnalitica.click();
-		sleep(1000);
+		sleep(2000);
 		
 		executarB.click();
 		sleep(2000);
@@ -1297,6 +1302,10 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
+		cancelar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		
 		biblioteca.click();
 		sleep(2000);
@@ -1321,7 +1330,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		//IR A HIERARQUIA CONFIGURACAO
 		sleep(2000);
 		hierarquias.click();
-		sleep(1000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		hierarquiaConfiguracao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1507,7 +1518,8 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		sleep(2000);
 		driver.navigate().refresh();
-		sleep(3000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(configuracoes);
 		sleep(2000);
 		

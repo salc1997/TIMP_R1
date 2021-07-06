@@ -200,7 +200,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 			sleep(2000);
 			
 		}else if (tc2 == true) {
-			WebElement raiz1 = driver.findElement(By.xpath("//div[@class=\"baseTabs-view -view-wrapper selected\"]/div/div/div/div[1]/div/div[2]/div[1]"));
+			WebElement raiz1 = driver.findElement(By.xpath("//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[1]/div/div[1]"));
 			raiz1.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

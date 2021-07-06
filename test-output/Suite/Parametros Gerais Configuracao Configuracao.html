@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 17 01:22:58 CST 2021</td>
+<td>Started on:</td><td>Thu Jun 24 19:53:42 CST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>1765 seconds (1765687 ms)</td>
+<tr><td>Total time:</td><td>2026 seconds (2026548 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar.visualizar()'><b>visualizar</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text&quot;&gt;...&lt;/span&gt; is not clickable at point (133, 268). Other element would receive the click: &lt;div class=&quot;base-loader-container&quot;&gt;...&lt;/div&gt;
+<td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados.criarConfiguracao()'><b>criarConfiguracao</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=83.0.4103.106)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-IN7IV9K5&apos;, ip: &apos;192.168.88.237&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;LAPTOP-IN7IV9K5&apos;, ip: &apos;192.168.88.234&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2f3a687b830159779059d601f115867e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2073c98f1066b8479f90026767151430
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -90,19 +90,19 @@ Session ID: 2f3a687b830159779059d601f115867e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO.visualizar(ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO.java:69)
-	at com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar.visualizar(ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar.java:43)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace657657753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace657657753'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text&quot;&gt;...&lt;/span&gt; is not clickable at point (133, 268). Other element would receive the click: &lt;div class=&quot;base-loader-container&quot;&gt;...&lt;/div&gt;
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancadosPO.Filtros(ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancadosPO.java:102)
+	at com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados.criarConfiguracao(ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados.java:44)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1817238905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1817238905'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=83.0.4103.106)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-IN7IV9K5&apos;, ip: &apos;192.168.88.237&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;LAPTOP-IN7IV9K5&apos;, ip: &apos;192.168.88.234&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2f3a687b830159779059d601f115867e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2073c98f1066b8479f90026767151430
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,14 +115,14 @@ Session ID: 2f3a687b830159779059d601f115867e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO.visualizar(ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO.java:69)
-	at com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar.visualizar(ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar.java:43)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancadosPO.Filtros(ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancadosPO.java:102)
+	at com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados.criarConfiguracao(ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,8 +149,8 @@ Session ID: 2f3a687b830159779059d601f115867e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>28</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar@181e731e</td></tr>
+<td>80</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados@35645047</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -162,53 +162,53 @@ Session ID: 2f3a687b830159779059d601f115867e
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriar.criarConfiguracao()'><b>criarConfiguracao</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriar</td>
 <td></td>
-<td>305</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriar@432038ec</td></tr>
+<td>252</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriar@73d983ea</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz.criarConfiguracao()'><b>criarConfiguracao</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz</td>
 <td></td>
 <td>47</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz@35645047</td></tr>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz@5a3bc7ed</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos.criarConfiguracao()'><b>criarConfiguracao</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos</td>
 <td></td>
-<td>68</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos@6f44a157</td></tr>
-<tr>
-<td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados.criarConfiguracao()'><b>criarConfiguracao</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados</td>
-<td></td>
-<td>80</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados@6bc407fd</td></tr>
+<td>74</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos@181e731e</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente.criarConfiguracao()'><b>criarConfiguracao</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente</td>
 <td></td>
-<td>158</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@291f18</td></tr>
+<td>162</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente@6f44a157</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar.criarConfiguracaoHierarquia()'><b>criarConfiguracaoHierarquia</b><br>Test class: com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar</td>
 <td></td>
-<td>221</td>
-<td>com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar@36a5cabc</td></tr>
+<td>120</td>
+<td>com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar@71e9ebae</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia.criarConfiguracaoHierarquia()'><b>criarConfiguracaoHierarquia</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia</td>
 <td></td>
-<td>201</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@7daa0fbd</td></tr>
+<td>247</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@36a5cabc</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes</td>
 <td></td>
-<td>172</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes@5a3bc7ed</td></tr>
+<td>189</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes@7daa0fbd</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar.editar()'><b>editar</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar</td>
 <td></td>
-<td>301</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar@42530531</td></tr>
+<td>338</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar@432038ec</td></tr>
 <tr>
 <td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia.excluirr()'><b>excluirr</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia</td>
 <td></td>
-<td>45</td>
-<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@7daa0fbd</td></tr>
+<td>55</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia@36a5cabc</td></tr>
+<tr>
+<td title='com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar.visualizar()'><b>visualizar</b><br>Test class: com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar</td>
+<td></td>
+<td>328</td>
+<td>com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar@42530531</td></tr>
 </table><p>
 </body>
 </html>

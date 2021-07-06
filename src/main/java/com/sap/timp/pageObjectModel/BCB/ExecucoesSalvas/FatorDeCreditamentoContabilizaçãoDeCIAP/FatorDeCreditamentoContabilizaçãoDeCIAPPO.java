@@ -1186,19 +1186,24 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			pesquisar.sendKeys(idRegistro);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
+			ultimo.click();
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
+//			pesquisar.sendKeys(idRegistro);
+//			pesquisar.sendKeys(Keys.ENTER);
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
 			
-			String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[3]/div")).getText();
 			
-			
-		
-			sucesso.add(idRegistro.equals(id));
-			System.out.println(sucesso);
+//			String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[3]/div")).getText();
+//			
+//			
+//		
+//			sucesso.add(idRegistro.equals(id));
+//			System.out.println(sucesso);
 			
 			sleep(2000);
 			configuracoes.click();
@@ -1210,13 +1215,20 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			String idRegistro2  =  idObter("idApos");
-			
-			pesquisar.sendKeys(idRegistro2);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
+			ultimo.click();
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
+			
+			String idRegistro2  =  idObter("idApos");
+			
+			
+			
+//			pesquisar.sendKeys(idRegistro2);
+//			pesquisar.sendKeys(Keys.ENTER);
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
 			
 			WebElement menu3 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro2+"\"]/div[1]/div"));
 			WebElement lixieria2 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -1240,18 +1252,24 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			pesquisar.sendKeys(idRegistro2);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
+			
+			ultimo.click();
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			
-			String idC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[3]/div")).getText();
-			
-			
-			sucesso.add(idRegistro2.equals(idC));
-			System.out.println(sucesso);
+//			pesquisar.sendKeys(idRegistro2);
+//			pesquisar.sendKeys(Keys.ENTER);
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			
+//			String idC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[3]/div")).getText();
+//			
+//			
+//			sucesso.add(idRegistro2.equals(idC));
+//			System.out.println(sucesso);
 			
 			sleep(2000);
 			hierarquias.click();
@@ -1291,18 +1309,23 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			pesquisar.sendKeys(idRegistro3);
-			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
+			ultimo.click();
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			
-			String idH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[3]/div")).getText();
-			
-			
-			sucesso.add(idRegistro3.equals(idH));
-			System.out.println(sucesso);
+//			pesquisar.sendKeys(idRegistro3);
+//			pesquisar.sendKeys(Keys.ENTER);
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			
+//			String idH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[3]/div")).getText();
+//			
+//			
+//			sucesso.add(idRegistro3.equals(idH));
+//			System.out.println(sucesso);
 			
 			return sucesso;
 		}

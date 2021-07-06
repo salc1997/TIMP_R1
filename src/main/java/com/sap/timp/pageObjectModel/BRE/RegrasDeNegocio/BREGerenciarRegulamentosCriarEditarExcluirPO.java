@@ -40,15 +40,18 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseSteven
 		sleep(2000);
 		
 		gerenciar.click();
+		waitExpectElement(novoRegulamento);
 		sleep(2000);
 		
 		novoRegulamento.click();
 		sleep(3000);
 		
-		nome.sendKeys("ddd");
+		nome.sendKeys("TESTE-KEN");
 		sleep(2000);
 		
 		aplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"object-list-field\"]")).size();
@@ -57,14 +60,17 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseSteven
 		
 		System.out.println("cantidad1: "+rows);
 		editar.click();
+		waitExpectElement(nome);
 		sleep(2000);
 		
 		nome.clear();
 		sleep(2000);
-		nome.sendKeys("Massiel");
+		nome.sendKeys("Massiel2");
 		sleep(2000);
 		
 		aplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		fechar.click();
@@ -79,9 +85,11 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseSteven
 		eliminar.click();
 		sleep(3000);
 		
-		/*ok.click();
-		sleep(3000);*/
 		
+		ok.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 
 		

@@ -144,13 +144,15 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
-		
+		boolean tq2 = false;
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}else if (url.contains("tp1")) {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else  if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
@@ -174,6 +176,9 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 			opcaoestruturadevalidacaotp1.click();
 			sleep(2000);
 		}else if (tq1 == true) {
+			opcaoestruturadevalidacaoTQ1.click();
+			sleep(2000);
+		}else if (tq2 == true) {
 			opcaoestruturadevalidacaoTQ1.click();
 			sleep(2000);
 		}else {

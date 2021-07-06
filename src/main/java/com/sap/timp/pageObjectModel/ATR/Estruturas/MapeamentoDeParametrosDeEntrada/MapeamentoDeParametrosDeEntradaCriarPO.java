@@ -13,8 +13,8 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 	public WebElement mapeamento;
 	
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement ultimapagina;
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
+	public WebElement primerapagina;
 	
 	@FindBy(xpath = "//span[text()=\"Novo Mapeamento\"]")
 	public WebElement novo;
@@ -64,15 +64,15 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectElement(primerapagina);
 		sleep(2000);
-		ultimapagina.click();
+		primerapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
 		System.out.println("Ultimo registro: " + id);
 		
@@ -105,9 +105,9 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectElement(primerapagina);
 		sleep(2000);
-		ultimapagina.click();
+		primerapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -115,7 +115,7 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
 	//	System.out.println("Rows:" +rows);
 		
-		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
 		idInserir("MapeamentoDeParametrosDeEntradaCriar",idultimo);
 

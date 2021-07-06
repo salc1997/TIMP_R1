@@ -63,6 +63,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		@FindBy(xpath = "//button[text()=\"Sim\"]")
 		public WebElement sim;
 		
+		@FindBy(xpath = "//button[text()=\"Não\"]")
+		public WebElement nao;
+		
 		@FindBy(xpath = "//textarea[@placeholder=\"Preencher Justificativa\"]")
 		public WebElement justificativa;
 		
@@ -817,6 +820,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			
 			if (url.contains("tc2")) {
@@ -825,6 +829,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				tp1 = true;
 			}else if (url.contains("tq1")) {
 				tq1 = true;
+			}else if (url.contains("tq2")) {
+				tq2 = true;
 			}
 			
 			
@@ -916,7 +922,14 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 				dobleClickElement(selectBCB13);
 				sleep(1000);
-			}else {
+			}else  if (tq2 ==true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB11);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
@@ -970,6 +983,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			if (url.contains("tc2")) {
 				tc2 = true;
@@ -982,6 +996,43 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			if (url.contains("tp1")) {
 				tp1 = true;
 			}
+			
+			if (url.contains("tq2")) {
+				tq2 = true;
+			}
+			
+			//COMENTAR DESPUES PORFAVOR
+//			sleep(2000);
+//			configuracoes.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			configuracaoDaConsolidacao.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			
+//			pesquisar.sendKeys("1408");
+//			pesquisar.sendKeys(Keys.ENTER);
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//			
+//			
+//			
+//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1408\"]/div[1]/div"));
+//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1408\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+//			sleep(2000);
+//			
+//			menu.click();
+//			sleep(1000);
+//			editar.click();
+//			sleep(6000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			waitExpectElement(calculator);
+//			sleep(2000);
+		//HASTA AQUI
 
 			System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
 			sleep(1000);
@@ -1022,7 +1073,14 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 				dobleClickElement(selectBCB13);
 				sleep(1000);
-			}else {
+			}else if (tq2 == true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB11);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
@@ -1069,6 +1127,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			if (url.contains("tc2")) {
 				tc2 = true;
@@ -1080,6 +1139,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			
 			if (url.contains("tp1")) {
 				tp1 = true;
+			}
+			
+			if (url.contains("tq2")) {
+				tq2 = true;
 			}
 			
 			System.out.println("--------------------------------------------SubNivel 3-------------------------------------");
@@ -1121,7 +1184,14 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 				dobleClickElement(selectBCB13);
 				sleep(1000);
-			}else {
+			}else if (tq2 == true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB11);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
@@ -1174,6 +1244,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			if (url.contains("tc2")) {
 				tc2 = true;
@@ -1187,7 +1258,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				tp1 = true;
 			}
 			
-			
+			if (url.contains("tq2")) {
+				tq2 = true;
+			}
 			
 			
 			
@@ -1230,14 +1303,21 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 				dobleClickElement(selectBCB43);
 				sleep(1000);
-			}else {
+			}else if (tq2 == true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB41);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
-				sleep(1000);
+				sleep(3000);
 				selectBCB2.click();
-				sleep(1000);
+				sleep(3000);
 				dobleClickElement(selectBCB42);
-				sleep(1000);
+				sleep(3000);
 			}
 			
 			caixaFormula.sendKeys("/2");

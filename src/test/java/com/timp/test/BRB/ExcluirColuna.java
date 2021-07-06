@@ -51,7 +51,7 @@ public class ExcluirColuna extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
@@ -73,16 +73,16 @@ public class ExcluirColuna extends TestBaseSteven {
 	}
 	
 
-	@Test()
-	public void excluirColunaOpcao() {
-
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso = excluirColunaPO.ExcluirColuna();
-		System.out.println(sucesso + "Coluna");
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), "The element wasn't removed");
-		}
-
-	}
+//	@Test()
+//	public void excluirColunaOpcao() {
+//
+//		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+//		sucesso = excluirColunaPO.ExcluirColuna();
+//		System.out.println(sucesso + "Coluna");
+//		for (int i = 0; i < sucesso.size(); i++) {
+//			assertTrue(sucesso.get(i), "The element wasn't removed");
+//		}
+//
+//	}
 
 }

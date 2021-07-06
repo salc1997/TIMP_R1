@@ -100,6 +100,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 		sleep(2000);
 		
 		//ediçao
@@ -146,9 +147,9 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		sleep(1000);
 		
 		editar1.click();
-		sleep(2000);
-		waitExpectElement(biblioteca);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(biblioteca);
 		sleep(2000);
 		
 		

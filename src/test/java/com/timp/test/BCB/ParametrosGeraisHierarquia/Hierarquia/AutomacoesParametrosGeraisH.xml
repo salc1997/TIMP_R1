@@ -7,6 +7,7 @@
 			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar"></class>	
 			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriarComCópia"></class>
 			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaEditar"></class>
+			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaDetalhe"></class>
 			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar"></class>
 			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaRaiz"></class>
 			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaExcluirSelectFlag"></class>

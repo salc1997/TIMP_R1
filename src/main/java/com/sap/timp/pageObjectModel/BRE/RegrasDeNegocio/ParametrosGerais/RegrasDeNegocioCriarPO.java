@@ -34,6 +34,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ2;
+	
+	
+	
 	@FindBy(xpath = "//li[@id][text()=\"TAA\"]")
 	public WebElement opcaocomponente;
 	
@@ -193,13 +198,15 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
-
+		boolean tq2  = false;
 		if (url.contains("tq1")) {
 			tq1 = true;
 		}else if(url.contains("tc2")){
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -252,7 +259,13 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 			sleep(1000);
 			
 			
-		}else {
+		}else if (tq2 == true) {
+			componenteTQ2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+		
+		}else{
 			
 			componente3.click();
 			sleep(1000);
@@ -565,9 +578,8 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 		sleep(2000);
 		driver.navigate().refresh();
 		sleep(2000);
-		//waitExpectXpath("//div[@class=\"overlay loader transp\"]");
-		waitExpectElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
+		waitExpectElement(adicionarcaminho);
 		sleep(2000);
 		WebElement caminhos = driver.findElement(By.xpath("//div[@id=\"graph\"]/*[name()=\"svg\"]/*[name()=\"g\"]"));
 		waitExpectElement(caminhos);

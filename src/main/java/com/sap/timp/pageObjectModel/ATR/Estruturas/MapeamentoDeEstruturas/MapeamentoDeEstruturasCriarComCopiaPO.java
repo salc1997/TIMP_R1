@@ -88,8 +88,8 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
-		excluircofins.click();
-		sleep(2000);
+//		excluircofins.click();
+//		sleep(2000);
 
 		datainicio.clear();
 		sleep(2000);
@@ -149,10 +149,10 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		menu.click();
 		sleep(1000);
 		editar.click();
-
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		waitExpectElement(datainicio);
+		sleep(3000);
 
 		String data  = datainicio.getAttribute("value");
 		String data1 = datafim.getAttribute("value");
@@ -164,15 +164,15 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		sucesso.add(data.equals(enviar));
 		sucesso.add(data1.contains(enviar1));
 		
-		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-05\"]")).size();
-
-		if (cofins == 0) {
-			System.out.println("Cofins não consta na edição");
-			sucesso.add(true);
-		} else {
-			System.out.println("Cofins  consta na edição");
-			sucesso.add(false);
-		}
+//		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-00\"]")).size();
+//
+//		if (cofins == 0) {
+//			System.out.println("Cofins não consta na edição");
+//			sucesso.add(true);
+//		} else {
+//			System.out.println("Cofins  consta na edição");
+//			sucesso.add(false);
+//		}
 
 		cancelar.click();
 		sleep(2000);

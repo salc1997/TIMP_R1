@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+>>>>>>> refs/remotes/origin/Kenssy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-07-05T17:39:20Z" name="Default suite" finished-at="2021-07-05T17:44:01Z" duration-ms="280497">
+=======
+  <suite started-at="2021-07-01T19:26:05Z" name="Suite" finished-at="2021-07-01T19:34:52Z" duration-ms="527715">
+>>>>>>> refs/remotes/origin/Kenssy
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-07-05T17:39:20Z" name="Default test" finished-at="2021-07-05T17:44:01Z" duration-ms="280497">
       <class name="com.timp.test.TDK.Kpis.KpisCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2abf4075]" started-at="2021-07-05T17:39:20Z" name="beforeClass" finished-at="2021-07-05T17:40:21Z" duration-ms="60131" status="PASS">
+=======
+    <test started-at="2021-07-01T19:26:05Z" name="Centralização De Tributos" finished-at="2021-07-01T19:34:52Z" duration-ms="527715">
+      <class name="com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltrosAvançados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltrosAvançados@6c2ed0cd]" started-at="2021-07-01T19:26:05Z" name="beforeClass" finished-at="2021-07-01T19:26:16Z" duration-ms="11072" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2abf4075]" started-at="2021-07-05T17:40:21Z" name="criar" finished-at="2021-07-05T17:43:57Z" duration-ms="216011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisCriar@2abf4075]" started-at="2021-07-05T17:43:57Z" name="afterClass" finished-at="2021-07-05T17:44:01Z" duration-ms="4333" status="PASS">
+=======
+        <test-method signature="Filtro()[pri:0, instance:com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltrosAvançados@6c2ed0cd]" started-at="2021-07-01T19:26:16Z" name="Filtro" finished-at="2021-07-01T19:32:15Z" duration-ms="359389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltrosAvançados@6c2ed0cd]" started-at="2021-07-01T19:32:15Z" name="afterClass" finished-at="2021-07-01T19:32:19Z" duration-ms="4417" status="PASS">
+>>>>>>> refs/remotes/origin/Kenssy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TDK.Kpis.KpisCriar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+      </class> <!-- com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltrosAvançados -->
+      <class name="com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltroXID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltroXID@7d9e8ef7]" started-at="2021-07-01T19:32:19Z" name="beforeClass" finished-at="2021-07-01T19:32:30Z" duration-ms="10883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Filtro()[pri:0, instance:com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltroXID@7d9e8ef7]" started-at="2021-07-01T19:32:30Z" name="Filtro" finished-at="2021-07-01T19:34:48Z" duration-ms="137549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltroXID@7d9e8ef7]" started-at="2021-07-01T19:34:48Z" name="afterClass" finished-at="2021-07-01T19:34:52Z" duration-ms="4383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.TCC.CentralizaçãoDeTributos.CentralizaçãoDeTributosFiltroXID -->
+    </test> <!-- Centralização De Tributos -->
+  </suite> <!-- Suite -->
+>>>>>>> refs/remotes/origin/Kenssy
 </testng-results>

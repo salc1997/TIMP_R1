@@ -141,8 +141,8 @@ public class EstruturasVisualizarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		//String idRegistro1 = idObter1();
+		//int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		WebElement menu1 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[1]/span[2]"));
 		WebElement editar = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]/span[2]"));
 		actionsMoveToElementElement(menu1);
@@ -153,6 +153,7 @@ public class EstruturasVisualizarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(capaE);
 	    sleep(2000);
 	    
 	    String capavisualizarE = capaE.getText();

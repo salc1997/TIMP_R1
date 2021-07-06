@@ -95,6 +95,7 @@ public class SubItensValidosVisualizarPO extends TestBaseFernando{
 		detalhes.click();
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectXpath("//div[@id=\"obligation\"]/div/div/input");
 		sleep(2000);
 		
 		// Datos de Editar

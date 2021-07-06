@@ -196,12 +196,12 @@ public class IncentivosFiscaisExcluirEmMassaPO extends TestBaseKenssy{
 			seleccionarTipoImposto.click();
 			sleep(2000);
 			opcTipoImposto.click();
-			sleep(2000);
+			sleep(8000);
 			
-			actionsMoveToElementXpath("//div[@id=\"taxTypeDetail\"]/div/div");
-			sleep(2000);
-			attributeToBeXpath("//div[@id=\"taxTypeDetail\"]/div/div", "aria-label", "Clique/Aperte Enter  para Selecionar Detalhe de Tipo de Tributo; Menu Suspenso");
-			sleep(2000);
+//			actionsMoveToElementXpath("//div[@id=\"taxTypeDetail\"][1]/div/div[1]");
+//			sleep(2000);
+//			attributeToBeXpath("//div[@id=\"taxTypeDetail\"][1]/div/div[1]","class" ,"base-select  disabled");
+//			sleep(2000);
 			
 			seleccionarNomeDoBeneficio.click();
 			sleep(2000);

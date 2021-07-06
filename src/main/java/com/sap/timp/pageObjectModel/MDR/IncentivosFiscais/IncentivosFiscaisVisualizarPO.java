@@ -153,7 +153,7 @@ public class IncentivosFiscaisVisualizarPO extends TestBaseMassiel{
 		String textoempresaE = empresaE.getText();
 		String textoufFilialE = ufFilialE.getText();
 		String textofilialE = filialE.getText();
-		textofilialE = textofilialE.replace("AL","");
+//		textofilialE = textofilialE.replace("AL","");
 		textofilialE = textofilialE.replace("-","");
 		textofilialE = textofilialE.replace(" ","");
 		String textotributoE = tributoE.getAttribute("value");

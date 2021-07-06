@@ -79,7 +79,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		opcEmpresa.click();
 		sleep(1000);
 //		aplicar.click();
-//		sleep(2000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -124,7 +124,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 //		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(20000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -167,7 +167,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 //		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(20000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -210,7 +210,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		//aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(20000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -253,7 +253,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 //		aplicar.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(20000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -296,13 +296,13 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 //		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(20000);
 		
 	
-		limpar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		limpar.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

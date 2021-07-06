@@ -125,6 +125,8 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
 	public WebElement adicionarCaminho;
 	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ2;
 	
 	public RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO() {
 
@@ -139,13 +141,16 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
-
+		boolean tq2  = false;
+		
 		if (url.contains("tq1")) {
 			tq1 = true;
 		}else if(url.contains("tc2")){
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		System.out.println(url);
@@ -203,6 +208,12 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 			sleep(1000);
 			
 			
+		}else if (tq2 == true) {
+			componenteTQ2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+		
 		}else {
 			
 			componente3.click();
@@ -303,6 +314,12 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 			sleep(1000);
 			
 			
+		}else if (tq2 == true) {
+			componenteTQ2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+		
 		}else {
 			
 			componente3.click();

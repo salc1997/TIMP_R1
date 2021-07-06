@@ -40,7 +40,8 @@ public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
 		assertTrue(sucesso, Criar);
 	}
 
-	@Test()
+	@Test(dependsOnMethods = "comparar")
+
 	public void excluir() {
 		boolean sucesso2 = kpisLixeiraExcluirEmMassaPO.ExcluirMasas();
 		assertTrue(sucesso2, Criar);

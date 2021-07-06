@@ -37,7 +37,7 @@ public class RegistroRPDetalhesPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div")
 	public WebElement numerododeclaracao;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[14]/div/div")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[16]/div/div")
 	public WebElement ativo;
 	
 	

@@ -69,17 +69,22 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseSteven
 		sleep(2000);
 		boolean sucesso = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracao();
 		assertTrue(sucesso, Criar);
-		
-		hierarquiaConfiguracaoTodasAsFuncionalidadesPO.configurarConfiguracao();
-		
-		
 	}
 
-	
 	@Test(priority = 4)
+	public void configurarConfiguracao() {
+		hierarquiaConfiguracaoTodasAsFuncionalidadesPO.configurarConfiguracao();	
+	}
+	
+	
+	@Test(priority = 5)
 	public void executar() {
-		
 		hierarquiaConfiguracaoTodasAsFuncionalidadesPO.executar();
+	}
+	
+	@Test(priority = 6)
+	public void subNiveles() {
+		
 		
 		ArrayList<Boolean> subNivel1 = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.subnivel1();
 		
@@ -137,7 +142,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseSteven
 	}
 	
 	
-	@Test(priority = 5)
+	@Test(priority = 7)
 	public void excluirConfiguracao() {
 		
 		ArrayList<Boolean> sucesso = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracao();
@@ -150,7 +155,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseSteven
 
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 8)
 	public void excluirHierarquia() {
 		
 		ArrayList<Boolean> sucesso = hierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirHierarquia();

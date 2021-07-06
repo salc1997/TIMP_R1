@@ -80,12 +80,12 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		sleep(2000);
 		codigoContri.click();
 
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -115,6 +115,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		System.out.println(dataV1);
 		sleep(2000);
 		biblioteca.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

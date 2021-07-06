@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="FiltrosAvancados(failed)">
+=======
+  <test thread-count="5" name="Banco De Credito Tributarop &gt; Configuração de Banco de Crédito Tributário(failed)">
+>>>>>>> refs/remotes/origin/Kenssy
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.FiltrosAvancados">
         <methods>
           <include name="afterClass"/>
@@ -116,4 +121,29 @@
       </class> <!-- com.timp.test.BRB.ComentarioLibre -->
     </classes>
   </test> <!-- ComentarioLibre(failed) -->
+=======
+      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="filtroPorId"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId -->
+      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
+        <methods>
+          <include name="Filtro"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
+      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes -->
+    </classes>
+  </test> <!-- Banco De Credito Tributarop > Configuração de Banco de Crédito Tributário(failed) -->
+>>>>>>> refs/remotes/origin/Kenssy
 </suite> <!-- Failed suite [Suite] -->

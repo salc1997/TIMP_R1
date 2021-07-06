@@ -16,6 +16,7 @@ public class ConfiguracaoDeMapeamentoDeTributoCriar extends TestBaseSteven{
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeMapeamentoDeTributoCriarPO configuracaoDeMapeamentoDeTributoCriarPO;
 
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

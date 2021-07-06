@@ -69,7 +69,12 @@ public class TabelasExternasEditarPO extends TestBaseMassiel{
 			idRegistro1 = "list-check_281";
 			idRegistro = "281";
 		}
-	
+		if (url.contains("tq2")==true) {
+
+			idRegistro1 = "list-check_177";
+			idRegistro = "177";
+
+		}
 
 
 		
@@ -124,6 +129,13 @@ public class TabelasExternasEditarPO extends TestBaseMassiel{
 		} if (url.contains("tp1")==true) {
 			idRegistro1 = "list-check_281";
 			idRegistro = "281";
+		}
+		
+		if (url.contains("tq2")==true) {
+
+			idRegistro1 = "list-check_177";
+			idRegistro = "177";
+
 		}
 
 		pesquisar.click();

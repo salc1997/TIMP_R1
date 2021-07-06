@@ -92,16 +92,16 @@ public class AtividadeEditarPO extends TestBaseSteven{
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(3000);
 		
 		String valor = campo.getAttribute("value");
 
 		
-		String enviar = "Prueba editar";
+		String enviar = "Prueba editar 2";
 		
 		campo.clear();
 		campo.sendKeys(enviar);
-		sleep(1000);
+		sleep(2000);
 		
 		gravar.click();
 		sleep(1000);
@@ -110,16 +110,43 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	
 		sim.click();
 		sleep(3000);		 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		
-		driver.navigate().refresh();
 		
 		
-		//driver.findElement(By.xpath("//*[@id=\"description-activities\"]/div/textarea")).click();
-		//attributeToBeXpath("//div[@id=\"name-activities\"]/div/div", "class", "base-input  required type1");
-		waitExpectElement(campo);
+		siguiente.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+//		atividades.click();
+//		sleep(2000);
+//		atividadesO.click();
+//		sleep(2000);
+//		
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+//		siguiente.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+
+		idRegistro = idObter("AtividadeFiscal");
+		
+
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		actionsMoveToElementElement(menu);
+		sleep(4000);
+		
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(campo);
 		sleep(3000);
 		
 		

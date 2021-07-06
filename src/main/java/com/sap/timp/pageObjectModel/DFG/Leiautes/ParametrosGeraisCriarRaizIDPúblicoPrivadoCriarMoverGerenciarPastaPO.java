@@ -147,16 +147,17 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(8000);
 		
 		WebElement btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(4000);
 		
 		WebElement pasta1 = driver.findElement(By.xpath("//span[text()=\"Pasta 1\"]"));
-		waitExpectElement(pasta1);
+		sleep(8000);
+		//waitExpectElement(pasta1);
 		pasta1.click();
 		
 		sleep(2000);
@@ -181,7 +182,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(7000);
 		
 		pasta1 = driver.findElement(By.xpath("//span[text()=\"Pasta 1 - edit\"]"));
 		

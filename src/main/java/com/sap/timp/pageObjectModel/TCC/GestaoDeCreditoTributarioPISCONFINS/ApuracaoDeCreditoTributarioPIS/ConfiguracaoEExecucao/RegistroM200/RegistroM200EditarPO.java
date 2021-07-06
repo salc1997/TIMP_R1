@@ -97,7 +97,7 @@ public class RegistroM200EditarPO extends TestBaseMassiel{
 		System.out.println(valor);
 		
 		filialInputClear.click();
-		sleep(2000);
+		sleep(4000);
 		
 		filial.click();
 		sleep(2000);

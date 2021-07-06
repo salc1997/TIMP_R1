@@ -40,9 +40,9 @@ public class AdicionarColunasPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/ul/li[4]/button")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement editar;
 	@FindBy(xpath = "//*[@id=\"report-search\"]/div/div/input")
 	public WebElement buscarCampo;
@@ -148,7 +148,7 @@ public class AdicionarColunasPO extends TestBaseSteven{
 		buscarCampo.sendKeys("Empresa");
 		Actions actions = new Actions(driver);
 		actions.moveToElement(empresa);
-		sleep(6000);
+		sleep(12000);
 		actions.doubleClick(empresa).perform();
 		
 		buscarCampo.clear();

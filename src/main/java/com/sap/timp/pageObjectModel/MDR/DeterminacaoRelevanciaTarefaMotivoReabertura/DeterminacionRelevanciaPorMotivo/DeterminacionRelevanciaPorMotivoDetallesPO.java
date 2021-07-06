@@ -39,9 +39,9 @@ public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 
-	@FindBy(xpath = "//div[@id=\"detail-description\"][2]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][8]/div[2]/div")
 	public WebElement motivoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][3]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][9]/div[2]/div")
 	public WebElement descricaoD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][4]/div[2]/div")
 	public WebElement impactoD;
@@ -132,6 +132,8 @@ public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseSteven{
 		String dataVigenciaV1 = dataVigenciaV.getText();
 		String ativoV1 = ativoV.getText();
 
+		ativoV1 = ativoV1.replace(" ", "");
+		
 		System.out.println(motivoV1);
 		System.out.println(descricaoV1);
 		System.out.println(impactoV1);

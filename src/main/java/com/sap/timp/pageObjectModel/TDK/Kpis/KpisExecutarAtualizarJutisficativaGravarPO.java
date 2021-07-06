@@ -203,7 +203,7 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter("KpisCriar");
 	
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -219,8 +219,8 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cartaoindicador);
-		sleep(2000);
+	//	waitExpectElement(cartaoindicador);
+		sleep(10000);
 		
 		fechar.click();
 		

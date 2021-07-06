@@ -143,7 +143,7 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);
 	//	waitExpectElement(nao);
 	//	nao.click();
-		sleep(8000);
+		sleep(10000);
 	
 
 

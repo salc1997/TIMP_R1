@@ -95,9 +95,9 @@ public class RegradeAbasEditarPO extends TestBaseSteven {
 		
 		driver.navigate().refresh();
 		
-		sleep(2000);
+		sleep(10000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(10000);
 		
 		AtribuiçõesdeRegras.click();
 		sleep(2000);

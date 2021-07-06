@@ -33,7 +33,7 @@ public class PaginacionPO extends TestBaseSteven{
 		
 	
 	//Inserir Número
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[10]/div/div/input")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[2]/div/div[10]/div/div/input")
 	public WebElement numero;
 	
 	
@@ -55,7 +55,7 @@ public class PaginacionPO extends TestBaseSteven{
 	
 	public String paginacionPS() {
 		
-		
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		output.click();
@@ -63,10 +63,10 @@ public class PaginacionPO extends TestBaseSteven{
 		sleep(2000);
 		ps.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 				
-		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[10]/div/div");
+		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[5]/div/div[2]/div/div[10]/div/div");
 		
 		String psV = actualPage.getAttribute("value");
 		System.out.println(psV);
@@ -82,9 +82,9 @@ public class PaginacionPO extends TestBaseSteven{
 
 		pa.click();
 
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
-		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[10]/div/div");
+		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[5]/div/div[2]/div/div[10]/div/div");
 
 		String paV = actualPage.getAttribute("value");
 		System.out.println(paV);
@@ -102,9 +102,9 @@ public class PaginacionPO extends TestBaseSteven{
 		pf.click();
 		
 
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		
-		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[7]");
+		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[5]/div/div[2]/div/div[7]");
 		String pfV = actualPage.getAttribute("value");
 
 		return pfV;
@@ -118,9 +118,9 @@ public class PaginacionPO extends TestBaseSteven{
 		
 		pi.click();
 		
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		
-		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[3]");
+		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[5]/div/div[2]/div/div[3]");
 		String piV = actualPage.getAttribute("value");
 	
 		return piV;
@@ -136,9 +136,9 @@ public class PaginacionPO extends TestBaseSteven{
 		numero.sendKeys("1");
 		numero.sendKeys(Keys.ENTER);
 	
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		
-		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[4]/div/div[2]/div/div[5]");
+		actionsMoveToElementXpath("//*[@id=\"right\"]/div/div[5]/div/div[2]/div/div[5]");
 		String pbV = actualPage.getAttribute("value");
 
 	

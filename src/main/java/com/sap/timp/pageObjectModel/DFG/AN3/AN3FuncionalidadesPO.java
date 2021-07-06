@@ -179,7 +179,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"Auditoria Nvl 3\"]")
 	public WebElement tipoRegraO;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")

@@ -99,7 +99,7 @@ public class RegistroM800ExcluirPO extends TestBaseSteven{
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		
 		excluir.click();
 		sleep(2000);

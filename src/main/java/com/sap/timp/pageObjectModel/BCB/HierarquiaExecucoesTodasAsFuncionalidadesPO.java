@@ -708,8 +708,8 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		editar.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(calculator);
-		sleep(2000);
+		///waitExpectElement(calculator);
+		sleep(7000);
 		
 		calculator.click();
 		sleep(1000);

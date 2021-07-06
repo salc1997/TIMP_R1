@@ -26,7 +26,7 @@ public class RegraDeCamposCriar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 	
 	@Test()

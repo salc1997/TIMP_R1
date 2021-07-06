@@ -58,6 +58,7 @@ public class EmpresasEditarPO extends TestBaseSteven{
 		
 		campo.clear();
 		campo.sendKeys(enviar);
+		sleep(12000);
 		
 		gravar.click();
 		sleep(2000);

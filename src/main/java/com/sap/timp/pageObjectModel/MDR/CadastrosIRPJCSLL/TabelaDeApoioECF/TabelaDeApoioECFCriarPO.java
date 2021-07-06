@@ -77,12 +77,12 @@ public class TabelaDeApoioECFCriarPO extends TestBaseFernando{
 		cboTabelaECF.click();
 		sleep(1000);
 		opcionCombo.click();
-		sleep(2000);
+		sleep(3000);
 		
-		descricao.click();
-		sleep(1000);
-		descricao.sendKeys("Teste Automatizado 5");
+		/*descricao.click();
 		sleep(2000);
+		descricao.sendKeys("Teste Automatizado 5");
+		sleep(2000);*/
 		
 		cboVersaoLeiaute.click();
 		sleep(1000);
@@ -114,14 +114,14 @@ public class TabelaDeApoioECFCriarPO extends TestBaseFernando{
 		
 		//conta o numero de linhas	
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();		
-		String[] idArray1 = idRegistro1.split("_");
-		String idB = idArray1[3];
-		idInserir("TabelaDeApoioECF",idB);
-		System.out.println(idB);			
+	//	String[] idArray1 = idRegistro1.split("_");
+		//String idB = idArray1[3];
+		idInserir("TabelaDeApoioECF", idRegistro1);
+		System.out.println(idRegistro1);			
 		sleep(2000);
 		  
 		int idD = Integer.parseInt(id); 
-		int idBD = Integer.parseInt(idB);
+		int idBD = Integer.parseInt(idRegistro1);
 		
 		System.out.println("-----------------------------");
 		System.out.println(idD); 

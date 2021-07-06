@@ -25,7 +25,7 @@ public class AcessarBrbPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-output\"]")
 	public WebElement cadastro;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]")
 	public WebElement mostrar;
 	
 	public AcessarBrbPO() {
@@ -45,8 +45,9 @@ public class AcessarBrbPO extends TestBaseSteven{
 		}		
 	
 		brb.click();
+		sleep(12000);
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
+		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[1]/div");
 		cadastro.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

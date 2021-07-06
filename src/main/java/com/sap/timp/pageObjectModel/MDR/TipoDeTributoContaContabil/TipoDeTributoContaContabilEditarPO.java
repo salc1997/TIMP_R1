@@ -66,7 +66,7 @@ public class TipoDeTributoContaContabilEditarPO extends TestBaseFernando{
 		detalhes.click();
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		// Valores uevos
 		String tributoGrupoText = "Tributo Test";
@@ -121,7 +121,7 @@ public class TipoDeTributoContaContabilEditarPO extends TestBaseFernando{
 		detalhes.click();
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String tributoGrupoModificado = tributoGrupo.getAttribute("value");
 		String tipoImpostoMoficiado = tipoImposto.getAttribute("value");

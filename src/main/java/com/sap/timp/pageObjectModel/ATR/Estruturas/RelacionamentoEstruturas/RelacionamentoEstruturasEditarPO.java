@@ -134,7 +134,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		sleep(2000);
 		waitExpectElement(grupo1);
 		invisibilityOfElementOverlay();
-		
+		sleep(30000);
 		
 	
 		adicionar.click();
@@ -181,7 +181,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		sleep(2000);
 		waitExpectElement(grupo1);
 		invisibilityOfElementOverlay();
-
+		sleep(30000);
 		
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		

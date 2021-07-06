@@ -19,7 +19,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/ul/li[4]/button")
 	public WebElement biblioteca;
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[5]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[5]")
 	public WebElement copiar;
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
 	public WebElement gravar;
@@ -59,7 +59,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 	public WebElement valorICMS;
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement pesquisar;
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[2]/label/span")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[2]/label/span")
 	public WebElement check;
 	@FindBy(xpath = "//*[@id=\"right\"]/div/div[1]/div/div/ul/li[4]/button")
 	public WebElement eliminar;
@@ -77,10 +77,10 @@ public class CriarCopiaPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
@@ -127,7 +127,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 		
 		invisibilityOfElementOverlay();
 
-		WebElement menu = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
+		WebElement menu = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
 		menu.click();
 		
 		copiar.click();
@@ -182,7 +182,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 		invisibilityOfElementOverlay();
 		
 		
-		String id = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[6]")).getText();
+		String id = driver.findElement(By.xpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[6]")).getText();
 		System.out.println(id);
 		
 		

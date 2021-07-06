@@ -146,8 +146,8 @@ public class KpisCartaoIndicadorPO extends TestBaseSteven{
 			sleep(2000);
 		}
 		
-		attributeToBeXpath("//div[@id=\"select-structure\"]/div", "class", "base-autocomplete required");
-		sleep(4000);
+		//attributeToBeXpath("//div[@id=\"select-structure\"]/div", "class", "base-autocomplete required");
+		sleep(6000);
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();

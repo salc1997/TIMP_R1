@@ -23,10 +23,10 @@ public class FiltrosPO  extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	
@@ -116,7 +116,7 @@ public class FiltrosPO  extends TestBaseSteven{
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[1]")
 	public WebElement nao1;
 	
-	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div/div/div/div[2]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div/div/div/div[2]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement executar;
 	
 	
@@ -195,11 +195,11 @@ public class FiltrosPO  extends TestBaseSteven{
 		candadoD.click();
 		
 		if (amb == false) {
-			mayor.sendKeys("01/01/2014");
-			menor.sendKeys("31/01/2014");
-		}else {
 			mayor.sendKeys("01/01/2016");
 			menor.sendKeys("31/01/2016");
+		}else {
+			mayor.sendKeys("01/01/2018");
+			menor.sendKeys("31/01/2018");
 		}
 		
 		
@@ -528,7 +528,7 @@ public class FiltrosPO  extends TestBaseSteven{
 			String datal = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"21\" and contains(@aria-label, \"Linha: "+i+"\")]/div[contains(@style,\"text-overflow\")]")).getText());
 			
 			try {
-				String mayorString = "01/01/2014";
+				String mayorString = "01/01/2016";
 				String menorString = "31/01/2014";
 				
 				if (amb== false) {

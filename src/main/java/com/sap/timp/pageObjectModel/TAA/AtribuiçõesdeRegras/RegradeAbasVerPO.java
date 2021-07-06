@@ -58,7 +58,7 @@ public class RegradeAbasVerPO extends TestBaseSteven{
 		sleep(1000);
 
 		
-		String idRegistro = idObter("RegraDeCampos");
+		String idRegistro = idObter("RegradeAbas");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
 		

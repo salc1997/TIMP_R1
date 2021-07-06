@@ -40,7 +40,7 @@ public class Registro1200EditarPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"02\"]")
 	public WebElement naturalezaOTQ1;
 	
-	@FindBy(xpath = "//*[@id=\"02\"]")
+	@FindBy(xpath = "//*[@id=\"option-2\"]")
 	public WebElement naturalezaOTC2;
 	
 	@FindBy(xpath = "//*[@id=\"option-2\"]")
@@ -65,7 +65,7 @@ public class Registro1200EditarPO extends TestBaseSteven {
 			tc2 = true;
 		}if (url.contains("tq1")) {
 			tq1 = true;
-		} else {
+		} if (url.contains("tp1")) {
 			tp1 = true;
 		}
 		
@@ -102,7 +102,7 @@ public class Registro1200EditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		waitExpectElement(naturaleza);
-		sleep(6000);
+		sleep(11000);
 		
 		
 		
@@ -128,7 +128,7 @@ public class Registro1200EditarPO extends TestBaseSteven {
 			//String valor = filialE.getAttribute("value");
 			System.out.println("Valor: "+valor);
 			 enviar = valor;
-		}else {
+		}else if (tc2== true) {
 			naturaleza.click();
 			sleep(3000);
 			

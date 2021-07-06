@@ -83,7 +83,7 @@ public class ContratoIOFVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[@id=\"validityOf\"]")
 	public WebElement datavi;
 	
-	@FindBy(xpath = "//div[@id=\"contractNumber\"]/div/div/input")
+	@FindBy(xpath = "//div[@id=\"contractNumber\"]/div/div[1]/input")
 	public WebElement contratoed;
 	
 	@FindBy(xpath = "//div[@id=\"revenueCode\"]/div/div[1]/div/input")
@@ -201,20 +201,21 @@ public class ContratoIOFVisualizarPO extends TestBaseSteven{
 		
 		//editar
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		//attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
 		sleep(7000);
+		
 	
-		String contratoeditar = contratoed.getAttribute("Value");
-		String codigoreceitaeditar = codigoreceitaed.getAttribute("Value");
-		String tipopessoaeditar = tipopessoaed.getAttribute("Value");
-		String cpfeditar = cpfed.getAttribute("Value");
-		String variacaoeditar =variacaoed.getAttribute("Value");
-		String razaosocialeditar= razaosocialed.getAttribute("Value");
-		String periodicidadeeditar = periodicidadeed.getAttribute("Value");
-		String moedaeditar = moedaed.getAttribute("Value");
-		String valordecontratoeditar = valordecontratoed.getAttribute("Value");
-		String dataeditar = dataed.getAttribute("Value");
+		String contratoeditar = contratoed.getAttribute("value");
+		String codigoreceitaeditar = codigoreceitaed.getAttribute("value");
+		String tipopessoaeditar = tipopessoaed.getAttribute("value");
+		String cpfeditar = cpfed.getAttribute("value");
+		String variacaoeditar =variacaoed.getAttribute("value");
+		String razaosocialeditar= razaosocialed.getAttribute("value");
+		String periodicidadeeditar = periodicidadeed.getAttribute("value");
+		String moedaeditar = moedaed.getAttribute("value");
+		String valordecontratoeditar = valordecontratoed.getAttribute("value");
+		String dataeditar = dataed.getAttribute("value");
+		
+		System.out.println("=========================================");
 				
 		System.out.println(contratoeditar);
 		System.out.println(codigoreceitaeditar);
@@ -245,7 +246,7 @@ public class ContratoIOFVisualizarPO extends TestBaseSteven{
 	
 		//ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		//System.out.println(sucesso);	
+		System.out.println(sucesso);	
 		return sucesso;
 	}
 }

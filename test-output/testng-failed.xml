@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.FiltrosAvancados">
+      <class name="com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades">
         <methods>
           <include name="afterClass"/>
-          <include name="filtrosAvanzados"/>
+          <include name="login"/>
+          <include name="excluirHierarquia"/>
+          <include name="criarConfiguracao"/>
+          <include name="excluirConfiguracao"/>
+          <include name="brbEntrar"/>
           <include name="beforeClass"/>
+          <include name="executar"/>
+          <include name="criarConfiguracaoHierarquia"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.FiltrosAvancados -->
+      </class> <!-- com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

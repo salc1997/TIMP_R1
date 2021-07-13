@@ -217,5 +217,5 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
-	
+
 }

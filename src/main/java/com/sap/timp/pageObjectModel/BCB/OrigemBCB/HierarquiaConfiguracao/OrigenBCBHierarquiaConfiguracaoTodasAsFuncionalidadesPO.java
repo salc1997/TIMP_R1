@@ -965,7 +965,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (tc2==true) {
 			selectBCB3.click();
 			selectBCB3.sendKeys(Keys.ESCAPE);
-			sleep(1000);
+			sleep(3000);
 		}else if(tq1==true) {
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
@@ -978,7 +978,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		campoSaida11.click();
-		sleep(7000);
+		sleep(8000);
 		opcCampoSaida11.click();
 		sleep(3000);
 		

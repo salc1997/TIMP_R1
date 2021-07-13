@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM800.RegistroM800Excluir">
+      <class name="com.timp.test.BCB.HierarquiaExecucoesTodasAsFuncionalidades">
         <methods>
-          <include name="afterClass"/>
-          <include name="excluir"/>
+          <include name="editar"/>
+          <include name="executar"/>
           <include name="beforeClass"/>
+          <include name="excluirHierarquia"/>
+          <include name="excluirConfiguracoes"/>
+          <include name="afterClass"/>
+          <include name="excluirExecucoes"/>
+          <include name="resto"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM800.RegistroM800Excluir -->
+      </class> <!-- com.timp.test.BCB.HierarquiaExecucoesTodasAsFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

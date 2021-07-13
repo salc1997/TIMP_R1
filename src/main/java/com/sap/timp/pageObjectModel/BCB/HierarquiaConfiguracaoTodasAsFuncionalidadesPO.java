@@ -1311,10 +1311,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		//waitExpectElement(executar);
 		sleep(12000);
 		System.out.println("cheguei aqui");
+		sleep(6000);
 		executar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
+		//waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
 		sleep(3000);
 		
 		

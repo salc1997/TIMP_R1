@@ -317,6 +317,11 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
+	
+	
+	
 	
 	public HierarquiaExecucoesTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
@@ -871,6 +876,10 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		salvarExecucoes.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		aceitar.click();
+		sleep(3000);
+		fechar.click();
 		sleep(3000);
 		
 		finalizarExecucoes.click();

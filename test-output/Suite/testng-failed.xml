@@ -1,80 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Paginacao(failed)">
-=======
-  <test thread-count="5" name="Dashboard(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.Paginacao">
-=======
-      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardCriarCopia">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="copia"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardCriarCopia -->
-      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="paginacion"/>
-=======
-          <include name="afterClass"/>
-          <include name="Executar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutar -->
-      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="CartaoIndicador"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardCartaoIndicadorEditar -->
-      <class name="com.timp.test.TDK.Dashboard.Edicao.DashboardEdiçãoGráficoEditar">
-        <methods>
-          <include name="editar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.Paginacao -->
-=======
-      </class> <!-- com.timp.test.TDK.Dashboard.Edicao.DashboardEdiçãoGráficoEditar -->
-      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira">
-        <methods>
-          <include name="afterClass"/>
-          <include name="lixeira"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira -->
-      <class name="com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtro"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TDK.Dashboard.DashboardPublicos.DashboardDetalhes -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Paginacao(failed) -->
-  <test thread-count="5" name="FiltrosAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FiltrosAvancados">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtrosAvanzados"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FiltrosAvancados -->
-    </classes>
-  </test> <!-- FiltrosAvancados(failed) -->
   <test thread-count="5" name="PublicoEPrivado(failed)">
     <classes>
       <class name="com.timp.test.BRB.PublicoEPrivado">
@@ -86,99 +12,28 @@
       </class> <!-- com.timp.test.BRB.PublicoEPrivado -->
     </classes>
   </test> <!-- PublicoEPrivado(failed) -->
-  <test thread-count="5" name="FiltrosRelatorio(failed)">
+  <test thread-count="5" name="Formula(failed)">
     <classes>
-      <class name="com.timp.test.BRB.FiltrosRelatorio">
-        <methods>
-          <include name="CasignarValores"/>
-          <include name="BfiltrosBiblioteca"/>
-          <include name="beforeClass"/>
-          <include name="AfiltrosEditor"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
-    </classes>
-  </test> <!-- FiltrosRelatorio(failed) -->
-  <test thread-count="5" name="CriarComCopia(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CriarComCopia">
-        <methods>
-          <include name="criarCopia"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CriarComCopia -->
-    </classes>
-  </test> <!-- CriarComCopia(failed) -->
-  <test thread-count="5" name="AtivarComentario(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AtivarComentario">
+      <class name="com.timp.test.BRB.Formula">
         <methods>
           <include name="afterClass"/>
-          <include name="ativarComentarios"/>
+          <include name="aplicar"/>
           <include name="beforeClass"/>
+          <include name="formulaColuna"/>
+          <include name="formulaBoton"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.AtivarComentario -->
+      </class> <!-- com.timp.test.BRB.Formula -->
     </classes>
-  </test> <!-- AtivarComentario(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
+  </test> <!-- Formula(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
     <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
-        <methods>
-          <include name="comentarioLibre"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
-    </classes>
-  </test> <!-- ComentarioLibre(failed) -->
-  <test thread-count="5" name="Visualizar(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.Visualizar">
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
         <methods>
           <include name="afterClass"/>
-          <include name="visualizar"/>
           <include name="beforeClass"/>
+          <include name="crescenteEDecrescente"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.Visualizar -->
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
     </classes>
-  </test> <!-- Visualizar(failed) -->
-  <test thread-count="5" name="ExcluirRelatorio(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ExcluirRelatorio">
-        <methods>
-          <include name="afterClass"/>
-          <include name="eliminar"/>
-          <include name="eliminarLixeira"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ExcluirRelatorio -->
-    </classes>
-  </test> <!-- ExcluirRelatorio(failed) -->
-=======
-  </test> <!-- Dashboard(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- CrescenteEDecrescente(failed) -->
 </suite> <!-- Failed suite [Suite] -->

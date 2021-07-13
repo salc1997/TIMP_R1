@@ -144,6 +144,12 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		sleep(2000);
 
 		waitExpectElement(kpispublicos);
+		sleep(12000);
+		
+		kpis.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		kpispublicos.click();
@@ -201,6 +207,12 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		waitExpectElement(kpispublicos);
 		sleep(2000);
 		
+		kpis.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		kpispublicos.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -209,7 +221,7 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
@@ -275,7 +287,7 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		driver.navigate().refresh();
 		sleep(5000);
 		waitExpectElement(kpis);
-		sleep(5000);
+		sleep(8000);
 		
 		kpis.click();
 		sleep(2000);

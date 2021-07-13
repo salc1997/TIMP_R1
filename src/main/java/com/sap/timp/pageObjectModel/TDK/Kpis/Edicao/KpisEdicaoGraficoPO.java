@@ -273,7 +273,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		grupoEstructura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 
 
 		if (tq1 == true) {
@@ -360,7 +360,9 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		dimensao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+		
+	
 
 
 		if (tq1 == true) {

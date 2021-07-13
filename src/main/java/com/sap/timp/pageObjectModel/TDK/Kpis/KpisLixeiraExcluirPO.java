@@ -134,7 +134,7 @@ public class KpisLixeiraExcluirPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(Lixeira);
-		sleep(2000);
+		sleep(12000);
 		Lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

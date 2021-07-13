@@ -3,18 +3,40 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BCB.HierarquiaExecucoesTodasAsFuncionalidades">
+=======
+      <class name="com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="editar"/>
           <include name="executar"/>
+=======
+          <include name="afterClass"/>
+          <include name="login"/>
+          <include name="excluirHierarquia"/>
+          <include name="criarConfiguracao"/>
+          <include name="excluirConfiguracao"/>
+          <include name="brbEntrar"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="excluirHierarquia"/>
           <include name="excluirConfiguracoes"/>
           <include name="afterClass"/>
           <include name="excluirExecucoes"/>
           <include name="resto"/>
+=======
+          <include name="executar"/>
+          <include name="criarConfiguracaoHierarquia"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BCB.HierarquiaExecucoesTodasAsFuncionalidades -->
+=======
+      </class> <!-- com.timp.test.BCB.HierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

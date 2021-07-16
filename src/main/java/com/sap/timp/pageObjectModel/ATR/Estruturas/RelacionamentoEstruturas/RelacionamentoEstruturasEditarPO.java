@@ -160,11 +160,11 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		
 		gravar.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(7000);
 		
 		relacionamentoEstruturas.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(7000);
 		
 		siguiente.click();
 		

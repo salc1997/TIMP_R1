@@ -898,8 +898,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			camposSaidaBCB.click();
 			sleep(2000);
 			
-			attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
-			sleep(2000);
+			//attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
+			sleep(5000);
 			
 			
 			if (tq1 == true) {

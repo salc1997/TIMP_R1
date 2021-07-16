@@ -130,18 +130,18 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		criar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(operacao, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	/*	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(inicio, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
-	
+	*/
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -188,7 +188,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		no.click();
-		sleep(3000);
+		sleep(6000);
 		
 		biblioteca.click();
 		sleep(3000);
@@ -235,7 +235,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		Copiar.click();
-		sleep(8000);
+		sleep(12000);
 		
 		dobleClickElement(NovoOperacao);
 		sleep(3000);
@@ -254,7 +254,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		no.click();
-		sleep(3000);
+		sleep(6000);
 		
 		biblioteca.click();
 		sleep(3000);

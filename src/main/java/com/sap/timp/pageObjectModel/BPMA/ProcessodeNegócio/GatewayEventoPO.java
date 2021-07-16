@@ -258,7 +258,7 @@ public class GatewayEventoPO extends TestBaseSteven {
 		criar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		System.out.println("--------- Primer Figura--------------"); 
 		
@@ -277,7 +277,7 @@ public class GatewayEventoPO extends TestBaseSteven {
 //		js.executeScript("arguments[0].setAttribute('style', 'display:none')", btnEliminar);
 		js.executeScript("arguments[0].setAttribute('x', '12')", btnEditar);
 		js.executeScript("arguments[0].setAttribute('y', '-30')", btnEditar);
-		sleep(1000);
+		sleep(4000);
 		gatewayEventoEdit.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

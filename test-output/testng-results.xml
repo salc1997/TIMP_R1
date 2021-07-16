@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-07-16T15:17:02Z" name="Default suite" finished-at="2021-07-16T15:19:41Z" duration-ms="158864">
+=======
+  <suite started-at="2021-07-14T23:55:42Z" name="Default suite" finished-at="2021-07-15T00:02:02Z" duration-ms="379794">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-07-16T15:17:02Z" name="Default test" finished-at="2021-07-16T15:19:41Z" duration-ms="158864">
       <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar@355ce81c]" started-at="2021-07-16T15:17:02Z" name="beforeClass" finished-at="2021-07-16T15:17:25Z" duration-ms="23346" status="PASS">
+=======
+    <test started-at="2021-07-14T23:55:42Z" name="Default test" finished-at="2021-07-15T00:02:02Z" duration-ms="379794">
+      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar@4ebff610]" started-at="2021-07-14T23:55:42Z" name="beforeClass" finished-at="2021-07-14T23:57:47Z" duration-ms="124684" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar@355ce81c]" started-at="2021-07-16T15:17:26Z" name="criar" finished-at="2021-07-16T15:19:41Z" duration-ms="135467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar@355ce81c]" started-at="2021-07-16T15:19:41Z" name="afterClass" finished-at="2021-07-16T15:19:41Z" duration-ms="1" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar@4ebff610]" started-at="2021-07-14T23:57:47Z" name="login" finished-at="2021-07-14T23:58:07Z" duration-ms="20512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="BPMAEntrar()[pri:1, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar@4ebff610]" started-at="2021-07-14T23:58:07Z" name="BPMAEntrar" finished-at="2021-07-14T23:58:39Z" duration-ms="31466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BPMAEntrar -->
+        <test-method signature="visualizar()[pri:1, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar@4ebff610]" started-at="2021-07-14T23:58:39Z" name="visualizar" finished-at="2021-07-15T00:02:02Z" duration-ms="203112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar@4ebff610]" started-at="2021-07-15T00:02:02Z" name="afterClass" finished-at="2021-07-15T00:02:02Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
+=======
+      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

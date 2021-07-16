@@ -121,7 +121,7 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
 		criar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		
 		
@@ -131,11 +131,11 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBaseKenssy {
 		sleep(2000);
 		
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	/*	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(inicio, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
-		
+		*/
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

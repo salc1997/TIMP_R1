@@ -134,12 +134,12 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		
-		sleep(2000);
+		/*sleep(2000);
 		waitExpectElement(grupo1);
-		invisibilityOfElementOverlay();
+		invisibilityOfElementOverlay();*/
+		sleep(371400);
 		
-		
-	
+		sleep(12000);
 		excluir.click();
 		sleep(2000);
 		
@@ -153,15 +153,15 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		
 		gravar.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(4000);
 		
 		relacionamentoEstruturas.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(4000);
 		
 		siguiente.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(4000);
 		
         int rows = rows("//div[@class=\"tr\" and @data-id]");
 		
@@ -218,10 +218,10 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		menu.click();
 		sleep(1000);
 		acao.click();
-		
-		sleep(2000);
+		sleep(371400);
+		/*sleep(2000);
 		waitExpectElement(grupo1);
-		invisibilityOfElementOverlay();
+		invisibilityOfElementOverlay();*/
 
 		int linhaAdicionada = rows("//div[@class=\"fieldRow-wrapper\"][3]");
 		

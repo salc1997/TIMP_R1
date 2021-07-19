@@ -701,8 +701,8 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(adicionarBloco);
-		sleep(2000);
+		//waitExpectElement(adicionarBloco);
+		sleep(12000);
 		
 		//ADICIONAR 5 BLOCOS
 		//DEBEN ADICIONARSE UNO POR UNO
@@ -1089,7 +1089,7 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		//waitExpectElement(sim);
 		sleep(2000);
 		
 		sim.click();

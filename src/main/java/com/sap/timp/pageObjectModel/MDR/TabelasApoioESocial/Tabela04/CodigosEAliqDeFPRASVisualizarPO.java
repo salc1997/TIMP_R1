@@ -24,7 +24,7 @@ public class CodigosEAliqDeFPRASVisualizarPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Codigo FPAS\"]")
 	public WebElement codigo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Base de cálculo \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Base de Cálculo\"]")
 	public WebElement base;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição das Atividades\"]")

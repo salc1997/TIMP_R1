@@ -1,63 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Prueba4(failed)">
+  <test thread-count="5" name="Configuracao De Tipo Tributo(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASEditar">
-        <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASEditar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluir">
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
         <methods>
           <include name="afterClass"/>
+          <include name="Excluir"/>
           <include name="beforeClass"/>
-          <include name="excluir"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluir -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASVisualizar">
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados">
         <methods>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="Visualizar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASVisualizar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="afterClass"/>
+          <include name="filtros"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASCriar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluirMassa">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="excluirMassa"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASExcluirMassa -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASDetalhes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="detalhe"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela04.CodigosEAliqDeFPRASDetalhes -->
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados -->
     </classes>
-  </test> <!-- Prueba4(failed) -->
-  <test thread-count="5" name="Prueba11(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa">
-        <methods>
-          <include name="excluir"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosExcluirEmMassa -->
-    </classes>
-  </test> <!-- Prueba11(failed) -->
+  </test> <!-- Configuracao De Tipo Tributo(failed) -->
 </suite> <!-- Failed suite [Suite] -->

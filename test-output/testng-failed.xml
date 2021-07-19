@@ -3,13 +3,34 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar">
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
         <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
+          <include name="versao"/>
+          <include name="excluirLeiaute"/>
           <include name="afterClass"/>
+          <include name="horaDaExecucao"/>
+          <include name="criarConfiguracao"/>
+          <include name="comparar"/>
+          <include name="excluirConfiguracao"/>
+          <include name="beforeClass"/>
+          <include name="distinto"/>
+          <include name="verBloco5"/>
+          <include name="dataFinalDeReferencia"/>
+          <include name="verBloco2"/>
+          <include name="verBloco3"/>
+          <include name="dataDaExecucao"/>
+          <include name="campoFixoManual"/>
+          <include name="verBloco1"/>
+          <include name="saltodeLinha"/>
+          <include name="verBloco4"/>
+          <include name="sequenciaDeItemPorDocumento"/>
+          <include name="periodoDaReferencia"/>
+          <include name="sequencia"/>
+          <include name="campoFixo"/>
+          <include name="dataInicialDeReferencia"/>
+          <include name="executar"/>
         </methods>
-      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar -->
+      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

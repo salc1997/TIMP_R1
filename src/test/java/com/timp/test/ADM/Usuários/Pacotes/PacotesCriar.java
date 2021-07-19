@@ -27,6 +27,7 @@ public class PacotesCriar extends TestBaseMassiel{
 	  acessarADMPO = new AcessarADMPO();
 	  pacotesCriarPO = new PacotesCriarPO();
   }
+  
 
   @AfterClass
   public void afterClass() {
@@ -37,6 +38,7 @@ public class PacotesCriar extends TestBaseMassiel{
  	public void login() {
  		loginTC.login();
 
+ 		
  	}
 
  	@Test(priority = 1)

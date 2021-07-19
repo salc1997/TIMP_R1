@@ -1085,7 +1085,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		actionsMoveToElementElement(dataVigenciaR);
 		sleep(1000);
 		
-		waitExpectElement(versaoLeiauteR);
+		//waitExpectElement(versaoLeiauteR);
 		sleep(1000);
 		leiauteR.click();
 		sleep(1000);

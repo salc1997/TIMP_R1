@@ -126,11 +126,8 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
-<<<<<<< HEAD
-	@FindBy(xpath = "//div[@id=\"createProcess\"]/div/div/div[5]/div/div[2]/label/span")
-=======
+
 	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[5]/div[2]/div[2]/label/span")
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 	public WebElement periodoFiscalTP1;
 	
 	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[5]/div[2]/div[2]/label/span")

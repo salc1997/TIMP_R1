@@ -128,7 +128,8 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 		sleep(5000);
 	//	invisibilityOfElementOverlay();
 		sleep(371400);
-		
+		sleep(5000);
+		sleep(5000);
 		
 		grupo1.click();
 		sleep(1000);

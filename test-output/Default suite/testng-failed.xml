@@ -3,25 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisExcluir">
-=======
-      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.ADM.Configuração.Licenças.LicençasDetalhes">
         <methods>
-<<<<<<< HEAD
-          <include name="excluir"/>
-=======
-          <include name="visualizar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+          <include name="AcessarADM"/>
+          <include name="Detalles"/>
           <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisExcluir -->
-=======
-      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.ADM.Configuração.Licenças.LicençasDetalhes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

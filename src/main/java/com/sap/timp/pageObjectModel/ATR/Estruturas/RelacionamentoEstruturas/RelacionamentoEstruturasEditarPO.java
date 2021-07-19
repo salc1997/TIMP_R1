@@ -135,8 +135,8 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		//waitExpectElement(grupo1);
 		//invisibilityOfElementOverlay();
 		sleep(371400);
-		
-	
+		sleep(1000);
+		sleep(1000);
 		adicionar.click();
 		sleep(2000);
 		
@@ -182,7 +182,8 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 	//	waitExpectElement(grupo1);
 	//	invisibilityOfElementOverlay();
 		sleep(371400);
-		
+		sleep(1000);
+		sleep(1000);
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

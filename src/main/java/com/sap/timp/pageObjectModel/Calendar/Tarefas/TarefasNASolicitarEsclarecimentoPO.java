@@ -1325,7 +1325,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBaseSteven {
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println(id); 
 		String idRegistro = idObter1();
-		sleep(2000);
+		sleep(000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));

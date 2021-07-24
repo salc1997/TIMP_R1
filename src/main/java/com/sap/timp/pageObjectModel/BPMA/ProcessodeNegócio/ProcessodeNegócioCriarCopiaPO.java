@@ -188,12 +188,12 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		no.click();
-		sleep(6000);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		procesos.click();
 		sleep(3000);

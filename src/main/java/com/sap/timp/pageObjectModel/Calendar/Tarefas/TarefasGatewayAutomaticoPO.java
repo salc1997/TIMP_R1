@@ -262,7 +262,7 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		criar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+		sleep(6000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

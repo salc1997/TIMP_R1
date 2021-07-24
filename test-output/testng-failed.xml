@@ -3,75 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ADM.Configuração.Licenças.LicençasDetalhes">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisExcluir">
-=======
-      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="versao"/>
-          <include name="excluirLeiaute"/>
-=======
-<<<<<<< HEAD
-          <include name="excluir"/>
-=======
-          <include name="visualizar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="Lexeira2"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="AcessarADM"/>
-          <include name="Detalles"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="Lexeira1"/>
           <include name="afterClass"/>
-          <include name="horaDaExecucao"/>
-          <include name="criarConfiguracao"/>
-          <include name="comparar"/>
-          <include name="excluirConfiguracao"/>
-          <include name="beforeClass"/>
-          <include name="distinto"/>
-          <include name="verBloco5"/>
-          <include name="dataFinalDeReferencia"/>
-          <include name="verBloco2"/>
-          <include name="verBloco3"/>
-          <include name="dataDaExecucao"/>
-          <include name="campoFixoManual"/>
-          <include name="verBloco1"/>
-          <include name="saltodeLinha"/>
-          <include name="verBloco4"/>
-          <include name="sequenciaDeItemPorDocumento"/>
-          <include name="periodoDaReferencia"/>
-          <include name="sequencia"/>
-          <include name="campoFixo"/>
-          <include name="dataInicialDeReferencia"/>
-          <include name="executar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.ADM.Configuração.Licenças.LicençasDetalhes -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisExcluir -->
-=======
-      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
